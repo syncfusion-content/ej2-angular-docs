@@ -85,7 +85,7 @@ Any HTML element can be displayed in the tooltip by using the `template` propert
 
 ## Customization
 
-The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#textstyle) property in the tooltip is used to customize the font of the tooltip text.
+The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#fill) and [`border`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#textstyle) property in the tooltip is used to customize the font of the tooltip text. The [`highlightColor`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationChartModel/#highlightcolor) property can be used to change the color of the data point when hovering.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

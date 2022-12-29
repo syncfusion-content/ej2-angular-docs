@@ -50,6 +50,24 @@ You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angul
   
 {% previewsample "page.domainurl/code-snippet/chart/axis/category-cs3" %}
 
+## Title Rotation
+
+By using the [`titleRotation`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#titlerotation) property, you can rotate the axis title from 0 to 360 degree.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/axis/category-cs3/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/chart/axis/category-cs3/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/axis/category-cs3/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/chart/axis/category-cs3.1" %}
+
 ## Tick Lines Customization
 
 You can customize the  `width`, `color` and `size` of the minor and major tick lines, using [`majorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#majorticklines) and [`minorTickLines`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisModel/#minorticklines) properties in the axis.

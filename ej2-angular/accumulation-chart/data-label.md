@@ -232,6 +232,24 @@ Individual text can be customized using the `textRender` event.
   
 {% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs10" %}
 
+## Text wrap
+
+When the data label text exceeds the container, the text can be wrapped by using [`textWrap`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationDataLabelSettings/#textwrap) property. End user can also wrap the data label text based on [`maxWidth`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationDataLabelSettings/#maxwidth) property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/smartlabel-cs10/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/chart/series/smartlabel-cs10/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/smartlabel-cs10/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/code-snippet/chart/series/smartlabel-cs13" %}
+
 ## Show percentages in data labels of pie chart
 
 You can show the percentages in data labels of pie chart using `textRender` event and `template` option.
