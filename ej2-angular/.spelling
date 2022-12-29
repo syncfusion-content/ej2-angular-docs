@@ -18,8 +18,6 @@ DatePicker
 DropDownList
 LinearGauge
 NumericTextBox
-datalabel
-Datalabel
 TimePicker
 plugin
 SystemJS
