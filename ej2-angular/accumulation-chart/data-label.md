@@ -256,7 +256,7 @@ You can show the percentages in data labels of pie chart using `textRender` even
 
 ### Using textRender event
 
-You can customize the data label of pie chart using [textRender](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart#textrender) event as follows to show percentage.
+You can customize the data label of pie chart using [textRender](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/#textrender) event as follows to show percentage.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
