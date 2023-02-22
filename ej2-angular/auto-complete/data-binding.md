@@ -166,7 +166,7 @@ import { AppComponent } from './app.component';
 export class AppModule { }
  ```
 
-  [main.ts] 
+[main.ts] 
  ```ts 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
@@ -175,6 +175,8 @@ import { AppModule } from './app.module';
 enableProdMode();
 platformBrowserDynamic().bootstrapModule(AppModule);
  ```
+
+ [View Samples in Github](https://github.com/SyncfusionExamples/angular-autocomplete-async-pipe)
 
 ## See Also
 
