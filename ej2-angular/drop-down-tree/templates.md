@@ -18,7 +18,7 @@ The content of each list item within the Dropdown Tree can be customized with th
 
 In the following sample, the Dropdown Tree list items are customized with employee information such as **name** and **job** using the **itemTemplate** property.
 
-The template expression should be provided inside the {{...}} interpolation syntax.
+The template expression should be provided inside the `{{...}}` interpolation syntax.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
