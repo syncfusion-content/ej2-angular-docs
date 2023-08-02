@@ -33,7 +33,7 @@ export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
     public contextMenuSettings?: ContextMenuSettingsModel
-horizontalAlignment: any;
+    horizontalAlignment: any;
     ngOnInit(): void {
         //Enables the context menu
         let $this = this as any;
@@ -50,7 +50,7 @@ horizontalAlignment: any;
                 //do your custom action here.
                 for (let item of args.items) {
                     if (item.text === 'delete') {
-                        if (!$(this.diagram as Diagram).selectedItems.nodes.length && !$(this.diagram as Diagram).selectedItems.connectors.length) {
+                        if (!$this.diagram.selectedItems.nodes.length && !$this.diagram.selectedItems.connectors.length) {
                             args.hiddenItems.push(item.text);
                         }
                     }
@@ -59,8 +59,8 @@ horizontalAlignment: any;
             contextMenuClick: function(args: MenuEventArgs) {
                 //do your custom action here.
                 if (args.item.id === 'delete') {
-                    if (($(this.diagram as Diagram).selectedItems.nodes.length + $this.diagram.selectedItems.connectors.length) > 0) {
-                        $(this.diagram as Diagram).cut();
+                    if (($this.diagram.selectedItems.nodes.length + $this.ddiagram.selectedItems.connectors.length) > 0) {
+                        $this.diagram.cut();
                     }
                 }
             }

@@ -109,7 +109,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `<!-- To render Rating. -->
-             <input ejs-rating id=rating" />`
+             <input ejs-rating id="rating" />`
 })
 export class AppComponent  { }
 ```

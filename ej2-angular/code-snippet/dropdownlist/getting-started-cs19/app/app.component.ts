@@ -20,7 +20,7 @@ export class AppComponent {
           // set target element to tooltip
           target: '.e-list-item',
           // set position of tooltip
-          position: 'top center',
+          position: 'TopCenter',
           // bind beforeRender event
           beforeRender: this.onBeforeRender
       });

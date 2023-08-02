@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
       write: (args: any) => {
         var rowData = (args as any).rowData;
         var rowIndex = (this.grid as any).getRowInfo((args as any).row).rowIndex;
-        this.priceObj? = new NumericTextBox({
+        this.priceObj = new NumericTextBox({
           value: (args as any).rowData[(args as any).column.field],
           change: ((args: any) => {
             var totalCostValue = (args as any).value * rowData['UnitsInStock'];

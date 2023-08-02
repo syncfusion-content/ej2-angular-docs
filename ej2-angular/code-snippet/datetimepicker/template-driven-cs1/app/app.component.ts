@@ -16,7 +16,7 @@ class User {
 })
 export class DefaultDateTimePickerComponent {
     constructor() {}
-    user?: User;
+    user?: User | any;
     ngOnInit() {
         this.user = new User();
     }

@@ -8,7 +8,7 @@ export class AppComponent {
   @ViewChild('recurrenceObj')
   public recurrenceObj?: RecurrenceEditorComponent;
   ngAfterViewInit() {
-    (this.recurrenceObj as RecurrenceEditorComponent).selectedType = 1;
-    (this.recurrenceObj as RecurrenceEditorComponent | any).endTypes = ['until', 'count'];
+    (this.recurrenceObj as RecurrenceEditorComponent ).selectedType = 1;
+    (this.recurrenceObj as RecurrenceEditorComponent | any ).endTypes = ['until', 'count'];
   }
 }

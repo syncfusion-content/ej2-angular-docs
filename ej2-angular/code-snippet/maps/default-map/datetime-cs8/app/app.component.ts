@@ -6,19 +6,20 @@ import { world_map } from './world-map';
 Maps.Inject(Bubble);
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-maps id='rn-container'>
-    <e-layers>
-    <e-layer  [shapeData]= 'shapeData' [bubbleSettings] = 'bubbleSettings'></e-layer>
-    </e-layers>
-    </ejs-maps>`
+    template: `
+        <ejs-maps id='rn-container'>
+        <e-layers>
+        <e-layer  [shapeData]= 'shapeData' [bubbleSettings] = 'bubbleSettings'></e-layer>
+        </e-layers>
+        </ejs-maps>
+    `
 })
 
 export class AppComponent implements OnInit {
     public shapeData?: object;
-    public shapeDataPath?: object;
-    public shapePropertyPath: object
-    public bubbleSettings: object;
+    public shapeDataPath?: object | any;
+    public shapePropertyPath: object | any;
+    public bubbleSettings?: object;
     ngOnInit(): void {
         this.shapeData = world_map;
         this.shapeDataPath = 'name';

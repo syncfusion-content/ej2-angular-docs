@@ -19,7 +19,7 @@ For numbers, the formatting settings required to apply through code behind are:
 * `name`: It allows to set the field name.
 * `format`: It allows to set the format of the respective field.
 
-> Also, you can customize the applied number format by setting the [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers) options in `formatSettings` itself.
+> Also, you can customize the applied number format by setting the [`NumberFormatOptions`](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#manipulating-numbers) options in `formatSettings` itself.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -43,7 +43,7 @@ For date and time, the formatting settings required to apply through code behind
 * `format`: It allows to set the format of the respective field.
 * `type`: It allows to set the type of format to be used for the respective field.
 
-> Also, you can customize the applied date format by setting [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-datetime) options in `formatSettings` itself.
+> Also, you can customize the applied date format by setting [`DateFormatOptions`](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#manipulating-datetime) options in `formatSettings` itself.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

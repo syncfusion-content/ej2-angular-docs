@@ -10,6 +10,13 @@ import { Query, DataManager, Predicate } from '@syncfusion/ej2-data';
     templateUrl: `cascading.html`
 })
 export class AppComponent {
+    stateChange //set the placeholder to country MultiSelect input
+    ($event: any) {
+    throw new Error('Method not implemented.');
+    }
+    countryChange($event: any) {
+    throw new Error('Method not implemented.');
+    }
     constructor() {
     }
     //define the country MultiSelect data

@@ -177,15 +177,15 @@ To render the Documenteditor component, need to import document editor and its d
 This can be referenced in your `[src/styles/styles.css]` using the following code.
 
 ```css
-@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-lists/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-angular-documenteditor/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-documenteditor/styles/material.css';
 ```
 
 > To know about individual component CSS, please refer to [Individual Component theme files](../appearance/theme-studio#filtering-a-specific-list-of-components) section.
@@ -193,7 +193,7 @@ This can be referenced in your `[src/styles/styles.css]` using the following cod
 In case, if you want to make use of the combined CSS files of entire components, then you can avail it from the root folder of Essential JS 2 package and reference it with the code shown below.
 
 ```css
-@import '../../node_modules/@syncfusion/ej2/material.css';
+@import '../node_modules/@syncfusion/ej2/material.css';
 ```
 
 ## Adding Component -

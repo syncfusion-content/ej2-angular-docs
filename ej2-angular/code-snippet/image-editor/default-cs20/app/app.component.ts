@@ -1,7 +1,7 @@
 
 
 import { Component,ViewChild } from '@angular/core';
-import { Browser } from '@syncfusion/ej2-angular-base';
+import { Browser } from '@syncfusion/ej2-base';
 import { ImageEditorComponent, ZoomSettingsModel } from '@syncfusion/ej2-angular-image-editor';
 
 @Component({
@@ -11,8 +11,7 @@ import { ImageEditorComponent, ZoomSettingsModel } from '@syncfusion/ej2-angular
                 <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar" [zoomSettings]="zoomSettings"></ejs-imageeditor>
               </div>
               <button class="e-btn e-primary" (click)="zoomInClick()">Zoom In</button>
-              <button class="e-btn e-primary" (click)="zoomOutClick()">Zoom Out</button>
-              <button class="e-btn e-primary" (click)="panClick()">Pan</button>`
+              <button class="e-btn e-primary" (click)="zoomOutClick()">Zoom Out</button>`
 })
 
 export class AppComponent {
@@ -23,9 +22,9 @@ export class AppComponent {
     public zoomSettings: ZoomSettingsModel = {maxZoomFactor: 30, minZoomFactor: 0.1};
       public created(): void {
         if (Browser.isDevice) {
-            this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+            this.imageEditorObj?.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
         } else {
-            this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+            this.imageEditorObj?.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
         }
     }
     zoomInClick(): void {
@@ -53,10 +52,6 @@ export class AppComponent {
             this.zoomLevel = value;
         }
         this.imageEditorObj?.zoom(this.zoomLevel) // zoom out
-    }
-    panClick(): void {
-        this.imageEditorObj?.zoom(this.zoomLevel) // zoom in
-        this.imageEditorObj?.pan(true);
     }
 }
 

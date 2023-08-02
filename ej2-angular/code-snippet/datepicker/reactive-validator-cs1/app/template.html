@@ -6,7 +6,7 @@
           <div class="form-group">
             <ejs-datepicker #ejDatePicker formControlName="datepicker" name="datepicker" [placeholder]='placeholder' floatLabelType='Auto'>
             </ejs-datepicker>
-            <div *ngIf="datepicker.invalid && (datepicker.dirty||datepicker.touched)" class="alert alert-danger">
+            <div *ngIf="datepicker!.invalid && (datepicker!.dirty||datepicker!.touched)" class="alert alert-danger">
                 Enter DOB in MM/dd/yyyy.
             </div>
           </div>
@@ -19,7 +19,7 @@
                 <div *ngIf="username.errors.required">
                   Name is required.
                 </div>
-                <div *ngIf="username.errors.minlength">
+                <div *ngIf="username?.errors.minlength">
                   Name must be at least 8 characters long.
                 </div>
               </div>

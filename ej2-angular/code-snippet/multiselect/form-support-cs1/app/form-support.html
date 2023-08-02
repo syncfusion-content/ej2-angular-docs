@@ -7,20 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Angular UI Controls" />
     <meta name="author" content="Syncfusion" />
-    <link href="index.css" rel="stylesheet" />
-    <!-- Here we have used CDN links for our preview purpose  -->
-    <link href="{{:CDN_LINK}}ej2-dropdowns/styles/material.css" rel="stylesheet" />
-    <link href="{{:CDN_LINK}}ej2-base/styles/material.css" rel="stylesheet" />
-    <link href="{{:CDN_LINK}}ej2-popups/styles/material.css" rel="stylesheet" />
-    <link href="{{:CDN_LINK}}ej2-inputs/styles/material.css" rel="stylesheet" />
-    <link href="{{:CDN_LINK}}ej2-lists/styles/material.css" rel="stylesheet" />
-    <link href="{{:CDN_LINK}}ej2-buttons/styles/material.css" rel="stylesheet" />
-    <script src="https://unpkg.com/core-js@2.6.5/client/shim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/zone.js/0.6.25/zone.min.js"></script>
-    <script src="https://unpkg.com/reflect-metadata@0.1.3"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
+    <!-- <link href="index.css" rel="stylesheet" /> -->
 </head>
 
 <body>
@@ -36,7 +23,7 @@
                                 [dataSource]='skillset' [placeholder]='placeholder'>
                             </ejs-multiselect>
                             <div *ngIf="book.invalid && (book.dirty || book.touched)" class="alert alert-danger">
-                                <div *ngIf="book.errors.required">
+                                <div *ngIf="book.errors">
                                     BookName is required.
                                 </div>
                             </div>
@@ -48,7 +35,7 @@
                                 <span class="e-float-line e-label-top"></span>
                                 <label class="e-float-text e-label-top">Name:</label>
                                 <div *ngIf="sname.invalid && (sname.dirty || sname.touched)" class="alert alert-danger">
-                                    <div *ngIf="sname.errors.required">
+                                    <div *ngIf="sname.errors">
                                         Name is required.
                                     </div>
                                 </div>
@@ -61,7 +48,7 @@
                                 <span class="e-float-line e-label-top"></span>
                                 <label class="e-float-text e-label-top">Email:</label>
                                 <div *ngIf="smail.invalid && (smail.dirty || smail.touched)" class="alert alert-danger">
-                                    <div *ngIf="smail.errors.required">
+                                    <div *ngIf="smail.errors">
                                         Email is required.
                                     </div>
                                 </div>

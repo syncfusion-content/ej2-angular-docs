@@ -1,10 +1,8 @@
 
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-navigations': 'syncfusion:ej2-angular-navigations/dist/ej2-angular-navigations.umd.min.js',
-        '@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-data': 'syncfusion:ej2-data/dist/ej2-data.umd.min.js',
-        '@syncfusion/ej2-buttons': 'syncfusion:ej2-buttons/dist/ej2-buttons.umd.min.js',
-        '@syncfusion/ej2-angular-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';

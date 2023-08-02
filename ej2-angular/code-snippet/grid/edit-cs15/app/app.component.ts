@@ -52,12 +52,12 @@ export class AppComponent implements OnInit {
         let multiSelectVal = (args as any).rowData[(args as any).column.field]
             ? (args as any).rowData[(args as any).column.field].split(',')
             : [];
-            this.multiSelectObj? = new MultiSelect({
-        value: multiSelectVal,
-        dataSource: (this as any).multiselectDatasource,
-        fields: { value: 'ShipCity', text: 'ShipCity' },
-        floatLabelType: 'Never',
-        mode: 'Box'
+        this.multiSelectObj = new MultiSelect({
+            value: multiSelectVal,
+            dataSource: (this as any).multiselectDatasource,
+            fields: { value: 'ShipCity', text: 'ShipCity' },
+            floatLabelType: 'Never',
+            mode: 'Box'
         });
         this.multiSelectObj?.appendTo((this as any).ddElem);
     };

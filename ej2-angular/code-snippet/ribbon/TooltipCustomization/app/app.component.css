@@ -1,0 +1,33 @@
+:root {
+  --borderColor: rgb(72, 72, 72);
+  --black: #000000;
+}  
+
+/* To customize the appearance of the tooltip */
+.custom-tooltip.e-ribbon-tooltip.e-popup {
+  border: 2px solid var(--borderColor);
+  border-radius: 5px;
+  background: var(--black);
+}
+
+/* To customize the arrow of the tooltip */
+.custom-tooltip.e-ribbon-tooltip .e-arrow-tip .e-arrow-tip-inner.e-tip-top,
+.custom-tooltip.e-ribbon-tooltip .e-arrow-tip .e-arrow-tip-inner.e-tip-bottom {
+  color: var(--black);;
+}
+.custom-tooltip.e-ribbon-tooltip .e-arrow-tip-outer.e-tip-top {
+  border-bottom: 8px solid var(--borderColor); 
+}
+.custom-tooltip.e-ribbon-tooltip .e-arrow-tip-outer.e-tip-bottom {
+  border-top: 8px solid var(--borderColor);; 
+}
+
+/* To change the size of the tooltip title */
+.custom-tooltip.e-ribbon-tooltip .e-tip-content .e-ribbon-tooltip-title {
+  font-size: 14px;
+}
+
+/* To change the size of the tooltip content */
+.custom-tooltip.e-ribbon-tooltip .e-tip-content .e-ribbon-text-container .e-ribbon-tooltip-content {
+  font-size: 11px;
+}

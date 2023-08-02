@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
                     column: object, target: Element, parent: any,
                     filteredValue: number | string
                 }) => {
-                    this.dropInstance?.value = (args as any).filteredValue;
+                    (this.dropInstance as DropDownList).value = (args as any).filteredValue;
                 },
                 read: (args: { target: Element, column: any, operator: string, fltrObj: Filter }) => {
                     (args as any).fltrObj.filterByColumn((args as any).column.field, (args as any).operator, this.dropInstance?.value);

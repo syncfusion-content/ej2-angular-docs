@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
     templateUrl: './template.html'
 })
 export class AppComponent implements OnInit {
-    skillForm?: FormGroup;
+    skillForm?: FormGroup | any;
     build: FormBuilder;
     constructor(@Inject(FormBuilder) private builder: FormBuilder) {
         this.build = builder;

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-,ListBoxAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { ListBoxAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 /**
  * Module

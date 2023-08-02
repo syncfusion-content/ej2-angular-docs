@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
     changeHeaderText(): void {
-        this.grid?.columns.forEach((column: ColumnModel) => {
+        this.grid?.columns.forEach((column: ColumnModel | any) => {
             column.headerText = this.headerTextMap[column.field as string];
         });
         this.grid?.refreshHeader();

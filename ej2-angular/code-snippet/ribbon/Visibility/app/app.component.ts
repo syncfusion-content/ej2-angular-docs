@@ -2,8 +2,7 @@ import { Component } from "@angular/core";
 import { RibbonButtonSettingsModel, FileMenuSettingsModel } from '@syncfusion/ej2-angular-ribbon';
 @Component({
   selector: 'app-root',
-  templateUrl: 'app/app.component.html',
-  styleUrls: ['app/app.component.css']
+  templateUrl: 'app/app.component.html'
 })
 export class AppComponent {
   public pasteButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-paste", content: "Paste" };

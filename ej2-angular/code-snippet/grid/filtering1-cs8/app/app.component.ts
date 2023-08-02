@@ -61,7 +61,7 @@ export class AppComponent implements OnInit {
                         }
                     });
                     if (filteredValue.length > 0){
-                        this.dropInstance?.value = filteredValue;
+                        (this.dropInstance as MultiSelect).value = filteredValue;
                     }
                 },
                 read: (args: { target: Element, column: any, operator: string, fltrObj: Filter }) => {

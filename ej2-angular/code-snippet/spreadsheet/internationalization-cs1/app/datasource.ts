@@ -28,7 +28,7 @@ export function getTradeData(dataCount?: number): object {
   let location: string[] = ['UK', 'USA', 'Sweden', 'France', 'Canada', 'Argentina', 'Austria', 'Germany', 'Mexico'];
   let status: string[] = ['Active', 'Inactive'];
   let trustworthiness: string[] = ['Perfect', 'Sufficient', 'Insufficient'];
-  let tradeData: Object[] = [];
+  let tradeData: Object[] | any = [];
   let address: string[] = ['59 rue de lAbbaye', 'Luisenstr. 48', 'Rua do Paço, 67', '2, rue du Commerce', 'Boulevard Tirou, 255',
       'Rua do mailPaço, 67', 'Hauptstr. 31', 'Starenweg 5', 'Rua do Mercado, 12',
       'Carrera 22 con Ave. Carlos Soublette #8-35', 'Kirchgasse 6',
@@ -43,7 +43,7 @@ export function getTradeData(dataCount?: number): object {
   if (typeof dataCount === 'string') {
       dataCount = parseInt(dataCount, 10);
   }
-  for (let i: number = 1; i <= dataCount; i++) {
+  for (let i: number = 1; i <= (dataCount as number); i++) {
       let code: any = 10000;
       tradeData.push({
           'EmployeeID': code + i,
@@ -60,7 +60,7 @@ export function getTradeData(dataCount?: number): object {
           'Address': address[Math.floor(Math.random() * address.length)],
       });
       let employee: string = 'Employees';
-      let emp: string = tradeData[i - 1][employee];
+      let emp: string = tradeData[i - 1][employee as string];
       let sName: string = emp.substr(0, emp.indexOf(' ')).toLowerCase();
       let empmail: string = 'Mail';
       tradeData[i - 1][empmail] = sName + (Math.floor(Math.random() * 100) + 10) + '@' + mail[Math.floor(Math.random() * mail.length)];

@@ -1,0 +1,7 @@
+.wrap {
+  box-sizing: border-box;
+  height: 260px;
+  margin: 0 auto;
+  padding: 30px 10px;
+  width: 260px;
+}

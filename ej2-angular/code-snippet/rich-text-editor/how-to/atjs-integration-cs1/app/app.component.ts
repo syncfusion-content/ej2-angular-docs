@@ -46,9 +46,9 @@ public initializeConfig(): void {
 
 public oncreate(e: any): void {
     const textArea: HTMLElement = (this.rteObj!.contentModule as any).getEditPanel() as HTMLElement;
-    ($(textArea) as any).atwho(this.config);
-    $(textArea).on('keydown', function(e: any) {
-    if (e.keyCode === 13 && ($(textArea) as any).atwho('isSelecting')) {
+    (textArea as any).atwho(this.config);
+    (textArea as any).on('keydown', function(e: any) {
+    if (e.keyCode === 13 && ((textArea) as any).atwho('isSelecting')) {
         return false;
       }
       return undefined

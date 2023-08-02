@@ -29,7 +29,7 @@ export class AppComponent {
     });
     public profilePopup?: Popup;
     showHeaderBar: any;
-    onActionBegin(args: ActionEventArgs & ToolbarActionArgs): void {
+    onActionBegin(args: ActionEventArgs & ToolbarActionArgs):void {
         if (args.requestType === 'toolbarItemRendering') {
             let userIconItem: ItemModel = {
                 align: 'Right', prefixIcon: 'user-icon', text: 'Nancy', cssClass: 'e-schedule-user-icon'
@@ -42,12 +42,12 @@ export class AppComponent {
         if (args.requestType === 'toolBarItemRendered') {
             let userIconEle: HTMLElement = scheduleElement.querySelector('.e-schedule-user-icon') as HTMLElement;
             userIconEle.onclick = () => {
-                (this.profilePopup as Popup).relateTo = userIconEle;
-                (this.profilePopup as Popup).dataBind();
-                if ((this.profilePopup as Popup).element.classList.contains('e-popup-close')) {
-                    (this.profilePopup as Popup).show();
+                (this.profilePopup as Popup ).relateTo = userIconEle;
+                (this.profilePopup as Popup ).dataBind();
+                if ((this.profilePopup as Popup ).element.classList.contains('e-popup-close')) {
+                    (this.profilePopup as Popup ).show();
                 } else {
-                    (this.profilePopup as Popup).hide();
+                    (this.profilePopup as Popup ).hide();
                 }
             };
         }
@@ -55,7 +55,7 @@ export class AppComponent {
         let userContentEle: HTMLElement = createElement('div', {
             className: 'e-profile-wrapper'
         });
-        (scheduleElement.parentElement as HTMLElement).appendChild(userContentEle);
+        (scheduleElement.parentElement as HTMLElement ).appendChild(userContentEle);
 
         let userIconEle: HTMLElement = scheduleElement.querySelector('.e-schedule-user-icon') as HTMLElement;
         let getDOMString: (data: object) => NodeList = compile('<div class="profile-container"><div class="profile-image">' +

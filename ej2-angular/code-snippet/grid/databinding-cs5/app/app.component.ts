@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataManager, ODataAdaptor } from '@syncfusion/ej2-data';
 
 class SerialNoAdaptor extends ODataAdaptor {
-    processResponse() { 
+    override processResponse() { 
         let i = 0;
         const Sno = 'Sno';
         // calling base class processResponse function

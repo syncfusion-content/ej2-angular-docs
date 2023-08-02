@@ -2,32 +2,42 @@
 
 import { Component,ViewChild } from '@angular/core';
 import { Browser } from '@syncfusion/ej2-base';
-import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
+import { ImageEditorCommand, ImageEditorComponent, ShapeChangeEventArgs } from '@syncfusion/ej2-angular-image-editor';
 
 @Component({
     selector: 'app-root',
     template: `<!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
-                <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar"></ejs-imageeditor>
-              </div>
-              <button class="e-btn e-primary" (click)="btnClick()">Click</button>`
+                <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar" (shapeChanging)="shapeChanging($event)" showQuickAccessToolbar=false></ejs-imageeditor>
+                <button class="e-btn e-primary" (click)="btnClick()">Click</button>
+              </div>`
 })
 
 export class AppComponent {
     @ViewChild('imageEditor')
     public imageEditorObj?: ImageEditorComponent;
-    public toolbar: string[] = [];
+    public id?: string | ImageEditorCommand;
+    public toolbar: string[]= ['Annotate', "Line", "Rectangle", "Ellipse", "Circle", "Arrow", "Path"]
       public created(): void {
         if (Browser.isDevice) {
-            this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+            this.imageEditorObj?.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
         } else {
-            this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+            this.imageEditorObj?.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
+        }
+    }
+
+    public shapeChanging(args: ShapeChangeEventArgs): void {
+        if (args.action === 'select') {
+            this.id = args.currentShapeSettings?.id;
+            
         }
     }
     btnClick(): void {
-        let dimension: any = this.imageEditorObj?.getImageDimension();
-        this.imageEditorObj?.drawLine(dimension?.x, dimension?.y);
+        if (this.id) {
+            this.imageEditorObj?.deleteShape(this.id);
+        }
     }
+
 }
 
 
