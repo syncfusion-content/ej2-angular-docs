@@ -22,4 +22,4 @@ The Essential EJ2 ProgressBar is a control that indicates the progress of a task
 
 4. **[Annotation and label](./annotation)**: Supports to visually indicate time lapse when the toast expires.
 
-5. **[Animation](./animation)**:  Supports to animate the ProgressBar track.
+5. **[Animation](./animation)**: Supports to animate the ProgressBar track.

@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
     public currentTab = 0;
     public hidden = true;
     @ViewChild('grid') grid?: GridComponent;
-    @ViewChild('orderForm') orderForm: FormGroup;
+    @ViewChild('orderForm') orderForm?: FormGroup;
 
     ngOnInit(): void {
         this.data = data;
@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
     }
 
     nextBtn(args: any) {
-        if ((this as any).orderForm.valid) {
+        if (this.orderForm?.valid) {
             if (this.next !== 'SUBMIT') {
                 this.currentTab++;
                 this.nextpre(this.currentTab);
@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
     }
 
     previousBtn(args: any) {
-        if ((this as any).orderForm.valid) {
+        if (this.orderForm?.valid) {
             this.currentTab--;
             this.nextpre(this.currentTab);
         }

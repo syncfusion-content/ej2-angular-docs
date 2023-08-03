@@ -5,7 +5,7 @@
 <li><a href="/ej2-angular/browser">Browser Compatibility</a></li>
 <li><a href="/ej2-angular/npm-package">NPM Packages</a></li>
 <li><a href="https://ej2.syncfusion.com/angular/documentation/api/accordion/">API Reference</a></li>
-<li><a href="https://ej2.syncfusion.com/angular/documentation/release-notes/22.1.34/?type=all">Release Notes</a></li>
+<li><a href="https://ej2.syncfusion.com/angular/documentation/release-notes/22.2.5/?type=all">Release Notes</a></li>
 <li>
 Installation and Upgrade
 <ul>
@@ -71,11 +71,13 @@ Common
   <li><a href="/ej2-angular/common/how-to/update-npm-package">Update NPM Packages</a></li>
   <li><a href="/ej2-angular/common/how-to/sass">How to use SCSS file</a></li>
   <li><a href="/ej2-angular/common/how-to/custom-css">How to use Custom CSS file in Angular Application</a></li>
+  <li><a href="/ej2-angular/common/how-to/csp-erros">Content Security Policy Errors</a></li>
  </ul>
 </li>
 <li>Troubleshooting
   <ul>
    <li><a href="/ej2-angular/common/troubleshooting/ngcc-compatibility">NGCC compatibility</a></li>
+   <li><a href="/ej2-angular/common/troubleshooting/content-security-policy">Content Security Policy</a></li>
   </ul>
  </li>
  </ul>
@@ -1130,6 +1132,7 @@ AppBar
          <li><a href="/ej2-angular/grid/grouping/grouping">Grouping</a>
            <ul>
              <li><a href="/ej2-angular/grid/grouping/caption-template">Caption Template</a></li>
+             <li><a href="/ej2-angular/grid/grouping/reordering-on-grouped-columns">Reordering on Grouped Columns</a></li>
              <li><a href="/ej2-angular/grid/grouping/lazy-load-grouping">Lazy Load Grouping</a></li>
            </ul>
          </li>
@@ -1237,13 +1240,14 @@ AppBar
              <li><a href="/ej2-angular/grid/how-to/enable-editing-in-single-click">Enable editing in single click</a></li>
              <li><a href="/ej2-angular/grid/how-to/place-cancel-icon-in-search-bar">Place a cancel icon in search bar</a></li>
              <li><a href="/ej2-angular/grid/how-to/ngx-translate-pipe-for-header-text">Add ngx-translate pipe for grid's header text</a></li>
-             <li><a href="/ej2-angular/grid/how-to/unit-jasmine-testing">Unit Jasmine testing</a></li>
-			 <li><a href="/ej2-angular/grid/how-to/create-a-routing-sample">Create a routing sample</a></li>
+             <li><a href="/ej2-angular/grid/how-to/unit-jasmine-testing">Unit Jasmine testing</a></li>             
+             <li><a href="/ej2-angular/grid/how-to/create-a-routing-sample">Create a routing sample</a></li>
            </ul>
          </li>
          <li><a href="https://ej2.syncfusion.com/angular/documentation/api/grid/">API Reference</a></li>
        </ul>
-  </li><li>
+  </li>
+<li>
     HeatMap Chart
      <ul>
        <li><a href="/ej2-angular/heatmap-chart/getting-started">Getting Started</a></li>
@@ -1271,11 +1275,16 @@ AppBar
 Image Editor
    <ul>
       <li><a href="/ej2-angular/image-editor/getting-started">Getting Started</a></li>
+      <li><a href="/ej2-angular/image-editor/end-user-capabilities">End User Capabilities</a></li>
       <li><a href="/ej2-angular/image-editor/open-save">Open and Save</a></li>
       <li><a href="/ej2-angular/image-editor/selection-cropping">Selection and Cropping</a></li>
       <li><a href="/ej2-angular/image-editor/annotation">Annotation</a></li>
       <li><a href="/ej2-angular/image-editor/transform">Transform</a></li>
       <li><a href="/ej2-angular/image-editor/toolbar">Toolbar</a></li>
+      <li><a href="/ej2-angular/image-editor/quick-access">Quick Access Toolbar</a></li>
+      <li><a href="/ej2-angular/image-editor/undo-redo">Undo And Redo</a></li>
+      <li><a href="/ej2-angular/image-editor/filter">Filter</a></li>
+      <li><a href="/ej2-angular/image-editor/finetune">Finetune</a></li>
       <li><a href="/ej2-angular/image-editor/localization">Localization</a></li>
    </ul>
 </li><li>
@@ -1588,6 +1597,7 @@ Mention
             <li><a href="/ej2-angular/pdfviewer/open-pdf-file/from-amazon-s3">From AWS S3</a></li>
             <li><a href="/ej2-angular/pdfviewer/open-pdf-file/from-azure-blob-storage">From Azure Blob Storage</a></li>
             <li><a href="/ej2-angular/pdfviewer/open-pdf-file/from-google-cloud-storage">From Google Cloud Storage</a></li>
+            <li><a href="/ej2-angular/pdfviewer/open-pdf-file/from-google-drive">From Google Drive</a></li>
           </ul>
         </li>
         <li>Save PDF File
@@ -1595,6 +1605,7 @@ Mention
             <li><a href="/ej2-angular/pdfviewer/save-pdf-file/to-amazon-s3">To AWS S3</a></li>
             <li><a href="/ej2-angular/pdfviewer/save-pdf-file/to-azure-blob-storage">To Azure Blob Storage</a></li>
             <li><a href="/ej2-angular/pdfviewer/save-pdf-file/to-google-cloud-storage">To Google Cloud Storage</a></li>
+            <li><a href="/ej2-angular/pdfviewer/save-pdf-file/to-google-drive">To Google Drive</a></li>
           </ul>
         </li>
         <li>Annotation
@@ -1860,8 +1871,12 @@ Ribbon
     <li><a href="/ej2-angular/ribbon/getting-started">Getting Started</a></li>
     <li><a href="/ej2-angular/ribbon/modules">Feature Modules</a></li>
     <li><a href="/ej2-angular/ribbon/tabs-groups">Tabs and Groups</a></li>
+    <li><a href="/ej2-angular/ribbon/items">Ribbon Items</a></li>
     <li><a href="/ej2-angular/ribbon/layouts">Ribbon Layouts</a></li>
     <li><a href="/ej2-angular/ribbon/filemenu">File Menu</a></li>
+    <li><a href="/ej2-angular/ribbon/help-pane-template">Help Pane Template</a></li>
+    <li><a href="/ej2-angular/ribbon/tooltip">Tooltip</a></li>
+    <li><a href="/ej2-angular/ribbon/resizing">Resizing</a></li>
     <li><a href="/ej2-angular/ribbon/events">Events</a></li>
     <li><a href="https://ej2.syncfusion.com/angular/documentation/api/ribbon/">API Reference</a></li>
   </ul>

@@ -146,9 +146,9 @@ import { FormBuilder, FormsModule,FormGroup, Validators } from '@angular/forms';
 })
 
 export class AppComponent {
-      public headerText: Object = [{ 'text': 'ReactiveForms1' }, { 'text': 'ReactiveForms2'}];
+    public headerText: Object | any = [{ 'text': 'ReactiveForms1' }, { 'text': 'ReactiveForms2'}];
 
-public skillset: string[] = [
+    public skillset: string[] = [
         'ASP.NET', 'ActionScript', 'Basic',
         'C++' , 'C#' , 'dBase' , 'Delphi' ,
         'ESPOL' , 'F#' , 'FoxPro' , 'Java',
@@ -157,7 +157,7 @@ public skillset: string[] = [
 
 
     public placeholder: String = 'Select a language';
-    skillForm?: FormGroup;
+    skillForm?: FormGroup | any ;
 
     constructor(@Inject(FormBuilder) private builder: FormBuilder) {
         this.createForm();

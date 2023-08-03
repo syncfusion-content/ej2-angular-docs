@@ -2,30 +2,31 @@
 
 import { Component,ViewChild } from '@angular/core';
 import { Browser } from '@syncfusion/ej2-base';
-import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
+import { ImageEditorCommand, ImageEditorComponent, ToolbarEventArgs } from '@syncfusion/ej2-angular-image-editor';
 
 @Component({
     selector: 'app-root',
     template: `<!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
-                <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar"></ejs-imageeditor>
-              </div>
-              <button class="e-btn e-primary" (click)="btnClick()">Click</button>`
+                <ejs-imageeditor #imageEditor (created)="created()" (toolbarUpdating)="toolbarUpdating($event)"></ejs-imageeditor>
+              </div>`
 })
 
 export class AppComponent {
     @ViewChild('imageEditor')
     public imageEditorObj?: ImageEditorComponent;
-    public toolbar: string[] = [];
       public created(): void {
         if (Browser.isDevice) {
-            this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+            this.imageEditorObj?.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
         } else {
-            this.imageEditorObj?.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+            this.imageEditorObj?.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
         }
     }
-    btnClick(): void {
-        this.imageEditorObj?.select("Circle");
+
+    public toolbarUpdating(args: ToolbarEventArgs): void {
+        if (args.toolbarType === 'text') {
+            args.toolbarItems?.push({text: 'custom'})
+        }
     }
 }
 

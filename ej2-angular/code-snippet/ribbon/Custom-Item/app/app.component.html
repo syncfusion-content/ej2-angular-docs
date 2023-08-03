@@ -1,0 +1,24 @@
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard" >
+                    <e-ribbon-collections>
+                        <e-ribbon-collection id="paste-collection">
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Template" [itemTemplate]="itemTemplate">
+                                    <ng-template #itemTemplate let-data="">
+                                      <span class="ribbonTemplate {{data.activeSize}}">
+                                        <span class="e-icons e-video"></span>
+                                        <span class="text">Video</span>
+                                      </span>
+                                    </ng-template>
+                                  </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>

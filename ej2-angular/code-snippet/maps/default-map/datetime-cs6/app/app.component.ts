@@ -17,9 +17,9 @@ Maps.Inject(Bubble);
 
 export class AppComponent implements OnInit {
     public shapeData?: object;
-    public shapeDataPath?: object;
-    public shapePropertyPath?: object;
-    public bubbleSettings: object
+    public shapeDataPath?: object | any;
+    public shapePropertyPath?: object | any;
+    public bubbleSettings?: object;
     ngOnInit(): void {
         this.shapeData = world_map;
         this.shapeDataPath = 'name';

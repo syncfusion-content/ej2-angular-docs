@@ -12,11 +12,11 @@ import { BrowserModule } from '@angular/platform-browser';
 export class AppComponent {
     // defined the array of data
     public skillset: string[] = [
-                                      'ASP.NET', 'ActionScript', 'Basic',
-                                      'C++' , 'C#' , 'dBase' , 'Delphi' ,
-                                      'ESPOL' , 'F#' , 'FoxPro' , 'Java',
-                                      'J#' , 'Lisp' , 'Logo' , 'PHP'
-                                  ];
+        'ASP.NET', 'ActionScript', 'Basic',
+        'C++' , 'C#' , 'dBase' , 'Delphi' ,
+        'ESPOL' , 'F#' , 'FoxPro' , 'Java',
+        'J#' , 'Lisp' , 'Logo' , 'PHP'
+    ];
     public placeholder: String = 'e.g: ActionScript';
     skillForm: FormGroup| any;
     fb: FormBuilder;

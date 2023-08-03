@@ -51,9 +51,11 @@ L10n.load({
     selector: 'app-container',
     template: "<ejs-spreadsheet #spreadsheet locale='fr-CH' (created)='created()'> <e-sheets> <e-sheet> <e-ranges> <e-range [dataSource]='defaultData'></e-range></e-ranges><e-columns><e-column [width]=90></e-column><e-column [width]=100></e-column><e-column [width]=96></e-column><e-column [width]=120></e-column><e-column [width]=130></e-column><e-column [width]=120></e-column></e-columns></e-sheet></e-sheets></ejs-spreadsheet>"
 })
+
 export class AppComponent implements OnInit {
     public data?: object[];
     @ViewChild('spreadsheet') public spreadsheetObj?: SpreadsheetComponent;
+    defaultData?: Object[];
     ngOnInit(): void {
         this.defaultData = defaultData;
         setCulture('fr-CH');
@@ -67,10 +69,9 @@ export class AppComponent implements OnInit {
     }
     created(){
          //Applies cell and number formatting to specified range of the active sheet
-            this.spreadsheetObj.cellFormat({ fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' }, 'A1:F1');
-            this.spreadsheetObj.numberFormat('$#,##0.00', 'F2:F11');
+            this.spreadsheetObj?.cellFormat({ fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' }, 'A1:F1');
+            this.spreadsheetObj?.numberFormat('$#,##0.00', 'F2:F11');
     };
-  };
-}
+};
 
 

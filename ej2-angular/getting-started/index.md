@@ -14,7 +14,7 @@ The Base (`ej2-base`) is the common package which have common class definitions,
 
 ## Key Features
 
-* [Angular CLI](angular-cli/)
-* [Angular SystemJS](systemjs/)
-* [ASP.NET Core](aspnet-core/)
-* [Angular E2E Testing](angular-selenium/)
+* [Angular CLI](./angular-cli)
+* [Angular SystemJS](./systemjs)
+* [ASP.NET Core](./aspnet-core)
+* [Angular E2E Testing](../frameworks-and-feature/angular-selenium)

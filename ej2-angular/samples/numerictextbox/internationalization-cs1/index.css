@@ -1,0 +1,20 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 240px;
+  padding-top: 100px;
+}
+
+

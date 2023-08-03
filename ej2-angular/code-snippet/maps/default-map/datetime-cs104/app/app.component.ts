@@ -4,8 +4,8 @@ import { world_map } from './world-map';
 Maps.Inject(Marker, Legend, MapsTooltip);
 @Component({
     selector: 'app-container',
-    template:
-    `<ejs-maps id="rn-container" #maps (markerDragStart)="markerDragStart($event)" (markerDragEnd)="markerDragEnd($event)" [legendSettings]="legendSettings">
+    template: `
+        <ejs-maps id="rn-container" #maps (markerDragStart)="markerDragStart($event)" (markerDragEnd)="markerDragEnd($event)" [legendSettings]="legendSettings">
         <e-layers>
             <e-layer [shapeSettings]="shapeSettings" [shapeData]="shapeData" [markerSettings]="markerSettings"></e-layer>
         </e-layers>
@@ -19,10 +19,10 @@ export class AppComponent implements OnInit {
     public markerSettings?: object;
     public shapeSettings?: object;
     public zoomSettings?: object;
-    public markerDragStart = (args: IMarkerDragEventArgs) => {
+    public markerDragStart = (args: IMarkerDragEventArgs | any) => {
       // When the marker begins to move on the map, the event is triggered.
     };
-    public markerDragEnd = (args: IMarkerDragEventArgs) => {
+    public markerDragEnd = (args: IMarkerDragEventArgs | any) => {
       // When the marker on the map stops dragging, the event is triggered.
       (this.mapsInstance as any).layers[args.layerIndex].markerSettings[args.markerIndex].dataSource[args.dataIndex].name = 'Dragged Marker ' + (args.dataIndex + 1);
       (this.mapsInstance as Maps).refresh();

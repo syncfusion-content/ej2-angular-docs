@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
-import {  NodeModel,  PaletteModel, SymbolPreviewModel,NodeConstraints } from '@syncfusion/ej2-angular-diagrams';
+import {  NodeModel,  PaletteModel, SymbolPreviewModel ,NodeConstraints} from '@syncfusion/ej2-angular-diagrams';
 import { ExpandMode } from '@syncfusion/ej2-navigations';
 
 @Component({

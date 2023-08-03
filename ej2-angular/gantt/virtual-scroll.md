@@ -40,4 +40,3 @@ This mode can be enable by setting the `enableVirtualization` property to `true`
 * Cell selection will not be persisted.
 * The number of records rendered will be determined by the `height` property.
 * It is necessary to mention the height of the Gantt in pixels when enabling Virtual Scrolling.
-* Virtual Scroll does not support Multi Taskbar support in Resource View.

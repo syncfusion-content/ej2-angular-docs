@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     @ViewChild('ejDatePicker') ejDatePicker?: DatePickerComponent;
     public targetElement?: HTMLElement;
     public placeholder: String = 'Date of Birth';
-    skillForm?: FormGroup;
+    skillForm?: FormGroup | any;
     build: FormBuilder;
     constructor(@Inject(FormBuilder) private builder: FormBuilder) {
         this.build = builder;
@@ -32,13 +32,13 @@ export class AppComponent implements OnInit {
         });
     }
     get username() {
-        return (this.skillForm as FormGroup<any>).get('username');
+        return (this.skillForm as FormGroup<any> | any).get('username');
     }
     get datepicker() {
-        return (this.skillForm as FormGroup<any>).get('datepicker');
+        return (this.skillForm as FormGroup<any> | any).get('datepicker');
     }
     get usermail() {
-        return (this.skillForm as FormGroup<any>).get('usermail');
+        return (this.skillForm as FormGroup<any> | any).get('usermail');
     }
 
     onSubmit() {

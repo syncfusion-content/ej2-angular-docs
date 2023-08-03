@@ -1,13 +1,13 @@
 
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { EditSettingsModel, ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 import { Gantt } from '@syncfusion/ej2-gantt';
 
 @Component({
     selector: 'app-root',
-    template:
-       `<ejs-gantt id="ganttDefault" height="450px" [dataSource]="data" [taskFields]="taskSettings"></ejs-gantt>`,
+    template: `
+        <ejs-gantt id="ganttDefault" height="450px" [dataSource]="data" [taskFields]="taskSettings">
+        </ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{

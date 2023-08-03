@@ -26,11 +26,8 @@ You can show the file menu by setting the [visible](https://ej2.syncfusion.com/a
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Visibility/app/main.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.html" %}
+{% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/ribbon/Visibility/app/app.component.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/ribbon/Visibility/app/app.component.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -50,11 +47,8 @@ The menu items can be added to the file menu using the [menuItems](https://ej2.s
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/MenuItems/app/main.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.html" %}
+{% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/ribbon/MenuItems/app/app.component.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/ribbon/MenuItems/app/app.component.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -74,11 +68,8 @@ You can open the submenu on menu item click by setting the [showItemOnClick](htt
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/SubmenuOnClick/app/main.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.html" %}
+{% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/ribbon/SubmenuOnClick/app/app.component.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/ribbon/SubmenuOnClick/app/app.component.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -98,11 +89,8 @@ You can define the file menu header text content by using the [text](https://ej2
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Text/app/main.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.html" %}
+{% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/ribbon/Text/app/app.component.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/ribbon/Text/app/app.component.css %}
 {% endhighlight %}
 {% endtabs %}
   

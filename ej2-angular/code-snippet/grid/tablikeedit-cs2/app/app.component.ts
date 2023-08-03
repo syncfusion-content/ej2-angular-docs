@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
     @ViewChild('grid')
     grid?: GridComponent;
     @ViewChild('orderForm')
-    orderForm: FormGroup
+    orderForm?: FormGroup;
     @ViewChild('tab')
     tabObj: any;
 
@@ -51,18 +51,18 @@ export class AppComponent implements OnInit {
             e.cancel = true;
         }
         if(e.selectingIndex === 1) {
-            e.cancel = !this.orderForm.valid;
+            e.cancel = !this.orderForm?.valid;
         }
     }
 
     moveNext() {
-        if (this.orderForm.valid) {
+        if (this.orderForm?.valid) {
             this.tabObj.select(1);
         }
     }
 
     submitBtn() {
-        if (this.orderForm.valid) {
+        if (this.orderForm?.valid) {
             (this.grid as any).endEdit();
         }
     }

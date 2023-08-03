@@ -7,7 +7,7 @@ import { DropDownListComponent,ChangeEventArgs } from '@syncfusion/ej2-angular-d
 
 @Component({
     selector: 'app-root',
-    styleUrls: ['styles.css'],
+    styleUrls: ['./styles.css'],
     template: `
         <div id="container">
             <div id="datetimepicker">

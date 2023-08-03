@@ -1,21 +1,19 @@
-<ejs-grid #grid [dataSource]='data' height='290px' [allowPaging]='true' [toolbar]='toolbar'
-    [editSettings]='editSettings' (actionBegin)='actionBegin($event)'>
+<ejs-grid #grid [dataSource]='data' height='290px' [allowPaging]='true' [toolbar]='toolbar' [editSettings]='editSettings' (actionBegin)='actionBegin($event)'>
     <e-columns>
-        <e-column field='OrderID' headerText='Order ID' isPrimaryKey='true' [validationRules]='orderIDRules'
-            textAlign='right' width=120></e-column>
-        <e-column field='CustomerID' headerText='Customer ID' [validationRules]='customerIDRules' width=150></e-column>
-        <e-column field='OrderDate' headerText='Order Date' editType="datepickeredit" format='yMd' width=120></e-column>
+        <e-column field='OrderID' headerText='Order ID' isPrimaryKey='true' textAlign='right' width=120></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+        <e-column field='OrderDate' headerText='Order Date' format='yMd' width=120></e-column>
         <e-column field='Freight' format='C2' editType='numericedit' [edit]='numericParams' width=150></e-column>
-        <e-column field='ShipCountry' headerText='Ship Country' editType="dropdownedit" width=150></e-column>
-        <e-column field='ShipCity' headerText='Ship City' editType="dropdownedit" width=150></e-column>
+        <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+        <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
     </e-columns>
     <e-aggregates>
         <e-aggregate>
-            <e-columns>
-                <e-column field="Freight" type="sum" format="C2">
-                    <ng-template #footerTemplate let-data>Sum: {{data.sum}}</ng-template>
-                </e-column>
-            </e-columns>
+                <e-columns>
+                    <e-column field="Freight" type="sum" format="C2">
+                        <ng-template #footerTemplate let-data>Sum: {{data.sum}}</ng-template>
+                    </e-column>                
+                </e-columns>
         </e-aggregate>
     </e-aggregates>
 </ejs-grid>

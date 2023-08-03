@@ -1,0 +1,50 @@
+<ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard" groupIconCss="e-icons e-paste">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="SplitButton" [splitButtonSettings]="pasteButton">
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button" [buttonSettings]="cutButton">
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button" [buttonSettings]="copyButton">
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button" [buttonSettings]="formatButton">
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+                <e-ribbon-group header="Font" [isCollapsible]=false>
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="ComboBox" [comboBoxSettings]="fontStyleSettings">
+                                </e-ribbon-item>
+                                <e-ribbon-item type="ComboBox" [comboBoxSettings]="fontSizeSettings">
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button" [buttonSettings]="boldButton">
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button" [buttonSettings]="italicButton">
+                                </e-ribbon-item>
+                                <e-ribbon-item type="Button" [buttonSettings]="underlineButton">
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
