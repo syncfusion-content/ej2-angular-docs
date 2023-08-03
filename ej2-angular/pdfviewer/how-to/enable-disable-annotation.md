@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to enable and disable the delete button based on annotation selection and unselection events | Syncfusion
-Description: Learn how to enable and disable the delete button based on annotation selection and unselection events in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
+Description: Learn to enable and disable delete button based on annotation events in Syncfusion Angular Pdfviewer component of Essential JS 2 and more.
 platform: ej2-angular
 control: How to enable and disable the delete button based on annotation selection and unselection events
 documentation: ug
