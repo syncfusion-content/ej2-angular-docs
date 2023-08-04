@@ -8,13 +8,13 @@ documentation: ug
 domainurl: ##DomainURL##
 ---     
 
-# Layouts in Ribbon component
+# Ribbon Layouts
 
-The Ribbon offers to customize the layout by using the [activeLayout](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#activelayout) property. The Ribbon component supports the following layouts:
+The Ribbon allows to customize the layout by using the [activeLayout](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#activelayout) property. The Ribbon component supports the following layouts:
 
 ## Classic layout
 
-In classic layout, the Ribbon component organize the items and groups in a traditional form by setting the [activeLayout](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#activelayout) property to [Classic](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonLayout/). By default, the Ribbon component renders in `Classic` layout.
+In classic layout, the Ribbon component organizes the items and groups in a traditional form by setting the [activeLayout](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#activelayout) property to [Classic](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonLayout/). By default, the Ribbon component renders in the `Classic` layout.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -31,11 +31,11 @@ In classic layout, the Ribbon component organize the items and groups in a tradi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/Classic" %}
+{% previewsample "page.domainurl/samples/ribbon/Classic" %}
 
 ### Defining items size
 
-The [allowedSizes](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#allowedsizes) property can be used to set the allowed size for an item. The Ribbon items can be appeared in three different sizes: Large(large icon with text), Medium(small icon with text) and Small(small icon only). On resizing, the items size can be changed based on the available width of the tab content from the order of Large-> Medium-> Small and viceversa.
+You can use the [allowedSizes](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#allowedsizes) property to set the allowed size for an item. The Ribbon items can be appeared in three different sizes: Large(large icon with text), Medium(small icon with text) and Small(small icon only). On resizing, the items size can be changed based on the available width of the tab content from the order of Large-> Medium-> Small and viceversa.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -52,11 +52,11 @@ The [allowedSizes](https://ej2.syncfusion.com/angular/documentation/api/ribbon/r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/ItemsSize" %}
+{% previewsample "page.domainurl/samples/ribbon/ItemsSize" %}
 
 ### Defining items orientation
 
-The Ribbon group [orientation](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroup/#orientation) property allows to manage how the items are aligned. By default, the orientation is set to `Column`, in which the items are arranged vertically.
+The Ribbon group [orientation](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroup/#orientation) property allows to manage how the items are aligned either in a `Row` or `Column`. By default, the orientation is set to `Column`, in which the items are arranged vertically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -73,13 +73,13 @@ The Ribbon group [orientation](https://ej2.syncfusion.com/angular/documentation/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/Orientation" %}
+{% previewsample "page.domainurl/samples/ribbon/Orientation" %}
 
 >  When the orientation is set to `Row` a group may have a maximum of three collections each of which may contain any number of items. When the orientation is set to `Column` a group may have any number of collections, each of which may contain one large-sized item or three medium/small-sized items. If two large-sized items are specified, it automatically converts into two medium/small-sized items.
 
 ### Defining group header
 
-The [header](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroup/#header) property is used to set the name for each group header.
+You can use the [header](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroup/#header) property to set the name for each group header.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,11 +96,11 @@ The [header](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonG
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/HeaderText" %}
+{% previewsample "page.domainurl/samples/ribbon/HeaderText" %}
 
 ### Defining group icon
 
-The [groupIconCss](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroup/#groupiconcss) property is used to customize the icons in the group overflow button. When the ribbon's size is adjusted, the group popup will appear.
+You can use the [groupIconCss](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroup/#groupiconcss) property to customize the icons in the group overflow button. When the ribbon size is adjusted, the group popup will appear.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -117,11 +117,11 @@ The [groupIconCss](https://ej2.syncfusion.com/angular/documentation/api/ribbon/r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/GroupIcon" %}
+{% previewsample "page.domainurl/samples/ribbon/GroupIcon" %}
 
 ### Enabling group launcher icon
 
-The [showLauncherIcon](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroup/#showlaunchericon) property can be used to enable or disable the launcher icon for each group. By default, the property is set to `false`.
+You can use the [showLauncherIcon](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroup/#showlaunchericon) property to enable or disable the launcher icon for each group. By default, the property is set to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -138,11 +138,11 @@ The [showLauncherIcon](https://ej2.syncfusion.com/angular/documentation/api/ribb
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/LauncherIcon" %}
+{% previewsample "page.domainurl/samples/ribbon/LauncherIcon" %}
 
 #### Customize launcher icon
 
-The [launcherIconCss](https://ej2.syncfusion.com/angular/documentation/api/ribbon#launchericoncss) property is used to customize the launcher icon by applying the custom styles.
+You can use the [launcherIconCss](https://ej2.syncfusion.com/angular/documentation/api/ribbon#launchericoncss) property to customize the launcher icon by applying the custom styles.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -159,11 +159,11 @@ The [launcherIconCss](https://ej2.syncfusion.com/angular/documentation/api/ribbo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/CustomLauncher" %}
+{% previewsample "page.domainurl/samples/ribbon/CustomLauncher" %}
 
 ### Defining group collapsible state
 
-The [isCollapsible](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroup/#iscollapsible) property can determine whether a group can be collapsed or not during resize. By default, the property is set to `true`. To prevent the group from being collapsed, set the property to `false`.
+You can use the [isCollapsible](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroup/#iscollapsible) property to determine whether the group is collapsed or not during resize. By default, the property is set to `true`. To prevent the group from being collapsed, set the property to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -180,11 +180,11 @@ The [isCollapsible](https://ej2.syncfusion.com/angular/documentation/api/ribbon/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/CollapsibleState" %}
+{% previewsample "page.domainurl/samples/ribbon/CollapsibleState" %}
 
 ### Defining priority order for group collapse or expand
 
-The [priority](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroup/#priority) property define's the priority order for each group which should be collapsed or expanded on resizing. When collapsing, higher priority values are fetched first. When expanding, lower priority values are fetched first.
+You can use the [priority](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroup/#priority) property to set the priority order for each group which should be collapsed or expanded on resizing. When collapsing, higher priority values are fetched first. When expanding, lower priority values are fetched first.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -201,11 +201,11 @@ The [priority](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/Priority" %}
+{% previewsample "page.domainurl/samples/ribbon/Priority" %}
 
-## Simplified
+## Simplified layout
 
-The simplified layout renders the ribbon tab contents in simplified or single row. In this type, you can only render items with medium and small size. When you resize the Ribbon component, the items within a group will shrink to their allowed lowest size and then it moves to the overflow popup.
+In simplified layout, the Ribbon component organizes the items and groups into a single row by setting the [activeLayout](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#activelayout) property to [Simplified](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonLayout/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -222,11 +222,11 @@ The simplified layout renders the ribbon tab contents in simplified or single ro
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/Simplified" %}
+{% previewsample "page.domainurl/samples/ribbon/Simplified" %}
 
 ### Enabling group overflow popup
 
-The [enableGroupOverflow](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroup/#enablegroupoverflow) property defines whether to add a separate popup for the overflow items in the group while resizing. The overflow items will appear in the standard overflow popup located at the right end of the tab content if it is set to `false`.
+You can use the [enableGroupOverflow](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroup/#enablegroupoverflow) property to add a separate popup for the overflow items in the group while resizing. The overflow items will appear in the common overflow popup, located at the right end of the tab content if it is set to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -243,13 +243,13 @@ The [enableGroupOverflow](https://ej2.syncfusion.com/angular/documentation/api/r
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/GroupOverflow" %}
+{% previewsample "page.domainurl/samples/ribbon/GroupOverflow" %}
 
 ## Minimized state
 
 You can hide the Ribbon contents and display only the tab headers by double-clicking on the tab header. In minimized state, the Ribbon component expands to its normal state when click on the tab header.
 
-Also, you can render or programmatically change the Ribbon component to minimized state by setting the [isMinimized](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#isminimized) property to `true`.
+You can use the [isMinimized](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#isminimized) property to change the Ribbon component to minimized state. By default, the value is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -266,4 +266,4 @@ Also, you can render or programmatically change the Ribbon component to minimize
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/Minimize" %}
+{% previewsample "page.domainurl/samples/ribbon/Minimize" %}

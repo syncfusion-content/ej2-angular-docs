@@ -8,11 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---     
 
-# File Menu in Ribbon component
+# File Menu
 
 The Ribbon component provides a built-in file menu that allows you to add menu items for performing specific actions. The file menu can be enabled by setting the [fileMenu](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonFileMenu/) property.
 
-## Visibility state
+## Visibility 
 
 You can show the file menu by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettingsModel/#visible) property to `true`. By default, the file menu is hidden.
 
@@ -31,7 +31,7 @@ You can show the file menu by setting the [visible](https://ej2.syncfusion.com/a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/Visibility" %}
+{% previewsample "page.domainurl/samples/ribbon/Visibility" %}
 
 ## Adding menu items
 
@@ -52,11 +52,11 @@ The menu items can be added to the file menu using the [menuItems](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/MenuItems" %}
+{% previewsample "page.domainurl/samples/ribbon/MenuItems" %}
 
 ## Open submenu on click
 
-You can open the submenu on menu item click by setting the [showItemOnClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettingsModel/#showitemonclick) property to `true`. By default, the submenu will open on mouse hover.
+You can open the submenu on menu item click, by setting the [showItemOnClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/fileMenuSettingsModel/#showitemonclick) property to `true`. By default, the submenu will open on mouse hover.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -73,7 +73,7 @@ You can open the submenu on menu item click by setting the [showItemOnClick](htt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/SubmenuOnClick" %}
+{% previewsample "page.domainurl/samples/ribbon/SubmenuOnClick" %}
 
 ## Custom header text
 
@@ -94,4 +94,4 @@ You can define the file menu header text content by using the [text](https://ej2
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/Text" %}
+{% previewsample "page.domainurl/samples/ribbon/Text" %}
