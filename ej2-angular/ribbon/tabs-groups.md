@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tabs and Groups in Ribbon component
+# Tabs and Groups
 
 The Ribbon component consists of a series of tabs that are organized into groups to enable quick access to specific commands or tools. Each tab contains a set of groups, and each group contains collections of items that are logically related to each other.
 
@@ -31,7 +31,7 @@ You can use the [tabs](https://ej2.syncfusion.com/angular/documentation/api/ribb
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/Tabs" %}
+{% previewsample "page.domainurl/samples/ribbon/Tabs" %}
 
 ## Adding Groups
 
@@ -52,7 +52,7 @@ You can use the [groups](https://ej2.syncfusion.com/angular/documentation/api/ri
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/Groups" %}
+{% previewsample "page.domainurl/samples/ribbon/Groups" %}
 
 ## Adding Items
 
@@ -73,6 +73,6 @@ You can add collections of items to each group by using the [collections](https:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/Items" %}
+{% previewsample "page.domainurl/samples/ribbon/Items" %}
 
-> Check out our [`items`](./items) page on adding the built-in and custom items.
+> For more information on the built-in and how to add custom Ribbon items, you can visit the [`items`](./items) page.
