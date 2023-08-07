@@ -3,7 +3,7 @@ import { RibbonButtonSettingsModel, FileMenuSettingsModel } from '@syncfusion/ej
 import { MenuItemModel } from "@syncfusion/ej2-navigations";
 @Component({
   selector: 'app-root',
-  templateUrl: 'app/app.component.html'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   public pasteButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-paste", content: "Paste" };

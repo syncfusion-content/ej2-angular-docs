@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { RibbonButtonSettingsModel, RibbonItemSize, ItemModel } from '@syncfusion/ej2-angular-ribbon';
 @Component({
   selector: 'app-root',
-  templateUrl: 'app/app.component.html',
+  templateUrl: './app.component.html',
 })
 export class AppComponent {
   public pasteOptions: ItemModel[] = [{ text: "Keep Source Format" }, { text: "Merge format" }, { text: "Keep text only" }];
