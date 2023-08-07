@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { RibbonButtonSettingsModel, RibbonComboBoxSettingsModel, ItemModel } from '@syncfusion/ej2-angular-ribbon';
 @Component({
   selector: 'app-root',
-  templateUrl: 'app/app.component.html',
+  templateUrl: './app.component.html',
 })
 export class AppComponent {
   public cutButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-cut", content: "Cut" }

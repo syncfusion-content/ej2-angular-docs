@@ -75,7 +75,7 @@ Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution 
 Add [`@syncfusion/ej2-angular-documenteditor`](https://www.npmjs.com/package/@syncfusion/ej2-angular-documenteditor/v/20.2.38) package to the application.
 
 ```bash
-npm install @syncfusion/ej2-angular-documenteditor --save
+ng add @syncfusion/ej2-angular-documenteditor
 ```
 
 ### Angular compatibility compiled package(ngcc)

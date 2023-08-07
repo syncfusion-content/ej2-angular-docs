@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Calculated field in Angular Pivotview component
 
-Allows end user to create a new calculated field in the pivot table, based on available fields from the bound data source or using simple formula with basic arithmetic operators. It can be added at runtime through the built-in dialog, invoked from Field List UI. To do so, set the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#allowcalculatedfield) property to **true** in the pivot table. End user can now see a "CALCULATED FIELD" button enabled in Field List UI automatically, which on clicking will invoke the calculated field dialog and perform necessary operation.
+Allows end user to create a new calculated field in the pivot table, based on available fields from the bound data source or using simple formula with basic arithmetic operators. It can be added at runtime through the built-in dialog, invoked from Field List UI. To do so, set the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowcalculatedfield) property to **true** in the pivot table. End user can now see a "CALCULATED FIELD" button enabled in Field List UI automatically, which on clicking will invoke the calculated field dialog and perform necessary operation.
 
 Calculated field can also be included in the pivot table through code behind using the [`calculatedFieldsSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/) . The required properties to create a new calculate field are:
 
@@ -250,7 +250,7 @@ Below is a list of operators and functions that can be used in the formula to cr
 
 ### CalculatedFieldCreate
 
-The event [`calculatedFieldCreate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#calculatedfieldcreate) fires while closing the dialog on "OK" button click. It allows to customize the new or existing calculated field information obtained from the dialog. It has the following parameters
+The event [`calculatedFieldCreate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#calculatedfieldcreate) fires while closing the dialog on "OK" button click. It allows to customize the new or existing calculated field information obtained from the dialog. It has the following parameters
 
 * `calculatedField`: It holds the new or existing calculated field information obtained from dialog.
 

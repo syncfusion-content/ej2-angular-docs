@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 ## Get selected items in the ListView component
 
-Single or many items can be selected by users in the ListView component. An API is used to get selected items from the list items. This is called as the [`getSelectedItems`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#getselecteditems) method.
+Single or many items can be selected by users in the ListView component. An API is used to get selected items from the list items. This is called as the [`getSelectedItems`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#getselecteditems) method.
 
 **`getSelectedItems` method**
 
-This is used to get the details of the currently selected item from the list items. It returns the [`SelectedItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-selectedItem.html) | [`SelectedCollection`](https://ej2.syncfusion.com/angular/documentation/listview/api-selectedCollection.html)
+This is used to get the details of the currently selected item from the list items. It returns the [`SelectedItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-selectedItem) | [`SelectedCollection`](https://ej2.syncfusion.com/angular/documentation/listview/api-selectedCollection)
 
 The `getSelectedItems` method returns the following items from the selected list items.
 
@@ -64,13 +64,13 @@ In the ListView component, template support is being used. In some cases, the co
 
 ## Load list items in child list dynamically
 
-To load list items in child list dynamically, push the new list item data into the existing [`dataSource`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#datasource) using the [`select`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#select) event.
+To load list items in child list dynamically, push the new list item data into the existing [`dataSource`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#datasource) using the [`select`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#select) event.
 
 Refer to the following steps to load list item into the child list:
 
 1. Initially, render the ListView with the required data source.
 
-2. Bind the [`select`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#select) event that triggers selecting list item in the ListView component. By using the select event, you can push the new list item to the child list of the data source on specifying its item index. Item index can be obtained from the [`SelectEventArgs`](https://ej2.syncfusion.com/angular/documentation/listview/api-selectEventArgs.html) of the select event.
+2. Bind the [`select`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#select) event that triggers selecting list item in the ListView component. By using the select event, you can push the new list item to the child list of the data source on specifying its item index. Item index can be obtained from the [`SelectEventArgs`](https://ej2.syncfusion.com/angular/documentation/listview/api-selectEventArgs.html) of the select event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -106,9 +106,9 @@ The ListView component supports wrapping list items into a group based on the ca
 
 ## Customize ListView as mobile contact layout
 
-You can customize the ListView using the [template](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#template) property. Refer to the following steps to customize ListView as mobile contact view with our `ej2-avatar`.
+You can customize the ListView using the [template](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#template) property. Refer to the following steps to customize ListView as mobile contact view with our `ej2-avatar`.
 
-* Render the ListView with [dataSource](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#datasource) that has avatar data. You can set avatar data as either text or class names. Refer to the following codes.
+* Render the ListView with [dataSource](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#datasource) that has avatar data. You can set avatar data as either text or class names. Refer to the following codes.
 
 ```typescript
 
@@ -144,8 +144,8 @@ let data: any = [
 
 > Avatars can be set in different sizes in avatar classes. To know more about avatar classes, refer to [Avatar](https://ej2.syncfusion.com/demos/#/material/avatar/default.html).
 
-* Sort the contact names using the [`sortOder`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#sortorder) property of ListView.
-* Enable the [`showHeader`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#showheader) property, and set the [`headerTitle`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#headertitle) as `Contacts`.
+* Sort the contact names using the [`sortOder`](https://ej2.syncfusion.com/angular/documentation/listview/api-listview#sortorder) property of ListView.
+* Enable the [`showHeader`](https://ej2.syncfusion.com/angular/documentation/listview/api-listview#showheader) property, and set the [`headerTitle`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#headertitle) as `Contacts`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -167,9 +167,9 @@ The filtered data can be displayed in the ListView component depending upon on u
 
 * Render a textbox to get input for filtering data.
 
-* Render ListView with [`dataSource`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#datasource), and set the [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#sortorder) property.
+* Render ListView with [`dataSource`](https://ej2.syncfusion.com/angular/documentation/listview/api-listview/#datasource), and set the [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/listview/api-listview/#sortorder) property.
 
-* Bind the `keyup` event for textbox to perform filtering operation. To filter list data, pass the list data source to the `DataManager`, manipulate the data using the [`executeLocal`](https://ej2.syncfusion.com/documentation/data/api-dataManager.html?lang=typescript#executelocal) method, and then update filtered data as ListView dataSource.
+* Bind the `keyup` event for textbox to perform filtering operation. To filter list data, pass the list data source to the `DataManager`, manipulate the data using the [`executeLocal`](https://ej2.syncfusion.com/documentation/data/api-datamanager/#executelocal) method, and then update filtered data as ListView dataSource.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -185,19 +185,19 @@ The filtered data can be displayed in the ListView component depending upon on u
   
 {% previewsample "page.domainurl/samples/listview/getting-started-cs2" %}
 
-> In this demo, data has been filtered with starting character of the list items. You can also filter list items with ending character by passing the `endswith` in [where](https://ej2.syncfusion.com/documentation/data/api-query.html?lang=typescript#where) clause instead of `startswith`.
+> In this demo, data has been filtered with starting character of the list items. You can also filter list items with ending character by passing the `endswith` in [where](https://ej2.syncfusion.com/documentation/data/api-query/#where) clause instead of `startswith`.
 
 ## Trace all events in ListView
 
 The ListView component triggers events based on its actions. The events can be used as extension points to perform custom operations. Refer to the following steps to trace the ListView events:
 
-1. Render the ListView with [dataSource](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#datasource), and bind the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#actionbegin), [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#actioncomplete), and [`select`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#select) events.
+1. Render the ListView with [dataSource](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#datasource), and bind the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#actionbegin), [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#actioncomplete), and [`select`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#select) events.
 
 2. Perform custom operations in `actionBegin`, `actionComplete`, and select events.
 
 3. Provide event log details for `actionBegin` and `actionComplete` events, and they will be displayed in the event trace panel when the ListView action starts and the dataSource bound successfully.
 
-4. Get the selected item details from the [`SelectEventArgs`](https://ej2.syncfusion.com/angular/documentation/listview/api-selectEventArgs.html) in the select event, and display the selected list item text in the event trace panel while selecting list items.
+4. Get the selected item details from the [`SelectEventArgs`](https://ej2.syncfusion.com/angular/documentation/listview/api-selectEventArgs) in the select event, and display the selected list item text in the event trace panel while selecting list items.
 
 5. Use clear button to remove event trace information.
 
@@ -250,7 +250,7 @@ let listviewInstance: ListView = new ListView({
 listviewInstance.appendTo("#element");
 ```
 
-Here, the data is fetched from `Northwind` Service URL; it takes a few seconds to load the data. To enhance the UI, the spinner component has been rendered initially. After the data is loaded from remote URL, the spinner component will be hidden in ListView [actionComplete](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#actioncomplete) event.
+Here, the data is fetched from `Northwind` Service URL; it takes a few seconds to load the data. To enhance the UI, the spinner component has been rendered initially. After the data is loaded from remote URL, the spinner component will be hidden in ListView [actionComplete](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#actioncomplete) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -268,15 +268,15 @@ Here, the data is fetched from `Northwind` Service URL; it takes a few seconds t
 
 ## Add and remove list items from the ListView component
 
-You can add or remove list items from the ListView component using the [`addItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#additem) and [`removeItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#removeitem) methods.
+You can add or remove list items from the ListView component using the [`addItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#additem) and [`removeItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#removeitem) methods.
 Refer to the following steps to add or remove a list item.
 
-* Render the ListView with data source, and use the [template](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#template) property to append the delete icon for each list item. Also, bind the click event for the delete icon using the
-[actionComplete](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#actioncomplete) handler.
+* Render the ListView with data source, and use the [template](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#template) property to append the delete icon for each list item. Also, bind the click event for the delete icon using the
+[actionComplete](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#actioncomplete) handler.
 
-* Render the Add Item button, and bind the click event. On the click event handler, pass data with random id to the [`addItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#additem) method to add a new list item on clicking the Add Item button.
+* Render the Add Item button, and bind the click event. On the click event handler, pass data with random id to the [`addItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#additem) method to add a new list item on clicking the Add Item button.
 
-* Bind the click handler to the delete icon created in step 1. Within the click event, remove the list item by passing the delete icon list item to [`removeItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#removeitem) method.
+* Bind the click handler to the delete icon created in step 1. Within the click event, remove the list item by passing the delete icon list item to [`removeItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#removeitem) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -312,8 +312,8 @@ The dual list supports:
 * Filtering the list by using a client-side typed character.
 
 In the ListView component, sorting is enabled using the
-[sortOrder](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#sortorder) property, and
-the [select](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#select) event is triggered
+[sortOrder](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#sortorder) property, and
+the [select](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#select) event is triggered
 while selecting an item. Here, the select event is triggered to enable and disable button states.
 
 ### Manipulating data
@@ -329,16 +329,16 @@ of the first ListView is not empty.
 
 ### Moving selected item from one list to another list (>) and (<)
 
-* The [Select](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#select) event is triggered when selecting a list item in the ListView. The selected items can be transferred between two lists. These buttons will be enabled when selecting an item in lists.
+* The [Select](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#select) event is triggered when selecting a list item in the ListView. The selected items can be transferred between two lists. These buttons will be enabled when selecting an item in lists.
 
 ### Filtering method
 
-* The filtering method is used to filter list items when typing a character in the text box. In this method, the [`dataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started.html) has been used to fetch data from the data source and display in ListView.
+* The filtering method is used to filter list items when typing a character in the text box. In this method, the [`dataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started) has been used to fetch data from the data source and display in ListView.
 
 ### Sorting
 
 * By using the dual list, list items can be sorted in the ListView component using the
-[sortOrder](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#sortorder) property.
+[sortOrder](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#sortorder) property.
 You can enable sorting in one ListView; in the same order, data can be transferred to another ListView.
 
 {% tabs %}
@@ -357,8 +357,8 @@ You can enable sorting in one ListView; in the same order, data can be transferr
 
 ## Hide checkbox in listview
 
-The checkbox of the any list item can be hidden by using [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#htmlattributes) of
-[`fields`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#fields) object. With the help of `htmlAttributes` we can add unique class to each list item that will be rendered from the data source, from the CSS class we can hide the checkbox of the list item.
+The checkbox of the any list item can be hidden by using [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#htmlattributes) of
+[`fields`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#fields) object. With the help of `htmlAttributes` we can add unique class to each list item that will be rendered from the data source, from the CSS class we can hide the checkbox of the list item.
 
 In this sample, we had hidden the multiple leaf node of nested list. The `e-checkbox-hidden` class has been added in the data source where the checkbox needs to be hidden. Refer the below snippet for simple data source.
 
@@ -391,9 +391,9 @@ Even though we have hidden the checkbox the functionality will be same for the l
 
 ## Customize ListView with dynamic tags
 
-You can customize the ListView items using the [`template`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#template) property. Here, the dynamic tags are added and removed in the list item from another ListView. Refer to the following steps to achieve this.
+You can customize the ListView items using the [`template`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#template) property. Here, the dynamic tags are added and removed in the list item from another ListView. Refer to the following steps to achieve this.
 
-* Initialize dynamic ListView with required property that holds the tags of parent ListView, and bind the [`select`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#select) event (triggers when the list item is selected), in which you can get and add the selected item value as tags into parent ListView. Refer to the following code sample.
+* Initialize dynamic ListView with required property that holds the tags of parent ListView, and bind the [`select`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#select) event (triggers when the list item is selected), in which you can get and add the selected item value as tags into parent ListView. Refer to the following code sample.
 
 ```typescript
 
@@ -417,7 +417,7 @@ addTag(e) {
 
 ```
 
-* Render the dialog component with empty content and append the created dynamic ListView object to the dialog on [`created`](https://ej2.syncfusion.com/angular/documentation/dialog/api-dialog.html#created) event.
+* Render the dialog component with empty content and append the created dynamic ListView object to the dialog on [`created`](https://ej2.syncfusion.com/angular/documentation/dialog/api-dialog/#created) event.
 
 * Bind the click event for button icon (+) to update the ListView data source with tags, and open the dialog with this dynamic ListView. Refer to the following code sample.
 
@@ -515,7 +515,7 @@ In this section, we will discuss about ListView data manipulations.
 
 #### Add Item
 
-We can add list item using [`addItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#additem) API. This will accept array of data as argument.
+We can add list item using [`addItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#additem) API. This will accept array of data as argument.
 
 ```typescript
 
@@ -527,7 +527,7 @@ In the below sample, you can add new fruit item by clicking add button which wil
 
 #### Remove item
 
-We can remove list item using [`removeItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#removeitem) API. This will accept fields with `id` or list item element as argument.
+We can remove list item using [`removeItem`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#removeitem) API. This will accept fields with `id` or list item element as argument.
 
 ```typescript
 
@@ -539,7 +539,7 @@ In the below sample, you can remove fruit by hovering the fruit item which will 
 
 #### Sort Items
 
-Listview can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#sortorder) as `Ascending` or `Descending`.
+Listview can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#sortorder) as `Ascending` or `Descending`.
 
 ```typescript
 
@@ -559,7 +559,7 @@ In the below sample, we have sorted fruits in `Ascending` order. To sort it in d
 
 #### Filter Items
 
-Listview data can be filtered with the help of [`dataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started.html). After filtering the data, update ListView [`dataSource`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#datasource) with filtered data.
+Listview data can be filtered with the help of [`dataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started). After filtering the data, update ListView [`dataSource`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#datasource) with filtered data.
 
 ```typescript
 
@@ -572,7 +572,7 @@ listViewInstance.dataSource = filteredData;
 
 ```
 
-In the below sample, we can filter fruit items with the help of search text box. This will filter fruit items based on your input. Here we used [`startswith`](https://ej2.syncfusion.com/angular/documentation/data/querying.html#filter-operators) of input text to filter data in DataManager.
+In the below sample, we can filter fruit items with the help of search text box. This will filter fruit items based on your input. Here we used [`startswith`](https://ej2.syncfusion.com/angular/documentation/data/querying/#filter-operators) of input text to filter data in DataManager.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -590,7 +590,7 @@ In the below sample, we can filter fruit items with the help of search text box.
 
 ## ListView with hyper-link navigation
 
-We can use `anchor` tag along with `href` attribute in our ListView [`template`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#template) property for navigation.
+We can use `anchor` tag along with `href` attribute in our ListView [`template`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#template) property for navigation.
 
 {% raw %}
 
@@ -622,7 +622,7 @@ In the below sample, we have rendered `ListView` with search engines URL.
 
 ## Load HTML content via AJAX
 
-We can set external `HTML` page content as [`template`](https://ej2.syncfusion.com/vue/documentation/listview/api-listView.html#template) for our `ListView` component by making use of `AJAX` call.
+We can set external `HTML` page content as [`template`](https://ej2.syncfusion.com/vue/documentation/listview/api-listView/#template) for our `ListView` component by making use of `AJAX` call.
 
 ```typescript
 
@@ -652,9 +652,9 @@ In the below sample, we have rendered smartphone settings template from external
 
 ## ListView with Drag and Drop feature (Reorder)
 
-In ListView component, we don't have drag and drop support. But we can achieve this requirement using [`TreeView`](https://ej2.syncfusion.com/angular/documentation/treeview/getting-started.html) component with ListView appearance.
+In ListView component, we don't have drag and drop support. But we can achieve this requirement using [`TreeView`](https://ej2.syncfusion.com/angular/documentation/treeview/getting-started) component with ListView appearance.
 
-Drag and Drop in TreeView component was enabled by setting [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/treeview/api-treeView.html#allowdraganddrop) to `true`.
+Drag and Drop in TreeView component was enabled by setting [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/treeview/api-treeView/#allowdraganddrop) to `true`.
 
 ```typescript
 
@@ -662,7 +662,7 @@ Drag and Drop in TreeView component was enabled by setting [`allowDragAndDrop`](
 
 ```
 
-The TreeView component is used to represent hierarchical data in a tree like structure. So, list items in TreeView can be dropped to child of target element. we can prevent this behaviour by cancelling the [`nodeDragStop`](https://ej2.syncfusion.com/angular/documentation/treeview/api-treeView.html#nodedragstop) and [`nodeDragging`](https://ej2.syncfusion.com/angular/documentation/treeview/api-treeView.html#nodedragging) events.
+The TreeView component is used to represent hierarchical data in a tree like structure. So, list items in TreeView can be dropped to child of target element. we can prevent this behaviour by cancelling the [`nodeDragStop`](https://ej2.syncfusion.com/angular/documentation/treeview/api-treeView/#nodedragstop) and [`nodeDragging`](https://ej2.syncfusion.com/angular/documentation/treeview/api-treeView/#nodedragging) events.
 
 ```typescript
 
@@ -699,7 +699,7 @@ In the below sample, we have rendered draggable list items.
 
 ## Customize ListView as Chat Window
 
-ListView can be customizable as chat window. To achieve that, use ListView [template](https://ej2.syncfusion.com/angular/documentation/listview/api-listView.html#template) property and [Avatar](https://ej2.syncfusion.com/angular/documentation/avatar/getting-started.html) component.
+ListView can be customizable as chat window. To achieve that, use ListView [template](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#template) property and [Avatar](https://ej2.syncfusion.com/angular/documentation/avatar/getting-started.html) component.
 
     * Listview template property is used to showcase the ListView as chat window.
     * Avatar component is used to design the image of contact person.
@@ -740,7 +740,7 @@ In ListView template, we have rendered the list items based on receiver and send
 ### Adding messages to chat window
 
     * Use textbox to get message from user.
-    * Add the textbox message to ListView dataSource using [addItem](https://ej2.syncfusion.com/documentation/angular/listview/api-listView.html#additem) method.
+    * Add the textbox message to ListView dataSource using [addItem](https://ej2.syncfusion.com/documentation/angular/listview/api-listView/#additem) method.
 
 ```typescript
 

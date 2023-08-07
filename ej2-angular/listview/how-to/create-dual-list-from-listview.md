@@ -30,8 +30,8 @@ The dual list supports:
 * Filtering the list by using a client-side typed character.
 
 In the ListView component, sorting is enabled using the
-[sortOrder](https://ej2.syncfusion.com/angular/documentation/api/list-view#sortorder) property, and
-the [select](https://ej2.syncfusion.com/angular/documentation/api/list-view#select) event is triggered
+[sortOrder](https://ej2.syncfusion.com/angular/documentation/api/list-view/#sortorder) property, and
+the [select](https://ej2.syncfusion.com/angular/documentation/api/list-view/#select) event is triggered
 while selecting an item. Here, the select event is triggered to enable and disable button states.
 
 ## Manipulating data
@@ -49,7 +49,7 @@ list. This button is enabled only when the data source of the second ListView is
 
 ## Moving selected item from one list to another list (>) and (<)
 
-* The [Select](https://ej2.syncfusion.com/angular/documentation/api/list-view#select) event is triggered
+* The [Select](https://ej2.syncfusion.com/angular/documentation/api/list-view/#select) event is triggered
 when selecting a list item in the ListView. The selected items can be transferred between two lists. These buttons will be
 enabled when selecting an item in lists.
 
@@ -62,7 +62,7 @@ used to fetch data from the data source and display in ListView.
 ## Sorting
 
 * By using the dual list, list items can be sorted in the ListView component using the
-[sortOrder](https://ej2.syncfusion.com/angular/documentation/api/list-view#sortorder) property.
+[sortOrder](https://ej2.syncfusion.com/angular/documentation/api/list-view/#sortorder) property.
 You can enable sorting in one ListView; in the same order, data can be transferred to another ListView.
 
 {% tabs %}

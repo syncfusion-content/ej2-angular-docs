@@ -24,11 +24,11 @@ import { Pager } from "@syncfusion/ej2-angular-grids";
 
 The [`totalRecordsCount`](https://ej2.syncfusion.com/angular/documentation/api/pager/#totalrecordscount) property of the Pager must be specified whenever using this particular component. By using [`pageSize`](https://ej2.syncfusion.com/angular/documentation/api/pager/#pagesize) property, the number of list items to be displayed is made available. The [`pageCount`](https://ej2.syncfusion.com/angular/documentation/api/pager/#pagecount) property allows the user to specify the visibility of the page numbers accordingly. Since the paging sample in the upcoming code snippet uses these three properties, the explanation provided here are minimal and to the point. For further API concerns in Pager component, [click here](https://ej2.syncfusion.com/angular/documentation/api/pager/).
 
-With the help of the [`query`](https://ej2.syncfusion.com/angular/documentation/api/list-view#query) property of ListView, the user can specify the number of records to be displayed in the current page.
+With the help of the [`query`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#query) property of ListView, the user can specify the number of records to be displayed in the current page.
 
 The `query` property helps in splitting the entire datasource based on the user’s convenience. In the sample provided below, when clicking the next button in pager, it fetches the datasource based on the page size and the current page of the Pager component.
 
-The [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-view#headertemplate) and the [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view#template) property of ListView is defined within ng-template. The required styles can be changed here accordingly.
+The [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#headertemplate) and the [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property of ListView is defined within ng-template. The required styles can be changed here accordingly.
 
 ```typescript
 public clickevent(args) {

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Drill through in Angular Pivotview component
 
-Allows to view the underlying raw data of a summarized cell in the pivot table. It can be enabled by setting the [`allowDrillThrough`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#allowdrillthrough) property to **true**. By double-clicking on any value cell, user can view the detailed raw data in a data grid inside a new window. In the new window, row header, column header and measure name of the clicked cell will be shown at the top. Also, user can include or exclude fields available in the data grid using column chooser option.
+Allows to view the underlying raw data of a summarized cell in the pivot table. It can be enabled by setting the [`allowDrillThrough`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowdrillthrough) property to **true**. By double-clicking on any value cell, user can view the detailed raw data in a data grid inside a new window. In the new window, row header, column header and measure name of the clicked cell will be shown at the top. Also, user can include or exclude fields available in the data grid using column chooser option.
 
 To use the drill through feature, inject the `DrillThroughService` module in the pivot table.
 
@@ -117,7 +117,7 @@ export class AppComponent {
 
 ### DrillThrough
 
-The event [`drillThrough`](https://ej2.syncfusion.com/vue/documentation/api/pivotview#drillthrough) triggers every time before a value cell is double clicked. This event allows user to customize the data grid columns in drill through popup. Exclusively the event helps to view and process the raw data information behind a aggregated value inside value cell. It has the following parameters:
+The event [`drillThrough`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/#drillthrough) triggers every time before a value cell is double clicked. This event allows user to customize the data grid columns in drill through popup. Exclusively the event helps to view and process the raw data information behind a aggregated value inside value cell. It has the following parameters:
 
 * `columnHeaders` - It holds column header of the current cell.
 * `currentCell` - It holds the current cell's information.
@@ -144,7 +144,7 @@ The event [`drillThrough`](https://ej2.syncfusion.com/vue/documentation/api/pivo
 
 ### BeginDrillThrough
 
-The event [`beginDrillThrough`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#begindrillthrough) occurs for each and every value cell with a double click, and the event argument provides the data grid information before the drill-through popup is shown. User can access the data grid (which holds the raw data underneath the aggregated value cell) options such as sort, group, filter and customize those in the data grid. It has the following parameters:
+The event [`beginDrillThrough`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#begindrillthrough) occurs for each and every value cell with a double click, and the event argument provides the data grid information before the drill-through popup is shown. User can access the data grid (which holds the raw data underneath the aggregated value cell) options such as sort, group, filter and customize those in the data grid. It has the following parameters:
 
 * `gridObj` - It holds the data grid instance to be rendered inside the drill-through popup.
 * `cellInfo` - It holds current cell information like raw data, row header, column header and value.

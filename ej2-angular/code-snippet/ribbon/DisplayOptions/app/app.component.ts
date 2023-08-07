@@ -3,8 +3,8 @@ import { RibbonButtonSettingsModel, DisplayMode } from '@syncfusion/ej2-angular-
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app/app.component.html',
-  styleUrls: ['app/app.component.css']
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent  {
   public cutButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-cut", content: "Cut" };

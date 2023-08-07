@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = new DataManager({
-            url: 'https://ej2services.syncfusion.com/production/web-services/api/Orders',
+            url: 'https://services.syncfusion.com/angular/production/api/Orders',
             adaptor: new ODataAdaptor(),
             crossDomain: true
         });

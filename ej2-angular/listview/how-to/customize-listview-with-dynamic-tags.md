@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Customize listview with dynamic tags in Angular Listview component
 
-You can customize the ListView items using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view#template) property. Here, the dynamic tags are added and removed in the list item from another ListView. Refer to the following steps to achieve this.
+You can customize the ListView items using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property. Here, the dynamic tags are added and removed in the list item from another ListView. Refer to the following steps to achieve this.
 
-* Initialize dynamic ListView with required property that holds the tags of parent ListView, and bind the [`select`](https://ej2.syncfusion.com/angular/documentation/api/list-view#select) event (triggers when the list item is selected), in which you can get and add the selected item value as tags into parent ListView. Refer to the following code sample.
+* Initialize dynamic ListView with required property that holds the tags of parent ListView, and bind the [`select`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#select) event (triggers when the list item is selected), in which you can get and add the selected item value as tags into parent ListView. Refer to the following code sample.
 
     ```typescript
 
@@ -36,7 +36,7 @@ You can customize the ListView items using the [`template`](https://ej2.syncfusi
 
     ```
 
-* Render the dialog component with empty content and append the created dynamic ListView object to the dialog on [`created`](https://ej2.syncfusion.com/angular/documentation/api/dialog#created) event.
+* Render the dialog component with empty content and append the created dynamic ListView object to the dialog on [`created`](https://ej2.syncfusion.com/angular/documentation/api/dialog/#created) event.
 
 * Bind the click event for button icon (+) to update the ListView data source with tags, and open the dialog with this dynamic ListView. Refer to the following code sample.
 
