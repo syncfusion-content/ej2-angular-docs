@@ -96,7 +96,7 @@ The Image Editor allows to pan an image when the image exceeds the canvas size o
 
 ### Panning event 
 
-The [`panning`](https://ej2.syncfusion.com/angular/documentation/api/image-editor#panning) event is activated when the user begins dragging the image within the canvas. This event provide an opportunity to perform specific actions, like adjusting the position of an image, in response to the gesture of panning. And these event uses [`PanEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/panEventArgs/) to handle the panning action when the user starts dragging the image. 
+The [`panning`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#panning) event is activated when the user begins dragging the image within the canvas. This event provide an opportunity to perform specific actions, like adjusting the position of an image, in response to the gesture of panning. And these event uses [`PanEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/panEventArgs/) to handle the panning action when the user starts dragging the image. 
 
 The parameter available in the [`PanEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/PanEventArgs/) events are, 
 

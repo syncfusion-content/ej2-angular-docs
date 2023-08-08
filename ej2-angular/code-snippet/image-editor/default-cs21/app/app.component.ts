@@ -20,9 +20,9 @@ export class AppComponent {
     public zoomLevel: number = 1;
       public created(): void {
         if (Browser.isDevice) {
-            this.imageEditorObj?.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
+            this.imageEditorObj?.open('flower.png');
         } else {
-            this.imageEditorObj?.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
+            this.imageEditorObj?.open('bridge.png');
         }
     }
     panClick(): void {
