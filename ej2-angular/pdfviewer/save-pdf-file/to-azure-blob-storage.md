@@ -142,7 +142,7 @@ public IActionResult Download([FromBody] Dictionary<string, string> jsonObject)
 
 **Step 3:**   Set the PDF Viewer Properties in Angular PDF viewer component
 
-Set the `serviceUrl` property of the PDF viewer component to the URL of your web service project. Replace `https://localhost:44396/pdfviewer` with the URL of your web service project that hosts in the web service project, set the `documentPath` property to the PDF file name you want to load from Azure Blob Storage. Ensure that you pass the document name from the Azure Blob Storage container to the `documentPath` property. This specifies the location of the PDF file to be loaded by the viewer component.
+Modify the `serviceUrl` property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from Azure Blob Storage. Ensure that you correctly pass the document name from the files available in your azure contanier to the documentPath property.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -166,14 +166,12 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
                 TextSelectionService, PrintService, FormDesignerService, FormFieldsService]
   })
   export class AppComponent implements OnInit {
-    // Replace the "localhost:44309" with the actual URL of your server
+    // Replace the "localhost:44396" with the actual URL of your server
     public service = 'https://localhost:44396/pdfviewer';
     public documentPath = 'PDF_Succinctly.pdf';
   }
 ```
 
 N> The **Azure.Storage.Blobs** NuGet package must be installed in your application to use the previous code example.
-
-N> replace `PDF_Succinctly.pdf` with the actual document name that you want to load from Azure blob storage container. Make sure to pass the document name from the bucket to the `documentPath` property of the PDF viewer component
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-azure-blob-storage).
