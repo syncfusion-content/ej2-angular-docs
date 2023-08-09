@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Load html content via ajax in Angular Listview component
 
-We can set external `HTML` page content as [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view#template) for our `ListView` component by making use of `AJAX` call.
+We can set external `HTML` page content as [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) for our `ListView` component by making use of `AJAX` call.
 
 ```typescript
 

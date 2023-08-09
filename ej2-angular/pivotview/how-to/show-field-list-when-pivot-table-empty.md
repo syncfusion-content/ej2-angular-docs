@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Show field list when pivot table empty in Angular Pivotview component
 
-When there are no fields in a pivot table's row, column, value, and filter axes, a field list can still be displayed. To do so, use the [`dataBound`](https://ej2.syncfusion.com/documentation/api/pivotview#databound) event and call the `onShowFieldList` method as shown below.
+When there are no fields in a pivot table's row, column, value, and filter axes, a field list can still be displayed. To do so, use the [`dataBound`](https://ej2.syncfusion.com/documentation/api/pivotview/#databound) event and call the `onShowFieldList` method as shown below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

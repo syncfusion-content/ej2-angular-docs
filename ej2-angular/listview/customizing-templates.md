@@ -14,9 +14,9 @@ The ListView component is designed to customize list items, group title and head
 
 ## Header template
 
-ListView header can be customized with the help of the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-view#headertemplate) property.
+ListView header can be customized with the help of the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#headertemplate) property.
 
-To customize header template in your application, set your customized template element inside ng tag directive along with [`showHeader`](https://ej2.syncfusion.com/angular/documentation/api/list-view#showheader) property as `true` to display the ListView header.
+To customize header template in your application, set your customized template element inside ng tag directive along with [`showHeader`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#showheader) property as `true` to display the ListView header.
 
 In the following example, we have rendered Listview with customized header which contains search, add and sort buttons.
 
@@ -36,7 +36,7 @@ In the following example, we have rendered Listview with customized header which
 
 ## Template
 
-ListView items can be customized with the help of the [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view#template) property.
+ListView items can be customized with the help of the [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property.
 
 To customize list items in your application, set your customized template element inside ng tag directive.
 
@@ -70,11 +70,11 @@ In the following example, we have customized list items with built-in CSS classe
 
 ## Group template
 
-ListView group header can be customized with the help of the [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-view#grouptemplate) property.
+ListView group header can be customized with the help of the [`groupTemplate`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#grouptemplate) property.
 
 To customize the group template in your application, set your customized template element inside ng tag directive.
 
-In the following example, we have grouped Listview based on the category. The category of each list item should be mapped with [`groupBy`](https://ej2.syncfusion.com/angular/documentation/api/list-view/fieldSettingsModel#groupby) field of the data. We have also displayed grouped list items count in the group list header.
+In the following example, we have grouped Listview based on the category. The category of each list item should be mapped with [`groupBy`](https://ej2.syncfusion.com/angular/documentation/api/list-view/fieldSettingsModel/#groupby) field of the data. We have also displayed grouped list items count in the group list header.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

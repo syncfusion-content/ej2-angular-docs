@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Render listview with hyper link navigation in Angular Listview component
 
-We can use `anchor` tag along with `href` attribute in our ListView [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view#template) property for navigation.
+We can use `anchor` tag along with `href` attribute in our ListView [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property for navigation.
 
 ```typescript
 

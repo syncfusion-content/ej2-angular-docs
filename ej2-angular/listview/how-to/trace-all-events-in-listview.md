@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The ListView component triggers events based on its actions. The events can be used as extension points to perform custom operations. Refer to the following steps to trace the ListView events:
 
-1. Render the ListView with [dataSource](https://ej2.syncfusion.com/angular/documentation/api/list-view#datasource), and bind the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/list-view#actionbegin), [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/list-view#actioncomplete), and [`select`](https://ej2.syncfusion.com/angular/documentation/api/list-view#select) events.
+1. Render the ListView with [dataSource](https://ej2.syncfusion.com/angular/documentation/api/list-view/#datasource), and bind the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#actionbegin), [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#actioncomplete), and [`select`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#select) events.
 
 2. Perform custom operations in `actionBegin`, `actionComplete`, and select events.
 

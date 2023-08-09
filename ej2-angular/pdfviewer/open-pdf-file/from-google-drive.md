@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 To load a PDF file from Google Drive in a PDF Viewer, you can follow the steps below
 
-**Step 1** : Set up Google Drive API
+**Step 1** Set up Google Drive API
 
 You must set up a project in the Google Developers Console and enable the Google Drive API. Obtain the necessary credentials to access the API. For more information, view the official [link](https://developers.google.com/drive/api/guides/enable-sdk).
 
@@ -97,7 +97,7 @@ public async Task<IActionResult> Load([FromBody] Dictionary<string, string> json
       listRequest.Q = "mimeType='application/pdf' and '" + folderId + "' in parents and trashed=false";
       listRequest.Fields = "files(id, name)";
       var files = await listRequest.ExecuteAsync();
-      string fileIdToDownload = null;
+      string fileIdToDownload = string.Empty.;
       foreach (var file in files.Files)
       { 
         string fileId = file.Id;
@@ -148,7 +148,7 @@ N> The **FolderId** part is the unique identifier for the folder. For example, i
 
 **Step 4:**  Set the PDF Viewer Properties in Angular PDF viewer component
 
-Set the `serviceUrl` property of the PDF viewer component to the URL of your web service project. Replace `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the documentPath property of the PDF viewer component to the name of the PDF file you want to load from Google Drive. Ensure that you pass the document name from the bucket to the documentPath property.
+Modify the `serviceUrl` property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from Google Drive. Ensure that you correctly pass the document name from the files available in your drive folder to the documentPath property.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -180,6 +180,4 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 
 N> The **Google.Apis.Drive.v3** NuGet package must be installed in your application to use the previous code example.
 
-N> Replace `PDF_Succinctly.pdf` with the actual document name that you want to load from Google Drive. Make sure to pass the document name from the folder to the `documentPath` property of the PDF viewer component
-
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-google-drive)

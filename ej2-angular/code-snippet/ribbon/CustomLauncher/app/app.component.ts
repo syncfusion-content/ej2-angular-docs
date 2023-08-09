@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { RibbonButtonSettingsModel, RibbonComboBoxSettingsModel, ItemModel } from '@syncfusion/ej2-angular-ribbon';
+import { RibbonButtonSettingsModel } from '@syncfusion/ej2-angular-ribbon';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

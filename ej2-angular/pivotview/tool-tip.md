@@ -28,7 +28,7 @@ The tooltip can be enabled or disabled by setting the [`showTooltip`](https://ej
 
 ## Tooltip Template
 
-User can design their own tooltip by setting the property [`tooltipTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#tooltiptemplate) with own HTML elements. The property accepts both HTML string and ID attribute. The following place holders are available to display its dynamic values inside the HTML elements.
+User can design their own tooltip by setting the property [`tooltipTemplate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#tooltiptemplate) with own HTML elements. The property accepts both HTML string and ID attribute. The following place holders are available to display its dynamic values inside the HTML elements.
 
 `${rowHeaders}` – Row headers of the selected value cell.
 

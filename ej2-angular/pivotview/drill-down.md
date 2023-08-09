@@ -115,7 +115,7 @@ End user can also manually expand or collapse specific member(s) in each fields 
 
 ### Drill
 
-The event [`drill`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#aggregatecellinfo) triggers every time when a field is expanded or collapsed. For instance using this event user can alter delimiter and drill action for the respective item. It has the following parameters:
+The event [`drill`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#aggregatecellinfo) triggers every time when a field is expanded or collapsed. For instance using this event user can alter delimiter and drill action for the respective item. It has the following parameters:
 
 * `drillInfo` - It holds the current drilled item information.
 * `pivotview` - It holds pivot table instance.

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Hide checkbox in listview in Angular Listview component
 
-The checkbox of the any list item can be hidden by using [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/api/list-view#htmlattributes) of [`fields`](https://ej2.syncfusion.com/angular/documentation/api/list-view#fields) object. With
+The checkbox of the any list item can be hidden by using [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#htmlattributes) of [`fields`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#fields) object. With
 the help of `htmlAttributes` we can add unique class to each list item that will be rendered from the data source, from the CSS class we can hide the checkbox of the list item.
 
 In this sample, we had hidden the multiple leaf node of nested list. The `e-checkbox-hidden` class has been added in the data source where the checkbox needs to be hidden. Refer the below snippet for simple data source.
