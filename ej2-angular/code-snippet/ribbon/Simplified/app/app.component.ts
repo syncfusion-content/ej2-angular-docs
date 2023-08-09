@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { RibbonButtonSettingsModel,RibbonDropDownSettingsModel,DisplayMode } from '@syncfusion/ej2-angular-ribbon';
+import { RibbonButtonSettingsModel, RibbonDropDownSettingsModel, DisplayMode } from '@syncfusion/ej2-angular-ribbon';
 import { ItemModel } from "@syncfusion/ej2-angular-splitbuttons";
 @Component({
   selector: 'app-root',

@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
-import { RibbonButtonSettingsModel, RibbonComboBoxSettingsModel, ItemModel } from '@syncfusion/ej2-angular-ribbon';
+import { RibbonButtonSettingsModel, RibbonSplitButtonSettingsModel, RibbonComboBoxSettingsModel } from '@syncfusion/ej2-angular-ribbon';
+import { ItemModel } from '@syncfusion/ej2-angular-splitbuttons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,7 +12,7 @@ export class AppComponent {
 
   
   
-  public pasteButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-paste", content: "Paste", items: this.pasteOptions };
+  public pasteButton: RibbonSplitButtonSettingsModel = { iconCss: "e-icons e-paste", content: "Paste", items: this.pasteOptions };
   public cutButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-cut", content: "Cut" }
   public copyButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-copy", content: "Copy" };
   public formatButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-format-painter", content: "Format Painter"};

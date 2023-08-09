@@ -151,3 +151,5 @@ The below example shows a basic SpeedDial component,
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/speed-dial/getting-started-cs1" %}
+
+N> You can refer to our [Angular Speed Dial](https://www.syncfusion.com/angular-components/angular-speed-dial) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Speed Dial example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/speed-dial/default) that shows you how to render the Speed Dial in Angular.

@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
-import { RibbonTooltipSettingsModel, RibbonButtonSettingsModel, RibbonSplitButtonSettingsModel, ItemModel } from '@syncfusion/ej2-angular-ribbon';
+import { RibbonTooltipModel, RibbonButtonSettingsModel, RibbonSplitButtonSettingsModel } from '@syncfusion/ej2-angular-ribbon';
+import { ItemModel } from '@syncfusion/ej2-angular-splitbuttons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,8 +12,8 @@ export class AppComponent {
   public pasteSettings: ItemModel[] = [{ text: "Keep Source Format" }, { text: "Merge format" }, { text: "Keep text only" }];
   public pasteButton: RibbonSplitButtonSettingsModel = { iconCss: 'e-icons e-paste', items: this.pasteSettings, content: 'Paste' }
 
-  public cutOptions: RibbonTooltipSettingsModel = { title: "Cut", content: "Places the selected text or object on the clipboard so that you can paste it somewhere else.", iconCss: "e-icons e-cut" };
-  public copyOptions: RibbonTooltipSettingsModel = { title: "Copy", content: "Copies the chosen text or object to the clipboard so that you can reuse it elsewhere.", iconCss: "e-icons e-copy" };
-  public formatOptions: RibbonTooltipSettingsModel = { title: "Format Painter", content: "Copies the formatting style of a selected text or object and applies it to other content within the document.", iconCss: "e-icons e-format-painter" };
-  public pasteOptions: RibbonTooltipSettingsModel = { title: "Paste", content: "Insert the clipboard content where the cursor is currently placed.", iconCss: "e-icons e-paste" };
+  public cutOptions: RibbonTooltipModel = { title: "Cut", content: "Places the selected text or object on the clipboard so that you can paste it somewhere else.", iconCss: "e-icons e-cut" };
+  public copyOptions: RibbonTooltipModel = { title: "Copy", content: "Copies the chosen text or object to the clipboard so that you can reuse it elsewhere.", iconCss: "e-icons e-copy" };
+  public formatOptions: RibbonTooltipModel = { title: "Format Painter", content: "Copies the formatting style of a selected text or object and applies it to other content within the document.", iconCss: "e-icons e-format-painter" };
+  public pasteOptions: RibbonTooltipModel = { title: "Paste", content: "Insert the clipboard content where the cursor is currently placed.", iconCss: "e-icons e-paste" };
 }
