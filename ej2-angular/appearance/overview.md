@@ -14,6 +14,8 @@ The  Syncfusion Angular UI can allows you to apply styles for your application. 
 
 |Theme |Style Sheet Name|
 |--------|--------|
+|Material 3 | material3.css |
+|Material 3 Dark | material3-dark.css |
 |Bootstrap 5 | bootstrap5.css |
 |Bootstrap 5 Dark | bootstrap5-dark.css |
 | Fluent | fluent.css |
@@ -47,27 +49,30 @@ Instead of using a local resource on your server, you can use a cloud CDN to ref
 Syncfusion Angular Themes are available in the CDN. Make sure that the version in the URLs matches the version of the Syncfusion Angular Package you are using.
 
 ```
-// Bootstrap5
 <head>
-    <link href="https://cdn.syncfusion.com/ej2/bootstrap5.css" rel="stylesheet"/>
+    <link href="https://cdn.syncfusion.com/ej2/<version>/<theme_name>.css" rel="stylesheet"/>
 </head>
-//Material
-<head>
-    <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet"/>
-</head>
+
 ```
 
 | Theme Name | CDN Reference |
 |--- | --- |
-| Bootstrap 5 | `https://cdn.syncfusion.com/ej2/bootstrap5.css` |
-| Bootstrap 5 Dark| `https://cdn.syncfusion.com/ej2/bootstrap5-dark.css` |
-| Google’s Material | `https://cdn.syncfusion.com/ej2/material.css` |
-| Google’s Material Dark | `https://cdn.syncfusion.com/ej2/material-dark.css` |
-| Tailwind CSS | `https://cdn.syncfusion.com/ej2/tailwind.css` |
-| Tailwind Dark CSS | `https://cdn.syncfusion.com/ej2/tailwind-dark.css` |
-| Microsoft Office Fabric  | `https://cdn.syncfusion.com/ej2/fabric.css` |
-| Microsoft Office Fabric Dark | `https://cdn.syncfusion.com/ej2/fabric-dark.css` |
-| High Contrast  | `https://cdn.syncfusion.com/ej2/highcontrast.css` |
+| Material3 | [https://cdn.syncfusion.com/ej2/22.1.34/material3.css](https://cdn.syncfusion.com/ej2/22.1.34/material3.css) |
+| Material3 Dark | [https://cdn.syncfusion.com/ej2/22.1.34/material3-dark.css](https://cdn.syncfusion.com/ej2/22.1.34/material3-dark.css) |
+| Fluent | [https://cdn.syncfusion.com/ej2/22.1.34/fluent.css](https://cdn.syncfusion.com/ej2/22.1.34/fluent.css) |
+| Fluent Dark | [https://cdn.syncfusion.com/ej2/22.1.34/fluent-dark.css](https://cdn.syncfusion.com/ej2/22.1.34/fluent-dark.css) |
+| Bootstrap 5 | [https://cdn.syncfusion.com/ej2/22.1.34/bootstrap5.css](https://cdn.syncfusion.com/ej2/22.1.34/bootstrap5.css) |
+| Bootstrap 5 Dark| [https://cdn.syncfusion.com/ej2/22.1.34/bootstrap5-dark.css](https://cdn.syncfusion.com/ej2/22.1.34/bootstrap5-dark.css) |
+| Bootstrap 4 | [https://cdn.syncfusion.com/ej2/22.1.34/bootstrap4.css](https://cdn.syncfusion.com/ej2/22.1.34/bootstrap4.css) |
+| Bootstrap 3 | [https://cdn.syncfusion.com/ej2/22.1.34/bootstrap.css](https://cdn.syncfusion.com/ej2/22.1.34/bootstrap.css) |
+| Bootstrap 3 Dark| [https://cdn.syncfusion.com/ej2/22.1.34/bootstrap-dark.css](https://cdn.syncfusion.com/ej2/22.1.34/bootstrap-dark.css) |
+| Google’s Material | [https://cdn.syncfusion.com/ej2/22.1.34/material.css](https://cdn.syncfusion.com/ej2/22.1.34/material.css) |
+| Google’s Material Dark | [https://cdn.syncfusion.com/ej2/22.1.34/material-dark.css](https://cdn.syncfusion.com/ej2/22.1.34/material-dark.css) |
+| Tailwind CSS | [https://cdn.syncfusion.com/ej2/22.1.34/tailwind.css](https://cdn.syncfusion.com/ej2/22.1.34/tailwind.css) |
+| Tailwind CSS Dark | [https://cdn.syncfusion.com/ej2/22.1.34/tailwind-dark.css](https://cdn.syncfusion.com/ej2/22.1.34/tailwind-dark.css) |
+| Microsoft Office Fabric  | [https://cdn.syncfusion.com/ej2/22.1.34/fabric.css](https://cdn.syncfusion.com/ej2/22.1.34/fabric.css) |
+| Microsoft Office Fabric Dark | [https://cdn.syncfusion.com/ej2/22.1.34/fabric-dark.css](https://cdn.syncfusion.com/ej2/22.1.34/fabric-dark.css) |
+| High Contrast  | [https://cdn.syncfusion.com/ej2/22.1.34/highcontrast.css](https://cdn.syncfusion.com/ej2/22.1.34/highcontrast.css) |
 
 ### Using Precompiled CSS and SCSS File
 
@@ -108,6 +113,431 @@ The Syncfusion Angular UI theme includes a compilation of SCSS file. Refer [Comp
 ## Common Variables
 
 The following list of common variables is used in the Syncfusion Angular library themes for all UI components. You can change these variables to customize the corresponding theme.
+
+### Syncfusion Material 3 theme
+
+<table>
+    <style>
+        .circle-color-indicator {
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 50%;
+            display: inline-block;
+            border: 1px solid rgba(0, 0, 0, .08);
+            vertical-align: middle;
+        }
+        th, td {
+        text-align: left;
+        padding: 5px 15px;
+        vertical-align: top;
+        }
+    </style>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Value (Default Theme) </th>
+            <th>Value (Dark Theme) </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>--color-sf-black</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(0,0,0)"></span> rgb(0,0,0)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(0,0,0)"></span> rgb(0,0,0)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-white</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(255,255,255)"></span> rgb(255,255,255)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(255,255,255)"></span> rgb(255,255,255)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-primary</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(103, 80, 164)"></span> rgb(103, 80, 164)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(208, 188, 255)"></span> rgb(208, 188, 255)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-primary-container</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(234, 221, 255)"></span> rgb(234, 221, 255)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(79, 55, 139)"></span> rgb(79, 55, 139)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-primary</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(255, 255, 255)"></span> rgb(255, 255, 255)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(55, 30, 115)"></span> rgb(55, 30, 115)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-primary-container</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(33, 0, 94)"></span> rgb(33, 0, 94)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(234, 221, 255)"></span> rgb(234, 221, 255)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-surface</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(255, 255, 255)"></span> rgb(255, 255, 255)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(28, 27, 31)"></span> rgb(28, 27, 31)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-surface-variant</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(231, 224, 236)"></span> rgb(231, 224, 236)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(73, 69, 79)"></span> rgb(73, 69, 79)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-surface</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(28, 27, 31)"></span> rgb(28, 27, 31)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(230, 225, 229)"></span> rgb(230, 225, 229)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-surface-variant</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(73, 69, 78)"></span> rgb(73, 69, 78)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(202, 196, 208)"></span> rgb(202, 196, 208)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-secondary</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(98, 91, 113)"></span> rgb(98, 91, 113)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(204, 194, 220)"></span> rgb(204, 194, 220)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-secondary-container</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(232, 222, 248)"></span> rgb(232, 222, 248)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(74, 68, 88)"></span> rgb(74, 68, 88)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-secondary</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(255, 255, 255)"></span> rgb(255, 255, 255)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(51, 45, 65)"></span> rgb(51, 45, 65)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-secondary-container</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(30, 25, 43)"></span> rgb(30, 25, 43)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(232, 222, 248)"></span> rgb(232, 222, 248)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-tertiary</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(125, 82, 96)"></span> rgb(125, 82, 96)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(239, 184, 200)"></span> rgb(239, 184, 200)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-tertiary-container</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(255, 216, 228)"></span> rgb(255, 216, 228)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(99, 59, 72)"></span> rgb(99, 59, 72)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-tertiary</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(255, 255, 255)"></span> rgb(255, 255, 255)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(73, 37, 50)"></span> rgb(73, 37, 50)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-tertiary-containe</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(55, 11, 30)"></span> rgb(55, 11, 30)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(255, 216, 228)"></span> rgb(255, 216, 228)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-background</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(255, 255, 255)"></span> rgb(255, 255, 255)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(28, 27, 31)"></span> rgb(28, 27, 31)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-background</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(28, 27, 31)"></span> rgb(28, 27, 31)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(230, 225, 229)"></span> rgb(230, 225, 229)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-outline</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(121, 116, 126)"></span> rgb(121, 116, 126)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(147, 143, 153)"></span> rgb(147, 143, 153)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-outline-variant</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(196, 199, 197)"></span> rgb(196, 199, 197)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(68, 71, 70)"></span> rgb(68, 71, 70)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-shadow</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(0, 0, 0)"></span> rgb(0, 0, 0)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(0, 0, 0)"></span> rgb(0, 0, 0)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-surface-tint-color</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(103, 80, 164)"></span> rgb(103, 80, 164)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(208, 188, 255)"></span> rgb(208, 188, 255)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-inverse-surface</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(49, 48, 51)"></span> rgb(49, 48, 51)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(230, 225, 229)"></span> rgb(230, 225, 229)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-inverse-on-surface</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(244, 239, 244)"></span> rgb(244, 239, 244)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(49, 48, 51)"></span> rgb(49, 48, 51)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-inverse-primary</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(208, 188, 255)"></span> rgb(208, 188, 255)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(103, 80, 164)"></span> rgb(103, 80, 164)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-scrim</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(0, 0, 0)"></span> rgb(0, 0, 0)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(0, 0, 0)"></span> rgb(0, 0, 0)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-error</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(179, 38, 30)"></span> rgb(179, 38, 30)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(242, 184, 181)"></span> rgb(242, 184, 181)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-error-container</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(249, 222, 220)"></span> rgb(249, 222, 220)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(140, 29, 24)"></span> rgb(140, 29, 24)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-error</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(255, 250, 250)"></span> rgb(255, 250, 250)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(96, 20, 16)"></span> rgb(96, 20, 16)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-error-container</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(65, 14, 11)"></span> rgb(65, 14, 11)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(249, 222, 220)"></span> rgb(249, 222, 220)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-success</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(32, 81, 7)"></span> rgb(32, 81, 7)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(83, 202, 23)"></span> rgb(83, 202, 23)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-success-container</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(209, 255, 186)"></span> rgb(209, 255, 186)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(22, 62, 2)"></span> rgb(22, 62, 2)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-success</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(244, 255, 239)"></span> rgb(244, 255, 239)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(13, 39, 0)"></span> rgb(13, 39, 0)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-success-container</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(13, 39, 0)"></span> rgb(13, 39, 0)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(183, 250, 150)"></span> rgb(183, 250, 150)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-info</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(1, 87, 155)"></span> rgb(1, 87, 155)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(71, 172, 251)"></span> rgb(71, 172, 251)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-info-container</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(233, 245, 255)"></span> rgb(233, 245, 255)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(0, 67, 120)"></span> rgb(0, 67, 120)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-info</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(250, 253, 255)"></span> rgb(250, 253, 255)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(0, 51, 91)"></span> rgb(0, 51, 91)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-info-container</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(0, 51, 91)"></span> rgb(0, 51, 91)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(173, 219, 255)"></span> rgb(173, 219, 255)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-warning</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(145, 76, 0)"></span> rgb(145, 76, 0)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(245, 180, 130)"></span> rgb(245, 180, 130)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-warning-container</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(254, 236, 222)"></span> rgb(254, 236, 222)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(123, 65, 0)"></span> rgb(123, 65, 0)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-warning</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(255, 255, 255)"></span> rgb(255, 255, 255)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(99, 52, 0)"></span> rgb(99, 52, 0)
+            </td>
+        </tr>
+        <tr>
+            <td>--color-sf-on-warning-container</td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(47, 21, 0)"></span> rgb(47, 21, 0)
+            </td>
+            <td>
+                <span class="circle-color-indicator" style="background: rgb(255, 220, 193)"></span> rgb(255, 220, 193)
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ### Bootstrap 5 Theme
 
