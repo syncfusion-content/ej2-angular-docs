@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Display modes in Angular Speed dial component
 
-The action items in Angular Speed Dial can be displayed in `Linear` and `Radial` display modes by setting [`mode`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#mode) property.
+The action items in [Angular Speed Dial](https://www.syncfusion.com/angular-components/angular-speed-dial) can be displayed in `Linear` and `Radial` display modes by setting [`mode`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#mode) property.
 
 ## Linear display mode
 
