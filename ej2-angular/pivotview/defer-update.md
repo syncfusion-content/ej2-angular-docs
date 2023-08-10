@@ -37,9 +37,9 @@ To enable deferred updates in the pivot table, set the property [`allowDeferLayo
 
 ## Stand-alone Field List (Fixed)
 
-The field list can be rendered in a static position, anywhere in web page layout, like a separate component. To do so, you need to set [`renderMode`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist#rendermode) property to **Fixed** in pivot fieldlist.
+The field list can be rendered in a static position, anywhere in web page layout, like a separate component. To do so, you need to set [`renderMode`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/#rendermode) property to **Fixed** in pivot fieldlist.
 
-To enable deferred updates in the static fieldlist, set the property [`allowDeferLayoutUpdate`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist#allowdeferlayoutupdate) in fieldlist as **true**. To make a note, the defer update option can be controlled only via Field List during runtime.
+To enable deferred updates in the static fieldlist, set the property [`allowDeferLayoutUpdate`](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/#allowdeferlayoutupdate) in fieldlist as **true**. To make a note, the defer update option can be controlled only via Field List during runtime.
 
 > To make field list interact with pivot table, you need to use the **UpdateView** and **Update** methods for data source update in both field list and pivot table simultaneously.
 

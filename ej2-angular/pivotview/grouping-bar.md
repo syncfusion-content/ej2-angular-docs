@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Grouping bar in Angular Pivotview component
 
-The Grouping Bar option in pivot table automatically populates fields from the bound data source and allows end users to drag fields between different axes such as columns, rows, values, and filters, and create pivot table at runtime. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#showgroupingbar) property in pivot table to **true**.
+The Grouping Bar option in pivot table automatically populates fields from the bound data source and allows end users to drag fields between different axes such as columns, rows, values, and filters, and create pivot table at runtime. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showgroupingbar) property in pivot table to **true**.
 
 Similar to Field List, Grouping Bar UI also comes with basic interactions like,
 
@@ -298,7 +298,7 @@ During runtime, the **Values** button in the grouping bar can be moved to a diff
 
 ### OnFieldDropped
 
-The event[`onFieldDropped`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#onfielddropped) fires whenever a field is dropped in an axis. It has following parameters - `droppedAxis`, `droppedField` and `dataSourceSettings`. In this illustration, we have modified the `droppedField` caption through this event at runtime.
+The event[`onFieldDropped`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#onfielddropped) fires whenever a field is dropped in an axis. It has following parameters - `droppedAxis`, `droppedField` and `dataSourceSettings`. In this illustration, we have modified the `droppedField` caption through this event at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -316,7 +316,7 @@ The event[`onFieldDropped`](https://ej2.syncfusion.com/angular/documentation/api
 
 ### FieldDragStart
 
-The event [`fieldDragStart`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#fielddragstart) fires whenever a field drag starts from its axis. It allows the user to restrict the drag operation based on its parameters. It has the following parameters  
+The event [`fieldDragStart`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#fielddragstart) fires whenever a field drag starts from its axis. It allows the user to restrict the drag operation based on its parameters. It has the following parameters  
 
 * `fieldName`: It holds the name of the appropriate field.
 
@@ -344,7 +344,7 @@ In the below sample, the drag operation for the fields in row axis alone is rest
 
 ### FieldDrop
 
-The event [`fieldDrop`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#fielddrop) fires whenever a field is dropped into an axis. It allows the user to restrict the drop operation based on its parameters. It has the following parameters  
+The event [`fieldDrop`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#fielddrop) fires whenever a field is dropped into an axis. It allows the user to restrict the drop operation based on its parameters. It has the following parameters  
 
 * `fieldName`: It holds the name of the appropriate field.
 
@@ -378,7 +378,7 @@ In the below sample, dropping of any fields in value axis alone is restricted.
 
 ### FieldRemove
 
-The event [`fieldRemove`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#fieldremove) fires when removing any field from their axis. It helps the user to limit the elimination of a field based on its parameters. It has the following parameters
+The event [`fieldRemove`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#fieldremove) fires when removing any field from their axis. It helps the user to limit the elimination of a field based on its parameters. It has the following parameters
 
 * `fieldName`: It holds the name of the field to be removed.
 
@@ -408,11 +408,11 @@ In the below sample, the field "Country" could not be removed from report by any
 
 ### AggregateMenuOpen
 
-The event [`aggregateMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#aggregatemenuopen) fires while clicking dropdown icon of the value field button UI. It allows to customize the aggregate types to be displayed in the dropdown menu. It has the following parameters
+The event [`aggregateMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#aggregatemenuopen) fires while clicking dropdown icon of the value field button UI. It allows to customize the aggregate types to be displayed in the dropdown menu. It has the following parameters
 
 * `fieldName`: It holds the name of the field that opens the aggregate menu.
 
-* [`aggregateTypes`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#aggregatetypes): It holds the aggregation types set for a field.
+* [`aggregateTypes`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#aggregatetypes): It holds the aggregation types set for a field.
 
 * `displayMenuCount`: It allows to set the menu count to be displayed initially. By default, its count is 7.
 
@@ -434,7 +434,7 @@ In the below sample, the aggregate types of the field "Amount" has been customiz
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs143" %}
 
- >The events [`aggregateMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#aggregatemenuopen), [`fieldRemove`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#fieldremove), [`fieldDrop`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#fielddrop), [`fieldDragStart`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#fielddragstart) and [`onFieldDropped`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#onfielddropped) are applicable for both grouping bar and field list.
+ >The events [`aggregateMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#aggregatemenuopen), [`fieldRemove`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#fieldremove), [`fieldDrop`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#fielddrop), [`fieldDragStart`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#fielddragstart) and [`onFieldDropped`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#onfielddropped) are applicable for both grouping bar and field list.
 
 ### ActionBegin
 

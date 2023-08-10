@@ -89,7 +89,7 @@ Allows to sort field headers (aka, members) in rows and columns based on user-de
 
 > This property is applicable only for the relational data source.
 
-Allows to sort individual value field and its aggregated values either in row or column axis in both ascending and descending order. It can been enabled by setting the [`enableValueSorting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#enablevaluesorting) property in pivot table to **true**. On enabling, end user can sort the values by directly clicking the value field header positioned either in row or column axis of the pivot table component.
+Allows to sort individual value field and its aggregated values either in row or column axis in both ascending and descending order. It can been enabled by setting the [`enableValueSorting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablevaluesorting) property in pivot table to **true**. On enabling, end user can sort the values by directly clicking the value field header positioned either in row or column axis of the pivot table component.
 
 The value sorting can also be configured using the [`valueSortSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/valueSortSettings/) option through code behind. The settings required to sort value fields are:
 

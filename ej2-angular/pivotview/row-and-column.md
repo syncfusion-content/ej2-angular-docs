@@ -14,11 +14,11 @@ domainurl: ##DomainURL##
 
 ## Width and Height
 
-Allows end user to set the pivot table's height and width by using [`height`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#width) properties in pivot table respectively. The supported formats to set [`height`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#width) properties are,
+Allows end user to set the pivot table's height and width by using [`height`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#width) properties in pivot table respectively. The supported formats to set [`height`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#width) properties are,
 
 * Pixel: For example - 100, 200, "100px", "200px".
 * Percentage: For example - "100%", "200%".
-* Auto: It is applicable for [`height`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#height) property alone in-order to render the pivot table beyond its parent container height without vertical scrollbar. The parent container here would show its vertical scrollbar as soon as the component reaches beyond its dimension.
+* Auto: It is applicable for [`height`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#height) property alone in-order to render the pivot table beyond its parent container height without vertical scrollbar. The parent container here would show its vertical scrollbar as soon as the component reaches beyond its dimension.
 
 > The pivot table will not be displayed less than **400px**, since it's the minimum width of the component.
 
@@ -504,7 +504,7 @@ The event [`columnRender`](https://ej2.syncfusion.com/angular/documentation/api/
 
 ### CellClick
 
-The event [`cellClick`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#cellclick) triggers while clicking a cell in the pivot table. For instance, using this event end-user can either add or remove styles, edit value and also perform any other DOM manipulations. It has the following parameters:
+The event [`cellClick`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#cellclick) triggers while clicking a cell in the pivot table. For instance, using this event end-user can either add or remove styles, edit value and also perform any other DOM manipulations. It has the following parameters:
 
 * `currentCell` - It holds the current cell information.
 * `data` - It holds the clicked cell's data like axis, formatted text, actual text, row header, column header and value informations.

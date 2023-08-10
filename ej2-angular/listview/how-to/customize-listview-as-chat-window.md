@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Customize listview as chat window in Angular Listview component
 
-ListView can be customizable as chat window. To achieve that, use ListView [template](https://ej2.syncfusion.com/angular/documentation/api/listview#template) property and [Avatar](https://ej2.syncfusion.com/angular/documentation/avatar/getting-started) component.
+ListView can be customizable as chat window. To achieve that, use ListView [template](https://ej2.syncfusion.com/angular/documentation/api/listview/#template) property and [Avatar](https://ej2.syncfusion.com/angular/documentation/avatar/getting-started) component.
 
     * Listview template property is used to showcase the ListView as chat window.
     * Avatar component is used to design the image of contact person.
@@ -47,7 +47,7 @@ In ListView template, we have rendered the list items based on receiver and send
 ## Adding messages to chat window
 
     * Use textbox to get message from user.
-    * Add the textbox message to ListView dataSource using [addItem](https://ej2.syncfusion.com/angular/documentation/api/listview#additem) method.
+    * Add the textbox message to ListView dataSource using [addItem](https://ej2.syncfusion.com/angular/documentation/api/listview/#additem) method.
 
 ```typescript
 

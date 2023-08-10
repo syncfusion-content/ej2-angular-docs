@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# HelpPaneTemplate
+# Help Pane
 
-The users can access help content for tasks like controlling document permissions, sharing features, and more using the [helpPaneTemplate](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#helppanetemplate) property, which is located on the right side of the Ribbon.
+The help pane is dedicated area where the users can define help contents like controlling document permissions, sharing features, and more which appears on the right side of the Ribbon. You can use the [helpPaneTemplate](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#helppanetemplate) property to set the help pane contents.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,4 +30,4 @@ The users can access help content for tasks like controlling document permission
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/ribbon/HelpPaneTemplate" %}
+{% previewsample "page.domainurl/samples/ribbon/HelpPaneTemplate" %}

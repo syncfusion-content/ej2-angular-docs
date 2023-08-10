@@ -123,7 +123,7 @@ You can invoke the formatting dialog by clicking an external button using the `S
 
 ### NumberFormatting
 
-The event [`numberFormatting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#numberformatting) fires while closing the number formatting dialog on "OK" button click. It allows the user to restrict the customization settings done by the user. It has the following parameters
+The event [`numberFormatting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#numberformatting) fires while closing the number formatting dialog on "OK" button click. It allows the user to restrict the customization settings done by the user. It has the following parameters
 
 * `formatName`: It holds the name of the field.
 

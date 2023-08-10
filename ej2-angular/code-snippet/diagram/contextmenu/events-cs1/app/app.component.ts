@@ -59,7 +59,7 @@ export class AppComponent {
             contextMenuClick: function(args: MenuEventArgs) {
                 //do your custom action here.
                 if (args.item.id === 'delete') {
-                    if (($this.diagram.selectedItems.nodes.length + $this.ddiagram.selectedItems.connectors.length) > 0) {
+                    if (($this.diagram.selectedItems.nodes.length + $this.diagram.selectedItems.connectors.length) > 0) {
                         $this.diagram.cut();
                     }
                 }

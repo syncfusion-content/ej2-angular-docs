@@ -154,7 +154,7 @@ Users can also add, delete, or update the underlying raw items of any data point
 
 ### EditCompleted
 
-The event [`editCompleted`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#editcompleted) triggers when values cells are edited completely. The event provides edited cell(s) information along with its previous cell value. It also helps to do the CRUD operation by manually updating the database which is connected to the component. It has the following parameters.
+The event [`editCompleted`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#editcompleted) triggers when values cells are edited completely. The event provides edited cell(s) information along with its previous cell value. It also helps to do the CRUD operation by manually updating the database which is connected to the component. It has the following parameters.
 * `currentData` - It holds the current raw data of the edited cells.
 * `previousData` - It holds the previous raw data of the edited cells.
 * `previousPosition` - It holds the index of the raw data whose values are edited.

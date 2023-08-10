@@ -6,40 +6,28 @@ import { ActionEventArgs, GridComponent, GroupSettingsModel } from '@syncfusion/
 
 @Component({
     selector: 'app-root',
-    template: `
-    <div style="margin-left:100px;"><p style="color:red;" id="message">{{message}}</p></div>
-    <ejs-grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupSettings' (actionComplete)='actionComplete($event)' (actionBegin)='actionBegin($event)' height='260px'>
-        <e-columns>
-            <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
-            <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
-            <e-column field='ShipCity' headerText='Ship City' width=100></e-column>
-            <e-column field='ShipName' headerText='Ship Name' width=120></e-column>
-        </e-columns>        
-    </ejs-grid>`
+    template: `<ejs-grid #grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupSettings'
+     (actionComplete)='actionHandler($event)' (actionBegin)='actionHandler($event)' height='260px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 
     public data?: object[];
     public groupSettings?: GroupSettingsModel;
-    public message?: string
+    @ViewChild('grid')
+    public grid?: GridComponent;
     ngOnInit(): void {
         this.data = data;
     }
 
-    actionBegin(args: any) {
-        if (args.requestType === 'grouping' && args.columnName === 'OrderID') {
-            args.cancel = true
-        }
+    actionHandler(args: ActionEventArgs) {
+        alert((args as any).requestType + ' ' + (args as any).type); // custom Action
     }
-
-    actionComplete(args: any) {
-        if (args.requestType === 'grouping') {
-            this.message = args.requestType + ' action completed for ' + args.columnName + ' column';
-        }
-        else {
-            this.message = ''
-        }
-    }
-
 }
 

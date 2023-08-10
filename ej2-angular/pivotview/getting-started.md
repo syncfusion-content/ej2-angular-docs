@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Pivotview component
 
-This section explains you the steps required to create a simple pivot table and demonstrate the basic usage of the [pivot table component](https://www.syncfusion.com/angular-ui-components/angular-pivot-table) in an Angular environment.
+This section explains you the steps required to create a simple pivot table and demonstrate the basic usage of the [pivot table component](https://www.syncfusion.com/angular-components/angular-pivot-table) in an Angular environment.
 
 ## Setup Angular Environment
 
@@ -303,7 +303,7 @@ providers: [GroupingBarService]
 
 ## Enable Field List
 
-The field list allows to add or remove fields and also rearrange the fields between different axes, including column, row, value, and filter along with filter and sort options dynamically at runtime. It can be enabled by setting the [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#showfieldlist) property to **true** and by injecting the `FieldListService` module as follows. To know more about field list, [`refer`](./field-list) here.
+The field list allows to add or remove fields and also rearrange the fields between different axes, including column, row, value, and filter along with filter and sort options dynamically at runtime. It can be enabled by setting the [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showfieldlist) property to **true** and by injecting the `FieldListService` module as follows. To know more about field list, [`refer`](./field-list) here.
 
 > If the `FieldListService` module is not injected, the Field List will not be rendered with the pivot table component.
 
@@ -323,7 +323,7 @@ The field list allows to add or remove fields and also rearrange the fields betw
 
 ## Enable Grouping Bar
 
-The grouping bar feature automatically populates fields from the bound data source and allows end users to drag fields between different axes such as columns, rows, values, and filters, and alter pivot table at runtime. It also provides option to sort, filter and remove fields. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#showgroupingbar) property to **true** and by injecting the `GroupingBarService` module as follows. To know more about grouping bar, [`refer`](./grouping-bar) here.
+The grouping bar feature automatically populates fields from the bound data source and allows end users to drag fields between different axes such as columns, rows, values, and filters, and alter pivot table at runtime. It also provides option to sort, filter and remove fields. It can be enabled by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#showgroupingbar) property to **true** and by injecting the `GroupingBarService` module as follows. To know more about grouping bar, [`refer`](./grouping-bar) here.
 
 > If the `GroupingBarService` module is not injected, the grouping bar will not be rendered with the pivot table component.
 
@@ -361,7 +361,7 @@ The filter axis contains collection of fields that would act as master filter ov
 
 ## Calculated field
 
-The calculated field feature allows user to insert or add a new calculated field based on the available fields from the bound data source using basic arithmetic operators. The calculated field can be included in pivot table using the [`calculatedFieldSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/) from code behind. Or else, calculated fields can be added at run time through the built-in dialog by just setting the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#allowcalculatedfield) property to **true** in pivot table. You will see a button enabled in the Field List UI automatically to invoke the calculated field dialog and perform necessary operation. To know more about calculated field, [`refer`](./calculated-field) here.
+The calculated field feature allows user to insert or add a new calculated field based on the available fields from the bound data source using basic arithmetic operators. The calculated field can be included in pivot table using the [`calculatedFieldSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/) from code behind. Or else, calculated fields can be added at run time through the built-in dialog by just setting the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allowcalculatedfield) property to **true** in pivot table. You will see a button enabled in the Field List UI automatically to invoke the calculated field dialog and perform necessary operation. To know more about calculated field, [`refer`](./calculated-field) here.
 
 Also calculated fields can be added to the bound datasource at run time through the built-in popup. The popup can be enabled by setting the `allowCalculatedField` property to true and by injecting the `CalculatedFieldService` module as follows.
 

@@ -20,9 +20,9 @@ export class AppComponent {
     public toolbar: string[]= ['Annotate', "Line", "Rectangle", "Ellipse", "Circle", "Arrow", "Path"]
       public created(): void {
         if (Browser.isDevice) {
-            this.imageEditorObj?.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
+            this.imageEditorObj?.open('flower.png');
         } else {
-            this.imageEditorObj?.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
+            this.imageEditorObj?.open('bridge.png');
         }
     }
 

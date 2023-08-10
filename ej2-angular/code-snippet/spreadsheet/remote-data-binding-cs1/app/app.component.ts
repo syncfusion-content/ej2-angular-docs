@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
     @ViewChild('spreadsheet') public spreadsheetObj?: SpreadsheetComponent;
     public query: Query = new Query().select(['OrderID', 'CustomerID', 'ShipName', 'ShipCity', 'ShipCountry', 'Freight']).take(200);
     public data: DataManager = new DataManager({
-        url: 'https://js.syncfusion.com/demos/ejServices//wcf/Northwind.svc/Orders',
+        url: 'https://services.syncfusion.com/js/production/api/Orders',
         crossDomain: true
     });
     ngOnInit(): void {

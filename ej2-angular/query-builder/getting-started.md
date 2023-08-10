@@ -114,6 +114,7 @@ Add Angular Query Builder component's styles as given below in `style.css`.
 @import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
 @import "../node_modules/@syncfusion/ej2-calendars/styles/material.css";
 @import "../node_modules/@syncfusion/ej2-popups/styles/material.css";
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import "../node_modules/@syncfusion/ej2-querybuilder/styles/material.css";
 ```
 
