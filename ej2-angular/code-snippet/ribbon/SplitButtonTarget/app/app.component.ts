@@ -5,7 +5,7 @@ import { ItemModel } from "@syncfusion/ej2-angular-splitbuttons";
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app/app.component.html'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   public tableOptions: ItemModel[] = [{ text: "Insert Table" }, { text: "This device" }, { text: "Convert Table" }, { text: "Excel SpreadSheet" }];

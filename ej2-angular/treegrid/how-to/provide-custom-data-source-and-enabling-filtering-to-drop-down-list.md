@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Provide custom data source and enabling filtering to drop down list in Angular Treegrid component | Syncfusion
-description: Learn here all about Provide custom datasource and enabling filtering to dropdownlist in Syncfusion Angular Treegrid component of Essential JS 2 and more.
+description: Learn here all about Provide custom data source and enabling filtering to drop down list in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Provide custom data source and enabling filtering to drop down list 
 documentation: ug

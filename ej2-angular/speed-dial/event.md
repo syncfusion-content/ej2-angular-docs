@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Event in Angular Speed dial component
 
-This section explains the Speed Dial events that will be triggered when appropriate actions are performed.
+This section explains the [Angular Speed Dial](https://www.syncfusion.com/angular-components/angular-speed-dial) events that will be triggered when appropriate actions are performed.
 
 ## clicked
 

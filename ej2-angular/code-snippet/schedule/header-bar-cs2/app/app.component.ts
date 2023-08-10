@@ -37,7 +37,7 @@ export class AppComponent {
             (args.items as ItemModel[]).push(userIconItem);
         }
     }
-    onActionComplete(args: ActionEventArgs): void {
+    onActionComplete(args: ActionEventArgs):void {
         let scheduleElement: HTMLElement = document.getElementById('schedule') as HTMLElement;
         if (args.requestType === 'toolBarItemRendered') {
             let userIconEle: HTMLElement = scheduleElement.querySelector('.e-schedule-user-icon') as HTMLElement;

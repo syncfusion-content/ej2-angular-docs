@@ -10,7 +10,6 @@ import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
               <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar" allowUndoRedo ></ejs-imageeditor>
               </div>
-              <button class="e-btn e-primary" (click)="btnClick()">Click</button>
               <button class="e-btn e-primary" (click)="undoClick()">Undo</button>
               <button class="e-btn e-primary" (click)="redoClick()">Redo</button>`
 })
@@ -18,11 +17,12 @@ import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
 export class AppComponent {
     @ViewChild('imageEditor')
     public imageEditorObj?: ImageEditorComponent;
+    public toolbar: string[] = [];
       public created(): void {
         if (Browser.isDevice) {
-            this.imageEditorObj?.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
+            this.imageEditorObj?.open('flower.png');
         } else {
-            this.imageEditorObj?.open('https://ej2.syncfusion.com/products/images/carousel/bee-eater.png');
+            this.imageEditorObj?.open('bridge.png');
         }
     }
     undoClick(): void {

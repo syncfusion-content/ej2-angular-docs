@@ -3,7 +3,7 @@ import { RibbonButtonSettingsModel,RibbonDropDownSettingsModel } from '@syncfusi
 import { ItemModel } from "@syncfusion/ej2-angular-splitbuttons";
 @Component({
   selector: 'app-root',
-  templateUrl: 'app/app.component.html'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   public pasteButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-paste", content: "Paste" };

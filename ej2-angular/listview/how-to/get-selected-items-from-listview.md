@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Get selected items from listview in Angular Listview component
 
-Single or many items can be selected by users in the ListView component. An API is used to get selected items from the list items. This is called as the [`getSelectedItems`](https://ej2.syncfusion.com/angular/documentation/api/listview#getselecteditems) method.
+Single or many items can be selected by users in the ListView component. An API is used to get selected items from the list items. This is called as the [`getSelectedItems`](https://ej2.syncfusion.com/angular/documentation/api/listview/#getselecteditems) method.
 
 **`getSelectedItems` method**
 

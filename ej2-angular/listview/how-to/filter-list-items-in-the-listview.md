@@ -14,7 +14,7 @@ The filtered data can be displayed in the ListView component depending upon on u
 
 * Render a textbox to get input for filtering data.
 
-* Render ListView with [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/list-view#datasource), and set the [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/list-view#sortorder) property.
+* Render ListView with [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#datasource), and set the [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#sortorder) property.
 
 * Bind the `keyup` event for textbox to perform filtering operation. To filter list data, pass the list data source to the `DataManager`, manipulate the data using the [`executeLocal`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#executelocal) method, and then update filtered data as ListView dataSource.
 

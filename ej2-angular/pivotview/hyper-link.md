@@ -157,7 +157,7 @@ The pivot table has an option to show hyperlink in the cells based on specific r
 
 ## Event
 
-The event [`hyperlinkCellClick`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#hyperlinkcellclick) fires on every hyperlink cell click.
+The event [`hyperlinkCellClick`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#hyperlinkcellclick) fires on every hyperlink cell click.
 
 It has following parameters - `cancel` and `currentCell`. The parameter `currentCell` is used to customize the host cell element by any means. Meanwhile, when the parameter `cancel` is set to **true**, applied customization will not be updated to the host cell element.
 

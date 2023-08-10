@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Image editor component
 
-This section explains how to create and demonstrate the basic usage of the [Angular Image Editor](https://www.syncfusion.com/angular-ui-components/angular-image-editor) module.
+This section explains how to create and demonstrate the basic usage of the [Angular Image Editor](https://www.syncfusion.com/angular-components/angular-image-editor) module.
 
 To get started quickly with angular Image Editor component using angular CLI, you can check the video below.
 

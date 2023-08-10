@@ -409,7 +409,7 @@ User can show custom string in empty value cells using the [`emptyCellsTextConte
 
 ### Load
 
-The event [`load`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#load) fires before initiate rendering of pivot table. It holds following parameters like`dataSourceSettings`, `FieldsType` and `PivotView`. In this event user can customize data source settings before initiating pivot table render module.
+The event [`load`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#load) fires before initiate rendering of pivot table. It holds following parameters like`dataSourceSettings`, `FieldsType` and `PivotView`. In this event user can customize data source settings before initiating pivot table render module.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -427,7 +427,7 @@ The event [`load`](https://ej2.syncfusion.com/angular/documentation/api/pivotvie
 
 ### EnginePopulated
 
-The event [`enginePopulated`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#enginepopulated) is triggered after engine is populated. It has following parameters - `dataSourceSettings`, `pivotFieldList` and `pivotValues`.
+The event [`enginePopulated`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enginepopulated) is triggered after engine is populated. It has following parameters - `dataSourceSettings`, `pivotFieldList` and `pivotValues`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -445,7 +445,7 @@ The event [`enginePopulated`](https://ej2.syncfusion.com/angular/documentation/a
 
 ### EnginePopulating
 
-The event [`enginePopulating`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#enginepopulating) triggers  before the pivot engine starts to populate and allows to customize the pivot datasource settings. It has following parameter `dataSourceSettings`.
+The event [`enginePopulating`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enginepopulating) triggers  before the pivot engine starts to populate and allows to customize the pivot datasource settings. It has following parameter `dataSourceSettings`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

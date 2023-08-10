@@ -105,7 +105,7 @@ Meanwhile, end user can utilize the search option to refine the members from the
 
 > This property is applicable only for OLAP data sources.
 
-Allows to load members inside the filter dialog on-demand by setting the [`loadOnDemandInMemberEditor`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#loadondemandinmembereditor) property to **true**. By default, first level is loaded in the member editor from the OLAP cube. So, the member editor will be opened quickly, without any performance constraints. By default, this property is set to **true** and the search will only be applied to the level members that are loaded. In the meantime, the next level members can be added using either of the following methods.
+Allows to load members inside the filter dialog on-demand by setting the [`loadOnDemandInMemberEditor`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#loadondemandinmembereditor) property to **true**. By default, first level is loaded in the member editor from the OLAP cube. So, the member editor will be opened quickly, without any performance constraints. By default, this property is set to **true** and the search will only be applied to the level members that are loaded. In the meantime, the next level members can be added using either of the following methods.
 
 * By clicking on the expander button of the respective member, only its child members will be loaded.
 * Select a level from the drop-down list that will load all members up to the chosen level from the cube.
@@ -327,7 +327,7 @@ End user can clear the applied value filter by simply click the "Clear" option a
 
 ### MemberFiltering
 
-The event [`memberFiltering`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#memberfiltering) triggers before applying filter using the dialog, that is, specifically while clicking the **"OK"** button. Using this event user can view or modify the applied [filter settings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/filter/) such as filter items, type of filter, conditions, etc. It has following parameters:
+The event [`memberFiltering`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#memberfiltering) triggers before applying filter using the dialog, that is, specifically while clicking the **"OK"** button. Using this event user can view or modify the applied [filter settings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/filter/) such as filter items, type of filter, conditions, etc. It has following parameters:
 
 * `cancel` - Boolean property, when the parameter `cancel` is set to **true**, applied filtering will not be updated
 * [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/filter/) - It holds current [filter settings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/filter/).
@@ -349,7 +349,7 @@ The event [`memberFiltering`](https://ej2.syncfusion.com/angular/documentation/a
 
 ### MemberEditorOpen
 
-The event [`memberEditorOpen`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#membereditoropen) fires while opening member editor dialog. It allows to customize the field members to be displayed in the dialog. It has the following parameters
+The event [`memberEditorOpen`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#membereditoropen) fires while opening member editor dialog. It allows to customize the field members to be displayed in the dialog. It has the following parameters
 
 * `fieldName`: It holds the name of the appropriate field.
 
