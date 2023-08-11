@@ -56,10 +56,10 @@ letter-spacing: 0.7px;
 <table id="table" style="border: 0px;">
 <tbody>
 <colgroup>
-<col style="width: 220px">
-<col style="width: 260px">
-<col style="width: 220px">
-<col style="width: 220px">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
 </colgroup>
 </tbody>
 <tr>
