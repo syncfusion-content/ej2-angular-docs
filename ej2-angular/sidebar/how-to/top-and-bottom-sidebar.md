@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Top and bottom sidebar in Angular Sidebar component
 
-You can initialize Sidebar at the left and right positions by using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/sidebar#position) property. It will automatically adjust the width of the main content.
+You can initialize Sidebar at the left and right positions by using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#position) property. It will automatically adjust the width of the main content.
 
 You can also initialize Sidebar at the top and bottom positions in application level. For initializing Sidebar, you need to manually adjust the height of the main content.
 
