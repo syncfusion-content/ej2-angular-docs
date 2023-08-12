@@ -192,7 +192,7 @@ The following samples shows the sidebar component in browser.
 
 ## Enable backdrop
 
-Enabling the [`showBackdrop`](https://ej2.syncfusion.com/angular/documentation/api/sidebar#showbackdrop) in the Sidebar component will prevent the main content from user interactions, when it is in expanded state.
+Enabling the [`showBackdrop`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#showbackdrop) in the Sidebar component will prevent the main content from user interactions, when it is in expanded state.
 Here, DOM elements will not get changed. It only close the main content by covering with black backdrop overlay and focus only the Sidebar in screen. Sidebar can be rendered with specific width by setting [`width`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#width) property
 
 {% tabs %}
@@ -283,7 +283,7 @@ Expand or collapse the Sidebar while swiping in touch devices using [`enableGest
   
 {% previewsample "page.domainurl/samples/sidebar/gestures-cs1" %}
 
-> You can refer to our [Angular Sidebar](https://www.syncfusion.com/angular-ui-components/angular-sidebar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Sidebar example](https://ej2.syncfusion.com/angular/demos/#/material/sidebar/default) that shows how to render the Sidebar in Angular.
+> You can refer to our [Angular Sidebar](https://www.syncfusion.com/angular-components/angular-sidebar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Sidebar example](https://ej2.syncfusion.com/angular/demos/#/material/sidebar/default) that shows how to render the Sidebar in Angular.
 
 ## See Also
 
