@@ -51,6 +51,8 @@ The `Separator` type adds a vertical separation between the Toolbar's single/mul
 The `Input` type is only applicable for adding `template` elements when the [`template`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#template) property is defined as an `object`.
 Input type creates an `input element` internally that acts as the container for `Syncfusion` input based components.
 
+>Note: Set toolbar item **type** property value as `Input` only for Input components.
+
 ### NumericTextBox
 
 * The `NumericTextBox` component can be included by importing the `NumericTextBox` module from `ej2-inputs`.
