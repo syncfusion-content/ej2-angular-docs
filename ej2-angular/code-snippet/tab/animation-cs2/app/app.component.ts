@@ -1,8 +1,8 @@
 
 
 
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { DropDownListComponent, DropDownList } from '@syncfusion/ej2-angular-dropdowns';
 import { Tab, TabComponent, SelectingEventArgs, SelectEventArgs} from '@syncfusion/ej2-angular-navigations';
 
 /**
@@ -12,7 +12,7 @@ import { Tab, TabComponent, SelectingEventArgs, SelectEventArgs} from '@syncfusi
 @Component({
     selector: 'app-container',
     template: `<div>  
-        <div class="EventLog" id="EventLog" style="word-break: normal;padding: 5px;"></div>
+        <div class="EventLog" id="EventLog" style="word-break: normal;padding: 5px;"><b>{{eventLog}}</b></div>
         <ejs-dropdownlist id='selectDropdown' [dataSource]='dropdownData' (change)='onChange($event)' [value]='value' [fields]='fields' [placeholder]='waterMark' [popupHeight]='height'></ejs-dropdownlist>
         <ejs-tab id="element" #tabObj [items]='tabItems'
         heightAdjustMode= 'Auto' (selecting)="selecting($event)" (selected)="selected($event)">
@@ -21,6 +21,7 @@ import { Tab, TabComponent, SelectingEventArgs, SelectEventArgs} from '@syncfusi
 export class AppComponent implements OnInit {
   @ViewChild('tabObj')
   public tabObj?: TabComponent;
+  public eventLog: string = '';
   public tabItems?: Object[];
   public dropdownData: Object[] = [
     { text: 'India', Id: 0 },
@@ -87,9 +88,7 @@ export class AppComponent implements OnInit {
     let eventlog = interact
       ? 'Tab Item selected by user interaction'
       : 'Tab Item selected by programmatically';
-    (document.getElementById('EventLog') as HTMLElement).innerHTML = (document.getElementById(
-      'EventLog'
-    ) as HTMLElement).innerHTML = '<b>' + eventlog + '</b></span>';
+    this.eventLog = eventlog;
   }
 }
 

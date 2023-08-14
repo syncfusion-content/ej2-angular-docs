@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule';
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { DateTimePickerModule } from "@syncfusion/ej2-angular-calendars";import { TimePickerModule } from '@syncfusion/ej2-angular-calendars';
 import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule';
 import { AppComponent } from './app.component';
 
@@ -12,7 +13,9 @@ import { AppComponent } from './app.component';
     imports: [
         BrowserModule,
         ScheduleModule,
-        TimePickerModule
+        TimePickerModule,
+        DropDownListModule,
+        DateTimePickerModule 
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],

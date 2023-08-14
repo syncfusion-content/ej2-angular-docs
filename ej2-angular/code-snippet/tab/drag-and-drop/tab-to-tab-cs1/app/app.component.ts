@@ -11,7 +11,7 @@ import { isNullOrUndefined } from "@syncfusion/ej2-base";
 
 @Component({
     selector: 'app-container',
-    templateUrl: 'app/app.component.html',
+    templateUrl: './app.component.html',
     encapsulation: ViewEncapsulation.None
 })
 
@@ -19,7 +19,7 @@ export class AppComponent {
     @ViewChild('firstTabObj') public firstTabObj?: TabComponent;
     @ViewChild('secondTabObj') public secondTabObj?: TabComponent;
 
-    public headerText: Object = [{ 'text': 'India' }, { 'text': 'Australia' }, { 'text': 'USA' }, { 'text': 'France' }, { 'text': 'HTML' }, { 'text': 'C Sharp(C#)' }, { 'text': 'Java' }, { 'text': 'VB.Net' }];
+    public headerText: Object[] = [{ 'text': 'India' }, { 'text': 'Australia' }, { 'text': 'USA' }, { 'text': 'France' }, { 'text': 'HTML' }, { 'text': 'C Sharp(C#)' }, { 'text': 'Java' }, { 'text': 'VB.Net' }];
     public firstTabitem: Object[] = [];
     public secondTabitem: Object[] = [];
     public dragItemIndex?: number;
@@ -48,16 +48,19 @@ export class AppComponent {
     }
 
     firstTabDragStop(args: DragEventArgs): void {
-        if (!isNullOrUndefined((args.target as HTMLElement).closest('.e-tab') as Element ) && !(this.dragItemContainer as HTMLElement).isSameNode(args.target.closest('.e-tab'))) {
+        if (!isNullOrUndefined((args.target as HTMLElement).closest('.e-tab') as Element) && !(this.dragItemContainer as HTMLElement).isSameNode(args.target.closest('.e-tab'))) {
             args.cancel = true;
             let TabElement: HTMLElement = <HTMLElement>args.target.closest('.e-tab');
             let dropItem: HTMLElement = <HTMLElement>args.target.closest('.e-toolbar-item');
             if (TabElement != null && dropItem != null) {
-                this.dragItemIndex = Array.prototype.indexOf.call((this.firstTabObj as TabComponent).element.querySelectorAll('.e-toolbar-item'), args.draggedItem);
+                const childrenArray = Array.from((this.firstTabObj as TabComponent).element.children[0].children[0].children);
+                const toolbarItem: Element[] = childrenArray.filter(el => el.classList.contains('e-toolbar-item'));
+                this.dragItemIndex = toolbarItem.indexOf(args.draggedItem);
                 let dropItemContainer: Element = args.target.closest('.e-toolbar-items') as Element;
-                let dropItemIndex: number = (dropItemContainer != null) ? (Array.prototype.slice.call(dropItemContainer.querySelectorAll('.e-toolbar-item'))).indexOf(dropItem) as number : '' as any;
+                let dropChildArray: Element[] = (Array.from(dropItemContainer.children)).filter(el => el.classList.contains('e-toolbar-item'));
+                let dropItemIndex: number = (dropItemContainer != null) ? dropChildArray.indexOf(dropItem) as number : '' as any;
                 (this.secondTabObj as TabComponent).addTab(this.firstTabitem, dropItemIndex);
-                (this.firstTabObj as TabComponent ).removeTab(this.dragItemIndex);
+                (this.firstTabObj as TabComponent).removeTab(this.dragItemIndex);
             }
         }
     }
@@ -74,10 +77,13 @@ export class AppComponent {
             let TabElement: HTMLElement = <HTMLElement>args.target.closest('.e-tab');
             let dropItem: HTMLElement = <HTMLElement>args.target.closest('.e-toolbar-item');
             if (TabElement != null && dropItem != null) {
-                this.dragItemIndex = Array.prototype.indexOf.call((this.secondTabObj as TabComponent).element.querySelectorAll('.e-toolbar-item'), args.draggedItem);
+                const childrenArray = Array.from((this.secondTabObj as TabComponent).element.children[0].children[0].children);
+                const toolbarItem: Element[] = childrenArray.filter(el => el.classList.contains('e-toolbar-item'));
+                this.dragItemIndex = toolbarItem.indexOf(args.draggedItem);
                 let dropItemContainer: Element = args.target.closest('.e-toolbar-items') as Element;
-                let dropItemIndex: number = (dropItemContainer != null) ? (Array.prototype.slice.call(dropItemContainer.querySelectorAll('.e-toolbar-item'))).indexOf(dropItem) as number : '' as any;
-                (this.firstTabObj as TabComponent ).addTab(this.secondTabitem, dropItemIndex);
+                let dropChildArray: Element[] = (Array.from(dropItemContainer.children)).filter(el => el.classList.contains('e-toolbar-item'));
+                let dropItemIndex: number = (dropItemContainer != null) ? dropChildArray.indexOf(dropItem) as number : '' as any;
+                (this.firstTabObj as TabComponent).addTab(this.secondTabitem, dropItemIndex);
                 (this.secondTabObj as TabComponent).removeTab(this.dragItemIndex);
             }
         }

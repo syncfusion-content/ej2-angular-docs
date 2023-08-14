@@ -2,7 +2,7 @@
 
 
 import { Component, Inject } from '@angular/core';
-import { FormBuilder, FormsModule,FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormsModule, FormGroup, Validators } from '@angular/forms';
 
 
 @Component({
@@ -57,15 +57,15 @@ import { FormBuilder, FormsModule,FormGroup, Validators } from '@angular/forms';
                                     <table id="property" class="box-table" title="Properties" style="width: 100%;">
                                         <tr>
                                             <td style="width:50%">Selected Language: </td>
-                                            <td class="formtext">{{ skillForm.get('skillname').value }}</td>
+                                            <td class="formtext">{{ skillForm.get('skillname')?.value }}</td>
                                         </tr>
                                         <tr>
                                             <td style="width:50%">Buyer Name: </td>
-                                            <td class="formtext">{{ skillForm.get('sname').value }}</td>
+                                            <td class="formtext">{{ skillForm.get('sname')?.value }}</td>
                                         </tr>
                                         <tr>
                                             <td style="width:50%">Buyer Mail ID: </td>
-                                            <td class="formtext">{{ skillForm.get('smail').value }}</td>
+                                            <td class="formtext">{{ skillForm.get('smail')?.value }}</td>
                                         </tr>
                                     </table>
                                 </div>
@@ -146,24 +146,24 @@ import { FormBuilder, FormsModule,FormGroup, Validators } from '@angular/forms';
 })
 
 export class AppComponent {
-    public headerText: Object | any = [{ 'text': 'ReactiveForms1' }, { 'text': 'ReactiveForms2'}];
+    public headerText: Object | any = [{ 'text': 'ReactiveForms1' }, { 'text': 'ReactiveForms2' }];
 
     public skillset: string[] = [
         'ASP.NET', 'ActionScript', 'Basic',
-        'C++' , 'C#' , 'dBase' , 'Delphi' ,
-        'ESPOL' , 'F#' , 'FoxPro' , 'Java',
-        'J#' , 'Lisp' , 'Logo' , 'PHP'
+        'C++', 'C#', 'dBase', 'Delphi',
+        'ESPOL', 'F#', 'FoxPro', 'Java',
+        'J#', 'Lisp', 'Logo', 'PHP'
     ];
 
 
     public placeholder: String = 'Select a language';
-    skillForm?: FormGroup | any ;
+    public skillForm!: FormGroup;
 
     constructor(@Inject(FormBuilder) private builder: FormBuilder) {
         this.createForm();
     }
 
-    createForm() : void {
+    createForm(): void {
         this.skillForm = this.builder.group({
             skillname: ['', Validators.required],
             sname: ['', Validators.required],
@@ -171,17 +171,18 @@ export class AppComponent {
         });
     }
 
-     onfocus(element: FocusEvent) : void {
+    onfocus(element: FocusEvent): void {
         let target: HTMLInputElement = element.target as HTMLInputElement;
         let parentNode: HTMLElement = target.parentNode as HTMLElement;
         if (parentNode.classList.contains('e-input-in-wrap')) {
             parentNode = (parentNode.parentNode as HTMLElement);
         }
         parentNode.classList.add('e-input-focus');
-        (parentNode.querySelector('.e-float-text') as Element).classList.add('e-label-top');
-        (parentNode.querySelector('.e-float-text') as Element).classList.remove('e-label-bottom');
+        (parentNode.children[2] as Element).classList.add('e-label-top');
+        (parentNode.children[2] as Element).classList.remove('e-label-bottom');
+
     }
-    onblur(element: FocusEvent) : void {
+    onblur(element: FocusEvent): void {
         let target: HTMLInputElement = element.target as HTMLInputElement;
         let parentNode: HTMLElement = target.parentNode as HTMLElement;
         if (parentNode.classList.contains('e-input-in-wrap')) {
@@ -189,14 +190,14 @@ export class AppComponent {
         }
         parentNode.classList.remove('e-input-focus');
         if (target.value === null || target.value === '') {
-            (parentNode.querySelector('.e-float-text') as Element ).classList.remove('e-label-top');
-            (parentNode.querySelector('.e-float-text') as Element).classList.add('e-label-bottom');
-        }else {
-            (parentNode.querySelector('.e-float-text') as Element).classList.add('e-label-top');
-            (parentNode.querySelector('.e-float-text') as Element).classList.remove('e-label-bottom');
+            (parentNode.children[2] as Element).classList.remove('e-label-top');
+            (parentNode.children[2] as Element).classList.add('e-label-bottom');
+        } else {
+            (parentNode.children[2] as Element).classList.add('e-label-top');
+            (parentNode.children[2] as Element).classList.remove('e-label-bottom');
         }
     }
-    onreset(element: MouseEvent) : void {
+    onreset(element: MouseEvent): void {
         let parentNode: NodeListOf<HTMLElement> = document.getElementsByClassName('box-form')[0].querySelectorAll('.e-float-text');
         for (let i: number = 0; i < parentNode.length; i++) {
             parentNode[i].classList.remove('e-label-top');

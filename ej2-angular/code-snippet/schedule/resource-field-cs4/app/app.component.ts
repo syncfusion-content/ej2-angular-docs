@@ -1,9 +1,9 @@
-
-
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { DateTimePicker } from '@syncfusion/ej2-calendars';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
+import { ChangeEventArgs } from '@syncfusion/ej2-calendars';
+import { RatingComponent } from '@syncfusion/ej2-angular-inputs';
 import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs, PopupCloseEventArgs } from '@syncfusion/ej2-angular-schedule';
 import { eventData } from './datasource';
 @Component({
@@ -11,37 +11,42 @@ import { eventData } from './datasource';
     providers: [DayService, WeekService, WorkWeekService, MonthService],
     // specifies the template string for the Schedule component
     template: `<ejs-schedule width='100%' height='550px' [selectedDate]='selectedDate' [views]='views' [eventSettings]='eventSettings' [showQuickInfo]='showQuickInfo' (popupOpen)='onPopupOpen($event)' (popupClose) ='onPopupClose($event)'>
-    <ng-template #editorTemplate>
+    <ng-template #editorTemplate let-data>
         <table class="custom-event-editor" width="100%" cellpadding="5">
             <tbody>
                 <tr>
                     <td class="e-textlabel">Summary</td>
                     <td colspan="4">
-                        <input id="Subject" class="e-input" type="text" name="Subject" style="width: 100%" />
+                        <input id="Subject" class="e-input" type="text" name="Subject" style="width: 100%" #subject value="{{data.Subject}}"/>
                     </td>
                 </tr>
                 <tr>
-                    <td class="e-textlabel">Status</td>
+                    <td class="e-textlabel">Rating</td>
                     <td colspan="4">
-                        <input type="text" id="EventType" name="EventType" style="width: 100%" />
+                    <input ejs-rating id='rating1' #rating value="{{data.Rating}}"/>
                     </td>
                 </tr>
                 <tr>
                     <td class="e-textlabel">From</td>
                     <td colspan="4">
-                        <input id="StartTime" type="text" name="StartTime" />
+                    <ejs-datetimepicker id="StartTime" class="e-field" data-name="StartTime" format="M/dd/yy h:mm a"
+                    (change)="onDateChange($event)" [value]="startDateParser(data.startTime || data.StartTime)" #startTime>
+                  </ejs-datetimepicker>
                     </td>
                 </tr>
                 <tr>
                     <td class="e-textlabel">To</td>
                     <td colspan="4">
-                        <input id="EndTime" type="text" name="EndTime" />
+                    <ejs-datetimepicker id="EndTime" class="e-field" data-name="EndTime" format="M/dd/yy h:mm a"
+                    (change)="onDateChange($event)" [value]="endDateParser(data.endTime || data.EndTime)" #endTime>
+                  </ejs-datetimepicker>
                     </td>
                 </tr>
                 <tr>
                     <td class="e-textlabel">Reason</td>
                     <td colspan="4">
-                        <textarea id="Description" class="e-input" name="Description" rows="3" cols="50" style="width: 100%; height: 60px !important; resize: vertical"></textarea>
+                        <textarea id="Description" class="e-input" name="Description" rows="3" cols="50" style="width: 100%; 
+                        height: 60px !important; resize: vertical" #textArea value="{{data.Description}}" ></textarea>
                     </td>
                 </tr>
             </tbody>
@@ -51,64 +56,78 @@ import { eventData } from './datasource';
 })
 
 export class AppComponent {
+    @ViewChild('rating') public rating!: RatingComponent;
+    @ViewChild('startTime') public startTime!: DateTimePicker;
+    @ViewChild('endTime') public endTime!: DateTimePicker;
+    @ViewChild('textArea') public textArea!: ElementRef<HTMLInputElement>;
+    @ViewChild('subject') public subject!: ElementRef<HTMLInputElement>;
     public selectedDate: Date = new Date(2018, 1, 15);
     public views: Array<string> = ['Day', 'Week', 'WorkWeek', 'Month'];
     public showQuickInfo: Boolean = false;
+    public startDate!: Date;
+    public endDate!: Date;
     public eventSettings: EventSettingsModel = {
         dataSource: eventData
     };
+    public statusData: Object[] = ['New', 'Requested', 'Confirmed'];
+
     onPopupOpen(args: PopupOpenEventArgs) : void {
         if (args.type === 'Editor') {
-            let subjectElement: HTMLInputElement = args.element.querySelector('#Subject') as HTMLInputElement;
-            if (subjectElement) {
-                subjectElement.value = ((<{ [key: string]: Object; }>(args.data))['Subject'] as string) || "";
+            if (this.subject.nativeElement) {
+                (this.subject.nativeElement as HTMLInputElement).value = ((<{ [key: string]: Object; }>(args.data))['Subject'] as string) || "";
             }
-            let statusElement: HTMLInputElement = args.element.querySelector('#EventType') as HTMLInputElement;
-            if (!statusElement.classList.contains('e-dropdownlist')) {
-                let dropDownListObject: DropDownList = new DropDownList({
-                    placeholder: 'Choose status', value: ((<{ [key: string]: Object; }>(args.data))['EventType'] as string),
-                    dataSource: ['New', 'Requested', 'Confirmed']
-                });
-                dropDownListObject.appendTo(statusElement);
-            }
-            let startElement: HTMLInputElement = args.element.querySelector('#StartTime') as HTMLInputElement;
-            if (!startElement.classList.contains('e-datetimepicker')) {
-                startElement.value = (<{ [key: string]: Object; }>(args.data))['StartTime'] as string;
-                new DateTimePicker({ value: new Date(startElement.value) || new Date() }, startElement);
-            }
-            let endElement: HTMLInputElement = args.element.querySelector('#EndTime') as HTMLInputElement;
-            if (!endElement.classList.contains('e-datetimepicker')) {
-                endElement.value = (<{ [key: string]: Object; }>(args.data))['EndTime'] as string;
-                new DateTimePicker({ value: new Date(endElement.value) || new Date() }, endElement);
-            }
-            let descriptionElement: HTMLInputElement = args.element.querySelector('#Description') as HTMLInputElement;
-            if (descriptionElement) {
-                descriptionElement.value = (<{ [key: string]: Object; }>(args.data))['Description'] as string || "";
+            if (this.textArea.nativeElement) {
+                (this.textArea.nativeElement as HTMLInputElement).value = (<{ [key: string]: Object; }>(args.data))['Description'] as string || "";
             }
         }
     }
     onPopupClose(args: PopupCloseEventArgs) : void {
         if (args.type === 'Editor' && !isNullOrUndefined((args as any).data)) {
-            let subjectElement: HTMLInputElement = args.element.querySelector('#Subject') as HTMLInputElement;
-            if (subjectElement ) {
-                (<{ [key: string]: Object; }>(args.data))['Subject'] = subjectElement.value;
+            if ( this.subject.nativeElement ) {
+                (<{ [key: string]: Object; }>(args.data))['Subject'] = (this.subject.nativeElement as HTMLInputElement).value;
             }
-            let statusElement: HTMLInputElement = args.element.querySelector('#EventType') as HTMLInputElement;
-            if (statusElement) {
-                ((<{ [key: string]: Object; }>(args.data))['EventType'] as string) = statusElement.value;
+            if(this.rating.element) {
+                ((<{ [key: string]: Object; }>(args.data))['Rating'] as string) = (this.rating.element as HTMLInputElement).value;
             }
-            let startElement: HTMLInputElement = args.element.querySelector('#StartTime') as HTMLInputElement;
-            if (startElement) {
-                (<{ [key: string]: Object; }>(args.data))['StartTime'] = startElement.value;
+           
+            if (this.startTime.element) {
+                (<{ [key: string]: Object; }>(args.data))['StartTime'] = (this.startTime.element as HTMLInputElement).value;
             }
-            let endElement: HTMLInputElement = args.element.querySelector('#EndTime') as HTMLInputElement;
-            if (endElement) {
-                (<{ [key: string]: Object; }>(args.data))['EndTime'] = endElement.value;
+            
+            if (this.endTime.element) {
+                (<{ [key: string]: Object; }>(args.data))['EndTime'] = (this.endTime.element as HTMLInputElement).value;
             }
-            let descriptionElement: HTMLInputElement = args.element.querySelector('#Description') as HTMLInputElement;
-            if (descriptionElement) {
-                ((<{ [key: string]: Object; }>(args.data))['Description'] as string) = descriptionElement.value;
+            if (this.textArea.nativeElement) {
+                ((<{ [key: string]: Object; }>(args.data))['Description'] as string) = (this.textArea.nativeElement as HTMLInputElement).value;
             }
+        }
+    }
+
+    public startDateParser(data: string) {
+        if (isNullOrUndefined(this.startDate) && !isNullOrUndefined(data)) {
+          return new Date(data);
+        } else if (!isNullOrUndefined(this.startDate)) {
+          return new Date(this.startDate);
+        }
+        return new Date();
+    }
+
+    public endDateParser(data: string) {
+        if (isNullOrUndefined(this.endDate) && !isNullOrUndefined(data)) {
+          return new Date(data);
+        } else if (!isNullOrUndefined(this.endDate)) {
+          return new Date(this.endDate);
+        }
+        return new Date();
+      }
+
+    public onDateChange(args: ChangeEventArgs): void {
+        if (!isNullOrUndefined(args.event as any)) {
+          if (args.element.id === "StartTime") {
+            this.startDate = args.value as Date;
+          } else if (args.element.id === "EndTime") {
+            this.endDate = args.value as Date;
+          }
         }
     }
 }

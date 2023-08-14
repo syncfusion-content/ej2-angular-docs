@@ -11,17 +11,17 @@ import { RecurrenceEditorChangeEventArgs } from '@syncfusion/ej2-angular-schedul
   <div style="padding-bottom:15px;">
       <label>Rule Output</label>
       <div class="rule-output-container">
-          <div id="rule-output">FREQ=DAILY;INTERVAL=2;COUNT=8</div>
+          <div id="rule-output">{{selectRule}}</div>
       </div>
   </div>
   <ejs-recurrenceeditor (change)="onChange($event)" value="FREQ=DAILY;INTERVAL=2;COUNT=8"></ejs-recurrenceeditor>
 </div>`
 })
 export class AppComponent {
+    public selectRule: string = 'FREQ=DAILY;INTERVAL=2;COUNT=8';
     public onChange(args: RecurrenceEditorChangeEventArgs): void {
-        let outputElement: HTMLElement = document.querySelector('#rule-output') as HTMLElement;
         if (!isNullOrUndefined(args.value)) {
-            outputElement.innerText = args.value;
+            this.selectRule = args.value;
         }
     }
 }

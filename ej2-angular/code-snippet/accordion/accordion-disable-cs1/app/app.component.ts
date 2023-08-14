@@ -1,6 +1,3 @@
-
-
-
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { enableRipple, isNullOrUndefined as isNOU } from '@syncfusion/ej2-base';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
@@ -8,6 +5,7 @@ import { DatePicker } from '@syncfusion/ej2-calendars';
 import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 import { AccordionComponent, AccordionItemsDirective, AccordionItemDirective } from '@syncfusion/ej2-angular-navigations';
 import { DatePickerComponent } from '@syncfusion/ej2-angular-calendars';
+import { ElementRef } from '@angular/core';
 
 enableRipple(true);
 
@@ -23,6 +21,14 @@ export class AppComponent implements OnInit {
   @ViewChild('cardNo') cardNo?: NumericTextBoxComponent;
   @ViewChild('date') expiry?: DatePickerComponent;
   @ViewChild('cvv') cvv?: NumericTextBoxComponent;
+  @ViewChild('emailRef') emailReference!: ElementRef<HTMLInputElement>;
+  @ViewChild('passwordRef') passwordRef!: ElementRef<HTMLInputElement>;
+  @ViewChild('nameRef') nameRef!: ElementRef<HTMLInputElement>;
+  @ViewChild('addressRef') addressRef!: ElementRef<HTMLInputElement>;
+  @ViewChild('cardHolderRef') cardHolderRef!: ElementRef<HTMLInputElement>;
+  @ViewChild('error1') error1!: ElementRef<HTMLDivElement>;
+  @ViewChild('error2') error2!: ElementRef<HTMLDivElement>;
+  @ViewChild('error3') error3!: ElementRef<HTMLDivElement>;
 
   public dlgTarget?: HTMLElement;
   public dlgButtons?: Object[];
@@ -60,32 +66,32 @@ export class AppComponent implements OnInit {
   public btnClick(e: any): void {
     switch (e.target.id) {
       case 'Continue_Btn':
-        let email: string | any = (document.getElementById('email') as HTMLElement);
-        let password: string | any = (document.getElementById('password') as HTMLElement);
-        if(email.value !== '' && password.value !== '') {
-          if(this.checkMail(email.value)) {
-            email.value = password.value = '';
+        let email: string | any = this.emailReference.nativeElement.value;
+        let password: string | any = this.passwordRef.nativeElement.value;
+        if(email !== '' && password !== '') {
+          if(this.checkMail(email)) {
+            email = password = '';
             (this.accordion as AccordionComponent).enableItem(1, true);
             (this.accordion as AccordionComponent).enableItem(0, false);
             (this.accordion as AccordionComponent).expandItem(true, 1);
           }
-          (document.getElementById('err1') as HTMLElement).classList.remove('show');
+          this.error1.nativeElement.classList.remove('show');
         } else {
-          (document.getElementById('err1') as HTMLElement).classList.add('show');
+          this.error1.nativeElement.classList.add('show');
         }
         break;
       case 'Continue_BtnAdr':
-        let name: string | any = document.getElementById('name');
-        let address: string | any = document.getElementById('address');
-        if((name.value !== '') && (address.value !== '') && (!isNOU((this.mobile as NumericTextBoxComponent).value))) {
+        let name: string | any = this.nameRef.nativeElement.value;
+        let address: string | any = this.addressRef.nativeElement.value;
+        if((name !== '') && (address !== '') && (!isNOU((this.mobile as NumericTextBoxComponent).value))) {
           if(this.checkMobile((this.mobile as NumericTextBoxComponent).value)) {
             (this.accordion as AccordionComponent).enableItem(2, true);
             (this.accordion as AccordionComponent).enableItem(1, false);
             (this.accordion as AccordionComponent).expandItem(true, 2);
           }
-          (document.getElementById('err2') as HTMLElement).classList.remove('show');
+          this.error2.nativeElement.classList.remove('show');
         } else {
-          (document.getElementById('err2') as HTMLElement).classList.add('show');
+          this.error2.nativeElement.classList.add('show');
         }
         break;
       case 'Back_Btn':
@@ -94,17 +100,17 @@ export class AppComponent implements OnInit {
         (this.accordion as AccordionComponent).expandItem(true, 1);
         break;
       case 'Save_Btn':
-        let cardHolder: string | any = document.getElementById('cardHolder');
-        if(!isNOU((this.cardNo as NumericTextBoxComponent).value) && (cardHolder.value !== '') && (!isNOU((this.expiry as DatePickerComponent).value)) && !isNOU((this.cvv as NumericTextBoxComponent).value)) {
+        let cardHolder: string | any = this.cardHolderRef.nativeElement.value;
+        if(!isNOU((this.cardNo as NumericTextBoxComponent).value) && (cardHolder !== '') && (!isNOU((this.expiry as DatePickerComponent).value)) && !isNOU((this.cvv as NumericTextBoxComponent).value)) {
           if (this.checkCardNo((this.cardNo as NumericTextBoxComponent).value)) {
             if (this.checkCVV((this.cvv as NumericTextBoxComponent).value)) {
               (this.alertDlg as DialogComponent).content = this.success;
               (this.alertDlg as DialogComponent).show();
             }
           }
-          (document.getElementById('err3') as HTMLElement).classList.remove('show');
+          this.error3.nativeElement.classList.remove('show');
         } else {
-          (document.getElementById('err3') as HTMLElement).classList.add('show');
+          this.error3.nativeElement.classList.add('show');
         }
         break;
     }

@@ -20,18 +20,16 @@ export class AppComponent {
     public eventSettings: EventSettingsModel = {
         dataSource: eventsData
     };
+    public  eventLogs: string[] = [];
     onClick() {
-        (document.getElementById('EventLog') as any).innerHTML = '';
+        this.eventLogs = [];
     }
     onDataBound(): void {
         let event: Object[] = (this.scheduleObj as any).getEvents();
-        this.appendElement('Events present on scheduler <b>' + event.length + '<b><hr>');
+        this.appendElement(' ' + event.length + ' ');
     }
     appendElement(html: string): void {
-        let span: HTMLElement = document.createElement('span');
-        span.innerHTML = html;
-        let log: HTMLElement = document.getElementById('EventLog') as HTMLElement;
-        log.insertBefore(span, log.firstChild);
+        this.eventLogs.push(`${html}`);
     }
 }
 

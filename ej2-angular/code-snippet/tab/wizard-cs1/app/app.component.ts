@@ -16,7 +16,7 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 // tslint:disable:max-line-length
 @Component({
     selector: 'app-container',
-    templateUrl: 'app/app.component.html',
+    templateUrl: './app.component.html',
     encapsulation: ViewEncapsulation.None
 })
 
@@ -56,6 +56,10 @@ export class AppComponent implements OnInit {
     public dateMax?: Date;
     public result: Object[] = [];
     public reserved: Object[] = [];
+    public err1: string = '';
+    public err2: string = '';
+    public err3: string = '';
+    public displayAmt: string = '';
 
     public ngOnInit(): void {
         document.body.style.visibility = 'hidden';
@@ -138,39 +142,39 @@ export class AppComponent implements OnInit {
                 if (!isNOU((this.startPoint as DropDownListComponent).value) && !isNOU((this.endPoint as DropDownListComponent).value) &&
                     !isNOU((this.ticketType as DropDownListComponent).value) && !isNOU((this.journeyDate  as DatePickerComponent ).value)) {
                     if (!isNOU((this.startPoint as DropDownListComponent).value) && (this.startPoint as DropDownListComponent).value == (this.endPoint as DropDownListComponent).value) {
-                        (document.getElementById('err1') as HTMLElement).innerText = '* Arrival point cannot be same as Departure';
+                        this.err1 = '* Arrival point cannot be same as Departure';
                     } else {
                         (this.tab as TabComponent).enableTab(0, false);
                         (this.tab as TabComponent).enableTab(1, true);
                         this.filterTrains(e);
                         (this.tab as TabComponent).select(1);
-                        (document.getElementById('err1') as HTMLElement).innerText = '';
-                        (document.getElementById('err2') as HTMLElement).innerText = '';
+                        this.err1 = '';
+                        this.err2 = '';
                     }
                 } else {
-                    (document.getElementById('err1') as HTMLElement).innerText = '* Please fill all the details before proceeding';
+                    this.err1 = '* Please fill all the details before proceeding';
                 }
                 break;
             case 'bookTickets':
                 /* Based on the selected station generate Grid content to display trains available */
                 if ((this.availTrainGrid as GridComponent).getSelectedRecords() === undefined || (this.availTrainGrid as GridComponent).getSelectedRecords().length === 0) {
-                    (document.getElementById('err2') as HTMLElement).innerText = '* Select your convenient train';
+                    this.err2 = '* Select your convenient train';
                 } else {
                     (this.tab as TabComponent).enableTab(2, true);
                     (this.tab as TabComponent).select(2);
                     (this.tab as TabComponent).enableTab(1, false);
-                    (document.getElementById('err2') as HTMLElement).innerText = '';
+                    this.err2 = '';
                 }
                 break;
             case 'confirmTickets':
                 /* Get the Passenger details and validate the fields must not be left empty */
                 if ((this.input1 as any).nativeElement.value === '' || isNOU((this.passgender1 as DropDownListComponent).value) || isNOU((this.passage1 as NumericTextBoxComponent).value)) {
-                    (document.getElementById('err3') as HTMLElement).innerText = '* Please enter passenger details';
+                    this.err3 = '* Please enter passenger details';
                 } else {
                     (this.tab as TabComponent).enableTab(3, true);
                     (this.tab as TabComponent).select(3);
                     (this.tab as TabComponent).enableTab(2, false);
-                    (document.getElementById('err3') as HTMLElement).innerText = '';
+                    this.err3 = '';
                     this.finalizeDetails(e);
                 }
                 break;
@@ -242,13 +246,12 @@ export class AppComponent implements OnInit {
                 if ((this.startPoint as DropDownListComponent).value === this.cities[i].name) { calcFare = calcFare + this.cities[i].fare; }
                 if ((this.endPoint as DropDownListComponent).value === this.cities[i].name) { calcFare = calcFare + this.cities[i].fare; }
             }
-            let displayAmt: any = document.getElementById('amount');
             if ((this.ticketType as DropDownListComponent).value === 'Economy Class') {
-                displayAmt.innerText = "Total payable amount: $" + passCount * (300 + calcFare)
+                this.displayAmt = "Total payable amount: $" + passCount * (300 + calcFare)
             } else if ((this.ticketType as DropDownListComponent).value === 'Business Class') {
-                displayAmt.innerText = "Total payable amount: $" + passCount * (500 + calcFare)
+                this.displayAmt = "Total payable amount: $" + passCount * (500 + calcFare)
             } else if ((this.ticketType as DropDownListComponent).value === 'Common Class') {
-                displayAmt.innerText = "Total payable amount: $" + passCount * (150 + calcFare)
+                this.displayAmt = "Total payable amount: $" + passCount * (150 + calcFare)
             }
         }
     }

@@ -11,7 +11,7 @@ import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
             <ejs-tooltip cssClass='e-tooltip-css' position='BottomCenter' opensOn='Click'>
                 <!-- iframe element -->
                  <ng-template #content>
-                 <iframe src="https://www.syncfusion.com/products/essential-js2"></iframe>
+                 <iframe src="https://ej2.syncfusion.com/showcase/typescript/expensetracker/#/dashboard"></iframe>
                 </ng-template>
                 <button ejs-button class="text" id="iframeContent" cssClass='e-outline' isPrimary=true>Embedded Iframe</button>
             </ejs-tooltip>
