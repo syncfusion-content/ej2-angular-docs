@@ -1,7 +1,8 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
-import { extend } from "@syncfusion/ej2-base";
+import { extend, isNullOrUndefined } from "@syncfusion/ej2-base";
+import { ChangeEventArgs } from '@syncfusion/ej2-calendars';
 import { DropDownList } from "@syncfusion/ej2-dropdowns";
 import { DateTimePicker } from "@syncfusion/ej2-calendars";
 import { FormValidators, FormValidator, TextBox } from "@syncfusion/ej2-angular-inputs";
@@ -15,37 +16,44 @@ import { eventData } from './datasource';
     encapsulation: ViewEncapsulation.None,
     // specifies the template string for the Schedule component
     template: `<ejs-schedule width='100%' height='550px' [selectedDate]='selectedDate' [views]='views' [eventSettings]='eventSettings' [showQuickInfo]='showQuickInfo' (popupOpen)='onPopupOpen($event)' >
-    <ng-template #editorTemplate>
+    <ng-template #editorTemplate let-data>
         <table class="custom-event-editor" width="100%" cellpadding="5">
             <tbody>
                 <tr>
                     <td class="e-textlabel">Summary</td>
                     <td colspan="4">
-                        <input id="Subject" class=" e-field e-input" type="text" name="Subject" value="" style="width: 100%" (keyup)="onChange($event)" />
+                        <input id="Subject" class=" e-field e-input" type="text" name="Subject" style="width: 100%" value="{{data.Subject}}" (keyup)="onChange($event)"/>
                     </td>
                 </tr>
                 <tr>
                     <td class="e-textlabel">Status</td>
                     <td colspan="4">
-                        <input type="text" id="EventType" class="e-field" name="EventType" style="width: 100%" (change)="onChange($event)" />
+                    <ejs-dropdownlist id='EventType' class="e-field" data-name="EventType" placeholder='Choose Status'
+                    [dataSource]='statusData' value="{{data.EventType}}">
+                  </ejs-dropdownlist>
                     </td>
                 </tr>
                 <tr>
                     <td class="e-textlabel">From</td>
                     <td colspan="4">
-                        <input id="StartTime" class="e-field" type="text" name="StartTime" />
+                    <ejs-datetimepicker id="StartTime" class="e-field" data-name="StartTime" format="M/dd/yy h:mm a"
+                    (change)="onDateChange($event)" [value]="startDateParser(data.startTime || data.StartTime)">
+                  </ejs-datetimepicker>
                     </td>
                 </tr>
                 <tr>
                     <td class="e-textlabel">To</td>
                     <td colspan="4">
-                        <input id="EndTime" class="e-field" type="text" name="EndTime" />
+                    <ejs-datetimepicker id="EndTime" class="e-field" data-name="EndTime" format="M/dd/yy h:mm a"
+                    (change)="onDateChange($event)" [value]="endDateParser(data.endTime || data.EndTime)">
+                  </ejs-datetimepicker>
                     </td>
                 </tr>
                 <tr>
                     <td class="e-textlabel">Reason</td>
                     <td colspan="4">
-                        <textarea id="Description" class="e-field e-input" name="Description" rows="3" cols="50" style="width: 100%; height: 60px !important; resize: vertical" (keyup)="onChange($event)"></textarea>
+                        <textarea id="Description" class="e-field e-input" name="Description" rows="3" cols="50" style="width: 100%; 
+                        height: 60px !important; resize: vertical" value="{{data.Description}}" (keyup)="onChange($event)"></textarea>
                     </td>
                 </tr>
             </tbody>
@@ -59,6 +67,8 @@ export class AppComponent {
   public selectedDate: Date = new Date(2018, 1, 15);
   public views: Array<string> = ['Day', 'Week', 'WorkWeek', 'Month'];
   public showQuickInfo: Boolean = false;
+  public startDate!: Date;
+  public endDate!: Date;
   public eventSettings: EventSettingsModel = {
     dataSource: eventData,
     fields: {
@@ -79,33 +89,6 @@ export class AppComponent {
 
   public onPopupOpen(args: PopupOpenEventArgs): void {
     if (args.type === "Editor") {
-
-     let subjectElement: HTMLInputElement = args.element.querySelector('#Subject') as HTMLInputElement;
-        if (subjectElement) {
-            subjectElement.value = ((<{ [key: string]: Object; }>(args.data))["Subject"] as string) || "";
-         }
-        let statusElement: HTMLInputElement = args.element.querySelector('#EventType') as HTMLInputElement;
-        if (!statusElement.classList.contains('e-dropdownlist')) {
-            let dropDownListObject: DropDownList = new DropDownList({
-                placeholder: 'Choose status', value: ((<{ [key: string]: Object; }>(args.data))["EventType"] as string),
-                    dataSource: ['New', 'Requested', 'Confirmed']
-            });
-            dropDownListObject.appendTo(statusElement);
-        }
-        let startElement: HTMLInputElement = args.element.querySelector('#StartTime') as HTMLInputElement;
-        if (!startElement.classList.contains('e-datetimepicker')) {
-            startElement.value = (<{ [key: string]: Object; }>(args.data))["StartTime"] as string;
-            new DateTimePicker({ value: new Date(startElement.value) || new Date() }, startElement);
-        }
-        let endElement: HTMLInputElement = args.element.querySelector('#EndTime') as HTMLInputElement;
-        if (!endElement.classList.contains('e-datetimepicker')) {
-            endElement.value = (<{ [key: string]: Object; }>(args.data))["EndTime"] as string;
-            new DateTimePicker({ value: new Date(endElement.value) || new Date() }, endElement);
-        }
-        let descriptionElement: HTMLInputElement = args.element.querySelector('#Description') as HTMLInputElement;
-        if (descriptionElement) {
-            descriptionElement.value = (<{ [key: string]: Object; }>(args.data))["Description"] as string || "";
-        }
       const formElement: HTMLElement = args.element.querySelector(".e-schedule-form") as HTMLElement;
       this.validator = (formElement as EJ2Instance).ej2_instances[0] as FormValidator;
       this.validator.addRules("EventType", { required: [true, "This field is required."]});
@@ -138,6 +121,36 @@ export class AppComponent {
     } else if (!isValidated && !saveBtn) {
       document.querySelector(".e-event-save")!.classList.add("e-custom-disable");
     }
+  }
+
+  public statusData: Object[] = ['New', 'Requested', 'Confirmed'];
+
+  public startDateParser(data: string) {
+      if (isNullOrUndefined(this.startDate) && !isNullOrUndefined(data)) {
+        return new Date(data);
+      } else if (!isNullOrUndefined(this.startDate)) {
+        return new Date(this.startDate);
+      }
+      return new Date();
+  }
+
+    public endDateParser(data: string) {
+      if (isNullOrUndefined(this.endDate) && !isNullOrUndefined(data)) {
+        return new Date(data);
+      } else if (!isNullOrUndefined(this.endDate)) {
+        return new Date(this.endDate);
+      }
+      return new Date();
+    }
+
+    public onDateChange(args: ChangeEventArgs): void {
+      if (!isNullOrUndefined(args.event as any)) {
+        if (args.element.id === "StartTime") {
+          this.startDate = args.value as Date;
+        } else if (args.element.id === "EndTime") {
+          this.endDate = args.value as Date;
+        }
+      }
   }
 }
 

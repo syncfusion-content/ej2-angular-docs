@@ -1,6 +1,8 @@
 
 
 import { Component, ViewChild } from '@angular/core';
+import { ChangeEventArgs } from '@syncfusion/ej2-calendars';
+import { extend, isNullOrUndefined } from '@syncfusion/ej2-base';
 import { DateTimePicker } from '@syncfusion/ej2-calendars';
 import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs, RecurrenceEditor, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
 import { eventData } from './datasource';
@@ -9,7 +11,7 @@ import { eventData } from './datasource';
     providers: [DayService, WeekService, WorkWeekService, MonthService],
     // specifies the template string for the Schedule component
     template: `<ejs-schedule #scheduleObj width='100%' height='550px' [selectedDate]='selectedDate' [views]='views' [eventSettings]='eventSettings' [showQuickInfo]='showQuickInfo' (popupOpen)='onPopupOpen($event)'>
-        <ng-template #editorTemplate>
+        <ng-template #editorTemplate let-data>
             <table class="custom-event-editor" width="100%" cellpadding="5">
                 <tbody>
                     <tr>
@@ -21,18 +23,22 @@ import { eventData } from './datasource';
                     <tr>
                     <td class="e-textlabel">From</td>
                         <td colspan="4">
-                            <input id="StartTime" class="e-field" type="text" name="StartTime" />
+                        <ejs-datetimepicker id="StartTime" class="e-field" data-name="StartTime" format="M/dd/yy h:mm a"
+                        (change)="onDateChange($event)" [value]="startDateParser(data.startTime || data.StartTime)">
+                      </ejs-datetimepicker>
                         </td>
                     </tr>
                     <tr>
                         <td class="e-textlabel">To</td>
                         <td colspan="4">
-                            <input id="EndTime" class="e-field" type="text" name="EndTime" />
+                        <ejs-datetimepicker id="EndTime" class="e-field" data-name="EndTime" format="M/dd/yy h:mm a"
+                        (change)="onDateChange($event)" [value]="endDateParser(data.endTime || data.EndTime)">
+                      </ejs-datetimepicker>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="4">
-                            <div id='RecurrenceEditor'></div>
+                            <ejs-recurrenceeditor #recurrenceObj></ejs-recurrenceeditor>
                         </td>
                     </tr>
                     <tr>
@@ -51,30 +57,50 @@ import { eventData } from './datasource';
 export class AppComponent {
     @ViewChild('scheduleObj')
     public scheduleObj?: ScheduleComponent;
+    @ViewChild('recurrenceObj') recurrObject!: RecurrenceEditor;
     public selectedDate: Date = new Date(2018, 1, 15);
+    public startDate!: Date;
+    public endDate!: Date;
     public views: Array<string> = ['Day', 'Week', 'WorkWeek', 'Month'];
     public showQuickInfo: Boolean = false;
     public eventSettings: EventSettingsModel = {
         dataSource: eventData
     };
+
+    public startDateParser(data: string) {
+        if (isNullOrUndefined(this.startDate) && !isNullOrUndefined(data)) {
+          return new Date(data);
+        } else if (!isNullOrUndefined(this.startDate)) {
+          return new Date(this.startDate);
+        }
+        return new Date();
+    }
+
+      public endDateParser(data: string) {
+        if (isNullOrUndefined(this.endDate) && !isNullOrUndefined(data)) {
+          return new Date(data);
+        } else if (!isNullOrUndefined(this.endDate)) {
+          return new Date(this.endDate);
+        }
+        return new Date();
+      }
+
+      public onDateChange(args: ChangeEventArgs): void {
+        if (!isNullOrUndefined(args.event as any)) {
+          if (args.element.id === "StartTime") {
+            this.startDate = args.value as Date;
+          } else if (args.element.id === "EndTime") {
+            this.endDate = args.value as Date;
+          }
+        }
+    }
+
     onPopupOpen(args: PopupOpenEventArgs): void {
         if (args.type === 'Editor') {
-            let startElement: HTMLInputElement = args.element.querySelector('#StartTime') as HTMLInputElement;
-            if (!startElement.classList.contains('e-datetimepicker')) {
-                new DateTimePicker({ value: new Date(startElement.value) || new Date() }, startElement);
+            if (!this.recurrObject.element.classList.contains('e-recurrenceeditor')) {
+                (this.scheduleObj?.eventWindow as any).recurrenceEditor = this.recurrObject;
             }
-            let endElement: HTMLInputElement = args.element.querySelector('#EndTime') as HTMLInputElement;
-            if (!endElement.classList.contains('e-datetimepicker')) {
-                new DateTimePicker({ value: new Date(endElement.value) || new Date() }, endElement);
-            }
-            let recurElement: HTMLElement = args.element.querySelector('#RecurrenceEditor') as HTMLElement;
-            if (!recurElement.classList.contains('e-recurrenceeditor')) {
-                let recurrObject: RecurrenceEditor = new RecurrenceEditor({
-                });
-                recurrObject.appendTo(recurElement);
-                (this.scheduleObj?.eventWindow as any).recurrenceEditor = recurrObject;
-            }
-            document.getElementById('RecurrenceEditor')!.style.display = (this.scheduleObj!.currentAction == "EditOccurrence") ? 'none' : 'block';
+            (this.recurrObject.element)!.style.display = (this.scheduleObj!.currentAction == "EditOccurrence") ? 'none' : 'block';
         }
     }
 }

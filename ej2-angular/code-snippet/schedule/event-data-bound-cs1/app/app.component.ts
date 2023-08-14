@@ -20,22 +20,20 @@ export class AppComponent {
     public eventSettings: EventSettingsModel = {
         dataSource: eventsData
     };
+    public  eventLogs: string[] = [];
     onClick() {
-        (document.getElementById('EventLog') as any).innerHTML = '';
+        this.eventLogs = [];
     }
     onDataBound(): void {
         let event: Object[] = (this.scheduleObj as any).getCurrentViewEvents();
         if (event.length > 0) {
-            this.appendElement('Events present on current view <b>' + event.length + '<b><hr>');
+            this.appendElement(`Events present on current view ${event.length}`);
         } else {
-            this.appendElement('No Events available in this view.<hr>');
+            this.appendElement('No Events available in this view.');
         }
     }
     appendElement(html: string): void {
-        let span: HTMLElement = document.createElement('span');
-        span.innerHTML = html;
-        let log: HTMLElement = document.getElementById('EventLog') as HTMLElement;
-        log.insertBefore(span, log.firstChild);
+        this.eventLogs.push(`${html}`);
     }
 }
 

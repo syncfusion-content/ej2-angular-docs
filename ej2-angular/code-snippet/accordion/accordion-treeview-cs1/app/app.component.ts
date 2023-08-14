@@ -1,22 +1,22 @@
 
 
 
-import { Component, ViewChild } from '@angular/core';
-import { AccordionComponent, AccordionItemModel } from '@syncfusion/ej2-angular-navigations';
+import { Component, ViewChild, ElementRef } from '@angular/core';
+import { AccordionComponent, AccordionItemModel, TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 import { Accordion, ExpandEventArgs, TreeView } from '@syncfusion/ej2-navigations';
 import { DocDB, DownloadDB, PicDB } from './datasource';
 
 @Component({
-    selector: 'app-container',
-    template: `
-    <ejs-accordion #element (expanding)="expanded($event)">
+  selector: 'app-container',
+  template: `
+    <ejs-accordion #element>
         <e-accordionitems>
           <e-accordionitem expanded='true'>
             <ng-template #header>
               <div>Documents</div>
             </ng-template>
             <ng-template #content>
-              <div id="treeDoc"></div>
+              <ejs-treeview id="treeDoc" [fields]='docField' [sortOrder]='sortOrder'></ejs-treeview>
             </ng-template>
           </e-accordionitem>
           <e-accordionitem>
@@ -24,7 +24,7 @@ import { DocDB, DownloadDB, PicDB } from './datasource';
               <div>Downloads</div>
             </ng-template>
             <ng-template #content>
-              <div id="treeDownload"></div>
+            <ejs-treeview id="treeDownload" [fields]='downField' [sortOrder]='sortOrder'></ejs-treeview>
             </ng-template>
           </e-accordionitem>
           <e-accordionitem>
@@ -32,7 +32,7 @@ import { DocDB, DownloadDB, PicDB } from './datasource';
               <div>Pictures</div>
             </ng-template>
             <ng-template #content>
-             <div id="treePic"></div>
+            <ejs-treeview id="treePic" [fields]='picField' [sortOrder]='sortOrder'></ejs-treeview>
             </ng-template>
           </e-accordionitem>
         </e-accordionitems>
@@ -41,36 +41,12 @@ import { DocDB, DownloadDB, PicDB } from './datasource';
 })
 
 export class AppComponent {
-    @ViewChild('element') acrdnInstance?: AccordionComponent;
-    public expanded(e: ExpandEventArgs) {
-  if (e.isExpanded && [].indexOf.call((this.acrdnInstance as AccordionComponent).items, e.item as never) === 0 && ((e.element as HTMLElement).querySelector('#treeDoc') as Element).childElementCount === 0) {
-    //Initialize TreeView component
-        let treeObj: TreeView = new TreeView({
-        fields: { dataSource: DocDB, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', imageUrl: 'image' },
-        sortOrder: 'Ascending'
-    });
-    //Render initialized TreeView component
-    treeObj.appendTo('#treeDoc');
-  }
-    if (e.isExpanded && [].indexOf.call((this.acrdnInstance as AccordionComponent).items, (e.item as never) ) === 1 && ((e.element as HTMLElement).querySelector('#treeDownload') as Element).childElementCount === 0) {
-        let treeObj: TreeView = new TreeView({
-        fields: { dataSource: DownloadDB, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', imageUrl: 'image' },
-        sortOrder: 'Ascending'
-    });
-    treeObj.appendTo('#treeDownload');
-  }
-      if (e.isExpanded && [].indexOf.call((this.acrdnInstance as AccordionComponent).items, e.item as never) === 2 && ((e.element as HTMLElement).querySelector('#treePic') as Element).childElementCount === 0) {
-        let treeObj: TreeView = new TreeView({
-        fields: { dataSource: PicDB, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', imageUrl: 'image' },
-        sortOrder: 'Ascending'
-    });
-    treeObj.appendTo('#treePic');
-  }
+  @ViewChild('element') acrdnInstance?: AccordionComponent;
+  @ViewChild('treeDocRef') treeDocRef!: ElementRef<HTMLDivElement>;
 
-    }
-    ngAfterViewInit() {
-    }
+  public docField: Object = { dataSource: DocDB, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', imageUrl: 'image' };
+  public downField: Object = { dataSource: DownloadDB, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', imageUrl: 'image' };
+  public picField: Object = { dataSource: PicDB, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', imageUrl: 'image' };
+
+  public sortOrder: string = 'Ascending';
 }
-
-
-

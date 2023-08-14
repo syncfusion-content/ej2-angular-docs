@@ -159,11 +159,11 @@ export class AppComponent {
             const cellDetails: CellClickEventArgs = this.scheduleObj!.getCellDetails(this.scheduleObj!.getSelectedElements());
             const addObj: { [key: string]: Object } = {};
             addObj['Id'] = this.scheduleObj!.getEventMaxID();
-            addObj['Subject'] = ((quickPopup.querySelector('#title') as EJ2Instance).ej2_instances[0] as TextBoxComponent).value;
+            addObj['Subject'] = (this.titleObj as TextBoxComponent).value;
             addObj['StartTime'] = new Date(+cellDetails.startTime);
             addObj['EndTime'] = new Date(+cellDetails.endTime);
-            addObj['Description'] = ((quickPopup.querySelector('#notes') as EJ2Instance).ej2_instances[0] as TextBoxComponent).value;
-            addObj['RoomId'] = ((quickPopup.querySelector('#eventType') as EJ2Instance).ej2_instances[0] as DropDownListComponent).value;
+            addObj['Description'] = (this.notesObj as TextBoxComponent).value;
+            addObj['RoomId'] = (this.eventTypeObj as DropDownListComponent).value;
             return addObj;
         };
         if ((e.target as HTMLElement).id === 'add') {

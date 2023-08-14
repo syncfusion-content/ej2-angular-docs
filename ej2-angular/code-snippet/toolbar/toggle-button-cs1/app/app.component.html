@@ -1,17 +1,37 @@
 <div class="control-section e-tbar-section">
     <div class="e-sample-resize-container">
         <!-- Render the Toolbar Component -->
-        <ejs-toolbar id="toolbar" class="toggle" (created)='create()'>
+        <ejs-toolbar id="toolbar" class="toggle">
             <e-items>
-                <e-item template='<button class="e-btn" id="media_btn"></button>'></e-item>
+                <e-item>
+                    <ng-template #template>
+                        <button ejs-button class="e-btn" cssClass="e-flat" iconCss="e-icons e-play-icon" isToggle="true" #playButton (click)="mediaBtnClick()"></button>
+                    </ng-template>
+                </e-item>
                 <e-item type='Separator'></e-item>
-                <e-item template='<button class="e-btn" id="zoom_btn"></button>'></e-item>
+                <e-item>
+                    <ng-template #template>
+                        <button ejs-button class="e-btn" cssClass="e-flat" iconCss="e-icons e-zoomin-icon" isToggle="true" #zoom (click)="zoomBtnClick()"></button>
+                    </ng-template>
+                </e-item>
                 <e-item type='Separator'></e-item>
-                <e-item template='<button class="e-btn" id="undo_btn"></button>'></e-item>
+                <e-item>
+                    <ng-template #template>
+                        <button ejs-button class="e-btn" cssClass="e-flat" iconCss="e-icons e-undo-icon" isToggle="true" #undo (click)="undoBtnClick()"></button>
+                    </ng-template>
+                </e-item>
                 <e-item type='Separator'></e-item>
-                <e-item template='<button class="e-btn" id="filter_btn"></button>'></e-item>
+                <e-item>
+                    <ng-template #template>
+                        <button ejs-button class="e-btn" cssClass="e-flat" iconCss="e-icons e-filter-icon" isToggle="true" #filter (click)="filterBtnClick()"></button>
+                    </ng-template>
+                </e-item>
                 <e-item type='Separator'></e-item>
-                <e-item template='<button class="e-btn" id="visible_btn"></button>'></e-item>
+                <e-item>
+                    <ng-template #template>
+                        <button ejs-button class="e-btn" cssClass="e-flat" iconCss="e-icons e-hide-icon" isToggle="true" #hide (click)="hideBtnClick()" [content]="content"></button>
+                    </ng-template>
+                </e-item>
             </e-items>
         </ejs-toolbar>
         <br/>

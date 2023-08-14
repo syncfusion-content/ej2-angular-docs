@@ -10,21 +10,20 @@ import { isNullOrUndefined } from "@syncfusion/ej2-base";
   template: `<div style="padding-bottom:15px;">
             <label id="rule-label">Rule Output</label>
             <div class="rule-output-container">
-                <div id="rule-output">Select Rule</div>
+                <div id="rule-output">{{selectRule}}</div>
             </div>
         </div>
-        <div id="RecurrenceEditor">
         <ejs-recurrenceeditor (change)="onChange($event)"></ejs-recurrenceeditor>
-        </div>`
+        `
 })
 export class AppComponent {
+  public selectRule: string = 'Select Rule';
   onChange(args: RecurrenceEditorChangeEventArgs): void {
     if (!isNullOrUndefined(args.value)) {
-        let outputElement: HTMLElement = <HTMLElement>document.querySelector('#rule-output');
         if(args.value == "") {
-            outputElement.innerText = 'Select Rule';
+            this.selectRule = 'Select Rule';
         } else {
-            outputElement.innerText = args.value;
+            this.selectRule = args.value;
         }
     }
   }

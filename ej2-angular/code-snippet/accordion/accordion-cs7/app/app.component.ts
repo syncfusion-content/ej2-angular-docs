@@ -58,12 +58,9 @@ export class AppComponent {
     ) as HTMLElement;
   }
   public beforeExpand(e: ExpandEventArgs): void {
-    let expandCount: number = (this.acrdnInstance as AccordionComponent).element.querySelectorAll(
-      '.e-selected'
-    ).length;
-    let ele: Element = (this.acrdnInstance as AccordionComponent).element.querySelectorAll(
-      '.e-selected'
-    )[0];
+    const childrenArray = Array.from((this.acrdnInstance as AccordionComponent).element.children);
+    const expandCount = childrenArray.filter(el => el.classList.contains('e-selected')).length;
+    let ele = childrenArray.filter(el => el.classList.contains('e-selected'))[0];
     if (ele) {
       ele = ele.firstChild as Element;
     }
