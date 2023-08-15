@@ -13,7 +13,7 @@ enableRipple(true);
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-tab id="element" class="e-background" (created)="tabCreated()" (selected)="tabSelected($event)">
+    template: `<ejs-tab id="element" class="e-background" (created)="tabCreated()" (selected)="tabSelected($event)" #element>
            <e-tabitems>
                     <e-tabitem [header]='headerText[0]'>
                         <ng-template #content>
@@ -49,11 +49,12 @@ enableRipple(true);
 
 export class AppComponent {
 
-  @ViewChild('element') tabInstance?: TabComponent;
+  @ViewChild('element') tabInstance!: TabComponent;
+
   public trgIndex?: number;
   public actLine?: HTMLElement;
 
-  public headerText: Object = [
+  public headerText: Object[] = [
     { text: 'Twitter' },
     { text: 'Facebook' },
     { text: 'WhatsApp' }
@@ -61,27 +62,30 @@ export class AppComponent {
 
   public tabCreated(): void {
     // Custom click event binding for each tab item to make collapse/expand
-    (document.getElementById('e-item-element_0') as HTMLElement).onclick = (e: Event) => {
+    const childrenArray = Array.from((this.tabInstance).element.children[0].children[0].children);
+    const toolbarItem: Element[] = childrenArray.filter(el => el.classList.contains('e-toolbar-item'));
+    (toolbarItem[0] as HTMLElement).onclick = (e: Event) => {
       this.updateCollapseClass(0);
     };
-    (document.getElementById('e-item-element_1') as HTMLElement).onclick = (e: Event) => {
+
+    (toolbarItem[1] as HTMLElement).onclick = (e: Event) => {
       this.updateCollapseClass(1);
     };
-    (document.getElementById('e-item-element_2') as HTMLElement).onclick = (e: Event) => {
+
+    (toolbarItem[2] as HTMLElement).onclick = (e: Event) => {
       this.updateCollapseClass(2);
     };
 
     // After tab created first tab content and active line are hidden by adding custom class to make it collapse state
     this.actLine = document.querySelector('.e-indicator') as HTMLElement;
-    (document.getElementById('e-content-element_0') as HTMLElement).classList.add('collapse');
+    (this.tabInstance.element.children[1].children[0].classList.add('collapse'));
     this.actLine.classList.add('collapse');
   }
 
   public tabSelected(e: SelectEventArgs): void {
     // If next tab item selected custom class is removed from content and active line element
-    let cnttrgs: any = document.querySelectorAll(
-      '#element.e-tab > .e-content > .e-item'
-    );
+    const childrenArray = Array.from(this.tabInstance.element.children[1].children);
+    const cnttrgs = childrenArray.filter(el => el.classList.contains('e-item'));
     for (let i: number = 0; i < cnttrgs.length; i++) {
       cnttrgs[i].classList.remove('collapse');
     }
@@ -93,9 +97,8 @@ export class AppComponent {
 
   public updateCollapseClass(index: number): void {
     // Custom classes are added/removed from tab content and active line element, when the same tab item again clicked
-    let cntEle: HTMLElement = document.getElementById(
-      'e-content-element_' + index
-    ) as HTMLElement;
+    const childrenArray = Array.from(this.tabInstance.element.children[1].children);
+    const cntEle: HTMLElement = childrenArray.filter(el => el.id === `e-content-element_${index}`)[0] as HTMLElement;
     if (!isNullOrUndefined(cntEle) && cntEle.classList.contains('collapse')) {
       cntEle.classList.remove('collapse');
       (this.actLine as HTMLElement).classList.remove('collapse');

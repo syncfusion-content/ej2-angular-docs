@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Templates in Angular Drop down tree component
 
-The Dropdown Tree provides support to customize each list item, header, and footer elements. It uses the Essential JS 2 [Template engine](../../common/template-engine) to compile and render the elements properly.
+The Dropdown Tree provides support to customize each list item, header, and footer elements. It uses the Essential JS 2 Template engine to compile and render the elements properly.
 
 ## Item template
 

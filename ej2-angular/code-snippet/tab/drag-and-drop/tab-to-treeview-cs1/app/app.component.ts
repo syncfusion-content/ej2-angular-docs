@@ -11,7 +11,7 @@ import { isNullOrUndefined } from "@syncfusion/ej2-base";
 
 @Component({
     selector: 'app-container',
-    templateUrl: 'app/app.component.html',
+    templateUrl: './app.component.html',
     encapsulation: ViewEncapsulation.None
 })
 
@@ -19,7 +19,7 @@ export class AppComponent {
     @ViewChild('tabObj') tabObj?: TabComponent;
     @ViewChild('treeObj') treeObj?: TreeViewComponent;
 
-    public headerText: Object = [{ 'text': 'India' }, { 'text': 'Australia' }, { 'text': 'USA' }, { 'text': 'France' }];
+    public headerText: Object[] = [{ 'text': 'India' }, { 'text': 'Australia' }, { 'text': 'USA' }, { 'text': 'France' }];
 
     public content0: string = 'India officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area, the second-most populous country with over 1.2 billion people, and the most populous democracy in the world. Bounded by the Indian Ocean on the south, the Arabian Sea on the south-west, and the Bay of Bengal on the south-east, it shares land borders with Pakistan to the west;China, Nepal, and Bhutan to the north-east; and Burma and Bangladesh to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; in addition, India Andaman and Nicobar Islands share a maritime border with Thailand and Indonesia.';
 
@@ -50,19 +50,22 @@ export class AppComponent {
     onTabCreate(): void {
         let tabElement: HTMLElement = document.getElementById('draggableTab') as HTMLElement;
         if (!isNullOrUndefined(tabElement)) {
-            ((tabElement as HTMLElement).querySelector('.e-tab-header') as Element).classList.add('e-droppable');
-            ((tabElement as HTMLElement).querySelector('.e-content') as Element).classList.add('tab-content');
+            (this.tabObj as TabComponent).element.children[0].classList.add('e-droppable');
+            (this.tabObj as TabComponent).element.children[1].classList.add('tab-content');
         }
     }
 
     tabDragStop(args: DragEventArgs): void {
-        let dragTabIndex: number = Array.prototype.indexOf.call((this.tabObj as TabComponent).element.querySelectorAll('.e-toolbar-item'), args.draggedItem);
+        const childrenArray = Array.from((this.tabObj as TabComponent).element.children[0].children[0].children);
+        const toolbarItem: Element[] = childrenArray.filter(el => el.classList.contains('e-toolbar-item'));
+        let dragTabIndex: number = toolbarItem.indexOf(args.draggedItem);
         let dragItem: TabItemModel = (this.tabObj as TabComponent).items[dragTabIndex];
         let dropNode: HTMLElement = <HTMLElement>args.target.closest('#draggableTreeview .e-list-item');
         if (dropNode != null && !args.target.closest('#draggableTab .e-toolbar-item')) {
             args.cancel = true;
-            let dropContainer: NodeListOf<Element> = (document.querySelector('.treeview-external-drop-tab') as Element).querySelectorAll('.e-list-item');
-            let dropIndex: number = Array.prototype.indexOf.call(dropContainer, dropNode);
+            let dropContainer = Array.from((this.treeObj as TreeViewComponent).element.children[0].children);
+            const treeViewItem: Element[] = dropContainer.filter(el => el.classList.contains('e-list-item'));
+            let dropIndex: number = Array.prototype.indexOf.call(treeViewItem, dropNode);
             let newNode: { [key: string]: Object }[] = [{ id: 'list' + this.i, text: (dragItem.header as HeaderModel).text as any }];
             (this.tabObj as TabComponent).removeTab(dragTabIndex);
             this.treeObj?.addNodes(newNode, 'Treeview' , dropIndex);

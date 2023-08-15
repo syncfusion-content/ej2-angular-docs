@@ -11,7 +11,7 @@ import { isNullOrUndefined } from "@syncfusion/ej2-base";
 
 @Component({
     selector: 'app-container',
-    templateUrl: 'app/app.component.html',
+    templateUrl: './app.component.html',
     encapsulation: ViewEncapsulation.None
 })
 
@@ -19,7 +19,7 @@ export class AppComponent {
     @ViewChild('tabObj') tabObj?: TabComponent;
     @ViewChild('treeObj') treeObj?: TreeViewComponent;
 
-    public headerText: Object = [{ 'text': 'India' }, { 'text': 'Australia' }, { 'text': 'USA' }, { 'text': 'France' }];
+    public headerText: Object[] = [{ 'text': 'India' }, { 'text': 'Australia' }, { 'text': 'USA' }, { 'text': 'France' }];
 
     public content0: string = 'India officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area, the second-most populous country with over 1.2 billion people, and the most populous democracy in the world. Bounded by the Indian Ocean on the south, the Arabian Sea on the south-west, and the Bay of Bengal on the south-east, it shares land borders with Pakistan to the west;China, Nepal, and Bhutan to the north-east; and Burma and Bangladesh to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; in addition, India Andaman and Nicobar Islands share a maritime border with Thailand and Indonesia.';
 
@@ -48,8 +48,9 @@ export class AppComponent {
     onNodeDragStop(args: DragAndDropEventArgs): void {
         let dropElement: HTMLElement = <HTMLElement>args.target.closest('#draggableTab .e-toolbar-item');
         if (dropElement != null) {
-            let tabElement: HTMLElement = document.querySelector('#draggableTab') as HTMLElement;
-            let dropItemIndex: number = [].slice.call(tabElement.querySelectorAll('.e-toolbar-item')).indexOf(dropElement as never);
+            const childrenArray = Array.from((this.tabObj as TabComponent).element.children[0].children[0].children);
+            const toolbarItem: Element[] = childrenArray.filter(el => el.classList.contains('e-toolbar-item'));
+            let dropItemIndex: number = toolbarItem.indexOf(dropElement as never);
             let newTabItem: TabItemModel[] = [{
                 header: { 'text': args.draggedNodeData['text'].toString() },
                 content: args.draggedNodeData['text'].toString() + ' Content'

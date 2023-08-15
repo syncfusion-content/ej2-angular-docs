@@ -9,12 +9,12 @@
                     <form id="formId">
                         <div class="form-group">
                             <div class="e-float-input">
-                                <input type="text" id="email" name="Email" required="" />
+                                <input type="text" id="email" name="Email" required="" #emailRef/>
                                 <span class="e-float-line"></span>
                                 <label class="e-float-text" for="email">Email</label>
                             </div>
                             <div class="e-float-input">
-                                <input id="password" type="password" name="Password" required="" />
+                                <input id="password" type="password" name="Password" required="" #passwordRef/>
                                 <span class="e-float-line"></span>
                                 <label class="e-float-text" for="password">Password</label>
                             </div>
@@ -22,7 +22,7 @@
                     </form>
                     <div style="text-align: center">
                         <button class='e-btn' id="Continue_Btn" (click)='btnClick($event)'>Continue</button>
-                        <div id="err1">* Please fill all fields</div>
+                        <div id="err1" #error1>* Please fill all fields</div>
                     </div>
                 </div>
             </ng-template>
@@ -33,14 +33,14 @@
                     <form id="formId_Address">
                         <div class="form-group">
                             <div class="e-float-input">
-                                <input type="text" id="name" name="Name" required="" />
+                                <input type="text" id="name" name="Name" required="" #nameRef/>
                                 <span class="e-float-line"></span>
                                 <label class="e-float-text" for="name">Name</label>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="e-float-input">
-                                <input type="text" id="address" name="Address" required="" />
+                                <input type="text" id="address" name="Address" required="" #addressRef/>
                                 <span class="e-float-line"></span>
                                 <label class="e-float-text" for="address">Address</label>
                             </div>
@@ -52,7 +52,7 @@
                     </form>
                     <div style="text-align: center">
                         <button class='e-btn' id="Continue_BtnAdr" (click)='btnClick($event)'>Continue</button>
-                        <div id="err2">* Please fill all fields</div>
+                        <div id="err2" #error2>* Please fill all fields</div>
                     </div>
                 </div>
             </ng-template>
@@ -69,7 +69,7 @@
                     <div class="col-xs-6 col-sm-6 col-lg-6 col-md-6">
                         <div class="form-group">
                             <div class="e-float-input">
-                                <input type="text" id="cardHolder" name="cardHolder" required="" />
+                                <input type="text" id="cardHolder" name="cardHolder" required="" #cardHolderRef/>
                                 <span class="e-float-line"></span>
                                 <label class="e-float-text" for="cardHolder">CardHolder Name</label>
                             </div>
@@ -88,7 +88,7 @@
                     <div style="text-align: center">
                         <button class='e-btn' id="Back_Btn" (click)='btnClick($event)'>Back</button>
                         <button class='e-btn' id="Save_Btn" (click)='btnClick($event)'>Save</button>
-                        <div id="err3">* Please fill all fields</div>
+                        <div id="err3" #error1>* Please fill all fields</div>
                     </div>
                 </div>
             </ng-template>

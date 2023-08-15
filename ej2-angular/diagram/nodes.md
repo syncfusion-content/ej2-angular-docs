@@ -20,6 +20,10 @@ Nodes are graphical objects used to visually represent the geometrical informati
 
 A node can be created and added to the diagram, either programmatically or interactively. Nodes are stacked on the diagram area from bottom to top in the order they are added.
 
+To create a node easily and to know about different types of node shapes in a Angular Diagram, refer to the below video link.
+
+{% youtube "youtube:https://www.youtube.com/watch?v=OnI_SMaYLOk" %}
+
 ## Add node through nodes collection
 
 To create a node, define the [`node`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective) object and add that to nodes collection of the diagram model. The following code example illustrates how to add a node to the diagram.
