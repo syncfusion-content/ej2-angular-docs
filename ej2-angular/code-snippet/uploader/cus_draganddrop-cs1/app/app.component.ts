@@ -18,7 +18,7 @@ export class AppComponent {
       removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove' };
     public ele?: HTMLElement;
     ngOnInit() {
-        this.ele = document.getElementById('droparea') as HTMLElement;
+        this.ele = document.getElementById('dropArea') as HTMLElement;
         (document.getElementById('browse') as HTMLElement).onclick = function() {
         (document.getElementsByClassName('e-file-select-wrap')[0].querySelector('button') as HTMLButtonElement).click();
     return false;
