@@ -11,7 +11,9 @@
                     <tr>
                         <td>
                             <div class="eventarea" style="height: 245px;overflow: auto">
-                                <span class="EventLog" id="EventLog" style="word-break: normal;"></span>
+                                <span class="EventLog" id="EventLog" style="word-break: normal;">
+                                    <span *ngFor="let log of eventLogs">Events present on scheduler <b>{{ log }}</b> <hr></span>
+                                </span>
                             </div>
                         </td>
                     </tr>

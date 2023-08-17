@@ -1,6 +1,6 @@
 
 
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { eventsData } from './datasource';
 import {
     DayService, TimelineViewsService, WorkWeekService, MonthService, EventClickArgs, EventSettingsModel, ScheduleComponent
@@ -15,19 +15,19 @@ import {
 export class AppComponent {
     @ViewChild('scheduleObj')
     public scheduleObj?: ScheduleComponent;
+    @ViewChild('eventLog') eventLog!: ElementRef<HTMLSpanElement>;
     public selectedDate: Date = new Date(2018, 1, 15);
     public eventSettings: EventSettingsModel = {
         dataSource: eventsData
     };
+    public  eventLogs: string[] = [];
     onClick() {
-        (document.getElementById('EventLog') as any).innerHTML = '';
+        this.eventLogs = [];
     }
     onEventClick(args: EventClickArgs): void {
         let event: Object = (this.scheduleObj as any).getEventDetails(args.element);
-        let span: HTMLElement = document.createElement('span');
-        span.innerHTML = (event as any).Subject + '<hr>';
-        let log: HTMLElement = document.getElementById('EventLog') as HTMLElement;
-        log.insertBefore(span, log.firstChild);
+        let innerHtml = (event as any).Subject;
+        this.eventLogs.push(`${innerHtml}`);
     }
 }
 

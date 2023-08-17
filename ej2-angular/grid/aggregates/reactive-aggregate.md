@@ -10,11 +10,13 @@ domainurl: ##DomainURL##
 
 # Reactive aggregate in Angular Grid component
 
+The Syncfusion Angular Grid component provides support for reactive aggregates, which allow you to update the aggregate values dynamically as the data changes. Reactive aggregates automatically recalculate their values when there are changes in the underlying data, providing real-time updates to the aggregate values in the grid.
+
 ## Auto update aggregate value in batch editing
 
-When using batch editing, the aggregate values will be refreshed on every cell save. The footer, group footer, and group caption aggregate values will be refreshed.
+When the grid is in batch editing mode, the aggregate values in the footer, group footer, and group caption are automatically refreshed every time a cell is saved. This ensures that the aggregate values accurately reflect the edited data.
 
-> Adding a new record to the grouped grid will not refresh the aggregate values.
+Here's an example code snippet demonstrating how to auto update aggregate value in batch editing:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,6 +31,8 @@ When using batch editing, the aggregate values will be refreshed on every cell s
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/reactive-aggregates-batchedit-cs1" %}
+
+> Adding a new record to the grouped grid will not refresh the aggregate values.
 
 ## Refresh aggregate values in inline editing
 

@@ -2,28 +2,31 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { data } from './datasource';
-import { GroupService, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GridComponent , GroupSettingsModel} from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<button ej-button id='enable' cssClass='e-flat' (click)='enable()'>Enable</button>
-                <button ej-button id='disable' cssClass='e-flat' (click)='disable()'>Disable</button>
-                <ejs-grid id='Grid' #grid [dataSource]='data' height='200px' [allowGrouping]='true'
-                [groupSettings]='groupOptions' [toolbar]='toolbar' (toolbarClick)='clickHandler($event)'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`,
-    providers: [GroupService]
+    template: `
+    <div>
+    <label style="padding: 10px 10px">
+    Enable or disable toolbar items
+    </label>
+    <ejs-switch id="switch" (change)="onSwitchChange($event)"></ejs-switch>
+    </div>
+    <ejs-grid id='Grid' #grid [dataSource]='data' height='200px' [allowGrouping]='true' [groupSettings]='groupOptions' [toolbar]='toolbar' (toolbarClick)='clickHandler($event)'>
+        <e-columns>
+            <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+            <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
+            <e-column field='ShipCity' headerText='Ship City' width=100></e-column>
+            <e-column field='ShipName' headerText='Ship Name' width=120></e-column>
+        </e-columns>
+    </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 
     public data?: object[];
     public toolbar?: string[];
-    public groupOptions?: object;
+    public groupOptions?: GroupSettingsModel;
     public toolbarObj?: any;
 
     @ViewChild('grid')
@@ -44,12 +47,12 @@ export class AppComponent implements OnInit {
             (this.grid as any).groupModule.expandAll();
         }
     }
-    enable() {
-        (this.grid as any).toolbarModule.enableItems(['Grid_Collapse', 'Grid_Expand'], true); // Enable toolbar items.
-    }
-
-    disable() {
-        (this.grid as any).toolbarModule.enableItems(['Grid_Collapse', 'Grid_Expand'], false); // Disable toolbar items.
+    onSwitchChange(args: any) {
+        if (args.checked) {
+            (this.grid as any).toolbarModule.enableItems(['Grid_Collapse', 'Grid_Expand'], false); // Disable toolbar items.
+        } else {
+            (this.grid as any).toolbarModule.enableItems(['Grid_Collapse', 'Grid_Expand'], true); // Enable toolbar items.
+        }
     }
 }
 

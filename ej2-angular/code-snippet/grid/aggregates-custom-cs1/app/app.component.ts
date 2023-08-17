@@ -11,12 +11,11 @@ import { ReturnType } from '@syncfusion/ej2-grids';
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    public ShipCountry = 'ShipCountry';
     ngOnInit(): void {
         this.data = data;
     }
-    public customAggregateFn = (sdata: ReturnType) => {
-        sdata.result.filter((item: object) => (item as any)[this.ShipCountry] === 'Brazil').length;
+    public customAggregateFn = (customData: ReturnType) => {
+        return customData.result.filter((item: object) => (item as any)['ShipCountry'] === 'Brazil').length;
     }
 }
 

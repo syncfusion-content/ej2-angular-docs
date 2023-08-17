@@ -13,6 +13,9 @@ SEE LICENSE IN license
 @syncfusion/ej2-angular-grids
 SEE LICENSE IN license
 
+@syncfusion/ej2-angular-popups
+SEE LICENSE IN license
+
 @syncfusion/ej2-base
 SEE LICENSE IN license
 

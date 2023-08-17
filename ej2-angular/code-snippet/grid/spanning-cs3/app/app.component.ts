@@ -31,11 +31,11 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public height: string | number;
-    public width: string | number;
-    public gridLines: GridLine;
-    public textWrap: boolean;
+    public data: object[]=columnSpanData;
+    public height: string | number="auto";
+    public width: string | number="auto";
+    public gridLines: GridLine="Both";
+    public textWrap: boolean=true;
     public queryCellInfoEvent: EmitType<QueryCellInfoEventArgs> = (args: QueryCellInfoEventArgs) => {
         let data: ColumnSpanDataType = args.data as ColumnSpanDataType;
         switch (data.EmployeeID) {
@@ -129,10 +129,5 @@ export class AppComponent implements OnInit {
         }
     };
     ngOnInit(): void {
-        this.data = columnSpanData;
-        this.gridLines = 'Both';
-        this.height = 'auto';
-        this.width = 'auto';
-        this.textWrap = true;
     }
 }

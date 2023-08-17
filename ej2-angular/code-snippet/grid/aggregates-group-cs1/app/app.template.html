@@ -12,9 +12,6 @@
                 <e-column field="Freight" type="sum">
                     <ng-template #groupFooterTemplate let-data>Sum: {{data.sum}}</ng-template>
                 </e-column>
-                <e-column field="Freight" type="max">
-                    <ng-template #groupCaptionTemplate let-data>Max: {{data.max}}</ng-template>
-                </e-column>
             </e-columns>
         </e-aggregate>
     </e-aggregates>

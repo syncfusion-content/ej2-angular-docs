@@ -32,7 +32,7 @@ Here's an example of how to enable drag and drop within the Grid:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/dragndrop-cs3" %}
+{% previewsample "page.domainurl/samples/grid/dragndrop-cs3" %}
 
 ## Drag and drop to grid 
 
@@ -54,7 +54,7 @@ Here's an example code snippet that demonstrates how to enable Row drag and drop
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/dragndrop-cs1" %}
+{% previewsample "page.domainurl/samples/grid/dragndrop-cs1" %}
 
 > * The row drag and drop feature is not supported in virtual scrolling and frozen rows and columns mode.
 > * In order to use row drag and drop, you need to inject the **RowDDService** in the provider section of **AppModule**.
@@ -77,7 +77,7 @@ In the below example, the selected grid row is dragged and dropped in to the Tre
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/dragndrop-cs5" %}
+{% previewsample "page.domainurl/samples/grid/dragndrop-cs5" %}
 
 > * The `rowDrop` event is fired when a row is dropped onto a custom component, regardless of whether the drop is successful or not. You can use the `args.cancel` property to prevent the default action.
 
@@ -101,7 +101,7 @@ Here's an example of how to hide the drag and drop icon in the Syncfusion Grid:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/dragndrop-cs2" %}
+{% previewsample "page.domainurl/samples/grid/dragndrop-cs2" %}
 
 > * The selection feature must be enabled in the Grid to allow users to select rows before performing the drag and drop operation.
 > * Multiple rows can be selected by clicking and dragging inside the grid. For multiple row selection, the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) property must be set to **Multiple**.
@@ -130,7 +130,7 @@ The Grid component provides a set of events that are triggered during drag and d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/code-snippet/grid/dragndrop-cs6" %}
+{% previewsample "page.domainurl/samples/grid/dragndrop-cs6" %}
 
 ## Limitations
 

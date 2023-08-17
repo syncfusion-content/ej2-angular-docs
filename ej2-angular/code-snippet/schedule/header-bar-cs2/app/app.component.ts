@@ -1,10 +1,10 @@
 
 
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { createElement, compile } from '@syncfusion/ej2-base';
 import { ItemModel } from '@syncfusion/ej2-navigations';
 import { Popup } from '@syncfusion/ej2-popups';
-import { EventSettingsModel, ActionEventArgs, ToolbarActionArgs, MonthService } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, ActionEventArgs, ToolbarActionArgs, MonthService, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
 import { scheduleData } from './datasource';
 
 @Component({
@@ -13,11 +13,12 @@ import { scheduleData } from './datasource';
     // specifies the template string for the Schedule component
     template: `<ejs-schedule id='schedule' width='100%' height='550px' [selectedDate]='selectedDate' [views]='views' [eventSettings]='eventSettings' [showHeaderBar]='showHeaderBar'
     [currentView]='currentView' (actionBegin)='onActionBegin($event)'
-    (actionComplete)='onActionComplete($event)'></ejs-schedule>`
+    (actionComplete)='onActionComplete($event)' #schedule></ejs-schedule>`
 })
 
 
 export class AppComponent {
+    @ViewChild('schedule') public scheduleObj?: ScheduleComponent
     public selectedDate: Date = new Date(2018, 1, 15);
     public views: Array<string> = ['Month'];
     public currentView: string = 'Month';
@@ -29,7 +30,7 @@ export class AppComponent {
     });
     public profilePopup?: Popup;
     showHeaderBar: any;
-    onActionBegin(args: ActionEventArgs & ToolbarActionArgs):void {
+    onActionBegin(args: ActionEventArgs & ToolbarActionArgs): void {
         if (args.requestType === 'toolbarItemRendering') {
             let userIconItem: ItemModel = {
                 align: 'Right', prefixIcon: 'user-icon', text: 'Nancy', cssClass: 'e-schedule-user-icon'
@@ -37,17 +38,17 @@ export class AppComponent {
             (args.items as ItemModel[]).push(userIconItem);
         }
     }
-    onActionComplete(args: ActionEventArgs):void {
-        let scheduleElement: HTMLElement = document.getElementById('schedule') as HTMLElement;
+    onActionComplete(args: ActionEventArgs): void {
+        let scheduleElement: HTMLElement = (this.scheduleObj as ScheduleComponent).element;
         if (args.requestType === 'toolBarItemRendered') {
             let userIconEle: HTMLElement = scheduleElement.querySelector('.e-schedule-user-icon') as HTMLElement;
             userIconEle.onclick = () => {
-                (this.profilePopup as Popup ).relateTo = userIconEle;
-                (this.profilePopup as Popup ).dataBind();
-                if ((this.profilePopup as Popup ).element.classList.contains('e-popup-close')) {
-                    (this.profilePopup as Popup ).show();
+                (this.profilePopup as Popup).relateTo = userIconEle;
+                (this.profilePopup as Popup).dataBind();
+                if ((this.profilePopup as Popup).element.classList.contains('e-popup-close')) {
+                    (this.profilePopup as Popup).show();
                 } else {
-                    (this.profilePopup as Popup ).hide();
+                    (this.profilePopup as Popup).hide();
                 }
             };
         }
@@ -55,7 +56,7 @@ export class AppComponent {
         let userContentEle: HTMLElement = createElement('div', {
             className: 'e-profile-wrapper'
         });
-        (scheduleElement.parentElement as HTMLElement ).appendChild(userContentEle);
+        (scheduleElement.parentElement as HTMLElement).appendChild(userContentEle);
 
         let userIconEle: HTMLElement = scheduleElement.querySelector('.e-schedule-user-icon') as HTMLElement;
         let getDOMString: (data: object) => NodeList = compile('<div class="profile-container"><div class="profile-image">' +
