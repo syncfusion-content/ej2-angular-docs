@@ -1,5 +1,3 @@
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { productData } from './datasource';
 import { EditSettingsModel, ToolbarItems, IEditCell, GridComponent
@@ -9,18 +7,23 @@ import { NumericTextBox } from '@syncfusion/ej2-inputs';
 @Component({
   selector: 'app-root',
   template: `
-    <ejs-grid #grid id="grid" [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" height="273px" (cellEdit)="cellEdit($event)">
-      <e-columns>
-        <e-column field="ProductID" headerText="Product ID" textAlign="Right" isPrimaryKey="true" width="100"></e-column>
-        <e-column field="ProductName" headerText="Product Name" width="120"></e-column>
-        <e-column field="UnitPrice" headerText="Unit Price" editType="numericedit" [edit]="priceParams" width="150" format="C2" textAlign="Right"></e-column>
-        <e-column field="UnitsInStock" headerText="Units In Stock" editType="numericedit" [edit]="stockParams" width="150" textAlign="Right"></e-column>
-        <e-column field="TotalCost" headerText="Total Cost" width="150" format="C2" textAlign="Right"></e-column>
-      </e-columns>
-    </ejs-grid>
-  `
+      <ejs-grid #grid id="grid" [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" 
+      height="273px" (cellEdit)="cellEdit($event)">
+        <e-columns>
+          <e-column field="ProductID" headerText="Product ID" textAlign="Right" isPrimaryKey="true" 
+          width="100"></e-column>
+          <e-column field="ProductName" headerText="Product Name" width="120"></e-column>
+          <e-column field="UnitPrice" headerText="Unit Price" [edit]="priceParams" width="150" 
+          format="C2" textAlign="Right"></e-column>
+          <e-column field="UnitsInStock" headerText="Units In Stock" [edit]="stockParams" 
+          width="150" textAlign="Right"></e-column>
+          <e-column field="TotalCost" headerText="Total Cost" width="150" format="C2" 
+          textAlign="Right"></e-column>
+        </e-columns>
+      </ejs-grid> `
 })
 export class AppComponent implements OnInit {
+
   @ViewChild('grid')
   public grid?: GridComponent;
   public data?: Object[];
@@ -28,10 +31,8 @@ export class AppComponent implements OnInit {
   public toolbar?: ToolbarItems[];
   public priceParams?: IEditCell;
   public stockParams?: IEditCell;
-
   public priceElem?: HTMLElement;
   public priceObj?: NumericTextBox;
-
   public stockElem?: HTMLElement;
   public stockObj?: NumericTextBox;
 

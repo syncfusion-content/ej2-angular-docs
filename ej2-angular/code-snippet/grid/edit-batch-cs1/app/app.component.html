@@ -1,0 +1,20 @@
+<div class="control-section" style="padding:70px">
+    <div class="col-lg-9">
+      <ejs-grid #normalgrid id="Normalgrid" [dataSource]="data" allowPaging="true" [pageSettings]="pageSettings"
+      [editSettings]="editSettings" [toolbar]="toolbar" (cellSaved)="save($event)">
+        <e-columns>
+          <e-column field="OrderID" headerText="Order ID" width="140" textAlign="Right" isPrimaryKey="true"
+          [validationRules]="orderidrules"></e-column>
+          <e-column field="CustomerID" headerText="Customer ID" width="140"
+          [validationRules]="customeridrules"></e-column>
+          <e-column field="Freight" headerText="Freight" width="140" format="C2" textAlign="Right"
+          editType="numericedit" [validationRules]="freightrules"></e-column>
+          <e-column field="OrderDate" headerText="Order Date" width="120" editType="datetimepickeredit"
+          [format]="formatoptions" textAlign="Right"></e-column>
+          <e-column field='ShipCountry' headerText='Ship Country' width='150' editType='dropdownedit' 
+          [edit]='editparams'></e-column>
+        </e-columns>
+      </ejs-grid>
+    </div>
+  </div>
+  

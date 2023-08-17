@@ -191,6 +191,36 @@ export let  productData: Object[] = [
         UnitPrice: 21.35,
         UnitsInStock: 0,
         TotalCost: 0
+    },
+    {
+        ProductID: 5,
+        ProductName: "Chef Anton's Gumbo Mix",
+        UnitPrice: 21.35,
+        UnitsInStock: 0,
+        TotalCost: 0
+    },
+    {
+        ProductID: 6,
+        ProductName: "Chef Anton's Gumbo",
+        UnitPrice: 23.35,
+        UnitsInStock: 0,
+        TotalCost: 0
+    }
+    ,
+    {
+        ProductID: 7,
+        ProductName: "Chef Anton's Mix",
+        UnitPrice: 25.35,
+        UnitsInStock: 0,
+        TotalCost: 0
+    }
+    ,
+    {
+        ProductID: 8,
+        ProductName: "Chef Gumbo Mix",
+        UnitPrice: 27.39,
+        UnitsInStock: 0,
+        TotalCost: 0
     }
     ];
 

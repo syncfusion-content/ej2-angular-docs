@@ -1,22 +1,23 @@
-<ejs-grid [dataSource]='data' height='210px'>
+
+<ejs-grid [dataSource]="data" height="210px">
     <e-columns>
-        <e-column field='OrderID' headerText='Order ID' textAlign='right' width=120></e-column>
-        <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-        <e-column field='Freight' width=150></e-column>
-        <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+        <e-column field="OrderID" headerText="Order ID" textAlign="right" width="120"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="150"></e-column>
+        <e-column field="Freight" width="150"></e-column>
+        <e-column field="ShipName" headerText="Ship Name" width="150"></e-column>
     </e-columns>
     <e-aggregates>
         <e-aggregate>
             <e-columns>
-                <e-column field="Freight" type="sum">
-                    <ng-template #footerTemplate let-data>Sum: {{data.sum}}</ng-template>
+                <e-column field="Freight" type="sum" format="N0">
+                    <ng-template #footerTemplate let-data>Sum: {{ data.sum }}</ng-template>
                 </e-column>
             </e-columns>
         </e-aggregate>
         <e-aggregate>
             <e-columns>
-                <e-column field="Freight" type="max">
-                    <ng-template #footerTemplate let-data>Max: {{data.max}}</ng-template>
+                <e-column field="Freight" type="max" format="N0">
+                    <ng-template #footerTemplate let-data>Max: {{ data.max }}</ng-template>
                 </e-column>
             </e-columns>
         </e-aggregate>

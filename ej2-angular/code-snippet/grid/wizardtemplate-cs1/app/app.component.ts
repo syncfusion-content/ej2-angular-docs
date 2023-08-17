@@ -9,7 +9,7 @@ import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } f
 
 @Component({
     selector: 'app-root',
-    templateUrl: `wizardtemplate.html`
+    templateUrl: `./wizardtemplate.html`
 })
 export class AppComponent implements OnInit {
 
@@ -17,9 +17,8 @@ export class AppComponent implements OnInit {
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItems[];
     public shipCountryDistinctData?: object;
-    public next = 'Next';
+    public shipCityDistinctData: object[] = [];
     public currentTab = 0;
-    public hidden = true;
     @ViewChild('grid') grid?: GridComponent;
     @ViewChild('orderForm') orderForm?: FormGroup;
 
@@ -28,47 +27,47 @@ export class AppComponent implements OnInit {
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
         this.toolbar = ['Add', 'Edit', 'Delete'];
         this.shipCountryDistinctData = DataUtil.distinct(data, 'ShipCountry', true);
+        this.shipCityDistinctData = DataUtil.distinct(data, 'ShipCity', true);
+
     }
 
     actionComplete(args: DialogEditEventArgs) {
         if (((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add')) {
             (args as any).form.ej2_instances[0].rules = {}; // Disable deafault valdation.
+            ((args.dialog as any).element as any).classList.add('hide-default-buttons');
             // Set initail Focus
             if ((args as any).requestType === 'beginEdit') {
                 (args?.form?.elements.namedItem('CustomerID') as HTMLInputElement).focus();
             }
             this.currentTab = 0;
-            this.hidden = true;
-            this.next = 'Next';
         }
     }
-
+    saveBtn() {
+      if (this.orderForm?.valid) {
+        (this.grid as any).endEdit();
+      }
+    }
+  
     nextBtn() {
-        if ((this as any).orderForm.valid) {
-            if (this.next !== 'SUBMIT') {
-                this.currentTab++;
-                this.nextpre(this.currentTab);
-            } else {
-                (this.grid as any).endEdit();
-            }
-        }
-    }
-
+      if (this.orderForm?.valid) {
+          this.currentTab++;
+          this.removeFocusFromButton()
+      } 
+      }
+    
+  
     previousBtn() {
-        if ((this as any).orderForm.valid) {
-            this.currentTab--;
-            this.nextpre(this.currentTab);
-        }
+      if (this.orderForm?.valid) {
+        this.currentTab--;
+       this. removeFocusFromButton()
+      }
     }
-
-    nextpre(current: any) {
-        if (current) {
-            this.hidden = false;
-            this.next = 'SUBMIT';
-        } else {
-            this.hidden = true;
-            this.next = 'NEXT';
-        }
+  
+    removeFocusFromButton() {
+      const nextButton = document.getElementById('btn') as HTMLButtonElement;
+      if (nextButton) {
+        nextButton.blur();
+      }
     }
 }
 

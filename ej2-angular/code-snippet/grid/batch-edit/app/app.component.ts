@@ -1,5 +1,3 @@
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { EditSettingsModel, ToolbarItems, GridComponent } from '@syncfusion/ej2-angular-grids';
@@ -7,15 +5,15 @@ import { isNullOrUndefined } from '@syncfusion/ej2-base';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid id="grid" [dataSource]='data' height='272px' [allowPaging]="true" [enableHover]="false" [editSettings]='editSettings' [toolbar]='toolbar'
+    template: `<ejs-grid style="padding:70px" #grid id="grid" [dataSource]='data' height='272px' [allowPaging]="true" [enableHover]="false" [editSettings]='editSettings' [toolbar]='toolbar'
     (created)="created($event)" (load)="load($event)">
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right'
-                     isPrimaryKey='true' visible='false' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' format='C2' textAlign='Right' width=150></e-column>
-                    <e-column field='OrderDate' headerText='Order Date' editType='datepickeredit' format='yMd' width=150></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+                     isPrimaryKey='true' [validationRules]='orderIDrules' visible='false' width=120></e-column>
+                    <e-column field='CustomerID' [validationRules]='customerIDrules' headerText='Customer ID' width=120></e-column>
+                    <e-column field='Freight' headerText='Freight' [validationRules]='freightrules' format='C2' textAlign='Right' width=150></e-column>
+                    <e-column field='OrderDate' headerText='Order Date' editType='datepickeredit' [validationRules]='orderDaterules' format='yMd' width=150></e-column>
+                    <e-column field='ShipCountry' [validationRules]='shipCountryrules' headerText='Ship Country' width=150></e-column>
                 </e-columns>
                 </ejs-grid>`
 })
@@ -26,11 +24,21 @@ export class AppComponent implements OnInit {
     public toolbar?: ToolbarItems[];
     @ViewChild('grid')
     public grid?: GridComponent;
-
+    public orderIDrules?: Object;
+    public customerIDrules?: Object;
+    public freightrules?: Object;
+    public shipCountryrules?: Object;
+    public orderDaterules?: Object;
+    
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' },
-            this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+        this.toolbar = ['Add', 'Delete', 'Update', 'Cancel'];
+        this.orderIDrules = { required: true, number: true };
+        this.customerIDrules = { required: true };
+        this.freightrules =  { min:1,max:1000 };
+        this.shipCountryrules = { required: true };
+        this.orderDaterules = { required: true };
     }
     created = (args: any) => {
         (this.grid as any).getContentTable().addEventListener('click', (args: any) => {

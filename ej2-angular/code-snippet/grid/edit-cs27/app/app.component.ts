@@ -1,54 +1,62 @@
-
-
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<button (click)="btnClick($event)">Grid is Addable</button>
-                <ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)="actionBegin($event)" height='240px'>
-                  <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='Role' headerText='Role' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                     editType= 'numericedit' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
-                  </e-columns>
-                </ejs-grid>`
+    template: `<button ejs-button  id="small" (click)="btnClick($event)">Grid is Addable
+               </button>
+               <div class="control-section"  style="padding-top:20px">
+                    <ejs-grid [dataSource]='data' [editSettings]='editSettings' 
+                    [toolbar]='toolbar' (actionBegin)="actionBegin($event)" height='240px'>
+                        <e-columns>
+                            <e-column field='EmployeeID' headerText='Employee ID' textAlign= 'Right'  
+                            isPrimaryKey='true'  [validationRules]='orderIDRules' width=100>
+                            </e-column>
+                            <e-column field='EmployeeName' headerText='Employee Name'
+                            [validationRules]='customerNameRules' width=120 format= 'C2'></e-column>
+                            <e-column field='Role' headerText='Role' 
+                            [validationRules]='roleIDRules' width=120></e-column>
+                            <e-column field='EmployeeCountry' headerText='Employee Country' 
+                            editType= 'dropdownedit' width=150></e-column>
+                        </e-columns>
+                    </ejs-grid>
+                </div>`
 })
 export class AppComponent implements OnInit {
 
     public data?: object[];
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItems[];
-    public isAddable?: boolean = true;
+    public isAddable: boolean = true;
+    public orderIDRules?: object;
+    public roleIDRules?: object;
+    public customerNameRules?: object;
 
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+        this.orderIDRules = { required: true };
+        this.roleIDRules = { required: true, minLength: 8 };
+        this.customerNameRules={required: true }
     }
 
-    actionBegin(args: any) {
-        if ((args as any).requestType == 'beginEdit') {
-            if ((args as any).rowData['Role'].toLowerCase() == 'employee') {
-                (args as any).cancel = true;
-            }
+    actionBegin(args:any) {
+        if (args.requestType == 'beginEdit' && args.rowData['Role'] == 'Admin') {
+           args.cancel = true;  
         }
-        if ((args as any).requestType == 'delete') {
-            if ((args as any).data[0]['Role'].toLowerCase() == 'employee') {
-                (args as any).cancel = true;
-            }
+        else if (args.requestType == 'delete' && args.data[0]['Role'] == 'Admin') {
+                args.cancel = true;
         }
-        if ((args as any).requestType == 'add') {
+        else if (args.requestType == 'add') {
             if (!this.isAddable) {
-                (args as any).cancel = true;
+                args.cancel = true;
             }
         }
     }
-    btnClick(args: any) {
-        (args as any).target.innerText == 'Grid is Addable' ? ((args as any).target.innerText = 'Grid is Not Addable') : ((args as any).target.innerText = 'Grid is Addable');
+    btnClick(args:any) {
+        args.target.innerText == 'GRID IS ADDABLE' ? (args.target.innerText = 'Grid is Not Addable') : (args.target.innerText = 'Grid is Addable');
         this.isAddable = !this.isAddable;
     }
 }
