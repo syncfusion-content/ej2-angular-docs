@@ -22,20 +22,20 @@
 .e-image {
 	background-size: 33px;
 	width: 33px;
-    height: 30px;
+    height: 45px;
 	margin: 0 auto;
 }
 
 .e-image.e-andrew { /* csslint allow: adjoining-classes */
-	background-image: url(./1.png);
+    background-image: url("https://ej2.syncfusion.com/demos/src/images/employees/3.png");
 }
 
 .e-image.e-margaret { /* csslint allow: adjoining-classes */
-	background-image: url(./2.png);
+	background-image: url("https://ej2.syncfusion.com/demos/src/images/employees/6.png");
 }
 
 .e-image.e-janet { /* csslint allow: adjoining-classes */
-	background-image: url(./3.png);
+	background-image: url("https://ej2.syncfusion.com/demos/src/images/employees/7.png");
 }
 
 .e-tab .e-toolbar-item .e-title {
