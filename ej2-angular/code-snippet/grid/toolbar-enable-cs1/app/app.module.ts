@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { GridModule, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids';
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { GridModule, GroupService, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids';
+import {
+    ButtonModule,
+    CheckBoxModule,
+    RadioButtonModule,
+    SwitchModule,
+} from '@syncfusion/ej2-angular-buttons';
 import { AppComponent } from './app.component';
 
 /**
@@ -11,10 +16,13 @@ import { AppComponent } from './app.component';
     imports: [
         BrowserModule,
         GridModule,
-        ButtonModule
+        ButtonModule,
+        CheckBoxModule,
+        RadioButtonModule,
+        SwitchModule,
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
-    providers: [ToolbarService, PageService]
+    providers: [ToolbarService, PageService,GroupService]
 })
 export class AppModule { }

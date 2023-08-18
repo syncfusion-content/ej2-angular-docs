@@ -6,12 +6,14 @@ import { EditSettingsModel, ToolbarItems, GridComponent, Column, SaveEventArgs, 
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)="actionBegin($event)" height='273px'>
+    template: `<ejs-grid #grid style="padding:70px" [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)="actionBegin($event)" height='273px'>
                 <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' [visible]='false' width=120></e-column>
+                    <e-column field='OrderID' headerText='Order ID' [validationRules]='orderIDrules' 
+                    textAlign='Right' isPrimaryKey='true' width=100></e-column>
+                    <e-column field='CustomerID' [validationRules]='customerIDrules' 
+                    headerText='Customer ID' [visible]='false' width=120></e-column>
                     <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                     editType= 'numericedit' width=120 format= 'C2'></e-column>
+                     editType= 'numericedit' [validationRules]='freightrules' width=120 format= 'C2'></e-column>
                     <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
                 </e-columns>
                 </ejs-grid>`
@@ -22,15 +24,21 @@ export class AppComponent implements OnInit {
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItems[];
     @ViewChild('grid') grid?: GridComponent;
+    public orderIDrules?: Object;
+    public customerIDrules?: Object;
+    public freightrules?: Object;
 
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+        this.orderIDrules = { required: true, number: true };
+        this.customerIDrules = { required: true };
+        this.freightrules =  { min:1,max:1000 };
     }
 
     actionBegin(args: EditEventArgs) {
-        if (((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add')) {
+        if ((args as any).requestType === 'beginEdit') {
             for (const cols of (this.grid as any).columns) {
                 if ((cols as Column).field === 'CustomerID') {
                     (cols as Column).visible = true;
@@ -39,7 +47,14 @@ export class AppComponent implements OnInit {
                 }
             }
         }
-        if ((args as any).requestType === 'save') {
+        else if((args as any).requestType === 'add'){
+            for (const cols of (this.grid as any).columns) {
+                if ((cols as Column).field === 'CustomerID') {
+                    (cols as Column).visible = true;
+                } 
+            }
+        }
+        else if ((args as any).requestType === 'save') {
             for (const cols of (this.grid as any).columns) {
                 if ((cols as Column).field === 'CustomerID') {
                     (cols as Column).visible = false;

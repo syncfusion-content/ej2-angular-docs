@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Footer aggregate in Angular Grid component
 
-Footer aggregate value is calculated from all the rows and it can be displayed in footer cells. Use [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#footertemplate) to render the aggregate value in footer cells.
+The Syncfusion Angular Grid component allows you to calculate and display aggregate values in the footer cells. The footer aggregate value is calculated from all the rows in the grid. You can use the [footerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#footertemplate) property to render the aggregate value in the footer cells.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,12 +29,12 @@ Footer aggregate value is calculated from all the rows and it can be displayed i
   
 {% previewsample "page.domainurl/samples/grid/aggregates-footer-cs1" %}
 
-> * Use the template reference variable name as **#footerTemplate** to specify the footer template.
-> * The aggregate values must be accessed inside the template using their corresponding [`type`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) name.
+> * Use the template reference variable name **#footerTemplate** to specify the footer template.
+> * Inside the template, access the aggregate values using their corresponding [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) name. For example, to access the sum aggregate value, use **data.sum**.
 
-## How to format aggregate value
+## Format the aggregate value
 
-You can format the aggregate value result by using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn/#format) property.
+To format the aggregate value result in the Syncfusion Angular Grid component, you can use the [format](https://helpej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#format) property of the[AggregateColumnDirective](https://helpej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/). The `format` property allows you to specify a format string that determines how the aggregate value will be displayed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

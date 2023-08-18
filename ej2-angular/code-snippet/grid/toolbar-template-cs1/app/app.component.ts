@@ -9,19 +9,20 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 @Component({
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' height='200px' [allowGrouping]='true' [groupSettings]='groupOptions'>
-                <ng-template #toolbarTemplate let-data>
-                    <ejs-toolbar (clicked)='clickHandler($event)'>
-                        <e-items>
-                            <e-item id='collapse' prefixIcon='e-collapse'></e-item>
-                        </e-items>
-                    </ejs-toolbar>
-                </ng-template>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
+                    <ng-template #toolbarTemplate let-data>
+                        <ejs-toolbar (clicked)='clickHandler($event)'>
+                            <e-items>
+                                <e-item id="collapse" text="Collapse All" prefixIcon="e-chevron-up icon"></e-item>
+                                <e-item id="expand" text="Expand All" prefixIcon="e-chevron-down icon"></e-item>
+                            </e-items>
+                        </ejs-toolbar>
+                    </ng-template>
+                    <e-columns>
+                        <e-column field='OrderID' headerText='Order ID' isPrimaryKey='true' textAlign='Right' width=90></e-column>
+                        <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
+                        <e-column field='ShipCity' headerText='Ship City' width=100></e-column>
+                        <e-column field='ShipName' headerText='Ship Name' width=120></e-column>
+                    </e-columns>
                 </ejs-grid>`
 })
 export class AppComponent implements OnInit {
@@ -42,6 +43,10 @@ export class AppComponent implements OnInit {
         if (target?.id === 'collapse') {
             // collapse all expanded grouped row
             (this.grid as any).groupModule.collapseAll();
+        }
+        if (target?.id === 'expand') {
+            // expand all collapsed grouped row
+            (this.grid as any).groupModule.expandAll();
         }
     }
 }
