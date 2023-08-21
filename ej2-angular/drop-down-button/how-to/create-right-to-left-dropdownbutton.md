@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Create right to left dropdownbutton in Angular Drop down button component
 
-DropDownButton component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button#enablertl) as true.
+DropDownButton component has RTL support. This can be achieved by setting [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#enablertl) as true.
 
 The following example illustrates how to enable right-to-left support in DropDownButton component.
 
