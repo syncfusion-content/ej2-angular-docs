@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Disable a dropdownbutton in Angular Drop down button component
 
-DropdownButton component can be enabled/disabled by giving [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button#disabled) property.
+DropdownButton component can be enabled/disabled by giving [`disabled`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#disabled) property.
 To disable DropdownButton component, the disabled property can be set as `true`.
 
 {% tabs %}

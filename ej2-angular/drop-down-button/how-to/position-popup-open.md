@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Position popup open in Angular Drop down button component
 
-Popup open position can be changed according to the requirement. Popup open position can be changed in [`open`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button#open) event by setting `top` and `left` for the popup element.
+Popup open position can be changed according to the requirement. Popup open position can be changed in [`open`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#open) event by setting `top` and `left` for the popup element.
 
 In the following example, the `top` position of the popup element is changed in `open` event.
 
