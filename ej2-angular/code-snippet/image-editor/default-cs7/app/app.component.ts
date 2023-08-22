@@ -62,11 +62,12 @@ export class AppComponent {
     public imageEditorObj?: ImageEditorComponent;
 
       public created(): void {
-        if (Browser.isDevice) {
-            this.imageEditorObj?.open('flower.png');
-        } else {
-            this.imageEditorObj?.open('bridge.png');
-        }
+      if (Browser.isDevice) {
+        this.imageEditorObj?.open('./flower.png');        
+      } 
+      else {
+        this.imageEditorObj?.open('./bridge.png');
+      }
     }
 }
 

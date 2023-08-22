@@ -18,11 +18,12 @@ export class AppComponent {
     public imageEditorObj?: ImageEditorComponent;
     public toolbar: string[] = [];
       public created(): void {
-        if (Browser.isDevice) {
-            this.imageEditorObj?.open('flower.png');
-        } else {
-            this.imageEditorObj?.open('bridge.png');
-        }
+      if (Browser.isDevice) {
+        this.imageEditorObj?.open('./flower.png');        
+      } 
+      else {
+        this.imageEditorObj?.open('./bridge.png');
+      }
     }
     btnClick(): void {
         let dimension: any = this.imageEditorObj?.getImageDimension();

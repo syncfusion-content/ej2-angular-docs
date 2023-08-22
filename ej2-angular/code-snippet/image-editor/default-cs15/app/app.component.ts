@@ -18,11 +18,12 @@ export class AppComponent {
     public imageEditorObj?: ImageEditorComponent;
     public customToolbar = ['Annotate', "Line", "Rectangle", "Text", 'ZoomIn', 'ZoomOut', {text: 'Custom'}];
       public created(): void {
-        if (Browser.isDevice) {
-            this.imageEditorObj?.open('flower.png');
-        } else {
-            this.imageEditorObj?.open('bridge.png');
-        }
+      if (Browser.isDevice) {
+        this.imageEditorObj?.open('./flower.png');        
+      } 
+      else {
+        this.imageEditorObj?.open('./bridge.png');
+      }
     }
 
     public toolbarItemClicked(args: ClickEventArgs): void {

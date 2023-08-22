@@ -19,11 +19,12 @@ export class AppComponent {
     public id?: string | ImageEditorCommand;
     public toolbar: string[]= ['Annotate', "Line", "Rectangle", "Ellipse", "Circle", "Arrow", "Path"]
       public created(): void {
-        if (Browser.isDevice) {
-            this.imageEditorObj?.open('flower.png');
-        } else {
-            this.imageEditorObj?.open('bridge.png');
-        }
+      if (Browser.isDevice) {
+        this.imageEditorObj?.open('./flower.png');        
+      } 
+      else {
+        this.imageEditorObj?.open('./bridge.png');
+      }
     }
 
     public shapeChanging(args: ShapeChangeEventArgs): void {

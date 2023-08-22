@@ -21,11 +21,12 @@ export class AppComponent {
     public zoomLevel: number = 1;
     public zoomSettings: ZoomSettingsModel = {maxZoomFactor: 30, minZoomFactor: 0.1};
       public created(): void {
-        if (Browser.isDevice) {
-            this.imageEditorObj?.open('flower.png');
-        } else {
-            this.imageEditorObj?.open('bridge.png');
-        }
+      if (Browser.isDevice) {
+        this.imageEditorObj?.open('./flower.png');        
+      } 
+      else {
+        this.imageEditorObj?.open('./bridge.png');
+      }
     }
     zoomInClick(): void {
         if(this.zoomLevel < 1) {
