@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 # Hide dropdown arrow in Angular Drop down button component
 
 You can hide the dropdown arrow from the DropDownButton by adding class `e-caret-hide`
-to DropDownButton element using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button#cssclass) property.
+to DropDownButton element using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#cssclass) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Width of the DropDownButton can be customized by setting required width to the dropdown element.
 
-The following UI can be achieved by setting [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button#iconposition) as `Top`, width as `85px`
+The following UI can be achieved by setting [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-button/#iconposition) as `Top`, width as `85px`
 and size of the font icon as `40px` by adding `e-custom` class.
 
 {% tabs %}
