@@ -19,11 +19,12 @@ export class AppComponent {
     public toolbar: string[] = [];
     public zoomLevel: number = 1;
       public created(): void {
-        if (Browser.isDevice) {
-            this.imageEditorObj?.open('flower.png');
-        } else {
-            this.imageEditorObj?.open('bridge.png');
-        }
+      if (Browser.isDevice) {
+        this.imageEditorObj?.open('./flower.png');        
+      } 
+      else {
+        this.imageEditorObj?.open('./bridge.png');
+      }
     }
     panClick(): void {
         this.imageEditorObj?.zoom(this.zoomLevel) // zoom in

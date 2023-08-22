@@ -20,11 +20,12 @@ export class AppComponent {
     @ViewChild('imageEditor')
     public imageEditorObj?: ImageEditorComponent;
       public created(): void {
-        if (Browser.isDevice) {
-            this.imageEditorObj?.open('flower.png');
-        } else {
-            this.imageEditorObj?.open('bridge.png');
-        }
+      if (Browser.isDevice) {
+        this.imageEditorObj?.open('./flower.png');        
+      } 
+      else {
+        this.imageEditorObj?.open('./bridge.png');
+      }
     }
 
     btnClick(): void {
