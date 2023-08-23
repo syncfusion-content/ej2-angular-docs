@@ -18,6 +18,10 @@ domainurl: ##DomainURL##
 
 An annotation can be added to a node/connector by defining the annotation object and adding that to the annotation collection of the node/connector. The [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#content-string) property of annotation defines the text to be displayed. The following code illustrates how to create a annotation.
 
+To create and add annotation to Nodes and Connectors using the Angular Diagram, refer to the below video link.
+
+{% youtube "youtube:https://www.youtube.com/watch?v=1J8dtTxXnVo" %}
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/annotation-cs1/app/app.component.ts %}

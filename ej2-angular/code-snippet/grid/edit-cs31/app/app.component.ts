@@ -1,44 +1,39 @@
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { Component, ViewChild } from '@angular/core';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { data} from './datasource';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' 
-               [toolbar]='toolbar' height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' 
-                    [validationRules]='orderIDRules' textAlign='Right' 
-                    isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' 
-                    [validationRules]='customerIDRules' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right' 
-                    width=120 format= 'C2' [validationRules]='freightIDRules'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' 
-                    [validationRules]='countryIDRules' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
+    templateUrl: './app.component.html',
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
-    public data?: object[];
-    public editSettings?: EditSettingsModel;
-    public toolbar?: ToolbarItems[];
-    public orderIDRules?: object;
-    public customerIDRules?: object;
-    public freightIDRules?: object;
-    public countryIDRules?: object;
-
-    ngOnInit(): void {
+    public data?: Object[];
+    @ViewChild('batchgrid')
+     public grid?: GridComponent;
+    public editSettings?: Object;
+    public toolbar?: string[];
+    public orderidrules?: Object;
+    public customeridrules?: Object;
+    public freightrules?: Object;
+    public editparams?: Object;
+    public pageSettings?: Object;
+    public positionData: Object[] = [
+        { text: 'Top', value: 'Top' },
+        { text: 'Bottom', value: 'Bottom' },
+    
+      ];
+    public ngOnInit(): void {
         this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, newRowPosition: 'Bottom' };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-        this.orderIDRules = { required: true };
-        this.countryIDRules = { required: true };
-        this.customerIDRules = { required: true, minLength: 5 };
-        this.freightIDRules={required: true, min: 1, max:1000 }
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
+        this.toolbar = ['Add', 'Delete', 'Update', 'Cancel'];
+        this.orderidrules = { required: true, number: true };
+        this.customeridrules = { required: true };
+        this.freightrules =  { required: true };
+        this.editparams = { params: { popupHeight: '300px' } };
+        this.pageSettings = {pageCount: 5};
+    } 
+    public changePosition(args: any): void {
+       (this as any).grid.editSettings.newRowPosition = args.value;
     }
 }
-
-
-
