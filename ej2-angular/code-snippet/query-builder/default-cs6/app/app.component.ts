@@ -33,6 +33,8 @@ L10n.load({
             'NotIn': 'Nicht in',
             'Remove': 'LÖSCHEN',
             'ValidationMessage': 'Dieses Feld wird benötigt',
+            'True': 'Wahr',
+            'False': 'Falsch',
         }
     }
 });

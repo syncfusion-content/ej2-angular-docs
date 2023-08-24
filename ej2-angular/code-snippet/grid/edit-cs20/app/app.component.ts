@@ -1,39 +1,54 @@
-
-
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { GridComponent, Column } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right'
-                     isPrimaryKey='true' [validationRules]='orderIDRules' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' [allowEditing]= 'false'
-                     [validationRules]='customerIDRules' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign= 'Right' editType= 'numericedit'
-                     width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
+  selector: 'app-root',
+  templateUrl: './app.component.html',
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
+  public data?: Object[];
+  @ViewChild('grid') public grid?: GridComponent;
+  @ViewChild('dropdown') public dropdown?: DropDownListComponent;
+  public editSettings?: Object;
+  public toolbar?: string[];
+  public orderidrules?: Object;
+  public customeridrules?: Object;
+  public freightrules?: Object;
+  public editparams?: Object;
+  public pageSettings?: Object;
+  public alignmentData: Object[] = [
+    { text: 'Order ID', value: 'OrderID' },
+    { text: 'Customer ID', value: 'CustomerID' },
+    { text: 'Freight', value: 'Freight' },
+    { text: 'Order Date', value: 'OrderDate' },
+    { text: 'Ship Country', value: 'ShipCountry' },
+  ];
+  public dropdownFields: Object = { text: 'text', value: 'value' }; // Define fields for the dropdown
+  public currentColumn: any;
+  public ngOnInit(): void {
+    this.data = data;
+    this.editSettings = {
+      allowEditing: true,
+      allowAdding: true,
+      allowDeleting: true,
+    };
+    this.toolbar = ['Add', 'Delete', 'Update', 'Cancel'];
+    this.orderidrules = { required: true, number: true };
+    this.customeridrules = { required: true };
+    this.freightrules = { required: true };
+    this.editparams = { params: { popupHeight: '300px' } };
+    this.pageSettings = { pageCount: 5 };
+  }
 
-    public data?: object[];
-    public editSettings?: EditSettingsModel;
-    public toolbar?: ToolbarItems[];
-    public orderIDRules?: object;
-    public customerIDRules?: object;
-
-    ngOnInit(): void {
-        this.data = data;
-        (this as any).editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-        (this as any).orderIDRules = { required: true };
-        (this as any).customerIDRules = { required: true, minLength: 3 };
+  public changeAlignment(args: any): void {
+    // Reset the allowEditing property of the previously selected column
+    if (this.currentColumn) {
+      this.currentColumn.allowEditing = true;
     }
+    // Update the 'allowEditing' property for the selected column
+    this.currentColumn = this.grid?.getColumnByField(args.value) as Column;
+    this.currentColumn.allowEditing = false;
+  }
 }
-
-
-
