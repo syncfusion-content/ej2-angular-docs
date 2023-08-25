@@ -165,3 +165,16 @@ When you enable the RTL (right to left direction) support, the "e-rtl" class wil
 }
 
 ```
+
+## Prevent the animation transition for the Sidebar component
+
+Use the below CSS to prevent the animation transition for the Sidebar component.
+
+```css
+
+.e-content-animation {
+    transition: none !important;
+    transform: none !important;
+}
+
+```
