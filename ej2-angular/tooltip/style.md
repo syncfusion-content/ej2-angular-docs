@@ -89,7 +89,10 @@ Use the following CSS to customize the tooltip arrow tip.
 Use the following CSS to customize the tooltip inner tip.
 
 ```css
-.e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom {
+.e-tooltip-wrap .e-arrow-tip-inner.e-tip-right,
+.e-tooltip-wrap .e-arrow-tip-inner.e-tip-left,
+.e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom,
+.e-tooltip-wrap .e-arrow-tip-inner.e-tip-top {
     color: #fff;
     font-size: 25.9px;
 }

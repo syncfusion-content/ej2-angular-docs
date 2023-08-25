@@ -1,13 +1,10 @@
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, parentsUntil } from '@syncfusion/ej2-angular-grids';
-import { closest } from '@syncfusion/ej2-base';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid  #grid [dataSource]='data' [editSettings]='editSettings' height='315px' (created)="created($event)">
+    template: `<ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' height='315px' (created)="created($event)">
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=120></e-column>
                     <e-column field='OrderDate' headerText='Order Date' width=130 textAlign='Right' format='yMd'></e-column>

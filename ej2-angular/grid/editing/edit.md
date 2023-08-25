@@ -7,16 +7,18 @@ control: Edit
 documentation: ug
 domainurl: ##DomainURL##
 ---
+   
+# Edit in angular grid component
 
-# Edit in Angular Grid component
+The Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to enable you to perform CRUD (Create, Read, Update, Delete) operations seamlessly.
 
-The Grid component has options to dynamically insert, delete and update records. Editing feature requires a primary key column for CRUD operations. To define the primary key, set [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) to **true** in particular column.
+To enable editing functionality directly within the grid, you need to configure the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel/#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel/#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel/#allowdeleting) properties within the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#editsettings)  to **true**.
 
-You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit** button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar or on an external button which is bound to invoke the [`addRecord`](https://ej2.syncfusion.com/angular/documentation/api/grid/edit/#addrecord) method of the grid, **Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid.
+Editing feature requires a primary key column for CRUD operations. To define the primary key, set [columns.isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) to **true** in particular column.
 
-Deletion of the record is possible by selecting the required row and click on **Delete** button in the toolbar.
+You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit** button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar or on an external button which is bound to invoke the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/grid/edit/#addrecord) method of the grid, **Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid. Deletion of the record is possible by selecting the required row and click on **Delete** button in the toolbar.
 
-To use CRUD, inject the [`EditService`](https://ej2.syncfusion.com/angular/documentation/api/grid/edit) module into the **@NgModule.providers** section.
+To use CRUD, inject the [EditService](https://ej2.syncfusion.com/angular/documentation/api/grid/edit) module into the **@NgModule.providers** section.
 
 To learn about what are all the edit modes and edit types are available in Angular Grid, you can check on this video
 
@@ -36,12 +38,17 @@ To learn about what are all the edit modes and edit types are available in Angul
   
 {% previewsample "page.domainurl/samples/grid/edit-cs18" %}
 
-> * If [`columns.isIdentity`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isidentity) is enabled, then it will be considered as a read-only column when editing and adding a record.
-> * You can disable editing for a particular column, by specifying [`columns.allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowediting) to **false**.
+> * If [columns.isIdentity](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isidentity) is enabled, then it will be considered as a read-only column when editing and adding a record.
+> * You can disable editing for a particular column, by specifying `columns.allowEditing` to **false**.
+>* You can use the **Insert** key to add a new row to the grid and use the **Delete** key to delete the selected row from the grid.
 
 ## Toolbar with edit option
 
-The grid toolbar has the [built-in items](../../toolbar/item-configuration) to execute Editing actions. You can define this by using the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property.
+The toolbar with edit option feature in the Grid component provides a [built-in toolbar](../../toolbar/item-configuration) that includes various items for executing editing actions. This feature allows you to easily perform edit operations on the grid data, such as modifying cell values, updating changes, and canceling edits. 
+
+To enable this feature, you need to configure the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) property of the Grid component. This property allows you to define the items that will be displayed in the grid toolbar. By including the relevant items like **Edit**, **Add**, **Delete**, **Update**, and **Cancel** within the `toolbar` property, you can enable the edit options in the toolbar.
+
+Here's an example of how to enable the toolbar with edit option in the Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -59,9 +66,11 @@ The grid toolbar has the [built-in items](../../toolbar/item-configuration) to e
 
 ## Disable editing for particular column
 
-You can disable editing for particular columns by using the [`columns.allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowediting).
+In Grid component, you have an option to disable editing for a specific column. This feature is useful when you want to prevent editing certain columns, such as columns that contain calculated values or read-only data.
 
-In the following demo, editing is disabled for the **CustomerID** column.
+To disable editing for a particular column, you can use the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#allowediting)  property of the **columns** object. By setting this property to **false**, you can prevent editing for that specific column.
+
+Here's an example that demonstrates how to disable editing for the column in the Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -77,45 +86,15 @@ In the following demo, editing is disabled for the **CustomerID** column.
   
 {% previewsample "page.domainurl/samples/grid/edit-cs20" %}
 
-## Disable editing for a particular row or cell
-
-You can disable the editing for a particular row by using the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event of Grid based on **requestType** as **beginEdit**.
-
-In the below demo, the rows which are having the value for **ShipCountry** column as "France" is prevented from editing.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs21/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs21/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs21/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/grid/edit-cs21" %}
-
-For batch mode of editing, you can use [`cellEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#celledit) event of Grid. In the below demo, the cells which are having the value as "France" is prevented from editing.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs22/app/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs22/app/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs22/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/grid/edit-cs22" %}
+>* If you have set the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property to **true** for a column, editing will be automatically disabled for that column.
+> * You can disble the particular row using [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.please refer this [link](https://ej2.syncfusion.com/angular/documentation/grid/editing/in-line-editing#disable-editing-for-a-particular-row).
+>* You can disble the particular cell using [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#celledit) event.please refer this [link](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing#disable-editing-for-a-particular-cell).
 
 ## Editing template column
 
-You can edit template column value by defining [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) for that particular column.
+The editing template column feature in the Grid allows you to create custom editing templates for specific columns in the grid. This feature is particularly useful when you need to customize the editing experience for certain columns, such as using custom input controls or displaying additional information during editing.
+
+To enable the editing template column feature, you need to define the [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) property for the specific column in the grid's configuration. The `field` property maps the column to the corresponding field name in the data source, allowing you to edit the value of that field.
 
 In the below demo, the **ShipCountry** column is rendered with the template.
 
@@ -133,15 +112,40 @@ In the below demo, the **ShipCountry** column is rendered with the template.
   
 {% previewsample "page.domainurl/samples/grid/edit-cs23" %}
 
+## Customize delete confirmation dialog
+
+Customizing the delete confirmation dialog in Grid allows you to personalize the appearance, content, and behavior of the dialog that appears when you attempts to delete an item. You can modify properties like header, showCloseIcon, and height to tailor the edit dialog to your specific requirements. Additionally, you can override default localization strings to provide custom text for buttons or other elements within the dialog.
+
+To customize the delete confirmation dialog, you can utilize the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event. This event is triggered when a toolbar item, such as the delete button, is clicked.
+
+>* To enable the confirmation dialog for the delete operation in the Grid, you can set the [showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#showdeleteconfirmdialog) property of the `editSettings` configuration to **true**.
+>* You can refer the Grid [Default text](../global-local/) list for more localization.
+
+The following example that demonstrates how to customize the delete confirmation dialog using the `toolbarClick` event:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-delete-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-delete-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-delete-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/edit-delete-cs1" %}
+
 ## Troubleshoot editing works only for first row
 
-The Editing functionalities can be performed based upon the primary key value of the selected row. If **primaryKey** is not defined in the grid, then edit or delete action take places the first row.
+The Editing functionalities can be performed based upon the primary key value of the selected row. If [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is not defined in the grid, then edit or delete action take places the first row. To overcome this, ensure that you establish the `isPrimaryKey` property as **true** for the relevant column responsible for holding the unique identifier for each row.
 
-## How to make a Grid column always editable
+## How to make a grid column always editable
 
-Make the Grid column always editable using the column template feature of the Grid.
+To make a Grid column always editable, you can utilize the column template feature of the Grid. This feature is useful when you want to edit a particular column's values directly within the grid.
 
-In the following example, the textbox is rendered in the Freight column using a column template. The keyup event for the Grid is bound using the [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event of the Grid, and the edited changes are saved in the data source using the [updateRow](https://ej2.syncfusion.com/angular/documentation/api/grid#updaterow) method of the Grid.
+In the following example, the textbox is rendered in the **Freight** column using a column template. The keyup event for the Grid is bound using the [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event of the Grid, and the edited changes are saved in the data source using the [updateRow](https://ej2.syncfusion.com/angular/documentation/api/grid#updaterow) method of the Grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -156,6 +160,8 @@ In the following example, the textbox is rendered in the Freight column using a 
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/edit-cs24" %}
+
+> * If a template column has a corresponding `field` property defined, the value entered in the template column's input field will be stored in the associated edit column of the row's data object.
 
 ## See Also
 
