@@ -24,12 +24,22 @@ class CustomAdaptor extends ODataV4Adaptor {
 
 export class AppComponent {
     public readonly: boolean = true;
-    public selectedDate: Date = new Date(2020, 9, 20);
+    public selectedDate: Date = new Date(1996, 6, 9);
     private dataManager: DataManager = new DataManager({
-       url: 'https://ej2services.syncfusion.com/production/web-services/api/Schedule',
+       url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/',
        adaptor: new CustomAdaptor
     });
-    public eventSettings: EventSettingsModel = { dataSource: this.dataManager};
+    public eventSettings: EventSettingsModel = {
+        dataSource: this.dataManager, fields: {
+            id: 'Id',
+            subject: { name: 'ShipName' },
+            location: { name: 'ShipCountry' },
+            description: { name: 'ShipAddress' },
+            startTime: { name: 'OrderDate' },
+            endTime: { name: 'RequiredDate' },
+            recurrenceRule: { name: 'ShipRegion' }
+        }
+    };
 }
 
 

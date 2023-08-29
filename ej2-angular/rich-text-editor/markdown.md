@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 When you format the word in Markdown format, you should add Markdown syntax to the word to indicate the words and phrases that looks different from each other.
 
-Rich Text Editor supports markdown editing when the [`editorMode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#editormode) set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text.
+Rich Text Editor supports markdown editing when the [`editorMode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#editormode) set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text.
 
 To use quick Markdown editing feature, inject `MarkdownEditorService` in the provider section of `AppModule`.
 

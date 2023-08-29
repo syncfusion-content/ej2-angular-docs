@@ -14,7 +14,7 @@ This section explains on customizing the Toast appearance using built-in APIs.
 
 ## Title and content template
 
-Toast can be created with the notification message. The message contains [`title`](https://ej2.syncfusion.com/angular/documentation/api/toast#title) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/toast#content) of the Toasts. Title and contents are adaptable in any resolution.
+Toast can be created with the notification message. The message contains [`title`](https://ej2.syncfusion.com/angular/documentation/api/toast/#title) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/toast/#content) of the Toasts. Title and contents are adaptable in any resolution.
 
 > Title or Content property can be given as HTML element/element ID as a string that can be displayed as a Toast.
 
@@ -34,15 +34,15 @@ Toast can be created with the notification message. The message contains [`title
 
 ## Specifying custom target
 
-By default toast can be rendered in the document body, we can change the target position for toast rendering using [`target`](https://ej2.syncfusion.com/angular/documentation/api/toast#target) property. Based on the target [`position`](https://ej2.syncfusion.com/angular/documentation/api/toast#position) will update.
+By default toast can be rendered in the document body, we can change the target position for toast rendering using [`target`](https://ej2.syncfusion.com/angular/documentation/api/toast/#target) property. Based on the target [`position`](https://ej2.syncfusion.com/angular/documentation/api/toast/#position) will update.
 
 ## Close Button
 
-In default [`showCloseButton`](https://ej2.syncfusion.com/angular/documentation/api/toast#showclosebutton) is not enabled. We can enable it by setting true value. Before expiring toast we can use to close or destroy toasts manually.
+In default [`showCloseButton`](https://ej2.syncfusion.com/angular/documentation/api/toast/#showclosebutton) is not enabled. We can enable it by setting true value. Before expiring toast we can use to close or destroy toasts manually.
 
 ## Progress bar
 
-In default [`showProgressBar`](https://ej2.syncfusion.com/angular/documentation/api/toast#showprogressbar) is not enabled. If we enabled it can visually indicate when will the toast gets expired. Based on the `timeOut` property Progress bar will appear.
+In default [`showProgressBar`](https://ej2.syncfusion.com/angular/documentation/api/toast/#showprogressbar) is not enabled. If we enabled it can visually indicate when will the toast gets expired. Based on the `timeOut` property Progress bar will appear.
 
 ### Progress bar direction
 
@@ -50,7 +50,7 @@ By default, the [progressDirection](https://ej2.syncfusion.com/angular/documenta
 
 ## Newest on top
 
-In default, newly created toasts will append next with existing toast. We can change the Sequence like inserting before the toast, by enabling the [`newestOnTop`](https://ej2.syncfusion.com/angular/documentation/api/toast#newestontop).
+In default, newly created toasts will append next with existing toast. We can change the Sequence like inserting before the toast, by enabling the [`newestOnTop`](https://ej2.syncfusion.com/angular/documentation/api/toast/#newestontop).
 
 Here below sample demonstrates the combination of `target`, `showCloseButton`, `showProgressBar` and `newestOnTop` properties in toast.
 
@@ -70,7 +70,7 @@ Here below sample demonstrates the combination of `target`, `showCloseButton`, `
 
 ## Width and height
 
-we can set toast dimensions through [`width`](https://ej2.syncfusion.com/angular/documentation/api/toast#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/toast#height) property. This will individually set all toasts, we can create different custom dimension toasts.
+we can set toast dimensions through [`width`](https://ej2.syncfusion.com/angular/documentation/api/toast/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/toast/#height) property. This will individually set all toasts, we can create different custom dimension toasts.
 
 In default toast can be rendered with '300px' width with 'auto' height
 

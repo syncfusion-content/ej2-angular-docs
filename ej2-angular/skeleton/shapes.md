@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Shapes in Angular Skeleton component
 
-The Skeleton control support various built-in shape variants to design layout of the page. You can use the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/skeleton#shape) property to create a preview of any layout.
+The Skeleton control support various built-in shape variants to design layout of the page. You can use the [`shape`](https://ej2.syncfusion.com/angular/documentation/api/skeleton/#shape) property to create a preview of any layout.
 
 The Skeleton component supports the following content shapes:
 

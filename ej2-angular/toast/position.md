@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Position in Angular Toast component
 
-Toast position can be updated based on predefined positions or user customizable positions. Predefined position combinations are updated in [`X`](https://ej2.syncfusion.com/angular/documentation/api/toast/toastPositionModel#x) and [`Y`](https://ej2.syncfusion.com/angular/documentation/api/toast/toastPositionModel#y) position properties.
+Toast position can be updated based on predefined positions or user customizable positions. Predefined position combinations are updated in [`X`](https://ej2.syncfusion.com/angular/documentation/api/toast/toastPositionModel/#x) and [`Y`](https://ej2.syncfusion.com/angular/documentation/api/toast/toastPositionModel/#y) position properties.
 
 ## Predefined
 

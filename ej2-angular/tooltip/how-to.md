@@ -33,7 +33,7 @@ By default, Tooltips will not be displayed on disabled elements. However, it is 
 
 ## Load HTML tags into tooltip
 
-The Tooltip component loads HTML tags using the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content.html) template.
+The Tooltip component loads HTML tags using the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content) template.
 
 The HTML tags such as `<div>`, `<span>`, `bold`, `italic`, `underline`, etc., can be used. Style attributes can also be applied with HTML tags.
 
@@ -122,7 +122,7 @@ In this case, the tooltip content is assigned from the title attribute of the ta
 
 The tooltip content can be changed dynamically using the [AJAX](https://ej2.syncfusion.com/documentation/base/api-ajax.html?lang=typescript) request.
 
-The AJAX request should be made within the [`beforeRender`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltipComponent.html#beforerender) event of the tooltip. On every success, the corresponding retrieved data will be set to the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltipComponent.html#content) property of the tooltip.
+The AJAX request should be made within the [`beforeRender`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltipComponent/#beforerender) event of the tooltip. On every success, the corresponding retrieved data will be set to the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltipComponent/#content) property of the tooltip.
 
 When you hover over the icons, its respective data will be retrieved dynamically and then assigned to the tooltip’s content.
 
@@ -170,7 +170,7 @@ onBeforeRender(args: TooltipEventArgs): void {
 
 ## Tooltip Content Template
 
-The Tooltip component [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content.html) can be loaded through template support. Refer to the below code snippet.
+The Tooltip component [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content) can be loaded through template support. Refer to the below code snippet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -235,7 +235,7 @@ The two `divs`(inner div and outer div) have been added to achieve the bubble ti
 
 These tip arrow customizations have been achieved through CSS changes in the sample level. The tooltip position can be changed by using the radio button click event.
 
-The arrow tip pointer can also be disabled by using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip.html#showtippointer) property in a tooltip.
+The arrow tip pointer can also be disabled by using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip/#showtippointer) property in a tooltip.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -293,7 +293,7 @@ Create the canvas circle element and refer to the following code snippet to rend
 
 ## Load HTML pages into tooltip
 
-Tooltip loads HTML pages via HTML tags such as iframe, video, and map using the [`content`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip.html#content) property, which supports both string and HTML tags.
+Tooltip loads HTML pages via HTML tags such as iframe, video, and map using the [`content`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip/#content) property, which supports both string and HTML tags.
 
 To load an `iframe` element in tooltip, set the required iframe in the `content` of tooltip while initializing the tooltip component. Refer to the following code.
 

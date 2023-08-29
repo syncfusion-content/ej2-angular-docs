@@ -236,7 +236,7 @@ export class AppComponent {
 
 ## Integrate DatePicker
 
-You can render the Essential JS2 [DatePicker](https://ej2.syncfusion.com/angular/documentation/api/datepicker/) by changing the [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) property as [`Date`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) and also configure its properties and methods using the [`model`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#model) property.
+You can render the Essential JS2 [DatePicker](https://ej2.syncfusion.com/angular/documentation/api/datepicker/) by changing the [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) property as [`Date`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) and also configure its properties and methods using the [`model`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#model) property.
 
 ```javascript
 import { Component } from '@angular/core';
@@ -288,7 +288,7 @@ In In-place Editor, the `value` property supports two-way binding functionality.
 
 ## Submitting data to the server (save)
 
-You can submit editor value to the server by configuring the [`url`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#url), [`adaptor`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/adaptorType/) and [`primaryKey`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor#primarykey) property.
+You can submit editor value to the server by configuring the [`url`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#url), [`adaptor`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/adaptorType/) and [`primaryKey`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#primarykey) property.
 
 | Property   | Usage                                           |
 |------------|---------------------------------------------------------|
