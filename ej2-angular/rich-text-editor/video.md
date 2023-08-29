@@ -307,7 +307,7 @@ You can disable the resize action by configuring `false` for the [insertVideoSet
 
 ## Rename video before inserting
 
-You can use the [insertVideoSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#insertvideosettings) property, to specify the server handler to upload the selected video. Then by binding the [fileUploadSuccess](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploadsuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert video dialog.
+You can use the [insertVideoSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#insertvideosettings) property, to specify the server handler to upload the selected video. Then by binding the [fileUploadSuccess](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploadsuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert video dialog.
 
 ```HTML
 

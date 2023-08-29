@@ -19,7 +19,7 @@ Buttons can be show or hide by sets a Boolean value to the [showButtons](https:/
 * **[actionOnBlur](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#actiononblur)**: By clicking out side the editor component get focus out and do action based on this property value.
 * **[submitOnEnter](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#submitonenter)**: Pressing `Enter` key it performs the submit action, if this property set to `true`.
 
-In the following sample, the [content](https://ej2.syncfusion.com/angular/documentation/api/button#content) and [cssClass](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) properties of `Button` value assigned to the [saveButton](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#savebutton) and [cancelButton](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#cancelbutton) properties to customize its appearance. Also check or uncheck a checkbox buttons render or removed from the editor.
+In the following sample, the [content](https://ej2.syncfusion.com/angular/documentation/api/button/#content) and [cssClass](https://ej2.syncfusion.com/angular/documentation/api/button/#cssclass) properties of `Button` value assigned to the [saveButton](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#savebutton) and [cancelButton](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#cancelbutton) properties to customize its appearance. Also check or uncheck a checkbox buttons render or removed from the editor.
 
 To restrict either save or cancel button rendering into a DOM, simply pass empty object `{}` in the  `saveButton` or `cancelButton` properties.
 

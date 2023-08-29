@@ -102,10 +102,10 @@ A confirm dialog displays a specified message along with ‘OK’ and ‘Cancel�
 
 When rendering an Alert and Confirmation dialog through utility methods, You can close the dialog using the following ways.
 
-* By pressing the escape key if the [closeOnEscape](https://ej2.syncfusion.com/angular/documentation/api/dialog#closeonescape) property is enabled.
-* By clicking the close button if the [showCloseIcon](https://ej2.syncfusion.com/angular/documentation/api/dialog#showcloseicon) property is enabled.
+* By pressing the escape key if the [closeOnEscape](https://ej2.syncfusion.com/angular/documentation/api/dialog/#closeonescape) property is enabled.
+* By clicking the close button if the [showCloseIcon](https://ej2.syncfusion.com/angular/documentation/api/dialog/#showcloseicon) property is enabled.
 
-You can also manually close the Dialogs by creating an instance to the dialog and call the [hide](https://ej2.syncfusion.com/angular/documentation/api/dialog#hide) method.
+You can also manually close the Dialogs by creating an instance to the dialog and call the [hide](https://ej2.syncfusion.com/angular/documentation/api/dialog/#hide) method.
 
 Below sample demonstrates the different ways of hiding the utility dialog.
 

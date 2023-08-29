@@ -2,7 +2,7 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { holidayData, birthdayData, companyData, personalData } from './data';
+import { holidayData, birthdayData, companyData, personalData } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 import { ScheduleComponent, EventSettingsModel, GroupModel, MonthService, TimelineViewsService, TimelineMonthService, ResizeService, DragAndDropService } from '@syncfusion/ej2-angular-schedule';
 
@@ -66,14 +66,14 @@ export class AppComponent {
     generateCalendarData(): Object[] {
         return [...personalData, ...companyData, ...birthdayData, ...holidayData];
     }
-    onChange(args: ChangeEventArgs): void {
-        const value: number = parseInt((args.event.currentTarget as Element).querySelector('input').getAttribute('value'), 10);
+    public onChange(args: ChangeEventArgs): void {
+        const value: number = parseInt((args.event?.currentTarget as Element)?.querySelector('input')?.getAttribute('value') ?? '0', 10);
         const resourceData: Record<string, any>[] =
-            this.calendarCollections.filter((calendar: Record<string, any>) => calendar.CalendarId === value);
+          this.calendarCollections.filter((calendar: Record<string, any>) => calendar['CalendarId'] === value);
         if (args.checked) {
-            this.scheduleObj.addResource(resourceData[0], 'Calendars', value - 1);
+          this.scheduleObj?.addResource(resourceData[0], 'Calendars', value );
         } else {
-            this.scheduleObj.removeResource(value, 'Calendars');
+          this.scheduleObj?.removeResource(value, 'Calendars');
         }
     }
 }

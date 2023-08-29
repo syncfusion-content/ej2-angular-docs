@@ -28,6 +28,10 @@ A group can be added to the diagram model through [`nodes`](https://ej2.syncfusi
 
 * A group can be added into a child of another group.
 
+To create a group using Nodes and Connectors in the Angular Diagram, refer to the below video link,
+
+{% youtube "youtube:https://www.youtube.com/watch?v=CXrWa_ZDu_s&t=350s" %}
+
 The following code illustrates how to create a group node.
 
 {% tabs %}
