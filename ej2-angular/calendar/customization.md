@@ -65,6 +65,9 @@ The following example highlights the world health date (7th April every year) an
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/calendar/highlight-cs1/app/app.module.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="style.css" %}
+{% include code-snippet/calendar/highlight-cs1/app/style.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/calendar/highlight-cs1/app/main.ts %}
 {% endhighlight %}

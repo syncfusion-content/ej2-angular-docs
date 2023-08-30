@@ -24,7 +24,8 @@
               "app/styles.css"
             ],
             "assets": [
-							{"glob": "*.css", "input": "", "output": ""}
+							{"glob": "*.css", "input": "", "output": ""},
+              {"glob": "*.png", "input": "", "output": ""}
             ]
           },
           "configurations": {

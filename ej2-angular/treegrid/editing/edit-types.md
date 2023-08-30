@@ -97,7 +97,7 @@ While setting a new data source using the edit params, you must specify a new [q
 
 ```
 
-Enable filtering for the DropDownList by passing the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#allowfiltering) as **true** to the edit params.
+Enable filtering for the DropDownList by passing the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#allowfiltering) as **true** to the edit params.
 
 In the following demo, the DropDownList is rendered with the custom Datasource for the **priority** column and filtering is enabled to search the DropDownList items:
 

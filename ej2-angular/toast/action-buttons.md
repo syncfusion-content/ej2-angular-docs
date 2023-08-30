@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Action buttons in Angular Toast component
 
-You can include action Buttons into toast by adding [`buttons`](https://ej2.syncfusion.com/angular/documentation/api/toast#buttons) property. You can bind collections of Essential JS 2 Button Model to `model` property inside buttons property, You can also include click event callback function, for each button.
+You can include action Buttons into toast by adding [`buttons`](https://ej2.syncfusion.com/angular/documentation/api/toast/#buttons) property. You can bind collections of Essential JS 2 Button Model to `model` property inside buttons property, You can also include click event callback function, for each button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

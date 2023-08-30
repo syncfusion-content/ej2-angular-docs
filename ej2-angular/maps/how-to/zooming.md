@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Zooming in Angular Maps component
 
-The center position zooming can be achieved by using the [`centerPosition`](https://ej2.syncfusion.com/angular/documentation/api/maps#centerposition) and [`zoomFactor`](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel/#zoomfactor) properties as mentioned in the following example. The center position is used to configure the zoom level of Maps, and the zoom factor is used to specify the center position where the Maps should be displayed.
+The center position zooming can be achieved by using the [`centerPosition`](https://ej2.syncfusion.com/angular/documentation/api/maps/#centerposition) and [`zoomFactor`](https://ej2.syncfusion.com/angular/documentation/api/maps/zoomSettingsModel/#zoomfactor) properties as mentioned in the following example. The center position is used to configure the zoom level of Maps, and the zoom factor is used to specify the center position where the Maps should be displayed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

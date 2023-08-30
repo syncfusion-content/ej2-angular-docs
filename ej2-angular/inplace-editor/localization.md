@@ -68,7 +68,7 @@ Formatting is a way of representing the value in different format. You can forma
 * [DateTimePicker](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker/#format)
 * [NumericTextBox](../numerictextbox/formats/#custom-formats)
 * [Slider](../range-slider/format/)
-* [TimePicker](https://ej2.syncfusion.com/angular/documentation/api/timepicker#format)
+* [TimePicker](https://ej2.syncfusion.com/angular/documentation/api/timepicker/#format)
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Schedule component
 
-This section briefly explains how to create [**Angular Scheduler**](https://www.syncfusion.com/angular-ui-components/angular-scheduler) component and configure its available functionalities in Angular Environment.
+This section briefly explains how to create [**Angular Scheduler**](https://www.syncfusion.com/angular-components/angular-scheduler) component and configure its available functionalities in Angular Environment.
 
 To get start quickly with Angular Scheduler using CLI and Schematics, you can check on this video:
 

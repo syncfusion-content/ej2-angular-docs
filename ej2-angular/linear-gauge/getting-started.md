@@ -172,7 +172,7 @@ These modules should be injected in the providers section of the **app.module.ts
 
 ## Add Gauge Title
 
-The title can be added to the Linear Gauge component using the [`title`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGaugeModel#title-string) property in the Linear Gauge.
+The title can be added to the Linear Gauge component using the [`title`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/linearGaugeModel/#title-string) property in the Linear Gauge.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -190,7 +190,7 @@ The title can be added to the Linear Gauge component using the [`title`](https:/
 
 ## Axis Range
 
-The range of the axis can be set using the [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis#minimum-number) and [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis#maximum-number) properties in the Linear Gauge.
+The range of the axis can be set using the [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis/#minimum-number) and [`maximum`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/axis/#maximum-number) properties in the Linear Gauge.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

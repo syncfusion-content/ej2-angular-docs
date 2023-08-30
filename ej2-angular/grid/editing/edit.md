@@ -18,7 +18,7 @@ Editing feature requires a primary key column for CRUD operations. To define the
 
 You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit** button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar or on an external button which is bound to invoke the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/grid/edit/#addrecord) method of the grid, **Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid. Deletion of the record is possible by selecting the required row and click on **Delete** button in the toolbar.
 
-To use CRUD, inject the [EditService](https://ej2.syncfusion.com/angular/documentation/api/grid/edit) module into the **@NgModule.providers** section.
+To use CRUD, inject the [EditService](https://ej2.syncfusion.com/angular/documentation/api/grid/edit/) module into the **@NgModule.providers** section.
 
 To learn about what are all the edit modes and edit types are available in Angular Grid, you can check on this video
 
@@ -174,4 +174,4 @@ In the following example, the textbox is rendered in the **Freight** column usin
 * [How to use CellEditArgs event in Angular Grid](https://www.syncfusion.com/forums/153617/how-to-use-celleditargs-event-in-angular-grid)
 * [How to render Grid with add form always in Angular Grid](https://www.syncfusion.com/forums/161716/how-to-render-grid-with-add-form-always-in-angular-grid)
 * [How to show the numeric key pad in mobile device when edit the number column in Angular Grid](https://www.syncfusion.com/forums/147184/how-to-show-the-numeric-keypad-in-mobile-device-when-edit-the-number-column-in-angular-grid)
-* [How to enable inline editing in Angular 4 Data Grid/Table](https://www.syncfusion.com/kb/10851/how-to-enable-inline-editing-in-angular-4-data-grid-table)
+* [How to enable inline editing in Angular 4 Data Grid/Table](https://support.syncfusion.com/kb/article/11700/how-to-enable-inline-editing-in-angular-4-data-grid-table)

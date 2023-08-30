@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Timeout in Angular Toast component
 
-Toast can be expired based on [`timeOut`](https://ej2.syncfusion.com/angular/documentation/api/toast#timeout) property, toast will live till the timeOut reaches without user interaction, a timeOut value was considered as the millisecond.
+Toast can be expired based on [`timeOut`](https://ej2.syncfusion.com/angular/documentation/api/toast/#timeout) property, toast will live till the timeOut reaches without user interaction, a timeOut value was considered as the millisecond.
 
 * `timeOut` delay can be visually represented through [`Progress Bar`](./config#progress-bar).
 
-* [`extendedTimeOut`](https://ej2.syncfusion.com/angular/documentation/api/toast#extendedtimeout) property can make how long the toast will display after a user hovers over it.
+* [`extendedTimeOut`](https://ej2.syncfusion.com/angular/documentation/api/toast/#extendedtimeout) property can make how long the toast will display after a user hovers over it.
 
 > You can terminate the process by using  `showCloseButton` property for destroying toast at any time.
 

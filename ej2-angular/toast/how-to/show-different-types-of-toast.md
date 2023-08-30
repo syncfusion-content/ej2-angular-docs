@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Show different types of toast in Angular Toast component
 
-The Essential JS 2 Toast has the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/toast#cssclass) property for achieving different types of toast.
+The Essential JS 2 Toast has the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/toast/#cssclass) property for achieving different types of toast.
 
 | Class | Description |
 | -------- | -------- |

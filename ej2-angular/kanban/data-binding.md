@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular Kanban component
 
-The Kanban uses `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/kanban#datasource) property of Kanban can be assigned either with the instance of `DataManager` or JavaScript object array collection, as it supports the following two data binding methods:
+The Kanban uses `DataManager`, which supports both RESTful data service binding and JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#datasource) property of Kanban can be assigned either with the instance of `DataManager` or JavaScript object array collection, as it supports the following two data binding methods:
 
 * Local data
 * Remote data
 
 ## Local data
 
-To bind local JSON data to the Kanban, you can simply assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/kanban#datasource) property. The JSON object dataSource can also be provided as an instance of `DataManager` and assigned to the Kanban `dataSource` property.
+To bind local JSON data to the Kanban, you can simply assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#datasource) property. The JSON object dataSource can also be provided as an instance of `DataManager` and assigned to the Kanban `dataSource` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -37,7 +37,7 @@ To bind local JSON data to the Kanban, you can simply assign a JavaScript object
 
 ## Remote data
 
-To bind remote data to kanban component, assign service data as an instance of [`DataManager`](../data) to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/kanban#datasource) property. To interact with remote data source, provide the endpoint **url**.
+To bind remote data to kanban component, assign service data as an instance of [`DataManager`](../data) to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#datasource) property. To interact with remote data source, provide the endpoint **url**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -234,7 +234,7 @@ It is possible to create your own custom adaptor by extending the built-in avail
 
 ### Sending additional parameters to the server
 
-To add a custom parameter to the data request, use the **addParams** method of **Query** class. Assign the **Query** object with additional parameters to the kanban [`query`](https://ej2.syncfusion.com/angular/documentation/api/kanban#query) property.
+To add a custom parameter to the data request, use the **addParams** method of **Query** class. Assign the **Query** object with additional parameters to the kanban [`query`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#query) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -250,13 +250,13 @@ To add a custom parameter to the data request, use the **addParams** method of *
   
 {% previewsample "page.domainurl/samples/kanban/additional-cs1" %}
 
-> The parameters added using the [`query`](https://ej2.syncfusion.com/angular/documentation/api/kanban#query) property will be sent along with the data request for every kanban action.
+> The parameters added using the [`query`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#query) property will be sent along with the data request for every kanban action.
 
 ### Handling HTTP error
 
-During server interaction from the kanban, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/kanban#actionfailure) event.
+During server interaction from the kanban, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#actionfailure) event.
 
-The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/kanban#actionfailure) event contains the error details returned from the server.
+The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#actionfailure) event contains the error details returned from the server.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -272,11 +272,11 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/
   
 {% previewsample "page.domainurl/samples/kanban/error-cs1" %}
 
-> The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/kanban#actionfailure) event will be triggered not only for the server errors, but also when there is an exception while processing the kanban actions.
+> The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#actionfailure) event will be triggered not only for the server errors, but also when there is an exception while processing the kanban actions.
 
 ## Loading data via ajax
 
-You can use Kanban [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/kanban#datasource) property to bind the datasource to Kanban from external ajax request. In the following code, we have fetched the datasource from the server using ajax request and provided that to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/kanban#datasource) property by using the **onSuccess** event of ajax.
+You can use Kanban [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#datasource) property to bind the datasource to Kanban from external ajax request. In the following code, we have fetched the datasource from the server using ajax request and provided that to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#datasource) property by using the **onSuccess** event of ajax.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

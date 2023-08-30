@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Display mode in Angular Query builder component
 
-Display options allow you to view the Query Builder in Vertically or Horizontally. For this, you should use the [`displayMode`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#displaymode) property.
+Display options allow you to view the Query Builder in Vertically or Horizontally. For this, you should use the [`displayMode`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#displaymode) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

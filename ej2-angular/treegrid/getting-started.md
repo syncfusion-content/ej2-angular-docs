@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Treegrid component
 
-This section explains the steps required to create a simple Essential JS 2 TreeGrid and demonstrates the basic usage of the [`Angular Tree Grid control`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) in a Angular CLI application.
+This section explains the steps required to create a simple Essential JS 2 TreeGrid and demonstrates the basic usage of the [`Angular Tree Grid control`](https://www.syncfusion.com/angular-components/angular-tree-grid) in a Angular CLI application.
 
 To get start quickly with Angular TreeGrid using CLI and Schematics, you can check on this video:
 
@@ -255,7 +255,7 @@ By default, filtered records are shown along with its parent records. This behav
   
 {% previewsample "page.domainurl/samples/treegrid/getting-started-cs4" %}
 
-> You can render the records in a collapsed state in the initial render of the tree grid by enabling the [`enableCollapseAll`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablecollapseall) property.
+> You can render the records in a collapsed state in the initial render of the tree grid by enabling the [`enableCollapseAll`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablecollapseall) property.
 
 ## Run the application
 
@@ -281,4 +281,4 @@ The output will appear as follows.
   
 {% previewsample "page.domainurl/samples/treegrid/getting-started-cs5" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

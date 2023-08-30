@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Header double click in Angular Kanban component
 
-You can bind the header double click event using [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/kanban#dataBound) event at initial rendering. You can get the column header text when double click the headers.
+You can bind the header double click event using [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/kanban/#dataBound) event at initial rendering. You can get the column header text when double click the headers.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

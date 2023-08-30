@@ -26,7 +26,7 @@ In Batch edit mode, when you double-click on the tree grid cell, then the target
   
 {% previewsample "page.domainurl/samples/treegrid/edit-toolbar-cs3" %}
 
-> * You can get the details of added records, changed records and deleted records by the [`getBatchChanges`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/angular/documentation/api/treegrid#getbatchchanges) method in tree grid.
+> * You can get the details of added records, changed records and deleted records by the [`getBatchChanges`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/angular/documentation/api/treegrid/#getbatchchanges) method in tree grid.
 > * To update a particular cell in the row, use the [`updateCell`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#updateCell) method. In this method, pass the row index of the data source, field name, and new value for a particular cell. This can be done only in the batch editing mode of the tree grid.
 
 ## Automatically update the column based on another column edited value in batch mode

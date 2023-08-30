@@ -20,11 +20,11 @@ You can also check on this video about persisting data in server.
 
 {% youtube "https://www.youtube.com/watch?v=UuD7_W2yIVs" %}
 
-In the following section, we have explained how to perform CRUD operation in server-side using the [`UrlAdaptor`](../../../data/adaptors.html#url-adaptor) and `RemoteSave Adaptor`.
+In the following section, we have explained how to perform CRUD operation in server-side using the [`UrlAdaptor`](../../../data/adaptors#url-adaptor) and `RemoteSave Adaptor`.
 
 ## URL adaptor
 
-You can use the [`UrlAdaptor`](../../../data/adaptors.html#url-adaptor) of `DataManager` when binding data source from remote data.
+You can use the [`UrlAdaptor`](../../../data/adaptors#url-adaptor) of `DataManager` when binding data source from remote data.
 In the initial load of treegrid, data are fetched from remote data and bound to the treegrid using `url` property of `DataManager`.
 You can map The CRUD operation in treegrid can be mapped to server-side Controller actions using the properties `insertUrl`, `removeUrl`, `updateUrl` and `batchUrl`.
 

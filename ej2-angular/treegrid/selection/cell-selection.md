@@ -38,7 +38,7 @@ Select range of cells between the start index and end index which includes in be
 
 To perform cell selection programmatically, you can use [`selectCell`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectcell) method. To use this method you need to pass the cellIndex as parameter like in the below sample.
 
-To clear the selected rows or cells, by calling the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#clearselection) method in tree grid.
+To clear the selected rows or cells, by calling the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#clearselection) method in tree grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

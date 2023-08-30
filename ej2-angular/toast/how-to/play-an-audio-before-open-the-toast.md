@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Here below sample demonstrates to playing audio background while opening toast. Here we have included audio play codes into beforeOpen event Function.
 
-> If you want to stop the audio after displaying toast use [`open`](https://ej2.syncfusion.com/angular/documentation/api/toast#open) event in Toast. please check the Toast Events [`api's`](https://ej2.syncfusion.com/angular/documentation/api/toast#events) for further customization.
+> If you want to stop the audio after displaying toast use [`open`](https://ej2.syncfusion.com/angular/documentation/api/toast/#open) event in Toast. please check the Toast Events [`api's`](https://ej2.syncfusion.com/angular/documentation/api/toast/#events) for further customization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

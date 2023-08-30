@@ -130,7 +130,7 @@ The excel export provides outline option for grouped records which hides the det
 
 ## Define file name
 
-You can assign the file name for the exported document by defining [`fileName`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#filename) property in [`excelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties).
+You can assign the file name for the exported document by defining [`fileName`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#filename) property in [`excelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
