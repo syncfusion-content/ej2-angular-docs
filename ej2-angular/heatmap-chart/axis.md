@@ -112,13 +112,13 @@ In HeatMap, you can place the axis label in an opposite position of its default 
 
 The text style of the axis labels can be customized using the following options available in the [textStyle](https://ej2.syncfusion.com/angular/documentation/api/heatmap/axis/#textstyle) property.
 
-* [color](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#color) - It is used to change the text color of the axis labels.
-* [fontFamily](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#fontfamily) - It is used to change the font family of the axis labels.
-* [fontStyle](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#fontstyle) - It is used to change the font style of the axis labels.
-* [fontWeight](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#fontweight) - It is used to change the font weight of the axis labels.
-* [size](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#size) - It is used to change the font size of the axis labels.
-* [textAlignment](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#textalignment) - It is used to position and align the axis labels. This property allows you to specify values such as **Near**, **Center**, and **Far**.
-* [textOverflow](https://helpej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#textoverflow) - When the axis label exceeds the intended space, this property is used to trim or wrap it. This property takes values such as **None**, **Trim**, and **Wrap**.
+* [color](https://ej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#color) - It is used to change the text color of the axis labels.
+* [fontFamily](https://ej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#fontfamily) - It is used to change the font family of the axis labels.
+* [fontStyle](https://ej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#fontstyle) - It is used to change the font style of the axis labels.
+* [fontWeight](https://ej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#fontweight) - It is used to change the font weight of the axis labels.
+* [size](https://ej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#size) - It is used to change the font size of the axis labels.
+* [textAlignment](https://ej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#textalignment) - It is used to position and align the axis labels. This property allows you to specify values such as **Near**, **Center**, and **Far**.
+* [textOverflow](https://ej2.syncfusion.com/angular/documentation/api/heatmap/fontModel/#textoverflow) - When the axis label exceeds the intended space, this property is used to trim or wrap it. This property takes values such as **None**, **Trim**, and **Wrap**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

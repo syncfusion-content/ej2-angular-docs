@@ -16,7 +16,7 @@ Follow the given steps to change the header text dynamically:
 
 **Step 1**:
 
-Get the column object corresponding to the field name by using the [`getColumnByField`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnbyfield) method.
+Get the column object corresponding to the field name by using the [`getColumnByField`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnbyfield) method.
 Then change the header Text value.
 
 ```typescript
@@ -28,7 +28,7 @@ Then change the header Text value.
 
 **Step 2**:
 
-To reflect the changes in the Tree Grid header, invoke the [`refreshColumns`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#refreshcolumns) method.
+To reflect the changes in the Tree Grid header, invoke the [`refreshColumns`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#refreshcolumns) method.
 
 ```typescript
 
@@ -50,4 +50,4 @@ To reflect the changes in the Tree Grid header, invoke the [`refreshColumns`](ht
   
 {% previewsample "page.domainurl/samples/treegrid/refresh-cs3" %}
 
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

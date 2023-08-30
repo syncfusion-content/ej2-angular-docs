@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Drilldown in Angular Maps component
 
-By clicking a continent, all the countries available in that continent can be viewed using the drill-down feature. For example, the countries in the `Africa` continent have been showcased here. To showcase all the countries in `Africa` continent by clicking the [`shapeSelected`](https://ej2.syncfusion.com/angular/documentation/api/maps#shapeselected) event as mentioned in the following example.
+By clicking a continent, all the countries available in that continent can be viewed using the drill-down feature. For example, the countries in the `Africa` continent have been showcased here. To showcase all the countries in `Africa` continent by clicking the [`shapeSelected`](https://ej2.syncfusion.com/angular/documentation/api/maps/#shapeselected) event as mentioned in the following example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

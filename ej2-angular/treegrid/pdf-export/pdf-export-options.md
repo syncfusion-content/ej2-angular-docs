@@ -68,7 +68,7 @@ PDF export provides an option to export hidden columns of the TreeGrid by defini
 
 ## Show or hide columns on exported PDF
 
-You can show a hidden column or hide a visible column while exporting the treegrid using [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbarclick) and [`pdfExportComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#pdfExportComplete) events.
+You can show a hidden column or hide a visible column while exporting the treegrid using [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbarclick) and [`pdfExportComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#pdfExportComplete) events.
 
 In the `toolbarClick` event, based on `args.item.text` as `PDF Export`. We can show or hide columns by setting `column.visible` property to `true` or `false` respectively.
 

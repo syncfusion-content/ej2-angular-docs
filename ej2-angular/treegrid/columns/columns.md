@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Columns in Angular Treegrid component
 
-The column definitions are used as the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#dataSource) schema in the TreeGrid. This plays a vital role in rendering column values in the required format.
-The treegrid operations such as sorting, filtering and searching etc. are performed based on column definitions. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#field) property of the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#column) is necessary to map the data source values in TreeGrid columns.
+The column definitions are used as the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#dataSource) schema in the TreeGrid. This plays a vital role in rendering column values in the required format.
+The treegrid operations such as sorting, filtering and searching etc. are performed based on column definitions. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#field) property of the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#column) is necessary to map the data source values in TreeGrid columns.
 
-> 1. If the column [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#field) is not specified in the dataSource, the column values will be empty.
-> 2. If the [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#field) name contains “dot” operator, it is considered as complex binding.
+> 1. If the column [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#field) is not specified in the dataSource, the column values will be empty.
+> 2. If the [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#field) name contains “dot” operator, it is considered as complex binding.
 
-[`treeColumnIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#treecolumnindex) property denotes the column that is used to expand and collapse child rows.
+[`treeColumnIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#treecolumnindex) property denotes the column that is used to expand and collapse child rows.
 
 ## Format
 
-To format cell values based on specific culture, use the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#format) property. The TreeGrid uses [`Internalization`](../../common/internationalization/) library to format [`number`](../../common/internationalization/#number-formatting) and [`date`](../../common/internationalization/#manipulating-datetime) values.
+To format cell values based on specific culture, use the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format) property. The TreeGrid uses [`Internalization`](../../common/internationalization/) library to format [`number`](../../common/internationalization/#number-formatting) and [`date`](../../common/internationalization/#manipulating-datetime) values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,7 +54,7 @@ Please refer to the link to know more about [`Number formatting`](../../common/i
 
 You can format date values either using built-in date format string or custom format string.
 
-For built-in date format you can specify [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#format) property as string   (Example: `yMd`). Please refer to the link to know more about [`Date formatting`](../../common/internationalization/#manipulating-datetime).
+For built-in date format you can specify [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format) property as string   (Example: `yMd`). Please refer to the link to know more about [`Date formatting`](../../common/internationalization/#manipulating-datetime).
 
 You can also use custom format string to format the date values. Some of the custom formats and the formatted date values are given in the below table.
 
@@ -321,4 +321,4 @@ You can get the unique id of the column by field name using [`getUidByColumnFiel
 > You can get the column name by uid in the tree grid by passing the uid as a parameter to the [`getColumnByUid`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnbyuid) method.
 > You can get the column index by field name by passing the field name as a parameter to the [`getColumnIndexByField`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnindexbyfield) method in tree grid.
 > You can get the column names in the tree grid by the [`getColumnFieldNames`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getcolumnfieldnames) method.
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

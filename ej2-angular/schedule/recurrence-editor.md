@@ -63,7 +63,7 @@ By default, there are 3 types of end options available in the recurrence editor 
 * Until
 * Count
 
-It is possible to customize the recurrence editor to display only the specific end options, such as the `Until` and `Count` options alone, by setting the appropriate [`endTypes`](https://ej2.syncfusion.com/react/documentation/api/recurrence-editor#endtypes) option.
+It is possible to customize the recurrence editor to display only the specific end options, such as the `Until` and `Count` options alone, by setting the appropriate [`endTypes`](https://ej2.syncfusion.com/react/documentation/api/recurrence-editor/#endtypes) option.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -169,4 +169,4 @@ In case, if the rule is given in "NEVER ENDS" category, then you can mention the
   
 {% previewsample "page.domainurl/samples/schedule/recur-editor-cs4" %}
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-ui-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

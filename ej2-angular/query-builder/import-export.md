@@ -14,7 +14,7 @@ Importing allows you to view or edit the predefined conditions which is availabl
 
 ## Initial rendering
 
-To apply conditions initially, you can define the [`rule`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#rule) Here, you can import structured JSON object by defining the [`rule`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#rule) property.
+To apply conditions initially, you can define the [`rule`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#rule) Here, you can import structured JSON object by defining the [`rule`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#rule) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

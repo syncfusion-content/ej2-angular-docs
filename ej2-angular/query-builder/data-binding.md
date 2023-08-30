@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular Query builder component
 
-The Query Builder uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#datasource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection. It supports two kinds of binding:
+The Query Builder uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#datasource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection. It supports two kinds of binding:
 
 * Local data
 * Remote data
 
 ## Local data
 
-To bind local data to the query builder, you can assign the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#datasource) property  with a JavaScript object array. The local data source can also be provided as an instance of the `DataManager`.
+To bind local data to the query builder, you can assign the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#datasource) property  with a JavaScript object array. The local data source can also be provided as an instance of the `DataManager`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

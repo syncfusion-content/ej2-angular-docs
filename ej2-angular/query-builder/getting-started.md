@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Query builder component
 
-This section explains how to create and demonstrate the basic usage of the [Angular Query Builder](https://www.syncfusion.com/angular-ui-components/angular-query-builder) module.
+This section explains how to create and demonstrate the basic usage of the [Angular Query Builder](https://www.syncfusion.com/angular-components/angular-query-builder) module.
 
 ## Dependencies
 

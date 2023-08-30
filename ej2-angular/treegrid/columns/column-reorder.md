@@ -50,7 +50,7 @@ The tree grid have an option to reorder Columns either by interaction or by usin
 
 ## Reorder multiple columns
 
-Multiple columns can be reordered at a time by using the [`reorderColumns`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#reordercolumns) method.
+Multiple columns can be reordered at a time by using the [`reorderColumns`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#reordercolumns) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

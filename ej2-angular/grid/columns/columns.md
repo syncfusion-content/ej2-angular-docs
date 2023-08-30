@@ -498,8 +498,8 @@ You can control various actions such as filtering, grouping, sorting, resizing, 
 * [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowgrouping): Enables or disables grouping for a column.
 * [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowsorting): Enables or disables sorting for a column.
 * [allowReordering](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowreordering): Enables or disables reordering for a column.
-* [allowResizing](https://helpej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowresizing): Enables or disables resizing for a column
-* [allowSearching](https://helpej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowsearching): Enables or disables searching for a column
+* [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowresizing): Enables or disables resizing for a column
+* [allowSearching](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#allowsearching): Enables or disables searching for a column
 
 Here is an example code that demonstrates how to control grid actions for specific columns:
 
@@ -653,5 +653,5 @@ In this example, we have a Grid that displays data with three columns: **Order I
 
 * [Group Column by Format](../grouping#group-by-format)
 * [Format grid with auto generation columns in Angular Grid](https://www.syncfusion.com/forums/141181/format-grid-with-auto-generation-columns-in-angular-grid)
-* [Background color change for stacked headers and calculated columns in Angular Grid](https://www.syncfusion.com/forums/139804background-color-change-for-stacked-headers-and-calculated-columns-in-angular-grid)
+* [Background color change for stacked headers and calculated columns in Angular Grid](https://www.syncfusion.com/forums/139804/background-color-change-for-stacked-headers-and-calculated-columns-in-angular-grid)
 * [Drag and Drop Between two grids in Angular Grid](https://www.syncfusion.com/forums/150058/drag-and-drop-between-two-grids-in-angular-grid)
