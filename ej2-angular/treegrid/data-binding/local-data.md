@@ -17,7 +17,7 @@ Two types of Data binding are possible with the TreeGrid control.
 * Hierarchical Datasource binding
 * Self-Referential Data binding (Flat Data)
 
-To bind local data to the treegrid, you can assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource) property. The local data source can also be provided as an instance of the `DataManager`.
+To bind local data to the treegrid, you can assign a JavaScript object array to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property. The local data source can also be provided as an instance of the `DataManager`.
 
 > By default, `DataManager` uses `JsonAdaptor` for local data-binding.
 

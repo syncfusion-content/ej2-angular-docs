@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Header text
 
-By default, column header title is displayed from column [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#field) value. To override the default header title, you have to define the [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headertext) value.
+By default, column header title is displayed from column [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#field) value. To override the default header title, you have to define the [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#headertext) value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,11 +28,11 @@ By default, column header title is displayed from column [`field`](https://ej2.s
   
 {% previewsample "page.domainurl/samples/treegrid/columns-cs25" %}
 
-> * If both the [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#field) and [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headertext) are not defined in the column, the column renders with “empty” header text.
+> * If both the [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#field) and [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#headertext) are not defined in the column, the column renders with “empty” header text.
 
 ## Header template
 
-You can customize the header element by using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headerTemplate) property.
+You can customize the header element by using the [`headerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#headerTemplate) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -56,8 +56,8 @@ The following properties are used to customize the annotation.
 * [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#zindex) - Bring the annotation to the front or back, when annotation overlaps with another element.
 * [`axisValue`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#axisvalue) - To place the annotation in the specified axis value with respect to the provided axis index.
 * [`axisIndex`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#axisindex) - To place the annotation in the specified axis with respect to the provided axis value.
-* [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation#horizontalalignment-string) - To place the annotation horizontally.
-* [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation#verticalalignment-string) - To place the annotation vertically.
+* [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#horizontalalignment-string) - To place the annotation horizontally.
+* [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#verticalalignment-string) - To place the annotation vertically.
 * [`x`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#x), [`y`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#y) - To place the annotation in the specified location.
 
 ### Changing the z-index

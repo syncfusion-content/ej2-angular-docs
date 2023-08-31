@@ -108,4 +108,4 @@ By default, Pager will be rendered at the bottom of the TreeGrid. You can also r
 > * The `click` event triggers when the numeric items in the pager is clicked.
 > * The `dropDownChanged` event triggers when pageSize DropDownList value is selected.
 > * You can get the pager element by [`getPager`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getpager) method in the tree grid.
-> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Sort columns in Angular Query builder component
 
-SortDirection allows you to sort the columns bounded to the Query Builder to view the columns by ascending or descending order. You should set the [`sortDirection`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#sortdirection) property to sort the fields.
+SortDirection allows you to sort the columns bounded to the Query Builder to view the columns by ascending or descending order. You should set the [`sortDirection`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#sortdirection) property to sort the fields.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

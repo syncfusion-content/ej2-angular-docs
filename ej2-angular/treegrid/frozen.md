@@ -133,4 +133,4 @@ Validation rules for the 'duration' and 'taskID' columns can be added in the fol
 {% previewsample "page.domainurl/samples/treegrid/isfrozen-cs3" %}
 
 > * This is applicable when a frozen column is enabled and the edit mode is set as "**Row**" in the tree grid.
-> * You can refer to Syncfusion [`Angular Tree Grid`](https://www.syncfusion.com/angular-ui-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. Also, explore Syncfusion [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to know how to present and manipulate data.
+> * You can refer to Syncfusion [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. Also, explore Syncfusion [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to know how to present and manipulate data.
