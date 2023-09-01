@@ -70,15 +70,15 @@ The following code example demonstrates how to enable task dependency editing in
   
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/dependencyedit-cs1" %}
 
-![Alt text](images/user-interaction.png)
+![Alt text](../images/user-interaction.png)
 
 Updating with mouse interaction action
 
-![Alt text](images/cell-edit.png)
+![Alt text](../images/cell-edit.png)
 
 Updating with cell Edit
 
-![Alt text](images/dialog.png)
+![Alt text](../images/dialog.png)
 
 Updating with Dialog
 

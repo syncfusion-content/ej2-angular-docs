@@ -9,9 +9,9 @@ import { ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 @Component({
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="450px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]="1"
+       `<ejs-gantt id="ganttDefault" height="450px" [dataSource]="data" [taskFields]="taskSettings" [loadingIndicator]="loadingIndicator" [treeColumnIndex]="1"
         [splitterSettings]="splitterSettings" [columns]="columns" [labelSettings]="labelSettings"
-        [allowSelection]="true" [enableVirtualization]="true" [autoCalculateDateScheduling]="false" [editSettings] = "editSettings" [highlightWeekends]="true"></ejs-gantt>`,
+        [allowSelection]="true" [enableVirtualization]="true" [enableVirtualMaskRow]="true" [autoCalculateDateScheduling]="false" [editSettings] = "editSettings" [highlightWeekends]="true"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{
@@ -19,6 +19,7 @@ export class AppComponent{
     public data?: object[];
     public taskSettings?: object;
     public splitterSettings?: object;
+    public loadingIndicator?:object;
     public columns?: object[];
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItem[];
@@ -228,6 +229,7 @@ this.columns = [
 this.splitterSettings = {
     columnIndex: 2
 };
+this.loadingIndicator = {indicatorType: 'Shimmer'}
 this.editSettings = {
     allowAdding: true,
     allowEditing: true,
