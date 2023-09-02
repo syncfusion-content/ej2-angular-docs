@@ -195,7 +195,7 @@ The following samples shows the sidebar component in browser.
 Enabling the [`showBackdrop`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#showbackdrop) in the Sidebar component will prevent the main content from user interactions, when it is in expanded state.
 Here, DOM elements will not get changed. It only close the main content by covering with black backdrop overlay and focus only the Sidebar in screen. Sidebar can be rendered with specific width by setting [`width`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#width) property.
 
->Note: To achieve a proper **backdrop**, we suggest that you create a wrapper parent container for the div block in which you intend to enable the backdrop. Set the class name of this parent container as the **target** for the Sidebar. Alternatively, you can place an empty div container after the target container.
+N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent container for the div block in which you intend to enable the backdrop. Set the class name of this parent container as the **target** for the Sidebar. Alternatively, you can place an empty div container after the target container.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
