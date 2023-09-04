@@ -38,6 +38,7 @@ export class AppComponent {
                 virtualData.push(subtasks);
             }
         }
+        this.data = virtualData,
         this.taskSettings = {
             id: 'TaskID',
             name: 'TaskName',

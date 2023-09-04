@@ -8,16 +8,31 @@ import { Button } from '@syncfusion/ej2-buttons';
   selector: 'app-container',
   providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<div class="col-md-8"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList="true" width=width></ejs-pivotview></div><div class="col-md-2"><button ej-button id='refresh'>Refresh</button></div>`
+  template: `<div class="col-md-8"><ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]=dataSourceSettings
+    showFieldList="true" width=width  height=height></ejs-pivotview></div><div class="col-md-2">
+    <button ej-button id='refresh' (click)='applyData($event)'>Refresh</button></div>`
 })
 export class AppComponent implements OnInit {
     public pivotData?: IDataSet[];
     public dataSourceSettings?: IDataOptions;
     public button?: Button;
     public width?: string;
+    public height?: string;
 
     @ViewChild('pivotview',{static: false})
     public pivotGridObj?: PivotViewComponent;
+
+    applyData(e: Event): void {
+        debugger;
+        ((this.pivotGridObj as PivotViewComponent).engineModule as PivotEngine).fieldList = {};
+        ((this.pivotGridObj as PivotViewComponent).dataSourceSettings as DataSourceSettings ).dataSource = [
+            { 'Sold': 31, 'Amount': 52824, 'Country': 'France', 'Year': 'FY 2015' },
+            { 'Sold': 51, 'Amount': 86904, 'Country': 'France', 'Year': 'FY 2015' },
+            { 'Sold': 90, 'Amount': 153360, 'Country': 'France', 'Year': 'FY 2015' },
+            { 'Sold': 25, 'Amount': 42600, 'Country': 'France', 'Year': 'FY 2015' },
+            { 'Sold': 27, 'Amount': 46008, 'Country': 'France', 'Year': 'FY 2016' }
+        ] as IDataSet[];
+    };
 
     ngOnInit(): void {
 
@@ -41,19 +56,12 @@ export class AppComponent implements OnInit {
 
         this.width = '100%';
 
-        this.button = new Button({ isPrimary: true });
-        this.button.appendTo('#refresh');
+        this.height = '350';
 
-        this.button.element.onclick = (): void => {
-            (this.pivotGridObj?.engineModule as PivotEngine).fieldList = {};
-            (this.pivotGridObj?.dataSourceSettings as DataSourceSettings ).dataSource = [
-                { 'Sold': 31, 'Amount': 52824, 'Country': 'France', 'Year': 'FY 2015' },
-                { 'Sold': 51, 'Amount': 86904, 'Country': 'France', 'Year': 'FY 2015' },
-                { 'Sold': 90, 'Amount': 153360, 'Country': 'France', 'Year': 'FY 2015' },
-                { 'Sold': 25, 'Amount': 42600, 'Country': 'France', 'Year': 'FY 2015' },
-                { 'Sold': 27, 'Amount': 46008, 'Country': 'France', 'Year': 'FY 2016' }
-            ] as IDataSet[];
-        };
+        this.button = new Button({ 
+            isPrimary: true,
+        });
+        this.button.appendTo('#refresh');
     }
 }
 
