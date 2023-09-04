@@ -51,7 +51,7 @@ export class AppComponent {
                 for (let item of args.items) {
                     if (item.text === 'delete') {
                         if (!$this.diagram.selectedItems.nodes.length && !$this.diagram.selectedItems.connectors.length) {
-                            args.hiddenItems.push(item.text);
+                            args.hiddenItems.push(item.id as string);
                         }
                     }
                 }
