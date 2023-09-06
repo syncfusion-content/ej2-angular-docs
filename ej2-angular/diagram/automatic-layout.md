@@ -181,6 +181,10 @@ The layout’s [`springLength`](https://ej2.syncfusion.com/angular/documentation
 
 A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) of layout should be set as `MindMap`.
 
+To create a Mindmap Layout using Angular Diagram, refer to the below video link,
+
+{% youtube "youtube:https://www.youtube.com/watch?v=iRQJbFnE_IQ" %}
+
 ## Tree Orientation in layout
 
 An [`Orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) of a `MindMapTreeLayout` is used to arrange the tree layout according to a specific direction. By default, the orientation is set to Horizontal. The following table outlines the various orientation types available:

@@ -49,6 +49,8 @@ The PDF Viewer control provides the support to import and export annotations usi
 
 You can import annotations using JSON object or JSON file in code behind like the below code snippet.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
@@ -63,7 +65,6 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
     template: `<button (click)="OnImportAnnotationsClick()">Import Annotations</button>
                <div class="content-wrapper">
                   <ejs-pdfviewer id="pdfViewer"
-                        [serviceUrl]='service'
                         [documentPath]='document'
                         style="height:640px;display:block">
                   </ejs-pdfviewer>
@@ -76,11 +77,8 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
   export class AppComponent implements OnInit {
     @ViewChild('pdfviewer')
     public pdfviewerControl: PdfViewerComponent;
-    //The service must be running in the local
-    public service: string =
-      'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
     //Local file path
-    public document: string = 'PDF_Succinctly.pdf';
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     OnImportAnnotationsClick() {
       var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
       pdfviewer.importAnnotation({
@@ -256,9 +254,257 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
     }
   }
 ```
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
+```typescript
+import { ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService, AnnotationDataFormat
+       } from '@syncfusion/ej2-angular-pdfviewer';
+  @Component({
+    selector: 'app-root',
+    // specifies the template string for the PDF Viewer component
+    template: `<button (click)="OnImportAnnotationsClick()">Import Annotations</button>
+               <div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                        [serviceUrl]='service'
+                        [documentPath]='document'
+                        style="height:640px;display:block">
+                  </ejs-pdfviewer>
+               </div>`,
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService,
+                 AnnotationService],
+  })
+  export class AppComponent implements OnInit {
+    @ViewChild('pdfviewer')
+    public pdfviewerControl: PdfViewerComponent;
+    //The service must be running in the local
+    public service: string =
+      'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+    //Local file path
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    OnImportAnnotationsClick() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.importAnnotation({
+        pdfAnnotation: {
+          '0': {
+            shapeAnnotation: [
+              {
+                ShapeAnnotationType: 'Square',
+                Author: 'Guest',
+                AnnotationSelectorSettings: {
+                  selectionBorderColor: '',
+                  resizerBorderColor: 'black',
+                  resizerFillColor: '#FF4081',
+                  resizerSize: 8,
+                  selectionBorderThickness: 1,
+                  resizerShape: 'Square',
+                  selectorLineDashArray: [],
+                  resizerLocation: 3,
+                  resizerCursorType: null,
+                },
+                ModifiedDate: '5/19/2021, 11:44:51 AM',
+                Subject: 'Rectangle',
+                Note: '',
+                IsCommentLock: false,
+                StrokeColor: 'rgba(255,0,0,1)',
+                FillColor: 'rgba(255,255,255,0)',
+                Opacity: 1,
+                Bounds: {
+                  X: 154,
+                  Y: 71,
+                  Width: 299,
+                  Height: 173,
+                  Location: { X: 154, Y: 71 },
+                  Size: { IsEmpty: false, Width: 299, Height: 173 },
+                  Left: 154,
+                  Top: 71,
+                  Right: 453,
+                  Bottom: 244,
+                },
+                Thickness: 1,
+                BorderStyle: 'Solid',
+                BorderDashArray: 0,
+                RotateAngle: 'RotateAngle0',
+                IsCloudShape: false,
+                CloudIntensity: 0,
+                RectangleDifference: null,
+                VertexPoints: null,
+                LineHeadStart: null,
+                LineHeadEnd: null,
+                IsLocked: false,
+                AnnotName: 'e9ba2384-a202-45ff-0146-444fa0424dc5',
+                Comments: null,
+                State: '',
+                StateModel: '',
+                AnnotType: 'shape',
+                EnableShapeLabel: false,
+                LabelContent: null,
+                LabelFillColor: null,
+                LabelBorderColor: null,
+                FontColor: null,
+                FontSize: 0,
+                CustomData: null,
+                LabelBounds: {
+                  X: 0,
+                  Y: 0,
+                  Width: 0,
+                  Height: 0,
+                  Location: { X: 0, Y: 0 },
+                  Size: { IsEmpty: true, Width: 0, Height: 0 },
+                  Left: 0,
+                  Top: 0,
+                  Right: 0,
+                  Bottom: 0,
+                },
+                LabelSettings: null,
+                AnnotationSettings: {
+                  minWidth: 0,
+                  maxWidth: 0,
+                  minHeight: 0,
+                  maxHeight: 0,
+                  isLock: false,
+                  isPrint: true,
+                },
+                AllowedInteractions: ['None'],
+                IsPrint: true,
+                ExistingCustomData: null,
+              },
+              {
+                ShapeAnnotationType: 'Circle',
+                Author: 'Guest',
+                AnnotationSelectorSettings: {
+                  selectionBorderColor: '',
+                  resizerBorderColor: 'black',
+                  resizerFillColor: '#FF4081',
+                  resizerSize: 8,
+                  selectionBorderThickness: 1,
+                  resizerShape: 'Square',
+                  selectorLineDashArray: [],
+                  resizerLocation: 3,
+                  resizerCursorType: null,
+                },
+                ModifiedDate: '5/19/2021, 11:44:53 AM',
+                Subject: 'Circle',
+                Note: '',
+                IsCommentLock: false,
+                StrokeColor: 'rgba(255,0,0,1)',
+                FillColor: 'rgba(255,255,255,0)',
+                Opacity: 1,
+                Bounds: {
+                  X: 591,
+                  Y: 104,
+                  Width: 100,
+                  Height: 144,
+                  Location: { X: 591, Y: 104 },
+                  Size: { IsEmpty: false, Width: 100, Height: 144 },
+                  Left: 591,
+                  Top: 104,
+                  Right: 691,
+                  Bottom: 248,
+                },
+                Thickness: 1,
+                BorderStyle: 'Solid',
+                BorderDashArray: 0,
+                RotateAngle: 'RotateAngle0',
+                IsCloudShape: false,
+                CloudIntensity: 0,
+                RectangleDifference: null,
+                VertexPoints: null,
+                LineHeadStart: null,
+                LineHeadEnd: null,
+                IsLocked: false,
+                AnnotName: '317e203f-e078-4ca1-2125-b86a806dbea5',
+                Comments: null,
+                State: '',
+                StateModel: '',
+                AnnotType: 'shape',
+                EnableShapeLabel: false,
+                LabelContent: null,
+                LabelFillColor: null,
+                LabelBorderColor: null,
+                FontColor: null,
+                FontSize: 0,
+                CustomData: null,
+                LabelBounds: {
+                  X: 0,
+                  Y: 0,
+                  Width: 0,
+                  Height: 0,
+                  Location: { X: 0, Y: 0 },
+                  Size: { IsEmpty: true, Width: 0, Height: 0 },
+                  Left: 0,
+                  Top: 0,
+                  Right: 0,
+                  Bottom: 0,
+                },
+                LabelSettings: null,
+                AnnotationSettings: {
+                  minWidth: 0,
+                  maxWidth: 0,
+                  minHeight: 0,
+                  maxHeight: 0,
+                  isLock: false,
+                  isPrint: true,
+                },
+                AllowedInteractions: ['None'],
+                IsPrint: true,
+                ExistingCustomData: null,
+              },
+            ],
+          },
+        },
+      });
+    }
+  }
+```
+{% endhighlight %}
+{% endtabs %}
 
 Refer to the following code snippet to import annotations from a JSON file.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+import { ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService, AnnotationDataFormat
+       } from '@syncfusion/ej2-angular-pdfviewer';
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<button (click)="onImportAnnotationsClick()">Import Annotations</button>
+             <div class="content-wrapper">
+                <ejs-pdfviewer id="pdfViewer"
+                        [documentPath]='document'
+                        style="height:640px;display:block">
+                </ejs-pdfviewer>
+             </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService,TextSelectionService, PrintService, 
+               AnnotationService],
+  })
+  export class AppComponent implements OnInit {
+    @ViewChild('pdfviewer')
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    onImportAnnotationsClick() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.importAnnotation('PDF_Succinctly.json', AnnotationDataFormat.Json);
+    }
+}
+```
+{% endhighlight %}
+
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
@@ -286,18 +532,58 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
   export class AppComponent implements OnInit {
     @ViewChild('pdfviewer')
     public service: string = 'https://localhost:44347/pdfviewer';
-    public document: string = 'PDF_Succinctly.pdf';
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     onImportAnnotationsClick() {
       var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
       pdfviewer.importAnnotation('PDF_Succinctly.json', AnnotationDataFormat.Json);
     }
 }
 ```
+{% endhighlight %}
+{% endtabs %}
 
 >Run the [web service](https://github.com/SyncfusionExamples/EJ2-PDFViewer-WebServices/tree/main/ASP.NET%20Core/PdfViewerWebService_3.0) and then the angular code. Also note that, the JSON file for importing the annotation should be placed in the location as specified in the GetDocumentPath method of the PdfViewerController.
 
 Refer to the following code snippet to import annotations from an XFDF file.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+import { ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService, AnnotationDataFormat
+       } from '@syncfusion/ej2-angular-pdfviewer';
+
+  @Component({
+    selector: 'app-root',
+    // specifies the template string for the PDF Viewer component
+    template: `<button (click)="OnImportAnnotationsClick()">Import Annotations</button>
+               <div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                          [documentPath]='document'
+                          style="height:640px;display:block">
+                   </ejs-pdfviewer>
+               </div>`,
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService, 
+                 AnnotationService ]
+  })
+  export class AppComponent implements OnInit {
+      @ViewChild('pdfviewer')
+      public pdfviewerControl: PdfViewerComponent;
+      public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+      OnImportAnnotationsClick() {
+          var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+          pdfviewer.importAnnotation('PDF_Succinctly.xfdf', AnnotationDataFormat.xfdf);
+      }
+  }
+```
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
@@ -327,13 +613,15 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
       @ViewChild('pdfviewer')
       public pdfviewerControl: PdfViewerComponent;
       public service: string = 'https://localhost:44347/pdfviewer';
-      public document: string = 'PDF_Succinctly.pdf';
+      public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       OnImportAnnotationsClick() {
           var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
           pdfviewer.importAnnotation('PDF_Succinctly.xfdf', AnnotationDataFormat.xfdf);
       }
   }
 ```
+{% endhighlight %}
+{% endtabs %}
 
 >Run the [web service](https://github.com/SyncfusionExamples/EJ2-PDFViewer-WebServices/tree/main/ASP.NET%20Core/PdfViewerWebService_3.0) and then the angular code. Also note that, the XFDF file for importing the annotation should be placed in the location as specified in the GetDocumentPath method of the PdfViewerController.
 
@@ -359,6 +647,47 @@ The PDF Viewer control provides the support to export the annotations as JSON fi
 ## Exporting annotation using PDF Viewer API
 
 You can export annotations as JSON file in code behind like the following code snippet.
+
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+
+```typescript
+import { ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PdfViewerComponent,LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService,  AnnotationDataFormat
+       } from '@syncfusion/ej2-angular-pdfviewer';
+  @Component({
+    selector: 'app-root',
+    // specifies the template string for the PDF Viewer component
+    template: `<button (click)="OnExportAnnotationsClick()">Export Annotations</button>
+                <div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                            [documentPath]='document'
+                            [exportAnnotationFileName]='exportAnnotationFileName'
+                            style="height:640px;display:block">
+                  </ejs-pdfviewer>
+                </div>`,
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService,
+                 AnnotationService]
+  })
+  export class AppComponent implements OnInit {
+    @ViewChild('pdfviewer')
+    public pdfviewerControl: PdfViewerComponent;
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public exportAnnotationFileName: string = 'ExportedAnnotations.json';
+    OnExportAnnotationsClick() {
+      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+      pdfviewer.exportAnnotation(AnnotationDataFormat.Json);
+    }
+  }
+```
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
 
 ```typescript
 import { ViewChild } from '@angular/core';
@@ -389,7 +718,7 @@ import { PdfViewerComponent,LinkAnnotationService, BookmarkViewService,
     @ViewChild('pdfviewer')
     public pdfviewerControl: PdfViewerComponent;
     public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-    public document: string = 'PDF_Succinctly.pdf';
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public exportAnnotationFileName: string = 'ExportedAnnotations.json';
     OnExportAnnotationsClick() {
       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
@@ -397,8 +726,51 @@ import { PdfViewerComponent,LinkAnnotationService, BookmarkViewService,
     }
   }
 ```
+{% endhighlight %}
+{% endtabs %}
 
 Refer to the following code snippet to export annotations as XFDF file.
+
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+
+```typescript
+import { ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService, AnnotationDataFormat
+       } from '@syncfusion/ej2-angular-pdfviewer';
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<button (click)="OnExportAnnotationsClick()">Export Annotations</button>
+              <div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                          [documentPath]='document'
+                          [exportAnnotationFileName]='exportAnnotationFileName'
+                          style="height:640px;display:block">
+                  </ejs-pdfviewer>
+              </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService]
+})
+export class AppComponent implements OnInit {
+    @ViewChild('pdfviewer')
+    public pdfviewerControl: PdfViewerComponent;
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public exportAnnotationFileName: string = 'ExportedAnnotations.xfdf';
+    OnExportAnnotationsClick() {
+        var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+        pdfviewer.exportAnnotation(AnnotationDataFormat.Xfdf);
+    }
+}
+```
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
 
 ```typescript
 import { ViewChild } from '@angular/core';
@@ -429,7 +801,7 @@ export class AppComponent implements OnInit {
     @ViewChild('pdfviewer')
     public pdfviewerControl: PdfViewerComponent;
     public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-    public document: string = 'PDF_Succinctly.pdf';
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public exportAnnotationFileName: string = 'ExportedAnnotations.xfdf';
     OnExportAnnotationsClick() {
         var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
@@ -437,3 +809,5 @@ export class AppComponent implements OnInit {
     }
 }
 ```
+{% endhighlight %}
+{% endtabs %}

@@ -37,7 +37,14 @@ Using addFormField method, the form fields can be added to the PDF document prog
 {% endhighlight %}
 {% endtabs %}
   
+{% tabs %}
+{% highlight tabtitle="Standalone" %}
+{% previewsample "page.domainurl/samples/pdfviewer/addformfield-cs1-standalone" %}
+{% endhighlight %}
+{% highlight tabtitle="Server-Backed" %}
 {% previewsample "page.domainurl/samples/pdfviewer/addformfield-cs1" %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Edit/Update form field programmatically
 
@@ -55,7 +62,14 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 {% endhighlight %}
 {% endtabs %}
   
+{% tabs %}
+{% highlight tabtitle="Standalone" %}
+{% previewsample "page.domainurl/samples/pdfviewer/updateformfield-cs1-standalone" %}
+{% endhighlight %}
+{% highlight tabtitle="Server-Backed" %}
 {% previewsample "page.domainurl/samples/pdfviewer/updateformfield-cs1" %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Delete form field programmatically
 
@@ -73,10 +87,30 @@ Using deleteFormField method, the form field can be deleted programmatically. We
 {% endhighlight %}
 {% endtabs %}
   
+{% tabs %}
+{% highlight tabtitle="Standalone" %}
+{% previewsample "page.domainurl/samples/pdfviewer/deleteformfield-cs1-standalone" %}
+{% endhighlight %}
+{% highlight tabtitle="Server-Backed" %}
 {% previewsample "page.domainurl/samples/pdfviewer/deleteformfield-cs1" %}
+{% endhighlight %}
+{% endtabs %}
 
 The following code illustrates how to delete a signature from the signature field using the `retrieveFormFields` and `clearFormFields` APIs.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+```html
+<!--Method to remove signature-->
+<button (click)="removeSignature()">Remove Signature</button>
+<!--Render PDF Viewer component-->
+<ejs-pdfviewer id="pdfViewer"
+               [documentPath]="document"
+               style="height:640px;display:block">
+</ejs-pdfviewer>
+```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
 ```html
 <!--Method to remove signature-->
 <button (click)="removeSignature()">Remove Signature</button>
@@ -87,6 +121,8 @@ The following code illustrates how to delete a signature from the signature fiel
                style="height:640px;display:block">
 </ejs-pdfviewer>
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ```typescript
 //Event triggers while clicking the Remove Signature button.
@@ -149,6 +185,50 @@ The form fields in the PDF Document will be validated when the `enableFormFields
 
 Add the following code snippet to validate the form fields,
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+
+import { ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService, FormDesignerService,
+         FormFieldsService, LoadEventArgs, TextFieldSettings
+       } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // Specifies the template string for the PDF Viewer component.
+  template: `<div class="content-wrapper">
+               <ejs-pdfviewer id="pdfViewer"
+                     #pdfviewer
+                     [documentPath]='document'
+                     [enableFormFieldsValidation]=true
+                     (validateFormFields)='validateFormFields($event)'
+                     style="height:640px;display:block">
+               </ejs-pdfviewer>
+             </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService]
+})
+export class AppComponent implements OnInit {
+  @ViewChild('pdfviewer')
+  public pdfviewerControl: PdfViewerComponent;
+  public document: string = 'https://cdn.syncfusion.com/content/pdf/form-designer.pdf';
+
+  public validateFormFields(e: ValidateFormFieldsArgs): void {
+    this.e.nonFillableFields;
+  }
+}
+
+```
+{% endhighlight %}
+
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
 
 import { ViewChild } from '@angular/core';
@@ -181,7 +261,7 @@ export class AppComponent implements OnInit {
   @ViewChild('pdfviewer')
   public pdfviewerControl: PdfViewerComponent;
   public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-  public document: string = 'FormDesigner.pdf';
+  public document: string = 'https://cdn.syncfusion.com/content/pdf/form-designer.pdf';
 
   public validateFormFields(e: ValidateFormFieldsArgs): void {
     this.e.nonFillableFields;
@@ -189,7 +269,8 @@ export class AppComponent implements OnInit {
 }
 
 ```
-
+{% endhighlight %}
+{% endtabs %}
 ## Export and import form fields
 
 The PDF Viewer control provides the support to export and import the form field data in the following formats using the methods `importFormFields`, `exportFormFields`, `exportFormFieldsAsObject`.
@@ -354,6 +435,22 @@ The following code example explains how to update the signature field properties
 
 The following code example explains how to update the properties of the signature field added to the document from the form designer toolbar.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+```html
+    <ejs-pdfviewer
+      id="pdfViewer"
+      [documentPath]="document"
+      [initialFieldSettings] = "initialFieldSettings"
+      [signatureFieldSettings] = "signatureFieldSettings"
+      style="height:640px;display:block"
+    > </ejs-pdfviewer>
+```
+{% endhighlight %}
+
+{% highlight html tabtitle="Server-Backed" %}
+
 ```html
     <ejs-pdfviewer
       id="pdfViewer"
@@ -364,7 +461,8 @@ The following code example explains how to update the properties of the signatur
       style="height:640px;display:block"
     > </ejs-pdfviewer>
 ```
-
+{% endhighlight %}
+{% endtabs %}
 ```typescript
       // Properties to customize the signature field settings
       public signatureFieldSettings = {
@@ -484,6 +582,21 @@ The following code example explains how to update the Textbox field properties o
 
 The following code example explains how to update the properties of the Textbox field added to the document from the form designer toolbar.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+```html
+  <ejs-pdfviewer
+    id="pdfViewer"
+    [documentPath]="document"
+    [textFieldSettings] = "textFieldSettings"
+    style="height:640px;display:block"> 
+  </ejs-pdfviewer>
+```
+{% endhighlight %}
+
+{% highlight html tabtitle="Server-Backed" %}
+
 ```html
   <ejs-pdfviewer
     id="pdfViewer"
@@ -493,6 +606,8 @@ The following code example explains how to update the properties of the Textbox 
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ```typescript
   // Properties to customize the Textbox field settings
@@ -580,6 +695,21 @@ The following code example explains how to update the Password field properties 
 
 The following code example explains how to update the properties of the Password field added to the document from the form designer toolbar.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+```html
+  <ejs-pdfviewer
+    id="pdfViewer"
+    [documentPath]="document"
+    [passwordFieldSettings] = "passwordFieldSettings"
+    style="height:640px;display:block"> 
+  </ejs-pdfviewer>
+```
+{% endhighlight %}
+
+{% highlight html tabtitle="Server-Backed" %}
+
 ```html
   <ejs-pdfviewer
     id="pdfViewer"
@@ -589,6 +719,8 @@ The following code example explains how to update the properties of the Password
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ```typescript
   // Properties to customize the Password field settings
@@ -667,6 +799,19 @@ The following code example explains how to update the CheckBox field properties 
 
 The following code example explains how to update the properties of the CheckBox field added to the document from the form designer toolbar.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+```html
+  <ejs-pdfviewer
+    id="pdfViewer"
+    [documentPath]="document"
+    [checkBoxFieldSettings] = "checkBoxFieldSettings"
+    style="height:640px;display:block"> 
+  </ejs-pdfviewer>
+```
+{% endhighlight %}
+
+{% highlight html tabtitle="Server-Backed" %}
 ```html
   <ejs-pdfviewer
     id="pdfViewer"
@@ -676,6 +821,8 @@ The following code example explains how to update the properties of the CheckBox
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ```typescript
   // Properties to customize the CheckBox field settings
@@ -742,6 +889,19 @@ The following code example explains how to update the RadioButton field properti
 
 The following code example explains how to update the properties of the RadioButton field added to the document from the form designer toolbar.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+```html
+  <ejs-pdfviewer
+    id="pdfViewer"
+    [documentPath]="document"
+    [radioButtonFieldSettings] = "radioButtonFieldSettings"
+    style="height:640px;display:block"> 
+  </ejs-pdfviewer>
+```
+{% endhighlight %}
+
+{% highlight html tabtitle="Server-Backed" %}
 ```html
   <ejs-pdfviewer
     id="pdfViewer"
@@ -751,6 +911,8 @@ The following code example explains how to update the properties of the RadioBut
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ```typescript
   // Properties to customize the RadioButton field settings
@@ -823,6 +985,19 @@ The following code example explains how to update the ListBox field properties o
 
 The following code example explains how to update the properties of the ListBox field added to the document from the form designer toolbar.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+```html
+  <ejs-pdfviewer
+    id="pdfViewer"
+    [documentPath]="document"
+    [listBoxFieldSettings] = "listBoxFieldSettings"
+    style="height:640px;display:block"> 
+  </ejs-pdfviewer>
+```
+{% endhighlight %}
+
+{% highlight html tabtitle="Server-Backed" %}
 ```html
   <ejs-pdfviewer
     id="pdfViewer"
@@ -832,6 +1007,8 @@ The following code example explains how to update the properties of the ListBox 
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ```typescript
   // Properties to customize the ListBox field settings
@@ -917,6 +1094,21 @@ The following code example explains how to update the DropDown field properties 
 
 The following code example explains how to update the properties of the DropDown field added to the document from the form designer toolbar.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+```html
+  <ejs-pdfviewer
+    id="pdfViewer"
+    [documentPath]="document"
+    [DropdownFieldSettings] = "DropdownFieldSettings"
+    style="height:640px;display:block"> 
+  </ejs-pdfviewer>
+```
+{% endhighlight %}
+
+{% highlight html tabtitle="Server-Backed" %}
+
 ```html
   <ejs-pdfviewer
     id="pdfViewer"
@@ -926,6 +1118,8 @@ The following code example explains how to update the properties of the DropDown
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ```typescript
 

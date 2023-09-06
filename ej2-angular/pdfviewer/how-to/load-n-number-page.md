@@ -16,6 +16,42 @@ To utilize this capability in Syncfusion PDF Viewer, use the [initialRenderPages
 
 Using the `initialRenderPages` property judiciously is advisable, especially when dealing with larger documents. It is more suitable for scenarios where a smaller range of pages, such as 10-20, can be loaded to provide a quick initial view of the document.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,
+         ThumbnailViewService, ToolbarService, NavigationService,
+         AnnotationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService
+       } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+                <ejs-pdfviewer id="pdfViewer"
+                       [documentPath]='document'
+                       [initialRenderPages]='initialRender'
+                       style="height:640px;display:block">
+                </ejs-pdfviewer>
+             </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               AnnotationService, TextSearchService, TextSelectionService,
+               PrintService, FormDesignerService, FormFieldsService]
+})
+export class AppComponent implements OnInit {
+  public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+  public initialRender = 10;
+  ngOnInit(): void {
+  }
+}
+
+```
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
 
 import { Component, OnInit } from '@angular/core';
@@ -43,12 +79,14 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 })
 export class AppComponent implements OnInit {
   public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-  public document = 'PDF_Succinctly.pdf';
+  public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   public initialRender = 10;
   ngOnInit(): void {
   }
 }
 
 ```
+{% endhighlight %}
+{% endtabs %}
 
 Find the sample [how to load n number of pages on initial loading](https://stackblitz.com/edit/angular-yzgy7n-yceens?file=app.component.html)

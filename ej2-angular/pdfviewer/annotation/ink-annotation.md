@@ -26,6 +26,41 @@ The ink annotations can be added to the PDF document using the annotation toolba
 
 Refer to the following code sample to switch to the ink annotation mode.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+import { ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService,  AnnotationService
+       } from '@syncfusion/ej2-angular-pdfviewer';
+  @Component({
+    selector: 'app-root',
+    // Specifies the template string for the PDF Viewer component.
+    template: `<button (click)="addAnnotation()">Draw Ink</button>
+                <div class="content-wrapper">
+                <ejs-pdfviewer id="pdfViewer"
+                              [documentPath]='document'
+                              style="height:640px;display:block">
+                </ejs-pdfviewer>
+                </div>`,
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService,
+                 AnnotationService]
+    })
+  export class AppComponent implements OnInit {
+      public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+      addAnnotation() {
+          var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+          pdfviewer.annotationModule.setAnnotationMode("Ink");
+      }
+  }
+```
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
@@ -52,13 +87,15 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
     })
   export class AppComponent implements OnInit {
       public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-      public document: string = 'PDF_Succinctly.pdf';
+      public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       addAnnotation() {
           var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
           pdfviewer.annotationModule.setAnnotationMode("Ink");
       }
   }
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Editing the properties of the ink annotation
 
@@ -89,6 +126,40 @@ The properties of the ink annotation can be set before creating the control usin
 After editing the default values, they will be changed to the selected values.
 Refer to the following code sample to set the default ink annotation settings.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+
+```typescript
+  import { ViewChild } from '@angular/core';
+  import { Component, OnInit } from '@angular/core';
+  import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+           MagnificationService, ThumbnailViewService, ToolbarService,
+           NavigationService, TextSearchService, TextSelectionService,
+           PrintService, AnnotationService
+         } from '@syncfusion/ej2-angular-pdfviewer';
+  @Component({
+    selector: 'app-root',
+    // Specifies the template string for the PDF Viewer component.
+    template: `<div class="content-wrapper">
+                <ejs-pdfviewer id="pdfViewer"
+                      [documentPath]='document'
+                      [inkAnnotationSettings]='inkAnnotationSettings'
+                      style="height:640px;display:block">
+                </ejs-pdfviewer>
+              </div>`,
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService,
+                 AnnotationService]
+    })
+    export class AppComponent implements OnInit {
+        public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+        public inkAnnotationSettings = { author: 'Syncfusion', strokeColor: 'green', thickness: 3, opacity: 0.6 }
+    }
+```
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
+
 ```typescript
   import { ViewChild } from '@angular/core';
   import { Component, OnInit } from '@angular/core';
@@ -115,7 +186,9 @@ Refer to the following code sample to set the default ink annotation settings.
     })
     export class AppComponent implements OnInit {
         public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-        public document: string = 'PDF_Succinctly.pdf';
+        public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
         public inkAnnotationSettings = { author: 'Syncfusion', strokeColor: 'green', thickness: 3, opacity: 0.6 }
     }
 ```
+{% endhighlight %}
+{% endtabs %}

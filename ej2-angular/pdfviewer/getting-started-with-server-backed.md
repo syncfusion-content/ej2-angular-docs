@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting started with Standalone Angular PDF Viewer component | Syncfusion
-description: Checkout and learn about Getting started with Standalone Angular PDF Viewer component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular PDF Viewer component | Syncfusion
+description: Checkout and learn about Getting started with Angular PDF Viewer component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: PDF Viewer 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Standalone PDF Viewer component
+# Getting started with PDF Viewer component
 
-This section explains the steps required to create a simple Standalone Angular PDF Viewer and demonstrates the basic usage of the PDF Viewer control in a Angular CLI application.
+This section explains the steps required to create a simple Angular PDF Viewer and demonstrates the basic usage of the PDF Viewer control in a Angular CLI application.
 
 ## Setup Angular Environment
 
@@ -34,23 +34,11 @@ cd my-app
 
 ## Installing Syncfusion PDF Viewer package
 
-All the available Essential JS 2 packages are published in `npmjs.com` registry. 
-
-* To install PDF Viewer component, use the following command.
+All the available Essential JS 2 packages are published in `npmjs.com` registry. To install PDF Viewer component, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-angular-pdfviewer --save
 ```
-
-* Copy the contents of the ej2-pdfviewer-lib folder from ./node_modules/@syncfusion/ej2-pdfviewer/dist to the src/assets directory using the command:
-
-```bash
-cp -R ./node_modules/@syncfusion/ej2-pdfviewer/dist/ej2-pdfviewer-lib  src/assets/ej2-pdfviewer-lib
-```
-
-* Confirm that there is an 'ej2-pdfviewer-lib' directory within your public directory, housing the assets of the PDF Viewer library.
-
-* Validate that your server has been configured to utilize the Content-Type: application/wasm MIME type. Additional information can be found in the [Troubleshooting](./troubleshooting/troubleshooting) section.
 
 ## Registering PDF Viewer Module
 
@@ -112,6 +100,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   // specifies the template string for the PDF Viewer component
   template: `<div class="content-wrapper">
                 <ejs-pdfviewer id="pdfViewer"
+                       [serviceUrl]='service'
                        [documentPath]='document'
                        style="height:640px;display:block">
                 </ejs-pdfviewer>
@@ -122,6 +111,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
                PrintService]
 })
 export class AppComponent implements OnInit {
+  public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
   public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   ngOnInit(): void {
   }
@@ -151,3 +141,33 @@ The output will appear as follows.
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/pdfviewer/getting-started-cs1" %}
+
+> For PDF Viewer serviceUrl creation, follow the steps provided in the [link](https://ej2.syncfusion.com/documentation/pdfviewer/how-to/create-pdfviewer-service/)
+
+## How to run the PDF Viewer web service
+
+1. Download the sample from the [Web service sample in GitHub](https://github.com/SyncfusionExamples/EJ2-PDFViewer-WebServices) link.
+2. Navigate to the `ASP.NET Core` folder and open it in the command prompt.
+3. Use the below command to restore the required packages.
+
+   ```sh
+   dotnet restore
+   ```
+
+4. Use the below command to run the web service.
+
+   ```sh
+   dotnet run
+   ```
+
+5. You can see that the PDF Viewer server instance runs in the local host with the port number `localhost:5001`and navigate to the PDF Viewer Web control `localhost:5001/pdfviewer`which returns the default get response method. We can bind the link to the `serviceUrl` property of PDF Viewer as below.
+
+   ```javascript
+   export class AppComponent implements OnInit {
+      public service = 'https://localhost:5001/pdfviewer';
+      public document = 'PDF_Succinctly.pdf';
+      ngOnInit(): void {
+      }
+   ```
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Getting%20started).
