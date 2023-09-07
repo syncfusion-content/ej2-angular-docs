@@ -38,10 +38,10 @@ Using addFormField method, the form fields can be added to the PDF document prog
 {% endtabs %}
   
 {% tabs %}
-{% highlight tabtitle="Standalone" %}
+{% highlight js tabtitle="Standalone" %}
 {% previewsample "page.domainurl/samples/pdfviewer/addformfield-cs1-standalone" %}
 {% endhighlight %}
-{% highlight tabtitle="Server-Backed" %}
+{% highlight js tabtitle="Server-Backed" %}
 {% previewsample "page.domainurl/samples/pdfviewer/addformfield-cs1" %}
 {% endhighlight %}
 {% endtabs %}
@@ -63,10 +63,10 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 {% endtabs %}
   
 {% tabs %}
-{% highlight tabtitle="Standalone" %}
+{% highlight js tabtitle="Standalone" %}
 {% previewsample "page.domainurl/samples/pdfviewer/updateformfield-cs1-standalone" %}
 {% endhighlight %}
-{% highlight tabtitle="Server-Backed" %}
+{% highlight js tabtitle="Server-Backed" %}
 {% previewsample "page.domainurl/samples/pdfviewer/updateformfield-cs1" %}
 {% endhighlight %}
 {% endtabs %}
@@ -88,10 +88,10 @@ Using deleteFormField method, the form field can be deleted programmatically. We
 {% endtabs %}
   
 {% tabs %}
-{% highlight tabtitle="Standalone" %}
+{% highlight js tabtitle="Standalone" %}
 {% previewsample "page.domainurl/samples/pdfviewer/deleteformfield-cs1-standalone" %}
 {% endhighlight %}
-{% highlight tabtitle="Server-Backed" %}
+{% highlight js tabtitle="Server-Backed" %}
 {% previewsample "page.domainurl/samples/pdfviewer/deleteformfield-cs1" %}
 {% endhighlight %}
 {% endtabs %}
