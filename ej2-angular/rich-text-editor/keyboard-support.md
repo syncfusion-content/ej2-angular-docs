@@ -47,9 +47,9 @@ You can use the following key shortcuts when the Rich Text Editor renders with H
 | Clear format | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>r</kbd> |
 | Ordered list | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>o</kbd> |
 | Unordered list | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>o</kbd> |
-| Format Panter Copy| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>c</kbd> |
-| Format Panter Paste| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> |
-| Format Panter Escape | <kbd>Esc</kbd> |
+| Format Painter Copy| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>c</kbd> |
+| Format Painter Paste| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> |
+| Format Painter Escape | <kbd>Esc</kbd> |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
