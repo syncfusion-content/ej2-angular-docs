@@ -94,6 +94,9 @@ In the following sample, dropdown and slider are used as the custom component an
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/rule-template-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="template-driven.html" %}
+{% include code-snippet/query-builder/rule-template-cs1/app/template-driven.html %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/query-builder/rule-template-cs1" %}
