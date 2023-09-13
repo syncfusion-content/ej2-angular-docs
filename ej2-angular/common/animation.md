@@ -79,3 +79,25 @@ Here is an example code snippet using the animation effects with a delay of `200
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/common/animation-multiple-cs3" %}
+
+## Enable or disable animation globally
+
+Enable or disable animation for all Angular components globally by using the `setGlobalAnimation` method with one of the below options:
+
+* `GlobalAnimationMode.Enable` - Enables the animation for all components, regardless of the individual component's animation settings.
+* `GlobalAnimationMode.Disable` - Disables the animation for all components, regardless of the individual component's animation settings.
+* `GlobalAnimationMode.Default` - Animation is enabled or disabled based on the component's animation settings.
+
+In the below code snippet, animation is disabled.
+
+{% tabs %}
+{% highlight js tabtitle="~/src/app/app.component.ts" %}
+
+import { GlobalAnimationMode, setGlobalAnimation } from "@syncfusion/ej2-base";
+
+setGlobalAnimation(GlobalAnimationMode.Disable);
+
+{% endhighlight %}
+{% endtabs %}
+
+> `setGlobalAnimation` method controls script-level animations only, and it is not applicable for direct CSS-level animations (animations defined from CSS classes or properties).

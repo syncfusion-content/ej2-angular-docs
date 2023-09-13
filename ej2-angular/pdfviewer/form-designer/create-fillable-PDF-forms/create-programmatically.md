@@ -278,6 +278,7 @@ The PDF Viewer control provides the support to export and import the form field 
 * FDF
 * XFDF
 * JSON
+* XML
 
 ### Export and import as FDF
 
@@ -404,7 +405,47 @@ importData() {
 }
 ```
 
-## Signature and initial fields settings
+### Export and import as XML
+
+The following code explains how to export and import the form field data as XML.
+
+```html
+
+<button (click)="OnExportXml()">Export XML</button>
+<button (click)="OnImportXml()">Import XML</button>
+
+```
+
+```typescript
+// Event triggers on the Export Xml button click.
+OnExportXml() {
+  var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+  // Data must be the desired path for the exported document.
+  viewer.exportFormFields('Data', FormFieldDataFormat.Xml);
+}
+
+// Event triggers on the Import Xml button click.
+OnImportXml() {
+  var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+  // The file for importing the form fields should be placed in the desired location and the path should be provided correctly
+  viewer.importFormFields('File', FormFieldDataFormat.Xml);
+}
+```
+
+## Form field properties
+
+Form field properties in Syncfusion PDF Viewer allow you to customize and interact with form fields embedded within PDF documents. This documentation provides an overview of the form field properties supported by the Syncfusion PDF Viewer and explains how to use them effectively.
+
+    * Textbox
+    * Password
+    * CheckBox
+    * RadioButton
+    * ListBox
+    * DropDown
+    * SignatureField
+    * InitialField
+
+### Signature and initial fields settings
 
 Using the `updateFormField` method, the form fields can be updated programmatically.
 
@@ -539,7 +580,7 @@ The following code example explains how to update the properties of the initial 
 
 ![Initial Field Settings](../../../pdfviewer/images/InitialField.png)
 
-## Textbox field settings
+### Textbox field settings
 
 Using the `updateFormField` method, the form fields can be updated programmatically.
 
@@ -652,7 +693,7 @@ The following code example explains how to update the properties of the Textbox 
 
 ![Textbox Field Settings](../../../pdfviewer/images/Textbox.png)
 
-## Password field settings
+### Password field settings
 
 Using the `updateFormField` method, the form fields can be updated programmatically.
 
@@ -763,7 +804,7 @@ The following code example explains how to update the properties of the Password
 
 ![Password Field Settings](../../../pdfviewer/images/Password.png)
 
-## CheckBox field settings
+### CheckBox field settings
 
 Using the `updateFormField` method, the form fields can be updated programmatically.
 
@@ -792,6 +833,7 @@ The following code example explains how to update the CheckBox field properties 
       isChecked: true,
       backgroundColor: 'white',
       borderColor: 'black',
+      value: 'CheckBox',
     });
   }
 
@@ -846,14 +888,16 @@ The following code example explains how to update the properties of the CheckBox
     // Set the background color of the check box in hexadecimal string format.
     backgroundColor: 'white',
     // Set the border color of the check box field.
-    borderColor: 'black'
+    borderColor: 'black',
+    // Set the value of the form field element.
+    value: 'CheckBox'
   };
 
 ```
 
 ![CheckBox Field Settings](../../../pdfviewer/images/Checkbox.png)
 
-## RadioButton field settings
+### RadioButton field settings
 
 Using the `updateFormField` method, the form fields can be updated programmatically.
 
@@ -882,6 +926,7 @@ The following code example explains how to update the RadioButton field properti
         isSelected: true,
         backgroundColor: 'white',
         borderColor: 'black',
+        value: 'RadioButton'
     });
   }
 
@@ -936,14 +981,16 @@ The following code example explains how to update the properties of the RadioBut
     // Set the background color of the radio button in hexadecimal string format.
     backgroundColor: 'white',
     // Set the border color of the radio button field.
-    borderColor: 'black'
+    borderColor: 'black',
+    // Set the value of the form field element.
+    value: 'RadioButton'
   };
 
 ```
 
 ![RadioButton Field Settings](../../../pdfviewer/images/Radiobutton.png)
 
-## ListBox field settings
+### ListBox field settings
 
 Using the `updateFormField` method, the form fields can be updated programmatically.
 
@@ -1052,7 +1099,7 @@ The following code example explains how to update the properties of the ListBox 
 
 ![ListBox Field Settings](../../../pdfviewer/images/Listbox.png)
 
-## DropDown field settings
+### DropDown field settings
 
 Using the `updateFormField` method, the form fields can be updated programmatically.
 

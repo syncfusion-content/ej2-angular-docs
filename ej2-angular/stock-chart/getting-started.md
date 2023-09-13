@@ -12,6 +12,10 @@ domainurl: ##DomainURL##
 
 This section explains you the steps required to create a simple StockChart and demonstrate the basic usage of the StockChart component in an Angular environment.
 
+To get start quickly with Angular Stock Charts using CLI and Schematics, you can check on this video:
+
+{% youtube "https://www.youtube.com/watch?v=ge_uQtqNZMA" %}
+
 ## Setup Angular Environment
 
 You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.

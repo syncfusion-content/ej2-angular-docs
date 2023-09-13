@@ -11,7 +11,7 @@ import { RichTextEditorComponent, ToolbarService, LinkService } from '@syncfusio
 import { ImageService, MarkdownEditorService } from '@syncfusion/ej2-angular-richtexteditor';
 import { createElement, KeyboardEventArgs, isNullOrUndefined } from '@syncfusion/ej2-base';
 import { L10n } from '@syncfusion/ej2-base';
-import {marked} from 'marked';
+import * as Marked from 'marked';
 L10n.load({
 'en-US': {
     'richtexteditor': {
@@ -106,7 +106,7 @@ public markDownConversion(): void {
     if (this.mdSplit!.classList.contains('e-active')) {
         let id: string = this.rteObj!.getID() + 'html-preview';
         let htmlPreview: HTMLElement = this.rteObj!.element.querySelector('#' + id) as HTMLElement;
-        htmlPreview.innerHTML = marked(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
+        htmlPreview.innerHTML = Marked(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
     }
 }
 public fullPreview(e: { [key: string]: string | boolean }): void {
@@ -134,7 +134,7 @@ public fullPreview(e: { [key: string]: string | boolean }): void {
             this.textArea!.style.width = '50%';
         }
         this.htmlPreview.style.display = 'block';
-        this.htmlPreview.innerHTML = marked(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
+        this.htmlPreview.innerHTML = Marked(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
     }
 }
 }

@@ -249,6 +249,8 @@ To create Rich Text Editor with additional features, inject the required modules
 * `Resize` - Inject this module to use resize feature in Rich Text Editor.
 * `FileManager` - Inject this module to use file browser feature in Rich Text Editor.
 * `PasteCleanup` - Inject this module to use paste cleanup feature in Rich Text Editor.
+* `FormatPainter` - Inject this module to use format painter feature in Rich Text Editor.
+* `EmojiPicker` - Inject this module to use emoji picker feature in Rich Text Editor.
 
 These modules should be injected into the provider section of `AppModule`.
 

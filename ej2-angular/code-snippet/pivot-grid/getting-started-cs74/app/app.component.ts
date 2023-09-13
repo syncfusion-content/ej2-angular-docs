@@ -23,12 +23,12 @@ export class AppComponent implements OnInit {
     public pivotGridObj?: PivotView;
 
     excelHeaderQueryCellInfo(args: any): void {
-        (this.pivotGridObj?.renderModule as any).columnCellBoundEvent(args);
+        ((this.pivotGridObj as PivotView).renderModule as any).columnCellBoundEvent(args);
         //triggers for every header cell while excel exporting
     }
 
     enginePopulated(args: any): void {
-       (this.pivotGridObj?.grid as Grid).excelHeaderQueryCellInfo = this.excelHeaderQueryCellInfo.bind(this);
+       ((this.pivotGridObj as PivotView).grid as Grid).excelHeaderQueryCellInfo = this.excelHeaderQueryCellInfo.bind(this);
     }
 
     ngOnInit(): void {
