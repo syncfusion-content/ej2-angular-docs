@@ -23,12 +23,12 @@ export class AppComponent implements OnInit {
     public pivotGridObj?: PivotView;
 
     queryCell(args: any): void {
-        (this.pivotGridObj?.renderModule as any).rowCellBoundEvent(args);
+        ((this.pivotGridObj as PivotView).renderModule as any).rowCellBoundEvent(args);
         //triggers for every cell
     }
 
     enginePopulated(args: any): void {
-       (this.pivotGridObj?.grid as Grid).queryCellInfo = this.queryCell.bind(this);
+       ((this.pivotGridObj as PivotView).grid as Grid).queryCellInfo = this.queryCell.bind(this);
     }
 
     ngOnInit(): void {
