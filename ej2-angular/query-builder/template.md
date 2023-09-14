@@ -30,6 +30,9 @@ In the following sample dropdown, splitbutton and button are used as the custom 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/header-template-cs1/app/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="template-driven.html" %}
+{% include code-snippet/query-builder/header-template-cs1/app/template-driven.html %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/query-builder/header-template-cs1" %}
