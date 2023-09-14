@@ -1,7 +1,8 @@
 
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 import { getComponent, print } from '@syncfusion/ej2-base';
 @Component({
@@ -10,6 +11,8 @@ import { getComponent, print } from '@syncfusion/ej2-base';
 })
 export class AppComponent implements OnInit {
 
+    @ViewChild('spreadsheet')
+    public spreadsheetObj: SpreadsheetComponent | undefined;
     public data?: DataManager;
 
     ngOnInit(): void {
@@ -22,8 +25,7 @@ export class AppComponent implements OnInit {
 
     created(){
          //Applies cell and number formatting to specified range of the active sheet
-         let spreadsheet = getComponent((document as any).getElementById("spreadsheet"), "spreadsheet");
-          (spreadsheet as any).cellFormat({ fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' },
+         this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center', verticalAlign: 'middle' },
             'A1:K1');
     };
 }

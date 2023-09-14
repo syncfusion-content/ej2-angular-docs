@@ -12,14 +12,14 @@ domainurl: ##DomainURL##
 
 The PDF Viewer control provides the option to add, edit and delete the Form Fields. The Form Fields type supported by the PDF Viewer Control are:
 
-    * Textbox
-    * Password
-    * CheckBox
-    * RadioButton
-    * ListBox
-    * DropDown
-    * SignatureField
-    * InitialField
+  * Textbox
+  * Password
+  * CheckBox
+  * RadioButton
+  * ListBox
+  * DropDown
+  * SignatureField
+  * InitialField
 
 ## Add a form field to PDF document programmatically
 
@@ -36,16 +36,14 @@ Using addFormField method, the form fields can be added to the PDF document prog
 {% include code-snippet/pdfviewer/addformfield-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% tabs %}
-{% highlight js tabtitle="Standalone" %}
-{% previewsample "page.domainurl/samples/pdfviewer/addformfield-cs1-standalone" %}
-{% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
-{% previewsample "page.domainurl/samples/pdfviewer/addformfield-cs1" %}
-{% endhighlight %}
-{% endtabs %}
 
+N> To set up the **server-backed PDF Viewer**, 
+Add the below serviceUrl in the `app.component.ts` file 
+`public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer'`;
+Within the template, configure the PDF Viewer by adding the `[serviceUrl]='service'` attribute inside the div element.
+
+{% previewsample "page.domainurl/code-snippet/pdfviewer/addformfield-cs1" %}
+  
 ## Edit/Update form field programmatically
 
 Using updateFormField method, Form Field can be updated programmatically. We should get the Form Field object/Id from FormFieldCollections property that you would like to edit and pass it as a parameter to updateFormField method. The second parameter should be the properties that you would like to update for Form Field programmatically. We have updated the value and background Color properties of Textbox Form Field.
@@ -61,15 +59,13 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 {% include code-snippet/pdfviewer/updateformfield-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% tabs %}
-{% highlight js tabtitle="Standalone" %}
-{% previewsample "page.domainurl/samples/pdfviewer/updateformfield-cs1-standalone" %}
-{% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
-{% previewsample "page.domainurl/samples/pdfviewer/updateformfield-cs1" %}
-{% endhighlight %}
-{% endtabs %}
+
+N> To set up the **server-backed PDF Viewer**, 
+Add the below serviceUrl in the `app.component.ts` file 
+`public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer'`;
+Within the template, configure the PDF Viewer by adding the `[serviceUrl]='service'` attribute inside the div element.
+
+{% previewsample "page.domainurl/code-snippet/pdfviewer/updateformfield-cs1" %}
 
 ## Delete form field programmatically
 
@@ -86,16 +82,14 @@ Using deleteFormField method, the form field can be deleted programmatically. We
 {% include code-snippet/pdfviewer/deleteformfield-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% tabs %}
-{% highlight js tabtitle="Standalone" %}
-{% previewsample "page.domainurl/samples/pdfviewer/deleteformfield-cs1-standalone" %}
-{% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
-{% previewsample "page.domainurl/samples/pdfviewer/deleteformfield-cs1" %}
-{% endhighlight %}
-{% endtabs %}
 
+N> To set up the **server-backed PDF Viewer**, 
+Add the below serviceUrl in the `app.component.ts` file 
+`public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer'`;
+Within the template, configure the PDF Viewer by adding the `[serviceUrl]='service'` attribute inside the div element.
+
+{% previewsample "page.domainurl/code-snippet/pdfviewer/deleteformfield-cs1" %}
+  
 The following code illustrates how to delete a signature from the signature field using the `retrieveFormFields` and `clearFormFields` APIs.
 
 {% tabs %}

@@ -2,28 +2,32 @@
 
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import {
-  PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService, TextFieldSettings, SignatureFieldSettings, InitialFieldSettings, CheckBoxFieldSettings, RadioButtonFieldSettings
-} from '@syncfusion/ej2-angular-pdfviewer';
+import {PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
+  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, 
+  FormDesignerService, FormFieldsService, TextFieldSettings, SignatureFieldSettings, InitialFieldSettings, 
+  CheckBoxFieldSettings, RadioButtonFieldSettings } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-container',
   // Specifies the template string for the PDF Viewer component.
   template: `<div class="content-wrapper">
-  <ejs-pdfviewer id="pdfViewer" #pdfviewer [serviceUrl]='service' [documentPath]='document' (documentLoad)='documentLoaded($event)' style="height:640px;display:block"></ejs-pdfviewer>
+  <ejs-pdfviewer 
+    id="pdfViewer"
+    #pdfviewer 
+    [documentPath]='document' 
+    (documentLoad)='documentLoaded($event)' 
+    style="height:640px;display:block">
+   </ejs-pdfviewer>
   </div>`,
   providers: [LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
 NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService]
 })
-
 export class AppComponent implements OnInit {
   @ViewChild('pdfviewer')
   public pdfviewerControl?: PdfViewerComponent;
-  public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-  public document: string = 'FormDesigner.pdf';
+  public document: string = 'https://cdn.syncfusion.com/content/pdf/form-designer.pdf';
 
-  documentLoaded(e: any): void {
+   documentLoaded(e: any): void {
     this.pdfviewerControl?.formDesignerModule.addFormField("Textbox", {name: 'First Name', bounds: { X: 146, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.addFormField("Textbox", { name: "Middle Name", bounds: { X: 338, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.addFormField('Textbox', {name: 'Last Name',bounds: { X: 530, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
@@ -46,13 +50,11 @@ export class AppComponent implements OnInit {
     this.pdfviewerControl?.formDesignerModule.addFormField('Textbox', {name: 'DOS Date',bounds: { X: 434, Y: 923, Width: 35, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.addFormField('Textbox', {name: 'DOS Year',bounds: { X: 482, Y: 923, Width: 35, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.updateFormField(this.pdfviewerControl?.formFieldCollections[0], { backgroundColor: 'red' } as TextFieldSettings);
+    this.pdfviewerControl?.formDesignerModule.updateFormField(this.pdfviewerControl.formFieldCollections[0], { backgroundColor: 'red' } as TextFieldSettings);
   }
-  
-  ngOnInit(): void {
 
+  ngOnInit(): void {
   }
 }
-
-
 
 
