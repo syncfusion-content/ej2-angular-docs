@@ -42,7 +42,7 @@ load_1() {
 load_2() {
   // Load PDF document using file name
   var viewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
-  viewer.load('PDF_Succinctly.pdf', null);
+  viewer.load('https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf', null);
 }
 ```
 

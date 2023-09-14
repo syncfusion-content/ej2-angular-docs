@@ -75,5 +75,3 @@ the PDF document bytes.
 ```
 
 Once Redis is configured, the Syncfusion PDF Viewer application will automatically use Redis cache for improved performance and scalability.
-
-[View Sample in GitHub]()

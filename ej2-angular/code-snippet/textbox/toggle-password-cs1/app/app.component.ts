@@ -14,7 +14,7 @@ export class AppComponent {
   @ViewChild('default', { static: true })
   public textbox?: TextBoxComponent;
   ngAfterViewInit() {
-    (this.textbox as TextBoxComponent).addIcon('append', 'e-icons e-input-eye');
+    (this.textbox as TextBoxComponent).addIcon('append', 'e-icons e-eye');
     document
       .getElementsByClassName('e-input-eye')[0]
       .addEventListener('click', function (e) {

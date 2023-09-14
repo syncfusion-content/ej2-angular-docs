@@ -37,6 +37,46 @@ In the pan mode, if the highlight mode is entered, the PDF Viewer control will s
 
 Refer to the following code sample to switch to the highlight mode.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+
+```typescript
+   import { ViewChild } from '@angular/core';
+   import { Component, OnInit } from '@angular/core';
+   import { PdfViewerComponent, LinkAnnotationService,  BookmarkViewService,
+            MagnificationService, ThumbnailViewService, ToolbarService,
+            NavigationService, TextSearchService,TextSelectionService,
+            PrintService, AnnotationService,
+          } from '@syncfusion/ej2-angular-pdfviewer';
+
+ @Component({
+  selector: 'app-root',
+   // Specifies the template string for the PDF Viewer component.
+   template: `<button (click)="addAnnotation()">Highlight</button>
+              <div class="content-wrapper">
+                 <ejs-pdfviewer id="pdfViewer"
+                         [documentPath]='document'
+                         style="height:640px;display:block">
+                  </ejs-pdfviewer>
+               </div>`,
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService,
+                 AnnotationService ],
+ })
+ export class AppComponent implements OnInit {
+    @ViewChild('pdfviewer')
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    addAnnotation() {
+       var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+       pdfviewer.annotationModule.setAnnotationMode('Highlight');
+   }
+}
+```
+{% endhighlight %}
+
+{% highlight js tabtitle="Server-Backed" %}
+
 ```typescript
    import { ViewChild } from '@angular/core';
    import { Component, OnInit } from '@angular/core';
@@ -65,16 +105,61 @@ Refer to the following code sample to switch to the highlight mode.
  export class AppComponent implements OnInit {
     @ViewChild('pdfviewer')
     public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-    public document: string = 'PDF_Succinctly.pdf';
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     addAnnotation() {
        var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
        pdfviewer.annotationModule.setAnnotationMode('Highlight');
    }
 }
 ```
+{% endhighlight %}
+{% endtabs %}
 
 Refer to the following code sample to switch back to normal mode from the highlight mode.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+   import { ViewChild } from '@angular/core';
+   import { Component, OnInit } from '@angular/core';
+   import { PdfViewerComponent, LinkAnnotationService,  BookmarkViewService,
+            MagnificationService, ThumbnailViewService, ToolbarService,
+            NavigationService, TextSearchService, TextSelectionService,
+            PrintService, AnnotationService,
+          } from '@syncfusion/ej2-angular-pdfviewer';
+
+ @Component({
+  selector: 'app-root',
+   // Specifies the template string for the PDF Viewer component.
+   template: `<button (click)="addAnnotation()">Highlight</button>
+              <button (click)="setNone()">None</button>
+              <div class="content-wrapper">
+                 <ejs-pdfviewer id="pdfViewer"
+                         [documentPath]='document'
+                         style="height:640px;display:block">
+                  </ejs-pdfviewer>
+               </div>`,
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService,
+                 AnnotationService ],
+ })
+ export class AppComponent implements OnInit {
+    @ViewChild('pdfviewer')
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    addAnnotation() {
+       var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+       pdfviewer.annotationModule.setAnnotationMode('Highlight');
+   }
+   setNone() {
+      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+       pdfviewer.annotationModule.setAnnotationMode("None");
+    }
+}
+```
+{% endhighlight %}
+
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
    import { ViewChild } from '@angular/core';
    import { Component, OnInit } from '@angular/core';
@@ -104,7 +189,7 @@ Refer to the following code sample to switch back to normal mode from the highli
  export class AppComponent implements OnInit {
     @ViewChild('pdfviewer')
     public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-    public document: string = 'PDF_Succinctly.pdf';
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     addAnnotation() {
        var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
        pdfviewer.annotationModule.setAnnotationMode('Highlight');
@@ -115,6 +200,8 @@ Refer to the following code sample to switch back to normal mode from the highli
     }
 }
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Underline a text
 
@@ -139,6 +226,44 @@ In the pan mode, if the underline mode is entered, the PDF Viewer control will s
 
 Refer to the following code sample to switch to the underline mode.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+ import { ViewChild } from '@angular/core';
+ import { Component, OnInit } from '@angular/core';
+ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+          MagnificationService, ThumbnailViewService, ToolbarService,
+          NavigationService, TextSearchService, TextSelectionService,
+          PrintService, AnnotationService
+        } from '@syncfusion/ej2-angular-pdfviewer';
+
+ @Component({
+  selector: 'app-root',
+  // Specifies the template string for the PDF Viewer component.
+  template: `<button (click)="addAnnotation()">Underline</button>
+             <div class="content-wrapper">
+                <ejs-pdfviewer id="pdfViewer"
+                      [documentPath]='document'
+                      style="height:640px;display:block">
+                </ejs-pdfviewer>
+            </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService, 
+               AnnotationService ]
+  })
+  export class AppComponent implements OnInit {
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode("Underline");
+    }
+  }
+
+```
+{% endhighlight %}
+
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
  import { ViewChild } from '@angular/core';
  import { Component, OnInit } from '@angular/core';
@@ -166,7 +291,7 @@ Refer to the following code sample to switch to the underline mode.
   })
   export class AppComponent implements OnInit {
     public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-    public document: string = 'PDF_Succinctly.pdf';
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     addAnnotation() {
       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
       pdfviewer.annotationModule.setAnnotationMode("Underline");
@@ -174,9 +299,54 @@ Refer to the following code sample to switch to the underline mode.
   }
 
 ```
+{% endhighlight %}
+{% endtabs %}
 
 Refer to the following code sample to switch back to normal mode from the underline mode.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+import { ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService
+       } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // Specifies the template string for the PDF Viewer component.
+  template: `<button (click)="addAnnotation()">Underline</button>
+             <button (click)="setNone()">None</button>
+             <div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                       [documentPath]='document'
+                       style="height:640px;display:block">
+                 </ejs-pdfviewer>
+              </div>`,
+ providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+              ThumbnailViewService, ToolbarService, NavigationService,
+              TextSearchService, TextSelectionService, PrintService, 
+              AnnotationService]
+ })
+ export class AppComponent implements OnInit {
+    @ViewChild('pdfviewer')
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    addAnnotation() {
+       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+       pdfviewer.annotationModule.setAnnotationMode("Underline");
+    }
+    setNone() {
+      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+       pdfviewer.annotationModule.setAnnotationMode("None");
+    }
+  }
+
+```
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
@@ -206,7 +376,7 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
  export class AppComponent implements OnInit {
     @ViewChild('pdfviewer')
     public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-    public document: string = 'PDF_Succinctly.pdf';
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     addAnnotation() {
        var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
        pdfviewer.annotationModule.setAnnotationMode("Underline");
@@ -218,6 +388,8 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
   }
 
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Strikethrough a text
 
@@ -242,6 +414,44 @@ In the pan mode, if the strikethrough mode is entered, the PDF Viewer control wi
 
 Refer to the following code sample to switch to strikethrough mode.
 
+
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+import { ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService,ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService, 
+         PrintService, AnnotationService 
+       } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+    selector: 'app-root',
+    // Specifies the template string for the PDF Viewer component.
+    template: `<button (click)="addAnnotation()">Strikethrough</button>
+                <div class="content-wrapper">
+                        <ejs-pdfviewer id="pdfViewer"
+                            [documentPath]='document'
+                            style="height:640px;display:block">
+                        </ejs-pdfviewer>
+                </div>`,
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService,
+                 AnnotationService]
+  })
+  export class AppComponent implements OnInit {
+       public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+       addAnnotation() {
+           var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+           pdfviewer.annotationModule.setAnnotationMode("Strikethrough");
+       }
+   }
+```
+{% endhighlight %}
+
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
@@ -269,16 +479,60 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
   })
   export class AppComponent implements OnInit {
        public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-       public document: string = 'PDF_Succinctly.pdf';
+       public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
        addAnnotation() {
            var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
            pdfviewer.annotationModule.setAnnotationMode("Strikethrough");
        }
    }
 ```
+{% endhighlight %}
+{% endtabs %}
 
 Refer to the following code sample to switch back to normal mode from the strikethrough mode.
 
+
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+import { ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService, 
+         PrintService, AnnotationService
+       } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+     selector: 'app-root',
+     // Specifies the template string for the PDF Viewer component.
+     template: `<button (click)="addAnnotation()">Strikethrough</button>
+     <button (click)="setNone()">None</button>
+     <div class="content-wrapper">
+     <ejs-pdfviewer id="pdfViewer"
+                    [documentPath]='document'
+                    style="height:640px;display:block">
+     </ejs-pdfviewer>
+     </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService,MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService, 
+               AnnotationService]
+})
+export class AppComponent implements OnInit {
+     public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+     addAnnotation() {
+       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+       pdfviewer.annotationModule.setAnnotationMode("Strikethrough");
+     }
+     setNone() {
+       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+       pdfviewer.annotationModule.setAnnotationMode("None");
+     }
+   }
+```
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
@@ -307,7 +561,7 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
 })
 export class AppComponent implements OnInit {
      public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-     public document: string = 'PDF_Succinctly.pdf';
+     public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
      addAnnotation() {
        var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
        pdfviewer.annotationModule.setAnnotationMode("Strikethrough");
@@ -318,6 +572,8 @@ export class AppComponent implements OnInit {
      }
    }
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Deleting a text markup annotation
 
@@ -357,6 +613,44 @@ The properties of the text markup annotation can be set before creating the cont
 
 Refer to the following code sample to set the default annotation settings.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+import { ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService
+       } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+   selector: 'app-root',
+   // Specifies the template string for the PDF Viewer component.
+   template: `<div class="content-wrapper">
+                 <ejs-pdfviewer id="pdfViewer"
+                            [documentPath]='document'
+                            [highlightSettings]='highlightSettings'
+                            [underlineSettings]='underlineSettings'
+                            [strikethroughSettings]='strikethroughSettings'
+                            style="height:640px;display:block">
+                  </ejs-pdfviewer>
+              </div>`,
+  providers: [ LinkAnnotationService,  BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService, 
+               AnnotationService]
+})
+export class AppComponent implements OnInit {
+  public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+  public highlightSettings = { author: 'Guest User', subject: 'Important', color: '#ffff00', opacity: 0.9, modifiedDate: '' };
+  public underlineSettings = { author: 'Guest User', subject: 'Points to be remembered', color: '#00ffff', opacity: 0.9, modifiedDate: '' };
+  public strikethroughSettings = { author: 'Guest User', subject: 'Not Important', color: '#ff00ff', opacity: 0.9, modifiedDate: '' };
+}
+```
+{% endhighlight %}
+
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
@@ -387,12 +681,14 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
 export class AppComponent implements OnInit {
   
   public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-  public document: string = 'PDF_Succinctly.pdf';
+  public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   public highlightSettings = { author: 'Guest User', subject: 'Important', color: '#ffff00', opacity: 0.9, modifiedDate: '' };
   public underlineSettings = { author: 'Guest User', subject: 'Points to be remembered', color: '#00ffff', opacity: 0.9, modifiedDate: '' };
   public strikethroughSettings = { author: 'Guest User', subject: 'Not Important', color: '#ff00ff', opacity: 0.9, modifiedDate: '' };
 }
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Performing undo and redo
 
@@ -411,6 +707,46 @@ The undo and redo actions can be done in the following ways:
 
 Refer to the following code sample for calling undo and redo actions from the client-side.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+ import { ViewChild } from '@angular/core';
+ import { Component, OnInit } from '@angular/core';
+ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+          MagnificationService, ThumbnailViewService, ToolbarService,
+          NavigationService, TextSearchService, TextSelectionService,
+          PrintService, AnnotationService
+        } from '@syncfusion/ej2-angular-pdfviewer';
+ @Component({
+  selector: 'app-root',
+  // Specifies the template string for the PDF Viewer component.
+  template: `<button (click)="Undo()">Undo</button>
+             <button (click)="Redo()">Redo</button>
+             <div class="content-wrapper">
+                    <ejs-pdfviewer id="pdfViewer"
+                         [documentPath]='document'
+                         style="height:640px;display:block">
+                    </ejs-pdfviewer>
+              </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService]
+  })
+  export class AppComponent implements OnInit {
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    Undo() {
+      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+      pdfviewer.undo();
+    }
+    Redo() {
+      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+      pdfviewer.redo();
+   }
+ }
+```
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
  import { ViewChild } from '@angular/core';
  import { Component, OnInit } from '@angular/core';
@@ -438,7 +774,7 @@ Refer to the following code sample for calling undo and redo actions from the cl
   })
   export class AppComponent implements OnInit {
     public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-    public document: string = 'PDF_Succinctly.pdf';
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     Undo() {
       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
       pdfviewer.undo();
@@ -449,6 +785,8 @@ Refer to the following code sample for calling undo and redo actions from the cl
    }
  }
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Saving the text markup annotation
 
@@ -462,6 +800,39 @@ When the print tool is selected in the toolbar, the PDF document will be printed
 
 The PDF Viewer control provides an option to disable the text markup annotation feature. The code sample for disabling the feature is as follows.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+ import { ViewChild } from '@angular/core';
+ import { Component, OnInit } from '@angular/core';
+ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+          MagnificationService, ThumbnailViewService, ToolbarService,
+          NavigationService, TextSearchService, TextSelectionService, 
+          PrintService, AnnotationService
+        } from '@syncfusion/ej2-angular-pdfviewer';
+ @Component({
+  selector: 'app-root',
+  // Specifies the template string for the PDF Viewer component.
+  template: `<div class="content-wrapper">
+                <ejs-pdfviewer id="pdfViewer"
+                    [documentPath]='document'
+                    [enableTextMarkupAnnotation]='false'
+                    style="height:640px;display:block">
+                </ejs-pdfviewer>
+            </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService, 
+               AnnotationService]
+  })
+ export class AppComponent implements OnInit {
+       public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+  }
+
+```
+{% endhighlight %}
+
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
  import { ViewChild } from '@angular/core';
  import { Component, OnInit } from '@angular/core';
@@ -488,7 +859,9 @@ The PDF Viewer control provides an option to disable the text markup annotation 
   })
  export class AppComponent implements OnInit {
        public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-       public document: string = 'PDF_Succinctly.pdf';
+       public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   }
 
 ```
+{% endhighlight %}
+{% endtabs %}

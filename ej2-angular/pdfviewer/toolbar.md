@@ -33,34 +33,67 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 
 * **Show/Hide toolbar using enableToolbar API as in the following code snippet**
 
-  ```typescript
-  import { Component, OnInit } from '@angular/core';
-  import { LinkAnnotationService, BookmarkViewService, MagnificationService,
-          ThumbnailViewService, ToolbarService,  NavigationService,
-          TextSearchService, AnnotationService, TextSelectionService,
-          PrintService
-        } from '@syncfusion/ej2-angular-pdfviewer';
-  @Component({
-    selector: 'app-container',
-    // specifies the template string for the PDF Viewer component
-    template: `<div class="content-wrapper">
-                    <ejs-pdfviewer id="pdfViewer"
-                              [serviceUrl]='service'
-                              [documentPath]='document'
-                              [toolbarSettings]='toolbarSettings'
-                              style="height:640px;display:block">
-                    </ejs-pdfviewer>
-                </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
-                ThumbnailViewService, ToolbarService, NavigationService,
-                AnnotationService, TextSearchService, TextSelectionService,
-                PrintService]
-    })
-    export class AppComponent implements OnInit {
-      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-      public document = 'PDF_Succinctly.pdf';
-    }
-  ```
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,
+        ThumbnailViewService, ToolbarService,  NavigationService,
+        TextSearchService, AnnotationService, TextSelectionService,
+        PrintService
+      } from '@syncfusion/ej2-angular-pdfviewer';
+@Component({
+  selector: 'app-container',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                            [documentPath]='document'
+                            [toolbarSettings]='toolbarSettings'
+                            style="height:640px;display:block">
+                  </ejs-pdfviewer>
+              </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+              ThumbnailViewService, ToolbarService, NavigationService,
+              AnnotationService, TextSearchService, TextSelectionService,
+              PrintService]
+  })
+  export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+  }
+```
+{% endhighlight %}
+
+{% highlight js tabtitle="Server-Backed" %}
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,
+        ThumbnailViewService, ToolbarService,  NavigationService,
+        TextSearchService, AnnotationService, TextSelectionService,
+        PrintService
+      } from '@syncfusion/ej2-angular-pdfviewer';
+@Component({
+  selector: 'app-container',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                            [serviceUrl]='service'
+                            [documentPath]='document'
+                            [toolbarSettings]='toolbarSettings'
+                            style="height:640px;display:block">
+                  </ejs-pdfviewer>
+              </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+              ThumbnailViewService, ToolbarService, NavigationService,
+              AnnotationService, TextSearchService, TextSelectionService,
+              PrintService]
+  })
+  export class AppComponent implements OnInit {
+    public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+  }
+```
+{% endhighlight %}
+{% endtabs %}
 
 * **Show/Hide toolbar using showToolbar as in the following code snippet**
 
@@ -79,36 +112,71 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 
 * **Show/Hide toolbaritem using toolbarSettings as in the following code snippet.**
 
-  ```typescript
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
 
-  import { Component, OnInit } from '@angular/core';
-  import { LinkAnnotationService, BookmarkViewService, MagnificationService,
-          ThumbnailViewService, ToolbarService,NavigationService,
-          TextSearchService, AnnotationService, TextSelectionService, 
-          PrintService
-        } from '@syncfusion/ej2-angular-pdfviewer';
-  @Component({
-    selector: 'app-container',
-    // specifies the template string for the PDF Viewer component
-    template:`<div class="content-wrapper">
-                  <ejs-pdfviewer id="pdfViewer"
-                                [serviceUrl]='service'
-                                [documentPath]='document'
-                                [toolbarSettings]='toolbarSettings'
-                                style="height:640px;display:block">
-                  </ejs-pdfviewer>
-              </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
-                ThumbnailViewService, ToolbarService, NavigationService,
-                TextSearchService, AnnotationService, TextSelectionService,
-                PrintService]
-    })
-    export class AppComponent implements OnInit {
-        public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-        public document = 'PDF_Succinctly.pdf';
-        public toolbarSettings = { showTooltip: true, toolbarItems: 'DownloadOption' }
-    }
-  ```
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,
+        ThumbnailViewService, ToolbarService,NavigationService,
+        TextSearchService, AnnotationService, TextSelectionService, 
+        PrintService
+      } from '@syncfusion/ej2-angular-pdfviewer';
+@Component({
+  selector: 'app-container',
+  // specifies the template string for the PDF Viewer component
+  template:`<div class="content-wrapper">
+                <ejs-pdfviewer id="pdfViewer"
+                              [documentPath]='document'
+                              [toolbarSettings]='toolbarSettings'
+                              style="height:640px;display:block">
+                </ejs-pdfviewer>
+            </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+              ThumbnailViewService, ToolbarService, NavigationService,
+              TextSearchService, AnnotationService, TextSelectionService,
+              PrintService]
+  })
+  export class AppComponent implements OnInit {
+      public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+      public toolbarSettings = { showTooltip: true, toolbarItems: 'DownloadOption' }
+  }
+```
+{% endhighlight %}
+
+{% highlight js tabtitle="Server-Backed" %}
+```typescript
+
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,
+        ThumbnailViewService, ToolbarService,NavigationService,
+        TextSearchService, AnnotationService, TextSelectionService, 
+        PrintService
+      } from '@syncfusion/ej2-angular-pdfviewer';
+@Component({
+  selector: 'app-container',
+  // specifies the template string for the PDF Viewer component
+  template:`<div class="content-wrapper">
+                <ejs-pdfviewer id="pdfViewer"
+                              [serviceUrl]='service'
+                              [documentPath]='document'
+                              [toolbarSettings]='toolbarSettings'
+                              style="height:640px;display:block">
+                </ejs-pdfviewer>
+            </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+              ThumbnailViewService, ToolbarService, NavigationService,
+              TextSearchService, AnnotationService, TextSelectionService,
+              PrintService]
+  })
+  export class AppComponent implements OnInit {
+      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+      public toolbarSettings = { showTooltip: true, toolbarItems: 'DownloadOption' }
+  }
+```
+{% endhighlight %}
+{% endtabs %}
 
 * **Show/Hide toolbaritem using showToolbaritem as in the following code snippet**
 
@@ -125,6 +193,39 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 
 The PDF Viewer has an option to show or hide the left toolbar with the thumbnails and bookmarks using enableNavigationToolbar API as in the following code sample.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,
+         ThumbnailViewService, ToolbarService, NavigationService,
+         TextSearchService, AnnotationService, TextSelectionService,
+         PrintService
+       } from '@syncfusion/ej2-angular-pdfviewer';
+@Component({
+  selector: 'app-container',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                          [enableNavigationToolbar]="false"
+                          [toolbarSettings]="toolbarSettings"
+                          [documentPath]='document'
+                          style="height:640px;display:block">
+                  </ejs-pdfviewer>
+            </div>`,
+  providers: [ LinkAnnotationService,  BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               AnnotationService, TextSearchService, TextSelectionService,
+               PrintService]
+  })
+  export class AppComponent implements OnInit {
+      public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+      public toolbarSettings = { showTooltip: true, toolbarItems: ['OpenOption'] };
+  }
+```
+{% endhighlight %}
+
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
@@ -151,10 +252,12 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   })
   export class AppComponent implements OnInit {
       public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-      public document = 'PDF_Succinctly.pdf';
+      public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       public toolbarSettings = { showTooltip: true, toolbarItems: ['OpenOption'] };
   }
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## See also
 

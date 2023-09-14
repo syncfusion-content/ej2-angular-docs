@@ -26,6 +26,10 @@ Ports act as the connection points of the node and allows to create connections 
 
 ## Create port
 
+To create and customize the ports in Angular Diagram, refer to the below video link,
+
+{% youtube "youtube:https://www.youtube.com/watch?v=sBtDnhDegQE" %}
+
 ## Add ports when initializing nodes
 
 To add a connection port, define the port object and add it to node’s ports collection. The `offset` property of port accepts an object of fractions and used to determine the position of ports. The following code illustrates how to add ports when initializing the node.

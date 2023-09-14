@@ -25,12 +25,12 @@ border: any;
         this.chartData = series1;
         this.primaryXAxis = {
             valueType: 'DateTime',
-            labelFormat: 'yMMM'
+            labelFormat: 'yMMM',
+            enableAutoIntervalOnZooming: true
         };
         this.zoom = {
             enableSelectionZooming: true,
         };
-        enableAutoIntervalOnZooming: true;
         this.animation = { enable: false};
         this.legend = { visible: false };
 

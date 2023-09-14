@@ -115,6 +115,21 @@ The comments added to the PDF document can be viewed by using the `comments` pro
 
 Refer to the following code to check the comments added in the PDF document using a button click event.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+```html
+<button (click)="checkComments()">Check the Comments</button>
+<!--Render PDF Viewer component-->
+<ejs-pdfviewer id="pdfViewer"
+               [documentPath]='document'
+               style="height:640px;display:block">
+</ejs-pdfviewer>
+
+```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
 ```html
 <button (click)="checkComments()">Check the Comments</button>
 <!--Render PDF Viewer component-->
@@ -125,6 +140,9 @@ Refer to the following code to check the comments added in the PDF document usin
 </ejs-pdfviewer>
 
 ```
+{% endhighlight %}
+{% endtabs %}
+
 
 ```typescript
 //Method to check the comments added in the PDF document.

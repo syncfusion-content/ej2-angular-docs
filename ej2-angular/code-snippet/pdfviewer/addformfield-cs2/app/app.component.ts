@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
   public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
   public document: string = 'FormDesigner.pdf';
 
-  public documentLoaded(e: LoadEventArgs): void {
+  documentLoaded(e: any): void {
     this.pdfviewerControl?.formDesignerModule.addFormField("Textbox", { name: "Textbox", bounds: { X: 146, Y: 229, Width: 150, Height: 24 } } as TextFieldSettings);
   }
 

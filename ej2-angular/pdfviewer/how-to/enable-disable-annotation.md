@@ -14,6 +14,20 @@ In the Syncfusion PDF viewer, enable and disable the delete button while selecti
 
 Here is an example of how you can enable and disable the delete button while selecting and unselecting annotations:
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+```html
+<ejs-pdfviewer #pdfviewer id='pdfViewer'
+    [documentPath]='document'
+    [enableToolbar]=false
+    [enableNavigationToolbar]=false
+    (annotationSelect)="annotationSelect($event)"
+    (annotationUnSelect)="annotationUnSelect($event)"
+    style="height:640px; display: block">
+</ejs-pdfviewer>
+```
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
 ```html
 <ejs-pdfviewer #pdfviewer id='pdfViewer'
     [serviceUrl]='service'
@@ -25,6 +39,8 @@ Here is an example of how you can enable and disable the delete button while sel
     style="height:640px; display: block">
 </ejs-pdfviewer>
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ```html
 <ejs-toolbar id='topToolbar' #customToolbar>

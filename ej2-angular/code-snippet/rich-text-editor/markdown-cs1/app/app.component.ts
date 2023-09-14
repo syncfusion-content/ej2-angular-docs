@@ -11,7 +11,7 @@ import { addClass, removeClass, Browser } from '@syncfusion/ej2-base';
 import { RichTextEditorComponent, ToolbarService, LinkService } from '@syncfusion/ej2-angular-richtexteditor';
 import { ImageService, MarkdownEditorService } from '@syncfusion/ej2-angular-richtexteditor';
 import { createElement, KeyboardEventArgs, isNullOrUndefined } from '@syncfusion/ej2-base';
-import {marked} from 'marked'
+import * as Marked from 'marked';
     @Component({
     selector: 'app-root',
     template: `<ejs-richtexteditor id='mdPreview' #mdPreview [toolbarSettings]='tools' [editorMode]='mode' (created)='onCreate()' (actionComplete)="actionComplete($event)">
@@ -96,7 +96,7 @@ public markDownConversion(): void {
         let id: string = this.rteObj!.getID() + 'html-preview';
         let htmlPreview: HTMLElement = this.rteObj!.element.querySelector('#' + id) as HTMLElement;
         debugger
-        htmlPreview.innerHTML =  marked(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
+        htmlPreview.innerHTML =  Marked(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
     }
 }
 public fullPreview(e: { [key: string]: string | boolean }): void {
@@ -124,7 +124,7 @@ public fullPreview(e: { [key: string]: string | boolean }): void {
             this.textArea!.style.width = '50%';
         }
         this.htmlPreview.style.display = 'block';
-        this.htmlPreview.innerHTML = marked(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
+        this.htmlPreview.innerHTML = Marked(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
     }
 }
 }

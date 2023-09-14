@@ -25,7 +25,44 @@ The PDF viewer control provides the option for interaction with Form Fields such
 
 We should inject FormDesigner module and set enableFormDesignerToolbar as true to enable the Form designer icon on the toolbar. By default, enableFormDesignerToolbar is set as true. Use the following code to inject FormDesigner module and to enable the enableFormDesignerToolbar property.
 
-```html
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```javascript
+import { ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService, FormDesignerService,
+         FormFieldsService
+       } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // Specifies the template string for the PDF Viewer component.
+  template: `<div class="content-wrapper">
+                <ejs-pdfviewer id="pdfViewer"
+                        [documentPath]='document'
+                        [enableFormDesignerToolbar]='true'
+                        style="height:640px;display:block">
+                </ejs-pdfviewer>
+             </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService]
+})
+export class AppComponent implements OnInit {
+  @ViewChild('pdfviewer')
+  public pdfviewerControl: PdfViewerComponent;
+  public document: string = 'https://cdn.syncfusion.com/content/pdf/form-designer.pdf';
+  ngOnInit(): void {
+  }
+}
+```
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
+```javascript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -55,11 +92,13 @@ export class AppComponent implements OnInit {
   @ViewChild('pdfviewer')
   public pdfviewerControl: PdfViewerComponent;
   public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-  public document: string = 'FormDesigner.pdf';
+  public document: string = 'https://cdn.syncfusion.com/content/pdf/form-designer.pdf';
   ngOnInit(): void {
   }
 }
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Add the form field dynamically
 

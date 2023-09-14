@@ -77,7 +77,7 @@ To apply `fontColor` or `background` color for a selected content of RTE, use fo
 
 Rich Text Editor supports to provide custom font color and background color with existing list through the [`colorCode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/backgroundColor/#colorcode) field of [`fontColor`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fontcolor) and [`backgroundColor`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#backgroundcolor).
 
-The `FontColor` and the `BackgroundColor` property has two mode of `Picker` and `Palette`. Palette mode has predefined set of colorCode. The picker mode has Color scheme to choose the color values. Through [`modeSwitcher`](/rich-text-editor/api-backgroundColor.html#modeswitcher) you can able to switch between these two options.
+The `FontColor` and the `BackgroundColor` property has two mode of `Picker` and `Palette`. Palette mode has predefined set of colorCode. The picker mode has Color scheme to choose the color values. Through [`modeSwitcher`](../api/rich-text-editor/backgroundColor/#modeswitcher) you can able to switch between these two options.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -35,6 +35,41 @@ In the pan mode, if the measurement annotation mode is entered, the PDF Viewer c
 
 Refer to the following code snippet to switch to distance annotation mode.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+  import { ViewChild } from '@angular/core';
+  import { Component, OnInit } from '@angular/core';
+  import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+           MagnificationService, ThumbnailViewService, ToolbarService,
+           NavigationService,TextSearchService, TextSelectionService,
+           PrintService, AnnotationService
+         } from '@syncfusion/ej2-angular-pdfviewer';
+  @Component({
+    selector: 'app-root',
+    // specifies the template string for the PDF Viewer component
+    template: `<button (click)="addAnnotation()">Distance</button>
+               <div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                        [documentPath]='document'
+                        style="height:640px;display:block">
+                  </ejs-pdfviewer>
+               </div>`,
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService, ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService,
+                 AnnotationService]
+    })
+    export class AppComponent implements OnInit {
+      public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+      addAnnotation() {
+          var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+        pdfviewer.annotationModule.setAnnotationMode("Distance");
+     }
+  }
+```
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
   import { ViewChild } from '@angular/core';
   import { Component, OnInit } from '@angular/core';
@@ -61,13 +96,15 @@ Refer to the following code snippet to switch to distance annotation mode.
     })
     export class AppComponent implements OnInit {
       public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-      public document: string = 'PDF_Succinctly.pdf';
+      public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       addAnnotation() {
           var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
         pdfviewer.annotationModule.setAnnotationMode("Distance");
      }
   }
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Editing the properties of measurement annotation
 
@@ -108,6 +145,46 @@ The properties of the line shapes such as distance and perimeter annotations can
 The properties of the shape annotations can be set before creating the control using distanceSettings, perimeterSettings, areaSettings, radiusSettings and volumeSettings.
 Refer to the following code snippet to set the default annotation settings.
 
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+```typescript
+import { ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, AnnotationService
+       } from '@syncfusion/ej2-angular-pdfviewer';
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+              <ejs-pdfviewer id="pdfViewer"
+                    [documentPath]='document'
+                    [distanceSettings]='distanceSettings'
+                    [perimeterSettings]='perimeterSettings'
+                    [areaSettings]='areaSettings'
+                    [radiusSettings]='radiusSettings'
+                    [volumeSettings]='volumeSettings'
+                    style="height:640px;display:block">
+              </ejs-pdfviewer>
+              </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService,ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService]
+  })
+  export class AppComponent implements OnInit {
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public distanceSettings = { fillColor: 'blue', opacity: 0.6, strokeColor: 'green' };
+    public perimeterSettings = { fillColor: 'green', opacity: 0.6, strokeColor: 'blue' };
+    public areaSettings = { fillColor: 'yellow', opacity: 0.6, strokeColor: 'orange' };
+    public radiusSettings = { fillColor: 'orange', opacity: 0.6, strokeColor: 'pink' };
+    public volumeSettings = { fillColor: 'pink', opacity: 0.6, strokeColor: 'yellow' };
+  }
+```
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
 ```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
@@ -138,7 +215,7 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
   })
   export class AppComponent implements OnInit {
     public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-    public document: string = 'PDF_Succinctly.pdf';
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public distanceSettings = { fillColor: 'blue', opacity: 0.6, strokeColor: 'green' };
     public perimeterSettings = { fillColor: 'green', opacity: 0.6, strokeColor: 'blue' };
     public areaSettings = { fillColor: 'yellow', opacity: 0.6, strokeColor: 'orange' };
@@ -146,6 +223,8 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
     public volumeSettings = { fillColor: 'pink', opacity: 0.6, strokeColor: 'yellow' };
   }
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ## Editing scale ratio and unit of the measurement annotation
 
@@ -167,6 +246,39 @@ The Units of measurements support for the measurement annotations in the PDF Vie
 ## Setting default scale ratio settings during control initialization
 
 The properties of scale ratio for measurement annotation can be set before creating the control using ScaleRatioSettings as shown in the following code snippet,
+
+{% tabs %}
+{% highlight js tabtitle="Standalone" %}
+
+```typescript
+  import { ViewChild } from '@angular/core';
+  import { Component, OnInit } from '@angular/core';
+  import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+           MagnificationService, ThumbnailViewService, ToolbarService,
+           NavigationService, TextSearchService, TextSelectionService,
+           PrintService, AnnotationService
+         } from '@syncfusion/ej2-angular-pdfviewer';
+  @Component({
+      selector: 'app-root',
+      // specifies the template string for the PDF Viewer component
+      template: `<div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                                [documentPath]='document'
+                                [measurementSettings]='measurementSettings'
+                                style="height:640px;display:block">
+                  </ejs-pdfviewer>
+                </div>`,
+    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+                 ThumbnailViewService,ToolbarService, NavigationService,
+                 TextSearchService, TextSelectionService, PrintService, AnnotationService]
+  })
+  export class AppComponent implements OnInit {
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public measurementSettings = { scaleRatio: 2, conversionUnit: 'cm', displayUnit: 'cm' };
+  }
+```
+{% endhighlight %}
+{% highlight js tabtitle="Server-Backed" %}
 
 ```typescript
   import { ViewChild } from '@angular/core';
@@ -193,7 +305,9 @@ The properties of scale ratio for measurement annotation can be set before creat
   })
   export class AppComponent implements OnInit {
     public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
-    public document: string = 'PDF_Succinctly.pdf';
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public measurementSettings = { scaleRatio: 2, conversionUnit: 'cm', displayUnit: 'cm' };
   }
 ```
+{% endhighlight %}
+{% endtabs %}

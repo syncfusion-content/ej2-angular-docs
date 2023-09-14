@@ -18,6 +18,22 @@ The following steps are used to customize the selection border.
 
 **Step 2:** Add the following code snippet in app.component.html and app.component.ts files to customize selection borders.
 
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+```html
+
+<ejs-pdfviewer id="pdfViewer"
+               [documentPath]='document'
+               [freeTextSettings]="annotationsettings"
+               [rectangleSettings]="annotationsettings"
+               [stampSettings]="annotationsettings"
+               style="height:640px;display:block">
+</ejs-pdfviewer>
+
+```
+{% endhighlight %}
+
+{% highlight html tabtitle="Server-Backed" %}
 ```html
 
 <ejs-pdfviewer id="pdfViewer"
@@ -30,6 +46,8 @@ The following steps are used to customize the selection border.
 </ejs-pdfviewer>
 
 ```
+{% endhighlight %}
+{% endtabs %}
 
 ```typescript
 

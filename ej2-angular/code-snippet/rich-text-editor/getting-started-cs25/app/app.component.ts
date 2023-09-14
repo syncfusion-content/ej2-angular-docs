@@ -16,6 +16,7 @@ export class AppComponent  {
         items: [ 'FontName', 'FontSize']
     };
     public size = {
+        default: '10',
         width: '40px',
         items: [{ text: '8', value: '8pt' },
         { text: '10', value: '10pt' },
@@ -24,6 +25,7 @@ export class AppComponent  {
         { text: '42', value: '42pt' }]
     };
     public family = {
+        default: 'Segoe UI',
         width: '60px',
         items: [
         { text: 'Segoe UI', value: 'Segoe UI' },
