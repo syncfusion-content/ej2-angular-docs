@@ -12,6 +12,10 @@ domainurl: ##DomainURL##
 
 **Serialization** is the process of saving and loading for state persistence of the diagram.
 
+To save and load the diagram in Angular, refer to the below video link.
+
+{% youtube "youtube:https://www.youtube.com/watch?v=Cz_9NHZAFaY" %}
+
 ## Save
 
 The diagram is serialized as string while saving. The client-side method, [`saveDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram#saveDiagram) helps to serialize the diagram as a string. The following code illustrates how to save the diagram.

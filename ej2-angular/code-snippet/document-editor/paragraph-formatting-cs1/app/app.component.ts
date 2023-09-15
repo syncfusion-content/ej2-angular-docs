@@ -78,22 +78,24 @@ export class AppComponent {
             var paragraphFormat = (this.documentEditor as DocumentEditorComponent).selection.paragraphFormat;
             var toggleBtnId = ['AlignLeft', 'AlignCenter', 'AlignRight', 'Justify', 'ShowParagraphMark'];
             //Remove toggle state.
-            for (var i = 0; i < toggleBtnId.length; i++) {
-                let toggleBtn: HTMLElement = document.getElementById(toggleBtnId[i]);
+            if (document.getElementById('AlignLeft')) {
+              for (var i = 0; i < toggleBtnId.length; i++) {
+                let toggleBtn: HTMLElement = document.getElementById(toggleBtnId[i]) as HTMLElement;
                 toggleBtn.classList.remove('e-btn-toggle');
-            }
-            //Add toggle state based on selection paragraph format.
-            if (paragraphFormat.textAlignment === 'Left') {
-                document.getElementById('AlignLeft').classList.add('e-btn-toggle');
-            } else if (paragraphFormat.textAlignment === 'Right') {
-                document.getElementById('AlignRight').classList.add('e-btn-toggle');
-            } else if (paragraphFormat.textAlignment === 'Center') {
-                document.getElementById('AlignCenter').classList.add('e-btn-toggle');
-            } else {
-                document.getElementById('Justify').classList.add('e-btn-toggle');
-            }
-            if((this.documentEditor as DocumentEditorComponent).documentEditorSettings.showHiddenMarks) {
-                document.getElementById('ShowParagraphMark').classList.add('e-btn-toggle');
+              }
+              //Add toggle state based on selection paragraph format.
+              if (paragraphFormat.textAlignment === 'Left') {
+                (document.getElementById('AlignLeft') as HTMLElement).classList.add('e-btn-toggle');
+              } else if (paragraphFormat.textAlignment === 'Right') {
+                (document.getElementById('AlignRight') as HTMLElement).classList.add('e-btn-toggle');
+              } else if (paragraphFormat.textAlignment === 'Center') {
+                (document.getElementById('AlignCenter') as HTMLElement).classList.add('e-btn-toggle');
+              } else {
+                (document.getElementById('Justify') as HTMLElement).classList.add('e-btn-toggle');
+              }
+              if ((this.documentEditor as DocumentEditorComponent).documentEditorSettings.showHiddenMarks) {
+                (document.getElementById('ShowParagraphMark') as HTMLElement).classList.add('e-btn-toggle');
+              }
             }
             // #endregion
         }

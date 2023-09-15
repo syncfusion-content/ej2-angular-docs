@@ -14,6 +14,10 @@ Diagram provides support to export its content as image/svg files. The client-si
 
 >Note: To use Print and Export, you need to inject `PrintAndExport` in the diagram.
 
+To print and export the diagram in Angular, refer to the below video link.
+
+{% youtube "youtube:https://www.youtube.com/watch?v=Cz_9NHZAFaY" %}
+
 <!-- markdownlint-disable MD033 -->
 
 ```typescript
