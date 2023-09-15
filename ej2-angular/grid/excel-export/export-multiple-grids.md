@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Export multiple grids in Angular Grid component
 
-The excel export provides an option to export multiple grid data in the same excel file.
+The Excel export provides an option to export multiple grid data in the same or different sheets of an Excel file. Each grid is identified by its unique ID. You can specify which grids to export by listing their **IDs** in the `exportGrids` property.
 
 ## Same sheet
 
-The excel export provides support to export multiple grids in same sheet. To export in same sheet, define [`multipleExport.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#multipleexport) as **AppendToSheet** in [`excelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/). It have an option to provide blank rows between grids. These blank rows count can be defined by using the **multipleExport.blankRows**.
+Excel exporting provides support for exporting multiple grids on the same sheet. To export the grids in the same sheet, define [`multipleExport.type`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#multipleexport) as **AppendToSheet** in [`excelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/). It also has an option to provide blank rows between the grids. These blank rows count can be defined by using `multipleExport.blankRows` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +34,7 @@ The excel export provides support to export multiple grids in same sheet. To exp
 
 ## New sheet
 
-Excel exporting provides support to export multiple grids in new sheet. To export in new sheet, define  **multipleExport.type** as **NewSheet** in [`excelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/).
+Excel export functionality enables the exporting of multiple grids onto separate sheets (each grid in new sheet of excel) within the Excel file. To achieve this, you can specify `multipleExport.type` as **NewSheet** in [`excelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

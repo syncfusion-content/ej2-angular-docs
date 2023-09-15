@@ -150,6 +150,10 @@ The toolbar settings like, items to be displayed in toolbar and visibility can b
   
 {% previewsample "page.domainurl/samples/file-manager/toolbar-customize-cs1" %}
 
+### See Also
+
+* [How to add new items or customize default items](../file-manager/how-to/adding-custom-item-to-toolbar.md)
+
 ## Upload customization
 
 The upload settings like, minimum and maximum file size and enabling auto upload can be customized using [uploadSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#uploadsettings) property.

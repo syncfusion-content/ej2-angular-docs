@@ -10,7 +10,7 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
     selector: 'app-root',
     template: `<p><b>First Grid:</b></p>
     <ejs-grid #grid1 id='FirstGrid' [dataSource]='fData' [toolbar]='toolbarOptions' [allowExcelExport]='true'
-    (toolbarClick)='toolbarClick($event)'>
+    (toolbarClick)='toolbarClick($event)' [exportGrids]='exportGrids'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
@@ -34,6 +34,7 @@ export class AppComponent implements OnInit {
     public fData?: object[];
     public sData?: object[];
     public toolbarOptions?: ToolbarItems[];
+    public exportGrids?: string[];
     @ViewChild('grid1') public fGrid?: GridComponent;
     @ViewChild('grid2') public sGrid?: GridComponent;
 
@@ -41,6 +42,7 @@ export class AppComponent implements OnInit {
         this.fData = data.slice(0, 5);
         this.sData = employeeData.slice(0, 5);
         this.toolbarOptions = ['ExcelExport'];
+        this.exportGrids = ['FirstGrid', 'SecondGrid']
     }
 
     toolbarClick = (args: ClickEventArgs) => {
@@ -48,14 +50,7 @@ export class AppComponent implements OnInit {
             const appendExcelExportProperties: ExcelExportProperties = {
                 multipleExport: { type: 'NewSheet' }
             };
-
-            const firstGridExport: Promise<any> = (this.fGrid as any).excelExport(appendExcelExportProperties, true);
-            firstGridExport.then((fData: any) => {
-                (this.sGrid as any).excelExport(appendExcelExportProperties, false, fData);
-            });
+            (this.fGrid as any).excelExport(appendExcelExportProperties, true);
         }
     }
 }
-
-
-

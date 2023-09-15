@@ -3,14 +3,14 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, employeeData } from './datasource';
-import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
     selector: 'app-root',
     template: `<p><b>First Grid:</b></p>
     <ejs-grid #grid1 id='FirstGrid' [dataSource]='fData' [toolbar]='toolbarOptions' [allowPdfExport]='true'
-        (toolbarClick)='toolbarClick($event)'>
+        (toolbarClick)='toolbarClick($event)' [exportGrids]='exportGrids'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
@@ -34,6 +34,7 @@ export class AppComponent implements OnInit {
     public fData?: object[];
     public sData?: object[];
     public toolbarOptions?: ToolbarItems[];
+    public exportGrids?: string[];
     @ViewChild('grid1') public fGrid?: GridComponent;
     @ViewChild('grid2') public sGrid?: GridComponent;
 
@@ -41,14 +42,15 @@ export class AppComponent implements OnInit {
         this.fData = data.slice(0, 5);
         this.sData = employeeData.slice(0, 5);
         this.toolbarOptions = ['PdfExport'];
+        this.exportGrids = ['FirstGrid', 'SecondGrid'];
     }
 
     toolbarClick = (args: ClickEventArgs) => {
+        const appendPdfExportProperties: PdfExportProperties = {
+            multipleExport: { type: 'NewPage' }
+        };
         if ((args as any).item.id === 'FirstGrid_pdfexport') { // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
-            const firstGridPdfExport: Promise<object> = (this.fGrid as any).pdfExport({}, true);
-            firstGridPdfExport.then((pdfData: object) => {
-                (this.sGrid as any).pdfExport({}, false, pdfData);
-            });
+            (this.fGrid as any).pdfExport(appendPdfExportProperties, true);
         }
     }
 }
