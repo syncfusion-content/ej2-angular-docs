@@ -52,7 +52,6 @@ Syncfusion Angular Themes are available in the CDN. Make sure that the version i
 <head>
     <link href="https://cdn.syncfusion.com/ej2/<version>/<theme_name>.css" rel="stylesheet"/>
 </head>
-
 ```
 
 | Theme Name | CDN Reference |

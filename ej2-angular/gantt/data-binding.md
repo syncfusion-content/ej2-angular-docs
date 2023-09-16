@@ -148,6 +148,373 @@ public ActionResult UrlDatasource(DataManagerRequest dm)
 
 ```
 
+### Load child on demand
+
+To render child records on demand, assign a remote service URL in the instance of DataManager to the Url property. To interact with the remote data source, provide the endpoint URL and also define the [`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#hasChildMapping) property in taskFields of Gantt Chart.
+
+The <code>hasChildMapping</code> property maps the field name in the data source, which denotes whether the current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
+
+When [`loadChildOnDemand`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#loadChildOnDemand) is disabled, all the root nodes are rendered in a collapsed state at initial load. On expanding the root node, the child nodes will be loaded from the remote server.
+
+When <code>enableVirtualization</code> is enabled and <code>loadChildOnDemand</code> is disabled, only the current viewport root nodes are rendered in a collapsed state.
+
+When a root node is expanded, its child nodes are rendered and maintained in a collection locally, such that on consecutive expand/collapse actions on the root node, the child nodes are loaded locally instead of from the remote server.
+
+When the <code>loadChildOnDemand</code> is enabled, parent records are rendered in an expanded state.
+
+```typescript
+
+import { Component, OnInit } from '@angular/core';
+import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
+import { VirtualScrollService, SelectionService } from '@syncfusion/ej2-angular-gantt';
+
+@Component({
+    selector: 'app-container',
+    template: `<ejs-gantt id="ganttDefault" [dataSource]="data" [taskFields]="taskSettings" [loadChildOnDemand]="false" [enableVirtualization]="true" [allowSelection]="true"
+      [labelSettings]="labelSettings" [columns]="columns" [treeColumnIndex]="1" height="450px" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate"
+      [highlightWeekends]="true"  [taskbarHeight]="20" [rowHeight]="40" [tooltipSettings]="tooltipSettings"  [splitterSettings]="splitterSettings">
+  </ejs-gantt>`,
+providers: [VirtualScrollService, SelectionService]
+})
+export class AppComponent implements OnInit {
+
+    public data: object;
+    public taskSettings: object;
+    public columns: object[];
+    public labelSettings: object;
+    public splitterSettings: object;
+    public tooltipSettings: object;
+    public projectStartDate: Date;
+    public projectEndDate: Date;
+
+    ngOnInit(): void {
+        this.data = new DataManager({
+        url: 'https://services.syncfusion.com/angular/production/api/GanttLoadOnDemand',
+        adaptor: new WebApiAdaptor,
+        crossDomain: true
+    });
+        this.taskSettings = {
+            id: 'taskId',
+            name: 'taskName',
+            startDate: 'startDate',
+            endDate: 'endDate',
+            duration: 'duration',
+            progress: 'progress',
+            hasChildMapping: "isParent",
+            parentID: "parentID"
+        };
+        this.tooltipSettings= {
+          showTooltip: true
+        };
+        this.splitterSettings = {
+          columnIndex: 3
+        };
+        this.columns =  [
+            { field: 'taskId', width:80 },
+            { field: 'taskName', headerText: 'Name', width: '200', clipMode: 'EllipsisWithTooltip' },
+            { field: 'startDate' },
+            { field: 'duration' },
+            { field: 'progress' },
+        ];
+        this.projectStartDate = new Date('01/02/2000');
+        this.projectEndDate = new Date('01/06/2002');
+    }
+}
+
+```
+
+The following code example describes handling of Load on demand at server end.
+
+```typescript
+
+    public object Get()
+        {
+            DataOperations operation = new DataOperations();
+            var queryString = Request.Query;
+            if (tree.Count == 0)
+                tree = TreeData.GetTree();
+            if (queryString.Keys.Contains("$filter") && !queryString.Keys.Contains("$top"))
+            {
+                StringValues filter;
+                queryString.TryGetValue("$filter", out filter);
+                int? fltr;
+                if (filter[0].ToString().Split("eq")[1] == " null")
+                {
+                    fltr = null;
+                }
+                else
+                {
+                    fltr = Int32.Parse(filter[0].ToString().Split("eq")[1]);
+                }
+                IQueryable<TreeData> data1 = tree.Where(f => f.parentID == fltr).AsQueryable();
+                return new { result = data1.ToList(), count = data1.Count() };
+            }
+            StringValues expand;
+            queryString.TryGetValue("$expand", out expand);
+            if (queryString.Keys.Contains("$expand")) // setting the ExpandStateMapping property whether is true or false
+            {
+                if (expand[0].ToString().Split(",")[0] == "ExpandingAction")
+                {
+                    var val = TreeData.GetTree().Where(ds => ds.taskId == int.Parse(expand[0].ToString().Split(",")[1])).FirstOrDefault();
+                    val.IsExpanded = true;
+                }
+                else if (expand[0].ToString().Split(",")[0] == "CollapsingAction")
+                {
+                    var val = TreeData.GetTree().Where(ds => ds.taskId == int.Parse(expand[0].ToString().Split(",")[1])).FirstOrDefault();
+                    val.IsExpanded = false;
+                }
+            }
+            List<TreeData> data = tree.ToList();
+            if (queryString.Keys.Contains("$select"))
+            {
+                data = (from ord in tree
+                        select new TreeData
+                        {
+                            parentID = ord.parentID
+                        }
+                        ).ToList();
+                return data;
+            }
+            data = data.Where(p => p.parentID == null).ToList();
+            int count = data.Count;
+
+            if (queryString.Keys.Contains("$inlinecount"))
+            {
+                StringValues Skip;
+                StringValues Take;
+                StringValues loadchild;
+
+                int skip = (queryString.TryGetValue("$skip", out Skip)) ? Convert.ToInt32(Skip[0]) : 0;
+                int top = (queryString.TryGetValue("$top", out Take)) ? Convert.ToInt32(Take[0]) : data.Count();
+
+                var GroupData = TreeData.GetTree().ToList().GroupBy(rec => rec.parentID)
+                           .Where(g => g.Key != null).ToDictionary(g => g.Key?.ToString(), g => g.ToList());
+                foreach (var Record in data.ToList())
+                {
+                    if (GroupData.ContainsKey(Record.taskId.ToString()))
+                    {
+                        var ChildGroup = GroupData[Record.taskId.ToString()];
+                        if (ChildGroup?.Count > 0)
+                            AppendChildren(ChildGroup, Record, GroupData, data);
+                    }
+                }
+                if (expand.Count > 0 && expand[0].ToString().Split(",")[0] == "CollapsingAction")
+                {
+                    string IdMapping = "taskId";
+                    List<WhereFilter> CollapseFilter = new List<WhereFilter>();
+                    CollapseFilter.Add(new WhereFilter() { Field = IdMapping, value = expand[0].ToString().Split(",")[1], Operator = "equal" });
+                    var CollapsedParentRecord = operation.PerformFiltering(data, CollapseFilter, "and");
+                    var index = data.Cast<object>().ToList().IndexOf(CollapsedParentRecord.Cast<object>().ToList()[0]);
+                    skip = index;
+                }
+                else if (expand.Count > 0 && expand[0].ToString().Split(",")[0] == "ExpandingAction")
+                {
+                    string IdMapping = "taskId";
+                    List<WhereFilter> ExpandFilter = new List<WhereFilter>();
+                    ExpandFilter.Add(new WhereFilter() { Field = IdMapping, value = expand[0].ToString().Split(",")[1], Operator = "equal" });
+                    var ExpandedParentRecord = operation.PerformFiltering(data, ExpandFilter, "and");
+                    var index = data.Cast<object>().ToList().IndexOf(ExpandedParentRecord.Cast<object>().ToList()[0]);
+                    skip = index;
+                }
+                return new { result = data.Skip(skip).Take(top), count = data.Count };
+            }
+            else
+            {
+                return TreeData.GetTree();
+            }
+        }
+        private void AppendChildren(List<TreeData> ChildRecords, TreeData ParentItem, Dictionary<string, List<TreeData>> GroupData, List<TreeData> data)
+        {
+
+            var queryString = Request.Query;
+            string TaskId = ParentItem.taskId.ToString();
+
+            var index = data.IndexOf(ParentItem);
+            foreach (var Child in ChildRecords)
+            {
+                string ParentId = Child.parentID.ToString();
+                if (TaskId == ParentId && (bool)ParentItem.IsExpanded)
+                {
+                    if (data.IndexOf(Child) == -1)
+                        ((IList)data).Insert(++index, Child);
+                    if (GroupData.ContainsKey(Child.taskId.ToString()))
+                    {
+                        var DeepChildRecords = GroupData[Child.taskId.ToString()];
+                        if (DeepChildRecords?.Count > 0)
+                            AppendChildren(DeepChildRecords, Child, GroupData, data);
+                    }
+                }
+            }
+        }
+
+        // GET: api/Orders/
+        [HttpGet("{id}", Name = "Get")]
+        public string Get(int id)
+        {
+            return "value";
+        }
+
+        [HttpPost]
+        public object Post([FromBody] TreeData[] value)
+        {
+            //handle insert action
+            for (var i = 0; i < value.Length; i++)
+            {
+                tree.Insert(0, value[i]);
+            }
+            return value;
+        }
+
+        //// PUT: api/Orders
+        [HttpPut]
+
+        public object Put([FromBody] TreeData[] value)
+        {
+            //handle edit action
+            if (value.Length == 1 && value[0].isParent == true)
+            {
+                UpdateDependentRecords(value[0]);
+            }
+            for (var i = 0; i < value.Length; i++) {
+                var ord = value[i];
+                TreeData val = tree.Where(or => or.taskId == ord.taskId).FirstOrDefault();
+                val.taskId = ord.taskId;
+                val.taskName = ord.taskName;
+                val.endDate = ord.endDate;
+                val.startDate = ord.startDate;
+                val.duration = ord.duration;
+                val.predecessor = ord.predecessor;
+            }
+            
+            return value;
+        }
+
+        private void UpdateDependentRecords(TreeData ParentItem)
+        {
+            var data = tree.Where(p => p.parentID == ParentItem.taskId).ToList();
+            var previousData = tree.Where(p => p.taskId == ParentItem.taskId).ToList();
+            var previousStartDate = previousData[0].startDate;
+            var previousEndDate = previousData[0].endDate;
+            double sdiff = (double)GetTimeDifference((DateTime)previousStartDate, (DateTime)ParentItem.startDate);
+            double ediff = (double)GetTimeDifference((DateTime)previousEndDate, (DateTime)ParentItem.endDate);
+            GetRootChildRecords(ParentItem);
+            for(var i=0; i<ChildRecords.Count;i++)
+            {
+                ChildRecords[i].startDate = ((DateTime)ChildRecords[i].startDate).AddSeconds(sdiff);
+                ChildRecords[i].endDate = ((DateTime)ChildRecords[i].endDate).AddSeconds(ediff);
+            }
+        }
+
+        private void GetRootChildRecords(TreeData ParentItem)
+        {
+            var currentchildRecords = tree.Where(p => p.parentID == ParentItem.taskId).ToList();
+            for (var i = 0; i < currentchildRecords.Count; i++) {
+                var currentRecord = currentchildRecords[i];
+                ChildRecords.Add(currentRecord);
+                if (currentRecord.isParent == true)
+                {
+                    GetRootChildRecords(currentRecord);
+                }
+            }
+        }
+
+        public object GetTimeDifference(DateTime sdate, DateTime edate)
+        {
+            return new DateTime(edate.Year, edate.Month, edate.Day, edate.Hour, edate.Minute, edate.Second, DateTimeKind.Utc).Subtract(new DateTime(sdate.Year, sdate.Month, sdate.Day, sdate.Hour, sdate.Minute, sdate.Second, DateTimeKind.Utc)).TotalSeconds;
+        }
+
+
+        // DELETE: api/ApiWithActions
+        [HttpDelete("{id:int}")]
+        [Route("Orders/{id:int}")]
+        public object Delete(int id)
+        {
+            //handle delete action
+            tree.Remove(tree.Where(or => or.taskId == id).FirstOrDefault());
+            return Json(id);
+        }
+        public class CRUDModel<T> where T : class
+        {
+
+            public TreeData Value;
+            public int Key { get; set; }
+            public int RelationalKey { get; set; }
+            public List<TreeData> added { get; set; }
+            public List<TreeData> changed { get; set; }
+            public List<TreeData> deleted { get; set; }
+        }
+        public class TreeData
+        {
+            public static List<TreeData> tree = new List<TreeData>();
+            [System.ComponentModel.DataAnnotations.Key]
+            public int taskId { get; set; }
+            public string taskName { get; set; }
+            public DateTime startDate { get; set; }
+            public DateTime endDate { get; set; }
+            public string duration { get; set; }
+            public int progress { get; set; }
+            public int? parentID { get; set; }
+            public string predecessor { get; set; }
+            public bool? isParent { get; set; }
+            public bool? IsExpanded { get; set; }
+            public static List<TreeData> GetTree()
+            {
+                if (tree.Count == 0)
+                {
+                    Random rand = new Random();
+                    var x = 0;
+                    int duration = 0;
+                    DateTime startDate = new DateTime(2000, 1, 3, 08, 00, 00);
+                    for (var i = 1; i <= 50; i++)
+                    {
+                        startDate = startDate.AddDays(i == 1 ? 0 : 7);
+                        DateTime childStartDate = startDate;
+                        TreeData Parent = new TreeData()
+                        {
+                            taskId = ++x,
+                            taskName = "Task " + x,
+                            startDate = startDate,
+                            endDate = childStartDate.AddDays(26),
+                            duration = "20",
+                            progress = rand.Next(100),
+                            predecessor = null,
+                            isParent = true,
+                            parentID = null,
+                            IsExpanded = false
+                        };
+                        tree.Add(Parent);
+                        for (var j = 1; j <= 4; j++)
+                        {
+                            childStartDate = childStartDate.AddDays(j == 1 ? 0 : duration + 2);
+                            duration = 5;
+                            tree.Add(new TreeData()
+                            {
+                                taskId = ++x,
+                                taskName = "Task " + x,
+                                startDate = childStartDate,
+                                endDate = childStartDate.AddDays(5),
+                                duration = duration.ToString(),
+                                progress = rand.Next(100),
+                                parentID = Parent.taskId,
+                                predecessor = (j > 1 ? (x - 1) + "FS" : ""),
+                                isParent = false,
+                                IsExpanded = false
+                            });
+                        }
+                    }
+                }
+                return tree;
+            }
+        }
+
+```
+### Limitations
+
+* Filtering, sorting  and searching are not supported in load on demand.
+* Only Self-Referential type data is supported with remote data binding in Gantt Chart.
+* Load-on-demand supports only the validated data source
+
+
 ### Sending additional parameters to the server
 
 We can pass additional parameters using [`addParams`](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method of [`Query`](https://ej2.syncfusion.com/angular/documentation/api/gantt#query) class. In server side we have inherited and shown the additional parameter value in Syncfusion DataManager class itself. We pass an additional parameter in load time using [`load`](https://ej2.syncfusion.com/angular/documentation/api/gantt#load) event. We can also pass additional parameter to the CRUD model. Please Check the below code snippet to send additional parameter to Gantt.
