@@ -3,13 +3,13 @@ layout: post
 title: Stacked Column Chart in Angular Chart component | Syncfusion
 description: Learn here all about Stacked Column Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Stacked Column Chart
+control: Stacked column chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
 # Stacked Column in Angular Chart component
 
-## Stacked Column
+## Stacked column
 
 To render a stacked column series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `StackingColumn` and inject `StackingColumnSeriesService` into the `@NgModule.providers`.
 
@@ -27,7 +27,7 @@ To render a stacked column series, use series [`type`](https://ej2.syncfusion.co
 
 {% previewsample "page.domainurl/samples/chart/series/column-cs20" %}
 
-## Stacking Group
+## Stacking group
 
 <!-- markdownlint-disable MD010 -->
 
@@ -47,6 +47,24 @@ Columns with same group name are stacked on top of each other.
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chart/series/column-cs22" %}
+
+## Cylindrical stacked column chart
+
+To render a cylindrical stacked column chart, set the `columnFacet` property to `Cylinder` in the chart series.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/column-cs33/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/chart/series/column-cs33/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/column-cs33/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/column-cs33" %}
 
 ## Series customization
 
@@ -71,7 +89,7 @@ The following properties can be used to customize the `stacked column` series.
 
 {% previewsample "page.domainurl/samples/chart/series/stackedcolumn-cs" %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

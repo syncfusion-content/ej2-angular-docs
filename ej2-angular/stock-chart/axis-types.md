@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Axis types in Angular Stock chart component
 
-## DateTime Axis
+## DateTime axis
 
-Date time axis uses date time scale and displays the date time values as axis labels in the specified format and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#valuetype) of axis to DateTime.
+DateTime axis uses date time scale and displays the date time values as axis labels in the specified format. To use DateTime axis, set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#valuetype) of axis to `DateTime`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,11 +29,29 @@ Date time axis uses date time scale and displays the date time values as axis la
   
 {% previewsample "page.domainurl/samples/stock-chart/axis-cs7" %}
 
-## Logarithmic Axis
+## DateTimeCategory axis
+
+DateTimeCategory axis in the stock chart is used to display only business days. To use DateTimeCategory axis, set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#valuetype) of axis to `DateTimeCategory`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/stock-chart/axis-cs9/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/stock-chart/axis-cs9/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/stock-chart/axis-cs9/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/stock-chart/axis-cs9" %}
+
+## Logarithmic axis
 
 <!-- markdownlint-disable MD033 -->
 
-Logarithmic axis uses logarithmic scale and it is very useful in visualizing data, when it has numerical values in both lower order of magnitude (eg: 10<sup>-6</sup>) and higher order of magnitude (eg: 10<sup>6</sup>) and set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#valuetype) of axis to `Lograthmic`.
+Logarithmic axis uses logarithmic scale and it is very useful in visualizing data, when it has numerical values in both lower order of magnitude (eg: 10<sup>-6</sup>) and higher order of magnitude (eg: 10<sup>6</sup>). To use Logarithmic axis, set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/stock-chart/stockChartAxisModel/#valuetype) of axis to `Logarithmic`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,6 +67,6 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing dat
   
 {% previewsample "page.domainurl/samples/stock-chart/axis-cs8" %}
 
-## See Also
+## See also
 
 * [Axis Customization](./axis-customization/)

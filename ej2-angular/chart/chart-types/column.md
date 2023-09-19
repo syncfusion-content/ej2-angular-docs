@@ -3,7 +3,7 @@ layout: post
 title: Column Chart in Angular Chart component | Syncfusion
 description: Learn here all about Column Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Column Chart
+control: Column chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -46,7 +46,7 @@ The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart
 
 {% previewsample "page.domainurl/samples/chart/series/column-cs31" %}
 
-## Grouped Column
+## Grouped column
 
 <!-- markdownlint-disable MD010 -->
 You can use the [`groupName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#stackinggroup) property to group the data points in the column type charts. Data points with same group name are grouped together.
@@ -64,6 +64,24 @@ You can use the [`groupName`](https://ej2.syncfusion.com/angular/documentation/a
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/column-cs23" %}
+
+## Cylindrical column chart
+
+To render a cylindrical column chart, set the `columnFacet` property to `Cylinder` in the chart series.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/column-cs32/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/chart/series/column-cs32/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/column-cs32/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/column-cs32" %}
 
 ## Series customization
 
@@ -88,7 +106,7 @@ The following properties can be used to customize the `column` series.
   
 {% previewsample "page.domainurl/samples/chart/series/column-cs24" %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

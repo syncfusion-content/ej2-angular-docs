@@ -3,7 +3,7 @@ layout: post
 title: Bar Chart in Angular Chart component | Syncfusion
 description: Learn here all about Bar Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Bar Chart
+control: Bar chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -64,6 +64,24 @@ You can use the [`groupName`](https://ej2.syncfusion.com/angular/documentation/a
   
 {% previewsample "page.domainurl/samples/chart/series/bar-cs5" %}
 
+## Cylindrical bar chart
+
+To render a cylindrical bar chart, set the `columnFacet` property to `Cylinder` in the chart series.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/bar-cs7/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/chart/series/bar-cs7/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/bar-cs7/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/bar-cs7" %}
+
 ## Series customization
 
 The following properties can be used to customize the `bar` series.
@@ -87,7 +105,7 @@ The following properties can be used to customize the `bar` series.
   
 {% previewsample "page.domainurl/samples/chart/series/bar-cs6" %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)
