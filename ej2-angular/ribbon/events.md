@@ -1852,3 +1852,66 @@ export class AppComponent {
     };
 }
 ```
+
+## Backstage Menu events
+
+### backStageItemClick
+
+The [backStageItemClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backstageItemModel/#backstageitemclick) event is triggered when backstage item is selected.
+
+```javascript
+import { Component } from "@angular/core";
+import { RibbonButtonSettingsModel, BackStageMenuModel, BackstageItemModel, BackstageItemClickArgs } from '@syncfusion/ej2-angular-ribbon';
+@Component({
+  selector: "app-root",
+  template: `<!-- To Render Ribbon. -->
+    <ejs-ribbon id="ribbon" [backStageMenu]="backstageSettings">
+        <e-ribbon-tabs>
+            <e-ribbon-tab header="Home">
+                <e-ribbon-groups>
+                    <e-ribbon-group header="Clipboard">
+                        <e-ribbon-collections>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type="Button" [buttonSettings]="cutButton">
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                        </e-ribbon-collections>
+                    </e-ribbon-group>
+                </e-ribbon-groups>
+            </e-ribbon-tab>
+        </e-ribbon-tabs>
+    </ejs-ribbon>`,
+})
+export class AppComponent {
+    public cutButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-cut", content: "Cut" };
+    public backstageSettings: BackStageMenuModel = {
+        text: 'File',
+        visible: true,
+        items: this.menuItems,
+        backButton: {
+            text: 'Close',
+        }
+    }
+    public getBackstageContent(item: string): string {
+        var content = "";
+        switch (item) {
+            case "new": 
+                {
+                    content = "<div id='new-section' class='new-wrapper'><div class='section-title'> New </div><div class='category_container'><div class='doc_category_image'></div> <span class='doc_category_text'> New document </span></div></div>";
+                }
+            }
+        return content;
+    }
+    public menuItems: BackstageItemModel[] = [{
+        id: 'new',
+        text: 'New',
+        iconCss: 'e-icons e-file-new',
+        content: this.getBackstageContent('new'),
+        backStageItemClick: (args: BackstageItemClickArgs) => { 
+            // Your required action here
+        } 
+    }];
+}
+```

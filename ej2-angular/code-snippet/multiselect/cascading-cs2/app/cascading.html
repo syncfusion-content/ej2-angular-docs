@@ -14,9 +14,9 @@
     <div id="wrapper" style='margin-top: 20px'>
         <div id='content' style="margin: 50px auto 0; width:250px;">
             <br>
-                <ejs-multiselect #country id="country" [dataSource]="countryData" [fields]="countryFields" [changeOnBlur]= "false" (change)="countryChange($event)" [placeholder]="countryWatermark"></ejs-multiselect>
+                <ejs-multiselect #country id="country" [dataSource]="countryData" [fields]="countryFields" [changeOnBlur]= "false" (change)="countrySelect($event)" [placeholder]="countryWatermark"></ejs-multiselect>
             <div class="padding-top">
-                <ejs-multiselect #state id="state" [dataSource]="stateData" [fields]="stateFields" [changeOnBlur] = "false" (change)="stateChange($event)" [placeholder]="stateWatermark" [enabled]="false"></ejs-multiselect>
+                <ejs-multiselect #state id="state" [dataSource]="stateData" [fields]="stateFields" [changeOnBlur] = "false" (change)="stateSelect($event)" [placeholder]="stateWatermark" [enabled]="false"></ejs-multiselect>
             </div>  
             <div class="padding-top">
                 <ejs-multiselect #city id="city" [dataSource]="cityData" [fields]="cityFields" [placeholder]="cityWatermark" [enabled]="false"></ejs-multiselect>
