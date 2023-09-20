@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { GridModule, FreezeService, SelectionService } from '@syncfusion/ej2-angular-grids';
+import { GridModule, ToolbarService, PdfExportService, PageService, FilterService } from '@syncfusion/ej2-angular-grids';
 import { AppComponent } from './app.component';
 
 /**
@@ -13,6 +13,6 @@ import { AppComponent } from './app.component';
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
-    providers: [FreezeService, SelectionService]
+    providers: [ToolbarService, PdfExportService, PageService, FilterService]
 })
 export class AppModule { }

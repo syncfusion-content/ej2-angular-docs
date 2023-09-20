@@ -1,0 +1,56 @@
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+import { FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+  selector: 'app-root',
+  template: `<div class='message'>{{actionBeginMessage}}</div><div class='message'>{{actionCompleteMessage}}</div>
+    <ejs-grid [dataSource]='data' [allowFiltering]='true' [filterSettings]='filterOptions' height='273px' (actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)">
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                    <e-column field='Freight' headerText='Freight' width=120></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=100></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=100></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+  public data?: object[];
+  public filterOptions?: FilterSettingsModel;
+  public actionBeginMessage: string | undefined;
+  public actionCompleteMessage: string | undefined;
+
+  ngOnInit(): void {
+    this.data = data;
+    this.filterOptions = { type: 'Menu' }
+  }
+  actionBegin(args: any) {
+    this.actionBeginMessage='';
+    if (args.requestType == 'filterbeforeopen' && args.columnType === "number") {
+        args.filterModel.customFilterOperators.numberOperator = [
+        { value: "equal", text: "Equal" },
+        { value: "notequal", text: "Not Equal" }];
+        this.actionBeginMessage ='Filter operators for number column were customized using the filterbeforeopen action in the actionBegin event';
+    }
+    else{
+      this.actionBeginMessage = args.requestType + ' action is triggered in actionBegin event'
+    }
+    if(args.requestType == 'filtering' && args.currentFilteringColumn == 'ShipCity'){
+      args.cancel=true;
+      this.actionBeginMessage = args.requestType + ' is not allowed for ShipCity column';
+    }
+
+  }
+  actionComplete(args: any) {
+    if(args.requestType === 'filterafteropen') {
+      this.actionCompleteMessage ='Applied CSS for filter dialog during filterafteropen action';
+      args.filterModel.dlgDiv.querySelector('.e-dlg-content').style.background = '#eeeaea';
+      args.filterModel.dlgDiv.querySelector('.e-footer-content').style.background = '#30b0ce';
+    }
+    if(args.requestType == 'filtering'){
+      this.actionCompleteMessage = args.requestType + ' action is triggered in actionComplete event';
+    }
+  }
+}

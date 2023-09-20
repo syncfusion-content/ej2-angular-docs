@@ -16,13 +16,13 @@ A QR Code is a two-dimensional barcode that consists of a grid of dark and light
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/barcode/qrcode/qrcode-cs1/app/app.component.ts %}
+{% include code-snippet/barcode/qrcode/qrcode-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/qrcode/qrcode-cs1/app/app.module.ts %}
+{% include code-snippet/barcode/qrcode/qrcode-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/barcode/qrcode/qrcode-cs1/app/main.ts %}
+{% include code-snippet/barcode/qrcode/qrcode-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ A page or printed media with barcode often appears colorful in the background an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/barcode/qrcode/color-cs1/app/app.component.ts %}
+{% include code-snippet/barcode/qrcode/color-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/qrcode/color-cs1/app/app.module.ts %}
+{% include code-snippet/barcode/qrcode/color-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/barcode/qrcode/color-cs1/app/main.ts %}
+{% include code-snippet/barcode/qrcode/color-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -52,13 +52,13 @@ The dimension of the barcode can be changed using the height and width propertie
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/barcode/qrcode/dimension-cs1/app/app.component.ts %}
+{% include code-snippet/barcode/qrcode/dimension-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/qrcode/dimension-cs1/app/app.module.ts %}
+{% include code-snippet/barcode/qrcode/dimension-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/barcode/qrcode/dimension-cs1/app/main.ts %}
+{% include code-snippet/barcode/qrcode/dimension-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ In barcode generators You can customize the barcode text by using display text p
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/barcode/qrcode/text-cs1/app/app.component.ts %}
+{% include code-snippet/barcode/qrcode/text-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/qrcode/text-cs1/app/app.module.ts %}
+{% include code-snippet/barcode/qrcode/text-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/barcode/qrcode/text-cs1/app/main.ts %}
+{% include code-snippet/barcode/qrcode/text-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

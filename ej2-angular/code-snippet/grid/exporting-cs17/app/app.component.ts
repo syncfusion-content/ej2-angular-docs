@@ -9,35 +9,50 @@ import { PdfTrueTypeFont } from '@syncfusion/ej2-pdf-export';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px'
-             [allowPaging]='true' [allowPdfExport]='true' (toolbarClick)='toolbarClick($event)'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
+    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px' [allowPdfExport]='true'
+    [allowGrouping]='true' [groupSettings]='groupOptions' (toolbarClick)='toolbarClick($event)'>
+                    <e-columns>
+                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+                        <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
+                        <e-column field='ShipCity' headerText='Ship City' width=100></e-column>
+                        <e-column field='ShipName' headerText='Ship Name' width=120></e-column>
+                    </e-columns>
                 </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 
     public data?: object[];
     public toolbarOptions?: ToolbarItems[];
+    public groupOptions?: object;
     @ViewChild('grid')
     public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
         this.toolbarOptions = ['PdfExport'];
+        this.groupOptions = { columns: ['ShipCity'] };
     }
 
     toolbarClick(args: ClickEventArgs): void {
         if ((args as any).item.id === 'Grid_pdfexport') {
             const pdfExportProperties: PdfExportProperties = {
                 theme: {
-                    header: { font: new PdfTrueTypeFont(base64AlgeriaFont, 12) },
-                    caption: { font: new PdfTrueTypeFont(base64AlgeriaFont, 10) },
-                    record: { font: new PdfTrueTypeFont(base64AlgeriaFont, 9) }
+                    header: {
+                        font: new PdfTrueTypeFont(base64AlgeriaFont, 12),
+                        fontColor: '#000080',
+                        bold: true,
+                        border: { color: '#5A5A5A', dashStyle: 'Solid' }
+                    },
+                    caption: {
+                        font: new PdfTrueTypeFont(base64AlgeriaFont, 10),
+                        fontColor: '#0B6623',
+                        bold: true,
+                    },
+                    record: {
+                        font: new PdfTrueTypeFont(base64AlgeriaFont, 9),
+                        fontColor: '#B22222',
+                        bold: true,
+                    }
                 }
             };
             (this.grid as any).pdfExport(pdfExportProperties);

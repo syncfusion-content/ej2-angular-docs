@@ -1,0 +1,21 @@
+<div id='content' class='container'>
+    <div class='input-container'>
+        <label for='fields' class='label'>Select Column</label>
+        <ejs-dropdownlist #field id='fields' [dataSource]='fieldData' (change)='onFieldChange($event)'
+            placeholder='Eg: OrderID'></ejs-dropdownlist>
+    </div>
+    <div class='input-container'>
+        <label for='operator' class='label'>Select Operator</label>
+        <ejs-dropdownlist #operator id='operator' [dataSource]='availableOperators' (change)='onOperatorChange($event)'
+            placeholder='Eg: Equal' [enabled]='false'></ejs-dropdownlist>
+    </div>
+</div>
+<ejs-grid #grid [dataSource]='data' [allowFiltering]='true' height='273px' allowPaging=true (dataBound)='dataBound()'>
+    <e-columns>
+        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+        <e-column field='Freight' headerText='Freight' width=100></e-column>
+        <e-column field='ShipCity' headerText='Ship City' width=120></e-column>
+        <e-column field='ShipCountry' headerText='Ship Country' width=120></e-column>
+    </e-columns>
+</ejs-grid>

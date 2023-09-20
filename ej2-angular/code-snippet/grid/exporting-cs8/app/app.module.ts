@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { GridModule, ToolbarService, PdfExportService } from '@syncfusion/ej2-angular-grids';
+import { GridModule, ToolbarService, PdfExportService,DetailRowService } from '@syncfusion/ej2-angular-grids';
 import { AppComponent } from './app.component';
-
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 /**
  * Module
  */
 @NgModule({
     imports: [
         BrowserModule,
-        GridModule
+        GridModule,
+        DropDownListAllModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
-    providers: [PdfExportService, ToolbarService]
+    providers: [PdfExportService, ToolbarService, DetailRowService]
 })
 export class AppModule { }

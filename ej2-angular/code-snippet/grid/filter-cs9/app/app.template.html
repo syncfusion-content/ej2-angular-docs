@@ -1,0 +1,27 @@
+<div class="control-section">
+    <div *ngIf="showWarning">
+        <ejs-message id="msg_warning" content="No Records" cssClass="e-content-center"
+            severity="Warning"></ejs-message>
+    </div>
+    <button ejs-button cssClass="e-success" (click)="click()">Get Filtered Data</button><button ejs-button
+        cssClass="e-danger" (click)="clear()">Clear</button>
+    <ejs-grid #grid id="grid" [dataSource]="data" allowFiltering="true" [height]="280" allowPaging="true">
+        <e-columns>
+            <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-column>
+            <e-column field="CustomerID" headerText="Customer ID" width="120"></e-column>
+            <e-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="90"></e-column>
+            <e-column field="ShipCity" headerText="Ship City" width="120"></e-column>
+        </e-columns>
+    </ejs-grid>
+    <div *ngIf="showRecords" class="e-content">
+        <h3>Filtered Records</h3>
+        <ejs-grid #filtergrid [dataSource]="filteredData" allowPaging="true" [height]="200">
+            <e-columns>
+                <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-column>
+                <e-column field="CustomerID" headerText="Customer ID" width="120"></e-column>
+                <e-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="90"></e-column>
+                <e-column field="ShipCity" headerText="Ship City" width="120"></e-column>
+            </e-columns>
+        </ejs-grid>
+    </div>
+</div>
