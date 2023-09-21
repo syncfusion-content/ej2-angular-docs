@@ -14,14 +14,14 @@ By default, the search bar in the grid doesn't have a **cancel** icon. If you wa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/print-cs1/app/app.component.ts %}
+{% include code-snippet/grid/searching-cs12/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/print-cs1/app/app.module.ts %}
+{% include code-snippet/grid/searching-cs12/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/print-cs1/app/main.ts %}
+{% include code-snippet/grid/searching-cs12/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/print-cs1" %}
+{% previewsample "page.domainurl/samples/grid/searching-cs12" %}
