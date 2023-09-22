@@ -36,13 +36,13 @@ The following example demonstrates how to enable built-in toolbar items such as 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/toolbar-cs1/app/app.component.ts %}
+{% include code-snippet/grid/toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/toolbar-cs1/app/app.module.ts %}
+{% include code-snippet/grid/toolbar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/toolbar-cs1/app/main.ts %}
+{% include code-snippet/grid/toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -67,13 +67,13 @@ This is demonstrated in the following sample:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/toolbaricon-cs1/app/app.component.ts %}
+{% include code-snippet/grid/toolbaricon-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/toolbaricon-cs1/app/app.module.ts %}
+{% include code-snippet/grid/toolbaricon-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/toolbaricon-cs1/app/main.ts %}
+{% include code-snippet/grid/toolbaricon-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -89,13 +89,13 @@ By default, custom toolbar items are positioned on the **left** side of the tool
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-toolbar-cs1/app/app.component.ts %}
+{% include code-snippet/grid/custom-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-toolbar-cs1/app/app.module.ts %}
+{% include code-snippet/grid/custom-toolbar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-toolbar-cs1/app/main.ts %}
+{% include code-snippet/grid/custom-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -114,13 +114,13 @@ The following example demonstrates, how to use both built-in and custom toolbar 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/toolbar-cs4/app/app.component.ts %}
+{% include code-snippet/grid/toolbar-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/toolbar-cs4/app/app.module.ts %}
+{% include code-snippet/grid/toolbar-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/toolbar-cs4/app/main.ts %}
+{% include code-snippet/grid/toolbar-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -136,13 +136,13 @@ In the following sample, the **Collapse All** toolbar item is positioned on the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-toolbar-cs2/app/app.component.ts %}
+{% include code-snippet/grid/custom-toolbar-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-toolbar-cs2/app/app.module.ts %}
+{% include code-snippet/grid/custom-toolbar-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-toolbar-cs2/app/main.ts %}
+{% include code-snippet/grid/custom-toolbar-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

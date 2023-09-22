@@ -49,13 +49,13 @@ In this example, **data** is the local data source for the Grid, and **employeeD
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs19/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs19/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs19/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs19/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs19/app/main.ts %}
+{% include code-snippet/grid/grid-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -69,13 +69,13 @@ This example demonstrates how to use the foreign key column with remote data bin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/foreignkey-cs12/app/app.component.ts %}
+{% include code-snippet/grid/foreignkey-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs12/app/app.module.ts %}
+{% include code-snippet/grid/foreignkey-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/foreignkey-cs12/app/main.ts %}
+{% include code-snippet/grid/foreignkey-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -92,13 +92,13 @@ In this example, an [AutoComplete](https://ej2.syncfusion.com/angular/demos/#/bo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/foreignkey-cs1/app/app.component.ts %}
+{% include code-snippet/grid/foreignkey-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs1/app/app.module.ts %}
+{% include code-snippet/grid/foreignkey-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/foreignkey-cs1/app/main.ts %}
+{% include code-snippet/grid/foreignkey-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -112,13 +112,13 @@ In this example, a [DropDownList](https://ej2.syncfusion.com/angular/demos/#/boo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/foreignkey-cs2/app/app.component.ts %}
+{% include code-snippet/grid/foreignkey-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs2/app/app.module.ts %}
+{% include code-snippet/grid/foreignkey-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/foreignkey-cs2/app/main.ts %}
+{% include code-snippet/grid/foreignkey-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -132,13 +132,13 @@ In this example, the **"EmployeeID"** column is a foreign key column, and the **
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/foreignkey-cs3/app/app.component.ts %}
+{% include code-snippet/grid/foreignkey-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs3/app/app.module.ts %}
+{% include code-snippet/grid/foreignkey-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/foreignkey-cs3/app/main.ts %}
+{% include code-snippet/grid/foreignkey-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -160,13 +160,13 @@ In the provided example, the `customAggregateFn` function is used to filter the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/foreignkey-cs4/app/app.component.ts %}
+{% include code-snippet/grid/foreignkey-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs4/app/app.module.ts %}
+{% include code-snippet/grid/foreignkey-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/foreignkey-cs4/app/main.ts %}
+{% include code-snippet/grid/foreignkey-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -180,13 +180,13 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/foreignkey-cs5/app/app.component.ts %}
+{% include code-snippet/grid/foreignkey-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs5/app/app.module.ts %}
+{% include code-snippet/grid/foreignkey-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/foreignkey-cs5/app/main.ts %}
+{% include code-snippet/grid/foreignkey-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

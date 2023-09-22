@@ -123,13 +123,13 @@ The below example demonstrates the Grid in **Deutsch** culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/localization-cs1/app/app.component.ts %}
+{% include code-snippet/grid/localization-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/localization-cs1/app/app.module.ts %}
+{% include code-snippet/grid/localization-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/localization-cs1/app/main.ts %}
+{% include code-snippet/grid/localization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -152,13 +152,13 @@ You need to load culture format files in **ngOnInit** function.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/localization-cs2/app/app.component.ts %}
+{% include code-snippet/grid/localization-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/localization-cs2/app/app.module.ts %}
+{% include code-snippet/grid/localization-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/localization-cs2/app/main.ts %}
+{% include code-snippet/grid/localization-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -173,13 +173,13 @@ RTL provides an option to switch the text direction and layout of Grid component
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging1-cs1/app/app.component.ts %}
+{% include code-snippet/grid/paging1-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs1/app/app.module.ts %}
+{% include code-snippet/grid/paging1-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging1-cs1/app/main.ts %}
+{% include code-snippet/grid/paging1-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

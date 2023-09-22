@@ -20,13 +20,13 @@ By using the [`content`](https://ej2.syncfusion.com/angular/documentation/api/ma
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs1/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs1/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs1/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ The stack order of an annotation element can be changed using the [`zIndex`](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs2/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs2/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs2/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ Annotations can be placed anywhere in the Maps by specifying pixel or percentage
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs3/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs3/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs3/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -76,13 +76,13 @@ Annotations can be aligned using the [`horizontalAlignment`](https://ej2.syncfus
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs4/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs4/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs4/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -94,13 +94,13 @@ Multiple annotations can be added to the Maps using the [`annotations`](https://
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs5/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs5/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs5/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

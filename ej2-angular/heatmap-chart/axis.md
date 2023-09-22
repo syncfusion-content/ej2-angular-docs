@@ -134,6 +134,24 @@ The text style of the axis labels can be customized using the following options 
   
 {% previewsample "page.domainurl/samples/heatmap/axis/textstyle-cs1" %}
 
+### Providing line breaks
+
+Axis labels with line breaks improve the readability of the HeatMap by splitting the text on an axis into multiple lines. The **"\<br>"** character is used to add line breaks to the axis labels.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/heatmap/axis/linebreak-cs1/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/heatmap/axis/linebreak-cs1/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/heatmap/axis/linebreak-cs1/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/heatmap/axis/linebreak-cs1" %}
+
 ### Customizing labels when intersecting with other labels
 
 When the axis labels intersect, [labelIntersectAction](https://ej2.syncfusion.com/angular/documentation/api/heatmap/axis/#labelintersectaction) property is used to handle the intersection. The `labelIntersectAction` property can take the following values.

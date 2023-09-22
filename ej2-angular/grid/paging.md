@@ -16,13 +16,13 @@ To use Paging, you need to inject **PageService** in the provider section of **A
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging1-cs5/app/app.component.ts %}
+{% include code-snippet/grid/paging1-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs5/app/app.module.ts %}
+{% include code-snippet/grid/paging1-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging1-cs5/app/main.ts %}
+{% include code-snippet/grid/paging1-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,16 +38,16 @@ Inside this template, you can access the [`CurrentPage`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/pager-template-cs1/app/app.component.ts %}
+{% include code-snippet/grid/pager-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/pager-template-cs1/app/app.template.html %}
+{% include code-snippet/grid/pager-template-cs1/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/pager-template-cs1/app/app.module.ts %}
+{% include code-snippet/grid/pager-template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/pager-template-cs1/app/main.ts %}
+{% include code-snippet/grid/pager-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -59,13 +59,13 @@ The pager Dropdown allows you to change the number of records in the Grid dynami
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging1-cs6/app/app.component.ts %}
+{% include code-snippet/grid/paging1-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs6/app/app.module.ts %}
+{% include code-snippet/grid/paging1-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging1-cs6/app/main.ts %}
+{% include code-snippet/grid/paging1-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -77,13 +77,13 @@ By default, Pager will be rendered at the bottom of the Grid. You can also rende
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging1-cs7/app/app.component.ts %}
+{% include code-snippet/grid/paging1-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs7/app/app.module.ts %}
+{% include code-snippet/grid/paging1-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging1-cs7/app/main.ts %}
+{% include code-snippet/grid/paging1-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -16,13 +16,13 @@ The width and height of the Maps can be set using the [`width`](https://ej2.sync
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs19/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs19/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs19/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs19/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs19/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ The title for the Maps can be set using the [`titleSettings`](https://ej2.syncfu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs20/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs20/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs20/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs20/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs20/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -71,13 +71,13 @@ By default, the Maps are rendered by the **Material** theme. The theme of the Ma
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs21/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs21/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs21/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs21/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs21/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -93,13 +93,13 @@ The following properties are available to customize the container in the Maps.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs22/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs22/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs22/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs22/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs22/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -111,13 +111,13 @@ By default, the background color of the shape maps is set as **white**. To modif
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs23/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs23/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs23/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs23/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs23/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -136,13 +136,13 @@ The following properties are available in [`shapeSettings`](https://ej2.syncfusi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs24/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs24/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs24/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs24/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs24/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -154,13 +154,13 @@ The color for each shape in the Maps can be set using the [`colorValuePath`](htt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs25/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs25/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs25/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs25/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs25/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -172,13 +172,13 @@ The border of each shape in the Maps can be customized using the [`borderColorVa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs26/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs26/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs26/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -201,13 +201,13 @@ By default, the Maps are rendered by the **Mercator** projection type in which t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs27/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs27/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs27/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs27/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs27/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs27/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

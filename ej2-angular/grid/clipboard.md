@@ -21,13 +21,13 @@ Interaction keys |Description
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs1/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs1/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs1/app/main.ts %}
+{% include code-snippet/grid/grid-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ To copy selected rows or cells data into clipboard with help of external buttons
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs2/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs2/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs2/app/main.ts %}
+{% include code-snippet/grid/grid-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -57,13 +57,13 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs1/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs1/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs1/app/main.ts %}
+{% include code-snippet/grid/edit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -83,13 +83,13 @@ You can able to copy the content of a cell or a group of cells by selecting the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs2/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs2/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs2/app/main.ts %}
+{% include code-snippet/grid/edit-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

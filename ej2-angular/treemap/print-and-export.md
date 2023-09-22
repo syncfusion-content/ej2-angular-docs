@@ -16,13 +16,13 @@ To use the print functionality, we should inject the `PrintService` into the `@N
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs47/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs47/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs47/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs47/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs47/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs47/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ To use the image export functionality, we should inject the `ImageExportService`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs48/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs48/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs48/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs48/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs48/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs48/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ We can get the image file as base64 string for the JPEG and PNG formats. The tre
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs49/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs49/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs49/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs49/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs49/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs49/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -74,13 +74,13 @@ To use the PDF export functionality, we should inject the `PdfExportService` int
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs50/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs50/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs50/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs50/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs50/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs50/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -141,16 +141,16 @@ The following example illustrates how to create the grid sample and how to writi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/testcase-cs1/app/app.component.ts %}
+{% include code-snippet/grid/testcase-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.spec.ts" %}
-{% include code-snippet/grid/testcase-cs1/app/app.component.spec.ts %}
+{% include code-snippet/grid/testcase-cs1/src/app.component.spec.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/testcase-cs1/app/app.module.ts %}
+{% include code-snippet/grid/testcase-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/testcase-cs1/app/main.ts %}
+{% include code-snippet/grid/testcase-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

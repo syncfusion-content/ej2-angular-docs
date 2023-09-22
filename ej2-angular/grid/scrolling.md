@@ -24,13 +24,13 @@ To specify the [`width`](https://ej2.syncfusion.com/angular/documentation/api/gr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-cs1/app/app.component.ts %}
+{% include code-snippet/grid/scrolling-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs1/app/app.module.ts %}
+{% include code-snippet/grid/scrolling-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-cs1/app/main.ts %}
+{% include code-snippet/grid/scrolling-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ Specify the [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-cs2/app/app.component.ts %}
+{% include code-snippet/grid/scrolling-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs2/app/app.module.ts %}
+{% include code-snippet/grid/scrolling-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-cs2/app/main.ts %}
+{% include code-snippet/grid/scrolling-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ In the below demo, the Grid headers will be sticky while scrolling the Grid's pa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-cs3/app/app.component.ts %}
+{% include code-snippet/grid/scrolling-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs3/app/app.module.ts %}
+{% include code-snippet/grid/scrolling-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-cs3/app/main.ts %}
+{% include code-snippet/grid/scrolling-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -80,13 +80,13 @@ You can scroll the grid content to the selected row position by using the [`rowS
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-select-cs1/app/app.component.ts %}
+{% include code-snippet/grid/scrolling-select-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-select-cs1/app/app.module.ts %}
+{% include code-snippet/grid/scrolling-select-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-select-cs1/app/main.ts %}
+{% include code-snippet/grid/scrolling-select-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -100,13 +100,13 @@ In the following sample, we have invoked the [`hideScroll`](https://ej2.syncfusi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/scrolling-cs4/app/app.component.ts %}
+{% include code-snippet/grid/scrolling-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs4/app/app.module.ts %}
+{% include code-snippet/grid/scrolling-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/scrolling-cs4/app/main.ts %}
+{% include code-snippet/grid/scrolling-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

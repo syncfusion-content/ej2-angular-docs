@@ -20,13 +20,13 @@ You can achieve this by destroying the grid after disabling the [`enablePersiste
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs10/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs10/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs10/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ Grid does not maintain the query params after page load event when [`enablePersi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs11/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs11/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs11/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ The Grid columns can be persisted when the [enablePersistence](https://ej2.syncf
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs12/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs12/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs12/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

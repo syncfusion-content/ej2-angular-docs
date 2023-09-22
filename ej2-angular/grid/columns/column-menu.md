@@ -29,13 +29,13 @@ The default column menu items are displayed in following table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs6/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs6/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs6/app/main.ts %}
+{% include code-snippet/grid/grid-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -53,13 +53,13 @@ Consider the following example, which demonstrates how to add a custom column me
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs8/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs8/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs8/app/main.ts %}
+{% include code-snippet/grid/grid-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -73,13 +73,13 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs9/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs9/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs9/app/main.ts %}
+{% include code-snippet/grid/grid-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -95,13 +95,13 @@ Here is an example of how to configure the `columnMenuItems` property to include
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/column-menu-cs1/app/app.component.ts %}
+{% include code-snippet/grid/column-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/column-menu-cs1/app/app.module.ts %}
+{% include code-snippet/grid/column-menu-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/column-menu-cs1/app/main.ts %}
+{% include code-snippet/grid/column-menu-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -132,13 +132,13 @@ Here is an example that demonstrates how to customize the column menu icon in th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-column-menu-icon-cs1/app/app.component.ts %}
+{% include code-snippet/grid/custom-column-menu-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-column-menu-icon-cs1/app/app.module.ts %}
+{% include code-snippet/grid/custom-column-menu-icon-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-column-menu-icon-cs1/app/main.ts %}
+{% include code-snippet/grid/custom-column-menu-icon-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -154,13 +154,13 @@ The column menu in Syncfusion Angular Grid provides a set of events that allow c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs7/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs7/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs7/app/main.ts %}
+{% include code-snippet/grid/grid-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

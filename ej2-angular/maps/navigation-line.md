@@ -27,13 +27,13 @@ To navigate the line between two cities on the world map, [`latitude`](https://e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs75/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs75/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs75/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs75/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs75/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs75/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -50,13 +50,13 @@ To enable the arrow in the navigation line, set the [`showArrow`](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs76/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs76/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs76/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs76/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs76/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs76/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

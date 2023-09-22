@@ -26,13 +26,13 @@ To learn about what are all the edit modes and edit types are available in Angul
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs18/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs18/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs18/app/main.ts %}
+{% include code-snippet/grid/edit-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -52,13 +52,13 @@ Here's an example of how to enable the toolbar with edit option in the Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs19/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs19/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs19/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs19/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs19/app/main.ts %}
+{% include code-snippet/grid/edit-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -74,13 +74,13 @@ Here's an example that demonstrates how to disable editing for the column in the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs20/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs20/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs20/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs20/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs20/app/main.ts %}
+{% include code-snippet/grid/edit-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -100,13 +100,13 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs23/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs23/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs23/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs23/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs23/app/main.ts %}
+{% include code-snippet/grid/edit-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -125,13 +125,13 @@ The following example that demonstrates how to customize the delete confirmation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-delete-cs1/app/app.component.ts %}
+{% include code-snippet/grid/edit-delete-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-delete-cs1/app/app.module.ts %}
+{% include code-snippet/grid/edit-delete-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-delete-cs1/app/main.ts %}
+{% include code-snippet/grid/edit-delete-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -149,13 +149,13 @@ In the following example, the textbox is rendered in the **Freight** column usin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs24/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs24/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs24/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs24/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs24/app/main.ts %}
+{% include code-snippet/grid/edit-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

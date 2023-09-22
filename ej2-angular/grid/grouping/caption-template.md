@@ -18,13 +18,13 @@ The following example demonstrates how to customize the group header caption in 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs1/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs1/src/app.component.ts %}
 {% endhighlight %}Caption template in Angular Grid component
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs1/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs1/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ The following example demonstrates how to add a custom text to the group caption
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs13/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs13/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs13/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,13 +60,13 @@ The following example demonstrates, how to customize group caption text based on
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs19/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs19/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs19/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs19/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs19/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -82,13 +82,13 @@ The following example demonstrates how to add a custom component to the group ca
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs14/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs14/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs14/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

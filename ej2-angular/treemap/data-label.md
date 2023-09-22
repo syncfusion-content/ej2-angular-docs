@@ -18,13 +18,13 @@ Customize the labels for each item using the [`labelFormat`](https://ej2.syncfus
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs9/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs9/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs9/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ The template supports customizing labels of each leaf node using the [`labelTemp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs10/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs10/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs10/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ When the label size in each item exceeds the actual size, use the [`interSectAct
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs11/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs11/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs11/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -16,13 +16,13 @@ To render checkbox in each grid row, you need to use checkbox column with type a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs3/app/app.component.ts %}
+{% include code-snippet/grid/selection-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs3/app/app.module.ts %}
+{% include code-snippet/grid/selection-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs3/app/main.ts %}
+{% include code-snippet/grid/selection-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ In checkbox selection, selection can also be done by clicking on rows. This sele
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs4/app/app.component.ts %}
+{% include code-snippet/grid/selection-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs4/app/app.module.ts %}
+{% include code-snippet/grid/selection-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs4/app/main.ts %}
+{% include code-snippet/grid/selection-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,13 +60,13 @@ In the following sample, the selection of specific rows has been prevented based
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs5/app/app.component.ts %}
+{% include code-snippet/grid/selection-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs5/app/app.module.ts %}
+{% include code-snippet/grid/selection-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs5/app/main.ts %}
+{% include code-snippet/grid/selection-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

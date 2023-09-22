@@ -26,13 +26,13 @@ To enable the panning feature, set the [`enablePanning`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs89/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs89/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs89/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs89/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs89/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs89/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -333,13 +333,13 @@ export class AppComponent implements OnInit {
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs90/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs90/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs90/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs90/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs90/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs90/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -359,13 +359,13 @@ The zoom toolbar can be customized by using the [toolbarSettings](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs105/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs105/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs105/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs105/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs105/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs105/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -390,13 +390,13 @@ The appearance of the buttons in the zoom toolbar can be customized by using the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs106/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs106/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs106/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs106/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs106/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs106/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -421,13 +421,13 @@ The appearance of the tooltip of the zoom toolbar can be customized by using the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs107/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs107/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs107/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs107/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs107/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs107/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -448,13 +448,13 @@ By tapping on the specific legend, the shapes which are bounded to the selected 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs91/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs91/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs91/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs91/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs91/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs91/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -468,13 +468,13 @@ To enable the selection for bubbles in Maps, set the [`selectionSettings`](https
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs92/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs92/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs92/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs92/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs92/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs92/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -488,13 +488,13 @@ To enable the selection for markers in Maps, set the [`selectionSettings`](https
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs93/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs93/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs93/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs93/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs93/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs93/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -507,13 +507,13 @@ LayerIndex, propertyName, country name, and selected value as a boolean state(tr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs94/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs94/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs94/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs94/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs94/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs94/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -527,13 +527,13 @@ The shape is initially selected using the [`initialShapeSelection`](https://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs95/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs95/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs95/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs95/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs95/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs95/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -547,13 +547,13 @@ Using the [`initialMarkerSelection`](https://ej2.syncfusion.com/angular/document
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs96/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs96/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs96/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs96/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs96/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs96/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -573,13 +573,13 @@ Hovering on the specific legend, the shapes which are bounded to the selected le
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs97/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs97/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs97/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs97/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs97/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs97/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -593,13 +593,13 @@ To enable the highlight for bubbles in Maps, set the [`highlightSettings`](https
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs98/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs98/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs98/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs98/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs98/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs98/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -613,13 +613,13 @@ To enable the highlight for markers in Maps, set the [`highlightSettings`](https
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs99/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs99/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs99/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs99/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs99/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs99/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -635,13 +635,13 @@ On mouse over or touch end event, the tooltip is used to get more information ab
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs100/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs100/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs100/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs100/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs100/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs100/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -678,13 +678,13 @@ The following properties are available to customize the tooltip of the Maps comp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs101/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs101/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs101/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs101/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs101/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs101/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -696,13 +696,13 @@ The HTML element can be rendered in the tooltip of the Maps using the [`template
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs102/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs102/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs102/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs102/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs102/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs102/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

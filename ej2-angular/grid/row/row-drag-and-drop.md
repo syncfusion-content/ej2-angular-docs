@@ -22,13 +22,13 @@ Here's an example of how to enable drag and drop within the Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/dragndrop-cs3/app/app.component.ts %}
+{% include code-snippet/grid/dragndrop-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dragndrop-cs3/app/app.module.ts %}
+{% include code-snippet/grid/dragndrop-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/dragndrop-cs3/app/main.ts %}
+{% include code-snippet/grid/dragndrop-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -44,13 +44,13 @@ Here's an example code snippet that demonstrates how to enable Row drag and drop
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/dragndrop-cs1/app/app.component.ts %}
+{% include code-snippet/grid/dragndrop-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dragndrop-cs1/app/app.module.ts %}
+{% include code-snippet/grid/dragndrop-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/dragndrop-cs1/app/main.ts %}
+{% include code-snippet/grid/dragndrop-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -67,13 +67,13 @@ In the below example, the selected grid row is dragged and dropped in to the Tre
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/dragndrop-cs5/app/app.component.ts %}
+{% include code-snippet/grid/dragndrop-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dragndrop-cs5/app/app.module.ts %}
+{% include code-snippet/grid/dragndrop-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/dragndrop-cs5/app/main.ts %}
+{% include code-snippet/grid/dragndrop-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -91,13 +91,13 @@ Here's an example of how to hide the drag and drop icon in the Syncfusion Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/dragndrop-cs2/app/app.component.ts %}
+{% include code-snippet/grid/dragndrop-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dragndrop-cs2/app/app.module.ts %}
+{% include code-snippet/grid/dragndrop-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/dragndrop-cs2/app/main.ts %}
+{% include code-snippet/grid/dragndrop-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -120,13 +120,13 @@ The Grid component provides a set of events that are triggered during drag and d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/dragndrop-cs6/app/app.component.ts %}
+{% include code-snippet/grid/dragndrop-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dragndrop-cs6/app/app.module.ts %}
+{% include code-snippet/grid/dragndrop-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/dragndrop-cs6/app/main.ts %}
+{% include code-snippet/grid/dragndrop-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

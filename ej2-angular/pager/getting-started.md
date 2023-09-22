@@ -124,13 +124,13 @@ export class AppComponent implements OnInit {
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pager/pager-cs1/app/app.component.ts %}
+{% include code-snippet/pager/pager-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pager/pager-cs1/app/app.module.ts %}
+{% include code-snippet/pager/pager-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pager/pager-cs1/app/main.ts %}
+{% include code-snippet/pager/pager-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -144,13 +144,13 @@ and [`pageSize`](#page-size) values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pager/pager-cs2/app/app.component.ts %}
+{% include code-snippet/pager/pager-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pager/pager-cs2/app/app.module.ts %}
+{% include code-snippet/pager/pager-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pager/pager-cs2/app/main.ts %}
+{% include code-snippet/pager/pager-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -168,13 +168,13 @@ Output will be appears as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pager/pager-cs3/app/app.component.ts %}
+{% include code-snippet/pager/pager-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pager/pager-cs3/app/app.module.ts %}
+{% include code-snippet/pager/pager-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pager/pager-cs3/app/main.ts %}
+{% include code-snippet/pager/pager-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

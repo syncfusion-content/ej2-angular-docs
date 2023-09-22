@@ -34,13 +34,13 @@ The following example demonstrates how to activate default filtering in the grid
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-bar-cs1/app/app.component.ts %}
+{% include code-snippet/grid/filter-bar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-bar-cs1/app/app.module.ts %}
+{% include code-snippet/grid/filter-bar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-bar-cs1/app/main.ts %}
+{% include code-snippet/grid/filter-bar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,13 +60,13 @@ By settings [filterSettings.mode](https://ej2.syncfusion.com/angular/documentati
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-bar-cs2/app/app.component.ts %}
+{% include code-snippet/grid/filter-bar-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-bar-cs2/app/app.module.ts %}
+{% include code-snippet/grid/filter-bar-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-bar-cs2/app/main.ts %}
+{% include code-snippet/grid/filter-bar-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -80,13 +80,13 @@ To enable the display of filter text within the pager, you should set the [showF
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-bar-cs3/app/app.component.ts %}
+{% include code-snippet/grid/filter-bar-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-bar-cs3/app/app.module.ts %}
+{% include code-snippet/grid/filter-bar-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-bar-cs3/app/main.ts %}
+{% include code-snippet/grid/filter-bar-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -100,13 +100,13 @@ To achieve this functionality, you can enable the  [showFilterBarOperator](https
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-bar-cs4/app/app.component.ts %}
+{% include code-snippet/grid/filter-bar-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-bar-cs4/app/app.module.ts %}
+{% include code-snippet/grid/filter-bar-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-bar-cs4/app/main.ts %}
+{% include code-snippet/grid/filter-bar-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -120,13 +120,13 @@ Here's an example that demonstrates how to remove the filter bar for the **Custo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-bar-cs5/app/app.component.ts %}
+{% include code-snippet/grid/filter-bar-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-bar-cs5/app/app.module.ts %}
+{% include code-snippet/grid/filter-bar-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-bar-cs5/app/main.ts %}
+{% include code-snippet/grid/filter-bar-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -142,13 +142,13 @@ Here's an example that demonstrates how to hide the filter bar for a template co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-bar-cs6/app/app.component.ts %}
+{% include code-snippet/grid/filter-bar-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-bar-cs6/app/app.module.ts %}
+{% include code-snippet/grid/filter-bar-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-bar-cs6/app/main.ts %}
+{% include code-snippet/grid/filter-bar-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -162,13 +162,13 @@ To utilize this feature, you can define a custom template for the filter bar by 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-bar-cs7/app/app.component.ts %}
+{% include code-snippet/grid/filter-bar-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-bar-cs7/app/app.module.ts %}
+{% include code-snippet/grid/filter-bar-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-bar-cs7/app/main.ts %}
+{% include code-snippet/grid/filter-bar-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

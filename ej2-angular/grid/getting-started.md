@@ -142,13 +142,13 @@ Here, we have defined it for the conversion of numeric values to currency.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging-cs1/app/app.component.ts %}
+{% include code-snippet/grid/paging-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging-cs1/app/app.module.ts %}
+{% include code-snippet/grid/paging-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging-cs1/app/main.ts %}
+{% include code-snippet/grid/paging-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -173,13 +173,13 @@ The paging feature enables users to view the Grid record in a paged view. It can
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging-cs2/app/app.component.ts %}
+{% include code-snippet/grid/paging-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging-cs2/app/app.module.ts %}
+{% include code-snippet/grid/paging-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging-cs2/app/main.ts %}
+{% include code-snippet/grid/paging-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -191,13 +191,13 @@ The sorting feature enables the user to order the records. It can be enabled by 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting-cs1/app/app.component.ts %}
+{% include code-snippet/grid/sorting-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting-cs1/app/app.module.ts %}
+{% include code-snippet/grid/sorting-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting-cs1/app/main.ts %}
+{% include code-snippet/grid/sorting-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -209,13 +209,13 @@ The filtering feature enables the user to view the reduced amount of records bas
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering-cs1/app/app.component.ts %}
+{% include code-snippet/grid/filtering-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering-cs1/app/app.module.ts %}
+{% include code-snippet/grid/filtering-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering-cs1/app/main.ts %}
+{% include code-snippet/grid/filtering-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -227,13 +227,13 @@ The grouping feature enables users to view the Grid record in a grouped view. It
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping-cs2/app/app.component.ts %}
+{% include code-snippet/grid/grouping-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping-cs2/app/app.module.ts %}
+{% include code-snippet/grid/grouping-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping-cs2/app/main.ts %}
+{% include code-snippet/grid/grouping-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -251,13 +251,13 @@ The output will appear as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping-cs3/app/app.component.ts %}
+{% include code-snippet/grid/grouping-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping-cs3/app/app.module.ts %}
+{% include code-snippet/grid/grouping-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping-cs3/app/main.ts %}
+{% include code-snippet/grid/grouping-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

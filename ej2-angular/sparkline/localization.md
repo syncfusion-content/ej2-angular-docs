@@ -22,13 +22,13 @@ Sparkline tooltip supports localization. The following code sample shows tooltip
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs17/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs17/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs17/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ The following example shows the sparkline is render from "Right-to-left".
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs18/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs18/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs18/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

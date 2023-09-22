@@ -63,13 +63,13 @@ If set the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/tr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs17/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs17/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs17/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -81,13 +81,13 @@ If the [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/treema
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs18/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs18/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs18/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -108,13 +108,13 @@ The following example demonstrate, how to render the treemap in the RTL directio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs19/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs19/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs19/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs19/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs19/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -124,13 +124,13 @@ The following example demonstrate, how to render the treemap in the RTL directio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs20/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs20/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs20/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs20/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs20/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -140,13 +140,13 @@ The following example demonstrate, how to render the treemap in the RTL directio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs21/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs21/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs21/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs21/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs21/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -156,13 +156,13 @@ The following example demonstrate, how to render the treemap in the RTL directio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs22/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs22/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs22/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs22/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs22/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

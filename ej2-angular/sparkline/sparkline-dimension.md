@@ -18,13 +18,13 @@ Sparkline can be rendered to its container size. You can set the size through in
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs24/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs24/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs24/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs24/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs24/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -46,13 +46,13 @@ You can set the size for sparkline in pixel as demonstrated in the following cod
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs25/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs25/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs25/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs25/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs25/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ By setting values in percentage, sparkline gets its dimension with respect to it
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs26/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs26/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs26/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

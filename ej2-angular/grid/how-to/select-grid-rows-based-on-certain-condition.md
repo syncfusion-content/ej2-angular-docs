@@ -16,13 +16,13 @@ In the below demo, we have selected the grid rows only when **EmployeeID** colum
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-column-cs5/app/app.component.ts %}
+{% include code-snippet/grid/custom-column-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-column-cs5/app/app.module.ts %}
+{% include code-snippet/grid/custom-column-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-column-cs5/app/main.ts %}
+{% include code-snippet/grid/custom-column-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

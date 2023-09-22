@@ -24,13 +24,13 @@ The following code shows, how to bind a flat collection as data source to the Tr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs8/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs8/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs8/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

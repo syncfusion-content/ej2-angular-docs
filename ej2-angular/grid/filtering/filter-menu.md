@@ -18,13 +18,13 @@ Here is an example that demonstrates the usage of the filter menu in the Syncfus
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-menu-cs1/app/app.component.ts %}
+{% include code-snippet/grid/filter-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs1/app/app.module.ts %}
+{% include code-snippet/grid/filter-menu-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-menu-cs1/app/main.ts %}
+{% include code-snippet/grid/filter-menu-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -47,13 +47,13 @@ In the following sample, `DropDownList` is used  as custom component in the **Or
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-menu-cs2/app/app.component.ts %}
+{% include code-snippet/grid/filter-menu-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs2/app/app.module.ts %}
+{% include code-snippet/grid/filter-menu-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-menu-cs2/app/main.ts %}
+{% include code-snippet/grid/filter-menu-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -67,13 +67,13 @@ Here is an example that demonstrates how to show 24 hours time format in filter 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-menu-cs3/app/app.component.ts %}
+{% include code-snippet/grid/filter-menu-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs3/app/app.module.ts %}
+{% include code-snippet/grid/filter-menu-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-menu-cs3/app/main.ts %}
+{% include code-snippet/grid/filter-menu-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -94,13 +94,13 @@ Here is an example of how to customize the filter operators list in Syncfusion A
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-menu-cs4/app/app.component.ts %}
+{% include code-snippet/grid/filter-menu-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs4/app/app.module.ts %}
+{% include code-snippet/grid/filter-menu-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-menu-cs4/app/main.ts %}
+{% include code-snippet/grid/filter-menu-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -114,13 +114,13 @@ Here is an example that demonstrates how to perform filtering by multiple keywor
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-menu-cs5/app/app.component.ts %}
+{% include code-snippet/grid/filter-menu-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs5/app/app.module.ts %}
+{% include code-snippet/grid/filter-menu-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-menu-cs5/app/main.ts %}
+{% include code-snippet/grid/filter-menu-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -138,13 +138,13 @@ Here's an example of how to use these events to handle filter menu action in the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-menu-cs6/app/app.component.ts %}
+{% include code-snippet/grid/filter-menu-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs6/app/app.module.ts %}
+{% include code-snippet/grid/filter-menu-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-menu-cs6/app/main.ts %}
+{% include code-snippet/grid/filter-menu-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

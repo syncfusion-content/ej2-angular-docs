@@ -26,13 +26,13 @@ In this example, the United States map shape is used as shape data by utilizing 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs47/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs47/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs47/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs47/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs47/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs47/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ Multiple shape files and map providers can be loaded simultaneously in Maps. The
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs48/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs48/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs48/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs48/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs48/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs48/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

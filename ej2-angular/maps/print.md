@@ -16,13 +16,13 @@ The rendered Maps can be printed directly from the browser by calling the [`prin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs79/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs79/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs79/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs79/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs79/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs79/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ To use the image export functionality in Maps, **ImageExport** module must be in
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs80/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs80/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs80/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs80/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs80/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs80/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ We can get the image file as base64 string for the JPEG and PNG formats. The ren
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs81/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs81/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs81/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs81/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs81/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs81/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -76,13 +76,13 @@ To use the PDF export functionality, **PdfExport** module must be injected into 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs82/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs82/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs82/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs82/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs82/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs82/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -100,13 +100,13 @@ The rendered Maps with providers such as OSM, Bing and Google static maps can be
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs83/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs83/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs83/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs83/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs83/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs83/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

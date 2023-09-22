@@ -1,0 +1,38 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-calendars/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+
+/* Add this CSS to your component's CSS file (e.g., app.component.css) */
+
+/* Style for the container */
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the checkbox label */
+  label {
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  /* Style for the switch */
+  .e-switch-wrapper {
+    /* display: flex; */
+    align-items: center;
+  }
+  
+  /* Adjust switch appearance */
+  .e-switch-wrapper .e-switch {
+    margin-top: 5px;
+  }
+  

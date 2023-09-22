@@ -16,13 +16,13 @@ To use the Grouping feature, need to inject **GroupService** in the provider sec
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs2/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs2/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs2/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ The following example demonstrates how to set an initial grouping for the **Cust
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs3/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs3/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs3/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -59,13 +59,13 @@ The Grid component provides the ability to prevent grouping for a particular col
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs20/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs20/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs20/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs20/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs20/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -81,13 +81,13 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs4/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs4/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs4/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -103,13 +103,13 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs16/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs16/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs16/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -123,13 +123,13 @@ To enable this feature, you have to set the [groupSettings.allowReordering](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping-anim-cs1/app/app.component.ts %}
+{% include code-snippet/grid/grouping-anim-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping-anim-cs1/app/app.module.ts %}
+{% include code-snippet/grid/grouping-anim-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping-anim-cs1/app/main.ts %}
+{% include code-snippet/grid/grouping-anim-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -143,13 +143,13 @@ The following example demonstrates how to sort the **CustomerID** column by sett
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sort-group/app/app.component.ts %}
+{% include code-snippet/grid/sort-group/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sort-group/app/app.module.ts %}
+{% include code-snippet/grid/sort-group/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sort-group/app/main.ts %}
+{% include code-snippet/grid/sort-group/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -169,13 +169,13 @@ The following example demonstrates how to perform a group action using the `enab
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs5/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs5/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs5/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -191,13 +191,13 @@ The following example demonstrates how to group and upgroup the columns in a gri
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs17/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs17/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs17/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 	  
@@ -215,13 +215,13 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs18/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs18/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs18/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 	  
@@ -245,13 +245,13 @@ The following example demonstrates the function that collapses the selected row 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs7/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs7/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs7/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -267,13 +267,13 @@ The following example demonstrates how to clear the grouping using `clearGroupin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs15/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs15/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs15/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 	  
@@ -291,13 +291,13 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs6/app/app.component.ts %}
+{% include code-snippet/grid/grouping1-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs6/app/app.module.ts %}
+{% include code-snippet/grid/grouping1-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grouping1-cs6/app/main.ts %}
+{% include code-snippet/grid/grouping1-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

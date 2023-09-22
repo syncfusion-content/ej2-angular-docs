@@ -24,13 +24,13 @@ Here's an example of how you can use the `rowDataBound` event to customize the s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/row-css-cs11/app/app.component.ts %}
+{% include code-snippet/grid/row-css-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-css-cs11/app/app.module.ts %}
+{% include code-snippet/grid/row-css-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/row-css-cs11/app/main.ts %}
+{% include code-snippet/grid/row-css-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ Here's an example of how to use the **.e-altrow** class to style alternate rows:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/row-style-alt-cs1/app/app.component.ts %}
+{% include code-snippet/grid/row-style-alt-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-style-alt-cs1/app/app.module.ts %}
+{% include code-snippet/grid/row-style-alt-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/row-style-alt-cs1/app/main.ts %}
+{% include code-snippet/grid/row-style-alt-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,13 +86,13 @@ Here's an example of how to use the **.e-selectionbackground** class to style th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/row-style-selected-cs1/app/app.component.ts %}
+{% include code-snippet/grid/row-style-selected-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-style-selected-cs1/app/app.module.ts %}
+{% include code-snippet/grid/row-style-selected-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/row-style-selected-cs1/app/main.ts %}
+{% include code-snippet/grid/row-style-selected-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -113,13 +113,13 @@ The following example demonstrates how to use [getRowByIndex](https://ej2.syncfu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/rows-event-cs1/app/app.component.ts %}
+{% include code-snippet/grid/rows-event-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/rows-event-cs1/app/app.module.ts %}
+{% include code-snippet/grid/rows-event-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/rows-event-cs1/app/main.ts %}
+{% include code-snippet/grid/rows-event-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -133,16 +133,16 @@ In the below example, we will demonstrate how to dynamically change the height o
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/row-height-cs1/app/app.component.ts %}
+{% include code-snippet/grid/row-height-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.html" %}
-{% include code-snippet/grid/row-height-cs1/app/app.component.html %}
+{% include code-snippet/grid/row-height-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-height-cs1/app/app.module.ts %}
+{% include code-snippet/grid/row-height-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/row-height-cs1/app/main.ts %}
+{% include code-snippet/grid/row-height-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -162,13 +162,13 @@ In the below example, the row height for the row with OrderID as '10249' is set 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/row-height-cs8/app/app.component.ts %}
+{% include code-snippet/grid/row-height-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-height-cs8/app/app.module.ts %}
+{% include code-snippet/grid/row-height-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/row-height-cs8/app/main.ts %}
+{% include code-snippet/grid/row-height-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -188,13 +188,13 @@ Here is an example that demonstrates how to enable/disable the Row Hover feature
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/row-hover-cs1/app/app.component.ts %}
+{% include code-snippet/grid/row-hover-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-hover-cs1/app/app.module.ts %}
+{% include code-snippet/grid/row-hover-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/row-hover-cs1/app/main.ts %}
+{% include code-snippet/grid/row-hover-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -213,13 +213,13 @@ Here's an example that demonstrates how to use the `rowDataBound` event and `get
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/row-hover-info-cs1/app/app.component.ts %}
+{% include code-snippet/grid/row-hover-info-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-hover-info-cs1/app/app.module.ts %}
+{% include code-snippet/grid/row-hover-info-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/row-hover-info-cs1/app/main.ts %}
+{% include code-snippet/grid/row-hover-info-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -240,13 +240,13 @@ Here's an example of how to add a new row using the `addRecord` method:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/add-new-row-cs1/app/app.component.ts %}
+{% include code-snippet/grid/add-new-row-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/add-new-row-cs1/app/app.module.ts %}
+{% include code-snippet/grid/add-new-row-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/add-new-row-cs1/app/main.ts %}
+{% include code-snippet/grid/add-new-row-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -270,13 +270,13 @@ If the checkbox is unchecked, the method iterates through the hiddenRows array a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/row-grid-cs1/app/app.component.ts %}
+{% include code-snippet/grid/row-grid-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-grid-cs1/app/app.module.ts %}
+{% include code-snippet/grid/row-grid-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/row-grid-cs1/app/main.ts %}
+{% include code-snippet/grid/row-grid-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
