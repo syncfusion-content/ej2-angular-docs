@@ -14,13 +14,13 @@ You can enable filter menu by setting the [`filterSettings.type`](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs4/app/app.component.ts %}
+{% include code-snippet/grid/filtering1-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs4/app/app.module.ts %}
+{% include code-snippet/grid/filtering1-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs4/app/main.ts %}
+{% include code-snippet/grid/filtering1-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -41,13 +41,13 @@ To implement custom filter ui, define the following functions:
 In the following sample, dropdown is used  as custom component in the OrderID column.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs5/app/app.component.ts %}
+{% include code-snippet/grid/filtering1-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs5/app/app.module.ts %}
+{% include code-snippet/grid/filtering1-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs5/app/main.ts %}
+{% include code-snippet/grid/filtering1-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -65,13 +65,13 @@ You can customize the default filter operator list by defining the [`filterSetti
 In the following sample, we have customized string filter operators.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs6/app/app.component.ts %}
+{% include code-snippet/grid/filtering1-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs6/app/app.module.ts %}
+{% include code-snippet/grid/filtering1-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs6/app/main.ts %}
+{% include code-snippet/grid/filtering1-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -85,13 +85,13 @@ In the following sample menu filter is enabled by default and checkbox filter is
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs7/app/app.component.ts %}
+{% include code-snippet/grid/filtering1-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs7/app/app.module.ts %}
+{% include code-snippet/grid/filtering1-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs7/app/main.ts %}
+{% include code-snippet/grid/filtering1-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -105,13 +105,13 @@ In the following sample, filtering action with multiple keywords can be done by 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs8/app/app.component.ts %}
+{% include code-snippet/grid/filtering1-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs8/app/app.module.ts %}
+{% include code-snippet/grid/filtering1-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs8/app/main.ts %}
+{% include code-snippet/grid/filtering1-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

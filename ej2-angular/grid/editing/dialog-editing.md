@@ -18,13 +18,13 @@ Here's an example how to enable dialog editing in the angular grid component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs7/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs7/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs7/app/main.ts %}
+{% include code-snippet/grid/edit-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ The following example that demonstrates how to customize the edit dialog using t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs8/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs8/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs8/app/main.ts %}
+{% include code-snippet/grid/edit-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ In the following example, the **CustomerID** column is rendered as a hidden colu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs9/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs9/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs9/app/main.ts %}
+{% include code-snippet/grid/edit-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -88,16 +88,16 @@ The following example demonstrate the wizard like editing in the grid with the u
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/wizardtemplate-cs1/app/app.component.ts %}
+{% include code-snippet/grid/wizardtemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="wizardtemplate.html" %}
-{% include code-snippet/grid/wizardtemplate-cs1/app/wizardtemplate.html %}
+{% include code-snippet/grid/wizardtemplate-cs1/src/wizardtemplate.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/wizardtemplate-cs1/app/app.module.ts %}
+{% include code-snippet/grid/wizardtemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/wizardtemplate-cs1/app/main.ts %}
+{% include code-snippet/grid/wizardtemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -111,13 +111,13 @@ In the following sample, using the `dialog` argument of the `actionComplete` eve
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs10/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs10/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs10/app/main.ts %}
+{% include code-snippet/grid/edit-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

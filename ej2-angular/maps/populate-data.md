@@ -119,13 +119,13 @@ In the below example, both **name** fields contain the same value as **Afghanist
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs77/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs77/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs77/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs77/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs77/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs77/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -143,13 +143,13 @@ Data from data source can be bind to the Maps in two different ways.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs78/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs78/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs78/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs78/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs78/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs78/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

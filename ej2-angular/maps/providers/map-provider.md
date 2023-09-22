@@ -18,13 +18,13 @@ The OSM Maps can be rendered using the [urlTemplate](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs84/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs84/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs84/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs84/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs84/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs84/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ The OSM Maps layer can be zoomed and panned. Zooming helps to get a closer look 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs85/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs85/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs85/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs85/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs85/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs85/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ Markers can be added to the layers of OSM Maps by setting the corresponding loca
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs86/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs86/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs86/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs86/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs86/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs86/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -76,13 +76,13 @@ Any GeoJSON shape can be rendered as a sublayer on top of the OSM Maps layer for
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs87/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs87/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs87/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs87/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs87/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs87/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -94,13 +94,13 @@ The legend can be added to the tile Maps by setting the [visible](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs88/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs88/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs88/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs88/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs88/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs88/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

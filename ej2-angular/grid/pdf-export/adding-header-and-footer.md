@@ -121,13 +121,13 @@ The below code illustrates the pdf export customization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs5/app/app.component.ts %}
+{% include code-snippet/grid/exporting-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs5/app/app.module.ts %}
+{% include code-snippet/grid/exporting-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs5/app/main.ts %}
+{% include code-snippet/grid/exporting-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -141,13 +141,13 @@ In the below sample, we have enabled **repeatHeader** property in [`pdfHeaderQue
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs6/app/app.component.ts %}
+{% include code-snippet/grid/exporting-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs6/app/app.module.ts %}
+{% include code-snippet/grid/exporting-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs6/app/main.ts %}
+{% include code-snippet/grid/exporting-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

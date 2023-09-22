@@ -28,13 +28,13 @@ The legends can be made interactive with an arrow mark indicating the exact rang
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs49/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs49/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs49/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs49/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs49/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs49/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -64,13 +64,13 @@ The above four positions can be aligned with combination of **Near**, **Center**
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs50/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs50/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs50/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs50/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs50/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs50/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -84,13 +84,13 @@ The below code snippet demonstrate the equal color mapping legends for the shape
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs51/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs51/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs51/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs51/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs51/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs51/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -132,13 +132,13 @@ The following properties are available in legend to customize the legend shape a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs52/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs52/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs52/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs52/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs52/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs52/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -180,13 +180,13 @@ In the following example, color mapping is added for the ranges from **0** to **
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs53/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs53/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs53/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs53/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs53/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs53/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -198,13 +198,13 @@ Use the [`showLegend`](https://ej2.syncfusion.com/angular/documentation/api/maps
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs54/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs54/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs54/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs54/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs54/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs54/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -216,13 +216,13 @@ Depending on the boolean values provided in the data source, the legend items wi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs55/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs55/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs55/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs55/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs55/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs55/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -234,13 +234,13 @@ To show the legend text based on values provided in the data source, use the [`v
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs56/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs56/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs56/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs56/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs56/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs56/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -252,13 +252,13 @@ To hide the duplicate legend items in Maps, set the [`removeDuplicateLegend`](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs57/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs57/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs57/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs57/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs57/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs57/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -277,13 +277,13 @@ The following properties are available to customize the toggle option in legend.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs58/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs58/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs58/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs58/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs58/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs58/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -295,13 +295,13 @@ To enable the legend for the bubble by setting the [`visible`](https://ej2.syncf
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs59/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs59/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs59/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs59/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs59/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs59/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -313,13 +313,13 @@ To enable legend for marker by setting the [`visible`](https://ej2.syncfusion.co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs60/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs60/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs60/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs60/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs60/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs60/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -331,13 +331,13 @@ To imitate or map the marker shape with its legend item shape, set the [`useMark
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs61/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs61/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs61/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs61/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs61/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs61/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -18,13 +18,13 @@ PDF exporting provides support for exporting multiple grids on the same page. To
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs22/app/app.component.ts %}
+{% include code-snippet/grid/exporting-cs22/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs22/app/app.module.ts %}
+{% include code-snippet/grid/exporting-cs22/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs22/app/main.ts %}
+{% include code-snippet/grid/exporting-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ PDF export functionality enables the exporting of multiple grids into separate p
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/exporting-cs7/app/app.component.ts %}
+{% include code-snippet/grid/exporting-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs7/app/app.module.ts %}
+{% include code-snippet/grid/exporting-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/exporting-cs7/app/main.ts %}
+{% include code-snippet/grid/exporting-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

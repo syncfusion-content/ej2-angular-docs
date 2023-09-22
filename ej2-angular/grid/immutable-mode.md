@@ -18,16 +18,16 @@ To enable this feature, you have to set the [`enableImmutableMode`](https://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/immutable-cs1/app/app.component.ts %}
+{% include code-snippet/grid/immutable-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/immutable-cs1/app/app.template.html %}
+{% include code-snippet/grid/immutable-cs1/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/immutable-cs1/app/app.module.ts %}
+{% include code-snippet/grid/immutable-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/immutable-cs1/app/main.ts %}
+{% include code-snippet/grid/immutable-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

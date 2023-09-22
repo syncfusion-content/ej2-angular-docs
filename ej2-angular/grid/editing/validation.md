@@ -16,13 +16,13 @@ Column validation allows you to validate the edited or added row data and it dis
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs33/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs33/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs33/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs33/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs33/app/main.ts %}
+{% include code-snippet/grid/edit-cs33/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ In the below demo, custom validation applied for **CustomerID** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs34/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs34/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs34/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs34/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs34/app/main.ts %}
+{% include code-snippet/grid/edit-cs34/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ In the following sample, dropdownlist edit type is used for the **Role** and **S
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs35/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs35/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs35/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs35/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs35/app/main.ts %}
+{% include code-snippet/grid/edit-cs35/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -18,13 +18,13 @@ Bind the **mouseup** event for Grid and in the event handler call the [`startEdi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/single-click-batch-editing-cs1/app/app.component.ts %}
+{% include code-snippet/grid/single-click-batch-editing-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/single-click-batch-editing-cs1/app/app.module.ts %}
+{% include code-snippet/grid/single-click-batch-editing-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/single-click-batch-editing-cs1/app/main.ts %}
+{% include code-snippet/grid/single-click-batch-editing-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ You can open the default dropdown edit popup with single click edit by focusing 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/open-dropdown-popup-cs1/app/app.component.ts %}
+{% include code-snippet/grid/open-dropdown-popup-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/open-dropdown-popup-cs1/app/app.module.ts %}
+{% include code-snippet/grid/open-dropdown-popup-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/open-dropdown-popup-cs1/app/main.ts %}
+{% include code-snippet/grid/open-dropdown-popup-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

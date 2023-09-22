@@ -16,13 +16,13 @@ To select a row at initial rendering, set the [`selectedRowIndex`](https://ej2.s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs7/app/app.component.ts %}
+{% include code-snippet/grid/selection-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs7/app/app.module.ts %}
+{% include code-snippet/grid/selection-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs7/app/main.ts %}
+{% include code-snippet/grid/selection-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ You can get the selected row indexes by using the [`getSelectedRowIndexes`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs8/app/app.component.ts %}
+{% include code-snippet/grid/selection-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs8/app/app.module.ts %}
+{% include code-snippet/grid/selection-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs8/app/main.ts %}
+{% include code-snippet/grid/selection-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -52,13 +52,13 @@ You can select multiple rows by clicking on rows one by one. This will not desel
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs9/app/app.component.ts %}
+{% include code-snippet/grid/selection-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs9/app/app.module.ts %}
+{% include code-snippet/grid/selection-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs9/app/main.ts %}
+{% include code-snippet/grid/selection-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ The Toggle selection allows to perform selection and unselection of the particul
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs10/app/app.component.ts %}
+{% include code-snippet/grid/selection-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs10/app/app.module.ts %}
+{% include code-snippet/grid/selection-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs10/app/main.ts %}
+{% include code-snippet/grid/selection-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -92,13 +92,13 @@ In the demo below, we initially selected the third row using [selectedRowIndex](
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs11/app/app.component.ts %}
+{% include code-snippet/grid/selection-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs11/app/app.module.ts %}
+{% include code-snippet/grid/selection-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs11/app/main.ts %}
+{% include code-snippet/grid/selection-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -114,13 +114,13 @@ You can get the selected records using the [getSelectedRecords](https://ej2.sync
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs12/app/app.component.ts %}
+{% include code-snippet/grid/selection-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs12/app/app.module.ts %}
+{% include code-snippet/grid/selection-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/selection-cs12/app/main.ts %}
+{% include code-snippet/grid/selection-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

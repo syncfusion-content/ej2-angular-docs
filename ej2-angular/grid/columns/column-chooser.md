@@ -16,13 +16,13 @@ To use the column chooser, you need to inject the **ColumnChooserService** in th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/columnchooser-cs1/app/app.component.ts %}
+{% include code-snippet/grid/columnchooser-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/columnchooser-cs1/app/app.module.ts %}
+{% include code-snippet/grid/columnchooser-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/columnchooser-cs1/app/main.ts %}
+{% include code-snippet/grid/columnchooser-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -38,13 +38,13 @@ In this example, the `columns.showInColumnChooser` property is set to false for 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/columnchooser-cs2/app/app.component.ts %}
+{% include code-snippet/grid/columnchooser-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/columnchooser-cs2/app/app.module.ts %}
+{% include code-snippet/grid/columnchooser-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/columnchooser-cs2/app/main.ts %}
+{% include code-snippet/grid/columnchooser-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,13 +60,13 @@ Here's an example of how to open the column chooser in the Grid using an externa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/columnchooser-cs3/app/app.component.ts %}
+{% include code-snippet/grid/columnchooser-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/columnchooser-cs3/app/app.module.ts %}
+{% include code-snippet/grid/columnchooser-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/columnchooser-cs3/app/main.ts %}
+{% include code-snippet/grid/columnchooser-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -89,13 +89,13 @@ To customize the column chooser dialog size, you can use the following CSS style
 ```
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/columnchooser-cs4/app/app.component.ts %}
+{% include code-snippet/grid/columnchooser-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/columnchooser-cs4/app/app.module.ts %}
+{% include code-snippet/grid/columnchooser-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/columnchooser-cs4/app/main.ts %}
+{% include code-snippet/grid/columnchooser-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -111,13 +111,13 @@ Here's an example of how to change the default search operator of the column cho
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/columnchooser-cs5/app/app.component.ts %}
+{% include code-snippet/grid/columnchooser-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/columnchooser-cs5/app/app.module.ts %}
+{% include code-snippet/grid/columnchooser-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/columnchooser-cs5/app/main.ts %}
+{% include code-snippet/grid/columnchooser-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -131,13 +131,13 @@ Here is an example that demonstrates the usage of the `ignoreAccent` property to
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/columnchooser-cs6/app/app.component.ts %}
+{% include code-snippet/grid/columnchooser-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/columnchooser-cs6/app/app.module.ts %}
+{% include code-snippet/grid/columnchooser-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/columnchooser-cs6/app/main.ts %}
+{% include code-snippet/grid/columnchooser-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

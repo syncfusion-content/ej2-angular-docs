@@ -86,13 +86,13 @@ The following code example shows how to add legend in the gauge.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-legend-cs1/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-legend-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-legend-cs1/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-legend-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-legend-cs1/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-legend-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -105,13 +105,13 @@ The toggle option has been provided for legend. So, if you toggle the legend, th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-legend-cs2/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-legend-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-legend-cs2/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-legend-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-legend-cs2/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-legend-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -124,13 +124,13 @@ By default, paging will be enabled if the legend items exceed the legend bounds.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-legend-cs3/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-legend-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-legend-cs3/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-legend-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-legend-cs3/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-legend-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -143,13 +143,13 @@ You can customize the legend text using `legendText` property in `ranges`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-legend-cs4/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-legend-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-legend-cs4/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-legend-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-legend-cs4/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-legend-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

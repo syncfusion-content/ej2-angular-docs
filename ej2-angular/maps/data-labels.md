@@ -18,13 +18,13 @@ To display data labels in the Maps, the [`labelPath`](https://ej2.syncfusion.com
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs28/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs28/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs28/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs28/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs28/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs28/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ In the following example, the value of [`labelPath`](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs29/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs29/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs29/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs29/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs29/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs29/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -57,13 +57,13 @@ The following properties are available in the [`dataLabelSettings`](https://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs30/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs30/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs30/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs30/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs30/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -79,13 +79,13 @@ The Maps component provides an option to handle the labels when they intersect w
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs31/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs31/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs31/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs31/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs31/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs31/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -101,13 +101,13 @@ The Maps component provides an option to handle the labels when a label intersec
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs32/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs32/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs32/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs32/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs32/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs32/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -121,13 +121,13 @@ The data label can be added as a template in the Maps component. The [`template`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs33/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs33/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs33/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs33/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs33/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs33/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

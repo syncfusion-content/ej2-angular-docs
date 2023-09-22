@@ -26,13 +26,13 @@ The following example demonstrates how to enable the hierarchy feature in the gr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs5/app/app.component.ts %}
+{% include code-snippet/grid/default-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs5/app/app.module.ts %}
+{% include code-snippet/grid/default-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs5/app/main.ts %}
+{% include code-snippet/grid/default-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -51,13 +51,13 @@ In the following example, the `load` event is utilized to customize the mapping 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs9/app/app.component.ts %}
+{% include code-snippet/grid/default-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs9/app/app.module.ts %}
+{% include code-snippet/grid/default-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs9/app/main.ts %}
+{% include code-snippet/grid/default-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -75,13 +75,13 @@ In the provided example, expand the third record of the grid by utilizing the `e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs7/app/app.component.ts %}
+{% include code-snippet/grid/default-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs7/app/app.module.ts %}
+{% include code-snippet/grid/default-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs7/app/main.ts %}
+{% include code-snippet/grid/default-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -99,13 +99,13 @@ The following example demonstrates how to dynamically load child grid data using
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs8/app/app.component.ts %}
+{% include code-snippet/grid/default-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs8/app/app.module.ts %}
+{% include code-snippet/grid/default-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs8/app/main.ts %}
+{% include code-snippet/grid/default-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -121,13 +121,13 @@ In the `detailDataBound` event handler, you can filter the child grid's dataSour
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs12/app/app.component.ts %}
+{% include code-snippet/grid/default-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs12/app/app.module.ts %}
+{% include code-snippet/grid/default-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs12/app/main.ts %}
+{% include code-snippet/grid/default-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -143,13 +143,13 @@ In the following example, the parent and child grids are related by the **Employ
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs10/app/app.component.ts %}
+{% include code-snippet/grid/default-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs10/app/app.module.ts %}
+{% include code-snippet/grid/default-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs10/app/main.ts %}
+{% include code-snippet/grid/default-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -167,13 +167,13 @@ The following example demonstrates, how to show a custom image in the **Employee
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs11/app/app.component.ts %}
+{% include code-snippet/grid/default-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs11/app/app.module.ts %}
+{% include code-snippet/grid/default-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs11/app/main.ts %}
+{% include code-snippet/grid/default-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -189,13 +189,13 @@ The following example demonstrates how to obtain parent details in a child grid 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs16/app/app.component.ts %}
+{% include code-snippet/grid/default-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs16/app/app.module.ts %}
+{% include code-snippet/grid/default-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs16/app/main.ts %}
+{% include code-snippet/grid/default-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -211,13 +211,13 @@ The following example demonstrates how to expand and collapse the hierarchy grid
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/default-cs6/app/app.component.ts %}
+{% include code-snippet/grid/default-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs6/app/app.module.ts %}
+{% include code-snippet/grid/default-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/default-cs6/app/main.ts %}
+{% include code-snippet/grid/default-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

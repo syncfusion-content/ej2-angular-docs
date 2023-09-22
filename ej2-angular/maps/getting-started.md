@@ -248,13 +248,13 @@ Elements in the maps will get rendered in the layers. So add a layer collection 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs34/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs34/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs34/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs34/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs34/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs34/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -277,13 +277,13 @@ The JSON object "electionData" is used as data source below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs35/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs35/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs35/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs35/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs35/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs35/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -299,13 +299,13 @@ Specify color and value in [`colorMapping`](https://ej2.syncfusion.com/angular/d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs36/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs36/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs36/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs36/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs36/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs36/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -317,13 +317,13 @@ You can add a title using [`titleSettings`](https://ej2.syncfusion.com/angular/d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs37/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs37/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs37/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs37/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs37/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs37/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -335,13 +335,13 @@ You can show legend for the maps by setting true to the [`visible`](https://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs38/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs38/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs38/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs38/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs38/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs38/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -353,13 +353,13 @@ You can add data labels to show additional information of the shapes in map. Thi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs39/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs39/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs39/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs39/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs39/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs39/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -372,13 +372,13 @@ You can enable tooltip by setting the [`visible`](https://ej2.syncfusion.com/ang
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs40/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs40/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs40/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs40/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs40/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs40/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

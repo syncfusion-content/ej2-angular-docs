@@ -30,13 +30,13 @@ The [`Line`] type is used to render the sparkline series as line.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs27/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs27/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs27/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs27/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs27/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs27/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -50,13 +50,13 @@ The [`Column`] type is used to render the sparkline series as column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs28/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs28/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs28/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs28/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs28/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs28/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ The [`Pie`] type is used to render the sparkline series as pie.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs29/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs29/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs29/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs29/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs29/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs29/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -90,13 +90,13 @@ The [`Pie`] type is used to render the sparkline series as pie.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs30/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs30/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs30/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs30/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs30/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -110,13 +110,13 @@ The [`WinLoss`] type is used to render the sparkline series as Win Loss.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs31/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs31/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs31/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs31/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs31/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs31/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -130,13 +130,13 @@ The [`Area`] type is used to render the sparkline series as area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs32/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs32/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs32/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs32/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs32/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs32/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

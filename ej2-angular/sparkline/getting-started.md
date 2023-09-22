@@ -143,13 +143,13 @@ The [`dataSource`] property is used for binding data source to Sparkline. This p
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs14/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs14/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs14/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -163,13 +163,13 @@ We can change the Sparkline types by setting the [`type`] property as [`Line`],[
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs15/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs15/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs15/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -183,13 +183,13 @@ Sparkline will displays the sparkline details through tooltip, when the mouse is
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs16/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs16/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs16/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

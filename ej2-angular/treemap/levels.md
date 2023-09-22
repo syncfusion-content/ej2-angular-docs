@@ -22,13 +22,13 @@ In the following example, three levels are added and each level is configured us
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs42/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs42/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs42/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs42/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs42/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs42/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ The [`groupGap`](https://ej2.syncfusion.com/angular/documentation/api/treemap/le
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs43/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs43/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs43/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs43/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs43/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs43/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ Customize header using the [`headerFormat`](https://ej2.syncfusion.com/angular/d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs44/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs44/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs44/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs44/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs44/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs44/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -80,13 +80,13 @@ Customize the font color, family, weight, opacity and size using the [`headerSty
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs45/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs45/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs45/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs45/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs45/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs45/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -98,13 +98,13 @@ The TreeMap header supports to customize header of each item using the [`headerT
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs46/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs46/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs46/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs46/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs46/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs46/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

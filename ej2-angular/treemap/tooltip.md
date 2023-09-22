@@ -18,13 +18,13 @@ The tooltip is not visible by default, to make it visible, set the [`visible`](h
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs53/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs53/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs53/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs53/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs53/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs53/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ The tooltip content is displayed by default based on the [`weightValuePath`](htt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs54/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs54/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs54/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs54/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs54/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs54/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ Tooltip can be rendered as a custom component using the [`template`](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs55/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs55/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs55/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs55/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs55/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs55/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

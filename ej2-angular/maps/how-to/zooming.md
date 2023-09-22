@@ -14,13 +14,13 @@ The center position zooming can be achieved by using the [`centerPosition`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs45/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs45/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs45/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs45/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs45/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs45/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -16,13 +16,13 @@ Here's an example of using the `detailTemplate` property in the grid component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-cell-cs4/app/app.component.ts %}
+{% include code-snippet/grid/custom-cell-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs4/app/app.module.ts %}
+{% include code-snippet/grid/custom-cell-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-cell-cs4/app/main.ts %}
+{% include code-snippet/grid/custom-cell-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ For example, to render grid inside the detail row, place an HTML div element as 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-cell-cs5/app/app.component.ts %}
+{% include code-snippet/grid/custom-cell-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs5/app/app.module.ts %}
+{% include code-snippet/grid/custom-cell-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-cell-cs5/app/main.ts %}
+{% include code-snippet/grid/custom-cell-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ Here is an example of how to use the `expand` method to expand a detail row:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-cell-cs6/app/app.component.ts %}
+{% include code-snippet/grid/custom-cell-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs6/app/app.module.ts %}
+{% include code-snippet/grid/custom-cell-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/custom-cell-cs6/app/main.ts %}
+{% include code-snippet/grid/custom-cell-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -94,13 +94,13 @@ Here is an example of how to customize the detail template icon:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/row-detail-icon-cs1/app/app.component.ts %}
+{% include code-snippet/grid/row-detail-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-detail-icon-cs1/app/app.module.ts %}
+{% include code-snippet/grid/row-detail-icon-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/row-detail-icon-cs1/app/main.ts %}
+{% include code-snippet/grid/row-detail-icon-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
