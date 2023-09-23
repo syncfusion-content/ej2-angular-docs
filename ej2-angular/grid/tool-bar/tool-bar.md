@@ -18,13 +18,13 @@ The following example demonstrates how to enable toolbar items in the grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/toolbar-cs2/app/app.component.ts %}
+{% include code-snippet/grid/toolbar-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/toolbar-cs2/app/app.module.ts %}
+{% include code-snippet/grid/toolbar-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/toolbar-cs2/app/main.ts %}
+{% include code-snippet/grid/toolbar-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ In the following example, the [EJ2 Toggle Switch Button component](https://ej2.s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/toolbar-enable-cs1/app/app.component.ts %}
+{% include code-snippet/grid/toolbar-enable-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/toolbar-enable-cs1/app/app.module.ts %}
+{% include code-snippet/grid/toolbar-enable-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/toolbar-enable-cs1/app/main.ts %}
+{% include code-snippet/grid/toolbar-enable-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ The following example shows how to add the toolbar items at the bootom using `cr
  
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/toolbar-enable-cs2/app/app.component.ts %}
+{% include code-snippet/grid/toolbar-enable-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/toolbar-enable-cs2/app/app.module.ts %}
+{% include code-snippet/grid/toolbar-enable-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/toolbar-enable-cs2/app/main.ts %}
+{% include code-snippet/grid/toolbar-enable-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -91,13 +91,13 @@ The following example demonstrates how to change the background color of the `Ad
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/toolbar-cs3/app/app.component.ts %}
+{% include code-snippet/grid/toolbar-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/toolbar-cs3/app/app.module.ts %}
+{% include code-snippet/grid/toolbar-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/toolbar-cs3/app/main.ts %}
+{% include code-snippet/grid/toolbar-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

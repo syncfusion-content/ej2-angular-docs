@@ -40,13 +40,13 @@ Component |Example
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs11/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs11/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs11/app/main.ts %}
+{% include code-snippet/grid/edit-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ In the below demo, while editing the row we have restricted to type the decimal 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/prevent-decimalpoint-cs1/app/app.component.ts %}
+{% include code-snippet/grid/prevent-decimalpoint-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/prevent-decimalpoint-cs1/app/app.module.ts %}
+{% include code-snippet/grid/prevent-decimalpoint-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/prevent-decimalpoint-cs1/app/main.ts %}
+{% include code-snippet/grid/prevent-decimalpoint-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -101,13 +101,13 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs12/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs12/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs12/app/main.ts %}
+{% include code-snippet/grid/edit-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -131,13 +131,13 @@ Use the cell edit template feature of the Grid to render the TimePicker componen
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs13/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs13/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs13/app/main.ts %}
+{% include code-snippet/grid/edit-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -149,13 +149,13 @@ Use the cell edit template feature of the Grid to render the AutoComplete compon
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs14/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs14/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs14/app/main.ts %}
+{% include code-snippet/grid/edit-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -167,13 +167,13 @@ Use the cell edit template feature of the Grid to render the MultiSelect DropDow
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs15/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs15/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs15/app/main.ts %}
+{% include code-snippet/grid/edit-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -185,13 +185,13 @@ Use the cell edit template feature of the Grid to render the MaskedTextBox compo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs22/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs22/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs22/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs22/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs22/app/main.ts %}
+{% include code-snippet/grid/grid-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -203,13 +203,13 @@ Use the cell edit template feature of the Grid to render the RichTextEditor comp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs16/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs16/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs16/app/main.ts %}
+{% include code-snippet/grid/edit-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -225,13 +225,13 @@ This is demonstrated in the following sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/multicolumn-dropdown-cs1/app/app.component.ts %}
+{% include code-snippet/grid/multicolumn-dropdown-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/multicolumn-dropdown-cs1/app/app.module.ts %}
+{% include code-snippet/grid/multicolumn-dropdown-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/multicolumn-dropdown-cs1/app/main.ts %}
+{% include code-snippet/grid/multicolumn-dropdown-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -243,13 +243,13 @@ The cell editor for a particular column can be specified using the content of th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs17/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs17/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs17/app/main.ts %}
+{% include code-snippet/grid/edit-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

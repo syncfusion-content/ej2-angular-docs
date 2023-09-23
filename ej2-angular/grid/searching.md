@@ -18,13 +18,13 @@ To further enhance the search functionality, you can integrate a search text box
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs1/app/app.component.ts %}
+{% include code-snippet/grid/searching-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs1/app/app.module.ts %}
+{% include code-snippet/grid/searching-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs1/app/main.ts %}
+{% include code-snippet/grid/searching-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ The following example demonstrates how to set an initial search in the grid usin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs2/app/app.component.ts %}
+{% include code-snippet/grid/searching-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs2/app/app.module.ts %}
+{% include code-snippet/grid/searching-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs2/app/main.ts %}
+{% include code-snippet/grid/searching-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -92,13 +92,13 @@ The following example demonstrates how to set the `searchSettings.operator` prop
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs11/app/app.component.ts %}
+{% include code-snippet/grid/searching-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs11/app/app.module.ts %}
+{% include code-snippet/grid/searching-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs11/app/main.ts %}
+{% include code-snippet/grid/searching-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -117,13 +117,13 @@ The `search` method allows you to perform a search operation based on a search k
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs3/app/app.component.ts %}
+{% include code-snippet/grid/searching-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs3/app/app.module.ts %}
+{% include code-snippet/grid/searching-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs3/app/main.ts %}
+{% include code-snippet/grid/searching-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -137,13 +137,13 @@ The following example demonstrates how to search specific columns such as **Cust
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs4/app/app.component.ts %}
+{% include code-snippet/grid/searching-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs4/app/app.module.ts %}
+{% include code-snippet/grid/searching-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs4/app/main.ts %}
+{% include code-snippet/grid/searching-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -159,13 +159,13 @@ In the following example, the `created` event is bound to the grid component, an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs6/app/app.component.ts %}
+{% include code-snippet/grid/searching-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs6/app/app.module.ts %}
+{% include code-snippet/grid/searching-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs6/app/main.ts %}
+{% include code-snippet/grid/searching-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -181,13 +181,13 @@ The following example demonstrates how to implement searching based on column fo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs10/app/app.component.ts %}
+{% include code-snippet/grid/searching-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs10/app/app.module.ts %}
+{% include code-snippet/grid/searching-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs10/app/main.ts %}
+{% include code-snippet/grid/searching-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -203,13 +203,13 @@ On the other hand, the [actionComplete](https://ej2.syncfusion.com/angular/docum
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs7/app/app.component.ts %}
+{% include code-snippet/grid/searching-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs7/app/app.module.ts %}
+{% include code-snippet/grid/searching-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs7/app/main.ts %}
+{% include code-snippet/grid/searching-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -225,13 +225,13 @@ The following example demonstrates how to define the `ignoreAccent` property wit
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs9/app/app.component.ts %}
+{% include code-snippet/grid/searching-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs9/app/app.module.ts %}
+{% include code-snippet/grid/searching-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs9/app/main.ts %}
+{% include code-snippet/grid/searching-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -251,13 +251,13 @@ The following example demonstrates how to highlight search text in grid using th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs8/app/app.component.ts %}
+{% include code-snippet/grid/searching-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs8/app/app.module.ts %}
+{% include code-snippet/grid/searching-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs8/app/main.ts %}
+{% include code-snippet/grid/searching-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -273,13 +273,13 @@ The following example demonstrates how to clear the searched records using an ex
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/searching-cs5/app/app.component.ts %}
+{% include code-snippet/grid/searching-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/searching-cs5/app/app.module.ts %}
+{% include code-snippet/grid/searching-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/searching-cs5/app/main.ts %}
+{% include code-snippet/grid/searching-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -20,13 +20,13 @@ Here is an example that demonstrates the default filtering feature of the grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-cs1/app/app.component.ts %}
+{% include code-snippet/grid/filter-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs1/app/app.module.ts %}
+{% include code-snippet/grid/filter-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-cs1/app/main.ts %}
+{% include code-snippet/grid/filter-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -43,13 +43,13 @@ Here is an example of how to configure the initial filter using the `predicate` 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-cs2/app/app.component.ts %}
+{% include code-snippet/grid/filter-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs2/app/app.module.ts %}
+{% include code-snippet/grid/filter-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-cs2/app/main.ts %}
+{% include code-snippet/grid/filter-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -131,13 +131,13 @@ Consider the following sample where the `ignoreAccent` property is set to true i
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-cs4/app/app.component.ts %}
+{% include code-snippet/grid/filter-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs4/app/app.module.ts %}
+{% include code-snippet/grid/filter-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-cs4/app/main.ts %}
+{% include code-snippet/grid/filter-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -151,13 +151,13 @@ Below is an example code demonstrating how to enable or disable case sensitivity
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-cs5/app/app.component.ts %}
+{% include code-snippet/grid/filter-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs5/app/app.module.ts %}
+{% include code-snippet/grid/filter-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-cs5/app/main.ts %}
+{% include code-snippet/grid/filter-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -173,16 +173,16 @@ Here's an example where the menu filter is enabled by default for all columns, b
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-cs6/app/app.component.ts %}
+{% include code-snippet/grid/filter-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.html" %}
-{% include code-snippet/grid/filter-cs6/app/app.component.html %}
+{% include code-snippet/grid/filter-cs6/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs6/app/app.module.ts %}
+{% include code-snippet/grid/filter-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-cs6/app/main.ts %}
+{% include code-snippet/grid/filter-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -196,16 +196,16 @@ Here's an example that demonstrates how to change the default filter operator co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-cs7/app/app.component.ts %}
+{% include code-snippet/grid/filter-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.html" %}
-{% include code-snippet/grid/filter-cs7/app/app.component.html %}
+{% include code-snippet/grid/filter-cs7/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs7/app/app.module.ts %}
+{% include code-snippet/grid/filter-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-cs7/app/main.ts %}
+{% include code-snippet/grid/filter-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -225,16 +225,16 @@ Here's an example of how to get the filtering data in a Syncfusion grid using th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-cs9/app/app.component.ts %}
+{% include code-snippet/grid/filter-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/filter-cs9/app/app.template.html %}
+{% include code-snippet/grid/filter-cs9/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs9/app/app.module.ts %}
+{% include code-snippet/grid/filter-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-cs9/app/main.ts %}
+{% include code-snippet/grid/filter-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -268,13 +268,13 @@ Here's an example of how to clear the filtering in a Syncfusion grid using the `
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-cs10/app/app.component.ts %}
+{% include code-snippet/grid/filter-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs10/app/app.module.ts %}
+{% include code-snippet/grid/filter-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-cs10/app/main.ts %}
+{% include code-snippet/grid/filter-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -290,13 +290,13 @@ In the given example, the filtering is prevented for **ShipCity** column during 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-cs11/app/app.component.ts %}
+{% include code-snippet/grid/filter-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs11/app/app.module.ts %}
+{% include code-snippet/grid/filter-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-cs11/app/main.ts %}
+{% include code-snippet/grid/filter-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

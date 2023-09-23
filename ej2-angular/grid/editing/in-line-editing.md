@@ -16,13 +16,13 @@ To enable in-line editing in the grid component, you need to set the [editSettin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs25/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs25/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs25/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs25/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs25/app/main.ts %}
+{% include code-snippet/grid/edit-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}  
 {% previewsample "page.domainurl/samples/grid/edit-cs25" %}
@@ -38,13 +38,13 @@ In the following example, the **TotalCost** column value is updated based on cha
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs26/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs26/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs26/app/main.ts %}
+{% include code-snippet/grid/edit-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,13 +60,13 @@ In the below demo, prevent the CRUD operation based on the **Role** column value
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs27/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs27/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs27/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs27/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs27/app/main.ts %}
+{% include code-snippet/grid/edit-cs27/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -90,13 +90,13 @@ Performing CRUD actions programmatically refers to the ability to create, read, 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs28/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs28/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs28/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs28/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs28/app/main.ts %}
+{% include code-snippet/grid/edit-cs28/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -110,13 +110,13 @@ To enable the confirmation dialog for the delete operation in the Grid, you can 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs29/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs29/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs29/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs29/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs29/app/main.ts %}
+{% include code-snippet/grid/edit-cs29/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -134,13 +134,13 @@ Here's an example of how to set a default value for a column:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs30/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs30/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs30/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs30/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs30/app/main.ts %}
+{% include code-snippet/grid/edit-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -158,13 +158,13 @@ To delete multiple selected records in the grid, first you need to select multip
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-toolbar-cs1/app/app.component.ts %}
+{% include code-snippet/grid/edit-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-toolbar-cs1/app/app.module.ts %}
+{% include code-snippet/grid/edit-toolbar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-toolbar-cs1/app/main.ts %}
+{% include code-snippet/grid/edit-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -196,13 +196,13 @@ You can delete multiple rows programmatically by using following method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-multiple-cs1/app/app.component.ts %}
+{% include code-snippet/grid/edit-multiple-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-multiple-cs1/app/app.module.ts %}
+{% include code-snippet/grid/edit-multiple-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-multiple-cs1/app/main.ts %}
+{% include code-snippet/grid/edit-multiple-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -218,16 +218,16 @@ Here's an example of how to enable adding new rows at the bottom of the grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs31/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs31/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/grid/edit-cs31/app/app.component.html %}
+{% include code-snippet/grid/edit-cs31/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs31/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs31/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs31/app/main.ts %}
+{% include code-snippet/grid/edit-cs31/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -246,13 +246,13 @@ Here's an example of how to use the `recordDoubleClick` event to move the focus 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs32/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs32/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs32/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs32/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs32/app/main.ts %}
+{% include code-snippet/grid/edit-cs32/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -268,13 +268,13 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs21/app/app.component.ts %}
+{% include code-snippet/grid/edit-cs21/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs21/app/app.module.ts %}
+{% include code-snippet/grid/edit-cs21/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/edit-cs21/app/main.ts %}
+{% include code-snippet/grid/edit-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

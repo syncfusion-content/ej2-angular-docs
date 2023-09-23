@@ -56,13 +56,13 @@ Bind the **population_density** data to the [`dataSource`](https://ej2.syncfusio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs13/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs13/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs13/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -98,13 +98,13 @@ Bind the **unCountries** data to the [`dataSource`](https://ej2.syncfusion.com/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs14/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs14/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs14/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -120,13 +120,13 @@ Bind the **population_density** data to the [`dataSource`](https://ej2.syncfusio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs15/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs15/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs15/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -144,13 +144,13 @@ Bind the **population_density** data to the [`dataSource`](../api/maps/layerSett
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs16/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs16/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs16/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -168,13 +168,13 @@ In the following example, color mapping is added for the ranges from 0 to 200. I
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs17/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs17/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs17/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -186,13 +186,13 @@ The color mapping types such as range color mapping, equal color mapping and des
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs18/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs18/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs18/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -29,13 +29,13 @@ The following example shows enabling sparkline data label for all points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs11/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs11/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs11/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -49,13 +49,13 @@ Data labels can be customized using the fill, border, opacity, and textStyle. Th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs12/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs12/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs12/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -69,13 +69,13 @@ The text of data labels can be formatted using the `format` API in the sparkline
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs13/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs13/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs13/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -18,13 +18,13 @@ The TreeMap items can be drilled by setting the [`enableDrillDown`](https://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs12/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs12/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs12/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ All the child items are rendered during the normal drill-down process, and visib
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs13/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs13/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs13/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ TreeMap items are drilled, up to any level of parent using breadcrumb navigation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs14/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs14/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs14/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

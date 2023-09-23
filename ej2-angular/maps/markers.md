@@ -21,13 +21,13 @@ To add the markers, the [`dataSource`](https://ej2.syncfusion.com/angular/docume
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs63/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs63/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs63/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs63/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs63/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs63/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ The Marker can be added as a template in the Maps component. The [`template`](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs64/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs64/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs64/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs64/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs64/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs64/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -67,13 +67,13 @@ The following properties are available in [`markerSettings`](https://ej2.syncfus
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs65/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs65/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs65/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs65/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs65/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs65/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -100,13 +100,13 @@ To render a marker as an image in Maps, set the [`shape`](https://ej2.syncfusion
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs66/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs66/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs66/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs66/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs66/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs66/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -118,13 +118,13 @@ Multiple groups of markers can be added to the Maps using the [`markerSettings`]
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs67/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs67/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs67/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs67/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs67/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs67/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -138,13 +138,13 @@ Using the [`shapeValuePath`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs68/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs68/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs68/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs68/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs68/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs68/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -156,13 +156,13 @@ The latitude and longitude values are used to determine the location of each mar
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs69/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs69/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs69/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs69/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs69/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs69/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -174,13 +174,13 @@ The markers on the map can be dragged and dropped to change their position. To e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs103/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs103/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs103/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs103/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs103/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs103/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -203,13 +203,13 @@ The following example shows how to use marker drag events to customize the data 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs104/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs104/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs104/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs104/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs104/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs104/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -221,13 +221,13 @@ The Maps can be initially scaled to the center value based on the marker distanc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs70/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs70/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs70/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs70/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs70/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs70/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -241,13 +241,13 @@ To enable clustering in markers, set the [`allowClustering`](https://ej2.syncfus
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs71/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs71/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs71/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs71/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs71/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs71/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -271,13 +271,13 @@ The following properties are available to customize the marker clustering in the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs72/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs72/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs72/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs72/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs72/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs72/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -289,13 +289,13 @@ The cluster is formed by grouping an identical and non-identical marker from the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs73/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs73/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs73/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs73/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs73/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs73/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -307,13 +307,13 @@ Tooltip is used to display more information about a marker on mouse over or touc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs74/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs74/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs74/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs74/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs74/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs74/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

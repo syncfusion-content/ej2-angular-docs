@@ -20,13 +20,13 @@ The range band feature is used to highlight a particular range along with the y-
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs22/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs22/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs22/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs22/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs22/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ You can define multiple range bands to a sparkline as shown in the following cod
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs23/app/app.component.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs23/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs23/app/app.module.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs23/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs23/app/main.ts %}
+{% include code-snippet/sparkline/getting-started/sparkline-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

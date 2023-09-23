@@ -16,13 +16,13 @@ In the below sample, OrderID and Freight Columns are numeric columns, while open
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs12/app/app.component.ts %}
+{% include code-snippet/grid/filtering1-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs12/app/app.module.ts %}
+{% include code-snippet/grid/filtering1-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs12/app/main.ts %}
+{% include code-snippet/grid/filtering1-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

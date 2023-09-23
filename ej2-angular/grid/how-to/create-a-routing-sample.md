@@ -78,34 +78,34 @@ In this demonstration, Angular routing was utilized to create and define routes 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/routing-cs1/app/app.component.ts %}
+{% include code-snippet/grid/routing-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/routing-cs1/app/app.module.ts %}
+{% include code-snippet/grid/routing-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.html" %}
-{% include code-snippet/grid/routing-cs1/app/app.component.html %}
+{% include code-snippet/grid/routing-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app-routing.module.ts" %}
-{% include code-snippet/grid/routing-cs1/app/app-routing.module.ts %}
+{% include code-snippet/grid/routing-cs1/src/app-routing.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="about.component.ts" %}
-{% include code-snippet/grid/routing-cs1/app/about/about.component.ts %}
+{% include code-snippet/grid/routing-cs1/src/about/about.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="about.component.html" %}
-{% include code-snippet/grid/routing-cs1/app/about/about.component.html %}
+{% include code-snippet/grid/routing-cs1/src/about/about.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="contact.component.ts" %}
-{% include code-snippet/grid/routing-cs1/app/contact/contact.component.ts %}
+{% include code-snippet/grid/routing-cs1/src/contact/contact.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="contact.component.html" %}
-{% include code-snippet/grid/routing-cs1/app/contact/contact.component.html %}
+{% include code-snippet/grid/routing-cs1/src/contact/contact.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="home.component.ts" %}
-{% include code-snippet/grid/routing-cs1/app/home/home.component.ts %}
+{% include code-snippet/grid/routing-cs1/src/home/home.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="home.component.html" %}
-{% include code-snippet/grid/routing-cs1/app/home/home.component.html %}
+{% include code-snippet/grid/routing-cs1/src/home/home.component.html %}
 {% endhighlight %}
 {% endtabs %}
   

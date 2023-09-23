@@ -1,0 +1,13 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/bootstrap5.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css';
+@import 'node_modules/@syncfusion/ej2-calendars/styles/bootstrap5.css';
+@import 'node_modules/@syncfusion/ej2-dropdowns/styles/bootstrap5.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css';
+@import 'node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/bootstrap5.css';
+@import 'node_modules/@syncfusion/ej2-angular-dropdowns/styles/bootstrap5.css';
+@import 'node_modules/@syncfusion/ej2-angular-base/styles/bootstrap5.css';
+@import 'node_modules/@syncfusion/ej2-angular-grids/styles/bootstrap5.css';
+@import 'node_modules/@syncfusion/ej2-angular-buttons/styles/bootstrap5.css';

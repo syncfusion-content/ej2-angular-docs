@@ -126,13 +126,13 @@ This session explains how to render TreeMap with datasource.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs15/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs15/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs15/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -146,13 +146,13 @@ The color mapping feature supports customization of item colors based on the und
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs16/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs16/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs16/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

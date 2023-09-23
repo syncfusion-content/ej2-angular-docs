@@ -27,13 +27,13 @@ The `Squarified` layout displays the nested rectangles based on aspect ratio in 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs23/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs23/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs23/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs23/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs23/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -45,13 +45,13 @@ The `SliceAndDiceVertical` layout creates rectangles with high aspect ratio and 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs24/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs24/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs24/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs24/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs24/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -63,13 +63,13 @@ The `SliceAndDiceHorizontal` layout creates rectangles with high aspect ratio an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs25/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs25/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs25/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs25/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs25/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -81,13 +81,13 @@ The `SliceAndDiceAuto` layout creates rectangles with high aspect ratio and disp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs26/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs26/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs26/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

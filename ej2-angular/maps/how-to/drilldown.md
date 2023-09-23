@@ -14,13 +14,13 @@ By clicking a continent, all the countries available in that continent can be vi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs42/app/app.component.ts %}
+{% include code-snippet/maps/default-map/datetime-cs42/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs42/app/app.module.ts %}
+{% include code-snippet/maps/default-map/datetime-cs42/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs42/app/main.ts %}
+{% include code-snippet/maps/default-map/datetime-cs42/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

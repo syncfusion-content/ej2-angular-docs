@@ -18,13 +18,13 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/treemap/select
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs51/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs51/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs51/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs51/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs51/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs51/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/treemap/highli
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs52/app/app.component.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs52/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs52/app/app.module.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs52/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs52/app/main.ts %}
+{% include code-snippet/treemap/getting-started/treemap-cs52/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

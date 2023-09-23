@@ -18,13 +18,13 @@ Here's an example code snippet that demonstrates how to define columns manually 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging-cs1/app/app.component.ts %}
+{% include code-snippet/grid/paging-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging-cs1/app/app.module.ts %}
+{% include code-snippet/grid/paging-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging-cs1/app/main.ts %}
+{% include code-snippet/grid/paging-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -38,13 +38,13 @@ You can use the following code snippet to enable auto-generated columns in the S
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs3/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs3/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs3/app/main.ts %}
+{% include code-snippet/grid/grid-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,13 +63,13 @@ Here is an example code snippet that shows how to set a primary key for an auto-
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs4/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs4/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs4/app/main.ts %}
+{% include code-snippet/grid/grid-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -94,13 +94,13 @@ In the below example, `width` is set for **OrderID** column, **date** `type` is 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs5/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs5/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs5/app/main.ts %}
+{% include code-snippet/grid/grid-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -118,13 +118,13 @@ Here is an example for dynamically generate columns in the grid using ngFor dire
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/dynamic-column-cs1/app/app.component.ts %}
+{% include code-snippet/grid/dynamic-column-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dynamic-column-cs1/app/app.module.ts %}
+{% include code-snippet/grid/dynamic-column-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/dynamic-column-cs1/app/main.ts %}
+{% include code-snippet/grid/dynamic-column-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -144,13 +144,13 @@ In the provided code, the **currencyFormatter** function takes the Freight value
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs10/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs10/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs10/app/main.ts %}
+{% include code-snippet/grid/grid-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -168,13 +168,13 @@ This will display the concatenated value of **FirstName** and **LastName** in th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs11/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs11/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs11/app/main.ts %}
+{% include code-snippet/grid/grid-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -188,13 +188,13 @@ In this example, we have a grid with columns **Food Name**, **Protein**, **Fat**
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/expression-cs1/app/app.component.ts %}
+{% include code-snippet/grid/expression-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/expression-cs1/app/app.module.ts %}
+{% include code-snippet/grid/expression-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/expression-cs1/app/main.ts %}
+{% include code-snippet/grid/expression-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -210,13 +210,13 @@ Here is an example code snippet that demonstrates how to display serial numbers 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs31/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs31/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs31/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs31/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs31/app/main.ts %}
+{% include code-snippet/grid/grid-cs31/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -234,13 +234,13 @@ In the below example, we have bound the nested **Employee** object's **FirstName
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grid-cs18/app/app.component.ts %}
+{% include code-snippet/grid/grid-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs18/app/app.module.ts %}
+{% include code-snippet/grid/grid-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/grid-cs18/app/main.ts %}
+{% include code-snippet/grid/grid-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -254,13 +254,13 @@ In the below example, we have used the `expand` query to load the nested Employe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/complex-data-cs2/app/app.component.ts %}
+{% include code-snippet/grid/complex-data-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/complex-data-cs2/app/app.module.ts %}
+{% include code-snippet/grid/complex-data-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/complex-data-cs2/app/main.ts %}
+{% include code-snippet/grid/complex-data-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -274,13 +274,13 @@ The following example shows how to set complex field for datasource having array
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/complex-data-cs1/app/app.component.ts %}
+{% include code-snippet/grid/complex-data-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/complex-data-cs1/app/app.module.ts %}
+{% include code-snippet/grid/complex-data-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/complex-data-cs1/app/main.ts %}
+{% include code-snippet/grid/complex-data-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -294,13 +294,13 @@ The following example demonstrates how to set the **Employee.EmployeeID** column
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/foreignkey-cs11/app/app.component.ts %}
+{% include code-snippet/grid/foreignkey-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs11/app/app.module.ts %}
+{% include code-snippet/grid/foreignkey-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/foreignkey-cs11/app/main.ts %}
+{% include code-snippet/grid/foreignkey-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

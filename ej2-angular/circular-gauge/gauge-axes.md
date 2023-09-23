@@ -22,13 +22,13 @@ You can customize the width and color of an axis line by using [`lineStyle`](htt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs1/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs1/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs1/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -41,13 +41,13 @@ Circular gauge axis can sweep from 0 to 360 degrees. By default start angle of a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs2/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs2/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs2/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ The [`direction`](https://ej2.syncfusion.com/angular/documentation/api/circular-
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs3/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs3/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs3/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -82,13 +82,13 @@ You can set the radius of the gauge in pixel as demonstrated below,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs4/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs4/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs4/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -102,13 +102,13 @@ For example, when the radius is ‘50%’, gauge renders to half of the availabl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs5/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs5/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs5/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -122,13 +122,13 @@ By default, [`interval`](https://ej2.syncfusion.com/angular/documentation/api/ci
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs6/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs6/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs6/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -142,13 +142,13 @@ By default, ticks will be placed `inside` the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs7/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs7/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs7/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -160,13 +160,13 @@ Labels of an axis can be customized by using [`font`](https://ej2.syncfusion.com
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs8/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs8/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs8/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -182,13 +182,13 @@ By default, labels will be placed `inside` the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs9/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs9/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs9/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -200,13 +200,13 @@ Labels can be swept along the axis angle by enabling [`autoAngle`](https://ej2.s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs10/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs10/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs10/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -220,13 +220,13 @@ When `hiddenLabel` value is `First`, then the 1st label will be hidden and when 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs11/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs11/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs11/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -238,13 +238,13 @@ Axis labels can be formatted by using [`format`](https://ej2.syncfusion.com/angu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs12/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs12/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs12/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -316,13 +316,13 @@ Axis labels support custom label format using placeholder like {value}°C, in 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs13/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs13/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs13/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -334,13 +334,13 @@ When the axis labels overlap with each other, you can hide the intersected label
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs14/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs14/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs14/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -352,13 +352,13 @@ The [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/circular-ga
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs15/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs15/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs15/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -371,13 +371,13 @@ Each axis will have its own ranges, pointers, annotations and customization opti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs16/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs16/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs16/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-axes-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -22,13 +22,13 @@ The number of records displayed in the Grid is determined implicitly by height o
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging1-cs8/app/app.component.ts %}
+{% include code-snippet/grid/paging1-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs8/app/app.module.ts %}
+{% include code-snippet/grid/paging1-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging1-cs8/app/main.ts %}
+{% include code-snippet/grid/paging1-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ To setup the column virtualization, set the [`enableVirtualization`](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging1-cs9/app/app.component.ts %}
+{% include code-snippet/grid/paging1-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs9/app/app.module.ts %}
+{% include code-snippet/grid/paging1-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/paging1-cs9/app/main.ts %}
+{% include code-snippet/grid/paging1-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

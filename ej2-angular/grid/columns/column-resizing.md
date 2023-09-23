@@ -18,13 +18,13 @@ To use the column resize, inject **ResizeService** in the provider section of **
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs2/app/app.component.ts %}
+{% include code-snippet/grid/resize-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/resize-cs2/app/app.module.ts %}
+{% include code-snippet/grid/resize-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs2/app/main.ts %}
+{% include code-snippet/grid/resize-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -44,13 +44,13 @@ In the below code, **OrderID**, **Ship Name** and **Ship Country** columns are d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs3/app/app.component.ts %}
+{% include code-snippet/grid/resize-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/resize-cs3/app/app.module.ts %}
+{% include code-snippet/grid/resize-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs3/app/main.ts %}
+{% include code-snippet/grid/resize-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -68,13 +68,13 @@ You can disable resizing for a particular column by setting the [allowResizing](
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs7/app/app.component.ts %}
+{% include code-snippet/grid/resize-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/resize-cs7/app/app.module.ts %}
+{% include code-snippet/grid/resize-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs7/app/main.ts %}
+{% include code-snippet/grid/resize-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -90,13 +90,13 @@ In this below code, we have disabled resize for **Ship City** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs4/app/app.component.ts %}
+{% include code-snippet/grid/resize-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/resize-cs4/app/app.module.ts %}
+{% include code-snippet/grid/resize-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs4/app/main.ts %}
+{% include code-snippet/grid/resize-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -114,13 +114,13 @@ The following example demonstrates how to set the [resizeSettings.mode](https://
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs8/app/app.component.ts %}
+{% include code-snippet/grid/resize-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/resize-cs8/app/app.module.ts %}
+{% include code-snippet/grid/resize-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs8/app/main.ts %}
+{% include code-snippet/grid/resize-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -154,13 +154,13 @@ The following example demonstrates how to resize the columns in a grid. This is 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs6/app/app.component.ts %}
+{% include code-snippet/grid/resize-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/resize-cs6/app/app.module.ts %}
+{% include code-snippet/grid/resize-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs6/app/main.ts %}
+{% include code-snippet/grid/resize-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -182,13 +182,13 @@ The following is an example of using the resizing events, the [resizeStart](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/resize-cs5/app/app.component.ts %}
+{% include code-snippet/grid/resize-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/resize-cs5/app/app.module.ts %}
+{% include code-snippet/grid/resize-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/resize-cs5/app/main.ts %}
+{% include code-snippet/grid/resize-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

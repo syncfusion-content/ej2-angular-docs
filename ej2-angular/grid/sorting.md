@@ -18,13 +18,13 @@ To use the sorting feature, you need to inject the **SortService** in the provid
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs1/app/app.component.ts %}
+{% include code-snippet/grid/sorting1-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs1/app/app.module.ts %}
+{% include code-snippet/grid/sorting1-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs1/app/main.ts %}
+{% include code-snippet/grid/sorting1-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ The following example demonstrates how to set [sortSettings.columns](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs2/app/app.component.ts %}
+{% include code-snippet/grid/sorting1-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs2/app/app.module.ts %}
+{% include code-snippet/grid/sorting1-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs2/app/main.ts %}
+{% include code-snippet/grid/sorting1-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -67,13 +67,13 @@ To clear multi-column sorting for a particular column, press the "Shift + mouse 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs3/app/app.component.ts %}
+{% include code-snippet/grid/sorting1-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs3/app/app.module.ts %}
+{% include code-snippet/grid/sorting1-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs3/app/main.ts %}
+{% include code-snippet/grid/sorting1-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -89,13 +89,13 @@ The following example demonstrates, how to disable sorting for **CustomerID** co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs11/app/app.component.ts %}
+{% include code-snippet/grid/sorting1-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs11/app/app.module.ts %}
+{% include code-snippet/grid/sorting1-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs11/app/main.ts %}
+{% include code-snippet/grid/sorting1-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -115,13 +115,13 @@ The following example demonstrates how to define custom sort comparer function f
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs5/app/app.component.ts %}
+{% include code-snippet/grid/sorting1-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs5/app/app.module.ts %}
+{% include code-snippet/grid/sorting1-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs5/app/main.ts %}
+{% include code-snippet/grid/sorting1-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -151,13 +151,13 @@ The following example demonstrates how to perform sorting by enabling a foreign 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs10/app/app.component.ts %}
+{% include code-snippet/grid/sorting1-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs10/app/app.module.ts %}
+{% include code-snippet/grid/sorting1-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs10/app/main.ts %}
+{% include code-snippet/grid/sorting1-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -260,13 +260,13 @@ In the following example, sorting is performed based on the **"ar"** locale usin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/localization-cs4/app/app.component.ts %}
+{% include code-snippet/grid/localization-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/localization-cs4/app/app.module.ts %}
+{% include code-snippet/grid/localization-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/localization-cs4/app/main.ts %}
+{% include code-snippet/grid/localization-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -289,13 +289,13 @@ In the below sample, grid is rendered with a customized sort icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs7/app/app.component.ts %}
+{% include code-snippet/grid/sorting1-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs7/app/app.module.ts %}
+{% include code-snippet/grid/sorting1-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs7/app/main.ts %}
+{% include code-snippet/grid/sorting1-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 	  
@@ -313,13 +313,13 @@ The following example demonstrates how to add sort columns to a grid. It utilize
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs9/app/app.component.ts %}
+{% include code-snippet/grid/sorting1-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs9/app/app.module.ts %}
+{% include code-snippet/grid/sorting1-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs9/app/main.ts %}
+{% include code-snippet/grid/sorting1-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 	  
@@ -333,13 +333,13 @@ The following example demonstrates how to remove sort columns. It utilizes the *
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs8/app/app.component.ts %}
+{% include code-snippet/grid/sorting1-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs8/app/app.module.ts %}
+{% include code-snippet/grid/sorting1-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs8/app/main.ts %}
+{% include code-snippet/grid/sorting1-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 	  
@@ -353,13 +353,13 @@ The following example demonstrates how to clear the sorting using `clearSorting`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs6/app/app.component.ts %}
+{% include code-snippet/grid/sorting1-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs6/app/app.module.ts %}
+{% include code-snippet/grid/sorting1-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs6/app/main.ts %}
+{% include code-snippet/grid/sorting1-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 	  
@@ -377,13 +377,13 @@ The following example demonstrates how the [actionBegin](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/sorting1-cs4/app/app.component.ts %}
+{% include code-snippet/grid/sorting1-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting1-cs4/app/app.module.ts %}
+{% include code-snippet/grid/sorting1-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/sorting1-cs4/app/main.ts %}
+{% include code-snippet/grid/sorting1-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -23,13 +23,13 @@ You can set width and height to the element of the container. It determines the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-dimensions-cs1/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-dimensions-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-dimensions-cs1/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-dimensions-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-dimensions-cs1/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-dimensions-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -48,13 +48,13 @@ You can set the size of the gauge in pixel as demonstrated below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-dimensions-cs2/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-dimensions-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-dimensions-cs2/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-dimensions-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-dimensions-cs2/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-dimensions-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ By setting value in percentage, gauge gets its dimension with respect to its con
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/circulargauge/gauge-dimensions-cs3/app/app.component.ts %}
+{% include code-snippet/circulargauge/gauge-dimensions-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-dimensions-cs3/app/app.module.ts %}
+{% include code-snippet/circulargauge/gauge-dimensions-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/circulargauge/gauge-dimensions-cs3/app/main.ts %}
+{% include code-snippet/circulargauge/gauge-dimensions-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
