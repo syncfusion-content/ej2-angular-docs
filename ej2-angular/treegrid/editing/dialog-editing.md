@@ -16,13 +16,13 @@ To enable Dialog edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs8/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs8/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs8/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ Also the locale text for the **Save** and **Cancel** buttons has been changed by
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs9/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs9/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs9/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ In the below example, we have rendered the tree grid columns **priority** as hid
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs10/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs10/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs10/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

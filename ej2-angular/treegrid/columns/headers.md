@@ -16,13 +16,13 @@ By default, column header title is displayed from column [`field`](https://ej2.s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs25/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs25/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs25/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs25/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs25/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ You can customize the header element by using the [`headerTemplate`](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-header-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-header-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-header-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-header-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-header-cs1/app/main.ts %}
+{% include code-snippet/treegrid/columns-header-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ By using the headerTemplate template reference for the ng template, you can cust
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-header-cs2/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-header-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-header-cs2/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-header-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-header-cs2/app/main.ts %}
+{% include code-snippet/treegrid/columns-header-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

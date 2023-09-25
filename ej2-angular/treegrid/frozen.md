@@ -18,13 +18,13 @@ In this demo, the [`frozenColumns`](https://ej2.syncfusion.com/angular/documenta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/frozencolumns-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/frozencolumns-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/frozencolumns-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/frozencolumns-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/frozencolumns-cs1/app/main.ts %}
+{% include code-snippet/treegrid/frozencolumns-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ the `isFrozen` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/isfrozen-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/isfrozen-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/isfrozen-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/isfrozen-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/isfrozen-cs1/app/main.ts %}
+{% include code-snippet/treegrid/isfrozen-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -64,13 +64,13 @@ In this demo, the **Task Name** column is frozen at the left and the **Priority*
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/isfrozen-cs2/app/app.component.ts %}
+{% include code-snippet/treegrid/isfrozen-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/isfrozen-cs2/app/app.module.ts %}
+{% include code-snippet/treegrid/isfrozen-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/isfrozen-cs2/app/main.ts %}
+{% include code-snippet/treegrid/isfrozen-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -120,13 +120,13 @@ Validation rules for the 'duration' and 'taskID' columns can be added in the fol
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/isfrozen-cs3/app/app.component.ts %}
+{% include code-snippet/treegrid/isfrozen-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/isfrozen-cs3/app/app.module.ts %}
+{% include code-snippet/treegrid/isfrozen-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/isfrozen-cs3/app/main.ts %}
+{% include code-snippet/treegrid/isfrozen-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

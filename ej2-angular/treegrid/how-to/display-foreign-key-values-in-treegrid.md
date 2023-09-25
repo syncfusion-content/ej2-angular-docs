@@ -16,13 +16,13 @@ To display the foreignKey value at initial rendering, we can use the [`queryCell
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/refresh-cs7/app/app.component.ts %}
+{% include code-snippet/treegrid/refresh-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/refresh-cs7/app/app.module.ts %}
+{% include code-snippet/treegrid/refresh-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/refresh-cs7/app/main.ts %}
+{% include code-snippet/treegrid/refresh-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

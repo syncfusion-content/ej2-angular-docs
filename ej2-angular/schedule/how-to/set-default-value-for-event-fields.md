@@ -14,13 +14,13 @@ Event window default fields name like Title, Location, etc.. can be customized a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs51/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs51/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs51/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs51/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs51/app/main.ts %}
+{% include code-snippet/schedule/default-cs51/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

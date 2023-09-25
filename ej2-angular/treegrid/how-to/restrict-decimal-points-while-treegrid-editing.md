@@ -16,13 +16,13 @@ In the below demo, while editing the row we have restricted to type the decimal 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/refresh-cs14/app/app.component.ts %}
+{% include code-snippet/treegrid/refresh-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/refresh-cs14/app/app.module.ts %}
+{% include code-snippet/treegrid/refresh-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/refresh-cs14/app/main.ts %}
+{% include code-snippet/treegrid/refresh-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

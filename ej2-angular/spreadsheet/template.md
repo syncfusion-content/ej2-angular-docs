@@ -18,13 +18,13 @@ Sample link: [`Cell template`](https://ej2.syncfusion.com/angular/demos/#/materi
 
 <!-- {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/template-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/template-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/template-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

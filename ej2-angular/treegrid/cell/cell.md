@@ -17,13 +17,13 @@ The [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treeg
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/cell-cs2/app/app.component.ts %}
+{% include code-snippet/treegrid/cell-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs2/app/app.module.ts %}
+{% include code-snippet/treegrid/cell-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/cell-cs2/app/main.ts %}
+{% include code-snippet/treegrid/cell-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -51,13 +51,13 @@ In the below example, we have customized the cells of `TaskID` and `StartDate` c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/cell-cs3/app/app.component.ts %}
+{% include code-snippet/treegrid/cell-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs3/app/app.module.ts %}
+{% include code-snippet/treegrid/cell-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/cell-cs3/app/main.ts %}
+{% include code-snippet/treegrid/cell-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -79,13 +79,13 @@ The available modes of grid lines are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/cell-cs4/app/app.component.ts %}
+{% include code-snippet/treegrid/cell-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs4/app/app.module.ts %}
+{% include code-snippet/treegrid/cell-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/cell-cs4/app/main.ts %}
+{% include code-snippet/treegrid/cell-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

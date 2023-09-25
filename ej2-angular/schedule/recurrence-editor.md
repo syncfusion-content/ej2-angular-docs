@@ -28,13 +28,13 @@ It is possible to customize the recurrence editor to display only the specific r
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs57/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs57/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs57/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs57/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs57/app/main.ts %}
+{% include code-snippet/schedule/default-cs57/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -67,13 +67,13 @@ It is possible to customize the recurrence editor to display only the specific e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs97/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs97/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs97/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs97/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs97/app/main.ts %}
+{% include code-snippet/schedule/default-cs97/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -87,13 +87,13 @@ There is a `change` event available in recurrence editor, that triggers on every
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/recur-editor-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/recur-editor-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/recur-editor-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/recur-editor-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/recur-editor-cs1/app/main.ts %}
+{% include code-snippet/schedule/recur-editor-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -105,13 +105,13 @@ It is possible to display the recurrence editor with specific options loaded ini
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/recur-editor-cs2/app/app.component.ts %}
+{% include code-snippet/schedule/recur-editor-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/recur-editor-cs2/app/app.module.ts %}
+{% include code-snippet/schedule/recur-editor-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/recur-editor-cs2/app/main.ts %}
+{% include code-snippet/schedule/recur-editor-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -131,13 +131,13 @@ You can parse the `recurrenceRule` of an event to generate the date instances on
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/recur-editor-cs3/app/app.component.ts %}
+{% include code-snippet/schedule/recur-editor-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/recur-editor-cs3/app/app.module.ts %}
+{% include code-snippet/schedule/recur-editor-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/recur-editor-cs3/app/main.ts %}
+{% include code-snippet/schedule/recur-editor-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -157,13 +157,13 @@ In case, if the rule is given in "NEVER ENDS" category, then you can mention the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/recur-editor-cs4/app/app.component.ts %}
+{% include code-snippet/schedule/recur-editor-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/recur-editor-cs4/app/app.module.ts %}
+{% include code-snippet/schedule/recur-editor-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/recur-editor-cs4/app/main.ts %}
+{% include code-snippet/schedule/recur-editor-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

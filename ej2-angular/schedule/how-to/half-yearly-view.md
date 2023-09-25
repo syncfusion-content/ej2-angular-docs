@@ -20,16 +20,16 @@ In the following code example, you can see how to render only the last six month
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/year-customizations-cs1/app/app.component.html %}
+{% include code-snippet/schedule/year-customizations-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/year-customizations-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/year-customizations-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/year-customizations-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/year-customizations-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/year-customizations-cs1/app/main.ts %}
+{% include code-snippet/schedule/year-customizations-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

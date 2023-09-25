@@ -24,13 +24,13 @@ The following sample shows the `Open` option by using the [`openUrl`](https://ej
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/open-save-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/open-save-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/open-save-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -53,13 +53,13 @@ You can achieve to access the remote excel file by using the [`created`](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs2/app/app.component.ts %}
+{% include code-snippet/spreadsheet/open-save-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs2/app/app.module.ts %}
+{% include code-snippet/spreadsheet/open-save-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs2/app/main.ts %}
+{% include code-snippet/spreadsheet/open-save-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -77,13 +77,13 @@ The following sample shows the `Save` option by using the [`saveUrl`](https://ej
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs3/app/app.component.ts %}
+{% include code-snippet/spreadsheet/open-save-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs3/app/app.module.ts %}
+{% include code-snippet/spreadsheet/open-save-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs3/app/main.ts %}
+{% include code-snippet/spreadsheet/open-save-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -111,13 +111,13 @@ Passing the custom parameters from client to server by using [`beforeSave`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs4/app/app.component.ts %}
+{% include code-snippet/spreadsheet/open-save-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs4/app/app.module.ts %}
+{% include code-snippet/spreadsheet/open-save-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs4/app/main.ts %}
+{% include code-snippet/spreadsheet/open-save-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -145,13 +145,13 @@ The possible values are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs6/app/app.component.ts %}
+{% include code-snippet/spreadsheet/open-save-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs6/app/app.module.ts %}
+{% include code-snippet/spreadsheet/open-save-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs6/app/main.ts %}
+{% include code-snippet/spreadsheet/open-save-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -163,13 +163,13 @@ To save the Spreadsheet document as an `xlsx, xls, csv, or pdf` file, by using [
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs5/app/app.component.ts %}
+{% include code-snippet/spreadsheet/open-save-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs5/app/app.module.ts %}
+{% include code-snippet/spreadsheet/open-save-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs5/app/main.ts %}
+{% include code-snippet/spreadsheet/open-save-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -21,13 +21,13 @@ The following example shows the file manager component rendered inside the dialo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/file-dialog-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/file-dialog-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/file-dialog-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/file-dialog-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/file-dialog-cs1/app/main.ts %}
+{% include code-snippet/file-manager/file-dialog-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ The following example demonstrate that the file manager component is placed insi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/file-tab-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/file-tab-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/file-tab-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/file-tab-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/file-tab-cs1/app/main.ts %}
+{% include code-snippet/file-manager/file-tab-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

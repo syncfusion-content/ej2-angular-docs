@@ -114,13 +114,13 @@ The following example demonstrates the TreeGrid in `Deutsch` culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/internationalization-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/internationalization-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/internationalization-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/internationalization-cs1/app/main.ts %}
+{% include code-snippet/treegrid/internationalization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -132,13 +132,13 @@ The [`Internationalization`](../common/internationalization/) library is used to
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/internationalization-cs2/app/app.component.ts %}
+{% include code-snippet/treegrid/internationalization-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/internationalization-cs2/app/app.module.ts %}
+{% include code-snippet/treegrid/internationalization-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/internationalization-cs2/app/main.ts %}
+{% include code-snippet/treegrid/internationalization-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -153,13 +153,13 @@ RTL provides an option to switch the text direction and layout of the TreeGrid c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/internationalization-cs3/app/app.component.ts %}
+{% include code-snippet/treegrid/internationalization-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/internationalization-cs3/app/app.module.ts %}
+{% include code-snippet/treegrid/internationalization-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/internationalization-cs3/app/main.ts %}
+{% include code-snippet/treegrid/internationalization-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -18,13 +18,13 @@ The height and width of the Scheduler cells can be customized either to increase
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs21/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs21/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs21/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs21/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs21/app/main.ts %}
+{% include code-snippet/schedule/default-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ You can check whether the given time range slots are available for event creatio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs22/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs22/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs22/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs22/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs22/app/main.ts %}
+{% include code-snippet/schedule/default-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,13 +60,13 @@ The `cellTemplate` option accepts the template string and is used to customize t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs23/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs23/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs23/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs23/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs23/app/main.ts %}
+{% include code-snippet/schedule/default-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -80,13 +80,13 @@ An alternative to `cellTemplate` is the `renderCell` event, which can also be us
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs24/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs24/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs24/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs24/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs24/app/main.ts %}
+{% include code-snippet/schedule/default-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -114,13 +114,13 @@ The month header of each date cell in the month view can be customized using the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs25/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs25/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs25/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs25/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs25/app/main.ts %}
+{% include code-snippet/schedule/default-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -132,13 +132,13 @@ Providing the `minDate` and `maxDate` property with some date values, allows the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs26/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs26/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs26/app/main.ts %}
+{% include code-snippet/schedule/default-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

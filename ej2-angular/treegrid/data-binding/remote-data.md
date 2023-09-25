@@ -31,13 +31,13 @@ Similarly, if the user navigates to a new page, the root nodes of that specific 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/data-binding-cs4/app/app.component.ts %}
+{% include code-snippet/treegrid/data-binding-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/data-binding-cs4/app/app.module.ts %}
+{% include code-snippet/treegrid/data-binding-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/data-binding-cs4/app/main.ts %}
+{% include code-snippet/treegrid/data-binding-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -167,13 +167,13 @@ On remote data binding, all treegrid actions such as paging, loading child on-de
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/data-binding-cs5/app/app.component.ts %}
+{% include code-snippet/treegrid/data-binding-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/data-binding-cs5/app/app.module.ts %}
+{% include code-snippet/treegrid/data-binding-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/data-binding-cs5/app/main.ts %}
+{% include code-snippet/treegrid/data-binding-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -185,13 +185,13 @@ You can create your own adaptor by extending the built-in adaptors. The followin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/data-binding-cs6/app/app.component.ts %}
+{% include code-snippet/treegrid/data-binding-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/data-binding-cs6/app/app.module.ts %}
+{% include code-snippet/treegrid/data-binding-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/data-binding-cs6/app/main.ts %}
+{% include code-snippet/treegrid/data-binding-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -203,13 +203,13 @@ To add a custom parameter to the data request, use the `addParams` method of `Qu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/data-binding-cs7/app/app.component.ts %}
+{% include code-snippet/treegrid/data-binding-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/data-binding-cs7/app/app.module.ts %}
+{% include code-snippet/treegrid/data-binding-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/data-binding-cs7/app/main.ts %}
+{% include code-snippet/treegrid/data-binding-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -223,13 +223,13 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/data-binding-cs8/app/app.component.ts %}
+{% include code-snippet/treegrid/data-binding-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/data-binding-cs8/app/app.module.ts %}
+{% include code-snippet/treegrid/data-binding-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/data-binding-cs8/app/main.ts %}
+{% include code-snippet/treegrid/data-binding-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

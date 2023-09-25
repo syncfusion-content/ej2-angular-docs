@@ -20,13 +20,13 @@ Excel Export provides an option to export hidden columns of TreeGrid by defining
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/excel-export-cs4/app/app.component.ts %}
+{% include code-snippet/treegrid/excel-export-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-export-cs4/app/app.module.ts %}
+{% include code-snippet/treegrid/excel-export-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/excel-export-cs4/app/main.ts %}
+{% include code-snippet/treegrid/excel-export-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -44,13 +44,13 @@ In the below example, we have `Duration` as a hidden column in the treegrid. Whi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/excel-export-cs5/app/app.component.ts %}
+{% include code-snippet/treegrid/excel-export-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-export-cs5/app/app.module.ts %}
+{% include code-snippet/treegrid/excel-export-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/excel-export-cs5/app/main.ts %}
+{% include code-snippet/treegrid/excel-export-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ You can assign the file name for the exported document by defining `fileName` pr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/excel-export-cs6/app/app.component.ts %}
+{% include code-snippet/treegrid/excel-export-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-export-cs6/app/app.module.ts %}
+{% include code-snippet/treegrid/excel-export-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/excel-export-cs6/app/main.ts %}
+{% include code-snippet/treegrid/excel-export-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

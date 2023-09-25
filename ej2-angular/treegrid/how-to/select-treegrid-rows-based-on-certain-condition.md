@@ -16,13 +16,13 @@ In the below demo, we have selected the Tree Grid rows only when *Duration* colu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/refresh-cs16/app/app.component.ts %}
+{% include code-snippet/treegrid/refresh-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/refresh-cs16/app/app.module.ts %}
+{% include code-snippet/treegrid/refresh-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/refresh-cs16/app/main.ts %}
+{% include code-snippet/treegrid/refresh-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

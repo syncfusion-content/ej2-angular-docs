@@ -18,13 +18,13 @@ In the below sample, We have created the `FormGroup` with `FormControls` for eac
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-dlg-react-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-dlg-react-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-dlg-react-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-dlg-react-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-dlg-react-cs1/app/main.ts %}
+{% include code-snippet/treegrid/edit-dlg-react-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -44,13 +44,13 @@ In the following sample, treegrid enabled with dialog template editing.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-dlg-temp-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-dlg-temp-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-dlg-temp-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-dlg-temp-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-dlg-temp-cs1/app/main.ts %}
+{% include code-snippet/treegrid/edit-dlg-temp-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

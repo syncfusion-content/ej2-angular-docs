@@ -18,13 +18,13 @@ By default, the header bar holds the date and view navigation options, through w
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/header-bar-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/header-bar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/header-bar-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/header-bar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/header-bar-cs1/app/main.ts %}
+{% include code-snippet/schedule/header-bar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ Apart from the default date navigation and view options available on the header 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/header-bar-cs2/app/app.component.ts %}
+{% include code-snippet/schedule/header-bar-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/header-bar-cs2/app/app.module.ts %}
+{% include code-snippet/schedule/header-bar-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/header-bar-cs2/app/main.ts %}
+{% include code-snippet/schedule/header-bar-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ By default, the header bar holds the view navigation options, through which the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs38/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs38/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs38/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs38/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs38/app/main.ts %}
+{% include code-snippet/schedule/default-cs38/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -82,13 +82,13 @@ The `dateHeaderTemplate` option is used to customize the date header cells of da
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/header-bar-cs3/app/app.component.ts %}
+{% include code-snippet/schedule/header-bar-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/header-bar-cs3/app/app.module.ts %}
+{% include code-snippet/schedule/header-bar-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/header-bar-cs3/app/main.ts %}
+{% include code-snippet/schedule/header-bar-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -102,13 +102,13 @@ In month view, the date header template is not applicable and therefore the same
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/header-bar-cs4/app/app.component.ts %}
+{% include code-snippet/schedule/header-bar-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/header-bar-cs4/app/app.module.ts %}
+{% include code-snippet/schedule/header-bar-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/header-bar-cs4/app/main.ts %}
+{% include code-snippet/schedule/header-bar-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -122,13 +122,13 @@ The [`dateRangeTemplate`](../api/schedule/#daterangetemplate) property includes 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/header-bar-cs5/app/app.component.ts %}
+{% include code-snippet/schedule/header-bar-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/header-bar-cs5/app/app.module.ts %}
+{% include code-snippet/schedule/header-bar-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/header-bar-cs5/app/main.ts %}
+{% include code-snippet/schedule/header-bar-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -142,13 +142,13 @@ It is possible to customize the header indent cells using the `headerIndentTempl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/header-indent-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/header-indent-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/header-indent-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/header-indent-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/header-indent-cs1/app/main.ts %}
+{% include code-snippet/schedule/header-indent-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

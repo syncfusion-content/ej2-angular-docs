@@ -16,13 +16,13 @@ To enable Row edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/ang
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs25/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs25/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs25/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs25/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs25/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ In the following demo, the **price** column value is updated based on the **unit
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs26/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs26/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs26/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ In the following demo, the CRUD operation is prevented based on the **priority**
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs27/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs27/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs27/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs27/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs27/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs27/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -88,13 +88,13 @@ The Tree Grid methods can be used to perform CRUD operations programmatically. T
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs28/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs28/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs28/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs28/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs28/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs28/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -109,13 +109,13 @@ The delete confirm dialog can be shown when deleting a record by defining the [s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs29/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs29/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs29/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs29/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs29/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs29/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -129,13 +129,13 @@ The [recordDoubleClick](https://ej2.syncfusion.com/angular/documentation/api/tre
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs30/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs30/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs30/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs30/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs30/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

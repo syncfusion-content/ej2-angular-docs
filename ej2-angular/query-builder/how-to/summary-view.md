@@ -14,13 +14,13 @@ Summary view allows you to show or hide the filtered query. By default, the valu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/query-builder/default-cs11/app/app.component.ts %}
+{% include code-snippet/query-builder/default-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/default-cs11/app/app.module.ts %}
+{% include code-snippet/query-builder/default-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/query-builder/default-cs11/app/main.ts %}
+{% include code-snippet/query-builder/default-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

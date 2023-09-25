@@ -18,13 +18,13 @@ To use Infinite scrolling, set `enableInfiniteScrolling` property as true and in
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/infinite-scroll-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/infinite-scroll-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/infinite-scroll-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/infinite-scroll-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/infinite-scroll-cs1/app/main.ts %}
+{% include code-snippet/treegrid/infinite-scroll-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ In the below demo, we have changed this property value to load five page records
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/infinite-scroll-cs2/app/app.component.ts %}
+{% include code-snippet/treegrid/infinite-scroll-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/infinite-scroll-cs2/app/app.module.ts %}
+{% include code-snippet/treegrid/infinite-scroll-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/infinite-scroll-cs2/app/main.ts %}
+{% include code-snippet/treegrid/infinite-scroll-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/infinite-scroll-cs3/app/app.component.ts %}
+{% include code-snippet/treegrid/infinite-scroll-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/infinite-scroll-cs3/app/app.module.ts %}
+{% include code-snippet/treegrid/infinite-scroll-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/infinite-scroll-cs3/app/main.ts %}
+{% include code-snippet/treegrid/infinite-scroll-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

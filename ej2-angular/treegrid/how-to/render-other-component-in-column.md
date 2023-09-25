@@ -18,13 +18,13 @@ In the following sample, the DropDownList is rendered in the **Priority** column
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/refresh-cs13/app/app.component.ts %}
+{% include code-snippet/treegrid/refresh-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/refresh-cs13/app/app.module.ts %}
+{% include code-snippet/treegrid/refresh-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/refresh-cs13/app/main.ts %}
+{% include code-snippet/treegrid/refresh-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -22,13 +22,13 @@ You can also use the [`enableToolbarItems`](https://ej2.syncfusion.com/angular/d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs39/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs39/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs39/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs39/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs39/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs39/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ Add the toolbar component at the bottom of the tree grid using the [created](htt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs40/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs40/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs40/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs40/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs40/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs40/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

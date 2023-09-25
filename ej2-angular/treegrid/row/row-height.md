@@ -16,13 +16,13 @@ In the below example, the `rowHeight` is set as '60px'.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/row-cs6/app/app.component.ts %}
+{% include code-snippet/treegrid/row-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs6/app/app.module.ts %}
+{% include code-snippet/treegrid/row-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/row-cs6/app/main.ts %}
+{% include code-snippet/treegrid/row-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -37,13 +37,13 @@ In the below example, the row height for the row with Task ID as '3' is set as '
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/row-cs7/app/app.component.ts %}
+{% include code-snippet/treegrid/row-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs7/app/app.module.ts %}
+{% include code-snippet/treegrid/row-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/row-cs7/app/main.ts %}
+{% include code-snippet/treegrid/row-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

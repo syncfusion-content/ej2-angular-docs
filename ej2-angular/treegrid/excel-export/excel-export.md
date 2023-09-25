@@ -20,13 +20,13 @@ You can check this video to learn about how to perform Exporting and its customi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/excel-export-cs7/app/app.component.ts %}
+{% include code-snippet/treegrid/excel-export-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-export-cs7/app/app.module.ts %}
+{% include code-snippet/treegrid/excel-export-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/excel-export-cs7/app/main.ts %}
+{% include code-snippet/treegrid/excel-export-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ You can persist the collapsed state in the exported document by defining `isColl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/excel-export-cs8/app/app.component.ts %}
+{% include code-snippet/treegrid/excel-export-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-export-cs8/app/app.module.ts %}
+{% include code-snippet/treegrid/excel-export-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/excel-export-cs8/app/main.ts %}
+{% include code-snippet/treegrid/excel-export-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ The excel export provides an option to define datasource dynamically before expo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/excel-export-cs9/app/app.component.ts %}
+{% include code-snippet/treegrid/excel-export-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-export-cs9/app/app.module.ts %}
+{% include code-snippet/treegrid/excel-export-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/excel-export-cs9/app/main.ts %}
+{% include code-snippet/treegrid/excel-export-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
