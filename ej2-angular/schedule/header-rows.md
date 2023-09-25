@@ -28,13 +28,13 @@ The following example shows the Scheduler displaying all the available header ro
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs39/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs39/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs39/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs39/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs39/app/main.ts %}
+{% include code-snippet/schedule/default-cs39/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -48,13 +48,13 @@ To display the timeline Scheduler simply with year and month names alone, define
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs40/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs40/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs40/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs40/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs40/app/main.ts %}
+{% include code-snippet/schedule/default-cs40/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -68,13 +68,13 @@ The week number can be displayed in a separate header row of the timeline Schedu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs41/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs41/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs41/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs41/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs41/app/main.ts %}
+{% include code-snippet/schedule/default-cs41/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -88,13 +88,13 @@ It is possible to display a complete year in a timeline view by setting `interva
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs42/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs42/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs42/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs42/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs42/app/main.ts %}
+{% include code-snippet/schedule/default-cs42/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -108,13 +108,13 @@ You can customize the text of the header rows and display any images or formatte
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs43/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs43/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs43/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs43/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs43/app/main.ts %}
+{% include code-snippet/schedule/default-cs43/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

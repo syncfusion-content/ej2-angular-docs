@@ -24,13 +24,13 @@ The `interval` and `slotCount` properties can be used together on the Scheduler 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs63/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs63/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs63/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs63/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs63/app/main.ts %}
+{% include code-snippet/schedule/default-cs63/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -47,16 +47,16 @@ The `timeScale` property also provides template option to allow customization of
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/timescale-cs1/app/app.component.html %}
+{% include code-snippet/schedule/timescale-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/timescale-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/timescale-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/timescale-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/timescale-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/timescale-cs1/app/main.ts %}
+{% include code-snippet/schedule/timescale-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ The grid lines which indicates the exact time duration can be enabled or disable
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs64/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs64/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs64/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs64/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs64/app/main.ts %}
+{% include code-snippet/schedule/default-cs64/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -90,13 +90,13 @@ By default, Scheduler indicates current date with a highlighted date header on a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs65/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs65/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs65/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs65/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs65/app/main.ts %}
+{% include code-snippet/schedule/default-cs65/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

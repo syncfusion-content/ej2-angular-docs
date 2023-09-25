@@ -160,3 +160,7 @@ private void PdfHeaderQueryCellInfo(object pdf)
     name.Headers[0].Height = size.Width * 2;
 }
 ```
+
+## Limitations
+
+* The export feature for detail templates is not supported in server-side exporting.

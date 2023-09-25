@@ -14,13 +14,13 @@ To achieve better performance in the Scheduler when loading a large number of re
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs88/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs88/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs88/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs88/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs88/app/main.ts %}
+{% include code-snippet/schedule/default-cs88/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ To enable this feature, you have to set the [`enableLazyLoading`](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs98/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs98/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs98/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs98/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs98/app/main.ts %}
+{% include code-snippet/schedule/default-cs98/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

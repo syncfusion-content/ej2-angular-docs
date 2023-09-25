@@ -46,7 +46,7 @@ The Document Editor component requires server-side interactions for the followin
 
 >Note: If you don't require the above functionalities then you can deploy as pure client-side component without any server-side interactions.
 
-To know about server-side dependencies, please refer this [page](../document-editor/web-services).
+To know about server-side dependencies, please refer this [page](../document-editor/web-services-overview).
 
 ## Setup your development environment
 

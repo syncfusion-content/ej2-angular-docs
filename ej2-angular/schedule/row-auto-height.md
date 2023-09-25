@@ -26,13 +26,13 @@ By default, the rows of the calendar Month view can hold only the limited appoin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs59/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs59/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs59/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs59/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs59/app/main.ts %}
+{% include code-snippet/schedule/default-cs59/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -44,13 +44,13 @@ When the feature `RowAutoHeight` is enabled in Timeline views, the row height ge
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs60/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs60/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs60/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs60/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs60/app/main.ts %}
+{% include code-snippet/schedule/default-cs60/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -64,13 +64,13 @@ The following example shows how the auto row adjustment feature works on timelin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs61/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs61/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs61/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs61/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs61/app/main.ts %}
+{% include code-snippet/schedule/default-cs61/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -84,13 +84,13 @@ By default, with the feature `rowAutoHeight`, there will be a space in the botto
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/ignore-whitespace-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/ignore-whitespace-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/ignore-whitespace-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/ignore-whitespace-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/ignore-whitespace-cs1/app/main.ts %}
+{% include code-snippet/schedule/ignore-whitespace-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

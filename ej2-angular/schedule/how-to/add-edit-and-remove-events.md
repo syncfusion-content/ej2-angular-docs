@@ -16,13 +16,13 @@ CRUD actions can be manually performed on appointments using `addEvent`, `saveEv
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs44/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs44/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs44/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs44/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs44/app/main.ts %}
+{% include code-snippet/schedule/default-cs44/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -32,13 +32,13 @@ CRUD actions can be manually performed on appointments using `addEvent`, `saveEv
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs45/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs45/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs45/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs45/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs45/app/main.ts %}
+{% include code-snippet/schedule/default-cs45/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
