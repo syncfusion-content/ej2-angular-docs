@@ -14,13 +14,13 @@ We can prevent navigation while clicking on the date header by simply removing `
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs50/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs50/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs50/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs50/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs50/app/main.ts %}
+{% include code-snippet/schedule/default-cs50/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

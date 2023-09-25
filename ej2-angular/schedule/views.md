@@ -43,13 +43,13 @@ In the following example, the Scheduler displays 4 views namely, Week, Month, Ti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs71/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs71/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs71/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs71/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs71/app/main.ts %}
+{% include code-snippet/schedule/default-cs71/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -59,13 +59,13 @@ To configure Scheduler with simply 2 views, but with different configurations on
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs72/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs72/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs72/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs72/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs72/app/main.ts %}
+{% include code-snippet/schedule/default-cs72/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -103,13 +103,13 @@ Usually a day view displays a single day with all its related appointments. It i
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs73/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs73/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs73/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs73/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs73/app/main.ts %}
+{% include code-snippet/schedule/default-cs73/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -125,13 +125,13 @@ The Week view displays a count of 7 days (from Sunday to Saturday) with all its 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs74/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs74/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs74/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs74/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs74/app/main.ts %}
+{% include code-snippet/schedule/default-cs74/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -149,13 +149,13 @@ The following code example depicts how to change the working days only on the `W
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs75/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs75/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs75/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs75/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs75/app/main.ts %}
+{% include code-snippet/schedule/default-cs75/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -175,13 +175,13 @@ You can also have the `+ more` text indicator on each day cell of a Month view, 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs76/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs76/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs76/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs76/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs76/app/main.ts %}
+{% include code-snippet/schedule/default-cs76/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -197,13 +197,13 @@ Year view is available in both the `Horizontal` and `Vertical` orientations. You
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs77/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs77/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs77/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs77/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs77/app/main.ts %}
+{% include code-snippet/schedule/default-cs77/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -219,13 +219,13 @@ The following code example depicts how to customize the display of events within
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs78/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs78/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs78/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs78/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs78/app/main.ts %}
+{% include code-snippet/schedule/default-cs78/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -243,13 +243,13 @@ The following code example shows how to hide the weekend days on `MonthAgenda` v
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs79/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs79/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs79/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs79/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs79/app/main.ts %}
+{% include code-snippet/schedule/default-cs79/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -267,13 +267,13 @@ To make use of the timeline views (Timeline Day, Timeline Week and Timeline Work
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs80/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs80/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs80/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs80/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs80/app/main.ts %}
+{% include code-snippet/schedule/default-cs80/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -283,13 +283,13 @@ Similar to the Week view, the timeline week view shows 7 days with its associate
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs81/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs81/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs81/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs81/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs81/app/main.ts %}
+{% include code-snippet/schedule/default-cs81/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -301,13 +301,13 @@ The following code example depicts how to display the timeline work week view on
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs82/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs82/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs82/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs82/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs82/app/main.ts %}
+{% include code-snippet/schedule/default-cs82/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -321,13 +321,13 @@ A Timeline Month view displays the current month days along with its appointment
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs83/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs83/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs83/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs83/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs83/app/main.ts %}
+{% include code-snippet/schedule/default-cs83/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -345,13 +345,13 @@ To make use of the timeline Year view on Scheduler, import and inject `TimelineY
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs84/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs84/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs84/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs84/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs84/app/main.ts %}
+{% include code-snippet/schedule/default-cs84/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -365,13 +365,13 @@ The following code example depicts how to group the multiple resources on Timeli
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs85/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs85/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs85/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs85/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs85/app/main.ts %}
+{% include code-snippet/schedule/default-cs85/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -383,13 +383,13 @@ Timeline Year view supports Auto row height. When the feature `rowAutoHeight` is
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs86/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs86/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs86/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs86/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs86/app/main.ts %}
+{% include code-snippet/schedule/default-cs86/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -403,13 +403,13 @@ You can provide the alternative display name for such customized views on the Sc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs87/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs87/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs87/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs87/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs87/app/main.ts %}
+{% include code-snippet/schedule/default-cs87/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

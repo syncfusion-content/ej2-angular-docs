@@ -31,13 +31,13 @@ The following example depicts how to define a normal event on the Scheduler, wit
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs1/app/main.ts %}
+{% include code-snippet/schedule/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -75,13 +75,13 @@ When you have larger number of appointments in all-day view, you can show all al
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs2/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs2/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs2/app/main.ts %}
+{% include code-snippet/schedule/default-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -93,13 +93,13 @@ By default, Scheduler will renders the spanned events (appointment with more tha
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs3/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs3/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs3/app/main.ts %}
+{% include code-snippet/schedule/default-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -115,13 +115,13 @@ The following example depicts how to create a recurring event on Scheduler with 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs4/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs4/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs4/app/main.ts %}
+{% include code-snippet/schedule/default-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -134,13 +134,13 @@ A few instance of the recurrence series can be excluded on specific dates, by ad
 For example, 22nd February 2018 can be represented as 20180222. Also, the time part being represented in UTC format needs to add "Z" after the time portion with no space. "07:30:00 UTC" is therefore represented as "073000Z".
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs5/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs5/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs5/app/main.ts %}
+{% include code-snippet/schedule/default-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -154,13 +154,13 @@ In this example, a recurring instance that displays on the date 30th Jan 2018 is
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs6/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs6/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs6/app/main.ts %}
+{% include code-snippet/schedule/default-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -174,13 +174,13 @@ In this example, a recurring instance that displays on the date 30th Jan 2018 an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs7/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs7/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs7/app/main.ts %}
+{% include code-snippet/schedule/default-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -308,13 +308,13 @@ When the fields of event instances has the default mapping name, it is not manda
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs8/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs8/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs8/app/main.ts %}
+{% include code-snippet/schedule/default-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -337,13 +337,13 @@ In following example, the Subject field in event editor will display its appropr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs9/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs9/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs9/app/main.ts %}
+{% include code-snippet/schedule/default-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -355,13 +355,13 @@ Apart from the default Scheduler fields, the user can include 'n' number of cust
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs10/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs10/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs10/app/main.ts %}
+{% include code-snippet/schedule/default-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -373,13 +373,13 @@ By default, the scheduler will render the overlapping events based on the start 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs11/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs11/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs11/app/main.ts %}
+{% include code-snippet/schedule/default-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -399,13 +399,13 @@ Learn how to drag an external item into the Angular Scheduler and the other adva
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs12/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs12/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs12/app/main.ts %}
+{% include code-snippet/schedule/default-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -421,13 +421,13 @@ We can also drag multiple events from one resource to another resource. In this 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs13/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs13/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs13/app/main.ts %}
+{% include code-snippet/schedule/default-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -439,13 +439,13 @@ By default, you can drag and drop the events within any of the applicable schedu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs14/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs14/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs14/app/main.ts %}
+{% include code-snippet/schedule/default-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -457,13 +457,13 @@ It is possible to prevent the drag action on particular target, by passing the t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs15/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs15/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs15/app/main.ts %}
+{% include code-snippet/schedule/default-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -475,13 +475,13 @@ By default, while dragging an appointment to the edges, either top or bottom of 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs16/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs16/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs16/app/main.ts %}
+{% include code-snippet/schedule/default-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -493,13 +493,13 @@ The speed of the scrolling action while dragging an appointment to the Scheduler
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs17/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs17/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs17/app/main.ts %}
+{% include code-snippet/schedule/default-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -513,13 +513,13 @@ By default, the navigation delay is set to 2000ms. The navigation delay decides 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs18/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs18/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs18/app/main.ts %}
+{% include code-snippet/schedule/default-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -531,13 +531,13 @@ By default, while dragging an appointment, it moves at an interval of 30 minutes
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs19/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs19/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs19/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs19/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs19/app/main.ts %}
+{% include code-snippet/schedule/default-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -551,16 +551,16 @@ In this example, we have used the tree view control as an external source and th
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/external-drag-drop-cs1/app/app.component.html %}
+{% include code-snippet/schedule/external-drag-drop-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/external-drag-drop-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/external-drag-drop-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/external-drag-drop-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/external-drag-drop-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/external-drag-drop-cs1/app/main.ts %}
+{% include code-snippet/schedule/external-drag-drop-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -572,13 +572,13 @@ There are scenarios where you want to open the editor filled with data on newly 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs1/app/main.ts %}
+{% include code-snippet/schedule/event-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -607,13 +607,13 @@ While editing the occurrence from the recurrence series, it is only possible to 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs20/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs20/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs20/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs20/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs20/app/main.ts %}
+{% include code-snippet/schedule/default-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -625,13 +625,13 @@ Another way of rescheduling an appointment can be done by resizing it through ei
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs2/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs2/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs2/app/main.ts %}
+{% include code-snippet/schedule/event-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -643,13 +643,13 @@ By default, resizing of events is allowed on all Scheduler views except Agenda a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs3/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs3/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs3/app/main.ts %}
+{% include code-snippet/schedule/event-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -661,13 +661,13 @@ By default, while resizing an appointment, when its handler reaches the extreme 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs4/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs4/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs4/app/main.ts %}
+{% include code-snippet/schedule/event-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -679,13 +679,13 @@ The speed of the scrolling action while resizing an appointment to the Scheduler
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs5/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs5/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs5/app/main.ts %}
+{% include code-snippet/schedule/event-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -697,13 +697,13 @@ By default, while resizing an appointment, it extends or shrinks at an interval 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs6/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs6/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs6/app/main.ts %}
+{% include code-snippet/schedule/event-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -727,16 +727,16 @@ Learn how easily you can customize the basic look and feel of Angular Scheduler 
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/event-cs7/app/app.component.html %}
+{% include code-snippet/schedule/event-cs7/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs7/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs7/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs7/app/main.ts %}
+{% include code-snippet/schedule/event-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -750,13 +750,13 @@ The `eventRendered` event triggers before the appointment renders on the Schedul
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs8/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs8/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs8/app/main.ts %}
+{% include code-snippet/schedule/event-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -768,13 +768,13 @@ The customization of events can also be achieved using `cssClass` property of th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs9/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs9/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs9/app/main.ts %}
+{% include code-snippet/schedule/event-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -786,13 +786,13 @@ It is possible to set minimal height for appointments on Scheduler using `eventR
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs10/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs10/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs10/app/main.ts %}
+{% include code-snippet/schedule/event-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -804,13 +804,13 @@ It is possible to block a set of dates or a particular time ranges on the Schedu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs11/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs11/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs11/app/main.ts %}
+{% include code-snippet/schedule/event-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -822,13 +822,13 @@ Block events can also be defined to repeat on several days as shown in the follo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs12/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs12/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs12/app/main.ts %}
+{% include code-snippet/schedule/event-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -842,13 +842,13 @@ An interaction with the appointments of Scheduler can be enabled/disabled using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs13/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs13/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs13/app/main.ts %}
+{% include code-snippet/schedule/event-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -860,13 +860,13 @@ There are scenarios where you need to restrict the CRUD action on specific appoi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs14/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs14/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs14/app/main.ts %}
+{% include code-snippet/schedule/event-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -880,13 +880,13 @@ You can restrict the users to create and update more than one appointment on spe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs15/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs15/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs15/app/main.ts %}
+{% include code-snippet/schedule/event-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -898,13 +898,13 @@ To differentiate the appearance of the appointments based on specific criteria s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs16/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs16/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs16/app/main.ts %}
+{% include code-snippet/schedule/event-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -918,13 +918,13 @@ We can show more indicator if more than one appointment is available in a same c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs17/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs17/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs17/app/main.ts %}
+{% include code-snippet/schedule/event-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -942,13 +942,13 @@ The tooltip can be displayed for appointments by setting `true` to the `enableTo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-cs18/app/app.component.ts %}
+{% include code-snippet/schedule/event-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-cs18/app/app.module.ts %}
+{% include code-snippet/schedule/event-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-cs18/app/main.ts %}
+{% include code-snippet/schedule/event-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -962,16 +962,16 @@ After enabling the default tooltip, it is possible to customize the display of n
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/tooltip-cs1/app/app.component.html %}
+{% include code-snippet/schedule/tooltip-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/tooltip-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/tooltip-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/tooltip-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/tooltip-cs1/app/main.ts %}
+{% include code-snippet/schedule/tooltip-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -987,16 +987,16 @@ The appointments can be filtered by passing the predicate value to `query` optio
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/event-filter-cs1/app/app.component.html %}
+{% include code-snippet/schedule/event-filter-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-filter-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/event-filter-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-filter-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/event-filter-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-filter-cs1/app/main.ts %}
+{% include code-snippet/schedule/event-filter-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -1023,16 +1023,16 @@ In the following example, the subject of the appointment clicked has been displa
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/event-template-cs1/app/app.component.html %}
+{% include code-snippet/schedule/event-template-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-template-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/event-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-template-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/event-template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-template-cs1/app/main.ts %}
+{% include code-snippet/schedule/event-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -1044,16 +1044,16 @@ To retrieve the appointments present in the current view of the Scheduler, you c
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/event-data-bound-cs1/app/app.component.html %}
+{% include code-snippet/schedule/event-data-bound-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-data-bound-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/event-data-bound-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-data-bound-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/event-data-bound-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-data-bound-cs1/app/main.ts %}
+{% include code-snippet/schedule/event-data-bound-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -1065,16 +1065,16 @@ The entire collection of appointments rendered on the Scheduler can be accessed 
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/event-data-bound-cs2/app/app.component.html %}
+{% include code-snippet/schedule/event-data-bound-cs2/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/event-data-bound-cs2/app/app.component.ts %}
+{% include code-snippet/schedule/event-data-bound-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/event-data-bound-cs2/app/app.module.ts %}
+{% include code-snippet/schedule/event-data-bound-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/event-data-bound-cs2/app/main.ts %}
+{% include code-snippet/schedule/event-data-bound-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

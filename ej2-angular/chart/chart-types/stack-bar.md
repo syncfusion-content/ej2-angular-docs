@@ -3,7 +3,7 @@ layout: post
 title: Stacked Bar Chart in Angular Chart component | Syncfusion
 description: Learn here all about Stacked Bar Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Stacked Bar Chart
+control: Stacked bar chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -26,6 +26,24 @@ To render a stacked bar series, use series [`type`](https://ej2.syncfusion.com/a
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chart/series/bar-cs2" %}
+
+## Cylindrical stacked bar chart
+
+To render a cylindrical stacked bar chart, set the `columnFacet` property to `Cylinder` in the chart series.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/bar-cs8/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/chart/series/bar-cs8/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/bar-cs8/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/bar-cs8" %}
 
 ## Series customization
 
@@ -50,7 +68,7 @@ The following properties can be used to customize the `stacked bar` series.
 
 {% previewsample "page.domainurl/samples/chart/series/stackbar-cs" %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

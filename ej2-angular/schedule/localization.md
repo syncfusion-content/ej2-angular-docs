@@ -127,13 +127,13 @@ loadCldr(numberingSystems, gregorian, numbers, timeZoneNames);
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/localization-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/localization-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/localization-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/localization-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/localization-cs1/app/main.ts %}
+{% include code-snippet/schedule/localization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -147,13 +147,13 @@ For example, the following code example lets you to define the French translatio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/localization-cs2/app/app.component.ts %}
+{% include code-snippet/schedule/localization-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/localization-cs2/app/app.module.ts %}
+{% include code-snippet/schedule/localization-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/localization-cs2/app/main.ts %}
+{% include code-snippet/schedule/localization-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -291,13 +291,13 @@ Scheduler can be used with all valid date formats and by default it follows the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs54/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs54/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs54/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs54/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs54/app/main.ts %}
+{% include code-snippet/schedule/default-cs54/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -315,13 +315,13 @@ The following example demonstrates the Scheduler component in 24 hours format.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs55/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs55/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs55/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs55/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs55/app/main.ts %}
+{% include code-snippet/schedule/default-cs55/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -352,13 +352,13 @@ The Scheduler layout and its behavior can be changed as per the common RTL (Righ
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs56/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs56/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs56/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs56/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs56/app/main.ts %}
+{% include code-snippet/schedule/default-cs56/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

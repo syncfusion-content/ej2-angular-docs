@@ -31,13 +31,13 @@ The following example code depicts how to set the Scheduler to display Monday, W
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs89/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs89/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs89/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs89/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs89/app/main.ts %}
+{% include code-snippet/schedule/default-cs89/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -53,13 +53,13 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs90/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs90/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs90/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs90/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs90/app/main.ts %}
+{% include code-snippet/schedule/default-cs90/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -75,13 +75,13 @@ It is possible to show the week number count of a week in the header bar of the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs91/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs91/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs91/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs91/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs91/app/main.ts %}
+{% include code-snippet/schedule/default-cs91/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -103,13 +103,13 @@ For more details refer to [this link](https://docs.microsoft.com/en-us/dotnet/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs92/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs92/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs92/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs92/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs92/app/main.ts %}
+{% include code-snippet/schedule/default-cs92/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -127,13 +127,13 @@ Working hours indicates the work hour limit within the Scheduler, which is visua
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs93/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs93/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs93/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs93/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs93/app/main.ts %}
+{% include code-snippet/schedule/default-cs93/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -149,13 +149,13 @@ The following code example displays the Scheduler starting from the time range 7
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs94/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs94/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs94/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs94/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs94/app/main.ts %}
+{% include code-snippet/schedule/default-cs94/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -171,13 +171,13 @@ By default, Scheduler defaults to `Sunday` as its first day of a week. To change
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs95/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs95/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs95/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs95/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs95/app/main.ts %}
+{% include code-snippet/schedule/default-cs95/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -191,16 +191,16 @@ You can manually scroll to a specific time on Scheduler by making use of the `sc
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/schedule/scroll-to-cs1/app/app.component.html %}
+{% include code-snippet/schedule/scroll-to-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/scroll-to-cs1/app/app.component.ts %}
+{% include code-snippet/schedule/scroll-to-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/scroll-to-cs1/app/app.module.ts %}
+{% include code-snippet/schedule/scroll-to-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/scroll-to-cs1/app/main.ts %}
+{% include code-snippet/schedule/scroll-to-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -212,13 +212,13 @@ There are scenarios where you may need to load the Scheduler displaying the syst
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/default-cs96/app/app.component.ts %}
+{% include code-snippet/schedule/default-cs96/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs96/app/app.module.ts %}
+{% include code-snippet/schedule/default-cs96/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/default-cs96/app/main.ts %}
+{% include code-snippet/schedule/default-cs96/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
