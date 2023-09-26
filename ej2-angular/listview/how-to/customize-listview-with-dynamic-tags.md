@@ -70,13 +70,13 @@ You can customize the ListView items using the [`template`](https://ej2.syncfusi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/dynamic-tag-cs2/app/app.component.ts %}
+{% include code-snippet/listview/dynamic-tag-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/dynamic-tag-cs2/app/app.module.ts %}
+{% include code-snippet/listview/dynamic-tag-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/dynamic-tag-cs2/app/main.ts %}
+{% include code-snippet/listview/dynamic-tag-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

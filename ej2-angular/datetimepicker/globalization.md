@@ -75,13 +75,13 @@ The following example demonstrates the DateTimePicker in `German` culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/datetimepicker/localization-cs1/app/app.component.ts %}
+{% include code-snippet/datetimepicker/localization-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datetimepicker/localization-cs1/app/app.module.ts %}
+{% include code-snippet/datetimepicker/localization-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/datetimepicker/localization-cs1/app/main.ts %}
+{% include code-snippet/datetimepicker/localization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -95,13 +95,13 @@ The following code example initialize the DateTimePicker component in `Arabic` c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/datetimepicker/rtl-cs1/app/app.component.ts %}
+{% include code-snippet/datetimepicker/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datetimepicker/rtl-cs1/app/app.module.ts %}
+{% include code-snippet/datetimepicker/rtl-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/datetimepicker/rtl-cs1/app/main.ts %}
+{% include code-snippet/datetimepicker/rtl-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

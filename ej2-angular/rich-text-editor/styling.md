@@ -40,13 +40,13 @@ The following sample demonstrates the option to add the font name and font size 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs24/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs24/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs24/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs24/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs24/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -59,13 +59,13 @@ If you want to add additional font names and font sizes to font drop-down, pass 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs25/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs25/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs25/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs25/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs25/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -81,13 +81,13 @@ The `FontColor` and the `BackgroundColor` property has two mode of `Picker` and 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs26/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs26/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs26/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

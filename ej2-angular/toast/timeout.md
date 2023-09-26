@@ -20,13 +20,13 @@ Toast can be expired based on [`timeOut`](https://ej2.syncfusion.com/angular/doc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/toast/toast-cs20/app/app.component.ts %}
+{% include code-snippet/toast/toast-cs20/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs20/app/app.module.ts %}
+{% include code-snippet/toast/toast-cs20/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/toast/toast-cs20/app/main.ts %}
+{% include code-snippet/toast/toast-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ We can prevent auto hiding in a toast as visible like static. For this, we need 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/toast/toast-cs21/app/app.component.ts %}
+{% include code-snippet/toast/toast-cs21/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs21/app/app.module.ts %}
+{% include code-snippet/toast/toast-cs21/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/toast/toast-cs21/app/main.ts %}
+{% include code-snippet/toast/toast-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -188,13 +188,13 @@ The following samples shows the basic file manager component in browser.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/getting-started-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/getting-started-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/getting-started-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/getting-started-cs1/app/main.ts %}
+{% include code-snippet/file-manager/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -248,13 +248,13 @@ To perform the image preview support in the File Manager component, need to init
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/getting-started-cs2/app/app.component.ts %}
+{% include code-snippet/file-manager/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/getting-started-cs2/app/app.module.ts %}
+{% include code-snippet/file-manager/getting-started-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/getting-started-cs2/app/main.ts %}
+{% include code-snippet/file-manager/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -288,13 +288,13 @@ export class AppModule { }
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/overview-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/overview-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/overview-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/overview-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/overview-cs1/app/main.ts %}
+{% include code-snippet/file-manager/overview-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -309,13 +309,13 @@ When the File Manager is initially rendered, [created](https://ej2.syncfusion.co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/view-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/view-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/view-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/view-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/view-cs1/app/main.ts %}
+{% include code-snippet/file-manager/view-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -332,13 +332,13 @@ For every operation in File Manager, ajax request will be sent to the server whi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/persistence-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/persistence-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/persistence-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/persistence-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/persistence-cs1/app/main.ts %}
+{% include code-snippet/file-manager/persistence-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -352,13 +352,13 @@ It is possible to render the File Manager in right-to-left direction by setting 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/rtl-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/rtl-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/rtl-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/rtl-cs1/app/main.ts %}
+{% include code-snippet/file-manager/rtl-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

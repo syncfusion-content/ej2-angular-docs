@@ -24,16 +24,16 @@ The following example  demonstrates template driven forms with TimePicker compon
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/timepicker/template-driven-cs1/app/app.component.ts %}
+{% include code-snippet/timepicker/template-driven-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/template-driven-cs1/app/app.module.ts %}
+{% include code-snippet/timepicker/template-driven-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/timepicker/template-driven-cs1/app/main.ts %}
+{% include code-snippet/timepicker/template-driven-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="template.html" %}
-{% include code-snippet/timepicker/template-driven-cs1/app/template.html %}
+{% include code-snippet/timepicker/template-driven-cs1/src/template.html %}
 {% endhighlight %}
 {% endtabs %}
   

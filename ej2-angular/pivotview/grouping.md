@@ -27,13 +27,13 @@ To use calculated field option, you need to inject the `GroupingService` module 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs147/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs147/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs147/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs147/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs147/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs147/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -45,13 +45,13 @@ Number grouping allows users to organize data, which is in number format into di
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs148/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs148/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs148/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs148/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs148/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs148/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,13 +86,13 @@ Number grouping can also be configured using the [`groupSettings`](https://ej2.s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs149/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs149/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs149/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs149/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs149/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs149/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -112,13 +112,13 @@ Date grouping allows users to organize data, which is in date format into differ
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs150/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs150/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs150/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs150/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs150/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs150/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -156,13 +156,13 @@ Date grouping can also be configured using the [`groupSettings`](https://ej2.syn
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs151/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs151/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs151/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs151/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs151/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs151/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -184,13 +184,13 @@ Custom grouping can group any data type, such as date, time, number and string, 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs152/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs152/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs152/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs152/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs152/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs152/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -234,13 +234,13 @@ The available custom group properties in [`customGroups`](https://ej2.syncfusion
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs153/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs153/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs153/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs153/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs153/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs153/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -16,13 +16,13 @@ In the below demo, we customize and show the command buttons only for the parent
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/refresh-cs15/app/app.component.ts %}
+{% include code-snippet/treegrid/refresh-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/refresh-cs15/app/app.module.ts %}
+{% include code-snippet/treegrid/refresh-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/refresh-cs15/app/main.ts %}
+{% include code-snippet/treegrid/refresh-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

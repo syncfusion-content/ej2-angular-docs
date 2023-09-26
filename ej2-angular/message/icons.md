@@ -20,13 +20,13 @@ The following example demonstrates the different severity messages without the s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/message/severity-cs1/app/app.component.ts %}
+{% include code-snippet/message/severity-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/message/severity-cs1/app/app.module.ts %}
+{% include code-snippet/message/severity-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/message/severity-cs1/app/main.ts %}
+{% include code-snippet/message/severity-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ The following example demonstrates how the default message is rendered with a cu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/message/custom-icon-cs1/app/app.component.ts %}
+{% include code-snippet/message/custom-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/message/custom-icon-cs1/app/app.module.ts %}
+{% include code-snippet/message/custom-icon-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/message/custom-icon-cs1/app/main.ts %}
+{% include code-snippet/message/custom-icon-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ In the following example, the messages are rendered with the close icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/message/close-icon-cs1/app/app.component.ts %}
+{% include code-snippet/message/close-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/message/close-icon-cs1/app/app.module.ts %}
+{% include code-snippet/message/close-icon-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/message/close-icon-cs1/app/main.ts %}
+{% include code-snippet/message/close-icon-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

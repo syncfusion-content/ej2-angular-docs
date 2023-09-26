@@ -18,13 +18,13 @@ The below example demonstrates the Calendar to select a date within a range from
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/datepicker/getting-started-cs4/app/app.component.ts %}
+{% include code-snippet/datepicker/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/getting-started-cs4/app/app.module.ts %}
+{% include code-snippet/datepicker/getting-started-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/datepicker/getting-started-cs4/app/main.ts %}
+{% include code-snippet/datepicker/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

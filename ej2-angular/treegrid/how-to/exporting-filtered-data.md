@@ -16,13 +16,13 @@ In the below Pdf exporting demo, We have gotten the filtered data from the filte
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/refresh-cs8/app/app.component.ts %}
+{% include code-snippet/treegrid/refresh-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/refresh-cs8/app/app.module.ts %}
+{% include code-snippet/treegrid/refresh-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/refresh-cs8/app/main.ts %}
+{% include code-snippet/treegrid/refresh-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

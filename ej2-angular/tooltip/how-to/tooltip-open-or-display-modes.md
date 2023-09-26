@@ -41,13 +41,13 @@ Tooltip is not triggered by any default action. So, bind your own events and use
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/open-mode-cs2/app/app.component.ts %}
+{% include code-snippet/tooltip/open-mode-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/open-mode-cs2/app/app.module.ts %}
+{% include code-snippet/tooltip/open-mode-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/open-mode-cs2/app/main.ts %}
+{% include code-snippet/tooltip/open-mode-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

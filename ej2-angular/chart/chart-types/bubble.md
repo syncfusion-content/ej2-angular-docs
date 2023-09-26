@@ -16,13 +16,13 @@ To render a bubble series, use series [`type`](https://ej2.syncfusion.com/angula
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/bubble-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/bubble-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/bubble-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/bubble-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/bubble-cs1/app/main.ts %}
+{% include code-snippet/chart/series/bubble-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ To render a bubble series, use series [`type`](https://ej2.syncfusion.com/angula
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/bubble-cs2/app/app.component.ts %}
+{% include code-snippet/chart/series/bubble-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/bubble-cs2/app/app.module.ts %}
+{% include code-snippet/chart/series/bubble-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/bubble-cs2/app/main.ts %}
+{% include code-snippet/chart/series/bubble-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -55,13 +55,13 @@ The following properties can be used to customize the `bubble` series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/bubble-cs/app/app.component.ts %}
+{% include code-snippet/chart/series/bubble-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/bubble-cs/app/app.module.ts %}
+{% include code-snippet/chart/series/bubble-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/bubble-cs/app/main.ts %}
+{% include code-snippet/chart/series/bubble-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

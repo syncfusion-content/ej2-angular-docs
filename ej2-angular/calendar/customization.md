@@ -24,13 +24,13 @@ The following example demonstrates how to disable weekends of every month.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/calendar/getting-started-cs5/app/app.component.ts %}
+{% include code-snippet/calendar/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/getting-started-cs5/app/app.module.ts %}
+{% include code-snippet/calendar/getting-started-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/calendar/getting-started-cs5/app/main.ts %}
+{% include code-snippet/calendar/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,16 +60,16 @@ The following example highlights the world health date (7th April every year) an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/calendar/highlight-cs1/app/app.component.ts %}
+{% include code-snippet/calendar/highlight-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/highlight-cs1/app/app.module.ts %}
+{% include code-snippet/calendar/highlight-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="style.css" %}
-{% include code-snippet/calendar/highlight-cs1/app/style.css %}
+{% include code-snippet/calendar/highlight-cs1/src/style.css %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/calendar/highlight-cs1/app/main.ts %}
+{% include code-snippet/calendar/highlight-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -81,13 +81,13 @@ You can highlight the weekends of every month in a Calendar by using the [`rende
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/calendar/highlight-weekend-cs1/app/app.component.ts %}
+{% include code-snippet/calendar/highlight-weekend-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/highlight-weekend-cs1/app/app.module.ts %}
+{% include code-snippet/calendar/highlight-weekend-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/calendar/highlight-weekend-cs1/app/main.ts %}
+{% include code-snippet/calendar/highlight-weekend-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

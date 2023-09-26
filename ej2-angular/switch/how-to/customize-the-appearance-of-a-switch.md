@@ -18,13 +18,13 @@ Switch bar and handle can be customized as per requirement using CSS rules. Swit
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/switch/how-to-cs1/app/app.component.ts %}
+{% include code-snippet/switch/how-to-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/switch/how-to-cs1/app/app.module.ts %}
+{% include code-snippet/switch/how-to-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/switch/how-to-cs1/app/main.ts %}
+{% include code-snippet/switch/how-to-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ Switch colors can be customized as per the requirement using CSS rules. Switch b
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/switch/on-off-cs1/app/app.component.ts %}
+{% include code-snippet/switch/on-off-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/switch/on-off-cs1/app/app.module.ts %}
+{% include code-snippet/switch/on-off-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/switch/on-off-cs1/app/main.ts %}
+{% include code-snippet/switch/on-off-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -25,13 +25,13 @@ The position values of Speed Dial are as follows:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speed-dial/position-cs1/app/app.component.ts %}
+{% include code-snippet/speed-dial/position-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/position-cs1/app/app.module.ts %}
+{% include code-snippet/speed-dial/position-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/speed-dial/position-cs1/app/main.ts %}
+{% include code-snippet/speed-dial/position-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.css" %}
 {% include code-snippet/speed-dial/position-cs1/index.css %}
@@ -70,13 +70,13 @@ Below example demonstrates open/close action items on button click.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speed-dial/position-cs2/app/app.component.ts %}
+{% include code-snippet/speed-dial/position-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/position-cs2/app/app.module.ts %}
+{% include code-snippet/speed-dial/position-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/speed-dial/position-cs2/app/main.ts %}
+{% include code-snippet/speed-dial/position-cs2/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.css" %}
 {% include code-snippet/speed-dial/position-cs2/index.css %}
@@ -91,13 +91,13 @@ You can refresh the position of the Speed Dial using [`refreshPosition`](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speed-dial/position-cs3/app/app.component.ts %}
+{% include code-snippet/speed-dial/position-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/position-cs3/app/app.module.ts %}
+{% include code-snippet/speed-dial/position-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/speed-dial/position-cs3/app/main.ts %}
+{% include code-snippet/speed-dial/position-cs3/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.css" %}
 {% include code-snippet/speed-dial/position-cs3/index.css %}

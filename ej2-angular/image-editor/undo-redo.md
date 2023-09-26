@@ -26,13 +26,13 @@ In the following example, the [`undo`](https://ej2.syncfusion.com/angular/docume
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs27/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs27/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs27/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs27/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs27/app/main.ts %}
+{% include code-snippet/image-editor/default-cs27/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -36,13 +36,13 @@ The following table shows built-in toolbar options and its actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs288/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs288/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs288/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs288/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs288/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs288/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ By default, all chart types are displayed in the dropdown menu included in the t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs289/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs289/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs289/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs289/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs289/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs289/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -93,13 +93,13 @@ In addition to the existing built-in toolbar items, new toolbar item(s) may also
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs290/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs290/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs290/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs290/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs290/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs290/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -115,13 +115,13 @@ Here, the entire toolbar panel can be framed in HTML elements that are appended 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/toolbarTemplate-cs1/app/app.component.ts %}
+{% include code-snippet/pivot-grid/toolbarTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/toolbarTemplate-cs1/app/app.module.ts %}
+{% include code-snippet/pivot-grid/toolbarTemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/toolbarTemplate-cs1/app/main.ts %}
+{% include code-snippet/pivot-grid/toolbarTemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -131,13 +131,13 @@ Another option allows to frame a custom toolbar item using HTML elements and inc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/toolbarTemplate-cs2/app/app.component.ts %}
+{% include code-snippet/pivot-grid/toolbarTemplate-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/toolbarTemplate-cs2/app/app.module.ts %}
+{% include code-snippet/pivot-grid/toolbarTemplate-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/toolbarTemplate-cs2/app/main.ts %}
+{% include code-snippet/pivot-grid/toolbarTemplate-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -153,13 +153,13 @@ The current pivot report can be saved as a JSON file in the desired path and loa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs291/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs291/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs291/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs291/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs291/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs291/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -1032,13 +1032,13 @@ The [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs292/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs292/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs292/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs292/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs292/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs292/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -1052,13 +1052,13 @@ For example, you can add the header and footer for the pdf document by setting t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs293/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs293/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs293/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs293/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs293/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs293/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -1095,13 +1095,13 @@ In the below sample, toolbar UI actions such as add new report and save current 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs294/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs294/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs294/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs294/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs294/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs294/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -1135,13 +1135,13 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs295/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs295/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs295/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs295/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs295/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs295/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -1174,13 +1174,13 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs296/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs296/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs296/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs296/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs296/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs296/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -22,13 +22,13 @@ You can check this video to learn about editing modes and editing types in Angul
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-cs2/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-cs2/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-cs2/app/main.ts %}
+{% include code-snippet/treegrid/edit-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -43,13 +43,13 @@ You can define this by using the [`toolbar`](https://ej2.syncfusion.com/angular/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs17/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs17/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs17/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -63,13 +63,13 @@ The following examples shows how to set new row position as `Child` in tree grid
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs18/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs18/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs18/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -83,13 +83,13 @@ The delete confirm dialog can be shown when deleting a record by defining the [`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs19/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs19/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs19/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs19/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs19/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -104,13 +104,13 @@ To set a default value for the particular column by defining the [`columns.defau
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs20/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs20/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs20/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs20/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs20/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -124,13 +124,13 @@ In the following demo, editing is disabled for the `Start Date` column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs21/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs21/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs21/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs21/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs21/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -144,13 +144,13 @@ In the following demo, the rows which have the value for the **priority** column
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs22/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs22/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs22/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs22/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs22/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -160,13 +160,13 @@ For batch mode of editing, use the [cellEdit](https://ej2.syncfusion.com/angular
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs23/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs23/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs23/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs23/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs23/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -180,13 +180,13 @@ In the following demo, the **priority** column is rendered with the template.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs24/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs24/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs24/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs24/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs24/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

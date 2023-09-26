@@ -18,13 +18,13 @@ In the below sample, `Zoom` effect is enabled. So, The Dialog will open with `Zo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/predefined-dialogs/alert-animation-cs1/app/app.component.ts %}
+{% include code-snippet/predefined-dialogs/alert-animation-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/alert-animation-cs1/app/app.module.ts %}
+{% include code-snippet/predefined-dialogs/alert-animation-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/predefined-dialogs/alert-animation-cs1/app/main.ts %}
+{% include code-snippet/predefined-dialogs/alert-animation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ In the below sample, `Zoom` effect is enabled. So, The Dialog will open with `Zo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/predefined-dialogs/confirm-animation-cs1/app/app.component.ts %}
+{% include code-snippet/predefined-dialogs/confirm-animation-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/confirm-animation-cs1/app/app.module.ts %}
+{% include code-snippet/predefined-dialogs/confirm-animation-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/predefined-dialogs/confirm-animation-cs1/app/main.ts %}
+{% include code-snippet/predefined-dialogs/confirm-animation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -50,13 +50,13 @@ In the below sample, `Zoom` effect is enabled. So, The Dialog will open with `Zo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/predefined-dialogs/prompt-animation-cs1/app/app.component.ts %}
+{% include code-snippet/predefined-dialogs/prompt-animation-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/prompt-animation-cs1/app/app.module.ts %}
+{% include code-snippet/predefined-dialogs/prompt-animation-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/predefined-dialogs/prompt-animation-cs1/app/main.ts %}
+{% include code-snippet/predefined-dialogs/prompt-animation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

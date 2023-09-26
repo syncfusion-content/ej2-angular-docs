@@ -16,13 +16,13 @@ To achieve the client side validation in a TimePicker component by using `FormVa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/timepicker/getting-started-cs5/app/app.component.ts %}
+{% include code-snippet/timepicker/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/getting-started-cs5/app/app.module.ts %}
+{% include code-snippet/timepicker/getting-started-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/timepicker/getting-started-cs5/app/main.ts %}
+{% include code-snippet/timepicker/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

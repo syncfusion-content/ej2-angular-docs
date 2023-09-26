@@ -22,13 +22,13 @@ To split the chart area vertically into number of rows, use [`rows`](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs2/app/app.component.ts %}
+{% include code-snippet/chart/axis/multiple-panes-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs2/app/app.module.ts %}
+{% include code-snippet/chart/axis/multiple-panes-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs2/app/main.ts %}
+{% include code-snippet/chart/axis/multiple-panes-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ For spanning the vertical axis along multiple row, you can use [`span`](https://
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs3/app/app.component.ts %}
+{% include code-snippet/chart/axis/multiple-panes-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs3/app/app.module.ts %}
+{% include code-snippet/chart/axis/multiple-panes-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs3/app/main.ts %}
+{% include code-snippet/chart/axis/multiple-panes-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -61,13 +61,13 @@ property. The given width can be either in percentage or in pixel.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs4/app/app.component.ts %}
+{% include code-snippet/chart/axis/multiple-panes-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs4/app/app.module.ts %}
+{% include code-snippet/chart/axis/multiple-panes-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs4/app/main.ts %}
+{% include code-snippet/chart/axis/multiple-panes-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -77,13 +77,13 @@ For spanning the horizontal axis along multiple column, you can use [`span`](htt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs5/app/app.component.ts %}
+{% include code-snippet/chart/axis/multiple-panes-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs5/app/app.module.ts %}
+{% include code-snippet/chart/axis/multiple-panes-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs5/app/main.ts %}
+{% include code-snippet/chart/axis/multiple-panes-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

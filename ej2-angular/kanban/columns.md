@@ -20,13 +20,13 @@ Kanban columns are categorized by mapping the **key** from the datasource using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/single-key-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/single-key-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/single-key-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/single-key-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/single-key-cs1/app/main.ts %}
+{% include code-snippet/kanban/single-key-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ Kanban board allows to render a single column by mapping multiple keys using `ke
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/multiple-keys-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/multiple-keys-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/multiple-keys-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/multiple-keys-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/multiple-keys-cs1/app/main.ts %}
+{% include code-snippet/kanban/multiple-keys-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,13 +60,13 @@ You can customize the column header with any HTML or CSS element using the `temp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/header-template-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/header-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/header-template-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/header-template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/header-template-cs1/app/main.ts %}
+{% include code-snippet/kanban/header-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -80,13 +80,13 @@ Kanban allows to expand or collapse its columns using `allowToggle` inside the `
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/toggle-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/toggle-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/toggle-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/toggle-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/toggle-cs1/app/main.ts %}
+{% include code-snippet/kanban/toggle-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -102,13 +102,13 @@ In the following example, the backlog column is collapsed on initialization of K
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/expanded-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/expanded-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/expanded-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/expanded-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/expanded-cs1/app/main.ts %}
+{% include code-snippet/kanban/expanded-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -124,13 +124,13 @@ In the following code, the kanban columns 'InProgress, Review' are grouped under
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/stacked-headers-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/stacked-headers-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/stacked-headers-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/stacked-headers-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/stacked-headers-cs1/app/main.ts %}
+{% include code-snippet/kanban/stacked-headers-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

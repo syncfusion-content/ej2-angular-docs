@@ -17,13 +17,13 @@ By default, Custom toolbar items are in position `Left`. You can change the posi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs36/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs36/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs36/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs36/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs36/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs36/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ In the below example, `ExpandAll`, `CollapseAll` are built-in toolbar items and 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs37/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs37/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs37/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs37/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs37/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs37/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

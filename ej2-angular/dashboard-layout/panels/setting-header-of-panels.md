@@ -16,13 +16,13 @@ The following sample demonstrates how to add content for each panel using the he
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dashboard-layout/header-and-content-of-panels-cs1/app/app.component.ts %}
+{% include code-snippet/dashboard-layout/header-and-content-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dashboard-layout/header-and-content-of-panels-cs1/app/app.module.ts %}
+{% include code-snippet/dashboard-layout/header-and-content-of-panels-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dashboard-layout/header-and-content-of-panels-cs1/app/main.ts %}
+{% include code-snippet/dashboard-layout/header-and-content-of-panels-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ The following sample demonstrates how to add ej2-chart components as the `conten
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dashboard-layout/components-as-content-of-panels-cs1/app/app.component.ts %}
+{% include code-snippet/dashboard-layout/components-as-content-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dashboard-layout/components-as-content-of-panels-cs1/app/app.module.ts %}
+{% include code-snippet/dashboard-layout/components-as-content-of-panels-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dashboard-layout/components-as-content-of-panels-cs1/app/main.ts %}
+{% include code-snippet/dashboard-layout/components-as-content-of-panels-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

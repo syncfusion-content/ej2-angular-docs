@@ -24,13 +24,13 @@ To format cell values based on specific culture, use the [`columns.format`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs14/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs14/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs14/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -68,13 +68,13 @@ Format | Formatted value
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs15/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs15/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs15/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,13 +86,13 @@ Hide any particular column in the tree grid before rendering by defining the [vi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs16/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs16/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs16/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -121,13 +121,13 @@ It is also possible to select the rows hierarchically using checkboxes in TreeGr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs17/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs17/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs17/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -144,13 +144,13 @@ You can enable or disable treegrid action for a particular column by setting the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs18/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs18/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs18/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -162,13 +162,13 @@ You can show or hide treegrid columns dynamically using external buttons by invo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs19/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs19/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs19/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs19/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs19/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -180,13 +180,13 @@ The [`valueAccessor`](https://ej2.syncfusion.com/angular/documentation/api/treeg
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs20/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs20/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs20/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs20/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs20/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -199,13 +199,13 @@ In this example, the name field has an array of two objects, FirstName and LastN
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs21/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs21/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs21/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs21/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs21/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -217,13 +217,13 @@ You can achieve the expression column by using the [`valueAccessor`](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs22/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs22/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs22/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs22/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs22/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -235,13 +235,13 @@ To render boolean values as checkbox in columns, you need to set [`displayAsChec
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs23/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs23/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs23/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs23/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs23/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -264,13 +264,13 @@ tooltip (args: QueryCellInfoEventArgs) {
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/custom-tooltip-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/custom-tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/custom-tooltip-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/custom-tooltip-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/custom-tooltip-cs1/app/main.ts %}
+{% include code-snippet/treegrid/custom-tooltip-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -288,13 +288,13 @@ The Tree Grid column supports the following alignments:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/custom-tooltip-cs2/app/app.component.ts %}
+{% include code-snippet/treegrid/custom-tooltip-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/custom-tooltip-cs2/app/app.module.ts %}
+{% include code-snippet/treegrid/custom-tooltip-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/custom-tooltip-cs2/app/main.ts %}
+{% include code-snippet/treegrid/custom-tooltip-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -306,13 +306,13 @@ You can get the unique id of the column by field name using [`getUidByColumnFiel
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/column-uid-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/column-uid-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/column-uid-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/column-uid-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/column-uid-cs1/app/main.ts %}
+{% include code-snippet/treegrid/column-uid-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

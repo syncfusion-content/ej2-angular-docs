@@ -28,13 +28,13 @@ An array of objects that allows the users to specify pre-defined time intervals.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rangenavigator/periodselector/periods-cs1/app/app.component.ts %}
+{% include code-snippet/rangenavigator/periodselector/periods-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/periodselector/periods-cs1/app/app.module.ts %}
+{% include code-snippet/rangenavigator/periodselector/periods-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rangenavigator/periodselector/periods-cs1/app/main.ts %}
+{% include code-snippet/rangenavigator/periodselector/periods-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -48,13 +48,13 @@ The [`position`](https://ej2.syncfusion.com/angular/documentation/api/range-navi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rangenavigator/periodselector/position-cs1/app/app.component.ts %}
+{% include code-snippet/rangenavigator/periodselector/position-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/periodselector/position-cs1/app/app.module.ts %}
+{% include code-snippet/rangenavigator/periodselector/position-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rangenavigator/periodselector/position-cs1/app/main.ts %}
+{% include code-snippet/rangenavigator/periodselector/position-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ The [`height`](https://ej2.syncfusion.com/angular/documentation/api/range-naviga
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rangenavigator/periodselector/position-cs2/app/app.component.ts %}
+{% include code-snippet/rangenavigator/periodselector/position-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/periodselector/position-cs2/app/app.module.ts %}
+{% include code-snippet/rangenavigator/periodselector/position-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rangenavigator/periodselector/position-cs2/app/main.ts %}
+{% include code-snippet/rangenavigator/periodselector/position-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -84,13 +84,13 @@ The [`disableRangeSelector`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rangenavigator/periodselector/position-cs3/app/app.component.ts %}
+{% include code-snippet/rangenavigator/periodselector/position-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/periodselector/position-cs3/app/app.module.ts %}
+{% include code-snippet/rangenavigator/periodselector/position-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rangenavigator/periodselector/position-cs3/app/main.ts %}
+{% include code-snippet/rangenavigator/periodselector/position-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

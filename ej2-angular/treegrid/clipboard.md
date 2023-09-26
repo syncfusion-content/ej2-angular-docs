@@ -21,13 +21,13 @@ Interaction keys |Description
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/clipboard-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/clipboard-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/clipboard-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/clipboard-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/clipboard-cs1/app/main.ts %}
+{% include code-snippet/treegrid/clipboard-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ To copy selected rows or cells data into clipboard with help of external buttons
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/copy-method-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/copy-method-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/copy-method-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/copy-method-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/copy-method-cs1/app/main.ts %}
+{% include code-snippet/treegrid/copy-method-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -65,13 +65,13 @@ Tree Grid provides support for a set of copy modes with [`copyHierarchyMode`](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/clipboard-cs2/app/app.component.ts %}
+{% include code-snippet/treegrid/clipboard-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/clipboard-cs2/app/app.module.ts %}
+{% include code-snippet/treegrid/clipboard-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/clipboard-cs2/app/main.ts %}
+{% include code-snippet/treegrid/clipboard-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -87,13 +87,13 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs1/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -115,13 +115,13 @@ Paste the cell programmatically by using the [`Paste`](https://ej2.syncfusion.co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs2/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs2/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs2/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

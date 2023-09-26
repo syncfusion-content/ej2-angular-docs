@@ -31,13 +31,13 @@ The following code example shows the options for inserting rows in the spreadshe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/insert/row-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/insert/row-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/insert/row-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/insert/row-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/insert/row-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/insert/row-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ The following code example shows the options for inserting columns in the spread
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/insert/column-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/insert/column-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/insert/column-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/insert/column-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/insert/column-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/insert/column-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -79,13 +79,13 @@ The following code example shows the delete operation of rows and columns in the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/delete/row-column-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/delete/row-column-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/delete/row-column-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/delete/row-column-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/delete/row-column-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/delete/row-column-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -124,13 +124,13 @@ The following code example shows the hide/show rows and columns operation in the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/hide-show-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/hide-show-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/hide-show-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/hide-show-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/hide-show-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/hide-show-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -144,13 +144,13 @@ The following code example shows how to change the text in the column headers.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/column-header-change-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/column-header-change-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/column-header-change-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/column-header-change-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/column-header-change-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/column-header-change-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

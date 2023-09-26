@@ -18,13 +18,13 @@ Styling the tip pointer's size, background, and border colors can be done using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs26/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs26/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs26/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -37,13 +37,13 @@ The following code example shows the way to achieve it.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/custom-css-cs2/app/app.component.ts %}
+{% include code-snippet/tooltip/custom-css-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/custom-css-cs2/app/app.module.ts %}
+{% include code-snippet/tooltip/custom-css-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/custom-css-cs2/app/main.ts %}
+{% include code-snippet/tooltip/custom-css-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

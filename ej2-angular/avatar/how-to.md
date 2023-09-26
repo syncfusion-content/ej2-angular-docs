@@ -22,13 +22,13 @@ by adding custom class or directly selecting the avatar class from the CSS.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/avatar/color-cs1/app/app.component.ts %}
+{% include code-snippet/avatar/color-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/color-cs1/app/app.module.ts %}
+{% include code-snippet/avatar/color-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/avatar/color-cs1/app/main.ts %}
+{% include code-snippet/avatar/color-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ designed in such a way that the width and height will be relative to font-size. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/avatar/custom-size-cs1/app/app.component.ts %}
+{% include code-snippet/avatar/custom-size-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/custom-size-cs1/app/app.module.ts %}
+{% include code-snippet/avatar/custom-size-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/avatar/custom-size-cs1/app/main.ts %}
+{% include code-snippet/avatar/custom-size-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -61,13 +61,13 @@ etc. Some of them are given below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/avatar/media-formats-cs1/app/app.component.ts %}
+{% include code-snippet/avatar/media-formats-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/media-formats-cs1/app/app.module.ts %}
+{% include code-snippet/avatar/media-formats-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/avatar/media-formats-cs1/app/main.ts %}
+{% include code-snippet/avatar/media-formats-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -82,13 +82,13 @@ data-source from the server or remote data or AJAX. We have also rendered the av
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/avatar/angular-avatar-cs1/app/app.component.ts %}
+{% include code-snippet/avatar/angular-avatar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/angular-avatar-cs1/app/app.module.ts %}
+{% include code-snippet/avatar/angular-avatar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/avatar/angular-avatar-cs1/app/main.ts %}
+{% include code-snippet/avatar/angular-avatar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -106,13 +106,13 @@ used to match the size of the list item. Letters and images are also used as ava
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/avatar/listview-cs1/app/app.component.ts %}
+{% include code-snippet/avatar/listview-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/listview-cs1/app/app.module.ts %}
+{% include code-snippet/avatar/listview-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/avatar/listview-cs1/app/main.ts %}
+{% include code-snippet/avatar/listview-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -126,13 +126,13 @@ badges (.`e-badge-notification`) in the following sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/avatar/badge-cs1/app/app.component.ts %}
+{% include code-snippet/avatar/badge-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/badge-cs1/app/app.module.ts %}
+{% include code-snippet/avatar/badge-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/avatar/badge-cs1/app/main.ts %}
+{% include code-snippet/avatar/badge-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

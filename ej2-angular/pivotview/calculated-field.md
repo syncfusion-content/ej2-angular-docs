@@ -24,13 +24,13 @@ To use calculated field option, you need to inject the `CalculatedFieldService` 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs9/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs9/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs9/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ Meanwhile, user can also view calculated field dialog in UI by invoking `createC
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs10/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs10/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs10/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -234,13 +234,13 @@ Below is a list of operators and functions that can be used in the formula to cr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs11/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs11/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs11/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -262,13 +262,13 @@ In the below sample, creating a calculated field without setting the format is r
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs12/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs12/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs12/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -298,13 +298,13 @@ In the below sample, the calculated field button click action, that is, opening 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs13/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs13/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs13/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -331,13 +331,13 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs14/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs14/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs14/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -359,13 +359,13 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs15/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs15/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs15/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

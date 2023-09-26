@@ -14,13 +14,13 @@ Display options allow you to view the Query Builder in Vertically or Horizontall
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/query-builder/filtering-cs7/app/app.component.ts %}
+{% include code-snippet/query-builder/filtering-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs7/app/app.module.ts %}
+{% include code-snippet/query-builder/filtering-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/query-builder/filtering-cs7/app/main.ts %}
+{% include code-snippet/query-builder/filtering-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

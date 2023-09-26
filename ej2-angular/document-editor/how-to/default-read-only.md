@@ -16,13 +16,13 @@ In this article, we are going to see how to open a document in read only mode by
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/document-editor/getting-started-cs2/app/app.component.ts %}
+{% include code-snippet/document-editor/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/getting-started-cs2/app/app.module.ts %}
+{% include code-snippet/document-editor/getting-started-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/document-editor/getting-started-cs2/app/main.ts %}
+{% include code-snippet/document-editor/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -32,13 +32,13 @@ In this article, we are going to see how to open a document in read only mode by
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/document-editor/document-editor-container-cs3/app/app.component.ts %}
+{% include code-snippet/document-editor/document-editor-container-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/document-editor-container-cs3/app/app.module.ts %}
+{% include code-snippet/document-editor/document-editor-container-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/document-editor/document-editor-container-cs3/app/main.ts %}
+{% include code-snippet/document-editor/document-editor-container-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

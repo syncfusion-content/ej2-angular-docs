@@ -28,13 +28,13 @@ The `getSelectedItems` method returns the following items from the selected list
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/checklist-cs3/app/app.component.ts %}
+{% include code-snippet/listview/checklist-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/checklist-cs3/app/app.module.ts %}
+{% include code-snippet/listview/checklist-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/checklist-cs3/app/main.ts %}
+{% include code-snippet/listview/checklist-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -50,13 +50,13 @@ In the ListView component, template support is being used. In some cases, the co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/dynamic-template-cs1/app/app.component.ts %}
+{% include code-snippet/listview/dynamic-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/dynamic-template-cs1/app/app.module.ts %}
+{% include code-snippet/listview/dynamic-template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/dynamic-template-cs1/app/main.ts %}
+{% include code-snippet/listview/dynamic-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -74,13 +74,13 @@ Refer to the following steps to load list item into the child list:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/checklist-cs4/app/app.component.ts %}
+{% include code-snippet/listview/checklist-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/checklist-cs4/app/app.module.ts %}
+{% include code-snippet/listview/checklist-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/checklist-cs4/app/main.ts %}
+{% include code-snippet/listview/checklist-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -92,13 +92,13 @@ The ListView component supports wrapping list items into a group based on the ca
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/item-count-cs2/app/app.component.ts %}
+{% include code-snippet/listview/item-count-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/item-count-cs2/app/app.module.ts %}
+{% include code-snippet/listview/item-count-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/item-count-cs2/app/main.ts %}
+{% include code-snippet/listview/item-count-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -149,13 +149,13 @@ let data: any = [
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/avatar-template-cs2/app/app.component.ts %}
+{% include code-snippet/listview/avatar-template-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/avatar-template-cs2/app/app.module.ts %}
+{% include code-snippet/listview/avatar-template-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/avatar-template-cs2/app/main.ts %}
+{% include code-snippet/listview/avatar-template-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -173,13 +173,13 @@ The filtered data can be displayed in the ListView component depending upon on u
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/getting-started-cs2/app/app.component.ts %}
+{% include code-snippet/listview/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/getting-started-cs2/app/app.module.ts %}
+{% include code-snippet/listview/getting-started-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/getting-started-cs2/app/main.ts %}
+{% include code-snippet/listview/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -203,13 +203,13 @@ The ListView component triggers events based on its actions. The events can be u
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/getting-started-cs3/app/app.component.ts %}
+{% include code-snippet/listview/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/getting-started-cs3/app/app.module.ts %}
+{% include code-snippet/listview/getting-started-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/getting-started-cs3/app/main.ts %}
+{% include code-snippet/listview/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -254,13 +254,13 @@ Here, the data is fetched from `Northwind` Service URL; it takes a few seconds t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/getting-started-cs4/app/app.component.ts %}
+{% include code-snippet/listview/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/getting-started-cs4/app/app.module.ts %}
+{% include code-snippet/listview/getting-started-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/getting-started-cs4/app/main.ts %}
+{% include code-snippet/listview/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -280,13 +280,13 @@ Refer to the following steps to add or remove a list item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/addItem-cs1/app/app.component.ts %}
+{% include code-snippet/listview/addItem-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/addItem-cs1/app/app.module.ts %}
+{% include code-snippet/listview/addItem-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/addItem-cs1/app/main.ts %}
+{% include code-snippet/listview/addItem-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -343,13 +343,13 @@ You can enable sorting in one ListView; in the same order, data can be transferr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/dual-list-cs1/app/app.component.ts %}
+{% include code-snippet/listview/dual-list-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/dual-list-cs1/app/app.module.ts %}
+{% include code-snippet/listview/dual-list-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/dual-list-cs1/app/main.ts %}
+{% include code-snippet/listview/dual-list-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -377,13 +377,13 @@ Even though we have hidden the checkbox the functionality will be same for the l
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/hide-checkbox-cs1/app/app.component.ts %}
+{% include code-snippet/listview/hide-checkbox-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/hide-checkbox-cs1/app/app.module.ts %}
+{% include code-snippet/listview/hide-checkbox-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/hide-checkbox-cs1/app/main.ts %}
+{% include code-snippet/listview/hide-checkbox-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -451,13 +451,13 @@ removeTag() {
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/dynamic-tag-cs1/app/app.component.ts %}
+{% include code-snippet/listview/dynamic-tag-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/dynamic-tag-cs1/app/app.module.ts %}
+{% include code-snippet/listview/dynamic-tag-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/dynamic-tag-cs1/app/main.ts %}
+{% include code-snippet/listview/dynamic-tag-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -497,13 +497,13 @@ In the below sample, we have rendered List items in grid layout.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/grid-layout-cs1/app/app.component.ts %}
+{% include code-snippet/listview/grid-layout-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/grid-layout-cs1/app/app.module.ts %}
+{% include code-snippet/listview/grid-layout-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/grid-layout-cs1/app/main.ts %}
+{% include code-snippet/listview/grid-layout-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -576,13 +576,13 @@ In the below sample, we can filter fruit items with the help of search text box.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/grid-manipulation-cs1/app/app.component.ts %}
+{% include code-snippet/listview/grid-manipulation-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/grid-manipulation-cs1/app/app.module.ts %}
+{% include code-snippet/listview/grid-manipulation-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/grid-manipulation-cs1/app/main.ts %}
+{% include code-snippet/listview/grid-manipulation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -608,13 +608,13 @@ In the below sample, we have rendered `ListView` with search engines URL.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/navigation-cs1/app/app.component.ts %}
+{% include code-snippet/listview/navigation-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/navigation-cs1/app/app.module.ts %}
+{% include code-snippet/listview/navigation-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/navigation-cs1/app/main.ts %}
+{% include code-snippet/listview/navigation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -638,13 +638,13 @@ In the below sample, we have rendered smartphone settings template from external
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/ajax-cs1/app/app.component.ts %}
+{% include code-snippet/listview/ajax-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/ajax-cs1/app/app.module.ts %}
+{% include code-snippet/listview/ajax-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/ajax-cs1/app/main.ts %}
+{% include code-snippet/listview/ajax-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -685,13 +685,13 @@ In the below sample, we have rendered draggable list items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/reorder-cs1/app/app.component.ts %}
+{% include code-snippet/listview/reorder-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/reorder-cs1/app/app.module.ts %}
+{% include code-snippet/listview/reorder-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/reorder-cs1/app/main.ts %}
+{% include code-snippet/listview/reorder-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -754,13 +754,13 @@ public btnClick() {
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/chat-window-cs1/app/app.component.ts %}
+{% include code-snippet/listview/chat-window-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/chat-window-cs1/app/app.module.ts %}
+{% include code-snippet/listview/chat-window-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/chat-window-cs1/app/main.ts %}
+{% include code-snippet/listview/chat-window-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

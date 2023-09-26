@@ -19,16 +19,16 @@ The [`from`](https://ej2.syncfusion.com/documentation/api/data/query/#from) meth
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs12/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs12/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs12/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs12/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs12/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,16 +40,16 @@ The [`select`](https://ej2.syncfusion.com/documentation/api/data/query/#select) 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs13/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs13/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs13/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs13/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs13/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,16 +62,16 @@ values are accessed using appropriate field names separated by dot(.) sign.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/expand-cs1/app/app.component.ts %}
+{% include code-snippet/data/expand-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/expand-cs1/app/app.template.html %}
+{% include code-snippet/data/expand-cs1/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/expand-cs1/app/app.module.ts %}
+{% include code-snippet/data/expand-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/expand-cs1/app/main.ts %}
+{% include code-snippet/data/expand-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,16 +86,16 @@ specify the second argument of [`sortBy`](https://ej2.syncfusion.com/documentati
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs14/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs14/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs14/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs14/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs14/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -110,16 +110,16 @@ records. The [`where`](https://ej2.syncfusion.com/documentation/data/api-query.h
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs15/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs15/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs15/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs15/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs15/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -150,16 +150,16 @@ complex filter criteria, in such cases we can use [`Predicate`](https://ej2.sync
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs16/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs16/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs16/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs16/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs16/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -173,16 +173,16 @@ source whereas filter criteria will be applied to a particular field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs17/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs17/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs17/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs17/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs17/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -197,16 +197,16 @@ source whereas filter criteria will be applied to a particular field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/group-cs1/app/app.component.ts %}
+{% include code-snippet/data/group-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/group-cs1/app/app.template.html %}
+{% include code-snippet/data/group-cs1/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/group-cs1/app/app.module.ts %}
+{% include code-snippet/data/group-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/group-cs1/app/main.ts %}
+{% include code-snippet/data/group-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -221,16 +221,16 @@ particular set of records based on the page size and index.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs18/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs18/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs18/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs18/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs18/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -252,16 +252,16 @@ The built-in aggregate types are,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/aggregate-cs1/app/app.component.ts %}
+{% include code-snippet/data/aggregate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/aggregate-cs1/app/app.template.html %}
+{% include code-snippet/data/aggregate-cs1/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/aggregate-cs1/app/app.module.ts %}
+{% include code-snippet/data/aggregate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/aggregate-cs1/app/main.ts %}
+{% include code-snippet/data/aggregate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -278,16 +278,16 @@ accepts a selector function which selects the records from the foreign table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/hierarchy-cs1/app/app.component.ts %}
+{% include code-snippet/data/hierarchy-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/hierarchy-cs1/app/app.template.html %}
+{% include code-snippet/data/hierarchy-cs1/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/hierarchy-cs1/app/app.module.ts %}
+{% include code-snippet/data/hierarchy-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/hierarchy-cs1/app/main.ts %}
+{% include code-snippet/data/hierarchy-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

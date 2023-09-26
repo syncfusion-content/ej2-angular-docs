@@ -15,13 +15,13 @@ To render a line series, use series [`type`](https://ej2.syncfusion.com/angular/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/line-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/line-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/line-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/line-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/line-cs1/app/main.ts %}
+{% include code-snippet/chart/series/line-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -34,13 +34,13 @@ Here, the individual colors to the data can be mapped by using `pointColorMappin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/line-cs7/app/app.component.ts %}
+{% include code-snippet/chart/series/line-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/line-cs7/app/app.module.ts %}
+{% include code-snippet/chart/series/line-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/line-cs7/app/main.ts %}
+{% include code-snippet/chart/series/line-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,13 +57,13 @@ The following properties can be used to customize the `line` series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/line-cs8/app/app.component.ts %}
+{% include code-snippet/chart/series/line-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/line-cs8/app/app.module.ts %}
+{% include code-snippet/chart/series/line-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/line-cs8/app/main.ts %}
+{% include code-snippet/chart/series/line-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

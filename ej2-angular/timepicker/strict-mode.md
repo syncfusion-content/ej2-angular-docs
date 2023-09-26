@@ -17,13 +17,13 @@ The following example demonstrates the TimePicker in `strictMode` with min/max r
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/timepicker/getting-started-cs6/app/app.component.ts %}
+{% include code-snippet/timepicker/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/getting-started-cs6/app/app.module.ts %}
+{% include code-snippet/timepicker/getting-started-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/timepicker/getting-started-cs6/app/main.ts %}
+{% include code-snippet/timepicker/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ If you are entering the out-of-range or invalid time value, then the model value
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/timepicker/getting-started-cs7/app/app.component.ts %}
+{% include code-snippet/timepicker/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/getting-started-cs7/app/app.module.ts %}
+{% include code-snippet/timepicker/getting-started-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/timepicker/getting-started-cs7/app/main.ts %}
+{% include code-snippet/timepicker/getting-started-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

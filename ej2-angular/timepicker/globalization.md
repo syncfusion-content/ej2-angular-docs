@@ -104,13 +104,13 @@ The following sample demonstrate the TimePicker component in `German` culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/timepicker/internationalization-cs1/app/app.component.ts %}
+{% include code-snippet/timepicker/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/internationalization-cs1/app/app.module.ts %}
+{% include code-snippet/timepicker/internationalization-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/timepicker/internationalization-cs1/app/main.ts %}
+{% include code-snippet/timepicker/internationalization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -167,13 +167,13 @@ The following example demonstrates TimePicker in `Arabic` culture with right-to-
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/timepicker/rtl-cs1/app/app.component.ts %}
+{% include code-snippet/timepicker/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/rtl-cs1/app/app.module.ts %}
+{% include code-snippet/timepicker/rtl-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/timepicker/rtl-cs1/app/main.ts %}
+{% include code-snippet/timepicker/rtl-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

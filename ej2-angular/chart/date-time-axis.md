@@ -22,13 +22,13 @@ To known about dateTime axis, you can check on this video:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/datetime-cs10/app/app.component.ts %}
+{% include code-snippet/chart/axis/datetime-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs10/app/app.module.ts %}
+{% include code-snippet/chart/axis/datetime-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/datetime-cs10/app/main.ts %}
+{% include code-snippet/chart/axis/datetime-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ Date-time category axis is used to display the date-time values with non-linear 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/datetime-cs11/app/app.component.ts %}
+{% include code-snippet/chart/axis/datetime-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs11/app/app.module.ts %}
+{% include code-snippet/chart/axis/datetime-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/datetime-cs11/app/main.ts %}
+{% include code-snippet/chart/axis/datetime-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ Range for an axis, will be calculated automatically based on the provided data, 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/datetime-cs12/app/app.component.ts %}
+{% include code-snippet/chart/axis/datetime-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs12/app/app.module.ts %}
+{% include code-snippet/chart/axis/datetime-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/datetime-cs12/app/main.ts %}
+{% include code-snippet/chart/axis/datetime-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -90,13 +90,13 @@ DateTime axis supports following interval types,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/datetime-cs13/app/app.component.ts %}
+{% include code-snippet/chart/axis/datetime-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs13/app/app.module.ts %}
+{% include code-snippet/chart/axis/datetime-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/datetime-cs13/app/main.ts %}
+{% include code-snippet/chart/axis/datetime-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -116,13 +116,13 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/datetime-cs14/app/app.component.ts %}
+{% include code-snippet/chart/axis/datetime-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs14/app/app.module.ts %}
+{% include code-snippet/chart/axis/datetime-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/datetime-cs14/app/main.ts %}
+{% include code-snippet/chart/axis/datetime-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -134,13 +134,13 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/datetime-cs15/app/app.component.ts %}
+{% include code-snippet/chart/axis/datetime-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs15/app/app.module.ts %}
+{% include code-snippet/chart/axis/datetime-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/datetime-cs15/app/main.ts %}
+{% include code-snippet/chart/axis/datetime-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -152,13 +152,13 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/datetime-cs16/app/app.component.ts %}
+{% include code-snippet/chart/axis/datetime-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs16/app/app.module.ts %}
+{% include code-snippet/chart/axis/datetime-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/datetime-cs16/app/main.ts %}
+{% include code-snippet/chart/axis/datetime-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -170,13 +170,13 @@ You can format and parse the date to all globalize format using [`labelFormat`]
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/datetime-cs17/app/app.component.ts %}
+{% include code-snippet/chart/axis/datetime-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs17/app/app.module.ts %}
+{% include code-snippet/chart/axis/datetime-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/datetime-cs17/app/main.ts %}
+{% include code-snippet/chart/axis/datetime-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

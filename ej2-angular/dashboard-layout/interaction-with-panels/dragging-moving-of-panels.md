@@ -23,13 +23,13 @@ The following sample demonstrates dragging and pushing of panels. For example, w
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dashboard-layout/dragging-of-panels-cs1/app/app.component.ts %}
+{% include code-snippet/dashboard-layout/dragging-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dashboard-layout/dragging-of-panels-cs1/app/app.module.ts %}
+{% include code-snippet/dashboard-layout/dragging-of-panels-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dashboard-layout/dragging-of-panels-cs1/app/main.ts %}
+{% include code-snippet/dashboard-layout/dragging-of-panels-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -43,13 +43,13 @@ The following sample demonstrates customizing the dragging handler of the panels
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dashboard-layout/customizing-the-dragging-handler-cs1/app/app.component.ts %}
+{% include code-snippet/dashboard-layout/customizing-the-dragging-handler-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dashboard-layout/customizing-the-dragging-handler-cs1/app/app.module.ts %}
+{% include code-snippet/dashboard-layout/customizing-the-dragging-handler-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dashboard-layout/customizing-the-dragging-handler-cs1/app/main.ts %}
+{% include code-snippet/dashboard-layout/customizing-the-dragging-handler-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -63,13 +63,13 @@ The following sample demonstrates Dashboard Layout with dragging support disable
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dashboard-layout/disable-dragging-cs1/app/app.component.ts %}
+{% include code-snippet/dashboard-layout/disable-dragging-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dashboard-layout/disable-dragging-cs1/app/app.module.ts %}
+{% include code-snippet/dashboard-layout/disable-dragging-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dashboard-layout/disable-dragging-cs1/app/main.ts %}
+{% include code-snippet/dashboard-layout/disable-dragging-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

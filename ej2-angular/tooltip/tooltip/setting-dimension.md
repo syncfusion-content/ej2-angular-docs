@@ -19,13 +19,13 @@ The following sample explains how to set dimensions for the Tooltip.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-002-cs2/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-002-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-002-cs2/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-002-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-002-cs2/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-002-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -37,13 +37,13 @@ When `height` is specified with a certain pixel value and the Tooltip content ov
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs39/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs39/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs39/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs39/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs39/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs39/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

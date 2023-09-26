@@ -22,13 +22,13 @@ The default `duration` is set to 150 ms and `delay` is set to 0.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs2/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs2/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs2/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -67,13 +67,13 @@ Refer to the code snippet below to apply animations using public methods.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs3/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs3/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs3/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -85,13 +85,13 @@ The transition effect can be applied on Tooltips by using the `beforeOpen` event
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs4/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs4/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs4/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

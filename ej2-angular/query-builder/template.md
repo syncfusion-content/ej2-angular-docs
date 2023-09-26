@@ -22,16 +22,16 @@ In the following sample dropdown, splitbutton and button are used as the custom 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/query-builder/header-template-cs1/app/app.component.ts %}
+{% include code-snippet/query-builder/header-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/header-template-cs1/app/app.module.ts %}
+{% include code-snippet/query-builder/header-template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/query-builder/header-template-cs1/app/main.ts %}
+{% include code-snippet/query-builder/header-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="template-driven.html" %}
-{% include code-snippet/query-builder/header-template-cs1/app/template-driven.html %}
+{% include code-snippet/query-builder/header-template-cs1/src/template-driven.html %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -49,13 +49,13 @@ In the following sample, dropdown is used as the custom component in the Payment
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/query-builder/filtering-cs11/app/app.component.ts %}
+{% include code-snippet/query-builder/filtering-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs11/app/app.module.ts %}
+{% include code-snippet/query-builder/filtering-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/query-builder/filtering-cs11/app/main.ts %}
+{% include code-snippet/query-builder/filtering-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -67,13 +67,13 @@ The value template for a particular column can be specified using the content of
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/query-builder/template-cs1/app/app.component.ts %}
+{% include code-snippet/query-builder/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/template-cs1/app/app.module.ts %}
+{% include code-snippet/query-builder/template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/query-builder/template-cs1/app/main.ts %}
+{% include code-snippet/query-builder/template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -89,16 +89,16 @@ In the following sample, dropdown and slider are used as the custom component an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/query-builder/rule-template-cs1/app/app.component.ts %}
+{% include code-snippet/query-builder/rule-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/rule-template-cs1/app/app.module.ts %}
+{% include code-snippet/query-builder/rule-template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/query-builder/rule-template-cs1/app/main.ts %}
+{% include code-snippet/query-builder/rule-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="template-driven.html" %}
-{% include code-snippet/query-builder/rule-template-cs1/app/template-driven.html %}
+{% include code-snippet/query-builder/rule-template-cs1/src/template-driven.html %}
 {% endhighlight %}
 {% endtabs %}
   

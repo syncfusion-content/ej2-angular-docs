@@ -31,13 +31,13 @@ N/A |N/A |`Equal` operator will always be used for Boolean filter. |Boolean
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/filtering-cs4/app/app.component.ts %}
+{% include code-snippet/treegrid/filtering-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs4/app/app.module.ts %}
+{% include code-snippet/treegrid/filtering-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/filtering-cs4/app/main.ts %}
+{% include code-snippet/treegrid/filtering-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -57,13 +57,13 @@ Access the column information inside the NgTemplate and bind the attributes, val
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/filter-template-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/filter-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filter-template-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/filter-template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/filter-template-cs1/app/main.ts %}
+{% include code-snippet/treegrid/filter-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -75,13 +75,13 @@ You can change the default filter operator by extending [`filterModule.filterOpe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/filtering-cs5/app/app.component.ts %}
+{% include code-snippet/treegrid/filtering-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs5/app/app.module.ts %}
+{% include code-snippet/treegrid/filtering-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/filtering-cs5/app/main.ts %}
+{% include code-snippet/treegrid/filtering-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

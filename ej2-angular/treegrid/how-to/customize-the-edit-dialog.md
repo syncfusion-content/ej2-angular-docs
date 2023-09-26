@@ -16,13 +16,13 @@ In the below example, we have changed the dialog's header text for editing and a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/refresh-cs6/app/app.component.ts %}
+{% include code-snippet/treegrid/refresh-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/refresh-cs6/app/app.module.ts %}
+{% include code-snippet/treegrid/refresh-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/refresh-cs6/app/main.ts %}
+{% include code-snippet/treegrid/refresh-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

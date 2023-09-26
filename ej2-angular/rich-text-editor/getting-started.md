@@ -202,13 +202,13 @@ Run the `ng serve` command in command window, it will serve your application and
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-value-cs1/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-value-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-value-cs1/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-value-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-value-cs1/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-value-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -222,13 +222,13 @@ Initialize the Rich Text Editor on div element and set the enable field [`iframe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-iframe-cs1/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-iframe-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-iframe-cs1/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-iframe-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-iframe-cs1/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-iframe-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -260,13 +260,13 @@ Configure the toolbar with custom tools using items field of toolbarSettings pro
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-toolbar-cs1/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-toolbar-cs1/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-toolbar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-toolbar-cs1/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -282,13 +282,13 @@ Specifies the items to be rendered in the quick toolbar based on the target elem
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs2/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs2/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs2/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

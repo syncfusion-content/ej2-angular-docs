@@ -18,13 +18,13 @@ The CheckBox caption can be defined using the [`label`](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/check-box/label-and-size-cs3/app/app.component.ts %}
+{% include code-snippet/check-box/label-and-size-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/check-box/label-and-size-cs3/app/app.module.ts %}
+{% include code-snippet/check-box/label-and-size-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/check-box/label-and-size-cs3/app/main.ts %}
+{% include code-snippet/check-box/label-and-size-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ The different CheckBox size are default and small. To reduce the size of default
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/check-box/label-and-size-cs4/app/app.component.ts %}
+{% include code-snippet/check-box/label-and-size-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/check-box/label-and-size-cs4/app/app.module.ts %}
+{% include code-snippet/check-box/label-and-size-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/check-box/label-and-size-cs4/app/main.ts %}
+{% include code-snippet/check-box/label-and-size-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

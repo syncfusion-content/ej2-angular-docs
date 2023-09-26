@@ -22,13 +22,13 @@ The following example illustrates how to add requestNavigate event for DocumentE
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/document-editor/link-cs2/app/app.component.ts %}
+{% include code-snippet/document-editor/link-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/link-cs2/app/app.module.ts %}
+{% include code-snippet/document-editor/link-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/document-editor/link-cs2/app/main.ts %}
+{% include code-snippet/document-editor/link-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -100,13 +100,13 @@ Refer to the following example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/document-editor/link-cs3/app/app.component.ts %}
+{% include code-snippet/document-editor/link-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/link-cs3/app/app.module.ts %}
+{% include code-snippet/document-editor/link-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/document-editor/link-cs3/app/main.ts %}
+{% include code-snippet/document-editor/link-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -138,13 +138,13 @@ Document Editor provides dialog support to insert or edit a hyperlink. Refer to 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/document-editor/link-cs4/app/app.component.ts %}
+{% include code-snippet/document-editor/link-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/link-cs4/app/app.module.ts %}
+{% include code-snippet/document-editor/link-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/document-editor/link-cs4/app/main.ts %}
+{% include code-snippet/document-editor/link-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -40,13 +40,13 @@ export class AppComponent {
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs1/app/app.component.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs1/app/app.module.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs1/app/main.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -64,13 +64,13 @@ You can set the size of chart in pixel as demonstrated below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs2/app/app.component.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs2/app/app.module.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs2/app/main.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -83,13 +83,13 @@ when the height is ‘50%’, chart renders to half of the container height.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs3/app/app.component.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs3/app/app.module.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs3/app/main.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -28,13 +28,13 @@ The context menu settings like, items to be displayed on files, folders and layo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/context-menu-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/context-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/context-menu-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/context-menu-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/context-menu-cs1/app/main.ts %}
+{% include code-snippet/file-manager/context-menu-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -46,13 +46,13 @@ The details view settings like, column width, header text, template for each fie
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/detailsview-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/detailsview-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/detailsview-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/detailsview-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/detailsview-cs1/app/main.ts %}
+{% include code-snippet/file-manager/detailsview-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -64,13 +64,13 @@ The navigation pane settings like, minimum and maximum width and visibility can 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/navigationpane-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/navigationpane-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/navigationpane-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/navigationpane-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/navigationpane-cs1/app/main.ts %}
+{% include code-snippet/file-manager/navigationpane-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -84,13 +84,13 @@ In File Manager [fileLoad](https://ej2.syncfusion.com/angular/documentation/api/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/fileextension-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/fileextension-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/fileextension-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/fileextension-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/fileextension-cs1/app/main.ts %}
+{% include code-snippet/file-manager/fileextension-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -102,13 +102,13 @@ The File Manager provides support to show/hide the hidden items by enabling/disa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/hiddenitems-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/hiddenitems-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/hiddenitems-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/hiddenitems-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/hiddenitems-cs1/app/main.ts %}
+{% include code-snippet/file-manager/hiddenitems-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -120,13 +120,13 @@ The thumbnail images are displayed in the File Manager's large icons view by def
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/disablethumbnail-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/disablethumbnail-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/disablethumbnail-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/disablethumbnail-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/disablethumbnail-cs1/app/main.ts %}
+{% include code-snippet/file-manager/disablethumbnail-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -138,13 +138,13 @@ The toolbar settings like, items to be displayed in toolbar and visibility can b
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/toolbar-customize-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/toolbar-customize-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/toolbar-customize-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/toolbar-customize-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/toolbar-customize-cs1/app/main.ts %}
+{% include code-snippet/file-manager/toolbar-customize-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -160,13 +160,13 @@ The upload settings like, minimum and maximum file size and enabling auto upload
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/upload-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/upload-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/upload-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/upload-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/upload-cs1/app/main.ts %}
+{% include code-snippet/file-manager/upload-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -178,13 +178,13 @@ The tooltip value can be customized by adding extra content to the title of the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/tooltip-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/tooltip-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/tooltip-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/tooltip-cs1/app/main.ts %}
+{% include code-snippet/file-manager/tooltip-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

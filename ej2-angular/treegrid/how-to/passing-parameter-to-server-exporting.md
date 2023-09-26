@@ -16,13 +16,13 @@ In the below example, we have passed *recordcount* as *12* using [`addParams`](h
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/refresh-cs11/app/app.component.ts %}
+{% include code-snippet/treegrid/refresh-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/refresh-cs11/app/app.module.ts %}
+{% include code-snippet/treegrid/refresh-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/refresh-cs11/app/main.ts %}
+{% include code-snippet/treegrid/refresh-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

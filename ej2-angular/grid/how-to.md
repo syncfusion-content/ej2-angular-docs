@@ -780,17 +780,17 @@ You can customize the default filter operator list by defining the [`filterSetti
 In the following sample, we have customized string filter operators.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filtering1-cs11/src/app.component.ts %}
+{% include code-snippet/grid/filter-menu-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering1-cs11/src/app.module.ts %}
+{% include code-snippet/grid/filter-menu-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filtering1-cs11/src/main.ts %}
+{% include code-snippet/grid/filter-menu-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/filtering1-cs11" %}
+{% previewsample "page.domainurl/samples/grid/filter-menu-cs4" %}
 
 ### Customize filter UI in foreign key column
 

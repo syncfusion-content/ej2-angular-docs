@@ -16,13 +16,13 @@ To use checkbox, inject the `CheckBoxSelection` module in the MultiSelect.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/multiselect/checkbox-cs1/app/app.component.ts %}
+{% include code-snippet/multiselect/checkbox-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/checkbox-cs1/app/app.module.ts %}
+{% include code-snippet/multiselect/checkbox-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/multiselect/checkbox-cs1/app/main.ts %}
+{% include code-snippet/multiselect/checkbox-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ For the unSelect All option, by default unSelect All text will show. You can cus
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/multiselect/checkbox-cs2/app/app.component.ts %}
+{% include code-snippet/multiselect/checkbox-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/checkbox-cs2/app/app.module.ts %}
+{% include code-snippet/multiselect/checkbox-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/multiselect/checkbox-cs2/app/main.ts %}
+{% include code-snippet/multiselect/checkbox-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ Defines the limit of the selected items using [`maximumSelectionLength`](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/multiselect/checkbox-cs3/app/app.component.ts %}
+{% include code-snippet/multiselect/checkbox-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/checkbox-cs3/app/app.module.ts %}
+{% include code-snippet/multiselect/checkbox-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/multiselect/checkbox-cs3/app/main.ts %}
+{% include code-snippet/multiselect/checkbox-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -74,13 +74,13 @@ Using [`enableSelectionOrder`](https://ej2.syncfusion.com/angular/documentation/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/multiselect/checkbox-cs4/app/app.component.ts %}
+{% include code-snippet/multiselect/checkbox-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/checkbox-cs4/app/app.module.ts %}
+{% include code-snippet/multiselect/checkbox-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/multiselect/checkbox-cs4/app/main.ts %}
+{% include code-snippet/multiselect/checkbox-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

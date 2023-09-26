@@ -183,13 +183,13 @@ In this sample, "Product Categories" is added in column, "Customer Geography" in
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs189/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs189/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs189/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs189/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs189/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs189/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -203,13 +203,13 @@ Formatting defines a way in which values should be displayed. For example, forma
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs190/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs190/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs190/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs190/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs190/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs190/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -223,13 +223,13 @@ The Grouping Bar feature automatically populates [OLAP cube elements](#olap-cube
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs191/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs191/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs191/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs191/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs191/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs191/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -243,13 +243,13 @@ The component provides a built-in Field List similar to Microsoft Excel. It allo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs192/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs192/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs192/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs192/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs192/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs192/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -261,13 +261,13 @@ The filter axis contains collection of [OLAP cube elements](#olap-cube-elements)
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs193/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs193/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs193/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs193/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs193/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs193/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -296,13 +296,13 @@ Also calculated fields can be added at run time through the built-in dialog. The
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs194/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs194/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs194/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs194/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs194/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs194/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -414,13 +414,13 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs195/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs195/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs195/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs195/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs195/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs195/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -442,13 +442,13 @@ ng serve --open
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs196/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs196/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs196/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs196/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs196/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs196/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -467,13 +467,13 @@ To bind OLAP datasource to the pivot table, you need to specify following proper
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs197/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs197/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs197/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs197/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs197/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs197/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -487,13 +487,13 @@ By default, the measures are plotted in column axis. To plot those measures in r
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs198/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs198/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs198/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs198/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs198/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs198/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -505,13 +505,13 @@ You can place measures in different position in row or column axis either thorou
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs199/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs199/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs199/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs199/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs199/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs199/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -525,13 +525,13 @@ You can bind the named sets in the pivot table by setting it's unique name in th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs200/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs200/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs200/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs200/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs200/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs200/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -26,13 +26,13 @@ Through the `e-rte-placeholder` class to define our custom font family, font col
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs18/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs18/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs18/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ To use quick `Character Count` feature, inject `CountService` in the provider se
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs19/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs19/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs19/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs19/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs19/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -74,13 +74,13 @@ This sample used [`Code mirror`](https://codemirror.net/) plugin helps to highli
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs20/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs20/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs20/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs20/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs20/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -97,13 +97,13 @@ Customize the undo/redo step count using the [`undoRedoSteps`](https://ej2.syncf
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs21/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs21/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs21/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs21/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs21/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -117,13 +117,13 @@ In the following sample, removed `script` tag and `onmouseover` attribute from c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs22/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs22/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs22/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs22/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs22/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -139,13 +139,13 @@ The following sample demonstrate how to filter `script` tag from value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs23/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs23/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs23/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs23/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs23/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -161,13 +161,13 @@ To render the Rich Text Editor in the resizable mode, set the `enableResize` pro
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/toolbar/multirow-cs1/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/toolbar/multirow-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/toolbar/multirow-cs1/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/toolbar/multirow-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/toolbar/multirow-cs1/app/main.ts %}
+{% include code-snippet/rich-text-editor/toolbar/multirow-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -179,13 +179,13 @@ To have a restricted resizable area for the Rich Text Editor, you need to specif
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/how-to/rename-image-cs1/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/how-to/rename-image-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/how-to/rename-image-cs1/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/how-to/rename-image-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/how-to/rename-image-cs1/app/main.ts %}
+{% include code-snippet/rich-text-editor/how-to/rename-image-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -197,13 +197,13 @@ This feature allows the user to change the appearance of the Numbered and Bullet
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/format-lists-cs1/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/format-lists-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/format-lists-cs1/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/format-lists-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/format-lists-cs1/app/main.ts %}
+{% include code-snippet/rich-text-editor/format-lists-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

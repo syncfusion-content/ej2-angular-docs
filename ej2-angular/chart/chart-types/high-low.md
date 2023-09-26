@@ -19,13 +19,13 @@ Hilo series requires 3 fields (x, high and low) to show the high and low price i
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/hilo-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/hilo-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/hilo-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/hilo-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/hilo-cs1/app/main.ts %}
+{% include code-snippet/chart/series/hilo-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ The following properties can be used to customize the `hilo` series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/hilo-cs/app/app.component.ts %}
+{% include code-snippet/chart/series/hilo-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/hilo-cs/app/app.module.ts %}
+{% include code-snippet/chart/series/hilo-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/hilo-cs/app/main.ts %}
+{% include code-snippet/chart/series/hilo-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

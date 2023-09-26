@@ -27,13 +27,13 @@ To restrict either save or cancel button rendering into a DOM, simply pass empty
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/in-place-editor/show-buttons-cs1/app/app.component.ts %}
+{% include code-snippet/in-place-editor/show-buttons-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/show-buttons-cs1/app/app.module.ts %}
+{% include code-snippet/in-place-editor/show-buttons-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/in-place-editor/show-buttons-cs1/app/main.ts %}
+{% include code-snippet/in-place-editor/show-buttons-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -20,13 +20,13 @@ To known about logarithmic axis, you can check on this video:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/log-cs5/app/app.component.ts %}
+{% include code-snippet/chart/axis/log-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/log-cs5/app/app.module.ts %}
+{% include code-snippet/chart/axis/log-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/log-cs5/app/main.ts %}
+{% include code-snippet/chart/axis/log-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ Range of an axis, will be calculated automatically based on the provided data, y
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/log-cs6/app/app.component.ts %}
+{% include code-snippet/chart/axis/log-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/log-cs6/app/app.module.ts %}
+{% include code-snippet/chart/axis/log-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/log-cs6/app/main.ts %}
+{% include code-snippet/chart/axis/log-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,13 +60,13 @@ For example when the logBase is 5, the axis values follows 5<sup>-2</sup>, 5<su
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/log-cs7/app/app.component.ts %}
+{% include code-snippet/chart/axis/log-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/log-cs7/app/app.module.ts %}
+{% include code-snippet/chart/axis/log-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/log-cs7/app/main.ts %}
+{% include code-snippet/chart/axis/log-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -78,13 +78,13 @@ Logarithmic axis interval can be customized by using the [`interval`](https://ej
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/log-cs8/app/app.component.ts %}
+{% include code-snippet/chart/axis/log-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/log-cs8/app/app.module.ts %}
+{% include code-snippet/chart/axis/log-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/log-cs8/app/main.ts %}
+{% include code-snippet/chart/axis/log-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

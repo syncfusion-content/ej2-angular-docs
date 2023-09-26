@@ -24,16 +24,16 @@ After that, the DatePicker value will be selected based on the ngModel value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/datepicker/template-driven-cs1/app/app.component.ts %}
+{% include code-snippet/datepicker/template-driven-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/template-driven-cs1/app/app.module.ts %}
+{% include code-snippet/datepicker/template-driven-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/datepicker/template-driven-cs1/app/main.ts %}
+{% include code-snippet/datepicker/template-driven-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="template.html" %}
-{% include code-snippet/datepicker/template-driven-cs1/app/template.html %}
+{% include code-snippet/datepicker/template-driven-cs1/src/template.html %}
 {% endhighlight %}
 {% endtabs %}
   

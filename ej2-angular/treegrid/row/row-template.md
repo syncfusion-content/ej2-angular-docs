@@ -14,13 +14,13 @@ The [`rowTemplate`](https://ej2.syncfusion.com/angular/documentation/api/treegri
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/row-cs8/app/app.component.ts %}
+{% include code-snippet/treegrid/row-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs8/app/app.module.ts %}
+{% include code-snippet/treegrid/row-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/row-cs8/app/main.ts %}
+{% include code-snippet/treegrid/row-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ If the [`rowTemplate`](https://ej2.syncfusion.com/angular/documentation/api/tree
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/row-cs9/app/app.component.ts %}
+{% include code-snippet/treegrid/row-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs9/app/app.module.ts %}
+{% include code-snippet/treegrid/row-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/row-cs9/app/main.ts %}
+{% include code-snippet/treegrid/row-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

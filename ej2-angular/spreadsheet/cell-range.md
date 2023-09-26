@@ -26,13 +26,13 @@ The following code example shows the wrap text functionality in spreadsheet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/wrap-text-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/wrap-text-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/wrap-text-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/wrap-text-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/wrap-text-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/wrap-text-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -68,13 +68,13 @@ The following code example shows the merge cells operation in spreadsheet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/merge-cells-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/merge-cells-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/merge-cells-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/merge-cells-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/merge-cells-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/merge-cells-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -131,13 +131,13 @@ You can clear the highlighted invalid data by using the following ways,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/data-validation-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/data-validation-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/data-validation-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/data-validation-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/data-validation-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/data-validation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -217,13 +217,13 @@ In the following sample, you can enable/disable the fill option on the button cl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/autofill-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/autofill-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/autofill-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/autofill-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/autofill-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/autofill-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -262,13 +262,13 @@ Clear the cell contents and formats in the Spreadsheet document by using the [cl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/clear-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/clear-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/clear-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/clear-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/clear-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/clear-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

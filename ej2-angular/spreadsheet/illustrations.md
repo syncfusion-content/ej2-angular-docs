@@ -71,13 +71,13 @@ Image feature allows you to view and insert an image in a spreadsheet, and you c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/image-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/image-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/image-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/image-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/image-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/image-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -131,13 +131,13 @@ The available arguments in the `ChartModel` are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/chart-cs2/app/app.component.ts %}
+{% include code-snippet/spreadsheet/chart-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/chart-cs2/app/app.module.ts %}
+{% include code-snippet/spreadsheet/chart-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/chart-cs2/app/main.ts %}
+{% include code-snippet/spreadsheet/chart-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -164,13 +164,13 @@ Chart feature allows you to view and insert a chart in a spreadsheet, and you ca
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/chart-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/chart-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/chart-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/chart-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/chart-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/chart-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -182,13 +182,13 @@ Using the [`actionBegin`](../api/spreadsheet/#actionbegin) event, you can change
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/chart-cs3/app/app.component.ts %}
+{% include code-snippet/spreadsheet/chart-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/chart-cs3/app/app.module.ts %}
+{% include code-snippet/spreadsheet/chart-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/chart-cs3/app/main.ts %}
+{% include code-snippet/spreadsheet/chart-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

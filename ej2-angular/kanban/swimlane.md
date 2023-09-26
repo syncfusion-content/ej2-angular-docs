@@ -18,13 +18,13 @@ Cards can be grouped based on `keyField` and displayed in rows, which are separa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/swimlane-key-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/swimlane-key-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/swimlane-key-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/swimlane-key-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/swimlane-key-cs1/app/main.ts %}
+{% include code-snippet/kanban/swimlane-key-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ Customize the swimlane row header text by using the `textField` property mapped 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/swimlane-text-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/swimlane-text-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/swimlane-text-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/swimlane-text-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/swimlane-text-cs1/app/main.ts %}
+{% include code-snippet/kanban/swimlane-text-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -57,13 +57,13 @@ You can customize the Kanban swimlane row by using the `template` property, whic
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/swimlane-template-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/swimlane-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/swimlane-template-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/swimlane-template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/swimlane-template-cs1/app/main.ts %}
+{% include code-snippet/kanban/swimlane-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -75,13 +75,13 @@ Swimlane rows are rendered on descending order when using the `sortBy` property 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/swimlane-sort-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/swimlane-sort-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/swimlane-sort-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/swimlane-sort-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/swimlane-sort-cs1/app/main.ts %}
+{% include code-snippet/kanban/swimlane-sort-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -93,13 +93,13 @@ By default, The Kanban does not allow dragging the cards across the swimlane row
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/swimlane-drag-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/swimlane-drag-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/swimlane-drag-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/swimlane-drag-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/swimlane-drag-cs1/app/main.ts %}
+{% include code-snippet/kanban/swimlane-drag-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -111,13 +111,13 @@ You can render the empty swimlane row by enabling the `showEmptyRow` property. I
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/swimlane-empty-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/swimlane-empty-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/swimlane-empty-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/swimlane-empty-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/swimlane-empty-cs1/app/main.ts %}
+{% include code-snippet/kanban/swimlane-empty-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -133,13 +133,13 @@ In below demo, disabled on `showItemCount` property on rendering swimlane row wi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/swimlane-total-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/swimlane-total-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/swimlane-total-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/swimlane-total-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/swimlane-total-cs1/app/main.ts %}
+{% include code-snippet/kanban/swimlane-total-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -155,13 +155,13 @@ By default, the `enableFrozenRows` property is set as `false`. If you wish to sh
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/swimlane-enable-frozen-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/swimlane-enable-frozen-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/swimlane-enable-frozen-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/swimlane-enable-frozen-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/swimlane-enable-frozen-cs1/app/main.ts %}
+{% include code-snippet/kanban/swimlane-enable-frozen-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

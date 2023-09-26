@@ -15,13 +15,13 @@ By default, the legend will be placed on the right, if the width of the chart is
 Here, the legend for a point can be collapsed by giving the empty string to the x value of the point.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/legend-cs2/app/app.component.ts %}
+{% include code-snippet/chart/series/legend-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/legend-cs2/app/app.module.ts %}
+{% include code-snippet/chart/series/legend-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/legend-cs2/app/main.ts %}
+{% include code-snippet/chart/series/legend-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ You can also align the legend to `center`, `far` or `near` of the chart usi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs8/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs8/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs8/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -52,13 +52,13 @@ You can reverse the order of the legend items by using the [`reverse`](https://e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs9/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs9/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs9/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ To change the legend icon shape, use the `legendShape` property in the `series
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs10/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs10/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs10/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -88,13 +88,13 @@ The legend size can be changed by using the `width` and `height` properties of t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs11/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs11/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs11/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -106,13 +106,13 @@ You can customize the size of the legend items by using the `shapeHeight` and `s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs12/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs12/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs12/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -124,13 +124,13 @@ You can customize the animation while clicking legend by setting enableAnimation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs13/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs13/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs13/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -142,13 +142,13 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs14/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs14/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs14/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -160,13 +160,13 @@ When the legend text exceeds the container, the text can be wrapped by using `te
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs15/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs15/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs15/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -178,13 +178,13 @@ You can set title for legend using `title` property in `legendSettings`. You can
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs16/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs16/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs16/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -196,13 +196,13 @@ By default, the page number will be enabled while legend paging. Now, you can di
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs17/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs17/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs17/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -214,13 +214,13 @@ The [`itemPadding`](https://ej2.syncfusion.com/angular/documentation/api/accumul
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs18/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs18/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs18/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

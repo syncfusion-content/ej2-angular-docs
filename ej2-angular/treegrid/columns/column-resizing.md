@@ -16,13 +16,13 @@ To use the column resize, inject `Resize` module in the treegrid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs10/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs10/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs10/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ In the following sample, minimum and maximum width are defined for `Duration`, a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs11/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs11/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs11/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -57,13 +57,13 @@ Stacked columns can be resized by clicking and dragging the right edge of the st
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs12/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs12/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs12/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -89,13 +89,13 @@ During the resizing action, the tree grid component triggers the following three
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/resize-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/resize-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/resize-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/resize-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/resize-cs1/app/main.ts %}
+{% include code-snippet/treegrid/resize-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

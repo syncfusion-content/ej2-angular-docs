@@ -21,13 +21,13 @@ To bind local JSON data to the Kanban, you can simply assign a JavaScript object
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/local-data-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/local-data-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/local-data-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/local-data-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/local-data-cs1/app/main.ts %}
+{% include code-snippet/kanban/local-data-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -41,13 +41,13 @@ To bind remote data to kanban component, assign service data as an instance of [
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/remote-data-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/remote-data-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/remote-data-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/remote-data-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/remote-data-cs1/app/main.ts %}
+{% include code-snippet/kanban/remote-data-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -61,13 +61,13 @@ To bind remote data to kanban component, assign service data as an instance of [
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/odata-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/odata-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/odata-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/odata-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/odata-cs1/app/main.ts %}
+{% include code-snippet/kanban/odata-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -79,13 +79,13 @@ The ODataV4 is an improved version of OData protocols, and the [`DataManager`](.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/odataV4-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/odataV4-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/odataV4-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/odataV4-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/odataV4-cs1/app/main.ts %}
+{% include code-snippet/kanban/odataV4-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -220,13 +220,13 @@ It is possible to create your own custom adaptor by extending the built-in avail
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/custom-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/custom-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/custom-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/custom-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/custom-cs1/app/main.ts %}
+{% include code-snippet/kanban/custom-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -238,13 +238,13 @@ To add a custom parameter to the data request, use the **addParams** method of *
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/additional-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/additional-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/additional-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/additional-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/additional-cs1/app/main.ts %}
+{% include code-snippet/kanban/additional-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -260,13 +260,13 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/error-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/error-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/error-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/error-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/error-cs1/app/main.ts %}
+{% include code-snippet/kanban/error-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -280,13 +280,13 @@ You can use Kanban [`dataSource`](https://ej2.syncfusion.com/angular/documentati
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/ajax-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/ajax-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/ajax-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/ajax-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/ajax-cs1/app/main.ts %}
+{% include code-snippet/kanban/ajax-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -22,13 +22,13 @@ You can use the [`openIconCss`](https://ej2.syncfusion.com/angular/documentation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speed-dial/styles-cs1/app/app.component.ts %}
+{% include code-snippet/speed-dial/styles-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/styles-cs1/app/app.module.ts %}
+{% include code-snippet/speed-dial/styles-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/speed-dial/styles-cs1/app/main.ts %}
+{% include code-snippet/speed-dial/styles-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ You can show only text in Speed Dial button by setting [`content`](https://ej2.s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speed-dial/styles-cs2/app/app.component.ts %}
+{% include code-snippet/speed-dial/styles-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/styles-cs2/app/app.module.ts %}
+{% include code-snippet/speed-dial/styles-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/speed-dial/styles-cs2/app/main.ts %}
+{% include code-snippet/speed-dial/styles-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ You show icon and text in SpeedDial button using [`openIconCss`](https://ej2.syn
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speed-dial/styles-cs3/app/app.component.ts %}
+{% include code-snippet/speed-dial/styles-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/styles-cs3/app/app.module.ts %}
+{% include code-snippet/speed-dial/styles-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/speed-dial/styles-cs3/app/main.ts %}
+{% include code-snippet/speed-dial/styles-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -101,13 +101,13 @@ The Angular Speed Dial supports the following predefined styles that can be defi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speed-dial/styles-cs4/app/app.component.ts %}
+{% include code-snippet/speed-dial/styles-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/styles-cs4/app/app.module.ts %}
+{% include code-snippet/speed-dial/styles-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/speed-dial/styles-cs4/app/main.ts %}
+{% include code-snippet/speed-dial/styles-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -135,13 +135,13 @@ You can show tooltip on hover to show additional details to end-user by setting 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speed-dial/styles-cs5/app/app.component.ts %}
+{% include code-snippet/speed-dial/styles-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/styles-cs5/app/app.module.ts %}
+{% include code-snippet/speed-dial/styles-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/speed-dial/styles-cs5/app/main.ts %}
+{% include code-snippet/speed-dial/styles-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -153,13 +153,13 @@ You can use [`opensOnHover`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speed-dial/styles-cs6/app/app.component.ts %}
+{% include code-snippet/speed-dial/styles-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/styles-cs6/app/app.module.ts %}
+{% include code-snippet/speed-dial/styles-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/speed-dial/styles-cs6/app/main.ts %}
+{% include code-snippet/speed-dial/styles-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -44,13 +44,13 @@ Here is an example of adding a text in a button click using [`drawText`](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs1/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs1/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs1/app/main.ts %}
+{% include code-snippet/image-editor/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -64,13 +64,13 @@ Here is an example of adding a multiline text in a button click using [`drawText
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs26/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs26/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs26/app/main.ts %}
+{% include code-snippet/image-editor/default-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -88,13 +88,13 @@ Here is an example of deleting a text in a button click using [`deleteShape`](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs25/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs25/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs25/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs25/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs25/app/main.ts %}
+{% include code-snippet/image-editor/default-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -110,13 +110,13 @@ Here is an example of changing the text’s color and its font family using the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs32/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs32/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs32/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs32/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs32/app/main.ts %}
+{% include code-snippet/image-editor/default-cs32/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -132,13 +132,13 @@ Here is an example of using the [`freeHandDraw`](https://ej2.syncfusion.com/angu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs2/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs2/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs2/app/main.ts %}
+{% include code-snippet/image-editor/default-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -154,13 +154,13 @@ Here is an example of changing the freehand draw stroke width and color using th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs4/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs4/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs4/app/main.ts %}
+{% include code-snippet/image-editor/default-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -178,13 +178,13 @@ Here is an example of deleting a freehand annotation in a button click using [`d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs26/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs26/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs26/app/main.ts %}
+{% include code-snippet/image-editor/default-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -283,13 +283,13 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs3/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs3/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs3/app/main.ts %}
+{% include code-snippet/image-editor/default-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -307,13 +307,13 @@ Here is an example of deleting rectangle, ellipse, arrow, path, and line in a bu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs5/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs5/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs5/app/main.ts %}
+{% include code-snippet/image-editor/default-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

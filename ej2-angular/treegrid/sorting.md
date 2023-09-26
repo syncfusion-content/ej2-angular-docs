@@ -21,13 +21,13 @@ To sort, inject the [`Sort`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/sorting-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/sorting-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/sorting-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/sorting-cs1/app/main.ts %}
+{% include code-snippet/treegrid/sorting-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -44,13 +44,13 @@ To sort at initial rendering, set the [`field`](https://ej2.syncfusion.com/angul
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/sorting-cs2/app/app.component.ts %}
+{% include code-snippet/treegrid/sorting-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs2/app/app.module.ts %}
+{% include code-snippet/treegrid/sorting-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/sorting-cs2/app/main.ts %}
+{% include code-snippet/treegrid/sorting-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -67,13 +67,13 @@ To clear sorting for a particular column, press the "Shift + mouse left click."
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/sorting-cs3/app/app.component.ts %}
+{% include code-snippet/treegrid/sorting-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs3/app/app.module.ts %}
+{% include code-snippet/treegrid/sorting-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/sorting-cs3/app/main.ts %}
+{% include code-snippet/treegrid/sorting-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -96,13 +96,13 @@ In the following example, the custom sort comparer function was defined in the *
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/sorting-cs4/app/app.component.ts %}
+{% include code-snippet/treegrid/sorting-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs4/app/app.module.ts %}
+{% include code-snippet/treegrid/sorting-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/sorting-cs4/app/main.ts %}
+{% include code-snippet/treegrid/sorting-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -114,13 +114,13 @@ During the sort action, the treegrid component triggers two events. The [`action
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/sorting-cs5/app/app.component.ts %}
+{% include code-snippet/treegrid/sorting-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs5/app/app.module.ts %}
+{% include code-snippet/treegrid/sorting-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/sorting-cs5/app/main.ts %}
+{% include code-snippet/treegrid/sorting-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -136,13 +136,13 @@ In the following example, custom sort comparer function was defined in the `Cate
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/sorting-cs6/app/app.component.ts %}
+{% include code-snippet/treegrid/sorting-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs6/app/app.module.ts %}
+{% include code-snippet/treegrid/sorting-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/sorting-cs6/app/main.ts %}
+{% include code-snippet/treegrid/sorting-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

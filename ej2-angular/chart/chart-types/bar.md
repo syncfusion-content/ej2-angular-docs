@@ -16,13 +16,13 @@ To render a bar series, use series [`type`](https://ej2.syncfusion.com/angular/d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/bar-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/bar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/bar-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/bar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/bar-cs1/app/main.ts %}
+{% include code-snippet/chart/series/bar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/bar-cs/app/app.component.ts %}
+{% include code-snippet/chart/series/bar-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/bar-cs/app/app.module.ts %}
+{% include code-snippet/chart/series/bar-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/bar-cs/app/main.ts %}
+{% include code-snippet/chart/series/bar-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -52,13 +52,13 @@ You can use the [`groupName`](https://ej2.syncfusion.com/angular/documentation/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/bar-cs5/app/app.component.ts %}
+{% include code-snippet/chart/series/bar-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/bar-cs5/app/app.module.ts %}
+{% include code-snippet/chart/series/bar-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/bar-cs5/app/main.ts %}
+{% include code-snippet/chart/series/bar-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ To render a cylindrical bar chart, set the `columnFacet` property to `Cylinder` 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/bar-cs7/app/app.component.ts %}
+{% include code-snippet/chart/series/bar-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/bar-cs7/app/app.module.ts %}
+{% include code-snippet/chart/series/bar-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/bar-cs7/app/main.ts %}
+{% include code-snippet/chart/series/bar-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -93,13 +93,13 @@ The following properties can be used to customize the `bar` series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/bar-cs6/app/app.component.ts %}
+{% include code-snippet/chart/series/bar-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/bar-cs6/app/app.module.ts %}
+{% include code-snippet/chart/series/bar-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/bar-cs6/app/main.ts %}
+{% include code-snippet/chart/series/bar-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

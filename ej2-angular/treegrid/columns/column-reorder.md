@@ -16,13 +16,13 @@ To use reordering, inject the [`Reorder`](https://ej2.syncfusion.com/angular/doc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs6/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs6/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs6/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ The tree grid have an option to reorder Columns either by interaction or by usin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs7/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs7/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs7/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ Multiple columns can be reordered at a time by using the [`reorderColumns`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs8/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs8/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs8/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -76,13 +76,13 @@ During the reorder action, the tree grid component triggers the following three 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/reorder-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/reorder-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/reorder-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/reorder-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/reorder-cs1/app/main.ts %}
+{% include code-snippet/treegrid/reorder-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -96,13 +96,13 @@ In the below example, duration column is locked and its reordering functionality
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs9/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs9/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs9/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

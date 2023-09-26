@@ -20,13 +20,13 @@ The following example illustrates the single selection behavior in ButtonGroup.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/button-group/default-cs9/app/app.component.ts %}
+{% include code-snippet/button-group/default-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button-group/default-cs9/app/app.module.ts %}
+{% include code-snippet/button-group/default-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/button-group/default-cs9/app/main.ts %}
+{% include code-snippet/button-group/default-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ The following example illustrates the multiple selection behavior in ButtonGroup
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/button-group/default-cs10/app/app.component.ts %}
+{% include code-snippet/button-group/default-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button-group/default-cs10/app/app.module.ts %}
+{% include code-snippet/button-group/default-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/button-group/default-cs10/app/main.ts %}
+{% include code-snippet/button-group/default-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -69,13 +69,13 @@ In the following example, the DropDownButton component is rendered in `app.compo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/button-group/drop-down-button-cs1/app/app.component.ts %}
+{% include code-snippet/button-group/drop-down-button-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button-group/drop-down-button-cs1/app/app.module.ts %}
+{% include code-snippet/button-group/drop-down-button-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/button-group/drop-down-button-cs1/app/main.ts %}
+{% include code-snippet/button-group/drop-down-button-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -89,13 +89,13 @@ In the following example, the SplitButton component is rendered in `app.componen
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/button-group/split-button-cs1/app/app.component.ts %}
+{% include code-snippet/button-group/split-button-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button-group/split-button-cs1/app/app.module.ts %}
+{% include code-snippet/button-group/split-button-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/button-group/split-button-cs1/app/main.ts %}
+{% include code-snippet/button-group/split-button-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

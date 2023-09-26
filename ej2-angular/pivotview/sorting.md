@@ -33,13 +33,13 @@ Member sorting can also be configured using the [`sortSettings`](https://ej2.syn
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs273/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs273/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs273/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs273/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs273/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs273/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -51,13 +51,13 @@ Usually string sorting is applied to field members even if it starts with number
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs274/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs274/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs274/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs274/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs274/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs274/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -73,13 +73,13 @@ Allows to sort field headers (aka, members) in rows and columns based on user-de
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs275/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs275/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs275/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs275/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs275/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs275/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -101,13 +101,13 @@ The value sorting can also be configured using the [`valueSortSettings`](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs276/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs276/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs276/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs276/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs276/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs276/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -131,13 +131,13 @@ When sorting is applied, the event [`onHeadersSort`](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs277/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs277/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs277/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs277/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs277/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs277/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -166,13 +166,13 @@ In the below sample, sort action can be restricted by setting the **args.cancel*
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs278/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs278/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs278/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs278/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs278/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs278/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -199,13 +199,13 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs279/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs279/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs279/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs279/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs279/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs279/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -226,13 +226,13 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs280/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs280/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs280/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs280/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs280/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs280/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

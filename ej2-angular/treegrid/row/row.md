@@ -19,13 +19,13 @@ The [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/row-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/row-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/row-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/row-cs1/app/main.ts %}
+{% include code-snippet/treegrid/row-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ Please refer to the following example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/alt-row-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/alt-row-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/alt-row-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/alt-row-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/alt-row-cs1/app/main.ts %}
+{% include code-snippet/treegrid/alt-row-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -82,13 +82,13 @@ To get row element you can use [`getRows`](https://ej2.syncfusion.com/angular/do
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs41/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs41/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs41/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs41/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs41/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs41/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -137,13 +137,13 @@ The output will display the kanban header.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/getting-started-empty-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/getting-started-empty-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/getting-started-empty-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/getting-started-empty-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/getting-started-empty-cs1/app/main.ts %}
+{% include code-snippet/kanban/getting-started-empty-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -155,13 +155,13 @@ To populate the empty Kanban with cards, define the local JSON data or remote da
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/getting-started-key-field-cs2/app/app.component.ts %}
+{% include code-snippet/kanban/getting-started-key-field-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/getting-started-key-field-cs2/app/app.module.ts %}
+{% include code-snippet/kanban/getting-started-key-field-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/getting-started-key-field-cs2/app/main.ts %}
+{% include code-snippet/kanban/getting-started-key-field-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -173,13 +173,13 @@ To populate the empty Kanban with cards, define the local JSON data or remote da
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/getting-started-swimlane-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/getting-started-swimlane-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/getting-started-swimlane-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/getting-started-swimlane-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/getting-started-swimlane-cs1/app/main.ts %}
+{% include code-snippet/kanban/getting-started-swimlane-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

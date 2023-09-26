@@ -202,13 +202,13 @@ Since the JSON contains datetime data, set the [`valueType`](https://ej2.syncfus
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/getting-started/datasource-cs1/app/app.component.ts %}
+{% include code-snippet/stock-chart/getting-started/datasource-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/getting-started/datasource-cs1/app/app.module.ts %}
+{% include code-snippet/stock-chart/getting-started/datasource-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/getting-started/datasource-cs1/app/main.ts %}
+{% include code-snippet/stock-chart/getting-started/datasource-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -220,13 +220,13 @@ You can add a title using [`title`](https://ej2.syncfusion.com/angular/documenta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/getting-started/title-cs1/app/app.component.ts %}
+{% include code-snippet/stock-chart/getting-started/title-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/getting-started/title-cs1/app/app.module.ts %}
+{% include code-snippet/stock-chart/getting-started/title-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/getting-started/title-cs1/app/main.ts %}
+{% include code-snippet/stock-chart/getting-started/title-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -240,13 +240,13 @@ Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/getting-started/crosshair-cs1/app/app.component.ts %}
+{% include code-snippet/stock-chart/getting-started/crosshair-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/getting-started/crosshair-cs1/app/app.module.ts %}
+{% include code-snippet/stock-chart/getting-started/crosshair-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/getting-started/crosshair-cs1/app/main.ts %}
+{% include code-snippet/stock-chart/getting-started/crosshair-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -260,13 +260,13 @@ Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/getting-started/trackball-cs1/app/app.component.ts %}
+{% include code-snippet/stock-chart/getting-started/trackball-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/getting-started/trackball-cs1/app/app.module.ts %}
+{% include code-snippet/stock-chart/getting-started/trackball-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/getting-started/trackball-cs1/app/main.ts %}
+{% include code-snippet/stock-chart/getting-started/trackball-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

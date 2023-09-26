@@ -18,13 +18,13 @@ In the following example, the `SortOrder` is set as `Descending`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listbox/getting-started-cs16/app/app.component.ts %}
+{% include code-snippet/listbox/getting-started-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listbox/getting-started-cs16/app/app.module.ts %}
+{% include code-snippet/listbox/getting-started-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listbox/getting-started-cs16/app/main.ts %}
+{% include code-snippet/listbox/getting-started-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ In the following example, vegetables are grouped based on its category.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listbox/getting-started-cs17/app/app.component.ts %}
+{% include code-snippet/listbox/getting-started-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listbox/getting-started-cs17/app/app.module.ts %}
+{% include code-snippet/listbox/getting-started-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listbox/getting-started-cs17/app/main.ts %}
+{% include code-snippet/listbox/getting-started-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

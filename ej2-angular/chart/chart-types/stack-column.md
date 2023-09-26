@@ -15,13 +15,13 @@ To render a stacked column series, use series [`type`](https://ej2.syncfusion.co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs20/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs20/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs20/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs20/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs20/app/main.ts %}
+{% include code-snippet/chart/series/column-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,13 +36,13 @@ Columns with same group name are stacked on top of each other.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs22/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs22/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs22/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs22/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs22/app/main.ts %}
+{% include code-snippet/chart/series/column-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -54,13 +54,13 @@ To render a cylindrical stacked column chart, set the `columnFacet` property to 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs33/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs33/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs33/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs33/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs33/app/main.ts %}
+{% include code-snippet/chart/series/column-cs33/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,13 +77,13 @@ The following properties can be used to customize the `stacked column` series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/stackedcolumn-cs/app/app.component.ts %}
+{% include code-snippet/chart/series/stackedcolumn-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/stackedcolumn-cs/app/app.module.ts %}
+{% include code-snippet/chart/series/stackedcolumn-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/stackedcolumn-cs/app/main.ts %}
+{% include code-snippet/chart/series/stackedcolumn-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -15,13 +15,13 @@ To render a 100% stacked bar series, use series [`type`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/bar-cs3/app/app.component.ts %}
+{% include code-snippet/chart/series/bar-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/bar-cs3/app/app.module.ts %}
+{% include code-snippet/chart/series/bar-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/bar-cs3/app/main.ts %}
+{% include code-snippet/chart/series/bar-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,13 +33,13 @@ To render a 100% cylindrical stacked bar chart, set the `columnFacet` property t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/bar-cs9/app/app.component.ts %}
+{% include code-snippet/chart/series/bar-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/bar-cs9/app/app.module.ts %}
+{% include code-snippet/chart/series/bar-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/bar-cs9/app/main.ts %}
+{% include code-snippet/chart/series/bar-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,13 +56,13 @@ The following properties can be used to customize the `100% stacked bar` series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/stackedbar-cs/app/app.component.ts %}
+{% include code-snippet/chart/series/stackedbar-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/stackedbar-cs/app/app.module.ts %}
+{% include code-snippet/chart/series/stackedbar-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/stackedbar-cs/app/main.ts %}
+{% include code-snippet/chart/series/stackedbar-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -14,13 +14,13 @@ In Batch edit mode, when you double-click on the tree grid cell, then the target
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs3/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs3/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs3/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ In the following demo, we have update the **price** column value based on the **
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs4/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs4/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs4/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -59,13 +59,13 @@ In the following demo, the CRUD operation have been prevented based on the **Pri
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs5/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs5/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs5/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -77,13 +77,13 @@ By default, the tree grid will show the confirm dialog when saving, cancelling, 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs6/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs6/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs6/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -98,13 +98,13 @@ To save a cell in tree grid, use the [`saveCell`](https://ej2.syncfusion.com/ang
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs6/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs6/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs6/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

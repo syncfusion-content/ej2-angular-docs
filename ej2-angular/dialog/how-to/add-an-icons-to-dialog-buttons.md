@@ -16,13 +16,13 @@ In the following sample, dialog footer buttons are customized with icons using `
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/dlg-buttons-cs1/app/app.component.ts %}
+{% include code-snippet/dialog/dlg-buttons-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dlg-buttons-cs1/app/app.module.ts %}
+{% include code-snippet/dialog/dlg-buttons-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/dlg-buttons-cs1/app/main.ts %}
+{% include code-snippet/dialog/dlg-buttons-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -32,13 +32,13 @@ In the following sample, dialog footer buttons are customized with icons using `
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/dlg-footer-cs1/app/app.component.ts %}
+{% include code-snippet/dialog/dlg-footer-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dlg-footer-cs1/app/app.module.ts %}
+{% include code-snippet/dialog/dlg-footer-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/dlg-footer-cs1/app/main.ts %}
+{% include code-snippet/dialog/dlg-footer-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

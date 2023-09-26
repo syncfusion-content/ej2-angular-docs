@@ -36,13 +36,13 @@ Here is an example of adding custom toolbar items to rotate and flip transformat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs15/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs15/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs15/app/main.ts %}
+{% include code-snippet/image-editor/default-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ Here is an example of hiding the toolbar of the image editor using [`toolbar`](h
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs30/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs30/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs30/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs30/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs30/app/main.ts %}
+{% include code-snippet/image-editor/default-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -76,13 +76,13 @@ Here is an example of hiding the cropping and selection toolbar items using [`to
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs31/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs31/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs31/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs31/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs31/app/main.ts %}
+{% include code-snippet/image-editor/default-cs31/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -98,13 +98,13 @@ The toolbar of the Image Editor can be replaced with the user specific UI using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs16/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs16/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs16/app/main.ts %}
+{% include code-snippet/image-editor/default-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -118,13 +118,13 @@ In the following example, the contextual toolbar for rectangle will be rendered 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs17/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs17/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs17/app/main.ts %}
+{% include code-snippet/image-editor/default-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -136,13 +136,13 @@ The [`toolbarItemClicked`](https://ej2.syncfusion.com/angular/documentation/api/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs34/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs34/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs34/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs34/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs34/app/main.ts %}
+{% include code-snippet/image-editor/default-cs34/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -160,13 +160,13 @@ Here is an example of adding the custom toolbar item to the contextual toolbar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs12/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs12/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs12/app/main.ts %}
+{% include code-snippet/image-editor/default-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

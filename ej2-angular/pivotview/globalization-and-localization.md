@@ -47,13 +47,13 @@ By default, all the Essential JS 2 component are specific to English culture ('e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs110/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs110/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs110/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs110/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs110/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs110/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -72,13 +72,13 @@ The following example demonstrates the decimal separators in `Deutsch` culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs111/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs111/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs111/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs111/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs111/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs111/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -211,13 +211,13 @@ The following example demonstrates the pivot table in `Deutsch` culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs112/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs112/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs112/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs112/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs112/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs112/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -229,13 +229,13 @@ RTL provides an option to switch the text direction and layout of the pivot tabl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs113/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs113/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs113/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs113/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs113/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs113/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

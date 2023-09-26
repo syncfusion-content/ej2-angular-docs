@@ -18,13 +18,13 @@ The following sample illustrates how to query the data source and pass the data 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs6/app/app.component.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs6/app/app.module.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs6/app/main.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ In the following example, the remote request does not fetch the search data unti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs7/app/app.component.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs7/app/app.module.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs7/app/main.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ In the following examples, data filtering is done with `endsWith` type.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs8/app/app.component.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs8/app/app.module.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs8/app/main.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -78,13 +78,13 @@ The following example shows how to perform case-sensitive filter.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs9/app/app.component.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs9/app/app.module.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs9/app/main.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -98,13 +98,13 @@ In the following sample,data with diacritics are bound as dataSource for DropDow
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs10/app/app.component.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs10/app/app.module.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs10/app/main.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

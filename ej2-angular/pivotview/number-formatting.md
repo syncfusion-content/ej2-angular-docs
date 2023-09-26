@@ -37,13 +37,13 @@ Other properties include:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs184/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs184/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs184/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs184/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs184/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs184/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -71,13 +71,13 @@ You can add any custom format directly to the [`format`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs185/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs185/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs185/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs185/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs185/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs185/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -89,13 +89,13 @@ You can enable formatting dialog option in the toolbar by adding `NumberFormatti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs186/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs186/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs186/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs186/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs186/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs186/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -107,13 +107,13 @@ You can invoke the formatting dialog by clicking an external button using the `S
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs187/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs187/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs187/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs187/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs187/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs187/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -135,13 +135,13 @@ In the below sample, the customization done in number formatting dialog for the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs188/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs188/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs188/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs188/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs188/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs188/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

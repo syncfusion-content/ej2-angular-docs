@@ -120,13 +120,13 @@ The following code example depicts the way to initialize Tooltip on a single ele
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs27/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs27/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs27/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs27/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs27/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs27/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -140,13 +140,13 @@ Refer the following code example, to create a Tooltip on multiple targets within
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs28/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs28/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs28/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs28/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs28/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs28/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
