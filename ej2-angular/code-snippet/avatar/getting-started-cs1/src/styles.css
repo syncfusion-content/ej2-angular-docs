@@ -1,0 +1,27 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-layouts/styles/material.css';
+
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  width: 30%;
+  position: absolute;
+  font-family: 'Helvetica Neue','calibiri';
+  font-size: 14px;
+  top: 45%;
+  left: 45%;
+}
+
+#element {
+    display: block;
+    width: 300px;
+    margin: 130px auto;
+    border-radius: 3px;
+    justify-content: center;
+}
+
+.e-avatar {
+    background-image: url(https://ej2.syncfusion.com/demos/src/grid/images/2.png);
+    margin: 2px;
+}

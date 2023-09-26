@@ -22,13 +22,13 @@ The template expression should be provided inside the ${...} interpolation synta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdowntree/template/itemTemplate-cs1/app/app.component.ts %}
+{% include code-snippet/dropdowntree/template/itemTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdowntree/template/itemTemplate-cs1/app/app.module.ts %}
+{% include code-snippet/dropdowntree/template/itemTemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdowntree/template/itemTemplate-cs1/app/main.ts %}
+{% include code-snippet/dropdowntree/template/itemTemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ In the following sample, the header is customized with the custom element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdowntree/template/headerTemplate-cs1/app/app.component.ts %}
+{% include code-snippet/dropdowntree/template/headerTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdowntree/template/headerTemplate-cs1/app/app.module.ts %}
+{% include code-snippet/dropdowntree/template/headerTemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdowntree/template/headerTemplate-cs1/app/main.ts %}
+{% include code-snippet/dropdowntree/template/headerTemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ In the following sample, the footer element displays the total number of employe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdowntree/template/footerTemplate-cs1/app/app.component.ts %}
+{% include code-snippet/dropdowntree/template/footerTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdowntree/template/footerTemplate-cs1/app/app.module.ts %}
+{% include code-snippet/dropdowntree/template/footerTemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdowntree/template/footerTemplate-cs1/app/main.ts %}
+{% include code-snippet/dropdowntree/template/footerTemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -82,13 +82,13 @@ In the following sample, popup list content displays the notification of no data
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdowntree/template/noRecordsTemplate-cs1/app/app.component.ts %}
+{% include code-snippet/dropdowntree/template/noRecordsTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdowntree/template/noRecordsTemplate-cs1/app/app.module.ts %}
+{% include code-snippet/dropdowntree/template/noRecordsTemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdowntree/template/noRecordsTemplate-cs1/app/main.ts %}
+{% include code-snippet/dropdowntree/template/noRecordsTemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -102,13 +102,13 @@ In the following sample, when the data fetch request fails, the Dropdown Tree di
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdowntree/template/actionFailureTemplate-cs1/app/app.component.ts %}
+{% include code-snippet/dropdowntree/template/actionFailureTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdowntree/template/actionFailureTemplate-cs1/app/app.module.ts %}
+{% include code-snippet/dropdowntree/template/actionFailureTemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdowntree/template/actionFailureTemplate-cs1/app/main.ts %}
+{% include code-snippet/dropdowntree/template/actionFailureTemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -124,13 +124,13 @@ In the following sample, the Dropdown Tree is rendered with default value of the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdowntree/template/customTemplate-mode-cs1/app/app.component.ts %}
+{% include code-snippet/dropdowntree/template/customTemplate-mode-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdowntree/template/customTemplate-mode-cs1/app/app.module.ts %}
+{% include code-snippet/dropdowntree/template/customTemplate-mode-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdowntree/template/customTemplate-mode-cs1/app/main.ts %}
+{% include code-snippet/dropdowntree/template/customTemplate-mode-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -140,13 +140,13 @@ In the following sample, the Dropdown Tree is rendered with custom value of the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdowntree/template/customTemplate-cs1/app/app.component.ts %}
+{% include code-snippet/dropdowntree/template/customTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdowntree/template/customTemplate-cs1/app/app.module.ts %}
+{% include code-snippet/dropdowntree/template/customTemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdowntree/template/customTemplate-cs1/app/main.ts %}
+{% include code-snippet/dropdowntree/template/customTemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

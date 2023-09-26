@@ -16,13 +16,13 @@ To render a area series, use series [`type`](https://ej2.syncfusion.com/angular/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/area-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/area-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/area-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/area-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/area-cs1/app/main.ts %}
+{% include code-snippet/chart/series/area-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -35,13 +35,13 @@ The required `segments` of the series can be customized using the `value`, `colo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/area-cs8/app/app.component.ts %}
+{% include code-snippet/chart/series/area-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/area-cs8/app/app.module.ts %}
+{% include code-snippet/chart/series/area-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/area-cs8/app/main.ts %}
+{% include code-snippet/chart/series/area-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -57,13 +57,13 @@ The following properties can be used to customize the `area` series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/area-cs9/app/app.component.ts %}
+{% include code-snippet/chart/series/area-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/area-cs9/app/app.module.ts %}
+{% include code-snippet/chart/series/area-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/area-cs9/app/main.ts %}
+{% include code-snippet/chart/series/area-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -78,13 +78,13 @@ The following properties in the [bordermodel](https://ej2.syncfusion.com/angular
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/area-cs10/app/app.component.ts %}
+{% include code-snippet/chart/series/area-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/area-cs10/app/app.module.ts %}
+{% include code-snippet/chart/series/area-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/area-cs10/app/main.ts %}
+{% include code-snippet/chart/series/area-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

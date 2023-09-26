@@ -27,13 +27,13 @@ In the following sample, the **In-place Editor** renders with `Inline` mode. You
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/in-place-editor/modes-cs1/app/app.component.ts %}
+{% include code-snippet/in-place-editor/modes-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/modes-cs1/app/app.module.ts %}
+{% include code-snippet/in-place-editor/modes-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/in-place-editor/modes-cs1/app/main.ts %}
+{% include code-snippet/in-place-editor/modes-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -64,13 +64,13 @@ In the following sample, popup [title](https://ej2.syncfusion.com/angular/docume
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/in-place-editor/popup-cs1/app/app.component.ts %}
+{% include code-snippet/in-place-editor/popup-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/popup-cs1/app/app.module.ts %}
+{% include code-snippet/in-place-editor/popup-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/in-place-editor/popup-cs1/app/main.ts %}
+{% include code-snippet/in-place-editor/popup-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -90,13 +90,13 @@ In the following sample, when switching drop-down item, the selected value assig
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/in-place-editor/editable-on-cs1/app/app.component.ts %}
+{% include code-snippet/in-place-editor/editable-on-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/editable-on-cs1/app/app.module.ts %}
+{% include code-snippet/in-place-editor/editable-on-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/in-place-editor/editable-on-cs1/app/main.ts %}
+{% include code-snippet/in-place-editor/editable-on-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -114,13 +114,13 @@ In the following sample, when switching drop-down item, the selected value assig
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/in-place-editor/action-on-blur-cs1/app/app.component.ts %}
+{% include code-snippet/in-place-editor/action-on-blur-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/action-on-blur-cs1/app/app.module.ts %}
+{% include code-snippet/in-place-editor/action-on-blur-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/in-place-editor/action-on-blur-cs1/app/main.ts %}
+{% include code-snippet/in-place-editor/action-on-blur-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -134,13 +134,13 @@ The following sample, denotes intractable and normal display modes with differen
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/in-place-editor/under-line-cs1/app/app.component.ts %}
+{% include code-snippet/in-place-editor/under-line-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/under-line-cs1/app/app.module.ts %}
+{% include code-snippet/in-place-editor/under-line-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/in-place-editor/under-line-cs1/app/main.ts %}
+{% include code-snippet/in-place-editor/under-line-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

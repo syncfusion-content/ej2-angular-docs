@@ -19,13 +19,13 @@ You can customize this, by using [`radius`](https://ej2.syncfusion.com/angular/d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/radius-cs4/app/app.component.ts %}
+{% include code-snippet/chart/series/radius-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/radius-cs4/app/app.module.ts %}
+{% include code-snippet/chart/series/radius-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/radius-cs4/app/main.ts %}
+{% include code-snippet/chart/series/radius-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -37,13 +37,13 @@ In order, to achieve a doughnut in pie, you need to customize the [`innerRadius`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/doughnut-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/doughnut-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/doughnut-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/doughnut-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/doughnut-cs1/app/main.ts %}
+{% include code-snippet/chart/series/doughnut-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ without overlapping with each other. You can enable or disable this feature usin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/smartlabel-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/smartlabel-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs1/app/main.ts %}
+{% include code-snippet/chart/series/smartlabel-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -74,13 +74,13 @@ As like in chart, you can use datalabel template for the points in accumulation 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs2/app/app.component.ts %}
+{% include code-snippet/chart/series/smartlabel-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs2/app/app.module.ts %}
+{% include code-snippet/chart/series/smartlabel-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs2/app/main.ts %}
+{% include code-snippet/chart/series/smartlabel-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -92,13 +92,13 @@ You can club/group few points of the series based on [`groupTo`](https://ej2.syn
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/clubpoint-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/clubpoint-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/clubpoint-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/clubpoint-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/clubpoint-cs1/app/main.ts %}
+{% include code-snippet/chart/series/clubpoint-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -110,13 +110,13 @@ You can customize the start and end angle of the pie series using [`startAngle`]
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/startangle-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/startangle-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/startangle-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/startangle-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/startangle-cs1/app/main.ts %}
+{% include code-snippet/chart/series/startangle-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -130,13 +130,13 @@ Points can also be exploded on load, by using [`explodeIndex`](https://ej2.syncf
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/explode-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/explode-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/explode-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/explode-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/explode-cs1/app/main.ts %}
+{% include code-snippet/chart/series/explode-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -152,13 +152,13 @@ Points can also be exploded on load, by using [`explodeIndex`](https://ej2.syncf
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/legend-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/legend-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/legend-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/legend-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/legend-cs1/app/main.ts %}
+{% include code-snippet/chart/series/legend-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -175,13 +175,13 @@ By using the <code>content</code> option of annotation object, you can specify t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/accumulationAnnotation-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/accumulationAnnotation-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/accumulationAnnotation-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/accumulationAnnotation-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/accumulationAnnotation-cs1/app/main.ts %}
+{% include code-snippet/chart/series/accumulationAnnotation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -197,13 +197,13 @@ Default mode of the empty point is Gap. Others mode supported here are 'Average'
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/radius-cs5/app/app.component.ts %}
+{% include code-snippet/chart/series/radius-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/radius-cs5/app/app.module.ts %}
+{% include code-snippet/chart/series/radius-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/radius-cs5/app/main.ts %}
+{% include code-snippet/chart/series/radius-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -215,13 +215,13 @@ Specific color for empty point can be set by `fill` property in `emptyPointSetti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/radius-cs6/app/app.component.ts %}
+{% include code-snippet/chart/series/radius-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/radius-cs6/app/app.module.ts %}
+{% include code-snippet/chart/series/radius-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/radius-cs6/app/main.ts %}
+{% include code-snippet/chart/series/radius-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

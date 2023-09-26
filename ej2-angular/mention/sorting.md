@@ -18,13 +18,13 @@ You can display the suggestions list items in a specific order. It has possible 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/mention/getting-started-cs9/app/app.component.ts %}
+{% include code-snippet/mention/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/getting-started-cs9/app/app.module.ts %}
+{% include code-snippet/mention/getting-started-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/mention/getting-started-cs9/app/main.ts %}
+{% include code-snippet/mention/getting-started-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

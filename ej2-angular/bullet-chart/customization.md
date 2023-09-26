@@ -17,13 +17,13 @@ The Bullet Chart can be rendered in different orientations such as **Horizontal*
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs16/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs16/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs16/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -35,13 +35,13 @@ The Bullet Chart supports the right-to-left rendering that can be enabled by set
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs17/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs17/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs17/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -53,13 +53,13 @@ The actual and the target bar supports the linear animation via the [`animation`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs18/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs18/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs18/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -71,13 +71,13 @@ The Bullet Chart supports different type of themes via the [`theme`](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs19/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs19/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs19/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs19/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs19/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

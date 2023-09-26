@@ -24,13 +24,13 @@ Striplines are rendered in the specified start to end range and you can add more
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs5/app/app.component.ts %}
+{% include code-snippet/chart/axis/strip-line-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs5/app/app.module.ts %}
+{% include code-snippet/chart/axis/strip-line-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs5/app/main.ts %}
+{% include code-snippet/chart/axis/strip-line-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -43,13 +43,13 @@ Striplines are rendered in the specified start to end range and you can add more
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs6/app/app.component.ts %}
+{% include code-snippet/chart/axis/strip-line-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs6/app/app.module.ts %}
+{% include code-snippet/chart/axis/strip-line-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs6/app/main.ts %}
+{% include code-snippet/chart/axis/strip-line-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ Size of the strip line is customized by `size`. Border for the stripline is cust
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs7/app/app.component.ts %}
+{% include code-snippet/chart/axis/strip-line-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs7/app/app.module.ts %}
+{% include code-snippet/chart/axis/strip-line-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs7/app/main.ts %}
+{% include code-snippet/chart/axis/strip-line-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -81,13 +81,13 @@ Horizontal and Vertical alignment of stripline text can be changed by `horizonta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs8/app/app.component.ts %}
+{% include code-snippet/chart/axis/strip-line-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs8/app/app.module.ts %}
+{% include code-snippet/chart/axis/strip-line-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs8/app/main.ts %}
+{% include code-snippet/chart/axis/strip-line-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -99,13 +99,13 @@ You can create dash array stripline by using `dashArray` property. The Stripline
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs9/app/app.component.ts %}
+{% include code-snippet/chart/axis/strip-line-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs9/app/app.module.ts %}
+{% include code-snippet/chart/axis/strip-line-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs9/app/main.ts %}
+{% include code-snippet/chart/axis/strip-line-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -121,13 +121,13 @@ The strip lines to be drawn repeatedly at the regular intervals – this will be
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs10/app/app.component.ts %}
+{% include code-snippet/chart/axis/strip-line-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs10/app/app.module.ts %}
+{% include code-snippet/chart/axis/strip-line-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs10/app/main.ts %}
+{% include code-snippet/chart/axis/strip-line-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -148,13 +148,13 @@ The `sizeType` property refers the size of the stripline. They are,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/datetime-cs18/app/app.component.ts %}
+{% include code-snippet/chart/axis/datetime-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs18/app/app.module.ts %}
+{% include code-snippet/chart/axis/datetime-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/datetime-cs18/app/main.ts %}
+{% include code-snippet/chart/axis/datetime-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -171,13 +171,13 @@ You can create stripline in a particular region with respect to segment. You can
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs11/app/app.component.ts %}
+{% include code-snippet/chart/axis/strip-line-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs11/app/app.module.ts %}
+{% include code-snippet/chart/axis/strip-line-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs11/app/main.ts %}
+{% include code-snippet/chart/axis/strip-line-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

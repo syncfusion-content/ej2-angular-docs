@@ -16,13 +16,13 @@ In the following sample, vegetables are grouped according on its category using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/combobox/getting-started-cs15/app/app.component.ts %}
+{% include code-snippet/combobox/getting-started-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/getting-started-cs15/app/app.module.ts %}
+{% include code-snippet/combobox/getting-started-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/combobox/getting-started-cs15/app/main.ts %}
+{% include code-snippet/combobox/getting-started-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

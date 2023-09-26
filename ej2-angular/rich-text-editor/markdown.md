@@ -59,13 +59,13 @@ This sample demonstrates how to preview markdown changes in Rich Text Editor. Ty
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/markdown-cs1/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/markdown-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/markdown-cs1/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/markdown-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/markdown-cs1/app/main.ts %}
+{% include code-snippet/rich-text-editor/markdown-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -83,13 +83,13 @@ Please refer the below sample and code snippets to add the table in Markdown edi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/markdown-cs2/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/markdown-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/markdown-cs2/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/markdown-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/markdown-cs2/app/main.ts %}
+{% include code-snippet/rich-text-editor/markdown-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -101,13 +101,13 @@ The Markdown table constants can be changed for the table heading and the column
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/markdown-cs3/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/markdown-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/markdown-cs3/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/markdown-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/markdown-cs3/app/main.ts %}
+{% include code-snippet/rich-text-editor/markdown-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -123,13 +123,13 @@ For example, apply ‘+’ to Unordered list, apply ‘1., 2., 3.’ to Ordered 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/markdown-cs4/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/markdown-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/markdown-cs4/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/markdown-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/markdown-cs4/app/main.ts %}
+{% include code-snippet/rich-text-editor/markdown-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

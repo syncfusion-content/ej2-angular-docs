@@ -26,13 +26,13 @@ By default, SortBy `Index` property support without any [`field`](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/index-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/index-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/index-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/index-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/index-cs1/app/main.ts %}
+{% include code-snippet/kanban/index-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -67,13 +67,13 @@ Consider, Column A has Card A with priority value `1`, Card B with priority valu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/index-field-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/index-field-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/index-field-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/index-field-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/index-field-cs1/app/main.ts %}
+{% include code-snippet/kanban/index-field-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -85,13 +85,13 @@ The SortBy `DataSourceOrder` property does not require any [`field`](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/data-source-order-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/data-source-order-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/data-source-order-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/data-source-order-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/data-source-order-cs1/app/main.ts %}
+{% include code-snippet/kanban/data-source-order-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -105,13 +105,13 @@ The SortBy `Custom` property must require datasource [`field`](https://ej2.syncf
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/custom-mapping-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/custom-mapping-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/custom-mapping-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/custom-mapping-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/custom-mapping-cs1/app/main.ts %}
+{% include code-snippet/kanban/custom-mapping-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -127,13 +127,13 @@ In the following sample, cards are aligned in `Descending` order.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/sort-direction-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/sort-direction-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/sort-direction-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/sort-direction-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/sort-direction-cs1/app/main.ts %}
+{% include code-snippet/kanban/sort-direction-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

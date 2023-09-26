@@ -16,13 +16,13 @@ You can show mention character as prefix of selected item in mention component u
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/mention/customization-cs1/app/app.component.ts %}
+{% include code-snippet/mention/customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/customization-cs1/app/app.module.ts %}
+{% include code-snippet/mention/customization-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/mention/customization-cs1/app/main.ts %}
+{% include code-snippet/mention/customization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ You can add suffix character while selecting an item in Mention component using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/mention/suffixText-cs1/app/app.component.ts %}
+{% include code-snippet/mention/suffixText-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/suffixText-cs1/app/app.module.ts %}
+{% include code-snippet/mention/suffixText-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/mention/suffixText-cs1/app/main.ts %}
+{% include code-snippet/mention/suffixText-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ By default, the popup list width value is set as `auto`. Depending on the mentio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/mention/getting-started-cs1/app/app.component.ts %}
+{% include code-snippet/mention/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/getting-started-cs1/app/app.module.ts %}
+{% include code-snippet/mention/getting-started-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/mention/getting-started-cs1/app/main.ts %}
+{% include code-snippet/mention/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

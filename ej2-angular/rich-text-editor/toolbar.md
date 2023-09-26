@@ -29,13 +29,13 @@ The default mode of [`toolbar`](https://ej2.syncfusion.com/angular/documentation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/toolbar/expand-cs1/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/toolbar/expand-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/toolbar/expand-cs1/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/toolbar/expand-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/toolbar/expand-cs1/app/main.ts %}
+{% include code-snippet/rich-text-editor/toolbar/expand-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -47,13 +47,13 @@ Set the type as `MultiRow` in [`toolbarSettings`](https://ej2.syncfusion.com/ang
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/toolbar/multirow-cs3/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/toolbar/multirow-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/toolbar/multirow-cs3/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/toolbar/multirow-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/toolbar/multirow-cs3/app/main.ts %}
+{% include code-snippet/rich-text-editor/toolbar/multirow-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -67,13 +67,13 @@ Can Enable or disable the floating toolbar using [`enableFloating`](https://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/floating-toolbar-cs1/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/floating-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/floating-toolbar-cs1/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/floating-toolbar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/floating-toolbar-cs1/app/main.ts %}
+{% include code-snippet/rich-text-editor/floating-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -182,13 +182,13 @@ In the following sample the Dialog component will be created in Rich Text Editor
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs30/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs30/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs30/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs30/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs30/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -211,13 +211,13 @@ The following sample demonstrates the option to insert the image to the Rich Tex
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/quick-toolbar-cs1/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/quick-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/quick-toolbar-cs1/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/quick-toolbar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/quick-toolbar-cs1/app/main.ts %}
+{% include code-snippet/rich-text-editor/quick-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -114,13 +114,13 @@ Now run the application in the browser using the below command.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/initialize-cs1/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/initialize-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/initialize-cs1/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/initialize-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/initialize-cs1/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/initialize-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -174,13 +174,13 @@ Now assign the local data to [`dataSource`](https://ej2.syncfusion.com/angular/d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/datasource-cs1/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/datasource-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/datasource-cs1/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/datasource-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/datasource-cs1/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/datasource-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -192,13 +192,13 @@ You can add a title using [`title`](https://ej2.syncfusion.com/angular/documenta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/title-cs1/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/title-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/title-cs1/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/title-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/title-cs1/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/title-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -210,13 +210,13 @@ You can add a range using [`ranges`](https://ej2.syncfusion.com/angular/document
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs23/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs23/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs23/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs23/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs23/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -228,13 +228,13 @@ The tooltip is useful when you cannot display information by using the data labe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/tooltip-cs1/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/tooltip-cs1/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/tooltip-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/tooltip-cs1/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/tooltip-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

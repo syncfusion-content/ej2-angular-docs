@@ -25,13 +25,13 @@ The following example shows how to export documents in document editor as Syncfu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/document-editor/export-cs1/app/app.component.ts %}
+{% include code-snippet/document-editor/export-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/export-cs1/app/app.module.ts %}
+{% include code-snippet/document-editor/export-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/document-editor/export-cs1/app/main.ts %}
+{% include code-snippet/document-editor/export-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -45,13 +45,13 @@ The following example shows how to export the document as Word document (.docx).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/document-editor/export-cs2/app/app.component.ts %}
+{% include code-snippet/document-editor/export-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/export-cs2/app/app.module.ts %}
+{% include code-snippet/document-editor/export-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/document-editor/export-cs2/app/main.ts %}
+{% include code-snippet/document-editor/export-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -63,13 +63,13 @@ The following example shows how to export document as text document (.txt).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/document-editor/export-cs3/app/app.component.ts %}
+{% include code-snippet/document-editor/export-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/export-cs3/app/app.module.ts %}
+{% include code-snippet/document-editor/export-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/document-editor/export-cs3/app/main.ts %}
+{% include code-snippet/document-editor/export-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

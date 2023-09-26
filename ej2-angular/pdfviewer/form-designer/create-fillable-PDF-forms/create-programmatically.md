@@ -27,13 +27,13 @@ Using addFormField method, the form fields can be added to the PDF document prog
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/addformfield-cs1/app/app.component.ts %}
+{% include code-snippet/pdfviewer/addformfield-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pdfviewer/addformfield-cs1/app/app.module.ts %}
+{% include code-snippet/pdfviewer/addformfield-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pdfviewer/addformfield-cs1/app/main.ts %}
+{% include code-snippet/pdfviewer/addformfield-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -50,13 +50,13 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/updateformfield-cs1/app/app.component.ts %}
+{% include code-snippet/pdfviewer/updateformfield-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pdfviewer/updateformfield-cs1/app/app.module.ts %}
+{% include code-snippet/pdfviewer/updateformfield-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pdfviewer/updateformfield-cs1/app/main.ts %}
+{% include code-snippet/pdfviewer/updateformfield-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -73,13 +73,13 @@ Using deleteFormField method, the form field can be deleted programmatically. We
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/deleteformfield-cs1/app/app.component.ts %}
+{% include code-snippet/pdfviewer/deleteformfield-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pdfviewer/deleteformfield-cs1/app/app.module.ts %}
+{% include code-snippet/pdfviewer/deleteformfield-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pdfviewer/deleteformfield-cs1/app/main.ts %}
+{% include code-snippet/pdfviewer/deleteformfield-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

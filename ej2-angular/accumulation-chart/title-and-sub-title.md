@@ -14,13 +14,13 @@ Accumulation Chart can be given a title using [`title`](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs27/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs27/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs27/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs27/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs27/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs27/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -32,13 +32,13 @@ Accumulation Chart can be customizing a title using [`titleStyle`](https://ej2.s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs28/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs28/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs28/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs28/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs28/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs28/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -51,13 +51,13 @@ about the data plotted.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs29/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs29/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs29/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs29/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs29/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs29/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -69,13 +69,13 @@ Accumulation Chart can be customizing a subtitle using [`subTitleStyle`](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs30/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs30/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs30/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs30/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs30/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

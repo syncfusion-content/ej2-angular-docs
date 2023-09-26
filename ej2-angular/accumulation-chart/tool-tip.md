@@ -14,13 +14,13 @@ Tooltip for the accumulation chart can be enabled by using the `enable` proper
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs31/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs31/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs31/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs31/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs31/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs31/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ We can specify header for the tooltip using `header` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs32/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs32/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs32/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs32/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs32/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs32/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -53,13 +53,13 @@ information in tooltip. For example the format `${series.name} ${point.x}` sho
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs33/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs33/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs33/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs33/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs33/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs33/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -71,13 +71,13 @@ Any HTML element can be displayed in the tooltip by using the `template` propert
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs34/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs34/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs34/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs34/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs34/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs34/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -89,13 +89,13 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs35/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs35/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs35/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs35/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs35/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs35/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -108,13 +108,13 @@ You can use the `${point.tooltip}` as place holders to display the specified too
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs36/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs36/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs36/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs36/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs36/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs36/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -127,13 +127,13 @@ tooltip for particular point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs37/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs37/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs37/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs37/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs37/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs37/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

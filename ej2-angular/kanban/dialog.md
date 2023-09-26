@@ -36,13 +36,13 @@ swimlaneSettings.keyField(If applicable) | DropDown | -
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/getting-started-key-field-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/getting-started-key-field-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/getting-started-key-field-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/getting-started-key-field-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/getting-started-key-field-cs1/app/main.ts %}
+{% include code-snippet/kanban/getting-started-key-field-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -65,13 +65,13 @@ The following types are available in dialog fields.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/custom-dialog-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/custom-dialog-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/custom-dialog-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/custom-dialog-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/custom-dialog-cs1/app/main.ts %}
+{% include code-snippet/kanban/custom-dialog-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -83,13 +83,13 @@ By default, the fields `key` mapping value is considered as a `label` and you ca
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/label-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/label-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/label-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/label-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/label-cs1/app/main.ts %}
+{% include code-snippet/kanban/label-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -101,13 +101,13 @@ The dialog fields can be validated while click on the `Save` button. This can be
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/fields-validation-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/fields-validation-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/fields-validation-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/fields-validation-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/fields-validation-cs1/app/main.ts %}
+{% include code-snippet/kanban/fields-validation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -119,13 +119,13 @@ Using the dialog template, you can render your own dialog by defining the `templ
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/dialog-template-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/dialog-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/dialog-template-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/dialog-template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/dialog-template-cs1/app/main.ts %}
+{% include code-snippet/kanban/dialog-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -137,13 +137,13 @@ The Kanban allows to prevent to open a dialog on card double-click by enabling `
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/prevent-dialog-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/prevent-dialog-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/prevent-dialog-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/prevent-dialog-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/prevent-dialog-cs1/app/main.ts %}
+{% include code-snippet/kanban/prevent-dialog-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

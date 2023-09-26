@@ -26,13 +26,13 @@ For prompt dialog , customized the default dialog buttons content as `Connect` a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/predefined-dialogs/alert-action-btn-cs1/app/app.component.ts %}
+{% include code-snippet/predefined-dialogs/alert-action-btn-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/alert-action-btn-cs1/app/app.module.ts %}
+{% include code-snippet/predefined-dialogs/alert-action-btn-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/predefined-dialogs/alert-action-btn-cs1/app/main.ts %}
+{% include code-snippet/predefined-dialogs/alert-action-btn-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ For prompt dialog , customized the default dialog buttons content as `Connect` a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/predefined-dialogs/confirm-action-btn-cs1/app/app.component.ts %}
+{% include code-snippet/predefined-dialogs/confirm-action-btn-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/confirm-action-btn-cs1/app/app.module.ts %}
+{% include code-snippet/predefined-dialogs/confirm-action-btn-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/predefined-dialogs/confirm-action-btn-cs1/app/main.ts %}
+{% include code-snippet/predefined-dialogs/confirm-action-btn-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ For prompt dialog , customized the default dialog buttons content as `Connect` a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/predefined-dialogs/prompt-action-btn-cs1/app/app.component.ts %}
+{% include code-snippet/predefined-dialogs/prompt-action-btn-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/prompt-action-btn-cs1/app/app.module.ts %}
+{% include code-snippet/predefined-dialogs/prompt-action-btn-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/predefined-dialogs/prompt-action-btn-cs1/app/main.ts %}
+{% include code-snippet/predefined-dialogs/prompt-action-btn-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -85,13 +85,13 @@ Use the following code for **alert**, **confirm** and **prompt** to demonstrates
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/predefined-dialogs/alert-close-btn-cs1/app/app.component.ts %}
+{% include code-snippet/predefined-dialogs/alert-close-btn-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/alert-close-btn-cs1/app/app.module.ts %}
+{% include code-snippet/predefined-dialogs/alert-close-btn-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/predefined-dialogs/alert-close-btn-cs1/app/main.ts %}
+{% include code-snippet/predefined-dialogs/alert-close-btn-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -101,13 +101,13 @@ Use the following code for **alert**, **confirm** and **prompt** to demonstrates
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/predefined-dialogs/confirm-close-btn-cs1/app/app.component.ts %}
+{% include code-snippet/predefined-dialogs/confirm-close-btn-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/confirm-close-btn-cs1/app/app.module.ts %}
+{% include code-snippet/predefined-dialogs/confirm-close-btn-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/predefined-dialogs/confirm-close-btn-cs1/app/main.ts %}
+{% include code-snippet/predefined-dialogs/confirm-close-btn-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -117,13 +117,13 @@ Use the following code for **alert**, **confirm** and **prompt** to demonstrates
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/predefined-dialogs/prompt-close-btn-cs1/app/app.component.ts %}
+{% include code-snippet/predefined-dialogs/prompt-close-btn-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/prompt-close-btn-cs1/app/app.module.ts %}
+{% include code-snippet/predefined-dialogs/prompt-close-btn-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/predefined-dialogs/prompt-close-btn-cs1/app/main.ts %}
+{% include code-snippet/predefined-dialogs/prompt-close-btn-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -137,13 +137,13 @@ Use the following code to customize the dialog content to render the custom Text
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/predefined-dialogs/custom-dialog-content-cs1/app/app.component.ts %}
+{% include code-snippet/predefined-dialogs/custom-dialog-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/custom-dialog-content-cs1/app/app.module.ts %}
+{% include code-snippet/predefined-dialogs/custom-dialog-content-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/predefined-dialogs/custom-dialog-content-cs1/app/main.ts %}
+{% include code-snippet/predefined-dialogs/custom-dialog-content-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

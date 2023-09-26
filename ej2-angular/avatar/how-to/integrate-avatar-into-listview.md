@@ -55,10 +55,10 @@ export class AppComponent {
 {% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/listview-cs2/app/app.module.ts %}
+{% include code-snippet/avatar/listview-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/avatar/listview-cs2/app/main.ts %}
+{% include code-snippet/avatar/listview-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

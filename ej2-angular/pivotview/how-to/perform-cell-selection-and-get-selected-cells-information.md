@@ -35,13 +35,13 @@ The event `cellSelected` fires on every cell/row/column on selected/deselected o
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs168/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs168/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs168/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs168/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs168/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs168/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

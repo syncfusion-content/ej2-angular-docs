@@ -182,13 +182,13 @@ The following example illustrates the output in your browser.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/combobox/getting-started-cs11/app/app.component.ts %}
+{% include code-snippet/combobox/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/getting-started-cs11/app/app.module.ts %}
+{% include code-snippet/combobox/getting-started-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/combobox/getting-started-cs11/app/main.ts %}
+{% include code-snippet/combobox/getting-started-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -200,13 +200,13 @@ The ComboBox allows the user to give input as custom value which is not required
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/combobox/getting-started-cs12/app/app.component.ts %}
+{% include code-snippet/combobox/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/getting-started-cs12/app/app.module.ts %}
+{% include code-snippet/combobox/getting-started-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/combobox/getting-started-cs12/app/main.ts %}
+{% include code-snippet/combobox/getting-started-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -222,13 +222,13 @@ In the following sample, popup list's width and height are configured.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/combobox/getting-started-cs13/app/app.component.ts %}
+{% include code-snippet/combobox/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/getting-started-cs13/app/app.module.ts %}
+{% include code-snippet/combobox/getting-started-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/combobox/getting-started-cs13/app/main.ts %}
+{% include code-snippet/combobox/getting-started-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -240,13 +240,13 @@ In ComboBox, the `value` property supports two-way binding functionality. The fo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/combobox/getting-started-cs14/app/app.component.ts %}
+{% include code-snippet/combobox/getting-started-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/getting-started-cs14/app/app.module.ts %}
+{% include code-snippet/combobox/getting-started-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/combobox/getting-started-cs14/app/main.ts %}
+{% include code-snippet/combobox/getting-started-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

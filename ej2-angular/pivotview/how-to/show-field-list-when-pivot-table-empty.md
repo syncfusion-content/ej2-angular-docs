@@ -14,13 +14,13 @@ When there are no fields in a pivot table's row, column, value, and filter axes,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs170/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs170/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs170/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs170/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs170/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs170/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

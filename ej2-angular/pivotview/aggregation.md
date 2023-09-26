@@ -52,13 +52,13 @@ For each value field, the aggregation type can be set using the property [`type`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs1/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs1/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs1/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -82,13 +82,13 @@ By default, all the aggregation types are displayed in the dropdown menu availab
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs2/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs2/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs2/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -100,13 +100,13 @@ By default, in value axis each field would be displayed by its name and aggregat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs3/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs3/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs3/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -120,13 +120,13 @@ By default, the icon to set aggregation type is enabled in the grouping bar. To 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs4/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs4/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs4/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -150,13 +150,13 @@ The event [`aggregateCellInfo`](https://ej2.syncfusion.com/angular/documentation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs5/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs5/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs5/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -180,13 +180,13 @@ In the following example, action taken during aggregation type selection via dro
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs6/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs6/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs6/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -206,13 +206,13 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs7/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs7/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs7/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -228,13 +228,13 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs8/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs8/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs8/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

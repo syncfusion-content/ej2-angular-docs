@@ -32,13 +32,13 @@ Here is an example of square selection using the [`select`](https://ej2.syncfusi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs11/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs11/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs11/app/main.ts %}
+{% include code-snippet/image-editor/default-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ Here is an example of ratio selection using the [`select`](https://ej2.syncfusio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs13/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs13/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs13/app/main.ts %}
+{% include code-snippet/image-editor/default-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -95,13 +95,13 @@ Here is an example of circle cropping using the [`select`](https://ej2.syncfusio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs14/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs14/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs14/app/main.ts %}
+{% include code-snippet/image-editor/default-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

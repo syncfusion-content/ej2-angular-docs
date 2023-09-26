@@ -30,13 +30,13 @@ You can show icon only in SpeedDial items by setting [`iconCss`](https://ej2.syn
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speed-dial/items-cs1/app/app.component.ts %}
+{% include code-snippet/speed-dial/items-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/items-cs1/app/app.module.ts %}
+{% include code-snippet/speed-dial/items-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/speed-dial/items-cs1/app/main.ts %}
+{% include code-snippet/speed-dial/items-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -48,13 +48,13 @@ You can show only text in Speed Dial items by setting [`text`](https://ej2.syncf
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speed-dial/items-cs2/app/app.component.ts %}
+{% include code-snippet/speed-dial/items-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/items-cs2/app/app.module.ts %}
+{% include code-snippet/speed-dial/items-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/speed-dial/items-cs2/app/main.ts %}
+{% include code-snippet/speed-dial/items-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ You can show icon along with text in Speed Dial items by setting [`iconCss`](htt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speed-dial/items-cs3/app/app.component.ts %}
+{% include code-snippet/speed-dial/items-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/items-cs3/app/app.module.ts %}
+{% include code-snippet/speed-dial/items-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/speed-dial/items-cs3/app/main.ts %}
+{% include code-snippet/speed-dial/items-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -84,13 +84,13 @@ You can disable Speed Dial items by setting [`disabled`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speed-dial/items-cs4/app/app.component.ts %}
+{% include code-snippet/speed-dial/items-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/items-cs4/app/app.module.ts %}
+{% include code-snippet/speed-dial/items-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/speed-dial/items-cs4/app/main.ts %}
+{% include code-snippet/speed-dial/items-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -104,13 +104,13 @@ Below example demonstrates the Speed Dial items with applied Zoom effect.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/speed-dial/items-cs5/app/app.component.ts %}
+{% include code-snippet/speed-dial/items-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/items-cs5/app/app.module.ts %}
+{% include code-snippet/speed-dial/items-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/speed-dial/items-cs5/app/main.ts %}
+{% include code-snippet/speed-dial/items-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

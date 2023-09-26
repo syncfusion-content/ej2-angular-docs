@@ -15,13 +15,13 @@ The tooltip for the progress bar is used to represent the progress value. During
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progressbar/tooltip-cs1/app/app.component.ts %}
+{% include code-snippet/progressbar/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/tooltip-cs1/app/app.module.ts %}
+{% include code-snippet/progressbar/tooltip-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progressbar/tooltip-cs1/app/main.ts %}
+{% include code-snippet/progressbar/tooltip-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -33,13 +33,13 @@ By default, the tooltip shows information about progress. In addition to that, s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progressbar/tooltip-cs2/app/app.component.ts %}
+{% include code-snippet/progressbar/tooltip-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/tooltip-cs2/app/app.module.ts %}
+{% include code-snippet/progressbar/tooltip-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progressbar/tooltip-cs2/app/main.ts %}
+{% include code-snippet/progressbar/tooltip-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -51,13 +51,13 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/progressbar/to
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progressbar/tooltip-cs3/app/app.component.ts %}
+{% include code-snippet/progressbar/tooltip-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/tooltip-cs3/app/app.module.ts %}
+{% include code-snippet/progressbar/tooltip-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progressbar/tooltip-cs3/app/main.ts %}
+{% include code-snippet/progressbar/tooltip-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

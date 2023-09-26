@@ -134,13 +134,13 @@ The below example shows a basic Floating Action Button component,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/floating-action-button/getting-started-cs1/app/app.component.ts %}
+{% include code-snippet/floating-action-button/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/floating-action-button/getting-started-cs1/app/app.module.ts %}
+{% include code-snippet/floating-action-button/getting-started-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/floating-action-button/getting-started-cs1/app/main.ts %}
+{% include code-snippet/floating-action-button/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -152,13 +152,13 @@ The floating action button control triggers the `onclick` event when you click o
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/floating-action-button/events-cs2/app/app.component.ts %}
+{% include code-snippet/floating-action-button/events-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/floating-action-button/events-cs2/app/app.module.ts %}
+{% include code-snippet/floating-action-button/events-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/floating-action-button/events-cs2/app/main.ts %}
+{% include code-snippet/floating-action-button/events-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

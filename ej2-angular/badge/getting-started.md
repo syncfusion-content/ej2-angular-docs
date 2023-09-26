@@ -112,13 +112,13 @@ The following example shows a basic badge component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/badge/getting-started-cs1/app/app.component.ts %}
+{% include code-snippet/badge/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/getting-started-cs1/app/app.module.ts %}
+{% include code-snippet/badge/getting-started-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/badge/getting-started-cs1/app/main.ts %}
+{% include code-snippet/badge/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

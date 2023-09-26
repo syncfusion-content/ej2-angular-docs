@@ -316,13 +316,13 @@ The below sample demonstrate that, the Rich Text Editor control rendered with 'd
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs3/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs3/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs3/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -336,13 +336,13 @@ Specifies the direction of the Rich Text Editor component using the [`enableRtl`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs4/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs4/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs4/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

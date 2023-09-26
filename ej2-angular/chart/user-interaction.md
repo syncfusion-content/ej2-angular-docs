@@ -24,13 +24,13 @@ By default, tooltip is not visible. Enable the tooltip by setting [`enable`](htt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/tooltip-cs7/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/tooltip-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/tooltip-cs7/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/tooltip-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/tooltip-cs7/app/main.ts %}
+{% include code-snippet/chart/user-interaction/tooltip-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/tooltip-cs8/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/tooltip-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/tooltip-cs8/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/tooltip-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/tooltip-cs8/app/main.ts %}
+{% include code-snippet/chart/user-interaction/tooltip-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ Any HTML elements can be displayed in the tooltip by using the ‘template’ pr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/tooltip-cs9/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/tooltip-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/tooltip-cs9/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/tooltip-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/tooltip-cs9/app/main.ts %}
+{% include code-snippet/chart/user-interaction/tooltip-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -80,13 +80,13 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipS
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/tooltip-cs10/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/tooltip-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/tooltip-cs10/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/tooltip-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/tooltip-cs10/app/main.ts %}
+{% include code-snippet/chart/user-interaction/tooltip-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -106,13 +106,13 @@ Chart can be zoomed in three ways.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs2/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs2/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs2/app/main.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -133,13 +133,13 @@ There are three types of mode.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs3/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs3/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs3/app/main.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -151,13 +151,13 @@ By default, zoomin, zoomout, pan and reset buttons will be displayed for zo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs4/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs4/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs4/app/main.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -177,13 +177,13 @@ Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs7/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs7/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs7/app/main.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -196,13 +196,13 @@ Color and width of the crosshair line can be customized by using the [`line`](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs8/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs8/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs8/app/main.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -218,13 +218,13 @@ Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/trackball-cs3/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/trackball-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/trackball-cs3/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/trackball-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/trackball-cs3/app/main.ts %}
+{% include code-snippet/chart/user-interaction/trackball-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -252,13 +252,13 @@ We have different type of selection mode for selecting the data. They are,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs8/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs8/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs8/app/main.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -270,13 +270,13 @@ We have different type of selection mode for selecting the data. They are,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs9/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs9/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs9/app/main.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -288,13 +288,13 @@ You can select the points that corresponds to the same index in all the series, 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs10/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs10/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs10/app/main.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -313,13 +313,13 @@ The selected data’s are returned as an array collection in the [`dragComplete`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/drag-cs4/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/drag-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/drag-cs4/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/drag-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/drag-cs4/app/main.ts %}
+{% include code-snippet/chart/user-interaction/drag-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -331,13 +331,13 @@ You can select multiple points or series, by enabling the [`isMultiSelect`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs11/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs11/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs11/app/main.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -349,13 +349,13 @@ You can apply custom style to selected points or series with [`selectionStyle`](
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs12/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs12/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs12/app/main.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -367,13 +367,13 @@ You can able to select a point or series programmatically on a chart using [`sel
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs13/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs13/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/selection-cs13/app/main.ts %}
+{% include code-snippet/chart/user-interaction/selection-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -387,13 +387,13 @@ We can use the data editing support using `DataEditingService` in the angular ch
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/data-editing-cs2/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/data-editing-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/data-editing-cs2/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/data-editing-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/data-editing-cs2/app/main.ts %}
+{% include code-snippet/chart/user-interaction/data-editing-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

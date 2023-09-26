@@ -26,13 +26,13 @@ In the following sample, French culture is set to the ComboBox and no data is lo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/combobox/getting-started-cs17/app/app.component.ts %}
+{% include code-snippet/combobox/getting-started-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/getting-started-cs17/app/app.module.ts %}
+{% include code-snippet/combobox/getting-started-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/combobox/getting-started-cs17/app/main.ts %}
+{% include code-snippet/combobox/getting-started-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

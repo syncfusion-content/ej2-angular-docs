@@ -14,13 +14,13 @@ The Tooltip component [content](https://ej2.syncfusion.com/angular/documentation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/load-html-cs6/app/app.component.ts %}
+{% include code-snippet/tooltip/load-html-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/load-html-cs6/app/app.module.ts %}
+{% include code-snippet/tooltip/load-html-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/load-html-cs6/app/main.ts %}
+{% include code-snippet/tooltip/load-html-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

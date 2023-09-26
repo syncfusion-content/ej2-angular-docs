@@ -26,13 +26,13 @@ The following examples shows the data filtering is done with `StartsWith` type
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs6/app/app.component.ts %}
+{% include code-snippet/autocomplete/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs6/app/app.module.ts %}
+{% include code-snippet/autocomplete/getting-started-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs6/app/main.ts %}
+{% include code-snippet/autocomplete/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -46,13 +46,13 @@ The following examples, to restrict the suggestion list item counts as 5.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs7/app/app.component.ts %}
+{% include code-snippet/autocomplete/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs7/app/app.module.ts %}
+{% include code-snippet/autocomplete/getting-started-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs7/app/main.ts %}
+{% include code-snippet/autocomplete/getting-started-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ In the following example, the remote request doesn't fetch the search data, unti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs8/app/app.component.ts %}
+{% include code-snippet/autocomplete/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs8/app/app.module.ts %}
+{% include code-snippet/autocomplete/getting-started-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs8/app/main.ts %}
+{% include code-snippet/autocomplete/getting-started-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,13 +86,13 @@ The following sample depicts how to filter the data with case-sensitive.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs9/app/app.component.ts %}
+{% include code-snippet/autocomplete/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs9/app/app.module.ts %}
+{% include code-snippet/autocomplete/getting-started-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs9/app/main.ts %}
+{% include code-snippet/autocomplete/getting-started-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -106,13 +106,13 @@ In the following sample,data with diacritics are bound as dataSource for AutoCom
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs10/app/app.component.ts %}
+{% include code-snippet/autocomplete/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs10/app/app.module.ts %}
+{% include code-snippet/autocomplete/getting-started-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs10/app/main.ts %}
+{% include code-snippet/autocomplete/getting-started-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

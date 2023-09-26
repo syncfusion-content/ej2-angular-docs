@@ -18,13 +18,13 @@ Here, Bold, Italic, Underline, and Anchor tags are used.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/load-html-cs5/app/app.component.ts %}
+{% include code-snippet/tooltip/load-html-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/load-html-cs5/app/app.module.ts %}
+{% include code-snippet/tooltip/load-html-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/load-html-cs5/app/main.ts %}
+{% include code-snippet/tooltip/load-html-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

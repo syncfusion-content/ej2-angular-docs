@@ -16,13 +16,13 @@ The multi-level labels for the Range Selector can be enabled by setting the [`en
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rangenavigator/labels/default-cs1/app/app.component.ts %}
+{% include code-snippet/rangenavigator/labels/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/labels/default-cs1/app/app.module.ts %}
+{% include code-snippet/rangenavigator/labels/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rangenavigator/labels/default-cs1/app/main.ts %}
+{% include code-snippet/rangenavigator/labels/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -44,13 +44,13 @@ The multi-level labels can be grouped using the [`groupBy`](https://ej2.syncfusi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rangenavigator/labels/default-cs2/app/app.component.ts %}
+{% include code-snippet/rangenavigator/labels/default-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/labels/default-cs2/app/app.module.ts %}
+{% include code-snippet/rangenavigator/labels/default-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rangenavigator/labels/default-cs2/app/main.ts %}
+{% include code-snippet/rangenavigator/labels/default-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ The [`labelIntersectAction`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rangenavigator/axis/datetime-cs4/app/app.component.ts %}
+{% include code-snippet/rangenavigator/axis/datetime-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/axis/datetime-cs4/app/app.module.ts %}
+{% include code-snippet/rangenavigator/axis/datetime-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rangenavigator/axis/datetime-cs4/app/main.ts %}
+{% include code-snippet/rangenavigator/axis/datetime-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -80,13 +80,13 @@ By default, the labels can be placed outside the Range Selector. It can also be 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rangenavigator/axis/datetime-cs5/app/app.component.ts %}
+{% include code-snippet/rangenavigator/axis/datetime-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/axis/datetime-cs5/app/app.module.ts %}
+{% include code-snippet/rangenavigator/axis/datetime-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rangenavigator/axis/datetime-cs5/app/main.ts %}
+{% include code-snippet/rangenavigator/axis/datetime-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -98,13 +98,13 @@ The font size, color, family, etc. can be customized using the [`labelStyle`](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rangenavigator/lightweight/default-cs1/app/app.component.ts %}
+{% include code-snippet/rangenavigator/lightweight/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/lightweight/default-cs1/app/app.module.ts %}
+{% include code-snippet/rangenavigator/lightweight/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rangenavigator/lightweight/default-cs1/app/main.ts %}
+{% include code-snippet/rangenavigator/lightweight/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

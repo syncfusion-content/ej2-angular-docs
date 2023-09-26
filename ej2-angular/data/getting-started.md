@@ -86,16 +86,16 @@ The DataManager can act as gateway for both local and remote data source which w
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs6/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs6/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs6/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs6/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs6/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -108,16 +108,16 @@ Now all **DataManager** operations will address the provided service end point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs7/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs7/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs7/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs7/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs7/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -130,16 +130,16 @@ The filter expression can be built easily using **where** method of **Query** cl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs8/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs8/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs8/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs8/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs8/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -151,16 +151,16 @@ The data can be ordered either in ascending or descending using **sortBy** metho
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs9/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs9/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs9/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs9/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs9/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -172,16 +172,16 @@ The **page** method of the Query class is used to get range of data based on the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs10/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs10/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs10/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs10/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs10/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -197,13 +197,13 @@ A DataSource can be created in-line with other Syncfusion component configuratio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/component-local-cs1/app/app.component.ts %}
+{% include code-snippet/data/getting-started/component-local-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/component-local-cs1/app/app.module.ts %}
+{% include code-snippet/data/getting-started/component-local-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/component-local-cs1/app/main.ts %}
+{% include code-snippet/data/getting-started/component-local-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -215,13 +215,13 @@ To bind remote data to Syncfusion component, you can assign a service data as an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/component-local-cs2/app/app.component.ts %}
+{% include code-snippet/data/getting-started/component-local-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/component-local-cs2/app/app.module.ts %}
+{% include code-snippet/data/getting-started/component-local-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/component-local-cs2/app/main.ts %}
+{% include code-snippet/data/getting-started/component-local-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -23,13 +23,13 @@ The following sample demonstrates how to add content template in tooltip.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs5/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs5/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs5/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -43,13 +43,13 @@ N> The Tooltip **target** property includes a unique identifier used to associat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/ajax-content-cs1/app/app.component.ts %}
+{% include code-snippet/tooltip/ajax-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/ajax-content-cs1/app/app.module.ts %}
+{% include code-snippet/tooltip/ajax-content-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/ajax-content-cs1/app/main.ts %}
+{% include code-snippet/tooltip/ajax-content-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -28,13 +28,13 @@ The following sample illustrates how to drag and drop an item within the same li
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listbox/getting-started-cs6/app/app.component.ts %}
+{% include code-snippet/listbox/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listbox/getting-started-cs6/app/app.module.ts %}
+{% include code-snippet/listbox/getting-started-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listbox/getting-started-cs6/app/main.ts %}
+{% include code-snippet/listbox/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -48,13 +48,13 @@ In the following sample, the `allowDragAndDrop` property is set as `true` and `s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listbox/multiple-listbox-cs1/app/app.component.ts %}
+{% include code-snippet/listbox/multiple-listbox-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listbox/multiple-listbox-cs1/app/app.module.ts %}
+{% include code-snippet/listbox/multiple-listbox-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listbox/multiple-listbox-cs1/app/main.ts %}
+{% include code-snippet/listbox/multiple-listbox-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

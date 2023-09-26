@@ -134,13 +134,13 @@ The below example shows a basic RadioButton component,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/radio-button/getting-started-cs1/app/app.component.ts %}
+{% include code-snippet/radio-button/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/radio-button/getting-started-cs1/app/app.module.ts %}
+{% include code-snippet/radio-button/getting-started-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/radio-button/getting-started-cs1/app/main.ts %}
+{% include code-snippet/radio-button/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -157,13 +157,13 @@ In the checked state an inner circle will be added to the visualization of Radio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/radio-button/label-and-size-cs1/app/app.component.ts %}
+{% include code-snippet/radio-button/label-and-size-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/radio-button/label-and-size-cs1/app/app.module.ts %}
+{% include code-snippet/radio-button/label-and-size-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/radio-button/label-and-size-cs1/app/main.ts %}
+{% include code-snippet/radio-button/label-and-size-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

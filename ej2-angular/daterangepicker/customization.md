@@ -19,13 +19,13 @@ The following example disables the weekends of every month using `renderDayCell`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs2/app/app.component.ts %}
+{% include code-snippet/daterangepicker/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs2/app/app.module.ts %}
+{% include code-snippet/daterangepicker/getting-started-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs2/app/main.ts %}
+{% include code-snippet/daterangepicker/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -41,13 +41,13 @@ In below example, first day of the week in the pop-up calendar is customized to 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs3/app/app.component.ts %}
+{% include code-snippet/daterangepicker/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs3/app/app.module.ts %}
+{% include code-snippet/daterangepicker/getting-started-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs3/app/main.ts %}
+{% include code-snippet/daterangepicker/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -61,13 +61,13 @@ Here in following sample, you can choose the mostly using options from pre-defin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs4/app/app.component.ts %}
+{% include code-snippet/daterangepicker/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs4/app/app.module.ts %}
+{% include code-snippet/daterangepicker/getting-started-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs4/app/main.ts %}
+{% include code-snippet/daterangepicker/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

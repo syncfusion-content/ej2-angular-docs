@@ -45,13 +45,13 @@ Card header has an option for adding images in the header. It is aligned with ei
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/card/card-header-img-cs1/app/app.component.ts %}
+{% include code-snippet/card/card-header-img-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/card/card-header-img-cs1/app/app.module.ts %}
+{% include code-snippet/card/card-header-img-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/card/card-header-img-cs1/app/main.ts %}
+{% include code-snippet/card/card-header-img-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ Content in Card holds texts, images, links and all possible HTML elements. Its a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/card/card-content-cs1/app/app.component.ts %}
+{% include code-snippet/card/card-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/card/card-content-cs1/app/app.module.ts %}
+{% include code-snippet/card/card-content-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/card/card-content-cs1/app/main.ts %}
+{% include code-snippet/card/card-content-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

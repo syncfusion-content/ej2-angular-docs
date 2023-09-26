@@ -22,13 +22,13 @@ By setting the chart `id` in the `content` property of dialog component, you can
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/how-to-cs5/app/app.component.ts %}
+{% include code-snippet/chart/how-to-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/how-to-cs5/app/app.module.ts %}
+{% include code-snippet/chart/how-to-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/how-to-cs5/app/main.ts %}
+{% include code-snippet/chart/how-to-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

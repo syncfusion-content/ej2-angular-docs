@@ -18,13 +18,13 @@ In the following example, the DropdownButton with default iconPosition and iconP
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/drop-down-button/dd-icons-cs1/app/app.component.ts %}
+{% include code-snippet/drop-down-button/dd-icons-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/dd-icons-cs1/app/app.module.ts %}
+{% include code-snippet/drop-down-button/dd-icons-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/drop-down-button/dd-icons-cs1/app/main.ts %}
+{% include code-snippet/drop-down-button/dd-icons-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -37,13 +37,13 @@ down arrow `e-caret-hide` class is added using [`cssClass`](https://ej2.syncfusi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/drop-down-button/icon-only-cs1/app/app.component.ts %}
+{% include code-snippet/drop-down-button/icon-only-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/icon-only-cs1/app/app.module.ts %}
+{% include code-snippet/drop-down-button/icon-only-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/drop-down-button/icon-only-cs1/app/main.ts %}
+{% include code-snippet/drop-down-button/icon-only-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,13 +60,13 @@ In this following example, `e-image` class is added with background url of the s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/drop-down-button/sprite-cs1/app/app.component.ts %}
+{% include code-snippet/drop-down-button/sprite-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/sprite-cs1/app/app.module.ts %}
+{% include code-snippet/drop-down-button/sprite-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/drop-down-button/sprite-cs1/app/main.ts %}
+{% include code-snippet/drop-down-button/sprite-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -82,13 +82,13 @@ using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/drop-dow
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/drop-down-button/vertical-cs1/app/app.component.ts %}
+{% include code-snippet/drop-down-button/vertical-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/vertical-cs1/app/app.module.ts %}
+{% include code-snippet/drop-down-button/vertical-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/drop-down-button/vertical-cs1/app/main.ts %}
+{% include code-snippet/drop-down-button/vertical-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

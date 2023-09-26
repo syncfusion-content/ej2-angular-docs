@@ -23,13 +23,13 @@ Input Chip holds information in compact form. It converts user input into chips.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chips/types/input-cs1/app/app.component.ts %}
+{% include code-snippet/chips/types/input-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/types/input-cs1/app/app.module.ts %}
+{% include code-snippet/chips/types/input-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chips/types/input-cs1/app/main.ts %}
+{% include code-snippet/chips/types/input-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -41,13 +41,13 @@ Choice Chip allows you to select a single chip from the set of ChipList/ChipColl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chips/types/input-cs2/app/app.component.ts %}
+{% include code-snippet/chips/types/input-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/types/input-cs2/app/app.module.ts %}
+{% include code-snippet/chips/types/input-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chips/types/input-cs2/app/main.ts %}
+{% include code-snippet/chips/types/input-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -59,13 +59,13 @@ Filter Chip allows you to select a multiple chip from the set of ChipList/ChipCo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chips/types/input-cs3/app/app.component.ts %}
+{% include code-snippet/chips/types/input-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/types/input-cs3/app/app.module.ts %}
+{% include code-snippet/chips/types/input-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chips/types/input-cs3/app/main.ts %}
+{% include code-snippet/chips/types/input-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -77,13 +77,13 @@ The Action Chip triggers the event like click or delete, which helps doing actio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chips/types/input-cs4/app/app.component.ts %}
+{% include code-snippet/chips/types/input-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/types/input-cs4/app/app.module.ts %}
+{% include code-snippet/chips/types/input-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chips/types/input-cs4/app/main.ts %}
+{% include code-snippet/chips/types/input-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -95,13 +95,13 @@ Deletable Chip allows you to delete a chip from ChipList/ChipCollection. It can 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chips/types/input-cs5/app/app.component.ts %}
+{% include code-snippet/chips/types/input-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/types/input-cs5/app/app.module.ts %}
+{% include code-snippet/chips/types/input-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chips/types/input-cs5/app/main.ts %}
+{% include code-snippet/chips/types/input-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

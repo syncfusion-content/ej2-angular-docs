@@ -18,13 +18,13 @@ You can customize the style of a Skeleton control by using [`cssClass`](https://
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/skeleton/styles-cs1/app/app.component.ts %}
+{% include code-snippet/skeleton/styles-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/skeleton/styles-cs1/app/app.module.ts %}
+{% include code-snippet/skeleton/styles-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/skeleton/styles-cs1/app/main.ts %}
+{% include code-snippet/skeleton/styles-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.css" %}
 {% include code-snippet/skeleton/styles-cs1/index.css %}

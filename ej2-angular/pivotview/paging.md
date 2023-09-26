@@ -27,13 +27,13 @@ You can also change the position, visibility, compact view, and template of the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs201/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs201/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs201/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs201/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs201/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs201/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -47,13 +47,13 @@ You can display the pager UI at top or bottom of the pivot table by using the [`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs202/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs202/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs202/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs202/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs202/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs202/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -67,13 +67,13 @@ Toggles and displays row and column pager. To show the column pager on the left 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs203/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs203/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs203/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs203/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs203/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs203/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -85,13 +85,13 @@ By hiding all except the previous and next navigation buttons, the pager UI can 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs204/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs204/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs204/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs204/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs204/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs204/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -105,13 +105,13 @@ In the following example, row pager has been disabled by setting the [`showRowPa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs205/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs205/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs205/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs205/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs205/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs205/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -123,13 +123,13 @@ By using the [`showRowPageSize`](https://ej2.syncfusion.com/angular/documentatio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs206/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs206/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs206/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs206/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs206/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs206/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -145,13 +145,13 @@ In the following example, the "Rows per page" dropdown is set with user-defined 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs207/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs207/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs207/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs207/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs207/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs207/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -163,13 +163,13 @@ The [`template`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/pagingTemplate-cs1/app/app.component.ts %}
+{% include code-snippet/pivot-grid/pagingTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/pagingTemplate-cs1/app/app.module.ts %}
+{% include code-snippet/pivot-grid/pagingTemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/pagingTemplate-cs1/app/main.ts %}
+{% include code-snippet/pivot-grid/pagingTemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

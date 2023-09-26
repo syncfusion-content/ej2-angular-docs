@@ -19,13 +19,13 @@ You can bind a simple JSON data to the chart using [`dataSource`](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/datasource-cs1/app/app.component.ts %}
+{% include code-snippet/stock-chart/datasource-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/datasource-cs1/app/app.module.ts %}
+{% include code-snippet/stock-chart/datasource-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/datasource-cs1/app/main.ts %}
+{% include code-snippet/stock-chart/datasource-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -37,13 +37,13 @@ You can also bind remote data to the chart using `DataManager`. The DataManager 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/datasource-cs2/app/app.component.ts %}
+{% include code-snippet/stock-chart/datasource-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/datasource-cs2/app/app.module.ts %}
+{% include code-snippet/stock-chart/datasource-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/datasource-cs2/app/main.ts %}
+{% include code-snippet/stock-chart/datasource-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

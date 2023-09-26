@@ -16,13 +16,13 @@ To use the drill through feature, inject the `DrillThroughService` module in the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs49/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs49/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs49/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs49/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs49/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs49/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -32,13 +32,13 @@ Users can also view the underlying raw data though the pivot chart. By clicking 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs50/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs50/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs50/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs50/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs50/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs50/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -130,13 +130,13 @@ The event [`drillThrough`](https://ej2.syncfusion.com/vue/documentation/api/pivo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs51/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs51/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs51/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs51/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs51/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs51/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -153,13 +153,13 @@ The event [`beginDrillThrough`](https://ej2.syncfusion.com/angular/documentation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs52/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs52/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs52/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs52/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs52/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs52/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

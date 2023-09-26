@@ -42,13 +42,13 @@ Step 2:  The corresponding name specified in the name property should bind with 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/in-place-editor/validation-sample-cs1/app/app.component.ts %}
+{% include code-snippet/in-place-editor/validation-sample-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/validation-sample-cs1/app/app.module.ts %}
+{% include code-snippet/in-place-editor/validation-sample-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/in-place-editor/validation-sample-cs1/app/main.ts %}
+{% include code-snippet/in-place-editor/validation-sample-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ In the following sample, first editor value submitted without select any date, s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/in-place-editor/validation-cs1/app/app.component.ts %}
+{% include code-snippet/in-place-editor/validation-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/validation-cs1/app/app.module.ts %}
+{% include code-snippet/in-place-editor/validation-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/in-place-editor/validation-cs1/app/main.ts %}
+{% include code-snippet/in-place-editor/validation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

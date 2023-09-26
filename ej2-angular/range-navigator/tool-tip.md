@@ -23,13 +23,13 @@ Tooltip can be customized using the following properties:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rangenavigator/getting-started/tooltip-cs2/app/app.component.ts %}
+{% include code-snippet/rangenavigator/getting-started/tooltip-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/getting-started/tooltip-cs2/app/app.module.ts %}
+{% include code-snippet/rangenavigator/getting-started/tooltip-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rangenavigator/getting-started/tooltip-cs2/app/main.ts %}
+{% include code-snippet/rangenavigator/getting-started/tooltip-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -41,13 +41,13 @@ The `labelFormat` property in the tooltip is used to format and parse the date t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rangenavigator/getting-started/tooltip-cs3/app/app.component.ts %}
+{% include code-snippet/rangenavigator/getting-started/tooltip-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/getting-started/tooltip-cs3/app/app.module.ts %}
+{% include code-snippet/rangenavigator/getting-started/tooltip-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rangenavigator/getting-started/tooltip-cs3/app/main.ts %}
+{% include code-snippet/rangenavigator/getting-started/tooltip-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

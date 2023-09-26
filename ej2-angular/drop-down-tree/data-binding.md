@@ -32,13 +32,13 @@ In the following example, **code**, **name**, and **countries** columns from the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdowntree/data-binding/hierarchial-data-cs1/app/app.component.ts %}
+{% include code-snippet/dropdowntree/data-binding/hierarchial-data-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdowntree/data-binding/hierarchial-data-cs1/app/app.module.ts %}
+{% include code-snippet/dropdowntree/data-binding/hierarchial-data-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdowntree/data-binding/hierarchial-data-cs1/app/main.ts %}
+{% include code-snippet/dropdowntree/data-binding/hierarchial-data-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdowntree/data-binding/self-referential-data-cs1/app/app.component.ts %}
+{% include code-snippet/dropdowntree/data-binding/self-referential-data-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdowntree/data-binding/self-referential-data-cs1/app/app.module.ts %}
+{% include code-snippet/dropdowntree/data-binding/self-referential-data-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdowntree/data-binding/self-referential-data-cs1/app/main.ts %}
+{% include code-snippet/dropdowntree/data-binding/self-referential-data-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -100,13 +100,13 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from the orders table 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdowntree/data-binding/remote-data-cs1/app/app.component.ts %}
+{% include code-snippet/dropdowntree/data-binding/remote-data-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdowntree/data-binding/remote-data-cs1/app/app.module.ts %}
+{% include code-snippet/dropdowntree/data-binding/remote-data-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdowntree/data-binding/remote-data-cs1/app/main.ts %}
+{% include code-snippet/dropdowntree/data-binding/remote-data-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

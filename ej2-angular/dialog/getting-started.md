@@ -218,13 +218,13 @@ Run the `ng serve` command in command window, it will serve your application and
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/getting-started-cs2/app/app.component.ts %}
+{% include code-snippet/dialog/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/getting-started-cs2/app/app.module.ts %}
+{% include code-snippet/dialog/getting-started-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/getting-started-cs2/app/main.ts %}
+{% include code-snippet/dialog/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -251,13 +251,13 @@ While the user clicks the overlay, the action can be handled through the [`overl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/getting-started-cs3/app/app.component.ts %}
+{% include code-snippet/dialog/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/getting-started-cs3/app/app.module.ts %}
+{% include code-snippet/dialog/getting-started-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/getting-started-cs3/app/main.ts %}
+{% include code-snippet/dialog/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -269,13 +269,13 @@ The Dialog header can be enabled by adding the header content as text or HTML co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/getting-started-cs4/app/app.component.ts %}
+{% include code-snippet/dialog/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/getting-started-cs4/app/app.module.ts %}
+{% include code-snippet/dialog/getting-started-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/getting-started-cs4/app/main.ts %}
+{% include code-snippet/dialog/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -293,13 +293,13 @@ The below sample render with button and its click event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/getting-started-cs5/app/app.component.ts %}
+{% include code-snippet/dialog/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/getting-started-cs5/app/app.module.ts %}
+{% include code-snippet/dialog/getting-started-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/getting-started-cs5/app/main.ts %}
+{% include code-snippet/dialog/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -314,13 +314,13 @@ From `16.2.x` version, enabled draggable support for modal Dialog also.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/getting-started-cs6/app/app.component.ts %}
+{% include code-snippet/dialog/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/getting-started-cs6/app/app.module.ts %}
+{% include code-snippet/dialog/getting-started-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/getting-started-cs6/app/main.ts %}
+{% include code-snippet/dialog/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -337,13 +337,13 @@ The below example demonstrates the different Dialog positions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/position-cs1/app/app.component.ts %}
+{% include code-snippet/dialog/position-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/position-cs1/app/app.module.ts %}
+{% include code-snippet/dialog/position-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/position-cs1/app/main.ts %}
+{% include code-snippet/dialog/position-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

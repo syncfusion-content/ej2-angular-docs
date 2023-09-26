@@ -14,16 +14,16 @@ Dropdown list virtualization is a technique used to efficiently render long list
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdownlist/virtual-scroll/app/app.component.ts %}
+{% include code-snippet/dropdownlist/virtual-scroll/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/virtual-scroll/app/app.module.ts %}
+{% include code-snippet/dropdownlist/virtual-scroll/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdownlist/virtual-scroll/app/main.ts %}
+{% include code-snippet/dropdownlist/virtual-scroll/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="template.html" %}
-{% include code-snippet/dropdownlist/virtual-scroll/app/virtual-scroll.html %}
+{% include code-snippet/dropdownlist/virtual-scroll/src/virtual-scroll.html %}
 {% endhighlight %}
 {% endtabs %}
   

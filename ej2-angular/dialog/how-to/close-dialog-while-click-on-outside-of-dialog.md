@@ -18,13 +18,13 @@ In the following sample, dialog is closed when clicking outside the dialog area 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/dlg-close-cs1/app/app.component.ts %}
+{% include code-snippet/dialog/dlg-close-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dlg-close-cs1/app/app.module.ts %}
+{% include code-snippet/dialog/dlg-close-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/dlg-close-cs1/app/main.ts %}
+{% include code-snippet/dialog/dlg-close-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ In the following sample, the dialog is rendered based on the target container. I
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/dialog-close-cs1/app/app.component.ts %}
+{% include code-snippet/dialog/dialog-close-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dialog-close-cs1/app/app.module.ts %}
+{% include code-snippet/dialog/dialog-close-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/dialog-close-cs1/app/main.ts %}
+{% include code-snippet/dialog/dialog-close-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

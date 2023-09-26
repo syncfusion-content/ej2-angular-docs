@@ -134,13 +134,13 @@ The following sample demonstrate the DateRangePicker component in `German` cultu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/daterangepicker/internationalization-cs1/app/app.component.ts %}
+{% include code-snippet/daterangepicker/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/daterangepicker/internationalization-cs1/app/app.module.ts %}
+{% include code-snippet/daterangepicker/internationalization-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/daterangepicker/internationalization-cs1/app/main.ts %}
+{% include code-snippet/daterangepicker/internationalization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -199,13 +199,13 @@ The following example demonstrates the DateRangePicker in `Hebrew` culture with 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/daterangepicker/rtl-cs1/app/app.component.ts %}
+{% include code-snippet/daterangepicker/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/daterangepicker/rtl-cs1/app/app.module.ts %}
+{% include code-snippet/daterangepicker/rtl-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/daterangepicker/rtl-cs1/app/main.ts %}
+{% include code-snippet/daterangepicker/rtl-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -220,13 +220,13 @@ In below sample, the date strings are formatted to `yyyy-MM-dd` and separator be
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs7/app/app.component.ts %}
+{% include code-snippet/daterangepicker/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs7/app/app.module.ts %}
+{% include code-snippet/daterangepicker/getting-started-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs7/app/main.ts %}
+{% include code-snippet/daterangepicker/getting-started-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

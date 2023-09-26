@@ -22,13 +22,13 @@ To use the conditional formatting feature, You need to inject the `ConditionalFo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs156/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs156/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs156/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs156/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs156/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs156/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

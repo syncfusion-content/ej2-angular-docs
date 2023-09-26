@@ -16,13 +16,13 @@ The following example demonstrates about how to highlight the matched character 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs16/app/app.component.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs16/app/app.module.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs16/app/main.ts %}
+{% include code-snippet/dropdownlist/getting-started-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

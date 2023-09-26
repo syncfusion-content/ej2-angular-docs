@@ -15,13 +15,13 @@ To render a range area series, use series [`type`](https://ej2.syncfusion.com/an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/area-cs2/app/app.component.ts %}
+{% include code-snippet/chart/series/area-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/area-cs2/app/app.module.ts %}
+{% include code-snippet/chart/series/area-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/area-cs2/app/main.ts %}
+{% include code-snippet/chart/series/area-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -38,13 +38,13 @@ The following properties can be used to customize the `range area` series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/rangearea-cs/app/app.component.ts %}
+{% include code-snippet/chart/series/rangearea-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/rangearea-cs/app/app.module.ts %}
+{% include code-snippet/chart/series/rangearea-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/rangearea-cs/app/main.ts %}
+{% include code-snippet/chart/series/rangearea-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -27,13 +27,13 @@ The Angular Floating Action Button supports the following predefined styles that
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/floating-action-button/styles-cs1/app/app.component.ts %}
+{% include code-snippet/floating-action-button/styles-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/floating-action-button/styles-cs1/app/app.module.ts %}
+{% include code-snippet/floating-action-button/styles-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/floating-action-button/styles-cs1/app/main.ts %}
+{% include code-snippet/floating-action-button/styles-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -61,13 +61,13 @@ The content will behave the same , when the `enableHtmlSantiizer` is enabled. Si
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/floating-action-button/styles-cs2/app/app.component.ts %}
+{% include code-snippet/floating-action-button/styles-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/floating-action-button/styles-cs2/app/app.module.ts %}
+{% include code-snippet/floating-action-button/styles-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/floating-action-button/styles-cs2/app/main.ts %}
+{% include code-snippet/floating-action-button/styles-cs2/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.css" %}
 {% include code-snippet/floating-action-button/styles-cs2/index.css %}

@@ -26,13 +26,13 @@ To known about Zooming and Panning, you can check on this video:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs5/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs5/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs5/app/main.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -55,13 +55,13 @@ There are three types of mode.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs6/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs6/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs6/app/main.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -73,13 +73,13 @@ By default, zoomin, zoomout, pan and reset buttons will be displayed for zoomed 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs7/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs7/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs7/app/main.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -91,13 +91,13 @@ Using [`enablePan`](https://ej2.syncfusion.com/angular/documentation/api/chart/z
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs8/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs8/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs8/app/main.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -109,13 +109,13 @@ Using the [`enableScrollbar`](https://ej2.syncfusion.com/angular/documentation/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/scrollbar-cs1/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/scrollbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/scrollbar-cs1/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/scrollbar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/scrollbar-cs1/app/main.ts %}
+{% include code-snippet/chart/user-interaction/scrollbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -127,13 +127,13 @@ By using [`enableAutoIntervalOnZooming`](https://ej2.syncfusion.com/angular/docu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs9/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs9/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs9/app/main.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -14,13 +14,13 @@ You can refresh pivot table and field list with new data source dynamically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs169/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs169/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs169/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs169/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs169/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs169/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

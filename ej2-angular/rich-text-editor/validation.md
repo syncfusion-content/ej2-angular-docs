@@ -25,13 +25,13 @@ The following example demonstrates how to achieve a two-way data binding.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/form-support-cs1/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/form-support-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/form-support-cs1/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/form-support-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/form-support-cs1/app/main.ts %}
+{% include code-snippet/rich-text-editor/form-support-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -49,13 +49,13 @@ The following example demonstrates how to use the reactive forms.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/form-support-cs2/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/form-support-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/form-support-cs2/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/form-support-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/form-support-cs2/app/main.ts %}
+{% include code-snippet/rich-text-editor/form-support-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

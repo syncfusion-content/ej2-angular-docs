@@ -16,13 +16,13 @@ The following example shows how to open SFDT data in Document Editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/document-editor/import-cs2/app/app.component.ts %}
+{% include code-snippet/document-editor/import-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/import-cs2/app/app.module.ts %}
+{% include code-snippet/document-editor/import-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/document-editor/import-cs2/app/main.ts %}
+{% include code-snippet/document-editor/import-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ The following example shows how to import document from local machine.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/document-editor/import-cs3/app/app.component.ts %}
+{% include code-snippet/document-editor/import-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/import-cs3/app/app.module.ts %}
+{% include code-snippet/document-editor/import-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/document-editor/import-cs3/app/main.ts %}
+{% include code-snippet/document-editor/import-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -153,7 +153,7 @@ Here’s how to handle the server-side action for converting word document in to
     }
 ```
 
-To know about server-side action, please refer this [page](../document-editor/web-services).
+To know about server-side action, please refer this [page](../document-editor/web-services-overview).
 
 ## Compatibility with Microsoft Word
 

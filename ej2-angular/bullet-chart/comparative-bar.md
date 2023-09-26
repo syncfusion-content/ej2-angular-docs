@@ -15,13 +15,13 @@ The line marker that runs perpendicular to the orientation of the graph is known
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs13/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs13/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs13/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -33,13 +33,13 @@ The shape of the target bar can be customized using the [`targetTypes`](https://
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs14/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs14/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs14/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ The following properties can be used to customize the Target Bar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs15/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs15/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs15/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

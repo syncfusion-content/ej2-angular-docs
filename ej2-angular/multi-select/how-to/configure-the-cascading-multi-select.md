@@ -16,16 +16,16 @@ The following example, shows the cascade behavior of country, state, and city Mu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/multiselect/cascading-cs1/app/app.component.ts %}
+{% include code-snippet/multiselect/cascading-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/cascading-cs1/app/app.module.ts %}
+{% include code-snippet/multiselect/cascading-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/multiselect/cascading-cs1/app/main.ts %}
+{% include code-snippet/multiselect/cascading-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="cascading.html" %}
-{% include code-snippet/multiselect/cascading-cs1/app/cascading.html %}
+{% include code-snippet/multiselect/cascading-cs1/src/cascading.html %}
 {% endhighlight %}
 {% endtabs %}
   

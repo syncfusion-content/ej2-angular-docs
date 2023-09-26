@@ -17,13 +17,13 @@ The series are rendered in the order as it is added to the series array.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs37/app/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs37/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs37/app/app.module.ts %}
+{% include code-snippet/chart/axis/category-cs37/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs37/app/main.ts %}
+{% include code-snippet/chart/axis/category-cs37/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -37,13 +37,13 @@ Combination of different types like Line, column etc, can be rendered in a chart
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/combination-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/combination-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/combination-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/combination-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/combination-cs1/app/main.ts %}
+{% include code-snippet/chart/series/combination-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -55,13 +55,13 @@ By setting `enableComplexProperty` value as `true` in series you can bind comple
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/combination-cs2/app/app.component.ts %}
+{% include code-snippet/chart/series/combination-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/combination-cs2/app/app.module.ts %}
+{% include code-snippet/chart/series/combination-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/combination-cs2/app/main.ts %}
+{% include code-snippet/chart/series/combination-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

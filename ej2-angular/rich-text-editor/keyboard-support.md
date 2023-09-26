@@ -53,13 +53,13 @@ You can use the following key shortcuts when the Rich Text Editor renders with H
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs13/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs13/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs13/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -93,13 +93,13 @@ You can use the following key shortcuts when the Rich Text Editor renders with M
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs14/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs14/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs14/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -113,13 +113,13 @@ In the below sample, you have customize the bold, italic, underline toolbar acti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs15/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs15/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs15/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

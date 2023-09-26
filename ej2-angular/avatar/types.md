@@ -27,13 +27,13 @@ class to change the appearance of the avatar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/avatar/size-cs1/app/app.component.ts %}
+{% include code-snippet/avatar/size-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/size-cs1/app/app.module.ts %}
+{% include code-snippet/avatar/size-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/avatar/size-cs1/app/main.ts %}
+{% include code-snippet/avatar/size-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -53,13 +53,13 @@ adding the modifier class `.e-avatar` to the target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/avatar/default-cs1/app/app.component.ts %}
+{% include code-snippet/avatar/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/default-cs1/app/app.module.ts %}
+{% include code-snippet/avatar/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/avatar/default-cs1/app/main.ts %}
+{% include code-snippet/avatar/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -71,13 +71,13 @@ The circle avatar style can be applied by adding the modifier class `.e-avatar-c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/avatar/circle-cs1/app/app.component.ts %}
+{% include code-snippet/avatar/circle-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/circle-cs1/app/app.module.ts %}
+{% include code-snippet/avatar/circle-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/avatar/circle-cs1/app/main.ts %}
+{% include code-snippet/avatar/circle-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

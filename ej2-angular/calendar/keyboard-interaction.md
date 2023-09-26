@@ -37,13 +37,13 @@ It supports the below list of shortcut keys.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/calendar/getting-started-cs13/app/app.component.ts %}
+{% include code-snippet/calendar/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/getting-started-cs13/app/app.module.ts %}
+{% include code-snippet/calendar/getting-started-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/calendar/getting-started-cs13/app/main.ts %}
+{% include code-snippet/calendar/getting-started-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
