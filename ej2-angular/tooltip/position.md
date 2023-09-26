@@ -41,13 +41,13 @@ On initializing the Tooltip, you can set the position property with any one of
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs15/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs15/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs15/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ The following code example illustrates how to set the pointer to the start posit
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs16/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs16/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs16/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -90,13 +90,13 @@ The Tooltip and its tip pointer can be positioned dynamically based on the targe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs17/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs17/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs17/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -109,13 +109,13 @@ By default, it is set to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs18/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs18/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs18/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -136,13 +136,13 @@ The following code example illustrates how to set offset values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs19/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs19/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs19/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs19/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs19/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -30,13 +30,13 @@ The pivot table has an option to show hyperlink option for all cells that are cu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs172/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs172/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs172/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs172/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs172/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs172/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -48,13 +48,13 @@ The pivot table has an option to show hyperlink option for row header cells alon
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs173/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs173/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs173/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs173/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs173/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs173/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ The pivot table has an option to show hyperlink option for column header cells a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs174/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs174/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs174/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs174/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs174/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs174/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -84,13 +84,13 @@ The pivot table has an option to show hyperlink option for value cells alone tha
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs175/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs175/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs175/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs175/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs175/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs175/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -102,13 +102,13 @@ The pivot table has an option to show hyperlink option for summary cells alone t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs176/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs176/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs176/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs176/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs176/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs176/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -125,13 +125,13 @@ The pivot table has an option to show hyperlink in the cells based on specific c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs177/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs177/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs177/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs177/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs177/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs177/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -143,13 +143,13 @@ The pivot table has an option to show hyperlink in the cells based on specific r
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs178/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs178/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs178/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs178/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs178/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs178/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -163,13 +163,13 @@ It has following parameters - `cancel` and `currentCell`. The parameter `current
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs179/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs179/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs179/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs179/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs179/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs179/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

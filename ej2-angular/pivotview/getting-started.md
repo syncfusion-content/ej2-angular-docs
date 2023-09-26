@@ -309,13 +309,13 @@ The field list allows to add or remove fields and also rearrange the fields betw
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs105/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs105/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs105/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs105/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs105/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs105/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -329,13 +329,13 @@ The grouping bar feature automatically populates fields from the bound data sour
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs106/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs106/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs106/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs106/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs106/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs106/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -347,13 +347,13 @@ The filter axis contains collection of fields that would act as master filter ov
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs107/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs107/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs107/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs107/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs107/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs107/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -369,13 +369,13 @@ Also calculated fields can be added to the bound datasource at run time through 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs108/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs108/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs108/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs108/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs108/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs108/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -397,13 +397,13 @@ ng serve --prod
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs109/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs109/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs109/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs109/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs109/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs109/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

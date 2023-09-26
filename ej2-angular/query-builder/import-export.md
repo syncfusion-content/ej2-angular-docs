@@ -18,13 +18,13 @@ To apply conditions initially, you can define the [`rule`](https://ej2.syncfusio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/query-builder/filtering-cs8/app/app.component.ts %}
+{% include code-snippet/query-builder/filtering-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs8/app/app.module.ts %}
+{% include code-snippet/query-builder/filtering-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/query-builder/filtering-cs8/app/main.ts %}
+{% include code-snippet/query-builder/filtering-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ You can set the conditions from structured JSON object through the [`setRules`](
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/query-builder/filtering-cs9/app/app.component.ts %}
+{% include code-snippet/query-builder/filtering-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs9/app/app.module.ts %}
+{% include code-snippet/query-builder/filtering-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/query-builder/filtering-cs9/app/main.ts %}
+{% include code-snippet/query-builder/filtering-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ You can set the conditions from SQL query through the [`setRulesFromSql`](https:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/query-builder/filtering-cs10/app/app.component.ts %}
+{% include code-snippet/query-builder/filtering-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs10/app/app.module.ts %}
+{% include code-snippet/query-builder/filtering-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/query-builder/filtering-cs10/app/main.ts %}
+{% include code-snippet/query-builder/filtering-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -82,13 +82,13 @@ You can export the defined conditions to SQL query through the [`getSqlFromRules
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/query-builder/export-cs1/app/app.component.ts %}
+{% include code-snippet/query-builder/export-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/export-cs1/app/app.module.ts %}
+{% include code-snippet/query-builder/export-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/query-builder/export-cs1/app/main.ts %}
+{% include code-snippet/query-builder/export-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

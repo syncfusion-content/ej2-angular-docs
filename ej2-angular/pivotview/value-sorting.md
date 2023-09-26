@@ -19,13 +19,13 @@ Value sorting can be configured using the `valueSortSettings` option through cod
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs299/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs299/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs299/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs299/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs299/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs299/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

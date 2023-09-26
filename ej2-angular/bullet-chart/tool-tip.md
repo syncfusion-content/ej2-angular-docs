@@ -18,13 +18,13 @@ The tooltip is not visible by default. To make it visible, set the [`enable`](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs34/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs34/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs34/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs34/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs34/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs34/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ Any HTML elements can be displayed in the tooltip by using the [`template`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/user-interaction/tooltipTemplate-cs1/app/app.component.ts %}
+{% include code-snippet/bullet-chart/user-interaction/tooltipTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/user-interaction/tooltipTemplate-cs1/app/app.module.ts %}
+{% include code-snippet/bullet-chart/user-interaction/tooltipTemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/user-interaction/tooltipTemplate-cs1/app/main.ts %}
+{% include code-snippet/bullet-chart/user-interaction/tooltipTemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ The following properties can be used to customize the Bullet Chart tooltip.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs35/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs35/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs35/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs35/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs35/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs35/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

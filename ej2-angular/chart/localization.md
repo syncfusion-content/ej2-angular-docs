@@ -51,13 +51,13 @@ For more information about localization, refer this [`localization`](http://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs1/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs1/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs1/app/main.ts %}
+{% include code-snippet/chart/user-interaction/zoom-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

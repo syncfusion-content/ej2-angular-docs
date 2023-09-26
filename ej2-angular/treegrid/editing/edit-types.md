@@ -42,13 +42,13 @@ Component |Example
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs11/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs11/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs11/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -64,13 +64,13 @@ In the following demo, while editing the row, the decimal point values have been
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs12/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs12/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs12/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -103,13 +103,13 @@ In the following demo, the DropDownList is rendered with the custom Datasource f
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-cs1/app/main.ts %}
+{% include code-snippet/treegrid/edit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -129,13 +129,13 @@ The cell edit template is used to add a custom component for a particular column
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs13/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs13/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs13/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -147,13 +147,13 @@ Use the cell edit template feature of the tree grid to render the TimePicker com
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs14/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs14/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs14/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -167,13 +167,13 @@ In the following sample, the MultiSelect DropDown component is rendered in the *
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs15/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs15/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs15/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -185,13 +185,13 @@ Use the cell edit template feature of the tree grid to render the RichTextEditor
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs16/app/app.component.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs16/app/app.module.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs16/app/main.ts %}
+{% include code-snippet/treegrid/edit-toolbar-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

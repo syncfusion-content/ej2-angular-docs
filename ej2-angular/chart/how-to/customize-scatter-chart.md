@@ -16,13 +16,13 @@ You can customize the width and height of the shapes by using `width` and `heigh
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/how-to-cs3/app/app.component.ts %}
+{% include code-snippet/chart/how-to-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/how-to-cs3/app/app.module.ts %}
+{% include code-snippet/chart/how-to-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/how-to-cs3/app/main.ts %}
+{% include code-snippet/chart/how-to-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ By default datalabel values shows y values of the datasource. You can customize 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/how-to-cs4/app/app.component.ts %}
+{% include code-snippet/chart/how-to-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/how-to-cs4/app/app.module.ts %}
+{% include code-snippet/chart/how-to-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/how-to-cs4/app/main.ts %}
+{% include code-snippet/chart/how-to-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

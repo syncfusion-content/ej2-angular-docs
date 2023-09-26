@@ -14,13 +14,13 @@ Toast can support to change templates in dynamically, with displaying in multipl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/toast/toast-cs8/app/app.component.ts %}
+{% include code-snippet/toast/toast-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs8/app/app.module.ts %}
+{% include code-snippet/toast/toast-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/toast/toast-cs8/app/main.ts %}
+{% include code-snippet/toast/toast-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

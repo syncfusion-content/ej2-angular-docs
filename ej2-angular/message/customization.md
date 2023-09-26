@@ -20,13 +20,13 @@ The following example demonstrates the message with different content alignments
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/message/content-alignment-cs1/app/app.component.ts %}
+{% include code-snippet/message/content-alignment-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/message/content-alignment-cs1/app/app.module.ts %}
+{% include code-snippet/message/content-alignment-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/message/content-alignment-cs1/app/main.ts %}
+{% include code-snippet/message/content-alignment-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ The following example shows the rounded and squared appearance of the message, w
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/message/custom-appearance-cs1/app/app.component.ts %}
+{% include code-snippet/message/custom-appearance-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/message/custom-appearance-cs1/app/app.module.ts %}
+{% include code-snippet/message/custom-appearance-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/message/custom-appearance-cs1/app/main.ts %}
+{% include code-snippet/message/custom-appearance-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -96,13 +96,13 @@ The following example shows the message which renders without any script referen
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/message/css-message-cs1/app/app.component.ts %}
+{% include code-snippet/message/css-message-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/message/css-message-cs1/app/app.module.ts %}
+{% include code-snippet/message/css-message-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/message/css-message-cs1/app/main.ts %}
+{% include code-snippet/message/css-message-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -28,13 +28,13 @@ The following sample demonstrates the above functionalities of the spinner.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progress-button/default-cs8/app/app.component.ts %}
+{% include code-snippet/progress-button/default-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progress-button/default-cs8/app/app.module.ts %}
+{% include code-snippet/progress-button/default-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progress-button/default-cs8/app/main.ts %}
+{% include code-snippet/progress-button/default-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -48,13 +48,13 @@ The [`content`](https://ej2.syncfusion.com/angular/documentation/api/progress-bu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progress-button/default-cs9/app/app.component.ts %}
+{% include code-snippet/progress-button/default-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progress-button/default-cs9/app/app.module.ts %}
+{% include code-snippet/progress-button/default-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progress-button/default-cs9/app/main.ts %}
+{% include code-snippet/progress-button/default-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ The progress can be visualized at the specified interval by changing the [`step`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progress-button/default-cs10/app/app.component.ts %}
+{% include code-snippet/progress-button/default-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progress-button/default-cs10/app/app.module.ts %}
+{% include code-snippet/progress-button/default-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progress-button/default-cs10/app/main.ts %}
+{% include code-snippet/progress-button/default-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,13 +86,13 @@ The progress can be changed dynamically by modifying the [`percent`](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progress-button/default-cs11/app/app.component.ts %}
+{% include code-snippet/progress-button/default-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progress-button/default-cs11/app/app.module.ts %}
+{% include code-snippet/progress-button/default-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progress-button/default-cs11/app/main.ts %}
+{% include code-snippet/progress-button/default-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -106,13 +106,13 @@ You can pause and resume the progress using the [`stop`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progress-button/default-cs12/app/app.component.ts %}
+{% include code-snippet/progress-button/default-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progress-button/default-cs12/app/app.module.ts %}
+{% include code-snippet/progress-button/default-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progress-button/default-cs12/app/main.ts %}
+{% include code-snippet/progress-button/default-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

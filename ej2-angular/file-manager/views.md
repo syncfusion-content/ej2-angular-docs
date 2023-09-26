@@ -23,13 +23,13 @@ By Default, File Manager is rendered with largeicons view. The following example
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/large-icons-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/large-icons-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/large-icons-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/large-icons-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/large-icons-cs1/app/main.ts %}
+{% include code-snippet/file-manager/large-icons-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -41,13 +41,13 @@ Details view is an injectable module in the file manager so, it should be inject
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/details-view-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/details-view-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/details-view-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/details-view-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/details-view-cs1/app/main.ts %}
+{% include code-snippet/file-manager/details-view-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

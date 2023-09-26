@@ -28,13 +28,13 @@ In the following demo, the `showHeader` property is disabled on Kanban board.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/card-header-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/card-header-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/card-header-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/card-header-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/card-header-cs1/app/main.ts %}
+{% include code-snippet/kanban/card-header-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -50,13 +50,13 @@ You can customize the default card layout using template as per your application
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/card-template-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/card-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/card-template-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/card-template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/card-template-cs1/app/main.ts %}
+{% include code-snippet/kanban/card-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -76,13 +76,13 @@ Select the multiple cards randomly using Ctrl + mouse click and select the multi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/multiple-selection-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/multiple-selection-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/multiple-selection-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/multiple-selection-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/multiple-selection-cs1/app/main.ts %}
+{% include code-snippet/kanban/multiple-selection-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

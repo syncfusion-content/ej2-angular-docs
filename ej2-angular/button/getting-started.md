@@ -134,13 +134,13 @@ The following example shows a basic Button component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/button/default-cs1/app/app.component.ts %}
+{% include code-snippet/button/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button/default-cs1/app/app.module.ts %}
+{% include code-snippet/button/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/button/default-cs1/app/main.ts %}
+{% include code-snippet/button/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -152,13 +152,13 @@ To change the default Button to flat Button, set the [`cssClass`](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/button/default-cs2/app/app.component.ts %}
+{% include code-snippet/button/default-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button/default-cs2/app/app.module.ts %}
+{% include code-snippet/button/default-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/button/default-cs2/app/main.ts %}
+{% include code-snippet/button/default-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -16,13 +16,13 @@ To render a column series, use series [`type`](https://ej2.syncfusion.com/angula
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs18/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs18/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs18/app/main.ts %}
+{% include code-snippet/chart/series/column-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs31/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs31/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs31/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs31/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs31/app/main.ts %}
+{% include code-snippet/chart/series/column-cs31/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -53,13 +53,13 @@ You can use the [`groupName`](https://ej2.syncfusion.com/angular/documentation/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs23/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs23/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs23/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs23/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs23/app/main.ts %}
+{% include code-snippet/chart/series/column-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -71,13 +71,13 @@ To render a cylindrical column chart, set the `columnFacet` property to `Cylinde
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs32/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs32/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs32/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs32/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs32/app/main.ts %}
+{% include code-snippet/chart/series/column-cs32/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -94,13 +94,13 @@ The following properties can be used to customize the `column` series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs24/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs24/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs24/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs24/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs24/app/main.ts %}
+{% include code-snippet/chart/series/column-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -16,13 +16,13 @@ In the following example, the `showCheckBox` property is enabled.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdowntree/checkboxes-cs1/app/app.component.ts %}
+{% include code-snippet/dropdowntree/checkboxes-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdowntree/checkboxes-cs1/app/app.module.ts %}
+{% include code-snippet/dropdowntree/checkboxes-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdowntree/checkboxes-cs1/app/main.ts %}
+{% include code-snippet/dropdowntree/checkboxes-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ In the following example, the `autoCheck` property is enabled.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdowntree/autocheck-cs1/app/app.component.ts %}
+{% include code-snippet/dropdowntree/autocheck-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdowntree/autocheck-cs1/app/app.module.ts %}
+{% include code-snippet/dropdowntree/autocheck-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdowntree/autocheck-cs1/app/main.ts %}
+{% include code-snippet/dropdowntree/autocheck-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -64,13 +64,13 @@ By default, `Select All` and `unSelect All` text values will be showcased along 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dropdowntree/select-all-cs1/app/app.component.ts %}
+{% include code-snippet/dropdowntree/select-all-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdowntree/select-all-cs1/app/app.module.ts %}
+{% include code-snippet/dropdowntree/select-all-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dropdowntree/select-all-cs1/app/main.ts %}
+{% include code-snippet/dropdowntree/select-all-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

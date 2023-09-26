@@ -16,13 +16,13 @@ To render a 100% stacked column series, use series [`type`](https://ej2.syncfusi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs21/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs21/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs21/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs21/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs21/app/main.ts %}
+{% include code-snippet/chart/series/column-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ To render a 100% cylindrical stacked column chart, set the `columnFacet` propert
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs34/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs34/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs34/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs34/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs34/app/main.ts %}
+{% include code-snippet/chart/series/column-cs34/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -57,13 +57,13 @@ The following properties can be used to customize the `100% stacked column` seri
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/100-stackedcolumn-cs/app/app.component.ts %}
+{% include code-snippet/chart/series/100-stackedcolumn-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/100-stackedcolumn-cs/app/app.module.ts %}
+{% include code-snippet/chart/series/100-stackedcolumn-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/100-stackedcolumn-cs/app/main.ts %}
+{% include code-snippet/chart/series/100-stackedcolumn-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

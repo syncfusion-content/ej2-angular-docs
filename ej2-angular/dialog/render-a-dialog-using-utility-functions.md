@@ -36,13 +36,13 @@ An alert dialog box is used to display warning like messages to the users. Use t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/dialog-utility-alert-cs2/app/app.component.ts %}
+{% include code-snippet/dialog/dialog-utility-alert-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dialog-utility-alert-cs2/app/app.module.ts %}
+{% include code-snippet/dialog/dialog-utility-alert-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/dialog-utility-alert-cs2/app/main.ts %}
+{% include code-snippet/dialog/dialog-utility-alert-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -52,13 +52,13 @@ An alert dialog box is used to display warning like messages to the users. Use t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/dialog-utility-alert1-cs2/app/app.component.ts %}
+{% include code-snippet/dialog/dialog-utility-alert1-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dialog-utility-alert1-cs2/app/app.module.ts %}
+{% include code-snippet/dialog/dialog-utility-alert1-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/dialog-utility-alert1-cs2/app/main.ts %}
+{% include code-snippet/dialog/dialog-utility-alert1-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ A confirm dialog displays a specified message along with ‘OK’ and ‘Cancel�
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/dialog-utility-confirm-cs2/app/app.component.ts %}
+{% include code-snippet/dialog/dialog-utility-confirm-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dialog-utility-confirm-cs2/app/app.module.ts %}
+{% include code-snippet/dialog/dialog-utility-confirm-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/dialog-utility-confirm-cs2/app/main.ts %}
+{% include code-snippet/dialog/dialog-utility-confirm-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,13 +86,13 @@ A confirm dialog displays a specified message along with ‘OK’ and ‘Cancel�
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/dialog-utility-confirm1-cs2/app/app.component.ts %}
+{% include code-snippet/dialog/dialog-utility-confirm1-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dialog-utility-confirm1-cs2/app/app.module.ts %}
+{% include code-snippet/dialog/dialog-utility-confirm1-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/dialog-utility-confirm1-cs2/app/main.ts %}
+{% include code-snippet/dialog/dialog-utility-confirm1-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -111,13 +111,13 @@ Below sample demonstrates the different ways of hiding the utility dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/dialog/dialog-utility-confirm1-cs3/app/app.component.ts %}
+{% include code-snippet/dialog/dialog-utility-confirm1-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dialog-utility-confirm1-cs3/app/app.module.ts %}
+{% include code-snippet/dialog/dialog-utility-confirm1-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/dialog/dialog-utility-confirm1-cs3/app/main.ts %}
+{% include code-snippet/dialog/dialog-utility-confirm1-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -45,13 +45,13 @@ Meanwhile filtering can also be configured at code behind using the [`filterSett
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs92/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs92/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs92/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs92/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs92/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs92/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -87,13 +87,13 @@ The data limit can be set using the [`maxNodeLimitInMemberEditor`](https://ej2.s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs93/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs93/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs93/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs93/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs93/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs93/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -114,13 +114,13 @@ This will help to avoid performance lags when opening a member editor whose hier
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs94/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs94/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs94/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs94/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs94/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs94/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -147,13 +147,13 @@ Allows user to load the members on the basis of the level number set in the [`le
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs95/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs95/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs95/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs95/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs95/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs95/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -206,13 +206,13 @@ For example, in a "Country" field, to show countries names that contains "United
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs96/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs96/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs96/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs96/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs96/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs96/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -230,13 +230,13 @@ For example, in a "Sold" field, to show the values less than "40000", set [`valu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs97/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs97/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs97/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs97/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs97/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs97/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -254,13 +254,13 @@ For example, in a "Delivery Date" field, to show the delivery records of the fir
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs98/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs98/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs98/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs98/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs98/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs98/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -305,13 +305,13 @@ For example, to show the data where total sum of units sold for each country exc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs99/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs99/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs99/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs99/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs99/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs99/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -335,13 +335,13 @@ The event [`memberFiltering`](https://ej2.syncfusion.com/angular/documentation/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs100/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs100/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs100/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs100/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs100/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs100/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -361,13 +361,13 @@ In the below sample, the member editor of field "Country" shows only the selecte
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs101/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs101/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs101/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs101/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs101/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs101/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -391,13 +391,13 @@ In the below sample, filter action can be restricted by setting the **args.cance
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs102/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs102/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs102/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs102/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs102/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs102/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -419,13 +419,13 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs103/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs103/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs103/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs103/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs103/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs103/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -441,13 +441,13 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs104/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs104/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs104/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs104/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs104/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs104/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

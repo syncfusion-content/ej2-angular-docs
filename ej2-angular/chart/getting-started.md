@@ -123,13 +123,13 @@ The below example shows a basic Charts.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/initialize-cs1/app/app.component.ts %}
+{% include code-snippet/chart/getting-started/initialize-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/getting-started/initialize-cs1/app/app.module.ts %}
+{% include code-snippet/chart/getting-started/initialize-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/initialize-cs1/app/main.ts %}
+{% include code-snippet/chart/getting-started/initialize-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -196,13 +196,13 @@ Since the JSON contains category data, set the [`valueType`](https://ej2.syncfus
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs4/app/app.component.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs4/app/app.module.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs4/app/main.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -216,13 +216,13 @@ for each axis label.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs5/app/app.component.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs5/app/app.module.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs5/app/main.ts %}
+{% include code-snippet/chart/getting-started/datasource-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -235,13 +235,13 @@ quick information to the user about the data plotted in the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/tooltip-cs1/app/app.component.ts %}
+{% include code-snippet/chart/getting-started/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/getting-started/tooltip-cs1/app/app.module.ts %}
+{% include code-snippet/chart/getting-started/tooltip-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/tooltip-cs1/app/main.ts %}
+{% include code-snippet/chart/getting-started/tooltip-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -253,13 +253,13 @@ You can use legend for the chart by setting the `visible` property to true in [`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/legend-cs1/app/app.component.ts %}
+{% include code-snippet/chart/getting-started/legend-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/getting-started/legend-cs1/app/app.module.ts %}
+{% include code-snippet/chart/getting-started/legend-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/legend-cs1/app/main.ts %}
+{% include code-snippet/chart/getting-started/legend-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -272,13 +272,13 @@ This can be achieved by setting the visible property to true in the `dataLabel` 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/datalabel-cs1/app/app.component.ts %}
+{% include code-snippet/chart/getting-started/datalabel-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/getting-started/datalabel-cs1/app/app.module.ts %}
+{% include code-snippet/chart/getting-started/datalabel-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/datalabel-cs1/app/main.ts %}
+{% include code-snippet/chart/getting-started/datalabel-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -290,13 +290,13 @@ The tooltip is useful when you cannot display information by using the data labe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/getting-started/tooltip-cs2/app/app.component.ts %}
+{% include code-snippet/chart/getting-started/tooltip-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/getting-started/tooltip-cs2/app/app.module.ts %}
+{% include code-snippet/chart/getting-started/tooltip-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/getting-started/tooltip-cs2/app/main.ts %}
+{% include code-snippet/chart/getting-started/tooltip-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

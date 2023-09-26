@@ -16,13 +16,13 @@ To render a 100% stacked line series, use series [`type`](https://ej2.syncfusion
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/line-cs4/app/app.component.ts %}
+{% include code-snippet/chart/series/line-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/line-cs4/app/app.module.ts %}
+{% include code-snippet/chart/series/line-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/line-cs4/app/main.ts %}
+{% include code-snippet/chart/series/line-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ The following properties can be used to customize the `100% stacked line` series
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/100-stackedline-cs/app/app.component.ts %}
+{% include code-snippet/chart/series/100-stackedline-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/100-stackedline-cs/app/app.module.ts %}
+{% include code-snippet/chart/series/100-stackedline-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/100-stackedline-cs/app/main.ts %}
+{% include code-snippet/chart/series/100-stackedline-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

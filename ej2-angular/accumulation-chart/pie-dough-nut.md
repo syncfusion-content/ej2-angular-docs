@@ -20,13 +20,13 @@ To known about circular and triangular charts, you can check on this video:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs19/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs19/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs19/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs19/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs19/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ You can customize this using [`radius`](https://ej2.syncfusion.com/angular/docum
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs20/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs20/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs20/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs20/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs20/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -57,13 +57,13 @@ The center position of the pie can be changed by Center X and Center Y. By defau
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs21/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs21/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs21/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs21/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs21/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -75,13 +75,13 @@ You can use radius mapping to render the slice with different [`radius`](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs22/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs22/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs22/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs22/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs22/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -93,13 +93,13 @@ To achieve a doughnut in pie series, customize the [`innerRadius`](https://ej2.s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs23/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs23/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs23/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs23/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs23/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -111,13 +111,13 @@ You can customize the start and end angle of the pie series using the [`startAng
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs24/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs24/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs24/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs24/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs24/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -129,13 +129,13 @@ The fill color and the text in the data source can be mapped to the chart using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs25/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs25/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs25/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs25/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs25/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -147,13 +147,13 @@ By default, the border will appear in the pie/doughnut chart while mouse hover o
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs26/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs26/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs26/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -167,13 +167,13 @@ You can also achieve drill-up (back to the initial state) by using [chartMouseCl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/grid-visual-cs1/app/app.component.ts %}
+{% include code-snippet/chart/grid-visual-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/grid-visual-cs1/app/app.module.ts %}
+{% include code-snippet/chart/grid-visual-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/grid-visual-cs1/app/main.ts %}
+{% include code-snippet/chart/grid-visual-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

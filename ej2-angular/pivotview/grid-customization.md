@@ -20,13 +20,13 @@ To set the `width` and `height`, you can provide the pixel values either in numb
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs114/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs114/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs114/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs114/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs114/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs114/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -46,13 +46,13 @@ In the below example, the `rowHeight` is set as '60px'.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs115/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs115/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs115/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs115/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs115/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs115/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ In the below example, the `columnWidth` is set as '120px'.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs116/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs116/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs116/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs116/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs116/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs116/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -84,13 +84,13 @@ Reordering can be done by simple drag and drop of a particular column header fro
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs117/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs117/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs117/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs117/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs117/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs117/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -104,13 +104,13 @@ Column width can be resized by clicking and dragging the right edge of the colum
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs118/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs118/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs118/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs118/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs118/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs118/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -124,13 +124,13 @@ The text wrap allows to wrap the cell content to the next line when it exceeds t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs119/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs119/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs119/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs119/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs119/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs119/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -154,13 +154,13 @@ Available modes of grid lines are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs120/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs120/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs120/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs120/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs120/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs120/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -178,13 +178,13 @@ To perform the multi-selection, press and hold CTRL key and click the desired ro
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs121/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs121/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs121/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs121/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs121/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs121/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -201,13 +201,13 @@ The pivot table supports four types of selection mode that can be set using `sel
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs122/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs122/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs122/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs122/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs122/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs122/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -224,13 +224,13 @@ The pivot table supports two types of cell selection mode that can be set using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs123/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs123/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs123/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs123/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs123/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs123/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -250,13 +250,13 @@ The clip mode provides options to display its overflow cell content in the pivot
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs124/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs124/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs124/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs124/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs124/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs124/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

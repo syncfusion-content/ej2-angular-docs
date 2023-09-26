@@ -91,13 +91,13 @@ The following code example shows the number formatting in cell data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/format/number-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/format/number-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/format/number-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/format/number-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/format/number-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/format/number-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -164,13 +164,13 @@ The following code example shows the style formatting in text and cells of the s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/format/number-cs2/app/app.component.ts %}
+{% include code-snippet/spreadsheet/format/number-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/format/number-cs2/app/app.module.ts %}
+{% include code-snippet/spreadsheet/format/number-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/format/number-cs2/app/main.ts %}
+{% include code-snippet/spreadsheet/format/number-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -264,13 +264,13 @@ You can clear the defined rules by using one of the following ways,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/conditional-formatting-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/conditional-formatting-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/conditional-formatting-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/conditional-formatting-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/conditional-formatting-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/conditional-formatting-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

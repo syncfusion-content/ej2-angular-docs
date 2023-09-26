@@ -20,13 +20,13 @@ By default, tooltip is not visible. Enable the tooltip by setting [`enable`](htt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs1/app/app.component.ts %}
+{% include code-snippet/stock-chart/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs1/app/app.module.ts %}
+{% include code-snippet/stock-chart/tooltip-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs1/app/main.ts %}
+{% include code-snippet/stock-chart/tooltip-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs2/app/app.component.ts %}
+{% include code-snippet/stock-chart/tooltip-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs2/app/app.module.ts %}
+{% include code-snippet/stock-chart/tooltip-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs2/app/main.ts %}
+{% include code-snippet/stock-chart/tooltip-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ By default, the tooltip is positioned at the left side of the stock chart. You c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs5/app/app.component.ts %}
+{% include code-snippet/stock-chart/tooltip-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs5/app/app.module.ts %}
+{% include code-snippet/stock-chart/tooltip-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs5/app/main.ts %}
+{% include code-snippet/stock-chart/tooltip-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -80,13 +80,13 @@ Any HTML elements can be displayed in the tooltip by using the ‘template’ pr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs3/app/app.component.ts %}
+{% include code-snippet/stock-chart/tooltip-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs3/app/app.module.ts %}
+{% include code-snippet/stock-chart/tooltip-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs3/app/main.ts %}
+{% include code-snippet/stock-chart/tooltip-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -98,13 +98,13 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipS
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs4/app/app.component.ts %}
+{% include code-snippet/stock-chart/tooltip-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs4/app/app.module.ts %}
+{% include code-snippet/stock-chart/tooltip-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs4/app/main.ts %}
+{% include code-snippet/stock-chart/tooltip-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

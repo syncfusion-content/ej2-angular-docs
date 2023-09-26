@@ -18,13 +18,13 @@ In Shipping cart we can be able to select or unselect the desired items before c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/checklist-cs1/app/app.component.ts %}
+{% include code-snippet/listview/checklist-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/checklist-cs1/app/app.module.ts %}
+{% include code-snippet/listview/checklist-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/checklist-cs1/app/main.ts %}
+{% include code-snippet/listview/checklist-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -37,13 +37,13 @@ This can be achieved by `checkBoxPositon` property. By default, checkbox will be
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/checklist-cs2/app/app.component.ts %}
+{% include code-snippet/listview/checklist-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/checklist-cs2/app/app.module.ts %}
+{% include code-snippet/listview/checklist-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/checklist-cs2/app/main.ts %}
+{% include code-snippet/listview/checklist-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

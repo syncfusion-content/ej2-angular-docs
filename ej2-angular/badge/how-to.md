@@ -20,13 +20,13 @@ Even though badges come with `8 predefined colors`, you can also customize the c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/badge/color-cs1/app/app.component.ts %}
+{% include code-snippet/badge/color-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/color-cs1/app/app.module.ts %}
+{% include code-snippet/badge/color-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/badge/color-cs1/app/main.ts %}
+{% include code-snippet/badge/color-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ adjust the `font size` of the badge.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/badge/size-cs1/app/app.component.ts %}
+{% include code-snippet/badge/size-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/size-cs1/app/app.module.ts %}
+{% include code-snippet/badge/size-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/badge/size-cs1/app/main.ts %}
+{% include code-snippet/badge/size-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ This can be done by adding a custom class to the badge element to override the d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/badge/custom-position-cs1/app/app.component.ts %}
+{% include code-snippet/badge/custom-position-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/custom-position-cs1/app/app.module.ts %}
+{% include code-snippet/badge/custom-position-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/badge/custom-position-cs1/app/main.ts %}
+{% include code-snippet/badge/custom-position-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -81,13 +81,13 @@ badge size. The component will automatically adjust the size based on the contai
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/badge/listview-cs1/app/app.component.ts %}
+{% include code-snippet/badge/listview-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/listview-cs1/app/app.module.ts %}
+{% include code-snippet/badge/listview-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/badge/listview-cs1/app/main.ts %}
+{% include code-snippet/badge/listview-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -99,13 +99,13 @@ Badges in real-time needs to be updated dynamically based on the requirements. I
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/badge/dynamic-badge-cs1/app/app.component.ts %}
+{% include code-snippet/badge/dynamic-badge-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/dynamic-badge-cs1/app/app.module.ts %}
+{% include code-snippet/badge/dynamic-badge-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/badge/dynamic-badge-cs1/app/main.ts %}
+{% include code-snippet/badge/dynamic-badge-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

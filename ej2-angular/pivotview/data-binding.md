@@ -19,13 +19,13 @@ In-order to bind local JSON data to the pivot table user can assign the local va
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs21/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs21/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs21/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs21/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs21/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -35,13 +35,13 @@ Using local variable, the JSON data can also be bound to the pivot table using [
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs22/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs22/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs22/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs22/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs22/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -96,13 +96,13 @@ In-order to bind remote JSON data, mention the endpoint [`URL`](https://ej2.sync
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs23/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs23/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs23/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs23/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs23/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -120,13 +120,13 @@ In-order to bind local CSV data to the pivot table, user needs to convert it as 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs24/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs24/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs24/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs24/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs24/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -182,13 +182,13 @@ In-order to bind remote CSV data, mention the endpoint [`URL`](https://ej2.syncf
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs25/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs25/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs25/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs25/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs25/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -204,13 +204,13 @@ OData is a standardized protocol for creating and consuming data. User can retri
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs26/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs26/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs26/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -222,13 +222,13 @@ The OData V4 is an improved version of OData protocols, and the `DataManager` ca
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs27/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs27/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs27/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs27/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs27/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs27/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -240,13 +240,13 @@ User can use [`WebApiAdaptor`](https://ej2.syncfusion.com/documentation/data/ada
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs28/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs28/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs28/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs28/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs28/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs28/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -258,13 +258,13 @@ By default, the data manager retrieves all the data from the provider which is m
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs29/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs29/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs29/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs29/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs29/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs29/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -301,13 +301,13 @@ In the below code sample, visibility of the field button icons are configured.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs30/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs30/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs30/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs30/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs30/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -319,13 +319,13 @@ By default, the value fields are plotted in column axis. To plot those fields in
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs31/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs31/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs31/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs31/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs31/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs31/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -339,13 +339,13 @@ By default, the value fields are placed at the end of the row or column axis. To
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs32/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs32/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs32/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs32/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs32/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs32/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -357,13 +357,13 @@ By default, the pivot table only shows the field item if it has data in its row 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs33/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs33/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs33/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs33/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs33/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs33/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -375,13 +375,13 @@ To show value header always in pivot table, even if it holds a single value, use
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs34/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs34/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs34/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs34/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs34/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs34/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -393,13 +393,13 @@ User can show custom string in empty value cells using the [`emptyCellsTextConte
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs35/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs35/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs35/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs35/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs35/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs35/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -413,13 +413,13 @@ The event [`load`](https://ej2.syncfusion.com/angular/documentation/api/pivotvie
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs36/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs36/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs36/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs36/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs36/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs36/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -431,13 +431,13 @@ The event [`enginePopulated`](https://ej2.syncfusion.com/angular/documentation/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs37/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs37/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs37/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs37/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs37/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs37/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -449,13 +449,13 @@ The event [`enginePopulating`](https://ej2.syncfusion.com/angular/documentation/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs38/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs38/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs38/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs38/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs38/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs38/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -16,13 +16,13 @@ You can access the data grid options such as sort, group, filter on editing mode
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs160/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs160/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs160/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs160/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs160/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs160/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -17,13 +17,13 @@ The title of the Bullet Chart displays the information about the data plotted by
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs26/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs26/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs26/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -35,13 +35,13 @@ To show additional information about the data plotted, the Bullet Chart can also
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs27/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs27/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs27/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs27/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs27/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs27/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -57,13 +57,13 @@ By setting the [`titlePosition`](https://ej2.syncfusion.com/angular/documentatio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs28/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs28/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs28/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs28/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs28/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs28/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -75,13 +75,13 @@ By setting the [`titlePosition`](https://ej2.syncfusion.com/angular/documentatio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs29/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs29/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs29/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs29/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs29/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs29/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -93,13 +93,13 @@ By setting the [`titlePosition`](https://ej2.syncfusion.com/angular/documentatio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs30/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs30/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs30/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs30/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs30/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -111,13 +111,13 @@ By setting the [`titlePosition`](https://ej2.syncfusion.com/angular/documentatio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs31/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs31/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs31/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs31/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs31/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs31/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -129,13 +129,13 @@ The title color, opacity, font size, font family, font weight, and font style ca
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs32/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs32/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs32/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs32/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs32/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs32/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -147,13 +147,13 @@ The sub-title color, opacity, font size, font family, font weight, and font styl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs33/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs33/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs33/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs33/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs33/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs33/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

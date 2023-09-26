@@ -14,13 +14,13 @@ The file manager allows you to select multiple files by enabling the [allowMulti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/multiselect-cs1/app/app.component.ts %}
+{% include code-snippet/file-manager/multiselect-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/multiselect-cs1/app/app.module.ts %}
+{% include code-snippet/file-manager/multiselect-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/multiselect-cs1/app/main.ts %}
+{% include code-snippet/file-manager/multiselect-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

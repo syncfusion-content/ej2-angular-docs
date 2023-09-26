@@ -20,13 +20,13 @@ Here is an example of adding the custom toolbar item to the quick access toolbar
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs33/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs33/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs33/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs33/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs33/app/main.ts %}
+{% include code-snippet/image-editor/default-cs33/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

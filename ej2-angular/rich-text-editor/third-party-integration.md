@@ -42,13 +42,13 @@ Add a custom icon for HTML source editor in the toolbar of Rich Text Editor usin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs29/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs29/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs29/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs29/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs29/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs29/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ The above script is added to the page.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/how-to/embedly-cs1/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/how-to/embedly-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/how-to/embedly-cs1/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/how-to/embedly-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/how-to/embedly-cs1/app/main.ts %}
+{% include code-snippet/rich-text-editor/how-to/embedly-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

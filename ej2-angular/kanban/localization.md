@@ -41,13 +41,13 @@ The following example demonstrates the Kanban in `Deutsch` culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/locale-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/locale-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/locale-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/locale-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/locale-cs1/app/main.ts %}
+{% include code-snippet/kanban/locale-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -59,13 +59,13 @@ The Kanban provides an option to switch its text direction and layout from right
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/kanban/rtl-cs1/app/app.component.ts %}
+{% include code-snippet/kanban/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/rtl-cs1/app/app.module.ts %}
+{% include code-snippet/kanban/rtl-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/kanban/rtl-cs1/app/main.ts %}
+{% include code-snippet/kanban/rtl-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

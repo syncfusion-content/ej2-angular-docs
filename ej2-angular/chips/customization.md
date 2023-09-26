@@ -26,13 +26,13 @@ The Chip control has the following predefined styles that can be defined using t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chips/customization/styles-cs1/app/app.component.ts %}
+{% include code-snippet/chips/customization/styles-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/customization/styles-cs1/app/app.module.ts %}
+{% include code-snippet/chips/customization/styles-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chips/customization/styles-cs1/app/main.ts %}
+{% include code-snippet/chips/customization/styles-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -44,13 +44,13 @@ You can add and customize the leading icon of chip using the `leadingIconCss` pr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chips/customization/styles-cs2/app/app.component.ts %}
+{% include code-snippet/chips/customization/styles-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/customization/styles-cs2/app/app.module.ts %}
+{% include code-snippet/chips/customization/styles-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chips/customization/styles-cs2/app/main.ts %}
+{% include code-snippet/chips/customization/styles-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ You can add and customize the avatar of chip using the `avatarIconCss` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chips/customization/styles-cs3/app/app.component.ts %}
+{% include code-snippet/chips/customization/styles-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/customization/styles-cs3/app/app.module.ts %}
+{% include code-snippet/chips/customization/styles-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chips/customization/styles-cs3/app/main.ts %}
+{% include code-snippet/chips/customization/styles-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -80,13 +80,13 @@ You can add and customize the avatar content of chip using the `avatarText` prop
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chips/customization/styles-cs4/app/app.component.ts %}
+{% include code-snippet/chips/customization/styles-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/customization/styles-cs4/app/app.module.ts %}
+{% include code-snippet/chips/customization/styles-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chips/customization/styles-cs4/app/main.ts %}
+{% include code-snippet/chips/customization/styles-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -98,13 +98,13 @@ You can add and customize the trailing icon of chip using the `trailingIconCss` 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chips/customization/styles-cs5/app/app.component.ts %}
+{% include code-snippet/chips/customization/styles-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/customization/styles-cs5/app/app.module.ts %}
+{% include code-snippet/chips/customization/styles-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chips/customization/styles-cs5/app/main.ts %}
+{% include code-snippet/chips/customization/styles-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -116,13 +116,13 @@ Outline chip has the border with the background transparent. It can be set using
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chips/customization/styles-cs6/app/app.component.ts %}
+{% include code-snippet/chips/customization/styles-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/customization/styles-cs6/app/app.module.ts %}
+{% include code-snippet/chips/customization/styles-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chips/customization/styles-cs6/app/main.ts %}
+{% include code-snippet/chips/customization/styles-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

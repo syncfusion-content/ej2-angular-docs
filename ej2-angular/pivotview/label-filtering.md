@@ -53,13 +53,13 @@ Operators that can be used in label filtering are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs180/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs180/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs180/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs180/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs180/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs180/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -94,13 +94,13 @@ Operators that can be used in date filtering are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs181/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs181/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs181/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs181/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs181/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs181/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -135,13 +135,13 @@ Operators that can be used in date filtering are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs182/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs182/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs182/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs182/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs182/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs182/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

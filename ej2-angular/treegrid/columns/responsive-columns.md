@@ -15,13 +15,13 @@ The [`hideAtMedia`](https://ej2.syncfusion.com/angular/documentation/api/treegri
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/columns-cs26/app/app.component.ts %}
+{% include code-snippet/treegrid/columns-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs26/app/app.module.ts %}
+{% include code-snippet/treegrid/columns-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/columns-cs26/app/main.ts %}
+{% include code-snippet/treegrid/columns-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

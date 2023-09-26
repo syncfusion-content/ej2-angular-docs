@@ -20,13 +20,13 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module in to th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs300/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs300/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs300/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs300/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs300/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs300/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -51,13 +51,13 @@ When we bind one million raw data, the pivot table will process all raw data to 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs301/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs301/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs301/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs301/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs301/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs301/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -81,13 +81,13 @@ Virtual scrolling automatically works with "Popup" field list on setting the [`e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs302/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs302/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs302/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs302/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs302/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs302/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

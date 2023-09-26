@@ -16,13 +16,13 @@ Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/cross-hair-cs1/app/app.component.ts %}
+{% include code-snippet/stock-chart/cross-hair-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/cross-hair-cs1/app/app.module.ts %}
+{% include code-snippet/stock-chart/cross-hair-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/cross-hair-cs1/app/main.ts %}
+{% include code-snippet/stock-chart/cross-hair-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ Tooltip label for an axis can be enabled by using [`enable`](https://ej2.syncfu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/cross-hair-cs2/app/app.component.ts %}
+{% include code-snippet/stock-chart/cross-hair-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/cross-hair-cs2/app/app.module.ts %}
+{% include code-snippet/stock-chart/cross-hair-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/cross-hair-cs2/app/main.ts %}
+{% include code-snippet/stock-chart/cross-hair-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -53,13 +53,13 @@ Color and width of the crosshair line can be customized by using the [`line`](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/cross-hair-cs3/app/app.component.ts %}
+{% include code-snippet/stock-chart/cross-hair-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/cross-hair-cs3/app/app.module.ts %}
+{% include code-snippet/stock-chart/cross-hair-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/cross-hair-cs3/app/main.ts %}
+{% include code-snippet/stock-chart/cross-hair-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

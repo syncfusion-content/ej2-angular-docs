@@ -38,13 +38,13 @@ The following code example shows `sort` functionality in the Spreadsheet control
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/sort-by-cell-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/sort-by-cell-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/sort-by-cell-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/sort-by-cell-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/sort-by-cell-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/sort-by-cell-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -116,13 +116,13 @@ The multi-column sorting can also be performed manually by passing sort options 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/passing-sort-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/passing-sort-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/passing-sort-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/passing-sort-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/passing-sort-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/passing-sort-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

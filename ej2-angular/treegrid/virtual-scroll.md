@@ -24,13 +24,13 @@ Expand and Collapse state of any child record will be persisted.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/virtual-scroll-cs1/app/app.component.ts %}
+{% include code-snippet/treegrid/virtual-scroll-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/virtual-scroll-cs1/app/app.module.ts %}
+{% include code-snippet/treegrid/virtual-scroll-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/virtual-scroll-cs1/app/main.ts %}
+{% include code-snippet/treegrid/virtual-scroll-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -44,13 +44,13 @@ To setup the column virtualization, set the [`enableVirtualization`](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/virtual-scroll-cs2/app/app.component.ts %}
+{% include code-snippet/treegrid/virtual-scroll-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/virtual-scroll-cs2/app/app.module.ts %}
+{% include code-snippet/treegrid/virtual-scroll-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/virtual-scroll-cs2/app/main.ts %}
+{% include code-snippet/treegrid/virtual-scroll-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

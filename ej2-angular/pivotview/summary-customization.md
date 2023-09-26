@@ -19,13 +19,13 @@ End user can also hide grand totals for row or columns separately by setting the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs283/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs283/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs283/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs283/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs283/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs283/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -37,13 +37,13 @@ Allows to show grand totals either at top or bottom in rows and columns using th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs284/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs284/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs284/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs284/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs284/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs284/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -57,13 +57,13 @@ Allows to show or hide sub-totals in rows and columns using the [`showSubTotals`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs285/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs285/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs285/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs285/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs285/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs285/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -77,13 +77,13 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs286/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs286/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs286/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs286/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs286/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs286/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -97,13 +97,13 @@ To show sub-totals at top of the header group in rows and columns, set the [`sub
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs303/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs303/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs303/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs303/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs303/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs303/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -113,13 +113,13 @@ To show sub-totals at bottom of the header group in rows and columns, set the [`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs304/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs304/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs304/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs304/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs304/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs304/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -133,13 +133,13 @@ The grand totals and sub-totals can be dynamically displayed at the top or botto
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs287/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs287/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs287/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs287/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs287/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs287/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

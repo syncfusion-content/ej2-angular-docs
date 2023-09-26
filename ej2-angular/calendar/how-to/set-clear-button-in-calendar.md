@@ -24,13 +24,13 @@ Below is the code example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/calendar/how-to-cs1/app/app.component.ts %}
+{% include code-snippet/calendar/how-to-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/how-to-cs1/app/app.module.ts %}
+{% include code-snippet/calendar/how-to-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/calendar/how-to-cs1/app/main.ts %}
+{% include code-snippet/calendar/how-to-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

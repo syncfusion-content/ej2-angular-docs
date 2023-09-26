@@ -24,13 +24,13 @@ The Toast component support 4 types of predefined toast with essential colors fo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/toast/toast-cs22/app/app.component.ts %}
+{% include code-snippet/toast/toast-cs22/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs22/app/app.module.ts %}
+{% include code-snippet/toast/toast-cs22/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/toast/toast-cs22/app/main.ts %}
+{% include code-snippet/toast/toast-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ The utility function can be called using the [ToastModel](https://ej2.syncfusion
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/toast/toast-cs23/app/app.component.ts %}
+{% include code-snippet/toast/toast-cs23/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs23/app/app.module.ts %}
+{% include code-snippet/toast/toast-cs23/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/toast/toast-cs23/app/main.ts %}
+{% include code-snippet/toast/toast-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

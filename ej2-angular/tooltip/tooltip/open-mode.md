@@ -36,13 +36,13 @@ The following code example shows how to set the open mode for Tooltips.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs30/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs30/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs30/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs30/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs30/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ The following code example shows how to define custom open mode for the Tooltip.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs31/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs31/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs31/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs31/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs31/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs31/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -74,13 +74,13 @@ With this mode set to `true`, Tooltips can be made to show up on the screen as l
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs32/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs32/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs32/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs32/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs32/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs32/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -92,13 +92,13 @@ The Tooltips can be opened or closed after some delay by using the `openDelay` a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs33/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs33/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs33/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs33/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs33/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs33/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

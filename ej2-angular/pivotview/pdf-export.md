@@ -14,13 +14,13 @@ PDF export allows exporting pivot table data as PDF document. To enable PDF expo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs208/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs208/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs208/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs208/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs208/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs208/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -32,13 +32,13 @@ PDF export provides an option for exporting multiple pivot tables to same file. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs209/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs209/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs209/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs209/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs209/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs209/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -50,13 +50,13 @@ When the [`displayOption`](https://ej2.syncfusion.com/angular/documentation/api/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs306/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs306/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs306/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs306/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs306/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs306/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -158,13 +158,13 @@ The below code illustrates the PDF export customization options.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs210/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs210/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs210/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs210/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs210/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs210/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -176,13 +176,13 @@ The PDF export provides an option to change file name of the document before exp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs211/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs211/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs211/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs211/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs211/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs211/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -194,13 +194,13 @@ The PDF export provides an option to change page orientation of the document bef
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs212/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs212/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs212/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs212/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs212/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs212/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -215,13 +215,13 @@ Arche, Flsa, HalfLetter, Letter11x17, Ledger.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs213/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs213/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs213/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs213/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs213/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs213/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -235,13 +235,13 @@ Before exporting, you can change the height and width of the PDF document. To ac
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs307/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs307/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs307/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs307/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs307/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs307/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -255,13 +255,13 @@ Before exporting, you can split and export the pivot table columns on each page 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs308/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs308/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs308/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs308/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs308/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs308/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -275,13 +275,13 @@ The PDF export provides an option to change colors for headers, caption and reco
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs214/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs214/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs214/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs214/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs214/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs214/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -322,13 +322,13 @@ In addition to existing built-in fonts, custom fonts can also be used. The custo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs215/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs215/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs215/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs215/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs215/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs215/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -345,13 +345,13 @@ You can export the pivot table virtual scroll data as PDF document by using Pivo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs216/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs216/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs216/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs216/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs216/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs216/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -366,13 +366,13 @@ Repeat row headers on each page can be achieved using PivotEngine export option.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs217/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs217/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs217/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs217/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs217/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs217/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -386,13 +386,13 @@ The pivot engine exports the entire virtual data of the pivot table (i.e. the da
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs218/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs218/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs218/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs218/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs218/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs218/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -411,13 +411,13 @@ The event `pdfQueryCellInfo` triggers on framing each row and value cell during 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs219/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs219/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs219/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs219/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs219/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs219/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -432,13 +432,13 @@ The event `pdfHeaderQueryCellInfo` triggers on framing each column header cell d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs220/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs220/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs220/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs220/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs220/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs220/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -453,13 +453,13 @@ The event [`exportComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs221/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs221/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs221/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs221/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs221/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs221/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

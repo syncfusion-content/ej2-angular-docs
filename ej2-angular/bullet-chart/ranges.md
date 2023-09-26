@@ -15,13 +15,13 @@ Ranges represent the quality of a specific range such as **Good**, **Bad** and *
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs24/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs24/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs24/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs24/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs24/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -33,13 +33,13 @@ Enhance the readability of ranges with color and opacity. It can be applied usin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs25/app/app.component.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs25/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs25/app/app.module.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs25/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs25/app/main.ts %}
+{% include code-snippet/bullet-chart/getting-started/range-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

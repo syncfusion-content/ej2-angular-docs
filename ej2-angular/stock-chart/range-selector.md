@@ -18,13 +18,13 @@ The left and right thumb of RangeNavigator are used to indicate the selected ran
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/range-selector-cs1/app/app.component.ts %}
+{% include code-snippet/stock-chart/range-selector-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/range-selector-cs1/app/app.module.ts %}
+{% include code-snippet/stock-chart/range-selector-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/range-selector-cs1/app/main.ts %}
+{% include code-snippet/stock-chart/range-selector-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ The [`enableSelector`](https://ej2.syncfusion.com/angular/documentation/api/stoc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/stock-chart/range-selector-cs2/app/app.component.ts %}
+{% include code-snippet/stock-chart/range-selector-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/range-selector-cs2/app/app.module.ts %}
+{% include code-snippet/stock-chart/range-selector-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/stock-chart/range-selector-cs2/app/main.ts %}
+{% include code-snippet/stock-chart/range-selector-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

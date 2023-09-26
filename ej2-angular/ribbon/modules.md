@@ -19,10 +19,8 @@ The following modules are available in Ribbon. If the module injection type is *
 | `RibbonDropDownService` | To use the built-in dropdown button as a ribbon item.| default |
 | `RibbonSplitButtonService` | To use the built-in split button as a ribbon item.| default |
 | `RibbonComboBoxService` | To use the built-in combobox as a ribbon item. | default |
-| `RibbonGroupButtonService` | To use the built-in groupbutton as a ribbon item. | default |
 | `RibbonColorPickerService` | Inject this module to use the built-in colorpicker as a ribbon item.| selective |
 | `RibbonFileMenuService` | Inject this module to use the file menu feature.| selective |
-| `RibbonBackstageService` | Inject this module to use the backstage view feature.| selective |
 
 These modules should be injected into the `providers` section of root `NgModule` or component class.
 

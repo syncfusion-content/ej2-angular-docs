@@ -24,13 +24,13 @@ To known more about annotations, you can check on this video:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs7/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs7/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs7/app/main.ts %}
+{% include code-snippet/chart/series/column-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -44,13 +44,13 @@ Annotations can be placed either with respect to `Series` or `Chart`. by default
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs8/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs8/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs8/app/main.ts %}
+{% include code-snippet/chart/series/column-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ Specified the coordinates units of the annotation either `Pixel` or `Point`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs9/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs9/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs9/app/main.ts %}
+{% include code-snippet/chart/series/column-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -80,13 +80,13 @@ Annotation provides `verticalAlignment` and `horizontalAlignment`. The `vertical
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs10/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs10/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs10/app/main.ts %}
+{% include code-snippet/chart/series/column-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -98,13 +98,13 @@ By setting text div in the `content` option of annotation object you can add sub
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs11/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs11/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs11/app/main.ts %}
+{% include code-snippet/chart/series/column-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

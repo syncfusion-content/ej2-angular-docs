@@ -16,13 +16,13 @@ You can customize the default color of series or points by providing a custom co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pie-cs5/app/app.component.ts %}
+{% include code-snippet/chart/series/pie-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs5/app/app.module.ts %}
+{% include code-snippet/chart/series/pie-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pie-cs5/app/main.ts %}
+{% include code-snippet/chart/series/pie-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ Fluid animation used to animate series with updated dataSource continues animati
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/radius-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/radius-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/radius-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/radius-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/radius-cs1/app/main.ts %}
+{% include code-snippet/chart/series/radius-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

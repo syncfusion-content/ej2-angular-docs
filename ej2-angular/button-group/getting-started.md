@@ -137,13 +137,13 @@ The following example shows a basic ButtonGroup component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/button-group/default-cs1/app/app.component.ts %}
+{% include code-snippet/button-group/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button-group/default-cs1/app/app.module.ts %}
+{% include code-snippet/button-group/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/button-group/default-cs1/app/main.ts %}
+{% include code-snippet/button-group/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -161,13 +161,13 @@ The following example illustrates how to achieve vertical orientation in ButtonG
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/button-group/default-cs2/app/app.component.ts %}
+{% include code-snippet/button-group/default-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button-group/default-cs2/app/app.module.ts %}
+{% include code-snippet/button-group/default-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/button-group/default-cs2/app/main.ts %}
+{% include code-snippet/button-group/default-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

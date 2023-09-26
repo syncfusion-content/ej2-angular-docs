@@ -39,13 +39,13 @@ In normal edit mode, when user starts editing, the state of the currently select
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs53/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs53/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs53/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs53/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs53/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs53/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -57,13 +57,13 @@ In dialog edit mode, when user starts editing, the currently selected row data w
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs54/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs54/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs54/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs54/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs54/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs54/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -75,13 +75,13 @@ In batch edit mode, when user double-clicks any data grid cell, the state of tar
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs55/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs55/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs55/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs55/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs55/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs55/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -102,13 +102,13 @@ The available built-in command buttons are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs56/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs56/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs56/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs56/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs56/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs56/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -120,13 +120,13 @@ Allows editing of a value cell directly without the use of an external edit dial
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs57/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs57/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs57/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs57/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs57/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs57/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -138,13 +138,13 @@ Users can also add, delete, or update the underlying raw items of any data point
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs58/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs58/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs58/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs58/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs58/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs58/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -162,13 +162,13 @@ The event [`editCompleted`](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs59/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs59/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs59/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs59/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs59/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs59/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -203,13 +203,13 @@ In the below sample, editing actions such as add and save can be restricted by s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs60/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs60/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs60/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs60/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs60/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs60/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -234,13 +234,13 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs61/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs61/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs61/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs61/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs61/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs61/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -263,13 +263,13 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs62/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs62/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs62/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs62/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs62/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs62/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

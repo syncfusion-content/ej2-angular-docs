@@ -22,13 +22,13 @@ Markers can be added to points by enabling the [`visible`](https://ej2.syncfusi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs1/app/app.component.ts %}
+{% include code-snippet/chart/data-marker/marker-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs1/app/app.module.ts %}
+{% include code-snippet/chart/data-marker/marker-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs1/app/main.ts %}
+{% include code-snippet/chart/data-marker/marker-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ Markers can be assigned with different shapes such as Rectangle, Circle, Diamond
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs2/app/app.component.ts %}
+{% include code-snippet/chart/data-marker/marker-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs2/app/app.module.ts %}
+{% include code-snippet/chart/data-marker/marker-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs2/app/main.ts %}
+{% include code-snippet/chart/data-marker/marker-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,13 +60,13 @@ Apart from the shapes, you can also add custom images to mark the data point usi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs3/app/app.component.ts %}
+{% include code-snippet/chart/data-marker/marker-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs3/app/app.module.ts %}
+{% include code-snippet/chart/data-marker/marker-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs3/app/main.ts %}
+{% include code-snippet/chart/data-marker/marker-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -78,13 +78,13 @@ Marker's color and border can be customized using `fill` and `border` properties
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs4/app/app.component.ts %}
+{% include code-snippet/chart/data-marker/marker-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs4/app/app.module.ts %}
+{% include code-snippet/chart/data-marker/marker-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs4/app/main.ts %}
+{% include code-snippet/chart/data-marker/marker-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -96,13 +96,13 @@ You can also customize the specific marker and label using [`pointRender`](https
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs5/app/app.component.ts %}
+{% include code-snippet/chart/data-marker/marker-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs5/app/app.module.ts %}
+{% include code-snippet/chart/data-marker/marker-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs5/app/main.ts %}
+{% include code-snippet/chart/data-marker/marker-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -114,13 +114,13 @@ Marker can be filled with the series color by setting the [`isFilled`](https://e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs6/app/app.component.ts %}
+{% include code-snippet/chart/data-marker/marker-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs6/app/app.module.ts %}
+{% include code-snippet/chart/data-marker/marker-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs6/app/main.ts %}
+{% include code-snippet/chart/data-marker/marker-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

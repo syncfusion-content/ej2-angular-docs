@@ -16,13 +16,13 @@ Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs4/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs4/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs4/app/main.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -35,13 +35,13 @@ property of `crosshairTooltip` in the corresponding axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs5/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs5/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs5/app/main.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -53,13 +53,13 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshai
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs6/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs6/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs6/app/main.ts %}
+{% include code-snippet/chart/user-interaction/crosshair-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -75,13 +75,13 @@ Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/user-interaction/trackball-cs2/app/app.component.ts %}
+{% include code-snippet/chart/user-interaction/trackball-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/trackball-cs2/app/app.module.ts %}
+{% include code-snippet/chart/user-interaction/trackball-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/user-interaction/trackball-cs2/app/main.ts %}
+{% include code-snippet/chart/user-interaction/trackball-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

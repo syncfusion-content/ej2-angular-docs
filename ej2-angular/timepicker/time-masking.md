@@ -14,13 +14,13 @@ DatePicker has `enableMask` property that provides the option to enable the buil
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/timepicker/mask-module-cs1/app/app.component.ts %}
+{% include code-snippet/timepicker/mask-module-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/mask-module-cs1/app/app.module.ts %}
+{% include code-snippet/timepicker/mask-module-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/timepicker/mask-module-cs1/app/main.ts %}
+{% include code-snippet/timepicker/mask-module-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -37,13 +37,13 @@ The following example demonstrates default and custom format of TimePicker compo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/timepicker/mask-module-cs2/app/app.component.ts %}
+{% include code-snippet/timepicker/mask-module-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/mask-module-cs2/app/app.module.ts %}
+{% include code-snippet/timepicker/mask-module-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/timepicker/mask-module-cs2/app/main.ts %}
+{% include code-snippet/timepicker/mask-module-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -72,13 +72,13 @@ The following example demonstrates default and customized mask placeholder value
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/timepicker/mask-module-cs3/app/app.component.ts %}
+{% include code-snippet/timepicker/mask-module-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/mask-module-cs3/app/app.module.ts %}
+{% include code-snippet/timepicker/mask-module-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/timepicker/mask-module-cs3/app/main.ts %}
+{% include code-snippet/timepicker/mask-module-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

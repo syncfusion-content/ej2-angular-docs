@@ -383,13 +383,13 @@ The following example demonstrates the Spreadsheet in `French` culture. In the b
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/local-data-binding-cs2/app/app.component.ts %}
+{% include code-snippet/spreadsheet/local-data-binding-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/local-data-binding-cs2/app/app.module.ts %}
+{% include code-snippet/spreadsheet/local-data-binding-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/local-data-binding-cs2/app/main.ts %}
+{% include code-snippet/spreadsheet/local-data-binding-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -414,13 +414,13 @@ The following example demonstrates the Spreadsheet in French [ `fr-CH`] culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/internationalization-cs1/app/app.component.ts %}
+{% include code-snippet/spreadsheet/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/internationalization-cs1/app/app.module.ts %}
+{% include code-snippet/spreadsheet/internationalization-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/internationalization-cs1/app/main.ts %}
+{% include code-snippet/spreadsheet/internationalization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -432,13 +432,13 @@ RTL provides an option to switch the text direction and layout of the Spreadshee
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/local-data-binding-cs3/app/app.component.ts %}
+{% include code-snippet/spreadsheet/local-data-binding-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/local-data-binding-cs3/app/app.module.ts %}
+{% include code-snippet/spreadsheet/local-data-binding-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/local-data-binding-cs3/app/main.ts %}
+{% include code-snippet/spreadsheet/local-data-binding-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

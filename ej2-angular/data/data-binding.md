@@ -18,16 +18,16 @@ domainurl: ##DomainURL##
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs4/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs4/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs4/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs4/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs4/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -41,16 +41,16 @@ When querying data, the [`DataManager`](https://ej2.syncfusion.com/documentation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs5/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs5/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs5/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs5/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs5/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

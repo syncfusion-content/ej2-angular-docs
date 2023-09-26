@@ -24,13 +24,13 @@ A linear trendline is a best fit straight line that is used with simpler data se
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/trendlines/linear-cs1/app/app.component.ts %}
+{% include code-snippet/chart/trendlines/linear-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/trendlines/linear-cs1/app/app.module.ts %}
+{% include code-snippet/chart/trendlines/linear-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/trendlines/linear-cs1/app/main.ts %}
+{% include code-snippet/chart/trendlines/linear-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -46,13 +46,13 @@ use trendline [`type`](https://ej2.syncfusion.com/angular/documentation/api/char
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/trendlines/exponential-cs1/app/app.component.ts %}
+{% include code-snippet/chart/trendlines/exponential-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/trendlines/exponential-cs1/app/app.module.ts %}
+{% include code-snippet/chart/trendlines/exponential-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/trendlines/exponential-cs1/app/main.ts %}
+{% include code-snippet/chart/trendlines/exponential-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -68,13 +68,13 @@ To render a logarithmic trendline, use trendline [`type`](https://ej2.syncfusion
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/trendlines/logarithmic-cs1/app/app.component.ts %}
+{% include code-snippet/chart/trendlines/logarithmic-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/trendlines/logarithmic-cs1/app/app.module.ts %}
+{% include code-snippet/chart/trendlines/logarithmic-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/trendlines/logarithmic-cs1/app/main.ts %}
+{% include code-snippet/chart/trendlines/logarithmic-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -90,13 +90,13 @@ To render a polynomial trendline, use trendline [`type`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/trendlines/polynomial-cs1/app/app.component.ts %}
+{% include code-snippet/chart/trendlines/polynomial-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/trendlines/polynomial-cs1/app/app.module.ts %}
+{% include code-snippet/chart/trendlines/polynomial-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/trendlines/polynomial-cs1/app/main.ts %}
+{% include code-snippet/chart/trendlines/polynomial-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -111,13 +111,13 @@ To render a power trendline, use trendline [`type`](https://ej2.syncfusion.com/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/trendlines/power-cs1/app/app.component.ts %}
+{% include code-snippet/chart/trendlines/power-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/trendlines/power-cs1/app/app.module.ts %}
+{% include code-snippet/chart/trendlines/power-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/trendlines/power-cs1/app/main.ts %}
+{% include code-snippet/chart/trendlines/power-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -133,13 +133,13 @@ To render a moving average trendline, use trendline [`type`](https://ej2.syncfus
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/trendlines/movingaverage-cs1/app/app.component.ts %}
+{% include code-snippet/chart/trendlines/movingaverage-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/trendlines/movingaverage-cs1/app/app.module.ts %}
+{% include code-snippet/chart/trendlines/movingaverage-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/trendlines/movingaverage-cs1/app/main.ts %}
+{% include code-snippet/chart/trendlines/movingaverage-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -152,13 +152,13 @@ properties are used to customize the appearance of the trendline.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/trendlines/movingaverage-cs2/app/app.component.ts %}
+{% include code-snippet/chart/trendlines/movingaverage-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/trendlines/movingaverage-cs2/app/app.module.ts %}
+{% include code-snippet/chart/trendlines/movingaverage-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/trendlines/movingaverage-cs2/app/main.ts %}
+{% include code-snippet/chart/trendlines/movingaverage-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -179,13 +179,13 @@ The value set for forwardForecast is used to determine the distance moving towar
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/trendlines/movingaverage-cs3/app/app.component.ts %}
+{% include code-snippet/chart/trendlines/movingaverage-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/trendlines/movingaverage-cs3/app/app.module.ts %}
+{% include code-snippet/chart/trendlines/movingaverage-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/trendlines/movingaverage-cs3/app/main.ts %}
+{% include code-snippet/chart/trendlines/movingaverage-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -197,13 +197,13 @@ The value set for the backwardForecast is used to determine the past trends.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/trendlines/movingaverage-cs4/app/app.component.ts %}
+{% include code-snippet/chart/trendlines/movingaverage-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/trendlines/movingaverage-cs4/app/app.module.ts %}
+{% include code-snippet/chart/trendlines/movingaverage-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/trendlines/movingaverage-cs4/app/main.ts %}
+{% include code-snippet/chart/trendlines/movingaverage-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -215,13 +215,13 @@ You can show or hide the trendline by setting trendline `visible` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/trendlines/linear-cs2/app/app.component.ts %}
+{% include code-snippet/chart/trendlines/linear-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/trendlines/linear-cs2/app/app.module.ts %}
+{% include code-snippet/chart/trendlines/linear-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/trendlines/linear-cs2/app/main.ts %}
+{% include code-snippet/chart/trendlines/linear-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

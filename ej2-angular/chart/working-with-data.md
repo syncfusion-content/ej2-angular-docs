@@ -20,13 +20,13 @@ You can bind a simple JSON data to the chart using [`dataSource`](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs25/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs25/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs25/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs25/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs25/app/main.ts %}
+{% include code-snippet/chart/series/column-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ You can also bind a JSON data common to all series using [`dataSource`](https://
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs26/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs26/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs26/app/main.ts %}
+{% include code-snippet/chart/series/column-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ Lazy loading allows you to load data for chart on demand. Chart will fire the sc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs27/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs27/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs27/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs27/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs27/app/main.ts %}
+{% include code-snippet/chart/series/column-cs27/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -74,13 +74,13 @@ You can also bind remote data to the chart using `DataManager`. The DataManager 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs28/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs28/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs28/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs28/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs28/app/main.ts %}
+{% include code-snippet/chart/series/column-cs28/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -93,13 +93,13 @@ When the data is provided by using the points property, By using `emptyPointSett
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs29/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs29/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs29/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs29/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs29/app/main.ts %}
+{% include code-snippet/chart/series/column-cs29/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -111,13 +111,13 @@ Specific color for empty point can be set by `fill` property in `emptyPointSetti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs30/app/app.component.ts %}
+{% include code-snippet/chart/series/column-cs30/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs30/app/app.module.ts %}
+{% include code-snippet/chart/series/column-cs30/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs30/app/main.ts %}
+{% include code-snippet/chart/series/column-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

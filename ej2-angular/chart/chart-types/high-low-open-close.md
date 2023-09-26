@@ -19,13 +19,13 @@ HiloOpenClose series requires 5 fields (x, high, low, open and close) to show th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/hiloopenclose-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/hiloopenclose-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/hiloopenclose-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/hiloopenclose-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/hiloopenclose-cs1/app/main.ts %}
+{% include code-snippet/chart/series/hiloopenclose-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ By default, bullFillColor is set as red and bearFillColor is set as green.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/hiloopenclose-cs2/app/app.component.ts %}
+{% include code-snippet/chart/series/hiloopenclose-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/hiloopenclose-cs2/app/app.module.ts %}
+{% include code-snippet/chart/series/hiloopenclose-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/hiloopenclose-cs2/app/main.ts %}
+{% include code-snippet/chart/series/hiloopenclose-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

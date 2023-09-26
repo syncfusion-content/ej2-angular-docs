@@ -1452,129 +1452,6 @@ export class AppComponent {
 }
 ```
 
-## GroupButton item events
-
-### beforeClick
-
-The [beforeClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupButtonItemModel/#beforeclick) event is triggered before selecting a button from the groupbutton items.
-
-```javascript
-
-import { Component } from "@angular/core";
-import {RibbonItemSize, RibbonGroupButtonSettingsModel, RibbonGroupButtonSelection, BeforeClickGroupButtonEventArgs } from '@syncfusion/ej2-angular-ribbon';
-
-
-@Component({
-  selector: "app-root",
-  templateUrl: `<!-- To Render Ribbon. -->
-    <ejs-ribbon id="ribbon">
-        <e-ribbon-tabs>
-            <e-ribbon-tab header="Home">
-                <e-ribbon-groups>
-                    <e-ribbon-group header="Paragraph" >
-                        <e-ribbon-collections>
-                            <e-ribbon-collection>
-                                <e-ribbon-items>
-                                    <e-ribbon-item type="GroupButton" [allowedSizes]="smallSize" [groupButtonSettings]="events">
-                                    </e-ribbon-item>
-                                </e-ribbon-items>
-                            </e-ribbon-collection>
-                        </e-ribbon-collections>
-                    </e-ribbon-group>
-                </e-ribbon-groups>
-            </e-ribbon-tab>
-        </e-ribbon-tabs>
-    </ejs-ribbon>`,
-})
-export class AppComponent {
-  public events: RibbonGroupButtonSettingsModel = {
-    selection: RibbonGroupButtonSelection.Multiple,
-    items: [
-      {iconCss: 'e-icons e-bold', content: 'Bold',
-      beforeClick: (args: BeforeClickGroupButtonEventArgs) => { 
-        // Your required action here
-      }},
-      {iconCss: 'e-icons e-italic', content: 'Italic',
-      beforeClick: (args: BeforeClickGroupButtonEventArgs) => {
-        // Your required action here
-      }, selected: true}, 
-      {iconCss: 'e-icons e-underline', content: 'Underline',
-      beforeClick: (args: BeforeClickGroupButtonEventArgs) => {
-        // Your required action here
-      }}, 
-      {iconCss: 'e-icons e-strikethrough', content: 'Strikethrough',
-      beforeClick: (args: BeforeClickGroupButtonEventArgs) => {
-        // Your required action here
-      }}
-    ]
-  }
-
-  public smallSize: RibbonItemSize = RibbonItemSize.Small;
-}
-
-```
-
-
-### click
-
-The [click](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupButtonItemModel/#click) event is triggered when selecting a button from the groupbutton items.
-
-```javascript
-
-import { Component } from "@angular/core";
-import {RibbonItemSize, RibbonGroupButtonSettingsModel, RibbonGroupButtonSelection, ClickGroupButtonEventArgs } from '@syncfusion/ej2-angular-ribbon';
-
-
-@Component({
-  selector: "app-root",
-  templateUrl: `<!-- To Render Ribbon. -->
-    <ejs-ribbon id="ribbon">
-        <e-ribbon-tabs>
-            <e-ribbon-tab header="Home">
-                <e-ribbon-groups>
-                    <e-ribbon-group header="Paragraph" >
-                        <e-ribbon-collections>
-                            <e-ribbon-collection>
-                                <e-ribbon-items>
-                                    <e-ribbon-item type="GroupButton" [allowedSizes]="smallSize" [groupButtonSettings]="events">
-                                    </e-ribbon-item>
-                                </e-ribbon-items>
-                            </e-ribbon-collection>
-                        </e-ribbon-collections>
-                    </e-ribbon-group>
-                </e-ribbon-groups>
-            </e-ribbon-tab>
-        </e-ribbon-tabs>
-    </ejs-ribbon>`,
-})
-export class AppComponent {
-  public events: RibbonGroupButtonSettingsModel = {
-    selection: RibbonGroupButtonSelection.Single,
-    items: [
-      {iconCss: 'e-icons e-align-left', content: 'Align Left',
-      click:(args: ClickGroupButtonEventArgs) => {
-        // Your required action here
-      }},
-      {iconCss: 'e-icons e-align-center', content: 'Align Center',
-      click:(args: ClickGroupButtonEventArgs) => {
-        // Your required action here
-      }, selected: true}, 
-      {iconCss: 'e-icons e-align-right', content: 'Align Right',
-      click:(args: ClickGroupButtonEventArgs) => {
-        // Your required action here
-      }}, 
-      {iconCss: 'e-icons e-justify', content: 'Justify',
-      click:(args: ClickGroupButtonEventArgs) => {
-        // Your required action here
-      }}
-    ]
-  }
-
-  public smallSize: RibbonItemSize = RibbonItemSize.Small;
-}
-
-```
-
 ## FileMenu events
 
 ### beforeClose
@@ -1850,5 +1727,68 @@ export class AppComponent {
             // Your required action here
         }
     };
+}
+```
+
+## Backstage Menu events
+
+### backStageItemClick
+
+The [backStageItemClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backstageItemModel/#backstageitemclick) event is triggered when backstage item is selected.
+
+```javascript
+import { Component } from "@angular/core";
+import { RibbonButtonSettingsModel, BackStageMenuModel, BackstageItemModel, BackstageItemClickArgs } from '@syncfusion/ej2-angular-ribbon';
+@Component({
+  selector: "app-root",
+  template: `<!-- To Render Ribbon. -->
+    <ejs-ribbon id="ribbon" [backStageMenu]="backstageSettings">
+        <e-ribbon-tabs>
+            <e-ribbon-tab header="Home">
+                <e-ribbon-groups>
+                    <e-ribbon-group header="Clipboard">
+                        <e-ribbon-collections>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type="Button" [buttonSettings]="cutButton">
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                        </e-ribbon-collections>
+                    </e-ribbon-group>
+                </e-ribbon-groups>
+            </e-ribbon-tab>
+        </e-ribbon-tabs>
+    </ejs-ribbon>`,
+})
+export class AppComponent {
+    public cutButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-cut", content: "Cut" };
+    public backstageSettings: BackStageMenuModel = {
+        text: 'File',
+        visible: true,
+        items: this.menuItems,
+        backButton: {
+            text: 'Close',
+        }
+    }
+    public getBackstageContent(item: string): string {
+        var content = "";
+        switch (item) {
+            case "new": 
+                {
+                    content = "<div id='new-section' class='new-wrapper'><div class='section-title'> New </div><div class='category_container'><div class='doc_category_image'></div> <span class='doc_category_text'> New document </span></div></div>";
+                }
+            }
+        return content;
+    }
+    public menuItems: BackstageItemModel[] = [{
+        id: 'new',
+        text: 'New',
+        iconCss: 'e-icons e-file-new',
+        content: this.getBackstageContent('new'),
+        backStageItemClick: (args: BackstageItemClickArgs) => { 
+            // Your required action here
+        } 
+    }];
 }
 ```

@@ -14,13 +14,13 @@ State persistence allows user to maintain the current state of the component alo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs281/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs281/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs281/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs281/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs281/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs281/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -32,13 +32,13 @@ You can save the current layout of the pivot table by using [`getPersistData`](h
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs282/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs282/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs282/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs282/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs282/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs282/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

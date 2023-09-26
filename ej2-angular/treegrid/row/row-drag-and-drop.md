@@ -20,13 +20,13 @@ The TreeGrid row drag and drop allows you to drag and drop TreeGrid rows on the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/row-cs3/app/app.component.ts %}
+{% include code-snippet/treegrid/row-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs3/app/app.module.ts %}
+{% include code-snippet/treegrid/row-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/row-cs3/app/main.ts %}
+{% include code-snippet/treegrid/row-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -41,13 +41,13 @@ To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/row-cs4/app/app.component.ts %}
+{% include code-snippet/treegrid/row-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs4/app/app.module.ts %}
+{% include code-snippet/treegrid/row-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/row-cs4/app/main.ts %}
+{% include code-snippet/treegrid/row-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ In the below example drop action is cancelled and dropped above to target row.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/row-cs5/app/app.component.ts %}
+{% include code-snippet/treegrid/row-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs5/app/app.module.ts %}
+{% include code-snippet/treegrid/row-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/row-cs5/app/main.ts %}
+{% include code-snippet/treegrid/row-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -18,13 +18,13 @@ You can render the HTML element directly to the Splitter pane content using ng-t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/splitter/template-cs1/app/app.component.ts %}
+{% include code-snippet/splitter/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/template-cs1/app/app.module.ts %}
+{% include code-snippet/splitter/template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/splitter/template-cs1/app/main.ts %}
+{% include code-snippet/splitter/template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ You can add the plain text as a pane contents using either inner HTML or [conten
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/splitter/plain-content-cs1/app/app.component.ts %}
+{% include code-snippet/splitter/plain-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/plain-content-cs1/app/app.module.ts %}
+{% include code-snippet/splitter/plain-content-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/splitter/plain-content-cs1/app/main.ts %}
+{% include code-snippet/splitter/plain-content-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,13 +60,13 @@ Splitter is a layout based container component. You can render the pane contents
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/splitter/html-content-cs1/app/app.component.ts %}
+{% include code-snippet/splitter/html-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/html-content-cs1/app/app.module.ts %}
+{% include code-snippet/splitter/html-content-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/splitter/html-content-cs1/app/main.ts %}
+{% include code-snippet/splitter/html-content-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -80,13 +80,13 @@ The following code demonstrates how to fetch an element from the document and lo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/splitter/selector-content-cs1/app/app.component.ts %}
+{% include code-snippet/splitter/selector-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/selector-content-cs1/app/app.module.ts %}
+{% include code-snippet/splitter/selector-content-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/splitter/selector-content-cs1/app/main.ts %}
+{% include code-snippet/splitter/selector-content-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

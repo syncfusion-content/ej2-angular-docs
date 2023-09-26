@@ -42,13 +42,13 @@ In the below sample, we have rendered List items in grid layout.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/grid-layout-cs2/app/app.component.ts %}
+{% include code-snippet/listview/grid-layout-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/grid-layout-cs2/app/app.module.ts %}
+{% include code-snippet/listview/grid-layout-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/grid-layout-cs2/app/main.ts %}
+{% include code-snippet/listview/grid-layout-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -121,13 +121,13 @@ In the below sample, we can filter fruit items with the help of search text box.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/grid-manipulation-cs2/app/app.component.ts %}
+{% include code-snippet/listview/grid-manipulation-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/grid-manipulation-cs2/app/app.module.ts %}
+{% include code-snippet/listview/grid-manipulation-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/grid-manipulation-cs2/app/main.ts %}
+{% include code-snippet/listview/grid-manipulation-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

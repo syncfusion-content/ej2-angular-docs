@@ -20,13 +20,13 @@ Refer to the following steps to load list item into the child list:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/listview/checklist-cs6/app/app.component.ts %}
+{% include code-snippet/listview/checklist-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/checklist-cs6/app/app.module.ts %}
+{% include code-snippet/listview/checklist-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/listview/checklist-cs6/app/main.ts %}
+{% include code-snippet/listview/checklist-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -7,9 +7,6 @@ MIT
 @angular/platform-browser
 MIT
 
-@syncfusion/ej2
-SEE LICENSE IN license
-
 @syncfusion/ej2-angular-barcode-generator
 SEE LICENSE IN license
 

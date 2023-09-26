@@ -17,13 +17,13 @@ You can pass array of ID of elements or element to this method. By default it ta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/polar-cs1/app/app.component.ts %}
+{% include code-snippet/chart/series/polar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs1/app/app.module.ts %}
+{% include code-snippet/chart/series/polar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/polar-cs1/app/main.ts %}
+{% include code-snippet/chart/series/polar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -41,13 +41,13 @@ The optional parameters for this method are,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/polar-cs2/app/app.component.ts %}
+{% include code-snippet/chart/series/polar-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs2/app/app.module.ts %}
+{% include code-snippet/chart/series/polar-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/polar-cs2/app/main.ts %}
+{% include code-snippet/chart/series/polar-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ In the export method, specify the following parameters to add a header and foote
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/polar-cs20/app/app.component.ts %}
+{% include code-snippet/chart/series/polar-cs20/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs20/app/app.module.ts %}
+{% include code-snippet/chart/series/polar-cs20/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/polar-cs20/app/main.ts %}
+{% include code-snippet/chart/series/polar-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -80,13 +80,13 @@ During PDF export, set the `exportToMultiplePage` parameter to **true** to expor
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/polar-cs21/app/app.component.ts %}
+{% include code-snippet/chart/series/polar-cs21/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs21/app/app.module.ts %}
+{% include code-snippet/chart/series/polar-cs21/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/polar-cs21/app/main.ts %}
+{% include code-snippet/chart/series/polar-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -100,13 +100,13 @@ Initially, render more than one chart to export, and then add button to export t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/add-series-cs1/app/app.component.ts %}
+{% include code-snippet/chart/add-series-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/add-series-cs1/app/app.module.ts %}
+{% include code-snippet/chart/add-series-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/add-series-cs1/app/main.ts %}
+{% include code-snippet/chart/add-series-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -14,13 +14,13 @@ The data points those uses the `null` or `undefined` as value are considered as 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/radius-cs7/app/app.component.ts %}
+{% include code-snippet/chart/series/radius-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/radius-cs7/app/app.module.ts %}
+{% include code-snippet/chart/series/radius-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/radius-cs7/app/main.ts %}
+{% include code-snippet/chart/series/radius-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -33,13 +33,13 @@ border for an empty point can be set by using the `border` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/radius-cs8/app/app.component.ts %}
+{% include code-snippet/chart/series/radius-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/radius-cs8/app/app.module.ts %}
+{% include code-snippet/chart/series/radius-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/radius-cs8/app/main.ts %}
+{% include code-snippet/chart/series/radius-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

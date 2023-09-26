@@ -15,13 +15,13 @@ You can filter the records with different operators.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/filtering-cs6/app/app.component.ts %}
+{% include code-snippet/treegrid/filtering-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs6/app/app.module.ts %}
+{% include code-snippet/treegrid/filtering-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/filtering-cs6/app/main.ts %}
+{% include code-snippet/treegrid/filtering-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ Customize the default filter operator list by defining the [`filterSettings.oper
 In the following sample, the string filter operators are customized.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/filtering-cs7/app/app.component.ts %}
+{% include code-snippet/treegrid/filtering-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs7/app/app.module.ts %}
+{% include code-snippet/treegrid/filtering-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/filtering-cs7/app/main.ts %}
+{% include code-snippet/treegrid/filtering-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ In the following sample menu filter is enabled by default and excel filter is en
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/treegrid/filtering-cs8/app/app.component.ts %}
+{% include code-snippet/treegrid/filtering-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs8/app/app.module.ts %}
+{% include code-snippet/treegrid/filtering-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/treegrid/filtering-cs8/app/main.ts %}
+{% include code-snippet/treegrid/filtering-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

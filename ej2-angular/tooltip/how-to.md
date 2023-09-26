@@ -19,13 +19,13 @@ By default, Tooltips will not be displayed on disabled elements. However, it is 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/getting-started-cs9/app/app.component.ts %}
+{% include code-snippet/tooltip/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs9/app/app.module.ts %}
+{% include code-snippet/tooltip/getting-started-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/getting-started-cs9/app/main.ts %}
+{% include code-snippet/tooltip/getting-started-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -41,13 +41,13 @@ Here, Bold, Italic, Underline, and Anchor tags are used.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/load-html-cs1/app/app.component.ts %}
+{% include code-snippet/tooltip/load-html-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/load-html-cs1/app/app.module.ts %}
+{% include code-snippet/tooltip/load-html-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/load-html-cs1/app/main.ts %}
+{% include code-snippet/tooltip/load-html-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,13 +86,13 @@ Tooltip is not triggered by any default action. So, bind your own events and use
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/open-mode-cs1/app/app.component.ts %}
+{% include code-snippet/tooltip/open-mode-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/open-mode-cs1/app/app.module.ts %}
+{% include code-snippet/tooltip/open-mode-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/open-mode-cs1/app/main.ts %}
+{% include code-snippet/tooltip/open-mode-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -106,13 +106,13 @@ In this case, the tooltip content is assigned from the title attribute of the ta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/form-valid-cs1/app/app.component.ts %}
+{% include code-snippet/tooltip/form-valid-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/form-valid-cs1/app/app.module.ts %}
+{% include code-snippet/tooltip/form-valid-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/form-valid-cs1/app/main.ts %}
+{% include code-snippet/tooltip/form-valid-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -156,13 +156,13 @@ onBeforeRender(args: TooltipEventArgs): void {
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/dynamic-content-cs1/app/app.component.ts %}
+{% include code-snippet/tooltip/dynamic-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/dynamic-content-cs1/app/app.module.ts %}
+{% include code-snippet/tooltip/dynamic-content-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/dynamic-content-cs1/app/main.ts %}
+{% include code-snippet/tooltip/dynamic-content-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -174,13 +174,13 @@ The Tooltip component [content](https://ej2.syncfusion.com/angular/documentation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/load-html-cs2/app/app.component.ts %}
+{% include code-snippet/tooltip/load-html-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/load-html-cs2/app/app.module.ts %}
+{% include code-snippet/tooltip/load-html-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/load-html-cs2/app/main.ts %}
+{% include code-snippet/tooltip/load-html-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -239,13 +239,13 @@ The arrow tip pointer can also be disabled by using the [`showTipPointer`](https
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/tip-custom-cs1/app/app.component.ts %}
+{% include code-snippet/tooltip/tip-custom-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/tip-custom-cs1/app/app.module.ts %}
+{% include code-snippet/tooltip/tip-custom-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/tip-custom-cs1/app/main.ts %}
+{% include code-snippet/tooltip/tip-custom-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -279,13 +279,13 @@ Create the canvas circle element and refer to the following code snippet to rend
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/svg-canvas-cs1/app/app.component.ts %}
+{% include code-snippet/tooltip/svg-canvas-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/svg-canvas-cs1/app/app.module.ts %}
+{% include code-snippet/tooltip/svg-canvas-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/svg-canvas-cs1/app/main.ts %}
+{% include code-snippet/tooltip/svg-canvas-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -305,13 +305,13 @@ content= '<iframe src="https://www.syncfusion.com/products/essential-js2"></ifra
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tooltip/html-page-cs1/app/app.component.ts %}
+{% include code-snippet/tooltip/html-page-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/html-page-cs1/app/app.module.ts %}
+{% include code-snippet/tooltip/html-page-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tooltip/html-page-cs1/app/main.ts %}
+{% include code-snippet/tooltip/html-page-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

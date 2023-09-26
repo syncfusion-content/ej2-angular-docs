@@ -17,13 +17,13 @@ Set **type** to Linear to get the linear progress bar. It also support secondary
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progressbar/types-cs1/app/app.component.ts %}
+{% include code-snippet/progressbar/types-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/types-cs1/app/app.module.ts %}
+{% include code-snippet/progressbar/types-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progressbar/types-cs1/app/main.ts %}
+{% include code-snippet/progressbar/types-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -35,13 +35,13 @@ Set **type** to Circular to get the circular progress bar. It also support secon
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progressbar/types-cs2/app/app.component.ts %}
+{% include code-snippet/progressbar/types-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/types-cs2/app/app.module.ts %}
+{% include code-snippet/progressbar/types-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progressbar/types-cs2/app/main.ts %}
+{% include code-snippet/progressbar/types-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

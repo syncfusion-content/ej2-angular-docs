@@ -26,6 +26,8 @@ Here's a basic example of how you can override the header background color of th
 }
 ```
 
+![Change header background](../images/header-background.png)
+
 **Using theme studio:**
 
 Syncfusion's Theme Studio tool allows you to create custom themes for all their controls, including the Grid. This is a more advanced approach that lets you define a comprehensive set of styles to achieve a consistent look and feel throughout your application.
@@ -45,6 +47,8 @@ To customize the appearance of the root element of the Syncfusion Angular Grid c
 }
 
 ```
+
+![grid root element](../images/whole-grid.png)
 
 The above code snippet, the **.e-grid** class targets the root element of the Syncfusion Angular Grid component, and the `font-family` property is set to cursive to change the font family of the grid content.
 

@@ -16,13 +16,13 @@ By using the start and end properties in `striplines` object, you can mark the t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/how-to-cs20/app/app.component.ts %}
+{% include code-snippet/chart/how-to-cs20/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/how-to-cs20/app/app.module.ts %}
+{% include code-snippet/chart/how-to-cs20/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/how-to-cs20/app/main.ts %}
+{% include code-snippet/chart/how-to-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

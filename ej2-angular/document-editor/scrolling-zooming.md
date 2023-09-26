@@ -14,13 +14,13 @@ The Document Editor renders the document as page by page. You can scroll through
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/document-editor/find-replace-cs3/app/app.component.ts %}
+{% include code-snippet/document-editor/find-replace-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/find-replace-cs3/app/app.module.ts %}
+{% include code-snippet/document-editor/find-replace-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/document-editor/find-replace-cs3/app/main.ts %}
+{% include code-snippet/document-editor/find-replace-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -32,13 +32,13 @@ In case, if you wish to move the selection to any page in document editor and br
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/document-editor/find-replace-cs4/app/app.component.ts %}
+{% include code-snippet/document-editor/find-replace-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/find-replace-cs4/app/app.module.ts %}
+{% include code-snippet/document-editor/find-replace-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/document-editor/find-replace-cs4/app/main.ts %}
+{% include code-snippet/document-editor/find-replace-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

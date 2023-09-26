@@ -24,13 +24,13 @@ Allows end user to set the pivot table's height and width by using [`height`](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs250/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs250/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs250/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs250/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs250/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs250/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -48,13 +48,13 @@ In the below code sample, the [`rowHeight`](https://ej2.syncfusion.com/angular/d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs251/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs251/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs251/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs251/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs251/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs251/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ In the below example, the [`columnWidth`](https://ej2.syncfusion.com/angular/doc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs252/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs252/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs252/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs252/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs252/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs252/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -88,13 +88,13 @@ By default, if the component width set in code-behind is more than the width of 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs253/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs253/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs253/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs253/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs253/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs253/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -106,13 +106,13 @@ Allows end user to reorder a particular column header from one index to another 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs254/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs254/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs254/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs254/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs254/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs254/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -127,13 +127,13 @@ Allows end user to resize the columns by clicking and dragging the right edge of
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs255/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs255/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs255/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs255/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs255/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs255/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -145,13 +145,13 @@ Allows end user to wrap the cell content to the next line when it exceeds the bo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs256/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs256/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs256/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs256/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs256/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs256/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -168,13 +168,13 @@ Allows end user to align the content of the pivot table's row and column headers
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs257/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs257/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs257/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs257/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs257/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs257/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -186,13 +186,13 @@ Allows the user to fit the Pivot Table columns as wide as the content of the cel
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs258/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs258/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs258/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs258/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs258/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs258/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -202,13 +202,13 @@ Allows the user to fit the Pivot Table columns as wide as the content of the cel
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs259/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs259/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs259/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs259/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs259/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs259/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -220,13 +220,13 @@ During initial rendering, the parameter `autoFit` in the [`columnRender`](https:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs260/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs260/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs260/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs260/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs260/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs260/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -250,13 +250,13 @@ Available mode of grid lines are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs261/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs261/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs261/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs261/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs261/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs261/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -274,13 +274,13 @@ To perform multi-selection, press and hold "CTRL" key and click the desired rows
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs262/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs262/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs262/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs262/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs262/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs262/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -297,13 +297,13 @@ The pivot table supports four types of selection mode that can be set using [`mo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs263/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs263/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs263/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs263/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs263/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs263/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -318,13 +318,13 @@ The pivot table supports two types of cell selection mode that can be set using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs264/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs264/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs264/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs264/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs264/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs264/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -338,13 +338,13 @@ The background-color of the selected cell can be changed using built-in CSS name
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/background-css-cs1/app/app.component.ts %}
+{% include code-snippet/pivot-grid/background-css-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/background-css-cs1/app/app.module.ts %}
+{% include code-snippet/pivot-grid/background-css-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/background-css-cs1/app/main.ts %}
+{% include code-snippet/pivot-grid/background-css-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -358,13 +358,13 @@ The event `cellSelected` is triggered when cell selection gets completed. It pro
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs265/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs265/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs265/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs265/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs265/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs265/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -376,13 +376,13 @@ The event `cellSelecting` triggers before cell gets selected gets completed. It 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs266/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs266/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs266/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs266/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs266/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs266/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -401,13 +401,13 @@ The clip mode provides options to display its overflow cell content in the pivot
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs267/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs267/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs267/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs267/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs267/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs267/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -421,13 +421,13 @@ In this demo, the revenue cost for each year is represented with trend icons.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs268/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs268/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs268/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs268/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs268/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs268/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -447,13 +447,13 @@ The event `queryCellInfo` triggers while rendering row and value cells in the pi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs269/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs269/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs269/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs269/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs269/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs269/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -467,13 +467,13 @@ The event `headerCellInfo` triggers while rendering the header cells in the pivo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs270/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs270/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs270/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs270/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs270/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs270/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -490,13 +490,13 @@ The event [`columnRender`](https://ej2.syncfusion.com/angular/documentation/api/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs271/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs271/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs271/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs271/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs271/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs271/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -511,13 +511,13 @@ The event [`cellClick`](https://ej2.syncfusion.com/angular/documentation/api/piv
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs272/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs272/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs272/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs272/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs272/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs272/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

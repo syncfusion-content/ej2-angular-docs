@@ -29,13 +29,13 @@ To use use image and link tool, inject `ImageService, LinkService` in the provid
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs16/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs16/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs16/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -68,13 +68,13 @@ The quick toolbar for the Link has the following options.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs17/app/app.component.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs17/app/app.module.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs17/app/main.ts %}
+{% include code-snippet/rich-text-editor/getting-started-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

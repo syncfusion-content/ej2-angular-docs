@@ -16,13 +16,13 @@ To use mask support, inject the MaskedDateTime module in the DatePicker.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/datepicker/mask-module-cs1/app/app.component.ts %}
+{% include code-snippet/datepicker/mask-module-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/mask-module-cs1/app/app.module.ts %}
+{% include code-snippet/datepicker/mask-module-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/datepicker/mask-module-cs1/app/main.ts %}
+{% include code-snippet/datepicker/mask-module-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ The following example demonstrates default and custom format of DatePicker compo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/datepicker/mask-module-cs2/app/app.component.ts %}
+{% include code-snippet/datepicker/mask-module-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/mask-module-cs2/app/app.module.ts %}
+{% include code-snippet/datepicker/mask-module-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/datepicker/mask-module-cs2/app/main.ts %}
+{% include code-snippet/datepicker/mask-module-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -71,13 +71,13 @@ The following example demonstrates default and customized mask placeholder value
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/datepicker/mask-module-cs3/app/app.component.ts %}
+{% include code-snippet/datepicker/mask-module-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/mask-module-cs3/app/app.module.ts %}
+{% include code-snippet/datepicker/mask-module-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/datepicker/mask-module-cs3/app/main.ts %}
+{% include code-snippet/datepicker/mask-module-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

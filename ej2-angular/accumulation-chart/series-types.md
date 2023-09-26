@@ -18,13 +18,13 @@ To render a pyramid series, use series [`type`](https://ej2.syncfusion.com/angul
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pyramid-cs7/app/app.component.ts %}
+{% include code-snippet/chart/series/pyramid-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pyramid-cs7/app/app.module.ts %}
+{% include code-snippet/chart/series/pyramid-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pyramid-cs7/app/main.ts %}
+{% include code-snippet/chart/series/pyramid-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ To render a funnel series, use series [`type`](https://ej2.syncfusion.com/angula
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/funnel-cs8/app/app.component.ts %}
+{% include code-snippet/chart/series/funnel-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs8/app/app.module.ts %}
+{% include code-snippet/chart/series/funnel-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/funnel-cs8/app/main.ts %}
+{% include code-snippet/chart/series/funnel-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ Accumulation chart provides options to customize the size of the funnel or pyram
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/funnel-cs9/app/app.component.ts %}
+{% include code-snippet/chart/series/funnel-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs9/app/app.module.ts %}
+{% include code-snippet/chart/series/funnel-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/funnel-cs9/app/main.ts %}
+{% include code-snippet/chart/series/funnel-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -74,13 +74,13 @@ The funnel neck size can be customized by using the `neckWidth` and `neckHeight`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/funnel-cs10/app/app.component.ts %}
+{% include code-snippet/chart/series/funnel-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs10/app/app.module.ts %}
+{% include code-snippet/chart/series/funnel-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/funnel-cs10/app/main.ts %}
+{% include code-snippet/chart/series/funnel-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -93,13 +93,13 @@ it is applicable for pyramid and funnel chart. It ranges from 0 to 1.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/funnel-cs11/app/app.component.ts %}
+{% include code-snippet/chart/series/funnel-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs11/app/app.module.ts %}
+{% include code-snippet/chart/series/funnel-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/funnel-cs11/app/main.ts %}
+{% include code-snippet/chart/series/funnel-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -111,13 +111,13 @@ Pyramid chart supports linear and surface modes of rendering. The default `pyram
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/pyramid-cs8/app/app.component.ts %}
+{% include code-snippet/chart/series/pyramid-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pyramid-cs8/app/app.module.ts %}
+{% include code-snippet/chart/series/pyramid-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/pyramid-cs8/app/main.ts %}
+{% include code-snippet/chart/series/pyramid-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

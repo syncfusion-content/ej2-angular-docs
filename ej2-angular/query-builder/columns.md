@@ -20,13 +20,13 @@ The [`columns`](https://ej2.syncfusion.com/angular/documentation/api/query-build
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/query-builder/filtering-cs1/app/app.component.ts %}
+{% include code-snippet/query-builder/filtering-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs1/app/app.module.ts %}
+{% include code-snippet/query-builder/filtering-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/query-builder/filtering-cs1/app/main.ts %}
+{% include code-snippet/query-builder/filtering-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -68,13 +68,13 @@ The Query Builder formats date and number values. Use the [`format`](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/query-builder/filtering-cs2/app/app.component.ts %}
+{% include code-snippet/query-builder/filtering-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs2/app/app.module.ts %}
+{% include code-snippet/query-builder/filtering-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/query-builder/filtering-cs2/app/main.ts %}
+{% include code-snippet/query-builder/filtering-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,13 +86,13 @@ Validation allows you to validate the conditions and it display errors for inval
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/query-builder/filtering-cs3/app/app.component.ts %}
+{% include code-snippet/query-builder/filtering-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs3/app/app.module.ts %}
+{% include code-snippet/query-builder/filtering-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/query-builder/filtering-cs3/app/main.ts %}
+{% include code-snippet/query-builder/filtering-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

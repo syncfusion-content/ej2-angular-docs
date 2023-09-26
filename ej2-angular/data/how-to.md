@@ -71,16 +71,16 @@ You can use the [`addParams`](https://ej2.syncfusion.com/documentation/api/data/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/data/getting-started/default-cs11/app/app.component.ts %}
+{% include code-snippet/data/getting-started/default-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs11/app/app.template.html %}
+{% include code-snippet/data/getting-started/default-cs11/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs11/app/app.module.ts %}
+{% include code-snippet/data/getting-started/default-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/data/getting-started/default-cs11/app/main.ts %}
+{% include code-snippet/data/getting-started/default-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

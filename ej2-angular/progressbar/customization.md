@@ -15,13 +15,13 @@ We can divide a progress bar into multiple segments using a `segmentCount` to vi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progressbar/customization-cs1/app/app.component.ts %}
+{% include code-snippet/progressbar/customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/customization-cs1/app/app.module.ts %}
+{% include code-snippet/progressbar/customization-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progressbar/customization-cs1/app/main.ts %}
+{% include code-snippet/progressbar/customization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -33,13 +33,13 @@ Customize the thickness of the track using [`trackThickness`](https://ej2.syncfu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progressbar/customization-cs2/app/app.component.ts %}
+{% include code-snippet/progressbar/customization-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/customization-cs2/app/app.module.ts %}
+{% include code-snippet/progressbar/customization-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progressbar/customization-cs2/app/main.ts %}
+{% include code-snippet/progressbar/customization-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -51,13 +51,13 @@ The progress bar value is set by using the `value` property in progress bar. The
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progressbar/customization-cs3/app/app.component.ts %}
+{% include code-snippet/progressbar/customization-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/customization-cs3/app/app.module.ts %}
+{% include code-snippet/progressbar/customization-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progressbar/customization-cs3/app/main.ts %}
+{% include code-snippet/progressbar/customization-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -69,13 +69,13 @@ The  radius of the progress bar can be customized using `radius` property and  c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progressbar/customization-cs4/app/app.component.ts %}
+{% include code-snippet/progressbar/customization-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/customization-cs4/app/app.module.ts %}
+{% include code-snippet/progressbar/customization-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progressbar/customization-cs4/app/main.ts %}
+{% include code-snippet/progressbar/customization-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -87,13 +87,13 @@ The inner radius of the progress bar can be customized using `innerRadius` prope
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progressbar/customization-cs5/app/app.component.ts %}
+{% include code-snippet/progressbar/customization-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/customization-cs5/app/app.module.ts %}
+{% include code-snippet/progressbar/customization-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progressbar/customization-cs5/app/main.ts %}
+{% include code-snippet/progressbar/customization-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -105,13 +105,13 @@ Customize the color of progress, secondary progress, and track by using the [`pr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/progressbar/customization-cs6/app/app.component.ts %}
+{% include code-snippet/progressbar/customization-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/customization-cs6/app/app.module.ts %}
+{% include code-snippet/progressbar/customization-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/progressbar/customization-cs6/app/main.ts %}
+{% include code-snippet/progressbar/customization-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

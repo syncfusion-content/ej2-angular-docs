@@ -19,13 +19,13 @@ added using the iconCss property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/split-button/popup-icon-cs1/app/app.component.ts %}
+{% include code-snippet/split-button/popup-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/split-button/popup-icon-cs1/app/app.module.ts %}
+{% include code-snippet/split-button/popup-icon-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/split-button/popup-icon-cs1/app/main.ts %}
+{% include code-snippet/split-button/popup-icon-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ Popup items can be customized by using the [`beforeItemRender`](https://ej2.sync
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/split-button/template-cs1/app/app.component.ts %}
+{% include code-snippet/split-button/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/split-button/template-cs1/app/app.module.ts %}
+{% include code-snippet/split-button/template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/split-button/template-cs1/app/main.ts %}
+{% include code-snippet/split-button/template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -57,13 +57,13 @@ The whole popup can be customized as per the requirement. In the following examp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/split-button/popup-template-cs1/app/app.component.ts %}
+{% include code-snippet/split-button/popup-template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/split-button/popup-template-cs1/app/app.module.ts %}
+{% include code-snippet/split-button/popup-template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/split-button/popup-template-cs1/app/main.ts %}
+{% include code-snippet/split-button/popup-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

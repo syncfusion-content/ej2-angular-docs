@@ -18,13 +18,13 @@ When setting `labelIntersectAction` as `Hide`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/multiple-cs1/app/app.component.ts %}
+{% include code-snippet/chart/axis/multiple-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-cs1/app/app.module.ts %}
+{% include code-snippet/chart/axis/multiple-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/multiple-cs1/app/main.ts %}
+{% include code-snippet/chart/axis/multiple-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ When setting `labelIntersectAction` as `Rotate45`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/multiple-cs2/app/app.component.ts %}
+{% include code-snippet/chart/axis/multiple-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-cs2/app/app.module.ts %}
+{% include code-snippet/chart/axis/multiple-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/multiple-cs2/app/main.ts %}
+{% include code-snippet/chart/axis/multiple-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -50,13 +50,13 @@ When setting `labelIntersectAction` as `Rotate90`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/multiple-cs3/app/app.component.ts %}
+{% include code-snippet/chart/axis/multiple-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-cs3/app/app.module.ts %}
+{% include code-snippet/chart/axis/multiple-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/multiple-cs3/app/main.ts %}
+{% include code-snippet/chart/axis/multiple-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -68,13 +68,13 @@ By default, the axis labels can be placed at `outside` the axis line and this al
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs9/app/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs9/app/app.module.ts %}
+{% include code-snippet/chart/axis/category-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs9/app/main.ts %}
+{% include code-snippet/chart/axis/category-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -98,13 +98,13 @@ Using the categories property, you can configure the `start`, `end`, `text`, and
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs10/app/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs10/app/app.module.ts %}
+{% include code-snippet/chart/axis/category-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs10/app/main.ts %}
+{% include code-snippet/chart/axis/category-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -116,13 +116,13 @@ Using the `overflow` property, you can `trim` or `wrap` the multilevel labels.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs11/app/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs11/app/app.module.ts %}
+{% include code-snippet/chart/axis/category-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs11/app/main.ts %}
+{% include code-snippet/chart/axis/category-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -134,13 +134,13 @@ The `alignment` property provides option to position the multilevel labels at `f
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs12/app/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs12/app/app.module.ts %}
+{% include code-snippet/chart/axis/category-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs12/app/main.ts %}
+{% include code-snippet/chart/axis/category-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -152,13 +152,13 @@ The `textStyle` property of multilevel labels provides options to customize the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs13/app/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs13/app/app.module.ts %}
+{% include code-snippet/chart/axis/category-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs13/app/main.ts %}
+{% include code-snippet/chart/axis/category-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -171,13 +171,13 @@ are `Rectangle`, `Brace`, `WithoutBorder`, `WithoutTopBorder`, `WithoutTopandBot
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs14/app/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs14/app/app.module.ts %}
+{% include code-snippet/chart/axis/category-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs14/app/main.ts %}
+{% include code-snippet/chart/axis/category-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -189,13 +189,13 @@ Labels with long text at the edges of an axis may appear partially in the chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/datetime-cs1/app/app.component.ts %}
+{% include code-snippet/chart/axis/datetime-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs1/app/app.module.ts %}
+{% include code-snippet/chart/axis/datetime-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/datetime-cs1/app/main.ts %}
+{% include code-snippet/chart/axis/datetime-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -207,13 +207,13 @@ You can trim the label using [`enableTrim`](https://ej2.syncfusion.com/angular/d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs15/app/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs15/app/app.module.ts %}
+{% include code-snippet/chart/axis/category-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs15/app/main.ts %}
+{% include code-snippet/chart/axis/category-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -229,13 +229,13 @@ To known more about labels customization, you can check on this video:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs16/app/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs16/app/app.module.ts %}
+{% include code-snippet/chart/axis/category-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs16/app/main.ts %}
+{% include code-snippet/chart/axis/category-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -247,13 +247,13 @@ The axis labels can be rotated based on the `labelRotation` property in `primary
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs17/app/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs17/app/app.module.ts %}
+{% include code-snippet/chart/axis/category-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs17/app/main.ts %}
+{% include code-snippet/chart/axis/category-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -265,13 +265,13 @@ You can customize the specific text in the axis labels using `axisLabelRender` e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs18/app/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs18/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs18/app/app.module.ts %}
+{% include code-snippet/chart/axis/category-cs18/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs18/app/main.ts %}
+{% include code-snippet/chart/axis/category-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -283,13 +283,13 @@ Line break feature used to customize the long axis label text into multiple line
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs19/app/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs19/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs19/app/app.module.ts %}
+{% include code-snippet/chart/axis/category-cs19/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs19/app/main.ts %}
+{% include code-snippet/chart/axis/category-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -301,13 +301,13 @@ Line break feature used to customize the long axis label text into multiple line
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/axis/category-cs20/app/app.component.ts %}
+{% include code-snippet/chart/axis/category-cs20/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs20/app/app.module.ts %}
+{% include code-snippet/chart/axis/category-cs20/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/axis/category-cs20/app/main.ts %}
+{% include code-snippet/chart/axis/category-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
