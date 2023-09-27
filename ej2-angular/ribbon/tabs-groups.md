@@ -18,16 +18,16 @@ You can use the [tabs](https://ej2.syncfusion.com/angular/documentation/api/ribb
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/Tabs/app/app.component.ts %}
+{% include code-snippet/ribbon/Tabs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Tabs/app/app.module.ts %}
+{% include code-snippet/ribbon/Tabs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/Tabs/app/main.ts %}
+{% include code-snippet/ribbon/Tabs/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/Tabs/app/app.component.html %}
+{% include code-snippet/ribbon/Tabs/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,16 +39,16 @@ You can use the [groups](https://ej2.syncfusion.com/angular/documentation/api/ri
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/Groups/app/app.component.ts %}
+{% include code-snippet/ribbon/Groups/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Groups/app/app.module.ts %}
+{% include code-snippet/ribbon/Groups/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/Groups/app/main.ts %}
+{% include code-snippet/ribbon/Groups/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/Groups/app/app.component.html %}
+{% include code-snippet/ribbon/Groups/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,16 +60,16 @@ You can add collections of items to each group by using the [collections](https:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/Items/app/app.component.ts %}
+{% include code-snippet/ribbon/Items/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Items/app/app.module.ts %}
+{% include code-snippet/ribbon/Items/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/Items/app/main.ts %}
+{% include code-snippet/ribbon/Items/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/Items/app/app.component.html %}
+{% include code-snippet/ribbon/Items/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -25,13 +25,13 @@ The selected files are organized in a list for every file selection until you cl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/uploader-cs1/app/app.component.ts %}
+{% include code-snippet/uploader/uploader-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs1/app/app.module.ts %}
+{% include code-snippet/uploader/uploader-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/uploader-cs1/app/main.ts %}
+{% include code-snippet/uploader/uploader-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -47,13 +47,13 @@ The following example explains about single file upload settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/uploader-cs2/app/app.component.ts %}
+{% include code-snippet/uploader/uploader-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs2/app/app.module.ts %}
+{% include code-snippet/uploader/uploader-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/uploader-cs2/app/main.ts %}
+{% include code-snippet/uploader/uploader-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -72,13 +72,13 @@ You can cancel the upload process by setting the upload event argument **eventar
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/uploader-cs3/app/app.component.ts %}
+{% include code-snippet/uploader/uploader-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs3/app/app.module.ts %}
+{% include code-snippet/uploader/uploader-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/uploader-cs3/app/main.ts %}
+{% include code-snippet/uploader/uploader-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -151,13 +151,13 @@ In this case, the success or failure events will not be triggered.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/uploader-cs4/app/app.component.ts %}
+{% include code-snippet/uploader/uploader-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs4/app/app.module.ts %}
+{% include code-snippet/uploader/uploader-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/uploader-cs4/app/main.ts %}
+{% include code-snippet/uploader/uploader-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -211,13 +211,13 @@ You can change those buttons text using the `buttons` property in the Uploader c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/uploader-cs5/app/app.component.ts %}
+{% include code-snippet/uploader/uploader-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs5/app/app.module.ts %}
+{% include code-snippet/uploader/uploader-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/uploader-cs5/app/main.ts %}
+{% include code-snippet/uploader/uploader-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -229,13 +229,13 @@ By default, the uploader component process multiple files to upload simultaneous
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/sequential-upload-cs1/app/app.component.ts %}
+{% include code-snippet/uploader/sequential-upload-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/sequential-upload-cs1/app/app.module.ts %}
+{% include code-snippet/uploader/sequential-upload-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/sequential-upload-cs1/app/main.ts %}
+{% include code-snippet/uploader/sequential-upload-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -254,13 +254,13 @@ The following properties are mandatory to configure the preloaded files:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/uploader-cs6/app/app.component.ts %}
+{% include code-snippet/uploader/uploader-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs6/app/app.module.ts %}
+{% include code-snippet/uploader/uploader-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/uploader-cs6/app/main.ts %}
+{% include code-snippet/uploader/uploader-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

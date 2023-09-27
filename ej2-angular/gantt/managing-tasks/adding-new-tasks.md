@@ -18,13 +18,13 @@ A row can be added to the Gantt component from the toolbar while the  [`editSett
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/addrow-toolbar-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/addrow-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/addrow-toolbar-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/addrow-toolbar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/addrow-toolbar-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/addrow-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ A row can also be added above, below or child of the selected row by using conte
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/contextmenu-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/contextmenu-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/contextmenu-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/contextmenu-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/contextmenu-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/contextmenu-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ You can add rows to the Gantt component dynamically using the [`addRecord`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/addrow-dynamic-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/addrow-dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/addrow-dynamic-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/addrow-dynamic-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/addrow-dynamic-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/addrow-dynamic-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -131,13 +131,13 @@ The below example shows a basic Linear Gauge.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs1/app/app.component.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs1/app/app.module.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs1/app/main.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -176,13 +176,13 @@ The title can be added to the Linear Gauge component using the [`title`](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs2/app/app.component.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs2/app/app.module.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs2/app/main.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -194,13 +194,13 @@ The range of the axis can be set using the [`minimum`](https://ej2.syncfusion.co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs3/app/app.component.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs3/app/app.module.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs3/app/main.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -212,13 +212,13 @@ To change the pointer value from the default value of the gauge, set the [`value
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs4/app/app.component.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs4/app/app.module.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs4/app/main.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -230,13 +230,13 @@ The pointer value is changed in the below sample using the [`value`](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs5/app/app.component.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs5/app/app.module.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/getting-started-cs5/app/main.ts %}
+{% include code-snippet/linear-gauge/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

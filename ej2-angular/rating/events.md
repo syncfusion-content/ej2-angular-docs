@@ -116,13 +116,13 @@ Below example demonstrates the valueChanged event of the Rating component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/events-cs/app/app.component.ts %}
+{% include code-snippet/rating/events-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/events-cs/app/app.module.ts %}
+{% include code-snippet/rating/events-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/events-cs/app/main.ts %}
+{% include code-snippet/rating/events-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

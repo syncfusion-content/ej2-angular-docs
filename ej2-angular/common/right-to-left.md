@@ -20,13 +20,13 @@ To enable Right-To-Left (RTL) support for all components, users can set the `ena
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/right-to-left-cs1/app/app.component.ts %}
+{% include code-snippet/common/right-to-left-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/right-to-left-cs1/app/app.module.ts %}
+{% include code-snippet/common/right-to-left-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/right-to-left-cs1/app/main.ts %}
+{% include code-snippet/common/right-to-left-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ To enable Right-To-Left (RTL) support for an individual component, users can set
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/individual-rtl-cs1/app/app.component.ts %}
+{% include code-snippet/common/individual-rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/individual-rtl-cs1/app/app.module.ts %}
+{% include code-snippet/common/individual-rtl-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/individual-rtl-cs1/app/main.ts %}
+{% include code-snippet/common/individual-rtl-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

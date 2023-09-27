@@ -30,13 +30,13 @@ You can set the size for heat map in a pixel.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/dimension/pixel-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/dimension/pixel-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/dimension/pixel-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/dimension/pixel-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/dimension/pixel-cs1/app/main.ts %}
+{% include code-snippet/heatmap/dimension/pixel-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -48,13 +48,13 @@ By setting value in percentage, heat map gets its dimension with respect to its 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/dimension/percentage-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/dimension/percentage-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/dimension/percentage-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/dimension/percentage-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/dimension/percentage-cs1/app/main.ts %}
+{% include code-snippet/heatmap/dimension/percentage-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

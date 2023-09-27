@@ -19,13 +19,13 @@ The process of formatting is explained in the below sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/how-to-01-cs1/app/app.component.ts %}
+{% include code-snippet/slider/how-to-01-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/how-to-01-cs1/app/app.module.ts %}
+{% include code-snippet/slider/how-to-01-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/how-to-01-cs1/app/main.ts %}
+{% include code-snippet/slider/how-to-01-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -37,13 +37,13 @@ The time formatting can be achieved same as the date formatting using `rendering
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/how-to-02-cs1/app/app.component.ts %}
+{% include code-snippet/slider/how-to-02-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/how-to-02-cs1/app/app.module.ts %}
+{% include code-snippet/slider/how-to-02-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/how-to-02-cs1/app/main.ts %}
+{% include code-snippet/slider/how-to-02-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ The Numeric processing is demonstrated below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/how-to-03-cs1/app/app.component.ts %}
+{% include code-snippet/slider/how-to-03-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/how-to-03-cs1/app/app.module.ts %}
+{% include code-snippet/slider/how-to-03-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/how-to-03-cs1/app/main.ts %}
+{% include code-snippet/slider/how-to-03-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -110,13 +110,13 @@ export class AppComponent {
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/ngmodel-cs1/app/app.component.ts %}
+{% include code-snippet/slider/ngmodel-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/ngmodel-cs1/app/app.module.ts %}
+{% include code-snippet/slider/ngmodel-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/ngmodel-cs1/app/main.ts %}
+{% include code-snippet/slider/ngmodel-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -176,13 +176,13 @@ Slider value choosen as: {{value}}
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/reactiveform-cs1/app/app.component.ts %}
+{% include code-snippet/slider/reactiveform-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/reactiveform-cs1/app/app.module.ts %}
+{% include code-snippet/slider/reactiveform-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/reactiveform-cs1/app/main.ts %}
+{% include code-snippet/slider/reactiveform-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -202,13 +202,13 @@ Slider can be validated in Angular using [Template-driven](https://angular.io/gu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/templateform-cs1/app/app.component.ts %}
+{% include code-snippet/slider/templateform-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/templateform-cs1/app/app.module.ts %}
+{% include code-snippet/slider/templateform-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/templateform-cs1/app/main.ts %}
+{% include code-snippet/slider/templateform-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -298,13 +298,13 @@ this.formObject.validate();
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/how-to-04-cs1/app/app.component.ts %}
+{% include code-snippet/slider/how-to-04-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/how-to-04-cs1/app/app.module.ts %}
+{% include code-snippet/slider/how-to-04-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/how-to-04-cs1/app/main.ts %}
+{% include code-snippet/slider/how-to-04-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -350,13 +350,13 @@ change(args: SliderChangeEventArgs) => {
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/bar-customization-cs1/app/app.component.ts %}
+{% include code-snippet/slider/bar-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/bar-customization-cs1/app/app.module.ts %}
+{% include code-snippet/slider/bar-customization-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/bar-customization-cs1/app/main.ts %}
+{% include code-snippet/slider/bar-customization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -376,13 +376,13 @@ Slider appearance can be customized via CSS. By overriding the slider CSS classe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/limits-customization-cs1/app/app.component.ts %}
+{% include code-snippet/slider/limits-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/limits-customization-cs1/app/app.module.ts %}
+{% include code-snippet/slider/limits-customization-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/limits-customization-cs1/app/main.ts %}
+{% include code-snippet/slider/limits-customization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -415,13 +415,13 @@ applied to the value of the `child_number` in the slider.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/ticks-customization-cs1/app/app.component.ts %}
+{% include code-snippet/slider/ticks-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/ticks-customization-cs1/app/app.module.ts %}
+{% include code-snippet/slider/ticks-customization-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/ticks-customization-cs1/app/main.ts %}
+{% include code-snippet/slider/ticks-customization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -464,13 +464,13 @@ Slider appearance can be customized through CSS. By overriding the slider CSS cl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/thumb-customization-cs1/app/app.component.ts %}
+{% include code-snippet/slider/thumb-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/thumb-customization-cs1/app/app.module.ts %}
+{% include code-snippet/slider/thumb-customization-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/thumb-customization-cs1/app/main.ts %}
+{% include code-snippet/slider/thumb-customization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

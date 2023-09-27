@@ -14,13 +14,13 @@ The excel export provides an option to define datasource dynamically before expo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/excel-export/customData-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/excel-export/customData-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/excel-export/customData-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/excel-export/customData-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/excel-export/customData-cs1/app/main.ts %}
+{% include code-snippet/gantt/excel-export/customData-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -30,13 +30,13 @@ The below example demonstrates the ColorPicker in `Deutsch` culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/colorpicker/how-to-cs5/app/app.component.ts %}
+{% include code-snippet/colorpicker/how-to-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/colorpicker/how-to-cs5/app/app.module.ts %}
+{% include code-snippet/colorpicker/how-to-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/colorpicker/how-to-cs5/app/main.ts %}
+{% include code-snippet/colorpicker/how-to-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -51,13 +51,13 @@ The following example illustrates how to enable right-to-left support in ColorPi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/colorpicker/how-to-cs6/app/app.component.ts %}
+{% include code-snippet/colorpicker/how-to-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/colorpicker/how-to-cs6/app/app.module.ts %}
+{% include code-snippet/colorpicker/how-to-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/colorpicker/how-to-cs6/app/main.ts %}
+{% include code-snippet/colorpicker/how-to-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

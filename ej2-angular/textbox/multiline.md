@@ -20,13 +20,13 @@ You can convert the default textbox into the multiline textbox by setting the [m
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/textbox/textarea-cs1/app/app.component.ts %}
+{% include code-snippet/textbox/textarea-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/textarea-cs1/app/app.module.ts %}
+{% include code-snippet/textbox/textarea-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/textarea-cs1/app/main.ts %}
+{% include code-snippet/textbox/textarea-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ You can achieve the floating label behavior in the multiline textbox by setting 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/textbox/float-cs1/app/app.component.ts %}
+{% include code-snippet/textbox/float-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/float-cs1/app/app.module.ts %}
+{% include code-snippet/textbox/float-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/float-cs1/app/main.ts %}
+{% include code-snippet/textbox/float-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ By default, you can manually resize the multiline textbox. But you can also crea
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/textbox/resize-cs1/app/app.component.ts %}
+{% include code-snippet/textbox/resize-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/resize-cs1/app/app.module.ts %}
+{% include code-snippet/textbox/resize-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/resize-cs1/app/main.ts %}
+{% include code-snippet/textbox/resize-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -84,13 +84,13 @@ By default, the multiline textbox is rendered with resizable. You can disable th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/textbox/disable-cs1/app/app.component.ts %}
+{% include code-snippet/textbox/disable-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/disable-cs1/app/app.module.ts %}
+{% include code-snippet/textbox/disable-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/disable-cs1/app/main.ts %}
+{% include code-snippet/textbox/disable-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -102,13 +102,13 @@ By default, the text length of the multiline textbox is unlimited. You can limit
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/textbox/maxlength-cs1/app/app.component.ts %}
+{% include code-snippet/textbox/maxlength-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/maxlength-cs1/app/app.module.ts %}
+{% include code-snippet/textbox/maxlength-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/maxlength-cs1/app/main.ts %}
+{% include code-snippet/textbox/maxlength-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -120,13 +120,13 @@ You can show the number of characters entered inside the textarea by calculating
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/textbox/count-cs1/app/app.component.ts %}
+{% include code-snippet/textbox/count-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/count-cs1/app/app.module.ts %}
+{% include code-snippet/textbox/count-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/count-cs1/app/main.ts %}
+{% include code-snippet/textbox/count-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

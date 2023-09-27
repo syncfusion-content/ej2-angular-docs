@@ -14,13 +14,13 @@ The legend is used to provide the information about the heat map cell. You can e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/legend/legend-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/legend/legend-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/legend/legend-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/legend/legend-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/legend/legend-cs1/app/main.ts %}
+{% include code-snippet/heatmap/legend/legend-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -37,13 +37,13 @@ You can change the legend type by using the [type](https://ej2.syncfusion.com/an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/legend/legendtype-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/legend/legendtype-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/legend/legendtype-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/legend/legendtype-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/legend/legendtype-cs1/app/main.ts %}
+{% include code-snippet/heatmap/legend/legendtype-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -55,13 +55,13 @@ You can place the legend at left, right, top, or bottom to the heat map layout b
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/legend/legendplacement-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/legend/legendplacement-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/legend/legendplacement-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/legend/legendplacement-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/legend/legendplacement-cs1/app/main.ts %}
+{% include code-snippet/heatmap/legend/legendplacement-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -73,13 +73,13 @@ You can align the legend as center, far, or near to the heat map using the [alig
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/legend/legendalignment-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/legend/legendalignment-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/legend/legendalignment-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/legend/legendalignment-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/legend/legendalignment-cs1/app/main.ts %}
+{% include code-snippet/heatmap/legend/legendalignment-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -91,13 +91,13 @@ You can change the legend dimensions with values in pixels or percentage by usin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/legend/legenddimension-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/legend/legenddimension-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/legend/legenddimension-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/legend/legenddimension-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/legend/legenddimension-cs1/app/main.ts %}
+{% include code-snippet/heatmap/legend/legenddimension-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -109,13 +109,13 @@ Paging is available only for the list type legend in the heat map, and it can be
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/legend/legendpaging-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/legend/legendpaging-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/legend/legendpaging-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/legend/legendpaging-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/legend/legendpaging-cs1/app/main.ts %}
+{% include code-snippet/heatmap/legend/legendpaging-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -136,13 +136,13 @@ The following are the legend label display types:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/legend/smartlegend-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/legend/smartlegend-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/legend/smartlegend-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/legend/smartlegend-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/legend/smartlegend-cs1/app/main.ts %}
+{% include code-snippet/heatmap/legend/smartlegend-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -154,13 +154,13 @@ In the HeatMap, the legend selection is used to toggle the visibility of cell fo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/legend/legendselection-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/legend/legendselection-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/legend/legendselection-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/legend/legendselection-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/legend/legendselection-cs1/app/main.ts %}
+{% include code-snippet/heatmap/legend/legendselection-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -172,13 +172,13 @@ The legend title displays a specific information about the legend. You can enabl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/legend/legend-title-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/legend/legend-title-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/legend/legend-title-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/legend/legend-title-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/legend/legend-title-cs1/app/main.ts %}
+{% include code-snippet/heatmap/legend/legend-title-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

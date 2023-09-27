@@ -29,13 +29,13 @@ This data type is a collection of one dimensional array objects, at which each i
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/working-with-data/arraytable-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/working-with-data/arraytable-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/working-with-data/arraytable-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/working-with-data/arraytable-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/working-with-data/arraytable-cs1/app/main.ts %}
+{% include code-snippet/heatmap/working-with-data/arraytable-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -47,13 +47,13 @@ This data type is a collection of array objects that contain information about t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/working-with-data/arraycell-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/working-with-data/arraycell-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/working-with-data/arraycell-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/working-with-data/arraycell-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/working-with-data/arraycell-cs1/app/main.ts %}
+{% include code-snippet/heatmap/working-with-data/arraycell-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -65,13 +65,13 @@ In JSON table data binding, each JSON object contains an X-axis data point as ro
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/working-with-data/jsontable-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/working-with-data/jsontable-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/working-with-data/jsontable-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/working-with-data/jsontable-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/working-with-data/jsontable-cs1/app/main.ts %}
+{% include code-snippet/heatmap/working-with-data/jsontable-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -83,13 +83,13 @@ In JSON cell data binding, each JSON object consists a value for each cell along
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/working-with-data/jsoncell-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/working-with-data/jsoncell-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/working-with-data/jsoncell-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/working-with-data/jsoncell-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/working-with-data/jsoncell-cs1/app/main.ts %}
+{% include code-snippet/heatmap/working-with-data/jsoncell-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -101,13 +101,13 @@ The data points that use the `null` or `""` or `undefined` as value are consider
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/working-with-data/emptypoint-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/working-with-data/emptypoint-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/working-with-data/emptypoint-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/working-with-data/emptypoint-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/working-with-data/emptypoint-cs1/app/main.ts %}
+{% include code-snippet/heatmap/working-with-data/emptypoint-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -119,13 +119,13 @@ In complex data binding, you can bind the nested JSON data to the data points in
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/working-with-data/nestedJsonCell-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/working-with-data/nestedJsonCell-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/working-with-data/nestedJsonCell-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/working-with-data/nestedJsonCell-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/working-with-data/nestedJsonCell-cs1/app/main.ts %}
+{% include code-snippet/heatmap/working-with-data/nestedJsonCell-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

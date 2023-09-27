@@ -14,13 +14,13 @@ In the Gantt component, you can set the vertical scroller position dynamically b
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/how-to/setscrolltop-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/how-to/setscrolltop-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/how-to/setscrolltop-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/how-to/setscrolltop-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/how-to/setscrolltop-cs1/app/main.ts %}
+{% include code-snippet/gantt/how-to/setscrolltop-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

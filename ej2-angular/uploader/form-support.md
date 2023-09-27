@@ -23,13 +23,13 @@ When you reset the form, the file list and data will be cleared.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/formsupport-cs1/app/app.component.ts %}
+{% include code-snippet/uploader/formsupport-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/formsupport-cs1/app/app.module.ts %}
+{% include code-snippet/uploader/formsupport-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/formsupport-cs1/app/main.ts %}
+{% include code-snippet/uploader/formsupport-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -44,13 +44,13 @@ The following sample demonstrates how to render uploader component with required
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/template-driven-cs1/app/app.component.ts %}
+{% include code-snippet/uploader/template-driven-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/template-driven-cs1/app/app.module.ts %}
+{% include code-snippet/uploader/template-driven-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/template-driven-cs1/app/main.ts %}
+{% include code-snippet/uploader/template-driven-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ The following sample demonstrates how to render uploader component with required
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/reactive-cs1/app/app.component.ts %}
+{% include code-snippet/uploader/reactive-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/reactive-cs1/app/app.module.ts %}
+{% include code-snippet/uploader/reactive-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/reactive-cs1/app/main.ts %}
+{% include code-snippet/uploader/reactive-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

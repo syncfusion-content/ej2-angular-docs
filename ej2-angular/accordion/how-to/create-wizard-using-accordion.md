@@ -16,16 +16,16 @@ The below Wizard sample is designed for Online Shopping model. In this, each Acc
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/accordion/accordion-disable-cs1/app/app.component.html %}
+{% include code-snippet/accordion/accordion-disable-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/accordion/accordion-disable-cs1/app/app.component.ts %}
+{% include code-snippet/accordion/accordion-disable-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/accordion/accordion-disable-cs1/app/app.module.ts %}
+{% include code-snippet/accordion/accordion-disable-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/accordion/accordion-disable-cs1/app/main.ts %}
+{% include code-snippet/accordion/accordion-disable-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -18,13 +18,13 @@ You can enable the tooltip by setting the [showTooltip](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/tooltip/tooltip-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/tooltip/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/tooltip/tooltip-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/tooltip/tooltip-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/tooltip/tooltip-cs1/app/main.ts %}
+{% include code-snippet/heatmap/tooltip/tooltip-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ In heat map, you can customize the tooltip using the [tooltipRender](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/tooltip/tooltiptemplate-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/tooltip/tooltiptemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/tooltip/tooltiptemplate-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/tooltip/tooltiptemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/tooltip/tooltiptemplate-cs1/app/main.ts %}
+{% include code-snippet/heatmap/tooltip/tooltiptemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ The  [fill](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltip
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/tooltip/tooltipSettings-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/tooltip/tooltipSettings-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/tooltip/tooltipSettings-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/tooltip/tooltipSettings-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/tooltip/tooltipSettings-cs1/app/main.ts %}
+{% include code-snippet/heatmap/tooltip/tooltipSettings-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

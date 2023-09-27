@@ -118,13 +118,13 @@ The [`getNumberFormat`](https://ej2.syncfusion.com/documentation/api/base/intern
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/intl-getNumber-format-cs3/app/app.component.ts %}
+{% include code-snippet/common/intl-getNumber-format-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-getNumber-format-cs3/app/app.module.ts %}
+{% include code-snippet/common/intl-getNumber-format-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/intl-getNumber-format-cs3/app/main.ts %}
+{% include code-snippet/common/intl-getNumber-format-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -136,13 +136,13 @@ The [`formatNumber`](https://ej2.syncfusion.com/documentation/api/base/internati
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/intl-getNumber-format-cs4/app/app.component.ts %}
+{% include code-snippet/common/intl-getNumber-format-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-getNumber-format-cs4/app/app.module.ts %}
+{% include code-snippet/common/intl-getNumber-format-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/intl-getNumber-format-cs4/app/main.ts %}
+{% include code-snippet/common/intl-getNumber-format-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -156,13 +156,13 @@ The [`getNumberParser`](https://ej2.syncfusion.com/documentation/api/base/intern
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/intl-parseNumber1-cs2/app/app.component.ts %}
+{% include code-snippet/common/intl-parseNumber1-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-parseNumber1-cs2/app/app.module.ts %}
+{% include code-snippet/common/intl-parseNumber1-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/intl-parseNumber1-cs2/app/main.ts %}
+{% include code-snippet/common/intl-parseNumber1-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -174,13 +174,13 @@ The [`parseNumber`](https://ej2.syncfusion.com/documentation/api/base/internatio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/intl-parseNumber-cs2/app/app.component.ts %}
+{% include code-snippet/common/intl-parseNumber-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-parseNumber-cs2/app/app.module.ts %}
+{% include code-snippet/common/intl-parseNumber-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/intl-parseNumber-cs2/app/main.ts %}
+{% include code-snippet/common/intl-parseNumber-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -320,13 +320,13 @@ The [`getDateFormat`](https://ej2.syncfusion.com/documentation/api/base/internat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/intl-formatDate-cs3/app/app.component.ts %}
+{% include code-snippet/common/intl-formatDate-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-formatDate-cs3/app/app.module.ts %}
+{% include code-snippet/common/intl-formatDate-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/intl-formatDate-cs3/app/main.ts %}
+{% include code-snippet/common/intl-formatDate-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -338,13 +338,13 @@ The [`formatDate`](https://ej2.syncfusion.com/documentation/api/base/internation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/intl-formatDate-cs4/app/app.component.ts %}
+{% include code-snippet/common/intl-formatDate-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-formatDate-cs4/app/app.module.ts %}
+{% include code-snippet/common/intl-formatDate-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/intl-formatDate-cs4/app/main.ts %}
+{% include code-snippet/common/intl-formatDate-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -360,13 +360,13 @@ The `getDateParser` method which will return a function that parses given string
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/intl-parseDate-cs2/app/app.component.ts %}
+{% include code-snippet/common/intl-parseDate-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-parseDate-cs2/app/app.module.ts %}
+{% include code-snippet/common/intl-parseDate-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/intl-parseDate-cs2/app/main.ts %}
+{% include code-snippet/common/intl-parseDate-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -378,13 +378,13 @@ The [`parseDate`](https://ej2.syncfusion.com/documentation/api/base/internationa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/intl-parseDate1-cs2/app/app.component.ts %}
+{% include code-snippet/common/intl-parseDate1-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-parseDate1-cs2/app/app.module.ts %}
+{% include code-snippet/common/intl-parseDate1-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/intl-parseDate1-cs2/app/main.ts %}
+{% include code-snippet/common/intl-parseDate1-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

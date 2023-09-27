@@ -23,13 +23,13 @@ In the Gantt component, you can enable or disable the mouse hover tooltip for th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/tooltip/default-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/tooltip/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/tooltip/default-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/tooltip/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/tooltip/default-cs1/app/main.ts %}
+{% include code-snippet/gantt/tooltip/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -43,13 +43,13 @@ In the Gantt component, you can enable or disable the mouse hover tooltip of tim
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/tooltip/timelinecell-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/tooltip/timelinecell-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/tooltip/timelinecell-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/tooltip/timelinecell-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/tooltip/timelinecell-cs1/app/main.ts %}
+{% include code-snippet/gantt/tooltip/timelinecell-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -61,13 +61,13 @@ You can enable or disable the Grid cell tooltip using the [`columns.clipMode`](h
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/tooltip/cell-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/tooltip/cell-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/tooltip/cell-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/tooltip/cell-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/tooltip/cell-cs1/app/main.ts %}
+{% include code-snippet/gantt/tooltip/cell-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -94,13 +94,13 @@ The default tooltip in the Gantt component can be customized using the [`tooltip
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/tooltip/taskbar-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/tooltip/taskbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/tooltip/taskbar-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/tooltip/taskbar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/tooltip/taskbar-cs1/app/main.ts %}
+{% include code-snippet/gantt/tooltip/taskbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -112,13 +112,13 @@ The default connector line tooltip in the Gantt component can be customized usin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/tooltip/dependency-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/tooltip/dependency-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/tooltip/dependency-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/tooltip/dependency-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/tooltip/dependency-cs1/app/main.ts %}
+{% include code-snippet/gantt/tooltip/dependency-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -130,13 +130,13 @@ The taskbar editing tooltip can be customized using the [`tooltipSettings.editin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/tooltip/taskbar-edit-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/tooltip/taskbar-edit-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/tooltip/taskbar-edit-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/tooltip/taskbar-edit-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/tooltip/taskbar-edit-cs1/app/main.ts %}
+{% include code-snippet/gantt/tooltip/taskbar-edit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -148,13 +148,13 @@ A baseline tooltip can be customized using the [`tooltipSettings.baseline`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/tooltip/baseline-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/tooltip/baseline-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/tooltip/baseline-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/tooltip/baseline-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/tooltip/baseline-cs1/app/main.ts %}
+{% include code-snippet/gantt/tooltip/baseline-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -119,13 +119,13 @@ The below example demonstrates the Gantt in **Deutsch** culture.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/global/locale-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/global/locale-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/global/locale-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/global/locale-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/global/locale-cs1/app/main.ts %}
+{% include code-snippet/gantt/global/locale-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -137,13 +137,13 @@ The [`Internationalization`](../common/internationalization) library is used to 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/global/internationalization-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/global/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/global/internationalization-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/global/internationalization-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/global/internationalization-cs1/app/main.ts %}
+{% include code-snippet/gantt/global/internationalization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -158,13 +158,13 @@ RTL provides an option to switch the text direction and layout of the Gantt comp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/global/rtl-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/global/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/global/rtl-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/global/rtl-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/global/rtl-cs1/app/main.ts %}
+{% include code-snippet/gantt/global/rtl-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

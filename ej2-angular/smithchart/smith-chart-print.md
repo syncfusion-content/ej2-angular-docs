@@ -16,13 +16,13 @@ The rendered smithchart can be printed directly from the browser by calling the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs25/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs25/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs25/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs25/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs25/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ The rendered smithchart can be exported to JPEG , PNG, SVG or PDF format by usin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs26/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs26/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs26/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs26/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs26/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

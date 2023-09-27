@@ -157,16 +157,16 @@ The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonD
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/DropdownTarget/app/app.component.ts %}
+{% include code-snippet/ribbon/DropdownTarget/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/DropdownTarget/app/app.module.ts %}
+{% include code-snippet/ribbon/DropdownTarget/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/DropdownTarget/app/main.ts %}
+{% include code-snippet/ribbon/DropdownTarget/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/DropdownTarget/app/app.component.html %}
+{% include code-snippet/ribbon/DropdownTarget/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -182,16 +182,16 @@ The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonS
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/SplitButtonTarget/app/app.component.ts %}
+{% include code-snippet/ribbon/SplitButtonTarget/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/SplitButtonTarget/app/app.module.ts %}
+{% include code-snippet/ribbon/SplitButtonTarget/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/SplitButtonTarget/app/main.ts %}
+{% include code-snippet/ribbon/SplitButtonTarget/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/SplitButtonTarget/app/app.component.html %}
+{% include code-snippet/ribbon/SplitButtonTarget/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -430,16 +430,16 @@ You can use the [iconCss](https://ej2.syncfusion.com/angular/documentation/api/r
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/GroupButtonIcon/app/app.component.ts %}
+{% include code-snippet/ribbon/GroupButtonIcon/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/GroupButtonIcon/app/app.module.ts %}
+{% include code-snippet/ribbon/GroupButtonIcon/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/GroupButtonIcon/app/main.ts %}
+{% include code-snippet/ribbon/GroupButtonIcon/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/GroupButtonIcon/app/app.component.html %}
+{% include code-snippet/ribbon/GroupButtonIcon/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -453,16 +453,16 @@ You can use the [selected](https://ej2.syncfusion.com/angular/documentation/api/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/GroupButtonSelected/app/app.component.ts %}
+{% include code-snippet/ribbon/GroupButtonSelected/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/GroupButtonSelected/app/app.module.ts %}
+{% include code-snippet/ribbon/GroupButtonSelected/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/GroupButtonSelected/app/main.ts %}
+{% include code-snippet/ribbon/GroupButtonSelected/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/GroupButtonSelected/app/app.component.html %}
+{% include code-snippet/ribbon/GroupButtonSelected/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -474,16 +474,16 @@ You can set the [selection](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/SingleSelection/app/app.component.ts %}
+{% include code-snippet/ribbon/SingleSelection/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/SingleSelection/app/app.module.ts %}
+{% include code-snippet/ribbon/SingleSelection/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/SingleSelection/app/main.ts %}
+{% include code-snippet/ribbon/SingleSelection/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/SingleSelection/app/app.component.html %}
+{% include code-snippet/ribbon/SingleSelection/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -495,16 +495,16 @@ You can set the [selection](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/MultipleSelection/app/app.component.ts %}
+{% include code-snippet/ribbon/MultipleSelection/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/MultipleSelection/app/app.module.ts %}
+{% include code-snippet/ribbon/MultipleSelection/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/MultipleSelection/app/main.ts %}
+{% include code-snippet/ribbon/MultipleSelection/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/MultipleSelection/app/app.component.html %}
+{% include code-snippet/ribbon/MultipleSelection/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -516,16 +516,16 @@ In simplified mode, the groupbutton will be rendered as a dropdownbutton. The dr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/SimplifiedModeGroupButton/app/app.component.ts %}
+{% include code-snippet/ribbon/SimplifiedModeGroupButton/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/SimplifiedModeGroupButton/app/app.module.ts %}
+{% include code-snippet/ribbon/SimplifiedModeGroupButton/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/SimplifiedModeGroupButton/app/main.ts %}
+{% include code-snippet/ribbon/SimplifiedModeGroupButton/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/SimplifiedModeGroupButton/app/app.component.html %}
+{% include code-snippet/ribbon/SimplifiedModeGroupButton/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -538,19 +538,19 @@ You can customize the ribbon items with non-built-in items or HTML content by se
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/Custom-Item/app/app.component.ts %}
+{% include code-snippet/ribbon/Custom-Item/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Custom-Item/app/app.module.ts %}
+{% include code-snippet/ribbon/Custom-Item/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/Custom-Item/app/main.ts %}
+{% include code-snippet/ribbon/Custom-Item/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/Custom-Item/app/app.component.html %}
+{% include code-snippet/ribbon/Custom-Item/src/app.component.html %}
 {% endhighlight %}
 {% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/ribbon/Custom-Item/app/app.component.css %}
+{% include code-snippet/ribbon/Custom-Item/src/app.component.css %}
 {% endhighlight %}
 {% endtabs %}
   

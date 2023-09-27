@@ -18,13 +18,13 @@ It is possible to change the height of the row in Gantt by setting row height in
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/rowheight-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/rows/rowheight-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/rowheight-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/rows/rowheight-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/rowheight-cs1/app/main.ts %}
+{% include code-snippet/gantt/rows/rowheight-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ All tasks available in Gantt was rendered in collapsed state by setting [`collap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/collapseall-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/rows/collapseall-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/collapseall-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/rows/collapseall-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/collapseall-cs1/app/main.ts %}
+{% include code-snippet/gantt/rows/collapseall-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ In Gantt, you can render some tasks in collapsed state and some tasks in expande
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/expand-status-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/rows/expand-status-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/expand-status-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/rows/expand-status-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/expand-status-cs1/app/main.ts %}
+{% include code-snippet/gantt/rows/expand-status-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -76,13 +76,13 @@ On expand action [`expanding`](https://ej2.syncfusion.com/angular/documentation/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/expand-customize-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/rows/expand-customize-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/expand-customize-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/rows/expand-customize-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/expand-customize-cs1/app/main.ts %}
+{% include code-snippet/gantt/rows/expand-customize-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -96,13 +96,13 @@ To use row drag and drop feature, inject the `RowDDService` and `EditService` in
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/deafultdrag-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/rows/deafultdrag-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/deafultdrag-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/rows/deafultdrag-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/deafultdrag-cs1/app/main.ts %}
+{% include code-snippet/gantt/rows/deafultdrag-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -114,13 +114,13 @@ Gantt also supports dragging multiple rows at a time and drop them on any rows a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/multidrag-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/rows/multidrag-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/multidrag-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/rows/multidrag-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/multidrag-cs1/app/main.ts %}
+{% include code-snippet/gantt/rows/multidrag-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -147,13 +147,13 @@ You can prevent drag action of the particular record by setting the `cancel` pro
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/preventdrag-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/rows/preventdrag-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/preventdrag-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/rows/preventdrag-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/preventdrag-cs1/app/main.ts %}
+{% include code-snippet/gantt/rows/preventdrag-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -167,13 +167,13 @@ In the following sample, we have prevented the drop action based on the position
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/preventdrop-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/rows/preventdrop-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/preventdrop-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/rows/preventdrop-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/preventdrop-cs1/app/main.ts %}
+{% include code-snippet/gantt/rows/preventdrop-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -187,13 +187,13 @@ In the below example drop action is cancelled and dropped above to target row.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/preventdrop-cs2/app/app.component.ts %}
+{% include code-snippet/gantt/rows/preventdrop-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/preventdrop-cs2/app/app.module.ts %}
+{% include code-snippet/gantt/rows/preventdrop-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/preventdrop-cs2/app/main.ts %}
+{% include code-snippet/gantt/rows/preventdrop-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -212,13 +212,13 @@ The following code example shows how to drag and drop a row on button click acti
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/dynamicdrag-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/rows/dynamicdrag-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/dynamicdrag-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/rows/dynamicdrag-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/dynamicdrag-cs1/app/main.ts %}
+{% include code-snippet/gantt/rows/dynamicdrag-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -230,13 +230,13 @@ You can customize the appearance of a row in grid side, by using the [`rowDataBo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/customizeRows-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/rows/customizeRows-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/customizeRows-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/rows/customizeRows-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/customizeRows-cs1/app/main.ts %}
+{% include code-snippet/gantt/rows/customizeRows-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -254,13 +254,13 @@ You can change the background colour of alternative rows in Gantt chart, by over
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/alternateRows-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/rows/alternateRows-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/alternateRows-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/rows/alternateRows-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/alternateRows-cs1/app/main.ts %}
+{% include code-snippet/gantt/rows/alternateRows-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -274,13 +274,13 @@ In the following demo, **Soil test approval** cell is spanned to two rows in the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/rowSpanning-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/rows/rowSpanning-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/rowSpanning-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/rows/rowSpanning-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/rowSpanning-cs1/app/main.ts %}
+{% include code-snippet/gantt/rows/rowSpanning-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

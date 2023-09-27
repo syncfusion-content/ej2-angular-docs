@@ -22,13 +22,13 @@ If you need to enable snapping, then inject snapping module into the diagram.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/gridLines/gridLines-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/gridLines/gridLines-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/gridLines/gridLines-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/gridLines/gridLines-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/gridLines/gridLines-cs1/app/main.ts %}
+{% include code-snippet/diagram/gridLines/gridLines-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -50,13 +50,13 @@ The following code example illustrates how to customize the appearance of gridli
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/gridLines/gridlinesAppearance-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/gridLines/gridlinesAppearance-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/gridLines/gridlinesAppearance-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/gridLines/gridlinesAppearance-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/gridLines/gridlinesAppearance-cs1/app/main.ts %}
+{% include code-snippet/diagram/gridLines/gridlinesAppearance-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ The following code example illustrates how to customize the thickness of lines a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/gridLines/gridlinesAppearance-cs2/app/app.component.ts %}
+{% include code-snippet/diagram/gridLines/gridlinesAppearance-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/gridLines/gridlinesAppearance-cs2/app/app.module.ts %}
+{% include code-snippet/diagram/gridLines/gridlinesAppearance-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/gridLines/gridlinesAppearance-cs2/app/main.ts %}
+{% include code-snippet/diagram/gridLines/gridlinesAppearance-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -92,13 +92,13 @@ Snapping to gridlines can be enabled/disabled with the [`snapSettings.snapConstr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/gridLines/snapping-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/gridLines/snapping-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/gridLines/snapping-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/gridLines/snapping-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/gridLines/snapping-cs1/app/main.ts %}
+{% include code-snippet/diagram/gridLines/snapping-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -110,13 +110,13 @@ By default, the objects are snapped towards the nearest gridline. The gridline o
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/gridLines/snapintervals-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/gridLines/snapintervals-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/gridLines/snapintervals-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/gridLines/snapintervals-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/gridLines/snapintervals-cs1/app/main.ts %}
+{% include code-snippet/diagram/gridLines/snapintervals-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -136,13 +136,13 @@ The [`snapLineColor`](https://ej2.syncfusion.com/angular/documentation/api/diagr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/gridLines/snapobjects-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/gridLines/snapobjects-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/gridLines/snapobjects-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/gridLines/snapobjects-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/gridLines/snapobjects-cs1/app/main.ts %}
+{% include code-snippet/diagram/gridLines/snapobjects-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

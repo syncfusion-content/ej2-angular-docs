@@ -145,13 +145,13 @@ The following example shows a basic `Breadcrumb` component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/breadcrumb/getting-started-cs5/app/app.component.ts %}
+{% include code-snippet/breadcrumb/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/getting-started-cs5/app/app.module.ts %}
+{% include code-snippet/breadcrumb/getting-started-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/breadcrumb/getting-started-cs5/app/main.ts %}
+{% include code-snippet/breadcrumb/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -163,13 +163,13 @@ Use `items` property to bind items for Breadcrumb component. The below example d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/breadcrumb/getting-started-cs6/app/app.component.ts %}
+{% include code-snippet/breadcrumb/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/getting-started-cs6/app/app.module.ts %}
+{% include code-snippet/breadcrumb/getting-started-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/breadcrumb/getting-started-cs6/app/main.ts %}
+{% include code-snippet/breadcrumb/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -181,13 +181,13 @@ This feature enables or disables the item navigation. By default, the navigation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/breadcrumb/enable-navigation-cs1/app/app.component.ts %}
+{% include code-snippet/breadcrumb/enable-navigation-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/enable-navigation-cs1/app/app.module.ts %}
+{% include code-snippet/breadcrumb/enable-navigation-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/breadcrumb/enable-navigation-cs1/app/main.ts %}
+{% include code-snippet/breadcrumb/enable-navigation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -20,13 +20,13 @@ To export data to PDF document, inject the `PdfExport` module in Gantt.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/pdf-export-cs14/app/app.component.ts %}
+{% include code-snippet/gantt/pdf-export-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs14/app/app.module.ts %}
+{% include code-snippet/gantt/pdf-export-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/pdf-export-cs14/app/main.ts %}
+{% include code-snippet/gantt/pdf-export-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -44,13 +44,13 @@ step 2: Then , `pdfExpComplete` return as blob object.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/blobdata-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/blobdata-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/blobdata-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/blobdata-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/blobdata-cs1/app/main.ts %}
+{% include code-snippet/gantt/blobdata-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -64,13 +64,13 @@ Also, we can customize the chart width and grid width in exported file using [`c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/single-page/app/app.component.ts %}
+{% include code-snippet/gantt/single-page/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/single-page/app/app.module.ts %}
+{% include code-snippet/gantt/single-page/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/single-page/app/main.ts %}
+{% include code-snippet/gantt/single-page/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

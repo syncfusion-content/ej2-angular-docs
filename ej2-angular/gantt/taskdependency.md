@@ -50,13 +50,13 @@ Task relationship is defined in the data source as a string value, and this valu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/taskdependency/default-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/taskdependency/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/taskdependency/default-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/taskdependency/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/taskdependency/default-cs1/app/main.ts %}
+{% include code-snippet/gantt/taskdependency/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -74,13 +74,13 @@ You can define an offset with various offset duration units for predecessors by 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/taskdependency/durationunits-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/taskdependency/durationunits-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/taskdependency/durationunits-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/taskdependency/durationunits-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/taskdependency/durationunits-cs1/app/main.ts %}
+{% include code-snippet/gantt/taskdependency/durationunits-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -92,13 +92,13 @@ By default, the dependency offsets are automatically updated in the Gantt chart 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/taskdependency/durationunits-cs2/app/app.component.ts %}
+{% include code-snippet/gantt/taskdependency/durationunits-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/taskdependency/durationunits-cs2/app/app.module.ts %}
+{% include code-snippet/gantt/taskdependency/durationunits-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/taskdependency/durationunits-cs2/app/main.ts %}
+{% include code-snippet/gantt/taskdependency/durationunits-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -126,13 +126,13 @@ The following sample explains enabling the `respectLink` validation mode while e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/taskdependency/predecessor-links-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/taskdependency/predecessor-links-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/taskdependency/predecessor-links-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/taskdependency/predecessor-links-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/taskdependency/predecessor-links-cs1/app/main.ts %}
+{% include code-snippet/gantt/taskdependency/predecessor-links-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -159,13 +159,13 @@ The following code example shows how to enable the predecessor validation dialog
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/taskdependency/validation-dialog-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/taskdependency/validation-dialog-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/taskdependency/validation-dialog-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/taskdependency/validation-dialog-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/taskdependency/validation-dialog-cs1/app/main.ts %}
+{% include code-snippet/gantt/taskdependency/validation-dialog-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -177,13 +177,13 @@ By default, mapping the dependency field in taskFields displays dependency lines
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/taskdependency/showhide-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/taskdependency/showhide-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/taskdependency/showhide-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/taskdependency/showhide-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/taskdependency/showhide-cs1/app/main.ts %}
+{% include code-snippet/gantt/taskdependency/showhide-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

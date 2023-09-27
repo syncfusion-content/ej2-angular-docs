@@ -18,13 +18,13 @@ The template expression should be provided inside the `${...}` interpolation syn
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tree-view/template-cs1/app/app.component.ts %}
+{% include code-snippet/tree-view/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tree-view/template-cs1/app/app.module.ts %}
+{% include code-snippet/tree-view/template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tree-view/template-cs1/app/main.ts %}
+{% include code-snippet/tree-view/template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

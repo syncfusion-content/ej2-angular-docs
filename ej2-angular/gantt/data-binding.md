@@ -38,13 +38,13 @@ The following code example shows how to bind the hierarchical local data into th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/data-binding/hierarchydata-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/data-binding/hierarchydata-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/data-binding/hierarchydata-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/data-binding/hierarchydata-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/data-binding/hierarchydata-cs1/app/main.ts %}
+{% include code-snippet/gantt/data-binding/hierarchydata-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ The Gantt component can be bound with self-referential data by mapping the data 
 * Parent ID field: This field contains values that indicate parent tasks and it is mapped to the [`parentID`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#parentid) property.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/data-binding/flatdata-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/data-binding/flatdata-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/data-binding/flatdata-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/data-binding/flatdata-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/data-binding/flatdata-cs1/app/main.ts %}
+{% include code-snippet/gantt/data-binding/flatdata-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -76,13 +76,13 @@ To bind remote data to the Gantt component, assign service data as an instance o
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/data-binding/remotedata-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/data-binding/remotedata-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/data-binding/remotedata-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/data-binding/remotedata-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/data-binding/remotedata-cs1/app/main.ts %}
+{% include code-snippet/gantt/data-binding/remotedata-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -632,13 +632,13 @@ The argument passed to the `actionFailure` event contains the error details retu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/data-binding/actionFailure-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/data-binding/actionFailure-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/data-binding/actionFailure-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/data-binding/actionFailure-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/data-binding/actionFailure-cs1/app/main.ts %}
+{% include code-snippet/gantt/data-binding/actionFailure-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -650,13 +650,13 @@ You can use Gantt [`dataSource`](https://ej2.syncfusion.com/angular/documentatio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/data-binding/bindajax-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/data-binding/bindajax-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/data-binding/bindajax-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/data-binding/bindajax-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/data-binding/bindajax-cs1/app/main.ts %}
+{% include code-snippet/gantt/data-binding/bindajax-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -689,13 +689,13 @@ To split a task at load time in hierarchical way, we need to define the segment 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/data-binding/split-task-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/data-binding/split-task-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/data-binding/split-task-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/data-binding/split-task-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/data-binding/split-task-cs1/app/main.ts %}
+{% include code-snippet/gantt/data-binding/split-task-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -721,13 +721,13 @@ We can also define segment details as a flat data and this collection can be map
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/data-binding/split-selfreferential-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/data-binding/split-selfreferential-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/data-binding/split-selfreferential-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/data-binding/split-selfreferential-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/data-binding/split-selfreferential-cs1/app/main.ts %}
+{% include code-snippet/gantt/data-binding/split-selfreferential-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -741,13 +741,13 @@ The [`autoCalculateDateScheduling`](https://ej2.syncfusion.com/angular/documenta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/virtual-scroll-cs2/app/app.component.ts %}
+{% include code-snippet/gantt/virtual-scroll-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/virtual-scroll-cs2/app/app.module.ts %}
+{% include code-snippet/gantt/virtual-scroll-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/virtual-scroll-cs2/app/main.ts %}
+{% include code-snippet/gantt/virtual-scroll-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

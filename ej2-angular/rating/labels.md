@@ -14,13 +14,13 @@ You can use the [`showLabel`](https://ej2.syncfusion.com/angular/documentation/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/labels/showlabel-cs/app/app.component.ts %}
+{% include code-snippet/rating/labels/showlabel-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/labels/showlabel-cs/app/app.module.ts %}
+{% include code-snippet/rating/labels/showlabel-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/labels/showlabel-cs/app/main.ts %}
+{% include code-snippet/rating/labels/showlabel-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -39,13 +39,13 @@ The following label positions are supported:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/labels/label-position-cs/app/app.component.ts %}
+{% include code-snippet/rating/labels/label-position-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/labels/label-position-cs/app/app.module.ts %}
+{% include code-snippet/rating/labels/label-position-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/labels/label-position-cs/app/main.ts %}
+{% include code-snippet/rating/labels/label-position-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,13 +57,13 @@ You can use the [`labelTemplate`](https://ej2.syncfusion.com/angular/documentati
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/labels/label-template-cs/app/app.component.ts %}
+{% include code-snippet/rating/labels/label-template-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/labels/label-template-cs/app/app.module.ts %}
+{% include code-snippet/rating/labels/label-template-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/labels/label-template-cs/app/main.ts %}
+{% include code-snippet/rating/labels/label-template-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

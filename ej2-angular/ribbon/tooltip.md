@@ -188,19 +188,19 @@ You can use the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/TooltipCustomization/app/app.component.ts %}
+{% include code-snippet/ribbon/TooltipCustomization/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/TooltipCustomization/app/app.module.ts %}
+{% include code-snippet/ribbon/TooltipCustomization/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/TooltipCustomization/app/main.ts %}
+{% include code-snippet/ribbon/TooltipCustomization/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/TooltipCustomization/app/app.component.html %}
+{% include code-snippet/ribbon/TooltipCustomization/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/ribbon/TooltipCustomization/app/app.component.css %}
+{% include code-snippet/ribbon/TooltipCustomization/src/app.component.css %}
 {% endhighlight %}
 {% endtabs %}
   

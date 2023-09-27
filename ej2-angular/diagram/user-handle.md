@@ -39,13 +39,13 @@ The appearance of the user handle can be customized by using the [`size`](https:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/interaction/userhandle-cs2/app/app.component.ts %}
+{% include code-snippet/diagram/interaction/userhandle-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/interaction/userhandle-cs2/app/app.module.ts %}
+{% include code-snippet/diagram/interaction/userhandle-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/interaction/userhandle-cs2/app/main.ts %}
+{% include code-snippet/diagram/interaction/userhandle-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -61,13 +61,13 @@ To create fixed user handles, define and add them to the collection of nodes and
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/interaction/fixeduserhandle-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/interaction/fixeduserhandle-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/interaction/fixeduserhandle-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/interaction/fixeduserhandle-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/interaction/fixeduserhandle-cs1/app/main.ts %}
+{% include code-snippet/diagram/interaction/fixeduserhandle-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -103,13 +103,13 @@ The following code explains how to customize the appearance of the fixed user ha
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/interaction/customizingfixeduserhandle-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/interaction/customizingfixeduserhandle-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/interaction/customizingfixeduserhandle-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/interaction/customizingfixeduserhandle-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/interaction/customizingfixeduserhandle-cs1/app/main.ts %}
+{% include code-snippet/diagram/interaction/customizingfixeduserhandle-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -146,13 +146,13 @@ The following code explains how to customize the node fixed user handle.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/interaction/nodefixeduserhandle-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/interaction/nodefixeduserhandle-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/interaction/nodefixeduserhandle-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/interaction/nodefixeduserhandle-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/interaction/nodefixeduserhandle-cs1/app/main.ts %}
+{% include code-snippet/diagram/interaction/nodefixeduserhandle-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -199,13 +199,13 @@ The following code explains how to customize the connector fixed user handle.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/interaction/connectorfixeduserhandle-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/interaction/connectorfixeduserhandle-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/interaction/connectorfixeduserhandle-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/interaction/connectorfixeduserhandle-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/interaction/connectorfixeduserhandle-cs1/app/main.ts %}
+{% include code-snippet/diagram/interaction/connectorfixeduserhandle-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

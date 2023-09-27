@@ -20,13 +20,13 @@ The Syncfusion's [`Draggable`](https://ej2.syncfusion.com/documentation/api/base
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/draggable-default-cs1/app/app.component.ts %}
+{% include code-snippet/common/draggable-default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/draggable-default-cs1/app/app.module.ts %}
+{% include code-snippet/common/draggable-default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/draggable-default-cs1/app/main.ts %}
+{% include code-snippet/common/draggable-default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ Syncfusion provides the option to create a clone of a draggable element while th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/clone-draggable/app/app.component.ts %}
+{% include code-snippet/common/clone-draggable/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/clone-draggable/app/app.module.ts %}
+{% include code-snippet/common/clone-draggable/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/clone-draggable/app/main.ts %}
+{% include code-snippet/common/clone-draggable/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ A drag area is a specific area within a user interface that is designated for dr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/drag-area/app/app.component.ts %}
+{% include code-snippet/common/drag-area/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/drag-area/app/app.module.ts %}
+{% include code-snippet/common/drag-area/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/drag-area/app/main.ts %}
+{% include code-snippet/common/drag-area/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -78,13 +78,13 @@ Refer to the following code snippet to enable droppable zones.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/drag-drop-action-cs1/app/app.component.ts %}
+{% include code-snippet/common/drag-drop-action-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/drag-drop-action-cs1/app/app.module.ts %}
+{% include code-snippet/common/drag-drop-action-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/drag-drop-action-cs1/app/main.ts %}
+{% include code-snippet/common/drag-drop-action-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

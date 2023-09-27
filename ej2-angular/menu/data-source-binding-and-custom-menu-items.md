@@ -25,13 +25,13 @@ The Menu can generate its menu items through an array of complex data source by 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/menu/data-binding-cs1/app/app.component.ts %}
+{% include code-snippet/menu/data-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/menu/data-binding-cs1/app/app.module.ts %}
+{% include code-snippet/menu/data-binding-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/menu/data-binding-cs1/app/main.ts %}
+{% include code-snippet/menu/data-binding-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -46,13 +46,13 @@ The following example displays five employees' **FirstName** from **Employees** 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/menu/data-service-cs1/app/app.component.ts %}
+{% include code-snippet/menu/data-service-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/menu/data-service-cs1/app/app.module.ts %}
+{% include code-snippet/menu/data-service-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/menu/data-service-cs1/app/main.ts %}
+{% include code-snippet/menu/data-service-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ In the following example, the **id**, **pId**, and **text** columns from self-re
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/menu/getting-started-cs2/app/app.component.ts %}
+{% include code-snippet/menu/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/menu/getting-started-cs2/app/app.module.ts %}
+{% include code-snippet/menu/getting-started-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/menu/getting-started-cs2/app/main.ts %}
+{% include code-snippet/menu/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -91,13 +91,13 @@ In the following example, the menu has been rendered with customized menu items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/menu/custom-menu-items-cs1/app/app.component.ts %}
+{% include code-snippet/menu/custom-menu-items-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/menu/custom-menu-items-cs1/app/app.module.ts %}
+{% include code-snippet/menu/custom-menu-items-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/menu/custom-menu-items-cs1/app/main.ts %}
+{% include code-snippet/menu/custom-menu-items-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

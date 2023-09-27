@@ -16,13 +16,13 @@ The following code example demonstrates how to filter the tree nodes in a TreeVi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tree-view/filtering-cs1/app/app.component.ts %}
+{% include code-snippet/tree-view/filtering-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tree-view/filtering-cs1/app/app.module.ts %}
+{% include code-snippet/tree-view/filtering-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tree-view/filtering-cs1/app/main.ts %}
+{% include code-snippet/tree-view/filtering-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

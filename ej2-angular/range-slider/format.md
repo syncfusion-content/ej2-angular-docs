@@ -18,13 +18,13 @@ The `format` feature used to customize the units of Slider values to desired for
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/format-01-cs1/app/app.component.ts %}
+{% include code-snippet/slider/format-01-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/format-01-cs1/app/app.module.ts %}
+{% include code-snippet/slider/format-01-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/format-01-cs1/app/main.ts %}
+{% include code-snippet/slider/format-01-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ In this method, we have different predefined formatting styles like Numeric (N),
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/format-02-cs1/app/app.component.ts %}
+{% include code-snippet/slider/format-02-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/format-02-cs1/app/app.module.ts %}
+{% include code-snippet/slider/format-02-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/format-02-cs1/app/main.ts %}
+{% include code-snippet/slider/format-02-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -55,13 +55,13 @@ In this sample we have customized the `ticks` values into weekdays as one format
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/format-03-cs1/app/app.component.ts %}
+{% include code-snippet/slider/format-03-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/format-03-cs1/app/app.module.ts %}
+{% include code-snippet/slider/format-03-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/format-03-cs1/app/main.ts %}
+{% include code-snippet/slider/format-03-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

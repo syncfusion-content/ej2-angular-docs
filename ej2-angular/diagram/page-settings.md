@@ -26,13 +26,13 @@ Page settings enable to customize the appearance, width, and height of the diagr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/pagesettings/pagesettings-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/pagesettings/pagesettings-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/pagesettings/pagesettings-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/pagesettings/pagesettings-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/pagesettings/pagesettings-cs1/app/main.ts %}
+{% include code-snippet/diagram/pagesettings/pagesettings-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -46,13 +46,13 @@ The following code illustrates how to stretch and align the background image.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/pagesettings/background-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/pagesettings/background-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/pagesettings/background-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/pagesettings/background-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/pagesettings/background-cs1/app/main.ts %}
+{% include code-snippet/diagram/pagesettings/background-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -68,13 +68,13 @@ The following code illustrates how to enable multiple page and page break lines.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/pagesettings/pagebreak-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/pagesettings/pagebreak-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/pagesettings/pagebreak-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/pagesettings/pagebreak-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/pagesettings/pagebreak-cs1/app/main.ts %}
+{% include code-snippet/diagram/pagesettings/pagebreak-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -88,13 +88,13 @@ The following code example illustrates how to define boundary constraints with r
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/pagesettings/boundary-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/pagesettings/boundary-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/pagesettings/boundary-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/pagesettings/boundary-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/pagesettings/boundary-cs1/app/main.ts %}
+{% include code-snippet/diagram/pagesettings/boundary-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

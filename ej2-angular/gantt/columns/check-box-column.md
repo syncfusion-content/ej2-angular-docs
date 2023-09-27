@@ -14,13 +14,13 @@ To render boolean values as checkbox in columns, you need to set [`displayAsChec
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/checkbox-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/checkbox-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/checkbox-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/checkbox-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/checkbox-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/checkbox-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -32,13 +32,13 @@ You can enable or disable gantt action for a particular column by setting the [`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/gridactions-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/gridactions-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/gridactions-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/gridactions-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/gridactions-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/gridactions-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -37,13 +37,13 @@ The following table shows built-in toolbar items and its actions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/toolbar/default-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/toolbar/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/toolbar/default-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/toolbar/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/toolbar/default-cs1/app/main.ts %}
+{% include code-snippet/gantt/toolbar/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,13 +60,13 @@ By default, the custom toolbar items are at left position. You can change the po
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/toolbar/custom-toolbar-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/toolbar/custom-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/toolbar/custom-toolbar-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/toolbar/custom-toolbar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/toolbar/custom-toolbar-cs1/app/main.ts %}
+{% include code-snippet/gantt/toolbar/custom-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -83,13 +83,13 @@ In the following example, the `ExpandAll` and `CollapseAll` are built-in toolbar
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/toolbar/builtin-custom-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/toolbar/builtin-custom-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/toolbar/builtin-custom-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/toolbar/builtin-custom-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/toolbar/builtin-custom-cs1/app/main.ts %}
+{% include code-snippet/gantt/toolbar/builtin-custom-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -101,13 +101,13 @@ You can enable or disable the toolbar items by using the `enableItems` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/toolbar/enable-disable-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/toolbar/enable-disable-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/toolbar/enable-disable-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/toolbar/enable-disable-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/toolbar/enable-disable-cs1/app/main.ts %}
+{% include code-snippet/gantt/toolbar/enable-disable-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -119,13 +119,13 @@ In the Gantt toolbar, you can add EJ2 editor elements like numeric text box, dro
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/toolbar/input-elements-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/toolbar/input-elements-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/toolbar/input-elements-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/toolbar/input-elements-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/toolbar/input-elements-cs1/app/main.ts %}
+{% include code-snippet/gantt/toolbar/input-elements-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

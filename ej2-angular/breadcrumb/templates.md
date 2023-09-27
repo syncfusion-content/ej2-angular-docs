@@ -18,13 +18,13 @@ In the following example, Shopping Cart details are used as breadcrumb Items and
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/breadcrumb/template-cs1/app/app.component.ts %}
+{% include code-snippet/breadcrumb/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/template-cs1/app/app.module.ts %}
+{% include code-snippet/breadcrumb/template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/breadcrumb/template-cs1/app/main.ts %}
+{% include code-snippet/breadcrumb/template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ In the  following example, the separators are customized with icons using `separ
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/breadcrumb/template-cs2/app/app.component.ts %}
+{% include code-snippet/breadcrumb/template-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/template-cs2/app/app.module.ts %}
+{% include code-snippet/breadcrumb/template-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/breadcrumb/template-cs2/app/main.ts %}
+{% include code-snippet/breadcrumb/template-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ The specific breadcrumb item can be customizable using itemTemplate with conditi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/breadcrumb/template-cs3/app/app.component.ts %}
+{% include code-snippet/breadcrumb/template-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/template-cs3/app/app.module.ts %}
+{% include code-snippet/breadcrumb/template-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/breadcrumb/template-cs3/app/main.ts %}
+{% include code-snippet/breadcrumb/template-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

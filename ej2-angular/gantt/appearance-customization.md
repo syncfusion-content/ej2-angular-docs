@@ -18,13 +18,13 @@ The height of child taskbars and parent taskbars can be customized by using [`ta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/appearance-customization/taskbar-height-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/appearance-customization/taskbar-height-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/taskbar-height-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/appearance-customization/taskbar-height-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/appearance-customization/taskbar-height-cs1/app/main.ts %}
+{% include code-snippet/gantt/appearance-customization/taskbar-height-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ The default taskbar UI can be replaced with custom templates by using the [`quer
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/appearance-customization/formatting-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/appearance-customization/formatting-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/formatting-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/appearance-customization/formatting-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/appearance-customization/formatting-cs1/app/main.ts %}
+{% include code-snippet/gantt/appearance-customization/formatting-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -57,13 +57,13 @@ You can change the gripper icon in the taskbar by applying styles to their respe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/appearance-customization/change-gripper-icon-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/appearance-customization/change-gripper-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/change-gripper-icon-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/appearance-customization/change-gripper-icon-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/appearance-customization/change-gripper-icon-cs1/app/main.ts %}
+{% include code-snippet/gantt/appearance-customization/change-gripper-icon-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -75,13 +75,13 @@ The Gantt component maps any data source fields to task labels using the [`label
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/appearance-customization/tasklabeltemplate-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/appearance-customization/tasklabeltemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/tasklabeltemplate-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/appearance-customization/tasklabeltemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/appearance-customization/tasklabeltemplate-cs1/app/main.ts %}
+{% include code-snippet/gantt/appearance-customization/tasklabeltemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -93,13 +93,13 @@ The width and background color of connector lines in Gantt can be customized usi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/appearance-customization/dependency-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/appearance-customization/dependency-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/dependency-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/appearance-customization/dependency-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/appearance-customization/dependency-cs1/app/main.ts %}
+{% include code-snippet/gantt/appearance-customization/dependency-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -111,13 +111,13 @@ While rendering the TreeGrid part in Gantt, the [`rowDataBound`](https://ej2.syn
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/appearance-customization/customize-row-cells-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/appearance-customization/customize-row-cells-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/customize-row-cells-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/appearance-customization/customize-row-cells-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/appearance-customization/customize-row-cells-cs1/app/main.ts %}
+{% include code-snippet/gantt/appearance-customization/customize-row-cells-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -140,13 +140,13 @@ The following code example shows how to change the gridlines rendering mode in t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/appearance-customization/gridlines-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/appearance-customization/gridlines-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/gridlines-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/appearance-customization/gridlines-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/appearance-customization/gridlines-cs1/app/main.ts %}
+{% include code-snippet/gantt/appearance-customization/gridlines-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -162,13 +162,13 @@ In the Gantt component, the Splitter separates the TreeGrid section from the Cha
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/appearance-customization/changesplitter/initial-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/appearance-customization/changesplitter/initial-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/changesplitter/initial-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/appearance-customization/changesplitter/initial-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/appearance-customization/changesplitter/initial-cs1/app/main.ts %}
+{% include code-snippet/gantt/appearance-customization/changesplitter/initial-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -180,13 +180,13 @@ In Gantt, we can change the splitter position dynamically by using [`setSplitter
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/appearance-customization/changesplitter/dynamic-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/appearance-customization/changesplitter/dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/changesplitter/dynamic-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/appearance-customization/changesplitter/dynamic-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/appearance-customization/changesplitter/dynamic-cs1/app/main.ts %}
+{% include code-snippet/gantt/appearance-customization/changesplitter/dynamic-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
