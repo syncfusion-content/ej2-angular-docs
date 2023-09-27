@@ -16,13 +16,13 @@ Refer to the following code example to enable the cell selection in Gantt.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/selection/cell-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/selection/cell-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/cell-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/selection/cell-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/selection/cell-cs1/app/main.ts %}
+{% include code-snippet/gantt/selection/cell-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ You can select multiple cells by setting the [`selectionSettings.type`](https://
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/selection/multiplecell-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/selection/multiplecell-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/multiplecell-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/selection/multiplecell-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/selection/multiplecell-cs1/app/main.ts %}
+{% include code-snippet/gantt/selection/multiplecell-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -52,13 +52,13 @@ You can select a cell dynamically using the [`selectCell`](https://ej2.syncfusio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/selection/selectcell-dynamic-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/selection/selectcell-dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/selectcell-dynamic-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/selection/selectcell-dynamic-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/selection/selectcell-dynamic-cs1/app/main.ts %}
+{% include code-snippet/gantt/selection/selectcell-dynamic-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ While selecting a cell in Gantt, the [`cellSelecting`](https://ej2.syncfusion.co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/selection/customize-cellselection-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/selection/customize-cellselection-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/customize-cellselection-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/selection/customize-cellselection-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/selection/customize-cellselection-cs1/app/main.ts %}
+{% include code-snippet/gantt/selection/customize-cellselection-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

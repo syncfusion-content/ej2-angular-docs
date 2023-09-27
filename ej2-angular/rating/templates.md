@@ -25,13 +25,13 @@ If the `fullTemplate` is not defined, the `emptyTemplate` will be used as the de
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/templates/emptytemplate-cs/app/app.component.ts %}
+{% include code-snippet/rating/templates/emptytemplate-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/templates/emptytemplate-cs/app/app.module.ts %}
+{% include code-snippet/rating/templates/emptytemplate-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/templates/emptytemplate-cs/app/main.ts %}
+{% include code-snippet/rating/templates/emptytemplate-cs/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.css" %}
 {% include code-snippet/rating/templates/emptytemplate-cs/index.css %}
@@ -49,13 +49,13 @@ The `value` and `index` are available in the template context for accessing info
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/templates/fulltemplate-cs/app/app.component.ts %}
+{% include code-snippet/rating/templates/fulltemplate-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/templates/fulltemplate-cs/app/app.module.ts %}
+{% include code-snippet/rating/templates/fulltemplate-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/templates/fulltemplate-cs/app/main.ts %}
+{% include code-snippet/rating/templates/fulltemplate-cs/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.css" %}
 {% include code-snippet/rating/templates/fulltemplate-cs/index.css %}
@@ -70,13 +70,13 @@ You can use emojis of your choice as rating symbol by specifying them as templat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/templates/emoji-cs/app/app.component.ts %}
+{% include code-snippet/rating/templates/emoji-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/templates/emoji-cs/app/app.module.ts %}
+{% include code-snippet/rating/templates/emoji-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/templates/emoji-cs/app/main.ts %}
+{% include code-snippet/rating/templates/emoji-cs/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.css" %}
 {% include code-snippet/rating/templates/emoji-cs/index.css %}
@@ -91,13 +91,13 @@ You can use SVG icons of your choice as rating symbol by specifying them as temp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/templates/svg-cs/app/app.component.ts %}
+{% include code-snippet/rating/templates/svg-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/templates/svg-cs/app/app.module.ts %}
+{% include code-snippet/rating/templates/svg-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/templates/svg-cs/app/main.ts %}
+{% include code-snippet/rating/templates/svg-cs/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.css" %}
 {% include code-snippet/rating/templates/svg-cs/index.css %}
@@ -112,13 +112,13 @@ You can use PNG images of your choice as rating symbol by specifying them as tem
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/templates/png-cs/app/app.component.ts %}
+{% include code-snippet/rating/templates/png-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/templates/png-cs/app/app.module.ts %}
+{% include code-snippet/rating/templates/png-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/templates/png-cs/app/main.ts %}
+{% include code-snippet/rating/templates/png-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

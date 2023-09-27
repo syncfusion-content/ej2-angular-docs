@@ -38,13 +38,13 @@ The following are the list of keys and its values used in the uploader.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/uploader-cs11/app/app.component.ts %}
+{% include code-snippet/uploader/uploader-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs11/app/app.module.ts %}
+{% include code-snippet/uploader/uploader-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/uploader-cs11/app/main.ts %}
+{% include code-snippet/uploader/uploader-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

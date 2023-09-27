@@ -30,13 +30,13 @@ The user can enable touch mode (bigger) for a component by adding the `e-bigger`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/size-modes/app/app.component.ts %}
+{% include code-snippet/common/size-modes/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/size-modes/app/app.module.ts %}
+{% include code-snippet/common/size-modes/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/size-modes/app/main.ts %}
+{% include code-snippet/common/size-modes/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -48,13 +48,13 @@ The user can change the size mode of the application between touch and normal (m
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/size-modes-app/app/app.component.ts %}
+{% include code-snippet/common/size-modes-src/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/size-modes-app/app/app.module.ts %}
+{% include code-snippet/common/size-modes-src/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/size-modes-app/app/main.ts %}
+{% include code-snippet/common/size-modes-src/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ The user can change the size mode of a component between touch and normal (mouse
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/size-modes-cp/app/app.component.ts %}
+{% include code-snippet/common/size-modes-cp/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/size-modes-cp/app/app.module.ts %}
+{% include code-snippet/common/size-modes-cp/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/size-modes-cp/app/main.ts %}
+{% include code-snippet/common/size-modes-cp/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

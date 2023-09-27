@@ -24,13 +24,13 @@ Axis labels are used to denote what kind of data is bound for smithchart. Using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs8/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs8/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs8/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -51,13 +51,13 @@ We can customize following things, in major as well as minor gridlines.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs9/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs9/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs9/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -73,13 +73,13 @@ As name suggests that, it is a line in smithchart that can be configured to deno
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs10/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs10/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs10/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

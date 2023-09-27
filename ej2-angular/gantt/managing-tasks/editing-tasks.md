@@ -28,13 +28,13 @@ The following code example demonstrates how to enable cell editing in the Gantt 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/celledit-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/celledit-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/celledit-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/celledit-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/celledit-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/celledit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -48,13 +48,13 @@ Modify the task details through the edit dialog by setting the edit [`mode`](htt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/dialogedit-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/dialogedit-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/dialogedit-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/dialogedit-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/dialogedit-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/dialogedit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -68,13 +68,13 @@ In the Gantt dialog, you can define the required tabs or editing sections using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/addedit-tab-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/addedit-tab-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/addedit-tab-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/addedit-tab-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/addedit-tab-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/addedit-tab-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,13 +86,13 @@ In the Gantt dialog, you can make only specific data source fields visible for e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/addedit-field-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/addedit-field-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/addedit-field-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/addedit-field-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/addedit-field-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/addedit-field-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

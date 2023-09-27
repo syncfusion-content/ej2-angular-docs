@@ -42,13 +42,13 @@ The following example demonstrates how to prevent Gantt columns from persisting.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/column-prevent/default-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/column-prevent/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/column-prevent/default-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/column-prevent/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/column-prevent/default-cs1/app/main.ts %}
+{% include code-snippet/gantt/column-prevent/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ If you wish to restore all these column properties, then you can achieve it by c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/column-persist/default-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/column-persist/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/column-persist/default-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/column-persist/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/column-persist/default-cs1/app/main.ts %}
+{% include code-snippet/gantt/column-persist/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

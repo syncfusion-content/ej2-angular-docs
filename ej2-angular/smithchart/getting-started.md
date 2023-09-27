@@ -119,13 +119,13 @@ The below example shows a basic Smithchart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs1/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs1/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs1/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -171,13 +171,13 @@ Below sample demonstrate adding two series to smithchart both ways.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs2/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs2/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs2/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -190,13 +190,13 @@ API `visible` used to toggle the title.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs3/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs3/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs3/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -208,13 +208,13 @@ To use series marker and it's customization in smithchart, use series `marker`. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs4/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs4/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs4/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -226,13 +226,13 @@ To use marker dataLabel and it's customization in smithchart, use marker `dataLa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs5/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs5/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs5/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -244,13 +244,13 @@ Smithchart had a legend feature, which is used to denote the correspond series. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs6/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs6/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs6/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -262,13 +262,13 @@ Smithchart had a tooltip feature, which is used to show the current point's valu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs7/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs7/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs7/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

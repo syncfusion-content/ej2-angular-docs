@@ -18,13 +18,13 @@ In the following example, the **Europe** menu items are added before the **Ocean
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/menu/getting-started-cs8/app/app.component.ts %}
+{% include code-snippet/menu/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/menu/getting-started-cs8/app/app.module.ts %}
+{% include code-snippet/menu/getting-started-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/menu/getting-started-cs8/app/main.ts %}
+{% include code-snippet/menu/getting-started-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ In the following example, the **Directory** header item, **Conferences**, and **
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/menu/enable-disable-cs1/app/app.component.ts %}
+{% include code-snippet/menu/enable-disable-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/menu/enable-disable-cs1/app/app.module.ts %}
+{% include code-snippet/menu/enable-disable-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/menu/enable-disable-cs1/app/main.ts %}
+{% include code-snippet/menu/enable-disable-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ In the following example, the **Movies** header item, **Workshops**, and **Music
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/menu/enable-disable-cs2/app/app.component.ts %}
+{% include code-snippet/menu/enable-disable-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/menu/enable-disable-cs2/app/app.module.ts %}
+{% include code-snippet/menu/enable-disable-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/menu/enable-disable-cs2/app/main.ts %}
+{% include code-snippet/menu/enable-disable-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

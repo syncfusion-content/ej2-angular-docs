@@ -6,13 +6,16 @@ import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [selectedRowIndex]=1 [selectionSettings]='selectionOptions' height='315px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
+    template: `<ejs-grid [dataSource]='data' [selectedRowIndex]=1 
+               [selectionSettings]='selectionOptions' height='315px'>
+                    <e-columns>
+                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' 
+                        width=120></e-column>
+                        <e-column field='CustomerID' headerText='Customer ID' width=150>
+                        </e-column>
+                        <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                        <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                    </e-columns>
                 </ejs-grid>`
 })
 export class AppComponent implements OnInit {
@@ -22,7 +25,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = data;
-        this.selectionOptions = { type: 'Multiple', mode: 'Both' };
+        this.selectionOptions = { type: 'Multiple', mode: 'Row' };
     }
 }
 

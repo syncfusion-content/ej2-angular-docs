@@ -14,13 +14,13 @@ The Gantt component contains two tiers layout in timeline, you can customize the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/timeline/top-bottom-tier-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/timeline/top-bottom-tier-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/timeline/top-bottom-tier-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/timeline/top-bottom-tier-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/timeline/top-bottom-tier-cs1/app/main.ts %}
+{% include code-snippet/gantt/timeline/top-bottom-tier-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -32,13 +32,13 @@ In the Gantt component, the timeline cells in top and bottom tiers can be combin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/timeline/combine-cells-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/timeline/combine-cells-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/timeline/combine-cells-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/timeline/combine-cells-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/timeline/combine-cells-cs1/app/main.ts %}
+{% include code-snippet/gantt/timeline/combine-cells-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -50,13 +50,13 @@ In the Gantt component, you can format the value of top and bottom timeline cell
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/timeline/format-value-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/timeline/format-value-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/timeline/format-value-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/timeline/format-value-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/timeline/format-value-cs1/app/main.ts %}
+{% include code-snippet/gantt/timeline/format-value-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -68,13 +68,13 @@ In the Gantt component, you can define the width value of timeline cell using th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/timeline/cell-width-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/timeline/cell-width-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/timeline/cell-width-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/timeline/cell-width-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/timeline/cell-width-cs1/app/main.ts %}
+{% include code-snippet/gantt/timeline/cell-width-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

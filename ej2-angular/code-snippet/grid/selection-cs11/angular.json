@@ -15,13 +15,13 @@
           "options": {
             "outputPath": "dist",
             "index": "index.html",
-            "main": "src/main.ts",
+            "main": "app/main.ts",
             "tsConfig": "tsconfig.json",
             "scripts": [
               "./node_modules/zone.js/dist/zone.min.js"
             ],
             "styles": [
-              "src/styles.css"
+              "app/styles.css"
             ]
           },
           "configurations": {

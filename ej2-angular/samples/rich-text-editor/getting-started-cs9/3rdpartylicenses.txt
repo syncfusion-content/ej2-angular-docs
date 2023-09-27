@@ -73,6 +73,9 @@ SEE LICENSE IN license
 @syncfusion/ej2-navigations
 SEE LICENSE IN license
 
+@syncfusion/ej2-notifications
+SEE LICENSE IN license
+
 @syncfusion/ej2-pdf-export
 SEE LICENSE IN license
 

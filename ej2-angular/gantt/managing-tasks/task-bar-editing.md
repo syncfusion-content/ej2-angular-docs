@@ -14,13 +14,13 @@ Modify the task details through user interaction such as resizing and dragging t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/taskbaredit-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/taskbaredit-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/taskbaredit-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/taskbaredit-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/taskbaredit-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/taskbaredit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -32,13 +32,13 @@ On taskbar edit action, the [`taskbarEditing`](https://ej2.syncfusion.com/angula
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/prevent-taskbaredit-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/prevent-taskbaredit-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/prevent-taskbaredit-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/prevent-taskbaredit-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/prevent-taskbaredit-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/prevent-taskbaredit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ The following code example demonstrates how to enable task dependency editing in
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/dependencyedit-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/dependencyedit-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/dependencyedit-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/dependencyedit-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/dependencyedit-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/dependencyedit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -90,13 +90,13 @@ The tasks value can be dynamically updated by using the [`updateRecordById`](htt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/updaterecord-dynamic-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/updaterecord-dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/updaterecord-dynamic-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/updaterecord-dynamic-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/updaterecord-dynamic-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/updaterecord-dynamic-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -135,13 +135,13 @@ Edit Type |Component |Example
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/editParams-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/editParams-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/editParams-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/editParams-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/editParams-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/editParams-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -161,13 +161,13 @@ The cell edit template is used to create a custom component for a particular col
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/cellEditTemplate-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/cellEditTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/cellEditTemplate-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/cellEditTemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/cellEditTemplate-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/cellEditTemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -181,13 +181,13 @@ In the following demo, editing is disabled for the `TaskName` column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/disableedit-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/disableedit-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/disableedit-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/disableedit-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/disableedit-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/disableedit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

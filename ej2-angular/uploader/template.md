@@ -20,13 +20,13 @@ For example, you can display file type icon along with default UI elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/template-cs1/app/app.component.ts %}
+{% include code-snippet/uploader/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/template-cs1/app/app.module.ts %}
+{% include code-snippet/uploader/template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/template-cs1/app/main.ts %}
+{% include code-snippet/uploader/template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -45,13 +45,13 @@ Refer to the following code sample.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/cus_template-cs1/app/app.component.ts %}
+{% include code-snippet/uploader/cus_template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/cus_template-cs1/app/app.module.ts %}
+{% include code-snippet/uploader/cus_template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/cus_template-cs1/app/main.ts %}
+{% include code-snippet/uploader/cus_template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

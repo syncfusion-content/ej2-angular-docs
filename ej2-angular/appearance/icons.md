@@ -99,13 +99,13 @@ The following steps explain the direct rendering of the Syncfusion icon in the H
 
     {% tabs %}
     {% highlight ts tabtitle="app.component.ts" %}
-    {% include code-snippet/common/icons/app/app.component.ts %}
+    {% include code-snippet/common/icons/src/app.component.ts %}
     {% endhighlight %}
     {% highlight ts tabtitle="app.module.ts" %}
-    {% include code-snippet/common/icons/app/app.module.ts %}
+    {% include code-snippet/common/icons/src/app.module.ts %}
     {% endhighlight %}
     {% highlight ts tabtitle="main.ts" %}
-    {% include code-snippet/common/icons/app/main.ts %}
+    {% include code-snippet/common/icons/src/main.ts %}
     {% endhighlight %}
     {% endtabs %}
   
@@ -130,13 +130,13 @@ The pre-defined icon size is present in the available classes listed below.
 
     {% tabs %}
     {% highlight ts tabtitle="app.component.ts" %}
-    {% include code-snippet/common/icons-size/app/app.component.ts %}
+    {% include code-snippet/common/icons-size/src/app.component.ts %}
     {% endhighlight %}
     {% highlight ts tabtitle="app.module.ts" %}
-    {% include code-snippet/common/icons-size/app/app.module.ts %}
+    {% include code-snippet/common/icons-size/src/app.module.ts %}
     {% endhighlight %}
     {% highlight ts tabtitle="main.ts" %}
-    {% include code-snippet/common/icons-size/app/main.ts %}
+    {% include code-snippet/common/icons-size/src/main.ts %}
     {% endhighlight %}
     {% endtabs %}
   
@@ -148,13 +148,13 @@ The Syncfusion Angular icons can be customized with custom color and size by ove
 
     {% tabs %}
     {% highlight ts tabtitle="app.component.ts" %}
-    {% include code-snippet/common/icons-customization/app/app.component.ts %}
+    {% include code-snippet/common/icons-customization/src/app.component.ts %}
     {% endhighlight %}
     {% highlight ts tabtitle="app.module.ts" %}
-    {% include code-snippet/common/icons-customization/app/app.module.ts %}
+    {% include code-snippet/common/icons-customization/src/app.module.ts %}
     {% endhighlight %}
     {% highlight ts tabtitle="main.ts" %}
-    {% include code-snippet/common/icons-customization/app/main.ts %}
+    {% include code-snippet/common/icons-customization/src/main.ts %}
     {% endhighlight %}
     {% endtabs %}
   

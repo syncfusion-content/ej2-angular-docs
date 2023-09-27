@@ -16,13 +16,13 @@ Title and subtitle is used to depicts the information about the data plotted in 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs30/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs30/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs30/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs30/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs30/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -34,13 +34,13 @@ Both title and subtitle of the smithchart can be trimmed if it exceeds the certa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs31/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs31/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs31/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs31/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs31/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs31/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

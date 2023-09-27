@@ -18,13 +18,13 @@ You can render smithchart to it's container size. To achieve this, you need to s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs11/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs11/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs11/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ In smithchart's width and height property, you can directly give values in pixel
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs12/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs12/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs12/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,13 +60,13 @@ You can also specify the width and height of the smithchart in percentage. If yo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs13/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs13/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs13/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs13/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

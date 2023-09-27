@@ -26,16 +26,16 @@ It is also adaptable to the available space when the tab items exceed the view s
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/tab/orientation-tab-cs1/app/app.component.html %}
+{% include code-snippet/tab/orientation-tab-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tab/orientation-tab-cs1/app/app.component.ts %}
+{% include code-snippet/tab/orientation-tab-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/orientation-tab-cs1/app/app.module.ts %}
+{% include code-snippet/tab/orientation-tab-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tab/orientation-tab-cs1/app/main.ts %}
+{% include code-snippet/tab/orientation-tab-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

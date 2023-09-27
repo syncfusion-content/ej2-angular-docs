@@ -31,13 +31,13 @@ The following example shows how to arrange the nodes in a hierarchical structure
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/hierarchicallayout-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/hierarchicallayout-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/hierarchicallayout-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/hierarchicallayout-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/hierarchicallayout-cs1/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/hierarchicallayout-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -55,13 +55,13 @@ The following code illustrates how to arrange the nodes in a radial tree structu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/radiallayout-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/radiallayout-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/radiallayout-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/radiallayout-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/radiallayout-cs1/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/radiallayout-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -75,13 +75,13 @@ The following code example illustrates how to create an organizational chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/organizationalchart-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/organizationalchart-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/organizationalchart-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/organizationalchart-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/organizationalchart-cs1/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/organizationalchart-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -96,13 +96,13 @@ Organizational chart layout starts parsing from root and iterate through all its
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/getlayoutinfo-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/getlayoutinfo-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/getlayoutinfo-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/getlayoutinfo-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/getlayoutinfo-cs1/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/getlayoutinfo-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -137,13 +137,13 @@ The following code example illustrates how to set the vertical right arrangement
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/illustration-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/illustration-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/illustration-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/illustration-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/illustration-cs1/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/illustration-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -157,13 +157,13 @@ The following code example illustrates how to add assistants to layout.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/assistant-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/assistant-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/assistant-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/assistant-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/assistant-cs1/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/assistant-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -210,13 +210,13 @@ The following code example illustrates how to create an mindmap layout
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/mindmap-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/mindmap-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/mindmap-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/mindmap-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/mindmap-cs1/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/mindmap-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -230,13 +230,13 @@ The following code example illustrates how to create a complex hierarchical tree
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/complexhiertree-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/complexhiertree-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/complexhiertree-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/complexhiertree-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/complexhiertree-cs1/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/complexhiertree-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -254,13 +254,13 @@ The following code example illustrates how to create a complex hierarchical tree
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/linedistribution-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/linedistribution-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/linedistribution-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/linedistribution-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/linedistribution-cs1/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/linedistribution-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -331,13 +331,13 @@ The following code illustrates how to align the layout at the top-left of the la
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/alignment-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/alignment-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/alignment-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/alignment-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/alignment-cs1/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/alignment-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -355,13 +355,13 @@ The following code illustrates how to set the layout margin.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/spacing-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/spacing-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/spacing-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/spacing-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/spacing-cs1/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/spacing-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -386,13 +386,13 @@ The following code illustrates how to arrange the nodes in a BottomToTop orienta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/spacing-cs2/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/spacing-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/spacing-cs2/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/spacing-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/spacing-cs2/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/spacing-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -404,13 +404,13 @@ Layout provides support to arrange the nodes with reference to the position of a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/fixed-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/fixed-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/fixed-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/fixed-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/fixed-cs1/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/fixed-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -422,13 +422,13 @@ Diagram allows to expand/collapse the subtrees of a layout. The node’s isExpan
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/expandandcollapse-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/expandandcollapse-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/expandandcollapse-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/expandandcollapse-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/expandandcollapse-cs1/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/expandandcollapse-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -446,13 +446,13 @@ Diagram allows to refresh the layout at runtime. To refresh the layout, refer to
 
  {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/automaticlayout/nodetemplate-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/automaticlayout/nodetemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/automaticlayout/nodetemplate-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/automaticlayout/nodetemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/automaticlayout/nodetemplate-cs1/app/main.ts %}
+{% include code-snippet/diagram/automaticlayout/nodetemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

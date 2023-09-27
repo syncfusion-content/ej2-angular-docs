@@ -40,13 +40,13 @@ Refer to the following snippet to enable the limits in the Slider.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/default-limit-cs1/app/app.component.ts %}
+{% include code-snippet/slider/default-limit-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/default-limit-cs1/app/app.module.ts %}
+{% include code-snippet/slider/default-limit-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/default-limit-cs1/app/main.ts %}
+{% include code-snippet/slider/default-limit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -68,13 +68,13 @@ In the range slider, both handles can be restricted and locked from the limit's 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/range-limit-cs1/app/app.component.ts %}
+{% include code-snippet/slider/range-limit-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/range-limit-cs1/app/app.module.ts %}
+{% include code-snippet/slider/range-limit-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/range-limit-cs1/app/main.ts %}
+{% include code-snippet/slider/range-limit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -96,13 +96,13 @@ In this sample, the movement of both slider handles has been locked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/handle-lock-cs1/app/app.component.ts %}
+{% include code-snippet/slider/handle-lock-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/handle-lock-cs1/app/app.module.ts %}
+{% include code-snippet/slider/handle-lock-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/handle-lock-cs1/app/main.ts %}
+{% include code-snippet/slider/handle-lock-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

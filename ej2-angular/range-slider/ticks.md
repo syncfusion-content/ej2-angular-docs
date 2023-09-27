@@ -14,13 +14,13 @@ The Ticks in Slider supports you to easily identify the current value/values of 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/ticks-01-cs1/app/app.component.ts %}
+{% include code-snippet/slider/ticks-01-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/ticks-01-cs1/app/app.module.ts %}
+{% include code-snippet/slider/ticks-01-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/ticks-01-cs1/app/main.ts %}
+{% include code-snippet/slider/ticks-01-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -32,13 +32,13 @@ When the Slider is moved, it increases/decreases the value based on the step val
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/ticks-02-cs1/app/app.component.ts %}
+{% include code-snippet/slider/ticks-02-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/ticks-02-cs1/app/app.module.ts %}
+{% include code-snippet/slider/ticks-02-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/ticks-02-cs1/app/main.ts %}
+{% include code-snippet/slider/ticks-02-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -50,13 +50,13 @@ Enables the minimum/starting and maximum/ending value of the Slider, by using th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/ticks-03-cs1/app/app.component.ts %}
+{% include code-snippet/slider/ticks-03-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/ticks-03-cs1/app/app.module.ts %}
+{% include code-snippet/slider/ticks-03-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/ticks-03-cs1/app/main.ts %}
+{% include code-snippet/slider/ticks-03-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

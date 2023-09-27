@@ -18,13 +18,13 @@ For adding values in the smithchart, you can use either points or datasource in 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs27/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs27/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs27/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs27/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs27/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs27/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ Using following options in series settings, you can customize each series in smi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs28/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs28/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs28/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs28/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs28/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs28/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

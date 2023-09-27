@@ -29,13 +29,13 @@ The below code snippet explains the mapping of duration unit data source field t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/mapping-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/scheduling-tasks/mapping-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/mapping-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/scheduling-tasks/mapping-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/mapping-cs1/app/main.ts %}
+{% include code-snippet/gantt/scheduling-tasks/mapping-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -50,13 +50,13 @@ Duration units for the tasks can also be defined along with the duration values,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/durationfield-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/scheduling-tasks/durationfield-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/durationfield-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/scheduling-tasks/durationfield-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/durationfield-cs1/app/main.ts %}
+{% include code-snippet/gantt/scheduling-tasks/durationfield-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

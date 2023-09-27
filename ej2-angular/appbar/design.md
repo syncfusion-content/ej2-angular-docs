@@ -18,13 +18,13 @@ The following example depicts the code to provide spacing between the home and p
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/appbar/spacer-cs1/app/app.component.ts %}
+{% include code-snippet/appbar/spacer-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/spacer-cs1/app/app.module.ts %}
+{% include code-snippet/appbar/spacer-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/appbar/spacer-cs1/app/main.ts %}
+{% include code-snippet/appbar/spacer-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ The following example depicts the code to provide a vertical line between a grou
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/appbar/separator-cs1/app/app.component.ts %}
+{% include code-snippet/appbar/separator-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/separator-cs1/app/app.module.ts %}
+{% include code-snippet/appbar/separator-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/appbar/separator-cs1/app/main.ts %}
+{% include code-snippet/appbar/separator-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ Media Query is used to adjusting the AppBar for different screen sizes. Resize t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/appbar/media-cs1/app/app.component.ts %}
+{% include code-snippet/appbar/media-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/media-cs1/app/app.module.ts %}
+{% include code-snippet/appbar/media-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/appbar/media-cs1/app/main.ts %}
+{% include code-snippet/appbar/media-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -74,13 +74,13 @@ AppBar is rendered with a Menu component in its AppBar header area. Menu compone
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/appbar/menu-cs1/app/app.component.ts %}
+{% include code-snippet/appbar/menu-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/menu-cs1/app/app.module.ts %}
+{% include code-snippet/appbar/menu-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/appbar/menu-cs1/app/main.ts %}
+{% include code-snippet/appbar/menu-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -92,13 +92,13 @@ The AppBar is rendered with a Button and DropDownButton component in its AppBar 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/appbar/buttons-cs1/app/app.component.ts %}
+{% include code-snippet/appbar/buttons-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/buttons-cs1/app/app.module.ts %}
+{% include code-snippet/appbar/buttons-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/appbar/buttons-cs1/app/main.ts %}
+{% include code-snippet/appbar/buttons-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -110,13 +110,13 @@ The AppBar is rendered with the SideBar component below the AppBar. Click on the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/appbar/sidebar-cs1/app/app.component.ts %}
+{% include code-snippet/appbar/sidebar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/sidebar-cs1/app/app.module.ts %}
+{% include code-snippet/appbar/sidebar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/appbar/sidebar-cs1/app/main.ts %}
+{% include code-snippet/appbar/sidebar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

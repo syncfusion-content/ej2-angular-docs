@@ -18,13 +18,13 @@ We can maintain `zoomToFit` after editing actions(cell edit,dialog edit,taskbar 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/how-to/maintainzoomtofit-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/how-to/maintainzoomtofit-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/how-to/maintainzoomtofit-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/how-to/maintainzoomtofit-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/how-to/maintainzoomtofit-cs1/app/main.ts %}
+{% include code-snippet/gantt/how-to/maintainzoomtofit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ We can maintain `zoomToFit` after change dataSource dynamically, by calling [`fi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/how-to/maintainzoomtofitdatasource-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/how-to/maintainzoomtofitdatasource-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/how-to/maintainzoomtofitdatasource-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/how-to/maintainzoomtofitdatasource-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/how-to/maintainzoomtofitdatasource-cs1/app/main.ts %}
+{% include code-snippet/gantt/how-to/maintainzoomtofitdatasource-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

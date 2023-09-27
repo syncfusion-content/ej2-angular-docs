@@ -74,13 +74,13 @@ For the floating label enabled TextBox add the icon element as first or last ele
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/textbox/getting-started-cs1/app/app.component.ts %}
+{% include code-snippet/textbox/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/getting-started-cs1/app/app.module.ts %}
+{% include code-snippet/textbox/getting-started-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/getting-started-cs1/app/main.ts %}
+{% include code-snippet/textbox/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -98,13 +98,13 @@ You can add the clear button to the TextBox by `showClearButton` API in textbox
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/textbox/textbox-component-clearicons-cs1/app/app.component.ts %}
+{% include code-snippet/textbox/textbox-component-clearicons-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/textbox-component-clearicons-cs1/app/app.module.ts %}
+{% include code-snippet/textbox/textbox-component-clearicons-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/textbox-component-clearicons-cs1/app/main.ts %}
+{% include code-snippet/textbox/textbox-component-clearicons-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -122,13 +122,13 @@ Class Name        | Description
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/textbox/getting-started-cs2/app/app.component.ts %}
+{% include code-snippet/textbox/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/getting-started-cs2/app/app.module.ts %}
+{% include code-snippet/textbox/getting-started-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/getting-started-cs2/app/main.ts %}
+{% include code-snippet/textbox/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -142,13 +142,13 @@ Add the floating label support to the `multi-line input` by creating the floatin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/textbox/getting-started-cs3/app/app.component.ts %}
+{% include code-snippet/textbox/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/getting-started-cs3/app/app.module.ts %}
+{% include code-snippet/textbox/getting-started-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/textbox/getting-started-cs3/app/main.ts %}
+{% include code-snippet/textbox/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

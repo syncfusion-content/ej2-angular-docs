@@ -6,18 +6,25 @@ import { GridComponent, SelectionSettingsModel, FilterService, FilterSettingsMod
 
 @Component({
     selector: 'app-root',
-    template:`<ejs-grid #grid [dataSource]='data' [allowPaging]='true' [allowFiltering]='true' [allowSelection]='true' [selectionSettings]='selectionOptions' [editSettings]='editSettings' [toolbar]='toolbar' [pageSettings]='pageOptions' [filterSettings]='filterOptions' (rowDataBound)='rowDataBound($event)'>
-        <e-columns>
-            <e-column type='checkbox' width=120></e-column>
-            <e-column field='List' headerText='List' width=120></e-column>
-            <e-column field='OrderID' headerText='Order ID' isPrimaryKey='true' textAlign='Right' width=150></e-column>
-            <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-            <e-column field='EmployeeID' headerText='Employee ID' width=150></e-column>
-            <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-        </e-columns>
-    </ejs-grid>`,
-    providers: [FilterService, EditService, ToolbarService]
+    template:`<ejs-grid #grid [dataSource]='data' [allowPaging]='true' [allowFiltering]='true' 
+             [allowSelection]='true' [selectionSettings]='selectionOptions' 
+             [editSettings]='editSettings' [toolbar]='toolbar' 
+             [pageSettings]='pageOptions' [filterSettings]='filterOptions' 
+             (rowDataBound)='rowDataBound($event)'>
+                <e-columns>
+                    <e-column type='checkbox' width=120></e-column>
+                    <e-column field='List' headerText='List' width=120></e-column>
+                    <e-column field='OrderID' headerText='Order ID' isPrimaryKey='true' 
+                    textAlign='Right' width=150></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150>
+                    </e-column>
+                    <e-column field='EmployeeID' headerText='Employee ID' width=150>
+                    </e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                </e-columns>
+             </ejs-grid>`
 })
+
 export class AppComponent implements OnInit {
 
     public data?: object[];

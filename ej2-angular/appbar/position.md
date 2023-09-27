@@ -22,13 +22,13 @@ The top AppBar is the default one in which it positions the AppBar at the top of
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/appbar/top-cs1/app/app.component.ts %}
+{% include code-snippet/appbar/top-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/top-cs1/app/app.module.ts %}
+{% include code-snippet/appbar/top-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/appbar/top-cs1/app/main.ts %}
+{% include code-snippet/appbar/top-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ This position can be set to the AppBar by setting `Bottom` to the property [posi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/appbar/bottom-cs1/app/app.component.ts %}
+{% include code-snippet/appbar/bottom-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/bottom-cs1/app/app.module.ts %}
+{% include code-snippet/appbar/bottom-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/appbar/bottom-cs1/app/main.ts %}
+{% include code-snippet/appbar/bottom-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ This position can be set to the AppBar by setting `true` to the property [isStic
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/appbar/sticky-cs1/app/app.component.ts %}
+{% include code-snippet/appbar/sticky-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/sticky-cs1/app/app.module.ts %}
+{% include code-snippet/appbar/sticky-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/appbar/sticky-cs1/app/main.ts %}
+{% include code-snippet/appbar/sticky-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

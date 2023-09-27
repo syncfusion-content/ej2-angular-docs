@@ -162,13 +162,13 @@ The below example shows a basic `Slider` example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/getting-started-01-cs1/app/app.component.ts %}
+{% include code-snippet/slider/getting-started-01-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/getting-started-01-cs1/app/app.module.ts %}
+{% include code-snippet/slider/getting-started-01-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/getting-started-01-cs1/app/main.ts %}
+{% include code-snippet/slider/getting-started-01-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -189,13 +189,13 @@ In Min-Range Slider, a shadow is considered from the start value to current hand
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/getting-started-02-cs1/app/app.component.ts %}
+{% include code-snippet/slider/getting-started-02-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/getting-started-02-cs1/app/app.module.ts %}
+{% include code-snippet/slider/getting-started-02-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/getting-started-02-cs1/app/main.ts %}
+{% include code-snippet/slider/getting-started-02-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -209,13 +209,13 @@ The Slider can be displayed, either in horizontal or vertical orientation. By de
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/getting-started-03-cs1/app/app.component.ts %}
+{% include code-snippet/slider/getting-started-03-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/getting-started-03-cs1/app/app.module.ts %}
+{% include code-snippet/slider/getting-started-03-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/getting-started-03-cs1/app/main.ts %}
+{% include code-snippet/slider/getting-started-03-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -227,13 +227,13 @@ The Slider displays the tooltip to indicate the current value by clicking the Sl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/getting-started-04-cs1/app/app.component.ts %}
+{% include code-snippet/slider/getting-started-04-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/getting-started-04-cs1/app/app.module.ts %}
+{% include code-snippet/slider/getting-started-04-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/getting-started-04-cs1/app/main.ts %}
+{% include code-snippet/slider/getting-started-04-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -248,13 +248,13 @@ and not to the button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/slider/getting-started-05-cs1/app/app.component.ts %}
+{% include code-snippet/slider/getting-started-05-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/getting-started-05-cs1/app/app.module.ts %}
+{% include code-snippet/slider/getting-started-05-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/slider/getting-started-05-cs1/app/main.ts %}
+{% include code-snippet/slider/getting-started-05-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

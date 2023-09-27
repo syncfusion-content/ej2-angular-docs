@@ -22,13 +22,13 @@ Here is an example code snippet using the `FadeOut` and `ZoomOut` animation effe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/animation-multiple-cs1/app/app.component.ts %}
+{% include code-snippet/common/animation-multiple-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/animation-multiple-cs1/app/app.module.ts %}
+{% include code-snippet/common/animation-multiple-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/animation-multiple-cs1/app/main.ts %}
+{% include code-snippet/common/animation-multiple-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -46,13 +46,13 @@ Here is an example code snippet using the animation effects with a duration of `
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/animation-multiple-cs2/app/app.component.ts %}
+{% include code-snippet/common/animation-multiple-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/animation-multiple-cs2/app/app.module.ts %}
+{% include code-snippet/common/animation-multiple-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/animation-multiple-cs2/app/main.ts %}
+{% include code-snippet/common/animation-multiple-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -68,13 +68,13 @@ Here is an example code snippet using the animation effects with a delay of `200
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/animation-multiple-cs3/app/app.component.ts %}
+{% include code-snippet/common/animation-multiple-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/animation-multiple-cs3/app/app.module.ts %}
+{% include code-snippet/common/animation-multiple-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/animation-multiple-cs3/app/main.ts %}
+{% include code-snippet/common/animation-multiple-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -91,7 +91,7 @@ Enable or disable animation for all Angular components globally by using the `se
 In the below code snippet, animation is disabled.
 
 {% tabs %}
-{% highlight js tabtitle="~/src/app/app.component.ts" %}
+{% highlight js tabtitle="~/src/src/app.component.ts" %}
 
 import { GlobalAnimationMode, setGlobalAnimation } from "@syncfusion/ej2-base";
 

@@ -23,13 +23,13 @@ You can also choose which accordion pane is expanded state at initial rendering 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/accordion/accordion-cs2/app/app.component.ts %}
+{% include code-snippet/accordion/accordion-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/accordion/accordion-cs2/app/app.module.ts %}
+{% include code-snippet/accordion/accordion-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/accordion/accordion-cs2/app/main.ts %}
+{% include code-snippet/accordion/accordion-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -41,13 +41,13 @@ Default [`expandMode`](https://ej2.syncfusion.com/angular/documentation/api/acco
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/accordion/accordion-cs3/app/app.component.ts %}
+{% include code-snippet/accordion/accordion-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/accordion/accordion-cs3/app/app.module.ts %}
+{% include code-snippet/accordion/accordion-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/accordion/accordion-cs3/app/main.ts %}
+{% include code-snippet/accordion/accordion-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

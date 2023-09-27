@@ -20,13 +20,13 @@ To use sort, inject the [`SortService`](https://ej2.syncfusion.com/angular/docum
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/sorting/default-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/sorting/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/sorting/default-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/sorting/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/sorting/default-cs1/app/main.ts %}
+{% include code-snippet/gantt/sorting/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -41,13 +41,13 @@ The Gantt component can be rendered with sorted columns initially, and this can 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/sorting/sort-initial-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/sorting/sort-initial-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/sorting/sort-initial-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/sorting/sort-initial-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/sorting/sort-initial-cs1/app/main.ts %}
+{% include code-snippet/gantt/sorting/sort-initial-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -59,13 +59,13 @@ Columns in the Gantt component can be sorted dynamically using the [`sortColumn`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/sorting/sort-dynamic-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/sorting/sort-dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/sorting/sort-dynamic-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/sorting/sort-dynamic-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/sorting/sort-dynamic-cs1/app/main.ts %}
+{% include code-snippet/gantt/sorting/sort-dynamic-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -77,13 +77,13 @@ In the Gantt component, you can clear all the sorted columns and return to previ
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/sorting/clearsort-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/sorting/clearsort-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/sorting/clearsort-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/sorting/clearsort-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/sorting/clearsort-cs1/app/main.ts %}
+{% include code-snippet/gantt/sorting/clearsort-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -95,13 +95,13 @@ During the sort action, the Gantt component triggers two events. The [`actionBeg
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/sorting/events-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/sorting/events-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/sorting/events-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/sorting/events-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/sorting/events-cs1/app/main.ts %}
+{% include code-snippet/gantt/sorting/events-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -117,13 +117,13 @@ The following code snippets explains how to achieve this.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/sorting/sort-custom-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/sorting/sort-custom-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/sorting/sort-custom-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/sorting/sort-custom-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/sorting/sort-custom-cs1/app/main.ts %}
+{% include code-snippet/gantt/sorting/sort-custom-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

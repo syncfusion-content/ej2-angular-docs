@@ -22,13 +22,13 @@ Using the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/gantt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/default-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/default-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/default-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ The column header text can be defined using the [`headerText`](https://ej2.syncf
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/headertemplate-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/headertemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/headertemplate-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/headertemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/headertemplate-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/headertemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ To format the cell values based on a specific culture, use the [`columns.format`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/format-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/format-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/format-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/format-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/format-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/format-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -100,13 +100,13 @@ Format | Formatted value
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/dateformat-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/dateformat-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/dateformat-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/dateformat-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/dateformat-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/dateformat-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

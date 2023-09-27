@@ -36,13 +36,13 @@ To add a connection port, define the port object and add it to node’s ports co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/ports/port-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/ports/port-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/ports/port-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/ports/port-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/ports/port-cs1/app/main.ts %}
+{% include code-snippet/diagram/ports/port-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -56,13 +56,13 @@ The port’s ID property is used to define the unique ID for the port and its fu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/ports/add-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/ports/add-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/ports/add-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/ports/add-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/ports/add-cs1/app/main.ts %}
+{% include code-snippet/diagram/ports/add-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -74,13 +74,13 @@ Remove ports at runtime by using client-side method [`removePorts`](https://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/ports/remove-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/ports/remove-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/ports/remove-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/ports/remove-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/ports/remove-cs1/app/main.ts %}
+{% include code-snippet/diagram/ports/remove-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -94,13 +94,13 @@ The following code example illustrates how to change the port properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/ports/node-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/ports/node-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/ports/node-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/ports/node-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/ports/node-cs1/app/main.ts %}
+{% include code-snippet/diagram/ports/node-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -121,13 +121,13 @@ The following code illustrates how to change the appearance of port.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/ports/appear-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/ports/appear-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/ports/appear-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/ports/appear-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/ports/appear-cs1/app/main.ts %}
+{% include code-snippet/diagram/ports/appear-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

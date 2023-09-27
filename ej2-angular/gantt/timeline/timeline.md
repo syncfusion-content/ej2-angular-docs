@@ -30,13 +30,13 @@ In the `Week` timeline mode, the upper part of the schedule header displays the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/timeline/week-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/timeline/week-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/timeline/week-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/timeline/week-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/timeline/week-cs1/app/main.ts %}
+{% include code-snippet/gantt/timeline/week-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -48,13 +48,13 @@ In the `Month` timeline mode, the upper part of the schedule header displays the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/timeline/month-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/timeline/month-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/timeline/month-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/timeline/month-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/timeline/month-cs1/app/main.ts %}
+{% include code-snippet/gantt/timeline/month-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ In the `Year` timeline mode, the upper schedule header displays the years wherea
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/timeline/year-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/timeline/year-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/timeline/year-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/timeline/year-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/timeline/year-cs1/app/main.ts %}
+{% include code-snippet/gantt/timeline/year-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -84,13 +84,13 @@ In the `Day` timeline mode, the upper part of the header displays the days where
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/timeline/day-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/timeline/day-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/timeline/day-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/timeline/day-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/timeline/day-cs1/app/main.ts %}
+{% include code-snippet/gantt/timeline/day-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -102,13 +102,13 @@ An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/timeline/hour-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/timeline/hour-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/timeline/hour-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/timeline/hour-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/timeline/hour-cs1/app/main.ts %}
+{% include code-snippet/gantt/timeline/hour-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -120,13 +120,13 @@ In the Gantt component, you can customize the week start day using the [`weekSta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/timeline/week-startday-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/timeline/week-startday-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/timeline/week-startday-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/timeline/week-startday-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/timeline/week-startday-cs1/app/main.ts %}
+{% include code-snippet/gantt/timeline/week-startday-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -138,13 +138,13 @@ In the Gantt component, the schedule timeline will be automatically updated when
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/timeline/timescale-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/timeline/timescale-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/timeline/timescale-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/timeline/timescale-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/timeline/timescale-cs1/app/main.ts %}
+{% include code-snippet/gantt/timeline/timescale-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

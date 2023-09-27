@@ -18,13 +18,13 @@ You can specify the number of rating items using the [`itemsCount`](https://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/appearance/items-count-cs/app/app.component.ts %}
+{% include code-snippet/rating/appearance/items-count-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/items-count-cs/app/app.module.ts %}
+{% include code-snippet/rating/appearance/items-count-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/appearance/items-count-cs/app/main.ts %}
+{% include code-snippet/rating/appearance/items-count-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,13 +36,13 @@ You can disable the rating component by using the [`disabled`](https://ej2.syncf
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/appearance/disabled-cs/app/app.component.ts %}
+{% include code-snippet/rating/appearance/disabled-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/disabled-cs/app/app.module.ts %}
+{% include code-snippet/rating/appearance/disabled-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/appearance/disabled-cs/app/main.ts %}
+{% include code-snippet/rating/appearance/disabled-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -54,13 +54,13 @@ You can use the [`visible`](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/appearance/visible-cs/app/app.component.ts %}
+{% include code-snippet/rating/appearance/visible-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/visible-cs/app/app.module.ts %}
+{% include code-snippet/rating/appearance/visible-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/appearance/visible-cs/app/main.ts %}
+{% include code-snippet/rating/appearance/visible-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,13 +72,13 @@ You can use the [`readOnly`](https://ej2.syncfusion.com/angular/documentation/ap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/appearance/readonly-cs/app/app.component.ts %}
+{% include code-snippet/rating/appearance/readonly-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/readonly-cs/app/app.module.ts %}
+{% include code-snippet/rating/appearance/readonly-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/appearance/readonly-cs/app/main.ts %}
+{% include code-snippet/rating/appearance/readonly-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,13 +94,13 @@ You can change the rating icon border color in rating component, you can use the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/appearance/border-cs/app/app.component.ts %}
+{% include code-snippet/rating/appearance/border-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/border-cs/app/app.module.ts %}
+{% include code-snippet/rating/appearance/border-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/appearance/border-cs/app/main.ts %}
+{% include code-snippet/rating/appearance/border-cs/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.css" %}
 {% include code-snippet/rating/appearance/border-cs/index.css %}
@@ -115,13 +115,13 @@ You can customize the fill colors of rated and un-rated icons in the rating comp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/appearance/fill-color-cs/app/app.component.ts %}
+{% include code-snippet/rating/appearance/fill-color-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/fill-color-cs/app/app.module.ts %}
+{% include code-snippet/rating/appearance/fill-color-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/appearance/fill-color-cs/app/main.ts %}
+{% include code-snippet/rating/appearance/fill-color-cs/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.css" %}
 {% include code-snippet/rating/appearance/fill-color-cs/index.css %}
@@ -138,13 +138,13 @@ You can change the space between the rating items in rating component, by using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/appearance/spacing-cs/app/app.component.ts %}
+{% include code-snippet/rating/appearance/spacing-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/spacing-cs/app/app.module.ts %}
+{% include code-snippet/rating/appearance/spacing-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/appearance/spacing-cs/app/main.ts %}
+{% include code-snippet/rating/appearance/spacing-cs/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.css" %}
 {% include code-snippet/rating/appearance/spacing-cs/index.css %}
@@ -159,13 +159,13 @@ You can change the rating item icon in rating component, you can use the `cssCla
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/appearance/icon-cs/app/app.component.ts %}
+{% include code-snippet/rating/appearance/icon-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/icon-cs/app/app.module.ts %}
+{% include code-snippet/rating/appearance/icon-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/appearance/icon-cs/app/main.ts %}
+{% include code-snippet/rating/appearance/icon-cs/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.css" %}
 {% include code-snippet/rating/appearance/icon-cs/index.css %}

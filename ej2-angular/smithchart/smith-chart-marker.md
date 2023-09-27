@@ -20,13 +20,13 @@ Default visibility of marker is false. You can enable the marker by setting prop
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs21/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs21/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs21/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs21/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs21/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -45,13 +45,13 @@ Using marker settings in series, you can customize the marker for each series di
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs22/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs22/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs22/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs22/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs22/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -63,13 +63,13 @@ By default, datalabel is disabled. You can enable the datalabel by setting prope
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs23/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs23/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs23/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs23/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs23/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,13 +86,13 @@ Using datalabel settings in marker, you can customize the datalabel for each ser
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs24/app/app.component.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs24/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs24/app/app.module.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs24/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs24/app/main.ts %}
+{% include code-snippet/smithchart/getting-started/smithchart-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

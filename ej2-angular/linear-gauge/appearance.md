@@ -22,13 +22,13 @@ The following properties are available in the [`ejs-lineargauge`](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs1/app/app.component.ts %}
+{% include code-snippet/linear-gauge/appearance-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs1/app/app.module.ts %}
+{% include code-snippet/linear-gauge/appearance-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs1/app/main.ts %}
+{% include code-snippet/linear-gauge/appearance-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -47,13 +47,13 @@ The title for the Linear Gauge can be set using [`title`](api/linear-gauge/#titl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs2/app/app.component.ts %}
+{% include code-snippet/linear-gauge/appearance-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs2/app/app.module.ts %}
+{% include code-snippet/linear-gauge/appearance-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs2/app/main.ts %}
+{% include code-snippet/linear-gauge/appearance-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -81,13 +81,13 @@ The **Normal** type will render the container as a rectangle and this is the def
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs3/app/app.component.ts %}
+{% include code-snippet/linear-gauge/appearance-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs3/app/app.module.ts %}
+{% include code-snippet/linear-gauge/appearance-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs3/app/main.ts %}
+{% include code-snippet/linear-gauge/appearance-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -99,13 +99,13 @@ The **RoundedRectangle** type will render the container as a rectangle with roun
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs4/app/app.component.ts %}
+{% include code-snippet/linear-gauge/appearance-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs4/app/app.module.ts %}
+{% include code-snippet/linear-gauge/appearance-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs4/app/main.ts %}
+{% include code-snippet/linear-gauge/appearance-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -117,13 +117,13 @@ The **Thermometer** type will render the container similar to the appearance of 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs5/app/app.component.ts %}
+{% include code-snippet/linear-gauge/appearance-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs5/app/app.module.ts %}
+{% include code-snippet/linear-gauge/appearance-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs5/app/main.ts %}
+{% include code-snippet/linear-gauge/appearance-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -135,13 +135,13 @@ The Linear Gauge component is rendered with margin by default. To remove the mar
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs6/app/app.component.ts %}
+{% include code-snippet/linear-gauge/appearance-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs6/app/app.module.ts %}
+{% include code-snippet/linear-gauge/appearance-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs6/app/main.ts %}
+{% include code-snippet/linear-gauge/appearance-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

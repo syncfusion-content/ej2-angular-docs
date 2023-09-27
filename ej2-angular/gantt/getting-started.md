@@ -187,13 +187,13 @@ The data source fields that are required to render the tasks are mapped to the G
 
  {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/getting-started/binding-data-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/getting-started/binding-data-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/getting-started/binding-data-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/getting-started/binding-data-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/getting-started/binding-data-cs1/app/main.ts %}
+{% include code-snippet/gantt/getting-started/binding-data-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -204,13 +204,13 @@ The data source fields that are required to render the tasks are mapped to the G
 The Gantt has an option to define timeline using [`timelineSettings`](https://ej2.syncfusion.com/angular/documentation/api/gantt/timelineSettings/) property with various options. Using this property we can customize the Gantt timeline.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/getting-started/timeline-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/getting-started/timeline-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/getting-started/timeline-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/getting-started/timeline-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/getting-started/timeline-cs1/app/main.ts %}
+{% include code-snippet/gantt/getting-started/timeline-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -224,13 +224,13 @@ To use toolbar, inject the `ToolbarService` in the provider section of `AppModul
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/getting-started/toolbar-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/getting-started/toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/getting-started/toolbar-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/getting-started/toolbar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/getting-started/toolbar-cs1/app/main.ts %}
+{% include code-snippet/gantt/getting-started/toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -255,13 +255,13 @@ Modify the task details through cell editing by setting the edit [`mode`](https:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/getting-started/editing-cell-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/getting-started/editing-cell-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/getting-started/editing-cell-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/getting-started/editing-cell-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/getting-started/editing-cell-cs1/app/main.ts %}
+{% include code-snippet/gantt/getting-started/editing-cell-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -275,13 +275,13 @@ Modify the task details through dialog by setting edit [`mode`](https://ej2.sync
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/getting-started/editing-dialog-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/getting-started/editing-dialog-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/getting-started/editing-dialog-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/getting-started/editing-dialog-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/getting-started/editing-dialog-cs1/app/main.ts %}
+{% include code-snippet/gantt/getting-started/editing-dialog-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -295,13 +295,13 @@ Modify the task details through user interaction such as resizing and dragging t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/getting-started/editing-taskbar-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/getting-started/editing-taskbar-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/getting-started/editing-taskbar-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/getting-started/editing-taskbar-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/getting-started/editing-taskbar-cs1/app/main.ts %}
+{% include code-snippet/gantt/getting-started/editing-taskbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -313,13 +313,13 @@ Modify the task dependencies using mouse interactions by enabling the [`allowTas
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/getting-started/editing-dependency-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/getting-started/editing-dependency-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/getting-started/editing-dependency-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/getting-started/editing-dependency-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/getting-started/editing-dependency-cs1/app/main.ts %}
+{% include code-snippet/gantt/getting-started/editing-dependency-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -338,13 +338,13 @@ You can show the relationship in tasks, by using the [`dependency`](https://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/getting-started/task-relationship-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/getting-started/task-relationship-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/getting-started/task-relationship-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/getting-started/task-relationship-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/getting-started/task-relationship-cs1/app/main.ts %}
+{% include code-snippet/gantt/getting-started/task-relationship-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -357,13 +357,13 @@ Map these fields to the Gantt control using the [`resourceFields`](https://ej2.s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/getting-started/resources-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/getting-started/resources-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/getting-started/resources-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/getting-started/resources-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/getting-started/resources-cs1/app/main.ts %}
+{% include code-snippet/gantt/getting-started/resources-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -377,13 +377,13 @@ To use filter, inject the `FilterService` in the provider section of `AppModule`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/getting-started/filtering-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/getting-started/filtering-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/getting-started/filtering-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/getting-started/filtering-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/getting-started/filtering-cs1/app/main.ts %}
+{% include code-snippet/gantt/getting-started/filtering-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -397,13 +397,13 @@ To use sort, inject the [`SortService`](https://ej2.syncfusion.com/angular/docum
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/getting-started/sorting-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/getting-started/sorting-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/getting-started/sorting-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/getting-started/sorting-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/getting-started/sorting-cs1/app/main.ts %}
+{% include code-snippet/gantt/getting-started/sorting-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -417,13 +417,13 @@ To highlight the days, inject the `DayMarkersService` in the provider section of
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/getting-started/event-markers-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/getting-started/event-markers-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/getting-started/event-markers-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/getting-started/event-markers-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/getting-started/event-markers-cs1/app/main.ts %}
+{% include code-snippet/gantt/getting-started/event-markers-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -441,13 +441,13 @@ The following example shows a basic Gantt:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/getting-started/run-application-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/getting-started/run-application-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/getting-started/run-application-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/getting-started/run-application-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/getting-started/run-application-cs1/app/main.ts %}
+{% include code-snippet/gantt/getting-started/run-application-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

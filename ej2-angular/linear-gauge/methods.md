@@ -24,13 +24,13 @@ To change the pointer value dynamically, use the [`setPointerValue`](https://ej2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/axis-cs29/app/app.component.ts %}
+{% include code-snippet/linear-gauge/axis-cs29/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs29/app/app.module.ts %}
+{% include code-snippet/linear-gauge/axis-cs29/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/axis-cs29/app/main.ts %}
+{% include code-snippet/linear-gauge/axis-cs29/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -48,13 +48,13 @@ To change the annotation content dynamically, use the [`setAnnotationValue`](htt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/axis-cs30/app/app.component.ts %}
+{% include code-snippet/linear-gauge/axis-cs30/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs30/app/app.module.ts %}
+{% include code-snippet/linear-gauge/axis-cs30/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/axis-cs30/app/main.ts %}
+{% include code-snippet/linear-gauge/axis-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ The [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/linear-gaug
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/axis-cs31/app/app.component.ts %}
+{% include code-snippet/linear-gauge/axis-cs31/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs31/app/app.module.ts %}
+{% include code-snippet/linear-gauge/axis-cs31/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/axis-cs31/app/main.ts %}
+{% include code-snippet/linear-gauge/axis-cs31/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

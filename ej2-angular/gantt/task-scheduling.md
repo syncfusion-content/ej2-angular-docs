@@ -26,13 +26,13 @@ When the [`taskMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/task-scheduling/automatic-tasks-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/task-scheduling/automatic-tasks-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/task-scheduling/automatic-tasks-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/task-scheduling/automatic-tasks-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/task-scheduling/automatic-tasks-cs1/app/main.ts %}
+{% include code-snippet/gantt/task-scheduling/automatic-tasks-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -45,13 +45,13 @@ We can restrict this mode in predecessor validation alone. That is, we can autom
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/task-scheduling/manual-tasks-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/task-scheduling/manual-tasks-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/task-scheduling/manual-tasks-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/task-scheduling/manual-tasks-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/task-scheduling/manual-tasks-cs1/app/main.ts %}
+{% include code-snippet/gantt/task-scheduling/manual-tasks-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -63,13 +63,13 @@ When the [`taskMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/task-scheduling/custom-tasks-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/task-scheduling/custom-tasks-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/task-scheduling/custom-tasks-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/task-scheduling/custom-tasks-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/task-scheduling/custom-tasks-cs1/app/main.ts %}
+{% include code-snippet/gantt/task-scheduling/custom-tasks-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -94,13 +94,13 @@ You can define the various types of unscheduled tasks in the data source as foll
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/task-scheduling/unscheduled-tasks-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/task-scheduling/unscheduled-tasks-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/task-scheduling/unscheduled-tasks-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/task-scheduling/unscheduled-tasks-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/task-scheduling/unscheduled-tasks-cs1/app/main.ts %}
+{% include code-snippet/gantt/task-scheduling/unscheduled-tasks-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -117,13 +117,13 @@ The following code snippet explains how to define the working time range for the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/task-scheduling/working-timerange-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/task-scheduling/working-timerange-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/task-scheduling/working-timerange-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/task-scheduling/working-timerange-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/task-scheduling/working-timerange-cs1/app/main.ts %}
+{% include code-snippet/gantt/task-scheduling/working-timerange-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -139,13 +139,13 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/task-scheduling/non-workingdays-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/task-scheduling/non-workingdays-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/task-scheduling/non-workingdays-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/task-scheduling/non-workingdays-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/task-scheduling/non-workingdays-cs1/app/main.ts %}
+{% include code-snippet/gantt/task-scheduling/non-workingdays-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

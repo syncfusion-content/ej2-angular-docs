@@ -16,13 +16,13 @@ To reorder the columns, inject the `ReorderService` in the provider section of `
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/reorder-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/reorder-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/reorder-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/reorder-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/reorder-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/reorder-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ Multiple columns can be reordered at a time by using the [`reorderColumns`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/reordermultiple-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/reordermultiple-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/reordermultiple-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/reordermultiple-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/reordermultiple-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/reordermultiple-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ During the reorder action, the gantt component triggers the below three events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/reorder-events-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/reorder-events-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/reorder-events-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/reorder-events-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/reorder-events-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/reorder-events-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -20,13 +20,13 @@ Change the width, color, and radius of the heat map cells by using the [border](
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/cellborder-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/appearance/cellborder-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/cellborder-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/appearance/cellborder-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/cellborder-cs1/app/main.ts %}
+{% include code-snippet/heatmap/appearance/cellborder-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ Enable or disable the cell highlighting while hovering over the heat map cells b
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/cellhighlighting-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/appearance/cellhighlighting-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/cellhighlighting-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/appearance/cellhighlighting-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/cellhighlighting-cs1/app/main.ts %}
+{% include code-snippet/heatmap/appearance/cellhighlighting-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -64,13 +64,13 @@ The [colorGradientMode](https://ej2.syncfusion.com/angular/documentation/api/hea
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/colormode-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/appearance/colormode-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/colormode-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/appearance/colormode-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/colormode-cs1/app/main.ts %}
+{% include code-snippet/heatmap/appearance/colormode-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -82,13 +82,13 @@ The background color of the heat map can be customized using the [backgroundColo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/background-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/appearance/background-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/background-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/appearance/background-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/background-cs1/app/main.ts %}
+{% include code-snippet/heatmap/appearance/background-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -100,13 +100,13 @@ Set the margin for the heatmap from its container by using the [margin](https://
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/cellmargin-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/appearance/cellmargin-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/cellmargin-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/appearance/cellmargin-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/cellmargin-cs1/app/main.ts %}
+{% include code-snippet/heatmap/appearance/cellmargin-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -118,13 +118,13 @@ The title is used to provide a quick information about the data plotted in heatm
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/celltitle-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/appearance/celltitle-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/celltitle-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/appearance/celltitle-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/celltitle-cs1/app/main.ts %}
+{% include code-snippet/heatmap/appearance/celltitle-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -136,13 +136,13 @@ The visibility of data labels can be toggled using the [showLabel](https://ej2.s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/datalabel-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/appearance/datalabel-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/datalabel-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/appearance/datalabel-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/datalabel-cs1/app/main.ts %}
+{% include code-snippet/heatmap/appearance/datalabel-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -154,13 +154,13 @@ The label displayed in the heat map cell can be changed using the [cellRender](h
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/cellrender-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/appearance/cellrender-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/cellrender-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/appearance/cellrender-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/cellrender-cs1/app/main.ts %}
+{% include code-snippet/heatmap/appearance/cellrender-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -172,13 +172,13 @@ The text attributes of the data label such as font-family, font-size, and color 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/textStyle-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/appearance/textStyle-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/textStyle-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/appearance/textStyle-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/textStyle-cs1/app/main.ts %}
+{% include code-snippet/heatmap/appearance/textStyle-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -190,13 +190,13 @@ The format of the data label, such as currency, decimal, percent etc. can be cha
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/format-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/appearance/format-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/format-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/appearance/format-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/format-cs1/app/main.ts %}
+{% include code-snippet/heatmap/appearance/format-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -218,13 +218,13 @@ The following example demonstrates how to add a data label template for array ta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/template-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/appearance/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/template-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/appearance/template-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/template-cs1/app/main.ts %}
+{% include code-snippet/heatmap/appearance/template-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -236,13 +236,13 @@ The following example demonstrates how to add a data label template for array ce
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/template-cs2/app/app.component.ts %}
+{% include code-snippet/heatmap/appearance/template-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/template-cs2/app/app.module.ts %}
+{% include code-snippet/heatmap/appearance/template-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/template-cs2/app/main.ts %}
+{% include code-snippet/heatmap/appearance/template-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -258,13 +258,13 @@ The following example demonstrates how to add a data label template for JSON tab
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/template-cs3/app/app.component.ts %}
+{% include code-snippet/heatmap/appearance/template-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/template-cs3/app/app.module.ts %}
+{% include code-snippet/heatmap/appearance/template-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/template-cs3/app/main.ts %}
+{% include code-snippet/heatmap/appearance/template-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -276,13 +276,13 @@ The following example demonstrates how to add a data label template for JSON cel
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/appearance/template-cs4/app/app.component.ts %}
+{% include code-snippet/heatmap/appearance/template-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/appearance/template-cs4/app/app.module.ts %}
+{% include code-snippet/heatmap/appearance/template-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/appearance/template-cs4/app/main.ts %}
+{% include code-snippet/heatmap/appearance/template-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

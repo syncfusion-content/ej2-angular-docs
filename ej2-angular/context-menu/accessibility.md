@@ -32,13 +32,13 @@ The web accessibility makes web content and web applications more accessible for
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/context-menu/aria-and-keyboard-cs1/app/app.component.ts %}
+{% include code-snippet/context-menu/aria-and-keyboard-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/context-menu/aria-and-keyboard-cs1/app/app.module.ts %}
+{% include code-snippet/context-menu/aria-and-keyboard-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/context-menu/aria-and-keyboard-cs1/app/main.ts %}
+{% include code-snippet/context-menu/aria-and-keyboard-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -16,13 +16,13 @@ The work is the total hours required to complete a task. Work can be mapped from
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/work/work-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/work/work-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/work/work-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/work/work-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/work/work-cs1/app/main.ts %}
+{% include code-snippet/gantt/work/work-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ The work, duration and resource unit fields of a task depends upon each other an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/work/tasktype-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/work/tasktype-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/work/tasktype-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/work/tasktype-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/work/tasktype-cs1/app/main.ts %}
+{% include code-snippet/gantt/work/tasktype-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

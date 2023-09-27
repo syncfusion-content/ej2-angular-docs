@@ -16,16 +16,16 @@ By using Toolbar scrollStep property, pass a required value to customize toolbar
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/toolbar/scrollstep-cs1/app/app.component.html %}
+{% include code-snippet/toolbar/scrollstep-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/toolbar/scrollstep-cs1/app/app.component.ts %}
+{% include code-snippet/toolbar/scrollstep-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/scrollstep-cs1/app/app.module.ts %}
+{% include code-snippet/toolbar/scrollstep-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/toolbar/scrollstep-cs1/app/main.ts %}
+{% include code-snippet/toolbar/scrollstep-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -23,13 +23,13 @@ The following sample illustrates how to open Menu with `FadeIn` [`effect`](https
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/menu/getting-started-cs5/app/app.component.ts %}
+{% include code-snippet/menu/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/menu/getting-started-cs5/app/app.module.ts %}
+{% include code-snippet/menu/getting-started-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/menu/getting-started-cs5/app/main.ts %}
+{% include code-snippet/menu/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

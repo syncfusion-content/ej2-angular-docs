@@ -18,13 +18,13 @@ The signature component opens a pre-drawn signature as either base64 or hosted/ 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/signature/open-save/open-base-cs1/app/app.component.ts %}
+{% include code-snippet/signature/open-save/open-base-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/signature/open-save/open-base-cs1/app/app.module.ts %}
+{% include code-snippet/signature/open-save/open-base-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/signature/open-save/open-base-cs1/app/main.ts %}
+{% include code-snippet/signature/open-save/open-base-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ The `getSignature` method is used to get the signature as base64 with the PNG, J
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/signature/open-save/save-base-cs1/app/app.component.ts %}
+{% include code-snippet/signature/open-save/save-base-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/signature/open-save/save-base-cs1/app/app.module.ts %}
+{% include code-snippet/signature/open-save/save-base-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/signature/open-save/save-base-cs1/app/main.ts %}
+{% include code-snippet/signature/open-save/save-base-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -62,13 +62,13 @@ The [`save`](https://ej2.syncfusion.com/angular/documentation/api/signature/#sav
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/signature/open-save/save-image-cs1/app/app.component.ts %}
+{% include code-snippet/signature/open-save/save-image-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/signature/open-save/save-image-cs1/app/app.module.ts %}
+{% include code-snippet/signature/open-save/save-image-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/signature/open-save/save-image-cs1/app/main.ts %}
+{% include code-snippet/signature/open-save/save-image-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -82,13 +82,13 @@ In the following sample, the background color is set as ‘rgb(103 58 183)’ an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/signature/open-save/save-image-cs2/app/app.component.ts %}
+{% include code-snippet/signature/open-save/save-image-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/signature/open-save/save-image-cs2/app/app.module.ts %}
+{% include code-snippet/signature/open-save/save-image-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/signature/open-save/save-image-cs2/app/main.ts %}
+{% include code-snippet/signature/open-save/save-image-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

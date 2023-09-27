@@ -66,13 +66,13 @@ To change the stack order of an annotation element, the [`zIndex`](https://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs1/app/app.component.ts %}
+{% include code-snippet/linear-gauge/annotations-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs1/app/app.module.ts %}
+{% include code-snippet/linear-gauge/annotations-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs1/app/main.ts %}
+{% include code-snippet/linear-gauge/annotations-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,13 +86,13 @@ The annotation can be placed anywhere in the Linear Gauge by setting the pixel v
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs2/app/app.component.ts %}
+{% include code-snippet/linear-gauge/annotations-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs2/app/app.module.ts %}
+{% include code-snippet/linear-gauge/annotations-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs2/app/main.ts %}
+{% include code-snippet/linear-gauge/annotations-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -106,13 +106,13 @@ The annotation can be aligned horizontally and vertically by using the [`horizon
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs3/app/app.component.ts %}
+{% include code-snippet/linear-gauge/annotations-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs3/app/app.module.ts %}
+{% include code-snippet/linear-gauge/annotations-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs3/app/main.ts %}
+{% include code-snippet/linear-gauge/annotations-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -124,13 +124,13 @@ Multiple annotations can be added to the Linear Gauge component by adding the mu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs4/app/app.component.ts %}
+{% include code-snippet/linear-gauge/annotations-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs4/app/app.module.ts %}
+{% include code-snippet/linear-gauge/annotations-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs4/app/main.ts %}
+{% include code-snippet/linear-gauge/annotations-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

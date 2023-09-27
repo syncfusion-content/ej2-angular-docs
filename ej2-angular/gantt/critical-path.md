@@ -18,13 +18,13 @@ The following code example shows how to display the critical path in the Gantt c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/criticalpath/default-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/criticalpath/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/criticalpath/default-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/criticalpath/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/criticalpath/default-cs1/app/main.ts %}
+{% include code-snippet/gantt/criticalpath/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ The following code example shows how to customize the critical path taskbar in t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/customizeCriticalPath/default-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/customizeCriticalPath/default-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/customizeCriticalPath/default-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/customizeCriticalPath/default-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/customizeCriticalPath/default-cs1/app/main.ts %}
+{% include code-snippet/gantt/customizeCriticalPath/default-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

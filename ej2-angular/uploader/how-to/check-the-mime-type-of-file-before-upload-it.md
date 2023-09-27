@@ -15,13 +15,13 @@ In the below sample, file MIME type is shown in the alert box before file start 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/uploader/mime-type-cs1/app/app.component.ts %}
+{% include code-snippet/uploader/mime-type-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/mime-type-cs1/app/app.module.ts %}
+{% include code-snippet/uploader/mime-type-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/uploader/mime-type-cs1/app/main.ts %}
+{% include code-snippet/uploader/mime-type-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

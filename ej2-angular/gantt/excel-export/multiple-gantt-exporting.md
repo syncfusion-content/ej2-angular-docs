@@ -19,13 +19,13 @@ The Excel export provides support to export multiple Gantt data in the same shee
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/excel-export/sameSheet-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/excel-export/sameSheet-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/excel-export/sameSheet-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/excel-export/sameSheet-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/excel-export/sameSheet-cs1/app/main.ts %}
+{% include code-snippet/gantt/excel-export/sameSheet-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ The Excel exporting provides support to export multiple Gantt in new sheet. To e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/excel-export/newSheet-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/excel-export/newSheet-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/excel-export/newSheet-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/excel-export/newSheet-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/excel-export/newSheet-cs1/app/main.ts %}
+{% include code-snippet/gantt/excel-export/newSheet-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -61,13 +61,13 @@ In Gantt, the Excel export provides an option to export hidden columns by defini
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/excel-export/exportHidden-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/excel-export/exportHidden-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/excel-export/exportHidden-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/excel-export/exportHidden-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/excel-export/exportHidden-cs1/app/main.ts %}
+{% include code-snippet/gantt/excel-export/exportHidden-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -83,13 +83,13 @@ Similarly, in the excelExportComplete event, you can revert the columns visibili
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/excel-export/showHide-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/excel-export/showHide-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/excel-export/showHide-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/excel-export/showHide-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/excel-export/showHide-cs1/app/main.ts %}
+{% include code-snippet/gantt/excel-export/showHide-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -103,13 +103,13 @@ In the following sample, the background color has been customized for `TaskID` c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/excel-export/cellFormat-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/excel-export/cellFormat-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/excel-export/cellFormat-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/excel-export/cellFormat-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/excel-export/cellFormat-cs1/app/main.ts %}
+{% include code-snippet/gantt/excel-export/cellFormat-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -123,13 +123,13 @@ To apply theme in exported Excel, define the `theme` in `ExcelExportProperties`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/excel-export/theme-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/excel-export/theme-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/excel-export/theme-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/excel-export/theme-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/excel-export/theme-cs1/app/main.ts %}
+{% include code-snippet/gantt/excel-export/theme-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -143,13 +143,13 @@ The Excel export also allows users to include header and footer contents to the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/excel-export/headerFooter-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/excel-export/headerFooter-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/excel-export/headerFooter-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/excel-export/headerFooter-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/excel-export/headerFooter-cs1/app/main.ts %}
+{% include code-snippet/gantt/excel-export/headerFooter-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -161,13 +161,13 @@ You can set the required file name for the exported document by defining the `fi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/excel-export/fileName-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/excel-export/fileName-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/excel-export/fileName-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/excel-export/fileName-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/excel-export/fileName-cs1/app/main.ts %}
+{% include code-snippet/gantt/excel-export/fileName-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
