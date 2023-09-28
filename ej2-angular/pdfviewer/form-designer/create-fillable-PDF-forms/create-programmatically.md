@@ -39,7 +39,7 @@ Using addFormField method, the form fields can be added to the PDF document prog
 
 N> To set up the **server-backed PDF Viewer**, 
 Add the below serviceUrl in the `app.component.ts` file 
-`public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer'`;
+`public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer'`;
 Within the template, configure the PDF Viewer by adding the `[serviceUrl]='service'` attribute inside the div element.
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/addformfield-cs1" %}
@@ -62,7 +62,7 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 
 N> To set up the **server-backed PDF Viewer**, 
 Add the below serviceUrl in the `app.component.ts` file 
-`public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer'`;
+`public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer'`;
 Within the template, configure the PDF Viewer by adding the `[serviceUrl]='service'` attribute inside the div element.
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/updateformfield-cs1" %}
@@ -85,7 +85,7 @@ Using deleteFormField method, the form field can be deleted programmatically. We
 
 N> To set up the **server-backed PDF Viewer**, 
 Add the below serviceUrl in the `app.component.ts` file 
-`public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer'`;
+`public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer'`;
 Within the template, configure the PDF Viewer by adding the `[serviceUrl]='service'` attribute inside the div element.
 
 {% previewsample "page.domainurl/code-snippet/pdfviewer/deleteformfield-cs1" %}
@@ -94,7 +94,7 @@ The following code illustrates how to delete a signature from the signature fiel
 
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
-```html
+
 <!--Method to remove signature-->
 <button (click)="removeSignature()">Remove Signature</button>
 <!--Render PDF Viewer component-->
@@ -102,10 +102,10 @@ The following code illustrates how to delete a signature from the signature fiel
                [documentPath]="document"
                style="height:640px;display:block">
 </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% highlight html tabtitle="Server-Backed" %}
-```html
+
 <!--Method to remove signature-->
 <button (click)="removeSignature()">Remove Signature</button>
 <!--Render PDF Viewer component-->
@@ -114,7 +114,7 @@ The following code illustrates how to delete a signature from the signature fiel
                [documentPath]="document"
                style="height:640px;display:block">
 </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -254,7 +254,7 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
 export class AppComponent implements OnInit {
   @ViewChild('pdfviewer')
   public pdfviewerControl: PdfViewerComponent;
-  public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+  public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
   public document: string = 'https://cdn.syncfusion.com/content/pdf/form-designer.pdf';
 
   public validateFormFields(e: ValidateFormFieldsArgs): void {
@@ -473,7 +473,7 @@ The following code example explains how to update the properties of the signatur
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 
-```html
+
     <ejs-pdfviewer
       id="pdfViewer"
       [documentPath]="document"
@@ -481,12 +481,12 @@ The following code example explains how to update the properties of the signatur
       [signatureFieldSettings] = "signatureFieldSettings"
       style="height:640px;display:block"
     > </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 
 {% highlight html tabtitle="Server-Backed" %}
 
-```html
+
     <ejs-pdfviewer
       id="pdfViewer"
       [serviceUrl]="service"
@@ -495,9 +495,10 @@ The following code example explains how to update the properties of the signatur
       [signatureFieldSettings] = "signatureFieldSettings"
       style="height:640px;display:block"
     > </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% endtabs %}
+
 ```typescript
       // Properties to customize the signature field settings
       public signatureFieldSettings = {
@@ -620,19 +621,17 @@ The following code example explains how to update the properties of the Textbox 
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 
-```html
   <ejs-pdfviewer
     id="pdfViewer"
     [documentPath]="document"
     [textFieldSettings] = "textFieldSettings"
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 
 {% highlight html tabtitle="Server-Backed" %}
 
-```html
   <ejs-pdfviewer
     id="pdfViewer"
     [serviceUrl]="service"
@@ -640,7 +639,7 @@ The following code example explains how to update the properties of the Textbox 
     [textFieldSettings] = "textFieldSettings"
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -733,19 +732,17 @@ The following code example explains how to update the properties of the Password
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 
-```html
   <ejs-pdfviewer
     id="pdfViewer"
     [documentPath]="document"
     [passwordFieldSettings] = "passwordFieldSettings"
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 
 {% highlight html tabtitle="Server-Backed" %}
 
-```html
   <ejs-pdfviewer
     id="pdfViewer"
     [serviceUrl]="service"
@@ -753,7 +750,7 @@ The following code example explains how to update the properties of the Password
     [passwordFieldSettings] = "passwordFieldSettings"
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -837,18 +834,18 @@ The following code example explains how to update the properties of the CheckBox
 
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
-```html
+
   <ejs-pdfviewer
     id="pdfViewer"
     [documentPath]="document"
     [checkBoxFieldSettings] = "checkBoxFieldSettings"
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 
 {% highlight html tabtitle="Server-Backed" %}
-```html
+
   <ejs-pdfviewer
     id="pdfViewer"
     [serviceUrl]="service"
@@ -856,7 +853,7 @@ The following code example explains how to update the properties of the CheckBox
     [checkBoxFieldSettings] = "checkBoxFieldSettings"
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -930,18 +927,18 @@ The following code example explains how to update the properties of the RadioBut
 
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
-```html
+
   <ejs-pdfviewer
     id="pdfViewer"
     [documentPath]="document"
     [radioButtonFieldSettings] = "radioButtonFieldSettings"
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 
 {% highlight html tabtitle="Server-Backed" %}
-```html
+
   <ejs-pdfviewer
     id="pdfViewer"
     [serviceUrl]="service"
@@ -949,7 +946,7 @@ The following code example explains how to update the properties of the RadioBut
     [radioButtonFieldSettings] = "radioButtonFieldSettings"
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -1028,18 +1025,18 @@ The following code example explains how to update the properties of the ListBox 
 
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
-```html
+
   <ejs-pdfviewer
     id="pdfViewer"
     [documentPath]="document"
     [listBoxFieldSettings] = "listBoxFieldSettings"
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 
 {% highlight html tabtitle="Server-Backed" %}
-```html
+
   <ejs-pdfviewer
     id="pdfViewer"
     [serviceUrl]="service"
@@ -1047,7 +1044,7 @@ The following code example explains how to update the properties of the ListBox 
     [listBoxFieldSettings] = "listBoxFieldSettings"
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -1138,19 +1135,17 @@ The following code example explains how to update the properties of the DropDown
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 
-```html
   <ejs-pdfviewer
     id="pdfViewer"
     [documentPath]="document"
     [DropdownFieldSettings] = "DropdownFieldSettings"
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 
 {% highlight html tabtitle="Server-Backed" %}
 
-```html
   <ejs-pdfviewer
     id="pdfViewer"
     [serviceUrl]="service"
@@ -1158,7 +1153,7 @@ The following code example explains how to update the properties of the DropDown
     [DropdownFieldSettings] = "DropdownFieldSettings"
     style="height:640px;display:block"> 
   </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% endtabs %}
 

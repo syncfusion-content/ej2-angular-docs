@@ -39,9 +39,8 @@ In the pan mode, if the stamp annotation mode is entered, the PDF Viewer control
 Refer to the following code sample to switch to the stamp annotation mode.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
+{% highlight ts tabtitle="Standalone" %}
 
-```typescript
   import { ViewChild } from '@angular/core';
   import { Component, OnInit } from '@angular/core';
   import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -71,11 +70,10 @@ Refer to the following code sample to switch to the stamp annotation mode.
           pdfviewer.annotationModule.setAnnotationMode("Stamp", null, SignStampItem.Witness);
       }
   }
-```
-{% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
 
-```typescript
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
   import { ViewChild } from '@angular/core';
   import { Component, OnInit } from '@angular/core';
   import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -100,14 +98,14 @@ Refer to the following code sample to switch to the stamp annotation mode.
                  AnnotationService]
     })
   export class AppComponent implements OnInit {
-      public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
       public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       addAnnotation() {
           var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
           pdfviewer.annotationModule.setAnnotationMode("Stamp", null, SignStampItem.Witness);
       }
   }
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -161,8 +159,8 @@ Refer to the following code sample to set the default sticky note annotation set
 
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -189,10 +187,10 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
     public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public stampSettings = { opacity: 0.3, author: 'Guest User' };
   }
-```
+
 {% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -217,10 +215,10 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
                  AnnotationService]
      })
   export class AppComponent implements OnInit {
-    public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
     public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public stampSettings = { opacity: 0.3, author: 'Guest User' };
   }
-```
+
 {% endhighlight %}
 {% endtabs %}

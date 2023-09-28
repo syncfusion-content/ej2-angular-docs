@@ -36,9 +36,8 @@ In the pan mode, if the shape annotation mode is entered, the PDF Viewer control
 Refer to the following code sample to switch to the circle annotation mode.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
+{% highlight ts tabtitle="Standalone" %}
 
-```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -68,12 +67,11 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
       pdfviewer.annotationModule.setAnnotationMode("Circle");
     }
   }
-```
+
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
+{% highlight ts tabtitle="Server-Backed" %}
 
-```typescript
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -98,14 +96,14 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
                  AnnotationService]
      })
   export class AppComponent implements OnInit {
-    public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
     public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     addAnnotation() {
       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
       pdfviewer.annotationModule.setAnnotationMode("Circle");
     }
   }
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -149,10 +147,9 @@ Refer to the following code sample to set the default annotation settings.
 
 The properties of the shape annotations can be set before creating the control using LineSettings, ArrowSettings, RectangleSettings, CircleSettings, and PolygonSettings.
 
-
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
+
   import { ViewChild } from '@angular/core';
   import { Component, OnInit } from '@angular/core';
   import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -187,10 +184,10 @@ The properties of the shape annotations can be set before creating the control u
       public circleSettings = { fillColor: 'orange', opacity: 0.6, strokeColor: 'pink' };
       public polygonSettings = { fillColor: 'pink', opacity: 0.6, strokeColor: 'yellow' };
   }
-```
+
 {% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
+
   import { ViewChild } from '@angular/core';
   import { Component, OnInit } from '@angular/core';
   import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -219,7 +216,7 @@ The properties of the shape annotations can be set before creating the control u
                  AnnotationService]
     })
   export class AppComponent implements OnInit {
-      public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
       public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       public lineSettings = { fillColor: 'blue', opacity: 0.6, strokeColor: 'green' };
       public arrowSettings = { fillColor: 'green', opacity: 0.6, strokeColor: 'blue' };
@@ -227,6 +224,6 @@ The properties of the shape annotations can be set before creating the control u
       public circleSettings = { fillColor: 'orange', opacity: 0.6, strokeColor: 'pink' };
       public polygonSettings = { fillColor: 'pink', opacity: 0.6, strokeColor: 'yellow' };
   }
-```
+
 {% endhighlight %}
 {% endtabs %}

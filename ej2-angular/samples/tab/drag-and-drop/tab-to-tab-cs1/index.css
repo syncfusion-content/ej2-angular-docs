@@ -1,0 +1,28 @@
+#container {
+  max-width: 700px;
+  min-width: 520px;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+#firstTab .e-content .e-item,
+#secondTab .e-content .e-item {
+    font-size: 12px;
+    padding: 10px;
+    text-align: justify;
+}
+
+#firstTab {
+  margin-bottom: 40px;
+}
+
+#secondTab {
+  margin-top: 40px;
+}

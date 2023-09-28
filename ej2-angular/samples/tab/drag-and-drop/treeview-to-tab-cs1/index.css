@@ -1,0 +1,45 @@
+#container {
+  max-width: 700px;
+  min-width: 520px;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+#draggableTab .e-content .e-item {
+  font-size: 12px;
+  margin: 10px;
+  text-align: justify;
+}
+
+.treeview-external-drop-tab .e-list-item,
+.e-bigger .treeview-external-drop-tab .e-list-item {
+  border: 0.5px solid #E1E7EC;
+  line-height: 15px;
+  padding: 0 5px;
+}
+
+.treeview-external-drop-tab .e-list-item.e-hover>.e-fullrow,
+.treeview-external-drop-tab .e-list-item.e-active>.e-fullrow,
+.treeview-external-drop-tab .e-list-item.e-active.e-hover>.e-fullrow,
+.e-bigger .treeview-external-drop-tab .e-list-item.e-hover>.e-fullrow,
+.e-bigger .treeview-external-drop-tab .e-list-item.e-active>.e-fullrow,
+.e-bigger .treeview-external-drop-tab .e-list-item.e-active.e-hover>.e-fullrow {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none !important;
+}
+
+#draggableTab {
+  margin-bottom: 40px;
+}
+
+#draggableTreeview {
+  margin-top: 40px;
+}

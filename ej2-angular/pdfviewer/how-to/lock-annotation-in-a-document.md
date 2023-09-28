@@ -20,17 +20,17 @@ The following code sample illustrates how to lock custom stamp annotation in a P
 
 {% tabs %}
 {% highlight js tabtitle="Standalone" %}
-```html
+
 <!--Render PDF Viewer component-->
 <ejs-pdfviewer id="pdfViewer"
                [documentPath]="document"
                (ajaxRequestSuccess)="fireAjaxRequestSuccess($event, $event.data)"
                style="height:640px;display:block">
 </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% highlight js tabtitle="Server-Backed" %}
-```html
+
 <!--Render PDF Viewer component-->
 <ejs-pdfviewer id="pdfViewer"
                [serviceUrl]="service"
@@ -38,7 +38,7 @@ The following code sample illustrates how to lock custom stamp annotation in a P
                (ajaxRequestSuccess)="fireAjaxRequestSuccess($event, $event.data)"
                style="height:640px;display:block">
 </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% endtabs %}
 

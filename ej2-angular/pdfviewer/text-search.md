@@ -12,8 +12,8 @@ domainurl: ##DomainURL##
 The Text Search option in PDF Viewer is used to find and highlight the text content from the document. You can enable/disable the text search using the following code snippet.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
+
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService, ToolbarService, NavigationService,
@@ -38,11 +38,11 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   export class AppComponent implements OnInit {
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   }
-```
+
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
+
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService, ToolbarService, NavigationService,
@@ -66,10 +66,10 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
                PrintService]
   })
   export class AppComponent implements OnInit {
-      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   }
-```
+
 {% endhighlight %}
 {% endtabs %}
 

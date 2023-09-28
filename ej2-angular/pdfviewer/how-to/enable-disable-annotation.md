@@ -16,7 +16,7 @@ Here is an example of how you can enable and disable the delete button while sel
 
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
-```html
+
 <ejs-pdfviewer #pdfviewer id='pdfViewer'
     [documentPath]='document'
     [enableToolbar]=false
@@ -25,10 +25,10 @@ Here is an example of how you can enable and disable the delete button while sel
     (annotationUnSelect)="annotationUnSelect($event)"
     style="height:640px; display: block">
 </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% highlight html tabtitle="Server-Backed" %}
-```html
+
 <ejs-pdfviewer #pdfviewer id='pdfViewer'
     [serviceUrl]='service'
     [documentPath]='document'
@@ -38,7 +38,7 @@ Here is an example of how you can enable and disable the delete button while sel
     (annotationUnSelect)="annotationUnSelect($event)"
     style="height:640px; display: block">
 </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% endtabs %}
 

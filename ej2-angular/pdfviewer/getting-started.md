@@ -150,7 +150,7 @@ The output will appear as follows.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pdfviewer/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/pdfviewer/getting-started-cs1-standalone" %}
 
 ## Limitation over Server-Backed PDF Viewer to Standalone PDF Viewer control
 
