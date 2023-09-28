@@ -50,8 +50,8 @@ The PDF Viewer control provides the support to import and export annotations usi
 You can import annotations using JSON object or JSON file in code behind like the below code snippet.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -253,10 +253,10 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
       });
     }
   }
-```
+
 {% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -285,7 +285,7 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
     public pdfviewerControl: PdfViewerComponent;
     //The service must be running in the local
     public service: string =
-      'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      'https://services.syncfusion.com/angular/production/api/pdfviewer';
     //Local file path
     public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     OnImportAnnotationsClick() {
@@ -462,15 +462,15 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
       });
     }
   }
-```
+
 {% endhighlight %}
 {% endtabs %}
 
 Refer to the following code snippet to import annotations from a JSON file.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -501,11 +501,11 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
       pdfviewer.importAnnotation('PDF_Succinctly.json', AnnotationDataFormat.Json);
     }
 }
-```
+
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -538,7 +538,7 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
       pdfviewer.importAnnotation('PDF_Succinctly.json', AnnotationDataFormat.Json);
     }
 }
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -547,8 +547,8 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
 Refer to the following code snippet to import annotations from an XFDF file.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -581,10 +581,10 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
           pdfviewer.importAnnotation('PDF_Succinctly.xfdf', AnnotationDataFormat.xfdf);
       }
   }
-```
+
 {% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -619,7 +619,7 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
           pdfviewer.importAnnotation('PDF_Succinctly.xfdf', AnnotationDataFormat.xfdf);
       }
   }
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -649,9 +649,9 @@ The PDF Viewer control provides the support to export the annotations as JSON fi
 You can export annotations as JSON file in code behind like the following code snippet.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
+{% highlight ts tabtitle="Standalone" %}
 
-```typescript
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent,LinkAnnotationService, BookmarkViewService,
@@ -685,11 +685,11 @@ import { PdfViewerComponent,LinkAnnotationService, BookmarkViewService,
       pdfviewer.exportAnnotation(AnnotationDataFormat.Json);
     }
   }
-```
-{% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
 
-```typescript
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent,LinkAnnotationService, BookmarkViewService,
@@ -717,7 +717,7 @@ import { PdfViewerComponent,LinkAnnotationService, BookmarkViewService,
   export class AppComponent implements OnInit {
     @ViewChild('pdfviewer')
     public pdfviewerControl: PdfViewerComponent;
-    public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
     public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public exportAnnotationFileName: string = 'ExportedAnnotations.json';
     OnExportAnnotationsClick() {
@@ -725,16 +725,16 @@ import { PdfViewerComponent,LinkAnnotationService, BookmarkViewService,
       pdfviewer.exportAnnotation(AnnotationDataFormat.Json);
     }
   }
-```
+
 {% endhighlight %}
 {% endtabs %}
 
 Refer to the following code snippet to export annotations as XFDF file.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
+{% highlight ts tabtitle="Standalone" %}
 
-```typescript
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -768,11 +768,11 @@ export class AppComponent implements OnInit {
         pdfviewer.exportAnnotation(AnnotationDataFormat.Xfdf);
     }
 }
-```
-{% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
 
-```typescript
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -800,7 +800,7 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
 export class AppComponent implements OnInit {
     @ViewChild('pdfviewer')
     public pdfviewerControl: PdfViewerComponent;
-    public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
     public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public exportAnnotationFileName: string = 'ExportedAnnotations.xfdf';
     OnExportAnnotationsClick() {
@@ -808,6 +808,6 @@ export class AppComponent implements OnInit {
         pdfviewer.exportAnnotation(AnnotationDataFormat.Xfdf);
     }
 }
-```
+
 {% endhighlight %}
 {% endtabs %}

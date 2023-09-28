@@ -25,8 +25,8 @@ The default toolbar of PDF Viewer contains the following navigation options
 You can enable/disable page navigation option in PDF Viewer using the following code snippet.,
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
+
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService, ToolbarService,  NavigationService,
@@ -52,11 +52,11 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   export class AppComponent implements OnInit {
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   }
-```
+
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
+
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService, ToolbarService,  NavigationService,
@@ -81,10 +81,10 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
                PrintService]
   })
   export class AppComponent implements OnInit {
-      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   }
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -96,8 +96,8 @@ The Bookmarks saved in PDF files are loaded and made ready for easy navigation.
 You can enable/disable bookmark navigation by using the following code snippet.,
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
+
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService,ToolbarService, NavigationService,
@@ -123,11 +123,11 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 export class AppComponent implements OnInit {
   public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
 }
-```
+
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
+
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService,ToolbarService, NavigationService,
@@ -152,10 +152,10 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
                PrintService]
 })
 export class AppComponent implements OnInit {
-  public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+  public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
   public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
 }
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -167,8 +167,8 @@ Thumbnails is the miniature representation of actual pages in PDF files. This fe
 You can enable/disable thumbnail navigation by using the following code snippet.,
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
+
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService, ToolbarService, NavigationService,
@@ -193,11 +193,11 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   export class AppComponent implements OnInit {
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   }
-```
+
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
+
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService, ToolbarService, NavigationService,
@@ -221,10 +221,10 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
                PrintService]
   })
   export class AppComponent implements OnInit {
-      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   }
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -243,9 +243,8 @@ Table of contents navigation allows users to navigate to different parts of a PD
 You can enable/disable link navigation by using the following code snippet.,
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
+{% highlight ts tabtitle="Standalone" %}
 
-```typescript
   import { Component, OnInit } from '@angular/core';
   import { LinkAnnotationService,BookmarkViewService, MagnificationService,
            ThumbnailViewService, ToolbarService, NavigationService,
@@ -270,12 +269,11 @@ You can enable/disable link navigation by using the following code snippet.,
     export class AppComponent implements OnInit {
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     }
-```
+
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
+{% highlight ts tabtitle="Server-Backed" %}
 
-```typescript
   import { Component, OnInit } from '@angular/core';
   import { LinkAnnotationService,BookmarkViewService, MagnificationService,
            ThumbnailViewService, ToolbarService, NavigationService,
@@ -299,18 +297,18 @@ You can enable/disable link navigation by using the following code snippet.,
                  PrintService]
     })
     export class AppComponent implements OnInit {
-      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     }
-```
+
 {% endhighlight %}
 {% endtabs %}
 
 You can change the open state of the hyperlink in the PDF Viewer by using the following code snippet,
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
+
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService, ToolbarService, NavigationService,
@@ -336,11 +334,11 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       public linkOpenState = 'NewTab';
   }
-```
+
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
+
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService, ToolbarService, NavigationService,
@@ -364,11 +362,11 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
                PrintService]
   })
   export class AppComponent implements OnInit {
-      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       public linkOpenState = 'NewTab';
   }
-```
+
 {% endhighlight %}
 {% endtabs %}
 

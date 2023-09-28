@@ -319,4 +319,41 @@ Here is an example of deleting rectangle, ellipse, arrow, path, and line in a bu
 
 {% previewsample "page.domainurl/samples/image-editor/default-cs5" %}
 
+## Image annotation
+
+The image annotation feature in the Image Editor provides the capability to add and customize images directly onto the image. With this feature, you can easily insert image or icons at specific locations within the image and customize various aspects of the image to meet your requirements. You have control over the customization options including rotate, flip, transparency for the image annotation.
+
+### Add an image annotation.
+
+The [`drawImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawimage) method serves the purpose of inserting an image into the Image Editor control, allowing for image annotations to be added. These image annotations can be used for various purposes, such as adding logos, watermarks, or decorative elements to the image.
+
+The [`drawImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawimage) method in the Image Editor control takes six parameters to define the properties of the rectangle annotation:
+
+* data: Specified the image data or url of the image to be inserted.
+
+* x: Specifies the x-coordinate of the top-left corner of the image.
+
+* y: Specifies the y-coordinate of the top-left corner of the image.
+
+* width: Specifies the width of the image.
+
+* height: Specifies the height of the image.
+
+* isAspectRatio: Specifies whether the image is rendered with aspect ratio or not.
+
+In the following example, you can use the [`drawImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawimage) method in the button click event.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/image-editor/default-cs37/app/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/image-editor/default-cs37/app/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/image-editor/default-cs37/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/image-editor/default-cs37" %}
 

@@ -34,8 +34,8 @@ The PDF Viewer has an option to show or hide the complete default toolbar. You c
 * **Show/Hide toolbar using enableToolbar API as in the following code snippet**
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
+
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
         ThumbnailViewService, ToolbarService,  NavigationService,
@@ -60,11 +60,11 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   export class AppComponent implements OnInit {
     public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   }
-```
+
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
+
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
         ThumbnailViewService, ToolbarService,  NavigationService,
@@ -88,10 +88,10 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
               PrintService]
   })
   export class AppComponent implements OnInit {
-    public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+    public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
     public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   }
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -113,8 +113,7 @@ The PDF Viewer has an option to show or hide these grouped items in the default 
 * **Show/Hide toolbaritem using toolbarSettings as in the following code snippet.**
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
 
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
@@ -141,11 +140,10 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       public toolbarSettings = { showTooltip: true, toolbarItems: 'DownloadOption' }
   }
-```
+
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
 
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
@@ -170,11 +168,11 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
               PrintService]
   })
   export class AppComponent implements OnInit {
-      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       public toolbarSettings = { showTooltip: true, toolbarItems: 'DownloadOption' }
   }
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -194,8 +192,8 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 The PDF Viewer has an option to show or hide the left toolbar with the thumbnails and bookmarks using enableNavigationToolbar API as in the following code sample.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
+
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService, ToolbarService, NavigationService,
@@ -222,11 +220,11 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       public toolbarSettings = { showTooltip: true, toolbarItems: ['OpenOption'] };
   }
-```
+
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
+
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService, ToolbarService, NavigationService,
@@ -251,11 +249,11 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
                PrintService]
   })
   export class AppComponent implements OnInit {
-      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       public toolbarSettings = { showTooltip: true, toolbarItems: ['OpenOption'] };
   }
-```
+
 {% endhighlight %}
 {% endtabs %}
 

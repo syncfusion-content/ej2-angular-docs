@@ -111,7 +111,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
                PrintService]
 })
 export class AppComponent implements OnInit {
-  public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+  public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
   public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   ngOnInit(): void {
   }
@@ -169,5 +169,6 @@ The output will appear as follows.
       ngOnInit(): void {
       }
    ```
+N> When configuring the server-backed PDF viewer, it's essential to understand that there is no need to include the pdfium.js and pdfium.wasm files. Unlike the standalone PDF viewer, which relies on these files for local rendering, the server-backed PDF viewer fetches and renders PDFs directly from the server. Consequently, you can exclude the copy command for deployment process, as they are not required to load and display PDFs in this context.
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Getting%20started).

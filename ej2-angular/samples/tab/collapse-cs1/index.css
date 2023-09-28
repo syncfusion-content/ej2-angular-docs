@@ -1,0 +1,32 @@
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.container {
+  min-width: 350px;
+  margin: 0 10px;
+}
+
+.e-content .e-item {
+  font-size: 12px;
+  margin: 10px;
+  text-align: justify;
+}
+
+.info {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.e-tab .e-content > .e-item.e-active.collapse { /* csslint allow: adjoining-classes */
+  display: none;
+}
+
+.e-tab .e-tab-header .e-indicator.collapse { /* csslint allow: adjoining-classes */
+  display: none;
+}

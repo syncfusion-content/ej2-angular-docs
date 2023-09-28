@@ -27,8 +27,7 @@ In the pan mode, if the free text annotation mode is entered, the PDF Viewer con
 Refer to the following code sample to switch to the Free Text annotation mode using a button click.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
 
 <button (click)="addFreeTextAnnotation()">FreeText</button>
 
@@ -44,11 +43,9 @@ addFreeTextAnnotation() {
   pdfviewer.annotationModule.setAnnotationMode("FreeText");
 }
   
-```
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
 
 <button (click)="addFreeTextAnnotation()">FreeText</button>
 
@@ -65,7 +62,6 @@ addFreeTextAnnotation() {
   pdfviewer.annotationModule.setAnnotationMode("FreeText");
 }
   
-```
 {% endhighlight %}
 {% endtabs %}
 
@@ -76,8 +72,7 @@ The free text annotations selection focus can be cleared by using the `setAnnota
 Refer to the following code sample to remove the selection focus from the annotation by using a button click.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
 
 <button (click)="RemoveSelection()">RemoveSelection</button>
 
@@ -93,11 +88,9 @@ RemoveSelection() {
   pdfviewer.annotationModule.setAnnotationMode('None');
 }
 
-```
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
 
 <button (click)="RemoveSelection()">RemoveSelection</button>
 
@@ -114,7 +107,6 @@ RemoveSelection() {
   pdfviewer.annotationModule.setAnnotationMode('None');
 }
 
-```
 {% endhighlight %}
 {% endtabs %}
 
@@ -259,8 +251,8 @@ After editing the default values, they will be changed to the selected values.
 Refer to the following code sample to set the default free text annotation settings.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -289,12 +281,11 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
     public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public freeTextSettings = { fillColor: 'green', borderColor: 'blue', fontColor: 'yellow' };
   }
-```
 
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -321,11 +312,10 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
   export class AppComponent implements OnInit {
     @ViewChild('pdfviewer')
     public pdfviewerControl: PdfViewerComponent;
-    public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
     public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public freeTextSettings = { fillColor: 'green', borderColor: 'blue', fontColor: 'yellow' };
   }
-```
 
 {% endhighlight %}
 {% endtabs %}
@@ -333,8 +323,8 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
 You can also enable the autofit support for free text annotation by using the enableAutoFit boolean property in freeTextSettings as below. The width of the free text rectangle box will be increased based on the text added to it.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -363,11 +353,11 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
       public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       public freeTextSettings = { enableAutoFit: true };
       }
-```
+
 {% endhighlight %}
 
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
+
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
@@ -394,11 +384,11 @@ import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
   export class AppComponent implements OnInit {
       @ViewChild('pdfviewer')
       public pdfviewerControl: PdfViewerComponent;
-      public service: string = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
       public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       public freeTextSettings = { enableAutoFit: true };
       }
-```
+
 {% endhighlight %}
 {% endtabs %}
 
