@@ -49,7 +49,6 @@ export class AppComponent implements OnInit {
     this.pdfviewerControl?.formDesignerModule.addFormField('Textbox', {name: 'DOS Month',bounds: { X: 386, Y: 923, Width: 35, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.addFormField('Textbox', {name: 'DOS Date',bounds: { X: 434, Y: 923, Width: 35, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.addFormField('Textbox', {name: 'DOS Year',bounds: { X: 482, Y: 923, Width: 35, Height: 24 },} as TextFieldSettings);
-    this.pdfviewerControl?.formDesignerModule.updateFormField(this.pdfviewerControl?.formFieldCollections[0], { backgroundColor: 'red' } as TextFieldSettings);
   }
 
   ngOnInit(): void {

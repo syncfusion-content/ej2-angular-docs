@@ -18,7 +18,7 @@ The PDF Viewer provides API for user interactions options provided in its built-
 
 {% tabs %}
 {% highlight js tabtitle="Standalone" %}
-```html
+
 <ejs-pdfviewer #pdfviewer id='pdfViewer'
                [documentPath]='document'
                [enableToolbar]=false
@@ -27,10 +27,10 @@ The PDF Viewer provides API for user interactions options provided in its built-
                (documentLoad)='documentLoaded($event)'
                style="height:640px; display: block">
 </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% highlight js tabtitle="Server-Backed" %}
-```html
+
 <ejs-pdfviewer #pdfviewer id='pdfViewer'
                [serviceUrl]='service'
                [documentPath]='document'
@@ -40,7 +40,7 @@ The PDF Viewer provides API for user interactions options provided in its built-
                (documentLoad)='documentLoaded($event)'
                style="height:640px; display: block">
 </ejs-pdfviewer>
-```
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -230,7 +230,7 @@ The PDF Viewer provides API for user interactions options provided in its built-
 
 {% tabs %}
 {% highlight js tabtitle="Standalone" %}
-```ts
+
 @ViewChild('pdfviewer')
 public pdfviewerControl: PdfViewerComponent;
 @ViewChild('customToolbar')
@@ -399,10 +399,10 @@ private readFile(args: any): void {
   }
 }
 }
-```
+
 {% endhighlight %}
 {% highlight js tabtitle="Server-Backed" %}
-```ts
+
 @ViewChild('pdfviewer')
 public pdfviewerControl: PdfViewerComponent;
 @ViewChild('customToolbar')
@@ -410,7 +410,7 @@ public customToolbar: ToolbarComponent;
 @ViewChild('zoomToolbar')
 public zoomToolbar: ToolbarComponent;
 public service: string =
-  'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+  'https://services.syncfusion.com/angular/production/api/pdfviewer';
 public document: string = 'https://cdn.syncfusion.com/content/pdf/hive-succinctly.pdf';
 constructor() { }
 ngOnInit(): void {
@@ -573,7 +573,7 @@ private readFile(args: any): void {
   }
 }
 }
-```
+
 {% endhighlight %}
 {% endtabs %}
 

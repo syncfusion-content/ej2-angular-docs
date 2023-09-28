@@ -17,9 +17,7 @@ The PDF Viewer provides interaction mode for easy interaction with the loaded PD
 In this mode, the text selection can be performed in the PDF document loaded in PDF Viewer. The panning and scrolling of the pages by touch cannot be performed in this mode. It allows users to select and copy text from the PDF files. This is helpful for copying and sharing text content. You can enable/disable the text selection using the following code snippet.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-
-```typescript
+{% highlight ts tabtitle="Standalone" %}
 
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
@@ -46,11 +44,8 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   }
 
-```
 {% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
-
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
 
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
@@ -75,11 +70,10 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
                PrintService]
   })
   export class AppComponent implements OnInit {
-      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   }
 
-```
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,9 +88,8 @@ In this mode, the panning and scrolling of the pages by touch can be performed i
 You can switch the interaction mode of PDF Viewer by using the following code snippet.,
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
+{% highlight ts tabtitle="Standalone" %}
 
-```typescript
 @Component({
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
@@ -117,11 +110,10 @@ You can switch the interaction mode of PDF Viewer by using the following code sn
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       public interaction = 'Pan';
   }
-```
+
 {% endhighlight %}
 {% highlight js tabtitle="Server-Backed" %}
 
-```typescript
 @Component({
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
@@ -140,11 +132,11 @@ You can switch the interaction mode of PDF Viewer by using the following code sn
                PrintService]
   })
   export class AppComponent implements OnInit {
-      public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+      public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       public interaction = 'Pan';
   }
-```
+
 {% endhighlight %}
 {% endtabs %}
 

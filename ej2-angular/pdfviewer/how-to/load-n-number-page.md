@@ -17,8 +17,7 @@ To utilize this capability in Syncfusion PDF Viewer, use the [initialRenderPages
 Using the `initialRenderPages` property judiciously is advisable, especially when dealing with larger documents. It is more suitable for scenarios where a smaller range of pages, such as 10-20, can be loaded to provide a quick initial view of the document.
 
 {% tabs %}
-{% highlight js tabtitle="Standalone" %}
-```typescript
+{% highlight ts tabtitle="Standalone" %}
 
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
@@ -49,10 +48,8 @@ export class AppComponent implements OnInit {
   }
 }
 
-```
 {% endhighlight %}
-{% highlight js tabtitle="Server-Backed" %}
-```typescript
+{% highlight ts tabtitle="Server-Backed" %}
 
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
@@ -78,14 +75,13 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
                PrintService, FormDesignerService, FormFieldsService]
 })
 export class AppComponent implements OnInit {
-  public service = 'https://ej2services.syncfusion.com/production/web-services/api/pdfviewer';
+  public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
   public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   public initialRender = 10;
   ngOnInit(): void {
   }
 }
 
-```
 {% endhighlight %}
 {% endtabs %}
 

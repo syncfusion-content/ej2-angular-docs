@@ -20,7 +20,6 @@ The following steps are used to customize the selection border.
 
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
-```html
 
 <ejs-pdfviewer id="pdfViewer"
                [documentPath]='document'
@@ -30,11 +29,9 @@ The following steps are used to customize the selection border.
                style="height:640px;display:block">
 </ejs-pdfviewer>
 
-```
 {% endhighlight %}
 
 {% highlight html tabtitle="Server-Backed" %}
-```html
 
 <ejs-pdfviewer id="pdfViewer"
                [serviceUrl]='service'
@@ -45,7 +42,6 @@ The following steps are used to customize the selection border.
                style="height:640px;display:block">
 </ejs-pdfviewer>
 
-```
 {% endhighlight %}
 {% endtabs %}
 
