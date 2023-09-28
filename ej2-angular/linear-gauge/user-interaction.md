@@ -20,13 +20,13 @@ Linear Gauge displays the details about a pointer value through [`tooltip`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs1/app/app.component.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs1/app/app.module.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs1/app/main.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ Tooltip in the Linear Gauge control can be formatted using the [`format`](https:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs2/app/app.component.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs2/app/app.module.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs2/app/main.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -60,13 +60,13 @@ The HTML element can be rendered in the tooltip of the Linear Gauge using the [`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs3/app/app.component.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs3/app/app.module.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs3/app/main.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -84,13 +84,13 @@ The tooltip can be customized using the following properties in [`tooltip`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs4/app/app.component.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs4/app/app.module.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs4/app/main.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -102,13 +102,13 @@ The tooltip is positioned at the **End** of the pointer. To change the position 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs5/app/app.component.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs5/app/app.module.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs5/app/main.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -120,13 +120,13 @@ To drag either marker or bar pointer to the desired axis value, set the [`enable
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs6/app/app.component.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs6/app/app.module.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs6/app/main.ts %}
+{% include code-snippet/linear-gauge/user-interaction-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -18,13 +18,13 @@ When you click on a HeatMap cell, the [cellClick](https://ej2.syncfusion.com/ang
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/events/events-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/events/events-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/events/events-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/events/events-cs1/app/main.ts %}
+{% include code-snippet/heatmap/events/events-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -37,13 +37,13 @@ When you double click on a HeatMap cell, the [cellDoubleClick](https://ej2.syncf
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/events/events-cs2/app/app.component.ts %}
+{% include code-snippet/heatmap/events/events-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs2/app/app.module.ts %}
+{% include code-snippet/heatmap/events/events-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/events/events-cs2/app/main.ts %}
+{% include code-snippet/heatmap/events/events-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,13 +55,13 @@ The [cellRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/events/events-cs3/app/app.component.ts %}
+{% include code-snippet/heatmap/events/events-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs3/app/app.module.ts %}
+{% include code-snippet/heatmap/events/events-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/events/events-cs3/app/main.ts %}
+{% include code-snippet/heatmap/events/events-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -73,13 +73,13 @@ When single or multiple cells in the HeatMap are selected, the [cellSelected](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/events/events-cs4/app/app.component.ts %}
+{% include code-snippet/heatmap/events/events-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs4/app/app.module.ts %}
+{% include code-snippet/heatmap/events/events-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/events/events-cs4/app/main.ts %}
+{% include code-snippet/heatmap/events/events-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -91,13 +91,13 @@ Once HeatMap has been completely rendered, the [created](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/events/events-cs5/app/app.component.ts %}
+{% include code-snippet/heatmap/events/events-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs5/app/app.module.ts %}
+{% include code-snippet/heatmap/events/events-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/events/events-cs5/app/main.ts %}
+{% include code-snippet/heatmap/events/events-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -109,13 +109,13 @@ The [legendRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/events/events-cs6/app/app.component.ts %}
+{% include code-snippet/heatmap/events/events-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs6/app/app.module.ts %}
+{% include code-snippet/heatmap/events/events-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/events/events-cs6/app/main.ts %}
+{% include code-snippet/heatmap/events/events-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -127,13 +127,13 @@ The [load](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#load) e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/events/events-cs7/app/app.component.ts %}
+{% include code-snippet/heatmap/events/events-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs7/app/app.module.ts %}
+{% include code-snippet/heatmap/events/events-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/events/events-cs7/app/main.ts %}
+{% include code-snippet/heatmap/events/events-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -145,13 +145,13 @@ Once HeatMap is loaded, the [loaded](https://ej2.syncfusion.com/angular/document
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/events/events-cs8/app/app.component.ts %}
+{% include code-snippet/heatmap/events/events-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs8/app/app.module.ts %}
+{% include code-snippet/heatmap/events/events-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/events/events-cs8/app/main.ts %}
+{% include code-snippet/heatmap/events/events-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -163,13 +163,13 @@ When the window is resized, the [resized](https://ej2.syncfusion.com/angular/doc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/events/events-cs9/app/app.component.ts %}
+{% include code-snippet/heatmap/events/events-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs9/app/app.module.ts %}
+{% include code-snippet/heatmap/events/events-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/events/events-cs9/app/main.ts %}
+{% include code-snippet/heatmap/events/events-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -181,13 +181,13 @@ The [tooltipRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/events/events-cs10/app/app.component.ts %}
+{% include code-snippet/heatmap/events/events-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs10/app/app.module.ts %}
+{% include code-snippet/heatmap/events/events-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/events/events-cs10/app/main.ts %}
+{% include code-snippet/heatmap/events/events-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

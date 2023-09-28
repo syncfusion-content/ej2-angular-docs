@@ -156,16 +156,16 @@ The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonD
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/DropdownTarget/app/app.component.ts %}
+{% include code-snippet/ribbon/DropdownTarget/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/DropdownTarget/app/app.module.ts %}
+{% include code-snippet/ribbon/DropdownTarget/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/DropdownTarget/app/main.ts %}
+{% include code-snippet/ribbon/DropdownTarget/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/DropdownTarget/app/app.component.html %}
+{% include code-snippet/ribbon/DropdownTarget/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -181,16 +181,16 @@ The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonS
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/SplitButtonTarget/app/app.component.ts %}
+{% include code-snippet/ribbon/SplitButtonTarget/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/SplitButtonTarget/app/app.module.ts %}
+{% include code-snippet/ribbon/SplitButtonTarget/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/SplitButtonTarget/app/main.ts %}
+{% include code-snippet/ribbon/SplitButtonTarget/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/SplitButtonTarget/app/app.component.html %}
+{% include code-snippet/ribbon/SplitButtonTarget/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -376,19 +376,19 @@ You can customize the ribbon items with non-built-in items or HTML content by se
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/Custom-Item/app/app.component.ts %}
+{% include code-snippet/ribbon/Custom-Item/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Custom-Item/app/app.module.ts %}
+{% include code-snippet/ribbon/Custom-Item/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/Custom-Item/app/main.ts %}
+{% include code-snippet/ribbon/Custom-Item/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/Custom-Item/app/app.component.html %}
+{% include code-snippet/ribbon/Custom-Item/src/app.component.html %}
 {% endhighlight %}
 {% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/ribbon/Custom-Item/app/app.component.css %}
+{% include code-snippet/ribbon/Custom-Item/src/app.component.css %}
 {% endhighlight %}
 {% endtabs %}
   

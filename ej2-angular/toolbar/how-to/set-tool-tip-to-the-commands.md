@@ -18,13 +18,13 @@ To change the [`tooltipText`](https://ej2.syncfusion.com/angular/documentation/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs4/app/app.component.ts %}
+{% include code-snippet/toolbar/toolbar-items-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs4/app/app.module.ts %}
+{% include code-snippet/toolbar/toolbar-items-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs4/app/main.ts %}
+{% include code-snippet/toolbar/toolbar-items-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

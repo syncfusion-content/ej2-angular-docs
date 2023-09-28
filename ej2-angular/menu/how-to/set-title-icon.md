@@ -14,13 +14,13 @@ In this sample , the title for settings icon can be achievable by using 'beforeI
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/menu/set-title-cs1/app/app.component.ts %}
+{% include code-snippet/menu/set-title-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/menu/set-title-cs1/app/app.module.ts %}
+{% include code-snippet/menu/set-title-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/menu/set-title-cs1/app/main.ts %}
+{% include code-snippet/menu/set-title-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

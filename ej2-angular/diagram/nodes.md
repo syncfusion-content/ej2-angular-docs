@@ -30,13 +30,13 @@ To create a node, define the [`node`](https://ej2.syncfusion.com/angular/documen
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/node-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/nodes/node-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/nodes/node-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/nodes/node-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/node-cs1/app/main.ts %}
+{% include code-snippet/diagram/nodes/node-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ The following code illustrates how to add a node.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/run-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/nodes/run-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/nodes/run-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/nodes/run-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/run-cs1/app/main.ts %}
+{% include code-snippet/diagram/nodes/run-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -107,13 +107,13 @@ The following code illustrates how to change the `pivot` value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/position-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/nodes/position-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/nodes/position-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/nodes/position-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/position-cs1/app/main.ts %}
+{% include code-snippet/diagram/nodes/position-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -135,13 +135,13 @@ The following code illustrates how to provide the mirror image of the original e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/position-cs2/app/app.component.ts %}
+{% include code-snippet/diagram/nodes/position-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/nodes/position-cs2/app/app.module.ts %}
+{% include code-snippet/diagram/nodes/position-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/position-cs2/app/main.ts %}
+{% include code-snippet/diagram/nodes/position-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -159,13 +159,13 @@ The following code illustrates how to customize the appearance of the shape.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/appear-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/nodes/appear-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/nodes/appear-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/nodes/appear-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/appear-cs1/app/main.ts %}
+{% include code-snippet/diagram/nodes/appear-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -193,13 +193,13 @@ There are two types of gradients as follows:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/linearGradient-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/nodes/linearGradient-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/nodes/linearGradient-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/nodes/linearGradient-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/linearGradient-cs1/app/main.ts %}
+{% include code-snippet/diagram/nodes/linearGradient-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -213,13 +213,13 @@ There are two types of gradients as follows:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/radialGradient-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/nodes/radialGradient-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/nodes/radialGradient-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/nodes/radialGradient-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/radialGradient-cs1/app/main.ts %}
+{% include code-snippet/diagram/nodes/radialGradient-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -231,13 +231,13 @@ Diagram provides support to add [`shadow`](https://ej2.syncfusion.com/angular/do
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/shadow-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/nodes/shadow-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/nodes/shadow-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/nodes/shadow-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/shadow-cs1/app/main.ts %}
+{% include code-snippet/diagram/nodes/shadow-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -249,13 +249,13 @@ The angle, distance, and opacity of the shadow can be customized with the shadow
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/shadow2-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/nodes/shadow2-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/nodes/shadow2-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/nodes/shadow2-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/shadow2-cs1/app/main.ts %}
+{% include code-snippet/diagram/nodes/shadow2-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -275,13 +275,13 @@ The following code example illustrates how to create an icon of various shapes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/icon-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/nodes/icon-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/nodes/icon-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/nodes/icon-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/icon-cs1/app/main.ts %}
+{% include code-snippet/diagram/nodes/icon-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

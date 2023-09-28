@@ -14,13 +14,13 @@ You can toggle the column visibility based on media queries, which are defined i
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -32,13 +32,13 @@ The tree/expander column is a column in the Gantt component, that has icons to e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/treecolumn-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/treecolumn-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/treecolumn-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/treecolumn-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/treecolumn-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/treecolumn-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -50,13 +50,13 @@ You can show or hide gantt columns dynamically using external buttons by invokin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/showhide-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/showhide-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/showhide-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/showhide-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/showhide-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/showhide-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

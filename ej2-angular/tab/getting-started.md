@@ -200,13 +200,13 @@ The following example illustrates the output in your browser.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tab/basic-cs4/app/app.component.ts %}
+{% include code-snippet/tab/basic-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/basic-cs4/app/app.module.ts %}
+{% include code-snippet/tab/basic-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tab/basic-cs4/app/main.ts %}
+{% include code-snippet/tab/basic-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -239,13 +239,13 @@ You need to follow the below structure of `ng-template` to render the Tab,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tab/basic-cs5/app/app.component.ts %}
+{% include code-snippet/tab/basic-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/basic-cs5/app/app.module.ts %}
+{% include code-snippet/tab/basic-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tab/basic-cs5/app/main.ts %}
+{% include code-snippet/tab/basic-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -274,13 +274,13 @@ You need to follow the below structure of HTML elements to render the Tab,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/tab/tab-container-cs1/app/app.component.ts %}
+{% include code-snippet/tab/tab-container-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/tab-container-cs1/app/app.module.ts %}
+{% include code-snippet/tab/tab-container-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/tab/tab-container-cs1/app/main.ts %}
+{% include code-snippet/tab/tab-container-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -24,13 +24,13 @@ The default items are displayed in the following table:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/columnmenu-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/columnmenu-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/columnmenu-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -47,13 +47,13 @@ During the resizing action, the gantt component triggers the below two events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-events-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/columnmenu-events-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-events-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/columnmenu-events-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-events-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/columnmenu-events-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,13 +66,13 @@ Actions for this customized items can be defined in the [`columnMenuClick`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cust-item-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/columnmenu-cust-item-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cust-item-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/columnmenu-cust-item-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cust-item-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/columnmenu-cust-item-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,13 +86,13 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cust-action-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/columns/columnmenu-cust-action-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cust-action-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/columns/columnmenu-cust-action-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cust-action-cs1/app/main.ts %}
+{% include code-snippet/gantt/columns/columnmenu-cust-action-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

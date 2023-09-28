@@ -22,13 +22,13 @@ The HeatMap cells can be selected using the following interactions, as shown in 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/selection/cellSelection-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/selection/cellSelection-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/selection/cellSelection-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/selection/cellSelection-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/selection/cellSelection-cs1/app/main.ts %}
+{% include code-snippet/heatmap/selection/cellSelection-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ In the HeatMap, the [enableMultiSelect](https://helpej2.syncfusion.com/angular/d
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/selection/singleCellSelection-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/selection/singleCellSelection-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/selection/singleCellSelection-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/selection/singleCellSelection-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/selection/singleCellSelection-cs1/app/main.ts %}
+{% include code-snippet/heatmap/selection/singleCellSelection-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ The [clearSelection](https://ej2.syncfusion.com/angular/documentation/api/heatma
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/selection/clearSelection-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/selection/clearSelection-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/selection/clearSelection-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/selection/clearSelection-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/selection/clearSelection-cs1/app/main.ts %}
+{% include code-snippet/heatmap/selection/clearSelection-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

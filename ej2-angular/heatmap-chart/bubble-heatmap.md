@@ -32,13 +32,13 @@ To render a bubble HeatMap with size series, set the [bubbleType](https://ej2.sy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeBubble-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeBubble-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeBubble-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeBubble-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeBubble-cs1/app/main.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeBubble-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -52,13 +52,13 @@ To represent the data points with variations in bubble colors, set the [bubbleTy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/colorBubble-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/colorBubble-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/colorBubble-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/colorBubble-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/colorBubble-cs1/app/main.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/colorBubble-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -72,13 +72,13 @@ To render the data points with bubble sector, set the [bubbleType](https://ej2.s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sectorBubble-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sectorBubble-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sectorBubble-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sectorBubble-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sectorBubble-cs1/app/main.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sectorBubble-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -102,13 +102,13 @@ The following example illustrates how to render a bubble HeatMap with different 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorTable-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorTable-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorTable-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorTable-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorTable-cs1/app/main.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorTable-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -121,13 +121,13 @@ The following example illustrates how to render a bubble HeatMap with different 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorCell-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorCell-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorCell-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorCell-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorCell-cs1/app/main.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorCell-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -145,13 +145,13 @@ The following example illustrates how to render a bubble HeatMap with different 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonTable-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonTable-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonTable-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonTable-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonTable-cs1/app/main.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonTable-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -164,13 +164,13 @@ The following example illustrates how to render a bubble HeatMap with different 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonCell-cs1/app/app.component.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonCell-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonCell-cs1/app/app.module.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonCell-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonCell-cs1/app/main.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonCell-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -185,13 +185,13 @@ The size and color of the bubbles in the **SizeAndColor** bubble HeatMap type ca
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonCell-cs2/app/app.component.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonCell-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonCell-cs2/app/app.module.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonCell-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonCell-cs2/app/main.ts %}
+{% include code-snippet/heatmap/bubble-heatmap/sizeAndColorJsonCell-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

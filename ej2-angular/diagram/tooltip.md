@@ -30,13 +30,13 @@ To show tooltip on mouse over, the [`tooltip`](https://ej2.syncfusion.com/angula
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tooltip/tooltip-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/tooltip/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/tooltip/tooltip-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/tooltip/tooltip-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tooltip/tooltip-cs1/app/main.ts %}
+{% include code-snippet/diagram/tooltip/tooltip-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -70,13 +70,13 @@ The tooltip can be customized for each node and connector. Remove the **InheritT
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipnodes-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/tooltip/tooltipnodes-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipnodes-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/tooltip/tooltipnodes-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipnodes-cs1/app/main.ts %}
+{% include code-snippet/diagram/tooltip/tooltipnodes-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -122,13 +122,13 @@ Here, the code provided below demonstrates the port tooltip Interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipports-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/tooltip/tooltipports-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipports-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/tooltip/tooltipports-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipports-cs1/app/main.ts %}
+{% include code-snippet/diagram/tooltip/tooltipports-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -142,13 +142,13 @@ The following code example illustrates how to add formatted HTML content to the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tooltip/tooltiptemplate-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/tooltip/tooltiptemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/tooltip/tooltiptemplate-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/tooltip/tooltiptemplate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tooltip/tooltiptemplate-cs1/app/main.ts %}
+{% include code-snippet/diagram/tooltip/tooltiptemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -166,13 +166,13 @@ The following code example illustrates how to position the tooltip around object
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipobject-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/tooltip/tooltipobject-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipobject-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/tooltip/tooltipobject-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipobject-cs1/app/main.ts %}
+{% include code-snippet/diagram/tooltip/tooltipobject-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -186,13 +186,13 @@ The following code example illustrates how to show tooltip at mouse position.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipmouse-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/tooltip/tooltipmouse-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipmouse-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/tooltip/tooltipmouse-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipmouse-cs1/app/main.ts %}
+{% include code-snippet/diagram/tooltip/tooltipmouse-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -204,13 +204,13 @@ To animate the tooltip, a set of specific animation effects are available, and i
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipanimation-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/tooltip/tooltipanimation-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipanimation-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/tooltip/tooltipanimation-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tooltip/tooltipanimation-cs1/app/main.ts %}
+{% include code-snippet/diagram/tooltip/tooltipanimation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

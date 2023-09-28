@@ -14,13 +14,13 @@ This section explains about how to open a sub menu on Context Menu item click. T
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/context-menu/getting-started-cs2/app/app.component.ts %}
+{% include code-snippet/context-menu/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/context-menu/getting-started-cs2/app/app.module.ts %}
+{% include code-snippet/context-menu/getting-started-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/context-menu/getting-started-cs2/app/main.ts %}
+{% include code-snippet/context-menu/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

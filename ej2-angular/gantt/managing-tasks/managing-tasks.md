@@ -20,13 +20,13 @@ The following code example demonstrates editing in the Gantt component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/celledit-cs2/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/celledit-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/celledit-cs2/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/celledit-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/celledit-cs2/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/celledit-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -42,13 +42,13 @@ You can set default values when new task dialog opens using [actionBegin](https:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/addrow-toolbar-cs2/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/addrow-toolbar-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/addrow-toolbar-cs2/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/addrow-toolbar-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/addrow-toolbar-cs2/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/addrow-toolbar-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

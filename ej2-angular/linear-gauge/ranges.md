@@ -15,13 +15,13 @@ Range is the set of values in the axis. The range can be defined using the [`sta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs1/app/app.component.ts %}
+{% include code-snippet/linear-gauge/ranges-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs1/app/app.module.ts %}
+{% include code-snippet/linear-gauge/ranges-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs1/app/main.ts %}
+{% include code-snippet/linear-gauge/ranges-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -40,13 +40,13 @@ Ranges can be customized using the following properties in [`e-range`](https://e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs2/app/app.component.ts %}
+{% include code-snippet/linear-gauge/ranges-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs2/app/app.module.ts %}
+{% include code-snippet/linear-gauge/ranges-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs2/app/main.ts %}
+{% include code-snippet/linear-gauge/ranges-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ To set the color of the labels like the range color, set the [`useRangeColor`](h
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs3/app/app.component.ts %}
+{% include code-snippet/linear-gauge/ranges-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs3/app/app.module.ts %}
+{% include code-snippet/linear-gauge/ranges-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs3/app/main.ts %}
+{% include code-snippet/linear-gauge/ranges-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -76,13 +76,13 @@ Multiple ranges can be added to the Linear Gauge by adding collections of [`e-ra
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs4/app/app.component.ts %}
+{% include code-snippet/linear-gauge/ranges-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs4/app/app.module.ts %}
+{% include code-snippet/linear-gauge/ranges-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs4/app/main.ts %}
+{% include code-snippet/linear-gauge/ranges-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -101,13 +101,13 @@ Using linear-gradient, colors will be applied in a linear progression. The start
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs5/app/app.component.ts %}
+{% include code-snippet/linear-gauge/ranges-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs5/app/app.module.ts %}
+{% include code-snippet/linear-gauge/ranges-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs5/app/main.ts %}
+{% include code-snippet/linear-gauge/ranges-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -119,13 +119,13 @@ Using radial gradient, colors will be applied in circular progression. The inner
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs6/app/app.component.ts %}
+{% include code-snippet/linear-gauge/ranges-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs6/app/app.module.ts %}
+{% include code-snippet/linear-gauge/ranges-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/linear-gauge/ranges-cs6/app/main.ts %}
+{% include code-snippet/linear-gauge/ranges-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

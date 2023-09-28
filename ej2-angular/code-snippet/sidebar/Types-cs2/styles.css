@@ -134,7 +134,7 @@ body {
 
 @font-face {
     font-family: 'e-icons';
-    src: url('../../../sidebar/fonts/e-icons-metro.ttf') format('truetype'), url('../../../sidebar/fonts/e-icons-metro.woff') format('woff'), url('../../../sidebar/fonts/e-icons-metro.eot') format('eot'), url('../../../sidebar/fonts/e-icons-metro.svg?#e-icons-metro') format('svg');
+    src: url('sidebar/fonts/e-icons-metro.ttf') format('truetype'), url('sidebar/fonts/e-icons-metro.woff') format('woff'), url('sidebar/fonts/e-icons-metro.eot') format('eot'), url('sidebar/fonts/e-icons-metro.svg?#e-icons-metro') format('svg');
     font-weight: normal;
     font-style: normal;
 }

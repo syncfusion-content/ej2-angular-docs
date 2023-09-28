@@ -14,13 +14,13 @@ The rating component supports tooltip to show additional information in rating i
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/tooltip/showtooltip-cs/app/app.component.ts %}
+{% include code-snippet/rating/tooltip/showtooltip-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/tooltip/showtooltip-cs/app/app.module.ts %}
+{% include code-snippet/rating/tooltip/showtooltip-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/tooltip/showtooltip-cs/app/main.ts %}
+{% include code-snippet/rating/tooltip/showtooltip-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,13 +32,13 @@ You can use the [`tooltipTemplate`](https://ej2.syncfusion.com/angular/documenta
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/tooltip/tooltip-template-cs/app/app.component.ts %}
+{% include code-snippet/rating/tooltip/tooltip-template-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/tooltip/tooltip-template-cs/app/app.module.ts %}
+{% include code-snippet/rating/tooltip/tooltip-template-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/tooltip/tooltip-template-cs/app/main.ts %}
+{% include code-snippet/rating/tooltip/tooltip-template-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -52,13 +52,13 @@ You can customize the appearance of the tooltips using the `cssClass` property o
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/tooltip/custom-tooltip-cs/app/app.component.ts %}
+{% include code-snippet/rating/tooltip/custom-tooltip-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/tooltip/custom-tooltip-cs/app/app.module.ts %}
+{% include code-snippet/rating/tooltip/custom-tooltip-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/tooltip/custom-tooltip-cs/app/main.ts %}
+{% include code-snippet/rating/tooltip/custom-tooltip-cs/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.css" %}
 {% include code-snippet/rating/tooltip/custom-tooltip-cs/index.css %}

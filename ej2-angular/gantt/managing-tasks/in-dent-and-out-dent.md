@@ -18,13 +18,13 @@ Indent and Outdent of a task are used to update the level of the task in hierarc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/indent-outdent-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/indent-outdent-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/indent-outdent-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/indent-outdent-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/indent-outdent-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/indent-outdent-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ In Gantt, all create, update, delete operations can be disabled by set `readOnly
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/managing-tasks/readOnly-cs1/app/app.component.ts %}
+{% include code-snippet/gantt/managing-tasks/readOnly-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/readOnly-cs1/app/app.module.ts %}
+{% include code-snippet/gantt/managing-tasks/readOnly-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/managing-tasks/readOnly-cs1/app/main.ts %}
+{% include code-snippet/gantt/managing-tasks/readOnly-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

@@ -18,13 +18,13 @@ The following sample demonstrates the above functionalities.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/colorpicker/custom/palette-cs1/app/app.component.ts %}
+{% include code-snippet/colorpicker/custom/palette-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/colorpicker/custom/palette-cs1/app/app.module.ts %}
+{% include code-snippet/colorpicker/custom/palette-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/colorpicker/custom/palette-cs1/app/main.ts %}
+{% include code-snippet/colorpicker/custom/palette-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -38,13 +38,13 @@ In the following sample, the ColorPicker is rendered without input area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/colorpicker/how-to-cs1/app/app.component.ts %}
+{% include code-snippet/colorpicker/how-to-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/colorpicker/how-to-cs1/app/app.module.ts %}
+{% include code-snippet/colorpicker/how-to-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/colorpicker/how-to-cs1/app/main.ts %}
+{% include code-snippet/colorpicker/how-to-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -58,13 +58,13 @@ The following sample show the customized color picker handle.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/colorpicker/custom/handle-cs1/app/app.component.ts %}
+{% include code-snippet/colorpicker/custom/handle-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/colorpicker/custom/handle-cs1/app/app.module.ts %}
+{% include code-snippet/colorpicker/custom/handle-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/colorpicker/custom/handle-cs1/app/main.ts %}
+{% include code-snippet/colorpicker/custom/handle-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -78,13 +78,13 @@ In the following sample, the `picker` icon is added to primary button and using 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/colorpicker/icon-cs1/app/app.component.ts %}
+{% include code-snippet/colorpicker/icon-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/colorpicker/icon-cs1/app/app.module.ts %}
+{% include code-snippet/colorpicker/icon-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/colorpicker/icon-cs1/app/main.ts %}
+{% include code-snippet/colorpicker/icon-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -100,13 +100,13 @@ The following sample shows the color picker with input.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/colorpicker/input-cs1/app/app.component.ts %}
+{% include code-snippet/colorpicker/input-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/colorpicker/input-cs1/app/app.module.ts %}
+{% include code-snippet/colorpicker/input-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/colorpicker/input-cs1/app/main.ts %}
+{% include code-snippet/colorpicker/input-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -118,13 +118,13 @@ The color picker UI can be customized in all possible ways. The following sample
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/colorpicker/position-cs1/app/app.component.ts %}
+{% include code-snippet/colorpicker/position-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/colorpicker/position-cs1/app/app.module.ts %}
+{% include code-snippet/colorpicker/position-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/colorpicker/position-cs1/app/main.ts %}
+{% include code-snippet/colorpicker/position-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

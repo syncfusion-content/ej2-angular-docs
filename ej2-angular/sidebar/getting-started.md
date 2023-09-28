@@ -176,13 +176,13 @@ The following samples shows the sidebar component in browser.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sidebar/getting-started-cs1/app/app.component.ts %}
+{% include code-snippet/sidebar/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sidebar/getting-started-cs1/app/app.module.ts %}
+{% include code-snippet/sidebar/getting-started-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sidebar/getting-started-cs1/app/main.ts %}
+{% include code-snippet/sidebar/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -199,13 +199,13 @@ N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sidebar/showBackDrop-cs1/app/app.component.ts %}
+{% include code-snippet/sidebar/showBackDrop-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sidebar/showBackDrop-cs1/app/app.module.ts %}
+{% include code-snippet/sidebar/showBackDrop-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sidebar/showBackDrop-cs1/app/main.ts %}
+{% include code-snippet/sidebar/showBackDrop-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -219,13 +219,13 @@ Positioning the Sidebar to the right or left of the main content can be achieved
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sidebar/position-cs1/app/app.component.ts %}
+{% include code-snippet/sidebar/position-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sidebar/position-cs1/app/app.module.ts %}
+{% include code-snippet/sidebar/position-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sidebar/position-cs1/app/main.ts %}
+{% include code-snippet/sidebar/position-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -237,13 +237,13 @@ Animation transitions can be set while expanding or collapsing the Sidebar using
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sidebar/animate-cs1/app/app.component.ts %}
+{% include code-snippet/sidebar/animate-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sidebar/animate-cs1/app/app.module.ts %}
+{% include code-snippet/sidebar/animate-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sidebar/animate-cs1/app/main.ts %}
+{% include code-snippet/sidebar/animate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -255,13 +255,13 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sidebar/document-click-cs1/app/app.component.ts %}
+{% include code-snippet/sidebar/document-click-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sidebar/document-click-cs1/app/app.module.ts %}
+{% include code-snippet/sidebar/document-click-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sidebar/document-click-cs1/app/main.ts %}
+{% include code-snippet/sidebar/document-click-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -273,13 +273,13 @@ Expand or collapse the Sidebar while swiping in touch devices using [`enableGest
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/sidebar/gestures-cs1/app/app.component.ts %}
+{% include code-snippet/sidebar/gestures-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sidebar/gestures-cs1/app/app.module.ts %}
+{% include code-snippet/sidebar/gestures-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/sidebar/gestures-cs1/app/main.ts %}
+{% include code-snippet/sidebar/gestures-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

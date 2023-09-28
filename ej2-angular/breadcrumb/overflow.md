@@ -18,13 +18,13 @@ In the following example, the maxItems is set as 3 with overflowMode as Default.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs5/app/app.component.ts %}
+{% include code-snippet/breadcrumb/navigations-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs5/app/app.module.ts %}
+{% include code-snippet/breadcrumb/navigations-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs5/app/main.ts %}
+{% include code-snippet/breadcrumb/navigations-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -45,13 +45,13 @@ Collapsed mode shows the first and last Breadcrumb items and hides the remaining
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs6/app/app.component.ts %}
+{% include code-snippet/breadcrumb/navigations-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs6/app/app.module.ts %}
+{% include code-snippet/breadcrumb/navigations-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs6/app/main.ts %}
+{% include code-snippet/breadcrumb/navigations-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -63,13 +63,13 @@ Menu mode shows the number of Breadcrumb items that can be accommodated within t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs7/app/app.component.ts %}
+{% include code-snippet/breadcrumb/navigations-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs7/app/app.module.ts %}
+{% include code-snippet/breadcrumb/navigations-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs7/app/main.ts %}
+{% include code-snippet/breadcrumb/navigations-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -81,13 +81,13 @@ Wrap mode wraps the items to multiple lines when the Breadcrumb’s width exceed
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs8/app/app.component.ts %}
+{% include code-snippet/breadcrumb/navigations-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs8/app/app.module.ts %}
+{% include code-snippet/breadcrumb/navigations-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs8/app/main.ts %}
+{% include code-snippet/breadcrumb/navigations-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -99,13 +99,13 @@ Scroll mode shows an HTML scroll bar when the Breadcrumb’s width exceeds the c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs9/app/app.component.ts %}
+{% include code-snippet/breadcrumb/navigations-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs9/app/app.module.ts %}
+{% include code-snippet/breadcrumb/navigations-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs9/app/main.ts %}
+{% include code-snippet/breadcrumb/navigations-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -117,13 +117,13 @@ Hidden mode shows the maximum number of items possible in the container space an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs10/app/app.component.ts %}
+{% include code-snippet/breadcrumb/navigations-cs10/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs10/app/app.module.ts %}
+{% include code-snippet/breadcrumb/navigations-cs10/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs10/app/main.ts %}
+{% include code-snippet/breadcrumb/navigations-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

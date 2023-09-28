@@ -21,13 +21,13 @@ When rendering the Carousel component using items binding, you can assign templa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/carousel/default-cs14/app/app.component.ts %}
+{% include code-snippet/carousel/default-cs14/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs14/app/app.module.ts %}
+{% include code-snippet/carousel/default-cs14/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/carousel/default-cs14/app/main.ts %}
+{% include code-snippet/carousel/default-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -39,13 +39,13 @@ When rendering the Carousel component using data binding, you can assign a commo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/carousel/default-cs15/app/app.component.ts %}
+{% include code-snippet/carousel/default-cs15/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs15/app/app.module.ts %}
+{% include code-snippet/carousel/default-cs15/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/carousel/default-cs15/app/main.ts %}
+{% include code-snippet/carousel/default-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -64,13 +64,13 @@ Using the [`selectedIndex`](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/carousel/default-cs16/app/app.component.ts %}
+{% include code-snippet/carousel/default-cs16/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs16/app/app.module.ts %}
+{% include code-snippet/carousel/default-cs16/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/carousel/default-cs16/app/main.ts %}
+{% include code-snippet/carousel/default-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -82,13 +82,13 @@ Using the [`prev`](https://ej2.syncfusion.com/angular/documentation/api/carousel
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/carousel/default-cs17/app/app.component.ts %}
+{% include code-snippet/carousel/default-cs17/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs17/app/app.module.ts %}
+{% include code-snippet/carousel/default-cs17/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/carousel/default-cs17/app/main.ts %}
+{% include code-snippet/carousel/default-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -100,13 +100,13 @@ The Carousel component supports to show one complete slide and a partial view of
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/carousel/partial-visible-cs1/app/app.component.ts %}
+{% include code-snippet/carousel/partial-visible-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/partial-visible-cs1/app/app.module.ts %}
+{% include code-snippet/carousel/partial-visible-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/carousel/partial-visible-cs1/app/main.ts %}
+{% include code-snippet/carousel/partial-visible-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -122,13 +122,13 @@ The following example code depicts the functionality of `partialVisible` and wit
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/carousel/partial-visible-cs2/app/app.component.ts %}
+{% include code-snippet/carousel/partial-visible-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/partial-visible-cs2/app/app.module.ts %}
+{% include code-snippet/carousel/partial-visible-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/carousel/partial-visible-cs2/app/main.ts %}
+{% include code-snippet/carousel/partial-visible-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

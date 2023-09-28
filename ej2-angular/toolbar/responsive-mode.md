@@ -39,13 +39,13 @@ The default overflow mode of the Toolbar is `Scrollable`. Scrollable display mod
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs7/app/app.component.ts %}
+{% include code-snippet/toolbar/toolbar-items-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs7/app/app.module.ts %}
+{% include code-snippet/toolbar/toolbar-items-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs7/app/main.ts %}
+{% include code-snippet/toolbar/toolbar-items-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -79,13 +79,13 @@ If primary priority commands also exceed available space, they are moved to the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs8/app/app.component.ts %}
+{% include code-snippet/toolbar/toolbar-items-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs8/app/app.module.ts %}
+{% include code-snippet/toolbar/toolbar-items-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs8/app/main.ts %}
+{% include code-snippet/toolbar/toolbar-items-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -109,13 +109,13 @@ In the following code sample, text is only visible in the popup container and no
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs9/app/app.component.ts %}
+{% include code-snippet/toolbar/toolbar-items-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs9/app/app.module.ts %}
+{% include code-snippet/toolbar/toolbar-items-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs9/app/main.ts %}
+{% include code-snippet/toolbar/toolbar-items-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -127,16 +127,16 @@ By default, the toolbar renders with a minimum height to render items properly. 
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/toolbar/minimum-height-cs1/app/app.component.html %}
+{% include code-snippet/toolbar/minimum-height-cs1/src/app.component.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/toolbar/minimum-height-cs1/app/app.component.ts %}
+{% include code-snippet/toolbar/minimum-height-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/minimum-height-cs1/app/app.module.ts %}
+{% include code-snippet/toolbar/minimum-height-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/toolbar/minimum-height-cs1/app/main.ts %}
+{% include code-snippet/toolbar/minimum-height-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

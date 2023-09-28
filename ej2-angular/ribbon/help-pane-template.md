@@ -14,19 +14,19 @@ The help pane is dedicated area where the users can define help contents like co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/ribbon/HelpPaneTemplate/app/app.component.ts %}
+{% include code-snippet/ribbon/HelpPaneTemplate/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/HelpPaneTemplate/app/app.module.ts %}
+{% include code-snippet/ribbon/HelpPaneTemplate/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/ribbon/HelpPaneTemplate/app/main.ts %}
+{% include code-snippet/ribbon/HelpPaneTemplate/src/main.ts %}
 {% endhighlight %}
 {% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/ribbon/HelpPaneTemplate/app/app.component.css %}
+{% include code-snippet/ribbon/HelpPaneTemplate/src/app.component.css %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/ribbon/HelpPaneTemplate/app/app.component.html %}
+{% include code-snippet/ribbon/HelpPaneTemplate/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
   

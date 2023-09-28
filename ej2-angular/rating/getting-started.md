@@ -138,13 +138,13 @@ The following example shows a default Rating component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/getting-started/default-cs/app/app.component.ts %}
+{% include code-snippet/rating/getting-started/default-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/getting-started/default-cs/app/app.module.ts %}
+{% include code-snippet/rating/getting-started/default-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/getting-started/default-cs/app/main.ts %}
+{% include code-snippet/rating/getting-started/default-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -156,13 +156,13 @@ You can set the rating value by using the [`value`](https://ej2.syncfusion.com/a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rating/getting-started/value-cs/app/app.component.ts %}
+{% include code-snippet/rating/getting-started/value-cs/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/getting-started/value-cs/app/app.module.ts %}
+{% include code-snippet/rating/getting-started/value-cs/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rating/getting-started/value-cs/app/main.ts %}
+{% include code-snippet/rating/getting-started/value-cs/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

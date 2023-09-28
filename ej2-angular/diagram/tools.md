@@ -20,13 +20,13 @@ To draw a shape, set the JSON of that shape to the drawType property of the diag
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tools/rectangle-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/tools/rectangle-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/tools/rectangle-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/tools/rectangle-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tools/rectangle-cs1/app/main.ts %}
+{% include code-snippet/diagram/tools/rectangle-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,13 +36,13 @@ The following code example illustrates how to draw a path.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tools/path-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/tools/path-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/tools/path-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/tools/path-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tools/path-cs1/app/main.ts %}
+{% include code-snippet/diagram/tools/path-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -54,13 +54,13 @@ To draw connectors, set the JSON of the connector to the drawType property. The 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tools/connector-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/tools/connector-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/tools/connector-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/tools/connector-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tools/connector-cs1/app/main.ts %}
+{% include code-snippet/diagram/tools/connector-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -72,13 +72,13 @@ Diagram allows you to create a textNode, when you click on the diagram page. The
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tools/text-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/tools/text-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/tools/text-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/tools/text-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tools/text-cs1/app/main.ts %}
+{% include code-snippet/diagram/tools/text-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -94,13 +94,13 @@ The following code illustrates how to draw a polygon shape.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tools/polygon-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/tools/polygon-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/tools/polygon-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/tools/polygon-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tools/polygon-cs1/app/main.ts %}
+{% include code-snippet/diagram/tools/polygon-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -114,13 +114,13 @@ The following code illustrates how to draw a polyline connector.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tools/polyline-cs1/app/app.component.ts %}
+{% include code-snippet/diagram/tools/polyline-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/tools/polyline-cs1/app/app.module.ts %}
+{% include code-snippet/diagram/tools/polyline-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tools/polyline-cs1/app/main.ts %}
+{% include code-snippet/diagram/tools/polyline-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

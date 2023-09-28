@@ -41,13 +41,13 @@ The following example demonstrates the usage of standard mask elements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maskedtextbox/getting-started-cs4/app/app.component.ts %}
+{% include code-snippet/maskedtextbox/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maskedtextbox/getting-started-cs4/app/app.module.ts %}
+{% include code-snippet/maskedtextbox/getting-started-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maskedtextbox/getting-started-cs4/app/main.ts %}
+{% include code-snippet/maskedtextbox/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -65,13 +65,13 @@ In the following example, non-mask element `P` accepts the values `P, A, p, a` a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maskedtextbox/getting-started-cs5/app/app.component.ts %}
+{% include code-snippet/maskedtextbox/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maskedtextbox/getting-started-cs5/app/app.module.ts %}
+{% include code-snippet/maskedtextbox/getting-started-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maskedtextbox/getting-started-cs5/app/main.ts %}
+{% include code-snippet/maskedtextbox/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,13 +86,13 @@ In the following example, regular expression has been set for each input places.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maskedtextbox/regularExpression-cs1/app/app.component.ts %}
+{% include code-snippet/maskedtextbox/regularExpression-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maskedtextbox/regularExpression-cs1/app/app.module.ts %}
+{% include code-snippet/maskedtextbox/regularExpression-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maskedtextbox/regularExpression-cs1/app/main.ts %}
+{% include code-snippet/maskedtextbox/regularExpression-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -107,13 +107,13 @@ The following example demonstrates the MaskedTextBox with customized prompt char
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/maskedtextbox/getting-started-cs6/app/app.component.ts %}
+{% include code-snippet/maskedtextbox/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maskedtextbox/getting-started-cs6/app/app.module.ts %}
+{% include code-snippet/maskedtextbox/getting-started-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/maskedtextbox/getting-started-cs6/app/main.ts %}
+{% include code-snippet/maskedtextbox/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
