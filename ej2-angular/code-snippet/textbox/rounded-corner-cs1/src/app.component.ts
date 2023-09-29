@@ -17,7 +17,8 @@ import { Component } from '@angular/core';
                     <label class="e-float-text">Enter Date</label>
                     <span class="e-input-group-icon e-input-popup-date" ></span>
                 </div>
-               </div>`
+               </div>`,
+    styleUrls:['./index.css']
 })
 
 export class AppComponent {
