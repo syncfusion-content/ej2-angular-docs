@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting Angular Grid component with Templates | Syncfusion
+title: Exporting Templates in Angular Grid control | Syncfusion
 description: Learn here all about Exporting grids with templates in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Exporting grid with templates
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Exporting grid with templates in ##Platform_Name## Grid control
+# Exporting grid with templates in Angular Grid control
 
 The grid offers the option to export the column, detail, and caption templates to an Excel document. The template contains images, hyperlinks, and customized text.
 
