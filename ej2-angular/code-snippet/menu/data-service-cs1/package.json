@@ -15,6 +15,7 @@
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@syncfusion/ej2-angular-navigations": "*",
     "@syncfusion/ej2-base": "*",
+    "@syncfusion/ej2-data": "*",
     "@syncfusion/ej2-navigations": "*",
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-angular-dropdowns": "*",
