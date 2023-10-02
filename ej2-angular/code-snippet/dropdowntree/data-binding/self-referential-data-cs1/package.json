@@ -18,6 +18,7 @@
     "@syncfusion/ej2-angular-dropdowns": "*",
     "@syncfusion/ej2-dropdowns": "*",
     "@syncfusion/ej2-base": "*",
+    "@syncfusion/ej2-data": "*",
     "@syncfusion/ej2-popups": "*",
     "@syncfusion/ej2-inputs": "*",
     "@syncfusion/ej2-lists": "*",

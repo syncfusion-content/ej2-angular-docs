@@ -25,6 +25,7 @@
     "@syncfusion/ej2-richtexteditor": "*",
     "@syncfusion/ej2-calendars": "*",
     "@syncfusion/ej2-angular-base": "*",
+    "@syncfusion/ej2-treemap": "*",
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
     "@angular/compiler": "^15.0.0",

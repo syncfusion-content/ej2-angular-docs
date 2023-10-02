@@ -15,6 +15,7 @@
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@syncfusion/ej2-angular-inplace-editor": "*",
     "@syncfusion/ej2-base": "*",
+    "@syncfusion/ej2-data": "*",
     "@syncfusion/ej2-buttons": "*",
     "@syncfusion/ej2-splitbuttons": "*",
     "@syncfusion/ej2-dropdowns": "*",

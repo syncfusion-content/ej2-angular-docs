@@ -23,6 +23,7 @@
     "@syncfusion/ej2-layouts": "*",
     "@syncfusion/ej2-grids": "*",
     "@syncfusion/ej2-angular-base": "*",
+    "@syncfusion/ej2-filemanager": "*",
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
     "@angular/compiler": "^15.0.0",

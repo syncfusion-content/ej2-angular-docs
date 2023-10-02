@@ -1,0 +1,45 @@
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { PivotView, FieldListService, IDataSet, IDataOptions } from '@syncfusion/ej2-angular-pivotview';
+import { Pivot_Data } from './datasource';
+import { Button } from '@syncfusion/ej2-buttons';
+
+@Component({
+    selector: 'app-container',
+    providers: [FieldListService],
+    template: `<div class="col-md-2"><button ej-button id='print'>Print</button></div>
+    <div class="col-md-8"><ejs-pivotview #pivotview id='PivotView' height=height [dataSourceSettings]=dataSourceSettings width=width></ejs-pivotview></div>`
+})
+export class AppComponent implements OnInit {
+
+    public width?: string;
+    public height?: number;
+    public dataSourceSettings?: IDataOptions;
+    public button?: Button;
+
+    @ViewChild('pivotview', { static: false })
+    public pivotGridObj?: PivotView;
+
+    ngOnInit(): void {
+
+        this.width = "100%";
+        this.height = 350;
+
+        this.dataSourceSettings = {
+            expandAll: false,
+            dataSource: Pivot_Data as IDataSet[],
+            columns: [{ name: 'Year' }, { name: 'Quarter' }],
+            values: [{ name: 'Sold' }, { name: 'Amount' }],
+            rows: [{ name: 'Country' }, { name: 'Products' }]
+        };
+
+        this.button = new Button({ isPrimary: true });
+        this.button.appendTo('#print');
+
+        this.button.element.onclick = (): void => {
+            this.pivotGridObj?.grid.print();
+        };
+    }
+}
+
+
+
