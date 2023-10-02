@@ -13,6 +13,7 @@
     "@angular/core": "^15.0.0",
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
+    "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-angular-layouts": "*",
     "@syncfusion/ej2-angular-buttons": "*",
     "@syncfusion/ej2-angular-inputs": "*",

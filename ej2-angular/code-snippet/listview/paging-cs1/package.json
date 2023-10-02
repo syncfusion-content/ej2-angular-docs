@@ -17,6 +17,7 @@
     "@syncfusion/ej2-angular-grids": "*",
     "@syncfusion/ej2-angular-lists": "*",
     "@syncfusion/ej2-base": "*",
+    "@syncfusion/ej2-data": "*",
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-angular-popups": "*",
     "@syncfusion/ej2-angular-inputs": "*",
