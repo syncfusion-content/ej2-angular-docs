@@ -5,11 +5,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template: `<ej-accumulationchart id="chart-container">
+    template: `<ejs-accumulationchart id="chart-container">
         <e-accumulation-series-collection>
             <e-accumulation-series width='400px' type='Pyramid' [dataSource]='pyramidData' xName='x' yName='y' [dataLabel]='datalabel'></e-accumulation-series>
         </e-accumulation-series-collection>
-    </ej-accumulationchart>`
+    </ejs-accumulationchart>`
 })
 export class AppComponent implements OnInit {
     public pyramidData?: Object[];

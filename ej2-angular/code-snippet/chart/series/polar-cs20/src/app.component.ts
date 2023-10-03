@@ -2,14 +2,13 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChartComponent } from '@syncfusion/ej2-angular-charts';
-import { exportData } from './datasource';
 
 @Component({
     selector: 'app-container',
     template: `<ejs-chart #chart id='chart-container' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
             [title]='title' >
             <e-series-collection>
-                <e-series [dataSource]='chartData' type='Column' xName='x' yName='y' width=2> </e-series>
+                <e-series [dataSource]='exportData' type='Column' xName='x' yName='y' width=2> </e-series>
             </e-series-collection>
     </ejs-chart>   
     <button ej-button id='print' (click)='export()'>Export</button>`
@@ -18,11 +17,12 @@ export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
     public title?: string;
     public primaryYAxis?: Object;
-    public chartData?: Object[];
+    public exportData?: Object[];
     @ViewChild('chart')
     public chart?: ChartComponent;
     ngOnInit(): void {
-        this.chartData = exportData;
+        this.exportData = [{ x: 'John', y: 10000 }, { x: 'Jake', y: 12000 }, { x: 'Peter', y: 18000 },
+        { x: 'James', y: 11000 }, { x: 'Mary', y: 9700 }];
         this.primaryXAxis = {
             title: 'Manager',
             valueType: 'Category',

@@ -15,13 +15,13 @@ In the following example, each cell value of the **Sold** field's actual value 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs314/app/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs314/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs314/app/app.module.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs314/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs314/app/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs314/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

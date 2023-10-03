@@ -25,6 +25,7 @@
     "@syncfusion/ej2-notifications": "*",
     "@syncfusion/ej2-angular-base": "*",
     "@angular/animations": "^15.0.0",
+    "@syncfusion/ej2-data": "*",
     "@angular/common": "^15.0.0",
     "@angular/compiler": "^15.0.0",
     "@angular/forms": "^15.0.0",
