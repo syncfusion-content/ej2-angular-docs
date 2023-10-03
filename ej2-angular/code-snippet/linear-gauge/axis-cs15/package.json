@@ -13,6 +13,7 @@
     "@angular/core": "^15.0.0",
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
+    "@syncfusion/ej2-lineargauge": "*",
     "@syncfusion/ej2-angular-lineargauge": "*",
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-angular-popups": "*",

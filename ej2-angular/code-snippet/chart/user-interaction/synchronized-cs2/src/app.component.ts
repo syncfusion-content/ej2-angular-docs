@@ -14,7 +14,7 @@ import { Browser } from '@syncfusion/ej2-base';
                 [title]='title1' [titleStyle]="titleStyle" [crosshair]='crosshair'
                 (chartMouseLeave)= 'chart1MouseLeave($event)' (chartMouseMove)='chart1MouseMove($event)' (chartMouseUp)='chart1MouseUp($event)'>
                 <e-series-collection>
-                    <e-series [dataSource]='dataSource' type='Spline' xName='USD' yName='EUR' [width]="width">
+                    <e-series [dataSource]='chartData' type='Spline' xName='USD' yName='EUR' [width]="width">
                     </e-series>
                 </e-series-collection>
             </ejs-chart>
@@ -24,7 +24,7 @@ import { Browser } from '@syncfusion/ej2-base';
                 [title]='title2' [titleStyle]="titleStyle" [crosshair]='crosshair'
                 (chartMouseLeave)= 'chart2MouseLeave($event)' (chartMouseMove)='chart2MouseMove($event)' (chartMouseUp)='chart2MouseUp($event)'>
                 <e-series-collection>
-                    <e-series [dataSource]='dataSource' type='Area' xName='USD' yName='INR' opacity=0.6
+                    <e-series [dataSource]='chartData' type='Area' xName='USD' yName='INR' opacity=0.6
                         [width]="width" [border]='border'>
                     </e-series>
                 </e-series-collection>
@@ -89,7 +89,8 @@ export class AppComponent implements OnInit {
             majorGridLines: { width: 0 },
             edgeLabelPlacement: Browser.isDevice ? 'None' : 'Shift',
             labelRotation: Browser.isDevice ? -45 : 0,
-            interval: Browser.isDevice ? 2 : 1
+            interval: Browser.isDevice ? 2 : 1,
+            crosshairTooltip: { enable: true },
         };
         this.primaryYAxis1 = {
             labelFormat: 'n2',

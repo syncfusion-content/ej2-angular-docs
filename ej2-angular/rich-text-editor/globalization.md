@@ -156,7 +156,25 @@ The Rich Text Editor provides an option to localize its strings. It is used to a
             fontNameImpact: "Impact",
             fontNameTahoma: "Tahoma",
             fontNameTimesNewRoman: "Times New Roman",
-            fontNameVerdana: "Verdana"
+            fontNameVerdana: "Verdana",
+            numberFormatListNumber: 'Number',
+            numberFormatListLowerAlpha: 'LowerAlpha',
+            numberFormatListUpperAlpha: 'UpperAlpha',
+            numberFormatListLowerRoman: 'LowerRoman',
+            numberFormatListUpperRoman: 'UpperRoman',
+            numberFormatListLowerGreek: 'LowerGreek',
+            bulletFormatListDisc: 'Disc',
+            bulletFormatListCircle: 'Circle',
+            bulletFormatListSquare: 'Square',
+            numberFormatListNone: 'None',
+            bulletFormatListNone:'None',
+            formatPainter: 'Format Painter',
+            emojiPicker: 'Emoji Picker',
+            embeddedCode: 'Embedded Code',
+            pasteEmbeddedCodeHere: 'Paste Embedded Code here',
+            emojiPickerTypeToFind: 'Type to find',
+            emojiPickerNoResultFound: 'No results found',
+            emojiPickerTrySomethingElse: 'Try something else',
         }
     }
 

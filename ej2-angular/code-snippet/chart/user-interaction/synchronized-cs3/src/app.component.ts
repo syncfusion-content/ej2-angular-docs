@@ -13,7 +13,7 @@ import { Browser } from '@syncfusion/ej2-base';
             <ejs-chart #chart1 style='display:block;' id="container1" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis1'
                 [title]='title1' [titleStyle]="titleStyle" [zoomSettings]='zoomSettings' (zoomComplete)='zoomComplete($event)'>
                 <e-series-collection>
-                    <e-series [dataSource]='dataSource' type='Line' xName='USD' yName='EUR' [width]="width">
+                    <e-series [dataSource]='chartData' type='Line' xName='USD' yName='EUR' [width]="width">
                     </e-series>
                 </e-series-collection>
             </ejs-chart>
@@ -22,7 +22,7 @@ import { Browser } from '@syncfusion/ej2-base';
             <ejs-chart #chart2 style='display:block;' id="container2" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis2'
                 [title]='title2' [titleStyle]="titleStyle" [zoomSettings]='zoomSettings' (zoomComplete)='zoomComplete($event)'>
                 <e-series-collection>
-                    <e-series [dataSource]='dataSource' type='SplineArea' xName='USD' yName='INR' opacity=0.6
+                    <e-series [dataSource]='chartData' type='SplineArea' xName='USD' yName='INR' opacity=0.6
                         [width]="width" [border]='border'>
                     </e-series>
                 </e-series-collection>
@@ -62,7 +62,7 @@ export class AppComponent implements OnInit {
             this.zoomCompleteFunction(args);
         }
     };
-    public zoomCompleteFunction(args: IZoomCompleteEventArgs): void {
+    public zoomCompleteFunction(args): void {
         for (let i: number = 0; i < this.charts.length; i++) {
             if (args.axis.series[0].chart.element.id !== this.charts[i].element.id) {
                 this.charts[i].primaryXAxis.zoomFactor = this.zoomFactor;

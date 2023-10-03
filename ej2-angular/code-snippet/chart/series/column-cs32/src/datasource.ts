@@ -40,10 +40,10 @@ export let percentData: Object[] = [
         { x: '2012', y: 770, y1: 128, y2: 152, y3: 110 },
 ];
 export let cylindricalData: Object[] = [
-        { country: "USA", gold: 50 },
-        { country: "Japan", gold: 70 },
-        { country: "Australia", gold: 60 },
-        { country: "France", gold: 50 },
-        { country: "Italy", gold: 40 },
-        { country: "Sweden", gold: 55 }
+        { country: "USA",       gold: 50, tooltipMappingName: 'USA' },
+        { country: "Japan",     gold: 70, tooltipMappingName: 'Japan' },
+        { country: "Australia", gold: 60, tooltipMappingName: 'Australia' },
+        { country: "France",    gold: 50, tooltipMappingName: 'France' },
+        { country: "Italy",     gold: 40, tooltipMappingName: 'Italy' },
+        { country: "Sweden",    gold: 55, tooltipMappingName: 'Sweden' }
 ]

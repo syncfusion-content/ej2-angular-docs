@@ -30,7 +30,7 @@ To render a 100% stacked column series, use series [`type`](https://ej2.syncfusi
 
 ## 100% Cylindrical stacked column chart
 
-To render a 100% cylindrical stacked column chart, set the `columnFacet` property to `Cylinder` in the chart series.
+To render a 100% cylindrical stacked column chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#columnfacet) property to `Cylinder` in the chart series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

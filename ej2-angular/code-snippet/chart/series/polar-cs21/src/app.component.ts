@@ -20,7 +20,7 @@ import { ChartComponent } from '@syncfusion/ej2-angular-charts';
     </ejs-chart>
     <ejs-accumulationchart #chart2 id="chart-container3" [legendSettings]='legendSettings' [tooltip]='tooltip'  [enableSmartLabels]='true'>
         <e-accumulation-series-collection>
-            <e-accumulation-series [dataSource]='data3' xName='x' yName='y' [dataLabel]='datalabel' [radius]='70%' startAngle=0 endAngle=360 name='Project'></e-accumulation-series>
+            <e-accumulation-series [dataSource]='data3' xName='x' yName='y' [dataLabel]='datalabel' radius='70%' startAngle=0 endAngle=360 name='Project'></e-accumulation-series>
         </e-accumulation-series-collection>
     </ejs-accumulationchart>
     

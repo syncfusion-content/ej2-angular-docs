@@ -25,6 +25,7 @@ The execCommand is used to perform command for the modification of content in ed
 | fontColor | Apply the specified font color for the selected text. |`rteObj.executeCommand('fontColor', 'yellow');`|
 | fontName | Apply the specified font name for the selected text. |`rteObj.executeCommand('fontName', 'Arial');`|
 | fontSize | Apply the specified font size for the selected text. |`rteObj.executeCommand('fontSize', '10pt');`|
+| formatBlock | Apply the specified format styles for the selected text. |`rteObj.executeCommand('formatBlock', 'H1');`|
 | backColor | Apply the specified background color the selected text. | `rteObj.executeCommand('backColor', 'red');`|
 | justifyCenter | Align the content with center margin. | `rteObj.executeCommand('justifyCenter');`|
 | justifyFull | Align the content with justify margin. |`rteObj.executeCommand('justifyFull');`|
