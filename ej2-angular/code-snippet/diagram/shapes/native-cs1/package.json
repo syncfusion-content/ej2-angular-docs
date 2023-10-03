@@ -15,6 +15,7 @@
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@syncfusion/ej2-angular-diagrams": "*",
     "@syncfusion/ej2-angular-base": "*",
+    "@syncfusion/ej2-diagrams": "*",
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
     "@angular/compiler": "^15.0.0",

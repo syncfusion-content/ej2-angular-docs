@@ -39,7 +39,10 @@ export class AppComponent implements OnInit {
             .then((e: ReturnOption) => {
                 //Assign result data to menu items
                 this.menuItems = e.result as { [key: string]: Object }[];
-                (document.getElementById('loader') as HTMLElement).style.display = "none";
+                const loaderElement = document.getElementById('loader') as HTMLElement;
+                if (loaderElement) {
+                    loaderElement.style.display = "none";
+                }
             });
     }
 }

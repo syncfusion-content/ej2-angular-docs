@@ -7,7 +7,7 @@ import { cylindricalData } from './datasource';
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' [tooltip]='tooltip'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Column' columnFacet= 'Cylinder' xName='country' yName='gold'></e-series>
+            <e-series [dataSource]='chartData' type='Column' columnFacet= 'Cylinder' xName='country' yName='gold' tooltipMappingName='tooltipMappingName'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })

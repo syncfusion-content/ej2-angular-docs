@@ -67,7 +67,7 @@ You can use the [`groupName`](https://ej2.syncfusion.com/angular/documentation/a
 
 ## Cylindrical column chart
 
-To render a cylindrical column chart, set the `columnFacet` property to `Cylinder` in the chart series.
+To render a cylindrical column chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#columnfacet) property to `Cylinder` in the chart series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

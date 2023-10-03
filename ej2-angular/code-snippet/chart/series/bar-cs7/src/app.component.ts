@@ -19,8 +19,8 @@ export class AppComponent implements OnInit {
         this.chartData = cylindricalData;
         this.title = 'Unemployment rate in percentage';
         this.primaryXAxis = {
-            minimum: 2006,
-            maximum: 2011,
+            minimum: 2005,
+            maximum: 2012,
             interval: 1
         };
         this.primaryYAxis = {

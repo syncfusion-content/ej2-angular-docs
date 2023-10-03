@@ -1,10 +1,9 @@
 
 
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
-    AccumulationChart, AccumulationChartComponent,
-     IAccLoadedEventArgs, Selection
-} from '@syncfusion/ej2-angular-charts';
+    AccumulationChart, AccumulationChartComponent, 
+     IAccLoadedEventArgs} from '@syncfusion/ej2-angular-charts';
 
 @Component({
     selector: 'app-container',
@@ -23,7 +22,11 @@ export class AppComponent implements OnInit {
     public endAngle?: number ;
     public title?: string ;
     public pie?: AccumulationChartComponent | AccumulationChart;
-    public loaded?: Function;
+    public loaded(args: IAccLoadedEventArgs): void {
+        if (this.execute) {
+            return;
+        }
+    }
     execute: any;
     ngOnInit(): void {
         this.data = [
@@ -45,11 +48,6 @@ export class AppComponent implements OnInit {
                 size: '14px'
             }
         } as any;
-        this.loaded = (args: IAccLoadedEventArgs) => {
-            if (this.execute) {
-                return;
-            }
-        }
         let pieinterval = setInterval( () => {
             if (document.getElementById('donut-container')) {
                 if (this.count === 0) {
@@ -113,6 +111,3 @@ export class AppComponent implements OnInit {
         this.title = 'Education Institutional Revenue';
     }
 }
-
-
-

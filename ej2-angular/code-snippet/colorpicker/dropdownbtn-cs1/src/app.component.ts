@@ -17,6 +17,7 @@ export class AppComponent {
 
     public onOpen(args: any): void {
         args.element.parentElement.querySelector('.e-cancel').addEventListener('click', this.closePopup.bind(this));
+        this.open();
     }
 
     public onClose(args: any): void {
@@ -31,6 +32,12 @@ export class AppComponent {
     public change(args: ColorPickerEventArgs): void {
         (this.ddb?.element.children[0] as HTMLElement).style.backgroundColor = args.currentValue.hex;
         this.closePopup();
+    }
+
+    public open(): void {
+        var zindex = (document.getElementsByClassName('e-color-picker-tooltip')[0] as HTMLElement).style.zIndex;
+        var zindexIntValue = parseInt(zindex) + 2;
+        (document.getElementsByClassName('e-color-picker-tooltip')[0] as HTMLElement).style.zIndex = zindexIntValue.toString();
     }
  }
 

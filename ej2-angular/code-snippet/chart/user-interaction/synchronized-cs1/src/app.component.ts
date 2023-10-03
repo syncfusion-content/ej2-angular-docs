@@ -14,7 +14,7 @@ import { Browser } from '@syncfusion/ej2-base';
                 [title]='title1' [titleStyle]="titleStyle" [tooltip]="tooltip1"
                 (chartMouseLeave)= 'chart1MouseLeave($event)' (chartMouseMove)='chart1MouseMove($event)' (chartMouseUp)='chart1MouseUp($event)'>
                 <e-series-collection>
-                    <e-series [dataSource]='dataSource' type='Line' xName='USD' yName='EUR' [width]="width">
+                    <e-series [dataSource]='chartData' type='Line' xName='USD' yName='EUR' [width]="width">
                     </e-series>
                 </e-series-collection>
             </ejs-chart>
@@ -24,7 +24,7 @@ import { Browser } from '@syncfusion/ej2-base';
                 [title]='title2' [titleStyle]="titleStyle" [tooltip]="tooltip2" 
                 (chartMouseLeave)= 'chart2MouseLeave($event)' (chartMouseMove)='chart2MouseMove($event)' (chartMouseUp)='chart2MouseUp($event)'>
                 <e-series-collection>
-                    <e-series [dataSource]='dataSource' type='Area' xName='USD' yName='INR' opacity=0.6
+                    <e-series [dataSource]='chartData' type='Area' xName='USD' yName='INR' opacity=0.6
                         [width]="width" [border]='border'>
                     </e-series>
                 </e-series-collection>

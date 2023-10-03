@@ -48,13 +48,13 @@ The user can change the size mode of the application between touch and normal (m
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/common/size-modes-src/src/app.component.ts %}
+{% include code-snippet/common/size-modes-app/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/size-modes-src/src/app.module.ts %}
+{% include code-snippet/common/size-modes-app/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/common/size-modes-src/src/main.ts %}
+{% include code-snippet/common/size-modes-app/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

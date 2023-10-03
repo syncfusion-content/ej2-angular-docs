@@ -29,7 +29,7 @@ To render a 100% stacked bar series, use series [`type`](https://ej2.syncfusion.
 
 ## 100% Cylindrical stacked bar chart
 
-To render a 100% cylindrical stacked bar chart, set the `columnFacet` property to `Cylinder` in the chart series.
+To render a 100% cylindrical stacked bar chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#columnfacet) property to `Cylinder` in the chart series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
