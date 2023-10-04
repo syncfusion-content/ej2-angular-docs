@@ -61,6 +61,9 @@ SEE LICENSE IN license
 @syncfusion/ej2-navigations
 SEE LICENSE IN license
 
+@syncfusion/ej2-notifications
+SEE LICENSE IN license
+
 @syncfusion/ej2-popups
 SEE LICENSE IN license
 
