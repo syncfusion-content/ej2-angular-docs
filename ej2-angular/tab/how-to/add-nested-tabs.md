@@ -15,6 +15,9 @@ You can add the nested Tab element inside the parent Tab [`content`](https://ej2
 To render the nested Tab, initialize the component using the id of Tab from [`selected`](https://ej2.syncfusion.com/angular/documentation/api/tab#selected) event handler.
 
 {% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/tab/basic-cs6/src/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/basic-cs6/src/app.component.ts %}
 {% endhighlight %}

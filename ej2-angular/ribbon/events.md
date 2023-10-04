@@ -1452,6 +1452,129 @@ export class AppComponent {
 }
 ```
 
+## GroupButton item events
+
+### beforeClick
+
+The [beforeClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupButtonItemModel/#beforeclick) event is triggered before selecting a button from the groupbutton items.
+
+```javascript
+
+import { Component } from "@angular/core";
+import {RibbonItemSize, RibbonGroupButtonSettingsModel, RibbonGroupButtonSelection, BeforeClickGroupButtonEventArgs } from '@syncfusion/ej2-angular-ribbon';
+
+
+@Component({
+  selector: "app-root",
+  templateUrl: `<!-- To Render Ribbon. -->
+    <ejs-ribbon id="ribbon">
+        <e-ribbon-tabs>
+            <e-ribbon-tab header="Home">
+                <e-ribbon-groups>
+                    <e-ribbon-group header="Paragraph" >
+                        <e-ribbon-collections>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type="GroupButton" [allowedSizes]="smallSize" [groupButtonSettings]="events">
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                        </e-ribbon-collections>
+                    </e-ribbon-group>
+                </e-ribbon-groups>
+            </e-ribbon-tab>
+        </e-ribbon-tabs>
+    </ejs-ribbon>`,
+})
+export class AppComponent {
+  public events: RibbonGroupButtonSettingsModel = {
+    selection: RibbonGroupButtonSelection.Multiple,
+    items: [
+      {iconCss: 'e-icons e-bold', content: 'Bold',
+      beforeClick: (args: BeforeClickGroupButtonEventArgs) => { 
+        // Your required action here
+      }},
+      {iconCss: 'e-icons e-italic', content: 'Italic',
+      beforeClick: (args: BeforeClickGroupButtonEventArgs) => {
+        // Your required action here
+      }, selected: true}, 
+      {iconCss: 'e-icons e-underline', content: 'Underline',
+      beforeClick: (args: BeforeClickGroupButtonEventArgs) => {
+        // Your required action here
+      }}, 
+      {iconCss: 'e-icons e-strikethrough', content: 'Strikethrough',
+      beforeClick: (args: BeforeClickGroupButtonEventArgs) => {
+        // Your required action here
+      }}
+    ]
+  }
+
+  public smallSize: RibbonItemSize = RibbonItemSize.Small;
+}
+
+```
+
+
+### click
+
+The [click](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupButtonItemModel/#click) event is triggered when selecting a button from the groupbutton items.
+
+```javascript
+
+import { Component } from "@angular/core";
+import {RibbonItemSize, RibbonGroupButtonSettingsModel, RibbonGroupButtonSelection, ClickGroupButtonEventArgs } from '@syncfusion/ej2-angular-ribbon';
+
+
+@Component({
+  selector: "app-root",
+  templateUrl: `<!-- To Render Ribbon. -->
+    <ejs-ribbon id="ribbon">
+        <e-ribbon-tabs>
+            <e-ribbon-tab header="Home">
+                <e-ribbon-groups>
+                    <e-ribbon-group header="Paragraph" >
+                        <e-ribbon-collections>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type="GroupButton" [allowedSizes]="smallSize" [groupButtonSettings]="events">
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                        </e-ribbon-collections>
+                    </e-ribbon-group>
+                </e-ribbon-groups>
+            </e-ribbon-tab>
+        </e-ribbon-tabs>
+    </ejs-ribbon>`,
+})
+export class AppComponent {
+  public events: RibbonGroupButtonSettingsModel = {
+    selection: RibbonGroupButtonSelection.Single,
+    items: [
+      {iconCss: 'e-icons e-align-left', content: 'Align Left',
+      click:(args: ClickGroupButtonEventArgs) => {
+        // Your required action here
+      }},
+      {iconCss: 'e-icons e-align-center', content: 'Align Center',
+      click:(args: ClickGroupButtonEventArgs) => {
+        // Your required action here
+      }, selected: true}, 
+      {iconCss: 'e-icons e-align-right', content: 'Align Right',
+      click:(args: ClickGroupButtonEventArgs) => {
+        // Your required action here
+      }}, 
+      {iconCss: 'e-icons e-justify', content: 'Justify',
+      click:(args: ClickGroupButtonEventArgs) => {
+        // Your required action here
+      }}
+    ]
+  }
+
+  public smallSize: RibbonItemSize = RibbonItemSize.Small;
+}
+
+```
+
 ## FileMenu events
 
 ### beforeClose
