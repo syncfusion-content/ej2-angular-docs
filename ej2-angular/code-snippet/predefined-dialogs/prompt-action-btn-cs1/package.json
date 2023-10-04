@@ -19,6 +19,7 @@
     "@syncfusion/ej2-icons": "*",
     "@syncfusion/ej2-buttons": "*",
     "@syncfusion/ej2-angular-base": "*",
+    "@syncfusion/ej2-popups": "*",
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
     "@angular/compiler": "^15.0.0",
