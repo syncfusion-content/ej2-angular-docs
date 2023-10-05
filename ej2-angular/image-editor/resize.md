@@ -26,13 +26,13 @@ Here is an example of resizing the image using the [`resize`](https://ej2.syncfu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs36/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs36/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs36/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs36/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs36/app/main.ts %}
+{% include code-snippet/image-editor/default-cs36/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
