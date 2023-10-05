@@ -390,13 +390,13 @@ It is possible to expand and collapse the resources which have child resource in
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/schedule/resource-grouping-cs5/app/app.component.ts %}
+{% include code-snippet/schedule/resource-grouping-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/resource-grouping-cs5/app/app.module.ts %}
+{% include code-snippet/schedule/resource-grouping-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/schedule/resource-grouping-cs5/app/main.ts %}
+{% include code-snippet/schedule/resource-grouping-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

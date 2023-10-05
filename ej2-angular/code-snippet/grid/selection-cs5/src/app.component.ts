@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SelectionSettingsModel, FilterService, FilterSettingsModel, PageSettingsModel, ToolbarService, ToolbarItems, EditService, EditSettingsModel, RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, SelectionSettingsModel, FilterSettingsModel, PageSettingsModel, ToolbarItems, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
