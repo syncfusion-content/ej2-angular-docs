@@ -196,7 +196,7 @@ In case, if you want to make use of the combined CSS files of entire components,
 @import '../node_modules/@syncfusion/ej2/material.css';
 ```
 
-## Adding Component -
+## Adding Component
 
 You can add `DocumentEditorContainer` Component with  predefined toolbar and properties pane options or `DocumentEditor` component with customize options.
 
