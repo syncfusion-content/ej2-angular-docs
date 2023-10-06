@@ -30,7 +30,9 @@
     "moment": "^2.29.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.12.0"
+    "zone.js": "~0.12.0",
+    "@syncfusion/ej2-querybuilder": "*",
+    "@syncfusion/ej2-base": "*"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.0.0",

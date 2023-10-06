@@ -43,16 +43,16 @@ In the following example, you can use the drawFrame method in the button click e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/image-editor/default-cs35/app/app.component.ts %}
+{% include code-snippet/image-editor/default-cs35/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs35/app/app.module.ts %}
+{% include code-snippet/image-editor/default-cs35/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/image-editor/default-cs35/app/main.ts %}
+{% include code-snippet/image-editor/default-cs35/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+        
 {% previewsample "page.domainurl/samples/image-editor/default-cs35" %}
 
 ## Frame changing event
