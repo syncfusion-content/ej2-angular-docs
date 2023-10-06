@@ -49,6 +49,9 @@ SEE LICENSE IN license
 @syncfusion/ej2-dropdowns
 SEE LICENSE IN license
 
+@syncfusion/ej2-excel-export
+SEE LICENSE IN license
+
 @syncfusion/ej2-file-utils
 SEE LICENSE IN license
 
@@ -59,6 +62,9 @@ SEE LICENSE IN license
 SEE LICENSE IN license
 
 @syncfusion/ej2-navigations
+SEE LICENSE IN license
+
+@syncfusion/ej2-notifications
 SEE LICENSE IN license
 
 @syncfusion/ej2-office-chart
