@@ -1,30 +1,45 @@
-
-
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [selectionSettings]='selectionOptions' height='315px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
+  selector: 'app-root',
+  template: `
+        <div style="display: flex">
+          <label style="padding: 30px 17px 0 0">Choose selection mode:</label>
+          <ejs-dropdownlist style="padding: 26px 0 0 0" index="0" width="150" 
+          [dataSource]="dropdownData" (change)="valueChange($event)">
+          </ejs-dropdownlist>
+        </div>
+        <div style="padding: 20px 0px 0px 0px">
+        <ejs-grid #grid [dataSource]="data" height="315px">
+          <e-columns>
+            <e-column field="OrderID" headerText="Order ID" textAlign="Right" 
+            width="120"></e-column>
+            <e-column field="CustomerID" headerText="Customer ID" width="150">
+            </e-column>
+            <e-column field="ShipCity" headerText="Ship City" width="150"></e-column>
+            <e-column field="ShipName" headerText="Ship Name" width="150"></e-column>
+          </e-columns>
+        </ejs-grid>
+        </div>`
 })
 export class AppComponent implements OnInit {
 
-    public data?: object[];
-    public selectionOptions?: SelectionSettingsModel;
+  public data?: Object[];
+  @ViewChild('grid') public grid?: GridComponent;
+  public selectionOptions?: SelectionSettingsModel;
+  public dropdownData: Object[] = [
+    { text: 'Row', value: 'Row' },
+    { text: 'Cell', value: 'Cell' },
+    { text: 'Both', value: 'Both' }
+  ];
 
-    ngOnInit(): void {
-        this.data = data;
-        this.selectionOptions = { mode: 'Both' };
-    }
+  ngOnInit(): void {
+    this.data = data;
+  }
+
+  valueChange(args: any): void {
+    (this.grid as any).selectionSettings.mode = (args as any).value;
+  }
 }
-
-
-

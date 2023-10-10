@@ -1,0 +1,22 @@
+<div id="content" class="container">
+    <div class="input-container">
+        <label for="fields" class="label">Select Column</label>
+        <ejs-dropdownlist #field id="fields" [dataSource]="fieldData" (change)="onFieldChange($event)"
+            placeholder="Eg: OrderID"></ejs-dropdownlist>
+    </div>
+    <div class="input-container">
+        <label for="types" class="label">Select Filter Type</label>
+        <ejs-dropdownlist #type id="types" [dataSource]="typeData" (change)="onTypeChange($event)"
+            placeholder="Eg: Excel" [enabled]="false"></ejs-dropdownlist>
+    </div>
+</div>
+<ejs-grid #grid [dataSource]='data' [allowFiltering]='true' height='273px' allowPaging=true (dataBound)="dataBound()"
+    [filterSettings]="filterSettings">
+    <e-columns>
+        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+        <e-column field='Freight' headerText='Freight' width=100></e-column>
+        <e-column field='OrderDate' headerText='Order Date' format='yMd' width=100></e-column>
+        <e-column field='Verified' headerText='Verified' width=100 type='boolean' displayAsCheckBox="true"></e-column>
+    </e-columns>
+</ejs-grid>

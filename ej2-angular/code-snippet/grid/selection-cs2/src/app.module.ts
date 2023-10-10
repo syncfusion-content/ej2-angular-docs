@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { GridModule, PageService } from '@syncfusion/ej2-angular-grids';
 import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids';
 import { AppComponent } from './app.component';
+import { SwitchModule } from '@syncfusion/ej2-angular-buttons';
 
 @NgModule({
     imports: [
         BrowserModule,
-        GridModule
+        GridModule,
+        SwitchModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],

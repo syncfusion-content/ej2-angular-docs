@@ -8,15 +8,14 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px'
-            [allowPdfExport]='true' (queryCellInfo)='queryCellInfo($event)'
-    (pdfQueryCellInfo)='pdfQueryCellInfo($event)' (toolbarClick)='toolbarClick($event)'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='Freight' headerText='Freight' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
+    template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' height='272px'  [allowPdfExport]='true' 
+                (queryCellInfo)='queryCellInfo($event)' (pdfQueryCellInfo)='pdfQueryCellInfo($event)' (toolbarClick)='toolbarClick($event)'>
+                    <e-columns>
+                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+                        <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
+                        <e-column field='Freight' headerText='Freight' width=80></e-column>
+                        <e-column field='ShipName' headerText='Ship Name' width=120></e-column>
+                    </e-columns>
                 </ejs-grid>`
 })
 export class AppComponent implements OnInit {

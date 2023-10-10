@@ -1,5 +1,3 @@
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, SelectionSettingsModel, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
@@ -7,15 +5,22 @@ import { GridComponent, SelectionSettingsModel, PageSettingsModel } from '@syncf
 @Component({
     selector: 'app-root',
     template:
-    `<button ej-button class='e-flat' (click)='click()'>Clear Selection</button>
-    <ejs-grid #grid [dataSource]='data' [selectedRowIndex]=2 allowPaging=true [selectionSettings]='selectionOptions' [pageSettings]='pageOptions'>
-        <e-columns>
-            <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-            <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-            <e-column field='ShipCountry' headerText='Ship Country' width=130></e-column>
-            <e-column field='Freight' headerText='Freight' format= 'C2' width=100></e-column>
-        </e-columns>
-    </ejs-grid>`
+        `<div style="padding: 20px 0px 0px 0px">
+        <button ejs-button (click)='click()'>Clear Selection</button>
+        </div>
+        <div style="padding: 20px 0px 0px 0px">
+        <ejs-grid #grid [dataSource]='data' allowPaging=true 
+        [selectionSettings]='selectionOptions' [pageSettings]='pageOptions'>
+            <e-columns>
+                <e-column field='OrderID' headerText='Order ID' textAlign='Right' 
+                width=120></e-column>
+                <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                <e-column field='ShipCountry' headerText='Ship Country' width=130></e-column>
+                <e-column field='Freight' headerText='Freight' format= 'C2' width=100>
+                </e-column>
+            </e-columns>
+        </ejs-grid>
+        </div>`
 })
 export class AppComponent implements OnInit {
 
@@ -28,10 +33,9 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = data;
-        this.selectionOptions = { type: 'Multiple' };
+        this.selectionOptions = { mode:'Both' ,allowColumnSelection: true,type: 'Multiple' };
         this.pageOptions = { pageSize: 5 };
     }
-
     click(): void{
         (this.grid as any).clearSelection();
     }
