@@ -1,11 +1,14 @@
-
 #loader {
-  color: #008cff;
-  height: 40px;
-  left: 45%;
-  position: absolute;
-  top: 45%;
-  width: 30%;
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+#template-wrap {
+    display: flex;
 }
 
 .e-content .e-item {
@@ -13,6 +16,7 @@
     margin: 10px;
     text-align: justify;
 }
+
 .container {
     min-width: 350px;
     max-width: 500px;
@@ -20,50 +24,49 @@
 }
 
 .e-image {
-	background-size: 33px;
-	width: 33px;
-    height: 45px;
-	margin: 0 auto;
+    background-size: 33px;
+    width: 33px;
+    height: 33px;
+    margin: 0 auto;
 }
 
 .e-image.e-andrew { /* csslint allow: adjoining-classes */
-    background-image: url("https://ej2.syncfusion.com/demos/src/images/employees/3.png");
+    background-image: url('https://ej2.syncfusion.com/demos/src/images/employees/3.png');
 }
 
 .e-image.e-margaret { /* csslint allow: adjoining-classes */
-	background-image: url("https://ej2.syncfusion.com/demos/src/images/employees/6.png");
+    background-image: url('https://ej2.syncfusion.com/demos/src/images/employees/6.png');
 }
 
 .e-image.e-janet { /* csslint allow: adjoining-classes */
-	background-image: url("https://ej2.syncfusion.com/demos/src/images/employees/7.png");
+    background-image: url('https://ej2.syncfusion.com/demos/src/images/employees/7.png');
 }
 
 .e-tab .e-toolbar-item .e-title {
-    display: none;
+    margin-top: 8px;
 }
 
 .e-toolbar .e-toolbar-items .e-toolbar-item:not(.e-separator),
 .e-toolbar .e-toolbar-items .e-toolbar-item .e-tab-wrap {
-    width: 105px;
+    width: 125px;
     height: 50px;
 }
 
 .e-tab .e-tab-header .e-toolbar-item.e-active .e-tab-wrap { /* csslint allow: adjoining-classes */
     background-color: #08c;
 }
+
 .e-tab .e-tab-header {
     background-color: #e6e6e6;
 }
+
 .e-tab .e-tab-header .e-toolbar-item:not(.e-active) .e-tab-wrap:hover {
-   background-color: #f2f2f2;
-   color:#000;
-}
-.e-tab .e-toolbar .e-toolbar-items .e-toolbar-item .e-text-wrap {
-    height: 50px;
+    background-color: #f2f2f2;
+    color: #000;
 }
 
-.e-tab .e-toolbar-item.e-active .e-image { /* csslint allow: adjoining-classes */
-    display: none;
+.e-tab .e-toolbar .e-toolbar-items .e-toolbar-item .e-text-wrap {
+    height: 50px;
 }
 
 .e-tab .e-toolbar-item.e-active .e-title { /* csslint allow: adjoining-classes */
@@ -73,11 +76,11 @@
 
 .e-tab .e-toolbar-item .e-text-wrap,
 .e-tab .e-toolbar-item .e-tab-text {
-    width:  inherit;
+    width: inherit;
     text-align: center;
 }
 
-.fade-in {
+.e-tab .e-toolbar-item.e-active .e-title.fade-in {
     opacity: 1;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
