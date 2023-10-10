@@ -18,6 +18,8 @@
     "@syncfusion/ej2-angular-popups": "*",
     "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-angular-base": "*",
+    "@syncfusion/ej2-buttons": "*",
+    "@syncfusion/ej2-popups": "*",
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
     "@angular/compiler": "^15.0.0",
