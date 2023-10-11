@@ -19,7 +19,7 @@ export class AppComponent {
     @ViewChild('document_editor')
     public documentEditor?: DocumentEditorComponent;
 
-    public onRequestNavigate(args: DocumentEditorKeyDownEventArgs): void {
+    public onRequestNavigate(args: RequestNavigateEventArgs): void {
         if (args.linkType !== 'Bookmark') {
             let link: string = args.navigationLink;
             if (args.localReference.length > 0) {
