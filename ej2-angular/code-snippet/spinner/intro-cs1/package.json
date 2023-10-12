@@ -15,6 +15,7 @@
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@syncfusion/ej2-angular-popups": "*",
+    "@syncfusion/ej2-popups": "*",
     "@syncfusion/ej2-angular-base": "*",
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",

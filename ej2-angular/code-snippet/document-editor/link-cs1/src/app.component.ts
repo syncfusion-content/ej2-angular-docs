@@ -29,7 +29,7 @@ export class AppComponent {
     }
 
     public onInsertImage(args: any): void {
-        let documentEditor: DocumentEditorComponent = this.documentEditor;
+        let documentEditor: DocumentEditorComponent = this.documentEditor as DocumentEditorComponent;
         if (navigator.userAgent.match('Chrome') || navigator.userAgent.match('Firefox') || navigator.userAgent.match('Edge') || navigator.userAgent.match('MSIE') || navigator.userAgent.match('.NET')) {
             if (args.target.files[0]) {
                 //Get selected image.
