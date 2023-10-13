@@ -42,7 +42,7 @@ Add the below serviceUrl in the `app.component.ts` file
 `public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer'`;
 Within the template, configure the PDF Viewer by adding the `[serviceUrl]='service'` attribute inside the div element.
 
-{% previewsample "page.domainurl/code-snippet/pdfviewer/addformfield-cs1" %}
+{% previewsample "page.domainurl/samples/pdfviewer/addformfield-cs1" %}
   
 ## Edit/Update form field programmatically
 
@@ -65,7 +65,7 @@ Add the below serviceUrl in the `app.component.ts` file
 `public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer'`;
 Within the template, configure the PDF Viewer by adding the `[serviceUrl]='service'` attribute inside the div element.
 
-{% previewsample "page.domainurl/code-snippet/pdfviewer/updateformfield-cs1" %}
+{% previewsample "page.domainurl/samples/pdfviewer/updateformfield-cs1" %}
 
 ## Delete form field programmatically
 
@@ -88,7 +88,7 @@ Add the below serviceUrl in the `app.component.ts` file
 `public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer'`;
 Within the template, configure the PDF Viewer by adding the `[serviceUrl]='service'` attribute inside the div element.
 
-{% previewsample "page.domainurl/code-snippet/pdfviewer/deleteformfield-cs1" %}
+{% previewsample "page.domainurl/samples/pdfviewer/deleteformfield-cs1" %}
   
 The following code illustrates how to delete a signature from the signature field using the `retrieveFormFields` and `clearFormFields` APIs.
 
