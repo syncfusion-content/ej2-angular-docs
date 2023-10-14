@@ -112,8 +112,9 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   // specifies the template string for the PDF Viewer component
   template: `<div class="content-wrapper">
                 <ejs-pdfviewer id="pdfViewer"
-                       [documentPath]='document'
-                       style="height:640px;display:block">
+                    [documentPath]='document'
+                    [resourceUrl]='resource' 
+                    style="height:640px;display:block">
                 </ejs-pdfviewer>
              </div>`,
   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
@@ -123,6 +124,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 })
 export class AppComponent implements OnInit {
   public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+  public resource: string = "https://cdn.syncfusion.com/ej2/23.1.40/dist/ej2-pdfviewer-lib";
   ngOnInit(): void {
   }
 }

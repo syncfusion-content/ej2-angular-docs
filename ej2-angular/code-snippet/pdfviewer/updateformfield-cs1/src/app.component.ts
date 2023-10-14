@@ -15,6 +15,7 @@ import {PdfViewerComponent, LinkAnnotationService, BookmarkViewService, Magnific
     id="pdfViewer"
     #pdfviewer 
     [documentPath]='document' 
+    [resourceUrl]='resource' 
     (documentLoad)='documentLoaded($event)' 
     style="height:640px;display:block">
    </ejs-pdfviewer>
@@ -26,6 +27,7 @@ export class AppComponent implements OnInit {
   @ViewChild('pdfviewer')
   public pdfviewerControl?: PdfViewerComponent;
   public document: string = 'https://cdn.syncfusion.com/content/pdf/form-designer.pdf';
+  public resource: string = "https://cdn.syncfusion.com/ej2/23.1.40/dist/ej2-pdfviewer-lib";
 
    documentLoaded(e: any): void {
     this.pdfviewerControl?.formDesignerModule.addFormField("Textbox", {name: 'First Name', bounds: { X: 146, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
