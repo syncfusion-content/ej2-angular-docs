@@ -2,6 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChartComponent } from '@syncfusion/ej2-angular-charts';
+import { Chart } from '@syncfusion/ej2-charts';
 
 @Component({
     selector: 'app-container',
@@ -107,7 +108,7 @@ export class AppComponent implements OnInit {
         this.datalabel = { visible: true, name: 'text', position: 'Inside', font: { fontWeight: '600', color: '#ffffff' } };
     }
     export() {
-        this.chart?.exportModule.export('PDF', 'Chart', null, [this.chart, this.chart1, this.chart2 as ChartComponent], null, null, true, undefined, undefined, true);
+        this.chart?.exportModule.export('PDF', 'Chart', undefined, [this.chart as Chart, this.chart1 as Chart, this.chart2 as Chart], undefined, undefined, true, undefined, undefined, true);
     }
 }
 

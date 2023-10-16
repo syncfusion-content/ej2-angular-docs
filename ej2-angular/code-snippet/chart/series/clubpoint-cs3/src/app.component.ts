@@ -1,7 +1,6 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IAccTextRenderEventArgs, IAccPointRenderEventArgs } from '@syncfusion/ej2-charts';
 
 @Component({
     selector: 'app-container',

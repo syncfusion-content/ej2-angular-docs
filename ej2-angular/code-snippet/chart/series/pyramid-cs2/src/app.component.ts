@@ -1,22 +1,26 @@
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { pyramidData } from './datasource';
+import {
+    IAccPointRenderEventArgs,
+} from '@syncfusion/ej2-charts';
 @Component({
     selector: 'app-container',
-    template: `<ejs-accumulationchart id="chart-container">
+    template: `<ejs-accumulationchart id="chart-container"  (pointRender)="onPointRender($event)">
         <e-accumulation-series-collection>
-            <e-accumulation-series type='Pyramid' pyramidMode='Surface' [dataSource]='pyramidData' xName='x' yName='y' [dataLabel]='datalabel'></e-accumulation-series>
+            <e-accumulation-series  type='Pyramid' [dataSource]='pyramidData' xName='x' yName='y' [gapRatio]="gapRatio"
+            ></e-accumulation-series>
         </e-accumulation-series-collection>
-    </ejs-accumulationchart>`
+    </ejs-accumulationchart>`,
 })
 export class AppComponent implements OnInit {
-    public pyramidData?: Object[];
-    ngOnInit(): void {
-        this.pyramidData = pyramidData;
-    }
+    public gapRatio: number = 0.2;
+    public onPointRender = (args: IAccPointRenderEventArgs) => {
+        if ((args.point.x as string).indexOf('Downloaded') > -1) {
+            args.fill = '#D3D3D3';
+        } else {
+            args.fill = '#597cf9';
+        }
+    };
+    public pyramidData = pyramidData;
+    ngOnInit(): void { }
 }
-
-
-
