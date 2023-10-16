@@ -30,14 +30,22 @@ export class AppComponent {
 
     // Triggers while selecting colors from color picker.
     public change(args: ColorPickerEventArgs): void {
-        (this.ddb?.element.children[0] as HTMLElement).style.backgroundColor = args.currentValue.hex;
+        if (this.ddb?.element && this.ddb.element.children.length > 0) {
+            const firstChild = this.ddb.element.children[0] as HTMLElement;
+            if (firstChild instanceof HTMLElement) {
+              firstChild.style.backgroundColor = args.currentValue.hex;
+            }
+        }
         this.closePopup();
     }
 
     public open(): void {
         var zindex = (document.getElementsByClassName('e-color-picker-tooltip')[0] as HTMLElement).style.zIndex;
         var zindexIntValue = parseInt(zindex) + 2;
-        (document.getElementsByClassName('e-color-picker-tooltip')[0] as HTMLElement).style.zIndex = zindexIntValue.toString();
+        var tooltip = (document.getElementsByClassName('e-color-picker-tooltip')[0] as HTMLElement);
+        if (tooltip) {
+            tooltip.style.zIndex = zindexIntValue.toString();
+        }
     }
  }
 

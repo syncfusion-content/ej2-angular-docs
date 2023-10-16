@@ -15,7 +15,16 @@ export class AppComponent {
     private colorPicker?: ColorPickerComponent;
 
     public onChange(args: ColorPickerEventArgs): void {
-        ((this.colorPicker?.element.nextElementSibling as Element).querySelector('.e-selected-color') as HTMLElement).style.borderBottomColor = args.currentValue.rgba;
+        const colorPickerElement = this.colorPicker?.element;
+        if (colorPickerElement) {
+            const nextSibling = colorPickerElement.nextElementSibling;
+            if (nextSibling) {
+                const selectedColorElement = nextSibling.querySelector('.e-selected-color') as HTMLElement;
+                if (selectedColorElement) {
+                    selectedColorElement.style.borderBottomColor = args.currentValue.rgba;
+                }
+            }
+        }
     }
 
     ngOnInit(): void {
