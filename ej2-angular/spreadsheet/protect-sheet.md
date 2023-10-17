@@ -15,7 +15,7 @@ Sheet protection helps you to prevent the users from modifying the data in the s
 ## Protect Sheet
 
 Protect sheet feature helps you to prevent the unknown users from accidentally changing, editing, moving, or deleting data in a spreadsheet. And you can also protect the sheet with password.
-You can use the [`isProtected`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#isProtected) property to enable or disable the Protecting functionality.
+You can use the [`isProtected`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#isprotected) property to enable or disable the Protecting functionality.
 
 > * The default value for `isProtected` property is `false`.
 
@@ -41,7 +41,7 @@ In the active Spreadsheet, the sheet protection can be done by any of the follow
 
 * Select the Protect Sheet item in the Ribbon toolbar under the Data Tab, and then select your desired options.
 * Right-click the sheet tab, select the Protect Sheet item in the context menu, and then select your desired options.
-* Use the [`protectSheet()`](../api/spreadsheet/#protectSheet) method programmatically.
+* Use the [`protectSheet()`](../api/spreadsheet/#protectsheet) method programmatically.
 
 The following example shows `Protect Sheet` functionality with password in the Spreadsheet control.
 
@@ -73,11 +73,11 @@ In the active Spreadsheet, the sheet Unprotection can be done by any of the foll
 
 * Select the `Unprotect Sheet` item in the Ribbon toolbar under the Data Tab.
 * Right-click the sheet tab, select the `Unprotect Sheet` item in the context menu.
-* Use the [`unprotectSheet()`](../api/spreadsheet/#unprotectSheet) method programmatically.
+* Use the [`unprotectSheet()`](../api/spreadsheet/#unprotectsheet) method programmatically.
 
 ## Unlock the particular cells in the protected sheet
 
-In protected spreadsheet, to make some particular cell or range of cells are editable, you can use [`lockCells()`](../api/spreadsheet/#lockCells) method, with the parameter `range` and `isLocked` property as false.
+In protected spreadsheet, to make some particular cell or range of cells are editable, you can use [`lockCells()`](../api/spreadsheet/#lockcells) method, with the parameter `range` and `isLocked` property as false.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -97,7 +97,7 @@ In protected spreadsheet, to make some particular cell or range of cells are edi
 
 Protect workbook feature helps you to protect the workbook so that users cannot insert, delete, rename, hide the sheets in the spreadsheet.
 You can use the [`password`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#password) property to protect workbook with password.
-You can use the [`isProtected`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#isProtected) property to protect or unprotect the workbook without the password.
+You can use the [`isProtected`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#isprotected) property to protect or unprotect the workbook without the password.
 
 > The default value for `isProtected` property is `false`.
 
@@ -105,7 +105,7 @@ You can use the [`isProtected`](https://ej2.syncfusion.com/angular/documentation
 
 In the active Spreadsheet, you can protect the worksheet by selecting the Data tab in the Ribbon toolbar and choosing the `Protect Workbook` item. Then, enter the password and confirm it and click on OK.
 
-The following example shows `Protect Workbook` by using the [`isProtected`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#isProtected) property in the Spreadsheet control.
+The following example shows `Protect Workbook` by using the [`isProtected`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#isprotected) property in the Spreadsheet control.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

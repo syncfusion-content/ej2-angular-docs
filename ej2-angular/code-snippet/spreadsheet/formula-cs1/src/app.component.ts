@@ -1,5 +1,3 @@
-
-
 import { Component, ViewChild } from '@angular/core';
 import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 import { enableRipple } from '@syncfusion/ej2-base';
@@ -8,8 +6,8 @@ import { dataSource } from './datasource';
 enableRipple(true);
 
 @Component({
-    selector: 'app-container',
-    template: `<ejs-spreadsheet #spreadsheet (created)="created()" [showRibbon]="false"
+  selector: 'app-container',
+  template: `<ejs-spreadsheet #spreadsheet (created)="created()" [showRibbon]="false"
                 [showSheetTabs]="false">
                 <e-sheets>
                   <e-sheet>
@@ -18,6 +16,7 @@ enableRipple(true);
                     </e-ranges>
                     <e-columns>
                       <e-column [width]=150></e-column>
+                      <e-column [width]=120></e-column>
                       <e-column [width]=120></e-column>
                       <e-column [width]=120></e-column>
                       <e-column [width]=120></e-column>
@@ -66,30 +65,42 @@ enableRipple(true);
                     </e-rows>
                   </e-sheet>
                 </e-sheets>
-              </ejs-spreadsheet>`
+              </ejs-spreadsheet>`,
 })
 export class AppComponent {
-    @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent | undefined;
+  @ViewChild('spreadsheet')
+  spreadsheetObj: SpreadsheetComponent | undefined;
 
-    data: object[] = dataSource;
+  data: object[] = dataSource;
 
-    // Custom function to calculate percentage between two cell values.
-    calculatePercentage(firstCell: string, secondCell: string): number {
-      return Number(firstCell) / Number(secondCell);
-    }
+  // Custom function to calculate percentage between two cell values.
+  calculatePercentage(firstCell: string, secondCell: string): number {
+    return Number(firstCell) / Number(secondCell);
+  }
 
-    created() {
-        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A2:E2');
-        this.spreadsheetObj!.numberFormat('$#,##0', 'B3:D12');
-        this.spreadsheetObj!.numberFormat('0%', 'E3:E12');
+  // Custom function to calculate round down for values.
+  roundDownHandler(value: number, digit: number): number {
+    let multiplier: number = Math.pow(10, digit);
+    return Math.floor(value * multiplier) / multiplier;
+  }
 
-        // Adding custom function for calculating the percentage between two cells.
-        this.spreadsheetObj!.addCustomFunction(this.calculatePercentage, 'PERCENTAGE');
-        // Calculate percentage using custom added formula in E12 cell.
-        this.spreadsheetObj!.updateCell({ formula: '=PERCENTAGE(C12,D12)' }, 'E12');
-        this.spreadsheetObj!.setRowHeight(30,1);
-    }
+  created() {
+    this.spreadsheetObj.cellFormat(
+      { fontWeight: 'bold', textAlign: 'center' },
+      'A2:F2'
+    );
+    this.spreadsheetObj.numberFormat('$#,##0', 'B3:D12');
+    this.spreadsheetObj.numberFormat('0%', 'E3:E12');
+    // Adding custom function for calculating the percentage between two cells.
+    this.spreadsheetObj.addCustomFunction(
+      this.calculatePercentage,
+      'PERCENTAGE'
+    );
+    // Adding custom function for calculating round down for the value.
+    this.spreadsheetObj.addCustomFunction(this.roundDownHandler, 'ROUNDDOWN');
+    // Calculate percentage using custom added formula in E12 cell.
+    this.spreadsheetObj.updateCell({ formula: '=PERCENTAGE(C12,D12)' }, 'E12');
+    // Calculate round down for average values using custom added formula in F12 cell.
+    this.spreadsheetObj.updateCell({ formula: '=ROUNDDOWN(F11,1)' }, 'F12');
+  }
 }
-
-

@@ -147,7 +147,7 @@ The sample response object should look like below.
 
 The **WebMethodAdaptor** is used to bind data source from remote services and code behind methods. It can be enabled in Grid using Adaptor property of DataManager as **WebMethodAdaptor**.
 
-For every operations, an AJAX post will be send to the specified data service.
+For every operations, an Fetch post will be send to the specified data service.
 
 ```typescript
 import { DataManager, Query, WebMethodAdaptor } from '@syncfusion/ej2-data';
