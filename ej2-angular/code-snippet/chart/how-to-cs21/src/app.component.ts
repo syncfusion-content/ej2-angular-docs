@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { ITextRenderEventArgs, ITooltipRenderEventArgs } from '@syncfusion/ej2-angular-charts';
+import { ITooltipRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 import { Internationalization } from '@syncfusion/ej2-base';
 
 @Component({

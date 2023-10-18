@@ -1,7 +1,7 @@
 
 
-import { Component, OnInit } from '@angular/core';
-import { ILoadedEventArgs, ChartTheme, ITextRenderEventArgs, IPointRenderEventArgs } from '@syncfusion/ej2-angular-charts';
+import { Component } from '@angular/core';
+import { ITextRenderEventArgs, IPointRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 @Component({
     selector: 'app-container',
     template: `

@@ -2,12 +2,9 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChartComponent } from '@syncfusion/ej2-angular-charts';
-import { Internationalization, DateFormatOptions } from '@syncfusion/ej2-base';
-import { ChangeEventArgs as NumericChange } from '@syncfusion/ej2-inputs';
+import { Internationalization } from '@syncfusion/ej2-base';
 import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
-import { IScrollEventArgs, ILoadedEventArgs } from '@syncfusion/ej2-charts';
-import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { IScrollEventArgs } from '@syncfusion/ej2-charts';
 
 @Component({
     selector: 'app-container',

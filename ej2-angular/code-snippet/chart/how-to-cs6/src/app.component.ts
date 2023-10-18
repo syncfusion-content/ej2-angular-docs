@@ -1,7 +1,6 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { ITooltipRenderEventArgs, Series } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     selector: 'app-container',

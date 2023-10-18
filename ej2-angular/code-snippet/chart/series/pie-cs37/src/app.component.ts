@@ -2,7 +2,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { pieData } from './datasource';
-import { IAccTextRenderEventArgs, IAccTooltipRenderEventArgs } from '@syncfusion/ej2-charts';
+import { IAccTooltipRenderEventArgs } from '@syncfusion/ej2-charts';
 import { FontModel } from '@syncfusion/ej2-angular-charts';
 @Component({
     selector: 'app-container',

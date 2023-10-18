@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { ILoadedEventArgs, Series } from '@syncfusion/ej2-angular-charts';
+import { ILoadedEventArgs } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     selector: 'app-container',

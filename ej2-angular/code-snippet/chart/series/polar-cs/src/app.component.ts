@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { radarData } from './datasource';
 @Component({
     selector: 'app-container',
-    template: ` <ejs-chart id='chartcontainer' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+    template: ` <ejs-chart id='chartcontainer' [primaryXAxis]='primaryXAxis'
             [title]='title' >
             <e-series-collection>
                 <e-series [dataSource]='data' type='Polar' xName='x' yName='y' drawType='Line'> </e-series>
