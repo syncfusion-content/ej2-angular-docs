@@ -98,7 +98,7 @@ export class AppComponent {
     onPopupOpen(args: PopupOpenEventArgs): void {
         if (args.type === 'Editor') {
             if (!this.recurrObject.element.classList.contains('e-recurrenceeditor')) {
-                (this.scheduleObj?.eventWindow as any).recurrenceEditor = this.recurrObject;
+                (this.scheduleObj!.eventWindow as any).recurrenceEditor = this.recurrObject;
             }
             (this.recurrObject.element)!.style.display = (this.scheduleObj!.currentAction == "EditOccurrence") ? 'none' : 'block';
         }

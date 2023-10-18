@@ -78,11 +78,11 @@ The above command does the following configuration to your Angular app,
  * Imports the `GridModule` in your application module `app.module.ts`.
  * Registers the Syncfusion UI default theme (material) in the `angular.json` file.
  
- This makes it easy to add the Syncfusion Angular Grids module to your project and start using it in your application.
+This makes it easy to add the Syncfusion Angular Grids module to your project and start using it in your application.
 
- For more information about version compatibility, see [version compatibility](../upgrade/version-compatibility/).
+For more information about version compatibility, see [version compatibility](../upgrade/version-compatibility/).
 
- ## Adding Syncfusion Angular components
+## Adding Syncfusion Angular components
 
 To use Syncfusion Angular components in your application, you will need to add them to your template and specify their properties in your component class.
 

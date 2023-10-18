@@ -53,7 +53,7 @@ SET ASPNETCORE_ENVIRONMENT=Development
 {% endhighlight %}
 {% endtabs %}
 
-> FOr Linux or macOS, run the `export ASPNETCORE_ENVIRONMENT=Development` in the terminal.
+>For Linux or macOS, run the `export ASPNETCORE_ENVIRONMENT=Development` in the terminal.
 
 4.Now, run the build command to ensure the application builds correctly. During the initial run, the build process restores npm dependencies, which may take several minutes. Subsequent builds will be significantly faster.
 

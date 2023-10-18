@@ -19,7 +19,7 @@ export class AppComponent {
   public eventSettings: EventSettingsModel = { dataSource: scheduleData };
   onPopupOpen(args: PopupOpenEventArgs): void {
     if (args.type == 'Editor') {
-        (<any>this.scheduleObj?.eventWindow).recurrenceEditor.frequencies = ['daily', 'weekly'];
+        (<any>this.scheduleObj!.eventWindow).recurrenceEditor.frequencies = ['daily', 'weekly'];
     }
   }
 }
