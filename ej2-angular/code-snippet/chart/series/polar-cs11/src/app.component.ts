@@ -5,8 +5,7 @@ import { radarData } from './datasource';
 
 @Component({
     selector: 'app-container',
-    template: ` <ejs-chart id='chartcontainer' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
-            [title]='title' >
+    template: ` <ejs-chart id='chartcontainer' [title]='title' >
             <e-series-collection>
                 <e-series [dataSource]='data' type='Radar' xName='x' yName='y' drawType='Line'> </e-series>
             </e-series-collection>

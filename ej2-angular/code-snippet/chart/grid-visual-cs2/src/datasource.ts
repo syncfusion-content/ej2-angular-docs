@@ -13064,14 +13064,6 @@ export const customerData: Object[] = [
     }
 ];
 
-type cType = { CustomerID: string, ContactName: string, CustomerName: string };
-export const data: Object[] = orderData.map((item: cType) => {
-    let name: cType = (<cType[]>customerData).filter((cItem: cType) => {
-        return cItem.CustomerID === item.CustomerID;
-    })[0];
-    item.CustomerName = (name || <cType>{}).ContactName;
-    return item;
-});
 
 export const inventoryData: Object[] = [
     {

@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { IPointRenderEventArgs, ChartShape, ILegendRenderEventArgs } from '@syncfusion/ej2-angular-charts';
+import { ILegendRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     selector: 'app-container',

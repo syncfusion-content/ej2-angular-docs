@@ -1,8 +1,6 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { pieData } from './datasource';
-import { IAccTextRenderEventArgs, IAccTooltipRenderEventArgs } from '@syncfusion/ej2-charts';
 @Component({
     selector: 'app-container',
     template: `<ejs-accumulationchart id="chart-container" [tooltip]='tooltip'>

@@ -2,7 +2,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { markerData } from './datasource';
-import { IPointRenderEventArgs, ITextRenderEventArgs } from '@syncfusion/ej2-angular-charts';
+import { IPointRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     selector: 'app-container',

@@ -5,7 +5,7 @@ import { data1 } from './datasource';
 import { data2 } from './datasource';
 @Component({
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='data1' type='RangeColumn' xName='x' low='low' high='high' fill='yellow' [border]='border' dashArray='5.5'></e-series>
             <e-series [dataSource]='data2' type='RangeColumn' xName='x' low='low' high='high' fill='yellow' [border]='border' dashArray='5.5'></e-series>

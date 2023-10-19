@@ -1,7 +1,7 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { ILoadedEventArgs, Series, ChartTheme, ChartComponent } from '@syncfusion/ej2-angular-charts';
+import { ILoadedEventArgs, ChartComponent } from '@syncfusion/ej2-angular-charts';
 import { getElement } from '@syncfusion/ej2-charts';
 
 @Component({
