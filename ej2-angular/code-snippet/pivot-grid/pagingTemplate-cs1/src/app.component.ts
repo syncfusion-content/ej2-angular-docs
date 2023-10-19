@@ -9,7 +9,7 @@ import { isNullOrUndefined } from '@syncfusion/ej2-base';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width [gridSettings]='gridSettings' enablePaging="true" [pageSettings]="pageSettings" [pagerSettings]="pagerSettings" (dataBound)='dataBound'></ejs-pivotview>`,
+    template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings width=width [gridSettings]='gridSettings' enablePaging="true" [pageSettings]="pageSettings" [pagerSettings]="pagerSettings" (dataBound)='dataBound()'></ejs-pivotview>`,
     providers: [PagerService]
 })
 export class AppComponent implements OnInit {
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
             totalRecordsCount: this.pivotGridObj?.engineModule.rowCount,
             currentPage: this.pivotGridObj?.pageSettings.currentRowPage,
             pageCount: 5,
-            click: this.rowPageClick
+            click: this.rowPageClick.bind(this)
         });
         this.rowPager.appendTo('#row-pager');
         if (!isNullOrUndefined(this.columnPager as Pager)) {
@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
             totalRecordsCount: this.pivotGridObj?.engineModule.columnCount,
             currentPage: this.pivotGridObj?.pageSettings.currentColumnPage,
             pageCount: 5,
-            click: this.columnPageClick
+            click: this.columnPageClick.bind(this)
         });
         this.columnPager.appendTo('#column-pager');
     }
