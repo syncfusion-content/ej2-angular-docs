@@ -16,6 +16,7 @@ import {PdfViewerComponent, LinkAnnotationService, BookmarkViewService, Magnific
     #pdfviewer 
     [documentPath]='document' 
     [resourceUrl]='resource' 
+    [serviceUrl]='service'
     (documentLoad)='documentLoaded($event)' 
     style="height:640px;display:block">
    </ejs-pdfviewer>
@@ -28,6 +29,7 @@ export class AppComponent implements OnInit {
   public pdfviewerControl?: PdfViewerComponent;
   public document: string = 'https://cdn.syncfusion.com/content/pdf/form-designer.pdf';
   public resource: string = "https://cdn.syncfusion.com/ej2/23.1.40/dist/ej2-pdfviewer-lib";
+  public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
 
    documentLoaded(e: any): void {
     this.pdfviewerControl?.formDesignerModule.addFormField("Textbox", {name: 'First Name', bounds: { X: 146, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
@@ -52,7 +54,6 @@ export class AppComponent implements OnInit {
     this.pdfviewerControl?.formDesignerModule.addFormField('Textbox', {name: 'DOS Date',bounds: { X: 434, Y: 923, Width: 35, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.addFormField('Textbox', {name: 'DOS Year',bounds: { X: 482, Y: 923, Width: 35, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.updateFormField(this.pdfviewerControl?.formFieldCollections[0], { backgroundColor: 'red' } as TextFieldSettings);
-    this.pdfviewerControl?.formDesignerModule.updateFormField(this.pdfviewerControl.formFieldCollections[0], { backgroundColor: 'red' } as TextFieldSettings);
   }
 
   ngOnInit(): void {
