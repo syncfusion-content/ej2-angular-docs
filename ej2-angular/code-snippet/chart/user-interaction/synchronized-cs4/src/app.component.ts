@@ -22,7 +22,7 @@ import { Browser } from '@syncfusion/ej2-base';
             <ejs-chart #chart2 style='display:block;' id="container2" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis2'
                 [title]='title2' [titleStyle]="titleStyle" [zoomSettings]='zoomSettings' (zoomComplete)='zoomComplete($event)' selectionMode='Point' selectionPattern='Box' (selectionComplete)='selectionComplete($event)'>
                 <e-series-collection>
-                    <e-series [dataSource]='chartData' type='Spline' xName='USD' yName='INR' opacity=0.6
+                    <e-series [dataSource]='chartData' type='Spline' xName='USD' yName='INR'
                         [width]="width" [border]='border'>
                     </e-series>
                 </e-series-collection>
