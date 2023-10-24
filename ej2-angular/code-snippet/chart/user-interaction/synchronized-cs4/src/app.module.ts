@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ChartModule } from '@syncfusion/ej2-angular-charts';
-import { DateTimeService, AreaSeriesService } from '@syncfusion/ej2-angular-charts';
-import { LegendService, ZoomService } from '@syncfusion/ej2-angular-charts';
+import { DateTimeService, LineSeriesService, SplineSeriesService } from '@syncfusion/ej2-angular-charts';
+import { SelectionService, ZoomService } from '@syncfusion/ej2-angular-charts';
 
 /**
  * Module
@@ -14,6 +14,6 @@ import { LegendService, ZoomService } from '@syncfusion/ej2-angular-charts';
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
-    providers: [ DateTimeService, AreaSeriesService, LegendService, ZoomService]
+    providers: [ DateTimeService, LineSeriesService, SplineSeriesService, SelectionService, ZoomService]
 })
 export class AppModule { }
