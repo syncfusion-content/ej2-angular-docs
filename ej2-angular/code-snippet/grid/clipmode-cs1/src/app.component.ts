@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { inventoryData } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { GridComponent, ClipMode } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
     style="margin-top:5px"
     index="0"
     width="150"
+    [fields]='fields'
     [dataSource]="ddlData"
     (change)="valueChange($event)"></ejs-dropdownlist>
     </div>
@@ -29,7 +31,8 @@ export class AppComponent implements OnInit {
   public data?: object[];
   @ViewChild('grid')
   public grid?: GridComponent;
-  public ddlData: Object[] = [
+  public fields: object = { text: 'text', value: 'value' };
+  public ddlData: object[] = [
     { text: 'Ellipsis', value: 'Ellipsis' },
     { text: 'Clip', value: 'Clip' },
     { text: 'Ellipsis with Tooltip', value: 'EllipsisWithTooltip' },
@@ -37,19 +40,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.data = inventoryData;
   }
-  valueChange(args: any): void {
-    if ((args as any).value === 'Clip') {
-      (this.grid as any).getColumnByField('Inventor').clipMode = 'Clip';
-      (this.grid as any).refresh();
-    }
-    else if ((args as any).value === 'Ellipsis') {
-      (this.grid as any).getColumnByField('NumberofPatentFamilies').clipMode = 'Ellipsis';
-      (this.grid as any).refresh();
-    }
-    else {
-      (this.grid as any).getColumnByField('MainFieldsofInvention').clipMode = 'EllipsisWithTooltip';
-      (this.grid as any).refresh();
-    }
+  valueChange(args: ChangeEventArgs): void {
+    (this.grid as GridComponent).getColumnByField('MainFieldsofInvention').clipMode = (args.value as ClipMode);
+    (this.grid as GridComponent).refresh();
   }
 }
 

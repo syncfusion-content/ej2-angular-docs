@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { GridModule, ToolbarService, ExcelExportService, FilterService } from '@syncfusion/ej2-angular-grids';
+import { GridModule, ToolbarService, ExcelExportService } from '@syncfusion/ej2-angular-grids';
 import { AppComponent } from './app.component';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+
 
 /**
  * Module
@@ -9,10 +11,11 @@ import { AppComponent } from './app.component';
 @NgModule({
     imports: [
         BrowserModule,
-        GridModule
+        GridModule,
+        TextBoxModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
-    providers: [ExcelExportService, ToolbarService, FilterService]
+    providers: [ExcelExportService, ToolbarService]
 })
 export class AppModule { }
