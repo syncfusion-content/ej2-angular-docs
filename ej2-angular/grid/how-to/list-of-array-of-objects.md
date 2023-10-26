@@ -1,14 +1,14 @@
 ---
 layout: post
-title: List of array of objects in Angular Grid component | Syncfusion
-description: Learn here all about List of array of objects in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: List of array of objects in Angular Grid Component | Syncfusion
+description: Learn here all about List of array of objects in Syncfusion Essential Angular Grid component, it's elements and more.
 platform: ej2-angular
 control: List of array of objects 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# List of array of objects in Angular Grid component
+# List of array of objects in Angular Grid Component
 
 The following example shows how to set Complex field for datasource having Array Of Objects.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Calendar component | Syncfusion
+title: Getting Started with Angular Calendar Component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Calendar component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Calendar component
+# Getting Started with Angular Calendar Component
 
 The following section explains the steps required to create a simple Calendar component and also it demonstrates the basic usage of the Calendar. To get started quickly with angular DropDownList component using angular CLI, you can check the video below.
 
@@ -191,7 +191,7 @@ The following example demonstrates how to set the value,  min and max dates on i
   
 {% previewsample "page.domainurl/samples/calendar/getting-started-cs9" %}
 
-> You can refer to our [Angular Calendar](https://www.syncfusion.com/angular-ui-components/angular-calendar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Calendar example](https://ej2.syncfusion.com/angular/demos/#/material/calendar/default) that shows how to render the Calendar in Angular.
+> You can refer to our [Angular Calendar](https://www.syncfusion.com/angular-components/angular-calendar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Calendar example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/calendar/default) that shows how to render the Calendar in Angular.
 
 ## See Also
 
