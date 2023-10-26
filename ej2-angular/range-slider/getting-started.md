@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Range slider component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Range slider component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Range Slider Component | Syncfusion
+description:  Learn about getting started with Syncfusion Essential Angular Range Slider component, it's elements and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Range slider component
+# Getting started with Angular Range Slider Component
 
 The Slider component is available in `@syncfusion/ej2-angular-inputs` package. Utilize this package to render the Slider Component.
 

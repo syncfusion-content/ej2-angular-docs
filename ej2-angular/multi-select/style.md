@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Multi select component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Multi select component of Syncfusion Essential JS 2 and more.
+title: Style in Angular Multiselect Component | Syncfusion
+description: Learn here all about style in Syncfusion Essential  Angular Multiselect component,it's elements and more details.
 platform: ej2-angular
 control: Style 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Multi select component
+# Style in Angular Multiselect Component
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

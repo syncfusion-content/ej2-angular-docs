@@ -1,14 +1,14 @@
 ---
 layout: post
-title: File operations in Angular File manager component | Syncfusion
-description: Learn here all about File operations in Syncfusion Angular File manager component of Syncfusion Essential JS 2 and more.
+title: File operations in Angular File Manager Component | Syncfusion
+description: Learn here all about file operations in Syncfusion Essential Angular File Manager component, it's elements and more details.
 platform: ej2-angular
 control: File operations 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# File operations in Angular File manager component
+# File operations in Angular File Manager Component
 
 The file manager component is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the file manager component.  Additionally, previewing of image files is also provided in the file manager component.
 
