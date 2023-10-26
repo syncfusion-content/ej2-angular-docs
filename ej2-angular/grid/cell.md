@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Cell in Angular Grid component | Syncfusion
-description: Learn here all about Cell in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Cell in Angular Grid Component | Syncfusion
+description: Learn here all about cell in Syncfusion Essential Angular Grid component, it's elements and more.
 platform: ej2-angular
 control: Cell 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell in Angular Grid component
+# Cell in Angular Grid Component
 
 ## Displaying the HTML content
 
 Displaying HTML content in a Grid can be useful in scenarios where you want to display formatted content, such as images, links, or tables, in a tabular format. Grid component allows you to display HTML tags in the Grid header and content. By default, the HTML content is encoded to prevent potential security vulnerabilities. However, you can enable the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property by setting the value as false to display HTML tags without encoding. This feature is useful when you want to display HTML content in a grid cell.
 
-In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added  to enable and disable the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered and the `disableHtmlEncode` property of the column is updated accordingly. The [refresh](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method is called to refresh the grid and display the updated content.
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added to enable and disable the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered and the `disableHtmlEncode` property of the column is updated accordingly. The [refresh](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method is called to refresh the grid and display the updated content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -27,7 +27,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% include code-snippet/grid/custom-cell-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/custom-cell-cs3" %}
 
 > * The [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property disables HTML encoding for the corresponding column in the grid. 
@@ -77,7 +77,7 @@ The following example demonstrates how to set the [allowTextWrap](https://ej2.sy
 {% include code-snippet/grid/autowrap-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/autowrap-cs1" %}
 
 ## Customize cell styles
@@ -101,7 +101,7 @@ The following example demonstrates how to add a [queryCellInfo](https://ej2.sync
 {% include code-snippet/grid/custom-cell-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/custom-cell-cs1" %}
 
 > * The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event is triggered for every cell of the grid, so it may impact the performance of the grid whether used to modify a large number of cells.
@@ -130,7 +130,7 @@ The following example demonstrates how to customize the appearance of a specific
 {% include code-snippet/grid/custom-cell-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/custom-cell-cs12" %}
 
 ### Using property
@@ -164,7 +164,7 @@ The following example demonstrates how to customize the appearance of the **Orde
 {% include code-snippet/grid/custom-cell-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/custom-cell-cs2" %}
 
 > Custom attributes can be used to customize any cell in the grid, including header and footer cells.
@@ -190,7 +190,7 @@ The following example demonstrates how to use [getColumnHeaderByIndex](https://e
 {% include code-snippet/grid/custom-cell-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/custom-cell-cs13" %}
 
 > Make sure to pass the correct row and column indices to [getCellFromIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcellfromindex) method, or else the appearance of the wrong cell might get customized.
@@ -218,7 +218,7 @@ The following example demonstrates, how to set the [clipMode](https://ej2.syncfu
 {% include code-snippet/grid/clipmode-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/clipmode-cs1" %}
 
 > * By default, [columns.clipMode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#clipmode) value is **Ellipsis**.
@@ -346,7 +346,7 @@ The following example demonstrates how to customize the tooltip content for the 
 {% include code-snippet/grid/custom-tooltip-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/custom-tooltip-cs1" %}
 
 ## Grid lines
@@ -374,7 +374,7 @@ The following example demonstrates how to set the [gridLines](https://ej2.syncfu
 {% include code-snippet/grid/autowrap-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/autowrap-cs2" %}
 
 >By default, the grid renders with **Default** mode.
@@ -382,4 +382,4 @@ The following example demonstrates how to set the [gridLines](https://ej2.syncfu
 ## See Also
 
 * [Is it possible to apply gradient color based on min and max value in Angular Grid?](https://www.syncfusion.com/forums/160346/is-it-possible-to-apply-gradient-color-based-on-min-and-max-value-in-angular-grid)
-* [How to customize the header cell styles using methods](columns/headers#using-methods)
+* [How to customize the header cell styles using methods](columns/column-headers#using-methods)

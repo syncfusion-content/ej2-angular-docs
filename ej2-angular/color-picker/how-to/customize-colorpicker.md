@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize colorpicker in Angular Color picker component | Syncfusion
-description: Learn here all about Customize colorpicker in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
+title: Customize colorpicker in Angular Color Picker Component | Syncfusion
+description: Learn here all about customize colorpicker in Syncfusion Essential Angular Color Picker, it's elements and more.
 platform: ej2-angular
 control: Customize colorpicker 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize colorpicker in Angular Color picker component
+# Customize colorpicker in Angular Color Picker Component
 
 ## Custom palette
 
@@ -27,7 +27,7 @@ The following sample demonstrates the above functionalities.
 {% include code-snippet/colorpicker/custom/palette-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/colorpicker/custom/palette-cs1" %}
 
 ## Hide input area from picker
@@ -47,7 +47,7 @@ In the following sample, the ColorPicker is rendered without input area.
 {% include code-snippet/colorpicker/how-to-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/colorpicker/how-to-cs1" %}
 
 ## Custom handle
@@ -67,7 +67,7 @@ The following sample show the customized color picker handle.
 {% include code-snippet/colorpicker/custom/handle-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/colorpicker/custom/handle-cs1" %}
 
 ## Custom primary button
@@ -87,7 +87,7 @@ In the following sample, the `picker` icon is added to primary button and using 
 {% include code-snippet/colorpicker/icon-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/colorpicker/icon-cs1" %}
 
 >> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icon to customize the primary button.
@@ -109,7 +109,7 @@ The following sample shows the color picker with input.
 {% include code-snippet/colorpicker/input-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/colorpicker/input-cs1" %}
 
 ## Custom UI
@@ -127,5 +127,5 @@ The color picker UI can be customized in all possible ways. The following sample
 {% include code-snippet/colorpicker/position-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/colorpicker/position-cs1" %}

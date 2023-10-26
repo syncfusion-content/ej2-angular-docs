@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sass in Angular Common control | Syncfusion
-description: Learn here all about Sass in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
+title: Sass in Angular Common Control | Syncfusion
+description: Learn here all about sass support in Syncfusion Essential Angular Common control, it's elements and more.
 platform: ej2-angular
 control: common
 documentation: ug
