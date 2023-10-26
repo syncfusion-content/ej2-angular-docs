@@ -514,8 +514,6 @@ Here is an example code that demonstrates how to control grid actions for specif
 {% include code-snippet/grid/control-actions-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "page.domainurl/samples/grid/control-actions-cs1" %}
 
 ## Customize column styles
 

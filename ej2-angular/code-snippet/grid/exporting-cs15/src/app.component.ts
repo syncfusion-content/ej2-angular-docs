@@ -20,7 +20,7 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
     [dataSource]="ddlData">
     </ejs-dropdownlist>
     </div>
-    <ejs-grid #grid id='Grid' [dataSource]='data'  [toolbar]='toolbarOptions' height='720px' [allowPdfExport]='true' (toolbarClick)='toolbarClick($event)'>
+    <ejs-grid #grid id='Grid' [dataSource]='data'  [toolbar]='toolbarOptions' height='220px' [allowPdfExport]='true' (toolbarClick)='toolbarClick($event)'>
         <e-columns>
             <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
             <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
