@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Angular Drop down list component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: Data binding in Angular Dropdown List Component | Syncfusion
+description: Learn here all about data binding in Syncfusion Essential Angular Dropdown List component its elements and more.
 platform: ej2-angular
 control: Data binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in Angular Drop down list component
+# Data binding in Angular Drop down list Component
 
 The DropDownList loads the data either from local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#datasource) property. It supports the data type of `array` or `DataManager`.
 remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#datasource) property. It supports the data type of `array` or `DataManager`.
@@ -187,9 +187,9 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 ## See Also
 
 * [How to load data using template](./templates#item-template)
-* [How to group the data using header](./grouping/)
-* [How to filter the bound data](./filtering/)
-* [How to get the count of the data when using remote data](./how-to/remote-data-bind/)
-* [How to achieve cascading](./how-to/cascading/)
-* [How to add item in between the options](./how-to/add-item/)
-* [How to remove an item](./how-to/remove-item/)
+* [How to group the data using header](./grouping)
+* [How to filter the bound data](./filtering)
+* [How to get the count of the data when using remote data](./how-to/remote-data-bind)
+* [How to achieve cascading](./how-to/cascading)
+* [How to add item in between the options](./how-to/add-item)
+* [How to remove an item](./how-to/remove-item)

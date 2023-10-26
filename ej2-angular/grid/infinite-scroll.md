@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Infinite scroll in Angular Grid component | Syncfusion
-description: Learn here all about Infinite scroll in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Infinite scroll in Angular Grid Component | Syncfusion
+description: Learn here all about infinite scroll in Syncfusion Essential Angular Grid component its elements and more.
 platform: ej2-angular
 control: Infinite scroll 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Infinite scroll in Angular Grid component
+# Infinite scroll in Angular Grid Component
 
 Infinite scrolling is used to load a huge amount of data without degrading the Grid performance. This feature works like the lazy loading concept, which means the buffer data is loaded only when the scrollbar reaches the end of the scroller.
 
