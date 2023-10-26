@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Dialog component | Syncfusion
+title: Getting Started with Angular Dialog Component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Dialog component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Dialog component
+# Getting Started with Angular Dialog Component
 
 This section explains the steps to create a simple **Dialog** component and configure its available functionalities in Angular.
 
@@ -105,7 +105,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 Once you have successfully installed the popups package, the component modules are ready to configure in your application from the installed location. Syncfusion Angular package provides two different types of ngModules.
 
-Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module/) to learn about `ngModules`.
+Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module) to learn about `ngModules`.
 
 Refer to the following snippet to import the `DialogModule` in `app.module.ts` from the `@syncfusion/ej2-angular-popups`.
 
@@ -349,7 +349,7 @@ The below example demonstrates the different Dialog positions.
   
 {% previewsample "page.domainurl/samples/dialog/position-cs1" %}
 
-> You can refer to our [Angular Dialog](https://www.syncfusion.com/angular-ui-components/angular-modal-dialog) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dialog example](https://ej2.syncfusion.com/angular/demos/#/material/dialog/default) that shows how to render the dialog.
+> You can refer to our [Angular Dialog](https://www.syncfusion.com/angular-ui-components/angular-modal-dialog) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Dialog example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/dialog/default) that shows how to render the dialog.
 
 ## See Also
 

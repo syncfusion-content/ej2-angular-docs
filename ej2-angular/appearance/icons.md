@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons in Angular Appearance component | Syncfusion
-description: Learn here all about Icons in Syncfusion Angular Appearance component of Syncfusion Essential JS 2 and more.
+title: Icons in Angular Appearance Component | Syncfusion
+description: Learn here all about Icons support in Syncfusion Essential Angular Appearance component, it's elements and more.
 platform: ej2-angular
 control: Icons 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons in Angular Appearance component
+# Icons in Angular Appearance Component
 
 Syncfusion's icon library is a collection of pre-designed icons that can be used to enhance the user interface of an application. This pre-designed icons are set of `base64` formatted font icons. Utilizing this icon library can make it simpler to create a cohesive, visually pleasing design for an application.
 
