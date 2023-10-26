@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ionic with Angular Getting started component | Syncfusion
-description:  Checkout and learn about Ionic with Angular Getting started component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Ionic Component | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential Angular Ionic component, it's elements and more.
 platform: ej2-angular
 control: Ionic 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Ionic and Angular
+# Getting Started with Angular Ionic
 
 This document helps you create a simple Angular application with the `Ionic Framework` and including `Syncfusion Angular UI components` can be a great way to add functionality and a polished look to your app.
 
@@ -36,7 +36,7 @@ ionic start syncfusion-angular-ionic blank --type=angular
 ```
 This command will create a new Ionic template application in a folder called "syncfusion-angular-ionic" and will also install the default npm packages needed for the application.
 
->Refer to this [getting started](https://ionicframework.com/getting-started/#cli) document to install ionic framework.
+>Refer to this [getting started](https://ionicframework.com/#cli) document to install ionic framework.
 
 ## Installing Syncfusion Grid package
 
