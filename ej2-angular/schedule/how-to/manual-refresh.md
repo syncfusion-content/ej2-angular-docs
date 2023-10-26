@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Manual refresh in Angular Schedule component | Syncfusion
-description: Learn here all about Manual refresh in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Manual refresh in Angular Schedule Component | Syncfusion
+description: Learn here all about manual refresh support in Syncfusion Essential Angular Schedule component, it's elements and more.
 platform: ej2-angular
 control: Manual refresh 
 documentation: ug

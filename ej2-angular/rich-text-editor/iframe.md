@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Iframe in Angular Rich text editor component | Syncfusion
-description: Learn here all about Iframe in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Iframe in Angular Rich Text Editor Component | Syncfusion
+description: Learn here all about iframe support in Syncfusion Essential Angular Rich Text Editor component, it's elements and more.
 platform: ej2-angular
 control: Iframe 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Iframe in Angular Rich text editor component
+# Iframe in Angular Rich Text Editor Component
 
 When the [iframeSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#iframesettings) option is enabled, the Rich Text Editor creates the iframe element as the content area on control initialization. It is used to display and editing the content in content area. The editor will display only the body tag of a < iframe > document.
 
@@ -64,4 +64,4 @@ Likewise, add the external script file to the `< iframe >` element using the [`s
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs7" %}
 
-> You can also explore our [iframe in Angular Rich Text Editor example](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/iframe) that shows how to render the iframe in Angular Rich Text Editor.
+N> You can also explore our [iframe in Angular Rich Text Editor example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/rich-text-editor/iframe) that shows you how to render the iframe in Angular Rich Text Editor.

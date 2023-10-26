@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bind data using two way binding in Angular Check box component | Syncfusion
-description: Learn here all about Bind data using two way binding in Syncfusion Angular Check box component of Syncfusion Essential JS 2 and more.
+title: Use two way binding in Angular Checkbox Component | Syncfusion
+description: Learn here all about bind data using two way binding support in Syncfusion Essential Angular Checkbox component, it's elements and more.
 platform: ej2-angular
 control: Bind data using two way binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Bind data using two way binding in Angular Check box component
+# Use two way binding in Angular Checkbox Component
 
 Checkbox component supports two way binding.
 
@@ -22,7 +22,7 @@ In this following example, two way binding for Checkbox is illustrated with Swit
 
   ```
 
-* Initialize Switch component and assign the [`checked`](https://ej2.syncfusion.com/angular/documentation/api/switch#checked) property value like the below code,
+* Initialize Switch component and assign the [`checked`](https://ej2.syncfusion.com/angular/documentation/api/switch/#checked) property value like the below code,
 
   ```typescript
 
