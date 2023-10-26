@@ -205,8 +205,7 @@ There are three types of [clipMode](https://ej2.syncfusion.com/angular/documenta
 * **Ellipsis**: Displays ellipsis when the cell content overflows its area.
 * **EllipsisWithTooltip**: Displays ellipsis when the cell content overflows its area, also it will display the tooltip while hover on ellipsis is applied. Also it will display the tooltip while hover on ellipsis is applied.
 
-The following example demonstrates, how to set the [clipMode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#clipmode) property to **Clip** for the **Name of the Inventor** column, **Ellipsis** for the **Number of Patent Families** column, and **EllipsisWithTooltip** for the **Main Fields of Invention** column, on changing the dropdown value using the [change](https://helpej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component.
-
+The following example demonstrates, how to set the [clipMode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#clipmode) property to **Clip** , **Ellipsis** and **EllipsisWithTooltip** for the **Main Fields of Invention** column, on changing the dropdown value using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the `DropDownList` component. The [refresh](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method is used to refresh the grid and display the updated content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -134,7 +134,7 @@ To show or hide columns based on user interaction during the export process, you
 
 3. Export the grid to PDF.
 
-4. Handle the [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfExportComplete) event to restore the column visibility to its original state.
+4. Handle the [pdfExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#pdfexportcomplete) event to restore the column visibility to its original state.
 
 In the following example, the **CustomerID** is initially a hidden column in the grid. However, during the export process, the **CustomerID** column is made visible, while the **ShipCity** column is hidden.
 
@@ -164,7 +164,7 @@ The supported `pageOrientation` options are:
 
 2. **Portrait**: Exports the grid with a portrait PDF page orientation.
 
-The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageOrientation` property using the [value](https://ej2.syncfusion.com/angular/documentation/api/switch/#value) property of the `DropDownList` component.
+The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageOrientation` property using the [value](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#value) property of the `DropDownList` component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -216,7 +216,7 @@ Supported `pdfPageSize` are:
 * Letter11x17
 * Ledger
 
-The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageSize` property by using [value](https://ej2.syncfusion.com/angular/documentation/api/switch/#value) property of the `DropDownList` component.
+The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageSize` property by using [value](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#value) property of the `DropDownList` component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
