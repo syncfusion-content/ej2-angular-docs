@@ -64,4 +64,4 @@ Likewise, add the external script file to the `< iframe >` element using the [`s
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs7" %}
 
-N> You can also explore our [iframe in Angular Rich Text Editor example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/rich-text-editor/iframe) that shows you how to render the iframe in Angular Rich Text Editor.
+N> You can also explore our [Iframe in Angular Rich Text Editor example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/rich-text-editor/iframe) that shows you how to render the Iframe in Angular Rich Text Editor.
