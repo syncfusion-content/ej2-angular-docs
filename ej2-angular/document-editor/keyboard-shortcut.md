@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard shortcut in Angular Document editor component | Syncfusion
-description: Learn here all about Keyboard shortcut in Syncfusion Angular Document editor component of Syncfusion Essential JS 2 and more.
+title: Keyboard shortcut in Angular Document Editor Component | Syncfusion
+description: Learn here all about keyboard shortcut in Syncfusion Essential Angular Document Editor component its elements more.
 platform: ej2-angular
 control: Keyboard shortcut 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Keyboard shortcut in Angular Document editor component
+# Keyboard shortcut in Angular Document Editor Component
 
 ## Text formatting
 
@@ -130,4 +130,4 @@ The following table lists the default keyboard shortcuts for formatting the para
 
 ## See Also
 
-* [How to override the keyboard shortcuts](../document-editor/how-to/override-the-keyboard-shortcuts/)
+* [How to override the keyboard shortcuts](../document-editor/how-to/override-the-keyboard-shortcuts)
