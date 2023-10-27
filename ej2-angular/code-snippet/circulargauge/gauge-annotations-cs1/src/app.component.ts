@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
                     <e-pointer value = 50></e-pointer>
                 </e-pointers>
                 <e-annotations>
-                    <e-annotation>
+                    <e-annotation zIndex='1'>
 						<ng-template #content>
 							<div>
 							  <div><span>Pointer Value : 50</span>

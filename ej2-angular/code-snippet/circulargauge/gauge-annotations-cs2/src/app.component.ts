@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
                     <e-pointer value = 50></e-pointer>
                 </e-pointers>
                 <e-annotations>
-                    <e-annotation angle=90 radius="150%">
+                    <e-annotation angle=90 radius="150%" zIndex="1">
 						<ng-template #content>
 							<div>
 								<div><span>Pointer Value : 50</span>
