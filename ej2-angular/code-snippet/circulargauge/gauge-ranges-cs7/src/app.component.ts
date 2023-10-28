@@ -11,25 +11,25 @@ import { Component, OnInit } from '@angular/core';
                 <e-axis [lineStyle]='lineStyle' radius='90%' startAngle=200 endAngle=130 minimum=0 maximum=14 [labelStyle]='labelStyle' [majorTicks]='majorTicks'
                     [minorTicks]='minorTicks' [ranges]='ranges'>
                     <e-pointers>
-                        <e-pointer type='Marker' [value]=12 markerShape='Image' imageUrl='templates/circulargauge/images/football.png' radius='108%'
+                        <e-pointer type='Marker' [value]=12 markerShape='Image' imageUrl='https://ej2.syncfusion.com/angular/demos/assets/circular-gauge/images/foot-ball.png' radius='108%'
                             [markerWidth]=28 [markerHeight]=28 [animation]='animation1'>
                         </e-pointer>
-                        <e-pointer type='Marker' [value]=11 markerShape='Image' imageUrl='templates/circulargauge/images/basketball.png' radius='78%'
+                        <e-pointer type='Marker' [value]=11 markerShape='Image' imageUrl='https://ej2.syncfusion.com/angular/demos/assets/circular-gauge/images/basket-ball.png' radius='78%'
                             [markerWidth]=28 [markerHeight]=28 [animation]='animation2'>
                         </e-pointer>
-                        <e-pointer type='Marker' [value]=10 markerShape='Image' imageUrl='templates/circulargauge/images/golfball.png' radius='48%'
+                        <e-pointer type='Marker' [value]=10 markerShape='Image' imageUrl='https://ej2.syncfusion.com/angular/demos/assets/circular-gauge/images/golf-ball.png' radius='48%'
                             [markerWidth]=28 [markerHeight]=28 [animation]='animation3'>
                         </e-pointer>
-                        <e-pointer type='Marker' [value]=12 markerShape='Image' imageUrl='templates/circulargauge/images/athletics.png' radius='0%'
+                        <e-pointer type='Marker' [value]=12 markerShape='Image' imageUrl='https://ej2.syncfusion.com/angular/demos/assets/circular-gauge/images/athletics.png' radius='0%'
                             [markerWidth]=90 [markerHeight]=90 [animation]='animation4'>
                         </e-pointer>
-                        <e-pointer type='Marker' [value]=0.1 markerShape='Image' imageUrl='templates/circulargauge/images/girl1.png' radius='108%'
+                        <e-pointer type='Marker' [value]=0.1 markerShape='Image' imageUrl='https://ej2.syncfusion.com/angular/demos/assets/circular-gauge/images/girl.png' radius='108%'
                             [markerWidth]=28 [markerHeight]=28 [animation]='animation1'>
                         </e-pointer>
-                        <e-pointer type='Marker' [value]=0.1 markerShape='Image' imageUrl='templates/circulargauge/images/man1.png' radius='78%' [markerWidth]=28
+                        <e-pointer type='Marker' [value]=0.1 markerShape='Image' imageUrl='https://ej2.syncfusion.com/angular/demos/assets/circular-gauge/images/man-one.png' radius='78%' [markerWidth]=28
                             [markerHeight]=28 [animation]='animation1'>
                         </e-pointer>
-                        <e-pointer type='Marker' [value]=0.1 markerShape='Image' imageUrl='templates/circulargauge/images/man2.png' radius='48%' [markerWidth]=28
+                        <e-pointer type='Marker' [value]=0.1 markerShape='Image' imageUrl='https://ej2.syncfusion.com/angular/demos/assets/circular-gauge/images/man-two.png' radius='48%' [markerWidth]=28
                             [markerHeight]=28 [animation]='animation1'>
                         </e-pointer>
                     </e-pointers>
