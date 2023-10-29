@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Scrolling in Angular Grid component | Syncfusion
-description: Learn here all about Scrolling in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Scrolling in Angular Grid Component | Syncfusion
+description: Learn here all about scrolling support in Syncfusion Essential Angular Grid component, it's elements and more.
 platform: ej2-angular
 control: Scrolling 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Scrolling in Angular Grid component
+# Scrolling in Angular Grid Component
 
 The scrollbar will be displayed in the grid when content exceeds the element [`width`](https://ej2.syncfusion.com/angular/documentation/api/grid/#width) or [`height`](https://ej2.syncfusion.com/angular/documentation/api/grid/#height). The vertical and horizontal scrollbars will be displayed based on the following criteria:
 

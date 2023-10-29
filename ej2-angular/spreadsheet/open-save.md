@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open save in Angular Spreadsheet component | Syncfusion
-description: Learn here all about Open save in Syncfusion Angular Spreadsheet component of Syncfusion Essential JS 2 and more.
+title: Open save in Angular Spreadsheet Component | Syncfusion
+description: Learn here all about open save in Syncfusion Essential Angular Spreadsheet component, it's elements and more.
 platform: ej2-angular
 control: Open save 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open save in Angular Spreadsheet component
+# Open save in Angular Spreadsheet Component
 
 In import an excel file, it needs to be read and converted to client side Spreadsheet model. The converted client side Spreadsheet model is sent as JSON which is used to render Spreadsheet. Similarly, when you save the Spreadsheet, the client Spreadsheet model is sent to the server as JSON for processing and saved. Server configuration is used for this process.
 
@@ -235,7 +235,7 @@ The following list of Excel file formats are supported in Spreadsheet:
 
 ## Note
 
-You can refer to our [Angular Spreadsheet](https://www.syncfusion.com/angular-ui-components/angular-spreadsheet) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Spreadsheet example](https://ej2.syncfusion.com/angular/demos/#/material/spreadsheet/default) to knows how to present and manipulate data.
+You can refer to our [Angular Spreadsheet](https://www.syncfusion.com/angular-components/angular-spreadsheet) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Spreadsheet example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/spreadsheet/default) to knows how to present and manipulate data.
 
 ## See Also
 

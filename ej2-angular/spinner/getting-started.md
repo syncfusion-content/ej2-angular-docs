@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Spinner component | Syncfusion
+title: Getting Started with Angular Spinner Component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Spinner component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Spinner component
+# Getting Started with Angular Spinner Component
 
 This section explains the steps to create a simple **Spinner** and configure its functionalities in Angular.
 
