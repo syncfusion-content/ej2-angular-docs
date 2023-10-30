@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Toolbar component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Toolbar component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular Toolbar Component | Syncfusion
+description:  Checkout and learn about getting started with Angular Toolbar component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Toolbar component
+# Getting started with Angular Toolbar Component
 
 This section explains briefly about how to create a simple **Toolbar** using Angular and configuring the Toolbar items like button, separator and input components.
 
@@ -195,4 +195,4 @@ You need to follow the below structure of HTML elements to render the Toolbar in
 
 * [How to add Toggle Button](./how-to/add-toggle-button/)
 
-N> You can refer to our [Angular Toolbar](https://www.syncfusion.com/angular-ui-components/angular-toolbar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Toolbar Example](https://ej2.syncfusion.com/angular/demos/#/fabric/toolbar/default) that shows you how to render the Toolbar in Angular.
+N> You can refer to our [Angular Toolbar](https://www.syncfusion.com/angular-components/angular-toolbar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Toolbar Example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/toolbar/default) that shows you how to render the Toolbar in Angular.

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Render a dialog using utility functions in Angular Dialog component | Syncfusion
-description: Learn here all about Render a dialog using utility functions in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: Render dialog utility in Angular Dialog Component | Syncfusion
+description: Learn here all about render a dialog using utility functions in Syncfusion Essential Angular Dialog component, it's elements and more.
 platform: ej2-angular
 control: Render a dialog using utility functions 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Render a dialog using utility functions in Angular Dialog component
+# Render dialog utility functions in Angular Dialog Component
 
 The dialog component provides built-in utility functions to render the alert and confirm dialogs with the minimal code.
 The following options are used as an argument on calling the utility functions:

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Pie dough nut in Angular Accumulation chart component | Syncfusion
-description: Learn here all about Pie dough nut in Syncfusion Angular Accumulation chart component of Syncfusion Essential JS 2 and more.
+title: Pie dough nut in Angular Accumulation Chart Component | Syncfusion
+description: Learn here all about pie dough nut in Syncfusion Essential Angular Accumulation chart component, it's elements and more.
 platform: ej2-angular
 control: Pie dough nut 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pie dough nut in Angular Accumulation chart component
+# Pie dough nut in Angular Accumulation Chart Component
 
 ## Pie Chart
 

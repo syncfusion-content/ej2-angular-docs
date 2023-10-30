@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Use reactive forms inside dialog in Angular Dialog component | Syncfusion
-description: Learn here all about Use reactive forms inside dialog in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: Use reactive forms in Angular Dialog Component | Syncfusion
+description: Learn here all about use reactive forms inside dialog in Syncfusion Essential Angular Dialog component, it's elements and more.
 platform: ej2-angular
 control: Use reactive forms inside dialog 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Use reactive forms inside dialog in Angular Dialog component
+# Use reactive forms in Angular Dialog Component
 
 The following sample demonstrates how to use the reactive forms with required validation inside the dialog.
 For more details, refer to the [Angular Documentation](https://angular.io/guide/reactive-forms)

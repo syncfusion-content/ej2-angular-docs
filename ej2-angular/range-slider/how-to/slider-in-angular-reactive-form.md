@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Slider in angular reactive form in Angular Range slider component | Syncfusion
-description: Learn here all about Slider in angular reactive form in Syncfusion Angular Range slider component of Syncfusion Essential JS 2 and more.
+title: Slider in Angular Range Slider Component | Syncfusion
+description: Learn here all about slider in angular reactive form in Syncfusion Essential Angular Range slider component, it's elements and more.
 platform: ej2-angular
 control: Slider in angular reactive form 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Slider in angular reactive form in Angular Range slider component
+# Slider in angular reactive form in Angular Range Slider Component
 
 Slider validation can be achieved in Angular using [Reactive](https://angular.io/guide/reactive-forms) forms. Here the sample shown slider validation state based on Angular form [classes](https://angular.io/guide/forms#track-control-state-and-validity-with-ngmodel).
 
 Follow below steps to validate slider within reactive forms.
 
-* Create simple Angular reactive form. And add simple [slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types) component within form.
+* Create simple Angular reactive form. And add simple [slider](https://ej2.syncfusion.com/angular/documentation/range-slider/getting-started#types) component within form.
 
 * Create [form group](https://angular.io/guide/reactive-forms#add-a-formgroup) with slider.
 
