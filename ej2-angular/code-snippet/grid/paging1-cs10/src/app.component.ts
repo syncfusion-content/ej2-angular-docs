@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.data = orderDetails;
   }
-  click(args: ClickEventArgs): void { 
-    (this.grid as GridComponent).pageSettings.pageSize = parseInt(this.textbox.value, 10);
+  click(args: ClickEventArgs): void {
+    (this.grid as GridComponent).pageSettings.pageSize = parseInt((this.textbox as TextBoxComponent).value, 10);
   }
 }

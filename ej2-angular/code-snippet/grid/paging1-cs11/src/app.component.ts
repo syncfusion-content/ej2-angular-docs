@@ -35,6 +35,6 @@ export class AppComponent implements OnInit {
     this.data = orderDetails;
   }
   click(args: ClickEventArgs): void {
-    (this.grid as GridComponent).pageSettings.pageCount = parseInt(this.textbox.value, 10);    
+    (this.grid as GridComponent).pageSettings.pageCount = parseInt((this.textbox as TextBoxComponent), 10);
   }
 }
