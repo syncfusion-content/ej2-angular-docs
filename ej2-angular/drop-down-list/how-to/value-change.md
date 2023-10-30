@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Value change in Angular Drop down list component | Syncfusion
-description: Learn here all about Value change in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: Value change in Angular DropDown List Component | Syncfusion
+description: Learn here all about value change in Syncfusion Essential Angular DropDown List component, it's elements and more.
 platform: ej2-angular
 control: Value change 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Value change in Angular Drop down list component
+# Value change in Angular DropDown List Component
 
 You can check about whether value change happened by manual or programmatic by
 using [`change`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event argument that argument name is `isInteracted`.

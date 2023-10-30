@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Open mode in Angular Tooltip component | Syncfusion
-description: Learn here all about Open mode in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: Open mode in Angular Tooltip Component | Syncfusion
+description: Learn here all about open mode support in Syncfusion Essential Angular Tooltip component, it's elements and more.
 platform: ej2-angular
 control: Open mode 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open mode in Angular Tooltip component
+# Open mode in Angular Tooltip Component
 
 You can decide the mode on which the Tooltip is to be opened on a page, i.e., on hovering, focusing, or clicking on the target elements.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Umldiagram in Angular Diagram component | Syncfusion
-description: Learn here all about Umldiagram in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Umldiagram in Angular Diagram Component | Syncfusion
+description: Learn here all about umldiagram support in Syncfusion Essential Angular Diagram component, it's elements and more.
 platform: ej2-angular
 control: Umldiagram 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Umldiagram in Angular Diagram component
+# Umldiagram in Angular Diagram Component
 
 ## Uml Class Diagram Shapes
 
@@ -19,13 +19,13 @@ The UML class diagram shapes are explained as follows.
 
 ## Class
 
-* A class describes a set of objects that shares the same specifications of features, constraints, and semantics. To define a class object, you should define the classifier as [`class`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel#class).
+* A class describes a set of objects that shares the same specifications of features, constraints, and semantics. To define a class object, you should define the classifier as [`class`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel/#class).
 
-* Also, define the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassModel#name), [`attributes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassModel#attributes), and [`methods`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassModel#methods) of the class using the class property of node.
+* Also, define the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassModel/#name), [`attributes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassModel/#attributes), and [`methods`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassModel/#methods) of the class using the class property of node.
 
-* The attribute’s [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel#name), [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel#type), and [`scope`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel#scope) properties allow you to define the name, data type, and visibility of the attribute.
+* The attribute’s [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel/#name), [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel/#type), and [`scope`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel/#scope) properties allow you to define the name, data type, and visibility of the attribute.
 
-* The method’s [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel#name), [`parameters`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel#parameters), [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel#type), and [`scope`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel#scope) properties allow you to define the name, parameter, return type, and visibility of the methods.
+* The method’s [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel/#name), [`parameters`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel/#parameters), [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel/#type), and [`scope`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel/#scope) properties allow you to define the name, parameter, return type, and visibility of the methods.
 
 * The method parameters object properties allow you to define the name and type of the parameter.
 
@@ -47,9 +47,9 @@ The UML class diagram shapes are explained as follows.
 
 ## Interface
 
-* An Interface is a kind of classifier that represents a declaration of a set of coherent public features and obligations. To create an interface, define the classifier property as [`interface`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel#interface).
+* An Interface is a kind of classifier that represents a declaration of a set of coherent public features and obligations. To create an interface, define the classifier property as [`interface`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel/#interface).
 
-* Also, define the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel#name), [`attributes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel#attributes), and [`methods`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel#methods) of the interface using the interface property of the node.
+* Also, define the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel/#name), [`attributes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel/#attributes), and [`methods`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel/#methods) of the interface using the interface property of the node.
 
 * The attribute’s name, type, and scope properties allow you to define the name, data type, and visibility of the attribute.
 
@@ -75,7 +75,7 @@ The UML class diagram shapes are explained as follows.
 
 ## Enumeration
 
-* To define an enumeration, define the classifier property of node as [`enumeration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel#enumeration). Also, define the name and members of the enumeration using the enumeration property of the node.
+* To define an enumeration, define the classifier property of node as [`enumeration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel/#enumeration). Also, define the name and members of the enumeration using the enumeration property of the node.
 
 * You can set a name for the enumeration members collection using the name property of members collection.
 
@@ -241,7 +241,7 @@ Multiplicity is a definition of an inclusive interval of non-negative integers t
 
 4.To set an optionality or cardinality for the connector source label, use optional property.
 
-5.The [`lowerBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicityLabelModel#lowerBounds) and [`upperBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicityLabelModel#upperBounds) could be natural constants or constant expressions evaluated to natural (non negative) number. Upper bound could be also specified as asterisk ‘\*’ which denotes unlimited number of elements. Upper bound should be greater than or equal to the lower bound.
+5.The [`lowerBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicityLabelModel/#lowerBounds) and [`upperBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicityLabelModel/#upperBounds) could be natural constants or constant expressions evaluated to natural (non negative) number. Upper bound could be also specified as asterisk ‘\*’ which denotes unlimited number of elements. Upper bound should be greater than or equal to the lower bound.
 
 The following code example illustrates how to customize the multiplicity.
 

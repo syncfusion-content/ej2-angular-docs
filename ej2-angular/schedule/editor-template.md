@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editor template in Angular Schedule component | Syncfusion
-description: Learn here all about Editor template in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Editor template in Angular Schedule Component | Syncfusion
+description: Learn here all about editor template support in Syncfusion Essential Angular Schedule component, it's elements and more.
 platform: ej2-angular
 control: Editor template 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Editor template in Angular Schedule component
+# Editor template in Angular Schedule Component
 
 Scheduler makes use of popups and dialog to display the required notifications, as well as includes an editor window with event fields for making the appointment creation and editing process easier. You can also easily customize the editor window and the fields present in it, and can also apply validations on those fields.
 
@@ -617,4 +617,4 @@ You can close the quick info popup in scheduler by using the [closeQuickInfoPopu
   
 {% previewsample "page.domainurl/samples/schedule/editor-window-cs18" %}
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+N> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/schedule/overview) to knows how to present and manipulate data.
