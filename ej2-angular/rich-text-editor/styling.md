@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling in Angular Rich Text Editor Component | Syncfusion
-description: Learn here all about Styling support in Syncfusion Essential Angular Rich Text Editor component, it's elements and more.
+description: Learn here all about styling support in Syncfusion Essential Angular Rich Text Editor component, it's elements and more.
 platform: ej2-angular
 control: Styling 
 documentation: ug

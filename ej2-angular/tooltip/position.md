@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Position in Angular Tooltip Component | Syncfusion
-description: Learn here all about Position support in Syncfusion Essential Angular Tooltip component, it's elements and more.
+description: Learn here all about position support in Syncfusion Essential Angular Tooltip component, it's elements and more.
 platform: ej2-angular
 control: Position 
 documentation: ug

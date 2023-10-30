@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data binding in Angular Grid Component | Syncfusion
-description: Learn here all about Data binding support in Syncfusion Angular Grid component, it's elements and more.
+description: Learn here all about data binding support in Syncfusion Angular Grid component, it's elements and more.
 platform: ej2-angular
 control: Data binding 
 documentation: ug
