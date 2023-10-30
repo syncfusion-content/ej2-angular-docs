@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Icons and sub menu items in Angular Menu component | Syncfusion
-description: Learn here all about Icons and sub menu items in Syncfusion Angular Menu component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Icons and sub menu items in Angular Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Icons and sub menu items 
 documentation: ug

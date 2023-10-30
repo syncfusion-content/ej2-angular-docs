@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add item in Angular Drop down list component | Syncfusion
-description: Learn here all about Add item in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Add item in Angular Drop down list component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Add item 
 documentation: ug

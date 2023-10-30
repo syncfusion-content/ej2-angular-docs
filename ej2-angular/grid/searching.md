@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Searching in Angular Grid component | Syncfusion
-description: Learn here all about Searching in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Searching in Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Searching 
 documentation: ug
