@@ -67,8 +67,7 @@ let instance: Internationalization = new Internationalization();
                         textAlign='Right'></e-column>
                     </e-columns>
                 </ejs-grid>
-            </div>`,
-    // styleUrls: ['./app/app.style.css'],
+            </div>`
     providers: [DetailRowService],
     encapsulation: ViewEncapsulation.None
 })

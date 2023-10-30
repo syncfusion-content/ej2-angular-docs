@@ -30,14 +30,13 @@ import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    @ViewChild('grid') grid?:GridComponent;
+    @ViewChild('grid') grid?: GridComponent;
     @ViewChild('textbox') public textbox?: TextBoxComponent;
 
     ngOnInit(): void {
         this.data = orderDetails;
     }
-    click(args:ClickEventArgs)
-    {
-        (this.grid as GridComponent).pagerModule.goToPage(parseInt(this.textbox.value, 10));
+    click(args: ClickEventArgs) {
+        (this.grid as GridComponent).pagerModule.goToPage(parseInt((this.textbox as TextBoxComponent), 10));
     }
 }

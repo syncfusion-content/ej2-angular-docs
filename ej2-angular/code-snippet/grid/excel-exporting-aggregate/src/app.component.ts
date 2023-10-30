@@ -46,7 +46,7 @@ export class AppComponent {
   }
   toolbarClick(args: ClickEventArgs): void {
     if (args.item.id=='DefaultExport_excelexport') {
-        this.grid.excelExport();
+        (this.grid as GridComponent).excelExport();
     }
   }
   public customAggregateFn = (customData: any) => {
