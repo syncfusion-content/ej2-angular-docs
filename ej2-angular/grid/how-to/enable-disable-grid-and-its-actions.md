@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enable disable grid and its actions in Angular Grid component | Syncfusion
-description: Learn here all about Enable disable grid and its actions in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Enable disable grid in Angular Grid Component | Syncfusion
+description: Learn here all about enable disable grid and its actions in Syncfusion Essential Angular Grid component, its elements and more.
 platform: ej2-angular
 control: Enable disable grid and its actions 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable disable grid and its actions in Angular Grid component
+# Enable disable grid and its actions in Angular Grid Component
 
 You can enable/disable the Grid and its actions by applying/removing corresponding CSS styles.
 

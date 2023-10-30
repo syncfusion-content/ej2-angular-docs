@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Get all child nodes in Angular Treeview component | Syncfusion
-description: Learn here all about Get all child nodes in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
+title: Get all child nodes in Angular Treeview Component | Syncfusion
+description: Learn here all about get all child nodes in Syncfusion Essential Angular Treeview component, its elements and more.
 platform: ej2-angular
 control: Get all child nodes 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Get all child nodes in Angular Treeview component
+# Get all child nodes in Angular Treeview Component
 
 This section demonstrates how to get the child nodes from corresponding parent ID. Using the `getNode` method, you can get the node details of TreeView. Please refer to the following sample.
 
