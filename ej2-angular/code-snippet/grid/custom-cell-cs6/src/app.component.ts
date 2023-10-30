@@ -73,9 +73,8 @@ import { employeeData } from './datasource';
               </table>
             </ng-template>
           </ejs-grid>
-        </div>`,
-  // styleUrls: ['./app.style.css'],
-})
+        </div>`
+  })
 export class AppComponent implements OnInit {
 
   public data?: object[];

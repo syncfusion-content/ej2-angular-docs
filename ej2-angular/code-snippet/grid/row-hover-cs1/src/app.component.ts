@@ -17,8 +17,8 @@ import { data } from './datasource';
                   <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
                   <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
               </e-columns>
-            </ejs-grid>`,
-  // styleUrls:['./app.component.css']
+            </ejs-grid>`
+          
 })
 export class AppComponent implements OnInit {
 

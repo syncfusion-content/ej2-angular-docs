@@ -32,11 +32,11 @@ export class AppComponent implements OnInit {
   public grid?: GridComponent;
   public pageOptions?: PageSettingsModel;
   @ViewChild('textbox') public textbox?: TextBoxComponent;
-  
+
   ngOnInit(): void {
     this.data = orderDetails;
   }
   click(args: ClickEventArgs): void {
-    (this.grid as GridComponent).pageSettings.currentPage = parseInt(this.textbox.value, 10);   
+    (this.grid as GridComponent).pageSettings.currentPage = parseInt((this.textbox as TextBoxComponent), 10);
   }
 }

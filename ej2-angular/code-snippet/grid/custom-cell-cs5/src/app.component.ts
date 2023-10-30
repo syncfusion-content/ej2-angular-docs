@@ -21,8 +21,7 @@ import { DetailDataBoundEventArgs, Grid } from '@syncfusion/ej2-angular-grids';
                 <ng-template #detailTemplate let-data>
                     <div class = 'custom-grid' ></div>
                 </ng-template>
-            </ejs-grid>`,
-    // styleUrls: ['./app.style.css']
+            </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 

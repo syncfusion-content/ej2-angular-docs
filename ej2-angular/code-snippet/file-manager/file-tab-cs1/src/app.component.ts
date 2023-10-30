@@ -11,7 +11,7 @@ import { TabAllModule } from '@syncfusion/ej2-angular-navigations';
     template: ` <div class="control-section e-tab-section">
                     <div class="e-sample-resize-container">
                         <!-- Render the Tab Component -->
-                        <ejs-tab id="tab_default" heightAdjustMode='Auto' [showCloseButton]='enableClose' >
+                        <ejs-tab id="tab_default" heightAdjustMode='Content' [showCloseButton]='enableClose' >
                                 <e-tabitems>
                                     <e-tabitem [header]='headerText[0]'>
                                         <ng-template #content>

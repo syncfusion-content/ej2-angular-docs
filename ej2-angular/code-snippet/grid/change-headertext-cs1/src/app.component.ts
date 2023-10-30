@@ -31,9 +31,7 @@ import { data } from './datasource';
                    width="140"></e-column>
                 </e-columns>
               </ejs-grid>
-            </div>`,
-  // styleUrls: ['./app.component.css']
-
+            </div>`
 })
 export class AppComponent {
 
