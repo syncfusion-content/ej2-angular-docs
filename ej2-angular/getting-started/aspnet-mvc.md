@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Aspnet mvc with Angular Getting started component | Syncfusion
-description:  Checkout and learn about Aspnet mvc with Angular Getting started component of Syncfusion Essential JS 2 and more details.
+description: Learn all about Aspnet mvc with Syncfusion Essential Angular getting started component, it's elements and more.
 platform: ej2-angular
 control: Aspnet mvc 
 documentation: ug
