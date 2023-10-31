@@ -43,9 +43,9 @@ export class AppComponent implements OnInit {
     public width?: number;
     public zoomSettings?: Object;
     @ViewChild('chart1')
-    public chart1: ChartComponent;
+    public chart1!: ChartComponent;
     @ViewChild('chart2')
-    public chart2: ChartComponent;
+    public chart2!: ChartComponent;
     public charts: ChartComponent[] = [];
     public zoomFactor: number = 0;
     public zoomPosition: number = 0;
@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
             this.zoomCompleteFunction(args);
         }
     };
-    public zoomCompleteFunction(args): void {
+    public zoomCompleteFunction(args: any): void {
         for (let i: number = 0; i < this.charts.length; i++) {
             if (args.axis.series[0].chart.element.id !== this.charts[i].element.id) {
                 this.charts[i].primaryXAxis.zoomFactor = this.zoomFactor;
@@ -73,7 +73,7 @@ export class AppComponent implements OnInit {
     public selectionComplete(args: ISelectionCompleteEventArgs): void {
         this.selectionCompleteFunction(args);
     }
-    public selectionCompleteFunction(args): void {
+    public selectionCompleteFunction(args: any): void {
         if (this.count == 0) {
             for (var j = 0; j < args.selectedDataValues.length; j++) {
                 args.selectedDataValues[j].point = args.selectedDataValues[j].pointIndex;
