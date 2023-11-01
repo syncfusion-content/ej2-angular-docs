@@ -13,13 +13,13 @@ domainurl: ##DomainURL##
 
 ## Tooltip for pointers
 
-Circular gauge will displays the pointer details through [tooltip](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tooltipSettings), when the mouse is moved over the pointer.
+Circular gauge will displays the pointer details through [tooltip](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tooltipSettings/), when the mouse is moved over the pointer.
 
 <!-- markdownlint-disable MD036 -->
 
 **Enable Tooltip**
 
-By default, tooltip is not visible. Enable the tooltip by setting [`enable`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tooltipSettings/#enable-boolean) property to true and by injecting `GaugeTooltipService` into the `NgModule.providers`.
+By default, tooltip is not visible. Enable the tooltip by setting [`enable`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tooltipSettings/#enable-boolean/) property to true and by injecting `GaugeTooltipService` into the `NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

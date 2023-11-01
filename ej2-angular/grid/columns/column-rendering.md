@@ -32,7 +32,7 @@ Here's an example code snippet that demonstrates how to define columns manually 
 
 ## Auto generated columns
 
-The Grid automatically generates columns when the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column) declaration is empty or undefined while initializing the grid. All the columns in the **dataSource** are bound as grid columns.
+The Grid automatically generates columns when the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column/) declaration is empty or undefined while initializing the grid. All the columns in the **dataSource** are bound as grid columns.
 
 You can use the following code snippet to enable auto-generated columns in the Syncfusion Grid:
 
