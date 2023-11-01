@@ -22,7 +22,7 @@ You have the following options in Selection,
 
 ## Cell selection
 
-Cell selection is used to select a single or multiple cells. It can be performed using the [`selectRange`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#selectRange) method.
+Cell selection is used to select a single or multiple cells. It can be performed using the [`selectRange`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#selectrange) method.
 
 **User Interface**:
 

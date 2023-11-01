@@ -92,9 +92,9 @@ The following features have some limitations in Image:
 
 ## Chart
 
-A chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of `x`-axis and `y`-axis. You can use the [`allowChart`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#allowChart) property to enable or disable the chart functionality.
+A chart is a graphical representation of data, that organizes and represents a set of numerical or qualitative data. It mostly displays the selected range of data in terms of `x`-axis and `y`-axis. You can use the [`allowChart`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#allowchart) property to enable or disable the chart functionality.
 
->* The default value for the [`allowChart`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#allowChart) property is `true`.
+>* The default value for the [`allowChart`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#allowchart) property is `true`.
 
 ### Types of chart
 
@@ -112,9 +112,9 @@ The following types of charts are available in the Spreadsheet.
 You can insert the chart by using one of the following ways,
 
 * Select the chart icon in the Ribbon toolbar under the Insert Tab.
-* Use the [`insertChart()`](../api/spreadsheet/#insertChart) method programmatically.
+* Use the [`insertChart()`](../api/spreadsheet/#insertchart) method programmatically.
 
-The available parameter in the [`insertChart()`](../api/spreadsheet/#insertChart) method is,
+The available parameter in the [`insertChart()`](../api/spreadsheet/#insertchart) method is,
 
 | Parameter | Type | Description |
 |-----|------|----|
@@ -146,9 +146,9 @@ The available arguments in the `ChartModel` are:
 ### Delete Chart
 
 * If you want to delete the chart, just select the chart, and then press the Delete key.
-* Use the [`deleteChart()`](../api/spreadsheet/#deleteChart) method programmatically.
+* Use the [`deleteChart()`](../api/spreadsheet/#deletechart) method programmatically.
 
-The available parameter in the [`deleteChart()`](../api/spreadsheet/#deleteChart) method is,
+The available parameter in the [`deleteChart()`](../api/spreadsheet/#deletechart) method is,
 
 | Parameter | Type | Description |
 |-----|------|----|
