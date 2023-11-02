@@ -128,7 +128,7 @@ The following example demonstrates the TreeGrid in `Deutsch` culture.
 
 ## Internationalization
 
-The [`Internationalization`](../common/internationalization/) library is used to globalize number, date, and time values in treegrid component using format strings in the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format).
+The [`Internationalization`](../common/globalization/internationalization) library is used to globalize number, date, and time values in treegrid component using format strings in the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -167,7 +167,7 @@ RTL provides an option to switch the text direction and layout of the TreeGrid c
 
 ## See Also
 
-* [Internationalization](../common/internationalization)
-* [Localization](../common/localization)
+* [Internationalization](../common/globalization/internationalization)
+* [Localization](../common/globalization/localization)
 
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
