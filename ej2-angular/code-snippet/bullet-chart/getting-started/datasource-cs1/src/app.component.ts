@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-bulletchart valueName='value' targetName='target'
+    template: `<ejs-bulletchart valueField='value' targetField='target'
                 [minimum]='minimum' [maximum]='maximum' [interval]='interval' [dataSource]='data'>
                 </ejs-bulletchart>`
 })
