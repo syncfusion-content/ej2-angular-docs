@@ -2,7 +2,7 @@
 
 
 import { Component } from '@angular/core';
-import { TooltipSettingsModel } from '@syncfusion/ej2-angular-charts';
+import { SparklineTooltipSettingsModel } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     selector: 'app-container',
@@ -23,7 +23,8 @@ export class AppComponent {
         { xval: 9, yval: 22262500 },
         { xval: 10, yval: 22507620 },
     ];
-    public tooltipSettings: TooltipSettingsModel = {
+    public tooltipSettings: SparklineTooltipSettingsModel = {
+        visible: true,
         format: '${xval} : ${yval}'
     };
 }

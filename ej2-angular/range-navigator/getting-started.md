@@ -95,7 +95,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app-container',
   // specifies the template string for the RangeNavigator component
-  template: `<ejs-rangenavigator id="rn-container"></ejs-rangenavigator>`
+  template: `<ejs-rangenavigator id="rn-container"></ejs-rangenavigator>`,
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent  { }
