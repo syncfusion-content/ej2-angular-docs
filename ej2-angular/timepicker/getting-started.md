@@ -200,7 +200,7 @@ The following example demonstrates how to set the value, min and max time on ini
 
 ## Setting the time format
 
-Time formats is a way of representing the time value in different string format in textbox and popup list. By default, the TimePicker's format is based on the culture. You can also customize the format by using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#format) property. To know more about the time format standards, refer to the [`Date and Time Format](../common/Globalization/internationalization#custom-number-formatting-and-parsing) section.
+Time formats is a way of representing the time value in different string format in textbox and popup list. By default, the TimePicker's format is based on the culture. You can also customize the format by using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#format) property. To know more about the time format standards, refer to the [`Date and Time Format](../common/globalization/internationalization#custom-number-formatting-and-parsing) section.
 
 The following example demonstrates the TimePicker component in 24 hours format with 60 minutes interval. The time interval is set to 60 minutes by using the [`step`](https://ej2.syncfusion.com/angular/documentation/api/timepicker#step-number) property.
 
