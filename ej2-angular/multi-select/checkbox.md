@@ -88,7 +88,7 @@ Using [`enableSelectionOrder`](https://ej2.syncfusion.com/angular/documentation/
 
 ## See Also
 
-* [How to bind the data](./data-binding/)
-* [How to filter the bound data](./filtering/)
-* [How to add custom value to the MultiSelect](./custom-value/)
+* [How to bind the data](./data-binding)
+* [How to filter the bound data](./filtering)
+* [How to add custom value to the MultiSelect](./custom-value)
 * [How to render grouping with checkbox](./grouping/#grouping-with-checkbox).

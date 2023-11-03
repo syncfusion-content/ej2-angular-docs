@@ -133,7 +133,7 @@ The below example shows a basic Circular Gauge.
 
 ## Set Pointer Value
 
-Pointer value is used to indicate the gauge value using [`value`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#value-number) property in [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer).
+Pointer value is used to indicate the gauge value using [`value`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#value-number) property in [`pointers`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
