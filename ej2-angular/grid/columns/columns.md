@@ -577,7 +577,7 @@ This method returns an array of field names of all the columns in the Grid.
 let fieldNames = this.grid.getColumnFieldNames()
 ```
 
-> For a complete list of column methods and properties, refer to this [section](https://ej2.syncfusion.com/angular/documentation/api/grid/#columns).
+> For a complete list of column methods and properties, refer to this [section](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/).
 
 ### Updating column definitions
 
