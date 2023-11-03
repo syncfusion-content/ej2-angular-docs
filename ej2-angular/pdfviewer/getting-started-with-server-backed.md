@@ -51,7 +51,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
          NavigationService, TextSearchService, TextSelectionService,
-         PrintService
+         PrintService, FormDesignerService, FormFieldsService
        } from '@syncfusion/ej2-angular-pdfviewer';
 import { AppComponent } from './app.component';
 
@@ -62,7 +62,8 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent],
   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
-               TextSearchService, TextSelectionService, PrintService]
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService]
 })
 export class AppModule { }
 ```
@@ -92,7 +93,7 @@ import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService, ToolbarService, NavigationService,
          AnnotationService, TextSearchService, TextSelectionService,
-         PrintService
+         PrintService, FormDesignerService, FormFieldsService
        } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
@@ -107,8 +108,8 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
              </div>`,
   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
-               AnnotationService, TextSearchService, TextSelectionService,
-               PrintService]
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService]
 })
 export class AppComponent implements OnInit {
   public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
