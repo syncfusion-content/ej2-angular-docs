@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Rtl in Angular Query builder component
 
-RTL provides an option to switch the text direction and layout of the Query Builder component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL, set the [`enableRtl`](https://ej2.syncfusion.com/vue/documentation/right-to-left/) to true.
+RTL provides an option to switch the text direction and layout of the Query Builder component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL, set the [`enableRtl`](https://ej2.syncfusion.com/vue/documentation/right-to-left) to true.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

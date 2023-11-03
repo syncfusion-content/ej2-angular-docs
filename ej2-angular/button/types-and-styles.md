@@ -14,7 +14,7 @@ This section explains the different styles and types of Buttons.
 
 ## Button styles
 
-The Essential JS 2 Button has the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property.
+The Essential JS 2 Button has the following predefined styles that can be defined using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button/#cssclass) property.
 
 | Class | Description |
 | -------- | -------- |
@@ -41,7 +41,7 @@ The Essential JS 2 Button has the following predefined styles that can be define
 
 > Predefined Button styles provide only the visual indication. So, Button content should define the Button
 style for the users of assistive technologies such as screen readers.
-> Primary action button can also be achieved by setting [`isPrimary`](https://ej2.syncfusion.com/angular/documentation/api/button#isprimary) property as `true`.
+> Primary action button can also be achieved by setting [`isPrimary`](https://ej2.syncfusion.com/angular/documentation/api/button/#isprimary) property as `true`.
 
 ## Button types
 
@@ -80,17 +80,17 @@ The basic Button types are explained below.
 ### Flat Button
 
 The Flat Button is styled with no background color. To create a flat Button,
-set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property to `e-flat`.
+set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button/#cssclass) property to `e-flat`.
 
 ### Outline Button
 
 An outline Button has a border with transparent background. To create an outline Button,
-set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property to `e-outline`.
+set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button/#cssclass) property to `e-outline`.
 
 ### Round Button
 
 A round Button is shaped like a circle. Usually, it contains an icon representing its action.
-To create a round Button, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property to `e-round`.
+To create a round Button, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button/#cssclass) property to `e-round`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -108,7 +108,7 @@ To create a round Button, set the [`cssClass`](https://ej2.syncfusion.com/angula
 
 ### Toggle Button
 
-A toggle Button allows you to change between the two states. The Button is active in toggled state and can be recognized through the `e-active` class. The functionality of the toggle Button is handled by click event. To create a toggle Button, set the [`isToggle`](https://ej2.syncfusion.com/angular/documentation/api/button#istoggle)
+A toggle Button allows you to change between the two states. The Button is active in toggled state and can be recognized through the `e-active` class. The functionality of the toggle Button is handled by click event. To create a toggle Button, set the [`isToggle`](https://ej2.syncfusion.com/angular/documentation/api/button/#istoggle)
 property to `true`. In the following code snippet, the toggle Button text changes to play/pause based on the state of the Button with the use of click event.
 
 {% tabs %}
@@ -129,8 +129,8 @@ property to `true`. In the following code snippet, the toggle Button text change
 
 ### Button with font icons
 
-The Button can have an icon to provide the visual representation of the action. To place the icon on a Button,set the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/button#iconcss) property with the required icon CSS. By default, the icon is positioned to the left side of the Button. You can customize the icon's position
-by using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/button#iconposition) property.
+The Button can have an icon to provide the visual representation of the action. To place the icon on a Button,set the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/button/#iconcss) property with the required icon CSS. By default, the icon is positioned to the left side of the Button. You can customize the icon's position
+by using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/button/#iconposition) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -148,7 +148,7 @@ by using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/a
 
 ### Button with SVG image
 
-SVG image can be added to the Button using [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/button#iconcss) property.
+SVG image can be added to the Button using [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/button/#iconcss) property.
 
 In the following example, SVG image is added using the iconCss class `e-search-icon` by setting `height` and `width`.
 
@@ -166,11 +166,11 @@ In the following example, SVG image is added using the iconCss class `e-search-i
   
 {% previewsample "page.domainurl/samples/button/svg-cs1" %}
 
-> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the Button using the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/button#iconcss) property.
+> The Essential JS 2 provides a set of icons that can be loaded by applying `e-icons` class name to the element. You can also use third party icons on the Button using the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/button/#iconcss) property.
 
 ## Button size
 
-The two types of Button sizes are default and small. To change the size of the default Button to small Button, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property to `e-small`.
+The two types of Button sizes are default and small. To change the size of the default Button to small Button, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button/#cssclass) property to `e-small`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

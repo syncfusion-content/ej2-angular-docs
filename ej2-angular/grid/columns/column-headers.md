@@ -152,7 +152,7 @@ You can use CSS to override the default height of the **.e-grid .e-headercell** 
 
 **Using methods**
 
-To change the height of the header dynamically, you can use the [getHeaderContent](https://ej2.syncfusion.com/angular/documentation/api/grid#getheadercontent) method to get the header content element of the Syncfusion Grid. Then, you can use the **querySelectorAll** method to get all the header cell elements with the class **e-headercell**. Finally, you can loop through each header cell element and set its style property to adjust the height.
+To change the height of the header dynamically, you can use the [getHeaderContent](https://ej2.syncfusion.com/angular/documentation/api/grid/#getheadercontent) method to get the header content element of the Syncfusion Grid. Then, you can use the **querySelectorAll** method to get all the header cell elements with the class **e-headercell**. Finally, you can loop through each header cell element and set its style property to adjust the height.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -168,7 +168,7 @@ To change the height of the header dynamically, you can use the [getHeaderConten
   
 {% previewsample "page.domainurl/samples/grid/grid-cs28" %}
 
->* You can also use the [getHeaderTable](https://ej2.syncfusion.com/angular/documentation/api/grid#getheadertable) method to get the table element of the header, and then adjust the height.
+>* You can also use the [getHeaderTable](https://ej2.syncfusion.com/angular/documentation/api/grid/#getheadertable) method to get the table element of the header, and then adjust the height.
 >* You cannot change the height of row below the default height of 42px using the **e-columnheader** class.
 
 ## Change header text dynamically
@@ -184,7 +184,7 @@ When the `headerCellInfo` event is triggered, it provides a **HeaderCellInfoEven
 * **cell**: Defines the header cell that is being modified.
 * **node**: Defines the DOM element of the header cell that is being modified.
 
-You can use these properties to access and modify the header text of the corresponding column. Once the header text is modified, you can refresh the Grid to reflect the changes by calling the [refreshHeader](https://ej2.syncfusion.com/documentation/api/grid#refreshheader) method of the Grid.
+You can use these properties to access and modify the header text of the corresponding column. Once the header text is modified, you can refresh the Grid to reflect the changes by calling the [refreshHeader](https://ej2.syncfusion.com/documentation/api/grid/#refreshheader) method of the Grid.
 
 **Using method**
 
