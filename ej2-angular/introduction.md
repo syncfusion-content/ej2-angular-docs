@@ -177,7 +177,7 @@ letter-spacing: 0.7px;
 The "Getting Started" guide gives just enough information that you need to know before starting to write code. This is the only section that we recommend reading end-to-end before starting to write code, all other information can be referred as needed.
 
 * Now that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application.
-A good starting point would be to refer to the code snippets in the [online sample browser](http://ej2.syncfusion.com/angular/demos/) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
+A good starting point would be to refer to the code snippets in the [online sample browser](https://ej2.syncfusion.com/home/angular.html) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
 
 * Another valuable resource is the API reference which provides detailed information on the object hierarchy as well as the settings available on every object.
 
