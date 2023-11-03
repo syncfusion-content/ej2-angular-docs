@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to enable you to perform CRUD (Create, Read, Update, Delete) operations seamlessly.
 
-To enable editing functionality directly within the grid, you need to configure the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel/#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel/#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel/#allowdeleting) properties within the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/)  to **true**.
+To enable editing functionality directly within the grid, you need to configure the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel/#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel/#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel/#allowdeleting) properties within the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#editsettings)  to **true**.
 
 Editing feature requires a primary key column for CRUD operations. To define the primary key, set [columns.isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) to **true** in particular column.
 
