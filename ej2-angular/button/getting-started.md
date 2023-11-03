@@ -148,7 +148,7 @@ The following example shows a basic Button component.
 
 ## Change Button type
 
-To change the default Button to flat Button, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button#cssclass) property with `e-flat` and text content of the Button is set using [`content`](https://ej2.syncfusion.com/angular/documentation/api/button#content) property.
+To change the default Button to flat Button, set the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/button/#cssclass) property with `e-flat` and text content of the Button is set using [`content`](https://ej2.syncfusion.com/angular/documentation/api/button/#content) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
