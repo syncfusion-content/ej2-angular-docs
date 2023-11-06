@@ -1,6 +1,6 @@
 ---
 layout: post
-title: System requirements for Angular Platforms | Syncfusion
+title: System requirements for Angular components | Syncfusion
 description: Learn here all about system requirement support in Syncfusion Essential Angular platform, it's elements and more.
 platform: ej2-angular
 control: System requirement 

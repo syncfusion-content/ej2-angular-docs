@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Update npm package in Angular Platform | Syncfusion
-description: Learn here all about update npm package support in Syncfusion Essential Angular platform, it's elements and more.
+title: Update npm package in Angular Common control | Syncfusion
+description: Learn here all about update npm package support in Syncfusion Essential Angular controls, it's elements and more.
 platform: ej2-angular
 control: common
 documentation: ug

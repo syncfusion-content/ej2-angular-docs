@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Close by clicking outside in Angular Dialog Component | Syncfusion
-description: Learn here all about close by clicking outside support in Syncfusion Essential Angular Dialog component, it's elements and more.
+description: Learn here all about close by clicking outside in Syncfusion Essential Angular Dialog component, it's elements and more.
 platform: ej2-angular
 control: Close dialog while click on outside of dialog 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Close by clicking outside in Angular Dialog
+# Close by clicking outside in Angular Dialog Component
 
 By default, [Angular Dialog](https://www.syncfusion.com/angular-components/angular-modal-dialog) can be closed by pressing Esc key and clicking the close icon on the right of dialog header. It can also be closed by clicking outside of the dialog using hide method.
 
