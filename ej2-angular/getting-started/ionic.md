@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Angular Ionic Component | Syncfusion
-description: Learn here all about getting started with Syncfusion Essential Angular Ionic component, it's elements and more.
+title: Ionic with Angular Getting started component | Syncfusion
+description:  Checkout and learn about Ionic with Angular Getting started component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Ionic 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular Ionic
+# Getting started with Ionic and Angular
 
 This document helps you create a simple Angular application with the `Ionic Framework` and including `Syncfusion Angular UI components` can be a great way to add functionality and a polished look to your app.
 
