@@ -1,15 +1,17 @@
-
-
-
 import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treemap id='container' style='display: block;' height='350px' [dataSource]='data' [legendSettings]='legendSettings' equalColorValuePath='Count' weightValuePath='Count' [leafItemSettings]='leafItemSettings'>
+    template: `<ejs-treemap id='container' style='display: block;' [tooltipSettings]='tooltipSettings' [legendSettings]='legendSettings' [dataSource]='data' equalColorValuePath='Count' weightValuePath='Count' [leafItemSettings]='leafItemSettings'>
     </ejs-treemap>`
 })
 export class AppComponent {
     public legendSettings: object = {
+        visible: true,
+        position: 'Top',
+        shape: 'Rectangle'
+    };
+    public tooltipSettings: object = {
         visible: true,
     };
     public data: object[] = [
@@ -23,13 +25,18 @@ export class AppComponent {
         { Title: 'State wise International Airport count in South America', State: 'Bolivia', Count: 2 },
         { Title: 'State wise International Airport count in South America', State: 'Paraguay', Count: 2 },
         { Title: 'State wise International Airport count in South America', State: 'Uruguay', Count: 2 },
-        { Title: 'State wise International Airport count in South America', State: 'Falkland Islands',Count: 1 },
-        { Title: 'State wise International Airport count in South America', State: 'French Guiana', Count:1 },
+        { Title: 'State wise International Airport count in South America', State: 'Falkland Islands', Count: 1 },
+        { Title: 'State wise International Airport count in South America', State: 'French Guiana', Count: 1 },
         { Title: 'State wise International Airport count in South America', State: 'Guyana', Count: 1 },
         { Title: 'State wise International Airport count in South America', State: 'Suriname', Count: 1 },
     ];
     public leafItemSettings: object = {
+        showLabels: true,
         labelPath: 'State',
+        labelPosition: 'Center',
+        labelStyle: {
+            color: 'white'
+        },
         colorMapping: [
             {
                 value: 25,
@@ -66,6 +73,3 @@ export class AppComponent {
         ]
     };
 }
-
-
-
