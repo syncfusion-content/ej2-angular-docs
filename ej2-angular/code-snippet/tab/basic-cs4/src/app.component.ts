@@ -19,7 +19,7 @@ import { TabComponent } from '@syncfusion/ej2-angular-navigations';
         </ejs-tab>`
 })
 export class AppComponent {
-    public headerText: Object = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
+    public headerText: Object[] = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
 
     public content0: string = 'Twitter is an online social networking service that enables users to send and read short 140-character ' +
             'messages called "tweets". Registered users can read and post tweets, but those who are unregistered can only read ' +
