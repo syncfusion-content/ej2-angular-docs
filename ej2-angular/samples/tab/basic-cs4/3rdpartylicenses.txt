@@ -4,6 +4,9 @@ MIT
 @angular/core
 MIT
 
+@angular/forms
+MIT
+
 @angular/platform-browser
 MIT
 
@@ -13,10 +16,13 @@ SEE LICENSE IN license
 @syncfusion/ej2-angular-buttons
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-splitbuttons
+@syncfusion/ej2-angular-dropdowns
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-spreadsheet
+@syncfusion/ej2-angular-navigations
+SEE LICENSE IN license
+
+@syncfusion/ej2-angular-popups
 SEE LICENSE IN license
 
 @syncfusion/ej2-base
@@ -25,28 +31,7 @@ SEE LICENSE IN license
 @syncfusion/ej2-buttons
 SEE LICENSE IN license
 
-@syncfusion/ej2-calendars
-SEE LICENSE IN license
-
-@syncfusion/ej2-charts
-SEE LICENSE IN license
-
-@syncfusion/ej2-compression
-SEE LICENSE IN license
-
 @syncfusion/ej2-data
-SEE LICENSE IN license
-
-@syncfusion/ej2-dropdowns
-SEE LICENSE IN license
-
-@syncfusion/ej2-excel-export
-SEE LICENSE IN license
-
-@syncfusion/ej2-file-utils
-SEE LICENSE IN license
-
-@syncfusion/ej2-grids
 SEE LICENSE IN license
 
 @syncfusion/ej2-inputs
@@ -58,22 +43,10 @@ SEE LICENSE IN license
 @syncfusion/ej2-navigations
 SEE LICENSE IN license
 
-@syncfusion/ej2-notifications
-SEE LICENSE IN license
-
-@syncfusion/ej2-pdf-export
-SEE LICENSE IN license
-
 @syncfusion/ej2-popups
 SEE LICENSE IN license
 
 @syncfusion/ej2-splitbuttons
-SEE LICENSE IN license
-
-@syncfusion/ej2-spreadsheet
-SEE LICENSE IN license
-
-@syncfusion/ej2-svg-base
 SEE LICENSE IN license
 
 rxjs

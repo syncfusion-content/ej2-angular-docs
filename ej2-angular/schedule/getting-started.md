@@ -168,6 +168,7 @@ To populate the empty Scheduler with appointments, define either the local JSON 
 
 ```typescript
 import { Component } from '@angular/core';
+import { EventSettingsModel} from '@syncfusion/ej2-angular-schedule';
 
 @Component({
   selector: 'app-root',
@@ -270,7 +271,7 @@ import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, 
   selector: 'app-root',
   providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
   // specifies the template string for the Schedule component
-  template: `<ejs-schedule width='100%' height='550px' [selectedDate]='selectedDate' [currentView]='currentView' [eventSettings]='eventSettings'></ejs-schedule>`
+  template: `<ejs-schedule width='100%' height='550px' [selectedDate]='selectedDate' [currentView]='currentView' ></ejs-schedule>`
 })
 export class AppComponent {
   public selectedDate: Date = new Date(2018, 1, 15);
