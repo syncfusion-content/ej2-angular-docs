@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Zooming in Angular Chart component | Syncfusion
-description: Learn here all about Zooming in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Zooming in Angular Chart Component | Syncfusion
+description: Learn here all about zooming support in Syncfusion Essential Angular Chart component, it's elements and more.
 platform: ej2-angular
 control: Zooming 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Zooming in Angular Chart component
+# Zooming in Angular Chart Component
 
 ## Enable zooming
 

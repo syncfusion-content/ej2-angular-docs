@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Context menu in Angular Grid component | Syncfusion
-description: Learn here all about Context menu in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Context Menu in Angular Grid Component | Syncfusion
+description: Learn here all about context menu support in Syncfusion Essential Angular Grid component, it's elements and more.
 platform: ej2-angular
 control: Context menu 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Context menu in Angular Grid component
+# Context menu in Angular Grid Component
 
 The Syncfusion Angular Grid component comes equipped with a context menu feature, which is triggered when a user right-clicks anywhere within the grid. This feature serves to enrich the user experience by offering immediate access to a variety of supplementary actions and operations that can be executed on the data displayed in the grid.
 
