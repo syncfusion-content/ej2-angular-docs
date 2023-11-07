@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Close by clicking outside in Angular Dialog Component | Syncfusion
-description: Learn here all about close by clicking outside in Syncfusion Essential Angular Dialog component, it's elements and more.
+title: Close dialog by clicking outside in Angular Dialog | Syncfusion
+description: Learn here all about close dialog by clicking outside in Syncfusion Essential Angular Dialog component, it's elements and more.
 platform: ej2-angular
 control: Close dialog while click on outside of dialog 
 documentation: ug
