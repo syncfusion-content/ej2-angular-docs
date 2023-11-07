@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Get base string of the loaded document in Angular Pdfviewer component | Syncfusion
-description: Learn here all about Get base string of the loaded document in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Get base string of loaded document in Angular PDF Viewer | Syncfusion
+description: Learn here all about get base string of loaded document in Syncfusion Angular PDF Viewer component, it's elements and more.
 platform: ej2-angular
 control: Get base string of the loaded document 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Get the Base 64 string of the loaded PDF document
+# Get base string of loaded document in Angular PDF Viewer
 
 The PDF Viewer library allows you to get the base 64 string of the loaded PDF document by using **saveAsBlob()** method. The entire PDF document will get as blob as like memory stream. So, we can save the blob or convert into stream and we can save it in the database. We can also load the PDF document from base 64 string using the **load()** method.
 
 The following steps are used to get the base 64 string of the loaded PDF document in the PDF viewer control.
 
-**Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/angular/documentation/pdfviewer/getting-started/) to create simple PDF Viewer sample in Angular.
+**Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/angular/documentation/pdfviewer/getting-started) to create simple PDF Viewer sample in Angular.
 
 **Step 2:** Add the following code snippet to get the base 64 string with button click event.
 

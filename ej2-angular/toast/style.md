@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Toast component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: Style in Angular Toast Component | Syncfusion
+description: Learn here all about style support in Syncfusion Essential Angular Toast component, it's elements and more.
 platform: ej2-angular
 control: Style 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Toast component
+# Style in Angular Toast Component
 
 The following content provides the exact CSS structure that can be used to modify the component's appearance based on the user preference.
 

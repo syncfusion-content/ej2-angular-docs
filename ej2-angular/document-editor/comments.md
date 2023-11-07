@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Comments in Angular Document editor component | Syncfusion
-description: Learn here all about Comments in Syncfusion Angular Document editor component of Syncfusion Essential JS 2 and more.
+title: Comments in Angular Document Editor Component | Syncfusion
+description: Learn here all about comments support in Syncfusion Essential Angular Document editor component, it's elements and more.
 platform: ej2-angular
 control: Comments 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Comments in Angular Document editor component
+# Comments in Angular Document Editor Component
 
 Document Editor allows you to add comments to documents. You can add, navigate and remove comments in code and from the UI.
 
@@ -87,6 +87,6 @@ export class AppComponent {
 
 Comment only protection can be enabled in UI by using [Restrict Editing pane](../document-editor/document-management#restrict-editing-pane)
 
-![Enable comment only protection](images/commentsonly.png)
+![Enable comment only protection in Angular Document Editor](images/angular-document-editor-comments-only.png)
 
 >Note: In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.

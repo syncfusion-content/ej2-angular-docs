@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Treegrid component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Treegrid component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular Tree Grid Component | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential Angular Tree Grid component, it's elements and more.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Treegrid component
+# Getting started with Angular Tree Grid Component
 
 This section explains the steps required to create a simple Essential JS 2 TreeGrid and demonstrates the basic usage of the [`Angular Tree Grid control`](https://www.syncfusion.com/angular-components/angular-tree-grid) in a Angular CLI application.
 

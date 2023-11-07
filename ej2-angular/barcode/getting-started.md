@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Barcode component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Barcode component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular Barcode Component | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential Angular Barcode component, it's elements and more.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Barcode component
+# Getting started with Angular Barcode Component
 
 This section explains you the steps required to create a simple barcode and demonstrate the basic usage of the barcode control.
 
@@ -151,4 +151,4 @@ You can add the datamatrix code in our Angular Barcode Generator component.
   
 {% previewsample "page.domainurl/samples/barcode/getting-started/datamatrix-cs1" %}
 
-> You can refer to our [Angular Barcode Generator](https://www.syncfusion.com/angular-ui-components/angular-barcode) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Barcode Generator example](https://ej2.syncfusion.com/angular/demos/#/material/barcode/default-functionalities) that shows how to render the Barcode in Angular.
+> You can refer to our [Angular Barcode Generator](https://www.syncfusion.com/angular-components/angular-barcode) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Barcode Generator example](https://ej2.syncfusion.com/angular/demos/#/material/barcode/default-functionalities) that shows how to render the Barcode in Angular.
