@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data labels in Angular Chart component | Syncfusion
-description: Learn here all about Data labels in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Data labels in Angular Chart Component | Syncfusion
+description: Learn here all about Data labels in Syncfusion Angular Chart Component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Data labels 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data labels in Angular Chart component
+# Data labels in Angular Chart Component
 
 Data label can be added to a chart series by enabling the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart/dataLabelSettings/#visible) option in the dataLabel. By default, the labels will arrange smartly without overlapping.
 

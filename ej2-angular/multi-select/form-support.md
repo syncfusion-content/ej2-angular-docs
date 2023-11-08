@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Form support in Angular Multi select component | Syncfusion
-description: Learn here all about Form support in Syncfusion Angular Multi select component of Syncfusion Essential JS 2 and more.
+title: Form support in Angular Multi Select Component | Syncfusion
+description: Learn here all about Form support in Syncfusion Angular Multi Select Component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Form support 
+control: Form Support 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form support in Angular Multi select component
+# Form support in Angular Multi Select Component
 
 The MultiSelect supports both the reactive and template-driven form-building technologies.
 

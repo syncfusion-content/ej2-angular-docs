@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Slider with ngmodel in Angular Range slider component | Syncfusion
-description: Learn here all about Slider with ngmodel in Syncfusion Angular Range slider component of Syncfusion Essential JS 2 and more.
+title: Slider with ngmodel in Angular Range Slider Component | Syncfusion
+description: Learn here all about Slider with ngmodel in Syncfusion Angular Range Slider Component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Slider with ngmodel 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Slider with ngmodel in Angular Range slider component
+# Slider with ngmodel in Angular Range Slider Component
 
 Slider component supports one and two-way property binding. Slider two way binding can be achieved through [ngModel](https://angular.io/api/forms/NgModel) Angular directive.
 
 Follow the below steps to perform two-way binding with ngModel.
 
-* Create simple [slider](https://ej2.syncfusion.com/angular/documentation/slider/getting-started.html#types) component and binds the value property using ngModel. Refer to the below code snippet.
+* Create simple [slider](https://ej2.syncfusion.com/angular/documentation/range-slider/getting-started#types) component and binds the value property using ngModel. Refer to the below code snippet.
 
   ```
 
