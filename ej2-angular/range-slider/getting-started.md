@@ -264,10 +264,10 @@ and not to the button.
 
 [Slider Types](#types)
 
-[Slider Formatting](./format/)
+[Slider Formatting](./format)
 
 [Orientation Slider](#orientation)
 
-[Ticks in Slider](./ticks/)
+[Ticks in Slider](./ticks)
 
 [Tooltip in Slider](#tooltip)

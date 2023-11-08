@@ -318,4 +318,4 @@ The edited data is submitted to the server and you can see the new values gettin
 
 ## See Also
 
-* [Types of rendering the editor](./integration/)
+* [Types of rendering the editor](./integration)

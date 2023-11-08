@@ -72,5 +72,5 @@ The Popup is the another type of [`overflowMode`](https://ej2.syncfusion.com/ang
 
 ## See Also
 
-* [How to prevent content swipe selection](./how-to/prevent-content-swipe-selection/)
-* [Collapsible Tab](./how-to/create-collapsible-tabs/)
+* [How to prevent content swipe selection](./how-to/prevent-content-swipe-selection)
+* [Collapsible Tab](./how-to/create-collapsible-tabs)

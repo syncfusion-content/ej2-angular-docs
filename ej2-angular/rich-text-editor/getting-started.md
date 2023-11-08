@@ -108,7 +108,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 Once you have successfully installed the Rich Text Editor package, corresponding component modules are ready to configure in your application from the installed location. Syncfusion Angular package provides two different types of ngModules.
 
-Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module/) to learn about `ngModules`.
+Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module) to learn about `ngModules`.
 
 Refer to the following snippet to import the `RichTextEditorModule` in `app.module.ts` from the `@syncfusion/ej2-angular-richtexteditor`.
 
@@ -330,13 +330,13 @@ To get the maximum number of characters in the Rich Text Editor's content, use [
 
 ```
 
-> You can refer to our [Angular Rich Text Editor](https://www.syncfusion.com/angular-ui-components/angular-wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Rich Text Editor example](https://ej2.syncfusion.com/angular/demos/#/bootstrap4/rich-text-editor/rich-text-editor) to knows how to render and configure the rich text editor tools.
+> You can refer to our [Angular Rich Text Editor](https://www.syncfusion.com/angular-components/angular-wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Rich Text Editor example](https://ej2.syncfusion.com/angular/demos/#/bootstrap4/rich-text-editor/rich-text-editor) to knows how to render and configure the rich text editor tools.
 
 ## See Also
 
-* [How to change the editor type](./editor-modes/)
-* [How to render the iframe](./iframe/)
-* [How to render the toolbar in inline mode](./inline-mode/)
+* [How to change the editor type](./editor-mode)
+* [How to render the iframe](./iframe)
+* [How to render the toolbar in inline mode](./inline-mode)
 * [How to insert Emoticons](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/insert-emoticons)
 * [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/blog-posting)
 * [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/reactive-form)
