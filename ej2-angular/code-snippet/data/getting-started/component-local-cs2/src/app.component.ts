@@ -3,7 +3,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataManager } from '@syncfusion/ej2-data';
 
-const SERVICE_URI = 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/?$top=20';
+const SERVICE_URI = 'https://services.syncfusion.com/angular/production/';
 
 @Component({
     selector: 'app-root',
@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
     public data?: DataManager;
 
     public ngOnInit(): void {
-        this.data = new DataManager({ url: SERVICE_URI });
+        this.data = new DataManager({ url: SERVICE_URI+ 'api/Orders' });
     }
 }
 
