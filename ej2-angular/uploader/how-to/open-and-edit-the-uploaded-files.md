@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open and edit the uploaded files in Angular Uploader | Syncfusion
-description: Learn here all about open and edit the uploaded files in Syncfusion Essential Angular Uploader component, it's elements and more.
+description: Learn here all about open and edit the uploaded files support in Syncfusion Essential Angular Uploader component, it's elements and more.
 platform: ej2-angular
 control: Open and edit the uploaded files 
 documentation: ug

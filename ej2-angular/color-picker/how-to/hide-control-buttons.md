@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hide control buttons in Angular Color Picker Component | Syncfusion
-description: Learn here all about hide control buttons in Syncfusion Essential Angular Color Picker component, it's elements and more.
+description: Learn here all about hide control buttons support in Syncfusion Essential Angular Color Picker component, it's elements and more.
 platform: ej2-angular
 control: Hide control buttons 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hide dropdown arrow in Angular DropDown Button Component | Syncfusion
-description: Learn here all about hide dropdown arrow in Syncfusion Essential Angular DropDown Button component, it's elements and more.
+description: Learn here all about hide dropdown arrow support in Syncfusion Essential Angular DropDown Button component, it's elements and more.
 platform: ej2-angular
 control: Hide dropdown arrow 
 documentation: ug
