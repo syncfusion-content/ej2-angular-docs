@@ -203,4 +203,4 @@ To apply radial gradient to the range, follow the below code sample.
 
 ## See also
 
-* [Tooltip for Ranges](https://ej2.syncfusion.com/angular/documentation/circular-gauge/gauge-user-interaction/#tooltip-for-ranges/)
+* [Tooltip for Ranges](https://ej2.syncfusion.com/angular/documentation/circular-gauge/gauge-user-interaction#tooltip-for-ranges/)

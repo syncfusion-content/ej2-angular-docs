@@ -138,4 +138,4 @@ Output will be as follows:
 
 ## See Also
 
-* [How to add a header and content](./header-content/)
+* [How to add a header and content](./header-content)
