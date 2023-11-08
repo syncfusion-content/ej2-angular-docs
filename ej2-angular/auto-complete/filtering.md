@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in Angular AutoComplete Component | Syncfusion
-description: Learn here all about filtering in Syncfusion Essential Angular AutoComplete component, it's elements and more.
+description: Learn here all about filtering support in Syncfusion Essential Angular AutoComplete component, it's elements and more.
 platform: ej2-angular
 control: Filtering 
 documentation: ug

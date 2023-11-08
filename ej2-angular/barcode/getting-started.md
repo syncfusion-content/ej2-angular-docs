@@ -151,4 +151,4 @@ You can add the datamatrix code in our Angular Barcode Generator component.
   
 {% previewsample "page.domainurl/samples/barcode/getting-started/datamatrix-cs1" %}
 
-> You can refer to our [Angular Barcode Generator](https://www.syncfusion.com/angular-components/angular-barcode) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Barcode Generator example](https://ej2.syncfusion.com/angular/demos/#/material/barcode/default-functionalities) that shows how to render the Barcode in Angular.
+> You can refer to our [Angular Barcode Generator](https://www.syncfusion.com/angular-components/angular-barcode) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Barcode Generator example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/barcode/default-functionalities) that shows how to render the Barcode in Angular.
