@@ -138,11 +138,11 @@ This session explains how to render TreeMap with datasource.
   
 {% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs15" %}
 
-Here TreeMap is created with the datasource and set [`weightValuePath`] as Count field in the datasouce. You can customize the leaf level TreeMap items using [`leafItemSettings`]. Properties like [`fill`], [`border`], [`labelPosition`] can be changed using [`leafItemSettings`].
+Here TreeMap is created with the datasource and set [weightValuePath](https://ej2.syncfusion.com/angular/documentation/api/treemap/#weightvaluepath) as Count field in the datasouce. You can customize the leaf level TreeMap items using [leafItemSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/). Properties like [fill](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#fill), [border](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#border), [labelPosition](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#labelposition) can be changed using `leafItemSettings`.
 
 ## Apply Color Mapping
 
-The color mapping feature supports customization of item colors based on the underlying value of item received from bounded datasource. Specify the field name from which the values have to be compared for the item in [`equalColorValuePath`] or [`rangeColorValuePath`] property.
+The color mapping feature supports customization of item colors based on the underlying value of item received from bounded datasource. Specify the field name from which the values have to be compared for the item in [equalColorValuePath](https://ej2.syncfusion.com/angular/documentation/api/treemap/#equalcolorvaluepath) or [rangeColorValuePath](https://ej2.syncfusion.com/angular/documentation/api/treemap/#rangecolorvaluepath) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -160,239 +160,54 @@ The color mapping feature supports customization of item colors based on the und
 
 ## Enable Legend
 
-You can show legend for the TreeMap by setting true to the [`visible`] property in [`legendSettings`] object and by injecting the `TreeMapLegendService` module in the AppModule.
+You can show legend for the TreeMap by setting true to the [visible](https://ej2.syncfusion.com/angular/documentation/api/treemap/legendSettingsModel/#visible) property in [legendSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/#legendsettings) object and by injecting the `TreeMapLegendService` module in the AppModule.
 
-```typescript
-
-import { Component } from '@angular/core';
-
-@Component({
-    selector: 'app-container',
-    template: `<ejs-treemap id='container' style='display: block;' [legendSettings]='legendSettings' [dataSource]='data' equalColorValuePath='Count' weightValuePath='Count' [leafItemSettings]='leafItemSettings'>
-    </ejs-treemap>`
-})
-export class AppComponent {
-    public legendSettings: object = {
-        visible: true,
-        position: 'Top',
-        shape: 'Rectangle'
-    };
-    public data: object[] = [
-        { Title: 'State wise International Airport count in South America', State: 'Brazil', Count: 25 },
-        { Title: 'State wise International Airport count in South America', State: 'Colombia', Count: 12 },
-        { Title: 'State wise International Airport count in South America', State: 'Argentina', Count: 9 },
-        { Title: 'State wise International Airport count in South America', State: 'Ecuador', Count: 7 },
-        { Title: 'State wise International Airport count in South America', State: 'Chile', Count: 6 },
-        { Title: 'State wise International Airport count in South America', State: 'Peru', Count: 3 },
-        { Title: 'State wise International Airport count in South America', State: 'Venezuela', Count: 3 },
-        { Title: 'State wise International Airport count in South America', State: 'Bolivia', Count: 2 },
-        { Title: 'State wise International Airport count in South America', State: 'Paraguay', Count: 2 },
-        { Title: 'State wise International Airport count in South America', State: 'Uruguay', Count: 2 },
-        { Title: 'State wise International Airport count in South America', State: 'Falkland Islands',Count: 1 },
-        { Title: 'State wise International Airport count in South America', State: 'French Guiana', Count:1 },
-        { Title: 'State wise International Airport count in South America', State: 'Guyana', Count: 1 },
-        { Title: 'State wise International Airport count in South America', State: 'Suriname', Count: 1 },
-    ];
-    public leafItemSettings: object = {
-        labelPath: 'State',
-        colorMapping: [
-            {
-                value: 25,
-                color: '#634D6F'
-            },
-            {
-                value: 12,
-                color: '#B34D6D'
-            },
-            {
-                value: 9,
-                color: '#557C5C'
-            },
-            {
-                value: 7,
-                color: '#44537F'
-            },
-            {
-                value: 6,
-                color: '#637392'
-            },
-            {
-                value: 3,
-                color: '#7C754D'
-            },
-            {
-                value: 2,
-                color: '#2E7A64'
-            },
-            {
-                value: 1,
-                color: '#95659A'
-            },
-        ]
-    };
-}
-
-```
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treemap/getting-started/treemap-cs56/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/treemap/getting-started/treemap-cs56/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treemap/getting-started/treemap-cs56/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs56" %}
 
 ## Add Labels
 
-Labels can be added to show additional information of the items in TreeMap. By default, visibility of the label is true. This can be customized using [`showLabels`] property in [`leafItemSettings`].
+Labels can be added to show additional information of the items in TreeMap. By default, visibility of the label is true. This can be customized using [showLabels](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#showlabels) property in [leafItemSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/).
 
-```typescript
-import { Component } from '@angular/core';
-
-@Component({
-    selector: 'app-container',
-    template: `<ejs-treemap id='container' style='display: block;' [legendSettings]='legendSettings' [dataSource]='data' equalColorValuePath='Count' weightValuePath='Count' [leafItemSettings]='leafItemSettings'>
-    </ejs-treemap>`
-})
-export class AppComponent {
-    public legendSettings: object = {
-        visible: true,
-        position: 'Top',
-        shape: 'Rectangle'
-    };
-    public data: object[] = [
-        { Title: 'State wise International Airport count in South America', State: 'Brazil', Count: 25 },
-        { Title: 'State wise International Airport count in South America', State: 'Colombia', Count: 12 },
-        { Title: 'State wise International Airport count in South America', State: 'Argentina', Count: 9 },
-        { Title: 'State wise International Airport count in South America', State: 'Ecuador', Count: 7 },
-        { Title: 'State wise International Airport count in South America', State: 'Chile', Count: 6 },
-        { Title: 'State wise International Airport count in South America', State: 'Peru', Count: 3 },
-        { Title: 'State wise International Airport count in South America', State: 'Venezuela', Count: 3 },
-        { Title: 'State wise International Airport count in South America', State: 'Bolivia', Count: 2 },
-        { Title: 'State wise International Airport count in South America', State: 'Paraguay', Count: 2 },
-        { Title: 'State wise International Airport count in South America', State: 'Uruguay', Count: 2 },
-        { Title: 'State wise International Airport count in South America', State: 'Falkland Islands',Count: 1 },
-        { Title: 'State wise International Airport count in South America', State: 'French Guiana', Count:1 },
-        { Title: 'State wise International Airport count in South America', State: 'Guyana', Count: 1 },
-        { Title: 'State wise International Airport count in South America', State: 'Suriname', Count: 1 },
-    ];
-    public leafItemSettings: object = {
-        showLabels: true,
-        labelPath: 'State',
-        labelPosition: 'Center',
-        labelStyle: {
-            color: 'white'
-        },
-        colorMapping: [
-            {
-                value: 25,
-                color: '#634D6F'
-            },
-            {
-                value: 12,
-                color: '#B34D6D'
-            },
-            {
-                value: 9,
-                color: '#557C5C'
-            },
-            {
-                value: 7,
-                color: '#44537F'
-            },
-            {
-                value: 6,
-                color: '#637392'
-            },
-            {
-                value: 3,
-                color: '#7C754D'
-            },
-            {
-                value: 2,
-                color: '#2E7A64'
-            },
-            {
-                value: 1,
-                color: '#95659A'
-            },
-        ]
-    };
-}
-
-```
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treemap/getting-started/treemap-cs57/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/treemap/getting-started/treemap-cs57/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treemap/getting-started/treemap-cs57/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs57" %}
 
 ## Enable Tooltip
 
-The tooltip is useful when labels cannot display information by using due to space constraints. Tooltip can be enabled by setting the [`visible`] property as true in [`tooltipSettings`] object and by injecting `TreeMapTooltipService` module in the AppModule.
+The tooltip is useful when labels cannot display information by using due to space constraints. Tooltip can be enabled by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/treemap/tooltipSettingsModel/#visible) property as true in [tooltipSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/tooltipSettingsModel) object and by injecting `TreeMapTooltipService` module in the AppModule.
 
-```typescript
-import { Component } from '@angular/core';
-
-@Component({
-    selector: 'app-container',
-    template: `<ejs-treemap id='container' style='display: block;' [tooltipSettings]='tooltipSettings' [legendSettings]='legendSettings' [dataSource]='data' equalColorValuePath='Count' weightValuePath='Count' [leafItemSettings]='leafItemSettings'>
-    </ejs-treemap>`
-})
-export class AppComponent {
-    public legendSettings: object = {
-        visible: true,
-        position: 'Top',
-        shape: 'Rectangle'
-    };
-    public tooltipSettings: object = {
-        visible: true,
-    };
-    public data: object[] = [
-        { Title: 'State wise International Airport count in South America', State: 'Brazil', Count: 25 },
-        { Title: 'State wise International Airport count in South America', State: 'Colombia', Count: 12 },
-        { Title: 'State wise International Airport count in South America', State: 'Argentina', Count: 9 },
-        { Title: 'State wise International Airport count in South America', State: 'Ecuador', Count: 7 },
-        { Title: 'State wise International Airport count in South America', State: 'Chile', Count: 6 },
-        { Title: 'State wise International Airport count in South America', State: 'Peru', Count: 3 },
-        { Title: 'State wise International Airport count in South America', State: 'Venezuela', Count: 3 },
-        { Title: 'State wise International Airport count in South America', State: 'Bolivia', Count: 2 },
-        { Title: 'State wise International Airport count in South America', State: 'Paraguay', Count: 2 },
-        { Title: 'State wise International Airport count in South America', State: 'Uruguay', Count: 2 },
-        { Title: 'State wise International Airport count in South America', State: 'Falkland Islands',Count: 1 },
-        { Title: 'State wise International Airport count in South America', State: 'French Guiana', Count:1 },
-        { Title: 'State wise International Airport count in South America', State: 'Guyana', Count: 1 },
-        { Title: 'State wise International Airport count in South America', State: 'Suriname', Count: 1 },
-    ];
-    public leafItemSettings: object = {
-        showLabels: true,
-        labelPath: 'State',
-        labelPosition: 'Center',
-        labelStyle: {
-            color: 'white'
-        },
-        colorMapping: [
-            {
-                value: 25,
-                color: '#634D6F'
-            },
-            {
-                value: 12,
-                color: '#B34D6D'
-            },
-            {
-                value: 9,
-                color: '#557C5C'
-            },
-            {
-                value: 7,
-                color: '#44537F'
-            },
-            {
-                value: 6,
-                color: '#637392'
-            },
-            {
-                value: 3,
-                color: '#7C754D'
-            },
-            {
-                value: 2,
-                color: '#2E7A64'
-            },
-            {
-                value: 1,
-                color: '#95659A'
-            },
-        ]
-    };
-}
-
-```
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treemap/getting-started/treemap-cs58/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/treemap/getting-started/treemap-cs58/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treemap/getting-started/treemap-cs58/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs58" %}
