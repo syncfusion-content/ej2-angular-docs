@@ -3,3 +3,7 @@
 @import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
+
+.e-section-control {
+	margin-top: 150px;
+}

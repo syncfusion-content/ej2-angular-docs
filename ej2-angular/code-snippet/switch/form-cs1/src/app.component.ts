@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<form><table class='size'>
+    template: `<div class="e-section-control">
+                <form><table class='size'>
                 <tr>
                     <td class='lSize'>USB</td>
                     <td>
@@ -29,7 +30,8 @@ import { Component } from '@angular/core';
                         <button ejs-button [isPrimary]="true">Submit</button>
                     </td>
                 </tr>
-                </table></form>`
+                </table></form>
+                </div>`
 })
 
 export class AppComponent { }

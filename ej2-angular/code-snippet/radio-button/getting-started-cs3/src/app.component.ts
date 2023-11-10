@@ -7,7 +7,8 @@ import { ChangeEventArgs, RadioButtonComponent } from '@syncfusion/ej2-angular-b
 @Component({
     selector: 'app-root',
     // To customize RadioButton appearance
-    template: `<ul>
+    template: `<div class="e-section-control">
+                <ul>
                   <li>
                       <div id="text">Selected : Option 1</div>
                   </li>
@@ -20,7 +21,8 @@ import { ChangeEventArgs, RadioButtonComponent } from '@syncfusion/ej2-angular-b
                   <li>
                       <ejs-radiobutton #radio3 label="Option 3" name="default" (change)='changeOption3($event)'></ejs-radiobutton>
                   </li>
-               </ul>`
+               </ul>
+               </div>`
 })
 
 export class AppComponent {

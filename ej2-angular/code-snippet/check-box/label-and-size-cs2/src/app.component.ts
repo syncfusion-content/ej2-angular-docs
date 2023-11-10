@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<ul>
+    template: `<div class="e-section-control">
+                <ul>
                <!-- checked state. -->
                <li><ejs-checkbox label="Checked State" [checked]="true"></ejs-checkbox></li>
 
@@ -14,7 +15,8 @@ import { Component } from '@angular/core';
 
                <!-- indeterminate state. -->
                <li><ejs-checkbox label="Indeterminate State" [indeterminate]="true"></ejs-checkbox></li>
-               </ul>`
+               </ul>
+               </div>`
 })
 
 export class AppComponent { }

@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- Target element to DropDownButton . -->
+    template: `<div class="e-section-control">
+                <!-- Target element to DropDownButton . -->
                <div id="target" style='border: 1px solid #999;'>
                <!-- To create table. -->
                <table>
@@ -60,7 +61,8 @@ import { Component } from '@angular/core';
                 </table>
                </div>
                <!-- To render DropDownButton. -->
-               <button ejs-dropdownbutton target='#target' content='Table' iconCss='e-icons e-table' iconPosition='Top' cssClass='e-vertical'></button>`
+               <button ejs-dropdownbutton target='#target' content='Table' iconCss='e-icons e-table' iconPosition='Top' cssClass='e-vertical'></button>
+               </div>`
 })
 
 export class AppComponent {

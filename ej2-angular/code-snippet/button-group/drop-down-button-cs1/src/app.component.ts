@@ -5,12 +5,14 @@ import { ItemModel } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render ButtonGroup. -->
+    template: `<div class="e-section-control">
+                <!-- To render ButtonGroup. -->
                <div class='e-btn-group'>
                     <button class='e-btn'>HTML</button>
                     <button class='e-btn'>CSS</button>
                     <button class='e-btn'>Javascript</button>
                     <button ejs-dropdownbutton [items]='items' content='More'></button>
+                </div>
                 </div>`
 })
 

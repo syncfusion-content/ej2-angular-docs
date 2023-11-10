@@ -5,10 +5,12 @@ import { ItemModel } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render ListView. -->
+    template: `<div class="e-section-control">
+                <!-- To render ListView. -->
                <ejs-listview id='listview' [dataSource]='data' [fields]='field' showCheckBox='true'></ejs-listview>
                <!-- To render DropDownButton. -->
-               <button ejs-dropdownbutton target='#listview' iconCss='e-icons e-down' cssClass='e-caret-hide'></button>`
+               <button ejs-dropdownbutton target='#listview' iconCss='e-icons e-down' cssClass='e-caret-hide'></button>
+               </div>`
 })
 
 export class AppComponent {

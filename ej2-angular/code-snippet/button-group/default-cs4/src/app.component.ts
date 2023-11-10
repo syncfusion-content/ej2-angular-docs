@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render ButtonGroup. -->
+    template: `<div class="e-section-control">
+                <!-- To render ButtonGroup. -->
                <div class='e-btn-group'>
                     <button ejs-button>HTML</button>
                     <button ejs-button [disabled]="true">CSS</button>
@@ -14,6 +15,7 @@ import { Component } from '@angular/core';
                     <button ejs-button [disabled]="true">HTML</button>
                     <button ejs-button [disabled]="true">CSS</button>
                     <button ejs-button [disabled]="true">Javascript</button>
+                </div>
                 </div>`
 })
 

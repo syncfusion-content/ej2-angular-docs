@@ -6,7 +6,8 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
     selector: 'app-root',
-    template:  `<div id='container'>
+    template:  `<div class="e-section-control">
+                  <div id='container'>
                     <div class='btncontainer'>
                         <button #btn ejs-button (mousedown)="mousedown()" (mouseup)="mouseup()" (touchstart)="touchstart()" (touchend)="touchend()" (click)="onclick()">Button</button>
                     </div>
@@ -33,7 +34,8 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
                             </tbody>
                         </table>
                     </div>
-                </div>`
+                </div>
+              </div>`
 })
 
 export class AppComponent {

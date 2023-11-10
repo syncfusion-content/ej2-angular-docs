@@ -5,8 +5,9 @@ import { SpinSettingsModel } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render progress button. -->
-               <button ejs-progressbutton content='Submit' [spinSettings]='spinSettings'></button>`
+    template: `<div class="e-section-control">
+                <!-- To render progress button. -->
+               <button ejs-progressbutton content='Submit' [spinSettings]='spinSettings'></button></div>`
 })
 
 export class AppComponent {

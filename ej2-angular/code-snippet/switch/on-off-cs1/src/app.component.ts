@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<div id='container'>
+    template: `<div class="e-section-control">
+                <div id='container'>
                 <div class="container switch-control">
                     <div>
                         <h3>Customizing Color</h3>
@@ -23,6 +24,7 @@ import { Component } from '@angular/core';
                     <ejs-switch id="switch3" cssClass="custom-iOS" [checked]="true" ></ejs-switch>
                 </div>
                 </div>
+               </div>
                </div>`
 })
 

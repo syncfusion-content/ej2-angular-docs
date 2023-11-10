@@ -6,7 +6,8 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 @Component({
     selector: 'app-root',
     styleUrls:['./style.css'],
-    template:  `<button #btn ejs-button [isPrimary]="true">Button</button>`
+    template:`<div class="e-section-control">
+              <button #btn ejs-button [isPrimary]="true">Button</button></div>`
 })
 
 export class AppComponent implements OnInit {

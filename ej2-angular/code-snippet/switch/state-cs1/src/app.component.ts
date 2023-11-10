@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<table class='size'>
+    template: `<div class="e-section-control">
+                <table class='size'>
                 <tr>
                     <td class='lSize'>Checked</td>
                     <td>
@@ -18,7 +19,8 @@ import { Component } from '@angular/core';
                         <ejs-switch></ejs-switch>
                     </td>
                 </tr>
-                </table>`
+                </table>
+                </div>`
 })
 
 export class AppComponent { }

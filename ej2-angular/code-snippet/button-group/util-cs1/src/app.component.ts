@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render ButtonGroup. -->
+    template: `<div class="e-section-control">
+            <!-- To render ButtonGroup. -->
             <h5>Normal behavior</h5>
             <div class='e-btn-group' role='group'>
                 <button class="e-btn">HTML</button>
@@ -28,6 +29,7 @@ import { Component } from '@angular/core';
                 <label class="e-btn" for="radiomiddle">Center</label>
                 <input type="radio" id="radioright" name="align" value="right"/>
                 <label class="e-btn" for="radioright">Right</label>
+            </div>
             </div>`
 })
 

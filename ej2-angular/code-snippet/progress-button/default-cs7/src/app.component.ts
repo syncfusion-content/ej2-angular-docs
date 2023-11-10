@@ -6,7 +6,7 @@ import { ProgressEventArgs } from '@syncfusion/ej2-angular-splitbuttons';
 @Component({
     selector: 'app-root',
     template: `
-    <div class="control-section">
+    <div class="e-section-control">
     <div class="progress-btn-section">
         <button ejs-progressbutton content='Progress' [enableProgress]='true' (begin)='begin($event)' (end)='end($event)' (progress)='progress($event)' (fail)='fail($event)' cssClass='e-hide-spinner'></button>
     </div>

@@ -6,11 +6,13 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render Dialog. -->
+    template: `<div class="e-section-control">
+                <!-- To render Dialog. -->
                <ejs-dialog #dialog [buttons]='alertDlgButtons' [visible]='false' content='Move Items To "Web Team"' width='250px' [position]='position'>
                 </ejs-dialog>
                 <!-- To render DropDownButton. -->
-               <button ejs-dropdownbutton #dropdownbutton [items]='items' content='Move' iconCss='ddb-icons e-folder' cssClass='e-vertical' iconPosition='Top' (select)='select($event)'></button>`
+               <button ejs-dropdownbutton #dropdownbutton [items]='items' content='Move' iconCss='ddb-icons e-folder' cssClass='e-vertical' iconPosition='Top' (select)='select($event)'></button>
+               </div>`
 })
 
 export class AppComponent {

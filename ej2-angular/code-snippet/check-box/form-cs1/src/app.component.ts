@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-root',
     //Name and Value attribute in form submit.
-    template: `<form>
+    template: `<div class="e-section-control">
+                <form>
                 <ul>
                     <li><ejs-checkbox name="Sport" value="Cricket" label="Cricket" [checked]="true"></ejs-checkbox></li>
 
@@ -18,7 +19,8 @@ import { Component } from '@angular/core';
 
                     <li><button ejs-button [isPrimary]="true">Submit</button></li>
                 </ul>
-               </form>`
+               </form>
+               </div>`
 })
 
 export class AppComponent { }

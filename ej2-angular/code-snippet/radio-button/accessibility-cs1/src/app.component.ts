@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<ul>
+    template: `<div class="e-section-control">
+                <ul>
                <!-- checked state. -->
                <li><ejs-radiobutton label="Option 1" name="state" checked="true"></ejs-radiobutton></li>
 
@@ -17,7 +18,8 @@ import { Component } from '@angular/core';
                    <ejs-radiobutton label="Option 3" name="state"></ejs-radiobutton>
                    <ejs-radiobutton label="Option 4" name="state"></ejs-radiobutton>
                </li>
-               </ul>`
+               </ul>
+               </div>`
 })
 
 export class AppComponent { }

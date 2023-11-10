@@ -6,7 +6,8 @@ import { createButtonGroup } from '@syncfusion/ej2-splitbuttons';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render ButtonGroup. -->
+    template: `<div class="e-section-control">
+                <!-- To render ButtonGroup. -->
                <h5>Normal behavior</h5>
                <div id='basic'>
                     <button></button>
@@ -24,6 +25,7 @@ import { createButtonGroup } from '@syncfusion/ej2-splitbuttons';
                     <input type="radio" id="radioleft" name="align" value="left" />
                     <input type="radio" id="radiomiddle" name="align" value="middle" />
                     <input type="radio" id="radioright" name="align" value="right" />
+                </div>
                 </div>`
 })
 

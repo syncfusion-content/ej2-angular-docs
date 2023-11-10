@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-root',
     styleUrls: ['./style.css'],
-    template:  `<!-- Primary Button - Used to represent a primary action. -->
+    template:  `<div class="e-section-control">
+                <!-- Primary Button - Used to represent a primary action. -->
                 <button ejs-button cssClass="e-primary">Primary</button>
 
                 <!-- Success Button - Used to represent a positive action. -->
@@ -21,7 +22,8 @@ import { Component } from '@angular/core';
                 <button ejs-button cssClass="e-danger">Danger</button>
 
                 <!-- Link Button - Changes the appearance of the Button like a hyperlink. -->
-                <button ejs-button cssClass="e-link">Link</button>`
+                <button ejs-button cssClass="e-link">Link</button>
+                </div>`
 })
 
 export class AppComponent { }

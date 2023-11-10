@@ -5,8 +5,10 @@ import { SwitchComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render Switch. -->
-               <ejs-switch #switch onLabel="ON" offLabel="OFF" (created)='created()'></ejs-switch>`
+    template: `<div class="e-section-control">
+                <!-- To Render Switch. -->
+               <ejs-switch #switch onLabel="ON" offLabel="OFF" (created)='created()'></ejs-switch>
+               </div>`
 })
 
 export class AppComponent {

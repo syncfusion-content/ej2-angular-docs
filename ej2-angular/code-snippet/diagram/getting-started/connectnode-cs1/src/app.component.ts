@@ -17,7 +17,7 @@ import { FlowShapeModel  } from "@syncfusion/ej2-angular-diagrams";
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  @ViewChild("diagram")
+
   public shape?: FlowShapeModel ;
   ngOnInit(): void {
     this.shape = { type: "Flow", shape: "Terminator" };

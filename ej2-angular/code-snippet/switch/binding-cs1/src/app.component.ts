@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<div id='container'>
+    template: `<div class="e-section-control">
+                <div id='container'>
                     <table class='tablealign'>
                         <thead>
                             <th></th>
@@ -43,6 +44,7 @@ import { Component } from '@angular/core';
                             </td>
                         </tr>
                     </table>
+               </div>
                </div>`
 })
 

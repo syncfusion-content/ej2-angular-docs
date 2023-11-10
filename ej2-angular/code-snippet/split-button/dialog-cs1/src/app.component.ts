@@ -6,11 +6,12 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render Dialog. -->
+    template: `<div class="e-section-control">
+                <!-- To render Dialog. -->
                <ejs-dialog #dialog [buttons]='alertDlgButtons' [visible]='false' content='Are you sure want to update?' width='250px' header='Software Update'>
                </ejs-dialog>
                <!-- To Render splitbutton. -->
-               <ejs-splitbutton content="Help" [items]='items' (select)='select($event)'></ejs-splitbutton>`
+               <ejs-splitbutton content="Help" [items]='items' (select)='select($event)'></ejs-splitbutton></div>`
 })
 
 export class AppComponent {
