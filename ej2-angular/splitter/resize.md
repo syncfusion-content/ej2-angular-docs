@@ -57,7 +57,7 @@ You can disable the resizing for the pane by setting `false` to the [resizable](
 
 ## Refresh content on resizing
 
-While resizing the panes, you can refresh the pane contents by using either [resizeStart](https://ej2.syncfusion.com/angular/documentation/api/splitter/#resizestart), [resizing](https://ej2.syncfusion.com/angular/documentation/api/splitter#resizestart) or [resizeStop](https://ej2.syncfusion.com/angular/documentation/api/splitter/#resizestart) events.
+While resizing the panes, you can refresh the pane contents by using either [resizeStart](https://ej2.syncfusion.com/angular/documentation/api/splitter/#resizestart), [resizing](https://ej2.syncfusion.com/angular/documentation/api/splitter/#resizestart) or [resizeStop](https://ej2.syncfusion.com/angular/documentation/api/splitter/#resizestart) events.
 
 ## Customize Resize-gripper and Cursor
 
