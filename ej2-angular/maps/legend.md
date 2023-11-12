@@ -309,7 +309,7 @@ To enable the legend for the bubble by setting the [`visible`](https://ej2.syncf
 
 ## Enable legend for markers
 
-To enable legend for marker by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#visible) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) as **true** and [`type`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#type) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/) as **Markers**. The [`legendText`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/#legendtext) property in the [`markerSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/) can be used to show the legend text based on values provided in the data source.
+To enable legend for marker by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#visible) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/) as **true** and [`type`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#type) property of [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/) as **Markers**. The [`legendText`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/#legendtext) property in the [`markerSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/) can be used to show the legend text based on values provided in the data source.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

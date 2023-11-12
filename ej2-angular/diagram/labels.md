@@ -299,7 +299,7 @@ The label’s [`TextOverflow`](https://ej2.syncfusion.com/angular/documentation/
 
 * The label’s [`bold`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#bold-boolean), [`italic`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#italic-boolean), and [`textDecoration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textDecoration-textdecoration) properties are used to style the label’s text.
 
-* The label’s [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#fill-string), [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#strokeColor-string), and [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#strokeWidth-number) properties are used to define the background color and border color of the annotation and the [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#opacity-number) property is used to define the transparency of the annotations.
+* The label’s [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#fill-string), [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#strokeColor-string), and [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#strokeWidth-number) properties are used to define the background color and border color of the annotation and the [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#opacity-number) property is used to define the transparency of the annotations.
 
 * The [`visible`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#visibility-number) property of the annotation enables or disables the visibility of annotation.
 
@@ -335,7 +335,7 @@ The fill, border, and opacity appearances of the text can also be customized wit
 
 ## Interaction
 
-Diagram allows annotation to be interacted by selecting, dragging, rotating, and resizing. Annotation interaction is disabled, by default. You can enable annotation interaction with the [`constraints`](./constraints/#annotation-constraints) property of annotation. You can also curtail the services of interaction by enabling either selecting, dragging, rotating, or resizing individually with the respective constraints property of annotation. The following code illustrates how to enable annotation interaction.
+Diagram allows annotation to be interacted by selecting, dragging, rotating, and resizing. Annotation interaction is disabled, by default. You can enable annotation interaction with the [`constraints`](./constraints#annotation-constraints) property of annotation. You can also curtail the services of interaction by enabling either selecting, dragging, rotating, or resizing individually with the respective constraints property of annotation. The following code illustrates how to enable annotation interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
