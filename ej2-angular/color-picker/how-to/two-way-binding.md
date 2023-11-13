@@ -14,7 +14,7 @@ ColorPicker component supports two-way property binding.
 
 The steps to perform two-way binding.
 
-* Create [ColorPicker](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started#getting-started) component and binds the [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#value) property as like the below code snippet.
+* Create [ColorPicker](https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started) component and binds the [`value`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#value) property as like the below code snippet.
 
   ```
 
