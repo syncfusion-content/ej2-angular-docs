@@ -63,7 +63,7 @@ import {
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  @ViewChild("diagram")
+  
   public terminator?: FlowShapeModel;
   public process?: FlowShapeModel;
   public decision?: FlowShapeModel;
