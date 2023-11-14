@@ -128,7 +128,7 @@ Modify the template in [src/app/app.component.ts] file to render the spreadsheet
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-container',
+  selector: 'app-root',
   // specifies the template string for the Spreadsheet control
   template: `<ejs-spreadsheet> </ejs-spreadsheet>`
 })
