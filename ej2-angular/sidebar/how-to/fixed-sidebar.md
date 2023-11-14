@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Fixed sidebar in Angular Sidebar Component | Syncfusion
-description: Learn here all about Fixed sidebar in Syncfusion Essential Angular Sidebar component its elements, and more.
+title: Fixed sidebar in Angular Component | Syncfusion
+description: Learn here all about fixed sidebar in Syncfusion Essential Angular Sidebar component, its elements, and more.
 platform: ej2-angular
 control: Fixed sidebar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Fixed sidebar in Angular Sidebar Component
+# Fixed sidebar in Angular Component
 
 The Sidebar does not require any specific style to make it as a fixed one. By default, the Sidebar position will be in fixed state. The following example demonstrates that the Sidebar is rendered with a fixed position. The position of the Sidebar will not change when scrolling the main content area.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Line Chart in Angular Chart Component | Syncfusion
-description: Learn here all about Line Chart in Syncfusion Essential Angular Chart component its elements and more.
+title: Getting started with Angular Line Chart | Syncfusion
+description: Learn here all about Line Chart in Syncfusion Essential Angular Chart component, its elements and more.
 platform: ej2-angular
 control: Line Chart
 documentation: ug

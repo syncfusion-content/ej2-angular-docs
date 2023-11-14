@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Css customization in Angular Datepicker Component | Syncfusion
-description: Learn here all about Css customization in Syncfusion Essential Angular Datepicker component its elements and more.
+title: Css customization in Angular DatePicker Component | Syncfusion
+description: Learn here all about Css customization in Syncfusion Essential Angular DatePicker component its elements and more.
 platform: ej2-angular
 control: Css customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Css customization in Angular Datepicker Component
+# Css customization in Angular DatePicker Component
 
 To customize DatePicker UI, you can make use of [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/datepicker/#cssclass) which will be added to DatePicker component as the root CSS class. With this CSS class, you can override existing styles of DatePicker.
 

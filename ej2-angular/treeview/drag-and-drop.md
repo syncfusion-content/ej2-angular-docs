@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drag and drop in Angular Treeview Component | Syncfusion
-description: Learn here all about drag and drop in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about drag and drop in Syncfusion Essential Angular Treeview component, its elements and more.
 platform: ej2-angular
 control: Drag and drop 
 documentation: ug

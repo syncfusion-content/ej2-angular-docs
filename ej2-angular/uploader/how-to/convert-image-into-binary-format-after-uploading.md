@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Convert image into binary format in Angular Uploader Component | Syncfusion
-description: Learn here all about Convert image into binary format after uploading in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: Convert image into binary in Angular Uploader | Syncfusion
+description: Learn here all about Convert image into binary format after uploading in Syncfusion Essential Angular Uploader component, its elements and more.
 platform: ej2-angular
 control: Convert image into binary format after uploading 
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize tab content height in Angular Tab Component | Syncfusion
+title: Customize tab content height in Angular Component | Syncfusion
 description: Learn here all about customize tab content height in Syncfusion Essential Angular Tab component its elements and more.
 platform: ej2-angular
 control: Customize tab content height 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize tab content height in Angular Tab Component
+# Customize tab content height in Angular Component
 
 You can change the Tab content height by using the [`heightAdjustMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/#heightadjustmode) property. By default, the Tab content [`heightAdjustMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/#heightadjustmode) property is set to `Content` value.
 

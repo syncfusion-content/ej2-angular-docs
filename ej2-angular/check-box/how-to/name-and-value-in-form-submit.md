@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Name and value in form submit in Angular CheckBox Component | Syncfusion
-description: Learn here all about name and value in form submit in Syncfusion Essential Angular CheckBox component its elements and more.
+title: Name and value in form submit in Angular Checkbox Component | Syncfusion
+description: Learn here all about name and value in form submit in Syncfusion Essential Angular Checkbox component its elements and more.
 platform: ej2-angular
 control: Name and value in form submit 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Name and value in form submit in Angular CheckBox Component
+# Name and value in form submit in Angular Checkbox Component
 
 The [`name`](https://ej2.syncfusion.com/angular/documentation/api/check-box/#name) attribute of the CheckBox is used to group Checkboxes. When the Checkboxes are
 grouped in form, the checked items [`value`](https://ej2.syncfusion.com/angular/documentation/api/check-box/#value) attribute will post to the server on form submit

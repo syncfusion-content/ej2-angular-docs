@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Two way binding in Angular Radio Button Component | Syncfusion
-description: Learn here all about Two way binding using radiobutton in Syncfusion Essential Angular Radio Button component its elements and more.
+description: Learn here all about two way binding in Syncfusion Essential Angular Radio Button component, its elements and more.
 platform: ej2-angular
 control: Two way binding using radiobutton 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Two way binding using radiobutton in Angular Radio Button Component
+# Two way binding in Angular Radio Button Component
 
 In the following example, two-way binding for RadioButton is illustrated with DropDownList component. The steps to achieve two-way binding in RadioButton are as follows,
 

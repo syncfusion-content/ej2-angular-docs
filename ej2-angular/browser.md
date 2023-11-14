@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Browser in Angular Browser md Component | Syncfusion
-description: Learn here all about Browser in Syncfusion Essential Angular Browser md component its elements, and more.
+title: Modern Browsers support in Angular | Syncfusion
+description: Learn here all about Browser in Syncfusion Essential Angular Browser md component, its elements, and more.
 platform: ej2-angular
 control: Browser 
 documentation: ug
