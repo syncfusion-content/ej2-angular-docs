@@ -73,4 +73,4 @@ In the following sample, the font family of grid content is changed to **cursive
 
 ## See Also
 
-* [Footer template styling in Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/style-and-appearance/#customizing-the-column-selection-background)
+* [Footer template styling in Angular Grid](https://ej2.syncfusion.com/angular/documentation/grid/style-and-appearance/selection#customizing-the-column-selection-background)
