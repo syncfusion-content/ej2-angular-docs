@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Accordion component
 
-This section briefly explains about how to create a simple [Angular Accordion](https://www.syncfusion.com/angular-ui-components/angular-accordion) and configure its available functionalities in Angular using Angular quickstart.
+This section briefly explains about how to create a simple [Angular Accordion](https://www.syncfusion.com/angular-components/angular-accordion) and configure its available functionalities in Angular using Angular quickstart.
 
 ## Dependencies
 
@@ -286,4 +286,4 @@ You need to follow the below structure of HTML elements to render the Accordion 
 
 * [How to load accordion items dynamically](./how-to/load-accordion-items-dynamically/)
 
-N> You can refer to our [Angular Accordion](https://www.syncfusion.com/angular-ui-components/angular-accordion) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Accordion example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/accordion/default) that shows you how to configure the Accordion in Angular.
+N> You can refer to our [Angular Accordion](https://www.syncfusion.com/angular-components/angular-accordion) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Accordion example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/accordion/default) that shows you how to configure the Accordion in Angular.

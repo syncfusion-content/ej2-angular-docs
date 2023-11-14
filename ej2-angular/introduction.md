@@ -183,7 +183,7 @@ A good starting point would be to refer to the code snippets in the [online samp
 
 ## Getting help
 
-* If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please contact us by creating a support ticket in [our support site](https://www.syncfusion.com/support/directtrac/incidents) or ask your query in Stack Overflow with tag `syncfusion-ej2`.
+* If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please contact us by creating a support ticket in [our support site](https://support.syncfusion.com/create) or ask your query in Stack Overflow with tag `syncfusion-ej2`.
 
 * Don’t see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/angular).
 
@@ -191,14 +191,14 @@ A good starting point would be to refer to the code snippets in the [online samp
 
 ## See also
 
-* [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
+* [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
 
 * [Getting started with Syncfusion Angular Components](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/)
 
-* [Getting started with Syncfusion Angular SystemJS](https://ej2.syncfusion.com/angular/documentation/getting-started/systemjs/)
+* [Getting started with Syncfusion Angular SystemJS](https://ej2.syncfusion.com/angular/documentation/getting-started/systemjs)
 
-* [Getting started Syncfusion Angular with ASP.NET Core](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-core/)
+* [Getting started Syncfusion Angular with ASP.NET Core](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-core)
 
-* [Getting started Syncfusion Angular with ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc/)
+* [Getting started Syncfusion Angular with ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc)
 
-* [Getting started with Syncfusion Angular Treeshaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking/)
+* [Getting started with Syncfusion Angular Treeshaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking)

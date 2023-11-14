@@ -14,7 +14,7 @@ Filtering is a powerful feature in the Syncfusion Grid component that enables yo
 
 To use filter, inject **FilterService** in the provider section of **AppModule**.
 
-To enable filtering in the Grid, you need to set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property of the Grid component to true. Once filtering is enabled, you can configure various filtering options through the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings) property of the Grid component. This property allows you to define the behavior and appearance of the filter.
+To enable filtering in the Grid, you need to set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property of the Grid component to true. Once filtering is enabled, you can configure various filtering options through the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/) property of the Grid component. This property allows you to define the behavior and appearance of the filter.
 
 Here is an example that demonstrates the default filtering feature of the grid:
 
@@ -37,7 +37,7 @@ Here is an example that demonstrates the default filtering feature of the grid:
 
 ## Initial filter
 
-To apply an initial filter, you need to specify the filter criteria using the [predicate](https://ej2.syncfusion.com/angular/documentation/api/grid/predicate) object in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettingsModel/#columns). The `predicate` object represents the filtering condition and contains properties such as field, operator, and value.
+To apply an initial filter, you need to specify the filter criteria using the [predicate](https://ej2.syncfusion.com/angular/documentation/api/grid/predicate/) object in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettingsModel/#columns). The `predicate` object represents the filtering condition and contains properties such as field, operator, and value.
 
 Here is an example of how to configure the initial filter using the `predicate` object:
 
@@ -108,7 +108,7 @@ a* |Everything that starts with "a".
 The **LIKE** filter can process single search patterns using the "%" symbol, retrieving values matching the specified patterns. The following Grid features support LIKE filtering on string-type columns:
 
 * Filter Menu
-* Filter Bar with the [filterSettings.showFilterBarOperator](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#showFilterBarOperator) property enabled on the Grid [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings).
+* Filter Bar with the [filterSettings.showFilterBarOperator](https://ej2.syncfusion.com/angular/documentation/api/grid/filter/#showFilterBarOperator) property enabled on the Grid [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/).
 * Custom Filter of Excel filter type.
 
 **For example:**
@@ -145,7 +145,7 @@ Consider the following sample where the `ignoreAccent` property is set to true i
 
 ## Filtering with case sensitivity
 
-The Syncfusion Angular Grid provides the flexibility to enable or disable case sensitivity during filtering. This feature is useful when you want to control whether filtering operations should consider the case of characters. It can be achieved by using the  [enableCaseSensitivity](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#enablecasesensitivity) property within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings) of the grid.
+The Syncfusion Angular Grid provides the flexibility to enable or disable case sensitivity during filtering. This feature is useful when you want to control whether filtering operations should consider the case of characters. It can be achieved by using the  [enableCaseSensitivity](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#enablecasesensitivity) property within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/) of the grid.
 
 Below is an example code demonstrating how to enable or disable case sensitivity while filtering:
 
@@ -242,7 +242,7 @@ Here's an example of how to get the filtering data in a Syncfusion grid using th
 
 **2.Using the properties in the FilterEventArgs object**
 
-Alternatively, you can use the properties available in the [FilterEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs) object to obtain the filter record details.
+Alternatively, you can use the properties available in the [FilterEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/) object to obtain the filter record details.
 
 * [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#columns): This property returns the collection of filtered columns.
 

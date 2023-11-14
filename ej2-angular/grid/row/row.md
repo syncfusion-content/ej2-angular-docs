@@ -109,7 +109,7 @@ The Grid provides below methods to customize the appearance of the grid rows :
 5. [getSelectedRowIndexes](https://ej2.syncfusion.com/documentation/api/grid/#getselectedrowindexes): This method returns an array of the indexes of the selected rows in the Grid. You can use this method to apply custom styles to the selected rows.
 6. [getSelectedRows](https://ej2.syncfusion.com/documentation/api/grid/#getselectedrows):This method returns an array of the HTML elements representing the selected rows in the grid. You can use this method to directly loop through the selected rows and customize their styles.
 
-The following example demonstrates how to use [getRowByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnheaderbyindex) methods to customize the appearance of the row inside the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event of the grid.
+The following example demonstrates how to use [getRowByIndex](https://ej2.syncfusion.com/documentation/api/grid/#getrowbyindex) methods to customize the appearance of the row inside the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event of the grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -204,7 +204,7 @@ Here is an example that demonstrates how to enable/disable the Row Hover feature
 
 ### How to get the row information when hovering over the cell
 
-You can retrieve row information when hovering over a specific cell. This can be useful if you want to display additional details or perform some action based on the data in the row. This can be achieved by using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event and the [getRowInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#getrowinfo) method of the Grid.
+You can retrieve row information when hovering over a specific cell. This can be useful if you want to display additional details or perform some action based on the data in the row. This can be achieved by using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event and the [getRowInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#getrowinfo) method of the Grid.
 
 * The `rowDataBound` event is triggered every time a request is made to access row information, element, or data, before the row element is appended to the Grid element.
 * The `getRowInfo` method is used to retrieve the row information when hovering over a specific cell. This method takes a single parameter, which is the target element that is being hovered over.
