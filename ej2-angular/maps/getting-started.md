@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Angular Maps Component | Syncfusion
-description:  Checkout and learn about getting started with Angular Maps component of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about getting started with Syncfusion Essential Angular Maps component, its elements and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug

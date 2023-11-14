@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Prevent the focus on first element in Angular Dialog Component | Syncfusion
-description: Learn here all about Prevent the focus on the first element in Syncfusion Essential Angular Dialog componentn its elements and more.
+description: Learn here all about prevent the focus on the first element in Syncfusion Essential Angular Dialog component, its elements and more.
 platform: ej2-angular
 control: Prevent the focus on the first element 
 documentation: ug

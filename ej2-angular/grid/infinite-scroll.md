@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Infinite scroll in Angular Grid Component | Syncfusion
-description: Learn here all about infinite scroll in Syncfusion Essential Angular Grid component its elements and more.
+description: Learn here all about infinite scroll in Syncfusion Essential Angular Grid component, its elements and more.
 platform: ej2-angular
 control: Infinite scroll 
 documentation: ug
