@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open and close the sidebar in Angular Sidebar component | Syncfusion
+title: Open and close the sidebar in Angular Component | Syncfusion
 description: Learn here all about open and close the sidebar in Syncfusion Essential Angular Sidebar component, its elements and more.
 platform: ej2-angular
 control: Open and close the sidebar 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open and close the sidebar in Angular Sidebar component
+# Open and close the sidebar in Angular Component
 
 Opening and closing the Sidebar can be achieved with built-in public methods.
 
