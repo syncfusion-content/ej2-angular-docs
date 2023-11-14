@@ -105,8 +105,8 @@ specify the second argument of [`sortBy`](https://ej2.syncfusion.com/documentati
 
 ## Filtering
 
-You can use the [`where`](https://ej2.syncfusion.com/documentation/data/api-query.html#where) method to build filter criteria which allows you to get reduced view of
-records. The [`where`](https://ej2.syncfusion.com/documentation/data/api-query.html#where) method can also be chained to form multiple filter criteria.
+You can use the [`where`](https://ej2.syncfusion.com/documentation/data/api-query#where) method to build filter criteria which allows you to get reduced view of
+records. The [`where`](https://ej2.syncfusion.com/documentation/data/api-query#where) method can also be chained to form multiple filter criteria.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -216,7 +216,7 @@ source whereas filter criteria will be applied to a particular field.
 
 ## Paging
 
-You can query paged data using [`page`](https://ej2.syncfusion.com/documentation/data/api-query.html#page) method. This allow you to query
+You can query paged data using [`page`](https://ej2.syncfusion.com/documentation/data/api-query#page) method. This allow you to query
 particular set of records based on the page size and index.
 
 {% tabs %}

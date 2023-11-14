@@ -45,7 +45,7 @@ cd my-app
 
 ## Installing Syncfusion ColorPicker package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
@@ -154,7 +154,7 @@ The following example shows a default ColorPicker component.
 
 ## Inline type
 
-By default, the ColorPicker will be rendered using SplitButton and open the pop-up to access the ColorPicker. To render the ColorPicker container alone and to access it directly, render it as inline. It can be achieved by setting the [`inline`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#inline) property to `true`.
+By default, the ColorPicker will be rendered using SplitButton and open the pop-up to access the ColorPicker. To render the ColorPicker container alone and to access it directly, render it as inline. It can be achieved by setting the [`inline`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#inline) property to `true`.
 
 The following sample shows the inline type rendering of ColorPicker.
 
@@ -174,4 +174,4 @@ The following sample shows the inline type rendering of ColorPicker.
 
 >> The `showButtons` property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [`showButtons`](./how-to/hide-control-buttons) sample.
 
-N> You can refer to our [Angular color picker](https://www.syncfusion.com/angular-ui-components/angular-color-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Angular ColorPicker example](https://ej2.syncfusion.com/angular/demos/#/material/color-picker/default) that shows how to render the ColorPicker in Angular.
+N> You can refer to our [Angular color picker](https://www.syncfusion.com/angular-components/angular-color-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Angular ColorPicker example](https://ej2.syncfusion.com/angular/demos/#/material/color-picker/default) that shows how to render the ColorPicker in Angular.

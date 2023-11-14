@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Recurrence editor is integrated into Scheduler editor window by default, to process the recurrence rule generation for events. Apart from this, it can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
 
-> All the valid recurrence rule string mentioned in the [iCalendar](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications are applicable to use with the recurrence editor.
+> All the valid recurrence rule string mentioned in the [iCalendar](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications are applicable to use with the recurrence editor.
 
 ## Customizing the repeat type option in editor
 
@@ -81,7 +81,7 @@ It is possible to customize the recurrence editor to display only the specific e
 
 ## Accessing the recurrence rule string
 
-The recurrence rule is usually generated based on the options selected from the recurrence editor and also it follows the [`iCalendar`](https://tools.ietf.org/html/rfc5545#section-3.3.10) specifications. The generated recurrence rule string is a valid one to be used with the Scheduler event’s recurrence rule field.
+The recurrence rule is usually generated based on the options selected from the recurrence editor and also it follows the [`iCalendar`](https://datatracker.ietf.org/doc/html/rfc5545#section-3.3.10) specifications. The generated recurrence rule string is a valid one to be used with the Scheduler event’s recurrence rule field.
 
 There is a `change` event available in recurrence editor, that triggers on every time the fields of recurrence editor tends to change. Within this event argument, you can access the generated recurrence value through the `value` option as shown in the following code example.
 
@@ -149,7 +149,7 @@ You can parse the `recurrenceRule` of an event to generate the date instances on
 
 It is also possible to generate recurrence date instances from server-side by manually referring the `RecurrenceHelper` class, which is specifically written and referred from application end to handle this date generation process.
 
-> Refer [here](https://www.syncfusion.com/kb/10009/how-to-parse-the-recurrencerule-at-server-side) for the step by step procedure to achieve date generation in server-side.
+> Refer [here](https://support.syncfusion.com/kb/article/8683/how-to-parse-the-recurrence-rule-at-server-side?isInternalRefresh=False) for the step by step procedure to achieve date generation in server-side.
 
 ## Restrict date generation with specific count
 
