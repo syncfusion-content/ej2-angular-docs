@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Angular Radio Button Component | Syncfusion
-description:  Checkout and learn about getting started with Angular Radio Button component of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about getting started with Syncfusion Essential Angular Radio Button component, its elements and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug

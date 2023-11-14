@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize menu items in Angular Menu Component | Syncfusion
-description: Learn here all about customize menu items in Syncfusion Essential Angular Menu component, its elements and more.
+title: Customize menu items in Angular Component | Syncfusion
+description: Learn here all about customize menu items in Syncfusion Essential Angular component, its elements and more.
 platform: ej2-angular
 control: Customize menu items 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize menu items in Angular Menu Component
+# Customize menu items in Angular Component
 
 ## Add or remove menu items
 

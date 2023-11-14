@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Render other components in Angular Tab Component | Syncfusion
-description: Learn here all about Render other components in tab using angular template in Syncfusion Essential Angular Tab component, its elements and more.
+description: Learn here all about Render other components in Syncfusion Essential Angular Tab component, its elements and more.
 platform: ej2-angular
 control: Render other components in tab using angular template 
 documentation: ug

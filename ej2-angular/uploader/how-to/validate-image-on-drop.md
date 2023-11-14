@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validate image on drop in Angular Uploader Component | Syncfusion
-description: Learn here all about Validate image on drop in Syncfusion Essential Angular Uploader component, its elements and more.
+description: Learn here all about validate image on drop in Syncfusion Essential Angular Uploader component, its elements and more.
 platform: ej2-angular
 control: Validate image on drop 
 documentation: ug
