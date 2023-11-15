@@ -51,9 +51,11 @@ L10n.load({
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render Image Editor. -->
+    template: `<div class="e-section-control">
+              <!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()" locale="de-DE"></ejs-imageeditor>
+              </div>
               </div>`
 })
 

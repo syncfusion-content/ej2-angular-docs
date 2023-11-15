@@ -6,12 +6,14 @@ import { Record, data } from './datasource';
 
 @Component({
   selector: 'app-root',
-  template: `<!--target element-->
+  template: `<div class="e-section-control">
+            <!--target element-->
             <div id="target">Right click / Touch hold to open the ContextMenu</div>
 
             <!-- To Render ContextMenu. -->
             <ejs-contextmenu id='contextmenu' target='#target' [items]= 'items'
-            (beforeItemRender)='itemRender($event)'></ejs-contextmenu>`
+            (beforeItemRender)='itemRender($event)'></ejs-contextmenu>
+            </div>`
 })
 
 export class AppComponent {

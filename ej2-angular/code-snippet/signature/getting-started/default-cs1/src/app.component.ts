@@ -4,9 +4,10 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<h4>Sign here</h4>
+    template: `<div class="e-section-control">
+            <h4>Sign here</h4>
             <!-- To Render Signature. -->
-            <canvas ejs-signature #signature id="signature"></canvas>`
+            <canvas ejs-signature #signature id="signature"></canvas></div>`
 })
 export class AppComponent {}
 

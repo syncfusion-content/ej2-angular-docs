@@ -9,7 +9,8 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<div class="header">
+    template: `<div class="e-section-control">
+            <div class="header">
         <span id="hamburger" class="e-icons menu default" (click)='hamburgerClick()'></span>
             <div class="content">Header content</div>
         </div>
@@ -25,6 +26,7 @@ enableRipple(true);
         <!-- main content declaration -->
         <div>
             <div class="main-content">Main content</div>
+        </div>
         </div>`
 })
 

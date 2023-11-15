@@ -6,12 +6,14 @@ import { ImageEditorComponent, ZoomSettingsModel } from '@syncfusion/ej2-angular
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render Image Editor. -->
+    template: `<div class="e-section-control">
+                <!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar" [zoomSettings]="zoomSettings"></ejs-imageeditor>
               </div>
               <button class="e-btn e-primary" (click)="zoomInClick()">Zoom In</button>
-              <button class="e-btn e-primary" (click)="zoomOutClick()">Zoom Out</button>`
+              <button class="e-btn e-primary" (click)="zoomOutClick()">Zoom Out</button>
+              </div>`
 })
 
 export class AppComponent {

@@ -5,10 +5,12 @@ import { MenuItemModel } from '@syncfusion/ej2-navigations';
 
 @Component({
   selector: 'app-root',
-  template: `<!--target element-->
+  template: `<div class="e-section-control">
+            <!--target element-->
             <div id="target">Right click / Touch hold to open the ContextMenu</div>
             <!-- To Render ContextMenu. -->
-            <ejs-contextmenu id='contextmenu' #contextmenu target='#target' [items]='menuItems' [animationSettings]='animation'></ejs-contextmenu>`
+            <ejs-contextmenu id='contextmenu' #contextmenu target='#target' [items]='menuItems' [animationSettings]='animation'></ejs-contextmenu>
+            </div>`
 })
 
 export class AppComponent {

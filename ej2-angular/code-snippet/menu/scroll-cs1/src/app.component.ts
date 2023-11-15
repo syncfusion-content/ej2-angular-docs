@@ -8,7 +8,9 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-menu [items]='menuItems' cssClass='e-scrollable-menu' [enableScrolling]="true"  (beforeOpen)='onBeforeOpen($event)'></ejs-menu>`
+    template: `<div class="e-section-control">
+            <ejs-menu [items]='menuItems' cssClass='e-scrollable-menu' [enableScrolling]="true"  (beforeOpen)='onBeforeOpen($event)'></ejs-menu>
+            </div>`
 })
 
 export class AppComponent {

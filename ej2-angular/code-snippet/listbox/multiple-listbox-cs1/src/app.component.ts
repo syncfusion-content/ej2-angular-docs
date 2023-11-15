@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template: `<div class="drag-drop-wrapper">
+    template: `<div class="e-section-control">
+                <div class="drag-drop-wrapper">
                      <div class="listbox-control1">
                      <h4>Group A</h4>
                      <ejs-listbox [dataSource]="groupA" [allowDragAndDrop]="true" [fields]="setfield" scope="combined-list" height="290px"></ejs-listbox>
@@ -13,7 +14,8 @@ import { Component } from '@angular/core';
                      <div class="listbox-control2">
                      <h4>Group B</h4>
                      <ejs-listbox [dataSource]="groupB" [allowDragAndDrop]="true" [fields]="setfield" scope="combined-list" height="290px"></ejs-listbox>
-                     </div></div>`,
+                     </div></div>
+                     </div>`,
     
 })
 

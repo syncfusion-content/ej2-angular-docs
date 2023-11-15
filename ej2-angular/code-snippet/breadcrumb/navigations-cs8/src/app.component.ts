@@ -7,7 +7,8 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render Breadcrumb. -->
+    template: `<div class="e-section-control">
+                <!-- To Render Breadcrumb. -->
             <ejs-breadcrumb [enableNavigation]="false" [maxItems]=3 overflowMode="Wrap" >
                 <e-breadcrumb-items>
                    <e-breadcrumb-item text="Home" url="../"></e-breadcrumb-item>
@@ -21,7 +22,8 @@ enableRipple(true);
                 <ng-template #separatorTemplate>
                     <span class='e-bicons e-arrow'></span>
                 </ng-template>
-            </ejs-breadcrumb>`
+            </ejs-breadcrumb>
+            </div>`
 })
 
 export class AppComponent {}

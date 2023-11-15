@@ -5,10 +5,12 @@ import { ContextMenuComponent, MenuEventArgs, MenuItemModel } from '@syncfusion/
 
 @Component({
   selector: 'app-root',
-  template: `<!--target element-->
+  template: `<div class="e-section-control">
+            <!--target element-->
             <div id="target">Right click / Touch hold to open the ContextMenu</div>
             <!-- To Render ContextMenu. -->
-            <ejs-contextmenu #contextmenu target='#target' [items]='menuItems' (created)='onCreated()' (beforeOpen)='beforeOpen()'></ejs-contextmenu>`
+            <ejs-contextmenu #contextmenu target='#target' [items]='menuItems' (created)='onCreated()' (beforeOpen)='beforeOpen()'></ejs-contextmenu>
+            </div>`
 })
 
 export class AppComponent {

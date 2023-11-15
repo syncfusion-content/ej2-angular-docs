@@ -7,9 +7,11 @@ import { ImageEditorCommand, ImageEditorComponent } from '@syncfusion/ej2-angula
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render Image Editor. -->
+    template: `<div class="e-section-control">
+              <!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar" (toolbarItemClicked)="toolbarItemClicked($event)"></ejs-imageeditor>
+              </div>
               </div>`
 })
 

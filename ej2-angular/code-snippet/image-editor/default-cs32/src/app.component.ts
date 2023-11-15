@@ -6,9 +6,11 @@ import { ImageEditorComponent, ShapeChangeEventArgs, ToolbarEventArgs } from '@s
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render Image Editor. -->
+    template: `<div class="e-section-control">
+              <!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()" (shapeChanging)="shapeChanging($event)"></ejs-imageeditor>
+              </div>
               </div>`
 })
 

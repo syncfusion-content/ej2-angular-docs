@@ -8,7 +8,8 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<div class="control-section">
+    template: `<div class="e-section-control">
+            <div class="control-section">
                  <div class="toolbar-menu-control">
                     <div id='menu'><ejs-menu [items]='menuItems' [fields]='menuFields' [animationSettings]='animationSettings'></ejs-menu></div>
                  <ejs-toolbar id="shoppingtoolbar" #toolbar (created)='created()'>
@@ -19,7 +20,7 @@ enableRipple(true);
                  </ejs-toolbar>
                 </div>
                </div>
-    `
+               </div>`
 })
 
 export class AppComponent {

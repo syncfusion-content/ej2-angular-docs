@@ -6,7 +6,8 @@ import { ListBoxComponent } from '@syncfusion/ej2-angular-dropdowns';
 @Component({
     selector: 'app-container',
     // specifies the template string for the ListBox component with dataSource
-    template: `<ejs-listbox [dataSource]='data' cssClass='e-horizontal-listbox'></ejs-listbox>`
+    template: `<div class="e-section-control">
+                <ejs-listbox [dataSource]='data' cssClass='e-horizontal-listbox'></ejs-listbox></div>`
 })
 export class AppComponent {
     // defined the array of object

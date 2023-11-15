@@ -8,7 +8,8 @@ ListBoxComponent.Inject(CheckBoxSelection);
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-listbox [dataSource]="data" [selectionSettings]="selection"></ejs-listbox>`
+    template: `<div class="e-section-control">
+                <ejs-listbox [dataSource]="data" [selectionSettings]="selection"></ejs-listbox></div>`
 })
 
 export class AppComponent{

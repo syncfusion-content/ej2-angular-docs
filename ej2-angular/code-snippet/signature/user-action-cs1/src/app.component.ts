@@ -10,7 +10,8 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<div id="option">
+    template: `<div class="e-section-control">
+            <div id="option">
             <table>
                 <tr>
                     <td>
@@ -28,6 +29,7 @@ enableRipple(true);
         </div>
         <div id ="signature-control">
            <canvas ejs-signature #signature id="signature" (change)="change()"></canvas>
+        </div>
         </div>`
 })
 export class AppComponent {

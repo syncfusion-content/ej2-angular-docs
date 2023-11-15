@@ -6,10 +6,11 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
   selector: 'app-root',
-  template: `<div id="target">Right click / Touch hold to open the ContextMenu</div>
+  template: `<div class="e-section-control">
+  <div id="target">Right click / Touch hold to open the ContextMenu</div>
   <ejs-dialog #dialog [buttons]='alertDlgButtons' [visible]='visible' content='This file can be saved as PDF' width='200px' height='110px' [position]='position'>
   </ejs-dialog>
-  <ejs-contextmenu target="#target" [items]="data" (select)="itemSelect($event)"></ejs-contextmenu>`
+  <ejs-contextmenu target="#target" [items]="data" (select)="itemSelect($event)"></ejs-contextmenu></div>`
 })
 
 export class AppComponent {

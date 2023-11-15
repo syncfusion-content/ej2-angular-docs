@@ -6,7 +6,8 @@ import { ImageEditorComponent, ImageFilterOption } from '@syncfusion/ej2-angular
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render Image Editor. -->
+    template: `<div class="e-section-control">
+              <!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()"></ejs-imageeditor>
               </div>
@@ -15,7 +16,8 @@ import { ImageEditorComponent, ImageFilterOption } from '@syncfusion/ej2-angular
               <button class="e-btn e-primary" (click)="warmClick()">Warm</button>
               <button class="e-btn e-primary" (click)="grayScaleClick()">GrayScale</button>
               <button class="e-btn e-primary" (click)="sepiaClick()">Sepia</button>
-              <button class="e-btn e-primary" (click)="invertClick()">Invert</button>`
+              <button class="e-btn e-primary" (click)="invertClick()">Invert</button>
+              </div>`
 })
 
 export class AppComponent {

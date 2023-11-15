@@ -7,8 +7,9 @@ import { ListBox } from '@syncfusion/ej2-dropdowns';
 
 @Component({
     selector: 'app-container',
-    template: `<button (click)="btnclick()" class="e-btn">ADD ITEMS</button>
-               <ejs-listbox id="listbox" [dataSource]="data"></ejs-listbox>`
+    template: `<div class="e-section-control">
+                <button (click)="btnclick()" class="e-btn">ADD ITEMS</button>
+               <ejs-listbox id="listbox" [dataSource]="data"></ejs-listbox></div>`
 })
 
 export class AppComponent {

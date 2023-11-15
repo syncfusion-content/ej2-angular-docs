@@ -7,7 +7,8 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render Breadcrumb. -->
+    template: `<div class="e-section-control">
+            <!-- To Render Breadcrumb. -->
             <ejs-breadcrumb cssClass="e-breadcrumb-chips">
                     <e-breadcrumb-items>
                         <e-breadcrumb-item text="Cart"></e-breadcrumb-item>
@@ -18,7 +19,8 @@ enableRipple(true);
                     <ng-template #separatorTemplate>
                         <span class="e-icons e-arrow"></span>
                     </ng-template>
-                </ejs-breadcrumb>`
+                </ejs-breadcrumb>
+                </div>`
 })
 
 export class AppComponent {}

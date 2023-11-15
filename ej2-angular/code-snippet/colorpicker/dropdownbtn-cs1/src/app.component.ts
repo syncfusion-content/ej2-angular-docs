@@ -6,9 +6,10 @@ import { ColorPickerEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     selector: 'app-root',
-    template: `<h4>Choose color</h4>
+    template: `<div class="e-section-control">
+            <h4>Choose color</h4>
         <ejs-input ejs-colorpicker type="color" id="element" [inline]="true" (change)="change($event)" />
-        <ejs-button ejs-dropdownbutton #dropdownbtn id="dropdownbtn" (open)="onOpen($event)" (beforeClose)="onClose($event)" target=".e-colorpicker-wrapper" iconCss="e-dropdownbtn-preview"></ejs-button>`
+        <ejs-button ejs-dropdownbutton #dropdownbtn id="dropdownbtn" (open)="onOpen($event)" (beforeClose)="onClose($event)" target=".e-colorpicker-wrapper" iconCss="e-dropdownbtn-preview"></ejs-button></div>`
 })
 
 export class AppComponent {

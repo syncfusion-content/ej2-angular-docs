@@ -4,10 +4,12 @@ import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render Image Editor. -->
+    template: `<div class="e-section-control">
+                <!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar"></ejs-imageeditor>
                 <button class="e-btn e-primary" (click)="clickBtn()">Add Image</button>
+              </div>
               </div>`
 })
 

@@ -6,13 +6,15 @@ import { ContextMenuComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
   selector: 'app-root',
-  template: `<!--target element-->
+  template: `<div class="e-section-control">
+            <!--target element-->
             <div id="target">
               <div id='left' class='e-div'>Clipboard</div>
               <div id='right' class='e-div'>Editor</div>
             </div>
             <!-- To Render ContextMenu. -->
-            <ejs-contextmenu #contextmenu target='#target .e-div' [items]= 'menuItems' (beforeOpen)='beforeOpen($event)'></ejs-contextmenu>`
+            <ejs-contextmenu #contextmenu target='#target .e-div' [items]= 'menuItems' (beforeOpen)='beforeOpen($event)'></ejs-contextmenu>
+            </div>`
 })
 
 export class AppComponent {
