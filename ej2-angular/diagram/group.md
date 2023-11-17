@@ -16,9 +16,9 @@ Group is used to cluster multiple nodes and connectors into a single element. It
 
 ## Add group when initializing diagram
 
-A group can be added to the diagram model through [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram#nodes-NodeModel) collection. To define an object as group, add the child objects to the [`children`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#children-string) collection of the group.
+A group can be added to the diagram model through [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#nodes-NodeModel) collection. To define an object as group, add the child objects to the [`children`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#children-string) collection of the group.
 
-* The [`padding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#padding-MarginModel) property of a group node defines the spacing between the group node’s edges and its children.
+* The [`padding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#padding-MarginModel) property of a group node defines the spacing between the group node’s edges and its children.
 
 * While creating group, its child node need to be declared before the group declaration.
 
@@ -119,15 +119,15 @@ There are two types of containers available.
 
 * It allows elements to be either vertically or horizontally aligned.
 
-* Child can be defined with the collection [`canvas.children`](https://ej2.syncfusion.com/angular/documentation/api/diagram/canvas#children-DiagramElement) property.
+* Child can be defined with the collection [`canvas.children`](https://ej2.syncfusion.com/angular/documentation/api/diagram/canvas/#children-DiagramElement) property.
 
-* Basic element can be defined with the collection of [`basicElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram#basicElements-DiagramElement).
+* Basic element can be defined with the collection of [`basicElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#basicElements-DiagramElement).
 
 ## Stack
 
 * Stack panel is used to arrange its children in a single line or stack order, either vertically or horizontally.
 
-* It controls spacing by setting margin properties of child and padding properties of group. By default, a stack panel’s [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel#orientation-Orientation) is vertical.
+* It controls spacing by setting margin properties of child and padding properties of group. By default, a stack panel’s [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel/#orientation-Orientation) is vertical.
 
 The following code illustrates how to add a stack panel.
 
