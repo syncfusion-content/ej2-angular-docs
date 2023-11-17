@@ -37,7 +37,7 @@ All the available Essential JS 2 packages are published in [`npmjs.com`](https:/
 To install Gantt component, use the following command.
 
 ```bash
-npm install @syncfusion/ej2-angular-gantt ts --save
+ng add @syncfusion/ej2-angular-gant --save
 ```
 
 > The **--save** will instruct NPM to include the gantt package inside of the `dependencies` section of the `package.json`.
