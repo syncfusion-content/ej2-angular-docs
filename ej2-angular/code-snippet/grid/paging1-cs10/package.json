@@ -14,6 +14,8 @@
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@syncfusion/ej2-angular-grids": "*",
+    "@syncfusion/ej2-grids": "*",
+    "@syncfusion/ej2-angular-buttons":"*",
     "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-buttons": "*",
     "@syncfusion/ej2-calendars": "*",
@@ -24,6 +26,7 @@
     "@syncfusion/ej2-splitbuttons": "*",
     "@syncfusion/ej2-notifications": "*",
     "@syncfusion/ej2-angular-base": "*",
+    "@syncfusion/ej2-angular-inputs":"*",
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
     "@angular/compiler": "^15.0.0",
@@ -32,8 +35,7 @@
     "moment": "^2.29.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.12.0",
-    "@syncfusion/ej2-grids": "*"
+    "zone.js": "~0.12.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.0.0",

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { employeeData } from 'app/datasource';
+import { employeeData } from '../datasource';
 
 @Component({
   selector: 'app-contact',
