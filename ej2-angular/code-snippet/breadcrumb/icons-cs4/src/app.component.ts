@@ -8,8 +8,7 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<div class="e-section-control">
-            <!-- To Render Breadcrumb. -->
+    template: `<!-- To Render Breadcrumb. -->
             <div id="breadcrumb-control" class="control-section">
                 <div class="header"><b>Icon Position - Left</b></div><br />
                 <ejs-breadcrumb [enableNavigation]="false">
@@ -28,7 +27,6 @@ enableRipple(true);
                         <e-breadcrumb-item iconCss="e-bicons e-file" text="Config.json"></e-breadcrumb-item>
                     </e-breadcrumb-items>
                 </ejs-breadcrumb>
-            </div>
             </div>`
 })
 

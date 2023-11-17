@@ -7,9 +7,8 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<div class="e-section-control">
-            <!-- To Render Breadcrumb. -->
-            <ejs-breadcrumb [enableNavigation]="false"></ejs-breadcrumb></div>`
+    template: `<!-- To Render Breadcrumb. -->
+            <ejs-breadcrumb [enableNavigation]="false"></ejs-breadcrumb>`
 })
 
 export class AppComponent {}
