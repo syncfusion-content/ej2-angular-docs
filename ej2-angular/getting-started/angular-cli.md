@@ -20,15 +20,29 @@ In this guide, we will show you how to create an Angular project and install the
 
 ## Setting up an Angular project
 
-Using [Angular CLI](https://github.com/angular/angular-cli), you can easily setup Angular projects. Install the Angular CLI tool globally in your machine.
+Using [Angular CLI](https://github.com/angular/angular-cli), you can easily setup Angular projects. This section provides guidance for installing a specific version of Angular CLI and creating an Angular 17 application based on your requirements.
+
+### Installing a Specific Version
+
+To install a specific version of Angular CLI, use the following command,
+
+```bash
+npm install -g @angular/cli@16.0.1
+```
+
+### Installing the Latest Angular CLI
+
+To create an Angular 17 application, use the Angular CLI with the following command
 
 ```bash
 npm install -g @angular/cli
 ```
 
+N> For Angular 17, it default for generates a standalone application. Detailed instructions on creating Syncfusion Angular standalone components using the latest version, please refer to the [Standalone guide](./angular-standalone.md).
+
 ## Create a new application
 
-Once the Angular CLI is installed, you can use it to create a new Angular project by running the following command:
+Once the Angular CLI is installed, execute the following command to create a new project,
 
 ```bash
 ng new syncfusion-angular-app
@@ -66,7 +80,7 @@ ng add @syncfusion/ej2-angular-grids
 ```
 If you are not using fully ivy compiler application, use the `ngcc` tagged packages of the Syncfusion Angular components.
 
-N> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ]. 
+N> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](../common/troubleshooting/ngcc-compatibility.md). 
 
 ```bash
 npm add @syncfusion/ej2-angular-grids@20.2.38-ngcc
@@ -78,11 +92,11 @@ The above command does the following configuration to your Angular app,
  * Imports the `GridModule` in your application module `app.module.ts`.
  * Registers the Syncfusion UI default theme (material) in the `angular.json` file.
  
- This makes it easy to add the Syncfusion Angular Grids module to your project and start using it in your application.
+This makes it easy to add the Syncfusion Angular Grids module to your project and start using it in your application.
 
- For more information about version compatibility, see [version compatibility](../upgrade/version-compatibility/).
+For more information about version compatibility, see [version compatibility](../upgrade/version-compatibility/).
 
- ## Adding Syncfusion Angular components
+## Adding Syncfusion Angular components
 
 To use Syncfusion Angular components in your application, you will need to add them to your template and specify their properties in your component class.
 
