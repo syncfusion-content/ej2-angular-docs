@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 # Data binding in Angular Treeview component
 
 The TreeView component provides the option to load data either from local data sources or from remote data services.
-This can be done through `dataSource` property that is a member of the [fields](https://ej2.syncfusion.com/angular/documentation/api/treeview#fields) property.
+This can be done through `dataSource` property that is a member of the [fields](https://ej2.syncfusion.com/angular/documentation/api/treeview/#fields) property.
 The `dataSource` property supports array of JavaScript objects and `DataManager`.
 It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
@@ -20,12 +20,12 @@ It loads first level nodes initially, and when parent node is expanded,  loads t
 
 By default, the `loadOnDemand` is set to true. By disabling this property, all the tree nodes are rendered at the beginning itself.
 
-You can use the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/treeview#databound) event to perform actions.
+You can use the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#databound) event to perform actions.
 This event will be triggered once the data source is populated in the TreeView.
 
 ## Local data
 
-To bind local data to the TreeView, you can assign a JavaScript object array to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel#datasource) property.
+To bind local data to the TreeView, you can assign a JavaScript object array to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel/#datasource) property.
 The TreeView component requires three  fields (id, text, and parentID) to render local data source.
 When mapper fields are not specified, it takes the default values as the mapping fields. Local data source can also be
 provided as an instance of the `DataManager`. It supports two kinds of local data binding methods.
@@ -37,7 +37,7 @@ provided as an instance of the `DataManager`. It supports two kinds of local dat
 ### Hierarchical data
 
 TreeView can be populated with hierarchical data source that contains nested array of JSON objects.
-You can directly assign hierarchical data to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel#datasource) property, and map all the field members with corresponding keys from the hierarchical data to `fields` property.
+You can directly assign hierarchical data to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel/#datasource) property, and map all the field members with corresponding keys from the hierarchical data to `fields` property.
 
 In the following example, **code**, **name**, and **countries** columns from hierarchical data have been mapped to **id**, **child**, and **text** fields, respectively.
 
@@ -59,7 +59,7 @@ In the following example, **code**, **name**, and **countries** columns from hie
 
 TreeView can be populated from self-referential data structure that contains array of JSON objects with `parentID` mapping.
 
-You can directly assign self-referential data to the `dataSource` property, and map all the field members with corresponding keys from self-referential data to [fields](https://ej2.syncfusion.com/angular/documentation/api/treeview#fields) property.
+You can directly assign self-referential data to the `dataSource` property, and map all the field members with corresponding keys from self-referential data to [fields](https://ej2.syncfusion.com/angular/documentation/api/treeview/#fields) property.
 
 In the following example, **id**, **pid**, **hasChild**, and **name** columns from self-referential data have been mapped to **id**, **parentID**, **hasChildren**, and **text** fields, respectively.
 
