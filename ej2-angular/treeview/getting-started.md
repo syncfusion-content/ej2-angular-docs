@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Treeview component
 
-This section explains the steps required to create a simple [Angular TreeView](https://www.syncfusion.com/angular-ui-components/angular-treeview) component, and configure its available functionalities
+This section explains the steps required to create a simple [Angular TreeView](https://www.syncfusion.com/angular-components/angular-treeview) component, and configure its available functionalities
 
 ## Setup Angular Environment
 
@@ -116,7 +116,7 @@ export class AppComponent {}
 
 ## Binding data source
 
-TreeView can load data either from local data sources or remote data services. This can be done using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel#datasource) property that is a member of the `fields` property. The dataSource property supports array of JavaScript objects and `DataManager`.
+TreeView can load data either from local data sources or remote data services. This can be done using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel/#datasource) property that is a member of the `fields` property. The dataSource property supports array of JavaScript objects and `DataManager`.
 Here, an array of JSON values is passed to the TreeView component.
 
 ```typescript
@@ -187,10 +187,10 @@ The output will appear as follows.
 
 ## See Also
 
-* [How to customize treeview as accordion](./how-to/accordion-tree/)
+* [How to customize treeview as accordion](./how-to/accordion-tree)
 
-* [How to set tooltip for treeview nodes](./how-to/set-tool-tip-for-tree-nodes/)
+* [How to set tooltip for treeview nodes](./how-to/set-tool-tip-for-tree-nodes)
 
-* [How to filter nodes in treeview](./how-to/filtering-tree-nodes/)
+* [How to filter nodes in treeview](./how-to/filtering-tree-nodes)
 
-* [How to get all the child nodes through parentID](./how-to/get-all-child-nodes/)
+* [How to get all the child nodes through parentID](./how-to/get-all-child-nodes)
