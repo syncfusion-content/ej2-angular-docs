@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
     }
 
     print() {
-        this.gridObj.print();
+        (this.gridObj as GridComponent).print();
     }
 }
 

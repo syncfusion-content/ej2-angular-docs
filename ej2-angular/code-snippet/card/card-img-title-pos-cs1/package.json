@@ -18,6 +18,7 @@
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-angular-navigations": "*",
     "@syncfusion/ej2-angular-dropdowns": "*",
+    "@syncfusion/ej2-dropdowns": "*",
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
     "@angular/compiler": "^15.0.0",

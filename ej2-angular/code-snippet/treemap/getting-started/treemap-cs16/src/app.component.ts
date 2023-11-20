@@ -5,10 +5,13 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treemap id='container' style='display: block;' height='350px' [dataSource]='data' equalColorValuePath='Count' weightValuePath='Count' [leafItemSettings]='leafItemSettings'>
+    template: `<ejs-treemap id='container' style='display: block;' height='350px' [dataSource]='data' [legendSettings]='legendSettings' equalColorValuePath='Count' weightValuePath='Count' [leafItemSettings]='leafItemSettings'>
     </ejs-treemap>`
 })
 export class AppComponent {
+    public legendSettings: object = {
+        visible: true,
+    };
     public data: object[] = [
         { Title: 'State wise International Airport count in South America', State: 'Brazil', Count: 25 },
         { Title: 'State wise International Airport count in South America', State: 'Colombia', Count: 12 },

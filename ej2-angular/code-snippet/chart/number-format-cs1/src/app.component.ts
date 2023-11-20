@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { loadCldr, L10n, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
+import { setCurrencyCode } from '@syncfusion/ej2-base';
 setCurrencyCode('EUR');
 
 @Component({

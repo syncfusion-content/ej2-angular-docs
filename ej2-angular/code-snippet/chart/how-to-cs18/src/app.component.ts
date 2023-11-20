@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ILoadedEventArgs, Series, IMouseEventArgs, ChartComponent } from '@syncfusion/ej2-angular-charts';
+import { IMouseEventArgs, ChartComponent } from '@syncfusion/ej2-angular-charts';
 
 @Component({
     selector: 'app-container',

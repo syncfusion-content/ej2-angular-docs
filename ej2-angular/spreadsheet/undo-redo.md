@@ -34,7 +34,7 @@ It reverses the last undo action you performed with Spreadsheet. Redo can be don
 
 ## Update custom actions in UndoRedo collection
 
-You can update your own custom actions in UndoRedo collection, by using the [`updateUndoRedoCollection`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#updateUndoRedoCollection) method. And also customize the undo redo operations of your custom action by using `actionComplete` event.
+You can update your own custom actions in UndoRedo collection, by using the [`updateUndoRedoCollection`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#updateundoredocollection) method. And also customize the undo redo operations of your custom action by using `actionComplete` event.
 
 The following code example shows `How to update and customize your own actions for undo redo` functionality in the Spreadsheet control.
 

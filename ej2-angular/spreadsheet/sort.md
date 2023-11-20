@@ -70,7 +70,7 @@ In the custom sort dialog, the `Data contains header` checkbox is checked on loa
 
 ## Case sensitive sort
 
-The default sort functionality of Spreadsheet is a case insensitive sorting. When you want to perform sorting with case sensitive, you need to set the [`caseSensitive`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#caseSensitive) property to `true` and pass it as `sortOption` arguments of the sort() method.
+The default sort functionality of Spreadsheet is a case insensitive sorting. When you want to perform sorting with case sensitive, you need to set the [`caseSensitive`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#casesensitive) property to `true` and pass it as `sortOption` arguments of the sort() method.
 
 Case sensitive sorting is applicable only for cells with alphabets. In ascending order sorting with case sensitive enabled, the cells with lower case text will be placed above the cells with upper case text.
 

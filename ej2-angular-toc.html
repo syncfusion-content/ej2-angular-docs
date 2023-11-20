@@ -960,6 +960,7 @@ AppBar
             <li><a href="/ej2-angular/file-manager/how-to/initialize-filemanager-using-systemjs">Initialize File Manager Using SystemJS</a></li>
             <li><a href="/ej2-angular/file-manager/how-to/customize-custom-thumbnail">Customize Custom Thumbnails</a></li>
             <li><a href="/ej2-angular/file-manager/how-to/nested-items">Nested File Manager</a></li>
+            <li><a href="/ej2-angular/file-manager/how-to/custom-file-provider">Implement own service provider</a></li>
          </ul>
       </li>
       <li><a href="https://ej2.syncfusion.com/angular/documentation/api/file-manager/">API Reference</a></li>
@@ -1105,6 +1106,7 @@ AppBar
              <li><a href="/ej2-angular/grid/columns/foreign-key-column">ForeignKey Column</a></li>
              <li><a href="/ej2-angular/grid/columns/column-reorder">Column Reorder</a></li>
              <li><a href="/ej2-angular/grid/columns/column-resizing">Column Resizing</a></li>
+             <li><a href="/ej2-angular/grid/columns/frozen-column">Column Pinning (Frozen)</a></li>
              <li><a href="/ej2-angular/grid/columns/column-chooser">Column Chooser</a></li>
              <li><a href="/ej2-angular/grid/columns/column-menu">Column Menu</a></li>
              <li><a href="/ej2-angular/grid/columns/column-spanning">Column Spanning</a></li>
@@ -1116,6 +1118,7 @@ AppBar
                <li><a href="/ej2-angular/grid/row/detail-template">Detail Template</a></li>
                <li><a href="/ej2-angular/grid/row/row-drag-and-drop">Row Drag and Drop</a></li>
                <li><a href="/ej2-angular/grid/row/row-spanning">Row Spanning</a></li>
+               <li><a href="/ej2-angular/grid/row/frozen-row">Row Pinning (Frozen)</a></li>
               </ul>
          </li>
          <li><a href="/ej2-angular/grid/cell">Cell</a>
@@ -1699,35 +1702,55 @@ Mention
                 <li><a href="/ej2-angular/pivotview/connecting-to-data-source/snowflake">Snowflake</a></li>                
               </ul>
            </li>
-           <li><a href="/ej2-angular/pivotview/server-side-pivot-engine">Server Side Engine</a></li>
            <li><a href="/ej2-angular/pivotview/olap">OLAP</a></li>
+           <li><a href="/ej2-angular/pivotview/server-side-pivot-engine">Server-side Engine</a></li>
            <li><a href="/ej2-angular/pivotview/pivot-chart">Pivot Chart</a></li>
-           <li><a href="/ej2-angular/pivotview/drill-down">Drill Down</a></li>
-           <li><a href="/ej2-angular/pivotview/aggregation">Aggregation</a></li>
-           <li><a href="/ej2-angular/pivotview/number-formatting">Number Formatting</a></li>
-           <li><a href="/ej2-angular/pivotview/calculated-field">Calculated Field</a></li>
-           <li><a href="/ej2-angular/pivotview/field-list">Field List</a></li>
-           <li><a href="/ej2-angular/pivotview/grouping-bar">Grouping Bar</a></li>
-           <li><a href="/ej2-angular/pivotview/filtering">Filtering</a></li>
-           <li><a href="/ej2-angular/pivotview/sorting">Sorting</a></li>
-           <li><a href="/ej2-angular/pivotview/grouping">Grouping</a></li>
-           <li><a href="/ej2-angular/pivotview/virtual-scrolling">Virtual Scrolling</a></li>
-           <li><a href="/ej2-angular/pivotview/paging">Paging</a></li>
-           <li><a href="/ej2-angular/pivotview/defer-update">Defer Layout Update</a></li>
-           <li><a href="/ej2-angular/pivotview/row-and-column">Row and Column</a></li>
+           <li><a href="/ej2-angular/pivotview/drill-down">Drill Down/Up</a></li>
+           <li>Data Shaping
+             <ul>
+               <li><a href="/ej2-angular/pivotview/aggregation">Aggregation</a></li>
+               <li><a href="/ej2-angular/pivotview/calculated-field">Calculated Field</a></li>
+               <li><a href="/ej2-angular/pivotview/grouping">Grouping</a></li>
+               <li><a href="/ej2-angular/pivotview/filtering">Filtering</a></li>
+               <li><a href="/ej2-angular/pivotview/sorting">Sorting</a></li>
+               <li><a href="/ej2-angular/pivotview/drill-through">Drill Through</a></li>
+               <li><a href="/ej2-angular/pivotview/editing">Editing</a></li>
+             </ul>
+           </li>
+           <li>Data Formatting
+             <ul>
+               <li><a href="/ej2-angular/pivotview/number-formatting">Number Formatting</a></li>
+               <li><a href="/ej2-angular/pivotview/conditional-formatting">Conditional Formatting</a></li>
+             </ul>
+           </li>
+           <li>Report Manipulation
+             <ul>
+               <li><a href="/ej2-angular/pivotview/grouping-bar">Grouping Bar</a></li>
+               <li><a href="/ej2-angular/pivotview/field-list">Field List</a></li>
+               <li><a href="/ej2-angular/pivotview/defer-update">Defer Layout Update</a></li>
+             </ul>
+           </li>
+           <li>Performance
+             <ul>
+               <li><a href="/ej2-angular/pivotview/virtual-scrolling">Virtual Scrolling</a></li>
+               <li><a href="/ej2-angular/pivotview/paging">Paging</a></li>
+             </ul>
+           </li>
            <li><a href="/ej2-angular/pivotview/state-persistence">State Persistence</a></li>
+           <li><a href="/ej2-angular/pivotview/row-and-column">Row and Column</a></li>
            <li><a href="/ej2-angular/pivotview/summary-customization">Show/Hide Totals</a></li>
-           <li><a href="/ej2-angular/pivotview/conditional-formatting">Conditional Formatting</a></li>
-           <li><a href="/ej2-angular/pivotview/drill-through">Drill Through</a></li>
-           <li><a href="/ej2-angular/pivotview/editing">Editing</a></li>
            <li><a href="/ej2-angular/pivotview/hyper-link">Hyperlink</a></li>
            <li><a href="/ej2-angular/pivotview/tool-bar">Toolbar</a></li>
            <li><a href="/ej2-angular/pivotview/tool-tip">Tooltip</a></li>
            <li><a href="/ej2-angular/pivotview/css-customization">Style and Appearance</a></li>
+           <li>Printing and Exporting
+               <ul>
+                 <li><a href="/ej2-angular/pivotview/print">Printing</a></li>
+                 <li><a href="/ej2-angular/pivotview/excel-export">Excel Exporting</a></li>
+                 <li><a href="/ej2-angular/pivotview/pdf-export">PDF Exporting</a></li>
+               </ul>
+           </li>
            <li><a href="/ej2-angular/pivotview/globalization-and-localization">Globalization</a></li>
-           <li><a href="/ej2-angular/pivotview/pdf-export">PDF Export</a></li>
-           <li><a href="/ej2-angular/pivotview/excel-export">Excel Export</a></li>
-           <li><a href="/ej2-angular/pivotview/print">Print</a></li>
            <li><a href="/ej2-angular/pivotview/accessibility">Accessibility</a></li>
            <li><a href="/ej2-angular/pivotview/ej1-api-migration">Migration from Essential JS 1</a></li>
            <li>How To
@@ -2191,6 +2214,8 @@ Ribbon
             <li><a href="/ej2-angular/spreadsheet/how-to/sort-a-range-by-custom-list">Sort a range by custom list</a></li>
             <li><a href="/ej2-angular/spreadsheet/how-to/print">Print the single/multiple sheets</a></li>
             <li><a href="/ej2-angular/spreadsheet/how-to/change-active-sheet">Changing the active sheet while importing a file</a></li>
+            <li><a href="/ej2-angular/spreadsheet/how-to/import-an-excel-document-using-file-uploader">Import an excel document using file uploader</a></li>
+            <li><a href="/ej2-angular/spreadsheet/how-to/identify-the-context-menu-opened">Identify the context menu opened</a></li>
          </ul>
        </li>
        <li><a href="/ej2-angular/spreadsheet/mobile-responsiveness">Mobile Responsiveness</a></li>
@@ -2673,7 +2698,9 @@ Ribbon
     </ul>
  </li> <li>Release Notes
                 <ul>
-				<li>2023 Volume 3 - 23.*<ul><li> Weekly Nuget Release <ul><li><a href="/ej2-angular/release-notes/23.1.39">23.1.39</a></li><li><a href="/ej2-angular/release-notes/23.1.38">23.1.38</a></li></ul></li><li><a href="/ej2-angular/release-notes/23.1.36">23.1.36 Main Release</a></li></ul></li>
+				<li>2023 Volume 3 - 23.*<ul><li> Weekly Nuget Release <ul><li><a href="/ej2-angular/release-notes/23.1.44">23.1.44</a></li><li><a href="/ej2-angular/release-notes/23.1.43">23.1.43</a></li><li><a href="/ej2-angular/release-notes/23.1.42">23.1.42</a></li><li><a href="/ej2-angular/release-notes/23.1.41">23.1.41</a></li><li><a href="/ej2-angular/release-notes/23.1.40">23.1.40</a></li><li><a href="/ej2-angular/release-notes/23.1.39">23.1.39</a></li><li><a href="/ej2-angular/release-notes/23.1.38">23.1.38</a></li></ul></li>
+				<li><a href="/ej2-angular/release-notes/23.2.4">23.2.4 Service Pack Release</a></li>
+				<li><a href="/ej2-angular/release-notes/23.1.36">23.1.36 Main Release</a></li></ul></li>
 				<li>2023 Volume 2 - 22.*
 				    <ul>
 					    <li> Weekly Release 

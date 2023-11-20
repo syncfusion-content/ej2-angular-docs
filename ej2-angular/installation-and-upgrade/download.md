@@ -20,7 +20,7 @@ The Syncfusion JavaScript - EJ2 installer can be downloaded from the Syncfusion 
 Our 30-day trial can be downloaded in two ways.
 
 * Download Free Trial Setup
-* Start Trials if using components [through Nuget.org](https://www.nuget.org/packages?q=syncfusion)
+* Start Trials if using components [through npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular)
 
 ### Download Free Trial Setup
 
@@ -44,9 +44,9 @@ Our 30-day trial can be downloaded in two ways.
 
     ![start trial download offline installer](images/start-trial-download-offline-installer.png)
 
-**Start Trials if using components through [Nuget.org](https://www.nuget.org/packages?q=syncfusion)**
+**Start Trials if using components through [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular)**
 
-You should initiate an evaluation if you have already obtained our components through [Nuget.org](https://www.nuget.org/packages?q=syncfusion)
+You should initiate an evaluation if you have already obtained our components through [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular)
 
 1. You can start your 30-day free trial for JavaScript – EJ2 from the [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page from your account.
 

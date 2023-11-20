@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Changing the active sheet while importing a file in the Angular Spreadsheet component | Syncfusion
-description: Learn here all about changing the active sheet index while importing a file in Syncfusion React Spreadsheet component of Syncfusion Essential JS 2 and more. 
+description: Learn here all about changing the active sheet index while importing a file in Syncfusion Angular Spreadsheet component of Syncfusion Essential JS 2 and more. 
 platform: ej2-angular
 control: Spreadsheet
 documentation: ug

@@ -15,6 +15,7 @@
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@syncfusion/ej2-angular-charts": "*",
     "@syncfusion/ej2-angular-base": "*",
+    "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-angular-grids": "*",
     "@syncfusion/ej2-angular-buttons": "*",
     "@syncfusion/ej2-angular-popups": "*",

@@ -27,12 +27,12 @@ export class AppComponent {
     public onPrint(): void {
         let sfdtData = (this.documentEditor as DocumentEditorComponent).serialize();
         //Open the document in preview document editor.
-        this.documentEditorPreview.open(sfdtData);
+        (this.documentEditorPreview as DocumentEditorComponent).open(sfdtData);
         //Set A5 paper size
-        this.documentEditorPreview.selection.sectionFormat.pageWidth = 419.55;
-        this.documentEditorPreview.selection.sectionFormat.pageHeight = 595.30;
+        (this.documentEditorPreview as DocumentEditorComponent).selection.sectionFormat.pageWidth = 419.55;
+        (this.documentEditorPreview as DocumentEditorComponent).selection.sectionFormat.pageHeight = 595.30;
         //Print the document content.
-        this.documentEditorPreview.print();
+        (this.documentEditorPreview as DocumentEditorComponent).print();
     }
 }
 

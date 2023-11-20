@@ -89,7 +89,14 @@ The DataManager can act as gateway for both local and remote data source which w
 {% include code-snippet/data/getting-started/default-cs6/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs6/src/app.template.html %}
+{% raw %}
+<table class='e-table'>
+    <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
+    </tr>
+</table>
+{% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs6/src/app.module.ts %}
@@ -111,7 +118,14 @@ Now all **DataManager** operations will address the provided service end point.
 {% include code-snippet/data/getting-started/default-cs7/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs7/src/app.template.html %}
+{% raw %}
+<table class='e-table'>
+    <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
+    </tr>
+</table>
+{% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs7/src/app.module.ts %}
@@ -133,7 +147,14 @@ The filter expression can be built easily using **where** method of **Query** cl
 {% include code-snippet/data/getting-started/default-cs8/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs8/src/app.template.html %}
+{% raw %}
+<table class='e-table'>
+    <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
+    </tr>
+</table>
+{% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs8/src/app.module.ts %}
@@ -154,7 +175,14 @@ The data can be ordered either in ascending or descending using **sortBy** metho
 {% include code-snippet/data/getting-started/default-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs9/src/app.template.html %}
+{% raw %}
+<table class='e-table'>
+    <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
+    </tr>
+</table>
+{% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/data/getting-started/default-cs9/src/app.module.ts %}
@@ -178,8 +206,14 @@ The **page** method of the Query class is used to get range of data based on the
 {% include code-snippet/data/getting-started/default-cs10/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs10/src/app.module.ts %}
-{% endhighlight %}
+{% raw %}
+<table class='e-table'>
+    <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
+    </tr>
+</table>
+{% endraw %}{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs10/src/main.ts %}
 {% endhighlight %}
@@ -190,6 +224,8 @@ The **page** method of the Query class is used to get range of data based on the
 ## Component binding
 
 DataManager component can be used with Syncfusion components which supports data binding.
+
+In the following samples, the grid component is bound. To render the grid with the necessary configurations, please refer to the [Grid Getting Started](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) documentation.
 
 ### Local data binding
 
@@ -211,7 +247,7 @@ A DataSource can be created in-line with other Syncfusion component configuratio
 
 ### Remote data binding
 
-To bind remote data to Syncfusion component, you can assign a service data as an instance of **DataManager** to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property.
+To bind remote data to Syncfusion component, you can assign a service data as an instance of **DataManager** to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

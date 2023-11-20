@@ -1,0 +1,28 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-calendars/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+
+.e-grid .e-leftfreeze.e-freezeleftborder {
+    border-right-color: rgb(198, 30, 204);
+}
+
+.e-grid .e-rightfreeze.e-freezerightborder {
+    border-left-color: rgb(19, 228, 243);
+}
+
+.e-grid .e-fixedfreeze.e-freezeleftborder{
+    border-left-color: rgb(9, 209, 9); 
+}
+
+.e-grid .e-fixedfreeze.e-freezerightborder{
+    border-right-color: rgb(10, 224, 10);
+}
+

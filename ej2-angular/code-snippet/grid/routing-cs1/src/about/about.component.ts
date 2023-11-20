@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { data } from 'app/datasource';
+import { data } from '../datasource';
 
 @Component({
   selector: 'app-about',

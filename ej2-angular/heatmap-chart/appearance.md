@@ -184,7 +184,7 @@ The text attributes of the data label such as font-family, font-size, and color 
   
 {% previewsample "page.domainurl/samples/heatmap/appearance/textStyle-cs1" %}
 
-## Format
+### Format
 
 The format of the data label, such as currency, decimal, percent etc. can be changed using [format](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettingsModel/#format) property.
 
@@ -230,7 +230,7 @@ The following example demonstrates how to add a data label template for array ta
   
 {% previewsample "page.domainurl/samples/heatmap/appearance/template-cs1" %}
 
-*Cell**
+**Cell**
 
 The following example demonstrates how to add a data label template for array cell binding.
 

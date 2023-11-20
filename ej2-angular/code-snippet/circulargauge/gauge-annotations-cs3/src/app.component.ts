@@ -12,12 +12,12 @@ import { ILoadedEventArgs } from '@syncfusion/ej2-circulargauge';
         <e-axes>
             <e-axis minimum=0 maximum=12 startAngle=0 endAngle=360 [lineStyle]="lineStyle" [labelStyle]="labelStyle">
                 <e-annotations>
-                    <e-annotation angle=270 radius='40%'>
+                    <e-annotation angle=270 radius='40%' zIndex='1'>
                     <ng-template #content>
                       <div id="subGauge" style="width:90px;height:90px"></div>
                     </ng-template>
                     </e-annotation>
-                    <e-annotation angle=90 radius='40%'>
+                    <e-annotation angle=90 radius='40%' zIndex='1'>
                     <ng-template #content>
                       <div id="subTime" style="width:90px;height:90px">
                         <span>6:30 PM</span>

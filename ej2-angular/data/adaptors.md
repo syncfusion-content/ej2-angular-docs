@@ -46,7 +46,7 @@ The adaptor can be assigned using the **adaptor** property of the [`DataManager`
 ```typescript
 import { DataManager, Query, UrlAdaptor } from '@syncfusion/ej2-data';
 
-const SERVICE_URI = 'http://controller.com/actions';
+const SERVICE_URI = 'https://ej2services.syncfusion.com/angular/development/api/UrlDataSource';
 
 new DataManager({
         url: SERVICE_URI,
@@ -122,7 +122,7 @@ To enable OData query option for Web API, please refer to the [`documentation`](
 ```typescript
 import { DataManager, Query, WebApiAdaptor } from '@syncfusion/ej2-data';
 
-const SERVICE_URI = 'http://controller.com/api';
+const SERVICE_URI = 'https://ej2services.syncfusion.com/angular/development/api/Orders';
 
 new DataManager({
         url: SERVICE_URI,
@@ -147,7 +147,7 @@ The sample response object should look like below.
 
 The **WebMethodAdaptor** is used to bind data source from remote services and code behind methods. It can be enabled in Grid using Adaptor property of DataManager as **WebMethodAdaptor**.
 
-For every operations, an AJAX post will be send to the specified data service.
+For every operations, an Fetch post will be send to the specified data service.
 
 ```typescript
 import { DataManager, Query, WebMethodAdaptor } from '@syncfusion/ej2-data';

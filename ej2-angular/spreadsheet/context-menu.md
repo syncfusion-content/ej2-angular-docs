@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Context menu in Angular Spreadsheet component
 
-Context Menu is used to improve user interaction with Spreadsheet using the popup menu. This will open when right-clicking on Cell/Column Header/Row Header/ Pager in the Spreadsheet. You can use [`enableContextMenu`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#enableContextMenu) property to enable/disable context menu.
+Context Menu is used to improve user interaction with Spreadsheet using the popup menu. This will open when right-clicking on Cell/Column Header/Row Header/ Pager in the Spreadsheet. You can use [`enableContextMenu`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#enablecontextmenu) property to enable/disable context menu.
 
 > The default value for the `enableContextMenu` property is `true`.
 
@@ -38,8 +38,8 @@ Please find the table below for default context menu items and their actions.
 | [`Copy`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#copy) | Copy the selected row/column header data to the clipboard, so that you can paste it to somewhere else. |
 | [`Paste`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#paste) | Paste the data from clipboard to spreadsheet. |
 | [`Paste Special`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#paste) | `Values` - Paste the data values from clipboard to spreadsheet. `Formats` - Paste the data formats from clipboard to spreadsheet. |
-| [`Insert Columns`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#insertRow) | Insert new rows or columns into the worksheet. |
-| [`Delete Columns`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#deleteRow) | Delete existing rows or columns from the worksheet. |
+| [`Insert Columns`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#insertrow) | Insert new rows or columns into the worksheet. |
+| [`Delete Columns`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#deleterow) | Delete existing rows or columns from the worksheet. |
 | [`Hide Columns`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#insert) | Hide the rows and columns. |
 | [`UnHide Columns`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#delete) | Show the hidden rows and columns. |
 
@@ -52,7 +52,7 @@ Please find the table below for default context menu items and their actions.
 | `Insert` | Insert a new worksheet in front of an existing worksheet in the spreadsheet. |
 | `Delete` | Delete the selected worksheet from the spreadsheet. |
 | `Rename` | Rename the selected worksheet. |
-| [`Protect Sheet`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#protectSheet) | Prevent unwanted changes from others by limiting their ability to edit. |
+| [`Protect Sheet`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#protectsheet) | Prevent unwanted changes from others by limiting their ability to edit. |
 | [`Hide`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#hide) |Hide the selected worksheet. |
 
 ## Context Menu Customization
@@ -65,7 +65,7 @@ You can perform the following context menu customization options in the spreadsh
 
 ### Add Context Menu Items
 
-You can add the custom items in context menu using the [`addContextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#addContextMenuItems) in `contextmenuBeforeOpen` event
+You can add the custom items in context menu using the [`addContextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#addcontextmenuitems) in `contextmenuBeforeOpen` event
 
 In this demo, Custom Item is added after the Paste item in the context menu.
 
@@ -85,7 +85,7 @@ In this demo, Custom Item is added after the Paste item in the context menu.
 
 ### Remove Context Menu Items
 
-You can remove the items in context menu using the [`removeContextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#removeContextMenuItems) in `contextmenuBeforeOpen` event
+You can remove the items in context menu using the [`removeContextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#removecontextmenuItems) in `contextmenuBeforeOpen` event
 
 In this demo, Insert Column item has been removed from the row/column header context menu.
 
@@ -105,7 +105,7 @@ In this demo, Insert Column item has been removed from the row/column header con
 
 ### Enable/Disable Context Menu Items
 
-You can enable/disable the items in context menu using the [`enableContextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#enableContextMenuItems) in `contextmenuBeforeOpen` event
+You can enable/disable the items in context menu using the [`enableContextMenuItems`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#enablecontextmenuItems) in `contextmenuBeforeOpen` event
 
 In this demo, Rename item is disabled in the pager context menu.
 
