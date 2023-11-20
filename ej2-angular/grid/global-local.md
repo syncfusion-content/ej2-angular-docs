@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Localization
 
-The [`Localization`](../common/globalization/localization/) library allows you to localize default text content of the Grid.
+The [`Localization`](../common/globalization/localization) library allows you to localize default text content of the Grid.
 The grid component has static text on some features (like group drop area text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) value and translation object.
 
 The following list of properties and its values are used in the grid.
@@ -188,5 +188,5 @@ RTL provides an option to switch the text direction and layout of Grid component
 ## See Also
 
 * [Internationalization](../common/globalization/internationalization)
-* [Localization](../common/globalization/localization/)
+* [Localization](../common/globalization/localization)
 * [Animate the Grid selected row in Angular Grid](https://www.syncfusion.com/forums/144844/apply-grid-localization-from-external-json-file-in-angular-grid)

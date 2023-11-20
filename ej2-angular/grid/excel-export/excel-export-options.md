@@ -127,7 +127,7 @@ To show or hide columns based on user interaction during the export process, you
 
 3. Export the grid to Excel.
 
-4. Handle the [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#excelexportcomplete) event to restore the column visibility to its original state.
+4. Handle the [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexportcomplete) event to restore the column visibility to its original state.
 
 In the following example, the **CustomerID** is initially a hidden column in the grid. However, during the export process, the **CustomerID** column is made visible, while the **ShipCity** column is hidden.
 
@@ -149,7 +149,7 @@ In the following example, the **CustomerID** is initially a hidden column in the
 
 The Grid allows you to export data to Excel with filter options and also export only filtered records. This feature is especially beneficial when you need to share data with others while preserving the ability for them to filter and analyze the data in Excel.
 
-To enable this feature, you should set the [enableFilter](https://helpej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#enablefilter) property to **true** in the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) object. Additionally, you need to set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) to **true** in the grid configuration. This property enables filtering in the grid.
+To enable this feature, you should set the [enableFilter](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#enablefilter) property to **true** in the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) object. Additionally, you need to set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) to **true** in the grid configuration. This property enables filtering in the grid.
 
 The following example demonstrates how to export data with filter options to an Excel document when a toolbar item is clicked:
 
@@ -171,7 +171,7 @@ The following example demonstrates how to export data with filter options to an 
 
 The Syncfusion Angular Grid component allows you to specify a custom file name for the exported Excel document. This feature enables you to provide a meaningful and descriptive name for the exported file, making it easier to identify and manage the exported data.
 
-To assign a custom file name for the exported document, you can set the [fileName](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#filename) property of the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) property to the desired file name.
+To assign a custom file name for the exported document, you can set the [fileName](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#filename) property of the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) property to the desired file name.
 
 The following example demonstrates how to define a file name using `ExcelExportProperties.fileName` property when exporting to Excel, based on the entered value as the file name.
 
@@ -193,7 +193,7 @@ The following example demonstrates how to define a file name using `ExcelExportP
 
 The export functionality within the master-detail grid feature of the Grid enables you to export not only the master grid but also the associated detail grid onto a single Excel sheet. This feature proves to be particularly valuable when dealing with hierarchical data represented by two grids in the exported Excel file, allowing for comprehensive analysis and management.
 
-To export the master-detail grid on the same sheet, you need to set the [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/multipleExportType/) property of the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) object to **AppendToSheet**. It also has an option to provide blank space between the grids. This blank space can be defined by using [multipleExport.blankRows](https://ej2.syncfusion.com/angular/documentation/api/grid/multipleExport/#blankrows) property.
+To export the master-detail grid on the same sheet, you need to set the [multipleExport.type](https://ej2.syncfusion.com/angular/documentation/api/grid/multipleExportType/) property of the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) object to **AppendToSheet**. It also has an option to provide blank space between the grids. This blank space can be defined by using [multipleExport.blankRows](https://ej2.syncfusion.com/angular/documentation/api/grid/multipleExport/#blankrows) property.
 
 The following example demonstrates how to export master detail grid to the same page in a Excel file when a toolbar item is clicked. The [rowSelected](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowselected) event dynamically updates the detail grid based on the selected master record:
 
@@ -273,7 +273,7 @@ In the following example, apply font styling to the caption, header, and record 
 
 The Grid provides support to customize the column header styles, such as changing the text orientation, font color, and more, in the exported Excel file. This feature is useful when you want to enhance the visual appearance of the exported data and provide a unique representation of the Grid in the Excel document.
 
-To achieve this requirement, use the [excelHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#excelheaderquerycellinfo) event of the Grid. This event is triggered when creating a column header for the Excel document to be exported. By customizing the column header within this event, you can easily rotate the header text to a certain degree in the exported Grid, making the data presentation in the Excel document more visually appealing and tailored to your specific requirements.
+To achieve this requirement, use the [excelHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelheaderquerycellinfo) event of the Grid. This event is triggered when creating a column header for the Excel document to be exported. By customizing the column header within this event, you can easily rotate the header text to a certain degree in the exported Grid, making the data presentation in the Excel document more visually appealing and tailored to your specific requirements.
 
 In the following demo, using the `rotation` property of the style argument in the `excelHeaderQueryCellInfo` event, you can rotate the header text of the column header in the excel exported document.
 
@@ -295,7 +295,7 @@ In the following demo, using the `rotation` property of the style argument in th
 
 When exporting data from the Grid, you have an option to conditionally format the cells in the exported Excel document. This allows you to customize the appearance of specific cells based on their values or other criteria.
 
-To achieve this feature, you need to use the [excelQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/excelQueryCellInfoEventArgs) event of the Grid component. This event is triggered for each cell during the export process to Excel. Within this event, you can access the cell object using the `args.cell` property and modify its properties, such as the background color, based on your desired conditions.
+To achieve this feature, you need to use the [excelQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/excelQueryCellInfoEventArgs/) event of the Grid component. This event is triggered for each cell during the export process to Excel. Within this event, you can access the cell object using the `args.cell` property and modify its properties, such as the background color, based on your desired conditions.
 
 The following example demonstrate how to customize the background color of the Freight column in the exported Excel document using the **args.cell** and **backgroundColor** properties of the `excelQueryCellInfo` event.
 

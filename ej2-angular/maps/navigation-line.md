@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Navigation line in Angular Maps component
 
-The navigation lines are used to denote the path between two locations. This feature can be used to draw flight or sea routes. Navigation lines are enabled by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/navigationLineSettingsModel/#visible) property of the [`navigationLineSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/navigationLineSettingsModel) to **true**.
+The navigation lines are used to denote the path between two locations. This feature can be used to draw flight or sea routes. Navigation lines are enabled by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/maps/navigationLineSettingsModel/#visible) property of the [`navigationLineSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/navigationLineSettingsModel/) to **true**.
 
 ## Customization
 

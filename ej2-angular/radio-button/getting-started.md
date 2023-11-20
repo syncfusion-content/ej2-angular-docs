@@ -152,7 +152,7 @@ The Essential JS 2 RadioButton contains 2 different states visually, they are as
 * Checked
 * Unchecked
 
-The RadioButton [`checked`](https://ej2.syncfusion.com/angular/documentation/api/radio-button#checked) property is used to handle the checked and unchecked state.
+The RadioButton [`checked`](https://ej2.syncfusion.com/angular/documentation/api/radio-button/#checked) property is used to handle the checked and unchecked state.
 In the checked state an inner circle will be added to the visualization of RadioButton.
 
 {% tabs %}
