@@ -16,9 +16,9 @@ Grid component provides a [template](https://ej2.syncfusion.com/angular/document
 
 ## Render image in a column
 
-To render an image in a grid column, you need to define a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) for the column using the template property. The `template` property expects an HTML string or a function that returns an HTML string.
+To render an image in a grid column, you need to define a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) for the column using the template property. The `template` property expects the HTML element or a function that returns the HTML element.
 
-The following example demonstrates how to define a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) for the **Employee Image** field that displays an image element. The `template` property is set to an HTML string that contains an image tag. You have utilized the `src` and `alt` attributes to the image tag. 
+The following example demonstrates how to define a [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) for the **Employee Image** field that displays an image element. The `template` property is set to the HTML element that contains an image tag. You have utilized the `src` and `alt` attributes to an image tag. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,7 +40,7 @@ The following example demonstrates how to define a [template](https://ej2.syncfu
 
 The Grid component provides support for rendering hyperlink columns and performing routing on click using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property. This feature is useful when displaying data that requires a link to another page or website.
 
-The following example demonstrates, hot to render hyperlink column in the Grid using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property of the `e-column` tag. To define a `template` for the column,  you can use an `ng-template` with an `a` tag to create the hyperlink. The onClick function is triggered when the hyperlink is clicked.
+The following example demonstrates, hot to render hyperlink column in the Grid using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property of the `e-column` tag. To define a `template` for the column,  you can use the `ng-template` with the `a` tag to create the hyperlink. The onClick function is triggered when the hyperlink is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -162,7 +162,7 @@ In the following code, we rendered the Chips component in the Grid **First Name*
 
 The conditional column [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) allows you to display template elements based on specific conditions.
 
-The following example demonstrates how to use the `template` property with an `ng-template` element and add an `*ngIf` directive to render the checkbox based on the value of the **Discontinued** field. The **Discontinued** field will render a checkbox in each row for which the value of the **Discontinued** field is **true**. 
+The following example demonstrates how to use the `template` property with the `ng-template` element and add `*ngIf` directive to render the checkbox based on the value of the **Discontinued** field. The **Discontinued** field will render a checkbox in each row for which the value of the **Discontinued** field is **true**. 
 
 ```
 <e-column headerText='Discontinued' width='150' textAlign='Center'>
@@ -218,7 +218,7 @@ The Syncfusion Grid allows you to use custom helpers inside the `ng-template` di
 
 To use the custom helper function inside a column template, you must first add the function to the template's context. This can be done by using the let keyword to create a new variable that references the function.
 
-The following example demonstrates how to use a custom helper function inside the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property, using an `ng-template` element for the Freight column.
+The following example demonstrates how to use a custom helper function inside the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property, using the `ng-template` element for the Freight column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

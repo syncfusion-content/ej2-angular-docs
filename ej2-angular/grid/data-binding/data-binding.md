@@ -22,6 +22,31 @@ To learn about how to bind local, remote or observables data to Angular Grid, yo
 
 {% youtube "https://www.youtube.com/watch?v=Xkq1tXOXL7k" %}
 
+## Loading animation
+
+The Syncfusion Angular Grid offers a loading animation feature, which makes it easy to identify when data is being loaded or refreshed. This feature provides a clear understanding of the grid's current state and actions, such as sorting, filtering, grouping, and more.
+
+To achieve this, you can utilize the [loadingIndicator.indicatorType](https://ej2.syncfusion.com/angular/documentation/api/grid/loadingIndicatorModel) property of the grid, which supports two types of indicators:
+
+* Spinner (default indicator)
+* Shimmer
+
+The following example demonstrates how to set the `loadingIndicator.indicatorType` property based on changing the dropdown value using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the `DropDownList` component. The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method is used to apply the changes and display the updated loading indicator type. 
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/loading-indicator/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/loading-indicator/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/loading-indicator/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/loading-indicator" %}
+
 ## Sending additional parameters to the server
 
 To add a custom parameter to the data request, use the **addParams** method of **Query** class. Assign the **Query** object with additional parameters to the grid [`query`](https://ej2.syncfusion.com/angular/documentation/api/grid/#query) property.

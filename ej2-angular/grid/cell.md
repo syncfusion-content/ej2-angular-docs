@@ -10,6 +10,10 @@ domainurl: ##DomainURL##
 
 # Cell in Angular Grid component
 
+In the Syncfusion Angular Grid, a **cell** refers to an individual data point or a unit within a grid column that displays data. It represents the intersection of a row and a column, and it contains specific information associated with that row and column. Each cell can display text, numbers, or other content related to the data it represents. 
+
+The Grid component allows you to customize the appearance and behavior of cells using various features and options. You can define templates, format cell values, enable or disable editing, and perform various other operations on the cells to create interactive and informative data grids in your web applications.
+
 ## Displaying the HTML content
 
 Displaying HTML content in a Grid can be useful in scenarios where you want to display formatted content, such as images, links, or tables, in a tabular format. Grid component allows you to display HTML tags in the Grid header and content. By default, the HTML content is encoded to prevent potential security vulnerabilities. However, you can enable the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property by setting the value as false to display HTML tags without encoding. This feature is useful when you want to display HTML content in a grid cell.
@@ -235,7 +239,19 @@ The Grid component allows rendering Bootstrap tooltips in the cells. To enable t
 
 This is demonstrated in the sample code below which shows how to enable Bootstrap tooltip for the **CustomerID** field using `ng-template` in grid cells,
 
-Step 1: Install the Bootstrap and jQuery package in your application and add the script and style of the respective packages in the angular.json file,
+Step 1: Install the Bootstrap and jQuery package in your application using the following commands and add the script and style of the respective packages in the angular.json file,
+
+To install bootstrap, use the following command.
+
+```bash
+npm install @ng-bootstrap/ng-bootstrap
+```
+
+To install jQuery, use the following command.
+
+```bash
+npm install jquery
+```
 
 ```json
 
