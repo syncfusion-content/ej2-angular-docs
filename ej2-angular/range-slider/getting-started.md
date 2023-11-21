@@ -44,7 +44,7 @@ cd syncfusion-angular-app
 
 ## Installing Syncfusion RangeSlider Package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=@syncfusion/ej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
@@ -264,10 +264,10 @@ and not to the button.
 
 [Slider Types](#types)
 
-[Slider Formatting](./format/)
+[Slider Formatting](./format)
 
 [Orientation Slider](#orientation)
 
-[Ticks in Slider](./ticks/)
+[Ticks in Slider](./ticks)
 
 [Tooltip in Slider](#tooltip)

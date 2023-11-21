@@ -56,7 +56,7 @@ cd syncfusion-angular-textbox
 
 ## Installing Syncfusion TextBox  Package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=@syncfusion/ej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
@@ -121,7 +121,7 @@ This can be referenced in [src/styles.css] using following code.
 
 ## Adding icons to the TextBox
 
-You can create a TextBox with icon as a group by creating the parent div element with the class `e-input-group` and add the icon element as span with the class `e-input-group-icon`. For detailed information, refer to the [Groups](./groups/) section.
+You can create a TextBox with icon as a group by creating the parent div element with the class `e-input-group` and add the icon element as span with the class `e-input-group-icon`. For detailed information, refer to the [Groups](./groups) section.
 
 ```javascript
 import { Component } from '@angular/core';
