@@ -308,3 +308,4 @@ In the given example, the filtering is prevented for **ShipCity** column during 
 * [Hide sorting options on Excel filter dialog](../how-to/hide-sorting-in-excel-filter)
 * [How to apply initial filter on custom binding in Angular Grid](https://www.syncfusion.com/forums/152157/how-to-apply-initial-filter-on-custom-binding-in-angular-grid)
 * [How to custom the display value of checkbox filter option in Angular Grid](https://www.syncfusion.com/forums/154478/how-to-custom-the-display-value-of-checkbox-filter-option-in-angular-grid)
+* [How to change loading indicator in Angular Grid](../data-binding/data-binding.md#loading-animation)

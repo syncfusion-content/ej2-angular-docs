@@ -391,7 +391,7 @@ The following example demonstrates how the [actionBegin](https://ej2.syncfusion.
 
 > [args.requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) refers to the current action being performed. For example in sorting, the `args.requestType` value is **sorting**.
 
-
 ## See Also
 
 * [How to remove the Sorting indicator from the column headers in Angular Grid](https://www.syncfusion.com/forums/150597/how-to-remove-the-sorting-indicator-from-the-column-headers-in-angular-grid)
+* [How to change loading indicator in Angular Grid](./data-binding/data-binding.md#loading-animation)
