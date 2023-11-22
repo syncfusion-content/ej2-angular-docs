@@ -3,7 +3,7 @@
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
-    selector: 'app-container',
+    selector: 'app-root',
     template: `<ejs-accordion>
     <div>
         <div>
