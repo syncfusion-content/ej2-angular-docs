@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Angular Color picker component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Color picker component of Syncfusion Essential JS 2 and more details.
+description: Learn here all about Getting started with Angular Color picker component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
