@@ -175,7 +175,7 @@ The Accordion can be rendered by defining an array of `items`.
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
-    selector: 'my-app',
+    selector: 'app-root',
     template: `
        <ejs-accordion>
         <e-accordionitems>

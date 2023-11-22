@@ -9,7 +9,7 @@ import { TabComponent } from '@syncfusion/ej2-angular-navigations';
  */
 
 @Component({
-    selector: 'app-container',
+    selector: 'app-root',
     template: `<ejs-tab id="element">
             <e-tabitems>
                     <e-tabitem>

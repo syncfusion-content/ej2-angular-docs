@@ -4,7 +4,7 @@ import { Component, ViewChild } from '@angular/core';
 import { ToolbarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-    selector: 'app-container',
+    selector: 'app-root',
     template: `
         <ejs-toolbar>
           <div>
