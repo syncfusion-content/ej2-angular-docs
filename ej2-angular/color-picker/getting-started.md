@@ -174,4 +174,4 @@ The following sample shows the inline type rendering of ColorPicker.
 
 >> The `showButtons` property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [`showButtons`](./how-to/hide-control-buttons) sample.
 
-N> You can refer to our [Angular color picker](https://www.syncfusion.com/angular-ui-components/angular-color-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Angular ColorPicker example](https://ej2.syncfusion.com/angular/demos/#/material/color-picker/default) that shows how to render the ColorPicker in Angular.
+N> You can refer to our [Angular color picker](https://www.syncfusion.com/angular-ui-components/angular-color-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Angular ColorPicker example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/color-picker/default) that shows how to render the ColorPicker in Angular.
