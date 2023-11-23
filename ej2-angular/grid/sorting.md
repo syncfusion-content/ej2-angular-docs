@@ -254,7 +254,7 @@ public class ItemsController : ODataController
 
 ## Perform sorting based on its culture
 
-Perform sorting based on culture in the Grid can be achieved by utilizing the [locale](https://helpej2.syncfusion.com/angular/documentation/api/grid/#locale) property. By setting the `locale` property to the desired culture code, you enable sorting based on that specific culture. This allows you to apply locale-specific sorting rules and ensure accurate ordering for different languages and regions.
+Perform sorting based on culture in the Grid can be achieved by utilizing the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) property. By setting the `locale` property to the desired culture code, you enable sorting based on that specific culture. This allows you to apply locale-specific sorting rules and ensure accurate ordering for different languages and regions.
 
 In the following example, sorting is performed based on the **"ar"** locale using the [column.sortComparer](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#sortcomparer) property.
 

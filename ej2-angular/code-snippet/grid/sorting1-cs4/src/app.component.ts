@@ -26,13 +26,13 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
 
-    actionBegin(args: SortEventArgs) {
-        if ((args as any).requestType === 'sorting' && (args as any).columnName === 'OrderID') {
-            (args as any).cancel = true;
+    actionBegin({ requestType, columnName, cancel }: SortEventArgs) {
+        if (requestType === 'sorting' && columnName === 'OrderID') {
+            cancel = true;
         }
     }
-    actionComplete(args: SortEventArgs) {
-        this.message = (args as any).requestType + ' action completed for ' + (args as any).columnName + ' column';
+    actionComplete({ requestType, columnName }: SortEventArgs) {
+        this.message = requestType + ' action completed for ' + columnName + ' column';
     }
 }
 

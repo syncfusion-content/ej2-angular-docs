@@ -32,23 +32,25 @@ export class AppComponent implements OnInit {
             return createElement('input');
         },
         read: () => { // return edited value to update data source
+
             const EmployeeID = 'EmployeeID';
-            const value = new DataManager(employeeData).executeLocal(new Query().where('FirstName', 'equal', (this.autoComplete as any).value));
-            return value.length && (value as any)[0][EmployeeID]; // to convert foreign key value to local value.
+            const value = new DataManager(employeeData).executeLocal(new Query().where('FirstName', 'equal', (this.autoComplete as AutoComplete).value));
+            console.log(value[0]);
+            return value.length && (value[0] as ForeignKeyDataType)[EmployeeID]; // to convert foreign key value to local value.
         },
         destroy: () => { // to destroy the custom component.
-            (this.autoComplete as any).destroy();
+            (this.autoComplete as AutoComplete).destroy();
         },
         write: (args: {
-            rowData: object, column: Column, foreignKeyData: object,
+            rowData: object, column: Column, foreignKeyData: ForeignKeyDataType[],
             element: HTMLTableCellElement
-        }) => { // to show the value for date picker
+        }) => {
             this.autoComplete = new AutoComplete({
-                dataSource: employeeData as any,
-                fields: { value: (args as any).column.foreignKeyValue },
-                value: (args as any).foreignKeyData[0][(args as any).column.foreignKeyValue]
+                dataSource: employeeData as string[],
+                fields: { value: args.column.foreignKeyValue },
+                value: args.foreignKeyData[0].FirstName
             });
-            this.autoComplete.appendTo((args as any).element);
+            this.autoComplete.appendTo(args.element as HTMLTableCellElement);
         }
     }
 
@@ -57,7 +59,8 @@ export class AppComponent implements OnInit {
         this.employeeData = employeeData;
     }
 }
-
-
-
-
+interface ForeignKeyDataType{
+    EmployeeID:number,
+    FirstName:string,
+    LastName:string
+}

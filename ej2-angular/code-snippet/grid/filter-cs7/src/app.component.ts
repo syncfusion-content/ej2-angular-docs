@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Column, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Column, GridComponent} from '@syncfusion/ej2-angular-grids';
 import { data, stringOperatorsData, numericOperatorsData } from './datasource';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { DropDownListComponent,ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +9,10 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 })
 export class AppComponent implements OnInit {
   @ViewChild('grid') public grid?: GridComponent;
-  @ViewChild('operator') public operatorDropdown?: DropDownListComponent | any;
+  @ViewChild('operator') public operatorDropdown?: DropDownListComponent;
 
   public data?: object[];
-  public filterOptions?: any;
-  public fieldData: string[] | undefined;
+  public fieldData?: string[];
   public availableOperators: object[] |string | undefined;
   public column: Column | undefined;
 
@@ -21,19 +20,17 @@ export class AppComponent implements OnInit {
     this.data = data;
   }
   dataBound() {
-    this.fieldData = this.grid?.getColumnFieldNames();
+    this.fieldData = (this.grid as GridComponent).getColumnFieldNames();
   }
-  onFieldChange(args: any): void {
+  onFieldChange(args: ChangeEventArgs): void {
     this.availableOperators=[]; 
-    this.operatorDropdown.enabled = true;
-    this.column = this.grid?.getColumnByField(args.value);
+    (this.operatorDropdown as DropDownListComponent).enabled = true;
+    this.column = (this.grid as GridComponent).getColumnByField(args.value as string);
     if (this.column) {
       this.availableOperators = this.column.type === 'string' ? stringOperatorsData : numericOperatorsData;
     }
   }
-  onOperatorChange(args: any): void {
-    debugger;
-    this.filterOptions = { operator: args.value, showFilterBarStatus: true };
-    (this.column as any).filter = this.filterOptions;
+  onOperatorChange(args: ChangeEventArgs): void {
+    (this.column as Column).filter = { operator: args.value as string };
   }
 }

@@ -1,8 +1,8 @@
 
 
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { FilterSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { FilterSettingsModel, GridComponent, FilterEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -26,18 +26,18 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
 
-    actionBegin(args: any) {
- if (args.requestType == 'filtering' && args.currentFilteringColumn == 'ShipCity'){
-        args.cancel = true;
-        this.message = 'The '+ args.type + ' event has been triggered and the ' + args.requestType + ' action is cancelled for ' + args.currentFilteringColumn;
+    actionBegin(args: FilterEventArgs) {
+        if (args.requestType == 'filtering' && args.currentFilteringColumn == 'ShipCity') {
+            args.cancel = true;
+            this.message = 'The ' + args.type + ' event has been triggered and the ' + args.requestType + ' action is cancelled for ' + args.currentFilteringColumn;
         }
     }
 
-    actionComplete(args: any) {
+    actionComplete(args: FilterEventArgs) {
         if (args.requestType == 'filtering' && args.currentFilteringColumn) {
-            this.message ='The ' + args.type + ' event has been triggered and the ' +  args.requestType + ' action for the ' + args.currentFilteringColumn + ' column has been successfully executed';
-          }else{
-            this.message='';
+            this.message = 'The ' + args.type + ' event has been triggered and the ' + args.requestType + ' action for the ' + args.currentFilteringColumn + ' column has been successfully executed';
+        } else {
+            this.message = '';
         }
     }
 }
