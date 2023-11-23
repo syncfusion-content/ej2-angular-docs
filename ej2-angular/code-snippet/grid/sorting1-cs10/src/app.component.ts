@@ -19,9 +19,6 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 export class AppComponent implements OnInit {
 
     public data?: object[];
-
-    @ViewChild('grid')
-    public grid?: GridComponent;
     public customerData: object[] = customerData;
 
     ngOnInit(): void {

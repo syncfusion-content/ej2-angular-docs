@@ -2,6 +2,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { FilterSettingsModel, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 import { data } from './datasource';
 
@@ -24,16 +25,16 @@ import { data } from './datasource';
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    public filterSettings?: FilterSettingsModel;
-    public pageSettings?: PageSettingsModel = { pageSize: 5 };
-    public filterModesData: string[]= ['Immediate','OnEnter']
+    public filterSettings: FilterSettingsModel;
+    public pageSettings: PageSettingsModel = { pageSize: 5 };
+    public filterModesData: string[] = ['Immediate', 'OnEnter'];
 
-    ngOnInit(): void {
+    ngOnInit(): void { 
         this.data = data;
     }
-    onModeChange(args:any): void {
+    onModeChange(args: ChangeEventArgs): void {
         this.filterSettings = {
             mode: args.value,
         }
-    }; 
+    };
 }

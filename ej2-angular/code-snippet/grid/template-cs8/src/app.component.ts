@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { employeeData } from './datasource';
 import { Sparkline } from '@syncfusion/ej2-angular-charts';
-import { GridComponent } from '@syncfusion/ej2-angular-grids'
+import { GridComponent,} from '@syncfusion/ej2-angular-grids'
 
 @Component({
   selector: 'app-root',
@@ -40,14 +40,13 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public getSparkData(type: string, count: number): any {
-    if (type === 'line') {
-      return this.lineData[count] as number[];
-    }
+  public getSparkData(type: string, count: number) {
+    return this.lineData[count] as number[];
   }
+
   public renderGridSparkline(): void {
     setTimeout(() => {
-      const length = (this.grid as any).dataSource.length
+      const length =(this.grid as GridComponent).getDataRows().length
       for (let i: number = 1; i <= length; i++) {
         let line: Sparkline = new Sparkline({
           height: '50px',

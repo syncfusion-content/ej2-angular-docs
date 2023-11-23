@@ -22,7 +22,36 @@ The following example demonstrates how to define a [template](https://ej2.syncfu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/template-cs1/src/app.component.ts %}
+{% raw %}
+import { Component, OnInit } from '@angular/core';
+import { employeeData } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' height='315px'>
+                    <e-columns>
+                        <e-column headerText='Employee Image' width='150' textAlign='Center'>
+                            <ng-template #template let-data>
+                                <div class="image">
+                                    <img src="{{data.EmployeeID}}.png" alt="{{data.EmployeeID}}"/>
+                                </div>
+                            </ng-template>
+                        </e-column>
+                        <e-column field='FirstName' headerText='FirstName' width=100></e-column>
+                        <e-column field='LastName' headerText='Last Name' width=100></e-column>
+                        <e-column field='City' headerText='City' width=100></e-column>
+                    </e-columns>
+                </ejs-grid>`,
+})
+export class AppComponent implements OnInit {
+
+    public data?: object[];
+
+    ngOnInit(): void {
+        this.data = employeeData;
+    }
+}
+{% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/template-cs1/src/app.module.ts %}
@@ -44,7 +73,43 @@ The following example demonstrates, hot to render hyperlink column in the Grid u
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/template-cs5/src/app.component.ts %}
+{% raw %}
+import { Component, OnInit } from '@angular/core';
+import { employeeData } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' height='315px'>
+                    <e-columns>
+                        <e-column field='EmployeeID' headerText='Employee ID' width=90></e-column>
+                        <e-column field='LastName' headerText='Last Name' width=150></e-column>
+                        <e-column field='FirstName' headerText='FirstName' width=150>
+                            <ng-template #template let-data>
+                                <div>
+                                    <a href="#" (click)="onClick($event, data.FirstName)">
+                                    {{data.FirstName}}
+                                    </a>
+                                </div>
+                            </ng-template>
+                        </e-column>
+                    </e-columns>
+                </ejs-grid>`,
+})
+export class AppComponent implements OnInit {
+
+    public data?: object[];
+
+    ngOnInit(): void {
+        this.data = employeeData;
+    }
+
+    onClick(event:MouseEvent, firstName: string) {
+        var url = 'https://www.meaningofthename.com/';
+        var searchUrl = url + firstName; 
+        window.open(searchUrl);
+    }
+}
+{% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/template-cs5/src/app.module.ts %}
@@ -70,7 +135,71 @@ In the following example, we rendered the Sparkline Chart component in the Grid 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/template-cs8/src/app.component.ts %}
+{% raw %}
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { employeeData } from './datasource';
+import { Sparkline } from '@syncfusion/ej2-angular-charts';
+import { GridComponent,} from '@syncfusion/ej2-angular-grids'
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <ejs-grid #grid [dataSource]='data' height='315px' (created)="renderGridSparkline()">
+      <e-columns>
+        <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=90></e-column>
+        <e-column field='FirstName' headerText='FirstName' width=150></e-column>
+        <e-column headerText='Employee Performance Rating' width='280'>
+          <ng-template #template let-griddata>
+            <div id="spkline{{griddata.EmployeeID}}"></div>
+          </ng-template>
+        </e-column>
+      </e-columns>
+    </ejs-grid>`,
+})
+export class AppComponent implements OnInit {
+
+  public data?: object[] = employeeData;
+  @ViewChild('grid')
+  grid?: GridComponent;
+
+  public lineData: object[] = [
+    [0, 6, -4, 1, -3, 2, 5],
+    [5, -4, 6, 3, -1, 2, 0],
+    [6, 4, 0, 3, -2, 5, 1],
+    [4, -6, 3, 0, 1, -2, 5],
+    [3, 5, -6, -4, 0, 1, 2],
+    [1, -3, 4, -2, 5, 0, 6],
+    [2, 4, 0, -3, 5, -6, 1],
+    [5, 4, -6, 3, 1, -2, 0],
+    [0, -6, 4, 1, -3, 2, 5],
+    [6, 4, 0, -3, 2, -5, 1],
+  ];
+
+  ngOnInit(): void {
+  }
+
+  public getSparkData(type: string, count: number) {
+    return this.lineData[count] as number[];
+  }
+
+  public renderGridSparkline(): void {
+    setTimeout(() => {
+      const length =(this.grid as GridComponent).getDataRows().length
+      for (let i: number = 1; i <= length; i++) {
+        let line: Sparkline = new Sparkline({
+          height: '50px',
+          width: '90%',
+          lineWidth: 2,
+          valueType: 'Numeric',
+          fill: '#3C78EF',
+          dataSource: this.getSparkData('line', i)
+        });
+        line.appendTo('#spkline' + i);
+      }
+    }, 100)
+  }
+}
+{% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/template-cs8/src/app.module.ts %}
@@ -200,7 +329,60 @@ In the following code, the button element is rendered in the **Employee Data** c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/template-cs2/src/app.component.ts %}
+{% raw %}
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { employeeData, SelectedRecordDataType } from './datasource';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { DialogComponent } from '@syncfusion/ej2-angular-popups';
+
+@Component({
+    selector: 'app-root',
+    template: `
+    <ejs-grid #grid [dataSource]='data' height='315px'>
+        <e-columns>
+            <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=130></e-column>
+            <e-column field='FirstName' headerText='Name' width=120></e-column>
+            <e-column headerText='Employee Data' width='150' textAlign='Right' isPrimaryKey='true'>
+                <ng-template #template let-data>
+                    <button class="empData" (click)="showDetails(data)">View</button>
+                    <div [hidden]="!selectedRecord || selectedRecord !== data">
+                        <ejs-dialog
+                            #Dialog
+                            [visible]="false"
+                            width="50%"
+                            showCloseIcon="true"
+                            [header]="header"
+                        >
+                            <p><b>EmployeeID:</b> {{ selectedRecord?.EmployeeID }}</p>
+                            <p><b>FirstName:</b> {{ selectedRecord?.FirstName }}</p>
+                            <p><b>LastName:</b> {{ selectedRecord?.LastName }}</p>
+                        </ejs-dialog>
+                    </div>
+                </ng-template>
+            </e-column>
+        </e-columns>
+    </ejs-grid>`,
+})
+export class AppComponent implements OnInit {
+
+    public data?: object[];
+    public header?: string;
+    @ViewChild('grid')
+    public grid?: GridComponent;
+    @ViewChild('Dialog')
+    public dialog?: DialogComponent;
+    public selectedRecord?: SelectedRecordDataType;
+
+    ngOnInit(): void {
+        this.data = employeeData;
+        this.header = 'Selected Row Details';
+    }
+    showDetails(data: SelectedRecordDataType) {
+        (this.dialog as DialogComponent).visible = true;
+        this.selectedRecord = data;
+    }
+}
+{% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/template-cs2/src/app.module.ts %}
@@ -222,7 +404,38 @@ The following example demonstrates how to use a custom helper function inside th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/custom-helper-template/src/app.component.ts %}
+{% raw %}
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid #grid [dataSource]='data' [height]='300'>
+                    <e-columns>
+                        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+                        <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90>
+                        <ng-template #template let-data>
+                            {{ formatCurrency(data.Freight) }}
+                        </ng-template>
+                        </e-column>
+                        <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
+                    </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data?: object[];
+
+    public formatCurrency(value: number): string {
+        return '₹ ' + value.toFixed(3);
+    }
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+}
+{% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/custom-helper-template/src/app.module.ts %}

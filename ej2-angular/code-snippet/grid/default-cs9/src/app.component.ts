@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, employeeData } from './datasource';
-import { GridModel, GridComponent} from '@syncfusion/ej2-angular-grids';
+import { GridModel, ParentDetails, GridComponent} from '@syncfusion/ej2-angular-grids';
 
 
 @Component({
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
             { field: 'ShipName', headerText: 'Ship Name', width: 120 }
         ],
         load() {
-            (this as any).parentDetails.parentKeyFieldValue = (<{ EmployeeID?: string}>(this as any).parentDetails.parentRowData)['EmployeeID'];
+            (this.parentDetails as ParentDetails).parentKeyFieldValue = (<{ EmployeeID?: string}>(this.parentDetails as ParentDetails).parentRowData)['EmployeeID'];
         }
     };
 

@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Column, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Column, FilterSettingsModel, FilterType, GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { DropDownListComponent, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
   selector: 'app-root',
@@ -9,29 +9,29 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 })
 export class AppComponent implements OnInit {
   @ViewChild('grid') public grid?: GridComponent;
-  @ViewChild('type') public typeDropdown?: DropDownListComponent | any;
+  @ViewChild('type') public typeDropdown?: DropDownListComponent;
 
   public data?: object[];
-  public filterSettings?: any = {type:'Menu'};
-  public columnFilterSettings:any;
+  public filterSettings?: FilterSettingsModel = { type: 'Menu' };
+  public columnFilterSettings?: FilterSettingsModel;
   public fieldData: string[] | undefined;
-  public typeData: string[] =[];
+  public typeData: string[] = [];
   public column: Column | undefined;
 
   ngOnInit(): void {
     this.data = data;
   }
   dataBound() {
-    this.fieldData = this.grid?.getColumnFieldNames();
+    this.fieldData = (this.grid as GridComponent).getColumnFieldNames();
   }
-  onFieldChange(args:any): void {
-    this.typeDropdown.enabled = true;
-    this.typeData= ['Menu','CheckBox','Excel'];
-    this.column = this.grid?.getColumnByField(args.value);
- }
-  onTypeChange(args: any): void {
-    this.columnFilterSettings = { type:args.value };
+  onFieldChange(args: ChangeEventArgs): void {
+    (this.typeDropdown as DropDownListComponent).enabled = true;
+    this.typeData = ['Menu', 'CheckBox', 'Excel'];
+    this.column = (this.grid as GridComponent).getColumnByField(args.value as string);
+  }
+  onTypeChange(args: ChangeEventArgs): void {
+    this.columnFilterSettings = { type: args.value as FilterType};
     (this.column as Column).filter = this.columnFilterSettings;
-    this.grid?.refresh();
+    (this.grid as GridComponent).refresh();
   }
 }

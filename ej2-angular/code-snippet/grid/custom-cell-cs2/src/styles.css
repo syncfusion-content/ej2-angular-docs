@@ -12,3 +12,9 @@
 @import 'node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
+
+.custom-css {
+    background: #d7f0f4;
+    font-style: italic;
+    color:navy
+  }

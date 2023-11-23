@@ -13,8 +13,7 @@ import { data } from './datasource';
                         <e-column field='ShipCity' headerText='Ship City' [customAttributes]="{class: 'custom-css'}" width=130 ></e-column>
                         <e-column field='ShipName' headerText='Ship Name' textAlign='Right' width=80></e-column>
                     </e-columns>
-                </ejs-grid>`,
-    styleUrls: ['app.style.css']
+                </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 

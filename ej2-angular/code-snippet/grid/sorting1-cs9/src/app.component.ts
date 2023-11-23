@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, SortDirection } from '@syncfusion/ej2-angular-grids';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
@@ -58,16 +58,16 @@ export class AppComponent implements OnInit {
     public dropDownColumn?: DropDownListComponent;
     @ViewChild('dropdownDirection')
     public dropDownDirection?: DropDownListComponent;
-    public columns: Object[] = [
+    public columns: object[] = [
         { text: 'Order ID', value: 'OrderID' },
         { text: 'Customer ID', value: 'CustomerID' },
         { text: 'Freight', value: 'Freight' },
     ];
-    public direction: Object[] = [
+    public direction: object[] = [
         { text: 'Ascending', value: 'Ascending' },
         { text: 'Descending', value: 'Descending' },
     ];
-    public field: Object = { text: 'text', value: 'value' };
+    public field: object = { text: 'text', value: 'value' };
 
     ngOnInit(): void {
         this.sortOptions = {
@@ -79,9 +79,9 @@ export class AppComponent implements OnInit {
     }
 
     addSortColumn() {
-        this.grid?.sortColumn(
-          (this as any).dropDownColumn.value as any,
-          (this as any).dropDownDirection.value as any,
+        (this.grid as GridComponent).sortColumn(
+          (this.dropDownColumn as DropDownListComponent).value as SortDirection,
+          (this.dropDownDirection as DropDownListComponent).value as SortDirection,
           true
         );
       }
