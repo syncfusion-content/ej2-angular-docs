@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
 
-    public sortComparer = (reference: any, comparer: any, sortOrder: any) => {
+    public sortComparer = (reference: number | Date | string, comparer: number | Date | string, sortOrder: 'Ascending' | 'Descending') => {
         const referenceDate = new Date(reference);
         const comparerDate = new Date(comparer);
         if (typeof reference === 'number' && typeof comparer === 'number') {
@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
         else {
             // Default sorting for other types
             const intlCollator = new Intl.Collator(undefined, { sensitivity: 'variant', usage: 'sort' });
-            const comparisonResult = intlCollator.compare(reference, comparer);
+            const comparisonResult = intlCollator.compare(String(reference), String(comparer));
             return sortOrder === 'Ascending' ? -comparisonResult : comparisonResult;
         }
     };

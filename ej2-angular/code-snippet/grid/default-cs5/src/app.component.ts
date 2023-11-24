@@ -6,7 +6,7 @@ import {  GridModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='parentData' height='315px' [childGrid]='childGrid'>
+    template: `<ejs-grid [dataSource]='parentData' height='315px' [childGrid]='childGrid'>
                     <e-columns>
                         <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=80></e-column>
                         <e-column field='FirstName' headerText='FirstName' width=100></e-column>

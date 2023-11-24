@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, Column } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { data } from './datasource';
 
 @Component({
@@ -27,11 +28,11 @@ export class AppComponent implements OnInit {
         { text: 'Center', value: 'Center' },
         { text: 'Justify', value: 'Justify' },
     ];
-    public changeAlignment(args: any): void {
-        (this.grid as any).columns.forEach((col: any) => {
-            col.textAlign = (args as any).value;
+    public changeAlignment(args: ChangeEventArgs): void {
+        (this.grid as GridComponent).columns.forEach((col: Column) => {
+            col.textAlign = args.value as string;
         });
-        (this.grid as any).refreshColumns();
+        (this.grid as GridComponent).refreshColumns();
     }
     ngOnInit(): void {
         this.data = data;

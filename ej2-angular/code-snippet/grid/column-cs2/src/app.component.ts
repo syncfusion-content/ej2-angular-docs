@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GridComponent,Column } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 
 
@@ -33,13 +33,13 @@ export class AppComponent implements OnInit {
             { field: 'OrderDate', headerText: 'Order Date', width: 120, format: 'yMd' },
           ];
           newColumns.forEach((col) => {
-            (this.grid as any).columns.push(col as any);
+            (this.grid as GridComponent).columns.push(col as Column);
           });
-          (this.grid as any).refreshColumns();
+          (this.grid as GridComponent).refreshColumns();
     }
     deleteColumns(): void {
-        (this.grid as any).columns.pop();
-        (this.grid as any).refreshColumns();
+        (this.grid as GridComponent).columns.pop();
+        (this.grid as GridComponent).refreshColumns();
     }
 }
 

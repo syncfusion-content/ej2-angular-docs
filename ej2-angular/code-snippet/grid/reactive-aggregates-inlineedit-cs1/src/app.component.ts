@@ -2,7 +2,8 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel, IEditCell, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
+import { EditSettingsModel, IEditCell, GridComponent, ToolbarItems, ActionEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -30,30 +31,32 @@ export class AppComponent implements OnInit {
 
     public data?: object[];
     public editSettings?: EditSettingsModel;
-    public toolbar?: string[];
+    public toolbar?: ToolbarItems[];
     public selectedRecord: object = {};
     public numericParams?: IEditCell;
     @ViewChild('grid') public gridObj?: GridComponent;
 
-    actionBegin(args: any): void {
-        if ((args as any).requestType === 'beginEdit') {
+    actionBegin({ requestType, rowData }: ActionEventArgs): void {
+        if (requestType === 'beginEdit') {
             this.selectedRecord = {};
-            this.selectedRecord = (args as any).rowData;
+            this.selectedRecord = rowData as object;
         }
     }
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowDeleting: true, mode: 'Normal' };
         this.toolbar = ['Delete', 'Update', 'Cancel'];
-        this.numericParams = { params: { change: ((args: any) => {
-              const Freight = 'Freight';
-              (this.selectedRecord as any)[Freight] = (args as any).value;
-        (this.gridObj as any).aggregateModule.refresh(this.selectedRecord);
-        }).bind(this)}
+        this.numericParams = {
+            params: {
+                change: ((args: ChangeEventArgs) => {
+                    (this.selectedRecord as ItemType).Freight = args.value as string;
+                    (this.gridObj as GridComponent).aggregateModule.refresh(this.selectedRecord);
+                }).bind(this)
+            }
         };
     }
-  
+
 }
-
-
-
+interface ItemType{
+    Freight:string
+}

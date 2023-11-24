@@ -104,13 +104,13 @@ In this below code, we have disabled resize for **Ship City** column.
 
 ## Resizing modes
 
-The Syncfusion Grid component provides a [ResizeSettingsModel](https://helpej2.syncfusion.com/angular/documentation/api/grid/resizeSettingsModel/#resizesettingsmodel) interface for configuring the resizing behavior of grid columns. The interface includes a property named [mode](https://helpej2.syncfusion.com/angular/documentation/api/grid/resizeSettings/#mode) which is of the type [ResizeMode](https://helpej2.syncfusion.com/angular/documentation/api/grid/resizeMode). The `ResizeMode` is an enum that determines the available resizing modes for the grid columns. There are two resizing modes available for grid columns in Grid:
+The Syncfusion Grid component provides a [ResizeSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeSettingsModel/#resizesettingsmodel) interface for configuring the resizing behavior of grid columns. The interface includes a property named [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeSettings/#mode) which is of the type [ResizeMode](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeMode). The `ResizeMode` is an enum that determines the available resizing modes for the grid columns. There are two resizing modes available for grid columns in Grid:
 
 1. `Normal Mode`: This mode does not adjust the columns to fit the remaining space. When the sum of column width is less than the grid's width, empty space will be present to the right of the last column. When the sum of column width is greater than the grid's width, columns will overflow, and a horizontal scrollbar will appear.
 
 2. `Auto Mode`: This mode automatically resizes the columns to fill the remaining space. When the sum of column width is less than the grid's width, the columns will be automatically expanded to fill the empty space. Conversely, when the sum of column width is greater than the grid's width, the columns will be automatically contracted to fit within the available space.
 
-The following example demonstrates how to set the [resizeSettings.mode](https://helpej2.syncfusion.com/angular/documentation/api/grid/resizeSettings/#mode) property to **Normal** and **Auto** on changing the dropdown value using the [change](https://helpej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component.
+The following example demonstrates how to set the [resizeSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/resizeSettings/#mode) property to **Normal** and **Auto** on changing the dropdown value using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -126,7 +126,7 @@ The following example demonstrates how to set the [resizeSettings.mode](https://
   
 {% previewsample "page.domainurl/samples/grid/resize-cs8" %}
 
-> When the [autoFit](https://helpej2.syncfusion.com/angular/documentation/api/grid/#autofit) property is set to **true**, the Grid will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `autoFit` property is set to **true**, the Grid will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the Grid will ignore any empty space.
+> When the [autoFit](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofit) property is set to **true**, the Grid will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `autoFit` property is set to **true**, the Grid will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the Grid will ignore any empty space.
 
 ## Touch interaction
 
@@ -148,9 +148,9 @@ The following screenshot represents the column resizing on the touch device.
 
 ## Resizing column externally
 
-Grid provides the ability to resize columns using an external button click. This can be achieved by changing the [width](https://helpej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#width) property of the column and refreshing the grid using the [refreshColumns](https://helpej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) method in the external button click function.
+Grid provides the ability to resize columns using an external button click. This can be achieved by changing the [width](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#width) property of the column and refreshing the grid using the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) method in the external button click function.
 
-The following example demonstrates how to resize the columns in a grid. This is done by using the [change](https://helpej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component by change the [width](https://helpej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#width) property of the selected column. This is accomplished using the  [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnbyfield) on external button click. Then, the [refreshColumns](https://helpej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) method is called on the grid component to update the displayed columns based on user interaction.
+The following example demonstrates how to resize the columns in a grid. This is done by using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component by change the [width](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#width) property of the selected column. This is accomplished using the  [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnbyfield) on external button click. Then, the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) method is called on the grid component to update the displayed columns based on user interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -166,7 +166,7 @@ The following example demonstrates how to resize the columns in a grid. This is 
   
 {% previewsample "page.domainurl/samples/grid/resize-cs6" %}
 
->  The [refreshColumns](https://helpej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) method is used to refresh the grid after the column widths are updated. Column resizing externally is useful when you want to provide a custom interface to the user for resizing columns.
+>  The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) method is used to refresh the grid after the column widths are updated. Column resizing externally is useful when you want to provide a custom interface to the user for resizing columns.
 
 ## Resizing events
 

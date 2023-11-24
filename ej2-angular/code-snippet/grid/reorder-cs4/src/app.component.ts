@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ColumnDragEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ColumnDragEventArgs, Column } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',
@@ -25,28 +25,26 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.data = data;
+    this.message = '';
   }
-  columnDrop(args: ColumnDragEventArgs) {
+  columnDrop({ column }: ColumnDragEventArgs) {
     this.message = `columnDrop event triggered`;
-    if ((args as any).column.allowReordering == true) {
-      (this.gridObj as any).getColumnByField((args as any).column.field).customAttributes = {
+    if ((column as Column).allowReordering == true) {
+      (this.gridObj as GridComponent).getColumnByField((column as Column).field).customAttributes = {
         class: 'customcss',
       };
     }
   }
-  columnDragStart(args: ColumnDragEventArgs) {
+  columnDragStart({ column }: ColumnDragEventArgs) {
     this.message = `columnDragStart event triggered`;
-    if ((args as any).column.field == 'OrderID') {
-      (this.gridObj as any).getColumnByField((args as any).column.field).allowReordering = false;
+    if ((column as Column).field == 'OrderID') {
+      (this.gridObj as GridComponent).getColumnByField((column as Column).field).allowReordering = false;
     }
   }
-  columnDrag(args: ColumnDragEventArgs) {
-    var index = (args as any).target.getAttribute('data-colIndex');
+  columnDrag({ column, target }: ColumnDragEventArgs) {
+    var index = (target as Element).getAttribute('data-colIndex');
     if (index) {
-      this.message = `columnDrag event is triggered. ` + (args as any).column.headerText + ` column is dragged to index ` + index;
+      this.message = `columnDrag event is triggered. ` + (column as Column).headerText + ` column is dragged to index ` + index;
     }
   }
 }
-
-
-

@@ -26,7 +26,7 @@ public data?: object[];
         this.data = data;
     }
     dataBound() {
-        (this.grid as any).autoFitColumns(['ShipAddress', 'ShipName']);
+        (this.grid as GridComponent).autoFitColumns(['ShipAddress', 'ShipName']);
     }
 }
 

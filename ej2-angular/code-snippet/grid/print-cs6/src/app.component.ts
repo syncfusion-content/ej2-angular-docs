@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, customerData } from './datasource';
-import { DetailRowService, ToolbarService, GridComponent, ToolbarItems, RowSelectEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ToolbarItems, RowSelectEventArgs, PrintEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -35,21 +35,27 @@ export class AppComponent implements OnInit {
 
     public masterdata?: Object[];
 
-    public data: any = data;
+    public data: object[] = data;
 
     ngOnInit(): void {
-        this.masterdata = customerData.filter((e: any) => (this.names as any).indexOf(e.CustomerID) !== -1);
+        this.masterdata = customerData.filter((e: object) => (this.names as string[]).indexOf((e as ItemType).CustomerID) !== -1);
+
         this.toolbar = ['Print'];
     }
     public onRowSelected(args: RowSelectEventArgs): void {
-        let selectedRecord: any = (args as any).data as any;
-        (this.detailgrid as GridComponent).dataSource = data.filter((record: any) => record.CustomerName === selectedRecord.ContactName).slice(0, 5);
-        (document.getElementById('key') as any).innerHTML = selectedRecord.ContactName;
+        let selectedRecord: object = args.data as object;
+        (this.detailgrid as GridComponent).dataSource = data.filter((record: object) => (record as ItemType).CustomerName === (selectedRecord as ItemType).ContactName).slice(0, 5);
+        (document.getElementById('key') as Element).innerHTML = (selectedRecord as ItemType).ContactName;
     }
-    public beforePrint(args: any): void {
+    public beforePrint(args: PrintEventArgs): void {
         let customElement = document.createElement('div');
         customElement.innerHTML = document.getElementsByClassName('e-statustext')[0].innerHTML + (this.detailgrid as GridComponent).element.innerHTML;
         customElement.appendChild(document.createElement('br'));
-        (args as any).element.append(customElement);
+        (args.element as Element).append(customElement);
     }
 }
+interface ItemType{
+    CustomerName:string,
+    CustomerID:string,
+    ContactName:string
+  }

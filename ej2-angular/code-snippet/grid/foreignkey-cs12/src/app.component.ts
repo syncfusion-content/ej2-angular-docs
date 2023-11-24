@@ -22,13 +22,14 @@ export class AppComponent implements OnInit {
     public data?: DataManager;
     public employeeData?: DataManager;
 
+
     ngOnInit(): void {
-        (this as any).data = new DataManager({
+        this.data = new DataManager({
             url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders/',
             adaptor: new ODataV4Adaptor(),
             crossDomain: true,
         });
-        (this as any).employeeData = new DataManager({
+        this.employeeData = new DataManager({
             url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Employees/',
             adaptor: new ODataV4Adaptor(),
             crossDomain: true,

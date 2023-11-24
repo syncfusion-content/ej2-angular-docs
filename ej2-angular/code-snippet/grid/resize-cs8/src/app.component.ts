@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ResizeMode } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { data } from './datasource';
 
 @Component({
@@ -28,7 +29,7 @@ export class AppComponent implements OnInit {
   public data?: object[];
   @ViewChild('grid')
   public grid?: GridComponent;
-  public ddlData: Object[] = [
+  public ddlData: object[] = [
     { text: 'Normal', value: 'Normal' },
     { text: 'Auto', value: 'Auto' },
   ];
@@ -37,8 +38,8 @@ export class AppComponent implements OnInit {
     this.data = data;
   }
 
-  valueChange(args: any): void {
-    (this.grid as any).resizeSettings.mode = (args as any).value;
+  valueChange(args: ChangeEventArgs): void {
+    (this.grid as GridComponent).resizeSettings.mode = (args.value as ResizeMode);
   }
 }
 
