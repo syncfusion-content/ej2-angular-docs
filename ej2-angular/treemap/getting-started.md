@@ -90,7 +90,7 @@ Now use the <code>app-container</code> in the index.html instead of default one.
 npm start
 ```
 
-The below example shows a basic map.
+The below example shows a basic treemap.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -105,24 +105,11 @@ export class AppComponent {
 }
 ```
 
-As we didn't specify shapeData to the treemap, no shape will be rendered and only an empty SVG element is appended to the treemap container.
-
-## Module Injection
-
-TreeMap component is segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature Service in the AppModule.  Find the modules available in TreeMap and its description as follows.
-
-* TreeMapHighlightService - Inject this provider to use highlight feature.
-* TreeMapSelectionService - Inject this provider to use selection feature.
-* TreeMapLegendService - Inject this provider to use legend feature.
-* TreeMapTooltipService - Inject this provider to use tooltip series.
-
-In the current application, we are going to modify the above basic treemap to visualize international airport count in South America.
-
-In this demo, we are just rendering TreeMap with labels. For this there is no need to import any modules.
+Since we did not specify [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treemap/#datasource) for the TreeMap, no items will be rendered and only an empty SVG element will be appended to the treemap container.
 
 ## Render TreeMap
 
-This session explains how to render TreeMap with datasource.
+This section explains how to render a TreeMap with a data source. In this example, we are going to modify the above basic treemap to visualize international airport count in South America.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -138,7 +125,16 @@ This session explains how to render TreeMap with datasource.
   
 {% previewsample "page.domainurl/samples/treemap/getting-started/treemap-cs15" %}
 
-Here TreeMap is created with the datasource and set [weightValuePath](https://ej2.syncfusion.com/angular/documentation/api/treemap/#weightvaluepath) as Count field in the datasouce. You can customize the leaf level TreeMap items using [leafItemSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/). Properties like [fill](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#fill), [border](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#border), [labelPosition](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#labelposition) can be changed using `leafItemSettings`.
+Here, TreeMap is displayed using a data source, and the [weightValuePath](https://ej2.syncfusion.com/angular/documentation/api/treemap/#weightvaluepath) property is set to the data source's **Count** field as the value. The leaf level items of TreeMap can be customized using [leafItemSettings](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/). `leafItemSettings` allows you to change properties such as [fill](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#fill), [border](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#border) and [labelPosition](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafItemSettingsModel/#labelposition).
+
+## Module Injection
+
+The TreeMap component is divided into individual feature-based modules. To use a specific feature, you must inject its **Service** module into the `AppModule`. The modules available in TreeMap, as well as their descriptions, are listed below.
+
+* TreeMapHighlightService - Inject this provider to use highlight feature.
+* TreeMapSelectionService - Inject this provider to use selection feature.
+* TreeMapLegendService - Inject this provider to use legend feature.
+* TreeMapTooltipService - Inject this provider to use tooltip feature.
 
 ## Apply Color Mapping
 

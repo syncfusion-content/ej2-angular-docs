@@ -10,7 +10,31 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Badge component
 
-The following section explains the steps required to create a simple badge component using styles and its basic usage.
+The following section explains the steps required to create a simple **Badge** component using styles and its basic usage.
+
+## Setting up angular project
+
+Angular provides the easiest way to set angular CLI projects using Angular CLI tool.
+
+Install the CLI application globally to your machine by using following command.
+
+```sh
+npm install -g @angular/cli
+```
+
+Create a new angular application
+
+```sh
+ng new syncfusion-angular-app
+```
+
+Navigate to the created project folder by using following command.
+
+```sh
+cd syncfusion-angular-app
+```
+
+>Refer [Syncfusion Angular Getting Started](../getting-started/angular-cli) section to know more about setting up `angular-cli` project.
 
 ## Dependencies
 
@@ -19,33 +43,6 @@ The `Badge` component is pure CSS component which doesn't need specific dependen
 ```javascript
 |-- @syncfusion/ej2-notifications
 ```
-
-## Installation and configuration
-
-* To setup basic `Angular` sample use the following commands.
-
-  ```javascript
-  git clone https://github.com/angular/quickstart.git quickstart
-  cd quickstart
-  npm install
-  ```
-
- For more information, refer to [Angular sample setup](https://angular.io/guide/setup-local).
-
-* Install Syncfusion notifications package using below command.
-
-  ```javascript
-  npm install @syncfusion/ej2-notifications --save
-  ```
-
-* The Badge component CSS files are available in the `ej2-notifications` package folder. This can be referenced in your application using the following code.
-
-  `[src/styles.css]`
-
-  ```css
-  @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-  @import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
-  ```
 
 ## Installing Syncfusion notifications Package
 
@@ -83,7 +80,19 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Add badge into application
+## Adding style sheet to the application
+
+To render the Badge component, import the Badge and its dependent component's styles as given below in `[src/styles.css]`.
+
+```css
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-notifications/styles/material.css';
+```
+
+>Note: To refer the combined component styles, use Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
+
+## Add Badge into application
 
 Modify the `template` in `app.component.ts` file to render the Badge component.
 
@@ -124,6 +133,4 @@ The following example shows a basic badge component.
   
 {% previewsample "page.domainurl/samples/badge/getting-started-cs1" %}
 
-## See Also
-
-[Types of Badge](./types)
+> You can refer to our [Angular Badge](https://www.syncfusion.com/angular-components/angular-badge) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Badge example](https://ej2.syncfusion.com/angular/demos/#/material/badge/default) to knows how to present and manipulate data.
