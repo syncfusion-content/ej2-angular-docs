@@ -14,7 +14,7 @@ The **SymbolPalette** displays a collection of palettes. The palette shows a s
 
 ## Create symbol palette
 
-The [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#height-number) properties of the symbol palette allows to define the size of the symbol palette.
+The [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette/#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette/#height-number) properties of the symbol palette allows to define the size of the symbol palette.
 
 ```typescript
 @Component({
@@ -28,13 +28,13 @@ export class AppComponent {}
 
 ## Add palettes to SymbolPalette
 
-A palette allows to display a group of related symbols and it textually annotates the group with its header. A [`Palettes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#palettes-PaletteModel[]) can be added as a collection of symbol groups.
+A palette allows to display a group of related symbols and it textually annotates the group with its header. A [`Palettes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette/#palettes-PaletteModel[]) can be added as a collection of symbol groups.
 
-The collection of predefined symbols can be added in palettes using the [`symbols`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#symbols-[]) property.
+The collection of predefined symbols can be added in palettes using the [`symbols`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette/#symbols-[]) property.
 
-To initialize a palette, define a JSON object with the property [`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#id-string) that is unique ID is set to the palettes.
+To initialize a palette, define a JSON object with the property [`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette/#id-string) that is unique ID is set to the palettes.
 
-The [`allowDrag`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette#allowdrag) property allows the user to drag the symbol from the symbol palette.
+The [`allowDrag`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette/#allowdrag) property allows the user to drag the symbol from the symbol palette.
 
 The following code example illustrates how to define a palette and how its added to symbol palette.
 
@@ -56,15 +56,15 @@ The following code example illustrates how to define a palette and how its added
 
 Palettes can be annotated with its header texts.
 
-The [`title`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#title-string) displayed as the header text of palette.
+The [`title`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette/#title-string) displayed as the header text of palette.
 
-The [`expanded`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#expanded-boolean) property of palette allows to expand/collapse its palette items.
+The [`expanded`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette/#expanded-boolean) property of palette allows to expand/collapse its palette items.
 
-The [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#height-number) property of palette sets the height of the symbol group.
+The [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette/#height-number) property of palette sets the height of the symbol group.
 
-The [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#iconCss-string) property sets the content of the symbol group.
+The [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette/#iconCss-string) property sets the content of the symbol group.
 
-The [`description`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolDescription#description) defines the text to be displayed and how that is to be handled in `getSymbolInfo`.
+The [`description`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolDescription/#description) defines the text to be displayed and how that is to be handled in `getSymbolInfo`.
 
 Also, any HTML element into a palette header can be embedded by defining the getSymbolInfo property.
 
@@ -106,7 +106,7 @@ In the following code example, the basic shapes palette is restricted from getti
 
 ## Stretch the symbols into the palette
 
-The [`fit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolInfo#fit-boolean) property defines whether the symbol has to be fit inside the size, that is defined by the symbol palette. For example, when you resize the rectangle in the symbol, ratio of the rectangle size has to be maintained rather changing into square shape. The following code example illustrates how to customize the symbol size.
+The [`fit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolInfo/#fit-boolean) property defines whether the symbol has to be fit inside the size, that is defined by the symbol palette. For example, when you resize the rectangle in the symbol, ratio of the rectangle size has to be maintained rather changing into square shape. The following code example illustrates how to customize the symbol size.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -150,8 +150,8 @@ The [`symbolMargin`](https://ej2.syncfusion.com/angular/documentation/api/diagra
 
 ## Symbol preview
 
-The symbol preview size of the palette items can be customized using [`symbolPreview`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview).
-The [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview#height-number) properties of SymbolPalette enables you to define the preview size to all the symbol palette items. The [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview#offset-PointModel) of the dragging helper relative to the mouse cursor.
+The symbol preview size of the palette items can be customized using [`symbolPreview`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview/).
+The [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview/#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview/#height-number) properties of SymbolPalette enables you to define the preview size to all the symbol palette items. The [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview/#offset-PointModel) of the dragging helper relative to the mouse cursor.
 
 The following code example illustrates how to change the preview size of a palette item.
 
@@ -248,7 +248,7 @@ Differentiate the tooltips between symbols in the symbol palette and dropped nod
 
 However, to provide distinct tooltips for symbols in the palette and dropped nodes, capture the dragEnter event and assign specific tooltips dynamically.  
 
-When a symbol is dragged from the symbol palette and enters the diagram canvas, the [`DragEnter`] [`IDragEnterEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragEnterEventArgs) event is triggered. Within this event, you can define a new tooltip for the dropped node. By assigning custom tooltip content to the Tooltip property of the node, you can provide a distinct tooltip that is specific to the dropped node.
+When a symbol is dragged from the symbol palette and enters the diagram canvas, the [`DragEnter`] [`IDragEnterEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragEnterEventArgs/) event is triggered. Within this event, you can define a new tooltip for the dropped node. By assigning custom tooltip content to the Tooltip property of the node, you can provide a distinct tooltip that is specific to the dropped node.
 
 The following image illustrates the differentiation of tooltips displayed in the Symbol Palette and the Diagram.
 
@@ -283,15 +283,15 @@ Palette interaction notifies the element enter, leave, and dragging of the symbo
 
 ## DragEnter
 
-[`DragEnter`] [`IDragEnterEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragEnterEventArgs) notifies, when the element enter into the diagram from symbol palette.
+[`DragEnter`] [`IDragEnterEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragEnterEventArgs/) notifies, when the element enter into the diagram from symbol palette.
 
 ## DragLeave
 
-[`DragLeave`] [`IDragLeaveEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragLeaveEventArgs) notifies, when the element leaves from  the diagram.
+[`DragLeave`] [`IDragLeaveEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragLeaveEventArgs/) notifies, when the element leaves from  the diagram.
 
 ## DragOver
 
-[`DragOver`] [`IDragOverEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragOverEventArgs) notifies, when an element drag over another diagram element.
+[`DragOver`] [`IDragOverEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragOverEventArgs/) notifies, when an element drag over another diagram element.
 
 >Note: The diagram provides support to cancel the drag and drop operation from the symbol palette to the diagram when the ESC key is pressed.
 

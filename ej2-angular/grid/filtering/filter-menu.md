@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The filter menu in the Angular Grid component allows you to enable filtering and provides a user-friendly interface for filtering data based on column types and operators.
 
-To enable the filter menu, you need to set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings) property to **Menu**. This property determines the type of filter UI that will be rendered. The filter menu UI allows you to apply filters using different operators.
+To enable the filter menu, you need to set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/) property to **Menu**. This property determines the type of filter UI that will be rendered. The filter menu UI allows you to apply filters using different operators.
 
 Here is an example that demonstrates the usage of the filter menu in the Syncfusion Angular Grid:
 
@@ -128,7 +128,7 @@ Here is an example that demonstrates how to perform filtering by multiple keywor
 
 ## Filter menu events
 
-The Syncfusion Angular Grid offers the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) events, which provide information about the actions being performed. Within the event handlers, you receive an argument named `requestType`. This argument specifies the [action](https://ej2.syncfusion.com/angular/documentation/api/grid/action/) that is being executed, such as `filterbeforeopen`, `filterafteropen`, or `filtering`. By analyzing this action type, you can implement custom logic or showcase messages.
+The Syncfusion Angular Grid offers the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) events, which provide information about the actions being performed. Within the event handlers, you receive an argument named `requestType`. This argument specifies the [action](https://ej2.syncfusion.com/angular/documentation/api/grid/action/) that is being executed, such as `filterbeforeopen`, `filterafteropen`, or `filtering`. By analyzing this action type, you can implement custom logic or showcase messages.
 
 **filtering** - Defines current action as filtering.
 **filterbeforeopen** - Defines current action as filter dialog before open.
@@ -172,4 +172,4 @@ When using the filter menu, the UI displays operators for all columns based on t
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/filtering#wildcard-and-like-operator-filter)
