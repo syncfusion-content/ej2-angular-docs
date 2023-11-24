@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Angular Image Editor Component | Syncfusion
-description: Learn here all about getting started with Syncfusion Essential Angular Image Editor component, it's elements and more.
+description: Checkout and learn about getting started with Angular Image Editor component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
