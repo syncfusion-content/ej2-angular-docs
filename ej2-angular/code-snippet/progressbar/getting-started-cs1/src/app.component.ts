@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 import { AnimationModel } from '@syncfusion/ej2-progressbar';
 
 @Component({
-    selector: 'app-container',
+    selector: 'my-app',
     // specifies the template string for the Progressbar component
     template: `<ejs-progressbar id='percentage'  type='Linear' height='160' [value]='value' [animation]='animation'> </ejs-progressbar>`
 })

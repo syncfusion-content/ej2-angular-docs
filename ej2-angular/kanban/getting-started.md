@@ -10,12 +10,11 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Kanban component
 
-This section briefly explains how to create **Kanban** component and configure its available functionalities in Angular Environment.
+This section explains the steps required to create a simple Angular Kanban component and configure its available functionalities.
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI use the following command.
+Use [`Angular CLI`](https://github.com/angular/angular-cli) to setup the Angular applications. To install Angular CLI, use the following command.
 
 ```bash
 npm install -g @angular/cli
@@ -23,7 +22,7 @@ npm install -g @angular/cli
 
 ## Create an Angular Application
 
-Start a new Angular application using below Angular CLI command.
+Start a new Angular application using the following Angular CLI command.
 
 ```bash
 ng new my-app
@@ -32,15 +31,15 @@ cd my-app
 
 ## Installing Syncfusion Kanban package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. Get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion provides two types of package structures for Angular components,
+Currently, Syncfusion provides two types of package structures for Angular components. They are:
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the following command.
 
 Add [`@syncfusion/ej2-angular-kanban`](https://www.npmjs.com/package/@syncfusion/ej2-angular-kanban/v/20.2.38) package to the application.
 
@@ -50,7 +49,7 @@ npm install @syncfusion/ej2-angular-kanban --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
+For Angular version below 12, use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package, use the following command.
 
 Add [`@syncfusion/ej2-angular-kanban@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-kanban/v/20.2.38-ngcc) package to the application.
 
@@ -58,7 +57,7 @@ Add [`@syncfusion/ej2-angular-kanban@ngcc`](https://www.npmjs.com/package/@syncf
 npm install @syncfusion/ej2-angular-kanban@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as follows.
 
 ```bash
 @syncfusion/ej2-angular-kanbanr:"20.2.38-ngcc"
@@ -66,7 +65,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering Kanban Module
+## Adding Kanban Module
 
 Import Kanban module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-kanban` [src/app/app.module.ts].
 
@@ -88,9 +87,7 @@ export class AppModule { }
 
 ## Adding CSS reference
 
-Kanban CSS files are available in the ej2-angular-kanban package folder. This can be referenced in your application using the following code.
-
-`src/styles/styles.css`
+Add Kanban component’s styles as given in the following `styles.css.`
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -103,9 +100,9 @@ Kanban CSS files are available in the ej2-angular-kanban package folder. This ca
 @import '../node_modules/@syncfusion/ej2-angular-kanban/styles/material.css';
 ```
 
-## Initialize the Kanban
+## Add Kanban component
 
-Modify the template in [src/app/app.component.ts] file to render the `ej2-angular-kanban` component.
+Modify the template in the [src/app/app.component.ts] file to render the Kanban component. Add the Angular Kanban by using the `<ejs-kanban>` selector in the `template` section of the app.component.ts file.
 
 `src/app/app.component.ts`
 
@@ -127,13 +124,15 @@ import { Component } from '@angular/core';
 export class AppComponent { }
 ```
 
-Now, run the application in the browser using the following command.
+## Run the application
 
-```sh
-npm start
+Use the following command to run the application in the browser.
+
+```bash
+ng serve --open
 ```
 
-The output will display the kanban header.
+The output will appear as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
