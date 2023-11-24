@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Angular Sidebar Component | Syncfusion
-description: Learn here all about getting started with Syncfusion Essential Angular Sidebar component, it's elements and more.
+description: Checkout and learn about getting started with Angular Sidebar component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
