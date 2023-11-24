@@ -26,7 +26,7 @@ This article describes the most common installation errors, as well as the cause
 
 **Reason** <br /> You are attempting to use a Trial unlock key to unlock the licensed installer.
 
-**Suggested solution** <br /> Only a licensed unlock key can unlock a licensed installer. So, to unlock the Licensed installer, use the Licensed unlock key. To generate the licensed unlock key, refer to [this](https://www.syncfusion.com/kb/2326/how-to-generate-syncfusion-setup-unlock-key-from-syncfusion-support-account) article.
+**Suggested solution** <br /> Only a licensed unlock key can unlock a licensed installer. So, to unlock the Licensed installer, use the Licensed unlock key. To generate the licensed unlock key, refer to [this](https://support.syncfusion.com/kb/article/2757/how-to-generate-syncfusion-setup-unlock-key-from-syncfusion-support-account) article.
 
 ## License has Expired
 
@@ -42,7 +42,7 @@ This article describes the most common installation errors, as well as the cause
 
 1. You can renew your subscription [here](https://www.syncfusion.com/account/my-renewals).
 
-2. You can get a new license [here](https://www.syncfusion.com/sales/products).
+2. You can get a new license [here](https://www.syncfusion.com/sales/teamlicense).
 
 3. You can reach out to our sales team by emailing sales@syncfusion.com.
 
@@ -71,7 +71,7 @@ The following are possible causes of this error:
 
 **Suggested solution** <br />
 
-1. You can get a new license [here](https://www.syncfusion.com/sales/products).
+1. You can get a new license [here](https://www.syncfusion.com/sales/teamlicense).
 
 2. Contact your account administrator.
 
