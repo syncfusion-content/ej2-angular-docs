@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Toast component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Toast component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular Toast Component | Syncfusion
+description: Checkout and learn about getting started with Angular Toast component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Toast component
+# Getting Started with Angular Toast Component
 
 This section briefly explains about how to create a simple **Toast** and configure its available functionalities in Angular using Angular quickstart.
 
