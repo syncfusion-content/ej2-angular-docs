@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Angular Query Builder Component | Syncfusion
-description: Learn here all about getting started with Syncfusion Essential Angular Query Builder component, it's elements and more.
+description: Checkout and learn about getting started with Angular Query Builder component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
