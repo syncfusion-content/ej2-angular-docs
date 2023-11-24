@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { SortService, GroupService, ColumnMenuService, PageService, FilterService } from '@syncfusion/ej2-angular-grids';
-import { GroupSettingsModel, FilterSettingsModel,ColumnMenuClickEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GroupSettingsModel, FilterSettingsModel, ColumnMenuClickEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public groupOptions?: GroupSettingsModel;
     public filterSettings?: FilterSettingsModel;
-    public columnMenuItems: any = [
+    public columnMenuItems: object = [
         'SortAscending',
         'SortDescending',
         'Group',
@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
         this.groupOptions = { showGroupedColumn: true };
         this.filterSettings = { type: 'CheckBox' };
     }
-    public columnMenuClick(args:ColumnMenuClickEventArgs) {
+    public columnMenuClick(args: ColumnMenuClickEventArgs) {
         if (args.item.id === 'option1') {
             // custom function
         }

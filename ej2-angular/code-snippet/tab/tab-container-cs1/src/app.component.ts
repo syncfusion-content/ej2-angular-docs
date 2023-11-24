@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 import { TabComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-    selector: 'app-container',
+    selector: 'app-root',
         template: `<ejs-tab id="element">
             <div class="e-tab-header">
                 <div>Twitter </div>

@@ -1,13 +1,14 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
   selector: 'app-root',
   template: `
         <div style="padding: 0px 0px 20px 0px">
         <label>Enable/Disable column selection</label>
-        <ejs-switch id="switch" [(checked)]="enbleToggleSelection" (change)="toggleColumnSelection()">
+        <ejs-switch id="switch"  (change)="toggleColumnSelection($event)">
         </ejs-switch>
         </div>
         <div style="padding: 20px 0px 0px 0px">
@@ -28,15 +29,20 @@ export class AppComponent implements OnInit {
 
   public data?: object[];
   public selectionOptions?: SelectionSettingsModel;
-  public enableToggleSelection = true;
-  @ViewChild('grid') grid!: GridComponent;
+  @ViewChild('grid') grid?: GridComponent;
 
   ngOnInit(): void {
     this.data = data;
-    this.selectionOptions = { type: 'Multiple',mode: 'Both' };
+    this.selectionOptions = { type: 'Multiple', mode: 'Both' };
   }
 
-  toggleColumnSelection(): void {
-    (this as any).grid.selectionSettings.enableToggle = this.enableToggleSelection;
+  toggleColumnSelection(args: ChangeEventArgs): void {
+    (this.grid as GridComponent).selectionSettings.enableToggle = !(args.checked as boolean);
   }
 }
+
+
+
+
+
+

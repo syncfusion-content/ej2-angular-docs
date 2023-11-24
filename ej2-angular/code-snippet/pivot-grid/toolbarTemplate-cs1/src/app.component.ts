@@ -1,11 +1,5 @@
-
-
-import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import {
-    IDataOptions, PivotView, FieldListService, CalculatedFieldService,
-    ToolbarService, ConditionalFormattingService, IDataSet,
-    NumberFormattingService
-} from '@syncfusion/ej2-angular-pivotview';
+import { Component, ViewChild } from '@angular/core';
+import { IDataOptions, PivotView, ToolbarService, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 import { enableRipple } from '@syncfusion/ej2-base';
 import { Pivot_Data } from './datasource';
@@ -23,9 +17,9 @@ enableRipple(false);
     <div id='template'>
         <div> 
             <div><button ejs-button id='expandall' class="e-flat" (click)="enablertl()">Expand All</button></div>
-                <div><button ejs-button id='collapseall'  class="e-flat" (click)="disableRtl()">Collapse All</button></div>
-    </div>
-</div></div>`
+            <div><button ejs-button id='collapseall'  class="e-flat" (click)="disableRtl()">Collapse All</button></div>
+        </div>
+    </div></div>`
 })
 
 export class AppComponent {
@@ -38,13 +32,13 @@ export class AppComponent {
     @ViewChild('pivotview')
     public pivotObj?: PivotView;
 
-       enablertl() {
-              this.pivotObj.dataSourceSettings.expandAll=true;
-        };
+    enablertl() {
+        (this.pivotObj as PivotView).dataSourceSettings.expandAll = true;
+    };
 
-         disableRtl(){
-              this.pivotObj.dataSourceSettings.expandAll=false;
-        };
+    disableRtl(){
+        (this.pivotObj as PivotView).dataSourceSettings.expandAll = false;
+    };
 
     ngOnInit(): void {
         this.gridSettings = {
@@ -69,6 +63,6 @@ export class AppComponent {
         this.btnCollapse = new Button({ isPrimary: true });
         this.btnCollapse.appendTo('#collapseall');
     }
- }
+}
 
 

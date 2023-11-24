@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, ResizeArgs, } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ResizeArgs, Column } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 
 @Component({
@@ -33,21 +33,21 @@ export class AppComponent implements OnInit {
 
     resizeStart(args: ResizeArgs) {
         this.message = `resizeStart event triggered`;
-        if ((args as any).column.field == 'OrderID') {
-            (args as any).cancel = true;
+        if ((args.column as Column).field === 'OrderID') {
+            args.cancel = true;
         }
     }
 
-    resizing(args: any) {
+    resizing(args: ResizeArgs) {
         this.message = `resizing event triggered`;
     }
     resizeStop(args: ResizeArgs) {
         this.message = `resizeStop event triggered`;
-        const headerCell = (this.grid as any).getColumnHeaderByField((args as any).column.field);
+        const headerCell = (this.grid as GridComponent).getColumnHeaderByField((args.column as Column).field);
         headerCell.classList.add('customcss');
-        const columnCells = (this.grid as any)
+        const columnCells = (this.grid as GridComponent)
             .getContentTable()
-            .querySelectorAll(`[data-colindex="${(args as any).column.index}"]`);
+            .querySelectorAll(`[data-colindex="${(args.column as Column).index}"]`);
         for (let i = 0; i < columnCells.length; i++) {
             const cell = columnCells[i] as HTMLElement;
             cell.style.backgroundColor = 'rgb(43, 195, 226)';

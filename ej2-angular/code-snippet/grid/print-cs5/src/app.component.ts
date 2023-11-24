@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, employeeData } from './datasource';
+import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns'
 import { DetailRowService, GridModel, ToolbarService, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
@@ -20,8 +21,8 @@ import { DetailRowService, GridModel, ToolbarService, GridComponent } from '@syn
 export class AppComponent implements OnInit {
 
     public parentData?: object[];
-    public dropdownData?:string[] = ['All','Expanded','None'];
-    public hierarchyPrintMode:any='All';
+    public dropdownData?: string[] = ['All', 'Expanded', 'None'];
+    public hierarchyPrintMode: string = 'All';
     public childGrid: GridModel = {
         dataSource: data,
         queryString: 'EmployeeID',
@@ -38,8 +39,8 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.parentData = employeeData;
     }
-    onModeChange(args: any): void {
-        this.hierarchyPrintMode = args.value
-      }
+    onModeChange(args: ChangeEventArgs): void {
+        this.hierarchyPrintMode = args.value as string;
+    }
 
 }

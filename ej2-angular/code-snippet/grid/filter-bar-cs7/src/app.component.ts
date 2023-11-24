@@ -14,33 +14,64 @@ import {
 import { DataManager, DataUtil, Predicate, Query } from '@syncfusion/ej2-data';
 import { DatePicker } from '@syncfusion/ej2-angular-calendars';
 import { NumericTextBox } from '@syncfusion/ej2-angular-inputs';
+
 @Component({
     selector: 'app-root',
     templateUrl: 'app.template.html',
     providers: [FilterService],
 })
 export class AppComponent {
-    public pageSettings!: Object;
-    public orderidrules!: Object;
-    public templateOptionsDropDown!: IFilterUI;
-    public templateOptionsNumericTextBox!: IFilterUI;
-    public templateOptionsDatePicker!: IFilterUI;
-    public templateOptionsComboBox!: IFilterUI;
-    public templateOptionsMultiSelect!: IFilterUI;
-    public shipCountryDistinctData!: object[];
-    public shipCityDistinctData!: object[];
-    public data!: object[];
-    public dropdown!: any;
-    public option!: any;
-    public numElement!: HTMLInputElement;
-    public dateElement!: HTMLInputElement;
-    public comboelement!: any;
-    public dropInstance: any;
-    public multiselectDataSource: any;
-    public comboBoxDataSource: any;
-    public multiselectelement!: any;
+    public pageSettings?: Object;
+    public orderidrules?: Object;
+    public templateOptionsDropDown?: IFilterUI;
+    public templateOptionsNumericTextBox?: IFilterUI;
+    public templateOptionsDatePicker?: IFilterUI;
+    public templateOptionsComboBox?: IFilterUI;
+    public templateOptionsMultiSelect?: IFilterUI;
+    public shipCountryDistinctData?: object[];
+    public shipCityDistinctData?: object[];
+    public data?: object[];
+    public dropdown?: HTMLElement;
+    public numElement?: HTMLInputElement;
+    public dateElement?: HTMLInputElement;
+    public comboelement?: HTMLElement;
+    public multiselectelement?: HTMLElement;
     @ViewChild('grid')
-    public grid!: GridComponent;
+    public grid?: GridComponent;
+    public handleFilterChange(args: { element: Element; value: string }) {
+        let targetElement = parentsUntil(args.element, 'e-filtertext');
+        let columnName: string = targetElement.id.replace('_filterBarcell', '');
+        if (args.value) {
+            (this.grid as GridComponent).filterByColumn(columnName, 'equal', args.value);
+        } else {
+            (this.grid as GridComponent).removeFilteredColsByField(columnName);
+        }
+    } public multiselectFunction(args: { value: string }) {
+        var selectedValues = args.value;
+        if (selectedValues.length === 0) {
+            var OrginalData = new DataManager(this.data).executeLocal(new Query());
+            (this.grid as GridComponent).dataSource = OrginalData;
+        } else {
+            var predicate: Predicate | null = null;
+            for (let x = 0; x < selectedValues.length; x++) {
+                if (predicate === null) {
+                    predicate = new Predicate('ShipCountry', 'equal', selectedValues[x]);
+                } else {
+                    predicate = predicate.or('ShipCountry', 'equal', selectedValues[x]);
+                }
+            }
+            var filteredData = new DataManager(this.data).executeLocal(new Query().where(predicate as Predicate));
+            (this.grid as GridComponent).dataSource = filteredData;
+        }
+    }
+    public dropdownFunction(args: { value: string; item: { parentElement: { id: string } } }
+    ) {
+        if (args.value !== 'All') {
+            (this.grid as GridComponent).filterByColumn(args.item.parentElement.id.replace('_options', ''), 'equal', args.value);
+        } else {
+            (this.grid as GridComponent).removeFilteredColsByField(args.item.parentElement.id.replace('_options', ''));
+        }
+    }
 
     public ngOnInit(): void {
         this.data = data;
@@ -52,25 +83,25 @@ export class AppComponent {
 
         this.templateOptionsDropDown = {
             create: () => {
-                this.dropdown = <any>document.createElement('select');
+                this.dropdown = document.createElement('select');
                 this.dropdown.id = 'CustomerID';
 
-                this.option = <any>document.createElement('option');
-                this.option.value = 'All';
-                this.option.innerText = 'All';
-                this.dropdown.appendChild(this.option);
+                var option = document.createElement('option');
+                option.value = 'All';
+                option.innerText = 'All';
+                this.dropdown.appendChild(option);
 
-                this.data.forEach((item: any) => {
+                (this.data as Object[]).forEach((item: object) => {
                     const option = document.createElement('option');
-                    option.value = item.CustomerID;
-                    option.innerText = item.CustomerID;
-                    this.dropdown.appendChild(option);
+                    option.value = (item as ItemType).CustomerID;
+                    option.innerText = (item as ItemType).CustomerID;
+                    (this.dropdown as HTMLElement).appendChild(option);
                 });
                 return this.dropdown;
             },
             write: () => {
                 const dropdownlist = new DropDownList({
-                    change: dropdownFunction.bind(this),
+                    change: this.dropdownFunction.bind(this),
                 });
                 dropdownlist.appendTo(this.dropdown);
             },
@@ -96,24 +127,24 @@ export class AppComponent {
             write: (args: { column: { field: string | number | Date } }) => {
                 const datePickerObj = new DatePicker({
                     value: new Date(args.column.field),
-                    change: handleFilterChange.bind(this),
+                    change: this.handleFilterChange.bind(this),
                 });
                 datePickerObj.appendTo(this.dateElement);
             },
         };
         this.templateOptionsComboBox = {
             create: () => {
-                this.comboelement = <any>document.createElement('input');
+                this.comboelement = document.createElement('input');
                 this.comboelement.id = 'ShipCity';
                 return this.comboelement;
             },
-            write: (args: { value: any }) => {
+            write: (args: { value: string }) => {
                 const comboBox = new ComboBox({
                     value: args.value,
                     placeholder: 'Select a city',
-                    change: handleFilterChange.bind(this),
-                    dataSource: this.shipCityDistinctData.map(
-                        (item: any) => item.ShipCity
+                    change: this.handleFilterChange.bind(this),
+                    dataSource: (this.shipCityDistinctData as object[]).map(
+                        (item: object) => (item as ItemType).ShipCity
                     ),
                 });
                 comboBox.appendTo(this.comboelement);
@@ -121,17 +152,18 @@ export class AppComponent {
         };
         this.templateOptionsMultiSelect = {
             create: () => {
-                this.multiselectelement = <any>document.createElement('input');
+                this.multiselectelement = document.createElement('input');
                 this.multiselectelement.id = 'ShipCountry';
                 return this.multiselectelement;
             },
-            write: (args: { value: any }) => {
+            write: (args: { value: string[] | number[] | boolean[] | undefined }) => {
                 const multiselect = new MultiSelect({
                     value: args.value,
                     placeholder: 'Select a country',
-                    change: multiselectFunction.bind(this),
-                    dataSource: this.shipCountryDistinctData.map(
-                        (item: any) => item.ShipCountry
+                    change: this.multiselectFunction.bind(this),
+                    dataSource: (this.shipCountryDistinctData as object[]).map(
+                        (item: object) => (item as ItemType).ShipCountry
+
                     ),
                 });
                 multiselect.appendTo(this.multiselectelement);
@@ -139,34 +171,9 @@ export class AppComponent {
         };
     }
 }
-function dropdownFunction(this: any, args: { value: string; item: { parentElement: { id: string } } }
-) {
-    if (args.value !== 'All') {
-        this.grid.filterByColumn(args.item.parentElement.id.replace('_options', ''), 'equal', args.value);
-    } else {
-        this.grid.removeFilteredColsByField(args.item.parentElement.id.replace('_options', ''));
-    }
-}
-function handleFilterChange(this: any, args: { element: Element; value: any }) {
-    let targetElement: any = parentsUntil(args.element, 'e-filtertext');
-    let columnName: string = targetElement.id.replace('_filterBarcell', '');
-    if (args.value) {
-        this.grid.filterByColumn(columnName, 'equal', args.value);
-    } else {
-        this.grid.removeFilteredColsByField(columnName);
-    }
-}
-function multiselectFunction(this: any, args: { value: any }) {
-    var selectedValues = args.value;
-    if (selectedValues.length === 0) {
-        var OrginalData = new DataManager(this.data).executeLocal(new Query());
-        this.grid.dataSource = OrginalData;
-    } else {
-        var predicate: string | any[] | Predicate = [];
-        for (let x = 0; x < selectedValues.length; x++) {
-            predicate = predicate.length === 0 ? new Predicate('ShipCountry', 'equal', selectedValues[x]) : (predicate as any).or('ShipCountry', 'equal', selectedValues[x]);
-        }
-        var filteredData = new DataManager(this.data).executeLocal(new Query().where(predicate));
-        this.grid.dataSource = filteredData;
-    }
+
+interface ItemType {
+    CustomerID: string,
+    ShipCity: string,
+    ShipCountry: string
 }
