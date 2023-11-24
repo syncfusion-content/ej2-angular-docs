@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Angular Dropdown Button Component | Syncfusion
-description: Learn here all about getting started with Angular Dropdown Button component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Dropdown Button Component | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential Angular Dropdown Button component, it's elements and more.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
