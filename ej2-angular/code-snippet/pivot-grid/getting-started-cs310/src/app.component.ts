@@ -43,8 +43,8 @@ export class AppComponent implements OnInit {
   }
 
   enginePopulated(args: any): void {
-    (this.pivotGridObj?.grid as Grid).queryCellInfo = this.queryCellInfo.bind(this);
-    (this.pivotGridObj?.grid as Grid).headerCellInfo = this.headerCellInfo.bind(this);
+    ((this.pivotGridObj as PivotView).grid as Grid).queryCellInfo = this.queryCellInfo.bind(this);
+    ((this.pivotGridObj as PivotView).grid as Grid).headerCellInfo = this.headerCellInfo.bind(this);
   }
 
   ngOnInit(): void {
