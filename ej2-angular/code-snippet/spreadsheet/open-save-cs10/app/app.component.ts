@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
+import { MenuSelectEventArgs, SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 import { createElement } from '@syncfusion/ej2-base';
 import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 import { WorkbookModel } from '@syncfusion/ej2-spreadsheet';
@@ -12,16 +12,16 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
   public data: object[] | undefined;
-  @ViewChild('spreadsheet') public spreadsheetObj: SpreadsheetComponent;
+  @ViewChild('spreadsheet') public spreadsheetObj!: SpreadsheetComponent;
   ngOnInit(): void {
     this.data = data;
   }
-  onFileItemSelect(args: MenuEventArgs) {
+  onFileItemSelect(args: MenuSelectEventArgs) {
     if (args.item.text === 'Microsoft Excel') {
       args.cancel = true;
       this.spreadsheetObj
         .saveAsJson()
-        .then((response: { jsonObject: { Workbook: WorkbookModel } }) => {
+        .then((response: any) => {
           let formData: FormData = new FormData();
           formData.append(
             'JSONData',
@@ -29,6 +29,10 @@ export class AppComponent implements OnInit {
           );
           formData.append('fileName', 'Sample');
           formData.append('saveType', 'Xlsx');
+          formData.append(
+            'PdfLayoutSettings',
+            JSON.stringify({ FitSheetOnOnePage: false })
+          );
           fetch(
             'https://services.syncfusion.com/angular/production/api/spreadsheet/save',
             {

@@ -12,13 +12,13 @@ export class AppComponent {
   @ViewChild('spreadsheet')
   spreadsheetObj: SpreadsheetComponent | undefined;
   contextMenuBeforeOpen(args: BeforeOpenCloseMenuEventArgs){
-    if (closest(args.event.target, '.e-sheet-content')) {
+    if (closest(args.event.target as Element, '.e-sheet-content')) {
       console.log('Cell Context Menu');
-    } else if (closest(args.event.target, '.e-colhdr-table')) {
+    } else if (closest(args.event.target as Element, '.e-colhdr-table')) {
       console.log('Column Header Context Menu');
-    } else if (closest(args.event.target, '.e-rowhdr-table')) {
+    } else if (closest(args.event.target as Element, '.e-rowhdr-table')) {
       console.log('Row Header Context Menu');
-    } else if (closest(args.event.target, '.e-toolbar-item')) {
+    } else if (closest(args.event.target as Element, '.e-toolbar-item')) {
       console.log('Footer Context Menu');
     }
   }

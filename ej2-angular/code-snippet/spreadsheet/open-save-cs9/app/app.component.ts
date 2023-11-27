@@ -12,12 +12,12 @@ import {
 })
 export class AppComponent {
   @ViewChild('spreadsheet')
-  public spreadsheetObj: SpreadsheetComponent;
+  public spreadsheetObj!: SpreadsheetComponent;
 
-  openComplete() {
+  openComplete(args: Object) {
     let sheets: SheetModel[] = this.spreadsheetObj.sheets;
     for (let index: number = 0; index < sheets.length; index++) {
-      let name: string = this.spreadsheetObj.sheets[index].name;
+      let name: string = this.spreadsheetObj.sheets[index].name!;
       let protectSetting: ProtectSettingsModel = {
         selectCells: true,
         formatCells: false,
@@ -28,8 +28,8 @@ export class AppComponent {
       let address: string = getRangeAddress([
         0,
         0,
-        sheets[index].usedRange.rowIndex,
-        sheets[index].usedRange.colIndex,
+        sheets[index].usedRange?.rowIndex!,
+        sheets[index].usedRange?.colIndex!
       ]);
       //To lock the used range cells
       this.spreadsheetObj.lockCells(name + '!' + address, true);
