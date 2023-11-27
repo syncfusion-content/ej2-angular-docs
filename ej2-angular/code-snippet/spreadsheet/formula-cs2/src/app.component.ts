@@ -69,7 +69,7 @@ enableRipple(true);
 })
 export class AppComponent {
   @ViewChild('spreadsheet')
-  spreadsheetObj: SpreadsheetComponent | undefined;
+  spreadsheetObj!: SpreadsheetComponent;
 
   data: object[] = dataSource;
 
