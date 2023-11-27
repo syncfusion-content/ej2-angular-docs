@@ -9,28 +9,11 @@ domainurl: ##DomainURL##
 ---
 # Getting started with Angular Rich text editor component
 
-This section explains the steps to create a simple **Rich Text Editor** component and configure its available functionalities in Angular.
+This section explains the steps required to create a simple Angular Rich Text Editor component and configure its available functionalities.
 
-## Getting Started with Angular CLI
+## Setup Angular Environment
 
-The following section explains the steps required to create a simple angular-cli application and how to configure `Rich Text Editor` component.
-
-To get start quickly with Angular Rich Text Editor using CLI and Schematics, refer to the video below.
-
-{% youtube "https://www.youtube.com/watch?v=wrod5Rzg85o" %}
-
-### Prerequisites
-
-To get started with Syncfusion Angular UI Components, make sure that you have compatible versions of Angular and TypeScript.
-
-* Angular : 4+
-* TypeScript : 2.6+
-
-### Setting up an Angular project
-
-Angular provides an easiest way to setup project using Angular CLI [Angular CLI](https://github.com/angular/angular-cli) tool.
-
-Install the CLI application globally in your machine.
+Use [Angular CLI](https://github.com/angular/angular-cli) to setup the Angular applications. To install Angular CLI, use the following command.
 
 ```javascript
 
@@ -38,47 +21,28 @@ Install the CLI application globally in your machine.
 
 ```
 
-### Create a new application
+## Create an Angular Application
+
+Start a new Angular application using the following Angular CLI command.
 
 ```javascript
 
-  ng new syncfusion-angular-app
-
-```
-
-Once you have executed the above command you may ask for following options,
-* Would you like to add Angular routing?
-* Which stylesheet format would you like to use?
-
-By default it install the CSS style based application. To setup with SCSS, add `--style=SCSS` suffix on creating project.
-
-Example code snippet.
-
-```javascript
-
-  ng new syncfusion-angular-app --style=SCSS
-
-```
-
-Use below command to Navigate into the created project folder.
-
-```javascript
-
-  cd syncfusion-angular-app
+  ng new my-app
+  cd my-app
 
 ```
 
 ## Installing Syncfusion Rich Text Editor package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. Get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion provides two types of package structures for Angular components,
+Currently, Syncfusion provides two types of package structures for Angular components. They are:
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the following command.
 
 Add [`@syncfusion/ej2-angular-richtexteditor`](https://www.npmjs.com/package/@syncfusion/ej2-angular-richtexteditor/v/20.2.38) package to the application.
 
@@ -88,7 +52,7 @@ npm install @syncfusion/ej2-angular-richtexteditor --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
+For Angular version below 12, use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package, use the following command.
 
 Add [`@syncfusion/ej2-angular-richtexteditor@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-richtexteditor/v/20.2.38-ngcc) package to the application.
 
@@ -96,7 +60,7 @@ Add [`@syncfusion/ej2-angular-richtexteditor@ngcc`](https://www.npmjs.com/packag
 npm install @syncfusion/ej2-angular-richtexteditor@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as follows.
 
 ```bash
 @syncfusion/ej2-angular-richtexteditor:"20.2.38-ngcc"
@@ -106,11 +70,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding Rich Text Editor module
 
-Once you have successfully installed the Rich Text Editor package, corresponding component modules are ready to configure in your application from the installed location. Syncfusion Angular package provides two different types of ngModules.
-
-Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module/) to learn about `ngModules`.
-
-Refer to the following snippet to import the `RichTextEditorModule` in `app.module.ts` from the `@syncfusion/ej2-angular-richtexteditor`.
+Import Rich Text Editor module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-richtexteditor` [src/app/app.module.ts].
 
 ```javascript
 import { BrowserModule } from '@angular/platform-browser';
@@ -138,9 +98,27 @@ export class AppModule { }
 
 ```
 
+## Adding CSS reference
+
+Add Rich Text Editor component’s styles as given in the following `styles.css`.
+
+```css
+
+      @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+      @import '../node_modules/@syncfusion/ej2-icons/styles/material.css';
+      @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+      @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+      @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+      @import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
+      @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+      @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+      @import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
+
+```
+
 ## Adding Rich Text Editor component
 
-Add the Rich Text Editor component snippet in `app.component.ts` as follows.
+Modify the template in the [src/app/app.component.ts] file to render the Rich Text Editor component. Add the Angular Rich Text Editor by using the `<ejs-richtexteditor>` selector in the `template` section of the app.component.ts file.
 
 ```typescript
 
@@ -174,45 +152,6 @@ export class AppComponent {
 }
 
 ```
-
-## Adding CSS reference
-
-The following CSS files are available in `../node_modules/@syncfusion` package folder. This can be referenced in [src/styles.css] using following code.
-
-```css
-
-      @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-icons/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
-
-```
-
-> The [Custom Resource Generator (CRG)](https://crg.syncfusion.com/) is an online web tool, which can be used to generate the custom script and styles for a set of specific components.
-> This web tool is useful to combine the required component scripts and styles in a single file.
-
-## Running the application
-
-Run the `ng serve` command in command window, it will serve your application and you can open the browser window. Output will appear as follows.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-value-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-value-cs1/src/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-value-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-value-cs1" %}
 
 ## Initialize Rich Text Editor from `<iframe>` element
 
@@ -253,6 +192,30 @@ To create Rich Text Editor with additional features, inject the required modules
 * `EmojiPicker` - Inject this module to use emoji picker feature in Rich Text Editor.
 
 These modules should be injected into the provider section of `AppModule`.
+
+## Run the application
+
+Use the following command to run the application in the browser.
+
+```bash
+ng serve --open
+```
+
+Output will appear as follows.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/getting-started-value-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/rich-text-editor/getting-started-value-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/getting-started-value-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-value-cs1" %}
 
 ## Configure the Toolbar
 

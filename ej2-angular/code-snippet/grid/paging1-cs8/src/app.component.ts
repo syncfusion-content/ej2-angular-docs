@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-        this.data = data(1000);
+        this.data = data(5000);
         this.options = { pageSize: 50 };
     }
 }
