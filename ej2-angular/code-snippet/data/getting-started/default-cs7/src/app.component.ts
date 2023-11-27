@@ -3,11 +3,11 @@
 import { Component, OnInit } from '@angular/core';
 import { DataManager, Query, ReturnOption } from '@syncfusion/ej2-data';
 
-const SERVICE_URI = 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders';
+const SERVICE_URI = 'https://services.syncfusion.com/angular/production/api/Orders';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app.template.html',
+    templateUrl: './app.component.html',
     styles: [`
             .e-table {
                 border: solid 1px #e0e0e0;
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
     public items?: object[] | any;
 
     public ngOnInit(): void {
-        new DataManager({ url: SERVICE_URI }).executeQuery(new Query().take(6)).then((e: ReturnOption) => {
+        new DataManager({ url: SERVICE_URI }).executeQuery(new Query()).then((e: ReturnOption) => {
             this.items = e.result as object[];
         }).catch((e) => true);
     }
