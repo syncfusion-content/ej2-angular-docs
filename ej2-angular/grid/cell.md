@@ -161,8 +161,8 @@ The following example demonstrates how to customize the appearance of the **Orde
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-cell-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.style.css" %}
-{% include code-snippet/grid/custom-cell-cs2/src/app.style.css %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-cell-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-cell-cs2/src/main.ts %}
