@@ -24,11 +24,11 @@ Below is the list of minimum dependencies required to use the DataManager.
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
+You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications.
 To install Angular CLI use the following command.
 
 ```bash
-npm install -g @angular/cli
+npm install -g @angular/cli@16.0.1
 ```
 
 ## Create an Angular Application
@@ -37,6 +37,17 @@ Start a new Angular application using below Angular CLI command.
 
 ```bash
 ng new data-app
+```
+
+This command will prompt you for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
+
+![Initial_setup](images/Initial-setup.png)
+
+By default, it will create a CSS-based application.
+
+Next, navigate to the created project folder:
+
+```
 cd data-app
 ```
 
@@ -52,7 +63,7 @@ Currently, Syncfusion provides two types of package structures for Angular compo
 
 Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
-Add [`@syncfusion/ej2-data`](https://www.npmjs.com/package/@syncfusion/ej2-data/v/20.2.38) package to the application.
+Add [@syncfusion/ej2-data](https://www.npmjs.com/package/@syncfusion/ej2-data/v/20.2.38) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-data --save
@@ -62,7 +73,7 @@ npm install @syncfusion/ej2-data --save
 
 For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
 
-Add [`@syncfusion/ej2-angular-grids@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-grids/v/20.2.38-ngcc) package to the application.
+Add [@syncfusion/ej2-angular-grids@ngcc](https://www.npmjs.com/package/@syncfusion/ej2-angular-grids/v/20.2.38-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-grids@ngcc --save
@@ -84,11 +95,92 @@ The DataManager can act as gateway for both local and remote data source which w
 
 **DataManager** can be bound to local data source by assigning the array of JavaScript objects to the **json** property or simply passing them to the constructor while instantiating.
 
+Create a [src/app/datasource.ts] file and utilize the following dataset to provide JSON data.
+
+```typescript
+export let data: Object[] = [
+    {
+        OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),
+        ShipName: 'Vins et alcools Chevalier', ShipCity: 'Reims', ShipAddress: '59 rue de l Abbaye',
+        ShipRegion: 'CJ', ShipPostalCode: '51100', ShipCountry: 'France', Freight: 32.38, Verified: !0
+    },
+    {
+        OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6, OrderDate: new Date(836505e6),
+        ShipName: 'Toms Spezialitäten', ShipCity: 'Münster', ShipAddress: 'Luisenstr. 48',
+        ShipRegion: 'CJ', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: !1
+    },
+    {
+        OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4, OrderDate: new Date(8367642e5),
+        ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
+        ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 65.83, Verified: !0
+    },
+    {
+        OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3, OrderDate: new Date(8367642e5),
+        ShipName: 'Victuailles en stock', ShipCity: 'Lyon', ShipAddress: '2, rue du Commerce',
+        ShipRegion: 'CJ', ShipPostalCode: '69004', ShipCountry: 'France', Freight: 41.34, Verified: !0
+    },
+    {
+        OrderID: 10252, CustomerID: 'SUPRD', EmployeeID: 4, OrderDate: new Date(8368506e5),
+        ShipName: 'Suprêmes délices', ShipCity: 'Charleroi', ShipAddress: 'Boulevard Tirou, 255',
+        ShipRegion: 'CJ', ShipPostalCode: 'B-6000', ShipCountry: 'Belgium', Freight: 51.3, Verified: !0
+    },
+    {
+        OrderID: 10253, CustomerID: 'HANAR', EmployeeID: 3, OrderDate: new Date(836937e6),
+        ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
+        ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 58.17, Verified: !0
+    },
+    {
+        OrderID: 10254, CustomerID: 'CHOPS', EmployeeID: 5, OrderDate: new Date(8370234e5),
+        ShipName: 'Chop-suey Chinese', ShipCity: 'Bern', ShipAddress: 'Hauptstr. 31',
+        ShipRegion: 'CJ', ShipPostalCode: '3012', ShipCountry: 'Switzerland', Freight: 22.98, Verified: !1
+    },
+    {
+        OrderID: 10255, CustomerID: 'RICSU', EmployeeID: 9, OrderDate: new Date(8371098e5),
+        ShipName: 'Richter Supermarkt', ShipCity: 'Genève', ShipAddress: 'Starenweg 5',
+        ShipRegion: 'CJ', ShipPostalCode: '1204', ShipCountry: 'Switzerland', Freight: 148.33, Verified: !0
+    },
+    {
+        OrderID: 10256, CustomerID: 'WELLI', EmployeeID: 3, OrderDate: new Date(837369e6),
+        ShipName: 'Wellington Importadora', ShipCity: 'Resende', ShipAddress: 'Rua do Mercado, 12',
+        ShipRegion: 'SP', ShipPostalCode: '08737-363', ShipCountry: 'Brazil', Freight: 13.97, Verified: !1
+    },
+    {
+        OrderID: 10257, CustomerID: 'HILAA', EmployeeID: 4, OrderDate: new Date(8374554e5),
+        ShipName: 'HILARION-Abastos', ShipCity: 'San Cristóbal', ShipAddress: 'Carrera 22 con Ave. Carlos Soublette #8-35',
+        ShipRegion: 'Táchira', ShipPostalCode: '5022', ShipCountry: 'Venezuela', Freight: 81.91, Verified: !0
+    },
+    {
+        OrderID: 10258, CustomerID: 'ERNSH', EmployeeID: 1, OrderDate: new Date(8375418e5),
+        ShipName: 'Ernst Handel', ShipCity: 'Graz', ShipAddress: 'Kirchgasse 6',
+        ShipRegion: 'CJ', ShipPostalCode: '8010', ShipCountry: 'Austria', Freight: 140.51, Verified: !0
+    },
+    {
+        OrderID: 10259, CustomerID: 'CENTC', EmployeeID: 4, OrderDate: new Date(8376282e5),
+        ShipName: 'Centro comercial Moctezuma', ShipCity: 'México D.F.', ShipAddress: 'Sierras de Granada 9993',
+        ShipRegion: 'CJ', ShipPostalCode: '05022', ShipCountry: 'Mexico', Freight: 3.25, Verified: !1
+    },
+    {
+        OrderID: 10260, CustomerID: 'OTTIK', EmployeeID: 4, OrderDate: new Date(8377146e5),
+        ShipName: 'Ottilies Käseladen', ShipCity: 'Köln', ShipAddress: 'Mehrheimerstr. 369',
+        ShipRegion: 'CJ', ShipPostalCode: '50739', ShipCountry: 'Germany', Freight: 55.09, Verified: !0
+    },
+    {
+        OrderID: 10261, CustomerID: 'QUEDE', EmployeeID: 4, OrderDate: new Date(8377146e5),
+        ShipName: 'Que Delícia', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua da Panificadora, 12',
+        ShipRegion: 'RJ', ShipPostalCode: '02389-673', ShipCountry: 'Brazil', Freight: 3.05, Verified: !1
+    },
+    {
+        OrderID: 10262, CustomerID: 'RATTC', EmployeeID: 8, OrderDate: new Date(8379738e5),
+        ShipName: 'Rattlesnake Canyon Grocery', ShipCity: 'Albuquerque', ShipAddress: '2817 Milton Dr.',
+        ShipRegion: 'NM', ShipPostalCode: '87110', ShipCountry: 'USA', Freight: 48.29, Verified: !0
+    }];
+```
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight html tabtitle="app.template.html" %}
+{% highlight html tabtitle="app.component.html" %}
 {% raw %}
 <table class='e-table'>
     <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
@@ -117,7 +209,7 @@ Now all **DataManager** operations will address the provided service end point.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight html tabtitle="app.template.html" %}
+{% highlight html tabtitle="app.component.html" %}
 {% raw %}
 <table class='e-table'>
     <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
@@ -146,7 +238,7 @@ The filter expression can be built easily using **where** method of **Query** cl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight html tabtitle="app.template.html" %}
+{% highlight html tabtitle="app.component.html" %}
 {% raw %}
 <table class='e-table'>
     <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
@@ -174,7 +266,7 @@ The data can be ordered either in ascending or descending using **sortBy** metho
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight html tabtitle="app.template.html" %}
+{% highlight html tabtitle="app.component.html" %}
 {% raw %}
 <table class='e-table'>
     <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
@@ -202,10 +294,7 @@ The **page** method of the Query class is used to get range of data based on the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/default-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/data/getting-started/default-cs10/src/app.template.html %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
+{% highlight html tabtitle="app.component.html" %}
 {% raw %}
 <table class='e-table'>
     <tr><th>Order ID</th><th>Customer ID</th><th>Employee ID</th></tr>
@@ -213,7 +302,11 @@ The **page** method of the Query class is used to get range of data based on the
         <td>{{item.OrderID}}</td><td>{{item.CustomerID}}</td><td>{{item.EmployeeID}}</td>
     </tr>
 </table>
-{% endraw %}{% endhighlight %}
+{% endraw %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/data/getting-started/default-cs10/src/app.module.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs10/src/main.ts %}
 {% endhighlight %}
