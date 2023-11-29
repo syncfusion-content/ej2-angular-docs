@@ -10,7 +10,8 @@ import { SplitButtonComponent } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
     selector: 'app-root',
-    template: `<h4>Select Color</h4>
+    template: `<div class="e-section-control">
+                <h4>Select Color</h4>
                 <ejs-input ejs-colorpicker #colorpalette type="color" id="colorpalette" cssClass="e-hide-palette" mode="Palette" [inline]="true" [showButtons]="false" [modeSwitcher]="false" (change)="paletteOnChange($event)" />
                 <ejs-splitbutton #splitbutton iconCss="e-icons e-font-icon" [items]="items" (beforeClose)="onBeforeClose($event)" (beforeItemRender)="beforeRender($event)" (select)="onSelect($event)"></ejs-splitbutton>
                 <ejs-dialog id="modalDialog" #modalDialog cssClass="e-dlg-picker" (open)="modalDlgOpen()" [isModal]="true" [width]="width" [height]="height" [visible]="false" [target]='target' [animationSettings]='animationSettings'
@@ -18,7 +19,8 @@ import { SplitButtonComponent } from '@syncfusion/ej2-angular-splitbuttons';
                     <ng-template #content>
                         <ejs-input ejs-colorpicker #colorpicker type="color" id="colorpicker" (change)="pickerOnChange($event)" [inline]="true" [modeSwitcher]="false" />
                     </ng-template>
-                </ejs-dialog>`
+                </ejs-dialog>
+                </div>`
 })
 export class AppComponent {
     @ViewChild('colorpalette')

@@ -10,12 +10,14 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<div>
+    template: `<div class="e-section-control">
+                <div>
             <span>Sign here</span>
             <ejs-splitbutton content="Save" [items]='items' iconCss="e-sign-icons e-save" (select)="onSelect($event)"></ejs-splitbutton>
         </div>
         <div id ="signature-control">
             <canvas ejs-signature #signature id="signature"></canvas>
+        </div>
         </div>`
 })
 export class AppComponent {

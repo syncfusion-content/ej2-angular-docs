@@ -14,7 +14,8 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<div id="signature-toolbar-control">
+    template: `<div class="e-section-control">
+    <div id="signature-toolbar-control">
         <ejs-toolbar id="toolbar" (created)="onCreate($event)" (clicked)="clicked($event)" width="100%">
             <e-items>
                 <e-item text='Undo' prefixIcon='e-icons e-undo' tooltipText='Undo (Ctrl + Z)'></e-item>
@@ -37,6 +38,7 @@ enableRipple(true);
         <div id="signature-control">
             <canvas ejs-signature #signature id="signature" [maxStrokeWidth]="strokeWidth" style="height: 100%; width: 100%;" (change)="change()"></canvas>
         </div>
+    </div>
     </div>`
 })
 export class AppComponent {

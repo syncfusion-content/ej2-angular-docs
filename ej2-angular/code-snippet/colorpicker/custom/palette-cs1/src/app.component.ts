@@ -6,9 +6,11 @@ import { addClass } from '@syncfusion/ej2-base';
 
 @Component({
     selector: 'app-root',
-    template: `<div id="preview"></div>
+    template: ` <div class="e-section-control">
+                <div id="preview"></div>
                <h4>Select Color</h4>
-               <ejs-input ejs-colorpicker type="color" id="element" value="#ba68c8" mode="Palette" [columns]="colCount" [inline]="true" [modeSwitcher]="false" [showButtons]="false" [presetColors]="customColors" (beforeTileRender)="tileRender($event)" (change)="onChange($event)" />`
+               <ejs-input ejs-colorpicker type="color" id="element" value="#ba68c8" mode="Palette" [columns]="colCount" [inline]="true" [modeSwitcher]="false" [showButtons]="false" [presetColors]="customColors" (beforeTileRender)="tileRender($event)" (change)="onChange($event)" />
+               </div>`
 })
 
 export class AppComponent {
