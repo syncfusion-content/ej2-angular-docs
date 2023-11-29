@@ -8,12 +8,14 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<div id="input">
+    template: `<div class="e-section-control">
+                <div id="input">
                 <input type="text" id="text" placeholder="Enter the Background Color Value" >
                 <button ejs-button cssClass="e-primary" (click)="setBgColor()">Set Background Color</button>
             </div>
             <div id="signature-control">
             <canvas ejs-signature #signature id="signature"></canvas>
+            </div>
             </div>`
 })
 export class AppComponent {

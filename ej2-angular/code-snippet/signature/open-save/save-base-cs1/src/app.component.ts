@@ -9,12 +9,13 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<h4>Sign here</h4>
+    template: `<div class="e-section-control">
+            <h4>Sign here</h4>
         <div id ="signature-control">
             <canvas ejs-signature #signature id="signature"></canvas>
         </div>
         <button ejs-button id="save" cssClass="e-primary" (click)="onSave()">Save as Base64</button>
-        <ejs-dialog #dialog header="Base64 of the signature" [animationSettings]="animationSettings" showCloseIcon='true' width="80%" visible="false"></ejs-dialog>`
+        <ejs-dialog #dialog header="Base64 of the signature" [animationSettings]="animationSettings" showCloseIcon='true' width="80%" visible="false"></ejs-dialog></div>`
 })
 export class AppComponent {
     @ViewChild('signature')

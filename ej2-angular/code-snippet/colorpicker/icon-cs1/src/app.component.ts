@@ -6,8 +6,9 @@ import { ColorPickerEventArgs, ColorPickerComponent } from '@syncfusion/ej2-angu
 
 @Component({
     selector: 'app-root',
-    template: `<h4>Choose color</h4>
-               <ejs-input ejs-colorpicker #colorpicker id="element" (change)="onChange($event)" />`
+    template: `<div class="e-section-control">
+                <h4>Choose color</h4>
+               <ejs-input ejs-colorpicker #colorpicker id="element" (change)="onChange($event)" /></div>`
 })
 
 export class AppComponent {

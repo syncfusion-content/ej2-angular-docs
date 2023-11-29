@@ -6,7 +6,8 @@ import { SplitButtonComponent } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
     selector: 'app-root',
-    template: `<ul id="target" tabindex="0">
+    template: `<div class="e-section-control">
+                <ul id="target" tabindex="0">
                     <li class="e-item e-palette-item">
                         <ejs-input ejs-colorpicker #palette type="color" value="#f44336" id="element" mode="Palette" [inline]="true" (change)="onChange($event)" (beforeTileRender)="beforeRender($event)" [modeSwitcher]="false" [showButtons]="false" [columns]="column" [presetColors]="customColors" />
                     </li>
@@ -19,6 +20,7 @@ import { SplitButtonComponent } from '@syncfusion/ej2-angular-splitbuttons';
                     <div id="preview"></div>
                     <h4>Select Color</h4>
                     <ejs-splitbutton #splitbtn iconCss="e-cp-icons e-picker-icon" target="#target"></ejs-splitbutton>
+                </div>
                 </div>`
 })
 

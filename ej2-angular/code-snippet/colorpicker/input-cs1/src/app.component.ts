@@ -5,8 +5,9 @@ import { ColorPickerComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     selector: 'app-root',
-    template: `<h4>Choose color</h4>
-               <ejs-input ejs-colorpicker #colorpicker id="element" readonly />`
+    template: `<div class="e-section-control">
+                <h4>Choose color</h4>
+               <ejs-input ejs-colorpicker #colorpicker id="element" readonly /></div>`
 })
 
 export class AppComponent {

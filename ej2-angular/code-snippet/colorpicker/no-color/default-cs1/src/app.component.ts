@@ -5,9 +5,11 @@ import { ColorPickerEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     selector: 'app-root',
-    template: `<div id="preview"></div>
+    template: `<div class="e-section-control">
+                <div id="preview"></div>
                 <h4>Choose Color</h4>
-                <ejs-input ejs-colorpicker type="color" id="element" mode="Palette" value="#ba68c8" [showButtons]="false" (change)="onChange($event)" [modeSwitcher]="false" [noColor]="true" />`
+                <ejs-input ejs-colorpicker type="color" id="element" mode="Palette" value="#ba68c8" [showButtons]="false" (change)="onChange($event)" [modeSwitcher]="false" [noColor]="true" />
+                </div>`
 })
 
 export class AppComponent implements OnInit {

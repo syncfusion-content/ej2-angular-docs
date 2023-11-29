@@ -8,12 +8,14 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<div id="input">
+    template: `<div class="e-section-control">
+                <div id="input">
                 <input type="text" id="text" placeholder="Enter the Base64 or URL of signature" >
                 <button ejs-button cssClass="e-btn e-primary" (click)="open()">Open</button>
             </div>
             <div id="signature-control">
             <canvas ejs-signature #signature id="signature"></canvas>
+            </div>
             </div>`
 })
 export class AppComponent {

@@ -4,9 +4,10 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<h4>Choose Color</h4>
+    template: `<div class="e-section-control">
+                <h4>Choose Color</h4>
                <!-- To hide control buttons. -->
-               <ejs-input ejs-colorpicker type="color" id="element" [showButtons]="false" />`
+               <ejs-input ejs-colorpicker type="color" id="element" [showButtons]="false" /></div>`
 })
 
 export class AppComponent { }

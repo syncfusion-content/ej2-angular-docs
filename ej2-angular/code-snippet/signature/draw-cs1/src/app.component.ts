@@ -7,7 +7,8 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
     selector: 'app-root',
-    template: `<div id="signature-control">
+    template: `<div class="e-section-control">
+            <div id="signature-control">
            <canvas ejs-signature #signature id="signature"></canvas>
         </div>
         <div id="input">
@@ -31,6 +32,7 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
             </table>
             <br>
             <button ejs-button cssClass="e-primary" (click)="onDraw()">Draw</button>
+        </div>
         </div>`
 })
 export class AppComponent {

@@ -15,8 +15,9 @@ L10n.load({
 
 @Component({
     selector: 'app-root',
-    template: `<h4>Choose Color</h4>
-               <ejs-input ejs-colorpicker type="color" id="element" [enableRtl]="true" locale="ar-AE" />`
+    template: `<div class="e-section-control">
+                <h4>Choose Color</h4>
+               <ejs-input ejs-colorpicker type="color" id="element" [enableRtl]="true" locale="ar-AE" /></div>`
 })
 
 export class AppComponent { }
