@@ -16,6 +16,10 @@ Rich Text Editor supports markdown editing when the [`editorMode`](https://ej2.s
 
 To use quick Markdown editing feature, inject `MarkdownEditorService` in the provider section of `AppModule`.
 
+To build a markdown editor using the Angular Rich Text Editor, refer to the video below.
+
+{% youtube "https://www.youtube.com/watch?v=6fly8220gL8" %}
+
 ## Supported Commands
 
 The Angular Markdown editor supports the following commands to format the markdown content:
