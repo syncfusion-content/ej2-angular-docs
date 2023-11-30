@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Tab component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Tab component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular Tab Component | Syncfusion
+description: Checkout and learn about getting started with Angular Tab component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Tab component
+# Getting Started with Angular Tab Component
 
 This section briefly explains about how to create a simple Tab using Angular by configuring the Tab header content.
 
@@ -286,8 +286,8 @@ You need to follow the below structure of HTML elements to render the Tab,
   
 {% previewsample "page.domainurl/samples/tab/tab-container-cs1" %}
 
-> You can refer to our [Angular Tab](https://www.syncfusion.com/angular-ui-components/angular-tabs) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Tab example](https://ej2.syncfusion.com/angular/demos/#/material/tab/default) that shows you how to render the Tabs in Angular.
+> You can refer to our [Angular Tab](https://www.syncfusion.com/angular-components/angular-tabs) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Tab example](https://ej2.syncfusion.com/angular/demos/#/material/tab/default) that shows you how to render the Tabs in Angular.
 
 ## See Also
 
-* [How to load tab with DataSource](./how-to/load-tab-with-data-source/)
+* [How to load tab with DataSource](./how-to/load-tab-with-data-source)
