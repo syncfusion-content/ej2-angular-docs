@@ -16,7 +16,7 @@ In this guide, we will show you how to create an Angular project and install the
 
 ## Prerequisites
 
-[System requirements for Syncfusion Angular UI components](../system-requirement/)
+[System requirements for Syncfusion Angular UI components](../system-requirement)
 
 ## Setting up an Angular project
 
@@ -80,7 +80,7 @@ The above command does the following configuration to your Angular app,
  
  This makes it easy to add the Syncfusion Angular Grids module to your project and start using it in your application.
 
- For more information about version compatibility, see [version compatibility](../upgrade/version-compatibility/).
+ For more information about version compatibility, see [version compatibility](../upgrade/version-compatibility).
 
  ## Adding Syncfusion Angular components
 
@@ -152,7 +152,7 @@ Refer the below sample for more information.
   
 {% previewsample "page.domainurl/samples/common/quickstart-cs1" %}
 
->Note: If you see a license banner when running your application, it means that you need to obtain a license key and register it within the application in order to use Syncfusion components. You can find more information on how to obtain and register a license key on our [Licensing overview](../licensing/overview/) page.
+>Note: If you see a license banner when running your application, it means that you need to obtain a license key and register it within the application in order to use Syncfusion components. You can find more information on how to obtain and register a license key on our [Licensing overview](../licensing/overview) page.
 
 You can also refer below video to get start Syncfusion Angular Grid component.
 
@@ -160,7 +160,7 @@ You can also refer below video to get start Syncfusion Angular Grid component.
 
 ## Syncfusion components-based styles
 
-By default, the `Material` theme is registered in the `styles.css` file when you run the `ng add` command. However, Syncfusion Angular components offer a range of built-in [themes](../appearance/theme-studio/) that you can easily add to your project by importing the relevant theme.
+By default, the `Material` theme is registered in the `styles.css` file when you run the `ng add` command. However, Syncfusion Angular components offer a range of built-in [themes](../appearance/theme-studio) that you can easily add to your project by importing the relevant theme.
 
  The default `Material` theme includes styles for all Syncfusion Angular components. If you only want to use the styles for specific Syncfusion components, you can import only the required dependencies. For example, to use the styles for the Grid component alone, you can import the required dependencies as shown in the following snippet,
 
@@ -176,7 +176,7 @@ By default, the `Material` theme is registered in the `styles.css` file when you
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
 ```
 
-For information on using SCSS styles, see [here](../common/how-to/sass/).
+For information on using SCSS styles, see [here](../common/how-to/sass).
 
 ## Adding feature Modules to Syncfusion Angular components
 
@@ -256,7 +256,7 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/common/quickstart1-cs1" %}
 
-By using the Syncfusion Angular Grid component, you can easily add a robust data Grid to your Angular application that supports paging and sorting of data. For more details refer [Syncfusion Angular Grid](../grid/getting-started/).
+By using the Syncfusion Angular Grid component, you can easily add a robust data Grid to your Angular application that supports paging and sorting of data. For more details refer [Syncfusion Angular Grid](../grid/getting-started).
 
 ## Syncfusion Angular components showcase samples
 
@@ -271,4 +271,4 @@ Syncfusion has a collection of sample applications that demonstrate the use of S
 ## See also
 
 * [Upgradation Guide](../upgrade/upgrading-syncfusion)
-* [Upgradation Guide](../upgrade/upgrading-syncfusion/)
+* [Upgradation Guide](../upgrade/upgrading-syncfusion)
