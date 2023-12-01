@@ -35,6 +35,8 @@ The following are the list of keys and its values used in the uploader.
 | remove | To customize tooltip text for remove icon. |
 | cancel | To customize tooltip text for cancel icon. |
 | delete | To customize tooltip text for delete icon. |
+| totalFiles | To customize tooltip text for total files. |
+| size | To customize tooltip text for size. |
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

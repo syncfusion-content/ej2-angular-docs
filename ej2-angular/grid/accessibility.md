@@ -10,13 +10,38 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Grid component
 
-Accessibility is achieved in the Grid component through WAI-ARIA Standard and Keyboard Navigations. User can effectively access the Grid features through assistive technologies such as screen readers.
+The Grid component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-## WAI-ARIA
+The accessibility compliance for the Grid component is outlined below.
 
-WAI-ARIA (Accessibility Initiative – Accessible Rich Internet Applications) defines a way to increase the accessibility of web pages, dynamic content, and user interface components developed with Ajax, HTML, JavaScript, and related technologies. ARIA provides additional semantics to describe the role, state, and functionality of web components.
+| Accessibility Criteria | Compatibility |
+| -- | -- |
+| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> |
+| [Section 508 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> |
+| [Screen Reader Support](../common/accessibility#screen-reader-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> |
+| [Right-To-Left Support](../common/accessibility#right-to-left-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Color Contrast](../common/accessibility#color-contrast) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Mobile Device Support](../common/accessibility#mobile-device-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Accessibility Checker Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> |
+| [Axe-core Accessibility Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> |
 
-The following list of ARIA attributes is used in Grid.
+<style>
+    .post .post-content img {
+        display: inline-block;
+        margin: 0.5em 0;
+    }
+</style>
+<div><img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> - All features of the component meet the requirement.</div>
+
+<div><img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
+
+<div><img src="https://cdn.syncfusion.com/content/images/landing-page/no.png" alt="No"> - The component does not meet the requirement.</div>
+
+## WAI-ARIA attributes
+
+The Grid component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/grid/) patterns to meet the accessibility. The following ARIA attributes are used in the Grid component:
+
 * grid (role)
 * row (role)
 * gridcell (role)
@@ -29,15 +54,11 @@ The following list of ARIA attributes is used in Grid.
 * aria-owns (attribute)
 * aria-label (attribute)
 
-> You can achieve a single table announcing on the JAWS screen reader by setting an **`e-gridcell-read`** class through [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/grid/#cssclass) property of the grid.
+## Keyboard interaction
 
-## Keyboard Navigation
+The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Grid component.
 
-Grid functionalities can be interactive with keyboard shortcuts. In order to utilize all the available keyboard shortcuts, the [`enableHeaderFocus`](https://ej2.syncfusion.com/angular/documentation/api/grid/#enableheaderfocus) property of the Grid needs to be set as **true**.
-
-The following keyboard shortcuts are supported by the Grid.
-
-Interaction Keys | Description
+**Press**  | **To do this**
 -----|-----
 <b>Pager</b>||
 <kbd>Tab / Shift + Tab</kbd> | Focus on the next/previous pager item.
@@ -94,3 +115,15 @@ Interaction Keys | Description
 <kbd>Ctrl + Enter</kbd> | Performs multi-sorting on a column when its header element is in focused state.
 <kbd>Shift + Enter</kbd> | Clears sorting for the focused header column.
 <kbd>Enter</kbd> | Performs sorting(ascending/descending) on a column when its header element is in focused state.
+
+## Ensuring accessibility
+
+The Grid component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+
+The accessibility compliance of the Grid component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/grid.html) in a new window to evaluate the accessibility of the Grid component with accessibility tools.
+
+{% previewsample "https://ej2.syncfusion.com/accessibility/grid.html" %}
+
+## See also
+
+* [Accessibility in Syncfusion Angular components](../common/accessibility)
