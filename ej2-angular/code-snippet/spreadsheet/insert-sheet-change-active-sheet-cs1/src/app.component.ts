@@ -5,7 +5,7 @@ import { data, employeeData } from './datasource';
 @Component({
     selector: 'app-container',
     template: `<div >
-    <button class="e-btn" (click)='onClick()'>Insert Sheet</button>
+    <button class="e-btn custom-btn" (click)='onClick()'>Insert Sheet</button>
     <ejs-spreadsheet #spreadsheet >
         <e-sheets>
             <e-sheet name="Car Sales Report">

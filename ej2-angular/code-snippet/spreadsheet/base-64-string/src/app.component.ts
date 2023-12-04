@@ -5,9 +5,9 @@ import { data } from './datasource';
 @Component({
     selector: 'app-container',
     template: `<div class="control-section">
-    <button class="e-btn" (click)='import()'>Import Base64</button>
-    <button class="e-btn" (click)='export()'>Export as Base64</button>
-    <ejs-spreadsheet #spreadsheet (created)="created()" openUrl="https://services.syncfusion.com/angular/production/api/spreadsheet/open" (beforeSave)="beforeSave($event)" (saveComplete)="saveComplete($event)">
+    <button class="e-btn custom-btn" (click)='import()'>Import Base64</button>
+    <button class="e-btn custom-btn" (click)='export()'>Export as Base64</button>
+    <ejs-spreadsheet #spreadsheet openUrl="https://services.syncfusion.com/angular/production/api/spreadsheet/open" (beforeSave)="beforeSave($event)" (saveComplete)="saveComplete($event)">
         <e-sheets>
             <e-sheet name="Car Sales Report">
                 <e-ranges>

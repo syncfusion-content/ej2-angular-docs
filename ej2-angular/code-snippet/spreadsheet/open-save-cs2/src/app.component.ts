@@ -10,7 +10,7 @@ import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 export class AppComponent {
     @ViewChild('spreadsheet') public spreadsheetObj?: SpreadsheetComponent;
      created () {
-        fetch("https://js.syncfusion.com/demos/ejservices/data/Spreadsheet/LargeData.xlsx") // fetch the remote url
+        fetch("https://cdn.syncfusion.com/scripts/spreadsheet/Sample.xlsx") // fetch the remote url
           .then((response) => {
             response.blob().then((fileBlob) => { // convert the excel file to blob
             let file = new File([fileBlob], "Sample.xlsx"); //convert the blob into file
