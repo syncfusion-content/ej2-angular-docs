@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Grouping in Angular Grid component
 
-The grouping feature in the Syncfusion Angular Grid allows you to organize data into a hierarchical structure, making it easier to expand and collapse records. You can group the columns by simply dragging and dropping the column header to the group drop area. To enable grouping in the grid, you need to set the [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowgrouping) property to **true**. Additionally, you can customize the grouping options using the [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings) property.
+The grouping feature in the Syncfusion Angular Grid allows you to organize data into a hierarchical structure, making it easier to expand and collapse records. You can group the columns by simply dragging and dropping the column header to the group drop area. To enable grouping in the grid, you need to set the [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowgrouping) property to **true**. Additionally, you can customize the grouping options using the [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/) property.
 
 To use the Grouping feature, need to inject **GroupService** in the provider section of your **AppModule**.
 
@@ -33,7 +33,7 @@ To use the Grouping feature, need to inject **GroupService** in the provider sec
 
 ## Initial group
 
-To enable initial grouping in the Grid, you can use the [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings) property and set the [groupSettings.columns](https://helpej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#columns) property to an array of column names(`field` of the column) that you want to group by. This feature is particularly useful when working with large datasets, as it allows you to quickly organize and analyze the data based on specific criteria.
+To enable initial grouping in the Grid, you can use the [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/) property and set the [groupSettings.columns](https://helpej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#columns) property to an array of column names(`field` of the column) that you want to group by. This feature is particularly useful when working with large datasets, as it allows you to quickly organize and analyze the data based on specific criteria.
 
 The following example demonstrates how to set an initial grouping for the **CustomerID** and **ShipCity** columns during the initial rendering grid, by using the `groupSettings.columns` property.
 
@@ -75,7 +75,7 @@ The Grid component provides the ability to prevent grouping for a particular col
 
 By default, the Grid provides a drop area for grouping columns. This drop area allows you to drag and drop columns to group and ungroup them. However, in some cases, you may want to prevent ungrouping or further grouping a column after initial grouping.
 
-To hide the drop area in the Syncfusion Angular Grid, you can set the [groupSettings.showDropArea](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#showdroparea) property to **false**. 
+To hide the drop area in the Syncfusion Angular Grid, you can set the [groupSettings.showDropArea](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#showdroparea) property to **false**. 
 
 In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added to hide or show the drop area. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered and the `groupSettings.showDropArea` property of the grid is updated accordingly. 
 
@@ -157,7 +157,7 @@ The following example demonstrates how to sort the **CustomerID** column by sett
 
 ## Group with paging
 
-The Grid component supports grouping columns with paging feature. When grouping is applied, the grid displays aggregated information and total items based on the current page. However, by default, the group footer and group caption footer does not consider the aggregated information and total items from other pages. To get additional details from other pages, set the [groupSettings.disablePageWiseAggregates](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#disablePageWiseAggregates) property to **false**.
+The Grid component supports grouping columns with paging feature. When grouping is applied, the grid displays aggregated information and total items based on the current page. However, by default, the group footer and group caption footer does not consider the aggregated information and total items from other pages. To get additional details from other pages, set the [groupSettings.disablePageWiseAggregates](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#disablePageWiseAggregates) property to **false**.
 
 > If remote data is bound to grid dataSource, two requests will be sent when performing grouping action one for getting the grouped data and another for getting aggregate details and total items count.
 
