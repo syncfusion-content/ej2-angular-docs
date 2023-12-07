@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Breadcrumb component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Breadcrumb component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Breadcrumb Component | Syncfusion
+description:  Checkout and learn about getting started with Syncfusion Essential Angular Breadcrumb component, it's elements and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Breadcrumb component
+# Getting Started with Angular Breadcrumb Component
 
 This section explains how to create a simple Breadcrumb, and demonstrate the basic usage of the Breadcrumb module in an Angular environment.
 
