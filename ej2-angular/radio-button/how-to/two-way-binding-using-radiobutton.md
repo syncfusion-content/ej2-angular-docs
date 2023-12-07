@@ -20,7 +20,7 @@ In the following example, two-way binding for RadioButton is illustrated with Dr
  
   ```
 
-* Initialize DropDownList component and assign the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#value) property value like the below code,
+* Initialize DropDownList component and assign the [`value`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#value) property value like the below code,
 
   ```typescript
   <ejs-dropdownlist [dataSource]='paymentMethod' [(value)]="value" ></ejs-dropdownlist>
