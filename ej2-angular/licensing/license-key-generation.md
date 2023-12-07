@@ -14,8 +14,8 @@ License keys can be generated from the [License & Downloads](https://syncfusion.
 
 ![Get Community License Key](images/get-community-license-key.png)
 
-> * Syncfusion license keys are **version and platform specific**. Refer to the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform.
-> * Refer to this [KB](https://www.syncfusion.com/kb/8951/which-version-syncfusion-license-key-should-i-use-in-my-application) to know which version of the Syncfusion license key should be used in the application.
+> * Syncfusion license keys are **version and platform specific**. Refer to the [KB](https://support.syncfusion.com/kb/article/7898/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform.
+> * Refer to this [KB](https://support.syncfusion.com/kb/article/7865/which-version-syncfusion-license-key-should-i-use-in-my-application) to know which version of the Syncfusion license key should be used in the application.
 
 ## Claim License key
 
@@ -49,5 +49,5 @@ If the Syncfusion account is not associated with a trial, license, or expired tr
 
 ## See Also
 
-* [How to Register Syncfusion License Key in the Application?](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration/)
-* [Licensing FAQ](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot/)
+* [How to Register Syncfusion License Key in the Application?](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration)
+* [Licensing FAQ](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot)

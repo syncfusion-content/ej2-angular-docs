@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Tooltip for pointers
 
-Circular gauge will displays the pointer details through [tooltip](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tooltipSettings), when the mouse is moved over the pointer.
+Circular gauge will displays the pointer details through [tooltip](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/tooltipSettings/), when the mouse is moved over the pointer.
 
 <!-- markdownlint-disable MD036 -->
 

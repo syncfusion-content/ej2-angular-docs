@@ -119,7 +119,7 @@ Customizing the delete confirmation dialog in Grid allows you to personalize the
 To customize the delete confirmation dialog, you can utilize the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event. This event is triggered when a toolbar item, such as the delete button, is clicked.
 
 >* To enable the confirmation dialog for the delete operation in the Grid, you can set the [showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#showdeleteconfirmdialog) property of the `editSettings` configuration to **true**.
->* You can refer the Grid [Default text](../global-local/) list for more localization.
+>* You can refer the Grid [Default text](../global-local) list for more localization.
 
 The following example that demonstrates how to customize the delete confirmation dialog using the `toolbarClick` event:
 

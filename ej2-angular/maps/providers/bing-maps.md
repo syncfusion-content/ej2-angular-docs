@@ -225,7 +225,7 @@ export class AppComponent implements OnInit {
 
 ## Enabling legend
 
-The legend can be added to the tile Maps by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#visible) property of [legendSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel) to **true**.
+The legend can be added to the tile Maps by setting the [visible](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/#visible) property of [legendSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/legendSettingsModel/) to **true**.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
