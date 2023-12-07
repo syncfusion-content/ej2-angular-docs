@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Multi select in Angular Calendar component
 
-Calendar provides an option to select **single** or **multiple dates** or **sequence of dates** by using [`isMultiSelection`](https://ej2.syncfusion.com/angular/documentation/api/calendar#ismultiselection) and [`values`](https://ej2.syncfusion.com/angular/documentation/api/calendar#values) properties. By default, [`isMultiSelection`](https://ej2.syncfusion.com/angular/documentation/api/calendar#ismultiselection) property will be in disabled state.
+Calendar provides an option to select **single** or **multiple dates** or **sequence of dates** by using [`isMultiSelection`](https://ej2.syncfusion.com/angular/documentation/api/calendar/#ismultiselection) and [`values`](https://ej2.syncfusion.com/angular/documentation/api/calendar/#values) properties. By default, [`isMultiSelection`](https://ej2.syncfusion.com/angular/documentation/api/calendar/#ismultiselection) property will be in disabled state.
 
 The following example demonstrates the functionality of  `isMultiSelection` property and `values` properties in the Calendar control.
 
