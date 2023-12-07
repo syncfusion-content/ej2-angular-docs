@@ -193,6 +193,6 @@ You need to follow the below structure of HTML elements to render the Toolbar in
 
 ## See Also
 
-* [How to add Toggle Button](./how-to/add-toggle-button)
+* [How to add Toggle Button](./how-to/add-toggle-button/)
 
-N> You can refer to our [Angular Toolbar](https://www.syncfusion.com/angular-components/angular-toolbar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Toolbar Example](https://ej2.syncfusion.com/angular/demos/#/fabric/toolbar/default) that shows you how to render the Toolbar in Angular.
+N> You can refer to our [Angular Toolbar](https://www.syncfusion.com/angular-ui-components/angular-toolbar) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Toolbar Example](https://ej2.syncfusion.com/angular/demos/#/fabric/toolbar/default) that shows you how to render the Toolbar in Angular.

@@ -112,6 +112,6 @@ In the following sample,data with diacritics are bound as dataSource for MultiSe
 
 ## See Also
 
-* [How to bind the data](./data-binding)
-* [How to group the data using header](./grouping)
-* [How to add custom value to the MultiSelect](./custom-value)
+* [How to bind the data](./data-binding/)
+* [How to group the data using header](./grouping/)
+* [How to add custom value to the MultiSelect](./custom-value/)

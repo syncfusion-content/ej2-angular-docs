@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column types
+## Column types
 
 The Syncfusion Grid component allows you to specify the type of data that a column binds using the [columns.type](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format), such as [number](../../common/internationalization/#number-formatting) or [date](../../common/internationalization/#manipulating-datetime), for displaying the column data. 
 
@@ -189,7 +189,7 @@ Format | Formatted value
 
 ### Format the date column based on localization 
 
-You can also format the date column based on the localization settings of the user's browser. You can use the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property of the Grid columns along with the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) property to specify the desired date format based on the locale.
+You can also format the date column based on the localization settings of the user's browser. You can use the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property of the Grid columns along with the [locale](https://helpej2.syncfusion.com/angular/documentation/api/grid/#locale) property to specify the desired date format based on the locale.
 
 In this example, the format property specifies the date format as "**yyyy-MMM-dd**", and the locale property specifies the locale as **"es-AR"** for Spanish (Argentina).
 
@@ -285,7 +285,7 @@ Here is an example of using the `textAlign` property to align the text of a Grid
 
 ## Render boolean value as checkbox
 
-The Grid component allows you to render boolean values as checkboxes in columns. This can be achieved by using the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#displayascheckbox) property, which is available in the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column/). This property is useful when you have a boolean column in your Grid and you want to display the values as checkboxes instead of the default text representation of **true** or **false**.
+The Grid component allows you to render boolean values as checkboxes in columns. This can be achieved by using the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#displayascheckbox) property, which is available in the [columns](https://helpej2.syncfusion.com/angular/documentation/api/grid/column/). This property is useful when you have a boolean column in your Grid and you want to display the values as checkboxes instead of the default text representation of **true** or **false**.
 
 To enable the rendering of boolean values as checkboxes, you need to set the `displayAsCheckBox` property of the `columns` to **true**.
 
@@ -599,7 +599,7 @@ You can update the column definitions in the Grid using the [columns](https://ej
 
 ### Adding/Removing Columns
 
-The Grid component allows you to dynamically add or remove columns to and from the grid using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column/) property, which can be accessed through the instance of the Grid.
+The Grid component allows you to dynamically add or remove columns to and from the grid using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column) property, which can be accessed through the instance of the Grid.
 
 To add a new column to the Grid, you can directly **push** the new column object to the columns property.To remove a column from the Grid, you can use the **pop** method, which removes the last element from the columns array of the Grid. Alternatively, you can use the splice method to remove a specific column from the columns array.
 

@@ -22,7 +22,7 @@ Start by following the steps provided in this [link](https://ej2.syncfusion.com/
 
 **Step 2:** Modify the `PdfViewerController.cs` File in the Web Service Project
 
-1. Create a web service project in .NET Core 3.0 or above. You can refer to this [link](https://support.syncfusion.com/kb/article/9766/how-to-create-pdf-viewer-web-service-in-net-core-31-and-above) for instructions on how to create a web service project.
+1. Create a web service project in .NET Core 3.0 or above. You can refer to this [link](https://www.syncfusion.com/kb/11063/how-to-create-pdf-viewer-web-service-in-net-core-3-0-and-above) for instructions on how to create a web service project.
 
 2. Open the `PdfViewerController.cs` file in your web service project.
 

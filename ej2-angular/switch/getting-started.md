@@ -147,8 +147,8 @@ The below example shows a basic Switch component,
 
 ## Set text on Switch
 
-This section explains how to set [`onLabel`](https://ej2.syncfusion.com/angular/documentation/api/switch/#onlabel)
-and [`offLabel`](https://ej2.syncfusion.com/angular/documentation/api/switch/#offlabel) texts on Switch. In the following example, `onLabel` is set as
+This section explains how to set [`onLabel`](https://ej2.syncfusion.com/angular/documentation/api/switch#onlabel)
+and [`offLabel`](https://ej2.syncfusion.com/angular/documentation/api/switch#offlabel) texts on Switch. In the following example, `onLabel` is set as
 `ON` and `offLabel` is set as `OFF`.
 
 {% tabs %}

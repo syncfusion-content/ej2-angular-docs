@@ -37,7 +37,7 @@ As the Scheduler displays `week` view by default, therefore to change the active
 * TimelineMonth
 * TimelineYear
 
-It is necessary to import and inject the appropriate view modules into the application to make use of these view modes on the Scheduler. Also, it is possible to display only the desired views on the Scheduler. To define and configure specific views, use the [`views`](https://ej2.syncfusion.com/angular/documentation/api/schedule/views/) property.
+It is necessary to import and inject the appropriate view modules into the application to make use of these view modes on the Scheduler. Also, it is possible to display only the desired views on the Scheduler. To define and configure specific views, use the [`views`](https://ej2.syncfusion.com/angular/documentation/api/schedule/views) property.
 
 In the following example, the Scheduler displays 4 views namely, Week, Month, TimelineWeek and Timeline Month. The appropriate view modules are imported and injected properly to display those views on the Scheduler.
 
@@ -85,17 +85,17 @@ There are scenarios where each view may need to have different configurations. F
 | `dateHeaderTemplate` | String | The template option which is used to customize the date header cells and is applied only on the views, wherever it is defined. | All views. |
 | `eventTemplate` | String | The template option to customize the events background. It will get applied to the events of the view to which it is currently being defined. | All views. |
 | `showWeekend` | Boolean | When set to `false`, it hides the weekend days of a week from the views on which it is defined.| All views. |
-| `group` | [GroupModel](https://ej2.syncfusion.com/angular/documentation/api/schedule/groupModel/) | Allows to set different resource grouping options on all available Scheduler view modes. | All views. |
+| `group` | [GroupModel](https://ej2.syncfusion.com/angular/documentation/api/schedule/groupModel) | Allows to set different resource grouping options on all available Scheduler view modes. | All views. |
 | `cellTemplate` | String | The template option to customize the work cells of the Scheduler and is applied only on the views, on which it is defined. | Applicable on all views except Agenda view. |
 | `workDays` | Number[] | It is used to set the working days on the Scheduler views. | Applicable on all views except Agenda view. |
 | `displayName` | String | When a particular view is customized to display with different intervals, this property allows the user to set different display name for each of the views. | Applicable on all views except Agenda and Month Agenda. |
 | `interval` | Number | It allows to customize the default Scheduler views with different set of days, weeks, work weeks or months on the applicable view type. | Applicable on all views except Agenda and Month Agenda. |
 | `startHour` | String | It is used to specify the start hour, from which the Scheduler should be displayed. It accepts the time string in a short skeleton format and also, hides the time beyond the specified start time. | Applicable on Day, Week, Work Week, Timeline Day, Timeline Week and Timeline Work Week views. |
 | `endHour` | String | It is used to specify the end hour, at which the Scheduler ends. It accepts the time string in a short skeleton format. | Applicable on Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views. |
-| `timeScale` | [TimeScaleModel](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScaleModel/) | Allows to set different timescale configuration on each applicable view modes. | Applicable on Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views. |
+| `timeScale` | [TimeScaleModel](https://ej2.syncfusion.com/angular/documentation/api/schedule/timeScaleModel) | Allows to set different timescale configuration on each applicable view modes. | Applicable on Day, Week, Work Week, Timeline Day, Timeline Week, and Timeline Work Week views. |
 | `showWeekNumber` | Boolean | When set to `true`, shows the week number on the respective weeks.| Applicable on Day, Week, Work Week, and Month views. |
 | `allowVirtualScrolling` | Boolean | It is used to enable or disable the virtual scrolling functionality. | Applicable on Agenda and Timeline views. |
-| `headerRows` | [HeaderRowsModel](https://ej2.syncfusion.com/angular/documentation/api/schedule/headerRowsModel/) | Allows defining the custom header rows on timeline views of the Scheduler to display the year, month, week, date and hour label as an individual row. | Applicable only on all timeline views. |
+| `headerRows` | [HeaderRowsModel](https://ej2.syncfusion.com/angular/documentation/api/schedule/headerRowsModel) | Allows defining the custom header rows on timeline views of the Scheduler to display the year, month, week, date and hour label as an individual row. | Applicable only on all timeline views. |
 
 ### Day view
 

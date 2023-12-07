@@ -16,7 +16,7 @@ Chart provide supports for internationalization for below chart elements.
 * Tooltip.
 * Crosshair
 
-For more information about number and date formatter you can refer [`internationalization`](https://ej2.syncfusion.com/angular/documentation/stock-chart/internationalization?no-cache=1).
+For more information about number and date formatter you can refer [`internationalization`](https://ej2.syncfusion.com/angular/documentation/stock-chart/internationalization/?no-cache=1).
 
 <!-- markdownlint-disable MD036 -->
 **Globalization**

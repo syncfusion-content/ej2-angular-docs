@@ -26,7 +26,7 @@ Please note that this license key is different from the installer unlock key tha
 
 * **License Key** - Syncfusion License Key is a string that needs to be registered in your script to avoid licensing warning.
 
-> Refer to [this](https://support.syncfusion.com/kb/article/7863/difference-between-the-unlock-key-and-licensing-key) KB article to know more about difference between the Syncfusion Unlock Key and the Syncfusion License Key.
+> Refer to [this](https://www.syncfusion.com/kb/8950/difference-between-the-unlock-key-and-licensing-key) KB article to know more about difference between the Syncfusion Unlock Key and the Syncfusion License Key.
 
 ## Registering Syncfusion license keys in Build server
 
@@ -38,6 +38,6 @@ Please note that this license key is different from the installer unlock key tha
 
 ## See Also
 
-* [How to Generate Syncfusion EJ2-Angular License Key?](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-generation)
-* [How to Register Syncfusion License Key in EJ2-Angular Application?](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration)
-* [Licensing FAQ](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot)
+* [How to Generate Syncfusion EJ2-Angular License Key?](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-generation/)
+* [How to Register Syncfusion License Key in EJ2-Angular Application?](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration/)
+* [Licensing FAQ](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot/)

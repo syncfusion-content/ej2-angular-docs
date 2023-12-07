@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Autofill in Angular Combo box component
 
-The ComboBox supports the `autofill` behaviour with the help of [autofill](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#autofill) property. Whenever you change the input value, the ComboBox will autocomplete your data by matching the typed character. Suppose, if no matches found then, comboBox doesn't suggest any item.
+The ComboBox supports the `autofill` behaviour with the help of [autofill](https://ej2.syncfusion.com/angular/documentation/api/combo-box#autofill) property. Whenever you change the input value, the ComboBox will autocomplete your data by matching the typed character. Suppose, if no matches found then, comboBox doesn't suggest any item.
 
 The following examples, showcase that how to work autofill with ComboBox.
 

@@ -14,7 +14,7 @@ The ColorPicker component supports no color functionality. By clicking the no co
 
 ## Default no color
 
-To achieve this, set [`noColor`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#nocolor) property as `true`.
+To achieve this, set [`noColor`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#nocolor) property as `true`.
 
 In the following sample, the first tile of the color palette represents the no color tile. By clicking the no color tile you can achieve the above functionalities.
 

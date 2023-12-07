@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Chart component
 
-This section explains you the steps required to create a simple [Angular Chart](https://www.syncfusion.com/angular-components/angular-charts) and demonstrate the basic usage of the Chart component in an Angular environment.
+This section explains you the steps required to create a simple [Angular Chart](https://www.syncfusion.com/angular-ui-components/angular-charts) and demonstrate the basic usage of the Chart component in an Angular environment.
 
 To get start quickly with Angular Chart using CLI and Schematics, you can check on this video:
 
@@ -210,7 +210,7 @@ Since the JSON contains category data, set the [`valueType`](https://ej2.syncfus
 
 The sales data are in thousands, so format the vertical axis label by adding
 <b>$</b> as a prefix and `K` as a suffix to each label. This can be achieved by setting the
-`${value}K` to the [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelformat) property of axis. Here, `{value}` act as a placeholder
+`${value}K` to the [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective#labelformat) property of axis. Here, `{value}` act as a placeholder
 for each axis label.
 
 

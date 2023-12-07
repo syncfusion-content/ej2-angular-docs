@@ -12,15 +12,15 @@ domainurl: ##DomainURL##
 
 Edited data can be persisted in the database using the RESTful web services.
 
-All the CRUD operations in the grid are done through [`DataManager`](../../data/). The [`DataManager`](../../data/) has an option to bind all the CRUD related data in server-side.
+All the CRUD operations in the grid are done through [`DataManager`](../../data). The [`DataManager`](../../data) has an option to bind all the CRUD related data in server-side.
 
 > For your information, the ODataAdaptor persists data in the server as per OData protocol.
 
-In the below section, we have explained how to get the edited data details on the server-side using the [`UrlAdaptor`](../../data/adaptors#url-adaptor).
+In the below section, we have explained how to get the edited data details on the server-side using the [`UrlAdaptor`](../../data/adaptors/#url-adaptor).
 
 ## Using URL adaptor
 
-You can use the [`UrlAdaptor`](../../data/adaptors#url-adaptor) of [`DataManager`](../../data/) when binding data source from remote data. In the initial load of grid, data are fetched from remote data and bound to the grid using **url** property of [`DataManager`](../../data/).
+You can use the [`UrlAdaptor`](../../data/adaptors/#url-adaptor) of [`DataManager`](../../data) when binding data source from remote data. In the initial load of grid, data are fetched from remote data and bound to the grid using **url** property of [`DataManager`](../../data).
 
 You can map The CRUD operation in grid can be mapped to server-side Controller actions using the properties **insertUrl**, **removeUrl**, **updateUrl**, **crudUrl** and **batchUrl**.
 

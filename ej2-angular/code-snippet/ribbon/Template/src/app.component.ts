@@ -8,7 +8,7 @@ import { Ribbon } from '@syncfusion/ej2-ribbon';
 })
 export class AppComponent {
   @ViewChild('ribbon')
-  public ribbonObj: Ribbon;
+  public ribbonObj!: Ribbon;
 
   public pasteButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-paste", content: "Paste" };
   public copyButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-copy", content: "Copy" };
@@ -33,7 +33,8 @@ export class AppComponent {
 
   public ribbonCreated() {
     if (this.ribbonObj) {
-      this.ribbonObj.element.querySelector('.e-ribbon-backstage').addEventListener('click', this.displayPopup);
+      let ribbonEle = this.ribbonObj.element.querySelector('.e-ribbon-backstage');
+      if (ribbonEle) ribbonEle.addEventListener('click', this.displayPopup);
     }
   }
 

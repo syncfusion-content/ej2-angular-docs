@@ -14,7 +14,7 @@ Filtering is a powerful feature in the Syncfusion Grid component that enables yo
 
 To use filter, inject **FilterService** in the provider section of **AppModule**.
 
-To enable filtering in the Grid, you need to set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property of the Grid component to true. Once filtering is enabled, you can configure various filtering options through the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/) property of the Grid component. This property allows you to define the behavior and appearance of the filter.
+To enable filtering in the Grid, you need to set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property of the Grid component to true. Once filtering is enabled, you can configure various filtering options through the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings) property of the Grid component. This property allows you to define the behavior and appearance of the filter.
 
 Here is an example that demonstrates the default filtering feature of the grid:
 

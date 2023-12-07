@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Center label
+## Center label
 
 Using [`centerLabel`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/centerLabel) it is now possible to place a label at the center of a pie or donut chart. To configure the default text rendered on the center label for the pie and doughnut charts, use the [`text`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/centerLabel/#text) property in the [`centerLabel`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/centerLabel).
 
