@@ -21,6 +21,8 @@ You can use the following key shortcuts when the Rich Text Editor renders with H
 | Toolbar focus | <kbd>Alt</kbd> + <kbd>f10</kbd> |
 | Insert link | <kbd>Ctrl</kbd> + <kbd>k</kbd> |
 | Insert image | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd> |
+| Insert audio | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>a</kbd> |
+| Insert video | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>v</kbd> |
 | Insert table | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> |
 | Undo | <kbd>Ctrl</kbd> + <kbd>z</kbd> |
 | Redo | <kbd>Ctrl</kbd> + <kbd>y</kbd> |
