@@ -10,7 +10,7 @@ import { Column, EditSettingsModel, PageSettingsModel, ToolbarItems, IEditCell, 
   selector: 'app-root',
   template: `<ejs-grid #grid [dataSource]='data' [allowPaging]='true' [editSettings]='editSettings' [pageSettings]='pageOptions' [toolbar]='toolbar' height='273px'>
                 <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' type='number' textAlign='Right' isPrimaryKey='true' [validationRules]="orderidrules" width=100></e-column>
+                    <e-column field='OrderID' headerText='Order ID' type='number' textAlign='Right' isPrimaryKey='true'  width=100></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' type= 'string' [edit]='daParams' width=140></e-column>
                     <e-column field='Freight' headerText='Freight' type= 'number' textAlign= 'Right' editType= 'numericedit' format= 'C2' width=120></e-column>
                     <e-column field='OrderDate' headerText='Order Date' type= 'date' format= 'yMd' editType= 'datepickeredit' width=150></e-column>
@@ -34,11 +34,10 @@ export class AppComponent implements OnInit {
     { CustomerID: 'VICTE', Id: '4' },
     { CustomerID: 'SUPRD', Id: '5' },
   ];
-  public orderidrules?: any;
 
   public createCustomerIDFn = () => {
     this.inpuEle = document.createElement('input');
-    return (this as any).inpuEle;
+    return this.inpuEle;
   }
   public destroyCustomerIDFn = () => {
     this.autoCompleteIns?.destroy();
@@ -47,21 +46,21 @@ export class AppComponent implements OnInit {
     return this.autoCompleteIns?.value;
   }
   public writeCustomerIDFn = (args: any) => {
-    (this as any).autoCompleteIns = new AutoComplete({
+    this.autoCompleteIns = new AutoComplete({
       allowCustom: true,
-      value: (args as any).rowData[(args as any).column.field],
-      dataSource: (this as any).autoCompleteData as any,
+      value: args.rowData[args.column.field],
+      dataSource: this.autoCompleteData ,
       fields: { value: 'CustomerID', text: 'CustomerID' },
     });
-    this.autoCompleteIns?.appendTo((this as any).inpuEle);
+    this.autoCompleteIns?.appendTo(this.inpuEle);
   }
 
   ngOnInit(): void {
     this.data = purchaseData;
     this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
     this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    (this as any).pageOptions = { pageSizes: true, pageSize: 8 };
-    (this as any).daParams = {
+    this.pageOptions = { pageSizes: true, pageSize: 8 };
+    this.daParams = {
       create: this.createCustomerIDFn,
       read: this.readCustomerIDFn,
       destroy: this.destroyCustomerIDFn,
