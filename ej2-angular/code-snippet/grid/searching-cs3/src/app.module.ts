@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { GridModule, SearchService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 import { AppComponent } from './app.component';
 
 /**
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
     imports: [
         BrowserModule,
         GridModule,
-        ButtonModule
+        ButtonModule,
+        TextBoxModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],

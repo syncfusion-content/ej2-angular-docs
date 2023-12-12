@@ -199,7 +199,7 @@ For more information about data source support, refer to the [`Data Source Bindi
 ## Group Menu items with separator
 
 The separators are both horizontal and vertical lines used to separate the menu items.
-You cannot select the separators, but you can enable separators to group the menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel#separator) property.
+You cannot select the separators, but you can enable separators to group the menu items using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/#separator) property.
 The `Open` and `Save` sub menu items are grouped using the `separator` property in the following sample.
 
 {% tabs %}
@@ -216,5 +216,5 @@ The `Open` and `Save` sub menu items are grouped using the `separator` property 
   
 {% previewsample "page.domainurl/samples/menu/getting-started-cs4" %}
 
-> The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel#separator) property should not be given along with the other fields in the [`MenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel).
+> The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/#separator) property should not be given along with the other fields in the [`MenuItemModel`](https://ej2.syncfusion.com/angular/documentation/api/menu/menuItemModel/).
 You can also enable the separator to group **horizontal** menu items.

@@ -41,12 +41,12 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if ((args as any).item.id === 'Grid_pdfexport') {
+        if (args.item.id === 'Grid_pdfexport') {
             // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
             const pdfExportProperties: PdfExportProperties = {
-                includeHiddenColumn: (this.switch as any).checked,
+                includeHiddenColumn: (this.switch as SwitchComponent).checked as boolean,
             };
-            (this.grid as any).pdfExport(pdfExportProperties);
+            (this.grid as GridComponent).pdfExport(pdfExportProperties);
         }
         
     }

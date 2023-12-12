@@ -46,11 +46,11 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if ((args as any).item.id === 'Grid_pdfexport') { // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
+        if (args.item.id === 'Grid_pdfexport') { // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
             const pdfExportProperties: PdfExportProperties = {
-                pageOrientation: (this.dropDownList as any).value as any,
+                pageOrientation: (this.dropDownList as DropDownListComponent).value as PdfExportProperties["pageOrientation"],
             };
-            (this.grid as any).pdfExport(pdfExportProperties);
+            (this.grid as GridComponent).pdfExport(pdfExportProperties);
         }
     }
 }

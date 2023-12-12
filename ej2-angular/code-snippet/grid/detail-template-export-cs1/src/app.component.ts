@@ -4,6 +4,28 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { employeeData } from './datasource';
 import { GridComponent, ExportDetailTemplateEventArgs } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
+
+interface Row {
+    data: DataType;
+    parentRow: object[]
+}
+interface DataType {
+    Category: string,
+    Offers: string,
+    Cost: string,
+    Available: string,
+    ItemID: string,
+    ProductID: string,
+    Contact: string,
+    Status: string,
+    ProductImg: string,
+    productDesc: string,
+    ReturnPolicy: string,
+    Delivery: string,
+    Cancellation: string,
+    Ratings: string
+}
+
 @Component({
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]="data" id="DetailTemplateGrid" [toolbar]="toolbar" [allowPdfExport]="true"
@@ -101,11 +123,13 @@ export class AppComponent implements OnInit {
 
     toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'DetailTemplateGrid_pdfexport') {
-            this.grid!.pdfExport({ hierarchyExportMode: 'Expanded' });
+            (this.grid as GridComponent).pdfExport({ hierarchyExportMode: 'Expanded' });
         }
     }
 
     exportDetailTemplate(args: ExportDetailTemplateEventArgs): void {
+        const parentRow = (args.parentRow as object as Row)
+        const columnData=parentRow.data as DataType
         args.value = {
             columnCount: 2,
             columnHeader: [
@@ -130,11 +154,11 @@ export class AppComponent implements OnInit {
                         {
                             index: 0,
                             rowSpan: 4,
-                            image: { base64: (args.parentRow as any).data['ProductImg'], width: 80 },
+                            image: { base64: columnData['ProductImg'], width: 80 },
                         },
                         {
                             index: 1,
-                            value: 'Offers: ' + (args.parentRow as any).data['Offers'],
+                            value: 'Offers: ' + columnData['Offers'],
                             style: { fontColor: '#0A76FF', fontSize: 15 },
                         },
                     ],
@@ -143,7 +167,7 @@ export class AppComponent implements OnInit {
                     cells: [
                         {
                             index: 1,
-                            value: 'Available: ' + (args.parentRow as any).data['Available'],
+                            value: 'Available: ' + columnData['Available'],
                         },
                     ],
                 },
@@ -153,8 +177,8 @@ export class AppComponent implements OnInit {
                             index: 1,
                             value: 'Contact: ',
                             hyperLink: {
-                                target: 'mailto:' + (args.parentRow as any).data['Contact'],
-                                displayText: (args.parentRow as any).data['Contact'],
+                                target: 'mailto:' + columnData['Contact'],
+                                displayText: columnData['Contact'],
                             },
                         },
                     ],
@@ -163,7 +187,7 @@ export class AppComponent implements OnInit {
                     cells: [
                         {
                             index: 1,
-                            value: 'Ratings: ' + (args.parentRow as any).data['Ratings'],
+                            value: 'Ratings: ' + columnData['Ratings'],
                             style: { fontColor: '#0A76FF', fontSize: 15 },
                         },
                     ],
@@ -172,30 +196,30 @@ export class AppComponent implements OnInit {
                     cells: [
                         {
                             index: 0,
-                            value: (args.parentRow as any).data['productDesc'],
+                            value: columnData['productDesc'],
                             style: { pdfTextAlignment: 'Center' },
                         },
-                        { index: 1, value: (args.parentRow as any).data['ReturnPolicy'] },
+                        { index: 1, value: columnData['ReturnPolicy'] },
                     ],
                 },
                 {
                     cells: [
                         {
                             index: 0,
-                            value: (args.parentRow as any).data['Cost'],
+                            value: columnData['Cost'],
                             style: { bold: true, pdfTextAlignment: 'Center' },
                         },
-                        { index: 1, value: (args.parentRow as any).data['Cancellation'] },
+                        { index: 1, value: columnData['Cancellation'] },
                     ],
                 },
                 {
                     cells: [
                         {
                             index: 0,
-                            value: (args.parentRow as any).data['Status'],
+                            value: columnData['Status'],
                             style: {
                                 fontColor:
-                                    (args.parentRow as any).data['Status'] === 'Available'
+                                columnData['Status'] === 'Available'
                                         ? '#00FF00'
                                         : '#FF0000',
                                 pdfTextAlignment: 'Center',
@@ -204,7 +228,7 @@ export class AppComponent implements OnInit {
                         },
                         {
                             index: 1,
-                            value: (args.parentRow as any).data['Delivery'],
+                            value: columnData['Delivery'],
                             style: { fontColor: '#0A76FF', fontSize: 15 },
                         },
                     ],

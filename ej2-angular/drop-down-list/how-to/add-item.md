@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Add item in Angular Drop down list component
 
-You can add item in between based on item [`index`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#index). If you add new item without item index, item will be added as last item in list.
+You can add item in between based on item [`index`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#index). If you add new item without item index, item will be added as last item in list.
 
 To get started quickly with adding items in angular DropDownList component, you can check the video below.
 
