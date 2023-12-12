@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
 
     toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'Grid_pdfexport') {
-            (this.grid as any).pdfExport();
+            (this.grid as GridComponent).pdfExport();
         }
     }
 }

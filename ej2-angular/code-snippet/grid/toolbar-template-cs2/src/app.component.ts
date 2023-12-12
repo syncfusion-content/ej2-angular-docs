@@ -33,15 +33,15 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
 
-    exportAction(args: any) {
-        if ((args as any).currentTarget.id === 'excelButton') {
-            (this.grid as any).excelExport();
+    exportAction(args: MouseEvent) {
+        if ((args.currentTarget  as HTMLElement).id === 'excelButton') {
+            (this.grid as GridComponent).excelExport();
         }
-        else if ((args as any).currentTarget.id === 'pdfButton') {
-            (this.grid as any).pdfExport();
+        else if ((args.currentTarget as HTMLElement).id === 'pdfButton') {
+            (this.grid as GridComponent).pdfExport();
         }
         else {
-            (this.grid as any).print();
+            (this.grid as GridComponent).print();
         }
     }
 }

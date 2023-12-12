@@ -30,12 +30,12 @@ export class AppComponent implements OnInit {
   }
 
   toolbarClick(args: ClickEventArgs) {
-    if ((args as any).item.id === 'Grid_pdfexport') {
-      const filteredRecords = (this.grid as any).getFilteredRecords();
+    if (args.item.id === 'Grid_pdfexport') {
+      const filteredRecords = (this.grid as GridComponent).getFilteredRecords();
         const exportProperties = {
           dataSource: filteredRecords,
         };
-        (this.grid as any).pdfExport(exportProperties);
+        (this.grid as GridComponent).pdfExport(exportProperties);
     }
   }
 }

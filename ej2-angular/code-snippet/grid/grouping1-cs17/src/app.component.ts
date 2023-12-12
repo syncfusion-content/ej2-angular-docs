@@ -67,10 +67,10 @@ export class AppComponent implements OnInit {
       public field?: object = { text: 'text', value: 'value' };
   
       groupColumn() {
-        (this.grid as any).groupColumn((this.dropDown as any).value as any);
+        (this.grid as GridComponent).groupColumn((this.dropDown as DropDownListComponent).value as string);
       }
     
       unGroupColumn() {
-        (this.grid as any).ungroupColumn((this.dropDown as any).value as any);
+        (this.grid as GridComponent).ungroupColumn((this.dropDown as DropDownListComponent).value as string);
       }
 }

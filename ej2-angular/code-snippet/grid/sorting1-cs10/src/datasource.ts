@@ -70,7 +70,122 @@ export let data: Object[] = [
         ShipRegion: 'RJ', ShipPostalCode: '02389-673', ShipCountry: 'Brazil', Freight: 3.05, Verified: !1
     },
     {
-        OrderID: 10262, CustomerID: 'RATTC', EmployeeID: 8, OrderDate: new Date(8379738e5),
+        OrderID: 10262, CustomerID: 'VINET', EmployeeID: 8, OrderDate: new Date(8379738e5),
         ShipName: 'Rattlesnake Canyon Grocery', ShipCity: 'Albuquerque', ShipAddress: '2817 Milton Dr.',
         ShipRegion: 'NM', ShipPostalCode: '87110', ShipCountry: 'USA', Freight: 48.29, Verified: !0
     }];
+
+    export const customerData: Object[] = [
+        {
+            "CustomerID": "VINET",
+            "ContactName": "Maria ",
+            "CompanyName": "Alfreds Futterkiste",
+            "Address": "Obere Str. 57",
+            "Country": "Germany"
+        },
+        {
+            "CustomerID": "TOMSP",
+            "ContactName": "Ana Trujillo",
+            "CompanyName": "Ana Trujillo Emparedados y helados",
+            "Address": "Avda. de la Constitución 2222",
+            "Country": "Mexico"
+        },
+        {
+            "CustomerID": "HANAR",
+            "ContactName": "Antonio Moreno",
+            "CompanyName": "Antonio Moreno Taquería",
+            "Address": "Mataderos  2312",
+            "Country": "Mexico"
+        },
+        {
+            "CustomerID": "VICTE",
+            "ContactName": "Thomas Hardy",
+            "CompanyName": "Around the Horn",
+            "Address": "120 Hanover Sq.",
+            "Country": "UK"
+        },
+        {
+            "CustomerID": "SUPRD",
+            "ContactName": "Christina Berglund",
+            "CompanyName": "Berglunds snabbköp",
+            "Address": "Berguvsvägen  8",
+            "Country": "Sweden"
+        },
+        {
+            "CustomerID": "HANAR",
+            "ContactName": "Hanna Moos",
+            "CompanyName": "Blauer See Delikatessen",
+            "Address": "Forsterstr. 57",
+            "Country": "Germany"
+        },
+        {
+            "CustomerID": "CHOPS",
+            "ContactName": "Frédérique Citeaux",
+            "CompanyName": "Blondesddsl père et fils",
+            "Address": "24, place Kléber",
+            "Country": "France"
+        },
+        {
+            "CustomerID": "RICSU",
+            "ContactName": "Martín Sommer",
+            "CompanyName": "Bólido Comidas preparadas",
+            "Address": "C/ Araquil, 67",
+            "Country": "Spain"
+        },
+        {
+            "CustomerID": "WELLI",
+            "ContactName": "Laurence Lebihan",
+            "CompanyName": "Bon app'",
+            "Address": "12, rue des Bouchers",
+            "Country": "France"
+        },
+        {
+            "CustomerID": "HILAA",
+            "ContactName": "Elizabeth Lincoln",
+            "CompanyName": "Bottom-Dollar Markets",
+            "Address": "23 Tsawassen Blvd.",
+            "Country": "Canada"
+        },
+        {
+            "CustomerID": "ERNSH",
+            "ContactName": "Victoria Ashworth",
+            "CompanyName": "B's Beverages",
+            "Address": "Fauntleroy Circus",
+            "Country": "UK"
+        },
+        {
+            "CustomerID": "CACTU",
+            "ContactName": "Patricio Simpson",
+            "CompanyName": "Cactus Comidas para llevar",
+            "Address": "Cerrito 333",
+            "Country": "Argentina"
+        },
+        {
+            "CustomerID": "CENTC",
+            "ContactName": "Francisco Chang",
+            "CompanyName": "Centro comercial Moctezuma",
+            "Address": "Sierras de Granada 9993",
+            "Country": "Mexico"
+        },
+        {
+            "CustomerID": "CHOPS",
+            "ContactName": "Yang Wang",
+            "CompanyName": "Chop-suey Chinese",
+            "Address": "Hauptstr. 29",
+            "Country": "Switzerland"
+        },
+        {
+            "CustomerID": "QUEDE",
+            "ContactName": "Pedro Afonso",
+            "CompanyName": "Comércio Mineiro",
+            "Address": "Av. dos Lusíadas, 23",
+            "Country": "Brazil"
+        },
+        {
+            "CustomerID": "OTTIK",
+            "ContactName": "Elizabeth Brown",
+            "CompanyName": "Consolidated Holdings",
+            "Address": "Berkeley Gardens 12  Brewery",
+            "Country": "UK"
+        },
+    ]
