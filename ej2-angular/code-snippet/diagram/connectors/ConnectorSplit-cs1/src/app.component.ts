@@ -5,13 +5,14 @@ import { Diagram, DiagramComponent, NodeModel, ConnectorModel,ConnectorConstrain
 
 @Component({
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" enableConnectorSplit:true [nodes]='nodes' [connectors]='connectors'>
+    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [enableConnectorSplit]="enableConnectorSplit" [nodes]='nodes' [connectors]='connectors'>
     </ejs-diagram>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
+    public enableConnectorSplit: boolean = true;
     public constraints?: ConnectorConstraints;
     public nodes: NodeModel[] = [
     { id: 'node1', offsetX: 150, offsetY: 150, width: 100, height: 100, annotations: [{ content: 'node1' }] },

@@ -559,7 +559,7 @@ The following table contains various representation of message flows.
 
 | Message | Image |
 | -------- | -------- |
-| Default | ![DefaultImage](images/Default1.png) |
+| Default | ![DefaultImage](images/Message-default.png) |
 | InitiatingMessage | ![InitiatingMessageImage](images/IMessage.png) |
 | NonInitiatingMessage | ![NonInitiatingMessageImage](images/NIMessage.png) |
 
