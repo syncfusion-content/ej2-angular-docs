@@ -69,7 +69,7 @@ export class AppComponent implements OnInit {
 
 The Grid component provides support for rendering hyperlink columns and performing routing on click using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property. This feature is useful when displaying data that requires a link to another page or website.
 
-The following example demonstrates, hot to render hyperlink column in the Grid using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property of the `e-column` tag. To define a `template` for the column,  you can use the `ng-template` with the `a` tag to create the hyperlink. The onClick function is triggered when the hyperlink is clicked.
+The following example demonstrates, how to render hyperlink column in the Grid using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property of the `e-column` tag. To define a `template` for the column,  you can use the `ng-template` with the `a` tag to create the hyperlink. The onClick function is triggered when the hyperlink is clicked.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

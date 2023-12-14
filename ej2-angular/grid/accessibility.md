@@ -222,3 +222,41 @@ The following example demonstrates how to prevent the default behavior of the **
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/keyboard-navigation-cs1" %}
+
+### Custom shortcut keys to perform grid actions
+
+The Syncfusion Angular Grid component enables you to enhance the usablity of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
+
+To achieve this, you can utilize the [keyPressed](https://ej2.syncfusion.com/angular/documentation/api/grid/#keypressed) event of the grid. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
+
+The following example demonstrates how to perform grid actions using shortcut keys through the `keyPressed` event. Within the event, define the following custom shortcuts to perform various grid actions:
+
+* Pressing N adds a new record.
+* Pressing Ctrl + S save a record by invoking endEdit.
+* Pressing Ctrl + D deletes a record.
+* Pressing Ctrl + A selects all rows.
+* Pressing Ctrl + G groups the grid by a specified column.
+
+And prevented the default actions associated with the following keyboard shortcuts used for default grouping and editing action:
+
+* Ctrl + Space
+* Insert
+* F2 
+* Delete 
+* Enter
+
+You can add more custom shortcuts and actions as needed to enhance the functionality of your Syncfusion Angular Grid component.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/edit-cs51/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/edit-cs51/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/edit-cs51/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/edit-cs51" %}
