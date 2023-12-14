@@ -34,7 +34,7 @@ The Syncfusion Angular Grid component allows you to calculate and display aggreg
 
 ## Format the aggregate value
 
-To format the aggregate value result in the Syncfusion Angular Grid component, you can use the [format](https://helpej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#format) property of the[AggregateColumnDirective](https://helpej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/). The `format` property allows you to specify a format string that determines how the aggregate value will be displayed.
+To format the aggregate value result in the Syncfusion Angular Grid component, you can use the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#format) property of the[AggregateColumnDirective](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/). The `format` property allows you to specify a format string that determines how the aggregate value will be displayed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,5 +70,5 @@ In the following, footer content is appended to the header content using the `da
 {% include code-snippet/grid/aggregates-footer-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/aggregates-footer-cs3" %}

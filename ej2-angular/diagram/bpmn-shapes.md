@@ -48,7 +48,7 @@ The BPMN shapes and its types are explained as follows.
 
 ## Event
 
-An [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent) is notated with a circle and it represents an event in a business process. The type of events are as follows:
+An [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent/) is notated with a circle and it represents an event in a business process. The type of events are as follows:
 
 * Start
 * End
@@ -90,7 +90,7 @@ Event triggers are notated as icons inside the circle and they represent the spe
 
 ## Gateway
 
-Gateway is used to control the flow of a process and it is represented as a diamond shape. To create a gateway, the shape property of the node should be set as “gateway” and the [`gateway`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnGateway) property can be set with any of the appropriate gateways. The following code example illustrates how to create a BPMN Gateway.
+Gateway is used to control the flow of a process and it is represented as a diamond shape. To create a gateway, the shape property of the node should be set as “gateway” and the [`gateway`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnGateway/) property can be set with any of the appropriate gateways. The following code example illustrates how to create a BPMN Gateway.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -122,7 +122,7 @@ There are several types of gateways as tabulated:
 
 ## Activity
 
-The [`activity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnActivities) is the task that is performed in a business process. It is represented by a rounded rectangle.
+The [`activity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnActivities/) is the task that is performed in a business process. It is represented by a rounded rectangle.
 
 There are two types of activities. They are listed as follows:
 
@@ -149,7 +149,7 @@ The different activities of BPMN process are listed as follows.
 
 ## Tasks
 
-The [`task`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask) property of the node allows you to define the type of task such as sending, receiving, user based task, etc. By default, the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask/#type) property of task is set as **none**. The following code illustrates how to create different types of BPMN tasks.
+The [`task`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask/) property of the node allows you to define the type of task such as sending, receiving, user based task, etc. By default, the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask/#type) property of task is set as **none**. The following code illustrates how to create different types of BPMN tasks.
 The events property of tasks allow to represent these results as an event attached to the task.
 
 {% tabs %}
@@ -181,7 +181,7 @@ The various types of BPMN tasks are tabulated as follows.
 
 ## Subprocess
 
-A [`sub-process`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess) is a group of tasks, which is used to hide or reveal details of additional levels using the [`collapsed`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess#collapsed-boolean)  property.
+A [`sub-process`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/) is a group of tasks, which is used to hide or reveal details of additional levels using the [`collapsed`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#collapsed-boolean)  property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -204,7 +204,7 @@ The different types of subprocess are as follows:
 
 ## Event subprocess
 
-A subprocess is defined as an event subprocess, when it is triggered by an event. An event subprocess is placed within another subprocess which is not part of the normal flow of its parent process. You can set event to a subprocess with the [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent) and [`trigger`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent/#trigger) property of the subprocess. The [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#type) property of subprocess allows you to define the type of subprocess whether it should be event subprocess or transaction subprocess.
+A subprocess is defined as an event subprocess, when it is triggered by an event. An event subprocess is placed within another subprocess which is not part of the normal flow of its parent process. You can set event to a subprocess with the [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent/) and [`trigger`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent/#trigger) property of the subprocess. The [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#type) property of subprocess allows you to define the type of subprocess whether it should be event subprocess or transaction subprocess.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -222,7 +222,7 @@ A subprocess is defined as an event subprocess, when it is triggered by an event
 
 ## Transaction subprocess
 
-* [`transaction`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTransactionSubProcessModel) is a set of activities that logically belong together, in which all contained activities must complete their parts of the transaction; otherwise the process is undone. The execution result of a transaction is one of Successful Completion, Unsuccessful Completion (Cancel), and Hazard (Exception). The `events` property of subprocess allows to represent these results as an event attached to the subprocess.
+* [`transaction`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTransactionSubProcessModel/) is a set of activities that logically belong together, in which all contained activities must complete their parts of the transaction; otherwise the process is undone. The execution result of a transaction is one of Successful Completion, Unsuccessful Completion (Cancel), and Hazard (Exception). The `events` property of subprocess allows to represent these results as an event attached to the subprocess.
 
 * The event object allows you to define the type of event by which the subprocess will be triggered. The name of the event can be defined to identify the event at runtime.
 
@@ -252,7 +252,7 @@ Processes is an array collection that defines the children values for BPMN subpr
 
 ## Loop
 
-[`Loop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnLoops) is a task that is internally being looped. The loop property of task allows you to define the type of loop. The default value for `loop` is **none**.
+[`Loop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnLoops/) is a task that is internally being looped. The loop property of task allows you to define the type of loop. The default value for `loop` is **none**.
 
 You can define the loop property in subprocess BPMN shape as shown in the following code.
 
@@ -360,7 +360,7 @@ The following table contains various types of BPMN boundaries.
 
 ## Data
 
-A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a [`data object`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnDataObject), set the shape as **DataObject** and the type property defines whether data is an input or an output. You can create multiple instances of data object with the collection property of data.
+A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a [`data object`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnDataObject/), set the shape as **DataObject** and the type property defines whether data is an input or an output. You can create multiple instances of data object with the collection property of data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -461,11 +461,11 @@ A group is used to frame a part of the diagram, shows that elements included in 
 
 ## BPMN flows
 
-[`BPMN Flows`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow#BpmnFlow) are lines that connects BPMN flow objects.
+[`BPMN Flows`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow/#BpmnFlow) are lines that connects BPMN flow objects.
 
 ## Association
 
-[`BPMN Association`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow#association) flow is used to link flow objects with its corresponding text or artifact. An association is represented as a dotted graphical line with opened arrow. The types of association are as follows:
+[`BPMN Association`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow/#association) flow is used to link flow objects with its corresponding text or artifact. An association is represented as a dotted graphical line with opened arrow. The types of association are as follows:
 
 * Directional
 * BiDirectional
@@ -499,7 +499,7 @@ The following table demonstrates the visual representation of association flows.
 
 ## Sequence
 
-A [`Sequence`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow#sequence) flow shows the order in which the activities are performed in a BPMN process and is represented by a solid graphical line. The types of sequence are as follows:
+A [`Sequence`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow/#sequence) flow shows the order in which the activities are performed in a BPMN process and is represented by a solid graphical line. The types of sequence are as follows:
 
 * Normal
 * Conditional
@@ -533,7 +533,7 @@ The following table contains various representation of sequence flows.
 
 ## Message
 
-A [`Message`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow#message) flow shows the flow of messages between two participants and is represented by dashed line. The types of message are as follows:
+A [`Message`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow/#message) flow shows the flow of messages between two participants and is represented by dashed line. The types of message are as follows:
 
 * InitiatingMessage
 * NonInitiatingMessage
