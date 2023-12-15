@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting started with Angular Carousel component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Carousel component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Carousel Component | Syncfusion
+description: Checkout and learn about getting started with Angular Carousel component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Carousel component
+# Getting started with Angular Carousel Component
 
-This section explains how to create a simple [Angular Carousel](https://www.syncfusion.com/angular-ui-components/angular-carousel), and demonstrate the basic usage of the Carousel module in an Angular environment.
+This section explains how to create a simple [Angular Carousel](https://www.syncfusion.com/angular-components/angular-carousel), and demonstrate the basic usage of the Carousel module in an Angular environment.
 
 ## Dependencies
 
