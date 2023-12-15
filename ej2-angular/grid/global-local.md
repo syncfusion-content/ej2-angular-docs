@@ -14,9 +14,8 @@ The Syncfusion Angular Grid component provides a feature known as Globalization 
 
 ## Localization
 
-The Syncfusion Angular Grid provides a built-in [Localization](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization) library, enabling you to customize the text used in the grid to suit different languages or cultural preferences. With this library, you can change static text on various elements, such as **group drop area text** and **pager information text**, to different cultures, such as **Arabic**, **Deutsch**, **French**, and more.
-
-This can be achieved by defining the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) property and translation object.
+The [`Localization`](../common/globalization/localization) library allows you to localize default text content of the Grid.
+The grid component has static text on some features (like group drop area text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) value and translation object.
 
 The following list of properties and its values are used in the grid.
 
@@ -422,6 +421,6 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 ## See Also
 
-* [Internationalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization)
-* [Localization](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization/)
+* [Internationalization](../common/globalization/internationalization)
+* [Localization](../common/globalization/localization)
 * [Animate the Grid selected row in Angular Grid](https://www.syncfusion.com/forums/144844/apply-grid-localization-from-external-json-file-in-angular-grid)

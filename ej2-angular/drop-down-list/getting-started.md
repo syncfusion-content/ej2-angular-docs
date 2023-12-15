@@ -237,4 +237,4 @@ In DropDownList, the `value` property supports two-way binding functionality. Th
 
 ## See Also
 
-* [How to bind the data](./data-binding/)
+* [How to bind the data](./data-binding)

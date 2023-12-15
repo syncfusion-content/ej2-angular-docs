@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Customize menu using events in Angular Menu component
 
-The Menu provides a set of [`events`](https://ej2.syncfusion.com/angular/documentation/api/menu#events) to enable users to customize it.
+The Menu provides a set of [`events`](https://ej2.syncfusion.com/angular/documentation/api/menu/#events) to enable users to customize it.
 
 The available events are [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeclose), [`beforeClose`](../..api//menu/#beforeopen), [`onClose`](https://ej2.syncfusion.com/angular/documentation/api/menu/#onclose), [`onOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#onopen), and [`select`](../..api//menu/#select).
 

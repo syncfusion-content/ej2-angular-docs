@@ -74,4 +74,4 @@ When height and width of the Scheduler are given as percentage, it will make the
 
 ## See Also
 
-* [How to Change Scheduler Cell Dimensions](./cell-customization/#setting-cell-dimensions-in-all-views)
+* [How to Change Scheduler Cell Dimensions](./cell-customization#setting-cell-dimensions-in-all-views)

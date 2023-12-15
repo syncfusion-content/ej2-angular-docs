@@ -149,7 +149,7 @@ In the following example, the **CustomerID** is initially a hidden column in the
 
 The Grid allows you to export data to Excel with filter options and also export only filtered records. This feature is especially beneficial when you need to share data with others while preserving the ability for them to filter and analyze the data in Excel.
 
-To enable this feature, you should set the [enableFilter](https://helpej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#enablefilter) property to **true** in the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) object. Additionally, you need to set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) to **true** in the grid configuration. This property enables filtering in the grid.
+To enable this feature, you should set the [enableFilter](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#enablefilter) property to **true** in the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) object. Additionally, you need to set [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) to **true** in the grid configuration. This property enables filtering in the grid.
 
 The following example demonstrates how to export data with filter options to an Excel document when a toolbar item is clicked:
 
