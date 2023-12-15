@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Treeview component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Treeview component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular Treeview Component | Syncfusion
+description: Checkout and learn about getting started with Angular Treeview component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Treeview component
+# Getting Started with Angular Treeview Component
 
 This section explains the steps required to create a simple [Angular TreeView](https://www.syncfusion.com/angular-ui-components/angular-treeview) component, and configure its available functionalities
 
