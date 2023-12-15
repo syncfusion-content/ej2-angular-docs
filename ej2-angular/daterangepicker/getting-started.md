@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Daterangepicker component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Daterangepicker component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Date Range Picker Component | Syncfusion
+description: Checkout and learn about getting started with Angular Date Range Picker component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Daterangepicker component
+# Getting Started with Angular Date Range Picker Component
 
 The following section explains the steps required to create a simple DateRangePicker component and also it demonstrates the basic usage of the DateRangePicker.
 
