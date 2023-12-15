@@ -32,6 +32,8 @@ In the following sample, the first tile of the color palette represents the no c
   
 {% previewsample "page.domainurl/samples/colorpicker/no-color/default-cs1" %}
 
+>If the [`noColor`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#nocolor) property is enabled, make sure to disable the [`modeswitcher`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#modeswitcher) property.
+
 ## Custom no color
 
 The following sample show the color palette with custom no color option.
