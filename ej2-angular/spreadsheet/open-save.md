@@ -102,6 +102,24 @@ You can open excel file into a read-only mode by using the [`openComplete`](http
 
 {% previewsample "page.domainurl/samples/spreadsheet/open-save-cs9" %}
 
+### External workbook confirmation dialog
+
+When you open an excel file that contains external workbook references, you will see a confirmation dialog. This dialog allows you to either continue with the file opening or cancel the operation. This confirmation dialog will appear only if you set the `AllowExternalWorkbook` property value to **false** during the open request, as shown below. This prevents the spreadsheet from displaying inconsistent data.
+
+```csharp
+public IActionResult Open(IFormCollection openRequest)
+    {
+        OpenRequest open = new OpenRequest();
+        open.AllowExternalWorkbook = false;
+        open.File = openRequest.Files[0];
+        return Content(Workbook.Open(open));
+    }
+```
+
+> This feature is only applicable when importing an Excel file and not when loading JSON data or binding cell data.
+
+![External workbook confirmation dialog](./images/external-reference-dialog-alert%20.png)
+
 ## Save
 
 The Spreadsheet control saves its data, style, format, and more as Excel file document. To enable this feature, set [`allowSave`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#allowsave) as `true` and assign service url to the [`saveUrl`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#saveurl) property.

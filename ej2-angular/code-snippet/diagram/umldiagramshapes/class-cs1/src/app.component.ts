@@ -18,10 +18,13 @@ export class AppComponent {
     //Position of the node
     offsetX: 200,
     offsetY: 200,
+    style: {
+      fill: '#26A0DA',
+    },
     shape: {
       type: "UmlClassifier",
       //Define class object
-      class: {
+      classShape: {
         name: "Patient",
         //Define class attributes
         attributes: [{ name: "accepted", type: "Date" }],

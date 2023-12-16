@@ -18,10 +18,13 @@ export class AppComponent {
     //Position of the node
     offsetX: 200,
     offsetY: 200,
+    style: {
+      fill: '#26A0DA',
+    },
     shape: {
       type: "UmlClassifier",
       //Define interface object
-      interface: {
+      interfaceShape: {
         name: "Patient",
         //Define interface attributes
         attributes: [{ name: "owner", type: "String[*]" }],

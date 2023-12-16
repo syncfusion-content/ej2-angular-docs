@@ -10,16 +10,17 @@ domainurl: ##DomainURL##
 
 # Umldiagram in Angular Diagram component
 
-## Uml Class Diagram Shapes
+## UML Class Diagram
 
-Class diagram is used to represent the static view of an application. The class diagrams are widely used in the modelling of object oriented systems because they are the only UML diagrams which can be mapped directly with object-oriented languages.
-Diagram supports to generate the class diagram shapes from business logic.
+A class diagram visually depicts the static structure of an application and is extensively employed in modeling object-oriented systems. It holds a unique position in UML diagrams, as it directly aligns with object-oriented languages. The diagram also facilitates automatic generation of class diagram shapes based on business logic, streamlining the translation from conceptual models to practical implementation.
+
+## UML Class Diagram Shapes
 
 The UML class diagram shapes are explained as follows.
 
-## Class
+### Class
 
-* A class describes a set of objects that shares the same specifications of features, constraints, and semantics. To define a class object, you should define the classifier as [`class`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel#class).
+* A class defines a group of objects that share common specifications, features, constraints, and semantics. To create a class object, the classifier should be defined using the [`class`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel#class) notation. This notation serves as a foundational element in object-oriented programming, encapsulating the essential characteristics and behavior that objects belonging to the class will exhibit.
 
 * Also, define the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassModel#name), [`attributes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassModel#attributes), and [`methods`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassModel#methods) of the class using the class property of node.
 
@@ -45,9 +46,9 @@ The UML class diagram shapes are explained as follows.
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/class-cs1" %}
 
-## Interface
+### Interface
 
-* An Interface is a kind of classifier that represents a declaration of a set of coherent public features and obligations. To create an interface, define the classifier property as [`interface`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel#interface).
+* An interface is a specific type of classifier that signifies a declaration of a cohesive set of public features and obligations. When creating an interface, it involves defining the classifier property using the [`interface`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel#interface) notation. This essential concept in object-oriented programming outlines a contract for classes to adhere to, specifying the required methods and behaviors without delving into the implementation details.
 
 * Also, define the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel#name), [`attributes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel#attributes), and [`methods`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel#methods) of the interface using the interface property of the node.
 
@@ -73,9 +74,9 @@ The UML class diagram shapes are explained as follows.
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/interface-cs1" %}
 
-## Enumeration
+### Enumeration
 
-* To define an enumeration, define the classifier property of node as [`enumeration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel#enumeration). Also, define the name and members of the enumeration using the enumeration property of the node.
+* To establish an enumeration, designate the classifier property of the node as [enumeration](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel#enumeration). Additionally, define the name and enumerate the members of the enumeration using the appropriate enumeration property of the node. This process encapsulates a set of distinct values within the enumeration, allowing for a clear representation of specific, named constants within a system.
 
 * You can set a name for the enumeration members collection using the name property of members collection.
 
@@ -95,19 +96,9 @@ The UML class diagram shapes are explained as follows.
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/enumeration-cs1" %}
 
-## Connector shapes
+## UML Class Relationships
 
-* The connector shape property defines the role or meaning of the connector.
-
-* The different types of connector shapes are BPMN, UmlClassifier, and UmlActivity and can render these shapes by setting the connector shape type property.
-
-* The type of flow shapes in a BPMN process are sequence, association, and message.
-
-## Relationships
-
-* A relationship is a general term covering the specific types of logical connections found on class diagrams.
-
-* The list of relationships are demonstrated as follows.
+* A class may be involved in one or more relationships with other classes. A relationship can be one of the following types:
 
 | Shape       | Image                                |
 | ----------- | ------------------------------------ |
@@ -117,7 +108,7 @@ The UML class diagram shapes are explained as follows.
 | Inheritance | ![Inheritance](images/Inheritance.png)   |
 | Dependency  | ![Dependency](images/Dependency.png) |
 
-## Association
+### Association
 
 Association is basically a set of links that connects elements of an UML model. The type of association are as follows.
 
@@ -140,7 +131,7 @@ The association property allows you to define the type of association. The defau
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/association-cs1" %}
 
-## Aggregation
+### Aggregation
 
 Aggregation is a binary association between a property and one or more composite objects which group together a set of instances.
 
@@ -162,7 +153,7 @@ The following code example illustrates how to create an aggregation.
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/aggregation-cs1" %}
 
-## Composition
+### Composition
 
 Composition is a “strong” form of “aggregation”. Composition is decorated with a black diamond. To create a composition shape, define the relationship property of connector as “composition”.
 
@@ -182,7 +173,7 @@ The following code example illustrates how to create a composition.
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/composition-cs1" %}
 
-## Dependency
+### Dependency
 
 Dependency is a directed relationship, which is used to show that some UML elements needs or depends on other model elements for specifications. Dependency is shown as dashed line with opened arrow. To create a dependency, define the relationship property of connector as “dependency”.
 
@@ -202,7 +193,7 @@ The following code example illustrates how to create an dependency.
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/dependency-cs1" %}
 
-## Inheritance
+### Inheritance
 
 Inheritance is also called as “generalization”. Inheritance is a binary taxonomic directed relationship between a more general classifier (super class) and a more specific classifier (subclass). Inheritance is shown as a line with hollow triangle.
 
@@ -224,7 +215,7 @@ The following code example illustrates how to create an inheritance.
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/inheritance-cs1" %}
 
-## Multiplicity
+### Multiplicity
 
 Multiplicity is a definition of an inclusive interval of non-negative integers to specify the allowable number of instances of described element. The type of multiplicity are as follows.
 
@@ -259,15 +250,88 @@ The following code example illustrates how to customize the multiplicity.
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/multiplicity-cs1" %}
 
-## UmlActivity diagram
+## How to add UML child at runtime
 
-Activity diagram is basically a flowchart to represent the flow from one activity to another. The activity can be described as an operation of the system.
+In UML nodes, child elements such as member, method and attribute can be added either programmatically or interactively.
+
+### Adding UML child through code
+
+The [addChildToUmlNode](https://ej2.syncfusion.com/angular/documentation/api/diagram#addchildtoumlnode) method is employed for dynamically adding a child to the UML node during runtime, providing flexibility in modifying the diagram structure programmatically.
+
+The following code illustrates how to add methods to UML nodes in diagram.
+
+```ts
+let node = diagram.selectedItems.nodes[0];
+let methods = { name: 'getHistory', style: { color: "red", }, parameters: [{ name: 'Date', style: {} }], type: 'History' };
+diagram.addChildToUmlNode(node, methods, 'Methods');
+
+```
+
+The following code illustrates how to add attributes to UML nodes in diagram.
+
+```ts
+let node = diagram.selectedItems.nodes[0];
+let attributes = { name: 'accepted', type: 'Date', style: { color: "red", } };
+diagram.addChildToUmlNode(node, attributes, "Attributes");
+
+```
+
+The following code illustrates how to add members to UML nodes in diagram.
+
+```ts
+let node = diagram.selectedItems.nodes[0];
+let members = { name: 'Checking new', style: { color: "red", }, isSeparator: true };
+diagram.addChildToUmlNode(node, members, "Members");
+
+```
+
+### Adding UML child through user interaction
+
+To include a child, select a node, move the mouse outside it, and position the pointer near the right side. A highlighter emerges between the two child elements. Click the highlighter to add a child type to the chosen UML node seamlessly. The following gif illustrates how to add Child through user interaction.
+
+![UML child](images/UMLChild.gif)
+
+## Adding UML Nodes in Symbol palette
+
+UML built-in shapes are efficiently rendered in a symbol palette. The `symbols` property is utilized to define UML symbols with the necessary classes and methods. By incorporating this feature, you can seamlessly augment the palette with a curated collection of predefined UML symbols, thereby enhancing the versatility of your UML diagramming application.
+
+The following code example showcases the rendering of UML built-in shapes in a symbol palette
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/umldiagramshapes/uml-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/diagram/umldiagramshapes/uml-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/umldiagramshapes/uml-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/uml-cs1" %}
+
+## Editing
+
+You can edit the name, attributes, and methods of the class diagram shapes just double clicking, similar to editing a node annotation.
+
+The following image illustrates how the text editor looks in an edit mode.
+
+![Editing Class Diagram](images/ClassEdit.png)
+
+## UML Activity diagram
+
+An Activity diagram functions as a visual flowchart, illustrating the progression from one activity to the next within a system. Each activity corresponds to a system operation, providing a clear depiction of the sequential flow in a dynamic process..
 
 The purpose of an activity diagram can be described as follows.
 
-* Draw the activity flow of a system.
-* Describe the sequence from one activity to another.
-* Describe the parallel, branched, and concurrent flow of the system.
+    1. Draw the activity flow of a system.
+
+    2. Describe the sequence from one activity to another.
+
+    3. Describe the parallel, branched, and concurrent flow of the system.
+    
+## UML Activity diagram Shapes
 
 To create a UmlActivity, define type as "UmlActivity" and the list of built-in shapes as demonstrated as follows and it should be set in the "shape" property.
 
@@ -322,11 +386,3 @@ The following code illustrates how to create a UmlActivity connector.
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/UmlActivityConnector-cs1" %}
-
-### Editing
-
-You can edit the name, attributes, and methods of the class diagram shapes just double clicking, similar to editing a node annotation.
-
-The following image illustrates how the text editor looks in an edit mode.
-
-![Editing Class Diagram](images/ClassEdit.png)
