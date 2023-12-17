@@ -1,32 +1,39 @@
 
 
 import { L10n, setCulture } from '@syncfusion/ej2-base';
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
-import { GridComponent, PageSettingsModel, ToolbarItems, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
-import arAELocalization from './locale.json';
+import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
-L10n.load(arAELocalization);
+setCulture('ar-AE');
+
+L10n.load({
+    'ar-AE': {
+        grid: {
+            EmptyRecord: 'لا سجلات لعرضها',
+            EmptyDataSourceError: 'يجب أن يكون مصدر البيانات فارغة في التحميل الأولي منذ يتم إنشاء الأعمدة من مصدر البيانات في أوتوجينيراتد عمود الشبكة'
+        },
+        pager: {
+            currentPageInfo: '{0} من {1} صفحة',
+            totalItemsInfo: '({0} العناصر)',
+            firstPageTooltip: 'انتقل إلى الصفحة الأولى',
+            lastPageTooltip: 'انتقل إلى الصفحة الأخيرة',
+            nextPageTooltip: 'انتقل إلى الصفحة التالية',
+            previousPageTooltip: 'انتقل إلى الصفحة السابقة',
+            nextPagerTooltip: 'انتقل إلى عناصر بيجر التالية',
+            previousPagerTooltip: 'للذهاب إلى عناصر بيجر السابقة'
+        }
+    }
+});
 
 @Component({
     selector: 'app-root',
-    template: `
-    <div>
-    <label style="padding: 10px 10px">
-    Enable or diable RTL mode
-    </label>
-    <ejs-switch id="switch" (change)="onSwitchChange($event)"></ejs-switch>
-  </div>
-    <ejs-grid #grid [dataSource]='data' [allowSorting]='true' [allowReordering]='true' 
-    [allowFiltering]='true' [allowGrouping]='true' [editSettings]="editSettings" [toolbar]="toolbar" 
-    [enableRtl]='true' [locale]='locale' [allowPaging]='true' [pageSettings]='pageOptions'
-    [showColumnMenu]='true' [showColumnChooser]='true'>
+    template: `<ejs-grid [dataSource]='data' [enableRtl]='true' [locale]='locale' [allowPaging]='true' [pageSettings]='pageOptions'>
                 <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' isPrimaryKey='true' width=90></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=100></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=120></e-column>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
                 </e-columns>
                </ejs-grid>`
 })
@@ -35,25 +42,11 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public pageOptions?: PageSettingsModel;
     public locale: any = 'ar-AE';
-    public editSettings?: EditSettingsModel;
-    public toolbar?: ToolbarItems[];
-    @ViewChild('grid')
-    public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
         this.pageOptions = { pageSize: 7 };
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode:'Normal' };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
     }
-
-    onSwitchChange(args: ChangeEventArgs) {
-        if (args.checked) {
-          (this.grid as GridComponent).enableRtl = false;
-        } else {
-          (this.grid as GridComponent).enableRtl = true;
-        }
-      }
 }
 
 

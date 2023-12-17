@@ -5,7 +5,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
-import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     selector: 'app-root',
@@ -29,7 +28,7 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public toolbarOptions?: ToolbarItems[];
     @ViewChild('grid') public grid?: GridComponent;
-    @ViewChild('textbox') public textbox?: TextBoxComponent;
+    @ViewChild('textbox') public textbox?: any;
 
     ngOnInit(): void {
         this.data = data;
@@ -37,18 +36,18 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if (args.item.id === 'Grid_pdfexport') {
+        if ((args as any).item.id === 'Grid_pdfexport') {
             // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
-            if ((this.textbox as TextBoxComponent).value) {
+            if (this.textbox.value) {
                 const pdfExportProperties: PdfExportProperties = {
-                    fileName: (this.textbox as TextBoxComponent).value + '.pdf',
+                    fileName: this.textbox.value + '.pdf',
                 };
-                (this.grid as GridComponent).pdfExport(pdfExportProperties);
+                (this.grid as any).pdfExport(pdfExportProperties);
             } else {
                 const pdfExportProperties: PdfExportProperties = {
                     fileName: 'new.pdf',
                 };
-                (this.grid as GridComponent).pdfExport(pdfExportProperties);
+                (this.grid as any).pdfExport(pdfExportProperties);
             }
         }
     }

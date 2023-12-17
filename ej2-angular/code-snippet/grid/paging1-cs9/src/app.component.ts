@@ -17,7 +17,7 @@ let names: string[] = ['hardire', 'abramjo01', 'aubucch01', 'Hook', 'Rumpelstilt
                      'Aiadan', 'Aidan', 'Aiden', 'Aiden-Jack', 'Aiden-Vee'];
 
 function dataSource(): void {
-    for (let i = 0; i < 5000; i++) {
+    for (let i = 0; i < 1000; i++) {
         virtualData.push({
             SNo: i + 1,
             FIELD1: names[Math.floor(Math.random() * names.length)],
@@ -37,7 +37,7 @@ function dataSource(): void {
 dataSource();
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' height=300 [enableColumnVirtualization]=true
+    template: `<ejs-grid [dataSource]='data' height=300 [enableVirtualization]=true [enableColumnVirtualization]=true
                 [pageSettings]='options' [editSettings]='editSettings' [toolbar]='toolbar'>
                 <e-columns>
                     <e-column field='SNo' headerText='S.No' width=140 isPrimaryKey='true' [validationRules]='rules'></e-column>

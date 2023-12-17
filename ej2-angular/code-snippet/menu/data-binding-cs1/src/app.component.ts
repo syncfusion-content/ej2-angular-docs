@@ -11,7 +11,8 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-menu [items]="data" [fields]='menuFields'></ejs-menu>`
+    template: `<div class="e-section-control">
+    <ejs-menu [items]="data" [fields]='menuFields'></ejs-menu></div>`
 })
 
 export class AppComponent {

@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ToolbarItems, ReturnType } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
@@ -42,32 +42,21 @@ export class AppComponent implements OnInit {
 
     toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'Grid_pdfexport') {
-            (this.grid as GridComponent).pdfExport();
+            (this.grid as any).pdfExport();
         }
     }
 
-    public customAggregateFn = (customData: object[] | { result?: object[] }) => {
-        let data: object[] = [];
-    
-        if ('result' in customData && Array.isArray(customData.result)) {
-            data = customData.result;
-        } else if (Array.isArray(customData)) {
-            data = customData;
-        }
-    
-        const brazilCount = data.filter((item: object) => (item as itemType)['ShipCountry'] === 'Brazil').length;
-    
-        return `Brazil count: ${brazilCount}`;
-    };
-}
+    public customAggregateFn(data: { result: { filter: (arg0: (item: { [x: string]: string; }) => boolean) => { (): any; new(): any; length: any; }; }; filter: (arg0: (item: { [x: string]: string; }) => boolean) => { (): any; new(): any; length: any; }; }) {
+        const brazilCount = data.result
+        ? data.result.filter(
+            (item: { [x: string]: string }) => item['ShipCountry'] === 'Brazil'
+        ).length
+        : data.filter(
+            (item: { [x: string]: string }) => item['ShipCountry'] === 'Brazil'
+        ).length;
 
-interface itemType {
-    OrderID: number;
-    CustomerID: string;
-    EmployeeID: number;
-    OrderDate: Date;
-    ShipName: string;
-    ShipCountry: string;
+    return `Brazil count: ${brazilCount}`; 
+    }
 }
 
 

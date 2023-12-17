@@ -41,12 +41,6 @@ export class AppComponent implements OnInit {
         }
     }
     exportGroupCaption(args: ExportGroupCaptionEventArgs) {
-        args.captionText = (args.data as CaptionDataStructure)['field'] + ' - ' + (args.data as CaptionDataStructure)['key'];
+        args.captionText = (args.data as any)['field'] + ' - ' + (args.data as any)['key'];
     }
 }
-
-interface CaptionDataStructure {
-    field: string;
-    key: string;
-}
-

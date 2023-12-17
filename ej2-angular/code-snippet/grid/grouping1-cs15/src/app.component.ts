@@ -29,6 +29,6 @@ export class AppComponent implements OnInit {
     }
 
     onExternalGroup(){
-        (this.grid as GridComponent).clearGrouping();
+        (this.grid as any).clearGrouping();
     }
 }

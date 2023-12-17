@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Column, GridComponent} from '@syncfusion/ej2-angular-grids';
+import { Column, GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data, stringOperatorsData, numericOperatorsData } from './datasource';
-import { DropDownListComponent,ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +9,11 @@ import { DropDownListComponent,ChangeEventArgs } from '@syncfusion/ej2-angular-d
 })
 export class AppComponent implements OnInit {
   @ViewChild('grid') public grid?: GridComponent;
-  @ViewChild('operator') public operatorDropdown?: DropDownListComponent;
+  @ViewChild('operator') public operatorDropdown?: DropDownListComponent | any;
 
   public data?: object[];
-  public fieldData?: string[];
+  public filterOptions?: any;
+  public fieldData: string[] | undefined;
   public availableOperators: object[] |string | undefined;
   public column: Column | undefined;
 
@@ -20,17 +21,19 @@ export class AppComponent implements OnInit {
     this.data = data;
   }
   dataBound() {
-    this.fieldData = (this.grid as GridComponent).getColumnFieldNames();
+    this.fieldData = this.grid?.getColumnFieldNames();
   }
-  onFieldChange(args: ChangeEventArgs): void {
+  onFieldChange(args: any): void {
     this.availableOperators=[]; 
-    (this.operatorDropdown as DropDownListComponent).enabled = true;
-    this.column = (this.grid as GridComponent).getColumnByField(args.value as string);
+    this.operatorDropdown.enabled = true;
+    this.column = this.grid?.getColumnByField(args.value);
     if (this.column) {
       this.availableOperators = this.column.type === 'string' ? stringOperatorsData : numericOperatorsData;
     }
   }
-  onOperatorChange(args: ChangeEventArgs): void {
-    (this.column as Column).filter = { operator: args.value as string };
+  onOperatorChange(args: any): void {
+    debugger;
+    this.filterOptions = { operator: args.value, showFilterBarStatus: true };
+    (this.column as any).filter = this.filterOptions;
   }
 }

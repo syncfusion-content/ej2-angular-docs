@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
             background: #e7d7f7 !important;
         }
         `;
-        (document.querySelector('head') as Element).appendChild(styleElement);
+        (document.querySelector('head') as any).appendChild(styleElement);
     }
 }
 

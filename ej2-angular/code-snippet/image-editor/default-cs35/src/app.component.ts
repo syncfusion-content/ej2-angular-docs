@@ -4,7 +4,8 @@ import { FrameLineStyle, FrameType, ImageEditorComponent } from '@syncfusion/ej2
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render Image Editor. -->
+    template: `<div class="e-section-control">
+              <!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar"></ejs-imageeditor>
               </div>
@@ -12,7 +13,8 @@ import { FrameLineStyle, FrameType, ImageEditorComponent } from '@syncfusion/ej2
               <button class="e-btn e-primary" (click)="bevelBtn()">Bevel</button>
               <button class="e-btn e-primary" (click)="lineBtn()">Line</button>
               <button class="e-btn e-primary" (click)="insetBtn()">Inset</button>
-              <button class="e-btn e-primary" (click)="hookBtn()">Hook</button>`
+              <button class="e-btn e-primary" (click)="hookBtn()">Hook</button>
+              </div>`
 })
 
 export class AppComponent {

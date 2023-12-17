@@ -5,8 +5,9 @@ import { ItemModel } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render Vertical DropDownButton. -->
-               <button ejs-dropdownbutton [items]='items' content='Message' iconCss='ddb-icons e-message' cssClass='e-vertical' iconPosition='Top'></button>`
+    template: `<div class="e-section-control">
+                <!-- To render Vertical DropDownButton. -->
+               <button ejs-dropdownbutton [items]='items' content='Message' iconCss='ddb-icons e-message' cssClass='e-vertical' iconPosition='Top'></button></div>`
 })
 
 export class AppComponent {

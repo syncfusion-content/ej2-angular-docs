@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-root',
     // To customize RadioButton appearance
-    template: `<ul>
+    template: `<div class="e-section-control">
+                <ul>
                <!-- Refer the 'e-primary' class details in 'style.css'. -->
                <li><ejs-radiobutton label="Primary" name="custom" cssClass="e-primary"></ejs-radiobutton></li>
 
@@ -22,7 +23,8 @@ import { Component } from '@angular/core';
                <!-- Refer the 'e-danger' class details in 'style.css'. -->
                <li><ejs-radiobutton label="Danger" name="custom" cssClass="e-danger"></ejs-radiobutton></li>
 
-               </ul>`
+               </ul>
+               </div>`
 })
 
 export class AppComponent { }

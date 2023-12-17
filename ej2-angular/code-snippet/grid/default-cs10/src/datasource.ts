@@ -1,17 +1,3 @@
-export interface childColumnDataType{
-    OrderID:number,
-    CustomerID:string,
-    EmployeeID: number,
-    ShipName: string,
-    ShipAddress: string,
-    ShipRegion: string,
-    ShipPostalCode: string,
-    ShipCountry: string,
-    Freight:number,
-    ShipCity:string,
-    Verified:boolean
-}
-
 export let data: Object[] = [
     {
         OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Aspnet mvc with Angular Getting started component | Syncfusion
-description:  Checkout and learn about Aspnet mvc with Angular Getting started component of Syncfusion Essential JS 2 and more details.
+title: ASP.NET MVC with Angular Getting started component | Syncfusion
+description:  Checkout and learn about ASP.NET MVC with Angular Getting started component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Aspnet mvc 
 documentation: ug
@@ -10,53 +10,55 @@ domainurl: ##DomainURL##
 
 # Getting Started with Angular CLI as Front end in ASP.NET MVC
 
-This document explains how to create an ASP.NET MVC framework with an Angular CLI project as the front end and Syncfusion EJ2 Angular components.
+This document explains how to create an ASP.NET MVC framework with an Angular CLI project as the front end and integrate Syncfusion Angular UI components.
 
-## Prerequisite
+## Prerequisites
 
-* .Net Framework 4.5 and above
-* ASP.NET MVC 5
-* Visual Studio 2017 and above
-* NodeJs
-* Angular CLI 
+Before getting started with Syncfusion Angular Components in an ASP.NET MVC with Angular project, check whether the following are installed on the developer machine. 
 
-## Create ASP.NET MVC Web Application
+* [System requirements for Syncfusion Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
+* [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 
-Create a new ASP.NET MVC Web application using the project template. 
+## Create an ASP.NET MVC Web application
 
-1. Choose **File** > **New** > **Project** in the Visual Studio menu bar.
+Create a new ASP.NET MVC Web application using the Microsoft template.
 
-![create project](images/create-project.png)
+1.Open the Visual Studio and select the `create a new project` option.
 
-2. Select  **Visual C#** and  **Web** in the drop-down.
+![create project](images/create-project-template.png)
 
-3. Select `ASP.NET Web Application (.NET Framework)` and change the application name, and then click **OK**.
+2.Search the MVC template in the search box and select the `ASP.NET Web Application(.NET Framework)` template.
 
-![Asp.net mvc](images/Asp-mvc.png)
+![create project](images/create-project-mvc.png)
 
-4. Select `MVC` as a project template and then click **OK**. Now the application is created.
+3.Enter the project name as `SyncfusionAngularASPNETMVC` and click the next button.
 
-![Empty template](images/template-mvc.png)
+![Asp.net MVC](images/mvc-project-name.png)
 
-## Create Angular CLI Application 
+4.Then, select `MVC` as a project template and click **Create**. Now the application is created.
 
-1. Open the `Developer Command Prompt` from Visual Studio as shown in the following image.
+![Empty template](images/asp-mvc-template.png)
+
+## Create Angular CLI application 
+
+1.Open the `Developer Command Prompt` from Visual Studio, as follows.
 
 ![Developer Console](images/dev-cmd.png)
 
-2. Create Angular CLI application using the `ng new ClientApp` command as shown in the following image.
+2.Create an Angular CLI application by executing the `ng new ClientApp` command, as shown in the following image.
 
 ![Create Angular CLI App](images/cli-cmd.png)
 
-3. Navigate to the ClientApp directory using the `cd ClientApp` command.
+3.Navigate to the ClientApp directory using the `cd ClientApp` command.
 
 ![Navigate to Angular App root](images/angular-root.png)
 
-4. Integrate the Syncfusion Angular components as described in the [Getting Started with Angular CLI](../getting-started/angular-cli/) documentation.
+4.Install and add the Syncfusion Angular components as described in the [Getting Started with Angular CLI](../getting-started/angular-cli/#installing-syncfusion-angular-packages) documentation.
 
-5. Change the production build `outputPath` in `angular.json` file as `../Scripts/ClientApp`.
+5.Then, change the `outputPath` value to `../Scripts/ClientApp` for the production build in the `angular.json` file.
 
-```json
+{% tabs %}
+{% highlight json tabtitle="~/angular.json" hl_lines="12" %}
 
 "projects": {
     "ClientApp": {
@@ -70,58 +72,67 @@ Create a new ASP.NET MVC Web application using the project template.
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "../Scripts/ClientApp",
+          }
+        }
+      }
+    }
+}
 
-```
+{% endhighlight %}
+{% endtabs %}
 
-## Configuring ASP.NET MVC Application 
+## Configuring ASP.NET MVC application 
 
-### For Building Angular Application using MS Build
+### For building Angular application using MS Build
 
-Installing and building the Angular application can be automated every time when the MVC application is built by changing MS Build configuration in `.csproj` as shown in the following code sample.
+To automate the installation and building of the Angular application whenever the MVC application is built, add MS Build configuration to the end of the `SyncfusionAngularASPNETMVC.csproj` file, as shown in the following code sample.
 
-```xml
+{% tabs %}
+{% highlight xml tabtitle="SyncfusionAngularASPNETMVC.csproj" %}
 
-    <PropertyGroup>
-        <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
-        <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
-        <IsPackable>false</IsPackable>
-        <SpaRoot>ClientApp\</SpaRoot>
-        <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
-        <BuildServerSideRenderer>false</BuildServerSideRenderer>
-    </PropertyGroup>
+<PropertyGroup>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>ClientApp\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+    <BuildServerSideRenderer>false</BuildServerSideRenderer>
+</PropertyGroup>
 
+<ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Content Remove="$(SpaRoot)**" />
+    <None Remove="$(SpaRoot)**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+</ItemGroup>
+
+<Target Name="BeforeBuild" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build --prod -- --base-href /" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr --prod" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
+
+    <!-- Include the newly-built files in the publish output -->
     <ItemGroup>
-        <!-- Don't publish the SPA source files, but do show them in the project files list -->
-        <Content Remove="$(SpaRoot)**" />
-        <None Remove="$(SpaRoot)**" />
-        <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+        <DistFiles Include="$(SpaRoot)dist\**; $(SpaRoot)dist-server\**" />
+        <DistFiles Include="$(SpaRoot)node_modules\**" Condition="'$(BuildServerSideRenderer)' == 'true'" />
+        <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        </ResolvedFileToPublish>
     </ItemGroup>
+</Target>
 
-    <Target Name="BeforeBuild" AfterTargets="ComputeFilesToPublish">
-        <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
-        <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
-        <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build -- --prod -- --base-href /" />
-        <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr -- --prod" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
+{% endhighlight %}
+{% endtabs %}
 
-        <!-- Include the newly-built files in the publish output -->
-        <ItemGroup>
-            <DistFiles Include="$(SpaRoot)dist\**; $(SpaRoot)dist-server\**" />
-            <DistFiles Include="$(SpaRoot)node_modules\**" Condition="'$(BuildServerSideRenderer)' == 'true'" />
-            <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
-                <RelativePath>%(DistFiles.Identity)</RelativePath>
-                <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-                <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-            </ResolvedFileToPublish>
-        </ItemGroup>
-    </Target>
+### Configure MVC Bundle with Angular production scripts
 
-```
+To configure the MVC bundle with Angular production script and style files, modify the `App_Start\BundleConfig.cs` file as shown in the following code snippet.
 
-### Configure MVC Bundle with Angular Production Scripts
-
-Configure the MVC bundle with Angular production script and style files in `App_Srart\BundleConfig.cs` as shown in the following code sample.
-
-```cs
+{% tabs %}
+{% highlight c# tabtitle="BundleConfig.cs" %}
 
 using System.Web;
 using System.Web.Optimization;
@@ -141,13 +152,16 @@ namespace SyncfusionAngularASPNETMVC
             bundles.Add(new StyleBundle("~/Content/clientapp").Include(
                       "~/Scripts/ClientApp/styles.*"));
 
-```
+{% endhighlight %}
+{% endtabs %}
 
-### Include Angular Production Scripts in MVC
+### Include Angular production scripts in MVC
 
-Include the Angular production scripts and style files in the `Views/Shared/_Layout.cshtml`.
+To include the Angular production scripts and style files, include the following highlighted code in the `~/Views/Shared/_Layout.cshtml` file.
 
-```
+{% tabs %}
+{% highlight html tabtitle="~/_Layout.cshtml" hl_lines="9 18" %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -162,7 +176,7 @@ Include the Angular production scripts and style files in the `Views/Shared/_Lay
 <body>
     @RenderBody()
 
-
+    ...
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/clientapp")
@@ -170,11 +184,13 @@ Include the Angular production scripts and style files in the `Views/Shared/_Lay
 </body>
 </html>
 
-```
+{% endhighlight %}
+{% endtabs %}
 
-Include the `<app-root>` tag in the `Views/Home/index.cshtml`.
+Add the `<app-root>` tag in the `~/Views/Home/index.cshtml` file.
 
-```
+{% tabs %}
+{% highlight c# tabtitle="~/Views/Home/index.cshtml" %}
 
 @{
     ViewBag.Title = "Home Page";
@@ -182,11 +198,13 @@ Include the `<app-root>` tag in the `Views/Home/index.cshtml`.
 
 <app-root></app-root>
 
-```
+{% endhighlight %}
+{% endtabs %}
+
 ## Run the Application
 
-Build and run this application from Visual Studio and the component will be rendered.
+Run the application from Visual Studio to render the component.
 
 ![MVC-Output](images/output.png)
 
->Note: For your convenience, we have prepared an [ASP .NET MVC and Angular CLI Sample](https://github.com/SyncfusionExamples/Aspnet-mvc-with-angilar-cli).
+> [View the Angular Sample with ASP.NET MVC on GitHub](https://github.com/SyncfusionExamples/Aspnet-mvc-with-angilar-cli).

@@ -7,17 +7,6 @@
 @import 'node_modules/@syncfusion/ej2-angular-splitbuttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-lists/styles/material.css';
 
-#loader {
-  color: #008cff;
-  height: 40px;
-  width: 30%;
-  position: absolute;
-  font-family:  'Helvetica Neue','calibiri';
-  font-size:16px;
-  top: 45%;
-  left: 45%;
-}
-
-.e-menu::before {
-  content: '\e984';
+.e-section-control {
+	margin-top: 150px;
 }

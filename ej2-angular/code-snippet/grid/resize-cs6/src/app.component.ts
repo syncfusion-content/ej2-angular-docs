@@ -37,7 +37,7 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 export class AppComponent implements OnInit {
 
   public data?: object[];
-  public field: object = { text: 'text', value: 'value' };
+  public field: Object = { text: 'text', value: 'value' };
   @ViewChild('grid')
   public grid?: GridComponent;
   @ViewChild('dropdown')
@@ -47,15 +47,15 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.data = data;
   }
-  public ddlData: object[] = [
+  public ddlData: Object[] = [
     { text: 'OrderID', value: 'OrderID' },
     { text: 'CustomerID', value: 'CustomerID' },
     { text: 'Freight', value: 'Freight' },
     { text: 'ShipCountry', value: 'ShipCountry' },
   ];
   onExternalResize() {
-    (this.grid as GridComponent).getColumnByField((this.dropDown as DropDownListComponent).value as string).width = this.textbox.element.value;
-    (this.grid as GridComponent).refreshColumns();
+    (this.grid as any).getColumnByField(this.dropDown as any).value.width = this.textbox.element.value;
+    (this.grid as any).refreshColumns();
   }
 }
 

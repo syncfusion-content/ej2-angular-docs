@@ -3,7 +3,6 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GroupSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
   selector: 'app-root',
@@ -35,11 +34,11 @@ export class AppComponent implements OnInit {
     this.groupOptions = { showGroupedColumn: true, columns: ['CustomerID', 'ShipCity'] };
   }
 
-  onSwitchChange(args: ChangeEventArgs) {
+  onSwitchChange(args: any) {
     if (args.checked) {
-      (this.grid as GridComponent).groupSettings.showGroupedColumn = false;
+      (this.grid as any).groupSettings.showGroupedColumn = false;
     } else {
-      (this.grid as GridComponent).groupSettings.showGroupedColumn = true;
+      (this.grid as any).groupSettings.showGroupedColumn = true;
     }
   }
 }

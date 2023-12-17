@@ -1,8 +1,8 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { data, employeeData, childColumnDataType } from './datasource';
-import { AddEventArgs, GridModel, ParentDetails } from '@syncfusion/ej2-angular-grids';
+import { data, employeeData } from './datasource';
+import { AddEventArgs, GridModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -29,17 +29,11 @@ export class AppComponent implements OnInit {
             { field: 'ShipCity', headerText: 'Ship City', width: 100 },
             { field: 'ShipName', headerText: 'Ship Name', width: 120 }
         ],
-        actionBegin({ requestType, data }: AddEventArgs) {
-            debugger
-            if (requestType === 'add') {
-                 // `parentKeyFieldValue` refers to the queryString field value of the parent record.
-                const parentFieldValue = (this.parentDetails as ParentDetails)?.parentKeyFieldValue;
-
-                if (typeof parentFieldValue === 'number') {
-                    (data as childColumnDataType).EmployeeID = parentFieldValue;
-                }
+        actionBegin(args: AddEventArgs) {
+            if ((args as any).requestType === 'add') {
+                // `parentKeyFieldValue` refers to the queryString field value of the parent record.
+                ((args as any).data as any)['EmployeeID'] = (this as any).parentDetails.parentKeyFieldValue; // 'this' refers to the instance of the child grid.
             }
-
         }
     };
 

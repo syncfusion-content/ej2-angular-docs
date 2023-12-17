@@ -12,9 +12,9 @@ import { employeeData } from './datasource';
                         <e-column field='FirstName' headerText='FirstName' width=150>
                             <ng-template #template let-data>
                                 <div>
-                                    <a href="#" (click)="onClick($event, data.FirstName)">
-                                    {{data.FirstName}}
-                                    </a>
+                                    <a href="#" (click)="onClick($event, data.FirstName)">{{
+                                    data.FirstName
+                                    }}</a>
                                 </div>
                             </ng-template>
                         </e-column>
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
         this.data = employeeData;
     }
 
-    onClick(event:MouseEvent, firstName: string) {
+    onClick(event: any, firstName: any) {
         var url = 'https://www.meaningofthename.com/';
         var searchUrl = url + firstName; 
         window.open(searchUrl);

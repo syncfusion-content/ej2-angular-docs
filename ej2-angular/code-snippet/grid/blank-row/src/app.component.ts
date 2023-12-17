@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { RowDataBoundEventArgs, GridComponent, Column } from '@syncfusion/ej2-angular-grids';
+import { RowDataBoundEventArgs, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -24,20 +24,19 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = data;
     }
+
     rowDataBound(args: RowDataBoundEventArgs) {
         let count = 0;
-        let data: { [key: string]: object | string } = args.data as { [key: string]: object | string };
-
-        let keys = Object.keys(data);
+        let keys = Object.keys((args as any).data);
         for (let i = 0; i < keys.length; i++) {
-            if (data[keys[i]] == null || data[keys[i]] == '' || data[keys[i]] == undefined) {
+            if ((args as any).data[keys[i]] == null || (args as any).data[keys[i]] == '' || (args as any).data[keys[i]] == undefined) {
                 count++;
             }
         }
         if (count == keys.length) {
-            for (let i = 0; i < (this.grid as GridComponent).columns.length; i++) {
-                if (((this.grid as GridComponent).columns[i] as Column).displayAsCheckBox) {
-                    (args.row as Element).children[i].innerHTML = '';
+            for (let i = 0; i < (this.grid as any).columns.length; i++) {
+                if ((this.grid as any).columns[i].displayAsCheckBox) {
+                    (args as any).row.children[i].innerHTML = '';
                 }
             }
         }

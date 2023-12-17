@@ -21,7 +21,8 @@
               "./node_modules/zone.js/dist/zone.min.js"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/app.style.css"
             ],
             "assets": [
               {

@@ -1,8 +1,8 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { ToolbarItems, SearchSettingsModel, GridComponent, SearchEventArgs, Column } from '@syncfusion/ej2-angular-grids';
-import { Predicate, Query,  } from '@syncfusion/ej2-data';
+import { ToolbarItems, SearchSettingsModel, GridComponent, SearchEventArgs } from '@syncfusion/ej2-angular-grids';
+import { Predicate, Query } from '@syncfusion/ej2-data';
 
 @Component({
     selector: 'app-root',
@@ -18,7 +18,7 @@ import { Predicate, Query,  } from '@syncfusion/ej2-data';
                </ejs-grid>`
 })
 export class AppComponent implements OnInit {
-    public values?: string;
+    public values: any;
     public key = '';
     public removeQuery = false;
     public valueAssign = false;
@@ -44,16 +44,16 @@ export class AppComponent implements OnInit {
         };
         this.toolbarOptions = ['Search'];
     }
-    actionBegin({ requestType, searchString }: SearchEventArgs) {
-        if (requestType == 'searching') {
-            const keys = (searchString as string).split(',');
+    actionBegin(args: SearchEventArgs | any) {
+        if (args.requestType == 'searching') {
+            const keys = args.searchString.split(',');
             var flag = true;
             var predicate: any;
             if (keys.length > 1) {
-                if ((this.grid as GridComponent).searchSettings.key !== '') {
-                    this.values = searchString;
-                    keys.forEach((key: string) => {
-                        (this.grid as GridComponent).getColumns().forEach((col: Column) => {
+                if ((this.grid as any).searchSettings.key !== '') {
+                    this.values = args.searchString;
+                    keys.forEach((key: any) => {
+                        (this.grid as any).getColumns().forEach((col: any) => {
                             if (flag) {
                                 predicate = new Predicate(col.field, 'contains', key, true);
                                 flag = false;
@@ -64,36 +64,29 @@ export class AppComponent implements OnInit {
                             }
                         });
                     });
-                    
-                    (this.grid as GridComponent).query = new Query().where(predicate);
-                    (this.grid as GridComponent).searchSettings.key = '';
+                    (this.grid as any).query = new Query().where(predicate);
+                    (this.grid as any).searchSettings.key = '';
                     this.valueAssign = true;
                     this.removeQuery = true;
-                    (this.grid as GridComponent).refresh();
+                    (this.grid as any).refresh();
                 }
             }
         }
     }
-    actionComplete(args: SearchEventArgs) {
+    actionComplete(args:SearchEventArgs) {
         if (args.requestType === 'refresh' && this.valueAssign) {
-            const searchBar = document.querySelector<HTMLInputElement>('#' + (this.grid as GridComponent).element.id + '_searchbar');
-            if (searchBar) {
-                searchBar.value = this.values || '';
-                this.valueAssign = false;
-            }
-            else if (
-                args.requestType === 'refresh' &&
-                this.removeQuery
-            ) {
-                const searchBar = document.querySelector<HTMLInputElement>('#' + (this.grid as GridComponent).element.id + '_searchbar');
-                if (searchBar) {
-                    searchBar.value = '';
-                }
-                (this.grid as GridComponent).query = new Query();
-                this.removeQuery = false;
-                (this.grid as GridComponent).refresh();
-            }
+            (
+                document.getElementById((this.grid as any).element.id + '_searchbar') as any
+            ).value = this.values;
+            this.valueAssign = false;
         }
+        else if (
+            (document.getElementById((this.grid as any).element.id + '_searchbar') as any).value === '' && args.requestType === 'refresh' &&
+            this.removeQuery) {
+                (this.grid as any).query = new Query();
+                this.removeQuery = false;
+                (this.grid as any).refresh();
+            }
     }
 }
 

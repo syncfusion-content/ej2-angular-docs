@@ -3,7 +3,7 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { purchaseData} from './datasource';
+import { purchaseData } from './datasource';
 import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
@@ -32,29 +32,16 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if (args.item.id === 'Grid_pdfexport') {
-            (this.grid as GridComponent).pdfExport();
+        if ((args as any).item.id === 'Grid_pdfexport') {
+            (this.grid as any).pdfExport();
         }
     }
 
-    pdfHeaderQueryCellInfo(args: PdfHeaderQueryCellInfoEventArgs): void {
-        if (args.cell && args.cell.row && args.cell.row.pdfGrid) {
-            args.cell.row.pdfGrid.repeatHeader = true;
-        }     
+    pdfHeaderQueryCellInfo(args: any): void {
+         (args as any).cell.row.pdfGrid.repeatHeader = true;
     }
 
 }
-
-interface PdfHeaderQueryCellInfoEventArgs {
-    cell?: {
-        row?: {
-            pdfGrid?: {
-                repeatHeader?: boolean;
-            };
-        };
-    };
-}
-
 
 
 

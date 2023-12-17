@@ -1,3 +1,5 @@
+
+
 import { Component, OnInit } from '@angular/core';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { Query, DataManager } from '@syncfusion/ej2-data';
@@ -23,10 +25,13 @@ export class AppComponent implements OnInit {
     public toolbar?: ToolbarItems[];
     public countryParams?: IEditCell;
     public stateParams?: IEditCell;
+
     public countryElem?: HTMLElement;
     public countryObj?: DropDownList;
+
     public stateElem?: HTMLElement;
-    public stateObj?: DropDownList | undefined;
+    public stateObj?: DropDownList;
+
     public country: object[] = [
         { countryName: 'United States', countryId: '1' },
         { countryName: 'Australia', countryId: '2' }
@@ -46,52 +51,52 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
         this.countryParams = {
             create: () => {
-                this.countryElem = document.createElement('input');
-                return this.countryElem;
+                (this as any).countryElem = document.createElement('input');
+                return (this as any).countryElem;
             },
             read: () => {
-                return (this.countryObj as DropDownList).text;
+                return (this as any).countryObj.text;
             },
             destroy: () => {
-                (this.countryObj as DropDownList).destroy();
+                (this as any).countryObj.destroy();
             },
             write: () => {
-                this.countryObj = new DropDownList({
+                (this as any).countryObj = new DropDownList({
                     dataSource: new DataManager(this.country),
                     fields: { value: 'countryId', text: 'countryName' },
                     change: () => {
-                        (this.stateObj as DropDownList).enabled = true;
-                        const tempQuery: Query = new Query().where('countryId', 'equal', (this.countryObj as  DropDownList).value);
-                        (this.stateObj as DropDownList).query = tempQuery;
-                        ((this.stateObj as DropDownList).text as string) = '';                        
-                        (this.stateObj as DropDownList).dataBind();
+                        (this as any).stateObj.enabled = true;
+                        const tempQuery: Query = new Query().where('countryId', 'equal', (this as any).countryObj.value);
+                        (this as any).stateObj.query = tempQuery;
+                        (this as any).stateObj.text = null;
+                        (this as any).stateObj.dataBind();
                     },
                     placeholder: 'Select a country',
                     floatLabelType: 'Never'
                 });
-                this.countryObj.appendTo(this.countryElem);
+                (this as any).countryObj.appendTo((this as any).countryElem);
             }
         };
         this.stateParams = {
             create: () => {
-                this.stateElem = document.createElement('input');
-                return this.stateElem;
+                (this as any).stateElem = document.createElement('input');
+                return (this as any).stateElem;
             },
             read: () => {
-                return (this.stateObj as DropDownList).text;
+                return (this as any).stateObj.text;
             },
             destroy: () => {
-                (this.stateObj as DropDownList).destroy();
+                (this as any).stateObj.destroy();
             },
             write: () => {
-                this.stateObj = new DropDownList({
+                (this as any).stateObj = new DropDownList({
                     dataSource: new DataManager(this.state),
                     fields: { value: 'stateId', text: 'stateName' },
                     enabled: false,
                     placeholder: 'Select a state',
                     floatLabelType: 'Never'
                 });
-                this.stateObj.appendTo(this.stateElem);
+                (this as any).stateObj.appendTo((this as any).stateElem);
             }
         };
     }

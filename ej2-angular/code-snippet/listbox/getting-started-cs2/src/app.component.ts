@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-listbox [dataSource]="data"></ejs-listbox>`
+    template: `<div class="e-section-control">
+                <ejs-listbox [dataSource]="data"></ejs-listbox></div>`
 })
 
 export class AppComponent {

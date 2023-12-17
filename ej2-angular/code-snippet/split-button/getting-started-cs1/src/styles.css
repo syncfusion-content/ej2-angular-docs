@@ -6,16 +6,6 @@
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-splitbuttons/styles/material.css';
 
-#container {
-    visibility: hidden;
+.e-section-control {
+	margin-top: 150px;
 }
-
-#loader {
-  color: #008cff;
-  height: 40px;
-  left: 45%;
-  position: absolute;
-  top: 45%;
-  width: 30%;
-}
-

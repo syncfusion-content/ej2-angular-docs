@@ -5,8 +5,9 @@ import { ItemModel, BeforeOpenCloseMenuEventArgs, DropDownButtonComponent  } fro
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render DropDownButton. -->
-               <button ejs-dropdownbutton #dropdownbutton [items]='items' content='Clipboard' (beforeOpen)='beforeOpen($event)' (beforeClose)='beforeClose($event)'></button>`
+    template: `<div class="e-section-control">
+                <!-- To render DropDownButton. -->
+               <button ejs-dropdownbutton #dropdownbutton [items]='items' content='Clipboard' (beforeOpen)='beforeOpen($event)' (beforeClose)='beforeClose($event)'></button></div>`
 })
 
 export class AppComponent {

@@ -1,6 +1,6 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
-import { GridComponent, InfiniteScrollService } from '@syncfusion/ej2-angular-grids';
+
+import { Component, OnInit } from '@angular/core';
+import { InfiniteScrollService } from '@syncfusion/ej2-angular-grids';
 import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 const names = ['TOM', 'Hawk', 'Jon', 'Chandler', 'Monica', 'Rachel', 'Phoebe', 'Gunther', 'Ross', 'Geller', 'Joey', 'Bing', 'Tribbiani',
@@ -24,15 +24,7 @@ const data = (count: any) => {
 
 @Component({
     selector: 'app-root',
-    template: `
-           <div style="display: flex">
-               <label style="padding: 30px 20px 0 0" > Select initialBlocks count: :</label>
-               <ejs-dropdownlist #dropdown id='value' style="padding: 26px 0 0 0" #sample index='0' 
-               width='220' [dataSource]='dropDownData' (change)='valueChange($event)' >
-               </ejs-dropdownlist>
-            </div>
-            <div style="padding: 30px 17px 0 0">
-             <ejs-grid #grid [dataSource]='data' height=300 [enableInfiniteScrolling]=true [pageSettings]='options'>
+    template: `<ejs-grid [dataSource]='data' height=300 [enableInfiniteScrolling]='true' [pageSettings]='options'>
                 <e-columns>
                     <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=70></e-column>
                     <e-column field='Engineer' width=100></e-column>
@@ -40,33 +32,16 @@ const data = (count: any) => {
                     <e-column field='Estimation' textAlign='Right' width=100></e-column>
                     <e-column field='Status' width=100></e-column>
                 </e-columns>
-                </ejs-grid>
-            </div>`,
+                </ejs-grid>`,
     providers: [InfiniteScrollService]
 })
 export class AppComponent implements OnInit {
 
     public data?: object[];
     public options?: PageSettingsModel;
-    @ViewChild('grid') public grid?: GridComponent;
-    public dropDownData?: Object[] = [
-        { text: 'Select count' },
-        { text: '1', value: '1' },
-        { text: '2', value: '2' },
-        { text: '3', value: '3' },
-        { text: '4', value: '4' },
-        { text: '5', value: '5' },
-        { text: '6', value: '6' },
-        { text: '7', value: '7' }
-      ];
-
     ngOnInit(): void {
         this.data = data(5000);
         this.options = { pageSize: 50 };
-    }
-    valueChange(args: ChangeEventArgs): void {
-        (this.grid as GridComponent).infiniteScrollSettings.initialBlocks = parseInt((args.value as string), 10);
-        (this.grid as GridComponent).refresh();    
     }
 }
 

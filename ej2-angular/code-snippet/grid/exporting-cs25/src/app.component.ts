@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { data, Cell } from './datasource';
-import { GridComponent, ToolbarItems, PdfHeaderQueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
+import { data } from './datasource';
+import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
@@ -27,18 +27,16 @@ export class AppComponent implements OnInit {
 
     toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'Grid_pdfexport') {
-            (this.grid as GridComponent).pdfExport();
+            (this.grid as any).pdfExport();
         }
     }
 
-    pdfHeaderQueryCellInfo({cell}: PdfHeaderQueryCellInfoEventArgs) {
-        const typedCell = cell as Cell;
-        typedCell.value = '';
-        if (typedCell.value === '') {
-            typedCell.height = '';
+    pdfHeaderQueryCellInfo(args: any) {
+        args.cell.value = '';
+        if (args.cell.value === '') {
+          args.cell.height = '';
         }
-
-    }
+      }
 }
 
 

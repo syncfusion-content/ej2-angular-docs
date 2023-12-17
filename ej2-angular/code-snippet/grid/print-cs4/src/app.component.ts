@@ -1,13 +1,13 @@
 
 
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit ,ViewChild} from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, PrintEventArgs, ToolbarItems, PageSettingsModel, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { createElement } from '@syncfusion/ej2-base';
+import { GridComponent,PrintEventArgs,ToolbarItems, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid id='grid' [dataSource]='data' [allowPaging]='true'
+    template: `<ejs-grid #grid [dataSource]='data' [allowPaging]='true'
                [pageSettings]='pageOptions' [selectionSettings]="selectionSettings" (beforePrint)='beforePrint($event)' [toolbar]='toolbarOptions'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
@@ -19,32 +19,23 @@ import { createElement } from '@syncfusion/ej2-base';
 })
 export class AppComponent implements OnInit {
 
-    @ViewChild('grid', { static: true })
+    @ViewChild('grid', {static: true})
     public grid?: GridComponent;
     public data?: object[];
     public toolbarOptions?: ToolbarItems[];
     public pageOptions?: PageSettingsModel;
-    public selectionSettings?: SelectionSettingsModel;
+    public selectionSettings?:any;
 
     ngOnInit(): void {
         this.data = data;
         this.toolbarOptions = ['Print'];
         this.pageOptions = { pageSize: 6 };
-        this.selectionSettings = { type: 'Multiple' }
+        this.selectionSettings={ type: 'Multiple'}
     }
-    beforePrint(e: PrintEventArgs): void {
-        var rows = (this.grid as GridComponent).getSelectedRows();
-        if (rows.length) {
-            (e.element as CustomElement).ej2_instances[0].getContent().querySelector('tbody').remove();
-            var tbody = createElement('tbody');
-            rows = [...rows];
-            for (var r = 0; r < rows.length; r++) {
-                tbody.appendChild(rows[r].cloneNode(true));
-            }
-            (e.element as CustomElement).ej2_instances[0].getContentTable().appendChild(tbody);
+    beforePrint(args: any): void{
+        var rows = this.grid?.getSelectedRows();
+        if (rows && rows.length) {
+            this.data= rows;
         }
-    }
-}
-interface CustomElement extends Element {
-    ej2_instances: any[];
+      }
 }

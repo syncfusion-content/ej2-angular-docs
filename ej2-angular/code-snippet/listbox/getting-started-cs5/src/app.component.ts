@@ -6,7 +6,8 @@ import { DataManager,ODataV4Adaptor,Query } from '@syncfusion/ej2-data';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-listbox [dataSource]="data" [fields]="setfield" [query]="query"></ejs-listbox>`
+    template: `<div class="e-section-control">
+                <ejs-listbox [dataSource]="data" [fields]="setfield" [query]="query"></ejs-listbox></div>`
 })
 
 export class AppComponent {

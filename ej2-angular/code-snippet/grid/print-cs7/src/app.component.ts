@@ -2,7 +2,6 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import {ClickEventArgs} from '@syncfusion/ej2-inputs'
 import { ToolbarItems, PageSettingsModel, GridComponent, Column } from '@syncfusion/ej2-angular-grids';
 
 
@@ -25,9 +24,9 @@ export class AppComponent implements OnInit {
     public pageOptions?: PageSettingsModel;
     @ViewChild('grid')
     public grid?: GridComponent;
-    toolbarClick(args:ClickEventArgs) {
+    toolbarClick(args:any) {
         if(args.item.id== 'Grid_print'){
-            for (const columns of (this.grid as GridComponent).columns) {
+            for (const columns of (this.grid as any).columns) {
                 if ((columns as Column).field === 'CustomerID') {
                     (columns as Column).visible = true;
                 } else if ((columns as Column).field === 'ShipCity') {
@@ -38,7 +37,7 @@ export class AppComponent implements OnInit {
     }
 
     printComplete() {
-        for (const columns of (this.grid as GridComponent).columns) {
+        for (const columns of (this.grid as any).columns) {
             if ((columns as Column).field === 'CustomerID') {
                 (columns as Column).visible = false;
             } else if ((columns as Column).field === 'ShipCity') {

@@ -7,9 +7,10 @@ import { closest, createElement } from '@syncfusion/ej2-base';
 
 @Component({
   selector: 'app-root',
-  template: `
+  template: `<div class="e-section-control">
   <div id="target">Right click / Touch hold to open the ContextMenu</div>
-  <ejs-contextmenu id='contextmenu' [target]='target' [items]= 'menuItems' (beforeItemRender)='itemRender($event)' (beforeClose)='beforeClose($event)'></ejs-contextmenu>`
+  <ejs-contextmenu id='contextmenu' [target]='target' [items]= 'menuItems' (beforeItemRender)='itemRender($event)' (beforeClose)='beforeClose($event)'></ejs-contextmenu>
+  </div>`
 })
 
 export class AppComponent  {

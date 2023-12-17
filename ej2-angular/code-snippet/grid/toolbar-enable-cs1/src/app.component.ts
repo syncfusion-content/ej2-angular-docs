@@ -3,7 +3,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { data } from './datasource';
 import { GridComponent , GroupSettingsModel} from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
     selector: 'app-root',
@@ -28,7 +27,7 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public toolbar?: string[];
     public groupOptions?: GroupSettingsModel;
-    public toolbarObj?: object[];;
+    public toolbarObj?: any;
 
     @ViewChild('grid')
     public grid?: GridComponent;
@@ -40,19 +39,19 @@ export class AppComponent implements OnInit {
     }
 
     clickHandler(args: ClickEventArgs): void {
-        if (args.item.id === 'Grid_Collapse') { // Grid_Collapse is control id + '_' + toolbar value.
-            (this.grid as GridComponent).groupModule.collapseAll();
+        if ((args as any).item.id === 'Grid_Collapse') { // Grid_Collapse is control id + '_' + toolbar value.
+            (this.grid as any).groupModule.collapseAll();
         }
 
-        if (args.item.id === 'Grid_Expand') {
-            (this.grid as GridComponent).groupModule.expandAll();
+        if ((args as any).item.id === 'Grid_Expand') {
+            (this.grid as any).groupModule.expandAll();
         }
     }
-    onSwitchChange(args: ChangeEventArgs) {
+    onSwitchChange(args: any) {
         if (args.checked) {
-            (this.grid as GridComponent).toolbarModule.enableItems(['Grid_Collapse', 'Grid_Expand'], false); // Disable toolbar items.
+            (this.grid as any).toolbarModule.enableItems(['Grid_Collapse', 'Grid_Expand'], false); // Disable toolbar items.
         } else {
-            (this.grid as GridComponent).toolbarModule.enableItems(['Grid_Collapse', 'Grid_Expand'], true); // Enable toolbar items.
+            (this.grid as any).toolbarModule.enableItems(['Grid_Collapse', 'Grid_Expand'], true); // Enable toolbar items.
         }
     }
 }

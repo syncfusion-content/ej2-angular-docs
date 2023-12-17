@@ -80,7 +80,7 @@ ng add @syncfusion/ej2-angular-grids
 ```
 If you are not using fully ivy compiler application, use the `ngcc` tagged packages of the Syncfusion Angular components.
 
-N> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](../common/troubleshooting/ngcc-compatibility). 
+N> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](../common/troubleshooting/ngcc-compatibility).
 
 ```bash
 npm add @syncfusion/ej2-angular-grids@20.2.38-ngcc

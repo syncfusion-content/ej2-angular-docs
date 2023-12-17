@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FilterSettingsModel, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 import { data } from './datasource';
 
 @Component({
@@ -22,15 +21,18 @@ import { data } from './datasource';
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    public filterSettings: FilterSettingsModel;
-    public pageSettings: PageSettingsModel = { pageSize: 5 };
+    public filterSettings?: FilterSettingsModel;
+    public pageSettings?: PageSettingsModel = { pageSize: 5 };
 
     ngOnInit(): void {
         this.data = data;
     }
-    onChange(args: ChangeEventArgs): void {
+    onChange(args:any): void {
         this.filterSettings = {
             showFilterBarStatus: args.checked,
         };
     }
 }
+
+
+

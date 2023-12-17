@@ -5,7 +5,8 @@ import { SpinSettingsModel, AnimationSettingsModel } from '@syncfusion/ej2-angul
 
 @Component({
     selector: 'app-root',
-    template: `<button ejs-progressbutton content='Slide Left' [enableProgress]='true' [animationSettings]= 'animationSettings' [spinSettings]='spinSettings'></button>`
+    template: `<div class="e-section-control">
+                <button ejs-progressbutton content='Slide Left' [enableProgress]='true' [animationSettings]= 'animationSettings' [spinSettings]='spinSettings'></button></div>`
 })
 
 export class AppComponent {

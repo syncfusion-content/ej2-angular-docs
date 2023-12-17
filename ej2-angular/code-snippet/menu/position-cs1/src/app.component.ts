@@ -8,8 +8,10 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render Menu. -->
-            <ejs-menu [items]='menuItems' (beforeOpen)='onBeforeOpen($event)'></ejs-menu>`
+    template: `<div class="e-section-control">
+            <!-- To Render Menu. -->
+            <ejs-menu [items]='menuItems' (beforeOpen)='onBeforeOpen($event)'></ejs-menu>
+            </div>`
 })
 
 export class AppComponent {

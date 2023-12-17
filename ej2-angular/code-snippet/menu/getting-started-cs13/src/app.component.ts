@@ -8,7 +8,8 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-menu #menu [items]='menuItems'></ejs-menu>`
+    template: `<div class="e-section-control">
+            <ejs-menu #menu [items]='menuItems'></ejs-menu></div>`
 })
 
 export class AppComponent {

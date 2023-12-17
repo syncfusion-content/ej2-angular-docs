@@ -6,8 +6,9 @@ import { enableRipple, createElement } from '@syncfusion/ej2-base';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render splitbutton. -->
-               <ejs-splitbutton iconCss ="e-sb-icons e-paste" [items]='items' (beforeItemRender)='addClass($event)'></ejs-splitbutton>`
+    template:  `<div class="e-section-control">
+              <!-- To Render splitbutton. -->
+               <ejs-splitbutton iconCss ="e-sb-icons e-paste" [items]='items' (beforeItemRender)='addClass($event)'></ejs-splitbutton></div>`
 })
 
 export class AppComponent {

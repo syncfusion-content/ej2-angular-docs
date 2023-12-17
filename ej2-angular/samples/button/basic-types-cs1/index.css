@@ -1,0 +1,14 @@
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+#loader {
+  color: #008cff;
+  font-family:   'Helvetica Neue','calibiri';
+  font-size:16px;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}

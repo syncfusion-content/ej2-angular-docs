@@ -7,7 +7,8 @@ import { NgForm } from '@angular/forms';
 @Component({
     selector: 'app-root',
     // Name and Value attribute in form submit.
-    template: `<form #form="ngForm" (ngSubmit)="submitForm(form)">
+    template: ` <div class="e-section-control">
+                <form #form="ngForm" (ngSubmit)="submitForm(form)">
                 <ul>
                     <li><ejs-radiobutton name="payment" [(ngModel)]="selectedOption" value="credit/debit" label="Credit / Debit card" checked="true"></ejs-radiobutton></li>
 
@@ -19,7 +20,8 @@ import { NgForm } from '@angular/forms';
 
                     <li><button ejs-button [isPrimary]="true">Submit</button></li>
                 </ul>
-               </form>`
+               </form>
+               </div>`
 })
 
 export class AppComponent {

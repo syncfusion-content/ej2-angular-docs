@@ -2,7 +2,7 @@
 
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems,SearchEventArgs, KeyboardEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ToolbarItems,SearchEventArgs } from '@syncfusion/ej2-angular-grids';
 import { Query, Predicate } from '@syncfusion/ej2-data';
 
 @Component({
@@ -32,11 +32,11 @@ export class AppComponent implements OnInit {
         if (args.requestType == 'searching') {
             args.cancel = true;
             setTimeout(() => {
-              var columns = (this.grid as GridComponent).getColumns();
+              var columns = (this.grid as any).getColumns();
               var predicate = null;
               for (var i = 0; i < columns.length; i++) {
-                var val = (this.grid as GridComponent).valueFormatterService.fromView(
-                  args.searchString as string,
+                var val = (this.grid as any).valueFormatterService.fromView(
+                  args.searchString,
                   columns[i].getParser(),
                   columns[i].type
                 );
@@ -60,20 +60,20 @@ export class AppComponent implements OnInit {
                   }
                 }
               }
-              (this.grid as GridComponent).query = new Query().where(predicate as Predicate);
+              (this.grid as any).query = new Query().where(predicate as any);
             }, 200);
         }
     }
 
-    keyPressed(args: KeyboardEventArgs) {
+    keyPressed(args: any) {
         if (
           args.key == 'Enter' &&
-          args.target instanceof HTMLElement &&
+          args.target &&
           args.target.closest('.e-search') &&
-          (args.target as HTMLInputElement).value == ''
+          args.target.value == ''
         ) {
           args.cancel = true;
-          (this.grid as GridComponent).query = new Query();
+          (this.grid as any).query = new Query();
         }
       }
 }

@@ -5,8 +5,10 @@ import { MenuItemModel } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render Menu. -->
-            <ejs-menu [items]='menuItems' cssClass='e-rounded-menu'></ejs-menu>`
+    template: `<div class="e-section-control">
+            <!-- To Render Menu. -->
+            <ejs-menu [items]='menuItems' cssClass='e-rounded-menu'></ejs-menu>
+            </div>`
 })
 
 export class AppComponent {

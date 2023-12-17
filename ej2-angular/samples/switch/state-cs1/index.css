@@ -1,0 +1,19 @@
+#loader {
+  color: #008cff;
+  height: 40px;
+  width: 30%;
+  position: absolute;
+  font-family: "Helvetica Neue", "calibri";
+  font-size: 16px;
+  top: 45%;
+  left: 45%;
+}
+
+.size tr td {
+  padding: 10px;
+}
+
+.size .lSize {
+  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif";
+  font-size: 13px;
+}

@@ -3,24 +3,3 @@
 @import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
-
-button {
-  margin: 25px 5px 20px 20px;
-}
-
-/* For Round Button*/
-.e-plus-icon::before {
-  content: '\e823';
-}
-
-#loader {
-  color: #008cff;
-  height: 40px;
-  width: 30%;
-  position: absolute;
-  font-family:  'Helvetica Neue','calibiri';
-  font-size:16px;
-  top: 45%;
-  left: 45%;
-}
-

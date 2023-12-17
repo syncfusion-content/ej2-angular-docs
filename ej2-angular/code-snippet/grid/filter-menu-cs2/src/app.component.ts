@@ -5,7 +5,7 @@ import { data } from './datasource';
 import { DataManager } from '@syncfusion/ej2-data';
 import { DropDownList } from '@syncfusion/ej2-angular-dropdowns';
 import { createElement } from '@syncfusion/ej2-base';
-import { FilterSettingsModel, IFilter, Filter,Column } from '@syncfusion/ej2-angular-grids';
+import { FilterSettingsModel, IFilter, Filter } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -34,26 +34,29 @@ export class AppComponent implements OnInit {
             ui: {
                 create: (args: { target: Element, column: object }) => {
                     const flValInput: HTMLElement = createElement('input', { className: 'flm-input' });
-                    args.target.appendChild(flValInput);
+                    (args as any).target.appendChild(flValInput);
                     this.dropInstance = new DropDownList({
                         dataSource: new DataManager(data),
                         fields: { text: 'OrderID', value: 'OrderID' },
                         placeholder: 'Select a value',
                         popupHeight: '200px'
                     });
-                    (this.dropInstance as DropDownList).appendTo(flValInput);
+                    this.dropInstance.appendTo(flValInput);
                 },
                 write: (args: {
-                    column: object, target: Element,
+                    column: object, target: Element, parent: any,
                     filteredValue: number | string
                 }) => {
-                    (this.dropInstance as DropDownList).value = (args).filteredValue;
+                    (this.dropInstance as any).value = (args as any).filteredValue;
                 },
-                read: (args: { target: Element, column: Column, operator: string, fltrObj: Filter }) => {
-                    args.fltrObj.filterByColumn(args.column.field, args.operator, (this.dropInstance as DropDownList).value);
+                read: (args: { target: Element, column: any, operator: string, fltrObj: Filter }) => {
+                    (args as any).fltrObj.filterByColumn((args as any).column.field, (args as any).operator, this.dropInstance?.value);
 
                 }
             }
         };
     }
 }
+
+
+

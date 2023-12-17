@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { inventoryData } from './datasource';
-import { GridComponent, TextWrapSettingsModel, WrapMode } from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { GridComponent, TextWrapSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',
@@ -32,7 +31,7 @@ export class AppComponent implements OnInit {
   public wrapSettings?: TextWrapSettingsModel;
   @ViewChild('grid')
   public grid?: GridComponent;
-  public ddlData: object[] = [
+  public ddlData: Object[] = [
     { text: 'Content', value: 'Content' },
     { text: 'Both', value: 'Both' },
   ];
@@ -42,8 +41,8 @@ export class AppComponent implements OnInit {
     this.wrapSettings = { wrapMode: 'Content' };
   }
 
-  valueChange(args: ChangeEventArgs): void {
-    (this.grid as GridComponent).textWrapSettings.wrapMode = args.value as WrapMode;
+  valueChange(args: any): void {
+    (this.grid as any).textWrapSettings.wrapMode = (args as any).value;
   }
 
 }

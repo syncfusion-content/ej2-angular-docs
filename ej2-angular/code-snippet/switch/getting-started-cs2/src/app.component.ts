@@ -6,16 +6,18 @@ import { rippleMouseHandler } from '@syncfusion/ej2-buttons';
 
 @Component({
     selector: 'app-root',
-    template: `<div id='container'>
-        <table class="ripple">
-            <tr>
-                <td class="lRipple"><label for='switch1'>USB Tethering</label></td>
-                <td>
-                    <ejs-switch id="switch1" [checked]="true"></ejs-switch>
-                </td>
-            </tr>
-        </table>
-    </div>`
+    template: `<div class="e-section-control">
+                <div id='container'>
+                    <table class="ripple">
+                        <tr>
+                            <td class="lRipple"><label for='switch1'>USB Tethering</label></td>
+                        <td>
+                            <ejs-switch id="switch1" [checked]="true"></ejs-switch>
+                        </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>`
 
 })
 

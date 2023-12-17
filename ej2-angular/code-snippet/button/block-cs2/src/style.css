@@ -37,3 +37,7 @@ line-height: 1;
 .e-setting-icon::before {
   content: "\e700";
 }
+
+.e-section-control {
+  margin-top: 150px;
+}

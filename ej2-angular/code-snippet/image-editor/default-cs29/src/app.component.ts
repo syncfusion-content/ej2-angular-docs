@@ -6,13 +6,15 @@ import { ImageEditorComponent, ImageFinetuneOption, } from '@syncfusion/ej2-angu
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render Image Editor. -->
+    template: `<div class="e-section-control">
+              <!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar" ></ejs-imageeditor>
               </div>
               <button class="e-btn e-primary" (click)="hueClick()">Hue</button>
               <button class="e-btn e-primary" (click)="exposureClick()">Exposure</button>
-              <button class="e-btn e-primary" (click)="blurClick()">Blur</button>`
+              <button class="e-btn e-primary" (click)="blurClick()">Blur</button>
+              </div>`
 })
 
 export class AppComponent {

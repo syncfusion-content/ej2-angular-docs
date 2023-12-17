@@ -5,7 +5,6 @@ import {
     ToolbarItems,
     PdfExportProperties,
     GridModel,
-    
 } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
@@ -66,12 +65,12 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if (args.item.id === 'Grid_pdfexport') {
+        if ((args as any).item.id === 'Grid_pdfexport') {
             // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
             const exportProperties: PdfExportProperties = {
-                hierarchyExportMode: (this.dropDownList as DropDownListComponent).value as PdfExportProperties["hierarchyExportMode"],
+                hierarchyExportMode: (this.dropDownList as any).value,
             };
-            (this.grid as GridComponent).pdfExport(exportProperties);
+            (this.grid as any).pdfExport(exportProperties);
         }
     }
 }

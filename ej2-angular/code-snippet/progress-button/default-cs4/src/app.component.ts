@@ -4,8 +4,9 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render progress button. -->
-               <button ejs-progressbutton  [content]='content' [cssClass]='cssClass' [enableProgress]='true' [duration]='4000' (begin)='begin()' (end)='end()'></button>`
+    template: `<div class="e-section-control">
+                <!-- To render progress button. -->
+               <button ejs-progressbutton  [content]='content' [cssClass]='cssClass' [enableProgress]='true' [duration]='4000' (begin)='begin()' (end)='end()'></button></div>`
 })
 
 export class AppComponent {

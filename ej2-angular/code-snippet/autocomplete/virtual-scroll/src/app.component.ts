@@ -24,7 +24,7 @@ export class AppComponent {
         }
     }
     // maps the appropriate column to fields property
-    public fields: object = { text: 'text', value: 'text' };
+    public fields: object = { value: 'text' };
     // set the placeholder to AutoComplete input
     public waterMark: string = 'e.g. Item 1';
 }

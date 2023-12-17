@@ -1,7 +1,8 @@
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, customerData } from './datasource';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -18,6 +19,9 @@ import { data, customerData } from './datasource';
 export class AppComponent implements OnInit {
 
     public data?: object[];
+
+    @ViewChild('grid')
+    public grid?: GridComponent;
     public customerData: object[] = customerData;
 
     ngOnInit(): void {

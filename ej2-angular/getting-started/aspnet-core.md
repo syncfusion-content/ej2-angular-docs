@@ -8,128 +8,189 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started ASP .NET Core with Angular using Project Template
+# Getting Started ASP.NET Core with Angular using Project Template
 
-This document helps you to create a simple ASP .NET Core application with Angular Framework and Syncfusion Angular UI components.
+This document provides step-by-step instructions on how to create a simple ASP.NET Core application with the Angular Framework using the dotnet CLI and integrate with Syncfusion Angular UI components.
 
 ## Prerequisites
 
-Before getting started with Syncfusion Angular Components in ASP.NET Core with Angular project, check whether the following are installed in the developer machine. 
+Before getting started with Syncfusion Angular Components in an ASP.NET Core with Angular project, check whether the following are installed on the developer machine. 
 
-* Angular Versions supported - 6+
-* Typescript Versions supported - 2.6+
-* .NET CLI 2.0+
+* [System requirements for Syncfusion Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
+* [.NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 
-## Create an Application
+## Create an application
 
-Create a new project with project template.
+Create an ASP.NET Core application with Angular using the dotnet CLI.
 
-1. Choose File > New > Project in the Visual Studio menu bar.
+1. Open the command prompt at your preferred location, and run the following command to create an ASP.NET Core application with Angular.
 
-![create project](images/create-project.png)
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
 
-2. Select Installed > Visual C# > .NET Core and choose the required .NET Framework in the drop-down.
+dotnet new angular -o Syncfusion-ASP.NET-Core-Angular
 
-3. Select ASP.NET Core Web Application and change the application name, and then click OK.
+{% endhighlight %}
+{% endtabs %}
 
-![Asp.net core](images/aspnet-core.png)
+2.Navigate to the application folder using the following command.
 
-4. Select Angular and then click OK. The application is created.
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
 
-![Angular template](images/angular-template.png)
+cd Syncfusion-ASP.NET-Core-Angular
 
-## Installing Syncfusion Button Package
+{% endhighlight %}
+{% endtabs %}
 
-Move to the Client-App folder to install the Syncfusion package.
+3.Set an environment variable called `ASPNETCORE_ENVIRONMENT` with a value of `Development` on Windows, run the following command.
 
-```bash
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+SET ASPNETCORE_ENVIRONMENT=Development 
+
+{% endhighlight %}
+{% endtabs %}
+
+>For Linux or macOS, run the `export ASPNETCORE_ENVIRONMENT=Development` in the terminal.
+
+4.Now, run the build command to ensure the application builds correctly. During the initial run, the build process restores npm dependencies, which may take several minutes. Subsequent builds will be significantly faster.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+dotnet build
+
+{% endhighlight %}
+{% endtabs %}
+
+5.The ASP.NET Core with angular project template is created successfully.
+
+## Installing Syncfusion Grid Package
+
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. Users can obtain all the Syncfusion Angular packages from the npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+
+Navigate to the ClientApp folder and install the Syncfusion Angular DataGrid package using the following commands.
+
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
 
 cd ClientApp
-npm install
 
-```
-
-Syncfusion packages are distributed in npm as @syncfusion scoped packages. You can get all the angular Syncfusion packages from the npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
-
-Add the syncfusion angular packages to the application which needs to be run. For example we have add the syncfusion angular grid packages to the application.
-
-```bash
 npm install @syncfusion/ej2-angular-grids --save
-(or)
-npm I @syncfusion/ej2-angular-grids --save
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Adding Grid Module
 
-After installing the package, the component modules are available to configure into your application from Syncfusion installed package. Syncfusion Angular package provides two different types of ng-Modules.
+After installing the package, users can configure the component modules in your application from the Syncfusion installed package. Open the `~/src/app.module.ts` file in the `ClientApp` folder using Visual Studio Code or your preferred code editor, and refer to the following code snippet to import the Grid module.
 
-Refer to [`Ng Module`](../common/ng-module.html) to learn about `ngModules`.
+{% tabs %}
+{% highlight ts tabtitle="app.module.ts" hl_lines="14 29" %}
 
-Refer to the following code snippet to import the button module in app.module.ts from the `@syncfusion/ej2-angular-grids`.
-
-```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { HomeComponent } from './home/home.component';
+import { CounterComponent } from './counter/counter.component';
+import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
 // Imported Syncfusion grid module from grids package
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavMenuComponent,
+    HomeComponent,
+    CounterComponent,
+    FetchDataComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    HttpClientModule,
     FormsModule,
-    HttpModule,
-
     //Registering EJ2 grid module
-    GridModule
+    GridModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'counter', component: CounterComponent },
+      { path: 'fetch-data', component: FetchDataComponent },
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-```
+
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Adding Syncfusion Component
 
-Add the grid component snippet in `app.component.ts` as follows.
+Add the following grid component code snippet in the `~/src/home/home.component.ts` file as follows.
 
-```typescript
+{% tabs %}
+{% highlight ts tabtitle="home.component.ts" %}
 
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
+import { Component } from '@angular/core';
 
-@component({
-selector: 'app-root',
-template: `<ejs-grid [dataSource]='data'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
-                    <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
-                </e-columns>
-                </ejs-grid>`,
- })
-export class AppComponent implements OnInit {
-  public data: object[];
-  ngOnInit(): void {
-    this.data = data;
-  }
+@Component({
+  selector: 'app-home',
+  template: `
+  <h1>
+    Syncfusion Angular UI Grid!
+  </h1>
+
+  <ejs-grid [dataSource]='data'>
+    <e-columns>
+      <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+      <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+      <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
+      <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
+    </e-columns>
+  </ejs-grid>
+ `
+})
+
+export class HomeComponent {
+  public data: Object[] = [
+    {
+      OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),
+      ShipName: 'Vins et alcools Chevalier', ShipCity: 'Reims', ShipAddress: '59 rue de l Abbaye',
+      ShipRegion: 'CJ', ShipPostalCode: '51100', ShipCountry: 'France', Freight: 32.38, Verified: !0
+    },
+    {
+      OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6, OrderDate: new Date(836505e6),
+      ShipName: 'Toms Spezialitäten', ShipCity: 'Münster', ShipAddress: 'Luisenstr. 48',
+      ShipRegion: 'CJ', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: !1
+    },
+    {
+      OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4, OrderDate: new Date(8367642e5),
+      ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
+      ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 65.83, Verified: !0
+    }
+  ];
 }
 
-```
+{% endhighlight %}
+{% endtabs %}
 
-## Adding CSS Reference
+## Adding CSS reference
 
-Add Grid component styles as given in the `styles.css` file.
+Syncfusion Angular components offer a variety of built-in [themes](../appearance/theme-studio/) that you can easily add to your project by importing the relevant css file from the `~/node_modules/@syncfusion` package. Add the following Grid component styles as shown in the `~/src/styles.css` file.
 
-``` css
+{% tabs %}
+{% highlight css tabtitle="styles.css" %}
+
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
@@ -140,16 +201,29 @@ Add Grid component styles as given in the `styles.css` file.
 @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
 
-```
+{% endhighlight %}
+{% endtabs %}
 
-## Run the Application
+## Run the application
 
-After adding the syncfusion component, run this application. The component will be render.
+Navigate to the root directory, and execute the following commands to run the application.
 
->Note: For your convenience, we have prepared an [ASP .NET Core and Angular Sample](https://github.com/SyncfusionExamples/ASP-.NET-Core-with-Angular-using-EJ2-controls)
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
 
-## See Also
+cd ..
 
-* [Microsoft Angular Project Template](https://www.telerik.com/kendo-angular-ui/components/installation/dotnet-core/)
+dotnet run
+
+{% endhighlight %}
+{% endtabs %}
+
+![output](images/ang-cli.PNG)
+
+N> [View the Angular Sample with ASP.NET Core on GitHub](https://github.com/SyncfusionExamples/ASP-.NET-Core-with-Angular-using-EJ2-controls)
+
+## See also
+
+* [How to create an ASP.NET Core with Angular project using the visual studio](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022)
 
 * [Getting started with angular CLI](../getting-started/angular-cli/)

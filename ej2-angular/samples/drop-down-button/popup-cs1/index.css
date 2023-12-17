@@ -1,0 +1,43 @@
+#container {
+    visibility: hidden;
+}
+
+.shortcut {
+    float: right;
+    margin-top: 9px;
+    padding-left: 30px;
+    height: 100px;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.e-data {
+  border: 1px solid rgba(0, 0, 0, 0.87);
+  padding: 8px;
+}
+
+.e-border {
+  border: black;
+  border-radius: 2px;
+  background-color: #fafafa;
+}
+
+.e-table::before {
+  content: '\e705';
+}
+
+.e-row {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+        
+button {
+  margin: 25px 5px 20px 20px;
+}

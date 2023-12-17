@@ -5,8 +5,9 @@ import { ItemModel, MenuEventArgs } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render Button. -->
-               <button ejs-dropdownbutton [items]='items' content='Clipboard' iconCss='e-icons e-edit'></button>`
+    template: `<div class="e-section-control">
+                <!-- To render Button. -->
+               <button ejs-dropdownbutton [items]='items' content='Clipboard' iconCss='e-icons e-edit'></button></div>`
 })
 
 export class AppComponent {

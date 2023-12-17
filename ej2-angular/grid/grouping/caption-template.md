@@ -18,36 +18,8 @@ The following example demonstrates how to customize the group header caption in 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% raw %}
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions' height='315px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=100></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=120></e-column>
-                </e-columns>
-                <ng-template #groupSettingsCaptionTemplate let-data>
-                    <span class="groupItems"> {{ data.headerText }} - {{ data.key }} : {{ data.count }} Items </span>
-                </ng-template>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data?: object[];
-    public groupOptions?: GroupSettingsModel;
-    ngOnInit(): void {
-        this.data = data;
-        this.groupOptions = { showDropArea: false, columns: ['CustomerID', 'ShipCity'] };
-    }
-}
-{% endraw %}
-{% endhighlight %}
+{% include code-snippet/grid/grouping1-cs1/src/app.component.ts %}
+{% endhighlight %}Caption template in Angular Grid component
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/grouping1-cs1/src/app.module.ts %}
 {% endhighlight %}
@@ -66,33 +38,7 @@ The following example demonstrates how to add a custom text to the group caption
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% raw %}
-import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' height='315px'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='ID' textAlign='Right' width=90></e-column>
-                    <e-column field='CustomerID' headerText='Name' width=100></e-column>
-                    <e-column field='ShipCity' headerText='City' width=100></e-column>
-                    <e-column field='Freight' headerText='Value' width=80></e-column>
-                </e-columns>
-                <ng-template #groupSettingsCaptionTemplate let-data>
-                    <span class="groupItems">{{ data.key }} - {{ data.count }} Records :  {{ data.headerText }}</span>
-                </ng-template>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data?: object[];
-
-    ngOnInit(): void {
-        this.data = data;
-    }
-}
-{% endraw %}
+{% include code-snippet/grid/grouping1-cs13/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/grouping1-cs13/src/app.module.ts %}

@@ -7,14 +7,16 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render Breadcrumb. -->
+    template: `<div class="e-section-control">
+            <!-- To Render Breadcrumb. -->
             <ejs-breadcrumb [enableNavigation]="false">
                 <e-breadcrumb-items>
                    <e-breadcrumb-item iconCss="e-icons e-home"></e-breadcrumb-item>
                    <e-breadcrumb-item iconCss="e-bicons e-folder"></e-breadcrumb-item>
                    <e-breadcrumb-item iconCss="e-bicons e-file"></e-breadcrumb-item>
                 </e-breadcrumb-items>
-            </ejs-breadcrumb>`
+            </ejs-breadcrumb>
+            </div>`
 })
 
 export class AppComponent {}

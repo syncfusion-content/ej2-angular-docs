@@ -7,7 +7,8 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render Breadcrumb. -->
+    template: `<div class="e-section-control">
+            <!-- To Render Breadcrumb. -->
         <ejs-breadcrumb [enableNavigation]="false" cssClass="e-specific-item-template">
             <e-breadcrumb-items>
                 <e-breadcrumb-item text="Home" url="https://ej2.syncfusion.com/home/angular.html"></e-breadcrumb-item>
@@ -24,7 +25,8 @@ enableRipple(true);
                             </ng-template>
                 </div>
             </ng-template>
-        </ejs-breadcrumb>`
+        </ejs-breadcrumb>
+        </div>`
 })
 
 export class AppComponent {}

@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, Column } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, IFilterUI } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',
@@ -18,15 +18,19 @@ import { GridComponent, Column } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
   @ViewChild('grid')
-  public grid?: GridComponent;
+  public grid!: GridComponent;
   public data?: object[];
   public pageSettings: Object = { pageCount: 5 };
+  public templateOptions?: IFilterUI;
+  public dropdown?: any;
+  public option: any;
+  public dropdownlist: any;
 
   ngOnInit(): void {
     this.data = data;
   }
   load() {
     // Set filterTemplate to an empty span to hide the filter bar for the template column
-    (this.grid.columns[2] as Column).filterTemplate = '<span></span>';
+    (this.grid.columns[2] as any).filterTemplate = '<span></span>';
   }
 }

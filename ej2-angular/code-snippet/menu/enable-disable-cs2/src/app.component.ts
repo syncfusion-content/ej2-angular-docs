@@ -8,11 +8,13 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<div class="control-section">
+    template: `<div class="e-section-control">
+            <div class="control-section">
             <button ejs-button (click)='btnClick()'>Show all items</button>
             <div class="menu-section">
                 <ejs-menu #menu [items]='menuItems' (beforeOpen)='beforeOpen($event)' (created)='created()'></ejs-menu>
             </div>
+        </div>
         </div>`
 })
 

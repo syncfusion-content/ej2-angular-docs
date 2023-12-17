@@ -4,10 +4,11 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render ListView. -->
+    template: `<div class="e-section-control">
+                <!-- To render ListView. -->
                <ejs-listview id='listview' [dataSource]='listItems' [fields]='field' sortOrder='Descending'></ejs-listview>
                <!-- To render splitbutton. -->
-               <ejs-splitbutton content="ClipBoard" target='#listview'></ejs-splitbutton>`
+               <ejs-splitbutton content="ClipBoard" target='#listview'></ejs-splitbutton></div>`
 })
 
 export class AppComponent {

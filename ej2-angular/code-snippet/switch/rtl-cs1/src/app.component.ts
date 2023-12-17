@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-switch [enableRtl]="true"></ejs-switch>`
+    template: `<div class="e-section-control">
+                <ejs-switch [enableRtl]="true"></ejs-switch></div>`
 })
 
 export class AppComponent { }

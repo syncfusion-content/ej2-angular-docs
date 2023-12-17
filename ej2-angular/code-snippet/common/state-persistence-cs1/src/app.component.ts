@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { data } from './datasource';
+import { data } from './datasource';
 import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({

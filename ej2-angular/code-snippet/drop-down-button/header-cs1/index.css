@@ -1,0 +1,22 @@
+#loader {
+  color: #008cff;
+  height: 40px;
+  width: 30%;
+  position: absolute;
+  font-family:  'Helvetica Neue','calibiri';
+  font-size:16px;
+  top: 45%;
+  left: 45%;
+}
+
+#listview {
+  display: block;
+  max-width: 400px;
+  margin: auto;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+
+.e-down::before {
+  content: '\e969';
+}

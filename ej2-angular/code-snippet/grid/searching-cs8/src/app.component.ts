@@ -1,19 +1,8 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { ToolbarItems, SearchEventArgs, GridComponent, QueryCellInfoEventArgs, Column } from '@syncfusion/ej2-angular-grids';
+import { ToolbarItems, SearchEventArgs, GridComponent, QueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
 
-interface ColumnData{
-  [key: string]: number| string;
-  OrderID:number,
-  Freight:number,
-  CustomerID:string,
-  ShipCity:string,
-  ShipName:string,
-  ShipCountry:string,
-  ShipPostalCode:number
-
-}
 @Component({
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [toolbar]='toolbarOptions' (actionBegin)="actionBegin($event)" (queryCellInfo)="queryCellInfo($event)" height='400' width='100%'>
@@ -39,22 +28,22 @@ export class AppComponent implements OnInit {
     }
     actionBegin(args:SearchEventArgs) {
         if (args.requestType === 'searching') {
-            (this.key as string) = (args.searchString as string).toLowerCase();
+            (this.key as any) = (args.searchString as any).toLowerCase();
         }
     }
     queryCellInfo(args: QueryCellInfoEventArgs) {
-        if ((this.key as string) != '') {
-          var cellContent = (args.data as ColumnData)[(args.column as Column).field];
+        if ((this.key as any) != '') {
+          var cellContent = (args.data as any)[(args.column as any).field];
           var parsedContent = cellContent.toString().toLowerCase();
-          if (parsedContent.includes((this.key as string).toLowerCase())) {
+          if (parsedContent.includes((this.key as any).toLowerCase())) {
             var i = 0;
             var searchStr = '';
-            while (i < (this.key as string).length) {
-              var index = parsedContent.indexOf((this.key as string)[i]);
+            while (i < (this.key as any).length) {
+              var index = parsedContent.indexOf((this.key as any)[i]);
               searchStr = searchStr + cellContent.toString()[index];
               i++;
             }
-            (args.cell as HTMLElement).innerHTML = (args.cell as HTMLElement).innerText.replaceAll(
+            (args.cell as any).innerHTML = (args.cell as any).innerText.replaceAll(
               searchStr,
               "<span class='customcss'>" + searchStr + '</span>'
             );
@@ -62,8 +51,6 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
 
 
 

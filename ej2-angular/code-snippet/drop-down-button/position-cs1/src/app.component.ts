@@ -5,8 +5,9 @@ import { ItemModel, OpenCloseMenuEventArgs, DropDownButtonComponent  } from '@sy
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To render DropDownButton. -->
-               <button ejs-dropdownbutton #dropdownbutton [items]='items' content='Clipboard' (open)='onOpen($event)'></button>`
+    template: `<div class="e-section-control">
+                <!-- To render DropDownButton. -->
+               <button ejs-dropdownbutton #dropdownbutton [items]='items' content='Clipboard' (open)='onOpen($event)'></button></div>`
 })
 
 export class AppComponent {

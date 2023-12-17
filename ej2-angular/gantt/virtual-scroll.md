@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Virtual Scroll support in Gantt allows you to load large amount of data without performance degradation. To enable Virtual Scrolling, you need to inject `VirtualScroll` module in Gantt.
 
-## Row Virtualization
+## Row virtualization
 
 Row virtualization allows you to load and render a large number of tasks in Gantt with effective performance. In this mode, all tasks are fetched initially from the datasource and rendered in the DOM within a compact viewport area.
 
@@ -34,7 +34,27 @@ This mode can be enable by setting the `enableVirtualization` property to `true`
   
 {% previewsample "page.domainurl/samples/gantt/virtual-scroll-cs1" %}
 
-## Limitations for Virtual Scroll
+## Timeline virtualization
+
+Timeline virtualization allows you to load a data source having large timespan with high performance. Initially, it renders the timeline with thrice the width of the gantt element, while other timeline cells render on-demand during horizontal scrolling.
+
+This mode can be enable by setting the [enableTimelineVirtualization](https://ej2.syncfusion.com/angular/documentation/api/gantt/#enabletimelinevirtualization) property to `true`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/virtual-scroll-cs3/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/virtual-scroll-cs3/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/virtual-scroll-cs3/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/virtual-scroll-cs3" %}
+
+## Limitations for virtual scroll
 
 * Due to the element height limitation in browsers, the maximum number of records loaded is limited by the browser capacity.
 * Cell selection will not be persisted.

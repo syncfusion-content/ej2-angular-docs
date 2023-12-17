@@ -55,50 +55,6 @@ Here is an example of how to configure the initial filter using the `predicate` 
   
 {% previewsample "page.domainurl/samples/grid/filter-cs2" %}
 
-### Initial filter with multiple values for same column
-
-In the Syncfusion Angular Grid, you can establish an initial filter containing multiple values for a particular column, which helps you to preset filter conditions for a specific column using multiple values. This functionality allows you to display a filtered records in the grid right after the grid is initially loaded.
-
-To apply the filter with multiple values for same column at initial rendering, set the filter [predicate](https://ej2.syncfusion.com/angular/documentation/api/grid/predicate) object in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettingsModel/#columns).
-
-The following example demonstrates, how to perform an initial filter with multiple values for same **CustomerID** column using `filterSettings.columns` and `predicate`.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-cs3/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs3/src/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-cs3/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/grid/filter-cs3" %}
-
-### Initial filter with multiple values for different columns 
-
-By applying an initial filter with multiple values for different columns in the Syncfusion Angular Grid, you have the flexibility to set predefined filter settings for each column. This results in a filtered records of the grid right after the grid is initially loaded.
-
-To apply the filter with multiple values for different column at initial rendering, set the filter [predicate](https://ej2.syncfusion.com/angular/documentation/api/grid/predicate) object in [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettingsModel/#columns).
-
-The following example demonstrates how to perform an initial filter with multiple values for different **Order ID** and **Customer ID** columns using `filterSettings.columns` and `predicate`.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-cs12/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs12/src/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-cs12/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/grid/filter-cs12" %}
-
 ## Filter operators
 
 The Syncfusion Grid component provides various filter operators that can be used to define filter conditions for columns. The filter operator for a column can be defined using the [operator](https://ej2.syncfusion.com/angular/documentation/api/grid/predicateModel/#operator) property in the [filterSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#columns) object.
@@ -255,28 +211,6 @@ Here's an example that demonstrates how to change the default filter operator co
   
 {% previewsample "page.domainurl/samples/grid/filter-cs7" %}
 
-## Filter grid programmatically with single and multiple values using method 
-
-Programmatic filtering in the Syncfusion Angular Grid with single and multiple values allows you to apply filters to specific columns in the grid without relying on interactions through the interface.
-
-This can be achieved by utilizing the [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/#filterbycolumn) method of the Grid.
-
-The following example demostrates, how to programmatically filter the Grid using single and multiple values for the **OrderID** and **CustomerID** columns. This is accomplished by calling the `filterByColumn` method within an external button click function.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/filter-cs8/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs8/src/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid/filter-cs8/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/grid/filter-cs8" %}
-
 ## How to get filtered records
 
 Retrieving filtered records in the Syncfusion Angular Grid is essential when you want to work with data that matches the currently applied filters. You can achieve this using available methods and properties in the grid component.
@@ -374,4 +308,3 @@ In the given example, the filtering is prevented for **ShipCity** column during 
 * [Hide sorting options on Excel filter dialog](../how-to/hide-sorting-in-excel-filter)
 * [How to apply initial filter on custom binding in Angular Grid](https://www.syncfusion.com/forums/152157/how-to-apply-initial-filter-on-custom-binding-in-angular-grid)
 * [How to custom the display value of checkbox filter option in Angular Grid](https://www.syncfusion.com/forums/154478/how-to-custom-the-display-value-of-checkbox-filter-option-in-angular-grid)
-* [How to change loading indicator in Angular Grid](../data-binding/data-binding.md#loading-animation)

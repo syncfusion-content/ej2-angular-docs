@@ -1,60 +1,68 @@
-import { Component, OnInit } from '@angular/core';
-import { data, columnDataType } from './datasource';
-import { EditSettingsModel, ToolbarItems, SaveEventArgs } from '@syncfusion/ej2-angular-grids';
+
+
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { EditService, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids';
+import { TimePicker } from '@syncfusion/ej2-calendars';
+import { enableRipple } from '@syncfusion/ej2-base';
+import { purchaseData } from './datasource';
+import { Column, EditSettingsModel, PageSettingsModel, ToolbarItems, IEditCell, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'
-                (actionBegin)='actionBegin($event)'>
+  selector: 'app-root',
+  template: `<ejs-grid #grid [dataSource]='data' [allowPaging]='true' [editSettings]='editSettings' [pageSettings]='pageOptions' [toolbar]='toolbar' height='273px'>
                 <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey='true' [validationRules]='orderIDRules'></e-column>
-                    <e-column field='CustomerID' headerText='Customer Name' width='120'></e-column>
-                    <e-column field='Freight' headerText='Freight' width='120' format='C2' textAlign='Right'  >
-                    </e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' width='150'>
-                    </e-column>
-                    <e-column field='OrderDate' headerText='Order Date' width='140' 
-                    format='yMd' editType="DatePickerEdit" textAlign='Right'></e-column>
-                    <e-column field='OrderDate' headerText='Order Time' width='140' 
-                    format='hh :mm a ' textAlign='Right'>
-                        <ng-template #editTemplate let-data>
-                        <ejs-timepicker   [(value)]='orderData.OrderDate'></ejs-timepicker >
-                       </ng-template>
-                        </e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' width='150'>
-                    </e-column>
+                    <e-column field='OrderID' headerText='Order ID' type='number' textAlign='Right' isPrimaryKey='true' [validationRules]="orderidrules" width=100></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' type='string' width=140></e-column>
+                    <e-column field='Freight' headerText='Freight' type= 'number' textAlign= 'Right'
+                     editType= 'numericedit' format= 'C2' width=120></e-column>
+                    <e-column field='OrderDate' headerText='Order Date' type= 'date' format= 'hh:mm' [edit]='dpParams' width=150></e-column>
                 </e-columns>
-            </ejs-grid>`
+               </ejs-grid>`,
+  providers: [ToolbarService, EditService, PageService],
 })
 export class AppComponent implements OnInit {
+  public data?: object[];
+  @ViewChild('grid') public grid?: GridComponent;
+  public editSettings?: EditSettingsModel;
+  public pageOptions?: PageSettingsModel;
+  public toolbar?: ToolbarItems[];
+  public tpElem?: HTMLElement;
+  public dpParams?: IEditCell;
+  public timeObject?: TimePicker;
+  public orderidrules?: any;
 
-    public data?: object[];
-    public editSettings?: EditSettingsModel;
-    public toolbar?: ToolbarItems[];
-    public orderData?: object | any;
-    public orderIDRules?: object;
-    public customerIDRules?: object;
-    public freightRules?: object;
+  public createOrderDateFn() {
+    (this as any).tpElem = document.createElement('input');
+    return (this as any).tpElem;
+  }
+  public destroyOrderDateFn() {
+    (this as any).timeObject.destroy();
+  }
+  public readOrderDateFn() {
+    return (this as any).timeObject.value;
+  }
+  public writeOrderDateFn(args: any) {
+    enableRipple(true);
+    (this as any).timeObject = new TimePicker({
+      value: (args as any).rowData[(args as any).column.field],
+      step: 60,
+    });
+    (this as any).timeObject.appendTo((this as any).tpElem);
+  }
 
-    ngOnInit(): void {
-        this.data = data;
-        this.orderIDRules = { required: true };
-        // this customerIDRules = { required: true, minLength: 5 };
-        this.freightRules = { required: true, min: 1, max: 1000 };
-        this.editSettings = {
-            allowEditing: true,
-            allowAdding: true,
-            allowDeleting: true,
-        };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    }
-
-    actionBegin(args: SaveEventArgs) {
-        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
-            this.orderData = Object.assign({}, args.rowData);
-        }
-        if (args.requestType === 'save') {
-            (args.data as columnDataType)['OrderDate'] = this.orderData['OrderDate'];
-        }
-    }
+  ngOnInit(): void {
+    this.data = purchaseData;
+    this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
+    this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+    (this as any).pageOptions = { pageSizes: true, pageSize: 8 };
+    (this as any).dpParams = {
+      create: this.createOrderDateFn,
+      read: this.readOrderDateFn,
+      destroy: this.destroyOrderDateFn,
+      write: this.writeOrderDateFn,
+    };
+  }
 }
+
+
+

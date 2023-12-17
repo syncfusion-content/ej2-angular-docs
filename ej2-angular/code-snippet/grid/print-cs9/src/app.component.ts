@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { ChartComponent } from '@syncfusion/ej2-angular-charts';
-import { GridComponent, ActionEventArgs, PageService, PrintEventArgs } from '@syncfusion/ej2-angular-grids';
+import { IDragCompleteEventArgs, ChartComponent } from '@syncfusion/ej2-angular-charts';
+import { GridComponent, ActionEventArgs ,PageService} from '@syncfusion/ej2-angular-grids';
 import { Query, DataManager } from '@syncfusion/ej2-data';
 import { orderData } from './datasource';
 
@@ -34,7 +34,7 @@ import { orderData } from './datasource';
             </ejs-chart>
         </div>
     `,
-    providers: [PageService]
+    providers:[PageService]
 })
 export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
@@ -61,21 +61,21 @@ export class AppComponent implements OnInit {
         this.chart!.series[0].marker = { visible: true };
         this.chart!.series[0].xName = 'OrderDate';
         this.chart!.series[0].yName = 'Freight';
-        this.chart!.series[0].dataSource = (this.grid as GridComponent).getCurrentViewRecords();
+        this.chart!.series[0].dataSource = this.grid?.getCurrentViewRecords();
     }
 
     onClick() {
-        (this.grid as GridComponent).print();
+        this.grid?.print();
     }
-    beforePrint(args: PrintEventArgs) {
+    beforePrint(args: any) {
         if (this.chartContainer) {
             const clonedChartContainer = this.chartContainer.nativeElement.cloneNode(true);
-            (args.element as Element).appendChild(clonedChartContainer);
+            args.element.appendChild(clonedChartContainer);
         }
     }
     public actionComplete(args: ActionEventArgs): void {
         if (args.requestType === 'paging') {
-            this.chart!.series[0].dataSource = (this.grid as GridComponent).getCurrentViewRecords();
+            this.chart!.series[0].dataSource = this.grid?.getCurrentViewRecords();
             this.chart?.refresh();
         }
     }

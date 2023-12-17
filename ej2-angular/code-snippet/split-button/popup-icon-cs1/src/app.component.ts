@@ -5,8 +5,8 @@ import { ItemModel } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render splitbutton. -->
-               <ejs-splitbutton content="Paste" iconCss ="e-sb-icons e-paste"[items]='items'></ejs-splitbutton>`
+    template: `<div class="e-section-control">
+               <ejs-splitbutton content="Paste" iconCss ="e-sb-icons e-paste"[items]='items'></ejs-splitbutton></div>`
 })
 
 export class AppComponent {

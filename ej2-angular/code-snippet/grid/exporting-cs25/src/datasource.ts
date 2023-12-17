@@ -1,7 +1,3 @@
-export interface Cell {
-    value?: string; 
-    height?: string; 
-}
 export let data: object[] = [
     {
         OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),

@@ -6,8 +6,10 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 @Component({
     selector: 'app-root',
     styleUrls: ['./style.css'],
-    template: ` <!-- Button is active in toggled state. -->
-                <button #togglebtn ejs-button cssClass="e-flat" iconCss="e-btn-sb-icon e-play-icon" [isToggle]="true" content="Play"></button>`
+    template: `<div class="e-section-control">
+                    <!-- Button is active in toggled state. -->
+                    <button #togglebtn ejs-button cssClass="e-flat" iconCss="e-btn-sb-icon e-play-icon" [isToggle]="true" content="Play"></button>
+                </div>`
 })
 // Click event handled using HostListener.
 export class AppComponent {

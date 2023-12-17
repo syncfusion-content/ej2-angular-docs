@@ -8,9 +8,11 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<!-- To Render Menu. -->
+    template: `<div class="e-section-control">
+            <!-- To Render Menu. -->
             <div id="target">Right click / Touch hold to open the ContextMenu</div>
-            <ejs-contextmenu #contextmenu target='#target' [items]='menuItems' showItemOnClick="true" ></ejs-contextmenu>`
+            <ejs-contextmenu #contextmenu target='#target' [items]='menuItems' showItemOnClick="true" ></ejs-contextmenu>
+            </div>`
 })
 
 export class AppComponent {

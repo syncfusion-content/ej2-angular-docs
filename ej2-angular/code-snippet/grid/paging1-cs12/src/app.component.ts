@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { orderDetails } from './datasource';
 import { GridComponent, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { ClickEventArgs } from '@syncfusion/ej2-buttons';
 import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
         <div>
           <label style="padding: 30px 17px 0 0">Enter current page:</label>
           <ejs-textbox #textbox width="120"></ejs-textbox>
-          <button ejs-button #button id="button" (created)=clickHandler($event)>click button</button>
+          <button ejs-button id="button" (click)=click($event)>click button</button>
         </div>
         <div style="padding:20px 0 0 0">
           <ejs-grid #grid id="PagingGrid" [dataSource]="data" [allowPaging]="true" height="325">
@@ -32,15 +32,11 @@ export class AppComponent implements OnInit {
   public grid?: GridComponent;
   public pageOptions?: PageSettingsModel;
   @ViewChild('textbox') public textbox?: TextBoxComponent;
-  @ViewChild('button') public button?: ButtonComponent;
 
   ngOnInit(): void {
     this.data = orderDetails;
   }
-  clickHandler(args:any): void {
-    (this.button as ButtonComponent).element.addEventListener('click', (e: MouseEvent) => {
-      e.preventDefault(); // Prevent any default behavior of the button click
-      (this.grid as GridComponent).pageSettings.currentPage = parseInt((this.textbox as TextBoxComponent).value, 10);
-    });
+  click(args: ClickEventArgs): void {
+    (this.grid as GridComponent).pageSettings.currentPage = parseInt((this.textbox as TextBoxComponent), 10);
   }
 }

@@ -8,7 +8,8 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<div class="layoutWrapper">
+    template: `<div class="e-section-control">
+      <div class="layoutWrapper">
             <div class="speaker">
                 <div class="camera"></div>
             </div>
@@ -24,6 +25,7 @@ enableRipple(true);
                 </div>
             </div>
             <div class="outerButton"> </div>
+        </div>
         </div>`
 })
 

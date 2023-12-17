@@ -3,7 +3,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems, PdfExportProperties, Column } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
@@ -30,18 +30,18 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if (args.item.id === 'Grid_pdfexport') {
+        if ((args as any).item.id === 'Grid_pdfexport') {
           // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
-          const pdfExportColumns: Partial<Column>[] = [
-            { field: 'OrderID', textAlign: 'Right', width:'90' },
-            { field: 'CustomerID', headerText: 'Customer Name', width:'100' },
-            { field: 'Freight', textAlign: 'Center', width:'80' },
+          const pdfExportColumns: any[] = [
+            { field: 'OrderID', textAlign: 'Right' },
+            { field: 'CustomerID', headerText: 'Customer Name' },
+            { field: 'Freight', textAlign: 'Center' },
           ];
     
           const pdfExportProperties: PdfExportProperties = {
-            columns: pdfExportColumns as Column[],
+            columns: pdfExportColumns,
           };
-          (this.grid as GridComponent).pdfExport(pdfExportProperties);
+          (this.grid as any).pdfExport(pdfExportProperties);
         }
       }
 }

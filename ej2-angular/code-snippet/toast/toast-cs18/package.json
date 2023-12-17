@@ -18,6 +18,8 @@
     "@syncfusion/ej2-angular-dropdowns": "*",
     "@syncfusion/ej2-angular-notifications": "*",
     "@syncfusion/ej2-base": "*",
+    "@syncfusion/ej2-dropdowns": "*",
+    "@syncfusion/ej2-notifications": "*",
     "@syncfusion/ej2-buttons": "*",
     "@syncfusion/ej2-popups": "*",
     "@syncfusion/ej2-angular-base": "*",

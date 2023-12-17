@@ -6,7 +6,7 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' height='315' width='100%' (dataBound)='dataBound()'>
+    template: `<ejs-grid #grid [dataSource]='data' height='315' width='100%' (dataBound)='dataBound($event)'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = data.slice(0, 2);
     }
-    dataBound(): void {
+    dataBound(args: any): void {
         (this.grid as any).hideScroll();
     }
 }

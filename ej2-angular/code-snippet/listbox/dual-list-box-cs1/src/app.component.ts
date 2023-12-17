@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-container',
-    template: `<div class="dual-list-wrapper">
+    template: `<div class="e-section-control">
+                <div class="dual-list-wrapper">
                <div class="dual-list-groupa">
                <h4>Group A</h4>
                <ejs-listbox [dataSource]="groupA" [fields]="setfield" height="330px" [toolbarSettings]="toolbar" scope="#listbox"></ejs-listbox>
@@ -13,7 +14,8 @@ import { Component } from '@angular/core';
                <div class="dual-list-groupb">
                <h4>Group B</h4>
                <ejs-listbox [dataSource]="groupB" [fields]="setfield" height="330px" id="listbox"></ejs-listbox>
-               </div></div>`,
+               </div></div>
+               </div>`,
    
 })
 

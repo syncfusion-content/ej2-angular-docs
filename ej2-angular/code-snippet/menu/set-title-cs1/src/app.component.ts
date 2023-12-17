@@ -9,11 +9,13 @@ enableRipple(true);
 
 @Component({
     selector: 'app-root',
-    template: `<div class="menu-section">
+    template: `<div class="e-section-control">
+            <div class="menu-section">
     <div class="menu-control">
         <ejs-menu [items]='menuItems' (beforeItemRender)='onBeforeItemRender($event)'>></ejs-menu>
     </div>
-</div> `
+</div>
+</div>`
 })
 
 export class AppComponent {

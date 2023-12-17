@@ -9,7 +9,7 @@ enableRipple(false);
 @Component({
     selector: 'app-root',
     styleUrls: ['./template.css'],
-    template: `
+    template: `<div class="e-section-control">
     <div id="menuTemplate" class="menu-section">
     <div class="menu-control">
         <ejs-menu [items]='dataSource' [fields]='menuFields' [animationSettings]="animation" cssClass="e-template-menu">
@@ -40,7 +40,7 @@ enableRipple(false);
         </ejs-menu>
     </div>
 </div>
-    `
+</div>`
 })
 
 export class AppComponent {

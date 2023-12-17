@@ -17,10 +17,13 @@ export class AppComponent {
     id: "Patient",
     offsetX: 200,
     offsetY: 200,
+    style: {
+      fill: '#26A0DA',
+    },
     shape: {
       type: "UmlClassifier",
       //Define enumeration object
-      enumeration: {
+      enumerationShape: {
         name: "AccountType",
         //set the members of enumeration
         members: [

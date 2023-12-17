@@ -20,7 +20,6 @@ export class AppComponent implements OnInit {
     public pageSettings?: PageSettingsModel;
     @ViewChild('grid')
     public grid?: GridComponent;
-
     ngOnInit(): void {
         this.data = data;
         this.editSettings = {
@@ -30,15 +29,13 @@ export class AppComponent implements OnInit {
         };
         this.pageSettings = { pageSize: 8 };
     }
-    rowDataBound({row}: RowDataBoundEventArgs) {
-        if(row){
-            var rowIndex = parseInt(row.getAttribute('aria-rowIndex') as string);
-            var currentPageNumber = (this.grid as GridComponent).pageSettings.currentPage;
-            var pageSize = (this.grid as GridComponent).pageSettings.pageSize;
-            var startIndex = ((currentPageNumber as number) - 1) * (pageSize as number);
-            (row.querySelector('.e-rowcell') as Element).innerHTML = (
-                startIndex + rowIndex
-            ).toString();
-        }
+    rowDataBound(args: RowDataBoundEventArgs) {
+        var rowIndex = parseInt((args as any).row.getAttribute('aria-rowIndex'));
+        var currentPageNumber = (this.grid as GridComponent).pageSettings.currentPage;
+        var pageSize = (this.grid as GridComponent).pageSettings.pageSize;
+        var startIndex = ((currentPageNumber as number) - 1) * (pageSize as number);
+        (args as any).row.querySelector('.e-rowcell').innerHTML = (
+            startIndex + rowIndex
+        ).toString();
     }
 }

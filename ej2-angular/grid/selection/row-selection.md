@@ -82,7 +82,7 @@ In the following example, it demonstrates how to select a row at initial renderi
 
 The Grid allows you to select rows in any page based on their index value. This feature is useful when you want to perform specific actions on rows, such as highlighting, applying styles, or executing operations, regardless of their location across multiple pages within the grid.
 
-To achieve this, you can utilize the [selectRow](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrow) method and the [goToPage](https://ej2.syncfusion.com/angular/documentation/api/grid/#gotopage) method of the Grid control. By handling the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of `DropDownList` component, you can implement the logic to navigate to the desired page and select the row based on the index value. 
+To achieve this, you can utilize the [selectRow](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrow) method and the [goToPage](https://ej2.syncfusion.com/angular/documentation/api/grid/#gotopage) method of the Grid control. By handling the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event of `DropDownList` component, you can implement the logic to navigate to the desired page and select the row based on the index value. 
 
 Additionally, by handling the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event of the Grid, you can maintain the selection of the desired row after completing the paging action.
 
@@ -222,7 +222,7 @@ The Grid component allows you to retrieve the selected records even when navigat
 
 To persist the selection across pages, you need to enable the [persistselection](https://helpej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#persistselection) property. By default, this property is set to **false**. To enable it, set the value to **true** in the `selectionSettings` property of the Grid component.
 
-To retrieve the selected records from different pages, you can use the  [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/grid/#getselectedrecords) method. This method returns an array of the selected records.
+To retrieve the selected records from different pages, you can use the  [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api-grid.html#getSelectedRecords) method. This method returns an array of the selected records.
 
 The following example demonstrates how to retrieve selected records from various pages using the `getSelectedRecords` method and display **OrderID** in a dialog when a button is clicked:
 
@@ -240,7 +240,7 @@ The following example demonstrates how to retrieve selected records from various
   
 {% previewsample "page.domainurl/samples/grid/selection-cs12" %}
 
-> To persist the grid selection, it is necessary to define any one of the columns as a primary key using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/#columns) property.
+> To persist the grid selection, it is necessary to define any one of the columns as a primary key using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid#columns) property.
 
 ## How to get selected records  
 
@@ -270,7 +270,7 @@ Clearing row selection programmatically in the Grid component is a useful featur
 
 >The `clearRowSelection` method is applicable when the selection [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#type) is set to **Multiple** or **Single**.
 
-The following example demonstrates how to clear row selection by calling the [clearRowSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/#clearselection) method in the button click event.
+The following example demonstrates how to clear row selection by calling the [clearRowSelection](https://ej2.syncfusion.com/angular/documentation/api-grid.html#clearSelection) method in the button click event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -290,7 +290,7 @@ The following example demonstrates how to clear row selection by calling the [cl
 
 The Grid provides several events related to row selection that allow you to respond to and customize the behavior of row selection. These events give you control over various aspects of row selection. Here are the available row selection events:
 
-[rowSelecting](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowselecting): This event is triggered before any row selection occurs. It provides an opportunity to implement custom logic or validation before a row is selected, allowing you to control the selection process.
+[rowSelecting](https://ej2.syncfusion.com/angular/documentation/api/grid#rowselecting): This event is triggered before any row selection occurs. It provides an opportunity to implement custom logic or validation before a row is selected, allowing you to control the selection process.
 
 [rowSelected](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowselected): This event is triggered after a row is successfully selected. You can use this event to perform actions or updates when a row is selected.
 

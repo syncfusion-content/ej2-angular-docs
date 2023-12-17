@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
     @ViewChild('grid')
     public grid?: GridComponent;
     public data?: object[];
-    public isCaseSensitive: boolean = false;
+    public isCaseSensitive: any = false;
     public filterOptions?: FilterSettingsModel | undefined;
 
     ngOnInit(): void {

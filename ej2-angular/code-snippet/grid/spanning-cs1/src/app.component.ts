@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { QueryCellInfoEventArgs, GridLine, Column } from '@syncfusion/ej2-angular-grids';
+import { QueryCellInfoEventArgs, GridLine } from '@syncfusion/ej2-angular-grids';
 import { columnSpanData, ColumnSpanDataType } from './datasource';
 import { EmitType } from '@syncfusion/ej2-base';
 
@@ -31,90 +31,90 @@ import { EmitType } from '@syncfusion/ej2-base';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    public height: string | number;
-    public width: string | number;
-    public gridLines: GridLine;
-    public textWrap: boolean;
+    public data?: object[];
+    public height?: string | number;
+    public width?: string | number;
+    public gridLines?: GridLine;
+    public textWrap?: boolean;
     public queryCellInfoEvent: EmitType<QueryCellInfoEventArgs> = (args: QueryCellInfoEventArgs) => {
-        const datas: ColumnSpanDataType = args.data as ColumnSpanDataType;
-        switch (datas.EmployeeID) {
+        const data: ColumnSpanDataType = (args as any).data as ColumnSpanDataType;
+        switch (data.EmployeeID) {
             case 10001:
-                if ((args.column as Column).field === '9:00' || (args.column as Column).field === '2:30' || (args.column as Column).field === '4:30') {
-                    (args.colSpan as number) = 2;
-                } else if ((args.column as Column).field === '11:00') {
-                    (args.colSpan as number) = 3;
+                if ((args as any).column.field === '9:00' || (args as any).column.field === '2:30' || (args as any).column.field === '4:30') {
+                    (args as any).colSpan = 2;
+                } else if ((args as any).column.field === '11:00') {
+                    (args as any).colSpan = 3;
                 }
                 break;
             case 10002:
-                if ((args.column as Column).field === '9:30' || (args.column as Column).field === '2:30' ||
-                    (args.column as Column).field === '4:30') {
-                    (args.colSpan as number) = 3;
-                } else if ((args.column as Column).field === '11:00') {
-                    (args.colSpan as number) = 4;
+                if ((args as any).column.field === '9:30' || (args as any).column.field === '2:30' ||
+                    (args as any).column.field === '4:30') {
+                    (args as any).colSpan = 3;
+                } else if ((args as any).column.field === '11:00') {
+                    (args as any).colSpan = 4;
                 }
                 break;
             case 10003:
-                if ((args.column as Column).field === '9:00' || (args.column as Column).field === '11:30') {
-                    (args.colSpan as number) = 3;
-                } else if ((args.column as Column).field === '10:30' || (args.column as Column).field === '3:30' ||
-                    (args.column as Column).field === '4:30' || (args.column as Column).field === '2:30') {
-                    (args.colSpan as number) = 2;
+                if ((args as any).column.field === '9:00' || (args as any).column.field === '11:30') {
+                    (args as any).colSpan = 3;
+                } else if ((args as any).column.field === '10:30' || (args as any).column.field === '3:30' ||
+                    (args as any).column.field === '4:30' || (args as any).column.field === '2:30') {
+                    (args as any).colSpan = 2;
                 }
                 break;
             case 10004:
-                if ((args.column as Column).field === '9:00') {
-                    (args.colSpan as number) = 3;
-                } else if ((args.column as Column).field === '11:00') {
-                    (args.colSpan as number) = 4;
-                } else if ((args.column as Column).field === '4:00' || (args.column as Column).field === '2:30') {
-                    (args.colSpan as number) = 2;
+                if ((args as any).column.field === '9:00') {
+                    (args as any).colSpan = 3;
+                } else if ((args as any).column.field === '11:00') {
+                    (args as any).colSpan = 4;
+                } else if ((args as any).column.field === '4:00' || (args as any).column.field === '2:30') {
+                    (args as any).colSpan = 2;
                 }
                 break;
             case 10005:
-                if ((args.column as Column).field === '9:00') {
-                    (args.colSpan as number) = 4;
-                } else if ((args.column as Column).field === '11:30') {
-                    (args.colSpan as number) = 3;
-                } else if ((args.column as Column).field === '3:30' || (args.column as Column).field === '4:30' || (args.column as Column).field === '2:30') {
-                    (args.colSpan as number) = 2;
+                if ((args as any).column.field === '9:00') {
+                    (args as any).colSpan = 4;
+                } else if ((args as any).column.field === '11:30') {
+                    (args as any).colSpan = 3;
+                } else if ((args as any).column.field === '3:30' || (args as any).column.field === '4:30' || (args as any).column.field === '2:30') {
+                    (args as any).colSpan = 2;
                 }
                 break;
             case 10006:
-                if ((args.column as Column).field === '9:00' || (args.column as Column).field === '4:30' ||
-                    (args.column as Column).field === '2:30' || (args.column as Column).field === '3:30') {
-                    (args.colSpan as number) = 2;
-                } else if ((args.column as Column).field === '10:00' || (args.column as Column).field === '11:30') {
-                    (args.colSpan as number) = 3;
+                if ((args as any).column.field === '9:00' || (args as any).column.field === '4:30' ||
+                    (args as any).column.field === '2:30' || (args as any).column.field === '3:30') {
+                    (args as any).colSpan = 2;
+                } else if ((args as any).column.field === '10:00' || (args as any).column.field === '11:30') {
+                    (args as any).colSpan = 3;
                 }
                 break;
             case 10007:
-                if ((args.column as Column).field === '9:00' || (args.column as Column).field === '3:00' || (args.column as Column).field === '10:30') {
-                    (args.colSpan as number) = 2;
-                } else if ((args.column as Column).field === '11:30' || (args.column as Column).field === '4:00') {
-                    (args.colSpan as number) = 3;
+                if ((args as any).column.field === '9:00' || (args as any).column.field === '3:00' || (args as any).column.field === '10:30') {
+                    (args as any).colSpan = 2;
+                } else if ((args as any).column.field === '11:30' || (args as any).column.field === '4:00') {
+                    (args as any).colSpan = 3;
                 }
                 break;
             case 10008:
-                if ((args.column as Column).field === '9:00' || (args.column as Column).field === '10:30' || (args.column as Column).field === '2:30') {
-                    (args.colSpan as number) = 3;
-                } else if ((args.column as Column).field === '4:00') {
-                    (args.colSpan as number) = 2;
+                if ((args as any).column.field === '9:00' || (args as any).column.field === '10:30' || (args as any).column.field === '2:30') {
+                    (args as any).colSpan = 3;
+                } else if ((args as any).column.field === '4:00') {
+                    (args as any).colSpan = 2;
                 }
                 break;
             case 10009:
-                if ((args.column as Column).field === '9:00' || (args.column as Column).field === '11:30') {
-                    (args.colSpan as number) = 3;
-                } else if ((args.column as Column).field === '4:30' || (args.column as Column).field === '2:30') {
-                    (args.colSpan as number) = 2;
+                if ((args as any).column.field === '9:00' || (args as any).column.field === '11:30') {
+                    (args as any).colSpan = 3;
+                } else if ((args as any).column.field === '4:30' || (args as any).column.field === '2:30') {
+                    (args as any).colSpan = 2;
                 }
                 break;
             case 100010:
-                if ((args.column as Column).field === '9:00' || (args.column as Column).field === '2:30' ||
-                    (args.column as Column).field === '4:00' || (args.column as Column).field === '11:30') {
-                    (args.colSpan as number) = 3;
-                } else if ((args.column as Column).field === '10:30') {
-                    (args.colSpan as number) = 2;
+                if ((args as any).column.field === '9:00' || (args as any).column.field === '2:30' ||
+                    (args as any).column.field === '4:00' || (args as any).column.field === '11:30') {
+                    (args as any).colSpan = 3;
+                } else if ((args as any).column.field === '10:30') {
+                    (args as any).colSpan = 2;
                 }
                 break;
         }
@@ -127,3 +127,6 @@ export class AppComponent implements OnInit {
         this.textWrap = true;
     }
 }
+
+
+

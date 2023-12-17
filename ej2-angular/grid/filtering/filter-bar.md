@@ -158,14 +158,11 @@ Here's an example that demonstrates how to hide the filter bar for a template co
 
 The [filterBarTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filterbartemplate) feature in the Syncfusion Angular Grid allows you to customize the components displayed in the filter bar. Normally, a text box is the default element rendered in the filter bar cell. This flexibility allows you to use various components, such as datepicker, numerictextbox, combobox, and multiselect, within the filter bar based on your specific requirements.
 
-To utilize this feature, you can define a custom template for the filter bar by setting the `filterBarTemplate` property of a column in your Angular application:
+To utilize this feature, you can define a custom template for the filter bar by setting the `filterbarTemplate` property of a column in your Angular application:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-bar-cs7/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/filter-bar-cs7/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/filter-bar-cs7/src/app.module.ts %}
@@ -180,4 +177,3 @@ To utilize this feature, you can define a custom template for the filter bar by 
 ## See also
 
 * [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
-* [How to change loading indicator in Angular Grid](../data-binding/data-binding.md#loading-animation)

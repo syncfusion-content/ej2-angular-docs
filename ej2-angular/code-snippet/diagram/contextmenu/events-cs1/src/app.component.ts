@@ -61,7 +61,7 @@ export class AppComponent {
       public contextMenuClick(args: MenuEventArgs): void {
         if (args.item.id === 'delete') {
           if ((this.diagram.selectedItems.nodes.length + this.diagram.selectedItems.connectors.length) > 0) {
-              this.diagram.remove();
+              this.diagram.cut();
           }
       }
       }
