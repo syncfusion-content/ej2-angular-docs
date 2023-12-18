@@ -32,6 +32,25 @@ To export data to PDF document, inject the `PdfExport` module in Gantt.
   
 {% previewsample "page.domainurl/samples/gantt/pdf-export-cs14" %}
 
+## Indicators in PDF exporting 
+
+The PDF export functionality allows users to export Gantt charts enriched with dynamic indicators and accompanying images.
+These indicators, represented by images,can be effortlessly defined using the  [`base64`](https://ej2.syncfusion.com/angular/documentation/api/gantt/iIndicator/#base64) encoding value in the data object of datasource.This data object field should be mapped to indiactor property of [`task fields`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#indicators).
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/pdf-export-cs14/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/pdf-export-cs14/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/pdf-export-cs14/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs14" %}
+
 ## Exporting Gantt data as a blob object
 
 In Gantt, you can export the Gantt chart data as a blob object, which allows you to preview or modify the data before exporting it.
@@ -75,3 +94,26 @@ Also, we can customize the chart width and grid width in exported file using [`c
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/single-page" %}
+
+## Exporting with column template
+
+The PDF export functionality allows to export Grid columns that include images, hyperlinks, and custom text to an PDF document using [pdfQueryCellInfo](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryCellInfoEventArgs/) event.
+
+In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryCellInfoEventArgs/#hyperlink) and [image](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryCellInfoEventArgs/#image) properties in the [pdfQueryCellInfo](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryCellInfoEventArgs/) event.
+
+>Note: PDF Export supports base64 string to export the images.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/pdf-export-column-template-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/pdf-export-column-template-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/pdf-export-column-template-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/pdf-export-column-template-cs1" %}
+
