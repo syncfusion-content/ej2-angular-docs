@@ -42,7 +42,7 @@ cd my-app
 
 ## Installing Syncfusion RadioButton package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
@@ -152,7 +152,7 @@ The Essential JS 2 RadioButton contains 2 different states visually, they are as
 * Checked
 * Unchecked
 
-The RadioButton [`checked`](https://ej2.syncfusion.com/angular/documentation/api/radio-button/#checked) property is used to handle the checked and unchecked state.
+The RadioButton [`checked`](https://ej2.syncfusion.com/angular/documentation/api/radio-button#checked) property is used to handle the checked and unchecked state.
 In the checked state an inner circle will be added to the visualization of RadioButton.
 
 {% tabs %}

@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
     selector: 'app-root',
@@ -27,13 +26,13 @@ export class AppComponent implements OnInit {
     @ViewChild('grid')
     public grid?: GridComponent;
 
-    change(args: ChangeEventArgs) {
-        if (args.checked) {
-            (this.grid as GridComponent).getColumnByField('CustomerID').disableHtmlEncode = false;
+    change(args: any) {
+        if ((args as any).checked) {
+            (this.grid as any).getColumnByField('CustomerID').disableHtmlEncode = false;
         } else {
-            (this.grid as GridComponent).getColumnByField('CustomerID').disableHtmlEncode = true;
+            (this.grid as any).getColumnByField('CustomerID').disableHtmlEncode = true;
         }
-        (this.grid as GridComponent).refreshColumns();
+        (this.grid as any).refresh();
     }
 
     ngOnInit(): void {

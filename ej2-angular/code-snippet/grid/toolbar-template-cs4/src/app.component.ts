@@ -4,19 +4,17 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChangeEventArgs, DropDownListComponent, } from '@syncfusion/ej2-angular-dropdowns';
 import { data } from './datasource';
-import { GridComponent, EditSettingsModel  } from '@syncfusion/ej2-angular-grids';
+import { GridComponent,EditSettingsModel  } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' height='200px' [editSettings]='editSettings'>
                 <ng-template #toolbarTemplate let-data>
-                <div style="display: flex">
                     <label style="padding: 10px 10px 26px 0">
                         Change the value:
                     </label>
-                    <ejs-dropdownlist #dropDown style="margin-top:5px" (change)="onChange($event)" [dataSource]='dropDownData' [placeholder]='placeholder' width="120px"></ejs-dropdownlist>
-                </div>
-                    </ng-template>
+                    <ejs-dropdownlist #dropDown style="margin-top:5px" (change)="onChange($event)" [dataSource]='dropDownData' [placeholder]='placeholder' width="250px"></ejs-dropdownlist>
+                </ng-template>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' isPrimaryKey='true' textAlign='Right' width=90></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
@@ -51,10 +49,10 @@ export class AppComponent implements OnInit {
             this.grid.startEdit();
         }
         if (args.itemData.text === 'Delete') {
-            this.grid.deleteRecord(selectedRow as string);
+            this.grid.deleteRecord(selectedRow as any);
         }
-        (this.dropDown as DropDownListComponent).value = '';
-        (this.dropDown as DropDownListComponent).placeholder = args.itemData.text as string;
+        (this.dropDown as any).value = null;
+        (this.dropDown as any).placeholder = args.itemData.text;
     }
 }
 

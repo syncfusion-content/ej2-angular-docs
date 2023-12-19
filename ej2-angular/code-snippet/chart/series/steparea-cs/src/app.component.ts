@@ -6,7 +6,7 @@ import { stepData } from './datasource';
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StepArea' xName='x' yName='y' name='England' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='StepArea' xName='x' yName='y' name='England' [border]='border' opacity=0.4 fill='red' step='Right' dashArray='5,5'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })

@@ -27,10 +27,10 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
     reorderSingleColumnUsingFieldName(): void {
-        (this.gridObj as GridComponent).reorderColumns("ShipCity", "OrderID");
+        (this.gridObj as any).reorderColumns("ShipCity", "OrderID");
     }
     reorderMultipleColumnsUsingFieldName(): void {
-        (this.gridObj as GridComponent).reorderColumns(['ShipCity', 'ShipRegion', 'ShipName'], 'OrderID');
+        (this.gridObj as any).reorderColumns(['ShipCity', 'ShipRegion', 'ShipName'], 'OrderID');
     }
 }
 

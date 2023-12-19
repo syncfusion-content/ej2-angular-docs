@@ -7,8 +7,6 @@ import { deleteImage } from './delete';
 import { addImage } from './add';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { GridComponent, EditSettingsModel} from '@syncfusion/ej2-angular-grids';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
-import { ClickEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
     selector: 'app-root',
@@ -17,7 +15,6 @@ import { ClickEventArgs } from '@syncfusion/ej2-buttons';
                     <div class="image">
                         <img [src]="addImageSource" id="addImage" />
                         <button
-                        #addButton
                         class="button"
                         id="addButton"
                         ejs-button
@@ -28,7 +25,6 @@ import { ClickEventArgs } from '@syncfusion/ej2-buttons';
                         </button>
                         <img [src]="deleteImageSource" id="deleteImage" />
                         <button
-                        #deleteButton
                         class="button"
                         ejs-button
                         id="deleteButton"
@@ -68,12 +64,12 @@ export class AppComponent implements OnInit {
         );
     }
 
-    editAction(args: MouseEvent) {
-        if ((args.currentTarget as HTMLElement).id === 'addButton') {
+    editAction(args: any) {
+        if ((args as any).currentTarget.id === 'addButton') {
             this.grid.addRecord();
         } else {
             var selectedRecord = this.grid.getSelectedRecords()[0];
-            this.grid.deleteRecord(selectedRecord as string);
+            this.grid.deleteRecord(selectedRecord as any);
         }
     }
 

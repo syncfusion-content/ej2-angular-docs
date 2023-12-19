@@ -6,8 +6,8 @@ import { percentData } from './datasource';
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StackingStepArea' xName='x' yName='y' name='USA' [border]='border' dashArray='5.5'></e-series>
-            <e-series [dataSource]='chartData' type='StackingStepArea' xName='x' yName='y1' name='UK' [border]='border' dashArray='5.5'></e-series>
+            <e-series [dataSource]='chartData' type='StackingStepArea' xName='x' yName='y' name='USA' [border]='border' dashArray='5.5' step='Center' opacity=0.5 fill='red'></e-series>
+            <e-series [dataSource]='chartData' type='StackingStepArea' xName='x' yName='y1' name='UK' [border]='border' dashArray='5.5' step='Center' opacity=0.5 fill='green'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })

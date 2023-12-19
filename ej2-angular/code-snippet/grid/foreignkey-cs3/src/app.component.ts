@@ -3,7 +3,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { createElement } from '@syncfusion/ej2-base';
 import { GridComponent, ForeignKeyService, FilterService, IFilterUI, Column } from '@syncfusion/ej2-angular-grids';
 import { DataManager } from '@syncfusion/ej2-data';
-import { DropDownList, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { DropDownList } from '@syncfusion/ej2-angular-dropdowns';
 import { data, fEmployeeData } from './datasource';
 
 @Component({
@@ -36,15 +36,15 @@ export class AppComponent implements OnInit {
                 placeholder: 'Select a value',
                 popupHeight: '200px',
                 index: 0,
-                change: (e: ChangeEventArgs) => {
+                change: (e: any) => {
                     if (e.value !== 'All') {
-                        (this.grid as GridComponent).filterByColumn('EmployeeID', 'equal', e.value);
+                        (this.grid as any).filterByColumn('EmployeeID', 'equal', e.value);
                     } else {
-                        (this.grid as GridComponent).removeFilteredColsByField('EmployeeID');
+                        (this.grid as any).removeFilteredColsByField('EmployeeID');
                     }
                 }
             });
-            dropInstance.appendTo(args.element as HTMLTableCellElement);
+            dropInstance.appendTo((args as any).element as HTMLTableCellElement);
         }
     };
     ngOnInit(): void {
@@ -52,3 +52,6 @@ export class AppComponent implements OnInit {
         this.employeeData = fEmployeeData;
     }
 }
+
+
+

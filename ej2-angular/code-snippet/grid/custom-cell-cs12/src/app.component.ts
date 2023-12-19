@@ -12,6 +12,7 @@ import { data } from './datasource';
                         <e-column field='ShipName' headerText='Ship Name' textAlign='Right' width=80></e-column>
                     </e-columns>
                 </ejs-grid>`,
+    
 })
 export class AppComponent implements OnInit {
 

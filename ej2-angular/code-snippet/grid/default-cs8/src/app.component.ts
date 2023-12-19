@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
     }
 
     onLoad(): void {
-        (this.grid as GridComponent).childGrid.dataSource = data; // assign data source for child grid.
+        (this.grid as any).childGrid.dataSource = data; // assign data source for child grid.
     }
 
 }

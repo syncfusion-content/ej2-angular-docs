@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='RangeStepArea' xName='x' high='high' low='low' opacity=0.4 fill='red' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='RangeStepArea' xName='x' high='high' low='low' opacity=0.4 fill='red' [border]='border' step='Center' dashArray='5,5'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })

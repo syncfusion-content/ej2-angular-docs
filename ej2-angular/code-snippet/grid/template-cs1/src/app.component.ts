@@ -19,6 +19,7 @@ import { employeeData } from './datasource';
                         <e-column field='City' headerText='City' width=100></e-column>
                     </e-columns>
                 </ejs-grid>`,
+    styleUrls: ['app.style.css']
 })
 export class AppComponent implements OnInit {
 

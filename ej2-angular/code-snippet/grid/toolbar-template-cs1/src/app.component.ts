@@ -39,14 +39,14 @@ export class AppComponent implements OnInit {
     }
 
     clickHandler(args: ClickEventArgs): void {
-        const target = (args.originalEvent.target as HTMLElement).closest('button'); // find clicked button
-        if ((target as HTMLElement).id === 'collapse') {
+        const target: HTMLElement | any = ((args as any).originalEvent.target as HTMLElement).closest('button'); // find clicked button
+        if (target?.id === 'collapse') {
             // collapse all expanded grouped row
-            (this.grid as GridComponent).groupModule.collapseAll();
+            (this.grid as any).groupModule.collapseAll();
         }
-        if ((target as HTMLElement).id === 'expand') {
+        if (target?.id === 'expand') {
             // expand all collapsed grouped row
-            (this.grid as GridComponent).groupModule.expandAll();
+            (this.grid as any).groupModule.expandAll();
         }
     }
 }

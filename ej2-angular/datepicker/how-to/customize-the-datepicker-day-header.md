@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Customize the datepicker day header in Angular Datepicker component
 
-You can change the format of the day that to be displayed in header using [`dayHeaderFormat`](https://ej2.syncfusion.com/angular/documentation/api/datepicker/#dayheaderformat) property. By default, the format is `Short`.
+You can change the format of the day that to be displayed in header using [`dayHeaderFormat`](https://ej2.syncfusion.com/angular/documentation/api/datepicker#dayheaderformat) property. By default, the format is `Short`.
 
 You can find the possible formats on below.
 

@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
     public employeeData?: object[];
     public editoption: EditSettingsModel = { allowEditing: true, allowAdding: true, allowDeleting: true };
     toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+    // public edit = 'dropdownedit';
 
     ngOnInit(): void {
         this.orderDetails = orderDetails;
@@ -32,3 +33,6 @@ export class AppComponent implements OnInit {
         this.employeeData = employeeData;
     }
 }
+
+
+

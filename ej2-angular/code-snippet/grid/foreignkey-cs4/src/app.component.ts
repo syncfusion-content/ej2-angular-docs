@@ -1,6 +1,6 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ForeignKeyService, AggregateService, getForeignData, CustomSummaryType, AggregateColumnModel, GridComponent, Column } from '@syncfusion/ej2-angular-grids';
+import { ForeignKeyService, AggregateService, getForeignData, CustomSummaryType, AggregateColumnModel, GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data, employeeData } from './datasource';
 import { getValue } from '@syncfusion/ej2-base';
 
@@ -36,12 +36,10 @@ export class AppComponent implements OnInit {
     public employeeData?: object[];
 
     // Custom Aggregate function for foreign column
-    public customAggregateFn: CustomSummaryType = (customData: object, column: AggregateColumnModel) => {
-        var count = 0;
-        data.forEach((dObj) => {
-            count = getValue('FirstName', getForeignData((this.grid as GridComponent).getColumnByField((column as Column).field), dObj)[0]) === 'Margaret' ? count + 1 : count;
-        })
-        return count;
+    public customAggregateFn: CustomSummaryType = (data1: any, column: AggregateColumnModel) => {
+        return data1.result.filter((dObj: object) => {
+            return getValue('FirstName', getForeignData((this.grid as any).getColumnByField((column as any).field), dObj)[0]) === 'Margaret';
+        }).length;
     }
 
     ngOnInit(): void {
@@ -49,3 +47,6 @@ export class AppComponent implements OnInit {
         this.employeeData = employeeData;
     }
 }
+
+
+

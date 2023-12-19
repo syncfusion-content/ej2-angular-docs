@@ -1,7 +1,8 @@
 
+
 import { Component, OnInit } from '@angular/core';
 import { InfiniteScrollService } from '@syncfusion/ej2-angular-grids';
-import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { PageSettingsModel, InfiniteScrollSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 const names = ['TOM', 'Hawk', 'Jon', 'Chandler', 'Monica', 'Rachel', 'Phoebe', 'Gunther', 'Ross', 'Geller', 'Joey', 'Bing', 'Tribbiani',
  'Janice', 'Bong', 'Perk', 'Green', 'Ken', 'Adams'];
@@ -24,7 +25,7 @@ const data = (count: any) => {
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' height=300 [enableInfiniteScrolling]='true' [pageSettings]='options'>
+    template: `<ejs-grid [dataSource]='data' height=300 enableInfiniteScrolling='true' [infiniteScrollSettings]='infiniteOptions' [pageSettings]='options'>
                 <e-columns>
                     <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=70></e-column>
                     <e-column field='Engineer' width=100></e-column>
@@ -39,9 +40,11 @@ export class AppComponent implements OnInit {
 
     public data?: object[];
     public options?: PageSettingsModel;
+    public infiniteOptions?: InfiniteScrollSettingsModel;
     ngOnInit(): void {
-        this.data = data(5000);
+        this.data = data(1000);
         this.options = { pageSize: 50 };
+        this.infiniteOptions = { initialBlocks: 5 };
     }
 }
 

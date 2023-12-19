@@ -24,7 +24,7 @@ Diagram provides support to add different kind of nodes. They are as follows:
 
 ## Text
 
-Texts can be added to the diagram as [`text`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape-shapemodel) nodes. The shape property of the node allows you to set the type of node and for text nodes, it should be set as **text**. In addition, define the content object that is used to define the text to be added and style is used to customize the appearance of that text. The following code illustrates how to create a text node.
+Texts can be added to the diagram as [`text`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape-shapemodel) nodes. The shape property of the node allows you to set the type of node and for text nodes, it should be set as **text**. In addition, define the content object that is used to define the text to be added and style is used to customize the appearance of that text. The following code illustrates how to create a text node.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,7 +42,7 @@ Texts can be added to the diagram as [`text`](https://ej2.syncfusion.com/angular
 
 ## Image
 
-Diagram allows to add images as [`image`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape-shapemodel) nodes. The shape property of node allows you to set the type of node and for image nodes, it should be set as **image**. In addition, the source property of shape enables you to set the image source.
+Diagram allows to add images as [`image`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape-shapemodel) nodes. The shape property of node allows you to set the type of node and for image nodes, it should be set as **image**. In addition, the source property of shape enables you to set the image source.
 
 The following code illustrates how an image node is created.
 
@@ -88,7 +88,7 @@ Link 2: `http://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chr
 
 Stretch and align the image content anywhere but within the node boundary.
 
-The scale property of the node allows to stretch the image as you desired (either to maintain proportion or to stretch). By default, the [`scale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/image/#scale-scale) property of the node is set as **meet**.
+The scale property of the node allows to stretch the image as you desired (either to maintain proportion or to stretch). By default, the [`scale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/image#scale-scale) property of the node is set as **meet**.
 
 The following code illustrates how to scale or stretch the content of the image node.
 
@@ -117,7 +117,7 @@ The following table illustrates all the possible scale options for the image nod
 
 ## HTML
 
-Html elements can be embedded in the diagram through [`Html`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape-shapemodel) type node. The shape property of node allows you to set the type of node and to create a HTML node it should be set as `HTML`. The following code illustrates how an Html node is created.
+Html elements can be embedded in the diagram through [`Html`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape-shapemodel) type node. The shape property of node allows you to set the type of node and to create a HTML node it should be set as `HTML`. The following code illustrates how an Html node is created.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -137,7 +137,7 @@ Html elements can be embedded in the diagram through [`Html`](https://ej2.syncfu
 
 ## HTML Node With Template
 
-Html elements can be embedded in the diagram through [`Html`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape-shapemodel) type node. The shape property of node allows you to set the type of node. The following code illustrates how an Html node is created with template.
+Html elements can be embedded in the diagram through [`Html`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape-shapemodel) type node. The shape property of node allows you to set the type of node. The following code illustrates how an Html node is created with template.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -155,7 +155,7 @@ Html elements can be embedded in the diagram through [`Html`](https://ej2.syncfu
 
 ## Native
 
-Diagram provides support to embed SVG element into a node. The shape property of node allows you to set the type of node. To create a [`native`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape-shapemodel) node, it should be set as **native**. The following code illustrates how a native node is created.
+Diagram provides support to embed SVG element into a node. The shape property of node allows you to set the type of node. To create a [`native`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape-shapemodel) node, it should be set as **native**. The following code illustrates how a native node is created.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -190,9 +190,9 @@ The following tables illustrates all the possible scale options for the node.
 
 ## Basic shapes
 
-* The [`Basic`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape-shapemodel) shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the type of the shape should be set as **basic**. Its shape property can be set with any one of the built-in shape.
+* The [`Basic`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape-shapemodel) shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the type of the shape should be set as **basic**. Its shape property can be set with any one of the built-in shape.
 
-* To render a rounded rectangle, you need to set the type as basic and shape as rectangle. Set the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#cornerRadius-string) property to specify the radius of rounded rectangle.
+* To render a rounded rectangle, you need to set the type as basic and shape as rectangle. Set the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#cornerRadius-string) property to specify the radius of rounded rectangle.
 
 The following code example illustrates how to create a basic shape.
 
@@ -222,7 +222,7 @@ The list of basic shapes are as follows.
 
 ## Path
 
-The [`Path`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape-shapemodel) node is a commonly used basic shape that allows visually to represent the geometrical information. To create a path node, specify the shape as **path**. The path property of node allows you to define the path to be drawn. The following code illustrates how a path node is created.
+The [`Path`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape-shapemodel) node is a commonly used basic shape that allows visually to represent the geometrical information. To create a path node, specify the shape as **path**. The path property of node allows you to define the path to be drawn. The following code illustrates how a path node is created.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -240,7 +240,7 @@ The [`Path`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#
 
 ## Flow Shapes
 
-The [`flow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#shape-shapemodel) shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, specify the shape type as **flow**. Flow shapes and by default, it is considered as **process**. The following code example illustrates how to create a flow shape.
+The [`flow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#shape-shapemodel) shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, specify the shape type as **flow**. Flow shapes and by default, it is considered as **process**. The following code example illustrates how to create a flow shape.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
