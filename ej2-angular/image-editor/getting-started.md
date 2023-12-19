@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Image editor component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Image editor component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular Image Editor Component | Syncfusion
+description: Checkout and learn about getting started with Angular Image Editor component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Image editor component
+# Getting started with Angular Image Editor Component
 
 This section explains how to create and demonstrate the basic usage of the [Angular Image Editor](https://www.syncfusion.com/angular-components/angular-image-editor) module.
 
