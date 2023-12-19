@@ -29,8 +29,8 @@ export class AppComponent implements OnInit {
         this.toolbarOptions = ['Search'];
     }
     created(): void {
-        (document.getElementById((this.grid as GridComponent).element.id + "_searchbar") as Element).addEventListener('keyup', () => {
-            (this.grid as GridComponent).search(((event as MouseEvent).target as HTMLInputElement).value)
+        (document.getElementById((this.grid as any).element.id + "_searchbar") as any).addEventListener('keyup', () => {
+            (this.grid as any).search(((event as any).target as HTMLInputElement).value)
         });
     }
 }

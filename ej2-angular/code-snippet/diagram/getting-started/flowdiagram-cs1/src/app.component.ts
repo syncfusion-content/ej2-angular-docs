@@ -51,19 +51,19 @@ import {
                 <<e-connector-annotation content='Yes'></e-connector-annotation>
             </e-connector-annotations>
         </e-connector>
-        <e-connector id='connector4' type='Orthogonal' sourceID='node3' targetID='node6' [segments]='segment1'>
+        <e-connector id='connector4' sourceID='node3' targetID='node6' [segments]='segment1'>
             <e-connector-annotations>
                 <e-connector-annotation content='No'></e-connector-annotation>
             </e-connector-annotations>
         </e-connector>
         <e-connector id='connector5' sourceID='node4' targetID='node5'></e-connector>
-        <e-connector id='connector6' type='Orthogonal' sourceID='node5' targetID='node3' [segments]='segment2'></e-connector>
+        <e-connector id='connector6' sourceID='node5' targetID='node3' [segments]='segment2'></e-connector>
     </e-connectors>
 </ejs-diagram>`,
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  
+  @ViewChild("diagram")
   public terminator?: FlowShapeModel;
   public process?: FlowShapeModel;
   public decision?: FlowShapeModel;
@@ -87,8 +87,8 @@ export class AppComponent {
     this.process = { type: 'Flow', shape: 'Process' };
     this.decision = { type: 'Flow', shape: 'Decision' };
     this.preDefinedProcess = { type: 'Flow', shape: 'PreDefinedProcess' };
-    this.segment1 = [{ type:'Orthogonal',length: 50, direction: "Right" }, { length: 300, direction: "Bottom" }];
-    this.segment2 = [{ type:'Orthogonal',length: 50, direction: "Left" }, { length: 200, direction: "Top" }];
+    this.segment1 = [{ length: 30, direction: "Right" }, { length: 300, direction: "Bottom" }];
+    this.segment2 = [{ length: 30, direction: "Left" }, { length: 200, direction: "Top" }];
   }
 }
 

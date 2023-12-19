@@ -25,12 +25,12 @@ export class AppComponent implements OnInit {
     }
     updateColumns(): void {
       // Modifying column properties
-      (this.grid as GridComponent).columns[0].textAlign = 'Center';
-      (this.grid as GridComponent).columns[0].width = '100';
-      (this.grid as GridComponent).columns[2].visible = false;
-      (this.grid as GridComponent).columns[1].customAttributes = { class: 'customcss' };
+      (this.grid as any).columns[0].textAlign = 'Center';
+      (this.grid as any).columns[0].width = '100';
+      (this.grid as any).columns[2].visible = false;
+      (this.grid as any).columns[1].customAttributes = { class: 'customcss' };
       // Applying changes to the grid
-      (this.grid as GridComponent).refreshColumns();
+      (this.grid as any).refreshColumns();
     }
 }
 

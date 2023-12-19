@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { TooltipComponent, TooltipEventArgs } from '@syncfusion/ej2-angular-popups';
+import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
 import { data } from './datasource';
 
 @Component({
@@ -25,9 +25,9 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = data;
     }
-    beforeRender(args: TooltipEventArgs): void {
-        if (args.target.classList.contains('e-rowcell')) {
-            (this.tooltip as TooltipComponent).content = 'The value is "' + args.target.innerText + '" ';
+    beforeRender(args: any): void {
+        if ((args as any).target.classList.contains('e-rowcell')) {
+            (this.tooltip as any).content = 'This is value "' + (args as any).target.innerText + '" ';
         }
     }
 }

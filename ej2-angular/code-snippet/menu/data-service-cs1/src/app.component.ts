@@ -15,7 +15,7 @@ enableRipple(true);
 
 export class AppComponent implements OnInit {
 
-    private SERVICE_URI: string = 'https://services.odata.org/V4/Northwind/Northwind.svc/';
+    private SERVICE_URI: string = 'https://js.syncfusion.com/ejServices/Wcf/Northwind.svc/';
 
     // Menu fields definition.
     public menuFields: FieldSettingsModel = {

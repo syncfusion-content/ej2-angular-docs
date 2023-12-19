@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { inventoryData } from './datasource';
-import { GridComponent, GridLine} from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import {
+    GridComponent,
+} from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -32,7 +33,7 @@ export class AppComponent implements OnInit {
     public data?: object[];
     @ViewChild('grid')
     public grid?: GridComponent;
-    public ddlData: object[] = [
+    public ddlData: Object[] = [
         { text: 'Default', value: 'Default' },
         { text: 'Both', value: 'Both' },
         { text: 'Horizontal', value: 'Horizontal' },
@@ -44,8 +45,8 @@ export class AppComponent implements OnInit {
         this.data = inventoryData;
     }
 
-    valueChange(args: ChangeEventArgs): void {
-        (this.grid as GridComponent).gridLines = args.value as GridLine
+    valueChange(args: any): void {
+        (this.grid as any).gridLines = (args as any).value
     }
 }
 

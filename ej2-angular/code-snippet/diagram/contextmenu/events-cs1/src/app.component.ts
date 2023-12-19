@@ -51,7 +51,7 @@ export class AppComponent {
     public contextMenuOpen(args: DiagramBeforeMenuOpenEventArgs): void {
         for (let item of args.items) {
           if (item.text === 'delete') {
-              if (!this.diagram.selectedItems.nodes.length && !this.diagram.selectedItems.connectors.length) {
+              if ((!this.diagram as any).selectedItems.nodes.length && !(this.diagram as any).selectedItems.connectors.length) {
                   args.hiddenItems.push(item.id as string);
               }
           }
@@ -60,8 +60,8 @@ export class AppComponent {
       
       public contextMenuClick(args: MenuEventArgs): void {
         if (args.item.id === 'delete') {
-          if ((this.diagram.selectedItems.nodes.length + this.diagram.selectedItems.connectors.length) > 0) {
-              this.diagram.cut();
+          if (((this.diagram as any).selectedItems.nodes.length + (this.diagram as any).selectedItems.connectors.length) > 0) {
+              (this.diagram as any).cut();
           }
       }
       }

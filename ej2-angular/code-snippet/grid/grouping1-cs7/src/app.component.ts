@@ -45,19 +45,18 @@ export class AppComponent implements OnInit {
     }
 
    onExpandCollapseButtonClick() {
-     debugger
     const groupedRows = Array.from(
-      (this.grid as GridComponent)
+      (this.grid as any)
         .getContentTable()
         .querySelectorAll('.e-recordplusexpand, .e-recordpluscollapse')
     );
 
-    if (groupedRows.length >= 0 && (this.groupedRowIndex as number) < groupedRows.length) {
+    if (groupedRows.length >= 0 && (this.groupedRowIndex as any) < groupedRows.length) {
       this.message = '';
-      const groupCaptionElement = groupedRows[this.groupedRowIndex as number];
-      (this.grid as GridComponent).groupModule.expandCollapseRows(groupCaptionElement);
+      const groupCaptionElement = groupedRows[this.groupedRowIndex as any];
+      (this.grid as any).groupModule.expandCollapseRows(groupCaptionElement);
     } else {
-      (this.message as string) =
+      (this.message as any) =
         'The entered index exceeds the total number of grouped rows. Please enter a valid grouped index.';
     }
   }

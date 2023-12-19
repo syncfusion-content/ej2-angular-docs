@@ -1,7 +1,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { createElement } from '@syncfusion/ej2-base';
-import { GridComponent, ForeignKeyService, FilterService, IFilter, FilterSettingsModel, Filter, Column } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ForeignKeyService, FilterService, IFilter, FilterSettingsModel, Filter } from '@syncfusion/ej2-angular-grids';
 import { DataManager } from '@syncfusion/ej2-data';
 import { DropDownList } from '@syncfusion/ej2-angular-dropdowns';
 import { data, fEmployeeData } from './datasource';
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
         ui: {
             create: (args: { target: Element, column: object }) => {
                 const flValInput: HTMLElement = createElement('input', { className: 'flm-input' });
-                args.target.appendChild(flValInput);
+                (args as any).target.appendChild(flValInput);
                 this.dropInstance = new DropDownList({
                     dataSource: new DataManager(fEmployeeData),
                     fields: { text: 'FirstName', value: 'EmployeeID' },
@@ -42,13 +42,13 @@ export class AppComponent implements OnInit {
                 this.dropInstance.appendTo(flValInput);
             },
             write: (args: {
-                column: object, target: Element,
+                column: object, target: Element, parent: any,
                 filteredValue: number | string
             }) => {
-                (this.dropInstance as DropDownList).text = args.filteredValue as string || '';
+                (this.dropInstance as DropDownList).text = (args as any).filteredValue as string || '';
             },
-            read: (args: { target: Element, column: Column, operator: string, fltrObj: Filter }) => {
-               (this.grid as GridComponent).filterByColumn(args.column.field, args.operator, (this.dropInstance as DropDownList).text);
+            read: (args: { target: Element, column: any, operator: string, fltrObj: Filter }) => {
+                (args as any).fltrObj.filterByColumn((args as any).column.field, (args as any).operator, (this.dropInstance as DropDownList).text);
             }
         }
     };
@@ -57,3 +57,6 @@ export class AppComponent implements OnInit {
         this.employeeData = fEmployeeData;
     }
 }
+
+
+

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Tool tip in Angular Accumulation chart component | Syncfusion
-description: Learn here all about Tool tip in Syncfusion Angular Accumulation chart component of Syncfusion Essential JS 2 and more.
+title: Tooltip in Angular Accumulation chart component | Syncfusion
+description: Learn here all about Tooltip in Syncfusion Angular Accumulation chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Tool tip 
+control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool tip in Angular Accumulation chart component
+# Tooltip in Angular Accumulation chart component
 
-Tooltip for the accumulation chart can be enabled by using the `enable` property.
+Tooltip for the accumulation chart can be enabled by using the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#enable) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -30,7 +30,7 @@ Tooltip for the accumulation chart can be enabled by using the `enable` proper
 
 ## Header
 
-We can specify header for the tooltip using `header` property.
+We can specify header for the tooltip using [`header`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#header) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -65,9 +65,9 @@ information in tooltip. For example the format `${series.name} ${point.x}` sho
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs33" %}
 
-## Tooltip Template
+## Tooltip template
 
-Any HTML element can be displayed in the tooltip by using the `template` property.
+Any HTML element can be displayed in the tooltip by using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#template) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,6 +82,24 @@ Any HTML element can be displayed in the tooltip by using the `template` propert
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs34" %}
+
+## Fixed tooltip
+
+By default, tooltip track the mouse movement, but you can set a fixed position for the tooltip by using the [`location`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/tooltipSettings/#location) property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/pie-cs38/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/chart/series/pie-cs38/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/pie-cs38/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/pie-cs38" %}
 
 ## Customization
 
@@ -101,9 +119,9 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-c
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs35" %}
 
-## Tooltip Mapping Name
+## Tooltip mapping name
 
-By default, tooltip shows information of x and y value in points. You can show more information from datasource in tooltip by using the `tooltipMappingName` property of the tooltip.
+By default, tooltip shows information of x and y value in points. You can show more information from datasource in tooltip by using the [`tooltipMappingName`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeries/#tooltipmappingname) property of the tooltip.
 You can use the `${point.tooltip}` as place holders to display the specified tooltip content.
 
 {% tabs %}
@@ -122,8 +140,7 @@ You can use the `${point.tooltip}` as place holders to display the specified too
 
 ## To customize individual tooltip
 
-Using `tooltipRender` event, you can customize a tooltip for particular point. event, you can customize a
-tooltip for particular point.
+Using [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/iAccTooltipRenderEventArgs/)event, you can customize a tooltip for particular point. event, you can customize a tooltip for particular point.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -27,10 +27,10 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
     reorderSingleColumnByTargetIndex(): void {
-        (this.gridObj as GridComponent).reorderColumnByTargetIndex("OrderID", 3); // move column with field name "OrderID" to index 3
+        (this.gridObj as any).reorderColumnByTargetIndex("OrderID", 3); // move column with field name "OrderID" to index 3
     }
     reorderMultipleColumnByTargetIndex(): void {
-        (this.gridObj as GridComponent).reorderColumnByTargetIndex(['OrderID', 'CustomerID'], 3); // move columns with field name "OrderID" and "CustomerID" to index 3
+        (this.gridObj as any).reorderColumnByTargetIndex(['OrderID', 'CustomerID'], 3); // move columns with field name "OrderID" and "CustomerID" to index 3
     }
 }
 

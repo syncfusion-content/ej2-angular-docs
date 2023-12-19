@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     }
 
     clearSearch() {
-        (this.grid as GridComponent).searchSettings.key = '';
+        (this.grid as any).searchSettings.key = '';
     }
 }
 

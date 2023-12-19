@@ -4,7 +4,7 @@ import { data } from './datasource'
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' (dataBound)="dataBound()">
+    template: `<ejs-grid #grid [dataSource]='data' (dataBound)="dataBound($event)">
                </ejs-grid>`
 })
 export class AppComponent implements OnInit {
@@ -15,8 +15,8 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
 
-    dataBound() {
-        for (const cols of (this.grid as GridComponent).columns) {
+    dataBound(args: any) {
+        for (const cols of (this.grid as any).columns) {
             if (cols.field === 'OrderID') {
                 cols.width = 120;
             }

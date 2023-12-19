@@ -48,7 +48,7 @@ The ComboBox has support to load array of primitive data such as strings and num
 ### 2. Array of JSON data
 
 The ComboBox can generate its list items through an array of complex data. For this,
-the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#fields)
+the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/combo-box#fields)
 property.
 
 In the following example, `Id` column and `Game` column from complex data have been mapped to the `value` field and `text` field, respectively.
@@ -70,7 +70,7 @@ In the following example, `Id` column and `Game` column from complex data have b
 ### 3. Array of Complex data
 
 The ComboBox can generate its list items through an array of complex data. For this,
-the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#fields) property.
+the appropriate columns should be mapped to the [fields](https://ej2.syncfusion.com/angular/documentation/api/combo-box#fields) property.
 
 In the following example, `Code.Id` column and `'Country.Name` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
@@ -185,7 +185,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 
 ## See Also
 
-* [How to achieve cascading](./how-to/cascading)
+* [How to achieve cascading](./how-to/cascading/)
 * [How to load data using template](./templates#item-template)
 * [How to group the data using header](./grouping)
 * [How to filter the bound data](./filtering)

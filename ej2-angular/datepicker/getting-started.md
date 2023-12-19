@@ -177,7 +177,7 @@ The following example illustrates the output in your browser
 
 ## Setting the selected date
 
-To set the selected date, use the [`value`] (https://ej2.syncfusion.com/angular/documentation/api/datepicker/#value) property.
+To set the selected date, use the [`value`] (https://ej2.syncfusion.com/angular/documentation/api/datepicker#value) property.
 
 The below example demonstrates the DatePicker with current date as selected one.
 
@@ -197,7 +197,7 @@ The below example demonstrates the DatePicker with current date as selected one.
 
 ## Setting the date range to restrict selection
 
-To restrict the selection of date within a specified range, use the [`min`](https://ej2.syncfusion.com/angular/documentation/api/datepicker/#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/datepicker/#max) properties. To know more about range restriction in DatePicker, please refer this [page](./date-range).
+To restrict the selection of date within a specified range, use the [`min`](https://ej2.syncfusion.com/angular/documentation/api/datepicker#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/datepicker#max) properties. To know more about range restriction in DatePicker, please refer this [page](./date-range).
 
 The below example demonstrates the DatePicker to select a date within a range from 7 to 27.
 

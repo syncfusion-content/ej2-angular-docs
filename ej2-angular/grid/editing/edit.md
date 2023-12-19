@@ -119,7 +119,7 @@ Customizing the delete confirmation dialog in Grid allows you to personalize the
 To customize the delete confirmation dialog, you can utilize the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event. This event is triggered when a toolbar item, such as the delete button, is clicked.
 
 >* To enable the confirmation dialog for the delete operation in the Grid, you can set the [showDeleteConfirmDialog](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#showdeleteconfirmdialog) property of the `editSettings` configuration to **true**.
->* You can refer the Grid [Default text](../global-local) list for more localization.
+>* You can refer the Grid [Default text](../global-local/) list for more localization.
 
 The following example that demonstrates how to customize the delete confirmation dialog using the `toolbarClick` event:
 
@@ -145,7 +145,7 @@ The Editing functionalities can be performed based upon the primary key value of
 
 To make a Grid column always editable, you can utilize the column template feature of the Grid. This feature is useful when you want to edit a particular column's values directly within the grid.
 
-In the following example, the textbox is rendered in the **Freight** column using a column template. The keyup event for the Grid is bound using the [created](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) event of the Grid, and the edited changes are saved in the data source using the [updateRow](https://ej2.syncfusion.com/angular/documentation/api/grid/#updaterow) method of the Grid.
+In the following example, the textbox is rendered in the **Freight** column using a column template. The keyup event for the Grid is bound using the [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event of the Grid, and the edited changes are saved in the data source using the [updateRow](https://ej2.syncfusion.com/angular/documentation/api/grid#updaterow) method of the Grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

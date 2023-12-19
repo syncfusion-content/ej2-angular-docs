@@ -78,13 +78,13 @@ By default, the `searchSettings.operator` is set to **contains**, which returns 
 
 Operator |Description
 -----|-----
-startswith |Checks whether a value begins with the specified value.
-endswith |Checks whether a value ends with the specified value.
+startsWith |Checks whether a value begins with the specified value.
+endsWith |Checks whether a value ends with the specified value.
 contains |Checks whether a value contains with the specified value.
 wildcard |Processes one or more search patterns using the **"*"** symbol, returning values that match the given patterns.
 like |Processes a single search pattern using the **"%"** symbol, retrieving values that match the specified pattern.
 equal |Checks whether a value equal to the specified value.
-notequal |Checks whether a value not equal to the specified value.
+notEqual |Checks whether a value not equal to the specified value.
 
 These operators provide flexibility in defining the search behavior and allow you to perform different types of comparisons based on your requirements.
 

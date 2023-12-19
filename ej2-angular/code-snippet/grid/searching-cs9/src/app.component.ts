@@ -2,8 +2,7 @@
 
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { ToolbarItems, GridComponent } from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
+import { ToolbarItems,SearchSettingsModel,GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -35,11 +34,11 @@ export class AppComponent implements OnInit {
         this.toolbarOptions = ['Search'];
     }
 
-    onSwitchChange(args: ChangeEventArgs) {
+    onSwitchChange(args: any) {
         if (args.checked) {
-            (this.grid as GridComponent).searchSettings.ignoreAccent = true;
+            (this.grid as any).searchSettings.ignoreAccent = true;
         } else {
-            (this.grid as GridComponent).searchSettings.ignoreAccent = false;
+            (this.grid as any).searchSettings.ignoreAccent = false;
         }
     }
 }

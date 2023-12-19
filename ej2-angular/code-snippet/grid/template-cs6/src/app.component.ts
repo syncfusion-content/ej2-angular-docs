@@ -3,7 +3,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { employeeData } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { ColorPickerEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     selector: 'app-root',
@@ -26,15 +25,14 @@ export class AppComponent implements OnInit {
 
     public data?: object[];
     public modeSettings = 'Palette'
-    @ViewChild('grid') 
-    public grid?: GridComponent;
+    @ViewChild('grid') public grid?: GridComponent;
 
-    change(args: ColorPickerEventArgs) {
-        const selectedRows = (this.grid as GridComponent).getSelectedRows() as HTMLElement[];
+    change(args: any) {
+        const selectedRows = (this.grid as any).getSelectedRows() as HTMLElement[];
         for (const row of selectedRows) {
-            row.style.backgroundColor = args.value as string;
+            row.style.backgroundColor = (args as any).value;
         }
-        (this.grid as GridComponent).clearSelection();
+        (this.grid as any).clearSelection();
     }
 
     ngOnInit(): void {

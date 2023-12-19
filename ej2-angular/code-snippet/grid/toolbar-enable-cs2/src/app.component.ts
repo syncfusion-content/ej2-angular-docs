@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -18,7 +18,7 @@ import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    public toolbar?: ToolbarItems[];
+    public toolbar?: string[];
 
     @ViewChild('grid')
     public grid?: GridComponent;
@@ -29,8 +29,8 @@ export class AppComponent implements OnInit {
     }
 
     created() {
-        let toolbar = ((this.grid as GridComponent).element as HTMLElement).querySelector('.e-toolbar');
-        (this.grid as GridComponent).element.appendChild(toolbar as HTMLElement);
+        let toolbar: HTMLElement = (this.grid as any).element.querySelector('.e-toolbar');
+        (this.grid as any).element.appendChild(toolbar);
     }
 }
 

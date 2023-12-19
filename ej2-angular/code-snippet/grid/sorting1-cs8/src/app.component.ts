@@ -44,16 +44,15 @@ export class AppComponent implements OnInit {
     public sortOptions?: any;
     @ViewChild('grid')
     public grid?: GridComponent;
-    @ViewChild('dropdown') 
-    public dropDown?: DropDownListComponent;
+    @ViewChild('dropdown') public dropDown?: DropDownListComponent;
 
-    public columns: object[] = [
+    public columns: Object[] = [
         { text: 'Customer ID', value: 'CustomerID' },        
         { text: 'Order ID', value: 'OrderID' },
         { text: 'Ship Name', value: 'ShipName' },
         { text: 'Ship City', value: 'ShipCity' },
       ];
-      public field: object = { text: 'text', value: 'value' };
+      public field: Object = { text: 'text', value: 'value' };
 
     ngOnInit(): void {
         this.sortOptions = {
@@ -66,7 +65,7 @@ export class AppComponent implements OnInit {
     }
 
     removeSortColumn() {
-        (this.grid as GridComponent).removeSortColumn((this.dropDown as DropDownListComponent).value as string);
+        this.grid?.removeSortColumn((this as any).dropDown.value as any);
     }
 }
 

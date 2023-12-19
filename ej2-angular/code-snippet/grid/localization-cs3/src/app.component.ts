@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
 
     public data?: object[];
     public formatOptions?: object;
-    public locale: string = 'es-AR';
+    public locale: any = 'es-AR';
 
     ngOnInit(): void {
         setCulture('es-AR');

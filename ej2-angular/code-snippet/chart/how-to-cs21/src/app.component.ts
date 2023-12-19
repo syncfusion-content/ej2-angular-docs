@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
     public tooltipRender(args: ITooltipRenderEventArgs | any): void {
         let intl: Internationalization = new Internationalization();
         let formattedString: string = intl.formatDate(new Date((args.point.x).toString()), { skeleton: 'MMMEd'});
-        args.textCollections = formattedString;
+        args.text = formattedString + ':' + args.text.split(':')[1];
     };
     ngOnInit(): void {
         this.chartData = [
