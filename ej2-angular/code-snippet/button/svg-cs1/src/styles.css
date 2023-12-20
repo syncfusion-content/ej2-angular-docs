@@ -7,3 +7,13 @@
 .e-section-control {
 	margin-top: 150px;
 }
+
+button {
+  margin: 25px 5px 20px 20px;
+}
+
+.e-btn-icon.e-search-icon {
+	background: url('button/images/search_icon.svg'); 
+	height: 25px; 
+	width: 25px; 
+}

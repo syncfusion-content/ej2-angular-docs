@@ -7,9 +7,9 @@ control: Range Step Area Chart
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Range Step Area in Angular Chart component
+# Range step area in Angular Chart component
 
-## Range Step Area
+## Range step area
 
 To render a range step area series, use series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `RangeArea` and inject `RangeAreaSeriesService`  into the `@NgModule.providers`.
 
@@ -34,6 +34,7 @@ The following properties can be used to customize the `range step area` series.
 * [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#fill) – Specifies the color of the area series.
 * [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#fill).
 * [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#dasharray) – Specifies the dashes of series.
+* [step](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#step) – Specifies the position of the step for the series.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,7 +50,7 @@ The following properties can be used to customize the `range step area` series.
 
 {% previewsample "page.domainurl/samples/chart/series/rangesteparea-cs" %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

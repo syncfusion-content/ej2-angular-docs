@@ -7,7 +7,7 @@ import { data } from './datasource';
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StepLine' xName='x' yName='y' name='USA' width=2 [marker]='marker' fill='blue' dashArray='5.0'></e-series>
+            <e-series [dataSource]='chartData' type='StepLine' xName='x' yName='y' name='USA' width=2 [marker]='marker' fill='blue' opacity=0.6 step='Left' dashArray='5.0'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })

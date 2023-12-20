@@ -7,7 +7,7 @@ import { AnimationModel } from '@syncfusion/ej2-charts';
 @Component({
     selector: 'app-container',
     template: `<ejs-bulletchart targetField='target' [minimum]='minimum' [maximum]='maximum'
-  [interval]='interval' [dataSource]='data' [animation]='animation' targetColor='red' targetWidth=15  [tooltip]='tooltip'>
+  [interval]='interval' [dataSource]='data' [animation]='animation' targetColor='color' targetWidth=15  [tooltip]='tooltip'>
   <e-bullet-range-collection>
     <e-bullet-range end='35' color='#ebebeb'></e-bullet-range>
     <e-bullet-range end='70' color='#d8d8d8'></e-bullet-range>
@@ -20,8 +20,8 @@ export class AppComponent {
   public maximum: number = 100;
   public interval: number = 20;
   public data: Object[] = [
-      { value: 55, target: 75 }
-    ];
+    { value: 55, target: 75, color: 'red' }
+  ];
   public animation: AnimationModel = { enable: false };
   public tooltip: Object = { enable: false };
 }

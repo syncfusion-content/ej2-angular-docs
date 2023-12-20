@@ -15,7 +15,7 @@ import { Dialog } from '@syncfusion/ej2-popups';
             </ng-template>
         </ejs-richtexteditor>
         <ejs-dialog #Dialog id="rteDialog" [buttons]='dlgButtons' (overlayClick)="dialogOverlay()" [header]='header' [visible]='false'
-            [showCloseIcon]='false' [target]='target' (created)="dialogCreate()" [isModal]='true' [cssClass]='e-rte-elements']>
+            [showCloseIcon]='false' [target]='target' (created)="dialogCreate()" [isModal]='true' [cssClass]='cssClass'>
             <ng-template #content>
                 <div id="rteSpecial_char">
                     <div class="char_block" title="^">^</div>
@@ -108,6 +108,7 @@ public dialogOverlay(): void {
     }
     this.dialogObj!.hide();
 }
+public cssClass: String = "customClass e-rte-elements";
 }
 
 

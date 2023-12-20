@@ -27,7 +27,7 @@ To display the primary data or the current value of the data being measured know
   
 {% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs36" %}
 
-## Types of Actual Bar
+## Types of actual bar
 
 The shape of the actual bar can be customized using the [`type`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart/#type) property of the Bullet Chart. The actual bar contains **Rect** and **Dot** shapes. By default, the actual bar shape is Rect.
 
@@ -45,11 +45,11 @@ The shape of the actual bar can be customized using the [`type`](https://ej2.syn
   
 {% previewsample "page.domainurl/samples/bullet-chart/getting-started/range-cs37" %}
 
-## Actual Bar Customization
+## Actual bar customization
 
-### Border Customization
+### Border customization
 
-Using the [`valueBorder`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart/#valueborder) property of the bullet chart, you can customize the border `color` and `width` of the actual bar.
+Using the [`valueBorder`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart/#valueborder) property of the bullet chart, you can customize the border [`color`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart/border/#color) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart/border/#width) of the actual bar.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -67,7 +67,7 @@ Using the [`valueBorder`](https://ej2.syncfusion.com/angular/documentation/api/b
 
 ### Fill color and height Customization
 
-Customize the fill color and height of the actual bar using the [`valueFill`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart/#valuefill) and [`valueHeight`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart/#valueheight) properties of the bullet chart.
+Customize the fill color and height of the actual bar using the [`valueFill`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart/#valuefill) and [`valueHeight`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart/#valueheight) properties of the bullet chart. Also, you can bind the color for the actual bar from [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart#datasource) for the bullet chart using [`valueFill`](https://ej2.syncfusion.com/angular/documentation/api/bullet-chart#valuefill) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
