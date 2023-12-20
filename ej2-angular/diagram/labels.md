@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Labels in Angular Diagram component
 
-[`Annotation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel) is a block of text that can be displayed over a node or connector. Annotation is used to textually represent an object with a string that can be edited at runtime. Multiple annotations can be added to a node/connector.
+[`Annotation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/) is a block of text that can be displayed over a node or connector. Annotation is used to textually represent an object with a string that can be edited at runtime. Multiple annotations can be added to a node/connector.
 
 <!-- markdownlint-disable MD033 -->
 
 ## Create annotation
 
-An annotation can be added to a node/connector by defining the annotation object and adding that to the annotation collection of the node/connector. The [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#content-string) property of annotation defines the text to be displayed. The following code illustrates how to create a annotation.
+An annotation can be added to a node/connector by defining the annotation object and adding that to the annotation collection of the node/connector. The [`content`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#content-string) property of annotation defines the text to be displayed. The following code illustrates how to create a annotation.
 
 To create and add annotation to Nodes and Connectors using the Angular Diagram, refer to the below video link.
 
@@ -40,7 +40,7 @@ To create and add annotation to Nodes and Connectors using the Angular Diagram, 
 
 * Annotations can be added at runtime by using the client-side method [`addLabels`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addLabels). The following code illustrates how to add a annotation to a node.
 
-* The annotation's [`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#id-string) property is used to define the name of the annotation and its further used to find the annotation at runtime and do any customization.
+* The annotation's [`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#id-string) property is used to define the name of the annotation and its further used to find the annotation at runtime and do any customization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,13 +96,13 @@ The following code example illustrates how to change the annotation properties.
 
 ## Alignment
 
-Annotation can be aligned relative to the node boundaries. It has [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#margin-marginmodel), [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel), horizontal, and vertical alignment settings. It is quite tricky when all four alignments are used together but gives more control over alignment.
+Annotation can be aligned relative to the node boundaries. It has [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#margin-marginmodel), [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/), horizontal, and vertical alignment settings. It is quite tricky when all four alignments are used together but gives more control over alignment.
 
 ## Offset
 
 The offset property of annotation is used to align the annotations based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
 
-Set the size for a nodes annotation by using [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#height-number) properties.
+Set the size for a nodes annotation by using [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#height-number) properties.
 
 The following code shows the relationship between the annotation position (black color circle) and offset (fraction values).
 
@@ -122,7 +122,7 @@ The following code shows the relationship between the annotation position (black
 
 ## Horizontal and vertical alignment
 
-The [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#horizontalAlignment-string) property of annotation is used to set how the annotation is horizontally aligned at the annotation position determined from the fraction values. The [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#horizontalAlignment-string) property is used to set how annotation is vertically aligned at the annotation position.
+The [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#horizontalAlignment-string) property of annotation is used to set how the annotation is horizontally aligned at the annotation position determined from the fraction values. The [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#horizontalAlignment-string) property is used to set how annotation is vertically aligned at the annotation position.
 
 The following tables illustrates all the possible alignments visually with 'offset (0, 0)'.
 
@@ -176,7 +176,7 @@ The following code example illustrates how to align connector annotations.
 
 ## Margin
 
-[`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#margin-marginmodel) is an absolute value used to add some blank space in any one of its four sides. The annotations can be displaced with the margin property.
+[`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#margin-marginmodel) is an absolute value used to add some blank space in any one of its four sides. The annotations can be displaced with the margin property.
 
 The following code example illustrates how to align a annotation based on its `offset`, `horizontalAlignment`, `verticalAlignment`, and `margin` values.
 
@@ -196,7 +196,7 @@ The following code example illustrates how to align a annotation based on its `o
 
 ## Text align
 
-The [`textAlign`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#textAlign-textalign) property of annotation allows you to set how the text should be aligned (left, right, center, or justify) inside the text block. The following codes illustrate how to set textAlign for an annotation.
+The [`textAlign`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textAlign-textalign) property of annotation allows you to set how the text should be aligned (left, right, center, or justify) inside the text block. The following codes illustrate how to set textAlign for an annotation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -214,9 +214,9 @@ The [`textAlign`](https://ej2.syncfusion.com/angular/documentation/api/diagram/t
 
 ## Hyperlink
 
-Diagram provides a support to add a [`hyperlink`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#hyperLink-hyperlinkmodel) for the nodes/connectors annotation. It can also be customized.
+Diagram provides a support to add a [`hyperlink`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#hyperLink-hyperlinkmodel) for the nodes/connectors annotation. It can also be customized.
 
-A User can open the hyperlink in the new window, the same tab and the new tab by using the  [`hyperlinkOpenState`](https://ej2.syncfusion.com/angular/documentation/api/annotationModel/hyperlinkmodel#hyperlinkopenstate)  property
+A User can open the hyperlink in the new window, the same tab and the new tab by using the  [`hyperlinkOpenState`](https://ej2.syncfusion.com/angular/documentation/api/annotationModel/hyperlinkmodel/#hyperlinkopenstate)  property
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -234,7 +234,7 @@ A User can open the hyperlink in the new window, the same tab and the new tab by
 
 ## Template Support for Annotation
 
-Diagram provides template support for annotation. you should define a SVG/HTML content as string in the annotation's [`template`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#template-string) property.
+Diagram provides template support for annotation. you should define a SVG/HTML content as string in the annotation's [`template`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#template-string) property.
 
 The following code illustrates how to define a template in node's annotation. similarly, you can define it in connectors.
 
@@ -254,7 +254,7 @@ The following code illustrates how to define a template in node's annotation. si
 
 ## Wrapping
 
-When text overflows node boundaries, you can control it by using [`text wrapping`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#textWrapping-textwrap). So, it is wrapped into multiple lines. The wrapping property of annotation defines how the text should be wrapped. The following code illustrates how to wrap a text in a node.
+When text overflows node boundaries, you can control it by using [`text wrapping`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textWrapping-textwrap). So, it is wrapped into multiple lines. The wrapping property of annotation defines how the text should be wrapped. The following code illustrates how to wrap a text in a node.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/wrapping-cs1/src/app.component.ts %}
@@ -277,7 +277,7 @@ When text overflows node boundaries, you can control it by using [`text wrapping
 
 ## Text overflow
 
-The label’s [`TextOverflow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#textOverFlow-textoverflow) property is used control whether to display the overflowed content in node or not.
+The label’s [`TextOverflow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textOverFlow-textoverflow) property is used control whether to display the overflowed content in node or not.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -297,11 +297,11 @@ The label’s [`TextOverflow`](https://ej2.syncfusion.com/angular/documentation/
 
 * You can change the font style of the annotations with the font specific properties (fontSize, fontFamily, color). The following code illustrates how to customize the appearance of the annotation.
 
-* The label’s [`bold`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#bold-boolean), [`italic`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#italic-boolean), and [`textDecoration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#textDecoration-textdecoration) properties are used to style the label’s text.
+* The label’s [`bold`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#bold-boolean), [`italic`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#italic-boolean), and [`textDecoration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textDecoration-textdecoration) properties are used to style the label’s text.
 
-* The label’s [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#fill-string), [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#strokeColor-string), and [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#strokeWidth-number) properties are used to define the background color and border color of the annotation and the [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#opacity-number) property is used to define the transparency of the annotations.
+* The label’s [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel#fill-string), [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#strokeColor-string), and [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#strokeWidth-number) properties are used to define the background color and border color of the annotation and the [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#opacity-number) property is used to define the transparency of the annotations.
 
-* The [`visible`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#visibility-number) property of the annotation enables or disables the visibility of annotation.
+* The [`visible`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#visibility-number) property of the annotation enables or disables the visibility of annotation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -367,7 +367,7 @@ When you double-click on the node/connector/diagram model, the [`doubleClick`](h
 
 ## Read-only annotations
 
-Diagram allows to create read-only annotations. You have to set the read-only property of annotation to enable/disable the read-only [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#constraints-annotationconstraints). The following code illustrates how to enable read-only mode.
+Diagram allows to create read-only annotations. You have to set the read-only property of annotation to enable/disable the read-only [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#constraints-annotationconstraints). The following code illustrates how to enable read-only mode.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -385,9 +385,9 @@ Diagram allows to create read-only annotations. You have to set the read-only pr
 
 ## Drag Limit
 
-* The diagram control now supports defining the [`dragLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel#dragLimit) to the label while dragging from the connector and also update the position to the nearest segment offset.
+* The diagram control now supports defining the [`dragLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#dragLimit) to the label while dragging from the connector and also update the position to the nearest segment offset.
 
-* You can set the value to dragLimit [`left`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#left), [`right`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#right), [`top`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#top), and [`bottom`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel#bottom) properties which allow the dragging of connector labels to a certain limit based on the user defined values.
+* You can set the value to dragLimit [`left`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel/#left), [`right`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel/#right), [`top`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel/#top), and [`bottom`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel/#bottom) properties which allow the dragging of connector labels to a certain limit based on the user defined values.
 
 * By default, drag limit will be disabled for the connector. It can be enabled by setting connector constraints as drag.
 
