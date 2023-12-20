@@ -252,7 +252,7 @@ In ComboBox, the `value` property supports two-way binding functionality. The fo
   
 {% previewsample "page.domainurl/samples/combobox/getting-started-cs14" %}
 
-> You can refer to our [Angular ComboBox]( https://www.syncfusion.com/angular-ui-components/angular-combobox) feature tour page for its groundbreaking feature representations. You can also explore our [Angular ComboBox example](https://ej2.syncfusion.com/angular/demos/#/material/combo-box/default) that shows how to render the ComboBox in Angular.
+> You can refer to our [Angular ComboBox]( https://www.syncfusion.com/angular-components/angular-combobox) feature tour page for its groundbreaking feature representations. You can also explore our [Angular ComboBox example](https://ej2.syncfusion.com/angular/demos/#/material/combo-box/default) that shows how to render the ComboBox in Angular.
 
 ## See Also
 

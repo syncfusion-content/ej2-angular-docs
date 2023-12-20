@@ -25,7 +25,7 @@ Once the package installed, you can find the culture specific JSON data under th
 
 * Now import the installed CLDR JSON data into the `app.component.ts` file.
 
-* Now use the [`loadCldr`](http://ej2.syncfusion.com/documentation/common/internationalization/#loading-culture-data) method to load the culture specific CLDR JSON data from the installed location to `app.component.ts` file.
+* Now use the [`loadCldr`](http://ej2.syncfusion.com/documentation/common/internationalization#loading-culture-data) method to load the culture specific CLDR JSON data from the installed location to `app.component.ts` file.
 
 * DatePicker displayed `Sunday` as the first day of week based on default culture ("en-US"). If you want to display the DatePicker with loaded culture’s first day of week, you need to import `weekdata.json` file from the `cldr-data/suppemental` as given in the code example.
 
@@ -44,7 +44,7 @@ loadCldr(
 );
 ```
 
-> The `Localization` library allows you to localize default text content of the DatePicker. The DatePicker component has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/datepicker#locale) value and translation object.
+> The `Localization` library allows you to localize default text content of the DatePicker. The DatePicker component has static text for  **today** feature that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/datepicker/#locale) value and translation object.
 
 Locale keywords |Text
 -----|-----
