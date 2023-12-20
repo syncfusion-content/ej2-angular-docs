@@ -5,6 +5,8 @@ import {
     IDataOptions, PivotView, FieldListService, CalculatedFieldService,
     ToolbarService, ConditionalFormattingService, ToolbarItems, DisplayOption, IDataSet
 } from '@syncfusion/ej2-angular-pivotview';
+import{ getInstance, select} from '@syncfusion/ej2-base';
+import {DropDownList} from '@syncfusion/ej2-dropdowns';
 import { Pivot_Data } from './datasource';
 
 let isInitial: boolean = true;
@@ -17,7 +19,7 @@ let isInitial: boolean = true;
    allowCalculatedField='true' showFieldList='true' width='100%' [displayOption]='displayOption' 
    height='350' [toolbar]='toolbarOptions' (saveReport)='saveReport($event)' (loadReport)='loadReport($event)' 
    (fetchReport)='fetchReport($event)' (renameReport)='renameReport($event)' (removeReport)='removeReport($event)' 
-   (newReport)='newReport()' (dataBound)="dataBound()"></ejs-pivotview></div>`
+   (newReport)='newReport()' (dataBound)="dataBound()" (load)="load()"></ejs-pivotview></div>`
 })
 
 export class AppComponent implements OnInit {
@@ -98,9 +100,33 @@ export class AppComponent implements OnInit {
         if (this.pivotGridObj && isInitial) {
             isInitial = false;
             this.pivotGridObj.toolbarModule.action = 'Load';
-            (this.pivotGridObj.toolbarModule as any).reportList.value = 'Default report';
+            let reportList = getInstance(select('#' + this.pivotGridObj.element.id + '_reportlist', this.pivotGridObj.element), DropDownList);
+            (reportList as DropDownList).value = 'Default report';
             this.loadReport({ reportName: 'Default report' });
         }
+    }
+    load(){
+        // Save the desired report that needs to be loaded at initial rendering here.
+        let dataSourceSettings = {
+            dataSource: Pivot_Data as IDataSet[],
+            columns: [{ name: 'Year' }],
+            enableSorting: true,
+            allowLabelFilter: true,
+            values: [{ name: 'Sold', caption: 'Units Sold' }],
+            allowValueFilter: true,
+            formatSettings: [{ name: 'Sold', format: 'C0' }],
+            rows: [{ name: 'Country' }],
+          };
+          let displayOption = { view: 'Both' };
+          let gridSettings = {columnWidth: 100};
+          let report = { dataSourceSettings: dataSourceSettings, displayOption: displayOption, gridSettings: gridSettings };
+          let reports = [
+            {
+              report: JSON.stringify(report),
+              reportName: 'Default report',
+            },
+          ];
+        localStorage['pivotviewReports'] = JSON.stringify(reports);
     }
     newReport() {
         this.pivotGridObj?.setProperties({ dataSourceSettings: { columns: [], rows: [], values: [], filters: [] } }, false);

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Selection cropping in the Angular Image Editor component
 
-The cropping feature in the Image Editor allows you to select and crop specific regions of an image. It offers different selection options, including custom shapes, squares, circles, and various aspect ratios such as 3:2, 4:3, 5:4, 7:5, and 16:9. 
+The cropping feature in the Image Editor allows you to select and crop specific regions of an image. It offers different selection options, including custom shapes, squares, circles, and various aspect ratios such as 2:3, 3:2, 3:4, 4:3, 4:5, 5:4, 5:7, 7:5, 9:16, and 16:9.
 
 To perform a selection, you can use the [`select`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#select) method, which allows you to define the desired selection area within the image. Once the selection is made, you can then use the [`crop`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#crop) method to crop the image based on the selected region. This enables you to extract and focus on specific parts of the image while discarding the rest.
 
@@ -46,7 +46,7 @@ Here is an example of square selection using the [`select`](https://ej2.syncfusi
 
 ## Insert selection based on aspect ratio 
 
-The [`select`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#select) method is used to perform the selection with the various aspect ratios such as 3:2, 4:3, 5:4, 7:5, and 16:9. The selection region can also be customized using the [`select`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#select) method based on the parameters below. 
+The [`select`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#select) method is used to perform the selection with the various aspect ratios such as 2:3, 3:2, 3:4, 4:3, 4:5, 5:4, 5:7, 7:5, 9:16, and 16:9. The selection region can also be customized using the [`select`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#select) method based on the parameters below. 
 
 type - Specify the type of selection 
 

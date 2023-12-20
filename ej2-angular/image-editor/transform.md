@@ -54,6 +54,32 @@ Here is an example of flipping an image in a button click event.
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs19" %}
 
+## Straightening in the Angular Image Editor control
+
+The straightening feature in an Image Editor allows users to adjust an image by rotating it clockwise or counter clockwise. The rotating degree value should be within the range of -45 to +45 degrees for accurate straightening. Positive values indicate clockwise rotation, while negative values indicate counter clockwise rotation.
+
+### Apply straightening to the image 
+
+The Image Editor control includes a [`straightenImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#straightenimage) method, which allows you to adjust the degree of an image. This method takes one parameter that define how the straightening should be carried out:
+
+* degree: Specifies the amount of rotation for straightening the image. Positive values indicate clockwise rotation, while negative values indicate counterclockwise rotation.
+
+Here is an example of straightening the image using the [`straightenImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#straightenimage) method. 
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/image-editor/default-cs39/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/image-editor/default-cs39/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/image-editor/default-cs39/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/image-editor/default-cs39" %}
+
 ## Zoom in or out an image 
 
 The Image Editor allows to magnify an image using the [`zoom`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#zoom) method. This method allows one to zoom in and out of the image and provides a more detailed view of the image's hidden areas. This method takes two parameters to perform zooming. 
