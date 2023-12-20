@@ -191,14 +191,14 @@ A good starting point would be to refer to the code snippets in the [online samp
 
 ## See also
 
-* [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
+* [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
 
-* [Getting started with Syncfusion Angular Components](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/)
+* [Getting started with Syncfusion Angular Components](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli)
 
-* [Getting started with Syncfusion Angular SystemJS](https://ej2.syncfusion.com/angular/documentation/getting-started/systemjs/)
+* [Getting started with Syncfusion Angular SystemJS](https://ej2.syncfusion.com/angular/documentation/getting-started/systemjs)
 
-* [Getting started Syncfusion Angular with ASP.NET Core](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-core/)
+* [Getting started Syncfusion Angular with ASP.NET Core](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-core)
 
-* [Getting started Syncfusion Angular with ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc/)
+* [Getting started Syncfusion Angular with ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc)
 
-* [Getting started with Syncfusion Angular Treeshaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking/)
+* [Getting started with Syncfusion Angular Treeshaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking)
