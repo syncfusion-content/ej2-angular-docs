@@ -3,17 +3,17 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import {TextBoxComponent} from '@syncfusion/ej2-angular-inputs'
 
 @Component({
     selector: 'app-root',
     template: `
-    <div class="e-float-input" style="width: 200px; display: inline-block;">
-            <input type="text" class="searchtext"/>
-            <span class="e-float-line"></span>
-            <label class="e-float-text">Search text</label>
+    <div class="e-float-input" style="width: 120px; display: inline-block;">
+        <ejs-textbox #searchInput width="100" placeholder="Search text"></ejs-textbox>
+        <span class="e-float-line"></span>
     </div>
     <button ejs-button id='search' (click)='search()'>Search</button>
-        <ejs-grid #grid='' [dataSource]='data' height='260px'>
+        <ejs-grid #grid [dataSource]='data' height='260px'>
             <e-columns>
                 <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
                 <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
@@ -26,15 +26,16 @@ export class AppComponent implements OnInit {
 
     public data?: object[];
 
-    @ViewChild('grid') public gridObj?: GridComponent;
+    @ViewChild('grid') public grid?: GridComponent;
+    @ViewChild('searchInput') public searchInput?: TextBoxComponent;
 
     ngOnInit(): void {
         this.data = data;
     }
 
     search() {
-        const searchText: string = (document.getElementsByClassName('searchtext')[0] as any).value;
-        (this.gridObj as any).search(searchText);
+        const searchText: string = (this.searchInput as TextBoxComponent).value;
+        (this.grid as GridComponent).search(searchText);
     }
 }
 

@@ -3,6 +3,7 @@
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { ToolbarItems, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
     selector: 'app-root',
@@ -32,18 +33,15 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public toolbarOptions?: ToolbarItems[];
     public pageOptions?: PageSettingsModel;
-    public printMode: string='CurrentPage';
-    public dropdownlist:any=['AllPages','CurrentPage'];
+    public printMode: string = 'CurrentPage';
+    public dropdownlist: string[] = ['AllPages', 'CurrentPage'];
 
     ngOnInit(): void {
         this.data = data;
         this.toolbarOptions = ['Print'];
         this.pageOptions = { pageSize: 6 };
     }
-    onChange(args:any): void {
+    onChange(args: ChangeEventArgs): void {
         this.printMode = args.value;
-      }
+    }
 }
-
-
-

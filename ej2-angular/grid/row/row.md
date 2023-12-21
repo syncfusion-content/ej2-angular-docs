@@ -204,7 +204,7 @@ Here is an example that demonstrates how to enable/disable the Row Hover feature
 
 ### How to get the row information when hovering over the cell
 
-You can retrieve row information when hovering over a specific cell. This can be useful if you want to display additional details or perform some action based on the data in the row. This can be achieved by using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event and the [getRowInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#getrowinfo) method of the Grid.
+You can retrieve row information when hovering over a specific cell. This can be useful if you want to display additional details or perform some action based on the data in the row. This can be achieved by using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) event and the [getRowInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#getrowinfo) method of the Grid.
 
 * The `rowDataBound` event is triggered every time a request is made to access row information, element, or data, before the row element is appended to the Grid element.
 * The `getRowInfo` method is used to retrieve the row information when hovering over a specific cell. This method takes a single parameter, which is the target element that is being hovered over.

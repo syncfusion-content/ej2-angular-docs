@@ -1,8 +1,7 @@
-
-
-import { Component, OnInit } from '@angular/core';
-import { InfiniteScrollService } from '@syncfusion/ej2-angular-grids';
-import { PageSettingsModel, InfiniteScrollSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, InfiniteScrollService } from '@syncfusion/ej2-angular-grids';
+import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 const names = ['TOM', 'Hawk', 'Jon', 'Chandler', 'Monica', 'Rachel', 'Phoebe', 'Gunther', 'Ross', 'Geller', 'Joey', 'Bing', 'Tribbiani',
  'Janice', 'Bong', 'Perk', 'Green', 'Ken', 'Adams'];
@@ -25,7 +24,12 @@ const data = (count: any) => {
 
 @Component({
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' height=300 enableInfiniteScrolling='true' [infiniteScrollSettings]='infiniteOptions' [pageSettings]='options'>
+    template: `
+            <div style="padding: 20px 0px 20px 0px">
+            <label>Enable/Disable Cache mode</label>
+            <ejs-switch #switch id="switch" (change)="toggleCacheMode($event)"></ejs-switch>
+            </div>
+            <ejs-grid #grid [dataSource]='data' height=300 [enableInfiniteScrolling]=true  [pageSettings]='options'>
                 <e-columns>
                     <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=70></e-column>
                     <e-column field='Engineer' width=100></e-column>
@@ -33,20 +37,21 @@ const data = (count: any) => {
                     <e-column field='Estimation' textAlign='Right' width=100></e-column>
                     <e-column field='Status' width=100></e-column>
                 </e-columns>
-                </ejs-grid>`,
+            </ejs-grid>`,
     providers: [InfiniteScrollService]
 })
 export class AppComponent implements OnInit {
 
     public data?: object[];
     public options?: PageSettingsModel;
-    public infiniteOptions?: InfiniteScrollSettingsModel;
+    @ViewChild('grid') public grid?: GridComponent;
+
     ngOnInit(): void {
-        this.data = data(1000);
+        this.data = data(5000);
         this.options = { pageSize: 50 };
-        this.infiniteOptions = { enableCache: true };
     }
+    toggleCacheMode(args:ChangeEventArgs): void {
+        (this.grid as GridComponent).infiniteScrollSettings.enableCache = args.checked;
+        (this.grid as GridComponent).refresh();
+      }
 }
-
-
-

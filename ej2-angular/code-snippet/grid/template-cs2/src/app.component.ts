@@ -1,9 +1,8 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { employeeData } from './datasource';
-import { closest } from '@syncfusion/ej2-base';
-import { RecordClickEventArgs, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { employeeData, SelectedRecordDataType } from './datasource';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
@@ -33,28 +32,24 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
             </e-column>
         </e-columns>
     </ejs-grid>`,
-    styleUrls: ['./app.style.css']
 })
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    public header?: string; 
-    @ViewChild('grid') public grid?: GridComponent;
+    public header?: string;
+    @ViewChild('grid')
+    public grid?: GridComponent;
     @ViewChild('Dialog')
     public dialog?: DialogComponent;
-    public selectedRecord?: any;
+    public selectedRecord?: SelectedRecordDataType;
 
     ngOnInit(): void {
         this.data = employeeData;
-        this.header= 'Selected Row Details';
+        this.header = 'Selected Row Details';
     }
-    showDetails(data: any) {
-        if (this.selectedRecord === data) {
-            this.selectedRecord = null;
-        } else {
-            (this as any).dialog.visible = true;
-            this.selectedRecord = data;
-        }
+    showDetails(data: SelectedRecordDataType) {
+        (this.dialog as DialogComponent).visible = true;
+        this.selectedRecord = data;
     }
 }
 

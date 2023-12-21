@@ -26,9 +26,9 @@ export class AppComponent implements OnInit {
     this.toolbarItems = ['ColumnChooser'];
   }
 
-  public onActionComplete(args: ActionEventArgs): void {
-    if ((args as any).requestType === 'columnstate') {
-      (this.grid as any).autoFitColumns();
+  public onActionComplete({ requestType }: ActionEventArgs): void {
+    if (requestType === 'columnstate') {
+      (this.grid as GridComponent).autoFitColumns();
     }
   }
 }

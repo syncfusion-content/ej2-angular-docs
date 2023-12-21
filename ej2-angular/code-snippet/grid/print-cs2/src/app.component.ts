@@ -18,15 +18,14 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
-    @ViewChild('grid')
-    public gridObj?: GridComponent;
+    public data?: object[];
 
-    constructor() {
+    @ViewChild('grid') public gridObj?: GridComponent;
+
+    ngOnInit(): void {
         this.data = data;
     }
-    ngOnInit(): void {
-    }
+
     print() {
         (this.gridObj as GridComponent).print();
     }

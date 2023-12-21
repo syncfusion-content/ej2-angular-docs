@@ -1,8 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems, PdfQueryCellInfoEventArgs, QueryCellInfoEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ToolbarItems, PdfQueryCellInfoEventArgs, QueryCellInfoEventArgs, Column } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
-
 @Component({
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid' gridLines="Both" [dataSource]='data' [toolbar]='toolbarOptions' height='272px' [allowPdfExport]='true' (toolbarClick)='toolbarClick($event)' (pdfQueryCellInfo)="pdfQueryCellInfo($event)" (queryCellInfo)="queryCellInfoEvent($event)">
@@ -33,30 +32,30 @@ export class AppComponent implements OnInit {
     }
 
     queryCellInfoEvent = function (args: QueryCellInfoEventArgs) {
-        let data = (args.data as any).OrderID;
-        switch (data) {
+
+        switch ((args.data as columnDataType).OrderID) {
             case 10248:
-                if ((args.column as any).field === 'CustomerID') {
+                if ((args.column as Column).field === 'CustomerID') {
                     args.rowSpan = 2;
                 }
                 break;
             case 10250:
-                if ((args.column as any).field === 'CustomerID') {
+                if ((args.column as Column).field === 'CustomerID') {
                     args.colSpan = 2;
                 }
                 break;
             case 10252:
-                if ((args.column as any).field === 'OrderID') {
+                if ((args.column as Column).field === 'OrderID') {
                     args.rowSpan = 3;
                 }
                 break;
             case 10256:
-                if ((args.column as any).field === 'CustomerID') {
+                if ((args.column as Column).field === 'CustomerID') {
                     args.colSpan = 3;
                 }
                 break;
             case 10261:
-                if ((args.column as any).field === 'Freight') {
+                if ((args.column as Column).field === 'Freight') {
                     args.colSpan = 2;
                 }
                 break;
@@ -64,30 +63,29 @@ export class AppComponent implements OnInit {
     }
 
     pdfQueryCellInfo = function (args: PdfQueryCellInfoEventArgs) {
-        let data = (args.data as any).OrderID;
-        switch (data) {
+        switch ((args.data as columnDataType).OrderID) {
             case 10248:
-                if ((args.column as any).field === 'CustomerID') {
-                    (args.cell as any).rowSpan = 2;
+                if ((args.column as Column).field === 'CustomerID') {
+                    (args.cell as PdfCell).rowSpan = 2;
                 }
                 break;
             case 10250:
-                if ((args.column as any).field === 'CustomerID') {
+                if ((args.column as Column).field === 'CustomerID') {
                     args.colSpan = 2;
                 }
                 break;
             case 10252:
-                if ((args.column as any).field === 'OrderID') {
-                    (args.cell as any).rowSpan = 3;
+                if ((args.column as Column).field === 'OrderID') {
+                    (args.cell as PdfCell).rowSpan = 3;
                 }
                 break;
             case 10256:
-                if ((args.column as any).field === 'CustomerID') {
+                if ((args.column as Column).field === 'CustomerID') {
                     args.colSpan = 3;
                 }
                 break;
             case 10261:
-                if ((args.column as any).field === 'Freight') {
+                if ((args.column as Column).field === 'Freight') {
                     args.colSpan = 2;
                 }
                 break;
@@ -95,5 +93,17 @@ export class AppComponent implements OnInit {
     };
 }
 
+interface columnDataType{
+    field: number;
+    OrderID:number,
+    Freight:number,
+    CustomerID:string,
+    ShipCity:string,
+    ShipName:string,
+    ShipCountry:string,
+    ShipPostalCode:number
+}
 
-
+interface PdfCell {
+    rowSpan?: number;  
+}

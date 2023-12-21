@@ -34,12 +34,12 @@ export class AppComponent implements OnInit {
     }
 
     clickHandler(args: ClickEventArgs): void {
-        if ((args as any).item.id === 'expandall') {
-            (this.grid as any).groupModule.expandAll();
+        if (args.item.id === 'expandall') {
+            (this.grid as GridComponent).groupModule.expandAll();
         }
 
-        if ((args as any).item.id === 'collapseall') {
-            (this.grid as any).groupModule.collapseAll();
+        if (args.item.id === 'collapseall') {
+            (this.grid as GridComponent).groupModule.collapseAll();
         }  
     }
 }

@@ -1,8 +1,8 @@
 
 
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import { data } from './datasource';
-import { ActionEventArgs, GridComponent, GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { GroupEventArgs, GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -26,13 +26,14 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
 
-    actionBegin(args: any) {
+    actionBegin(args: GroupEventArgs) {
         if (args.requestType === 'grouping' && args.columnName === 'OrderID') {
             args.cancel = true
+            this.message = args.requestType + ' action is cancelled for ' + args.columnName + ' column';
         }
     }
 
-    actionComplete(args: any) {
+    actionComplete(args: GroupEventArgs) {
         if (args.requestType === 'grouping') {
             this.message = args.requestType + ' action completed for ' + args.columnName + ' column';
         }

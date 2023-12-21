@@ -1,9 +1,9 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { data, employeeData } from './datasource';
+import { childData, employeeData, childColumnDataType } from './datasource';
 import { DataManager, Query } from '@syncfusion/ej2-data';
-import { GridModel, DetailDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GridModel, DetailDataBoundEventArgs, IGrid } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -32,13 +32,14 @@ export class AppComponent implements OnInit {
         this.parentData = employeeData;
     }
 
-    detailDataBound(args: DetailDataBoundEventArgs) {
-        var empIdValue = (args as any).data['EmployeeID'];
-        var childGridData = new DataManager(data).executeLocal(
+    detailDataBound({data, childGrid} : DetailDataBoundEventArgs) {
+        debugger;
+        var empIdValue = (data as childColumnDataType).EmployeeID;
+        var childGridData = new DataManager(childData).executeLocal(
             new Query().where('EmployeeID', 'equal', empIdValue, true)
         );
-        (args as any).childGrid.query = new Query();
-        (args as any).childGrid.dataSource = childGridData;
+        (childGrid as IGrid).query = new Query();
+        (childGrid as IGrid).dataSource = childGridData;
     }
 
 

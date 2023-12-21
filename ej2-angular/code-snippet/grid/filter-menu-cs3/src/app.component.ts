@@ -63,10 +63,10 @@ export class AppComponent implements OnInit {
     this.filterSettings = { type: 'Menu' };
     this.formatoptions = { type: 'dateTime', format: 'M/d/y HH:mm' };
   }
-  public actionComplete(args: { requestType: string; columnName: any; }): void {
+  public actionComplete(args: { requestType: string; columnName: string }): void {
     if (args.requestType === 'filterafteropen') {
       var columnObj = this.grid?.getColumnByField(args.columnName);
-      if (columnObj?.type === 'datetime') {
+      if (columnObj.type === 'datetime') {
         var dateObj = (document.getElementById('dateui-' + columnObj.uid) as any)['ej2_instances'][0];
         dateObj.timeFormat = 'HH:mm';
       }
