@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if ((args as any).item.id === 'Grid_pdfexport') {
+        if (args.item.id === 'Grid_pdfexport') {
             const pdfExportProperties: PdfExportProperties = {
                 theme: {
                     header: {
@@ -61,7 +61,7 @@ export class AppComponent implements OnInit {
                         bold: true, },
                 }
             };
-            (this.grid as any).pdfExport(pdfExportProperties);
+            (this.grid as GridComponent).pdfExport(pdfExportProperties);
         }
     }
 }

@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids';
 import { AppComponent } from './app.component';
-import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 
 /**
  * Module
@@ -11,9 +11,10 @@ import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
     imports: [
         BrowserModule,
         GridModule,
-        NumericTextBoxModule
-    ],
+        DropDownListModule 
+        ],
     declarations: [AppComponent],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
+    providers: [PageService, ToolbarService, EditService]
 })
 export class AppModule { }

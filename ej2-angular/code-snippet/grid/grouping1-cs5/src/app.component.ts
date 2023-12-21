@@ -17,7 +17,7 @@ import { GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
 })
 export class AppComponent implements OnInit {
 
-    public data?: Object[];
+    public data?: object[];
     public groupOptions?: GroupSettingsModel;
     ngOnInit(): void {
         this.data = data;

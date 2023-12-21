@@ -48,8 +48,8 @@ export class AppComponent implements OnInit {
         const appendPdfExportProperties: PdfExportProperties = {
             multipleExport: { type: 'NewPage' }
         };
-        if ((args as any).item.id === 'FirstGrid_pdfexport') { // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
-            (this.firstGrid as any).pdfExport(appendPdfExportProperties, true);
+        if (args.item.id === 'FirstGrid_pdfexport') { // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
+            (this.firstGrid as GridComponent).pdfExport(appendPdfExportProperties, true);
         }
     }
 }

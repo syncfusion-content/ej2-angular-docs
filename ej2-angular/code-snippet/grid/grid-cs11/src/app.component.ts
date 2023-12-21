@@ -16,7 +16,8 @@ import { stringData } from './datasource';
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    public getConcatenatedNames = (field: string, data: object, column: object) => {
+
+    public getConcatenatedNames = (field: string, data: object) => {
         return (data as any)[field as string].map((s: { FirstName: string, LastName: string }) => {
             return s.LastName || s.FirstName;
         }).join(' ');
@@ -24,7 +25,8 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = stringData;
-    }
+
+     }
 }
 
 

@@ -18,10 +18,10 @@ To get start quickly with Angular Grid using CLI and Schematics, you can check o
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
+You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
 ```bash
-npm install -g @angular/cli
+npm install -g @angular/cli@16.0.1
 ```
 
 ## Create an Angular Application
@@ -30,12 +30,23 @@ Start a new Angular application using below Angular CLI command.
 
 ```bash
 ng new my-app
+```
+
+This command will prompt you for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
+
+![Initial_setup](images/Initial-setup.png)
+
+By default, it will create a CSS-based application.
+
+Next, navigate to the created project folder:
+
+```
 cd my-app
 ```
 
 ## Adding Syncfusion Grid package
 
-All the available Essential JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) registry.
+All the available Essential JS 2 packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
 
 To install Grid component, use the following command.
 
@@ -106,7 +117,7 @@ export class AppComponent implements OnInit {
 
 ## Defining Row Data
 
-Bind data for the Grid component by using [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property. It accepts either array of JavaScript object or [`DataManager`](./data-binding) instance.
+Bind data for the Grid component by using [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property. It accepts either array of JavaScript object or [DataManager](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/data-binding) instance.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -118,12 +129,93 @@ import { data } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data: object[];
+    public data?: object[];
 
     ngOnInit(): void {
         this.data = data;
     }
 }
+```
+
+Create a [src/app/datasource.ts] file and utilize the following dataset to provide JSON data for the grid component.
+
+```typescript
+export let data: Object[] = [
+    {
+        OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),
+        ShipName: 'Vins et alcools Chevalier', ShipCity: 'Reims', ShipAddress: '59 rue de l Abbaye',
+        ShipRegion: 'CJ', ShipPostalCode: '51100', ShipCountry: 'France', Freight: 32.38, Verified: !0
+    },
+    {
+        OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6, OrderDate: new Date(836505e6),
+        ShipName: 'Toms Spezialitäten', ShipCity: 'Münster', ShipAddress: 'Luisenstr. 48',
+        ShipRegion: 'CJ', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: !1
+    },
+    {
+        OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4, OrderDate: new Date(8367642e5),
+        ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
+        ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 65.83, Verified: !0
+    },
+    {
+        OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3, OrderDate: new Date(8367642e5),
+        ShipName: 'Victuailles en stock', ShipCity: 'Lyon', ShipAddress: '2, rue du Commerce',
+        ShipRegion: 'CJ', ShipPostalCode: '69004', ShipCountry: 'France', Freight: 41.34, Verified: !0
+    },
+    {
+        OrderID: 10252, CustomerID: 'SUPRD', EmployeeID: 4, OrderDate: new Date(8368506e5),
+        ShipName: 'Suprêmes délices', ShipCity: 'Charleroi', ShipAddress: 'Boulevard Tirou, 255',
+        ShipRegion: 'CJ', ShipPostalCode: 'B-6000', ShipCountry: 'Belgium', Freight: 51.3, Verified: !0
+    },
+    {
+        OrderID: 10253, CustomerID: 'HANAR', EmployeeID: 3, OrderDate: new Date(836937e6),
+        ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
+        ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 58.17, Verified: !0
+    },
+    {
+        OrderID: 10254, CustomerID: 'CHOPS', EmployeeID: 5, OrderDate: new Date(8370234e5),
+        ShipName: 'Chop-suey Chinese', ShipCity: 'Bern', ShipAddress: 'Hauptstr. 31',
+        ShipRegion: 'CJ', ShipPostalCode: '3012', ShipCountry: 'Switzerland', Freight: 22.98, Verified: !1
+    },
+    {
+        OrderID: 10255, CustomerID: 'RICSU', EmployeeID: 9, OrderDate: new Date(8371098e5),
+        ShipName: 'Richter Supermarkt', ShipCity: 'Genève', ShipAddress: 'Starenweg 5',
+        ShipRegion: 'CJ', ShipPostalCode: '1204', ShipCountry: 'Switzerland', Freight: 148.33, Verified: !0
+    },
+    {
+        OrderID: 10256, CustomerID: 'WELLI', EmployeeID: 3, OrderDate: new Date(837369e6),
+        ShipName: 'Wellington Importadora', ShipCity: 'Resende', ShipAddress: 'Rua do Mercado, 12',
+        ShipRegion: 'SP', ShipPostalCode: '08737-363', ShipCountry: 'Brazil', Freight: 13.97, Verified: !1
+    },
+    {
+        OrderID: 10257, CustomerID: 'HILAA', EmployeeID: 4, OrderDate: new Date(8374554e5),
+        ShipName: 'HILARION-Abastos', ShipCity: 'San Cristóbal', ShipAddress: 'Carrera 22 con Ave. Carlos Soublette #8-35',
+        ShipRegion: 'Táchira', ShipPostalCode: '5022', ShipCountry: 'Venezuela', Freight: 81.91, Verified: !0
+    },
+    {
+        OrderID: 10258, CustomerID: 'ERNSH', EmployeeID: 1, OrderDate: new Date(8375418e5),
+        ShipName: 'Ernst Handel', ShipCity: 'Graz', ShipAddress: 'Kirchgasse 6',
+        ShipRegion: 'CJ', ShipPostalCode: '8010', ShipCountry: 'Austria', Freight: 140.51, Verified: !0
+    },
+    {
+        OrderID: 10259, CustomerID: 'CENTC', EmployeeID: 4, OrderDate: new Date(8376282e5),
+        ShipName: 'Centro comercial Moctezuma', ShipCity: 'México D.F.', ShipAddress: 'Sierras de Granada 9993',
+        ShipRegion: 'CJ', ShipPostalCode: '05022', ShipCountry: 'Mexico', Freight: 3.25, Verified: !1
+    },
+    {
+        OrderID: 10260, CustomerID: 'OTTIK', EmployeeID: 4, OrderDate: new Date(8377146e5),
+        ShipName: 'Ottilies Käseladen', ShipCity: 'Köln', ShipAddress: 'Mehrheimerstr. 369',
+        ShipRegion: 'CJ', ShipPostalCode: '50739', ShipCountry: 'Germany', Freight: 55.09, Verified: !0
+    },
+    {
+        OrderID: 10261, CustomerID: 'QUEDE', EmployeeID: 4, OrderDate: new Date(8377146e5),
+        ShipName: 'Que Delícia', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua da Panificadora, 12',
+        ShipRegion: 'RJ', ShipPostalCode: '02389-673', ShipCountry: 'Brazil', Freight: 3.05, Verified: !1
+    },
+    {
+        OrderID: 10262, CustomerID: 'RATTC', EmployeeID: 8, OrderDate: new Date(8379738e5),
+        ShipName: 'Rattlesnake Canyon Grocery', ShipCity: 'Albuquerque', ShipAddress: '2817 Milton Dr.',
+        ShipRegion: 'NM', ShipPostalCode: '87110', ShipCountry: 'USA', Freight: 48.29, Verified: !0
+    }];
 ```
 
 ## Defining Columns
@@ -132,11 +224,11 @@ The Grid has an option to define columns as directives. In these column directiv
 
 Let’s check the properties used here:
 
-* We have added [`field`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) to map with a property name an array of JavaScript objects.
-* We have added [`headerText`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext) to change the title of columns.
-* We have used [`textAlign`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#textalign) to change the alignment of columns.
-By default, columns will be left aligned. To change columns to right align, we need to define [`textAlign`](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#textalign) as **Right**.
-* Also, we have used another useful property, [`format`](./columns#format).
+* We have added [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) to map with a property name an array of JavaScript objects.
+* We have added [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext) to change the title of columns.
+* We have used [textAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#textalign) to change the alignment of columns.
+By default, columns will be left aligned. To change columns to right align, we need to define [textAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#textalign) as **Right**.
+* Also, we have used another useful property, [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format).
 Using this, we can format number and date values to standard or custom formats.
 Here, we have defined it for the conversion of numeric values to currency.
 
@@ -165,11 +257,11 @@ To create grid with additional features, inject the required modules. The follow
 
 These modules should be injected into the **providers** section of root **NgModule** or component class.
 
-> Additional feature modules are available [`here`](./module).
+> Additional feature modules are available [here](https://ej2.syncfusion.com/angular/documentation/grid/module).
 
 ## Enable Paging
 
-The paging feature enables users to view the Grid record in a paged view. It can be enabled by setting [`allowPaging`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowpaging) property to true. Also, need to inject the **PageService** module in the provider section as follows. If we didn't inject the **PageService** module, then the pager will not be rendered in Grid. The pager can be customized using [`pageSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#pagesettings) property.
+The paging feature enables users to view the Grid record in a paged view. It can be enabled by setting [allowPaging](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowpaging) property to true. Also, need to inject the **PageService** module in the provider section as follows. If we didn't inject the **PageService** module, then the pager will not be rendered in Grid. The pager can be customized using [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#pagesettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -187,7 +279,7 @@ The paging feature enables users to view the Grid record in a paged view. It can
 
 ## Enable Sorting
 
-The sorting feature enables the user to order the records. It can be enabled by setting [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) property as true. Also, need to inject the **SortService** module in the provider section as follow. If we didn't inject the **SortService** module, then user not able to sort when click on headers. Sorting feature can be customized using [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortsettings) property.
+The sorting feature enables the user to order the records. It can be enabled by setting [allowSorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) property as true. Also, need to inject the **SortService** module in the provider section as follow. If we didn't inject the **SortService** module, then user not able to sort when click on headers. Sorting feature can be customized using [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#sortsettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -205,7 +297,7 @@ The sorting feature enables the user to order the records. It can be enabled by 
 
 ## Enable Filtering
 
-The filtering feature enables the user to view the reduced amount of records based on filter criteria. It can be enabled by setting [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property as true. Also, need to inject the **FilterService** module in the provider section as follow. If we didn't inject the **FilterService** module, then filter bar will not be rendered in Grid. Filtering feature can be customized using [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#filtersettings) property.
+The filtering feature enables the user to view the reduced amount of records based on filter criteria. It can be enabled by setting [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowfiltering) property as true. Also, need to inject the **FilterService** module in the provider section as follow. If we didn't inject the **FilterService** module, then filter bar will not be rendered in Grid. Filtering feature can be customized using [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#filtersettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -223,7 +315,7 @@ The filtering feature enables the user to view the reduced amount of records bas
 
 ## Enable Grouping
 
-The grouping feature enables users to view the Grid record in a grouped view. It can be enabled by setting [`allowGrouping`](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowgrouping) property to true. Also, need to inject the **GroupService** module in the provider section as follow. If we didn't inject the **GroupService** module, then the group drop area will not be rendered in Grid. Grouping feature can be customized using [`groupSettings`](https://ej2.syncfusion.com/angular/documentation/api/grid/#groupsettings) property.
+The grouping feature enables users to view the Grid record in a grouped view. It can be enabled by setting [allowGrouping](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowgrouping) property to true. Also, need to inject the **GroupService** module in the provider section as follow. If we didn't inject the **GroupService** module, then the group drop area will not be rendered in Grid. Grouping feature can be customized using [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/#groupsettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

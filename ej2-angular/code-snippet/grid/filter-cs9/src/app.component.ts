@@ -9,7 +9,7 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 export class AppComponent implements OnInit {
   public data?: Object[];
   public pageOptions?: Object;
-  public filteredData: any;
+  public filteredData?: Object;
 
   @ViewChild('grid')
   public grid?: GridComponent;
@@ -22,12 +22,16 @@ export class AppComponent implements OnInit {
   }
 
   click(): void {
-    this.filteredData = this.grid?.getFilteredRecords();
-    this.showRecords = this.filteredData.length > 0 ? true : false;
+    this.filteredData = (this.grid as GridComponent).getFilteredRecords();
+    if (this.filteredData) {
+      this.showRecords = true;
+    } else {
+      this.showRecords = false;
+    }
     this.showWarning = !this.showRecords;
   }
   clear(): void {
-    this.grid?.clearFiltering();
+    (this.grid as GridComponent).clearFiltering();
     this.showRecords = false;
     this.showWarning = false;
   }
