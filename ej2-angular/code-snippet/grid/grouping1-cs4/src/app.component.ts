@@ -3,6 +3,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GroupSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
     selector: 'app-root',
@@ -33,11 +34,11 @@ export class AppComponent implements OnInit {
         this.groupOptions = { showDropArea: false, columns: ['CustomerID', 'ShipCity'] };
     }
 
-    onSwitchChange(args: any) {
+    onSwitchChange(args: ChangeEventArgs) {
         if (args.checked) {
-          (this.grid as any).groupSettings.showDropArea = true;
+          (this.grid as GridComponent).groupSettings.showDropArea = true;
         } else {
-          (this.grid as any).groupSettings.showDropArea = false;
+          (this.grid as GridComponent).groupSettings.showDropArea = false;
         }
       }
 }

@@ -36,13 +36,11 @@ export class AppComponent implements OnInit {
     public data?: object[];
     @ViewChild('grid')
     public grid?: GridComponent;
+
     ngOnInit(): void {
         this.data = data;
     }
     dataBound() {
-        (this.grid as any).getHeaderContent().append((this.grid as any).getFooterContent());
+        (this.grid as GridComponent).getHeaderContent().append((this.grid as GridComponent).getFooterContent());
     }
 }
-
-
-

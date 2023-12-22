@@ -45,11 +45,11 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick = (args: ClickEventArgs) => {
-        if ((args as any).item.id === 'FirstGrid_pdfexport') { // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
+        if (args.item.id === 'FirstGrid_pdfexport') { // 'Grid_pdfexport' -> Grid component id + _ + toolbar item name
             const appendPdfExportProperties: PdfExportProperties = {
                 multipleExport: { type: "AppendToPage", blankSpace: 10 }
             };
-            (this.firstGrid as any).pdfExport(appendPdfExportProperties, true);
+            (this.firstGrid as GridComponent).pdfExport(appendPdfExportProperties, true);
         }
     }
 }

@@ -29,16 +29,16 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if ((args as any).item.id === 'Grid_pdfexport') {
-            ((this.grid as any).columns[1] as Column).visible = true;
-            ((this.grid as any).columns[2] as Column ).visible = false;
-            (this.grid as any).pdfExport();
+        if (args.item.id === 'Grid_pdfexport') {
+            ((this.grid as GridComponent).columns[1] as Column).visible = true;
+            ((this.grid as GridComponent).columns[2] as Column ).visible = false;
+            (this.grid as GridComponent).pdfExport();
         }
     }
 
     pdfExportComplete(): void {
-        ((this.grid as any).columns[1] as Column).visible = false;
-        ((this.grid as any).columns[2] as Column).visible = true;
+        ((this.grid as GridComponent).columns[1] as Column).visible = false;
+        ((this.grid as GridComponent).columns[2] as Column).visible = true;
     }
 }
 

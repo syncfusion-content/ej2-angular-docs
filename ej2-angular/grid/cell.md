@@ -10,11 +10,15 @@ domainurl: ##DomainURL##
 
 # Cell in Angular Grid component
 
+In the Syncfusion Angular Grid, a **cell** refers to an individual data point or a unit within a grid column that displays data. It represents the intersection of a row and a column, and it contains specific information associated with that row and column. Each cell can display text, numbers, or other content related to the data it represents. 
+
+The Grid component allows you to customize the appearance and behavior of cells using various features and options. You can define templates, format cell values, enable or disable editing, and perform various other operations on the cells to create interactive and informative data grids in your web applications.
+
 ## Displaying the HTML content
 
 Displaying HTML content in a Grid can be useful in scenarios where you want to display formatted content, such as images, links, or tables, in a tabular format. Grid component allows you to display HTML tags in the Grid header and content. By default, the HTML content is encoded to prevent potential security vulnerabilities. However, you can enable the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property by setting the value as false to display HTML tags without encoding. This feature is useful when you want to display HTML content in a grid cell.
 
-In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added  to enable and disable the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered and the `disableHtmlEncode` property of the column is updated accordingly. The [refresh](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method is called to refresh the grid and display the updated content.
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added  to enable and disable the [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#disablehtmlencode) property. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered and the `disableHtmlEncode` property of the column is updated accordingly. The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method is called to refresh the grid and display the updated content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,11 +64,7 @@ Grid provides the below three options for configuring:
 * **Header** - With this option, only the grid header text is wrapped.
 * **Content** - With this option, only the grid content is wrapped.
 
-> * If a column width is not specified, then the Autowrap of columns will be adjusted with respect to the grid's width.
-> * If a column's header text contains no white space, the text may not be wrapped.
-> * If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, you can use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) properties of the column to customize the appearance of the header and cell content.
-
-The following example demonstrates how to set the [allowTextWrap](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowtextwrap) property to **true** and specify the wrap mode as **Content** by setting the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/angular/documentation/api/grid/textWrapSettings/#wrapmode) property. Also change the `textWrapSettings.wrapMode` property to **Content** and **Both** on changing the dropdown value using the [change](https://helpej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component.
+The following example demonstrates how to set the `allowTextWrap` property to **true** and specify the wrap mode as **Content** by setting the `textWrapSettings.wrapMode` property. Also change the `textWrapSettings.wrapMode` property to **Content** and **Both** on changing the dropdown value using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,6 +80,10 @@ The following example demonstrates how to set the [allowTextWrap](https://ej2.sy
   
 {% previewsample "page.domainurl/samples/grid/autowrap-cs1" %}
 
+> * If a column width is not specified, then the Autowrap of columns will be adjusted with respect to the grid's width.
+> * If a column's header text contains no white space, the text may not be wrapped.
+> * If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, you can use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) properties of the column to customize the appearance of the header and cell content.
+
 ## Customize cell styles
 
 Customizing the grid cell styles allows you to modify the appearance of cells in the Grid control to meet your design requirements. You can customize the font, background color, and other styles of the cells. To customize the cell styles in the grid, you can use grid event, css, property or method support.
@@ -88,7 +92,7 @@ Customizing the grid cell styles allows you to modify the appearance of cells in
 
 To customize the appearance of the grid cell, you can use the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event of the grid. This event is triggered when each header cell is rendered in the grid, and provides an object that contains information about the header cell. You can use this object to modify the styles of the header cell.
 
-The following example demonstrates how to add a [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) event handler to the grid. In the event handler, checked whether the current column is **Freight** field and then applied the appropriate CSS class to the cell based on its value.
+The following example demonstrates how to add a `queryCellInfo` event handler to the grid. In the event handler, checked whether the current column is **Freight** field and then applied the appropriate CSS class to the cell based on its value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -157,8 +161,8 @@ The following example demonstrates how to customize the appearance of the **Orde
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-cell-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.style.css" %}
-{% include code-snippet/grid/custom-cell-cs2/src/app.style.css %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-cell-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-cell-cs2/src/main.ts %}
@@ -235,7 +239,19 @@ The Grid component allows rendering Bootstrap tooltips in the cells. To enable t
 
 This is demonstrated in the sample code below which shows how to enable Bootstrap tooltip for the **CustomerID** field using `ng-template` in grid cells,
 
-Step 1: Install the Bootstrap and jQuery package in your application and add the script and style of the respective packages in the angular.json file,
+Step 1: Install the Bootstrap and jQuery package in your application using the following commands and add the script and style of the respective packages in the angular.json file,
+
+To install bootstrap, use the following command.
+
+```bash
+npm install @ng-bootstrap/ng-bootstrap
+```
+
+To install jQuery, use the following command.
+
+```bash
+npm install jquery
+```
 
 ```json
 
@@ -361,7 +377,7 @@ The [gridLines](https://ej2.syncfusion.com/angular/documentation/api/grid/#gridl
 | Vertical | Displays the vertical grid lines only.|
 | Default | Displays grid lines based on the theme.|
 
-The following example demonstrates how to set the [gridLines](https://ej2.syncfusion.com/angular/documentation/api/grid/#gridlines) property based on changing the dropdown value using the [change](https://helpej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component.
+The following example demonstrates how to set the [gridLines](https://ej2.syncfusion.com/angular/documentation/api/grid/#gridlines) property based on changing the dropdown value using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the DropDownList component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

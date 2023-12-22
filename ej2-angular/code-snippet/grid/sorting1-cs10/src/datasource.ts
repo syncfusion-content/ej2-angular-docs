@@ -70,84 +70,84 @@ export let data: Object[] = [
         ShipRegion: 'RJ', ShipPostalCode: '02389-673', ShipCountry: 'Brazil', Freight: 3.05, Verified: !1
     },
     {
-        OrderID: 10262, CustomerID: 'RATTC', EmployeeID: 8, OrderDate: new Date(8379738e5),
+        OrderID: 10262, CustomerID: 'VINET', EmployeeID: 8, OrderDate: new Date(8379738e5),
         ShipName: 'Rattlesnake Canyon Grocery', ShipCity: 'Albuquerque', ShipAddress: '2817 Milton Dr.',
         ShipRegion: 'NM', ShipPostalCode: '87110', ShipCountry: 'USA', Freight: 48.29, Verified: !0
     }];
 
     export const customerData: Object[] = [
         {
-            "CustomerID": "ALFKI",
+            "CustomerID": "VINET",
             "ContactName": "Maria ",
             "CompanyName": "Alfreds Futterkiste",
             "Address": "Obere Str. 57",
             "Country": "Germany"
         },
         {
-            "CustomerID": "ANATR",
+            "CustomerID": "TOMSP",
             "ContactName": "Ana Trujillo",
             "CompanyName": "Ana Trujillo Emparedados y helados",
             "Address": "Avda. de la Constitución 2222",
             "Country": "Mexico"
         },
         {
-            "CustomerID": "ANTON",
+            "CustomerID": "HANAR",
             "ContactName": "Antonio Moreno",
             "CompanyName": "Antonio Moreno Taquería",
             "Address": "Mataderos  2312",
             "Country": "Mexico"
         },
         {
-            "CustomerID": "AROUT",
+            "CustomerID": "VICTE",
             "ContactName": "Thomas Hardy",
             "CompanyName": "Around the Horn",
             "Address": "120 Hanover Sq.",
             "Country": "UK"
         },
         {
-            "CustomerID": "BERGS",
+            "CustomerID": "SUPRD",
             "ContactName": "Christina Berglund",
             "CompanyName": "Berglunds snabbköp",
             "Address": "Berguvsvägen  8",
             "Country": "Sweden"
         },
         {
-            "CustomerID": "BLAUS",
+            "CustomerID": "HANAR",
             "ContactName": "Hanna Moos",
             "CompanyName": "Blauer See Delikatessen",
             "Address": "Forsterstr. 57",
             "Country": "Germany"
         },
         {
-            "CustomerID": "BLONP",
+            "CustomerID": "CHOPS",
             "ContactName": "Frédérique Citeaux",
             "CompanyName": "Blondesddsl père et fils",
             "Address": "24, place Kléber",
             "Country": "France"
         },
         {
-            "CustomerID": "BOLID",
+            "CustomerID": "RICSU",
             "ContactName": "Martín Sommer",
             "CompanyName": "Bólido Comidas preparadas",
             "Address": "C/ Araquil, 67",
             "Country": "Spain"
         },
         {
-            "CustomerID": "BONAP",
+            "CustomerID": "WELLI",
             "ContactName": "Laurence Lebihan",
             "CompanyName": "Bon app'",
             "Address": "12, rue des Bouchers",
             "Country": "France"
         },
         {
-            "CustomerID": "BOTTM",
+            "CustomerID": "HILAA",
             "ContactName": "Elizabeth Lincoln",
             "CompanyName": "Bottom-Dollar Markets",
             "Address": "23 Tsawassen Blvd.",
             "Country": "Canada"
         },
         {
-            "CustomerID": "BSBEV",
+            "CustomerID": "ERNSH",
             "ContactName": "Victoria Ashworth",
             "CompanyName": "B's Beverages",
             "Address": "Fauntleroy Circus",
@@ -175,542 +175,17 @@ export let data: Object[] = [
             "Country": "Switzerland"
         },
         {
-            "CustomerID": "COMMI",
+            "CustomerID": "QUEDE",
             "ContactName": "Pedro Afonso",
             "CompanyName": "Comércio Mineiro",
             "Address": "Av. dos Lusíadas, 23",
             "Country": "Brazil"
         },
         {
-            "CustomerID": "CONSH",
+            "CustomerID": "OTTIK",
             "ContactName": "Elizabeth Brown",
             "CompanyName": "Consolidated Holdings",
             "Address": "Berkeley Gardens 12  Brewery",
             "Country": "UK"
         },
-        {
-            "CustomerID": "DRACD",
-            "ContactName": "Sven Ottlieb",
-            "CompanyName": "Drachenblut Delikatessen",
-            "Address": "Walserweg 21",
-            "Country": "Germany"
-        },
-        {
-            "CustomerID": "DUMON",
-            "ContactName": "Janine Labrune",
-            "CompanyName": "Du monde entier",
-            "Address": "67, rue des Cinquante Otages",
-            "Country": "France"
-        },
-        {
-            "CustomerID": "EASTC",
-            "ContactName": "Ann Devon",
-            "CompanyName": "Eastern Connection",
-            "Address": "35 King George",
-            "Country": "UK"
-        },
-        {
-            "CustomerID": "ERNSH",
-            "ContactName": "Roland Mendel",
-            "CompanyName": "Ernst Handel",
-            "Address": "Kirchgasse 6",
-            "Country": "Austria"
-        },
-        {
-            "CustomerID": "FAMIA",
-            "ContactName": "Aria Cruz",
-            "CompanyName": "Familia Arquibaldo",
-            "Address": "Rua Orós, 92",
-            "Country": "Brazil"
-        },
-        {
-            "CustomerID": "FISSA",
-            "ContactName": "Diego Roel",
-            "CompanyName": "FISSA Fabrica Inter. Salchichas S.A.",
-            "Address": "C/ Moralzarzal, 86",
-            "Country": "Spain"
-        },
-        {
-            "CustomerID": "FOLIG",
-            "ContactName": "Martine Rancé",
-            "CompanyName": "Folies gourmandes",
-            "Address": "184, chaussée de Tournai",
-            "Country": "France"
-        },
-        {
-            "CustomerID": "FOLKO",
-            "ContactName": "Maria Larsson",
-            "CompanyName": "Folk och fä HB",
-            "Address": "Åkergatan 24",
-            "Country": "Sweden"
-        },
-        {
-            "CustomerID": "FRANK",
-            "ContactName": "Peter Franken",
-            "CompanyName": "Frankenversand",
-            "Address": "Berliner Platz 43",
-            "Country": "Germany"
-        },
-        {
-            "CustomerID": "FRANR",
-            "ContactName": "Carine Schmitt",
-            "CompanyName": "France restauration",
-            "Address": "54, rue Royale",
-            "Country": "France"
-        },
-        {
-            "CustomerID": "FRANS",
-            "ContactName": "Paolo Accorti",
-            "CompanyName": "Franchi S.p.A.",
-            "Address": "Via Monte Bianco 34",
-            "Country": "Italy"
-        },
-        {
-            "CustomerID": "FURIB",
-            "ContactName": "Lino Rodriguez",
-            "CompanyName": "Furia Bacalhau e Frutos do Mar",
-            "Address": "Jardim das rosas n. 32",
-            "Country": "Portugal"
-        },
-        {
-            "CustomerID": "GALED",
-            "ContactName": "Eduardo Saavedra",
-            "CompanyName": "Galería del gastrónomo",
-            "Address": "Rambla de Cataluña, 23",
-            "Country": "Spain"
-        },
-        {
-            "CustomerID": "GODOS",
-            "ContactName": "José Pedro Freyre",
-            "CompanyName": "Godos Cocina Típica",
-            "Address": "C/ Romero, 33",
-            "Country": "Spain"
-        },
-        {
-            "CustomerID": "GOURL",
-            "ContactName": "André Fonseca",
-            "CompanyName": "Gourmet Lanchonetes",
-            "Address": "Av. Brasil, 442",
-            "Country": "Brazil"
-        },
-        {
-            "CustomerID": "GREAL",
-            "ContactName": "Howard Snyder",
-            "CompanyName": "Great Lakes Food Market",
-            "Address": "2732 Baker Blvd.",
-            "Country": "USA"
-        },
-        {
-            "CustomerID": "GROSR",
-            "ContactName": "Manuel Pereira",
-            "CompanyName": "GROSELLA-Restaurante",
-            "Address": "5ª Ave. Los Palos Grandes",
-            "Country": "Venezuela"
-        },
-        {
-            "CustomerID": "HANAR",
-            "ContactName": "Mario Pontes",
-            "CompanyName": "Hanari Carnes",
-            "Address": "Rua do Paço, 67",
-            "Country": "Brazil"
-        },
-        {
-            "CustomerID": "HILAA",
-            "ContactName": "Carlos Hernández",
-            "CompanyName": "HILARION-Abastos",
-            "Address": "Carrera 22 con Ave. Carlos Soublette #8-35",
-            "Country": "Venezuela"
-        },
-        {
-            "CustomerID": "HUNGC",
-            "ContactName": "Yoshi Latimer",
-            "CompanyName": "Hungry Coyote Import Store",
-            "Address": "City Center Plaza 516 Main St.",
-            "Country": "USA"
-        },
-        {
-            "CustomerID": "HUNGO",
-            "ContactName": "Patricia McKenna",
-            "CompanyName": "Hungry Owl All-Night Grocers",
-            "Address": "8 Johnstown Road",
-            "Country": "Ireland"
-        },
-        {
-            "CustomerID": "ISLAT",
-            "ContactName": "Helen Bennett",
-            "CompanyName": "Island Trading",
-            "Address": "Garden House Crowther Way",
-            "Country": "UK"
-        },
-        {
-            "CustomerID": "KOENE",
-            "ContactName": "Philip Cramer",
-            "CompanyName": "Königlich Essen",
-            "Address": "Maubelstr. 90",
-            "Country": "Germany"
-        },
-        {
-            "CustomerID": "LACOR",
-            "ContactName": "Daniel Tonini",
-            "CompanyName": "La corne d'abondance",
-            "Address": "67, avenue de l'Europe",
-            "Country": "France"
-        },
-        {
-            "CustomerID": "LAMAI",
-            "ContactName": "Annette Roulet",
-            "CompanyName": "La maison d'Asie",
-            "Address": "1 rue Alsace-Lorraine",
-            "Country": "France"
-        },
-        {
-            "CustomerID": "LAUGB",
-            "ContactName": "Yoshi Tannamuri",
-            "CompanyName": "Laughing Bacchus Wine Cellars",
-            "Address": "1900 Oak St.",
-            "Country": "Canada"
-        },
-        {
-            "CustomerID": "LAZYK",
-            "ContactName": "John Steel",
-            "CompanyName": "Lazy K Kountry Store",
-            "Address": "12 Orchestra Terrace",
-            "Country": "USA"
-        },
-        {
-            "CustomerID": "LEHMS",
-            "ContactName": "Renate Messner",
-            "CompanyName": "Lehmanns Marktstand",
-            "Address": "Magazinweg 7",
-            "Country": "Germany"
-        },
-        {
-            "CustomerID": "LETSS",
-            "ContactName": "Jaime Yorres",
-            "CompanyName": "Let's Stop N Shop",
-            "Address": "87 Polk St. Suite 5",
-            "Country": "USA"
-        },
-        {
-            "CustomerID": "LILAS",
-            "ContactName": "Carlos González",
-            "CompanyName": "LILA-Supermercado",
-            "Address": "Carrera 52 con Ave. Bolívar #65-98 Llano Largo",
-            "Country": "Venezuela"
-        },
-        {
-            "CustomerID": "LINOD",
-            "ContactName": "Felipe Izquierdo",
-            "CompanyName": "LINO-Delicateses",
-            "Address": "Ave. 5 de Mayo Porlamar",
-            "Country": "Venezuela"
-        },
-        {
-            "CustomerID": "LONEP",
-            "ContactName": "Fran Wilson",
-            "CompanyName": "Lonesome Pine Restaurant",
-            "Address": "89 Chiaroscuro Rd.",
-            "Country": "USA"
-        },
-        {
-            "CustomerID": "MAGAA",
-            "ContactName": "Giovanni Rovelli",
-            "CompanyName": "Magazzini Alimentari Riuniti",
-            "Address": "Via Ludovico il Moro 22",
-            "Country": "Italy"
-        },
-        {
-            "CustomerID": "MAISD",
-            "ContactName": "Catherine Dewey",
-            "CompanyName": "Maison Dewey",
-            "Address": "Rue Joseph-Bens 532",
-            "Country": "Belgium"
-        },
-        {
-            "CustomerID": "MEREP",
-            "ContactName": "Jean Fresnière",
-            "CompanyName": "Mère Paillarde",
-            "Address": "43 rue St. Laurent",
-            "Country": "Canada"
-        },
-        {
-            "CustomerID": "MORGK",
-            "ContactName": "Alexander Feuer",
-            "CompanyName": "Morgenstern Gesundkost",
-            "Address": "Heerstr. 22",
-            "Country": "Germany"
-        },
-        {
-            "CustomerID": "NORTS",
-            "ContactName": "Simon Crowther",
-            "CompanyName": "North/South",
-            "Address": "South House 300 Queensbridge",
-            "Country": "UK"
-        },
-        {
-            "CustomerID": "OCEAN",
-            "ContactName": "Yvonne Moncada",
-            "CompanyName": "Océano Atlántico Ltda.",
-            "Address": "Ing. Gustavo Moncada 8585 Piso 20-A",
-            "Country": "Argentina"
-        },
-        {
-            "CustomerID": "OLDWO",
-            "ContactName": "Rene Phillips",
-            "CompanyName": "Old World Delicatessen",
-            "Address": "2743 Bering St.",
-            "Country": "USA"
-        },
-        {
-            "CustomerID": "OTTIK",
-            "ContactName": "Henriette Pfalzheim",
-            "CompanyName": "Ottilies Käseladen",
-            "Address": "Mehrheimerstr. 369",
-            "Country": "Germany"
-        },
-        {
-            "CustomerID": "PARIS",
-            "ContactName": "Marie Bertrand",
-            "CompanyName": "Paris spécialités",
-            "Address": "265, boulevard Charonne",
-            "Country": "France"
-        },
-        {
-            "CustomerID": "PERIC",
-            "ContactName": "Guillermo Fernández",
-            "CompanyName": "Pericles Comidas clásicas",
-            "Address": "Calle Dr. Jorge Cash 321",
-            "Country": "Mexico"
-        },
-        {
-            "CustomerID": "PICCO",
-            "ContactName": "Georg Pipps",
-            "CompanyName": "Piccolo und mehr",
-            "Address": "Geislweg 14",
-            "Country": "Austria"
-        },
-        {
-            "CustomerID": "PRINI",
-            "ContactName": "Isabel de Castro",
-            "CompanyName": "Princesa Isabel Vinhos",
-            "Address": "Estrada da saúde n. 58",
-            "Country": "Portugal"
-        },
-        {
-            "CustomerID": "QUEDE",
-            "ContactName": "Bernardo Batista",
-            "CompanyName": "Que Delícia",
-            "Address": "Rua da Panificadora, 12",
-            "Country": "Brazil"
-        },
-        {
-            "CustomerID": "QUEEN",
-            "ContactName": "Lúcia Carvalho",
-            "CompanyName": "Queen Cozinha",
-            "Address": "Alameda dos Canàrios, 891",
-            "Country": "Brazil"
-        },
-        {
-            "CustomerID": "QUICK",
-            "ContactName": "Horst Kloss",
-            "CompanyName": "QUICK-Stop",
-            "Address": "Taucherstraße 10",
-            "Country": "Germany"
-        },
-        {
-            "CustomerID": "RANCH",
-            "ContactName": "Sergio Gutiérrez",
-            "CompanyName": "Rancho grande",
-            "Address": "Av. del Libertador 900",
-            "Country": "Argentina"
-        },
-        {
-            "CustomerID": "RATTC",
-            "ContactName": "Paula Wilson",
-            "CompanyName": "Rattlesnake Canyon Grocery",
-            "Address": "2817 Milton Dr.",
-            "Country": "USA"
-        },
-        {
-            "CustomerID": "REGGC",
-            "ContactName": "Maurizio Moroni",
-            "CompanyName": "Reggiani Caseifici",
-            "Address": "Strada Provinciale 124",
-            "Country": "Italy"
-        },
-        {
-            "CustomerID": "RICAR",
-            "ContactName": "Janete Limeira",
-            "CompanyName": "Ricardo Adocicados",
-            "Address": "Av. Copacabana, 267",
-            "Country": "Brazil"
-        },
-        {
-            "CustomerID": "RICSU",
-            "ContactName": "Michael Holz",
-            "CompanyName": "Richter Supermarkt",
-            "Address": "Grenzacherweg 237",
-            "Country": "Switzerland"
-        },
-        {
-            "CustomerID": "ROMEY",
-            "ContactName": "Alejandra Camino",
-            "CompanyName": "Romero y tomillo",
-            "Address": "Gran Vía, 1",
-            "Country": "Spain"
-        },
-        {
-            "CustomerID": "SANTG",
-            "ContactName": "Jonas Bergulfsen",
-            "CompanyName": "Santé Gourmet",
-            "Address": "Erling Skakkes gate 78",
-            "Country": "Norway"
-        },
-        {
-            "CustomerID": "SAVEA",
-            "ContactName": "Jose Pavarotti",
-            "CompanyName": "Save-a-lot Markets",
-            "Address": "187 Suffolk Ln.",
-            "Country": "USA"
-        },
-        {
-            "CustomerID": "SEVES",
-            "ContactName": "Hari Kumar",
-            "CompanyName": "Seven Seas Imports",
-            "Address": "90 Wadhurst Rd.",
-            "Country": "UK"
-        },
-        {
-            "CustomerID": "SIMOB",
-            "ContactName": "Jytte Petersen",
-            "CompanyName": "Simons bistro",
-            "Address": "Vinbæltet 34",
-            "Country": "Denmark"
-        },
-        {
-            "CustomerID": "SPECD",
-            "ContactName": "Dominique Perrier",
-            "CompanyName": "Spécialités du monde",
-            "Address": "25, rue Lauriston",
-            "Country": "France"
-        },
-        {
-            "CustomerID": "SPLIR",
-            "ContactName": "Art Braunschweiger",
-            "CompanyName": "Split Rail Beer & Ale",
-            "Address": "P.O. Box 555",
-            "Country": "USA"
-        },
-        {
-            "CustomerID": "SUPRD",
-            "ContactName": "Pascale Cartrain",
-            "CompanyName": "Suprêmes délices",
-            "Address": "Boulevard Tirou, 255",
-            "Country": "Belgium"
-        },
-        {
-            "CustomerID": "THEBI",
-            "ContactName": "Liz Nixon",
-            "CompanyName": "The Big Cheese",
-            "Address": "89 Jefferson Way Suite 2",
-            "Country": "USA"
-        },
-        {
-            "CustomerID": "THECR",
-            "ContactName": "Liu Wong",
-            "CompanyName": "The Cracker Box",
-            "Address": "55 Grizzly Peak Rd.",
-            "Country": "USA"
-        },
-        {
-            "CustomerID": "TOMSP",
-            "ContactName": "Karin Josephs",
-            "CompanyName": "Toms Spezialitäten",
-            "Address": "Luisenstr. 48",
-            "Country": "Germany"
-        },
-        {
-            "CustomerID": "TORTU",
-            "ContactName": "Miguel Angel Paolino",
-            "CompanyName": "Tortuga Restaurante",
-            "Address": "Avda. Azteca 123",
-            "Country": "Mexico"
-        },
-        {
-            "CustomerID": "TRADH",
-            "ContactName": "Anabela Domingues",
-            "CompanyName": "Tradição Hipermercados",
-            "Address": "Av. Inês de Castro, 414",
-            "Country": "Brazil"
-        },
-        {
-            "CustomerID": "TRAIH",
-            "ContactName": "Helvetius Nagy",
-            "CompanyName": "Trail's Head Gourmet Provisioners",
-            "Address": "722 DaVinci Blvd.",
-            "Country": "USA"
-        },
-        {
-            "CustomerID": "VAFFE",
-            "ContactName": "Palle Ibsen",
-            "CompanyName": "Vaffeljernet",
-            "Address": "Smagsloget 45",
-            "Country": "Denmark"
-        },
-        {
-            "CustomerID": "VICTE",
-            "ContactName": "Mary Saveley",
-            "CompanyName": "Victuailles en stock",
-            "Address": "2, rue du Commerce",
-            "Country": "France"
-        },
-        {
-            "CustomerID": "VINET",
-            "ContactName": "Paul Henriot",
-            "CompanyName": "Vins et alcools Chevalier",
-            "Address": "59 rue de l'Abbaye",
-            "Country": "France"
-        },
-        {
-            "CustomerID": "WANDK",
-            "ContactName": "Rita Müller",
-            "CompanyName": "Die Wandernde Kuh",
-            "Address": "Adenauerallee 900",
-            "Country": "Germany"
-        },
-        {
-            "CustomerID": "WARTH",
-            "ContactName": "Pirkko Koskitalo",
-            "CompanyName": "Wartian Herkku",
-            "Address": "Torikatu 38",
-            "Country": "Finland"
-        },
-        {
-            "CustomerID": "WELLI",
-            "ContactName": "Paula Parente",
-            "CompanyName": "Wellington Importadora",
-            "Address": "Rua do Mercado, 12",
-            "Country": "Brazil"
-        },
-        {
-            "CustomerID": "WHITC",
-            "ContactName": "Karl Jablonski",
-            "CompanyName": "White Clover Markets",
-            "Address": "305 - 14th Ave. S. Suite 3B",
-            "Country": "USA"
-        },
-        {
-            "CustomerID": "WILMK",
-            "ContactName": "Matti Karttunen",
-            "CompanyName": "Wilman Kala",
-            "Address": "Keskuskatu 45",
-            "Country": "Finland"
-        },
-        {
-            "CustomerID": "WOLZA",
-            "ContactName": "Zbyszek Piestrzeniewicz",
-            "CompanyName": "Wolski  Zajazd",
-            "Address": "ul. Filtrowa 68",
-            "Country": "Poland"
-        }
-    ];
+    ]

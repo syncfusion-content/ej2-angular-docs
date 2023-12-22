@@ -3,6 +3,7 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, ToolbarItems,SearchSettingsModel } from '@syncfusion/ej2-angular-grids'; 
+import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
     selector: 'app-root',
@@ -18,6 +19,7 @@ import { GridComponent, ToolbarItems,SearchSettingsModel } from '@syncfusion/ej2
       index="0"
       width="100"
       [dataSource]="ddlData"
+      [fields]='fields'
       (change)="valueChange($event)"
     ></ejs-dropdownlist>
   </div>
@@ -36,6 +38,7 @@ export class AppComponent implements OnInit {
     public toolbarOptions?: ToolbarItems[];
     public searchSettings?: SearchSettingsModel
     @ViewChild('grid') public grid?: GridComponent;
+    public fields?: object = { text: 'text', value: 'value' };
     public ddlData?: object[] = [
       { text: 'startswith', value: 'startswith' },
       { text: 'endswith', value: 'endswith' },
@@ -50,8 +53,8 @@ export class AppComponent implements OnInit {
         this.toolbarOptions = ['Search'];
         this.searchSettings = { operator: 'contains' };
     }
-    valueChange(args: any): void {
-      (this.grid as any).searchSettings.operator = (args as any).value; 
+    valueChange(args: ChangeEventArgs): void {
+      (this.grid as GridComponent).searchSettings.operator = args.value as string; 
     }
  }
 

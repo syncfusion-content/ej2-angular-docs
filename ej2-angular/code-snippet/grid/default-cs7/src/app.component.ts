@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
     }
 
     onDataBound(): void {
-        (this.grid as any).detailRowModule.expand(2);
+        (this.grid as GridComponent).detailRowModule.expand(2);
     }
 
 }

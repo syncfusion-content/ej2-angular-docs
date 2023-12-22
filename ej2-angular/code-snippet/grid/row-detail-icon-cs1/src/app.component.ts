@@ -1,6 +1,5 @@
 import { Component, OnInit, Inject, ViewEncapsulation } from '@angular/core';
 import { employeeData } from './datasource';
-import { DetailRowService } from '@syncfusion/ej2-angular-grids';
 import { Internationalization } from '@syncfusion/ej2-base';
 
 let instance: Internationalization = new Internationalization();
@@ -68,8 +67,7 @@ let instance: Internationalization = new Internationalization();
                     </e-columns>
                 </ejs-grid>
             </div>`
-    providers: [DetailRowService],
-    encapsulation: ViewEncapsulation.None
+
 })
 export class AppComponent {
 

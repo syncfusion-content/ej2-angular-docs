@@ -1,7 +1,7 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { data, customerData } from './datasource';
+import { data } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
     }
 
     onExternalSort() {
-        this.grid?.clearSorting();
+        (this.grid as GridComponent).clearSorting();
     }
 }
 

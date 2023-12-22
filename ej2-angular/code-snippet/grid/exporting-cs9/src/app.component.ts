@@ -3,7 +3,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ToolbarItems, PdfQueryCellInfoEventArgs, QueryCellInfoEventArgs, Column, PdfStyle } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
@@ -24,6 +24,7 @@ export class AppComponent implements OnInit {
     public toolbarOptions?: ToolbarItems[];
     @ViewChild('grid')
     public grid?: GridComponent;
+    
 
     ngOnInit(): void {
         this.data = data;
@@ -31,34 +32,46 @@ export class AppComponent implements OnInit {
     }
 
     toolbarClick(args: ClickEventArgs): void {
-        if ((args as any).item.id === 'Grid_pdfexport') {
-            (this.grid as any).pdfExport();
+        if (args.item.id === 'Grid_pdfexport') {
+            (this.grid as GridComponent).pdfExport();
         }
     }
 
-    pdfQueryCellInfo(args: any): void {
-        if ((args as any).column.field === 'Freight') {
-            if ((args as any).value < 30) {
-                (args as any).style = { backgroundColor: '#99ffcc' };
-            } else if ((args as any).value < 60) {
-                (args as any).style = { backgroundColor: '#ffffb3' };
+    pdfQueryCellInfo(args: PdfQueryCellInfoEventArgs): void {
+        if ((args.column as Column).field === 'Freight') {
+            if ((args.value as number) < 30) {
+                (args.style as PdfStyle)= { backgroundColor: '#99ffcc' };
+            } else if ((args.value as number) < 60) {
+                (args.style as PdfStyle) = { backgroundColor: '#ffffb3' };
             } else {
-                (args as any).style = { backgroundColor: '#ff704d' };
+                (args.style as PdfStyle) = { backgroundColor: '#ff704d' };
             }
         }
     }
 
-    queryCellInfo(args: any): void {
-        if ((args as any).column.field === 'Freight') {
-            if ((args as any).data[(args as any).column.field] < 30) {
-                (args as any).cell.bgColor = '#99ffcc';
-            } else if ((args as any).data[(args as any).column.field] < 60) {
-                (args as any).cell.bgColor = '#ffffb3';
+    queryCellInfo({data, column, cell}: QueryCellInfoEventArgs ): void {
+        if ((column as Column).field === 'Freight') {
+            const FreightData= (data as columnDataType).Freight;
+            if (FreightData < 30) {
+                (cell as HTMLElement).style.background = '#99ffcc';
+            } else if (FreightData < 60) {
+                (cell as HTMLElement).style.background = '#ffffb3';
             } else {
-                (args as any).cell.bgColor = '#ff704d';
+                (cell as HTMLElement).style.background = '#ff704d';
             }
         }
     }
+}
+
+interface columnDataType{
+    field: number;
+    OrderID:number,
+    Freight:number,
+    CustomerID:string,
+    ShipCity:string,
+    ShipName:string,
+    ShipCountry:string,
+    ShipPostalCode:number
 }
 
 

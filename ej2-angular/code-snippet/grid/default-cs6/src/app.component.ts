@@ -38,11 +38,11 @@ export class AppComponent implements OnInit {
     }
 
     expand(): void {
-        (this.grid as any).detailRowModule.expandAll();
+        (this.grid as GridComponent).detailRowModule.expandAll();
     }
 
     collapse(): void {
-        (this.grid as any).detailRowModule.collapseAll();
+        (this.grid as GridComponent).detailRowModule.collapseAll();
     }
 
 }
