@@ -1,16 +1,38 @@
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import { SymbolPaletteComponent, SymbolPalette, NodeModel, MarginModel, PaletteModel,SymbolInfo } from '@syncfusion/ej2-angular-diagrams';
+import { SymbolPaletteComponent, SymbolPalette, NodeModel, MarginModel, PaletteModel,SymbolInfo,DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
     selector: "app-container",
-    template: `<ejs-symbolpalette id="symbolpalette"width="100%" height="700px" [symbolHeight]=80 [symbolWidth]=80 [palettes]="palettes" [getSymbolInfo]="getSymbolInfo" [symbolMargin]="symbolMargin" [getNodeDefaults]="getSymbolDefaults">
-    </ejs-symbolpalette>`,
+    template: `<div style="width: 100%">
+    <div id="palette-space" class="sb-mobile-palette">
+      <ejs-symbolpalette
+        id="symbolpalette"
+        width="100%"
+        height="700px"
+        [symbolHeight]="80"
+        [symbolWidth]="80"
+        [palettes]="palettes"
+        [getSymbolInfo]="getSymbolInfo"
+        [symbolMargin]="symbolMargin"
+        [getNodeDefaults]="getSymbolDefaults"
+      >
+      </ejs-symbolpalette>
+    </div>
+    <div id="diagram-space" class="sb-mobile-diagram">
+      <div class="content-wrapper">
+        <ejs-diagram #diagram id="diagram" width="100%" height="700px">
+        </ejs-diagram>
+      </div>
+    </div>
+  </div>
+  `,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
     public palettes?: PaletteModel[];
+    public diagram?: DiagramComponent;
     public symbolMargin?: MarginModel;
     public getUmlShapes(): NodeModel[] {
         let umlShapes: NodeModel[] = [
@@ -86,5 +108,3 @@ export class AppComponent {
         }
     }
 }
-
-
