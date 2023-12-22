@@ -1,7 +1,11 @@
 ---
-title: "Collaborative Editing (preview)"
-component: "DocumentEditor"
-description: "Learn how to enable collaborative editing"
+layout: post
+title: Collaborative Editing (preview) in Angular Document editor control | Syncfusion
+description: Learn how to enable collaborative editing in Syncfusion Angular Document editor control of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
+control: Collaborative Editing (preview)
+documentation: ug
+domainurl: ##DomainURL##
 ---
 
 # Collaborative Editing (preview)
@@ -12,7 +16,7 @@ Allows multiple users to work on the same document simultaneously. This can be d
 
 ## Prerequisites
 
-Following things are needed to enable collborative editing in Document Editor
+The following are needed to enable collborative editing in Document Editor.
 
 * `SignalR`
 * `Microsoft SQL Server`
@@ -66,7 +70,7 @@ onCreated() {
   }
 ```
 
-## Step2: Configure SignalR to send and receive changes
+### Step 2: Configure SignalR to send and receive changes
 
 To broadcast the changes made and receive changes from remote users, configure SignalR like below.
 
@@ -162,7 +166,7 @@ openDocument(responseText: string, roomName: string): void {
 }
 ```
 
-### Step 5: Broadcast current editing changes to remote users
+### Step 4: Broadcast current editing changes to remote users
 
 Changes made on the client-side need to be sent to the server-side to broadcast them to other connected users. To send the changes made to the server, use the method shown below from the document editor using the `contentChange` event.
 
@@ -281,3 +285,132 @@ Configure the SQL database that stores temporary data for the collaborative edit
 .....
 
 ```
+
+### Step 4: Configure Web API actions for collaborative editing
+
+#### Import File
+
+1.	When opening a document, create a database table to store temporary data for the collaborative editing session.
+2.	If the table already exists, retrieve the records from the table and apply them to the WordDocument instance using the `UpdateActions` method before converting it to the SFDT format.
+
+```csharp
+public string ImportFile([FromBody] FileInfo param)
+ {
+     .....
+     .....
+     DocumentContent content = new DocumentContent();
+
+     .....
+     //Get source document from database/file system/blob storage
+     WordDocument document = GetDocumentFromDatabase(param.fileName, param.documentOwner);
+     .....
+     //Get temporary records from database 
+     List<ActionInfo> actions = CreatedTable(param.fileName);
+     if(actions!=null)
+     {
+         //Apply temporary data to the document.
+         document.UpdateActions(actions);
+     }
+     string json = Newtonsoft.Json.JsonConvert.SerializeObject(document);
+     content.version = 0;
+     content.sfdt = json;
+     return Newtonsoft.Json.JsonConvert.SerializeObject(content);
+ }
+
+```
+
+#### Update editing records to database.
+
+Each edit operation made by the user is sent to the server and is pushed to the database. Each operation receives a version number after being inserted into the database.
+After inserting the records to the server, the position of the current editing operation must be transformed against any previous editing operations not yet synced with the client using the TransformOperation method.
+After performing the transformation, the current operation is broadcast to all connected users within the group.
+
+```csharp
+public async Task<ActionInfo> UpdateAction([FromBody] ActionInfo param)
+{
+    try
+    {
+        ActionInfo modifiedAction = AddOperationsToTable(param);
+        //After transformation broadcast changes to all users in the gropu
+        await _hubContext.Clients.Group(param.RoomName).SendAsync("dataReceived", "action", modifiedAction);
+        return modifiedAction;
+    }
+    catch
+    {
+        return null;
+    }
+}
+
+private ActionInfo AddOperationsToTable(ActionInfo action)
+ {
+     int clientVersion = action.Version;
+     string tableName = action.RoomName;
+     …………
+     …………
+     …………
+     ………… 
+     List<ActionInfo> actions = GetOperationsQueue(table);
+     foreach (ActionInfo info in actions)
+     {
+      if (!info.IsTransformed)
+      {
+        CollaborativeEditingHandler.TransformOperation(info, actions);
+      }
+     }
+     action = actions[actions.Count - 1];
+     action.Version = updateVersion;
+     //Return the transformed operation to broadcast it to other clients.
+     return action;
+ }
+
+```
+
+#### Add Web API to get previous operation as a backup to get lost operations
+
+On the client side, messages broadcasted using SignalR may be received in a different order, or some operations may be missed due to network issues. In these cases, we need a backup method to retrieve missing records from the database.
+Using the following method, we can retrieve all operations after the last successful client-synced version and return all missing operations to the requesting client.
+
+```csharp
+public async Task<ActionInfo> UpdateAction([FromBody] ActionInfo param)
+{
+    try
+    {
+        ActionInfo modifiedAction = AddOperationsToTable(param);
+        //After transformation broadcast changes to all users in the gropu
+        await _hubContext.Clients.Group(param.RoomName).SendAsync("dataReceived", "action", modifiedAction);
+        return modifiedAction;
+    }
+    catch
+    {
+        return null;
+    }
+}
+
+private ActionInfo AddOperationsToTable(ActionInfo action)
+ {
+     int clientVersion = action.Version;
+     string tableName = action.RoomName;
+     …………
+     …………
+     …………
+     ………… 
+     List<ActionInfo> actions = GetOperationsQueue(table);
+     foreach (ActionInfo info in actions)
+     {
+      if (!info.IsTransformed)
+      {
+        CollaborativeEditingHandler.TransformOperation(info, actions);
+      }
+     }
+     action = actions[actions.Count - 1];
+     action.Version = updateVersion;
+     //Return the transformed operation to broadcast it to other clients.
+     return action;
+ }
+
+```
+
+
+Full version of the code discussed about can be found in below GitHub location.
+
+Github Example: [`Collaborative editing examples`](https://github.com/SyncfusionExamples/EJ2-Document-Editor-Collabrative-Editing)

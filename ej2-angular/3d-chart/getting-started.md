@@ -10,13 +10,9 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular 3D Chart component
 
-This section explains you the steps required to create a simple [Angular 3D Chart](https://www.syncfusion.com/angular-ui-components/angular-charts) and demonstrate the basic usage of the 3D Chart component in an Angular environment.
+This section explains you the steps required to create a simple `Angular 3D Chart` and demonstrate the basic usage of the 3D Chart component in an Angular environment.
 
-To get start quickly with Angular 3D Chart using CLI and Schematics, you can check on this video:
-
-{% youtube "https://www.youtube.com/watch?v=uAubTKfbBy8" %}
-
-## Setup Angular Environment
+## Setup angular environment
 
 You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
 To install Angular CLI use the following command.
@@ -25,7 +21,7 @@ To install Angular CLI use the following command.
 npm install -g @angular/cli
 ```
 
-## Create an Angular Application
+## Create an Angular application
 
 Start a new Angular application using below Angular CLI command.
 
@@ -70,9 +66,9 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering 3D Chart Module
+## Registering 3D Chart module
 
-Import Chart module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-charts` [src/app/app.module.ts].
+Import 3D Chart module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-charts` [src/app/app.module.ts].
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -119,7 +115,7 @@ Now use the <code>app-container</code> in the index.html instead of default one.
 npm start
 ```
 
-The below example shows a basic Charts.
+The below example shows a basic 3D Charts.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -133,12 +129,17 @@ The below example shows a basic Charts.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/chart/getting-started/initialize-cs1" %}
+{% previewsample "page.domainurl/samples/3d-chart/getting-started/getting-started-cs1" %}
 
-## Module Injection
+## Module injection
 
-Chart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature service in the AppModule. In the current application, we are going to modify the above basic chart to visualize sales data for a particular year.
-For this application we are going to use  line series, tooltip, data label, category axis and legend feature of the chart.
+3D Chart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature service in the AppModule. In the current application, we are going to modify the above basic 3D Chart to visualize sales data for a particular year. For this application we are going to use column series, tooltip, data label, category axis and legend feature of the 3D Chart. Please find relevant feature service name and description as follows.
+
+* `ColumnSeries3DService` - Inject this provider to use column series.
+* `Legend3DService` - Inject this provider to use legend feature.
+* `Tooltip3DService` - Inject this provider to use tooltip feature.
+* `DataLabel3DService` - Inject this provider to use datalabel feature.
+* `Category3DService`  - Inject this provider to use category feature.
 
 These modules should be injected to the provider section as follows,
 
@@ -146,22 +147,24 @@ These modules should be injected to the provider section as follows,
     import { NgModule } from '@angular/core';
     import { BrowserModule } from '@angular/platform-browser';
     import { AppComponent } from './app.component';
-    import { Chart3DAllModule  } from '@syncfusion/ej2-angular-charts';
+    import { Chart3DComponent } from '@syncfusion/ej2-angular-charts';
+    import { Category3DService, Legend3DService, Tooltip3DService } from '@syncfusion/ej2-angular-charts';
+    import { DataLabel3DService } from '@syncfusion/ej2-angular-charts';
 
     @NgModule({
         imports: [
             BrowserModule,
         ],
-        declarations: [AppComponent, Chart3DAllModule ],
+        declarations: [AppComponent, Chart3DComponent],
         bootstrap: [AppComponent],
-        providers: [ Chart3DAllModule ]
+        providers: [ Category3DService, Legend3DService, Tooltip3DService, DataLabel3DService ]
     })
 
  ```
 
-## Populate Chart with Data
+## Populate chart with data
 
-This section explains how to plot below JSON data to the chart.
+This section explains how to plot below JSON data to the 3D Chart.
 
 ```javascript
     export class AppComponent implements OnInit {
@@ -183,9 +186,9 @@ This section explains how to plot below JSON data to the chart.
 
  ```
 
- Add a series object to the 3D chart by using [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/) property. Now map the field names `x` and `y` in the JSON data to the [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#yname) properties of the series, then set the JSON data to [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective#datasource) property.
+Add a series object to the 3D Chart by using [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DSeriesDirective/) property. Now map the field names `x` and `y` in the JSON data to the [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DSeriesDirective/#xname) and [`yName`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DSeriesDirective/#yname) properties of the series, then set the JSON data to [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DSeriesDirective/#datasource) property.
 
-Since the JSON contains category data, set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#valuetype)for horizontal axis to `Category`.
+Since the JSON contains category data, set the [`valueType`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/axis3DDirective/#valuetype)for horizontal axis to `Category`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -199,12 +202,11 @@ Since the JSON contains category data, set the [`valueType`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/chart/getting-started/datasource-cs4" %}
+{% previewsample "page.domainurl/samples/3d-chart/getting-started/getting-started-cs2" %}
 
-## Add 3D Chart Title
+## Add 3D Chart title
 
-You can add a title using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#title) property to the chart to provide
-quick information to the user about the data plotted in the chart.
+You can add a title using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DModel/#title) property to the 3D Chart to provide quick information to the user about the data plotted in the 3D Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -218,11 +220,11 @@ quick information to the user about the data plotted in the chart.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/chart/getting-started/tooltip-cs1" %}
+{% previewsample "page.domainurl/samples/3d-chart/getting-started/getting-started-cs3" %}
 
-## Enable Legend
+## Enable legend
 
-You can use legend for the chart by setting the `visible` property to true in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#legendsettings) object.
+You can use legend for the 3D Chart by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/legendSettingsModel/#visible) property to true in [`legendSettings`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DModel/#legendsettings) object and by injecting the `Legend3DService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -236,12 +238,12 @@ You can use legend for the chart by setting the `visible` property to true in [`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/chart/getting-started/legend-cs1" %}
+{% previewsample "page.domainurl/samples/3d-chart/getting-started/getting-started-cs4/" %}
 
-## Add Data Label
+## Add data label
 
-You can add data labels to improve the readability of the chart.
-This can be achieved by setting the visible property to true in the `dataLabel` object.
+You can add data labels to improve the readability of the 3D Chart.
+This can be achieved by setting the [`visible`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/dataLabelStyle/#visible) property to true in the [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DSeriesDirective/#datalabel) object and by injecting `DataLabel3DService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -255,11 +257,11 @@ This can be achieved by setting the visible property to true in the `dataLabel` 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/chart/getting-started/datalabel-cs1" %}
+{% previewsample "page.domainurl/samples/3d-chart/getting-started/getting-started-cs5" %}
 
-## Enable Tooltip
+## Enable tooltip
 
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the enable property as true in [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartModel/#tooltip) object.
+The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/threeDimensionalTooltipSettingsModel/#enable) property as true in [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/chart3DModel/#tooltip) object and by injecting `Tooltip3DService` into the `@NgModule.providers`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -273,6 +275,6 @@ The tooltip is useful when you cannot display information by using the data labe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/chart/getting-started/tooltip-cs2" %}
+{% previewsample "page.domainurl/samples/3d-chart/getting-started/getting-started-cs6" %}
 
-> You can also explore our [Angular 3D Charts example](https://ej2.syncfusion.com/angular/demos/#/material/chart/line) that shows various chart types and how to represent time-dependent data, showing trends in data at equal intervals.
+> You can also explore our [Angular 3D Charts example](https://ej2.syncfusion.com/angular/demos/#/material3/three-dimension-chart/column) that shows various 3D Chart types and how to represent time-dependent data, showing trends in data at equal intervals.
