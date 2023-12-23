@@ -190,6 +190,190 @@ export class AppComponent implements OnInit {
 
 ```
 
+## Export grid as memory stream
+
+The Grid offers an option to export the data as a memory stream instead of downloading it as a file in the browser. To obtain the memory stream of the exported grid, set the `AsMemoryStream` parameter to **true** in the [ExcelExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridExcelExport.html#Syncfusion_EJ2_GridExport_GridExcelExport_ExcelExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_System_Boolean_Syncfusion_EJ2_GridExport_ExcelExportProperties_) and [CsvExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridExcelExport.html#Syncfusion_EJ2_GridExport_GridExcelExport_CsvExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_System_Boolean_Syncfusion_EJ2_GridExport_ExcelExportProperties_) methods.
+
+The following code demonstrates how to get the memory stream of exported grid.
+
+```ts
+public object ExcelExport(string gridModel)
+{
+    GridExcelExport exp = new GridExcelExport();
+    Grid gridProperty = ConvertGridObject(gridModel);
+    // pass third parameter as true to get the Memory Stream of exported grid data
+    return (MemoryStream)exp.ExcelExport<OrdersDetails>(gridProperty, OrderRepository.GetAllRecords(), true);
+}
+
+public object CsvExport(string gridModel)
+{
+    GridExcelExport exp = new GridExcelExport();
+    Grid gridProperty = ConvertGridObject(gridModel);
+    return (MemoryStream)exp.CsvExport<OrdersDetails>(gridProperty, OrderRepository.GetAllRecords(), true);
+}
+
+```
+
+## Merge grid's memory stream
+
+The [Essential XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview) library is used to merge multiple memory streams into a single stream. To learn more about the merge option, please refer to this [documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#move-or-copy-a-worksheet).
+
+You can merge a memory stream, a file stream, and a local file with the Grid's memory stream in the following ways:
+
+### Merging with an existing memory stream
+
+If you already have a memory stream, you can directly use it to merge with the Grid's memory stream.
+
+In the following code, `ExcelEngine` and `AddCopy` method of Worksheets are used to merge the grid's memory stream with an existing memory stream.
+
+```ts
+using Syncfusion.XlsIO;
+
+public MemoryStream ms1; // defines existing memory stream
+
+public object ExcelExport(string gridModel)
+{
+    GridExcelExport exp = new GridExcelExport();
+    Grid gridProperty = ConvertGridObject(gridModel);
+    // get the memory stream of exported grid data
+    MemoryStream ms2 = (MemoryStream)exp.ExcelExport<OrdersDetails>(gridProperty, OrderRepository.GetAllRecords(), true);
+    //New instance of ExcelEngine is created equivalent to launching Microsoft Excel with no workbooks open
+    ExcelEngine excelEngine = new ExcelEngine();
+    //Instantiate the Excel application object
+    IApplication application = excelEngine.Excel;
+    //Assigns default application version
+    application.DefaultVersion = ExcelVersion.Xlsx;
+    //open an workbook of existing memory stream and grid's memory stream through Open method of IWorkbooks
+    IWorkbook sourceWorkbook = application.Workbooks.Open(ms1);
+    IWorkbook destinationWorkbook = application.Workbooks.Open(ms2);
+
+    //Copy all the worksheet from the Source workbook to the destination workbook
+    for (int i = 0; i < sourceWorkbook.Worksheets.Count; i++)
+    {
+        destinationWorkbook.Worksheets.AddCopy(sourceWorkbook.Worksheets[i]);
+    }
+    destinationWorkbook.ActiveSheetIndex = 1;
+    //Saving the workbook as stream
+    MemoryStream ms3 = new MemoryStream();
+    destinationWorkbook.SaveAs(ms3);
+    ms3.Position = 0;
+    //Dispose the instance of ExcelEngine
+    excelEngine.Dispose();
+    //Dispose the streams.
+    ms1.Dispose();
+    ms2.Dispose();
+    return ms3;
+}
+
+```
+
+### Merging with an existing file stream
+
+If you already have a file stream, you can directly use it to merge with the Grid's memory stream. In the following code, the existing file stream is merged with the Grid's memory stream.
+
+```ts
+using Syncfusion.XlsIO;
+
+public FileStream fs1; // defines existing file stream
+
+public object ExcelExport(string gridModel)
+{
+    GridExcelExport exp = new GridExcelExport();
+    Grid gridProperty = ConvertGridObject(gridModel);
+    MemoryStream ms1 = (MemoryStream)exp.ExcelExport<OrdersDetails>(gridProperty, OrderRepository.GetAllRecords(), true);
+    ExcelEngine excelEngine = new ExcelEngine();
+    IApplication application = excelEngine.Excel;
+    application.DefaultVersion = ExcelVersion.Xlsx;
+    //fs1 and ms1 represents the existing stream and grid's stream.
+    IWorkbook sourceWorkbook = application.Workbooks.Open(fs1);
+    IWorkbook destinationWorkbook = application.Workbooks.Open(ms1);
+
+    for (int i = 0; i < sourceWorkbook.Worksheets.Count; i++)
+    {
+        destinationWorkbook.Worksheets.AddCopy(sourceWorkbook.Worksheets[i]);
+    }
+    destinationWorkbook.ActiveSheetIndex = 1;
+    //Saving the workbook as stream
+    MemoryStream ms3 = new MemoryStream();
+    destinationWorkbook.SaveAs(ms3);
+    ms3.Position = 0;
+    return ms3;
+}
+
+```
+
+### Merging with a local file
+
+To merge a local file with the Grid's memory stream, you need to convert it into a file stream before merging. In the following code, the existing local file is merged with the Grid's memory stream.
+
+```ts
+using Syncfusion.XlsIO;
+
+// get the file stream of local file
+public FileStream fs1 = new FileStream("D:/ExcelDoc.xlsx", FileMode.Open, FileAccess.Read); // ExcelDoc.xlsx is a local file which is located in local disk D.
+
+public object ExcelExport(string gridModel)
+{
+    GridExcelExport exp = new GridExcelExport();
+    Grid gridProperty = ConvertGridObject(gridModel);
+    MemoryStream ms1 = (MemoryStream)exp.ExcelExport<OrdersDetails>(gridProperty, OrderRepository.GetAllRecords(), true);
+    ExcelEngine excelEngine = new ExcelEngine();
+    IApplication application = excelEngine.Excel;
+    application.DefaultVersion = ExcelVersion.Xlsx;
+    //fs1 and ms1 represents the local file's stream and grid's stream.
+    IWorkbook sourceWorkbook = application.Workbooks.Open(fs1);
+    IWorkbook destinationWorkbook = application.Workbooks.Open(ms1);
+    for (int i = 0; i < sourceWorkbook.Worksheets.Count; i++)
+    {
+        destinationWorkbook.Worksheets.AddCopy(sourceWorkbook.Worksheets[i]);
+    }
+    destinationWorkbook.ActiveSheetIndex = 1;
+    MemoryStream ms3 = new MemoryStream();
+    destinationWorkbook.SaveAs(ms3);
+    ms3.Position = 0;
+    return ms3;
+}
+
+```
+
+### Downloading the merged memory stream
+
+You can download the merged memory stream by converting it into a `FileStreamResult`. In the following code, the merged memory stream is downloaded to the browser.
+
+```ts
+using Syncfusion.XlsIO;
+
+public ActionResult ExcelExport(string gridModel)
+{
+    ExcelEngine excelEngine = new ExcelEngine();
+    IApplication application = excelEngine.Excel;
+    application.DefaultVersion = ExcelVersion.Xlsx;
+    //open an workbook of streams through Open method of IWorkbooks
+    IWorkbook sourceWorkbook = application.Workbooks.Open(ms1);
+    IWorkbook destinationWorkbook = application.Workbooks.Open(ms2);
+    for (int i = 0; i < sourceWorkbook.Worksheets.Count; i++)
+    {
+        destinationWorkbook.Worksheets.AddCopy(sourceWorkbook.Worksheets[i]);
+    }
+    destinationWorkbook.ActiveSheetIndex = 1;
+    MemoryStream ms3 = new MemoryStream();
+    destinationWorkbook.SaveAs(ms3);
+    ms3.Position = 0;
+    // Save the MemoryStream into FileStreamResult
+    FileStreamResult fileStreamResult = new FileStreamResult(ms3, "Application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+
+    fileStreamResult.FileDownloadName = "Export.xlsx";
+    //Dispose the instance of ExcelEngine
+    excelEngine.Dispose();
+    //Dispose the streams.
+    ms1.Dispose();
+    ms2.Dispose();
+    // return the file
+    return fileStreamResult;
+}
+
+```
+
 ## Rotate a header text in the exported grid
 
 The Grid provides support to customize the column header styles, including changing text orientation, font color, and other visual aspects, in the exported Excel file on the server-side. This feature is particularly useful when you want to enhance the appearance of the exported data and create a unique representation of the Grid in the Excel document.
