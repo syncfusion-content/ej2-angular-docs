@@ -5,22 +5,31 @@ import { DiagramComponent, Diagram, NodeModel } from '@syncfusion/ej2-angular-di
 
 @Component({
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="600" [nodes]="nodes" 
-    (created)='create($event)'>
-</ejs-diagram>`,
+    template: `
+    <button (click)="addChild()">addChild</button>
+    <button (click)="removeChild()">removeChild</button>
+    <ejs-diagram #diagram id="diagram" width="100%" height="600" [nodes]="nodes" >
+    </ejs-diagram>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
     public nodes?: NodeModel[];
-    // public group?:NodeFilter;
 
-    public create(args: Object): void {
-        this.diagram.fitToPage();
-        this.diagram.addChildToGroup('group1', 'node3');
-        this.diagram.removeChildFromGroup('group1', 'node3');
+    addChild() {
+        (this.diagram as any).addChildToGroup(
+          (this.diagram as any).nodes[2],
+          'node3'
+        );
     }
+    removeChild() {
+        (this.diagram as any).removeChildFromGroup(
+          (this.diagram as any).nodes[2],
+          'node3'
+        );
+    }
+  
     ngOnInit(): void {
 
         this.nodes = [
@@ -37,5 +46,3 @@ export class AppComponent {
 
     }
 }
-
-

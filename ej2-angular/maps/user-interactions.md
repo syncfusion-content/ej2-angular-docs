@@ -500,6 +500,34 @@ To enable the selection for markers in Maps, set the [`selectionSettings`](https
   
 {% previewsample "page.domainurl/samples/maps/default-map/datetime-cs93" %}
 
+### Enable selection for polygons
+
+When the [enable](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel/#enable) property of [selectionSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingsModel/#selectionsettings) is set to **true**, the polygon shapes can be selected via user interaction. The following properties are available in `selectionSettings` to customize the polygon shape when it is selected.
+
+* [enableMultiSelect](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel/#enablemultiselect) - It is used to enable multiple selection of polygon shapes.
+* [fill](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel/#fill) - It is used to change the color of the selected polygon shape.
+* [opacity](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel/#opacity) - It is used to change the opacity of the selected polygon shape.
+* [border](https://ej2.syncfusion.com/angular/documentation/api/maps/selectionSettingsModel/#border) - This property is used to change the color, width, and opacity of the border of the selected polygon shape.
+
+>To use the polygon feature, the **Polygon** module must be injected, as described in [this link](polygon).
+
+The following example shows how to select the polygon shape in the geometry map.
+
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/maps/default-map/polygon-cs2/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/maps/default-map/polygon-cs2/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/maps/default-map/polygon-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/maps/default-map/polygon-cs2" %}
+
 ### Public method for the shape selection
 
 The [`shapeSelection`](https://ej2.syncfusion.com/angular/documentation/api/maps/#shapeselection) method can be used to select each shape in the Maps.
@@ -624,6 +652,32 @@ To enable the highlight for markers in Maps, set the [`highlightSettings`](https
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/maps/default-map/datetime-cs99" %}
+
+### Enable highlight for polygons
+
+The polygon shapes can be highlighted via user interaction if the [enable](https://ej2.syncfusion.com/angular/documentation/api/maps/highlightSettingsModel/#enable) property of [highlightSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/polygonSettingsModel/#highlightsettings) is set to **true**. The following properties are available in `highlightSettings` to customize the polygon shape when it is highlighted.
+
+* [fill](https://ej2.syncfusion.com/angular/documentation/api/maps/highlightSettingsModel/#fill) - It is used to change the color of the highlighted polygon shape.
+* [opacity](https://ej2.syncfusion.com/angular/documentation/api/maps/highlightSettingsModel/#opacity) - It is used to change the opacity of the highlighted polygon shape.
+* [border](https://ej2.syncfusion.com/angular/documentation/api/maps/highlightSettingsModel/#border) - This property is used to change the color, width, and opacity of the border of the highlighted polygon shape.
+
+>To use the polygon feature, the **Polygon** module must be injected, as described in [this link](polygon).
+
+The following example shows how to highlight a polygon shape on a geometry map.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/maps/default-map/polygon-cs3/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/maps/default-map/polygon-cs3/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/maps/default-map/polygon-cs3/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/maps/default-map/polygon-cs3" %}
 
 ## Tooltip
 

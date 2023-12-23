@@ -263,27 +263,70 @@ The following code illustrates how to add methods to UML nodes in diagram.
 ```ts
 let node = diagram.selectedItems.nodes[0];
 let methods = { name: 'getHistory', style: { color: "red", }, parameters: [{ name: 'Date', style: {} }], type: 'History' };
-diagram.addChildToUmlNode(node, methods, 'Methods');
+diagram.addChildToUmlNode(node, methods, 'Method');
 
 ```
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/umldiagramshapes/umlmethod-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/diagram/umldiagramshapes/umlmethod-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/umldiagramshapes/umlmethod-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlmethod-cs1" %}
+
 
 The following code illustrates how to add attributes to UML nodes in diagram.
 
 ```ts
 let node = diagram.selectedItems.nodes[0];
 let attributes = { name: 'accepted', type: 'Date', style: { color: "red", } };
-diagram.addChildToUmlNode(node, attributes, "Attributes");
+diagram.addChildToUmlNode(node, attributes, "Attribute");
 
 ```
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/umldiagramshapes/umlattribute-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/diagram/umldiagramshapes/umlattribute-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/umldiagramshapes/umlattribute-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlattribute-cs1" %}
 
 The following code illustrates how to add members to UML nodes in diagram.
 
 ```ts
 let node = diagram.selectedItems.nodes[0];
 let members = { name: 'Checking new', style: { color: "red", }, isSeparator: true };
-diagram.addChildToUmlNode(node, members, "Members");
+diagram.addChildToUmlNode(node, members, "Member");
 
 ```
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/umldiagramshapes/umlmember-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/diagram/umldiagramshapes/umlmember-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/umldiagramshapes/umlmember-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlmember-cs1" %}
+
 
 ### Adding UML child through user interaction
 
@@ -317,7 +360,7 @@ You can edit the name, attributes, and methods of the class diagram shapes just 
 
 The following image illustrates how the text editor looks in an edit mode.
 
-![Editing Class Diagram](images/ClassEdit.png)
+![Editing Class Diagram](images/Editing.gif)
 
 ## UML Activity diagram
 
@@ -367,9 +410,9 @@ The following code illustrates how to create a UmlActivity shapes.
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/UmlActivity-cs1" %}
 
-### UmlActivity connector
+### Uml Activity connector
 
-To create an UmlActivity connector, define the type as "UmlActivity" and flow as either "Exception" or "Control" or "Object".
+To create an Uml Activity connector, define the type as "UmlActivity" and flow as either "Exception" or "Control" or "Object".
 
 The following code illustrates how to create a UmlActivity connector.
 
