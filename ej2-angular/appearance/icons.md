@@ -196,4 +196,4 @@ The complete package of Essential JS 2 icons is listed below. The corresponding 
 
 ### Fluent
 
-<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/fluent/demo.html" style="height:1000px;"></iframe>
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/fluent/demo.html" style="height:1000px;width:100%;"></iframe>

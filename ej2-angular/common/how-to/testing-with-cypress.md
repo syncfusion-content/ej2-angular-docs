@@ -27,7 +27,7 @@ To integrate Cypress with Angular, follow the below steps.
 2.Once create the application, run the below command to install the Cypress.
 
 {% tabs %}
-{% highlight js tabtitle="protractor.conf.js" %}
+{% highlight js tabtitle="CMD" %}
 
 ng add @cypress/schematic
 
@@ -102,21 +102,16 @@ The following steps explain how to test the Angular DataGrid component in [Cypre
 {% tabs %}
 {% highlight ts tabtitle="app.component.cy.ts" %}
 
-import { GridModule, PagerModule } from '@syncfusion/ej2-angular-grids';
-import { MountConfig } from "cypress/angular"
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
-    const config: MountConfig<AppComponent> = {
-        imports: [GridModule, PagerModule], providers: [], declarations: [AppComponent]
-    }
     it('should contain syncfusion Grid sample', () => {
-        cy.mount(AppComponent, config)
+        cy.mount(AppComponent)
         cy.get('.e-grid').should('be.visible')
     })
 
     it('should contain Grid rows', () => {
-        cy.mount(AppComponent, config)
+        cy.mount(AppComponent)
         cy.get('.e-grid').find('.e-row').should('have.length', 3)
     })
 })
