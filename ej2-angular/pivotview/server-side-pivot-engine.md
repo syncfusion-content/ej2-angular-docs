@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.width = '100%';
     this.dataSourceSettings = {
-      url: 'http://localhost:61379/api/pivot/post',
+      url: 'https://localhost:44350/api/pivot/post',
       mode: 'Server',
     };
   }
@@ -78,7 +78,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.width = '100%';
     this.dataSourceSettings = {
-      url: 'http://localhost:61379/api/pivot/post',
+      url: 'https://localhost:44350/api/pivot/post',
       mode: 'Server',
       rows: [{
         name: 'ProductID', caption: 'Product ID'
@@ -183,7 +183,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```javascript
     this.dataSourceSettings = {
-      url: 'http://localhost:61379/api/pivot/post',
+      url: 'https://localhost:44350/api/pivot/post',
       mode: 'Server',
       rows: [{
         name: 'ProductID', caption: 'Product ID'
@@ -261,7 +261,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```javascript
     this.dataSourceSettings = {
-      url: 'http://localhost:61379/api/pivot/post',
+      url: 'https://localhost:44350/api/pivot/post',
       mode: 'Server',
       type: 'JSON',
       rows: [{
@@ -378,7 +378,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```javascript
     this.dataSourceSettings = {
-      url: 'http://localhost:61379/api/pivot/post',
+      url: 'https://localhost:44350/api/pivot/post',
       mode: 'Server',
       type: 'CSV',
       rows: [{
@@ -480,7 +480,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```javascript
     this.dataSourceSettings = {
-      url: 'http://localhost:61379/api/pivot/post',
+      url: 'https://localhost:44350/api/pivot/post',
       mode: 'Server',
       rows: [{
         name: 'ProductID', caption: 'Product ID'
@@ -562,7 +562,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```javascript
     this.dataSourceSettings = {
-      url: 'http://localhost:61379/api/pivot/post',
+      url: 'https://localhost:44350/api/pivot/post',
       mode: 'Server',
       rows: [{
         name: 'CustomerID', caption: 'Customer ID'
@@ -655,7 +655,7 @@ Finally set the appropriate report to the Pivot Table sample based on the above 
 
 ```javascript
     this.dataSourceSettings = {
-      url: 'http://localhost:61379/api/pivot/post',
+      url: 'https://localhost:44350/api/pivot/post',
       mode: 'Server',
       rows: [{
         name: 'CustomerID', caption: 'Customer ID'
