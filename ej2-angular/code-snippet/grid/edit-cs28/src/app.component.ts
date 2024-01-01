@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
+import { data,  columnDataType } from './datasource';
 import { EditSettingsModel,  GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     public editSettings?: EditSettingsModel;
     public data?: object[];
     @ViewChild('grid')
-    public grid: any;
+    public grid?: GridComponent;
     public orderIDRules?: object;
     public customerIDRules?: object;
     public freightIDRules?: object;
@@ -48,28 +48,28 @@ export class AppComponent implements OnInit {
         this.customerIDRules = { required: true, minLength: 5 };
         this.freightIDRules={required: true, min: 1, max:1000 }
     }
-    clickEvents(args:any){
+    clickEvents(args:MouseEvent){
         
-        if(args.target.id==='edit')
+        if((args.target as HTMLElement).id==='edit')
         {
-        this.grid.startEdit();
+          (this.grid as GridComponent).startEdit();
         }
-        else if(args.target.id==='add')
+        else if((args.target as HTMLElement).id==='add')
         {
-        this.grid.addRecord({ "OrderID": Math.floor(Math.random() * 100000), "CustomerID": this.generateCustomerId(), 
-        "ShipCity": this.generateShipCity(), "ShipName": this.generateShipName()  });
+          (this.grid as GridComponent).addRecord({ "OrderID": Math.floor(Math.random() * 100000), "CustomerID": this.generateCustomerId(), 
+          "ShipCity": this.generateShipCity(), "ShipName": this.generateShipName()  });
         }
-        else if(args.target.id==='delete'){
+        else if((args.target as HTMLElement).id==='delete'){
 
-        this.grid.deleteRecord();
+           (this.grid as GridComponent).deleteRecord();
         }
-        else if(args.target.id==='updaterow')
+        else if((args.target as HTMLElement).id==='updaterow')
         {
-            this.grid.updateRow(0, {OrderID:10248,CustomerID: 'RTER', ShipCity: 'America', ShipName: 'Hanari'});
+            (this.grid as GridComponent).updateRow(0, {OrderID:10248,CustomerID: 'RTER', ShipCity: 'America', ShipName: 'Hanari'});
         }
         else
         {
-            this.grid.setCellValue((this.grid.currentViewData[0] as any).OrderID,'CustomerID','Value Changed'); 
+            (this.grid as GridComponent).setCellValue(((this.grid as GridComponent).currentViewData[0] as  columnDataType).OrderID,'CustomerID','Value Changed'); 
         }
     }
     generateCustomerId(): string {

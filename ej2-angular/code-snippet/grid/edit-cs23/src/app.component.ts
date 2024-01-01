@@ -33,9 +33,9 @@ export class AppComponent implements OnInit {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-        (this as any).orderIDRules = { required: true };
+        this.orderIDRules = { required: true };
         this.freightrules =  { min:1, max:1000 };
-        (this as any).customerIDRules = { required: true };
+        this.customerIDRules = { required: true };
 
     }
 }

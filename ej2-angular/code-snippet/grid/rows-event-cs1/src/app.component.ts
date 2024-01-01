@@ -4,7 +4,7 @@ import { data } from './datasource';
 
 @Component({
   selector: 'app-root',
-  template: `<ejs-grid #grid [dataSource]="data" (dataBound)="customizeRows($event)">
+  template: `<ejs-grid #grid [dataSource]="data" (dataBound)="customizeRows()">
                 <e-columns>
                     <e-column field="OrderID" headerText="Order ID" textAlign="Right"
                     width="100"></e-column>
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.data = data;
   }
-  public customizeRows(args: any) {
-    ((this.grid as any).getRowByIndex(2) as any).style.background = 'rgb(193, 228, 234)';
+  public customizeRows() {
+    ((this.grid as GridComponent).getRowByIndex(2) as HTMLElement).style.background = 'rgb(193, 228, 234)';
   }
 }

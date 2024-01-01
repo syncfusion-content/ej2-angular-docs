@@ -46,7 +46,6 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = data;
         this.orderIDRules = { required: true };
-        // this customerIDRules = { required: true, minLength: 5 };
         this.freightRules = { required: true, min: 1, max: 1000 };
         this.editSettings = {
             allowEditing: true,

@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
     this.selectionOptions = { type: 'Multiple' };
   }
   click() {
-    this.selectedRowIndexes = (this as any).grid.getSelectedRowIndexes();
+    this.selectedRowIndexes = (this.grid as GridComponent).getSelectedRowIndexes();
     this.showMessage = this.selectedRowIndexes.length > 0;
   }
 }

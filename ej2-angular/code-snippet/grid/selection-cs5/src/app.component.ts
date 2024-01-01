@@ -1,8 +1,8 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { data } from './datasource';
-import { GridComponent, SelectionSettingsModel, FilterSettingsModel, PageSettingsModel, ToolbarItems, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { data ,Order} from './datasource';
+import { GridComponent, SelectionSettingsModel, FilterSettingsModel, PageSettingsModel, ToolbarItems, EditSettingsModel, RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -45,11 +45,11 @@ export class AppComponent implements OnInit {
         this.pageOptions = { pageSize: 5 };
         this.filterOptions = { type: 'CheckBox' };
         for (let i: number = 0; i < data.length; i++) {
-            (data as any)[i as number]['List'] = i + 1;
+            (data as Order[])[i as number]['List'] = i + 1;
         }
     }
-    public rowDataBound(args: any): void {
-        (args as any).isSelectable = (args as any).data.List % 5 === 0;
+    public rowDataBound(args: RowDataBoundEventArgs): void {
+        args.isSelectable = (args.data as Order).List % 5 === 0;
     }
 }
 

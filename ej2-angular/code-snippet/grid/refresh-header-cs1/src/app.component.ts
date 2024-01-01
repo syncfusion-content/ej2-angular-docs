@@ -8,8 +8,7 @@ import { data } from './datasource';
             <div class="control-section" style='padding:20px 0px 0px 0px'>
               <ejs-grid #grid [dataSource]="data">
                 <e-columns>
-                  <e-column field="OrderID" headerText="Order ID" 
-                  (dataBound)='onDataBound($event)'></e-column>
+                  <e-column field="OrderID" headerText="Order ID"></e-column>
                   <e-column field="CustomerID" headerText="Customer ID"></e-column>
                   <e-column field="OrderDate" headerText="Order Date" format="yMd">
                   </e-column>
@@ -28,10 +27,8 @@ export class AppComponent implements OnInit {
     this.data = data;
   }
   public refreshHeader(): void {
-    const column = (this.grid as any).getColumnByIndex(1);
+    const column = (this.grid as GridComponent).getColumnByIndex(1);
     column.headerText = 'New Header Text'; // update the header text of the column object
-    (this.grid as any).refreshHeader(); // refresh the grid header
-  }
-  public onDataBound(args: any): void {
+    (this.grid as GridComponent).refreshHeader(); // refresh the grid header
   }
 }

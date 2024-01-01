@@ -1,18 +1,27 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, RowRenderingDirection } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
     selector: 'app-root',
-    template: `<div class="e-adaptive-demo e-bigger">
+    template: `
+
+        <div style="display: flex; padding: 0px 0px 20px 200px">
+            <label style="padding: 30px 17px 0 0;"> Select row rendering mode :</label>
+            <ejs-dropdownlist #dropdown style="padding: 26px 0 0 0" index="0" width="150" 
+            [dataSource]="dropDownData"  (change)="changeAlignment($event)">
+            </ejs-dropdownlist>
+        </div>
+        <div class="e-adaptive-demo e-bigger">
                     <div class="e-mobile-layout">
                         <div class="e-mobile-content">
                            <ejs-grid #adaptive id="adaptivebrowser" [dataSource]='data' enableAdaptiveUI='true' [rowRenderingMode]="rowMode"
                     height='100%' allowPaging='true' allowFiltering='true'
                     allowSorting='true' [editSettings]='editSettings'
-                    [filterSettings]='filterSettings' [toolbar]='toolbar' (load)='onLoad($event)'>
+                    [filterSettings]='filterSettings' [toolbar]='toolbar' (load)='onLoad()'>
                     <e-columns>
                         <e-column field='SNO' headerText='S NO' width='150' isPrimaryKey='true' [validationRules]='orderidrules'>
                         </e-column>
@@ -56,6 +65,10 @@ export class AppComponent implements OnInit {
     public menuFilter?: Object;
     public checkboxFilter?: Object;
     public rowMode?: string;
+    public dropDownData: Object[] = [
+        { text: 'Vertical', value: 'Vertical' },
+        { text: 'Horizontal', value: 'Horizontal' },
+    ];
 
     ngOnInit(): void {
         this.data = data;
@@ -64,7 +77,6 @@ export class AppComponent implements OnInit {
         this.orderidrules = { required: true, number: true };
         this.customeridrules = { required: true };
         this.filterSettings = { type: 'Excel' };
-        this.rowMode = 'Vertical';
         this.menuFilter = {
             type: 'Menu'
         };
@@ -73,8 +85,12 @@ export class AppComponent implements OnInit {
         };
     }
 
-    public onLoad(args: any): void {
-        (this.grid as any).adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
+    public changeAlignment(args: ChangeEventArgs): void {
+        (this.grid as GridComponent).rowRenderingMode = (args.value as RowRenderingDirection);
+    }
+
+    public onLoad(): void {
+        (this.grid as GridComponent).adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
     }
 }
 

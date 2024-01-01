@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { EditSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
   public editSettings?: EditSettingsModel;
   public selectOptions?: Object;
   @ViewChild('grid')
-  public grid: any;
+  public grid?: GridComponent;
   public orderIDRules?: object;
   public customerIDRules?: object;
   public freightIDRules?: object;
@@ -48,10 +48,10 @@ export class AppComponent implements OnInit {
     this.customerIDRules = { required: true, minLength: 5 };
     this.freightIDRules={required: true, min: 1, max:1000 }
   }
-  clickDelete(args:any) {
-    const selectedRows: any[] = this.grid.getSelectedRows();
-    selectedRows.forEach((row: HTMLTableRowElement) => {
-      this.grid.deleteRow(row);
+  clickDelete(args:MouseEvent) {
+    const selectedRows: Element[] = (this.grid as GridComponent).getSelectedRows();
+    selectedRows.forEach((row:Element) => {
+      (this.grid as GridComponent).deleteRow(row as HTMLTableRowElement);
     });
 }
 

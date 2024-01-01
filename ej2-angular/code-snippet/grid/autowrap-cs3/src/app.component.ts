@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { inventoryData } from './datasource';
-import { GridComponent, TextWrapSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, TextWrapSettingsModel, WrapMode } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
   selector: 'app-root',
@@ -42,8 +43,8 @@ export class AppComponent {
     { text: 'Both', value: 'Both' },
   ];
 
-  valueChange(args: any): void {
-    (this.grid as any).textWrapSettings.wrapMode = (args as any).value;
+  valueChange(args: ChangeEventArgs): void {
+    (this.grid as GridComponent).textWrapSettings.wrapMode = (args.value as WrapMode);
   }
 
 }

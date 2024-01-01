@@ -1,6 +1,3 @@
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { ganttData } from './data';
 import { Gantt } from '@syncfusion/ej2-gantt';
@@ -31,8 +28,10 @@ export class AppComponent{
             child: 'subtasks'
         };
         this.editSettings= {
-            allowEditing: true
+            allowEditing: true,
+            allowTaskbarEditing: true
         }
+        
     }
     }
 

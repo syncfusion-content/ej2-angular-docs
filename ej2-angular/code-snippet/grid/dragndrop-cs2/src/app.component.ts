@@ -1,3 +1,4 @@
+import { GridComponent, RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 import { Component, ViewChild } from '@angular/core';
 
@@ -29,20 +30,20 @@ export class AppComponent {
     public data: Object[] = [];
     public selectOptions?: Object;
     public rowDropOptions?: object;
-    @ViewChild('grid') public grid: any;
+    @ViewChild('grid') public grid?: GridComponent;
 
     ngOnInit(): void {
         this.data = data;
         this.selectOptions = { type: 'Multiple' };
         this.rowDropOptions = { targetID: 'Grid' };
     }
-    rowDrop(args:any) {
+    rowDrop(args:RowDragEventArgs) {
         args.cancel = true;
         var value = [];
-        for (var r = 0; r < args.rows.length; r++) {
-            value.push(args.fromIndex + r);
+        for (var r = 0; r < (args.rows as Element[]).length; r++) {
+            value.push((args.fromIndex as number) + r);
         }
-        this.grid.reorderRows(value, args.dropIndex);
+        (this.grid as GridComponent).reorderRows(value, (args.dropIndex as number));
     }
 }
 

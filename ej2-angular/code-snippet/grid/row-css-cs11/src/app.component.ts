@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
+import { data , columnDataType} from './datasource';
 import { RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
@@ -27,12 +27,12 @@ export class AppComponent implements OnInit {
     }
     rowDataBound(args: RowDataBoundEventArgs) {
         const Freight = 'Freight';
-        if ((args as any).data[Freight] < 30) {
-            (args as any).row.classList.add('below-30');
-        } else if ((args as any).data[Freight] >= 30 && (args as any).data[Freight] < 80) {
-            (args as any).row.classList.add('below-80');
+        if ((args.data as columnDataType)[Freight] < 30) {
+            (args.row as Element).classList.add('below-30');
+        } else if ((args.data as columnDataType)[Freight] >= 30 && ((args.data as columnDataType)[Freight] < 80)) {
+            (args.row as Element).classList.add('below-80');
         } else {
-            (args as any).row.classList.add('above-80');
+            (args.row as Element).classList.add('above-80');
         }
     }
 }

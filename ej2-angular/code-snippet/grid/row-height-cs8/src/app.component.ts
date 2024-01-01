@@ -1,7 +1,5 @@
-
-
 import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
+import { data , columnDataType} from './datasource';
 import { RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
@@ -28,8 +26,8 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
     public rowDataBound(args: RowDataBoundEventArgs) {
-        if ((args as any).data['OrderID'] === 10249) {
-            (args as any).rowHeight = 90;
+        if ((args.data as columnDataType)['OrderID'] === 10249) {
+            args.rowHeight = 90;
         }
     }
 }

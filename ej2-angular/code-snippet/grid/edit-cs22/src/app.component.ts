@@ -1,5 +1,3 @@
-
-
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { EditSettingsModel, ToolbarItems, CellEditArgs } from '@syncfusion/ej2-angular-grids';
@@ -33,16 +31,13 @@ export class AppComponent implements OnInit {
         this.data = data;
         this.editSettings = { allowAdding: true, allowEditing: true,allowDeleting:true, mode: 'Batch' };
         this.toolbar = ['Add','Delete', 'Update', 'Cancel'];
-        (this as any).orderIDRules = { required: true };
-        (this as any).customerIDRules = { required: true };
+        this.orderIDRules = { required: true };
+        this.customerIDRules = { required: true };
         this.freightrules =  { min:1, max:1000 };
     }
     cellEdit(args: CellEditArgs) {
-        if ((args as any).value === 'France') {
-            (args as any).cancel = true;
+        if (args.value === 'France') {
+            args.cancel = true;
         }
     }
 }
-
-
-

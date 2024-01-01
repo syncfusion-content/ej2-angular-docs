@@ -1,5 +1,3 @@
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { EditSettingsModel, ToolbarItems, GridComponent, Column, SaveEventArgs, EditEventArgs } from '@syncfusion/ej2-angular-grids';
@@ -38,8 +36,8 @@ export class AppComponent implements OnInit {
     }
 
     actionBegin(args: EditEventArgs) {
-        if ((args as any).requestType === 'beginEdit') {
-            for (const cols of (this.grid as any).columns) {
+        if (args.requestType === 'beginEdit') {
+            for (const cols of (this.grid as GridComponent).columns) {
                 if ((cols as Column).field === 'CustomerID') {
                     (cols as Column).visible = true;
                 } else if ((cols as Column).field === 'ShipCountry') {
@@ -47,15 +45,15 @@ export class AppComponent implements OnInit {
                 }
             }
         }
-        else if((args as any).requestType === 'add'){
-            for (const cols of (this.grid as any).columns) {
+        else if(args.requestType === 'add'){
+            for (const cols of (this.grid as GridComponent).columns) {
                 if ((cols as Column).field === 'CustomerID') {
                     (cols as Column).visible = true;
                 } 
             }
         }
-        else if ((args as any).requestType === 'save') {
-            for (const cols of (this.grid as any).columns) {
+        else if (args.requestType === 'save') {
+            for (const cols of (this.grid as GridComponent).columns) {
                 if ((cols as Column).field === 'CustomerID') {
                     (cols as Column).visible = false;
                 } else if ((cols as Column).field === 'ShipCountry') {

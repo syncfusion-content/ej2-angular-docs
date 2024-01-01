@@ -1,7 +1,5 @@
-
-
 import { Component, OnInit } from '@angular/core';
-import { employeeData, data } from './datasource';
+import { employeeData, data,columnDataType } from './datasource';
 import { DetailDataBoundEventArgs, Grid } from '@syncfusion/ej2-angular-grids';
 
 @Component({
@@ -30,16 +28,16 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = employeeData;
     }
-    detailDataBound(e: DetailDataBoundEventArgs | any) {
+    detailDataBound(e: DetailDataBoundEventArgs ) {
         let detail = new Grid({
-            dataSource: data.filter((item: Object) => (item as any)['EmployeeID'] === e.data['EmployeeID']),
+            dataSource: data.filter((item: Object) => (item as columnDataType)['EmployeeID'] === (e.data as columnDataType)['EmployeeID']),
             columns: [
                 { field: 'OrderID', headerText: 'Order ID', width: 110 },
                 { field: 'CustomerID', headerText: 'Customer Name', width: 140 },
                 { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
             ]
         });
-        detail.appendTo(e.detailElement.querySelector('.custom-grid'));
+        detail.appendTo((e.detailElement as HTMLElement).querySelector('.custom-grid') as HTMLElement);
     }
 }
 

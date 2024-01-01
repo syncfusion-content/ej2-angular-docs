@@ -1,9 +1,13 @@
 import { Component, OnInit, ViewChild, Renderer2 } from '@angular/core';
-import { data } from './datasource';
+import { data ,Order} from './datasource';
 import {
   GridComponent,
   SelectionSettingsModel,
   PageSettingsModel,
+  RowSelectingEventArgs,
+  RowSelectEventArgs,
+  RowDeselectEventArgs,
+  RowDeselectingEventArgs,
 } from '@syncfusion/ej2-angular-grids';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
@@ -50,24 +54,24 @@ export class AppComponent implements OnInit {
     this.selectionOptions = { mode: 'Row', type: 'Multiple' };
     this.pageOptions = { pageSize: 5 };
   }
-  rowselecting(args: any): void {
+  rowselecting(args: RowSelectingEventArgs): void {
     this.message = `Trigger rowSelecting`;
-    if (args.data.CustomerID == 'VINET')
-      (args as any).cancel = true;
+    if ((args.data as Order).CustomerID == 'VINET')
+      args.cancel = true;
   }
-  rowSelected(args: any): void {
+  rowSelected(args: RowSelectEventArgs): void {
     this.message = ` Trigger rowSelected`;
-    if (args.data.Freight > '10' || args.data.Freight <= '140')
-      args.row.style.backgroundColor = 'rgb(96, 158, 101)'; 
+    if ((args.data as Order).Freight > 10 || (args.data as Order).Freight <= 140)
+      (args.row as HTMLElement).style.backgroundColor = 'rgb(96, 158, 101)'; 
   }
-  rowDeselected(args: any): void {
+  rowDeselected(args: RowDeselectEventArgs ): void {
     this.message = `Trigger rowDeselected`;
-    if (args.data.Freight <= '10')
-      args.row.style.backgroundColor = 'red';
+    if ((args.data as Order).Freight <= 10)
+    (args.row as HTMLElement).style.backgroundColor = 'red';
   }
-  rowDeselecting(args: any): void {
+  rowDeselecting(args: RowDeselectingEventArgs): void {
     this.message = `Trigger rowDeselecting`;
-    if (args.data.Freight > '140')
-      args.row.style.backgroundColor = 'yellow';
+    if ((args.data as Order).Freight > 140)
+    (args.row as HTMLElement).style.backgroundColor = 'yellow';
   }
 }

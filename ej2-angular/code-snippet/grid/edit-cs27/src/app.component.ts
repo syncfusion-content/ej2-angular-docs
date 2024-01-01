@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { EditEventArgs, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -38,15 +38,16 @@ export class AppComponent implements OnInit {
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
         this.orderIDRules = { required: true };
-        this.roleIDRules = { required: true, minLength: 8 };
+        this.roleIDRules = { required: true, minLength: 5 };
         this.customerNameRules={required: true }
     }
 
-    actionBegin(args:any) {
-        if (args.requestType == 'beginEdit' && args.rowData['Role'] == 'Admin') {
+    actionBegin(args:EditEventArgs) {
+        debugger;
+        if (args.requestType == 'beginEdit' && args.rowData as { Role?: string } ['Role'] == 'Admin') {
            args.cancel = true;  
         }
-        else if (args.requestType == 'delete' && args.data[0]['Role'] == 'Admin') {
+        else if (args.requestType == 'delete' && (args as any).data[0].Role == 'Admin') {
                 args.cancel = true;
         }
         else if (args.requestType == 'add') {
@@ -55,8 +56,8 @@ export class AppComponent implements OnInit {
             }
         }
     }
-    btnClick(args:any) {
-        args.target.innerText == 'GRID IS ADDABLE' ? (args.target.innerText = 'Grid is Not Addable') : (args.target.innerText = 'Grid is Addable');
+    btnClick(args:MouseEvent) {
+        (args.target as HTMLElement).innerText == 'GRID IS ADDABLE' ? ((args.target as HTMLElement).innerText = 'Grid is Not Addable') : ((args.target as HTMLElement).innerText = 'Grid is Addable');
         this.isAddable = !this.isAddable;
     }
 }

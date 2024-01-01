@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
   selector: 'app-root',
@@ -44,17 +45,17 @@ export class AppComponent {
   ];
   public field?: Object = { text: 'text', value: 'value' };
   @ViewChild('dropdown') public dropdown?: DropDownListComponent;
-  @ViewChild('textbox') public textbox?: any;
+  @ViewChild('textbox') public textbox?: TextBoxComponent;
   @ViewChild('grid')
-    public grid?: GridComponent;
+  public grid?: GridComponent;
 
   public ChangeHeaderText(): void {
-    if (this.textbox.element.value.trim() !== '') {
-      const column: any = (this.grid as any).getColumnByField(
-        (this.dropdown  as any).value
+    if ((this.textbox as TextBoxComponent).element.value.trim() !== '') {
+      const column = (this.grid as GridComponent).getColumnByField(
+        (((this.dropdown as DropDownListComponent).value as string))
       );
-      column.headerText = this.textbox.element.value;
-      (this.grid as any).refreshHeader();
+      column.headerText = (this.textbox as TextBoxComponent).element.value;
+      (this.grid as GridComponent).refreshHeader();
     }
   }
 

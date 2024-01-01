@@ -48,7 +48,7 @@ export class AppComponent implements OnInit {
     this.freightrules = { min: 1, max: 1000 };
   }
   toggleShowDeleteConfirmDialog(): void {
-    (this as any).grid.editSettings.showDeleteConfirmDialog = this.enableShowDeleteConfirmDialog;
+    (this.grid as GridComponent).editSettings.showDeleteConfirmDialog = this.enableShowDeleteConfirmDialog;
   }
   
 }

@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
 
     ChangeEnLocale() {
         setCulture('en-US'); // Change the Grid culture to English locale
-        setCurrencyCode('USD'); // Change the currency code based on Americal English culture
+        setCurrencyCode('USD'); // Change the currency code based on American English culture
     }
 }
 

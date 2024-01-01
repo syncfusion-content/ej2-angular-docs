@@ -1,10 +1,28 @@
 import { Component, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, NewRowPosition } from '@syncfusion/ej2-angular-grids';
 import { data} from './datasource';
+import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app.component.html',
+    template: `
+        <div style="display: flex">
+            <label style="padding: 30px 17px 0 0;"> Select new row position:</label>
+            <ejs-dropdownlist  style="padding: 26px 0 0 0" index="0" width="100" 
+            [dataSource]="positionData" (change)="changePosition($event)">
+            </ejs-dropdownlist>
+        </div>
+        <div style="padding-top:20px">
+            <ejs-grid #batchgrid id='Batchgrid' [dataSource]='data' allowPaging='true' [editSettings]="editSettings" [pageSettings]='pageSettings' [toolbar]='toolbar' >
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey='true' [validationRules]='orderidrules'></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width='120' [validationRules]='customeridrules'></e-column>
+                    <e-column field='Freight' headerText='Freight' width='120' format='C2' textAlign='Right' editType='numericedit' [validationRules]='freightrules'></e-column>
+                    <e-column field='OrderDate' headerText='Order Date' width='130' format='yMd' editType='datepickeredit' textAlign='Right'></e-column>
+                    <e-column field='ShipCountry' headerText='Ship Country' width='150' editType='dropdownedit' [edit]='editparams'></e-column>
+                </e-columns>
+            </ejs-grid>
+        </div>`
 })
 export class AppComponent {
 
@@ -18,10 +36,9 @@ export class AppComponent {
     public freightrules?: Object;
     public editparams?: Object;
     public pageSettings?: Object;
-    public positionData: Object[] = [
+    public positionData: { text: string; value: string }[] = [
         { text: 'Top', value: 'Top' },
         { text: 'Bottom', value: 'Bottom' },
-    
       ];
     public ngOnInit(): void {
         this.data = data;
@@ -33,7 +50,7 @@ export class AppComponent {
         this.editparams = { params: { popupHeight: '300px' } };
         this.pageSettings = {pageCount: 5};
     } 
-    public changePosition(args: any): void {
-       (this as any).grid.editSettings.newRowPosition = args.value;
+    public changePosition(args: ChangeEventArgs): void {
+       (this.grid as GridComponent).editSettings.newRowPosition= (args.value as NewRowPosition);
     }
 }

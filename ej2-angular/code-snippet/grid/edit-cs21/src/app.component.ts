@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { data, columnDataType } from './datasource';
+import { EditEventArgs, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -32,13 +32,13 @@ export class AppComponent implements OnInit {
         this.data = data;
         this.editSettings = { allowEditing: true, mode: 'Normal' };
         this.toolbar = ['Edit', 'Update', 'Cancel'];
-        (this as any).orderIDRules = { required: true };
-        (this as any).customerIDRules = { required: true };
+        this.orderIDRules = { required: true };
+        this.customerIDRules = { required: true };
         this.freightrules =  { min:1,max:1000 };
     }
-    actionBegin(args: any) {
-        if ((args as any).requestType === 'beginEdit' && (args as any).rowData.ShipCountry === 'France') {
-            (args as any).cancel = true;
+    actionBegin(args: EditEventArgs) {
+        if (args.requestType === 'beginEdit' && (args.rowData as columnDataType).ShipCountry === 'France') {
+            args.cancel = true;
         }
     }
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { EditEventArgs, GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
   selector: 'app-root',
@@ -56,26 +57,26 @@ export class AppComponent implements OnInit {
     this.data = data;
     this.initialPage = { pageSize: 10 }
   }
-  actioncomplete(args: any): void {
+  actioncomplete(args: EditEventArgs): void {
     if (args.requestType === "paging") {
       (this as any).grid.selectRow(this.mod);
     }
   }
-  valueChange(args: any): void {
+  valueChange(args: ChangeEventArgs): void {
     this.value = +args.value;
     this.mod = (this.value - 1) % 10;
     const page = Math.ceil(this.value / 10);
 
     if (page === 1) {
-      if ((this.grid as any).pagerModule.pagerObj.currentPage != 1) {
-        (this.grid as any).pagerModule.goToPage(1);
+      if ((this.grid as GridComponent).pagerModule.pagerObj.currentPage != 1) {
+        (this.grid as GridComponent).pagerModule.goToPage(1);
       }
-      (this.grid as any).selectRow(this.mod);
+      (this.grid as GridComponent).selectRow(this.mod);
     }
     else {
-      (this.grid as any).pagerModule.goToPage(page);
-      if ((this.grid as any).pagerModule.pagerObj.currentPage == page) {
-        (this.grid as any).selectRow(this.mod);
+      (this.grid as GridComponent).pagerModule.goToPage(page);
+      if ((this.grid as GridComponent).pagerModule.pagerObj.currentPage == page) {
+        (this.grid as GridComponent).selectRow(this.mod);
       }
     }
   }

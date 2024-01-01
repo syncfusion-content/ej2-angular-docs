@@ -5,17 +5,18 @@ import {
   SelectionSettingsModel,
   PageSettingsModel,
 } from '@syncfusion/ej2-angular-grids';
+import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
   selector: 'app-root',
   template: `
         <div>
           <label style="padding: 30px 17px 0 0">Enter the row index: </label>
-          <ejs-textbox #textbox required placeholder="Enter new header text" width="220">
+          <ejs-textbox #textbox required  width="220">
           </ejs-textbox>
         </div>
         <div style="padding: 10px 0 0px 150px">
-        <button ejs-button id="button" (click)="click()">Select Cell</button>
+        <button ejs-button id="button" (click)="click()">Select Row</button>
         </div>
         <div style="padding: 20px 0px 0px 0px">
           <ejs-grid #grid [dataSource]="data"  [selectionSettings]="selectionOptions" >
@@ -38,7 +39,7 @@ export class AppComponent implements OnInit {
   public pageOptions?: PageSettingsModel;
   public rowIndex?: number;
 
-  @ViewChild('textbox') public textbox?: any;
+  @ViewChild('textbox') public textbox?: TextBoxComponent;
   @ViewChild('grid') public grid?: GridComponent;
 
   ngOnInit(): void {
@@ -47,9 +48,9 @@ export class AppComponent implements OnInit {
     this.pageOptions = { pageSize: 5 };
   }
   click(): void {
-    this.rowIndex = parseInt(this.textbox.element.value, 10);
+    this.rowIndex = parseInt((this.textbox as TextBoxComponent).element.value, 10);
     if (!isNaN(this.rowIndex)) {
-      (this as any).grid.selectRow(this.rowIndex);
+      (this.grid as GridComponent).selectRow(this.rowIndex);
     }
   }
 }
