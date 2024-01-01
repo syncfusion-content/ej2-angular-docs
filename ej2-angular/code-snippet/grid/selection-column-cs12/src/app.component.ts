@@ -5,12 +5,13 @@ import {
   SelectionSettingsModel,
   PageSettingsModel,
 } from '@syncfusion/ej2-angular-grids';
+import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
   selector: 'app-root',
   template: `
         <div>
-          <label style="padding: 30px 17px 0 0">Enter the start column index: </label>
+          <label style="padding: 30px 17px 0 0">Enter the column index: </label>
           <ejs-textbox #textbox required width="120"></ejs-textbox>
         </div>
         <div style="padding: 10px 0 0px 13.5%">
@@ -35,7 +36,7 @@ export class AppComponent implements OnInit {
   public selectionOptions?: SelectionSettingsModel;
   public pageOptions?: PageSettingsModel;
   public startIndex?: number;
-  @ViewChild('textbox') public textbox?: any;
+  @ViewChild('textbox') public textbox?: TextBoxComponent;
   @ViewChild('grid') public grid?: GridComponent;
 
   ngOnInit(): void {
@@ -44,9 +45,9 @@ export class AppComponent implements OnInit {
     this.pageOptions = { pageSize: 5 };
   }
   click(): void {
-    this.startIndex = parseInt(this.textbox.element.value, 10);
+    this.startIndex = parseInt((this.textbox as TextBoxComponent).element.value, 10);
     if (!isNaN(this.startIndex)) {
-      (this as any).grid.selectionModule.selectColumnWithExisting(this.startIndex);
+      (this.grid as GridComponent).selectionModule.selectColumnWithExisting(this.startIndex);
     }
   }
 }

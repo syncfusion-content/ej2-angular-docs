@@ -135,9 +135,6 @@ In the below example, we will demonstrate how to dynamically change the height o
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/row-height-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.component.html" %}
-{% include code-snippet/grid/row-height-cs1/src/app.component.html %}
-{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/row-height-cs1/src/app.module.ts %}
 {% endhighlight %}

@@ -1,6 +1,6 @@
 import { Component, ViewChild,OnInit } from '@angular/core';
 import { GridComponent, RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
-import { orderDetails } from './datasource';
+import { orderDetails, columnDataType } from './datasource';
 
 @Component({
   selector: 'app-root',
@@ -42,28 +42,28 @@ export class AppComponent implements OnInit {
     this.data = orderDetails;
     this.selectOptions = { type: 'Multiple' };
   }
-  rowDragStartHelper(args: any): void {
+  rowDragStartHelper(args: RowDragEventArgs): void {
     this.message = `rowDragStartHelper event triggered`;
-    if (args.data[0].OrderID === 10248) {
+    if (((args.data as Object[])[0] as columnDataType).OrderID === 10248) {
       args.cancel = true;
     }
   }
-  rowDragStart(args: any) {
+  rowDragStart(args: RowDragEventArgs) {
     this.message = `rowDragStart event triggered`;
     args.cancel = true;
   }
   rowDrag(args:RowDragEventArgs): void {
     this.message = `rowDrag event triggered`;
-    (args as any).rows.forEach((row: HTMLElement) => {
+    (args.rows as Element[]).forEach((row: Element) => {
       row .classList.add('drag-limit');
     });
   }
-  rowDrop(args: any): void {
+  rowDrop(args: RowDragEventArgs): void {
     this.message = `rowDrop event triggered`;
     const value = [];
-    for (let r = 0; r < args.rows.length; r++) {
-      value.push(args.fromIndex + r);
+    for (let r = 0; r < (args.rows as Element[]).length; r++) {
+      value.push((args.fromIndex as number) + r);
     }
-    this.grid.reorderRows(value, args.dropIndex);
+    this.grid.reorderRows(value, (args.dropIndex as number));
   }
 }

@@ -4,6 +4,10 @@ import {
   GridComponent,
   SelectionSettingsModel,
   PageSettingsModel,
+  ColumnSelectEventArgs,
+  ColumnSelectingEventArgs,
+  ColumnDeselectEventArgs,
+  Column,
 } from '@syncfusion/ej2-angular-grids';
 
 @Component({
@@ -45,23 +49,23 @@ export class AppComponent implements OnInit {
     this.selectionOptions = { allowColumnSelection: true };
     this.pageOptions = { pageSize: 5 };
   }
-  columnSelected(args: any): void {
+  columnSelected(args: ColumnSelectEventArgs): void {
     this.message = `Trigger columnSelected`;
-    args.headerCell.style.backgroundColor = 'rgb(96, 158, 101)';
+    (args.headerCell as HTMLElement).style.backgroundColor = 'rgb(96, 158, 101)';
 
   }
-  columnselecting(args: any): void {
+  columnselecting(args: ColumnSelectingEventArgs ): void {
     this.message = `Trigger columnSelecting`;
-    if (args.column.field == "CustomerID")
-      (args as any).cancel = true;
+    if ((args.column as Column).field == "CustomerID")
+      args.cancel = true;
   }
-  columnDeselected(args: any): void {
+  columnDeselected(args: ColumnDeselectEventArgs ): void {
     this.message = `Trigger columnDeselected`;
-    args.headerCell.style.backgroundColor = 'rgb(245, 69, 69)';
+    (args.headerCell as HTMLElement).style.backgroundColor = 'rgb(245, 69, 69)';
   }
-  columnDeselecting(args: any): void {
+  columnDeselecting(args: ColumnDeselectEventArgs ): void {
     this.message = `Trigger columnDeselecting`;
-    if (args.column.field == "Freight")
-      (args as any).cancel = true;
+    if ((args.column as Column).field == "Freight")
+      args.cancel = true;
   }
 }

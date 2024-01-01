@@ -65,7 +65,7 @@ export class AppComponent implements OnInit {
     this.pageOptions = { pageSize: 5 };
   }
   selectColumns(columns: number[]): void {
-    (this as any).grid.selectionModule.clearColumnSelection();
-    (this as any).grid.selectionModule.selectColumns(columns);
+    (this.grid as GridComponent).selectionModule.clearColumnSelection();
+    (this.grid as GridComponent).selectionModule.selectColumns(columns);
   }
 }

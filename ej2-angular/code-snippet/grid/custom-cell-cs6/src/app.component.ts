@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { employeeData } from './datasource';
+import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
   selector: 'app-root',
@@ -79,13 +80,13 @@ export class AppComponent implements OnInit {
 
   public data?: object[];
   @ViewChild('grid') public grid?: GridComponent;
-  @ViewChild('textbox') public textbox?: any;
+  @ViewChild('textbox') public textbox?: TextBoxComponent;
 
   ngOnInit(): void {
     this.data = employeeData;
   }
   public btnClick(): void {
-    (this.grid as any).detailRowModule.expand(this.textbox.value); 
+    (this.grid as GridComponent).detailRowModule.expand((this.textbox as TextBoxComponent).value); 
     // Expand the detail row of the specified row index
   }
 }

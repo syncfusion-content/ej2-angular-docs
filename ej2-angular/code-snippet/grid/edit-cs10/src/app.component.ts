@@ -1,6 +1,6 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems,GridComponent } from '@syncfusion/ej2-angular-grids';
+import { EditSettingsModel, ToolbarItems,GridComponent, EditEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -34,8 +34,8 @@ export class AppComponent implements OnInit {
         this.customerIDrules = { required: true };
         this.freightrules =  { min:1,max:1000 };
     }
-    actionComplete(args: any) {
-      if ((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add') {
+    actionComplete(args: EditEventArgs) {
+      if (args.requestType === 'beginEdit' || args.requestType === 'add') {
         const dialogInstance = (args as any).dialog;
         dialogInstance.buttons = [
           {

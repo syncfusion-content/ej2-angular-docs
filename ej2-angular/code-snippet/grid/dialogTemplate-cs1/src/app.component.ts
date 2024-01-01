@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
     actionComplete(args: DialogEditEventArgs): void {
         if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
             (args.form as any).ej2_instances[0].rules = {};
-            // Set initail Focus
+            // Set initial Focus
             if (args.requestType === 'beginEdit') {
                 (args.form?.elements.namedItem('CustomerID') as HTMLInputElement).focus();
             }

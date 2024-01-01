@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
         this.pageOptions = { pageSize: 5 };
     }
     click(): void {
-        (this.grid as any).clearCellSelection();
+        (this.grid as GridComponent).clearCellSelection();
     }
 }
 

@@ -2,7 +2,7 @@ import { Component, ViewChild,OnInit } from '@angular/core';
 import { sampleGridData } from './datasource';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',
@@ -49,8 +49,8 @@ export class AppComponent implements OnInit {
   public selectionOptions?: Object;
   public srcDropOptions?: Object;
   public treegridData: object[] = [];
-  public gridEditSettings:any;
-  public treeGridEditSettings:any;
+  public gridEditSettings?:Object;
+  public treeGridEditSettings?:Object;
 
   ngOnInit(): void {
 
@@ -60,15 +60,15 @@ export class AppComponent implements OnInit {
     this.gridEditSettings = { allowDeleting: true };
     this.treeGridEditSettings = { allowAdding: true, allowEditing: true };
   }
-  onRowDrop(args:any) {
-    if (args.target.closest('.e-treegrid')) {
+  onRowDrop(args:RowDragEventArgs) {
+    if ((args.target as Element).closest('.e-treegrid')) {
       args.cancel = true;
-      var rowIndex = !isNullOrUndefined(args.target.closest('.e-row'))
-        ? args.target.closest('.e-row').rowIndex
+      var rowIndex = !isNullOrUndefined((args.target as Element).closest('.e-row') as Element)
+        ? ((args.target as HTMLElement).closest('.e-row') as any).rowIndex
         : 0;
-      for (var i = 0; i < args.data.length; i++) {
-        this.treeGridObject.addRecord(args.data[i], rowIndex);
-        this.gridObject.deleteRecord('taskID', args.data[i]);
+      for (var i = 0; i < (args.data as Object[]).length; i++) {
+        this.treeGridObject.addRecord((args.data as Object[])[i] , rowIndex);
+        this.gridObject.deleteRecord('taskID', (args.data as Object[])[i]);
       }
     }
   }

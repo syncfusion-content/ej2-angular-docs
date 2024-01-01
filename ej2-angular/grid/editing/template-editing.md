@@ -99,7 +99,7 @@ By default, the first input element in the dialog will be focused while opening 
 ```typescript
 
     actionComplete(args: DialogEditEventArgs) {
-        // Set initail Focus
+        // Set initial Focus
         if (args.requestType === 'beginEdit') {
             (args.form.elements.namedItem('CustomerID')as HTMLInputElement).focus();
         }

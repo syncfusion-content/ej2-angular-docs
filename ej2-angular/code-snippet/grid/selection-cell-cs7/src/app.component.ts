@@ -1,9 +1,12 @@
 import { Component, OnInit, ViewChild, Renderer2 } from '@angular/core';
-import { data } from './datasource';
+import { Order, data } from './datasource';
 import {
   GridComponent,
   SelectionSettingsModel,
-  PageSettingsModel
+  PageSettingsModel,
+  CellSelectEventArgs,
+  CellSelectingEventArgs,
+  CellDeselectEventArgs
 } from '@syncfusion/ej2-angular-grids';
 
 @Component({
@@ -42,22 +45,25 @@ export class AppComponent implements OnInit {
     this.selectionOptions = { mode: 'Cell', type: 'Multiple' };
     this.pageOptions = { pageSize: 5 };
   }
-  cellSelected(args: any): void {
+  cellSelected(args: CellSelectEventArgs): void {
     this.message = ` Trigger cellSelected`;
-    args.currentCell.style.backgroundColor = 'rgb(96, 158, 101)';
+    (args.currentCell as HTMLElement).style.backgroundColor = 'rgb(96, 158, 101)';
   }
-  cellselecting(args: any): void {
+  cellselecting(args:CellSelectingEventArgs ): void {
     this.message = `Trigger cellSelecting`;
-    if (args.data.ShipCountry == 'France')
-      (args as any).cancel = true;
+    if ((args.data as Order).ShipCountry == 'France')
+      args.cancel = true;
   }
-  cellDeselected(args: any): void {
+  cellDeselected(args: CellDeselectEventArgs ): void {
     this.message = `Trigger cellDeselected`;
-    args.cells[0].style.backgroundColor = 'rgb(245, 69, 69)';
-
+    if (args.cells && args.cells.length > 0) {
+      (args.cells[0] as HTMLElement).style.backgroundColor = 'rgb(245, 69, 69)';
+    }
   }
-  cellDeselecting(args: any): void {
+  cellDeselecting(args: CellDeselectEventArgs): void {
     this.message = `Trigger cellDeselecting`;
-    args.cells[0].style.color = 'rgb(253, 253, 253)';
+    if (args.cells && args.cells.length > 0) {
+      (args.cells[0] as HTMLElement).style.color = 'rgb(253, 253, 253)';
+    }  
   }
 }

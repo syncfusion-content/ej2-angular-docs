@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { productData } from './datasource';
-import { EditSettingsModel, ToolbarItems, IEditCell, GridComponent
+import { EditSettingsModel, ToolbarItems, IEditCell, GridComponent, CellEditArgs
 } from '@syncfusion/ej2-angular-grids';
-import { NumericTextBox } from '@syncfusion/ej2-inputs';
+import { ChangeEventArgs, NumericTextBox } from '@syncfusion/ej2-inputs';
 
 @Component({
   selector: 'app-root',
@@ -47,8 +47,8 @@ export class AppComponent implements OnInit {
     this.toolbar = ['Add', 'Delete', 'Update', 'Cancel'];
     this.priceParams = {
       create: () => {
-        (this as any).priceElem = document.createElement('input');
-        return (this as any).priceElem;
+        this.priceElem = document.createElement('input');
+        return this.priceElem;
       },
       read: () => {
         return this.priceObj?.value;
@@ -57,46 +57,46 @@ export class AppComponent implements OnInit {
         this.priceObj?.destroy();
       },
       write: (args: any) => {
-        var rowData = (args as any).rowData;
-        var rowIndex = (this.grid as any).getRowInfo((args as any).row).rowIndex;
+        var rowData = args.rowData;
+        var rowIndex = (this.grid as GridComponent).getRowInfo(args.row).rowIndex;
         this.priceObj = new NumericTextBox({
-          value: (args as any).rowData[(args as any).column.field],
-          change: ((args: any) => {
-            var totalCostValue = (args as any).value * rowData['UnitsInStock'];
-            (this.grid as any).updateCell(rowIndex, 'TotalCost', totalCostValue);
+          value: args.rowData[args.column.field],
+          change: ((args: ChangeEventArgs) => {
+            var totalCostValue = (args.value as number) * rowData['UnitsInStock'];
+            (this.grid as GridComponent).updateCell((rowIndex as number), 'TotalCost', totalCostValue);
           }).bind(this)
         });
-        this.priceObj?.appendTo((this as any).priceElem);
+        this.priceObj?.appendTo(this.priceElem);
       }
     };
     this.stockParams = {
       create: () => {
-        (this as any).stockElem = document.createElement('input');
-        return (this as any).stockElem;
+        this.stockElem = document.createElement('input');
+        return this.stockElem;
       },
       read: () => {
-        return (this as any).stockObj.value;
+        return (this.stockObj as  NumericTextBox).value;
       },
       destroy: () => {
-        (this as any).stockObj.destroy();
+        (this.stockObj as  NumericTextBox).destroy();
       },
       write: (args: any) => {
-        var rowData = (args as any).rowData;
-        var rowIndex = (this.grid as any).getRowInfo((args as any).row).rowIndex;
-        (this as any).stockObj = new NumericTextBox({
-          value: (args as any).rowData[(args as any).column.field],
-          change: ((args: any) => {
-            var totalCostValue = (args as any).value * rowData['UnitPrice'];
-            (this.grid as any).updateCell(rowIndex, 'TotalCost', totalCostValue);
+        var rowData = args.rowData;
+        var rowIndex = (this.grid as GridComponent).getRowInfo(args.row).rowIndex;
+        this.stockObj = new NumericTextBox({
+          value: args.rowData[args.column.field],
+          change: ((args: ChangeEventArgs) => {
+            var totalCostValue = (args.value as number) * rowData['UnitPrice'];
+            (this.grid as GridComponent).updateCell((rowIndex as number), 'TotalCost', totalCostValue);
           }).bind(this)
         });
-        (this as any).stockObj.appendTo((this as any).stockElem);
+        this.stockObj.appendTo(this.stockElem);
       }
     };
   }
-  cellEdit(args: any) {
-    if ((args as any).columnName == 'TotalCost') {
-      (args as any).cancel = true;
+  cellEdit(args: CellEditArgs) {
+    if (args.columnName == 'TotalCost') {
+      args.cancel = true;
     }
   }
 }

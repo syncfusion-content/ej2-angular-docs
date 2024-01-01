@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Column, GridComponent, TextAlign } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
   selector: 'app-root',
@@ -37,9 +38,9 @@ export class AppComponent {
     { text: 'Justify', value: 'Justify' }
   ];
 
-  public changeAlignment(args: any): void {
-    (this.grid as GridComponent).columns.forEach((col: any) => {
-      col.headerTextAlign = (args as any).value;
+  public changeAlignment(args: ChangeEventArgs): void {
+    (this.grid as GridComponent).columns.forEach((col) => {
+      (col as Column).headerTextAlign = (args.value as TextAlign);
     });
     (this.grid as GridComponent).refreshHeader();
   }

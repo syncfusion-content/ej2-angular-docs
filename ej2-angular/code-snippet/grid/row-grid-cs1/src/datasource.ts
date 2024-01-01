@@ -1,5 +1,9 @@
-import { DataUtil } from '@syncfusion/ej2-data';
-
+export interface columnDataType
+{
+  OrderID:number;
+  CustomerID:string;
+  Freight:number;
+}
 export function getData(dataCount?: number): object {
   let check: boolean[] = [true, false];
   let Employees: string[] = [

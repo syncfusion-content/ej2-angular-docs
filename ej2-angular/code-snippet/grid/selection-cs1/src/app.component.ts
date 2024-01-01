@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { CellSelectionMode, GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
   selector: 'app-root',
@@ -44,8 +45,8 @@ export class AppComponent implements OnInit {
     this.data = data;
     this.selectionOptions = { type: 'Multiple', mode: 'Cell' };
   }
-  valueChange(args: any): void {
-    (this.grid as any).selectionSettings.cellSelectionMode = (args as any).value;
+  valueChange(args: ChangeEventArgs): void {
+    ((this.grid as GridComponent).selectionSettings.cellSelectionMode as CellSelectionMode) = (args.value as CellSelectionMode);
   }
 }
 

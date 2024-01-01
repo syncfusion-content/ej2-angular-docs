@@ -37,6 +37,6 @@ export class AppComponent implements OnInit {
     this.selectionOptions = { type: 'Multiple' };
   }
   toggleColumnSelection(): void {
-    (this as any).grid.selectionSettings.allowColumnSelection = this.columnSelection;
+    (this.grid as GridComponent).selectionSettings.allowColumnSelection = this.columnSelection;
   }
 }

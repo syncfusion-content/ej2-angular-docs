@@ -5,6 +5,7 @@ import {
   SelectionSettingsModel,
   PageSettingsModel,
 } from '@syncfusion/ej2-angular-grids';
+import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
   selector: 'app-root',
@@ -48,10 +49,10 @@ export class AppComponent implements OnInit {
   public startColumnIndex?:number;
   public endRowIndex?:number;
   public endColumnIndex?:number;
-  @ViewChild('textbox') public textbox?: any;
-  @ViewChild('textbox1') public textbox1?: any;
-  @ViewChild('textbox2') public textbox2?: any;
-  @ViewChild('textbox3') public textbox3?: any;
+  @ViewChild('textbox') public textbox?: TextBoxComponent;
+  @ViewChild('textbox1') public textbox1?: TextBoxComponent;
+  @ViewChild('textbox2') public textbox2?: TextBoxComponent;
+  @ViewChild('textbox3') public textbox3?: TextBoxComponent;
   @ViewChild('grid') public grid?: GridComponent;
 
   ngOnInit(): void {
@@ -60,13 +61,13 @@ export class AppComponent implements OnInit {
     this.pageOptions = { pageSize: 5 };
   }
   click(): void {
-    this.startRowIndex = parseInt(this.textbox.value, 10);
-    this.startColumnIndex = parseInt(this.textbox1.value, 10);
-    this.endRowIndex = parseInt(this.textbox2.value, 10);
-    this.endColumnIndex = parseInt(this.textbox3.value, 10);
+    this.startRowIndex = parseInt((this.textbox as TextBoxComponent).value, 10);
+    this.startColumnIndex = parseInt((this.textbox1 as TextBoxComponent).value, 10);
+    this.endRowIndex = parseInt((this.textbox2 as TextBoxComponent).value, 10);
+    this.endColumnIndex = parseInt((this.textbox3 as TextBoxComponent).value, 10);
     this.grid?.clearCellSelection();
     if (!isNaN(this.startRowIndex) && !isNaN(this.startColumnIndex) && !isNaN(this.endRowIndex) && !isNaN(this.endColumnIndex)) {
-      (this as any).grid.selectCellsByRange({ rowIndex: this.startRowIndex, cellIndex: this.startColumnIndex }, { rowIndex: this.endRowIndex, cellIndex: this.endColumnIndex });
+      (this.grid as GridComponent).selectCellsByRange({ rowIndex: this.startRowIndex, cellIndex: this.startColumnIndex }, { rowIndex: this.endRowIndex, cellIndex: this.endColumnIndex });
     }
   }
 }

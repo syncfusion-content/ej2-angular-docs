@@ -220,9 +220,6 @@ Here's an example of how to enable adding new rows at the bottom of the grid:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs31/src/app.component.ts %}
 {% endhighlight %}
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/grid/edit-cs31/src/app.component.html %}
-{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/edit-cs31/src/app.module.ts %}
 {% endhighlight %}
@@ -257,6 +254,28 @@ Here's an example of how to use the `recordDoubleClick` event to move the focus 
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/edit-cs32" %}
+
+## Enable editing in single click
+
+Enabling single-click editing in the Syncfusion Grid's **Normal** editing mode is a valuable feature that allows you to make a row editable with just one click.This can be achieved by using the [startEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#startedit) and [endEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#endedit) methods.
+
+To implement this feature, you need to bind the `mouseup` event for the Grid and, within the event handler, call the `startEdit` and `endEdit` methods based on the clicked target element. This ensures that the editing mode is triggered when clicking on a specific element within the Grid.
+
+The following sample demonstrates how to enable editing in a single click using the `mouseup` event along with the `load` event:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/single-click-batch-editing-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/single-click-batch-editing-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/single-click-batch-editing-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/single-click-batch-editing-cs1" %}
 
 ## Disable editing for a particular row
 

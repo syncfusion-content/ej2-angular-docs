@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
   selector: 'app-root',
@@ -47,8 +48,8 @@ export class AppComponent implements OnInit {
     this.data = data;
     this.dropdownData = ['Freight', 'Shipment', 'Cargo'];
   }
-  onSwitchToggle(args: any) {
-    this.headerText = (args as any).checked ? 'Purchase Date' : 'Order Date';
+  onSwitchToggle(args:ChangeEventArgs) {
+    this.headerText = args.checked ? 'Purchase Date' : 'Order Date';
   }
 
 }

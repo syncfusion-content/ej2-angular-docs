@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SelectionSettingsModel, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, SelectionSettingsModel, PageSettingsModel, ISelectedCell } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',
@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
   public selectionOptions?: SelectionSettingsModel;
   public pageOptions?: PageSettingsModel;
   public dialogVisible: boolean = false;
-  public selectedCellIndexes: any[] = [];
+  public selectedCellIndexes: ISelectedCell[] = [];
   @ViewChild('grid')
   public grid?: GridComponent;
 
@@ -56,8 +56,10 @@ export class AppComponent implements OnInit {
     this.pageOptions = { pageSize: 5 };
   }
   showSelectedIndexes(): void {
-    this.selectedCellIndexes = (this as any).grid.getSelectedRowCellIndexes();
-    this.dialogVisible = true;
+    this.selectedCellIndexes = (this.grid as GridComponent).getSelectedRowCellIndexes();
+    if (this.selectedCellIndexes.length > 0) {    
+      this.dialogVisible = true;
+    }
   }
   dialogClose(): void {
     this.dialogVisible = false;

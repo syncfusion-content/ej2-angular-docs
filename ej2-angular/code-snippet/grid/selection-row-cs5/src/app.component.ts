@@ -5,6 +5,7 @@ import {
   SelectionSettingsModel,
   PageSettingsModel,
 } from '@syncfusion/ej2-angular-grids';
+import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
   selector: 'app-root',
@@ -40,8 +41,8 @@ export class AppComponent implements OnInit {
   public pageOptions?: PageSettingsModel;
   public startIndex?:number;
   public endIndex?:number;
-  @ViewChild('textbox') public textbox?: any;
-  @ViewChild('textbox1') public textbox1?: any;
+  @ViewChild('textbox') public textbox?: TextBoxComponent;
+  @ViewChild('textbox1') public textbox1?: TextBoxComponent;
   @ViewChild('grid') public grid?: GridComponent;
 
   ngOnInit(): void {
@@ -50,11 +51,11 @@ export class AppComponent implements OnInit {
     this.pageOptions = { pageSize: 5 };
   }
   click(): void {
-    this.startIndex = parseInt(this.textbox.element.value, 10); 
-    this.endIndex = parseInt(this.textbox1.element.value, 10); 
-    (this as any).grid.selectionModule.clearRowSelection();
+    this.startIndex = parseInt((this.textbox as TextBoxComponent).element.value, 10); 
+    this.endIndex = parseInt((this.textbox1 as TextBoxComponent).element.value, 10); 
+    (this.grid as GridComponent).selectionModule.clearRowSelection();
     if (!isNaN(this.startIndex) && !isNaN(this.endIndex)) {
-      (this as any).grid.selectionModule.selectRowsByRange(this.startIndex, this.endIndex);
+      (this.grid as GridComponent).selectionModule.selectRowsByRange(this.startIndex, this.endIndex);
     }
   }
 }

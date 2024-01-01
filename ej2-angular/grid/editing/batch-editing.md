@@ -96,9 +96,6 @@ Here's an example that demonstrates how to enable adding new rows at the bottom 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-batch-add-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight html tabtitle="app.component.html" %}
-{% include code-snippet/grid/edit-batch-add-cs1/src/app.component.html %}
-{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/edit-batch-add-cs1/src/app.module.ts %}
 {% endhighlight %}

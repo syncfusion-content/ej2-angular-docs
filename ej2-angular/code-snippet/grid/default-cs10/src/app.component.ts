@@ -29,8 +29,7 @@ export class AppComponent implements OnInit {
             { field: 'ShipCity', headerText: 'Ship City', width: 100 },
             { field: 'ShipName', headerText: 'Ship Name', width: 120 }
         ],
-        actionBegin({ requestType, data }: AddEventArgs) {
-            debugger
+        actionBegin({ requestType, data }: AddEventArgs) {            
             if (requestType === 'add') {
                  // `parentKeyFieldValue` refers to the queryString field value of the parent record.
                 const parentFieldValue = (this.parentDetails as ParentDetails)?.parentKeyFieldValue;

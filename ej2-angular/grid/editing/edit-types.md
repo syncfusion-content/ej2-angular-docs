@@ -64,7 +64,7 @@ The following sample code demonstrates the customization applied to TextBox comp
   
 {% previewsample "page.domainurl/samples/grid/edit-params-default" %}
 
-### Customize NumericTextBox component of numericedit type 
+## Customize NumericTextBox component of numericedit type 
 
 You can customize the `NumericTextBox` component in Grid edit form using its property. This customization allows you to configure various properties of the NumericTextBox, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the [columns->edit->params](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property.
 

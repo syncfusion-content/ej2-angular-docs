@@ -2,8 +2,8 @@
 
 import { L10n } from '@syncfusion/ej2-base';
 import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { data, columnDataType } from './datasource';
+import { EditEventArgs, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 
 L10n.load({
     'en-US': {
@@ -45,18 +45,14 @@ export class AppComponent implements OnInit {
         this.customerIDrules = { required: true };
         this.freightrules =  { min:1,max:1000 };
     }
-    actionComplete(args: any) {
-        if (((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add')) {
+    actionComplete(args: EditEventArgs) {
+        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
             const dialog = (args as any).dialog;
             dialog.showCloseIcon = false;
             dialog.height = 300;
             dialog.width=300;
             // change the header of the dialog
-            dialog.header = (args as any).requestType === 'beginEdit' ? 'Edit Record of ' + (args as any).rowData['CustomerID'] : 'New Customer';
+            dialog.header = args.requestType === 'beginEdit' ? 'Edit Record of ' + (args.rowData as columnDataType)['CustomerID'] : 'New Customer';
         }
     }
 }
-
-
-
-

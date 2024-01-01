@@ -6,7 +6,7 @@ import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-g
   selector: 'app-root',
   template: `
     <div style="padding: 20px 0px">
-      <button ejs-button class="sample" (click)="click($event)">Selected Records count</button>
+      <button ejs-button class="sample" (click)="click()">Selected Records count</button>
     </div>
     <p id="message" *ngIf="showMessage">Selected record count: {{ selectedRecordscount }}</p>
     <div class="control-section">
@@ -39,8 +39,8 @@ export class AppComponent implements OnInit {
     this.data = data;
     this.selectionOptions = { type: 'Multiple' };
   }
-  click(args: any): void {
-    this.selectedRecordscount = (this as any).grid.getSelectedRecords().length;
+  click(): void {
+    this.selectedRecordscount = (this.grid as GridComponent).getSelectedRecords().length;
     this.showMessage = this.selectedRecordscount > 0;
   }
 }

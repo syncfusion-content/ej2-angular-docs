@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
     excelExpComplete(args: ExcelExportCompleteArgs) {
         // This event will be triggered when excel exporting.
         (args as any).promise.then((e: { blobData: Blob }) => {
-            // In this `then` function, we can get blob data through the arguments after promise resolved.
+            // In this `then` function, you can get blob data through the arguments after promise resolved.
             this.exportBlob((e as any).blobData);
         });
     }
@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
     pdfExpComplete(args: PdfExportCompleteArgs) {
         // This event will be triggered when pdf exporting.
         (args as any).promise.then((e: { blobData: Blob }) => {
-            // In this `then` function, we can get blob data through the arguments after promise resolved.
+            // In this `then` function, you can get blob data through the arguments after promise resolved.
             this.exportBlob((e as any).blobData);
         });
     }

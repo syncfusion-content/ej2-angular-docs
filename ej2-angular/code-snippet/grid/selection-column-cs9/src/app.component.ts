@@ -5,6 +5,7 @@ import {
   SelectionSettingsModel,
   PageSettingsModel,
 } from '@syncfusion/ej2-angular-grids';
+import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
   selector: 'app-root',
@@ -35,7 +36,7 @@ export class AppComponent implements OnInit {
   public selectionOptions?: SelectionSettingsModel;
   public pageOptions?: PageSettingsModel;
   public columnIndex?:number;
-  @ViewChild('textbox1') public textbox1?: any;
+  @ViewChild('textbox1') public textbox1?: TextBoxComponent;
   @ViewChild('grid') public grid?: GridComponent;
 
   ngOnInit(): void {
@@ -44,9 +45,9 @@ export class AppComponent implements OnInit {
     this.pageOptions = { pageSize: 5 };
   }
   click(): void {
-    this.columnIndex = parseInt(this.textbox1.element.value, 10); 
+    this.columnIndex = parseInt((this.textbox1 as TextBoxComponent).element.value, 10); 
     if (!isNaN(this.columnIndex)) {
-    (this as any).grid.selectionModule.selectColumn(this.columnIndex);
+    (this.grid as GridComponent).selectionModule.selectColumn(this.columnIndex);
     }
   }
 }

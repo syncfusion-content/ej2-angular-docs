@@ -5,7 +5,7 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
   selector: 'app-root',
   template: `<div class="control-section">
               <ejs-grid #grid [dataSource]="data" allowPaging="true" 
-              (dataBound)="dataBound($event)" height="320">
+              (dataBound)="dataBound()" height="320">
                 <e-columns>
                   <e-column field="OrderID" headerText="Order ID" width="120" 
                   textAlign="Right"></e-column>
@@ -28,15 +28,15 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.data = orderDetails;
   }
-  dataBound(args: any) {
-    (this.grid as any).getColumnHeaderByIndex(0).style.color = '#0d0b0b';
-    (this.grid as any).getColumnHeaderByField('CustomerName').style.background = '#f45ddeab';
-    (this.grid as any).getColumnHeaderByField('CustomerName').style.color = '#0d0b0b';
-    (this.grid as any).getColumnHeaderByUid('grid-column2').style.background = '#f45ddeab';
-    const columnIndex = (this.grid as any).getColumnIndexByField('ShipCountry');
-    (this.grid as any).getColumnHeaderByIndex(columnIndex).style.color = '#0d0b0b';
-    const index = (this.grid as any).getColumnIndexByUid('grid-column2');
-    (this.grid as any).getColumnHeaderByIndex(index).style.color = '#0d0b0b';
+  dataBound() {
+    ((this.grid as GridComponent).getColumnHeaderByIndex(0) as HTMLElement).style.color = '#0d0b0b';
+    ((this.grid as GridComponent).getColumnHeaderByField('CustomerName') as HTMLElement).style.background = '#f45ddeab';
+    ((this.grid as GridComponent).getColumnHeaderByField('CustomerName') as HTMLElement).style.color = '#0d0b0b';
+    ((this.grid as GridComponent).getColumnHeaderByUid('grid-column2') as HTMLElement).style.background = '#f45ddeab';
+    const columnIndex = (this.grid as GridComponent).getColumnIndexByField('ShipCountry');
+    ((this.grid as GridComponent).getColumnHeaderByIndex(columnIndex) as HTMLElement).style.color = '#0d0b0b';
+    const index = (this.grid as GridComponent).getColumnIndexByUid('grid-column2');
+    ((this.grid as GridComponent).getColumnHeaderByIndex(index) as HTMLElement).style.color = '#0d0b0b';
   }
 
 }

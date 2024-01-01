@@ -6,7 +6,7 @@ import { data } from './datasource';
 @Component({
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='240' 
-                (created)='setHeaderHeight($event)'>
+                (created)='setHeaderHeight()'>
                     <e-columns>
                         <e-column field='OrderID' headerText='Order ID' textAlign='Right'
                          width=100>
@@ -30,9 +30,9 @@ export class AppComponent implements OnInit {
         this.data = data;
         this.customAttributes = { class: 'orientationcss' };
     }
-    setHeaderHeight(args: any) {
+    setHeaderHeight() {
         // Obtain the width of the headerText content.
-        const textWidth = (document.querySelector('.orientationcss > div') as any).scrollWidth; 
+        const textWidth = (document.querySelector('.orientationcss > div') as Element).scrollWidth;
         const headerCell: NodeList = document.querySelectorAll('.e-headercell');
         for (let i = 0; i < headerCell.length; i++) {
             // Assign the obtained textWidth as the height of the headerCell.

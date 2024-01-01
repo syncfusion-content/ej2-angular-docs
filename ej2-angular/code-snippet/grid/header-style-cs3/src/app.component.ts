@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
+import { Cell, Column, HeaderCellInfoEventArgs } from '@syncfusion/ej2-grids';
 
 @Component({
   selector: 'app-root',
@@ -21,8 +22,7 @@ import { data } from './datasource';
                   </e-column>
                 </e-columns>
               </ejs-grid>
-            </div>`,
-  // styleUrls: ['./app.component.css'],
+            </div>`
 })
 export class AppComponent implements OnInit {
 
@@ -31,9 +31,9 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.data = data;
   }
-  public onHeaderCellInfo(args: any) {
-    if ((args as any).cell.column.field == 'OrderDate') {
-      (args as any).node.classList.add('customcss');
+  public onHeaderCellInfo(args:HeaderCellInfoEventArgs  ) {
+    if ((args.cell as Cell<Column> ).column.field == 'OrderDate') {
+      (args.node as Element).classList.add('customcss');
     }
   }
 

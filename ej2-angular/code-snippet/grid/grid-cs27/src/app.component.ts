@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { data } from "./datasource";
-import { TooltipComponent } from "@syncfusion/ej2-angular-popups";
+import { TooltipComponent, TooltipEventArgs } from "@syncfusion/ej2-angular-popups";
 
 @Component({
   selector: "app-root",
@@ -27,12 +27,12 @@ import { TooltipComponent } from "@syncfusion/ej2-angular-popups";
       </ejs-tooltip>
     </div>`
 })
-export class AppComponent implements OnInit  {
+export class AppComponent implements OnInit {
 
-  public data?: object[]=data;
+  public data?: object[] = data;
   @ViewChild('tooltip')
   public toolTip?: TooltipComponent;
-  public columnDescriptions: Object ={
+  public columnDescriptions: { [key: string]: string } = {
     "Order ID": "A unique number assigned to each order.",
     "Freight": "The cost of shipping the order.",
     "Ship Name": "The name of the person or company who will receive the shipment.",
@@ -43,11 +43,11 @@ export class AppComponent implements OnInit  {
   ngOnInit(): void {
     this.data = data;
   }
-  beforeRender(args: any) {
-    const description = (this.columnDescriptions as any)[(args as any).target.innerText];
+  beforeRender(args: TooltipEventArgs) {
+    const description = this.columnDescriptions[args.target.innerText];
     if (description) {
-      (this.toolTip as TooltipComponent).content = (args as any).target.innerText + ": " + description;
+      (this.toolTip as TooltipComponent).content = args.target.innerText + ": " + description;
     }
   }
-  
+
 }

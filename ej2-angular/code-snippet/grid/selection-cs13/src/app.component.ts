@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, SelectionSettingsModel, SelectionType } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
   selector: 'app-root',
@@ -39,7 +40,7 @@ export class AppComponent implements OnInit {
     this.data = data;
   }
 
-  valueChange(args: any): void {
-    (this.grid as any).selectionSettings.type = (args as any).value;
+  valueChange(args: ChangeEventArgs): void {
+    ((this.grid as GridComponent).selectionSettings.type as SelectionType) = (args.value as SelectionType);
   }
 }

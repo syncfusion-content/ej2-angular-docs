@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridComponent, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +9,12 @@ import { data } from './datasource';
       <div style="padding: 20px">
         <label>Enable/Disable show confirmation dialog</label>
         <ejs-switch id="switch" [(checked)]="enableShowConfirmDialog" 
-        (change)="toggleShowConfirmDialog()"></ejs-switch>
+        (change)="toggleShowConfirmDialog($event)"></ejs-switch>
       </div>
       <div style="padding: 20px">
         <label>Enable/Disable show delete confirmation dialog</label>
         <ejs-switch id="switch1" [(checked)]="enableShowDeleteConfirmDialog" 
-        (change)="toggleShowDeleteConfirmDialog()"></ejs-switch>
+        (change)="toggleShowDeleteConfirmDialog($event)"></ejs-switch>
       </div>
       <ejs-grid #grid [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" height="273px">
         <e-columns>
@@ -51,11 +52,11 @@ export class AppComponent implements OnInit {
     this.customeridrules = { required: true };
     this.freightrules = { min: 1, max: 1000 };
   }
-  toggleShowConfirmDialog(): void {
-    (this as any).grid.editSettings.showConfirmDialog = this.enableShowConfirmDialog;
+  toggleShowConfirmDialog(args:ChangeEventArgs): void {
+    (this.grid as GridComponent).editSettings.showConfirmDialog = this.enableShowConfirmDialog;
   }
-  toggleShowDeleteConfirmDialog(): void {
-    (this as any).grid.editSettings.showDeleteConfirmDialog = this.enableShowDeleteConfirmDialog;
+  toggleShowDeleteConfirmDialog(args:ChangeEventArgs): void {
+    (this.grid as GridComponent).editSettings.showDeleteConfirmDialog = this.enableShowDeleteConfirmDialog;
   }
   
 }

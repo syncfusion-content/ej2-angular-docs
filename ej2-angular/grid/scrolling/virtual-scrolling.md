@@ -149,10 +149,10 @@ Let's see the step by step procedure for how we can overcome the limitation in t
                 if (arguments[1].queries) {
                     for (const i = 0; i < arguments[1].queries.length; i++) {
                         if (arguments[1].queries[i].fn === 'onPage') {
-                            // pageSet - defines the number of segments that we are going to split the 2million records. In this example we have considered 0.5 million records for each set so the pageSet is 1, 2, 3 and 4.
-                            // maxRecordsPerPageSet – In this example we define the value as 0.5 million.
+                            // pageSet - defines the number of segments going to split the 2million records. In this example 0.5 million records are considered for each set so the pageSet is 1, 2, 3 and 4.
+                            // maxRecordsPerPageSet – In this example the value is define as 0.5 million.
 
-                            // gridPageSize – the pageSize that we have defined in the Grid pageSettings->pageSize property
+                            // gridPageSize – the pageSize defined in the Grid as pageSettings->pageSize property
 
                             // customize the pageIndex based on the current pageSet (It send the skip query including the previous pageSet ) so that the other operations performed for total 2millions records instead of 0.5 million alone.
                             arguments[1].queries[i].e.pageIndex = (((pageSet - 1) * maxRecordsPerPageSet) / gridPageSize) + arguments[1].queries[i].e.pageIndex;
