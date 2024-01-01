@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
     }
 
     public onLoad(): void {
-        (this.grid as any).adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
+        (this.grid as GridComponent).adaptiveDlgTarget = document.getElementsByClassName('e-mobile-content')[0] as HTMLElement;
     }
 }
 

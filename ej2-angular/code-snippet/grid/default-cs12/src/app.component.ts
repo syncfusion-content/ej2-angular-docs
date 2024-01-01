@@ -33,7 +33,6 @@ export class AppComponent implements OnInit {
     }
 
     detailDataBound({data, childGrid} : DetailDataBoundEventArgs) {
-        debugger;
         var empIdValue = (data as childColumnDataType).EmployeeID;
         var childGridData = new DataManager(childData).executeLocal(
             new Query().where('EmployeeID', 'equal', empIdValue, true)

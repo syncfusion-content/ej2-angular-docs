@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { DialogComponent } from '@syncfusion/ej2-angular-popups';
+import { ClickEventArgs, Item } from '@syncfusion/ej2-angular-navigations';
 import { L10n } from '@syncfusion/ej2-base';
 
 L10n.load({
@@ -31,9 +31,9 @@ export class AppComponent {
 
   @ViewChild('grid')
   public grid?: GridComponent;
-  public data: any;
+  public data?: Object[];
   public editSettings?: Object;
-  public toolbar?: any;
+  public toolbar?: Object;
 
   public ngOnInit(): void {
     this.data = data;
@@ -46,9 +46,10 @@ export class AppComponent {
 
     this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
   }
-  toolbarClick(args: any): void {
-    if (args.item.properties.text === 'Delete') {
-        const dialogObj = (this as any).grid.editModule.dialogObj;
+  toolbarClick(args: ClickEventArgs): void {
+    debugger;
+    if ((args.item as Item).text === 'Delete') {
+        const dialogObj= ((this.grid as GridComponent).editModule as any).dialogObj   ;
         dialogObj.header = 'Delete Confirmation Dialog';
         dialogObj.showCloseIcon = true;    
     }

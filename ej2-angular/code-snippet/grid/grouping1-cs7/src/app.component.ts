@@ -45,8 +45,7 @@ export class AppComponent implements OnInit {
     }
 
    onExpandCollapseButtonClick() {
-     debugger
-    const groupedRows = Array.from(
+      const groupedRows = Array.from(
       (this.grid as GridComponent)
         .getContentTable()
         .querySelectorAll('.e-recordplusexpand, .e-recordpluscollapse')

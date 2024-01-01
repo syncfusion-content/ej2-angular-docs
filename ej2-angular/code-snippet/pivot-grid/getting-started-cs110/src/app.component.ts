@@ -5,6 +5,9 @@ import { L10n, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
 import { IDataOptions, IDataSet, FieldListService, CalculatedFieldService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
 
+setCulture('de');
+setCurrencyCode('EUR');
+
 @Component({
   selector: 'app-container',
   providers: [FieldListService, CalculatedFieldService, GroupingBarService],
@@ -17,8 +20,6 @@ export class AppComponent {
     public dataSourceSettings?: IDataOptions;
     public width?: string;
     ngOnInit(): void {
-        setCulture('de');
-        setCurrencyCode('EUR');
         L10n.load({
             'de-DE': {
                 'pivotview': {

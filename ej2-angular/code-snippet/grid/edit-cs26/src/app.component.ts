@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { productData } from './datasource';
 import { EditSettingsModel, ToolbarItems, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
   selector: 'app-root',
@@ -30,8 +31,8 @@ export class AppComponent implements OnInit {
   public data?: Object[];
   public editSettings?: EditSettingsModel;
   public toolbar?: ToolbarItems[];
-  public priceParams: any;
-  public stockParams: any;
+  public priceParams?: Object;
+  public stockParams?: Object;
   public orderIDRules?: object;
   public unitIDRules?: object;
   public stockIDRules?: object;
@@ -53,8 +54,8 @@ export class AppComponent implements OnInit {
     this.priceParams = { params: { change: this.calculateTotalCost.bind(this) } };
     this.stockParams = { params: { change: this.calculateTotalCost.bind(this) } };
   }
-  calculateTotalCost(args:any): void {
-    const formEle = (this.grid as any).element.querySelector('form').ej2_instances[0];
+  calculateTotalCost(args:ChangeEventArgs): void {
+    const formEle = ((this.grid as GridComponent).element.querySelector('form') as HTMLFormElement)['ej2_instances'][0];
     formEle.getInputElement('TotalCost').value = formEle.getInputElement('UnitPrice').value * formEle.getInputElement('UnitsInStock').value;
   }
   

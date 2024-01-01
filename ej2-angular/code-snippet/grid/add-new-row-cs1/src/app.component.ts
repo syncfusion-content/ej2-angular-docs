@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
             ShipName: this.generateShipName()
         };
 
-        (this.grid as any).addRecord(newRecord, 0);
+        (this.grid as GridComponent).addRecord(newRecord, 0);
     }
     // Generate a random OrderID
     generateOrderId(): number {

@@ -1,9 +1,9 @@
-import { Component,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 
 @Component({
-    selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]="data" allowPaging="true">
+  selector: 'app-root',
+  template: `<ejs-grid #grid [dataSource]="data" allowPaging="true">
                 <e-columns>
                   <e-column field="OrderID" headerText="Order ID" 
                   [customAttributes]="{class:'customcss'}" textAlign="Center">
@@ -16,8 +16,7 @@ import { data } from './datasource';
                   <e-column field="ShippedDate" headerText="Shipped Date" textAlign="Center" 
                   format="yMd"></e-column>
                 </e-columns>
-              </ejs-grid>`,
-    // styleUrls: ['./app.component.css']
+              </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 

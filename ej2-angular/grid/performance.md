@@ -32,9 +32,12 @@ It is possible to enable both row and column virtualization. This feature allows
 ### How to overcome browser height limitation in virtual scrolling
 [Documentation link](https://ej2.syncfusion.com/documentation/grid/virtual-scroll#browser-height-limitation-in-virtual-scrolling-and-solution)
 
+## How to Improve loading performance by binding large data by showing custom text or element
+When integrating image or template elements into a column, it's recommended to utilize the [Column Template](https://ej2.syncfusion.com/angular/documentation/grid/columns/column-template) feature rather than customizing the data through [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) events. These events are triggered for each row and cell rendering, introducing delays in the component's rendering process. Moreover, rendering custom elements using these events may result in the persistence of rendered elements, potentially causing longer rendering times over time. By opting for the column template feature, you can efficiently meet this requirement without experiencing rendering delays and ensure a more streamlined rendering process.
+
 ## How to improve loading performance by referring individual script and CSS
 
-To improve the performance of Syncfusion Grid component during the initial render as well as certain actions, suggested you to download the specific component scripts using CRG (Custom Resource Generator) to speed up the project. By default, the ej2.min.js script file contains all the Syncfusion component scripts. So, it will take some time to load the scripts to the project. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator ), you can select the components which you want to use, and the modules for those components, then you can download the scripts and CSS for the selected components and use them as per your need.
+To improve the performance of Syncfusion Grid component during the initial render as well as certain actions, suggested you to download the specific component scripts using CRG (Custom Resource Generator) to speed up the project. By default, the ej2.min.js script file contains all the Syncfusion component scripts. So, it will take some time to load the scripts to the project. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), you can select the components which you want to use, and the modules for those components, then you can download the scripts and CSS for the selected components and use them as per your need.
 
 **Website link**: https://crg.syncfusion.com/ 
 
@@ -90,7 +93,6 @@ To address this, it's recommended to implement the OnPush change detection strat
   changeDetection: ChangeDetectionStrategy.OnPush 
 }) 
 ```
-
 Using the OnPush strategy may lead to child components not being updated when the input changes. You can address this by referring to the following links,
 * https://blog.angular-university.io/onpush-change-detection-how-it-works/
 * https://angular.io/api/core/ApplicationRef#tick  

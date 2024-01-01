@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, RowSelectingEventArgs, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
   selector: 'app-root',
@@ -29,14 +29,14 @@ export class AppComponent implements OnInit {
   public data?: object[];
   public selectionOptions?: SelectionSettingsModel;
   public columnSelection = false;
-  @ViewChild('grid') grid!: GridComponent;
+  @ViewChild('grid') grid?: GridComponent;
 
   ngOnInit(): void {
     this.data = data;
     this.selectionOptions = { type: 'Single', checkboxMode: 'ResetOnRowClick' };
   }
-  rowselecting(args: any): void {  
+  rowselecting(args: RowSelectingEventArgs): void {  
     if (args.target && args.target.classList.contains('e-icons'))
-      (this as any).grid.clearSelection();
+      (this.grid as GridComponent).clearSelection();
   }
 }

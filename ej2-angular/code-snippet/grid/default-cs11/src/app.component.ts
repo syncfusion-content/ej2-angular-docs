@@ -39,7 +39,7 @@ export class AppComponent implements OnInit, AfterViewInit {
             dataSource: data,
             queryString: 'EmployeeID',
             load() {
-                this.registeredTemplate = {};   // set registertemplate value as empty in load event
+                this.registeredTemplate = {};   // set registerTemplate value as empty in load event
             },
             columns: [
                 { headerText: 'Employee Image', textAlign: 'Center', template: this.childtemplate, width: 120 },

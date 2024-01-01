@@ -1,3 +1,8 @@
+export interface columnDataType
+{
+  OrderID:number;
+}
+
 export let orderDetails: Object[] = [
     {
       OrderID: 10248,

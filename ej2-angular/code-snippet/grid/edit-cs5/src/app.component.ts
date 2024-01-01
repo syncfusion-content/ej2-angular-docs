@@ -1,8 +1,6 @@
-
-
 import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { data, columnDataType } from './datasource';
+import { BeforeBatchAddArgs, BeforeBatchDeleteArgs, CellEditArgs, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -39,24 +37,24 @@ export class AppComponent implements OnInit {
         this.rolerules = {required: true };
         this.freightrules =  { min:1, max:1000 };
     }
-    cellEdit(args: any) {
-        if ((args as any).rowData['Role'] == 'Admin') {
-            (args as any).cancel = true;
+    cellEdit(args: CellEditArgs) {
+        if ((args.rowData as columnDataType)['Role'] == 'Admin') {
+            args.cancel = true;
         }
     }
-    beforeBatchAdd(args: any) {
+    beforeBatchAdd(args: BeforeBatchAddArgs) {
         if (!this.isAddable) {
-            (args as any).cancel = true;
+            args.cancel = true;
         }
     }
-    beforeBatchDelete(args: any) {
-        if ((args as any).rowData['Role'] == 'Admin') {
-            (args as any).cancel = true;
+    beforeBatchDelete(args: BeforeBatchDeleteArgs) {
+        if ((args.rowData as columnDataType)['Role'] == 'Admin') {
+            args.cancel = true;
         }
     }
-    btnClick(args: any) {
-        (args as any).target.innerText == 'GRID IS ADDABLE' ? ((args as any).target.innerText = 'Grid is Not Addable') : ((args as any).target.innerText = 'Grid is Addable');
-        (this as any).isAddable = !(this as any).isAddable;
+    btnClick(args: MouseEvent) {
+        (args.target as HTMLElement).innerText == 'GRID IS ADDABLE' ? ((args.target as HTMLElement).innerText = 'Grid is Not Addable') : ((args.target as HTMLElement).innerText = 'Grid is Addable');
+        this.isAddable = !this.isAddable;
     }
 }
 

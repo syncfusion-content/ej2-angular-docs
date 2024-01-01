@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { employeeData } from './datasource';
 import { Internationalization } from '@syncfusion/ej2-base';
 
@@ -67,11 +67,10 @@ let instance: Internationalization = new Internationalization();
                     </e-columns>
                 </ejs-grid>
             </div>`
-
 })
 export class AppComponent {
 
-    public data?: any;
+    public data?: Object[];
 
     ngOnInit(): void {
         this.data = employeeData;

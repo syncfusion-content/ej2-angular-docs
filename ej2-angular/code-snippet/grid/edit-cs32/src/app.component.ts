@@ -2,7 +2,7 @@
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel, IEditCell } from '@syncfusion/ej2-angular-grids';
+import { EditEventArgs, EditSettingsModel, GridComponent, IEditCell, RecordDoubleClickEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-root',
@@ -33,9 +33,9 @@ export class AppComponent implements OnInit {
     public editSettings?: EditSettingsModel;
     public formatOptions?: object;
     public params?: IEditCell;
-    public fieldName:any;
+    public fieldName: string|any = ''; // Explicitly declare the type
     @ViewChild('grid')
-    public grid: any;
+    public grid?: GridComponent;
     public orderIDRules?: object;
     public customerIDRules?: object;
     public freightIDRules?: object;
@@ -54,16 +54,13 @@ export class AppComponent implements OnInit {
             }
         };
     }
-    actionComplete(e:any) {
-        if (e.requestType === "beginEdit") {
+    actionComplete(args:EditEventArgs) {
+        if (args.requestType === "beginEdit") {
             // focus the column
-            e.form.elements[this.grid.element.getAttribute("id") + this.fieldName].focus();
+            ((args.form as HTMLFormElement).elements[(this.grid as GridComponent).element.getAttribute("id") + this.fieldName] as HTMLInputElement).focus();
         }
     }
-    recordDoubleClick(e:any) {
-        this.fieldName = this.grid.getColumnByIndex(e.cell.cellIndex).field;   
+    recordDoubleClick(args:RecordDoubleClickEventArgs) {
+        this.fieldName = (this.grid as GridComponent).getColumnByIndex((args.cellIndex as number)).field;   
     }
 }
-
-
-

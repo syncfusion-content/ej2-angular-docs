@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource'; // Replace with your data source
 import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
-import { SwitchComponent } from '@syncfusion/ej2-angular-buttons';
+import {  SwitchComponent } from '@syncfusion/ej2-angular-buttons';
+import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
   selector: 'app-root',
@@ -52,9 +53,9 @@ export class AppComponent implements OnInit {
     this.selectionOptions = { type: 'Multiple' };
   }
   toggleColumnSelection(): void {
-    (this as any).grid.selectionSettings.enableToggle = this.enableToggleSelection;
+    (this.grid as GridComponent).selectionSettings.enableToggle = this.enableToggleSelection;
   }
-  valueChange(args: any): void {
-    (this as any).grid.selectionSettings.mode = args.value;
+  valueChange(args: ChangeEventArgs): void {
+    ((this.grid as GridComponent).selectionSettings.mode as SelectionMode) = (args.value as SelectionMode);
   }
 }

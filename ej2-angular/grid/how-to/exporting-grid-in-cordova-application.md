@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # Exporting grid in cordova application in Angular Grid component
 
-Cordova application does not support direct file download. So we have to use the Blob stream to export the Grid. You can use corresponding exporting methods and exportComplete events to get the Blob stream.
+Exporting the Syncfusion Angular Grid in a Cordova application can be beneficial in various scenarios where users need to generate and download reports, share data in Excel or PDF formats, or archive information for offline use. A Cordova application does not support direct file download. To export the Syncfusion Angular Grid component in a Cordova application, you need to utilize Blob streams. This can be achieved by using the appropriate exporting methods and export complete events to obtain the Blob stream.
+
+The following example illustrates how to export a Syncfusion Angular Grid in a Cordova application. It utilizes the [excelExportComplete](https://ej2.syncfusion.com/documentation/api/grid/#excelexportcomplete) and [pdfExportComplete](https://ej2.syncfusion.com/documentation/api/grid/#pdfexportcomplete) events to manage the export process for Excel and PDF formats and obtain the Blob stream. The `exportBlob` function is responsible for creating a downloadable link for the exported file.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

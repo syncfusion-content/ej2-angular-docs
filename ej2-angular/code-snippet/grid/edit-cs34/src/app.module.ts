@@ -23,7 +23,8 @@ import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns';
         FormsModule,
         TextBoxModule,
         MultiSelectModule,
-        AutoCompleteModule
+        AutoCompleteModule,
+        DropDownListModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],

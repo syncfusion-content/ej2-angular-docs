@@ -6,7 +6,7 @@ import { isNullOrUndefined } from '@syncfusion/ej2-base';
 @Component({
     selector: 'app-root',
     template: `<ejs-grid style="padding:70px" #grid id="grid" [dataSource]='data' height='272px' [allowPaging]="true" [enableHover]="false" [editSettings]='editSettings' [toolbar]='toolbar'
-    (created)="created($event)" (load)="load($event)">
+    (created)="created()" (load)="load()">
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right'
                      isPrimaryKey='true' [validationRules]='orderIDrules' visible='false' width=120></e-column>
@@ -40,42 +40,42 @@ export class AppComponent implements OnInit {
         this.shipCountryrules = { required: true };
         this.orderDaterules = { required: true };
     }
-    created = (args: any) => {
-        (this.grid as any).getContentTable().addEventListener('click', (args: any) => {
-            if (((args as any).target as any).classList.contains('e-rowcell')) {
-                (this.grid as any).editModule.editCell(parseInt(((args as any).target as any).getAttribute('index')),
-                (this.grid as any).getColumnByIndex(parseInt((args as any).target.getAttribute('data-colindex'))).field);
+    created = () => {
+        (this.grid as GridComponent).getContentTable().addEventListener('click', (args) => {
+            if ((args.target as HTMLElement).classList.contains('e-rowcell')) {
+                (this.grid as GridComponent).editModule.editCell(parseInt(((args.target as HTMLElement).getAttribute('index') as string)),
+                (this.grid as GridComponent).getColumnByIndex(parseInt((args.target as HTMLElement).getAttribute('data-colindex') as string)).field);
             }
         });
     };
-    load = (args: any) => {
-        (this.grid as any).element.addEventListener('keydown', (e: any) => {
-            var closesttd = (e.target as any).closest('td');
-            if (e.keyCode === 39 && !isNullOrUndefined(closesttd.nextSibling)) {
-                this.editACell(closesttd.nextSibling);
+    load = () => {
+        (this.grid as GridComponent).element.addEventListener('keydown', (e) => {
+            var closesttd = (e.target as HTMLElement).closest('td');
+            if (e.keyCode === 39 && !isNullOrUndefined(((closesttd as HTMLTableCellElement).nextSibling as HTMLElement))) {
+                this.editACell(((closesttd as HTMLTableCellElement).nextSibling as  HTMLElement));
             }
-            if (e.keyCode === 37 && !isNullOrUndefined(closesttd.previousSibling) &&
-                !(this.grid as any).getColumnByIndex(
-                    parseInt(closesttd.previousSibling.getAttribute('data-colindex'))).isPrimaryKey)
+            if (e.keyCode === 37 && !isNullOrUndefined(((closesttd as HTMLTableCellElement).previousSibling as HTMLElement)) &&
+                !(this.grid as GridComponent).getColumnByIndex(
+                    parseInt((((closesttd as HTMLTableCellElement).previousSibling  as HTMLElement).getAttribute('data-colindex') as string))).isPrimaryKey)
             {
-                this.editACell(closesttd.previousSibling);
+                this.editACell(((closesttd as HTMLTableCellElement).previousSibling as HTMLElement));
             }
-            if (e.keyCode === 40 && !isNullOrUndefined(closesttd.closest('tr').nextSibling)) {
+            if (e.keyCode === 40 && !isNullOrUndefined((((closesttd as HTMLTableCellElement).closest('tr') as HTMLTableRowElement).nextSibling as HTMLElement ))) {
                 this.editACell(
-                    closesttd.closest('tr').nextSibling.querySelectorAll('td')[
-                    parseInt(closesttd.getAttribute('data-colindex'))]);
+                    (((closesttd as HTMLTableCellElement).closest('tr') as  HTMLTableRowElement).nextSibling as HTMLElement).querySelectorAll('td')[
+                    parseInt(((closesttd as HTMLTableCellElement).getAttribute('data-colindex') as string))]);
             }
-            if ( e.keyCode === 38 && !isNullOrUndefined(closesttd.closest('tr').previousSibling)) {
+            if ( e.keyCode === 38 && !isNullOrUndefined((((closesttd as HTMLTableCellElement ).closest('tr') as HTMLTableRowElement).previousSibling as ChildNode))) {
                 this.editACell(
-                    closesttd.closest('tr').previousSibling.querySelectorAll('td')[
-                     parseInt(closesttd.getAttribute('data-colindex'))]);
+                    (((closesttd as HTMLTableCellElement).closest('tr') as HTMLTableRowElement).previousSibling as HTMLElement).querySelectorAll('td')[
+                     parseInt(((closesttd as HTMLTableCellElement).getAttribute('data-colindex') as string))]);
             }
         });
     };
-    public editACell(args: any) {
-        (this.grid as any).editModule.editCell(
-            parseInt((args as any).getAttribute('index')),
-            (this.grid as any).getColumnByIndex(parseInt((args as any).getAttribute('data-colindex'))).field);
+    public editACell(args: HTMLElement) {
+        (this.grid as GridComponent).editModule.editCell(
+            parseInt((args.getAttribute('index') as string)),
+            (this.grid as GridComponent).getColumnByIndex(parseInt(args.getAttribute('data-colindex') as string)).field);
     }
 }
 

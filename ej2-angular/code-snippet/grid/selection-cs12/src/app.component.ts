@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
   public selectionOptions?: SelectionSettingsModel;
   public pageOptions?: PageSettingsModel;
   public dialogVisible: boolean = false;
-  public selectedRecords: any[] = [];
+  public selectedRecords: Order[] = [];
   @ViewChild('grid')
   public grid?: GridComponent;
 
@@ -49,10 +49,18 @@ export class AppComponent implements OnInit {
   }
 
   showSelectedRecords(): void {
-    this.selectedRecords = (this as any).grid.getSelectedRecords();
-    this.dialogVisible = true;
+    this.selectedRecords = (this.grid as GridComponent).getSelectedRecords();
+    if (this.selectedRecords.length > 0) {
+      this.dialogVisible = true;
+    }
   }
   dialogClose(): void {
     this.dialogVisible = false;
   }
+}
+interface Order {
+  OrderID?: number;
+  CustomerID?: string;
+  ShipCountry?: string;
+  Freight?: number;
 }

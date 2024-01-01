@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 import { GridComponent, Column } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +27,7 @@ export class AppComponent {
     { text: 'Ship Country', value: 'ShipCountry' },
   ];
   public dropdownFields: Object = { text: 'text', value: 'value' }; // Define fields for the dropdown
-  public currentColumn: any;
+  public currentColumn?: Column;
   public ngOnInit(): void {
     this.data = data;
     this.editSettings = {
@@ -42,13 +43,13 @@ export class AppComponent {
     this.pageSettings = { pageCount: 5 };
   }
 
-  public changeAlignment(args: any): void {
+  public changeAlignment(args: ChangeEventArgs): void {
     // Reset the allowEditing property of the previously selected column
     if (this.currentColumn) {
       this.currentColumn.allowEditing = true;
     }
     // Update the 'allowEditing' property for the selected column
-    this.currentColumn = this.grid?.getColumnByField(args.value) as Column;
+    this.currentColumn = this.grid?.getColumnByField((args.value as string)) as Column;
     this.currentColumn.allowEditing = false;
   }
 }

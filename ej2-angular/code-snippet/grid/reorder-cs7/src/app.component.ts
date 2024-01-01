@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
     reorderByIndex(): void {
-        (this.gridObj as GridComponent).reorderColumnByIndex(1, 3); // move column at index 1 to index 3
+        (this.gridObj as GridComponent).reorderColumnByIndex(1, 3); // move column from index 1 to index 3
     }
 }
 

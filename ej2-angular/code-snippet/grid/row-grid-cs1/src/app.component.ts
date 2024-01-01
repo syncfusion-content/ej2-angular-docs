@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
-import { orderDetails } from './datasource';
+import { orderDetails, columnDataType } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
   selector: 'app-root',
@@ -42,24 +43,24 @@ export class AppComponent {
     this.data = orderDetails;
   }
 
-  public onCheckBoxChange(args: any) {
-    if ((args as any).checked) {
-      for (let i = 0; i < (this.grid as any).getRowsObject().length; i++) {
-        if (((this.grid as any).getRowsObject()[i].data as any).CustomerID === 'VINET') {
+  public onCheckBoxChange(args: ChangeEventArgs) {
+    if (args.checked) {
+      for (let i = 0; i < (this.grid as GridComponent).getRowsObject().length; i++) {
+        if (((this.grid as GridComponent).getRowsObject()[i].data as columnDataType).CustomerID === 'VINET') {
           // check the row value
-          this.rowIndex = (this.grid as any).getRowsObject()[i].index; //get particular row index
-          ((this.grid as any).getRowByIndex(this.rowIndex) as any).style.display =
+          this.rowIndex = (this.grid as GridComponent).getRowsObject()[i].index; //get particular row index
+          ((this.grid as GridComponent).getRowByIndex(this.rowIndex) as HTMLElement).style.display =
             'none'; //hide row
-          (this.hiddenRows as any).push(this.rowIndex); // add row index to hiddenRows array
+          this.hiddenRows.push((this.rowIndex as number)); // add row index to hiddenRows array
         }
       }
-      if ((this.hiddenRows as any).length > 0) {
+      if (this.hiddenRows.length > 0) {
         this.message = `Rows with a customer name column value of VINET have been hidden`;
       }
     } else {
       // Show hidden rows
-      (this.hiddenRows as any).forEach((rowIndex: number) => {
-        ((this.grid as any).getRowByIndex(rowIndex) as any).style.display = '';
+      this.hiddenRows.forEach((rowIndex: number) => {
+        ((this.grid as GridComponent).getRowByIndex(rowIndex) as HTMLElement).style.display = '';
       });
       this.hiddenRows = [];
       this.message = 'Show all hidden rows';

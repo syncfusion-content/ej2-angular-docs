@@ -33,9 +33,9 @@ export class AppComponent implements OnInit {
 
     actionComplete(args: DialogEditEventArgs) {
         if (((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add')) {
-            // Disable deafault valdation.
+            // Disable default validation.
             (args as any).form.ej2_instances[0].rules = {};
-            // Set initail Focus
+            // Set initial Focus
             if ((args as any).requestType === 'beginEdit') {
                 ((args as any).form.elements.namedItem('CustomerID')as HTMLInputElement).focus();
             }

@@ -26,8 +26,7 @@ import { data } from './datasource';
                   </e-column>
                 </e-columns>
               </ejs-grid>
-            <div>`,
-  // styleUrls: ['./app.component.css']
+            <div>`
 })
 export class AppComponent implements OnInit {
 
@@ -39,10 +38,13 @@ export class AppComponent implements OnInit {
     this.data = data;
   }
   changeHeaderHeight(event: MouseEvent): void {
-    const heightMap = { small: '20px', medium: '42px', big: '60px' };
-    const headerCells = (this.grid as GridComponent).getHeaderContent().querySelectorAll('.e-headercell');
-    headerCells.forEach((headerCell: any) => {
-      (headerCell as HTMLElement).style.height = (heightMap as any)[
+    const heightMap: { [key: string]: string } = {
+      small: '20px',
+      medium: '42px',
+      big: '60px'
+    };    const headerCells = (this.grid as GridComponent).getHeaderContent().querySelectorAll('.e-headercell');
+    headerCells.forEach((headerCell:Element) => {
+      (headerCell as HTMLElement).style.height = (heightMap)[
         (event.target as HTMLButtonElement).id
       ];
     });
