@@ -27,7 +27,7 @@ Switch bar and handle can be customized as per requirement using CSS rules. Swit
 {% include code-snippet/switch/how-to-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/switch/on-off-cs1/src/styles.css %}
+{% include code-snippet/switch/how-to-cs1/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
