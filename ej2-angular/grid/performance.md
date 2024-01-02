@@ -39,7 +39,7 @@ When integrating image or template elements into a column, it's recommended to u
 
 To improve the performance of Syncfusion Grid component during the initial render as well as certain actions, suggested you to download the specific component scripts using CRG (Custom Resource Generator) to speed up the project. By default, the ej2.min.js script file contains all the Syncfusion component scripts. So, it will take some time to load the scripts to the project. Using [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), you can select the components which you want to use, and the modules for those components, then you can download the scripts and CSS for the selected components and use them as per your need.
 
-**Website link**: https://crg.syncfusion.com/ 
+[CRG website link](https://crg.syncfusion.com/) 
 
 So to improve the performance of grid during the initial rendering, suggested you to refer individual script and CSS.
 
@@ -58,7 +58,7 @@ The Angular DataGrid provides support for various adaptors (OData, ODataV4, WebA
 
 ## How to avoid MaxJsonLength error while passing large amount of records
 
-The Angular Grid control is client-server based. So, we send the data as JSON object between client and server. The reported issue occurs due to the serialization of the large-sized JSON object. We need to increase the maximum length for serializing the large-sized JSON object. You have to alter the [MaxJsonLength]( https://social.msdn.microsoft.com/Forums/en-US/ab1a5864-46e2-4c57-9511-dc3f60cc314a/how-to-increase-maxjsonlength-for-json-post-in-mvc3?forum=aspmv) property on your web.config file or in the place of deserialization.
+The Angular Grid control is client-server based. So, we send the data as JSON object between client and server. The reported issue occurs due to the serialization of the large-sized JSON object. We need to increase the maximum length for serializing the large-sized JSON object. You have to alter the [MaxJsonLength](https://social.msdn.microsoft.com/Forums/en-US/ab1a5864-46e2-4c57-9511-dc3f60cc314a/how-to-increase-maxjsonlength-for-json-post-in-mvc3?forum=aspmv) property on your web.config file or in the place of deserialization.
 
 ```csharp
 var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
@@ -68,20 +68,15 @@ var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 
 The reported performance degradation issue is specifically linked to the Angular framework and is unrelated to the Syncfusion Grid.
 
-When your application's DOM is populated with a large number of items, this problem arises as continuous change detection is applied (e.g., typing into an input continuously). For more information on common reasons for slowdowns in Angular apps, you can refer to the following links:
+When your application's DOM is populated with a large number of items, this problem arises as continuous change detection is applied (e.g., typing into an input continuously). For more information on common reasons for slowdowns in Angular apps, you can [refer](https://blog.ninja-squad.com/2018/09/27/angular-performances-part-4/ ) to the [documentation](https://www.thirdrocktechkno.com/blog/top-reasons-why-your-angular-app-is-slow/ ) links:
   
-* https://www.thirdrocktechkno.com/blog/top-reasons-why-your-angular-app-is-slow/ 
-* https://blog.ninja-squad.com/2018/09/27/angular-performances-part-4/ 
-  
-In Angular, there are two default change detection strategies available:
-  
-**Angular Documentation**: https://angular.io/api/core/ChangeDetectionStrategy 
+In [Angular](https://angular.io/api/core/ChangeDetectionStrategy), there are two default change detection strategies available:
   
 * **Default**:               
-Utilizes the default CheckAlways strategy, where change detection is automatic until explicitly deactivated. For example, entering a value into a text box triggers continuous change detection for all template references, leading to the reported issue. 
+Utilizes the default `CheckAlways` strategy, where change detection is automatic until explicitly deactivated. For example, entering a value into a text box triggers continuous change detection for all template references, leading to the reported issue. 
   
 * **OnPush**: 
-Adopts the CheckOnce strategy, disabling automatic change detection until reactivated by setting the strategy to Default (CheckAlways). Enabling this strategy ensures that change detection triggers only for the input text box, rather than for all template references, overcoming the reported issue. 
+Adopts the `CheckOnce` strategy, disabling automatic change detection until reactivated by setting the strategy to Default (CheckAlways). Enabling this strategy ensures that change detection triggers only for the input text box, rather than for all template references, overcoming the reported issue. 
   
 To address this, it's recommended to implement the OnPush change detection strategy in your application. This can be achieved by using the following code snippet:
 
@@ -94,10 +89,10 @@ To address this, it's recommended to implement the OnPush change detection strat
 }) 
 ```
 Using the OnPush strategy may lead to child components not being updated when the input changes. You can address this by referring to the following links,
-* https://blog.angular-university.io/onpush-change-detection-how-it-works/
-* https://angular.io/api/core/ApplicationRef#tick  
-* https://angular.io/api/core/testing/tick#description 
-* https://angular.io/api/core/ChangeDetectorRef#!#detectChanges-anchor 
+* [OnPush Change Detection](https://blog.angular-university.io/onpush-change-detection-how-it-works/)
+* [ApplicationRef - Tick](https://angular.io/api/core/ApplicationRef#tick)
+* [Tick - Description](https://angular.io/api/core/testing/tick#description)
+* [DetectChange - Anchor](https://angular.io/api/core/ChangeDetectorRef#!#detectChanges-anchor)
 
 ## Microsoft excel limitation while exporting millions of records to excel file format
 
