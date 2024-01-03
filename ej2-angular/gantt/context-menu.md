@@ -69,3 +69,7 @@ The following sample shows context menu item for parent rows to expand or collap
 {% previewsample "page.domainurl/samples/gantt/contextmenu/custom-cs1" %}
 
 > You can show an specific item in context menu for header/content area in the Gantt control by defining the `target` property.
+
+## Touch interaction
+
+To perform `long press` action on a row, [`context menu`](context-menu/#context-menu) is opened, and then tap a menu item to trigger its action.

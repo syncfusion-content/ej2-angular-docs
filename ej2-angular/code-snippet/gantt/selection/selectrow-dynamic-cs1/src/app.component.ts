@@ -1,35 +1,36 @@
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
+import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+
 
 @Component({
     selector: 'app-root',
     template:
-       `<button ejs-button id='selectRow' (click)='select()'>Select Row</button>
+        `<button ejs-button id='selectRow' (click)='select()'>Select Row</button>
+       <button ejs-button id='selectMultipleRow' (click)='selectMultiple()'>Select Multiple Row</button>
        <br><br>
        <ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
-export class AppComponent{
+export class AppComponent {
     // Data for Gantt
     public data?: object[];
     public taskSettings?: object;
-    @ViewChild('gantt', {static: true})
-    public ganttObj?: GanttComponent| any;
+    public selectionSettings?: SelectionSettingsModel;
+    @ViewChild('gantt', { static: true })
+    public ganttObj?: GanttComponent | any;
     public ngOnInit(): void {
-        this.data =  [
+        this.data = [
             {
                 TaskID: 1,
                 TaskName: 'Project Initiation',
                 StartDate: new Date('04/02/2019'),
                 EndDate: new Date('04/21/2019'),
                 subtasks: [
-                    {  TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
-                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50  },
+                    { TaskID: 2, TaskName: 'Identify Site location', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
+                    { TaskID: 3, TaskName: 'Perform Soil test', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
                     { TaskID: 4, TaskName: 'Soil test approval', StartDate: new Date('04/02/2019'), Duration: 4, Progress: 50 },
                 ]
             },
@@ -46,19 +47,26 @@ export class AppComponent{
             },
         ];
         this.taskSettings = {
-                id: 'TaskID',
-                name: 'TaskName',
-                startDate: 'StartDate',
-                endDate: 'EndDate',
-                duration: 'Duration',
-                progress: 'Progress',
-                dependency: 'Predecessor',
-                child: 'subtasks'
+            id: 'TaskID',
+            name: 'TaskName',
+            startDate: 'StartDate',
+            endDate: 'EndDate',
+            duration: 'Duration',
+            progress: 'Progress',
+            dependency: 'Predecessor',
+            child: 'subtasks'
+        };
+        this.selectionSettings = {
+            mode: 'Row',
+            type: 'Multiple',
         };
     }
     select(): void {
         this.ganttObj.selectionModule.selectRow(2);
-        };
+    };
+    selectMultiple(): void {
+        this.ganttObj.selectionModule.selectRows([1, 2, 3]); // passing the record index to select the rows
+    };
 }
 
 
