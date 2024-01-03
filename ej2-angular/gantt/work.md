@@ -10,6 +10,8 @@ domainurl: ##DomainURL##
 
 # Work in Angular Gantt component
 
+## Work
+
 The work is the total hours required to complete a task. Work can be mapped from the data source field using the property [`taskFields.work`](https://ej2.syncfusion.com/angular/documentation/api/gantt/taskFields/#work). Work can be measured in `Hour`, `Day`, `Minute`. By default, work is measured in `Hour` and it can be changed, by using the property [`workUnit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#viewtype).
 
 >Note: When the work field is mapped from the data source, the default task type will be `FixedWork`.

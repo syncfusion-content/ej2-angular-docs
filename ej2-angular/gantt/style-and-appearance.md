@@ -49,3 +49,32 @@ Section | CSS Class | Purpose of Class
 **Baseline**|e-baseline-bar|This class is added to the baseline.
 ||e-baseline-gantt-milestone-container|This class is added to the baseline of milestone tasks.
 **Tooltip**|e-gantt-tooltip|This class is added to the tooltip.
+
+## Grid lines
+
+In Gantt component, you can show or hide the grid lines in the TreeGrid side and chart side by using the [`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridlines) property.
+
+The following options are available in Gantt component for rendering grid lines,
+
+* Horizontal: The horizontal grid lines alone will be visible.
+* Vertical: The vertical grid lines alone will be visible.
+* Both: Both the horizontal and vertical grid lines will be visible on the TreeGrid and chart sides.
+* None: Gridlines will not be visible on TreeGird and chart sides.
+
+> By default, the [`gridLines`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#gridLines) property is set with `Horizontal` type.
+
+The following code example shows how to change the gridlines rendering mode in the Gantt component.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/appearance-customization/gridlines-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/appearance-customization/gridlines-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/appearance-customization/gridlines-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/appearance-customization/gridlines-cs1" %}

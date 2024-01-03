@@ -115,6 +115,16 @@ In the following code, the rows which contains `TaskId` value as 3 and 4 are sel
   
 {% previewsample "page.domainurl/samples/gantt/selection/multipleSelection-cs1" %}
 
+## Touch interaction
+
+When you `tap` gantt row, tapped row will be selected.
+
+[`Single selection`](selection/#selection-mode) : To select a single row or cell, perform `single tap` on it.
+
+[`Multiple selection`](selection/#multiple-row-selection) : To perform multiple selection, `tap` on the multiple selection popup, and then tap the desired rows or cells.
+
+![Multiple selection](images/multiple-selection.PNG)
+
 ## See Also
 
 * [Touch interaction](../touch-interaction/#selection)

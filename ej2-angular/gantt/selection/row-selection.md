@@ -48,7 +48,7 @@ You can select a row at the time of loading by setting the index of the row to t
 
 ## Selecting a row dynamically
 
-You can also select a row dynamically using the [`selectRow`](https://ej2.syncfusion.com/angular/documentation/api/gantt/selection/#selectrow) method. The following code demonstrates how to select a row dynamically by clicking the custom button.
+You can also select a single row dynamically using the [`selectRow`](https://ej2.syncfusion.com/angular/documentation/api/gantt/selection/#selectrow) method. Similarly, you can use the [`selectRows`](https://ej2.syncfusion.com/angular/documentation/api/gantt/selection/#selectrows) method to dynamically select multiple rows. The following code demonstrates how to select a row dynamically by clicking the custom button.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,24 +81,6 @@ You can select multiple rows by setting the [`selectionSettings.type`](https://e
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/selection/multiplerow-cs1" %}
-
-## Selecting multiple rows dynamically
-
-You can also select rows dynamically using the [`selectRows`](https://ej2.syncfusion.com/angular/documentation/api/gantt/selection/#selectrows) method. The following code demonstrates how to select rows dynamically by clicking the custom button.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/selection/multiplerow-dynamic-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/multiplerow-dynamic-cs1/src/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/selection/multiplerow-dynamic-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/gantt/selection/multiplerow-dynamic-cs1" %}
 
 ## Customize row selection action
 
