@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
         this.data1 = [{ x: 'Jamesh', y: 5 }, { x: 'Michael', y: 4 }, { x: 'John', y: 5 }];
         this.data2 = [{ x: 'Jamesh', y: 4 }, { x: 'Michael', y: 3 }, { x: 'John', y: 4 }];
         this.data3 = [{ x: 'Jamesh', y: 1 }, { x: 'Michael', y: 2 }, { x: 'John', y: 2 }];
-        this.chart!.primaryXAxis = {
+        this.primaryXAxis = {
            title: 'Manager',
             valueType: 'Category', interval: 1, majorGridLines: { width: 0 }
             };

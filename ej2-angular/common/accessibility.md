@@ -22,7 +22,7 @@ The accessibility of the components consists of the following standards and aspe
 
 * [ADA](https://www.ada.gov/) - A law to ensure that people with disabilities have the same opportunities and access as people without disabilities.
 
-* [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/) - The Web Content Accessibility Guidelines (WCAG) provide guidelines developed by the World Wide Web Consortium (W3C) to ensure web content is accessible to people with disabilities. `WCAG` establishes a framework of accessibility principles and their associated success criteria. The level of accessibility conformance achieved by a web application is determined by the extent to which it meets these success criteria, categorized into three levels: A, AA, and AAA.
+* [WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/) - The Web Content Accessibility Guidelines (WCAG) provide guidelines developed by the World Wide Web Consortium (W3C) to ensure web content is accessible to people with disabilities. `WCAG 2.2` establishes a framework of accessibility principles and their associated success criteria. The level of accessibility conformance achieved by a web application is determined by the extent to which it meets these success criteria, categorized into three levels: A, AA, and AAA.
 
 * [Section 508](https://www.section508.gov/) - It is a set of guidelines for making electronic and information technology (EIT) accessible to people with disabilities. These standards apply to federal agencies in the United States, and they are based on the Web Content Accessibility Guidelines (WCAG).
 
@@ -42,7 +42,7 @@ There are several methodologies of accessibility validation that can be performe
 
 * Each Angular component is subjected to manual testing with a screen reader and also automated test cases to ensure the component's required attributes.
 
-* Attributes are allocated and updated correctly during interaction as well. Each component has been assigned a distinct `Role` attribute and its own set of ARIA attributes defined by the [WAI-ARIA 2.2](https://www.w3.org/TR/WCAG22/) specification.
+* Attributes are allocated and updated correctly during interaction as well. Each component has been assigned a distinct `Role` attribute and its own set of ARIA attributes defined by the [WCAG 2.2](https://www.w3.org/TR/WCAG22/) specification.
 
 In addition to the methodologies mentioned above, Syncfusion Angular components are constructed to support the following accessibility aspects.
 
@@ -78,7 +78,7 @@ Syncfusion Angular components will keep improving when there is anything require
 
 ## Accessibility support for specific components
 
-Consult the component-specific documents below for detailed information about how Syncfusion Angular components ensure compliance with accessibility standards, encompassing Section 508, WAI-ARIA, WCAG, keyboard navigation, and more.
+Consult the component-specific documents below for detailed information about how Syncfusion Angular components ensure compliance with accessibility standards, encompassing Section 508, WAI-ARIA, WCAG 2.2, keyboard navigation, and more.
 
 <style>
 # table
@@ -185,7 +185,6 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/switch/accessibility">Toggle Switch Button</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/signature/accessibility">Signature</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rating/accessibility">Rating</a></div>
-        <div><p class="controlcategory">FORMS</p></div>
     </td>
     <td>
         <div><p class="controlcategory">DROPDOWNS</p></div>

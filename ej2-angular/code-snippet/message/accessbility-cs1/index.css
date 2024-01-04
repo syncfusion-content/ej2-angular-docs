@@ -1,0 +1,16 @@
+body {
+  margin: 50px;
+}
+
+.msg-variant-section .content-section {
+  max-width: 520px;
+}
+
+.msg-variant-section .e-message {
+  margin: 10px 5px;
+}
+
+.msg-variant-section {
+  display: flex;
+  justify-content: space-between;
+}

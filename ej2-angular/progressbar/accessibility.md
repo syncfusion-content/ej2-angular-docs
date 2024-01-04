@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Accessibility in Angular Range navigator component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Range navigator component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Progress bar component | Syncfusion
+description: Learn here all about Accessibility in Syncfusion Angular Progress bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
 domainurl: ##DomainURL##
 ---
+# Accessibility in Angular Progress bar component
 
-# Accessibility in Angular Range navigator component
+The Progress bar component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-The Range navigator component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
-
-The accessibility compliance for the Range navigator component is outlined below.
+The accessibility compliance for the Progress bar component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -41,27 +40,30 @@ The accessibility compliance for the Range navigator component is outlined below
 
 ## WAI-ARIA attributes
 
-The Range navigator component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Range navigator component:
+The Progress bar component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Progress bar component:
 
-* region (role)
+* progressbar (role)
+* aria-valuemin (attribute)
+* aria-valuemax (attribute)
+* aria-valuenow (attribute)
 * aria-label (attribute)
 
 ## Keyboard interaction
 
-The Range navigator component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Range navigator component.
+The Progress bar component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Progress bar component.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Tab</kbd> | Moves the focus to the Range navigator element. |
-| <kbd>Ctrl + P</kbd> | Prints the Range navigator. |
+| <kbd>Tab</kbd> | Moves the focus to the Progress bar element. |
+| <kbd>Ctrl + P</kbd> | Prints the Progress bar. |
 
 ## Ensuring accessibility
 
-The Range navigator component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Progress bar component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Range navigator component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/range-navigator.html) in a new window to evaluate the accessibility of the Range navigator component with accessibility tools.
+The accessibility compliance of the Progress bar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/progress-bar.html) in a new window to evaluate the accessibility of the Progress bar component with accessibility tools.
 
-{% previewsample "https://ej2.syncfusion.com/accessibility/range-navigator.html" %}
+{% previewsample "https://ej2.syncfusion.com/accessibility/progress-bar.html" %}
 
 ## See also
 
