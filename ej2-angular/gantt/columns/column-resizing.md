@@ -49,3 +49,11 @@ In the following example, the minimum and maximum widths are defined for the `Du
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/columns/min-max-cs1" %}
+
+## Touch interation
+
+When the right edge of the column header cell is `tapped`, a floating handler will be visible over the right border of the column. To [`resize`](columns/#column-resizing) the column, drag the floating handler as needed.
+
+The following screenshot represents the Gantt column resizing in touch device.
+
+![Column resize](images/column-resize.png)

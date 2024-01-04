@@ -88,163 +88,23 @@ On expand action [`expanding`](https://ej2.syncfusion.com/angular/documentation/
   
 {% previewsample "page.domainurl/samples/gantt/rows/expand-customize-cs1" %}
 
-## Drag and drop
+## Customize rows and cells
 
-You can dynamically rearrange the rows in the Gantt control by using the `allowRowDragAndDrop` property. Using this property, row drag and drop can be enabled or disabled in Gantt. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows
-
-To use row drag and drop feature, inject the `RowDDService` and `EditService` in the provider section of `AppModule`.
+While rendering the TreeGrid part in Gantt, the [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdatabound) and [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#querycellinfo) events trigger for every row and cell. Using these events, you can customize the rows and cells. The following code example shows how to customize the cell and row elements using these events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/deafultdrag-cs1/src/app.component.ts %}
+{% include code-snippet/gantt/appearance-customization/customize-row-cells-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/deafultdrag-cs1/src/app.module.ts %}
+{% include code-snippet/gantt/appearance-customization/customize-row-cells-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/deafultdrag-cs1/src/main.ts %}
+{% include code-snippet/gantt/appearance-customization/customize-row-cells-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/gantt/rows/deafultdrag-cs1" %}
-
-### Multiple row drag and drop
-
-Gantt also supports dragging multiple rows at a time and drop them on any rows above, below, or at child positions. In Gantt, you can enable the multiple drag and drop by setting the `selectionSettings.type` to `Multiple` and you should enable the `allowRowDragAndDrop` property.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/multidrag-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/multidrag-cs1/src/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/multidrag-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/gantt/rows/multidrag-cs1" %}
-
-### Taskbar drag and drop between rows
-
-The Gantt feature empowers users to efficiently reorganize records by seamlessly moving taskbar and rearranging their positions through a simple drag-and-drop action. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows.
-
-This mode can be enable by setting the [allowTaskbarDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowtaskbardraganddrop) property to `true`.
-
-To use row drag and drop feature, inject the `RowDD` and `Edit` module in Gantt.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/dynamicdrag-cs2/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/dynamicdrag-cs2/src/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/dynamicdrag-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/gantt/rows/dynamicdrag-cs2" %}
-
-### Drag and drop events
-
-We provide various events to customize the row drag and drop action, the following table explains about the available events and its details.
-
-Event Name |Description
------|-----
-`rowDragStartHelper`  |Triggers when clicking the drag icon or Gantt row.
-`rowDragStart`  |Triggers when drag action starts in Gantt.
-`rowDrag`  |Triggers while dragging the Gantt row.
-`rowDrop`  |Triggers when a drag row was dropped on the target row.
-
-### Customize row drag and drop action
-
-In Gantt, the `rowDragStartHelper` and `rowDrop` events are triggered on row drag and drop action. Using this event, you can prevent dragging of particular record, validate the drop position, and cancel the drop action based on the target record and dragged record. The following topics explains about this.
-
-#### Prevent dragging of particular record
-
-You can prevent drag action of the particular record by setting the `cancel` property to `true`, which is available in the `rowDragStartHelper` event argument based on our requirement. In the following sample, drag action was restricted for first parent record and its child records.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/preventdrag-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/preventdrag-cs1/src/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/preventdrag-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/gantt/rows/preventdrag-cs1" %}
-
-#### Validating drop position
-
-You can prevent drop action based on the drop position and target record, by this, you can prevent dropping particular task on a specific task or specific position. This can be achieved by setting the `cancel` property to `true`, which is available in the `rowDrop` event argument.
-
-In the following sample, we have prevented the drop action based on the position. In this sample, you cannot drop row as child in any of the available rows.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/preventdrop-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/preventdrop-cs1/src/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/preventdrop-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/gantt/rows/preventdrop-cs1" %}
-
-### Prevent reordering a row as child to another row
-
-You can prevent the default behavior of dropping rows as children to the target by setting the `cancel` property to `true` in [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/gantt/#rowdrop) event argument. You can also change the drop position after cancelling using [reorderRows](https://ej2.syncfusion.com/angular/documentation/api/gantt/#reorderrows) method.
-
-In the below example drop action is cancelled and dropped above to target row.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/preventdrop-cs2/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/preventdrop-cs2/src/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/preventdrop-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/gantt/rows/preventdrop-cs2" %}
-
-### Perform row drag and drop action programmatically
-
-Gantt provides option to perform row drag and drop action programmatically by using the `reorderRows` method, this method can be used for any external actions like button click.
-The following arguments are used to specify the positions to drag and drop a row:
-
-* `fromIndexes`: Index value of source(dragging) row.
-* `toIndex`: Value of target index.
-* `position`: Drop positions such as above, below, or child.
-
-The following code example shows how to drag and drop a row on button click action.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/rows/dynamicdrag-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/dynamicdrag-cs1/src/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/rows/dynamicdrag-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/gantt/rows/dynamicdrag-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/appearance-customization/customize-row-cells-cs1" %}
 
 ## Customize rows
 
@@ -307,3 +167,34 @@ In the following demo, **Soil test approval** cell is spanned to two rows in the
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/rows/rowSpanning-cs1" %}
+
+## Clip mode
+
+The clip mode provides options to display its overflow cell content and it can be defined by the [`columns.clipMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#clipmode) property.
+
+The following are three types of `clipMode`:
+
+* `Clip`: Truncates the cell content when it overflows its area.
+* `Ellipsis`: Displays ellipsis when content of the cell overflows its area.
+* `EllipsisWithTooltip`: Displays ellipsis when content of the cell overflows its area; it displays the tooltip content when hover over ellipsis.
+
+> NOTE
+> By default, all the column's [`clipMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#clipmode) property is defined as `EllipsisWithTooltip`.
+
+### Cell tooltip
+
+You can enable or disable the Grid cell tooltip using the [`columns.clipMode`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#clipmode) property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/tooltip/cell-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/tooltip/cell-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/tooltip/cell-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/tooltip/cell-cs1" %}

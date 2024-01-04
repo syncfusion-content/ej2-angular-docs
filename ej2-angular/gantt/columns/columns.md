@@ -111,3 +111,73 @@ Format | Formatted value
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/columns/dateformat-cs1" %}
+
+## Change tree/expander column
+
+The tree/expander column is a column in the Gantt component, that has icons to expand or collapse the parent records. You can define the tree column index in the Gantt component by using the [`treeColumnIndex`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#treecolumnindex) property and the default value of this property is `0`. The following code example shows how to use this property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/columns/treecolumn-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/columns/treecolumn-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/columns/treecolumn-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/columns/treecolumn-cs1" %}
+
+## Show or Hide columns dynamically
+
+You can show or hide gantt columns dynamically using external buttons by invoking the [`showColumn`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#showcolumn) or [`hideColumn`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#hidecolumn) method.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/columns/showhide-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/columns/showhide-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/columns/showhide-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/columns/showhide-cs1" %}
+
+## Controlling Gantt Column actions
+
+You can enable or disable gantt action for a particular column by setting the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowfiltering), [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowsorting), [`allowReordering`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowreordering), and [`allowEditing`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editsettings) properties.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/columns/gridactions-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/columns/gridactions-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/columns/gridactions-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/columns/gridactions-cs1" %}
+
+## Column type
+
+Column type can be specified using the `columns.type` property. It specifies the type of data the column binds.
+
+If the `format` is defined for a column, the column uses `type` to select the appropriate format option [number](../common/internationalization/#number-formatting) or [date](../common/internationalization/#manipulating-datetime).
+
+Gantt column supports the following types:
+* string
+* number
+* boolean
+* date
+* datetime
+
+> If the `type` is not defined, it will be determined from the first record of the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource).
+> In case if the first record of the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#datasource) is null/blank value for a column then it is necessary to define the `type` for that column.
