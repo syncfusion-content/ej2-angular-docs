@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Signature component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Signature component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Signature Component | Syncfusion
+description: Checkout and learn about getting started with Syncfusion Essential Angular Signature component, it's elements and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Signature component
+# Getting Started with Angular Signature Component
 
 This section explains how to create a simple Signature, and demonstrate the basic usage of the Signature module in an Angular environment.
 
