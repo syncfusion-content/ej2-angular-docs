@@ -32,7 +32,7 @@ import { environment } from './environments/environment';
 import { registerLicense } from '@syncfusion/ej2-base';
 
 // Registering Syncfusion license key
-registerLicense('License Key');
+registerLicense('Replace your generated license key here');
 
 if (environment.production) {
   enableProdMode();

@@ -7,7 +7,7 @@ import { ListViewComponent, ScrolledEventArgs } from '@syncfusion/ej2-angular-li
 @Component({
   selector: 'my-app',
   template: `<div class="grid-container"><div><h3>Chat</h3>
-    <ejs-listview id='listview' #list [dataSource]='result' height= 400
+    <ejs-listview id='listview' #list [dataSource]='result' height= 320
     width= 400 cssClass='e-list-template'  (scroll)="onListScrolled($event)" >
     <ng-template #template let-data>
       <div [style.display]="'flex'" [style.justify-content]="data.positionClass === 'right' ? 'flex-end' : ''" class="e-list-wrapper e-list-multi-line">

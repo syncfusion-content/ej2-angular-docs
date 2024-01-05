@@ -1,6 +1,6 @@
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import {
     AccumulationChart, AccumulationChartComponent, 
      IAccLoadedEventArgs} from '@syncfusion/ej2-angular-charts';
@@ -21,6 +21,7 @@ export class AppComponent implements OnInit {
     public startAngle?: number ;
     public endAngle?: number ;
     public title?: string ;
+    @ViewChild('pie')
     public pie?: AccumulationChartComponent | AccumulationChart;
     public loaded(args: IAccLoadedEventArgs): void {
         if (this.execute) {
