@@ -394,4 +394,4 @@ The following example demonstrates how the [actionBegin](https://ej2.syncfusion.
 ## See Also
 
 * [How to remove the Sorting indicator from the column headers in Angular Grid](https://www.syncfusion.com/forums/150597/how-to-remove-the-sorting-indicator-from-the-column-headers-in-angular-grid)
-* [How to change loading indicator in Angular Grid](./data-binding/data-binding.md#loading-animation)
+* [How to change loading indicator in Angular Grid](./data-binding/data-binding#loading-animation)

@@ -10,15 +10,17 @@ domainurl: ##DomainURL##
 
 # Excel exporting in Angular Grid component
 
-The Excel exporting feature in the Angular Grid component allows you to export the Grid data to an Excel document. This can be useful when you need to share or analyze the data in a spreadsheet format.
+The Excel or CSV exporting feature in the Angular Grid component allows you to export the Grid data to an Excel or CSV document. This can be useful when you need to share or analyze the data in a spreadsheet format.
 
-To enable Excel export in the Grid component, you need to set the [allowExcelExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowexcelexport) property to **true**. This property is responsible for enabling the Excel export option in the Grid.
+To enable Excel export in the Grid component, you need to set the [allowExcelExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowexcelexport) property to **true**. This property is responsible for enabling the Excel or CSV export option in the Grid.
 
-To initiate the export process, you need to use the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexport) method provided by the Grid component. This method is responsible for exporting the Grid data to an Excel document.
+To initiate the excel export process, you need to use the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexport) method provided by the Grid component. This method is responsible for exporting the Grid data to an Excel document.
 
-To use the Excel export feature, you need to inject the **ExcelExportService** in the provider section of your **AppModule**. This allows the Grid component to access the necessary services for exporting data to Excel.
+To use the Excel or CSV export feature, you need to inject the **ExcelExportService** in the provider section of your **AppModule**. This allows the Grid component to access the necessary services for exporting data to Excel or CSV.
 
-The following example demonstrates how to perform a Excel export action in the grid:
+> To initiate the CSV export process, you need to use the [csvExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#csvexport) method provided by the Grid component. This method is responsible for exporting the Grid data to an CSV document.
+
+The following example demonstrates how to perform a Excel or CSV export action in the grid:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,7 +42,7 @@ Showing a spinner while exporting in the Grid enhances the experience by display
 
 To show or hide a spinner while exporting the grid, you can utilize the [showSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid/#showspinner) and [hideSpinner](https://ej2.syncfusion.com/angular/documentation/api/grid/#hidespinner) methods provided by the Grid within the `toolbarClick` event.
 
-The [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event is triggered when a toolbar item in the Grid is clicked. Within the event handler, the code checks if the clicked **item** is related with Excel export, specifically the **Grid_excelexport** item. If a match is found, the `showSpinner` method is used on the Grid instance to display the spinner.
+The [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event is triggered when a toolbar item in the Grid is clicked. Within the event handler, the code checks if the clicked **item** is related with Excel or CSV export, specifically the **Grid_excelexport** or **Grid_csvexport** item. If a match is found, the `showSpinner` method is used on the Grid instance to display the spinner.
 
 To hide the spinner after the exporting is completed, bind the [excelExportComplete](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexportcomplete) event and use the `hideSpinner` method on the Grid instance to hide the spinner.
 
@@ -62,9 +64,9 @@ The following example demonstrates how to show and hide the spinner during Excel
 
 ## Binding custom data source while exporting
 
-The Grid component provides a convenient way to export data to a Excel format. With the Excel export feature, you can define a custom data source while exporting. This allows you to export data that is not necessarily bind to the grid, which can be generated or retrieved based on your application logic.
+The Grid component provides a convenient way to export data to a Excel or CSV format. With the Excel or CSV export feature, you can define a custom data source while exporting. This allows you to export data that is not necessarily bind to the grid, which can be generated or retrieved based on your application logic.
 
-To export data, you need to define the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#datasource) property within the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) object. This property represents the data source that will be used for the Excel export.
+To export data, you need to define the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#datasource) property within the [excelExportProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/) object. This property represents the data source that will be used for the Excel or CSV export.
 
 The following example demonstrates how to render custom dataSource during Excel export. By calling the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelexport) method and passing the `excelExportProperties` object through the grid instance, the grid data will be exported to a Excel using the dynamically defined data source.
 
@@ -152,7 +154,7 @@ The following example demonstrates how to export the grid with custom date forma
 
 ## Exporting multiple grids
 
-Exporting multiple grids in the Syncfusion Angular Grid component allows you to export different grids to compare them side by side in external applications on the same or different pages of a Excel file. Each grid is identified by its unique ID. You can specify which grid to export by listing their IDs in the [exportGrids](https://ej2.syncfusion.com/angular/documentation/api/grid/#exportgrids) property.
+Exporting multiple grids in the Syncfusion Angular Grid component allows you to export different grids to compare them side by side in external applications on the same or different pages of a Excel. Each grid is identified by its unique ID. You can specify which grid to export by listing their IDs in the [exportGrids](https://ej2.syncfusion.com/angular/documentation/api/grid/#exportgrids) property.
 
 ### Same sheet
 
@@ -214,7 +216,7 @@ The following example demonstrates how to export multiple grids to a Excel file 
 
 ## Exporting hierarchy grid 
 
-Exporting a hierarchy grid in the Syncfusion Angular Grid component allows you to generate a Excel document that includes the parent grid along with its child grids. This feature is useful when you need to export hierarchical data with its related details.
+Exporting a hierarchy grid in the Syncfusion Angular Grid component allows you to generate a Excel or CSV document that includes the parent grid along with its child grids. This feature is useful when you need to export hierarchical data with its related details.
 
 To achieve this, you can customize the exporting behavior by using the `ExcelExportProperties.hierarchyExportMode` property of the Grid. This property allows you to specify the exporting behavior for the hierarchy grid. The following options are available:
 
@@ -285,6 +287,11 @@ In the following example, the [toolbarClick](https://ej2.syncfusion.com/angular/
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/excel-exporting-formula" %}
+
+## Limitations
+
+* A CSV is a plain text format that does not support features such as cell rotation, font and color customization, column and row spanning, or adding formulas. CSV files store raw data without any formatting or styling.
+
 
 ## See Also
 

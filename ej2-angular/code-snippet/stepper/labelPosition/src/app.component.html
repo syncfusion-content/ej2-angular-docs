@@ -1,0 +1,22 @@
+<div class="stepperWithLabel">
+  <div class="e-btn-group labelPosition">
+    <input type="radio" id="start" name="position" value="start" (click)="updateLabelPosition($event);" />
+    <label class="e-btn" for="start">Start</label>
+    <input type="radio" id="end" name="position" value="end" (click)="updateLabelPosition($event);" />
+    <label class="e-btn" for="end">End</label>
+    <input type="radio" id="top" name="position" value="top" (click)="updateLabelPosition($event);" />
+    <label class="e-btn" for="top">Top</label>
+    <input type="radio" id="bottom" name="position" value="bottom" (click)="updateLabelPosition($event);" checked />
+    <label class="e-btn" for="bottom">Bottom</label>
+  </div>
+  <div class="stepper-section"> 
+    <ejs-stepper #ejStepper>
+      <e-steps>
+        <e-step label="Cart" iconCss="sf-icon-cart"></e-step>
+        <e-step label="Shipped" iconCss="sf-icon-transport"></e-step>
+        <e-step label="Payment" iconCss="sf-icon-payment"></e-step>
+        <e-step label="Delivered" iconCss="sf-icon-success"></e-step>
+      </e-steps>
+    </ejs-stepper>
+  </div>
+</div>

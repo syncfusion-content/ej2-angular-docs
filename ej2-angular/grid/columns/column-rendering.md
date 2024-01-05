@@ -10,6 +10,14 @@ domainurl: ##DomainURL##
 
 # Column Rendering
 
+In Syncfusion Angular Grid, column rendering provides you with the ability to finely control how data is presented. This allows you to manually define columns, automatically generate them, and dynamically customize data presentation. With column rendering, you can ensure that your data is displayed exactly as needed, offering a wide range of possibilities for organizing and showcasing information within the grid.
+
+The column definitions are used as the DataSource schema in the grid. The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions. The [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field) property of grid column is necessary to map the datasource values in the grid columns.
+
+> 1. If the column `field` is not specified in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource), the column values will be empty.
+> 2. If the `field` name contains **dot** operator, it is considered as complex binding.
+> 3. It is must to define the `field` property for a Template column, to perform CRUD or data Operations such as filtering, searching etc.
+> 
 ## Define columns manually 
 
 To define columns manually in grid, you can use the `e-columns` element to define the columns and represent each column with its respective properties such as [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#field), [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertext), [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type), and [width](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#width) set accordingly. This allows you to customize the column's behavior and appearance based on the requirements.

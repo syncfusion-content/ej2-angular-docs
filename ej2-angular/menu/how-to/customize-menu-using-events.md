@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Menu provides a set of [`events`](https://ej2.syncfusion.com/angular/documentation/api/menu#events) to enable users to customize it.
 
-The available events are [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeclose), [`beforeClose`](../..api//menu/#beforeopen), [`onClose`](https://ej2.syncfusion.com/angular/documentation/api/menu/#onclose), [`onOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#onopen), and [`select`](../..api//menu/#select).
+The available events are [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#beforeopen), [`beforeClose`](../..api//menu/#beforeclose), [`onClose`](https://ej2.syncfusion.com/angular/documentation/api/menu/#onclose), [`onOpen`](https://ej2.syncfusion.com/angular/documentation/api/menu/#onopen), and [`select`](../..api//menu/#select).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
