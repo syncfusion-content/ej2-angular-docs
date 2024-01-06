@@ -1,0 +1,20 @@
+<div class="stepperWithLabel">
+  <div class="e-btn-group stepperTypes">
+    <input type="radio" id="default" name="stepType" value="default" (click)="updateType($event);" checked/>
+    <label class="e-btn" for="default">Default</label>
+    <input type="radio" id="label" name="stepType" value="label" (click)="updateType($event);" />
+    <label class="e-btn" for="label">Label</label>
+    <input type="radio" id="indicator" name="stepType" value="indicator" (click)="updateType($event);" />
+    <label class="e-btn" for="indicator">Indicator</label>
+  </div>
+  <div class="stepper-section"> 
+    <ejs-stepper #ejStepper>
+      <e-steps>
+        <e-step label="Cart" iconCss="sf-icon-cart"></e-step>
+        <e-step label="Shipped" iconCss="sf-icon-transport"></e-step>
+        <e-step label="Payment" iconCss="sf-icon-payment"></e-step>
+        <e-step label="Delivered" iconCss="sf-icon-success"></e-step>
+      </e-steps>
+    </ejs-stepper>
+  </div>
+</div>

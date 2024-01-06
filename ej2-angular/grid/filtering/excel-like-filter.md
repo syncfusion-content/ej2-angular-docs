@@ -196,4 +196,4 @@ In the provided example, On-Demand Excel filter has been enabled for the Angular
 ## See also
 
 * [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
-* [How to change loading indicator in Angular Grid](../data-binding/data-binding.md#loading-animation)
+* [How to change loading indicator in Angular Grid](../data-binding/data-binding#loading-animation)

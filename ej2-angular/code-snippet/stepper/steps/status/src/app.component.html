@@ -1,0 +1,10 @@
+<div class="stepper-status-section">
+  <ejs-stepper #ejStepper id="stepper" (stepChanged)="handleStepChanged($event)">
+    <e-steps>
+      <e-step iconCss="sf-icon-cart" label="Cart"></e-step>
+      <e-step iconCss="sf-icon-payment" label="Payment"></e-step>
+      <e-step iconCss="sf-icon-success" label="Confirmation"></e-step>
+    </e-steps>
+  </ejs-stepper>
+</div>
+<div id="paymentStatus">Your payment has not started yet</div>

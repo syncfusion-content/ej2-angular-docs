@@ -8,6 +8,10 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
+# Columns in Angular Grid Component
+
+In Syncfusion Angular Grid, Columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the grid.
+
 ## Column types
 
 The Syncfusion Grid component allows you to specify the type of data that a column binds using the [columns.type](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format), such as [number](../../common/internationalization/#number-formatting) or [date](../../common/internationalization/#manipulating-datetime), for displaying the column data. 
@@ -49,7 +53,7 @@ Here is an example of how to specify column types in a grid using the types ment
 
 > To learn more about how to render boolean values as checkboxes in a Syncfusion GridColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/angular/documentation/grid/columns/columns#render-boolean-value-as-checkbox) section.
 
-## Column width
+## Column Width
 
 To adjust the column width in a Grid, you can use the [width](https://ej2.syncfusion.com/angular/documentation/api/grid/#width) property within the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/#columns) property of the Grid configuration. This property enables you to define the column width in pixels or as a percentage. You can set the width to a specific value, like **100** for 100 pixels, or as a percentage value, such as **25%** for 25% of the available width.
 
@@ -189,7 +193,7 @@ Format | Formatted value
 
 ### Format the date column based on localization 
 
-You can also format the date column based on the localization settings of the user's browser. You can use the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property of the Grid columns along with the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) property to specify the desired date format based on the locale.
+You can also format the date column based on the localization settings of the user's browser. You can use the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property of the Grid columns along with the [locale](https://helpej2.syncfusion.com/angular/documentation/api/grid/#locale) property to specify the desired date format based on the locale.
 
 In this example, the format property specifies the date format as "**yyyy-MMM-dd**", and the locale property specifies the locale as **"es-AR"** for Spanish (Argentina).
 
@@ -285,7 +289,7 @@ Here is an example of using the `textAlign` property to align the text of a Grid
 
 ## Render boolean value as checkbox
 
-The Grid component allows you to render boolean values as checkboxes in columns. This can be achieved by using the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#displayascheckbox) property, which is available in the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column/). This property is useful when you have a boolean column in your Grid and you want to display the values as checkboxes instead of the default text representation of **true** or **false**.
+The Grid component allows you to render boolean values as checkboxes in columns. This can be achieved by using the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#displayascheckbox) property, which is available in the [columns](https://helpej2.syncfusion.com/angular/documentation/api/grid/column/). This property is useful when you have a boolean column in your Grid and you want to display the values as checkboxes instead of the default text representation of **true** or **false**.
 
 To enable the rendering of boolean values as checkboxes, you need to set the `displayAsCheckBox` property of the `columns` to **true**.
 
@@ -489,7 +493,7 @@ Here's an example of how to show or hide a column based on the field in the Angu
   
 {% previewsample "page.domainurl/samples/grid/grid-cs30" %}
 
-## Controlling grid actions
+## Controlling Grid actions
 
 You can control various actions such as filtering, grouping, sorting, resizing, reordering, editing, and searching for specific columns in the Syncfusion Angular Grid using the following properties:
 
@@ -525,7 +529,7 @@ For more information check on this [documentation](https://ej2.syncfusion.com/an
 
 The Syncfusion Grid for Angular provides powerful features for manipulating columns in a grid. This section explains how to access columns, update column definitions, and add/remove columns using Syncfusion Grid properties, methods, and events.
 
-### Accessing columns
+### Accessing Columns
 
 To access columns in the Syncfusion Grid, you can use the following methods in the grid.
 
@@ -577,7 +581,7 @@ This method returns an array of field names of all the columns in the Grid.
 let fieldNames = this.grid.getColumnFieldNames()
 ```
 
-> For a complete list of column methods and properties, refer to this [section](https://ej2.syncfusion.com/angular/documentation/api/grid/column/).
+> For a complete list of column methods and properties, refer to this [section](https://helpej2.syncfusion.com/angular/documentation/api/grid/column/).
 
 ### Updating column definitions
 
@@ -597,9 +601,9 @@ You can update the column definitions in the Grid using the [columns](https://ej
   
 {% previewsample "page.domainurl/samples/grid/column-cs1" %}
 
-### Adding/removing columns
+### Adding/Removing Columns
 
-The Grid component allows you to dynamically add or remove columns to and from the grid using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column/) property, which can be accessed through the instance of the Grid.
+The Grid component allows you to dynamically add or remove columns to and from the grid using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column) property, which can be accessed through the instance of the Grid.
 
 To add a new column to the Grid, you can directly **push** the new column object to the columns property.To remove a column from the Grid, you can use the **pop** method, which removes the last element from the columns array of the Grid. Alternatively, you can use the splice method to remove a specific column from the columns array.
 

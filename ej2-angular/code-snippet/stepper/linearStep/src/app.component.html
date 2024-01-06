@@ -1,0 +1,18 @@
+<div class="stepperWithLabel">
+  <div class="e-btn-group stepperFlow">
+    <input type="radio" id="linear" name="linear" value="true" (click)="updateLinear($event);" checked/>
+    <label class="e-btn" for="linear">Linear</label>
+    <input type="radio" id="nonLinear" name="linear" value="false" (click)="updateLinear($event);" />
+    <label class="e-btn" for="nonLinear">Non-Linear</label>
+  </div>
+  <div class="stepper-section"> 
+    <ejs-stepper #ejStepper linear="true">
+      <e-steps>
+        <e-step label="Cart" iconCss="sf-icon-cart"></e-step>
+        <e-step label="Shipped" iconCss="sf-icon-transport"></e-step>
+        <e-step label="Payment" iconCss="sf-icon-payment"></e-step>
+        <e-step label="Delivered" iconCss="sf-icon-success"></e-step>
+      </e-steps>
+    </ejs-stepper>
+  </div>
+</div>
