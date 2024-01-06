@@ -1,0 +1,22 @@
+<div class="control-section">
+    <button ejs-button class="e-success" (click)="save()">Save</button>
+    <button ejs-button class="e-danger" (click)="restore()">restore</button>
+    <div id='message'>{{message}}</div>
+    <ejs-grid #Orders id="Orders" [dataSource]="data" allowPaging="true" allowSorting="true" allowFiltering="true"
+        [allowGrouping]="true" [editSettings]="editSettings" [groupSettings]="groupOptions"
+        [filterSettings]="filterOptions" [toolbar]="toolbar" [pageSettings]="pageSettings" [enablePersistence]="true"
+        height="320" (actionBegin)="actionBegin()">
+        <e-columns>
+            <e-column field="OrderID" headerText="Order ID" width="140" textAlign="Right" isPrimaryKey="true"
+                [validationRules]="orderidrules"></e-column>
+            <e-column field="CustomerID" headerText="Customer ID" width="140" [validationRules]="customeridrules">
+            </e-column>
+            <e-column field="Freight" headerText="Freight" width="140" format="C2" textAlign="Right"
+                editType="numericedit" [validationRules]="freightrules"></e-column>
+            <e-column field="OrderDate" [allowGrouping]="false" headerText="Order Date" width="120"
+                editType="datetimepickeredit" [format]="formatoptions" textAlign="Right"></e-column>
+            <e-column field="ShipCountry" headerText="Ship Country" width="150" editType="dropdownedit"
+                [edit]="editparams"></e-column>
+        </e-columns>
+    </ejs-grid>
+</div>

@@ -6,6 +6,11 @@
     font-style: normal;
 }
 
+.iconWithLabel {
+    margin-top: 30px;
+    padding: 30px;
+}
+
 .iconWithLabel [class^="sf-icon-"], .iconWithLabel [class*=" sf-icon-"] {
     font-family: 'Default' !important;
     speak: none;

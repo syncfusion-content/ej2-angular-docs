@@ -75,5 +75,6 @@ If column's `width` is not defined then tree grid will consider its value as `20
 
 * Programmatic selection using the **selectRows** method is not supported in virtual scrolling.
 * Virtual scrolling is not compatible with Batch editing, clipboard functionality and detail template.
+* When virtualization is active in a tree grid, the editCell method is unusable for records outside the currently visible viewport.
 
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

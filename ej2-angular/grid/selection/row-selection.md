@@ -194,6 +194,26 @@ The following example, demonstrates how to select a range of rows within the Gri
   
 {% previewsample "page.domainurl/samples/grid/selection-row-cs5" %}
 
+## Select grid rows based on certain condition
+
+You can programmatically select specific rows in the Angular Grid component based on a certain condition. This feature is particularly useful when you need to dynamically highlight or manipulate specific rows in the grid based on custom conditions. This functionality can be achieved using the [selectRows](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrows) method in the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event of Grid.
+
+In the below demo, we have selected the grid rows only when **EmployeeID** column value greater than **3**.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/custom-column-cs5/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/custom-column-cs5/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/custom-column-cs5/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/custom-column-cs5" %}
+
 ## How to get selected row indexes 
 
 You can retrieve the indexes of the currently selected rows in the Grid component. This feature is particularly useful when you need to perform actions or operations specifically on the selected rows. 

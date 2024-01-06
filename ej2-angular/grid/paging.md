@@ -289,4 +289,4 @@ The following example that example demonstrates how to use these events to displ
 ## See Also
 
 * [Group with Paging](./grouping/grouping/#group-with-paging)
-* [How to change loading indicator in Angular Grid](./data-binding/data-binding.md#loading-animation)
+* [How to change loading indicator in Angular Grid](./data-binding/data-binding#loading-animation)

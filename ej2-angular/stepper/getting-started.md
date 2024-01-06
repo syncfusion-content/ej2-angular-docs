@@ -131,7 +131,7 @@ export class AppComponent {
 
 ## Adding Steps
 
-You can define steps by using `e-step` tag helper.
+You can define steps by using `<e-step>` tag directive.
 
 ```javascript
 import { Component } from "@angular/core";
@@ -184,7 +184,7 @@ The following example shows a default Stepper component.
 
 ## Configure icon and label
 
-You can define the step icon and label by setting the `iconCss` and `label` properties using `<e-step>` selector.
+You can define the step icon and label by setting the `iconCss` and `label` properties using `<e-step>` tag directive.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

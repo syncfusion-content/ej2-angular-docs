@@ -27,6 +27,6 @@ export class AppComponent implements OnInit {
   }
   load() {
     // Set filterTemplate to an empty span to hide the filter bar for the template column
-    (this.grid.columns[2] as Column).filterTemplate = '<span></span>';
+    ((this.grid as GridComponent).columns[2] as Column).filterTemplate = '<span></span>';
   }
 }

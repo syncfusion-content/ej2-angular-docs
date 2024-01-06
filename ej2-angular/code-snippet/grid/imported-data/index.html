@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Syncfusion Angular Grid</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.10.8/xlsx.full.min.js"></script>
+    <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+    <meta name="author" content="Syncfusion" />
+    <style>
+        #loader {
+            color: #008cff;
+            font-family: 'Helvetica Neue', 'calibiri';
+            font-size: 16px;
+            height: 40px;
+            left: 45%;
+            position: absolute;
+            top: 45%;
+            width: 30%;
+        }
+
+        .disablegrid {
+            pointer-events: none;
+            opacity: 0.4;
+        }
+
+        .wrapper {
+            cursor: not-allowed;
+        }
+
+        .e-expand::before {
+            content: '\e5b8';
+        }
+
+        #message {
+            color: red;
+            font-size: 15px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <app-root>
+        <div id='loader'>Loading....</div>
+    </app-root>
+</body>
+
+</html>

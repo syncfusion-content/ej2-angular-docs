@@ -1,0 +1,15 @@
+<div class="default-stepper-section">
+  <ejs-stepper id="stepperTemplate" activeStep="1" [template]="template">
+    <e-steps>
+      <e-step label="PowerPoint" iconCss="sf-icon-powerpoint"></e-step>
+      <e-step label="Presentation" iconCss="sf-icon-projector"></e-step>
+      <e-step label="Backup" iconCss="sf-icon-onedrive"></e-step>
+    </e-steps>
+    <ng-template #template let-data="">
+        <div class="template-content">
+          <span class="{{data.step.iconCss}}"></span><br>
+          <span class="e-label">{{data.step.label}}</span>
+        </div>
+    </ng-template>
+  </ejs-stepper>
+</div>

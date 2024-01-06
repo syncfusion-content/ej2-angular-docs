@@ -25,15 +25,17 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = data;
-        this.toolbarOptions = ['ExcelExport'];
+        this.toolbarOptions = ['ExcelExport', 'CsvExport'];
     }
     toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'Grid_excelexport') { 
             // 'Grid_excelexport' -> Grid component id + _ + toolbar item name
             (this.grid as GridComponent).excelExport();
         }
+        else if (args.item.id === 'Grid_csvexport') { 
+            // 'Grid_csvexport' -> Grid component id + _ + toolbar item name
+            (this.grid as GridComponent).csvExport();
+        }
     }
 }
-
-
 
