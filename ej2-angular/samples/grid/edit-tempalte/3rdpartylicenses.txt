@@ -13,13 +13,16 @@ MIT
 @syncfusion/ej2-angular-base
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-buttons
+@syncfusion/ej2-angular-calendars
 SEE LICENSE IN license
 
 @syncfusion/ej2-angular-dropdowns
 SEE LICENSE IN license
 
 @syncfusion/ej2-angular-grids
+SEE LICENSE IN license
+
+@syncfusion/ej2-angular-inputs
 SEE LICENSE IN license
 
 @syncfusion/ej2-base

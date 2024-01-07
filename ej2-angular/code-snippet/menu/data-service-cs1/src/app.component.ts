@@ -2,7 +2,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { enableRipple } from '@syncfusion/ej2-base';
-import { DataManager, Query, ODataAdaptor, ReturnOption } from '@syncfusion/ej2-data';
+import { DataManager, Query, ODataV4Adaptor, ReturnOption } from '@syncfusion/ej2-data';
 import { FieldSettingsModel } from '@syncfusion/ej2-angular-navigations';
 
 enableRipple(true);
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
 
     public ngOnInit(): void {
         // Getting remote data using DataManager.
-        new DataManager({ url: this.SERVICE_URI, adaptor: new ODataAdaptor, crossDomain: true })
+        new DataManager({ url: this.SERVICE_URI, adaptor: new ODataV4Adaptor(), crossDomain: true })
             .executeQuery(
                 new Query().from('Employees').take(5).hierarchy(
                     new Query()
