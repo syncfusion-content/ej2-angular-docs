@@ -26,8 +26,8 @@ export class AppComponent implements OnInit {
     importRules: { condition: string; rules: ({ label: string; field: string; type: string; operator: string; value: number; } | { label: string; field: string; type: string; operator: string; value: string; })[]; } | undefined;
     ngOnInit(): void {
         this.data = new DataManager({
-        url: 'https://services.syncfusion.com/js/production/api/orders/',
-        adaptor: new ODataAdaptor,
+        url: 'https://services.syncfusion.com/js/production/api/Employees/',
+        adaptor: new ODataAdaptor(),
         crossDomain: true
         });
         this.importRules = {

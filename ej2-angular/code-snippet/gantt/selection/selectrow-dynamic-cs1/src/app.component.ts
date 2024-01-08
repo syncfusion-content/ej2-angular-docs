@@ -68,5 +68,3 @@ export class AppComponent {
         this.ganttObj.selectionModule.selectRows([1, 2, 3]); // passing the record index to select the rows
     };
 }
-
-

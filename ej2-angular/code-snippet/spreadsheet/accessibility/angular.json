@@ -17,15 +17,13 @@
             "index": "index.html",
             "main": "src/main.ts",
             "tsConfig": "tsconfig.json",
-			      "scripts": [
+            "scripts": [
               "./node_modules/zone.js/dist/zone.min.js"
             ],
             "styles": [
               "src/styles.css"
             ],
-            "assets": [
-							{"glob": "*.css", "input": "", "output": ""}
-            ]
+            "assets": []
           },
           "configurations": {
             "production": {
