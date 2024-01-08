@@ -151,9 +151,9 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 
 The PDF Viewer component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the PDF Viewer component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/pdfviewer.html) in a new window to evaluate the accessibility of the PDF Viewer component with accessibility tools.
+The accessibility compliance of the PDF Viewer component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/pdf-viewer.html) in a new window to evaluate the accessibility of the PDF Viewer component with accessibility tools.
 
-{% previewsample "https://ej2.syncfusion.com/accessibility/pdfviewer.html" %}
+{% previewsample "https://ej2.syncfusion.com/accessibility/pdf-viewer.html" %}
 
 ## See also
 
