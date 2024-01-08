@@ -10,11 +10,8 @@ import { DataManager, ODataAdaptor } from '@syncfusion/ej2-data';
                 <e-columns>
                   <e-column field="EmployeeID" label="Employee ID" type="number"></e-column>
                   <e-column field="FirstName" label="First Name" type="string"></e-column>
-                  <e-column field="TitleOfCourtesy" label="Title Of Courtesy" type="boolean" [values]="values"></e-column>
-                  <e-column field="Title" label="Title" type="string"></e-column>
-                  <e-column field="HireDate" label="Hire Date" type="date" format="dd/MM/yyyy"></e-column>
                   <e-column field="Country" label="Country" type="string"></e-column>
-                  <e-column field="City" label="City" type="string"></e-column>
+                  <e-column field="Designation" label="Designation" type="string"></e-column>
                 </e-columns>
               </ejs-querybuilder>`
 })
@@ -26,8 +23,8 @@ export class AppComponent implements OnInit {
 values: any;
     ngOnInit(): void {
         this.data = new DataManager({
-        url: 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/',
-        adaptor: new ODataAdaptor,
+        url: 'https://services.syncfusion.com/js/production/api/Employees/',
+        adaptor: new ODataAdaptor(),
         });
         this.importRules = {
           'condition': 'and',
@@ -39,11 +36,11 @@ values: any;
                 'value': 1
             },
             {
-                'label': 'Title',
-                'field': 'Title',
+                'label': 'Designation',
+                'field': 'Designation',
                 'type': 'string',
                 'operator': 'equal',
-                'value': 'Sales Manager'
+                'value': 'Developer'
             }]
         };
     }
