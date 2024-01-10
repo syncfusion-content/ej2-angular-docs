@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Accessibility in Angular Appbar component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Appbar component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular AppBar component | Syncfusion
+description: Learn here all about Accessibility in Syncfusion Angular AppBar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Appbar component
+# Accessibility in Angular AppBar component
 
-The accessibility compliance for the Appbar component is outlined below.
+The AppBar component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+
+The accessibility compliance for the AppBar component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -43,9 +45,9 @@ The AppBar component provides the focus element navigation based on its's tab ke
 
 ## Ensuring accessibility
 
-The Appbar component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The AppBar component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Appbar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/appbar.html) in a new window to evaluate the accessibility of the Appbar component with accessibility tools.
+The accessibility compliance of the AppBar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/appbar.html) in a new window to evaluate the accessibility of the AppBar component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/appbar.html" %}
 

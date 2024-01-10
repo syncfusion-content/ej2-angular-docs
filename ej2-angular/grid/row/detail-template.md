@@ -34,7 +34,7 @@ The Grid component provides a powerful feature that allows you to render custom 
 
 To render a custom component inside the detail row, you need to define a template using the[detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#detailtemplate)  property and handle the [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#detaildatabound) event.This template can include any HTML element or Angular component that you want to display as the detail content.
 
-The `detailDataBound` event is an event that is triggered after a detail row is bound to data. This event provides an object of type [DetailDataBoundEventArgs](https://helpej2.syncfusion.com/angular/documentation/api/grid/detaildataboundeventargs/) as a parameter.
+The `detailDataBound` event is an event that is triggered after a detail row is bound to data. This event provides an object of type [DetailDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/detaildataboundeventargs/) as a parameter.
 
 For example, to render grid inside the detail row, place an HTML div element as the `detailTemplate` and render the DIV element as grid component in the `detailDataBound` event.
 

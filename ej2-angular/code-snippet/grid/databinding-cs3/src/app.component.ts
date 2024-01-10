@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = new DataManager({
-            url: 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders?$top=7',
+            url: 'https://services.odata.org/V3/Northwind/Northwind.svc/Orders/',
             adaptor: new ODataAdaptor(),
             crossDomain: true
         });
