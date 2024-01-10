@@ -30,9 +30,9 @@ To enhance your application's efficiency, especially when dealing with substanti
 It is possible to enable both row and column virtualization. This feature allows for efficient handling of large datasets by dynamically loading only the visible rows and columns, optimizing performance and enhancing the overall responsiveness of the grid. For more information on implementing column virtualization , you can refer to the [documentation](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling#column-virtualization) section dedicated to this feature.
 
 ### How to overcome browser height limitation in virtual scrolling
-[Documentation link](https://ej2.syncfusion.com/documentation/grid/virtual-scroll#browser-height-limitation-in-virtual-scrolling-and-solution)
+[Documentation link](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling#browser-height-limitation-in-virtual-scrolling-and-solution)
 
-## How to Improve loading performance by binding large data by showing custom text or element
+## How to improve loading performance by binding large data by showing custom text or element
 When integrating image or template elements into a column, it's recommended to utilize the [Column Template](https://ej2.syncfusion.com/angular/documentation/grid/columns/column-template) feature rather than customizing the data through [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#querycellinfo) events. These events are triggered for each row and cell rendering, introducing delays in the component's rendering process. Moreover, rendering custom elements using these events may result in the persistence of rendered elements, potentially causing longer rendering times over time. By opting for the column template feature, you can efficiently meet this requirement without experiencing rendering delays and ensure a more streamlined rendering process.
 
 ## How to improve loading performance by referring individual script and CSS
@@ -58,8 +58,23 @@ The Angular DataGrid provides support for various adaptors (OData, ODataV4, WebA
 
 ## How to avoid MaxJsonLength error while passing large amount of records
 
-The Angular Grid control is client-server based. So, we send the data as JSON object between client and server. The reported issue occurs due to the serialization of the large-sized JSON object. We need to increase the maximum length for serializing the large-sized JSON object. You have to alter the [MaxJsonLength](https://social.msdn.microsoft.com/Forums/en-US/ab1a5864-46e2-4c57-9511-dc3f60cc314a/how-to-increase-maxjsonlength-for-json-post-in-mvc3?forum=aspmv) property on your web.config file or in the place of deserialization.
+The Angular Grid component is client-server based. So, we send the data as JSON object between client and server. The reported issue occurs due to the serialization of the large-sized JSON object. We need to increase the maximum length for serializing the large-sized JSON object. You have to alter the [MaxJsonLength](https://social.msdn.microsoft.com/Forums/en-US/ab1a5864-46e2-4c57-9511-dc3f60cc314a/how-to-increase-maxjsonlength-for-json-post-in-mvc3?forum=aspmv) property on your web.config file or in the place of deserialization.
 
+**Solution: 1**
+
+```csharp
+<configuration> 
+   <system.web.extensions>
+       <scripting>
+           <webServices>
+               <jsonSerialization maxJsonLength="25000000"/>
+           </webServices>
+       </scripting>
+   </system.web.extensions>
+</configuration> 
+```
+
+**Solution : 2**
 ```csharp
 var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 ```

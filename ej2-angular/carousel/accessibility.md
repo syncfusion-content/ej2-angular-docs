@@ -41,16 +41,16 @@ The accessibility compliance for the Carousel component is outlined below.
 
 ## ARIA attributes
 
-The carousel component is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) standard. Carousel is supported with ARIA Accessibility which is accessible by on-screen readers and other assistive technology devices. The following list of attributes is added to the Carousel.
+The Carousel component is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) standard. Carousel is supported with ARIA Accessibility which is accessible by on-screen readers and other assistive technology devices. The following list of attributes is added to the Carousel.
 
 | **Roles and Attributes** | **Functionalities**                                                                                                                             |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `aria-roledescription`   | The role description attribute has been added for the root element (carousel) and each carousel slide item (slide).                            |
-| `aria-label`             | Previous, next and play/pause buttons and all indicator elements.                                                                               |
-| `aria-current`           | For the active item indicator element, `aria-current` is set to `true`.                                                                         |
-| `aria-hidden`            | For all carousel elements except the currently visible item, `aria-hidden` is set to `true`.                                                    |
-| `aria-live`              | For carousel items element, when `autoPlay` is `true`, `aria-live` is set to `off`; when `autoPlay` is `false`, `aria-live` is set to `polite`. |
-| `aria-role`              | For carousel slide item, `aria-role` has been grouped.                                                                                           |
+| aria-roledescription   | The role description attribute has been added for the root element (Carousel) and each Carousel slide item (slide).                            |
+| aria-label             | Previous, next and play/pause buttons and all indicator elements.                                                                               |
+| aria-current           | For the active item indicator element, `aria-current` is set to `true`.                                                                         |
+| aria-hidden            | For all Carousel elements except the currently visible item, `aria-hidden` is set to `true`.                                                    |
+| aria-live              | For Carousel items element, when `autoPlay` is `true`, `aria-live` is set to `off`; when `autoPlay` is `false`, `aria-live` is set to `polite`. |
+| aria-role              | For Carousel slide item, `aria-role` has been grouped.                                                                                           |
 
 ## Keyboard interaction
 
@@ -58,7 +58,7 @@ By default, keyboard navigation is enabled. This component implements keyboard n
 
 | Key                | Description                                                     |
 | ------------------ | --------------------------------------------------------------- |
-| <kbd>Alt + J</kbd> | Keys to focus the carousel component (done at application end). |
+| <kbd>Alt + J</kbd> | Keys to focus the Carousel component (done at application end). |
 | <kbd>Arrows</kbd>  | Keys to navigate between slides.                                |
 | <kbd>Home</kbd>    | To navigate to the first slide.                                 |
 | <kbd>End</kbd>     | To navigate to the last slide.                                  |
@@ -71,7 +71,7 @@ By default, keyboard navigation is enabled. This component implements keyboard n
 
 The Carousel component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Carousel component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/carousel.html) in a new window to evaluate the accessibility of the carousel component with accessibility tools.
+The accessibility compliance of the Carousel component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/carousel.html) in a new window to evaluate the accessibility of the Carousel component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/carousel.html" %}
 

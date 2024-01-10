@@ -10,6 +10,8 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Tab component
 
+The Tab component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+
 The accessibility compliance for the Tab component is outlined below.
 
 | Accessibility Criteria | Compatibility |
@@ -39,14 +41,13 @@ The accessibility compliance for the Tab component is outlined below.
 
 ## ARIA attributes
 
-Tab component is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) standard. Tab is supported with ARIA Accessibility which is accessible by on-screen readers, and other assistive technology devices.
-The following list of attributes are added in the Tab.
+Tab component is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) standard. Tab is supported with ARIA Accessibility which is accessible by on-screen readers, and other assistive technology devices. The following list of attributes are added in the Tab.
 
 | **Roles and Attributes** | **Functionalities** |
 | --- | --- |
-| `tablist` | Attribute is set to the Tab header element that describes actual role of the element.|
-| `tab` | Attribute is set to the Tab items element to  indicates an interactive element inside a `tablist` that, when activated, displays its associated `tabpanel`.|
-| `tabpanel` | Attribute is set to the Tab content that describes the role for viewing the active content.|
+| tablist | Attribute is set to the Tab header element that describes actual role of the element.|
+| tab | Attribute is set to the Tab items element to  indicates an interactive element inside a `tablist` that, when activated, displays its associated `tabpanel`.|
+| tabpanel | Attribute is set to the Tab content that describes the role for viewing the active content.|
 | aria-orientation    | Attribute is set to the Tab header element indicates the Tab header orientation. Default value of this attribute is horizontal. |
 | aria-selected       | Attribute set to the Tab items to indicates the selection state for Tab items. Active Tab is set to true for this attribute. |
 | aria-labelledby       | Attribute is set to the Tab content element to indicates the associated Tab header for the content. |

@@ -41,7 +41,7 @@ The accessibility compliance for the Toolbar component is outlined below.
 
 ## ARIA attributes
 
-Toolbar element is assigned with the role of `toolbar`.
+Toolbar component is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/) standard. Toolbar is supported with ARIA Accessibility which is accessible by on-screen readers, and other assistive technology devices. The following list of attributes are added in the Toolbar.
 
 | **Property** | **Functionalities** |
 | --- | --- |

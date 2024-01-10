@@ -193,7 +193,7 @@ Format | Formatted value
 
 ### Format the date column based on localization 
 
-You can also format the date column based on the localization settings of the user's browser. You can use the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property of the Grid columns along with the [locale](https://helpej2.syncfusion.com/angular/documentation/api/grid/#locale) property to specify the desired date format based on the locale.
+You can also format the date column based on the localization settings of the user's browser. You can use the [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property of the Grid columns along with the [locale](https://ej2.syncfusion.com/angular/documentation/api/grid/#locale) property to specify the desired date format based on the locale.
 
 In this example, the format property specifies the date format as "**yyyy-MMM-dd**", and the locale property specifies the locale as **"es-AR"** for Spanish (Argentina).
 
@@ -289,7 +289,7 @@ Here is an example of using the `textAlign` property to align the text of a Grid
 
 ## Render boolean value as checkbox
 
-The Grid component allows you to render boolean values as checkboxes in columns. This can be achieved by using the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#displayascheckbox) property, which is available in the [columns](https://helpej2.syncfusion.com/angular/documentation/api/grid/column/). This property is useful when you have a boolean column in your Grid and you want to display the values as checkboxes instead of the default text representation of **true** or **false**.
+The Grid component allows you to render boolean values as checkboxes in columns. This can be achieved by using the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#displayascheckbox) property, which is available in the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column/). This property is useful when you have a boolean column in your Grid and you want to display the values as checkboxes instead of the default text representation of **true** or **false**.
 
 To enable the rendering of boolean values as checkboxes, you need to set the `displayAsCheckBox` property of the `columns` to **true**.
 
@@ -581,7 +581,7 @@ This method returns an array of field names of all the columns in the Grid.
 let fieldNames = this.grid.getColumnFieldNames()
 ```
 
-> For a complete list of column methods and properties, refer to this [section](https://helpej2.syncfusion.com/angular/documentation/api/grid/column/).
+> For a complete list of column methods and properties, refer to this [section](https://ej2.syncfusion.com/angular/documentation/api/grid/column/).
 
 ### Updating column definitions
 
@@ -651,7 +651,7 @@ In this example, we have a Grid that displays data with three columns: **Order I
   
 {% previewsample "page.domainurl/samples/grid/grid-cs21" %}
 
-## See Also
+## See also
 
 * [Group Column by Format](../grouping#group-by-format)
 * [Format grid with auto generation columns in Angular Grid](https://www.syncfusion.com/forums/141181/format-grid-with-auto-generation-columns-in-angular-grid)
