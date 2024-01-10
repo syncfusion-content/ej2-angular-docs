@@ -33,7 +33,7 @@ To use the Grouping feature, need to inject **GroupService** in the provider sec
 
 ## Initial group
 
-To enable initial grouping in the Grid, you can use the [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/) property and set the [groupSettings.columns](https://helpej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#columns) property to an array of column names(`field` of the column) that you want to group by. This feature is particularly useful when working with large datasets, as it allows you to quickly organize and analyze the data based on specific criteria.
+To enable initial grouping in the Grid, you can use the [groupSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/) property and set the [groupSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings/#columns) property to an array of column names(`field` of the column) that you want to group by. This feature is particularly useful when working with large datasets, as it allows you to quickly organize and analyze the data based on specific criteria.
 
 The following example demonstrates how to set an initial grouping for the **CustomerID** and **ShipCity** columns during the initial rendering grid, by using the `groupSettings.columns` property.
 
@@ -361,7 +361,7 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 
 > The [args.requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) property represents the name of the current action being performed. For instance, during grouping, the `args.requestType` value will be **grouping**.
 
-## See Also
+## See also
 
 * [Exporting grouped records](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-export-options#exporting-grouped-records)
 * [How to enable lazy load grouping in Grid](https://www.syncfusion.com/blogs/post/how-to-enable-lazy-load-grouping-in-syncfusion-angular-data-grid.aspx)

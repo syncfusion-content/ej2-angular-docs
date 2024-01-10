@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The custom aggregate feature in Syncfusion's Angular Grid component allows you to calculate aggregate values using your own aggregate function. This feature can be useful in scenarios where the built-in aggregate functions do not meet your specific requirements. To use the custom aggregate option, follow the steps below:
 
-* Set the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) property to **Custom** in the [e-aggregate -> e-column](https://helpej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/).
+* Set the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#type) property to **Custom** in the [e-aggregate -> e-column](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/).
 
 * Provide your custom aggregate function in the [customAggregate](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumnDirective/#CustomAggregate) property.
 
@@ -66,4 +66,4 @@ Here's an example that demonstrates how to show the count of distinct values for
   
 {% previewsample "page.domainurl/samples/grid/aggregates-custom-cs2" %}
 
-> To display the aggregate value of the current column in another column, you can use the [columnName](https://helpej2.syncfusion.com/documentation/api/grid/aggregateColumn/#columnname) property. If the `columnName` property is not defined, the field name value will be assigned to the `columnName` property.
+> To display the aggregate value of the current column in another column, you can use the [columnName](https://ej2.syncfusion.com/documentation/api/grid/aggregateColumn/#columnname) property. If the `columnName` property is not defined, the field name value will be assigned to the `columnName` property.

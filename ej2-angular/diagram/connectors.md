@@ -617,6 +617,26 @@ The following code example illustrates how to leave space between the connection
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectNode-cs2" %}
 
+## Hit padding
+
+* The [`hitPadding`](../api/diagram/connector#hitpadding) property enables you to define the clickable area around the connector path.The default value for hitPadding is 10.
+
+* The following code example illustrates how to specify hit padding for connector.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/connectors/connectorHitPadding-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/diagram/connectors/connectorHitPadding-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/connectors/connectorHitPadding-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorHitPadding-cs1" %}
+
 ## Flip
 
 The diagram Provides support to flip the connector. The [`flip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#flip) is performed to give the mirrored image of the original element.
