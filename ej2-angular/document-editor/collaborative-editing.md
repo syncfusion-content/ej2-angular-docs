@@ -413,4 +413,4 @@ private ActionInfo AddOperationsToTable(ActionInfo action)
 
 Full version of the code discussed about can be found in below GitHub location.
 
-Github Example: [`Collaborative editing examples`](https://github.com/SyncfusionExamples/EJ2-Document-Editor-Collabrative-Editing)
+Github Example: [`Collaborative editing examples`](https://github.com/SyncfusionExamples/EJ2-Document-Editor-Collaborative-Editing)
