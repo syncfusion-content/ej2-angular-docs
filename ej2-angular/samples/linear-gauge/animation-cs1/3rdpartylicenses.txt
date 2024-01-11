@@ -22,6 +22,9 @@ SEE LICENSE IN license
 @syncfusion/ej2-base
 SEE LICENSE IN license
 
+@syncfusion/ej2-buttons
+SEE LICENSE IN license
+
 @syncfusion/ej2-compression
 SEE LICENSE IN license
 
@@ -32,6 +35,9 @@ SEE LICENSE IN license
 SEE LICENSE IN license
 
 @syncfusion/ej2-pdf-export
+SEE LICENSE IN license
+
+@syncfusion/ej2-popups
 SEE LICENSE IN license
 
 @syncfusion/ej2-svg-base
