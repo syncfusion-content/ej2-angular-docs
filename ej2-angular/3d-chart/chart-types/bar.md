@@ -94,7 +94,7 @@ The following properties can be used to customize the `bar` series.
 {% include code-snippet/3d-chart/bar/bar-cs5/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/bar/bar-cs54/src/app.module.ts %}
+{% include code-snippet/3d-chart/bar/bar-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/bar/bar-cs5/src/main.ts %}
