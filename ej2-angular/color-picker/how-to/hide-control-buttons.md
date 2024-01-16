@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Hide control buttons in Angular Color picker component
 
-ColorPicker can be rendered without control buttons (Apply/Cancel). In this case, while selecting a color, the ColorPicker pop-up is closed and selected colors will be applied directly. To hide control buttons, set the [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#showbuttons) property to `false`.
+ColorPicker can be rendered without control buttons (Apply/Cancel). In this case, while selecting a color, the ColorPicker pop-up is closed and selected colors will be applied directly. To hide control buttons, set the [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#showbuttons) property to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
