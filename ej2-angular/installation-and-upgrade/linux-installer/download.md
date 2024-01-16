@@ -77,4 +77,4 @@ You should initiate an evaluation if you have already obtained our components th
    
    ![License and downloads of Syncfusion JavaScript](images/Linux_Download.PNG)
 
-You can also refer to the [**JavaScript Linux installer**](https://help.syncfusion.com/common/essential-studio/installation/linux-installer/how-to-install) links for step-by-step installation guidelines.	
+You can also refer to the [**JavaScript Linux installer**](https://ej2.syncfusion.com/angular/documentation/installation-and-upgrade/linux-installer/installation-using-linux-installer) links for step-by-step installation guidelines.	

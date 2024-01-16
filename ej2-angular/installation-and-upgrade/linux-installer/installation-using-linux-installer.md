@@ -10,21 +10,6 @@ domainurl: ##DomainURL##
 
 # Installing Syncfusion JavaScript Linux installer
 
-## Overview
-
-Syncfusion provides the Linux installer for the following Essential Studio products.
-
-* Blazor
-* Flutter
-* ASP.NET Core
-* JavaScript
-* File Formats
-* PDF
-* Word
-* Excel
-* PowerPoint
-
-
 ## Step-by-Step Installation
 
 The steps below show how to install JavaScript Linux installer.
