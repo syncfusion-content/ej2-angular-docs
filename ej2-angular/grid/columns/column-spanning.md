@@ -45,3 +45,7 @@ You can change the border color for the spanned cells by the using [QueryCellInf
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/spanning-cs3" %}
+
+## Limitations
+
+* The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid/#updatecell) method does not support column spanning.

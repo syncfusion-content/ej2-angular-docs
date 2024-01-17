@@ -12,11 +12,11 @@ import { data } from './datasource';
         </div>
         <ejs-grid #grid [dataSource]="data" [editSettings]="editSettings" [toolbar]="toolbar" height="273px">
           <e-columns>
-            <e-column field="OrderID" headerText="Order ID" textAlign="Right" [validationRules]="orderidrules"
+            <e-column field="OrderID" headerText="Order ID" textAlign="Right" [validationRules]="orderIDRules"
               isPrimaryKey="true" width="100"></e-column>
-            <e-column field="CustomerID" headerText="Customer ID" [validationRules]="customeridrules" width="120"></e-column>
+            <e-column field="CustomerID" headerText="Customer ID" [validationRules]="customerIDRules" width="120"></e-column>
             <e-column field="Freight" headerText="Freight" textAlign="Right" editType="numericedit" width="120" format="C2"
-              [validationRules]="freightrules"></e-column>
+              [validationRules]="freightRules"></e-column>
             <e-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" width="150"></e-column>
           </e-columns>
         </ejs-grid> `
@@ -29,9 +29,9 @@ export class AppComponent implements OnInit {
   public data: object[] = [];
   public editSettings: EditSettingsModel = {};
   public toolbar: ToolbarItems[] = ['Add', 'Delete', 'Update', 'Cancel'];
-  public orderidrules: Object = {};
-  public customeridrules: Object = {};
-  public freightrules: Object = {};
+  public orderIDRules: Object = {};
+  public customerIDRules: Object = {};
+  public freightRules: Object = {};
   public enableShowConfirmDialog: boolean = true;
   public enableShowDeleteConfirmDialog: boolean = false;
 
@@ -43,9 +43,9 @@ export class AppComponent implements OnInit {
       allowDeleting: true,
       mode: 'Normal'
     };
-    this.orderidrules = { required: true, number: true };
-    this.customeridrules = { required: true };
-    this.freightrules = { min: 1, max: 1000 };
+    this.orderIDRules = { required: true, number: true };
+    this.customerIDRules = { required: true };
+    this.freightRules = { min: 1, max: 1000 };
   }
   toggleShowDeleteConfirmDialog(): void {
     (this.grid as GridComponent).editSettings.showDeleteConfirmDialog = this.enableShowDeleteConfirmDialog;

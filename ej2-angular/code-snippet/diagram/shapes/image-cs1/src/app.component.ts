@@ -22,7 +22,7 @@ export class AppComponent {
 
     public shape: ImageElement = {
         type: 'Image',
-        source: 'https://www.syncfusion.com/content/images/nuget/sync_logo_icon.png'
+        source: 'https://ej2.syncfusion.com/demos/src/diagram/employees/image16.png'
     } as unknown as ImageElement;
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;

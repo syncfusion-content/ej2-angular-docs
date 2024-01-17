@@ -48,7 +48,7 @@ To customize the appearance of the edit dialog header element in the grid, you c
 
 ```css
 
-.e-grid .e-edit-dialog .e-dlg-header-content {
+.e-edit-dialog .e-dlg-header-content {
     background-color: #deecf9;
 }
 
@@ -63,7 +63,7 @@ To customize the appearance of edited row input elements in dialog edit mode, yo
 
 ```css
 
-.e-grid .e-gridform .e-rowcell .e-float-input .e-field {
+.e-gridform .e-rowcell .e-float-input .e-field {
     font-family: cursive;
 }
 

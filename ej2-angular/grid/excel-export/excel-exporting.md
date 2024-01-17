@@ -130,6 +130,8 @@ The following example demonstrates how to perform export with cell and row spann
   
 {% previewsample "page.domainurl/samples/grid/excel-span" %}
 
+* The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid/#updatecell) method does not support row and column spanning.
+
 ## Exporting with custom date format
 
 The exporting functionality in the Syncfusion Angular Grid allows you to export grid data, including custom date format. This feature is useful when you need to export grid data with customized date values.

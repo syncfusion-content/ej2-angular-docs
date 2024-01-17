@@ -9,11 +9,11 @@
       [editSettings]='editSettings' [toolbar]='toolbar'>
       <e-columns>
         <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey='true'
-          [validationRules]='orderidrules'></e-column>
-        <e-column field='CustomerID' headerText='Customer ID' width='120' [validationRules]='customeridrules'
+          [validationRules]='orderIDRules'></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width='120' [validationRules]='customerIDRules'
           ></e-column>
         <e-column field='Freight' headerText='Freight' width='120' format='C2' textAlign='Right'
-          editType='numericedit' [validationRules]='freightrules' >
+          editType='numericedit' [validationRules]='freightRules' >
         </e-column>
         <e-column field='OrderDate' headerText='Order Date' width='130' format='yMd' editType='datepickeredit'
           textAlign='Right' ></e-column>

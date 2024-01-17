@@ -34,3 +34,7 @@ In the following demo, **Davolio** cell is spanned to two rows in the **Employee
 
 > To disable the spanning for particular grid page, you need to use **requestType** from `queryCellInfo` event argument.
 > The `rowSpan` and `colSpan` attributes can be used together to merge cells both vertically and horizontally.
+
+## Limitations
+
+* The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid/#updatecell) method does not support row spanning.

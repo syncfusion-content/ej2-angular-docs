@@ -31,7 +31,6 @@ export class AppComponent implements OnInit {
                 width: 120,
                 textAlign: 'Right',
                 minWidth: 10,
-                allowResizing: false
             },
             {
                 field: 'Freight',
