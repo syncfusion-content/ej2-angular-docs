@@ -10,7 +10,7 @@ import { data } from './datasource';
                 <e-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-column>                
                 <e-column field="CustomerID" headerText="Customer ID" type="string" [validationRules]='customeridrules' 
                 width="120"></e-column>                
-                <e-column field="Freight" headerText="Freight" textAlign="Right" [validationRules]='freightrules' 
+                <e-column field="Freight" headerText="Freight" textAlign="Right" [validationRules]='freightRules' 
                 format="C2" editType='numericedit' width="120" ></e-column>                               
                 <e-column field="ShipCountry" headerText="Ship Country"  width="150" editType='dropdownedit'>
                 </e-column>                
@@ -22,9 +22,9 @@ export class AppComponent {
   public data?: object[];
   public editSettings?: EditSettingsModel;
   public toolbar?: ToolbarItems[];
-  public orderidrules?: Object;
-  public customeridrules?: Object;
-  public freightrules?: Object;
+  public orderIDRules?: Object;
+  public customerIDRules?: Object;
+  public freightRules?: Object;
 
   ngOnInit(): void {
     this.data = data;
@@ -34,9 +34,9 @@ export class AppComponent {
       allowDeleting: true,
     };
     this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-    this.orderidrules = { required: true };
-    this.customeridrules = { required: true };
-    this.freightrules = { required: true };
+    this.orderIDRules = { required: true };
+    this.customerIDRules = { required: true };
+    this.freightRules = { required: true };
   }
   public access(args: EditEventArgs): void {
     if (args.requestType === 'beginEdit' || args.requestType === 'add') {

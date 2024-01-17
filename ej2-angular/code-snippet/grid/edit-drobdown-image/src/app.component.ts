@@ -7,7 +7,7 @@ import { GridComponent, EditService, ToolbarService, ToolbarItems, EditSettingsM
     template: `
             <ejs-grid #grid [dataSource]="data" [allowPaging]="true" [pageSettings]="pageSettings" (actionBegin)="actionBegin($event)" [editSettings]="editOptions" [toolbar]="toolbarItems" >
             <e-columns>
-                <e-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" [validationRules]="orderidrules" isPrimaryKey="true"></e-column>
+                <e-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" [validationRules]="orderIDRules" isPrimaryKey="true"></e-column>
                 <e-column field="EmployeeID" foreignKeyValue='FirstName' foreignKeyField='EmployeeID' [dataSource]='employeeData' headerText="Employee Name" width="220">
                 <ng-template #editTemplate let-data>
                     <ejs-dropdownlist [dataSource]='employeeData' [(ngModel)]="orderData.EmployeeID" [fields]='dropdownFields' [itemTemplate]="itemTemplate">
@@ -34,7 +34,7 @@ export class AppComponent {
     public toolbarItems?: ToolbarItems[];
     public editOptions?: EditSettingsModel;
     public employeeData?: Object;
-    public orderidrules?: Object;
+    public orderIDRules?: Object;
     public orderData?: object | any;
     public dropdownFields?: Object;
 
@@ -52,7 +52,7 @@ export class AppComponent {
             allowDeleting: true,
             mode: 'Normal',
         };
-        this.orderidrules = { required: true };
+        this.orderIDRules = { required: true };
         this.dropdownFields = { text: 'FirstName', value: 'EmployeeID' };
     }
 

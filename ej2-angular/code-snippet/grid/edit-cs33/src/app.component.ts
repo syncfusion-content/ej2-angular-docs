@@ -12,7 +12,7 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
                     </e-column>
                     <e-column field='CustomerID' headerText='Customer ID' 
                     [validationRules]='customerIDRules' width=120></e-column>
-                    <e-column field='Freight'  [validationRules]='freightrules' 
+                    <e-column field='Freight'  [validationRules]='freightRules' 
                     headerText='Freight' textAlign= 'Right'
                     editType= 'numericedit' width=120 format= 'C2'></e-column>
                     <e-column field='ShipCountry' headerText='Ship Country' 
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
     public toolbar?: ToolbarItems[];
     public orderIDRules?: object;
     public customerIDRules?: object;
-    public freightrules?: Object;
+    public freightRules?: Object;
 
     ngOnInit(): void {
         this.data = data;
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
         this.orderIDRules = { required: true };
         this.customerIDRules = { required: true, minLength: 3 };
-        this.freightrules = { required: true, min: 1, max: 1000 };
+        this.freightRules = { required: true, min: 1, max: 1000 };
 
     }
 }

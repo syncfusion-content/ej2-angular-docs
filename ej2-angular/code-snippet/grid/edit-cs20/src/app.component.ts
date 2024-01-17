@@ -14,9 +14,9 @@ export class AppComponent {
   @ViewChild('dropdown') public dropdown?: DropDownListComponent;
   public editSettings?: Object;
   public toolbar?: string[];
-  public orderidrules?: Object;
-  public customeridrules?: Object;
-  public freightrules?: Object;
+  public orderIDRules?: Object;
+  public customerIDRules?: Object;
+  public freightRules?: Object;
   public editparams?: Object;
   public pageSettings?: Object;
   public alignmentData: Object[] = [
@@ -36,9 +36,9 @@ export class AppComponent {
       allowDeleting: true,
     };
     this.toolbar = ['Add', 'Delete', 'Update', 'Cancel'];
-    this.orderidrules = { required: true, number: true };
-    this.customeridrules = { required: true };
-    this.freightrules = { required: true };
+    this.orderIDRules = { required: true, number: true };
+    this.customerIDRules = { required: true };
+    this.freightRules = { required: true };
     this.editparams = { params: { popupHeight: '300px' } };
     this.pageSettings = { pageCount: 5 };
   }

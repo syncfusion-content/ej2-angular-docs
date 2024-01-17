@@ -750,7 +750,7 @@ Step 1: Define a CSS class that specifies the styles you want to apply to the he
   ```CSS
     .e-grid .e-headercell.customcss {
        background-color: rgb(43, 205, 226);
-      color: black;
+       color: black;
     }
 
   ```

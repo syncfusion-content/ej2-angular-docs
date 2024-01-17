@@ -14,9 +14,9 @@ export class AppComponent implements OnInit {
   public data?: Object[];
   public editSettings?: Object;
   public toolbar?: string[];
-  public orderidrules?: Object;
-  public customeridrules?: Object;
-  public freightrules?: Object;
+  public orderIDRules?: Object;
+  public customerIDRules?: Object;
+  public freightRules?: Object;
   public editparams?: Object;
   public pageSettings?: Object;
   public formatoptions?: Object;
@@ -31,9 +31,9 @@ export class AppComponent implements OnInit {
       mode: 'Batch',
     };
     this.toolbar = ['Add', 'Delete'];
-    this.orderidrules = { required: true, number: true };
-    this.customeridrules = { required: true };
-    this.freightrules = { required: true };
+    this.orderIDRules = { required: true, number: true };
+    this.customerIDRules = { required: true };
+    this.freightRules = { required: true };
     this.editparams = { params: { popupHeight: '300px' } };
     this.pageSettings = { pageCount: 5 };
     this.formatoptions = { type: 'dateTime', format: 'M/d/y hh:mm a' };

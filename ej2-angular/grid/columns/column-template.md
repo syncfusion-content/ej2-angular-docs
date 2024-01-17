@@ -398,7 +398,7 @@ export class AppComponent implements OnInit {
 
 The Syncfusion Grid allows you to use custom helpers inside the `ng-template` directive of a column. This feature allows you to create complex templates that can incorporate additional helper functions that are not available through the default [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) syntax.
 
-To use the custom helper function inside a column template, you must first add the function to the template's context. This can be done by using the let keyword to create a new variable that references the function.
+To use the custom helper function inside a column template, you must first add the function to the template's context.
 
 The following example demonstrates how to use a custom helper function inside the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property, using the `ng-template` element for the Freight column.
 

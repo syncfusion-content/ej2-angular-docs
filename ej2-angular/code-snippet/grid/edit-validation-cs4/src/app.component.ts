@@ -8,10 +8,10 @@ import { EditService, ToolbarService, PageService, getObject, GridComponent, Edi
         <div class="control-section">
             <ejs-grid #grid [dataSource]='data' (actionComplete)='onActionComplete($event)' allowPaging='true' [pageSettings]='pageSettings' [editSettings]='editSettings' [toolbar]='toolbar'>
                 <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' [validationRules]='orderidrules' isPrimaryKey='true' ></e-column>
-                    <e-column field='CustomerID' headerText='Customer Name' width='120' [validationRules]='customeridrules'></e-column>
-                    <e-column field='Freight' headerText='Freight' width='120' format='C2' textAlign='Right' editType='numericedit' [validationRules]='freightrules'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' width='150' editType='dropdownedit' [validationRules]='countryrules' [edit]='editparams'></e-column>
+                    <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' [validationRules]='orderIDRules' isPrimaryKey='true' ></e-column>
+                    <e-column field='CustomerID' headerText='Customer Name' width='120' [validationRules]='customerIDRules'></e-column>
+                    <e-column field='Freight' headerText='Freight' width='120' format='C2' textAlign='Right' editType='numericedit' [validationRules]='freightRules'></e-column>
+                    <e-column field='ShipCountry' headerText='Ship Country' width='150' editType='dropdownedit' [validationRules]='countryRules' [edit]='editparams'></e-column>
                 </e-columns>
             </ejs-grid>
         </div>`,  
@@ -21,10 +21,10 @@ export class AppComponent {
     public data?: Object[];
     public editSettings?: Object;
     public toolbar?: string[];
-    public orderidrules?: Object;
-    public customeridrules?: Object;
-    public freightrules?: Object;
-    public countryrules?: Object;
+    public orderIDRules?: Object;
+    public customerIDRules?: Object;
+    public freightRules?: Object;
+    public countryRules?: Object;
     public pageSettings?: Object;
     public editparams?: Object;
 
@@ -35,10 +35,10 @@ export class AppComponent {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
         this.toolbar = ['Add', 'Edit', 'Delete'];
-        this.orderidrules = { required: true, number: true };
-        this.customeridrules = { required: true };
-        this.countryrules = { required: true };
-        this.freightrules =  { required: true };
+        this.orderIDRules = { required: true, number: true };
+        this.customerIDRules = { required: true };
+        this.countryRules = { required: true };
+        this.freightRules =  { required: true };
         this.editparams = { params: { popupHeight: '200px' }};
         this.pageSettings = { pageCount: 5};
     }

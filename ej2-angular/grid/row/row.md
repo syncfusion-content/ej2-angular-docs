@@ -224,11 +224,11 @@ Here's an example that demonstrates how to use the `rowDataBound` event and `get
 
 >The `getRowInfo` method can only be used in the `rowDataBound` event. Attempting to use it elsewhere will result in an error.
 
-## Row pinning (Frozen) in Angular Grid component
+## Row pinning (Frozen)
 
 The Syncfusion Angular Grid allows you to freeze rows to keep them visible while scrolling vertically through large datasets. This feature enhances the experience by maintaining important information within view at all times.
 
-In the following example, the [frozenRows](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozenrows) property is set to **3**. This configuration freezes the top three rows of the grid, and they will remain fixed in their positions while the rest of the grid can be scrolled vertically.
+In the following example, the [frozenRows](https://ej2.syncfusion.com/angular/documentation/api/grid/#frozenrows) property is set to **2**. This configuration freezes the top three rows of the grid, and they will remain fixed in their positions while the rest of the grid can be scrolled vertically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

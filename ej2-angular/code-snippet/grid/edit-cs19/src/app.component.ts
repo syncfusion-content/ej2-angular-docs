@@ -6,10 +6,10 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
                 <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' [validationRules]='orderIDrules' textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' [validationRules]='customerIDrules' width=120></e-column>
-                    <e-column field='Freight' headerText='Freight' [validationRules]='freightrules' textAlign= 'Right' width=120 format= 'C2'></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' [validationRules]='shipCountryrules'  width=150></e-column>
+                    <e-column field='OrderID' headerText='Order ID' [validationRules]='orderIDRules' textAlign='Right' isPrimaryKey='true' width=100></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' [validationRules]='customerIDRules' width=120></e-column>
+                    <e-column field='Freight' headerText='Freight' [validationRules]='freightRules' textAlign= 'Right' width=120 format= 'C2'></e-column>
+                    <e-column field='ShipCountry' headerText='Ship Country' [validationRules]='shipCountryRules'  width=150></e-column>
                 </e-columns>
                 </ejs-grid>`
 })
@@ -18,19 +18,19 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItems[];
-    public orderIDrules?: Object;
-    public customerIDrules?: Object;
-    public freightrules?: Object;
-    public shipCountryrules?: Object;
+    public orderIDRules?: Object;
+    public customerIDRules?: Object;
+    public freightRules?: Object;
+    public shipCountryRules?: Object;
 
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-        this.orderIDrules = { required: true, number: true };
-        this.customerIDrules = { required: true };
-        this.freightrules =  {required: true ,number: true };
-        this.shipCountryrules = { required: true };
+        this.orderIDRules = { required: true, number: true };
+        this.customerIDRules = { required: true };
+        this.freightRules =  {required: true ,number: true };
+        this.shipCountryRules = { required: true };
     }
 }
 

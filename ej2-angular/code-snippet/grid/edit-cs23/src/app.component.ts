@@ -11,7 +11,7 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
                     <e-column field='OrderID' headerText='Order ID' [validationRules]='orderIDRules' textAlign='Right' isPrimaryKey='true' width=100></e-column>
                     <e-column field='CustomerID' [validationRules]='customerIDRules'  headerText='Customer ID' width=120></e-column>
                     <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                    editType= 'numericedit' width=120  [validationRules]='freightrules' format= 'C2'></e-column>
+                    editType= 'numericedit' width=120  [validationRules]='freightRules' format= 'C2'></e-column>
                     <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150>
                         <ng-template #template let-data>
                             <a href="#">{{data.ShipCountry}}</a>
@@ -27,14 +27,14 @@ export class AppComponent implements OnInit {
     public toolbar?: ToolbarItems[];
     public orderIDRules?: object;
     public customerIDRules?: object;
-    public freightrules?: Object;
+    public freightRules?: Object;
 
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
         this.orderIDRules = { required: true };
-        this.freightrules =  { min:1, max:1000 };
+        this.freightRules =  { min:1, max:1000 };
         this.customerIDRules = { required: true };
 
     }

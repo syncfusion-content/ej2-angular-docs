@@ -19,10 +19,10 @@ L10n.load({
     template: `<ejs-grid style="padding:70px" [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar'
                (actionComplete)="actionComplete($event)" height='273px'>
                 <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' [validationRules]='orderIDrules' 
+                    <e-column field='OrderID' headerText='Order ID' [validationRules]='orderIDRules' 
                     textAlign='Right' isPrimaryKey='true' width=100></e-column>
-                    <e-column field='CustomerID' [validationRules]='customerIDrules' headerText='Customer ID' width=120></e-column>
-                    <e-column field='Freight' [validationRules]='freightrules' headerText='Freight' textAlign= 'Right'
+                    <e-column field='CustomerID' [validationRules]='customerIDRules' headerText='Customer ID' width=120></e-column>
+                    <e-column field='Freight' [validationRules]='freightRules' headerText='Freight' textAlign= 'Right'
                      editType= 'numericedit' width=120 format= 'C2'></e-column>
                     <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
                 </e-columns>
@@ -33,17 +33,17 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItems[];
-    public orderIDrules?: Object;
-    public customerIDrules?: Object;
-    public freightrules?: Object;
+    public orderIDRules?: Object;
+    public customerIDRules?: Object;
+    public freightRules?: Object;
 
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-        this.orderIDrules = { required: true, number: true };
-        this.customerIDrules = { required: true };
-        this.freightrules =  { min:1,max:1000 };
+        this.orderIDRules = { required: true, number: true };
+        this.customerIDRules = { required: true };
+        this.freightRules =  { min:1,max:1000 };
     }
     actionComplete(args: EditEventArgs) {
         if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
