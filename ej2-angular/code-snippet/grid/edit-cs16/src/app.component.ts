@@ -11,11 +11,11 @@ import { FocusInEventArgs } from '@syncfusion/ej2-angular-inputs';
         [editSettings]="editSettings" [toolbar]="toolbar" (actionBegin)="actionBegin($event)">
             <e-columns>
                 <e-column field="OrderID" headerText="Order ID" width="100" textAlign="Right" isPrimaryKey="true"
-                    [validationRules]="orderidrules">
+                    [validationRules]="orderIDRules">
                 </e-column>
-                <e-column field="CustomerID" headerText="Customer ID" width="100"></e-column>
+                <e-column field="CustomerID" headerText="Customer ID" [validationRules]="customerIDRules" width="100"></e-column>
                 <e-column field="Freight" headerText="Freight" width="100" format="C2" textAlign="Right"
-                    editType="numericedit" [validationRules]="freightrules">
+                    editType="numericedit" [validationRules]="freightRules">
                 </e-column>
                 <e-column field="OrderDate" headerText="Order Date" width="100" editType="datetimepickeredit"
                     [format]="formatoptions" textAlign="Right">
@@ -37,9 +37,9 @@ export class AppComponent implements OnInit {
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItems[];
     public orderData: object | any;
-    public orderidrules?: Object;
-    public customeridrules?: Object;
-    public freightrules?: Object;
+    public orderIDRules?: Object;
+    public customerIDRules?: Object;
+    public freightRules?: Object;
     public editParams?: IEditCell;
     public formatoptions?: Object;
     public pageOptions?: PageSettingsModel;
@@ -47,9 +47,9 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = data;
-        this.orderidrules = { required: true, number: true };
-        this.customeridrules = { required: true };
-        this.freightrules = { required: true };
+        this.orderIDRules = { required: true, number: true };
+        this.customerIDRules = { required: true };
+        this.freightRules = { required: true };
         this.formatoptions = { type: 'dateTime', format: 'M/d/y hh:mm a' };
         this.editSettings = {
             allowEditing: true,

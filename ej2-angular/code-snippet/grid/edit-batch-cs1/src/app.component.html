@@ -4,11 +4,11 @@
       [editSettings]="editSettings" [toolbar]="toolbar" (cellSaved)="save($event)">
         <e-columns>
           <e-column field="OrderID" headerText="Order ID" width="140" textAlign="Right" isPrimaryKey="true"
-          [validationRules]="orderidrules"></e-column>
+          [validationRules]="orderIDRules"></e-column>
           <e-column field="CustomerID" headerText="Customer ID" width="140"
-          [validationRules]="customeridrules"></e-column>
+          [validationRules]="customerIDRules"></e-column>
           <e-column field="Freight" headerText="Freight" width="140" format="C2" textAlign="Right"
-          editType="numericedit" [validationRules]="freightrules"></e-column>
+          editType="numericedit" [validationRules]="freightRules"></e-column>
           <e-column field="OrderDate" headerText="Order Date" width="120" editType="datetimepickeredit"
           [format]="formatoptions" textAlign="Right"></e-column>
           <e-column field='ShipCountry' headerText='Ship Country' width='150' editType='dropdownedit' 

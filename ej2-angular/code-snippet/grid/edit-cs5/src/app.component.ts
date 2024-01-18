@@ -10,11 +10,11 @@ import { BeforeBatchAddArgs, BeforeBatchDeleteArgs, CellEditArgs, EditSettingsMo
                <ejs-grid  [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' (cellEdit)="cellEdit($event)" 
                (beforeBatchAdd)="beforeBatchAdd($event)" (beforeBatchDelete)="beforeBatchDelete($event)" height='240px'>
                 <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' [validationRules]='orderidrules' 
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' [validationRules]='orderIDRules' 
                     isPrimaryKey='true' width=100></e-column>
-                    <e-column field='Role' headerText='Role' [validationRules]='rolerules' width=120></e-column>
+                    <e-column field='Role' headerText='Role' [validationRules]='roleRules' width=120></e-column>
                     <e-column field='Freight' headerText='Freight' textAlign= 'Right'
-                     editType= 'numericedit' width=120 [validationRules]='freightrules' format= 'C2'></e-column>
+                     editType= 'numericedit' width=120 [validationRules]='freightRules' format= 'C2'></e-column>
                     <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150></e-column>
                 </e-columns>
                </ejs-grid>`
@@ -25,17 +25,17 @@ export class AppComponent implements OnInit {
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItems[];
     public isAddable?: boolean = true;
-    public orderidrules?: Object;
-    public rolerules?: Object;
-    public freightrules?: Object;
+    public orderIDRules?: Object;
+    public roleRules?: Object;
+    public freightRules?: Object;
 
     ngOnInit(): void {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' };
         this.toolbar = ['Add', 'Delete', 'Update', 'Cancel'];
-        this.orderidrules = { required: true, number: true };
-        this.rolerules = {required: true };
-        this.freightrules =  { min:1, max:1000 };
+        this.orderIDRules = { required: true, number: true };
+        this.roleRules = {required: true };
+        this.freightRules =  { min:1, max:1000 };
     }
     cellEdit(args: CellEditArgs) {
         if ((args.rowData as columnDataType)['Role'] == 'Admin') {

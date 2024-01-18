@@ -12,7 +12,7 @@ import { EditEventArgs, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-
                     <e-column field='CustomerID' headerText='Customer ID' [validationRules]='customerIDRules' 
                     width=120></e-column>
                     <e-column field='Freight' headerText='Freight' textAlign= 'Right' editType= 'numericedit'
-                    width=120 [validationRules]='freightrules' format= 'C2'></e-column>
+                    width=120 [validationRules]='freightRules' format= 'C2'></e-column>
                     <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' 
                     width=150></e-column>
                 </e-columns>
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
     public toolbar?: ToolbarItems[];
     public orderIDRules?: object;
     public customerIDRules?: object;
-    public freightrules?: Object;
+    public freightRules?: Object;
     
 
     ngOnInit(): void {
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Edit', 'Update', 'Cancel'];
         this.orderIDRules = { required: true };
         this.customerIDRules = { required: true };
-        this.freightrules =  { min:1,max:1000 };
+        this.freightRules =  { min:1,max:1000 };
     }
     actionBegin(args: EditEventArgs) {
         if (args.requestType === 'beginEdit' && (args.rowData as columnDataType).ShipCountry === 'France') {

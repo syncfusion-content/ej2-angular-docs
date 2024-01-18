@@ -81,11 +81,10 @@ The detail template icon in the Syncfusion Grid is used to expand or collapse th
 ```css
 
 .e-grid .e-icon-grightarrow::before {
-    content: "\e7a9";
+    content: "\e655";
 }
-
 .e-grid .e-icon-gdownarrow::before {
-    content: "\e7fe";
+    content: "\e304";
 }
 
 ```

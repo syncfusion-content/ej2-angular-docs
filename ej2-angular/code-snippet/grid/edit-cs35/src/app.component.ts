@@ -50,8 +50,6 @@ export class AppComponent implements OnInit {
     public roleParams?: IEditCell;
     public salaryParams?: IEditCell;
     public addressRules?: object;
-
-
     @ViewChild('grid')
     public grid?: GridComponent;
 

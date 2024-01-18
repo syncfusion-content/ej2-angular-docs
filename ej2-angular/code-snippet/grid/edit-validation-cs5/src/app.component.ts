@@ -10,9 +10,9 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
         <div class="col-lg-9">
             <ejs-grid #normalgrid id='Normalgrid' [dataSource]='data' allowPaging='true' (actionComplete)="onActionComplete($event)" [pageSettings]='pageSettings' [editSettings]='editSettings' [toolbar]='toolbar'  (actionComplete)='onActionComplete($event)'>
                 <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' width='140' textAlign='Right' isPrimaryKey='true' [validationRules]='orderidrules'></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width='140' [validationRules]='customeridrules'></e-column>
-                    <e-column field='Freight' headerText='Freight' width='140' format='C2' textAlign='Right' editType='numericedit' [validationRules]='freightrules' [edit]='edit'></e-column>
+                    <e-column field='OrderID' headerText='Order ID' width='140' textAlign='Right' isPrimaryKey='true' [validationRules]='orderIDRules'></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width='140' [validationRules]='customerIDRules'></e-column>
+                    <e-column field='Freight' headerText='Freight' width='140' format='C2' textAlign='Right' editType='numericedit' [validationRules]='freightRules' [edit]='edit'></e-column>
                     <e-column field='OrderDate' headerText='Order Date' width='120' editType='datetimepickeredit' [format]='formatoptions' textAlign='Right'></e-column>
                     <e-column field='ShipCountry' headerText='Ship Country' width='150' editType='dropdownedit' [edit]='editparams'></e-column>
                 </e-columns>
@@ -26,9 +26,9 @@ export class AppComponent {
     public data?: Object[];
     public editSettings?: Object;
     public toolbar?: string[];
-    public orderidrules?: Object;
-    public customeridrules?: Object;
-    public freightrules?: Object;
+    public orderIDRules?: Object;
+    public customerIDRules?: Object;
+    public freightRules?: Object;
     public editparams?: Object;
     public edit?: Object;
     public pageSettings?: Object;
@@ -47,9 +47,9 @@ export class AppComponent {
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true , newRowPosition: 'Top' };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-        this.orderidrules = { required: true, number: true };
-        this.customeridrules = { required: true };
-        this.freightrules = {
+        this.orderIDRules = { required: true, number: true };
+        this.customerIDRules = { required: true };
+        this.freightRules = {
             required: true,
             maxLength: [this.customFn, 'Please enter a value less than 1000'],
             minLength: [this.customFn1, 'Please enter a value greater than 1']

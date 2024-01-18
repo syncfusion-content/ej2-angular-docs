@@ -15,7 +15,7 @@ import { CheckBoxComponent } from '@syncfusion/ej2-angular-buttons';
                     [validationRules]="orderIDRules" width="100"></e-column>
                    <e-column field="CustomerID" headerText="Customer ID" width="120" ></e-column>
                    <e-column field="Freight" headerText="Freight" textAlign="Right" 
-                   [validationRules]="freightrules" editType="numericedit" width="120" format="C2"></e-column>
+                   [validationRules]="freightRules" editType="numericedit" width="120" format="C2"></e-column>
                    <e-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" width="150">
                    </e-column>
                 </e-columns>
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
     public toolbar?: ToolbarItems[];
     public orderIDRules?: object;
     public customerIDRules?: object;
-    public freightrules?: Object;
+    public freightRules?: Object;
     @ViewChild('grid') grid?: GridComponent;
     @ViewChild('checkbox') checkbox?: CheckBoxComponent;
 
@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
         };
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
         this.orderIDRules = { required: true };
-        this.freightrules = { min: 1, max: 1000 };
+        this.freightRules = { min: 1, max: 1000 };
     }
 
     actionComplete(args: EditEventArgs) {
