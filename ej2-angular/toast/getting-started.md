@@ -67,7 +67,7 @@ Navigate to the created project folder.
 
 ## Installing Syncfusion notifications Package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
@@ -105,7 +105,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 After installing the package, the component modules are ready to configure in your application from installed syncfusion package. Syncfusion Angular package provides two different types of ngModules.
 
-Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module/) to learn about `ngModules`.
+Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module) to learn about `ngModules`.
 
 Refer the following snippet to import the `ToastModule` in `app.module.ts` from the `@syncfusion/ej2-angular-notifications`.
 
@@ -210,4 +210,4 @@ Run the `ng serve` command in command window, it will serve your application and
 
 ## See Also
 
-* [Render different types of toast](./how-to/show-different-types-of-toast/)
+* [Render different types of toast](./how-to/show-different-types-of-toast)

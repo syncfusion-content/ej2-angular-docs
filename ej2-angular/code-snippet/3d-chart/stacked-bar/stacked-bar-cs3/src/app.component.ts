@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
     template: `<ejs-chart3d style='display:block;' align='center' [primaryXAxis]='primaryXAxis' [primaryYAxis]="primaryYAxis"
     rotation=7 tilt=10 depth=100 [enableRotation]='enableRotation'>
     <e-chart3d-series-collection>
-        <e-chart3d-series [dataSource]='dataSource' type='StackingColumn100' xName='x' yName='y' name="General Motors" fill="red">
+        <e-chart3d-series [dataSource]='dataSource' type='StackingBar100' xName='x' yName='y' name="General Motors" fill="red">
         </e-chart3d-series>
-        <e-chart3d-series [dataSource]='dataSource' type='StackingColumn100' xName='x' yName='y1' name="Honda" fill="green">
+        <e-chart3d-series [dataSource]='dataSource' type='StackingBar100' xName='x' yName='y1' name="Honda" fill="green">
         </e-chart3d-series>
-        <e-chart3d-series [dataSource]='dataSource' type='StackingColumn100' xName='x' yName='y2' name="Suzuki" fill="yellow">
+        <e-chart3d-series [dataSource]='dataSource' type='StackingBar100' xName='x' yName='y2' name="Suzuki" fill="yellow">
         </e-chart3d-series>
     </e-chart3d-series-collection>
 </ejs-chart3d>`
