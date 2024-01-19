@@ -43,19 +43,33 @@ export class AppComponent {
 
     public field:Object ={  dataSource: this.Countries, id: 'id', text: 'name', parentID: 'pid', hasChildren: 'hasChild' };
     public newData?: any;
+    public expandedNodes: Set<number> = new Set<number>();
     @ViewChild ('treevalidate') tree?: TreeViewComponent;
 
     public onNodeExpand(args: NodeExpandEventArgs | any): void {
-        if (args.isInteracted){
-            let childData: any =  new DataManager(this.newData).executeLocal(new Query().where(((this.tree as TreeViewComponent ).fields as FieldsSettingsModel).parentID as string, 'equal', parseInt(args.nodeData['id']), false));
-            this.tree?.addNodes(childData, args.node, null as any)
+        if (args.isInteracted) {
+            const nodeId: number = parseInt(args.nodeData['id']);
+            if (!this.expandedNodes.has(nodeId)) {
+                let childData: any = new DataManager(this.newData).executeLocal(
+                new Query().where(
+                    ((this.tree as TreeViewComponent).fields as FieldsSettingsModel)
+                    .parentID as string,
+                    'equal',
+                    nodeId,
+                    false
+                )
+                );
+                
+                this.tree?.addNodes(childData, args.node, null as any);
+                this.expandedNodes.add(nodeId);
+            }
         }
     }
 
     public onCreate(args: any){
         this.newData = this.tree?.fields.dataSource;
         // Selects the first level nodes alone
-        let resultData = new DataManager(this.newData).executeLocal(new Query().where(((this.tree as TreeViewComponent ).fields as FieldsSettingsModel).parentID as string, 'equal', undefined, false));
+        let resultData = new DataManager(this.newData).executeLocal(new Query().where(((this.tree as TreeViewComponent ).fields as FieldsSettingsModel).parentID as string, 'isnull', undefined, false));
         let name = [];
         for (let i = 0; i < resultData.length; i++){
             name.push(((resultData)[i] as Object | any)[(this.tree as any).fields.text as any]);

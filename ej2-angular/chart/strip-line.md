@@ -185,4 +185,4 @@ You can create stripline in a particular region with respect to segment. You can
 
 ## See Also
 
-* [Mark the threshold in chart](./how-to/threshold/#mark-a-threshold-in-chart)
+* [Mark the threshold in chart](./how-to/threshold#mark-a-threshold-in-chart)
