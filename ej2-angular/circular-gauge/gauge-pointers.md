@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Gauge pointers in Angular Circular gauge component | Syncfusion
-description: Learn here all about Gauge pointers in Syncfusion Angular Circular gauge component of Syncfusion Essential JS 2 and more.
+title: Gauge pointers in Angular Circular Gauge Component | Syncfusion
+description: Learn here all about Gauge pointers in Syncfusion Angular Circular Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Gauge pointers 
 documentation: ug
@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Gauge pointers in Angular Circular gauge component
+# Gauge pointers in Angular Circular Gauge Component
 
 Pointers are used to indicate values on the axis. Value of the pointer can be modified using the [`value`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#value-number) property.
 
@@ -177,7 +177,7 @@ We can use image instead of rendering marker shape to denote the pointer value. 
 
 **Customization**
 
-The marker can be customized in terms of color, border, width and height by using [`color`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#color-string), [`border`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#border-bordermodel), [`markerWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#markerwidth-number) and [`markerHeight`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#markerheight-number) property in [`pointer`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer).
+The marker can be customized in terms of color, border, width and height by using [`color`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#color-string), [`border`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#border-bordermodel), [`markerWidth`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#markerwidth-number) and [`markerHeight`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/#markerheight-number) property in [`pointer`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointer/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

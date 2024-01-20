@@ -185,7 +185,7 @@ This can be referenced in your `[src/styles/styles.css]` using the following cod
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-angular-documenteditor/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-documenteditor/styles/material.css';
 ```
 
 > To know about individual component CSS, please refer to [Individual Component theme files](../appearance/theme-studio#filtering-a-specific-list-of-components) section.

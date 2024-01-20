@@ -54,7 +54,7 @@ The column header text can be defined using the [`headerText`](https://ej2.syncf
 
 ## Format
 
-To format the cell values based on a specific culture, use the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#format) property. The Gantt component uses the [`Internationalization`](../../common/internationalization/) library to format `number` and `date` values.
+To format the cell values based on a specific culture, use the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#format) property. The Gantt component uses the [`Internationalization`](../../common/internationalization) library to format `number` and `date` values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
