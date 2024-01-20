@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 # Technical indicators in Angular Chart component
 
-A [technical indicator](https://www.syncfusion.com/angular-ui-components/angular-charts) is a mathematical calculation based on historic price, volume or open interest information that aims to forecast financial market direction.
+A [technical indicator](https://www.syncfusion.com/angular-components/angular-charts) is a mathematical calculation based on historic price, volume or open interest information that aims to forecast financial market direction.
 
 Chart supports 10 types of technical indicators.
 

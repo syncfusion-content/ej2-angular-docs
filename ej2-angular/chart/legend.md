@@ -313,4 +313,4 @@ The [`itemPadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/l
 
 ## See Also
 
-* [Customize each shape in legend](./how-to/legend-customization/#customize-each-shape-in-legend)
+* [Customize each shape in legend](./how-to/legend-customization#customize-each-shape-in-legend)
