@@ -10,19 +10,19 @@ domainurl: ##DomainURL##
 
 # Drag and drop in Angular Tab component
 
-The Tab component allows you to drag and drop any item by setting [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/tab#allowdraganddrop)&nbsp;to **true**. Items can be reordered to any place by dragging and dropping them onto the desired location.
+The Tab component allows you to drag and drop any item by setting [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/tab/#allowdraganddrop)&nbsp;to **true**. Items can be reordered to any place by dragging and dropping them onto the desired location.
 
-* If you need to prevent dragging action for a particular item, the [`onDragStart`](https://ej2.syncfusion.com/angular/documentation/api/tab#ondragstart) event can be used which will trigger when the item drag is started. If you need to prevent dropping action for a particular item, the [`dragged`](https://ej2.syncfusion.com/angular/documentation/api/tab#dragged) event can be used which will trigger when the drag action is stopped.
+* If you need to prevent dragging action for a particular item, the [`onDragStart`](https://ej2.syncfusion.com/angular/documentation/api/tab/#ondragstart) event can be used which will trigger when the item drag is started. If you need to prevent dropping action for a particular item, the [`dragged`](https://ej2.syncfusion.com/angular/documentation/api/tab/#dragged) event can be used which will trigger when the drag action is stopped.
 
-* The [`dragArea`](https://ej2.syncfusion.com/angular/documentation/api/tab#dragArea) defines the area in which the draggable element movement will be occurring. Outside that area will be restricted for the draggable element movement.
+* The [`dragArea`](https://ej2.syncfusion.com/angular/documentation/api/tab/#dragArea) defines the area in which the draggable element movement will be occurring. Outside that area will be restricted for the draggable element movement.
 
-* The [`onDragStart`](https://ej2.syncfusion.com/angular/documentation/api/tab#ondragstart) event will be triggered before dragging the item from Tab.
+* The [`onDragStart`](https://ej2.syncfusion.com/angular/documentation/api/tab/#ondragstart) event will be triggered before dragging the item from Tab.
 
-* The [`dragging`](https://ej2.syncfusion.com/angular/documentation/api/tab#dragging) event will be triggered when the Tab item is being dragged.
+* The [`dragging`](https://ej2.syncfusion.com/angular/documentation/api/tab/#dragging) event will be triggered when the Tab item is being dragged.
 
-* The [`dragged`](https://ej2.syncfusion.com/angular/documentation/api/tab#dragged) event will be triggered when the Tab item is dropped on the target element successfully.
+* The [`dragged`](https://ej2.syncfusion.com/angular/documentation/api/tab/#dragged) event will be triggered when the Tab item is dropped on the target element successfully.
 
-In the following sample, the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/tab#allowdraganddrop) property is enabled.
+In the following sample, the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/tab/#allowdraganddrop) property is enabled.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

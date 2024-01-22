@@ -126,15 +126,23 @@ The following example code illustrates how to write a Web API for importing Word
     }
 ```
 
-### Import document with EMF and WMF images
+### Import document with TIFF, EMF and WMF images
 
-The web browsers do not support to display metafile images like EMF and WMF. As a fallback approach, you can convert the metafile to raster image using any image converter in the `MetafileImageParsed` event and this fallback raster image will be displayed in the client-side Document editor component.
+The web browsers do not support to display metafile images like EMF and WMF and also TIFF format images. As a fallback approach, you can convert the metafile/TIFF format image to raster image using any image converter in the `MetafileImageParsed` event and this fallback raster image will be displayed in the client-side Document editor component.
+
+>Note: In `MetafileImageParsedEventArgs` event argument, you can get the metafile stream using `getMetafileStream()` property and you can get the `getIsMetafile()` boolean value to determine whether the image  is meta file images(WMF,EMF) or Tiff format images. In below example, we have converted the TIFF to raster image in `ConvertTiffToRasterImage()` method using TwelveMonkeys ImageIO TIFF library.
 
 The following example code illustrates how to use `MetafileImageParsed` event for creating fallback raster image for metafile present in a Word document.
 
 ```java
 import com.syncfusion.javahelper.system.collections.generic.*;
 import com.syncfusion.ej2.wordprocessor.*;
+// Below import statements are used for TIFF image conversion
+import javax.imageio.*;
+import javax.imageio.spi.IIORegistry;
+import java.awt.image.BufferedImage;
+import java.io.*;
+import com.twelvemonkeys.imageio.plugins.tiff.TIFFImageReaderSpi;
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PostMapping("/api/wordeditor/Import")
@@ -185,9 +193,53 @@ import com.syncfusion.ej2.wordprocessor.*;
 
     // Converts Metafile to raster image.
     private static void OnMetafileImageParsed(Object sender, MetafileImageParsedEventArgs args) {
-        // You can write your own method definition for converting metafile to raster
-        // image using any third-party image converter.
-        args.setImageStream(ConvertMetafileToRasterImage(args.getMetafileStream())) ;
+        if (args.getIsMetafile())
+        {
+        	//MetaFile image conversion(EMF and WMF)
+        	//You can write your own method definition for converting metafile to raster image using any third-party image converter.
+        	args.setImageStream(ConvertMetafileToRasterImage(args.getMetafileStream())) ;
+        }
+        else
+        {
+        	//TIFF image conversion
+        	args.setImageStream(ConvertTiffToRasterImage(args.getMetafileStream())) ;
+        }
+    }
+
+    private static StreamSupport ConvertTiffToRasterImage(StreamSupport ImageStream) throws Exception {
+        InputStream inputStream = StreamSupport.toStream(args.getMetafileStream());
+        // Use ByteArrayOutputStream to collect data into a byte array
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+
+        // Read data from the InputStream and write it to the ByteArrayOutputStream
+        byte[] buffer = new byte[1024];
+        int bytesRead;
+        while ((bytesRead = inputStream.read(buffer)) != -1) {
+            byteArrayOutputStream.write(buffer, 0, bytesRead);
+        }
+
+        // Convert the ByteArrayOutputStream to a byte array
+        byte[] tiffData = byteArrayOutputStream.toByteArray();
+        // Read TIFF image from byte array
+        ByteArrayInputStream tiffInputStream = new ByteArrayInputStream(tiffData);
+        IIORegistry.getDefaultInstance().registerServiceProvider(new TIFFImageReaderSpi());
+
+        // Create ImageReader and ImageWriter instances
+        ImageReader tiffReader = ImageIO.getImageReadersByFormatName("TIFF").next();
+        ImageWriter pngWriter = ImageIO.getImageWritersByFormatName("PNG").next();
+
+        // Set up input and output streams
+        tiffReader.setInput(ImageIO.createImageInputStream(tiffInputStream));
+        ByteArrayOutputStream pngOutputStream = new ByteArrayOutputStream();
+        pngWriter.setOutput(ImageIO.createImageOutputStream(pngOutputStream));
+
+        // Read the TIFF image and write it as a PNG
+        BufferedImage image = tiffReader.read(0);
+        pngWriter.write(image);
+        pngWriter.dispose();
+        byte[] jpgData = pngOutputStream.toByteArray();
+        InputStream jpgStream = new ByteArrayInputStream(jpgData);
+        return StreamSupport.toStream(jpgStream);
     }
 ```
 

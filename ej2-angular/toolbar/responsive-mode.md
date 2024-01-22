@@ -53,7 +53,7 @@ The default overflow mode of the Toolbar is `Scrollable`. Scrollable display mod
 
 ## Popup
 
-`Popup` is another type of [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/toolbar#overflowmode) in which the Toolbar container holds the commands that can be placed in the available space. The rest of the overflowing commands that do not fit within the viewing area moves to the overflow popup container.
+`Popup` is another type of [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#overflowmode) in which the Toolbar container holds the commands that can be placed in the available space. The rest of the overflowing commands that do not fit within the viewing area moves to the overflow popup container.
 
 The commands placed in the popup can be viewed by opening the popup using the drop down icon given at the end of the Toolbar.
 
@@ -65,7 +65,7 @@ The commands placed in the popup can be viewed by opening the popup using the dr
 
 Default popup priority is set as `none`, and when the commands of the Toolbar overflow, the ones listed last will be moved to the popup.
 
-You can customize the priority of commands to be displayed on the Toolbar and popup by using the [`overflow`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel#overflow) property.
+You can customize the priority of commands to be displayed on the Toolbar and popup by using the [`overflow`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/#overflow) property.
 
 Property     | Description
 ------------ | -------------
@@ -75,7 +75,7 @@ Property     | Description
 
 If primary priority commands also exceed available space, they are moved to the popup container at top order position and placed before the secondary priority commands.
 
-> You can maintain toolbar item on popup always by using the ['showAlwaysInPopup'](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemDirective#showalwaysinpopup) property, and this behavior is not applicable for toolbar items with [overflow](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#overflow) property as 'show'.
+> You can maintain toolbar item on popup always by using the ['showAlwaysInPopup'](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemDirective/#showalwaysinpopup) property, and this behavior is not applicable for toolbar items with [overflow](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#overflow) property as 'show'.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -93,7 +93,7 @@ If primary priority commands also exceed available space, they are moved to the 
 
 ### Text mode for buttons
 
-The [`showTextOn`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#showtexton) property is used to decide button text display area on the Toolbar, popup, or both. This is useful for customization of both text and image representation of commands.
+The [`showTextOn`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#showtexton) property is used to decide button text display area on the Toolbar, popup, or both. This is useful for customization of both text and image representation of commands.
 
 For example, you can show icon only button on the Toolbar, and in the popup container display more information about the commands with icon and text.
 
