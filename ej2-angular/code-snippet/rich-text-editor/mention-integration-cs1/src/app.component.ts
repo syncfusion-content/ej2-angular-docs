@@ -3,14 +3,14 @@
  */
 import { Component } from '@angular/core';
 import { ToolbarService, HtmlEditorService, ImageService, LinkService } from '@syncfusion/ej2-angular-richtexteditor';
-import { isNullOrUndefined } from '@syncfusion/ej2-base';
+
 
 @Component( {
     selector: 'app-root',
     template: `<ejs-richtexteditor id="mention_integration"  placeholder="Type @ and tag the name" (actionBegin)="onActionBegin($event)">
     <ng-template #valueTemplate>
-        <p>Hello <span contenteditable="false" class="e-mention-chip"><a href="mailto:maria@gmail.com" title="maria@gmail.com">@Maria</a></span>&#8203;</p>
-        <p>Welcome to the mention integration with rich text editor demo. Type <code>@</code> character and tag user from the suggestion list. </p>
+        <p>Hello <span contenteditable="false" class="e-mention-chip"><a href="mailto:maria@gmail.com" title="maria@gmail.com">&#64;Maria</a></span>&#8203;</p>
+        <p>Welcome to the mention integration with rich text editor demo. Type <code>&#64;</code> character and tag user from the suggestion list. </p>
     </ng-template>
 </ejs-richtexteditor>
 <ejs-mention [dataSource]='data' target='#mention_integration_rte-edit-view' [fields]='fieldsData' [suggestionCount]="8" [showMentionChar]="false" [allowSpaces]="true"  
@@ -32,7 +32,7 @@ popupWidth='250px' popupHeight='200px'>
             </table>
     </ng-template>
     <ng-template #displayTemplate let-data>
-        <a href="mailto:{{data.EmailId}}" title="{{data.EmailId}}">@{{data.Name}}</a>
+        <a href="mailto:{{data.EmailId}}" title="{{data.EmailId}}">&#64;{{data.Name}}</a>
     </ng-template>
 </ejs-mention>
 `,
@@ -62,9 +62,10 @@ export class AppComponent {
       ];
       public  fieldsData: { [key: string]: string } = { text: 'Name' };
 
-      onActionBegin(args){
-        if (args.requestType === 'EnterAction' && !isNullOrUndefined(document.querySelector('.e-mention.e-popup-open'))) {
-            args.cancel = true;
+      onActionBegin(args: any) {
+        const mentionPopup = document.querySelector('.e-mention.e-popup-open');
+        if (args.requestType === 'EnterAction' && mentionPopup !== null) {
+          args.cancel = true;
         }
       }
 }
