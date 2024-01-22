@@ -52,13 +52,18 @@ The following example code illustrates how to write a Web API for importing Word
     }
 ```
 
-### Import document with EMF and WMF images
+### Import document with TIFF, EMF and WMF images
 
-The web browsers do not support to display metafile images like EMF and WMF. As a fallback approach, you can convert the metafile to raster image using any image converter in the `MetafileImageParsed` event and this fallback raster image will be displayed in the client-side Document editor component.
+The web browsers do not support to display metafile images like EMF and WMF and also TIFF format images. As a fallback approach, you can convert the metafile/TIFF format image to raster image using any image converter in the `MetafileImageParsed` event and this fallback raster image will be displayed in the client-side Document editor component.
+
+>Note: In `MetafileImageParsedEventArgs` event argument, you can get the metafile stream using `MetafileStream` property and you can get the `IsMetafile` boolean value to determine whether the image  is meta file images(WMF,EMF) or Tiff format images. In below example, we have converted the TIFF to raster image in `ConvertTiffToRasterImage()` method using `Bitmiracle https://www.nuget.org/packages/BitMiracle.LibTiff.NET`.
 
 The following example code illustrates how to use `MetafileImageParsed` event for creating fallback raster image for metafile present in a Word document.
 
-```csharp
+```c#
+    using SkiaSharp;
+    using BitMiracle.LibTiff.Classic;
+
     public string Import(IFormCollection data)
     {
         if (data.Files.Count == 0)
@@ -85,9 +90,79 @@ The following example code illustrates how to use `MetafileImageParsed` event fo
 
     //Converts Metafile to raster image.
     private static void OnMetafileImageParsed(object sender, MetafileImageParsedEventArgs args)
+    {       
+        if (args.IsMetafile)
+        {
+            //MetaFile image conversion(EMF and WMF)
+            //You can write your own method definition for converting metafile to raster image using any third-party image converter.
+            args.ImageStream = ConvertMetafileToRasterImage(args.MetafileStream);
+        }
+        else
+        {
+            //TIFF image conversion
+            args.ImageStream = ConvertTiffToRasterImage(args.MetafileStream);
+        }
+    }
+    
+    // Converting Tiff to Png image using Bitmiracle https://www.nuget.org/packages/BitMiracle.LibTiff.NET
+    private static MemoryStream ConvertTiffToRasterImage(Stream tiffStream)
     {
-    //You can write your own method definition for converting metafile to raster image using any third-party image converter.
-    args.ImageStream = ConvertMetafileToRasterImage(args.MetafileStream);
+        MemoryStream imageStream = new MemoryStream();
+        using (Tiff tif = Tiff.ClientOpen("in-memory", "r", tiffStream, new TiffStream()))
+        {
+        // Find the width and height of the image
+        FieldValue[] value = tif.GetField(BitMiracle.LibTiff.Classic.TiffTag.IMAGEWIDTH);
+        int width = value[0].ToInt();
+
+        value = tif.GetField(BitMiracle.LibTiff.Classic.TiffTag.IMAGELENGTH);
+        int height = value[0].ToInt();
+
+        // Read the image into the memory buffer
+        int[] raster = new int[height * width];
+        if (!tif.ReadRGBAImage(width, height, raster))
+        {
+            throw new Exception("Could not read image");
+        }
+
+        // Create a bitmap image using SkiaSharp.
+        using (SKBitmap sKBitmap = new SKBitmap(width, height, SKImageInfo.PlatformColorType, SKAlphaType.Premul))
+        {
+            // Convert a RGBA value to byte array.
+            byte[] bitmapData = new byte[sKBitmap.RowBytes * sKBitmap.Height];
+            for (int y = 0; y < sKBitmap.Height; y++)
+            {
+            int rasterOffset = y * sKBitmap.Width;
+            int bitsOffset = (sKBitmap.Height - y - 1) * sKBitmap.RowBytes;
+
+            for (int x = 0; x < sKBitmap.Width; x++)
+            {
+                int rgba = raster[rasterOffset++];
+                bitmapData[bitsOffset++] = (byte)((rgba >> 16) & 0xff);
+                bitmapData[bitsOffset++] = (byte)((rgba >> 8) & 0xff);
+                bitmapData[bitsOffset++] = (byte)(rgba & 0xff);
+                bitmapData[bitsOffset++] = (byte)((rgba >> 24) & 0xff);
+            }
+            }
+
+            // Convert a byte array to SKColor array.
+            SKColor[] sKColor = new SKColor[bitmapData.Length / 4];
+            int index = 0;
+            for (int i = 0; i < bitmapData.Length; i++)
+            {
+            sKColor[index] = new SKColor(bitmapData[i + 2], bitmapData[i + 1], bitmapData[i], bitmapData[i + 3]);
+            i += 3;
+            index += 1;
+            }
+
+            // Set the SKColor array to SKBitmap.
+            sKBitmap.Pixels = sKColor;
+
+            // Save the SKBitmap to PNG image stream.
+            sKBitmap.Encode(SKEncodedImageFormat.Png, 100).SaveTo(imageStream);
+            imageStream.Flush();
+        }
+        }
+        return imageStream;
     }
 ```
 

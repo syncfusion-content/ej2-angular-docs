@@ -294,7 +294,7 @@ The `hierarchyExportMode` property allows you to specify the exporting behavior 
 | All      | Exports the master grid with all child grids, expanded or not. |
 | None     | Exports only the master grid without any child grids. |
 
-The following example demonstrates how to export hierarchical grid to PDF document. Also change the `pdfExportProperties.hierarchyExportMode` property by using [value](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#value) property of the `DropDownList` component.
+The following example demonstrates how to export hierarchical grid to PDF document. Also change the `pdfExportProperties.hierarchyExportMode` property by using [value](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#value) property of the `DropDownList` component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

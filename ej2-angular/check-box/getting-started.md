@@ -153,12 +153,12 @@ The Essential JS 2 CheckBox contains 3 different states visually, they are:
 * Unchecked
 * Indeterminate
 
-The CheckBox [`checked`](https://ej2.syncfusion.com/angular/documentation/api/check-box#checked) property is used to handle the checked and unchecked state.
+The CheckBox [`checked`](https://ej2.syncfusion.com/angular/documentation/api/check-box/#checked) property is used to handle the checked and unchecked state.
 In checked state a tick mark will be added to the visualization of CheckBox.
 
 ### Indeterminate
 
-CheckBox indeterminate state can be set through [`indeterminate`](https://ej2.syncfusion.com/angular/documentation/api/check-box#indeterminate) property. CheckBox indeterminate state masks the real value of CheckBox visually. Checkbox cannot be changed to indeterminate state through the user interface, this state can be achieved only through the property.
+CheckBox indeterminate state can be set through [`indeterminate`](https://ej2.syncfusion.com/angular/documentation/api/check-box/#indeterminate) property. CheckBox indeterminate state masks the real value of CheckBox visually. Checkbox cannot be changed to indeterminate state through the user interface, this state can be achieved only through the property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

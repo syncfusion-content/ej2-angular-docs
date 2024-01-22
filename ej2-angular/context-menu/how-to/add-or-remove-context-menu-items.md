@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Add or remove context menu items in Angular Context menu component
 
-ContextMenu items can be added or removed using the [`insertAfter`](https://ej2.syncfusion.com/angular/documentation/api/menu#insertafter), [`insertBefore`](https://ej2.syncfusion.com/angular/documentation/api/menu#insertbefore) and [`removeItems`](https://ej2.syncfusion.com/angular/documentation/api/menu#removeitems) methods.
+ContextMenu items can be added or removed using the [`insertAfter`](https://ej2.syncfusion.com/angular/documentation/api/menu/#insertafter), [`insertBefore`](https://ej2.syncfusion.com/angular/documentation/api/menu/#insertbefore) and [`removeItems`](https://ej2.syncfusion.com/angular/documentation/api/menu/#removeitems) methods.
 
 In the following example, the **Display Settings** menu items are added before the **Personalize** item, the **Sort By** menu items are added after the **Refresh**, and the **Paste** item is removed from context menu.
 

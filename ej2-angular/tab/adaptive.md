@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Adaptive in Angular Tab component
 
-The following section explains about rendering Tab when its width exceeds the viewable area or particularly in a given [`width`](https://ej2.syncfusion.com/angular/documentation/api/tab#width).
+The following section explains about rendering Tab when its width exceeds the viewable area or particularly in a given [`width`](https://ej2.syncfusion.com/angular/documentation/api/tab/#width).
 
 The available modes are as follows:
 
@@ -48,7 +48,7 @@ The default overflow mode is Scrollable. Scrollable display mode supports displa
 
 ## Popup
 
-The Popup is the another type of [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/tab#overflowmode) in which the Tab container holds the items that can be placed within the available space. The rest of the overflowing items for which there is no space to fit within the viewing area are moved to overflow popup container.
+The Popup is the another type of [`overflowMode`](https://ej2.syncfusion.com/angular/documentation/api/tab/#overflowmode) in which the Tab container holds the items that can be placed within the available space. The rest of the overflowing items for which there is no space to fit within the viewing area are moved to overflow popup container.
 
 * The items placed in popup can be viewed by opening the popup with the help of drop-down icon given at the end of the Tab header.
 
@@ -72,5 +72,5 @@ The Popup is the another type of [`overflowMode`](https://ej2.syncfusion.com/ang
 
 ## See Also
 
-* [How to prevent content swipe selection](./how-to/prevent-content-swipe-selection/)
-* [Collapsible Tab](./how-to/create-collapsible-tabs/)
+* [How to prevent content swipe selection](./how-to/prevent-content-swipe-selection)
+* [Collapsible Tab](./how-to/create-collapsible-tabs)
