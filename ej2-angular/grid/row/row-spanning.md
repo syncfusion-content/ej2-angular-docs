@@ -43,3 +43,4 @@ In the following demo, **Davolio** cell is spanned to two rows in the **Employee
     2. Infinite scrolling
     3. Lazy load grouping
     4. Row drag and drop
+    5. Grouping

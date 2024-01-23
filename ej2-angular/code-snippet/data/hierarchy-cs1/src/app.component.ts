@@ -3,7 +3,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataManager, Query, ODataAdaptor, ReturnOption } from '@syncfusion/ej2-data';
 
-const SERVICE_URI = 'http://mvc.syncfusion.com/Services/Northwnd.svc/';
+const SERVICE_URI = 'https://services.odata.org/V3/Northwind/Northwind.svc/Orders/';
 
 @Component({
     selector: 'app-root',

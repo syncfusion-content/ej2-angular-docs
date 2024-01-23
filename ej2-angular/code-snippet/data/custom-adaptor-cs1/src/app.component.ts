@@ -3,7 +3,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataManager, Query, ODataAdaptor, ReturnOption } from '@syncfusion/ej2-data';
 
-const SERVICE_URI: string =  'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders';
+const SERVICE_URI: string =  'https://services.odata.org/V3/Northwind/Northwind.svc/Orders/';
 
 class SerialNoAdaptor extends ODataAdaptor {
     public override processResponse(): object {

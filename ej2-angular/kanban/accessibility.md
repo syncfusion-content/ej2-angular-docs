@@ -16,15 +16,15 @@ The accessibility compliance for the Kanban component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| [Section 508 Support](../common/accessibility#accessibility-standards) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| [Screen Reader Support](../common/accessibility#screen-reader-support) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| [Right-To-Left Support](../common/accessibility#right-to-left-support) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| [Color Contrast](../common/accessibility#color-contrast) | ![Intermediate](https://cdn.syncfusion.com/content/images/landing-page/intermediate.png) |
-| [Mobile Device Support](../common/accessibility#mobile-device-support) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
-| [Accessibility Checker Validation](../common/accessibility#ensuring-accessibility) | ![Intermediate](https://cdn.syncfusion.com/content/images/landing-page/intermediate.png) |
-| [Axe-core Accessibility Validation](../common/accessibility#ensuring-accessibility) | ![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) |
+| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
+| [Section 508 Support](../common/accessibility#accessibility-standards) | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
+| [Screen Reader Support](../common/accessibility#screen-reader-support) | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
+| [Right-To-Left Support](../common/accessibility#right-to-left-support) | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
+| [Color Contrast](../common/accessibility#color-contrast) | ![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png) |
+| [Mobile Device Support](../common/accessibility#mobile-device-support) | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
+| [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
+| [Accessibility Checker Validation](../common/accessibility#ensuring-accessibility) | ![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png) |
+| [Axe-core Accessibility Validation](../common/accessibility#ensuring-accessibility) | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
 
 <style>
     .post .post-content img {
@@ -32,11 +32,11 @@ The accessibility compliance for the Kanban component is outlined below.
         margin: 0.5em 0;
     }
 </style>
-![Yes](https://cdn.syncfusion.com/content/images/landing-page/yes.png) - All features of the component meet the requirement.
+![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) - All features of the component meet the requirement.
 
-![Intermediate](https://cdn.syncfusion.com/content/images/landing-page/intermediate.png)  - Some features of the component do not meet the requirement.
+![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png)  - Some features of the component do not meet the requirement.
 
-![No](https://cdn.syncfusion.com/content/images/landing-page/no.png)  - The component does not meet the requirement.
+![No](https://cdn.syncfusion.com/content/images/documentation/not-supported.png)  - The component does not meet the requirement.
 
 ## WAI-ARIA attributes
 
