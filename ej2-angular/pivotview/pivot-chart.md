@@ -676,3 +676,30 @@ In the following code sample, printing can be done using an external button name
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs249" %}
+
+## Events
+
+### MultiLevelLabelRender
+
+The [multiLevelLabelRender](https://helpej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/#multilevellabelrender) event triggers during the rendering of each multi-level label in the pivot chart. It allows you to customize each multi-level label's appearance and content based on your specific visualization needs. It includes the following parameters:
+
+* [`alignment`](https://helpej2.syncfusion.com/angular/documentation/api/pivotview/multiLevelLabelRenderEventArgs/#alignment) - It holds the text alignment for multi-level labels, as **Center, Far, or Near**.
+* [`axis`](https://helpej2.syncfusion.com/angular/documentation/api/pivotview/multiLevelLabelRenderEventArgs/#axis) - It holds the current axis details of the multi-level labels.
+* [`cancel`](https://helpej2.syncfusion.com/angular/documentation/api/pivotview/multiLevelLabelRenderEventArgs/#cancel) - It's a boolean property that allows user to restrict the rendering of the current label.
+* [`customAttributes`](https://helpej2.syncfusion.com/angular/documentation/api/pivotview/multiLevelLabelRenderEventArgs/#customattributes) -  It holds the custom objects for multi-level labels.
+* [`text`](https://helpej2.syncfusion.com/angular/documentation/api/pivotview/multiLevelLabelRenderEventArgs/#text) -  It contains the current text of the axis label.
+* [`textStyle`](https://helpej2.syncfusion.com/angular/documentation/api/pivotview/multiLevelLabelRenderEventArgs/#textstyle) - It holds the font style, including font size, weight, color, and other font properties for the multi-level labels.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs323/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs323/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs323/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs323" %}
