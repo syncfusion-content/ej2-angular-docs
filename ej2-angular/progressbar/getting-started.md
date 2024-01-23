@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Progress bar component | Syncfusion
+title: Getting Started with Angular Progress Button Component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Progress bar component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Progress bar component
+# Getting started with Angular Progress Button Component
 
 This section explains you the steps required to create a progressbar and demonstrate the basic usage of the progressbar control.
 
