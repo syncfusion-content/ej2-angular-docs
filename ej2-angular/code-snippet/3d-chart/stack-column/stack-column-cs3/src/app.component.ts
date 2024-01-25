@@ -34,6 +34,5 @@ export class AppComponent {
         this.enableRotation = true;
     }
 }
-}
 
 
