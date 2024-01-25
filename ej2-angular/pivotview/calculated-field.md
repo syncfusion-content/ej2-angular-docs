@@ -94,7 +94,7 @@ While creating a new calculated field, if user wants to the add the formula of a
 
 ## Apply the format to the calculated field values
 
-Values in a new or existing calculated field can be formatted via the calculated field UI or code behind. The [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/) property in code-behind can be used to specify the desired format. For more information about the supported formats refer [`here`](https://ej2.syncfusion.com/angular/documentation/pivotview/number-formatting/).
+Values in a new or existing calculated field can be formatted via the calculated field UI or code behind. The [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/) property in code-behind can be used to specify the desired format. For more information about the supported formats refer [`here`](https://ej2.syncfusion.com/angular/documentation/pivotview/number-formatting).
 
 To apply format to calculated field values at runtime via UI, a built-in dropdown under the "Format" label is available, from which the user can select the pre-defined format options listed below.
 
@@ -284,9 +284,9 @@ The event [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/p
 
     | Action | Action Name|
     |------|-------------|
-    | [`Calculated field button`](./calculated-field/#Calculated-Field)| Open calculated field dialog|
-    | [`Edit icon in calculated field`](./calculated-field/#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
-    | [`Context menu in the tree view inside the calculated field dialog`](./calculated-field/#Calculated-Field)| Calculated field context menu|
+    | [`Calculated field button`](./calculated-field#Calculated-Field)| Open calculated field dialog|
+    | [`Edit icon in calculated field`](./calculated-field#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
+    | [`Context menu in the tree view inside the calculated field dialog`](./calculated-field#Calculated-Field)| Calculated field context menu|
 
 * `fieldInfo`: It holds the selected field information.
 
@@ -320,8 +320,8 @@ The event [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 
    | Action | Action Name|
    |------|-------------|
-   | [`Calculated field button`](./calculated-field/#Calculated-Field)| Calculated field applied|
-   | [`Edit icon in calculated field`](./calculated-field/#Editing-through-the-field-list-and-the-grouping-bar)| Calculated field edited|
+   | [`Calculated field button`](./calculated-field#Calculated-Field)| Calculated field applied|
+   | [`Edit icon in calculated field`](./calculated-field#Editing-through-the-field-list-and-the-grouping-bar)| Calculated field edited|
 
 * `fieldInfo`: It holds the selected field information.
 
@@ -351,9 +351,9 @@ The event [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api
 
    | Action | Action Name |
    |------|-------------|
-   | [`Calculated field button`](./calculated-field/#Calculated-Field)| Open calculated field dialog|
-   | [`Edit icon in calculated field`](./calculated-field/#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
-   | [`Context menu in the tree view inside the calculated field dialog`](./calculated-field/#Calculated-Field)| Calculated field context menu|
+   | [`Calculated field button`](./calculated-field#Calculated-Field)| Open calculated field dialog|
+   | [`Edit icon in calculated field`](./calculated-field#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
+   | [`Context menu in the tree view inside the calculated field dialog`](./calculated-field#Calculated-Field)| Calculated field context menu|
 
 * `errorInfo`: It holds the error information of the current UI action.
 
