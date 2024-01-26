@@ -130,4 +130,4 @@ The following table lists the default keyboard shortcuts for formatting the para
 
 ## See Also
 
-* [How to override the keyboard shortcuts](../document-editor/how-to/override-the-keyboard-shortcuts/)
+* [How to override the keyboard shortcuts](../document-editor/how-to/override-the-keyboard-shortcuts)
