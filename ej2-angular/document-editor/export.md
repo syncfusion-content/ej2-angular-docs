@@ -41,7 +41,7 @@ The following example shows how to export documents in document editor as Syncfu
 
 The following example shows how to export the document as Word document (.docx).
 
->Note: The Syncfusion Document Editor component's document pagination (page-by-page display) can't be guaranteed for all the Word documents to match the pagination of Microsoft Word application. For more information about [why the document pagination (page-by-page display) differs from Microsoft Word](../document-editor/import/#why-the-document-pagination-differs-from-microsoft-word)
+>Note: The Syncfusion Document Editor component's document pagination (page-by-page display) can't be guaranteed for all the Word documents to match the pagination of Microsoft Word application. For more information about [why the document pagination (page-by-page display) differs from Microsoft Word](../document-editor/import#why-the-document-pagination-differs-from-microsoft-word)
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -186,4 +186,4 @@ function download(fileName: string, extension: string, buffer: Blob, downloadLin
 
 ## See Also
 
-* [Feature modules](../document-editor/feature-module/)
+* [Feature modules](../document-editor/feature-module)

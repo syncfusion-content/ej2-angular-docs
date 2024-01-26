@@ -20,7 +20,7 @@ To enable this behavior, you can use **offline** property of [`DataManager`](htt
 import { Component, OnInit } from '@angular/core';
 import { DataManager, Query, ODataAdaptor, ReturnOption } from '@syncfusion/ej2-data';
 
-const SERVICE_URI =  'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders';
+const SERVICE_URI =  'https://services.odata.org/V3/Northwind/Northwind.svc/Orders/';
 
 @Component({
     selector: 'app-root',
@@ -93,7 +93,7 @@ You can add custom headers to the request made by [`DataManager`](https://ej2.sy
 ```typescript
 import { DataManager, Query, ReturnOption, ODataAdaptor } from '@syncfusion/ej2-data';
 
-const SERVICE_URI =  'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders';
+const SERVICE_URI =  'https://services.odata.org/V3/Northwind/Northwind.svc/Orders/';
 
 new DataManager({ url: SERVICE_URI, adaptor: new ODataAdaptor, headers: [{ 'syncfusion': 'true' }] })
     .executeQuery(new Query())

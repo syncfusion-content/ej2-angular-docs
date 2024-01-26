@@ -1,4 +1,3 @@
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, ToolbarItems, ExcelExportCompleteArgs } from '@syncfusion/ej2-angular-grids';
@@ -30,19 +29,33 @@ export class AppComponent implements OnInit {
 
     toolbarClick(args: ClickEventArgs): void {
         if (args.item.id === 'Grid_excelexport') {
-            // pass fourth parameter as true to get the blob data of exported grid
-            (this.grid as GridComponent).excelExport(null, null, null, true);
+            // pass undefined to use default settings
+            (this.grid as GridComponent).excelExport(undefined, undefined, undefined, true);
         }
         if (args.item.id === 'Grid_csvexport') {
-            // pass fourth parameter as true to get the blob data of exported grid
-            (this.grid as GridComponent).csvExport(null, null, null, true);
+            // pass undefined to use default settings
+            (this.grid as GridComponent).csvExport(undefined, undefined, undefined, true);
         }
     }
 
     excelExportComplete(args: ExcelExportCompleteArgs): void {
-        // execute the promise to get the blob data
-        args.promise.then((e: { blobData: Blob }) => {
-            console.log(e.blobData);
-        });
+        if (args && args.promise) { 
+            // execute the promise to get the blob data
+            args.promise.then((e: { blobData: Blob }) => {
+                this.exportBlob(e.blobData);
+            });
+        }
+    }
+
+    public exportBlob = (blob: Blob) => {
+        const a: HTMLAnchorElement = document.createElement('a');
+        document.body.appendChild(a);
+        a.style.display = 'none';
+        const url: string = window.URL.createObjectURL(blob); // Fix typo here
+        a.href = url;
+        a.download = 'Export';
+        a.click();
+        window.URL.revokeObjectURL(url); // Fix typo here
+        document.body.removeChild(a);
     }
 }
