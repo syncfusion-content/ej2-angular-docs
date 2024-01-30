@@ -14,7 +14,7 @@ Connectors are objects used to create link between two points, nodes or ports to
 
 ## Create connector
 
-Connector can be created by defining the source and target point of the connector. The path to be drawn can be defined with a collection of segments. To explore the properties of a [`connector`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector), refer to [`Connector Properties`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector).
+Connector can be created by defining the source and target point of the connector. The path to be drawn can be defined with a collection of segments. To explore the properties of a [`connector`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/), refer to [`Connector Properties`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorProperties/).
 
 To create and customize the connectors easily in the Angular Diagram component, refer to the below video link.
 
@@ -22,7 +22,7 @@ To create and customize the connectors easily in the Angular Diagram component, 
 
 ## Add connectors through connectors collection
 
-The [`sourcePoint`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#sourcepoint-PointModel) and [`targetPoint`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetpoint-PointModel) properties of connector allow you to define the end points of a connector.
+The [`sourcePoint`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourcepoint-PointModel) and [`targetPoint`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetpoint-PointModel) properties of connector allow you to define the end points of a connector.
 
 The following code example illustrates how to add a connector through connector collection.
 
@@ -70,7 +70,7 @@ For more information about adding connectors from symbol palette, refer to `Symb
 
 Connectors can be interactively drawn by clicking and dragging on the diagram surface by using `drawingObject`.
 
-For more information about drawing connectors, refer to [`Draw Connectors`](https://ej2.syncfusion.com/angular/documentation/api/diagram#drawingObject-ConnectorModel).
+For more information about drawing connectors, refer to [`Draw Connectors`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#drawingObject-ConnectorModel).
 
 ## Update connector at runtime
 
@@ -94,8 +94,8 @@ The following code example illustrates how to update a connector's source point,
 
 ## Connect nodes
 
-* The [`sourceID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#sourceid-string) and [`targetID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetid-string) properties allow to define the nodes to be connected.
-* The [`connectorSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#connectorSpacing-number) property allows you to define the distance between the source node and the connector. It is the minimum distance the connector will re-rout or the new segment will create.
+* The [`sourceID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourceid-string) and [`targetID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetid-string) properties allow to define the nodes to be connected.
+* The [`connectorSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#connectorSpacing-number) property allows you to define the distance between the source node and the connector. It is the minimum distance the connector will re-rout or the new segment will create.
 
 The following code example illustrates how to connect two nodes.
 
@@ -113,7 +113,7 @@ The following code example illustrates how to connect two nodes.
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectNode-cs1" %}
 
-* When you remove NodeConstraints [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints) from Default, the node accepts only an outgoing connection to dock in it. Similarly, when you remove NodeConstraints [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints) from Default, the node accepts only an incoming connection to dock in it.
+* When you remove NodeConstraints [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints/) from Default, the node accepts only an outgoing connection to dock in it. Similarly, when you remove NodeConstraints [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints/) from Default, the node accepts only an incoming connection to dock in it.
 
 * When you remove both InConnect and OutConnect NodeConstraints from Default, the node restricts connector to establish connection in it.
 
@@ -144,7 +144,7 @@ export class AppComponent {
 
 ## Connections with ports
 
-The [`sourcePortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#sourceportid-string) and [`targetPortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetportid-string) properties allow to create connections between some specific points of source/target nodes.
+The [`sourcePortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourceportid-string) and [`targetPortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetportid-string) properties allow to create connections between some specific points of source/target nodes.
 
 The following code example illustrates how to create port to port connections.
 
@@ -162,7 +162,7 @@ The following code example illustrates how to create port to port connections.
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsport-cs1" %}
 
-Similarly, the `sourcePortID` or `targetPortID` can be changed at the runtime by changing the port [`sourcePortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#sourceportid-string) or [`targetPortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetportid-string).
+Similarly, the `sourcePortID` or `targetPortID` can be changed at the runtime by changing the port [`sourcePortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourceportid-string) or [`targetPortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetportid-string).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -178,7 +178,7 @@ Similarly, the `sourcePortID` or `targetPortID` can be changed at the runtime by
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsportupdate-cs1" %}
 
-* When you set PortConstraints to [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints), the port accepts only an incoming connection to dock in it. Similarly, when you set PortConstraints to [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints), the port accepts only an outgoing connection to dock in it.
+* When you set PortConstraints to [`InConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints/), the port accepts only an incoming connection to dock in it. Similarly, when you set PortConstraints to [`OutConnect`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portConstraints/), the port accepts only an outgoing connection to dock in it.
 
 * When you set PortConstraints to None, the port restricts connector to establish connection in it.
 
@@ -217,7 +217,7 @@ The path of the connector is defined with a collection of segments. There are th
 
 ## Straight
 
-To create a straight line, specify the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/segments) of the segment as **straight** and add a straight segment to [`segments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#segments) collection and need to specify [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#type-Segments) for the connector. The following code example illustrates how to create a default straight segment.
+To create a straight line, specify the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/segments/) of the segment as **straight** and add a straight segment to [`segments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#segments) collection and need to specify [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#type-Segments) for the connector. The following code example illustrates how to create a default straight segment.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -233,7 +233,7 @@ To create a straight line, specify the [`type`](https://ej2.syncfusion.com/angul
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorssegments-cs1" %}
 
-The [`point`](https://ej2.syncfusion.com/angular/documentation/api/diagram/straightSegment#point-PointModel) property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
+The [`point`](https://ej2.syncfusion.com/angular/documentation/api/diagram/straightSegment/#point-PointModel) property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -253,15 +253,15 @@ The [`point`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strai
 
 Orthogonal segments is used to create segments that are perpendicular to each other.
 
-Set the segment [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/segments) as orthogonal to create a default orthogonal segment and need to specify [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#type-Segments). The following code example illustrates how to create a default orthogonal segment.
+Set the segment [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/segments/) as orthogonal to create a default orthogonal segment and need to specify [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#type-Segments). The following code example illustrates how to create a default orthogonal segment.
 
 If we set the segments for the connector in the diagram, the connector's first segment is rendered based on the given segment by default. Then the remaining segments are considered as single segment. Please refer the below screenshot.
 ![connector_segments](images/connector_segments.png)
 If no segments are defined for the connector means, then the whole connector is considered as a single segment. We adopted this method for rendering the connector and its segments.
 
-Multiple segments can be defined one after another. To create a connector with multiple segments, define and add the segments to [`connector.segments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#segments) collection. The following code example illustrates how to create a connector with multiple segments.
+Multiple segments can be defined one after another. To create a connector with multiple segments, define and add the segments to [`connector.segments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#segments) collection. The following code example illustrates how to create a connector with multiple segments.
 
-The property [`maxSegmentThumb`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#maxSegmentThumb) is used to limit the segment thumb in the connector.
+The property [`maxSegmentThumb`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#maxSegmentThumb) is used to limit the segment thumb in the connector.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -277,7 +277,7 @@ The property [`maxSegmentThumb`](https://ej2.syncfusion.com/angular/documentatio
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsortho-cs1" %}
 
-The [`length`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orthogonalSegment) and [`direction`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orthogonalSegment) properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
+The [`length`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orthogonalSegment/#length) and [`direction`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orthogonalSegment/#direction) properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -315,7 +315,7 @@ Orthogonal segments are automatically re-routed, in order to avoid overlapping w
 
 ## How to customize Orthogonal Segment Thumb Shape
 
-The orthogonal connector has a number of segments in between the source and the target point. The segments are rendered with the default shape rhombus. Now, the option has been provided to change the segment thumb shape using the [`segmentThumbShape`](https://ej2.syncfusion.com/angular/documentation/api/diagram#segmentThumbShape-SegmentThumbShapes) property. The predefined shapes provided are as follows:
+The orthogonal connector has a number of segments in between the source and the target point. The segments are rendered with the default shape rhombus. Now, the option has been provided to change the segment thumb shape using the [`segmentThumbShape`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#segmentThumbShape-SegmentThumbShapes) property. The predefined shapes provided are as follows:
 * Rhombus
 * Square
 * Rectangle
@@ -364,7 +364,7 @@ Use the following CSS to customize the segment thumb shape.
 
 Bezier segments are used to create curve segments and the curves are configurable either with the control points or with vectors.
 
-To create a bezier segment, the [`segment.type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/segments) is set as `bezier` and need to specify [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#type-Segments) for the connector. The following code example illustrates how to create a default bezier segment.
+To create a bezier segment, the [`segment.type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/segments/) is set as `bezier` and need to specify [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#type-Segments) for the connector. The following code example illustrates how to create a default bezier segment.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -380,7 +380,7 @@ To create a bezier segment, the [`segment.type`](https://ej2.syncfusion.com/angu
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsbezier-cs1" %}
 
-The [`point1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment#point1-PointModel) and [`point2`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment#point2-PointModel) properties of bezier segment enable you to set the control points. The following code example illustrates how to configure the bezier segments with control points.
+The [`point1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment/#point1-PointModel) and [`point2`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment/#point2-PointModel) properties of bezier segment enable you to set the control points. The following code example illustrates how to configure the bezier segments with control points.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -396,7 +396,7 @@ The [`point1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezi
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsbezierpoints-cs1" %}
 
-The [`vector1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment#vector1-VectorModel) and [`vector2`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment#vector2-VectorModel) properties of bezier segment enable you to define the vectors. The following code illustrates how to configure a bezier curve with vectors.
+The [`vector1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment/#vector1-VectorModel) and [`vector2`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezierSegment/#vector2-VectorModel) properties of bezier segment enable you to define the vectors. The following code illustrates how to configure a bezier curve with vectors.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -571,11 +571,11 @@ Also, the visibility of control points can be controlled using the bezierSetting
 
 ## Decorator
 
-* Starting and ending points of a connector can be decorated with some customizable shapes like arrows, circles, diamond, or path. The connection end points can be decorated with the [`sourceDecorator`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#sourcedecorator-DecoratorModel) and [`targetDecorator`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetdecorator-DecoratorModel) properties of the connector.
+* Starting and ending points of a connector can be decorated with some customizable shapes like arrows, circles, diamond, or path. The connection end points can be decorated with the [`sourceDecorator`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourcedecorator-DecoratorModel) and [`targetDecorator`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetdecorator-DecoratorModel) properties of the connector.
 
-* The [`shape`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decoratorShapes) property of `sourceDecorator` allows to define the shape of the decorators. Similarly, the [shape](https://ej2.syncfusion.com/angular/documentation/api/diagram/decoratorShapes) property of `targetDecorator` allows to define the shape of the decorators.
+* The [`shape`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decoratorShapes/) property of `sourceDecorator` allows to define the shape of the decorators. Similarly, the [shape](https://ej2.syncfusion.com/angular/documentation/api/diagram/decoratorShapes/) property of `targetDecorator` allows to define the shape of the decorators.
 
-* To create custom shape for source decorator, use [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decorator#pathdata-string) property. Similarly, to create custom shape for target decorator, use [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decorator#pathData-string) property.
+* To create custom shape for source decorator, use [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decorator/#pathdata-string) property. Similarly, to create custom shape for target decorator, use [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decorator/#pathData-string) property.
 
 The following code example illustrates how to create decorators of various shapes.
 
@@ -597,9 +597,9 @@ The following code example illustrates how to create decorators of various shape
 
 Padding is used to leave the space between the Connector's end point and the object to where it is connected.
 
-* The [`sourcePadding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#sourcepadding) property of connector defines space between the source point and the source node of the connector.
+* The [`sourcePadding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourcepadding) property of connector defines space between the source point and the source node of the connector.
 
-* The [`targetPadding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#targetpadding) property of connector defines space between the end point and the target node of the connector.
+* The [`targetPadding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetpadding) property of connector defines space between the end point and the target node of the connector.
 
 The following code example illustrates how to leave space between the connection end points and source and target nodes.
 
@@ -617,15 +617,35 @@ The following code example illustrates how to leave space between the connection
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectNode-cs2" %}
 
+## Hit padding
+
+* The [`hitPadding`](../api/diagram/connector/#hitpadding) property enables you to define the clickable area around the connector path.The default value for hitPadding is 10.
+
+* The following code example illustrates how to specify hit padding for connector.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/connectors/connectorHitPadding-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/diagram/connectors/connectorHitPadding-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/connectors/connectorHitPadding-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorHitPadding-cs1" %}
+
 ## Flip
 
-The diagram Provides support to flip the connector. The [`flip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#flip) is performed to give the mirrored image of the original element.
+The diagram Provides support to flip the connector. The [`flip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#flip) is performed to give the mirrored image of the original element.
 
 The flip types are as follows:
 
-* HorizontalFlip - [`Horizontal`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to interchange the connector source and target x points.
-* VerticalFlip - [`Vertical`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to interchange the connector source and target y points.
-* Both - [`Both`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to interchange the source point as target point and target point as source point
+* HorizontalFlip - [`Horizontal`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection/) is used to interchange the connector source and target x points.
+* VerticalFlip - [`Vertical`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection/) is used to interchange the connector source and target y points.
+* Both - [`Both`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection/) is used to interchange the source point as target point and target point as source point
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -645,7 +665,7 @@ The flip types are as follows:
 
 ## Bridging
 
-Line bridging creates a bridge for lines to smartly cross over the other lines, at points of intersection. By default, [`bridgeDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bridgeDirection-BridgeDirection) is set to top. Depending upon the direction given bridging direction appears.
+Line bridging creates a bridge for lines to smartly cross over the other lines, at points of intersection. By default, [`bridgeDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#bridgeDirection-BridgeDirection) is set to top. Depending upon the direction given bridging direction appears.
 
 Bridging can be enabled/disabled either with the `connector.constraints` or `diagram.constraints`. The following code example illustrates how to enable line bridging.
 
@@ -665,13 +685,13 @@ Bridging can be enabled/disabled either with the `connector.constraints` or `dia
 
 >Note: You need to inject connector bridging module into the diagram.
 
-The [`bridgeSpace`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#bridgespace-number) property of connectors can be used to define the width for line bridging.
+The [`bridgeSpace`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#bridgespace-number) property of connectors can be used to define the width for line bridging.
 
 **Limitation**: Bezier segments do not support bridging.
 
 ## Corner radius
 
-Corner radius allows to create connectors with rounded corners. The radius of the rounded corner is set with the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#cornerradius-number) property.
+Corner radius allows to create connectors with rounded corners. The radius of the rounded corner is set with the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#cornerradius-number) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -689,9 +709,9 @@ Corner radius allows to create connectors with rounded corners. The radius of th
 
 ## Appearance
 
-* The connector’s [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokewidth-number), [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokecolor-string), [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokedasharray-string), and [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#opacity-number) properties are used to customize the appearance of the connector segments.
+* The connector’s [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle/#strokewidth-number), [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle/#strokecolor-string), [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle/#strokedasharray-string), and [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle/#opacity-number) properties are used to customize the appearance of the connector segments.
 
-* The [`visible`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#visible-boolean) property of the connector enables or disables the visibility of connector.
+* The [`visible`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#visible-boolean) property of the connector enables or disables the visibility of connector.
 
 * Default values for all the `connectors` can be set using the `getConnectorDefaults` properties. For example, if all connectors have the same type or having the same property then such properties can be moved into `getConnectorDefaults`.
 
@@ -715,9 +735,9 @@ The following code example illustrates how to customize the segment appearance.
 
 ## Decorator appearance
 
-* The source decorator’s [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokecolor-string), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokewidth-number), and [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokedasharray-string) properties are used to customize the color, width, and appearance of the decorator.
+* The source decorator’s [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle/#strokecolor-string), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle/#strokewidth-number), and [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle/#strokedasharray-string) properties are used to customize the color, width, and appearance of the decorator.
 
-* To set the border stroke color, stroke width, and stroke dash array for the target decorator, use [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokecolor-string), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokewidth-number), and [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokedasharray-string).
+* To set the border stroke color, stroke width, and stroke dash array for the target decorator, use [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle/#strokecolor-string), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle/#strokewidth-number), and [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle/#strokedasharray-string).
 
 * To set the size for source and target decorator, use width and height property.
 
@@ -739,7 +759,7 @@ The following code example illustrates how to customize the appearance of the de
 
 ## Interaction
 
-Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [`Connection Editing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorEditing).
+Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [`Connection Editing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorEditing/).
 
 ## Automatic line routing
 
@@ -790,7 +810,7 @@ Diagram.Inject(LineRouting);
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorslinerouting-cs1" %}
 
-4.In some situations, automatic line routing enabled diagram needs to ignore a specific connector from automatic line routing. So, in this case, auto routing feature can be disabled to the specific connector using the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#constraints-ConnectorConstraints) property of the connector like the following code snippet.
+4.In some situations, automatic line routing enabled diagram needs to ignore a specific connector from automatic line routing. So, in this case, auto routing feature can be disabled to the specific connector using the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#constraints-ConnectorConstraints) property of the connector like the following code snippet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -808,7 +828,7 @@ Diagram.Inject(LineRouting);
 
 ## Constraints
 
-The [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#constraints-ConnectorConstraints) property of connector allows to enable/disable certain features of connectors. To enable or disable the constraints, refer [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints).
+The [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#constraints-ConnectorConstraints) property of connector allows to enable/disable certain features of connectors. To enable or disable the constraints, refer [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints/).
 
 The following code illustrates how to disable selection.
 
@@ -828,7 +848,7 @@ The following code illustrates how to disable selection.
 
 ## Custom properties
 
-The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#addinfo-Object) property of connectors allow you to maintain additional information to the connectors.
+The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#addinfo-Object) property of connectors allow you to maintain additional information to the connectors.
 
 ```html
 
@@ -840,7 +860,7 @@ The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/con
 
 ## Stack order
 
-The connectors [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector#zindex-number) property specifies the stack order of the connector. A connector with greater stack order is always in front of a connector with a lower stack order.
+The connectors [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#zindex-number) property specifies the stack order of the connector. A connector with greater stack order is always in front of a connector with a lower stack order.
 
 The following code illustrates how to render connector based on the stack order.
 
@@ -860,7 +880,7 @@ The following code illustrates how to render connector based on the stack order.
 
 ## Enable Connector Splitting
 
-The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. Split the connector between two nodes when dropping a new node onto an existing connector and create a connection between the new node and existing nodes by setting the [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/enableConnectorSplit) as true. The default value of the [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/enableConnectorSplit) is false.
+The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. Split the connector between two nodes when dropping a new node onto an existing connector and create a connection between the new node and existing nodes by setting the [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/enableConnectorSplit/) as true. The default value of the [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/enableConnectorSplit/) is false.
 
 The following code illustrates how to split the connector and create a connection with new node.
 
