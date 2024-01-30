@@ -12,6 +12,10 @@ domainurl: ##DomainURL##
 
 This section briefly explains about how to create a simple [Angular Accordion](https://www.syncfusion.com/angular-ui-components/angular-accordion) and configure its available functionalities in Angular using Angular quickstart.
 
+To get start quickly with Angular Accordion, you can check on this video:
+
+{% youtube "https://www.youtube.com/watch?v=NqmBYegDskk" %}
+
 ## Dependencies
 
 The following list of dependencies are required to use the Accordion component in your application.

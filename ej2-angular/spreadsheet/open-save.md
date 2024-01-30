@@ -90,17 +90,17 @@ You can open excel file into a read-only mode by using the [`openComplete`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs9/app/app.component.ts %}
+{% include code-snippet/spreadsheet/open-save-cs12/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs9/app/app.module.ts %}
+{% include code-snippet/spreadsheet/open-save-cs12/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs9/app/main.ts %}
+{% include code-snippet/spreadsheet/open-save-cs12/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs9" %}
+{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs12" %}
 
 ### External workbook confirmation dialog
 
@@ -195,17 +195,17 @@ You can add your own custom header to the save action in the Spreadsheet. For pr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs10/app/app.component.ts %}
+{% include code-snippet/spreadsheet/open-save-cs11/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs10/app/app.module.ts %}
+{% include code-snippet/spreadsheet/open-save-cs11/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs10/app/main.ts %}
+{% include code-snippet/spreadsheet/open-save-cs11/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs10" %}
+{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs11" %}
 
 ### To change the PDF orientation
 

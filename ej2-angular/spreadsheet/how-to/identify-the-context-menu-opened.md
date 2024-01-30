@@ -25,14 +25,14 @@ The following code example shows how to identify the context menu opened.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/find-target-context-menu/app/app.component.ts %}
+{% include code-snippet/spreadsheet/find-context-menu-cs1/app/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/find-target-context-menu/app/app.module.ts %}
+{% include code-snippet/spreadsheet/find-context-menu-cs1/app/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/find-target-context-menu/app/main.ts %}
+{% include code-snippet/spreadsheet/find-context-menu-cs1/app/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/spreadsheet/find-target-context-menu" %}
+{% previewsample "page.domainurl/samples/spreadsheet/find-context-menu-cs1" %}
