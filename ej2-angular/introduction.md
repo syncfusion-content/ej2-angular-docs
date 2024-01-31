@@ -71,6 +71,7 @@ letter-spacing: 0.7px;
          <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/spreadsheet/getting-started/">Spreadsheet</a></div>
         <div><p class="controlcategory">FILE VIEWERS & EDITORS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/document-editor/getting-started">Document Editor</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/inplace-editor/getting-started/">In-place Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/image-editor/getting-started">Image Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started/">RichTextEditor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pdfviewer/getting-started/">PDF Viewer</a></div>
@@ -88,6 +89,7 @@ letter-spacing: 0.7px;
     <td>
         <div><p class="controlcategory">DATA VISUALIZATION</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/chart/getting-started/">Charts</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/3d-chart/getting-started">3D Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/accumulation-chart/getting-started">Accumulation Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/stock-chart/getting-started/">Stock Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/circular-gauge/getting-started/">Circular Gauge</a></div>
@@ -134,7 +136,6 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/signature/getting-started/">Signature</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rating/getting-started/">Rating</a></div>
         <div><p class="controlcategory">FORMS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/inplace-editor/getting-started/">In-place Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/query-builder/getting-started/">Query Builder</a></div>
     </td>
     <td>
@@ -157,6 +158,7 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/toolbar/getting-started/">Toolbar</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treeview/getting-started/">TreeView</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/file-manager/getting-started/">File Manager</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/stepper/getting-started">Stepper</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/breadcrumb/getting-started/">Breadcrumb</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pager/getting-started/">Pager</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/appbar/getting-started/">AppBar</a></div>

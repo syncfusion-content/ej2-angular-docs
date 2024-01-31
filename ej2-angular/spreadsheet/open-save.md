@@ -90,13 +90,13 @@ You can open excel file into a read-only mode by using the [`openComplete`](http
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs12/app/app.component.ts %}
+{% include code-snippet/spreadsheet/open-save-cs12/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs12/app/app.module.ts %}
+{% include code-snippet/spreadsheet/open-save-cs12/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs12/app/main.ts %}
+{% include code-snippet/spreadsheet/open-save-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -195,13 +195,13 @@ You can add your own custom header to the save action in the Spreadsheet. For pr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs11/app/app.component.ts %}
+{% include code-snippet/spreadsheet/open-save-cs11/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs11/app/app.module.ts %}
+{% include code-snippet/spreadsheet/open-save-cs11/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs11/app/main.ts %}
+{% include code-snippet/spreadsheet/open-save-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

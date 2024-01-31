@@ -14,29 +14,29 @@ export class AppComponent {
 public records: { [key: string]: Object }[] = [];
     constructor() {
         for (let i = 1; i <= 150; i++) {
-            let item: { [key: string]: Object } = {};
-            item.id = 'id' + i;
-            item.text = `Item ${i}`;
-        
+            let id = 'id' + i;
+            let text = `Item ${i}`;
+            let group = 'Group A';
+
             // Generate a random number between 1 and 4 to determine the group
             const randomGroup = Math.floor(Math.random() * 4) + 1;
             switch (randomGroup) {
                 case 1:
-                    item.group = 'Group A';
+                    group = 'Group A';
                     break;
                 case 2:
-                    item.group = 'Group B';
+                    group = 'Group B';
                     break;
                 case 3:
-                    item.group = 'Group C';
+                    group = 'Group C';
                     break;
                 case 4:
-                    item.group = 'Group D';
+                    group = 'Group D';
                     break;
                 default:
                     break;
             }
-            this.records.push(item);
+            this.records.push({id, text, group});
         }
     }
     // maps the appropriate column to fields property

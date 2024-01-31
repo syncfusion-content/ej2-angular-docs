@@ -71,5 +71,5 @@ The following properties can be used to customize the `line` series.
 
 ## See Also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../data-labels)
+* [Tooltip](../tool-tip)

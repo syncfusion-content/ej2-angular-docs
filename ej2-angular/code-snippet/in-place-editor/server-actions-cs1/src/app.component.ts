@@ -34,7 +34,7 @@ export class AppComponent {
     chipCreation(data: any, isSuccess: boolean): string | any {
         let value = '<div class="e-chip-list">';
         [].slice.call(data).forEach((val: string) => {
-            value += '<div class="e-chip"> <span class="e-chip-text' + (!isSuccess ? 'e-highlight' : '') + '"> ' + val + '</span></div>';
+            value += '<div class="e-chip"> <span class="e-chip-text' + (isSuccess ? '' : 'e-highlight') + '"> ' + val + '</span></div>';
         });
         value += '</div>';
         return value;
