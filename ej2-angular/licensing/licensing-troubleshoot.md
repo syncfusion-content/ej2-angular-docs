@@ -72,6 +72,10 @@ Refer to the [KB](https://www.syncfusion.com/kb/11532/definition-of-terms-for-sy
 
 The application registered license key is set priority and used for license validation.
 
+## Reactivating license once after updating the package version while using npx
+
+It is essential to reactivate the license key when upgrading the Syncfusion packages while the license has been registered through the `npx` command.
+
 ## Potential causes of licensing errors in applications.
 
  Below are the possible reasons that could lead to a license error within the application:
