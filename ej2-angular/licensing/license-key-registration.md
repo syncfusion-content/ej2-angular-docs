@@ -73,7 +73,7 @@ The following steps show how to register the Syncfusion license key with the lic
 
 * Now run the application. If you are facing a license validation error, refer to this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-errors/) to resolve it. Also, find the most frequent license registration questions from this [`link`](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot/).
 
->If you don't want to use the license text file in the application, refer to this [link](#register-the-license-key-with-the-environment-variable) to use an environment variable and register the Syncfusion license key.
+>If you don't want to use the license text file in the application, refer to this [link](#register-the-license-key-with-the-environment-variable) to use an environment variable and register the Syncfusion license key. Also, check out some common licensing FAQs while registering the license key using the npx command from this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot#Reactivating-license-once-after-updating-the-package-version-while-using-npx)
 
 ### Register the license key with the environment variable
 
