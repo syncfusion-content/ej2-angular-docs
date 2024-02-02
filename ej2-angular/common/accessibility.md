@@ -130,86 +130,102 @@ letter-spacing: 0.7px;
         <div><p class="controlcategory">GRIDS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/grid/accessibility">DataGrid</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pivotview/accessibility">Pivot Table</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treegrid/accessibility">TreeGrid</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treegrid/accessibility">Tree Grid</a></div>
          <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/spreadsheet/accessibility">Spreadsheet</a></div>
         <div><p class="controlcategory">FILE VIEWERS & EDITORS</p></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/inplace-editor/accessibility">In-place Editor</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pdfviewer/accessibility">PDF Viewer</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rich-text-editor/accessibility">RichTextEditor</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pdfviewer/keyboard-accessibility">PDF Viewer</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/document-editor/accessibility">Word Processor</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/image-editor/accessibility">Image Editor</a></div>
         <div><p class="controlcategory">LAYOUT</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/dialog/accessibility">Dialog</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/listview/accessibility">ListView</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/tooltip/accessibility">Tooltip</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/splitter/accessibility">Splitter</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/dashboard-layout/accessibility">Dashboard</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/dashboard-layout/accessibility">Dashboard Layout</a></div>
     </td>
     <td>
         <div><p class="controlcategory">DATA VISUALIZATION</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/accumulation-chart/accessibility">Accumulation Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/chart/accessibility">Charts</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/3d-chart/accessibility">3D Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/stock-chart/accessibility">Stock Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/circular-gauge/accessibility">Circular Gauge</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/diagram/accessibility">Diagram</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/heatmap-chart/accessibility">HeatMap Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/linear-gauge/accessibility">Linear Gauge</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/maps/accessibility">Maps</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/diagram/accessibility">Diagram</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/range-navigator/accessibility">Range Selector</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/smithchart/accessibility">Smith Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/sparkline/accessibility">Sparkline Charts</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treemap/accessibility">TreeMap</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/bullet-chart/accessibility">Bullet Chart</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/kanban/accessibility">Kanban</a></div>
         <div><p class="controlcategory">BUTTONS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/button-group/accessibility">ButtonGroup</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/button/accessibility">Button</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/button-group/accessibility">Button Group</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-button/accessibility">Dropdown Menu</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/progress-button/accessibility">Progress Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/split-button/accessibility">SplitButton</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/split-button/accessibility">Split Button</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/chips/accessibility">Chips</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/floating-action-button/accessibility">FAB</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/speed-dial/accessibility">Speed Dial</a></div>
     </td>
     <td>
         <div><p class="controlcategory">CALENDARS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/schedule/accessibility">Scheduler</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/gantt/accessibility">Gantt Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/calendar/accessibility">Calendar</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/datepicker/accessibility">DatePicker</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/daterangepicker/accessibility">DateRangePicker</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/datetimepicker/accessibility">DateTime Picker</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/timepicker/accessibility">TimePicker</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/gantt/accessibility">Gantt Chart</a></div>
         <div><p class="controlcategory">INPUTS</p></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/textbox/accessibility">TextBox</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/maskedtextbox/accessibility">Input Mask</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/numerictextbox/accessibility">Numeric TextBox</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/maskedtextbox/accessibility">Masked TextBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/radio-button/accessibility">RadioButton</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/numerictextbox/accessibility">Numeric TextBox</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/radio-button/accessibility">Radio Button</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/check-box/accessibility">CheckBox</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/color-picker/accessibility">Color Picker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/uploader/wai-aria-accessibility">File Upload</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/uploader/accessibility">File Upload</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/range-slider/accessibility">Range Slider</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/switch/accessibility">Toggle Switch Button</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/signature/accessibility">Signature</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rating/accessibility">Rating</a></div>
+        <div><p class="controlcategory">FORMS</p></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/query-builder/accessibility">Query Builder</a></div>
     </td>
     <td>
         <div><p class="controlcategory">DROPDOWNS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/auto-complete/accessibility">AutoComplete</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/list-box/accessibility">ListBox</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/combo-box/accessibility">ComboBox</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-list/accessibility">Dropdown List</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/multi-select/accessibility">Multiselect DropDown</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-tree/accessibility">DropDown Tree</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/multi-select/accessibility">Multiselect DropDown</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/mention/accessibility">Mention</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/list-box/accessibility">ListBox</a></div>
         <div><p class="controlcategory">NAVIGATION</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/accordion/accessibility">Accordion</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/appbar/accessibility">AppBar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/breadcrumb/accessibility">Breadcrumb</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/carousel/accessibility">Carousel</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/context-menu/accessibility">Context Menu</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/menu/accessibility">Menu Bar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/sidebar/accessibility">Sidebar</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/tab/accessibility">Tabs</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/toolbar/accessibility">Toolbar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/ribbon/accessibility">Ribbon</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treeview/accessibility">TreeView</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/file-manager/accessibility">File Manager</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/breadcrumb/accessibility">Breadcrumb</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pager/accessibility">Pager</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/stepper/accessibility">Stepper</a></div>
         <div><p class="controlcategory">NOTIFICATION</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/toast/accessibility">Toast</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/skeleton/accessibility">Skeleton</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/message/accessibility">Message</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/toast/accessibility">Toast</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/progress-bar/accessibility">Progress Bar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/skeleton/accessibility">Skeleton</a></div>
     </td>
 </tr>
 </table>
