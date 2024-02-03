@@ -3,6 +3,7 @@
 import { Component,ViewChild } from '@angular/core';
 import { Browser } from '@syncfusion/ej2-base';
 import { ImageEditorComponent, ToolbarEventArgs } from '@syncfusion/ej2-angular-image-editor';
+import { ItemModel } from '@syncfusion/ej2-navigations';
 
 @Component({
     selector: 'app-root',
@@ -26,11 +27,15 @@ export class AppComponent {
       }
     }
 
-    public toolbarUpdating(args: ToolbarEventArgs): void {
-       if (args.toolbarType === 'shapes') {
-            args.toolbarItems = ['strokeColor'];
+  public toolbarUpdating(args: ToolbarEventArgs): void {
+    if (args.toolbarType === 'pen') {
+      args.toolbarItems.forEach((item: ItemModel) => {
+        if (item.align === 'Center' && (item.tooltipText === 'Stroke Width' || item.tooltipText === 'Remove' || item.type === 'Separator')) {
+          item.visible = false;
         }
+      });
     }
+  }
 }
 
 
