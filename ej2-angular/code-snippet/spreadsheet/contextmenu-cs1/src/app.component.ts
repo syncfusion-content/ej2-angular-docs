@@ -7,7 +7,7 @@ import { BeforeOpenCloseMenuEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
     selector: 'app-container',
-    template: "<ejs-spreadsheet #spreadsheet (contextMenuBeforeOpen)="contextMenuBeforeOpen($event)"></ejs-spreadsheet>"
+    template: "<ejs-spreadsheet #spreadsheet (contextMenuBeforeOpen)='contextMenuBeforeOpen($event)'></ejs-spreadsheet>"
 })
 export class AppComponent {
   @ViewChild('spreadsheet')
