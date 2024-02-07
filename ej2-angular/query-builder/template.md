@@ -31,7 +31,31 @@ In the following sample dropdown, splitbutton and button are used as the custom 
 {% include code-snippet/query-builder/header-template-cs1/src/main.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="template-driven.html" %}
-{% include code-snippet/query-builder/header-template-cs1/src/template-driven.html %}
+{% raw %}
+<ejs-querybuilder id="querybuilder" #querybuilder width="100%" [rule] = "importRules" enableNotCondition = true>
+    <e-columns>
+        <e-column field="EmployeeID" label="EmployeeID" type="number"></e-column>
+        <e-column field="FirstName" label="FirstName" type="string"></e-column>
+        <e-column field="LastName" label="LastName" type="string"></e-column>
+        <e-column field="Age" label="Age" type="number"></e-column>
+        <e-column field="City" label="City" type="string"></e-column>
+        <e-column field="Country" label="Country" type="string"></e-column>
+    </e-columns>
+    <ng-template #headerTemplate let-data>
+        <div class = "e-groupheader">
+        <button *ngIf="data.notCondition !== undefined" class='e-cb-wrapper'>
+        <ejs-checkbox id ="{{data.ruleID}}_notOption" label='not' [checked]='data.notCondition' (change)="onChange($event)">
+        </ejs-checkbox> </button>
+        <ejs-dropdownlist id ="{{data.ruleID}}_cndtn" [dataSource]='ds' [value]='data.condition' [fields]='fields' cssClass="e-custom-group-btn" (change)="conditionChange($event)">
+        </ejs-dropdownlist>
+        <button  ejs-dropdownbutton id="{{data.ruleID}}_addbtn" [items]='ddbitems' cssClass= "e-round e-small e-caret-hide e-addrulegroup e-add-btn" iconCss="e-icons e-add-icon" (select)="onSelect($event)"></button>
+        <button  ejs-button *ngIf ="data.ruleID !== 'querybuilder_group0'" id= '{{data.ruleID}}_dltbtn' class= "e-btn e-delete-btn e-lib e-small e-round e-icon-btn" (click)="onClick($event)">
+            <span class = 'e-btn-icon e-icons e-delete-icon'></span>
+        </button>
+        </div>
+    </ng-template>
+</ejs-querybuilder>
+{% endraw %}
 {% endhighlight %}
 {% endtabs %}
   
