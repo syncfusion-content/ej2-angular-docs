@@ -1,0 +1,18 @@
+import { Component } from "@angular/core";
+import { RibbonDropDownSettingsModel } from '@syncfusion/ej2-angular-ribbon';
+import { ItemModel, MenuEventArgs } from "@syncfusion/ej2-angular-splitbuttons";
+
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  public tableOptions: ItemModel[] = [{ text: "Insert Table" }, { text: "This device" }, { text: "Convert Table" }, { text: "Excel SpreadSheet" }];
+  public tableSettings: RibbonDropDownSettingsModel = { iconCss: "e-icons e-table", content: "Table", items: this.tableOptions, beforeItemRender: (args: MenuEventArgs) => { 
+    if (args.item.text === 'Insert Table') {
+      args.element.classList.add("e-custom-class");
+    }
+  } };
+}

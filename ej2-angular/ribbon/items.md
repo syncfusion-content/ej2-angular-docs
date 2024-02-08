@@ -172,6 +172,32 @@ The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonD
   
 {% previewsample "page.domainurl/samples/ribbon/DropdownTarget" %}
 
+#### Customize Dropdown button item
+
+You can customize the dropdown button item by specifying a custom cssClass using the [beforeItemRender](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#beforeitemrender) event.
+
+The following sample showcases how to customize a specific dropdown item.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/ribbon/DropDownCustomItem/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/ribbon/DropDownCustomItem/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/ribbon/DropDownCustomItem/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/ribbon/DropDownCustomItem/src/app.component.html %}
+{% endhighlight %}
+{% highlight css tabtitle="app.component.css" %}
+{% include code-snippet/ribbon/DropDownCustomItem/src/app.component.css %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/ribbon/DropDownCustomItem" %}
+
 ### Split button items
 
 You can render the built-in splitButton Ribbon item by setting the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `SplitButton`. You can also customize the splitButton item through [RibbonSplitButtonSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettingsModel/), which provides options such as `iconCss`, `items`, `target` and more.
