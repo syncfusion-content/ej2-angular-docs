@@ -9,6 +9,10 @@ domainurl: ##DomainURL##
 ---
 # Data binding in Angular Pivotview component
 
+To get start quickly with Data Binding, you can check on this video:
+
+{% youtube "https://www.youtube.com/watch?v=-6QFvYFA-lY" %}
+
 ## JSON
 
 For JSON data binding, the `type` property under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/) needs to be set as `JSON`. By default, the default value is assumed as `JSON`.
