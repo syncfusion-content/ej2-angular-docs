@@ -12,6 +12,10 @@ domainurl: ##DomainURL##
 
 This section explains you the steps required to create a simple pivot table and demonstrate the basic usage of the [pivot table component](https://www.syncfusion.com/angular-components/angular-pivot-table) in an Angular environment.
 
+To get start quickly with Angular Pivot Table, you can check on this video:
+
+{% youtube "https://www.youtube.com/watch?v=HXTnI9XhVSw" %}
+
 ## Setup Angular Environment
 
 You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
