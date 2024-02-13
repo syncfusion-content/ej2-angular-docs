@@ -28,5 +28,5 @@ The following example demonstrates how to resize the grid on external button cli
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "http://127.0.0.1:4000/ej2-angular/code-snippet/grid/grid-resize/dist/index.html" %}
+{% previewsample "page.domainurl/samples/grid/grid-resize" %}
 

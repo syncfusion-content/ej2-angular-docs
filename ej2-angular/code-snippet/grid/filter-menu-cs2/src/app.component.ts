@@ -11,8 +11,8 @@ import { FilterSettingsModel, IFilter, Filter,Column } from '@syncfusion/ej2-ang
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [filterSettings]='filterOptions' height='273px'>
                 <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' [filter]= 'filter' textAlign='Right' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+                    <e-column field='OrderID' headerText='Order ID'  textAlign='Right' width=100></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' [filter]= 'filter' width=120></e-column>
                     <e-column field='ShipCity' headerText='Ship City' width=100></e-column>
                     <e-column field='ShipName' headerText='Ship Name' width=100></e-column>
                 </e-columns>
@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
                     args.target.appendChild(flValInput);
                     this.dropInstance = new DropDownList({
                         dataSource: new DataManager(data),
-                        fields: { text: 'OrderID', value: 'OrderID' },
+                        fields: { text: 'CustomerID', value: 'CustomerID' },
                         placeholder: 'Select a value',
                         popupHeight: '200px'
                     });
@@ -45,12 +45,12 @@ export class AppComponent implements OnInit {
                 },
                 write: (args: {
                     column: object, target: Element,
-                    filteredValue: number | string
+                    filteredValue: string
                 }) => {
-                    (this.dropInstance as DropDownList).value = (args).filteredValue;
+                    (this.dropInstance as DropDownList).value = (args).filteredValue as string;
                 },
                 read: (args: { target: Element, column: Column, operator: string, fltrObj: Filter }) => {
-                    args.fltrObj.filterByColumn(args.column.field, args.operator, (this.dropInstance as DropDownList).value);
+                    args.fltrObj.filterByColumn(args.column.field, args.operator, ((this.dropInstance as DropDownList).value as string));
 
                 }
             }

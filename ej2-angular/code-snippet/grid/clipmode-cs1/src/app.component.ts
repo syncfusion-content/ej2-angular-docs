@@ -18,11 +18,10 @@ import { GridComponent, ClipMode } from '@syncfusion/ej2-angular-grids';
     </div>
     <ejs-grid #grid style="padding: 5px 5px" [dataSource]='data' allowPaging='true'>
         <e-columns>
-            <e-column field='Inventor' headerText='Name of the Inventor' width='80'></e-column>
-            <e-column field='NumberofPatentFamilies' headerText='Number of Patent Families' width='100'></e-column>
-            <e-column field='Country' headerText='Country' width='80'></e-column>
-            <e-column field='Number of INPADOC patents' headerText='Number of INPADOC patents' width='100'></e-column>
-            <e-column field='MainFieldsofInvention' headerText='Main fields of invention' width='100'></e-column>
+          <e-column field='MainFieldsofInvention' headerText='Invention' width='130'></e-column>
+          <e-column field='Inventor' headerText='Inventor'  width='80'></e-column>
+          <e-column field='NumberofPatentFamilies' headerText='Count'  width='100'></e-column>
+          <e-column field='Country' headerText='Country' width='80'></e-column>
         </e-columns>
     </ejs-grid>`
 })

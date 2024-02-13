@@ -104,7 +104,7 @@ export class AppComponent implements OnInit {
     }
 
     onClick(event:MouseEvent, firstName: string) {
-        var url = 'https://www.meaningofthename.com/';
+        var url = 'https://www.google.com/search?q=';
         var searchUrl = url + firstName; 
         window.open(searchUrl);
     }
