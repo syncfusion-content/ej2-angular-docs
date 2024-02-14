@@ -7,7 +7,7 @@ import { FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
   template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [allowPaging]='true' [filterSettings]='filterOption' >
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' ></e-column>
-                    <e-column field='CustomerID' headerText='Name' [filter]='filterParams'></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' [filter]='filterParams'></e-column>
                     <e-column field='ShipName' headerText='ShipName' ></e-column>                    
                     <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' ></e-column>
                 </e-columns>

@@ -7,8 +7,8 @@ import { ToolbarItems, SearchSettingsModel, GridComponent } from '@syncfusion/ej
 @Component({
     selector: 'app-root',
     template:
-        `<button ej-button id='clear' (click)='clearSearch()'>Clear Search</button>
-        <ejs-grid #grid [dataSource]='data' [searchSettings]='searchOptions' [toolbar]='toolbarOptions' height='260px'>
+        `<button ejs-button id='clear' (click)='clearSearch()'>Clear Search</button>
+        <ejs-grid #grid style="margin-top:5px" [dataSource]='data' [searchSettings]='searchOptions' [toolbar]='toolbarOptions' height='260px'>
             <e-columns>
                 <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
                 <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
