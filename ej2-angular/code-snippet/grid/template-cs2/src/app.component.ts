@@ -14,7 +14,7 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
             <e-column field='FirstName' headerText='Name' width=120></e-column>
             <e-column headerText='Employee Data' width='150' textAlign='Right' isPrimaryKey='true'>
                 <ng-template #template let-data>
-                    <button class="empData" (click)="showDetails(data)">View</button>
+                    <button ejs-button class="empData" (click)="showDetails(data)">View</button>
                     <div [hidden]="!selectedRecord || selectedRecord !== data">
                         <ejs-dialog
                             #Dialog

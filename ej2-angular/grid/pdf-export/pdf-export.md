@@ -200,7 +200,7 @@ The following example demonstrates how to perform export with cell and row spann
   
 {% previewsample "page.domainurl/samples/grid/exporting-cs24" %}
 
-* The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid/#updatecell) method does not support row and column spanning.
+> * The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid/#updatecell) method does not support row and column spanning.
 
 ## Exporting with custom date format
 

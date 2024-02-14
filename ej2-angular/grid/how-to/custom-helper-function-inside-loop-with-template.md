@@ -49,5 +49,5 @@ This is demonstrated in the following example.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "http://127.0.0.1:4000/ej2-angular/code-snippet/grid/custom-helper-loop-template/dist/index.html" %}
+{% previewsample "page.domainurl/samples/grid/custom-helper-loop-template" %}
 

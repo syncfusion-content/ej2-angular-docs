@@ -224,8 +224,36 @@ Template columns in Grid provide a way to customize the appearance of column val
 ```
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/column-format-cs1/src/app.component.ts %}
-{% endhighlight %}
+{% raw %}
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' height="315px">
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+                    <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
+                    <e-column field='OrderDate'  headerText='Order Date' textAlign='Right' width=120>
+                        <ng-template #template let-data>
+                            {{ data.OrderDate | date:'dd/MMM/yyyy' }}
+                        </ng-template>
+                    </e-column>
+                    <e-column field='ShipCountry' headerText='Ship Country' textAlign='Right' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+  public data?: object[];
+  public formatOptions?: object;
+  public shipFormat?: object;
+
+  ngOnInit(): void {
+    this.data = data;
+  }
+}
+{% endraw %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/column-format-cs1/src/app.module.ts %}
 {% endhighlight %}
