@@ -254,6 +254,7 @@ export class AppComponent implements OnInit {
   }
 }
 {% endraw %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/column-format-cs1/src/app.module.ts %}
 {% endhighlight %}

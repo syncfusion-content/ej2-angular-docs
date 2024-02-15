@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD002 MD022 -->
 
-## Spinner and progress in Angular Progress button component
+# Spinner and progress in Angular Progress Button component
 
-### Change spinner position
+## Change spinner position
 
 Spinner position can be changed by modifying the [`position`](https://ej2.syncfusion.com/angular/documentation/api/progress-button/spinSettingsModel#position) property of [`spinSettingsModel`](https://ej2.syncfusion.com/angular/documentation/api/progress-button/spinSettingsModel). By default, the spinner is positioned at the left of the ProgressButton. You can position it at the `left`, `right`, `top`, `bottom`, or `center` of the text content.
 

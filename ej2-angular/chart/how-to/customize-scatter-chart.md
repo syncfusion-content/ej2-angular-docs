@@ -28,7 +28,7 @@ You can customize the width and height of the shapes by using `width` and `heigh
   
 {% previewsample "page.domainurl/samples/chart/how-to-cs3" %}
 
-# Customizing point color and data label value
+## Customizing point color and data label value
 
 You can customize the point color by using `pointRender` event in the chart. In which we have check the condition based on `yValue` to change the fill color of the point.
 
