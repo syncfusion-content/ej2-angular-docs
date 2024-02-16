@@ -149,7 +149,8 @@ Previous | Current | Explanation
 
 ## Limitations
 
-While freezing columns in the Syncfusion Angular Grid provides enhanced visibility and scrolling capabilities, there are certain limitations to consider. The following features are not supported when using frozen rows and columns:
+While freezing columns in the Syncfusion Angular Grid provides enhanced visibility and scrolling capabilities, there are certain limitations to consider. The following features are not supported when using frozen columns:
 
 * Detail Template
 * Hierarchy Grid
+* Autofill

@@ -98,9 +98,14 @@ The following example that demonstrates how to enable/disable cache mode in infi
     4. Column spanning
     5. Row template
     6. Row virtual scrolling
-    7. Column virtual scrolling
     8. Detail template
     9. Hierarchy features
+    10. Autofill
+* Limitations of row drag and drop with infinite scrolling
+    1. In cache mode, the grid refreshes automatically if the content's **tr** element count exceeds the cache limit of the grid's content after the drop action.
+    2. When performing row drag and drop with lazy load grouping, the grid will refresh automatically.
+    3. In remote data, changes are applied only in the UI. They will be lost once the grid is refreshed. To restore them, you need to update the changes in your database. By using the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdrop) event, you can send the request to the server and apply the changes in your database. After this, you need to refresh the grid to show the updated data.
+* Limitations of column virtualization with infinite scrolling in this documentation link [here](https://ej2.syncfusion.com/angular/documentation/grid/scrolling/virtual-scrolling#limitations-1)
 
 ## See Also
 

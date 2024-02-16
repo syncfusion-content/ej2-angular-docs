@@ -361,6 +361,11 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 
 > The [args.requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs/#requesttype) property represents the name of the current action being performed. For instance, during grouping, the `args.requestType` value will be **grouping**.
 
+## Limitations
+
+* Grouping is not compatible with the following features:
+    1. Autofill
+
 ## See also
 
 * [Exporting grouped records](https://ej2.syncfusion.com/angular/documentation/grid/excel-export/excel-export-options#exporting-grouped-records)

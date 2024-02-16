@@ -26,6 +26,7 @@ The following table shows built-in toolbar items and its actions:-
 | DownloadOption |This Download option provides an action to download the PDF document that has been loaded in the PDF Viewer.|
 | UndoRedoTool | This tool provides options to undo and redo the annotation actions performed in the PDF Viewer.|
 | AnnotationEditTool | This tool provides options to enable or disable the edit mode of annotation in the PDF Viewer.|
+| CommentTool | This tool facilitates the addition of sticky notes to the pages of PDF documents in the PDF Viewer.|
 
 ## Show/Hide the default toolbar
 

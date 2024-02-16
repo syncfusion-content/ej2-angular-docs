@@ -78,6 +78,30 @@ export class AppComponent {
 
 ```
 
+## Add the custom headers to XMLHttpRequest
+
+Document editor component provides an an option to add custom headers of XMLHttpRequest using the [`headers`](./api/document-editor-container/documentEditorContainerModel/#headers).
+
+```typescript
+
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { ToolbarService, DocumentEditorContainerComponent } from '@syncfusion/ej2-angular-documenteditor';
+
+@Component({
+      selector: 'app-container',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<ejs-documenteditorcontainer #document_editor [enableToolbar]=true [headers]="customHeaders"> </ejs-documenteditorcontainer>`,
+      providers: [ToolbarService]
+})
+export class AppComponent {
+    @ViewChild('document_editor')
+    public container: DocumentEditorContainerComponent;
+    // custom headers
+    public customHeaders = [{ 'Authorization': 'Bearer YOUR_ACCESS_TOKEN' }, { 'Content-Type': 'application/json' }];
+}
+
+```
+
 ## Modify the XMLHttpRequest before request send
 
 Document editor component provides an option to modify the XMLHttpRequest object (setting additional headers, if needed) using [`beforeXmlHttpRequestSend`](https://ej2.syncfusion.com/angular/documentation/api/document-editor-container/#beforexmlhttprequestsend) event and it gets triggered before a server request.
@@ -93,11 +117,10 @@ let container: DocumentEditorContainer = new DocumentEditorContainer({
   enableToolbar: true,
   height: '590px',
 });
-//Here, modifying the request headers
-container.headers = [{ syncfusion: 'true' }];
 // Below action, cancel all server-side interactions expect spell check
 container.beforeXmlHttpRequestSend = (args: XmlHttpRequestEventArgs): void => {
-  args.headers = container.headers;
+  //Here, modifying the request headers
+  args.headers = [{ syncfusion: 'true' }];
   args.withCredentials = true;
   switch (args.serverActionType) {
     case 'Import':

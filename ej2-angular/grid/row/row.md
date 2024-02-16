@@ -289,6 +289,11 @@ Previous | Current | Explanation
 
 > When a validation message is displayed in the frozen part (Left, Right, Fixed) of the table, scrolling is prevented until the validation message is cleared.
 
+### Limitations
+
+* Frozen row is not compatible with the following features:
+    1. Autofill
+
 ## Adding a new row programmatically
 
 The Syncfusion Grid provides a way to add a new row to the grid programmatically. This feature is useful when you want to add a new record to the grid without having the manually enter data in the grid.This can be done using the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/grid/#addrecord) method of the Grid.

@@ -52,4 +52,5 @@ You can change the border color for the spanned cells by the using [QueryCellInf
 * Column spanning is not compatible with the following features:
     1. Virtual scrolling
     2. Infinite scrolling
-    3. Lazy load grouping
+    3. Grouping
+    4. Autofill
