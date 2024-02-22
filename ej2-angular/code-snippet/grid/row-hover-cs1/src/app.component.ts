@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
+import { ChangeEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
   selector: 'app-root',
   template: `<div style="padding:0px 0px 20px 0px">
             <label> Enable/Disable Row Hover</label>
-            <ejs-switch id="switch" [(checked)]="enableRowHover" 
-            (change)="toggleRowHover()"></ejs-switch>
+            <ejs-switch id="switch" [checked]="true" 
+            (change)="toggleRowHover($event)"></ejs-switch>
             </div>
-            <ejs-grid id='Grid' [dataSource]='data' [enableHover]="enableRowHover">
+            <ejs-grid #grid [dataSource]='data'>
               <e-columns>
                   <e-column field='OrderID' headerText='Order ID' textAlign='Right' 
                   width=120></e-column>
@@ -23,13 +25,17 @@ import { data } from './datasource';
 export class AppComponent implements OnInit {
 
   public data?: object[];
-  public enableRowHover: boolean = true;
+  @ViewChild('grid') public grid?: GridComponent;
 
   ngOnInit(): void {
     this.data = data;
   }
-  toggleRowHover(): void {
-    this.enableRowHover = !this.enableRowHover;
+  toggleRowHover(args:CustomChangeEventArgs): void {
+   (this.grid as GridComponent).enableHover = args.checked;
   }
   
+}
+
+interface CustomChangeEventArgs extends ChangeEventArgs {
+  checked: boolean;
 }
