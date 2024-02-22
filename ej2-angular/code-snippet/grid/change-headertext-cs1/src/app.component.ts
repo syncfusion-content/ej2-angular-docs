@@ -15,10 +15,7 @@ import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
               <label style="padding: 30px 17px 0 0" >Enter new header text :</label>
               <ejs-textbox #textbox required placeholder="Enter new header text" width="220">
               </ejs-textbox>
-            </div>
-            <div>
-              <label style="padding: 30px 17px 0 0" >Click the change button :</label>
-              <button ejs-button id="buttons" (click)="ChangeHeaderText()">Change</button>
+              <button ejs-button style="margin-left: 10px" id="buttons" (click)="changeHeaderText()">Change</button>
             </div>
             <div style="padding: 20px 17px 0 0">
               <ejs-grid #grid [dataSource]="data" allowPaging='true'>

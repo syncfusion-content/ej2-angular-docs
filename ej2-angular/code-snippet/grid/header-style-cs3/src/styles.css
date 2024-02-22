@@ -10,3 +10,7 @@
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+.e-grid .e-headercell.customcss {
+    color: rgb(14, 10, 10);
+    background-color: #52c5dcab
+  }

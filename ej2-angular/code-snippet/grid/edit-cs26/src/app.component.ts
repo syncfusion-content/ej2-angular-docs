@@ -6,7 +6,7 @@ import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 @Component({
   selector: 'app-root',
   template: `
-        <ejs-grid #grid id="grid" [dataSource]="data" [editSettings]="editSettings" 
+        <ejs-grid #grid  [dataSource]="data" [editSettings]="editSettings" 
         [toolbar]="toolbar" height="273px">
           <e-columns>
             <e-column field="ProductID" headerText="Product ID" textAlign="Right" 

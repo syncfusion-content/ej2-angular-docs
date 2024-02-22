@@ -11,7 +11,7 @@ import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
               [dataSource]=" dropdownData" (change)="valueChange($event)">
               </ejs-dropdownlist>
             </div>
-            <div class="control-section" style="padding-top:20px">
+            <div style="padding-top:20px">
               <ejs-grid #grid [dataSource]='data' allowPaging='true' allowTextWrap='true' 
               [textWrapSettings]='wrapSettings' height='400'>
                 <e-columns>

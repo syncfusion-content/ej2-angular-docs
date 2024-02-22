@@ -29,14 +29,16 @@ export class AppComponent implements OnInit {
     this.data = orderDetails;
   }
   dataBound() {
-    ((this.grid as GridComponent).getColumnHeaderByIndex(0) as HTMLElement).style.color = '#0d0b0b';
-    ((this.grid as GridComponent).getColumnHeaderByField('CustomerName') as HTMLElement).style.background = '#f45ddeab';
+    ((this.grid as GridComponent).getColumnHeaderByIndex(0) as HTMLElement).style.color = 'green';
+    ((this.grid as GridComponent).getColumnHeaderByField('CustomerName') as HTMLElement).style.background = 'rgb(217, 244, 235)';
+    ((this.grid as GridComponent).getColumnHeaderByField('OrderID') as HTMLElement).style.background = 'rgb(217, 244, 235)';
+    ((this.grid as GridComponent).getColumnHeaderByField('ShipCountry') as HTMLElement).style.background = 'rgb(217, 244, 235)';
     ((this.grid as GridComponent).getColumnHeaderByField('CustomerName') as HTMLElement).style.color = '#0d0b0b';
-    ((this.grid as GridComponent).getColumnHeaderByUid('grid-column2') as HTMLElement).style.background = '#f45ddeab';
+    ((this.grid as GridComponent).getColumnHeaderByUid('grid-column2') as HTMLElement).style.background = 'rgb(217, 244, 235)';
     const columnIndex = (this.grid as GridComponent).getColumnIndexByField('ShipCountry');
-    ((this.grid as GridComponent).getColumnHeaderByIndex(columnIndex) as HTMLElement).style.color = '#0d0b0b';
+    ((this.grid as GridComponent).getColumnHeaderByIndex(columnIndex) as HTMLElement).style.color = 'green';
     const index = (this.grid as GridComponent).getColumnIndexByUid('grid-column2');
-    ((this.grid as GridComponent).getColumnHeaderByIndex(index) as HTMLElement).style.color = '#0d0b0b';
+    ((this.grid as GridComponent).getColumnHeaderByIndex(index) as HTMLElement).style.color = 'green';
   }
 
 }
