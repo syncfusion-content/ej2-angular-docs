@@ -20,7 +20,7 @@ Represents the Angular Tooltip component that displays a piece of information ab
 ### animation [`AnimationModel`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipModel/)
 
 We can set the same or different animation option to Tooltip while it is in open or close state.
-Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/animation?lang=typescript here} to know more about this property with demo.
+Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/animation.html?lang=typescript here} to know more about this property with demo.
 
 Defaults to *{ open: { effect: 'FadeIn', duration: 150, delay: 0 }, close: { effect: 'FadeOut', duration: 150, delay: 0 } }*
 
@@ -33,7 +33,7 @@ Defaults to *0*
 ### content `string` &#124;  `HTMLElement`
 
 It is used to display the content of Tooltip which can be both string and HTML Elements.
-Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/content?lang=typescript here} to know more about this property with demo.
+Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/content.html?lang=typescript here} to know more about this property with demo.
 
 ### cssClass `string`
 
@@ -57,14 +57,14 @@ Defaults to *false*
 
 It is used to set the height of Tooltip component which accepts both string and number values.
 When Tooltip content gets overflow due to height value then the scroll mode will be enabled.
-Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/setting-dimension?lang=typescript here} to know more about this property with demo.
+Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/setting-dimension.html?lang=typescript here} to know more about this property with demo.
 
 Defaults to *'auto'*
 
 ### isSticky `Boolean`
 
 It is used to display the Tooltip in an open state until closed by manually.
-Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/open-mode?lang=typescript#sticky-mode here} to know more about this property with demo.
+Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/open-mode.html?lang=typescript#sticky-mode here} to know more about this property with demo.
 
 Defaults to *false*
 
@@ -77,7 +77,7 @@ Defaults to *undefined*
 ### mouseTrail `boolean`
 
 It allows the Tooltip to follow the mouse pointer movement over the specified target element.
-Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/position?lang=typescript#mouse-trailing here} to know more about this property with demo.
+Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/position.html?lang=typescript#mouse-trailing here} to know more about this property with demo.
 
 Defaults to *false*
 
@@ -128,7 +128,7 @@ The target element is considered as parent container.
 
 It is used to set the position of tip pointer on tooltip.
 When it sets to auto, the tip pointer auto adjusts within the space of target's length and does not point outside.
-Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/position?lang=typescript#tip-pointer-positioning here} to know more about this property with demo.
+Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/position.html?lang=typescript#tip-pointer-positioning here} to know more about this property with demo.
 
 Defaults to *'Auto'*
 
@@ -208,7 +208,7 @@ We can trigger `beforeRender` event before the Tooltip and its contents are adde
 When one of its arguments `cancel` is set to true, the Tooltip can be prevented from rendering on the page.
 This event is mainly used for the purpose of customizing the Tooltip before it shows up on the screen.
 For example, to load the AJAX content or to set new animation effects on the Tooltip, this event can be opted.
-Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/content?lang=typescript#dynamic-content-via-ajax here} to know more about this property with demo.
+Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/content.html?lang=typescript#dynamic-content-via-ajax here} to know more about this property with demo.
 
 ### created  `EmitType<Object>`
 
