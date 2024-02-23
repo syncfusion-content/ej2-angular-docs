@@ -1,8 +1,9 @@
 /**
  * Rich Text Editor Custom-Toolbar Sample
  */
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { ToolbarService, HtmlEditorService, ImageService, LinkService } from '@syncfusion/ej2-angular-richtexteditor';
+import { Mention } from '@syncfusion/ej2-angular-dropdowns';
 
 
 @Component( {
@@ -13,7 +14,7 @@ import { ToolbarService, HtmlEditorService, ImageService, LinkService } from '@s
         <p>Welcome to the mention integration with rich text editor demo. Type <code>&#64;</code> character and tag user from the suggestion list. </p>
     </ng-template>
 </ejs-richtexteditor>
-<ejs-mention [dataSource]='data' target='#mention_integration_rte-edit-view' [fields]='fieldsData' [suggestionCount]="8" [showMentionChar]="false" [allowSpaces]="true"  
+<ejs-mention #mention [dataSource]='data' target='#mention_integration_rte-edit-view' [fields]='fieldsData' [suggestionCount]="8" [showMentionChar]="false" [allowSpaces]="true"  
 popupWidth='250px' popupHeight='200px'>
     <ng-template #itemTemplate let-data>
         <table>
@@ -39,6 +40,7 @@ popupWidth='250px' popupHeight='200px'>
 providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
 } )
 export class AppComponent {
+    @ViewChild('mention') mentionObj: Mention;
     public toolbarSettings: object = {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', 'OrderedList',
         'UnorderedList', '|', 'CreateLink', 'Image', '|', 'SourceCode', '|', 'Undo', 'Redo'
@@ -63,8 +65,7 @@ export class AppComponent {
       public  fieldsData: { [key: string]: string } = { text: 'Name' };
 
       onActionBegin(args: any) {
-        const mentionPopup = document.querySelector('.e-mention.e-popup-open');
-        if (args.requestType === 'EnterAction' && mentionPopup !== null) {
+        if (args.requestType === 'EnterAction' && this.mentionObj.element.classList.contains('e-popup-open')) {
           args.cancel = true;
         }
       }

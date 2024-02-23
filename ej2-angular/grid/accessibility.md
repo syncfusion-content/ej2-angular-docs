@@ -272,7 +272,19 @@ The Grid component's accessibility levels are ensured through an [accessibility-
 
 The accessibility compliance of the Grid component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/grid.html) in a new window to evaluate the accessibility of the Grid component with accessibility tools.
 
-{% previewsample "https://ej2.syncfusion.com/accessibility/grid.html" %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/ensuring-accessibility/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/ensuring-accessibility/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/ensuring-accessibility/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/ensuring-accessibility" %} 
 
 ## See also
 
