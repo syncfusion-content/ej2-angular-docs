@@ -196,7 +196,7 @@ The following example, demonstrates how to select a range of rows within the Gri
 
 ## Select grid rows based on certain condition
 
-You can programmatically select specific rows in the Angular Grid component based on a certain condition. This feature is particularly useful when you need to dynamically highlight or manipulate specific rows in the grid based on custom conditions. This functionality can be achieved using the [selectRows](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrows) method in the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event of Grid.
+You can programmatically select specific rows in the Angular Grid component based on a certain condition. This feature is particularly useful when you need to dynamically highlight or manipulate specific rows in the grid based on custom conditions. This functionality can be achieved using the [selectRows](https://ej2.syncfusion.com/angular/documentation/api/grid/#selectrows) method in the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event of Grid and [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowdatabound) along with obtaining the index value based on the condition.
 
 In the below demo, we have selected the grid rows only when **EmployeeID** column value greater than **3**.
 

@@ -15,8 +15,8 @@ import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
       </div>
       <div style="padding: 20px 0px 20px 0px">
       <label>Enable/Disable Toggle selection</label>
-      <ejs-switch #switch id="switch" [(checked)]="enableToggleSelection" 
-      (change)="toggleColumnSelection()">
+      <ejs-switch #switch id="switch" [checked]="true" 
+      (change)="toggleColumnSelection($event)">
       </ejs-switch>
       </div>
       <div style="padding: 20px 0px 0px 0px">
@@ -52,10 +52,14 @@ export class AppComponent implements OnInit {
     this.data = data; 
     this.selectionOptions = { type: 'Multiple' };
   }
-  toggleColumnSelection(): void {
-    (this.grid as GridComponent).selectionSettings.enableToggle = this.enableToggleSelection;
+  toggleColumnSelection(args: CustomChangeEventArgs): void {
+    (this.grid as GridComponent).selectionSettings.enableToggle = args.checked;
   }
   valueChange(args: ChangeEventArgs): void {
     ((this.grid as GridComponent).selectionSettings.mode as SelectionMode) = (args.value as SelectionMode);
   }
+}
+
+interface CustomChangeEventArgs extends ChangeEventArgs {
+  checked: boolean;
 }

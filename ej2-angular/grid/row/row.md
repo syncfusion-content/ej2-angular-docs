@@ -155,7 +155,7 @@ Customizing the row height for a particular row can be useful when you want to d
 
 The `rowHeight` property of the Grid component allows you to set the height of all rows in the grid to a specific value. However, if you want to customize the row height for a specific row based on the row data, you can use the `rowDataBound` event. This event is triggered every time a request is made to access row information, element, or data, and before the row element is appended to the Grid element.
 
-In the below example, the row height for the row with OrderID as '10249' is set as '90px' using the `rowDataBound` event.
+In the below example, the row height for the row with **OrderID** as '10249' is set as '90px' using the `rowDataBound` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -181,7 +181,7 @@ The Row Hover feature in Grid provides a visual effect when the mouse pointer ho
 
 By default, the `enableHover` property is set to **true**, which means that the row hovering effect is enabled. To disable the row hover effect, set the `enableHover` property to **false**.
 
-Here is an example that demonstrates how to enable/disable the Row Hover feature:
+Here is an example that demonstrates how to enable/disable row hover based on the Switch Component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -359,10 +359,10 @@ Grid provides several methods to retrieve row data and elements. This feature is
     const rowElement = this.grid.getRowByIndex(rowIndex);
     ```
 
-2. [getRowByPrimaryKey](https://ej2.syncfusion.com/documentation/api/grid/#getrowindexbyprimarykey):The method allows you to retrieve the row index based on a specific primary key value or row data.
+2. [getRowIndexByPrimaryKey](https://ej2.syncfusion.com/documentation/api/grid/#getrowindexbyprimarykey):The method allows you to retrieve the row index based on a specific primary key value or row data.
 
     ```ts
-    const rowIndex = this.grid.getRowByPrimaryKey(primaryKey);
+    const rowIndex = this.grid.getRowIndexByPrimaryKey(primaryKey);
     ```
 
 3. [getRowInfo](https://ej2.syncfusion.com/documentation/api/grid/#getrowinfo):This method allows you to retrieve row information based on a cell target element.
