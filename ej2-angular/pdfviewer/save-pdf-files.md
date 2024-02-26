@@ -90,7 +90,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   }
 ```
 
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Save%20and%20Load/Save%20PDF%20file%20to%20Server)
 
 ## Download PDF file as a copy
 
@@ -105,3 +105,4 @@ downloadClicked() {
   var viewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
   viewer.download();
 }
+```
