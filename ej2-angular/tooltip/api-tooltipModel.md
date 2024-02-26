@@ -117,7 +117,7 @@ It is used to determine the device mode to display the Tooltip content.
 If it is in desktop, it will show the Tooltip content when hovering on the target element.
 If it is in touch device, it will show the Tooltip content when tap and holding on the target element.
 
-### position [`Position`](https://ej2.syncfusion.com/angular/documentation/tooltip/position)
+### position [`Position`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/position/)
 
 It is used to set the position of Tooltip element, with respect to Target element.
 
@@ -130,7 +130,7 @@ It is used to show or hide the tip pointer of Tooltip.
 It is used to denote the target selector where the Tooltip need to be displayed.
 The target element is considered as parent container.
 
-### tipPointerPosition [`TipPointerPosition`](https://ej2.syncfusion.com/angular/documentation/tooltip/position#tip-pointer-positioning)
+### tipPointerPosition [`TipPointerPosition`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tipPointerPosition/)
 
 It is used to set the position of tip pointer on tooltip.
 When it sets to auto, the tip pointer auto adjusts within the space of target's length and does not point outside.
