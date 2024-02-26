@@ -17,7 +17,7 @@ Represents the Angular Tooltip component that displays a piece of information ab
 
 ## Properties
 
-### animation [`AnimationModel`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipModel/)
+### animation [`AnimationModel`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/animationModel/)
 
 We can set the same or different animation option to Tooltip while it is in open or close state.
 Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/animation.html?lang=typescript here} to know more about this property with demo.
