@@ -9,15 +9,15 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
     styleUrls: ['./app.component.css'],
     encapsulation: ViewEncapsulation.None,
     template: `<ejs-treegrid #treegrid [dataSource]='data' idMapping='TaskID' parentIdMapping='parentID' [height]='194' [treeColumnIndex]='1' (created)='setHeaderHeight($event)'  >
-        <e-columns>
-            <e-column field='TaskID' headerText='Task ID' width='70' textAlign='Right'></e-column>
-            <e-column field='TaskName' headerText='Task Name' width='100' ></e-column>
-            <e-column field='StartDate' headerText='Start Date' width='90' format="yMd" textAlign='Right' ></e-column>
-            <e-column field='EndDate' headerText='End Date' width='90' format="yMd" textAlign='Center' [customAttributes]='customAttributes' ></e-column>
-            <e-column field='Duration' headerText='Duration' width='90' textAlign='Right' ></e-column>
-            <e-column field='Progress' headerText='Progress' width='90' textAlign='Right' ></e-column>
-        </e-columns>
-    </ejs-treegrid>`,
+                     <e-columns>
+                        <e-column field='TaskID' headerText='Task ID' width='70' textAlign='Right'></e-column>
+                        <e-column field='TaskName' headerText='Task Name' width='100' ></e-column>
+                        <e-column field='StartDate' headerText='Start Date' width='90' format="yMd" textAlign='Right' ></e-column>
+                        <e-column field='EndDate' headerText='End Date' width='90' format="yMd" textAlign='Center' [customAttributes]='customAttributes' ></e-column>
+                        <e-column field='Duration' headerText='Duration' width='90' textAlign='Right' ></e-column>
+                        <e-column field='Progress' headerText='Progress' width='90' textAlign='Right' ></e-column>
+                    </e-columns>
+                </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
 
