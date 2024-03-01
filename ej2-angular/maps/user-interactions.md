@@ -93,8 +93,10 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.zoomSettings = {
             enable: true,
-            buttonSettings: {
-                toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset']
+            toolbarSettings: {
+               buttonSettings: {
+                  toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset'],
+               }
             }
         };
         this.shapeData = world_map;

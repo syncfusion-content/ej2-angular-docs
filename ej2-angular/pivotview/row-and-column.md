@@ -12,6 +12,10 @@ domainurl: ##DomainURL##
 
 # Row and column in Angular Pivotview component
 
+To learn about how to use the row and column options effectively in the Angular Pivot Table, watch this video:
+
+{% youtube "https://www.youtube.com/watch?v=JZexayfKjrU" %}
+
 ## Width and Height
 
 Allows end user to set the pivot table's height and width by using [`height`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#width) properties in pivot table respectively. The supported formats to set [`height`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#height) and [`width`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#width) properties are,
