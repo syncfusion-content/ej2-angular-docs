@@ -2,31 +2,49 @@
 
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { ResizeService,FilterService,SortService,PageService,ColumnMenuService  } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid height='315' [dataSource]='data' [allowResizing]='true' [treeColumnIndex]='1' childMapping='subtasks'  showColumnMenu="true"  [allowFiltering]="true" [allowSorting]="true" [filterSettings]="filterSettings">
-        <e-columns>
-                    <e-column field='taskID' headerText='Task ID' textAlign='Right' width=100></e-column>
-                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=130></e-column>
-                    <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=130></e-column>
-                    <e-column field='duration' headerText='Duration' textAlign='Right' width=150></e-column>
-                    <e-column field='progress' headerText='Progress' textAlign='Right' width=150></e-column>
-        </e-columns>
-                </ejs-treegrid>`,
-      providers: [FilterService, PageService, SortService, ResizeService, ColumnMenuService]
+    template: `<div >
+                <button ejs-button id="small" cssClass="e-small" (click)="changeHeaderHeight($event)">Change height 20px</button>
+                <button ejs-button id="medium" cssClass="e-small" (click)="changeHeaderHeight($event)">Default height 42px</button>
+                <button ejs-button  id="big" cssClass="e-small" (click)="changeHeaderHeight($event)">Change height 60px</button>
+              </div>
+
+              <ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' >
+                 <e-columns>
+                    <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
+                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
+                    <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=90></e-column>
+                    <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
+                    <e-column field='progress' headerText='Progress' textAlign='Right' width=120></e-column>
+                  </e-columns>
+              </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
 
     public data?: Object[];
-    public filterSettings?: Object;
+    @ViewChild('treegrid')
+    public treegrid?: TreeGridComponent;
+
     ngOnInit(): void {
         this.data = sampleData;
-         this.filterSettings = { type: 'Menu'};
-    }
-}
 
+    }
+    changeHeaderHeight(event: MouseEvent): void {
+        const heightMap: { [key: string]: string } = {
+          small: '20px',
+          medium: '42px',
+          big: '60px'
+        };    const headerCells = (this.treegrid as TreeGridComponent).getHeaderContent().querySelectorAll('.e-headercell');
+        headerCells.forEach((headerCell:Element) => {
+          (headerCell as HTMLElement).style.height = (heightMap)[
+            (event.target as HTMLButtonElement).id
+          ];
+        });
+      }
+}
 
 
 
