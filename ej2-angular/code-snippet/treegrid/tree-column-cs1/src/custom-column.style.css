@@ -1,0 +1,7 @@
+.e-treegrid .e-treegridexpand::before {
+  content: '\2795';
+}
+
+.e-treegrid .e-treegridcollapse::before {
+  content: '\2796';
+}
