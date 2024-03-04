@@ -1072,9 +1072,6 @@ The following example demonstrates how to enable immutable mode in an Angular co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/immutable-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/immutable-cs1/src/app.template.html %}
-{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/immutable-cs1/src/app.module.ts %}
 {% endhighlight %}
