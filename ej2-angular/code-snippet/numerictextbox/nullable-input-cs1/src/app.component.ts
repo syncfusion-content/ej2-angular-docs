@@ -19,7 +19,7 @@ import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
    }
    public onBlur(args: any) {
      if(args.value == null) {
-      this.numeric.value = 0;
+      this.numeric.element.value = 0;
      }
    }
    constructor() {
