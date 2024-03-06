@@ -64,7 +64,7 @@ In the below code, **OrderID**, **Ship Name** and **Ship Country** columns are d
 
 The Grid component provides the ability to prevent resizing for a particular column. This can be useful if you want to maintain a consistent column width or prevent users from changing the width of a column.
 
-You can disable resizing for a particular column by setting the [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#allowresizing) property of the column to **false**. The following example demonstrates, how to disabled resize for **Customer ID** column.
+You can disable resizing for a particular column by setting the [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective/#allowresizing) property of the column to **false**. The following example demonstrates, how to disable resize for **Customer ID** column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
