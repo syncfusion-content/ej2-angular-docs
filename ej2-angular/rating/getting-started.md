@@ -12,6 +12,9 @@ domainurl: ##DomainURL##
 
 This section explains how to create a default Rating and demonstrate the basic usage of the Rating module.
 
+To get started quickly with Angular rating component, you can check out this video:
+{% youtube "https://www.youtube.com/watch?v=PqverjTfSt8&ab_channel=Syncfusion%2CInc" %}
+
 ## Dependencies
 
 The list of dependencies required to use the Rating module in your application is given below:

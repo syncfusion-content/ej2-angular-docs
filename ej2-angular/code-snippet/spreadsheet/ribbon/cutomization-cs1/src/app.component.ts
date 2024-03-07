@@ -2,7 +2,10 @@
 
 import { Component, ViewChild } from '@angular/core';
 import { SpreadsheetComponent, MenuSelectEventArgs } from '@syncfusion/ej2-angular-spreadsheet';
-import { select } from '@syncfusion/ej2-base';
+import { ItemModel } from '@syncfusion/ej2-navigations/src/toolbar';
+import { DropDownButton } from '@syncfusion/ej2-splitbuttons/src/drop-down-button/drop-down-button';
+import { MenuEventArgs } from '@syncfusion/ej2-splitbuttons';
+import { select, createElement } from '@syncfusion/ej2-base';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { dataSource } from './datasource';
 
@@ -71,6 +74,19 @@ export class AppComponent {
                     { text: 'XLS', iconCss: 'e-xls e-icons' }, { text: 'CSV', iconCss: 'e-csv e-icons' }]
             }],
             'Save As', false);
+        // Adding the new `custom dropdown button` in the ribbon toolbar item under the `Data` tab for adding a custom dropdown button using the addToolbarItems method in the spreadsheet ribbon.
+        this.spreadsheetObj!.addToolbarItems(
+            'Data',
+            [
+                { type: 'Separator' },
+                {
+                    id: 'custombtn',
+                    tooltipText: 'Custom Btn',
+                    template: this.appendDropdownBtn('custombtn'),
+                },
+            ],
+            7
+        );
     }
 
     fileMenuBeforeOpen (): void {
@@ -96,6 +112,27 @@ export class AppComponent {
                 break;
       }
     }
+
+    appendDropdownBtn(id: string): HTMLElement {
+        let ddlItems: ItemModel[] = [
+          {
+            text: 'Download Excel',
+          },
+          {
+            text: 'Download CSV',
+          },
+        ];
+        let btnObj: DropDownButton = new DropDownButton({
+          items: ddlItems,
+          content: 'Download',
+          iconCss: 'e-icons e-download',
+          select: (args: MenuEventArgs): void => {
+            alert(args.item.text + ' clicked');
+          },
+        });
+        btnObj.appendTo(createElement('button', { id: id }));
+        return btnObj.element;
+      }
 }
 
 
