@@ -28,7 +28,7 @@ To enable the `headerText` property, you simply need to define it in the **e-col
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample " http://127.0.0.1:4000/ej2-angular/samples/treegrid/columns-render-cs1" %}
+{% previewsample " page.domainurl/samples/treegrid/columns-render-cs1" %}
 
  >* The `headerText` property is optional, and if it is not defined, then the corresponding column's field value is set as header text for that column.  
 >* You can also use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#headertemplate) property to apply custom HTML content to the header cell.
@@ -51,7 +51,7 @@ In this demo, the custom element is rendered for both **taskName** and **duratio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample " http://127.0.0.1:4000/ej2-angular/samples/treegrid/columns-header-cs1" %}
+{% previewsample " page.domainurl/samples/treegrid/columns-header-cs1" %}
 
 >* The `headerTemplate` property is only applicable to Tree Grid columns that have a header element.
 >* You can use any HTML or Angular component in the header template to add additional functionality to the header element.
@@ -74,7 +74,7 @@ You can customize the appearance of the stacked header elements by using the hea
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample " http://127.0.0.1:4000/ej2-angular/samples/treegrid/columns-header-cs2" %}
+{% previewsample " page.domainurl/samples/treegrid/columns-header-cs2" %}
 
 ## Align the text of header text
 

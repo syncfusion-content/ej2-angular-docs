@@ -1,4 +1,14 @@
-## Loading themes without internet access
+---
+layout: post
+title: How to load offline theme in  ##Platform_Name## Common control | Syncfusion
+description: Learn here all about load offline theme in Syncfusion  ##Platform_Name##  Common control of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
+control: common
+documentation: ug
+domainurl: ##DomainURL##
+---
+
+# Loading themes without internet access
 
 Syncfusion incorporates the Material theme as a default built-in theme for all its components. By default, material theme refers to Google fonts, which necessitates internet access. However, this may not be suitable for applications that operate without an internet connection. To address this limitation, Syncfusion provides `offline-theme` file to reference Material styles with local fonts, ensuring seamless usage even in environments without internet connectivity. 
 
