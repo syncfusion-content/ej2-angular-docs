@@ -2,6 +2,29 @@
  * TreeGrid DataSource
  */
 
+export let sampleData: Object[] =  [
+    {
+        taskID: 1,
+        taskName: 'Planning',
+        startDate: new Date('02/03/2017'),
+        endDate: new Date('02/07/2017'),
+        progress: 100,
+        duration: 5,
+        priority: 'Normal',
+        approved: false,
+    },
+    {
+        taskID: 6,
+        taskName: 'Design',
+        startDate: new Date('02/10/2017'),
+        endDate: new Date('02/14/2017'),
+        duration: 3,
+        progress: 86,
+        priority: 'High',
+        approved: false,
+    },
+];
+
 export let textdata: Object[] = [{
     'Name': 'Robert King',
     'FullName': 'RobertKing',
@@ -142,4 +165,3 @@ export let textdata: Object[] = [{
         }]
     }]
 }];
-
