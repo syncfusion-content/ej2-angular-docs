@@ -2,9 +2,8 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { Maps , Marker, Bubble, MapsTooltip } from '@syncfusion/ej2-angular-maps';
 import { world_map } from './world-map';
-Maps.Inject(Marker, Bubble, MapsTooltip);
+
 @Component({
     selector: 'app-container',
     template:

@@ -2,10 +2,8 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { Maps, DataLabel } from '@syncfusion/ej2-angular-maps';
 import { usa_map } from './usa';
 
-Maps.Inject(DataLabel);
 @Component({
     selector: 'app-container',
     template:

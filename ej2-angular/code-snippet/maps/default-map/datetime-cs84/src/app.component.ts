@@ -2,7 +2,6 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { Maps } from '@syncfusion/ej2-angular-maps';
 
 @Component({
     selector: 'app-container',

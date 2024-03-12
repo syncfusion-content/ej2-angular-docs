@@ -2,11 +2,9 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { Maps, Legend } from '@syncfusion/ej2-angular-maps';
 import { world_map } from './world-map';
 import{ Population_Density } from './data'
 
-Maps.Inject(Legend);
 @Component({
     selector: 'app-container',
     template:

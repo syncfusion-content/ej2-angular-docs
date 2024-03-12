@@ -2,7 +2,6 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { Maps } from '@syncfusion/ej2-angular-maps';
 import { markerDataSource } from './markerdata';
 @Component({
     selector: 'app-container',

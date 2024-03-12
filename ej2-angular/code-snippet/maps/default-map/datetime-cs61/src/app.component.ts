@@ -1,7 +1,6 @@
 
 
-import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
-import { Maps, ILoadEventArgs } from '@syncfusion/ej2-angular-maps';
+import { Component, OnInit } from '@angular/core';
 import { world_map } from './world-map';
 import { markerDataSource } from './markerdata';
 

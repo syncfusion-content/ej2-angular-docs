@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Maps, Marker, MapsTooltip } from '@syncfusion/ej2-angular-maps';
 import { world_map } from './world-map';
-Maps.Inject(Marker, MapsTooltip);
 @Component({
     selector: 'app-container',
     template:
@@ -16,7 +14,6 @@ export class AppComponent implements OnInit {
     public shapeData?: object;
     public markerSettings?: object;
     public shapeSettings?: object;
-    public zoomSettings?: object;
     ngOnInit(): void {
         this.shapeData = world_map;
         this.shapeSettings = {

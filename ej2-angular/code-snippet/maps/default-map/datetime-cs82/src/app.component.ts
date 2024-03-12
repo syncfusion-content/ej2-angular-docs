@@ -2,9 +2,8 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { Maps, Legend } from '@syncfusion/ej2-angular-maps';
 import { world_map } from './world-map';
-import { PdfExportService, MapsComponent, LegendService } from '@syncfusion/ej2-angular-maps';
+import { MapsComponent } from '@syncfusion/ej2-angular-maps';
 
 @Component({
     selector: 'app-container',
@@ -13,8 +12,7 @@ import { PdfExportService, MapsComponent, LegendService } from '@syncfusion/ej2-
     <e-layers>
     <e-layer  [shapeData]= 'shapeData'  [shapePropertyPath]= 'shapePropertyPath' [shapeDataPath]= 'shapeDataPath' [dataSource] = 'dataSource' [shapeSettings] = 'shapeSettings'></e-layer>
     </e-layers>
-    </ejs-maps>  <button  id='print' (click)='export()'>Export</button>`,
-    providers: [PdfExportService, LegendService]
+    </ejs-maps>  <button  id='print' (click)='export()'>Export</button>`
 })
 
 export class AppComponent {

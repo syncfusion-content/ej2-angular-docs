@@ -1,9 +1,8 @@
 
 
 
-import { Component, Inject, OnInit } from '@angular/core';
-import { Maps, Zoom, Marker, NavigationLine } from '@syncfusion/ej2-angular-maps';
-Maps.Inject(Zoom, Marker, NavigationLine);
+import { Component, OnInit } from '@angular/core';
+
 @Component({
     selector: 'app-container',
     template:
