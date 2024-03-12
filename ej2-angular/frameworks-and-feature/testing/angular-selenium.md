@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Angular selenium in Angular Frameworks and feature component | Syncfusion
-description: Learn here all about Angular selenium in Syncfusion Angular Frameworks and feature component of Syncfusion Essential JS 2 and more.
+title: Angular selenium in Angular Frameworks & Syncfusion feature component.
+description: Learn here all about Angular selenium in Syncfusion Angular Frameworks and Syncfusion feature component.
 platform: ej2-angular
-control: Angular selenium 
+control: Angular E2E
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 This documents explains the selenium E2E testing for Angular web applications using `Protractor`.
 
-N> Starting from Angular version 12, the Angular CLI no longer includes Protractor by default and has plans to remove Protractor support in the future. As a result, Protractor reached its end-of-life in August 2023. For more information, refer to this [article](https://blog.angular.io/the-state-of-end-to-end-testing-with-angular-d175f751cb9c).
+N> Starting from Angular version 12, the Angular CLI no longer includes Protractor by default and has plans to remove Protractor support in the future. As a result, Protractor reached its end-of-life in August 2023. For more information, refer to this [article]("https://blog.angular.io/the-state-of-end-to-end-testing-with-angular-d175f751cb9c").
 
 ## Selenium
 
@@ -182,4 +182,4 @@ ng e2e
 ## See also
 
 * [Migration from Protractor to Cypress](https://docs.cypress.io/guides/end-to-end-testing/protractor-to-cypress)
-* [Cypress Testing of Syncfusion Angular Components](../common/how-to/testing-with-cypress)
+* [Cypress Testing of Syncfusion Angular Components](./testing-with-cypress)

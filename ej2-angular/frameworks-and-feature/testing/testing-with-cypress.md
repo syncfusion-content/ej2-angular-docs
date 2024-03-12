@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Angular Cypress Testing with Syncfusion Angular Component | Syncfusion
-description: Learn here all about Angular Cypress Testing with Syncfusion Angular Component and more.
+description: Learn here all about how to perform the E2E & Component testing with Syncfusion Angular components in Angular web applications using Cypress.
 platform: ej2-angular
 control: common
 documentation: ug
@@ -34,7 +34,7 @@ ng add @cypress/schematic
 {% endhighlight %}
 {% endtabs %}
 
-![Cypress installation](./images/install-cypress.png)
+![Cypress installation](../../common/how-to/images/install-cypress.png)
 
 ## Cypress Testing types
 
@@ -83,11 +83,11 @@ ng e2e
 
 3.This will opens the dashboard. Start the E2E testing and click the `spec.cy.ts` file to run the test cases.
 
-![Cypress dashboard](./images/cypress-e2e.png)
+![Cypress dashboard](../../common/how-to/images/cypress-e2e.png)
 
 4.Once the test cases are completed, the result will be displayed as follows.
 
-![Cypress test result](./images/cypress-e2e-result.png)
+![Cypress test result](../../common/how-to/images/cypress-e2e-result.png)
 
 For more information about Cypress E2E testing, refer to this [documentation](https://docs.cypress.io/guides/end-to-end-testing/writing-your-first-end-to-end-test).
 
@@ -131,11 +131,11 @@ ng e2e
 
 4.This will opens the dashboard. Switch to component testing type and click the `app.component.cy.ts` file to run the test cases.
 
-![Cypress dashboard](./images/cypress-component.png)
+![Cypress dashboard](../../common/how-to/images/cypress-component.png)
 
 5.Once the test cases are completed, the result will be displayed as follows.
 
-![Cypress test result](./images/cypress-testing.png)
+![Cypress test result](../../common/how-to/images/cypress-testing.png)
 
 6.To resolve the license banner in the automation browsers, [register the Syncfusion license key](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-registration#register-syncfusion-license-key-in-the-project) in the `./cypress/support/component.ts` file as follows.
 
