@@ -1,9 +1,7 @@
 
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { Maps, Polygon, Highlight, Selection } from '@syncfusion/ej2-angular-maps';
 import { world_map } from './world-map';
-Maps.Inject(Polygon, Highlight, Selection);
 
 @Component({
   selector: 'app-container',

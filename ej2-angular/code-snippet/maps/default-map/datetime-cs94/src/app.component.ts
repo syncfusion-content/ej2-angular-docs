@@ -1,9 +1,8 @@
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { Maps, Selection, MapsComponent} from '@syncfusion/ej2-angular-maps';
+import { MapsComponent} from '@syncfusion/ej2-angular-maps';
 import { world_map } from './world-map';
-Maps.Inject(Selection);
 @Component({
     selector: 'app-container',
     template:

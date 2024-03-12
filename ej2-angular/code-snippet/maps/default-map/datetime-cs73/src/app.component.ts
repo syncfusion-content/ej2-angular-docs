@@ -1,9 +1,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { Maps, Marker, Legend, Zoom } from '@syncfusion/ej2-angular-maps';
 import { world_map } from './world-map';
-Maps.Inject(Marker, Legend, Zoom);
 @Component({
     selector: 'app-container',
     template:

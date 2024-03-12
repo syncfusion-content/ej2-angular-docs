@@ -1,10 +1,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { Maps, Annotations } from '@syncfusion/ej2-angular-maps';
 import { world_map } from './world-map';
-
-Maps.Inject(Annotations);
 @Component({
     selector: 'app-container',
     template:
