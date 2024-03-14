@@ -85,7 +85,7 @@ export interface DateFormat extends Window {
 
 The TreeGrid component provides a powerful feature that allows you to render custom components inside the detail row. This feature is helpful when you need to add additional information or functionality for a specific row in the tree grid.
 
-To render a custom component inside the detail row, you need to define a template using the [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/tregrid/#detailtemplate)   property and handle the [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#detaildatabound) event. This template can include any HTML element or Angular component that you want to display as the detail content.
+To render a custom component inside the detail row, you need to define a template using the [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/tregrid/#detailtemplate) property and handle the [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#detaildatabound) event. This template can include any HTML element or Angular component that you want to display as the detail content.
 
 The `detailDataBound` event is triggered after a detail row is bound to data. This event provides an object of type [DetailDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/detaildataboundeventargs/) as a parameter.
 

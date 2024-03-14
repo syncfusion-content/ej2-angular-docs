@@ -1,0 +1,50 @@
+
+
+
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+
+import { ToolbarItem, EditSettingsModel, GanttAction } from '@syncfusion/ej2-angular-gantt';
+import { projectNewData } from './data';
+
+@Component({
+    selector: 'app-root',
+    template:
+       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [allowSorting]='true' [allowFiltering]='true' [toolbar]="toolbar" [enableUndoRedo]='true' [showColumnMenu]='true'
+       [allowResizing]='true' [allowReordering]='true' [allowRowDragAndDrop]='true' [undoRedoStepsCount]="undoRedoStepsCount" [taskFields]="taskSettings" [undoRedoActions]="undoRedoActions" [editSettings] = "editSettings"></ejs-gantt>`,
+    encapsulation: ViewEncapsulation.None
+})
+export class AppComponent{
+    // Data for Gantt
+    public data?: object[];
+    public taskSettings?: object;
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItem[];
+    public undoRedoStepsCount?: number;
+    public undoRedoActions?: GanttAction[];
+    public ngOnInit(): void {
+        this.data = projectNewData;
+        this.undoRedoStepsCount = 5;
+        this.taskSettings = {
+            id: 'TaskID',
+            name: 'TaskName',
+            startDate: 'StartDate',
+            duration: 'Duration',
+            progress: 'Progress',
+            child: 'subtasks'
+        },
+        this.editSettings = {
+            allowAdding: true,
+            allowEditing: true,
+            allowDeleting: true,
+            allowTaskbarEditing: true,
+            showDeleteConfirmDialog: true
+        },
+        this.toolbar = ['Add', 'Edit', 'Update', 'Delete', 'Search', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
+        'PrevTimeSpan', 'NextTimeSpan','Undo','Redo'],
+        this.undoRedoActions = ['Add', 'Edit', 'Delete', 'Search','Sorting','Filtering', 'ZoomIn', 'ZoomOut', 'ZoomToFit','Indent','Outdent', 
+        'PreviousTimeSpan', 'NextTimeSpan','ColumnState']
+    }
+}
+
+
+

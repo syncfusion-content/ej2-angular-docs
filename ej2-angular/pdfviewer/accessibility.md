@@ -65,10 +65,13 @@ The PDF Viewer component followed the [keyboard interaction](https://www.w3.org/
 | **Press (Windows)** |**Press (Macintosh)** | **To do this** |
 | --- | --- | --- |
 |||**Shortcuts for page navigation**|
-| <kbd>Home</kbd> | <kbd>Function + Left arrow</kbd> |Navigate to the first page |
-| <kbd>End</kbd> |<kbd>Function + Right arrow</kbd> |Navigate to the last page |
-|<kbd>Up Arrow</kbd> |<kbd>Up Arrow</kbd> |Navigate to the previous page|
-| <kbd>Down Arrow</kbd> | <kbd>Down Arrow</kbd> | Navigate to the next page |
+| <kbd>CONTROL + Left Arrow (or) CONTROL + Up Arrow</kbd> | <kbd>COMMAND + Left Arrow (or) COMMAND + Up Arrow </kbd> |Navigate to the first page |
+| <kbd>CONTROL + Right Arrow (or) CONTROL + Down Arrow</kbd> |<kbd>COMMAND + Right Arrow (or) COMMAND + Down Arrow</kbd> |Navigate to the last page |
+|<kbd>Left Arrow</kbd> |<kbd> Left Arrow (or) Shift + Space </kbd> |Navigate to the previous page|
+| <kbd>Right Arrow</kbd> | <kbd>Right Arrow (or) Space</kbd> | Navigate to the next page |
+| <kbd>CONTROL + G</kbd> | <kbd>COMMAND + G</kbd> | Go To The Page|
+|<kbd>Up Arrow</kbd> |<kbd>Up Arrow </kbd> |Scroll up|
+| <kbd>Down Arrow</kbd> | <kbd>Down Arrow</kbd> | Scroll down|
 |||**Shortcuts for Zooming**|
 |<kbd>CONTROL + =</kbd> |<kbd>COMMAND + =</kbd> | Perform zoom-in operation |
 | <kbd>CONTROL + -</kbd> | <kbd>COMMAND + -</kbd> | Perform zoom-out operation |
@@ -82,9 +85,25 @@ The PDF Viewer component followed the [keyboard interaction](https://www.w3.org/
 |||**Shortcuts for the general operation**|
 | <kbd>CONTROL + Z</kbd> | <kbd>CONTROL + Z</kbd> |Undo the action|
 |<kbd>CONTROL + Y</kbd> |<kbd>CONTROL + Y</kbd> |Redo the action|
-| <kbd>CONTROL + P</kbd> | <kbd>CONTROL + P</kbd> |Print the document|
+| <kbd>CONTROL + P</kbd> | <kbd>COMMAND + P</kbd> |Print the document|
 |<kbd>Delete</kbd> |<kbd>Delete</kbd> |Delete the annotations and form fields|
+|<kbd>CONTROL + Shift + A</kbd> |<kbd>COMMAND + Shift + A</kbd> |Toggle Annotation Toolbar|
+|<kbd>CONTROL + Alt + 0</kbd> |<kbd>COMMAND + Option + 0</kbd> |Show Command panel|
+|<kbd>CONTROL + Alt + 2</kbd> |<kbd>COMMAND + Option + 2</kbd> |Show Bookmarks|
+|<kbd>CONTROL + Alt + 1</kbd> |<kbd>COMMAND + Option + 1</kbd> |Show Thumbnails|
+|<kbd>CONTROL + S</kbd> |<kbd>COMMAND + S</kbd> |Download|
+|<kbd>Shift + H</kbd> |<kbd>Shift + H</kbd> |Enable pan mode|
+|<kbd>Shift + V</kbd> |<kbd>Shift + V</kbd> |Enable text selection mode|
 
+The current implementation of our PDF Viewer includes keyboard shortcuts for various functions like scrolling, zooming, text search, printing, and annotation deletion.
+
+To enhance user experience, we're adding additional keyboard shortcuts for actions such as navigating between pages, accessing specific pages, toggling annotation tools, and displaying PDF elements like outlines, annotations, bookmarks, and thumbnails.
+
+To support this, we're introducing a new class called **commandManager**, which handles custom commands triggered by specific key gestures. These custom commands will be defined by users and executed accordingly.
+
+The **commandManager** will have a parameter called Commands, which will hold the collection of custom keyboard commands specified by users. Each custom command will be represented by a KeyboardCommand class, containing the `command name` and associated `keyboard combination`.
+
+Additionally, we're introducing the **keyboardCustomCommands** parameter for the CommandManager, which will utilize the EventCallback to handle keyboard events and trigger appropriate methods when specific key combinations are pressed.
 
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}
@@ -102,6 +121,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
                 <ejs-pdfviewer id="pdfViewer"
                           [documentPath]='document'
                           [resourceUrl]='resourceUrl'
+                          [commandManager]='commandManager'
                           style="height:640px;display:block">
                 </ejs-pdfviewer>
             </div>`,
@@ -113,6 +133,40 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   export class AppComponent implements OnInit {
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
       public resourceUrl = 'https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2-pdfviewer-lib';
+
+    ngOnInit(): void {
+    }
+    public commandManager = {
+        keyboardCommand: [{
+            name: 'customCopy',
+            gesture: {
+                pdfKeys: PdfKeys.G,
+                modifierKeys: ModifierKeys.Shift | ModifierKeys.Alt
+               }
+            },
+            {
+            name: 'customPaste',
+            gesture: {
+                pdfKeys: PdfKeys.H,
+                modifierKeys: ModifierKeys.Shift | ModifierKeys.Alt
+               }
+            },
+            {
+            name: 'customCut',
+            gesture: {
+                pdfKeys: PdfKeys.Z,
+                modifierKeys: ModifierKeys.Control
+               }
+            },
+            {
+            name: 'customSelectAll',
+            gesture: {
+                pdfKeys: PdfKeys.E,
+                modifierKeys: ModifierKeys.Control
+               }
+            },
+        ] 
+    }
   }
 
 {% endhighlight %}
@@ -131,6 +185,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
                 <ejs-pdfviewer id="pdfViewer"
                           [serviceUrl]='service'
                           [documentPath]='document'
+                          [commandManager]='commandManager'
                           style="height:640px;display:block">
                 </ejs-pdfviewer>
             </div>`,
@@ -142,10 +197,57 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   export class AppComponent implements OnInit {
       public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
       public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+
+    ngOnInit(): void {
+    }
+    public commandManager = {
+        keyboardCommand: [{
+            name: 'customCopy',
+            gesture: {
+                pdfKeys: PdfKeys.G,
+                modifierKeys: ModifierKeys.Shift | ModifierKeys.Alt
+               }
+            },
+            {
+            name: 'customPaste',
+            gesture: {
+                pdfKeys: PdfKeys.H,
+                modifierKeys: ModifierKeys.Shift | ModifierKeys.Alt
+               }
+            },
+            {
+            name: 'customCut',
+            gesture: {
+                pdfKeys: PdfKeys.Z,
+                modifierKeys: ModifierKeys.Control
+               }
+            },
+            {
+            name: 'customSelectAll',
+            gesture: {
+                pdfKeys: PdfKeys.E,
+                modifierKeys: ModifierKeys.Control
+               }
+            },
+        ] 
+    }
   }
 
 {% endhighlight %}
 {% endtabs %}
+
+Each `keyboardCommand` object consists of a name property, specifying the `name` of the `custom command`, and a `gesture property`, defining the key gesture associated with the command.
+
+For example, the first command named `customCopy` is associated with the **G** key and requires both the **Shift** and **Alt** modifier keys to be pressed simultaneously.
+
+Additionally, there's an explanation of the key modifiers used in the gestures:
+
+* Ctrl corresponds to the Control key, represented by the value `1`.
+* Alt corresponds to the Alt key, represented by the value `2`.
+* Shift corresponds to the Shift key, represented by the value `4`.
+* Meta corresponds to the Command key on macOS or the Windows key on Windows, represented by the value `8`.
+
+This setup allows users to perform custom actions within the PDF viewer by pressing specific key combinations, enhancing the user experience and providing more efficient navigation and interaction options.
 
 ## Ensuring accessibility
 

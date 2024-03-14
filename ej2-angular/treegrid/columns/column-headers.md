@@ -28,7 +28,7 @@ To enable the `headerText` property, you simply need to define it in the **e-col
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample " page.domainurl/samples/treegrid/columns-render-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-render-cs1" %}
 
  >* The `headerText` property is optional, and if it is not defined, then the corresponding column's field value is set as header text for that column.  
 >* You can also use the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#headertemplate) property to apply custom HTML content to the header cell.
