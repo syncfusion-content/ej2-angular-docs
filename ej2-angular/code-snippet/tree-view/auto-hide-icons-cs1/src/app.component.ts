@@ -44,13 +44,13 @@ export class AppComponent {
     @ViewChild ('treevalidate') tree?: TreeViewComponent;
 
     public onCreate(args: any): void {
-      let collapse: NodeListOf<Element> = this.tree?.element.querySelectorAll('.e-icons.e-icon-collapsible') as NodeListOf<Element>;
-      let expand: NodeListOf<Element> = this.tree?.element.querySelectorAll('.e-icons.e-icon-expandable') as NodeListOf<Element>;
+      let collapse: NodeListOf<Element> = (this.tree as any)?.element.querySelectorAll('.e-icons.e-icon-collapsible') as NodeListOf<Element>;
+      let expand: NodeListOf<Element> = (this.tree as any)?.element.querySelectorAll('.e-icons.e-icon-expandable') as NodeListOf<Element>;
       this.hideIcon(expand, collapse);
-      this.tree?.element.addEventListener('mouseenter', (event:any) => {
+      (this.tree as any)?.element.addEventListener('mouseenter', (event:any) => {
         this.showIcon(expand, collapse);
       });
-      this.tree?.element.addEventListener('mouseleave', (event:any) => {
+      (this.tree as any)?.element.addEventListener('mouseleave', (event:any) => {
         this.hideIcon(expand, collapse);
       });
     }
