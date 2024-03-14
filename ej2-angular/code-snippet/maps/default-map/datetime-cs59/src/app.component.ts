@@ -1,9 +1,8 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { Maps, Bubble, Legend } from '@syncfusion/ej2-angular-maps';
 import { world_map } from './world-map';
-Maps.Inject(Bubble, Legend);
+
 @Component({
     selector: 'app-container',
     template: `<ejs-maps id='rn-container'  [legendSettings] ='legendSettings'  >

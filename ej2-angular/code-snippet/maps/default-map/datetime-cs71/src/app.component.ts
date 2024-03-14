@@ -1,10 +1,8 @@
 
 
 import { Component, ViewEncapsulation, ViewChild, OnInit  } from '@angular/core';
-import { Maps, Marker, MapsTooltip, Zoom } from '@syncfusion/ej2-angular-maps';
 import { world_map } from './world-map';
 import { cluster } from './marker-location';;
-Maps.Inject(Marker, MapsTooltip, Zoom);
 @Component({
     selector: 'app-container',
     template:

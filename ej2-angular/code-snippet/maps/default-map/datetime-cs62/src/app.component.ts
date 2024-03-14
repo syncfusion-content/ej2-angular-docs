@@ -1,8 +1,7 @@
 
 
 
-import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
-import { Maps } from '@syncfusion/ej2-maps';
+import { Component, OnInit } from '@angular/core';
 import { world_map } from './world-map';
 import { L10n } from '@syncfusion/ej2-base';
 

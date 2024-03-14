@@ -2,7 +2,6 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { Maps } from '@syncfusion/ej2-angular-maps';
 import { usa_map } from './usa';
 import { world_map } from './world-map';
 import { california } from './california';

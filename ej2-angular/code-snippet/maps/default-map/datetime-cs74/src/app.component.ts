@@ -1,9 +1,7 @@
 
 
 import { Component, OnInit } from '@angular/core';
-import { Maps, Marker } from '@syncfusion/ej2-angular-maps';
 import { usa_map } from './usa';
-Maps.Inject(Marker);
 @Component({
     selector: 'app-container',
     template:

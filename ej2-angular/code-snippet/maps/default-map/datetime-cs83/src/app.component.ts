@@ -1,10 +1,8 @@
 
 
 
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { Maps, Legend } from '@syncfusion/ej2-angular-maps';
-import { world_map } from './world-map';
-import { PdfExportService, ImageExportService, MapsComponent, LegendService } from '@syncfusion/ej2-angular-maps';
+import { Component, ViewChild } from '@angular/core';
+import { MapsComponent } from '@syncfusion/ej2-angular-maps';
 
 @Component({
     selector: 'app-container',
@@ -13,8 +11,7 @@ import { PdfExportService, ImageExportService, MapsComponent, LegendService } fr
     <e-layers>
     <e-layer  [urlTemplate]= 'urlTemplate'></e-layer>
     </e-layers>
-    </ejs-maps>  <button  id='export' (click)='export()'>Export</button>`,
-    providers: [PdfExportService, ImageExportService, LegendService]
+    </ejs-maps>  <button  id='export' (click)='export()'>Export</button>`
 })
 
 export class AppComponent {

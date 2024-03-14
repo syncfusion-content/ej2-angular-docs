@@ -1,9 +1,8 @@
 
 import { Component } from '@angular/core';
-import { Maps, MapsTooltip, ITooltipRenderEventArgs, ShapeSettings } from '@syncfusion/ej2-angular-maps';
+import { ShapeSettings } from '@syncfusion/ej2-angular-maps';
 import { world_map } from './world-map';
 import { default_data } from './data';
-Maps.Inject(MapsTooltip);
 @Component({
     selector: 'app-container',
     template: `<ejs-maps id='rn-container'>
