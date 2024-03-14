@@ -65,110 +65,110 @@ letter-spacing: 0.7px;
 <tr>
     <td>
         <div><p class="controlcategory">GRIDS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/grid/getting-started/">DataGrid</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pivotview/getting-started/">Pivot Table</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treegrid/getting-started/">TreeGrid</a></div>
-         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/spreadsheet/getting-started/">Spreadsheet</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/grid/getting-started">DataGrid</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pivotview/getting-started">Pivot Table</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treegrid/getting-started">TreeGrid</a></div>
+         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/spreadsheet/getting-started">Spreadsheet</a></div>
         <div><p class="controlcategory">FILE VIEWERS & EDITORS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/document-editor/getting-started">Document Editor</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/inplace-editor/getting-started/">In-place Editor</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/inplace-editor/getting-started">In-place Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/image-editor/getting-started">Image Editor</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started/">RichTextEditor</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pdfviewer/getting-started/">PDF Viewer</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/document-editor/getting-started/">Word Processor</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started">RichTextEditor</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pdfviewer/getting-started">PDF Viewer</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/document-editor/getting-started">Word Processor</a></div>
         <div><p class="controlcategory">LAYOUT</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/dialog/getting-started/">Dialog</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/listview/getting-started/">ListView</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/dialog/getting-started">Dialog</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/listview/getting-started">ListView</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/predefined-dialogs/getting-started">Predefined Dialogs</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/tooltip/getting-started/">Tooltip</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/splitter/getting-started/">Splitter</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/dashboard-layout/getting-started/">Dashboard</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/card/getting-started/">Card</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/avatar/getting-started/">Avatar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/tooltip/getting-started">Tooltip</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/splitter/getting-started">Splitter</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/dashboard-layout/getting-started">Dashboard</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/card/getting-started">Card</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/avatar/getting-started">Avatar</a></div>
     </td>
     <td>
         <div><p class="controlcategory">DATA VISUALIZATION</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/chart/getting-started/">Charts</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/chart/getting-started">Charts</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/3d-chart/getting-started">3D Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/accumulation-chart/getting-started">Accumulation Chart</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/stock-chart/getting-started/">Stock Chart</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/circular-gauge/getting-started/">Circular Gauge</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/linear-gauge/getting-started/">Linear Gauge</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/diagram/getting-started/">Diagram Component</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/heatmap-chart/getting-started/">HeatMap Chart</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/maps/getting-started/">Map</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/range-navigator/getting-started/">Range Selector</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/smithchart/getting-started/">Smith Chart</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/sparkline/getting-started/">Sparkline Charts</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/barcode/getting-started/">Barcode</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treemap/getting-started/">TreeMap</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/bullet-chart/getting-started/">Bullet Chart</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/kanban/getting-started/">Kanban</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/stock-chart/getting-started">Stock Chart</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/circular-gauge/getting-started">Circular Gauge</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/linear-gauge/getting-started">Linear Gauge</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/diagram/getting-started">Diagram Component</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/heatmap-chart/getting-started">HeatMap Chart</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/maps/getting-started">Map</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/range-navigator/getting-started">Range Selector</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/smithchart/getting-started">Smith Chart</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/sparkline/getting-started">Sparkline Charts</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/barcode/getting-started">Barcode</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treemap/getting-started">TreeMap</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/bullet-chart/getting-started">Bullet Chart</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/kanban/getting-started">Kanban</a></div>
         <div><p class="controlcategory">BUTTONS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/button/getting-started/">Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/button-group/getting-started/">ButtonGroup</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-button/getting-started/">Dropdown Menu</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/progress-button/getting-started/">Progress Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/split-button/getting-started/">SplitButton</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/chips/getting-started/">Chips</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/floating-action-button/getting-started/">Floating Action Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/speed-dial/getting-started/">Speed Dial</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/button/getting-started">Button</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/button-group/getting-started">ButtonGroup</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-button/getting-started">Dropdown Menu</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/progress-button/getting-started">Progress Button</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/split-button/getting-started">SplitButton</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/chips/getting-started">Chips</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/floating-action-button/getting-started">Floating Action Button</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/speed-dial/getting-started">Speed Dial</a></div>
     </td>
     <td>
         <div><p class="controlcategory">CALENDARS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/schedule/getting-started/">Scheduler</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/gantt/getting-started/">Gantt Chart</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/calendar/getting-started/">Calendar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/datepicker/getting-started/">DatePicker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/daterangepicker/getting-started/">DateRangePicker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/datetimepicker/getting-started/">DateTime Picker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/timepicker/getting-started/">TimePicker</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/schedule/getting-started">Scheduler</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/gantt/getting-started">Gantt Chart</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/calendar/getting-started">Calendar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/datepicker/getting-started">DatePicker</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/daterangepicker/getting-started">DateRangePicker</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/datetimepicker/getting-started">DateTime Picker</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/timepicker/getting-started">TimePicker</a></div>
         <div><p class="controlcategory">INPUTS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/textbox/getting-started/">TextBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/maskedtextbox/getting-started/">Input Mask</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/numerictextbox/getting-started/">Numeric TextBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/radio-button/getting-started/">RadioButton</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/check-box/getting-started/">CheckBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started/">Color Picker</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/uploader/getting-started/">File Upload</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/range-slider/getting-started/">Range Slider</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/switch/getting-started/">Toggle Switch Button</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/signature/getting-started/">Signature</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rating/getting-started/">Rating</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/textbox/getting-started">TextBox</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/maskedtextbox/getting-started">Input Mask</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/numerictextbox/getting-started">Numeric TextBox</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/radio-button/getting-started">RadioButton</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/check-box/getting-started">CheckBox</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/color-picker/getting-started">Color Picker</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/uploader/getting-started">File Upload</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/range-slider/getting-started">Range Slider</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/switch/getting-started">Toggle Switch Button</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/signature/getting-started">Signature</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rating/getting-started">Rating</a></div>
         <div><p class="controlcategory">FORMS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/query-builder/getting-started/">Query Builder</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/query-builder/getting-started">Query Builder</a></div>
     </td>
     <td>
         <div><p class="controlcategory">DROPDOWNS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started/">AutoComplete</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/list-box/getting-started/">ListBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/combo-box/getting-started/">ComboBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started/">Dropdown List</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/multi-select/getting-started/">Multiselect DropDown</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-tree/getting-started/">DropDown Tree</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started">AutoComplete</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/list-box/getting-started">ListBox</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/combo-box/getting-started">ComboBox</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started">Dropdown List</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/multi-select/getting-started">Multiselect DropDown</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-tree/getting-started">DropDown Tree</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/mention/getting-started">Mention</a></div>
         <div><p class="controlcategory">NAVIGATION</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/accordion/getting-started/">Accordion</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/accordion/getting-started">Accordion</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/carousel/getting-started">Carousel</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/context-menu/getting-started/">Context Menu</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/menu/getting-started/">Menu Bar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/ribbon/getting-started/">Ribbon</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/sidebar/getting-started/">Sidebar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/tab/getting-started/">Tabs</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/toolbar/getting-started/">Toolbar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treeview/getting-started/">TreeView</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/file-manager/getting-started/">File Manager</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/context-menu/getting-started">Context Menu</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/menu/getting-started">Menu Bar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/ribbon/getting-started">Ribbon</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/sidebar/getting-started">Sidebar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/tab/getting-started">Tabs</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/toolbar/getting-started">Toolbar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/treeview/getting-started">TreeView</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/file-manager/getting-started">File Manager</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/stepper/getting-started">Stepper</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/breadcrumb/getting-started/">Breadcrumb</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pager/getting-started/">Pager</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/appbar/getting-started/">AppBar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/breadcrumb/getting-started">Breadcrumb</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pager/getting-started">Pager</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/appbar/getting-started">AppBar</a></div>
         <div><p class="controlcategory">NOTIFICATION</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/toast/getting-started/">Toast</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/progress-bar/getting-started/">Progress Bar</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/spinner/getting-started/">Spinner</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/badge/getting-started/">Badge</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/skeleton/getting-started/">Skeleton</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/message/getting-started/">Message</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/toast/getting-started">Toast</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/progress-bar/getting-started">Progress Bar</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/spinner/getting-started">Spinner</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/badge/getting-started">Badge</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/skeleton/getting-started">Skeleton</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/message/getting-started">Message</a></div>
     </td>
 </tr>
 </table>
