@@ -153,3 +153,4 @@ While freezing columns in the Syncfusion Angular Grid provides enhanced visibili
 
 * Detail Template
 * Hierarchy Grid
+* Autofill

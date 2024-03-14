@@ -31,6 +31,9 @@ SEE LICENSE IN license
 @syncfusion/ej2-grids
 SEE LICENSE IN license
 
+@syncfusion/ej2-lists
+SEE LICENSE IN license
+
 rxjs
 Apache-2.0
                                Apache License

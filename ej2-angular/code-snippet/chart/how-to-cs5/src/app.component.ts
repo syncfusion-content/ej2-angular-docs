@@ -1,7 +1,6 @@
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ILoadedEventArgs, ChartTheme } from '@syncfusion/ej2-angular-charts';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({

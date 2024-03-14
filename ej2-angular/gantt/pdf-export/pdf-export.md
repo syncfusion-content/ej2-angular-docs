@@ -95,7 +95,9 @@ Also, we can customize the chart width and grid width in exported file using [`c
   
 {% previewsample "page.domainurl/samples/gantt/single-page" %}
 
-## Exporting with column template
+## Exporting with templates
+
+### Exporting with column template
 
 The PDF export functionality allows to export Grid columns that include images, hyperlinks, and custom text to an PDF document using [pdfQueryCellInfo](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryCellInfoEventArgs/) event.
 
@@ -117,3 +119,68 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
   
 {% previewsample "page.domainurl/samples/gantt/pdf-export-column-template-cs1" %}
 
+### Exporting with taskbar template
+
+The PDF export functionality allows to export taskbar templates that include `images` and `text` to an PDF document using [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfquerytaskbarinfo) event. Taskbars in the exported PDF document can be customized or formatted using the `pdfQueryTaskbarInfo` event for parent taskbar templates, taskbar templates and milestone templates.
+
+In the following sample, taskbar templates with images and text are exported to PDF using [taskbarTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryTaskbarInfoEventArgs/#taskbarTemplate) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfquerytaskbarinfo) event.
+
+>Note: PDF Export supports base64 string to export the images.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/pdf-export-taskbar-template/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/pdf-export-taskbar-template/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/pdf-export-taskbar-template/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/pdf-export-taskbar-template" %}
+
+### Exporting with task label template
+
+The PDF export functionality allows to export task label template that include `images` and `text` to an PDF document using [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfquerytaskbarinfo) event.
+
+In the following sample, task label template with images and text are exported to PDF using [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryTaskbarInfoEventArgs/#labelSettings) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfquerytaskbarinfo) event.
+
+>Note: PDF Export supports base64 string to export the images.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/pdf-export-tasklabel-template/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/pdf-export-tasklabel-template/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/pdf-export-tasklabel-template/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/pdf-export-tasklabel-template" %}
+
+### Exporting with header template
+
+The PDF export functionality allows to export header template that include `images` and `text` to an PDF document using [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/) event.
+
+In the following sample, header template with images and text are exported to PDF using [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/#headerTemplate) properties in the [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/) event.
+
+>Note: PDF Export supports base64 string to export the images.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/pdf-export-header-template/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/pdf-export-header-template/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/pdf-export-header-template/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/pdf-export-header-template" %}

@@ -91,6 +91,7 @@ The following example enable/disble using `enableColumnVirtualization` property 
 
 * While using column virtual scrolling, column width should be in pixel. Percentage values are not accepted.
 * Selected column details are only retained within the viewport. When the next set of columns is loaded, the selection for previously visible columns is lost.
+* While using column virtualization, fixed position applied only viewport column. If scroll the next set of column fixed position is removed.
 * The cell selection is not supported for column virtual scrolling
 * The following features are compatible with column virtualization and work within the viewport:
    1. Column resizing
@@ -100,7 +101,6 @@ The following example enable/disble using `enableColumnVirtualization` property 
    5. Print
    6. Clipboard
    7. Column menu - Column chooser, AutofitAll, Grouping
-
 * Column virtual scrolling is not compatible with the following feature
     1. Grouping
     2. Colspan
