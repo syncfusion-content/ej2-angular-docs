@@ -406,7 +406,7 @@ Previous changes can be cleared by using the "Clear" option while performing ope
 
 ![output](images/clear-edit-olap.png "Editing the calculated field")
 
-#### Virtual Scrolling
+### Virtual Scrolling
 
 Allows large amounts of data to be loaded without any performance degradation by rendering rows and columns in relation to the current viewport. Rest of the data will be brought into the viewport dynamically based on vertical or horizontal scroll position. This feature can be enabled by setting the [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablevirtualization) property to **true**.
 
@@ -426,11 +426,12 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs195" %}
 
-##### Limitations for virtual scrolling
+#### Limitations for virtual scrolling
 
 * The [`columnWidth`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/#columnwidth) property in [`gridSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings) should be in pixels. The percentage value is not accepted.
 * Resizing columns and setting the width of individual columns will affect scrolling and is therefore not recommended.
-* The grand totals option is not supported by virtual scrolling.
+* When using OLAP data, subtotals and grandtotals are only displayed when measures are bound at the last position in the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows) or [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) axis. Otherwise, the data from the pivot table will be shown without summary totals.
+* When the pivot table's width and height are large, the loading data count in the current, previous, and next view ports (pages) will also increase, affecting performance.
 
 ### Run the application
 

@@ -1,0 +1,10 @@
+.dot-color .state-completed .e-dot {
+    background: #ff9900 ;
+    outline: 1px dashed #ff9900;
+    border-color: #ff9900;
+}
+.dot-color .state-progress .e-dot {
+    background: #33cc33;
+    outline: 1px dashed #33cc33;
+    border-color: #33cc33;
+}
