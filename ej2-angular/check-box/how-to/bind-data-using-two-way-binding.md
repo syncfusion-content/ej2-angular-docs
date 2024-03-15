@@ -22,7 +22,7 @@ In this following example, two way binding for Checkbox is illustrated with Swit
 
   ```
 
-* Initialize Switch component and assign the [`checked`](https://ej2.syncfusion.com/angular/documentation/api/switch#checked) property value like the below code,
+* Initialize Switch component and assign the [`checked`](https://ej2.syncfusion.com/angular/documentation/api/switch/#checked) property value like the below code,
 
   ```typescript
 
