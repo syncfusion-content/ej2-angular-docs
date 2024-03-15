@@ -1,0 +1,153 @@
+---
+layout: post
+title: Items in Angular Timeline component | Syncfusion
+description: Learn here all about Items in Syncfusion Angular Timeline component of Syncfusion Essential JS 2 and more.
+platform: ej2-angular
+control: Timeline
+documentation: ug
+domainurl: ##DomainURL##
+---
+
+# Items in Angular Timeline component
+
+The Timeline items can be added by using the `items` property. Each item can be configured with options such as `content`, `oppositeContent`, `dotCss`, `disabled` and `cssClass`.
+
+## Adding content
+
+You can define the item content using the `content` property.
+
+### String content
+
+You can define string content for the Timeline items.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/timeline/items/content/string-based/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/timeline/items/content/string-based/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/timeline/items/content/string-based/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/timeline/items/content/string-based/src/app.component.html %}
+{% endhighlight %}
+{% highlight css tabtitle="app.component.css" %}
+{% include code-snippet/timeline/items/content/string-based/src/app.component.css %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/timeline/items/content/string-based" %}
+
+### Templated content
+
+You can specify the template content for the items, by using the selector for an element in HTML.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/timeline/items/content/template-based/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/timeline/items/content/template-based/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/timeline/items/content/template-based/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/timeline/items/content/template-based/src/app.component.html %}
+{% endhighlight %}
+{% highlight css tabtitle="app.component.css" %}
+{% include code-snippet/timeline/items/content/template-based/src/app.component.css %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/timeline/items/content/template-based" %}
+
+## Adding opposite content
+
+You can add additional information to each Timeline item, by using the `oppositeContent` property which is positioned opposite to the item content. Similar to the `content` property you can define `string` or `function` as contents to the oppositeContent.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/timeline/items/opposite-content/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/timeline/items/opposite-content/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/timeline/items/opposite-content/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/timeline/items/opposite-content/src/app.component.html %}
+{% endhighlight %}
+{% highlight css tabtitle="app.component.css" %}
+{% include code-snippet/timeline/items/opposite-content/src/app.component.css %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/timeline/items/opposite-content" %}
+
+## Dot item
+
+You can define CSS class to set icons, background colors, or images to personalize the appearance of dots associated with each Timeline item by using the `dotCss` property.
+
+### Adding icons
+
+You can define the CSS class to show the icon for each item using the `dotCss` property.
+
+### Adding images
+
+You can include images for the Timeline items using the `dotCss` property, by setting the CSS `background-image` property.
+
+### Adding text
+
+You can display text for the Timeline items using the `dotCss` property, by adding text to the CSS `content` property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/timeline/items/dot-item/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/timeline/items/dot-item/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/timeline/items/dot-item/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/timeline/items/dot-item/src/app.component.html %}
+{% endhighlight %}
+{% highlight css tabtitle="app.component.css" %}
+{% include code-snippet/timeline/items/dot-item/src/app.component.css %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/timeline/items/dot-item" %}
+
+## Disabling items
+
+You can use the `disabled` property to disable an item when set to `true`. By default, the value is `false`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/timeline/items/disabled/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/timeline/items/disabled/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/timeline/items/disabled/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/timeline/items/disabled/src/app.component.html %}
+{% endhighlight %}
+{% highlight css tabtitle="app.component.css" %}
+{% include code-snippet/timeline/items/disabled/src/app.component.css %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/timeline/items/disabled" %}
+
+## cssClass
+
+You can customize the appearance of the Timeline item by specifying a custom CSS class using the `cssClass` property.

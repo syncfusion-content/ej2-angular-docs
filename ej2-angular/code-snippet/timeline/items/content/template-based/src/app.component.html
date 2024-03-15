@@ -1,0 +1,23 @@
+<div class="container" style="height: 350px;">
+    <ejs-timeline>
+        <e-items>
+            <e-item [content]="contentTemplate"> </e-item>
+            <e-item [content]="contentTemplate"> </e-item>
+            <e-item [content]="contentTemplate"> </e-item>
+            <e-item content="Out for Delivery"> </e-item>
+        </e-items>
+        <ng-template #contentTemplate let-data="">
+            <div class="content-container">
+                <div class="title">
+                    {{ templateContents[data.itemIndex].title }}
+                </div>
+                <span class="description">
+                    {{ templateContents[data.itemIndex].description }}
+                </span>
+                <div class="info"> 
+                    {{ templateContents[data.itemIndex].info }}
+                </div>
+            </div>
+        </ng-template>
+    </ejs-timeline>
+</div>

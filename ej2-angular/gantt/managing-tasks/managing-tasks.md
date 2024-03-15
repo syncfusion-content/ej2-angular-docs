@@ -143,6 +143,70 @@ In the following demo, editing is disabled for the `TaskName` column.
   
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/disableedit-cs1" %}
 
+## Customize control in add/edit dialog
+
+In Gantt Chart, the controls such as form elements, grid and RTE in add and edit dialog can be customized by using [additionalParams](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property.
+
+### Customize general tab of dialog 
+
+In the general tab of add/edit dialog, the custom input [fields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/#fields) can be included into fields by defining the field names either from the data source or template in [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/editDialogFieldSettings/) respectively.
+
+In the below sample, added field from the template to general tab.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/managing-tasks/disableedit-cs2/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/managing-tasks/disableedit-cs2/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/managing-tasks/disableedit-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/disableedit-cs2" %}
+
+### Customize dependency, segments and resources tab of dialog 
+
+[Grid](https://ej2.syncfusion.com/angular/documentation/api/grid/) component in the dependency, segment and resource tab of add/edit dialog can be customized, by defining grid module properties in the [additionalParams](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property of [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/editDialogFieldSettings/). 
+
+In the below code show cases, how to add additional features to dependency, segments and resources tab.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/managing-tasks/disableedit-cs3/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/managing-tasks/disableedit-cs3/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/managing-tasks/disableedit-cs3/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/disableedit-cs3" %}
+
+### Customize note dialog tab
+
+ [RTE](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/) component in notes tab of add and edit dialog can be customized, by defining RTE module properties in the [additionalParams](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property of [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/editDialogFieldSettings/). 
+ 
+ The below code shows how to enable inline mode to RTE in notes tab.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/managing-tasks/disableedit-cs4/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/gantt/managing-tasks/disableedit-cs4/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/managing-tasks/disableedit-cs4/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/managing-tasks/disableedit-cs4" %}
+
 ## Touch interation
 
 The Gantt control editing actions can be achieved using the double tap and tap and drag actions on a element.
