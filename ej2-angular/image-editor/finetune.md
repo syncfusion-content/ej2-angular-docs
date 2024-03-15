@@ -74,3 +74,5 @@ The parameter available in the [`FinetuneEventArgs`](https://ej2.syncfusion.com/
 * FinetuneEventArgs.value - The fine-tuning value to be applied in the image editor. 
 
 * FinetuneEventArgs.cancel – Specifies a boolean value to cancel the fine-tuning action. 
+
+> Please note that the Filter and Finetune features were unavailable on iOS due to the non-functioning CanvasContext.filter property on this platform.

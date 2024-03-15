@@ -1,0 +1,15 @@
+.dot-size .e-dot {
+    background: #33cc33;
+}
+.dot-size .x-small .e-dot {
+    --dot-size: 12px;
+}
+.dot-size .small .e-dot {
+    --dot-size: 18px;
+}
+.dot-size .medium .e-dot {
+    --dot-size: 24px;
+}
+.dot-size .large .e-dot {
+    --dot-size: 30px;
+}

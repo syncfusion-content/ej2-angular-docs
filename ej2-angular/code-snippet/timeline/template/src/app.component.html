@@ -1,0 +1,18 @@
+<div class="container">
+    <ejs-timeline orientation="Horizontal" cssClass="custom-timeline" [template]="timelineTemplate">
+        <e-items>
+            <e-item *ngFor="let item of projectMilestones" [content]="item.content"> </e-item>
+        </e-items>
+        <ng-template #timelineTemplate let-data="">
+            <div class='template-container item-{{data.itemIndex}}'>
+                <div class="content-container">
+                    <div class="timeline-content"> {{data.item.content}} </div>
+                </div>
+                <div class="content-connector"></div>
+                <div class="progress-line">
+                    <span class="indicator"></span>
+                </div>
+            </div>
+        </ng-template>
+    </ejs-timeline>
+</div>

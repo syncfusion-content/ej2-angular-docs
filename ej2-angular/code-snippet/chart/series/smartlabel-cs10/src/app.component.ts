@@ -14,16 +14,15 @@ import { IAccTextRenderEventArgs } from '@syncfusion/ej2-charts';
 export class AppComponent implements OnInit {
     public piedata?: Object[];
     public datalabel?: Object;
-    public onTextRender?: Function;
+    public onTextRender(args: IAccTextRenderEventArgs): void {
+        if (args.text === '13.5') {
+            args.color = 'red';
+            args.border.width = 1;
+        }
+    }
     ngOnInit(): void {
         this.datalabel = { visible: true };
         this.piedata = labelData;
-        this.onTextRender = (args: IAccTextRenderEventArgs) => {
-            if (args.text === '13.5') {
-                args.color = 'red';
-                args.border.width = 1;
-            }
-        }
     }
 
 }
