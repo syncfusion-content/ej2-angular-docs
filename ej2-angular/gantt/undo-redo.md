@@ -81,7 +81,7 @@ In the following example, `undoRedoStepsCount` value is set to 5.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs2" %}
 
 ## Perform undo redo actions programatically
 
@@ -101,7 +101,7 @@ The following code example demonstrates how to invoke the `undo` and `redo` meth
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs3" %}
 
 ## Retrieve undo and redo stack collection
 
@@ -121,7 +121,7 @@ The following code example demonstrates how to retrieve the undo and redo collec
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs4" %}
 
 ## Clear undo and redo collection
 
@@ -141,4 +141,4 @@ The following code example demonstrates how to clear the undo and redo collectio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/undo-redo/default-cs5" %}

@@ -11,8 +11,8 @@ import { EmitType } from '@syncfusion/ej2-base';
 export class AppComponent {
     public autoUpload: boolean = false;
     public path: Object = {
-        saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
-        removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove'
+        saveUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Save',
+        removeUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Remove'
     };
     public onBeforeUpload: EmitType<Object> = (args: any) => {
         // get the file MIME type

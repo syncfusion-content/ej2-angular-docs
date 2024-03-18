@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Detail Template in Angular TreeGrid component
+# Detail template in Angular TreeGrid component
 
 The detail template in the TreeGrid component allows you to display additional information about a specific row in the tree grid. This feature is useful when you need to show additional data or custom content that is specific to each row in the tree grid. You can use the [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#detailtemplate) property to define an HTML template for the detail row. This template can include any HTML element or Angular component that you want to display as detail content.
 

@@ -1,0 +1,39 @@
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { CircularChart3DComponent } from '@syncfusion/ej2-angular-charts';
+
+@Component({
+    selector: 'app-container',
+    template: `
+  <ejs-circularchart3d #chart style='display:block;' align='center' [title]='title' subTitle='subTitle' [tilt]='tilt' [legendSettings]="legendSettings">
+    <e-circularchart3d-series-collection>
+    <e-circularchart3d-series [dataSource]='dataSource' xName='x' yName='y' >
+    </e-circularchart3d-series></e-circularchart3d-series-collection>
+    </ejs-circularchart3d>`
+})
+export class AppComponent implements OnInit {
+    public dataSource?: Object[];
+    public legendSettings?: Object;
+    public tilt?: number;
+    public title?: string;
+    public subTitle?: string;
+
+    @ViewChild('chart')
+    public chartObj?: CircularChart3DComponent;
+
+    ngOnInit(): void {
+        this.dataSource = [
+            { x: 'Saudi Arabia', y: 58 },
+            { x: 'Persian Gulf', y: 15 },
+            { x: 'Canada', y: 13 },
+            { x: 'Venezuela', y: 8 },
+            { x: 'Mexico', y: 3 },
+            { x: 'Russia', y: 2 },
+            { x: 'Miscellaneous', y: 1 }
+        ];
+        this.legendSettings = { visible: false };
+        this.title = 'Oil and other liquid imports in USA',
+        this.subTitle = 'In the year 2014 - 2015',
+        this.tilt = -45;
+    }
+
+}

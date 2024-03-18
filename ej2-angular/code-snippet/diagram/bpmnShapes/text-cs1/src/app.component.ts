@@ -5,9 +5,19 @@ import { DiagramComponent, Diagram, NodeModel, BpmnShapeModel } from '@syncfusio
 
 @Component({
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults'>
+    template: `<ejs-diagram #diagram id="diagram" width="100%" height="700px" >
         <e-nodes>
-            <e-node id='node1' [offsetX]=150 [offsetY]=150 [shape]='shape'></e-node>
+            <e-node id='event1' [offsetX]=400 [offsetY]=200 [width]="70" [height]="70"  [shape]='shape'></e-node>
+            <e-node id='textNode1' [offsetX]=400 [offsetY]=400 [width]="70" [height]="70"  [shape]='shape1'>
+                <e-node-annotations>
+                    <e-node-annotation content='textNode1'></e-node-annotation>
+                    </e-node-annotations>
+            </e-node>
+            <e-node id='textNode2' [offsetX]=600 [offsetY]=400 [width]="70" [height]="70"  [shape]='shape2'>
+                <e-node-annotations>
+                    <e-node-annotation content='textNode2'></e-node-annotation>
+                    </e-node-annotations>
+            </e-node>
         </e-nodes>
     </ejs-diagram>`,
     encapsulation: ViewEncapsulation.None
@@ -17,25 +27,22 @@ export class AppComponent {
     public diagram?: DiagramComponent;
     public shape: BpmnShapeModel = {
         type: 'Bpmn',
-        shape: 'DataObject',
-        //Sets collection as true and type as Input
-        dataObject: {
-            collection: true,
-            type: 'Input'
-        },
-        //Sets the id, angle, length and text for the annotation
-        annotations: [{
-            id: 'left',
-            angle: 45,
-            length: 150,
-            text: 'Left',
-        }]
+        shape: 'Event',
+        event: { event: 'Start', trigger: 'None' },
     }
-    public getNodeDefaults(node: NodeModel): NodeModel {
-        node.height = 100;
-        node.width = 100;
-        return node;
+    //Node with target
+    public shape1: BpmnShapeModel = {
+        type: 'Bpmn',
+        shape: 'TextAnnotation',
+        textAnnotation:{ textAnnotationDirection:'Auto',textAnnotationTarget:'event1'}
     }
+    //Node without target
+    public shape2: BpmnShapeModel = {
+        type: 'Bpmn',
+        shape: 'TextAnnotation',
+        textAnnotation:{ textAnnotationDirection:'Auto',textAnnotationTarget:''}
+    }
+   
 }
 
 

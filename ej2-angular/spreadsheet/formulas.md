@@ -21,6 +21,14 @@ You can set formula for a cell in the following ways,
 * You can set formula for a cell by [`editing`](./editing).
 * Using the [`updateCell`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#updatecell) method, you can set or update the cell formula.
 
+## Culture-Based Argument Separator
+
+Previously, although you could import culture-based Excel files into the Spreadsheet component, the formulas wouldn't calculate correctly. This was due to the absence of culture-based argument separators and support for culture-based formatted numeric values as arguments. However, starting from version 25.1.35, you can now import culture-based Excel files into the Spreadsheet component.
+
+> Before importing culture-based Excel files, ensure that the Spreadsheet component is rendered with the corresponding culture. Additionally, launch the import/export services with the same culture to ensure compatibility.
+
+When loading spreadsheet data with culture-based formula argument separators using cell data binding, local/remote data, or JSON, ensure to set the [listSeparator](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#listseparator)  property value as the culture-based list separator from your end. Additionally, note that when importing an Excel file, the [listSeparator](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#listseparator)  property will be updated based on the culture of the launched import/export service.
+
 ## Create User Defined Functions / Custom Functions
 
 The Spreadsheet includes a number of built-in formulas. For your convenience, a list of supported formulas can be found [here](https://ej2.syncfusion.com/angular/documentation/spreadsheet/formulas#supported-formulas).

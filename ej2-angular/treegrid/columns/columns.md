@@ -41,7 +41,7 @@ Here is an example of how to specify column types in a tree grid using the types
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample " page.domainurl/samples/treegrid/column-type-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/column-type-cs1" %}
 
 >* If the [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#type) is not defined, then it will be determined from the first record of the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource).
 >* Incase if the first record of the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) is null/blank value for a column then it is necessary to define the [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#type) for that column. This is because the tree grid uses the column type to determine which filter dialog to display for that column.
@@ -142,7 +142,7 @@ You can use the [column.format](https://ej2.syncfusion.com/angular/documentation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample " page.domainurl/samples/treegrid/column-format-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/column-format-cs1" %}
 
 >* The Tree Grid uses the [Internalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library to format values based on the specified format and culture.
 >* By default, the [number](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization).
@@ -205,7 +205,7 @@ Format | Formatted value
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample " page.domainurl/samples/treegrid/column-format-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/column-format-cs3" %}
 
 >To learn more about date formatting, you can refer to [Date formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#date-formatting). 
 
@@ -331,7 +331,7 @@ Here is an example of using the `textAlign` property to align the text of a tree
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample " page.domainurl/samples/treegrid/column-align-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/column-align-cs1" %}
 
 >* The `textAlign` property changes the alignment for both the column content and header. If you want to align header differently, you can use the [headerTextAlign](https://ej2.syncfusion.com/documentation/api/treegrid/column/#headerTextAlign) property.
 
@@ -353,7 +353,7 @@ To enable the rendering of boolean values as checkboxes, you need to set the `di
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample " page.domainurl/samples/treegrid/boolean-columns-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/boolean-columns-cs1" %}
 
 >* The `displayAsCheckBox` property is only applicable to boolean values in Tree Grid columns.
 >* When `displayAsCheckBox` is set to **true**, the boolean values will be rendered as checkboxes in the Tree Grid column, with checked state indicating **true** and unchecked state indicating **false**.
@@ -570,7 +570,7 @@ Here is an example code that demonstrates how to control tree grid actions for s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample " page.domainurl/samples/treegrid/control-actions-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/control-actions-cs1" %}
 
 ## Customize column styles
 
@@ -693,5 +693,5 @@ In this example, we have a tree grid that displays data with two columns: **Task
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample " page.domainurl/samples/treegrid/columns-cs17" %}  
+{% previewsample "page.domainurl/samples/treegrid/columns-cs17" %}  
  

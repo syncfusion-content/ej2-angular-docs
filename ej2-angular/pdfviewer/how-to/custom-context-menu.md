@@ -26,7 +26,7 @@ The following code shows how to add custom option in context menu.
     {
       text: 'Search In Google',
       id: 'search_in_google',
-      iconCss: 'e-icons e-de-ctnr-find'
+      iconCss: 'e-icons e-search'
     },
     {
       text: 'Lock Annotation',
@@ -50,7 +50,8 @@ The following code shows how to add custom option in context menu.
     },
   ]
   public documentLoaded(e: any): void {
-      this.pdfviewerControl.addCustomMenu(this.menuItems, false, false);
+    var pdfViewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+    pdfViewer.addCustomMenu(this.menuItems, false, false);
   }
 
 ```
@@ -69,7 +70,7 @@ The PDF Viewer feature enables customization of custom options and the ability t
     {
       text: 'Search In Google',
       id: 'search_in_google',
-      iconCss: 'e-icons e-de-ctnr-find'
+      iconCss: 'e-icons e-search'
     },
     {
       text: 'Lock Annotation',
@@ -93,7 +94,8 @@ The PDF Viewer feature enables customization of custom options and the ability t
     },
   ]
   public documentLoaded(e: any): void {
-      this.pdfviewerControl.addCustomMenu(this.menuItems, true);
+    var pdfViewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+    pdfViewer.addCustomMenu(this.menuItems, false, false);
   }
 ```
 
@@ -103,127 +105,127 @@ The following code shows how to hide/show added custom option in context menu us
 
 ```js
 export class CustomContextMenuComponent implements OnInit {
-    @ViewChild('pdfviewer')
-    public pdfviewerControl: PdfViewerComponent;
-    @ViewChild('switch')
-    public switch: SwitchComponent;
-    @ViewChild('hide')
-    public hideObj: CheckBoxComponent;
-    @ViewChild('toolbar')
-    public toolbarObj: CheckBoxComponent;
+  public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+  public resource: string = 'https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2-pdfviewer-lib';
+  ;
+  ngOnInit(): void {
+  }
+  public menuItems: MenuItemModel[] = [
+    {
+      text: 'Search In Google',
+      id: 'search_in_google',
+      iconCss: 'e-icons e-search'
+    },
+    {
+      text: 'Lock Annotation',
+      iconCss: 'e-icons e-lock',
+      id: 'lock_annotation'
+    },
+    {
+      text: 'Unlock Annotation',
+      iconCss: 'e-icons e-unlock',
+      id: 'unlock_annotation'
+    },
+    {
+      text: 'Lock Form Fields',
+      iconCss: 'e-icons e-lock',
+      id: 'read_only_true'
+    },
+    {
+      text: 'Unlock Form Fields',
+      iconCss: 'e-icons e-unlock',
+      id: 'read_only_false'
+    },
+  ]
+  public documentLoaded(e: any): void {
+    var pdfViewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+    pdfViewer.addCustomMenu(this.menuItems, false, false);
+  }
 
-    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-    public resource: string = "https://cdn.syncfusion.com/ej2/23.2.6/dist/ej2-pdfviewer-lib";
-    ngOnInit(): void {
-        // ngOnInit function
-    }
-    public menuItems: MenuItemModel[] = [
-        {
-            text: 'Search In Google',
-            id: 'search_in_google',
-            iconCss: 'e-icons e-de-ctnr-find'
-        },
-        {
-            text: 'Lock Annotation',
-            iconCss: 'e-icons e-lock',
-            id: 'lock_annotation'
-        },
-        {
-            text: 'Unlock Annotation',
-            iconCss: 'e-icons e-unlock',
-            id: 'unlock_annotation'
-        },
-        {
-            text: 'Lock Form Fields',
-            iconCss: 'e-icons e-lock',
-            id: 'read_only_true'
-        },
-        {
-            text: 'Unlock Form Fields',
-            iconCss: 'e-icons e-unlock',
-            id: 'read_only_false'
-        },
-    ]
-    public documentLoaded(e: any): void {
-        this.pdfviewerControl.addCustomMenu(this.menuItems, false, false);
-    }
-
-    public customContextMenuSelect = (e: any): void => {
-        switch (e.id) {
-            case 'search_in_google':
-                for (var i = 0; i < this.pdfviewerControl.textSelectionModule.selectionRangeArray.length; i++) {
-                    var content = this.pdfviewerControl.textSelectionModule.selectionRangeArray[i].textContent;
-                    if ((this.pdfviewerControl.textSelectionModule.isTextSelection) && (/\S/.test(content))) {
-                        window.open('http://google.com/search?q=' + content);
-                    }
-                }
-                break;
-            case 'lock_annotation':
-                this.lockAnnotations(e);
-                break;
-            case 'unlock_annotation':
-                this.unlockAnnotations(e);
-                break;
-            case 'read_only_true':
-                this.setReadOnlyTrue(e);
-                break;
-            case 'read_only_false':
-                this.setReadOnlyFalse(e);
-                break;
-            case 'formfield properties':
-                break;
-            default:
-                break;
+  public customContextMenuSelect = (e: any): void => {
+    var pdfViewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+    switch (e.id) {
+      case 'search_in_google':
+        for (var i = 0; i < pdfViewer.textSelectionModule.selectionRangeArray.length; i++) {
+          var content = pdfViewer.textSelectionModule.selectionRangeArray[i].textContent;
+          if ((pdfViewer.textSelectionModule.isTextSelection) && (/\S/.test(content))) {
+            window.open('http://google.com/search?q=' + content);
+          }
         }
+        break;
+      case 'lock_annotation':
+        this.lockAnnotations(e);
+        break;
+      case 'unlock_annotation':
+        this.unlockAnnotations(e);
+        break;
+      case 'read_only_true':
+        this.setReadOnlyTrue(e);
+        break;
+      case 'read_only_false':
+        this.setReadOnlyFalse(e);
+        break;
+      case 'formfield properties':
+        break;
+      default:
+        break;
     }
+  }
 
-    public customContextMenuBeforeOpen = (e: any): void => {
-        for (var i = 0; i < e.ids.length; i++) {
-            var search = document.getElementById(e.ids[i]);
-            if (search) {
-                search.style.display = 'none';
-                if (e.ids[i] === 'search_in_google' && (this.pdfviewerControl.textSelectionModule) && this.pdfviewerControl.textSelectionModule.isTextSelection) {
-                    search.style.display = 'block';
-                } else if (e.ids[i] === "lock_annotation" || e.ids[i] === "unlock_annotation") {
-                    var isLockOption = e.ids[i] === "lock_annotation";
-                    for (var j = 0; j < this.pdfviewerControl.selectedItems.annotations.length; j++) {
-                        var selectedAnnotation: any = this.pdfviewerControl.selectedItems.annotations[j];
-                        if (selectedAnnotation && selectedAnnotation.annotationSettings) {
-                            var shouldDisplay = (isLockOption && !selectedAnnotation.annotationSettings.isLock) ||
-                                (!isLockOption && selectedAnnotation.annotationSettings.isLock);
-                            search.style.display = shouldDisplay ? 'block' : 'none';
-                        }
-                    }
-                }  else if ((e.ids[i] === "read_only_true" || e.ids[i] === "read_only_false") && this.pdfviewerControl.selectedItems.formFields.length !== 0) {
-                    var isReadOnlyOption = e.ids[i] === "read_only_true";
-                    for (var j = 0; j < this.pdfviewerControl.selectedItems.formFields.length; j++) {
-                        var selectedFormFields = this.pdfviewerControl.selectedItems.formFields[j];
-                        if (selectedFormFields) {
-                            var selectedFormField = this.pdfviewerControl.selectedItems.formFields[j].isReadonly;
-                            var displayMenu = (isReadOnlyOption && !selectedFormField) || (!isReadOnlyOption && selectedFormField);
-                            search.style.display = displayMenu ? 'block' : 'none';
-                        }
-                    }
-                } else if (e.ids[i] === 'formfield properties' && this.pdfviewerControl.selectedItems.formFields.length !== 0) {
-                    search.style.display = 'block';
-                }
+  public customContextMenuBeforeOpen = (e: any): void => {
+    var pdfViewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+    for (var i = 0; i < e.ids.length; i++) {
+      var search = document.getElementById(e.ids[i]);
+      if (search) {
+        search.style.display = 'none';
+        if (e.ids[i] === 'search_in_google' && (pdfViewer.textSelectionModule) && pdfViewer.textSelectionModule.isTextSelection) {
+          search.style.display = 'block';
+        } else if (e.ids[i] === "lock_annotation" || e.ids[i] === "unlock_annotation") {
+          var isLockOption = e.ids[i] === "lock_annotation";
+          for (var j = 0; j < pdfViewer.selectedItems.annotations.length; j++) {
+            var selectedAnnotation: any = pdfViewer.selectedItems.annotations[j];
+            if (selectedAnnotation && selectedAnnotation.annotationSettings) {
+              var shouldDisplay = (isLockOption && !selectedAnnotation.annotationSettings.isLock) ||
+                (!isLockOption && selectedAnnotation.annotationSettings.isLock);
+              search.style.display = shouldDisplay ? 'block' : 'none';
             }
+          }
+        } else if ((e.ids[i] === "read_only_true" || e.ids[i] === "read_only_false") && pdfViewer.selectedItems.formFields.length !== 0) {
+          var isReadOnlyOption = e.ids[i] === "read_only_true";
+          for (var j = 0; j < pdfViewer.selectedItems.formFields.length; j++) {
+            var selectedFormFields = pdfViewer.selectedItems.formFields[j];
+            if (selectedFormFields) {
+              var selectedFormField = pdfViewer.selectedItems.formFields[j].isReadonly;
+              var displayMenu = (isReadOnlyOption && !selectedFormField) || (!isReadOnlyOption && selectedFormField);
+              search.style.display = displayMenu ? 'block' : 'none';
+            }
+          }
+        } else if (e.ids[i] === 'formfield properties' && pdfViewer.selectedItems.formFields.length !== 0) {
+          search.style.display = 'block';
         }
+      }
     }
+  }
+
 }
 ```
 The following is the output of custom context menu with customization. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/custom-context-menu/app/app.component.ts %}
+{% include code-snippet/pdfviewer/custom-context-menu/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pdfviewer/custom-context-menu/app/app.module.ts %}
+{% include code-snippet/pdfviewer/custom-context-menu/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pdfviewer/custom-context-menu/app/main.ts %}
+{% include code-snippet/pdfviewer/custom-context-menu/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-[View sample in GitHub]()
+N> To set up the **server-backed PDF Viewer**, 
+Add the below serviceUrl in the `app.component.ts` file 
+`public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer'`;
+Within the template, configure the PDF Viewer by adding the `[serviceUrl]='service'` attribute inside the div element.
+
+{% previewsample "page.domainurl/samples/pdfviewer/custom-context-menu" %}

@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
      public path: Object = {
-      saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save' };
+      saveUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Save' };
     constructor() {
     }
 }

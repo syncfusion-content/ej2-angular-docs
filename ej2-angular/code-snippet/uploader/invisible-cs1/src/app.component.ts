@@ -15,8 +15,8 @@ import { SelectedEventArgs } from '@syncfusion/ej2-angular-inputs';
 export class AppComponent {
 public locale: string = 'en-US';
     public path: Object = {
-        saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
-        removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove'
+        saveUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Save',
+        removeUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Remove'
     };
   public allowExtensions: string = '.png, .jpg, .jpeg';
   public onSelected(args: SelectedEventArgs):void {

@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
     @ViewChild('querybuilder')
     public qryBldrObj?: QueryBuilderComponent;
     @ViewChild('dialog')
-    public Dialog?: DialogComponent;
+    public Dialog?: any;
     public animationSettings: Object = { effect: 'Zoom',  duration: 400 };
     public showCloseIcon: Boolean = true;
     public hidden: Boolean = false;
