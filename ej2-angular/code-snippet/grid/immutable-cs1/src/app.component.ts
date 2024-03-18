@@ -1,108 +1,139 @@
-
-
 import { Component, ViewChild, OnInit } from "@angular/core";
-import { ButtonComponent } from "@syncfusion/ej2-angular-buttons";
-import { GridComponent } from "@syncfusion/ej2-angular-grids";
+import { GridComponent, RowDataBoundEventArgs, SelectionSettingsModel } from "@syncfusion/ej2-angular-grids";
 import { data } from "./datasource";
 
-@Component({
-    selector: 'app-root',
-    templateUrl: 'app.template.html'
-})
-export class AppComponent implements OnInit {
-  public data?: Object[] = [];
-  public pageSettings?: Object = { pageSize: 50 };
-  public immutableStart?: number;
-  public normalStart?: number;
-  public primaryKey?: number = 0;
-  @ViewChild("immutable")
-  public immutablegrid?: GridComponent;
-  @ViewChild("normal")
-  public normalgrid?: GridComponent;
-  @ViewChild("addtop")
-  public addtop?: ButtonComponent;
-  @ViewChild("addbottom")
-  public addbottom?: ButtonComponent;
-  @ViewChild("delete")
-  public delete?: ButtonComponent;
-  @ViewChild("reverse")
-  public reverse?: ButtonComponent;
-  @ViewChild("paging")
-  public paging?: ButtonComponent;
-  public immutableInit?: boolean = true;
-  public init?: boolean = true;
-
-  ngOnInit(): void {
-    this.data = data;
-  }
-
-  immutableBeforeDataBound(args: any): void {
-    this.immutableStart = new Date().getTime();
-  }
-
-  immutableDataBound(args: any): void {
-    let val: number | string = this.immutableInit ? '' : new Date().getTime() - (this.immutableStart as number);
-    (document.getElementById("immutableDelete") as any).innerHTML =
-      "Immutable rendering Time: " + "<b>" + val + "</b>" + "<b>ms</b>";
-    this.immutableStart = 0; this.immutableInit = false;
-  }
-
-  normalBeforeDataBound(args: any): void {
-    this.normalStart = new Date().getTime();
-  }
-
-  normalDataBound(args: any): void {
-    let val: number | string  = this.init ? '' : new Date().getTime() - (this.normalStart as number);
-    (document.getElementById("normalDelete") as any).innerHTML =
-      "Normal rendering Time: " + "<b>" + val + "</b>" + "<b>ms</b>";
-    this.normalStart = 0; this.init = false;
-  }
-
-  addTopEvent(): void {
-    let addedRecords: object[] = [
-      { 'OrderID': ++(this.primaryKey as number), 'ProductName': 'Chai', 'ProductID': 'Sasquatch Ale', 'CustomerID': 'QUEDE', 'CustomerName': 'Yoshi Tannamuri' },
-      { 'OrderID': ++(this.primaryKey as number), 'ProductName': 'Georg Pipps', 'ProductID': 'Valkoinen suklaa', 'CustomerID': 'RATTC', 'CustomerName': 'Martín Sommer' },
-      { 'OrderID': ++(this.primaryKey as number), 'ProductName': 'Yoshi Tannamuri', 'ProductID': 'Gula Malacca', 'CustomerID': 'COMMI', 'CustomerName': 'Ann Devon' },
-      { 'OrderID': ++(this.primaryKey as number), 'ProductName': 'Palle Ibsen', 'ProductID': 'Rogede sild', 'CustomerID': 'RATTC', 'CustomerName': 'Paula Wilson' },
-      { 'OrderID': ++(this.primaryKey as number), 'ProductName': 'Francisco Chang', 'ProductID': 'Mascarpone Fabioli', 'CustomerID': 'ROMEY', 'CustomerName': 'Jose Pavarotti' }
-    ];
-    var aData = addedRecords.concat((this.immutablegrid as any).dataSource as object[]);
-    (this.normalgrid as any).setProperties({ dataSource: aData });
-    (this.immutablegrid as any).setProperties({ dataSource: aData });
-  }
-
-  addBottomEvent(): void {
-    let addedRecords: object[] = [
-      { 'OrderID': ++(this.primaryKey as number), 'ProductName': 'Chai', 'ProductID': 'Sasquatch Ale', 'CustomerID': 'QUEDE', 'CustomerName': 'Yoshi Tannamuri' },
-      { 'OrderID': ++(this.primaryKey as number), 'ProductName': 'Georg Pipps', 'ProductID': 'Valkoinen suklaa', 'CustomerID': 'RATTC', 'CustomerName': 'Martín Sommer' },
-      { 'OrderID': ++(this.primaryKey as number), 'ProductName': 'Yoshi Tannamuri', 'ProductID': 'Gula Malacca', 'CustomerID': 'COMMI', 'CustomerName': 'Ann Devon' },
-      { 'OrderID': ++(this.primaryKey as number), 'ProductName': 'Palle Ibsen', 'ProductID': 'Rogede sild', 'CustomerID': 'RATTC', 'CustomerName': 'Paula Wilson' },
-      { 'OrderID': ++(this.primaryKey as number), 'ProductName': 'Francisco Chang', 'ProductID': 'Mascarpone Fabioli', 'CustomerID': 'ROMEY', 'CustomerName': 'Jose Pavarotti' }
-    ]
-    let aData = addedRecords.concat((this.immutablegrid as any).dataSource as object[]);
-    (this.normalgrid as any).setProperties({ dataSource: aData });
-    (this.immutablegrid as any).setProperties({ dataSource: aData });
-  }
-
-  deleteEvent(): void {
-    ((this.immutablegrid as any).dataSource as object[]).splice(0, 5);
-    (this.normalgrid as any).setProperties({ dataSource: (this.immutablegrid as any).dataSource });
-    (this.immutablegrid as any).setProperties({ dataSource: (this.immutablegrid as any).dataSource });
-  }
-
-  sortEvent(): void {
-    let aData: object[] = ((this.immutablegrid as any).dataSource as object[]).reverse();
-    (this.normalgrid as any).setProperties({ dataSource: aData });
-    (this.immutablegrid as any).setProperties({ dataSource: aData });
-  }
-
-  pageEvent(): void {
-    let totalPage: number = ((this.immutablegrid as any).dataSource as object[]).length / (this.immutablegrid as any).pageSettings.pageSize;
-    let page: number = Math.floor(Math.random() * totalPage) + 1;
-    (this.normalgrid as any).setProperties({ pageSettings: { currentPage: page } });
-    (this.immutablegrid as any).setProperties({ pageSettings: { currentPage: page } });
-  }
+interface CustomRowDataBoundEventArgs extends RowDataBoundEventArgs {
+  column: {
+    field: string;
+  };
+  cell: HTMLElement;
+  data: DataType;
 }
 
+interface DataType {
+  OrderID: number;
+  CustomerID: string;
+  Freight: number;
+  ShipName: string;
+  ShipCity: string;
+  isNewlyAdded: boolean;
+}
 
+@Component({
+  selector: 'app-root',
+  template: `
+      <button  #addtop ejs-button class="e-control e-btn e-lib e-info" (click)="addTopEvent()">Add rows Data</button>
+      <button style="margin-left: 20px" #delete ejs-button class="e-control e-btn e-lib e-info" (click)="deleteEvent()">Delete 
+      rows</button>
+      <button style="margin-left: 20px" #addbottom ejs-button class="e-control e-btn e-lib e-info" (click)="updateEvent()">Update Freight Data</button>
+      <div id="message"> {{ message }}</div>
+      <div  style="padding-top: 20px">
+        <ejs-grid #immutable [dataSource]='rowData' [enableHover]="false" height='350' [enableImmutableMode]="true" allowPaging="true" [selectionSettings]="selectionOptions"
+          [pageSettings]="pageSettings"  (rowDataBound)="rowDataBound($event)" (queryCellInfo)="queryCellInfo($event)">
+          <e-columns>
+            <e-column field='OrderID' headerText='Order ID' isPrimaryKey="true" width='120'
+            textAlign='Right'></e-column>
+            <e-column field='CustomerID' headerText='Customer ID' width='120'></e-column>
+            <e-column field='Freight' headerText='Freight' width='120'></e-column>
+            <e-column field='ShipName' headerText='Ship Name' width='120'></e-column>
+          </e-columns>
+        </ejs-grid>
+      </div>`
+})
+export class AppComponent implements OnInit {
 
+  public pageSettings?: Object = { pageSize: 50 };
+  public rowData?: DataType[];
+  @ViewChild("immutable")
+  public immutablegrid?: GridComponent;
+  public intervalId: NodeJS.Timeout;
+  public selectionOptions?: SelectionSettingsModel;
+  public message: string = '';
+
+  ngOnInit(): void {
+    this.rowData = data as DataType[];
+    this.selectionOptions = { type: 'Multiple' };
+    this.message = `Initial rows rendered: ${this.rowData.length}`;
+  }
+
+  queryCellInfo(args: CustomRowDataBoundEventArgs): void {
+    if (args.column.field === 'ShipName' && args.data.ShipName === "Gems Chevalier") {
+      (args.cell as HTMLElement).style.backgroundColor = 'rgb(210, 226, 129)';
+    }
+  }
+  rowDataBound(args: RowDataBoundEventArgs): void {
+    (args.row as HTMLElement).style.backgroundColor = (args.data as DataType).isNewlyAdded ? '' : ' rgb(208, 255, 255)';
+  }
+  addTopEvent(): void {
+    // Set the background color of all rows to red
+    (this.immutablegrid as GridComponent).getAllDataRows().forEach(row => {
+      (row as HTMLElement).style.backgroundColor = "rgb(208, 255, 255)";
+    });
+    let count = 0;
+    if (count < 1) {
+      let newRowData: object[] = [];
+      let addedRecords: object = {
+        'OrderID': this.generateOrderId(),
+        'CustomerID': this.generateCustomerId(),
+        'ShipCity': this.generateShipCity(),
+        'Freight': this.generateFreight(),
+        'ShipName': this.generateShipName(),
+        'isNewlyAdded': true
+      };
+      newRowData.push(addedRecords);
+      this.rowData = ([...newRowData, ...this.rowData as DataType[]] as DataType[]);
+      count++;
+      this.message = `${count} rows rendered after performing the add action`;
+    }
+  }
+  deleteEvent(): void {
+    let count = 0;
+    if (count < 1 && (this.rowData as DataType[]).length > 0) {
+      this.rowData = (this.rowData as DataType[]).slice(1);
+      count++;
+      this.message = `${count} rows deleted after performing delete action`;
+    }
+  }
+  updateEvent(): void {
+    let count = 0;
+    let newRowData = (this.rowData as any).map((row: any) => {
+      if (row.ShipName === 'Bueno Foods') {
+        count++;
+        return { ...row, 'ShipName': "Gems Chevalier" };
+      } else {
+        return row;
+      }
+    });
+    this.rowData = newRowData;
+    this.message = ` ${count} rows updated after performing update action`;
+  }
+
+  generateOrderId(): number {
+    return Math.floor(10000 + Math.random() * 90000);
+  }
+
+  generateCustomerId(): string {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let result = '';
+    for (let i = 0; i < 5; i++) {
+      result += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return result;
+  }
+
+  generateShipCity(): string {
+    const cities = ['London', 'Paris', 'New York', 'Tokyo', 'Berlin'];
+    return cities[Math.floor(Math.random() * cities.length)];
+  }
+
+  generateFreight(): number {
+    const randomValue = Math.random() * 100;
+    return parseFloat(randomValue.toFixed(2));
+  }
+
+  generateShipName(): string {
+    const names = ['Que Delícia', 'Bueno Foods', 'Island Trading', 'Laughing Bacchus Winecellars'];
+    return names[Math.floor(Math.random() * names.length)];
+  }
+
+}

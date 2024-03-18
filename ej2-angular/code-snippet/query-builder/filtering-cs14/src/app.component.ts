@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
     public data?: Object[];
     public importRules?: RuleModel;
      @ViewChild('querybuilder')
-    public qryBldrObj?: QueryBuilderComponent;
+    public qryBldrObj?: any;
     ngOnInit(): void {
         this.data = hardwareData;
     }

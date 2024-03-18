@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting started with Angular Circular Chart 3D component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Circular Chart 3D component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular 3D Circular Chart component | Syncfusion
+description:  Checkout and learn about Getting started with Angular 3D Circular Chart component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Circular Chart 3D component
+# Getting started with Angular 3D Circular Chart component
 
-This section explains you the steps required to create a simple `Angular Circular Chart 3D` and demonstrate the basic usage of the Circular Chart 3D component in an Angular environment.
+This section explains you the steps required to create a simple `Angular 3D Circular Chart` and demonstrate the basic usage of the 3D Circular Chart component in an Angular environment.
 
 ## Setup angular environment
 
@@ -30,7 +30,7 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion Circular Chart 3D package
+## Installing Syncfusion 3D Circular Chart package
 
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
@@ -66,14 +66,14 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering Circular Chart 3D module
+## Registering 3D Circular Chart module
 
-Import Circular Chart 3D module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-charts` [src/app/app.module.ts].
+Import 3D Circular Chart module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-charts` [src/app/app.module.ts].
 
 ```typescript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-// import the CircularChart3DAllModule for the Circular Chart 3D component
+// import the CircularChart3DAllModule for the 3D Circular Chart component
 import { CircularChart3DAllModule } from '@syncfusion/ej2-angular-charts';
 import { AppComponent }  from './app.component';
 
@@ -94,7 +94,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-container',
-  // specifies the template string for the Circular Chart 3D component
+  // specifies the template string for the 3D Circular Chart component
   template: `<ejs-circularchart3d id='chart-container'></ejs-circularchart3d>`,
   encapsulation: ViewEncapsulation.None
 })

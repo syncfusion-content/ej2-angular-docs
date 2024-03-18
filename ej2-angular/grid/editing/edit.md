@@ -76,6 +76,9 @@ Here's an example that demonstrates how to disable editing for the column in the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs20/src/app.component.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/grid/edit-cs20/src/app.component.html %}
+{% endhighlight %}
 {% highlight ts tabtitle="app.module.ts" %}
 {% include code-snippet/grid/edit-cs20/src/app.module.ts %}
 {% endhighlight %}

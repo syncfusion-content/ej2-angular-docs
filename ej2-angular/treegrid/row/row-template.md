@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Row Template in Angular TreeGrid component
+# Row template in Angular TreeGrid component
 
 The row template feature in Tree Grid allows you to customize the appearance and layout of rows in the tree grid. This feature is useful when you want to display custom content, such as images, buttons, or other controls, within the rows.
 

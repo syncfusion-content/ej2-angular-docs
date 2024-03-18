@@ -42,5 +42,3 @@ closeBookmark() {
   viewer.bookmarkViewModule.closeBookmarkPane();
 }
 ```
-
-[View sample in GitHub]()

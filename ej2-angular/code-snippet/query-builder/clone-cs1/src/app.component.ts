@@ -27,7 +27,7 @@ QueryBuilderComponent.Inject(QueryLibrary);
 export class AppComponent implements OnInit {
     public data?: Object[];
     public importRules?: RuleModel;
-    public showButtons: Object = {ruleDelete: true, groupInsert: true, groupDelete: true, cloneGroup: true, cloneRule: true};
+    public showButtons: Object = {ruleDelete: true, groupInsert: true, groupDelete: true, cloneGroup: false, cloneRule: false};
      @ViewChild('querybuilder')
     public qryBldrObj?: QueryBuilderComponent;
     ngOnInit(): void {
