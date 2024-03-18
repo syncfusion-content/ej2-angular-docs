@@ -504,8 +504,8 @@ The Tree Grid provides several methods to retrieve row data and elements. This f
     ```
 ## See also 
 
-* [Render parent rows in collapsed state](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/)  
-* [Retain expanded and collapsed state](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/) 
-* [Persist expanded collapsed state on page refresh using localStorage](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/)
-* [Programmatically expand and collapse a row](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/)
-* [Expand and Collapse action events](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/)
+* [Render parent rows in collapsed state](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/tree-column#render-parent-rows-in-collapsed-state)  
+* [Retain expanded and collapsed state](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/tree-column#retain-expanded-and-collapsed-state) 
+* [Persist expanded collapsed state on page refresh using localStorage](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/tree-column#persist-expanded-and-collapsed-states-on-page-refresh-using-localstorage)
+* [Programmatically expand and collapse a row](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/tree-column#programmatically-expand-and-collapse-a-row)
+* [Expand and Collapse action events](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/tree-column#expand-and-collapse-action-events)

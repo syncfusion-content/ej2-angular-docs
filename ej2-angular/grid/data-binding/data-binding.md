@@ -10,11 +10,12 @@ domainurl: ##DomainURL##
 
 # Data binding in Angular Grid component
 
-The Grid uses **DataManager** which supports both RESTful JSON data services binding and local JavaScript object array binding.
+Data binding is a fundamental technique that empowers the Grid component to integrate data into its interface, enabling the creation of dynamic and interactive grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 
-The [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property can be assigned either with the instance of **DataManager** or JavaScript object array collection.
+The Syncfusion Grid utilizes the **DataManager**, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource), can be assigned to a DataManager instance or a collection of JavaScript object arrays.
 
 It supports two kinds of data binding methods:
+
 * Local data
 * Remote data
 
@@ -22,7 +23,7 @@ To learn about how to bind local, remote or observables data to Angular Grid, yo
 
 {% youtube "https://www.youtube.com/watch?v=Xkq1tXOXL7k" %}
 
-## Loading animation
+## Loading indicator
 
 The Syncfusion Angular Grid offers a loading animation feature, which makes it easy to identify when data is being loaded or refreshed. This feature provides a clear understanding of the grid's current state and actions, such as sorting, filtering, grouping, and more.
 
@@ -32,6 +33,7 @@ To achieve this, you can utilize the [loadingIndicator.indicatorType](https://ej
 * Shimmer
 
 The following example demonstrates how to set the `loadingIndicator.indicatorType` property based on changing the dropdown value using the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#change) event of the `DropDownList` component. The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method is used to apply the changes and display the updated loading indicator type. 
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -47,124 +49,147 @@ The following example demonstrates how to set the `loadingIndicator.indicatorTyp
   
 {% previewsample "page.domainurl/samples/grid/loading-indicator" %}
 
-## Sending additional parameters to the server
+## Refresh the datasource using property
 
-To add a custom parameter to the data request, use the **addParams** method of **Query** class. Assign the **Query** object with additional parameters to the grid [`query`](https://ej2.syncfusion.com/angular/documentation/api/grid/#query) property.
+Refreshing the data source in a Syncfusion Grid involves updating the data that the grid displays dynamically. This operation is essential when you need to reflect changes in the underlying data without reloading the entire page or component.
 
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { DataManager, ODataAdaptor, Query } from '@syncfusion/ej2-data';
+To achieve this, you can make use of the [datasource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property in conjunction with the [setProperties](https://ej2.syncfusion.com/angular/documentation/api/grid/#refresh) method. This ensures that the grid reflects the changes in the data source without requiring a complete page or component reload.
 
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [query]='query'>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
+For example, if you add or delete data source records, follow these steps:
 
-    public data: DataManager;
-    public query: Query;
-
-    ngOnInit(): void {
-        this.data = new DataManager({
-            url: 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders?$top=7',
-            adaptor: new ODataAdaptor()
-        });
-        this.query = new Query().addParams('ej2grid', 'true');
-    }
-}
-
-```
-
-> The parameters added using the [`query`](https://ej2.syncfusion.com/angular/documentation/api/grid/#query) property will be sent along with the data request for every grid action.
-
-## Handling HTTP error
-
-During server interaction from the grid, some server-side exceptions may occur, and you can acquire those error messages or exception details in client-side using the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionfailure) event.
-
-The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionfailure) Grid event contains the error details returned from the server.
+**Step 1**: Add/delete the datasource record by using the following code.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
-import { DataManager } from '@syncfusion/ej2-data';
-
-@Component({
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' (actionFailure)="onActionFailure($event)">
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
-                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-
-    public data: DataManager;
-
-    ngOnInit(): void {
-        this.data = new DataManager({
-            url: 'http://some.com/invalidUrl'
-        });
-    }
-
-    onActionFailure(e: Error): void {
-        alert('Server exception: 404 Not found');
-    }
-}
-
+this.grid.dataSource.unshift(data); // Add a new record.
+this.grid.dataSource.splice(selectedRow, 1); // Delete a record.
 ```
 
-> The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionfailure) event will be triggered not only for the server errors, but also when there is an exception while processing the grid actions.
-
-## Binding with ajax
-
-You can use Grid [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property to bind the datasource to Grid from external ajax request. In the below code we have fetched the datasource from the server with the help of ajax request and provided that to [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property by using **onSuccess** event of the ajax.
+**Step 2**:  Refresh the datasource after changes by invoking the `setProperties` method.
 
 ```typescript
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { Ajax } from '@syncfusion/ej2-base';
-
-@Component({
-  selector: 'app-root',
-  template: `<input type="button" id="btn" (click)="click()" value="Click"/>
-                <ejs-grid #Grid>
-                <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' textAlign='Right' width=120></e-column>
-                    <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=120></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' textAlign='Right' width=120></e-column>
-                </e-columns>
-                </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-  public data: object[];
-  @ViewChild('Grid') public grid: GridComponent;
-  ngOnInit(): void {
-  }
-  click() {
-    const grid = this.grid;  // Grid instance
-    const ajax = new Ajax('https://ej2services.syncfusion.com/production/web-services/api/Orders', 'GET');
-    ajax.send();
-    ajax.onSuccess = (data: string) => {
-       grid.dataSource = JSON.parse(data);
-    };
-  }
-}
+(this.grid as GridComponent).setProperties({ dataSource:  (this.grid as GridComponent).dataSource as object[] });
 
 ```
+The following example demonstrates adding a new record to the data source through an external button:
 
-> If you bind the dataSource from this way, then it acts like a local dataSource. So you cannot perform any server side crud actions.
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/change-headertext-cs2/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/change-headertext-cs2/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/change-headertext-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/change-headertext-cs2" %}
 
-## See Also
+## Dynamically change the datasource or columns or both
+
+The Grid component in Syncfusion allows dynamic modification of the data source, columns, or both . This feature is particularly valuable when you need to refresh the grid's content and structure without requiring a complete page reload.
+
+To achieve dynamic changes, you can utilize the [changeDataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#changedatasource) method. This method enables you to update the data source, columns, or both, based on your application's requirements. However, it is important to note that during the changing process for the data source and columns, the grid's existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset.The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
+
+**1. Change both data source and columns:**
+
+To modify both the existing columns and the data source, you need to pass the both arguments to the `changeDataSource` method. The following example demonstrates how to change both the data source and columns.
+
+You can assign a JavaScript object array to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property to bind local data to the grid. The code below provides an example of how to create a data source for the grid.
+
+```typescript
+    export let data: Object[] = [
+    {
+        OrderID: 10248, CustomerID: 'VINET', Freight: 32.38,
+        ShipCity: 'Reims'
+    },
+    {
+        OrderID: 10249, CustomerID: 'TOMSP', Freight: 11.61,
+        ShipCity: 'Münster'
+    },
+    {
+        OrderID: 10250, CustomerID: 'HANAR', Freight: 61.34,
+        ShipCity: 'Rio de Janeiro'
+    }];
+```
+
+The following code demonstrates how to create the [columns](https://ej2.syncfusion.com/angular/documentation/grid/columns/columns) for the grid, which are based on the provided grid data source.
+
+```typescript
+    public newColumn: ColumnModel[] = [
+        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 125 },
+        { field: 'CustomerID', headerText: 'Customer ID', width: 125 },
+    ];
+```
+
+The following code demonstrates updating the data source and columns defined above using the `changeDataSource` method.
+
+```typescript
+    this.gridInstance.changeDataSource(data, newColumn);
+```
+
+**2. Modify only the existing columns:**
+
+To modify the existing columns in a grid, you can either add or remove columns or change the entire set of columns using the [changeDataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#changedatasource) method. To use this method, you should set the first parameter to null and provide the new columns as the second parameter. However, please note that if a column field is not specified in the data source, its corresponding column values will be empty. The following example illustrates how to modify existing columns.
+
+The following code demonstrates how to add new columns with existing grid columns ('newColumn') by using `changeDataSource` method.
+
+```typescript
+    public newColumn1: ColumnModel[] = [
+        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 125 },
+        { field: 'ShipCity', headerText: 'ShipCity', width: 125 },
+    ];
+    let column: any = this.newColumn.push(...this.newColumn1);
+    this.gridInstance.changeDataSource(null, column);
+```
+
+**3. Modify only the data source:**
+
+You can change the entire data source in the grid using the `changeDataSource` method. To use this method, you should provide the data source as the first argument, and  the second argument which is optional can be used to specify new columns for the grid. If you are not specifying the columns, the grid will generate the columns automatically based on the data source. The following example demonstrates how to modify the data source.
+
+You can assign a JavaScript object array to the `dataSource` property to bind local data to the grid. The code below provides an example of how to create a new data source for the grid.
+
+```typescript
+     export let employeeData: Object[] = [
+    {
+        FirstName: 'Nancy', City: 'Seattle', Region: 'WA',
+        Country: 'USA'
+    },
+    {
+        FirstName: 'Andrew', City: 'London', Region: null,
+        Country: 'UK',
+    },
+    {
+        FirstName: 'Janet', City: 'Kirkland', Region: 'WA',
+        Country: 'USA'
+    }];
+```
+
+The following code demonstrates, how to use the `changeDataSource` method to bind the new **employeeData** to the grid.
+
+```typescript
+    this.gridInstance.changeDataSource(employeeData);
+```
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/data-datasource/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/grid/data-datasource/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/data-datasource/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/data-datasource" %}
+
+>* The Grid state persistence feature does not support the  `changeDataSource` method.
+>* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/grid/flexible-data) resource.
+
+## See also
 
 * [Binding a firebase data source to Grid using AngularFire2](https://www.syncfusion.com/blogs/post/binding-a-firebase-data-source-to-grid-using-angularfire2.aspx)
-* [How to bind SQL Server data in Angular DataGrid using SqlClient data provider](https://support.syncfusion.com/kb/article/11679/how-to-bind-sql-server-data-in-angular-datagrid-using-sqlclient-data-provider)
+* [How to bind SQL Server data in Angular DataGrid using SqlClient data provider](https://www.syncfusion.com/kb/11453/how-to-bind-sql-server-data-in-angular-datagrid-using-sqlclient-data-provider)

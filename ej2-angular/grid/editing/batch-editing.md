@@ -52,7 +52,7 @@ In the following example, the **TotalCost** column value is updated based on cha
   
 {% previewsample "page.domainurl/samples/grid/edit-cs4" %}
 
-> * You can utilize the [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid/#updatecell) property to update cells in batch mode.
+> * You can utilize the [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid/#updatecell) method to update cells in batch mode.
 
 ## Cancel edit based on condition
 

@@ -51,7 +51,7 @@ In this demo, the custom element is rendered for both **taskName** and **duratio
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample " page.domainurl/samples/treegrid/columns-header-cs1" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-header-cs1" %}
 
 >* The `headerTemplate` property is only applicable to Tree Grid columns that have a header element.
 >* You can use any HTML or Angular component in the header template to add additional functionality to the header element.
@@ -74,7 +74,7 @@ You can customize the appearance of the stacked header elements by using the hea
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample " page.domainurl/samples/treegrid/columns-header-cs2" %}
+{% previewsample "page.domainurl/samples/treegrid/columns-header-cs2" %}
 
 ## Align the text of header text
 

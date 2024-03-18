@@ -40,8 +40,8 @@ export class AppComponent implements OnInit {
     public freightRules?: object;
     public strm?:string;
     public path: object = {
-        saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
-        removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove',
+        saveUrl: 'https://services.syncfusion.com/react/production/api/FileUploader/Save',
+        removeUrl: 'https://services.syncfusion.com/react/production/api/FileUploader/Remove'
     };
 
     ngOnInit(): void {
@@ -69,7 +69,6 @@ export class AppComponent implements OnInit {
     onUploadSuccess(args: SuccessEventArgs) {
         if (args.operation === 'upload') {
             const fileBlob = (args.file as FileInfo).rawFile as Blob;
-            console.log(fileBlob)
             const file = new File([fileBlob], (args.file as FileInfo).name);
             this.strm = this.getBase64(file);
         }

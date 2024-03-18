@@ -22,30 +22,7 @@
 </head>
 <body>
     <app-container>
-        <div class="col-lg-9 control-section">
-            <div class="content-wrapper">
-                <ejs-pdfviewer #pdfviewer id="pdfViewer" [documentPath]='document' [resourceUrl]='resource'
-                    (documentLoad)='documentLoaded($event)'
-                    (customContextMenuBeforeOpen)='customContextMenuBeforeOpen($event)'
-                    (customContextMenuSelect)='customContextMenuSelect($event)'
-                    style="height:640px;display:block"></ejs-pdfviewer>
-            </div>
-        </div>
-        <div class="col-lg-3 property-section">
-            <div class="header-pdfviewer">Properties</div>
-            <table id="property" title="Properties" class="left-side-property-pdfviewer">
-                <tr>
-                    <td class="left-side-pdfviewer">Hide Default Context Menu</td>
-                    <td><ejs-checkbox id="hide" #hide [checked]="false"
-                            (change)="contextmenuHelper($event)"></ejs-checkbox></td>
-                </tr>
-                <tr>
-                    <td class="left-side-pdfviewer">Add Custom option at bottom</td>
-                    <td><ejs-checkbox id="toolbar" #toolbar [checked]="false"
-                            (change)="contextmenuHelper($event)"></ejs-checkbox></td>
-                </tr>
-            </table>
-        </div>
+        <div id='loader'>Loading....</div>
     </app-container>
 </body>
 </html>

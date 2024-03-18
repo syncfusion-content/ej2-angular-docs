@@ -12,8 +12,8 @@ import { detach, L10n } from '@syncfusion/ej2-base';
 })
 export class AppComponent {
     public path: Object = {
-      saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
-      removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove' };
+      saveUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Save',
+      removeUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Remove' };
     ngOnInit() {
         L10n.load({
     "fr-CH": {
