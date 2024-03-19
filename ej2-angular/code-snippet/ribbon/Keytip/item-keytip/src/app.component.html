@@ -1,0 +1,81 @@
+<ejs-ribbon #ribbon id="ribbon" (created)="ribbonCreated()" [enableKeyTips]="true">
+    <e-ribbon-tabs>
+      <e-ribbon-tab header="Home" keyTip="H">
+        <e-ribbon-groups>
+          <e-ribbon-group header="Clipboard" groupIconCss="e-icons e-paste" keyTip="CD">
+            <e-ribbon-collections>
+              <e-ribbon-collection>
+                <e-ribbon-items>
+                  <e-ribbon-item type="SplitButton" [allowedSizes]="largeSize" keyTip="PA" [ribbonTooltipSettings]="pasteOptions" [splitButtonSettings]="pasteSettings">
+                  </e-ribbon-item>
+                </e-ribbon-items>
+              </e-ribbon-collection>
+              <e-ribbon-collection>
+                <e-ribbon-items>
+                  <e-ribbon-item type="Button" keyTip="CU" [buttonSettings]="cutButton">
+                  </e-ribbon-item>
+                  <e-ribbon-item type="Button" keyTip="CO" [buttonSettings]="copyButton">
+                  </e-ribbon-item>
+                  <e-ribbon-item type="Button" keyTip="CS" [buttonSettings]="formatButton">
+                  </e-ribbon-item>
+                </e-ribbon-items>
+              </e-ribbon-collection>
+            </e-ribbon-collections>
+          </e-ribbon-group>
+          <e-ribbon-group header="Font" orientation="Row" [enableGroupOverflow]="true" keyTip="FB" groupIconCss="e-icons e-bold" cssClass="font-group" >
+            <e-ribbon-collections>
+              <e-ribbon-collection>
+                <e-ribbon-items>
+                  <e-ribbon-item type="ComboBox" keyTip="01" [comboBoxSettings]="styleOptions" >
+                  </e-ribbon-item>
+                  <e-ribbon-item type="ComboBox" keyTip="02" [comboBoxSettings]="sizeOptions">
+                  </e-ribbon-item>
+                </e-ribbon-items>
+              </e-ribbon-collection>
+              <e-ribbon-collection>
+                <e-ribbon-items>
+                  <e-ribbon-item type="GroupButton" keyTip="GB" [groupButtonSettings]="groupButtonSingle"></e-ribbon-item>
+                  <e-ribbon-item type="ColorPicker" keyTip="CP" [colorPickerSettings]="colorPicker" >
+                  </e-ribbon-item>
+                </e-ribbon-items>
+              </e-ribbon-collection>
+            </e-ribbon-collections>
+          </e-ribbon-group>
+          <e-ribbon-group header="Gallery" groupIconCss="e-icons e-paste" [showLauncherIcon]=true>
+            <e-ribbon-collections>
+              <e-ribbon-collection>
+                <e-ribbon-items>
+                  <e-ribbon-item type="Gallery" keyTip="GY" [gallerySettings]="gallerySettings">
+                  </e-ribbon-item>
+                </e-ribbon-items>
+              </e-ribbon-collection>
+            </e-ribbon-collections>
+          </e-ribbon-group>
+          <e-ribbon-group header="Tables" groupIconCss="e-icons e-table">
+            <e-ribbon-collections>
+              <e-ribbon-collection>
+                <e-ribbon-items>
+                  <e-ribbon-item type="DropDown" keyTip="T" [allowedSizes]="largeSize" [dropDownSettings]="tableSettings">
+                  </e-ribbon-item>
+                </e-ribbon-items>
+              </e-ribbon-collection>
+            </e-ribbon-collections>
+          </e-ribbon-group>
+          <e-ribbon-group header="show" groupIconCss="e-icons e-copy">
+            <e-ribbon-collections>
+              <e-ribbon-collection>
+                <e-ribbon-items>
+                  <e-ribbon-item type="CheckBox" keyTip="R1" [checkBoxSettings]="rulerSettings">
+                  </e-ribbon-item>
+                  <e-ribbon-item type="CheckBox" keyTip="R2" [checkBoxSettings]="gridSettings">
+                  </e-ribbon-item>
+                  <e-ribbon-item type="CheckBox" keyTip="R3" [checkBoxSettings]="navigationSettings">
+                  </e-ribbon-item>
+                </e-ribbon-items>
+              </e-ribbon-collection>
+            </e-ribbon-collections>
+          </e-ribbon-group>
+        </e-ribbon-groups>
+      </e-ribbon-tab>
+    </e-ribbon-tabs>
+  </ejs-ribbon>

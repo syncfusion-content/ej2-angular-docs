@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { GridModule, EditService, PageService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { AppComponent } from './app.component';
+import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons';
 
 /**
  * Module
@@ -9,9 +10,11 @@ import { AppComponent } from './app.component';
 @NgModule({
     imports: [
         BrowserModule,
-        GridModule
+        GridModule,
+        ButtonAllModule
     ],
     declarations: [AppComponent],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
+    providers: [EditService, PageService, ToolbarService]
 })
 export class AppModule { }

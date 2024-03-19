@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Orientations in Angular Timeline component
 
-The Timeline component supports the display of items in both horizontal and vertical direction by using the `orientation` property.
+The Timeline component supports the display of items in both horizontal and vertical direction by using the [orientation](../api/timeline#orientation) property.
 
 ## Vertical
 
-You can display the items one below the other vertically by setting the `orientation` property to `Vertical`. By default, the items are displayed in vertical orientation.
+You can display the items one below the other vertically by setting the [orientation](../api/timeline#orientation) property to `Vertical`. By default, the items are displayed in vertical orientation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,7 +38,7 @@ You can display the items one below the other vertically by setting the `orienta
 
 ## Horizontal
 
-In horizontal orientation, the items are displayed in a side-by-side manner by setting the `orientation` property to `Horizontal`.
+In horizontal orientation, the items are displayed in a side-by-side manner by setting the [orientation](../api/timeline#orientation) property to `Horizontal`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

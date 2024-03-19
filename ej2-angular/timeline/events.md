@@ -14,7 +14,7 @@ This section describes the Timeline events that will be triggered when an approp
 
 ## created
 
-The Timeline component triggers the `created` event when the component rendering is completed.
+The Timeline component triggers the [created](../api/timeline#created) event when the component rendering is completed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,7 +38,7 @@ The Timeline component triggers the `created` event when the component rendering
 
 ## beforeItemRender
 
-The Timeline component triggers the `beforeItemRender` event before rendering each item.
+The Timeline component triggers the [beforeItemRender](../api/timeline#beforeitemrender) event before rendering each item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
