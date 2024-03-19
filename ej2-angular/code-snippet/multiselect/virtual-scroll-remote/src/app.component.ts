@@ -14,7 +14,7 @@ MultiSelectComponent.Inject(VirtualScroll);
 export class AppComponent {
     // bind the DataManager instance to dataSource property
     public customerData: DataManager = new DataManager({
-        url: 'https://services.syncfusion.com/js/production/api/orders',
+        url: 'https://services.syncfusion.com/angular/production/api/Employees',
         adaptor: new WebApiAdaptor,
         crossDomain: true
     });

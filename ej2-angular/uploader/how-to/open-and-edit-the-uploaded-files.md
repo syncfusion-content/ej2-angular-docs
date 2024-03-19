@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open and edit the uploaded files in Angular Uploader component | Syncfusion
+title: Edit the uploaded files in Angular Uploader component | Syncfusion
 description: Learn here all about Open and edit the uploaded files in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Open and edit the uploaded files 
@@ -25,8 +25,8 @@ import { EmitType } from '@syncfusion/ej2-base';
 export class AppComponent {
 
    public path: Object = {
-       saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
-       removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove'
+       saveUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Save',
+       removeUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Remove'
    };
     public onUploadSuccess: EmitType<Object> = (args: any) => {
         let liElements: any = document.body.querySelectorAll('.e-upload-file-list');
