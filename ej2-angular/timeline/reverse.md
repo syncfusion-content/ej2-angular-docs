@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Reverse in Angular Timeline component
 
-You can display the Timeline items in reverse order, for different alignments by using the `reverse` property which provides adaptability and improves user interaction.
+You can display the Timeline items in reverse order, for different alignments by using the [reverse](../api/timeline#reverse) property which provides adaptability and improves user interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

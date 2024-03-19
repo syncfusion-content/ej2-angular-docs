@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Template in Angular Timeline component
 
-The Timeline component allows you to customize the appearance for each item by using the `template` to modify the dot items, templated contents, progress bar styling and more.
+The Timeline component allows you to customize the appearance for each item by using the [template](../api/timeline#template) to modify the dot items, templated contents, progress bar styling and more.
 
 The `template` context receives the following information:
 

@@ -428,9 +428,9 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 
 #### Limitations for virtual scrolling
 
-* In virtual scrolling, the [`columnWidth`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/#columnwidth) property in [`gridSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings) should be in pixels, and percentage values are not accepted.
+* In virtual scrolling, the [columnWidth](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/#columnwidth) property in [gridSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings) should be in pixels, and percentage values are not accepted.
 * Resizing columns or setting width to individual columns affects the calculation used to pick the correct page on scrolling.
-* When using OLAP data, subtotals and grand totals are only displayed when measures are bound at the last position in the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows) or [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) axis. Otherwise, the data from the pivot table will be shown without summary totals.
+* When using OLAP data, subtotals and grand totals are only displayed when measures are bound at the last position in the [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#rows) or [`columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#columns) axis. Otherwise, the data from the pivot table will be shown without summary totals.
 * When the pivot table's width and height are large, the loading data count in the current, previous, and next viewports (pages) will also increase, affecting performance.
 
 ### Run the application

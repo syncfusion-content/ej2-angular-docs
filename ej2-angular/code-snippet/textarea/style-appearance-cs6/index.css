@@ -1,0 +1,48 @@
+#container {
+  visibility: hidden;
+}
+
+#loader {  
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.wrap {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px 10px;
+  width: 260px;
+}
+
+.textarea {
+  margin-top: 15px;
+}
+
+.e-float-input.e-success label.e-float-text{ /* csslint allow: adjoining-classes */
+  color: #22b24b;
+}
+
+.e-float-input.e-success input:focus ~ label.e-float-text{ /* csslint allow: adjoining-classes */
+color: #22b24b;
+}
+
+.e-float-input.e-success input:valid ~ label.e-float-text { /* csslint allow: adjoining-classes */
+color: #22b24b;
+}
+
+
+.e-float-input.e-warning label.e-float-text{ /* csslint allow: adjoining-classes */
+color: #ffca1c;
+}
+
+.e-float-input.e-warning input:focus ~ label.e-float-text{ /* csslint allow: adjoining-classes */
+color: #ffca1c;
+}
+
+.e-float-input.e-warning input:valid ~ label.e-float-text { /* csslint allow: adjoining-classes */
+color: #ffca1c;
+}

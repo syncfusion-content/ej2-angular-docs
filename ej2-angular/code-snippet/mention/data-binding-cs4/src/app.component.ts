@@ -15,7 +15,7 @@ import { Query, DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 export class AppComponent {
   constructor() {}
   public searchData: DataManager = new DataManager({
-    url: 'https://ej2services.syncfusion.com/production/web-services/api/Employees',
+    url: 'https://services.syncfusion.com/angular/production/api/Employees',
     adaptor: new WebApiAdaptor,
     crossDomain: true
 });
