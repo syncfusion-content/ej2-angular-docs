@@ -1,16 +1,15 @@
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
   GanttComponent,
   ToolbarItem,
-  PdfExportProperties,pdfQueryTaskbarInfoEventArgs
+  PdfExportProperties,
 } from '@syncfusion/ej2-angular-gantt';
-import { PdfColor } from '@syncfusion/ej2-pdf-export';
 import { base64Data, editingResources } from './data';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 @Component({
   selector: 'app-root',
-  template: `<ejs-gantt #ganttDefault id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [toolbar]="toolbar" [labelSettings]="labelSettings" (pdfQueryTaskbarInfo)="pdfQueryTaskbarInfo($event)"
+  template: `<ejs-gantt #ganttDefault id="ganttDefault" height="430px"  [dataSource]="data"  [taskFields]="taskSettings" [toolbar]="toolbar" [labelSettings]="labelSettings" (pdfQueryTaskbarInfo)="pdfQueryTaskbarInfo($event)"
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true' [allowResizing] = 'true' [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate"  [splitterSettings]="splitterSettings" [resourceFields]="resourceFields" [resources]="resources">
        <e-columns>
             <e-column field='TaskID' headerText='Task ID' textAlign='Left'></e-column>
@@ -98,7 +97,7 @@ export class AppComponent {
       this.ganttChart!.pdfExport(exportProperties);
     }
   }
-  public pdfQueryTaskbarInfo(args: pdfQueryTaskbarInfoEventArgs): void {
+  public pdfQueryTaskbarInfo(args: any): void {
     args.labelSettings.leftLabel.value = args.data.ganttProperties.taskName + '[' + args.data.ganttProperties.progress + ']';
     if (args.data.ganttProperties.resourceNames) {
         args.labelSettings.rightLabel.value = args.data.ganttProperties.resourceNames;

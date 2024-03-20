@@ -304,3 +304,5 @@ export class AppComponent {
 * [How to add confirm dialog to remove the files](./how-to/add-confirm-dialog-to-remove-the-files)
 * [Check the MIME type of file before uploading it](./how-to/check-the-mime-type-of-file-before-upload-it)
 * [How to open and edit the uploaded files](./how-to/open-and-edit-the-uploaded-files)
+
+N> [View Server Side Sample in GitHub](https://github.com/SyncfusionExamples/aspcore-uploader-webservices).

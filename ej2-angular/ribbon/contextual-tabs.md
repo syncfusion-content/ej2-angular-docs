@@ -18,7 +18,7 @@ You can utilize the [visible](https://ej2.syncfusion.com/angular/documentation/a
 
 ## Adding contextual tabs
 
-You can utilize the `e-ribbon-contextual-tab` tag directive to add contextual tabs in the Ribbon. This directive accepts multiple Ribbon tabs, where you can add multiple tabs based on your needs.
+You can utilize the `e-ribbon-contextual-tabs` tag directive to add contextual tabs in the Ribbon where you can add multiple tabs based on your needs.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

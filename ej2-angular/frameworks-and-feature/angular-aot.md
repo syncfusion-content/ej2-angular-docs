@@ -49,7 +49,7 @@ All [Syncfusion Angular components](https://www.npmjs.com/search?q=%40syncfusion
 
 To know more about AOT compilation with Ivy, refer to this [documentation](https://angular.io/guide/ivy).
 
-2. AOT compilation improves the initial rendering performance of the application. To achieve this performance improvement, build the application using the following command:
+2.AOT compilation improves the initial rendering performance of the application. To achieve this performance improvement, build the application using the following command:
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}
@@ -63,4 +63,4 @@ ng build –configuration=production
 
 * [Angular Ivy compiler](https://v12.angular.io/guide/ivy#aot-and-ivy)
 
-* [Angular Tree Shaking](./tree-shaking.md)
+* [Angular Tree Shaking](./tree-shaking)
