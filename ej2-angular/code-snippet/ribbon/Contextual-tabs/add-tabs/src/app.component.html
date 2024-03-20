@@ -1,0 +1,61 @@
+<ejs-ribbon id="ribbon">
+    <e-ribbon-contextual-tabs>
+        <e-ribbon-contextual-tab [visible]="true">
+            <e-ribbon-tabs>
+                <e-ribbon-tab header="Shape Format">
+                    <e-ribbon-groups>
+                        <e-ribbon-group header="Text decoration" [showLauncherIcon]="true">
+                            <e-ribbon-collections>
+                                <e-ribbon-collection>
+                                    <e-ribbon-items>
+                                        <e-ribbon-item type="Button" [buttonSettings]="headerButton"> </e-ribbon-item>
+                                        <e-ribbon-item type="Button" [buttonSettings]="wrapButton"> </e-ribbon-item>
+                                        <e-ribbon-item type="Button" [buttonSettings]="annotationButton"> </e-ribbon-item>
+                                    </e-ribbon-items>
+                                </e-ribbon-collection>
+                            </e-ribbon-collections>
+                        </e-ribbon-group>
+                        <e-ribbon-group header="Accessibility">
+                            <e-ribbon-collections>
+                                <e-ribbon-collection>
+                                    <e-ribbon-items>
+                                        <e-ribbon-item type="Button" [buttonSettings]="altButton"> </e-ribbon-item>
+                                    </e-ribbon-items>
+                                </e-ribbon-collection>
+                            </e-ribbon-collections>
+                        </e-ribbon-group>
+                        <e-ribbon-group header="Arrange" [showLauncherIcon]="true">
+                            <e-ribbon-collections>
+                                <e-ribbon-collection>
+                                    <e-ribbon-items>
+                                        <e-ribbon-item type="Button" [buttonSettings]="forwardButton"> </e-ribbon-item>
+                                        <e-ribbon-item type="Button" [buttonSettings]="backwardButton"> </e-ribbon-item>
+                                        <e-ribbon-item type="Button" [buttonSettings]="selectionButton"> </e-ribbon-item>
+                                    </e-ribbon-items>
+                                </e-ribbon-collection>
+                            </e-ribbon-collections>
+                        </e-ribbon-group>
+                    </e-ribbon-groups>
+                </e-ribbon-tab>
+            </e-ribbon-tabs>
+        </e-ribbon-contextual-tab>
+    </e-ribbon-contextual-tabs>
+
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard" groupIconCss="e-icons e-paste">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button" [buttonSettings]="cutButton"> </e-ribbon-item>
+                                <e-ribbon-item type="Button" [buttonSettings]="copyButton"> </e-ribbon-item>
+                                <e-ribbon-item type="Button" [buttonSettings]="formatButton"> </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>
