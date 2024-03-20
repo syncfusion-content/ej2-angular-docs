@@ -171,6 +171,22 @@ The following code illustrates how to customize the appearance of the shape.
   
 {% previewsample "page.domainurl/samples/diagram/nodes/appear-cs1" %}
 
+## Customize the style of main node on multi-selection.
+
+The style of the main node can be customized by using the className `e-diagram-first-selection-indicator`.
+
+Use the following CSS to customize the style of main node on multiple selection.
+
+```css
+
+ .e-diagram-first-selection-indicator{
+   stroke-width: 5px;
+   stroke: red;
+   stroke-dasharray: 1,1;
+  } 
+
+```
+
 ## Gradient
 
 The [`gradient`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#gradient-gradientmodel) property of the node allows you to define and apply the gradient effect to that node.

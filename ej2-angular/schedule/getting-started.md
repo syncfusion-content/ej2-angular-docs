@@ -223,7 +223,7 @@ export class AppComponent {
 }
 ```
 
-The other fields available in Scheduler can be referred from [here](./appointments#appointment-fields).
+The other fields available in Scheduler can be referred from [here](./appointments#event-fields).
 
 ## Setting date
 
