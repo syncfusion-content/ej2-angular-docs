@@ -4,7 +4,7 @@ import { CircularChart3DComponent } from '@syncfusion/ej2-angular-charts';
 @Component({
   selector: 'app-container',
   template: `<button id='export' (click)='export()'>Export</button>
-  <ejs-circularchart3d #chart style='display:block;' align='center' [tilt]='tilt' [legendSettings]="legendSettings">
+  <ejs-circularchart3d #chart style='display:block;' align='center' [tilt]='tilt' [legendSettings]="legendSettings" [enableExport]='enableExport'>
     <e-circularchart3d-series-collection>
     <e-circularchart3d-series [dataSource]='dataSource' xName='x' yName='y' [radius]='radius'>
     </e-circularchart3d-series></e-circularchart3d-series-collection>
@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
   public legendSettings?: Object;
   public tilt?: number;
   public radius?: string;
+  public enableExport?: boolean;
 
   @ViewChild('chart')
   public chartObj?: CircularChart3DComponent;
@@ -32,8 +33,9 @@ export class AppComponent implements OnInit {
     this.legendSettings = { visible: false };
     this.tilt = -45;
     this.radius = '100%';
+    this.enableExport = true;
   }
   export() {
-    this.chartObj?.export('PDF', 'circular3DChart')
+    this.chartObj?.circularChartExport3DModule.export('PDF', 'circular3DChart')
 }
 }
