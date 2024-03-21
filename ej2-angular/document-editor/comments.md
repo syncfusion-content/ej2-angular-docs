@@ -90,3 +90,50 @@ Comment only protection can be enabled in UI by using [Restrict Editing pane](..
 ![Enable comment only protection](images/commentsonly.png)
 
 >Note: In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.
+
+## Mention support in Comments
+
+Mention support displays a list of items that users can select or tag from the suggested list. To use this feature, type the @ character in the comment box and select or tag the user from the suggestion list.
+
+The following example illustrates how to enable mention support in the Document Editor
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { ToolbarService , DocumentEditorSettingsModel } from '@syncfusion/ej2-angular-documenteditor';
+@Component({
+      selector: 'app-root',
+      // specifies the template string for the DocumentEditorContainer component
+      template: `<ejs-documenteditorcontainer serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [documentEditorSettings]= "settings" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
+      providers: [ToolbarService]
+})
+export class AppComponent implements OnInit {
+    public mentionData: any = [
+        { "Name": "Selma Rose", "Eimg": "3", "EmailId": "selma@mycompany.com" },
+        { "Name": "Russo Kay", "Eimg": "8", "EmailId": "russo@mycompany.com" },
+        { "Name": "Camden Kate", "Eimg": "9", "EmailId": "camden@mycompany.com" },
+        { "Name": "Mary Kate", "Eimg": "4", "EmailId": "marry@mycompany.com" },
+        { "Name": "Ursula Ann", "Eimg": "2", "EmailId": "ursula@mycompany.com" },
+        { "Name": "Margaret", "Eimg": "5", "EmailId": "margaret@mycompany.com" },
+        { "Name": "Laura Grace", "Eimg": "6", "EmailId": "laura@mycompany.com" },
+        { "Name": "Robert", "Eimg": "8", "EmailId": "robert@mycompany.com" },
+        { "Name": "Albert", "Eimg": "9", "EmailId": "albert@mycompany.com" },
+        { "Name": "Michale", "Eimg": "10", "EmailId": "michale@mycompany.com" },
+        { "Name": "Andrew James", "Eimg": "7", "EmailId": "james@mycompany.com" },
+        { "Name": "Rosalie", "Eimg": "4", "EmailId": "rosalie@mycompany.com" },
+        { "Name": "Stella Ruth", "Eimg": "2", "EmailId": "stella@mycompany.com" },
+        { "Name": "Richard Rose", "Eimg": "10", "EmailId": "richard@mycompany.com" },
+        { "Name": "Gabrielle", "Eimg": "3", "EmailId": "gabrielle@mycompany.com" },
+        { "Name": "Thomas", "Eimg": "7", "EmailId": "thomas@mycompany.com" },
+        { "Name": "Charles Danny", "Eimg": "8", "EmailId": "charles@mycompany.com" },
+        { "Name": "Daniel", "Eimg": "10", "EmailId": "daniel@mycompany.com" },
+        { "Name": "Matthew", "Eimg": "7", "EmailId": "matthew@mycompany.com" },
+        { "Name": "Donald Krish", "Eimg": "9", "EmailId": "donald@mycompany.com" },
+        { "Name": "Yohana", "Eimg": "1", "EmailId": "yohana@mycompany.com" },
+        { "Name": "Kevin Paul", "Eimg": "10", "EmailId": "kevin@mycompany.com" },
+        { "Name": "Andrew Fuller", "Eimg": "3", "EmailId": "andrew@mycompany.com"}
+    ];
+    public settings: DocumentEditorSettingsModel = { mentionSettings : { dataSource: this.mentionData, fields: { text: 'Name' }}  };
+    ngOnInit(): void {
+    }
+}
+```

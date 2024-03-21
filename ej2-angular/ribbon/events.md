@@ -1915,3 +1915,317 @@ export class AppComponent {
     }];
 }
 ```
+
+## Gallery events
+
+### popupOpen
+
+The [popupOpen](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGallerySettings/#popupopen) event is triggered when the gallery popup opens.
+
+```javascript
+import { Component } from "@angular/core";
+import {RibbonGallerySettingsModel, GalleryPopupEventArgs } from "@syncfusion/ej2-angular-ribbon";
+@Component({
+  selector: "app-root",
+  template: `<!-- To Render Ribbon. -->
+    <ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups> 
+                <e-ribbon-group header="Gallery" >
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery" [gallerySettings]="gallerySettings">
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>`,
+})
+export class AppComponent {
+  public gallerySettings: RibbonGallerySettingsModel = {
+    groups: [{
+      header: 'Styles',
+      items: [
+          {
+              content: 'Normal'
+          }, {
+              content: 'No Spacing'
+          }, {
+              content: 'Heading 1'
+          }, {
+              content: 'Heading 2'
+          }
+        ]
+    }],
+    popupOpen: (args: GalleryPopupEventArgs) => {
+      // Your required action here
+    }
+  };
+}
+```
+
+### popupClose
+
+The [popupClose](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGallerySettings/#popupclose) event is triggered when the gallery popup closes.
+
+```javascript
+import { Component } from "@angular/core";
+import {RibbonGallerySettingsModel, GalleryPopupEventArgs } from "@syncfusion/ej2-angular-ribbon";
+@Component({
+  selector: "app-root",
+  template: `<!-- To Render Ribbon. -->
+    <ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups> 
+                <e-ribbon-group header="Gallery" >
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery" [gallerySettings]="gallerySettings">
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>`,
+})
+export class AppComponent {
+  public gallerySettings: RibbonGallerySettingsModel = {
+    groups: [{
+      header: 'Styles',
+      items: [
+          {
+              content: 'Normal'
+          }, {
+              content: 'No Spacing'
+          }, {
+              content: 'Heading 1'
+          }, {
+              content: 'Heading 2'
+          }
+        ]
+    }],
+    popupClose: (args: GalleryPopupEventArgs) => {
+      // Your required action here
+    }
+  };
+}
+```
+
+### itemHover
+
+The [itemHover](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGallerySettings/#itemhover) event is triggered when hover over the gallery item.
+
+```javascript
+import { Component } from "@angular/core";
+import {RibbonGallerySettingsModel, GalleryHoverEventArgs } from "@syncfusion/ej2-angular-ribbon";
+@Component({
+  selector: "app-root",
+  template: `<!-- To Render Ribbon. -->
+    <ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups> 
+                <e-ribbon-group header="Gallery" >
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery" [gallerySettings]="gallerySettings">
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>`,
+})
+export class AppComponent {
+  public gallerySettings: RibbonGallerySettingsModel = {
+    groups: [{
+      header: 'Styles',
+      items: [
+          {
+              content: 'Normal'
+          }, {
+              content: 'No Spacing'
+          }, {
+              content: 'Heading 1'
+          }, {
+              content: 'Heading 2'
+          }
+        ]
+    }],
+    itemHover: (args: GalleryHoverEventArgs) => {
+      // Your required action here
+    }
+  };
+}
+```
+
+### beforeItemRender
+
+The [beforeItemRender](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGallerySettings/#beforeitemrender) event is triggered while rendering each gallery item.
+
+```javascript
+import { Component } from "@angular/core";
+import {RibbonGallerySettingsModel, GalleryItemEventArgs } from "@syncfusion/ej2-angular-ribbon";
+@Component({
+  selector: "app-root",
+  template: `<!-- To Render Ribbon. -->
+    <ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups> 
+                <e-ribbon-group header="Gallery" >
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery" [gallerySettings]="gallerySettings">
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>`,
+})
+export class AppComponent {
+  public gallerySettings: RibbonGallerySettingsModel = {
+    groups: [{
+      header: 'Styles',
+      items: [
+          {
+              content: 'Normal'
+          }, {
+              content: 'No Spacing'
+          }, {
+              content: 'Heading 1'
+          }, {
+              content: 'Heading 2'
+          }
+        ]
+    }],
+    beforeItemRender: (args: GalleryItemEventArgs) => {
+      // Your required action here
+    }
+  };
+}
+```
+
+### beforeSelect
+
+The [beforeSelect](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGallerySettings/#beforeselect) event is triggered before selecting an item in the Ribbon gallery.
+
+```javascript
+import { Component } from "@angular/core";
+import {RibbonGallerySettingsModel, GalleryBeforeSelectEventArgs } from "@syncfusion/ej2-angular-ribbon";
+@Component({
+  selector: "app-root",
+  template: `<!-- To Render Ribbon. -->
+    <ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups> 
+                <e-ribbon-group header="Gallery" >
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery" [gallerySettings]="gallerySettings">
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>`,
+})
+export class AppComponent {
+  public gallerySettings: RibbonGallerySettingsModel = {
+    groups: [{
+      header: 'Styles',
+      items: [
+          {
+              content: 'Normal'
+          }, {
+              content: 'No Spacing'
+          }, {
+              content: 'Heading 1'
+          }, {
+              content: 'Heading 2'
+          }
+        ]
+    }],
+    beforeSelect: (args: GalleryBeforeSelectEventArgs) => {
+      // Your required action here
+    }
+  };
+}
+```
+
+### select
+
+The [select](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGallerySettings/#select) event is triggered while selecting an item in the Ribbon Gallery.
+
+```javascript
+import { Component } from "@angular/core";
+import {RibbonGallerySettingsModel, GallerySelectEventArgs } from "@syncfusion/ej2-angular-ribbon";
+@Component({
+  selector: "app-root",
+  template: `<!-- To Render Ribbon. -->
+    <ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups> 
+                <e-ribbon-group header="Gallery" >
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Gallery" [gallerySettings]="gallerySettings">
+                                </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+</ejs-ribbon>`,
+})
+export class AppComponent {
+  public gallerySettings: RibbonGallerySettingsModel = {
+    groups: [{
+      header: 'Styles',
+      items: [
+          {
+              content: 'Normal'
+          }, {
+              content: 'No Spacing'
+          }, {
+              content: 'Heading 1'
+          }, {
+              content: 'Heading 2'
+          }
+        ]
+    }],
+    select: (args: GallerySelectEventArgs) => {
+      // Your required action here
+    }
+  };
+}
+```

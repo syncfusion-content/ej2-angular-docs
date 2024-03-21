@@ -1,0 +1,19 @@
+.e-ribbon-gallery-item {
+    margin: 5px;
+}
+.e-ribbon-gallery-item.normal{
+    background: #f0f0f0;
+    color: #333;
+}
+.e-ribbon-gallery-item.bad {
+    background: #ffb6b6;
+    color: #800000;
+}
+.e-ribbon-gallery-item.good {
+    background: #c7ebc9;
+    color: #004d00;
+}
+.e-ribbon-gallery-item.neutral {
+    background: #eedd9d;
+    color: #6c5429;
+}
