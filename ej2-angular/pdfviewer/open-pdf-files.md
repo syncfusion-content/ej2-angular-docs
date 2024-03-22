@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Open PDF files
+# Open PDF files in Angular PDF Viewer component
 
 You might need to open and view the PDF files from various location. In this section, you can find the information about how to open PDF files from URL, database, local file system, and as base64 string.
 
@@ -107,7 +107,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   }
 ```
 
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Save%20and%20Load/Load%20PDF%20file%20from%20URL)
 
 ## Opening a PDF from base64 data
 
@@ -133,4 +133,4 @@ load() {
 }
 ```
 
-[View sample in GitHub]()
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Save%20and%20Load/Load%20PDF%20file%20from%20base64%20string)

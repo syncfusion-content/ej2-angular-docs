@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ViewChild } from "@angular/core";
 import { RibbonButtonSettingsModel, DisplayMode } from '@syncfusion/ej2-angular-ribbon';
 
 @Component({
