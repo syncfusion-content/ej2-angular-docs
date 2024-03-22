@@ -8,23 +8,21 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# About Material 3 Theme
+# Material 3 Theme with CSS Variables
 
-Material 3 is an updated theme that encompasses enhanced theming, components, and personalization features, including dynamic color capabilities. It has been specifically designed to align seamlessly with the new visual style and system UI introduced in Android 12 and above. For more detailed information, please refer to the following link: [ Link to Material 3 Information](https://m3.material.io/).
+[Material 3](https://m3.material.io/) is the latest version of Google's open-source design system, Material Design. It's the successor to [Material 2](https://m2.material.io/), which is a popular design system used in many apps. It has been specifically designed to align seamlessly with the new visual style and system UI introduced in Android 12 and above.
 
-## Syncfusion Material 3 Theme
+[CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), also known as custom properties, are entities defined by CSS authors that contain specific values that can be reused throughout a CSS file. They are identified by their name, which must begin with two hyphens (--) followed by an identifier. These variables can be assigned any valid CSS value, such as colors, lengths, or fonts. To retrieve the value of a CSS variable, the var() function is used.
 
-Syncfusion has introduced the Material theme across all EJ2 Controls. The theme includes light and dark variants and utilizes CSS variables for easy customization of control colors in CSS format. This implementation enables seamless switching between light and dark color schemes, offering users a flexible solution to suit their preferences and application needs.
+## Material 3 - Syncfusion Angular Components
 
-> Note: Please be aware that in the Material 3 theme, we utilize CSS variables with rgb() values for our color variables. Using hex values in this context may lead to improper functionality. For example, in previous versions of our Material theme or other themes, the primary color variable was defined as follows: `$primary: #6200ee;`. In the Material 3 theme, the primary color variable is defined as follows: `--color-sf-primary: 98, 0, 238;`.
+Syncfusion has introduced the Material 3 theme across all EJ2 Components, featuring both `light` and `dark` variants. This theme utilizes `CSS variables` to allow easy customization of Component colors in CSS format. With this implementation, users can seamlessly switch between light and dark color schemes, providing a flexible solution to meet their preferences and application needs.
 
-## What are CSS Variables?
+> Kindly note that in the Material 3 theme, Syncfusion utilizes CSS variables with rgb() values for color variables. The use of hex values in this context may lead to improper functionality. For example, in previous versions of the Material theme or other themes, the primary color variable was defined as follows: $primary: #6200ee;. However, in the Material 3 theme, the primary color variable is defined as follows: --color-sf-primary: 98, 0, 238;.
 
-CSS variables, also known as custom properties, are a powerful feature in CSS that allows you to define reusable values and apply them throughout your stylesheets. Prefixed with "--," CSS variables can be utilized in any property value within a CSS rule. To retrieve the value of a CSS variable, the var() function is used. CSS variables can access the Document Object Model (DOM), enabling the creation of variables with either local or global scope. For further details, please consult the following link: [Link to CSS Variables Information](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties).
+### How does Syncfusion Material 3 theme utilize CSS Variables?
 
-### How does Syncfusion Theming utilize CSS Variables?
-
-The Material 3 theme in our system incorporates CSS variable support, utilizing CSS variables with rgb() values for color customization.
+Syncfusion's Material 3 theme incorporates support for CSS variables, utilizing rgb() values for customizing colors. For more information you can refer this [documentation](./theme#syncfusion-material-3-theme) for color variables of material 3 theme.
 
 ```CSS
 :root {
@@ -47,9 +45,39 @@ The Material 3 theme in our system incorporates CSS variable support, utilizing 
 }
 ```
 
-### Exploring Color Customization
+### How to get the Material 3 theme?
 
-Through the utilization of these CSS variables, customization of the color variables becomes remarkably straightforward. For example, to customize the primary color variable in this theme, simply modify its value in the root values.
+To access the Material 3 theme provided by Syncfusion, you have two primary options,
+
+* Package
+* CDN links
+
+|    |  Light  |  Dark  |
+|-----------|---------|--------|
+|Package  | [Material 3 Light](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) | [Material 3 Dark](https://www.npmjs.com/package/@syncfusion/ej2-material3-dark-theme) |
+| CDN  |  [Material 3 Light](https://cdn.syncfusion.com/ej2/24.2.8/material3.css)  |  [Material 3 Dark](https://cdn.syncfusion.com/ej2/24.2.8/material3-dark.css)  |
+
+### Color Customization in Material 3
+
+CSS variables allows you to dynamically change color values in real-time using JavaScript. This flexibility enables you to create interactive experiences where colors can adjust based on user interactions or other dynamic factors.
+
+#### Customization using CSS
+
+Here you can find the example for Material 3 customization using Css class.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/common/material3-cs2/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/common/material3-cs2/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/common/material3-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/common/material3-cs2" %}
 
 **Default primary value**
 
@@ -59,13 +87,11 @@ Through the utilization of these CSS variables, customization of the color varia
 
 ![customized primary value](images/material3-customize.PNG)
 
-With this CSS variable support, you can effortlessly customize the color variable values for our EJ2 controls.
+With this CSS variable support, you can effortlessly customize the color variable values for Syncfusion Angular Components.
 
-## Dark mode support
+### Material 3 Light Theme
 
-The controls in our system now seamlessly transition between light and dark modes without any noticeable delay. This achievement was made by consolidating the configurations of the light theme and dark theme into [material 3 light theme](https://unpkg.com/@syncfusion/ej2@22.1.34/material3.css) file.
-
-![dark mode](images/material3.gif)
+Syncfusion has implemented the Material 3 theme, offering both Light and Dark variants. In the Material 3 light theme, there are distinct class variables for both light and dark modes, providing flexibility for seamless switching between the two modes within your application.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -81,36 +107,13 @@ The controls in our system now seamlessly transition between light and dark mode
 
 {% previewsample "page.domainurl/samples/common/material3-cs1" %}
 
-The above example demonstrates the appearance of an application in dark mode. By using CSS variable support, the transition between light and dark mode is smooth and visually pleasing.
+### How to switch dark mode?
 
-```CSS
-.e-dark-mode {
-  --color-sf-black: 0, 0, 0;
-  --color-sf-white: 255, 255, 255;
-  --color-sf-primary: 208, 188, 255;
-  --color-sf-primary-container: 79, 55, 139;
-  --color-sf-secondary: 204, 194, 220;
-  --color-sf-secondary-container: 74, 68, 88;
-  --color-sf-tertiary: 239, 184, 200;
-  --color-sf-tertiary-container: 99, 59, 72;
-  --color-sf-surface: 28, 27, 31;
-  --color-sf-surface-variant: 28, 27, 31;
-  --color-sf-background: var(--color-sf-surface);
-  --color-sf-on-primary: 55, 30, 115;
-  --color-sf-on-primary-container: 234, 221, 255;
-  --color-sf-on-secondary: 51, 45, 65;
-  --color-sf-on-secondary-container: 232, 222, 248;
-  --color-sf-on-tertiary: 73, 37, 50;
-}
-```
-
-### How to switch to dark mode
-
-With this CSS variable support, transitioning between light and dark theme modes has become effortless. To switch to dark mode, simply add the `e-dark-mode` class to the body section of your application. Upon adding this class, the theme will seamlessly switch to dark mode. Please refer to the example image below for guidance.
+With CSS variable support, transitioning between light and dark theme modes has become effortless. To activate dark mode, just append the `e-dark-mode` class to the body section of your application. Once applied, the theme seamlessly switches to dark mode. Please refer to the example image below for visual guidance.
 
 ![dark mode](images/material3-dark.PNG)
 
-## ThemeStudio application
+### ThemeStudio Application
 
 The ThemeStudio application now includes seamless integration with the Material 3 theme, offering a comprehensive solution for customization requirements. This enhancement enables users to effortlessly customize and personalize their themes.
 
