@@ -30,7 +30,10 @@ export class AppComponent implements OnInit {
           { x: 'Russia', y: 2 },
           { x: 'Miscellaneous', y: 1 }
         ];
-        this.legendSettings = { visible: false  };
+        this.legendSettings = { 
+          visible: true, 
+          reverse: true 
+        };
         this.title= 'Oil and other liquid imports in USA',
         this.subTitle = 'In the year 2014 - 2015',
         this.tilt = -45;

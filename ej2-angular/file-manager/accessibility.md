@@ -100,7 +100,7 @@ The File Manager component followed the `keyboard interaction` guidelines, makin
 | <kbd>Shift+F10</kbd> | Opens the context menu for the selected file or folder in the file manager element. |
 | <kbd>Ctrl+D</kbd> | Downloads the list of selected files or folders in the file manager element. |
 | <kbd>Ctrl+Shift+1</kbd> | Changes the file manager layout to details view. |
-| <kbd>Ctrl+Shift+2</kbd> | Changes the file manager layout to details view. |
+| <kbd>Ctrl+Shift+2</kbd> | Changes the file manager layout to large icons view. |
 
 ## Ensuring accessibility
 

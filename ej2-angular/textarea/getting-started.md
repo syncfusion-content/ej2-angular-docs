@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular TextArea component
+# Getting started with Angular TextArea Component
 
 This section briefly explains about how to create a simple TextArea component using Angular seed repository.
 
@@ -54,7 +54,7 @@ Navigate to the created project folder.
 cd syncfusion-angular-textarea
 ```
 
-## Installing Syncfusion TextArea Package
+## Installing syncfusion TextArea package
 
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 

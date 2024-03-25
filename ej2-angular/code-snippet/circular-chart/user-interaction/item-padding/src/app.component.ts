@@ -27,7 +27,12 @@ export class AppComponent implements OnInit {
       { x: 'Sep', y: 21 }, { x: 'Oct', y: 15 },
       { x: 'Nov', y: 15 }, { x: 'Dec', y: 15 }
     ];
-    this.legendSettings = { visible: false };
+    this.legendSettings = { 
+      width: '260px', 
+      height: '50px', 
+      position: 'Bottom', 
+      itemPadding: 30
+     };
     this.tilt = -45;
   }
 
