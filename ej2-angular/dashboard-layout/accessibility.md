@@ -22,8 +22,8 @@ The accessibility compliance for the Dashboard Layout component is outlined belo
 | Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Color Contrast | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Mobile Device Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| Keyboard Navigation Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
-| [Accessibility Checker](https://www.npmjs.com/package/accessibility-checker) Validation | <img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> |
+| Keyboard Navigation Support | Not applicable |
+| [Accessibility Checker](https://www.npmjs.com/package/accessibility-checker) Validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Axe-core](https://www.npmjs.com/package/axe-core) Accessibility Validation | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 
 <style>
@@ -47,7 +47,7 @@ The Dashboard Layout component followed the [WAI-ARIA](https://www.w3.org/WAI/AR
 | `role=list` | Indicates the role as a list for the Dashboard Layout element. |
 | `role=listitem` | Indicates the role as a listitem for the Dashboard panels. |
 | `role=presentation` | Indicates the role as a presentation for the table when the `showGridLines` property is enabled. |
-| `aria-grabbed` | When the panel is chosen for dragging, the aria-grabbed attribute is set to "true." If it's set to "false," the element can be grabbed for drag-and-drop, but it won't be actively held. |
+| `aria-grabbed` | When the panel is chosen for dragging, the aria-grabbed attribute is set to "true". If it's set to "false", the element can be grabbed for drag-and-drop, but it won't be actively held. |
 
 ## Keyboard interaction
 
