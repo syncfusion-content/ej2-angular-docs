@@ -21,9 +21,15 @@ export class AppComponent implements OnInit {
           { x: 'Apr', y: 13.5, text: 'Apr: 13.5' }];
         this.legendSettings = { visible: false };
         this.dataLabel = {
-            visible: true,
-            name: 'text',
-            position: 'Outside'
+          visible: true,
+          name: 'text',
+          position: 'Outside',
+          connectorStyle: {
+            length: '50px',
+            width: 2,                  
+            color: '#f4429e',
+            dashArray: '5,3'
+          }
         };
         this.tilt= -45
     }

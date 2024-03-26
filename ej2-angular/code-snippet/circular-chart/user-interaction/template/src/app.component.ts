@@ -1,30 +1,40 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { CircularChart3DComponent } from '@syncfusion/ej2-angular-charts';
 
 @Component({
-    selector: 'app-container',
-    template: `<ejs-circularchart3d style='display:block;' align='center' [tilt]='tilt' [legendSettings]="legendSettings">
+  selector: 'app-container',
+  template: `
+  <ejs-circularchart3d #chart style='display:block;' align='center' [tilt]='tilt' [legendSettings]="legendSettings" [tooltip]='tooltip'>
     <e-circularchart3d-series-collection>
-    <e-circularchart3d-series [dataSource]='dataSource' xName='x' yName='y' [innerRadius]='innerRadius'>
+    <e-circularchart3d-series [dataSource]='dataSource' xName='x' yName='y'>
     </e-circularchart3d-series></e-circularchart3d-series-collection>
     </ejs-circularchart3d>`
 })
-
 export class AppComponent implements OnInit {
-    public dataSource?: Object[];
-    public title?: string;
-    public legendSettings?: Object;
-    public innerRadius?: string;
-    public tilt?: number;
-    ngOnInit(): void {
-        this.dataSource = [
-            { x: 'Jan', y: 3 }, { x: 'Feb', y: 3.5 },
-            { x: 'Mar', y: 7 }, { x: 'Apr', y: 13.5 },
-            { x: 'May', y: 19 }, { x: 'Jun', y: 23.5 },
-            { x: 'Jul', y: 26 }, { x: 'Aug', y: 25 },
-            { x: 'Sep', y: 21 }, { x: 'Oct', y: 15 },
-            { x: 'Nov', y: 15 }, { x: 'Dec', y: 15 }];
-        this.innerRadius = '40%';
-        this.legendSettings = { visible: false };
-        this.tilt= -45
-    }
+  public dataSource?: Object[];
+  public title?: string;
+  public legendSettings?: Object;
+  public tilt?: number;
+  public tooltip?: object;
+
+  @ViewChild('chart')
+  public chartObj?: CircularChart3DComponent;
+
+  ngOnInit(): void {
+    this.dataSource = [
+      { x: 'Jan', y: 13 },
+      { x: 'Feb', y: 13 },
+      { x: 'Mar', y: 17 },
+      { x: 'Apr', y: 13.5 }
+    ];
+    this.legendSettings = { visible: false };
+    this.tooltip = { 
+        enable: true,
+        template:  "<div id='templateWrap' style='background-color:#bd18f9;border-radius: 3px; float: right;padding: 2px;line-height: 20px;text-align: center;'>"+
+        "<img src='https://ej2.syncfusion.com/demos/src/chart/images/sunny.png' />" +
+        "<div style='color:white; font-family:Roboto; font-style: medium; fontp-size:14px;float: right;padding: 2px;line-height: 20px;text-align: center;padding-right:6px'><span>${y}</span></div></div>"
+     }
+    this.tilt = -45;
+  }
+
 }

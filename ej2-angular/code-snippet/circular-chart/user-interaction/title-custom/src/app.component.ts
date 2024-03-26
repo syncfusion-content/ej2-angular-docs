@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
       fontStyle: 'italic',
       fontWeight: 'regular',
       color: "#E27F2D",
-      size: '13px'
+      size: '23px'
     };
   }
 

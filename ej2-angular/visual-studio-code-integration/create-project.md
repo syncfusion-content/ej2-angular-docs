@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create project in Angular Visual studio code integration component | Syncfusion
+title: Create project in Angular Visual studio code integration | Syncfusion
 description: Learn here all about Create project in Syncfusion Angular Visual studio code integration component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Create project 
@@ -27,15 +27,15 @@ The steps below help you to create **Syncfusion Web Applications** through the *
     ![ProjectLocation](images/ProjectLocationName.png)
 
 3. Click either **Next** or **Framework** tab, the Framework types will be appearing and choose any one of the Framework:
-   * React
    * Angular
+   * React
    * Vue
 
-      ![Framework](images/frameworktype.png)
+    ![Framework](images/framework.png)
 
-    If you choose the Vue framework, the **Select Vue Version** option will appear in the **Project Details** section. You can create the Vue application using either the Vue 3 or Vue 2 versions.
+    If you choose the Angular framework, it will appear in the **Project Details** section. You can then create the Angular application.
 
-    ![VueVersions](images/vue-versions.png)
+    ![Angular](images/frameworktype.png)
 
 4. Click either **Next** or the **Configuration** tab, and the Configuration section will be loaded. Choose the preferred theme and then click **Create**. The project will be created.
 

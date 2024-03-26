@@ -4,7 +4,7 @@ import { CircularChart3DComponent } from '@syncfusion/ej2-angular-charts';
 @Component({
     selector: 'app-container',
     template: `
-  <ejs-circularchart3d #chart style='display:block;' align='center' [title]='title' subTitle='subTitle' [tilt]='tilt' [legendSettings]="legendSettings">
+  <ejs-circularchart3d #chart style='display:block;' align='center' [title]='title' [subTitle]='subTitle' [tilt]='tilt' [legendSettings]="legendSettings">
     <e-circularchart3d-series-collection>
     <e-circularchart3d-series [dataSource]='dataSource' xName='x' yName='y' >
     </e-circularchart3d-series></e-circularchart3d-series-collection>
