@@ -5,7 +5,7 @@ import { sortData } from './datasource';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='315' [allowSorting]='true' childMapping='subtasks' >
+    template: `<ejs-treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' [allowMultiSorting]='true' [allowSorting]='true' childMapping='subtasks' >
                     <e-columns>
                         <e-column field='Category' headerText='Category' textAlign='Right' width=140></e-column>
                         <e-column field='orderName' headerText='Order Name' textAlign='Left' width=200></e-column>
@@ -16,11 +16,12 @@ import { sortData } from './datasource';
 })
 export class AppComponent implements OnInit {
 
-    public data?: object[];
+    public data?: Object[];
 
     ngOnInit(): void {
         this.data = sortData;
     }
 }
+
 
 
