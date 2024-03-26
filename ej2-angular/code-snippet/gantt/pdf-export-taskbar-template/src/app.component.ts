@@ -2,15 +2,14 @@ import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import {
   GanttComponent,
   ToolbarItem,
-  PdfExportProperties,pdfQueryTaskbarInfoEventArgs
+  PdfExportProperties
 } from '@syncfusion/ej2-angular-gantt';
-import { PdfColor } from '@syncfusion/ej2-pdf-export';
 import { editingResources, base64Data } from './data';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 @Component({
   selector: 'app-root',
-  template: `<ejs-gantt #ganttDefault id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [toolbar]="toolbar" [rowHeight]="45" [taskbarHeight]="35" (pdfQueryTaskbarInfo)="pdfQueryTaskbarInfo($event)"
+  template: `<ejs-gantt #ganttDefault id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [columns]="columns" [toolbar]="toolbar" [rowHeight]="45" [taskbarHeight]="35" (pdfQueryTaskbarInfo)="pdfQueryTaskbarInfo($event)"
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true' [allowResizing] = 'true'  [splitterSettings]="splitterSettings" [resourceFields]="resourceFields" [resources]="resources"  
        >
        <ng-template #taskbarTemplate let-data>
@@ -54,7 +53,7 @@ export class AppComponent {
   public toolbar?: ToolbarItem[];
   @ViewChild('ganttDefault', { static: true })
   public ganttChart?: GanttComponent;
-
+  columns: ({ field: string; headerText: string; textAlign: string; width: string; visible?: undefined; } | { field: string; headerText: string; width: string; visible: boolean; textAlign?: undefined; } | { field: string; headerText: string; width: string; textAlign?: undefined; visible?: undefined; })[] | undefined;
   public resourceFields?: object;
   public ngOnInit(): void {
     this.data = base64Data,
@@ -67,6 +66,10 @@ export class AppComponent {
         child: 'subtasks',
       };
     this.toolbar = ['PdfExport'];
+    this.columns =  [
+      { field: 'TaskID', headerText:  'Task ID', textAlign: 'Left', width: '100' },
+      { field: 'TaskName', headerText:  'Task Name', width: '150'},
+  ];
     this.splitterSettings = {
       columnIndex: 1,
     };
@@ -84,7 +87,7 @@ export class AppComponent {
       this.ganttChart!.pdfExport(exportProperties);
     }
   }
-  public pdfQueryTaskbarInfo(args: pdfQueryTaskbarInfoEventArgs): void {
+  public pdfQueryTaskbarInfo(args: any): void {
     if (!args.data.hasChildRecords) {
       if (args.data.ganttProperties.resourceNames) {
         args.taskbarTemplate.image = [{
