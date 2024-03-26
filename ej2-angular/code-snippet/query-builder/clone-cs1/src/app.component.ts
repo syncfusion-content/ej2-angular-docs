@@ -35,23 +35,23 @@ export class AppComponent implements OnInit {
         this.importRules = {
             'condition': 'and',
             'rules': [{
-                    'label': 'Employee ID',
-                    'field': 'EmployeeID',
+                    'label': 'Task ID',
+                    'field': 'TaskID',
                     'type': 'number',
                     'operator': 'equal',
                     'value': 1
                 },
                 {
-                    'label': 'Title',
-                    'field': 'Title',
+                    'label': 'Name',
+                    'field': 'Name',
                     'type': 'string',
                     'operator': 'equal',
                     'value': 'Sales Manager'
                 },
                 {
                     condition: "or", rules: [
-                        { 'label': 'Title',
-                        'field': 'Title',
+                        { 'label': 'Name',
+                        'field': 'Name',
                         'type': 'string',
                         'operator': 'equal',
                         'value': 'Engineer' }

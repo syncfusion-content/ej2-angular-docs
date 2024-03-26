@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Floating Label in Angular TextArea control
+# Floating Label in Angular TextArea Component
 
-The floating label functionality in the TextArea control allows the placeholder text to float above the TextArea while the user interacts with it, providing a more intuitive user experience. This feature can be achieved using the [floatLabelType](https://ej2.syncfusion.com/angular/documentation/api/textarea/#floatLabelType) API, which offers various options for defining the floating behavior:
+The floating label functionality in the TextArea component allows the placeholder text to float above the TextArea while the user interacts with it, providing a more intuitive user experience. This feature can be achieved using the [floatLabelType](https://ej2.syncfusion.com/angular/documentation/api/textarea/#floatLabelType) API, which offers various options for defining the floating behavior:
 
 | Type  | Description |
 | -- | -- |

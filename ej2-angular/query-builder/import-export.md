@@ -8,17 +8,21 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Import export in Angular Query builder component
+# Importing and Exporting in Angular Query builder component
 
-Importing allows you to view or edit the predefined conditions which is available in JSON or SQL. You can import the conditions either initial rendering or post rendering.
+Importing facilitates the viewing or editing of predefined conditions available in JSON, SQL, and MongoDB query formats, while exporting enables obtaining the created rules in the query builder as JSON, SQL, and MongoDB queries.
 
 ## Importing
 
-### Importing from JSON
+Importing enables users to bring predefined conditions into the system for viewing or editing, available in formats such as JSON, SQL, and MongoDB query. It facilitates the quick incorporation of pre-defined rules or parameters into workflows, streamlining the setup process by importing directly from external sources or saved configurations.
+
+### Importing from JSON Object
+
+Importing from JSON enables users to bring predefined conditions encoded in JSON format into the system. This feature streamlines the process by providing a standardized format for importing data, ensuring compatibility, and ease of use
 
 #### Initial rendering
 
-To apply conditions initially, you can define the [`rule`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#rule) Here, you can import structured JSON object by defining the [`rule`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#rule) property.
+To initially apply conditions, you can establish the [`rule`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#rule) by importing a structured JSON object and defining its properties.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -52,11 +56,13 @@ You can set the conditions from structured JSON object through the [`setRules`](
   
 {% previewsample "page.domainurl/samples/query-builder/filtering-cs9" %}
 
-### Importing from SQL
+### Importing from SQL Query
 
-#### Importing from Inline SQL
+Importing from SQL involves integrating predefined conditions or data stored in a SQL database into the Query Builder. This enables the direct integration of SQL queries, thereby improving workflow efficiency and data accuracy within the application. SQL importing supports various types, including Inline SQL, Parameter SQL, and Named Parameter SQL.
 
-You can set the conditions from Inline SQL query through the [`setRulesFromSql`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#setrulesfromsql) method.
+#### Importing from Inline SQL Query
+
+Importing from Inline SQL involves integrating SQL queries directly into the Query Builder. This method streamlines the process by enabling users to input SQL statements directly into the application for analysis, manipulation, or further processing within the Query Builder. Conditions can be set from Inline SQL queries using the [`setRulesFromSql`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#setrulesfromsql) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -72,9 +78,9 @@ You can set the conditions from Inline SQL query through the [`setRulesFromSql`]
   
 {% previewsample "page.domainurl/samples/query-builder/filtering-cs10" %}
 
-#### Importing from Parameter SQL
+#### Importing from Parameter SQL Query
 
-You can set the conditions from Parameter SQL query through the [`setParameterizedSql`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#setParameterizedSql) method.
+Importing from Parameter SQL involves integrating SQL queries with parameters directly into the Query Builder. This method allows users to input SQL statements containing parameters, which can be dynamically filled in during execution. It streamlines the process by enabling flexible and customizable querying within the application. Conditions can be set from Parameter SQL queries using the [`setParameterizedSql`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#setParameterizedSql) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -90,9 +96,9 @@ You can set the conditions from Parameter SQL query through the [`setParameteriz
   
 {% previewsample "page.domainurl/samples/query-builder/filtering-cs12" %}
 
-#### Importing from Named Parameter SQL
+#### Importing from Named Parameter SQL Query
 
-You can set the conditions from Named Parameter SQL query through the [`setParameterizedNamedSql`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#setParameterizedNamedSql) method.
+Importing from Named Parameter SQL involves integrating SQL queries with named parameters directly into the Query Builder. This method enables users to input SQL statements containing named parameters, providing flexibility and customization during execution. It streamlines the process by allowing dynamic parameter assignment within the application's query environment. Conditions can be set from Named Parameter SQL queries using the [`setParameterizedNamedSql`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#setParameterizedNamedSql) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -108,9 +114,9 @@ You can set the conditions from Named Parameter SQL query through the [`setParam
   
 {% previewsample "page.domainurl/samples/query-builder/filtering-cs13" %}
 
-### Importing from MongoDB
+### Importing from MongoDB Query
 
-You can set the conditions from MongoDB query through the [`setMongoQuery`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#setMongoQuery) method.
+Importing from MongoDB Query involves integrating MongoDB queries directly into the Query Builder. This enables users to input MongoDB query statements directly into the application, allowing for seamless integration and manipulation of MongoDB data within the Query Builder environment. It streamlines the process by facilitating direct access to MongoDB data for analysis, filtering, and further processing within the application. Conditions can be set from Named Parameter SQL queries using the [`setMongoQuery`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#setMongoQuery) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -128,17 +134,19 @@ You can set the conditions from MongoDB query through the [`setMongoQuery`](http
 
 ## Exporting
 
-Exporting allows you to save or maintain the created conditions through the Query Builder. You can export the defined conditions by the following ways.
+Exporting from the Query Builder allows users to preserve or store the created conditions. The defined conditions can be exported using various methods, including:
 
-### Exporting to JSON
+### Exporting to JSON Object
 
-You can export the defined conditions to structured JSON object through the [`getRules`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#getrules) method.
+You can extract the established conditions in the Query Builder and convert them into a structured JSON object format using the [`getRules`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#getrules) method. This process enables users to save or transfer the conditions for further use or analysis in other applications or systems that support JSON data.
 
-### Exporting to SQL
+### Exporting to SQL Query
 
-#### Exporting to Inline SQL
+Exporting to SQL involves converting the defined conditions within the Query Builder into SQL queries. This functionality allows users to generate SQL code representing the conditions set in the Query Builder, which can then be executed directly on a SQL database or used for further analysis and processing. SQL exporting supports various types, including Inline SQL, Parameter SQL, and Named Parameter SQL.
 
-You can export the defined conditions to Inline SQL query through the [`getSqlFromRules`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#getsqlfromrules) method.
+#### Exporting to Inline SQL Query
+
+Exporting to Inline SQL Query entails embedding the defined conditions from the Query Builder directly into SQL statements within the exported code. This method ensures that the conditions are seamlessly integrated into the SQL query syntax, enabling straightforward execution or further processing within SQL database systems. This can be achieved using the [`getSqlFromRules`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#getsqlfromrules) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -154,9 +162,9 @@ You can export the defined conditions to Inline SQL query through the [`getSqlFr
   
 {% previewsample "page.domainurl/samples/query-builder/export-cs1" %}
 
-#### Exporting to Parameter SQL
+#### Exporting to Parameter SQL Query
 
-You can export the defined conditions to Parameter SQL query through the [`getParameterizedSql`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#getParameterizedSql) method.
+Exporting to Parameter SQL involves incorporating the defined conditions from the Query Builder into SQL queries with parameters. This method allows for dynamic value assignment during execution, enhancing flexibility and adaptability in query processing within SQL database. This can be accomplished using the [`getParameterizedSql`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#getParameterizedSql) method for exporting to Parameter SQL query.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -172,9 +180,9 @@ You can export the defined conditions to Parameter SQL query through the [`getPa
   
 {% previewsample "page.domainurl/samples/query-builder/export-cs2" %}
 
-#### Exporting to Named Parameter SQL
+#### Exporting to Named Parameter SQL Query
 
-You can export the defined conditions to Named Parameter SQL query through the [`getParameterizedNamedSql`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#getParameterizedNamedSql) method.
+Exporting to Named Parameter SQL entails integrating the defined conditions from the Query Builder into SQL queries with named parameters. This method offers enhanced readability and flexibility during execution by using named placeholders for parameter values. Named Parameter SQL facilitates easier maintenance and modification of queries, making it convenient for dynamic parameter assignment within SQL database. This can be accomplished using the method [`getParameterizedNamedSql`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#getParameterizedNamedSql) for exporting to Named Parameter SQL query.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -190,9 +198,9 @@ You can export the defined conditions to Named Parameter SQL query through the [
   
 {% previewsample "page.domainurl/samples/query-builder/export-cs3" %}
 
-### Exporting to MongoDB
+### Exporting to MongoDB Query
 
-You can export the defined conditions to MongoDB query through the [`getMongoQuery`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#getMongoQuery) method.
+Exporting to MongoDB Query involves converting the defined conditions within the Query Builder into MongoDB query syntax. This process allows users to generate MongoDB queries representing the conditions set in the Query Builder, which can then be executed directly on a MongoDB database or used for further analysis and processing. This can be accomplished using the [`getMongoQuery`](https://ej2.syncfusion.com/vue/documentation/api/query-builder/#getMongoQuery) method for exporting to MongoDB query.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

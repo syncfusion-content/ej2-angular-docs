@@ -1,6 +1,6 @@
 
 
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { L10n, loadCldr, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
 import { SpreadsheetComponent, getFormatFromType } from '@syncfusion/ej2-angular-spreadsheet';
 import { data } from './datasource';
@@ -56,7 +56,7 @@ loadCldr(cagregorian, currencies, numbers, timeZoneNames, numberingSystems);
                 </ejs-spreadsheet>`
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent {
     @ViewChild('spreadsheet')
     spreadsheetObj!: SpreadsheetComponent;
     dataSource: Object[] = data;

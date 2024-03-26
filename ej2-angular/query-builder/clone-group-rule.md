@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Clone Group/Rule in Angular Query builder component
 
-Query Builder allows you to clone rules as well as groups. The Clone options will create an exact replica of a rule or group next to the original. You can use [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#showbuttons) to enable/disable these buttons.
+The Query Builder functionality extends to cloning both individual rules and entire groups. Utilizing the Clone options will generate an exact duplicate of a rule or group adjacent to the original one. This feature enables users to replicate complex query structures effortlessly. The [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#showbuttons) function offers users the ability to toggle the visibility of these cloning buttons, providing convenient control over the cloning process within the Query Builder interface.
 
 You can clone groups and rules by interacting through the user interface and methods.
 

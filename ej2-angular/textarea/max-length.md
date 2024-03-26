@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Maximum Length in Angular Textarea control | Syncfusion
-description: Limiting the maximum number of characters in the Angular Textarea control of Syncfusion Essential JS 2 and more details.
+title: Maximum Length in Angular TextArea component | Syncfusion
+description: Limiting the maximum number of characters in the Angular TextArea component of Syncfusion Essential JS 2 and more details.
 control: Maximum Length
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Maximum Length in Angular TextArea control
+# Maximum Length in Angular TextArea Component
 
 You can enforce a maximum length limit for the text input in the TextArea using the [maxLength](https://ej2.syncfusion.com/angular/documentation/api/textarea/#maxLength) property. This property allows to define the maximum number of characters that users can input into the TextArea.
 

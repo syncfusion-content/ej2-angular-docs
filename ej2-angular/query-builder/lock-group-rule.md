@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Lock Group/Rule in Angular Query builder component
 
-Query Builder allows you to lock rules as well as groups. When a rule is locked, the field, operator, and value will be disabled. When a group is locked, all the elements within the group will be disabled. You can use [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#showbuttons) to enable/disable these buttons.
+The Query Builder provides the functionality to lock individual rules or entire groups. When a rule is locked, it prevents users from modifying its field, operator, and value, effectively disabling these components. Similarly, locking a group disables all elements contained within it. This feature offers users greater control over their query configurations, ensuring that specific rules or groups remain unchanged. Additionally, users can manage the visibility of locking buttons through the [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/query-builder/#showbuttons) function, allowing for seamless control over the locking mechanism.
 
 You can lock groups and rules by interacting through the user interface and methods.
 

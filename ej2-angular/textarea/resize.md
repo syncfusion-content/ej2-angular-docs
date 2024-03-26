@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Resize in Angular TextArea component | Syncfusion
-description: Checkout and learn about Resize in Angular Textarea control of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn about Resize in Angular TextArea component of Syncfusion Essential JS 2 and more details.
 control: Resize
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resize in Angular TextArea control
+# Resize in Angular TextArea Component
 
 The TextArea allows users to input and edit large amounts of text. Resizing this control effectively can enhance the user experience and accommodate varying content needs. This resizing behavior can be enabled and configured using the [resizeMode](https://ej2.syncfusion.com/angular/documentation/api/textarea/#resizeMode) API, which offers several options for resizing the TextArea:
 
@@ -33,7 +33,7 @@ The TextArea allows users to input and edit large amounts of text. Resizing this
   
 {% previewsample "page.domainurl/samples/textarea/resize-cs1" %}
 
-## Width of Angular TextArea control
+## Width of angular TextArea component
 
 You can easily customize the width of the TextArea using the [width](https://ej2.syncfusion.com/angular/documentation/api/textarea/#width) property. This property allows precise adjustment of the TextArea's width according to the specific layout requirements of the application.
 

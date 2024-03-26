@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
           { x: 'Dominican Republic', y: 350000, r: '137.5' },
           { x: 'Egypt', y: 301000, r: '150.8' },
           { x: 'Kazakhstan', y: 300000, r: '155.5' },
-          { x: 'Somalia', y: 357022, r: '160.6' }
+          { x: 'Somalia', y: 357022, r: '160.6' },
           { x: 'Argentina', y: 505370, r: '100' },];
         this.title = 'Countries compared by population density and total area';
         this.legendSettings = { visible: true };
