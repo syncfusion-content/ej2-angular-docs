@@ -117,8 +117,8 @@ You can display text for the Timeline items using the `dotCss` property, by addi
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/timeline/items/dot-item/src/app.component.html %}
 {% endhighlight %}
-{% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/timeline/items/dot-item/src/app.component.css %}
+{% highlight css tabtitle="index.css" %}
+{% include code-snippet/timeline/items/dot-item/index.css %}
 {% endhighlight %}
 {% endtabs %}
   
