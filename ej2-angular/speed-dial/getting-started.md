@@ -12,6 +12,10 @@ domainurl: ##DomainURL##
 
 This section explains how to create a simple SpeedDial and demonstrate the basic usage of the SpeedDial component in an Angular environment.
 
+To get started quickly with Angular Speed Dial component, you can check out this video:
+
+{% youtube "https://www.youtube.com/watch?v=B5roxHrWYIc" %}
+
 ## Dependencies
 
 The list of dependencies required to use the SpeedDial component in your application is given as follows:

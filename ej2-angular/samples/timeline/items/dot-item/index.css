@@ -1,0 +1,6 @@
+.e-dot.custom-image {
+    background-image: url('./dot-image.png');
+}
+.e-dot.custom-text::before {
+    content: 'A';
+}
