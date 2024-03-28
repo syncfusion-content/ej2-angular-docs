@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Angular Floating action button component | Syncfusion
+title: Getting started with Angular FAB component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Floating action button component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
@@ -11,6 +11,10 @@ domainurl: ##DomainURL##
 # Getting started with Angular Floating action button component
 
 This section explains how to create a simple Floating Action Button and demonstrate the basic usage of the Floating Action Button component in an Angular environment.
+
+To get started quickly with Angular Floating Action Button component, you can check out this video:
+
+{% youtube "https://www.youtube.com/watch?v=Ok7F9jm6DrU" %}
 
 ## Dependencies
 
