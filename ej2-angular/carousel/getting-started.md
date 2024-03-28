@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Carousel component
 
-This section explains how to create a simple [Angular Carousel](https://www.syncfusion.com/angular-ui-components/angular-carousel), and demonstrate the basic usage of the Carousel module in an Angular environment.
+This section explains how to create a simple [Angular Carousel](https://www.syncfusion.com/angular-components/angular-carousel), and demonstrate the basic usage of the Carousel module in an Angular environment.
 
 ## Dependencies
 
