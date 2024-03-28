@@ -62,7 +62,7 @@ The following sample displays the OrderId from the `Orders` Data Service.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/dropdownlist/virtual-scroll-remote" %}
+{% previewsample "page.domainurl/samples/multiselect/virtual-scroll-remote" %}
 
 ## Customizing items count in virtualization 
 
@@ -85,7 +85,7 @@ The following sample shows the example for Customizing items count in virtualiza
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/dropdownlist/virtual-scroll-items" %}
+{% previewsample "page.domainurl/samples/multiselect/virtual-scroll-items" %}
 
 ## Grouping with virtualization
 
@@ -154,11 +154,11 @@ The following sample shows the example for checkbox with Virtualization.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/dropdownlist/virtual-scroll-check" %}
+{% previewsample "page.domainurl/samples/multiselect/virtual-scroll-check" %}
 
 ## Custom value with virtualization
 
-The MultiSelect component supports custom valie with Virtualization. When the [`allowCustomValue`](../api/multi-select/#allowcustomvalue) property is enabled, the MultiSelect enables users to include a new option not currently available in the component value. Upon selecting this newly added custom value, the MultiSelect triggers the [`customValueSelection`](../api/multi-select/#customvalueselection) event and also custom value will be added to the end of the complete list.
+The MultiSelect component supports custom value with Virtualization. When the [`allowCustomValue`](../api/multi-select/#allowcustomvalue) property is enabled, the MultiSelect enables users to include a new option not currently available in the component value. Upon selecting this newly added custom value, the MultiSelect triggers the [`customValueSelection`](../api/multi-select/#customvalueselection) event and also custom value will be added to the end of the complete list.
 
 The following sample shows the example for custom value with Virtualization.
 
@@ -177,7 +177,7 @@ The following sample shows the example for custom value with Virtualization.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/dropdownlist/virtual-scroll-custom" %}
+{% previewsample "page.domainurl/samples/multiselect/virtual-scroll-custom" %}
 
 ## Preselect values with virtualization
 
@@ -200,4 +200,4 @@ The following sample shows the example for Preselect value with Virtualization.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/dropdownlist/virtual-scroll-preselect" %}
+{% previewsample "page.domainurl/samples/multiselect/virtual-scroll-preselect" %}

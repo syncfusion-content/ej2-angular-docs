@@ -1,7 +1,7 @@
 
 
 import { Component, ViewChild } from '@angular/core';
-import { TextAreaComponent } from '@syncfusion/ej2-inputs';
+import { TextAreaComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     selector: 'app-root',

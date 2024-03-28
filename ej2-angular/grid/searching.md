@@ -43,7 +43,7 @@ Property |Description
 **fields** |Specifies the [fields](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettingsModel/#fields) in which the search operation needs to be performed.
 **operator** |Specifies the [operator](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#operator) to be used for the search operation.
 **key** |Specifies the [key](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#key) value to be searched.
-**ignoreCase** |[ignoreCase](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#ignoreaccent) specifies whether the search operation needs to be case-sensitive or case-insensitive.
+**ignoreCase** |[ignoreCase](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings/#ignorecase) specifies whether the search operation needs to be case-sensitive or case-insensitive. 
 **ignoreAccent** |[ignoreAccent](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettingsModel/#ignoreaccent) property will ignore the diacritic characters or accents in the text during a search operation.
 
 The following example demonstrates how to set an initial search in the grid using the `searchSettings` property. The `searchSettings` property is set with the following values:

@@ -46,6 +46,3 @@ export class AppComponent {
     public waterMark: string = 'e.g. Item 1';
 }
 
-}
-
-
