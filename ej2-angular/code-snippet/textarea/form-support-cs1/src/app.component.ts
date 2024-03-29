@@ -1,9 +1,9 @@
 import { Component,ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import {TextAreaComponent} from '@syncfusion/ej2-inputs';
+import {TextAreaComponent} from '@syncfusion/ej2-angular-inputs';
 import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
 
 @Component({
-    selector: 'app-root',
+    selector: 'app-root',   
     template: `<div class="wrap">
                 <div class='textarea'>
                   <div className="control_wrapper" id="control_wrapper">

@@ -1,6 +1,8 @@
 
 
 import { Component } from '@angular/core';
+import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
+
 
 @Component({
     selector: 'app-root',

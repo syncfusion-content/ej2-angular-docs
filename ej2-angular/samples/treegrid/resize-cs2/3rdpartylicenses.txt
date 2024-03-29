@@ -4,6 +4,9 @@ MIT
 @angular/core
 MIT
 
+@angular/forms
+MIT
+
 @angular/platform-browser
 MIT
 
@@ -11,9 +14,6 @@ MIT
 SEE LICENSE IN license
 
 @syncfusion/ej2-angular-buttons
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-calendars
 SEE LICENSE IN license
 
 @syncfusion/ej2-angular-dropdowns
