@@ -10,7 +10,7 @@ QueryBuilderComponent.Inject(QueryLibrary);
 @Component({
     selector: 'app-root',
     template: `<!-- To render Query Builder. -->
-               <ejs-querybuilder #querybuilder class="row" width="70%" [dataSource]="data" [showButtons]="showButtons">
+               <ejs-querybuilder #querybuilder class="row" width="70%" [dataSource]="data" [rule]="importRules" [showButtons]="showButtons">
                 <e-columns>
                   <e-column field="TaskID" label="Task ID" type="number"></e-column>
                   <e-column field="Name" label="Name" type="string"></e-column>
@@ -26,18 +26,44 @@ QueryBuilderComponent.Inject(QueryLibrary);
 
 export class AppComponent implements OnInit {
     public data?: Object[];
-    public importRules?: RuleModel;
-    public showButtons: Object = {ruleDelete: true, groupInsert: true, groupDelete: true, lockGroup: true, lockRule: true};
+    public importRules?: RuleModel = {
+        'condition': 'and',
+        'rules': [{
+                'label': 'Task ID',
+                'field': 'TaskID',
+                'type': 'number',
+                'operator': 'equal',
+                'value': 1
+            },
+            {
+                'label': 'Name',
+                'field': 'Name',
+                'type': 'string',
+                'operator': 'equal',
+                'value': 'Sales Manager'
+            },
+            {
+                condition: "or", rules: [
+                    { 'label': 'Name',
+                    'field': 'Name',
+                    'type': 'string',
+                    'operator': 'equal',
+                    'value': 'Engineer' }
+                ]
+            }
+        ]
+    };
+    public showButtons: Object = {ruleDelete: true, groupInsert: true, groupDelete: true, lockGroup: false, lockRule: false};
      @ViewChild('querybuilder')
     public qryBldrObj?: QueryBuilderComponent;
     ngOnInit(): void {
         this.data = hardwareData;
     }
     lockGroup(): void {
-        this.qryBldrObj!.lockGroup("querybuilder_group0");
+        this.qryBldrObj!.lockGroup("group0");
     }
     lockRule(): void {
-        this.qryBldrObj!.lockRule("querybuilder_group0_rule0");
+        this.qryBldrObj!.lockRule("group0_rule0");
     }
 }
 
