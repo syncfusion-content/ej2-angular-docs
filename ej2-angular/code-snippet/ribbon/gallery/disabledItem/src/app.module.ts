@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RibbonModule } from '@syncfusion/ej2-angular-ribbon';
+import { RibbonModule, RibbonGalleryService } from '@syncfusion/ej2-angular-ribbon';
 import { AppComponent } from './app.component';
 
 @NgModule({
     imports: [BrowserModule, RibbonModule],
-    declarations: [AppComponent],
+    providers: [ RibbonGalleryService ],
+    declarations: [AppComponent], 
     bootstrap: [AppComponent]
 })
 export class AppModule { }

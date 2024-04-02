@@ -18,7 +18,7 @@ You can use the [`Angular CLI`](https://github.com/angular/angular-cli) to setup
 To install Angular CLI globally use the following command.
 
 ```bash
-npm install -g @angular/cli
+npm install -g @angular/cli@16.0.1
 ```
 
 N> Use the command **npm install --save @angular/cli@12.0.2** to install the latest Angular CLI version 12.0.2
@@ -51,8 +51,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
          NavigationService, TextSearchService, TextSelectionService,
-         PrintService, FormDesignerService, FormFieldsService
-       } from '@syncfusion/ej2-angular-pdfviewer';
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -63,7 +63,7 @@ import { AppComponent } from './app.component';
   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
                TextSearchService, TextSelectionService, PrintService,
-               AnnotationService, FormDesignerService, FormFieldsService]
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
 export class AppModule { }
 ```
@@ -90,11 +90,11 @@ Add the Angular PDF Viewer by using `<ejs-pdfviewer>` selector in `template` sec
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { LinkAnnotationService, BookmarkViewService, MagnificationService,
-         ThumbnailViewService, ToolbarService, NavigationService,
-         AnnotationService, TextSearchService, TextSelectionService,
-         PrintService, FormDesignerService, FormFieldsService
-       } from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-root',
@@ -109,7 +109,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
                TextSearchService, TextSelectionService, PrintService,
-               AnnotationService, FormDesignerService, FormFieldsService]
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
 export class AppComponent implements OnInit {
   public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';

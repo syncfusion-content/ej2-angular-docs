@@ -1,18 +1,8 @@
 import { NgModule, ViewChild } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
-import {
-  PdfViewerModule,
-  LinkAnnotationService,
-  BookmarkViewService,
-  MagnificationService,
-  ThumbnailViewService,
-  ToolbarService,
-  NavigationService,
-  TextSearchService,
-  TextSelectionService,
-  PrintService
-} from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerModule, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
+  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -24,15 +14,8 @@ import { AppComponent } from './app.component';
     PdfViewerModule,
     CheckBoxModule
   ],
-  providers: [LinkAnnotationService,
-    BookmarkViewService,
-    MagnificationService,
-    ThumbnailViewService,
-    ToolbarService,
-    NavigationService,
-    TextSearchService,
-    TextSelectionService,
-    PrintService],
+  providers: [LinkAnnotationService, BookmarkViewService, MagnificationService,
+    ThumbnailViewService, ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

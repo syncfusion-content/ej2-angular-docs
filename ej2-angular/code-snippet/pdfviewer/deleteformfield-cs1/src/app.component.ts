@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
 import {PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
   ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, 
   FormDesignerService, FormFieldsService, TextFieldSettings, SignatureFieldSettings, InitialFieldSettings, 
-  CheckBoxFieldSettings, RadioButtonFieldSettings } from '@syncfusion/ej2-angular-pdfviewer';
+  CheckBoxFieldSettings, RadioButtonFieldSettings, PageOrganizerService} from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-container',
@@ -21,7 +21,7 @@ import {PdfViewerComponent, LinkAnnotationService, BookmarkViewService, Magnific
   </ejs-pdfviewer>
   </div>`,
   providers: [LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService, ToolbarService,
-NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService]
+NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
 export class AppComponent implements OnInit {
   @ViewChild('pdfviewer')
