@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import {LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
   ToolbarService, NavigationService, AnnotationService, TextSearchService, TextSelectionService, 
-  PrintService, FormDesignerService, FormFieldsService} from '@syncfusion/ej2-angular-pdfviewer';
+  PrintService, FormDesignerService, FormFieldsService, PageOrganizerService} from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-container',
@@ -16,7 +16,7 @@ import {LinkAnnotationService, BookmarkViewService, MagnificationService, Thumbn
   </ejs-pdfviewer>
 </div>`,
   providers: [LinkAnnotationService, BookmarkViewService, MagnificationService,ThumbnailViewService, ToolbarService
-    , NavigationService, AnnotationService, TextSearchService, TextSelectionService, PrintService, FormDesignerService, FormFieldsService]
+    , NavigationService, AnnotationService, TextSearchService, TextSelectionService, PrintService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
 export class AppComponent implements OnInit {
     public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';

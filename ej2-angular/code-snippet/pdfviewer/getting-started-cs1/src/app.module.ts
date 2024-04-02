@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { PdfViewerModule, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService  } from '@syncfusion/ej2-angular-pdfviewer';
+  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, PageOrganizerService} from '@syncfusion/ej2-angular-pdfviewer';
 
 
 import { AppComponent } from './app.component';
@@ -11,6 +11,6 @@ import { AppComponent } from './app.component';
   declarations: [ AppComponent ],
   bootstrap: [AppComponent],
   providers: [LinkAnnotationService, BookmarkViewService, MagnificationService,
-    ThumbnailViewService, ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService]
+    ThumbnailViewService, ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, PageOrganizerService]
 })
 export class AppModule { }
