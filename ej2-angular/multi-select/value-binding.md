@@ -35,6 +35,9 @@ The following sample shows the example for preselect values for primitive data t
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/primitive/src/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="virtual-scroll.html" %}
+{% include code-snippet/multiselect/primitive/src/virtual-scroll.html %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/multiselect/primitive" %}
@@ -54,6 +57,9 @@ The following sample shows the example for preselect values for object data type
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/object/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="virtual-scroll.html" %}
+{% include code-snippet/multiselect/object/src/virtual-scroll.html %}
 {% endhighlight %}
 {% endtabs %}
   
