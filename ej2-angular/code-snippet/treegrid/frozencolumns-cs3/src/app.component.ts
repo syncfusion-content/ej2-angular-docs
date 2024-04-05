@@ -75,7 +75,7 @@ export class AppComponent implements OnInit {
   }
 
   freezeDirectionFn() {
-    this.treegrid.getColumnByField(
+    (this.treegrid as TreeGridComponent).getColumnByField(
       (this.columnDropDown as DropDownListComponent).value as string
     ).freeze = (this.directionDropDown as DropDownListComponent)
       .value as freezeDirection;

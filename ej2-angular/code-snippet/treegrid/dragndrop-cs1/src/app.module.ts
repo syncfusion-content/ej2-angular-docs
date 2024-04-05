@@ -14,7 +14,7 @@ import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
     imports: [
         BrowserModule,
         GridModule,
-        TreeGridAllModule
+        TreeGridAllModule,
         ButtonModule,
         DropDownListAllModule
     ],

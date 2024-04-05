@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
         this.data = sampleData;
     }
     frozenColumnFn() {
-        this.treegrid.frozenColumns = (this.frozenColumns as NumericTextBoxComponent).value;
+        (this.treegrid as TreeGridComponent).frozenColumns = (this.frozenColumns as NumericTextBoxComponent).value;
       }
 }
 

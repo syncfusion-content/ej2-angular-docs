@@ -2,8 +2,9 @@
 
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { TreeGridComponent, TextWrapSettingsModel, WrapMode } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent,  WrapMode } from '@syncfusion/ej2-angular-treegrid';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
+import {  TextWrapSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     selector: 'app-container',

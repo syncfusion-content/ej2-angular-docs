@@ -2,7 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { sortData } from './datasource';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-container',
   encapsulation:ViewEncapsulation.None,
   template: `<ejs-treegrid [dataSource]='data' height='315' [treeColumnIndex]='1'  [allowSorting]='true' childMapping='subtasks' [sortSettings]='initialSort'>
                     <e-columns>

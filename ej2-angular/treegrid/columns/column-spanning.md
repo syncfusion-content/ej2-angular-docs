@@ -44,7 +44,7 @@ You can change the border color for the spanned cells by the using [queryCellInf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/treegrid/spanning-cs3" %}
+{% previewsample "page.domainurl/samples/treegrid/spanning-cs2" %}
 
 ## Limitations
 

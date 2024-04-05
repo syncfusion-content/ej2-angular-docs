@@ -1,8 +1,6 @@
-/**
- * TreeGrid DataSource
- */
-
 export let textdata: Object[] = [{
+    'FirstName':'Robert',
+    'LastName':'King',
     'Name': 'Robert King',
     'FullName': 'RobertKing',
     'Designation': 'Chief Executive Officer',
@@ -14,6 +12,8 @@ export let textdata: Object[] = [{
     'DOB': new Date('2/15/1963'),
 
     'Children': [{
+        'FirstName':'David',
+        'LastName':'william',
         'Name': 'David william',
         'FullName': 'DavidWilliam',
         'Designation': 'Vice President',
@@ -26,6 +26,8 @@ export let textdata: Object[] = [{
 
 
         'Children': [{
+            'FirstName':'Nancy',
+            'LastName':'Davolio',
             'Name': 'Nancy Davolio',
             'FullName': 'NancyDavolio',
             'Designation': 'Marketing Executive',
@@ -37,6 +39,8 @@ export let textdata: Object[] = [{
             'DOB': new Date('3/19/1966'),
             'Children': [
                 {
+                    'FirstName':'Andrew',
+                    'LastName':'Fuller',
                     'Name': 'Andrew Fuller',
                     'FullName': 'AndrewFuller',
                     'Designation': 'Sales Representative',
@@ -48,6 +52,8 @@ export let textdata: Object[] = [{
                     'DOB': new Date('9/20/1980')
                 },
             {
+                'FirstName':'Anne',
+                'LastName':'Dodsworth',
                 'Name': 'Anne Dodsworth',
                 'FullName': 'AnneDodsworth',
                 'Designation': 'Sales Representative',
@@ -59,6 +65,8 @@ export let textdata: Object[] = [{
                 'DOB': new Date('10/19/1989')
             },
             {
+                'FirstName':'Michael',
+                'LastName':'Suyama',
                 'Name': 'Michael Suyama',
                 'FullName': 'MichaelSuyama',
                 'Designation': 'Sales Representative',
@@ -70,6 +78,8 @@ export let textdata: Object[] = [{
                 'DOB': new Date('11/02/1987')
             },
             {
+                'FirstName':'Janet',
+                'LastName':'Leverling',
                 'Name': 'Janet Leverling',
                 'FullName': 'JanetLeverling',
                 'Designation': 'Sales Coordinator',
@@ -84,6 +94,8 @@ export let textdata: Object[] = [{
 
         },
         {
+            'FirstName':'Romey',
+            'LastName':'Wilson',
             'Name': 'Romey Wilson',
             'FullName': 'RomeyWilson',
             'Designation': 'Sales Executive',
@@ -95,6 +107,8 @@ export let textdata: Object[] = [{
             'DOB': new Date('02/02/1980'),
             'Children': [
             {
+                'FirstName':'Margaret',
+                'LastName':'Peacock',
                 'Name': 'Margaret Peacock',
                 'FullName': 'MargaretPeacock',
                 'Designation': 'Sales Representative',
@@ -106,6 +120,8 @@ export let textdata: Object[] = [{
                 'DOB': new Date('01/21/1986')
             },
             {
+                'FirstName':'Laura',
+                'LastName':'Callahan',
                 'Name': 'Laura Callahan',
                 'FullName': 'LauraCallahan',
                 'Designation': 'Sales Coordinator',
@@ -117,6 +133,8 @@ export let textdata: Object[] = [{
                 'DOB': new Date( '12/01/1990')
             },
             {
+                'FirstName':'Steven',
+                'LastName':'Buchanan',
                 'Name': 'Steven Buchanan',
                 'FullName': 'StevenBuchanan',
                 'Designation': 'Sales Representative',
@@ -128,6 +146,8 @@ export let textdata: Object[] = [{
                 'DOB': new Date('03/23/1987')
             },
             {
+                'FirstName':'Tedd',
+                'LastName':'Lawson',
                 'Name': 'Tedd Lawson',
                 'FullName': 'TeddLawson',
                 'Designation': 'Sales Representative',

@@ -12,7 +12,7 @@ import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 @NgModule({
     imports: [
         BrowserModule,
-        TreeGridAllModule
+        TreeGridAllModule,
         ButtonModule,
         DropDownListAllModule
     ],

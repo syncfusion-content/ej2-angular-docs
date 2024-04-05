@@ -16,7 +16,7 @@ import {ButtonModule} from '@syncfusion/ej2-angular-buttons';
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
-    providers: [PageService,ColumnChooserService,ToolbarService
+    providers: [PageService,ColumnChooserService,ToolbarService,
                 SortService,
                 FilterService]
 })

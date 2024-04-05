@@ -304,7 +304,7 @@ In the below example, the **numberFormatOptions** object is used as the `format`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/column-format-cs6" %}
+{% previewsample "page.domainurl/samples/treegrid/column-format-cs6" %}
 
 >To learn more about custom formatting, you can refer to [Custom Date formatting](https://ej2.syncfusion.com/angular/documentation/common/internationalization#custom-formats) and [Custom Number formatting](https://ej2.syncfusion.com/angular/documentation/common/internationalization#custom-number-formatting-and-parsing).
 

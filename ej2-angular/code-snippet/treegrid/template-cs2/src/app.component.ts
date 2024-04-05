@@ -11,8 +11,8 @@ import { textdata } from './datasource';
                         <e-column headerText = 'Employee Name' width = '150'>
                              <ng-template #template let-data>
                                  <div>
-                                    <a href="#" (click)="onClick($event, data.FirstName)">
-                                     {{data.FirstName}}
+                                    <a href="#" (click)="onClick($event, data.FullName)">
+                                     {{data.FullName}}
                                     </a>
                                  </div>
                               </ng-template>
