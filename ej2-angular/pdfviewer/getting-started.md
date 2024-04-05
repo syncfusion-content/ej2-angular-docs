@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Standalone Angular PDF Viewer component | Syncfusion
+title: Getting started Standalone Angular PDF Viewer component | Syncfusion
 description: Checkout and learn about Getting started with Standalone Angular PDF Viewer component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: PDF Viewer 
@@ -18,7 +18,7 @@ You can use the [`Angular CLI`](https://github.com/angular/angular-cli) to setup
 To install Angular CLI globally use the following command.
 
 ```bash
-npm install -g @angular/cli
+npm install -g @angular/cli@16.0.1
 ```
 
 N> Use the command **npm install --save @angular/cli@12.0.2** to install the latest Angular CLI version 12.0.2
@@ -63,8 +63,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
          NavigationService, TextSearchService, TextSelectionService,
-         PrintService, FormDesignerService, FormFieldsService
-       } from '@syncfusion/ej2-angular-pdfviewer';
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -75,7 +75,7 @@ import { AppComponent } from './app.component';
    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
                TextSearchService, TextSelectionService, PrintService,
-               AnnotationService, FormDesignerService, FormFieldsService]
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
 export class AppModule { }
 ```
@@ -102,11 +102,11 @@ Add the Angular PDF Viewer by using `<ejs-pdfviewer>` selector in `template` sec
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { LinkAnnotationService, BookmarkViewService, MagnificationService,
-         ThumbnailViewService, ToolbarService, NavigationService,
-         AnnotationService, TextSearchService, TextSelectionService,
-         PrintService, FormDesignerService, FormFieldsService
-       } from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-root',
@@ -121,7 +121,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
                TextSearchService, TextSelectionService, PrintService,
-               AnnotationService, FormDesignerService, FormFieldsService]
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
 export class AppComponent implements OnInit {
   public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
@@ -144,9 +144,11 @@ The output will appear as follows.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 import { Component, OnInit } from '@angular/core';
-import {LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, AnnotationService, TextSearchService, TextSelectionService, 
-  PrintService, FormDesignerService, FormFieldsService} from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-container',
@@ -159,8 +161,10 @@ import {LinkAnnotationService, BookmarkViewService, MagnificationService, Thumbn
     style="height:640px;display:block">
   </ejs-pdfviewer>
 </div>`,
-providers: [LinkAnnotationService, BookmarkViewService, MagnificationService,ThumbnailViewService, ToolbarService
-  , NavigationService, AnnotationService, TextSearchService, TextSelectionService, PrintService, FormDesignerService, FormFieldsService]
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
 export class AppComponent implements OnInit {
     public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';

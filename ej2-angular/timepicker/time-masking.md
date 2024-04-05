@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Time masking in Angular Timepicker component
 
-DatePicker has `enableMask` property that provides the option to enable the built-in date masking support. Also, you must inject the MaskedDateTime module to enable the masking support.
+TimePicker has `enableMask` property that provides the option to enable the built-in time masking support. Also, you must inject the MaskedDateTime module to enable the masking support.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -18,7 +18,7 @@ You can use the [`Angular CLI`](https://github.com/angular/angular-cli) to setup
 To install Angular CLI globally use the following command.
 
 ```bash
-npm install -g @angular/cli
+npm install -g @angular/cli@16.0.1
 ```
 
 N> Use the command **npm install --save @angular/cli@12.0.2** to install the latest Angular CLI version 12.0.2
@@ -51,8 +51,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
          NavigationService, TextSearchService, TextSelectionService,
-         PrintService, FormDesignerService, FormFieldsService
-       } from '@syncfusion/ej2-angular-pdfviewer';
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -63,7 +63,7 @@ import { AppComponent } from './app.component';
   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
                TextSearchService, TextSelectionService, PrintService,
-               AnnotationService, FormDesignerService, FormFieldsService]
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
 export class AppModule { }
 ```
@@ -90,11 +90,11 @@ Add the Angular PDF Viewer by using `<ejs-pdfviewer>` selector in `template` sec
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { LinkAnnotationService, BookmarkViewService, MagnificationService,
-         ThumbnailViewService, ToolbarService, NavigationService,
-         AnnotationService, TextSearchService, TextSelectionService,
-         PrintService, FormDesignerService, FormFieldsService
-       } from '@syncfusion/ej2-angular-pdfviewer';
+import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-root',
@@ -109,7 +109,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
                TextSearchService, TextSelectionService, PrintService,
-               AnnotationService, FormDesignerService, FormFieldsService]
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
 export class AppComponent implements OnInit {
   public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
@@ -171,5 +171,12 @@ The output will appear as follows.
       }
    ```
 N> When configuring the server-backed PDF viewer, it's essential to understand that there is no need to include the pdfium.js and pdfium.wasm files. Unlike the standalone PDF viewer, which relies on these files for local rendering, the server-backed PDF viewer fetches and renders PDFs directly from the server. Consequently, you can exclude the copy command for deployment process, as they are not required to load and display PDFs in this context.
+
+N> For hosting the web service on the Linux platform, ensure to include the [SkiaSharp.NativeAssets.Linux](https://nuget.org/packages/SkiaSharp.NativeAssets.Linux/2.88.6). Additionally, for AWS environments, utilize the following packages:
+
+| **Amazon Web Services (AWS)** |**NuGet package name** |
+| --- | --- |
+| AWS Lambda|[SkiaSharp.NativeAssets.Linux](https://nuget.org/packages/SkiaSharp.NativeAssets.Linux/2.88.6)|
+| AWS Elastic Beanstalk |[SkiaSharp.NativeAssets.Linux.NoDependencies v2.88.6](https://www.nuget.org/packages/SkiaSharp.NativeAssets.Linux.NoDependencies/2.88.6)|
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Getting%20started%20-%20Server-Back).
