@@ -3,6 +3,7 @@
 import { Component, OnInit } from '@angular/core';
 import { textdata } from './datasource';
 
+
 @Component({
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height=291 width='auto' childMapping= 'Children' >
@@ -10,9 +11,8 @@ import { textdata } from './datasource';
                         <e-column field = 'EmpID' headerText = 'Employee ID' width = '180'></e-column>
                         <e-column headerText = 'Employee Name' width = '150'>
                             <ng-template #template let-data>
-                                  <div style="position:relative;display:inline-block;">
-                                    <img src="{{data.FullName}}.png" alt="{{data.FullName}}" />
-                                  </div>
+                                  
+                                    <img src="images/{{data.FullName}}.png" alt="{{data.FullName}}" />
                             </ng-template>
                         </e-column>
                         <e-column field = 'Designation' headerText = 'Designation' width = '150'></e-column>

@@ -5,7 +5,7 @@ import { SortDirection } from '@syncfusion/ej2-grids';
 import { sortData } from './datasource';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-container',
   template: `
             <div style="display: flex">
                 <label style="padding: 30px 20px 0 0"> Column name :</label>

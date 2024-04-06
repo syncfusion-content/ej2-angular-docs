@@ -1,10 +1,12 @@
 
 
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit,ViewChild, ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
-import { Cell, Column, HeaderCellInfoEventArgs } from '@syncfusion/ej2-treegrid';
+import {  Column, } from '@syncfusion/ej2-treegrid';
+import {  HeaderCellInfoEventArgs } from '@syncfusion/ej2-grids';
 @Component({
     selector: 'app-container',
+    encapsulation:ViewEncapsulation.None,
     template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks'  (headerCellInfo)="onHeaderCellInfo($event)">
                   <e-columns>
                     <e-column field='taskID' headerText='Task ID' [allowSorting]="false" textAlign='Right' width=120></e-column>
@@ -14,6 +16,11 @@ import { Cell, Column, HeaderCellInfoEventArgs } from '@syncfusion/ej2-treegrid'
                     <e-column field='progress' headerText='Progress' textAlign='Right' width=120></e-column>
                   </e-columns>
                 </ejs-treegrid>`,
+    styles:[`
+    .e-treegrid .e-headercell.customcss {
+      background-color: #a2d6f4;
+      color:rgb(3, 2, 2);
+  }`]
 })
 export class AppComponent implements OnInit {
 
@@ -23,7 +30,7 @@ export class AppComponent implements OnInit {
         this.data = sampleData;
     }
     public onHeaderCellInfo(args:HeaderCellInfoEventArgs  ) {
-        if ((args.cell as Cell<Column> ).column.field == 'startDate') {
+        if ((args.cell as any ).column.field == 'startDate') {
           (args.node as Element).classList.add('customcss');
         }
       }

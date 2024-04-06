@@ -3,7 +3,7 @@
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
-import { Column, TreeGridComponent, TextAlign } from '@syncfusion/ej2-angular-treegrid';
+import { Column, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',

@@ -1,5 +1,3 @@
-
-
 import { Component, OnInit,ViewChild  } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent,TreeActionEventArgs, } from '@syncfusion/ej2-angular-treegrid';
@@ -11,7 +9,7 @@ import { TreeGridComponent,TreeActionEventArgs, } from '@syncfusion/ej2-angular-
                     <e-columns>
                       <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                       <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
-                      <e-column field='startDate' headerText='Start Date' textAlign='Right'  width=160 [format]='formatoption'></e-column>
+                      <e-column field='startDate' headerText='Start Date' textAlign='Right'  width=160 format='yMd'></e-column>
                       <e-column field='duration' headerText='Duration' textAlign='Right' format='c2' type='number' width=80></e-column>
                     </e-columns>
                 </ejs-treegrid>`
@@ -34,8 +32,3 @@ export class AppComponent implements OnInit {
     }
   }
 }
-
-
-
-
-

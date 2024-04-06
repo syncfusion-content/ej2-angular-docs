@@ -1,9 +1,10 @@
 
 
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit,ViewChild, ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
 @Component({
     selector: 'app-container',
+    encapsulation:ViewEncapsulation.None,
     template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks'>
                  <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' [customAttributes]="{class:'customcss'}" width=120></e-column>
@@ -13,7 +14,7 @@ import { sampleData } from './datasource';
                     <e-column field='progress' headerText='Progress' textAlign='Right' width=120></e-column>
                   </e-columns>
                 </ejs-treegrid>`,
-    styleUrls: ['./custom-column.style']
+    styleUrls: ['./custom-column.style.css']
 })
 export class AppComponent implements OnInit {
 

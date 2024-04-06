@@ -5,7 +5,7 @@ import { sampleData } from './datasource';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' treeColumnIndex]='1' childMapping='subtasks' >
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' >
                     <e-columns>
                         <e-column field='taskID' headerText='Task ID' textAlign='Right' width='auto'></e-column>
                         <e-column field='taskName' headerText='Task Name' textAlign='Left' width='auto'></e-column>

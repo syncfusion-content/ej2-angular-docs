@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
         { text: 'Justify', value: 'Justify' },
     ];
     public changeAlignment(args: ChangeEventArgs): void {
-        (this.treegrid as TreeGridComponent).columns.forEach((col: Column) => {
+        (this.treegrid as TreeGridComponent).columns.forEach((col: any) => {
             col.textAlign = args.value as string;
         });
         (this.treegrid as TreeGridComponent).refreshColumns();

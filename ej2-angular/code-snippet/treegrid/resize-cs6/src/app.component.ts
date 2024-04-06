@@ -37,6 +37,7 @@ export class AppComponent implements OnInit {
     public field: object = { text: 'text', value: 'value' };
     @ViewChild('treegrid')
     public treegrid?: TreeGridComponent;
+    @ViewChild('dropdown')
     public dropDown?: DropDownListComponent;
     @ViewChild('textbox')
     public textbox?: any;

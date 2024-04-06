@@ -4,6 +4,7 @@ import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid';
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid';
 import { AppComponent } from './app.component';
 import {ButtonModule} from '@syncfusion/ej2-angular-buttons';
+import {DropDownListModule} from '@syncfusion/ej2-angular-dropdowns';
 
 /**
  * Module
@@ -12,7 +13,7 @@ import {ButtonModule} from '@syncfusion/ej2-angular-buttons';
     imports: [
         BrowserModule,
         TreeGridModule,
-        ButtonModule
+        ButtonModule,DropDownListModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],

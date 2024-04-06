@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   @ViewChild('pdfviewer')
   public pdfviewerControl?: PdfViewerComponent;
   public document: string = 'https://cdn.syncfusion.com/content/pdf/form-designer.pdf';
-  public resource: string = "https://cdn.syncfusion.com/ej2/23.1.43/dist/ej2-pdfviewer-lib";
+  public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
  
   documentLoaded(e: any): void {
     this.pdfviewerControl?.formDesignerModule.addFormField("Textbox", {name: 'First Name', bounds: { X: 146, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
