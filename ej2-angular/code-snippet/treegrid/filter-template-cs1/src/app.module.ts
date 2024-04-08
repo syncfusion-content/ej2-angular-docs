@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid';
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid';
 import { AppComponent } from './app.component';
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons';
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { FormsModule } from '@angular/forms';
-
+import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { CheckBoxModule,ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
 /**
  * Module
  */
@@ -14,14 +14,15 @@ import { FormsModule } from '@angular/forms';
     imports: [
         BrowserModule,
         TreeGridModule,
-        ButtonModule,
+        FormsModule,MultiSelectModule,
         DropDownListAllModule,
-        FormsModule
+        CheckBoxModule,ButtonModule,
+        NumericTextBoxModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent],
     providers: [PageService,
-                SortService,
+                SortService, CheckBoxSelectionService,
                 FilterService]
 })
 export class AppModule { }

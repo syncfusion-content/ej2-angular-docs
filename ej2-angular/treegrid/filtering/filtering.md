@@ -486,6 +486,8 @@ Here's an example where the menu filter is enabled by default for all columns, b
   
 {% previewsample "page.domainurl/samples/treegrid/filtering-cs18" %}
 
+> [You can view the GitHub sample demonstrating different filter dialogs in a TreeGrid column.](https://github.com/SyncfusionExamples/How-to-Work-with-Filtering-Options-in-Angular-Tree-Grid/)
+
 ## Filter grid programmatically with single and multiple values using method 
 
 Programmatic filtering in the Tree Grid with single and multiple values allows you to apply filters to specific columns in the tree grid without relying on interactions through the interface.
