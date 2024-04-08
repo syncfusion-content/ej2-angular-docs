@@ -55,19 +55,6 @@ Here is an example of how to specify column types in a tree grid using the types
 
 > To learn more about how to render boolean values as checkboxes in a Syncfusion TreeGridColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/columns#render-boolean-value-as-checkbox) section.
 
-#### Difference between boolean type,ShowCheckbox column and checkbox type column 
-
-1. Use the **boolean** column type when you want to bind boolean values from your datasource and/or edit boolean property values from your type.
-2. Use the **checkbox** column type when you want to enable selection/deselection of the whole row.
-3. Use the **showCheckbox** column property when you want to enable hierarchically select of the row.
-4. When the tree grid column [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#type) is a **checkbox**, the selection type of the tree grid [selectionSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#mode) will be multiple. This is the default behavior.
-5. If you have more than one column with the column type as a **checkbox**, the Tree Grid will automatically enable the other column's checkbox when selecting one column checkbox.
-
-> To learn more about how to render boolean values as checkboxes in a Syncfusion TreeGridColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/columns#render-boolean-value-as-checkbox) section.
-
-> To learn more about how to show checkbox in a tree column, please refer to the [Checkbox Column](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/columns#checkbox-column) section.
-
-
 ## Column width
 
 To adjust the column width in a Tree Grid, you can use the [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#width) property within the [column](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#column) property of the Tree Grid configuration. This property enables you to define the column width in pixels or as a percentage. You can set the width to a specific value, like **100** for 100 pixels, or as a percentage value, such as **25%** for 25% of the available width.
@@ -80,7 +67,7 @@ To adjust the column width in a Tree Grid, you can use the [width](https://ej2.s
 6. When the columns are hidden using the column chooser, the width of the hidden columns is removed from the total tree grid width, and the remaining columns will be resized to fill the available space.
 7. If the parent element has a fixed width, the TreeGrid component will inherit that width and occupy the available space. However, if the parent element does not have a fixed width, the TreeGrid component will adjust its width dynamically based on the available space.
 
-> To learn more about resizing, you can refer to the resizing section [here](../../treegrid/columns/column-resizing.md)
+> To learn more about resizing, you can refer to the resizing section [here](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/column-resizing)
 
 #### Supported types for column width:
 
