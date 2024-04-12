@@ -13,3 +13,48 @@
 .e-section-control {
 	margin-top: 150px;
 }
+
+#container {
+    visibility: hidden;
+}
+
+.ej2-sample-frame {
+  height: 450px;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+}
+
+/* Icon customization */
+.e-colorpicker-wrapper #element+.e-split-btn-wrapper .e-split-btn .e-selected-color {
+  background: none;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  width: 14px;
+  margin: 0px 2px;
+  border-bottom-color: #008000;
+}
+.e-colorpicker-wrapper #element+.e-split-btn-wrapper .e-split-btn .e-selected-color .e-split-preview {
+  display: none;
+}
+
+.e-colorpicker-wrapper #element+.e-split-btn-wrapper .e-split-btn .e-selected-color::before {
+  content: '\e35c';
+}
+
+h4 {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+    font-size: 14px;
+}
