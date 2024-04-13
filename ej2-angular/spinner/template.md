@@ -48,6 +48,9 @@ setSpinner({ template: '<div style="width:100%;height:100%" class="custom-rollin
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spinner/set-spinner-cs1/src/main.ts %}
 {% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/spinner/set-spinner-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/spinner/set-spinner-cs1" %}
