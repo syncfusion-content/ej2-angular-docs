@@ -25,7 +25,10 @@ The following list of properties and its values are used in the Query Builder.
 | SelectOperator | Select operator |
 | StartsWith | Starts With|
 | EndsWith | Ends With |
+| DoesNotStartWith | Does Not Start With |
+| DoesNotEndWith | Does Not End With |
 | Contains | Contains |
+| DoesNotContain | Does Not Contain |
 | Equal | Equal |
 | NotEqual | Not Equal |
 | LessThan | Less Than |
