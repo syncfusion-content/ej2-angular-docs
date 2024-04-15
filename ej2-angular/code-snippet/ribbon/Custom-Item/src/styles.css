@@ -9,3 +9,44 @@
 @import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-ribbon/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
+
+/* Represents the styles for Custom Ribbon Item */
+
+.ribbonTemplate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .ribbonTemplate.Large {
+    flex-direction: column;
+  }
+  
+  .ribbonTemplate.Large .e-icons {
+    font-size: 35px;
+  }
+  
+  .ribbonTemplate.Medium .e-icons,
+  .ribbonTemplate.Small .e-icons{
+    font-size: 20px;
+    margin: 15px 5px;
+  }
+  
+  .ribbonTemplate.Small .text {
+    display:none;
+  }
+  
+  .custom-template input {
+    margin-left: 10px;
+    width: 100px;
+  }
+  
+  .custom-template.Medium {
+    display: flex;
+    align-items: center;
+  }
+  .custom-template.Medium input {
+    height: 14px;
+    margin-right: 10px;
+  }

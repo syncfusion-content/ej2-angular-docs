@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ribbon Items
+# Items in Angular Ribbon component
 
 Ribbon renders various built-in items based on the item [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItemType/) property. By default, the type property is set as `Button` which renders the Button.
 
@@ -576,7 +576,7 @@ You can customize the ribbon items with non-built-in items or HTML content by se
 {% include code-snippet/ribbon/Custom-Item/src/app.component.html %}
 {% endhighlight %}
 {% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/ribbon/Custom-Item/src/app.component.css %}
+{% include code-snippet/ribbon/Custom-Item/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   

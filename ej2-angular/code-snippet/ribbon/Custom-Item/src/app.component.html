@@ -2,9 +2,28 @@
     <e-ribbon-tabs>
         <e-ribbon-tab header="Home">
             <e-ribbon-groups>
-                <e-ribbon-group header="Clipboard" >
+                <e-ribbon-group header="Templates" [isCollapsible]=false>
                     <e-ribbon-collections>
-                        <e-ribbon-collection id="paste-collection">
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Template" [itemTemplate]="customTemplate">
+                                    <ng-template #customTemplate let-data="">
+                                      <span class="custom-template {{data.activeSize}}">
+                                        <label for="fname">First name:</label>
+                                        <input type="text" id="fname" name="fname">
+                                        <br><br>
+                                        <label for="lname">Last name:</label>
+                                        <input type="text" id="lname" name="lname">
+                                      </span>
+                                    </ng-template>
+                                  </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+                <e-ribbon-group header="Multimedia" >
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
                             <e-ribbon-items>
                                 <e-ribbon-item type="Template" [itemTemplate]="itemTemplate">
                                     <ng-template #itemTemplate let-data="">
