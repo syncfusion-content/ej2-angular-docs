@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collaborative Editing (preview) in Angular Document editor control | Syncfusion
+title: Collaborative Editing in Angular Document editor control | Syncfusion
 description: Learn how to enable collaborative editing in Syncfusion Angular Document editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Collaborative Editing (preview)
@@ -16,7 +16,7 @@ Allows multiple users to work on the same document simultaneously. This can be d
 
 ## Prerequisites
 
-The following are needed to enable collborative editing in Document Editor.
+The following are needed to enable collaborative editing in Document Editor.
 
 * `SignalR`
 * `Microsoft SQL Server`
@@ -367,7 +367,7 @@ private ActionInfo AddOperationsToTable(ActionInfo action)
 
 #### Add Web API to get previous operation as a backup to get lost operations
 
-On the client side, messages broadcasted using SignalR may be received in a different order, or some operations may be missed due to network issues. In these cases, we need a backup method to retrieve missing records from the database.
+On the client side, messages broadcast using SignalR may be received in a different order, or some operations may be missed due to network issues. In these cases, we need a backup method to retrieve missing records from the database.
 Using the following method, we can retrieve all operations after the last successful client-synced version and return all missing operations to the requesting client.
 
 ```csharp
@@ -413,4 +413,4 @@ private ActionInfo AddOperationsToTable(ActionInfo action)
 
 Full version of the code discussed about can be found in below GitHub location.
 
-Github Example: [`Collaborative editing examples`](https://github.com/SyncfusionExamples/EJ2-Document-Editor-Collaborative-Editing)
+GitHub Example: [`Collaborative editing examples`](https://github.com/SyncfusionExamples/EJ2-Document-Editor-Collaborative-Editing)

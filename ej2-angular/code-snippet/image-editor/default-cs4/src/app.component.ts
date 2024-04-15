@@ -28,7 +28,7 @@ export class AppComponent {
 
     public shapeChanging(args: ShapeChangeEventArgs): void {
         if (args.currentShapeSettings?.type === 'FreehandDraw') {
-            args.currentShapeSettings.color = 'red',
+            args.currentShapeSettings.strokeColor =  'red',
             args.currentShapeSettings.strokeWidth = 10
         }
     }
