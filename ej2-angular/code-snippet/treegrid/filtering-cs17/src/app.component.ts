@@ -6,7 +6,7 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     selector: 'app-container',
-    template: `<div class='container'>
+    template: `<div>
                <label for="unchecked"> Enable Case Sensitivity </label>
                <ejs-switch id="unchecked" (change)="onToggleCaseSensitive($event)"></ejs-switch>
                </div>

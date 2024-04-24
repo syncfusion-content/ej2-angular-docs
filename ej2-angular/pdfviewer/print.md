@@ -87,6 +87,159 @@ You can invoke print action using the following code snippet.,
 
 ```
 
+## Print the PDF document in the new window.
+
+PDF Viewer extension supports printing functionality for loaded PDF files directly within the browser. You can utilize the `printMode` parameter to specify the printing mode, with the option to choose `NewWindow` for printing. Below is a code snippet demonstrating how to implement this functionality
+
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,
+         ThumbnailViewService, ToolbarService, NavigationService,
+         TextSearchService, AnnotationService, TextSelectionService,
+         PrintService
+       } from '@syncfusion/ej2-angular-pdfviewer';
+@Component({
+  selector: 'app-container',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                            [documentPath]='document'
+                            [printMode] = "printMode"
+                            style="height:640px;display:block">
+                  </ejs-pdfviewer>
+              </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               AnnotationService, TextSearchService, TextSelectionService,
+               PrintService]
+  })
+  export class AppComponent implements OnInit {
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/23.1.43/dist/ej2-pdfviewer-lib";
+    public printMode: string = "NewWindow";
+  }
+
+{% endhighlight %}
+
+{% highlight ts tabtitle="Server-Backed" %}
+
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,
+         ThumbnailViewService, ToolbarService, NavigationService,
+         TextSearchService, AnnotationService, TextSelectionService,
+         PrintService
+       } from '@syncfusion/ej2-angular-pdfviewer';
+@Component({
+  selector: 'app-container',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                            [serviceUrl]='service'
+                            [documentPath]='document'
+                            [printMode] = "printMode"
+                            style="height:640px;display:block">
+                  </ejs-pdfviewer>
+              </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               AnnotationService, TextSearchService, TextSelectionService,
+               PrintService]
+  })
+  export class AppComponent implements OnInit {
+    public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public printMode: string = "NewWindow";
+  }
+
+{% endhighlight %}
+{% endtabs %}
+
+By setting the printMode to `NewWindow`, the extension will open a new window for printing the PDF document, providing a seamless and user-friendly printing experience.
+
+## Limiting the Dialog Opening for Printing
+
+In the Syncfusion PDF Viewer, you can control the printing process by leveraging the `printStart` event. This event enables you to customize the printing behavior, particularly restricting the dialog opening. Below is a code snippet demonstrating how to utilize this event
+
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,
+         ThumbnailViewService, ToolbarService, NavigationService,
+         TextSearchService, AnnotationService, TextSelectionService,
+         PrintService
+       } from '@syncfusion/ej2-angular-pdfviewer';
+@Component({
+  selector: 'app-container',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                            [documentPath]='document'
+                            (printStart)="printStart($event)"
+                            style="height:640px;display:block">
+                  </ejs-pdfviewer>
+              </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               AnnotationService, TextSearchService, TextSelectionService,
+               PrintService]
+  })
+  export class AppComponent implements OnInit {
+    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/23.1.43/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
+    }
+    printStart(args: any){
+      console.log(args);
+      args.cancel = true; 
+    }
+}
+
+{% endhighlight %}
+
+{% highlight ts tabtitle="Server-Backed" %}
+
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService, MagnificationService,
+         ThumbnailViewService, ToolbarService, NavigationService,
+         TextSearchService, AnnotationService, TextSelectionService,
+         PrintService
+       } from '@syncfusion/ej2-angular-pdfviewer';
+@Component({
+  selector: 'app-container',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+                  <ejs-pdfviewer id="pdfViewer"
+                            [serviceUrl]='service'
+                            [documentPath]='document'
+                            (printStart)="printStart($event)"
+                            style="height:640px;display:block">
+                  </ejs-pdfviewer>
+              </div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               AnnotationService, TextSearchService, TextSelectionService,
+               PrintService]
+  })
+  export class AppComponent implements OnInit {
+    public service = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+
+    ngOnInit(): void {
+    }
+    printStart(args: any){
+      console.log(args);
+      args.cancel = true; 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+In this code snippet, the `printStart` function is defined to handle the printStart event. By setting args.cancel to **true**, the print dialog opening is restricted. By default, the `cancel` property is set to `false`. 
+
 ## See also
 
 * [Toolbar items](./toolbar)

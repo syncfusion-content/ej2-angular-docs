@@ -25,11 +25,29 @@ export class AppComponent implements OnInit {
         this.filterOptions = {
            type: 'Menu',
            operators: {
-               stringOperator: [
-                   { value: 'contains', text: 'contains' },
-                   { value: 'startsWith', text: 'starts with' },
-                   { value: 'endsWith', text: 'ends with' }
-                ],
+            stringOperator: [
+              { value: 'startsWith', text: 'Starts With' },
+              { value: 'endsWith', text: 'Ends With' },
+              { value: 'contains', text: 'Contains' },
+              { value: 'equal', text: 'Equal' },
+              { value: 'notEqual', text: 'Not Equal' }
+            ],
+            numberOperator: [
+              { value: 'equal', text: 'Equal' },
+              { value: 'notEqual', text: 'Not Equal' },
+              { value: 'greaterThan', text: 'Greater Than' },
+              { value: 'lessThan', text: 'Less Than' }
+            ],
+            dateOperator: [
+              { value: 'equal', text: 'Equal' },
+              { value: 'notEqual', text: 'Not Equal' },
+              { value: 'greaterThan', text: 'After' },
+              { value: 'lessThan', text: 'Before' }
+            ],
+            booleanOperator: [
+              { value: 'equal', text: 'Equal' },
+              { value: 'notEqual', text: 'Not Equal' }
+            ]
             }
         };
     }

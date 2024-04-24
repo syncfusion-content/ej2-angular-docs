@@ -7,7 +7,7 @@ import {  HeaderCellInfoEventArgs } from '@syncfusion/ej2-grids';
 @Component({
     selector: 'app-container',
     encapsulation:ViewEncapsulation.None,
-    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks'  (headerCellInfo)="onHeaderCellInfo($event)">
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks'  (headerCellInfo)="onHeaderCellInfo($event)">
                   <e-columns>
                     <e-column field='taskID' headerText='Task ID' [allowSorting]="false" textAlign='Right' width=120></e-column>
                     <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>

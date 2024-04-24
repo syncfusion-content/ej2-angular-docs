@@ -36,7 +36,7 @@ let instance: Internationalization = new Internationalization();
                     <ng-template #detailTemplate let-data>
                         <div>
                             <div style="position: relative; display: inline-block; float: left; font-weight: bold; width: 10%;padding:5px 4px 2px 27px;;">
-                                <img src="images/{{data.FullName}}.png" alt="{{data.FullName}}"/>
+                                <img src="{{data.FullName}}.png" alt="{{data.FullName}}"/>
                             </div>
                             <div style="padding-left: 10px; display: inline-block; width: 66%; text-wrap: normal;font-size:13px;font-family:'Segoe UI';">
                                 <div class="e-description" style="word-wrap: break-word;">
@@ -149,7 +149,7 @@ let instance: Internationalization = new Internationalization();
                 <ng-template #detailTemplate let-data>
                  <div>
                   <div style="position: relative; display: inline-block; float: left; font-weight: bold; width: 10%;padding:5px 4px 2px 27px;;">
-                    <img src="images/{{data.FullName}}.png" alt="{{data.FullName}}"/>
+                    <img src="{{data.FullName}}.png" alt="{{data.FullName}}"/>
                   </div>
                   <div style="padding-left: 10px; display: inline-block; width: 66%; text-wrap: normal;font-size:13px;font-family:'Segoe UI';">
                     <div class="e-description" style="word-wrap: break-word;">
@@ -244,7 +244,7 @@ let instance: Internationalization = new Internationalization();
                 <ng-template #detailTemplate let-data>
                   <div *ngIf="data.hasChildRecords">
                       <div style="position: relative; display: inline-block; float: left; font-weight: bold; width: 10%;padding:5px 4px 2px 27px;;">
-                          <img src="images/{{data.FullName}}.png" alt="{{data.FullName}}"/>
+                          <img src="{{data.FullName}}.png" alt="{{data.FullName}}"/>
                       </div>
                       <div style="padding-left: 10px; display: inline-block; width: 66%; text-wrap: normal;font-size:13px;font-family:'Segoe UI';">
                           <div class="e-description" style="word-wrap: break-word;">

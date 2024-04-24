@@ -13,7 +13,7 @@ import { sampleData } from './datasource';
                 <button ejs-button id='below' (click)='addbelow()'>Add New Row as Below position</button>
                 <button ejs-button id='child' (click)='addchild()'>Add New Row as Child position</button>
           </div>
-            <ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' height='315' childMapping='subtasks' [editSettings]='editSettings'  >
+            <ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' height='250' childMapping='subtasks' [editSettings]='editSettings'  >
                   <e-columns>
                       <e-column field='taskID' headerText='Task ID' textAlign='Right' isPrimaryKey="true" width=90></e-column>
                       <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>

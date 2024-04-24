@@ -20,6 +20,35 @@ The following example demonstrates how to enable track changes.
  <ejs-documenteditor [enableTrackChanges]=true height="330px" style="display:block"></ejs-documenteditor>
 ```
 
+## Show/Hide Revisions Pane
+ 
+The Show/Hide Revisions Pane feature in the Document Editor allows users to toggle the visibility of the revisions pane, providing flexibility in managing tracked changes within the document.
+ 
+The following example code illustrates how to show/hide the revisions pane.
+
+```ts
+
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { DocumentEditorContainerComponent, ToolbarService } from '@syncfusion/ej2-angular-documenteditor'; 
+
+@Component({
+      selector: 'app-container', 
+      // specifies the template string for the Document Editor component
+      template: `<div>
+      <ejs-documenteditorcontainer #document_editor serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableTrackChanges]=true> </ejs-documenteditorcontainer></div>`,
+      encapsulation: ViewEncapsulation.None,
+      providers: [ToolbarService] 
+})
+export class AppComponent {
+    @ViewChild('document_editor')
+    public container: DocumentEditorContainerComponent;
+    container.documentEditor.showRevisions = true; // To show revisions pane
+    container.documentEditor.showRevisions = false; // To hide revisions pane
+
+}
+
+```
+
 ## Get all tracked revisions
 
 The following example demonstrate how to get all tracked revision from current document.

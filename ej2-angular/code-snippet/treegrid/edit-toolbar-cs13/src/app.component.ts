@@ -7,7 +7,7 @@ import { AutoComplete } from '@syncfusion/ej2-dropdowns';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid [dataSource]='data' [toolbar]='toolbarOptions' [treeColumnIndex]='1' height='315' [editSettings]='editSettings' childMapping='subtasks' >
+    template: `<ejs-treegrid #treegrid [dataSource]='data' [toolbar]='toolbarOptions' [treeColumnIndex]='1' height='250' [editSettings]='editSettings' childMapping='subtasks' >
         <e-columns>
                     <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
                     <e-column field='taskName' headerText='Task Name' editType='stringedit' [edit]='editOptions' textAlign='Left' width=180></e-column>

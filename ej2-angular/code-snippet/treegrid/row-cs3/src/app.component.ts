@@ -3,7 +3,7 @@ import { sampleData } from './datasource';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid id='TreeGrid' [dataSource]='data' height='315' [allowRowDragAndDrop]='true' [treeColumnIndex]='1' childMapping='subtasks' >
+    template: `<ejs-treegrid id='TreeGrid' [dataSource]='data' height='250' [allowRowDragAndDrop]='true' [treeColumnIndex]='1' childMapping='subtasks' >
                     <e-columns>
                         <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
                         <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>

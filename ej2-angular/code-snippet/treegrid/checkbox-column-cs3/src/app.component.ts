@@ -4,7 +4,7 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
   selector: 'app-container',
-  template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' autoCheckHierarchy='true' (dataBound)="databound()" >
+  template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' autoCheckHierarchy='true' (dataBound)="databound()" >
                 <e-columns>
                   <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                   <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180 [showCheckbox]='true'></e-column>

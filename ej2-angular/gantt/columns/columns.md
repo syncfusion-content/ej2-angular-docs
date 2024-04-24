@@ -411,28 +411,6 @@ To use `autoFitColumns` method, you need to inject **ResizeService** in the prov
 
 > You can autofit all the columns by invoking the `autoFitColumns` method without specifying column names.
 
-### AutoFit columns with empty space
-
-The Autofit feature is utilized to display columns in a gantt based on the defined width specified in the columns declaration. If the total width of the columns is less than the width of the gantt, this means that white space will be displayed in the gantt instead of the columns auto-adjusting to fill the entire gantt width.
-
-You can enable this feature by enabling the [autoFit](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofit) property of grid object in gantt instance using the [load](https://ej2.syncfusion.com/angular/documentation/api/gantt/#load) event of the gantt. This feature ensures that the column width is rendered only as defined in the gantt column definition.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/columns/columnautofit-cs2/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnautofit-cs2/src/app.module.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/columns/columnautofit-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/gantt/columns/columnautofit-cs2" %}
-
-> If any one of the column width is undefined, then the particular column will automatically adjust to fill the entire width of the gantt table, even if you have enabled the `autoFit` property of gantt.
-
 ## Locked columns
 
 The Syncfusion Gantt allows you to lock columns, which prevents them from being reordered and moves them to the first position. This functionality can be achieved by setting the [column.lockColumn](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#lockcolumn) property of treegrid object in gantt instance to **true**, which locks the column and moves it to the first position in the gantt.
@@ -554,6 +532,8 @@ Here is an example code that demonstrates how to control gantt actions for speci
 ## Customize column styles
 
 Customizing the gantt column styles allows you to modify the appearance of columns in the Gantt component to meet your design requirements. You can customize the font, background color, and other styles of the columns. To customize the columns styles in the gantt, you can use gantt event, css, property or method support.
+
+For more information check on this [documentation](https://ej2.syncfusion.com/angular/documentation/gantt/style-and-appearance).
 
 ## Manipulating columns
 

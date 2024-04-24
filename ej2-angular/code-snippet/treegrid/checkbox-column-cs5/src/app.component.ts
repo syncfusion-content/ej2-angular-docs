@@ -5,7 +5,7 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 @Component({
   selector: 'app-container',
   encapsulation: ViewEncapsulation.None,
-  template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' 
+  template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' 
                 autoCheckHierarchy='true' enableCollapseAll="true" (checkboxChange)="checkboxChange($event)">
                 <e-columns>
                   <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>

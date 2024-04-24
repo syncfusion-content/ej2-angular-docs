@@ -12,7 +12,7 @@ import { sampleData } from './datasource';
                </div>
                <div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>
           
-                <ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' autoCheckHierarchy='true' >
+                <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' autoCheckHierarchy='true' >
                  <e-columns>
                    <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180 [showCheckbox]='true'></e-column>

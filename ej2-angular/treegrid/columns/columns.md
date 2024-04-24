@@ -67,7 +67,7 @@ To adjust the column width in a Tree Grid, you can use the [width](https://ej2.s
 6. When the columns are hidden using the column chooser, the width of the hidden columns is removed from the total tree grid width, and the remaining columns will be resized to fill the available space.
 7. If the parent element has a fixed width, the TreeGrid component will inherit that width and occupy the available space. However, if the parent element does not have a fixed width, the TreeGrid component will adjust its width dynamically based on the available space.
 
-> To learn more about resizing, you can refer to the resizing section [here](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/column-resizing)
+> To learn more about resizing, you can refer to the resizing section [here]((https://ej2.syncfusion.com/angular/documentation/treegrid/columns/column-resizing)
 
 #### Supported types for column width:
 

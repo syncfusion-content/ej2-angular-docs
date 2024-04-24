@@ -6,13 +6,13 @@ import { ResizeService } from '@syncfusion/ej2-angular-gantt';
 @Component({
     selector: 'app-root',
     template:
-        `<ejs-gantt id="ganttDefault" #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings"  [splitterSettings] = "splitterSettings" [allowResizing] = "true"  (dataBound)='dataBound()'>
+        `<ejs-gantt id="ganttDefault" #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]='1'  [splitterSettings] = "splitterSettings" [allowResizing] = "true"  (dataBound)='dataBound()'>
         <e-columns>
             <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=90></e-column>
-            <e-column field='TaskName' headerText='Task Name' textAlign='Left' width=180></e-column>
+            <e-column field='TaskName' headerText='Task Name' textAlign='Left' width=270></e-column>
             <e-column field='StartDate' headerText='Start Date' textAlign='Right' format='yMd' width=120></e-column>
             <e-column field='Duration' headerText='Duration' textAlign='Right' width=90></e-column>
-            <e-column field='pProgress' headerText='Progress' textAlign='Right' width=90></e-column>
+            <e-column field='Progress' headerText='Progress' textAlign='Right' width=120></e-column>
         </e-columns>
        </ejs-gantt>`,
     providers: [ResizeService],
@@ -36,7 +36,7 @@ export class AppComponent {
             child: 'subtasks',
         };
         this.splitterSettings = {
-            position: '50%'
+            position: '75%'
         };
 
     }
