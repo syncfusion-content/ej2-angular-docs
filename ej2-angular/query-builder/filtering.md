@@ -21,9 +21,7 @@ You can create or delete conditions by interacting through the user interface an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/filtering-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/filtering-cs6/src/main.ts %}
 {% endhighlight %}
