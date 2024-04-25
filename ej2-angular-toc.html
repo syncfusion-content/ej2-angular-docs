@@ -925,6 +925,7 @@ AppBar
         <li><a href="/ej2-angular/document-editor/global-local">Globalization</a></li>
         <li><a href="/ej2-angular/document-editor/notes">Footnotes and Endnotes</a></li>
         <li><a href="/ej2-angular/document-editor/collaborative-editing">Collaborative Editing</a></li>
+        <li><a href="/ej2-angular/document-editor/collaborative-editing-java">Collaborative Editing using Java</a></li>
         <li><a href="/ej2-angular/document-editor/view">View</a></li>
         <li>How To
            <ul>
@@ -1088,9 +1089,12 @@ AppBar
       <li><a href="/ej2-angular/gantt/observable">Observables</a></li>
       <li><a href="/ej2-angular/gantt/columns/columns">Columns</a>
         <ul>
-           <li><a href="/ej2-angular/gantt/columns/column-reordering">Column Reordering</a></li>
-           <li><a href="/ej2-angular/gantt/columns/column-resizing">Column Resizing</a></li>
+           <li><a href="/ej2-angular/gantt/columns/treecolumn">Tree Column</a></li>
+           <li><a href="/ej2-angular/gantt/columns/column-rendering">Column Rendering</a></li>
+           <li><a href="/ej2-angular/gantt/columns/column-headers">Column Headers</a></li>
            <li><a href="/ej2-angular/gantt/columns/column-template">Column Template</a></li>
+           <li><a href="/ej2-angular/gantt/columns/column-reorder">Column Reorder</a></li>
+           <li><a href="/ej2-angular/gantt/columns/column-resizing">Column Resizing</a></li>
            <li><a href="/ej2-angular/gantt/columns/column-menu">Column Menu</a></li>
            <li><a href="/ej2-angular/gantt/columns/responsive-columns">Responsive Columns</a></li>
            <li><a href="/ej2-angular/gantt/columns/check-box-column">Checkbox Column</a></li>
@@ -1802,6 +1806,7 @@ Mention
                  <li><a href="/ej2-angular/pdfviewer/how-to/custom-context-menu">Customize context menu</a></li>
                  <li><a href="/ej2-angular/pdfviewer/how-to/pagerenderstarted-pagerendercompleted">PageRenderInitiate and PageRenderComplete event</a></li>
                  <li><a href="/ej2-angular/pdfviewer/how-to/open-bookmark">Open and Close Bookmark pane programmatically</a></li>
+                 <li><a href="/ej2-angular/pdfviewer/how-to/lock-formfield-in-a-document">Locking Form Fields in a PDF document</a></li>
               </ul>
           </li>
           <li>Troubleshooting
@@ -2345,11 +2350,6 @@ Ribbon
        <li><a href="/ej2-angular/spreadsheet/undo-redo">Undo and Redo</a></li>
        <li><a href="/ej2-angular/spreadsheet/accessibility">Accessibility</a></li>
        <li><a href="/ej2-angular/spreadsheet/styles">Styles and Appearance</a></li>
-       <li>Use Cases
-          <ul>
-            <li><a href="/ej2-angular/spreadsheet/use-cases/collaborative-editing">Collaborative Editing</a></li>
-          </ul>
-       </li>
        <li><a href="/ej2-angular/spreadsheet/ej1-api-migration">Migration from Essential JS 1</a></li>
        <li>How To
          <ul>
@@ -2889,7 +2889,7 @@ Stepper
     </ul>
  </li> <li>Release Notes
                 <ul>
-				<li>2024 Volume 1 - 25.*<ul><li>Weekly Release<ul><li><a href="/ej2-angular/release-notes/25.1.40">25.1.40</a></li><li><a href="/ej2-angular/release-notes/25.1.39">25.1.39</a></li><li><a href="/ej2-angular/release-notes/25.1.38">25.1.38</a></li><li><a href="/ej2-angular/release-notes/25.1.37">25.1.37</a></li></ul></li><li><a href="/ej2-angular/release-notes/25.1.35">25.1.35 Main Release</a></li></ul></li>
+				<li>2024 Volume 1 - 25.*<ul><li>Weekly Release<ul><li><a href="/ej2-angular/release-notes/25.1.41">25.1.41</a></li><li><a href="/ej2-angular/release-notes/25.1.40">25.1.40</a></li><li><a href="/ej2-angular/release-notes/25.1.39">25.1.39</a></li><li><a href="/ej2-angular/release-notes/25.1.38">25.1.38</a></li><li><a href="/ej2-angular/release-notes/25.1.37">25.1.37</a></li></ul></li><li><a href="/ej2-angular/release-notes/25.1.35">25.1.35 Main Release</a></li></ul></li>
 				<li>2023 Volume 4 - 24.*<ul><li>Weekly Release<ul><li><a href="/ej2-angular/release-notes/24.2.9">24.2.9</a></li><li><a href="/ej2-angular/release-notes/24.2.8">24.2.8</a></li><li><a href="/ej2-angular/release-notes/24.2.7">24.2.7</a></li><li><a href="/ej2-angular/release-notes/24.2.6">24.2.6</a></li><li><a href="/ej2-angular/release-notes/24.2.5">24.2.5</a></li><li><a href="/ej2-angular/release-notes/24.2.4">24.2.4</a></li><li><a href="/ej2-angular/release-notes/24.1.47">24.1.47</a></li><li><a href="/ej2-angular/release-notes/24.1.46">24.1.46</a></li><li><a href="/ej2-angular/release-notes/24.1.45">24.1.45</a></li><li><a href="/ej2-angular/release-notes/24.1.44">24.1.44</a></li><li><a href="/ej2-angular/release-notes/24.1.43">24.1.43</a></li></ul></li>				<li><a href="/ej2-angular/release-notes/24.2.3">24.2.3 Service Pack Release</a></li>
 				<li><a href="/ej2-angular/release-notes/24.1.41">24.1.41 Main Release</a></li></ul></li>
 				<li>2023 Volume 3 - 23.*<ul><li> Weekly Release<ul><li><a href="/ej2-angular/release-notes/23.2.7">23.2.7</a></li><li><a href="/ej2-angular/release-notes/23.2.6">23.2.6</a></li><li><a href="/ej2-angular/release-notes/23.2.5">23.2.5</a></li><li><a href="/ej2-angular/release-notes/23.1.44">23.1.44</a></li><li><a href="/ej2-angular/release-notes/23.1.43">23.1.43</a></li><li><a href="/ej2-angular/release-notes/23.1.42">23.1.42</a></li><li><a href="/ej2-angular/release-notes/23.1.41">23.1.41</a></li><li><a href="/ej2-angular/release-notes/23.1.40">23.1.40</a></li><li><a href="/ej2-angular/release-notes/23.1.39">23.1.39</a></li><li><a href="/ej2-angular/release-notes/23.1.38">23.1.38</a></li></ul></li>

@@ -1,0 +1,7 @@
+.e-treegrid .e-icon-ascending::before  {
+    content: '\e306' !important;
+  }
+    
+.e-treegrid .e-icon-descending::before {
+    content: '\e304';
+  }

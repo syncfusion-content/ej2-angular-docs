@@ -7,7 +7,7 @@ import { TreeGridComponent, Column } from '@syncfusion/ej2-angular-treegrid';
   template: `<button ejs-button id='add' cssClass="e-info" (click)='addColumns()'> Add Column</button>
              <button ejs-button id='delete' cssClass="e-info" (click)='deleteColumns()'> Delete Column</button>
     
-             <ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks'>
+             <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks'>
                   <e-columns>
                       <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                       <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>

@@ -6,10 +6,10 @@ import { ReorderService } from '@syncfusion/ej2-angular-gantt';
 @Component({
     selector: 'app-root',
     template:
-        `<ejs-gantt id="ganttDefault" #gantt height="430px" [columns]='columns' [dataSource]="data" [taskFields]="taskSettings"  [splitterSettings] = "splitterSettings" [allowReordering]='true'>
+        `<ejs-gantt id="ganttDefault" #gantt height="430px" [columns]='columns' [dataSource]="data"  [taskFields]="taskSettings"  [splitterSettings] = "splitterSettings" [allowReordering]='true'>
        </ejs-gantt>`,
     providers: [ReorderService],
-    styleUrls:['/app.component.css'],
+    styleUrls: ['/app.component.css'],
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
@@ -33,14 +33,14 @@ export class AppComponent {
         };
         this.columns = [
             { field: 'TaskID', headerText: 'Task ID', textAlign: 'Left', width: '100' },
-            { field: 'TaskName', headerText: 'Task Name', width: '150', lockColumn: true, customAttributes: {class: 'customcss'} },
+            { field: 'TaskName', headerText: 'Task Name', width: '270', lockColumn: true, customAttributes: { class: 'customcss' } },
             { field: 'StartDate', headerText: 'Start Date', width: '150' },
             { field: 'Duration', headerText: 'Duration', width: '150' },
             { field: 'Progress', headerText: 'Progress', width: '150' },
         ];
         this.splitterSettings = {
-            position: '50%'
+            position: '75%'
         };
-        this.customAttributes = {class: 'customcss'};
+        this.customAttributes = { class: 'customcss' };
     }
 }

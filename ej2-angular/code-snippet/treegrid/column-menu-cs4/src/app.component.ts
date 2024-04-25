@@ -11,10 +11,10 @@ import {
 
 @Component({
   selector: 'app-container',
-  template: `<ejs-treegrid #treegrid height='315' allowSorting='true' allowPaging='true' [dataSource]='data' [treeColumnIndex]='1' childMapping='subtasks' [columnMenuItems]='columnMenuItems' [filterSettings]='filterSettings' [allowFiltering]='true' showColumnMenu="true"  (columnMenuClick)='columnMenuClick($event)'>
+  template: `<ejs-treegrid #treegrid height='250' allowSorting='true' allowPaging='true' [dataSource]='data' [treeColumnIndex]='1' childMapping='subtasks' [columnMenuItems]='columnMenuItems' [filterSettings]='filterSettings' [allowFiltering]='true' showColumnMenu="true"  (columnMenuClick)='columnMenuClick($event)'>
                   <e-columns>
                         <e-column field='taskID' headerText='Task ID' textAlign='Right' width=140></e-column>
-                        <e-column field='taskName' headerText='Task Name' textAlign='Left' width=160></e-column>
+                        <e-column field='taskName' headerText='Task Name' textAlign='Left' width=240></e-column>
                         <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=160></e-column>
                         <e-column field='duration' headerText='Duration' textAlign='Right' width=150></e-column>
                         <e-column field='progress' headerText='Progress' textAlign='Right' width=150></e-column>

@@ -14,10 +14,10 @@ Document Editor exports the document into various known file formats in client-s
 
 We are providing two types of save APIs  as mentioned below.
 
-|API name|Purpose|
-|--------|---------|
-|save(filename,FormatType):void<br>FormatType: Sfdt or Docx or Txt|Creates the document with specified file name and format type. Then, the created file is downloaded in the client browser by default.|
-|saveAsBlob(FormatType):Blob|Creates the document in specified format type and returns the created document as Blob.<br>This blob can be uploaded to your required server, database, or file path.|
+|API name|Purpose|Code Snippet for Document Editor|Code Snippet for Document Editor Container|
+|--------|---------|----------|----------|
+|save(filename,FormatType):void<br>FormatType: Sfdt or Docx or Txt|Creates the document with specified file name and format type. Then, the created file is downloaded in the client browser by default.|this.documentEditor.save('sample', 'Sfdt')|this.container.documentEditor.save('sample', 'Sfdt')|
+|saveAsBlob(FormatType):Blob|Creates the document in specified format type and returns the created document as Blob.<br>This blob can be uploaded to your required server, database, or file path.|this.documentEditor.saveAsBlob('Sfdt')|this.container.documentEditor.saveAsBlob('Sfdt')|
 
 ## SFDT export
 
@@ -36,6 +36,20 @@ The following example shows how to export documents in document editor as Syncfu
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/document-editor/export-cs1" %}
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/document-editor/export-container-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/document-editor/export-container-cs1/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/document-editor/export-container-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/document-editor/export-container-cs1" %}
 
 ## Word export
 
@@ -57,11 +71,26 @@ The following example shows how to export the document as Word document (.docx).
   
 {% previewsample "page.domainurl/samples/document-editor/export-cs2" %}
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/document-editor/export-container-cs2/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/document-editor/export-container-cs2/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/document-editor/export-container-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/document-editor/export-container-cs2" %}
+
 ## Template export
 
 The following example shows how to export the document as Word Template (.dotx).
 
 >Note: The Syncfusion Document Editor component's document pagination (page-by-page display) can't be guaranteed for all the Word documents to match the pagination of Microsoft Word application. For more information about [why the document pagination (page-by-page display) differs from Microsoft Word] (../document-editor/import/#why-the-document-pagination-differs-from-microsoft-word)
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/export-cs4/src/app.component.ts %}
@@ -75,6 +104,21 @@ The following example shows how to export the document as Word Template (.dotx).
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/document-editor/export-cs4" %}
+
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/document-editor/export-container-cs4/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/document-editor/export-container-cs4/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/document-editor/export-container-cs4/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/document-editor/export-container-cs4" %}
 
 ## Text export
 
@@ -93,6 +137,20 @@ The following example shows how to export document as text document (.txt).
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/document-editor/export-cs3" %}
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/document-editor/export-container-cs3/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/document-editor/export-container-cs3/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/document-editor/export-container-cs3/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/document-editor/export-container-cs3" %}
 
 ## Export as blob
 

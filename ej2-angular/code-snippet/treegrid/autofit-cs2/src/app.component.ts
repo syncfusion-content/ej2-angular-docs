@@ -4,7 +4,7 @@ import { TreeGridComponent,TreeActionEventArgs, } from '@syncfusion/ej2-angular-
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' [allowPaging]="true"
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' [allowPaging]="true"
                  [toolbar]="toolbarItems" (actionComplete)="onActionComplete($event)" [showColumnChooser]= 'true' >
                     <e-columns>
                       <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>

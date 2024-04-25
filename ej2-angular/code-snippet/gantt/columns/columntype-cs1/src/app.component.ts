@@ -4,14 +4,14 @@ import { GanttData } from './data';
 @Component({
   selector: 'app-root',
   template:
-    `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [splitterSettings] = "splitterSettings" [taskFields]="taskSettings">
+    `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [splitterSettings] = "splitterSettings" [taskFields]="taskSettings" [treeColumnIndex]='1'>
           <e-columns>
               <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=90 type='number'></e-column>
-              <e-column field='TaskName' headerText='Task Name' textAlign='Left' width=150 type='string'></e-column>
+              <e-column field='TaskName' headerText='Task Name' textAlign='Left' width=270 type='string'></e-column>
               <e-column field='StartDate' headerText='Start Date' textAlign='Right' width=150 format='yMd' type='date' ></e-column>
               <e-column field='EndDate' headerText='End Date' textAlign='Right' width=150 format='dd/MM/yyyy hh:mm' type='dateTime' ></e-column>
               <e-column field='Duration' headerText='Duration' textAlign='Right' width=90 type='number'></e-column>
-              <e-column field='Progress' headerText='Progress' textAlign='Right' width=90 type='number'></e-column>
+              <e-column field='Progress' headerText='Progress' textAlign='Right' width=120 type='number'></e-column>
               <e-column field='Verified' headerText='Verified' width=100 type='boolean' displayAsCheckBox='true'></e-column>
           </e-columns>
        </ejs-gantt>`,

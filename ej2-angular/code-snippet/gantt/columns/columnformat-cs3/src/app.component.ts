@@ -1,21 +1,21 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { setCulture, loadCldr, setCurrencyCode } from '@syncfusion/ej2-base';
-import currencies from 'cldr-data/main/es-AR/currencies.json';
-import cagregorian from 'cldr-data/main/es-AR/ca-gregorian.json';
-import numbers from 'cldr-data/main/es-AR/numbers.json';
-import timeZoneNames from 'cldr-data/main/es-AR/timeZoneNames.json';
+import cagregorian from './ca-gregorian.json';
+import currencies from './currencies.json';
+import numbers from './numbers.json';
+import timeZoneNames from './timeZoneNames.json';
 import { GanttData } from './data';
 
 @Component({
   selector: 'app-root',
   template:
-    `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [splitterSettings] = "splitterSettings" [locale]='locale' [taskFields]="taskSettings">
+    `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [splitterSettings] = "splitterSettings" [locale]='locale' [taskFields]="taskSettings" [treeColumnIndex]='1'>
             <e-columns>      
               <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=90 ></e-column>
-              <e-column field='TaskName' headerText='Task Name' textAlign='Left' width=150 ></e-column>
+              <e-column field='TaskName' headerText='Task Name' textAlign='Left' width=270 ></e-column>
               <e-column field='StartDate' headerText='Start Date' textAlign='Right' width=150 [format]='formatOptions'></e-column>
               <e-column field='Duration' headerText='Duration' textAlign='Right' width=90></e-column>
-              <e-column field='Progress' headerText='Progress' textAlign='Right' width=90 format='c2' type='number'></e-column>
+              <e-column field='Progress' headerText='Progress' textAlign='Right' width=120 format='c2' type='number'></e-column>
         </e-columns>
        </ejs-gantt>`,
   encapsulation: ViewEncapsulation.None

@@ -14,7 +14,7 @@ import {  TextWrapSettingsModel } from '@syncfusion/ej2-angular-grids';
                </ejs-dropdownlist>
               </div>
     
-              <ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' allowPaging='true' allowTextWrap='true' 
+              <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' allowPaging='true' allowTextWrap='true' 
                [textWrapSettings]='wrapSettings'>
                  <e-columns>
                     <e-column field='taskID' headerText='Task ID' [allowSorting]="false" textAlign='Right' width=120></e-column>

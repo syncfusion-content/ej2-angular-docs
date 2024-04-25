@@ -40,7 +40,7 @@ export class AppComponent implements OnInit {
     public columnFilterSettings?: FilterSettingsModel;
     public fieldData: string[] | undefined;
     public typeData: string[] = [];
-    public column: Column | undefined;
+    public column_inx: any;
     ngOnInit(): void {
         this.data = sampleData;
     }
@@ -51,12 +51,12 @@ export class AppComponent implements OnInit {
     onFieldChange(args: ChangeEventArgs): void {
       (this.typeDropdown as DropDownListComponent).enabled = true;
       this.typeData = ['Menu', 'Excel'];
-      this.column = (this.treegrid as TreeGridComponent).getColumnByField(args.value as string);
+      this.column_inx = (this.treegrid as TreeGridComponent).getColumnIndexByField(args.value as string);
     }
     onTypeChange(args: ChangeEventArgs): void {
       this.columnFilterSettings = { type: args.value as FilterType};
-      (this.column as Column).filter = this.columnFilterSettings;
-      (this.treegrid as TreeGridComponent).refresh();
+      ((this.treegrid as TreeGridComponent).columns[this.column_inx] as Column).filter=this.columnFilterSettings;
+      (this.treegrid as TreeGridComponent).refreshColumns();
     }
 }
 

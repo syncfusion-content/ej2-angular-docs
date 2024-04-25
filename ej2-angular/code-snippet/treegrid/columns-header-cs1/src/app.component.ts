@@ -5,7 +5,7 @@ import { headerData } from './datasource';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' childMapping='subtasks' height='315' >
+    template: `<ejs-treegrid [dataSource]='data' childMapping='subtasks' height='250' >
         <e-columns>
             <e-column field='taskName' width='170'><ng-template #headerTemplate>      <div>
         <div>

@@ -1,37 +1,31 @@
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
-import { sampleData } from './datasource';
-import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { Component, OnInit } from '@angular/core';
+import { DataManager,Query, WebApiAdaptor,UrlAdaptor } from '@syncfusion/ej2-data';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid [dataSource]='data' height='275' [treeColumnIndex]='1' [allowFiltering]='true' [filterSettings]="filterSettings" (actionBegin)='actionBegin($event)' childMapping='subtasks' >
-        <e-columns>
-                    <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
-                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=150></e-column>
-                    <e-column field='startDate' headerText='Start Date' textAlign='Right' type='date' format='yMd' width=120></e-column>
-                    <e-column field='duration' headerText='Duration'  textAlign='Right' width=120></e-column>
-        </e-columns>
+    template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' [query]='query' parentIdMapping='ParentItem' hasChildMapping='isParent' idMapping='TaskID' height=265 allowPaging='true' allowFiltering='true' [pageSettings]='pageSettings' [filterSettings]='filterSettings'>
+                    <e-columns>
+                        <e-column field='TaskID' headerText='Task ID' width='90' textAlign='Right'></e-column>
+                        <e-column field='TaskName' headerText='Task Name' width='170'></e-column>
+                        <e-column field='StartDate' headerText='Start Date' width='130' format="yMd" textAlign='Right'></e-column>
+                        <e-column field='Duration' headerText='Duration' width='80' textAlign='Right'></e-column>
+                    </e-columns>
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
-    public data?: Object[];
-    public filterSettings?: Object;
-    @ViewChild('treegrid')
-    public treeGridObj?: TreeGridComponent;
-    actionBegin(e: any) {
-     if(e.requestType === 'filtersearchbegin' && e.column.type === "string")
-     {
-        e.operator = 'contains';
-      }
-    }
+
+    public data?: DataManager;
+    public query?: Query;
+  public pageSettings: Object | undefined;
+  public filterSettings: Object | undefined;
+
     ngOnInit(): void {
-        this.data = sampleData;
-        this.filterSettings = {type: 'Excel'};
-
-    }
+        this.data = new DataManager({
+                url: 'https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData',
+                adaptor: new WebApiAdaptor, crossDomain: true
+            });
+        this.query = new Query().addParams('ej2treegrid', 'true');
+        this.pageSettings = { pageCount: 5 };
+        this.filterSettings = { type: 'Excel', enableInfiniteScrolling: true };
 }
-
-
-
+}

@@ -9,7 +9,6 @@ import { PageSettingsModel, TreeGridComponent } from '@syncfusion/ej2-angular-tr
     template: `<ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' parentIdMapping='parentID' idMapping='TaskID' height=265 allowPaging="true" [pageSettings]="pageSettings" (rowDataBound)='rowDataBound($event)'>
                     <e-columns> 
                         <e-column field='S.No' textAlign='Center' width=120></e-column>
-                        <e-column field='TaskID' headerText='Task ID' width='90' textAlign='Right'></e-column>
                         <e-column field='TaskName' headerText='Task Name' width='170'></e-column>
                         <e-column field='StartDate' headerText='Start Date' width='130' format="yMd" textAlign='Right'></e-column>
                         <e-column field='Duration' headerText='Duration' width='80' textAlign='Right'></e-column>

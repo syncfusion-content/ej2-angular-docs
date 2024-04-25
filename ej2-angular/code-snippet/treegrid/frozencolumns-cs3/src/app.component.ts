@@ -11,7 +11,7 @@ import {
 
 @Component({
     selector: 'app-container',
-    template: `<div style="display: flex;margin-top:10rem" >
+    template: `<div style="display: flex;" >
                   <label style="padding: 10px 10px 26px 0"> Change column: </label>
                   <ejs-dropdownlist id="columnDropDown" #columnDropDown index="7" [dataSource]="columnData" [fields]="fields"
                    width="100px"></ejs-dropdownlist>

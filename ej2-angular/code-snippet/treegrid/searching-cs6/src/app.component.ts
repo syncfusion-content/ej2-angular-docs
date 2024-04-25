@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
     }
     created(args: any): void {
         (document.getElementById((this.treegrid as TreeGridComponent).grid.element.id + "_searchbar") as HTMLElement).addEventListener('keyup', () => {
-                (this.treegrid as TreeGridComponent).search(((event as any).target as HTMLInputElement).value)
+                (this.treegrid as TreeGridComponent).search(((event as MouseEvent).target as HTMLInputElement).value)
         });
     }
 }

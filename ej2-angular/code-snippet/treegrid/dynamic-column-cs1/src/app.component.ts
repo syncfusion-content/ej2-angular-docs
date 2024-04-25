@@ -5,7 +5,7 @@ import { sampleData } from './datasource';
 import { ColumnModel } from '@syncfusion/ej2-angular-treegrid';
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks'>
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks'>
                     <e-columns>
                          <e-column *ngFor="let column of columns" [field]="column.field" [headerText]="column.headerText"></e-column> 
                      </e-columns>
