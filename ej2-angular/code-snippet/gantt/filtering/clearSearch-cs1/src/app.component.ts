@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { FilterService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
@@ -7,6 +12,12 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { ToolbarItem, SearchSettingsModel } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [FilterService],
+standalone: true,
     selector: 'app-root',
     template:
        `<button ejs-button id='clearSearch' (click)='clearSearch()'>Clear Search</button>

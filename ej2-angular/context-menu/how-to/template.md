@@ -20,9 +20,7 @@ This can be achieved by appending table layout while `li` rendering by using `be
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/context-menu/table-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/context-menu/table-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/context-menu/table-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ In the following example, CheckBox component is placed inside each `li` element 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/context-menu/how-to-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/context-menu/how-to-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/context-menu/how-to-cs2/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+
 
 
 
@@ -7,6 +11,13 @@ import { RowDataBoundEventArgs, EditSettingsModel, GridComponent } from '@syncfu
 import { MouseEventArgs } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+,
+standalone: true,
 
     selector: 'app-root',
     template: `<ejs-grid id="grid" [dataSource]='data' (rowDataBound)='rowDataBound($event)' [editSettings]='editSettings'>

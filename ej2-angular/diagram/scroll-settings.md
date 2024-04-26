@@ -26,9 +26,7 @@ In the following example, the vertical scroll bar is scrolled down by 50px and h
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/scrollsettings/scroll-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/scrollsettings/scroll-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/scrollsettings/scroll-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ You can programmatically change the scroll offsets at runtime by using the clien
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/scrollsettings/update-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/scrollsettings/update-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/scrollsettings/update-cs1/src/main.ts %}
 {% endhighlight %}
@@ -75,9 +71,7 @@ The autoscroll border is used to specify the maximum distance between the object
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/scrollsettings/autoscroll-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/scrollsettings/autoscroll-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/scrollsettings/autoscroll-cs1/src/main.ts %}
 {% endhighlight %}
@@ -102,9 +96,7 @@ The following code example illustrates how to specify the scroll limit.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/scrollsettings/scrolllimit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/scrollsettings/scrolllimit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/scrollsettings/scrolllimit-cs1/src/main.ts %}
 {% endhighlight %}
@@ -122,9 +114,7 @@ The following code example illustrates how to set scroll padding to diagram regi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/scrollsettings/scrolllimit-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/scrollsettings/scrolllimit-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/scrollsettings/scrolllimit-cs2/src/main.ts %}
 {% endhighlight %}
@@ -140,9 +130,7 @@ Scrolling beyond any particular rectangular area can be restricted by using the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/scrollsettings/scrollablearea-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/scrollsettings/scrollablearea-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/scrollsettings/scrollablearea-cs1/src/main.ts %}
 {% endhighlight %}

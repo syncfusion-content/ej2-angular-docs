@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ForeignKeyService } from '@syncfusion/ej2-angular-grids'
+
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ForeignKeyService, AggregateService, getForeignData, CustomSummaryType, AggregateColumnModel, GridComponent, Column } from '@syncfusion/ej2-angular-grids';
@@ -5,6 +9,13 @@ import { data, employeeData } from './datasource';
 import { getValue } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [ForeignKeyService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='280'>
                     <e-columns>

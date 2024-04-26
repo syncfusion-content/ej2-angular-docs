@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
+import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
+imports: [
+         ToolbarModule, TooltipModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `
          <button id='Template' class='e-btn'>Template</button>

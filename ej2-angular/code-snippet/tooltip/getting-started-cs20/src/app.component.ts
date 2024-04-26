@@ -1,8 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
+imports: [
+        
+        TooltipModule,
+        ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
         <p>A green home is a type of house designed to be

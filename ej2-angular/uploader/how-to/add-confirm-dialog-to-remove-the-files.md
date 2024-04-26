@@ -17,9 +17,7 @@ Here, ej2 dialog is used as confirm dialog. Refer to the following example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/confirm-dialog-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/confirm-dialog-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/confirm-dialog-cs1/src/main.ts %}
 {% endhighlight %}

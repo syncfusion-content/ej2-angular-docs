@@ -33,9 +33,7 @@ In the below demo, designed for simple train reservation module that enable/disa
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/wizard-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/wizard-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tab/wizard-cs1/src/main.ts %}
 {% endhighlight %}

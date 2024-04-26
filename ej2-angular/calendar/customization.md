@@ -26,9 +26,7 @@ The following example demonstrates how to disable weekends of every month.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/calendar/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/getting-started-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/calendar/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +60,7 @@ The following example highlights the world health date (7th April every year) an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/calendar/highlight-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/highlight-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="style.css" %}
 {% include code-snippet/calendar/highlight-cs1/src/style.css %}
 {% endhighlight %}
@@ -83,9 +79,7 @@ You can highlight the weekends of every month in a Calendar by using the [`rende
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/calendar/highlight-weekend-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/highlight-weekend-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/calendar/highlight-weekend-cs1/src/main.ts %}
 {% endhighlight %}

@@ -20,9 +20,7 @@ In this demo, the [`frozenColumns`](https://ej2.syncfusion.com/angular/documenta
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/frozencolumns-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/frozencolumns-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/frozencolumns-cs1/src/main.ts %}
 {% endhighlight %}
@@ -41,9 +39,7 @@ the `isFrozen` property.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/isfrozen-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/isfrozen-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/isfrozen-cs1/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +62,7 @@ In this demo, the **Task Name** column is frozen at the left and the **Priority*
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/isfrozen-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/isfrozen-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/isfrozen-cs2/src/main.ts %}
 {% endhighlight %}
@@ -122,9 +116,7 @@ Validation rules for the 'duration' and 'taskID' columns can be added in the fol
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/isfrozen-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/isfrozen-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/isfrozen-cs3/src/main.ts %}
 {% endhighlight %}

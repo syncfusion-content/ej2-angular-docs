@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 
@@ -15,6 +19,13 @@ enableRipple(true);
 loadCldr(numberingSystems, gregorian, numbers);
 
 @Component({
+imports: [
+        
+        TimePickerModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
         <ejs-timepicker [locale]='locale' [value]='dateValue'></ejs-timepicker>

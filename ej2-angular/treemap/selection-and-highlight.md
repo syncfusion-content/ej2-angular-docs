@@ -20,9 +20,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/treemap/select
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs51/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs51/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs51/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/treemap/highli
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs52/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs52/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs52/src/main.ts %}
 {% endhighlight %}

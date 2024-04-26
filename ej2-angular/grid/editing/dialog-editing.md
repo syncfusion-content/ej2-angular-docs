@@ -20,9 +20,7 @@ Here's an example how to enable dialog editing in the angular grid component:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs7/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ The following example that demonstrates how to customize the edit dialog using t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs8/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ In the following example, the **CustomerID** column is rendered as a hidden colu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs9/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +87,7 @@ The following example demonstrate the wizard like editing in the grid with the u
 {% highlight html tabtitle="wizardtemplate.html" %}
 {% include code-snippet/grid/wizardtemplate-cs1/src/wizardtemplate.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/wizardtemplate-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/wizardtemplate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -113,9 +105,7 @@ In the following sample, using the `dialog` argument of the `actionComplete` eve
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs10/src/main.ts %}
 {% endhighlight %}

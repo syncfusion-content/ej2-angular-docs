@@ -18,9 +18,7 @@ You can customize the default color of series or points by providing a custom co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pie-cs5/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ Fluid animation used to animate series with updated dataSource continues animati
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/radius-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/radius-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/radius-cs1/src/main.ts %}
 {% endhighlight %}

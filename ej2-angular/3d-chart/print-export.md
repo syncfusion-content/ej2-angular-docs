@@ -18,9 +18,7 @@ The rendered 3D chart can be printed directly from the browser by calling the pu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/print-export/print-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/print-export/print-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/print-export/print-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ The rendered 3D chart can be exported to `JPEG`, `PNG`, `SVG`, or `PDF` format u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/print-export/print-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/print-export/print-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/print-export/print-cs2/src/main.ts %}
 {% endhighlight %}

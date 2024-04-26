@@ -42,9 +42,7 @@ Refer to the following snippet to enable the limits in the Slider.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/default-limit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/default-limit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/default-limit-cs1/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +68,7 @@ In the range slider, both handles can be restricted and locked from the limit's 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/range-limit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/range-limit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/range-limit-cs1/src/main.ts %}
 {% endhighlight %}
@@ -98,9 +94,7 @@ In this sample, the movement of both slider handles has been locked.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/handle-lock-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/handle-lock-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/handle-lock-cs1/src/main.ts %}
 {% endhighlight %}

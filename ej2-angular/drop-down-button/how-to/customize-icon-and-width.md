@@ -19,9 +19,7 @@ and size of the font icon as `40px` by adding `e-custom` class.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/drop-down-button/custom-width-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/custom-width-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/drop-down-button/custom-width-cs1/src/main.ts %}
 {% endhighlight %}

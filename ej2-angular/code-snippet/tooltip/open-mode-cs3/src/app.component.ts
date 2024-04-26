@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 
@@ -5,6 +9,13 @@ import { Component, ViewChild } from '@angular/core';
 import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
+imports: [
+        
+        TooltipModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
     <div id="sample">

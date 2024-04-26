@@ -26,9 +26,7 @@ The default items are displayed in the following table:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs1/src/main.ts %}
 {% endhighlight %}
@@ -49,9 +47,7 @@ During the resizing action, the gantt component triggers the below two events.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-events-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-events-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-events-cs1/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ Actions for this customized items can be defined in the [`columnMenuClick`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cust-item-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cust-item-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cust-item-cs1/src/main.ts %}
 {% endhighlight %}
@@ -88,9 +82,7 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cust-action-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cust-action-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cust-action-cs1/src/main.ts %}
 {% endhighlight %}

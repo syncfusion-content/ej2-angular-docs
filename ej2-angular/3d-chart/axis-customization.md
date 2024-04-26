@@ -18,9 +18,7 @@ The title for the axis can be added by using the [`title`](https://ej2.syncfusio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/axis-customization/axis-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/axis-customization/axis-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/axis-customization/axis-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ The title can be rotated from 0 to 360 degree by using the [`titleRotation`](htt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/axis-customization/axis-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/axis-customization/axis-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/axis-customization/axis-cs2/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ The [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/minor
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/axis-customization/axis-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/axis-customization/axis-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/axis-customization/axis-cs3/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ The [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/major
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/axis-customization/axis-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/axis-customization/axis-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/axis-customization/axis-cs4/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +82,7 @@ In addition to primary X and Y axis, n number of axis can be added to the chart.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/axis-customization/axis-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/axis-customization/axis-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/axis-customization/axis-cs5/src/main.ts %}
 {% endhighlight %}
@@ -110,9 +100,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/axis-customization/axis-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/axis-customization/axis-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/axis-customization/axis-cs6/src/main.ts %}
 {% endhighlight %}
@@ -128,9 +116,7 @@ To place an axis opposite from its original position, set the [`opposedPosition`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/axis-customization/axis-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/axis-customization/axis-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/axis-customization/axis-cs7/src/main.ts %}
 {% endhighlight %}

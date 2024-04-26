@@ -20,9 +20,7 @@ Here is an example that demonstrates the usage of the filter menu in the Syncfus
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-menu-cs1/src/main.ts %}
 {% endhighlight %}
@@ -51,9 +49,7 @@ Here is a sample code demonstrating how to render a dropdownlist component for t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-menu-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-menu-cs2/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +72,7 @@ Here is an example that demonstrates how to show 24 hours time format in filter 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-menu-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-menu-cs3/src/main.ts %}
 {% endhighlight %}
@@ -103,9 +97,7 @@ Here is an example of how to customize the filter operators list in Syncfusion A
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-menu-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-menu-cs4/src/main.ts %}
 {% endhighlight %}
@@ -123,9 +115,7 @@ Here is an example that demonstrates how to perform filtering by multiple keywor
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-menu-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-menu-cs5/src/main.ts %}
 {% endhighlight %}
@@ -153,9 +143,7 @@ In the example provided below, the **OrderID** and **Freight** columns are numer
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-menu-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-menu-cs8/src/main.ts %}
 {% endhighlight %}
@@ -173,9 +161,7 @@ You can prevent autofill feature by setting the [autofill](https://ej2.syncfusio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-menu-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-menu-cs7/src/main.ts %}
 {% endhighlight %}
@@ -197,9 +183,7 @@ Here's an example of how to use these events to handle filter menu action in the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-menu-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-menu-cs6/src/main.ts %}
 {% endhighlight %}

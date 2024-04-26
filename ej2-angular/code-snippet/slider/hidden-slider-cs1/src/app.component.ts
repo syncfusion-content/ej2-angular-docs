@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SliderModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 
@@ -9,6 +13,13 @@ import { SliderModule, SliderTickEventArgs, SliderTooltipEventArgs } from '@sync
  */
 
 @Component({
+imports: [
+        
+        SliderModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
     <button ejs-button id="element">Button</button>

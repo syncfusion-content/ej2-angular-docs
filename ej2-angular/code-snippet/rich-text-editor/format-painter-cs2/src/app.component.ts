@@ -1,7 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 import { Component } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, FormatPainterService, FormatPainterSettingsModel} from '@syncfusion/ej2-angular-richtexteditor';
 
-@Component( {
+@Component({
+imports: [
+        
+        RichTextEditorModule,
+        DialogModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-richtexteditor [toolbarSettings]='toolbarSettings' [formatPainterSettings]='formatPainterSettings'>
                 <ng-template #valueTemplate>

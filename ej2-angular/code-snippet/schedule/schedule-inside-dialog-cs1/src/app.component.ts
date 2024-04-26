@@ -1,3 +1,11 @@
+import { NgModule } from '@angular/core'
+import { ScheduleAllModule, RecurrenceEditorAllModule } from '@syncfusion/ej2-angular-schedule'
+import { DialogAllModule } from '@syncfusion/ej2-angular-popups'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { RouterModule } from '@angular/router'
+import { CommonModule } from '@angular/common'
+
 
 
 import { Component, ViewChild, Inject } from '@angular/core';
@@ -5,6 +13,10 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 import { TimelineViewsService , EventSettingsModel} from '@syncfusion/ej2-angular-schedule';
 
 @Component({
+imports: [ CommonModule, ScheduleAllModule, RecurrenceEditorAllModule, DialogAllModule, ],
+
+,
+standalone: true,
   selector: 'app-root',
   providers: [TimelineViewsService ],
   // specifies the template string for the Schedule component

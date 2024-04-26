@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+
 
 
 import { Component } from '@angular/core';
@@ -6,6 +10,14 @@ import { CellEditSettings } from '@syncfusion/ej2-pivotview/src/pivotview';
 import { Pivot_Data } from './datasource';
 
 @Component({
+imports: [
+        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   providers: [DrillThroughService],
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [editSettings]='editSettings' width=width (drillThrough)='drillThrough($event)'></ejs-pivotview>`

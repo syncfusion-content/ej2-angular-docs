@@ -1,3 +1,11 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import {TextBoxModule} from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { Component, OnInit,ViewChild } from '@angular/core';
@@ -7,6 +15,17 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule,DropDownListAllModule,
+        TextBoxModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService],
+standalone: true,
     selector: 'app-container',
     template: `<div>
                     <label style="padding: 30px 17px 0 0" >Click the change button :</label>

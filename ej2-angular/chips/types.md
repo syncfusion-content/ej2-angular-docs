@@ -25,9 +25,7 @@ Input Chip holds information in compact form. It converts user input into chips.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/types/input-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/types/input-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/types/input-cs1/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ Choice Chip allows you to select a single chip from the set of ChipList/ChipColl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/types/input-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/types/input-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/types/input-cs2/src/main.ts %}
 {% endhighlight %}
@@ -61,9 +57,7 @@ Filter Chip allows you to select a multiple chip from the set of ChipList/ChipCo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/types/input-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/types/input-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/types/input-cs3/src/main.ts %}
 {% endhighlight %}
@@ -79,9 +73,7 @@ The Action Chip triggers the event like click or delete, which helps doing actio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/types/input-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/types/input-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/types/input-cs4/src/main.ts %}
 {% endhighlight %}
@@ -97,9 +89,7 @@ Deletable Chip allows you to delete a chip from ChipList/ChipCollection. It can 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/types/input-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/types/input-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/types/input-cs5/src/main.ts %}
 {% endhighlight %}

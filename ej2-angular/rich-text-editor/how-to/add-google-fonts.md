@@ -16,9 +16,7 @@ To use web fonts in RTE, it is not needed for the web fonts to be present in loc
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/how-to/cursor-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/how-to/cursor-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/how-to/cursor-cs1/src/main.ts %}
 {% endhighlight %}

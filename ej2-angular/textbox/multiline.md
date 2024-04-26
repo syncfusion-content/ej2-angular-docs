@@ -22,9 +22,7 @@ You can convert the default textbox into the multiline textbox by setting the [m
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textbox/textarea-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/textarea-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/textarea-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ You can achieve the floating label behavior in the multiline textbox by setting 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textbox/float-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/float-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/float-cs1/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ By default, you can manually resize the multiline textbox. But you can also crea
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textbox/resize-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/resize-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/resize-cs1/src/main.ts %}
 {% endhighlight %}
@@ -86,9 +80,7 @@ By default, the multiline textbox is rendered with resizable. You can disable th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textbox/disable-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/disable-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/disable-cs1/src/main.ts %}
 {% endhighlight %}
@@ -104,9 +96,7 @@ By default, the text length of the multiline textbox is unlimited. You can limit
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textbox/maxlength-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/maxlength-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/maxlength-cs1/src/main.ts %}
 {% endhighlight %}
@@ -122,9 +112,7 @@ You can show the number of characters entered inside the textarea by calculating
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textbox/count-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/count-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/count-cs1/src/main.ts %}
 {% endhighlight %}

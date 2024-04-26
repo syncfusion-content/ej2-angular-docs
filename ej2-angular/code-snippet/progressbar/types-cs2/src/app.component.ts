@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { AnimationModel } from '@syncfusion/ej2-progressbar';
 
 @Component({
+imports: [
+         ProgressBarModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template:
      `<ejs-progressbar  id='determinate' type='Circular' height='60' value=100  [animation]='animation'>

@@ -20,9 +20,7 @@ In the given example, new data is seamlessly added while scrolling. When you scr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/scrolling/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/scrolling/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/scrolling/src/main.ts %}
 {% endhighlight %}

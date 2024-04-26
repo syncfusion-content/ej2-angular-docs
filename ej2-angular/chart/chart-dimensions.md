@@ -42,9 +42,7 @@ export class AppComponent {
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/getting-started/datasource-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/getting-started/datasource-cs1/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +64,7 @@ You can set the size of chart in pixel as demonstrated below.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/getting-started/datasource-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/getting-started/datasource-cs2/src/main.ts %}
 {% endhighlight %}
@@ -85,9 +81,7 @@ when the height is ‘50%’, chart renders to half of the container height.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/getting-started/datasource-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/getting-started/datasource-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/getting-started/datasource-cs3/src/main.ts %}
 {% endhighlight %}

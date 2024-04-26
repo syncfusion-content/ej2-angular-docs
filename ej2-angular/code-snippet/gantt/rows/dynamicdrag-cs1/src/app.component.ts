@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { RowDDService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -7,6 +13,12 @@ import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
+imports: [
+         GanttModule, ButtonModule
+    ],
+
+providers: [RowDDService, EditService, SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
        `<button ejs-button id='dynamicDrag' (click)='dynamicDrag()'>Drop records as child</button>

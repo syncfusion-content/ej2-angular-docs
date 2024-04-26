@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { MonthService, TimelineMonthService, TimelineYearService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component } from '@angular/core';
@@ -7,6 +13,14 @@ import {
 import { scheduleData } from './datasource';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        TimePickerModule
+    ],
+
+providers: [TimelineMonthService, MonthService, TimelineYearService],
+standalone: true,
     selector: "app-root",
     providers: [MonthService],
     // specifies the template string for the Schedule component

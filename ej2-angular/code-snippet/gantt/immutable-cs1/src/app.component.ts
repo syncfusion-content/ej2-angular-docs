@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { DayMarkersService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -7,6 +12,12 @@ import { ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { projectNewData } from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [DayMarkersService],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings"

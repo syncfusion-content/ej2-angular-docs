@@ -18,9 +18,7 @@ In the following, we have validated the image size before uploading and determin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/how-to/check-image-size-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/how-to/check-image-size-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/how-to/check-image-size-cs1/src/main.ts %}
 {% endhighlight %}

@@ -136,9 +136,7 @@ The below example shows a basic CheckBox component,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/check-box/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/check-box/getting-started-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/check-box/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
@@ -164,9 +162,7 @@ CheckBox indeterminate state can be set through [`indeterminate`](https://ej2.sy
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/check-box/label-and-size-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/check-box/label-and-size-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/check-box/label-and-size-cs2/src/main.ts %}
 {% endhighlight %}

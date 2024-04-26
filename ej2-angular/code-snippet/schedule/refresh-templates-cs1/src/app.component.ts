@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { CheckBoxAllModule, ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { WeekService, MonthService, TimelineMonthService } from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
@@ -10,6 +17,16 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { webinarData } from './datasource';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        TimePickerModule,
+        CheckBoxAllModule,
+        ButtonModule
+    ],
+
+providers: [WeekService, MonthService, TimelineMonthService],
+standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html',
     providers: [WeekService, MonthService, TimelineMonthService, ResizeService, DragAndDropService],

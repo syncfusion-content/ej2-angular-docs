@@ -82,9 +82,7 @@ You can use the following key shortcuts to access the AutoComplete without inter
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs1/src/main.ts %}
 {% endhighlight %}

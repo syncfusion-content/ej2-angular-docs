@@ -1,8 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
+import { PieSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationAnnotationService,
+  AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 @Component({
+imports: [
+         AccumulationChartModule
+    ],
+
+providers: [PieSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationDataLabelService,
+     AccumulationAnnotationService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-accumulationchart id="container" width='92%' [legendSettings]="legendSettings" [title]="title" [enableAnimation]= 'enableAnimation' [center]='center'>
             <e-accumulation-series-collection>

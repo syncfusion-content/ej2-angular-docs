@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TreeViewModule, BeforeOpenCloseMenuEventArgs, MenuEventArgs, MenuItemModel, ContextMenuComponent, ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -5,6 +10,12 @@ import { Component, Inject, ViewChild } from '@angular/core';
 import { TreeViewComponent, NodeClickEventArgs, BeforeOpenCloseMenuEventArgs, MenuEventArgs, MenuItemModel, ContextMenuComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [
+        FormsModule, TreeViewModule, ContextMenuModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<div id='treeparent'>
                  <ejs-treeview  id='tree' #treevalidate [fields]='field' (nodeClicked)='nodeclicked($event)'></ejs-treeview>

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+
 
 
 
@@ -6,6 +11,13 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 import { EmitType } from '@syncfusion/ej2-base';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextEditorComponent , NodeSelection } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
+imports: [
+        
+		DialogModule,RichTextEditorAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
     <button class="e-control e-btn" style="position: absolute;" id="targetButton" (click)="onOpenDialog($event)">Open Modal Dialog</button>

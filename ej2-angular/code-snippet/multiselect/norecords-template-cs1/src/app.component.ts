@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        FormsModule,MultiSelectModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the MultiSelect component
     template:  `<ejs-multiselect id='multiselectelement' [dataSource]='data' placeholder='Find a item'>

@@ -29,9 +29,7 @@ Here is an example of brightness, contrast, and sharpness fine-tuning using the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs28/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs28/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs28/src/main.ts %}
 {% endhighlight %}
@@ -53,9 +51,7 @@ Here is an example of hue, exposure, and blur fine-tuning using the [`finetuneIm
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs29/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs29/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs29/src/main.ts %}
 {% endhighlight %}

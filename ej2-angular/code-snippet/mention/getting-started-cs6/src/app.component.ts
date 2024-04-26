@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { MentionModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, MentionModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // Specifies the template string for the Mention component
     template: `

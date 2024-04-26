@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -7,6 +11,14 @@ import { ExcelExportProperties } from '@syncfusion/ej2-grids';
 import { Pivot_Data } from './datasource';
 
 @Component({
+imports: [
+        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   providers: [VirtualScrollService, ExcelExportService],
   template: `<div class="col-md-8">

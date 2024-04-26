@@ -24,9 +24,7 @@ export let world_map = // paste the World map from WorldMap.json GeoJSON file.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs6/src/main.ts %}
 {% endhighlight %}
@@ -47,9 +45,7 @@ By default, bubbles are rendered in the **Circle** type. To change the type of t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs7/src/main.ts %}
 {% endhighlight %}
@@ -71,9 +67,7 @@ The following properties are available in [`bubbleSettings`](https://ej2.syncfus
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs8/src/main.ts %}
 {% endhighlight %}
@@ -89,9 +83,7 @@ The color for each bubble in the Maps can be set using the [`colorValuePath`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs9/src/main.ts %}
 {% endhighlight %}
@@ -107,9 +99,7 @@ The size of the bubbles is calculated from the values got from the [`valuePath`]
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs10/src/main.ts %}
 {% endhighlight %}
@@ -125,9 +115,7 @@ Multiple groups of bubbles can be added to the Maps using the [`bubbleSettings`]
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs11/src/main.ts %}
 {% endhighlight %}
@@ -143,9 +131,7 @@ The tooltip for the bubbles can be enabled by setting the [`visible`](https://ej
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs12/src/main.ts %}
 {% endhighlight %}

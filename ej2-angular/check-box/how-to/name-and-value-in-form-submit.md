@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Name and value in form submit in Angular Check box component | Syncfusion
+title: Name and value in form submit in Angular Check box component|Syncfusion
 description: Learn here all about Name and value in form submit in Syncfusion Angular Check box component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Name and value in form submit 
@@ -21,9 +21,7 @@ In the following code snippet, Cricket and Hockey are in the checked state, Tenn
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/check-box/form-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/check-box/form-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/check-box/form-cs1/src/main.ts %}
 {% endhighlight %}

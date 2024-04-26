@@ -1,9 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { CircularGaugeModule } from '@syncfusion/ej2-angular-circulargauge'
+
 
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ImageExportService, CircularGaugeComponent } from '@syncfusion/ej2-angular-circulargauge';
 @Component({
+imports: [
+         CircularGaugeModule
+    ],
+
+standalone: true,
     selector: 'app-container',
     template:
     `<ejs-circulargauge id="circular-container" [allowImageExport]=true #gauge>

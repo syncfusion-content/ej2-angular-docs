@@ -136,9 +136,7 @@ The following sample demonstrate the DateRangePicker component in `German` cultu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/daterangepicker/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/daterangepicker/internationalization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/daterangepicker/internationalization-cs1/src/main.ts %}
 {% endhighlight %}
@@ -201,9 +199,7 @@ The following example demonstrates the DateRangePicker in `Hebrew` culture with 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/daterangepicker/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/daterangepicker/rtl-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/daterangepicker/rtl-cs1/src/main.ts %}
 {% endhighlight %}
@@ -222,9 +218,7 @@ In below sample, the date strings are formatted to `yyyy-MM-dd` and separator be
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs7/src/main.ts %}
 {% endhighlight %}

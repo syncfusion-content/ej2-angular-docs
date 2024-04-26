@@ -43,9 +43,7 @@ In the following preview sample, focusing the input element through `tab` key op
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tooltip/getting-started-cs21/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs21/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/getting-started-cs21/src/main.ts %}
 {% endhighlight %}

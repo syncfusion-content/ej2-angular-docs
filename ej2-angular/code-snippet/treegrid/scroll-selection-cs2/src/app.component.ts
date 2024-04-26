@@ -1,3 +1,9 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -5,6 +11,15 @@ import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule,
+        NumericTextBoxModule
+    ],
+
+,
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1'  childMapping='subtasks' (dataBound)='dataBound($event)'>
                     <e-columns>

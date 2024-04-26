@@ -26,9 +26,7 @@ The following example demonstrates how to export current page to a PDF document 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs11/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +56,7 @@ The following example demonstrates how to export the selected records to a PDF d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-filtered-data-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-filtered-data-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-filtered-data-cs3/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +86,7 @@ The following example demonstrates how to export the filtered records to a PDF d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-filtered-data-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-filtered-data-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-filtered-data-cs4/src/main.ts %}
 {% endhighlight %}
@@ -112,9 +106,7 @@ The following example demonstrates how to export hidden columns to a PDF file. I
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs12/src/main.ts %}
 {% endhighlight %}
@@ -142,9 +134,7 @@ In the following example, the **CustomerID** is initially a hidden column in the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs13/src/main.ts %}
 {% endhighlight %}
@@ -170,9 +160,7 @@ The following example demonstrates how to export the grid into PDF document by s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs14/src/main.ts %}
 {% endhighlight %}
@@ -222,9 +210,7 @@ The following example demonstrates how to export the grid into PDF document by s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs15/src/main.ts %}
 {% endhighlight %}
@@ -244,9 +230,7 @@ The following example demonstrates how to define a file name using `pdfExportPro
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs16/src/main.ts %}
 {% endhighlight %}
@@ -266,9 +250,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs27/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs27/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs27/src/main.ts %}
 {% endhighlight %}
@@ -294,9 +276,7 @@ The following example demonstrates how to customize the grid columns when export
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs28/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs28/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs28/src/main.ts %}
 {% endhighlight %}
@@ -332,9 +312,7 @@ The following example demonstrates, how to change the default font when exportin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs26/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs26/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs26/src/main.ts %}
 {% endhighlight %}
@@ -354,9 +332,7 @@ The following example demonstrates how to use the custom **Algeria** font for ex
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs17/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs17/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs17/src/main.ts %}
 {% endhighlight %}
@@ -378,9 +354,7 @@ The following example demonstrate how to customize the background color of the *
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs9/src/main.ts %}
 {% endhighlight %}
@@ -398,9 +372,7 @@ The following example demonstrates how to obtain the blob data of the exported g
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/export-grid-as-blob-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/export-grid-as-blob-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/export-grid-as-blob-cs1/src/main.ts %}
 {% endhighlight %}

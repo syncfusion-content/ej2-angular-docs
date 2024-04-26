@@ -28,9 +28,7 @@ The following example demonstrates how to enable the hierarchy feature in the gr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/default-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/default-cs5/src/main.ts %}
 {% endhighlight %}
@@ -53,9 +51,7 @@ In the following example, the `load` event is utilized to customize the mapping 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/default-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/default-cs9/src/main.ts %}
 {% endhighlight %}
@@ -77,9 +73,7 @@ In the provided example, expand the third record of the grid by utilizing the `e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/default-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/default-cs7/src/main.ts %}
 {% endhighlight %}
@@ -101,9 +95,7 @@ The following example demonstrates how to dynamically load child grid data using
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/default-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/default-cs8/src/main.ts %}
 {% endhighlight %}
@@ -123,9 +115,7 @@ In the `detailDataBound` event handler, you can filter the child grid's dataSour
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/default-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/default-cs12/src/main.ts %}
 {% endhighlight %}
@@ -145,9 +135,7 @@ In the following example, the parent and child grids are related by the **Employ
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/default-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/default-cs10/src/main.ts %}
 {% endhighlight %}
@@ -169,9 +157,7 @@ The following example demonstrates, how to show a custom image in the **Employee
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/default-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/default-cs11/src/main.ts %}
 {% endhighlight %}
@@ -191,9 +177,7 @@ The following example demonstrates how to obtain parent details in a child grid 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/default-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/default-cs16/src/main.ts %}
 {% endhighlight %}
@@ -213,9 +197,7 @@ The following example demonstrates how to expand and collapse the hierarchy grid
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/default-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/default-cs6/src/main.ts %}
 {% endhighlight %}
@@ -268,9 +250,7 @@ The following example demonstrates how to hide the expand/collapse icon in the r
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/template-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/template-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/template-cs4/src/main.ts %}
 {% endhighlight %}

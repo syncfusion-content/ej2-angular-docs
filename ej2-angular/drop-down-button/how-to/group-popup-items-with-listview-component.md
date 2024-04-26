@@ -18,9 +18,7 @@ In the following example, ListView element is given as `target` to DropDownButto
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/drop-down-button/header-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/header-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/drop-down-button/header-cs1/src/main.ts %}
 {% endhighlight %}

@@ -29,9 +29,7 @@ To load translation object in an application use `load` function of `L10n` class
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/in-place-editor/editable-on-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/editable-on-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/in-place-editor/editable-on-cs2/src/main.ts %}
 {% endhighlight %}
@@ -49,9 +47,7 @@ Specifies the direction of the **In-place Editor** component using the enableRtl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/in-place-editor/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/in-place-editor/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +70,7 @@ Formatting is a way of representing the value in different format. You can forma
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/in-place-editor/format-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/format-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/in-place-editor/format-cs1/src/main.ts %}
 {% endhighlight %}

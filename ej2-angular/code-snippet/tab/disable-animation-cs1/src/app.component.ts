@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TabComponent, TabItemsDirective, TabItemDirective } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
 import { Component, ViewEncapsulation } from "@angular/core";
 
 @Component({
+imports: [
+        
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<ejs-tab id="element" heightAdjustMode='Auto' [animation]="animation">
             <e-tabitems>

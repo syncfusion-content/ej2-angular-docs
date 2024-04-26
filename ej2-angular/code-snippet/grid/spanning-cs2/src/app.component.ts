@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+
 import { Component, OnInit } from '@angular/core';
 import { QueryCellInfoEventArgs, GridLine, Column } from '@syncfusion/ej2-angular-grids';
 import { columnSpanData, ColumnSpanDataType } from './datasource';
 import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+,
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [height]='300' [width]='width' [gridLines]='gridLines'
        [allowTextWrap]='textWrap' (queryCellInfo)='queryCellInfoEvent($event)'>

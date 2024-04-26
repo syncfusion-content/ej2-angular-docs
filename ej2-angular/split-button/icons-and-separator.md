@@ -20,9 +20,7 @@ The following example illustrates how to place icon in SplitButton component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/split-button/icon-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/split-button/icon-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/split-button/icon-cs1/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ The following example illustrates how to vertical support in SplitButton compone
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/split-button/vertical-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/split-button/vertical-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/split-button/vertical-cs1/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +62,7 @@ The following example illustrates how to enable separator support in SplitButton
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/split-button/separator-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/split-button/separator-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/split-button/separator-cs1/src/main.ts %}
 {% endhighlight %}

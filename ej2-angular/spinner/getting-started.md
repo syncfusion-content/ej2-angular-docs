@@ -144,9 +144,7 @@ import { showSpinner, hideSpinner } from '@syncfusion/ej2-angular-popups';
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spinner/intro-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spinner/intro-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spinner/intro-cs1/src/main.ts %}
 {% endhighlight %}

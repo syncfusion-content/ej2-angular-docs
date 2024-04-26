@@ -61,9 +61,7 @@ In the following sample, the font family of grid content is changed to **cursive
 {% highlight ts tabtitle="index.html" %}
 {% include code-snippet/grid/style-appearance-cs1/index.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/style-appearance-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/style-appearance-cs1/src/main.ts %}
 {% endhighlight %}

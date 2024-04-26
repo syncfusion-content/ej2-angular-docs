@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { SortService, FilterService, ColumnMenuService  } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -6,6 +11,12 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { projectNewData } from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [SortService, FilterService, ColumnMenuService],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [columns]="columns" [allowFiltering] = 'true' [showColumnMenu] = 'true' [allowSorting] = 'true' [splitterSettings]="splitterSettings"></ejs-gantt>`,

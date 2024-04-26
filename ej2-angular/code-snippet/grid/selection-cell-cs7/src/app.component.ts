@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
+import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, OnInit, ViewChild, Renderer2 } from '@angular/core';
 import { Order, data } from './datasource';
 import {
@@ -10,6 +15,13 @@ import {
 } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [EditService, ToolbarService, PageService, FilterService],
+standalone: true,
   selector: 'app-root',
   template: `
         <p id="message">{{ message }}</p>

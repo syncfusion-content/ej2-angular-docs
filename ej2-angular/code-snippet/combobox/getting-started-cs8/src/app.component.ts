@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { ComboBoxModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component } from '@angular/core';
@@ -6,6 +12,12 @@ import { FilteringEventArgs } from '@syncfusion/ej2-dropdowns';
 import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, ComboBoxModule,ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the ComboBox component
     template: `<ejs-combobox id='comboelement' #samples [dataSource]='data' [query]='query' [fields]='fields' [placeholder]='text' popupHeight='250px' [sortOrder]='sorting' [allowFiltering]='true' (filtering)='onFiltering($event)'></ejs-combobox>`

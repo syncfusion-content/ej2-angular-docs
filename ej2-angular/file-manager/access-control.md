@@ -107,9 +107,7 @@ The following example demonstrate the file manager rendered with access control 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/access-control-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/access-control-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/access-control-cs1/src/main.ts %}
 {% endhighlight %}

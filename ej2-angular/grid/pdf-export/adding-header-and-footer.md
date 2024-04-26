@@ -168,9 +168,7 @@ The following example demonstrates how to add a header and footer to the exporte
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs5/src/main.ts %}
 {% endhighlight %}
@@ -190,9 +188,7 @@ The following example demonstrates how to repeat the column header on every page
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs6/src/main.ts %}
 {% endhighlight %}

@@ -33,9 +33,7 @@ N/A |N/A |`Equal` operator will always be used for Boolean filter. |Boolean
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs4/src/main.ts %}
 {% endhighlight %}
@@ -59,9 +57,7 @@ Access the column information inside the NgTemplate and bind the attributes, val
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filter-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filter-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filter-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -77,9 +73,7 @@ You can change the default filter operator by extending [`filterModule.filterOpe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs5/src/main.ts %}
 {% endhighlight %}

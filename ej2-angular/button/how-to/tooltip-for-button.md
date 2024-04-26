@@ -18,9 +18,7 @@ The following snippets illustrates how to show tooltip on button hover.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button/block-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button/block-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button/block-cs4/src/main.ts %}
 {% endhighlight %}

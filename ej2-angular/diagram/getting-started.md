@@ -129,9 +129,7 @@ The below example shows a basic Diagrams
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/getting-started/initialize-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/getting-started/initialize-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/getting-started/initialize-cs1/src/main.ts %}
 {% endhighlight %}
@@ -196,9 +194,7 @@ Create and add a `node` (JSON data) with specific position, size, label, and sha
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/getting-started/connectnode-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/getting-started/connectnode-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/getting-started/connectnode-cs1/src/main.ts %}
 {% endhighlight %}
@@ -214,9 +210,7 @@ Add two node to the diagram as shown in the previous example. Connect these node
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/getting-started/connectnode-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/getting-started/connectnode-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/getting-started/connectnode-cs2/src/main.ts %}
 {% endhighlight %}
@@ -234,9 +228,7 @@ Similarly, the required nodes and connectors can be added to form a complete flo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/getting-started/flowdiagram-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/getting-started/flowdiagram-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/getting-started/flowdiagram-cs1/src/main.ts %}
 {% endhighlight %}
@@ -357,9 +349,7 @@ The following code examples indicate how to define the default appearance of nod
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/getting-started/orgchart-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/getting-started/orgchart-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/getting-started/orgchart-cs1/src/main.ts %}
 {% endhighlight %}

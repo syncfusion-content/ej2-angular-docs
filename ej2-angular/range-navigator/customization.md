@@ -18,9 +18,7 @@ The Range Selector can be customized by using the [`navigatorStyleSettings`](htt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/getting-started/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/getting-started/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/getting-started/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ The thumb property allows to customize the border, fill color, size, and type of
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/getting-started/default-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/getting-started/default-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/getting-started/default-cs2/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ Using the [`navigatorBorder`](https://ej2.syncfusion.com/angular/documentation/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/getting-started/default-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/getting-started/default-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/getting-started/default-cs3/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ If the [`enableDeferredUpdate`](https://ej2.syncfusion.com/angular/documentation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/deferred-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/deferred-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/deferred-cs1/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +82,7 @@ The [`allowSnapping`](https://ej2.syncfusion.com/angular/documentation/api/range
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/getting-started/default-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/getting-started/default-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/getting-started/default-cs4/src/main.ts %}
 {% endhighlight %}
@@ -108,9 +98,7 @@ The speed of the animation can be controlled using the [`animationDuration`](htt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/getting-started/default-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/getting-started/default-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/getting-started/default-cs5/src/main.ts %}
 {% endhighlight %}

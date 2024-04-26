@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { CircularGaugeModule } from '@syncfusion/ej2-angular-circulargauge'
+import { LegendService, GaugeTooltipService } from '@syncfusion/ej2-angular-circulargauge'
+
 
 
 
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+imports: [
+         CircularGaugeModule
+    ],
+
+providers: [LegendService, GaugeTooltipService],
+standalone: true,
     selector: 'app-container',
     template:
     `<ejs-circulargauge id="circular-container" [enableRtl]="true" [tooltip]="tooltip" [legendSettings]='legendSettings'>

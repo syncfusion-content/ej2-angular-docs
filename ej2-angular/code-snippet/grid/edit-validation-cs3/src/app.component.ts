@@ -1,9 +1,36 @@
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { EditEventArgs, EditSettingsModel, GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 import { CheckBoxComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+imports: [
+        
+        GridModule,
+        DatePickerAllModule,
+        FormsModule,
+        TimePickerModule,
+        FormsModule,
+        TextBoxModule,
+        MultiSelectModule,
+        AutoCompleteModule,
+        CheckBoxModule
+    ],
+
+providers: [EditService, ToolbarService, SortService, PageService],
+standalone: true,
     selector: 'app-root',
     template: `<div style='padding:2px 2px 20px 3px'>
                 <ejs-checkbox #checkbox label="Enable/Disable validation rule for customerID coulumn" [checked]="true"></ejs-checkbox>

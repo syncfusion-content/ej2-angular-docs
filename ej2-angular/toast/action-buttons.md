@@ -16,9 +16,7 @@ You can include action Buttons into toast by adding [`buttons`](https://ej2.sync
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toast/toast-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toast/toast-cs2/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ButtonModule, RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { enableRipple } from '@syncfusion/ej2-base'
+import { FormsModule } from '@angular/forms'
+
 
 
 
@@ -5,6 +11,15 @@ import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
+imports: [
+        
+        RadioButtonModule,
+        ButtonModule,
+        FormsModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // Name and Value attribute in form submit.
     template: ` <div class="e-section-control">

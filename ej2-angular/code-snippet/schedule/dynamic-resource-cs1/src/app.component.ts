@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 
@@ -7,6 +13,19 @@ import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 import { ScheduleComponent, EventSettingsModel, GroupModel, MonthService, TimelineViewsService, TimelineMonthService, ResizeService, DragAndDropService } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        CheckBoxModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService],
+standalone: true,
     selector: "app-root",
     providers: [MonthService, TimelineViewsService, TimelineMonthService, ResizeService, DragAndDropService],
     // specifies the template string for the Schedule component

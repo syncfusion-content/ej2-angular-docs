@@ -18,9 +18,7 @@ The menu component supports horizontal and vertical scrolling to render large me
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/menu/scroll-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/menu/scroll-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/menu/scroll-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ The following example demonstrates how to integrate Menu with Toolbar component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/menu/toolbar-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/menu/toolbar-menu-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/menu/toolbar-menu-cs1/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ The following example demonstrates the use case of menu with Accordion component
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/menu/sidebar-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/menu/sidebar-menu-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/menu/sidebar-menu-cs1/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ The following example demonstrates the use case of Menu in Mobile mode by using 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/menu/listview-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/menu/listview-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/menu/listview-cs1/src/main.ts %}
 {% endhighlight %}

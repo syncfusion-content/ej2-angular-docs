@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -7,6 +11,10 @@ import { ListViewComponent, SelectEventArgs } from '@syncfusion/ej2-angular-list
 enableRipple(true);
 
 @Component({
+imports: [ ListViewModule],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
       <div class="layoutWrapper">

@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule, SymbolPaletteModule } from '@syncfusion/ej2-angular-diagrams'
+
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { SymbolPaletteComponent, SymbolPalette, NodeModel, MarginModel, PaletteModel,SymbolInfo,DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
+imports: [
+         DiagramModule, SymbolPaletteModule
+    ],
+
+providers: [ ],
+standalone: true,
     selector: "app-container",
     template: `<div style="width: 100%">
     <div id="palette-space" class="sb-mobile-palette">

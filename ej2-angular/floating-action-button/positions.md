@@ -41,9 +41,7 @@ Below example demonstrates different supported positions of FAB.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/floating-action-button/all-positions-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/floating-action-button/all-positions-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/floating-action-button/all-positions-cs1/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +60,7 @@ You can define the custom position of the Floating Action Button by override the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/floating-action-button/position-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/floating-action-button/position-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/floating-action-button/position-cs1/src/main.ts %}
 {% endhighlight %}

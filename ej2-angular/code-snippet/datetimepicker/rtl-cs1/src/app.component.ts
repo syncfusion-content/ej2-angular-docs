@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DateTimePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 
@@ -13,6 +17,13 @@ import * as artimeZoneNames from './timeZoneNames.json';
 loadCldr(numberingSystems, gregorian, numbers, artimeZoneNames);
 
 @Component({
+imports: [
+        
+        DateTimePickerModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-datetimepicker [enableRtl]='true' locale='ar'></ejs-datetimepicker>`
 })

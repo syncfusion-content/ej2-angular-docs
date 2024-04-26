@@ -18,9 +18,7 @@ The tooltip appears when the user hovers over the step, providing the informatio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/tooltip/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/tooltip/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/tooltip/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ When hovering over the step, the current step model is passed in the template co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/tooltipTemplate/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/tooltipTemplate/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/tooltipTemplate/src/main.ts %}
 {% endhighlight %}

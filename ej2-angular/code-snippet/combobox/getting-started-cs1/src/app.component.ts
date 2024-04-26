@@ -1,9 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { ComboBoxModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, HostListener, ViewChild } from '@angular/core';
 import { ComboBoxComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, ComboBoxModule,ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the ComboBox component with change event
     template: `<ejs-combobox id='comboelement' #samples [dataSource]='data' [placeholder]='text' [popupHeight]='height'></ejs-combobox>`

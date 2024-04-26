@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ToolbarService, ExcelExportService, FilterService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, columnDataType } from './datasource';
 import { GridComponent, ToolbarItems,ExcelQueryCellInfoEventArgs, QueryCellInfoEventArgs, Column, ExcelCell } from '@syncfusion/ej2-angular-grids';
@@ -6,6 +10,13 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
  
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [ExcelExportService, ToolbarService, FilterService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid'  [dataSource]='data' [toolbar]='toolbarOptions' height='272px' 
                allowExcelExport='true' (toolbarClick)='toolbarClick($event)' 

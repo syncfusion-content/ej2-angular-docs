@@ -28,9 +28,7 @@ To known about Zooming and Panning, you can check on this video:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/zoom-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/zoom-cs5/src/main.ts %}
 {% endhighlight %}
@@ -57,9 +55,7 @@ There are three types of mode.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/zoom-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/zoom-cs6/src/main.ts %}
 {% endhighlight %}
@@ -75,9 +71,7 @@ By default, zoomin, zoomout, pan and reset buttons will be displayed for zoomed 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/zoom-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/zoom-cs7/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +87,7 @@ Using [`enablePan`](https://ej2.syncfusion.com/angular/documentation/api/chart/z
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/zoom-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/zoom-cs8/src/main.ts %}
 {% endhighlight %}
@@ -111,9 +103,7 @@ Using the [`enableScrollbar`](https://ej2.syncfusion.com/angular/documentation/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/scrollbar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/scrollbar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/scrollbar-cs1/src/main.ts %}
 {% endhighlight %}
@@ -129,9 +119,7 @@ By using [`enableAutoIntervalOnZooming`](https://ej2.syncfusion.com/angular/docu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/zoom-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/zoom-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/zoom-cs9/src/main.ts %}
 {% endhighlight %}

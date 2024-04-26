@@ -25,9 +25,7 @@ The following sample demonstrates how to add content template in tooltip.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tooltip/getting-started-cs25/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs25/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/getting-started-cs25/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ The Tooltip content can be dynamically loaded  by making use of the AJAX call. T
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tooltip/ajax-content-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/ajax-content-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/ajax-content-cs2/src/main.ts %}
 {% endhighlight %}

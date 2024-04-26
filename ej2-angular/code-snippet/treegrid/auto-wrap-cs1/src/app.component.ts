@@ -1,3 +1,9 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit,ViewChild } from '@angular/core';
@@ -6,6 +12,16 @@ import { TreeGridComponent, TextWrapSettingsModel, WrapMode } from '@syncfusion/
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService],
+standalone: true,
     selector: 'app-container',
     template: `<div style="display: flex">
                <label style="padding: 30px 17px 0 0" >Autowrap for header column :</label>

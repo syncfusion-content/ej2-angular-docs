@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { FilterService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -7,6 +12,12 @@ import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [FilterService],
+standalone: true,
     selector: 'app-root',
     template:
        `<button ejs-button id='Clearfilter' (click)='filter()'>Clear Filter</button>

@@ -1,9 +1,24 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SwitchModule, CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+import { FormsModule } from '@angular/forms'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        
+        SwitchModule,
+        CheckBoxModule,
+        FormsModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <div id='container'>

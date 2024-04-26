@@ -16,9 +16,7 @@ By default, the work hours of the Scheduler is highlighted based on the start an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs52/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs52/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs52/src/main.ts %}
 {% endhighlight %}

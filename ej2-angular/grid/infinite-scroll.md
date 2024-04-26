@@ -20,9 +20,7 @@ To enable Infinite scrolling, set `enableInfiniteScrolling` property as true.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs2/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ In the below demo, we have changed this property value to load five page records
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs3/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs4/src/main.ts %}
 {% endhighlight %}

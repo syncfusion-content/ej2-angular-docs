@@ -1,3 +1,8 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -6,6 +11,13 @@ import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 import { sampleData } from './datasource';
 
 @Component({
+imports: [
+        
+        TreeGridModule,NumericTextBoxModule 
+    ],
+
+,
+standalone: true,
     selector: 'app-container',
     template: ` <div style="display: flex">
                    <label style="padding: 10px 10px 26px 0">Change the frozen columns:</label>

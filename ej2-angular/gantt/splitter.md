@@ -22,9 +22,7 @@ In the Gantt component, the Splitter separates the TreeGrid section from the Cha
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/appearance-customization/changesplitter/initial-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/changesplitter/initial-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/appearance-customization/changesplitter/initial-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ In Gantt, we can change the splitter position dynamically by using [`setSplitter
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/appearance-customization/changesplitter/dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/changesplitter/dynamic-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/appearance-customization/changesplitter/dynamic-cs1/src/main.ts %}
 {% endhighlight %}

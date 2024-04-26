@@ -26,9 +26,7 @@ The following sample shows the `Open` option by using the [`openUrl`](https://ej
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs1/src/main.ts %}
 {% endhighlight %}
@@ -55,9 +53,7 @@ You can achieve to access the remote excel file by using the [`created`](https:/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs2/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +69,7 @@ You can add your own custom header to the open action in the Spreadsheet. For pr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs8/app/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs8/app/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs8/app/main.ts %}
 {% endhighlight %}
@@ -92,9 +86,7 @@ You can open excel file into a read-only mode by using the [`openComplete`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs12/src/main.ts %}
 {% endhighlight %}
@@ -134,9 +126,7 @@ The following sample shows the `Save` option by using the [`saveUrl`](https://ej
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs3/src/main.ts %}
 {% endhighlight %}
@@ -168,9 +158,7 @@ Passing the custom parameters from client to server by using [`beforeSave`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs4/src/main.ts %}
 {% endhighlight %}
@@ -197,9 +185,7 @@ You can add your own custom header to the save action in the Spreadsheet. For pr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs11/src/main.ts %}
 {% endhighlight %}
@@ -220,9 +206,7 @@ The possible values are:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs6/src/main.ts %}
 {% endhighlight %}
@@ -238,9 +222,7 @@ To save the Spreadsheet document as an `xlsx, xls, csv, or pdf` file, by using [
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs5/src/main.ts %}
 {% endhighlight %}

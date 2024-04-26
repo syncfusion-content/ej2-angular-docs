@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { BulletChartModule} from '@syncfusion/ej2-angular-charts'
+import { BulletTooltipService} from '@syncfusion/ej2-angular-charts'
+
 
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+         BulletChartModule
+    ],
+
+providers: [ BulletTooltipService ],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-bulletchart valueName='value' targetName='target' title='Revenue'
                 [minimum]='minimum' [maximum]='maximum' [interval]='interval' [dataSource]='data'

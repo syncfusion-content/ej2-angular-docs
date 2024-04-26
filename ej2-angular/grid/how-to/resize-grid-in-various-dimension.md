@@ -20,9 +20,7 @@ The following example demonstrates how to resize the grid on external button cli
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-resize/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-resize/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-resize/src/main.ts %}
 {% endhighlight %}

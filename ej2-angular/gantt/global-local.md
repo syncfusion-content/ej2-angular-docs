@@ -121,9 +121,7 @@ The below example demonstrates the Gantt in **Deutsch** culture.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/global/locale-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/global/locale-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/global/locale-cs1/src/main.ts %}
 {% endhighlight %}
@@ -139,9 +137,7 @@ The [`Internationalization`](../common/internationalization) library is used to 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/global/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/global/internationalization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/global/internationalization-cs1/src/main.ts %}
 {% endhighlight %}
@@ -160,9 +156,7 @@ RTL provides an option to switch the text direction and layout of the Gantt comp
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/global/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/global/rtl-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/global/rtl-cs1/src/main.ts %}
 {% endhighlight %}

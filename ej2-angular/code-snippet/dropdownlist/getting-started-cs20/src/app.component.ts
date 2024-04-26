@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -5,6 +11,12 @@ import { DataManager, ODataV4Adaptor, Query } from '@syncfusion/ej2-data';
 import { L10n } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, DropDownListModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the DropDownList component
     template: `<ejs-dropdownlist id='ddlelement' #samples [dataSource]='data' [query]='query' [fields]='fields' [placeholder]='text' [locale]='locale'></ejs-dropdownlist>`

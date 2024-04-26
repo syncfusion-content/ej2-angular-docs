@@ -18,9 +18,7 @@ The following sample demonstrates how to save and restore the state of the panel
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dashboard-layout/save-restore-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dashboard-layout/save-restore-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/save-restore-cs1/src/main.ts %}
 {% endhighlight %}

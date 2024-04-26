@@ -18,9 +18,7 @@ The rendered chart can be printed directly from the browser by calling the publi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/radius-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/radius-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/radius-cs2/src/main.ts %}
 {% endhighlight %}
@@ -37,9 +35,7 @@ Input parameters for this method are `Export` Type for `format` and `fileName
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/radius-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/radius-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/radius-cs3/src/main.ts %}
 {% endhighlight %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind data using two way binding in Angular Check box component | Syncfusion
+title: Bind data using two way binding in Angular Check box component|Syncfusion
 description: Learn here all about Bind data using two way binding in Syncfusion Angular Check box component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Bind data using two way binding 
@@ -36,9 +36,7 @@ In this following example, two way binding for Checkbox is illustrated with Swit
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/check-box/binding-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/check-box/binding-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/check-box/binding-cs1/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule, ChartAllModule, AccumulationChartModule  } from '@syncfusion/ej2-angular-charts'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, ILoadedEventArgs, SplineSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationDataLabelService} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -5,6 +11,12 @@ import { ChartComponent } from '@syncfusion/ej2-angular-charts';
 import { Chart } from '@syncfusion/ej2-charts';
 
 @Component({
+imports: [
+         ChartModule, ButtonModule, ChartAllModule, AccumulationChartModule 
+    ],
+
+providers: [ AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, SplineSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationDataLabelService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-chart #chart id='chart-container1' [primaryXAxis]='primaryXAxis1' [primaryYAxis]='primaryYAxis1'
             [title]='title1' >

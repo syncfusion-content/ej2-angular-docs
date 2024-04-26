@@ -18,9 +18,7 @@ Heat map can be displayed using **Canvas** or **Scalable Vector Graphics (SVG)**
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/rendering-mode/rendermode-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/rendering-mode/rendermode-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/rendering-mode/rendermode-cs1/src/main.ts %}
 {% endhighlight %}

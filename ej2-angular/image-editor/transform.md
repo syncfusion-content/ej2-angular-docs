@@ -22,9 +22,7 @@ Here is an example of rotating an image in a button click event.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs18/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs18/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs18/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ Here is an example of flipping an image in a button click event.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs19/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs19/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs19/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +66,7 @@ Here is an example of straightening the image using the [`straightenImage`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs39/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs39/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs39/src/main.ts %}
 {% endhighlight %}
@@ -94,9 +88,7 @@ Here is an example of zooming an image in a button click event.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs20/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs20/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs20/src/main.ts %}
 {% endhighlight %}
@@ -136,9 +128,7 @@ The parameter available in the [`PanEventArgs`](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs21/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs21/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs21/src/main.ts %}
 {% endhighlight %}

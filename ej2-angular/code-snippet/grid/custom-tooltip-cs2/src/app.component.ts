@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -6,6 +12,15 @@ import { Tooltip } from '@syncfusion/ej2-popups';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule,
+        TooltipModule
+    ],
+
+,
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='315' (queryCellInfo)='tooltip($event)' >
                     <e-columns>

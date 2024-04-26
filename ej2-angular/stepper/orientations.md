@@ -20,9 +20,7 @@ In horizontal orientation, the steps are displayed in a side-by-side manner by s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/horizontal/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/horizontal/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/horizontal/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ You can display the steps one below the other vertically by setting the [orienta
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/vertical/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/vertical/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/vertical/src/main.ts %}
 {% endhighlight %}

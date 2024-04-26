@@ -1,3 +1,11 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { SignatureComponent } from '@syncfusion/ej2-angular-inputs'
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -9,6 +17,12 @@ import { getComponent } from '@syncfusion/ej2-base';
 enableRipple(true);
 
 @Component({
+imports: [
+        FormsModule,CheckBoxModule,ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
             <div id="option">

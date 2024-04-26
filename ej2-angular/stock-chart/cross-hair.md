@@ -18,9 +18,7 @@ Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/cross-hair-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/cross-hair-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/cross-hair-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ Tooltip label for an axis can be enabled by using [`enable`](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/cross-hair-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/cross-hair-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/cross-hair-cs2/src/main.ts %}
 {% endhighlight %}
@@ -55,9 +51,7 @@ Color and width of the crosshair line can be customized by using the [`line`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/cross-hair-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/cross-hair-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/cross-hair-cs3/src/main.ts %}
 {% endhighlight %}

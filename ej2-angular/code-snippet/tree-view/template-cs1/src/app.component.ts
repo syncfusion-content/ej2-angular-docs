@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
+imports: [
+        FormsModule, TreeViewModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     // specifies the template url path
     templateUrl: './template.html',

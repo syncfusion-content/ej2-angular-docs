@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
+imports: [
+        
+        TreeViewModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
           <div id="sample">

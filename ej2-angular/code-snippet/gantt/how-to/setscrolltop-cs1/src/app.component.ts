@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -8,6 +12,11 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { editingData } from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+standalone: true,
     selector: 'app-root',
     template:
        `<button ejs-button id='scrolltop' (click)='scroll()'>Set Scroll Top</button>

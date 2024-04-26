@@ -18,9 +18,7 @@ To search records, inject the [`Filter`](https://ej2.syncfusion.com/angular/docu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/searching-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ To apply search at initial rendering, set the fields, operator, key, and ignoreC
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/searching-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs2/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +68,7 @@ To search treegrid records from an external button, invoke the [`search`](https:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/searching-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs3/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +84,7 @@ By default, treegrid searches all visible columns. You can search specific colum
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/searching-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs4/src/main.ts %}
 {% endhighlight %}
@@ -108,9 +100,7 @@ To clear the searched tree grid records from an external button, set the [`searc
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/searching-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs5/src/main.ts %}
 {% endhighlight %}
@@ -126,9 +116,7 @@ Search the tree grid data on each keystroke by binding the `keyup` event for the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/searching-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs6/src/main.ts %}
 {% endhighlight %}
@@ -146,9 +134,7 @@ In the following sample, searching is performed with multiple keywords by using 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/searching-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs7/src/main.ts %}
 {% endhighlight %}

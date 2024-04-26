@@ -24,9 +24,7 @@ By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/legend/legend-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ The custom position helps you to position the legend anywhere in the 3D chart us
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/legend/legend-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs2/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ The order of the legend items can be reversed by using the [`reverse`](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/legend/legend-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs3/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +70,7 @@ The legend can be aligned at near, far or center to the 3D chart using the [`ali
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/legend/legend-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs4/src/main.ts %}
 {% endhighlight %}
@@ -94,9 +86,7 @@ To change the legend icon shape, [`legendShape`](https://ej2.syncfusion.com/angu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/legend/legend-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs5/src/main.ts %}
 {% endhighlight %}
@@ -112,9 +102,7 @@ By default, legend takes 20% - 25% of the 3D chart's height horizontally, when i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/legend/legend-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs6/src/main.ts %}
 {% endhighlight %}
@@ -130,9 +118,7 @@ The size of the legend items can be customised by using the [`shapeHeight`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/legend/legend-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs7/src/main.ts %}
 {% endhighlight %}
@@ -148,9 +134,7 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/legend/legend-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs8/src/main.ts %}
 {% endhighlight %}
@@ -166,9 +150,7 @@ When the legend text exceeds the container, the text can be wrapped by using the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/legend/legend-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs9/src/main.ts %}
 {% endhighlight %}
@@ -184,9 +166,7 @@ By default, you can collapse the series visibility by clicking the legend. On th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/legend/legend-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs10/src/main.ts %}
 {% endhighlight %}
@@ -202,9 +182,7 @@ By default, series name will be displayed as legend. To skip the legend for a pa
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/legend/legend-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs11/src/main.ts %}
 {% endhighlight %}
@@ -220,9 +198,7 @@ You can set title for legend using [`title`](https://ej2.syncfusion.com/angular/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/legend/legend-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs12/src/main.ts %}
 {% endhighlight %}
@@ -238,9 +214,7 @@ The page number will always be visible while using legend paging. It is now poss
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/legend/legend-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs13/src/main.ts %}
 {% endhighlight %}
@@ -256,9 +230,7 @@ The [`itemPadding`](https://ej2.syncfusion.com/angular/documentation/api/chart3d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/legend/legend-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/legend/legend-cs14/src/main.ts %}
 {% endhighlight %}

@@ -22,9 +22,7 @@ In the following sample, each list item is split into two columns to display rel
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/item-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/item-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/item-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ In the following sample, the selected value is displayed as a combined text of b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/value-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/value-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/value-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ In the following sample, employees are grouped according to their city.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/group-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/group-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/group-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -91,9 +85,7 @@ In the following sample, the list items and its headers are designed and display
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/header-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/header-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/header-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -114,9 +106,7 @@ In the following sample, footer element displays the total number of list items 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/footer-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/footer-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/footer-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -137,9 +127,7 @@ In the following sample, popup list content displays the notification of no data
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/norecords-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/norecords-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/norecords-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -157,9 +145,7 @@ In the following sample, when the data fetch request fails, the MultiSelect disp
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/norecords-template-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/norecords-template-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/norecords-template-cs2/src/main.ts %}
 {% endhighlight %}

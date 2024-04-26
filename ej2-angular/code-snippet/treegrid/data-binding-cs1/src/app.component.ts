@@ -1,3 +1,9 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit,ViewChild } from '@angular/core';
@@ -6,6 +12,16 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { DataManager } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService],
+standalone: true,
     selector: 'app-container',
     template: ` <button ejs-button (click)="click()">Bind Data</button>
     <ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' parentIdMapping='ParentItem' idMapping='TaskID' [allowPaging]="true" height=240>

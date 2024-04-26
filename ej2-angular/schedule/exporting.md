@@ -22,9 +22,7 @@ The Scheduler allows you to export all its events into an Excel format file by u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/excel-export-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/excel-export-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/excel-export-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ By default, Scheduler exports all the default event fields that are mapped to it
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/excel-export-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/excel-export-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/excel-export-cs2/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ By default, the Scheduler exports recurring events as a single data by exporting
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/excel-export-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/excel-export-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/excel-export-cs3/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ By default, the whole event collection bound to the Scheduler gets exported as a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/excel-export-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/excel-export-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/excel-export-cs4/src/main.ts %}
 {% endhighlight %}
@@ -100,9 +92,7 @@ Using fields property, we can only export the defined fields into excel without 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/excel-export-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/excel-export-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/excel-export-cs5/src/main.ts %}
 {% endhighlight %}
@@ -120,9 +110,7 @@ By default, the Scheduler allows you to download the exported Excel file with a 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/excel-export-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/excel-export-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/excel-export-cs6/src/main.ts %}
 {% endhighlight %}
@@ -138,9 +126,7 @@ By default, the Scheduler exports event data to an excel file in the `.xlsx` for
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/excel-export-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/excel-export-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/excel-export-cs7/src/main.ts %}
 {% endhighlight %}
@@ -156,9 +142,7 @@ The Scheduler exports the event data to CSV format with `,` as separator. You ca
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/excel-export-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/excel-export-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/excel-export-cs8/src/main.ts %}
 {% endhighlight %}
@@ -176,9 +160,7 @@ The following code example shows how the Scheduler events are exported to a cale
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/calendar-export-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/calendar-export-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/calendar-export-cs1/src/main.ts %}
 {% endhighlight %}
@@ -196,9 +178,7 @@ The following example downloads the iCal file with a name `ScheduleEvents.ics`.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/calendar-export-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/calendar-export-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/calendar-export-cs2/src/main.ts %}
 {% endhighlight %}
@@ -218,9 +198,7 @@ The following example shows how to import an ICS file into Scheduler, using the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/calendar-export-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/calendar-export-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/calendar-export-cs3/src/main.ts %}
 {% endhighlight %}
@@ -245,9 +223,7 @@ You can print the Schedule element with the current view by using the `print` me
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/print-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/print-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/print-cs1/src/main.ts %}
 {% endhighlight %}
@@ -263,9 +239,7 @@ You can print the Schedule element based on your needs using the `print` method 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/print-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/print-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/print-cs2/src/main.ts %}
 {% endhighlight %}

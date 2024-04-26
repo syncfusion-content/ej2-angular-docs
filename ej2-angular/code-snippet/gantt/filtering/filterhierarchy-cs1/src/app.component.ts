@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { DropDownListComponent,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { FilterService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -8,6 +14,12 @@ import { ChangeEventArgs, DropDownListComponent } from '@syncfusion/ej2-angular-
 import { projectNewData  } from './data';
 
 @Component({
+imports: [
+         GanttModule,DropDownListAllModule
+    ],
+
+providers: [FilterService],
+standalone: true,
     selector: 'app-root',
     template:
        `<div style="padding-top: 7px; display: inline-block">Hierarchy Mode<ejs-dropdownlist (change)='onChange($event)' [dataSource]='dropData' value='Parent' [fields]='fields'></ejs-dropdownlist></div>

@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ProgressButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+
 
 
 import { Component, ViewChild } from '@angular/core';
 import { ProgressButtonComponent } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
+imports: [
+        
+        ProgressButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <button #progressBtn ejs-progressbutton [content]='content' [enableProgress]='true' [duration]='4000' (end)='end()' [iconCss]='iconCss' cssClass='e-hide-spinner' (click)="btnClick()"></button></div>`

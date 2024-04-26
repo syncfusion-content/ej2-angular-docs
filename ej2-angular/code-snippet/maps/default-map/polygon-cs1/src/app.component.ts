@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MapsModule, PolygonService } from '@syncfusion/ej2-angular-maps'
+
 
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { world_map } from './world-map';
 
 @Component({
+imports: [
+         MapsModule
+    ],
+
+providers: [PolygonService],
+standalone: true,
   selector: 'app-container',
   template: `<div class="control-section">
   <div align='center'>

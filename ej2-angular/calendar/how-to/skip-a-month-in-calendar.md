@@ -16,9 +16,7 @@ The following example demonstrates how to skip a month in a Calendar while click
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/calendar/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/getting-started-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/calendar/getting-started-cs12/src/main.ts %}
 {% endhighlight %}

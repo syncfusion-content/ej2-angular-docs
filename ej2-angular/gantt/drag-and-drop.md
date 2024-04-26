@@ -20,9 +20,7 @@ To use row drag and drop feature, inject the `RowDDService` and `EditService` in
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/rows/deafultdrag-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/deafultdrag-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/rows/deafultdrag-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ Gantt also supports dragging multiple rows at a time and drop them on any rows a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/rows/multidrag-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/multidrag-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/rows/multidrag-cs1/src/main.ts %}
 {% endhighlight %}
@@ -71,9 +67,7 @@ You can prevent drag action of the particular record by setting the `cancel` pro
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/rows/preventdrag-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/preventdrag-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/rows/preventdrag-cs1/src/main.ts %}
 {% endhighlight %}
@@ -91,9 +85,7 @@ In the following sample, we have prevented the drop action based on the position
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/rows/preventdrop-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/preventdrop-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/rows/preventdrop-cs1/src/main.ts %}
 {% endhighlight %}
@@ -111,9 +103,7 @@ In the below example drop action is cancelled and dropped above to target row.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/rows/preventdrop-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/preventdrop-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/rows/preventdrop-cs2/src/main.ts %}
 {% endhighlight %}
@@ -136,9 +126,7 @@ The following code example shows how to drag and drop a row on button click acti
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/rows/dynamicdrag-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/dynamicdrag-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/rows/dynamicdrag-cs1/src/main.ts %}
 {% endhighlight %}

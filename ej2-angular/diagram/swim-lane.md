@@ -22,9 +22,7 @@ The following code example illustrates how to define a swimlane object.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/swimlaneheader-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/swimlaneheader-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/swimlaneheader-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ The following code example illustrates how to define a swimlane header.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/swimlaneheader-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/swimlaneheader-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/swimlaneheader-cs2/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +62,7 @@ The following code example illustrates how to customize the swimlane header.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/headercustomise-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/headercustomise-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/headercustomise-cs1/src/main.ts %}
 {% endhighlight %}
@@ -84,9 +78,7 @@ You can customize the swimlane header style and text properties dynamically. The
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/dynamicheader-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/dynamicheader-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/dynamicheader-cs1/src/main.ts %}
 {% endhighlight %}
@@ -120,9 +112,7 @@ The following code example illustrates how to define a swimlane with lane.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/emptylane-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/emptylane-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/emptylane-cs1/src/main.ts %}
 {% endhighlight %}
@@ -140,9 +130,7 @@ The following code example illustrates how to define a lane header.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/laneheader-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/laneheader-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/laneheader-cs1/src/main.ts %}
 {% endhighlight %}
@@ -161,9 +149,7 @@ The following code example illustrates how to customize the lane header.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/laneheadercustomize-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/laneheadercustomize-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/laneheadercustomize-cs1/src/main.ts %}
 {% endhighlight %}
@@ -178,9 +164,7 @@ The following code example illustrates how to customize the lane header.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/dynamiclaneheader-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/dynamiclaneheader-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/dynamiclaneheader-cs1/src/main.ts %}
 {% endhighlight %}
@@ -196,9 +180,7 @@ You can add the a lane at runtime by using the client side API method called `ad
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/addlanes-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/addlanes-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/addlanes-cs1/src/main.ts %}
 {% endhighlight %}
@@ -216,9 +198,7 @@ The following code example illustrates how to add nodes to lane.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/lanechildern-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/lanechildern-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/lanechildern-cs1/src/main.ts %}
 {% endhighlight %}
@@ -256,9 +236,7 @@ The following code illustrates how to disable swimlane lane swapping.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/addlanes-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/addlanes-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/addlanes-cs2/src/main.ts %}
 {% endhighlight %}
@@ -302,9 +280,7 @@ The following code example illustrates how to add phase at swimlane.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/phase-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/phase-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/phase-cs1/src/main.ts %}
 {% endhighlight %}
@@ -320,9 +296,7 @@ You can add the a phase at runtime by using client side API method called `addPh
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/addphases-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/addphases-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/addphases-cs1/src/main.ts %}
 {% endhighlight %}
@@ -343,9 +317,7 @@ The following code example illustrates how to customize the phase in swimlane.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/phasecustomize-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/phasecustomize-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/phasecustomize-cs1/src/main.ts %}
 {% endhighlight %}
@@ -382,9 +354,7 @@ Diagram provides the support to add swimlane and phases to symbol palette. The f
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/swimlane/palette-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/swimlane/palette-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/swimlane/palette-cs1/src/main.ts %}
 {% endhighlight %}

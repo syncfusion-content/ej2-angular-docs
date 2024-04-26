@@ -20,9 +20,7 @@ To use the [`tabIndex`](https://ej2.syncfusion.com/angular/documentation/api/tab
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/tab-key-navigation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/tab-key-navigation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tab/tab-key-navigation-cs1/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ToolbarService, PdfExportService, DetailRowService } from '@syncfusion/ej2-angular-grids'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, employeeData } from './datasource';
 import {
@@ -11,6 +16,14 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+imports: [
+        
+        GridModule,
+        DropDownListAllModule
+    ],
+
+providers: [PdfExportService, ToolbarService, DetailRowService],
+standalone: true,
     selector: 'app-root',
     template: `
   <div style="display: flex">

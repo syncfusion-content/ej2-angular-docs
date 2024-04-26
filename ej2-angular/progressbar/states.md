@@ -19,9 +19,7 @@ This is the default state. You can use it when the progress estimation is known.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/progressbar/modes-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/modes-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/progressbar/modes-cs1/src/main.ts %}
 {% endhighlight %}
@@ -37,9 +35,7 @@ By enabling the **IsIndeterminate** property, the state of the progress bar can 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/progressbar/modes-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/modes-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/progressbar/modes-cs2/src/main.ts %}
 {% endhighlight %}
@@ -55,9 +51,7 @@ You can use a secondary progress indicator when the primary progress depends on 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/progressbar/modes-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/modes-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/progressbar/modes-cs3/src/main.ts %}
 {% endhighlight %}

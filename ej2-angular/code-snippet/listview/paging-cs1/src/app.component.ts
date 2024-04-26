@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { PagerModule } from '@syncfusion/ej2-angular-grids'
+
 
 
 
@@ -7,6 +13,13 @@ import { datasource } from './datasource';
 import { DataManager, Query, JsonAdaptor } from '@syncfusion/ej2-data';
 import { Pager } from "@syncfusion/ej2-angular-grids";
 @Component({
+imports: [
+        
+        ListViewModule, PagerModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `<div class="control-section">
   <ejs-listview id='listview' [dataSource]='data' [query]='query' showHeader='true' >

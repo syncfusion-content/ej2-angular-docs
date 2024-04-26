@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 
@@ -7,6 +11,12 @@ import { isNullOrUndefined } from '@syncfusion/ej2-base';
 import { UploaderComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+imports: [
+         UploaderModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
                <ejs-uploader #defaultupload autoUpload='false'  [asyncSettings]='path' (selected)="onFileSelect($event)" ></ejs-uploader>

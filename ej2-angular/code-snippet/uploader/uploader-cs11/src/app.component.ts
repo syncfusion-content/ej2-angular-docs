@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 
@@ -5,6 +9,12 @@ import { Component } from '@angular/core';
 import { detach, L10n } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+         UploaderModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
                <ejs-uploader #defaultupload  [asyncSettings]='path' locale= 'fr-CH'  autoUpload = 'false'></ejs-uploader>

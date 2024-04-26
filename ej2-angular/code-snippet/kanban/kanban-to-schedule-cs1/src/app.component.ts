@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
+import { ScheduleAllModule, RecurrenceEditorAllModule } from '@syncfusion/ej2-angular-schedule'
+
 
 
 
@@ -10,6 +15,15 @@ import {
     ResizeService, WorkHoursModel, DragAndDropService, ResourceDetails, ScheduleComponent, ResourcesModel
 } from '@syncfusion/ej2-angular-schedule';
 @Component({
+imports: [
+        
+        KanbanModule,
+        ScheduleAllModule,
+        RecurrenceEditorAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<div class="container-fluid">
       <div class="row">

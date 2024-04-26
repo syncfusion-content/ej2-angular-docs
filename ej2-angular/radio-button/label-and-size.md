@@ -21,9 +21,7 @@ of label for RadioButton. You can customize the label position before or after t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/radio-button/label-and-size-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/radio-button/label-and-size-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/radio-button/label-and-size-cs2/src/main.ts %}
 {% endhighlight %}
@@ -39,9 +37,7 @@ The different RadioButton size are default and small. To reduce the size of the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/radio-button/label-and-size-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/radio-button/label-and-size-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/radio-button/label-and-size-cs3/src/main.ts %}
 {% endhighlight %}

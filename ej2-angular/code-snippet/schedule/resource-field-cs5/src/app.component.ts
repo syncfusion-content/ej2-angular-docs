@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
@@ -11,6 +18,21 @@ import { PopupOpenEventArgs, EventRenderedArgs, ScheduleComponent, MonthService,
 } from "@syncfusion/ej2-angular-schedule";
 import { eventData } from './datasource';
 @Component({
+imports: [
+        
+        ScheduleModule,
+        TimePickerModule,
+        DropDownListModule,
+        DateTimePickerModule 
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService],
+standalone: true,
     selector: 'app-root',
     providers: [ MonthService, DayService, WeekService, WorkWeekService, ResizeService, DragAndDropService],
     encapsulation: ViewEncapsulation.None,

@@ -20,9 +20,7 @@ The height of child taskbars and parent taskbars can be customized by using [`ta
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/appearance-customization/taskbar-height-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/taskbar-height-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/appearance-customization/taskbar-height-cs1/src/main.ts %}
 {% endhighlight %}
@@ -41,9 +39,7 @@ The default taskbar UI can be replaced with custom templates by using the [`quer
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/appearance-customization/formatting-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/formatting-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/appearance-customization/formatting-cs1/src/main.ts %}
 {% endhighlight %}
@@ -59,9 +55,7 @@ You can change the gripper icon in the taskbar by applying styles to their respe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/appearance-customization/change-gripper-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/change-gripper-icon-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/appearance-customization/change-gripper-icon-cs1/src/main.ts %}
 {% endhighlight %}
@@ -81,9 +75,7 @@ The following code example shows how to use this property.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/projectview-multitaskbar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/projectview-multitaskbar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/projectview-multitaskbar-cs1/src/main.ts %}
 {% endhighlight %}
@@ -99,9 +91,7 @@ The width and background color of connector lines in Gantt can be customized usi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/appearance-customization/dependency-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/dependency-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/appearance-customization/dependency-cs1/src/main.ts %}
 {% endhighlight %}
@@ -122,9 +112,7 @@ In the Gantt component, you can enable or disable the mouse hover tooltip for th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/tooltip/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/tooltip/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/tooltip/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -144,9 +132,7 @@ The default tooltip in the Gantt component can be customized using the [`tooltip
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/tooltip/taskbar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/tooltip/taskbar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/tooltip/taskbar-cs1/src/main.ts %}
 {% endhighlight %}
@@ -162,9 +148,7 @@ The default connector line tooltip in the Gantt component can be customized usin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/tooltip/dependency-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/tooltip/dependency-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/tooltip/dependency-cs1/src/main.ts %}
 {% endhighlight %}
@@ -180,9 +164,7 @@ A baseline tooltip can be customized using the [`tooltipSettings.baseline`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/tooltip/baseline-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/tooltip/baseline-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/tooltip/baseline-cs1/src/main.ts %}
 {% endhighlight %}

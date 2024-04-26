@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { SortService,RowDDService,FilterService,ResizeService,ReorderService, ToolbarService, EditService,UndoRedoService,ColumnMenuService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -8,6 +13,12 @@ import { projectNewData } from './data';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [SortService,RowDDService,FilterService,ResizeService,ReorderService, ToolbarService, EditService,UndoRedoService,ColumnMenuService],
+standalone: true,
     selector: 'app-root',
     template:
        `<button ejs-button id='clearundocollection' (click)='clearundocollection()'>ClearUndoCollection</button>

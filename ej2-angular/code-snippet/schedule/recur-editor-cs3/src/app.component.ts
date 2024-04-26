@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RecurrenceEditorModule } from '@syncfusion/ej2-angular-schedule'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +10,14 @@ import { RecurrenceEditor, RecurrenceEditorChangeEventArgs } from '@syncfusion/e
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        RecurrenceEditorModule,
+        DropDownListAllModule
+    ],
+
+,
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the Schedule component
     template: `<div style="padding-bottom:15px;">

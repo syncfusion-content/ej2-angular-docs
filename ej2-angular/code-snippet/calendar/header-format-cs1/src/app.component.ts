@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -6,6 +11,14 @@ import { CalendarComponent } from '@syncfusion/ej2-angular-calendars';
 import { DropDownListComponent,ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+imports: [
+        
+        DropDownListModule,
+        CalendarModule //declaration of ej2-angular-calendars module into NgModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./style.css'],
     template: `

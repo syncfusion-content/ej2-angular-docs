@@ -18,9 +18,7 @@ In the following sample, the searching operation starts as soon as you start typ
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/search-cards-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/search-cards-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/search-cards-cs1/src/main.ts %}
 {% endhighlight %}

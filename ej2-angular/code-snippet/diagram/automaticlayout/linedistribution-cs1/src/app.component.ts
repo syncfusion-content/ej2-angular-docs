@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule, ComplexHierarchicalTreeService, DataBindingService, LineDistributionService, LayoutAnimationService } from '@syncfusion/ej2-angular-diagrams'
+
 
 
 
@@ -11,6 +15,12 @@ import { DataManager } from '@syncfusion/ej2-data';
 Diagram.Inject(DataBinding, ComplexHierarchicalTree, LineDistribution);
 
 @Component({
+imports: [
+         DiagramModule
+    ],
+
+providers: [ComplexHierarchicalTreeService, DataBindingService, LineDistributionService, LayoutAnimationService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="590px" [getConnectorDefaults]='connDefaults'
     [getNodeDefaults]='nodeDefaults' [layout]='layout' [dataSourceSettings]='data' [snapSettings]='snapSettings'

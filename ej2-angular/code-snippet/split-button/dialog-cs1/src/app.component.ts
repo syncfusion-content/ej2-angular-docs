@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SplitButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +10,14 @@ import { ItemModel, MenuEventArgs  } from '@syncfusion/ej2-angular-splitbuttons'
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
+imports: [
+        
+        SplitButtonModule,
+        DialogModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <!-- To render Dialog. -->

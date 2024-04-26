@@ -1,3 +1,9 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PageService, SortService, FilterService,ToolbarService,TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -8,6 +14,18 @@ import { SearchEventArgs } from '@syncfusion/ej2-angular-grids';
 import { Predicate, Query } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule,
+        DropDownListAllModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                ToolbarService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height='270' [treeColumnIndex]='1' [toolbar]='toolbarOptions' [searchSettings]='searchOptions' (actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)" childMapping='subtasks'>
                     <e-columns>

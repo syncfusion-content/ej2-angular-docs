@@ -19,9 +19,7 @@ The following example demonstrate, how to check whether value change happened by
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdownlist/manual-programmatic-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/manual-programmatic-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/manual-programmatic-cs1/src/main.ts %}
 {% endhighlight %}

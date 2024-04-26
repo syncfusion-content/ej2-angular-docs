@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, SearchService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -5,6 +10,14 @@ import { data } from './datasource';
 import { ToolbarItems, SearchSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule
+    ],
+
+providers: [SearchService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template:
         `<button ejs-button id='clear' (click)='clearSearch()'>Clear Search</button>

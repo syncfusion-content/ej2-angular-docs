@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { SelectionService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
@@ -6,6 +11,12 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { projectNewData } from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt id="ganttDefault" height="350px" width="600px" [dataSource]="data" [taskFields]="taskSettings"></ejs-gantt>`,

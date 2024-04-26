@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeMapModule, TreeMapLegendService, TreeMapTooltipService, TreeMapAllModule } from '@syncfusion/ej2-angular-treemap'
+
 
 
 import { TreeMap } from '@syncfusion/ej2-treemap';
 import { Component, ViewChild } from '@angular/core';
 import { ImageExportService } from '@syncfusion/ej2-angular-treemap';
 @Component({
+imports: [
+         TreeMapModule, TreeMapAllModule
+    ],
+
+providers: [TreeMapLegendService, TreeMapTooltipService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treemap id='container' #treemap [allowImageExport]=true style='display: block;' [dataSource]='data' weightValuePath='GDP'
     [leafItemSettings]='leafItemSettings'>

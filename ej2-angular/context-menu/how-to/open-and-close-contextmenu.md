@@ -18,9 +18,7 @@ In the following example, the ContextMenu is opened using the [`open`](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/context-menu/how-to-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/context-menu/how-to-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/context-menu/how-to-cs1/src/main.ts %}
 {% endhighlight %}

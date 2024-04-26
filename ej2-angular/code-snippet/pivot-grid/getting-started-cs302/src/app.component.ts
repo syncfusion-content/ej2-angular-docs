@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -6,6 +10,14 @@ import { PivotFieldListComponent, PivotViewComponent, FieldListService, IDataOpt
 import { Browser, setStyleAttribute, prepend } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   providers: [FieldListService, VirtualScrollService],
   styleUrls: ['./app.component.css'],

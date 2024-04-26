@@ -18,9 +18,7 @@ In the below sample, showcase that how to show `suggestion list` with AutoComple
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs16/src/main.ts %}
 {% endhighlight %}

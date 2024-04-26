@@ -18,9 +18,7 @@ PDF export provides an option to export the current page into PDF. To export cur
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/pdf-export-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs4/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ In the following demo, get the selected records using the [`getSelectedRecords`]
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/pdf-export-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs5/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +52,7 @@ PDF export provides an option to export hidden columns of the TreeGrid by defini
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/pdf-export-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs6/src/main.ts %}
 {% endhighlight %}
@@ -80,9 +74,7 @@ In the below example, we have `Duration` as a hidden column in the treegrid. Whi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/pdf-export-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs7/src/main.ts %}
 {% endhighlight %}
@@ -98,9 +90,7 @@ Page orientation can be changed Landscape(Default Portrait) for the exported doc
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/pdf-export-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs8/src/main.ts %}
 {% endhighlight %}
@@ -145,9 +135,7 @@ Supported page sizes are:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/pdf-export-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs9/src/main.ts %}
 {% endhighlight %}
@@ -167,9 +155,7 @@ You can assign the file name for the exported document by defining `fileName` pr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/pdf-export-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs10/src/main.ts %}
 {% endhighlight %}
@@ -214,9 +200,7 @@ In the following example, we have used Advent Pro font to export the treegrid wi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/pdf-export-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs11/src/main.ts %}
 {% endhighlight %}

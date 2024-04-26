@@ -28,9 +28,7 @@ Page settings enable to customize the appearance, width, and height of the diagr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/pagesettings/pagesettings-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/pagesettings/pagesettings-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/pagesettings/pagesettings-cs1/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ The following code illustrates how to stretch and align the background image.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/pagesettings/background-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/pagesettings/background-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/pagesettings/background-cs1/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +66,7 @@ The following code illustrates how to enable multiple page and page break lines.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/pagesettings/pagebreak-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/pagesettings/pagebreak-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/pagesettings/pagebreak-cs1/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +84,7 @@ The following code example illustrates how to define boundary constraints with r
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/pagesettings/boundary-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/pagesettings/boundary-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/pagesettings/boundary-cs1/src/main.ts %}
 {% endhighlight %}

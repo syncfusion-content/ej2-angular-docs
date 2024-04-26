@@ -22,9 +22,7 @@ You can define the styles applicable to the all the Timeline item connectors.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/customization/connector-common/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timeline/customization/connector-common/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/customization/connector-common/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ You can also apply unique styles to individual connectors, to differentiate spec
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/customization/connector-individual/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timeline/customization/connector-individual/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/customization/connector-individual/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +68,7 @@ You can modify the color of the dots to highlight the specific Timeline items.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/customization/dot-color/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timeline/customization/dot-color/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/customization/dot-color/src/main.ts %}
 {% endhighlight %}
@@ -96,9 +90,7 @@ You can adjust the size of the dot to make it larger or smaller by using the `--
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/customization/dot-size/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timeline/customization/dot-size/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/customization/dot-size/src/main.ts %}
 {% endhighlight %}
@@ -120,9 +112,7 @@ You can add shadow effects to the Timeline dots to make it feel visually engagin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/customization/dot-shadow/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timeline/customization/dot-shadow/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/customization/dot-shadow/src/main.ts %}
 {% endhighlight %}
@@ -144,9 +134,7 @@ You can achieve the desired dot variant by customizing the border, outline and b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/customization/dot-variant/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timeline/customization/dot-variant/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/customization/dot-variant/src/main.ts %}
 {% endhighlight %}
@@ -168,9 +156,7 @@ By adding the `e-outline` class to the Timeline `cssClass` property it enables t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/customization/dot-outline/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timeline/customization/dot-outline/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/customization/dot-outline/src/main.ts %}
 {% endhighlight %}

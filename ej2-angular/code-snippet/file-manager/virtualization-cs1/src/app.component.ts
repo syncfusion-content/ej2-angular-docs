@@ -1,3 +1,7 @@
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { FileManagerModule,  NavigationPaneService, ToolbarService, DetailsViewService, VirtualizationService } from '@syncfusion/ej2-angular-filemanager'
+
 import { Component, ViewEncapsulation } from '@angular/core';
 import { FileManagerComponent, NavigationPaneService, ToolbarService, DetailsViewService, VirtualizationService } from '@syncfusion/ej2-angular-filemanager';
 /**
@@ -5,6 +9,10 @@ import { FileManagerComponent, NavigationPaneService, ToolbarService, DetailsVie
  */
 
 @Component({
+imports: [FileManagerModule, ],
+
+providers:[ NavigationPaneService, ToolbarService, DetailsViewService, VirtualizationService ],
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     templateUrl: './default.html',

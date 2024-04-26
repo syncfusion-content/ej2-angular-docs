@@ -18,9 +18,7 @@ The following example illustrates how to export a Syncfusion Angular Grid in a C
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs4/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -8,6 +13,12 @@ import { Query, DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 AutoCompleteComponent.Inject(VirtualScroll);
 
 @Component({
+imports: [
+        FormsModule, AutoCompleteModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the virtual-scroll url path
     templateUrl: 'virtual-scroll.html'

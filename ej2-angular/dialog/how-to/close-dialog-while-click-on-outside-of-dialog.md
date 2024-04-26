@@ -20,9 +20,7 @@ In the following sample, dialog is closed when clicking outside the dialog area 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/dlg-close-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dlg-close-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/dlg-close-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ In the following sample, the dialog is rendered based on the target container. I
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/dialog-close-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dialog-close-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/dialog-close-cs1/src/main.ts %}
 {% endhighlight %}

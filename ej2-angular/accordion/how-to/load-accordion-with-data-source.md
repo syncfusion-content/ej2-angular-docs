@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load accordion with data source in Angular Accordion component | Syncfusion
+title: Load accordion with data source in Angular Accordion component|Syncfusion
 description: Learn here all about Load accordion with data source in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Load accordion with data source 
@@ -18,9 +18,7 @@ In the below demo, Data is fetched from an `OData` service using `DataManager`. 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/accordion/accordion-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/accordion/accordion-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/accordion/accordion-cs5/src/main.ts %}
 {% endhighlight %}

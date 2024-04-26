@@ -20,9 +20,7 @@ To use the column resize, inject **ResizeService** in the provider section of **
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/resize-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/resize-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/resize-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ In the below code, **TaskName** and **duration** columns are defined with minimu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/resize-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/resize-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/resize-cs2/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +62,7 @@ You can disable resizing for a particular column by setting the [allowResizing](
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/resize-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/resize-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/resize-cs3/src/main.ts %}
 {% endhighlight %}
@@ -88,9 +82,7 @@ In this below code, we have disabled resize for **Shipped Date** column.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/resize-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/resize-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/resize-cs4/src/main.ts %}
 {% endhighlight %}
@@ -114,9 +106,7 @@ The following example demonstrates how to set the [resizeSettings.mode](https://
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/resize-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/resize-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/resize-cs5/src/main.ts %}
 {% endhighlight %}
@@ -156,9 +146,7 @@ The following example demonstrates how to resize the columns in a tree grid. Thi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/resize-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/resize-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/resize-cs6/src/main.ts %}
 {% endhighlight %}
@@ -184,9 +172,7 @@ The following is an example of using the resizing events, the [resizeStart](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/resize-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/resize-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/resize-cs7/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
@@ -6,6 +12,19 @@ import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthServ
 import { Internationalization } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        TimePickerModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService],
+standalone: true,
     selector: 'app-root',
     providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
     // specifies the template string for the Schedule component

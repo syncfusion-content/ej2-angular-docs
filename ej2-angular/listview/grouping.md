@@ -20,9 +20,7 @@ In below sample, Cars are grouped based on its category using groupBy field.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/grouping-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/grouping-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/grouping-cs1/src/main.ts %}
 {% endhighlight %}

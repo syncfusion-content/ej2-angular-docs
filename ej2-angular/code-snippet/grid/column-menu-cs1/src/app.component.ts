@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { SortService, GroupService, ColumnMenuService, PageService, FilterService } from '@syncfusion/ej2-angular-grids';
 import { GroupSettingsModel, FilterSettingsModel, ColumnMenuClickEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+,
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' id='gridcomp' allowPaging='true' allowGrouping='true' allowSorting='true' showColumnMenu='true'
         [groupSettings]='groupOptions' allowFiltering='true' [filterSettings]='filterSettings' [columnMenuItems]='columnMenuItems'

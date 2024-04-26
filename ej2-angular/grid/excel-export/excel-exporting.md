@@ -26,9 +26,7 @@ The following example demonstrates how to perform a Excel or CSV export action i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-cs10/src/main.ts %}
 {% endhighlight %}
@@ -52,9 +50,7 @@ The following example demonstrates how to show and hide the spinner during Excel
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs1/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +70,7 @@ The following example demonstrates how to render custom dataSource during Excel 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-cs11/src/main.ts %}
 {% endhighlight %}
@@ -98,9 +92,7 @@ The following example shows how to export the grid with a custom aggregate that 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-aggregate/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-aggregate/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-aggregate/src/main.ts %}
 {% endhighlight %}
@@ -120,9 +112,7 @@ The following example demonstrates how to perform export with cell and row spann
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-span/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-span/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-span/src/main.ts %}
 {% endhighlight %}
@@ -144,9 +134,7 @@ The following example demonstrates how to export the grid with custom date forma
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-date/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-date/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-date/src/main.ts %}
 {% endhighlight %}
@@ -172,9 +160,7 @@ The following example demonstrates how to export multiple grids to the same page
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-cs12/src/main.ts %}
 {% endhighlight %}
@@ -202,9 +188,7 @@ The following example demonstrates how to export multiple grids to a Excel file 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-cs13/src/main.ts %}
 {% endhighlight %}
@@ -234,9 +218,7 @@ The following example demonstrates how to export hierarchical grid to Excel docu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-cs14/src/main.ts %}
 {% endhighlight %}
@@ -258,9 +240,7 @@ The following example demonstrates how to perform an export without the header b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-delete/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-delete/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-delete/src/main.ts %}
 {% endhighlight %}
@@ -280,9 +260,7 @@ In the following example, the [toolbarClick](https://ej2.syncfusion.com/angular/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-formula/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-formula/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-formula/src/main.ts %}
 {% endhighlight %}

@@ -22,9 +22,7 @@ You can check this video to learn about how to perform Exporting and its customi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/pdf-export-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs12/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ PDF export provides an option for exporting multiple treegrids to same file. In 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/pdf-export-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs13/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ In the following demo, the default spinner component is rendered when exporting 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/pdf-export-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs14/src/main.ts %}
 {% endhighlight %}
@@ -78,9 +72,7 @@ PDF export provides an option to define datasource dynamically before exporting.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/pdf-export-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/pdf-export-cs15/src/main.ts %}
 {% endhighlight %}

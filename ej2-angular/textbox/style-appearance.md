@@ -47,9 +47,7 @@ You can show text or hide text by showing `•` character instead of actual text
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textbox/toggle-password-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/toggle-password-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/toggle-password-cs1/src/main.ts %}
 {% endhighlight %}

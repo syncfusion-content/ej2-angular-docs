@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integrate avatar into listview in Angular Avatar component | Syncfusion
+title: Integrate avatar into listview in Angular Avatar component|Syncfusion
 description: Learn here all about Integrate avatar into listview in Syncfusion Angular Avatar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Integrate avatar into listview 
@@ -54,9 +54,7 @@ export class AppComponent {
 
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/listview-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/avatar/listview-cs2/src/main.ts %}
 {% endhighlight %}

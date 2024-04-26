@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component } from '@angular/core';
 import { Query, Predicate, DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data'
 
 @Component({
+imports: [
+        FormsModule,DropDownListModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template url path
     templateUrl: 'template.html'

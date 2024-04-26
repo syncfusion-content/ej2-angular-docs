@@ -62,9 +62,7 @@ The following sample demonstrates how to create bullet and numbering lists in do
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/list-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/list-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/list-cs1/src/main.ts %}
 {% endhighlight %}

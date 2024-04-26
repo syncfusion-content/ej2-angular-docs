@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component } from '@angular/core';
@@ -16,6 +22,19 @@ class CustomAdaptor extends ODataV4Adaptor {
 }
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        ButtonModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService],
+standalone: true,
   selector: 'app-root',
   providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
   // specifies the template string for the Schedule component

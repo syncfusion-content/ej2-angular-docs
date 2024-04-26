@@ -40,9 +40,7 @@ Refresh the grid after the datasource change by using the [`refresh`](https://ej
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/change-headertext-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/change-headertext-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/change-headertext-cs3/src/main.ts %}
 {% endhighlight %}
@@ -95,9 +93,7 @@ In the below demo, the button click will enable/disable the Grid and its actions
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs36/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs36/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs36/src/main.ts %}
 {% endhighlight %}
@@ -115,9 +111,7 @@ In the following example, we have printed expanded child grids form other pages.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/default-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/default-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/default-cs13/src/main.ts %}
 {% endhighlight %}
@@ -157,9 +151,7 @@ this.grid.refreshHeader();
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/change-headertext-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/change-headertext-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/change-headertext-cs4/src/main.ts %}
 {% endhighlight %}
@@ -202,9 +194,7 @@ Add the custom css class to particular column by using [`customAttributes`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-column-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-column-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-column-cs2/src/main.ts %}
 {% endhighlight %}
@@ -232,9 +222,7 @@ tooltip (args: QueryCellInfoEventArgs) {
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-tooltip-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-tooltip-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-tooltip-cs2/src/main.ts %}
 {% endhighlight %}
@@ -259,9 +247,7 @@ Initialize the column template for your custom component. The [`template`](https
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/column-sync-comp-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/column-sync-comp-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/column-sync-comp-cs2/src/main.ts %}
 {% endhighlight %}
@@ -314,9 +300,7 @@ setHeaderHeight(args) {
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/header-orientation-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/header-orientation-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/header-orientation-cs2/src/main.ts %}
 {% endhighlight %}
@@ -340,9 +324,7 @@ In the below sample, grid is rendered with a customized column menu icon.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-column-menu-icon-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-column-menu-icon-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-column-menu-icon-cs2/src/main.ts %}
 {% endhighlight %}
@@ -362,9 +344,7 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs37/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs37/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs37/src/main.ts %}
 {% endhighlight %}
@@ -382,9 +362,7 @@ In the below example, we have changed the dialog's header text for editing and a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs38/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs38/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs38/src/main.ts %}
 {% endhighlight %}
@@ -406,9 +384,7 @@ In the below example, we have rendered the grid columns **CustomerID** as hidden
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs39/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs39/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs39/src/main.ts %}
 {% endhighlight %}
@@ -426,9 +402,7 @@ In the below demo, Cascading DropDownList rendered for **ShipCountry** and **Shi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs40/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs40/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs40/src/main.ts %}
 {% endhighlight %}
@@ -465,9 +439,7 @@ In the below demo, DropDownList is rendered with custom Datasource for the **Shi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs41/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs41/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs41/src/main.ts %}
 {% endhighlight %}
@@ -485,9 +457,7 @@ The following example demonstrate the wizard like editing in the grid with the u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/wizardtemplate-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/wizardtemplate-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/wizardtemplate-cs2/src/main.ts %}
 {% endhighlight %}
@@ -571,9 +541,7 @@ The following example, we have rendered tab control inside the edit dialog. The 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/tablikeedit-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/tablikeedit-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/tablikeedit-cs2/src/main.ts %}
 {% endhighlight %}
@@ -591,9 +559,7 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs42/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs42/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs42/src/main.ts %}
 {% endhighlight %}
@@ -607,9 +573,7 @@ For batch mode of editing, you can use [`cellEdit`](https://ej2.syncfusion.com/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs43/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs43/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs43/src/main.ts %}
 {% endhighlight %}
@@ -629,9 +593,7 @@ The following example demonstrates on **Adding** a new row when Enter key is pre
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs44/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs44/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs44/src/main.ts %}
 {% endhighlight %}
@@ -649,9 +611,7 @@ Bind the click event for the Grid and in the click event handler call the [`edit
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs45/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs45/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs45/src/main.ts %}
 {% endhighlight %}
@@ -690,9 +650,7 @@ In the below demo, click on the corresponding button to perform single-column or
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs46/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs46/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs46/src/main.ts %}
 {% endhighlight %}
@@ -733,9 +691,7 @@ In the below demo, click on the corresponding button to clear sort for particula
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs47/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs47/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs47/src/main.ts %}
 {% endhighlight %}
@@ -757,9 +713,7 @@ In the following example, The **Employee Name** is a foreign key column and whil
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/foreignkey-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/foreignkey-cs6/src/main.ts %}
 {% endhighlight %}
@@ -782,9 +736,7 @@ In the following sample, we have customized string filter operators.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-menu-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-menu-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-menu-cs4/src/main.ts %}
 {% endhighlight %}
@@ -803,9 +755,7 @@ In the following example, The **Employee Name** is a foreign key column. DropDow
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/foreignkey-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/foreignkey-cs7/src/main.ts %}
 {% endhighlight %}
@@ -825,9 +775,7 @@ This column header shows the custom filter bar template and you can select filte
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/foreignkey-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/foreignkey-cs8/src/main.ts %}
 {% endhighlight %}
@@ -847,9 +795,7 @@ In the following example, The **Employee Name** is a foreign key column and the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/foreignkey-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/foreignkey-cs9/src/main.ts %}
 {% endhighlight %}
@@ -865,9 +811,7 @@ When editing, you can bind foreign key datasource to a dropdown list by using [`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/foreignkey-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/foreignkey-cs10/src/main.ts %}
 {% endhighlight %}
@@ -888,9 +832,7 @@ You can use corresponding exporting methods and exportComplete events to get the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs3/src/main.ts %}
 {% endhighlight %}
@@ -908,9 +850,7 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-filtered-data-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-filtered-data-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-filtered-data-cs2/src/main.ts %}
 {% endhighlight %}
@@ -928,9 +868,7 @@ To customize default values of pager dropdown, you need to define [`pageSizes`](
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-column-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-column-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-column-cs3/src/main.ts %}
 {% endhighlight %}
@@ -984,9 +922,7 @@ In the below demo, the expand/collapse icon in the row with **EmployeeID** as **
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/template-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/template-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/template-cs3/src/main.ts %}
 {% endhighlight %}

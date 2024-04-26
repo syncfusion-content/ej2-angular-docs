@@ -35,9 +35,7 @@ Items| Description
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/contextmenu/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/contextmenu/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/contextmenu/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +56,7 @@ The following sample shows context menu item for parent rows to expand or collap
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/contextmenu/custom-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/contextmenu/custom-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/contextmenu/custom-cs1/src/main.ts %}
 {% endhighlight %}

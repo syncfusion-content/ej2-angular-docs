@@ -1,3 +1,8 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule, ToolbarService, SelectionService, EditService } from '@syncfusion/ej2-angular-treegrid'
+import { DropDownListAllModule  } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -10,6 +15,15 @@ import {
   } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+imports: [
+        
+        TreeGridModule,DropDownListAllModule
+    ],
+
+providers: [ToolbarService, 
+        SelectionService,
+        EditService],
+standalone: true,
     selector: 'app-container',
     template: `<div style="display: flex;margin-top:10rem" >
                   <label style="padding: 10px 10px 26px 0"> Change column: </label>

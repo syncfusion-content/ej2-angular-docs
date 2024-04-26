@@ -31,9 +31,7 @@ The Essential JS 2 Badge has the following predefined styles that can be used wi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/types-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/types-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/types-cs1/src/main.ts %}
 {% endhighlight %}
@@ -61,9 +59,7 @@ The circle badge style can be applied by adding the modifier class `.e-badge-cir
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/circle-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/circle-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/circle-cs1/src/main.ts %}
 {% endhighlight %}
@@ -79,9 +75,7 @@ The pill badge style can be applied by adding the modifier class `.e-badge-pill`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/pill-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/pill-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/pill-cs1/src/main.ts %}
 {% endhighlight %}
@@ -97,9 +91,7 @@ When badge modifier classes are applied to the anchor tag, the badge’s appeara
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/link-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/link-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/link-cs1/src/main.ts %}
 {% endhighlight %}
@@ -117,9 +109,7 @@ While using the notification badge, set the parent element to `position: relativ
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/notification-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/notification-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/notification-cs1/src/main.ts %}
 {% endhighlight %}
@@ -137,9 +127,7 @@ element to `position: relative` .
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/dot-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/dot-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/dot-cs1/src/main.ts %}
 {% endhighlight %}
@@ -157,9 +145,7 @@ parent element to `position: relative`.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/overlap-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/overlap-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/overlap-cs1/src/main.ts %}
 {% endhighlight %}
@@ -177,9 +163,7 @@ with dot badge to display the status in the avatar as shown in the following sam
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/position-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/position-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/position-cs1/src/main.ts %}
 {% endhighlight %}

@@ -1,9 +1,26 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
+import { SparklineAllModule, } from '@syncfusion/ej2-angular-charts'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { employeeData } from './datasource';
 import { Sparkline } from '@syncfusion/ej2-angular-charts';
 import { GridComponent,} from '@syncfusion/ej2-angular-grids'
 
 @Component({
+imports: [
+        
+        GridModule,
+        SparklineAllModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                GroupService],
+standalone: true,
   selector: 'app-root',
   template: `
     <ejs-grid #grid [dataSource]='data' height='315px' (created)="renderGridSparkline()">

@@ -19,9 +19,7 @@ The [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treeg
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/cell-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/cell-cs2/src/main.ts %}
 {% endhighlight %}
@@ -53,9 +51,7 @@ In the below example, we have customized the cells of `TaskID` and `StartDate` c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/cell-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/cell-cs3/src/main.ts %}
 {% endhighlight %}
@@ -81,9 +77,7 @@ The available modes of grid lines are:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/cell-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/cell-cs4/src/main.ts %}
 {% endhighlight %}

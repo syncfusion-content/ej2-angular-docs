@@ -29,9 +29,7 @@ The following sample shows the example for preselect values for primitive data t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/primitive/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/primitive/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/primitive/src/main.ts %}
 {% endhighlight %}
@@ -52,9 +50,7 @@ The following sample shows the example for preselect values for object data type
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/object/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/object/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/object/src/main.ts %}
 {% endhighlight %}

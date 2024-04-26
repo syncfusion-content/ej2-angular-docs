@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { HttpClient, HttpClientModule } from '@angular/common/http'
+import { PageService, SortService, GroupService, PdfExportService, ExcelExportService, FilterService, EditService, ToolbarService, AggregateService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { DataStateChangeEventArgs } from '@syncfusion/ej2-angular-grids';
@@ -6,6 +12,20 @@ import { DataService } from './order.service';
 import { Observable } from 'rxjs';
 
 @Component({
+imports: [
+        
+        GridModule,HttpClientModule,
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                EditService,
+                ToolbarService,
+                GroupService,
+                PdfExportService, ExcelExportService,
+                AggregateService,HttpClient ],
+standalone: true,
   selector: 'app-root',
   template: `<ejs-grid #grid [dataSource]='data | async' [query]="query" allowPaging='true' [pageSettings]='pageOptions' 
               allowSorting= 'true' allowGrouping= 'true' (dataStateChange)= 'dataStateChange($event)'>

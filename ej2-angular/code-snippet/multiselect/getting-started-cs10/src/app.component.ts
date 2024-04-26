@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -7,6 +13,12 @@ import { EmitType } from '@syncfusion/ej2-base';
 import { Query } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, MultiSelectModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the MultiSelect component
     template: `<ejs-multiselect id='multiselectelement' [dataSource]='sportsData' [fields]='fields' [allowFiltering]='true' [placeholder]='placeholder' [popupHeight]='popupHeight' [sortOrder]='sorting' (filtering)='onFiltering($event)'></ejs-multiselect>`

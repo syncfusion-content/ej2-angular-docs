@@ -28,9 +28,7 @@ By default, the rows of the calendar Month view can hold only the limited appoin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs59/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs59/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs59/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ When the feature `RowAutoHeight` is enabled in Timeline views, the row height ge
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs60/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs60/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs60/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +62,7 @@ The following example shows how the auto row adjustment feature works on timelin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs61/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs61/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs61/src/main.ts %}
 {% endhighlight %}
@@ -86,9 +80,7 @@ By default, with the feature `rowAutoHeight`, there will be a space in the botto
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/ignore-whitespace-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/ignore-whitespace-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/ignore-whitespace-cs1/src/main.ts %}
 {% endhighlight %}

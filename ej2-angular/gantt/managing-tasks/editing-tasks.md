@@ -30,9 +30,7 @@ The following code example demonstrates how to enable cell editing in the Gantt 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/celledit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/celledit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/managing-tasks/celledit-cs1/src/main.ts %}
 {% endhighlight %}
@@ -50,9 +48,7 @@ Modify the task details through the edit dialog by setting the edit [`mode`](htt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/dialogedit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/dialogedit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/managing-tasks/dialogedit-cs1/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +66,7 @@ In the Gantt dialog, you can define the required tabs or editing sections using 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/addedit-tab-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/addedit-tab-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/managing-tasks/addedit-tab-cs1/src/main.ts %}
 {% endhighlight %}
@@ -88,9 +82,7 @@ In the Gantt dialog, you can make only specific data source fields visible for e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/addedit-field-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/addedit-field-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/managing-tasks/addedit-field-cs1/src/main.ts %}
 {% endhighlight %}
@@ -116,9 +108,7 @@ The following code example demonstrates how to enable task dependency editing in
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/dependencyedit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/dependencyedit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/managing-tasks/dependencyedit-cs1/src/main.ts %}
 {% endhighlight %}
@@ -148,9 +138,7 @@ The tasks value can be dynamically updated by using the [`updateRecordById`](htt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/updaterecord-dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/updaterecord-dynamic-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/managing-tasks/updaterecord-dynamic-cs1/src/main.ts %}
 {% endhighlight %}

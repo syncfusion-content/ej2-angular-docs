@@ -16,9 +16,7 @@ You can club/group few points of the series based on [`groupTo`](https://ej2.syn
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/clubpoint-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/clubpoint-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/clubpoint-cs2/src/main.ts %}
 {% endhighlight %}
@@ -34,9 +32,7 @@ You can visualize all points available in club/group points by clicking on the g
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/clubpoint-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/clubpoint-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/clubpoint-cs3/src/main.ts %}
 {% endhighlight %}
@@ -52,9 +48,7 @@ Slice can also be grouped based on number of points by specifying the `groupMode
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/clubpoint-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/clubpoint-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/clubpoint-cs4/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +64,7 @@ You can customize the grouped point and its data label using `pointRender` and `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/clubpoint-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/clubpoint-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/clubpoint-cs5/src/main.ts %}
 {% endhighlight %}

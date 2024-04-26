@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { InPlaceEditorAllModule } from '@syncfusion/ej2-angular-inplace-editor'
+
 
 
 import { Component, ViewChild } from '@angular/core';
 import { InPlaceEditorComponent, ActionBeginEventArgs } from '@syncfusion/ej2-angular-inplace-editor';
 
 @Component({
+imports: [
+         InPlaceEditorAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
     <div id='container'>

@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -7,6 +14,10 @@ import { DropDownList, DropDownListComponent } from '@syncfusion/ej2-angular-dro
 import { DashboardLayoutComponent } from '@syncfusion/ej2-angular-layouts';
 
 @Component({
+imports: [ DashboardLayoutModule, ButtonModule, NumericTextBoxModule, DropDownListModule],
+
+
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./default-style.css'],
     template: `

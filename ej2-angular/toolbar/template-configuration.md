@@ -18,9 +18,7 @@ You can integrate menu component as toolbar item in Toolbar using **ng-template*
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/menu-component-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/menu-component-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toolbar/menu-component-cs1/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MapsModule } from '@syncfusion/ej2-angular-maps'
+import { DataLabelService } from '@syncfusion/ej2-angular-maps'
+
 
 
 
@@ -5,6 +10,12 @@ import { Component, OnInit} from '@angular/core';
 import { usa_map } from './usa';
 
 @Component({
+imports: [
+         MapsModule
+    ],
+
+providers: [DataLabelService],
+standalone: true,
     selector: 'app-container',
     template:
     `<ejs-maps id='rn-container'>

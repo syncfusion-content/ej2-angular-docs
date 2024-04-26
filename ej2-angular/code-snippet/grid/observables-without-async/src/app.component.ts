@@ -1,9 +1,34 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { HttpClient, HttpClientModule } from '@angular/common/http'
+import { PageService, SortService, FilterService, GroupService, InfiniteScrollService, 
+    LazyLoadGroupService, EditService, ToolbarService, AggregateService, SearchService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { DataSourceChangedEventArgs, DataStateChangeEventArgs, GridComponent } from '@syncfusion/ej2-angular-grids';
 import { CrudService } from './crud.service';
 import { query } from '@angular/animations';
 
 @Component({
+imports: [
+        
+        GridModule, HttpClientModule,
+        InMemoryWebApiModule.forRoot(InMemoryDataService)
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                GroupService,
+                EditService,
+                ToolbarService,
+                AggregateService, 
+                SearchService,
+                InfiniteScrollService, 
+                LazyLoadGroupService,
+                HttpClient],
+standalone: true,
   selector: 'app-root',
   template: `<ejs-grid #grid [dataSource]='data' allowPaging="true" allowGrouping="true" [groupSettings]="groupOptions" allowSorting="true"
               [sortSettings]='sortOptions' allowFiltering="true" [filterSettings]='filterOptions' [editSettings]='editSettings' [toolbar]="toolbar"

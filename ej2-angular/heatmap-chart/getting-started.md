@@ -121,9 +121,7 @@ The below example shows a basic Heatmap.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/getting-started/initialize-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/getting-started/initialize-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/getting-started/initialize-cs1/src/main.ts %}
 {% endhighlight %}
@@ -165,9 +163,7 @@ This section explains how to populate the following two-dimensional array data t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/getting-started/datasource-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/getting-started/datasource-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/getting-started/datasource-cs1/src/main.ts %}
 {% endhighlight %}
@@ -183,9 +179,7 @@ You can add axis labels to the heat map and format those labels using the [xAxis
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/getting-started/axis-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/getting-started/axis-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/getting-started/axis-cs1/src/main.ts %}
 {% endhighlight %}
@@ -201,9 +195,7 @@ Add a title using the [titleSettings](https://ej2.syncfusion.com/angular/documen
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/getting-started/title-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/getting-started/title-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/getting-started/title-cs1/src/main.ts %}
 {% endhighlight %}
@@ -219,9 +211,7 @@ Use a legend for the heat map in the [legendSettings](https://ej2.syncfusion.com
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/getting-started/legend-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/getting-started/legend-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/getting-started/legend-cs1/src/main.ts %}
 {% endhighlight %}
@@ -237,9 +227,7 @@ Add data labels to improve the readability of the heat map. This can be achieved
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/getting-started/datalabel-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/getting-started/datalabel-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/getting-started/datalabel-cs1/src/main.ts %}
 {% endhighlight %}
@@ -255,9 +243,7 @@ The default palette settings of the heat map cells can be customized by using th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/getting-started/palette-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/getting-started/palette-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/getting-started/palette-cs1/src/main.ts %}
 {% endhighlight %}
@@ -273,9 +259,7 @@ The tooltip is used when you cannot display information by using the data labels
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/getting-started/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/getting-started/tooltip-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/getting-started/tooltip-cs1/src/main.ts %}
 {% endhighlight %}

@@ -18,9 +18,7 @@ In the following demo, the `Trustworthiness` column is sorted based on the custo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/custom-sort-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/custom-sort-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/custom-sort-cs1/src/main.ts %}
 {% endhighlight %}

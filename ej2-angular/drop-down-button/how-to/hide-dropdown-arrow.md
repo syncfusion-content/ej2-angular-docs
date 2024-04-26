@@ -17,9 +17,7 @@ to DropDownButton element using [`cssClass`](https://ej2.syncfusion.com/angular/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/drop-down-button/hide-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/hide-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/drop-down-button/hide-cs1/src/main.ts %}
 {% endhighlight %}

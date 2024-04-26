@@ -18,9 +18,7 @@ The 3D Circular Chart can be given a title by using the `title` property to disp
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/title/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/title/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/title/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ The title of the 3D Circular Chart can be customized using the `titleStyle` prop
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/title-custom/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/title-custom/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/title-custom/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ The 3D Circular Chart can be given a subtitle by using the `subTitle` property t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/subtitle/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/subtitle/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/subtitle/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ The subtitle of the 3D Circular Chart can be customized using the `subTitleStyle
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/subtitle-custom/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/subtitle-custom/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/subtitle-custom/src/main.ts %}
 {% endhighlight %}

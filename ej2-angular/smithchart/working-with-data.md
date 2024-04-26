@@ -20,9 +20,7 @@ You can bind simple JSON data to smithchart using point property in series. JSON
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs32/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs32/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs32/src/main.ts %}
 {% endhighlight %}

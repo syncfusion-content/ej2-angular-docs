@@ -1,3 +1,10 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService,EditService } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import {
   EditSettingsModel,
@@ -7,6 +14,17 @@ import { RowDataBoundEventArgs } from '@syncfusion/ej2-grids';
 import { sampleData } from './datasource';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule,
+        DropDownListAllModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,EditService],
+standalone: true,
   selector: 'app-container',
   template: `<div style="padding:0px 0px 20px 0px">
                 <button ejs-button id='above' (click)='addabove()'>Add New Row as Above position</button>

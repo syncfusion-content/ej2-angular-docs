@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gauge user interaction in Angular Circular gauge component | Syncfusion
+title: Gauge user interaction in Angular Circular gauge component |Syncfusion
 description: Learn here all about Gauge user interaction in Syncfusion Angular Circular gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Gauge user interaction 
@@ -25,9 +25,7 @@ By default, tooltip is not visible. Enable the tooltip by setting [`enable`](htt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-user-interaction-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-user-interaction-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-user-interaction-cs1/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ Any HTML elements can be displayed in the tooltip by using the [`template`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-user-interaction-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-user-interaction-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-user-interaction-cs2/src/main.ts %}
 {% endhighlight %}
@@ -92,9 +88,7 @@ The following code example shows the tooltip for the pointers, ranges and annota
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-user-interaction-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-user-interaction-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-user-interaction-cs3/src/main.ts %}
 {% endhighlight %}
@@ -111,9 +105,7 @@ To enable or disable the pointer drag, you can use [`enablePointerDrag`](https:/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-user-interaction-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-user-interaction-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-user-interaction-cs4/src/main.ts %}
 {% endhighlight %}

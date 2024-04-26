@@ -24,9 +24,7 @@ The HeatMap cells can be selected using the following interactions, as shown in 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/selection/cellSelection-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/selection/cellSelection-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/selection/cellSelection-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ In the HeatMap, the [enableMultiSelect](https://helpej2.syncfusion.com/angular/d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/selection/singleCellSelection-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/selection/singleCellSelection-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/selection/singleCellSelection-cs1/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ The [clearSelection](https://ej2.syncfusion.com/angular/documentation/api/heatma
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/selection/clearSelection-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/selection/clearSelection-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/selection/clearSelection-cs1/src/main.ts %}
 {% endhighlight %}

@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { CriticalPathService, ToolbarService, EditService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [ToolbarService, EditService],
+standalone: true,
     selector: 'app-root',
     template: `<button ej-button id='restore' (click)='clickHandler()'>Restore</button>
                <ejs-gantt id="ganttDefault" #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" enablePersistence='true' [columns]="columns" [splitterSettings] = "splitterSettings"></ejs-gantt>`,

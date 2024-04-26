@@ -1,8 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
+import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
+
 import { Component } from '@angular/core';
 import { data } from './datasource';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [EditService, ToolbarService, PageService, FilterService],
+standalone: true,
     selector: 'app-root',
     template: `   
         <ejs-grid #grid [dataSource]="data" allowPaging="true" 

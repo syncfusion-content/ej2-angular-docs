@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AccordionModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -7,6 +11,12 @@ import { DataManager, Query, ODataV4Adaptor, ReturnOption } from '@syncfusion/ej
 const SERVICE_URI: string = 'https://services.odata.org/V4/Northwind/Northwind.svc/Employees';
 
 @Component({
+imports: [
+         AccordionModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<ejs-accordion #element></ejs-accordion>`
 })

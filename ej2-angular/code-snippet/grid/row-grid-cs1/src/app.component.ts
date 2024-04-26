@@ -1,9 +1,22 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { CheckBoxModule} from '@syncfusion/ej2-angular-buttons'
+
 import { Component, ViewChild } from '@angular/core';
 import { orderDetails, columnDataType } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
+imports: [
+        
+        GridModule,
+        CheckBoxModule
+    ],
+
+,
+standalone: true,
   selector: 'app-root',
   template: `<div style="padding:2px 0px 0px 0px">
                 <ejs-checkbox #checkbox label='Show / Hide Row' 

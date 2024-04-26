@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { InPlaceEditorAllModule } from '@syncfusion/ej2-angular-inplace-editor'
+import { CheckBoxModule, ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +10,12 @@ import { InPlaceEditorComponent } from '@syncfusion/ej2-angular-inplace-editor';
 import {  ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
+imports: [
+         InPlaceEditorAllModule, CheckBoxModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
     <div id='container'>

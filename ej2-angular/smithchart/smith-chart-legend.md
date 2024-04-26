@@ -22,9 +22,7 @@ By default visibility of the legend is false. To enable the legend, kindly set v
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs14/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ Other than these positions, you can place the legend anywhere in the smithchart.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs15/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +52,7 @@ Other than positioning the legend in the smithchart, you can customize its align
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs16/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +70,7 @@ By default, legend is rendered in the circle shape and the color of the shape is
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs17/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs17/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs17/src/main.ts %}
 {% endhighlight %}
@@ -94,9 +86,7 @@ By default, legend takes 20% - 25% of the chart's height horizontally, when it i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs18/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs18/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs18/src/main.ts %}
 {% endhighlight %}
@@ -112,9 +102,7 @@ You can customize the space between two legend items and space between legend sh
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs19/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs19/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs19/src/main.ts %}
 {% endhighlight %}
@@ -130,9 +118,7 @@ By default series name is displayed in the legend. You can collapse the visibili
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs20/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs20/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs20/src/main.ts %}
 {% endhighlight %}

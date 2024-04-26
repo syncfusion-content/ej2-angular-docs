@@ -20,9 +20,7 @@ When you click on a HeatMap cell, the [cellClick](https://ej2.syncfusion.com/ang
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/events/events-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/events/events-cs1/src/main.ts %}
 {% endhighlight %}
@@ -39,9 +37,7 @@ When you double click on a HeatMap cell, the [cellDoubleClick](https://ej2.syncf
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/events/events-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/events/events-cs2/src/main.ts %}
 {% endhighlight %}
@@ -57,9 +53,7 @@ The [cellRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/events/events-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/events/events-cs3/src/main.ts %}
 {% endhighlight %}
@@ -75,9 +69,7 @@ When single or multiple cells in the HeatMap are selected, the [cellSelected](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/events/events-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/events/events-cs4/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +85,7 @@ Once HeatMap has been completely rendered, the [created](https://ej2.syncfusion.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/events/events-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/events/events-cs5/src/main.ts %}
 {% endhighlight %}
@@ -111,9 +101,7 @@ The [legendRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/events/events-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/events/events-cs6/src/main.ts %}
 {% endhighlight %}
@@ -129,9 +117,7 @@ The [load](https://ej2.syncfusion.com/angular/documentation/api/heatmap/#load) e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/events/events-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/events/events-cs7/src/main.ts %}
 {% endhighlight %}
@@ -147,9 +133,7 @@ Once HeatMap is loaded, the [loaded](https://ej2.syncfusion.com/angular/document
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/events/events-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/events/events-cs8/src/main.ts %}
 {% endhighlight %}
@@ -165,9 +149,7 @@ When the window is resized, the [resized](https://ej2.syncfusion.com/angular/doc
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/events/events-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/events/events-cs9/src/main.ts %}
 {% endhighlight %}
@@ -183,9 +165,7 @@ The [tooltipRender](https://ej2.syncfusion.com/angular/documentation/api/heatmap
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/events/events-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/events/events-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/events/events-cs10/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,14 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule, ChartAllModule, AccumulationChartAllModule } from '@syncfusion/ej2-angular-charts'
+import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
+import { PieSeriesService, AccumulationTooltipService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
+import {
+    LineSeriesService, DateTimeService, DataLabelService, StackingColumnSeriesService, CategoryService,
+    StepAreaSeriesService, SplineSeriesService, ScrollBarService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
+    SelectionService, ScatterSeriesService, ZoomService, ColumnSeriesService, AreaSeriesService, RangeAreaSeriesService
+} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -5,6 +16,15 @@ import { ILoadedEventArgs, ChartComponent } from '@syncfusion/ej2-angular-charts
 import { getElement } from '@syncfusion/ej2-charts';
 
 @Component({
+imports: [
+         ChartModule, ChartAllModule, AccumulationChartAllModule, AccumulationChartModule
+    ],
+
+providers: [LineSeriesService, DateTimeService, ColumnSeriesService, DataLabelService, ZoomService, StackingColumnSeriesService, CategoryService,
+        StepAreaSeriesService, SplineSeriesService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
+        PieSeriesService, AccumulationTooltipService, ScrollBarService, AccumulationDataLabelService, SelectionService, ScatterSeriesService,
+       AreaSeriesService, RangeAreaSeriesService ],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-chart #chart id='chart-container' [chartArea]='chartArea' [width]='width' align='center'  [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' (loaded)='loaded($event)'>
         <e-series-collection>

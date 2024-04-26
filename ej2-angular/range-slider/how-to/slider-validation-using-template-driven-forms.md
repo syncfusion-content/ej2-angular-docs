@@ -24,9 +24,7 @@ Slider can be validated in Angular using [Template-driven](https://angular.io/gu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/templateform-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/templateform-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/templateform-cs2/src/main.ts %}
 {% endhighlight %}

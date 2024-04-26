@@ -19,9 +19,7 @@ To use paging, inject the [`Page`](https://ej2.syncfusion.com/angular/documentat
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/page-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/page-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/page-cs1/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ With [`pageSizeMode`](https://ej2.syncfusion.com/angular/documentation/api/treeg
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/page-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/page-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/page-cs2/src/main.ts %}
 {% endhighlight %}
@@ -65,9 +61,7 @@ Inside this template, you can access the [`currentPage`](https://ej2.syncfusion.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/pager-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/pager-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/pager-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +87,7 @@ By default, Pager will be rendered at the bottom of the TreeGrid. You can also r
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/page-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/page-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/page-cs3/src/main.ts %}
 {% endhighlight %}

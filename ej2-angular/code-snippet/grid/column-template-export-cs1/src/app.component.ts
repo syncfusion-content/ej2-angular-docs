@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { ToolbarService, PdfExportService, GroupService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -17,6 +23,16 @@ interface ColumnDataType {
 }
 
 @Component({
+imports: [
+        
+        ButtonModule,
+        GridModule
+    ],
+
+providers: [ToolbarService,
+        PdfExportService,
+        GroupService,],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id="ColumnTemplateGrid" [dataSource]="data" [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)"
                [allowPdfExport]="true" (pdfQueryCellInfo)="pdfQueryCellInfo($event)" height='273px'>

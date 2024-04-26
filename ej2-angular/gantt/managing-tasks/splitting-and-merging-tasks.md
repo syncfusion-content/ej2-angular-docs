@@ -28,9 +28,7 @@ The task can be split dynamically, either by using the context menu or dialog.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/split-tasks-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/split-tasks-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/managing-tasks/split-tasks-cs1/src/main.ts %}
 {% endhighlight %}

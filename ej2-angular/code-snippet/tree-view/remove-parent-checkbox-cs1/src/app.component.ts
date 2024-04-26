@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -7,6 +12,12 @@ import { TreeViewComponent, DrawNodeEventArgs } from '@syncfusion/ej2-angular-na
  * Removing checkbox of parent nodes TreeView sample
  */
 @Component({
+imports: [
+        FormsModule,TreeViewModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<div id='treeparent'><ejs-treeview id='treeElement' #treevalidate [fields]='field' cssClass="custom" [showCheckBox]=true></ejs-treeview></div>`
 })

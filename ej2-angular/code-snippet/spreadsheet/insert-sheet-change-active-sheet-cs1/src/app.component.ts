@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SpreadsheetModule } from '@syncfusion/ej2-angular-spreadsheet'
+
 import { Component, ViewChild } from '@angular/core';
 import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 import { data, employeeData } from './datasource';
 
 @Component({
+imports: [
+        
+        SpreadsheetModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<div >
     <button class="e-btn custom-btn" (click)='onClick()'>Insert Sheet</button>

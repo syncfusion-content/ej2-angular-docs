@@ -30,9 +30,7 @@ The `getSelectedItems` method returns the following items from the selected list
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/checklist-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/checklist-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/checklist-cs3/src/main.ts %}
 {% endhighlight %}
@@ -52,9 +50,7 @@ In the ListView component, template support is being used. In some cases, the co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/dynamic-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/dynamic-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/dynamic-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +72,7 @@ Refer to the following steps to load list item into the child list:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/checklist-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/checklist-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/checklist-cs4/src/main.ts %}
 {% endhighlight %}
@@ -94,9 +88,7 @@ The ListView component supports wrapping list items into a group based on the ca
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/item-count-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/item-count-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/item-count-cs2/src/main.ts %}
 {% endhighlight %}
@@ -151,9 +143,7 @@ let data: any = [
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/avatar-template-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/avatar-template-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/avatar-template-cs2/src/main.ts %}
 {% endhighlight %}
@@ -175,9 +165,7 @@ The filtered data can be displayed in the ListView component depending upon on u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/getting-started-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
@@ -205,9 +193,7 @@ The ListView component triggers events based on its actions. The events can be u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/getting-started-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
@@ -256,9 +242,7 @@ Here, the data is fetched from `Northwind` Service URL; it takes a few seconds t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/getting-started-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
@@ -282,9 +266,7 @@ Refer to the following steps to add or remove a list item.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/addItem-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/addItem-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/addItem-cs1/src/main.ts %}
 {% endhighlight %}
@@ -345,9 +327,7 @@ You can enable sorting in one ListView; in the same order, data can be transferr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/dual-list-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/dual-list-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/dual-list-cs1/src/main.ts %}
 {% endhighlight %}
@@ -379,9 +359,7 @@ Even though we have hidden the checkbox the functionality will be same for the l
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/hide-checkbox-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/hide-checkbox-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/hide-checkbox-cs1/src/main.ts %}
 {% endhighlight %}
@@ -453,9 +431,7 @@ removeTag() {
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/dynamic-tag-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/dynamic-tag-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/dynamic-tag-cs1/src/main.ts %}
 {% endhighlight %}
@@ -499,9 +475,7 @@ In the below sample, we have rendered List items in grid layout.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/grid-layout-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/grid-layout-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/grid-layout-cs1/src/main.ts %}
 {% endhighlight %}
@@ -578,9 +552,7 @@ In the below sample, we can filter fruit items with the help of search text box.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/grid-manipulation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/grid-manipulation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/grid-manipulation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -610,9 +582,7 @@ In the below sample, we have rendered `ListView` with search engines URL.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/navigation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/navigation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/navigation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -640,9 +610,7 @@ In the below sample, we have rendered smartphone settings template from external
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/ajax-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/ajax-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/ajax-cs1/src/main.ts %}
 {% endhighlight %}
@@ -687,9 +655,7 @@ In the below sample, we have rendered draggable list items.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/reorder-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/reorder-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/reorder-cs1/src/main.ts %}
 {% endhighlight %}
@@ -756,9 +722,7 @@ public btnClick() {
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/chat-window-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/chat-window-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/chat-window-cs1/src/main.ts %}
 {% endhighlight %}

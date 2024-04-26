@@ -22,9 +22,7 @@ Select range of cells between the start index and end index which includes in be
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/selection-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/selection-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/selection-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ To clear the selected rows or cells, by calling the [`clearSelection`](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/selection-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/selection-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/selection-cs11/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ To get the selected row cell index, Use [`getSelectedRowCellIndexes`](https://ej
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/selection-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/selection-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/selection-cs12/src/main.ts %}
 {% endhighlight %}

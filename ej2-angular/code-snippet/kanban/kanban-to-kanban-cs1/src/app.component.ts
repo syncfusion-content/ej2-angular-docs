@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +9,13 @@ import { closest } from '@syncfusion/ej2-base';
 import { CardSettingsModel, DragEventArgs, KanbanComponent } from '@syncfusion/ej2-angular-kanban';
 import { kanbanAData, kanbanBData } from './datasource';
 @Component({
+imports: [
+        
+        KanbanModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<div class="container-fluid">
       <div class="row">

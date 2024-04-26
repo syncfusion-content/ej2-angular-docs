@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, FreezeService, SelectionService, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule, CheckBoxModule, RadioButtonModule, SwitchModule } from '@syncfusion/ej2-angular-buttons'
+
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
@@ -5,6 +11,15 @@ import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule,
+        DropDownListAllModule,
+        ButtonModule, CheckBoxModule, RadioButtonModule, SwitchModule
+    ],
+
+providers: [FreezeService, SelectionService, EditService, ToolbarService],
+standalone: true,
   selector: 'app-root',
   template: `
     <div style="display:flex;">

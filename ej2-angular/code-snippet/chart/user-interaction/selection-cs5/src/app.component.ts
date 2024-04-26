@@ -1,9 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule} from '@syncfusion/ej2-angular-charts'
+import { CategoryService, ColumnSeriesService} from '@syncfusion/ej2-angular-charts'
+import { LegendService, SelectionService } from '@syncfusion/ej2-angular-charts'
+
 
 
 
 import { Component, OnInit } from '@angular/core';
 import { selectionData } from './datasource';
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ CategoryService, ColumnSeriesService, LegendService, SelectionService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'
             selectionMode='Point' isMultiSelect='true' [selectedDataIndexes]='selectedData'>

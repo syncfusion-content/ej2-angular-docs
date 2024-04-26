@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule} from '@syncfusion/ej2-angular-charts'
+import { CategoryService, BarSeriesService, ColumnSeriesService, LineSeriesService,LegendService, DataLabelService, MultiLevelLabelService, SelectionService} from '@syncfusion/ej2-angular-charts'
+
 
 
 
@@ -5,6 +10,12 @@ import { Component, OnInit } from '@angular/core';
 import { series1 } from './datasource';
 
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ CategoryService, BarSeriesService, ColumnSeriesService, LineSeriesService,LegendService, DataLabelService, MultiLevelLabelService, SelectionService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-chart style='display:block' align='center' id='chartcontainer' [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
             [tooltip]='tooltip'  [chartArea]='chartArea' [width]='width'>

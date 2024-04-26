@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -6,6 +13,20 @@ import { ScheduleComponent, EventSettingsModel, View, DayService, DragAndDropSer
 import { scheduleData } from './datasource';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        ButtonModule,
+        UploaderModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService],
+standalone: true,
   selector: 'app-root',
   providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, ResizeService,
     ICalendarExportService, ICalendarImportService, DragAndDropService],

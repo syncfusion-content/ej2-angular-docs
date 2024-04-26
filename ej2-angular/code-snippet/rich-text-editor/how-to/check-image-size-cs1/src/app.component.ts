@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+
 
 
 
@@ -5,6 +9,13 @@ import { Component, ViewChild } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextEditorComponent  } from '@syncfusion/ej2-angular-richtexteditor';
 import { UploadingEventArgs } from '@syncfusion/ej2-angular-inputs';
 @Component({
+imports: [
+        
+        RichTextEditorAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-richtexteditor id='defaultRTE' #sample [insertImageSettings]='insertImageSettings' [toolbarSettings]='toolbarSettings' (imageUploading)='onImageUploading($event)'>
 </ejs-richtexteditor>`,

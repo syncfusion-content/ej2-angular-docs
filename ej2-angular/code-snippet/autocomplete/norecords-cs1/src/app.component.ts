@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        FormsModule,AutoCompleteModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the AutoComplete component
     template:  `<ejs-autocomplete id='atcelement' [dataSource]='data' placeholder='Find a item'>

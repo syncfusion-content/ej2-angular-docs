@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AccordionModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -9,6 +13,12 @@ import { accordion } from './datasource';
 let dbFlag: number = 0;
 let dynamciAcrdnCount: number = 2;
 @Component({
+imports: [
+         AccordionModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `
             <ejs-accordion #element (expanded)="expanded($event)">

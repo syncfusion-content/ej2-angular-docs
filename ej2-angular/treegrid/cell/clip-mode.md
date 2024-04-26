@@ -22,9 +22,7 @@ There are three types of [`clipMode`](https://ej2.syncfusion.com/angular/documen
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/cell-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/cell-cs5/src/main.ts %}
 {% endhighlight %}

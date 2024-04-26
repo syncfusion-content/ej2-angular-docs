@@ -1,7 +1,13 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RibbonModule } from '@syncfusion/ej2-angular-ribbon'
+
 import { Component } from "@angular/core";
 import { RibbonButtonSettingsModel, RibbonDropDownSettingsModel, DisplayMode } from '@syncfusion/ej2-angular-ribbon';
 import { ItemModel } from "@syncfusion/ej2-angular-splitbuttons";
 @Component({
+imports: [ RibbonModule],
+standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html'
 })

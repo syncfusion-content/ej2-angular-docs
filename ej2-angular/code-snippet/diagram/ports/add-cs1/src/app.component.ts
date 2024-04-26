@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
+
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { Diagram, DiagramComponent, NodeModel, PointPortModel, PortVisibility, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
+imports: [
+         DiagramModule
+    ],
+
+providers: [ ],
+standalone: true,
   selector: "app-container",
   // specifies the template string for the diagram component
   template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults]='getNodeDefaults' (created)='created($event)'>

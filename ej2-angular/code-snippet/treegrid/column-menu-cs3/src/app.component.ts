@@ -1,3 +1,9 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -7,6 +13,16 @@ import { TreeGridComponent, SortService, ColumnMenuService, PageService, FilterS
 import { FilterSettingsModel } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid height='315' allowSorting='true' allowPaging='true' [dataSource]='data' [treeColumnIndex]='1' childMapping='subtasks' [filterSettings]='filterSettings' (columnMenuOpen)='columnMenuOpen($event)' [allowFiltering]='true' showColumnMenu="true">
                     <e-columns>

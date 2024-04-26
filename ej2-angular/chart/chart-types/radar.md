@@ -20,9 +20,7 @@ To render a line draw type, use series [`drawType`](https://ej2.syncfusion.com/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs11/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ You can customize the start angle of the polar series using [`startAngle`](https
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs12/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ You can customize the radius of the polar series and radar series using [`coeffi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs13/src/main.ts %}
 {% endhighlight %}

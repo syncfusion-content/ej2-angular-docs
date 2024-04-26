@@ -1,8 +1,17 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts'
+import { ChartAllModule, AccumulationChartAllModule } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
+imports: [ DashboardLayoutModule, ChartAllModule, AccumulationChartAllModule],
+
+
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./default-style.css'],
     template: `

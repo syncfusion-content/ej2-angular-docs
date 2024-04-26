@@ -16,9 +16,7 @@ Data label can be added to a chart series by enabling the [`visible`](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/datalabel-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs1/src/main.ts %}
 {% endhighlight %}
@@ -37,9 +35,7 @@ Using [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/da
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/datalabel-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs2/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ Using [`template`](https://ej2.syncfusion.com/angular/documentation/api/chart/da
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/datalabel-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs3/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +70,7 @@ Data label for the chart can be formatted using [`format`](https://ej2.syncfusio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/datalabel-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs4/src/main.ts %}
 {% endhighlight %}
@@ -151,9 +143,7 @@ Text from the data source can be mapped using `name` property.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/datalabel-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs5/src/main.ts %}
 {% endhighlight %}
@@ -169,9 +159,7 @@ Text from the data source can be mapped using `name` property.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/datalabel-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs6/src/main.ts %}
 {% endhighlight %}
@@ -187,9 +175,7 @@ Using `angle` property, you can rotate the data label by its given angle.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/datalabel-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs7/src/main.ts %}
 {% endhighlight %}
@@ -205,9 +191,7 @@ Using `angle` property, you can rotate the data label by its given angle.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/datalabel-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs8/src/main.ts %}
 {% endhighlight %}
@@ -225,9 +209,7 @@ You can also customize the specific marker and label using [`pointRender`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/datalabel-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs9/src/main.ts %}
 {% endhighlight %}
@@ -243,9 +225,7 @@ You can calculate the percentage value based on the sum for each series using th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/datalabel-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/datalabel-cs10/src/main.ts %}
 {% endhighlight %}

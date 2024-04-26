@@ -1,3 +1,7 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -5,6 +9,13 @@ import { VirtualScrollService, TreeGridComponent } from '@syncfusion/ej2-angular
 import { dataSource, virtualData } from './datasource';
 
 @Component({
+imports: [
+        
+        TreeGridModule
+    ],
+
+,
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' [enableVirtualization]=true height=291 childMapping='Crew' [treeColumnIndex]='1' >
         <e-columns>

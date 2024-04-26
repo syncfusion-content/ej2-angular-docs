@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component } from '@angular/core';
@@ -5,6 +10,12 @@ import { MultiSelectComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 
 @Component({
+imports: [
+        FormsModule,MultiSelectModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the virtual-scroll url path  
     templateUrl: 'virtual-scroll.html'

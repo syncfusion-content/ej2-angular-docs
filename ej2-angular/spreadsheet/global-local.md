@@ -385,9 +385,7 @@ The following example demonstrates the Spreadsheet in `French` culture. In the b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/local-data-binding-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/local-data-binding-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/local-data-binding-cs2/src/main.ts %}
 {% endhighlight %}
@@ -416,9 +414,7 @@ The following example demonstrates the Spreadsheet in French [ `fr-CH`] culture.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/internationalization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/internationalization-cs1/src/main.ts %}
 {% endhighlight %}
@@ -434,9 +430,7 @@ RTL provides an option to switch the text direction and layout of the Spreadshee
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/local-data-binding-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/local-data-binding-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/local-data-binding-cs3/src/main.ts %}
 {% endhighlight %}

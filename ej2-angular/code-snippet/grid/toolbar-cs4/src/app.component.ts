@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { ToolbarService } from '@syncfusion/ej2-angular-grids'
+
 
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
@@ -5,6 +10,13 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { ToolbarItems,EditSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `
     <div style="margin-left:180px"><p style="color:red;" id="message">{{message}}</p></div>

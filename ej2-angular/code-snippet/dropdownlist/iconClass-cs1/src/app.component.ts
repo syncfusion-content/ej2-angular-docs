@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        FormsModule, DropDownListModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the DropDownList component
     template: `<ejs-dropdownlist id='ddlelement' #samples [dataSource]='data' [fields]='fields' [placeholder]='text'></ejs-dropdownlist>`

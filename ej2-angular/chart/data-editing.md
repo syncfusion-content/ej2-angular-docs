@@ -20,9 +20,7 @@ We can use the data editing through inject the `DataEditingService` module. It p
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/data-editing-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/data-editing-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/data-editing-cs1/src/main.ts %}
 {% endhighlight %}

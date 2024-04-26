@@ -18,9 +18,7 @@ The following code example shows how to import an excel document using file uplo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs7/app/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs7/app/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/open-save-cs7/app/main.ts %}
 {% endhighlight %}

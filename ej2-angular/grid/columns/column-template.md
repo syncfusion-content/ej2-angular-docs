@@ -53,9 +53,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -111,9 +109,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/template-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/template-cs5/src/main.ts %}
 {% endhighlight %}
@@ -201,9 +197,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/template-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/template-cs8/src/main.ts %}
 {% endhighlight %}
@@ -227,9 +221,7 @@ In the following code, we rendered the ColorPicker component in the Grid column 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/template-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/template-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/template-cs6/src/main.ts %}
 {% endhighlight %}
@@ -251,9 +243,7 @@ To render a custom component in a grid column, you need to define a [template](h
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/column-sync-comp-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/column-sync-comp-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/column-sync-comp-cs1/src/main.ts %}
 {% endhighlight %}
@@ -277,9 +267,7 @@ In the following code, we rendered the Chips component in the Grid **First Name*
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/template-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/template-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/template-cs7/src/main.ts %}
 {% endhighlight %}
@@ -309,9 +297,7 @@ The following example demonstrates how to use the `template` property with the `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/condition-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/condition-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/condition-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -384,9 +370,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/template-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/template-cs2/src/main.ts %}
 {% endhighlight %}
@@ -437,9 +421,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-helper-template/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-helper-template/src/main.ts %}
 {% endhighlight %}

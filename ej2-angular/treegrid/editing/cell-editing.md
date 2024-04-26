@@ -18,9 +18,7 @@ To enable Cell edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs7/src/main.ts %}
 {% endhighlight %}

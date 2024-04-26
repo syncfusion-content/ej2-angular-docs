@@ -20,9 +20,7 @@ You can allow the specific types of files alone to upload using the `allowedExte
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/uploader-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/uploader-cs12/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ The uploader component allows you to validate the files based on its size. The v
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/uploader-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/uploader-cs13/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +52,7 @@ You can restrict uploading the maximum number of files using the **selected** ev
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/uploader-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/uploader-cs14/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +68,7 @@ You can validate the duplicate files before uploading to server using the select
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/uploader-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/uploader-cs15/src/main.ts %}
 {% endhighlight %}

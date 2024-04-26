@@ -1,8 +1,17 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+
 
 
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
+imports: [
+        
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `
         <div style="margin: 50px;">

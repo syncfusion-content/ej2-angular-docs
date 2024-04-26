@@ -22,9 +22,7 @@ Here's an example code snippet demonstrating how to auto update aggregate value 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/reactive-aggregates-batchedit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/reactive-aggregates-batchedit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/reactive-aggregates-batchedit-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ In the following code, the input event for the Freight column editor has been re
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/reactive-aggregates-inlineedit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/reactive-aggregates-inlineedit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/reactive-aggregates-inlineedit-cs1/src/main.ts %}
 {% endhighlight %}

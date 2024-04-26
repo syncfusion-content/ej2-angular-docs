@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TabModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 import { Component, ViewChild,OnInit } from '@angular/core';
@@ -9,6 +14,12 @@ import { Ajax } from '@syncfusion/ej2-base';
  */
 
 @Component({
+imports: [
+         FormsModule, TabModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<ejs-tab id="tab_html_markup" #tab_html_markup>
            <e-tabitems>

@@ -24,9 +24,7 @@ Refer to the following code example for local data binding.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/local-data-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/local-data-binding-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/local-data-binding-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ Refer to the following code example for remote data binding.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/remote-data-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/remote-data-binding-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/remote-data-binding-cs1/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +62,7 @@ Refer to the following code example for remote data binding.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/remote-data-binding-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/remote-data-binding-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/remote-data-binding-cs2/src/main.ts %}
 {% endhighlight %}
@@ -84,9 +78,7 @@ You can use WebApiAdaptor to bind spreadsheet with Web API created using OData e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/remote-data-binding-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/remote-data-binding-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/remote-data-binding-cs3/src/main.ts %}
 {% endhighlight %}
@@ -104,9 +96,7 @@ Refer to the following code example for cell data binding.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/cell-data-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/cell-data-binding-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/cell-data-binding-cs1/src/main.ts %}
 {% endhighlight %}
@@ -136,9 +126,7 @@ The following table defines the arguments of the `dataSourceChanged` event.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/dynamic-data-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/dynamic-data-binding-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/dynamic-data-binding-cs1/src/main.ts %}
 {% endhighlight %}

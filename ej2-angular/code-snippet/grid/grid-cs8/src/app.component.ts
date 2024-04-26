@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+
 
 
 
@@ -8,6 +12,13 @@ import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 import { SortSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+,
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' id="gridcomp" allowPaging='true' allowSorting='true'
      showColumnMenu='true' [sortSettings]='sortSettings' [columnMenuItems]='columnMenuItems' (columnMenuClick)='columnMenuClick($event)'>

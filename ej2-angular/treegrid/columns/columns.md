@@ -33,9 +33,7 @@ Here is an example of how to specify column types in a tree grid using the types
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-type-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/column-type-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-type-cs1/src/main.ts %}
 {% endhighlight %}
@@ -114,9 +112,7 @@ The column width is specified as an absolute pixel value. For example, a column 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-width-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-width-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-width-cs1/src/main.ts %}
 {% endhighlight %}
@@ -134,9 +130,7 @@ You can use the [column.format](https://ej2.syncfusion.com/angular/documentation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-format-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/column-format-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-format-cs1/src/main.ts %}
 {% endhighlight %}
@@ -167,9 +161,7 @@ The following example code demonstrates the formatting of data for **units** col
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-format-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/column-format-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-format-cs2/src/main.ts %}
 {% endhighlight %}
@@ -197,9 +189,7 @@ Format | Formatted value
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-format-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/column-format-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-format-cs3/src/main.ts %}
 {% endhighlight %}
@@ -219,9 +209,7 @@ In this example, the format property specifies the date format as "**yyyy-MMM-dd
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-format-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/column-format-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-format-cs4/src/main.ts %}
 {% endhighlight %}
@@ -274,9 +262,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/column-format-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-format-cs5/src/main.ts %}
 {% endhighlight %}
@@ -296,9 +282,7 @@ In the below example, the **numberFormatOptions** object is used as the `format`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-format-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/column-format-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-format-cs6/src/main.ts %}
 {% endhighlight %}
@@ -323,9 +307,7 @@ Here is an example of using the `textAlign` property to align the text of a tree
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-align-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/column-align-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-align-cs1/src/main.ts %}
 {% endhighlight %}
@@ -345,9 +327,7 @@ To enable the rendering of boolean values as checkboxes, you need to set the `di
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/boolean-columns-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/boolean-columns-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/boolean-columns-cs1/src/main.ts %}
 {% endhighlight %}
@@ -368,9 +348,7 @@ Here is an example of how you can prevent a checkbox from being displayed in a b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/blank-row-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/blank-row-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/blank-row-cs1/src/main.ts %}
 {% endhighlight %}
@@ -396,9 +374,7 @@ To use `autoFitColumns` method, you need to inject **ResizeService** in the prov
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/resize-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/resize-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/resize-cs1/src/main.ts %}
 {% endhighlight %}
@@ -418,9 +394,7 @@ You can enable this feature by enabling the [autoFit](https://ej2.syncfusion.com
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/autofit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/autofit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/autofit-cs1/src/main.ts %}
 {% endhighlight %}
@@ -440,9 +414,7 @@ Here's an example code snippet in Angular that demonstrates how to auto fit colu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/autofit-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/autofit-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/autofit-cs2/src/main.ts %}
 {% endhighlight %}
@@ -460,9 +432,7 @@ Here's an example of how you can use the `lockColumn` property to lock a column 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/lockedcolumn-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/lockedcolumn-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/lockedcolumn-cs1/src/main.ts %}
 {% endhighlight %}
@@ -487,9 +457,7 @@ In the below example, the **duration** column is defined with `visible` property
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-visible-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/column-visible-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-visible-cs1/src/main.ts %}
 {% endhighlight %}
@@ -515,9 +483,7 @@ Here's an example of how to show or hide a column based on the HeaderText in the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-visible-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/column-visible-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-visible-cs2/src/main.ts %}
 {% endhighlight %}
@@ -535,9 +501,7 @@ Here's an example of how to show or hide a column based on the field in the tree
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-visible-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/column-visible-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-visible-cs3/src/main.ts %}
 {% endhighlight %}
@@ -562,9 +526,7 @@ Here is an example code that demonstrates how to control tree grid actions for s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/control-actions-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/control-actions-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/control-actions-cs1/src/main.ts %}
 {% endhighlight %}
@@ -636,9 +598,7 @@ You can update the column definitions in the Tree Grid using the [column](https:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-cs1/src/main.ts %}
 {% endhighlight %}
@@ -658,9 +618,7 @@ Here's an example of how you can add and remove a column from the tree grid:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-cs16/src/main.ts %}
 {% endhighlight %}
@@ -685,9 +643,7 @@ In this example, we have a tree grid that displays data with two columns: **Task
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-cs17/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs17/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-cs17/src/main.ts %}
 {% endhighlight %}

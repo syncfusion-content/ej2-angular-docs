@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { ColorPickerModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -6,6 +13,18 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { ColorPickerEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+imports: [
+        
+        ButtonModule,
+        GridModule,
+        ColorPickerModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                GroupService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' height='315px'[enableHover]="false">
                     <e-columns>

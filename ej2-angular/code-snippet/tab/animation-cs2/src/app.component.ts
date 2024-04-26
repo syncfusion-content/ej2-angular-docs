@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TabComponent, TabItemsDirective, TabItemDirective } from '@syncfusion/ej2-angular-navigations'
+import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -10,6 +15,12 @@ import { Tab, TabComponent, SelectingEventArgs, SelectEventArgs} from '@syncfusi
  */
 
 @Component({
+imports: [
+        
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<div>  
         <div class="EventLog" id="EventLog" style="word-break: normal;padding: 5px;"><b>{{eventLog}}</b></div>

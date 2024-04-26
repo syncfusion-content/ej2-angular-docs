@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MapsModule } from '@syncfusion/ej2-angular-maps'
+import { MarkerService } from '@syncfusion/ej2-angular-maps'
+
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
 import { usa_map } from './usa';
 
 @Component({
+imports: [
+         MapsModule
+    ],
+
+providers: [MarkerService],
+standalone: true,
     selector: 'app-container',
     // specifies the template string for the maps component.
     template:`<ejs-maps id='container'>

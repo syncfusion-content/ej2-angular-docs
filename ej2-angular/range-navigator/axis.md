@@ -20,9 +20,7 @@ The numeric scale is used to represent the numeric values of data in a Range Sel
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/axis/numeric-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/axis/numeric-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/axis/numeric-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ The minimum and the maximum of the scale will be calculated automatically based 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/axis/numeric-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/axis/numeric-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/axis/numeric-cs2/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +52,7 @@ The numeric labels can be formatted using the [`labelFormat`](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/axis/numeric-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/axis/numeric-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/axis/numeric-cs3/src/main.ts %}
 {% endhighlight %}
@@ -134,9 +128,7 @@ The Range Selector also supports the Custom Label formats using the placeholders
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/axis/numeric-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/axis/numeric-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/axis/numeric-cs4/src/main.ts %}
 {% endhighlight %}
@@ -152,9 +144,7 @@ The Logarithmic supports the logarithmic scale, and it is used to visualize the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/axis/logarithmic-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/axis/logarithmic-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/axis/logarithmic-cs1/src/main.ts %}
 {% endhighlight %}
@@ -172,9 +162,7 @@ The minimum and the maximum of the Range Selector will be calculated automatical
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/axis/logarithmic-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/axis/logarithmic-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/axis/logarithmic-cs2/src/main.ts %}
 {% endhighlight %}
@@ -190,9 +178,7 @@ The Logarithmic Base can be customized using the [`logBase`](https://ej2.syncfus
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/axis/logarithmic-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/axis/logarithmic-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/axis/logarithmic-cs3/src/main.ts %}
 {% endhighlight %}
@@ -208,9 +194,7 @@ The Range Selector supports the DateTime scale and displays the DateTime values 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/axis/datetime-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/axis/datetime-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/axis/datetime-cs1/src/main.ts %}
 {% endhighlight %}
@@ -238,9 +222,7 @@ DateTime supports the following interval types:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/axis/datetime-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/axis/datetime-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/axis/datetime-cs2/src/main.ts %}
 {% endhighlight %}
@@ -256,9 +238,7 @@ The [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/range-n
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/axis/datetime-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/axis/datetime-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/axis/datetime-cs3/src/main.ts %}
 {% endhighlight %}

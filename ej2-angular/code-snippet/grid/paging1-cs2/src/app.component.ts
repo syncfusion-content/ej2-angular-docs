@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
+
 
 import { Component, OnInit } from '@angular/core';
 import { InfiniteScrollService } from '@syncfusion/ej2-angular-grids';
@@ -23,6 +27,13 @@ const data = (count: any) => {
 };
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [PageService, ToolbarService, EditService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height=300 [enableInfiniteScrolling]='true' [pageSettings]='options'>
                 <e-columns>

@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SpreadsheetModule } from '@syncfusion/ej2-angular-spreadsheet'
+
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { defaultData } from './datasource';
@@ -5,6 +9,13 @@ import { PredicateModel } from '@syncfusion/ej2-grids';
 import { ExtendedRowModel, SpreadsheetComponent, UsedRangeModel, SheetModel } from '@syncfusion/ej2-angular-spreadsheet';
 
 @Component({
+imports: [
+        
+        SpreadsheetModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<button class="e-btn custom-btn" (click)="onClick()">Get Filtered Rows</button>
     <ejs-spreadsheet #spreadsheet (created)='created()'> 

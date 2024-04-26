@@ -153,9 +153,7 @@ The following code example depicts the way to initialize The Toolbar on a single
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/toolbar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toolbar/toolbar-cs1/src/main.ts %}
 {% endhighlight %}
@@ -181,9 +179,7 @@ You need to follow the below structure of HTML elements to render the Toolbar in
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/toolbar-container-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/toolbar-container-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toolbar/toolbar-container-cs1/src/main.ts %}
 {% endhighlight %}

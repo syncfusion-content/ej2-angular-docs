@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { ColorPickerModule } from '@syncfusion/ej2-angular-inputs'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 import { Component } from '@angular/core';
@@ -5,6 +11,12 @@ import { PaletteTileEventArgs, ColorPickerEventArgs } from '@syncfusion/ej2-inpu
 import { addClass } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+         FormsModule, ColorPickerModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: ` <div class="e-section-control">
                 <div id="preview"></div>

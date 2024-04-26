@@ -22,9 +22,7 @@ The menu items can be added to the backstage view by using the [items](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Backstage-Items/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Backstage-Items/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Backstage-Items/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ You can use the [isFooter](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Footer-Items/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Footer-Items/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Footer-Items/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ The separators are horizontal lines used to separate the backstage view items. Y
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Separator/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Separator/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Separator/src/main.ts %}
 {% endhighlight %}
@@ -85,9 +79,7 @@ You can use the [backButton](https://ej2.syncfusion.com/angular/documentation/ap
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Back-Button/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Back-Button/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Back-Button/src/main.ts %}
 {% endhighlight %}
@@ -106,9 +98,7 @@ The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/backSta
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Target/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Target/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Target/src/main.ts %}
 {% endhighlight %}
@@ -127,9 +117,7 @@ You can use the [template](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Template/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Template/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Template/src/main.ts %}
 {% endhighlight %}
@@ -148,9 +136,7 @@ You can customize the height and width of the backstage view using the [height](
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Customization/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Customization/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Customization/src/main.ts %}
 {% endhighlight %}

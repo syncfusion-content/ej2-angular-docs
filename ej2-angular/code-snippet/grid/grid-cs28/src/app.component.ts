@@ -3,6 +3,10 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 
 @Component({
+imports: [ GridModule,  FormsModule, ButtonModule],
+
+,
+standalone: true,
   selector: 'app-root',
   template: `<div >
               <button ejs-button id="small" cssClass="e-small" 

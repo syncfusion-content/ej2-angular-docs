@@ -18,9 +18,7 @@ The step model and current step index are passed as `step` and `currentStep` pro
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/template/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/template/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/template/src/main.ts %}
 {% endhighlight %}

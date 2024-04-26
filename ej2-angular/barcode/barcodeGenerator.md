@@ -18,9 +18,7 @@ The Code 39 character set includes the digits 0-9, the letters A-Z (upper case o
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/barcodegenerator/code39-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/barcodegenerator/code39-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/barcodegenerator/code39-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ Code 39 Extended is an extended version of Code 39 that supports ASCII character
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/barcodegenerator/code39extd-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/barcodegenerator/code39extd-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/barcodegenerator/code39extd-cs1/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ Code 11 is used primarily for labeling the telecommunication equipment’s. The 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/barcodegenerator/code11-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/barcodegenerator/code11-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/barcodegenerator/code11-cs1/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +70,7 @@ The characters, A, B, C and D are used as start and stop characters. Codabar is 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/barcodegenerator/code11-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/barcodegenerator/code11-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/barcodegenerator/code11-cs2/src/main.ts %}
 {% endhighlight %}
@@ -99,9 +91,7 @@ The value to be encoded must be 8 digits Pharmacode (prefix it with ‘0’ if n
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/barcodegenerator/code32-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/barcodegenerator/code32-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/barcodegenerator/code32-cs1/src/main.ts %}
 {% endhighlight %}
@@ -117,9 +107,7 @@ Code 93 is designed to complement and improve upon Code 39. It can represent the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/barcodegenerator/code93-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/barcodegenerator/code93-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/barcodegenerator/code93-cs1/src/main.ts %}
 {% endhighlight %}
@@ -149,9 +137,7 @@ The last seven characters of Code Sets A and B (character values 96 - 102) and t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/barcodegenerator/code128-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/barcodegenerator/code128-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/barcodegenerator/code128-cs1/src/main.ts %}
 {% endhighlight %}
@@ -167,9 +153,7 @@ A page or printed media with barcode often appears colorful in the background an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/barcodegenerator/color-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/barcodegenerator/color-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/barcodegenerator/color-cs1/src/main.ts %}
 {% endhighlight %}
@@ -185,9 +169,7 @@ The dimension of the barcode can be changed using the height and width property 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/barcodegenerator/dimension-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/barcodegenerator/dimension-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/barcodegenerator/dimension-cs1/src/main.ts %}
 {% endhighlight %}
@@ -203,9 +185,7 @@ In barcode generators you can customize the barcode text by using display text p
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/barcodegenerator/text-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/barcodegenerator/text-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/barcodegenerator/text-cs1/src/main.ts %}
 {% endhighlight %}

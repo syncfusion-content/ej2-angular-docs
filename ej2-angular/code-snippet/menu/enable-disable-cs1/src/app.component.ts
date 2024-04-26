@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MenuModule } from '@syncfusion/ej2-angular-navigations'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -7,6 +12,10 @@ import { MenuComponent, MenuItemModel, BeforeOpenCloseMenuEventArgs } from '@syn
 enableRipple(true);
 
 @Component({
+imports: [ MenuModule, ButtonModule],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
         <div class="control-section">

@@ -34,9 +34,7 @@ The following example demonstrates how to change the page size of a Grid using a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs10/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +54,7 @@ The following example demonstrates how to change the page count of a Grid using 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs11/src/main.ts %}
 {% endhighlight %}
@@ -78,9 +74,7 @@ The following example demonstrates how to dynamically change the current page us
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs12/src/main.ts %}
 {% endhighlight %}
@@ -102,9 +96,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs13/src/main.ts %}
 {% endhighlight %}
@@ -127,9 +119,7 @@ The following example demonstrates how to render a **NumericTextBox** component 
 {% highlight ts tabtitle="app.template.html" %}
 {% include code-snippet/grid/pager-template-cs1/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/pager-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/pager-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -149,9 +139,7 @@ The following example that demonstrates how to integrate the page size Dropdown 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs6/src/main.ts %}
 {% endhighlight %}
@@ -171,9 +159,7 @@ The following example demonstrate how to customize the default values of the pag
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs14/src/main.ts %}
 {% endhighlight %}
@@ -195,9 +181,7 @@ The following example demonstrates how to dynamically navigate to a particular p
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs16/src/main.ts %}
 {% endhighlight %}
@@ -227,9 +211,7 @@ The following example demonstrates how to calculate the page size based on eleme
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs18/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs18/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs18/src/main.ts %}
 {% endhighlight %}
@@ -247,9 +229,7 @@ Here's an example that demonstrates how to render the pager at the top of the gr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs7/src/main.ts %}
 {% endhighlight %}
@@ -276,9 +256,7 @@ The following example that example demonstrates how to use these events to displ
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs19/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs19/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs19/src/main.ts %}
 {% endhighlight %}

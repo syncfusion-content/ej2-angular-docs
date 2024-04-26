@@ -25,9 +25,7 @@ The following example demonstrates how to set the `year` as the start view of th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/calendar/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/getting-started-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/calendar/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
@@ -47,9 +45,7 @@ By defining the start and depth property with the different view, drill-down and
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/calendar/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/getting-started-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/calendar/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
@@ -65,9 +61,7 @@ The following example demonstrates how to select the dates in `year` view.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/calendar/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/getting-started-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/calendar/getting-started-cs4/src/main.ts %}
 {% endhighlight %}

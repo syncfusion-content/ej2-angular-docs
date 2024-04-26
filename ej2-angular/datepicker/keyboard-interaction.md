@@ -31,9 +31,7 @@ To focus the Calendar component use the `alt+t` keys.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/getting-started-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/getting-started-cs11/src/main.ts %}
 {% endhighlight %}

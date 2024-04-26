@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+
 
 
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
@@ -7,6 +11,10 @@ import { GanttData } from './data';
 import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [splitterSettings]="splitterSettings" [gridLines]='gridLines'

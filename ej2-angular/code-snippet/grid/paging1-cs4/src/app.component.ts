@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
+import { SwitchModule} from '@syncfusion/ej2-angular-buttons'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridComponent, InfiniteScrollService } from '@syncfusion/ej2-angular-grids';
 import { PageSettingsModel } from '@syncfusion/ej2-angular-grids';
@@ -23,6 +28,14 @@ const data = (count: any) => {
 };
 
 @Component({
+imports: [
+        
+        GridModule,
+        SwitchModule
+        ],
+
+providers: [PageService, ToolbarService, EditService],
+standalone: true,
     selector: 'app-root',
     template: `
             <div style="padding: 20px 0px 20px 0px">

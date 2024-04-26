@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -8,6 +12,14 @@ import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/cha
 import { Pivot_Data } from './datasource';
 
 @Component({
+imports: [
+        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   providers: [ToolbarService, PivotChartService],
   // specifies the template string for the pivot table component

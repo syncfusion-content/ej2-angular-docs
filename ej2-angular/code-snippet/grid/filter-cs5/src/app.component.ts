@@ -1,8 +1,26 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule,SwitchModule } from '@syncfusion/ej2-angular-buttons'
+import { PageService, FilterService } from '@syncfusion/ej2-angular-grids'
+import {  DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { FilterSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule,
+        SwitchModule,
+        DropDownListAllModule
+    ],
+
+providers: [PageService,
+                FilterService],
+standalone: true,
     selector: 'app-root',
     template: `<div class='container'>
     <label for="unchecked"> Enable Case Sensitivity </label>

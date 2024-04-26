@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { EditService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -7,6 +12,12 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { editingResources } from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [EditService],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [toolbar]="toolbar" [editSettings]="editSettings" [resourceFields] = "resourceFields" 

@@ -1,8 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
+import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { FilterService, PageService, GridComponent, Column } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonAllModule
+    ],
+
+providers: [GroupService],
+standalone: true,
     selector: 'app-root',
     template: `<div id='message'>{{message}}</div><button ejs-button id='save' (click)='save()'>Save column settings</button><button ejs-button id='restore' (click)='restore()'>Restore column settings</button>
                <ejs-grid #Grid id="Orders" [dataSource]='data' [enablePersistence]='true' [allowPaging]='true' [allowFiltering]='true'

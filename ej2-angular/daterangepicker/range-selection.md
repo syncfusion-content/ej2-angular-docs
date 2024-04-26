@@ -24,9 +24,7 @@ In below sample, you can select a range from 15th day of this month to 15th day 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs9/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ In below sample, the range selection should be greater than 3 days and less than
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs10/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ This restriction can be availed by enabling the [`strictMode`](https://ej2.syncf
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/daterangepicker/getting-started-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/daterangepicker/getting-started-cs11/src/main.ts %}
 {% endhighlight %}

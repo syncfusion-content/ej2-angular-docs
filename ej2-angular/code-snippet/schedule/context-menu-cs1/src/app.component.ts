@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
@@ -10,6 +17,20 @@ import { ContextMenuComponent, MenuItemModel, BeforeOpenCloseMenuEventArgs, Menu
 import { scheduleData } from './datasource';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        ButtonModule,
+        ContextMenuModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService],
+standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html',
     providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],

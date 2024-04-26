@@ -1,9 +1,25 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+
 
 
 
 import { Component, ViewChild } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextEditorComponent  } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
+imports: [
+        
+        RichTextEditorAllModule,
+        FormsModule,
+		ButtonModule,
+        ReactiveFormsModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="control-section">
     <div class="content-wrapper">

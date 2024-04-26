@@ -28,9 +28,7 @@ To learn about what are all the edit modes and edit types are available in Angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs18/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs18/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs18/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +52,7 @@ Here's an example of how to enable the toolbar with edit option in the Grid:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs19/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs19/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs19/src/main.ts %}
 {% endhighlight %}
@@ -79,9 +75,7 @@ Here's an example that demonstrates how to disable editing for the column in the
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/grid/edit-cs20/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs20/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs20/src/main.ts %}
 {% endhighlight %}
@@ -105,9 +99,7 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs23/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs23/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs23/src/main.ts %}
 {% endhighlight %}
@@ -130,9 +122,7 @@ The following example that demonstrates how to customize the delete confirmation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-delete-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-delete-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-delete-cs1/src/main.ts %}
 {% endhighlight %}
@@ -150,9 +140,7 @@ In the following sample, the `CheckBox` component is rendered as a template in t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-single-click/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-single-click/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-single-click/src/main.ts %}
 {% endhighlight %}
@@ -170,9 +158,7 @@ In the following example, the `DropDownList` component is rendered within the [e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-enum/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-enum/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-enum/src/main.ts %}
 {% endhighlight %}
@@ -190,9 +176,7 @@ In the following sample, the input element is rendered in the edit template of t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-complex/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-complex/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-complex/src/main.ts %}
 {% endhighlight %}
@@ -210,9 +194,7 @@ In the following code example, the Employee Name is a foreign key column. When e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-tempalte/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-tempalte/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-tempalte/src/main.ts %}
 {% endhighlight %}
@@ -242,9 +224,7 @@ The following example demonstrates the integration of the Syncfusion Grid with a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-toolbar/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-toolbar/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-toolbar/src/main.ts %}
 {% endhighlight %}
@@ -264,9 +244,7 @@ In the following example, it demonstrates how to edit the form using an external
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-form/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-form/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-form/src/main.ts %}
 {% endhighlight %}
@@ -288,9 +266,7 @@ In the following example, the textbox is rendered in the **Freight** column usin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs24/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs24/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs24/src/main.ts %}
 {% endhighlight %}

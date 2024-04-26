@@ -58,9 +58,7 @@ The client-side method [`startGroupAction`](https://ej2.syncfusion.com/angular/d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/undoRedo/groupAction-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/undoRedo/groupAction-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/undoRedo/groupAction-cs1/src/main.ts %}
 {% endhighlight %}
@@ -107,9 +105,7 @@ canLog in the history list, which takes a history entry as argument and returns 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/undoRedo/canLog-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/undoRedo/canLog-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/undoRedo/canLog-cs1/src/main.ts %}
 {% endhighlight %}
@@ -171,9 +167,7 @@ The [`stackLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram)
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/undoRedo/canLog-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/undoRedo/canLog-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/undoRedo/canLog-cs2/src/main.ts %}
 {% endhighlight %}

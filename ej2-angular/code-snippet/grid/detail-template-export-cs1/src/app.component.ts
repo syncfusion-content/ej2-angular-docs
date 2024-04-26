@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { DetailRowService, PdfExportService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -27,6 +32,13 @@ interface DataType {
 }
 
 @Component({
+imports: [
+        
+        GridModule        
+    ],
+
+providers: [DetailRowService, PdfExportService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]="data" id="DetailTemplateGrid" [toolbar]="toolbar" [allowPdfExport]="true"
         (toolbarClick)="toolbarClick($event)" (exportDetailTemplate)="exportDetailTemplate($event)" height="273px">

@@ -26,9 +26,7 @@ To known more about annotations, you can check on this video:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs7/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ Annotations can be placed either with respect to `Series` or `Chart`. by default
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs8/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ Specified the coordinates units of the annotation either `Pixel` or `Point`.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs9/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ Annotation provides `verticalAlignment` and `horizontalAlignment`. The `vertical
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs10/src/main.ts %}
 {% endhighlight %}
@@ -100,9 +92,7 @@ By setting text div in the `content` option of annotation object you can add sub
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs11/src/main.ts %}
 {% endhighlight %}

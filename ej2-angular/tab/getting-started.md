@@ -202,9 +202,7 @@ The following example illustrates the output in your browser.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/basic-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/basic-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tab/basic-cs4/src/main.ts %}
 {% endhighlight %}
@@ -241,9 +239,7 @@ You need to follow the below structure of `ng-template` to render the Tab,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/basic-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/basic-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tab/basic-cs5/src/main.ts %}
 {% endhighlight %}
@@ -276,9 +272,7 @@ You need to follow the below structure of HTML elements to render the Tab,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/tab-container-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/tab-container-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tab/tab-container-cs1/src/main.ts %}
 {% endhighlight %}

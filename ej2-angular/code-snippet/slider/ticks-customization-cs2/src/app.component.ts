@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SliderModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 
@@ -6,6 +10,13 @@ import { SliderComponent } from '@syncfusion/ej2-angular-inputs';
 import { SliderTickRenderedEventArgs, SliderTickEventArgs, Placement } from '@syncfusion/ej2-inputs';
 
 @Component({
+imports: [
+        
+        SliderModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `<div class="slider_container" id="slider_wrapper">
             <div class="slider_labelText userselect">Dynamic ticks color</div>

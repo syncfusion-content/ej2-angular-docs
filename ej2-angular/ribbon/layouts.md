@@ -20,9 +20,7 @@ In classic layout, the Ribbon component organizes the items and groups in a trad
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Classic/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Classic/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Classic/src/main.ts %}
 {% endhighlight %}
@@ -41,9 +39,7 @@ You can use the [allowedSizes](https://ej2.syncfusion.com/angular/documentation/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/ItemsSize/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/ItemsSize/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/ItemsSize/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ The Ribbon group [orientation](https://ej2.syncfusion.com/angular/documentation/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Orientation/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Orientation/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Orientation/src/main.ts %}
 {% endhighlight %}
@@ -85,9 +79,7 @@ You can use the [header](https://ej2.syncfusion.com/angular/documentation/api/ri
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/HeaderText/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/HeaderText/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/HeaderText/src/main.ts %}
 {% endhighlight %}
@@ -106,9 +98,7 @@ You can use the [groupIconCss](https://ej2.syncfusion.com/angular/documentation/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/GroupIcon/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/GroupIcon/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/GroupIcon/src/main.ts %}
 {% endhighlight %}
@@ -127,9 +117,7 @@ You can use the [showLauncherIcon](https://ej2.syncfusion.com/angular/documentat
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/LauncherIcon/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/LauncherIcon/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/LauncherIcon/src/main.ts %}
 {% endhighlight %}
@@ -148,9 +136,7 @@ You can use the [launcherIconCss](https://ej2.syncfusion.com/angular/documentati
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/CustomLauncher/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/CustomLauncher/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/CustomLauncher/src/main.ts %}
 {% endhighlight %}
@@ -169,9 +155,7 @@ You can use the [isCollapsible](https://ej2.syncfusion.com/angular/documentation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/CollapsibleState/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/CollapsibleState/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/CollapsibleState/src/main.ts %}
 {% endhighlight %}
@@ -190,9 +174,7 @@ You can use the [priority](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Priority/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Priority/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Priority/src/main.ts %}
 {% endhighlight %}
@@ -211,9 +193,7 @@ In simplified layout, the Ribbon component organizes the items and groups into a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Simplified/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Simplified/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Simplified/src/main.ts %}
 {% endhighlight %}
@@ -232,9 +212,7 @@ You can use the [enableGroupOverflow](https://ej2.syncfusion.com/angular/documen
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/GroupOverflow/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/GroupOverflow/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/GroupOverflow/src/main.ts %}
 {% endhighlight %}
@@ -255,9 +233,7 @@ You can use the [isMinimized](https://ej2.syncfusion.com/angular/documentation/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Minimize/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Minimize/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Minimize/src/main.ts %}
 {% endhighlight %}

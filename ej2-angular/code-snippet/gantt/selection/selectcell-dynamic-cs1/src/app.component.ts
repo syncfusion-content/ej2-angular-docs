@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { SelectionService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -8,6 +13,12 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
        `<button ejs-button id='selectCell' (click)='select()'>Select Cell</button>

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { ToolbarService } from '@syncfusion/ej2-angular-treegrid'
+
 
 
 
@@ -7,6 +12,13 @@ import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+imports: [
+        
+        TreeGridModule
+    ],
+
+providers: [ToolbarService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height='220' [treeColumnIndex]='1'  childMapping='subtasks' [toolbar]='toolbarOptions' (toolbarClick)='clickHandler($event)'>
         <e-columns>

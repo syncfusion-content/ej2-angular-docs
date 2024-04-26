@@ -22,9 +22,7 @@ In the below demo, Data is fetched from an `OData` service using `DataManager`. 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/basic-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/basic-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tab/basic-cs7/src/main.ts %}
 {% endhighlight %}

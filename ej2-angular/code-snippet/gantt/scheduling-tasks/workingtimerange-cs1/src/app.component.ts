@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { DayMarkersService,EditService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -7,6 +12,12 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { editingData } from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [DayMarkersService,EditService],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings"  [editSettings]="editSettings" highlightWeekends='true' [timelineSettings]="timelineSettings" [dayWorkingTime]="dayWorkingTime" [splitterSettings]="splitterSettings"></ejs-gantt>`,

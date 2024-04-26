@@ -24,9 +24,7 @@ The smooth transition between the given palette colors can be applied for the he
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/palette/palettegradient-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/palette/palettegradient-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/palette/palettegradient-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ In fixed palette type, solid colors are applied to the heat map cells. The data 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/palette/palettefixed-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/palette/palettefixed-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/palette/palettefixed-cs1/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ You can define the colors ranges or color stops for data values in both gradient
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/palette/palettevalue-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/palette/palettevalue-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/palette/palettevalue-cs1/src/main.ts %}
 {% endhighlight %}

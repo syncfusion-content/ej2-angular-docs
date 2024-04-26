@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { PivotView, FieldListService, IDataSet, IDataOptions, IAxisSet } from '@syncfusion/ej2-angular-pivotview';
 import { Tooltip } from '@syncfusion/ej2-popups';
@@ -6,6 +10,14 @@ import { Pivot_Data } from './datasource';
 let headerTooltip: Tooltip;
 
 @Component({
+imports: [
+        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   providers: [FieldListService],
   // specifies the template string for the pivot table component

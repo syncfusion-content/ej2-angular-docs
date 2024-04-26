@@ -1,7 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule, ReorderService } from '@syncfusion/ej2-angular-treegrid'
+
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 
 @Component({
+imports: [
+        
+        TreeGridModule
+    ],
+
+providers: [ReorderService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' autoCheckHierarchy='true'>
                     <e-columns>

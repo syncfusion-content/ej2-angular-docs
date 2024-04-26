@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AccordionComponent, AccordionItemDirective, AccordionItemsDirective, AccordionModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +9,13 @@ import { AccordionComponent, AccordionItemModel } from '@syncfusion/ej2-angular-
 import { Accordion, ExpandEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
+imports: [
+        
+        AccordionModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `
        <ejs-accordion #element (expanding)="expanding($event)" (expanded)="expanded($event)" (created)="created($event)" expandMode='Single' >

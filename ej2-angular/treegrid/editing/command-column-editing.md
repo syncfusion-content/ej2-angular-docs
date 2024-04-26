@@ -25,9 +25,7 @@ The available built-in command buttons are:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-command-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-command-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-command-cs1/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ The custom command buttons can be added in a column by using the [`column.comman
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-command-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-command-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-command-cs2/src/main.ts %}
 {% endhighlight %}

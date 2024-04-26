@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
+import { DateRangePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 import { Component, ViewChild, OnInit } from '@angular/core';
@@ -5,6 +10,14 @@ import { DateRangePickerComponent } from '@syncfusion/ej2-angular-calendars';
 import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
 
 @Component({
+imports: [
+        
+        DateRangePickerModule,
+        FormsModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<form id="form-element" class="form-vertical">
     <ejs-daterangepicker #ejDateRange id='daterangepicker' placeholder='Enter a date range' width="275px"(blur)="onFocusOut()" (change)= "onChange($event)"></ejs-daterangepicker>

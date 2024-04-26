@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, ViewChild, Inject } from '@angular/core';
@@ -5,6 +10,14 @@ import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
 import { Draggable } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        TooltipModule,
+        ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
     <ejs-tooltip #tooltip id='targetContainer' content='Drag me !!!' target='#demoSmart' [animation]='tooltipAnimation'>

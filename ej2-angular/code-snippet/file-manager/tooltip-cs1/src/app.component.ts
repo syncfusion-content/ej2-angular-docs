@@ -1,3 +1,8 @@
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { TooltipAllModule } from '@syncfusion/ej2-angular-popups'
+import { FileManagerModule ,NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
+
 
 
 
@@ -7,6 +12,10 @@ import { TooltipComponent, TooltipEventArgs } from '@syncfusion/ej2-angular-popu
 import { getValue, select } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [FileManagerModule,  TooltipAllModule],
+
+providers:[NavigationPaneService, ToolbarService, DetailsViewService],
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: ` <div class="filemanagerContainer">

@@ -27,9 +27,7 @@ The following example shows how to export documents in document editor as Syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/export-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/export-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/export-cs1/src/main.ts %}
 {% endhighlight %}
@@ -47,9 +45,7 @@ The following example shows how to export the document as Word document (.docx).
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/export-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/export-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/export-cs2/src/main.ts %}
 {% endhighlight %}
@@ -67,9 +63,7 @@ The following example shows how to export the document as Word Template (.dotx).
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/export-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/export-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/export-cs4/src/main.ts %}
 {% endhighlight %}
@@ -85,9 +79,7 @@ The following example shows how to export document as text document (.txt).
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/export-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/export-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/export-cs3/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,9 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+
 import { Component, OnInit } from '@angular/core';
 import {
   QueryCellInfoEventArgs,
@@ -8,6 +14,16 @@ import { columnSpanData } from './datasource';
 import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService],
+standalone: true,
   selector: 'app-container',
   template: `<ejs-treegrid [dataSource]='data' [height]='height' [width]='width' [gridLines]='gridLines' childMapping="subtasks" [treeColumnIndex]='1'
               [allowTextWrap]='textWrap' (queryCellInfo)='queryCellInfoEvent($event)'>

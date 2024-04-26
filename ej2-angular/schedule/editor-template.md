@@ -28,9 +28,7 @@ You can change the header title and the text of buttons displayed at the footer 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs1/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ To change the default labels such as Subject, Location and other field names in 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs2/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ It is possible to validate the required fields of the editor window from client-
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs3/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +84,7 @@ The additional fields can be added to the default event editor by making use of 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs4/src/main.ts %}
 {% endhighlight %}
@@ -108,9 +100,7 @@ When we open the editor window, by default it will be focus to the `Subject` fie
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs5/src/main.ts %}
 {% endhighlight %}
@@ -126,9 +116,7 @@ In default event editor window, start and end time duration are processed based 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs6/src/main.ts %}
 {% endhighlight %}
@@ -144,9 +132,7 @@ You prevent the display of editor and quick popup windows by passing the value `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs7/src/main.ts %}
 {% endhighlight %}
@@ -213,9 +199,7 @@ By default, the timezone collections in the editor window have been loaded with 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs37/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs37/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs37/src/main.ts %}
 {% endhighlight %}
@@ -241,9 +225,7 @@ Learn the easiest way to customize the editor window of Angular Scheduler with y
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs8/src/main.ts %}
 {% endhighlight %}
@@ -261,9 +243,7 @@ In this demo, we tailor the editor's header according to the appointment's subje
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-header-footer-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-header-footer-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-header-footer-cs1/src/main.ts %}
 {% endhighlight %}
@@ -279,9 +259,7 @@ The resource field can be added within editor template with multiselect control 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/resource-field-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/resource-field-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/resource-field-cs1/src/main.ts %}
 {% endhighlight %}
@@ -299,9 +277,7 @@ The following code example shows how to add recurrence options within the editor
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/resource-field-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/resource-field-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/resource-field-cs2/src/main.ts %}
 {% endhighlight %}
@@ -319,9 +295,7 @@ In the following code example, validation has been added to the status field.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/resource-field-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/resource-field-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/resource-field-cs3/src/main.ts %}
 {% endhighlight %}
@@ -343,9 +317,7 @@ The following code example shows how to save the customized event editor using a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/resource-field-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/resource-field-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/resource-field-cs4/src/main.ts %}
 {% endhighlight %}
@@ -377,9 +349,7 @@ The following code example shows how to enable save button in customized event e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/resource-field-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/resource-field-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/resource-field-cs5/src/main.ts %}
 {% endhighlight %}
@@ -399,9 +369,7 @@ By default, these popups are displayed over cells and appointments of Scheduler 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs9/src/main.ts %}
 {% endhighlight %}
@@ -417,9 +385,7 @@ By default the `QuickInfo` popup will open on single click of the cell. To open 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs10/src/main.ts %}
 {% endhighlight %}
@@ -453,9 +419,7 @@ The look and feel of the built-in quick popup window, which opens when single cl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/quick-popup-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/quick-popup-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/quick-popup-cs1/src/main.ts %}
 {% endhighlight %}
@@ -479,9 +443,7 @@ The following code example shows how to disable the display of such popups while
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs11/src/main.ts %}
 {% endhighlight %}
@@ -499,9 +461,7 @@ The following code example shows you how to customize the default more indicator
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs12/src/main.ts %}
 {% endhighlight %}
@@ -517,9 +477,7 @@ The following code example shows you how to customize the details shown on the a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs13/src/main.ts %}
 {% endhighlight %}
@@ -535,9 +493,7 @@ It is possible to prevent the display of popup window by passing the value `true
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs14/src/main.ts %}
 {% endhighlight %}
@@ -553,9 +509,7 @@ The following code example shows you how to customize the `moreEventsClick` prop
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs15/src/main.ts %}
 {% endhighlight %}
@@ -571,9 +525,7 @@ You can close the editor window by using [closeEditor](https://ej2.syncfusion.co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs16/src/main.ts %}
 {% endhighlight %}
@@ -589,9 +541,7 @@ You can open the quick info popup in scheduler by using the [openQuickInfoPopup]
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs17/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs17/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs17/src/main.ts %}
 {% endhighlight %}
@@ -607,9 +557,7 @@ You can close the quick info popup in scheduler by using the [closeQuickInfoPopu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/editor-window-cs18/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/editor-window-cs18/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/editor-window-cs18/src/main.ts %}
 {% endhighlight %}

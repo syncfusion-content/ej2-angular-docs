@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TabModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -13,6 +18,12 @@ enableRipple(true);
  */
 
 @Component({
+imports: [
+        FormsModule, TabModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<ejs-tab #element id="element" (created)="tabCreated()" (selected)="tabSelected($event)">
             <e-tabitems>

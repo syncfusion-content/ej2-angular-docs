@@ -20,9 +20,7 @@ Range color mapping is used to apply color to the items by giving specific range
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ Equal color mapping is used to fill colors to each item by specifying equal valu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs2/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +52,7 @@ Desaturation color mapping is used to apply colors to the items based on the [`m
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs3/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +68,7 @@ The palette color mapping is used to fill the color to each group or leaf item b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs4/src/main.ts %}
 {% endhighlight %}
@@ -92,9 +84,7 @@ Multiple colors are used as gradient effect to specific shapes based on the rang
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs5/src/main.ts %}
 {% endhighlight %}
@@ -110,9 +100,7 @@ Get the excluded ranges from data source using the color mapping and apply the s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs6/src/main.ts %}
 {% endhighlight %}
@@ -128,9 +116,7 @@ To set the color for each item from the data source, bind the data source proper
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs7/src/main.ts %}
 {% endhighlight %}

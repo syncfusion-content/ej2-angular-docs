@@ -19,9 +19,7 @@ The following example demonstrates the TimePicker in `strictMode` with min/max r
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timepicker/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/getting-started-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timepicker/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ If you are entering the out-of-range or invalid time value, then the model value
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timepicker/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/getting-started-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timepicker/getting-started-cs7/src/main.ts %}
 {% endhighlight %}

@@ -22,9 +22,7 @@ The following sample demonstrates how to enable and utilize adaptive dialogs in 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/adaptive-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/adaptive-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/adaptive-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ The following sample demonstrates how to dynamically change the row rendering mo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/adaptive-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/adaptive-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/adaptive-cs2/src/main.ts %}
 {% endhighlight %}

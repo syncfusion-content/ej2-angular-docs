@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartAllModule, StockChartAllModule } from '@syncfusion/ej2-angular-charts'
+import { CandleSeriesService, LineSeriesService, TmaIndicatorService, DateTimeService} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
@@ -7,6 +12,12 @@ import { ITooltipRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 setCurrencyCode("EUR");
 
 @Component({
+imports: [
+         ChartAllModule, StockChartAllModule
+    ],
+
+providers: [ CandleSeriesService, LineSeriesService, TmaIndicatorService, DateTimeService],
+standalone: true,
     selector: 'app-container',
     template:
         `<ejs-stockchart id='chart-container' [primaryXAxis]='primaryXAxis' style="display:block;"

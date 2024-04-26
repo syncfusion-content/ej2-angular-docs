@@ -1,7 +1,17 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ProgressBarModule, ProgressAnnotationService } from '@syncfusion/ej2-angular-progressbar'
+
 
 
 import { Component, OnInit } from '@angular/core';
 @Component({
+imports: [
+         ProgressBarModule
+    ],
+
+providers: [ProgressAnnotationService],
+standalone: true,
     selector: 'my-app',
     template:
    ` <ejs-progressbar  id='percentage' type='Circular' trackColor='#FFD939' cornerRadius='Round'

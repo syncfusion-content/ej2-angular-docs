@@ -1,9 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { IDataOptions, IDataSet, PivotView, VirtualScrollService, GroupingBarService } from '@syncfusion/ej2-angular-pivotview';
 
 @Component({
+imports: [
+        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   providers: [VirtualScrollService, GroupingBarService],
   template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]='dataSourceSettings' showGroupingBar='true' enableVirtualization='true' maxNodeLimitInEditor='100' width='710' height='260'></ejs-pivotview>`

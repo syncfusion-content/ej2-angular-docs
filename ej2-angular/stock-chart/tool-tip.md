@@ -22,9 +22,7 @@ By default, tooltip is not visible. Enable the tooltip by setting [`enable`](htt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/tooltip-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ By default, tooltip shows information of x and y value in points. In addition to
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/tooltip-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/tooltip-cs2/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ By default, the tooltip is positioned at the left side of the stock chart. You c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/tooltip-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/tooltip-cs5/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ Any HTML elements can be displayed in the tooltip by using the ‘template’ pr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/tooltip-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/tooltip-cs3/src/main.ts %}
 {% endhighlight %}
@@ -100,9 +92,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipS
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/tooltip-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/tooltip-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/tooltip-cs4/src/main.ts %}
 {% endhighlight %}

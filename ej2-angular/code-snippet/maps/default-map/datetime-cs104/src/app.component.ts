@@ -1,7 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MapsModule } from '@syncfusion/ej2-angular-maps'
+import { LegendService, MarkerService, MapsTooltipService } from '@syncfusion/ej2-angular-maps'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Maps, IMarkerDragEventArgs } from '@syncfusion/ej2-angular-maps';
 import { world_map } from './world-map';
 @Component({
+imports: [
+         MapsModule
+    ],
+
+providers: [LegendService, MarkerService, MapsTooltipService],
+standalone: true,
     selector: 'app-container',
     template: `
         <ejs-maps id="rn-container" #maps (markerDragStart)="markerDragStart($event)" (markerDragEnd)="markerDragEnd($event)" [legendSettings]="legendSettings">

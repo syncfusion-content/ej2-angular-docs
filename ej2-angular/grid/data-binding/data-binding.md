@@ -39,9 +39,7 @@ The following example demonstrates how to set the `loadingIndicator.indicatorTyp
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/loading-indicator/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/loading-indicator/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/loading-indicator/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +74,7 @@ The following example demonstrates adding a new record to the data source throug
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/change-headertext-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/change-headertext-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/change-headertext-cs2/src/main.ts %}
 {% endhighlight %}
@@ -176,9 +172,7 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/data-datasource/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/data-datasource/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/data-datasource/src/main.ts %}
 {% endhighlight %}

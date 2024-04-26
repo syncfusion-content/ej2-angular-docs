@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -5,6 +9,13 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { FormArray, FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
+imports: [
+        
+        CheckBoxModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     templateUrl: 'app.component.html',
     encapsulation: ViewEncapsulation.None

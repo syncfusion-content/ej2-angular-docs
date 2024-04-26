@@ -1,3 +1,10 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PageService, SortService, FilterService,ToolbarService,TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { SparklineAllModule, } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit , ViewChild} from '@angular/core';
@@ -6,6 +13,19 @@ import { Sparkline } from '@syncfusion/ej2-angular-charts';
 import { TreeGridComponent,} from '@syncfusion/ej2-angular-treegrid'
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule,
+        SparklineAllModule, 
+        DropDownListAllModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                ToolbarService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height=291 width='auto' childMapping= 'Children' (created)="renderGridSparkline()" >
                     <e-columns>

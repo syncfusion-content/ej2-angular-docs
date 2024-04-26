@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -5,6 +9,11 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt, Toolbar, Edit, Selection } from '@syncfusion/ej2-gantt';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+standalone: true,
     selector: 'app-root',
     template:
         `<ejs-gantt id="resources" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [treeColumnIndex]="1" [editSettings]="editSettings" height="450px" [allowSelection]="true" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate" [highlightWeekends]="true" [toolbar]="toolbar" [resourceFields] = "resourceFields" [resources]="resources" resourceNameMapping='resourceName' resourceIDMapping='resourceId' resourceUnitMapping='Unit' workUnit="Hour"></ejs-gantt> `,

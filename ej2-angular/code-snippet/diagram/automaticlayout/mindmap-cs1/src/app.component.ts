@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule, MindMapService, DataBindingService } from '@syncfusion/ej2-angular-diagrams'
+
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -6,6 +10,12 @@ import { DataManager, Query } from '@syncfusion/ej2-data';
 Diagram.Inject( MindMap );
 
 @Component({
+imports: [
+         DiagramModule
+    ],
+
+providers: [MindMapService, DataBindingService],
+standalone: true,
     selector: "app-container",
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults]="getNodeDefaults" [getConnectorDefaults]="getConnectorDefaults" [snapSettings]="snapSettings" [layout]="layout" [dataSourceSettings]="dataSourceSettings">
     </ejs-diagram>`,

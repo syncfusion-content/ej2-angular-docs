@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { StockChartModule, DateTimeService, CandleSeriesService } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
@@ -5,6 +9,12 @@ import { IStockChartEventArgs, getElement, PeriodsModel, StockChartComponent } f
 import {StockChart, StockChartAxisModel } from '@syncfusion/ej2-charts';
 
 @Component({
+imports: [
+         StockChartModule
+    ],
+
+providers: [ DateTimeService, CandleSeriesService ],
+standalone: true,
     selector: 'app-container',
     template:
             `<ejs-stockchart id="chart-container" #chart [primaryXAxis]='primaryXAxis' [periods]='periods' title="Live Stock Chart">

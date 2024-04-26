@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component } from '@angular/core';
@@ -12,6 +17,18 @@ import * as timeZoneNames from './timeZoneNames.json';
 loadCldr(numberingSystems, gregorian, numbers, timeZoneNames);
 
 @Component({
+imports: [
+        
+        ScheduleModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService],
+standalone: true,
   selector: 'app-root',
   providers: [DayService, WeekService, WorkWeekService, MonthService],
   // specifies the template string for the Schedule component

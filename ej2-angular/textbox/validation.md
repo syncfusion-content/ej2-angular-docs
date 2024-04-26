@@ -16,9 +16,7 @@ The TextBox supports three types of validation styles namely `error`, `warning`,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textbox/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/getting-started-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/getting-started-cs11/src/main.ts %}
 {% endhighlight %}
@@ -34,9 +32,7 @@ You can add a mandatory `asterisk(*)` to placeholder and float label using <b>.e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textbox/asterisk-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/asterisk-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/asterisk-cs1/src/main.ts %}
 {% endhighlight %}

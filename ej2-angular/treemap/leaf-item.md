@@ -20,9 +20,7 @@ Label is represented by item name or value. Label will be appeared by specifying
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs27/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs27/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs27/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ Positioning the leaf item label using the [`labelPosition`](https://ej2.syncfusi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs28/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs28/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs28/src/main.ts %}
 {% endhighlight %}
@@ -101,9 +97,7 @@ The [`gap`](https://ej2.syncfusion.com/angular/documentation/api/treemap/leafIte
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs29/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs29/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs29/src/main.ts %}
 {% endhighlight %}

@@ -18,9 +18,7 @@ To select a row at initial rendering, set the [`selectedRowIndex`](https://ej2.s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/selection-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/selection-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/selection-cs4/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ Selected row indexes can be obtained by using the [`getSelectedRowIndexes`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/selection-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/selection-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/selection-cs5/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +52,7 @@ In the demo below, we initially selected the third row using [selectedRowIndex](
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/selection-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/selection-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/selection-cs6/src/main.ts %}
 {% endhighlight %}
@@ -78,9 +72,7 @@ You can get the selected records using the [getSelectedRecords](https://ej2.sync
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/selection-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/selection-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/selection-cs7/src/main.ts %}
 {% endhighlight %}
@@ -98,9 +90,7 @@ Selected rows can be obtained by using the [`getSelectedRows`](https://ej2.syncf
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/selection-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/selection-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/selection-cs13/src/main.ts %}
 {% endhighlight %}

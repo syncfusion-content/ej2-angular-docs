@@ -16,9 +16,7 @@ The different Switch sizes available are default and small. To reduce the size o
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/switch/state-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/switch/state-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/switch/state-cs2/src/main.ts %}
 {% endhighlight %}

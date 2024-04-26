@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { Dialog, DialogAllModule, DialogComponent } from '@syncfusion/ej2-angular-popups'
+
 
 
 
@@ -6,6 +10,12 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+         DialogAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
     <button class="e-control e-btn" style="position: absolute;" id="targetButton" (click)="onOpenDialog($event)">Open Modal Dialog</button>

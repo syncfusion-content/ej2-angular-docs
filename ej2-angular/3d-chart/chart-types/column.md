@@ -18,9 +18,7 @@ To render a column series, use series [`type`](https://ej2.syncfusion.com/angula
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/column/column-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/column/column-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/column/column-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/column/column-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/column/column-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/column/column-cs2/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ The data points can be grouped in the column type charts by using the [`groupNam
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/column/column-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/column/column-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/column/column-cs3/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ To render a cylindrical column chart, set the [`columnFacet`](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/column/column-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/column/column-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/column/column-cs4/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +85,7 @@ The following properties can be used to customize the `column` series.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/column/column-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/column/column-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/column/column-cs5/src/main.ts %}
 {% endhighlight %}

@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FilterService, GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { FilterService, PageService, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [GroupService,FilterService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #Orders [dataSource]='data' [enablePersistence]='true' [allowPaging]='true' [allowFiltering]='true'
            height='210px' (actionBegin)='actionBegin()'>

@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 import { Component } from '@angular/core';
@@ -9,6 +13,13 @@ export interface JSONUser {
     selectedDate: string;
 }
 @Component({
+imports: [
+        
+        TimePickerModule //declaration of ej2-angular-calendars module into NgModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
     <!-- To Render TimePicker -->

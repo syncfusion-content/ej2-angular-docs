@@ -1,9 +1,17 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DateRangePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 import { Component, ViewChild } from '@angular/core';
 import { DateRangePickerComponent } from '@syncfusion/ej2-angular-calendars';
 
 @Component({
+imports:      [  DateRangePickerModule ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
   <div class="parentelement">

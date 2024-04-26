@@ -22,9 +22,7 @@ The remote request does not fetch the search data until the search key contains 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/mention/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/getting-started-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/mention/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ While filtering, you can change the filter type to `Contains`, `StartsWith`, or 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/mention/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/getting-started-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/mention/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ While filtering the data in the data source, you can allow the space in the midd
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/mention/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/getting-started-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/mention/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ While filtering, you can customize the number of list items to be displayed in t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/mention/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/getting-started-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/mention/getting-started-cs5/src/main.ts %}
 {% endhighlight %}

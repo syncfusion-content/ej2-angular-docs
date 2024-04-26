@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -8,6 +13,12 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [EditService, SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
        `<button ejs-button id='taskdelete' (click)='delete()'>Delete Task</button>

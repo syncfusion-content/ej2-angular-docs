@@ -24,9 +24,7 @@ Using the [`columns`](https://ej2.syncfusion.com/angular/documentation/api/gantt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ The column header text can be defined using the [`headerText`](https://ej2.syncf
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/headertemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/headertemplate-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/headertemplate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ To format the cell values based on a specific culture, use the [`columns.format`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/format-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/format-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/format-cs1/src/main.ts %}
 {% endhighlight %}
@@ -102,9 +96,7 @@ Format | Formatted value
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/dateformat-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/dateformat-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/dateformat-cs1/src/main.ts %}
 {% endhighlight %}
@@ -120,9 +112,7 @@ The tree/expander column is a column in the Gantt component, that has icons to e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/treecolumn-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs1/src/main.ts %}
 {% endhighlight %}
@@ -138,9 +128,7 @@ You can show or hide gantt columns dynamically using external buttons by invokin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/showhide-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/showhide-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/showhide-cs1/src/main.ts %}
 {% endhighlight %}
@@ -156,9 +144,7 @@ You can enable or disable gantt action for a particular column by setting the [`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/gridactions-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/gridactions-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/gridactions-cs1/src/main.ts %}
 {% endhighlight %}

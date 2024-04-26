@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, FilterService } from '@syncfusion/ej2-angular-grids'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { FormsModule } from '@angular/forms'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -6,6 +13,16 @@ import { DataUtil } from '@syncfusion/ej2-data';
 import { FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        DropDownListAllModule,
+        FormsModule
+    ],
+
+providers: [PageService,
+                FilterService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [allowFiltering]='true' [allowPaging]='true' [filterSettings]='filterOption'>
                 <e-columns>

@@ -34,9 +34,7 @@ The `Separator` type adds a vertical separation between the Toolbar's single/mul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs5/src/main.ts %}
 {% endhighlight %}
@@ -107,9 +105,7 @@ Above steps applicable for all 'Syncfusion' input based components.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs6/src/main.ts %}
 {% endhighlight %}
@@ -181,9 +177,7 @@ Here is an example of how you can use the [`tabIndex`](../api/toolbar/item/#tabi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/tab-key-navigation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/tab-key-navigation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toolbar/tab-key-navigation-cs1/src/main.ts %}
 {% endhighlight %}

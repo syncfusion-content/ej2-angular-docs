@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MessageModule } from '@syncfusion/ej2-angular-notifications'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -6,6 +11,12 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { MessageComponent } from '@syncfusion/ej2-angular-notifications';
 
 @Component({
+imports: [
+         MessageModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="msg-template-section">
         <div class="content-section">

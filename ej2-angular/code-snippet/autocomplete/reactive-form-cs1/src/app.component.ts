@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -5,6 +11,12 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, AutoCompleteModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     templateUrl: 'reactive-form.html'
 })

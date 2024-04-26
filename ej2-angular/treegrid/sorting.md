@@ -26,9 +26,7 @@ The following demo illustrates how to enable sorting in the tree grid.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/sorting-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/sorting-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ The following example demonstrates how to set `sortSettings.columns` for **Categ
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/sorting-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/sorting-cs2/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +69,7 @@ The following demo illustrates how to enable multi-column sorting in the tree gr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/sorting-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/sorting-cs3/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +87,7 @@ The following example demonstrates how to enable the `enableSortMultiTouch` prop
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/sorting-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/sorting-cs4/src/main.ts %}
 {% endhighlight %}
@@ -115,9 +107,7 @@ The following example demonstrates, how to disable sorting for **orderName** col
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/sorting-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/sorting-cs6/src/main.ts %}
 {% endhighlight %}
@@ -141,9 +131,7 @@ In the following example, the custom sort comparer function was defined in the *
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/sorting-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/sorting-cs7/src/main.ts %}
 {% endhighlight %}
@@ -175,9 +163,7 @@ In the following example, sorting is performed based on the **"ar"** locale usin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/sorting-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/sorting-cs8/src/main.ts %}
 {% endhighlight %}
@@ -207,9 +193,7 @@ In the below sample, tree grid is rendered with a customized sort icon.
 {% highlight ts tabtitle="sorting_style.css" %}
 {% include code-snippet/treegrid/sorting-cs9/sorting_style.css %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/sorting-cs9/src/main.ts %}
 {% endhighlight %}
@@ -231,9 +215,7 @@ The following example demonstrates how to add sort columns to a tree grid. It ut
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/sorting-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/sorting-cs10/src/main.ts %}
 {% endhighlight %}
@@ -251,9 +233,7 @@ The following example demonstrates how to remove sort columns. It utilizes the *
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/sorting-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/sorting-cs11/src/main.ts %}
 {% endhighlight %}
@@ -271,9 +251,7 @@ The following example demonstrates how to clear the sorting using `clearSorting`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/sorting-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/sorting-cs12/src/main.ts %}
 {% endhighlight %}
@@ -296,9 +274,7 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/sorting-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/sorting-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/sorting-cs13/src/main.ts %}
 {% endhighlight %}

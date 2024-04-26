@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { CalendarModule, IslamicService } from '@syncfusion/ej2-angular-calendars'
+
 
 
 
@@ -6,6 +10,14 @@ import { IslamicService } from '@syncfusion/ej2-angular-calendars';
 import { addClass } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        CalendarModule //declaration of ej2-angular-calendars module into NgModule
+        
+    ],
+
+providers:[IslamicService],
+standalone: true,
     selector: 'app-root',
     providers:[IslamicService],
     template: `

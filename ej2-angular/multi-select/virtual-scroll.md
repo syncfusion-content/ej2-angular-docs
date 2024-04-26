@@ -28,9 +28,7 @@ In the following example, `id` column and `text` column from complex data have b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/virtual-scroll/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/virtual-scroll/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/virtual-scroll/src/main.ts %}
 {% endhighlight %}
@@ -51,9 +49,7 @@ The following sample displays the OrderId from the `Orders` Data Service.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-remote/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/virtual-scroll-remote/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-remote/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +70,7 @@ The following sample shows the example for Customizing items count in virtualiza
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-items/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/virtual-scroll-items/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-items/src/main.ts %}
 {% endhighlight %}
@@ -97,9 +91,7 @@ The following sample shows the example for Grouping with Virtualization.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-group/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/virtual-scroll-group/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-group/src/main.ts %}
 {% endhighlight %}
@@ -120,9 +112,7 @@ The following sample shows the example for Filtering with Virtualization.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-filter/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/virtual-scroll-filter/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-filter/src/main.ts %}
 {% endhighlight %}
@@ -143,9 +133,7 @@ The following sample shows the example for checkbox with Virtualization.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-check/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/virtual-scroll-check/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-check/src/main.ts %}
 {% endhighlight %}
@@ -166,9 +154,7 @@ The following sample shows the example for custom value with Virtualization.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-custom/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/virtual-scroll-custom/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-custom/src/main.ts %}
 {% endhighlight %}
@@ -189,9 +175,7 @@ The following sample shows the example for Preselect value with Virtualization.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-preselect/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/virtual-scroll-preselect/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/virtual-scroll-preselect/src/main.ts %}
 {% endhighlight %}

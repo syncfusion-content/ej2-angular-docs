@@ -169,9 +169,7 @@ The following example shows a default Stepper component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/getting-started-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
@@ -190,9 +188,7 @@ You can define the step icon and label by setting the `iconCss` and `label` prop
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/iconWithLabel/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/iconWithLabel/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/iconWithLabel/src/main.ts %}
 {% endhighlight %}

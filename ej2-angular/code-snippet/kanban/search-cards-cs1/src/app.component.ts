@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -7,6 +12,14 @@ import { Query } from '@syncfusion/ej2-data';
 import { kanbanData } from './datasource';
 
 @Component({
+imports: [
+        
+        KanbanModule,
+        TextBoxModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<table>
                 <tbody>

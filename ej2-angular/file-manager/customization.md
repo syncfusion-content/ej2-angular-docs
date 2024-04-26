@@ -30,9 +30,7 @@ The context menu settings like, items to be displayed on files, folders and layo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/context-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/context-menu-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/context-menu-cs1/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ The details view settings like, column width, header text, template for each fie
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/detailsview-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/detailsview-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/detailsview-cs1/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +62,7 @@ The navigation pane settings like, minimum and maximum width and visibility can 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/navigationpane-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/navigationpane-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/navigationpane-cs1/src/main.ts %}
 {% endhighlight %}
@@ -86,9 +80,7 @@ In File Manager [fileLoad](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/fileextension-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/fileextension-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/fileextension-cs1/src/main.ts %}
 {% endhighlight %}
@@ -104,9 +96,7 @@ The File Manager provides support to show/hide the hidden items by enabling/disa
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/hiddenitems-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/hiddenitems-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/hiddenitems-cs1/src/main.ts %}
 {% endhighlight %}
@@ -122,9 +112,7 @@ The thumbnail images are displayed in the File Manager's large icons view by def
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/disablethumbnail-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/disablethumbnail-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/disablethumbnail-cs1/src/main.ts %}
 {% endhighlight %}
@@ -140,9 +128,7 @@ The toolbar settings like, items to be displayed in toolbar and visibility can b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/toolbar-customize-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/toolbar-customize-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/toolbar-customize-cs1/src/main.ts %}
 {% endhighlight %}
@@ -162,9 +148,7 @@ The upload settings like, minimum and maximum file size and enabling auto upload
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/upload-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/upload-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/upload-cs1/src/main.ts %}
 {% endhighlight %}
@@ -180,9 +164,7 @@ The tooltip value can be customized by adding extra content to the title of the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/tooltip-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/tooltip-cs1/src/main.ts %}
 {% endhighlight %}

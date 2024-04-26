@@ -21,9 +21,7 @@ Hilo series requires 3 fields (x, high and low) to show the high and low price i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/hilo-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/hilo-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/hilo-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ The following properties can be used to customize the `hilo` series.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/hilo-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/hilo-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/hilo-cs/src/main.ts %}
 {% endhighlight %}

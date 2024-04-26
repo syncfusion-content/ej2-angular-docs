@@ -1,7 +1,16 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { tempData, virtualData } from './data';
 @Component({
+imports: [
+         GanttModule
+    ],
+
+standalone: true,
     selector: 'app-root',
     template:
         `<ejs-gantt id="ganttDefault" height="450px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]="1"

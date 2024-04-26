@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+
 
 
 
@@ -13,6 +17,13 @@ import { ImageService, MarkdownEditorService } from '@syncfusion/ej2-angular-ric
 import { createElement, KeyboardEventArgs, isNullOrUndefined } from '@syncfusion/ej2-base';
 import * as Marked from 'marked';
     @Component({
+imports: [
+        
+        RichTextEditorAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-richtexteditor id='mdPreview' #mdPreview [toolbarSettings]='tools' [editorMode]='mode' (created)='onCreate()' (actionComplete)="actionComplete($event)">
         <ng-template #valueTemplate>

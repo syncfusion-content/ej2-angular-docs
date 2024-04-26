@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 
@@ -8,6 +12,13 @@ import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
 
 @Component({
+imports: [
+        
+        TimePickerModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-timepicker placeholder='Select a time' ></ejs-timepicker>`
 })

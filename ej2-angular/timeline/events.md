@@ -20,9 +20,7 @@ The Timeline component triggers the [created](../api/timeline#created) event whe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/events/created/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timeline/events/created/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/events/created/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ The Timeline component triggers the [beforeItemRender](../api/timeline#beforeite
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/events/beforeItemRender/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timeline/events/beforeItemRender/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/events/beforeItemRender/src/main.ts %}
 {% endhighlight %}

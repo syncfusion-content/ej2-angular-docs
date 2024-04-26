@@ -19,9 +19,7 @@ Now, the value that is in checked state will be sent on form submit.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button-group/default-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button-group/default-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button-group/default-cs7/src/main.ts %}
 {% endhighlight %}

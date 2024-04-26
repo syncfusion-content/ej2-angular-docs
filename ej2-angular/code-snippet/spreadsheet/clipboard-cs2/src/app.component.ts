@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DropDownButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -9,6 +14,14 @@ import { ItemModel, MenuEventArgs } from '@syncfusion/ej2-angular-splitbuttons';
 enableRipple(true);
 
 @Component({
+imports: [
+        
+        DropDownButtonModule,
+        SpreadsheetAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<button ejs-dropdownbutton [items]='items' content='Clipboard' (select)='itemSelect($event)'></button>
     <ejs-spreadsheet #spreadsheet (created)="created()" (actionBegin)="actionBeginHandler($event)" [enableClipboard]="true">

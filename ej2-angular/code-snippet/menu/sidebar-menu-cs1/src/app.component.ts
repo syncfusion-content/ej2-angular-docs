@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SidebarModule, AccordionModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -8,6 +12,10 @@ import { SidebarComponent, AccordionComponent, ExpandEventArgs, AccordionClickAr
 enableRipple(true);
 
 @Component({
+imports: [ SidebarModule, AccordionModule],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
             <div class="header">

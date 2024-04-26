@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        
+        FormsModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="wrap">
                 <div class="e-float-input e-input-group e-success">

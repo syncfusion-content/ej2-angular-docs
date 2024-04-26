@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { loadCldr,L10n } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+         NumericTextBoxModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the DropDownList component with change event
     // sets `German` culture using the culture value 'de'

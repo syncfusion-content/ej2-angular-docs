@@ -17,9 +17,7 @@ The dialog can be positioned inside the target based on the given X and Y values
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/dlg-position-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dlg-position-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/dlg-position-cs1/src/main.ts %}
 {% endhighlight %}

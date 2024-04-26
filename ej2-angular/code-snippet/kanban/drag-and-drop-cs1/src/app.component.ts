@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
+
 
 
 
@@ -6,6 +10,13 @@ import { CardSettingsModel } from '@syncfusion/ej2-angular-kanban';
 import { kanbanData } from './datasource';
 
 @Component({
+imports: [
+        
+        KanbanModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<ejs-kanban keyField='Status' [dataSource]='data' [cardSettings]='cardSettings' [allowDragAndDrop]='allowDragAndDrop'>
                 <e-columns>

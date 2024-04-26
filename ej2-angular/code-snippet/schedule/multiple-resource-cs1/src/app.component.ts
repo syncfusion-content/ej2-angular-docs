@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component } from '@angular/core';
@@ -7,6 +13,19 @@ import {
 import { resourceData } from './datasource';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        RadioButtonModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService],
+standalone: true,
     selector: "app-root",
     providers: [WeekService, MonthService, AgendaService, TimelineViewsService, TimelineMonthService],
     // specifies the template string for the Schedule component

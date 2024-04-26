@@ -24,9 +24,7 @@ Here's an example of how to enable drag and drop within the Grid:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/dragndrop-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dragndrop-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/dragndrop-cs3/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ Here's an example code snippet that demonstrates how to enable Row drag and drop
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/dragndrop-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dragndrop-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/dragndrop-cs1/src/main.ts %}
 {% endhighlight %}
@@ -69,9 +65,7 @@ In the below example, the selected grid row is dragged and dropped in to the Tre
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/dragndrop-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dragndrop-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/dragndrop-cs5/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +87,7 @@ Here's an example of how to hide the drag and drop icon in the Syncfusion Grid:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/dragndrop-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dragndrop-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/dragndrop-cs2/src/main.ts %}
 {% endhighlight %}
@@ -122,9 +114,7 @@ The Grid component provides a set of events that are triggered during drag and d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/dragndrop-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dragndrop-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/dragndrop-cs6/src/main.ts %}
 {% endhighlight %}

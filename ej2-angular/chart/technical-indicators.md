@@ -26,9 +26,7 @@ To calculate the signal line [`volume`](https://ej2.syncfusion.com/angular/docum
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/ad-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/ad-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/ad-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ ATR measures the stock volatility by comparing the current value with the previo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/atr-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/atr-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/atr-cs1/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ Bollinger band will be represented by three lines (upperLine, lowerLine, signalL
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/bollinger-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/bollinger-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/bollinger-cs1/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ Bollinger band will be represented by three lines (upperLine, lowerLine, signalL
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/bollinger-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/bollinger-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/bollinger-cs2/src/main.ts %}
 {% endhighlight %}
@@ -100,9 +92,7 @@ Moving average Indicators are used to define the direction of the trend. To rend
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/ema-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/ema-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/ema-cs1/src/main.ts %}
 {% endhighlight %}
@@ -118,9 +108,7 @@ Momentum shows the speed at which the price of the stock is changing. To render 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/momentum-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/momentum-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/momentum-cs1/src/main.ts %}
 {% endhighlight %}
@@ -136,9 +124,7 @@ Momentum shows the speed at which the price of the stock is changing. To render 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/momentum-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/momentum-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/momentum-cs2/src/main.ts %}
 {% endhighlight %}
@@ -154,9 +140,7 @@ MACD is based on the difference between two EMA's. To render a MACD Indicator, u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/macd-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/macd-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/macd-cs1/src/main.ts %}
 {% endhighlight %}
@@ -172,9 +156,7 @@ MACD is based on the difference between two EMA's. To render a MACD Indicator, u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/macd-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/macd-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/macd-cs2/src/main.ts %}
 {% endhighlight %}
@@ -190,9 +172,7 @@ RSI shows how strongly a stock is moving in its current direction. To render a R
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/rsi-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/rsi-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/rsi-cs1/src/main.ts %}
 {% endhighlight %}
@@ -208,9 +188,7 @@ Moving average Indicators are used to define the direction of the trend. To rend
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/sma-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/sma-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/sma-cs1/src/main.ts %}
 {% endhighlight %}
@@ -228,9 +206,7 @@ In stochastic indicator the upperBand value and lowerBand value is customized by
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/stochastic-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/stochastic-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/stochastic-cs1/src/main.ts %}
 {% endhighlight %}
@@ -246,9 +222,7 @@ In stochastic indicator the upperBand value and lowerBand value is customized by
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/stochastic-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/stochastic-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/stochastic-cs2/src/main.ts %}
 {% endhighlight %}
@@ -264,9 +238,7 @@ Moving average indicators are used to define the direction of the trend. To rend
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/tma-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/tma-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/tma-cs1/src/main.ts %}
 {% endhighlight %}
@@ -282,9 +254,7 @@ Moving average indicators are used to define the direction of the trend. To rend
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/sma-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/sma-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/sma-cs2/src/main.ts %}
 {% endhighlight %}
@@ -302,9 +272,7 @@ Technical indicators can also be added without series using [`dataSource`](https
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/technical-indicators/sma-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/technical-indicators/sma-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/technical-indicators/sma-cs3/src/main.ts %}
 {% endhighlight %}

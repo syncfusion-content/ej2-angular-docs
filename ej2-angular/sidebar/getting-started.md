@@ -178,9 +178,7 @@ The following samples shows the sidebar component in browser.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sidebar/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sidebar/getting-started-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sidebar/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
@@ -201,9 +199,7 @@ N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sidebar/showBackDrop-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sidebar/showBackDrop-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sidebar/showBackDrop-cs1/src/main.ts %}
 {% endhighlight %}
@@ -221,9 +217,7 @@ Positioning the Sidebar to the right or left of the main content can be achieved
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sidebar/position-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sidebar/position-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sidebar/position-cs1/src/main.ts %}
 {% endhighlight %}
@@ -239,9 +233,7 @@ Animation transitions can be set while expanding or collapsing the Sidebar using
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sidebar/animate-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sidebar/animate-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sidebar/animate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -257,9 +249,7 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sidebar/document-click-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sidebar/document-click-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sidebar/document-click-cs1/src/main.ts %}
 {% endhighlight %}
@@ -275,9 +265,7 @@ Expand or collapse the Sidebar while swiping in touch devices using [`enableGest
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sidebar/gestures-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sidebar/gestures-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sidebar/gestures-cs1/src/main.ts %}
 {% endhighlight %}

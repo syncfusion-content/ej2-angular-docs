@@ -1,9 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule, StockChartAllModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
+import { DateTimeService, CandleSeriesService, LegendService, CategoryService, LineSeriesService} from '@syncfusion/ej2-angular-charts'
+import { TooltipService} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { chartData } from './datasource';
 
 @Component({
+imports: [
+         ChartModule, StockChartAllModule, ChartAllModule
+    ],
+
+providers: [ TooltipService, DateTimeService, CandleSeriesService, LegendService, CategoryService, LineSeriesService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-stockchart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryXAxis' [title]='title' [titleStyle]='titleStyle'>
         <e-stockchart-series-collection>

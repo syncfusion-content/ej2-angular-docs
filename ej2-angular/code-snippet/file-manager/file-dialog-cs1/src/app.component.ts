@@ -1,3 +1,10 @@
+import { BrowserModule } from '@angular/platform-browser'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { ButtonModule, CheckBoxModule   } from '@syncfusion/ej2-angular-buttons'
+import { NgModule } from '@angular/core'
+import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService  } from '@syncfusion/ej2-angular-filemanager'
+
 
 
 
@@ -8,6 +15,10 @@ import { FileManagerComponent, FileOpenEventArgs } from '@syncfusion/ej2-angular
 import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [FileManagerModule,  UploaderModule , DialogModule, ButtonModule, CheckBoxModule ],
+
+providers:[ NavigationPaneService, ToolbarService, DetailsViewService],
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: `<div class="sample-container">

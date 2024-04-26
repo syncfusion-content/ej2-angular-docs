@@ -16,9 +16,7 @@ Document Editor supports common raster format images like PNG, BMP, JPEG, SVG an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/link-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/link-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/link-cs1/src/main.ts %}
 {% endhighlight %}

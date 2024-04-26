@@ -1,8 +1,16 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RibbonModule, RibbonBackstageService, RibbonKeyTipService } from '@syncfusion/ej2-angular-ribbon'
+
 import { Component, ViewChild } from "@angular/core";
 import { RibbonButtonSettingsModel, BackStageMenuModel, BackstageItemModel, RibbonSplitButtonSettingsModel, RibbonComponent } from '@syncfusion/ej2-angular-ribbon';
 
 
 @Component({
+imports: [ RibbonModule],
+
+providers: [ RibbonBackstageService, RibbonKeyTipService ],
+standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html'
 })

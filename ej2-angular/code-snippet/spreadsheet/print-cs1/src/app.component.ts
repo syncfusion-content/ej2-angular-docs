@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DropDownButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
+
 
 
 import { Component, OnInit,ViewChild } from '@angular/core';
@@ -7,6 +12,14 @@ import { ItemModel, MenuEventArgs } from '@syncfusion/ej2-angular-splitbuttons';
 import { getComponent, print } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        DropDownButtonModule,
+        SpreadsheetAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<button ejs-dropdownbutton [items]='items' content='Print' (select)='itemSelect($event)'></button>
     <ejs-spreadsheet #spreadsheet id="spreadsheet" (created)="created()" (dataBound)="dataBound()">

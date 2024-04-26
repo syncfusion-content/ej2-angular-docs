@@ -19,9 +19,7 @@ You can pass array of ID of elements or element to this method. By default it ta
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs1/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ The optional parameters for this method are,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs2/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ In the export method, specify the following parameters to add a header and foote
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs20/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs20/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs20/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ During PDF export, set the `exportToMultiplePage` parameter to **true** to expor
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs21/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs21/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs21/src/main.ts %}
 {% endhighlight %}
@@ -102,9 +94,7 @@ Initially, render more than one chart to export, and then add button to export t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/add-series-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/add-series-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/add-series-cs1/src/main.ts %}
 {% endhighlight %}
@@ -120,9 +110,7 @@ The chart can be exported as an image in the form of a base64 string by utilizin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/export-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/export-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/export-cs1/src/main.ts %}
 {% endhighlight %}

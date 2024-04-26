@@ -22,9 +22,7 @@ You can check this video to learn about Filtering feature in Angular TreeGrid.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs9/src/main.ts %}
 {% endhighlight %}
@@ -52,9 +50,7 @@ The below are the type of filter mode available in TreeGrid.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs10/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +66,7 @@ To apply the filter at initial rendering, set the filter `predicate` object in [
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs11/src/main.ts %}
 {% endhighlight %}
@@ -110,9 +104,7 @@ In the following sample, type **aero** in `Name` column to filter diacritic char
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs12/src/main.ts %}
 {% endhighlight %}

@@ -41,9 +41,7 @@ The default overflow mode of the Toolbar is `Scrollable`. Scrollable display mod
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs7/src/main.ts %}
 {% endhighlight %}
@@ -81,9 +79,7 @@ If primary priority commands also exceed available space, they are moved to the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs8/src/main.ts %}
 {% endhighlight %}
@@ -111,9 +107,7 @@ In the following code sample, text is only visible in the popup container and no
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs9/src/main.ts %}
 {% endhighlight %}
@@ -132,9 +126,7 @@ By default, the toolbar renders with a minimum height to render items properly. 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/minimum-height-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/minimum-height-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toolbar/minimum-height-cs1/src/main.ts %}
 {% endhighlight %}

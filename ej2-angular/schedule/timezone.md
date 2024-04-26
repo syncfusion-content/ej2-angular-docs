@@ -28,9 +28,7 @@ The following code example displays an appointment from 9.00 AM to 10.00 AM when
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs66/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs66/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs66/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ When a time zone is set to Scheduler through `timezone` property, the appointmen
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs67/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs67/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs67/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ Setting `timezone` to UTC for Scheduler will display the appointments on same ti
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs68/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs68/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs68/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ It is possible to set different timezone for Scheduler events by setting `startT
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs69/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs69/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs69/src/main.ts %}
 {% endhighlight %}
@@ -100,9 +92,7 @@ Instead of displaying all the timezone names within the timezone collection (mor
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs70/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs70/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs70/src/main.ts %}
 {% endhighlight %}

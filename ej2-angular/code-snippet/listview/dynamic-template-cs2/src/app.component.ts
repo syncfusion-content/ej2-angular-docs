@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+
 
 
 
@@ -5,6 +9,13 @@ import { Component} from '@angular/core';
 import { Browser } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        ListViewModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `<ejs-listview id='List' [dataSource]='dataSource' [template]='templatecheck ? mob_template : win_template' headerTitle='Syncfusion Blog' [showHeader]='true'>
         <ng-template #mob_template let-dataSource="">

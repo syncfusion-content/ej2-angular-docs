@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
+import { FunnelSeriesService, AccumulationTooltipService, CategoryService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
+
 
 
 
@@ -5,6 +10,12 @@ import { Component, OnInit } from '@angular/core';
 import { funnelData } from './datasource';
 import { IAccTextRenderEventArgs, IAccPointRenderEventArgs } from '@syncfusion/ej2-charts';
 @Component({
+imports: [
+         AccumulationChartModule
+    ],
+
+providers: [FunnelSeriesService, AccumulationTooltipService, CategoryService, AccumulationDataLabelService ],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-accumulationchart id="chart-container" (pointRender)="onPointRender($event)">
         <e-accumulation-series-collection>

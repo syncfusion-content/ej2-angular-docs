@@ -204,9 +204,7 @@ Since the JSON contains datetime data, set the [`valueType`](https://ej2.syncfus
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/getting-started/datasource-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/getting-started/datasource-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/getting-started/datasource-cs1/src/main.ts %}
 {% endhighlight %}
@@ -222,9 +220,7 @@ You can add a title using [`title`](https://ej2.syncfusion.com/angular/documenta
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/getting-started/title-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/getting-started/title-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/getting-started/title-cs1/src/main.ts %}
 {% endhighlight %}
@@ -242,9 +238,7 @@ Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/getting-started/crosshair-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/getting-started/crosshair-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/getting-started/crosshair-cs1/src/main.ts %}
 {% endhighlight %}
@@ -262,9 +256,7 @@ Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/getting-started/trackball-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/getting-started/trackball-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/getting-started/trackball-cs1/src/main.ts %}
 {% endhighlight %}

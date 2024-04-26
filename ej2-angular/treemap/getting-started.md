@@ -115,9 +115,7 @@ This section explains how to render a TreeMap with a data source. In this exampl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs15/src/main.ts %}
 {% endhighlight %}
@@ -144,9 +142,7 @@ The color mapping feature supports customization of item colors based on the und
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs16/src/main.ts %}
 {% endhighlight %}
@@ -162,9 +158,7 @@ You can show legend for the TreeMap by setting true to the [visible](https://ej2
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs56/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs56/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs56/src/main.ts %}
 {% endhighlight %}
@@ -180,9 +174,7 @@ Labels can be added to show additional information of the items in TreeMap. By d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs57/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs57/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs57/src/main.ts %}
 {% endhighlight %}
@@ -198,9 +190,7 @@ The tooltip is useful when labels cannot display information by using due to spa
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs58/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs58/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs58/src/main.ts %}
 {% endhighlight %}

@@ -165,9 +165,7 @@ The following example illustrates the output in your browser
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/getting-started-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/getting-started-cs7/src/main.ts %}
 {% endhighlight %}
@@ -185,9 +183,7 @@ The below example demonstrates the DatePicker with current date as selected one.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/getting-started-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/getting-started-cs8/src/main.ts %}
 {% endhighlight %}
@@ -205,9 +201,7 @@ The below example demonstrates the DatePicker to select a date within a range fr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/getting-started-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/getting-started-cs9/src/main.ts %}
 {% endhighlight %}

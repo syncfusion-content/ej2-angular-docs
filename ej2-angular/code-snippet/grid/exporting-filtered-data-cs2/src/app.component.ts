@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, FreezeService, SelectionService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -8,6 +12,13 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import {DataManager} from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [FreezeService, SelectionService],
+standalone: true,
   selector: 'app-root',
   template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions'
    [allowFiltering]='true' [allowPaging]='true' [pageSettings]='initialPage' [allowPdfExport]='true'

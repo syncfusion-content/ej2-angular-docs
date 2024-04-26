@@ -24,9 +24,7 @@ by adding custom class or directly selecting the avatar class from the CSS.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/color-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/color-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/avatar/color-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ designed in such a way that the width and height will be relative to font-size. 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/custom-size-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/custom-size-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/avatar/custom-size-cs1/src/main.ts %}
 {% endhighlight %}
@@ -63,9 +59,7 @@ etc. Some of them are given below.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/media-formats-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/media-formats-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/avatar/media-formats-cs1/src/main.ts %}
 {% endhighlight %}
@@ -84,9 +78,7 @@ data-source from the server or remote data or AJAX. We have also rendered the av
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/angular-avatar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/angular-avatar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/avatar/angular-avatar-cs1/src/main.ts %}
 {% endhighlight %}
@@ -108,9 +100,7 @@ used to match the size of the list item. Letters and images are also used as ava
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/listview-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/listview-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/avatar/listview-cs1/src/main.ts %}
 {% endhighlight %}
@@ -128,9 +118,7 @@ badges (.`e-badge-notification`) in the following sample.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/badge-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/badge-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/avatar/badge-cs1/src/main.ts %}
 {% endhighlight %}

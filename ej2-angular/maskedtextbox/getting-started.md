@@ -183,9 +183,7 @@ The following example illustrates the output in your browser.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maskedtextbox/getting-started-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
@@ -202,9 +200,7 @@ The following example demonstrates two-way binding functionality with the Masked
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maskedtextbox/getting-started-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
@@ -228,9 +224,7 @@ The following example demonstrates how to use the reactive forms.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maskedtextbox/reactive-forms-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maskedtextbox/reactive-forms-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maskedtextbox/reactive-forms-cs1/src/main.ts %}
 {% endhighlight %}

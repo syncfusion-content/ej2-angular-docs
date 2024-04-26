@@ -20,9 +20,7 @@ In the ListView component, template support is being used. In some cases, the co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/dynamic-template-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/dynamic-template-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/dynamic-template-cs2/src/main.ts %}
 {% endhighlight %}

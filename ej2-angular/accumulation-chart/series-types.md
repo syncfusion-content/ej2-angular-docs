@@ -20,9 +20,7 @@ To render a pyramid series, use series [`type`](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pyramid-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pyramid-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pyramid-cs7/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ To render a funnel series, use series [`type`](https://ej2.syncfusion.com/angula
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/funnel-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/funnel-cs8/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ Accumulation chart provides options to customize the size of the funnel or pyram
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/funnel-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/funnel-cs9/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +70,7 @@ The funnel neck size can be customized by using the `neckWidth` and `neckHeight`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/funnel-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/funnel-cs10/src/main.ts %}
 {% endhighlight %}
@@ -95,9 +87,7 @@ it is applicable for pyramid and funnel chart. It ranges from 0 to 1.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/funnel-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/funnel-cs11/src/main.ts %}
 {% endhighlight %}
@@ -113,9 +103,7 @@ Pyramid chart supports linear and surface modes of rendering. The default `pyram
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pyramid-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pyramid-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pyramid-cs8/src/main.ts %}
 {% endhighlight %}

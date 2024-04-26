@@ -173,9 +173,7 @@ The following samples shows the file manager component in browser.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/getting-started-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/getting-started-cs3/src/main.ts %}
 {% endhighlight %}

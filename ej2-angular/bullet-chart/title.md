@@ -19,9 +19,7 @@ The title of the Bullet Chart displays the information about the data plotted by
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs26/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs26/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs26/src/main.ts %}
 {% endhighlight %}
@@ -37,9 +35,7 @@ To show additional information about the data plotted, the Bullet Chart can also
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs27/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs27/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs27/src/main.ts %}
 {% endhighlight %}
@@ -59,9 +55,7 @@ By setting the [`titlePosition`](https://ej2.syncfusion.com/angular/documentatio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs28/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs28/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs28/src/main.ts %}
 {% endhighlight %}
@@ -77,9 +71,7 @@ By setting the [`titlePosition`](https://ej2.syncfusion.com/angular/documentatio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs29/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs29/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs29/src/main.ts %}
 {% endhighlight %}
@@ -95,9 +87,7 @@ By setting the [`titlePosition`](https://ej2.syncfusion.com/angular/documentatio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs30/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs30/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs30/src/main.ts %}
 {% endhighlight %}
@@ -113,9 +103,7 @@ By setting the [`titlePosition`](https://ej2.syncfusion.com/angular/documentatio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs31/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs31/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs31/src/main.ts %}
 {% endhighlight %}
@@ -131,9 +119,7 @@ The title color, opacity, font size, font family, font weight, and font style ca
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs32/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs32/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs32/src/main.ts %}
 {% endhighlight %}
@@ -149,9 +135,7 @@ The sub-title color, opacity, font size, font family, font weight, and font styl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs33/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs33/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs33/src/main.ts %}
 {% endhighlight %}

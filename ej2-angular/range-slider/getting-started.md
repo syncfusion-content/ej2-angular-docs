@@ -164,9 +164,7 @@ The below example shows a basic `Slider` example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/getting-started-01-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/getting-started-01-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/getting-started-01-cs1/src/main.ts %}
 {% endhighlight %}
@@ -191,9 +189,7 @@ In Min-Range Slider, a shadow is considered from the start value to current hand
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/getting-started-02-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/getting-started-02-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/getting-started-02-cs1/src/main.ts %}
 {% endhighlight %}
@@ -211,9 +207,7 @@ The Slider can be displayed, either in horizontal or vertical orientation. By de
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/getting-started-03-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/getting-started-03-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/getting-started-03-cs1/src/main.ts %}
 {% endhighlight %}
@@ -229,9 +223,7 @@ The Slider displays the tooltip to indicate the current value by clicking the Sl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/getting-started-04-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/getting-started-04-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/getting-started-04-cs1/src/main.ts %}
 {% endhighlight %}
@@ -250,9 +242,7 @@ and not to the button.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/getting-started-05-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/getting-started-05-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/getting-started-05-cs1/src/main.ts %}
 {% endhighlight %}

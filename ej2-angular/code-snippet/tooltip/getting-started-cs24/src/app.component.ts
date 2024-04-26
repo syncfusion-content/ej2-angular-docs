@@ -1,9 +1,22 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { TooltipComponent, TooltipEventArgs } from '@syncfusion/ej2-angular-popups';
 
 @Component({
+imports: [
+        
+        TooltipModule,
+        ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
     <h3> Transition effect </h3>

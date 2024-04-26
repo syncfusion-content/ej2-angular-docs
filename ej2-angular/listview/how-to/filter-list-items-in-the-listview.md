@@ -22,9 +22,7 @@ The filtered data can be displayed in the ListView component depending upon on u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/getting-started-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/getting-started-cs6/src/main.ts %}
 {% endhighlight %}

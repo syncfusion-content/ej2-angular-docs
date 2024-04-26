@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { GridComponent, InfiniteScrollService } from '@syncfusion/ej2-angular-grids';
@@ -23,6 +28,15 @@ const data = (count: any) => {
 };
 
 @Component({
+imports: [
+        
+        GridModule,
+        DropDownListModule 
+        
+        ],
+
+providers: [PageService, ToolbarService, EditService],
+standalone: true,
     selector: 'app-root',
     template: `
            <div style="display: flex">

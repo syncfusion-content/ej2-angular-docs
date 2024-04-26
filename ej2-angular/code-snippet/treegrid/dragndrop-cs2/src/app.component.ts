@@ -1,9 +1,24 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule,PageService, SelectionService, RowDDService } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 import { Component, ViewChild, OnInit, ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        TreeGridAllModule
+        ButtonModule,
+        DropDownListAllModule
+    ],
+
+providers: [PageService, SelectionService, RowDDService],
+standalone: true,
   selector: 'app-container',
   encapsulation: ViewEncapsulation.None,
   template: `<ejs-treegrid #treegrid id='TreeGrid'  [dataSource]='sourceData' childMapping='subtasks'  [allowPaging]="true" [pageSettings]="true" [allowSelection]="true" [allowRowDragAndDrop]="true" 

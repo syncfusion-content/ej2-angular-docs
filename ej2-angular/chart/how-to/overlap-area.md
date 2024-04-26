@@ -16,9 +16,7 @@ You can add a new range area series to show the overlapped area in different col
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/how-to-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/how-to-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/how-to-cs14/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { ToolbarService, ExcelExportService, GroupService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -6,6 +12,16 @@ import { GridComponent, ExcelQueryCellInfoEventArgs } from '@syncfusion/ej2-angu
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
+imports: [
+        
+        ButtonModule,
+        GridModule
+    ],
+
+providers: [ToolbarService,
+        ExcelExportService,
+        GroupService,],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id="ColumnTemplateGrid" [dataSource]="data" [toolbar]="toolbar" (toolbarClick)="toolbarClick($event)"
                [allowExcelExport]="true" (excelQueryCellInfo)="excelQueryCellInfo($event)" height='273px'>

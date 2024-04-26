@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule, View, DayService, WeekService, WorkWeekService, MonthService, AgendaService } from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
@@ -8,6 +12,13 @@ import {
 import { defaultData } from './datasource';
 
 @Component({
+imports: [
+        
+        ScheduleModule
+    ],
+
+providers: [View, DayService, WeekService, WorkWeekService, MonthService, AgendaService],
+standalone: true,
   selector: 'app-root',
   providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, ResizeService, DragAndDropService],
   // specifies the template string for the Schedule component

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import {  ToolbarService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -8,6 +13,12 @@ import { ToolbarItem, EditSettingsModel, SelectionSettingsModel } from '@syncfus
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [ToolbarService, EditService, SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
         `<ejs-gantt #gantt id="ganttDefault" [dataSource]="data" [resources]="resources" [taskFields]="taskSettings"

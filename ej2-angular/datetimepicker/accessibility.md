@@ -114,9 +114,7 @@ Use the below list of shortcut keys to interact with the TimePicker after the Ti
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datetimepicker/accessibility-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs1/src/main.ts %}
 {% endhighlight %}

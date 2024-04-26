@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule, HierarchicalTreeService, DataBindingService } from '@syncfusion/ej2-angular-diagrams'
+
 
 
 import { Component, OnInit, ViewChild } from "@angular/core";
@@ -17,6 +21,12 @@ export interface EmployeeInfo {
 }
 
 @Component({
+imports: [
+         DiagramModule
+    ],
+
+providers: [ HierarchicalTreeService, DataBindingService ],
+standalone: true,
   selector: "app-container",
   template: `<ejs-diagram id="diagram" width="100%" height="580px" [layout]='layout' [dataSourceSettings]='dataSourceSettings' [getNodeDefaults]='nodeDefaults' [getConnectorDefaults]='connectorDefaults'>
 </ejs-diagram>`

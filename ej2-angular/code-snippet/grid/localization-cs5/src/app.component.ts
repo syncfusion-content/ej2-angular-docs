@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, GroupService, PageService, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+
 import { L10n } from '@syncfusion/ej2-base';
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
@@ -7,6 +11,13 @@ import frFRLocalization from './locale.json';
 L10n.load(frFRLocalization);
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [GroupService, PageService, EditService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [locale]='locale' [allowGrouping]='true' [allowPaging]='true'
              [pageSettings]='pageOptions' [editSettings]='editSettings' [toolbar]='toolbar' height='220px'>

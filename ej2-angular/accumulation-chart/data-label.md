@@ -16,9 +16,7 @@ Data label can be added to a chart series by enabling the [`visible`](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs3/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ Accumulation chart provides support for placing the data label either `inside` o
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs4/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ Using `angle` property, you can rotate the data label by its given angle.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs5/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +68,7 @@ Data labels will be arranged smartly without overlapping with each other. You ca
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs6/src/main.ts %}
 {% endhighlight %}
@@ -92,9 +84,7 @@ Data label for the accumulation chart can be formatted using [`format`](https://
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs7/src/main.ts %}
 {% endhighlight %}
@@ -167,9 +157,7 @@ Label content can be formatted by using the template option. Inside the template
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs8/src/main.ts %}
 {% endhighlight %}
@@ -186,9 +174,7 @@ The connector line can be customized using the `type`, `color`, `width`, `length
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs9/src/main.ts %}
 {% endhighlight %}
@@ -204,9 +190,7 @@ The fill color and the text in the data source can be mapped to the chart using 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pie-cs6/src/main.ts %}
 {% endhighlight %}
@@ -222,9 +206,7 @@ Individual text can be customized using the `textRender` event.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs10/src/main.ts %}
 {% endhighlight %}
@@ -240,9 +222,7 @@ When the data label text exceeds the container, the text can be wrapped by using
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs13/src/main.ts %}
 {% endhighlight %}
@@ -262,9 +242,7 @@ You can customize the data label of pie chart using [textRender](https://ej2.syn
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs11/src/main.ts %}
 {% endhighlight %}
@@ -280,9 +258,7 @@ You can display the percentage values in data label of pie chart using `template
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/smartlabel-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/smartlabel-cs12/src/main.ts %}
 {% endhighlight %}

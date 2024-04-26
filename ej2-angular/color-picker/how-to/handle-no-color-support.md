@@ -22,9 +22,7 @@ In the following sample, the first tile of the color palette represents the no c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/colorpicker/no-color/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/colorpicker/no-color/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/colorpicker/no-color/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ The following sample show the color palette with custom no color option.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/colorpicker/no-color/custom-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/colorpicker/no-color/custom-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/colorpicker/no-color/custom-cs1/src/main.ts %}
 {% endhighlight %}

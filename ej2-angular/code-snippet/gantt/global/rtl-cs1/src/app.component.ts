@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+
 
 import { L10n, loadCldr, setCulture } from '@syncfusion/ej2-base';
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
@@ -108,6 +112,11 @@ L10n.load({
     }
 });
 @Component({
+imports: [
+         GanttModule
+    ],
+
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" locale="ar-AE" [enableRtl]='true' [toolbar]="toolbar"></ejs-gantt>`,

@@ -18,9 +18,7 @@ To render a box and whisker chart, use series[`type`](https://ej2.syncfusion.com
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/box-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/box-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/box-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ To render a box and whisker chart, use series[`type`](https://ej2.syncfusion.com
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/box-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/box-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/box-cs2/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ In Box and Whisker series `showMean` property is used to show the box and whiske
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/box-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/box-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/box-cs3/src/main.ts %}
 {% endhighlight %}

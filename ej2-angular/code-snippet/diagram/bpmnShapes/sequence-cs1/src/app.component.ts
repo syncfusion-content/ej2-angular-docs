@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule, BpmnDiagramsService } from '@syncfusion/ej2-angular-diagrams'
+
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { DiagramComponent, BpmnFlowModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
+imports: [
+         DiagramModule
+    ],
+
+providers: [BpmnDiagramsService],
+standalone: true,
     selector: "app-container",
     template: `<ejs-diagram id="diagram" width="100%" height="580px" [constraints]='diagramConstraints'>
         <e-connectors>

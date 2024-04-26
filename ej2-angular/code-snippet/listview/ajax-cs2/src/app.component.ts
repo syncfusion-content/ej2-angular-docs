@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+
 
 
 
@@ -6,6 +10,13 @@ import { ListViewComponent } from '@syncfusion/ej2-angular-lists';
 import { Ajax } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        ListViewModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
           <ejs-listview id='List' [dataSource]='data' [fields]='fields' showHeader='true' headerTitle='Settings' [template]="listtemplate">

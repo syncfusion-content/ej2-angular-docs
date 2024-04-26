@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -8,6 +13,12 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { editingData } from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [ToolbarService, PdfExportService, SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
        `<p><b>First Gantt:</b></p>

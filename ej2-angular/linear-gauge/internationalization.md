@@ -25,9 +25,7 @@ The text in axis labels and tooltip can be displayed in the numeric format such 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/internationalization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/internationalization-cs1/src/main.ts %}
 {% endhighlight %}

@@ -185,9 +185,7 @@ The following example illustrates the output in your browser.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs11/src/main.ts %}
 {% endhighlight %}
@@ -207,9 +205,7 @@ In the following sample, popup list's width and height are configured.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs12/src/main.ts %}
 {% endhighlight %}
@@ -225,9 +221,7 @@ In DropDownList, the `value` property supports two-way binding functionality. Th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs13/src/main.ts %}
 {% endhighlight %}

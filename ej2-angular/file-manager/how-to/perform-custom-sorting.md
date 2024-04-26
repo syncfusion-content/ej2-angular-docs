@@ -20,9 +20,7 @@ The following example demonstrates how to define custom sort comparer function t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/custom-sorting-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/custom-sorting-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/custom-sorting-cs1/src/main.ts %}
 {% endhighlight %}

@@ -1,7 +1,17 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { Chart3DAllModule} from '@syncfusion/ej2-angular-charts'
+
 import { Component } from '@angular/core';
 import { Chart3DPointRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 
 @Component({
+imports: [
+         Chart3DAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     // specifies the template string for the Chart component
     template: `<ejs-chart3d #chart (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'

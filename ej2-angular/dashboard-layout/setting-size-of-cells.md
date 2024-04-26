@@ -26,9 +26,7 @@ The following sample demonstrates how to modify a cell size using the `columns` 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dashboard-layout/modifying-cell-size-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dashboard-layout/modifying-cell-size-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/modifying-cell-size-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ The following sample demonstrates the usage of the `cellSpacing` property, which
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dashboard-layout/setting-cell-spacing-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dashboard-layout/setting-cell-spacing-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/setting-cell-spacing-cs1/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +62,7 @@ In the following sample, the gridlines indicate the cells split-up of the layout
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dashboard-layout/graphical-representation-of-layout-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dashboard-layout/graphical-representation-of-layout-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/graphical-representation-of-layout-cs1/src/main.ts %}
 {% endhighlight %}
@@ -86,9 +80,7 @@ The following sample demonstrates Dashboard Layout in right-to-left direction.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dashboard-layout/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dashboard-layout/rtl-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/rtl-cs1/src/main.ts %}
 {% endhighlight %}

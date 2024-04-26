@@ -23,9 +23,7 @@ The Essential JS 2 Toast has the following predefined styles that can be defined
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toast/toast-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toast/toast-cs16/src/main.ts %}
 {% endhighlight %}

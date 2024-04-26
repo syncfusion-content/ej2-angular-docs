@@ -43,9 +43,7 @@ The following example demonstrates the usage of standard mask elements.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maskedtextbox/getting-started-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
@@ -67,9 +65,7 @@ In the following example, non-mask element `P` accepts the values `P, A, p, a` a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maskedtextbox/getting-started-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
@@ -88,9 +84,7 @@ In the following example, regular expression has been set for each input places.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maskedtextbox/regularExpression-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maskedtextbox/regularExpression-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maskedtextbox/regularExpression-cs1/src/main.ts %}
 {% endhighlight %}
@@ -109,9 +103,7 @@ The following example demonstrates the MaskedTextBox with customized prompt char
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maskedtextbox/getting-started-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maskedtextbox/getting-started-cs6/src/main.ts %}
 {% endhighlight %}

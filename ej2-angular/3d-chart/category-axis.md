@@ -16,9 +16,7 @@ The category axis is the horizontal axis of a 3D chart that shows text values ra
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/category-axis/category-axis-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/category-axis/category-axis-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/category-axis/category-axis-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ The range of the category axis can be customized using [`minimum`](https://ej2.s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/category-axis/category-axis-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/category-axis/category-axis-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/category-axis/category-axis-cs2/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ The category axis can also be rendered based on the index values of the data sou
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/category-axis/category-axis-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/category-axis/category-axis-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/category-axis/category-axis-cs3/src/main.ts %}
 {% endhighlight %}

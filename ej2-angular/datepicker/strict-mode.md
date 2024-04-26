@@ -24,9 +24,7 @@ The following example demonstrates the DatePicker with strictMode `true`.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/getting-started-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/getting-started-cs12/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ If you are entering out-of-range or invalid date value, then the model value wil
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/getting-started-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/getting-started-cs13/src/main.ts %}
 {% endhighlight %}

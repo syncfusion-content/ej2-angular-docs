@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -8,6 +12,13 @@ import { defaultData } from './datasource';
 enableRipple(true);
 
 @Component({
+imports: [
+        
+        SpreadsheetAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<div>
     <button class='e-btn' (click)='onclick()'>Change showFillOptions</button>

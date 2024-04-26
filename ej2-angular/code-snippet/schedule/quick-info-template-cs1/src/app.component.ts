@@ -1,3 +1,11 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { TextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
+import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component, ViewChild, ViewEncapsulation, Inject } from '@angular/core';
@@ -9,6 +17,21 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 import { scheduleData } from './datasource';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        DropDownListAllModule,
+        TextBoxAllModule,
+        ButtonAllModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService],
+standalone: true,
   selector: 'app-root',
 providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService],
   encapsulation: ViewEncapsulation.None,

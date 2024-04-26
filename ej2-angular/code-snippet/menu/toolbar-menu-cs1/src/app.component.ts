@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MenuModule, ToolbarModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -7,6 +11,10 @@ import { ToolbarComponent, MenuAnimationSettingsModel } from '@syncfusion/ej2-an
 enableRipple(true);
 
 @Component({
+imports: [ MenuModule, ToolbarModule],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
             <div class="control-section">

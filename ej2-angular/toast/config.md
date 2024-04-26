@@ -22,9 +22,7 @@ Toast can be created with the notification message. The message contains [`title
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toast/toast-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toast/toast-cs4/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +56,7 @@ Here below sample demonstrates the combination of `target`, `showCloseButton`, `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toast/toast-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toast/toast-cs5/src/main.ts %}
 {% endhighlight %}
@@ -83,9 +79,7 @@ Both width and height property allows setting pixels/numbers/percentage. The num
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toast/toast-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toast/toast-cs6/src/main.ts %}
 {% endhighlight %}

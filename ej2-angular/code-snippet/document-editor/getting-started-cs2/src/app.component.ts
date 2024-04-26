@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor'
+
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DocumentEditorComponent, EditorService, SelectionService, EditorHistoryService, BookmarkDialogService } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
+imports: [
+        
+        DocumentEditorAllModule
+    ],
+
+
+standalone: true,
       selector: "app-container",
       template: `<ejs-documenteditor #documenteditor_readonly height="330px" style="width:100%;display:block" (created)="onCreate()" (documentChange)="onDocumentChange()"  [isReadOnly]=false [enableEditor]=true ></ejs-documenteditor>`,
       encapsulation: ViewEncapsulation.None,

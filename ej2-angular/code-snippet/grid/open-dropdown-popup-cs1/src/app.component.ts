@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, EditService, PageService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { EditSettingsModel, ToolbarItems, GridComponent, EditEventArgs, Column } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [EditService, PageService, ToolbarService],
+standalone: true,
   selector: 'app-root',
   template: `
     <ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' allowPaging='true' (load)='load($event)' (actionComplete)='onActionComplete($event)'>

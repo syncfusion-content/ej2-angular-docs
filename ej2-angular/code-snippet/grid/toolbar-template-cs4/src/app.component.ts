@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -7,6 +13,15 @@ import { data } from './datasource';
 import { GridComponent, EditSettingsModel  } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ToolbarModule,
+        DropDownListAllModule
+    ],
+
+providers: [ToolbarService, EditService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' height='200px' [editSettings]='editSettings'>
                 <ng-template #toolbarTemplate let-data>

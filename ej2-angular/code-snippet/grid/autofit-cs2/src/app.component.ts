@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ResizeService, ToolbarService, ColumnChooserService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { ActionEventArgs, GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [ResizeService, ToolbarService, ColumnChooserService],
+standalone: true,
   selector: 'app-root',
   template: `<ejs-grid #grid [dataSource]="data" height="350px" [allowPaging]="true"
   [toolbar]="toolbarItems" (actionComplete)="onActionComplete($event)" [showColumnChooser]= 'true'>

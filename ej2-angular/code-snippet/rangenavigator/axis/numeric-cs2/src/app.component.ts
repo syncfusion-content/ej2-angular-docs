@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule, RangeNavigatorModule } from '@syncfusion/ej2-angular-charts'
+import {  StepLineSeriesService} from '@syncfusion/ej2-angular-charts'
+
 
 
 
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+imports: [
+         ChartModule, RangeNavigatorModule
+    ],
+
+providers: [ StepLineSeriesService ],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-rangenavigator id="rn-container" [value]='value' [minimum]='minimum' [maximum]='maximum' [interval]='interval'>
             <e-rangenavigator-series-collection>

@@ -1,9 +1,17 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { SwitchModule } from '@syncfusion/ej2-angular-buttons'
+
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { SwitchComponent } from '@syncfusion/ej2-angular-buttons';
 import { style } from '@angular/animations';
 
 @Component({
+imports: [ GanttModule, SwitchModule],
+
+standalone: true,
   selector: 'app-root',
   template: `<label>Show/Hide Dependency Line</label><ejs-switch #switch onLabel="ON" [(checked)]="checked" offLabel="OFF" (change)='change()'></ejs-switch>
   <ejs-gantt id="ganttDefault" height="430px" [dataSource]="data"   [editSettings] = "editSettings" [taskFields]="taskSettings" [columns]="columns"></ejs-gantt>`,

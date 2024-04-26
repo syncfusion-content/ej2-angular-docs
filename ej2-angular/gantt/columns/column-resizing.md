@@ -18,9 +18,7 @@ To resize the column, inject the `ResizeService` in the provider section of `App
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/resize-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/resize-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/resize-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ In the following example, the minimum and maximum widths are defined for the `Du
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/min-max-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/min-max-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/min-max-cs1/src/main.ts %}
 {% endhighlight %}

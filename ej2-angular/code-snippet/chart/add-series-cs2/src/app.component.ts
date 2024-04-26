@@ -1,8 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule} from '@syncfusion/ej2-angular-charts'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { CategoryService, ColumnSeriesService, ExportService, LegendService, DataLabelService} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChartComponent } from '@syncfusion/ej2-angular-charts';
 @Component({
+imports: [
+         ChartModule,  ButtonModule
+    ],
+
+providers: [ CategoryService, ColumnSeriesService,ExportService, LegendService, DataLabelService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-chart #chart id='chartcontainer' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
             [title]='title' >

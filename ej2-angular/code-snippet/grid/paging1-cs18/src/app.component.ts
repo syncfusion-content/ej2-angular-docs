@@ -1,9 +1,22 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { orderDetails } from './datasource';
 import { ChangeEventArgs, NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        NumericTextBoxModule
+    ],
+
+providers: [PageService, ToolbarService, EditService],
+standalone: true,
   selector: 'app-root',
   template: `
         <div style="padding:0 0 20px 0">

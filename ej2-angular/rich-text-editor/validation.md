@@ -27,9 +27,7 @@ The following example demonstrates how to achieve a two-way data binding.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/form-support-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/form-support-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/form-support-cs1/src/main.ts %}
 {% endhighlight %}
@@ -51,9 +49,7 @@ The following example demonstrates how to use the reactive forms.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/form-support-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/form-support-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/form-support-cs2/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DropDownButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 
@@ -5,6 +10,13 @@ import { Component } from '@angular/core';
 import { ItemModel } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
+imports: [
+        
+        DropDownButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <!-- To render DropDownButton without down arrow. -->

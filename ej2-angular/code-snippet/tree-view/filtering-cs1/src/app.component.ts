@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 
@@ -10,6 +16,12 @@ import { DataManager, Query, ReturnOption, Predicate } from '@syncfusion/ej2-dat
  * Filtering tree nodes sample
  */
 @Component({
+imports: [
+        FormsModule,TreeViewModule,MaskedTextBoxModule 
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<div id='treeparent'><ejs-maskedtextbox #maskObj id="search" (change)="searchNodes($event)"></ejs-maskedtextbox><ejs-treeview #treeviewObj id="default" [fields]='field'></ejs-treeview></div>`
 })

@@ -16,9 +16,7 @@ The rating component allows users to rate something using a visual scale, and th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/selection/selection-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/selection/selection-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/selection/selection-cs/src/main.ts %}
 {% endhighlight %}
@@ -34,9 +32,7 @@ You can use the [`min`](https://ej2.syncfusion.com/angular/documentation/api/rat
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/selection/min-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/selection/min-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/selection/min-cs/src/main.ts %}
 {% endhighlight %}
@@ -52,9 +48,7 @@ You can use the [`enableSingleSelection`](https://ej2.syncfusion.com/angular/doc
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/selection/singleselection-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/selection/singleselection-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/selection/singleselection-cs/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +64,7 @@ You can reset the rating value to its default by using the [`allowReset`](https:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/selection/allowreset-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/selection/allowreset-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/selection/allowreset-cs/src/main.ts %}
 {% endhighlight %}

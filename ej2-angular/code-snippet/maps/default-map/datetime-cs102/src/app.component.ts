@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MapsModule } from '@syncfusion/ej2-angular-maps'
+import { MapsTooltipService } from '@syncfusion/ej2-angular-maps'
+
 
 import { Component } from '@angular/core';
 import { ShapeSettings } from '@syncfusion/ej2-angular-maps';
 import { world_map } from './world-map';
 import { default_data } from './data';
 @Component({
+imports: [
+         MapsModule
+    ],
+
+providers: [MapsTooltipService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-maps id='rn-container'>
     <e-layers>

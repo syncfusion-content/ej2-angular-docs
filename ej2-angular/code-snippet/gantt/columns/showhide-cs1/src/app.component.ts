@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -7,6 +11,10 @@ import { projectNewData } from './data';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+standalone: true,
     selector: 'app-root',
     template:
        `<button ejs-button id='show' (click)='show()'>Show</button>

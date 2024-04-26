@@ -164,9 +164,7 @@ The following example illustrates the output in your browser
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datetimepicker/accessibility-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs4/src/main.ts %}
 {% endhighlight %}
@@ -182,9 +180,7 @@ The minimum and maximum date time can be defined with the help of `min` and `max
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datetimepicker/accessibility-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs5/src/main.ts %}
 {% endhighlight %}
