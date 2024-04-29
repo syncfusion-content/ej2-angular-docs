@@ -1,26 +1,43 @@
 
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
+import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' [allowTextWrap]='true' textWrapSettings='textSettings' height='300' [treeColumnIndex]='1' childMapping='subtasks' >
-        <e-columns>
-                    <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
-                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=75></e-column>
-                    <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=90></e-column>
-                    <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
-        </e-columns>
+    template: `<div>
+                    <label style="padding: 10px 10px">Enable or disable HTML Encode</label>
+                    <ejs-switch id="switch" (change)="change($event)"></ejs-switch>
+                </div>
+                <ejs-treegrid #treegrid [dataSource]='data' height='300' [treeColumnIndex]='1' childMapping='subtasks' >
+                    <e-columns>
+                        <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
+                        <e-column field='taskName' headerText="<strong> Task Name </strong>"  textAlign='Left' width=150></e-column>
+                        <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=90></e-column>
+                        <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
+                    </e-columns>
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
 
     public data?: Object[];
-    public textSettings?: Object;
+    @ViewChild('treegrid')
+    public treegrid?: TreeGridComponent;
+
+    change(args: ChangeEventArgs) {
+        if (args.checked) {
+            (this.treegrid as TreeGridComponent).getColumnByField('taskName').disableHtmlEncode = false;
+        } else {
+            (this.treegrid as TreeGridComponent).getColumnByField('taskName').disableHtmlEncode = true;
+        }
+        (this.treegrid as TreeGridComponent).refreshColumns();
+    }
+
     ngOnInit(): void {
         this.data = sampleData;
-        this.textSettings = { wrapMode: 'Content' };
+       
     }
 }
 
