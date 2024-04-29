@@ -25,8 +25,6 @@ imports: [CommonModule, ScheduleAllModule, RecurrenceEditorAllModule, NumericTex
         DatePickerAllModule, TimePickerAllModule, DateTimePickerAllModule, CheckBoxAllModule, ToolbarAllModule,
         DropDownListAllModule, ContextMenuAllModule, TreeViewAllModule,
         MaskedTextBoxModule, MultiSelectAllModule, ],
-
-,
 standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html',

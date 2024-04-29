@@ -22,10 +22,10 @@ providers: [DayService,
                 WorkWeekService, 
                 MonthService,
                 AgendaService,
-                MonthAgendaService],
+                MonthAgendaService,
+                TimelineYearService],
 standalone: true,
   selector: 'app-root',
-  providers: [TimelineYearService],
     // specifies the template string for the Schedule component
     template: `
     <ejs-schedule width="100%" height="550px" [selectedDate]="selectedDate" [views]="views"

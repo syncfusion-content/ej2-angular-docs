@@ -29,9 +29,7 @@ The adaptor can be assigned using the **adaptor** property of the [`DataManager`
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/getting-started/default-cs1/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -79,9 +77,7 @@ The sample response object should be as follows,
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/getting-started/default-cs2/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs2/src/main.ts %}
 {% endhighlight %}
@@ -103,9 +99,7 @@ You can use the **ODataV4Adaptor** to interact with ODataV4 service.
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/getting-started/default-cs3/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs3/src/main.ts %}
 {% endhighlight %}
@@ -364,9 +358,7 @@ For the sake of demonstrating custom adaptor approach, we are going to see how t
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/custom-adaptor-cs1/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/custom-adaptor-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/custom-adaptor-cs1/src/main.ts %}
 {% endhighlight %}

@@ -18,8 +18,6 @@ imports: [
         DropDownListAllModule,
         NumericTextBoxAllModule
     ],
-
-,
 standalone: true,
     selector: 'app-root',
     // specifies the template string for the Schedule component

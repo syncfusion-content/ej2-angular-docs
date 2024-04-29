@@ -1,3 +1,6 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -17,6 +20,8 @@ class SerialNoAdaptor extends ODataAdaptor {
 }
 
 @Component({
+
+standalone: true,
     selector: 'app-root',
     templateUrl: './app.template.html',
     styles: [`

@@ -3,15 +3,11 @@ import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
-import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
-
-
-
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { extend, closest, isNullOrUndefined, remove, removeClass } from '@syncfusion/ej2-base';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 import {
-    EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, AgendaService, ScheduleComponent, CellClickEventArgs
+    EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, AgendaService, ScheduleComponent, CellClickEventArgs, MonthAgendaService
 } from '@syncfusion/ej2-angular-schedule';
 import { ContextMenuComponent, MenuItemModel, BeforeOpenCloseMenuEventArgs, MenuEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { scheduleData } from './datasource';
@@ -23,17 +19,10 @@ imports: [
         ButtonModule,
         ContextMenuModule
     ],
-
-providers: [DayService, 
-                WeekService, 
-                WorkWeekService, 
-                MonthService,
-                AgendaService,
-                MonthAgendaService],
 standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html',
-    providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
+    providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService],
     styleUrls: ['./index.css'],
     encapsulation: ViewEncapsulation.None
 })

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
-import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
 
 
 
@@ -10,7 +9,7 @@ import { loadCldr, L10n } from '@syncfusion/ej2-base';
 import { Calendar, Islamic } from '@syncfusion/ej2-angular-calendars';
 import {
   ScheduleComponent, DayService, WeekService, MonthService, MonthAgendaService,
-  AgendaService, TimelineViewsService, TimelineMonthService, EventSettingsModel
+  AgendaService, TimelineViewsService, TimelineMonthService, EventSettingsModel, WorkWeekService
 } from '@syncfusion/ej2-angular-schedule';
 import { scheduleData } from './datasource';
 import * as localeObj from "./locale.json";
@@ -30,13 +29,6 @@ imports: [
         
         ScheduleModule
     ],
-
-providers: [DayService, 
-                WeekService, 
-                WorkWeekService, 
-                MonthService,
-                AgendaService,
-                MonthAgendaService],
 standalone: true,
   selector: 'app-root',
   providers: [DayService, WeekService, MonthService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService],

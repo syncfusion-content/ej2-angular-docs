@@ -8,7 +8,7 @@ import { MonthService, TimelineMonthService, TimelineYearService} from '@syncfus
 
 import { Component } from '@angular/core';
 import {
-     EventSettingsModel, MonthService
+     EventSettingsModel
 } from '@syncfusion/ej2-angular-schedule';
 import { scheduleData } from './datasource';
 
@@ -22,7 +22,6 @@ imports: [
 providers: [TimelineMonthService, MonthService, TimelineYearService],
 standalone: true,
     selector: "app-root",
-    providers: [MonthService],
     // specifies the template string for the Schedule component
     template: `
     <ejs-schedule width="100%" height="380px" [selectedDate]="selectedDate" [eventSettings]="eventSettings"> 

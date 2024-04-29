@@ -7,7 +7,7 @@ import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, 
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
-import { EventSettingsModel, RenderCellEventArgs, DayService, WeekService, MonthService } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, RenderCellEventArgs } from '@syncfusion/ej2-angular-schedule';
 import { scheduleData } from './datasource';
 import { createElement } from '@syncfusion/ej2-base';
 
@@ -26,7 +26,6 @@ providers: [DayService,
                 MonthAgendaService],
 standalone: true,
   selector: 'app-root',
-  providers: [DayService, WeekService, MonthService],
   // specifies the template string for the Schedule component
   template: `<ejs-schedule width='100%' height='550px' currentView='Month' [selectedDate]="selectedDate" [eventSettings]="eventSettings" (renderCell)="onRenderCell($event)">
   <e-views> <e-view option="Day"></e-view> <e-view option="Week"></e-view> <e-view option="Month"></e-view> </e-views> </ejs-schedule>`,

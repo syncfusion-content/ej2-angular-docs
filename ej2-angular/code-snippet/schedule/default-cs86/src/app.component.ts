@@ -22,10 +22,10 @@ providers: [DayService,
                 WorkWeekService, 
                 MonthService,
                 AgendaService,
-                MonthAgendaService],
+                MonthAgendaService,
+                TimelineYearService],
 standalone: true,
   selector: 'app-root',
-  providers: [TimelineYearService],
   template: `<ejs-schedule width='100%' height='550px' [selectedDate]='selectedDate' [rowAutoHeight]='rowAutoHeight' [eventSettings]='eventSettings'>
   <e-views>
         <e-view option='TimelineYear' displayName='Horizontal Timeline Year' isSelected=true></e-view>

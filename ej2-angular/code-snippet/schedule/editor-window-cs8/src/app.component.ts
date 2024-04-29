@@ -12,7 +12,7 @@ import { extend, isNullOrUndefined } from '@syncfusion/ej2-base';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { DateTimePicker } from '@syncfusion/ej2-calendars';
 import { ChangeEventArgs } from '@syncfusion/ej2-calendars';
-import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, PopupOpenEventArgs, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
 import { eventData } from './datasource';
 @Component({
 imports: [
@@ -31,7 +31,6 @@ providers: [DayService,
                 MonthAgendaService],
 standalone: true,
     selector: 'app-root',
-    providers: [DayService, WeekService, WorkWeekService, MonthService],
     // specifies the template string for the Schedule component
     template: `<ejs-schedule #schedule width='100%' height='550px' [selectedDate]='selectedDate' [views]='views' [eventSettings]='eventSettings' [showQuickInfo]='showQuickInfo'>
     <ng-template #editorTemplate let-data>

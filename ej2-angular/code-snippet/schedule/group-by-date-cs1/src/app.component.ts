@@ -7,8 +7,7 @@ import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, 
 
 
 import { Component } from '@angular/core';
-import {
-    WeekService, MonthService, AgendaService, EventSettingsModel, GroupModel
+import {EventSettingsModel, GroupModel
 } from '@syncfusion/ej2-angular-schedule';
 import { resourceData } from './datasource';
 
@@ -27,7 +26,6 @@ providers: [DayService,
                 MonthAgendaService],
 standalone: true,
     selector: "app-root",
-    providers: [WeekService, MonthService, AgendaService],
     // specifies the template string for the Schedule component
     template: `
     <ejs-schedule width="100%" height="550px" [selectedDate]="selectedDate" [views]="views"

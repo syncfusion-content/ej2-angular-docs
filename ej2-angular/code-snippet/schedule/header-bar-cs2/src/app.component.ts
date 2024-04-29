@@ -10,7 +10,7 @@ import { Component, ViewChild } from '@angular/core';
 import { createElement, compile } from '@syncfusion/ej2-base';
 import { ItemModel } from '@syncfusion/ej2-navigations';
 import { Popup } from '@syncfusion/ej2-popups';
-import { EventSettingsModel, ActionEventArgs, ToolbarActionArgs, MonthService, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, ActionEventArgs, ToolbarActionArgs, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
 import { scheduleData } from './datasource';
 
 @Component({
@@ -28,7 +28,6 @@ providers: [DayService,
                 MonthAgendaService],
 standalone: true,
     selector: 'app-root',
-    providers: [MonthService],
     // specifies the template string for the Schedule component
     template: `<ejs-schedule id='schedule' width='100%' height='550px' [selectedDate]='selectedDate' [views]='views' [eventSettings]='eventSettings' [showHeaderBar]='showHeaderBar'
     [currentView]='currentView' (actionBegin)='onActionBegin($event)'

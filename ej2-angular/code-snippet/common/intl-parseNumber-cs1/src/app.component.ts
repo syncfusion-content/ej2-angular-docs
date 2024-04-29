@@ -1,3 +1,6 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+
 
 
 
@@ -5,6 +8,8 @@ import { Component } from '@angular/core';
 import { Internationalization } from  '@syncfusion/ej2-base';
 
 @Component({
+
+standalone: true,
     selector: 'app-root',
     template:` <div id='container'>
     <div>FormattedValue:<span class='format text'>$01,234,545.650</span></div>

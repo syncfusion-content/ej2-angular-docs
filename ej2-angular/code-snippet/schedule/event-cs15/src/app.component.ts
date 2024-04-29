@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+import { WeekService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
 
 
 
@@ -26,10 +26,10 @@ providers: [DayService,
                 WorkWeekService, 
                 MonthService,
                 AgendaService,
-                MonthAgendaService],
+                MonthAgendaService,
+                TimelineViewsService],
 standalone: true,
     selector: 'app-root',
-    providers: [DayService, TimelineViewsService, WorkWeekService, MonthService],
     // specifies the template string for the Schedule component
     template: `<ejs-schedule width='100%' #scheduleObj height='550px' [selectedDate]="selectedDate"
   [eventSettings]="eventSettings" (actionBegin)="onActionBegin($event)"></ejs-schedule>`

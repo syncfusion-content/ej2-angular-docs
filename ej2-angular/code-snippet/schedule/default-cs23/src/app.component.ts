@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
 
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
-import { View, DayService, WeekService, TimelineViewsService, MonthService } from '@syncfusion/ej2-angular-schedule';
+import { View, DayService, WeekService, TimelineViewsService, MonthService, WorkWeekService, AgendaService  } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
 imports: [
@@ -15,16 +14,10 @@ imports: [
         ScheduleModule,
         ButtonModule
     ],
-
-providers: [DayService, 
-                WeekService, 
-                WorkWeekService, 
-                MonthService,
-                AgendaService,
-                MonthAgendaService],
 standalone: true,
   selector: 'app-root',
-  providers: [DayService, WeekService, TimelineViewsService, MonthService],
+  providers: [DayService, WeekService, TimelineViewsService, MonthService, WorkWeekService, AgendaService,
+    MonthAgendaService ],
   // specifies the template string for the Schedule component
    template: `<ejs-schedule width='100%' height='550px' [selectedDate]="selectedDate" [(currentView)]="currentView" cssClass="schedule-cell-template">
     <ng-template #cellTemplate let-data>

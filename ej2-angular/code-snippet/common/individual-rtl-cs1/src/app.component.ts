@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+
 
 
 
 import { Component} from '@angular/core';
 
 @Component({
+imports: [
+        
+        ListViewModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-listview id='sample-list' [dataSource]='data' [fields]='fields' showHeader='true'
     enableRtl='true' headerTitle='Social Media'>

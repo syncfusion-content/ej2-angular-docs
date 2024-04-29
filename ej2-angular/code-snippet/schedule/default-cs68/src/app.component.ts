@@ -7,7 +7,7 @@ import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, 
 
 
 import { Component } from '@angular/core';
-import { EventSettingsModel, DayService, WeekService, MonthService, Timezone } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, Timezone } from '@syncfusion/ej2-angular-schedule';
 import { fifaEventsData } from './datasource';
 import { extend } from '@syncfusion/ej2-base';
 
@@ -26,7 +26,6 @@ providers: [DayService,
                 MonthAgendaService],
 standalone: true,
   selector: 'app-root',
-  providers: [DayService, WeekService, MonthService],
   // specifies the template string for the Schedule component
   template: `<ejs-schedule width='100%' height='550px' [selectedDate]="selectedDate" timezone="UTC" [eventSettings]="eventSettings" > <e-views> <e-view option="Day"></e-view> <e-view option="Week"></e-view> <e-view option="Month"></e-view> </e-views> </ejs-schedule>`
 })

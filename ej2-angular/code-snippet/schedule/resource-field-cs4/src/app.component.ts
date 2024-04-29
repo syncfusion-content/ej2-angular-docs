@@ -4,7 +4,6 @@ import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 import { RatingModule } from '@syncfusion/ej2-angular-inputs'
 import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
 
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
@@ -12,7 +11,7 @@ import { DateTimePicker } from '@syncfusion/ej2-calendars';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
 import { ChangeEventArgs } from '@syncfusion/ej2-calendars';
 import { RatingComponent } from '@syncfusion/ej2-angular-inputs';
-import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs, PopupCloseEventArgs } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs, PopupCloseEventArgs,AgendaService, MonthAgendaService } from '@syncfusion/ej2-angular-schedule';
 import { eventData } from './datasource';
 @Component({
 imports: [
@@ -23,16 +22,10 @@ imports: [
         DateTimePickerModule,
         RatingModule  
     ],
-
-providers: [DayService, 
-                WeekService, 
-                WorkWeekService, 
-                MonthService,
-                AgendaService,
-                MonthAgendaService],
 standalone: true,
     selector: 'app-root',
-    providers: [DayService, WeekService, WorkWeekService, MonthService],
+    providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService,
+        MonthAgendaService],
     // specifies the template string for the Schedule component
     template: `<ejs-schedule width='100%' height='550px' [selectedDate]='selectedDate' [views]='views' [eventSettings]='eventSettings' [showQuickInfo]='showQuickInfo' (popupOpen)='onPopupOpen($event)' (popupClose) ='onPopupClose($event)'>
     <ng-template #editorTemplate let-data>

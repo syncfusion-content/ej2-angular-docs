@@ -22,9 +22,7 @@ To enable Right-To-Left (RTL) support for all components, users can set the `ena
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/right-to-left-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/right-to-left-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/right-to-left-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ To enable Right-To-Left (RTL) support for an individual component, users can set
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/individual-rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/individual-rtl-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/individual-rtl-cs1/src/main.ts %}
 {% endhighlight %}

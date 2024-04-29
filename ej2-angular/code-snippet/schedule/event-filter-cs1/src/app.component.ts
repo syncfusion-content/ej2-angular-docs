@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+import { MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
 
 
 
@@ -32,7 +32,6 @@ providers: [DayService,
                 MonthAgendaService],
 standalone: true,
     selector: 'app-root',
-    providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
     // specifies the template string for the Schedule component
     templateUrl: './app.component.html'
 })

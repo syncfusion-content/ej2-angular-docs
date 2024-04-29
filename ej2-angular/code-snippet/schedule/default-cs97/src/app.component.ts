@@ -11,8 +11,6 @@ imports: [
         RecurrenceEditorModule,
         DropDownListAllModule
     ],
-
-,
 standalone: true,
   selector: 'app-root',
   template: `<ejs-recurrenceeditor #recurrenceObj></ejs-recurrenceeditor>`

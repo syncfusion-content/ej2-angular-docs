@@ -120,9 +120,7 @@ The [`getNumberFormat`](https://ej2.syncfusion.com/documentation/api/base/intern
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/intl-getNumber-format-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-getNumber-format-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/intl-getNumber-format-cs3/src/main.ts %}
 {% endhighlight %}
@@ -138,9 +136,7 @@ The [`formatNumber`](https://ej2.syncfusion.com/documentation/api/base/internati
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/intl-getNumber-format-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-getNumber-format-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/intl-getNumber-format-cs4/src/main.ts %}
 {% endhighlight %}
@@ -158,9 +154,7 @@ The [`getNumberParser`](https://ej2.syncfusion.com/documentation/api/base/intern
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/intl-parseNumber1-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-parseNumber1-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/intl-parseNumber1-cs2/src/main.ts %}
 {% endhighlight %}
@@ -176,9 +170,7 @@ The [`parseNumber`](https://ej2.syncfusion.com/documentation/api/base/internatio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/intl-parseNumber-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-parseNumber-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/intl-parseNumber-cs2/src/main.ts %}
 {% endhighlight %}
@@ -322,9 +314,7 @@ The [`getDateFormat`](https://ej2.syncfusion.com/documentation/api/base/internat
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/intl-formatDate-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-formatDate-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/intl-formatDate-cs3/src/main.ts %}
 {% endhighlight %}
@@ -340,9 +330,7 @@ The [`formatDate`](https://ej2.syncfusion.com/documentation/api/base/internation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/intl-formatDate-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-formatDate-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/intl-formatDate-cs4/src/main.ts %}
 {% endhighlight %}
@@ -362,9 +350,7 @@ The `getDateParser` method which will return a function that parses given string
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/intl-parseDate-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-parseDate-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/intl-parseDate-cs2/src/main.ts %}
 {% endhighlight %}
@@ -380,9 +366,7 @@ The [`parseDate`](https://ej2.syncfusion.com/documentation/api/base/internationa
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/intl-parseDate1-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/intl-parseDate1-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/intl-parseDate1-cs2/src/main.ts %}
 {% endhighlight %}

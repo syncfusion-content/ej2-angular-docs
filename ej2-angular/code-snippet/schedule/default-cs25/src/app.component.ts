@@ -8,7 +8,7 @@ import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, 
 
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Internationalization } from '@syncfusion/ej2-base';
-import { View, MonthService } from '@syncfusion/ej2-angular-schedule';
+import { View,  } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
 imports: [
@@ -25,7 +25,6 @@ providers: [DayService,
                 MonthAgendaService],
 standalone: true,
   selector: 'app-root',
-  providers: [MonthService],
   // specifies the template string for the Schedule component
    template: `<ejs-schedule width='100%' height='550px' cssClass="schedule-cell-header-template">
     <ng-template #cellHeaderTemplate let-data>

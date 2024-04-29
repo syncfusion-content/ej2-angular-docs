@@ -10,7 +10,7 @@ import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, 
 import { Component, ViewChild } from '@angular/core';
 import { holidayData, birthdayData, companyData, personalData } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
-import { ScheduleComponent, EventSettingsModel, GroupModel, MonthService, TimelineViewsService, TimelineMonthService, ResizeService, DragAndDropService } from '@syncfusion/ej2-angular-schedule';
+import { ScheduleComponent, EventSettingsModel, GroupModel, TimelineViewsService, TimelineMonthService, ResizeService, DragAndDropService } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
 imports: [
@@ -24,10 +24,10 @@ providers: [DayService,
                 WorkWeekService, 
                 MonthService,
                 AgendaService,
-                MonthAgendaService],
+                MonthAgendaService,
+                TimelineViewsService, TimelineMonthService, ResizeService, DragAndDropService],
 standalone: true,
     selector: "app-root",
-    providers: [MonthService, TimelineViewsService, TimelineMonthService, ResizeService, DragAndDropService],
     // specifies the template string for the Schedule component
     template: `<div class="control-section">
   <div class="col-lg-12 property-section">

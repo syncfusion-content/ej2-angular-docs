@@ -3,13 +3,9 @@ import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
-import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { ScheduleComponent, EventSettingsModel, View, DayService, DragAndDropService,
-  WeekService, WorkWeekService, MonthService, AgendaService, ICalendarExportService, ICalendarImportService, ResizeService } from '@syncfusion/ej2-angular-schedule';
+  WeekService, WorkWeekService, MonthService, AgendaService, ICalendarExportService, ICalendarImportService, ResizeService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule';
 import { scheduleData } from './datasource';
 
 @Component({
@@ -19,17 +15,10 @@ imports: [
         ButtonModule,
         UploaderModule
     ],
-
-providers: [DayService, 
-                WeekService, 
-                WorkWeekService, 
-                MonthService,
-                AgendaService,
-                MonthAgendaService],
 standalone: true,
   selector: 'app-root',
   providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, ResizeService,
-    ICalendarExportService, ICalendarImportService, DragAndDropService],
+    ICalendarExportService, ICalendarImportService, DragAndDropService, MonthAgendaService],
   // specifies the template string for the Schedule component
   template: `<button ejs-button id="ics-export" type="button" (click)="onExportClick()">Export</button>
 <ejs-schedule #scheduleObj width='100%' height='550px' [views]="scheduleViews" [selectedDate]="selectedDate" [eventSettings]="eventSettings" [currentView]="currentView" >

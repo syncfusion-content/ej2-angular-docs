@@ -7,7 +7,7 @@ import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, 
 
 
 import { Component, ViewChild } from '@angular/core';
-import { EventSettingsModel, ScheduleComponent, DayService, WeekService, WorkWeekService, MonthService } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
@@ -25,7 +25,6 @@ providers: [DayService,
                 MonthAgendaService],
 standalone: true,
   selector: 'app-root',
-  providers: [DayService, WeekService, WorkWeekService, MonthService],
   // specifies the template string for the Schedule component
   template: `<button #addButtonObj ejs-button cssClass='e-info' (click)='add()'> Add </button>
   <button #editButtonObj ejs-button cssClass='e-info' (click)='edit()'> Edit </button>

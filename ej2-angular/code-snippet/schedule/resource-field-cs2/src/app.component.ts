@@ -20,16 +20,10 @@ imports: [
         RecurrenceEditorModule,
         DateTimePickerModule 
     ],
-
-providers: [DayService, 
-                WeekService, 
-                WorkWeekService, 
-                MonthService,
-                AgendaService,
-                MonthAgendaService],
 standalone: true,
     selector: 'app-root',
-    providers: [DayService, WeekService, WorkWeekService, MonthService],
+    providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService,
+      MonthAgendaService],
     // specifies the template string for the Schedule component
     template: `<ejs-schedule #scheduleObj width='100%' height='550px' [selectedDate]='selectedDate' [views]='views' [eventSettings]='eventSettings' [showQuickInfo]='showQuickInfo' (popupOpen)='onPopupOpen($event)'>
         <ng-template #editorTemplate let-data>

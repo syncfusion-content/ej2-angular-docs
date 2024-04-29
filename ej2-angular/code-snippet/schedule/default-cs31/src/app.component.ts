@@ -8,7 +8,7 @@ import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, 
 
 import { Component, ViewChild } from '@angular/core';
 import { DataManager, Query, Predicate } from '@syncfusion/ej2-data';
-import { ScheduleComponent, EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, View } from '@syncfusion/ej2-angular-schedule';
+import { ScheduleComponent, EventSettingsModel, View } from '@syncfusion/ej2-angular-schedule';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
@@ -26,7 +26,6 @@ providers: [DayService,
                 MonthAgendaService],
 standalone: true,
   selector: 'app-root',
-  providers: [DayService, WeekService, WorkWeekService, MonthService],
   // specifies the template string for the Schedule component
   template: `<button #editButton ejs-button id="editButton" type="button" content="Edit" (click)="onButtonClick()"></button>
   <ejs-schedule #scheduleObj width='100%' height='520px' [selectedDate]="selectedDate" [eventSettings]="eventSettings" [views]="scheduleViews"></ejs-schedule>`

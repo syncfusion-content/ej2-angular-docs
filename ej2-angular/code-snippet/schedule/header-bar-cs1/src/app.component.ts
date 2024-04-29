@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService, EventSettingsModel} from '@syncfusion/ej2-angular-schedule'
 
 
 
 import { Component } from '@angular/core';
-import { EventSettingsModel, DayService, WeekService, WorkWeekService } from '@syncfusion/ej2-angular-schedule';
 import { scheduleData } from './datasource';
 @Component({
 imports: [

@@ -156,9 +156,7 @@ Refer the below sample for more information.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/quickstart-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/quickstart-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/quickstart-cs1/src/main.ts %}
 {% endhighlight %}
@@ -260,9 +258,7 @@ export class AppComponent implements OnInit {
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/quickstart1-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/quickstart1-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/quickstart1-cs1/src/main.ts %}
 {% endhighlight %}

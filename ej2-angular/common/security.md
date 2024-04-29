@@ -99,9 +99,7 @@ When `enableHtmlSanitizer` is `false` or not included this property, the malicio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/enable-sanitizer-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/enable-sanitizer-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/enable-sanitizer-cs1/src/main.ts %}
 {% endhighlight %}

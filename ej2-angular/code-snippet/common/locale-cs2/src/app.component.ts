@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, GroupService, PageService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { L10n, setCulture } from '@syncfusion/ej2-base';
@@ -31,6 +35,13 @@ L10n.load({
 });
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [GroupService, PageService]
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [locale]='"de-DE"' [allowGrouping]='true' [allowPaging]='true' [pageSettings]='pageOptions' height='220px'>
                 <e-columns>

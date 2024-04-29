@@ -13,9 +13,7 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 import { TimelineViewsService , EventSettingsModel} from '@syncfusion/ej2-angular-schedule';
 
 @Component({
-imports: [ CommonModule, ScheduleAllModule, RecurrenceEditorAllModule, DialogAllModule, ],
-
-,
+imports: [ CommonModule, ScheduleAllModule, RecurrenceEditorAllModule, DialogAllModule, ]
 standalone: true,
   selector: 'app-root',
   providers: [TimelineViewsService ],

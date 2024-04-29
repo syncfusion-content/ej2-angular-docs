@@ -1,3 +1,6 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -6,6 +9,8 @@ import { DataManager, Query, ODataAdaptor, ReturnOption } from '@syncfusion/ej2-
 const SERVICE_URI: string =  'https://services.odata.org/V3/Northwind/Northwind.svc/Orders/';
 
 @Component({
+
+standalone: true,
     selector: 'app-root',
     templateUrl: './app.template.html',
     styles: [`

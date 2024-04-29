@@ -2,14 +2,11 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService, EventSettingsModel, GroupModel} from '@syncfusion/ej2-angular-schedule'
 
 
 
 import { Component } from '@angular/core';
-import {
-    WeekService, MonthService, TimelineViewsService, TimelineMonthService, EventSettingsModel, GroupModel
-} from '@syncfusion/ej2-angular-schedule';
 import { doctorData } from './datasource';
 @Component({
 imports: [
@@ -23,10 +20,10 @@ providers: [DayService,
                 WorkWeekService, 
                 MonthService,
                 AgendaService,
-                MonthAgendaService],
+                MonthAgendaService,
+                TimelineViewsService, TimelineMonthService],
 standalone: true,
     selector: "app-root",
-    providers: [WeekService, MonthService, TimelineViewsService, TimelineMonthService],
     // specifies the template string for the Schedule component
     template: `
     <ejs-schedule width="100%" height="550px" [selectedDate]="selectedDate" [views]="views"

@@ -3,13 +3,12 @@ import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
-import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
 
 
 
 import { ItemModel } from '@syncfusion/ej2-angular-navigations';
 import { ScheduleComponent, EventSettingsModel, ActionEventArgs, ToolbarActionArgs, View, PrintService,
-  DayService, WeekService, WorkWeekService, MonthService, AgendaService, ScheduleModel } from '@syncfusion/ej2-angular-schedule';
+  DayService, WeekService, WorkWeekService, MonthService, AgendaService, ScheduleModel, MonthAgendaService } from '@syncfusion/ej2-angular-schedule';
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { scheduleData } from './datasource';
 
@@ -20,16 +19,9 @@ imports: [
         ButtonModule,
         UploaderModule
     ],
-
-providers: [DayService, 
-                WeekService, 
-                WorkWeekService, 
-                MonthService,
-                AgendaService,
-                MonthAgendaService],
 standalone: true,
   selector: 'app-root',
-  providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, PrintService],
+  providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, PrintService, MonthAgendaService],
   // specifies the template string for the Schedule component
   template: `<ejs-schedule #scheduleObj id="schedule" cssClass='schedule-print' width='100%' height='550px' [selectedDate]="selectedDate" [eventSettings]="eventSettings" (actionBegin)="onActionBegin($event)"></ejs-schedule>`
 })

@@ -69,9 +69,7 @@ Here you can find the example for Material 3 customization using Css class.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/material3-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/material3-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/material3-cs2/src/main.ts %}
 {% endhighlight %}
@@ -97,9 +95,7 @@ Syncfusion has implemented the Material 3 theme, offering both Light and Dark va
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/material3-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/material3-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/material3-cs1/src/main.ts %}
 {% endhighlight %}

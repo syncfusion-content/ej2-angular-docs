@@ -7,7 +7,7 @@ import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, 
 
 
 import { Component, ViewChild } from '@angular/core';
-import { EventSettingsModel, ScheduleComponent, DayService, WeekService, WorkWeekService, MonthService } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, ScheduleComponent} from '@syncfusion/ej2-angular-schedule';
 
 @Component({
 imports: [
@@ -24,7 +24,6 @@ providers: [DayService,
                 MonthAgendaService],
 standalone: true,
     selector: 'app-root',
-    providers: [DayService, WeekService, WorkWeekService, MonthService],
     // specifies the template string for the Schedule component
     template: `<button ejs-button cssClass= 'e-custom-close' (click)='cellClick()'> Show Cell Click Popup </button>
   <button ejs-button cssClass= 'e-custom-close' (click)='eventClick()'> Show Event Click Popup </button>

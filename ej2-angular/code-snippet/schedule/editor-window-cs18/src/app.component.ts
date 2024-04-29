@@ -8,7 +8,7 @@ import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
-import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
 @Component({
 imports: [
         
@@ -24,7 +24,6 @@ providers: [DayService,
                 MonthAgendaService],
 standalone: true,
     selector: 'app-root',
-    providers: [DayService, WeekService, WorkWeekService, MonthService],
     // specifies the template string for the Schedule component
     template: `<button ejs-button cssClass= 'e-custom-close' (click)="CloseQuickInfoPopup">CloseQuickInfoPopup</button> <ejs-schedule #scheduleObj width='100%' height='650px' cssClass="more-indicator-app" [selectedDate]="selectedDate" [views]="views" [eventSettings]="eventSettings"></ejs-schedule>`,
 })
