@@ -40,75 +40,77 @@ Refer to the following code sample to switch to the highlight mode.
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}
 
-   import { ViewChild } from '@angular/core';
-   import { Component, OnInit } from '@angular/core';
-   import { PdfViewerComponent, LinkAnnotationService,  BookmarkViewService,
-            MagnificationService, ThumbnailViewService, ToolbarService,
-            NavigationService, TextSearchService,TextSelectionService,
-            PrintService, AnnotationService,
-          } from '@syncfusion/ej2-angular-pdfviewer';
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
- @Component({
+@Component({
   selector: 'app-root',
-   // Specifies the template string for the PDF Viewer component.
-   template: `<button (click)="addAnnotation()">Highlight</button>
-              <div class="content-wrapper">
-                 <ejs-pdfviewer id="pdfViewer"
-                         [documentPath]='document'
-                         style="height:640px;display:block">
-                  </ejs-pdfviewer>
-               </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
-                 ThumbnailViewService, ToolbarService, NavigationService,
-                 TextSearchService, TextSelectionService, PrintService,
-                 AnnotationService ],
- })
- export class AppComponent implements OnInit {
-    @ViewChild('pdfviewer')
-    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Highlight</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
+    }
     addAnnotation() {
-       var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
-       pdfviewer.annotationModule.setAnnotationMode('Highlight');
-   }
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Highlight');
+  }
 }
-
 {% endhighlight %}
 {% highlight ts tabtitle="Server-Backed" %}
 
-   import { ViewChild } from '@angular/core';
-   import { Component, OnInit } from '@angular/core';
-   import { PdfViewerComponent, LinkAnnotationService,  BookmarkViewService,
-            MagnificationService, ThumbnailViewService, ToolbarService,
-            NavigationService, TextSearchService,TextSelectionService,
-            PrintService, AnnotationService,
-          } from '@syncfusion/ej2-angular-pdfviewer';
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
- @Component({
+@Component({
   selector: 'app-root',
-   // Specifies the template string for the PDF Viewer component.
-   template: `<button (click)="addAnnotation()">Highlight</button>
-              <div class="content-wrapper">
-                 <ejs-pdfviewer id="pdfViewer"
-                         [serviceUrl]='service'
-                         [documentPath]='document'
-                         style="height:640px;display:block">
-                  </ejs-pdfviewer>
-               </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
-                 ThumbnailViewService, ToolbarService, NavigationService,
-                 TextSearchService, TextSelectionService, PrintService,
-                 AnnotationService ],
- })
- export class AppComponent implements OnInit {
-    @ViewChild('pdfviewer')
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Highlight</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
-    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    ngOnInit(): void {
+    }
     addAnnotation() {
-       var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
-       pdfviewer.annotationModule.setAnnotationMode('Highlight');
-   }
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Highlight');
+  }
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -117,83 +119,174 @@ Refer to the following code sample to switch back to normal mode from the highli
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}
 
-   import { ViewChild } from '@angular/core';
-   import { Component, OnInit } from '@angular/core';
-   import { PdfViewerComponent, LinkAnnotationService,  BookmarkViewService,
-            MagnificationService, ThumbnailViewService, ToolbarService,
-            NavigationService, TextSearchService, TextSelectionService,
-            PrintService, AnnotationService,
-          } from '@syncfusion/ej2-angular-pdfviewer';
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
- @Component({
+@Component({
   selector: 'app-root',
-   // Specifies the template string for the PDF Viewer component.
-   template: `<button (click)="addAnnotation()">Highlight</button>
-              <button (click)="setNone()">None</button>
-              <div class="content-wrapper">
-                 <ejs-pdfviewer id="pdfViewer"
-                         [documentPath]='document'
-                         style="height:640px;display:block">
-                  </ejs-pdfviewer>
-               </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
-                 ThumbnailViewService, ToolbarService, NavigationService,
-                 TextSearchService, TextSelectionService, PrintService,
-                 AnnotationService ],
- })
- export class AppComponent implements OnInit {
-    @ViewChild('pdfviewer')
-    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Highlight Text</button>
+  <button (click)="setNone()">None</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
+    }
     addAnnotation() {
-       var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
-       pdfviewer.annotationModule.setAnnotationMode('Highlight');
-   }
-   setNone() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Highlight');
+    }
+    setNone() {
       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-       pdfviewer.annotationModule.setAnnotationMode("None");
+      pdfviewer.annotationModule.setAnnotationMode("None");
     }
 }
-
 {% endhighlight %}
 {% highlight ts tabtitle="Server-Backed" %}
 
-   import { ViewChild } from '@angular/core';
-   import { Component, OnInit } from '@angular/core';
-   import { PdfViewerComponent, LinkAnnotationService,  BookmarkViewService,
-            MagnificationService, ThumbnailViewService, ToolbarService,
-            NavigationService, TextSearchService, TextSelectionService,
-            PrintService, AnnotationService,
-          } from '@syncfusion/ej2-angular-pdfviewer';
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
- @Component({
+@Component({
   selector: 'app-root',
-   // Specifies the template string for the PDF Viewer component.
-   template: `<button (click)="addAnnotation()">Highlight</button>
-              <button (click)="setNone()">None</button>
-              <div class="content-wrapper">
-                 <ejs-pdfviewer id="pdfViewer"
-                         [serviceUrl]='service'
-                         [documentPath]='document'
-                         style="height:640px;display:block">
-                  </ejs-pdfviewer>
-               </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
-                 ThumbnailViewService, ToolbarService, NavigationService,
-                 TextSearchService, TextSelectionService, PrintService,
-                 AnnotationService ],
- })
- export class AppComponent implements OnInit {
-    @ViewChild('pdfviewer')
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Highlight Text</button>
+  <button (click)="setNone()">None</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
-    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-    addAnnotation() {
-       var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
-       pdfviewer.annotationModule.setAnnotationMode('Highlight');
-   }
-   setNone() {
-      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-       pdfviewer.annotationModule.setAnnotationMode("None");
+    ngOnInit(): void {
     }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Highlight');
+  }
+  setNone() {
+      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode("None");
+  }  
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Highlight a text programmatically
+
+The PDF Viewer library enables you to programmatically highlight text within the PDF Viewer control using the [**addAnnotation()**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotation/#addannotationn) method.
+
+Here's an example of how you can use the **addAnnotation()** method to apply highlighting programmatically:
+
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService, HighlightSettings } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Highlight</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotation.addAnnotation("Highlight", {
+        bounds: [{ x: 97, y: 110, width: 350, height: 14 }],
+        pageNumber: 1
+    } as HighlightSettings);
+  }
+}
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService, HighlightSettings } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Highlight</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotation.addAnnotation("Highlight", {
+        bounds: [{ x: 97, y: 110, width: 350, height: 14 }],
+        pageNumber: 1
+    } as HighlightSettings);
+  }
 }
 
 {% endhighlight %}
@@ -222,162 +315,257 @@ In the pan mode, if the underline mode is entered, the PDF Viewer control will s
 
 Refer to the following code sample to switch to the underline mode.
 
+
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
- import { ViewChild } from '@angular/core';
- import { Component, OnInit } from '@angular/core';
- import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
-          MagnificationService, ThumbnailViewService, ToolbarService,
-          NavigationService, TextSearchService, TextSelectionService,
-          PrintService, AnnotationService
-        } from '@syncfusion/ej2-angular-pdfviewer';
-
- @Component({
+@Component({
   selector: 'app-root',
-  // Specifies the template string for the PDF Viewer component.
-  template: `<button (click)="addAnnotation()">Underline</button>
-             <div class="content-wrapper">
-                <ejs-pdfviewer id="pdfViewer"
-                      [documentPath]='document'
-                      style="height:640px;display:block">
-                </ejs-pdfviewer>
-            </div>`,
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Underline</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
-               TextSearchService, TextSelectionService, PrintService, 
-               AnnotationService ]
-  })
-  export class AppComponent implements OnInit {
-    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-    addAnnotation() {
-      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-      pdfviewer.annotationModule.setAnnotationMode("Underline");
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
     }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Underline');
   }
-
+}
 {% endhighlight %}
 {% highlight ts tabtitle="Server-Backed" %}
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
- import { ViewChild } from '@angular/core';
- import { Component, OnInit } from '@angular/core';
- import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
-          MagnificationService, ThumbnailViewService, ToolbarService,
-          NavigationService, TextSearchService, TextSelectionService,
-          PrintService, AnnotationService
-        } from '@syncfusion/ej2-angular-pdfviewer';
-
- @Component({
+@Component({
   selector: 'app-root',
-  // Specifies the template string for the PDF Viewer component.
-  template: `<button (click)="addAnnotation()">Underline</button>
-             <div class="content-wrapper">
-                <ejs-pdfviewer id="pdfViewer"
-                      [serviceUrl]='service'
-                      [documentPath]='document'
-                      style="height:640px;display:block">
-                </ejs-pdfviewer>
-            </div>`,
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Underline</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
-               TextSearchService, TextSelectionService, PrintService, 
-               AnnotationService ]
-  })
-  export class AppComponent implements OnInit {
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
-    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-    addAnnotation() {
-      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-      pdfviewer.annotationModule.setAnnotationMode("Underline");
+    ngOnInit(): void {
     }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Underline');
   }
-
+}
 {% endhighlight %}
 {% endtabs %}
+
 
 Refer to the following code sample to switch back to normal mode from the underline mode.
 
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}
 
-import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+import { LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
          NavigationService, TextSearchService, TextSelectionService,
-         PrintService, AnnotationService
-       } from '@syncfusion/ej2-angular-pdfviewer';
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-root',
-  // Specifies the template string for the PDF Viewer component.
-  template: `<button (click)="addAnnotation()">Underline</button>
-             <button (click)="setNone()">None</button>
-             <div class="content-wrapper">
-                  <ejs-pdfviewer id="pdfViewer"
-                       [documentPath]='document'
-                       style="height:640px;display:block">
-                 </ejs-pdfviewer>
-              </div>`,
- providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
-              ThumbnailViewService, ToolbarService, NavigationService,
-              TextSearchService, TextSelectionService, PrintService, 
-              AnnotationService]
- })
- export class AppComponent implements OnInit {
-    @ViewChild('pdfviewer')
-    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Underline Text</button>
+  <button (click)="setNone()">None</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
+    }
     addAnnotation() {
-       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-       pdfviewer.annotationModule.setAnnotationMode("Underline");
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Underline');
     }
     setNone() {
       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-       pdfviewer.annotationModule.setAnnotationMode("None");
+      pdfviewer.annotationModule.setAnnotationMode("None");
     }
-  }
-
+}
 {% endhighlight %}
 {% highlight ts tabtitle="Server-Backed" %}
 
-import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+import { LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
          NavigationService, TextSearchService, TextSelectionService,
-         PrintService, AnnotationService
-       } from '@syncfusion/ej2-angular-pdfviewer';
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-root',
-  // Specifies the template string for the PDF Viewer component.
-  template: `<button (click)="addAnnotation()">Underline</button>
-             <button (click)="setNone()">None</button>
-             <div class="content-wrapper">
-                  <ejs-pdfviewer id="pdfViewer"
-                       [serviceUrl]='service'
-                       [documentPath]='document'
-                       style="height:640px;display:block">
-                 </ejs-pdfviewer>
-              </div>`,
- providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
-              ThumbnailViewService, ToolbarService, NavigationService,
-              TextSearchService, TextSelectionService, PrintService, 
-              AnnotationService]
- })
- export class AppComponent implements OnInit {
-    @ViewChild('pdfviewer')
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Underline Text</button>
+  <button (click)="setNone()">None</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
-    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    ngOnInit(): void {
+    }
     addAnnotation() {
-       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-       pdfviewer.annotationModule.setAnnotationMode("Underline");
-    }
-    setNone() {
-      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-       pdfviewer.annotationModule.setAnnotationMode("None");
-    }
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Underline');
   }
+  setNone() {
+      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode("None");
+  }  
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Underline a text programmatically
+
+The PDF Viewer library enables you to programmatically Underline text within the PDF Viewer control using the [**addAnnotation()**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotation/#addannotationn) method.
+
+Here's an example of how you can use the **addAnnotation()** method to apply Underline programmatically:
+
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService, UnderlineSettings } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Underline text</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotation.addAnnotation("Underline", {
+        bounds: [{ x: 250, y: 148, width: 345, height: 14 }],
+        pageNumber: 2
+    } as HighlightSettings);
+  }
+}
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService, UnderlineSettings } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Underline text</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotation.addAnnotation("Underline", {
+        bounds: [{ x: 250, y: 148, width: 345, height: 14 }],
+        pageNumber: 2
+    } as HighlightSettings);
+  }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -401,164 +589,261 @@ There are two ways to strikethrough a text in the PDF document:
 
 ![Alt text](../../pdfviewer/images/strikethrough_button.png)
 
-In the pan mode, if the strikethrough mode is entered, the PDF Viewer control will switch to text select mode to enable the text selection for striking through the text.
+N> While you're in the pan mode, for navigating through the document, and you click on the strikethrough button, the PDF Viewer control will smoothly transition to text select mode. This seamless transition ensures a fluid experience when switching between different interaction modes within the PDF Viewer interface.
 
 Refer to the following code sample to switch to strikethrough mode.
 
+
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}
-
-import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
-         MagnificationService,ThumbnailViewService, ToolbarService,
-         NavigationService, TextSearchService, TextSelectionService, 
-         PrintService, AnnotationService 
-       } from '@syncfusion/ej2-angular-pdfviewer';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
-    selector: 'app-root',
-    // Specifies the template string for the PDF Viewer component.
-    template: `<button (click)="addAnnotation()">Strikethrough</button>
-                <div class="content-wrapper">
-                        <ejs-pdfviewer id="pdfViewer"
-                            [documentPath]='document'
-                            style="height:640px;display:block">
-                        </ejs-pdfviewer>
-                </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
-                 ThumbnailViewService, ToolbarService, NavigationService,
-                 TextSearchService, TextSelectionService, PrintService,
-                 AnnotationService]
-  })
-  export class AppComponent implements OnInit {
-       public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-       addAnnotation() {
-           var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-           pdfviewer.annotationModule.setAnnotationMode("Strikethrough");
-       }
-   }
-
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Strikethrough text</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Strikethrough');
+  }
+}
 {% endhighlight %}
 {% highlight ts tabtitle="Server-Backed" %}
-
-import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
-         MagnificationService,ThumbnailViewService, ToolbarService,
-         NavigationService, TextSearchService, TextSelectionService, 
-         PrintService, AnnotationService 
-       } from '@syncfusion/ej2-angular-pdfviewer';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
-    selector: 'app-root',
-    // Specifies the template string for the PDF Viewer component.
-    template: `<button (click)="addAnnotation()">Strikethrough</button>
-                <div class="content-wrapper">
-                        <ejs-pdfviewer id="pdfViewer"
-                            [serviceUrl]='service'
-                            [documentPath]='document'
-                            style="height:640px;display:block">
-                        </ejs-pdfviewer>
-                </div>`,
-    providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
-                 ThumbnailViewService, ToolbarService, NavigationService,
-                 TextSearchService, TextSelectionService, PrintService,
-                 AnnotationService]
-  })
-  export class AppComponent implements OnInit {
-       public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
-       public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-       addAnnotation() {
-           var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-           pdfviewer.annotationModule.setAnnotationMode("Strikethrough");
-       }
-   }
-
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Strikethrough text</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Strikethrough');
+  }
+}
 {% endhighlight %}
 {% endtabs %}
+
 
 Refer to the following code sample to switch back to normal mode from the strikethrough mode.
 
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}
 
-import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+import { LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
-         NavigationService, TextSearchService, TextSelectionService, 
-         PrintService, AnnotationService
-       } from '@syncfusion/ej2-angular-pdfviewer';
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
-     selector: 'app-root',
-     // Specifies the template string for the PDF Viewer component.
-     template: `<button (click)="addAnnotation()">Strikethrough</button>
-     <button (click)="setNone()">None</button>
-     <div class="content-wrapper">
-     <ejs-pdfviewer id="pdfViewer"
-                    [documentPath]='document'
-                    style="height:640px;display:block">
-     </ejs-pdfviewer>
-     </div>`,
-  providers: [ LinkAnnotationService, BookmarkViewService,MagnificationService,
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Strikethrough Text</button>
+  <button (click)="setNone()">None</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
-               TextSearchService, TextSelectionService, PrintService, 
-               AnnotationService]
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
 export class AppComponent implements OnInit {
-     public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-     addAnnotation() {
-       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-       pdfviewer.annotationModule.setAnnotationMode("Strikethrough");
-     }
-     setNone() {
-       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-       pdfviewer.annotationModule.setAnnotationMode("None");
-     }
-   }
-
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Strikethrough');
+    }
+    setNone() {
+      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode("None");
+    }
+}
 {% endhighlight %}
 {% highlight ts tabtitle="Server-Backed" %}
 
-import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+import { LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
-         NavigationService, TextSearchService, TextSelectionService, 
-         PrintService, AnnotationService
-       } from '@syncfusion/ej2-angular-pdfviewer';
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
-     selector: 'app-root',
-     // Specifies the template string for the PDF Viewer component.
-     template: `<button (click)="addAnnotation()">Strikethrough</button>
-     <button (click)="setNone()">None</button>
-     <div class="content-wrapper">
-     <ejs-pdfviewer id="pdfViewer"
-                    [serviceUrl]='service'
-                    [documentPath]='document'
-                    style="height:640px;display:block">
-     </ejs-pdfviewer>
-     </div>`,
-  providers: [ LinkAnnotationService, BookmarkViewService,MagnificationService,
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Strikethrough Text</button>
+  <button (click)="setNone()">None</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
-               TextSearchService, TextSelectionService, PrintService, 
-               AnnotationService]
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
 export class AppComponent implements OnInit {
-     public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
-     public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-     addAnnotation() {
-       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-       pdfviewer.annotationModule.setAnnotationMode("Strikethrough");
-     }
-     setNone() {
-       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
-       pdfviewer.annotationModule.setAnnotationMode("None");
-     }
-   }
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode('Strikethrough');
+  }
+  setNone() {
+      var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
+      pdfviewer.annotationModule.setAnnotationMode("None");
+  }  
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Strikethrough a text programmatically
+
+The PDF Viewer library enables you to programmatically Strikethrough text within the PDF Viewer control using the [**addAnnotation()**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotation/#addannotationn) method.
+
+Here's an example of how you can use the **addAnnotation()** method to apply Strikethrough programmatically:
+
+{% tabs %}
+{% highlight ts tabtitle="Standalone" %}
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService, StrikethroughSettings } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Strikethrough text</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotation.addAnnotation("Strikethrough", {
+        bounds: [{ x: 250, y: 144, width: 345, height: 14 }],
+        pageNumber: 2
+    } as StrikethroughSettings);
+  }
+}
+{% endhighlight %}
+{% highlight ts tabtitle="Server-Backed" %}
+
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService, StrikethroughSettings } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="addAnnotation()">Strikethrough text</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+               ThumbnailViewService, ToolbarService, NavigationService,
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
+    ngOnInit(): void {
+    }
+    addAnnotation() {
+      var pdfviewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
+      pdfviewer.annotation.addAnnotation("Strikethrough", {
+        bounds: [{ x: 250, y: 144, width: 345, height: 14 }],
+        pageNumber: 2
+    } as StrikethroughSettings);
+  }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -604,77 +889,80 @@ Refer to the following code sample to set the default annotation settings.
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}
 
-import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+import { LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
          NavigationService, TextSearchService, TextSelectionService,
-         PrintService, AnnotationService
-       } from '@syncfusion/ej2-angular-pdfviewer';
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
-   selector: 'app-root',
-   // Specifies the template string for the PDF Viewer component.
-   template: `<div class="content-wrapper">
-                 <ejs-pdfviewer id="pdfViewer"
-                            [documentPath]='document'
-                            [highlightSettings]='highlightSettings'
-                            [underlineSettings]='underlineSettings'
-                            [strikethroughSettings]='strikethroughSettings'
-                            style="height:640px;display:block">
-                  </ejs-pdfviewer>
-              </div>`,
-  providers: [ LinkAnnotationService,  BookmarkViewService, MagnificationService,
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource' 
+    [highlightSettings]='highlightSettings'
+    [underlineSettings]='underlineSettings'
+    [strikethroughSettings]='strikethroughSettings'
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
-               TextSearchService, TextSelectionService, PrintService, 
-               AnnotationService]
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
 export class AppComponent implements OnInit {
-  public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-  public highlightSettings = { author: 'Guest User', subject: 'Important', color: '#ffff00', opacity: 0.9, modifiedDate: '' };
-  public underlineSettings = { author: 'Guest User', subject: 'Points to be remembered', color: '#00ffff', opacity: 0.9, modifiedDate: '' };
-  public strikethroughSettings = { author: 'Guest User', subject: 'Not Important', color: '#ff00ff', opacity: 0.9, modifiedDate: '' };
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
+    public highlightSettings = { author: 'Guest User', subject: 'Important', color: '#ffff00', opacity: 0.9, modifiedDate: '' };
+    public underlineSettings = { author: 'Guest User', subject: 'Points to be remembered', color: '#00ffff', opacity: 0.9, modifiedDate: '' };
+    public strikethroughSettings = { author: 'Guest User', subject: 'Not Important', color: '#ff00ff', opacity: 0.9, modifiedDate: '' };
+    ngOnInit(): void {
+    }
 }
-
 {% endhighlight %}
 
 {% highlight ts tabtitle="Server-Backed" %}
 
-import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
+import { LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
          NavigationService, TextSearchService, TextSelectionService,
-         PrintService, AnnotationService
-       } from '@syncfusion/ej2-angular-pdfviewer';
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
-   selector: 'app-root',
-   // Specifies the template string for the PDF Viewer component.
-   template: `<div class="content-wrapper">
-                 <ejs-pdfviewer id="pdfViewer"
-                            [serviceUrl]='service'
-                            [documentPath]='document'
-                            [highlightSettings]='highlightSettings'
-                            [underlineSettings]='underlineSettings'
-                            [strikethroughSettings]='strikethroughSettings'
-                            style="height:640px;display:block">
-                  </ejs-pdfviewer>
-              </div>`,
-  providers: [ LinkAnnotationService,  BookmarkViewService, MagnificationService,
+  selector: 'app-root',
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    [highlightSettings]='highlightSettings'
+    [underlineSettings]='underlineSettings'
+    [strikethroughSettings]='strikethroughSettings'
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
+  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
-               TextSearchService, TextSelectionService, PrintService, 
-               AnnotationService]
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
 export class AppComponent implements OnInit {
-  
-  public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
-  public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-  public highlightSettings = { author: 'Guest User', subject: 'Important', color: '#ffff00', opacity: 0.9, modifiedDate: '' };
-  public underlineSettings = { author: 'Guest User', subject: 'Points to be remembered', color: '#00ffff', opacity: 0.9, modifiedDate: '' };
-  public strikethroughSettings = { author: 'Guest User', subject: 'Not Important', color: '#ff00ff', opacity: 0.9, modifiedDate: '' };
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
+    public highlightSettings = { author: 'Guest User', subject: 'Important', color: '#ffff00', opacity: 0.9, modifiedDate: '' };
+    public underlineSettings = { author: 'Guest User', subject: 'Points to be remembered', color: '#00ffff', opacity: 0.9, modifiedDate: '' };
+    public strikethroughSettings = { author: 'Guest User', subject: 'Not Important', color: '#ff00ff', opacity: 0.9, modifiedDate: '' };
+    ngOnInit(): void {
+    }
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -698,31 +986,36 @@ Refer to the following code sample for calling undo and redo actions from the cl
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}
 
- import { ViewChild } from '@angular/core';
- import { Component, OnInit } from '@angular/core';
- import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
-          MagnificationService, ThumbnailViewService, ToolbarService,
-          NavigationService, TextSearchService, TextSelectionService,
-          PrintService, AnnotationService
-        } from '@syncfusion/ej2-angular-pdfviewer';
- @Component({
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
   selector: 'app-root',
-  // Specifies the template string for the PDF Viewer component.
-  template: `<button (click)="Undo()">Undo</button>
-             <button (click)="Redo()">Redo</button>
-             <div class="content-wrapper">
-                    <ejs-pdfviewer id="pdfViewer"
-                         [documentPath]='document'
-                         style="height:640px;display:block">
-                    </ejs-pdfviewer>
-              </div>`,
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="Undo()">Undo</button>
+  <button (click)="Redo()">Redo</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
                TextSearchService, TextSelectionService, PrintService,
-               AnnotationService]
-  })
-  export class AppComponent implements OnInit {
-    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
+    }
     Undo() {
       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
       pdfviewer.undo();
@@ -731,38 +1024,41 @@ Refer to the following code sample for calling undo and redo actions from the cl
       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
       pdfviewer.redo();
    }
- }
+}
 
 {% endhighlight %}
 {% highlight ts tabtitle="Server-Backed" %}
 
- import { ViewChild } from '@angular/core';
- import { Component, OnInit } from '@angular/core';
- import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
-          MagnificationService, ThumbnailViewService, ToolbarService,
-          NavigationService, TextSearchService, TextSelectionService,
-          PrintService, AnnotationService
-        } from '@syncfusion/ej2-angular-pdfviewer';
- @Component({
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
+
+@Component({
   selector: 'app-root',
-  // Specifies the template string for the PDF Viewer component.
-  template: `<button (click)="Undo()">Undo</button>
-             <button (click)="Redo()">Redo</button>
-             <div class="content-wrapper">
-                    <ejs-pdfviewer id="pdfViewer"
-                         [serviceUrl]='service'
-                         [documentPath]='document'
-                         style="height:640px;display:block">
-                    </ejs-pdfviewer>
-              </div>`,
+  // specifies the template string for the PDF Viewer component
+  template: `<div class="content-wrapper">
+  <button (click)="Undo()">Undo</button>
+  <button (click)="Redo()">Redo</button>
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
                TextSearchService, TextSelectionService, PrintService,
-               AnnotationService]
-  })
-  export class AppComponent implements OnInit {
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
-    public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    ngOnInit(): void {
+    }
     Undo() {
       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
       pdfviewer.undo();
@@ -771,8 +1067,7 @@ Refer to the following code sample for calling undo and redo actions from the cl
       var pdfviewer = (<any>document.getElementById("pdfViewer")).ej2_instances[0];
       pdfviewer.redo();
    }
- }
-
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -790,64 +1085,69 @@ The PDF Viewer control provides an option to disable the text markup annotation 
 
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
- import { ViewChild } from '@angular/core';
- import { Component, OnInit } from '@angular/core';
- import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
-          MagnificationService, ThumbnailViewService, ToolbarService,
-          NavigationService, TextSearchService, TextSelectionService, 
-          PrintService, AnnotationService
-        } from '@syncfusion/ej2-angular-pdfviewer';
- @Component({
+@Component({
   selector: 'app-root',
-  // Specifies the template string for the PDF Viewer component.
+  // specifies the template string for the PDF Viewer component
   template: `<div class="content-wrapper">
-                <ejs-pdfviewer id="pdfViewer"
-                    [documentPath]='document'
-                    [enableTextMarkupAnnotation]='false'
-                    style="height:640px;display:block">
-                </ejs-pdfviewer>
-            </div>`,
+
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [resourceUrl]='resource'
+    [enableTextMarkupAnnotation]='false'	
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
-               TextSearchService, TextSelectionService, PrintService, 
-               AnnotationService]
-  })
- export class AppComponent implements OnInit {
-       public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-  }
-
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
+    ngOnInit(): void {
+    }
+}
 {% endhighlight %}
-
 {% highlight ts tabtitle="Server-Backed" %}
+import { Component, OnInit } from '@angular/core';
+import { LinkAnnotationService, BookmarkViewService,
+         MagnificationService, ThumbnailViewService, ToolbarService,
+         NavigationService, TextSearchService, TextSelectionService,
+         PrintService, FormDesignerService, FormFieldsService, 
+         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
- import { ViewChild } from '@angular/core';
- import { Component, OnInit } from '@angular/core';
- import { PdfViewerComponent, LinkAnnotationService, BookmarkViewService,
-          MagnificationService, ThumbnailViewService, ToolbarService,
-          NavigationService, TextSearchService, TextSelectionService, 
-          PrintService, AnnotationService
-        } from '@syncfusion/ej2-angular-pdfviewer';
- @Component({
+@Component({
   selector: 'app-root',
-  // Specifies the template string for the PDF Viewer component.
+  // specifies the template string for the PDF Viewer component
   template: `<div class="content-wrapper">
-                <ejs-pdfviewer id="pdfViewer"
-                    [serviceUrl]='service'
-                    [documentPath]='document'
-                    [enableTextMarkupAnnotation]='false'
-                    style="height:640px;display:block">
-                </ejs-pdfviewer>
-            </div>`,
+
+  <ejs-pdfviewer 
+    id="pdfViewer" 
+    [documentPath]='document' 
+    [serviceUrl]='service' 
+    [enableTextMarkupAnnotation]='false'		
+    style="height:640px;display:block">
+  </ejs-pdfviewer>
+</div>`,
   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
-               TextSearchService, TextSelectionService, PrintService, 
-               AnnotationService]
-  })
- export class AppComponent implements OnInit {
-       public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
-       public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-  }
-
+               TextSearchService, TextSelectionService, PrintService,
+               AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
+})
+export class AppComponent implements OnInit {
+    public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
+    public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
+    ngOnInit(): void {
+    }
+}
 {% endhighlight %}
 {% endtabs %}
