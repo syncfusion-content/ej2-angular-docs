@@ -194,6 +194,27 @@ The following sample showcases how to customize a specific dropdown item.
   
 {% previewsample "page.domainurl/samples/ribbon/DropDownCustomItem" %}
 
+#### Create dropdown popup on demand
+
+You can handle the creation of popups, by using the [createPopupOnClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#createpopuponclick) property. If set to `true`, the popup will only be created upon opening. By default the value is `false`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/ribbon/DropDownPopup/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/ribbon/DropDownPopup/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/ribbon/DropDownPopup/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/ribbon/DropDownPopup/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/ribbon/DropDownPopup" %}
+
 ### Split button items
 
 You can render the built-in splitButton Ribbon item by setting the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `SplitButton`. You can also customize the splitButton item through [RibbonSplitButtonSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettingsModel/), which provides options such as `iconCss`, `items`, `target` and more.

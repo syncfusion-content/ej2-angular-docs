@@ -243,3 +243,24 @@ You can use the [isMinimized](https://ej2.syncfusion.com/angular/documentation/a
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/ribbon/Minimize" %}
+
+## Show or hide the layout switcher
+
+You can use the [hideLayoutSwitcher](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#hidelayoutswitcher) property to show/hide the Ribbon layout switcher button. By default, the value is `false`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/ribbon/HideLayoutSwitcher/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/ribbon/HideLayoutSwitcher/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/ribbon/HideLayoutSwitcher/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/ribbon/HideLayoutSwitcher/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/ribbon/HideLayoutSwitcher" %}
