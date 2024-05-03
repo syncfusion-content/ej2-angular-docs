@@ -10,8 +10,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 imports: [
          HeatMapModule
     ],
-
-,
 standalone: true,
     selector: 'my-app',
     // specifies the template string for the HeatMap component

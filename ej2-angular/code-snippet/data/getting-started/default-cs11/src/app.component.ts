@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 
 
-
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { DataManager, Query, ODataAdaptor, ReturnOption } from '@syncfusion/ej2-data';
 
@@ -10,7 +10,7 @@ const SERVICE_URI =  'https://services.odata.org/V3/Northwind/Northwind.svc/Orde
 
 @Component({
 
-
+imports: [CommonModule],
 standalone: true,
     selector: 'app-root',
     templateUrl: './app.template.html',

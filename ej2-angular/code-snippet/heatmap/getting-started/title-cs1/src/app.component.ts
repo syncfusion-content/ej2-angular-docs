@@ -12,8 +12,6 @@ import { HeatMap } from '@syncfusion/ej2-heatmap';
 imports: [
          HeatMapModule
     ],
-
-,
 standalone: true,
     selector: 'my-app',
     template:

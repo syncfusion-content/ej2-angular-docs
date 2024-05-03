@@ -13,7 +13,6 @@ imports: [
          HeatMapModule
     ],
 
-,
 standalone: true,
     selector: 'my-app',
     template:
