@@ -5,7 +5,6 @@ import { TooltipComponent, TooltipEventArgs } from "@syncfusion/ej2-angular-popu
 @Component({
 imports: [TooltipAllModule, GridModule,  FormsModule],
 
-,
 standalone: true,
   selector: "app-root",
   template: `

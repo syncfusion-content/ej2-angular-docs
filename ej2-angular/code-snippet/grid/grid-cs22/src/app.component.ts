@@ -16,7 +16,6 @@ imports: [
         GridModule
     ],
 
-,
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [allowPaging]='true' [editSettings]='editSettings' [toolbar]='toolbar'>

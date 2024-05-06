@@ -5,7 +5,6 @@ import { orderDetails } from './datasource';
 @Component({
 imports: [ GridModule,  FormsModule, ButtonModule],
 
-,
 standalone: true,
   selector: 'app-root',
   template: `

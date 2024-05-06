@@ -15,7 +15,7 @@ imports: [
         SwitchModule 
     ],
 
-,
+
 standalone: true,
   selector: 'app-root',
   template: `

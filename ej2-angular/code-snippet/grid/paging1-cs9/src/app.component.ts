@@ -45,7 +45,7 @@ imports: [
         GridModule
     ],
 
-providers: [PageService, ToolbarService, EditService],
+providers: [PageService, ToolbarService, EditService, VirtualScrollService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height=300 [enableColumnVirtualization]=true
@@ -83,8 +83,7 @@ standalone: true,
                     <e-column field='FIELD29' headerText='PostdRebounds' width=130 textAlign='Right'></e-column>
                     <e-column field='FIELD30' headerText='PostRebounds' width=130 textAlign='Right' editType='numericedit' [validationRules]='rules'></e-column>
                 </e-columns>
-                </ejs-grid>`,
-    providers: [VirtualScrollService]
+                </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 

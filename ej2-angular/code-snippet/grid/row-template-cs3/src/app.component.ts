@@ -19,7 +19,7 @@ imports: [
         NumericTextBoxAllModule
     ],
 
-,
+
 standalone: true,
     selector: 'app-root',
     template: `<div>

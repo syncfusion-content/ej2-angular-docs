@@ -14,7 +14,6 @@ imports: [
         ButtonModule
     ],
 
-,
 standalone: true,
     selector: 'app-root',
     template: `

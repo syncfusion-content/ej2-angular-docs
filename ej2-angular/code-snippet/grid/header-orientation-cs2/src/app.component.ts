@@ -15,7 +15,7 @@ imports: [
         ButtonModule
     ],
 
-,
+
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='240' (created)='setHeaderHeight($event)' >

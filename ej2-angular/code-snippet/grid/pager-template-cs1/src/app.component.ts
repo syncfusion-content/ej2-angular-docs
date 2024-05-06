@@ -47,7 +47,6 @@ standalone: true,
                 <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
             </e-columns>
             </ejs-grid>`,
-    providers: [PageService],
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

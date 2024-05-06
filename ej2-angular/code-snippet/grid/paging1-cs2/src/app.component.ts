@@ -32,7 +32,7 @@ imports: [
         GridModule
     ],
 
-providers: [PageService, ToolbarService, EditService],
+providers: [PageService, ToolbarService, EditService, InfiniteScrollService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height=300 [enableInfiniteScrolling]='true' [pageSettings]='options'>
@@ -43,8 +43,7 @@ standalone: true,
                     <e-column field='Estimation' textAlign='Right' width=100></e-column>
                     <e-column field='Status' width=100></e-column>
                 </e-columns>
-                </ejs-grid>`,
-    providers: [InfiniteScrollService]
+                </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 

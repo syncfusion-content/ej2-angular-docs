@@ -13,7 +13,6 @@ imports: [
         GridModule
     ],
 
-,
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' id="gridcomp" allowPaging='true' allowSorting='true' showColumnMenu='true'

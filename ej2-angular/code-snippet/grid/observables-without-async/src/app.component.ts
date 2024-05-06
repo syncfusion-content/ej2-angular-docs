@@ -27,7 +27,7 @@ providers: [PageService,
                 SearchService,
                 InfiniteScrollService, 
                 LazyLoadGroupService,
-                HttpClient],
+                HttpClient, CrudService],
 standalone: true,
   selector: 'app-root',
   template: `<ejs-grid #grid [dataSource]='data' allowPaging="true" allowGrouping="true" [groupSettings]="groupOptions" allowSorting="true"
@@ -39,8 +39,7 @@ standalone: true,
                   <e-column field='ProductID' headerText='Product ID' width=100></e-column>
                   <e-column field='ProductName' headerText='Product Name' width='160'></e-column>
                 </e-columns>
-              </ejs-grid>`,
-  providers: [CrudService],
+              </ejs-grid>`
 })
 export class AppComponent implements OnInit {
   public data?: object;

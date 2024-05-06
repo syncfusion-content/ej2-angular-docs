@@ -19,7 +19,6 @@ imports: [
         ButtonModule
     ],
 
-providers: [GroupService],
 standalone: true,
     selector: 'app-root',
     template: `<h4 id='message'>{{message}}</h4>

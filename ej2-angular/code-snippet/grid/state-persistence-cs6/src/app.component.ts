@@ -14,7 +14,6 @@ imports: [
         ButtonAllModule
     ],
 
-providers: [GroupService],
 standalone: true,
     selector: 'app-root',
     template: `<button ejs-button id='add' (click)='addColumn()'>Add Columns</button>
@@ -27,7 +26,7 @@ standalone: true,
                     <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
                 </e-columns>
                 </ejs-grid>`,
-    providers: [FilterService, PageService]
+    providers: [GroupService, FilterService, PageService]
 })
 export class AppComponent implements OnInit {
     public data?: object[];

@@ -15,7 +15,6 @@ imports: [
         ButtonModule
     ],
 
-,
 standalone: true,
     selector: 'app-root',
     template: ` <button id='show' ejs-button cssClass="e-info" (click)='show()'> Show </button>

@@ -24,7 +24,7 @@ providers: [PageService,
                 ToolbarService,
                 GroupService,
                 PdfExportService, ExcelExportService,
-                AggregateService,HttpClient ],
+                AggregateService,HttpClient,DataService ],
 standalone: true,
   selector: 'app-root',
   template: `<ejs-grid #grid [dataSource]='data | async' [query]="query" allowPaging='true' [pageSettings]='pageOptions' 
@@ -35,8 +35,7 @@ standalone: true,
                   <e-column field='ShipCountry' headerText='Ship Country' width=100></e-column>
                   <e-column field='Freight' headerText='Freight' format='C2' textAlign='Right' width=100></e-column>
                 </e-columns>
-              </ejs-grid>`,
-  providers: [DataService],
+              </ejs-grid>`
 })
 export class AppComponent implements OnInit {
   public data?: Observable<DataStateChangeEventArgs>;

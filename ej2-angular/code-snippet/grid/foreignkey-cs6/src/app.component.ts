@@ -5,7 +5,7 @@ import { GridModule, ForeignKeyService } from '@syncfusion/ej2-angular-grids'
 
 import { Component, OnInit } from '@angular/core';
 import { createElement } from '@syncfusion/ej2-base';
-import { ForeignKeyService, EditService, IEditCell, EditSettingsModel, ToolbarService, Column } from '@syncfusion/ej2-angular-grids';
+import { EditService, IEditCell, EditSettingsModel, ToolbarService, Column } from '@syncfusion/ej2-angular-grids';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 import { AutoComplete } from '@syncfusion/ej2-angular-dropdowns';
 import { data, employeeData } from './datasource';
@@ -16,8 +16,6 @@ imports: [
         
         GridModule
     ],
-
-providers: [ForeignKeyService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='270' [editSettings]='editoption' [toolbar]='toolbar'>

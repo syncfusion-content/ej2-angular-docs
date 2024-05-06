@@ -16,7 +16,6 @@ imports: [
         GridModule
     ],
 
-,
 standalone: true,
     selector: 'app-root',
     template: `<p id='message'>{{ message }}</p><ejs-grid [dataSource]='data' id="gridcomp" allowPaging='true' allowGrouping='true' allowSorting='true' showColumnMenu='true'

@@ -14,7 +14,6 @@ imports: [
         GridModule
     ],
 
-,
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height='272px' [selectionSettings]='selectionOptions'>

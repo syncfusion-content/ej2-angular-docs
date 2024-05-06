@@ -15,7 +15,6 @@ imports: [
         DropDownListModule
     ],
 
-,
 standalone: true,
     selector: 'app-root',
     template: `

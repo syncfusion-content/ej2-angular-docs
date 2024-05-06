@@ -33,7 +33,7 @@ imports: [
         GridModule
     ],
 
-providers: [PageService, ToolbarService, EditService],
+providers: [PageService, ToolbarService, EditService, VirtualScrollService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height=300 [enableVirtualization]=true [pageSettings]='options' [editSettings]='editSettings' [toolbar]='toolbar'>
@@ -44,8 +44,7 @@ standalone: true,
                     <e-column field='Estimation' textAlign='Right' width=100 editType='numericedit' [validationRules]='rules'></e-column>
                     <e-column field='Status' width=100 editType='dropdownedit'></e-column>
                 </e-columns>
-                </ejs-grid>`,
-    providers: [VirtualScrollService]
+                </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 

@@ -14,7 +14,6 @@ imports: [
         ButtonAllModule
     ],
 
-providers: [GroupService],
 standalone: true,
     selector: 'app-root',
     template: `<div id='message'>{{message}}</div><button ejs-button id='save' (click)='save()'>Save column settings</button><button ejs-button id='restore' (click)='restore()'>Restore column settings</button>
@@ -30,7 +29,7 @@ standalone: true,
                     </e-column>
                 </e-columns>
                 </ejs-grid>`,
-    providers: [FilterService, PageService]
+    providers: [GroupService, FilterService, PageService]
 })
 export class AppComponent implements OnInit {
 

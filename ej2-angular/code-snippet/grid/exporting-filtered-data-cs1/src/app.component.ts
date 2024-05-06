@@ -15,8 +15,6 @@ imports: [
         
         GridModule
     ],
-
-providers: [FreezeService, SelectionService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions'
@@ -30,7 +28,7 @@ standalone: true,
                   <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
               </e-columns>
               </ejs-grid>`,
-    providers: [ToolbarService, PageService, FilterService, ExcelExportService]
+    providers: [ToolbarService, PageService, FilterService, ExcelExportService,FreezeService, SelectionService]
 })
 export class AppComponent implements OnInit {
 

@@ -14,7 +14,6 @@ imports: [
         TooltipModule
     ],
 
-,
 standalone: true,
   selector: 'app-root',
   template: `<div id='show' style="padding:0px 0px 20px 0px;" ></div>

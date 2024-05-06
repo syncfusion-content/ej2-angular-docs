@@ -4,7 +4,7 @@ import { GridModule, ForeignKeyService } from '@syncfusion/ej2-angular-grids'
 
 
 import { Component, OnInit } from '@angular/core';
-import { ForeignKeyService, EditSettingsModel, ToolbarItems, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { EditSettingsModel, ToolbarItems, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { data, employeeData } from './datasource';
 
 @Component({
@@ -13,7 +13,6 @@ imports: [
         GridModule
     ],
 
-providers: [ForeignKeyService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' [height]='315'>

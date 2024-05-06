@@ -33,8 +33,7 @@ imports: [
 providers: [FilterService, PageService,CheckBoxSelectionService],
 standalone: true,
     selector: 'app-root',
-    templateUrl: 'app.template.html',
-    providers: [FilterService],
+    templateUrl: 'app.template.html'
 })
 export class AppComponent {
     public pageSettings?: Object;

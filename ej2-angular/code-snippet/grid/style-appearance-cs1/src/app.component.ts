@@ -13,8 +13,6 @@ imports: [
         
         GridModule
     ],
-
-providers: [PageService],
 standalone: true,
   selector: 'app-root',
   template: `<ejs-grid [dataSource]='data' [allowPaging]='true' [pageSettings]='pageSettings' [selectionSettings]='selectionOptions' height='268px'>

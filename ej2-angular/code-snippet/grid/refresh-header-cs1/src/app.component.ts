@@ -14,7 +14,7 @@ imports: [
         ButtonModule
     ],
 
-,
+
 standalone: true,
   selector: 'app-root',
   template: `<button ejs-button (click)="refreshHeader()">Refresh Header</button>

@@ -19,12 +19,10 @@ imports: [
         GridModule,
         ButtonAllModule
     ],
-
-providers: [GroupService, ToolbarService, SortService, EditService, FilterService,],
 standalone: true,
   selector: "app-root",
   templateUrl: "app.component.html",
-  providers: [GroupService, ToolbarService, SortService, EditService],
+  providers: [GroupService, ToolbarService, SortService, EditService, FilterService],
 })
 export class AppComponent {
   public data?: Object[];

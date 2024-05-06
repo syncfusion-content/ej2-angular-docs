@@ -11,7 +11,7 @@ imports: [
         GridModule
     ],
 
-,
+
 standalone: true,
     selector: 'app-root',
     template: `

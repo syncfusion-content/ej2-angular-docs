@@ -35,7 +35,7 @@ imports: [
         
         ],
 
-providers: [PageService, ToolbarService, EditService],
+providers: [PageService, ToolbarService, EditService, InfiniteScrollService],
 standalone: true,
     selector: 'app-root',
     template: `
@@ -55,8 +55,7 @@ standalone: true,
                     <e-column field='Status' width=100></e-column>
                 </e-columns>
                 </ejs-grid>
-            </div>`,
-    providers: [InfiniteScrollService]
+            </div>`
 })
 export class AppComponent implements OnInit {
 

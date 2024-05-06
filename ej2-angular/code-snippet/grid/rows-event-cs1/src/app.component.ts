@@ -12,7 +12,7 @@ imports: [
         GridModule
     ],
 
-,
+
 standalone: true,
   selector: 'app-root',
   template: `<ejs-grid #grid [dataSource]="data" (dataBound)="customizeRows()">

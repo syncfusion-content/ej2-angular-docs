@@ -13,8 +13,6 @@ imports: [
         
         GridModule
     ],
-
-providers: [GroupService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [enablePersistence]='true' [allowPaging]='true' [allowFiltering]='true'
@@ -26,7 +24,7 @@ standalone: true,
                     <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
                 </e-columns>
                 </ejs-grid>`,
-    providers: [FilterService, PageService]
+    providers: [GroupService, FilterService, PageService]
 })
 export class AppComponent implements OnInit {
 

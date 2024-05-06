@@ -18,7 +18,6 @@ imports: [
         TooltipModule
     ],
 
-,
 standalone: true,
     selector: 'app-root',
     template: `  <ejs-tooltip #tooltip target=".e-rowcell" (beforeRender)="beforeRender($event)">

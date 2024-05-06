@@ -15,7 +15,6 @@ imports: [
         CheckBoxModule
     ],
 
-,
 standalone: true,
   selector: 'app-root',
   template: `<div style="padding:2px 0px 0px 0px">
