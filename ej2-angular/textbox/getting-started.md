@@ -12,6 +12,9 @@ domainurl: ##DomainURL##
 
 This section briefly explains about how to create a simple TextBox through CSS classes using Angular seed repository.
 
+To get started quickly with Angular TextBox component, you can check out this video:
+{% youtube "https://www.youtube.com/watch?v=v90dQ41gDcQ" %}
+
 ## Dependencies
 
 The following list of dependencies are required to use the TextBox component in your application.
