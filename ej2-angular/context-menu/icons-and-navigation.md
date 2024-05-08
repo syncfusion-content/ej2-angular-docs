@@ -18,9 +18,7 @@ The ContextMenu item can have an icon/image in it to provide visual representati
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/context-menu/icons-and-navigation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/context-menu/icons-and-navigation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/context-menu/icons-and-navigation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -37,9 +35,7 @@ In the following sample, Navigation URL for Flipkart, Amazon, and Snapdeal menu 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/context-menu/icons-and-navigation-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/context-menu/icons-and-navigation-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/context-menu/icons-and-navigation-cs2/src/main.ts %}
 {% endhighlight %}

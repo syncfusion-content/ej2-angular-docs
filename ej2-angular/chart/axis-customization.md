@@ -22,9 +22,7 @@ An axis can be positioned in the chart area using `crossesAt` and `crossesInAxis
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs2/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs3/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ By using the [`titleRotation`](https://ej2.syncfusion.com/angular/documentation/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs3/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +70,7 @@ You can customize the  `width`, `color` and `size` of the minor and major 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs4/src/main.ts %}
 {% endhighlight %}
@@ -94,9 +86,7 @@ You can customize the `width`, `color` and `dashArray` of the minor and maj
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs5/src/main.ts %}
 {% endhighlight %}
@@ -112,9 +102,7 @@ In addition to primary X and Y axis, we can add n number of axis to the chart. S
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs6/src/main.ts %}
 {% endhighlight %}
@@ -132,9 +120,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs7/src/main.ts %}
 {% endhighlight %}
@@ -152,9 +138,7 @@ To place an axis opposite from its original position, set [`opposedPosition`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs8/src/main.ts %}
 {% endhighlight %}

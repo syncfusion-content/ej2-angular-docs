@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService, ToolbarService, EditService,ExcelExportService,PdfExportService,SearchService  } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { L10n, loadCldr, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
@@ -17,6 +22,14 @@ setCulture('fr-FR'); // Change the Grid culture
 setCurrencyCode('EUR');
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule
+    ],
+
+providers: [PageService, ToolbarService, EditService,ExcelExportService,PdfExportService,SearchService ],
+standalone: true,
     selector: 'app-root',
     template: `
     <button ejs-button id="frButton" cssClass="e-outline" (click)="ChangeFrLocale()">Change FR Locale</button>

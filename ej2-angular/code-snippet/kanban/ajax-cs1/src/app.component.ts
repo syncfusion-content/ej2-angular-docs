@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -6,6 +10,13 @@ import { Ajax } from '@syncfusion/ej2-base';
 import { DataManager } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+        
+        KanbanModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<input type="button" id="btn" (click)="click()" value="Click"/>
   <ejs-kanban #Kanban keyField='ShipCountry' [dataSource]='dataManager' [cardSettings]='cardSettings'  (actionFailure)="onActionFailure($event)">

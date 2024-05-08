@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule, SortService, ResizeService } from '@syncfusion/ej2-angular-gantt'
+import { SelectionService, ContextMenuService, EditService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
@@ -7,6 +12,12 @@ import { ContextMenuItemModel } from '@syncfusion/ej2-grids';
 import { editingData} from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [SelectionService, ContextMenuService, EditService, SortService, ResizeService],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt #customcontextmenu id="ganttCustomContextmenu" height="430px" [dataSource]="editingData" [taskFields]="taskSettings" [enableContextMenu]="true" [contextMenuItems]="contextMenuItems" [allowSorting]="true" [allowResizing]="true" [editSettings]="editSettings" (contextMenuClick)="contextMenuClick($event)" (contextMenuOpen)="contextMenuOpen($event)"></ejs-gantt>`,

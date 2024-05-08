@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MapsModule } from '@syncfusion/ej2-angular-maps'
+import { MarkerService, ZoomService } from '@syncfusion/ej2-angular-maps'
+
 import {
     Component,
     ViewEncapsulation,
@@ -8,6 +13,12 @@ import { world_map } from './world-map';
 import { MapsComponent } from '@syncfusion/ej2-angular-maps';
 
 @Component({
+imports: [
+         MapsModule
+    ],
+
+providers: [MarkerService, ZoomService],
+standalone: true,
     selector: 'app-container',
     template: ` <div class="control-section">
         <button id="button" (click)="getMinMaxValues()">GetMinMaxLatitudeLongitude</button>

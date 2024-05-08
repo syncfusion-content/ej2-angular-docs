@@ -1,7 +1,26 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { ChipListModule } from '@syncfusion/ej2-angular-buttons'
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
+
 import { Component } from '@angular/core';
 import { orderDatas } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ChipListModule,
+        DatePickerAllModule,
+        DropDownListAllModule,
+        NumericTextBoxAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div>
                 <ejs-grid #grid [dataSource]="data">

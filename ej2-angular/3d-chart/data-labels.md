@@ -16,9 +16,7 @@ Data labels are fields that includes information about the sample point connecte
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/data-label/data-label-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ The [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/da
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/data-label/data-label-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs2/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ Label content can be formatted by using the template option. Inside the template
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/data-label/data-label-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs4/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ Text from the data source can be mapped using the [`name`](https://ej2.syncfusio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/data-label/data-label-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs3/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +82,7 @@ Data label for the chart can be formatted using the [`format`](https://ej2.syncf
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/data-label/data-label-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs5/src/main.ts %}
 {% endhighlight %}
@@ -165,9 +155,7 @@ The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/data
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/data-label/data-label-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs6/src/main.ts %}
 {% endhighlight %}
@@ -183,9 +171,7 @@ The `stroke` and `border` of data label can be customized using [`fill`](https:/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/data-label/data-label-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs7/src/main.ts %}
 {% endhighlight %}
@@ -201,9 +187,7 @@ A specific label can be customized by using the [`textRender`](https://ej2.syn
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/data-label/data-label-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/data-label/data-label-cs8/src/main.ts %}
 {% endhighlight %}

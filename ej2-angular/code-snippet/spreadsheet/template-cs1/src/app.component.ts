@@ -1,3 +1,11 @@
+import { DropDownListAllModule, MultiSelectAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { RadioButtonAllModule, ButtonAllModule } from '@syncfusion/ej2-angular-buttons'
+import { TextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
+import { CommonModule } from '@angular/common'
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+
 
 
 
@@ -5,6 +13,12 @@ import { Component, OnInit,ViewChild } from '@angular/core';
 import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 
 @Component({
+imports: [
+        CommonModule, SpreadsheetAllModule,  TextBoxAllModule, RadioButtonAllModule, DropDownListAllModule, MultiSelectAllModule, ButtonAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<ejs-spreadsheet #spreadsheet [showRibbon]="false" [allowResizing]="false" [showFormulaBar]="false" [allowOpen]="false" [allowSave]="false"
         [scrollSettings]="{ isFinite: true }" (created)="created()" [allowEditing]="false" [selectionSettings]="{ mode: 'None' }">

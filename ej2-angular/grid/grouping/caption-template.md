@@ -48,9 +48,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grouping1-cs1/src/main.ts %}
 {% endhighlight %}
@@ -94,9 +92,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grouping1-cs13/src/main.ts %}
 {% endhighlight %}
@@ -116,9 +112,7 @@ The following example demonstrates, how to customize group caption text based on
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grouping1-cs19/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs19/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grouping1-cs19/src/main.ts %}
 {% endhighlight %}
@@ -138,9 +132,7 @@ The following example demonstrates how to add a custom component to the group ca
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grouping1-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping1-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grouping1-cs14/src/main.ts %}
 {% endhighlight %}

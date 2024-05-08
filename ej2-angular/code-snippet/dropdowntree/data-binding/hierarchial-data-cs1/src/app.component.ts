@@ -1,9 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { DropDownTreeModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, ButtonModule, DropDownTreeModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     // specifies the template string for the DropDownTree component
     template: `<ejs-dropdowntree id='dropdownTree' [fields]='fields'></ejs-dropdowntree>`

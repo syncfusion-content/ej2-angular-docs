@@ -1,7 +1,14 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+
 import { Component } from "@angular/core";
 import { RibbonButtonSettingsModel, FileMenuSettingsModel } from '@syncfusion/ej2-angular-ribbon';
 import { MenuItemModel } from "@syncfusion/ej2-navigations";
 @Component({
+imports: [ RibbonModule ],
+
+providers: [ RibbonFileMenuService ],
+standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html'
 })

@@ -1,9 +1,22 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule, StockChartAllModule, ChartAllModule, RangeNavigatorModule } from '@syncfusion/ej2-angular-charts'
+import { LineSeriesService, SplineSeriesService, RangeTooltipService, StepLineSeriesService, CategoryService, ParetoSeriesService, ColumnSeriesService,
+       SplineAreaSeriesService, MultiColoredLineSeriesService, TooltipService} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { chartData } from './datasource';
 import { IStockChartEventArgs, ChartTheme, ITooltipRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 @Component({
+imports: [
+         ChartModule, StockChartAllModule, ChartAllModule, RangeNavigatorModule
+    ],
+
+providers: [ LineSeriesService, SplineSeriesService, RangeTooltipService, StepLineSeriesService, CategoryService, SplineAreaSeriesService, ParetoSeriesService, ColumnSeriesService,
+               MultiColoredLineSeriesService, TooltipService ],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-stockchart id='stockChartEvents' [enablePeriodSelector]='enable' [title]='title' [titleStyle]='titleStyle'
             [chartArea]='chartArea' [primaryXAxis]='primaryXAxis' style="display:block;" [tooltip]='tooltip'

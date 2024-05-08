@@ -1,8 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { AnimationModel } from '@syncfusion/ej2-progressbar';
 @Component({
+imports: [
+         ProgressBarModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template:
     ` <ejs-progressbar  id='percentage' type='Circular' height='160px' width='160px'  trackColor='#FFD939'        radius='100%' progressColor='white' cornerRadius='Round' trackThickness=80 progressThickness=10 value=60 [animation]='animation'>

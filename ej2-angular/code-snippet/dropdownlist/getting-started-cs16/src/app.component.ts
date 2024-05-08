@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component } from '@angular/core';
@@ -5,6 +11,12 @@ import { Query, DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 import { FilteringEventArgs, highlightSearch } from '@syncfusion/ej2-dropdowns';
 
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, DropDownListModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the DropDownList component with change event
     template: `<ejs-dropdownlist id='ddlelement' [dataSource]='data' [query]='query' [fields]='fields' [placeholder]='text' [allowFiltering]='true' [sortOrder]='sorting' (filtering)='onFiltering($event)'></ejs-dropdownlist>`

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MapsModule } from '@syncfusion/ej2-angular-maps'
+import { MarkerService, MapsTooltipService, HighlightService , SelectionService } from '@syncfusion/ej2-angular-maps'
+
 
 
 import { Component, ViewEncapsulation,ViewChild } from '@angular/core';
@@ -7,6 +12,12 @@ import { africa_continent } from './africa-continent';
 export interface ShapeData { continent?: string; }
 
 @Component({
+imports: [
+         MapsModule
+    ],
+
+providers: [MarkerService, MapsTooltipService, HighlightService , SelectionService],
+standalone: true,
     selector: 'app-container',
     // specifies the template string for the maps component
     template:`<div class="control-section">

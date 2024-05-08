@@ -20,9 +20,7 @@ Here's an example of how to enable check box selection using `type` property in 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cs3/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ In the following example, it demonstrates how to dynamically enable and change t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cs4/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ Here's an example of how to hide selectall checkbox in column header using empty
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-checkbox-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-checkbox-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-checkbox-cs2/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +84,7 @@ In the following sample, the selection of specific rows has been prevented based
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cs5/src/main.ts %}
 {% endhighlight %}
@@ -114,9 +106,7 @@ Here's an example of how to select a single row in checkbox selection mode using
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-single-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-single-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-single-cs1/src/main.ts %}
 {% endhighlight %}
@@ -134,9 +124,7 @@ Here's an example of how to enable selection only through checkbox click using `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-checkbox-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-checkbox-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-checkbox-cs1/src/main.ts %}
 {% endhighlight %}

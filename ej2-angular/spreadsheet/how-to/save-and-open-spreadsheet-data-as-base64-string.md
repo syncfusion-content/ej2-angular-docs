@@ -20,9 +20,7 @@ The following code example shows how to save and open the spreadsheet data as ba
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/base-64-string/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/base-64-string/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/base-64-string/src/main.ts %}
 {% endhighlight %}

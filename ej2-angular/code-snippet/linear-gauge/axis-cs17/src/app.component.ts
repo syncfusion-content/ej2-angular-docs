@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { LinearGaugeModule } from '@syncfusion/ej2-angular-lineargauge'
+import { GaugeTooltipService } from '@syncfusion/ej2-angular-lineargauge'
+
 
 
 import { Component } from '@angular/core';
@@ -5,6 +10,12 @@ import { LinearGaugeComponent } from '@syncfusion/ej2-angular-lineargauge';
 import { IPointerDragEventArgs } from '@syncfusion/ej2-lineargauge';
 
 @Component({
+imports: [
+         LinearGaugeModule
+    ],
+
+providers: [ GaugeTooltipService ],
+standalone: true,
     selector: 'app-container',
     template: `
     <ejs-lineargauge style="display:block" id="gauge-container" (dragEnd)='dragEnd($event)'>

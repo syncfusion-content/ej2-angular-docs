@@ -24,9 +24,7 @@ The following code example shows enabling tooltip for sparkline with format.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs35/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs35/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs35/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ The fill color, text styles, format, and border of the tooltip can be customized
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs36/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs36/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs36/src/main.ts %}
 {% endhighlight %}
@@ -75,9 +71,7 @@ Sparkline tooltip has template support. By using tooltip template, you can custo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs37/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs37/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs37/src/main.ts %}
 {% endhighlight %}
@@ -99,9 +93,7 @@ To use track line in sparkline, inject the `SparklineTooltip` module to sparklin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs38/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs38/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs38/src/main.ts %}
 {% endhighlight %}

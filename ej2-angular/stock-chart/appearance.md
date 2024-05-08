@@ -18,9 +18,7 @@ StockChart can be given a title using [`title`](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/chart-title-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/chart-title-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/chart-title-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ The `textStyle` property of stockchart title provides options to customize the `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/chart-title-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/chart-title-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/chart-title-cs2/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ Changing Stock Chart theme will affect background color, grid lines, tooltip col
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/chart-title-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/chart-title-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/chart-title-cs3/src/main.ts %}
 {% endhighlight %}

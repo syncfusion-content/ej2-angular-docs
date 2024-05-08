@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, SortService, FilterService, GroupService,DetailRowService, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -5,6 +10,16 @@ import { data, employeeData, childColumnDataType } from './datasource';
 import { AddEventArgs, GridModel, ParentDetails } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [PageService,
+        SortService,
+        FilterService,
+        GroupService,DetailRowService, EditService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='parentData' height='265px' [childGrid]='childGrid'>
                     <e-columns>

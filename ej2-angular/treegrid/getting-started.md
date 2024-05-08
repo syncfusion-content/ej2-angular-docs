@@ -167,9 +167,7 @@ Tree Column is used to expand or collapse child rows is defined by using the [`t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/getting-started-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
@@ -203,9 +201,7 @@ In root-level paging mode, paging is based on the root-level rows only i.e., it 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/getting-started-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
@@ -225,9 +221,7 @@ Sorting feature can be customized using [`sortSettings`](https://ej2.syncfusion.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/getting-started-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
@@ -245,9 +239,7 @@ By default, filtered records are shown along with its parent records. This behav
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/getting-started-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
@@ -271,9 +263,7 @@ The output will appear as follows.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/getting-started-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/getting-started-cs5/src/main.ts %}
 {% endhighlight %}

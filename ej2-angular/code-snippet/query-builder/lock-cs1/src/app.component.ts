@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { QueryBuilderModule } from '@syncfusion/ej2-angular-querybuilder'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 import { Component, ViewChild, OnInit } from '@angular/core';
@@ -8,6 +13,13 @@ import { hardwareData } from './datasource';
 QueryBuilderComponent.Inject(QueryLibrary);
 
 @Component({
+imports: [
+        
+        QueryBuilderModule,
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<!-- To render Query Builder. -->
                <ejs-querybuilder #querybuilder class="row" width="70%" [dataSource]="data" [rule]="importRules" [showButtons]="showButtons">

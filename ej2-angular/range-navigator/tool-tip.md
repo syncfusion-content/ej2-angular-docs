@@ -25,9 +25,7 @@ Tooltip can be customized using the following properties:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/getting-started/tooltip-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/getting-started/tooltip-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/getting-started/tooltip-cs2/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ The `labelFormat` property in the tooltip is used to format and parse the date t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/getting-started/tooltip-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/getting-started/tooltip-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/getting-started/tooltip-cs3/src/main.ts %}
 {% endhighlight %}

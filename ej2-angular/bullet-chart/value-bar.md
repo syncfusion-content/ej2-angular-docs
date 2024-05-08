@@ -17,9 +17,7 @@ To display the primary data or the current value of the data being measured know
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs36/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs36/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs36/src/main.ts %}
 {% endhighlight %}
@@ -35,9 +33,7 @@ The shape of the actual bar can be customized using the [`type`](https://ej2.syn
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs37/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs37/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs37/src/main.ts %}
 {% endhighlight %}
@@ -55,9 +51,7 @@ Using the [`valueBorder`](https://ej2.syncfusion.com/angular/documentation/api/b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs38/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs38/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs38/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +67,7 @@ Customize the fill color and height of the actual bar using the [`valueFill`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs39/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs39/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs39/src/main.ts %}
 {% endhighlight %}

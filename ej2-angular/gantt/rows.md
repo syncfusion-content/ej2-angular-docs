@@ -20,9 +20,7 @@ It is possible to change the height of the row in Gantt by setting row height in
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/rows/rowheight-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/rowheight-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/rows/rowheight-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ All tasks available in Gantt was rendered in collapsed state by setting [`collap
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/rows/collapseall-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/collapseall-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/rows/collapseall-cs1/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ In Gantt, you can render some tasks in collapsed state and some tasks in expande
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/rows/expand-status-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/expand-status-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/rows/expand-status-cs1/src/main.ts %}
 {% endhighlight %}
@@ -78,9 +72,7 @@ On expand action [`expanding`](https://ej2.syncfusion.com/angular/documentation/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/rows/expand-customize-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/expand-customize-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/rows/expand-customize-cs1/src/main.ts %}
 {% endhighlight %}
@@ -96,9 +88,7 @@ While rendering the TreeGrid part in Gantt, the [`rowDataBound`](https://ej2.syn
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/appearance-customization/customize-row-cells-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/customize-row-cells-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/appearance-customization/customize-row-cells-cs1/src/main.ts %}
 {% endhighlight %}
@@ -114,9 +104,7 @@ You can customize the appearance of a row in grid side, by using the [`rowDataBo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/rows/customizeRows-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/customizeRows-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/rows/customizeRows-cs1/src/main.ts %}
 {% endhighlight %}
@@ -138,9 +126,7 @@ You can change the background colour of alternative rows in Gantt chart, by over
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/rows/alternateRows-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/alternateRows-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/rows/alternateRows-cs1/src/main.ts %}
 {% endhighlight %}
@@ -158,9 +144,7 @@ In the following demo, **Soil test approval** cell is spanned to two rows in the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/rows/rowSpanning-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/rows/rowSpanning-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/rows/rowSpanning-cs1/src/main.ts %}
 {% endhighlight %}
@@ -189,9 +173,7 @@ You can enable or disable the Grid cell tooltip using the [`columns.clipMode`](h
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/tooltip/cell-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/tooltip/cell-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/tooltip/cell-cs1/src/main.ts %}
 {% endhighlight %}

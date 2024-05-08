@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
+
 
 
 import { Component } from '@angular/core';
@@ -7,6 +11,13 @@ import { closest } from '@syncfusion/ej2-base';
 import { kanbanData } from './datasource';
 
 @Component({
+imports: [
+        
+        KanbanModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<ejs-kanban keyField='Status' [dataSource]='data' [cardSettings]='cardSettings'  (dataBound)='OnDataBound()'>
                 <e-columns>

@@ -18,9 +18,7 @@ An axis can be positioned in the Stock Chart area using [`crossesAt`](https://ej
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/axis-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/axis-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/axis-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/axis-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/axis-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/axis-cs2/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ You can customize the  `width`, `color` and `size` of the minor and major 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/axis-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/axis-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/axis-cs3/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ You can customize the `width`, `color` and `dashArray` of the minor and maj
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/axis-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/axis-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/axis-cs4/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +82,7 @@ In addition to primary X and Y axis, we can add n number of axis to the Stock Ch
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/multiple-axis-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/multiple-axis-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/multiple-axis-cs1/src/main.ts %}
 {% endhighlight %}
@@ -110,9 +100,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/axis-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/axis-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/axis-cs5/src/main.ts %}
 {% endhighlight %}
@@ -128,9 +116,7 @@ To place an axis opposite from its original position, set [`opposedPosition`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/axis-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/axis-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/axis-cs6/src/main.ts %}
 {% endhighlight %}

@@ -28,9 +28,7 @@ The Chip control has the following predefined styles that can be defined using t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/customization/styles-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/customization/styles-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/customization/styles-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ You can add and customize the leading icon of chip using the `leadingIconCss` pr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/customization/styles-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/customization/styles-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/customization/styles-cs2/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ You can add and customize the avatar of chip using the `avatarIconCss` property.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/customization/styles-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/customization/styles-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/customization/styles-cs3/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ You can add and customize the avatar content of chip using the `avatarText` prop
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/customization/styles-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/customization/styles-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/customization/styles-cs4/src/main.ts %}
 {% endhighlight %}
@@ -100,9 +92,7 @@ You can add and customize the trailing icon of chip using the `trailingIconCss` 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/customization/styles-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/customization/styles-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/customization/styles-cs5/src/main.ts %}
 {% endhighlight %}
@@ -118,9 +108,7 @@ Outline chip has the border with the background transparent. It can be set using
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/customization/styles-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chips/customization/styles-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/customization/styles-cs6/src/main.ts %}
 {% endhighlight %}

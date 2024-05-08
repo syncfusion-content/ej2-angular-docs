@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { CriticalPathService, ToolbarService, EditService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [ToolbarService, EditService],
+standalone: true,
     selector: 'app-root',
     template: `<button ej-button id='add' (click)='addColumn()'>Add Columns</button>
                <button ej-button id='remove' (click)='removeColumn()'>Remove Columns</button>

@@ -19,9 +19,7 @@ DateTime axis uses date time scale and displays the date time values as axis lab
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/date-time-axis/date-time-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs1/src/main.ts %}
 {% endhighlight %}
@@ -39,9 +37,7 @@ DateTime category axis is used to display the date time values with non-linear i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/date-time-axis/date-time-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs2/src/main.ts %}
 {% endhighlight %}
@@ -59,9 +55,7 @@ Range of an axis will be calculated automatically based on the provided data. Yo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/date-time-axis/date-time-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs3/src/main.ts %}
 {% endhighlight %}
@@ -85,9 +79,7 @@ Date time intervals can be customized by using the [`interval`](https://ej2.sync
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/date-time-axis/date-time-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs4/src/main.ts %}
 {% endhighlight %}
@@ -111,9 +103,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/date-time-axis/date-time-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs5/src/main.ts %}
 {% endhighlight %}
@@ -129,9 +119,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/date-time-axis/date-time-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs6/src/main.ts %}
 {% endhighlight %}
@@ -147,9 +135,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/date-time-axis/date-time-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs7/src/main.ts %}
 {% endhighlight %}
@@ -165,9 +151,7 @@ The date can be formatted and parsed to all globalize format using the [`labelF
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/date-time-axis/date-time-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs8/src/main.ts %}
 {% endhighlight %}
@@ -225,9 +209,7 @@ Axis also supports custom label format using placeholder like {value}°C, in w
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/date-time-axis/date-time-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/date-time-axis/date-time-cs9/src/main.ts %}
 {% endhighlight %}

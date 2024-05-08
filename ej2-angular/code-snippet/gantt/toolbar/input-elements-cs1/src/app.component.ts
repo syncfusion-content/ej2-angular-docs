@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
+import { ToolbarService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -8,6 +14,12 @@ import { NumericTextBox} from '@syncfusion/ej2-inputs';
 import { ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
+imports: [
+         GanttModule, ToolbarModule
+    ],
+
+providers: [ToolbarService],
+standalone: true,
     selector: 'app-root',
     template:
        `

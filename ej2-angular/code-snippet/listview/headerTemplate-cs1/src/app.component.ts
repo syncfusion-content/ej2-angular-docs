@@ -1,9 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+import { ButtonModule  } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
+imports: [
+        
+        ListViewModule,ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
     <div id = 'flat-list'>

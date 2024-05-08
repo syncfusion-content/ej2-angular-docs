@@ -23,9 +23,7 @@ If it is true then we cancel the tooltip by setting the value for `args.cancel` 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/how-to-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/how-to-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/how-to-cs9/src/main.ts %}
 {% endhighlight %}

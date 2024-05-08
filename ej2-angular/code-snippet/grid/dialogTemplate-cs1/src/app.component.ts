@@ -1,3 +1,11 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'
+import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -7,6 +15,14 @@ import { DataUtil } from '@syncfusion/ej2-data';
 import { FormGroup } from '@angular/forms';
 
 @Component({
+imports: [
+        
+        GridModule,
+        NumericTextBoxAllModule, DatePickerAllModule, DropDownListAllModule, ReactiveFormsModule, FormsModule
+    ],
+
+providers: [EditService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     templateUrl: `template-driven.html`
 })

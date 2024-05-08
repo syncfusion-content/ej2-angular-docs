@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, GroupService, PageService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { L10n, loadCldr, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
@@ -9,6 +13,13 @@ import numbers from './numbers.json';
 import timeZoneNames from './timeZoneNames.json';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [GroupService, PageService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [locale]='locale' height='315px'>
                 <e-columns>

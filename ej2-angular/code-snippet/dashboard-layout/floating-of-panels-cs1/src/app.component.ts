@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
@@ -5,6 +10,10 @@ import { DashboardLayoutComponent } from '@syncfusion/ej2-angular-layouts';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+imports: [ DashboardLayoutModule, ButtonModule],
+
+
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./default-style.css'],
     template: `

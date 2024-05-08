@@ -34,9 +34,7 @@ You can change the floating label color of the TextBox for both `success` and `w
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textbox/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/getting-started-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/getting-started-cs7/src/main.ts %}
 {% endhighlight %}

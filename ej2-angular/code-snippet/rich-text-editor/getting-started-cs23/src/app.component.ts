@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 
@@ -6,6 +11,14 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService, BeforeSan
 import { detach } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        RichTextEditorAllModule,
+        DialogModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-richtexteditor id='defaultRTE' [value]='rteValue' (beforeSanitizeHtml)='onBeforeSanitizeHtml($event)'></ejs-richtexteditor>`,
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]

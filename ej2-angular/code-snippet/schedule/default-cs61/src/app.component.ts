@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DayService, WeekService, WorkWeekService, MonthService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component } from '@angular/core';
@@ -5,8 +11,21 @@ import { ScheduleComponent, EventSettingsModel, TimelineViewsService, DragAndDro
 import { roomData } from './datasource';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        ButtonModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService,
+                TimelineViewsService, ResizeService, DragAndDropService, TimelineMonthService],
+standalone: true,
   selector: 'app-root',
-  providers: [TimelineViewsService, ResizeService, DragAndDropService, TimelineMonthService, AgendaService],
   // specifies the template string for the Schedule component
   template: `<ejs-schedule width='100%' height='550px' [views]="scheduleViews" [selectedDate]="selectedDate" [eventSettings]="eventSettings"  [group]="group" [currentView]="currentView" [rowAutoHeight]="rowAutoHeight">
   <e-resources><e-resource field='RoomId' title='Room Type' [dataSource]='resourceDataSource' [allowMultiple]='allowMultiple' name='MeetingRoom' textField='text' idField='id' colorField='color'></e-resource>

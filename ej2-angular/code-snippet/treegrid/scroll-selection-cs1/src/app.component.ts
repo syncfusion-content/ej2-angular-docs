@@ -1,3 +1,9 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { RowSelectEventArgs } from '@syncfusion/ej2-grids';
@@ -7,6 +13,15 @@ import { TreeGridComponent  } from '@syncfusion/ej2-angular-treegrid';
 import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule,
+        NumericTextBoxModule
+    ],
+
+,
+standalone: true,
     selector: 'app-container',
     template: `
     <ejs-numerictextbox #numerictext  min="0" max="50" width='200' [showSpinButton]='false' format= 'N' value="0" placeHolder='Enter index to select a row' (change)='onChange($event)' ></ejs-numerictextbox>

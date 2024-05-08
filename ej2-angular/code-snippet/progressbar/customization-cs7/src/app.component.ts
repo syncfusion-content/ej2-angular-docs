@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ProgressBar, FontModel, AnimationModel, IProgressValueEventArgs } from '@syncfusion/ej2-progressbar';
 
 @Component({
+imports: [
+         ProgressBarModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template:
     `<ejs-progressbar #charts id='charts' type='Linear'  trackThickness=24  progressThickness=24  value = 90 [labelStyle]='labelStyle' (valueChanged)='valueChanged($event)' [showProgressValue]='showProgressValue' [animation]='animation'>

@@ -20,9 +20,7 @@ In the following sample, the icons for edit, delete, mark as read  and like mess
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/drop-down-button/popup-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/popup-icon-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/drop-down-button/popup-icon-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ In the following sample, navigation URL for Flipkart, Amazon, and Snapdeal actio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/drop-down-button/navigation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/navigation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/drop-down-button/navigation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ The following popup template is customized using `beforeItemRender` event by app
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/drop-down-button/template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/drop-down-button/template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ In the following sample, the whole popup item is customized as table template by
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/drop-down-button/popup-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/popup-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/drop-down-button/popup-cs1/src/main.ts %}
 {% endhighlight %}
@@ -103,9 +95,7 @@ In the following sample, cut, copy, and paste popup items are grouped using the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/drop-down-button/accessibility-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/accessibility-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/drop-down-button/accessibility-cs2/src/main.ts %}
 {% endhighlight %}

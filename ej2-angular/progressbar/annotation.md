@@ -19,9 +19,7 @@ For example, you can include add, start, or pause button to control the progress
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/progressbar/annotation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/annotation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/progressbar/annotation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -37,9 +35,7 @@ You can show the progress value in both linear and cicular progress bar using **
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/progressbar/annotation-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progressbar/annotation-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/progressbar/annotation-cs2/src/main.ts %}
 {% endhighlight %}

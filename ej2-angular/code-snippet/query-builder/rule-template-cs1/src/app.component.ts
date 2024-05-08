@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { QueryBuilderModule } from '@syncfusion/ej2-angular-querybuilder'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { SliderModule } from '@syncfusion/ej2-angular-inputs'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 import { Component, ViewChild, OnInit } from '@angular/core';
@@ -8,6 +15,15 @@ import { DataManager, Predicate, Query } from '@syncfusion/ej2-data';
 import { employeeData } from './datasource';
 
 @Component({
+imports: [
+        
+        QueryBuilderModule,
+		SliderModule,
+		DropDownListModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     templateUrl: `template-driven.html`
 })

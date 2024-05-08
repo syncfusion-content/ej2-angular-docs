@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MapsModule } from '@syncfusion/ej2-angular-maps'
+import { LegendService, BubbleService } from '@syncfusion/ej2-angular-maps'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { world_map } from './world-map';
 
 @Component({
+imports: [
+         MapsModule
+    ],
+
+providers: [LegendService, BubbleService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-maps id='rn-container'  [legendSettings] ='legendSettings'  >
     <e-layers>

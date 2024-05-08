@@ -28,9 +28,7 @@ Here's an example that demonstrates how to use group footer aggregates in the Sy
 {% highlight ts tabtitle="app.template.html" %}
 {% include code-snippet/grid/aggregates-group-cs1/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/aggregates-group-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/aggregates-group-cs1/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +52,7 @@ Here's an example that demonstrates how to use group and caption aggregates in t
 {% highlight ts tabtitle="app.template.html" %}
 {% include code-snippet/grid/aggregates-group-cs2/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/aggregates-group-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/aggregates-group-cs2/src/main.ts %}
 {% endhighlight %}
@@ -78,9 +74,7 @@ In some cases, you may want to disable the page-wise aggregates for grouping in 
 {% highlight ts tabtitle="app.template.html" %}
 {% include code-snippet/grid/aggregates-group-cs3/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/aggregates-group-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/aggregates-group-cs3/src/main.ts %}
 {% endhighlight %}

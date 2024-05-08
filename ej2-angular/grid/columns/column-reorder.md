@@ -20,9 +20,7 @@ Here's an example for column reordering in your Grid component:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/reorder-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/reorder-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/reorder-cs1/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ In this example, the **ShipCity** column is prevented from being reordered by se
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/reorder-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/reorder-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/reorder-cs6/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +70,7 @@ In this example, we are moving the column at index **1** to index **3**.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/reorder-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/reorder-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/reorder-cs7/src/main.ts %}
 {% endhighlight %}
@@ -97,9 +91,7 @@ Here is an example of how to use the `reorderColumnByTargetIndex` method to reor
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/reorder-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/reorder-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/reorder-cs8/src/main.ts %}
 {% endhighlight %}
@@ -120,9 +112,7 @@ Here is an example of how to use the `reorderColumns` method to reorder single c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/reorder-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/reorder-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/reorder-cs9/src/main.ts %}
 {% endhighlight %}
@@ -146,9 +136,7 @@ In the following example, we have implemented the `columnDragStart`, `columnDrag
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/reorder-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/reorder-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/reorder-cs4/src/main.ts %}
 {% endhighlight %}

@@ -25,9 +25,7 @@ In the following code example, you can see how to render only the last six month
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/year-customizations-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/year-customizations-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/year-customizations-cs1/src/main.ts %}
 {% endhighlight %}

@@ -1,9 +1,23 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DropDownButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+import { enableRipple } from '@syncfusion/ej2-base'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+
 
 
 import { Component } from '@angular/core';
 import { ItemModel } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
+imports: [
+        
+        ListViewModule,
+        DropDownButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <!-- To render ListView. -->

@@ -76,9 +76,7 @@ For the floating label enabled TextBox add the icon element as first or last ele
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textbox/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/getting-started-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
@@ -100,9 +98,7 @@ You can add the clear button to the TextBox by `showClearButton` API in textbox
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textbox/textbox-component-clearicons-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/textbox-component-clearicons-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/textbox-component-clearicons-cs1/src/main.ts %}
 {% endhighlight %}
@@ -124,9 +120,7 @@ Class Name        | Description
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textbox/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/getting-started-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
@@ -144,9 +138,7 @@ Add the floating label support to the `multi-line input` by creating the floatin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textbox/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textbox/getting-started-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textbox/getting-started-cs3/src/main.ts %}
 {% endhighlight %}

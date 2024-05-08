@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MapsModule } from '@syncfusion/ej2-angular-maps'
+import { MarkerService, MapsTooltipService, ZoomService } from '@syncfusion/ej2-angular-maps'
+
 
 
 import { Component, ViewEncapsulation, ViewChild, OnInit  } from '@angular/core';
 import { world_map } from './world-map';
 import { cluster } from './marker-location';;
 @Component({
+imports: [
+         MapsModule
+    ],
+
+providers: [MarkerService, MapsTooltipService, ZoomService],
+standalone: true,
     selector: 'app-container',
     template:
     `<ejs-maps id='rn-container' [zoomSettings] = 'zoomSettings' [layers] = 'layers'>

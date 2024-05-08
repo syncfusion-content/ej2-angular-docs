@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+
 
 
 import { Component } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, ResizeService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
+imports: [
+        
+        RichTextEditorAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
         template: `<ejs-richtexteditor id='defaultRTE' [enableResize]="true">
         <ng-template #valueTemplate>

@@ -16,9 +16,7 @@ The data points those uses the `null` or `undefined` as value are considered as 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/radius-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/radius-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/radius-cs7/src/main.ts %}
 {% endhighlight %}
@@ -35,9 +33,7 @@ border for an empty point can be set by using the `border` property.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/radius-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/radius-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/radius-cs8/src/main.ts %}
 {% endhighlight %}

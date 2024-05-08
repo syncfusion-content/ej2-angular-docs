@@ -30,9 +30,7 @@ The Gantt supports a set of filtering modes with the [`filterSettings.hierarchyM
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/filtering/filterhierarchy-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/filtering/filterhierarchy-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/filtering/filterhierarchy-cs1/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ To apply the filter at initial rendering, set the filter to predicate object in 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/filtering/initialfilter-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/filtering/initialfilter-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/filtering/initialfilter-cs1/src/main.ts %}
 {% endhighlight %}
@@ -88,9 +84,7 @@ In the following sample, type **Project** in the `TaskName` column to filter dia
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/filtering/diacritics-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/filtering/diacritics-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/filtering/diacritics-cs1/src/main.ts %}
 {% endhighlight %}
@@ -106,9 +100,7 @@ You can filter the columns dynamically by using the [`filterByColumn`](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/filtering/filtercolumn-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/filtering/filtercolumn-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/filtering/filtercolumn-cs1/src/main.ts %}
 {% endhighlight %}
@@ -124,9 +116,7 @@ You can clear all the filtering conditions done in the Gantt component by using 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/filtering/clearfilter-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/filtering/clearfilter-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/filtering/clearfilter-cs1/src/main.ts %}
 {% endhighlight %}

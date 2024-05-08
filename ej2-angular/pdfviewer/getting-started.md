@@ -173,9 +173,7 @@ export class AppComponent implements OnInit {
     }
 }
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pdfviewer/getting-started-cs1-standalone/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pdfviewer/getting-started-cs1-standalone/src/main.ts %}
 {% endhighlight %}

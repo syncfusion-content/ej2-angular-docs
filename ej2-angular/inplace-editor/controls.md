@@ -31,9 +31,7 @@ In the following sample, built-in and injectable based **In-place Editor** compo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/in-place-editor/controls-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/controls-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/in-place-editor/controls-cs1/src/main.ts %}
 {% endhighlight %}

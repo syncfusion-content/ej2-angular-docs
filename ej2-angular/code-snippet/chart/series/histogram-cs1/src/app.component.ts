@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { HistogramSeriesService } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { ILoadedEventArgs } from '@syncfusion/ej2-angular-charts';
 
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [HistogramSeriesService],
+standalone: true,
     selector: 'app-container',
     template: ` <ejs-chart style='display:block;' align='center' id='chart-container' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' (load)='load($event)'>
             <e-series-collection>

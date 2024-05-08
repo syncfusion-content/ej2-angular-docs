@@ -109,9 +109,7 @@ Source and target points of the selected connectors are represented with two han
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/interaction/connectoredit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/interaction/connectoredit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/interaction/connectoredit-cs1/src/main.ts %}
 {% endhighlight %}
@@ -190,9 +188,7 @@ The appearance of the user handle can be customized by using the [`size`](https:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/interaction/userhandle-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/interaction/userhandle-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/interaction/userhandle-cs1/src/main.ts %}
 {% endhighlight %}

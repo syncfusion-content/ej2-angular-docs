@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -6,6 +12,17 @@ import { data } from './datasource';
 
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                GroupService],
+standalone: true,
     selector: 'app-root',
     template: `<button ejs-button id='add' cssClass="e-info" (click)='addColumns()'> Add Column</button>
                <button ejs-button id='delete' cssClass="e-info" (click)='deleteColumns()'> Delete Column</button>

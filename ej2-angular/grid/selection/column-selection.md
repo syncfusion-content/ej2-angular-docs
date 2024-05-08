@@ -20,9 +20,7 @@ Here's an example of how to enable column selection using `allowColumnSelection`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cs6/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ Here's an example of how to enable single column selection using `allowColumnSel
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-column-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-column-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-column-cs7/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ Here's an example of how to enable multiple column selection using `allowColumnS
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-column-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-column-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-column-cs8/src/main.ts %}
 {% endhighlight %}
@@ -92,9 +86,7 @@ The following example, demonstrates how to select a single column within the Gri
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-column-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-column-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-column-cs9/src/main.ts %}
 {% endhighlight %}
@@ -116,9 +108,7 @@ The following example demonstrates how to select multiple columns in the Grid by
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-column-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-column-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-column-cs10/src/main.ts %}
 {% endhighlight %}
@@ -138,9 +128,7 @@ The following example demonstrates how to select a range of columns within the G
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-column-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-column-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-column-cs11/src/main.ts %}
 {% endhighlight %}
@@ -160,9 +148,7 @@ The following example demonstrates how to select a column with an existing colum
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-column-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-column-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-column-cs12/src/main.ts %}
 {% endhighlight %}
@@ -182,9 +168,7 @@ In the following example, it demonstrates how to clear column selection by calli
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-column-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-column-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-column-cs14/src/main.ts %}
 {% endhighlight %}
@@ -210,9 +194,7 @@ In the following example, column selection is canceled when the value of `field`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-column-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-column-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-column-cs13/src/main.ts %}
 {% endhighlight %}

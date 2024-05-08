@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import { FileMenuSettingsModel, RibbonButtonSettingsModel, RibbonSplitButtonSettingsModel, RibbonComboBoxSettingsModel, RibbonDropDownSettingsModel, RibbonItemSize, RibbonCheckBoxSettingsModel, RibbonColorPickerSettingsModel, DisplayMode } from '@syncfusion/ej2-angular-ribbon';
 
 @Component({
+imports: [ RibbonModule ],
+
+providers: [ RibbonFileMenuService, RibbonColorPickerService ],
+standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

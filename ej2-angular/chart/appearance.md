@@ -18,9 +18,7 @@ You can customize the default color of series or points by providing a custom co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ Marker, datalabel and fill color of each data point can be customized with [`poi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs1/src/main.ts %}
 {% endhighlight %}
@@ -61,9 +57,7 @@ Using [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs2/src/main.ts %}
 {% endhighlight %}
@@ -79,9 +73,7 @@ You can set margin for chart from its container through [`margin`](https://ej2.s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs3/src/main.ts %}
 {% endhighlight %}
@@ -97,9 +89,7 @@ Using [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs4/src/main.ts %}
 {% endhighlight %}
@@ -115,9 +105,7 @@ You can customize animation for a particular series using [`animation`](https://
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs5/src/main.ts %}
 {% endhighlight %}
@@ -133,9 +121,7 @@ Chart can be given a title using [`title`](https://ej2.syncfusion.com/angular/do
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/chart-title-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/chart-title-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/chart-title-cs1/src/main.ts %}
 {% endhighlight %}
@@ -155,9 +141,7 @@ You can add annotations to the chart by using the <code>annotations</code> optio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs6/src/main.ts %}
 {% endhighlight %}

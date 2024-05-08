@@ -30,9 +30,7 @@ The following sample demonstrates moving a panel programmatically to a new posit
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dashboard-layout/moving-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dashboard-layout/moving-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/moving-cs1/src/main.ts %}
 {% endhighlight %}

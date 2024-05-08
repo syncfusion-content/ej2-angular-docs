@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, EditService, CommandColumnService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -5,6 +9,13 @@ import { data } from './datasource';
 import { CommandModel, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [EditService, CommandColumnService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' height='310px'>
                 <e-columns>

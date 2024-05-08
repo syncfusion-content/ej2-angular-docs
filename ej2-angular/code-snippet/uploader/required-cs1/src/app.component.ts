@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
@@ -5,6 +11,12 @@ import { EmitType, createElement, detach } from '@syncfusion/ej2-base';
 import { UploaderComponent, SelectedEventArgs, FormValidator, FormValidatorModel  } from '@syncfusion/ej2-angular-inputs';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 @Component({
+imports: [
+        FormsModule, UploaderModule, DialogModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     templateUrl: './default.html',
     styleUrls: ['./index.css']

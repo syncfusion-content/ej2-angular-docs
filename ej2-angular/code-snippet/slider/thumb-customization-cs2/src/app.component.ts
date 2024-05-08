@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SliderModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 
@@ -5,6 +9,13 @@ import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { SliderComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+imports: [
+        
+        SliderModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
     <div class="slider_container">

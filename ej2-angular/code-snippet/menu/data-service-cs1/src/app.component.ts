@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MenuModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -8,6 +12,10 @@ import { FieldSettingsModel } from '@syncfusion/ej2-angular-navigations';
 enableRipple(true);
 
 @Component({
+imports: [ MenuModule],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
     <ejs-menu *ngIf='menuItems' [items]='menuItems' [fields]='menuFields'></ejs-menu></div>`

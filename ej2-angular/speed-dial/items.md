@@ -32,9 +32,7 @@ You can show icon only in SpeedDial items by setting [`iconCss`](https://ej2.syn
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/items-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/items-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/items-cs1/src/main.ts %}
 {% endhighlight %}
@@ -50,9 +48,7 @@ You can show only text in Speed Dial items by setting [`text`](https://ej2.syncf
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/items-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/items-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/items-cs2/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ You can show icon along with text in Speed Dial items by setting [`iconCss`](htt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/items-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/items-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/items-cs3/src/main.ts %}
 {% endhighlight %}
@@ -86,9 +80,7 @@ You can disable Speed Dial items by setting [`disabled`](https://ej2.syncfusion.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/items-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/items-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/items-cs4/src/main.ts %}
 {% endhighlight %}
@@ -106,9 +98,7 @@ Below example demonstrates the Speed Dial items with applied Zoom effect.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/items-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/items-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/items-cs5/src/main.ts %}
 {% endhighlight %}

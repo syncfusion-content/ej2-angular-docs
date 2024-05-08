@@ -1,3 +1,15 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, SortService, FilterService, GroupService  } from '@syncfusion/ej2-angular-grids'
+import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
+import { PieSeriesService, AccumulationTooltipService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
+import { LineSeriesService, DateTimeService, DataLabelService,StackingColumnSeriesService,CategoryService, ChartShape,
+       StepAreaSeriesService,SplineSeriesService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
+       SelectionService,ScatterSeriesService
+    } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -14,6 +26,15 @@ import { getElement } from '@syncfusion/ej2-charts';
  * Sample for Drilldown in Pie chart
  */
 @Component({
+imports: [
+         ChartModule, AccumulationChartModule, GridModule
+    ],
+
+providers: [ LineSeriesService, DateTimeService, DataLabelService, StackingColumnSeriesService,CategoryService,
+               StepAreaSeriesService, SplineSeriesService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
+               PieSeriesService, AccumulationTooltipService, AccumulationDataLabelService, SelectionService,ScatterSeriesService
+               ,PageService],
+standalone: true,
   selector: 'app-container',
   template: `<ejs-accumulationchart id="container" #pie style='display:block; width: 92%' [legendSettings]="legendSettings"
             [enableSmartLabels]='false' [title]="title" (textRender)="onTextRender($event)"

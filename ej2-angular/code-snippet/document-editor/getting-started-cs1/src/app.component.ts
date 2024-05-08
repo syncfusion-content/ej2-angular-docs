@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor'
+
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
@@ -11,6 +15,13 @@ import {
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
+imports: [
+        
+        DocumentEditorAllModule
+    ],
+
+
+standalone: true,
       selector: 'app-container',
       template: `<ejs-documenteditor id="container" serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="330px" style="display:block" [isReadOnly]=false [enableSelection]=true
       [enablePrint]=true [enableSfdtExport]=true [enableWordExport]=true [enableOptionsPane]=true [enableContextMenu]=true

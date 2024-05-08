@@ -1,10 +1,23 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 
 import { Component } from '@angular/core';
 import { ToolbarService, QuickToolbarService, LinkService, HtmlEditorService, AudioService } from '@syncfusion/ej2-angular-richtexteditor';
 
-@Component( {
+@Component({
+imports: [
+        
+        RichTextEditorAllModule,
+        DialogModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-richtexteditor id='' [toolbarSettings]='toolbarSettings'>
     <ng-template #valueTemplate>

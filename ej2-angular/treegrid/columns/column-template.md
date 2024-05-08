@@ -53,9 +53,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -112,9 +110,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/template-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/template-cs2/src/main.ts %}
 {% endhighlight %}
@@ -144,9 +140,7 @@ In the following code, we rendered the ColorPicker component in the tree grid co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/template-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/template-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/template-cs4/src/main.ts %}
 {% endhighlight %}
@@ -168,9 +162,7 @@ To render a custom component in a tree grid column, you need to define a templat
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/template-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/template-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/template-cs5/src/main.ts %}
 {% endhighlight %}
@@ -194,9 +186,7 @@ In the following code, we rendered the Chips component in the Tree Grid **First 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/template-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/template-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/template-cs6/src/main.ts %}
 {% endhighlight %}
@@ -214,9 +204,7 @@ In the following example, we rendered the Sparkline Chart component in the tree 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/template-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/template-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/template-cs3/src/main.ts %}
 {% endhighlight %}
@@ -245,9 +233,7 @@ The following example demonstrates how to use the `template` property with the `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/template-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/template-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/template-cs7/src/main.ts %}
 {% endhighlight %}
@@ -267,9 +253,7 @@ In the following code, the button element is rendered in the **Employee Data** c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/template-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/template-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/template-cs8/src/main.ts %}
 {% endhighlight %}
@@ -318,9 +302,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/template-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/template-cs9/src/main.ts %}
 {% endhighlight %}

@@ -16,9 +16,7 @@ The following example demonstrate about how to disable the Fixed group header in
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdownlist/disable-group-header-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/disable-group-header-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/disable-group-header-cs1/src/main.ts %}
 {% endhighlight %}

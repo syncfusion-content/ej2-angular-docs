@@ -26,9 +26,7 @@ To specify the [`width`](https://ej2.syncfusion.com/angular/documentation/api/tr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-cs28/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs28/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-cs28/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ Setting the [`height`](https://ej2.syncfusion.com/angular/documentation/api/tree
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/responsive-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/responsive-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/responsive-cs1/src/main.ts %}
 {% endhighlight %}
@@ -63,9 +59,7 @@ Scroll the tree grid content to the selected row position by using the [`rowSele
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/scroll-selection-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/scroll-selection-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/scroll-selection-cs1/src/main.ts %}
 {% endhighlight %}
@@ -83,9 +77,7 @@ In the following sample, the [`hideScroll`](https://ej2.syncfusion.com/angular/d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/scroll-selection-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/scroll-selection-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/scroll-selection-cs2/src/main.ts %}
 {% endhighlight %}

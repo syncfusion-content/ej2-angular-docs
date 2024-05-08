@@ -1,8 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AccordionModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
+imports: [
+         AccordionModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `
     <ejs-accordion expandMode='Single'>

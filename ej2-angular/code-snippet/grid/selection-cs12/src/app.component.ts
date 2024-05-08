@@ -1,8 +1,23 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import {GridModule, PageService, EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, SelectionSettingsModel, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule,
+        DialogModule
+    ],
+
+providers: [EditService, ToolbarService, PageService, FilterService],
+standalone: true,
   selector: 'app-root',
   template: `
     <div style="padding: 20px 0px">

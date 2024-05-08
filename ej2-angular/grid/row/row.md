@@ -26,9 +26,7 @@ Here's an example of how you can use the `rowDataBound` event to customize the s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/row-css-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-css-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/row-css-cs11/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +58,7 @@ Here's an example of how to use the **.e-altrow** class to style alternate rows:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/row-style-alt-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-style-alt-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/row-style-alt-cs1/src/main.ts %}
 {% endhighlight %}
@@ -88,9 +84,7 @@ Here's an example of how to use the **.e-selectionbackground** class to style th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/row-style-selected-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-style-selected-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/row-style-selected-cs1/src/main.ts %}
 {% endhighlight %}
@@ -115,9 +109,7 @@ The following example demonstrates how to use [getRowByIndex](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/rows-event-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/rows-event-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/rows-event-cs1/src/main.ts %}
 {% endhighlight %}
@@ -135,9 +127,7 @@ In the below example, we will demonstrate how to dynamically change the height o
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/row-height-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-height-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/row-height-cs1/src/main.ts %}
 {% endhighlight %}
@@ -161,9 +151,7 @@ In the below example, the row height for the row with **OrderID** as '10249' is 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/row-height-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-height-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/row-height-cs8/src/main.ts %}
 {% endhighlight %}
@@ -187,9 +175,7 @@ Here is an example that demonstrates how to enable/disable row hover based on th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/row-hover-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-hover-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/row-hover-cs1/src/main.ts %}
 {% endhighlight %}
@@ -212,9 +198,7 @@ Here's an example that demonstrates how to use the `rowDataBound` event and `get
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/row-hover-info-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-hover-info-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/row-hover-info-cs1/src/main.ts %}
 {% endhighlight %}
@@ -234,9 +218,7 @@ In the following example, the [frozenRows](https://ej2.syncfusion.com/angular/do
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/frozenrows-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/frozenrows-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/frozenrows-cs1/src/main.ts %}
 {% endhighlight %}
@@ -266,9 +248,7 @@ By applying this CSS class, you can set the background color of frozen rows to t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/frozenrows-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/frozenrows-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/frozenrows-cs2/src/main.ts %}
 {% endhighlight %}
@@ -309,9 +289,7 @@ Here's an example of how to add a new row using the `addRecord` method:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/add-new-row-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/add-new-row-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/add-new-row-cs1/src/main.ts %}
 {% endhighlight %}
@@ -339,9 +317,7 @@ If the checkbox is unchecked, the method iterates through the hiddenRows array a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/row-grid-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-grid-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/row-grid-cs1/src/main.ts %}
 {% endhighlight %}

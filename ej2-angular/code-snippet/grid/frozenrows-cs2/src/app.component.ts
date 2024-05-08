@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, FreezeService, SelectionService, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+
 
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule,
+    ],
+
+providers: [FreezeService, SelectionService, EditService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height=315 [allowSelection]='false' [frozenRows]='3' [enableHover]='false'>
     <e-columns>

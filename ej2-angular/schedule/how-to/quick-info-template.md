@@ -16,9 +16,7 @@ This demo showcases the quick popups for cells and appointments with the customi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/quick-info-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/quick-info-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/quick-info-template-cs1/src/main.ts %}
 {% endhighlight %}

@@ -22,9 +22,7 @@ For example, to load translations for English and French, you can do the followi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/locale-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/locale-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/locale-cs1/src/main.ts %}
 {% endhighlight %}

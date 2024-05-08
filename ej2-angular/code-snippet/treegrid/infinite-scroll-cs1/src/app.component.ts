@@ -1,9 +1,22 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, InfiniteScrollService } from '@syncfusion/ej2-angular-treegrid'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { dataSource, virtualData } from './datasource';
 
 @Component({
+imports: [
+        
+        TreeGridModule
+    ],
+
+providers: [PageService,
+        InfiniteScrollService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' [enableInfiniteScrolling]=true height=317 [pageSettings]='pageSettings' childMapping='Crew' [treeColumnIndex]='1' >
         <e-columns>

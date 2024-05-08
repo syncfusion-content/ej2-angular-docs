@@ -18,9 +18,7 @@ Here below sample demonstrates to playing audio background while opening toast. 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toast/toast-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toast/toast-cs11/src/main.ts %}
 {% endhighlight %}

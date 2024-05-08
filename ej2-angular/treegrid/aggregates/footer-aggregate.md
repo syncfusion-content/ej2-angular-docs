@@ -16,9 +16,7 @@ Footer aggregate value is calculated for all the rows, and it is displayed in th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/aggregate-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/aggregate-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/aggregate-cs3/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ You can format the aggregate value result by using the [`format`](https://ej2.sy
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/aggregate-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/aggregate-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/aggregate-cs4/src/main.ts %}
 {% endhighlight %}

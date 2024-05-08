@@ -80,9 +80,7 @@ In this demonstration, Angular routing was utilized to create and define routes 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/routing-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/routing-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="app.component.html" %}
 {% include code-snippet/grid/routing-cs1/src/app.component.html %}
 {% endhighlight %}

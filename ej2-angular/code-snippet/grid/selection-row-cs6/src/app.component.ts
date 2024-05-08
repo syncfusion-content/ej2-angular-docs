@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
+import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import {
@@ -7,6 +14,15 @@ import {
 } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        TextBoxModule,
+        ButtonModule
+    ],
+
+providers: [EditService, ToolbarService, PageService, FilterService],
+standalone: true,
   selector: 'app-root',
   template: `
         <div style="padding: 10px 0px 20px 0px">

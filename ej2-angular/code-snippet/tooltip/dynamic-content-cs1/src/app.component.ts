@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+import { RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -5,6 +10,13 @@ import { Component, ViewChild } from '@angular/core';
 import { Ajax } from '@syncfusion/ej2-base';
 import { TooltipComponent, TooltipEventArgs, TooltipModule } from '@syncfusion/ej2-angular-popups';
 @Component({
+imports: [
+        
+        TooltipModule, RadioButtonModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
     <div id="tool">

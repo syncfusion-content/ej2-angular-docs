@@ -18,9 +18,7 @@ To render a stacked column series, use series [`type`](https://ej2.syncfusion.co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/stack-column/stack-column-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/stack-column/stack-column-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/stack-column/stack-column-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ To group the stacked column, the [`stackingGroup`](https://ej2.syncfusion.com/an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/stack-column/stack-column-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/stack-column/stack-column-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/stack-column/stack-column-cs2/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ To render a cylindrical stacked column chart, set the [`columnFacet`](https://ej
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/stack-column/stack-column-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/stack-column/stack-column-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/stack-column/stack-column-cs3/src/main.ts %}
 {% endhighlight %}
@@ -75,9 +69,7 @@ The following properties can be used to customize the `stacked column` series.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/stack-column/stack-column-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/stack-column/stack-column-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/stack-column/stack-column-cs4/src/main.ts %}
 {% endhighlight %}

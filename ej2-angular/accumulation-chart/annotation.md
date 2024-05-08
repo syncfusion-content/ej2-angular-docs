@@ -20,9 +20,7 @@ By using the <code>content</code> option of annotation property, you can specify
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pie-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ The annotation can be placed with respect to either `Series` or `Chart`.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pie-cs2/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ Specifies the coordinate units of an annotation either in `Pixel` or `Point`.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pie-cs3/src/main.ts %}
 {% endhighlight %}
@@ -77,9 +71,7 @@ The `verticalAlignment` property can be customized via `Top`, `Bottom` or `Middl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pie-cs4/src/main.ts %}
 {% endhighlight %}

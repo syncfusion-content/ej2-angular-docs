@@ -21,9 +21,7 @@ Start and end value of a range in an axis can be customized by using [`start`](h
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-ranges-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs1/src/main.ts %}
 {% endhighlight %}
@@ -39,9 +37,7 @@ Color and thickness of the range can be customized by using [`color`](https://ej
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-ranges-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs2/src/main.ts %}
 {% endhighlight %}
@@ -65,9 +61,7 @@ You can set the radius of the range in pixel as demonstrated below,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-ranges-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs3/src/main.ts %}
 {% endhighlight %}
@@ -86,9 +80,7 @@ For example, when the radius is ‘50%’, range renders to half of the axis rad
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-ranges-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs4/src/main.ts %}
 {% endhighlight %}
@@ -106,9 +98,7 @@ The ranges can be dragged on the axis line by clicking and dragging the same. To
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-pointers-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-pointers-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-pointers-cs15/src/main.ts %}
 {% endhighlight %}
@@ -126,9 +116,7 @@ You can add multiple ranges to an axis with the above customization as demonstra
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-ranges-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs5/src/main.ts %}
 {% endhighlight %}
@@ -144,9 +132,7 @@ You can customize the corner radius using the `roundedCornerRadius` property in 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-ranges-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs6/src/main.ts %}
 {% endhighlight %}
@@ -171,9 +157,7 @@ To apply linear gradient to the range, follow the below code sample.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-ranges-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs7/src/main.ts %}
 {% endhighlight %}
@@ -191,9 +175,7 @@ To apply radial gradient to the range, follow the below code sample.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-ranges-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-ranges-cs8/src/main.ts %}
 {% endhighlight %}

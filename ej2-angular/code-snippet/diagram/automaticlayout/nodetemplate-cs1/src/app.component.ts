@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule, HierarchicalTreeService, DataBindingService } from '@syncfusion/ej2-angular-diagrams'
+
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -5,6 +9,12 @@ import { DiagramComponent, Diagram, NodeModel, ConnectorModel, SnapSettingsModel
 import { DataManager, Query } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+         DiagramModule
+    ],
+
+providers: [HierarchicalTreeService, DataBindingService],
+standalone: true,
     selector: "app-container",
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults]="getNodeDefaults" [getConnectorDefaults]="getConnectorDefaults" [snapSettings]="snapSettings" [layout]="layout" [dataSourceSettings]="dataSourceSettings" [setNodeTemplate]="setNodeTemplate">
     </ejs-diagram>`,

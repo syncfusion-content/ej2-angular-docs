@@ -24,9 +24,7 @@ To render a line series, use series [`type`](https://ej2.syncfusion.com/angular/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/series-types/line-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/series-types/line-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/series-types/line-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ To render an area series, use series [`type`](https://ej2.syncfusion.com/angular
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/series-types/area-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/series-types/area-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/series-types/area-cs1/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ To render a Step line series, use series [Type](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/series-types/stepline-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/series-types/stepline-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/series-types/stepline-cs1/src/main.ts %}
 {% endhighlight %}

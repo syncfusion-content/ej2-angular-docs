@@ -1,9 +1,22 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { LineSeriesService, DateTimeService, DataLabelService,StackingColumnSeriesService,CategoryService, ChartShape,
+       StepAreaSeriesService,ChartAnnotationService, LegendService, TooltipService} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { IPointRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ LineSeriesService, DateTimeService, DataLabelService, StackingColumnSeriesService,CategoryService,
+               StepAreaSeriesService,ChartAnnotationService, LegendService, TooltipService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'  [tooltip]='tooltip'>
         <e-series-collection>

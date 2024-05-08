@@ -18,9 +18,7 @@ The numeric axis can be used to represent the numeric values of data in 3D chart
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ The range of an axis will be calculated automatically based on the provided data
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs2/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs3/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs4/src/main.ts %}
 {% endhighlight %}
@@ -100,9 +92,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs5/src/main.ts %}
 {% endhighlight %}
@@ -118,9 +108,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs6/src/main.ts %}
 {% endhighlight %}
@@ -136,9 +124,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs7/src/main.ts %}
 {% endhighlight %}
@@ -156,9 +142,7 @@ Numeric labels can be formatted by using the [`labelFormat`](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs9/src/main.ts %}
 {% endhighlight %}
@@ -234,9 +218,7 @@ To separate the y-axis labels to groups of thousands, set the [`useGroupingSepar
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs8/src/main.ts %}
 {% endhighlight %}
@@ -252,9 +234,7 @@ The axis supports custom label format using placeholder like **{value}°C**, i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/numeric-axis/numeric-axis-cs10/src/main.ts %}
 {% endhighlight %}

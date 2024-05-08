@@ -21,9 +21,7 @@ Refer to the following example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/uploader-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/uploader-cs7/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +64,7 @@ Refer to the following example to upload files to the server.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/directory-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/directory-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/directory-cs1/src/main.ts %}
 {% endhighlight %}
@@ -130,9 +126,7 @@ The element can be represented as HTML element or element’s ID.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/draganddrop-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/draganddrop-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/draganddrop-cs1/src/main.ts %}
 {% endhighlight %}
@@ -149,9 +143,7 @@ The class **e-upload-drag-hover** is available to handle this customization.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/cus_draganddrop-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/cus_draganddrop-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/cus_draganddrop-cs1/src/main.ts %}
 {% endhighlight %}

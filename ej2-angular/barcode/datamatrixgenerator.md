@@ -18,9 +18,7 @@ DataMatrix Barcode is a two dimensional barcode that consists of a grid of dark 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/datamatrix/datamatrix-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/datamatrix/datamatrix-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/datamatrix/datamatrix-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ A page or printed media with barcode often appears colorful in the background an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/datamatrix/color-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/datamatrix/color-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/datamatrix/color-cs1/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ The dimension of the barcode can be changed using the height and width property 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/datamatrix/dimension-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/datamatrix/dimension-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/datamatrix/dimension-cs1/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ In barcode generators you can customize the barcode text by using the display te
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/datamatrix/text-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/datamatrix/text-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/datamatrix/text-cs1/src/main.ts %}
 {% endhighlight %}

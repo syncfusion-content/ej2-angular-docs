@@ -18,9 +18,7 @@ To achieve the client side validation in a DateTimePicker component by using `Fo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datetimepicker/how-to-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datetimepicker/how-to-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datetimepicker/how-to-cs1/src/main.ts %}
 {% endhighlight %}

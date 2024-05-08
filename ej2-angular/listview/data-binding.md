@@ -47,9 +47,7 @@ ListView supports to load the array of primitive data like string and numbers. H
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/data-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/data-binding-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/data-binding-cs1/src/main.ts %}
 {% endhighlight %}
@@ -67,9 +65,7 @@ In below example, role column has mapped with text field.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/data-binding-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/data-binding-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/data-binding-cs2/src/main.ts %}
 {% endhighlight %}
@@ -87,9 +83,7 @@ In the below sample, displayed first 6 Products from Product table of NorthWind 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/data-binding-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/data-binding-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/data-binding-cs3/src/main.ts %}
 {% endhighlight %}

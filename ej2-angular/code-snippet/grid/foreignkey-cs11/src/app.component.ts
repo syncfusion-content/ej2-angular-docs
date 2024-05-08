@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ForeignKeyService } from '@syncfusion/ej2-angular-grids'
+
 
 import { Component, OnInit } from '@angular/core';
 import { data, employeeData } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [ForeignKeyService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [height]='315'>
                     <e-columns>

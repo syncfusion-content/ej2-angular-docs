@@ -20,9 +20,7 @@ To bind local data to the Essential JS 2 components, you can assign a JavaScript
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/in-place-editor/data-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/data-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/in-place-editor/data-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ In the following sample, **In-place Editor** renders a `DropDownList` component 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/in-place-editor/data-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/data-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/in-place-editor/data-cs2/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ In the following sample, **In-place Editor** render a `DropDownList` component a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/in-place-editor/data-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/data-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/in-place-editor/data-cs3/src/main.ts %}
 {% endhighlight %}

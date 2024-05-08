@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { DateTimeService, AreaSeriesService, SplineSeriesService } from '@syncfusion/ej2-angular-charts'
+import { CrosshairService } from '@syncfusion/ej2-angular-charts'
+
 
 
 
@@ -6,6 +12,12 @@ import { IMouseEventArgs, ChartComponent } from '@syncfusion/ej2-angular-charts'
 import { synchronizedData } from './datasource';
 import { Browser } from '@syncfusion/ej2-base';
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ DateTimeService, AreaSeriesService, SplineSeriesService, CrosshairService],
+standalone: true,
     selector: 'app-container',
     template: `<div class="control-section">
     <div class="row">

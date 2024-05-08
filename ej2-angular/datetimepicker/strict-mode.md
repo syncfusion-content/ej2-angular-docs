@@ -22,9 +22,7 @@ The following example demonstrates the DateTimePicker with strictMode `true`.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datetimepicker/accessibility-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs7/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ If you are entering the out-of-range or invalid datetime value, then the model v
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datetimepicker/accessibility-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datetimepicker/accessibility-cs8/src/main.ts %}
 {% endhighlight %}

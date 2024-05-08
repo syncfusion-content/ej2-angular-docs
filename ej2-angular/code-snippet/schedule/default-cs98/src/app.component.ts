@@ -1,8 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule, TimelineMonthService, RecurrenceEditorModule } from '@syncfusion/ej2-angular-schedule'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 import { Component } from '@angular/core';
-import { EventSettingsModel, TimelineMonthService, GroupModel } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, GroupModel } from '@syncfusion/ej2-angular-schedule';
 import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        RecurrenceEditorModule,
+        ButtonModule
+    ],
+standalone: true,
   selector: 'app-root',
   providers: [TimelineMonthService],
   // specifies the template string for the Schedule component

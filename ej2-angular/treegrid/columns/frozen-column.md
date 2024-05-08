@@ -18,9 +18,7 @@ In the following example, the [frozenColumns](https://ej2.syncfusion.com/angular
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/frozencolumns-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/frozencolumns-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/frozencolumns-cs1/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ The following example demonstrates how to freeze particular column in tree grid 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/frozencolumns-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/frozencolumns-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/frozencolumns-cs2/src/main.ts %}
 {% endhighlight %}
@@ -75,9 +71,7 @@ In the following example, the **taskName** column is frozen on the left side, th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/frozencolumns-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/frozencolumns-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/frozencolumns-cs3/src/main.ts %}
 {% endhighlight %}
@@ -124,9 +118,7 @@ The following example demonstrates how to change the default frozen line color u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/frozencolumns-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/frozencolumns-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/frozencolumns-cs4/src/main.ts %}
 {% endhighlight %}

@@ -31,9 +31,7 @@ The following code example shows you how to bind the hierarchical local data int
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/data-binding-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/data-binding-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/data-binding-cs2/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +52,7 @@ TreeGrid is rendered from Self-Referential data structures by providing two fiel
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/data-binding-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/data-binding-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/data-binding-cs3/src/main.ts %}
 {% endhighlight %}
@@ -114,9 +110,7 @@ Refresh the tree grid after changing the datasource by using the `refresh` metho
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/refresh-datasource-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/refresh-datasource-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/refresh-datasource-cs1/src/main.ts %}
 {% endhighlight %}

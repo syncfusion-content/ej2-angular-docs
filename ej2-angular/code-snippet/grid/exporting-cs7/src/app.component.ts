@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ToolbarService, PdfExportService } from '@syncfusion/ej2-angular-grids'
+
 
 
 
@@ -7,6 +11,13 @@ import { GridComponent, ToolbarItems, PdfExportProperties } from '@syncfusion/ej
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [PdfExportService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `<p><b>First Grid:</b></p>
     <ejs-grid #firstGrid id='FirstGrid' [dataSource]='firstGridData' [toolbar]='toolbarOptions' [allowPdfExport]='true'

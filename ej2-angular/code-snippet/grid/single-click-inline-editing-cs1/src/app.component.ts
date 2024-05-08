@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, EditService, PageService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+
 
 
 
@@ -7,6 +11,13 @@ import { MouseEventArgs } from '@syncfusion/ej2-base';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [EditService, PageService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' allowPaging='true' (load)='load($event)'>
                 <e-columns>

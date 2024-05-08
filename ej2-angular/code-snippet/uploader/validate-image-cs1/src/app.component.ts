@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { Component } from '@angular/core';
@@ -5,6 +9,12 @@ import { EmitType } from '@syncfusion/ej2-base';
 import { SelectedEventArgs, UploaderComponent } from '@syncfusion/ej2-angular-inputs';
 import {  } from '@syncfusion/ej2-angular-inputs';
 @Component({
+imports: [
+         UploaderModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     templateUrl: './default.html',
     styleUrls: ['./index.css']

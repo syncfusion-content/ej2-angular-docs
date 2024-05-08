@@ -1,3 +1,11 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, FilterService, SortService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import {TextBoxModule} from '@syncfusion/ej2-angular-inputs'
+
 import { Component, ViewChild } from '@angular/core';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 import { GridComponent, ColumnModel } from '@syncfusion/ej2-angular-grids';
@@ -5,6 +13,16 @@ import { Query, DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
 
 const SERVICE_URI: string = 'https://services.syncfusion.com/angular/production/';
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule,
+        DropDownListAllModule,
+        TextBoxModule
+    ],
+
+providers: [PageService, FilterService, SortService],
+standalone: true,
   selector: 'app-root',
   template: `<ejs-grid #grid [dataSource]='data' [query]='query' allowSorting='true' allowPaging='true' allowFiltering='true' [pageSettings]='pageSettings' [filterSettings]='filterSettings'>
               <e-columns>

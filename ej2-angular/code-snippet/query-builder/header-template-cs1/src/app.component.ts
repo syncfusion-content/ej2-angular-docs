@@ -1,3 +1,10 @@
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { QueryBuilderModule } from '@syncfusion/ej2-angular-querybuilder'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+import { DropDownButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+
 
 
 import { Component, ViewChild, OnInit } from '@angular/core';
@@ -7,6 +14,16 @@ import { ItemModel, MenuEventArgs } from '@syncfusion/ej2-splitbuttons';
 import { closest } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+    
+	  QueryBuilderModule,
+    CheckBoxModule,
+    DropDownListModule,
+    DropDownButtonModule
+  ],
+
+
+standalone: true,
   selector: 'app-root',
   templateUrl: `template-driven.html`
 })

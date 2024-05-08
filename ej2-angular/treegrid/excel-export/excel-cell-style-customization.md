@@ -20,9 +20,7 @@ In the below sample, we have set the background color for `Duration` column in t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/excel-export-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-export-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/excel-export-cs2/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ To apply theme in exported Excel, define the `theme` in `exportProperties` .
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/excel-export-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-export-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/excel-export-cs3/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -9,6 +13,13 @@ import { dataSource1, dataSource2 } from './datasource';
 enableRipple(true);
 
 @Component({
+imports: [
+        
+        SpreadsheetAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<button class="e-btn" style="margin: 5px 0;" (click)="btnClick()">
                 Unlock cells</button>

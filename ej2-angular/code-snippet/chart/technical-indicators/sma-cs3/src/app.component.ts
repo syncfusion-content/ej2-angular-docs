@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { CandleSeriesService, LineSeriesService, SmaIndicatorService, DateTimeService} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
@@ -62,6 +67,12 @@ let chartData: any[] = [
     {x: new Date('2013-11-18'), open: 74.9985, high: 75.3128, low: 73.3814,close: 74.2571,volume: 282778778},
 ];
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ CandleSeriesService, LineSeriesService, SmaIndicatorService, DateTimeService],
+standalone: true,
     selector: 'app-container',
     template:
             `<ejs-chart id='chartcontainer' style="display:block;" [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'

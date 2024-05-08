@@ -29,9 +29,7 @@ The following example demonstrates how to export current page to a Excel documen
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-cs4/src/main.ts %}
 {% endhighlight %}
@@ -61,9 +59,7 @@ The following example demonstrates how to export the selected records to a Excel
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-filtered-data-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-filtered-data-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-filtered-data-cs1/src/main.ts %}
 {% endhighlight %}
@@ -83,9 +79,7 @@ The following example demonstrates how to export grouped records to an Excel doc
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-cs8/src/main.ts %}
 {% endhighlight %}
@@ -105,9 +99,7 @@ The following example demonstrates how to export hidden columns to a Excel file.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-cs5/src/main.ts %}
 {% endhighlight %}
@@ -135,9 +127,7 @@ In the following example, the **CustomerID** is initially a hidden column in the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-cs6/src/main.ts %}
 {% endhighlight %}
@@ -157,9 +147,7 @@ The following example demonstrates how to export data with filter options to an 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-cs7/src/main.ts %}
 {% endhighlight %}
@@ -179,9 +167,7 @@ The following example demonstrates how to define a file name using `ExcelExportP
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-cs9/src/main.ts %}
 {% endhighlight %} 
@@ -201,9 +187,7 @@ The following example demonstrates how to export master detail grid to the same 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/export-masterdetail-grid/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/export-masterdetail-grid/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/export-masterdetail-grid/src/main.ts %}
 {% endhighlight %}
@@ -229,9 +213,7 @@ The following example demonstrates how to customize the grid columns when export
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-column/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-column/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-column/src/main.ts %}
 {% endhighlight %}
@@ -257,9 +239,7 @@ In the following example, apply font styling to the caption, header, and record 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-cs3/src/main.ts %}
 {% endhighlight %}
@@ -281,9 +261,7 @@ In the following demo, using the `rotation` property of the style argument in th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-grouping/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-grouping/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-grouping/src/main.ts %}
 {% endhighlight %}
@@ -303,9 +281,7 @@ The following example demonstrate how to customize the background color of the F
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-cs2/src/main.ts %}
 {% endhighlight %}
@@ -325,9 +301,7 @@ The following example demonstrates how to add a header and footer to the exporte
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-exporting-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-exporting-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-exporting-cs1/src/main.ts %}
 {% endhighlight %}
@@ -345,9 +319,7 @@ The following example demonstrates how to obtain the blob data of the exported g
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/export-grid-as-blob-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/export-grid-as-blob-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/export-grid-as-blob-cs2/src/main.ts %}
 {% endhighlight %}

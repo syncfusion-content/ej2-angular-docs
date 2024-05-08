@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ImageEditorModule } from '@syncfusion/ej2-angular-image-editor'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 import { Component,ViewChild } from '@angular/core';
@@ -5,6 +10,13 @@ import { Browser } from '@syncfusion/ej2-base';
 import { ImageEditorCommand, ImageEditorComponent, ToolbarEventArgs } from '@syncfusion/ej2-angular-image-editor';
 
 @Component({
+imports: [
+        
+        ImageEditorModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
               <!-- To render Image Editor. -->

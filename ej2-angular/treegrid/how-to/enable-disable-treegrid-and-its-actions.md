@@ -53,9 +53,7 @@ In the below demo, the button click will enable/disable the Tree Grid and its ac
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/enable-disable-actions-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/enable-disable-actions-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/enable-disable-actions-cs1/src/main.ts %}
 {% endhighlight %}

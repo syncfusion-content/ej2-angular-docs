@@ -218,9 +218,7 @@ The following example demonstrates how to prevent the default behavior of the **
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/keyboard-navigation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/keyboard-navigation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/keyboard-navigation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -256,9 +254,7 @@ You can add more custom shortcuts and actions as needed to enhance the functiona
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs51/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs51/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs51/src/main.ts %}
 {% endhighlight %}
@@ -276,9 +272,7 @@ The accessibility compliance of the Grid component is shown in the following sam
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/ensuring-accessibility/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/ensuring-accessibility/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/ensuring-accessibility/src/main.ts %}
 {% endhighlight %}

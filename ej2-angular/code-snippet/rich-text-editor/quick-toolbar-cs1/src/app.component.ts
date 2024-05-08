@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RichTextEditor, RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -5,6 +11,14 @@ import { Component, ViewChild } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService,
 QuickToolbarService, RichTextEditorComponent, QuickToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
+imports: [
+        
+        ButtonModule,
+        RichTextEditorAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-richtexteditor #imageRTE id='imageRTE' [quickToolbarSettings]='quickToolbarSettings' (quickToolbarSettingsChange)=' quickToolbarSettingsChange'>
             <ng-template #valueTemplate>

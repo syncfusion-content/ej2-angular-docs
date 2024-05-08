@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -11,9 +16,16 @@ import {
   AgendaService,
   ResizeService,
   DragAndDropService,
+  MonthAgendaService
 } from '@syncfusion/ej2-angular-schedule';
 let initialLoad = true;
 @Component({
+imports: [
+        
+        ScheduleModule,
+        ButtonModule
+    ],
+standalone: true,
   selector: 'app-root',
   template: `<div class="control-section">
     <div class="col-lg-12 content-wrapper">
@@ -29,6 +41,7 @@ let initialLoad = true;
     AgendaService,
     ResizeService,
     DragAndDropService,
+    MonthAgendaService
   ],
 })
 export class AppComponent {

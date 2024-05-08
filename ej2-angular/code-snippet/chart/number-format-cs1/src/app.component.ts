@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule} from '@syncfusion/ej2-angular-charts'
+import { LegendService, TooltipService, DataLabelService, ColumnSeriesService, DateTimeService} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -5,6 +10,12 @@ import { setCurrencyCode } from '@syncfusion/ej2-base';
 setCurrencyCode('EUR');
 
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ LegendService, TooltipService, DataLabelService, ColumnSeriesService, DateTimeService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'[tooltip]='tooltip'>
         <e-series-collection>

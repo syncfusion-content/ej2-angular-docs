@@ -41,9 +41,7 @@ To make use of Islamic calendar in Scheduler, import the `Calendar` and `Islamic
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/islamic-calendar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/islamic-calendar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/islamic-calendar-cs1/src/main.ts %}
 {% endhighlight %}

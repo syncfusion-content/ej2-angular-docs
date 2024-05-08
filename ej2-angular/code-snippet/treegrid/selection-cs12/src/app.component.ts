@@ -1,8 +1,26 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-treegrid'
 import { CellSelectEventArgs } from '@syncfusion/ej2-angular-grids';
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule,
+        DropDownListAllModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' (cellSelected)='cellSelected($event)' height=250 [treeColumnIndex]='1' [allowPaging]='true' childMapping='subtasks' [selectionSettings]='selectionOptions'>
     <e-columns>

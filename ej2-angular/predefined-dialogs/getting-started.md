@@ -154,9 +154,7 @@ An alert dialog box used to display an errors, warnings, and information alerts 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/predefined-dialogs/dialog-alert-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/dialog-alert-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/predefined-dialogs/dialog-alert-cs1/src/main.ts %}
 {% endhighlight %}
@@ -172,9 +170,7 @@ A confirm dialog box used to displays a specified message along with the â€˜OKâ€
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/predefined-dialogs/dialog-confirm-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/dialog-confirm-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/predefined-dialogs/dialog-confirm-cs1/src/main.ts %}
 {% endhighlight %}
@@ -190,9 +186,7 @@ A prompt dialog is used to get the input from the user. When the user clicks the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/predefined-dialogs/dialog-prompt-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/dialog-prompt-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/predefined-dialogs/dialog-prompt-cs1/src/main.ts %}
 {% endhighlight %}

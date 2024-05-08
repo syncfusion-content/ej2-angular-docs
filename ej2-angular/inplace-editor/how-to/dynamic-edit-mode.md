@@ -18,9 +18,7 @@ In the following sample, editor opened at initial load and when toggling a check
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/in-place-editor/dynamic-edit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/dynamic-edit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/in-place-editor/dynamic-edit-cs1/src/main.ts %}
 {% endhighlight %}

@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule, DiagramContextMenuService } from '@syncfusion/ej2-angular-diagrams'
+
 
 
 import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
 import { DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
 import { NodeModel, UmlClassifierShapeModel } from '@syncfusion/ej2-diagrams';
 @Component({
+imports: [
+         DiagramModule
+    ],
+
+providers: [DiagramContextMenuService],
+standalone: true,
   selector: "app-container",
   // specifies the template string for the diagram component
   template: `<ejs-diagram id="diagram" width="100%" height="580px" [nodes]='nodes'></ejs-diagram>`

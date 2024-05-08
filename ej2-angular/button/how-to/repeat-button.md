@@ -18,9 +18,7 @@ The following example explains about how to achieve repeat button in mouse and t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button/repeat-button-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button/repeat-button-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button/repeat-button-cs1/src/main.ts %}
 {% endhighlight %}

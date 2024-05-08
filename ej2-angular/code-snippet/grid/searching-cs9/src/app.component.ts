@@ -1,3 +1,13 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, SearchService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import {
+    ButtonModule,
+    CheckBoxModule,
+    RadioButtonModule,
+    SwitchModule,
+  } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit,ViewChild } from '@angular/core';
@@ -6,6 +16,17 @@ import { ToolbarItems, GridComponent } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule,
+        CheckBoxModule,
+        RadioButtonModule,
+        SwitchModule,
+    ],
+
+providers: [SearchService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `
     <div>

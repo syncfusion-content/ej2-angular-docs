@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { FormsModule } from '@angular/forms'
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 
@@ -5,6 +11,12 @@ import { Component, ViewChild } from '@angular/core';
 import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+imports: [
+         FormsModule, TextBoxModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     styleUrls: ['./index.css'],
     template: `<label class="label">Add maxlength attribute through inline</label>

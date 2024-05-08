@@ -49,9 +49,7 @@ The following example shows `Protect Sheet` functionality with password in the S
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/protect-sheet-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/protect-sheet-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/protect-sheet-cs1/src/main.ts %}
 {% endhighlight %}
@@ -83,9 +81,7 @@ In protected spreadsheet, to make some particular cell or range of cells are edi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/lock-cells-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/lock-cells-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/lock-cells-cs1/src/main.ts %}
 {% endhighlight %}
@@ -111,9 +107,7 @@ The following example shows `Protect Workbook` by using the [`isProtected`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/local-data-binding-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/local-data-binding-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/local-data-binding-cs4/src/main.ts %}
 {% endhighlight %}
@@ -127,9 +121,7 @@ The following example shows `Protect Workbook` by using the [`password`](https:/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/local-data-binding-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/local-data-binding-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/local-data-binding-cs5/src/main.ts %}
 {% endhighlight %}

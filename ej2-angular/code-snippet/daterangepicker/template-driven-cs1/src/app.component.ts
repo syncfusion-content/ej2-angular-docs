@@ -1,3 +1,8 @@
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { DateRangePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 import { Component,ViewChild, ViewEncapsulation, Inject } from '@angular/core';
@@ -11,6 +16,10 @@ class User {
 }
 
 @Component({
+imports: [ FormsModule, ReactiveFormsModule,  DateRangePickerModule],
+
+
+standalone: true,
     selector: 'app-root',
     templateUrl: './template.html'
 })

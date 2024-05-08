@@ -20,9 +20,7 @@ When the pointer animation is completed, the [`animationComplete`](https://ej2.s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs14/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ Before the annotation is rendered in the Linear Gauge, the [`annotationRender`](
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs15/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +52,7 @@ Before each axis label is rendered in the Linear Gauge, the [`axisLabelRender`](
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs16/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +68,7 @@ The [`beforePrint`](https://ej2.syncfusion.com/angular/documentation/api/linear-
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/print-and-export-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/print-and-export-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/print-and-export-cs1/src/main.ts %}
 {% endhighlight %}
@@ -92,9 +84,7 @@ The [`dragEnd`](https://ej2.syncfusion.com/angular/documentation/api/linear-gaug
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs17/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs17/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs17/src/main.ts %}
 {% endhighlight %}
@@ -110,9 +100,7 @@ The [`dragMove`](https://ej2.syncfusion.com/angular/documentation/api/linear-gau
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs18/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs18/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs18/src/main.ts %}
 {% endhighlight %}
@@ -128,9 +116,7 @@ When the pointer drag begins, the [`dragStart`](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs19/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs19/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs19/src/main.ts %}
 {% endhighlight %}
@@ -146,9 +132,7 @@ When mouse is pressed down on the gauge, the [`gaugeMouseDown`](https://ej2.sync
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs20/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs20/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs20/src/main.ts %}
 {% endhighlight %}
@@ -164,9 +148,7 @@ When mouse pointer moves over the gauge, the [`gaugemouseleave`](https://ej2.syn
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs21/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs21/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs21/src/main.ts %}
 {% endhighlight %}
@@ -182,9 +164,7 @@ When mouse pointer leaves the gauge, the [`gaugeMouseMove`](https://ej2.syncfusi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs22/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs22/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs22/src/main.ts %}
 {% endhighlight %}
@@ -200,9 +180,7 @@ When the mouse pointer is released over the Linear Gauge, the [`gaugeMouseUp`](h
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs23/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs23/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs23/src/main.ts %}
 {% endhighlight %}
@@ -218,9 +196,7 @@ Before the Linear Gauge is loaded, the [`load`](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs24/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs24/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs24/src/main.ts %}
 {% endhighlight %}
@@ -236,9 +212,7 @@ After the Linear Gauge has been loaded, the [`loaded`](https://ej2.syncfusion.co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs25/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs25/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs25/src/main.ts %}
 {% endhighlight %}
@@ -254,9 +228,7 @@ After the window resizing, the [`resized`](https://ej2.syncfusion.com/angular/do
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs26/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs26/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs26/src/main.ts %}
 {% endhighlight %}
@@ -272,9 +244,7 @@ The [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/linea
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs27/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs27/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs27/src/main.ts %}
 {% endhighlight %}
@@ -290,9 +260,7 @@ The [`valueChange`](https://ej2.syncfusion.com/angular/documentation/api/linear-
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs28/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs28/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs28/src/main.ts %}
 {% endhighlight %}

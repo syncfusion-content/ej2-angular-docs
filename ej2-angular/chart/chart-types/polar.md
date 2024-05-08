@@ -26,9 +26,7 @@ To render a line draw type, use series [`drawType`](https://ej2.syncfusion.com/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs3/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ To render a spline line draw type, use series [`drawType`](https://ej2.syncfusio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs4/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ To render a area line draw type, use series [`drawType`](https://ej2.syncfusion.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs5/src/main.ts %}
 {% endhighlight %}
@@ -80,9 +74,7 @@ To render a stacked area draw type, use series [`drawType`](https://ej2.syncfusi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs6/src/main.ts %}
 {% endhighlight %}
@@ -98,9 +90,7 @@ To render a column draw type, use series [`drawType`](https://ej2.syncfusion.com
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs7/src/main.ts %}
 {% endhighlight %}
@@ -116,9 +106,7 @@ To render a stacked column draw type, use series [`drawType`](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs8/src/main.ts %}
 {% endhighlight %}
@@ -134,9 +122,7 @@ To render a range column draw type, use series [`drawType`](https://ej2.syncfusi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs9/src/main.ts %}
 {% endhighlight %}
@@ -152,9 +138,7 @@ To render a scatter draw type, use series [`drawType`](https://ej2.syncfusion.co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs10/src/main.ts %}
 {% endhighlight %}
@@ -172,9 +156,7 @@ You can customize the start angle of the polar series using [`startAngle`](https
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs/src/main.ts %}
 {% endhighlight %}
@@ -190,9 +172,7 @@ You can customize the radius of the polar series and polar series using [`coeffi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/polar-cs01/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/polar-cs01/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/polar-cs01/src/main.ts %}
 {% endhighlight %}

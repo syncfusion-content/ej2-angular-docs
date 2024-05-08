@@ -1,9 +1,27 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { GridModule, PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { setSpinner } from '@syncfusion/ej2-angular-popups';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        FormsModule,
+        GridModule
+    ],
+
+providers: [
+        PageService,
+        SortService,
+        FilterService,
+        GroupService
+    ],
+standalone: true,
     selector: 'app-container',
     template: `
         <ejs-grid #grid1 [dataSource]='gridData' (created)='onFirstGridCreated()'>

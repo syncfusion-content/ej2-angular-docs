@@ -19,9 +19,7 @@ You can specify the dimension values in both pixels and percentage format to cha
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/predefined-dialogs/alert-dimension-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/alert-dimension-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/predefined-dialogs/alert-dimension-cs1/src/main.ts %}
 {% endhighlight %}
@@ -35,9 +33,7 @@ You can specify the dimension values in both pixels and percentage format to cha
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/predefined-dialogs/confirm-dimension-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/confirm-dimension-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/predefined-dialogs/confirm-dimension-cs1/src/main.ts %}
 {% endhighlight %}
@@ -51,9 +47,7 @@ You can specify the dimension values in both pixels and percentage format to cha
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/predefined-dialogs/prompt-dimension-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/prompt-dimension-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/predefined-dialogs/prompt-dimension-cs1/src/main.ts %}
 {% endhighlight %}
@@ -71,9 +65,7 @@ Use the following code to customize the max-width and max-height for alert dialo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/predefined-dialogs/max-width-height-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/max-width-height-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/predefined-dialogs/max-width-height-cs1/src/main.ts %}
 {% endhighlight %}
@@ -91,9 +83,7 @@ Use the following code to customize the min-width and min-height for alert dialo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/predefined-dialogs/min-width-height-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/predefined-dialogs/min-width-height-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/predefined-dialogs/min-width-height-cs1/src/main.ts %}
 {% endhighlight %}

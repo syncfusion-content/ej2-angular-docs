@@ -19,9 +19,7 @@ property and added that class to button element using [`cssClass`](https://ej2.s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/drop-down-button/rounded-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/rounded-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/drop-down-button/rounded-cs1/src/main.ts %}
 {% endhighlight %}

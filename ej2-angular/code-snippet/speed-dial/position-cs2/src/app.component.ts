@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SpeedDialModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, ViewChild, HostListener } from '@angular/core';
 import { SpeedDialComponent,SpeedDialItemModel } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+imports: [
+        
+        SpeedDialModule// Registering EJ2 SpeedDial Module.
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div id="targetElement" style="position:relative;min-height:340px;border:1px solid;padding:10px;">
     <button id="show" (click)="show()">Show</button>

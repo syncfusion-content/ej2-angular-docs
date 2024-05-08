@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeMapModule, TreeMapTooltipService, TreeMapAllModule } from '@syncfusion/ej2-angular-treemap'
+
 import { Component } from '@angular/core';
 import { setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
 setCulture('de');
 setCurrencyCode('EUR');
 
 @Component({
+imports: [
+         TreeMapModule, TreeMapAllModule
+    ],
+
+providers: [TreeMapTooltipService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treemap id='container' style='display: block;' [dataSource]='data' weightValuePath='GDP' format='c' useGroupingSeparator= 'true' [tooltipSettings]='tooltip'
    >

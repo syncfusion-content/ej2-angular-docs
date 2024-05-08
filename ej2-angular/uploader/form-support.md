@@ -25,9 +25,7 @@ When you reset the form, the file list and data will be cleared.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/formsupport-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/formsupport-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/formsupport-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ The following sample demonstrates how to render uploader component with required
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/template-driven-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/template-driven-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/template-driven-cs1/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ The following sample demonstrates how to render uploader component with required
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/reactive-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/reactive-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/reactive-cs1/src/main.ts %}
 {% endhighlight %}

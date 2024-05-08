@@ -17,9 +17,7 @@ To render a stacked area series, use series [`type`](https://ej2.syncfusion.com/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/area-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/area-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/area-cs4/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ The following properties can be used to customize the `stacked area` series.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/stackedarea-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/stackedarea-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/stackedarea-cs/src/main.ts %}
 {% endhighlight %}

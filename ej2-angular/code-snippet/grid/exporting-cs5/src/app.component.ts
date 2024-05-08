@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ToolbarService, PdfExportService, PageService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import {
@@ -9,6 +13,13 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { image } from './image';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [PdfExportService, ToolbarService, PageService],
+standalone: true,
   selector: 'app-root',
   template: `<ejs-grid #grid id='Grid' [dataSource]='data' [allowPaging]='true' [toolbar]='toolbarOptions' 
               height='220px'  [allowPaging]='true' [allowPdfExport]='true' (toolbarClick)='toolbarClick($event)' >

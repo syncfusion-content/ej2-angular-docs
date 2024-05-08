@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+
 
 
 
@@ -7,6 +11,13 @@ import { createSpinner, showSpinner, setSpinner } from '@syncfusion/ej2-angular-
 import { ListViewComponent } from '@syncfusion/ej2-angular-lists';
 
 @Component({
+imports: [
+        
+        ListViewModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
     <ejs-listview id='element' #list [dataSource]='dataSource' [width]='300' [query]='query' [fields]='fields' [showHeader]='true' [headerTitle]='headertitle' (actionComplete)='onActionComplete($event)' >

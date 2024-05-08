@@ -181,9 +181,7 @@ The following example shows a basic `Mention` component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/mention/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/getting-started-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/mention/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
@@ -203,9 +201,7 @@ The following example displays the text content along with the mention character
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/mention/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/getting-started-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/mention/getting-started-cs7/src/main.ts %}
 {% endhighlight %}

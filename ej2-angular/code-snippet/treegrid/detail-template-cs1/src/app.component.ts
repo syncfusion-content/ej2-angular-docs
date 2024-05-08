@@ -1,3 +1,8 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
   TreeGridComponent,
@@ -10,6 +15,14 @@ import { DetailDataBoundEventArgs, Grid } from '@syncfusion/ej2-grids';
 let instance: Internationalization = new Internationalization();
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        GridModule 
+    ],
+
+,
+standalone: true,
   selector: 'app-container',
   template: `<ejs-treegrid #treegrid [dataSource]='data' height=317 width='auto' childMapping= 'Children' (detailDataBound)='detailDataBound($event)' >
                 <e-columns>

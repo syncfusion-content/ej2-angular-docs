@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, ViewChild, OnInit, ElementRef, Inject } from '@angular/core';
@@ -8,6 +14,12 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { FormsModule } from '@angular/forms';
 
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, TimePickerModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     templateUrl: './template.html'
 })

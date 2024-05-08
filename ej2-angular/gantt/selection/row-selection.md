@@ -16,9 +16,7 @@ The row selection in the Gantt component can be enabled or disabled using the [`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/selection/disableselect-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/disableselect-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/selection/disableselect-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ You can select a row at the time of loading by setting the index of the row to t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/selection/selectrow-initial-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/selectrow-initial-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/selection/selectrow-initial-cs1/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ You can also select a single row dynamically using the [`selectRow`](https://ej2
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/selection/selectrow-dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/selectrow-dynamic-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/selection/selectrow-dynamic-cs1/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ You can select multiple rows by setting the [`selectionSettings.type`](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/selection/multiplerow-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/multiplerow-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/selection/multiplerow-cs1/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +82,7 @@ While selecting a row in Gantt, the [`rowSelecting`](https://ej2.syncfusion.com/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/selection/customize-rowselection-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/customize-rowselection-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/selection/customize-rowselection-cs1/src/main.ts %}
 {% endhighlight %}

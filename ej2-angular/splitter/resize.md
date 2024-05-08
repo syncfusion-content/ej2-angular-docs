@@ -25,9 +25,7 @@ Splitter allows you to set the minimum and maximum sizes for each pane. Resizing
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/splitter/validation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/validation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/splitter/validation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ You can disable the resizing for the pane by setting `false` to the [resizable](
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/splitter/fixed-pane-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/fixed-pane-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/splitter/fixed-pane-cs2/src/main.ts %}
 {% endhighlight %}
@@ -67,9 +63,7 @@ You can customize the resize gripper icon and cursor in CSS level.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/splitter/grip-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/grip-customization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/splitter/grip-customization-cs1/src/main.ts %}
 {% endhighlight %}

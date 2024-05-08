@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -8,6 +13,14 @@ import { kanbanData, treeViewData } from './datasource';
 import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 import { DragAndDropEventArgs } from '@syncfusion/ej2-navigations';
 @Component({
+imports: [
+        
+        KanbanModule,
+        TreeViewModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<div class="container-fluid">
       <div class="row">

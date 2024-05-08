@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -6,6 +12,12 @@ import { DataManager, ODataV4Adaptor, Query } from '@syncfusion/ej2-data';
 import { L10n } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, AutoCompleteModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the AutoComplete component
     template: `<ejs-autocomplete id='atcelement' [dataSource]='data' [query]='query' [fields]='fields' [placeholder]='text' [locale]='locale'></ejs-autocomplete>`

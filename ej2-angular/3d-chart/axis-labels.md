@@ -22,9 +22,7 @@ When the axis labels overlap with each other, [`labelIntersectAction`](https://
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/axis-labels/axis-labels-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/axis-labels/axis-labels-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/axis-labels/axis-labels-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ When the axis labels overlap with each other, [`labelIntersectAction`](https://
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/axis-labels/axis-labels-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/axis-labels/axis-labels-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/axis-labels/axis-labels-cs2/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ When the axis labels overlap with each other, [`labelIntersectAction`](https://
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/axis-labels/axis-labels-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/axis-labels/axis-labels-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/axis-labels/axis-labels-cs3/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +67,7 @@ use the [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/axis-labels/axis-labels-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/axis-labels/axis-labels-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/axis-labels/axis-labels-cs4/src/main.ts %}
 {% endhighlight %}
@@ -91,9 +83,7 @@ The labels will be rendered based on the count in the [`maximumLabels`](https://
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/axis-labels/axis-labels-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/axis-labels/axis-labels-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/axis-labels/axis-labels-cs5/src/main.ts %}
 {% endhighlight %}

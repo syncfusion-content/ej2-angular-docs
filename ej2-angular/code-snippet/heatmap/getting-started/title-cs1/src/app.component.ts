@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { HeatMapModule} from '@syncfusion/ej2-angular-heatmap'
+
 
 
 
@@ -5,6 +9,10 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { HeatMap } from '@syncfusion/ej2-heatmap';
 
 @Component({
+imports: [
+         HeatMapModule
+    ],
+standalone: true,
     selector: 'my-app',
     template:
        `<ejs-heatmap id='container' style="display:block;"  [titleSettings]='titleSettings' [dataSource]='dataSource' [xAxis]='xAxis' [yAxis]='yAxis'>

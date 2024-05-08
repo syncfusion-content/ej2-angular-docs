@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 import { Component } from '@angular/core';
@@ -6,6 +12,14 @@ import { createCheckBox } from '@syncfusion/ej2-buttons';
 import { closest } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        ContextMenuModule,
+        ButtonModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<div class="e-section-control">
   <div id="target">Right click / Touch hold to open the ContextMenu</div>

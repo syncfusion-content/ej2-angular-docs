@@ -25,9 +25,7 @@ To enable the clipboard feature, you can use the grid component with your data s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/copy/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/copy/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/copy/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ To copy selected rows or cells data into the clipboard with the help of external
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/copy-with-header/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/copy-with-header/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/copy-with-header/src/main.ts %}
 {% endhighlight %}
@@ -77,9 +73,7 @@ The following example demonstrates, how to enable autofill feature in the grid.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/autofill/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/autofill/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/autofill/src/main.ts %}
 {% endhighlight %}
@@ -114,9 +108,7 @@ Follow the steps below to use the Paste feature in the grid:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paste/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paste/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paste/src/main.ts %}
 {% endhighlight %}

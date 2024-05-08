@@ -18,9 +18,7 @@ Schedule allows user to manually open the event editor on specific time or on ce
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs48/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs48/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs48/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ By default, Scheduler Editor window will open when double clicking the cells or 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs49/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs49/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs49/src/main.ts %}
 {% endhighlight %}

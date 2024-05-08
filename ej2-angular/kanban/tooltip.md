@@ -22,9 +22,7 @@ You can customize the tooltip content with any HTML or CSS element and styling u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/tooltip-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/tooltip-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/tooltip-template-cs1/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AccumulationChartModule, ExportService } from '@syncfusion/ej2-angular-charts'
+import { PieSeriesService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, ViewChild, OnInit } from '@angular/core';
@@ -6,6 +11,12 @@ import {
      IAccLoadedEventArgs} from '@syncfusion/ej2-angular-charts';
 
 @Component({
+imports: [
+         AccumulationChartModule
+    ],
+
+providers: [PieSeriesService, AccumulationDataLabelService, ExportService],
+standalone: true,
     selector: 'app-container',
     template:
       `<ejs-accumulationchart id="donut-container" #pie [title]="title"  (loaded)='loaded($event)'>

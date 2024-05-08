@@ -18,9 +18,7 @@ In the below sample, the sub menu opens above the parent menu item.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/menu/position-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/menu/position-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/menu/position-cs1/src/main.ts %}
 {% endhighlight %}

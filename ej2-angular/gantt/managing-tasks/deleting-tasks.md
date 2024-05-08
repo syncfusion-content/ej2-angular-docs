@@ -18,9 +18,7 @@ A task delete option in the Gantt component can be enabled by enabling the [`edi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/taskdelete-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/taskdelete-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/managing-tasks/taskdelete-cs1/src/main.ts %}
 {% endhighlight %}
@@ -41,9 +39,7 @@ The following code snippet explains how to enable the delete confirmation messag
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/delete-confirmation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/delete-confirmation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/managing-tasks/delete-confirmation-cs1/src/main.ts %}
 {% endhighlight %}

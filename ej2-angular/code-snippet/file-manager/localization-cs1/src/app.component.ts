@@ -1,3 +1,7 @@
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { FileManagerModule,  NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
+
 
 
 
@@ -5,6 +9,10 @@ import { Component } from '@angular/core';
 import { L10n } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [FileManagerModule, ],
+
+providers:[ NavigationPaneService, ToolbarService, DetailsViewService],
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [locale]='locale'>

@@ -22,9 +22,7 @@ For example, you can display file type icon along with default UI elements.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -47,9 +45,7 @@ Refer to the following code sample.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/cus_template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/cus_template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/cus_template-cs1/src/main.ts %}
 {% endhighlight %}

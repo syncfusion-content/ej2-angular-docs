@@ -28,9 +28,7 @@ Here's an example code snippet that demonstrates how to define columns manually 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging-cs1/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ You can use the following code snippet to enable auto-generated columns in the S
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs3/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +69,7 @@ Here is an example code snippet that shows how to set a primary key for an auto-
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs4/src/main.ts %}
 {% endhighlight %}
@@ -104,9 +98,7 @@ In the below example, `width` is set for **OrderID** column, **date** `type` is 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs5/src/main.ts %}
 {% endhighlight %}
@@ -128,9 +120,7 @@ Here is an example for dynamically generate columns in the grid using ngFor dire
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/dynamic-column-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dynamic-column-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/dynamic-column-cs1/src/main.ts %}
 {% endhighlight %}
@@ -154,9 +144,7 @@ In the provided code, the **currencyFormatter** function takes the Freight value
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs10/src/main.ts %}
 {% endhighlight %}
@@ -178,9 +166,7 @@ This will display the concatenated value of **FirstName** and **LastName** in th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs11/src/main.ts %}
 {% endhighlight %}
@@ -198,9 +184,7 @@ In this example, we have a grid with columns **Food Name**, **Protein**, **Fat**
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/expression-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/expression-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/expression-cs1/src/main.ts %}
 {% endhighlight %}
@@ -220,9 +204,7 @@ Here is an example code snippet that demonstrates how to display serial numbers 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs31/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs31/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs31/src/main.ts %}
 {% endhighlight %}
@@ -244,9 +226,7 @@ In the below example, we have bound the nested **Employee** object's **FirstName
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs18/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs18/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs18/src/main.ts %}
 {% endhighlight %}
@@ -264,9 +244,7 @@ In the below example, we have used the `expand` query to load the nested Employe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/complex-data-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/complex-data-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/complex-data-cs2/src/main.ts %}
 {% endhighlight %}
@@ -284,9 +262,7 @@ The following example shows how to set complex field for datasource having array
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/complex-data-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/complex-data-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/complex-data-cs1/src/main.ts %}
 {% endhighlight %}
@@ -304,9 +280,7 @@ The following example demonstrates how to set the **Employee.EmployeeID** column
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/foreignkey-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/foreignkey-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/foreignkey-cs11/src/main.ts %}
 {% endhighlight %}

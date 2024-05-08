@@ -28,9 +28,7 @@ The following example demonstrates how to create a DatePicker with `decade` as i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/getting-started-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
@@ -50,9 +48,7 @@ The following example demonstrates how to create a DatePicker that allows users 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/getting-started-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/getting-started-cs6/src/main.ts %}
 {% endhighlight %}

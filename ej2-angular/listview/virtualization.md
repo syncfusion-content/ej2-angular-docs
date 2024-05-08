@@ -53,9 +53,7 @@ It has two type of scroller
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/virtualization/flat-list-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/virtualization/flat-list-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/virtualization/flat-list-cs1/src/main.ts %}
 {% endhighlight %}
@@ -69,9 +67,7 @@ We can use `ng-template` property to customize list items in UI virtualization.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/virtualization/template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/virtualization/template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/virtualization/template-cs1/src/main.ts %}
 {% endhighlight %}

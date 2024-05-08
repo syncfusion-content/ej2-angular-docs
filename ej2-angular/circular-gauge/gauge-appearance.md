@@ -19,9 +19,7 @@ Title can be customized by using [`titleStyle`](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-appearance-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-appearance-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-appearance-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ You can set the mid point of the gauge in pixel as demonstrated below,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-appearance-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-appearance-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-appearance-cs2/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ For example, when the [`centerX`](https://ej2.syncfusion.com/angular/documentati
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-appearance-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-appearance-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-appearance-cs3/src/main.ts %}
 {% endhighlight %}
@@ -85,9 +79,7 @@ Using [`background`](https://ej2.syncfusion.com/angular/documentation/api/circul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-appearance-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-appearance-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-appearance-cs4/src/main.ts %}
 {% endhighlight %}
@@ -103,9 +95,7 @@ You can set margin for gauge from its container through [`margin`](https://ej2.s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-appearance-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-appearance-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-appearance-cs5/src/main.ts %}
 {% endhighlight %}
@@ -121,9 +111,7 @@ Render semi or quarter circular gauges by modifying the start and end angles. By
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-appearance-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-appearance-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-appearance-cs6/src/main.ts %}
 {% endhighlight %}

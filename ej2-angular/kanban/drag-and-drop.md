@@ -43,9 +43,7 @@ In the following example, disable the drag and drop behavior on the Kanban board
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/drag-and-drop-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/drag-and-drop-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/drag-and-drop-cs1/src/main.ts %}
 {% endhighlight %}
@@ -63,9 +61,7 @@ Enabling the `dragAndDrop` property allows you to drag the cards across the swim
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/swimlane-drag-and-drop-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/swimlane-drag-and-drop-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/swimlane-drag-and-drop-cs1/src/main.ts %}
 {% endhighlight %}
@@ -89,9 +85,7 @@ In the following example, Drag the card from one Kanban and drop it into another
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/kanban-to-kanban-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/kanban-to-kanban-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/kanban-to-kanban-cs1/src/main.ts %}
 {% endhighlight %}
@@ -109,9 +103,7 @@ In the following sample, remove the data from the Kanban board using the `delete
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/kanban-to-treeview-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/kanban-to-treeview-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/kanban-to-treeview-cs1/src/main.ts %}
 {% endhighlight %}
@@ -129,9 +121,7 @@ In the following sample, remove the data from the Kanban board using the `delete
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/kanban-to-schedule-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/kanban-to-schedule-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/kanban-to-schedule-cs1/src/main.ts %}
 {% endhighlight %}

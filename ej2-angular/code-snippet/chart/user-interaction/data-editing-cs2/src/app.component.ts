@@ -1,9 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { LineSeriesService, ColumnSeriesService, CategoryService, DataEditingService, TooltipService } from '@syncfusion/ej2-angular-charts'
+import { LegendService } from '@syncfusion/ej2-angular-charts'
+
 
 
 
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ LegendService, LineSeriesService, ColumnSeriesService, CategoryService, DataEditingService, TooltipService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'
             [chartArea]="chartArea">

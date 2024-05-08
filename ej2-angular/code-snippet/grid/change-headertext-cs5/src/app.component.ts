@@ -1,8 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Column, ColumnModel, GridComponent} from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule
+    ],
+
+,
+standalone: true,
     selector: 'app-root',
     template: ` <button ejs-button cssClass="e-success" (click)='changeHeaderText()'>
                 Change Header Text</button>

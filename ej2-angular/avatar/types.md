@@ -29,9 +29,7 @@ class to change the appearance of the avatar.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/size-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/size-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/avatar/size-cs1/src/main.ts %}
 {% endhighlight %}
@@ -55,9 +53,7 @@ adding the modifier class `.e-avatar` to the target element.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/avatar/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +69,7 @@ The circle avatar style can be applied by adding the modifier class `.e-avatar-c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/circle-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/avatar/circle-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/avatar/circle-cs1/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -8,6 +12,13 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { dataSource } from './datasource';
 
 @Component({
+imports: [
+        
+        SpreadsheetAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<ejs-spreadsheet #spreadsheet (created)="created()" (fileMenuBeforeOpen)="fileMenuBeforeOpen()"
                 (fileMenuItemSelect)="fileMenuItemSelect($event)" [openUrl]="openUrl" [saveUrl]="saveUrl" [showFormulaBar]="false" [showSheetTabs]="false" [allowInsert]="false" [allowDelete]="false" [allowMerge]="false">

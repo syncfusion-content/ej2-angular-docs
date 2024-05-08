@@ -1,7 +1,11 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+
 import { Component, ViewChild } from '@angular/core';
 import { Draggable } from  '@syncfusion/ej2-base';
 
 @Component({
+standalone: true,
     selector: 'app-root',
     template:` <div id='container'>
     <div #ele class='element'><p class='drag'>Draggable Element </p></div>

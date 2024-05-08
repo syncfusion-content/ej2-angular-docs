@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { ComboBoxModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -6,6 +11,12 @@ import { Component } from '@angular/core';
 import { Query, DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+        FormsModule,ComboBoxModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the ComboBox component
     template:  `<ejs-combobox id='comboelement' [dataSource]='data' [query]='query' [fields]='fields'      placeholder='Find an employee'>

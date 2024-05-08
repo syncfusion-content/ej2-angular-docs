@@ -17,15 +17,10 @@
             "index": "index.html",
             "main": "app/main.ts",
             "tsConfig": "tsconfig.json",
-			      "scripts": [
-              "./node_modules/zone.js/dist/zone.min.js"
-            ],
             "styles": [
               "app/styles.css"
             ],
-            "assets": [
-
-            ]
+            "assets": []
           },
           "configurations": {
             "production": {
@@ -58,10 +53,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "syncfusion-component:build:production"
+              "buildTarget": "syncfusion-component:build:production"
             },
             "development": {
-              "browserTarget": "syncfusion-component:build:development"
+              "buildTarget": "syncfusion-component:build:development"
             }
           },
           "defaultConfiguration": "development"

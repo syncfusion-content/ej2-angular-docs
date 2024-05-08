@@ -22,9 +22,7 @@ Here's an example how to enable batch editing in the angular grid component:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs3/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ In the following example, the **TotalCost** column value is updated based on cha
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs4/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +66,7 @@ In the below demo, prevent the CRUD operation based on the **Role** column value
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs5/src/main.ts %}
 {% endhighlight %}
@@ -96,9 +90,7 @@ Here's an example that demonstrates how to enable adding new rows at the bottom 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-batch-add-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-batch-add-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-batch-add-cs1/src/main.ts %}
 {% endhighlight %}
@@ -122,9 +114,7 @@ Here's an example that demonstrates how to enable/disable the confirmation dialo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs6/src/main.ts %}
 {% endhighlight %}
@@ -146,9 +136,7 @@ Here's an example that demonstrates how to achieve both single-click editing and
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/batch-edit/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/batch-edit/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/batch-edit/src/main.ts %}
 {% endhighlight %}
@@ -168,9 +156,7 @@ Here's an example demonstrating how you can disable editing for cells containing
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs22/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs22/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs22/src/main.ts %}
 {% endhighlight %}
@@ -199,9 +185,7 @@ Here's an example that demonstrates how to achieve immediate saving or updating 
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/grid/edit-batch-cs1/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-batch-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-batch-cs1/src/main.ts %}
 {% endhighlight %}

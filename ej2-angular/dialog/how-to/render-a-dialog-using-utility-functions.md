@@ -38,9 +38,7 @@ An alert dialog box is used to display warning like messages to the users. Use t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/dialog-utility-alert-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dialog-utility-alert-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/dialog-utility-alert-cs1/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +52,7 @@ An alert dialog box is used to display warning like messages to the users. Use t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/dialog-utility-alert1-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dialog-utility-alert1-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/dialog-utility-alert1-cs1/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +68,7 @@ A confirm dialog displays a specified message along with ‘OK’ and ‘Cancel�
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/dialog-utility-confirm-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dialog-utility-confirm-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/dialog-utility-confirm-cs1/src/main.ts %}
 {% endhighlight %}
@@ -88,9 +82,7 @@ A confirm dialog displays a specified message along with ‘OK’ and ‘Cancel�
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/dialog-utility-confirm1-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dialog-utility-confirm1-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/dialog-utility-confirm1-cs1/src/main.ts %}
 {% endhighlight %}

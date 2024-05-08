@@ -23,9 +23,7 @@ Using this event, you can set the `shape` value to the argument.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/how-to-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/how-to-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/how-to-cs13/src/main.ts %}
 {% endhighlight %}

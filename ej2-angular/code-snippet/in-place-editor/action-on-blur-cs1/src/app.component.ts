@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { InPlaceEditorAllModule } from '@syncfusion/ej2-angular-inplace-editor'
+import { DropDownListAllModule  } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +10,12 @@ import { InPlaceEditorComponent, ActionBlur } from '@syncfusion/ej2-angular-inpl
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
+imports: [
+         InPlaceEditorAllModule, DropDownListAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
        <div id='container'>

@@ -18,9 +18,7 @@ Here's an example of using the `detailTemplate` property in the grid component:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-cell-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-cell-cs4/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ For example, to render grid inside the detail row, place an HTML div element as 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-cell-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-cell-cs5/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ Here is an example of how to use the `expand` method to expand a detail row:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-cell-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-cell-cs6/src/main.ts %}
 {% endhighlight %}
@@ -95,9 +89,7 @@ Here is an example of how to customize the detail template icon:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/row-detail-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/row-detail-icon-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/row-detail-icon-cs1/src/main.ts %}
 {% endhighlight %}

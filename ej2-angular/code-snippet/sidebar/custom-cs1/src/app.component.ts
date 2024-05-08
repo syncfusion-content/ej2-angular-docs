@@ -1,3 +1,8 @@
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { SidebarModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -5,6 +10,10 @@ import { Component, ViewChild } from '@angular/core';
 import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 import { ButtonComponent } from "@syncfusion/ej2-angular-buttons";
 @Component({
+imports: [SidebarModule, ButtonModule, ],
+
+
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: ` <ejs-sidebar id="default-sidebar" #sidebar [type]='type' [target]='target' (created)="onCreated($event)" style="visibility: hidden">

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { ColorPickerModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +10,12 @@ import { addClass } from '@syncfusion/ej2-base';
 import { ColorPickerEventArgs, ColorPickerComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+imports: [
+        FormsModule, ColorPickerModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <h4>Choose color</h4>

@@ -1,9 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { ListBoxComponent, ListBoxAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonComponent } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component } from '@angular/core';
 import { ListBoxComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, ListBoxAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     // specifies the template string for the ListBox component with dataSource
     template: `<div class="e-section-control">

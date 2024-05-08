@@ -30,9 +30,7 @@ Category axis are used to represent, the string values instead of numbers.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs28/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs28/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs28/src/main.ts %}
 {% endhighlight %}
@@ -51,9 +49,7 @@ using [`labelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs29/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs29/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs29/src/main.ts %}
 {% endhighlight %}
@@ -75,9 +71,7 @@ You can use the numeric axis to represent numeric values of data in chart. By de
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs1/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +87,7 @@ Range for an axis, will be calculated automatically based on the provided data, 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs2/src/main.ts %}
 {% endhighlight %}
@@ -121,9 +113,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs3/src/main.ts %}
 {% endhighlight %}
@@ -139,9 +129,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs4/src/main.ts %}
 {% endhighlight %}
@@ -157,9 +145,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs5/src/main.ts %}
 {% endhighlight %}
@@ -175,9 +161,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs6/src/main.ts %}
 {% endhighlight %}
@@ -193,9 +177,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs7/src/main.ts %}
 {% endhighlight %}
@@ -211,9 +193,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs2/src/main.ts %}
 {% endhighlight %}
@@ -229,9 +209,7 @@ Range for an axis, will be calculated automatically based on the provided data, 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs3/src/main.ts %}
 {% endhighlight %}
@@ -257,9 +235,7 @@ DateTime axis supports following interval types,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs4/src/main.ts %}
 {% endhighlight %}
@@ -283,9 +259,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs5/src/main.ts %}
 {% endhighlight %}
@@ -301,9 +275,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs6/src/main.ts %}
 {% endhighlight %}
@@ -319,9 +291,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs7/src/main.ts %}
 {% endhighlight %}
@@ -342,9 +312,7 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing dat
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/log-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/log-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/log-cs1/src/main.ts %}
 {% endhighlight %}
@@ -360,9 +328,7 @@ Range of an axis, will be calculated automatically based on the provided data, y
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/log-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/log-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/log-cs2/src/main.ts %}
 {% endhighlight %}
@@ -378,9 +344,7 @@ Logarithmic base can be customized by using the [`logBase`](https://ej2.syncfus
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/log-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/log-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/log-cs3/src/main.ts %}
 {% endhighlight %}
@@ -396,9 +360,7 @@ Logarithmic axis interval can be customized by using the [`interval`](https://ej
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/log-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/log-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/log-cs4/src/main.ts %}
 {% endhighlight %}
@@ -418,9 +380,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs30/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs30/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs30/src/main.ts %}
 {% endhighlight %}
@@ -438,9 +398,7 @@ Numeric labels can be formatted by using the [`labelFormat`](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs8/src/main.ts %}
 {% endhighlight %}
@@ -515,9 +473,7 @@ You can format and parse the date to all globalize format using [`labelFormat`]
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs8/src/main.ts %}
 {% endhighlight %}
@@ -578,9 +534,7 @@ Axis also supports custom label format using placeholder like {value}°C, in w
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs31/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs31/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs31/src/main.ts %}
 {% endhighlight %}
@@ -598,9 +552,7 @@ You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs32/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs32/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs32/src/main.ts %}
 {% endhighlight %}
@@ -616,9 +568,7 @@ The [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs33/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs33/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs33/src/main.ts %}
 {% endhighlight %}
@@ -634,9 +584,7 @@ Labels with long text at the edges of an axis may appear partially in the chart.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs9/src/main.ts %}
 {% endhighlight %}
@@ -652,9 +600,7 @@ You can customize the `width`, `color` and `dashArray` of the minor and maj
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs34/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs34/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs34/src/main.ts %}
 {% endhighlight %}
@@ -670,9 +616,7 @@ You can customize the  `width`, `color` and `size` of the minor and major 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs35/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs35/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs35/src/main.ts %}
 {% endhighlight %}
@@ -690,9 +634,7 @@ To place an axis opposite from its original position, set [`opposedPosition`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs36/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs36/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs36/src/main.ts %}
 {% endhighlight %}
@@ -708,9 +650,7 @@ In addition to primary X and Y axis, we can add n number of axis to the chart. S
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/multiple-panes-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/multiple-panes-cs1/src/main.ts %}
 {% endhighlight %}
@@ -728,9 +668,7 @@ When setting `labelIntersectAction` as `Hide`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/multiple-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/multiple-cs4/src/main.ts %}
 {% endhighlight %}
@@ -744,9 +682,7 @@ When setting `labelIntersectAction` as `Rotate45`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/multiple-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/multiple-cs5/src/main.ts %}
 {% endhighlight %}
@@ -760,9 +696,7 @@ When setting `labelIntersectAction` as `Rotate90`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/multiple-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/multiple-cs6/src/main.ts %}
 {% endhighlight %}
@@ -784,9 +718,7 @@ Striplines are rendered in the specified start to end range and you can add more
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/strip-line-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/strip-line-cs1/src/main.ts %}
 {% endhighlight %}
@@ -803,9 +735,7 @@ Striplines are rendered in the specified start to end range and you can add more
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/strip-line-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/strip-line-cs2/src/main.ts %}
 {% endhighlight %}
@@ -821,9 +751,7 @@ Starting value in specific strip line can be customized by <code>start</code> pr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/strip-line-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/strip-line-cs3/src/main.ts %}
 {% endhighlight %}
@@ -840,9 +768,7 @@ Horizontal and vertical alignment of stripline text can be changed by `horizonta
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/strip-line-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/strip-line-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/strip-line-cs4/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, FilterService, PageService} from '@syncfusion/ej2-angular-grids'
+import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule, CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -7,6 +13,17 @@ import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule,
+        MultiSelectModule,
+        DropDownListAllModule,
+        CheckBoxModule,
+        ButtonModule
+    ],
+
+providers: [FilterService, PageService,CheckBoxSelectionService],
+standalone: true,
     selector: 'app-root',
     template: `<div class='input-container'>
 			    <label for='fields' class='label'>Select Filter Mode</label>

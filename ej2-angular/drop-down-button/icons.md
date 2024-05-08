@@ -20,9 +20,7 @@ In the following example, the DropdownButton with default iconPosition and iconP
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/drop-down-button/dd-icons-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/dd-icons-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/drop-down-button/dd-icons-cs1/src/main.ts %}
 {% endhighlight %}
@@ -39,9 +37,7 @@ down arrow `e-caret-hide` class is added using [`cssClass`](https://ej2.syncfusi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/drop-down-button/icon-only-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/icon-only-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/drop-down-button/icon-only-cs1/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ In this following example, `e-image` class is added with background url of the s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/drop-down-button/sprite-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/sprite-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/drop-down-button/sprite-cs1/src/main.ts %}
 {% endhighlight %}
@@ -84,9 +78,7 @@ using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/drop-dow
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/drop-down-button/vertical-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/drop-down-button/vertical-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/drop-down-button/vertical-cs1/src/main.ts %}
 {% endhighlight %}

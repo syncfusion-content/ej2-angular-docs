@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SparklineModule, SparklineTooltipService } from '@syncfusion/ej2-angular-charts'
+
 
 
 
@@ -5,6 +9,12 @@ import { Component } from '@angular/core';
 import { TooltipSettingsModel } from '@syncfusion/ej2-angular-charts';
 
 @Component({
+imports: [
+         SparklineModule
+    ],
+
+providers: [SparklineTooltipService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-sparkline id='container' width='350px' height='200px' [containerArea]= 'containerArea' lineWidth= 3 format= 'c0' useGroupingSeparator= 'true' [padding]='padding' [dataSource]="data" fill= '#b2cfff' type="Area"
     [tooltipSettings]="tooltipSettings">

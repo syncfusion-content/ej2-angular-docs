@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AppBarModule, SidebarModule, TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { Component, ViewChild } from "@angular/core";
 import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [ AppBarModule, ButtonModule, SidebarModule, TreeViewModule, TextBoxModule ],
+
+
+standalone: true,
   selector: "app-root",
   template: `<!-- To Render AppBar. -->
     <div class="control-section" id="reswrapper">

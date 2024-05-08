@@ -25,9 +25,7 @@ The deletion of appointments can be done by using the `deleteEvent` public metho
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/context-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/context-menu-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/context-menu-cs1/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { HttpClientModule } from '@angular/common/http'
+import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 import { Component, ViewChild, Inject } from '@angular/core';
@@ -6,6 +11,14 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @Component({
+imports: [
+        
+        HttpClientModule,
+        TooltipModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
         <div id="tool">

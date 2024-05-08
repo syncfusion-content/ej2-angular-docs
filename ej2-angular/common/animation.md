@@ -24,9 +24,7 @@ Here is an example code snippet using the `FadeOut` and `ZoomOut` animation effe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/animation-multiple-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/animation-multiple-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/animation-multiple-cs1/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ Here is an example code snippet using the animation effects with a duration of `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/animation-multiple-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/animation-multiple-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/animation-multiple-cs2/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +66,7 @@ Here is an example code snippet using the animation effects with a delay of `200
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/animation-multiple-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/common/animation-multiple-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/common/animation-multiple-cs3/src/main.ts %}
 {% endhighlight %}

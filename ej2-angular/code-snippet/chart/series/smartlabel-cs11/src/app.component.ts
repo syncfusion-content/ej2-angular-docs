@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
+import { PieSeriesService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { labelData } from './datasource';
 import { IAccTextRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 @Component({
+imports: [
+         AccumulationChartModule
+    ],
+
+providers: [PieSeriesService, AccumulationDataLabelService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-accumulationchart id="chart-container" (textRender)="onTextRender($event)">
         <e-accumulation-series-collection>

@@ -23,9 +23,7 @@ The precision types of Rating are as follows:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/precision-modes-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/precision-modes-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/precision-modes-cs/src/main.ts %}
 {% endhighlight %}

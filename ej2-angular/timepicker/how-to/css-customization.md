@@ -33,9 +33,7 @@ The below sample demonstrates customization of text appearance in a textbox, pop
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timepicker/how-to-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/how-to-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timepicker/how-to-cs1/src/main.ts %}
 {% endhighlight %}

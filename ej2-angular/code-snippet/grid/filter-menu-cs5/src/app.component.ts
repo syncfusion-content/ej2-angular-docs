@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, FilterService, PageService } from '@syncfusion/ej2-angular-grids'
+import { MultiSelectModule, CheckBoxSelectionService, DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { DataUtil } from '@syncfusion/ej2-data';
@@ -14,6 +20,16 @@ import {
   PredicateModel,
 } from '@syncfusion/ej2-angular-grids';
 @Component({
+imports: [
+        
+        GridModule,
+        MultiSelectModule,
+        DropDownListAllModule,
+        CheckBoxModule,
+    ],
+
+providers: [FilterService, PageService, CheckBoxSelectionService],
+standalone: true,
   selector: 'app-root',
   template: `
    <ejs-grid

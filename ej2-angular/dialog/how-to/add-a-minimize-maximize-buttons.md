@@ -16,9 +16,7 @@ Angular Dialog allows end users to either minimize or maximize the Dialog compon
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/dlg-minimize-maximize-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dlg-minimize-maximize-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/dlg-minimize-maximize-cs1/src/main.ts %}
 {% endhighlight %}

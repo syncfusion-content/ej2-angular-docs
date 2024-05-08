@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { CircularGaugeModule } from '@syncfusion/ej2-angular-circulargauge'
+import { AnnotationsService } from '@syncfusion/ej2-angular-circulargauge'
+
 
 
 
@@ -6,6 +11,12 @@ import { CircularGauge } from '@syncfusion/ej2-angular-circulargauge';
 import { ILoadedEventArgs } from '@syncfusion/ej2-circulargauge';
 
 @Component({
+imports: [
+         CircularGaugeModule
+    ],
+
+providers: [AnnotationsService],
+standalone: true,
     selector: 'app-container',
     template:
     `<ejs-circulargauge id="circular-container" (loaded)='loaded!($event)'>

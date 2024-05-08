@@ -141,9 +141,7 @@ The appointments belonging to the different resources will be displayed altogeth
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/multiple-resource-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/multiple-resource-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/multiple-resource-cs1/src/main.ts %}
 {% endhighlight %}
@@ -173,9 +171,7 @@ The following code example displays how the multiple resources are grouped and i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/resource-grouping-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/resource-grouping-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/resource-grouping-cs1/src/main.ts %}
 {% endhighlight %}
@@ -193,9 +189,7 @@ The following code example depicts how to group the multiple resources on Timeli
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/resource-grouping-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/resource-grouping-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/resource-grouping-cs2/src/main.ts %}
 {% endhighlight %}
@@ -215,9 +209,7 @@ This kind of grouping allows the Scheduler to display all the resources at a sin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/single-level-resource-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/single-level-resource-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/single-level-resource-cs1/src/main.ts %}
 {% endhighlight %}
@@ -239,9 +231,7 @@ It is possible to group the resources of Scheduler in multiple levels, by mappin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/multiple-level-resource-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/multiple-level-resource-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/multiple-level-resource-cs1/src/main.ts %}
 {% endhighlight %}
@@ -259,9 +249,7 @@ In multi-level grouping, Scheduler usually groups the resources on the child lev
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/multiple-level-resource-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/multiple-level-resource-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/multiple-level-resource-cs2/src/main.ts %}
 {% endhighlight %}
@@ -281,9 +269,7 @@ It groups the number of resources under each date and is applicable only on the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/group-by-date-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/group-by-date-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/group-by-date-cs1/src/main.ts %}
 {% endhighlight %}
@@ -303,9 +289,7 @@ In timeline view work cells of parent resource can be customized by checking the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs58/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs58/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs58/src/main.ts %}
 {% endhighlight %}
@@ -326,9 +310,7 @@ object will be maintained within the appointment collection, even if it is share
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/resource-grouping-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/resource-grouping-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/resource-grouping-cs3/src/main.ts %}
 {% endhighlight %}
@@ -348,9 +330,7 @@ It is possible to customize the resource header cells using built-in template op
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/resource-header-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/resource-header-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/resource-header-cs1/src/main.ts %}
 {% endhighlight %}
@@ -372,9 +352,7 @@ It is possible to customize the resource headers to display with multiple column
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/resource-header-column-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/resource-header-column-customization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/resource-header-column-customization-cs1/src/main.ts %}
 {% endhighlight %}
@@ -392,9 +370,7 @@ It is possible to expand and collapse the resources which have child resource in
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/resource-grouping-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/resource-grouping-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/resource-grouping-cs5/src/main.ts %}
 {% endhighlight %}
@@ -410,9 +386,7 @@ It is possible to display tooltips over the resource headers showing the resourc
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/header-tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/header-tooltip-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/header-tooltip-cs1/src/main.ts %}
 {% endhighlight %}
@@ -432,9 +406,7 @@ In the following example, the colors mentioned in the second level will get appl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/multiple-resource-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/multiple-resource-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/multiple-resource-cs2/src/main.ts %}
 {% endhighlight %}
@@ -456,9 +428,7 @@ To remove the resources dynamically, `removeResource` method is used which accep
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/dynamic-resource-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/dynamic-resource-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/dynamic-resource-cs1/src/main.ts %}
 {% endhighlight %}
@@ -478,9 +448,7 @@ Different working days can be set for the resources of Scheduler using the `work
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/multiple-resource-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/multiple-resource-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/multiple-resource-cs3/src/main.ts %}
 {% endhighlight %}
@@ -501,9 +469,7 @@ Working hours indicates the work hour duration of a day, which is highlighted vi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/multiple-resource-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/multiple-resource-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/multiple-resource-cs4/src/main.ts %}
 {% endhighlight %}
@@ -527,9 +493,7 @@ To use the [`hideNonWorkingDays`](../api/schedule/group/#hidenonworkingdays) pro
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/hide-non-working-days-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/hide-non-working-days-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/hide-non-working-days-cs1/src/main.ts %}
 {% endhighlight %}
@@ -567,9 +531,7 @@ Some of the default changes made for compact Scheduler to render in desktop devi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/resource-grouping-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/resource-grouping-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/resource-grouping-cs4/src/main.ts %}
 {% endhighlight %}

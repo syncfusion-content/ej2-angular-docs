@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 
@@ -6,6 +13,10 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
+imports:      [  FormsModule, DialogModule, UploaderModule, ButtonModule, ReactiveFormsModule ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<div class="control-section">
         <div class="col-lg-12">

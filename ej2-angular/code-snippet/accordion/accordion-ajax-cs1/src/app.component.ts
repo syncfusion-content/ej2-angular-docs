@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AccordionModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +9,12 @@ import { Ajax } from '@syncfusion/ej2-base';
 import { AccordionComponent} from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [
+         AccordionModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `
     <div id="acrdnContnet1" style="display:none">

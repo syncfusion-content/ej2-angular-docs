@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, FilterService, PageService} from '@syncfusion/ej2-angular-grids'
+import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+import { MessageModule } from '@syncfusion/ej2-angular-notifications'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -5,6 +12,17 @@ import { data } from './datasource';
 import { FilterSettingsModel, GridComponent, FilterEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        MultiSelectModule,
+        DropDownListAllModule,
+        CheckBoxModule,
+        MessageModule
+    ],
+
+providers: [FilterService, PageService,CheckBoxSelectionService],
+standalone: true,
     selector: 'app-root',
     template: `<div id='message'>{{message}}</div><ejs-grid #grid [dataSource]='data' [allowFiltering]='true' height='273px' (actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)">
                 <e-columns>

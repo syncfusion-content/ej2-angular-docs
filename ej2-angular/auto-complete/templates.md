@@ -22,9 +22,7 @@ In the following sample, each list item is split into two columns to display rel
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/autocomplete/item-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/item-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/item-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ In the following sample, employees are grouped according to their city.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/autocomplete/group-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/group-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/group-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ In the following sample, the list items and its headers are designed and display
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/autocomplete/header-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/header-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/header-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -91,9 +85,7 @@ In the following sample, footer element displays the total number of list items 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/autocomplete/footer-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/footer-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/footer-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -114,9 +106,7 @@ In the following sample, popup list content displays the notification of no data
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/autocomplete/norecords-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/norecords-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/norecords-cs1/src/main.ts %}
 {% endhighlight %}
@@ -135,9 +125,7 @@ In the following sample, when the data fetch request fails, the AutoComplete dis
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/autocomplete/norecords-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/norecords-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/norecords-cs2/src/main.ts %}
 {% endhighlight %}

@@ -24,9 +24,7 @@ The following properties are available in the [`ejs-lineargauge`](https://ej2.sy
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/appearance-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/appearance-cs1/src/main.ts %}
 {% endhighlight %}
@@ -49,9 +47,7 @@ The title for the Linear Gauge can be set using [`title`](api/linear-gauge/#titl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/appearance-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/appearance-cs2/src/main.ts %}
 {% endhighlight %}
@@ -83,9 +79,7 @@ The **Normal** type will render the container as a rectangle and this is the def
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/appearance-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/appearance-cs3/src/main.ts %}
 {% endhighlight %}
@@ -101,9 +95,7 @@ The **RoundedRectangle** type will render the container as a rectangle with roun
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/appearance-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/appearance-cs4/src/main.ts %}
 {% endhighlight %}
@@ -119,9 +111,7 @@ The **Thermometer** type will render the container similar to the appearance of 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/appearance-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/appearance-cs5/src/main.ts %}
 {% endhighlight %}
@@ -137,9 +127,7 @@ The Linear Gauge component is rendered with margin by default. To remove the mar
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/appearance-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/appearance-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/appearance-cs6/src/main.ts %}
 {% endhighlight %}

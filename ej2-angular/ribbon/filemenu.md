@@ -20,9 +20,7 @@ You can show the file menu by setting the [visible](https://ej2.syncfusion.com/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Visibility/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Visibility/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Visibility/src/main.ts %}
 {% endhighlight %}
@@ -41,9 +39,7 @@ The menu items can be added to the file menu using the [menuItems](https://ej2.s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/MenuItems/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/MenuItems/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/MenuItems/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ You can open the submenu on menu item click, by setting the [showItemOnClick](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/SubmenuOnClick/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/SubmenuOnClick/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/SubmenuOnClick/src/main.ts %}
 {% endhighlight %}
@@ -83,9 +77,7 @@ You can define the file menu header text content by using the [text](https://ej2
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Text/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Text/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Text/src/main.ts %}
 {% endhighlight %}

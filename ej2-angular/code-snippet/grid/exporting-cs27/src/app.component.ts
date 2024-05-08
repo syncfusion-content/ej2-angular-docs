@@ -1,3 +1,13 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ToolbarService, PdfExportService } from '@syncfusion/ej2-angular-grids'
+import {
+    ButtonModule,
+    CheckBoxModule,
+    RadioButtonModule,
+    SwitchModule,
+} from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -8,6 +18,17 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { SwitchComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule,
+        CheckBoxModule,
+        RadioButtonModule,
+        SwitchModule,
+    ],
+
+providers: [PdfExportService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `
     <div>

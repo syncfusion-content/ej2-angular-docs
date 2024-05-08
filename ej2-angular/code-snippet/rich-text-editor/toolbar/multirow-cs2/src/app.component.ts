@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+
 
 
 import { Component } from '@angular/core';
 import { ToolbarService, HtmlEditorService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
+imports: [
+        
+        RichTextEditorAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-richtexteditor id='defaultRTE' [toolbarSettings]='tools' [pasteCleanupSettings]="pasteCleanupSettings">
     <ng-template #valueTemplate>

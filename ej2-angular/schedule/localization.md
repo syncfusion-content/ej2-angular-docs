@@ -129,9 +129,7 @@ loadCldr(numberingSystems, gregorian, numbers, timeZoneNames);
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/localization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/localization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/localization-cs1/src/main.ts %}
 {% endhighlight %}
@@ -149,9 +147,7 @@ For example, the following code example lets you to define the French translatio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/localization-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/localization-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/localization-cs2/src/main.ts %}
 {% endhighlight %}
@@ -293,9 +289,7 @@ Scheduler can be used with all valid date formats and by default it follows the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs54/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs54/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs54/src/main.ts %}
 {% endhighlight %}
@@ -317,9 +311,7 @@ The following example demonstrates the Scheduler component in 24 hours format.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs55/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs55/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs55/src/main.ts %}
 {% endhighlight %}
@@ -354,9 +346,7 @@ The Scheduler layout and its behavior can be changed as per the common RTL (Righ
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs56/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs56/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs56/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 
@@ -8,6 +12,12 @@ import { createSpinner, showSpinner, hideSpinner } from '@syncfusion/ej2-popups'
 import { UploaderComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+imports: [
+         UploaderModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
                <ejs-uploader #defaultupload autoUpload='false'  [asyncSettings]='path' minFileSize = 10000 allowedExtensions = '.doc, .docx, .xls, .xlsx' (selected)="onFileSelected($event)" (success)="onUploadSuccess($event)"></ejs-uploader>

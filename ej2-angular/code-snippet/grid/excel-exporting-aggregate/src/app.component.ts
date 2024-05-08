@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ToolbarService, ExcelExportService,AggregateService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [ExcelExportService, ToolbarService,AggregateService],
+standalone: true,
   selector: 'app-root',
   template:`<div class="control-section">
               <ejs-grid #grid id="DefaultExport" [dataSource]="data" [toolbar]="toolbar"

@@ -39,9 +39,7 @@ Card image is supported to include a title or caption for the image. By default,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/card/card-img-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/card/card-img-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/card/card-img-cs1/src/main.ts %}
 {% endhighlight %}
@@ -59,9 +57,7 @@ Divider used to separate the elements inside the card. You can add divider insid
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/card/card-header-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/card/card-header-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/card/card-header-cs1/src/main.ts %}
 {% endhighlight %}

@@ -1,0 +1,44 @@
+<ejs-checkbox label="Show/Hide Layout Switcher" [checked]="true" (change)='onChange($event)'></ejs-checkbox>
+<ejs-ribbon id="ribbon" #ribbon [hideLayoutSwitcher]="false">
+  <e-ribbon-tabs>
+    <e-ribbon-tab header="Home">
+      <e-ribbon-groups>
+        <e-ribbon-group header="Clipboard">
+          <e-ribbon-collections>
+            <e-ribbon-collection>
+              <e-ribbon-items>
+                <e-ribbon-item type="Button" [buttonSettings]="pasteButton">
+                </e-ribbon-item>
+              </e-ribbon-items>
+            </e-ribbon-collection>
+            <e-ribbon-collection>
+              <e-ribbon-items>
+                <e-ribbon-item type="Button" [buttonSettings]="cutButton">
+                </e-ribbon-item>
+                <e-ribbon-item type="Button" [buttonSettings]="copyButton">
+                </e-ribbon-item>
+              </e-ribbon-items>
+            </e-ribbon-collection>
+          </e-ribbon-collections>
+        </e-ribbon-group>
+      </e-ribbon-groups>
+    </e-ribbon-tab>
+    <e-ribbon-tab header="Insert">
+      <e-ribbon-groups>
+        <e-ribbon-group header="Tables">
+          <e-ribbon-collections>
+            <e-ribbon-collection>
+              <e-ribbon-items>
+                <e-ribbon-item
+                  type="DropDown"
+                  [dropDownSettings]="tableSettings"
+                >
+                </e-ribbon-item>
+              </e-ribbon-items>
+            </e-ribbon-collection>
+          </e-ribbon-collections>
+        </e-ribbon-group>
+      </e-ribbon-groups>
+    </e-ribbon-tab>
+  </e-ribbon-tabs>
+</ejs-ribbon>

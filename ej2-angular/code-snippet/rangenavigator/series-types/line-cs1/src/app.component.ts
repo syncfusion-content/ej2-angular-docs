@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule, RangeNavigatorModule } from '@syncfusion/ej2-angular-charts'
+import { LineSeriesService, DateTimeService} from '@syncfusion/ej2-angular-charts'
+
 
 
 
@@ -5,6 +10,12 @@ import { Component, OnInit } from '@angular/core';
 import { datasrc } from './datasource'
 
 @Component({
+imports: [
+         ChartModule, RangeNavigatorModule
+    ],
+
+providers: [ LineSeriesService, DateTimeService ],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-rangenavigator id="rn-container" valueType='DateTime' [value]='value'>
             <e-rangenavigator-series-collection>

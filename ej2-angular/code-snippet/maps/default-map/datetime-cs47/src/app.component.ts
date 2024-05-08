@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MapsModule } from '@syncfusion/ej2-angular-maps'
+
 
 
 
@@ -6,6 +10,10 @@ import { usa_map } from './usa';
 import { california } from './california';
 
 @Component({
+imports: [
+         MapsModule
+    ],
+standalone: true,
     selector: 'app-container',
     template:
     `<ejs-maps id='rn-container'>

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import {  ScatterSeriesService, LineSeriesService, DateTimeService, TrendlinesService} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
@@ -11,6 +16,12 @@ for (i = 1973; i <= 2013; i++) {
     series1.push(point1); j++;
 }
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ ScatterSeriesService, LineSeriesService, DateTimeService, TrendlinesService ],
+standalone: true,
     selector: 'app-container',
     template:
             `<ejs-chart id='chartcontainer'  [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'

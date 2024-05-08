@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { ComboBoxModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -6,6 +12,12 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, ComboBoxModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     templateUrl: 'form-support.html'
 })

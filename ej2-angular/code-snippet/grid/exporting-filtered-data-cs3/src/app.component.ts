@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, SelectionService,ToolbarService, PdfExportService,PageService, FilterService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -6,6 +10,13 @@ import { GridComponent, ToolbarItems, SelectionSettingsModel } from '@syncfusion
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [ SelectionService,ToolbarService, PdfExportService,PageService, FilterService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' [allowPaging]='true' [allowPdfExport]='true' (toolbarClick)='toolbarClick($event)' [selectionSettings]='selectionSettings'>
                 <e-columns>

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, ViewChild } from "@angular/core";
@@ -8,6 +13,13 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 enableRipple(true);
 
 @Component({
+imports: [
+        
+        ListViewModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `<div id="text1">
             <input #textbox class="e-input" type="text" id="firstInput" placeholder="Filter" title="Type in a name" (keyup)="onFirstKeyUp($event)" />

@@ -16,9 +16,7 @@ RTL provides an option to switch the text direction and layout of the Query Buil
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/default-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/default-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/default-cs8/src/main.ts %}
 {% endhighlight %}

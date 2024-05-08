@@ -22,9 +22,7 @@ Refer to the following example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/dialog-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/dialog-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/dialog-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ To open this dialog, refer to the following example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/dialog-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/dialog-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/dialog-cs2/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ To open this dialog, refer to the following example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/dialog-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/dialog-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/dialog-cs3/src/main.ts %}
 {% endhighlight %}
@@ -86,9 +80,7 @@ To open this dialog, refer to the following example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/dialog-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/dialog-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/dialog-cs4/src/main.ts %}
 {% endhighlight %}
@@ -106,9 +98,7 @@ To open this dialog, refer to the following example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/dialog-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/dialog-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/dialog-cs5/src/main.ts %}
 {% endhighlight %}
@@ -372,9 +362,7 @@ To open this dialog, refer to the following example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/dialog-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/dialog-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/dialog-cs6/src/main.ts %}
 {% endhighlight %}

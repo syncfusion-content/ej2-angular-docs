@@ -23,9 +23,7 @@ In the below sample, We have created the **FormGroup** with **FormControls** for
 {% highlight ts tabtitle="reactive-form.html" %}
 {% include code-snippet/grid/reactive-form-cs1/src/reactive-form.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/reactive-form-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/reactive-form-cs1/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ In the below sample, We have created the **FormGroup** by using **ngForm** direc
 {% highlight ts tabtitle="template-driven.html" %}
 {% include code-snippet/grid/dialogTemplate-cs1/src/template-driven.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/dialogTemplate-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/dialogTemplate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -208,9 +204,7 @@ The following example, we have rendered tab control inside the edit dialog. The 
 {% highlight ts tabtitle="tablikeedit.html" %}
 {% include code-snippet/grid/tablikeedit-cs1/src/tablikeedit.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/tablikeedit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/tablikeedit-cs1/src/main.ts %}
 {% endhighlight %}

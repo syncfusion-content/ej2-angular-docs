@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AppBarModule } from '@syncfusion/ej2-angular-navigations'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DropDownButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+
 
 
 import { Component } from "@angular/core";
 import { ItemModel } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
+imports: [ AppBarModule, ButtonModule, DropDownButtonModule],
+
+
+standalone: true,
   selector: "app-root",
   template: `<!-- To Render AppBar. -->
     <div class="control-container">

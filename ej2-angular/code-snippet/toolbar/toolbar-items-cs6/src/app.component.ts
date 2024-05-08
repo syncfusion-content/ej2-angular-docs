@@ -1,3 +1,12 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
+import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -7,6 +16,12 @@ import { DropDownList} from '@syncfusion/ej2-dropdowns';
 import { CheckBox, RadioButton  } from '@syncfusion/ej2-buttons';
 
 @Component({
+imports: [
+         ToolbarModule, TooltipModule, NumericTextBoxModule, RadioButtonModule, CheckBoxModule, DropDownListModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `
         <ejs-toolbar>

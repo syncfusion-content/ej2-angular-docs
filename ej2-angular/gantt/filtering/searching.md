@@ -18,9 +18,7 @@ To search records, inject the `FilterService` in the provider section of `AppMod
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/filtering/default-search-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/filtering/default-search-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/filtering/default-search-cs1/src/main.ts %}
 {% endhighlight %}
@@ -37,9 +35,7 @@ To apply search at initial rendering, set the value for [`fields`](https://ej2.s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/filtering/initialsearch-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/filtering/initialsearch-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/filtering/initialsearch-cs1/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +69,7 @@ To search the Gantt records from an external button, invoke the [`search`](https
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/filtering/externalbutton-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/filtering/externalbutton-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/filtering/externalbutton-cs1/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +87,7 @@ By default, the Gantt component searches all the columns. You can search specifi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/filtering/specific-column-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/filtering/specific-column-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/filtering/specific-column-cs1/src/main.ts %}
 {% endhighlight %}
@@ -113,9 +105,7 @@ You can set [`searchSettings.key`](https://ej2.syncfusion.com/angular/documentat
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/filtering/clearSearch-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/filtering/clearSearch-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/filtering/clearSearch-cs1/src/main.ts %}
 {% endhighlight %}

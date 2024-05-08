@@ -1,9 +1,22 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { TooltipComponent, Position } from '@syncfusion/ej2-angular-popups';
 
 @Component({
+imports: [
+        
+        TooltipModule,
+        ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
     <div style='display: inline-flex;position:  relative;left:  50%;transform:  translateX(-50%);margin-top:  100px;'>

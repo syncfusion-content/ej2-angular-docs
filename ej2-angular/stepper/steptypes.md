@@ -20,9 +20,7 @@ In default type, the Stepper displays steps with a combination of both indicator
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/default/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/default/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/default/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ In label type, the Stepper displays the steps with only the step labels by setti
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/labelOnly/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/labelOnly/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/labelOnly/src/main.ts %}
 {% endhighlight %}
@@ -79,9 +75,7 @@ The following label positions are supported in Stepper:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/labelPosition/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/labelPosition/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/labelPosition/src/main.ts %}
 {% endhighlight %}
@@ -103,9 +97,7 @@ In indicator type, the Stepper displays steps with only the step indicators by s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/indicatorOnly/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/indicatorOnly/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/indicatorOnly/src/main.ts %}
 {% endhighlight %}

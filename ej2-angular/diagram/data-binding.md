@@ -39,9 +39,7 @@ To map the user defined JSON data with diagram, configure the fields of [`dataSo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/dataBinding/localBinding-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/dataBinding/localBinding-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/dataBinding/localBinding-cs1/src/main.ts %}
 {% endhighlight %}

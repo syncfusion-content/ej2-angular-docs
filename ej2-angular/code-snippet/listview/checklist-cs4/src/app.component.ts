@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
 import { SelectEventArgs } from '@syncfusion/ej2-lists';
 
 @Component({
+imports: [
+        
+        ListViewModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `<ejs-listview id='listview' [dataSource]='dataSource' [template]='wintemplate' headerTitle='Folders' [showHeader]='true' [showIcon]='true' [fields]='fields' (select)='onSelect($event)'></ejs-listview>
     `,

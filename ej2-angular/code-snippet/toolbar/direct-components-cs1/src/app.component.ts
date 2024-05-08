@@ -1,9 +1,28 @@
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
+import { ToolbarAllModule } from '@syncfusion/ej2-angular-navigations'
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
+import { ButtonAllModule  } from '@syncfusion/ej2-angular-buttons'
+import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 
 import { Component} from '@angular/core';
 
 @Component({
+imports: [
+        FormsModule,
+        ToolbarAllModule,
+        
+        DatePickerAllModule,
+        NumericTextBoxAllModule,
+        ButtonAllModule 
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: ` <ejs-toolbar>
           <e-items>

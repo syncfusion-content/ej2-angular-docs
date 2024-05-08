@@ -41,9 +41,7 @@ Items| Description
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/context-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/context-menu-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/context-menu-cs1/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +60,7 @@ In the below sample, we have shown context menu item for parent rows to expand o
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/context-menu-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/context-menu-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/context-menu-cs2/src/main.ts %}
 {% endhighlight %}
@@ -80,9 +76,7 @@ You can enable and disable the context menu items using the [`enableItems`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/context-menu-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/context-menu-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/context-menu-cs3/src/main.ts %}
 {% endhighlight %}

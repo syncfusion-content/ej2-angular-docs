@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 
 import { Component, ViewChild } from '@angular/core';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 @Component({
+imports: [
+        
+		DialogModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<div class="control-section">
   <button class="e-btn" id='dlgbtn' #ButtonInstance (click)="BtnClick()">Open</button>

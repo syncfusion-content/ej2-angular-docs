@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +10,12 @@ import { MultiSelectComponent } from '@syncfusion/ej2-angular-dropdowns';
 import { Query, DataManager, Predicate } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+        FormsModule, MultiSelectModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template path for MultiSelect component
     templateUrl: `cascading.html`

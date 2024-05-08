@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+
 
 
 
@@ -5,6 +9,13 @@ import { Component } from '@angular/core';
 import { createSpinner, showSpinner, hideSpinner } from '@syncfusion/ej2-angular-popups';
 
 @Component({
+imports: [
+        
+        FormsModule,
+    ],
+
+providers: [],
+standalone: true,
   selector: 'app-container',
   template: `<div id="container"></div>`
 })

@@ -28,9 +28,7 @@ Here's an example code snippet that demonstrates how to define columns manually 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-render-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-render-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-render-cs1/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ You can use the following code snippet to enable auto-generated columns in the t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/auto-generated-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/auto-generated-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/auto-generated-cs1/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +69,7 @@ Here is an example code snippet that shows how to set a primary key for an auto-
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/auto-generated-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/auto-generated-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/auto-generated-cs2/src/main.ts %}
 {% endhighlight %}
@@ -104,9 +98,7 @@ In the below example, `width` is set for **taskID** column, **date** `type` is s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/auto-generated-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/auto-generated-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/auto-generated-cs3/src/main.ts %}
 {% endhighlight %}
@@ -128,9 +120,7 @@ Here is an example for dynamically generate columns in the tree grid using ngFor
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/dynamic-column-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/dynamic-column-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/dynamic-column-cs1/src/main.ts %}
 {% endhighlight %}
@@ -152,9 +142,7 @@ In the provided code, the **currencyFormatter** function takes the price value o
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/dynamic-column-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/dynamic-column-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/dynamic-column-cs2/src/main.ts %}
 {% endhighlight %}
@@ -176,9 +164,7 @@ This will display the concatenated value of **FirstName** and **LastName** in th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/dynamic-column-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/dynamic-column-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/dynamic-column-cs3/src/main.ts %}
 {% endhighlight %}
@@ -198,9 +184,7 @@ In this example, tree grid has columns **orderID**, **orderName**, **units**, an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/expression-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/expression-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/expression-cs1/src/main.ts %}
 {% endhighlight %}
@@ -222,9 +206,7 @@ Here is an example code snippet that demonstrates how to display serial numbers 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/expression-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/expression-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/expression-cs2/src/main.ts %}
 {% endhighlight %}
@@ -248,9 +230,7 @@ In the below example, we have bound the nested **Task** object's **firstName** a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/complex-data-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/complex-data-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/complex-data-cs1/src/main.ts %}
 {% endhighlight %}
@@ -351,9 +331,7 @@ The following example shows how to set complex field for datasource having array
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/complex-data-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/complex-data-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/complex-data-cs2/src/main.ts %}
 {% endhighlight %}

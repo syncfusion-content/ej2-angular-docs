@@ -44,9 +44,7 @@ To refresh the chart, invoke the `refresh` method.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/how-to-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/how-to-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/how-to-cs12/src/main.ts %}
 {% endhighlight %}

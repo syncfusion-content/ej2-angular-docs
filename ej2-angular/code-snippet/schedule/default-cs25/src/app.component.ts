@@ -1,12 +1,30 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Internationalization } from '@syncfusion/ej2-base';
-import { View, MonthService } from '@syncfusion/ej2-angular-schedule';
+import { View,  } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        ButtonModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService],
+standalone: true,
   selector: 'app-root',
-  providers: [MonthService],
   // specifies the template string for the Schedule component
    template: `<ejs-schedule width='100%' height='550px' cssClass="schedule-cell-header-template">
     <ng-template #cellHeaderTemplate let-data>

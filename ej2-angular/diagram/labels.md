@@ -26,9 +26,7 @@ To create and add annotation to Nodes and Connectors using the Angular Diagram, 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/annotation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/annotation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/annotation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ To create and add annotation to Nodes and Connectors using the Angular Diagram, 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/run-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/run-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/run-cs1/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ A collection of annotations can be removed from the node by using client-side me
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/remove-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/remove-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/remove-cs1/src/main.ts %}
 {% endhighlight %}
@@ -84,9 +78,7 @@ The following code example illustrates how to change the annotation properties.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/update-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/update-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/update-cs1/src/main.ts %}
 {% endhighlight %}
@@ -110,9 +102,7 @@ The following code shows the relationship between the annotation position (black
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/offset-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/offset-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/offset-cs1/src/main.ts %}
 {% endhighlight %}
@@ -144,9 +134,7 @@ The following codes illustrates how to align annotations.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/offset-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/offset-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/offset-cs2/src/main.ts %}
 {% endhighlight %}
@@ -164,9 +152,7 @@ The following code example illustrates how to align connector annotations.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/segment-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/segment-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/segment-cs1/src/main.ts %}
 {% endhighlight %}
@@ -184,9 +170,7 @@ The following code example illustrates how to align a annotation based on its `o
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/margin-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/margin-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/margin-cs1/src/main.ts %}
 {% endhighlight %}
@@ -202,9 +186,7 @@ The [`textAlign`](https://ej2.syncfusion.com/angular/documentation/api/diagram/t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/textalign-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/textalign-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/textalign-cs1/src/main.ts %}
 {% endhighlight %}
@@ -222,9 +204,7 @@ A User can open the hyperlink in the new window, the same tab and the new tab by
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/hyperlink-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/hyperlink-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/hyperlink-cs1/src/main.ts %}
 {% endhighlight %}
@@ -242,9 +222,7 @@ The following code illustrates how to define a template in node's annotation. si
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/labeltemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/labeltemplate-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/labeltemplate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -259,9 +237,7 @@ When text overflows node boundaries, you can control it by using [`text wrapping
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/wrapping-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/wrapping-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/wrapping-cs1/src/main.ts %}
 {% endhighlight %}
@@ -283,9 +259,7 @@ The label’s [`TextOverflow`](https://ej2.syncfusion.com/angular/documentation/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/overflow-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/overflow-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/overflow-cs1/src/main.ts %}
 {% endhighlight %}
@@ -307,9 +281,7 @@ The label’s [`TextOverflow`](https://ej2.syncfusion.com/angular/documentation/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/appear-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/appear-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/appear-cs1/src/main.ts %}
 {% endhighlight %}
@@ -323,9 +295,7 @@ The fill, border, and opacity appearances of the text can also be customized wit
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/opacity-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/opacity-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/opacity-cs1/src/main.ts %}
 {% endhighlight %}
@@ -341,9 +311,7 @@ Diagram allows annotation to be interacted by selecting, dragging, rotating, and
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/interaction-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/interaction-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/interaction-cs1/src/main.ts %}
 {% endhighlight %}
@@ -373,9 +341,7 @@ Diagram allows to create read-only annotations. You have to set the read-only pr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/read-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/read-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/read-cs1/src/main.ts %}
 {% endhighlight %}
@@ -435,9 +401,7 @@ You can add any number of annotations to a node or connector. The following code
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/labels/read-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/labels/read-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/labels/read-cs2/src/main.ts %}
 {% endhighlight %}

@@ -24,9 +24,7 @@ The following code illustrates how to enable the default context menu items.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/contextmenu/contextmenu-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/contextmenu/contextmenu-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/contextmenu/contextmenu-cs1/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +52,7 @@ The following code example illustrates how to add custom context menu items.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/contextmenu/custom-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/contextmenu/custom-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/contextmenu/custom-cs1/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +72,7 @@ To display the custom context menu items alone, set  the [`showCustomMenuOnly`](
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/contextmenu/menutemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/contextmenu/menutemplate-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/contextmenu/menutemplate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -95,9 +89,7 @@ The following code example illustrates how to define those events.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/contextmenu/events-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/contextmenu/events-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/contextmenu/events-cs1/src/main.ts %}
 {% endhighlight %}

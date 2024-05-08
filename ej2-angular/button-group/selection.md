@@ -22,9 +22,7 @@ The following example illustrates the single selection behavior in ButtonGroup.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button-group/default-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button-group/default-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button-group/default-cs9/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ The following example illustrates the multiple selection behavior in ButtonGroup
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button-group/default-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button-group/default-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button-group/default-cs10/src/main.ts %}
 {% endhighlight %}
@@ -71,9 +67,7 @@ In the following example, the DropDownButton component is rendered in `app.compo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button-group/drop-down-button-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button-group/drop-down-button-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button-group/drop-down-button-cs1/src/main.ts %}
 {% endhighlight %}
@@ -91,9 +85,7 @@ In the following example, the SplitButton component is rendered in `app.componen
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button-group/split-button-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button-group/split-button-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button-group/split-button-cs1/src/main.ts %}
 {% endhighlight %}

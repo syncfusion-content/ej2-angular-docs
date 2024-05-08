@@ -32,9 +32,7 @@ The following code snippet explains mapping the data source field of the duratio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/scheduling-tasks/mapping-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/mapping-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/scheduling-tasks/mapping-cs2/src/main.ts %}
 {% endhighlight %}
@@ -53,9 +51,7 @@ A duration unit for a task can be defined along with duration value, the followi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/scheduling-tasks/durationfield-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/durationfield-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/scheduling-tasks/durationfield-cs2/src/main.ts %}
 {% endhighlight %}
@@ -100,9 +96,7 @@ You can define the various types of unscheduled tasks in the data source as foll
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/scheduling-tasks/unscheduledtasks-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/unscheduledtasks-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/scheduling-tasks/unscheduledtasks-cs1/src/main.ts %}
 {% endhighlight %}
@@ -123,9 +117,7 @@ The following code snippet explains how to define the working time range for the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/scheduling-tasks/workingtimerange-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/workingtimerange-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/scheduling-tasks/workingtimerange-cs1/src/main.ts %}
 {% endhighlight %}
@@ -145,9 +137,7 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/scheduling-tasks/changenonworkingday-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/scheduling-tasks/changenonworkingday-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/scheduling-tasks/changenonworkingday-cs1/src/main.ts %}
 {% endhighlight %}

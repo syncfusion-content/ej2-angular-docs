@@ -3,6 +3,9 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { orderDetails } from './datasource';
 
 @Component({
+imports: [ GridModule,  FormsModule, ButtonModule],
+
+standalone: true,
   selector: 'app-root',
   template: `
       <div>

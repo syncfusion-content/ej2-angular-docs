@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AccumulationChartModule, ExportService } from '@syncfusion/ej2-angular-charts'
+import { PieSeriesService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ChartComponent, IAccLoadedEventArgs } from '@syncfusion/ej2-angular-charts';
 
 @Component({
+imports: [
+         AccumulationChartModule
+    ],
+
+providers: [PieSeriesService, AccumulationDataLabelService, ExportService],
+standalone: true,
     selector: 'app-container',
     template: `<div class="col-md-8">
     <button ej-button id='print' (click)='export()'>Export</button>

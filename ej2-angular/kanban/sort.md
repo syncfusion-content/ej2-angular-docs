@@ -28,9 +28,7 @@ By default, SortBy `Index` property support without any [`field`](https://ej2.sy
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/index-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/index-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/index-cs1/src/main.ts %}
 {% endhighlight %}
@@ -69,9 +67,7 @@ Consider, Column A has Card A with priority value `1`, Card B with priority valu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/index-field-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/index-field-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/index-field-cs1/src/main.ts %}
 {% endhighlight %}
@@ -87,9 +83,7 @@ The SortBy `DataSourceOrder` property does not require any [`field`](https://ej2
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/data-source-order-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/data-source-order-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/data-source-order-cs1/src/main.ts %}
 {% endhighlight %}
@@ -107,9 +101,7 @@ The SortBy `Custom` property must require datasource [`field`](https://ej2.syncf
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/custom-mapping-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/custom-mapping-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/custom-mapping-cs1/src/main.ts %}
 {% endhighlight %}
@@ -129,9 +121,7 @@ In the following sample, cards are aligned in `Descending` order.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/sort-direction-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/sort-direction-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/sort-direction-cs1/src/main.ts %}
 {% endhighlight %}

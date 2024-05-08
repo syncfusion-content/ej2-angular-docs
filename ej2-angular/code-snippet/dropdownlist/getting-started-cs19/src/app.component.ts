@@ -1,9 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component } from '@angular/core';
 import { Tooltip, TooltipEventArgs } from '@syncfusion/ej2-popups';
 
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, DropDownListModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the DropDownList component with change event
     template: `<ejs-dropdownlist id='ddltooltip' #samples [dataSource]='data' [fields]='fields' [placeholder]='text' (close)='onClose($event)'></ejs-dropdownlist>`

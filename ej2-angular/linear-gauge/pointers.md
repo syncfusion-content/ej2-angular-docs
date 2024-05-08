@@ -18,9 +18,7 @@ Pointers are used to indicate values on an axis. The value of the pointer can be
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/pointers-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs1/src/main.ts %}
 {% endhighlight %}
@@ -57,9 +55,7 @@ By default, the marker shape for the pointer is **InvertedTriangle**. To change 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/pointers-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs2/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +69,7 @@ Image can be rendered instead of rendering a shape as a pointer. It can be achie
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/pointers-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs10/src/main.ts %}
 {% endhighlight %}
@@ -96,9 +90,7 @@ The following properties in the [textStyle](https://ej2.syncfusion.com/angular/d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/pointers-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs11/src/main.ts %}
 {% endhighlight %}
@@ -127,9 +119,7 @@ The marker pointer can be customized using the following properties.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/pointers-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs3/src/main.ts %}
 {% endhighlight %}
@@ -145,9 +135,7 @@ The bar pointer is used to track the axis value. The bar pointer starts from the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/pointers-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs4/src/main.ts %}
 {% endhighlight %}
@@ -175,9 +163,7 @@ The bar pointer can be customized using following properties.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/pointers-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs5/src/main.ts %}
 {% endhighlight %}
@@ -193,9 +179,7 @@ Multiple pointers can be added to the Linear Gauge by adding multiple [e-pointer
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/pointers-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs6/src/main.ts %}
 {% endhighlight %}
@@ -211,9 +195,7 @@ Pointer is animated on loading the gauge. This can be handled by using the [anim
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/pointers-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs7/src/main.ts %}
 {% endhighlight %}
@@ -236,9 +218,7 @@ Using linear gradient, colors will be applied in a linear progression. The start
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/pointers-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs8/src/main.ts %}
 {% endhighlight %}
@@ -254,9 +234,7 @@ Using radial gradient, colors will be applied in circular progression. The inner
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/pointers-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/pointers-cs9/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DateRangePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -6,6 +11,14 @@ import { DateRangePickerComponent } from '@syncfusion/ej2-angular-calendars';
 import { DropDownListComponent,ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+imports: [
+        
+        DropDownListModule,
+        DateRangePickerModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./style.css'],
     template: `

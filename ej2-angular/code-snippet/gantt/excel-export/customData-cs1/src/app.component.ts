@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { ToolbarService, ExcelExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -9,6 +14,12 @@ import { editingData } from './data';
 import { ExcelExportService } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [ToolbarService, ExcelExportService, SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [toolbar]="toolbar"

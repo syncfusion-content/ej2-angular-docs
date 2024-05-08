@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import {  MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -8,8 +14,20 @@ import {
 } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        TimePickerModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService],
+standalone: true,
     selector: 'app-root',
-    providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
     // specifies the template string for the Schedule component
     template: `<ejs-schedule width='100%' #scheduleObj height='550px' [selectedDate]="selectedDate"
   [eventSettings]="eventSettings" (eventRendered)="applyCategoryColor($event)"></ejs-schedule>`

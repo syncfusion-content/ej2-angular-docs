@@ -20,9 +20,7 @@ Styling the tip pointer's size, background, and border colors can be done using 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tooltip/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
@@ -39,9 +37,7 @@ The following code example shows the way to achieve it.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tooltip/custom-css-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/custom-css-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/custom-css-cs1/src/main.ts %}
 {% endhighlight %}

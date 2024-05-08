@@ -22,9 +22,7 @@ When the enter key is customized with any of the possible values, pressing the e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/enter-key-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/enter-key-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/enter-key-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ When the shift + enter key is customized with any of the possible values, pressi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/shift-enter-key-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/shift-enter-key-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/shift-enter-key-cs1/src/main.ts %}
 {% endhighlight %}

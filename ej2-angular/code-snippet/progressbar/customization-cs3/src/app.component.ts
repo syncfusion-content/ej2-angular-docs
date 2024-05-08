@@ -1,8 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { AnimationModel, FontModel } from '@syncfusion/ej2-progressbar';
 @Component({
+imports: [
+         ProgressBarModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template:
     `<ejs-progressbar #linear id='linear' [type]='type' [maximum]='max' [minimum]='min' [value]='value' [width]='width' [height]='height'></ejs-progressbar>`

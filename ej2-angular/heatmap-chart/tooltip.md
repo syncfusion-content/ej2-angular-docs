@@ -20,9 +20,7 @@ You can enable the tooltip by setting the [showTooltip](https://ej2.syncfusion.c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/tooltip/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/tooltip/tooltip-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/tooltip/tooltip-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ In heat map, you can customize the tooltip using the [tooltipRender](https://ej2
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/tooltip/tooltiptemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/tooltip/tooltiptemplate-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/tooltip/tooltiptemplate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +52,7 @@ The  [fill](https://ej2.syncfusion.com/angular/documentation/api/heatmap/tooltip
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/tooltip/tooltipSettings-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/tooltip/tooltipSettings-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/tooltip/tooltipSettings-cs1/src/main.ts %}
 {% endhighlight %}

@@ -24,9 +24,7 @@ The breadcrumb items with relative URL contain only the path but do not locate t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/breadcrumb/navigations-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/breadcrumb/navigations-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ The breadcrumb items with Absolute URL contain the path and locate to the resour
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/breadcrumb/navigations-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/breadcrumb/navigations-cs2/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ The feature enables the last item of the Breadcrumb component by setting the `en
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/breadcrumb/navigations-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/breadcrumb/navigations-cs3/src/main.ts %}
 {% endhighlight %}
@@ -78,9 +72,7 @@ To open the breadcrumb item in a new page or tab, set the target property of the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/breadcrumb/navigations-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/navigations-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/breadcrumb/navigations-cs4/src/main.ts %}
 {% endhighlight %}

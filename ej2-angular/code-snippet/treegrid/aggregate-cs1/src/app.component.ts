@@ -1,9 +1,21 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { AggregateService  } from '@syncfusion/ej2-angular-treegrid'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { summaryRowData } from './datasource';
 
 @Component({
+imports: [
+        
+        TreeGridModule
+    ],
+
+providers: [AggregateService ],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' height='240' [treeColumnIndex]='0'  childMapping='children' >
         <e-columns>

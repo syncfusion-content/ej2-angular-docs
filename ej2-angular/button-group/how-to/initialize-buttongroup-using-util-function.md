@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Initialize buttongroup using util function in Angular Button group component | Syncfusion
+title: Initialize buttongroup using util function in Angular Button group component|Syncfusion
 description: Learn here all about Initialize buttongroup using util function in Syncfusion Angular Button group component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Initialize buttongroup using util function 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Initialize buttongroup using util function in Angular Button group component
+# Initialize buttongroup using util function in Button group component
 
 Though, it is a CSS component for easy initialization of ButtonGroup `createButtonGroup` util function can be used.
 
@@ -35,9 +35,7 @@ type behaviors.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button-group/util-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button-group/util-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button-group/util-cs2/src/main.ts %}
 {% endhighlight %}

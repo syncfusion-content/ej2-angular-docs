@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService, EditService, ToolbarService, AggregateService } from '@syncfusion/ej2-angular-treegrid'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -5,6 +10,18 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { sampleData } from './datasource';
 
 @Component({
+imports: [
+        
+        TreeGridModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                EditService,
+                ToolbarService,
+                AggregateService],
+standalone: true,
     selector: 'app-container',
     template: `<div class="e-adaptive-demo e-bigger">
                     <div class="e-mobile-layout">

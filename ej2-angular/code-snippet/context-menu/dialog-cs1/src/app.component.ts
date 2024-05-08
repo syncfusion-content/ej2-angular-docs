@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +11,14 @@ import { MenuItemModel, MenuEventArgs } from '@syncfusion/ej2-navigations';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
+imports: [
+        
+        DialogModule,
+        ContextMenuModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<div class="e-section-control">
   <div id="target">Right click / Touch hold to open the ContextMenu</div>

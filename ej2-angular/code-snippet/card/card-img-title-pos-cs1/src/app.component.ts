@@ -1,9 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+
 
 
 import { Component, ViewChild } from '@angular/core';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 
 @Component({
+imports: [
+        
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `
             <div>

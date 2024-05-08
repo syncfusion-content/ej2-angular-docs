@@ -23,9 +23,7 @@ To bind local data to the query builder, you can assign the [`dataSource`](https
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/filtering-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/filtering-cs4/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ To bind remote  data to the query builder, assign service data as an instance of
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -63,9 +59,7 @@ To bind remote  data to the query builder, assign service data as an instance of
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/default-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/default-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/default-cs2/src/main.ts %}
 {% endhighlight %}
@@ -81,9 +75,7 @@ The ODataV4 is an improved version of OData protocols, and the `DataManager` can
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/default-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/default-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/default-cs3/src/main.ts %}
 {% endhighlight %}
@@ -153,9 +145,7 @@ You can use the created conditions in DataManager through the getPredicate metho
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/filtering-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/filtering-cs5/src/main.ts %}
 {% endhighlight %}
@@ -173,9 +163,7 @@ In the following sample, complex data was bound in nested columns.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/complex-data-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/complex-data-binding-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/complex-data-binding-cs1/src/main.ts %}
 {% endhighlight %}

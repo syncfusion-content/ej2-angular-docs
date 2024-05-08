@@ -1,8 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { QueryBuilderModule } from '@syncfusion/ej2-angular-querybuilder'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        
+        QueryBuilderModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<!-- To render Query Builder. -->
                <ejs-querybuilder width="70%">

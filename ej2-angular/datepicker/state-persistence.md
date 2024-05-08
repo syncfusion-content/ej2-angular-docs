@@ -24,9 +24,7 @@ Select or enter a date value and then refresh the page by clicking the button (R
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/state-persistence-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/state-persistence-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/state-persistence-cs1/src/main.ts %}
 {% endhighlight %}

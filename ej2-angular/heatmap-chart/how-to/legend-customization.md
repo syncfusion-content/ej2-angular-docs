@@ -16,9 +16,7 @@ You can change the legend label using the `legendRender` client-side event. You 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/how-to/legend-label-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/how-to/legend-label-customization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/how-to/legend-label-customization-cs1/src/main.ts %}
 {% endhighlight %}

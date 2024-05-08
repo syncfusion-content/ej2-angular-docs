@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { ColorPickerModule } from '@syncfusion/ej2-angular-inputs'
+import { SplitButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+
 
 
 import { Component, ViewChild, OnInit } from '@angular/core';
@@ -5,6 +11,12 @@ import { ColorPickerComponent } from '@syncfusion/ej2-angular-inputs';
 import { SplitButtonComponent } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
+imports: [
+        FormsModule,ColorPickerModule,SplitButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <ul id="target" tabindex="0">

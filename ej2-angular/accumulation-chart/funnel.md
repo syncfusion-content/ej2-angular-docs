@@ -20,9 +20,7 @@ To known about funnel charts, you can check on this video:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/funnel-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/funnel-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ The size of the funnel chart can be customized by using the  `width` and `height
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/funnel-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/funnel-cs2/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +52,7 @@ The funnel's neck size can be customized by using the `neckWidth` and `neckHeigh
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/funnel-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/funnel-cs3/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +68,7 @@ Funnel chart provides options to customize the space between the segments by usi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/funnel-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/funnel-cs4/src/main.ts %}
 {% endhighlight %}
@@ -92,9 +84,7 @@ Points can be exploded on mouse click by setting the `explode` property to true.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/funnel-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/funnel-cs5/src/main.ts %}
 {% endhighlight %}
@@ -110,9 +100,7 @@ It provides the data label smart arrangement of the funnel and pyramid series. T
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/funnel-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/funnel-cs6/src/main.ts %}
 {% endhighlight %}
@@ -128,9 +116,7 @@ Individual points can be customized using the `pointRender` event.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/funnel-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/funnel-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/funnel-cs7/src/main.ts %}
 {% endhighlight %}

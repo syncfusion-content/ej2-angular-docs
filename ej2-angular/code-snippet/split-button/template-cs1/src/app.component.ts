@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SplitButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+
 
 
 import { Component } from '@angular/core';
@@ -5,6 +9,13 @@ import { ItemModel, MenuEventArgs } from '@syncfusion/ej2-angular-splitbuttons';
 import { enableRipple, createElement } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        SplitButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template:  `<div class="e-section-control">
               <!-- To Render splitbutton. -->

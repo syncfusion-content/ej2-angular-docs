@@ -18,9 +18,7 @@ Here is an example that showcasing how to render the excel like filter within th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-like-filtering-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-like-filtering-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-like-filtering-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ Here is an example that showcasing how to render the check box filter within the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/check-box-filter-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/check-box-filter-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/check-box-filter-cs1/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +62,7 @@ The following example demonstrates how to customize the filter choice count in t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-like-filtering-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-like-filtering-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-like-filtering-cs2/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +84,7 @@ In the example below, you can see how you can customize the text displayed in th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-like-filtering-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-like-filtering-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-like-filtering-cs7/src/main.ts %}
 {% endhighlight %}
@@ -110,9 +102,7 @@ In this example, you can see how to use the `filterItemTemplate` to render icons
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-like-filtering-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-like-filtering-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-like-filtering-cs4/src/main.ts %}
 {% endhighlight %}
@@ -141,9 +131,7 @@ The following example demonstrates how to remove the context menu option in the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/excel-like-filtering-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/excel-like-filtering-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/excel-like-filtering-cs8/src/main.ts %}
 {% endhighlight %}
@@ -183,9 +171,7 @@ In the provided example, On-Demand Excel filter has been enabled for the Angular
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/checkbox-excel-filter/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/checkbox-excel-filter/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/checkbox-excel-filter/src/main.ts %}
 {% endhighlight %}

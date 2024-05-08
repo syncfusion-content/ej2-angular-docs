@@ -34,9 +34,7 @@ In the following sample, the [allowDragAndDrop](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tree-view/getting-started-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +54,7 @@ In the following sample,  the `allowMultiSelection` property is  enabled along w
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tree-view/getting-started-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/getting-started-cs7/src/main.ts %}
 {% endhighlight %}

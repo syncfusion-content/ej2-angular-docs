@@ -49,9 +49,7 @@ Here, the data is fetched from `Northwind` Service URL; it takes a few seconds t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/getting-started-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/getting-started-cs5/src/main.ts %}
 {% endhighlight %}

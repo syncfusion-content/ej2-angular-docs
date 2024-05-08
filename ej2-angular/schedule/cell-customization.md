@@ -20,9 +20,7 @@ The height and width of the Scheduler cells can be customized either to increase
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs21/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs21/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs21/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ You can check whether the given time range slots are available for event creatio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs22/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs22/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs22/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ The `cellTemplate` option accepts the template string and is used to customize t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs23/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs23/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs23/src/main.ts %}
 {% endhighlight %}
@@ -84,9 +78,7 @@ An alternative to `cellTemplate` is the `renderCell` event, which can also be us
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs24/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs24/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs24/src/main.ts %}
 {% endhighlight %}
@@ -118,9 +110,7 @@ The month header of each date cell in the month view can be customized using the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs25/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs25/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs25/src/main.ts %}
 {% endhighlight %}
@@ -136,9 +126,7 @@ Providing the `minDate` and `maxDate` property with some date values, allows the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs26/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs26/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs26/src/main.ts %}
 {% endhighlight %}
@@ -183,9 +171,7 @@ And, the background color for weekend cells in the Month view through the [`cssC
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/weekend-cell-color/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/weekend-cell-color/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/weekend-cell-color/src/main.ts %}
 {% endhighlight %}

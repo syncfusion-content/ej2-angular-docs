@@ -22,9 +22,7 @@ You can check this video to learn about how to perform Exporting and its customi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/excel-export-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-export-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/excel-export-cs7/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ You can persist the collapsed state in the exported document by defining `isColl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/excel-export-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-export-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/excel-export-cs8/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ The excel export provides an option to define datasource dynamically before expo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/excel-export-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-export-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/excel-export-cs9/src/main.ts %}
 {% endhighlight %}

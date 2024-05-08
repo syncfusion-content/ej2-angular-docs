@@ -1,8 +1,23 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, columnDataType } from './datasource';
 import { GridComponent, SelectionSettingsModel,RowDataBoundEventArgs  } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                GroupService],
+standalone: true,
     selector: 'app-root',
     template: `<div id="GridParent">
                     <ejs-grid #Grid [dataSource]="data" allowPaging='true' [selectionSettings]='selectionOptions'

@@ -28,9 +28,7 @@ In the following sample, French culture is set to the DropDownList and no data i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs20/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs20/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs20/src/main.ts %}
 {% endhighlight %}

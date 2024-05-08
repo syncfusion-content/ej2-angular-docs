@@ -36,9 +36,7 @@ The UML class diagram shapes are explained as follows.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/class-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/class-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/class-cs1/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +62,7 @@ The UML class diagram shapes are explained as follows.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/interface-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/interface-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/interface-cs1/src/main.ts %}
 {% endhighlight %}
@@ -86,9 +82,7 @@ The UML class diagram shapes are explained as follows.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/enumeration-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/enumeration-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/enumeration-cs1/src/main.ts %}
 {% endhighlight %}
@@ -121,9 +115,7 @@ The association property allows you to define the type of association. The defau
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/association-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/association-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/association-cs1/src/main.ts %}
 {% endhighlight %}
@@ -143,9 +135,7 @@ The following code example illustrates how to create an aggregation.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/aggregation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/aggregation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/aggregation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -163,9 +153,7 @@ The following code example illustrates how to create a composition.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/composition-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/composition-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/composition-cs1/src/main.ts %}
 {% endhighlight %}
@@ -183,9 +171,7 @@ The following code example illustrates how to create an dependency.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/dependency-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/dependency-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/dependency-cs1/src/main.ts %}
 {% endhighlight %}
@@ -205,9 +191,7 @@ The following code example illustrates how to create an inheritance.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/inheritance-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/inheritance-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/inheritance-cs1/src/main.ts %}
 {% endhighlight %}
@@ -240,9 +224,7 @@ The following code example illustrates how to customize the multiplicity.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/multiplicity-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/multiplicity-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/multiplicity-cs1/src/main.ts %}
 {% endhighlight %}
@@ -270,9 +252,7 @@ diagram.addChildToUmlNode(node, methods, 'Method');
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/umlmethod-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlmethod-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/umlmethod-cs1/src/main.ts %}
 {% endhighlight %}
@@ -294,9 +274,7 @@ diagram.addChildToUmlNode(node, attributes, "Attribute");
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/umlattribute-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlattribute-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/umlattribute-cs1/src/main.ts %}
 {% endhighlight %}
@@ -317,9 +295,7 @@ diagram.addChildToUmlNode(node, members, "Member");
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/umlmember-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlmember-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/umlmember-cs1/src/main.ts %}
 {% endhighlight %}
@@ -344,9 +320,7 @@ The following code example showcases the rendering of UML built-in shapes in a s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/uml-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/uml-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/uml-cs1/src/main.ts %}
 {% endhighlight %}
@@ -400,9 +374,7 @@ The following code illustrates how to create a UmlActivity shapes.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/UmlActivity-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/UmlActivity-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/UmlActivity-cs1/src/main.ts %}
 {% endhighlight %}
@@ -420,9 +392,7 @@ The following code illustrates how to create a UmlActivity connector.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/UmlActivityConnector-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/UmlActivityConnector-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/UmlActivityConnector-cs1/src/main.ts %}
 {% endhighlight %}

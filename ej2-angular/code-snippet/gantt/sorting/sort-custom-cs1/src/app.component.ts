@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { SortService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -8,6 +13,12 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { editingData } from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [SortService],
+standalone: true,
     selector: 'app-root',
     template:
        ` <button ejs-button id='sortColumn' (click)='sort()'>Sort Custom Column</button>

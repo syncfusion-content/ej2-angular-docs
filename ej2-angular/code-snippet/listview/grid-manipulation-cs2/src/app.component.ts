@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+import { DialogComponent, DialogModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 
@@ -7,6 +12,14 @@ import { DataManager, Query } from "@syncfusion/ej2-data";
 enableRipple(true);
 
 @Component({
+imports: [
+        
+        ListViewModule,
+        DialogModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
           <div id="sample">

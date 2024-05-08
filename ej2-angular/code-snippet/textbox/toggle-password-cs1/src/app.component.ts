@@ -1,3 +1,8 @@
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+
 
 
 import { Component, Inject, ViewChild } from '@angular/core';
@@ -6,6 +11,10 @@ import {
   NumericTextBoxComponent,
 } from '@syncfusion/ej2-angular-inputs';
 @Component({
+imports: [ FormsModule, TextBoxModule],
+
+
+standalone: true,
   selector: 'app-root',
   styleUrls: ['./app.component.css'],
   templateUrl: './app.component.html',

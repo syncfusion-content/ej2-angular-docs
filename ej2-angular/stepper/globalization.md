@@ -24,9 +24,7 @@ In this example, the `French` culture is set to Stepper and the default text is 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/localization/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/localization/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/localization/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ RTL provides an option to switch the text direction and layout of the Stepper co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/rtl/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/rtl/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/rtl/src/main.ts %}
 {% endhighlight %}

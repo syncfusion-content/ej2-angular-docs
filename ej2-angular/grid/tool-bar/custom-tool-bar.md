@@ -20,9 +20,7 @@ The following example demonstrates, how to render the custom toolbar using `tool
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/toolbar-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/toolbar-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/toolbar-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ The following example demonstrates how to render an image in the toolbar of the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/toolbar-template-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/toolbar-template-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/toolbar-template-cs3/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +66,7 @@ In the **onChange** method, the text of the selected item is checked to determin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/toolbar-template-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/toolbar-template-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/toolbar-template-cs4/src/main.ts %}
 {% endhighlight %}
@@ -92,9 +86,7 @@ The following example demonstrates how to render a **Button** component in the t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/toolbar-template-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/toolbar-template-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/toolbar-template-cs2/src/main.ts %}
 {% endhighlight %}

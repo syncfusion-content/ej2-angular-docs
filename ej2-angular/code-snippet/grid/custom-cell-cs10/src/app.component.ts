@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { DetailRowService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, OnInit } from '@angular/core';
 import { employeeData } from './datasource';
 import { Internationalization } from '@syncfusion/ej2-base';
@@ -5,6 +10,13 @@ import { Internationalization } from '@syncfusion/ej2-base';
 const instance: Internationalization = new Internationalization();
 
 @Component({
+imports: [
+        
+        GridModule        
+    ],
+
+providers: [DetailRowService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' height=335 width='auto'>
         <e-columns>

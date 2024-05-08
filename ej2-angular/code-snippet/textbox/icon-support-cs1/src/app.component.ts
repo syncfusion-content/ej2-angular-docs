@@ -1,8 +1,17 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="wrap">
                 <div class="e-input-group">

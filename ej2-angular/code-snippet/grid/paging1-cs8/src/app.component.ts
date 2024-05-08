@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -24,6 +28,13 @@ const data = (count: any) => {
 };
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [PageService, ToolbarService, EditService, VirtualScrollService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height=300 [enableVirtualization]=true [pageSettings]='options' [editSettings]='editSettings' [toolbar]='toolbar'>
                 <e-columns>
@@ -33,8 +44,7 @@ const data = (count: any) => {
                     <e-column field='Estimation' textAlign='Right' width=100 editType='numericedit' [validationRules]='rules'></e-column>
                     <e-column field='Status' width=100 editType='dropdownedit'></e-column>
                 </e-columns>
-                </ejs-grid>`,
-    providers: [VirtualScrollService]
+                </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 

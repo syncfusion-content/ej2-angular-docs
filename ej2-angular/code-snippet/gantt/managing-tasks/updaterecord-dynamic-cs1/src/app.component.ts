@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { EditService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -9,6 +14,12 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { projectNewData } from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [EditService],
+standalone: true,
     selector: 'app-root',
     template:
        `<button ejs-button id='updateRecord' (click)='update()'>Update Record</button>

@@ -29,9 +29,7 @@ You can customize header styles by adding predefined classes in the Tab root ele
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/tab/header-cs1/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/header-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tab/header-cs1/src/main.ts %}
 {% endhighlight %}
@@ -52,9 +50,7 @@ You can customize the position of the Tab header icons using the [`iconPosition`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/icon-position-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/icon-position-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tab/icon-position-cs1/src/main.ts %}
 {% endhighlight %}

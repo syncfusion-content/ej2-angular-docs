@@ -26,9 +26,7 @@ In the below sample, we have rendered `ListView` with search engines URL.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/navigation-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listview/navigation-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/navigation-cs2/src/main.ts %}
 {% endhighlight %}

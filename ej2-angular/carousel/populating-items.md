@@ -23,9 +23,7 @@ When rendering the Carousel component using items binding, you can assign templa
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs14/src/main.ts %}
 {% endhighlight %}
@@ -41,9 +39,7 @@ When rendering the Carousel component using data binding, you can assign a commo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs15/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +62,7 @@ Using the [`selectedIndex`](https://ej2.syncfusion.com/angular/documentation/api
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs16/src/main.ts %}
 {% endhighlight %}
@@ -84,9 +78,7 @@ Using the [`prev`](https://ej2.syncfusion.com/angular/documentation/api/carousel
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs17/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs17/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs17/src/main.ts %}
 {% endhighlight %}
@@ -102,9 +94,7 @@ The Carousel component supports to show one complete slide and a partial view of
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/partial-visible-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/partial-visible-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/partial-visible-cs1/src/main.ts %}
 {% endhighlight %}
@@ -124,9 +114,7 @@ The following example code depicts the functionality of `partialVisible` and wit
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/partial-visible-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/partial-visible-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/partial-visible-cs2/src/main.ts %}
 {% endhighlight %}

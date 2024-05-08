@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MapsModule } from '@syncfusion/ej2-angular-maps'
+import { LegendService } from '@syncfusion/ej2-angular-maps'
+
 
 
 
@@ -6,6 +11,12 @@ import { world_map } from './world-map';
 
 Maps.Inject(Legend);
 @Component({
+imports: [
+         MapsModule
+    ],
+
+providers: [LegendService],
+standalone: true,
     selector: 'app-container',
     template:
     `<ejs-maps id='rn-container' [legendSettings] = 'legendSettings'>

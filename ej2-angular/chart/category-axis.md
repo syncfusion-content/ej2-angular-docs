@@ -22,9 +22,7 @@ To known about category axis, you can check on this video:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs21/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs21/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs21/src/main.ts %}
 {% endhighlight %}
@@ -47,9 +45,7 @@ using [`labelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs22/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs22/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs22/src/main.ts %}
 {% endhighlight %}
@@ -65,9 +61,7 @@ Range of the category axis can be customized using [`minimum`](https://ej2.syncf
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs23/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs23/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs23/src/main.ts %}
 {% endhighlight %}
@@ -83,9 +77,7 @@ Category axis also can be rendered based on the index values of data source. Thi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs24/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs24/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs24/src/main.ts %}
 {% endhighlight %}

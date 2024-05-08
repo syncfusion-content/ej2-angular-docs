@@ -26,9 +26,7 @@ The size of the Linear Gauge can be set in pixel as demonstrated below.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/dimensions-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/dimensions-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/dimensions-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ By setting value in percentage, Linear Gauge receives its dimension matching to 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/dimensions-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/dimensions-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/dimensions-cs2/src/main.ts %}
 {% endhighlight %}

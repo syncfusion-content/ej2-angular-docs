@@ -26,9 +26,7 @@ In the below sample, pivot table is rendered with a customized pivot button icon
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/icon-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/icon-customization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/icon-customization-cs1/src/main.ts %}
 {% endhighlight %}

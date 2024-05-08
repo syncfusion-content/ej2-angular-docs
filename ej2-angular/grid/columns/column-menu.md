@@ -31,9 +31,7 @@ The default column menu items are displayed in following table.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs6/src/main.ts %}
 {% endhighlight %}
@@ -55,9 +53,7 @@ Consider the following example, which demonstrates how to add a custom column me
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs8/src/main.ts %}
 {% endhighlight %}
@@ -75,9 +71,7 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs9/src/main.ts %}
 {% endhighlight %}
@@ -97,9 +91,7 @@ Here is an example of how to configure the `columnMenuItems` property to include
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/column-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/column-menu-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/column-menu-cs1/src/main.ts %}
 {% endhighlight %}
@@ -134,9 +126,7 @@ Here is an example that demonstrates how to customize the column menu icon in th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-column-menu-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-column-menu-icon-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-column-menu-icon-cs1/src/main.ts %}
 {% endhighlight %}
@@ -156,9 +146,7 @@ The column menu in Syncfusion Angular Grid provides a set of events that allow c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs7/src/main.ts %}
 {% endhighlight %}

@@ -25,9 +25,7 @@ The following sample illustrates how to query the data source and pass the data 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/combobox/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/getting-started-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/combobox/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ In the following example, the remote request does not fetch the search data unti
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/combobox/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/getting-started-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/combobox/getting-started-cs7/src/main.ts %}
 {% endhighlight %}
@@ -65,9 +61,7 @@ In the following examples, data filtering is done with `endsWith` type.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/combobox/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/getting-started-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/combobox/getting-started-cs8/src/main.ts %}
 {% endhighlight %}
@@ -85,9 +79,7 @@ The following example shows how to perform case-sensitive filter.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/combobox/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/getting-started-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/combobox/getting-started-cs9/src/main.ts %}
 {% endhighlight %}
@@ -105,9 +97,7 @@ In the following sample,data with diacritics are bound as dataSource for ComboBo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/combobox/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/getting-started-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/combobox/getting-started-cs10/src/main.ts %}
 {% endhighlight %}

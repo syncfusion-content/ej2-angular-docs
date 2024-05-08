@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule, GanttAllModule } from '@syncfusion/ej2-angular-gantt'
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+import { EditService, SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -9,6 +15,12 @@ import { closest,addClass } from '@syncfusion/ej2-base';
 import { GanttComponent, ToolbarItem, EditSettingsModel, SelectionSettingsModel } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
+imports: [
+         GanttModule, GanttAllModule, TreeViewModule
+    ],
+
+providers: [EditService, SelectionService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template:
     `<p><b>Gantt</b></p>

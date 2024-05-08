@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
+import { FormsModule } from '@angular/forms'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -5,6 +11,15 @@ import { data } from './datasource';
 import { GroupSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        FormsModule,
+        ButtonModule
+    ],
+
+providers: [GroupService],
+standalone: true,
     selector: 'app-root',
     template: `
     <div style="display:flex">

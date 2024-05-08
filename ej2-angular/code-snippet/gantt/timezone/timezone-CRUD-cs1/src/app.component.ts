@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { EditService, SelectionService} from '@syncfusion/ej2-angular-gantt'
+
 
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
@@ -5,6 +10,12 @@ import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { Gantt } from '@syncfusion/ej2-gantt';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [EditService, SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt id="ganttDefault" #gantt [dataSource]="data" [taskFields]="taskSettings" [dayWorkingTime]="dayWorkingTime" (actionComplete)="actionComplete($event)" [timelineSettings]="timelineSettings" timezone="America/New_York" durationUnit="Hour" dateFormat="hh:mm a" height="450px" [includeWeekend]="true">`,

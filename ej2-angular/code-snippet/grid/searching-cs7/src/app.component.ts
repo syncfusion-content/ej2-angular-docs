@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, SearchService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
@@ -5,6 +9,13 @@ import { ToolbarItems, SearchSettingsModel, GridComponent, SearchEventArgs, Colu
 import { Predicate, Query,  } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [SearchService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #Grid [dataSource]='data' [toolbar]='toolbarOptions' [searchSettings]='searchOptions'(actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)" height='400' width='100%'>
                 <e-columns>

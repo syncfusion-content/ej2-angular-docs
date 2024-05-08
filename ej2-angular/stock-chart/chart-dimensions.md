@@ -18,9 +18,7 @@ Stock Chart can render to its container size. You can set the size via inline or
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/chart-dimensions-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/chart-dimensions-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/chart-dimensions-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ You can set the size of chart in pixel as demonstrated below.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/chart-dimensions-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/chart-dimensions-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/chart-dimensions-cs2/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ By setting value in percentage, Stock Chart gets its dimension with respect to i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/chart-dimensions-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/chart-dimensions-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/chart-dimensions-cs3/src/main.ts %}
 {% endhighlight %}

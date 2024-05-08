@@ -26,9 +26,7 @@ This mode is the default one in which the AppBar is displayed with the default h
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/appbar/regular-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/regular-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/appbar/regular-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ This height mode can be set to the AppBar by setting `Prominent` to the property
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/appbar/prominent-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/prominent-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/appbar/prominent-cs1/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ This height mode can be set to the AppBar by setting `Dense` to the property [mo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/appbar/dense-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/dense-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/appbar/dense-cs1/src/main.ts %}
 {% endhighlight %}
@@ -89,9 +83,7 @@ This color mode is the default one in which the AppBar can be displayed with a l
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/appbar/light-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/light-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/appbar/light-cs1/src/main.ts %}
 {% endhighlight %}
@@ -107,9 +99,7 @@ This color mode can be set to the AppBar by setting `Dark` to the property [colo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/appbar/dark-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/dark-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/appbar/dark-cs1/src/main.ts %}
 {% endhighlight %}
@@ -125,9 +115,7 @@ This color mode can be set to the AppBar by setting `Primary` to the property [c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/appbar/primary-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/primary-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/appbar/primary-cs1/src/main.ts %}
 {% endhighlight %}
@@ -143,9 +131,7 @@ This color mode can be set to the AppBar by setting `Inherit` to the property [c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/appbar/inherit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/appbar/inherit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/appbar/inherit-cs1/src/main.ts %}
 {% endhighlight %}

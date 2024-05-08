@@ -16,9 +16,7 @@ Tooltip for the accumulation chart can be enabled by using the [`enable`](https
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs31/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs31/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pie-cs31/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ We can specify header for the tooltip using [`header`](https://ej2.syncfusion.co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs32/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs32/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pie-cs32/src/main.ts %}
 {% endhighlight %}
@@ -55,9 +51,7 @@ information in tooltip. For example the format `${series.name} ${point.x}` sho
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs33/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs33/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pie-cs33/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +67,7 @@ Any HTML element can be displayed in the tooltip by using the [`template`](https
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs34/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs34/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pie-cs34/src/main.ts %}
 {% endhighlight %}
@@ -91,9 +83,7 @@ By default, tooltip track the mouse movement, but you can set a fixed position f
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs38/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs38/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pie-cs38/src/main.ts %}
 {% endhighlight %}
@@ -109,9 +99,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs35/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs35/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pie-cs35/src/main.ts %}
 {% endhighlight %}
@@ -128,9 +116,7 @@ You can use the `${point.tooltip}` as place holders to display the specified too
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs36/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs36/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pie-cs36/src/main.ts %}
 {% endhighlight %}
@@ -146,9 +132,7 @@ Using [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/acc
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pie-cs37/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pie-cs37/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pie-cs37/src/main.ts %}
 {% endhighlight %}

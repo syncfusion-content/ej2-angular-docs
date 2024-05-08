@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -9,6 +13,11 @@ import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { DataManager, WebApiAdaptor, UrlAdaptor } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+standalone: true,
     selector: 'app-root',
     template:`
     <button ejs-button id='binddata' (click)='bind()'>Bind Data</button>

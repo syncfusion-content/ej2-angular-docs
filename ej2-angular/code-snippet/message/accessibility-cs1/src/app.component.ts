@@ -1,6 +1,17 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MessageModule } from '@syncfusion/ej2-angular-notifications'
+
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+    
+    MessageModule
+  ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<header>
     <h1>Message Accessibility sample</h1>

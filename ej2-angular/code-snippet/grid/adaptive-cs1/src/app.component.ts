@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, SortService, FilterService, EditService, ToolbarService, AggregateService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -5,6 +10,18 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                EditService,
+                ToolbarService,
+                AggregateService],
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-adaptive-demo e-bigger">
                     <div class="e-mobile-layout">

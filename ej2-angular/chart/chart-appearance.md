@@ -18,9 +18,7 @@ You can customize the default color of series or points by providing a custom co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs25/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs25/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs25/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ You can bind the color for the points from [`dataSource`](https://ej2.syncfusion
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs26/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs26/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs26/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ You can differentiate data points based on their y values using [`rangeColorSett
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs27/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs27/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs27/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +70,7 @@ Marker, datalabel and fill color of each data point can be customized with [`poi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs12/src/main.ts %}
 {% endhighlight %}
@@ -101,9 +93,7 @@ Using [`background`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs13/src/main.ts %}
 {% endhighlight %}
@@ -119,9 +109,7 @@ You can set margin for chart from its container through [`margin`](https://ej2.s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs14/src/main.ts %}
 {% endhighlight %}
@@ -137,9 +125,7 @@ The chart area background can be customized by using the [`background`](https://
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs15/src/main.ts %}
 {% endhighlight %}
@@ -155,9 +141,7 @@ You can customize animation for a particular series using [`animation`](https://
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs16/src/main.ts %}
 {% endhighlight %}
@@ -173,9 +157,7 @@ Fluid animation used to animate series with updated dataSource continues animati
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs17/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs17/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs17/src/main.ts %}
 {% endhighlight %}
@@ -191,9 +173,7 @@ Chart can be given a title using [`title`](https://ej2.syncfusion.com/angular/do
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/chart-title-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/chart-title-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/chart-title-cs2/src/main.ts %}
 {% endhighlight %}
@@ -209,9 +189,7 @@ By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/chart-title-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/chart-title-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/chart-title-cs5/src/main.ts %}
 {% endhighlight %}
@@ -225,9 +203,7 @@ The custom option helps you to position the title anywhere in the chart using [`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/chart-title-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/chart-title-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/chart-title-cs6/src/main.ts %}
 {% endhighlight %}
@@ -243,9 +219,7 @@ You can align the title to the near, far, or center of the chart using the [`tex
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/chart-title-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/chart-title-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/chart-title-cs7/src/main.ts %}
 {% endhighlight %}
@@ -261,9 +235,7 @@ Chart can be given a title using [`title`](https://ej2.syncfusion.com/angular/do
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/chart-title-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/chart-title-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/chart-title-cs3/src/main.ts %}
 {% endhighlight %}
@@ -279,9 +251,7 @@ Chart can be given a subtitle using [`subTitle`](https://ej2.syncfusion.com/angu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/chart-title-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/chart-title-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/chart-title-cs4/src/main.ts %}
 {% endhighlight %}

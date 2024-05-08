@@ -20,9 +20,7 @@ The background and border color of the CheckBox is customized through the custom
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/check-box/howto-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/check-box/howto-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/check-box/howto-cs1/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ In the following example, to-do list is displayed with round checkbox by changin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/check-box/custom-frame-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/check-box/custom-frame-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/check-box/custom-frame-cs1/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +62,7 @@ In the following example, the check icon can be customized by changing check ico
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/check-box/custom-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/check-box/custom-icon-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/check-box/custom-icon-cs1/src/main.ts %}
 {% endhighlight %}

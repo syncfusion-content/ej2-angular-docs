@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
+
 
 
 import { Component } from '@angular/core';
@@ -5,6 +9,13 @@ import { ColumnsModel, CardSettingsModel, DialogSettingsModel } from '@syncfusio
 import { generateKanbanDataVirtualScrollData } from './datasource';
 
 @Component({
+imports: [
+        
+        KanbanModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<ejs-kanban #kanbanObj id='KanbanVirtualScrolling' enableVirtualization='true'
   [dataSource]='kanbanData' keyField='Status' enableTooltip='true'

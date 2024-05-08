@@ -18,9 +18,7 @@ The following example demonstrate how to get the total items count.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdownlist/get-item-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/get-item-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/get-item-cs1/src/main.ts %}
 {% endhighlight %}

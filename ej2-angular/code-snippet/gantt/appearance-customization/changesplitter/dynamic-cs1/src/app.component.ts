@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { DropDownListComponent,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -9,6 +14,10 @@ import { ChangeEventArgs, DropDownListComponent } from '@syncfusion/ej2-angular-
 import { editingData } from './data';
 
 @Component({
+imports: [
+         GanttModule,DropDownListAllModule
+    ],
+standalone: true,
     selector: 'app-root',
     template:
        `<button ejs-button id='changebyposition' (click)='changep()'>Change By Position</button>

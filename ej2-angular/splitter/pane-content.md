@@ -20,9 +20,7 @@ You can render the HTML element directly to the Splitter pane content using ng-t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/splitter/template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/splitter/template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ You can add the plain text as a pane contents using either inner HTML or [conten
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/splitter/plain-content-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/plain-content-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/splitter/plain-content-cs1/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ Splitter is a layout based container component. You can render the pane contents
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/splitter/html-content-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/html-content-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/splitter/html-content-cs1/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ The following code demonstrates how to fetch an element from the document and lo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/splitter/selector-content-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/selector-content-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/splitter/selector-content-cs1/src/main.ts %}
 {% endhighlight %}

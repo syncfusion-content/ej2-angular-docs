@@ -1,8 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+         MaskedTextBoxModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // sets set of regular expression for each input place as mask
     template: `

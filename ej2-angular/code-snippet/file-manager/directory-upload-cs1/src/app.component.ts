@@ -1,3 +1,7 @@
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { FileManagerModule,NavigationPaneService, ToolbarService, DetailsViewService  } from '@syncfusion/ej2-angular-filemanager'
+
 
 
 import { Component, ViewEncapsulation, ViewChild  } from '@angular/core';
@@ -8,6 +12,10 @@ import { DropDownButton, ItemModel } from '@syncfusion/ej2-splitbuttons';
  */
 
 @Component({
+imports: [FileManagerModule, ],
+
+providers:[NavigationPaneService, ToolbarService, DetailsViewService],
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='file' #fileObj [ajaxSettings]='ajaxSettings' (created)="onCreated($event)">

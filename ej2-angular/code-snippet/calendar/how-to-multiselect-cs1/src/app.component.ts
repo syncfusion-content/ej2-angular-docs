@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 
@@ -6,6 +10,13 @@ import { CalendarComponent } from '@syncfusion/ej2-angular-calendars';
 import * as moment from 'moment';
 
 @Component({
+imports: [
+        
+        CalendarModule //declaration of ej2-ng-calendars module into NgModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./style.css'],
     template: `

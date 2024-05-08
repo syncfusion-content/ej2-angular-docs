@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule, RangeNavigatorModule } from '@syncfusion/ej2-angular-charts'
+import { AreaSeriesService, DateTimeService, RangeTooltipService} from '@syncfusion/ej2-angular-charts'
+
 
 
 
@@ -8,6 +13,12 @@ import {
 } from '@syncfusion/ej2-charts';
 
 @Component({
+imports: [
+         ChartModule, RangeNavigatorModule
+    ],
+
+providers: [ AreaSeriesService, DateTimeService, RangeTooltipService ],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-rangenavigator id="rn-container" valueType='DateTime' [value]='value' [tooltip]='tooltip'
     [labelFormat]='labelFormat' (changed)='changed($event)'>

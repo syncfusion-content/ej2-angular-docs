@@ -1,9 +1,22 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, SortService, ForeignKeyService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { data, customerData } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule
+    ],
+
+providers: [SortService,ForeignKeyService],
+standalone: true,
     selector: 'app-root',
     template: `
     <ejs-grid [dataSource]='data' [allowSorting]='true' height='315px'>

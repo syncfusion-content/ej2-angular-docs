@@ -18,9 +18,7 @@ BPMN shapes are used to represent the internal business procedure in a graphical
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/bpmn-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/bpmn-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/bpmn-cs1/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +58,7 @@ The event property of the node allows you to define the type of the event. The d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/event-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/event-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/event-cs1/src/main.ts %}
 {% endhighlight %}
@@ -96,9 +92,7 @@ Gateway is used to control the flow of a process and it is represented as a diam
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/gateway-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/gateway-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/gateway-cs1/src/main.ts %}
 {% endhighlight %}
@@ -135,9 +129,7 @@ To create a BPMN activity, set the shape as **activity**. You also need to set t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/activity-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/activity-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/activity-cs1/src/main.ts %}
 {% endhighlight %}
@@ -156,9 +148,7 @@ The events property of tasks allow to represent these results as an event attach
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/task-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/task-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/task-cs1/src/main.ts %}
 {% endhighlight %}
@@ -187,9 +177,7 @@ A [`sub-process`](https://ej2.syncfusion.com/angular/documentation/api/diagram/b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/subprocess-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/subprocess-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/subprocess-cs1/src/main.ts %}
 {% endhighlight %}
@@ -210,9 +198,7 @@ A subprocess is defined as an event subprocess, when it is triggered by an event
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/eventSubprocess-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/eventSubprocess-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/eventSubprocess-cs1/src/main.ts %}
 {% endhighlight %}
@@ -236,9 +222,7 @@ A subprocess is defined as an event subprocess, when it is triggered by an event
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/transitionSubprocess-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/transitionSubprocess-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/transitionSubprocess-cs1/src/main.ts %}
 {% endhighlight %}
@@ -260,9 +244,7 @@ You can define the loop property in subprocess BPMN shape as shown in the follow
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/loop-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/loop-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/loop-cs1/src/main.ts %}
 {% endhighlight %}
@@ -286,9 +268,7 @@ The following table contains various types of BPMN loops.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/compensation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/compensation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/compensation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -304,9 +284,7 @@ A [`call`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/call-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/call-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/call-cs1/src/main.ts %}
 {% endhighlight %}
@@ -322,9 +300,7 @@ An adhoc subprocess is a group of tasks that are executed in any order or skippe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/adhoc-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/adhoc-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/adhoc-cs1/src/main.ts %}
 {% endhighlight %}
@@ -340,9 +316,7 @@ Boundary represents the type of task that is being processed. The [`boundary`](h
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/boundary-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/boundary-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/boundary-cs1/src/main.ts %}
 {% endhighlight %}
@@ -366,9 +340,7 @@ A data object represents information flowing through the process, such as data p
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/data-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/data-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/data-cs1/src/main.ts %}
 {% endhighlight %}
@@ -392,9 +364,7 @@ Datasource is used to store or access data associated with a business process. T
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/dataSource-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/dataSource-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/dataSource-cs1/src/main.ts %}
 {% endhighlight %}
@@ -431,9 +401,7 @@ Artifact is used to show additional information about a process in order to make
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/text-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/text-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/text-cs1/src/main.ts %}
 {% endhighlight %}
@@ -449,9 +417,7 @@ A group is used to frame a part of the diagram, shows that elements included in 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/group-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/group-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/group-cs1/src/main.ts %}
 {% endhighlight %}
@@ -477,9 +443,7 @@ The association property allows you to define the type of association. The follo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/association-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/association-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/association-cs1/src/main.ts %}
 {% endhighlight %}
@@ -511,9 +475,7 @@ The sequence property allows you to define the type of sequence. The following c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/sequence-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/sequence-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/sequence-cs1/src/main.ts %}
 {% endhighlight %}
@@ -545,9 +507,7 @@ The message property allows you to define the type of message. The following cod
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/bpmnShapes/message-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/bpmnShapes/message-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/bpmnShapes/message-cs1/src/main.ts %}
 {% endhighlight %}

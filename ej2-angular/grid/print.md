@@ -18,9 +18,7 @@ To add the printing option to the grid's toolbar, simply include the [toolbar](h
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/print-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/print-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/print-cs1/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ You can print the grid's content using an external button by utilizing the [prin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/print-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/print-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/print-cs2/src/main.ts %}
 {% endhighlight %}
@@ -63,9 +59,7 @@ By default, the Syncfusion Angular Grid prints all the pages of the grid. The [p
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/print-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/print-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/print-cs3/src/main.ts %}
 {% endhighlight %}
@@ -83,9 +77,7 @@ Below is an example code that demonstrates how to print only the selected record
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/print-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/print-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/print-cs4/src/main.ts %}
 {% endhighlight %}
@@ -109,9 +101,7 @@ The `hierarchyPrintMode` property in the Angular Grid lets you control the print
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/print-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/print-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/print-cs5/src/main.ts %}
 {% endhighlight %}
@@ -129,9 +119,7 @@ The [beforePrint](https://ej2.syncfusion.com/angular/documentation/api/grid/#bef
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/print-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/print-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/print-cs6/src/main.ts %}
 {% endhighlight %}
@@ -161,9 +149,7 @@ Here's a code example that demonstrates how to show a hidden column (CustomerID)
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/print-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/print-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/print-cs7/src/main.ts %}
 {% endhighlight %}
@@ -185,9 +171,7 @@ The Syncfusion Angular Grid provides a [beforePrint](https://ej2.syncfusion.com/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/print-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/print-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/print-cs8/src/main.ts %}
 {% endhighlight %}
@@ -205,9 +189,7 @@ Here is an example of how to print grid along with chart component:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/print-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/print-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/print-cs9/src/main.ts %}
 {% endhighlight %}

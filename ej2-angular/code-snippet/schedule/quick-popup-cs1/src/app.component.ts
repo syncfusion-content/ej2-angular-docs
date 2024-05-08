@@ -1,12 +1,23 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
-import { ScheduleComponent, CurrentAction, EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs } from '@syncfusion/ej2-angular-schedule';
+import { ScheduleComponent, CurrentAction, EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs,  AgendaService,
+  MonthAgendaService } from '@syncfusion/ej2-angular-schedule';
 import { scheduleData } from './datasource';
 @Component({
+imports: [
+        
+        ScheduleModule
+    ],
+standalone: true,
     selector: 'app-root',
-    providers: [DayService, WeekService, WorkWeekService, MonthService],
+    providers: [DayService, WeekService, WorkWeekService, MonthService,  AgendaService,
+      MonthAgendaService],
     // specifies the template string for the Schedule component
     template: `<ejs-schedule #scheduleObj width='100%' height='550px' [selectedDate]="selectedDate" [eventSettings]="eventSettings"
     (popupOpen)="onPopupOpen($event)">

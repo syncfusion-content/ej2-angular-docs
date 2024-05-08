@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +9,13 @@ import { SpreadsheetComponent, getFormatFromType, ChartModel, BeforeChartEventAr
 import { chartData } from './datasource';
 
 @Component({
+imports: [
+        
+        SpreadsheetAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<ejs-spreadsheet #spreadsheet (created)="created()" (actionBegin)="onActionBegin($event)">
         <e-sheets>

@@ -52,9 +52,7 @@ Here is an example code to change the component id dynamically to restore initia
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/state-persistence-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/state-persistence-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/state-persistence-cs1/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +70,7 @@ Here is an example code on how to clear local storage to retain its default stat
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/state-persistence-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/state-persistence-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/state-persistence-cs2/src/main.ts %}
 {% endhighlight %}
@@ -94,9 +90,7 @@ Here is an example of how to integrate version-based persistence into your Angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/state-persistence-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/state-persistence-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/state-persistence-cs3/src/main.ts %}
 {% endhighlight %}
@@ -119,9 +113,7 @@ The provided code demonstrates how to save and restore the previous state of a S
 {% highlight ts tabtitle="app.component.html" %}
 {% include code-snippet/grid/state-persistence-cs4/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/state-persistence-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/state-persistence-cs4/src/main.ts %}
 {% endhighlight %}
@@ -137,9 +129,7 @@ When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/state-persistence-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/state-persistence-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/state-persistence-cs5/src/main.ts %}
 {% endhighlight %}
@@ -174,9 +164,7 @@ The following example demonstrates how to prevent Grid columns from persisting. 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/state-persistence-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/state-persistence-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/state-persistence-cs6/src/main.ts %}
 {% endhighlight %}
@@ -198,9 +186,7 @@ Here's an example of how to add a new column to a list of persisted columns:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/state-persistence-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/state-persistence-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/state-persistence-cs7/src/main.ts %}
 {% endhighlight %}
@@ -220,9 +206,7 @@ To restore these column properties and achieve persistence, you can follow the a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/state-persistence-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/state-persistence-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/state-persistence-cs8/src/main.ts %}
 {% endhighlight %}

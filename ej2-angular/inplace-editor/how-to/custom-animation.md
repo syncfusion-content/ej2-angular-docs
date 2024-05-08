@@ -18,9 +18,7 @@ In the following sample, popup animation can be customized by passing animation 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/in-place-editor/custom-animation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/custom-animation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/in-place-editor/custom-animation-cs1/src/main.ts %}
 {% endhighlight %}

@@ -51,9 +51,7 @@ The following sample shows the row selection in the spreadsheet, here selecting 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/selection-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/selection-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/selection-cs1/src/main.ts %}
 {% endhighlight %}
@@ -80,9 +78,7 @@ The following sample shows the column selection in the spreadsheet, here selecti
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/selection-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/selection-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/selection-cs2/src/main.ts %}
 {% endhighlight %}
@@ -98,9 +94,7 @@ The following sample shows, how to remove the selection in the spreadsheet. Here
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/selection-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/selection-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/selection-cs3/src/main.ts %}
 {% endhighlight %}

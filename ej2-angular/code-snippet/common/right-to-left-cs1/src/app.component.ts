@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+
 
 
 import { enableRtl } from '@syncfusion/ej2-base';
@@ -6,6 +10,13 @@ import { Component} from '@angular/core';
 enableRtl(true);
 
 @Component({
+imports: [
+        
+        ListViewModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<ejs-listview id='sample-list' [dataSource]='data' [fields]='fields' showHeader='true' headerTitle='Social Media'>
     <ng-template #template let-data="">

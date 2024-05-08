@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -6,6 +11,12 @@ import { FilterService, PageService, GridComponent } from '@syncfusion/ej2-angul
 
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule
+    ],
+standalone: true,
     selector: 'app-root',
     template: `<button ejs-button id='restore' (click)='clickHandler()'>Restore to initial state</button>
                <ejs-grid #grid [id]='gridId' [dataSource]='data' [enablePersistence]='true' [allowPaging]='true' [allowFiltering]='true'
@@ -17,7 +28,7 @@ import { FilterService, PageService, GridComponent } from '@syncfusion/ej2-angul
                     <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
                 </e-columns>
                 </ejs-grid>`,
-    providers: [FilterService, PageService]
+    providers: [GroupService, FilterService, PageService]
 })
 export class AppComponent implements OnInit {
 

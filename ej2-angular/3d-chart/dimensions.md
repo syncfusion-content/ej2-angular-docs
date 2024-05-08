@@ -24,9 +24,7 @@ The 3D chart can be rendered to its container size and it can be set via inline 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/chart-dimension/chart-dimension-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/chart-dimension/chart-dimension-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/chart-dimension/chart-dimension-cs1/src/main.ts %}
 {% endhighlight %}
@@ -50,9 +48,7 @@ The size of the 3D chart can be set in pixel as demonstrated below.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/chart-dimension/chart-dimension-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/chart-dimension/chart-dimension-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/chart-dimension/chart-dimension-cs2/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ By setting the value in percentage, 3D chart gets its dimension with respect to 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/chart-dimension/chart-dimension-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/chart-dimension/chart-dimension-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/chart-dimension/chart-dimension-cs3/src/main.ts %}
 {% endhighlight %}

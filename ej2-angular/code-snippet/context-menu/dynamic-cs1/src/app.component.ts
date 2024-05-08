@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +10,13 @@ import { MenuItemModel, BeforeOpenCloseMenuEventArgs } from '@syncfusion/ej2-nav
 import { ContextMenuComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [
+        
+        ContextMenuModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<div class="e-section-control">
             <!--target element-->

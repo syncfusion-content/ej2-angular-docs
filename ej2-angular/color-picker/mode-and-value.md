@@ -20,9 +20,7 @@ In the following sample, it will render the `Palette` at initial load.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/colorpicker/getting-started/default-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/colorpicker/getting-started/default-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/colorpicker/getting-started/default-cs3/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ In the following sample, the color value sets as `four` digit hex code, the last
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/colorpicker/value-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/colorpicker/value-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/colorpicker/value-cs1/src/main.ts %}
 {% endhighlight %}

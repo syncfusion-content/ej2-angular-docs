@@ -18,9 +18,7 @@ To render a bar series, use series [`type`](https://ej2.syncfusion.com/angular/d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/bar/bar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/bar/bar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/bar/bar-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/bar/bar-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/bar/bar-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/bar/bar-cs2/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ The data points can be grouped in the bar type charts by using the [`groupName`]
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/bar/bar-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/bar/bar-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/bar/bar-cs3/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ To render a cylindrical bar chart, set the [`columnFacet`](https://ej2.syncfusio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/bar/bar-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/bar/bar-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/bar/bar-cs4/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +85,7 @@ The following properties can be used to customize the `bar` series.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/bar/bar-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/bar/bar-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/bar/bar-cs5/src/main.ts %}
 {% endhighlight %}

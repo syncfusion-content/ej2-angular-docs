@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -5,6 +11,14 @@ import { TooltipComponent, TooltipEventArgs } from '@syncfusion/ej2-angular-popu
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule,
+        TooltipModule
+    ],
+
+standalone: true,
     selector: 'app-root',
     template: `  <ejs-tooltip #tooltip target=".e-rowcell" (beforeRender)="beforeRender($event)">
                     <ejs-grid [dataSource]='data' [height]='315'>

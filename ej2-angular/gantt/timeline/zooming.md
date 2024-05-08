@@ -28,9 +28,7 @@ This support is used to view all the tasks available in a project within availab
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/zooming/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/zooming/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/zooming/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ In Gantt, the zoom in and zoom out actions are performed based on the predefined
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/zooming/custom-zooming-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/zooming/custom-zooming-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/zooming/custom-zooming-cs1/src/main.ts %}
 {% endhighlight %}
@@ -67,9 +63,7 @@ You can perform the various zoom actions dynamically or on external click action
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/zooming/method-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/zooming/method-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/zooming/method-cs1/src/main.ts %}
 {% endhighlight %}

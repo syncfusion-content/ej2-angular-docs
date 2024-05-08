@@ -38,9 +38,7 @@ The following code illustrates how to create a group node.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/groups/group-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/groups/group-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/groups/group-cs1/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +52,7 @@ The following code illustrates how a ungroup  at runtime.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/groups/ungroup-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/groups/ungroup-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/groups/ungroup-cs1/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +66,7 @@ Connectors can be added to a group. The following code illustrates how to add co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/groups/groupaddconnector-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/groups/groupaddconnector-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/groups/groupaddconnector-cs1/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +84,7 @@ The following code illustrates how a group node is added at runtime.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/groups/groupadd-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/groups/groupadd-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/groups/groupadd-cs1/src/main.ts %}
 {% endhighlight %}
@@ -130,9 +122,7 @@ this.diagram.removeChildFromGroup (groupNode, childNode);
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/groups/groupchild-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/groups/groupchild-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/groups/groupchild-cs1/src/main.ts %}
 {% endhighlight %}
@@ -175,9 +165,7 @@ The following code illustrates how to add a stack panel.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/groups/stack-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/groups/stack-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/groups/stack-cs1/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TabComponent, TabItemsDirective, TabItemDirective } from '@syncfusion/ej2-angular-navigations'
+import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +10,12 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 import { TabActionSettingsModel, TabComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [
+        
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `
     <div style='padding-top: 25px'>

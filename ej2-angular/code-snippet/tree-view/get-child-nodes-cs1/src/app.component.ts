@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -7,6 +12,12 @@ import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
  * Treeview sample for getting child details via parent ID
  */
 @Component({
+imports: [
+        FormsModule,TreeViewModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<div id='treeparent'><ejs-treeview id='treeElement' #treevalidate [fields]='field' (created)='onCreate($event)' [loadOnDemand]=false></ejs-treeview></div><input type="text" class="e-input" id="Nodes" style="margin-left: 10px;margin-top:10px; width: 175px;" placeholder="Enter the parent ID( Ex: AS)" />
         <input type="button" class="btn btn-primary" value="Submit"id="btn" />`

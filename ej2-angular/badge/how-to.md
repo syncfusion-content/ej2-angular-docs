@@ -22,9 +22,7 @@ Even though badges come with `8 predefined colors`, you can also customize the c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/color-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/color-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/color-cs1/src/main.ts %}
 {% endhighlight %}
@@ -41,9 +39,7 @@ adjust the `font size` of the badge.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/size-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/size-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/size-cs1/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ This can be done by adding a custom class to the badge element to override the d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/custom-position-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/custom-position-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/custom-position-cs1/src/main.ts %}
 {% endhighlight %}
@@ -83,9 +77,7 @@ badge size. The component will automatically adjust the size based on the contai
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/listview-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/listview-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/listview-cs1/src/main.ts %}
 {% endhighlight %}
@@ -101,9 +93,7 @@ Badges in real-time needs to be updated dynamically based on the requirements. I
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/dynamic-badge-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/badge/dynamic-badge-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/dynamic-badge-cs1/src/main.ts %}
 {% endhighlight %}

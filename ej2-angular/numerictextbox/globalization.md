@@ -30,9 +30,7 @@ The below example demonstrates the NumericTextBox in `German` culture with the s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/numerictextbox/getting-started-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs9/src/main.ts %}
 {% endhighlight %}
@@ -78,9 +76,7 @@ The below example demonstrates the NumericTextBox in `German` culture with the `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/numerictextbox/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/numerictextbox/internationalization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/numerictextbox/internationalization-cs1/src/main.ts %}
 {% endhighlight %}
@@ -96,9 +92,7 @@ RTL provides an option to switch the text direction and layout of the NumericTex
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/numerictextbox/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/numerictextbox/rtl-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/numerictextbox/rtl-cs1/src/main.ts %}
 {% endhighlight %}

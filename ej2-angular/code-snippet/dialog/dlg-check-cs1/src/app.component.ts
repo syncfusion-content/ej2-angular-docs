@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 
@@ -6,6 +10,13 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+		DialogModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
     <div class="login-form">

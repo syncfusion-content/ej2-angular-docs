@@ -147,9 +147,7 @@ The following example shows a basic `Breadcrumb` component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/breadcrumb/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/getting-started-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/breadcrumb/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
@@ -165,9 +163,7 @@ Use `items` property to bind items for Breadcrumb component. The below example d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/breadcrumb/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/getting-started-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/breadcrumb/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
@@ -183,9 +179,7 @@ This feature enables or disables the item navigation. By default, the navigation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/breadcrumb/enable-navigation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/enable-navigation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/breadcrumb/enable-navigation-cs1/src/main.ts %}
 {% endhighlight %}

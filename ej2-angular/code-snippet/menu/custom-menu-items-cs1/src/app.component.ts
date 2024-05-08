@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MenuModule } from '@syncfusion/ej2-angular-navigations'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, Inject } from '@angular/core';
@@ -7,6 +12,11 @@ import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(false);
 
 @Component({
+imports: [ MenuModule, ButtonModule],
+
+providers: [
+    { provide: 'sourceFiles', useValue: {files: []
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./template.css'],
     template: `<div class="e-section-control">

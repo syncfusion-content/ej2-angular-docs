@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { InPlaceEditorAllModule } from '@syncfusion/ej2-angular-inplace-editor'
+
 
 
 import { Component } from '@angular/core';
 import { DataManager, ODataV4Adaptor, Query } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+         InPlaceEditorAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
     <div id='container'>

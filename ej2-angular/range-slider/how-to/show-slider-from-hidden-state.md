@@ -18,9 +18,7 @@ In the sample, by clicking on the button, we can make the Slider visible from hi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/hidden-slider-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/hidden-slider-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/hidden-slider-cs1/src/main.ts %}
 {% endhighlight %}

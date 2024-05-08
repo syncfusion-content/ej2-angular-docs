@@ -24,9 +24,7 @@ The following example illustrates how to disable the particular and the whole Bu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button-group/default-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button-group/default-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button-group/default-cs4/src/main.ts %}
 {% endhighlight %}

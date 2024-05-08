@@ -25,9 +25,7 @@ The following example demonstrates how to add the reactive forms within a Tab it
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/reactive-forms-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/reactive-forms-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tab/reactive-forms-cs1/src/main.ts %}
 {% endhighlight %}

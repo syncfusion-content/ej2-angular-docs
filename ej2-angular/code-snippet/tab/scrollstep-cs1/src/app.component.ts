@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TabComponent, TabItemsDirective, TabItemDirective } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -5,6 +10,12 @@ import { Component } from '@angular/core';
 import { TabComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [
+        FormsModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<ejs-tab id="element" scrollStep="50">
             <e-tabitems>

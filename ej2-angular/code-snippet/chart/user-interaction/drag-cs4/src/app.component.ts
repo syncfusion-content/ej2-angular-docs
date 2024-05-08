@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { ScatterSeriesService, LegendService, SelectionService} from '@syncfusion/ej2-angular-charts'
+
 
 
 
@@ -5,6 +10,12 @@ import { Component, OnInit } from '@angular/core';
 import { ChartData } from './chartdata.service';
 
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ ScatterSeriesService, LegendService, SelectionService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' selectionMode='DragXY'>
         <e-series-collection>

@@ -22,9 +22,7 @@ Get the selected data point values and display the values through grid component
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/how-to-cs17/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/how-to-cs17/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/how-to-cs17/src/main.ts %}
 {% endhighlight %}

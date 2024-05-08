@@ -1,8 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { Component, ViewChild } from '@angular/core';
 import { UploaderComponent, SelectedEventArgs } from '@syncfusion/ej2-angular-inputs';
 @Component({
+imports: [
+         UploaderModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     templateUrl: './default.html',
     styleUrls: ['./index.css']

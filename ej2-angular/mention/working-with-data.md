@@ -35,9 +35,7 @@ The Mention has provided support to load an array of primitive data such as stri
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/mention/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/getting-started-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/mention/getting-started-cs10/src/main.ts %}
 {% endhighlight %}
@@ -55,9 +53,7 @@ In the following example, `ID` column and `Game` column from complex data have b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/mention/data-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/data-binding-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/mention/data-binding-cs1/src/main.ts %}
 {% endhighlight %}
@@ -75,9 +71,7 @@ In the following example, `Code.ID` column and `Country.Name` column from comple
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/mention/data-binding-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/data-binding-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/mention/data-binding-cs2/src/main.ts %}
 {% endhighlight %}
@@ -99,9 +93,7 @@ The following sample displays the first 6 contacts from `Customers` table of the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/mention/data-binding-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/data-binding-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/mention/data-binding-cs3/src/main.ts %}
 {% endhighlight %}
@@ -117,9 +109,7 @@ You can use `WebApiAdaptor` to bind mention with Web API created using OData end
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/mention/data-binding-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/mention/data-binding-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/mention/data-binding-cs4/src/main.ts %}
 {% endhighlight %}

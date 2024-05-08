@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -9,6 +14,12 @@ import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { editingData } from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [ToolbarService, PdfExportService, SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [columns]="columns" [toolbar]="toolbar" (beforePdfExport)="beforePdfExport()"

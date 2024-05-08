@@ -28,9 +28,7 @@ The following example depicts the code to show/hide the navigators in the carous
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs8/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ In the carousel, you can show the previous and next buttons only on mouse hover 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs9/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ Template options are provided to customize the previous button using [`previousB
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs10/src/main.ts %}
 {% endhighlight %}
@@ -84,9 +78,7 @@ In indicators, the total slides and current slide state have been depicted. You 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs11/src/main.ts %}
 {% endhighlight %}
@@ -102,9 +94,7 @@ Template option is provided to customize the indicators by using the [`indicator
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/indicator-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/indicator-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/indicator-cs1/src/main.ts %}
 {% endhighlight %}
@@ -120,9 +110,7 @@ You can customize the indicators by showing the preview image of each slide usin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/indicator-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/indicator-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/indicator-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -147,9 +135,7 @@ A default indicator in a carousel is a set of dots that indicate the current pos
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/indicator-type-cs0/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/indicator-type-cs0/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/indicator-type-cs0/src/main.ts %}
 {% endhighlight %}
@@ -165,9 +151,7 @@ A dynamic indicator in a carousel provides visual cues or markers that dynamical
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/indicator-type-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/indicator-type-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/indicator-type-cs1/src/main.ts %}
 {% endhighlight %}
@@ -183,9 +167,7 @@ The fraction indicator type displays the current slide index and total slide cou
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/indicator-type-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/indicator-type-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/indicator-type-cs2/src/main.ts %}
 {% endhighlight %}
@@ -201,9 +183,7 @@ The Progress Indicator type displays the current slide as a progress bar. The Pr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/indicator-type-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/indicator-type-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/indicator-type-cs3/src/main.ts %}
 {% endhighlight %}
@@ -221,9 +201,7 @@ In the carousel, [`autoPlay`](https://ej2.syncfusion.com/angular/documentation/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs12/src/main.ts %}
 {% endhighlight %}
@@ -239,9 +217,7 @@ Template option is provided to customize the play button by using the [`playButt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs13/src/main.ts %}
 {% endhighlight %}

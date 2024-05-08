@@ -68,9 +68,7 @@ To change the stack order of an annotation element, the [`zIndex`](https://ej2.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/annotations-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/annotations-cs1/src/main.ts %}
 {% endhighlight %}
@@ -88,9 +86,7 @@ The annotation can be placed anywhere in the Linear Gauge by setting the pixel v
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/annotations-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/annotations-cs2/src/main.ts %}
 {% endhighlight %}
@@ -108,9 +104,7 @@ The annotation can be aligned horizontally and vertically by using the [`horizon
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/annotations-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/annotations-cs3/src/main.ts %}
 {% endhighlight %}
@@ -126,9 +120,7 @@ Multiple annotations can be added to the Linear Gauge component by adding the mu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/annotations-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/annotations-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/annotations-cs4/src/main.ts %}
 {% endhighlight %}

@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
+
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramComponent, Diagram, NodeModel, ConnectorModel, ShapeStyleModel,PointModel,ConnectorConstraints,ConnectorEditing } from '@syncfusion/ej2-angular-diagrams';
 Diagram.Inject(ConnectorEditing);
 @Component({
+imports: [
+         DiagramModule
+    ],
+
+providers: [ ],
+standalone: true,
     selector: "app-container",
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getConnectorDefaults] ='getConnectorDefaults'>
         <e-connectors>
