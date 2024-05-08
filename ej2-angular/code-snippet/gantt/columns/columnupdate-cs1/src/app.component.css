@@ -1,0 +1,6 @@
+.e-headercell.customcss {
+  background-color: rgb(43, 195, 226);
+}  
+.e-gantt .e-grid .e-rowcell.customcss{
+  background-color: rgb(43, 195, 226);
+}

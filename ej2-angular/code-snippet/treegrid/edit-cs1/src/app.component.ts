@@ -1,40 +1,28 @@
-import { NgModule,ViewChild } from '@angular/core'
+
+
+import { NgModule, } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser'
-import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { PageService, SortService, FilterService, EditService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 
-
-
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,ViewChild} from '@angular/core';
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { Query, DataManager } from '@syncfusion/ej2-data';
 import { sampleData } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
+import { EditSettingsModel, ToolbarItems,EditService, ToolbarService, PageService  } from '@syncfusion/ej2-angular-treegrid';
 import { IEditCell } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
+    imports: [
+    TreeGridAllModule,
     ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                EditService],
-standalone: true,
+    providers: [EditService, ToolbarService, PageService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' [toolbar]='toolbar' [treeColumnIndex]='1' height='270' [editSettings]='editSettings' childMapping='subtasks' >
                     <e-columns>
                         <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
                         <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
-                        <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=180></e-column>
-                        <e-column field='priority' headerText='Priority' editType= 'dropdownedit'
-                        [edit]='priorityParams' textAlign='Right' width=140></e-column>
+                        <e-column field='priority' headerText='Priority' editType= 'dropdownedit' [edit]='priorityParams' textAlign='Right' width=140></e-column>
                         <e-column field='progress' editType= 'numericedit' headerText='Progress' textAlign='Right' width=120></e-column>
                     </e-columns>
                 </ejs-treegrid>`
@@ -59,7 +47,6 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
         this.priorityParams = {
             params: {
-                allowFiltering: true,
                 dataSource: new DataManager(this.prior),
                 fields: { text: 'priorityType', value: 'priorityType' },
                 query: new Query(),

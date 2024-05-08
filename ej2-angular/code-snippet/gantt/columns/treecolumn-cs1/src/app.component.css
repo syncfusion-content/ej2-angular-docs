@@ -1,0 +1,7 @@
+
+.e-gantt .e-grid .e-treegridexpand::before {
+  content: "\2795";
+} 
+.e-gantt .e-grid .e-treegridcollapse::before {
+  content: "\2796";
+}
