@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, GroupService, FilterService, ToolbarService, SortService, EditService, } from '@syncfusion/ej2-angular-grids'
+import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons'
+
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { data } from "./datasource";
 import {
@@ -9,9 +14,15 @@ import {
 } from "@syncfusion/ej2-angular-grids";
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonAllModule
+    ],
+standalone: true,
   selector: "app-root",
   templateUrl: "app.component.html",
-  providers: [GroupService, ToolbarService, SortService, EditService],
+  providers: [GroupService, ToolbarService, SortService, EditService, FilterService],
 })
 export class AppComponent {
   public data?: Object[];

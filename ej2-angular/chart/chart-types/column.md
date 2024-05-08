@@ -18,9 +18,7 @@ To render a column series, use series [`type`](https://ej2.syncfusion.com/angula
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs18/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs18/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs18/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ The [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/chart
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs31/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs31/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs31/src/main.ts %}
 {% endhighlight %}
@@ -55,9 +51,7 @@ You can use the [`groupName`](https://ej2.syncfusion.com/angular/documentation/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs23/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs23/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs23/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +67,7 @@ To render a cylindrical column chart, set the [`columnFacet`](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs32/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs32/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs32/src/main.ts %}
 {% endhighlight %}
@@ -96,9 +88,7 @@ The following properties can be used to customize the `column` series.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs24/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs24/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs24/src/main.ts %}
 {% endhighlight %}

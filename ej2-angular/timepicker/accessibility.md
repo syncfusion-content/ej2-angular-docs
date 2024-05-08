@@ -91,9 +91,7 @@ The following sample use the `alt+t` keys to focus the TimePicker component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timepicker/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/getting-started-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timepicker/getting-started-cs1/src/main.ts %}
 {% endhighlight %}

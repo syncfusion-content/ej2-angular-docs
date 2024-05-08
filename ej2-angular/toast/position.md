@@ -36,9 +36,7 @@ Custom `X` and `Y` Position can be given as pixels/numbers/percentage. The numbe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toast/toast-cs18/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs18/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toast/toast-cs18/src/main.ts %}
 {% endhighlight %}

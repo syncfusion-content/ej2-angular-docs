@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize input and anchor elements in Angular Button component | Syncfusion
+title: Customize input and anchor elements in Angular Button component|Syncfusion
 description: Learn here all about Customize input and anchor elements in Syncfusion Angular Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customize input and anchor elements 
@@ -16,9 +16,7 @@ You can customize the appearance of the input and anchor elements using predefin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button/custom-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button/custom-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button/custom-cs1/src/main.ts %}
 {% endhighlight %}

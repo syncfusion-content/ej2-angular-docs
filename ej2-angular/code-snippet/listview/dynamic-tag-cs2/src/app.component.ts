@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -5,6 +11,15 @@ import { Component, ViewChild } from '@angular/core';
 import{ListViewComponent} from "@syncfusion/ej2-angular-lists";
 import{DialogComponent} from "@syncfusion/ej2-angular-popups";
 @Component({
+imports: [
+        
+        ListViewModule,
+        DialogModule,
+        ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `<div id="sample">
     <ejs-listview #list id='templatelist' [dataSource]='data' [fields]='fields' width=350 >

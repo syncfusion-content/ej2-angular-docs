@@ -16,9 +16,7 @@ Smithchart will display details about the points through tooltip, when the mouse
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs29/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs29/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs29/src/main.ts %}
 {% endhighlight %}

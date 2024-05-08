@@ -18,9 +18,7 @@ The Gantt component maps any data source fields to task labels using the [`label
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/appearance-customization/tasklabeltemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/appearance-customization/tasklabeltemplate-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/appearance-customization/tasklabeltemplate-cs1/src/main.ts %}
 {% endhighlight %}

@@ -54,9 +54,7 @@ The following sample code demonstrates the customization applied to TextBox comp
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-params-default/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-params-default/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-params-default/src/main.ts %}
 {% endhighlight %}
@@ -78,9 +76,7 @@ The following sample code demonstrates the customization applied to NumericTextB
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-params-numeric/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-params-numeric/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-params-numeric/src/main.ts %}
 {% endhighlight %}
@@ -102,9 +98,7 @@ In the below demo, while editing the row the decimal point value is restricted t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/prevent-decimalpoint-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/prevent-decimalpoint-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/prevent-decimalpoint-cs1/src/main.ts %}
 {% endhighlight %}
@@ -126,9 +120,7 @@ The following sample code demonstrates the customization applied to DropDownList
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-params-dropdown/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-params-dropdown/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-params-dropdown/src/main.ts %}
 {% endhighlight %}
@@ -150,9 +142,7 @@ In the below demo, DropDownList is rendered with custom data source for the **Sh
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs12/src/main.ts %}
 {% endhighlight %}
@@ -172,9 +162,7 @@ In the following demo, filtering is enabled for the **ShipCountry** column:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-filter/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-filter/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-filter/src/main.ts %}
 {% endhighlight %}
@@ -196,9 +184,7 @@ The following sample demonstrates how to open the popup when focusing on the edi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/open-dropdown-popup-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/open-dropdown-popup-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/open-dropdown-popup-cs1/src/main.ts %}
 {% endhighlight %}
@@ -220,9 +206,7 @@ The following sample code demonstrates the customization applied to CheckBox com
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-params-checkbox/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-params-checkbox/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-params-checkbox/src/main.ts %}
 {% endhighlight %}
@@ -244,9 +228,7 @@ The following sample code demonstrates the customization applied to DatePicker c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-params-datepicker/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-params-datepicker/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-params-datepicker/src/main.ts %}
 {% endhighlight %}
@@ -268,9 +250,7 @@ The following sample code demonstrates the customization applied to DatePicker c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-params-datetimepicker/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-params-datetimepicker/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-params-datetimepicker/src/main.ts %}
 {% endhighlight %}
@@ -290,9 +270,7 @@ In the below demo, you can access the editor component instance while adding or 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-access-editor-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-access-editor-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-access-editor-cs1/src/main.ts %}
 {% endhighlight %}
@@ -320,9 +298,7 @@ The following example demonstrates how to render a textArea component in the **S
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-textarea-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-textarea-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-textarea-cs1/src/main.ts %}
 {% endhighlight %}
@@ -342,9 +318,7 @@ The following example demonstrates how to prevent the enter key functionality in
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-textbox/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-textbox/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-textbox/src/main.ts %}
 {% endhighlight %}
@@ -364,9 +338,7 @@ The following example demonstrates how to render an AutoComplete component in th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-autocomplete/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-autocomplete/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-autocomplete/src/main.ts %}
 {% endhighlight %}
@@ -386,9 +358,7 @@ Here's an example of how to render a MaskedTextBox component in the **CustomerNu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-maskedtextbox/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-maskedtextbox/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-maskedtextbox/src/main.ts %}
 {% endhighlight %}
@@ -408,9 +378,7 @@ The following example demonstrates how to render a DropDownList component in the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-dropdownlist/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-dropdownlist/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-dropdownlist/src/main.ts %}
 {% endhighlight %}
@@ -432,9 +400,7 @@ The following example demonstrates how to render images in the DropDownList edit
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-drobdown-image/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-drobdown-image/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-drobdown-image/src/main.ts %}
 {% endhighlight %}
@@ -456,9 +422,7 @@ The following example demonstrates how to render a DropDownList component with m
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-multicolumn-dropdown/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-multicolumn-dropdown/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-multicolumn-dropdown/src/main.ts %}
 {% endhighlight %}
@@ -478,9 +442,7 @@ The following example demonstrates how to render a ComboBox component in the **S
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-combox/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-combox/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-combox/src/main.ts %}
 {% endhighlight %}
@@ -500,9 +462,7 @@ The following example demonstrates how to render a TimePicker component in the *
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs13/src/main.ts %}
 {% endhighlight %}
@@ -522,9 +482,7 @@ The following example demonstrates how to render a MultiSelect component in the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs15/src/main.ts %}
 {% endhighlight %}
@@ -546,9 +504,7 @@ The following example demonstrates how to render a RichTextEditor component in t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs16/src/main.ts %}
 {% endhighlight %}
@@ -568,9 +524,7 @@ The following example demonstrates how to render a Upload component in the **Ord
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-upload/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-upload/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-upload/src/main.ts %}
 {% endhighlight %}
@@ -604,9 +558,7 @@ The following example demonstrates how to render a Autocomplete component in the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs14/src/main.ts %}
 {% endhighlight %}
@@ -626,9 +578,7 @@ In the below demo, cascading DropDownList rendered for **ShipCountry** and **Shi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs40/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs40/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs40/src/main.ts %}
 {% endhighlight %}

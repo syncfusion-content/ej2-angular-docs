@@ -19,9 +19,7 @@ Gantt uses [`Form Validator`](https://ej2.syncfusion.com/documentation/form-vali
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/celledit-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/celledit-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/managing-tasks/celledit-cs3/src/main.ts %}
 {% endhighlight %}
@@ -39,9 +37,7 @@ In the below demo, custom validation applied for `TaskName` column.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/celledit-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/celledit-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/managing-tasks/celledit-cs4/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ Within the actionBegin event, validationRules can be configured for columns in t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/celledit-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/celledit-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/managing-tasks/celledit-cs5/src/main.ts %}
 {% endhighlight %}

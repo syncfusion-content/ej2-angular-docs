@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SliderModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 
@@ -6,6 +10,13 @@ import { SliderModule, SliderComponent, LimitDataModel, SliderType, TicksDataMod
 import { SliderTooltipEventArgs, SliderTickEventArgs } from '@syncfusion/ej2-inputs';
 
 @Component({
+imports: [
+        
+        SliderModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: ` <div class='sliderwrap'>
             <label class="labeltext">MinRange Slider With Limits</label>

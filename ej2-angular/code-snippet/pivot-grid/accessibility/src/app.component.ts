@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -11,6 +15,14 @@ import { Pivot_Data } from './datasource';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
 
 @Component({
+imports: [
+        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   providers: [
     CalculatedFieldService, ToolbarService, ConditionalFormattingService, FieldListService, NumberFormattingService, GroupingBarService, GroupingService

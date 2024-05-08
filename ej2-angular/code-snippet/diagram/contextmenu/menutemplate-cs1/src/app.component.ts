@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule, DiagramContextMenuService } from '@syncfusion/ej2-angular-diagrams'
+
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
@@ -7,6 +11,12 @@ import { ContextMenuSettingsModel, Diagram, NodeModel, ConnectorModel } from '@s
 import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
+imports: [
+         DiagramModule
+    ],
+
+providers: [DiagramContextMenuService],
+standalone: true,
     selector: "app-container",
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults' [getConnectorDefaults]='getConnectorDefaults' [contextMenuSettings]="contextMenuSettings" (contextMenuBeforeItemRender)='contextMenuBeforeItemRender($event)'>
         <e-nodes>

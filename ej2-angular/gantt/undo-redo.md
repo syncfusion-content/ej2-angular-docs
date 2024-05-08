@@ -49,9 +49,7 @@ In the following code example, `Edit` and `Delete` actions are specified in `und
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/undo-redo/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +71,7 @@ In the following example, `undoRedoStepsCount` value is set to 5.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/undo-redo/default-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs2/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +89,7 @@ The following code example demonstrates how to invoke the `undo` and `redo` meth
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/undo-redo/default-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs3/src/main.ts %}
 {% endhighlight %}
@@ -113,9 +107,7 @@ The following code example demonstrates how to retrieve the undo and redo collec
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/undo-redo/default-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs4/src/main.ts %}
 {% endhighlight %}
@@ -133,9 +125,7 @@ The following code example demonstrates how to clear the undo and redo collectio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/undo-redo/default-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/undo-redo/default-cs5/src/main.ts %}
 {% endhighlight %}

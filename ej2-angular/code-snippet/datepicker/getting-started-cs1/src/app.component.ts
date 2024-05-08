@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DatePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 import { Component,HostListener,ViewChild } from '@angular/core';
 import { DatePickerComponent } from '@syncfusion/ej2-angular-calendars';
 
 @Component({
+imports: [
+        
+        DatePickerModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
         <ejs-datepicker #ejDatePicker [value]='dateValue' placeholder='Enter date'></ejs-datepicker>

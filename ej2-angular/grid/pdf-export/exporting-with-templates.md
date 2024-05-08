@@ -101,9 +101,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/column-template-export-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/column-template-export-cs1/src/main.ts %}
 {% endhighlight %}
@@ -372,9 +370,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/detail-template-export-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/detail-template-export-cs1/src/main.ts %}
 {% endhighlight %}
@@ -444,9 +440,7 @@ interface CaptionDataStructure {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/caption-template-export-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/caption-template-export-cs1/src/main.ts %}
 {% endhighlight %}

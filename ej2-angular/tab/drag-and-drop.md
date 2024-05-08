@@ -28,9 +28,7 @@ In the following sample, the [allowDragAndDrop](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/drag-and-drop/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/drag-and-drop/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tab/drag-and-drop/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -51,9 +49,7 @@ In this example, we have used the tab control as an external source, and the ite
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/drag-and-drop/tab-to-tab-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/drag-and-drop/tab-to-tab-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tab/drag-and-drop/tab-to-tab-cs1/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +70,7 @@ In this example, we have used the tree view control as an external source, and t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/drag-and-drop/tab-to-treeview-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/drag-and-drop/tab-to-treeview-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tab/drag-and-drop/tab-to-treeview-cs1/src/main.ts %}
 {% endhighlight %}
@@ -97,9 +91,7 @@ In this example, we have used the tree view control as an external source, and t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/drag-and-drop/treeview-to-tab-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/drag-and-drop/treeview-to-tab-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tab/drag-and-drop/treeview-to-tab-cs1/src/main.ts %}
 {% endhighlight %}

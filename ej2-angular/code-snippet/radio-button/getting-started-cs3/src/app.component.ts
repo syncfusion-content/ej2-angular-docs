@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 
@@ -5,6 +10,13 @@ import { Component, ViewChild } from '@angular/core';
 import { ChangeEventArgs, RadioButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+imports: [
+        
+        RadioButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // To customize RadioButton appearance
     template: `<div class="e-section-control">

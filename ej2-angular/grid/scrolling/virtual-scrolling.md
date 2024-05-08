@@ -28,9 +28,7 @@ The following example enable row virtualization using `enableVirtualization` pro
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs8/src/main.ts %}
 {% endhighlight %}
@@ -75,9 +73,7 @@ The following example enable column virtualization using `enableColumnVirtualiza
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs9/src/main.ts %}
 {% endhighlight %}

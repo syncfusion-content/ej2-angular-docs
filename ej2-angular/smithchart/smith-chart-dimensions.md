@@ -20,9 +20,7 @@ You can render smithchart to it's container size. To achieve this, you need to s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs11/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ In smithchart's width and height property, you can directly give values in pixel
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs12/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ You can also specify the width and height of the smithchart in percentage. If yo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs13/src/main.ts %}
 {% endhighlight %}

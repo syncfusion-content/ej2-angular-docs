@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
+
 
 
 
@@ -7,6 +11,12 @@ import { NodeConstraints, LineRouting, DiagramConstraints, ConnectorConstraints,
 Diagram.Inject(LineRouting);
 
 @Component({
+imports: [
+         DiagramModule
+    ],
+
+providers: [ ],
+standalone: true,
     selector: "app-container",
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="645px" [nodes]='nodes' [connectors]='connectors' [getNodeDefaults]='getNodeDefaults' [constraints]='constraints'>`, encapsulation: ViewEncapsulation.None
 })

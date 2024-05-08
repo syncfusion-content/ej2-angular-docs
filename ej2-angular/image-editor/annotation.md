@@ -48,9 +48,7 @@ Here is an example of adding a text in a button click using [`drawText`](https:/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +66,7 @@ Here is an example of adding a multiline text in a button click using [`drawText
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs26/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs26/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs26/src/main.ts %}
 {% endhighlight %}
@@ -92,9 +88,7 @@ Here is an example of deleting a text in a button click using [`deleteShape`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs25/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs25/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs25/src/main.ts %}
 {% endhighlight %}
@@ -114,9 +108,7 @@ Here is an example of changing the text’s color and its font family using the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs32/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs32/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs32/src/main.ts %}
 {% endhighlight %}
@@ -134,9 +126,7 @@ By leveraging the [`fontFamily`](https://ej2.syncfusion.com/angular/documentatio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs38/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs38/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs38/src/main.ts %}
 {% endhighlight %}
@@ -156,9 +146,7 @@ Here is an example of using the [`freeHandDraw`](https://ej2.syncfusion.com/angu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs2/src/main.ts %}
 {% endhighlight %}
@@ -178,9 +166,7 @@ Here is an example of changing the freehand draw stroke width and color using th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs4/src/main.ts %}
 {% endhighlight %}
@@ -202,9 +188,7 @@ Here is an example of deleting a freehand annotation in a button click using [`d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs26/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs26/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs26/src/main.ts %}
 {% endhighlight %}
@@ -321,9 +305,7 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs3/src/main.ts %}
 {% endhighlight %}
@@ -345,9 +327,7 @@ Here is an example of deleting rectangle, ellipse, arrow, path, and line in a bu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs5/src/main.ts %}
 {% endhighlight %}
@@ -389,9 +369,7 @@ In the following example, you can use the [`drawImage`](https://ej2.syncfusion.c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs37/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs37/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs37/src/main.ts %}
 {% endhighlight %}

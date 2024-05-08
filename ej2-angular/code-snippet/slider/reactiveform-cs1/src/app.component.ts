@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SliderModule } from '@syncfusion/ej2-angular-inputs'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+
 
 
 
@@ -6,6 +11,14 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { SliderComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+imports: [
+        
+        SliderModule,
+        FormsModule, ReactiveFormsModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `
     <div class="container">

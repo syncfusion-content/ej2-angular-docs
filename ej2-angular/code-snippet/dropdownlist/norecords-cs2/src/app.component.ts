@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -6,6 +11,12 @@ import { Component } from '@angular/core';
 import { Query, DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+        FormsModule,DropDownListModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the DropDownList component
     template:  `<ejs-dropdownlist id='ddlelement' [dataSource]='data' [query]='query' [fields]='fields'      placeholder='Find an employee'>

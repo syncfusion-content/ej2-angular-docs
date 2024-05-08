@@ -1,9 +1,22 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
+imports: [
+        
+        CalendarModule,
+        ButtonModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `
   <div>

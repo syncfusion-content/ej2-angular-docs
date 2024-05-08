@@ -27,9 +27,7 @@ In the following example demonstrates how to enable single cell selection using 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cell-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cell-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cell-cs1/src/main.ts %}
 {% endhighlight %}
@@ -49,9 +47,7 @@ In the following example demonstrates how to enable multiple cell selection usin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cell-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cell-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cell-cs2/src/main.ts %}
 {% endhighlight %}
@@ -77,9 +73,7 @@ In the following example demonstrates how to dynamically enable and change the `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cs1/src/main.ts %}
 {% endhighlight %}
@@ -103,9 +97,7 @@ The following example demonstrates how to select a single cell within the Grid b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cell-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cell-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cell-cs4/src/main.ts %}
 {% endhighlight %}
@@ -125,9 +117,7 @@ In the following example, it demonstrates how to select multiple cells in the Gr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cell-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cell-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cell-cs6/src/main.ts %}
 {% endhighlight %}
@@ -152,9 +142,7 @@ The following example demonstrates how to select a range of cells within the Gri
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cell-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cell-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cell-cs5/src/main.ts %}
 {% endhighlight %}
@@ -172,9 +160,7 @@ The following example demonstrates how to obtain the selected row cell indexes u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cell-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cell-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cell-cs8/src/main.ts %}
 {% endhighlight %}
@@ -194,9 +180,7 @@ The following example demonstrates how to clear cell selection by calling the `c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cell-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cell-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cell-cs3/src/main.ts %}
 {% endhighlight %}
@@ -222,9 +206,7 @@ In the following example, cell selection is canceled when the value of **ShipCou
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cell-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cell-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cell-cs7/src/main.ts %}
 {% endhighlight %}

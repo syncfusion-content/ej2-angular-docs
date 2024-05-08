@@ -23,9 +23,7 @@ Interaction keys |Description
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/clipboard-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/clipboard-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/clipboard-cs1/src/main.ts %}
 {% endhighlight %}
@@ -41,9 +39,7 @@ To copy selected rows or cells data into clipboard with help of external buttons
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/copy-method-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/copy-method-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/copy-method-cs1/src/main.ts %}
 {% endhighlight %}
@@ -67,9 +63,7 @@ Tree Grid provides support for a set of copy modes with [`copyHierarchyMode`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/clipboard-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/clipboard-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/clipboard-cs2/src/main.ts %}
 {% endhighlight %}
@@ -89,9 +83,7 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
@@ -117,9 +109,7 @@ Paste the cell programmatically by using the [`Paste`](https://ej2.syncfusion.co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs2/src/main.ts %}
 {% endhighlight %}

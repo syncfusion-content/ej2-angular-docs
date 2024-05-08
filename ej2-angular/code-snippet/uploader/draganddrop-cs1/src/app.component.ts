@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+         UploaderModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `        <div id='droparea'> Drop files here to upload </div>
                <ejs-uploader #defaultupload [asyncSettings]='path' autoUpload='false' [dropArea]='ele'></ejs-uploader>

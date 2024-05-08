@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +10,10 @@ import { EmitType } from '@syncfusion/ej2-base';
 import { UploaderComponent, SelectedEventArgs } from '@syncfusion/ej2-angular-inputs';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 @Component({
+imports:      [  UploaderModule, DialogModule ],
+
+
+standalone: true,
     selector: 'app-root',
     templateUrl: './default.html',
     styleUrls: ['./index.css']

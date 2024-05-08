@@ -20,9 +20,7 @@ You can use the [tabs](https://ej2.syncfusion.com/angular/documentation/api/ribb
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Tabs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Tabs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Tabs/src/main.ts %}
 {% endhighlight %}
@@ -41,9 +39,7 @@ You can use the [groups](https://ej2.syncfusion.com/angular/documentation/api/ri
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Groups/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Groups/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Groups/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ You can add collections of items to each group by using the [collections](https:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Items/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Items/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Items/src/main.ts %}
 {% endhighlight %}

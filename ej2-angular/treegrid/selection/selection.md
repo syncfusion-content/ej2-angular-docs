@@ -23,9 +23,7 @@ To select range of rows or cells, press and hold the SHIFT key and click the row
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/selection-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/selection-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/selection-cs8/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ TreeGrid supports three types of selection mode which can be set by using [`sele
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/selection-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/selection-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/selection-cs9/src/main.ts %}
 {% endhighlight %}
@@ -63,9 +59,7 @@ The Toggle selection allows to perform selection and unselection of the particul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/selection-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/selection-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/selection-cs10/src/main.ts %}
 {% endhighlight %}

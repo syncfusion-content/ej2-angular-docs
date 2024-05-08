@@ -24,9 +24,7 @@ Category axis type is used to represent the string values in axis labels.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/axis/categoryaxis-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/axis/categoryaxis-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/axis/categoryaxis-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ Numeric axis type is used to represent the numeric values in axis labels.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/axis/numericaxis-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/axis/numericaxis-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/axis/numericaxis-cs1/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ Date-time axis type is used to represent the date-time values in axis labels wit
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/axis/datetimeaxis-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/axis/datetimeaxis-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/axis/datetimeaxis-cs1/src/main.ts %}
 {% endhighlight %}
@@ -78,9 +72,7 @@ HeatMap supports inversing the axis origin for both axes, where the axis labels 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/axis/inversedaxis-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/axis/inversedaxis-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/axis/inversedaxis-cs1/src/main.ts %}
 {% endhighlight %}
@@ -96,9 +88,7 @@ In HeatMap, you can place the axis label in an opposite position of its default 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/axis/opposedaxis-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/axis/opposedaxis-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/axis/opposedaxis-cs1/src/main.ts %}
 {% endhighlight %}
@@ -124,9 +114,7 @@ The text style of the axis labels can be customized using the following options 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/axis/textstyle-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/axis/textstyle-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/axis/textstyle-cs1/src/main.ts %}
 {% endhighlight %}
@@ -142,9 +130,7 @@ Axis labels with line breaks improve the readability of the HeatMap by splitting
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/axis/linebreak-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/axis/linebreak-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/axis/linebreak-cs1/src/main.ts %}
 {% endhighlight %}
@@ -167,9 +153,7 @@ The below example demonstrates to trim the axis labels by using the `labelInters
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/axis/labelintersectaction-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/axis/labelintersectaction-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/axis/labelintersectaction-cs1/src/main.ts %}
 {% endhighlight %}
@@ -185,9 +169,7 @@ The axis labels can be rotated to the desired angles by using the [labelRotation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/axis/rotatinglabels-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/axis/rotatinglabels-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/axis/rotatinglabels-cs1/src/main.ts %}
 {% endhighlight %}
@@ -203,9 +185,7 @@ HeatMap supports formatting the axis labels by using the [labelFormat](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/axis/labelformat-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/axis/labelformat-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/axis/labelformat-cs1/src/main.ts %}
 {% endhighlight %}
@@ -227,9 +207,7 @@ In HeatMap, you can define an interval between the axis labels using the [interv
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/axis/axisinterval-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/axis/axisinterval-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/axis/axisinterval-cs1/src/main.ts %}
 {% endhighlight %}
@@ -245,9 +223,7 @@ Axis label increment in the HeatMap is used to display the axis labels with regu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/axis/increment-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/axis/increment-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/axis/increment-cs1/src/main.ts %}
 {% endhighlight %}
@@ -269,9 +245,7 @@ You can display the axis labels at specific time intervals along with the date-t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/axis/showlabelon-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/axis/showlabelon-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/axis/showlabelon-cs1/src/main.ts %}
 {% endhighlight %}
@@ -296,9 +270,7 @@ The multilevel labels can be customized by using the following properties.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/heatmap/axis/multilevellabels-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/heatmap/axis/multilevellabels-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/heatmap/axis/multilevellabels-cs1/src/main.ts %}
 {% endhighlight %}

@@ -16,9 +16,7 @@ You can sort the selected files in an uploader component by using the [selected]
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/sorting-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/sorting-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/sorting-cs1/src/main.ts %}
 {% endhighlight %}

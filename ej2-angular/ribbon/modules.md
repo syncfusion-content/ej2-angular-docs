@@ -30,12 +30,5 @@ The following modules are available in Ribbon. If the module injection type is *
 These modules should be injected into the `providers` section of root `NgModule` or component class.
 
 {% tabs %}
-{% highlight ts tabtitle="app.module.ts" %}
 
-import { RibbonColorPickerService, RibbonFileMenuService } from '@syncfusion/ej2-angular-ribbon';
-@NgModule({
-    providers: [ RibbonColorPickerService, RibbonFileMenuService ]
-})
-
-{% endhighlight %}
 {% endtabs %}

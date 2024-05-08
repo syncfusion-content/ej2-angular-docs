@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, SearchService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -6,6 +12,15 @@ import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import {TextBoxComponent} from '@syncfusion/ej2-angular-inputs'
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule,
+        TextBoxModule
+    ],
+
+providers: [SearchService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `
     <div class="e-float-input" style="width: 120px; display: inline-block;">

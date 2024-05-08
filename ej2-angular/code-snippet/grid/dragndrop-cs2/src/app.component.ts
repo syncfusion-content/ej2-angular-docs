@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService, SelectionService, RowDDService } from '@syncfusion/ej2-angular-grids'
+
 import { GridComponent, RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [PageService, SelectionService, RowDDService],
+standalone: true,
     selector: 'app-root',
     template: `<div class="control-section">
                 <ejs-grid #grid [dataSource]="data" [allowRowDragAndDrop]="true"

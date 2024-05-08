@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -6,6 +10,14 @@ import { IDataOptions, IDataSet, ConditionalFormattingService, PivotView,
 import { Pivot_Data } from './datasource';
 
 @Component({
+imports: [
+        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   providers: [FieldListService, ToolbarService ],
   template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' width=width showToolbar='true' [toolbar]='toolbarOptions'></ejs-pivotview></div>`

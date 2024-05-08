@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { StockChartAllModule, ChartAllModule, RangeNavigatorAllModule } from '@syncfusion/ej2-angular-charts'
+import { DateTimeService, SplineSeriesService } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -18,6 +23,12 @@ L10n.load({
 });
 
 @Component({
+imports: [
+         StockChartAllModule, ChartAllModule, RangeNavigatorAllModule
+    ],
+
+providers: [ DateTimeService, SplineSeriesService],
+standalone: true,
   selector: 'app-container',
   template: `<ejs-stockchart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis'
         [crosshair]='crosshair' [zoomSettings]="zoomSettings" locale='ar-AR'>

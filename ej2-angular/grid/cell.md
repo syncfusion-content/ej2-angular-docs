@@ -24,9 +24,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-cell-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-cell-cs3/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +68,7 @@ The following example demonstrates how to set the `allowTextWrap` property to **
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/autowrap-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/autowrap-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/autowrap-cs1/src/main.ts %}
 {% endhighlight %}
@@ -98,9 +94,7 @@ The following example demonstrates how to add a `queryCellInfo` event handler to
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-cell-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-cell-cs1/src/main.ts %}
 {% endhighlight %}
@@ -127,9 +121,7 @@ The following example demonstrates how to customize the appearance of a specific
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-cell-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-cell-cs12/src/main.ts %}
 {% endhighlight %}
@@ -161,9 +153,7 @@ The following example demonstrates how to customize the appearance of the **Orde
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-cell-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-cell-cs2/src/main.ts %}
 {% endhighlight %}
@@ -187,9 +177,7 @@ The following example demonstrates how to use [getColumnHeaderByIndex](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-cell-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-cell-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-cell-cs13/src/main.ts %}
 {% endhighlight %}
@@ -215,9 +203,7 @@ The following example demonstrates, how to set the [clipMode](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/clipmode-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/clipmode-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/clipmode-cs1/src/main.ts %}
 {% endhighlight %}
@@ -355,9 +341,7 @@ The following example demonstrates how to customize the tooltip content for the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-tooltip-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-tooltip-cs1/src/main.ts %}
 {% endhighlight %}
@@ -383,9 +367,7 @@ The following example demonstrates how to set the [gridLines](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/autowrap-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/autowrap-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/autowrap-cs2/src/main.ts %}
 {% endhighlight %}

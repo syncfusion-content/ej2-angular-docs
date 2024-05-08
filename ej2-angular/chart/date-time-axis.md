@@ -24,9 +24,7 @@ To known about dateTime axis, you can check on this video:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs10/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ Date-time category axis is used to display the date-time values with non-linear 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs11/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ Range for an axis, will be calculated automatically based on the provided data, 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs12/src/main.ts %}
 {% endhighlight %}
@@ -92,9 +86,7 @@ DateTime axis supports following interval types,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs13/src/main.ts %}
 {% endhighlight %}
@@ -118,9 +110,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs14/src/main.ts %}
 {% endhighlight %}
@@ -136,9 +126,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs15/src/main.ts %}
 {% endhighlight %}
@@ -154,9 +142,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs16/src/main.ts %}
 {% endhighlight %}
@@ -172,9 +158,7 @@ You can format and parse the date to all globalize format using [`labelFormat`]
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/datetime-cs17/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/datetime-cs17/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/datetime-cs17/src/main.ts %}
 {% endhighlight %}

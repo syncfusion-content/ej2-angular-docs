@@ -252,9 +252,7 @@ The following example demonstrates how to load a translation object for **Deutsc
 {% highlight ts tabtitle="locale.json" %}
 {% include code-snippet/grid/localization-cs1/src/locale.json %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/localization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/localization-cs1/src/main.ts %}
 {% endhighlight %}
@@ -286,9 +284,7 @@ The following example demonstrates how to load a translation object for **French
 {% highlight ts tabtitle="locale.json" %}
 {% include code-snippet/grid/localization-cs5/src/locale.json %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/localization-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/localization-cs5/src/main.ts %}
 {% endhighlight %}
@@ -335,9 +331,7 @@ To switch to the **French** culture and set the currency code as **EUR**, you ca
 {% highlight ts tabtitle="locale.json" %}
 {% include code-snippet/grid/localization-cs6/src/locale.json %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/localization-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/localization-cs6/src/main.ts %}
 {% endhighlight %}
@@ -371,9 +365,7 @@ You need to load the culture format files corresponding to the desired locale in
 {% highlight ts tabtitle="locale.json" %}
 {% include code-snippet/grid/localization-cs2/src/locale.json %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/localization-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/localization-cs2/src/main.ts %}
 {% endhighlight %}
@@ -410,9 +402,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% highlight ts tabtitle="locale.json" %}
 {% include code-snippet/grid/paging1-cs1/src/locale.json %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs1/src/main.ts %}
 {% endhighlight %}

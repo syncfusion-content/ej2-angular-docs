@@ -20,9 +20,7 @@ You can set validation rules by defining the [`columns.validationRules`](https:/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs31/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs31/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs31/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ In the below demo, custom validation applied for `Priority` column.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs32/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs32/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs32/src/main.ts %}
 {% endhighlight %}

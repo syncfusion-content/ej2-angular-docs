@@ -1,8 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SmithchartModule, TooltipRenderService, SmithchartLegendService } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+         SmithchartModule
+    ],
+
+providers: [TooltipRenderService, SmithchartLegendService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-smithchart style='display: block;' id='container' height='350px'  [legendSettings] = 'legendSettings' >
     <e-seriesCollection>

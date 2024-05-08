@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { DateTimeService, AreaSeriesService } from '@syncfusion/ej2-angular-charts'
+import { LegendService, ZoomService } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -16,6 +22,12 @@ L10n.load({
 });
 
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ DateTimeService, AreaSeriesService, LegendService, ZoomService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' locale='ar-AR' [zoomSettings]='zoom'>
         <e-series-collection>

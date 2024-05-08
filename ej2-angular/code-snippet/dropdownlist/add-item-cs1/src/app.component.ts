@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, ViewChild } from '@angular/core';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+imports: [
+        FormsModule, DropDownListModule
+    ],
+
+
+standalone: true,
     selector: 'control-content',
     // specifies the template path for DropDownList component
     templateUrl: `add.html`

@@ -18,9 +18,7 @@ The following example illustrates how to add link to a Button.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button/round-button-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button/round-button-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button/round-button-cs1/src/main.ts %}
 {% endhighlight %}

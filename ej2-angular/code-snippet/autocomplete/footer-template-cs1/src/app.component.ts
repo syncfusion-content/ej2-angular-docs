@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -5,6 +10,12 @@ import { Component, ViewChild } from '@angular/core';
 import { AutoCompleteComponent, DropEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+imports: [
+        FormsModule,AutoCompleteModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template url path
     templateUrl: `footerTemplate.html`

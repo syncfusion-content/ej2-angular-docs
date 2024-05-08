@@ -22,9 +22,7 @@ To known about numeric axis, you can check on this video:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs9/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ Range for an axis, will be calculated automatically based on the provided data, 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs10/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs11/src/main.ts %}
 {% endhighlight %}
@@ -86,9 +80,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs12/src/main.ts %}
 {% endhighlight %}
@@ -104,9 +96,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs13/src/main.ts %}
 {% endhighlight %}
@@ -122,9 +112,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs14/src/main.ts %}
 {% endhighlight %}
@@ -140,9 +128,7 @@ When the [`rangePadding`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs15/src/main.ts %}
 {% endhighlight %}
@@ -161,9 +147,7 @@ Numeric labels supports all globalize format.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs16/src/main.ts %}
 {% endhighlight %}
@@ -240,9 +224,7 @@ To separate groups of thousands, use [`useGroupingSeparator`](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs17/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs17/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs17/src/main.ts %}
 {% endhighlight %}
@@ -258,9 +240,7 @@ Axis also supports custom label format using placeholder like {value}°C, in w
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/double-cs18/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/double-cs18/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/double-cs18/src/main.ts %}
 {% endhighlight %}

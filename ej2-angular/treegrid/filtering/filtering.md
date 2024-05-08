@@ -33,9 +33,7 @@ Here is an example that demonstrates the default filtering feature of the tree g
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs9/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +72,7 @@ The following demo illustrates filtering records with different hierarchy modes.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs10/src/main.ts %}
 {% endhighlight %}
@@ -94,9 +90,7 @@ Here is an example of how to configure the initial filter using the `predicate` 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs11/src/main.ts %}
 {% endhighlight %}
@@ -116,9 +110,7 @@ The following example demonstrates, how to perform an initial filter with multip
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs12/src/main.ts %}
 {% endhighlight %}

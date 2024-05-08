@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DateRangePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 
@@ -12,6 +16,13 @@ import * as detimeZoneNames from './timeZoneNames.json';
 loadCldr(numberingSystems, gregorian, numbers, detimeZoneNames);
 
 @Component({
+imports: [
+        
+        DateRangePickerModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-daterangepicker locale='de'></ejs-daterangepicker>`
 })

@@ -30,9 +30,7 @@ In the following example, `id` column and `text` column from complex data have b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/combobox/virtual-scroll/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/virtual-scroll/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/combobox/virtual-scroll/src/main.ts %}
 {% endhighlight %}
@@ -53,9 +51,7 @@ The following sample displays the OrderId from the `Orders` Data Service.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/combobox/virtual-scroll-remote/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/virtual-scroll-remote/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/combobox/virtual-scroll-remote/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +72,7 @@ The following sample shows the example for Grouping with Virtualization.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/combobox/virtual-scroll-group/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/virtual-scroll-group/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/combobox/virtual-scroll-group/src/main.ts %}
 {% endhighlight %}
@@ -99,9 +93,7 @@ The following sample shows the example for Filtering with Virtualization.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/combobox/virtual-scroll-filter/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/combobox/virtual-scroll-filter/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/combobox/virtual-scroll-filter/src/main.ts %}
 {% endhighlight %}

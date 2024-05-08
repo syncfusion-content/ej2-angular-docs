@@ -27,9 +27,7 @@ The position values of Speed Dial are as follows:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/position-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/position-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/position-cs1/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +70,7 @@ Below example demonstrates open/close action items on button click.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/position-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/position-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/position-cs2/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +89,7 @@ You can refresh the position of the Speed Dial using [`refreshPosition`](https:/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/position-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/position-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/position-cs3/src/main.ts %}
 {% endhighlight %}

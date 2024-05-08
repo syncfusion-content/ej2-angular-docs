@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule, ReorderService } from '@syncfusion/ej2-angular-treegrid'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+imports: [
+        
+        TreeGridModule
+    ],
+
+providers: [ReorderService],
+standalone: true,
   selector: 'app-container',
   template: `<button id='show' ejs-button class='e-flat' (click)='show()'> Show </button>
              <button id='hide' ejs-button class='e-flat' (click)='hide()'> Hide </button>

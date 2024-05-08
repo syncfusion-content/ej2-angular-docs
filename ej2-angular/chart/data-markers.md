@@ -24,9 +24,7 @@ Markers can be added to points by enabling the [`visible`](https://ej2.syncfusi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/marker-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/marker-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ Markers can be assigned with different shapes such as Rectangle, Circle, Diamond
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/marker-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/marker-cs2/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ Apart from the shapes, you can also add custom images to mark the data point usi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/marker-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/marker-cs3/src/main.ts %}
 {% endhighlight %}
@@ -80,9 +74,7 @@ Marker's color and border can be customized using `fill` and `border` properties
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/marker-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/marker-cs4/src/main.ts %}
 {% endhighlight %}
@@ -98,9 +90,7 @@ You can also customize the specific marker and label using [`pointRender`](https
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/marker-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/marker-cs5/src/main.ts %}
 {% endhighlight %}
@@ -116,9 +106,7 @@ Marker can be filled with the series color by setting the [`isFilled`](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/data-marker/marker-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/data-marker/marker-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/data-marker/marker-cs6/src/main.ts %}
 {% endhighlight %}

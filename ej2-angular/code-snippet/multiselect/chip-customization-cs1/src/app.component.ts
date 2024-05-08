@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -5,6 +10,12 @@ import { Component } from '@angular/core';
 import { TaggingEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+imports: [
+        FormsModule, MultiSelectModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-multiselect id='multiselectelement' [value]='colorValues' [dataSource]='colorsData' (tagging)='onTagging($event)' [mode]='box' [placeholder]='waterMark' [fields]='fields'></ejs-multiselect>`,
 })

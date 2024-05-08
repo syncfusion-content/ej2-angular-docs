@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AccordionModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -12,6 +16,12 @@ import { AccordionComponent, AccordionItemModel } from "@syncfusion/ej2-angular-
 import { CheckBoxComponent } from "@syncfusion/ej2-angular-buttons";
 
 @Component({
+imports: [
+         AccordionModule, CheckBoxModule
+    ],
+
+
+standalone: true,
   selector: "app-container",
   templateUrl: "./app.component.html"
 })

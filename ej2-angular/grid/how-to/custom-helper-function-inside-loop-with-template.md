@@ -41,9 +41,7 @@ This is demonstrated in the following example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-helper-loop-template/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-helper-loop-template/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-helper-loop-template/src/main.ts %}
 {% endhighlight %}

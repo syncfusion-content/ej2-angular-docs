@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
+import { ToolbarAllModule, MenuModule } from '@syncfusion/ej2-angular-navigations'
+import { ButtonAllModule  } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -5,6 +11,16 @@ import { Component } from '@angular/core';
 import { ToolbarComponent, MenuItemModel } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [
+        FormsModule,
+        ToolbarAllModule,
+        
+        MenuModule,
+        ButtonAllModule 
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: ` <ejs-toolbar>
                 <e-items>

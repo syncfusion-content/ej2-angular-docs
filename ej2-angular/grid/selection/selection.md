@@ -27,9 +27,7 @@ To select range of rows or cells or columns, press and hold the SHIFT key and cl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cs13/src/main.ts %}
 {% endhighlight %}
@@ -57,9 +55,7 @@ The following example, demonstrates how to dynamically enable and change the `se
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cs14/src/main.ts %}
 {% endhighlight %}
@@ -105,9 +101,7 @@ The following example demonstrates how to enable the toggle selection for both c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cs10/src/main.ts %}
 {% endhighlight %}
@@ -130,9 +124,7 @@ In the following example, it demonstrates how to clear all selection by calling 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cs11/src/main.ts %}
 {% endhighlight %}
@@ -158,9 +150,7 @@ In the following example, it demonstrates how to enable the persist selection fe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-presistence-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-presistence-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-presistence-cs2/src/main.ts %}
 {% endhighlight %}

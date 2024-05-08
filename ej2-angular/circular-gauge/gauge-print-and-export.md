@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gauge print and export in Angular Circular gauge component | Syncfusion
+title: Gauge print and export in Angular Circular gauge component| Syncfusion
 description: Learn here all about Gauge print and export in Syncfusion Angular Circular gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Gauge print and export 
@@ -19,9 +19,7 @@ To use the print functionality, we should inject the `PrintService` into the `@N
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-print-and-export-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-print-and-export-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-print-and-export-cs1/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ To use the image export functionality, we should inject the `ImageExportService`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-print-and-export-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-print-and-export-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-print-and-export-cs2/src/main.ts %}
 {% endhighlight %}
@@ -59,9 +55,7 @@ We can get the image file as base64 string for the JPEG and PNG formats. The cir
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-print-and-export-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-print-and-export-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-print-and-export-cs3/src/main.ts %}
 {% endhighlight %}
@@ -77,9 +71,7 @@ To use the PDF export functionality, we should inject the `PdfExportService` int
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-print-and-export-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-print-and-export-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-print-and-export-cs4/src/main.ts %}
 {% endhighlight %}

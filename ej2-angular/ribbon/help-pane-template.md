@@ -16,9 +16,7 @@ The help pane is dedicated area where the users can define help contents like co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/HelpPaneTemplate/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/HelpPaneTemplate/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/HelpPaneTemplate/src/main.ts %}
 {% endhighlight %}

@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import{Component, ViewChild}from'@angular/core';
 import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+imports: [
+         NumericTextBoxModule
+    ],
+
+
+standalone: true,
     selector:'app-root',
     // specifies the template string for the NumericTextBox component
     template:`

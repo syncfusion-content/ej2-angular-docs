@@ -18,9 +18,7 @@ Bind the open event and enable the preventFocus argument within an event like th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/dlg-focus-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/dlg-focus-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/dlg-focus-cs1/src/main.ts %}
 {% endhighlight %}

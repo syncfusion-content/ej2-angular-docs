@@ -20,9 +20,7 @@ In the following example, an image and text have been rendered as a template to 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/empty-record-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/empty-record-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/empty-record-template-cs1/src/main.ts %}
 {% endhighlight %}

@@ -17,9 +17,7 @@ Data Labels are used to identify the value of actual bar in the Bullet Chart com
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs21/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs21/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs21/src/main.ts %}
 {% endhighlight %}
@@ -35,9 +33,7 @@ Data Labels color, opacity, font size, font family, font weight, and font style 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs22/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs22/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs22/src/main.ts %}
 {% endhighlight %}

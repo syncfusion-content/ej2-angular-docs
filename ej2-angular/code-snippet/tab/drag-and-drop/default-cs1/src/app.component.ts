@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
+import { TabAllModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -8,6 +13,14 @@ import { Component } from '@angular/core';
  */
 
 @Component({
+imports: [
+        FormsModule,
+        TabAllModule,
+        
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<div id='tabparent'><ejs-tab id="draggableTab" heightAdjustMode='Auto' [allowDragAndDrop]='true' dragArea='#tabparent'>
             <e-tabitems>

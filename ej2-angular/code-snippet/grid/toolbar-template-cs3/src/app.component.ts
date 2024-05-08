@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -11,6 +17,15 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { ClickEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ToolbarModule,
+        ButtonModule
+    ],
+
+providers: [ToolbarService, EditService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' height='200px' [editSettings]='editSettings'>
                 <ng-template #toolbarTemplate let-data>

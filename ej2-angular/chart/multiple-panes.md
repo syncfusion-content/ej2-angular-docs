@@ -24,9 +24,7 @@ To split the chart area vertically into number of rows, use [`rows`](https://ej2
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/multiple-panes-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/multiple-panes-cs2/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ For spanning the vertical axis along multiple row, you can use [`span`](https://
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/multiple-panes-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/multiple-panes-cs3/src/main.ts %}
 {% endhighlight %}
@@ -63,9 +59,7 @@ property. The given width can be either in percentage or in pixel.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/multiple-panes-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/multiple-panes-cs4/src/main.ts %}
 {% endhighlight %}
@@ -79,9 +73,7 @@ For spanning the horizontal axis along multiple column, you can use [`span`](htt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/multiple-panes-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/multiple-panes-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/multiple-panes-cs5/src/main.ts %}
 {% endhighlight %}

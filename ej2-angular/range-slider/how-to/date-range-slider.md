@@ -17,9 +17,7 @@ The process of formatting is explained in the below sample.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/how-to-01-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/slider/how-to-01-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/how-to-01-cs2/src/main.ts %}
 {% endhighlight %}

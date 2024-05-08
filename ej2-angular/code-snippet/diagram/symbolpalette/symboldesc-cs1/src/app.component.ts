@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule, SymbolPaletteModule } from '@syncfusion/ej2-angular-diagrams'
+
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
@@ -5,6 +9,12 @@ import {  NodeModel,  PaletteModel, SymbolPreviewModel ,NodeConstraints} from '@
 import { ExpandMode } from '@syncfusion/ej2-navigations';
 
 @Component({
+imports: [
+         DiagramModule, SymbolPaletteModule
+    ],
+
+providers: [ ],
+standalone: true,
     selector: "app-container",
     template: `<ejs-symbolpalette id="symbolpalette"width="100%" height="100%" [expandMode]="expandMode" [enableSearch]=true [palettes]='palettes'
      [symbolHeight]=80 [symbolWidth]=80 [symbolPreview]='symbolPreview' [getSymbolInfo]='getSymbolInfo'>

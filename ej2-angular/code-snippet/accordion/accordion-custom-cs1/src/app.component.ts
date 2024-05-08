@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AccordionModule } from '@syncfusion/ej2-angular-navigations'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -6,6 +11,12 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 import { AccordionComponent} from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [
+         AccordionModule, DropDownListModule 
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `
     <div style='padding-top: 25px'>

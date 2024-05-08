@@ -22,9 +22,7 @@ Change the element value in chart by using the [`annotationRender`](https://ej2.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/how-to-cs19/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/how-to-cs19/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/how-to-cs19/src/main.ts %}
 {% endhighlight %}

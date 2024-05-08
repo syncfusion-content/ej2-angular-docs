@@ -33,9 +33,7 @@ Similarly, if the user navigates to a new page, the root nodes of that specific 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/data-binding-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/data-binding-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/data-binding-cs4/src/main.ts %}
 {% endhighlight %}
@@ -169,9 +167,7 @@ On remote data binding, all treegrid actions such as paging, loading child on-de
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/data-binding-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/data-binding-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/data-binding-cs5/src/main.ts %}
 {% endhighlight %}
@@ -187,9 +183,7 @@ You can create your own adaptor by extending the built-in adaptors. The followin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/data-binding-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/data-binding-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/data-binding-cs6/src/main.ts %}
 {% endhighlight %}
@@ -205,9 +199,7 @@ To add a custom parameter to the data request, use the `addParams` method of `Qu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/data-binding-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/data-binding-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/data-binding-cs7/src/main.ts %}
 {% endhighlight %}
@@ -225,9 +217,7 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/data-binding-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/data-binding-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/data-binding-cs8/src/main.ts %}
 {% endhighlight %}

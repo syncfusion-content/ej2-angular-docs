@@ -1,9 +1,22 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+
 import { Component, OnInit ,ViewChild} from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent, Column } from '@syncfusion/ej2-angular-treegrid';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        DropDownListModule
+    ],
+
+,
+standalone: true,
     selector: 'app-container',
     template: `<div style="display: flex">
                 <label style="padding: 30px 17px 0 0;">Select column name :</label>

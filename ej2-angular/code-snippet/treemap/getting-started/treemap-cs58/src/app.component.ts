@@ -1,6 +1,16 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeMapModule, TreeMapLegendService, TreeMapTooltipService, TreeMapAllModule } from '@syncfusion/ej2-angular-treemap'
+
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+         TreeMapModule, TreeMapAllModule
+    ],
+
+providers: [TreeMapLegendService, TreeMapTooltipService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treemap id='container' style='display: block;' [tooltipSettings]='tooltipSettings' [legendSettings]='legendSettings' [dataSource]='data' equalColorValuePath='Count' weightValuePath='Count' [leafItemSettings]='leafItemSettings'>
     </ejs-treemap>`

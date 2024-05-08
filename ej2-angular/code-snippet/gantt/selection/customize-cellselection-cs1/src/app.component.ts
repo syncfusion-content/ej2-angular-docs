@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { SelectionService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -6,6 +11,12 @@ import { Gantt } from '@syncfusion/ej2-gantt';
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" [selectionSettings]="selectionSettings" (cellSelecting)="cellSelecting($event)"></ejs-gantt>`,

@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule, ChartAllModule, StockChartAllModule } from '@syncfusion/ej2-angular-charts'
+import { DateTimeService, LineSeriesService, DateTimeCategoryService, StripLineService} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+         ChartModule, StockChartAllModule, ChartAllModule
+    ],
+
+providers: [ DateTimeService, LineSeriesService, DateTimeCategoryService, StripLineService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-stockchart id="stockChartSpline" [enablePeriodSelector]="enable" [chartArea]="chartArea"[primaryXAxis]="primaryXAxis" [primaryYAxis]="primaryYAxis" [seriesType]="seriesType"
       [indicatorType]="indicatorType">

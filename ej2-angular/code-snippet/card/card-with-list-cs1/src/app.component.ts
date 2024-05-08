@@ -1,9 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+
 
 
 import { Component, ViewChild } from '@angular/core';
 import { ListView } from '@syncfusion/ej2-lists';
 
 @Component({
+imports: [
+        
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `
         <div style="margin: 50px;">

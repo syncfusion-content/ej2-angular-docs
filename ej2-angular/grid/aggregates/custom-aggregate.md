@@ -31,9 +31,7 @@ Here's an example that demonstrates how to use the custom aggregate feature in t
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/grid/aggregates-custom-cs1/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/aggregates-custom-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/aggregates-custom-cs1/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +54,7 @@ Here's an example that demonstrates how to show the count of distinct values for
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/grid/aggregates-custom-cs2/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/aggregates-custom-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/aggregates-custom-cs2/src/main.ts %}
 {% endhighlight %}

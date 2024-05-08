@@ -18,9 +18,7 @@ Modify the task details through user interaction such as resizing and dragging t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/taskbaredit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/taskbaredit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/managing-tasks/taskbaredit-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ On taskbar edit action, the [`taskbarEditing`](https://ej2.syncfusion.com/angula
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/managing-tasks/prevent-taskbaredit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/managing-tasks/prevent-taskbaredit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/managing-tasks/prevent-taskbaredit-cs1/src/main.ts %}
 {% endhighlight %}

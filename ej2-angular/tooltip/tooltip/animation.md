@@ -23,9 +23,7 @@ The default `duration` is set to 150 ms and `delay` is set to 0.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tooltip/getting-started-cs22/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs22/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/getting-started-cs22/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +66,7 @@ Refer to the code snippet below to apply animations using public methods.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tooltip/getting-started-cs23/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs23/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/getting-started-cs23/src/main.ts %}
 {% endhighlight %}
@@ -86,9 +82,7 @@ The transition effect can be applied on Tooltips by using the `beforeOpen` event
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tooltip/getting-started-cs24/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs24/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/getting-started-cs24/src/main.ts %}
 {% endhighlight %}

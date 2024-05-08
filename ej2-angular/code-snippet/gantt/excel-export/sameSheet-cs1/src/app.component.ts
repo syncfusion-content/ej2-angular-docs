@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { ToolbarService, ExcelExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
@@ -7,6 +12,12 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { GanttData } from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [ToolbarService, ExcelExportService, SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
        `<p><b>First Gantt:</b></p>

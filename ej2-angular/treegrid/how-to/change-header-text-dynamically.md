@@ -40,9 +40,7 @@ To reflect the changes in the Tree Grid header, invoke the [`refreshColumns`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/refresh-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/refresh-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/refresh-cs3/src/main.ts %}
 {% endhighlight %}

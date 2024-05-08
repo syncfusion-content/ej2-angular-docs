@@ -19,9 +19,7 @@ DateTime axis uses date time scale and displays the date time values as axis lab
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/axis-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/axis-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/axis-cs7/src/main.ts %}
 {% endhighlight %}
@@ -37,9 +35,7 @@ DateTimeCategory axis in the stock chart is used to display only business days. 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/axis-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/axis-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/axis-cs9/src/main.ts %}
 {% endhighlight %}
@@ -57,9 +53,7 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing dat
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/axis-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/axis-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/axis-cs8/src/main.ts %}
 {% endhighlight %}

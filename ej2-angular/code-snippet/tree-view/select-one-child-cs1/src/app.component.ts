@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -7,6 +12,12 @@ import { TreeViewComponent, NodeSelectEventArgs } from '@syncfusion/ej2-angular-
  * Single child selection at a time
  */
 @Component({
+imports: [
+        FormsModule,TreeViewModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<div id='treeparent'><ejs-treeview #tree id="listtree" allowMultiSelection='allowMultiSelection' [fields]='listfields' (nodeSelecting)="onNodeSelecting($event)"></ejs-treeview></div>`
 })

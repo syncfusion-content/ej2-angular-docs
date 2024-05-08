@@ -16,9 +16,7 @@ This section demonstrates how to hover and select a multi-line tree node. Here, 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/multi-line-tree-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tree-view/multi-line-tree-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/multi-line-tree-cs1/src/main.ts %}
 {% endhighlight %}

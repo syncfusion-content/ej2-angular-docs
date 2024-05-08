@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
+
 
 
 import { Component, ViewChild } from '@angular/core';
 import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 
 @Component({
+imports: [
+        
+        SpreadsheetAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<ejs-spreadsheet #spreadsheet (contextMenuBeforeOpen)="contextMenuBeforeOpen($args)">
               </ejs-spreadsheet>`

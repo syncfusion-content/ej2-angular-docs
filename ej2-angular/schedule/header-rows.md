@@ -30,9 +30,7 @@ The following example shows the Scheduler displaying all the available header ro
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs39/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs39/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs39/src/main.ts %}
 {% endhighlight %}
@@ -50,9 +48,7 @@ To display the timeline Scheduler simply with year and month names alone, define
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs40/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs40/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs40/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +66,7 @@ The week number can be displayed in a separate header row of the timeline Schedu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs41/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs41/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs41/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +84,7 @@ It is possible to display a complete year in a timeline view by setting `interva
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs42/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs42/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs42/src/main.ts %}
 {% endhighlight %}
@@ -110,9 +102,7 @@ You can customize the text of the header rows and display any images or formatte
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs43/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs43/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs43/src/main.ts %}
 {% endhighlight %}

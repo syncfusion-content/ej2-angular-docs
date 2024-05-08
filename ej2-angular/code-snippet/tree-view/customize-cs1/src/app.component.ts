@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        FormsModule,TreeViewModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template:  `<div id='treeparent'><ejs-treeview id='treeElement' #treevalidate [fields]='field' [cssClass]='cssClass'></ejs-treeview></div>
                 <div class="details">

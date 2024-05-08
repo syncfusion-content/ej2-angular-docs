@@ -26,9 +26,7 @@ The `interval` and `slotCount` properties can be used together on the Scheduler 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs63/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs63/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs63/src/main.ts %}
 {% endhighlight %}
@@ -52,9 +50,7 @@ The `timeScale` property also provides template option to allow customization of
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/timescale-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/timescale-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/timescale-cs1/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +68,7 @@ The grid lines which indicates the exact time duration can be enabled or disable
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs64/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs64/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs64/src/main.ts %}
 {% endhighlight %}
@@ -92,9 +86,7 @@ By default, Scheduler indicates current date with a highlighted date header on a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs65/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs65/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs65/src/main.ts %}
 {% endhighlight %}

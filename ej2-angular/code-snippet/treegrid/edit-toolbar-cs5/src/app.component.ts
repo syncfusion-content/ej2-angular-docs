@@ -1,3 +1,10 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService,EditService,ToolbarService } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -5,6 +12,19 @@ import { projectData } from './datasource';
 import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule,
+        DropDownListAllModule,
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                EditService,
+                ToolbarService],
+standalone: true,
     selector: 'app-container',
     template: `<button (click)="btnClick($event)">TreeGrid is Addable</button>
                 <ejs-treegrid [dataSource]='data' parentIdMapping='parentID' idMapping='TaskID' [toolbar]='toolbar' [treeColumnIndex]='1' height='270' [editSettings]='editSettings' (cellEdit)="cellEdit($event)" (beforeBatchAdd)="beforeBatchAdd($event)" (beforeBatchDelete)="beforeBatchDelete($event)" >

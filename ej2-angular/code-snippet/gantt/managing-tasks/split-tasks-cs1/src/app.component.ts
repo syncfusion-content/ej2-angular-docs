@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule, ContextMenuService, EditService } from '@syncfusion/ej2-angular-gantt'
+import { SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -6,6 +11,12 @@ import { ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { Gantt } from '@syncfusion/ej2-gantt';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [SelectionService, ContextMenuService, EditService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt id="ganttDefault" height="450px" [dataSource]="data" [taskFields]="taskSettings" [editSettings]="editSettings" [toolbar]="toolbar" [enableContextMenu]="true"></ejs-gantt>`,

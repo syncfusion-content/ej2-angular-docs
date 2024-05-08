@@ -30,9 +30,7 @@ The following code example illustrates how to add a connector through connector 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectors-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectors-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectors-cs1/src/main.ts %}
 {% endhighlight %}
@@ -50,9 +48,7 @@ The following code example illustrates how to add connector at runtime.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsatruntime-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsatruntime-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsatruntime-cs1/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +78,7 @@ The following code example illustrates how to update a connector's source point,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsupdate-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsupdate-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsupdate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -103,9 +97,7 @@ The following code example illustrates how to connect two nodes.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectNode-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectNode-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectNode-cs1/src/main.ts %}
 {% endhighlight %}
@@ -152,9 +144,7 @@ The following code example illustrates how to create port to port connections.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsport-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsport-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsport-cs1/src/main.ts %}
 {% endhighlight %}
@@ -168,9 +158,7 @@ Similarly, the `sourcePortID` or `targetPortID` can be changed at the runtime by
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsportupdate-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsportupdate-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsportupdate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -223,9 +211,7 @@ To create a straight line, specify the [`type`](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorssegments-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorssegments-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorssegments-cs1/src/main.ts %}
 {% endhighlight %}
@@ -239,9 +225,7 @@ The [`point`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strai
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorssegmentspoints-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorssegmentspoints-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorssegmentspoints-cs1/src/main.ts %}
 {% endhighlight %}
@@ -267,9 +251,7 @@ The property [`maxSegmentThumb`](https://ej2.syncfusion.com/angular/documentatio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsortho-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsortho-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsortho-cs1/src/main.ts %}
 {% endhighlight %}
@@ -283,9 +265,7 @@ The [`length`](https://ej2.syncfusion.com/angular/documentation/api/diagram/orth
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsorthosegments-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsorthosegments-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsorthosegments-cs1/src/main.ts %}
 {% endhighlight %}
@@ -303,9 +283,7 @@ Orthogonal segments are automatically re-routed, in order to avoid overlapping w
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectoroverlapping-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectoroverlapping-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectoroverlapping-cs1/src/main.ts %}
 {% endhighlight %}
@@ -336,9 +314,7 @@ The orthogonal connector has a number of segments in between the source and the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsThumbshape-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsThumbshape-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsThumbshape-cs1/src/main.ts %}
 {% endhighlight %}
@@ -370,9 +346,7 @@ To create a bezier segment, the [`segment.type`](https://ej2.syncfusion.com/angu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsbezier-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsbezier-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsbezier-cs1/src/main.ts %}
 {% endhighlight %}
@@ -386,9 +360,7 @@ The [`point1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bezi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsbezierpoints-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsbezierpoints-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsbezierpoints-cs1/src/main.ts %}
 {% endhighlight %}
@@ -402,9 +374,7 @@ The [`vector1`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bez
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsbeziervector-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsbeziervector-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsbeziervector-cs1/src/main.ts %}
 {% endhighlight %}
@@ -559,9 +529,7 @@ Also, the visibility of control points can be controlled using the bezierSetting
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorBezierAvoidOverlapping-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorBezierAvoidOverlapping-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorBezierAvoidOverlapping-cs1/src/main.ts %}
 {% endhighlight %}
@@ -583,9 +551,7 @@ The following code example illustrates how to create decorators of various shape
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsdecorator-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsdecorator-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsdecorator-cs1/src/main.ts %}
 {% endhighlight %}
@@ -607,9 +573,7 @@ The following code example illustrates how to leave space between the connection
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectNode-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectNode-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectNode-cs2/src/main.ts %}
 {% endhighlight %}
@@ -627,9 +591,7 @@ The following code example illustrates how to leave space between the connection
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorHitPadding-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorHitPadding-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorHitPadding-cs1/src/main.ts %}
 {% endhighlight %}
@@ -651,9 +613,7 @@ The flip types are as follows:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsdecorator-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsdecorator-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsdecorator-cs2/src/main.ts %}
 {% endhighlight %}
@@ -673,9 +633,7 @@ Bridging can be enabled/disabled either with the `connector.constraints` or `dia
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsbridging-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsbridging-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsbridging-cs1/src/main.ts %}
 {% endhighlight %}
@@ -697,9 +655,7 @@ Corner radius allows to create connectors with rounded corners. The radius of th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorscornerradius-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorscornerradius-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorscornerradius-cs1/src/main.ts %}
 {% endhighlight %}
@@ -723,9 +679,7 @@ The following code example illustrates how to customize the segment appearance.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorssegappear-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorssegappear-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorssegappear-cs1/src/main.ts %}
 {% endhighlight %}
@@ -747,9 +701,7 @@ The following code example illustrates how to customize the appearance of the de
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsdecappearance-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsdecappearance-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsdecappearance-cs1/src/main.ts %}
 {% endhighlight %}
@@ -800,9 +752,7 @@ Diagram.Inject(LineRouting);
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorslinerouting-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorslinerouting-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorslinerouting-cs1/src/main.ts %}
 {% endhighlight %}
@@ -816,9 +766,7 @@ Diagram.Inject(LineRouting);
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorslineroutingdisabled-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorslineroutingdisabled-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorslineroutingdisabled-cs1/src/main.ts %}
 {% endhighlight %}
@@ -836,9 +784,7 @@ The following code illustrates how to disable selection.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/connectorsconstraints-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/connectorsconstraints-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/connectorsconstraints-cs1/src/main.ts %}
 {% endhighlight %}
@@ -868,9 +814,7 @@ The following code illustrates how to render connector based on the stack order.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/zindex-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/zindex-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/zindex-cs1/src/main.ts %}
 {% endhighlight %}
@@ -888,9 +832,7 @@ The following code illustrates how to split the connector and create a connectio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/connectors/ConnectorSplit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/connectors/ConnectorSplit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/connectors/ConnectorSplit-cs1/src/main.ts %}
 {% endhighlight %}

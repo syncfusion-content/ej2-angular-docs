@@ -20,9 +20,7 @@ The following sample explains how to set dimensions for the Tooltip.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tooltip/getting-started-002-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-002-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/getting-started-002-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ When `height` is specified with a certain pixel value and the Tooltip content ov
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tooltip/getting-started-cs20/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/getting-started-cs20/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/getting-started-cs20/src/main.ts %}
 {% endhighlight %}

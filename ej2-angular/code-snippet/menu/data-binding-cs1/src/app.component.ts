@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MenuModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 import { Component } from '@angular/core';
@@ -10,6 +14,10 @@ import { dataSource } from './datasource';
 enableRipple(true);
 
 @Component({
+imports: [ MenuModule],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
     <ejs-menu [items]="data" [fields]='menuFields'></ejs-menu></div>`

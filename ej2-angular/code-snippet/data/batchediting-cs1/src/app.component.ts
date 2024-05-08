@@ -1,10 +1,21 @@
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
 
 
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { DataManager, Query, ReturnOption } from '@syncfusion/ej2-data';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        FormsModule, CommonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     templateUrl: './app.template.html',
     styles: [`

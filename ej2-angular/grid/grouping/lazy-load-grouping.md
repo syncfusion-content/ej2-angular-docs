@@ -22,9 +22,7 @@ The following example demonstrates how to enable the lazy load grouping feature 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/lazy-load-grouping-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/lazy-load-grouping-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/lazy-load-grouping-cs1/src/main.ts %}
 {% endhighlight %}
@@ -116,9 +114,7 @@ The following example demonstrates how to enable the lazy load grouping with inf
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/lazy-load-grouping-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/lazy-load-grouping-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/lazy-load-grouping-cs2/src/main.ts %}
 {% endhighlight %}
@@ -149,9 +145,7 @@ The following example demonstrates how to enable the lazy load grouping with vir
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/lazy-load-grouping-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/lazy-load-grouping-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/lazy-load-grouping-cs3/src/main.ts %}
 {% endhighlight %}

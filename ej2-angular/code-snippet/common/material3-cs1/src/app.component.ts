@@ -1,6 +1,23 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ButtonModule, CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+import { enableRipple } from '@syncfusion/ej2-base'
+import { SwitchModule} from '@syncfusion/ej2-angular-buttons'
+import { FormsModule } from '@angular/forms'
+
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        
+        ButtonModule,
+        CheckBoxModule,
+        SwitchModule,
+        FormsModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     styleUrls:['./style.css'],
     template:`<div [ngClass]="{'e-dark-mode': isChecked, 'dark': isChecked}">

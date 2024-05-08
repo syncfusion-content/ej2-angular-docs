@@ -1,7 +1,22 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DropDownButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+
 import { Component, ViewChild } from '@angular/core';
 import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 
 @Component({
+imports: [
+        
+        DropDownButtonModule,
+        UploaderModule,
+        SpreadsheetAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   template:
     "<div class='control-section'><ejs-spreadsheet #default [openUrl]='openUrl' [saveUrl]='saveUrl'></ejs-spreadsheet><ejs-uploader #defaultupload id='defaultfileupload' [asyncSettings]='path' (success)='onUploadSuccess($event)' [allowedExtensions]='allowExtensions'></ejs-uploader> </div>",

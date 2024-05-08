@@ -1,9 +1,17 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DateTimePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 import { Component } from '@angular/core';
 
 
 @Component({
+imports:      [  DateTimePickerModule ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
   <div class="parentelement">

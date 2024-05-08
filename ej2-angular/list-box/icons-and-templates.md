@@ -20,9 +20,7 @@ In the following sample, icon classes are mapped with `iconCss` field.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listbox/icons-and-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listbox/icons-and-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listbox/icons-and-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ In the following sample, the items in the cart are displayed using list box temp
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listbox/template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listbox/template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listbox/template-cs1/src/main.ts %}
 {% endhighlight %}

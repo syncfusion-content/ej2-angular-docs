@@ -84,9 +84,7 @@ export class AppComponent implements OnInit {
   }
 }
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pdfviewer/addformfield-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pdfviewer/addformfield-cs1/src/main.ts %}
 {% endhighlight %}
@@ -163,9 +161,7 @@ export class AppComponent implements OnInit {
   }
 }
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pdfviewer/updateformfield-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pdfviewer/updateformfield-cs1/src/main.ts %}
 {% endhighlight %}
@@ -242,9 +238,7 @@ export class AppComponent implements OnInit {
   }
 }
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pdfviewer/deleteformfield-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pdfviewer/deleteformfield-cs1/src/main.ts %}
 {% endhighlight %}

@@ -42,9 +42,7 @@ setSpinner({ template: '<div style="width:100%;height:100%" class="custom-rollin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spinner/set-spinner-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spinner/set-spinner-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spinner/set-spinner-cs1/src/main.ts %}
 {% endhighlight %}

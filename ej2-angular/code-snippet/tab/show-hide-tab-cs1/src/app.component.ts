@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TabModule } from '@syncfusion/ej2-angular-navigations'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +11,12 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { TabComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [
+         FormsModule, TabModule, ButtonModule 
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `
 <div class="control-section e-tab-section">

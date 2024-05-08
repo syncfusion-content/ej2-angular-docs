@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TabModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 import { Component, ViewChild, OnInit, ElementRef } from '@angular/core';
@@ -6,6 +11,12 @@ import { L10n } from '@syncfusion/ej2-base';
 import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+         FormsModule, TabModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `
      <ejs-tab id="element" locale="fr-BE" [showCloseButton]='true'>

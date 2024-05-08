@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor'
+
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -7,6 +11,13 @@ import { ToolbarService, DocumentEditorContainerComponent } from '@syncfusion/ej
  * Document Editor Component
  */
 @Component({
+imports: [
+        
+        DocumentEditorContainerModule
+    ],
+
+
+standalone: true,
       selector: 'app-container',
       template: `<ejs-documenteditorcontainer #documenteditor_readonly height="600px" style="width:100%;display:block" [enableToolbar]=true (created)="onCreate()" (documentChange)="onDocumentChange()" ></ejs-documenteditorcontainer>`,
       encapsulation: ViewEncapsulation.None,

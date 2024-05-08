@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SidebarModule, TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -5,6 +9,10 @@ import { Component, ViewChild} from '@angular/core';
 import { SidebarComponent, TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [SidebarModule,  TreeViewModule],
+
+
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: `  <div id="wrapper">

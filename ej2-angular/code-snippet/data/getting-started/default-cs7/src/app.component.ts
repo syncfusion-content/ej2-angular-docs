@@ -1,11 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { DataManager, Query, ReturnOption } from '@syncfusion/ej2-data';
+import { CommonModule } from '@angular/common';
 
 const SERVICE_URI = 'https://services.syncfusion.com/angular/production/api/Orders';
 
 @Component({
+
+imports: [CommonModule],
+standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html',
     styles: [`

@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 import { Component, ViewChild, OnInit } from '@angular/core';
@@ -5,6 +9,13 @@ import { TimePickerComponent } from '@syncfusion/ej2-angular-calendars';
 import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
 
 @Component({
+imports: [
+        
+        TimePickerModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<form id="form-element" class="form-vertical">
     <ejs-timepicker #ejTime id='timepicker' placeholder='Select a time' width="275px"(blur)="onFocusOut()" (change)= "onChange($event)"></ejs-timepicker>

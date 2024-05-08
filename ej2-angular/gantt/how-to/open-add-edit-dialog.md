@@ -16,9 +16,7 @@ In the Gantt component, add and edit dialogs can be opened dynamically by using 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/how-to/dynamicopen-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/how-to/dynamicopen-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/how-to/dynamicopen-cs1/src/main.ts %}
 {% endhighlight %}

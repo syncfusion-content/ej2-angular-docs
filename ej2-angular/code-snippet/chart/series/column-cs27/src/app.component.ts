@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService, 
+    ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService,LegendService, TooltipService
+ } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -7,6 +14,13 @@ import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 import { IScrollEventArgs } from '@syncfusion/ej2-charts';
 
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ CategoryService, DateTimeService, ScrollBarService, LineSeriesService, ColumnSeriesService, 
+        ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService, LegendService, TooltipService,],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-chart style='display:block;' #chart [legendSettings]='legend' id='container' [primaryXAxis]='primaryXAxis'
             [tooltip]='tooltip' [height]='height' [width]='width' (scrollEnd)='scrollEnd($event)'

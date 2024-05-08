@@ -105,9 +105,7 @@ You can start adding Essential JS 2 barcode-generator component to the applicati
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/getting-started/initialize-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/getting-started/initialize-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/getting-started/initialize-cs1/src/main.ts %}
 {% endhighlight %}
@@ -123,9 +121,7 @@ You can add the QR code in our Angular Barcode Generator component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/getting-started/qrcode-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/getting-started/qrcode-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/getting-started/qrcode-cs1/src/main.ts %}
 {% endhighlight %}
@@ -141,9 +137,7 @@ You can add the datamatrix code in our Angular Barcode Generator component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/barcode/getting-started/datamatrix-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/barcode/getting-started/datamatrix-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/barcode/getting-started/datamatrix-cs1/src/main.ts %}
 {% endhighlight %}

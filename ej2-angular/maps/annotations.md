@@ -22,9 +22,7 @@ By using the [`content`](https://ej2.syncfusion.com/angular/documentation/api/ma
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ The stack order of an annotation element can be changed using the [`zIndex`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs2/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ Annotations can be placed anywhere in the Maps by specifying pixel or percentage
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs3/src/main.ts %}
 {% endhighlight %}
@@ -78,9 +72,7 @@ Annotations can be aligned using the [`horizontalAlignment`](https://ej2.syncfus
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs4/src/main.ts %}
 {% endhighlight %}
@@ -96,9 +88,7 @@ Multiple annotations can be added to the Maps using the [`annotations`](https://
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs5/src/main.ts %}
 {% endhighlight %}

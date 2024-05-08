@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { DetailRowService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -5,6 +10,13 @@ import { data } from './datasource';
 import { RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule        
+    ],
+
+providers: [DetailRowService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' [enableHover]='false' [allowSelection]='false' [height]='315'
                (rowDataBound)='rowDataBound($event)'>

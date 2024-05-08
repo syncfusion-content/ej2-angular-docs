@@ -123,9 +123,7 @@ By default pie series will be rendered on assigning JSON data to the series by u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/getting-started/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/getting-started/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/getting-started/src/main.ts %}
 {% endhighlight %}

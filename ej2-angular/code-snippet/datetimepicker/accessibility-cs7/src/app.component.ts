@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { DateTimePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 
@@ -5,6 +10,14 @@ import { Component, ViewEncapsulation  } from '@angular/core';
 import { DateTimePickerComponent } from '@syncfusion/ej2-angular-calendars';
 
 @Component({
+imports: [
+        
+        DateTimePickerModule,
+        FormsModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-datetimepicker [strictMode]='true' [value]='date' [min]='minDate' [max]='maxDate'></ejs-datetimepicker>`
 })

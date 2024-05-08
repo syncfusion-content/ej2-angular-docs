@@ -1,6 +1,13 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+
 import { Component } from "@angular/core";
 import { RibbonButtonSettingsModel, BackStageMenuModel, BackstageItemModel } from '@syncfusion/ej2-angular-ribbon';
 @Component({
+imports: [ RibbonModule ],
+
+providers: [ RibbonBackstageService ],
+standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

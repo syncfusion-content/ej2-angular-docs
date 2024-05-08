@@ -25,9 +25,7 @@ To enable single selection in the list box, [`mode`](https://ej2.syncfusion.com/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listbox/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listbox/getting-started-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listbox/getting-started-cs13/src/main.ts %}
 {% endhighlight %}
@@ -47,9 +45,7 @@ To select multiple items, use the SHIFT, CTRL, and arrow keys to make selections
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listbox/getting-started-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listbox/getting-started-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listbox/getting-started-cs14/src/main.ts %}
 {% endhighlight %}
@@ -69,9 +65,7 @@ To select all the items in the list box, [`showSelectAll`](https://ej2.syncfusio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listbox/getting-started-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listbox/getting-started-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listbox/getting-started-cs15/src/main.ts %}
 {% endhighlight %}

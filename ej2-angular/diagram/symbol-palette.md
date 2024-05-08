@@ -42,9 +42,7 @@ The following code example illustrates how to define a palette and how its added
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/symbolpalette/palettes-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/symbolpalette/palettes-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/symbolpalette/palettes-cs1/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +72,7 @@ The following code example illustrates how to customize palette headers.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/symbolpalette/paletteheader-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/symbolpalette/paletteheader-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/symbolpalette/paletteheader-cs1/src/main.ts %}
 {% endhighlight %}
@@ -94,9 +90,7 @@ In the following code example, the basic shapes palette is restricted from getti
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/symbolpalette/restrictexpand-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/symbolpalette/restrictexpand-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/symbolpalette/restrictexpand-cs1/src/main.ts %}
 {% endhighlight %}
@@ -112,9 +106,7 @@ The [`fit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolI
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/symbolpalette/fit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/symbolpalette/fit-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/symbolpalette/fit-cs1/src/main.ts %}
 {% endhighlight %}
@@ -136,9 +128,7 @@ The size of the individual symbol can be customized. The [`symbolWidth`](https:/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/symbolpalette/size-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/symbolpalette/size-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/symbolpalette/size-cs1/src/main.ts %}
 {% endhighlight %}
@@ -159,9 +149,7 @@ The following code example illustrates how to change the preview size of a palet
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/symbolpalette/fit-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/symbolpalette/fit-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/symbolpalette/fit-cs2/src/main.ts %}
 {% endhighlight %}
@@ -177,9 +165,7 @@ While adding more number of symbols such as nodes and connectors to the palette,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/symbolpalette/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/symbolpalette/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/symbolpalette/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -199,9 +185,7 @@ The following code is an example to set a symbol description for symbols in the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/symbolpalette/symboldesc-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/symbolpalette/symboldesc-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/symbolpalette/symboldesc-cs1/src/main.ts %}
 {% endhighlight %}
@@ -231,9 +215,7 @@ Here, the code provided below demonstrates how to define tooltip content to symb
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/symbolpalette/symboldesc-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/symbolpalette/symboldesc-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/symbolpalette/symboldesc-cs1/src/main.ts %}
 {% endhighlight %}

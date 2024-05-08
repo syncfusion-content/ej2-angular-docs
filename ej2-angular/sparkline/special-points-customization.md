@@ -20,9 +20,7 @@ You can customize the points by initializing the point colors. The customization
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs33/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs33/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs33/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ Tie point color is used to configure the win-loss series type sparkline's y-valu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs34/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs34/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs34/src/main.ts %}
 {% endhighlight %}

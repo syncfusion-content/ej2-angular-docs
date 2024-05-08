@@ -18,9 +18,7 @@ The ContextMenu items can be customized using the [`beforeItemRender`](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/context-menu/template-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/context-menu/template-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/context-menu/template-cs4/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ The Multiple level nesting supports in ContextMenu. It can be achieved by mappin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/context-menu/template-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/context-menu/template-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/context-menu/template-cs5/src/main.ts %}
 {% endhighlight %}

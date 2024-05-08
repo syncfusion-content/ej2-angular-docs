@@ -1,9 +1,14 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+
 
  
 import { Component, ViewChild } from '@angular/core';
 import { Droppable } from  '@syncfusion/ej2-base';
 
 @Component({
+
+standalone: true,
     selector: 'app-root',
     template:` <div id='container'>
     <div #droppable class='droppable'><p class='drop'>Drop target </p></div>

@@ -1,3 +1,9 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService,EditService } from '@syncfusion/ej2-angular-treegrid'
+import { CheckBoxModule} from '@syncfusion/ej2-angular-buttons'
+
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import {
   EditSettingsModel,
@@ -8,6 +14,16 @@ import { sampleData } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        CheckBoxModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,EditService],
+standalone: true,
   selector: 'app-container',
   encapsulation: ViewEncapsulation.None,
   template: `<div style="padding:2px 0px 0px 0px">

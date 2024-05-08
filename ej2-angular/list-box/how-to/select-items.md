@@ -16,9 +16,7 @@ In the following example, `Bugatti Chiron` is selected using [`selectItems`](htt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listbox/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listbox/getting-started-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listbox/getting-started-cs12/src/main.ts %}
 {% endhighlight %}

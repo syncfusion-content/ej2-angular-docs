@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -6,6 +11,12 @@ import { Button, ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { ToolbarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [
+         ToolbarModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     templateUrl: './app.component.html',
     encapsulation: ViewEncapsulation.None

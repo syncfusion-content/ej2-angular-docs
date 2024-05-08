@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { Chart3DAllModule } from '@syncfusion/ej2-angular-charts'
+
 
 
 
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+imports: [
+         Chart3DAllModule
+    ],
+
+providers: [Chart3DAllModule]
+standalone: true,
     selector: 'app-container',
     template: `<ejs-chart3d style='display:block;' align='center' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
     rotation=7 tilt=10 depth=100 [enableRotation]='enableRotation' [title]='title'>

@@ -20,9 +20,7 @@ The Stepper component triggers the [created](https://ej2.syncfusion.com/angular/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/events/created/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/events/created/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/events/created/src/main.ts %}
 {% endhighlight %}
@@ -41,9 +39,7 @@ The Stepper component triggers the [stepChanged](https://ej2.syncfusion.com/angu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/events/stepChanged/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/events/stepChanged/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/events/stepChanged/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ The Stepper component triggers the [stepChanging](https://ej2.syncfusion.com/ang
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/events/stepChanging/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/events/stepChanging/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/events/stepChanging/src/main.ts %}
 {% endhighlight %}
@@ -83,9 +77,7 @@ The Stepper component triggers the [stepClick](https://ej2.syncfusion.com/angula
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/events/stepClick/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/events/stepClick/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/events/stepClick/src/main.ts %}
 {% endhighlight %}
@@ -104,9 +96,7 @@ The Stepper component triggers the [beforeStepRender](https://ej2.syncfusion.com
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/events/beforeStepRender/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/events/beforeStepRender/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/events/beforeStepRender/src/main.ts %}
 {% endhighlight %}

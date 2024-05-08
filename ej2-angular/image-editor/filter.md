@@ -27,9 +27,7 @@ In the following example, you can using the [`applyImageFilter`](https://ej2.syn
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/image-editor/default-cs23/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/image-editor/default-cs23/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/image-editor/default-cs23/src/main.ts %}
 {% endhighlight %}

@@ -24,9 +24,7 @@ When a resource has multiple tasks scheduled on the same date, then the tasks wi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/resourceview/multitaskbar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/resourceview/multitaskbar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/resourceview/multitaskbar-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ It's important to note that when `allowTaskbarOverlap` is disabled, task depende
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/resourceview/multitaskbar-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/resourceview/multitaskbar-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/resourceview/multitaskbar-cs3/src/main.ts %}
 {% endhighlight %}

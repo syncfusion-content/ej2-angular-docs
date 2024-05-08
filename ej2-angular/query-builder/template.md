@@ -24,9 +24,7 @@ In the following sample dropdown, splitbutton and button are used as the custom 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/header-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/header-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/header-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -75,9 +73,7 @@ In the following sample, dropdown is used as the custom component in the Payment
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/filtering-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/filtering-cs11/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +89,7 @@ The value template for a particular column can be specified using the content of
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -115,9 +109,7 @@ In the following sample, dropdown and slider are used as the custom component an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/rule-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/rule-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/rule-template-cs1/src/main.ts %}
 {% endhighlight %}

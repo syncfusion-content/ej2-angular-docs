@@ -1,8 +1,28 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService,EditService,ToolbarService } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule,
+        DropDownListAllModule,
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                EditService,
+                ToolbarService],
+standalone: true,
     selector: 'app-container',
     template: `<button ej-button id='collapseAll' (click)='collapseAll()'>Collapse All</button>
   <button ej-button id='expandAll' (click)='expandAll()'>Expand All</button>

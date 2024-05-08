@@ -22,9 +22,7 @@ The `getMinMaxLatitudeLongitude` method returns the minimum and maximum latitude
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/methods-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/methods-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/methods-cs1/src/main.ts %}
 {% endhighlight %}

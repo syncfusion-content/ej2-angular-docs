@@ -1,3 +1,11 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { FormsModule } from '@angular/forms'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -15,6 +23,18 @@ import { NumericTextBox } from '@syncfusion/ej2-angular-inputs';
 
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule,
+        DropDownListAllModule,
+        FormsModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height='275' [treeColumnIndex]='1'  [allowFiltering]='true' idMapping='taskID' parentIdMapping= "parentID" >
                     <e-columns>

@@ -18,9 +18,7 @@ To render a stacked bar series, use series [`type`](https://ej2.syncfusion.com/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/stack-bar/stack-bar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/stack-bar/stack-bar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/stack-bar/stack-bar-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ To group the stacked bar, the [`stackingGroup`](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/stack-bar/stack-bar-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/stack-bar/stack-bar-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/stack-bar/stack-bar-cs2/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ To render a cylindrical stacked bar chart, set the [`columnFacet`](https://ej2.s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/stack-bar/stack-bar-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/stack-bar/stack-bar-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/stack-bar/stack-bar-cs3/src/main.ts %}
 {% endhighlight %}
@@ -75,9 +69,7 @@ The following properties can be used to customize the `stacked bar` series.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/stack-bar/stack-bar-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/stack-bar/stack-bar-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/stack-bar/stack-bar-cs4/src/main.ts %}
 {% endhighlight %}

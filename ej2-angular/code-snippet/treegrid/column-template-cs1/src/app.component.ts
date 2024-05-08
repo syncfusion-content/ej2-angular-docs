@@ -1,3 +1,12 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService,EditService,ToolbarService,
+    ResizeService, ExcelExportService, PdfExportService, ContextMenuService 
+} from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -8,6 +17,22 @@ import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule,
+        DropDownListAllModule,
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                EditService,
+                SortService, ResizeService, 
+                ExcelExportService, 
+                PdfExportService, ContextMenuService,
+                ToolbarService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' #treegrid height='220' [allowPaging]='true' pageSettings='pager'
     [contextMenuItems]='contextMenuItems' [treeColumnIndex]='1'

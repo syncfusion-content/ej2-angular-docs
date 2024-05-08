@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SpreadsheetModule } from '@syncfusion/ej2-angular-spreadsheet'
+
 import { Component, ViewChild } from '@angular/core';
 import { SpreadsheetComponent, BeforeSaveEventArgs, SaveCompleteEventArgs } from '@syncfusion/ej2-angular-spreadsheet';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        SpreadsheetModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<div class="control-section">
     <button class="e-btn custom-btn" (click)='import()'>Import Base64</button>

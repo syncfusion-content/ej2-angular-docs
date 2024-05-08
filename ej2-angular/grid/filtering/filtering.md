@@ -22,9 +22,7 @@ Here is an example that demonstrates the default filtering feature of the grid:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-cs1/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ Here is an example of how to configure the initial filter using the `predicate` 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-cs2/src/main.ts %}
 {% endhighlight %}
@@ -67,9 +63,7 @@ The following example demonstrates, how to perform an initial filter with multip
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-cs3/src/main.ts %}
 {% endhighlight %}
@@ -89,9 +83,7 @@ The following example demonstrates how to perform an initial filter with multipl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-cs12/src/main.ts %}
 {% endhighlight %}
@@ -177,9 +169,7 @@ Consider the following sample where the `ignoreAccent` property is set to true i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-cs4/src/main.ts %}
 {% endhighlight %}
@@ -197,9 +187,7 @@ Below is an example code demonstrating how to enable or disable case sensitivity
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-cs5/src/main.ts %}
 {% endhighlight %}
@@ -222,9 +210,7 @@ Here's an example where the menu filter is enabled by default for all columns, b
 {% highlight ts tabtitle="app.component.html" %}
 {% include code-snippet/grid/filter-cs6/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-cs6/src/main.ts %}
 {% endhighlight %}
@@ -245,9 +231,7 @@ Here's an example that demonstrates how to change the default filter operator co
 {% highlight ts tabtitle="app.component.html" %}
 {% include code-snippet/grid/filter-cs7/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-cs7/src/main.ts %}
 {% endhighlight %}
@@ -267,9 +251,7 @@ The following example demostrates, how to programmatically filter the Grid using
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-cs8/src/main.ts %}
 {% endhighlight %}
@@ -296,9 +278,7 @@ Here's an example of how to get the filtering data in a Syncfusion grid using th
 {% highlight ts tabtitle="app.template.html" %}
 {% include code-snippet/grid/filter-cs9/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-cs9/src/main.ts %}
 {% endhighlight %}
@@ -336,9 +316,7 @@ Here's an example of how to clear the filtering in a Syncfusion grid using the `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-cs10/src/main.ts %}
 {% endhighlight %}
@@ -358,9 +336,7 @@ In the given example, the filtering is prevented for **ShipCity** column during 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filter-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filter-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filter-cs11/src/main.ts %}
 {% endhighlight %}

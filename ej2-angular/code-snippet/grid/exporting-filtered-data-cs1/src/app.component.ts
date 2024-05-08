@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, FreezeService, SelectionService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import {
@@ -7,6 +11,11 @@ import {
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions'
                [allowPaging]='true' [allowPdfExport]='true' 
@@ -19,7 +28,7 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
                   <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
               </e-columns>
               </ejs-grid>`,
-    providers: [ToolbarService, PageService, FilterService, ExcelExportService]
+    providers: [ToolbarService, PageService, FilterService, ExcelExportService,FreezeService, SelectionService]
 })
 export class AppComponent implements OnInit {
 

@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component } from '@angular/core';
@@ -5,7 +9,7 @@ import { loadCldr, L10n } from '@syncfusion/ej2-base';
 import { Calendar, Islamic } from '@syncfusion/ej2-angular-calendars';
 import {
   ScheduleComponent, DayService, WeekService, MonthService, MonthAgendaService,
-  AgendaService, TimelineViewsService, TimelineMonthService, EventSettingsModel
+  AgendaService, TimelineViewsService, TimelineMonthService, EventSettingsModel, WorkWeekService
 } from '@syncfusion/ej2-angular-schedule';
 import { scheduleData } from './datasource';
 import * as localeObj from "./locale.json";
@@ -21,6 +25,11 @@ L10n.load(localeObj);
 loadCldr(numberingSystems, ca_gregorian, numbers, timeZoneNames, ca_islamic);
 
 @Component({
+imports: [
+        
+        ScheduleModule
+    ],
+standalone: true,
   selector: 'app-root',
   providers: [DayService, WeekService, MonthService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService],
   // specifies the template string for the Schedule component

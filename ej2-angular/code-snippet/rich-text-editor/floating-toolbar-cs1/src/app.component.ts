@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -5,6 +10,14 @@ import { Component, ViewChild } from '@angular/core';
 import { ToolbarService, HtmlEditorService, QuickToolbarService, RichTextEditorComponent} from '@syncfusion/ej2-angular-richtexteditor';
 import { CheckBoxComponent } from '@syncfusion/ej2-angular-buttons';
 @Component({
+imports: [
+        
+        RichTextEditorAllModule,
+        CheckBoxModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-richtexteditor #typeRTE id='defaultRTE' [toolbarSettings]='tools'>
     <ng-template #valueTemplate>

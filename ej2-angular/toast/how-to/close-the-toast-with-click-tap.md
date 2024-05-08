@@ -16,9 +16,7 @@ In default, toast gets expired based on timeOut value. You can customize toast h
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toast/toast-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toast/toast-cs9/src/main.ts %}
 {% endhighlight %}

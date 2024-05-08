@@ -24,9 +24,7 @@ The following code example shows the sparkline with overall border.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ The following code example shows the sparkline with overall padding is set to 20
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs2/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +62,7 @@ The background color of the sparkline area can be customized using the `containe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs3/src/main.ts %}
 {% endhighlight %}
@@ -88,9 +82,7 @@ The following code example shows the color for datalabel and track line is set t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs4/src/main.ts %}
 {% endhighlight %}

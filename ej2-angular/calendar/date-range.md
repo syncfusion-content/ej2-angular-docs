@@ -18,9 +18,7 @@ The below example allows you to select a date within a range from 7th to 27th da
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/calendar/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/getting-started-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/calendar/getting-started-cs6/src/main.ts %}
 {% endhighlight %}

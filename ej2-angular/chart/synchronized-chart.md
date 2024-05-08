@@ -23,9 +23,7 @@ In the `showTooltip` method, specify the following parameters programmatically t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/synchronized-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/synchronized-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/synchronized-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ In the `showCrosshair` method, specify the following parameters programmatically
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/synchronized-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/synchronized-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/synchronized-cs2/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ You can maintain constant zoom levels across multiple charts using the [`zoomCom
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/synchronized-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/synchronized-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/synchronized-cs3/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ You can select the data across multiple charts using the [`selectionComplete`](h
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/synchronized-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/synchronized-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/synchronized-cs4/src/main.ts %}
 {% endhighlight %}

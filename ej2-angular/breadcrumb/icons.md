@@ -24,9 +24,7 @@ To place the font icon on the breadcrumb item, set the `iconCss` property to `e-
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/breadcrumb/icons-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/icons-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/breadcrumb/icons-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ In the Breadcrumb component, images can be added for the items using the `iconCs
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/breadcrumb/icons-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/icons-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/breadcrumb/icons-cs2/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ In the Breadcrumb component, SVG image can be added for the items using the `ico
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/breadcrumb/icons-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/icons-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/breadcrumb/icons-cs3/src/main.ts %}
 {% endhighlight %}
@@ -78,9 +72,7 @@ By default, the icon is positioned to the left side of the item in the Breadcrum
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/breadcrumb/icons-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/icons-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/breadcrumb/icons-cs4/src/main.ts %}
 {% endhighlight %}
@@ -96,9 +88,7 @@ To display only icons for the items, add icons using the `iconCss` property. In 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/breadcrumb/icons-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/icons-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/breadcrumb/icons-cs5/src/main.ts %}
 {% endhighlight %}
@@ -114,9 +104,7 @@ To show icon only for the first item in the Breadcrumb component, add icons to t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/breadcrumb/icons-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/breadcrumb/icons-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/breadcrumb/icons-cs6/src/main.ts %}
 {% endhighlight %}

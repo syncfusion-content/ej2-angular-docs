@@ -18,9 +18,7 @@ To use mask support, inject the MaskedDateTime module in the DatePicker.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/mask-module-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/mask-module-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/mask-module-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ The following example demonstrates default and custom format of DatePicker compo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/mask-module-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/mask-module-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/mask-module-cs2/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +69,7 @@ The following example demonstrates default and customized mask placeholder value
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/mask-module-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/mask-module-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/mask-module-cs3/src/main.ts %}
 {% endhighlight %}

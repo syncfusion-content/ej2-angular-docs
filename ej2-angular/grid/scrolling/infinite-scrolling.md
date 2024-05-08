@@ -25,9 +25,7 @@ The following an example that demonstrates how to enable infinite scroll in the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs2/src/main.ts %}
 {% endhighlight %}
@@ -47,9 +45,7 @@ The following an example of how you can use the `initialBlocks` property to set 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs3/src/main.ts %}
 {% endhighlight %}
@@ -71,9 +67,7 @@ The following example that demonstrates how to enable/disable cache mode in infi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging1-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging1-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging1-cs4/src/main.ts %}
 {% endhighlight %}

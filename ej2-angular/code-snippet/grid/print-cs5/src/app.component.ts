@@ -1,9 +1,26 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
+import { MultiSelectModule, CheckBoxSelectionService, DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, employeeData } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns'
 import { DetailRowService, GridModel, ToolbarService, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        DropDownListAllModule
+    ],
+
+providers: [PageService,
+        SortService,
+        FilterService,
+        GroupService],
+standalone: true,
     selector: 'app-root',
     template: `<div class='container'><h4>Select Mode</h4>
     <ejs-dropdownlist style="margin: 14px; width:250px; "  #sample [dataSource]='dropdownData' (change)='onModeChange($event)' popupHeight='220px'></ejs-dropdownlist></div>

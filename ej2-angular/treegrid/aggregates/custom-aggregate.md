@@ -16,9 +16,7 @@ To calculate the aggregate value with your own aggregate functions, use the cust
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/aggregate-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/aggregate-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/aggregate-cs2/src/main.ts %}
 {% endhighlight %}

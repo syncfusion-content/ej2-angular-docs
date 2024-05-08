@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SwitchModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        
+        SwitchModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <div id='container'>

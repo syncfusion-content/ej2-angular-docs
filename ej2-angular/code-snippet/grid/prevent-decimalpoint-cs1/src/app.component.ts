@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -5,6 +11,15 @@ import { data } from './datasource';
 import { EditSettingsModel, ToolbarItems, IEditCell } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        DatePickerAllModule,
+        FormsModule
+    ],
+
+providers: [EditService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='265px'>
                 <e-columns>

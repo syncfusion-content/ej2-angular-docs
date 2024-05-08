@@ -18,9 +18,7 @@ The default color of series or points can be customized by providing a custom co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/appearance/appearance-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ The color for the points can be bound from the [`dataSource`](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/appearance/appearance-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs2/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ The data label and fill color of each data point can be customized using the [`p
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/appearance/appearance-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs3/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ The background color and border of the 3D chart can be customized using the [`ba
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/appearance/appearance-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs4/src/main.ts %}
 {% endhighlight %}
@@ -100,9 +92,7 @@ The 3D chart's margin can be set from its container using the [`margin`](https:/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/appearance/appearance-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs5/src/main.ts %}
 {% endhighlight %}
@@ -118,9 +108,7 @@ To customize the animation for a particular series, the [`animation`](https://ej
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/appearance/appearance-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs6/src/main.ts %}
 {% endhighlight %}
@@ -136,9 +124,7 @@ The 3D chart can be rotated by using the [`enableRotation`](https://ej2.syncfusi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/appearance/appearance-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs11/src/main.ts %}
 {% endhighlight %}
@@ -154,9 +140,7 @@ The 3D chart can be given a title by using [`title`](https://ej2.syncfusion.com/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/appearance/appearance-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs7/src/main.ts %}
 {% endhighlight %}
@@ -172,9 +156,7 @@ By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/appearance/appearance-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs8/src/main.ts %}
 {% endhighlight %}
@@ -188,9 +170,7 @@ The custom option is used to position the title anywhere in the 3D chart using [
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/appearance/appearance-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs9/src/main.ts %}
 {% endhighlight %}
@@ -206,9 +186,7 @@ The title can be aligned to the near, far, or center of the 3D chart by using th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/appearance/appearance-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs10/src/main.ts %}
 {% endhighlight %}
@@ -233,9 +211,7 @@ The [`titleStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/appearance/appearance-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/appearance/appearance-cs12/src/main.ts %}
 {% endhighlight %}

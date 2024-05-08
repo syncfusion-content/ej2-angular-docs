@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -5,6 +10,14 @@ import { data } from './datasource';
 import { GridComponent, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule
+    ],
+
+providers: [ToolbarService, PageService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid id='Grid' #grid [dataSource]='data' [toolbar]='toolbar' (created)="created()" height='200px'>
                 <e-columns>

@@ -23,9 +23,7 @@ To bind local JSON data to the Scheduler, you can simply assign a JavaScript obj
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/data-bind-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/data-bind-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/data-bind-cs1/src/main.ts %}
 {% endhighlight %}
@@ -49,9 +47,7 @@ Any kind of remote data services can be bound to the Scheduler. To do so, create
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/data-bind-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/data-bind-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/data-bind-cs2/src/main.ts %}
 {% endhighlight %}
@@ -69,9 +65,7 @@ This method greatly improves the component's performance by reducing the data th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/data-bind-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/data-bind-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/data-bind-cs7/src/main.ts %}
 {% endhighlight %}
@@ -91,9 +85,7 @@ It is possible to create your own custom adaptor by extending the built-in avail
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/data-bind-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/data-bind-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/data-bind-cs3/src/main.ts %}
 {% endhighlight %}
@@ -148,9 +140,7 @@ To send an additional custom parameter to the server-side post, you need to make
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/data-bind-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/data-bind-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/data-bind-cs4/src/main.ts %}
 {% endhighlight %}
@@ -170,9 +160,7 @@ The argument passed to the [`actionFailure`](https://ej2.syncfusion.com/angular/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/data-bind-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/data-bind-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/data-bind-cs5/src/main.ts %}
 {% endhighlight %}
@@ -322,9 +310,7 @@ We have assigned our custom created Google Calendar url to the DataManager and a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/data-bind-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/data-bind-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/data-bind-cs6/src/main.ts %}
 {% endhighlight %}

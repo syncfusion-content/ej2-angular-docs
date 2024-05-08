@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, GroupService, PageService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { L10n, loadCldr, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
@@ -13,6 +17,13 @@ import deDELocalization from './locale.json'
 L10n.load(deDELocalization);
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [GroupService, PageService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [allowPaging]="true" [allowGrouping]="true" height='315px'>
                 <e-columns>

@@ -20,9 +20,7 @@ By default, Splitter will render in horizontal orientation. Splitter container w
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/splitter/horizontal-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/horizontal-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/splitter/horizontal-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ By setting [orientation](https://ej2.syncfusion.com/angular/documentation/api/sp
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/splitter/vertical-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/vertical-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/splitter/vertical-cs1/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +52,7 @@ You can render the multiple panes with both `Horizontal` and `Vertical` orientat
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/splitter/multiple-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/multiple-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/splitter/multiple-cs1/src/main.ts %}
 {% endhighlight %}
@@ -77,9 +71,7 @@ By default, pane separator will be render with `1px` width/height. You can custo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/splitter/separator-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/separator-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/splitter/separator-cs1/src/main.ts %}
 {% endhighlight %}
@@ -97,9 +89,7 @@ Splitter provides support to render the nested pane to achieve the complex layou
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/splitter/nested-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/nested-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/splitter/nested-cs1/src/main.ts %}
 {% endhighlight %}
@@ -119,9 +109,7 @@ You can add the panes dynamically in the splitter by passing [pane properties](h
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/splitter/add-pane-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/add-pane-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/splitter/add-pane-cs1/src/main.ts %}
 {% endhighlight %}
@@ -137,9 +125,7 @@ You can remove the split panes dynamically by passing the pane index to [removeP
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/splitter/remove-pane-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/splitter/remove-pane-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/splitter/remove-pane-cs1/src/main.ts %}
 {% endhighlight %}

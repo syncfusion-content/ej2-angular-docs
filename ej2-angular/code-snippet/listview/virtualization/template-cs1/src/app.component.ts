@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ListViewModule, VirtualizationService } from '@syncfusion/ej2-angular-lists'
+
 
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        
+        ListViewModule
+    ],
+
+providers: [VirtualizationService],
+standalone: true,
     selector: 'my-app',
     template: `<ejs-listview id='ui-list' [dataSource]='listData' [enableVirtualization]='true' [height]=500 headerTitle='Contacts' [showHeader]='true'>
     <ng-template #template let-data="">

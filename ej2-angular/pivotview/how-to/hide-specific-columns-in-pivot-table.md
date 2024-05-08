@@ -18,9 +18,7 @@ N> The **dot(.)** character in **FY 2016.Units Sold** is used by default to iden
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs312/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs312/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs312/src/main.ts %}
 {% endhighlight %}

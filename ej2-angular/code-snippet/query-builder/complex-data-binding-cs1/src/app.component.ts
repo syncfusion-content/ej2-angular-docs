@@ -1,3 +1,10 @@
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { QueryBuilderModule } from '@syncfusion/ej2-angular-querybuilder'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { CheckBoxModule, RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DropDownButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+
 
 
 
@@ -10,6 +17,17 @@ import { MultiSelect, CheckBoxSelection } from '@syncfusion/ej2-dropdowns';
 import { RadioButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+imports: [
+    
+	  QueryBuilderModule,
+    CheckBoxModule,
+    DropDownListModule,
+    DropDownButtonModule,
+    RadioButtonModule
+  ],
+
+
+standalone: true,
   selector: 'app-root',
   templateUrl: `template-driven.html`
 })

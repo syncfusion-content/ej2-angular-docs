@@ -28,9 +28,7 @@ The following code example shows the wrap text functionality in spreadsheet.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/wrap-text-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/wrap-text-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/wrap-text-cs1/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +68,7 @@ The following code example shows the merge cells operation in spreadsheet.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/merge-cells-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/merge-cells-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/merge-cells-cs1/src/main.ts %}
 {% endhighlight %}
@@ -133,9 +129,7 @@ You can clear the highlighted invalid data by using the following ways,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/data-validation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/data-validation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/data-validation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -219,9 +213,7 @@ In the following sample, you can enable/disable the fill option on the button cl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/autofill-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/autofill-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/autofill-cs1/src/main.ts %}
 {% endhighlight %}
@@ -264,9 +256,7 @@ Clear the cell contents and formats in the Spreadsheet document by using the [cl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/clear-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/clear-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/clear-cs1/src/main.ts %}
 {% endhighlight %}

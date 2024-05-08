@@ -1,9 +1,16 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { DataManager, Query, JsonAdaptor } from '@syncfusion/ej2-data';
+import { CommonModule } from '@angular/common';
 @Component({
+
+imports: [CommonModule],
+standalone: true,
     selector: 'app-root',
     templateUrl: './app.template.html',
     styles: [`

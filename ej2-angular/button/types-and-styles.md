@@ -29,9 +29,7 @@ The Essential JS 2 Button has the following predefined styles that can be define
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button/button-style-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button/button-style-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button/button-style-cs1/src/main.ts %}
 {% endhighlight %}
@@ -67,9 +65,7 @@ The basic Button types are explained below.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button/basic-types-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button/basic-types-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button/basic-types-cs1/src/main.ts %}
 {% endhighlight %}
@@ -96,9 +92,7 @@ To create a round Button, set the [`cssClass`](https://ej2.syncfusion.com/angula
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button/button-type-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button/button-type-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button/button-type-cs1/src/main.ts %}
 {% endhighlight %}
@@ -115,9 +109,7 @@ property to `true`. In the following code snippet, the toggle Button text change
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button/toggle-button-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button/toggle-button-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button/toggle-button-cs1/src/main.ts %}
 {% endhighlight %}
@@ -136,9 +128,7 @@ by using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button/icon-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button/icon-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button/icon-cs1/src/main.ts %}
 {% endhighlight %}
@@ -156,9 +146,7 @@ In the following example, SVG image is added using the iconCss class `e-search-i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button/svg-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button/svg-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button/svg-cs1/src/main.ts %}
 {% endhighlight %}
@@ -176,9 +164,7 @@ The two types of Button sizes are default and small. To change the size of the d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/button/size-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/button/size-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/button/size-cs1/src/main.ts %}
 {% endhighlight %}

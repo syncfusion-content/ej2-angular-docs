@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -5,6 +10,12 @@ import { Component, Inject, ViewChild } from '@angular/core';
 import { DragAndDropEventArgs} from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [
+        FormsModule, TreeViewModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template:  `<div id='treeparent'><ejs-treeview id="icons" [fields]='field' sortOder='Ascending' allowDragAndDrop='allowDragAndDrop' (nodeDragStop)='dragStop($event)' (nodeDragging)='nodeDrag($event)'></ejs-treeview></div>`
 })

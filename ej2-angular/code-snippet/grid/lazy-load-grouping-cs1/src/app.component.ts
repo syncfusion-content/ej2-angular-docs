@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, LazyLoadGroupService, GroupService, InfiniteScrollService  } from '@syncfusion/ej2-angular-grids'
+
 
 
 
@@ -6,6 +11,15 @@ import { data } from './datasource';
 import { GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [PageService,
+                LazyLoadGroupService,
+                GroupService, InfiniteScrollService ],
+standalone: true,
     selector: 'app-root',
     template: ` 
     <ejs-grid [dataSource]='data' [allowPaging]='true' [allowGrouping]='true' [groupSettings]='groupSettings'>

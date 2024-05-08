@@ -17,9 +17,7 @@ To render a line series, use series [`type`](https://ej2.syncfusion.com/angular/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/line-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/line-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/line-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ Here, the individual colors to the data can be mapped by using `pointColorMappin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/line-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/line-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/line-cs7/src/main.ts %}
 {% endhighlight %}
@@ -59,9 +55,7 @@ The following properties can be used to customize the `line` series.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/line-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/line-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/line-cs8/src/main.ts %}
 {% endhighlight %}

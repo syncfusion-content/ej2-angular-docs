@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 
@@ -5,6 +10,14 @@ import { Component, ViewChild } from '@angular/core';
 import { TimePickerComponent } from '@syncfusion/ej2-angular-calendars';
 
 @Component({
+imports: [
+        
+        TimePickerModule,
+        FormsModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./style.css'],
     template: `

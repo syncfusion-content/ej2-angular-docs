@@ -22,9 +22,7 @@ To use sort, inject the [`SortService`](https://ej2.syncfusion.com/angular/docum
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/sorting/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/sorting/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/sorting/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ The Gantt component can be rendered with sorted columns initially, and this can 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/sorting/sort-initial-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/sorting/sort-initial-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/sorting/sort-initial-cs1/src/main.ts %}
 {% endhighlight %}
@@ -61,9 +57,7 @@ Columns in the Gantt component can be sorted dynamically using the [`sortColumn`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/sorting/sort-dynamic-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/sorting/sort-dynamic-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/sorting/sort-dynamic-cs1/src/main.ts %}
 {% endhighlight %}
@@ -79,9 +73,7 @@ In the Gantt component, you can clear all the sorted columns and return to previ
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/sorting/clearsort-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/sorting/clearsort-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/sorting/clearsort-cs1/src/main.ts %}
 {% endhighlight %}
@@ -97,9 +89,7 @@ During the sort action, the Gantt component triggers two events. The [`actionBeg
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/sorting/events-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/sorting/events-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/sorting/events-cs1/src/main.ts %}
 {% endhighlight %}
@@ -119,9 +109,7 @@ The following code snippets explains how to achieve this.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/sorting/sort-custom-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/sorting/sort-custom-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/sorting/sort-custom-cs1/src/main.ts %}
 {% endhighlight %}

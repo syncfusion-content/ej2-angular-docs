@@ -26,9 +26,7 @@ Here's an example of how to enable single row selection using properties:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-row-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-row-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-row-cs1/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ Here's an example of how to enable multiple rows selection using properties:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-row-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-row-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-row-cs2/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ In the following example, it demonstrates how to select a row at initial renderi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cs7/src/main.ts %}
 {% endhighlight %}
@@ -92,9 +86,7 @@ The following example demonstrates how to select rows in any page based on index
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-index-page-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-index-page-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-index-page-cs14/src/main.ts %}
 {% endhighlight %}
@@ -114,9 +106,7 @@ The following example demonstrates how to enable multiple row selection with a s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cs9/src/main.ts %}
 {% endhighlight %}
@@ -140,9 +130,7 @@ The following example demonstrates how to select a single row within the Grid by
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-row-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-row-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-row-cs7/src/main.ts %}
 {% endhighlight %}
@@ -162,9 +150,7 @@ The following example, demonstrates how to select multiple rows in the Grid by c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-row-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-row-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-row-cs6/src/main.ts %}
 {% endhighlight %}
@@ -184,9 +170,7 @@ The following example, demonstrates how to select a range of rows within the Gri
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-row-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-row-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-row-cs5/src/main.ts %}
 {% endhighlight %}
@@ -204,9 +188,7 @@ In the below demo, we have selected the grid rows only when **EmployeeID** colum
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/custom-column-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/custom-column-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/custom-column-cs5/src/main.ts %}
 {% endhighlight %}
@@ -226,9 +208,7 @@ To achieve this, you can leverage the [getSelectedRowIndexes](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cs8/src/main.ts %}
 {% endhighlight %}
@@ -250,9 +230,7 @@ The following example demonstrates how to retrieve selected records from various
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-cs12/src/main.ts %}
 {% endhighlight %}
@@ -274,9 +252,7 @@ Here's an example that displays the selected row count using the `getSelectedRec
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-record-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-record-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-record-cs1/src/main.ts %}
 {% endhighlight %}
@@ -296,9 +272,7 @@ The following example demonstrates how to clear row selection by calling the [cl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-row-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-row-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/selection-row-cs4/src/main.ts %}
 {% endhighlight %}
@@ -324,9 +298,7 @@ In the following example, row selection is canceled when the value of **Customer
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/selection-row-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/selection-row-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %} 
 {% include code-snippet/grid/selection-row-cs3/src/main.ts %}
 {% endhighlight %}

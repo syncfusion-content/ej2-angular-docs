@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService, SelectionService, RowDDService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, ViewChild,OnInit } from '@angular/core';
 import { GridComponent, RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
 import { orderDetails, columnDataType } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [PageService, SelectionService, RowDDService],
+standalone: true,
   selector: 'app-root',
   template: `<div style="text-align:center">
              <p style="color:red;" id="message">{{ message }}</p>

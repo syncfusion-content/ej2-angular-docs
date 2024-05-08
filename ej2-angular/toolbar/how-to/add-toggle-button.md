@@ -27,9 +27,7 @@ Toolbar supports to add a toggle Button by using the [`template`](https://ej2.sy
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/toggle-button-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/toggle-button-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toolbar/toggle-button-cs1/src/main.ts %}
 {% endhighlight %}

@@ -71,9 +71,7 @@ export interface DateFormat extends Window {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-cs2/src/main.ts %}
 {% endhighlight %}
@@ -95,9 +93,7 @@ For example, to render grid inside the detail row, place an HTML div element as 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/detail-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/detail-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/detail-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -203,9 +199,7 @@ export interface DateFormat extends Window {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/detail-template-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/detail-template-cs2/src/main.ts %}
 {% endhighlight %}
@@ -278,9 +272,7 @@ export interface DateFormat extends Window {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/detail-template-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/detail-template-cs3/src/main.ts %}
 {% endhighlight %}

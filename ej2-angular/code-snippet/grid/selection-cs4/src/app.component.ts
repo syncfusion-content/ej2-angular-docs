@@ -1,9 +1,23 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
+import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { CheckboxSelectionType, GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
+imports: [
+        
+        GridModule,
+        DropDownListModule
+    ],
+
+providers: [EditService, ToolbarService, PageService, FilterService],
+standalone: true,
   selector: 'app-root',
   template: `
               <div style="display: flex ">

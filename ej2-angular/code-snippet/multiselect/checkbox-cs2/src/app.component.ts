@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
 import { Component, OnInit } from '@angular/core';
 import { CheckBoxSelectionService } from '@syncfusion/ej2-angular-dropdowns';
 @Component({
+imports: [
+        FormsModule, MultiSelectModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template string for the MultiSelect component
     template: `<ejs-multiselect id='multiselectelement' [dataSource]='sportsData' [fields]='fields' [mode]='mode' [selectAllText]='selectAllText' showSelectAll=true [placeholder]='placeholder'></ejs-multiselect>`,

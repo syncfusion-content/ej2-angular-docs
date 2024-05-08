@@ -18,9 +18,7 @@ To use the column chooser, you need to inject the **ColumnChooserService** in th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-chooser-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-chooser-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-chooser-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ In this example, the `column.showInColumnChooser` property is set to false for t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-chooser-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-chooser-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-chooser-cs2/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ Here's an example of how to open the column chooser in the tree grid using an ex
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-chooser-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-chooser-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-chooser-cs3/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +87,7 @@ To customize the column chooser dialog size, you can use the following CSS style
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-chooser-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-chooser-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-chooser-cs4/src/main.ts %}
 {% endhighlight %}
@@ -115,9 +107,7 @@ Here's an example of how to change the default search operator of the column cho
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-chooser-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-chooser-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-chooser-cs5/src/main.ts %}
 {% endhighlight %}
@@ -135,9 +125,7 @@ Here is an example that demonstrates the usage of the `ignoreAccent` property to
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-chooser-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-chooser-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-chooser-cs6/src/main.ts %}
 {% endhighlight %}

@@ -16,9 +16,7 @@ You can show the custom string in the empty value cells using the `emptyCellsTex
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs162/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs162/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs162/src/main.ts %}
 {% endhighlight %}

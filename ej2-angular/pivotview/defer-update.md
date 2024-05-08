@@ -25,9 +25,7 @@ To enable deferred updates in the pivot table, set the property [`allowDeferLayo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs39/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs39/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs39/src/main.ts %}
 {% endhighlight %}
@@ -47,9 +45,7 @@ To enable deferred updates in the static fieldlist, set the property [`allowDefe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs40/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs40/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs40/src/main.ts %}
 {% endhighlight %}

@@ -22,9 +22,7 @@ By default, tooltip is not visible. The tooltip can be enabled by setting the [`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/tooltip/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/tooltip/tooltip-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/tooltip/tooltip-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ By default, tooltip track the mouse movement, but the tooltip can be set in fixe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/tooltip/tooltip-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/tooltip/tooltip-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/tooltip/tooltip-cs2/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ By default, tooltip shows information of x and y value in points. In addition to
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/tooltip/tooltip-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/tooltip/tooltip-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/tooltip/tooltip-cs3/src/main.ts %}
 {% endhighlight %}
@@ -80,9 +74,7 @@ Any HTML elements can be displayed in the tooltip by using the [`template`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/tooltip/tooltip-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/tooltip/tooltip-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/tooltip/tooltip-cs4/src/main.ts %}
 {% endhighlight %}
@@ -98,9 +90,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart3d/threeD
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/tooltip/tooltip-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/tooltip/tooltip-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/tooltip/tooltip-cs5/src/main.ts %}
 {% endhighlight %}

@@ -38,9 +38,7 @@ The appointments can be created dynamically by using `addEvent` method. Either y
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs27/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs27/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs27/src/main.ts %}
 {% endhighlight %}
@@ -89,9 +87,7 @@ Additionally, the regex condition has been added to the Location field, so that 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs28/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs28/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs28/src/main.ts %}
 {% endhighlight %}
@@ -105,9 +101,7 @@ You can also dynamically prevent the creation of appointments on Scheduler. For 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs29/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs29/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs29/src/main.ts %}
 {% endhighlight %}
@@ -138,9 +132,7 @@ The appointments can be edited and updated manually using the `saveEvent` method
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs30/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs30/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs30/src/main.ts %}
 {% endhighlight %}
@@ -158,9 +150,7 @@ In case of modifying the single occurrence, it is also necessary to update the `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs31/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs31/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs31/src/main.ts %}
 {% endhighlight %}
@@ -395,9 +385,7 @@ You can also dynamically prevent the editing of appointments on Scheduler. For e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs32/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs32/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs32/src/main.ts %}
 {% endhighlight %}
@@ -430,9 +418,7 @@ The appointments can be removed manually using the `deleteEvent` method. The fol
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs33/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs33/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs33/src/main.ts %}
 {% endhighlight %}
@@ -446,9 +432,7 @@ The appointments can be removed manually using the `deleteEvent` method. The fol
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs34/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs34/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs34/src/main.ts %}
 {% endhighlight %}
@@ -610,9 +594,7 @@ When you drag and drop a normal event on the Scheduler, the event editing action
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs35/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs35/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs35/src/main.ts %}
 {% endhighlight %}
@@ -630,9 +612,7 @@ When you resize a normal event on the Scheduler, the event editing action takes 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/default-cs36/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/default-cs36/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/default-cs36/src/main.ts %}
 {% endhighlight %}

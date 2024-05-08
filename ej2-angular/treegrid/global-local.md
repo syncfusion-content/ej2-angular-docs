@@ -116,9 +116,7 @@ The following example demonstrates the TreeGrid in `Deutsch` culture.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/internationalization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/internationalization-cs1/src/main.ts %}
 {% endhighlight %}
@@ -134,9 +132,7 @@ The [`Internationalization`](../common/internationalization/) library is used to
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/internationalization-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/internationalization-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/internationalization-cs2/src/main.ts %}
 {% endhighlight %}
@@ -155,9 +151,7 @@ RTL provides an option to switch the text direction and layout of the TreeGrid c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/internationalization-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/internationalization-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/internationalization-cs3/src/main.ts %}
 {% endhighlight %}

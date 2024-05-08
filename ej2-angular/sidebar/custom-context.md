@@ -20,9 +20,7 @@ By default, it initialize target to the body element. [`target`](https://ej2.syn
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sidebar/custom-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sidebar/custom-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sidebar/custom-cs1/src/main.ts %}
 {% endhighlight %}

@@ -20,9 +20,7 @@ By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/legend-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/legend-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/legend-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/legend-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/legend-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/legend-cs2/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ The legend can be align as `Center`, `Far` or `Near` to the Stock Chart using [`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/legend-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/legend-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/legend-cs3/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +70,7 @@ To change the legend icon shape, [`legendShape`](https://ej2.syncfusion.com/angu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/legend-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/legend-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/legend-cs4/src/main.ts %}
 {% endhighlight %}
@@ -94,9 +86,7 @@ By default, legend takes 20% - 25% of the Stock Chart's height horizontally, whe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/legend-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/legend-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/legend-cs5/src/main.ts %}
 {% endhighlight %}
@@ -112,9 +102,7 @@ The size of the legend items can customized by using the [`shapeHeight`](https:/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/legend-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/legend-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/legend-cs6/src/main.ts %}
 {% endhighlight %}
@@ -130,9 +118,7 @@ By default, series name will be displayed as legend. To skip the legend for a pa
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/legend-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/legend-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/legend-cs7/src/main.ts %}
 {% endhighlight %}
@@ -148,9 +134,7 @@ The title for legend can be set using [`title`](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/legend-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/legend-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/legend-cs8/src/main.ts %}
 {% endhighlight %}

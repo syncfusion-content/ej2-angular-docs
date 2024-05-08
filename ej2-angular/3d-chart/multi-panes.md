@@ -23,9 +23,7 @@ To split the chart area vertically into number of rows, use [`rows`](https://ej2
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/multi-pane/multi-pane-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/multi-pane/multi-pane-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/multi-pane/multi-pane-cs1/src/main.ts %}
 {% endhighlight %}
@@ -39,9 +37,7 @@ For spanning the vertical axis along multiple rows, use [`span`](https://ej2.sy
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/multi-pane/multi-pane-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/multi-pane/multi-pane-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/multi-pane/multi-pane-cs2/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ To split the chart area horizontally into number of columns, use [`columns`](htt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/multi-pane/multi-pane-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/multi-pane/multi-pane-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/multi-pane/multi-pane-cs3/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +70,7 @@ For spanning the vertical axis along multiple column, you can use [`span`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/multi-pane/multi-pane-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/multi-pane/multi-pane-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/multi-pane/multi-pane-cs4/src/main.ts %}
 {% endhighlight %}

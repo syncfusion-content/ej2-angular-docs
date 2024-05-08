@@ -23,9 +23,7 @@ The following properties can be used to customize [`majorTicklines`](https://ej2
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs1/src/main.ts %}
 {% endhighlight %}
@@ -41,9 +39,7 @@ The major and the minor ticks can be placed **inside** or **outside** the ranges
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs2/src/main.ts %}
 {% endhighlight %}
@@ -59,9 +55,7 @@ Axis numeric labels can be formatted by using the [`labelFormat`](https://ej2.sy
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs3/src/main.ts %}
 {% endhighlight %}
@@ -137,9 +131,7 @@ To separate the groups of thousands, set the [`enableGroupSeparator`](https://ej
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs4/src/main.ts %}
 {% endhighlight %}
@@ -155,9 +147,7 @@ Using the [`labelFormat`](https://ej2.syncfusion.com/angular/documentation/api/b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs5/src/main.ts %}
 {% endhighlight %}
@@ -173,9 +163,7 @@ Label can be placed **Inside** or **Outside** of the ranges using the [`labelPos
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs6/src/main.ts %}
 {% endhighlight %}
@@ -191,9 +179,7 @@ To place an axis opposite to its original position, set the [`opposedPosition`](
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs7/src/main.ts %}
 {% endhighlight %}
@@ -209,9 +195,7 @@ The Bullet Chart supports X-axis label by specifying the property from the data 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs8/src/main.ts %}
 {% endhighlight %}
@@ -227,9 +211,7 @@ The label color, opacity, font size, font family, font weight, and font style ca
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs9/src/main.ts %}
 {% endhighlight %}

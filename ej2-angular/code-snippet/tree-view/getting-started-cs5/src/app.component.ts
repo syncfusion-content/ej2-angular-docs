@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 import { Component } from '@angular/core';
 import { Query, DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data'
 
 @Component({
+imports: [
+        FormsModule,TreeViewModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     // specifies the template string for the TreeView component with remote dataSource
     template: `<div id='treeparent'><ejs-treeview id='treeelement' [fields]='field'></ejs-treeview></div>`

@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -6,6 +10,13 @@ import { ToolbarItems, PageSettingsModel, GridComponent } from '@syncfusion/ej2-
 
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [ToolbarService, PageService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' (beforePrint)='beforePrint()'
                 [allowPaging]='true' [pageSettings]='pageOptions' [toolbar]='toolbarOptions'>

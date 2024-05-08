@@ -1,12 +1,30 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component, ViewChild } from '@angular/core';
-import { EventSettingsModel, ScheduleComponent, DayService, WeekService, WorkWeekService, MonthService } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
 import { scheduleData } from './datasource';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        ButtonModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService],
+standalone: true,
   selector: 'app-root',
-  providers: [DayService, WeekService, WorkWeekService, MonthService],
   // specifies the template string for the Schedule component
   template: `<button ejs-button cssClass='e-info' (click)='editor()'> Click to open Editor </button>
   <button ejs-button cssClass='e-info' (click)='eventEditor()'> Click to open Event Editor </button>

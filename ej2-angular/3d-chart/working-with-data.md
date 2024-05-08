@@ -19,9 +19,7 @@ A simple JSON data can be bound to the 3D chart using [`dataSource`](https://ej2
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/working-with-data/working-with-data-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/working-with-data/working-with-data-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/working-with-data/working-with-data-cs1/src/main.ts %}
 {% endhighlight %}
@@ -37,9 +35,7 @@ The remote data can be bound to the 3D chart using the [`DataManager`](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/working-with-data/working-with-data-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/working-with-data/working-with-data-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/working-with-data/working-with-data-cs2/src/main.ts %}
 {% endhighlight %}
@@ -55,9 +51,7 @@ The remote data can be bound to the 3D chart using the [`DataManager`](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/working-with-data/working-with-data-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/working-with-data/working-with-data-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/working-with-data/working-with-data-cs3/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +67,7 @@ The data points that uses the `null` or `undefined` as value are considered as e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/working-with-data/working-with-data-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/working-with-data/working-with-data-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/working-with-data/working-with-data-cs4/src/main.ts %}
 {% endhighlight %}
@@ -91,9 +83,7 @@ The specific color for empty point can be set by the [`fill`](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/working-with-data/working-with-data-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/working-with-data/working-with-data-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/working-with-data/working-with-data-cs5/src/main.ts %}
 {% endhighlight %}

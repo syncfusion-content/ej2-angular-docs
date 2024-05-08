@@ -18,9 +18,7 @@ In the following example, the **Display Settings** in parent items and **Medium 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/context-menu/template-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/context-menu/template-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/context-menu/template-cs3/src/main.ts %}
 {% endhighlight %}

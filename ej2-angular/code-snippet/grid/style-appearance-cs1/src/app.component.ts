@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -5,6 +9,11 @@ import { PageService, GridComponent, SelectionSettingsModel } from '@syncfusion/
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+standalone: true,
   selector: 'app-root',
   template: `<ejs-grid [dataSource]='data' [allowPaging]='true' [pageSettings]='pageSettings' [selectionSettings]='selectionOptions' height='268px'>
             <e-columns>

@@ -237,9 +237,7 @@ The accessibility compliance of the pivot table component is shown in the follow
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/accessibility/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/accessibility/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/accessibility/src/main.ts %}
 {% endhighlight %}

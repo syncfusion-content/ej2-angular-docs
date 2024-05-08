@@ -24,9 +24,7 @@ By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs38/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs38/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs38/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ Custom position helps you to position the legend anywhere in the chart using x, 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs39/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs39/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs39/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ You can reverse the order of the legend items by using the [`reverse`](https://e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs40/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs40/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs40/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ You can align the legend as `center`, `far` or `near` to the chart using [`align
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs41/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs41/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs41/src/main.ts %}
 {% endhighlight %}
@@ -101,9 +93,7 @@ in the [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart/se
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs42/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs42/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs42/src/main.ts %}
 {% endhighlight %}
@@ -119,9 +109,7 @@ By default, legend takes 20% - 25% of the chart's height horizontally, when it i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs43/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs43/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs43/src/main.ts %}
 {% endhighlight %}
@@ -137,9 +125,7 @@ You can customize the size of the legend items by using the [`shapeHeight`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs44/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs44/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs44/src/main.ts %}
 {% endhighlight %}
@@ -155,9 +141,7 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/legend-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/legend-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/legend-cs1/src/main.ts %}
 {% endhighlight %}
@@ -173,9 +157,7 @@ When the legend text exceeds the container, the text can be wrapped by using [`t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs45/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs45/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs45/src/main.ts %}
 {% endhighlight %}
@@ -191,9 +173,7 @@ You can set the legend label color based on series color by using chart's [loade
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs46/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs46/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs46/src/main.ts %}
 {% endhighlight %}
@@ -209,9 +189,7 @@ By default, legend click enables you to collapse the series visibility.  On oth
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs47/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs47/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs47/src/main.ts %}
 {% endhighlight %}
@@ -227,9 +205,7 @@ You can customize the animation while clicking legend by setting enableAnimation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs48/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs48/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs48/src/main.ts %}
 {% endhighlight %}
@@ -245,9 +221,7 @@ By default, series name will be displayed as legend. To skip the legend for a pa
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs49/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs49/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs49/src/main.ts %}
 {% endhighlight %}
@@ -263,9 +237,7 @@ You can set title for legend using `title` property in `legendSettings`. You can
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs50/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs50/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs50/src/main.ts %}
 {% endhighlight %}
@@ -281,9 +253,7 @@ By default, the page number will be enabled while legend paging. Now, you can di
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs51/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs51/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs51/src/main.ts %}
 {% endhighlight %}
@@ -299,9 +269,7 @@ The [`itemPadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/l
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/axis/category-cs52/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/axis/category-cs52/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/axis/category-cs52/src/main.ts %}
 {% endhighlight %}

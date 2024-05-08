@@ -24,9 +24,7 @@ The following example illustrates how to add requestNavigate event for DocumentE
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/link-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/link-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/link-cs2/src/main.ts %}
 {% endhighlight %}
@@ -102,9 +100,7 @@ Refer to the following example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/link-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/link-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/link-cs3/src/main.ts %}
 {% endhighlight %}
@@ -140,9 +136,7 @@ Document Editor provides dialog support to insert or edit a hyperlink. Refer to 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/link-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/link-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/link-cs4/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
+import { TabAllModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -10,6 +15,14 @@ import { isNullOrUndefined } from "@syncfusion/ej2-base";
  */
 
 @Component({
+imports: [
+        FormsModule,
+        TabAllModule,
+        
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     templateUrl: './app.component.html',
     encapsulation: ViewEncapsulation.None

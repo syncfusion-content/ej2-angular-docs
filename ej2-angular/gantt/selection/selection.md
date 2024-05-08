@@ -31,9 +31,7 @@ The Gantt component supports three types of selection modes that can be set by u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/selection/bothcellrow-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/bothcellrow-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/selection/bothcellrow-cs1/src/main.ts %}
 {% endhighlight %}
@@ -49,9 +47,7 @@ The toggle selection allows you to select and deselect a specific row or cell. T
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/selection/toggleselection-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/toggleselection-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/selection/toggleselection-cs1/src/main.ts %}
 {% endhighlight %}
@@ -67,9 +63,7 @@ You can clear the selected cells and selected rows by using a method called [`cl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/selection/clearselection-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/clearselection-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/selection/clearselection-cs1/src/main.ts %}
 {% endhighlight %}
@@ -85,9 +79,7 @@ You can get the selected row indexes by using the [`getSelectedRowIndexes`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/selection/rowIndex-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/rowIndex-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/selection/rowIndex-cs1/src/main.ts %}
 {% endhighlight %}
@@ -105,9 +97,7 @@ In the following code, the rows which contains `TaskId` value as 3 and 4 are sel
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/selection/multipleSelection-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/selection/multipleSelection-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/selection/multipleSelection-cs1/src/main.ts %}
 {% endhighlight %}

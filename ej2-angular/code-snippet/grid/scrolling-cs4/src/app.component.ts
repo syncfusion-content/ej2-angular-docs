@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -5,6 +9,13 @@ import { data } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' height='315' width='100%' (dataBound)='dataBound()'>
                 <e-columns>

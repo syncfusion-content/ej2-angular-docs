@@ -198,9 +198,7 @@ Run the `ng serve` command in command window, it will serve your application and
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toast/toast-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toast/toast-cs7/src/main.ts %}
 {% endhighlight %}

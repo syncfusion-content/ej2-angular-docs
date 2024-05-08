@@ -1,6 +1,16 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { CircularGaugeModule, AnnotationsService, GradientService } from '@syncfusion/ej2-angular-circulargauge'
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+imports: [
+         CircularGaugeModule
+    ],
+
+providers: [GradientService, AnnotationsService],
+standalone: true,
   selector: 'app-container',
   template: `<ejs-circulargauge style='display:block;' animationDuration=2000 >
     <e-axes>

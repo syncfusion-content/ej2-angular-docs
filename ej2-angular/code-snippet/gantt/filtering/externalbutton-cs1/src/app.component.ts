@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { ToolbarService,FilterService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -8,6 +13,12 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { ToolbarItem, SearchSettingsModel } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [ToolbarService,FilterService],
+standalone: true,
     selector: 'app-root',
     template:
        `<button ejs-button id='Searchdata' (click)='search()'>Search</button>

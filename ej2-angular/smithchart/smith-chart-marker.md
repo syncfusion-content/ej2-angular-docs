@@ -22,9 +22,7 @@ Default visibility of marker is false. You can enable the marker by setting prop
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs21/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs21/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs21/src/main.ts %}
 {% endhighlight %}
@@ -47,9 +45,7 @@ Using marker settings in series, you can customize the marker for each series di
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs22/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs22/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs22/src/main.ts %}
 {% endhighlight %}
@@ -65,9 +61,7 @@ By default, datalabel is disabled. You can enable the datalabel by setting prope
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs23/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs23/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs23/src/main.ts %}
 {% endhighlight %}
@@ -88,9 +82,7 @@ Using datalabel settings in marker, you can customize the datalabel for each ser
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs24/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/smithchart/getting-started/smithchart-cs24/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/smithchart/getting-started/smithchart-cs24/src/main.ts %}
 {% endhighlight %}

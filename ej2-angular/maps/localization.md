@@ -48,9 +48,7 @@ To load translation object in the application, use `load` function of **L10n** c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs62/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs62/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs62/src/main.ts %}
 {% endhighlight %}

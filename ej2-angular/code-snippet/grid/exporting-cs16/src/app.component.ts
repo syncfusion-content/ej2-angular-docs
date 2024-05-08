@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ToolbarService, PdfExportService } from '@syncfusion/ej2-angular-grids'
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 
@@ -8,6 +13,14 @@ import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+imports: [
+        
+        GridModule,
+        TextBoxModule
+    ],
+
+providers: [PdfExportService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `
     <div>

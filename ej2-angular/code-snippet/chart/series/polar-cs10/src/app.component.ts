@@ -1,9 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, SplineSeriesService} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { polarCategory } from './datasource';
 
 @Component({
+imports: [
+         ChartModule, ButtonModule, ChartAllModule
+    ],
+
+providers: [ AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, SplineSeriesService],
+standalone: true,
     selector: 'app-container',
     template: ` <ejs-chart id='chartcontainer' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
             [title]='title' >

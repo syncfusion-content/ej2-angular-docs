@@ -29,9 +29,7 @@ The Angular Floating Action Button supports the following predefined styles that
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/floating-action-button/styles-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/floating-action-button/styles-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/floating-action-button/styles-cs1/src/main.ts %}
 {% endhighlight %}
@@ -63,9 +61,7 @@ The content will behave the same , when the `enableHtmlSantiizer` is enabled. Si
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/floating-action-button/styles-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/floating-action-button/styles-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/floating-action-button/styles-cs2/src/main.ts %}
 {% endhighlight %}

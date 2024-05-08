@@ -18,9 +18,7 @@ In the following sample, vegetables are grouped according on its category using 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/getting-started-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/getting-started-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/getting-started-cs14/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ Inject the `CheckBoxSelection` module in the MultiSelect to use the checkbox.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multiselect/getting-started-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multiselect/getting-started-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multiselect/getting-started-cs15/src/main.ts %}
 {% endhighlight %}

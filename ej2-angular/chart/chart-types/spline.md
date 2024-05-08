@@ -17,9 +17,7 @@ To render a spline series, use series [`type`](https://ej2.syncfusion.com/angula
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/line-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/line-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/line-cs5/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ The following properties can be used to customize the `spline` series.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/spline-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/spline-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/spline-cs/src/main.ts %}
 {% endhighlight %}

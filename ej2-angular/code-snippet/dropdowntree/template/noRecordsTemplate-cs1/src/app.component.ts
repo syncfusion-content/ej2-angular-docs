@@ -1,9 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { DropDownTreeModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
 import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { DropDownTreeComponent } from '@syncfusion/ej2-angular-dropdowns';
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, ButtonModule, DropDownTreeModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   template: `<ejs-dropdowntree id='dropdownTree' [fields]='fields' [popupHeight]='height' [placeholder]='watermark' [noRecordsTemplate]='noRecordsTemplate'></ejs-dropdowntree>`
 })

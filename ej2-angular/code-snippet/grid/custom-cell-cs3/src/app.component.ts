@@ -1,9 +1,31 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { DetailRowService } from '@syncfusion/ej2-angular-grids'
+import {
+    ButtonModule,
+    CheckBoxModule,
+    RadioButtonModule,
+    SwitchModule,
+  } from '@syncfusion/ej2-angular-buttons'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule,
+        CheckBoxModule,
+        RadioButtonModule,
+        SwitchModule,      
+    ],
+
+providers: [DetailRowService],
+standalone: true,
     selector: 'app-root',
     template: `
     <div>

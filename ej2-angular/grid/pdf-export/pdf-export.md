@@ -22,9 +22,7 @@ The following example demonstrates how to perform a PDF export action in the gri
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs18/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs18/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs18/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ The following example demonstrates how to show and hide the spinner during PDF e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs19/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs19/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs19/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +66,7 @@ The following example demonstrates how to render custom data source during PDF e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs20/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs20/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs20/src/main.ts %}
 {% endhighlight %}
@@ -168,9 +162,7 @@ interface itemType {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs22/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs22/src/main.ts %}
 {% endhighlight %}
@@ -190,9 +182,7 @@ The following example demonstrates how to perform export with cell and row spann
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs24/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs24/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs24/src/main.ts %}
 {% endhighlight %}
@@ -214,9 +204,7 @@ The following example demonstrates how to export the grid data with custom date 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs23/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs23/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs23/src/main.ts %}
 {% endhighlight %}
@@ -238,9 +226,7 @@ The following example demonstrates how to export multiple grids to the same page
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs29/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs29/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs29/src/main.ts %}
 {% endhighlight %}
@@ -266,9 +252,7 @@ The following example demonstrates how to export multiple grids to a PDF file wh
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs7/src/main.ts %}
 {% endhighlight %}
@@ -300,9 +284,7 @@ The following example demonstrates how to export hierarchical grid to PDF docume
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs8/src/main.ts %}
 {% endhighlight %}
@@ -322,9 +304,7 @@ The following example demonstrates how to perform export without header using `p
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/exporting-cs25/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/exporting-cs25/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/exporting-cs25/src/main.ts %}
 {% endhighlight %}

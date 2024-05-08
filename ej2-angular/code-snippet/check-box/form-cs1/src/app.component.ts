@@ -1,9 +1,22 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { CheckBoxModule, ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        
+        CheckBoxModule,
+        ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     //Name and Value attribute in form submit.
     template: `<div class="e-section-control">

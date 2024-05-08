@@ -163,9 +163,7 @@ Initialize the Rich Text Editor on div element and set the enable field [`iframe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-iframe-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-iframe-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-iframe-cs1/src/main.ts %}
 {% endhighlight %}
@@ -207,9 +205,7 @@ Output will appear as follows.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-value-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-value-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-value-cs1/src/main.ts %}
 {% endhighlight %}
@@ -225,9 +221,7 @@ Configure the toolbar with custom tools using items field of toolbarSettings pro
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-toolbar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
@@ -247,9 +241,7 @@ Specifies the items to be rendered in the quick toolbar based on the target elem
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs2/src/main.ts %}
 {% endhighlight %}

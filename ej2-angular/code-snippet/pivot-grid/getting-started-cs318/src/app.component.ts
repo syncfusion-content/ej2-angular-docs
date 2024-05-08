@@ -1,9 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { PivotView, FieldListService, IDataSet, IDataOptions } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
 import { Button } from '@syncfusion/ej2-buttons';
 
 @Component({
+imports: [
+        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     providers: [FieldListService],
     template: `<div class="col-md-2"><button ej-button id='print'>Print</button></div>

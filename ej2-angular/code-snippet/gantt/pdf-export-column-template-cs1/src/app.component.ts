@@ -1,3 +1,12 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import {
+  ToolbarService,
+  PdfExportService,
+  SelectionService,
+} from '@syncfusion/ej2-angular-gantt'
+
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import {
   GanttComponent,
@@ -8,6 +17,10 @@ import { editingResources } from './data';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';
 
 @Component({
+imports: [ GanttModule],
+
+providers: [ToolbarService, PdfExportService, SelectionService],
+standalone: true,
   selector: 'app-root',
   template: `<ejs-gantt #ganttDefault id="ganttDefault" height="430px" [dataSource]="data"  [taskFields]="taskSettings" [toolbar]="toolbar" (pdfQueryCellInfo)="pdfQueryCellInfo($event)"
        (toolbarClick)="toolbarClick($event)" allowPdfExport='true' [allowResizing] = 'true' rowHeight='50' [splitterSettings]="splitterSettings" [resourceFields]="resourceFields" [resources]="resources">

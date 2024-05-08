@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { ToolbarService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -9,6 +14,12 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { projectNewData, data } from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [ToolbarService],
+standalone: true,
     selector: 'app-root',
     template:
        `<button ejs-button id='changeData' (click)='changeData()'>Change Data</button>

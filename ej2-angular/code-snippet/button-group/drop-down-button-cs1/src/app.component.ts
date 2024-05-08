@@ -1,9 +1,23 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { enableRipple } from '@syncfusion/ej2-base'
+import { DropDownButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+
 
 
 import { Component } from '@angular/core';
 import { ItemModel } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
+imports: [
+        
+        DropDownButtonModule,
+        ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <!-- To render ButtonGroup. -->

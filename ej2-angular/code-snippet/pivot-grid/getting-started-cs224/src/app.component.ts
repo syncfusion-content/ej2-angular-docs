@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -6,6 +10,14 @@ import { ChartSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/cha
 import { DropDownList, ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 import { Pivot_Data } from './datasource';
 @Component({
+imports: [
+        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     providers: [PivotChartService],
     template: `<div id="dropdown-control" style="margin-bottom:5px;">

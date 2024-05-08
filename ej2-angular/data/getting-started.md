@@ -190,9 +190,7 @@ export let data: Object[] = [
 </table>
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs6/src/main.ts %}
 {% endhighlight %}
@@ -219,9 +217,7 @@ Now all **DataManager** operations will address the provided service end point.
 </table>
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs7/src/main.ts %}
 {% endhighlight %}
@@ -248,9 +244,7 @@ The filter expression can be built easily using **where** method of **Query** cl
 </table>
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs8/src/main.ts %}
 {% endhighlight %}
@@ -276,9 +270,7 @@ The data can be ordered either in ascending or descending using **sortBy** metho
 </table>
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs9/src/main.ts %}
 {% endhighlight %}
@@ -304,9 +296,7 @@ The **page** method of the Query class is used to get range of data based on the
 </table>
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs10/src/main.ts %}
 {% endhighlight %}
@@ -328,9 +318,7 @@ A DataSource can be created in-line with other Syncfusion component configuratio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/component-local-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/component-local-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/component-local-cs1/src/main.ts %}
 {% endhighlight %}
@@ -346,9 +334,7 @@ To bind remote data to Syncfusion component, you can assign a service data as an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/data/getting-started/component-local-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/component-local-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/component-local-cs2/src/main.ts %}
 {% endhighlight %}

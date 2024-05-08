@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { CategoryService, BoxAndWhiskerSeriesService, DataLabelService} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [CategoryService, BoxAndWhiskerSeriesService, DataLabelService],
+standalone: true,
     selector: 'app-container',
     template: ` <ejs-chart id='chartcontainer' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
             [title]='title' >

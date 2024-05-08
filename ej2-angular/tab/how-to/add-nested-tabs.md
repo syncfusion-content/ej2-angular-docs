@@ -21,9 +21,7 @@ To render the nested Tab, initialize the component using the id of Tab from [`se
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/basic-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tab/basic-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tab/basic-cs6/src/main.ts %}
 {% endhighlight %}

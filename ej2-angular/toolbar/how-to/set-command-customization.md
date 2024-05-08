@@ -20,9 +20,7 @@ Single or multiple CSS classes can be added to the Toolbar commands using the To
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/toolbar-items-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toolbar/toolbar-items-cs2/src/main.ts %}
 {% endhighlight %}

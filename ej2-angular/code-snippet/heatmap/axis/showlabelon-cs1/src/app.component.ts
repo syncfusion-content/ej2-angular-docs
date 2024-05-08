@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { HeatMapModule} from '@syncfusion/ej2-angular-heatmap'
+import { LegendService, TooltipService} from '@syncfusion/ej2-angular-heatmap'
+
 
 
 
@@ -6,6 +11,12 @@ import { ITooltipEventArgs } from '@syncfusion/ej2-angular-heatmap';
 import { Internationalization } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+         HeatMapModule
+    ],
+
+providers: [ LegendService, TooltipService],
+standalone: true,
     selector: 'my-app',
     template:
        `<ejs-heatmap id='container' style="display:block;" [dataSource]='dataSource' [xAxis]='xAxis' [yAxis]='yAxis'

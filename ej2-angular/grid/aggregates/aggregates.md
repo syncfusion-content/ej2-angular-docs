@@ -31,9 +31,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
 {% highlight ts tabtitle="app.template.html" %}
 {% include code-snippet/grid/aggregates-cs1/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/aggregates-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/aggregates-cs1/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +66,7 @@ Here is an example that demonstrates how to use built-in aggregates types in the
 {% highlight ts tabtitle="app.template.html" %}
 {% include code-snippet/grid/aggregates-cs2/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/aggregates-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/aggregates-cs2/src/main.ts %}
 {% endhighlight %}
@@ -95,9 +91,7 @@ Here's an example of how to use multiple aggregates in the Syncfusion Angular Gr
 {% highlight ts tabtitle="app.template.html" %}
 {% include code-snippet/grid/aggregates-cs3/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/aggregates-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/aggregates-cs3/src/main.ts %}
 {% endhighlight %}

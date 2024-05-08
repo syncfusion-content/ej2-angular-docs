@@ -106,9 +106,7 @@ The following sample demonstrate the TimePicker component in `German` culture.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timepicker/internationalization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/internationalization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timepicker/internationalization-cs1/src/main.ts %}
 {% endhighlight %}
@@ -169,9 +167,7 @@ The following example demonstrates TimePicker in `Arabic` culture with right-to-
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timepicker/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/rtl-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timepicker/rtl-cs1/src/main.ts %}
 {% endhighlight %}

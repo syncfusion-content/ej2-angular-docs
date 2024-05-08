@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
+import { DatePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { TabAllModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -15,6 +22,10 @@ enableRipple(true);
  */
 
 @Component({
+imports: [TabAllModule,  FormsModule, DatePickerModule ],
+
+
+standalone: true,
   selector: 'my-app',
   templateUrl: 'app/app.component.html',
   styleUrls: ['app.component.css'],

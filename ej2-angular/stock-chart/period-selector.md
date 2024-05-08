@@ -30,9 +30,7 @@ Periods is an array of objects that allows users to specify the range of [`perio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/period-selector-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/period-selector-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/period-selector-cs1/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ The [`enablePeriodSelector`](https://ej2.syncfusion.com/angular/documentation/ap
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/period-selector-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/period-selector-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/period-selector-cs2/src/main.ts %}
 {% endhighlight %}

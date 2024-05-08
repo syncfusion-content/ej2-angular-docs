@@ -24,9 +24,7 @@ When height and width of the Scheduler are set to `auto`, it will try as hard as
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/dimension-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/dimension-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/dimension-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ The Scheduler height and width will be rendered exactly as per the given pixel v
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/dimension-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/dimension-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/dimension-cs2/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ When height and width of the Scheduler are given as percentage, it will make the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/schedule/dimension-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/schedule/dimension-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/schedule/dimension-cs3/src/main.ts %}
 {% endhighlight %}

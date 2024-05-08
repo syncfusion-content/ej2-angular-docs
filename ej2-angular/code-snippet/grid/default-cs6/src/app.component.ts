@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, SortService, FilterService, GroupService,DetailRowService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -5,6 +11,18 @@ import { data, employeeData } from './datasource';
 import {  GridModel, GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule
+    ],
+
+providers: [PageService,
+        SortService,
+        FilterService,
+        GroupService,
+        DetailRowService],
+standalone: true,
     selector: 'app-root',
     template: `<button ejs-button (click)='expand()'>Expand All</button>
                 <button ejs-button (click)='collapse()'>Collapse All</button>

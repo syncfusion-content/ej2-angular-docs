@@ -27,9 +27,7 @@ The selected files are organized in a list for every file selection until you cl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/uploader-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/uploader-cs1/src/main.ts %}
 {% endhighlight %}
@@ -49,9 +47,7 @@ The following example explains about single file upload settings.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/uploader-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/uploader-cs2/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +70,7 @@ You can cancel the upload process by setting the upload event argument **eventar
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/uploader-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/uploader-cs3/src/main.ts %}
 {% endhighlight %}
@@ -137,6 +131,73 @@ public void Save()
 
 ```
 
+### Server-side configuration for saving and returning responses
+
+The following example demonstrates the server-side action for saving files on the server and returning responses in JSON, String, and File formats.
+
+```c#
+[AcceptVerbs("Post")]
+public IActionResult Save()
+{
+    // for JSON Data
+    try
+     {
+        // Process uploaded data
+        var responseData = new
+        {
+            Success = true,
+            Message = "Files uploaded successfully",
+            // Additional data can be added here
+        };
+
+        return Json(responseData);
+     }
+     catch (Exception e)
+     {
+         var errorResponse = new
+         {
+            Success = false,
+            Message = "File upload failed: " + e.Message
+         };
+
+         return Json(errorResponse);
+     }
+
+    // for String Data
+    try
+    {
+        // Process string data
+        var data = "success";
+        // Return the string data
+        return Content(data);
+    }
+    catch (Exception)
+    {
+        var data = "failed";
+        return Content(data);
+    }
+
+    // for File Data
+    try
+    {
+        // Example: Retrieve file path for stream.txt
+        var filePath = "stream.txt"; // Example file path
+        
+        // Get full file path
+        var fullPath = Path.GetFullPath(filePath);
+
+        // Return the file
+        return PhysicalFile(fullPath, "text/plain");
+    }
+    catch (Exception e)
+    {
+        // Handle file retrieval failure
+        return Content("Failed to retrieve file response: " + e.Message, "text/plain");
+    }
+}
+
+```
+
 ## Remove action
 
 The remove action is optional. Specify the URL to handle remove process from server. The remove handler receives the posted files and handle the remove operation in server.
@@ -153,9 +214,7 @@ In this case, the success or failure events will not be triggered.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/uploader-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/uploader-cs4/src/main.ts %}
 {% endhighlight %}
@@ -213,9 +272,7 @@ You can change those buttons text using the `buttons` property in the Uploader c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/uploader-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/uploader-cs5/src/main.ts %}
 {% endhighlight %}
@@ -231,9 +288,7 @@ By default, the uploader component process multiple files to upload simultaneous
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/sequential-upload-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/sequential-upload-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/sequential-upload-cs1/src/main.ts %}
 {% endhighlight %}
@@ -241,9 +296,9 @@ By default, the uploader component process multiple files to upload simultaneous
   
 {% previewsample "page.domainurl/samples/uploader/sequential-upload-cs1" %}
 
-## Preload files
+## Preloaded files
 
-The uploader component allows you to preload the list of files that are uploaded in the server.
+The uploader component allows you to preloaded the list of files that are uploaded in the server.
 The preloaded files are useful to view and remove the files from server that can be achieved by the `files` property.
 By default, the files are configured with uploaded successfully state on rendering file list.
 The following properties are mandatory to configure the preloaded files:
@@ -256,9 +311,7 @@ The following properties are mandatory to configure the preloaded files:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/uploader-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/uploader-cs6/src/main.ts %}
 {% endhighlight %}

@@ -1,9 +1,25 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 import { Component, ViewChild } from '@angular/core';
 import { inventoryData } from './datasource';
 import { GridComponent, TextWrapSettingsModel, WrapMode } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule,
+        DropDownListAllModule
+    ],
+
+providers: [PageService],
+standalone: true,
   selector: 'app-root',
   template: `<div style="display: flex">
               <label style="padding: 30px 17px 0 0" >Autowrap for header column :</label>

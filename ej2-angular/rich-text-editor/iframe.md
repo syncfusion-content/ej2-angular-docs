@@ -16,9 +16,7 @@ When the [iframeSettings](https://ej2.syncfusion.com/angular/documentation/api/r
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
@@ -34,9 +32,7 @@ The editor allows you to pass an additional attribute to body tag of a < iframe 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ Likewise, add the external script file to the `< iframe >` element using the [`s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs7/src/main.ts %}
 {% endhighlight %}

@@ -31,9 +31,7 @@ The default mode of [`toolbar`](https://ej2.syncfusion.com/angular/documentation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/toolbar/expand-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/toolbar/expand-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/toolbar/expand-cs1/src/main.ts %}
 {% endhighlight %}
@@ -49,9 +47,7 @@ Set the type as `MultiRow` in [`toolbarSettings`](https://ej2.syncfusion.com/ang
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/toolbar/multirow-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/toolbar/multirow-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/toolbar/multirow-cs3/src/main.ts %}
 {% endhighlight %}
@@ -69,9 +65,7 @@ Can Enable or disable the floating toolbar using [`enableFloating`](https://ej2.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/floating-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/floating-toolbar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/floating-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
@@ -184,9 +178,7 @@ In the following sample the Dialog component will be created in Rich Text Editor
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs30/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs30/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs30/src/main.ts %}
 {% endhighlight %}
@@ -215,9 +207,7 @@ The following sample demonstrates the option to insert the image to the Rich Tex
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/quick-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/quick-toolbar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/quick-toolbar-cs1/src/main.ts %}
 {% endhighlight %}

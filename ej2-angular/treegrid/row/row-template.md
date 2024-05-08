@@ -80,9 +80,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-cs8/src/main.ts %}
 {% endhighlight %}
@@ -177,9 +175,7 @@ export interface DateFormat extends Window {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-cs9/src/main.ts %}
 {% endhighlight %}
@@ -250,9 +246,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-cs10/src/main.ts %}
 {% endhighlight %}

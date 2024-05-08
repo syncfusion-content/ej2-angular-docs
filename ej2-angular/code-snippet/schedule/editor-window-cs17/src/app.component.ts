@@ -1,11 +1,29 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component, ViewChild } from '@angular/core';
-import { EventSettingsModel, ScheduleComponent, DayService, WeekService, WorkWeekService, MonthService } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, ScheduleComponent} from '@syncfusion/ej2-angular-schedule';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        TimePickerModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService],
+standalone: true,
     selector: 'app-root',
-    providers: [DayService, WeekService, WorkWeekService, MonthService],
     // specifies the template string for the Schedule component
     template: `<button ejs-button cssClass= 'e-custom-close' (click)='cellClick()'> Show Cell Click Popup </button>
   <button ejs-button cssClass= 'e-custom-close' (click)='eventClick()'> Show Event Click Popup </button>

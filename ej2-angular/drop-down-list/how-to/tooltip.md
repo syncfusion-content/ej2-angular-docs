@@ -16,9 +16,7 @@ You can achieve this behavior by using `ej2-tooltip` component. When the mouse h
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs19/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/getting-started-cs19/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/getting-started-cs19/src/main.ts %}
 {% endhighlight %}

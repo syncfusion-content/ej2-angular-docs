@@ -1,3 +1,9 @@
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule, ModuleWithProviders, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
+import { FormsModule }   from '@angular/forms'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 
@@ -10,6 +16,12 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
  * Default Uploader Default Component
  */
 @Component({
+imports: [
+        UploaderModule, DialogModule, FormsModule, 
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     templateUrl: './formsupport.html',
     styleUrls: ['./formsupport.css']

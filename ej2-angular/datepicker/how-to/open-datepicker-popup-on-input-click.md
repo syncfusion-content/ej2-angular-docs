@@ -18,9 +18,7 @@ The following example demonstrates how to open the DatePicker popup when the inp
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/open-popup-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/open-popup-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/open-popup-cs1/src/main.ts %}
 {% endhighlight %}

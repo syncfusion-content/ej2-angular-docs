@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MapsModule } from '@syncfusion/ej2-angular-maps'
+import { MapsTooltipService, ZoomService } from '@syncfusion/ej2-angular-maps'
+
 
 
 
@@ -18,6 +23,12 @@ L10n.load({
 });
 
 @Component({
+imports: [
+         MapsModule
+    ],
+
+providers: [MapsTooltipService, ZoomService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-maps id='container' [locale]="Locale" [zoomSettings]='zoom'>
     <e-layers>

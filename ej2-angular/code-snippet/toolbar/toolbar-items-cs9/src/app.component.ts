@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
+import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 import { Component, ViewChild } from '@angular/core';
 import { ToolbarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [
+         ToolbarModule, TooltipModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `
         <ejs-toolbar overflowMode = 'Popup' width= 330>

@@ -16,9 +16,7 @@ SortDirection allows you to sort the columns bounded to the Query Builder to vie
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/default-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/default-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/default-cs9/src/main.ts %}
 {% endhighlight %}

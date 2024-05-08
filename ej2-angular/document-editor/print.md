@@ -18,9 +18,7 @@ Refer to the following example for showing a document and print it.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/link-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/link-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/link-cs5/src/main.ts %}
 {% endhighlight %}
@@ -34,9 +32,7 @@ Refer to the following example for creating a document and print it.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/link-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/link-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/link-cs6/src/main.ts %}
 {% endhighlight %}
@@ -121,9 +117,7 @@ The following example shows how to customize layout options only for printing.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/link-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/link-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/link-cs7/src/main.ts %}
 {% endhighlight %}

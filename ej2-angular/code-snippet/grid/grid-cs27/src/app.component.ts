@@ -3,6 +3,9 @@ import { data } from "./datasource";
 import { TooltipComponent, TooltipEventArgs } from "@syncfusion/ej2-angular-popups";
 
 @Component({
+imports: [TooltipAllModule, GridModule,  FormsModule],
+
+standalone: true,
   selector: "app-root",
   template: `
     <div class="control-section" >

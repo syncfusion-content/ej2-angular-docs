@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MenuModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 import { Component } from '@angular/core';
@@ -7,6 +11,10 @@ import { MenuItemModel, MenuEventArgs } from '@syncfusion/ej2-angular-navigation
 enableRipple(true);
 
 @Component({
+imports: [ MenuModule],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
             <ejs-menu #menu [items]='menuItems' (beforeItemRender)='beforeItemRender($event)'></ejs-menu></div>`

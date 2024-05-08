@@ -170,9 +170,7 @@ The below example shows a uploader component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/uploader-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/uploader-cs8/src/main.ts %}
 {% endhighlight %}
@@ -191,9 +189,7 @@ In the following sample, external element is configured as drop target to upload
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/draganddrop-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/draganddrop-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/draganddrop-cs2/src/main.ts %}
 {% endhighlight %}
@@ -210,9 +206,7 @@ Define the properties `saveUrl` and `removeUrl` to handle the save and remove ac
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/uploader-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/uploader-cs9/src/main.ts %}
 {% endhighlight %}
@@ -229,9 +223,7 @@ To handle these events, define the function and assign it to corresponding event
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/uploader-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/uploader-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/uploader-cs10/src/main.ts %}
 {% endhighlight %}

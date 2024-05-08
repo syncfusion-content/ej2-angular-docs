@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Expand or collapse accordion items on checkbox click in Angular Accordion component | Syncfusion
+title: Expand or collapse accordion items on checkbox click in Angular Accordion component|Syncfusion
 description: Learn here all about Expand or collapse accordion items on checkbox click in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Expand or collapse accordion items on checkbox click 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Expand or collapse accordion items on checkbox click in Angular Accordion component
+# Expand or collapse accordion items on checkbox click in Accordion component
 
 By default, accordion items expand or collapse by clicking the accordion item header or clicking expand/collapse icon in accordion header.
 
@@ -21,9 +21,7 @@ You can also expand or collapse the accordion items through external button clic
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/accordion/accordion-checkbox-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/accordion/accordion-checkbox-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/accordion/accordion-checkbox-cs1/src/main.ts %}
 {% endhighlight %}

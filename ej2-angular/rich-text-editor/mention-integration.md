@@ -26,9 +26,7 @@ In the following sample, configured the following properties with popup dimensio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/mention-integration-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/mention-integration-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/mention-integration-cs1/src/main.ts %}
 {% endhighlight %}

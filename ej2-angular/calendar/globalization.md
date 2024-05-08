@@ -111,9 +111,7 @@ The following example demonstrates the Calendar in `German` culture.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/calendar/culture-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/culture-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/calendar/culture-cs1/src/main.ts %}
 {% endhighlight %}
@@ -131,9 +129,7 @@ The following example demonstrates the Calendar in `Arabic` culture with `enable
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/calendar/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/rtl-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/calendar/rtl-cs1/src/main.ts %}
 {% endhighlight %}

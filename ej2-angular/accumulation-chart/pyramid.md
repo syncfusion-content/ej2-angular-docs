@@ -20,9 +20,7 @@ To known about pyramid, you can check on this video:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pyramid-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pyramid-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pyramid-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ The Pyramid chart supports linear and surface modes of rendering. The default ty
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pyramid-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pyramid-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pyramid-cs2/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +52,7 @@ The size of the pyramid chart can be customized by using the  `width` and `heigh
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pyramid-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pyramid-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pyramid-cs3/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +68,7 @@ Pyramid chart provides options to customize the space between the segments by us
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pyramid-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pyramid-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pyramid-cs4/src/main.ts %}
 {% endhighlight %}
@@ -92,9 +84,7 @@ Points can be exploded on mouse click by setting the `explode` property to true.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pyramid-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pyramid-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pyramid-cs5/src/main.ts %}
 {% endhighlight %}
@@ -110,9 +100,7 @@ Individual points can be customized using the `pointRender` event.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/pyramid-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/pyramid-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/pyramid-cs6/src/main.ts %}
 {% endhighlight %}

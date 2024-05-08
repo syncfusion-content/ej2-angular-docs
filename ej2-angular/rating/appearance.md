@@ -20,9 +20,7 @@ You can specify the number of rating items using the [`itemsCount`](https://ej2.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/appearance/items-count-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/items-count-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/appearance/items-count-cs/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ You can disable the rating component by using the [`disabled`](https://ej2.syncf
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/appearance/disabled-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/disabled-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/appearance/disabled-cs/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +52,7 @@ You can use the [`visible`](https://ej2.syncfusion.com/angular/documentation/api
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/appearance/visible-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/visible-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/appearance/visible-cs/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +68,7 @@ You can use the [`readOnly`](https://ej2.syncfusion.com/angular/documentation/ap
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/appearance/readonly-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/readonly-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/appearance/readonly-cs/src/main.ts %}
 {% endhighlight %}
@@ -96,9 +88,7 @@ You can change the rating icon border color in rating component, you can use the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/appearance/border-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/border-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/appearance/border-cs/src/main.ts %}
 {% endhighlight %}
@@ -117,9 +107,7 @@ You can customize the fill colors of rated and un-rated icons in the rating comp
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/appearance/fill-color-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/fill-color-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/appearance/fill-color-cs/src/main.ts %}
 {% endhighlight %}
@@ -140,9 +128,7 @@ You can change the space between the rating items in rating component, by using 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/appearance/spacing-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/spacing-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/appearance/spacing-cs/src/main.ts %}
 {% endhighlight %}
@@ -161,9 +147,7 @@ You can change the rating item icon in rating component, you can use the `cssCla
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/appearance/icon-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/appearance/icon-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/appearance/icon-cs/src/main.ts %}
 {% endhighlight %}

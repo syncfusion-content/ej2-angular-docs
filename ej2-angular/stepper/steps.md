@@ -24,9 +24,7 @@ You can define the CSS class to show the icon for each step using the `iconCss` 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/steps/icon/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/steps/icon/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/steps/icon/src/main.ts %}
 {% endhighlight %}
@@ -50,9 +48,7 @@ You can define text instead of an icon by setting the `text` property and displa
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/steps/text/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/steps/text/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/steps/text/src/main.ts %}
 {% endhighlight %}
@@ -71,9 +67,7 @@ You can show whether the step is optional or not by using `optional` property. B
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/steps/optional/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/steps/optional/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/steps/optional/src/main.ts %}
 {% endhighlight %}
@@ -95,9 +89,7 @@ You can use the `disabled` property to disable a step, preventing user interacti
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/steps/disabled/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/steps/disabled/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/steps/disabled/src/main.ts %}
 {% endhighlight %}
@@ -119,9 +111,7 @@ You can set the active step by specifying its index using the [activeStep](https
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/steps/activeStep/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/steps/activeStep/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/steps/activeStep/src/main.ts %}
 {% endhighlight %}
@@ -143,9 +133,7 @@ Each step's progress state can be specified using the `status` property. The pos
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/steps/status/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/steps/status/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/steps/status/src/main.ts %}
 {% endhighlight %}
@@ -167,9 +155,7 @@ You can use the `cssClass` property to customize the appearance of each step.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stepper/steps/cssClass/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stepper/steps/cssClass/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stepper/steps/cssClass/src/main.ts %}
 {% endhighlight %}

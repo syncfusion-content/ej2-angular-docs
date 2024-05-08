@@ -1,9 +1,29 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule, ChartAllModule, AccumulationChartAllModule } from '@syncfusion/ej2-angular-charts'
+import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
+import { PieSeriesService, AccumulationTooltipService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
+import {
+    LineSeriesService, DateTimeService, DataLabelService, StackingColumnSeriesService, CategoryService,
+    StepAreaSeriesService, SplineSeriesService, ScrollBarService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
+    SelectionService, ScatterSeriesService, ZoomService, ColumnSeriesService, AreaSeriesService, RangeAreaSeriesService
+} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { ITextRenderEventArgs } from '@syncfusion/ej2-angular-charts';
 
 @Component({
+imports: [
+         ChartModule, ChartAllModule, AccumulationChartAllModule, AccumulationChartModule
+    ],
+
+providers: [LineSeriesService, DateTimeService, ColumnSeriesService, DataLabelService, ZoomService, StackingColumnSeriesService, CategoryService,
+        StepAreaSeriesService, SplineSeriesService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
+        PieSeriesService, AccumulationTooltipService, ScrollBarService, AccumulationDataLabelService, SelectionService, ScatterSeriesService,
+        AreaSeriesService, RangeAreaSeriesService ],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' (textRender)='textRender($event)'>
         <e-series-collection>

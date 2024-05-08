@@ -185,9 +185,7 @@ Run the `ng serve` command in command window, it will serve your application and
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/in-place-editor/getting-started-form-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/getting-started-form-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/in-place-editor/getting-started-form-cs1/src/main.ts %}
 {% endhighlight %}
@@ -258,9 +256,7 @@ Once you have configured Textbox, DatePicker and DropDownList you will get follo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/in-place-editor/getting-started-form-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/getting-started-form-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/in-place-editor/getting-started-form-cs2/src/main.ts %}
 {% endhighlight %}
@@ -276,9 +272,7 @@ In In-place Editor, the `value` property supports two-way binding functionality.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/in-place-editor/two-way-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/two-way-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/in-place-editor/two-way-cs1/src/main.ts %}
 {% endhighlight %}
@@ -306,9 +300,7 @@ The edited data is submitted to the server and you can see the new values gettin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/in-place-editor/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/in-place-editor/getting-started-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/in-place-editor/getting-started-cs1/src/main.ts %}
 {% endhighlight %}

@@ -31,9 +31,7 @@ To select a point, set the [`selectionMode`](https://ej2.syncfusion.com/angular/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/selection/selection-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/selection/selection-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/selection/selection-cs1/src/main.ts %}
 {% endhighlight %}
@@ -49,9 +47,7 @@ To select a series, set the [`selectionMode`](https://ej2.syncfusion.com/angular
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/selection/selection-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/selection/selection-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/selection/selection-cs2/src/main.ts %}
 {% endhighlight %}
@@ -67,9 +63,7 @@ To select the points that corresponds to the same index in all the series, set t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/selection/selection-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/selection/selection-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/selection/selection-cs3/src/main.ts %}
 {% endhighlight %}
@@ -85,9 +79,7 @@ To select multiple points or series, enable the [`isMultiSelect`](https://ej2.sy
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/selection/selection-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/selection/selection-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/selection/selection-cs4/src/main.ts %}
 {% endhighlight %}
@@ -103,9 +95,7 @@ In a 3D chart, selecting a point or series during initial loading can only be do
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/selection/selection-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/selection/selection-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/selection/selection-cs5/src/main.ts %}
 {% endhighlight %}
@@ -121,9 +111,7 @@ To select a point or series through legend use the [`toggleVisibility`](https://
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/selection/selection-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/selection/selection-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/selection/selection-cs6/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DatePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 
@@ -14,6 +18,13 @@ loadCldr(numberingSystems, gregorian, numbers, detimeZoneNames);
 
 
 @Component({
+imports: [
+        
+        DatePickerModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `
   <ejs-datepicker id="datepicker" #dateObj locale="de" width="245px" (change)="onChange($event) "format="dd MMMM yyyy"></ejs-datepicker>

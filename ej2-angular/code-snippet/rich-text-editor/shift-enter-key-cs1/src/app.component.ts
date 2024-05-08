@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 
 
     import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
@@ -5,6 +11,15 @@
     import { RichTextEditorComponent, ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
     import { DropDownListComponent, FieldSettingsModel } from '@syncfusion/ej2-angular-dropdowns';
     @Component({
+imports: [
+        
+        RichTextEditorAllModule,
+        DialogModule,
+        DropDownListModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template:`<div class="control-section">
         <table class='api'>

@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor'
+
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -6,6 +11,14 @@ import {
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
+imports: [
+        
+        ButtonModule,
+        DocumentEditorAllModule
+    ],
+
+
+standalone: true,
       selector: 'app-container',
       template: `<div>
       <ejs-documenteditor #document_editor [isReadOnly]=true (created)="onCreated()" [enableSelection]=true [enableEditor]=true height="330px" style="display:block"></ejs-documenteditor>

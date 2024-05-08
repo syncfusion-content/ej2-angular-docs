@@ -152,9 +152,7 @@ Since the JSON contains Datetime data, set the `valueType` as `DateTime`. By def
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/getting-started/default-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/getting-started/default-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/getting-started/default-cs6/src/main.ts %}
 {% endhighlight %}
@@ -174,9 +172,7 @@ The tooltip is useful to show the selected data. You can enable tooltip by setti
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/getting-started/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/getting-started/tooltip-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/getting-started/tooltip-cs1/src/main.ts %}
 {% endhighlight %}

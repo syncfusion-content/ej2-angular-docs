@@ -18,9 +18,7 @@ Error bars are graphical representations of the variability of data and used on 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/errorbar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/errorbar-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/errorbar-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ To change the error bar rendering type using [`type`](https://ej2.syncfusion.com
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/errorbar-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/errorbar-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/errorbar-cs2/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ To customize the error bar type, set error bar [`type`](https://ej2.syncfusion.c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/errorbar-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/errorbar-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/errorbar-cs3/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ Error bar mode is used to define whether the error bar line has to be drawn hori
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/errorbar-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/errorbar-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/errorbar-cs4/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +82,7 @@ To change the error bar direction to plus, minus or both side using [`direction`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/errorbar-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/errorbar-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/errorbar-cs5/src/main.ts %}
 {% endhighlight %}
@@ -108,9 +98,7 @@ To customize the error bar cap length, width and fill color, you can use [`error
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/errorbar-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/errorbar-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/errorbar-cs6/src/main.ts %}
 {% endhighlight %}
@@ -126,9 +114,7 @@ To customize the error bar color for individual errors, use the [`errorBarColorM
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/errorbar-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/errorbar-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/errorbar-cs7/src/main.ts %}
 {% endhighlight %}

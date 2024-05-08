@@ -22,9 +22,7 @@ Linear Gauge displays the details about a pointer value through [`tooltip`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/user-interaction-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/user-interaction-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ Tooltip in the Linear Gauge control can be formatted using the [`format`](https:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/user-interaction-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/user-interaction-cs2/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ The HTML element can be rendered in the tooltip of the Linear Gauge using the [`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/user-interaction-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/user-interaction-cs3/src/main.ts %}
 {% endhighlight %}
@@ -86,9 +80,7 @@ The tooltip can be customized using the following properties in [`tooltip`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/user-interaction-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/user-interaction-cs4/src/main.ts %}
 {% endhighlight %}
@@ -104,9 +96,7 @@ The tooltip is positioned at the **End** of the pointer. To change the position 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/user-interaction-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/user-interaction-cs5/src/main.ts %}
 {% endhighlight %}
@@ -122,9 +112,7 @@ To drag either marker or bar pointer to the desired axis value, set the [`enable
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/user-interaction-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/user-interaction-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/user-interaction-cs6/src/main.ts %}
 {% endhighlight %}

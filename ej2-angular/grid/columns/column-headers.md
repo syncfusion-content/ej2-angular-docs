@@ -22,9 +22,7 @@ To enable the `headerText` property, you simply need to define it in the **e-col
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs20/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs20/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs20/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ In this demo, the custom element is rendered for both **CustomerID** and **Order
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/header-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/header-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/header-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -69,9 +65,7 @@ You can customize the appearance of the stacked header elements by using the hea
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/stacked-header-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/stacked-header-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/stacked-header-cs2/src/main.ts %}
 {% endhighlight %}
@@ -94,9 +88,7 @@ The following example demonstrates how to dynamically change the alignment of th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs26/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs26/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs26/src/main.ts %}
 {% endhighlight %}
@@ -129,9 +121,7 @@ The following example demonstrates how to dynamically change the auto-wrap of th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/autowrap-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/autowrap-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/autowrap-cs3/src/main.ts %}
 {% endhighlight %}
@@ -161,9 +151,7 @@ To change the height of the header dynamically, you can use the [getHeaderConten
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs28/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs28/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs28/src/main.ts %}
 {% endhighlight %}
@@ -216,9 +204,7 @@ Here is an example of how to change the header text of a column using the `getCo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/change-headertext-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/change-headertext-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/change-headertext-cs1/src/main.ts %}
 {% endhighlight %}
@@ -247,9 +233,7 @@ Here's an example of how to use the `headerValueAccessor` property to change the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/change-valueaccessor-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/change-valueaccessor-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/change-valueaccessor-cs1/src/main.ts %}
 {% endhighlight %}
@@ -265,9 +249,7 @@ If you want to change the header text of all columns in the grid, you can loop t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/change-headertext-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/change-headertext-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/change-headertext-cs5/src/main.ts %}
 {% endhighlight %}
@@ -322,9 +304,7 @@ The following example demonstrates how to change the orientation of the **Freigh
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/header-orientation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/header-orientation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/header-orientation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -702,9 +682,7 @@ Here's an example of how to use the `beforeRender` event to add a custom tooltip
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs27/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grid-cs27/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs27/src/main.ts %}
 {% endhighlight %}
@@ -734,9 +712,7 @@ Here's an example that demonstrates how to customize the appearance of a column 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/header-style-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/header-style-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/header-style-cs1/src/main.ts %}
 {% endhighlight %}
@@ -774,9 +750,7 @@ The following example demonstrates how to customize the appearance of the **Orde
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/header-style-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/header-style-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/header-style-cs2/src/main.ts %}
 {% endhighlight %}
@@ -803,9 +777,7 @@ Here's an example of how to use these methods to change the style of a specific 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/header-method-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/header-method-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/header-method-cs2/src/main.ts %}
 {% endhighlight %}
@@ -825,9 +797,7 @@ The following example demonstrates how to add a `headerCellInfo` event handler t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/header-style-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/header-style-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/header-style-cs3/src/main.ts %}
 {% endhighlight %}
@@ -847,9 +817,7 @@ The following example demonstrates how to use the `refreshHeader` method to upda
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/refresh-header-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/refresh-header-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/refresh-header-cs1/src/main.ts %}
 {% endhighlight %}

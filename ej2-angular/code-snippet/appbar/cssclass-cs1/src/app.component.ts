@@ -1,8 +1,17 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AppBarModule } from '@syncfusion/ej2-angular-navigations'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component } from "@angular/core";
 
 @Component({
+imports: [ AppBarModule, ButtonModule],
+
+
+standalone: true,
   selector: "app-root",
   template: `<!-- To Render AppBar. -->
     <div class="control-container">

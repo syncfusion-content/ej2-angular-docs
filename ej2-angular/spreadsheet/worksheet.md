@@ -26,9 +26,7 @@ The following code example shows the insert sheet operation in spreadsheet.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/insert/sheet-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/insert/sheet-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/insert/sheet-cs1/src/main.ts %}
 {% endhighlight %}
@@ -69,9 +67,7 @@ The following code example shows the headers and gridlines operation in spreadsh
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/headers-gridlines-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/headers-gridlines-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/headers-gridlines-cs1/src/main.ts %}
 {% endhighlight %}
@@ -97,9 +93,7 @@ The following code example shows the three types of sheet visibility state.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/sheet-visibility-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/sheet-visibility-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/sheet-visibility-cs1/src/main.ts %}
 {% endhighlight %}

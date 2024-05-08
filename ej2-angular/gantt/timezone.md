@@ -24,9 +24,7 @@ Setting `timezone` to UTC for Gantt will display the same time as in the databas
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/timezone/same-time-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/timezone/same-time-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/timezone/same-time-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ CRUD operations can be performed with timezone, and the gantt is rendered based 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/timezone/timezone-CRUD-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/timezone/timezone-CRUD-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/timezone/timezone-CRUD-cs1/src/main.ts %}
 {% endhighlight %}

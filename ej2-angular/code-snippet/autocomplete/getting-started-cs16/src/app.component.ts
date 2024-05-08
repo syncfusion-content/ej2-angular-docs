@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -6,6 +12,12 @@ import { Query, DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 import { AutoCompleteComponent, FilteringEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, AutoCompleteModule, ButtonModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<ejs-autocomplete id='country' #local [dataSource]='countries' [fields]='localFields' (change)='onChange()' (filtering)='onFiltering($event)' (focus)='onFocus()'></ejs-autocomplete>`,
 })

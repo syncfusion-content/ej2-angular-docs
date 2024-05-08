@@ -22,9 +22,7 @@ In the following example, minimum stroke width is set as 0.5, maximum stroke wid
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/signature/customization/strokewidth-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/signature/customization/strokewidth-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/signature/customization/strokewidth-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ Color of the stroke can be specified by using [`strokeColor`](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/signature/customization/strokecolor-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/signature/customization/strokecolor-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/signature/customization/strokecolor-cs1/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ Background color of a signature can be specified by using [`backgroundColor`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/signature/customization/bgcolor-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/signature/customization/bgcolor-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/signature/customization/bgcolor-cs1/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +70,7 @@ Background image of a signature can be specified by using [`backgroundImage`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/signature/customization/bgimage-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/signature/customization/bgimage-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/signature/customization/bgimage-cs1/src/main.ts %}
 {% endhighlight %}

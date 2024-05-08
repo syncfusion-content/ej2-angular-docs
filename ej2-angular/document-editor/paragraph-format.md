@@ -151,9 +151,7 @@ The following sample demonstrates the paragraph formatting options using a toolb
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/document-editor/paragraph-formatting-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/document-editor/paragraph-formatting-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/document-editor/paragraph-formatting-cs1/src/main.ts %}
 {% endhighlight %}

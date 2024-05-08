@@ -16,9 +16,7 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing dat
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/logarithmic-axis/logatithmic-axis-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/logarithmic-axis/logatithmic-axis-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/logarithmic-axis/logatithmic-axis-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ The range of an axis will be calculated automatically based on the provided data
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/logarithmic-axis/logatithmic-axis-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/logarithmic-axis/logatithmic-axis-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/logarithmic-axis/logatithmic-axis-cs2/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ Logarithmic base can be customized by using the [`logBase`](https://ej2.syncfus
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/logarithmic-axis/logatithmic-axis-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/logarithmic-axis/logatithmic-axis-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/logarithmic-axis/logatithmic-axis-cs3/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ The interval of the logarithmic axis can be customized by using the [`interval`]
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/logarithmic-axis/logatithmic-axis-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/logarithmic-axis/logatithmic-axis-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/logarithmic-axis/logatithmic-axis-cs4/src/main.ts %}
 {% endhighlight %}

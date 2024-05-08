@@ -24,9 +24,7 @@ When height and width of the Kanban are set to `auto`, it will try as hard as po
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/auto-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/auto-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/auto-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ The Kanban height and width will be rendered exactly as per the given pixel valu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/pixel-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/pixel-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/pixel-cs1/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ When height and width of the Kanban are given in percentage, it will make the Ka
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/percentage-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/percentage-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/percentage-cs1/src/main.ts %}
 {% endhighlight %}

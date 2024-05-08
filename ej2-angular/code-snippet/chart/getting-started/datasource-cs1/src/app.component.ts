@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { CategoryService, LineSeriesService} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ CategoryService, LineSeriesService],
+standalone: true,
     selector: 'app-container',
     template: `<div style="width:650px; height:350px;">
         <ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'>

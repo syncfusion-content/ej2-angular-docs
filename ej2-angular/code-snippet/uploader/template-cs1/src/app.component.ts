@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -8,6 +12,12 @@ import { UploaderComponent, FileInfo, SelectedEventArgs } from '@syncfusion/ej2-
  * Uploader Custom Template sample
  */
 @Component({
+imports: [
+         UploaderModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div id='dropArea'><span id='drop' class="droparea"> Drop files here or <a href="" id='browse'><u>Browse</u></a> </span>
     <ejs-uploader #defaultupload autoUpload='false'  [asyncSettings]='path' (selected)="onSelect($event)" (failure)="onuploadFailed($event)" (progress)="onFileUpload($event)" (success)="onuploadSuccess($event)">

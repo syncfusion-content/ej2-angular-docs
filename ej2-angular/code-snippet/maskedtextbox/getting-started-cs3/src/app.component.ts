@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { FormsModule } from '@angular/forms'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +11,12 @@ import { MaskedTextBoxComponent  } from '@syncfusion/ej2-angular-inputs';
 import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
 
 @Component({
+imports: [
+         MaskedTextBoxModule, FormsModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // sets mask format to the MaskedTextBox
     template: `

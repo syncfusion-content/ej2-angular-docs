@@ -22,9 +22,7 @@ The animation of the Linear Gauge is demonstrated in the following example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/animation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/animation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/animation-cs1/src/main.ts %}
 {% endhighlight %}

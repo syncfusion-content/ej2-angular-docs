@@ -1,14 +1,32 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, ViewChild } from "@angular/core";
 import {
-   ScheduleComponent, WeekService, MonthService, AgendaService, TimelineViewsService, TimelineMonthService, EventSettingsModel, GroupModel
+  DayService, ScheduleComponent, WorkWeekService, WeekService, MonthService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService, EventSettingsModel, GroupModel
 } from "@syncfusion/ej2-angular-schedule";
 import { ChangeArgs } from "@syncfusion/ej2-buttons";
 import { resourceData } from "./datasource";
 @Component({
+imports: [
+        
+        ScheduleModule,
+        RadioButtonModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService,
+                TimelineViewsService, TimelineMonthService],
+standalone: true,
   selector: "app-root",
-  providers: [WeekService, MonthService, AgendaService, TimelineViewsService, TimelineMonthService],
   // specifies the template string for the Schedule component
   template: `<div style="padding: 10px;"><ejs-radiobutton label="Rooms" name="default" value="Rooms" checked="true" (change)="onChange($event)"></ejs-radiobutton>
   <ejs-radiobutton label="Owners" name="default" value="Owners" (change)="onChange($event)"></ejs-radiobutton>

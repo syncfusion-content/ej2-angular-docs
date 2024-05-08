@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { ColorPickerModule } from '@syncfusion/ej2-angular-inputs'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { SplitButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -9,6 +16,12 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 import { SplitButtonComponent } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
+imports: [
+        FormsModule, ColorPickerModule, DialogModule, SplitButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <h4>Select Color</h4>

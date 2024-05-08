@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        
+        CheckBoxModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // To customize CheckBox appearance
     template: `<div class="e-section-control">

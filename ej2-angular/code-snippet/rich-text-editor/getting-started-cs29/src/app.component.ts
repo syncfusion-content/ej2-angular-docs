@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 
 
   import { Component, ViewChild } from '@angular/core';
@@ -5,6 +10,14 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextE
 import { createElement, addClass, removeClass, Browser } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        RichTextEditorAllModule,
+        DialogModule
+    ],
+
+
+standalone: true,
 selector: 'app-root',
 template: `<ejs-richtexteditor #toolsRTE id='alltoolRTE' [toolbarSettings]='tools' [showCharCount]='true' (actionComplete)='actionCompleteHandler($event)' [maxLength]='maxLength'>
         <ng-template #valueTemplate>

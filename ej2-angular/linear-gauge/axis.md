@@ -22,9 +22,7 @@ The start value and end value for the Linear Gauge can be set using the [`minimu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs1/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ The following properties in the [`line`](https://ej2.syncfusion.com/angular/doc
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs2/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ Ticks are used to specify the interval in the axis. Ticks are of two types, majo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs3/src/main.ts %}
 {% endhighlight %}
@@ -86,9 +80,7 @@ The minor and major ticks can be positioned by using the [`offset`](https://ej2.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs4/src/main.ts %}
 {% endhighlight %}
@@ -111,9 +103,7 @@ The style of the labels can be customized using the following properties in the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs5/src/main.ts %}
 {% endhighlight %}
@@ -129,9 +119,7 @@ Labels can be positioned by using [`offset`](https://ej2.syncfusion.com/angular/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs6/src/main.ts %}
 {% endhighlight %}
@@ -147,9 +135,7 @@ If the last label is not in the visible range, it will be hidden by default. The
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs7/src/main.ts %}
 {% endhighlight %}
@@ -167,9 +153,7 @@ Axis labels in the Linear Gauge control can be formatted using the [`format`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs8/src/main.ts %}
 {% endhighlight %}
@@ -243,9 +227,7 @@ The numeric formats such as currency, percentage, and so on can be displayed in 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs9/src/main.ts %}
 {% endhighlight %}
@@ -261,9 +243,7 @@ By default, the Linear Gauge is rendered vertically. To change its orientation, 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs10/src/main.ts %}
 {% endhighlight %}
@@ -279,9 +259,7 @@ The axis of the Linear Gauge component can be inversed by setting the [`isInvers
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs11/src/main.ts %}
 {% endhighlight %}
@@ -297,9 +275,7 @@ To place an axis opposite from its original position, [`opposedPosition`](https:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs12/src/main.ts %}
 {% endhighlight %}
@@ -315,9 +291,7 @@ Multiple axes can be added to the Linear Gauge by adding multiple [`e-axis`](htt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/axis-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/axis-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/axis-cs13/src/main.ts %}
 {% endhighlight %}

@@ -1,6 +1,17 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RecurrenceEditorModule } from '@syncfusion/ej2-angular-schedule'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 import { Component, ViewChild } from '@angular/core';
 import { RecurrenceEditorComponent } from '@syncfusion/ej2-angular-schedule';
 @Component({
+imports: [
+        
+        RecurrenceEditorModule,
+        DropDownListAllModule
+    ],
+standalone: true,
   selector: 'app-root',
   template: `<ejs-recurrenceeditor #recurrenceObj></ejs-recurrenceeditor>`
 })

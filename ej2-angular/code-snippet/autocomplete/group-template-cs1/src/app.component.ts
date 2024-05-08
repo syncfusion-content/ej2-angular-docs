@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -6,6 +11,12 @@ import { Component } from '@angular/core';
 import { Query, Predicate, DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+        FormsModule,AutoCompleteModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // specifies the template url path
     templateUrl: 'groupTemplate.html'

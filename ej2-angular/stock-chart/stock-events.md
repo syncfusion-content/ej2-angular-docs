@@ -18,9 +18,7 @@ Stock Events visualizes stock events in stock chart. 'SplineSeries' is used to r
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/stock-events-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/stock-events-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/stock-events-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ By default, stock events will be showed for all series. Now, you can set the sto
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/stock-events-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/stock-events-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/stock-events-cs2/src/main.ts %}
 {% endhighlight %}

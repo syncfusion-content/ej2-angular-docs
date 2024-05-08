@@ -18,9 +18,7 @@ The following example demonstrates the functionality of  `isMultiSelection` prop
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/calendar/getting-started-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/calendar/getting-started-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/calendar/getting-started-cs14/src/main.ts %}
 {% endhighlight %}

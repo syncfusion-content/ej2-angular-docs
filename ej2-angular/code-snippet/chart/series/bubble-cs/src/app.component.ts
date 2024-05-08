@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { BubbleSeriesService } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { bubbleData } from './datasource';
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ BubbleSeriesService],
+standalone: true,
     selector: 'app-container',
     template: ` <ejs-chart style='display:block;' id='chart-container' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
                 [title]='title' >

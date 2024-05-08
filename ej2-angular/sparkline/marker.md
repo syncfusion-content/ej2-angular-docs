@@ -31,9 +31,7 @@ The following code example shows enabling markers for all points.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs19/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs19/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs19/src/main.ts %}
 {% endhighlight %}
@@ -51,9 +49,7 @@ In sparkline, markers can be enabled for particular points such as the start, en
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs20/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs20/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs20/src/main.ts %}
 {% endhighlight %}
@@ -71,9 +67,7 @@ Sparkline markers can be customized in terms of fill color, border color, width,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs21/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sparkline/getting-started/sparkline-cs21/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sparkline/getting-started/sparkline-cs21/src/main.ts %}
 {% endhighlight %}

@@ -1,9 +1,22 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ResizeService } from '@syncfusion/ej2-angular-grids'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridComponent, ResizeMode } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule,
+        DropDownListAllModule
+    ],
+
+providers: [ResizeService],
+standalone: true,
   selector: 'app-root',
   template: `
   <div style="display: flex">

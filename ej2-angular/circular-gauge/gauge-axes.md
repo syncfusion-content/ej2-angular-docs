@@ -24,9 +24,7 @@ You can customize the width and color of an axis line by using [`lineStyle`](htt
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs1/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ Circular gauge axis can sweep from 0 to 360 degrees. By default start angle of a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs2/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ The [`direction`](https://ej2.syncfusion.com/angular/documentation/api/circular-
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs3/src/main.ts %}
 {% endhighlight %}
@@ -84,9 +78,7 @@ You can set the radius of the gauge in pixel as demonstrated below,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs4/src/main.ts %}
 {% endhighlight %}
@@ -104,9 +96,7 @@ For example, when the radius is ‘50%’, gauge renders to half of the availabl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs5/src/main.ts %}
 {% endhighlight %}
@@ -124,9 +114,7 @@ By default, [`interval`](https://ej2.syncfusion.com/angular/documentation/api/ci
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs6/src/main.ts %}
 {% endhighlight %}
@@ -144,9 +132,7 @@ By default, ticks will be placed `inside` the axis.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs7/src/main.ts %}
 {% endhighlight %}
@@ -162,9 +148,7 @@ Labels of an axis can be customized by using [`font`](https://ej2.syncfusion.com
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs8/src/main.ts %}
 {% endhighlight %}
@@ -184,9 +168,7 @@ By default, labels will be placed `inside` the axis.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs9/src/main.ts %}
 {% endhighlight %}
@@ -202,9 +184,7 @@ Labels can be swept along the axis angle by enabling [`autoAngle`](https://ej2.s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs10/src/main.ts %}
 {% endhighlight %}
@@ -222,9 +202,7 @@ When `hiddenLabel` value is `First`, then the 1st label will be hidden and when 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs11/src/main.ts %}
 {% endhighlight %}
@@ -240,9 +218,7 @@ Axis labels can be formatted by using [`format`](https://ej2.syncfusion.com/angu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs12/src/main.ts %}
 {% endhighlight %}
@@ -318,9 +294,7 @@ Axis labels support custom label format using placeholder like {value}°C, in 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs13/src/main.ts %}
 {% endhighlight %}
@@ -336,9 +310,7 @@ When the axis labels overlap with each other, you can hide the intersected label
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs14/src/main.ts %}
 {% endhighlight %}
@@ -354,9 +326,7 @@ The [`minimum`](https://ej2.syncfusion.com/angular/documentation/api/circular-ga
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs15/src/main.ts %}
 {% endhighlight %}
@@ -373,9 +343,7 @@ Each axis will have its own ranges, pointers, annotations and customization opti
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circulargauge/gauge-axes-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circulargauge/gauge-axes-cs16/src/main.ts %}
 {% endhighlight %}

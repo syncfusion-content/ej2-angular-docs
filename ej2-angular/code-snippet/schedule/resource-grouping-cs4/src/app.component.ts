@@ -1,16 +1,25 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaServicem,  DragAndDropService, View, ScheduleComponent, EventSettingsModel, GroupModel,} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
-import {
-    ScheduleComponent, EventSettingsModel, GroupModel,
-    DayService, WeekService, MonthService, DragAndDropService, View
-} from '@syncfusion/ej2-angular-schedule';
 import { extend } from '@syncfusion/ej2-base';
 import { resourceData,  resourceConferenceData } from './datasource';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        TimePickerModule
+    ],
+standalone: true,
     selector: "app-root",
-    providers: [DayService, WeekService, MonthService, DragAndDropService],
+    providers: [DayService, WeekService, MonthService, DragAndDropService, WorkWeekService, AgendaService,
+      MonthAgendaService],
     // specifies the template string for the Schedule component
     template: `
     <ejs-schedule #scheduleObj id="schedule" width='100%' height='650px' [group]="group" [(currentView)]="currentView"

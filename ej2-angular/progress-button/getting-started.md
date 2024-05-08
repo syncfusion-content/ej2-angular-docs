@@ -142,9 +142,7 @@ The below example shows a basic ProgressButton component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/progress-button/default-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progress-button/default-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/progress-button/default-cs2/src/main.ts %}
 {% endhighlight %}
@@ -162,9 +160,7 @@ You can enable the background filler UI by setting the [`enableProgress`](https:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/progress-button/default-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/progress-button/default-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/progress-button/default-cs3/src/main.ts %}
 {% endhighlight %}

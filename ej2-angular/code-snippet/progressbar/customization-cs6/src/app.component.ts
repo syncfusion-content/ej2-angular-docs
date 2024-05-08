@@ -1,8 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ProgressBarModule } from '@syncfusion/ej2-angular-progressbar'
+
 
 
 import { Component, OnInit } from '@angular/core';
 import { FontModel,AnimationModel, ITextRenderEventArgs } from '@syncfusion/ej2-progressbar';
 @Component({
+imports: [
+         ProgressBarModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `<ejs-progressbar  id='percentage' type='Linear' height='60' width='90%' trackThickness=24  progressThickness=24 secondaryProgress=60 value = 50 secondaryProgressColor='green' progressColor='#E3165B' trackColor='#F8C7D8' [labelStyle]='labelStyle'    (textRender)='textRender($event)'   [showProgressValue]='showProgressValue' [animation]='animation'>
     </ejs-progressbar>`

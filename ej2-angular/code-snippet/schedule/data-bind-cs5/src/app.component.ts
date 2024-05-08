@@ -1,12 +1,24 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
+
 
 
 import { Component, ViewChild } from '@angular/core';
-import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, AgendaService, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, AgendaService, ScheduleComponent, MonthAgendaService } from '@syncfusion/ej2-angular-schedule';
 import { DataManager } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        ButtonModule
+    ],
+standalone: true,
   selector: 'app-root',
-  providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
+  providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService],
   // specifies the template string for the Schedule component
   template: `<span style="color: #FF0000">{{err}}</span><ejs-schedule #scheduleObj width='100%' height='530px' [readonly]="readonly" [selectedDate]="selectedDate" [eventSettings]="eventSettings" (actionFailure)="onActionFailure($event)"></ejs-schedule>`
 })

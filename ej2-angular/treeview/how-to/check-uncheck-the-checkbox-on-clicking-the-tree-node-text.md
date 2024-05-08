@@ -16,9 +16,7 @@ You can check and uncheck the checkboxes of tree view by clicking the tree node 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/treeview-node-check-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tree-view/treeview-node-check-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/treeview-node-check-cs1/src/main.ts %}
 {% endhighlight %}

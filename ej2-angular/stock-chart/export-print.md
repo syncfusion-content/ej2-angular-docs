@@ -18,9 +18,7 @@ The rendered stock chart can be printed directly using print button in period se
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/export-print-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/export-print-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/export-print-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ To empty the value of `exportType` for to disable the Export button.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/stock-chart/export-print-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/stock-chart/export-print-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/stock-chart/export-print-cs2/src/main.ts %}
 {% endhighlight %}

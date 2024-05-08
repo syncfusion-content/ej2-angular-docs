@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create wizard using accordion in Angular Accordion component | Syncfusion
+title: Create wizard using accordion in Angular Accordion component|Syncfusion
 description: Learn here all about Create wizard using accordion in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Create wizard using accordion 
@@ -21,9 +21,7 @@ The below Wizard sample is designed for Online Shopping model. In this, each Acc
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/accordion/accordion-disable-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/accordion/accordion-disable-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/accordion/accordion-disable-cs1/src/main.ts %}
 {% endhighlight %}

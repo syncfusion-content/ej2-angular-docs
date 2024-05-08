@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ToolbarService, GroupService } from '@syncfusion/ej2-angular-grids'
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -7,6 +12,14 @@ import { data } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ToolbarModule
+    ],
+
+providers: [ToolbarService, GroupService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid [dataSource]='data' height='200px' [allowGrouping]='true' [groupSettings]='groupOptions'>
                     <ng-template #toolbarTemplate let-data>

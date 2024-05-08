@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ReorderService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -5,6 +9,13 @@ import { data } from './datasource';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [ReorderService],
+standalone: true,
     selector: 'app-root',
     template: `<button ej-button id='reorderSingleCol' (click)='reorderSingleCol()'>Reorder Ship City to Last</button>
     <ejs-grid #grid='' [dataSource]='data' [allowReordering]='true' height='280px'>

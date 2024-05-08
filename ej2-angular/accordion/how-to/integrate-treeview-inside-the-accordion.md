@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integrate treeview inside the accordion in Angular Accordion component | Syncfusion
+title: Integrate treeview inside the accordion in Angular Accordion component|Syncfusion
 description: Learn here all about Integrate treeview inside the accordion in Syncfusion Angular Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Integrate treeview inside the accordion 
@@ -29,9 +29,7 @@ by getting the element and defining the required TreeView properties.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/accordion/accordion-treeview-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/accordion/accordion-treeview-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/accordion/accordion-treeview-cs1/src/main.ts %}
 {% endhighlight %}

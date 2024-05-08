@@ -1,3 +1,8 @@
+import { ButtonModule, RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { SidebarModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
@@ -5,6 +10,10 @@ import { ButtonComponent, RadioButtonComponent } from "@syncfusion/ej2-angular-b
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
+imports: [SidebarModule, ButtonModule, RadioButtonModule, ],
+
+
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: `  <ejs-sidebar id="default-sidebar" #sidebar [type]='type' [enablePersistence]='enablePersistence' (created)="onCreated($event)" style="visibility: hidden" [target]='target'>

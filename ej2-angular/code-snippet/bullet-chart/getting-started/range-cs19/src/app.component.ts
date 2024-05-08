@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { BulletChartModule} from '@syncfusion/ej2-angular-charts'
+
 
 
 
@@ -5,6 +9,12 @@ import { Component } from '@angular/core';
 import { AnimationModel } from '@syncfusion/ej2-charts';
 
 @Component({
+imports: [
+         BulletChartModule
+    ],
+
+providers: [ ],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-bulletchart targetField='target' valueField='value' [minimum]='minimum' [maximum]='maximum'
   [interval]='interval' [dataSource]='data' [animation]='animation' title='Sales Rate in dollars'

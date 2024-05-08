@@ -28,9 +28,7 @@ In the following example, the scrollbar is enabled, and the grid's `height` is s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/scrolling-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/scrolling-cs1/src/main.ts %}
 {% endhighlight %}
@@ -50,9 +48,7 @@ In the following example, the parent container has explicit height and width set
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/scrolling-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/scrolling-cs2/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +66,7 @@ In the below demo, the Grid headers will be sticky while scrolling the Grid's pa
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/scrolling-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/scrolling-cs3/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +84,7 @@ The following example that demonstrates how to use the `rowSelected` event to sc
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/scrolling-select-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-select-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/scrolling-select-cs1/src/main.ts %}
 {% endhighlight %}
@@ -110,9 +102,7 @@ The following example that demonstrates how to use the `hideScroll` method insid
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/scrolling-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/scrolling-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/scrolling-cs4/src/main.ts %}
 {% endhighlight %}

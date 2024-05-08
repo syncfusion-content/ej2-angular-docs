@@ -22,9 +22,7 @@ Kanban columns are categorized by mapping the **key** from the datasource using 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/single-key-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/single-key-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/single-key-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ Kanban board allows to render a single column by mapping multiple keys using `ke
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/multiple-keys-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/multiple-keys-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/multiple-keys-cs1/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ You can customize the column header with any HTML or CSS element using the `temp
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/header-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/header-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/header-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ Kanban allows to expand or collapse its columns using `allowToggle` inside the `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/toggle-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/toggle-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/toggle-cs1/src/main.ts %}
 {% endhighlight %}
@@ -104,9 +96,7 @@ In the following example, the backlog column is collapsed on initialization of K
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/expanded-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/expanded-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/expanded-cs1/src/main.ts %}
 {% endhighlight %}
@@ -126,9 +116,7 @@ In the following code, the kanban columns 'InProgress, Review' are grouped under
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/kanban/stacked-headers-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/kanban/stacked-headers-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/kanban/stacked-headers-cs1/src/main.ts %}
 {% endhighlight %}

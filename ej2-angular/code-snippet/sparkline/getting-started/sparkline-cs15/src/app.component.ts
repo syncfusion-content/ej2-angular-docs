@@ -1,8 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SparklineModule, SparklineTooltipService } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+         SparklineModule
+    ],
+
+providers: [SparklineTooltipService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-sparkline id='container' width='400px' height='350px' [dataSource]="data" xName="xval" yName="yval" type="Area">
     </ejs-sparkline>`

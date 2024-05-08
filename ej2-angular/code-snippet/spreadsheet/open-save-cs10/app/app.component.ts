@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DropDownButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MenuSelectEventArgs, SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 import { createElement } from '@syncfusion/ej2-base';
@@ -6,6 +12,15 @@ import { WorkbookModel } from '@syncfusion/ej2-spreadsheet';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        DropDownButtonModule,
+        UploaderModule,
+        SpreadsheetAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   template:
     "<ejs-spreadsheet #spreadsheet (fileMenuItemSelect)='onFileItemSelect($event)' saveUrl='https://services.syncfusion.com/angular/production/api/spreadsheet/save' allowSave='true'> <e-sheets> <e-sheet> <e-ranges> <e-range [dataSource]='data'></e-range></e-ranges><e-columns><e-column [width]=90></e-column><e-column [width]=100></e-column><e-column [width]=96></e-column><e-column [width]=120></e-column><e-column [width]=130></e-column><e-column [width]=120></e-column></e-columns></e-sheet></e-sheets></ejs-spreadsheet>",

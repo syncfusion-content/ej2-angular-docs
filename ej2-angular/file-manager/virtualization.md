@@ -46,9 +46,7 @@ In the instance below, a sizable collection of files can be found in the folders
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/virtualization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/file-manager/virtualization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/virtualization-cs1/src/main.ts %}
 {% endhighlight %}

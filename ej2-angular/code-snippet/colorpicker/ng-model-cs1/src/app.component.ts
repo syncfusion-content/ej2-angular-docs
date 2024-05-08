@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ColorPickerModule } from '@syncfusion/ej2-angular-inputs'
+import { FormsModule } from '@angular/forms'
+
 
 
 import { Component, Input } from '@angular/core';
@@ -5,6 +10,14 @@ import { FormGroup } from '@angular/forms';
 import { Browser } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+        ColorPickerModule,
+        FormsModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     templateUrl: './template.html',
     styleUrls:['./index.css']

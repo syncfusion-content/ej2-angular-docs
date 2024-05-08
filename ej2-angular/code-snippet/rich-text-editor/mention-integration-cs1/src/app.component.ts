@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+import { MentionModule  } from '@syncfusion/ej2-angular-dropdowns'
+
 /**
  * Rich Text Editor Custom-Toolbar Sample
  */
@@ -6,7 +11,15 @@ import { ToolbarService, HtmlEditorService, ImageService, LinkService } from '@s
 import { Mention } from '@syncfusion/ej2-angular-dropdowns';
 
 
-@Component( {
+@Component({
+imports: [
+        
+        RichTextEditorAllModule,
+        MentionModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-richtexteditor id="mention_integration"  placeholder="Type @ and tag the name" (actionBegin)="onActionBegin($event)">
     <ng-template #valueTemplate>

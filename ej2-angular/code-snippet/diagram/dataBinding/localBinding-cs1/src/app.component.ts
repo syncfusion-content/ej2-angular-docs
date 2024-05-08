@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule, HierarchicalTreeService, DataBindingService } from '@syncfusion/ej2-angular-diagrams'
+
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
@@ -28,6 +32,12 @@ let species: object[] = [
     { 'Name': 'Mammals', 'Category': 'Vertebrates' }
 ];
 @Component({
+imports: [
+         DiagramModule
+    ],
+
+providers: [HierarchicalTreeService, DataBindingService],
+standalone: true,
   selector: "app-container",
   // specifies the template string for the diagram component
   template: `<ejs-diagram #diagram id="diagram" width="100%" height="490px" [getConnectorDefaults]='connDefaults' [getNodeDefaults]='nodeDefaults' [tool]='tool' [layout]='layout' [dataSourceSettings]='data' [snapSettings]='snapSettings'>

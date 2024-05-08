@@ -34,9 +34,7 @@ The AutoComplete has support to load array of primitive data such as strings and
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +52,7 @@ In the following example, `Game` column from complex data have been mapped to 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
@@ -74,9 +70,7 @@ In the following example, `Country.Name` column from complex data have been ma
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
@@ -94,9 +88,7 @@ The following sample displays the first 6 contacts from the `Customers` table of
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/autocomplete/getting-started-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/autocomplete/getting-started-cs5/src/main.ts %}
 {% endhighlight %}

@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SpreadsheetModule } from '@syncfusion/ej2-angular-spreadsheet'
+
 import { Component, ViewChild } from '@angular/core';
 import { SpreadsheetComponent, ChartModel, getFormatFromType } from '@syncfusion/ej2-angular-spreadsheet';
 import { inventoryData, cartData, stockData } from './datasource';
 
 @Component({
+imports: [
+        
+        SpreadsheetModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<div class="control-section">
     <ejs-spreadsheet #spreadsheet openUrl="https://services.syncfusion.com/angular/production/api/spreadsheet/open" saveUrl="https://services.syncfusion.com/angular/production/api/spreadsheet/save" (created)="created()">

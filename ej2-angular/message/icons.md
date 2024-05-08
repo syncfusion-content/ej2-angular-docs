@@ -22,9 +22,7 @@ The following example demonstrates the different severity messages without the s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/message/severity-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/message/severity-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/message/severity-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ The following example demonstrates how the default message is rendered with a cu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/message/custom-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/message/custom-icon-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/message/custom-icon-cs1/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ In the following example, the messages are rendered with the close icon.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/message/close-icon-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/message/close-icon-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/message/close-icon-cs1/src/main.ts %}
 {% endhighlight %}

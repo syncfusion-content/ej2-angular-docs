@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+
 
 
 import { Component } from '@angular/core';
@@ -5,6 +9,14 @@ import { IDataOptions, PivotView, CellEditSettings, IDataSet } from '@syncfusion
 import { pivot_flatdata } from './datasource';
 
 @Component({
+imports: [
+        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',  
   template: `<div class="control-section" style="overflow:auto;">
   <ejs-pivotview #pivotview id='PivotView' [gridSettings]='gridSettings'

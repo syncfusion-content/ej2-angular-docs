@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DatePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 
@@ -14,6 +18,13 @@ loadCldr(numberingSystems, gregorian, numbers, artimeZoneNames);
 
 
 @Component({
+imports: [
+        
+        DatePickerModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<ejs-datepicker enableRtl='true' locale='ar'></ejs-datepicker>`
 })

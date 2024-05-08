@@ -24,9 +24,7 @@ The [`from`](https://ej2.syncfusion.com/documentation/api/data/query/#from) meth
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/getting-started/default-cs12/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs12/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ The [`select`](https://ej2.syncfusion.com/documentation/api/data/query/#select) 
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/getting-started/default-cs13/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs13/src/main.ts %}
 {% endhighlight %}
@@ -67,9 +63,7 @@ values are accessed using appropriate field names separated by dot(.) sign.
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/expand-cs1/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/expand-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/expand-cs1/src/main.ts %}
 {% endhighlight %}
@@ -91,9 +85,7 @@ specify the second argument of [`sortBy`](https://ej2.syncfusion.com/documentati
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/getting-started/default-cs14/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs14/src/main.ts %}
 {% endhighlight %}
@@ -115,9 +107,7 @@ records. The [`where`](https://ej2.syncfusion.com/documentation/data/api-query.h
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/getting-started/default-cs15/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs15/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs15/src/main.ts %}
 {% endhighlight %}
@@ -155,9 +145,7 @@ complex filter criteria, in such cases we can use [`Predicate`](https://ej2.sync
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/getting-started/default-cs16/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs16/src/main.ts %}
 {% endhighlight %}
@@ -178,9 +166,7 @@ source whereas filter criteria will be applied to a particular field.
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/getting-started/default-cs17/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs17/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs17/src/main.ts %}
 {% endhighlight %}
@@ -202,9 +188,7 @@ source whereas filter criteria will be applied to a particular field.
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/group-cs1/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/group-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/group-cs1/src/main.ts %}
 {% endhighlight %}
@@ -226,9 +210,7 @@ particular set of records based on the page size and index.
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/getting-started/default-cs18/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/getting-started/default-cs18/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/getting-started/default-cs18/src/main.ts %}
 {% endhighlight %}
@@ -257,9 +239,7 @@ The built-in aggregate types are,
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/aggregate-cs1/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/aggregate-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/aggregate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -283,9 +263,7 @@ accepts a selector function which selects the records from the foreign table.
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/hierarchy-cs1/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/hierarchy-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/hierarchy-cs1/src/main.ts %}
 {% endhighlight %}

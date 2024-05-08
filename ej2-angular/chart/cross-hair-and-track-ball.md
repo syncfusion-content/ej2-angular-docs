@@ -18,9 +18,7 @@ Crosshair lines can be enabled by using [`enable`](https://ej2.syncfusion.com/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/crosshair-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/crosshair-cs1/src/main.ts %}
 {% endhighlight %}
@@ -37,9 +35,7 @@ property of `crosshairTooltip` in the corresponding axis.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/crosshair-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/crosshair-cs2/src/main.ts %}
 {% endhighlight %}
@@ -55,9 +51,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshai
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/crosshair-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/crosshair-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/crosshair-cs3/src/main.ts %}
 {% endhighlight %}
@@ -77,9 +71,7 @@ Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/user-interaction/trackball-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/user-interaction/trackball-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/user-interaction/trackball-cs1/src/main.ts %}
 {% endhighlight %}

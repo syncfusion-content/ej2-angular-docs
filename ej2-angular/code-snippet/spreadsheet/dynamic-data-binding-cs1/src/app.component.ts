@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
+
 
 
 import { Component, OnInit,ViewChild, ViewEncapsulation } from '@angular/core';
@@ -6,6 +10,13 @@ import { DataSourceChangedEventArgs } from '@syncfusion/ej2-spreadsheet';
 import { data, itemData } from './datasource';
 
 @Component({
+imports: [
+        
+        SpreadsheetAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<div>
     <div>

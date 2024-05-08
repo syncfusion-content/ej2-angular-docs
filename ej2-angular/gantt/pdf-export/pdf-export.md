@@ -22,9 +22,7 @@ To export data to PDF document, inject the `PdfExport` module in Gantt.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs14/src/main.ts %}
 {% endhighlight %}
@@ -41,9 +39,7 @@ These indicators, represented by images,can be effortlessly defined using the  [
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs14/src/main.ts %}
 {% endhighlight %}
@@ -65,9 +61,7 @@ step 2: Then , `pdfExpComplete` return as blob object.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/blobdata-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/blobdata-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/blobdata-cs1/src/main.ts %}
 {% endhighlight %}
@@ -85,9 +79,7 @@ Also, we can customize the chart width and grid width in exported file using [`c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/single-page/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/single-page/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/single-page/src/main.ts %}
 {% endhighlight %}
@@ -109,9 +101,7 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-column-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-column-template-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-column-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -131,9 +121,7 @@ In the following sample, taskbar templates with images and text are exported to 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-taskbar-template/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-taskbar-template/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-taskbar-template/src/main.ts %}
 {% endhighlight %}
@@ -153,9 +141,7 @@ In the following sample, task label template with images and text are exported t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-tasklabel-template/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-tasklabel-template/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-tasklabel-template/src/main.ts %}
 {% endhighlight %}
@@ -175,9 +161,7 @@ In the following sample, header template with images and text are exported to PD
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-header-template/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-header-template/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-header-template/src/main.ts %}
 {% endhighlight %}

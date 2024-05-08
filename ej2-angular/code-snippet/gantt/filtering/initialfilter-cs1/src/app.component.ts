@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { FilterService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -5,6 +10,12 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [FilterService],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt id="ganttDefault" height="430px" [allowFiltering]='true' [dataSource]="data" [taskFields]="taskSettings" [splitterSettings] = "splitterSettings" [columns]="columns" [filterSettings]="filterSettings"></ejs-gantt>`,

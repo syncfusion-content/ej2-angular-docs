@@ -1,9 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms'
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
+imports: [
+        FormsModule,ReactiveFormsModule, NumericTextBoxModule, ButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     templateUrl: './template.html',
 })

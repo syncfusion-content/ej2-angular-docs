@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, FreezeService, SelectionService, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { NumericTextBoxAllModule, RatingAllModule } from '@syncfusion/ej2-angular-inputs'
+import {  ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridComponent, } from '@syncfusion/ej2-angular-grids';
@@ -5,6 +11,16 @@ import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule,
+        NumericTextBoxAllModule,
+        RatingAllModule,
+        ButtonModule
+    ],
+
+providers: [FreezeService, SelectionService, EditService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `<div style="display: flex">
     <label style="padding: 10px 10px 26px 0">

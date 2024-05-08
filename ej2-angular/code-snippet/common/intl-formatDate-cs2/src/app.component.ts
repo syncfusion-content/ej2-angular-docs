@@ -1,3 +1,6 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+
 
  
 
@@ -5,6 +8,8 @@ import { Component } from '@angular/core';
 import { Internationalization } from  '@syncfusion/ej2-base';
 
 @Component({
+
+standalone: true,
     selector: 'app-root',
     template:` <div id='container'>
     <div>DateValue:<span class='format text'>new Date('1/12/2014 10:20:33')</span></div>

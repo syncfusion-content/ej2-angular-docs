@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor'
+
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -300,6 +305,14 @@ L10n.load({
     }
 });
 @Component({
+imports: [
+        
+        ButtonModule,
+        DocumentEditorAllModule
+    ],
+
+
+standalone: true,
       selector: 'app-container',
       //specifies the template string for the Document Editor component with all required service enabled.
       template: `<ejs-documenteditor  #document_editor id="container" height="330px" style="display:block" [isReadOnly]=false [enableSelection]=true

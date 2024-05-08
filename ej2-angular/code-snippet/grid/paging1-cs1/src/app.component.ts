@@ -1,3 +1,13 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import {
+    ButtonModule,
+    CheckBoxModule,
+    RadioButtonModule,
+    SwitchModule,
+} from '@syncfusion/ej2-angular-buttons'
+import { GridModule, PageService, ToolbarService, EditService, GroupService, FilterService, SortService, ReorderService, ColumnMenuService, ColumnChooserService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { L10n, setCulture } from '@syncfusion/ej2-base';
@@ -10,6 +20,19 @@ import arAELocalization from './locale.json';
 L10n.load(arAELocalization);
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonModule,
+        CheckBoxModule,
+        RadioButtonModule,
+        SwitchModule,
+    ],
+
+providers: [PageService, ToolbarService, EditService, 
+        GroupService, FilterService, SortService, 
+        ReorderService, ColumnMenuService, ColumnChooserService],
+standalone: true,
     selector: 'app-root',
     template: `
     <div>

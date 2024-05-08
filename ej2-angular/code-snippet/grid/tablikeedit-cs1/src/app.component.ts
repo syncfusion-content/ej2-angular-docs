@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { TabAllModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -8,6 +15,17 @@ import { data } from './datasource';
 import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        ButtonModule,
+        CheckBoxAllModule,
+        TabAllModule,
+        GridModule,
+        DropDownListAllModule, ReactiveFormsModule, FormsModule
+    ],
+
+providers: [EditService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     templateUrl: `tablikeedit.html`
 })

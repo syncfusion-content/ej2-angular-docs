@@ -159,9 +159,7 @@ The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonD
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/DropdownTarget/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/DropdownTarget/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/DropdownTarget/src/main.ts %}
 {% endhighlight %}
@@ -182,9 +180,7 @@ The following sample showcases how to customize a specific dropdown item.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/DropDownCustomItem/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/DropDownCustomItem/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/DropDownCustomItem/src/main.ts %}
 {% endhighlight %}
@@ -198,6 +194,27 @@ The following sample showcases how to customize a specific dropdown item.
   
 {% previewsample "page.domainurl/samples/ribbon/DropDownCustomItem" %}
 
+#### Create dropdown popup on demand
+
+You can handle the creation of popups, by using the [createPopupOnClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonDropDownSettings/#createpopuponclick) property. If set to `true`, the popup will only be created upon opening. By default the value is `false`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/ribbon/DropDownPopup/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/ribbon/DropDownPopup/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/ribbon/DropDownPopup/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/ribbon/DropDownPopup/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/ribbon/DropDownPopup" %}
+
 ### Split button items
 
 You can render the built-in splitButton Ribbon item by setting the [type](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#type) property to `SplitButton`. You can also customize the splitButton item through [RibbonSplitButtonSettingsModel](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonSplitButtonSettingsModel/), which provides options such as `iconCss`, `items`, `target` and more.
@@ -210,9 +227,7 @@ The [target](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonS
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/SplitButtonTarget/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/SplitButtonTarget/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/SplitButtonTarget/src/main.ts %}
 {% endhighlight %}
@@ -458,9 +473,7 @@ You can use the [iconCss](https://ej2.syncfusion.com/angular/documentation/api/r
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/GroupButtonIcon/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/GroupButtonIcon/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/GroupButtonIcon/src/main.ts %}
 {% endhighlight %}
@@ -481,9 +494,7 @@ You can use the [selected](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/GroupButtonSelected/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/GroupButtonSelected/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/GroupButtonSelected/src/main.ts %}
 {% endhighlight %}
@@ -502,9 +513,7 @@ You can set the [selection](https://ej2.syncfusion.com/angular/documentation/api
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/SingleSelection/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/SingleSelection/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/SingleSelection/src/main.ts %}
 {% endhighlight %}
@@ -523,9 +532,7 @@ You can set the [selection](https://ej2.syncfusion.com/angular/documentation/api
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/MultipleSelection/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/MultipleSelection/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/MultipleSelection/src/main.ts %}
 {% endhighlight %}
@@ -544,9 +551,7 @@ In simplified mode, the groupbutton will be rendered as a dropdownbutton. The dr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/SimplifiedModeGroupButton/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/SimplifiedModeGroupButton/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/SimplifiedModeGroupButton/src/main.ts %}
 {% endhighlight %}
@@ -566,9 +571,7 @@ You can customize the ribbon items with non-built-in items or HTML content by se
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Custom-Item/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Custom-Item/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Custom-Item/src/main.ts %}
 {% endhighlight %}

@@ -20,9 +20,7 @@ The rendered Linear Gauge can be printed directly from the browser by calling th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/print-and-export-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/print-and-export-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/print-and-export-cs2/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ To use the image export functionality, set the [`allowImageExport`](https://ej2.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/print-and-export-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/print-and-export-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/print-and-export-cs3/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ To use the PDF export functionality, set the [`allowPdfExport`](https://ej2.sync
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/print-and-export-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/print-and-export-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/print-and-export-cs4/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ The Linear Gauge can be exported as base64 string for the JPEG, PNG and PDF form
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/linear-gauge/print-and-export-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/linear-gauge/print-and-export-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/linear-gauge/print-and-export-cs5/src/main.ts %}
 {% endhighlight %}

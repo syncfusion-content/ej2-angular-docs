@@ -1,16 +1,35 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
+
 
 
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import {
-  ScheduleComponent, EventSettingsModel, WeekService, View, ActionEventArgs, ToolbarActionArgs, ExportOptions,
+  ScheduleComponent, EventSettingsModel, View, ActionEventArgs, ToolbarActionArgs, ExportOptions,
   ExportFieldInfo, ExcelExportService
 } from '@syncfusion/ej2-angular-schedule';
 import { ItemModel } from '@syncfusion/ej2-angular-navigations';
 import { scheduleData } from './datasource';
 
 @Component({
+imports: [
+        
+        ScheduleModule,
+        ButtonModule
+    ],
+
+providers: [DayService, 
+                WeekService, 
+                WorkWeekService, 
+                MonthService,
+                AgendaService,
+                MonthAgendaService,
+                ExcelExportService],
+standalone: true,
   selector: 'app-root',
-  providers: [WeekService, ExcelExportService],
   // specifies the template string for the Schedule component
   template: `<ejs-schedule #scheduleObj width='100%' height='550px' [views]="scheduleViews" [selectedDate]="selectedDate" cssClass='schedule-excel-export'  [eventSettings]="eventSettings" [currentView]="currentView" (actionBegin)="onActionBegin($event)">
   <e-views><e-view option='Week'></e-view></e-views></ejs-schedule>`,

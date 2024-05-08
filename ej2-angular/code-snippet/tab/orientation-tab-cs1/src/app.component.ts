@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TabAllModule } from '@syncfusion/ej2-angular-navigations'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, ViewChild, OnInit, ViewEncapsulation } from '@angular/core';
@@ -6,6 +12,12 @@ import { rippleEffect } from '@syncfusion/ej2-base';
 import { TabComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+imports: [
+        FormsModule,TabAllModule,DropDownListAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     templateUrl: 'app/app.component.html',
     encapsulation: ViewEncapsulation.None

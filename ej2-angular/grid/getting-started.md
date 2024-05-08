@@ -236,9 +236,7 @@ Here, we have defined it for the conversion of numeric values to currency.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging-cs1/src/main.ts %}
 {% endhighlight %}
@@ -267,9 +265,7 @@ The paging feature enables users to view the Grid record in a paged view. It can
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/paging-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/paging-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/paging-cs2/src/main.ts %}
 {% endhighlight %}
@@ -285,9 +281,7 @@ The sorting feature enables the user to order the records. It can be enabled by 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/sorting-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/sorting-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/sorting-cs1/src/main.ts %}
 {% endhighlight %}
@@ -303,9 +297,7 @@ The filtering feature enables the user to view the reduced amount of records bas
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/filtering-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/filtering-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/filtering-cs1/src/main.ts %}
 {% endhighlight %}
@@ -321,9 +313,7 @@ The grouping feature enables users to view the Grid record in a grouped view. It
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grouping-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grouping-cs2/src/main.ts %}
 {% endhighlight %}
@@ -345,9 +335,7 @@ The output will appear as follows.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grouping-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/grouping-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grouping-cs3/src/main.ts %}
 {% endhighlight %}

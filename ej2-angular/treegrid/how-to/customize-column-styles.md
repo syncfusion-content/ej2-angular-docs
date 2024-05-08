@@ -49,9 +49,7 @@ Add the custom CSS class to particular column by using [`customAttributes`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/custom-column-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/custom-column-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/custom-column-cs1/src/main.ts %}
 {% endhighlight %}

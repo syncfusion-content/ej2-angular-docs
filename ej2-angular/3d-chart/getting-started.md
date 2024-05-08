@@ -121,9 +121,7 @@ The below example shows a basic 3D Charts.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/getting-started/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/getting-started/getting-started-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/getting-started/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
@@ -194,9 +192,7 @@ Since the JSON contains category data, set the [`valueType`](https://ej2.syncfus
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/getting-started/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/getting-started/getting-started-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/getting-started/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
@@ -212,9 +208,7 @@ You can add a title using [`title`](https://ej2.syncfusion.com/angular/documenta
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/getting-started/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/getting-started/getting-started-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/getting-started/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
@@ -230,9 +224,7 @@ You can use legend for the 3D Chart by setting the [`visible`](https://ej2.syncf
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/getting-started/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/getting-started/getting-started-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/getting-started/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
@@ -249,9 +241,7 @@ This can be achieved by setting the [`visible`](https://ej2.syncfusion.com/angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/getting-started/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/getting-started/getting-started-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/getting-started/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
@@ -267,9 +257,7 @@ The tooltip is useful when you cannot display information by using the data labe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/3d-chart/getting-started/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/3d-chart/getting-started/getting-started-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/3d-chart/getting-started/getting-started-cs6/src/main.ts %}
 {% endhighlight %}

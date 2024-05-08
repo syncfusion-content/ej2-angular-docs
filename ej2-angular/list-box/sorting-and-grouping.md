@@ -20,9 +20,7 @@ In the following example, the `SortOrder` is set as `Descending`.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listbox/getting-started-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listbox/getting-started-cs16/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listbox/getting-started-cs16/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ In the following example, vegetables are grouped based on its category.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listbox/getting-started-cs17/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/listbox/getting-started-cs17/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listbox/getting-started-cs17/src/main.ts %}
 {% endhighlight %}

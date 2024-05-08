@@ -22,9 +22,7 @@ In the following sample, toggle method has been used to show or hide the Sidebar
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sidebar/openclose-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/sidebar/openclose-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sidebar/openclose-cs1/src/main.ts %}
 {% endhighlight %}

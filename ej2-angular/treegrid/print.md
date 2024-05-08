@@ -16,9 +16,7 @@ To print the TreeGrid, use the [`print`](https://ej2.syncfusion.com/angular/docu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs33/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs33/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs33/src/main.ts %}
 {% endhighlight %}
@@ -43,9 +41,7 @@ To print the treegrid from an external button, invoke the [`print`](https://ej2.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-cs27/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/columns-cs27/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-cs27/src/main.ts %}
 {% endhighlight %}
@@ -61,9 +57,7 @@ By default, the treegrid prints all the pages. To print the current page alone, 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs34/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs34/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs34/src/main.ts %}
 {% endhighlight %}
@@ -95,9 +89,7 @@ In the below example, we have `Duration` as a hidden column in the treegrid. Whi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs35/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-toolbar-cs35/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-toolbar-cs35/src/main.ts %}
 {% endhighlight %}

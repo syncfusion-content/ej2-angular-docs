@@ -16,9 +16,7 @@ You can render your own custom component to the dialog content. The below exampl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/ng-content-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/ng-content-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/ng-content-cs1/src/main.ts %}
 {% endhighlight %}

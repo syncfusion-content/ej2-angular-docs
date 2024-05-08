@@ -18,9 +18,7 @@ The multi-level labels for the Range Selector can be enabled by setting the [`en
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/labels/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/labels/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/labels/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ The multi-level labels can be grouped using the [`groupBy`](https://ej2.syncfusi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/labels/default-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/labels/default-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/labels/default-cs2/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ The [`labelIntersectAction`](https://ej2.syncfusion.com/angular/documentation/ap
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/axis/datetime-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/axis/datetime-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/axis/datetime-cs4/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ By default, the labels can be placed outside the Range Selector. It can also be 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/axis/datetime-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/axis/datetime-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/axis/datetime-cs5/src/main.ts %}
 {% endhighlight %}
@@ -100,9 +92,7 @@ The font size, color, family, etc. can be customized using the [`labelStyle`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rangenavigator/lightweight/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rangenavigator/lightweight/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rangenavigator/lightweight/default-cs1/src/main.ts %}
 {% endhighlight %}

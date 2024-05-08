@@ -18,9 +18,7 @@ To render a area series, use series [`type`](https://ej2.syncfusion.com/angular/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/area-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/area-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/area-cs1/src/main.ts %}
 {% endhighlight %}
@@ -37,9 +35,7 @@ The required `segments` of the series can be customized using the `value`, `colo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/area-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/area-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/area-cs8/src/main.ts %}
 {% endhighlight %}
@@ -59,9 +55,7 @@ The following properties can be used to customize the `area` series.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/area-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/area-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/area-cs9/src/main.ts %}
 {% endhighlight %}
@@ -80,9 +74,7 @@ The following properties in the [bordermodel](https://ej2.syncfusion.com/angular
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/area-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/area-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/area-cs10/src/main.ts %}
 {% endhighlight %}

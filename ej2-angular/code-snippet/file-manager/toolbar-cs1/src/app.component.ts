@@ -1,3 +1,8 @@
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService  } from '@syncfusion/ej2-angular-filemanager'
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
@@ -6,6 +11,10 @@ import {FileManagerComponent} from '@syncfusion/ej2-angular-filemanager';
 import { CheckBoxComponent, ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+imports: [FileManagerModule,  CheckBoxModule],
+
+providers:[ NavigationPaneService, ToolbarService, DetailsViewService],
+standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='files' #fileManager [ajaxSettings]='ajaxSettings' >

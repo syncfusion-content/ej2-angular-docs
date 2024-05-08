@@ -1,3 +1,10 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -7,6 +14,15 @@ import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { SelectionSettingsModel, TreeGridComponent  } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule,
+        DropDownListAllModule
+    ],
+
+providers: [PageService],
+standalone: true,
     selector: 'app-container',
     template:
     `<div style="padding-top: 7px; float:left">Hierarchy Mode</div><div style="padding-left: 10px; display: inline-block"><ejs-dropdownlist (change)='onChange($event)' [dataSource]='dropData' value='Parent' [fields]='fields'></ejs-dropdownlist></div>

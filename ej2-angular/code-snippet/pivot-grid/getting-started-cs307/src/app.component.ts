@@ -1,9 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IDataOptions, IDataSet, PivotView, VirtualScrollService, PDFExportService, BeforeExportEventArgs  } from '@syncfusion/ej2-angular-pivotview';
 import { Button } from '@syncfusion/ej2-buttons';
 import { Pivot_Data } from './datasource';
 
 @Component({
+imports: [
+        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   providers: [PDFExportService,VirtualScrollService],
   template: `<div class="col-md-8">

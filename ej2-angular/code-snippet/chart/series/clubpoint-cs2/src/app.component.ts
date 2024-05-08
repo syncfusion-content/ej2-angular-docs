@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
+import { PieSeriesService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+imports: [
+         AccumulationChartModule
+    ],
+
+providers: [PieSeriesService, AccumulationDataLabelService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-accumulationchart id="chart-container" >
         <e-accumulation-series-collection>

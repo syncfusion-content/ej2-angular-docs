@@ -23,9 +23,7 @@ DropDownList. Here, the `dataBind` method is used to reflect the property change
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdownlist/cascading-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dropdownlist/cascading-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/cascading-cs1/src/main.ts %}
 {% endhighlight %}

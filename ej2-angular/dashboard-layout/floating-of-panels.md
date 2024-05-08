@@ -18,9 +18,7 @@ The following sample demonstrates how to enable or disable the floating of panel
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dashboard-layout/floating-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dashboard-layout/floating-of-panels-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/floating-of-panels-cs1/src/main.ts %}
 {% endhighlight %}

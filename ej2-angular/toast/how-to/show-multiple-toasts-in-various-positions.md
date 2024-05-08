@@ -18,9 +18,7 @@ Here below sample demonstrates to add multiple toasts adding in the different po
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toast/toast-cs17/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs17/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toast/toast-cs17/src/main.ts %}
 {% endhighlight %}

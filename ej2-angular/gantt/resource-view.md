@@ -22,9 +22,7 @@ A task assigned to one or more resources are termed as resource task and it is a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/resourceview/resource-view-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/resourceview/resource-view-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/resourceview/resource-view-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ The range of overallocation dates can be highlighted by a square bracket. It can
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/resourceview/show-hide-overallocation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/resourceview/show-hide-overallocation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/resourceview/show-hide-overallocation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ In Gantt, you can enable taskbar drag and drop between resources by using the [`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/resourceview/multitaskbar-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/resourceview/multitaskbar-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/resourceview/multitaskbar-cs2/src/main.ts %}
 {% endhighlight %}

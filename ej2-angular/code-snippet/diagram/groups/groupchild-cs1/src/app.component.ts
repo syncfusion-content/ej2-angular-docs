@@ -1,9 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
+
 
 
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { DiagramComponent, Diagram, NodeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
+imports: [
+         DiagramModule
+    ],
+
+providers: [ ],
+standalone: true,
     selector: "app-container",
     template: `
     <button (click)="addChild()">addChild</button>

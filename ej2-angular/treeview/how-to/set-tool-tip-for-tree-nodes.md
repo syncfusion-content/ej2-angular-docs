@@ -16,9 +16,7 @@ TreeView control allows you to set tooltip option to tree nodes using the [`tool
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tree-view/tooltip-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/tooltip-cs1/src/main.ts %}
 {% endhighlight %}

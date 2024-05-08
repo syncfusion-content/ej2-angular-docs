@@ -1,8 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { CategoryService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
+import { StackingColumnSeriesService, LineSeriesService} from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, OnInit } from '@angular/core';
 
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ CategoryService, ColumnSeriesService, StackingColumnSeriesService, LineSeriesService],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-chart style='display:block;' align='center' id='chart-container' [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>

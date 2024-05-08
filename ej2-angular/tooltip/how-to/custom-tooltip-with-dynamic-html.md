@@ -24,9 +24,7 @@ content= '<iframe src="https://www.syncfusion.com/products/essential-js2"></ifra
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tooltip/html-page-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tooltip/html-page-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/html-page-cs2/src/main.ts %}
 {% endhighlight %}

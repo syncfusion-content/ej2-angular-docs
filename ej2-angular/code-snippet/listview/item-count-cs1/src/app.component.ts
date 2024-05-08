@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+
 
 
 
 import { Component} from '@angular/core';
 
 @Component({
+imports: [
+        
+        ListViewModule
+    ],
+
+
+standalone: true,
     selector: 'my-app',
     template: `<ejs-listview id='List' [dataSource]='dataSource' cssClass='e-list-template' [fields]='fields'>
       <ng-template #template let-dataSource="">

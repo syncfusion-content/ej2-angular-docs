@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +10,12 @@ import { NumericTextBoxComponent  } from '@syncfusion/ej2-angular-inputs';
 import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
 
 @Component({
+imports: [
+        FormsModule, NumericTextBoxModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // Initializes the NumericTextBox
     //Renders submit button for validating the NumericTextBox

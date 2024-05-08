@@ -18,9 +18,7 @@ The rendered Maps can be printed directly from the browser by calling the [`prin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs79/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs79/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs79/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ To use the image export functionality in Maps, **ImageExport** module must be in
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs80/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs80/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs80/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ We can get the image file as base64 string for the JPEG and PNG formats. The ren
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs81/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs81/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs81/src/main.ts %}
 {% endhighlight %}
@@ -78,9 +72,7 @@ To use the PDF export functionality, **PdfExport** module must be injected into 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs82/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs82/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs82/src/main.ts %}
 {% endhighlight %}
@@ -102,9 +94,7 @@ The rendered Maps with providers such as OSM, Bing and Google static maps can be
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs83/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/datetime-cs83/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/datetime-cs83/src/main.ts %}
 {% endhighlight %}

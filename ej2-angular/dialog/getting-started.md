@@ -220,9 +220,7 @@ Run the `ng serve` command in command window, it will serve your application and
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/getting-started-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
@@ -253,9 +251,7 @@ While the user clicks the overlay, the action can be handled through the [`overl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/getting-started-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
@@ -271,9 +267,7 @@ The Dialog header can be enabled by adding the header content as text or HTML co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/getting-started-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
@@ -295,9 +289,7 @@ The below sample render with button and its click event.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/getting-started-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
@@ -316,9 +308,7 @@ From `16.2.x` version, enabled draggable support for modal Dialog also.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/getting-started-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
@@ -339,9 +329,7 @@ The below example demonstrates the different Dialog positions.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dialog/position-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/dialog/position-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dialog/position-cs1/src/main.ts %}
 {% endhighlight %}

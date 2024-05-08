@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { MapsModule } from '@syncfusion/ej2-angular-maps'
+
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
@@ -6,6 +10,10 @@ import { california } from './california';
 import { texas } from './texas';
 
 @Component({
+imports: [
+         MapsModule
+    ],
+standalone: true,
     selector: 'app-container',
     // specifies the template string for the maps component.
     template:`<div class="control-section">

@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+
 
 
 import { Component } from '@angular/core';
@@ -5,6 +9,14 @@ import { IDataOptions, IDataSet, PivotView, GroupingBarService, PivotActionCompl
 import { Pivot_Data } from './datasource';
 
 @Component({
+imports: [
+        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   providers: [GroupingBarService],
   // specifies the template string for the pivot table component

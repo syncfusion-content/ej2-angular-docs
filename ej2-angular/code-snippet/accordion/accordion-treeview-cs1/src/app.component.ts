@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { AccordionModule, TreeViewAllModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
@@ -7,6 +11,12 @@ import { Accordion, ExpandEventArgs, TreeView } from '@syncfusion/ej2-navigation
 import { DocDB, DownloadDB, PicDB } from './datasource';
 
 @Component({
+imports: [
+         AccordionModule, TreeViewAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   template: `
     <ejs-accordion #element>

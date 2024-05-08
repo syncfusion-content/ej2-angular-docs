@@ -1,9 +1,23 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { DetailRowService } from '@syncfusion/ej2-angular-grids'
+import { SwitchModule } from '@syncfusion/ej2-angular-buttons'
+
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
+imports: [
+        
+        GridModule,
+        SwitchModule        
+    ],
+
+providers: [DetailRowService],
+standalone: true,
   selector: 'app-root',
   template: `<div style="padding:0px 0px 20px 0px">
             <label> Enable/Disable Row Hover</label>

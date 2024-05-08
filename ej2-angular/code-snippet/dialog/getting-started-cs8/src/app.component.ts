@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 
 
 import { Component, ViewChild, OnInit, ElementRef } from '@angular/core';
@@ -6,6 +10,13 @@ import { L10n } from '@syncfusion/ej2-base';
 import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
+imports: [
+        
+		DialogModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `
     <button class="e-control e-btn" style="position: absolute;" id="targetButton" (click)="onOpenDialog($event)">Open Dialog</button>

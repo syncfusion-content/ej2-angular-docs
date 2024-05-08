@@ -1,9 +1,26 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { data } from './datasource';
 import { PageService,GridComponent, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+imports: [
+        
+        GridModule,
+        NumericTextBoxModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                GroupService],
+standalone: true,
     selector: 'app-root',
     template:`
         <ejs-grid #grid [dataSource]='data' [allowPaging]='true'
@@ -30,7 +47,6 @@ import { ChangeEventArgs } from '@syncfusion/ej2-angular-inputs';
                 <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
             </e-columns>
             </ejs-grid>`,
-    providers: [PageService],
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

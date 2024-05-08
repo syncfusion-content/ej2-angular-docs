@@ -25,9 +25,7 @@ The [`insert`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#in
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/editing-cs1/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/editing-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/editing-cs1/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ The [`update`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#up
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/editing-cs2/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/editing-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/editing-cs2/src/main.ts %}
 {% endhighlight %}
@@ -71,9 +67,7 @@ The [`remove`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#re
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/editing-cs3/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/editing-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/editing-cs3/src/main.ts %}
 {% endhighlight %}
@@ -94,9 +88,7 @@ The [`remove`](https://ej2.syncfusion.com/documentation/api/data/dataManager/#re
 {% highlight html tabtitle="app.template.html" %}
 {% include code-snippet/data/batchediting-cs1/src/app.template.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/data/batchediting-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/data/batchediting-cs1/src/main.ts %}
 {% endhighlight %}

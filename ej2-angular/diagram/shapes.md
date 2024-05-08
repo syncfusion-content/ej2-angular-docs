@@ -30,9 +30,7 @@ Texts can be added to the diagram as [`text`](https://ej2.syncfusion.com/angular
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/shapes/text-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/shapes/text-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/shapes/text-cs1/src/main.ts %}
 {% endhighlight %}
@@ -50,9 +48,7 @@ The following code illustrates how an image node is created.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/shapes/image-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/shapes/image-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/shapes/image-cs1/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ The following code illustrates how add Base64 image into image node.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/shapes/image-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/shapes/image-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/shapes/image-cs2/src/main.ts %}
 {% endhighlight %}
@@ -96,9 +90,7 @@ The following code illustrates how to scale or stretch the content of the image 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/shapes/alignment-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/shapes/alignment-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/shapes/alignment-cs1/src/main.ts %}
 {% endhighlight %}
@@ -123,9 +115,7 @@ Html elements can be embedded in the diagram through [`Html`](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/shapes/html-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/shapes/html-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/shapes/html-cs1/src/main.ts %}
 {% endhighlight %}
@@ -143,9 +133,7 @@ Html elements can be embedded in the diagram through [`Html`](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/shapes/html-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/shapes/html-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/shapes/html-cs2/src/main.ts %}
 {% endhighlight %}
@@ -161,9 +149,7 @@ Diagram provides support to embed SVG element into a node. The shape property of
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/shapes/native-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/shapes/native-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/shapes/native-cs1/src/main.ts %}
 {% endhighlight %}
@@ -200,9 +186,7 @@ The following code example illustrates how to create a basic shape.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/shapes/basic-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/shapes/basic-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/shapes/basic-cs1/src/main.ts %}
 {% endhighlight %}
@@ -228,9 +212,7 @@ The [`Path`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/shapes/path-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/shapes/path-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/shapes/path-cs1/src/main.ts %}
 {% endhighlight %}
@@ -246,9 +228,7 @@ The [`flow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/shapes/path-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/diagram/shapes/path-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/diagram/shapes/path-cs2/src/main.ts %}
 {% endhighlight %}

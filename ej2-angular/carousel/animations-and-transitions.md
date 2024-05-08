@@ -22,9 +22,7 @@ The following demo depicts the example for fade animation,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ The following demo depicts the example for `parallax` custom animation,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/custom-animation-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/custom-animation-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/custom-animation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ Using the items property, you can set different intervals for each item to trans
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs2/src/main.ts %}
 {% endhighlight %}
@@ -80,9 +74,7 @@ In the carousel, all slides transitions are performed continuously after the spe
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs3/src/main.ts %}
 {% endhighlight %}
@@ -100,9 +92,7 @@ The following example depicts the code to play the slides when hovering the mous
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs4/src/main.ts %}
 {% endhighlight %}
@@ -118,9 +108,7 @@ In the carousel, slides transitions are repeated continuously when you reach the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs5/src/main.ts %}
 {% endhighlight %}
@@ -138,9 +126,7 @@ The following demo depicts the example for carousel events,
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs6/src/main.ts %}
 {% endhighlight %}
@@ -156,9 +142,7 @@ In the carousel, you can swipe the carousel slides using touch actions by defaul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/default-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/default-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/default-cs7/src/main.ts %}
 {% endhighlight %}
@@ -182,9 +166,7 @@ The following are the different swipe modes available in the carousel:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/carousel/swipe-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/carousel/swipe-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/carousel/swipe-cs1/src/main.ts %}
 {% endhighlight %}

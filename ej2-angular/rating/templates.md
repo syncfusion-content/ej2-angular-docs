@@ -27,9 +27,7 @@ If the `fullTemplate` is not defined, the `emptyTemplate` will be used as the de
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/templates/emptytemplate-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/templates/emptytemplate-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/templates/emptytemplate-cs/src/main.ts %}
 {% endhighlight %}
@@ -51,9 +49,7 @@ The `value` and `index` are available in the template context for accessing info
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/templates/fulltemplate-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/templates/fulltemplate-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/templates/fulltemplate-cs/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +68,7 @@ You can use emojis of your choice as rating symbol by specifying them as templat
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/templates/emoji-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/templates/emoji-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/templates/emoji-cs/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +87,7 @@ You can use SVG icons of your choice as rating symbol by specifying them as temp
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/templates/svg-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/templates/svg-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/templates/svg-cs/src/main.ts %}
 {% endhighlight %}
@@ -114,9 +106,7 @@ You can use PNG images of your choice as rating symbol by specifying them as tem
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rating/templates/png-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rating/templates/png-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rating/templates/png-cs/src/main.ts %}
 {% endhighlight %}

@@ -1,15 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RibbonModule } from '@syncfusion/ej2-angular-ribbon';
 import { AppComponent } from './app.component';
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
 
-/**
- * Module
- */
 @NgModule({
-    imports: [
-        BrowserModule, GanttModule
-    ],
+    imports: [BrowserModule, RibbonModule, CheckBoxModule],
     declarations: [AppComponent],
     bootstrap: [AppComponent]
 })

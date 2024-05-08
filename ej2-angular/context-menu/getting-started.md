@@ -167,9 +167,7 @@ The following example shows a basic `ContextMenu` component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/context-menu/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/context-menu/getting-started-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/context-menu/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
@@ -185,9 +183,7 @@ The Separators are the horizontal lines used to separate the menu items. You `ca
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/context-menu/separators-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/context-menu/separators-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/context-menu/separators-cs1/src/main.ts %}
 {% endhighlight %}

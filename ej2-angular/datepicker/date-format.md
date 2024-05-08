@@ -26,9 +26,7 @@ The following example demonstrates the DatePicker with the custom format (`yyyy-
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/getting-started-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ The following example demonstrates how to parse the date value and format the da
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/datepicker/parse-format-date-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/datepicker/parse-format-date-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/datepicker/parse-format-date-cs1/src/main.ts %}
 {% endhighlight %}

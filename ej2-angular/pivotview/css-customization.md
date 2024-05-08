@@ -18,9 +18,7 @@ The visibility of row, column, value and filter axis in Field List and Grouping 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/css-custom-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/css-custom-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/css-custom-cs1/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ The alignment of text inside row headers, column headers, value cells and summar
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/text-align-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/text-align-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/text-align-cs1/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ The elements in pivot table like header cell, value cell and summary cell style 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/summary-cell-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/summary-cell-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/summary-cell-cs1/src/main.ts %}
 {% endhighlight %}

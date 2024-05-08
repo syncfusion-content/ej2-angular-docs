@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { TabComponent, TabItemsDirective, TabItemDirective } from '@syncfusion/ej2-angular-navigations'
+import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -11,6 +17,12 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
  */
 
 @Component({
+imports: [
+        FormsModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     // specifies the template url path
     template: ` <div id="wrapper" style='margin-top: 20px'><div id='content' style="margin: 0px auto">

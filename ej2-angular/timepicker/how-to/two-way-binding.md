@@ -18,9 +18,7 @@ The following example demonstrates how to achieve **two-way binding** by binding
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timepicker/two-way-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timepicker/two-way-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timepicker/two-way-cs1/src/main.ts %}
 {% endhighlight %}

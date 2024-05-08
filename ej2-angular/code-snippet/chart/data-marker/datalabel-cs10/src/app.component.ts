@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { DateTimeService, CategoryService, LineSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
+import { LegendService, DataLabelService } from '@syncfusion/ej2-angular-charts'
+
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
@@ -13,6 +19,12 @@ let total: any = [];
  * Sample for Column Series
  */
 @Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ DateTimeService, LineSeriesService, LegendService, DataLabelService, ColumnSeriesService, CategoryService ],
+standalone: true,
     selector: 'app-container',
     template: `<div class="control-section">
     <div align='center'>

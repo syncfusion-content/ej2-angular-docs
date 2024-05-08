@@ -64,9 +64,7 @@ The following example demonstrates how to enable context menu feature in the gri
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/context-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/context-menu-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/context-menu-cs1/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +88,7 @@ The following example demonstrates how to add custom context menu items in the G
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/context-menu-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/context-menu-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/context-menu-cs2/src/main.ts %}
 {% endhighlight %}
@@ -114,9 +110,7 @@ The following example demonstrates how to show context menu on left click using 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/context-menu-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/context-menu-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/context-menu-cs3/src/main.ts %}
 {% endhighlight %}
@@ -140,9 +134,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/context-menu-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/context-menu-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/context-menu-cs4/src/main.ts %}
 {% endhighlight %}
@@ -162,9 +154,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/context-menu-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/context-menu-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/context-menu-cs5/src/main.ts %}
 {% endhighlight %}

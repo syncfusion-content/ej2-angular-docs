@@ -26,9 +26,7 @@ The following code example shows how to add the format painter tool in the Rich 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/format-painter-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/format-painter-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/format-painter-cs1/src/main.ts %}
 {% endhighlight %}
@@ -56,9 +54,7 @@ Using the `deniedFormats` property following styles are denied copying from the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/format-painter-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/rich-text-editor/format-painter-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/format-painter-cs2/src/main.ts %}
 {% endhighlight %}

@@ -18,9 +18,7 @@ The following code example shows how to set the active sheet when importing an E
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/change-active-sheet-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/change-active-sheet-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/change-active-sheet-cs1/src/main.ts %}
 {% endhighlight %}

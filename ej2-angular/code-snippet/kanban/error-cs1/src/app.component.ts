@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +9,13 @@ import { CardSettingsModel, KanbanComponent } from '@syncfusion/ej2-angular-kanb
 import { DataManager } from '@syncfusion/ej2-data';
 
 @Component({
+imports: [
+        
+        KanbanModule
+    ],
+
+
+standalone: true,
   selector: 'app-root',
   template: `<ejs-kanban #Kanban keyField='Status' [dataSource]='dataManager' [cardSettings]='cardSettings'  (actionFailure)="onActionFailure($event)">
                 <e-columns>

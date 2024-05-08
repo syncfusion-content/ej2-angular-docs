@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { EditService, SelectionService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -11,6 +16,12 @@ import { DropDownList } from "@syncfusion/ej2-dropdowns";
 import { editingData} from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [EditService, SelectionService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt #gantt id="ganttDefault" height="430px" [dataSource]="editingData" [taskFields]="taskSettings"  [toolbar]="toolbar" [editDialogFields]="editDialogFields" [addDialogFields]="addDialogFields" [editSettings]="editSettings" [columns]="columns" (actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)"> </ejs-gantt>`,

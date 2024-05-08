@@ -18,9 +18,7 @@ To use the print functionality, we should inject the `PrintService` into the `@N
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs47/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs47/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs47/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ To use the image export functionality, we should inject the `ImageExportService`
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs48/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs48/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs48/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +54,7 @@ We can get the image file as base64 string for the JPEG and PNG formats. The tre
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs49/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs49/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs49/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +70,7 @@ To use the PDF export functionality, we should inject the `PdfExportService` int
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs50/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treemap/getting-started/treemap-cs50/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treemap/getting-started/treemap-cs50/src/main.ts %}
 {% endhighlight %}

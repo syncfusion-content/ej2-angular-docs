@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, SortService, FilterService, GroupService, DetailRowService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -13,6 +19,18 @@ interface Employee {
   }
 
 @Component({
+imports: [
+        
+        ButtonModule,
+        GridModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                GroupService,
+                DetailRowService],
+standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [childGrid]='childGrid' (rowDataBound)="rowDataBound($event)">
                     <e-columns>

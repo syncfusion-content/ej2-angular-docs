@@ -126,9 +126,7 @@ export class AppComponent implements OnInit {
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pager/pager-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pager/pager-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pager/pager-cs1/src/main.ts %}
 {% endhighlight %}
@@ -146,9 +144,7 @@ and [`pageSize`](#page-size) values.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pager/pager-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pager/pager-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pager/pager-cs2/src/main.ts %}
 {% endhighlight %}
@@ -170,9 +166,7 @@ Output will be appears as follows.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pager/pager-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pager/pager-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pager/pager-cs3/src/main.ts %}
 {% endhighlight %}

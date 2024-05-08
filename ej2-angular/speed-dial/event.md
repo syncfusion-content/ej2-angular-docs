@@ -193,9 +193,7 @@ Below example demonstrates the clicked event of the Speed Dial component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/action-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/action-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/action-cs1/src/main.ts %}
 {% endhighlight %}

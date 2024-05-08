@@ -1,3 +1,10 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
@@ -7,6 +14,17 @@ import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule,
+        DropDownListAllModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService],
+standalone: true,
     selector: 'app-container',
     encapsulation:ViewEncapsulation.None,
     template: `<div>

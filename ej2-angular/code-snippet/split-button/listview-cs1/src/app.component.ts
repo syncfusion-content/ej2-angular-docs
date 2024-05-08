@@ -1,8 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SplitButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+import { ListViewModule } from '@syncfusion/ej2-angular-lists'
+
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        
+        SplitButtonModule,
+        ListViewModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <!-- To render ListView. -->

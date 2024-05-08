@@ -1,9 +1,20 @@
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule, ModuleWithProviders, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
+import { AccordionModule } from '@syncfusion/ej2-angular-navigations'
+
 
 
 
 import { Component, ViewEncapsulation, Inject } from '@angular/core';
 
 @Component({
+imports: [
+        
+        AccordionModule
+    ],
+
+
+standalone: true,
   selector: 'my-thing',
   templateUrl: './app.component.html'
 })

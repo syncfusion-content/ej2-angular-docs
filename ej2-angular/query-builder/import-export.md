@@ -28,9 +28,7 @@ To initially apply conditions, you can establish the [`rule`](https://ej2.syncfu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/filtering-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/filtering-cs8/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ You can set the conditions from structured JSON object through the [`setRules`](
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/filtering-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/filtering-cs9/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +64,7 @@ Importing from Inline SQL involves integrating SQL queries directly into the Que
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/filtering-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/filtering-cs10/src/main.ts %}
 {% endhighlight %}
@@ -86,9 +80,7 @@ Importing from Parameter SQL involves integrating SQL queries with parameters di
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/filtering-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/filtering-cs12/src/main.ts %}
 {% endhighlight %}
@@ -104,9 +96,7 @@ Importing from Named Parameter SQL involves integrating SQL queries with named p
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/filtering-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/filtering-cs13/src/main.ts %}
 {% endhighlight %}
@@ -122,9 +112,7 @@ Importing from MongoDB Query involves integrating MongoDB queries directly into 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/filtering-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/filtering-cs14/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/filtering-cs14/src/main.ts %}
 {% endhighlight %}
@@ -152,9 +140,7 @@ Exporting to Inline SQL Query entails embedding the defined conditions from the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/export-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/export-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/export-cs1/src/main.ts %}
 {% endhighlight %}
@@ -170,9 +156,7 @@ Exporting to Parameter SQL involves incorporating the defined conditions from th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/export-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/export-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/export-cs2/src/main.ts %}
 {% endhighlight %}
@@ -188,9 +172,7 @@ Exporting to Named Parameter SQL entails integrating the defined conditions from
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/export-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/export-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/export-cs3/src/main.ts %}
 {% endhighlight %}
@@ -206,9 +188,7 @@ Exporting to MongoDB Query involves converting the defined conditions within the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/query-builder/export-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/query-builder/export-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/export-cs4/src/main.ts %}
 {% endhighlight %}

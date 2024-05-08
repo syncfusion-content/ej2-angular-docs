@@ -1,8 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 
 
     import { Component, ViewChild } from '@angular/core';
     import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextEditorComponent} from '@syncfusion/ej2-angular-richtexteditor';
     @Component({
+imports: [
+        
+        RichTextEditorAllModule,
+        DialogModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template:`<ejs-richtexteditor #defaultRTE id='defaultRTE' [toolbarSettings]='tools' [keyConfig]='keyConfig' (create)='onCreate($event)'></ejs-richtexteditor>`,
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]

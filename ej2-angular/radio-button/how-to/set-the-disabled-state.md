@@ -18,9 +18,7 @@ The following example illustrates how to disable a radio button and the selected
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/radio-button/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/radio-button/getting-started-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/radio-button/getting-started-cs3/src/main.ts %}
 {% endhighlight %}

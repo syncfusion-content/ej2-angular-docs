@@ -16,9 +16,7 @@ You can disable the check box alone in TreeView instead of disabling the whole n
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/disable-checkbox-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tree-view/disable-checkbox-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/disable-checkbox-cs1/src/main.ts %}
 {% endhighlight %}

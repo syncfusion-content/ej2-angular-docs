@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { AggregateService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -5,6 +10,13 @@ import { data } from './datasource';
 import { ReturnType } from '@syncfusion/ej2-grids';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [AggregateService],
+standalone: true,
     selector: 'app-root',
     templateUrl: 'app.template.html'
 })

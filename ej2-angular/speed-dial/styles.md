@@ -24,9 +24,7 @@ You can use the [`openIconCss`](https://ej2.syncfusion.com/angular/documentation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/styles-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/styles-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/styles-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ You can show only text in Speed Dial button by setting [`content`](https://ej2.s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/styles-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/styles-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/styles-cs2/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ You show icon and text in SpeedDial button using [`openIconCss`](https://ej2.syn
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/styles-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/styles-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/styles-cs3/src/main.ts %}
 {% endhighlight %}
@@ -103,9 +97,7 @@ The Angular Speed Dial supports the following predefined styles that can be defi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/styles-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/styles-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/styles-cs4/src/main.ts %}
 {% endhighlight %}
@@ -137,9 +129,7 @@ You can show tooltip on hover to show additional details to end-user by setting 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/styles-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/styles-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/styles-cs5/src/main.ts %}
 {% endhighlight %}
@@ -155,9 +145,7 @@ You can use [`opensOnHover`](https://ej2.syncfusion.com/angular/documentation/ap
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/speed-dial/styles-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/speed-dial/styles-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/speed-dial/styles-cs6/src/main.ts %}
 {% endhighlight %}

@@ -20,9 +20,7 @@ You can assign a file name for the exported document by defining the `fileName` 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ Page orientation can be changed to `Portrait` (Default Landscape) for the export
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs2/src/main.ts %}
 {% endhighlight %}
@@ -85,9 +81,7 @@ The supported page sizes are:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs3/src/main.ts %}
 {% endhighlight %}
@@ -103,9 +97,7 @@ PDF export provides an option to export the current view data into PDF. To expor
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs4/src/main.ts %}
 {% endhighlight %}
@@ -121,9 +113,7 @@ By default, we render the default footer for a PDF file, this can be enabled or 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs5/src/main.ts %}
 {% endhighlight %}
@@ -139,9 +129,7 @@ PDF export provides an option to export hidden columns of Gantt by defining the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs6/src/main.ts %}
 {% endhighlight %}
@@ -157,9 +145,7 @@ By using `showPredecessorLines`, you can hide or show predecessor lines in the e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs7/src/main.ts %}
 {% endhighlight %}
@@ -179,9 +165,7 @@ In the following example, there is a hidden column `Duration` in the Gantt. Whil
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs8/src/main.ts %}
 {% endhighlight %}
@@ -199,9 +183,7 @@ In the following sample, the background color is set for `Progress` column in th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs9/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs9/src/main.ts %}
 {% endhighlight %}
@@ -219,9 +201,7 @@ In the following sample, the header background color is set for timeline cells i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs10/src/main.ts %}
 {% endhighlight %}
@@ -239,9 +219,7 @@ In the following sample, the taskbar background color is customized in the chart
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs11/src/main.ts %}
 {% endhighlight %}
@@ -264,9 +242,7 @@ The available themes are:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs12/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs12/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs12/src/main.ts %}
 {% endhighlight %}
@@ -284,9 +260,7 @@ To customize the Gantt style in exported PDF, define the 'ganttStyle' in `pdfExp
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/pdf-export-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/pdf-export-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/pdf-export-cs13/src/main.ts %}
 {% endhighlight %}

@@ -20,9 +20,7 @@ The tooltip is not visible by default. To make it visible, set the [`enable`](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs34/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs34/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs34/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ Any HTML elements can be displayed in the tooltip by using the [`template`](http
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/user-interaction/tooltipTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/user-interaction/tooltipTemplate-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/user-interaction/tooltipTemplate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ The following properties can be used to customize the Bullet Chart tooltip.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs35/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/bullet-chart/getting-started/range-cs35/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/bullet-chart/getting-started/range-cs35/src/main.ts %}
 {% endhighlight %}

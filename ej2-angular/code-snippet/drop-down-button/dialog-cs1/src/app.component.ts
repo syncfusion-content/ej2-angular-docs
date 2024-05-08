@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DropDownButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -5,6 +11,14 @@ import { ItemModel, MenuEventArgs, DropDownButtonComponent  } from '@syncfusion/
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
+imports: [
+        
+        DialogModule,
+        DropDownButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <!-- To render Dialog. -->

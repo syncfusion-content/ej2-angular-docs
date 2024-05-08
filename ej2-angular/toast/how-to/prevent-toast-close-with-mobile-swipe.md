@@ -18,9 +18,7 @@ The following sample demonstrates preventing toast close with mobile swipe eleme
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toast/toast-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toast/toast-cs13/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toast/toast-cs13/src/main.ts %}
 {% endhighlight %}

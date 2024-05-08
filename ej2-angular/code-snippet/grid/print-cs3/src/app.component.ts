@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 import { Component, OnInit } from '@angular/core';
@@ -6,6 +11,14 @@ import { ToolbarItems, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+imports: [
+        
+        GridModule,
+        DropDownListAllModule
+    ],
+
+providers: [ToolbarService, PageService],
+standalone: true,
     selector: 'app-root',
     template: `<div style="display:flex;">
     <label style="padding: 10px 10px 26px 0">Select Print Mode </label>

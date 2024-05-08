@@ -16,9 +16,7 @@ You can add link inside Toolbar using Angular **ng-template**. We need to use `n
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/toolbar/toolbar-link-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/toolbar/toolbar-link-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/toolbar/toolbar-link-cs1/src/main.ts %}
 {% endhighlight %}

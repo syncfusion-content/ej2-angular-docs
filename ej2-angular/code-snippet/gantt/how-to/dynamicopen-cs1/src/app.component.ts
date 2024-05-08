@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -9,6 +14,12 @@ import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { editingData , editingResources } from './data';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [EditService, SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
        `<button ejs-button id='editDialog' (click)='edit()'>Edit Dialog</button>

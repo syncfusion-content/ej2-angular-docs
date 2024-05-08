@@ -17,9 +17,7 @@ To render a range column series, use series [`type`](https://ej2.syncfusion.com/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/column-cs19/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/column-cs19/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/column-cs19/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ The following properties can be used to customize the `range column` series.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/rangecolumn-cs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/chart/series/rangecolumn-cs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/rangecolumn-cs/src/main.ts %}
 {% endhighlight %}

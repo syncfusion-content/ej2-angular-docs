@@ -21,9 +21,7 @@ To enable the chunk upload, set the size to [chunkSize](https://ej2.syncfusion.c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/chunk-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/chunk-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/chunk-cs1/src/main.ts %}
 {% endhighlight %}
@@ -51,9 +49,7 @@ The following sample specifies the chunk upload delay with 3000 milliseconds and
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/retry-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/retry-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/retry-cs1/src/main.ts %}
 {% endhighlight %}
@@ -71,9 +67,7 @@ Allows you to resume an upload operation after a network failure or manually int
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/resumable-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/resumable-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/resumable-cs1/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +87,7 @@ The following example explains about chunk upload with cancel support.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/uploader/cancel-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/uploader/cancel-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/uploader/cancel-cs1/src/main.ts %}
 {% endhighlight %}

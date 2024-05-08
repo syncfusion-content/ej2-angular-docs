@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { FilterService,ToolbarService } from '@syncfusion/ej2-angular-gantt'
+
 
 
 
@@ -6,6 +11,12 @@ import { Gantt } from '@syncfusion/ej2-gantt';
 import { ToolbarItem } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+providers: [FilterService,ToolbarService],
+standalone: true,
     selector: 'app-root',
     template:
        `<ejs-gantt id="ganttDefault" height="430px" [allowFiltering]='true' [dataSource]="data" [taskFields]="taskSettings"[columns]="columns" [toolbar]="toolbar" [timelineSettings]="timelineSettings" [labelSettings]="labelSettings" [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate" [splitterSettings]="splitterSettings"></ejs-gantt>`,

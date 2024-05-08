@@ -24,9 +24,7 @@ In the following example, the `allowMultiSelection` property is enabled.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tree-view/getting-started-cs10/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/getting-started-cs10/src/main.ts %}
 {% endhighlight %}
@@ -50,9 +48,7 @@ When a node is selected, the selected node’s ID is displayed in alert.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/tree-view/getting-started-cs11/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/getting-started-cs11/src/main.ts %}
 {% endhighlight %}

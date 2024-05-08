@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, FilterService, PageService} from '@syncfusion/ej2-angular-grids'
+import { MultiSelectModule, CheckBoxSelectionService,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+
 import { Component, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import {
@@ -16,9 +22,18 @@ import { DatePicker } from '@syncfusion/ej2-angular-calendars';
 import { NumericTextBox } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+imports: [
+        
+        GridModule,
+        MultiSelectModule,
+        DropDownListAllModule,
+        CheckBoxModule
+    ],
+
+providers: [FilterService, PageService,CheckBoxSelectionService],
+standalone: true,
     selector: 'app-root',
-    templateUrl: 'app.template.html',
-    providers: [FilterService],
+    templateUrl: 'app.template.html'
 })
 export class AppComponent {
     public pageSettings?: Object;

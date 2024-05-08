@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+
 
 
 import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
@@ -7,12 +13,20 @@ import { DropDownList } from "@syncfusion/ej2-dropdowns";
 import { DateTimePicker } from "@syncfusion/ej2-calendars";
 import { FormValidators, FormValidator, TextBox } from "@syncfusion/ej2-angular-inputs";
 import { PopupOpenEventArgs, EventRenderedArgs, ScheduleComponent, MonthService, DayService, WeekService,
-  WorkWeekService, EventSettingsModel, ResizeService, DragAndDropService, EJ2Instance
+  WorkWeekService, EventSettingsModel, ResizeService, DragAndDropService, EJ2Instance , AgendaService, MonthAgendaService
 } from "@syncfusion/ej2-angular-schedule";
 import { eventData } from './datasource';
 @Component({
+imports: [
+        
+        ScheduleModule,
+        TimePickerModule,
+        DropDownListModule,
+        DateTimePickerModule 
+    ],
+standalone: true,
     selector: 'app-root',
-    providers: [ MonthService, DayService, WeekService, WorkWeekService, ResizeService, DragAndDropService],
+    providers: [ MonthService, DayService, WeekService, WorkWeekService, ResizeService, DragAndDropService, MonthAgendaService, AgendaService],
     encapsulation: ViewEncapsulation.None,
     // specifies the template string for the Schedule component
     template: `<ejs-schedule width='100%' height='550px' [selectedDate]='selectedDate' [views]='views' [eventSettings]='eventSettings' [showQuickInfo]='showQuickInfo' (popupOpen)='onPopupOpen($event)' >

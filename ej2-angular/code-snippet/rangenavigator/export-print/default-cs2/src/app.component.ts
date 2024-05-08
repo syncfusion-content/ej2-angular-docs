@@ -1,3 +1,8 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule, RangeNavigatorModule } from '@syncfusion/ej2-angular-charts'
+import { AreaSeriesService, DateTimeService, StepLineSeriesService} from '@syncfusion/ej2-angular-charts'
+
 
 
 
@@ -7,6 +12,12 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { RangeNavigatorComponent } from '@syncfusion/ej2-angular-charts';
 
 @Component({
+imports: [
+         ChartModule, RangeNavigatorModule
+    ],
+
+providers: [ AreaSeriesService, DateTimeService, StepLineSeriesService ],
+standalone: true,
     selector: 'app-container',
     template: `<button ej-button id='print' (click)='print()'>Print</button>
     <ejs-rangenavigator #range id="range" valueType='DateTime' [value]='value'>

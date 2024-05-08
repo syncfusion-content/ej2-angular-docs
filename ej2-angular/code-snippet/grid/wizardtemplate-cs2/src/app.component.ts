@@ -1,3 +1,10 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'
+import { CheckBoxAllModule, ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -8,6 +15,16 @@ import { DataUtil } from '@syncfusion/ej2-data';
 import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        CheckBoxAllModule,
+        GridModule,
+        ButtonModule,
+        DropDownListAllModule, ReactiveFormsModule, FormsModule
+    ],
+
+providers: [EditService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     templateUrl: `wizardtemplate.html`
 })

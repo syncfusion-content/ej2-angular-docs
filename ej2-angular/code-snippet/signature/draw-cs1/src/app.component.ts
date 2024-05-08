@@ -1,3 +1,11 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { SignatureModule } from '@syncfusion/ej2-angular-inputs'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { enableRipple } from '@syncfusion/ej2-base'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -6,6 +14,12 @@ import { SignatureComponent } from '@syncfusion/ej2-angular-inputs';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+imports: [
+        FormsModule, DropDownListModule,ButtonModule,SignatureModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
             <div id="signature-control">

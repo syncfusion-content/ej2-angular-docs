@@ -1,9 +1,20 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        
+        RadioButtonModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',
     // To customize RadioButton appearance
     template: `<div class="e-section-control">

@@ -161,9 +161,7 @@ The following example illustrates the output in your browser.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/numerictextbox/getting-started-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
@@ -183,9 +181,7 @@ The below example demonstrates range validation.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/numerictextbox/getting-started-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
@@ -203,9 +199,7 @@ The below example demonstrates format the value by using currency format value `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/numerictextbox/getting-started-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
@@ -225,9 +219,7 @@ Else, number of decimals will be restricted while typing in the NumericTextBox.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/numerictextbox/getting-started-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs7/src/main.ts %}
 {% endhighlight %}
@@ -244,9 +236,7 @@ The below example demonstrates two-way binding functionality with the NumericTex
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/numerictextbox/getting-started-cs8/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/numerictextbox/getting-started-cs8/src/main.ts %}
 {% endhighlight %}
@@ -270,9 +260,7 @@ The following example demonstrates how to use the reactive forms.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/numerictextbox/reactive-forms-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/numerictextbox/reactive-forms-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/numerictextbox/reactive-forms-cs1/src/main.ts %}
 {% endhighlight %}

@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ResizeService } from '@syncfusion/ej2-angular-grids'
+
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -5,6 +9,13 @@ import { GridComponent, ResizeArgs, Column } from '@syncfusion/ej2-angular-grids
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [ResizeService],
+standalone: true,
     selector: 'app-root',
     template: ` 
     <div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>

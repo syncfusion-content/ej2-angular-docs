@@ -22,9 +22,7 @@ The following code example demonstrates how to define a validation rule for grid
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs33/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs33/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs33/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ In the below demo, custom validation applied for **CustomerID** column.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs34/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs34/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs34/src/main.ts %}
 {% endhighlight %}
@@ -62,9 +58,7 @@ In the following sample, dropdownlist edit type is used for the **Role** and **S
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs35/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs35/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs35/src/main.ts %}
 {% endhighlight %}
@@ -82,9 +76,7 @@ In the following example, custom validation functions, namely **customFn** and *
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-validation-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-validation-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-validation-cs5/src/main.ts %}
 {% endhighlight %}
@@ -104,9 +96,7 @@ The following example to demonstrates how to dynamically add or remove a require
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-validation-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-validation-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-validation-cs3/src/main.ts %}
 {% endhighlight %}
@@ -128,9 +118,7 @@ Here's an example that demonstrates how to change the position of the validation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-validation-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-validation-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-validation-cs4/src/main.ts %}
 {% endhighlight %}

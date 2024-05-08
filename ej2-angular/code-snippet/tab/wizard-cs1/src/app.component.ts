@@ -1,3 +1,13 @@
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridAllModule } from '@syncfusion/ej2-angular-grids'
+import { DialogAllModule } from '@syncfusion/ej2-angular-popups'
+import { TabAllModule } from '@syncfusion/ej2-angular-navigations'
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
+import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 
 
 
@@ -15,6 +25,19 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
  */
 // tslint:disable:max-line-length
 @Component({
+imports: [
+        FormsModule,
+        TabAllModule,
+        
+        GridAllModule,
+        DialogAllModule,
+        DatePickerAllModule,
+        DropDownListAllModule,
+        NumericTextBoxAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     templateUrl: './app.component.html',
     encapsulation: ViewEncapsulation.None
