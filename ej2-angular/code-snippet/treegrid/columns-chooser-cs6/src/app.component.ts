@@ -45,6 +45,6 @@ export class AppComponent implements OnInit {
         this.toolbarOptions = ['ColumnChooser'];
     }
     load(args:any) {
-        this.treegrid.grid.columnChooserSettings = { ignoreAccent: true };
+        (this.treegrid as TreeGridComponent).grid.columnChooserSettings = { ignoreAccent: true };
       }
 }

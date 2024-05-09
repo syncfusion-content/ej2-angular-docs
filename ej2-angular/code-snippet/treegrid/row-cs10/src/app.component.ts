@@ -29,7 +29,7 @@ imports: [
 ,
 standalone: true,
   selector: 'app-container',
-  template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='315'  childMapping='subtasks' >
+  template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='250'  childMapping='subtasks' >
                     <e-columns>
                         <e-column field='taskID' headerText='Task ID'  width=90></e-column>
                         <e-column field='taskName' headerText='Task Name' textAlign='Left' width=100></e-column>

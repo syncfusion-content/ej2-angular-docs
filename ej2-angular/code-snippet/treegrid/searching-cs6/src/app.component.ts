@@ -1,28 +1,17 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser'
-import { PageService, SortService, FilterService,ToolbarService,TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
+import { TreeGridAllModule, FilterService, ToolbarService, } from '@syncfusion/ej2-angular-treegrid';
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { ToolbarItems, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
+    imports: [
+    TreeGridAllModule,
     ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                ToolbarService],
-standalone: true,
+    providers: [FilterService, ToolbarService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height='270' [treeColumnIndex]='1' [toolbar]='toolbarOptions' childMapping='subtasks' (created)='created($event)'>
                     <e-columns>
@@ -46,7 +35,7 @@ export class AppComponent implements OnInit {
     }
     created(args: any): void {
         (document.getElementById((this.treegrid as TreeGridComponent).grid.element.id + "_searchbar") as HTMLElement).addEventListener('keyup', () => {
-                (this.treegrid as TreeGridComponent).search(((event as any).target as HTMLInputElement).value)
+                (this.treegrid as TreeGridComponent).search(((event as MouseEvent).target as HTMLInputElement).value)
         });
     }
 }

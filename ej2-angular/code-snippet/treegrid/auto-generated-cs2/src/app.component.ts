@@ -22,7 +22,7 @@ providers: [PageService,
                 FilterService,EditService ],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' 
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' 
                      allowPaging='true' [editSettings]='editSettings' (dataBound)="dataBound()">
                 </ejs-treegrid>`,
     providers: [EditService, PageService]

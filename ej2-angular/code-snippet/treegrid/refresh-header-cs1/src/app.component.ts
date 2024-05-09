@@ -22,7 +22,7 @@ providers: [PageService,
 standalone: true,
     selector: 'app-container',
     template: ` <button ejs-button (click)="refreshHeader()">Refresh Header</button>
-                <ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks'>
+                <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks'>
                   <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' width=120></e-column>
                     <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>

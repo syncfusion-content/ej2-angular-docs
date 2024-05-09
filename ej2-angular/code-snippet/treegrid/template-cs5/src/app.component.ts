@@ -36,7 +36,7 @@ standalone: true,
                                     </ejs-dropdownlist>
                                 </div>
                             </ng-template>
-            <           /e-column>
+                        </e-column>
                     </e-columns>
                 </ejs-treegrid>`
 })

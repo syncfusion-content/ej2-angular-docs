@@ -18,7 +18,7 @@ standalone: true,
     selector: 'app-container',
     template: `<div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>
           
-                <ejs-treegrid #treegrid [dataSource]='data' height='315' [allowResizing]='true' [treeColumnIndex]='1' childMapping='subtasks' 
+                <ejs-treegrid #treegrid [dataSource]='data' height='250' [allowResizing]='true' [treeColumnIndex]='1' childMapping='subtasks' 
                 (resizeStart)="resizeStart()" (resizing)="resizing()" (resizeStop)="resizeStop()">
                     <e-columns>
                         <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>

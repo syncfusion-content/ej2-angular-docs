@@ -11,7 +11,7 @@ import { sampleData } from './datasource';
 @Component({
 imports: [
         
-        TreeGridAllModule
+        TreeGridAllModule,
         ButtonModule,
         DropDownListAllModule
     ],
@@ -20,7 +20,7 @@ providers: [PageService, SelectionService, RowDDService],
 standalone: true,
     selector: 'app-container',
     template: `
-        <ejs-treegrid id='TreeGrid' #treegrid [dataSource]='data' height='315' [allowRowDragAndDrop]='true'
+        <ejs-treegrid id='TreeGrid' #treegrid [dataSource]='data' height='250' [allowRowDragAndDrop]='true'
          childMapping='subtasks' (rowDrop)="rowDrop($event)" [treeColumnIndex]='1'>
             <e-columns>
                         <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>

@@ -57,7 +57,7 @@ The Syncfusion Tree Grid allows you to reorder columns externally, which means t
 
 ### Reorder column based on index
 
-You can use the [reorderColumnByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#reordercolumnbyindex) method to reorder columns based on their current index. This method takes two arguments:
+You can use the [reorderColumnByIndex](https://ej2.syncfusion.com/angular/documentation/api/grid/#reordercolumnbyindex) method of the grid object via the tree grid instance to reorder columns according to their current index. This method takes two arguments:
 
 * **fromIndex** : Current index of the column to be reordered
 * **toIndex** : New index of the column after the reordering

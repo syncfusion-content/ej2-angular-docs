@@ -6,7 +6,7 @@ import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 
 
 
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation} from '@angular/core';
 import { sampleData } from './datasource';
 
 @Component({
@@ -20,6 +20,7 @@ providers: [PageService,
                 SortService,
                 FilterService],
 standalone: true,
+encapsulation:ViewEncapsulation.None,
     selector: 'app-container',
     template: ` <ejs-treegrid #treegrid [dataSource]='data' height='285' [treeColumnIndex]='1' childMapping='subtasks' >
                     <e-columns>

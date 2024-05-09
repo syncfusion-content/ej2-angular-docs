@@ -6,7 +6,7 @@ import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 
 
 
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
@@ -16,13 +16,13 @@ imports: [
         TreeGridModule,
         ButtonModule
     ],
-
+    encapsulation:ViewEncapsulation.None,
 providers: [PageService,
                 SortService,
                 FilterService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' (dataBound)="dataBound()" [treeColumnIndex]='1' childMapping='subtasks'>
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' (dataBound)="dataBound()" [treeColumnIndex]='1' childMapping='subtasks'>
                  <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' [customAttributes]="{class:'customcss'}" width=120></e-column>
                     <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
 
     public data?: Object[];
     @ViewChild('treegrid')
-    public treegrid:TreeGridComponent;
+    public treegrid?:TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -45,10 +45,10 @@ export class AppComponent implements OnInit {
         ((this.treegrid as TreeGridComponent).getColumnHeaderByIndex(0) as HTMLElement).style.color = '#0d0b0b';
         ((this.treegrid as TreeGridComponent).getColumnHeaderByField('taskName') as HTMLElement).style.background = '#f45ddeab';
         ((this.treegrid as TreeGridComponent).getColumnHeaderByField('taskName') as HTMLElement).style.color = '#0d0b0b';
-        ((this.treegrid as TreeGridComponent).getColumnHeaderByUid('grid-column2') as HTMLElement).style.background = '#f45ddeab';
+        ((this.treegrid as TreeGridComponent).getColumnHeaderByUid('grid-column39') as HTMLElement).style.background = '#f45ddeab';
         const columnIndex = (this.treegrid as TreeGridComponent).getColumnIndexByField('duration');
         ((this.treegrid as TreeGridComponent).getColumnHeaderByIndex(columnIndex) as HTMLElement).style.color = '#0d0b0b';
-        const index = (this.treegrid as TreeGridComponent).getColumnIndexByUid('grid-column2');
+        const index = (this.treegrid as TreeGridComponent).getColumnIndexByUid('grid-column39');
         ((this.treegrid as TreeGridComponent).getColumnHeaderByIndex(index) as HTMLElement).style.color = '#0d0b0b';
       }
 }

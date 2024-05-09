@@ -21,7 +21,7 @@ standalone: true,
   selector: 'app-container',
   template: `<div>
                     <div style="float:left;width:49%">
-                        <ejs-treegrid id='TreeGrid' [dataSource]='data' [allowRowDragAndDrop]='true' height='315' [treeColumnIndex]='1' [rowDropSettings]='first_treeDrop'
+                        <ejs-treegrid id='TreeGrid' [dataSource]='data' [allowRowDragAndDrop]='true' height='250' [treeColumnIndex]='1' [rowDropSettings]='first_treeDrop'
                              [selectionSettings]='selectionSettings' childMapping='subtasks' >
                             <e-columns>
                                 <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
@@ -32,7 +32,7 @@ standalone: true,
                         </ejs-treegrid>
                     </div>
                     <div style="float:left;width:49%">
-                        <ejs-treegrid id='destTree' height='315' [allowRowDragAndDrop]='true' [treeColumnIndex]='1' [rowDropSettings]='second_treeDrop' childMapping='subtasks'
+                        <ejs-treegrid id='destTree' height='250' [allowRowDragAndDrop]='true' [treeColumnIndex]='1' [rowDropSettings]='second_treeDrop' childMapping='subtasks'
                             [selectionSettings]='selectionSettings'>
                             <e-columns>
                                 <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule, ReorderService } from '@syncfusion/ej2-angular-treegrid'
-
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
@@ -9,7 +9,7 @@ import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
 imports: [
-        
+        ButtonModule,
         TreeGridModule
     ],
 
@@ -38,10 +38,10 @@ export class AppComponent implements OnInit {
     this.data = sampleData;
   }
   show() {
-    this.treeGridObj.showColumns(['taskName', 'startDate'], 'field'); //show by Field
+    (this.treeGridObj as TreeGridComponent).showColumns(['taskName', 'startDate'], 'field'); //show by Field
   }
 
   hide() {
-    this.treeGridObj.hideColumns(['taskName', 'startDate'], 'field'); //hide by Field
+    (this.treeGridObj as TreeGridComponent).hideColumns(['taskName', 'startDate'], 'field'); //hide by Field
   }
 }

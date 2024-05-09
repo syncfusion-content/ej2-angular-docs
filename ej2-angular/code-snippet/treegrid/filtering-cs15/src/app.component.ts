@@ -1,0 +1,36 @@
+
+
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule, FilterService  } from '@syncfusion/ej2-angular-treegrid';
+
+import { Component, OnInit ,ViewChild} from '@angular/core';
+import { sampleData } from './datasource';
+
+@Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+    standalone: true,
+    providers: [FilterService],
+    selector: 'app-container',
+    template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='275' [allowFiltering]='true' childMapping='subtasks' >
+                    <e-columns>
+                        <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
+                        <e-column field='taskName' headerText='Task Name' [allowFiltering]=false textAlign='Left' width=180></e-column>
+                        <e-column field='startDate' headerText='Start Date' textAlign='Right' type='date' format='yMd' width=90></e-column>
+                        <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
+                    </e-columns>
+                </ejs-treegrid>`
+})
+export class AppComponent implements OnInit {
+
+    public data?: Object[];
+
+    ngOnInit(): void {
+        this.data = sampleData;
+    }
+}
+
+
+

@@ -2,7 +2,7 @@ import { NgModule,ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule, ToolbarService, SelectionService, EditService } from '@syncfusion/ej2-angular-treegrid'
 import { DropDownListAllModule  } from '@syncfusion/ej2-angular-dropdowns'
-
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons';
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -17,7 +17,7 @@ import {
 @Component({
 imports: [
         
-        TreeGridModule,DropDownListAllModule
+        TreeGridModule, DropDownListAllModule, ButtonModule
     ],
 
 providers: [ToolbarService, 
@@ -25,7 +25,7 @@ providers: [ToolbarService,
         EditService],
 standalone: true,
     selector: 'app-container',
-    template: `<div style="display: flex;margin-top:10rem" >
+    template: `<div style="display: flex;" >
                   <label style="padding: 10px 10px 26px 0"> Change column: </label>
                   <ejs-dropdownlist id="columnDropDown" #columnDropDown index="7" [dataSource]="columnData" [fields]="fields"
                    width="100px"></ejs-dropdownlist>
@@ -38,7 +38,7 @@ standalone: true,
                   </div>
                </div>
 
-                   <ejs-treegrid #treegrid [dataSource]='data' childMapping='subtasks' height='310' [treeColumnIndex]='1' [allowSelection]='false'>
+                   <ejs-treegrid #treegrid [dataSource]='data' childMapping='subtasks' height='230' [treeColumnIndex]='1' [allowSelection]='false'>
                       <e-columns>
                         <e-column field='taskID' headerText='Task ID' width='90' textAlign='Right'></e-column>
                         <e-column field='taskName' headerText='Task Name' width='200' freeze='Left'></e-column>
@@ -89,7 +89,7 @@ export class AppComponent implements OnInit {
   }
 
   freezeDirectionFn() {
-    this.treegrid.getColumnByField(
+    (this.treegrid as TreeGridComponent).getColumnByField(
       (this.columnDropDown as DropDownListComponent).value as string
     ).freeze = (this.directionDropDown as DropDownListComponent)
       .value as freezeDirection;

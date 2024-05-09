@@ -35,7 +35,7 @@ providers: [PageService,
                 ToolbarService],
 standalone: true,
   selector: 'app-container',
-  template: ` <ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1'  [allowSorting]='true' locale='ar' childMapping='subtasks' >
+  template: ` <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1'  [allowSorting]='true' locale='ar' childMapping='subtasks' >
                 <e-columns>
                     <e-column field='Category' headerText='Category' textAlign='Right' width=140></e-column>
                     <e-column field='orderName' headerText='Order Name' textAlign='Left' width=200></e-column>

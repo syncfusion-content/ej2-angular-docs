@@ -11,11 +11,11 @@ import {
     setCurrencyCode,
   } from '@syncfusion/ej2-base';
   import { Component, OnInit } from '@angular/core';
-  import { formatData } from './datasource';
-  import cagregorian from './ca-gregorian.json';
-  import currencies from './currencies.json';
-  import numbers from './numbers.json';
-  import timeZoneNames from './timeZoneNames.json';
+import { formatData } from './datasource';
+import * as cagregorian from './ca-gregorian.json';
+import * as currencies from './currencies.json';
+import * as numbers from './numbers.json';
+import * as timeZoneNames from './timeZoneNames.json';
   
   @Component({
 imports: [

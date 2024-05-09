@@ -10,7 +10,7 @@ import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
-import { Column, TreeGridComponent, TextAlign } from '@syncfusion/ej2-angular-treegrid';
+import { Column, TreeGridComponent,} from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
 imports: [
@@ -30,13 +30,13 @@ standalone: true,
               <ejs-dropdownlist  style="padding: 26px 0 0 0" index="0" width="100" [dataSource]="alignmentData" (change)="changeAlignment($event)">
               </ejs-dropdownlist>
               </div>
-            <ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks'>
+            <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks'>
                 <e-columns>
                     <e-column field='taskID' headerText='Task ID' width=90></e-column>
                     <e-column field='taskName' headerText='Task Name' width=180></e-column>
                     <e-column field='startDate' headerText='Start Date' format='yMd' width=90></e-column>
-                    <e-column field='approved' headerText='Approved' width='150'> </e-column>
-                    <e-column field='duration' headerText='Duration' width=80></e-column>
+                    <e-column field='approved' headerText='Approved' width='100'> </e-column>
+                    <e-column field='duration' headerText='Duration' width=100></e-column>
                 </e-columns>
             </ejs-treegrid>`
 })
@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
     ];
   
     public changeAlignment(args: ChangeEventArgs): void {
-      (this.treegrid as TreeGridComponent).columns.forEach((col:any) => {
+      (this.treegrid as TreeGridComponent).grid.columns.forEach((col:any) => {
         (col as Column).headerTextAlign = args.value as any;
       });
       (this.treegrid as TreeGridComponent).refreshHeader();

@@ -28,7 +28,7 @@ standalone: true,
                 <button ejs-button  id="big" cssClass="e-small" (click)="changeHeaderHeight($event)">Change height 60px</button>
               </div>
 
-              <ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' >
+              <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' >
                  <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                     <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>

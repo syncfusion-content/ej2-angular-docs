@@ -27,7 +27,7 @@ standalone: true,
                    [dataSource]="ddlData" (change)="columnChange($event)" width="100px"></ejs-dropdownlist>
                 </div>  
 
-               <ejs-treegrid [dataSource]='data' childMapping='subtasks' height='310' [allowSelection]='false'>
+               <ejs-treegrid #treegrid [dataSource]='data' childMapping='subtasks' height='310' [allowSelection]='false'>
                  <e-columns>
                     <e-column field='taskID' headerText='Task ID' width='90' textAlign='Right'></e-column>
                     <e-column field='taskName' headerText='Task Name' width='200' isFrozen= 'true'></e-column>

@@ -2,7 +2,7 @@ import { NgModule,ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
-
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -13,7 +13,7 @@ import { sampleData } from './datasource';
 @Component({
 imports: [
         
-        TreeGridModule,NumericTextBoxModule 
+        TreeGridModule, NumericTextBoxModule, ButtonModule
     ],
 
 ,
@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
         this.data = sampleData;
     }
     frozenColumnFn() {
-        this.treegrid.frozenColumns = (this.frozenColumns as NumericTextBoxComponent).value;
+      (this.treegrid as TreeGridComponent).frozenColumns = (this.frozenColumns as NumericTextBoxComponent).value;
       }
 }
 

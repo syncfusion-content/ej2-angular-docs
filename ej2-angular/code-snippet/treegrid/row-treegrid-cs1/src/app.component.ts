@@ -32,7 +32,7 @@ standalone: true,
             </div>
             <div><p id="message"  style="color:red; text-align:center;font-weight: bold;">{{ message }}</p> </div>
 
-            <ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' height='315' childMapping='subtasks' >
+            <ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' height='250' childMapping='subtasks' >
                   <e-columns>
                       <e-column field='taskID' headerText='Task ID' textAlign='Right' isPrimaryKey="true" width=90></e-column>
                       <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>

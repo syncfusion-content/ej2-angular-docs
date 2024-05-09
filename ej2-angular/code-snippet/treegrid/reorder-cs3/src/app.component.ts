@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
     }
 
     reorderByIndex(): void {
-        (this.treegridObj as TreeGridComponent).reorderColumnByIndex(1, 3); // move column from index 1 to index 3
+        (this.treegridObj as TreeGridComponent).grid.reorderColumnByIndex(1, 3); // move column from index 1 to index 3
     }
 }
 

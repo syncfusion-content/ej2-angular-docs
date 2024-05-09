@@ -23,7 +23,7 @@ providers: [PageService,
                 FilterService],
 standalone: true,
   selector: 'app-container',
-  template: `<ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' height='315' childMapping='subtasks' (rowDataBound)='rowDataBound($event)' >
+  template: `<ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' height='250' childMapping='subtasks' (rowDataBound)='rowDataBound($event)' >
                   <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                     <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>

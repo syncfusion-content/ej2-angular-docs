@@ -20,9 +20,9 @@ providers: [PageService,
                 FilterService,
                 ToolbarService],
 standalone: true,
-  selector: 'app-root',
+  selector: 'app-container',
   encapsulation:ViewEncapsulation.None,
-  template: `<ejs-treegrid [dataSource]='data' height='315' [treeColumnIndex]='1'  [allowSorting]='true' childMapping='subtasks' [sortSettings]='initialSort'>
+  template: `<ejs-treegrid [dataSource]='data' height='250' [treeColumnIndex]='1'  [allowSorting]='true' childMapping='subtasks' [sortSettings]='initialSort'>
                     <e-columns>
                         <e-column field='Category' headerText='Category' textAlign='Right' width=140></e-column>
                         <e-column field='orderName' headerText='Order Name' textAlign='Left' width=200></e-column>

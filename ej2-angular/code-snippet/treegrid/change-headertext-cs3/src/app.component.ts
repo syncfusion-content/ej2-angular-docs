@@ -33,7 +33,7 @@ standalone: true,
                 </div>
 
                <div style="padding: 20px 17px 0 0">
-                  <ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks'  [allowFiltering]="true" [allowSorting]="true">
+                  <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks'  [allowFiltering]="true" [allowSorting]="true">
                      <e-columns>
                         <e-column field='taskID' headerText='Task ID' [allowSorting]="false" textAlign='Right' width=120></e-column>
                         <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>

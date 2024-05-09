@@ -4,18 +4,18 @@ import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
 import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 
-
-
+import {  TextWrapSettingsModel } from '@syncfusion/ej2-angular-grids';
+import {DropDownListModule} from '@syncfusion/ej2-angular-dropdowns';
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { TreeGridComponent, TextWrapSettingsModel, WrapMode } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent,  WrapMode } from '@syncfusion/ej2-angular-treegrid';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
 imports: [
         
         TreeGridModule,
-        ButtonModule
+        ButtonModule, DropDownListModule
     ],
 
 providers: [PageService,
@@ -29,7 +29,7 @@ standalone: true,
                </ejs-dropdownlist>
               </div>
     
-              <ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' allowPaging='true' allowTextWrap='true' 
+              <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' allowPaging='true' allowTextWrap='true' 
                [textWrapSettings]='wrapSettings'>
                  <e-columns>
                     <e-column field='taskID' headerText='Task ID' [allowSorting]="false" textAlign='Right' width=120></e-column>

@@ -1,45 +1,44 @@
-import { NgModule,ViewChild } from '@angular/core'
+
+import { NgModule, } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser'
-import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 
-
-
-import { Component, OnInit,ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
+import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { QueryCellInfoEventArgs, Column } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
+    imports: [
+    TreeGridAllModule,
     ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    standalone: true,
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' height='300' [treeColumnIndex]='1' childMapping='subtasks' >
-        <e-columns>
-                    <e-column field='taskID' headerText='Task ID' [customAttributes]="{class: 'e-attr'}" textAlign='Right' width=90></e-column>
-                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
-                    <e-column field='startDate' headerText='Start Date' [customAttributes]="{class: 'e-attr'}" textAlign='Right' format='yMd' width=90></e-column>
-                    <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
-        </e-columns>
-                </ejs-treegrid>`,
-                styleUrls: ['./app.style.css'],
-    encapsulation: ViewEncapsulation.None
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='275' [treeColumnIndex]='1' [enableHover]='false' [allowSelection]='false' (queryCellInfo)='customizeCell($event)' childMapping='subtasks' >
+                    <e-columns>
+                        <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
+                        <e-column field='taskName' headerText="Task Name Column for Tree Grid"  textAlign='Left' width=90></e-column>
+                        <e-column field='progress' headerText='Progress' textAlign='Right' width=90></e-column>
+                        <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
+                    </e-columns>
+                </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
 
     public data?: Object[];
+    @ViewChild('treegrid')
+    public treegrid?: TreeGridComponent;
+   
     ngOnInit(): void {
         this.data = sampleData;
     }
+    customizeCell(args: any) {
+        if (args.column.field === 'progress' && +args.cell.innerHTML > 90 && +args.cell.innerHTML <= 100){
+            args.cell.setAttribute('style', 'background-color:#336c12;color:white;');
+        } else if (+args.cell.innerHTML > 20 && args.column.field === 'progress') {
+            args.cell.setAttribute('style', 'background-color:#7b2b1d;color:white;');
+        }
+      }
 }
 
 

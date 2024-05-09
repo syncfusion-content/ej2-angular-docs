@@ -23,7 +23,7 @@ standalone: true,
   template: `<div class="control-section">
                 <div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>
           
-                    <ejs-treegrid #treegrid [dataSource]="data" allowPaging="true" childMapping="subtasks" height="350"
+                    <ejs-treegrid #treegrid [dataSource]="data" allowPaging="true" childMapping="subtasks" height="250"
                       [treeColumnIndex]="1" (expanding)="expanding($event)" (collapsing)="collapsing($event)" (collapsed)="collapsed($event)"
                       (expanded)="expanded($event)">
                           <e-columns>

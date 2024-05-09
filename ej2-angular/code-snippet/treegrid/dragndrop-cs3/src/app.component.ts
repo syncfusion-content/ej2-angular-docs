@@ -12,7 +12,7 @@ import { RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
 @Component({
 imports: [
         
-        TreeGridAllModule
+        TreeGridAllModule,
         ButtonModule,
         DropDownListAllModule
     ],

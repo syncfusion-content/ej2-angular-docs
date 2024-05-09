@@ -26,7 +26,7 @@ standalone: true,
                    (change)="valueChange($event)"></ejs-dropdownlist>
                 </div>
 
-                <ejs-treegrid #treegrid [dataSource]='data' height='315' [allowResizing]='true' [treeColumnIndex]='1' childMapping='subtasks'>
+                <ejs-treegrid #treegrid [dataSource]='data' height='250' [allowResizing]='true' [treeColumnIndex]='1' childMapping='subtasks'>
                     <e-columns>
                         <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                         <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>

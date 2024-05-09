@@ -20,7 +20,7 @@ providers: [PageService,
                 FilterService],
 standalone: true,
   selector: 'app-container',
-  template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' allowResizing= 'true' height= '400' width= '850' (load) ="load()">
+  template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' allowResizing= 'true' width= '850' (load) ="load()">
                 <e-columns>
                     <e-column field='orderID' headerText='Order ID' textAlign='Right' minWidth='100' width='150' maxWidth='200'></e-column>
                     <e-column field='orderName' headerText='Order Name' textAlign='Left' minWidth='100' width='150' maxWidth='200'></e-column>

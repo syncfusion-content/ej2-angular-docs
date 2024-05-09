@@ -22,7 +22,7 @@ providers: [PageService,
 standalone: true,
   selector: 'app-container',
   encapsulation: ViewEncapsulation.None,
-  template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' (queryCellInfo)=querycellinfo($event)>
+  template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' (queryCellInfo)=querycellinfo($event)>
                 <e-columns>
                   <e-column field='taskID' headerText='Task ID' width=90></e-column>
                   <e-column field='taskName' headerText='Task Name' width=180></e-column>
@@ -35,7 +35,7 @@ standalone: true,
           .indents {
             text-indent: 20px !important;
           }
-      `,
+      `],
 })
 export class AppComponent implements OnInit {
   public data?: object[];

@@ -44,7 +44,7 @@ standalone: true,
                 </div>
 
                <div style="padding: 20px 17px 0 0">
-                  <ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks'  [allowFiltering]="true" [allowSorting]="true">
+                  <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks'  [allowFiltering]="true" [allowSorting]="true">
                      <e-columns>
                         <e-column field='taskID' headerText='Task ID' [allowSorting]="false" textAlign='Right' width=120></e-column>
                         <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
@@ -61,9 +61,9 @@ export class AppComponent implements OnInit {
     public columns: Object[] = [
         { text: 'Task ID', value: 'taskID' },
         { text: 'Task Name', value: 'taskName' },
-        { text: 'startDate', value: 'Start Date' },
-        { text: 'duration', value: 'Duration' },
-        { text: 'progress', value: 'Progress' }
+        { text: 'Start Date', value: 'startDate' },
+        { text: 'Duration', value: 'duration' },
+        { text: 'Progress', value: 'progress' }
       ];
       public field?: Object = { text: 'text', value: 'value' };
       @ViewChild('dropdown') public dropdown?: DropDownListComponent;

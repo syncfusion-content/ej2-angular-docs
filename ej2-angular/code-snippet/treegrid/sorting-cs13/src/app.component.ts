@@ -28,7 +28,7 @@ standalone: true,
             <p style="color:red;" id="message">{{message}}</p>
           </div>
        
-            <ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1'  [allowSorting]='true' childMapping='subtasks' (actionComplete)='actionComplete($event)' (actionBegin)='actionBegin($event)'>
+            <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1'  [allowSorting]='true' childMapping='subtasks' (actionComplete)='actionComplete($event)' (actionBegin)='actionBegin($event)'>
                 <e-columns>
                     <e-column field='Category' headerText='Category' textAlign='Right' width=140></e-column>
                     <e-column field='orderName' headerText='Order Name' textAlign='Left' width=200></e-column>

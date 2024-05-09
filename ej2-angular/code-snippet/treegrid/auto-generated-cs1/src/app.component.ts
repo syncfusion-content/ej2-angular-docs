@@ -20,7 +20,7 @@ providers: [PageService,
                 FilterService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks'>
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks'>
                 </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
