@@ -1,11 +1,18 @@
-
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { Column, EditSettingsModel,ToolbarItems, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { Column, EditSettingsModel,ToolbarItems, TreeGridComponent ,EditService, ToolbarService, PageService} from '@syncfusion/ej2-angular-treegrid';
 import { RowSelectEventArgs, parentsUntil } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+    providers: [EditService, ToolbarService,PageService],
+    standalone: true,
     selector: 'app-container',
     template: ` <ejs-treegrid #treegrid [dataSource]='data'  [treeColumnIndex]='1' height='230' (created)="created()" [editSettings]='editSettings' childMapping='subtasks' >
                     <e-columns>

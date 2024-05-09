@@ -1,9 +1,17 @@
 
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { ButtonModule } from "@syncfusion/ej2-angular-buttons";
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { GanttData } from './data';
 
 @Component({
+    imports: [
+         GanttModule, ButtonModule
+    ],
+standalone: true,
     selector: 'app-root',
     template:
         `<div>

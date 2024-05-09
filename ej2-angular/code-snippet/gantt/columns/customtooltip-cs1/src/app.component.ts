@@ -1,9 +1,17 @@
 
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { TooltipAllModule } from "@syncfusion/ej2-angular-popups";
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { GanttData } from './data';
 import { TooltipComponent, TooltipEventArgs } from "@syncfusion/ej2-angular-popups";
 
 @Component({
+    imports: [
+         GanttModule, TooltipAllModule
+    ],
+standalone: true,
     selector: 'app-root',
     template:
         `<div class="control-section" >

@@ -1,10 +1,19 @@
 
 
-import { Component, OnInit } from '@angular/core';
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
+
+import { Component, OnInit ,ViewChild} from '@angular/core';
 import { complexData } from './datasource';
-import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
+import { EditSettingsModel, ToolbarItems ,EditService, ToolbarService, PageService} from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+    providers: [EditService, ToolbarService, PageService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' [editSettings]="editSettings" [toolbar]="toolbar" childMapping='subtasks' >
                     <e-columns>

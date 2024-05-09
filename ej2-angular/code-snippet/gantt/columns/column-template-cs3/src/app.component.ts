@@ -1,10 +1,19 @@
 
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule, SelectionService } from '@syncfusion/ej2-angular-gantt';
+import { ColorPickerModule } from '@syncfusion/ej2-angular-inputs';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ColorPickerEventArgs } from '@syncfusion/ej2-angular-inputs';
 import { GanttData } from './data';
 
 @Component({
+    imports: [
+         GanttModule, ColorPickerModule
+    ],
+providers: [SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
         `<ejs-gantt id="ganttDefault" #gantt height="430px"  [dataSource]="data"

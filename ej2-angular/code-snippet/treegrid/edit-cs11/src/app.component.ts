@@ -1,11 +1,24 @@
 
 
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { Column, EditSettingsModel,ToolbarItems, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { Column, EditSettingsModel,ToolbarItems, TreeGridComponent,EditService, ToolbarService, PageService } from '@syncfusion/ej2-angular-treegrid';
 import { RowSelectEventArgs } from '@syncfusion/ej2-angular-grids';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { TextBoxModule, NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs';
+import { ButtonModule } from "@syncfusion/ej2-angular-buttons";
 
 @Component({
+    imports: [
+    TreeGridAllModule,ButtonModule,
+    NumericTextBoxAllModule, TextBoxModule, 
+    DropDownListModule
+    ],
+    providers: [EditService, ToolbarService,PageService],
+    standalone: true,
     selector: 'app-container',
     template: ` <div class="row" >
                     <div class="col-xs-6 col-md-3">

@@ -1,9 +1,16 @@
 
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { GanttData } from './data';
 
 @Component({
+    imports: [
+         GanttModule
+    ],
+standalone: true,
     selector: 'app-root',
     template:
         `<ejs-gantt id="ganttDefault" #gantt height="430px"  [dataSource]="data"

@@ -1,10 +1,21 @@
 
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule, ResizeService } from '@syncfusion/ej2-angular-gantt';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ResizeArgs, Column } from '@syncfusion/ej2-angular-grids';
 import { GanttData } from './data';
 
 @Component({
+    imports: [
+         GanttModule, DropDownListAllModule, TextBoxModule, ButtonModule
+    ],
+providers: [ResizeService],
+standalone: true,
     selector: 'app-root',
     template:
         `<div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>

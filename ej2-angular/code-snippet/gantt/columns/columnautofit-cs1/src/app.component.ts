@@ -1,9 +1,16 @@
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule, ResizeService } from '@syncfusion/ej2-angular-gantt';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttData } from './data';
-import { ResizeService } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
+    imports: [
+         GanttModule, 
+    ],
+providers: [ResizeService],
+standalone: true,
     selector: 'app-root',
     template:
         `<ejs-gantt id="ganttDefault" #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]='1'  [splitterSettings] = "splitterSettings" [allowResizing] = "true"  (dataBound)='dataBound()'>
@@ -15,7 +22,6 @@ import { ResizeService } from '@syncfusion/ej2-angular-gantt';
             <e-column field='Progress' headerText='Progress' textAlign='Right' width=120></e-column>
         </e-columns>
        </ejs-gantt>`,
-    providers: [ResizeService],
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

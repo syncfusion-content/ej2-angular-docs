@@ -1,11 +1,19 @@
 
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule, ResizeService } from '@syncfusion/ej2-angular-gantt';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { ResizeMode } from '@syncfusion/ej2-angular-grids';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { GanttData } from './data';
 
 @Component({
+    imports: [
+         GanttModule
+    ],
+    providers: [ResizeService],
+standalone: true,
     selector: 'app-root',
     template:
         ` <div style="display: flex">

@@ -1,8 +1,16 @@
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttData } from './data';
 
 @Component({
+    imports: [
+         GanttModule, ButtonModule
+    ],
+standalone: true,
     selector: 'app-root',
     template:
         `<button ejs-button id="btnId" cssClass="e-info" (click)='updateColumns()'> Update Columns </button>
@@ -16,7 +24,7 @@ import { GanttData } from './data';
         </e-columns>
 
        </ejs-gantt>`,
-    styleUrls: ['/app.component.css'],
+    styleUrls: ['./app.component.css'],
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

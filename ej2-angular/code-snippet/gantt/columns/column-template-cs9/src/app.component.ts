@@ -1,10 +1,19 @@
 
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule, ResizeService, SelectionService, } from '@syncfusion/ej2-angular-gantt';
+import { SparklineAllModule, } from '@syncfusion/ej2-angular-charts';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { Sparkline } from '@syncfusion/ej2-angular-charts';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { GanttData } from './data';
 
 @Component({
+    imports: [
+         GanttModule, SparklineAllModule
+    ],
+providers: [ResizeService, SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
         `<ejs-gantt id="ganttDefault" #gantt height="430px"  [dataSource]="data" (created)="renderGridSparkline()"

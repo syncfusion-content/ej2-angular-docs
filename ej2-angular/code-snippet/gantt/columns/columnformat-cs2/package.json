@@ -10,9 +10,15 @@
   },
   "private": true,
   "dependencies": {
+<<<<<<<< HEAD:ej2-angular/code-snippet/gantt/columns/column-template-cs9/package.json
     "@angular/core": "^15.0.0",
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
+========
+    "@angular/core": "17.1.2",
+    "@angular/platform-browser": "17.1.2",
+    "@angular/platform-browser-dynamic": "17.1.2",
+>>>>>>>> remotes/origin/development:ej2-angular/code-snippet/gantt/columns/columnformat-cs2/package.json
     "@syncfusion/ej2-angular-gantt": "*",
     "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-buttons": "*",

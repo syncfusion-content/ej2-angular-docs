@@ -1,9 +1,19 @@
 
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import {TextBoxModule} from '@syncfusion/ej2-angular-inputs';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { GanttData } from './data';
 
 @Component({
+    imports: [
+         GanttModule, ButtonModule, DropDownListAllModule, TextBoxModule
+    ],
+standalone: true,
     selector: 'app-root',
     template:
         `<ejs-gantt id="ganttDefault" #gantt [height]='240'  [dataSource]="data" 
@@ -15,7 +25,7 @@ import { GanttData } from './data';
                 <e-column field='Progress' headerText='Progress' width=120 ></e-column>
             </e-columns>    
        </ejs-gantt>`,
-    styleUrls: ['/app.component.css'],
+    styleUrls: ['./app.component.css'],
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

@@ -1,14 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 
-
-
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { Component, OnInit, ViewEncapsulation, NgModule  } from '@angular/core';
 import { GanttData } from './data';
 
 @Component({
-imports: [
+    imports: [
          GanttModule
     ],
 standalone: true,

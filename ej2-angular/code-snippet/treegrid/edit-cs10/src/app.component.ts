@@ -1,11 +1,19 @@
 
-
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { Column, EditSettingsModel,ToolbarItems, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { Column, EditSettingsModel,ToolbarItems, TreeGridComponent,EditService, ToolbarService, PageService } from '@syncfusion/ej2-angular-treegrid';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
+    imports: [
+    TreeGridAllModule,ToolbarModule 
+    ],
+    standalone: true,
+    providers: [EditService, PageService],
     selector: 'app-container',
     template: ` <div style="display: flex">
                     <ejs-toolbar (clicked)="onToolbarClick($event)">

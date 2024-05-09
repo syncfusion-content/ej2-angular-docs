@@ -1,9 +1,17 @@
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { GanttData } from './data';
 
 @Component({
-  selector: 'app-root',
+  imports: [
+         GanttModule, ButtonModule
+    ],
+standalone: true,
+    selector: 'app-root',
   template:
     `<button ejs-button id='add' cssClass="e-info" (click)='addColumns()'> Add Column</button>
         <button ejs-button id='delete' cssClass="e-info" (click)='deleteColumns()'> Delete Column</button>

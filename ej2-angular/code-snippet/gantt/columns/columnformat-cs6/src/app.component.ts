@@ -1,10 +1,17 @@
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { RowDataBoundEventArgs } from '@syncfusion/ej2-angular-grids';
 import { GanttData } from './data';
 
 @Component({
-  selector: 'app-root',
+  imports: [
+         GanttModule
+    ],
+standalone: true,
+    selector: 'app-root',
   template:
     `<ejs-gantt id="ganttDefault" #gantt height="430px" [dataSource]="data" [taskFields]="taskSettings" [treeColumnIndex]='1' [splitterSettings] = "splitterSettings" (rowDataBound)='rowDataBound($event)' >       
         <e-columns>

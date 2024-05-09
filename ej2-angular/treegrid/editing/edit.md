@@ -31,8 +31,8 @@ Here’s an example of how to enable editing in the tree grid:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-cs2/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/edit-cs2/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-cs2/src/main.ts %}
@@ -57,8 +57,8 @@ Here's an example of how to enable the toolbar with edit option in the tree grid
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-cs3/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/edit-cs3/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-cs3/src/main.ts %}
@@ -79,8 +79,8 @@ Here's an example that demonstrates how to disable editing for the column in the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-cs4/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/edit-cs4/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-cs4/src/main.ts %}
@@ -104,8 +104,8 @@ In the below demo, the rows which are having the value for **Task Name** column 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-cs13/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/edit-cs13/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-cs13/src/main.ts %}
@@ -179,8 +179,8 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-cs5/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/edit-cs5/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-cs5/src/main.ts %}
@@ -204,8 +204,8 @@ The following example that demonstrates how to customize the delete confirmation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-cs6/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/edit-cs6/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-cs6/src/main.ts %}
@@ -224,8 +224,8 @@ In the following sample, the `CheckBox` component is rendered as a template in t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-cs7/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/edit-cs7/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-cs7/src/main.ts %}
@@ -244,8 +244,8 @@ In the following example, the `DropDownList` component is rendered within the [e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-cs8/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/edit-cs8/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-cs8/src/main.ts %}
@@ -264,8 +264,8 @@ In the following sample, the input element is rendered in the edit template of t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-cs9/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/edit-cs9/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-cs9/src/main.ts %}
@@ -296,8 +296,8 @@ The following example demonstrates the integration of the tree grid with a separ
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-cs10/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/edit-cs10/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-cs10/src/main.ts %}
@@ -318,8 +318,8 @@ In the following example, it demonstrates how to edit the form using an external
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-cs11/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/edit-cs11/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-cs11/src/main.ts %}
@@ -388,8 +388,8 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/edit-cs12/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/edit-cs12/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-cs12/src/main.ts %}

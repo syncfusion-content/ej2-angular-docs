@@ -1,8 +1,17 @@
-import { Component, ViewEncapsulation, OnInit, ViewChild, NgIterable } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { SelectionService  } from '@syncfusion/ej2-angular-gantt';
+
+import { Component, ViewEncapsulation, OnInit, ViewChild, NgIterable, NgModule } from '@angular/core';
 import { GanttComponent, ColumnModel } from '@syncfusion/ej2-angular-gantt';
 import { GanttData } from './data';
 
 @Component({
+    imports: [
+         GanttModule
+    ],
+providers: [SelectionService],
+standalone: true,
     selector: 'app-root',
     template:
         `<ejs-gantt id="ganttDefault" #gantt height="430px"  [dataSource]="data"

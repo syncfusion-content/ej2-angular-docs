@@ -1,7 +1,14 @@
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { GanttData } from './data';
 
 @Component({
+    imports: [
+         GanttModule
+    ],
+standalone: true,
     selector: 'app-root',
     template:
         `<div class="control-section">

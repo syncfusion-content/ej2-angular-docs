@@ -1,5 +1,9 @@
 
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { TextWrapSettingsModel, WrapMode } from '@syncfusion/ej2-angular-grids';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
@@ -7,6 +11,10 @@ import { GanttData } from './data';
 
 
 @Component({
+    imports: [
+         GanttModule, DropDownListAllModule
+    ],
+standalone: true,
     selector: 'app-root',
     template:
         `<div style="display: flex">

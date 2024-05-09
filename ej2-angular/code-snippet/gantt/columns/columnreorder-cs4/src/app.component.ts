@@ -1,10 +1,18 @@
 
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule, ReorderService } from '@syncfusion/ej2-angular-gantt';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { GanttComponent, Column } from '@syncfusion/ej2-angular-gantt';
 import { ColumnDragEventArgs } from '@syncfusion/ej2-angular-grids';
 import { GanttData } from './data';
 
 @Component({
+    imports: [
+         GanttModule
+    ],
+providers: [ReorderService],
+standalone: true,
     selector: 'app-root',
     template:
         `<div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>

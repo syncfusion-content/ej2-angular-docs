@@ -1,11 +1,19 @@
 
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 import { GanttData } from './data';
 
 @Component({
-  selector: 'app-root',
+  imports: [
+         GanttModule, DropDownListModule
+    ],
+standalone: true,
+    selector: 'app-root',
   template:
     `<div style="display: flex">
             <label style="padding: 30px 17px 0 0;">Align the text for columns :</label>

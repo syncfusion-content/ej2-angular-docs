@@ -1,15 +1,21 @@
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { GanttModule, ReorderService } from '@syncfusion/ej2-angular-gantt';
+
+import { Component, ViewEncapsulation, ViewChild, OnInit, NgModule } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttData } from './data';
-import { ReorderService } from '@syncfusion/ej2-angular-gantt';
 
 @Component({
+    imports: [
+         GanttModule
+    ],
+providers: [ReorderService],
+standalone: true,
     selector: 'app-root',
     template:
         `<ejs-gantt id="ganttDefault" #gantt height="430px" [columns]='columns' [dataSource]="data"  [taskFields]="taskSettings"  [splitterSettings] = "splitterSettings" [allowReordering]='true'>
        </ejs-gantt>`,
-    providers: [ReorderService],
-    styleUrls: ['/app.component.css'],
+    styleUrls: ['./app.component.css'],
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
