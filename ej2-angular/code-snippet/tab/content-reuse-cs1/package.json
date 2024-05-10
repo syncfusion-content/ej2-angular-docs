@@ -24,7 +24,6 @@
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-angular-buttons": "*",
     "@syncfusion/ej2-angular-popups": "*",
-    "@syncfusion/ej2-angular-data": "*",
     "@syncfusion/ej2-angular-grids": "*",
     "@syncfusion/ej2-angular-inputs": "*",
     "@angular/animations": "17.1.2",
