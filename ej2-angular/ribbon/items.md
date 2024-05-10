@@ -202,9 +202,7 @@ You can handle the creation of popups, by using the [createPopupOnClick](https:/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/DropDownPopup/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/DropDownPopup/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/DropDownPopup/src/main.ts %}
 {% endhighlight %}

@@ -29,9 +29,6 @@ The default column menu items are displayed in following table.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cs1/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs1/src/main.ts %}
 {% endhighlight %}
@@ -53,9 +50,6 @@ Consider the following example, which demonstrates how to add a custom column me
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cs2/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs2/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,6 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs3/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs3/src/main.ts %}
@@ -96,9 +87,6 @@ Here is an example of how to configure the `columnMenuItems` property to include
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs6/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs6/src/main.ts %}
@@ -134,9 +122,6 @@ Here is an example that demonstrates how to customize the column menu icon in th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cs5/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs5/src/main.ts %}
 {% endhighlight %}
@@ -155,9 +140,6 @@ The column menu in Syncfusion Angular Gantt chart provides a set of events that 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs4/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnmenu-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnmenu-cs4/src/main.ts %}

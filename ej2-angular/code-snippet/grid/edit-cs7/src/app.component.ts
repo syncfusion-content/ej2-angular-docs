@@ -14,8 +14,8 @@ import { data } from './datasource';
 import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
+    imports: [
+
         GridModule,
         DatePickerAllModule,
         FormsModule,
@@ -26,10 +26,10 @@ imports: [
         AutoCompleteModule
     ],
 
-providers: [EditService, ToolbarService, SortService, PageService],
-standalone: true,
+    providers: [EditService, ToolbarService, SortService, PageService],
+    standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid style="padding:70px" [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
+    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' 
                     [validationRules]='orderIDRules' isPrimaryKey='true' width=100></e-column>
@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
         this.orderIDRules = { required: true, number: true };
         this.customerIDRules = { required: true };
-        this.freightRules =  { min:1, max:1000 };
+        this.freightRules = { min: 1, max: 1000 };
     }
 }
 

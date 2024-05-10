@@ -26,8 +26,8 @@ L10n.load({
 });
 
 @Component({
-imports: [
-        
+    imports: [
+
         GridModule,
         DatePickerAllModule,
         FormsModule,
@@ -38,10 +38,10 @@ imports: [
         AutoCompleteModule
     ],
 
-providers: [EditService, ToolbarService, SortService, PageService],
-standalone: true,
+    providers: [EditService, ToolbarService, SortService, PageService],
+    standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid style="padding:70px" [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar'
+    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar'
                (actionComplete)="actionComplete($event)" height='273px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' [validationRules]='orderIDRules' 
@@ -68,14 +68,14 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
         this.orderIDRules = { required: true, number: true };
         this.customerIDRules = { required: true };
-        this.freightRules =  { min:1,max:1000 };
+        this.freightRules = { min: 1, max: 1000 };
     }
     actionComplete(args: EditEventArgs) {
         if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
             const dialog = (args as any).dialog;
             dialog.showCloseIcon = false;
             dialog.height = 300;
-            dialog.width=300;
+            dialog.width = 300;
             // change the header of the dialog
             dialog.header = args.requestType === 'beginEdit' ? 'Edit Record of ' + (args.rowData as columnDataType)['CustomerID'] : 'New Customer';
         }
