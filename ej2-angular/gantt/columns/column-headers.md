@@ -20,9 +20,6 @@ To enable the `headerText` property, you simply need to define it in the **e-col
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnheader-cs1/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +39,6 @@ In this demo, the custom element is rendered for both **TaskName** and **Duratio
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs2/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnheader-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs2/src/main.ts %}
@@ -71,9 +65,6 @@ Here is an example of using the `headerTextAlign` property to align the text of 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs3/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnheader-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs3/src/main.ts %}
@@ -106,9 +97,6 @@ In the example below, the `textWrapSettings.wrapMode` property is set to **Heade
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnheader-cs6/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs6/src/main.ts %}
 {% endhighlight %}
@@ -137,9 +125,6 @@ To change the height of the header dynamically, you can use the [getHeaderConten
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs4/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnheader-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs4/src/main.ts %}
@@ -193,9 +178,6 @@ Here is an example of how to change the header text of a column using the `getCo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnheader-cs5/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs5/src/main.ts %}
 {% endhighlight %}
@@ -210,9 +192,6 @@ If you want to change the header text of all columns in the gantt chart, you can
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs7/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnheader-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs7/src/main.ts %}
@@ -264,9 +243,6 @@ setHeaderHeight(args) {
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs8/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnheader-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnheader-cs8/src/main.ts %}
@@ -711,9 +687,6 @@ Here's an example of how to use the `beforeRender` event to add a custom tooltip
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/customtooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/customtooltip-cs1/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/customtooltip-cs1/src/main.ts %}
 {% endhighlight %}
@@ -743,9 +716,6 @@ Here's an example that demonstrates how to customize the appearance of a specifi
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/headerstyle-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/headerstyle-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/headerstyle-cs1/src/main.ts %}
@@ -784,9 +754,6 @@ The following example demonstrates how to customize the appearance of the **Task
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/headerstyle-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/headerstyle-cs2/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/headerstyle-cs2/src/main.ts %}
 {% endhighlight %}
@@ -813,9 +780,6 @@ Here's an example of how to use these methods to change the style of a specific 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/headerstyle-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/headerstyle-cs3/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/headerstyle-cs3/src/main.ts %}
 {% endhighlight %}
@@ -823,7 +787,7 @@ Here's an example of how to use these methods to change the style of a specific 
   
 {% previewsample "page.domainurl/samples/gantt/columns/headerstyle-cs3" %}
 
->* The UID is automatically generated by the Gantt cahrt component and may change whenever the gantt chart is refreshed or updated.
+>* The UID is automatically generated by the Gantt chart component and may change whenever the gantt chart is refreshed or updated.
 
 ### Using event
 
@@ -834,9 +798,6 @@ The following example demonstrates how to add a `headerCellInfo` event handler t
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/headerstyle-cs4/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/headerstyle-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/headerstyle-cs4/src/main.ts %}
@@ -856,9 +817,6 @@ The following example demonstrates how to use the `refreshHeader` method to upda
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/headerstyle-cs5/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/headerstyle-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/headerstyle-cs5/src/main.ts %}
