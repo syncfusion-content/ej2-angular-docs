@@ -6,6 +6,10 @@ import { sampleData } from './datasource';
 import { ColumnMenuService } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid height='250' [dataSource]='data' [treeColumnIndex]='1' childMapping='subtasks' showColumnMenu="true" (columnMenuOpen)="columnMenuOpen()" (columnMenuClick)="columnMenuClick()">
                     <e-columns>

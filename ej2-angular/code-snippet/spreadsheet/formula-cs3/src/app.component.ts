@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
+
 
 
 import { Component, ViewChild } from '@angular/core';
@@ -17,6 +21,13 @@ setCurrencyCode('EUR');
 loadCldr(cagregorian, currencies, numbers, timeZoneNames, numberingSystems);
 
 @Component({
+imports: [
+        
+        SpreadsheetAllModule
+    ],
+
+
+standalone: true,
     selector: 'app-container',
     template: `<ejs-spreadsheet #spreadsheet locale='de' listSeparator=';' [showRibbon]='false' [showSheetTabs]='false' (created)='created()'>
                     <e-sheets>

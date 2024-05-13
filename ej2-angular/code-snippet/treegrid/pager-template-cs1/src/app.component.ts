@@ -1,9 +1,18 @@
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import {PageSettingsModel, TreeGridComponent} from '@syncfusion/ej2-angular-treegrid';
+import {PageSettingsModel, TreeGridComponent, PageService} from '@syncfusion/ej2-angular-treegrid';
 import { ChangeEventArgs } from '@syncfusion/ej2-inputs';
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+    imports: [
+    TreeGridAllModule, NumericTextBoxModule
+    ],
+    providers:[PageService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height=250 [treeColumnIndex]='1' [allowPaging]='true'  [pageSettings]='PageSettings' childMapping='subtasks' >
                     <ng-template #pagerTemplate let-data>

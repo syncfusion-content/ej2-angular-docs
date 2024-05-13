@@ -1,29 +1,17 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser'
-import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
+import { SwitchModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
+    imports: [
+    TreeGridAllModule,SwitchModule 
     ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    standalone: true,
     selector: 'app-container',
     template: `<div>
                     <label style="padding: 10px 10px">Enable or disable HTML Encode</label>

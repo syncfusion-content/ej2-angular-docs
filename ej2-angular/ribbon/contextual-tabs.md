@@ -24,9 +24,7 @@ You can utilize the `e-ribbon-contextual-tabs` tag directive to add contextual t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Contextual-tabs/add-tabs/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Contextual-tabs/add-tabs/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Contextual-tabs/add-tabs/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ By using the [isSelected](https://ej2.syncfusion.com/angular/documentation/api/r
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Contextual-tabs/selected-tab/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Contextual-tabs/selected-tab/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Contextual-tabs/selected-tab/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +68,7 @@ You can use the [hideTab](https://ej2.syncfusion.com/angular/documentation/api/r
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Contextual-tabs/method/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Contextual-tabs/method/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Contextual-tabs/method/src/main.ts %}
 {% endhighlight %}

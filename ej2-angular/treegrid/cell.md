@@ -24,9 +24,6 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/cell-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs1/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/cell-cs1/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +67,6 @@ The following example demonstrates how to set the `allowTextWrap` property to **
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/cell-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs2/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/cell-cs2/src/main.ts %}
 {% endhighlight %}
@@ -97,9 +91,6 @@ The following example demonstrates how to add a `queryCellInfo` event handler to
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/cell-cs3/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/cell-cs3/src/main.ts %}
@@ -126,9 +117,6 @@ The following example demonstrates how to customize the appearance of a specific
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/cell-cs4/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/cell-cs4/src/main.ts %}
@@ -158,9 +146,6 @@ The following example demonstrates how to customize the appearance of the **task
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/cell-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs5/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/cell-cs5/src/main.ts %}
 {% endhighlight %}
@@ -183,9 +168,6 @@ The following example demonstrates how to use [getColumnHeaderByIndex](https://e
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/cell-cs6/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/cell-cs6/src/main.ts %}
@@ -211,9 +193,6 @@ The following example demonstrates, how to set the `clipMode` property to **Clip
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/cell-cs7/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs7/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/cell-cs7/src/main.ts %}
@@ -350,9 +329,6 @@ The following example demonstrates how to customize the tooltip content for the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/cell-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs8/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/cell-cs8/src/main.ts %}
 {% endhighlight %}
@@ -377,9 +353,6 @@ The following example demonstrates how to set the `gridLines` property based on 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/cell-cs9/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/cell-cs9/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/cell-cs9/src/main.ts %}

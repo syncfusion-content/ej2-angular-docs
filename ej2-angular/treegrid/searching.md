@@ -22,7 +22,9 @@ Here is an example that demonstrates the default searching feature of the tree g
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/searching-cs1/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs1/src/main.ts %}
 {% endhighlight %}
@@ -58,7 +60,9 @@ The following example demonstrates how to set an initial search in the tree grid
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/searching-cs2/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs2/src/main.ts %}
 {% endhighlight %}
@@ -93,7 +97,9 @@ The following example demonstrates how to set the `searchSettings.operator` prop
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs3/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/searching-cs3/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs3/src/main.ts %}
 {% endhighlight %}
@@ -116,7 +122,9 @@ The `search` method allows you to perform a search operation based on a search k
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs4/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/searching-cs4/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs4/src/main.ts %}
 {% endhighlight %}
@@ -134,7 +142,9 @@ The following example demonstrates how to search specific columns such as **task
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs5/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/searching-cs5/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs5/src/main.ts %}
 {% endhighlight %}
@@ -154,7 +164,9 @@ In the following example, the `created` event is bound to the TreeGrid component
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs6/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/searching-cs6/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs6/src/main.ts %}
 {% endhighlight %}
@@ -174,7 +186,9 @@ The following example demonstrates how to implement searching based on column fo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs7/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/searching-cs7/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs7/src/main.ts %}
 {% endhighlight %}
@@ -194,8 +208,8 @@ On the other hand, the [actionComplete](https://ej2.syncfusion.com/angular/docum
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/searching-cs8/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/searching-cs8/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs8/src/main.ts %}
@@ -214,8 +228,8 @@ The following example demonstrates how to define the `ignoreAccent` property wit
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/searching-cs9/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/searching-cs9/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs9/src/main.ts %}
@@ -240,8 +254,8 @@ The following example demonstrates how to highlight search text in tree grid usi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs10/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/searching-cs10/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/searching-cs10/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs10/src/main.ts %}
@@ -262,8 +276,8 @@ The following example demonstrates how to clear the searched records using an ex
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/searching-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/searching-cs11/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/searching-cs11/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/searching-cs11/src/main.ts %}

@@ -19,8 +19,8 @@ providers: [PageService,
                 SortService,
                 FilterService],
 standalone: true,
+encapsulation:ViewEncapsulation.None,
     selector: 'app-container',
-    encapsulation:ViewEncapsulation.None,
     template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks'>
                  <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' [customAttributes]="{class:'customcss'}" width=120></e-column>

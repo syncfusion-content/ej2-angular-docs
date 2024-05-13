@@ -7,6 +7,10 @@ import { ColumnMenuService, SortService, TreeGridComponent, PageService, SortSet
 import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid height='250' allowSorting='true' allowPaging='true' [dataSource]='data' [treeColumnIndex]='1' childMapping='subtasks' [sortSettings]='sortSettings' showColumnMenu="true" [columnMenuItems]='columnMenuItems'>
                     <e-columns>

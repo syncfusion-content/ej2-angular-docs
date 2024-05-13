@@ -119,9 +119,6 @@ export class AppComponent{
 
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/column-template-cs1/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/column-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -195,9 +192,6 @@ export class AppComponent {
     }
 }
 {% endraw %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/column-template-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/column-template-cs2/src/main.ts %}
@@ -300,9 +294,6 @@ export class AppComponent {
 
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/column-template-cs9/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/column-template-cs9/src/main.ts %}
 {% endhighlight %}
@@ -327,9 +318,6 @@ In the following code, we rendered the ColorPicker component in the Gantt column
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/column-template-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/column-template-cs3/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/column-template-cs3/src/main.ts %}
 {% endhighlight %}
@@ -350,9 +338,6 @@ To render a custom component in a gantt column, you need to define a template fo
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/column-template-cs4/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/column-template-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/column-template-cs4/src/main.ts %}
@@ -376,9 +361,6 @@ In the following code, we rendered the Chips component in the Gantt **TaskName**
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/column-template-cs5/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/column-template-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/column-template-cs5/src/main.ts %}
@@ -407,9 +389,6 @@ The following example demonstrates how to use the `template` property with the `
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/column-template-cs6/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/column-template-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/column-template-cs6/src/main.ts %}
@@ -502,9 +481,6 @@ export class AppComponent {
 
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/column-template-cs7/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/column-template-cs7/src/main.ts %}
 {% endhighlight %}
@@ -573,9 +549,6 @@ export class AppComponent {
 }
 
 {% endraw %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/column-template-cs8/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/column-template-cs8/src/main.ts %}

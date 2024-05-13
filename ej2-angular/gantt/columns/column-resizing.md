@@ -20,9 +20,6 @@ To use the column resize, inject **ResizeService** in the provider section of **
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnresize-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnresize-cs1/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnresize-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +43,6 @@ In the below code, **TaskID** and **TaskName** columns are defined with minimum 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnresize-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnresize-cs2/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnresize-cs2/src/main.ts %}
 {% endhighlight %}
@@ -65,9 +59,6 @@ You can disable resizing for a particular column by setting the [allowResizing](
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnresize-cs3/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnresize-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnresize-cs3/src/main.ts %}
@@ -94,9 +85,6 @@ The following example demonstrates how to set the `resizeSettings.mode` property
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnresize-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnresize-cs6/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnresize-cs6/src/main.ts %}
 {% endhighlight %}
@@ -106,7 +94,7 @@ The following example demonstrates how to set the `resizeSettings.mode` property
 
 > When the [autoFit](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofit) property of grid object in gantt instance is set to **true**, the gantt will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `autoFit` property is set to **true**, the gantt will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the gantt will ignore any empty space.
 
-## Touch interation
+## Touch interaction
 
 Gantt chart component provides support for touch interactions to enable users to interact with the gantt chart using their mobile devices. Users can resize columns in the gantt by tapping and dragging the floating handler, and can also use the column menu to autofit columns.
 
@@ -134,9 +122,6 @@ The following example demonstrates how to resize the columns in a gantt chart. T
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnresize-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnresize-cs4/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnresize-cs4/src/main.ts %}
 {% endhighlight %}
@@ -161,9 +146,6 @@ The following is an example of using the resizing events, the `resizeStart` even
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnresize-cs5/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnresize-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnresize-cs5/src/main.ts %}

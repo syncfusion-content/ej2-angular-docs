@@ -1,10 +1,18 @@
 
-
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule, FilterService  } from '@syncfusion/ej2-angular-treegrid';
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit,ViewChild} from '@angular/core';
 import { sampleData } from './datasource';
-import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { FilterSettingsModel, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+    imports: [
+    TreeGridAllModule, ButtonModule
+    ],
+    providers: [FilterService],
+    standalone: true,
     selector: 'app-container',
     template: ` <div class="control-section">
                   <div *ngIf="showWarning">

@@ -18,8 +18,8 @@ Here is an example showcasing how to render the excel like filter within the tre
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs1/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs1/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs1/src/main.ts %}
@@ -41,8 +41,8 @@ Here is an example showcasing how to render the check box filter within the tree
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/excel-filtering-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-filtering-cs1/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/excel-filtering-cs1/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/excel-filtering-cs1/src/main.ts %}
@@ -65,8 +65,8 @@ The following example demonstrates how to customize the filter choice count in t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/excel-filtering-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-filtering-cs2/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/excel-filtering-cs2/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/excel-filtering-cs2/src/main.ts %}
@@ -90,11 +90,20 @@ In the example below, you can see how you can customize the text displayed in th
 {% raw %}
 
 
-import { Component, OnInit } from '@angular/core';
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule, FilterService } from '@syncfusion/ej2-angular-treegrid';
+
+import { Component, OnInit ,ViewChild} from '@angular/core';
 import { sampleData } from './datasource';
 import { FilterSearchBeginEventArgs, } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+    providers: [FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='273' [allowFiltering]='true' [filterSettings]="filterSettings" childMapping='subtasks' >
                   <e-columns>
@@ -123,10 +132,11 @@ export class AppComponent implements OnInit {
     }
    
 }
+
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-filtering-cs3/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/excel-filtering-cs3/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/excel-filtering-cs3/src/main.ts %}
@@ -145,8 +155,8 @@ In this example, you can see how to use the `filterItemTemplate` to render icons
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/excel-filtering-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-filtering-cs4/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/excel-filtering-cs4/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/excel-filtering-cs4/src/main.ts %}
@@ -176,8 +186,8 @@ The following example demonstrates how to remove the context menu option in the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/excel-filtering-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-filtering-cs5/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/excel-filtering-cs5/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/excel-filtering-cs5/src/main.ts %}
@@ -266,8 +276,8 @@ The following example demonstrates how to hide the sorting option in the excel f
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/excel-filtering-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/excel-filtering-cs6/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/excel-filtering-cs6/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/excel-filtering-cs6/src/main.ts %}

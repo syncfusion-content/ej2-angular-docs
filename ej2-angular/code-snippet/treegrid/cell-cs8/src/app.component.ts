@@ -1,8 +1,16 @@
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 import { Component, OnInit,ViewChild,ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
 import { TooltipComponent, TooltipEventArgs } from '@syncfusion/ej2-angular-popups';
+import { TooltipModule } from '@syncfusion/ej2-angular-popups';
 
 @Component({
+    imports: [
+    TreeGridAllModule,TooltipModule
+    ],
+    standalone: true,
     selector: 'app-container',
     encapsulation:ViewEncapsulation.None,
     template: `<ejs-tooltip #tooltip target=".e-rowcell" (beforeRender)="beforeRender($event)">

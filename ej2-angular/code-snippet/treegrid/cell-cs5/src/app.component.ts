@@ -1,7 +1,14 @@
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 import { Component, OnInit,ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
 
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+    standalone: true,
     selector: 'app-container',
     encapsulation:ViewEncapsulation.None,
     template: `<ejs-treegrid [dataSource]='data' height='300' [treeColumnIndex]='1' childMapping='subtasks' >

@@ -1,10 +1,3 @@
-import { NgModule,ViewChild } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
 
 
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -12,18 +5,12 @@ import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import {  TextWrapSettingsModel, WrapMode } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
+    imports: [
+    TreeGridAllModule,DropDownListAllModule
     ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
 standalone: true,
     selector: 'app-container',
     template: ` <div style="display: flex">

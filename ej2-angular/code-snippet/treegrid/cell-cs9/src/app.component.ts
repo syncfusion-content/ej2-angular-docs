@@ -1,10 +1,17 @@
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 import { Component, OnInit,ViewChild,ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
-import { TooltipComponent, TooltipEventArgs } from '@syncfusion/ej2-angular-popups';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+    imports: [
+    TreeGridAllModule,DropDownListAllModule
+    ],
+    standalone: true,
     selector: 'app-container',
     encapsulation:ViewEncapsulation.None,
     template: ` <div style="display: flex">

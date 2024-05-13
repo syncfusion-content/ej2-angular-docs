@@ -27,8 +27,7 @@ export class AppComponent {
   public spreadsheetObj: SpreadsheetComponent;
   beforeOpen(args: BeforeOpenEventArgs) {
     args.requestData['headers'] = {
-      ...args.requestData,
-      headers: { Authorization: 'YOUR TEXT' },
+      Authorization: 'YOUR TEXT',
     };
   }
 }

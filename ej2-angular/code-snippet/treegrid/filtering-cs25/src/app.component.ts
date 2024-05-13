@@ -1,13 +1,22 @@
 
 
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule, FilterService, PageService } from '@syncfusion/ej2-angular-treegrid';
+
 import { Component, OnInit ,ViewChild} from '@angular/core';
 import { sampleData } from './datasource';
 import { FilterBarMode, FilterSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { Column, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid'
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+    providers: [FilterService, PageService],
+    standalone: true,
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid [dataSource]='data' height='275' [treeColumnIndex]='1' [allowPaging]='true' [allowFiltering]='true' (load)="load()" childMapping='subtasks' >
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='230' [treeColumnIndex]='1' [allowPaging]='true' [allowFiltering]='true' (load)="load()" childMapping='subtasks' >
                     <e-columns>
                         <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                         <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>

@@ -1,10 +1,19 @@
 
 
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
+
+import { Component, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
 import { sampleData } from './datasource';
-import { TreeGridComponent, PageSettingsModel } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent, PageSettingsModel, PageService } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+    standalone: true,
+    providers:[PageService],
     selector: 'app-container',
     encapsulation:ViewEncapsulation.None,
     template: `<ejs-treegrid  #treegrid [dataSource]='data' height=250 [treeColumnIndex]='1' [allowPaging]='true' [pageSettings]='pageSettings' childMapping='subtasks' >

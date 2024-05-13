@@ -6,7 +6,7 @@ import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 
 
 
-import { Component, OnInit,ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
@@ -16,13 +16,12 @@ imports: [
         TreeGridModule,
         ButtonModule
     ],
-
+    encapsulation:ViewEncapsulation.None,
 providers: [PageService,
                 SortService,
                 FilterService],
 standalone: true,
     selector: 'app-container',
-    encapsulation:ViewEncapsulation.None,
     template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' (dataBound)="dataBound()" [treeColumnIndex]='1' childMapping='subtasks'>
                  <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' [customAttributes]="{class:'customcss'}" width=120></e-column>

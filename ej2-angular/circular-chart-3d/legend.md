@@ -16,9 +16,7 @@ The legend provides information about the data points rendered in the 3D Circula
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/legend/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/legend/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/legend/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ By using the `position` property, the legend can be positioned at the `left`, `r
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/position/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/position/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/position/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ You can reverse the order of the legend items by using the `reverse` property in
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/reverse/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/reverse/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/reverse/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ To change the legend shape, use the `legendShape` property in the `series`. By d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/legend-shape/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/legend-shape/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/legend-shape/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +82,7 @@ The legend size can be changed by using the `width` and `height` properties in `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/legend-size/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/legend-size/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/legend-size/src/main.ts %}
 {% endhighlight %}
@@ -108,9 +98,7 @@ The size of the legend items can be customized by using the `shapeHeight` and `s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/item-size/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/item-size/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/item-size/src/main.ts %}
 {% endhighlight %}
@@ -126,9 +114,7 @@ Paging will be enabled by default when the legend items exceed the legend bounds
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/paging/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/paging/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/paging/src/main.ts %}
 {% endhighlight %}
@@ -144,9 +130,7 @@ When the legend text exceeds the container, the text can be wrapped using the `t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/text-wrap/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/text-wrap/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/text-wrap/src/main.ts %}
 {% endhighlight %}
@@ -162,9 +146,7 @@ You can set a title for the legend using the `title` property in `legendSettings
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/legend-title/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/legend-title/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/legend-title/src/main.ts %}
 {% endhighlight %}
@@ -180,9 +162,7 @@ The page number will always be visible when using legend paging. However, it is 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/arrow-page/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/arrow-page/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/arrow-page/src/main.ts %}
 {% endhighlight %}
@@ -198,9 +178,7 @@ The `itemPadding` property can be used to adjust the space between the legend it
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/item-padding/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/item-padding/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/item-padding/src/main.ts %}
 {% endhighlight %}

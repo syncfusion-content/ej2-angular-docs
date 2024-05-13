@@ -25,7 +25,7 @@ To configure a GraphQL server with Syncfusion Angular Grid, you need to follow t
 
 * Create a new folder named **GraphQLServer** specifically for your GraphQL server.
 
-* Install the [graphpack](https://www.npmjs.com/package/graphpack) npm package. Open your terminal and navigate to the server folder, then run:
+* Install the [graph pack](https://www.npmjs.com/package/graphpack) npm package. Open your terminal and navigate to the server folder, then run:
 
   ```bash
   npm i graphpack

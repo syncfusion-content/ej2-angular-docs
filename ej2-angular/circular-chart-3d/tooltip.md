@@ -16,9 +16,7 @@ The 3D Circular Chart will display details about the points through a tooltip, w
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/tooltip/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/tooltip/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/tooltip/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ You can specify a header for the tooltip by using the `header` property in `tool
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/header/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/header/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/header/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ By default, the tooltip shows information about the x and y values in points. Ad
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/tooltip-format/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/tooltip-format/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/tooltip-format/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ Any HTML elements can be displayed in the tooltip by using the `template` proper
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/template/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/template/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/template/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +82,7 @@ By default, the tooltip tracks the mouse movement, but it can be set to a fixed 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/fixed-tooltip/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/fixed-tooltip/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/fixed-tooltip/src/main.ts %}
 {% endhighlight %}
@@ -108,9 +98,7 @@ The `fill` and `border` properties are used to customize the background color an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/tooltip-custom/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/tooltip-custom/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/tooltip-custom/src/main.ts %}
 {% endhighlight %}
@@ -126,9 +114,7 @@ Using the `tooltipRender` event, you can customize tooltip values for a particul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/tooltip-event/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/tooltip-event/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/tooltip-event/src/main.ts %}
 {% endhighlight %}

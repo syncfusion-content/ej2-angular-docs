@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Rendering in Angular Gantt component | Syncfusion
-description: Learn here all about Column Rendering in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
+title: Column rendering in Angular Gantt component | Syncfusion
+description: Learn here all about Column rendering in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Column Rendering
+control: Column rendering
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Column Rendering
+# Column rendering in Angular Gantt component
 
 In Syncfusion Angular Gantt chart, column rendering provides you with the ability to finely control how data is presented. This allows you to manually define columns, automatically generate them, and dynamically customize data presentation. With column rendering, you can ensure that your data is displayed exactly as needed, offering a wide range of possibilities for organizing and showcasing information within the gantt chart.
 
@@ -27,9 +27,6 @@ Here's an example code snippet that demonstrates how to define columns manually 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnrender-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnrender-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnrender-cs1/src/main.ts %}
@@ -52,9 +49,6 @@ Here is an example for dynamically generate columns in the gantt chart using ngF
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnrender-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnrender-cs2/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnrender-cs2/src/main.ts %}
 {% endhighlight %}
@@ -75,9 +69,6 @@ In the provided code, the **percentageFormatter** function takes the progress va
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnrender-cs6/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnrender-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnrender-cs6/src/main.ts %}
@@ -100,9 +91,6 @@ This will display the concatenated value of **FirstName** and **LastName** in th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnrender-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnrender-cs3/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnrender-cs3/src/main.ts %}
 {% endhighlight %}
@@ -110,20 +98,17 @@ This will display the concatenated value of **FirstName** and **LastName** in th
   
 {% previewsample "page.domainurl/samples/gantt/columns/columnrender-cs3" %}
 
->Since customized values are displayed in the **Name** column, data operations, such as sorting and fiiltering, cannot be performed for this column.
+>Since customized values are displayed in the **Name** column, data operations, such as sorting and filtering, cannot be performed for this column.
 
 ### Expression column
 
 You can achieve an expression column in the Gantt chart by using the [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/gantt/column/#valueaccessor) property. The `valueAccessor` property allows you to define a function that calculates the value for the expression column based on the values of other columns.
 
-In this example, gantt chart has columns **TaskID**, **TaskName**, **Duration**, **Progress**, **units**, and **unitprice**. An expression column called **Total Price** is added that calculates the total prices for value for each row based on the values of **units** and **Total Price** columns.
+In this example, gantt chart has columns **TaskID**, **TaskName**, **Duration**, **Progress**, **units**, and **unit price**. An expression column called **Total Price** is added that calculates the total prices for value for each row based on the values of **units** and **Total Price** columns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnrender-cs4/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnrender-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnrender-cs4/src/main.ts %}
@@ -144,9 +129,6 @@ Here is an example code snippet that demonstrates how to display serial numbers 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnrender-cs5/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnrender-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnrender-cs5/src/main.ts %}

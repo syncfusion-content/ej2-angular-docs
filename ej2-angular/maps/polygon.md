@@ -32,9 +32,7 @@ The following example shows how to customize the polygon shape over the geometry
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/polygon-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/polygon-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/polygon-cs1/src/main.ts %}
 {% endhighlight %}
@@ -58,9 +56,7 @@ The following properties are available in the [tooltipSettings](https://ej2.sync
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/polygon-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/polygon-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/polygon-cs4/src/main.ts %}
 {% endhighlight %}
@@ -76,9 +72,7 @@ Any HTML element can be rendered in the tooltip of the polygon shapes using the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/maps/default-map/polygon-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/maps/default-map/polygon-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/maps/default-map/polygon-cs5/src/main.ts %}
 {% endhighlight %}

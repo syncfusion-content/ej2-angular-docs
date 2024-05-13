@@ -1,3 +1,9 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, EditService, PageService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+
 import { Component, ViewChild } from '@angular/core';
 import { RemovingEventArgs, UploaderComponent } from '@syncfusion/ej2-angular-inputs';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
@@ -11,6 +17,15 @@ interface CustomFile {
 }
 
 @Component({
+  imports: [
+
+    GridModule,
+    UploaderModule,
+    DialogModule
+  ],
+
+  providers: [EditService, PageService, ToolbarService],
+  standalone: true,
   selector: 'app-root',
   template: `
     <div class="control-section">
@@ -31,7 +46,7 @@ export class AppComponent {
   @ViewChild('defaultupload') public uploadObj?: UploaderComponent;
   @ViewChild('grid') public gridObj?: GridComponent;
   @ViewChild('dialog') public dialog?: DialogComponent;
-  public newColumn:any;
+  public newColumn: any;
   public path: Object = {
     saveUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Save',
     removeUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Remove'

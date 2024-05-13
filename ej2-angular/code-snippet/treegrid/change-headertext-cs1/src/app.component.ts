@@ -1,3 +1,13 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import {TextBoxModule} from '@syncfusion/ej2-angular-inputs'
+
+
+
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
@@ -5,6 +15,17 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+imports: [
+        
+        TreeGridModule,
+        ButtonModule,DropDownListAllModule,
+        TextBoxModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService],
+standalone: true,
     selector: 'app-container',
     template: `<div style="display: flex">
                <label style="padding: 30px 20px 0 0" > Select column name  :</label>
@@ -63,3 +84,6 @@ export class AppComponent implements OnInit {
         this.data = sampleData;
     }
 }
+
+
+

@@ -18,9 +18,7 @@ domainurl: ##DomainURL##
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/pie-donut/pie/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/pie-donut/pie/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/pie-donut/pie/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ By default, the radius of the pie series will be 80% of the size, which is the m
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/pie-donut/radius/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/pie-donut/radius/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/pie-donut/radius/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ You can assign different radii to each slice of the pie by fetching the radius f
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/pie-donut/various-radius/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/pie-donut/various-radius/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/pie-donut/various-radius/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ To achieve a donut in the pie series, customize the `innerRadius` property of th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/pie-donut/donut/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/pie-donut/donut/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/pie-donut/donut/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +82,7 @@ The text and the fill color from the data source can be mapped to the 3D Circula
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/pie-donut/color/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/pie-donut/color/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/pie-donut/color/src/main.ts %}
 {% endhighlight %}
@@ -108,9 +98,7 @@ Individual points in pie chart can be customized using the `pointRender` event.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/pie-donut/customization/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/pie-donut/customization/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/pie-donut/customization/src/main.ts %}
 {% endhighlight %}

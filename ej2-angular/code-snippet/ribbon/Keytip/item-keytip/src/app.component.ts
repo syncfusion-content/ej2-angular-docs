@@ -1,7 +1,15 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { RibbonModule, RibbonGroupButtonService, RibbonGalleryService, RibbonKeyTipService, RibbonColorPickerService } from '@syncfusion/ej2-angular-ribbon'
+
 import { Component, ViewChild } from "@angular/core";
 import { RibbonItemSize, RibbonButtonSettingsModel, RibbonGroupButtonSelection, RibbonSplitButtonSettingsModel, RibbonComponent, RibbonComboBoxSettingsModel, RibbonGroupButtonSettingsModel, RibbonColorPickerSettingsModel, RibbonGallerySettingsModel, RibbonDropDownSettingsModel, RibbonCheckBoxSettingsModel } from '@syncfusion/ej2-angular-ribbon';
 
 @Component({
+imports: [ RibbonModule],
+
+providers: [ RibbonGroupButtonService, RibbonGalleryService, RibbonKeyTipService, RibbonColorPickerService ],
+standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html'
 })

@@ -1,3 +1,10 @@
+import { NgModule,ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid'
+import { GridModule, PageService, SelectionService, RowDDService } from '@syncfusion/ej2-angular-grids'
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { sampleGridData } from './datasource';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
@@ -5,6 +12,16 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { GridComponent, RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+imports: [
+        
+        GridModule,
+        TreeGridAllModule,
+        ButtonModule,
+        DropDownListAllModule
+    ],
+
+providers: [PageService, SelectionService, RowDDService],
+standalone: true,
   selector: 'app-container',
   template: `<div>
                 <div style="float:left;width:49%">

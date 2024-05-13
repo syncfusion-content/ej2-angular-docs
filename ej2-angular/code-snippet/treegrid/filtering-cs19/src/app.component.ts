@@ -1,10 +1,18 @@
 
-
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule, FilterService  } from '@syncfusion/ej2-angular-treegrid';
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit,ViewChild} from '@angular/core';
 import { sampleData } from './datasource';
 import { FilterSettingsModel, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+    imports: [
+    TreeGridAllModule, ButtonModule
+    ],
+    providers: [FilterService],
+    standalone: true,
     selector: 'app-container',
     template: ` <button ejs-button cssClass="e-outline" (click)="onSingleValueFilter()">Filter with single value</button>
                 <button ejs-button cssClass="e-outline" style="margin-left:5px" (click)="onMultipleValueFilter()">Filter with multiple values</button>

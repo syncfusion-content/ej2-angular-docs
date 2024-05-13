@@ -431,9 +431,7 @@ The following example demonstrates how to bind observable data with using async 
 {% highlight ts tabtitle="customers.ts" %}
 {% include code-snippet/grid/observables-crud-actions/src/customers.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/observables-crud-actions/src/app.module.ts %}
-{% endhighlight %}
+
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/observables-crud-actions" %}
@@ -1006,9 +1004,7 @@ The following example demonstrates how to bind observable data without using asy
 {% highlight ts tabtitle="customers.ts" %}
 {% include code-snippet/grid/observables-without-async/src/customers.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/observables-without-async/src/app.module.ts %}
-{% endhighlight %}
+
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/observables-without-async" %}
@@ -1200,9 +1196,7 @@ The following example demonstrates how to send additional parameters to the serv
 {% highlight ts tabtitle="order.service.ts" %}
 {% include code-snippet/grid/observables-additional-parameters/src/order.service.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/observables-additional-parameters/src/app.module.ts %}
-{% endhighlight %}
+
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/grid/observables-additional-parameters" %}

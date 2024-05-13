@@ -41,9 +41,6 @@ In the following demo, the expand and collapse icons are customized using the CS
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/treecolumn-cs1/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs1/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +61,6 @@ In the following demonstration, indent space is applied by adding a CSS class to
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/treecolumn-cs2/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs2/src/main.ts %}
 {% endhighlight %}
@@ -84,9 +78,6 @@ In the following demo, all parent rows are rendered in collapsed state in initia
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/treecolumn-cs3/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs3/src/main.ts %}
 {% endhighlight %}
@@ -103,9 +94,6 @@ In the following demonstration, the parent rows are rendered in an expanded or c
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs4/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/treecolumn-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs4/src/main.ts %}
@@ -130,9 +118,6 @@ In the following demo, the above-mentioned steps have been followed to persist t
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs5/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/treecolumn-cs5/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %} 
 {% include code-snippet/gantt/columns/treecolumn-cs5/src/main.ts %}
@@ -226,9 +211,6 @@ The following events are available for handling expand and collapse actions:
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs6/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/treecolumn-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/treecolumn-cs6/src/main.ts %}

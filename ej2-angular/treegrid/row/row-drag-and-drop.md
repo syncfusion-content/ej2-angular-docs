@@ -24,9 +24,7 @@ Here's an example of how to enable drag and drop within the tree grid:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/row-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-cs3/src/main.ts %}
 {% endhighlight %}
@@ -48,9 +46,7 @@ Here's an example of how to hide the drag and drop icon in the tree grid:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/dragndrop-cs2/src/app.component.ts %}
 {% endhighlight %}    
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/dragndrop-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/dragndrop-cs2/src/main.ts %}
 {% endhighlight %}
@@ -73,9 +69,7 @@ Here's an example code snippet that demonstrates how to enable row drag and drop
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/row-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-cs4/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +87,7 @@ In the below example, the selected tree grid row is dragged and dropped in to th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/dragndrop-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/dragndrop-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/dragndrop-cs1/src/main.ts %}
 {% endhighlight %}
@@ -436,9 +428,7 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/dragndrop-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/dragndrop-cs3/src/main.ts %}
 {% endhighlight %}
@@ -456,9 +446,7 @@ In the following example, the drop action is cancelled using the `rowDrop` event
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/dragndrop-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/dragndrop-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/dragndrop-cs4/src/main.ts %}
 {% endhighlight %}
@@ -476,9 +464,7 @@ In the following example, the drop action of the **Child** position is prevented
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/row-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/row-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-cs5/src/main.ts %}
 {% endhighlight %}

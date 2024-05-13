@@ -1,7 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { PivotViewAllModule } from '@syncfusion/ej2-angular-pivotview'
+
 import { Component, OnInit } from '@angular/core';
 import { IDataOptions, IDataSet, VirtualScrollService, VirtualScrollSettingsModel } from '@syncfusion/ej2-angular-pivotview';
 
 @Component({
+imports: [
+        
+        PivotViewAllModule
+    ],
+
+
+standalone: true,
   selector: 'app-container',
   providers: [VirtualScrollService],
   template: `<ejs-pivotview #pivotview id='PivotView' width='100%' height='350'

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
    
 # Edit in angular grid component
 
-The Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to seamlessly perform CRUD (Create, Read, Update, Delete) operations.
+The Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to enable you to perform CRUD (Create, Read, Update, Delete) operations seamlessly.
 
 To enable editing functionality directly within the grid, you need to configure the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel/#allowediting), [allowAdding](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel/#allowadding), and [allowDeleting](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettingsModel/#allowdeleting) properties within the [editSettings](https://ej2.syncfusion.com/angular/documentation/api/grid#editsettings)  to **true**.
 
@@ -28,9 +28,7 @@ To learn about what are all the edit modes and edit types are available in Angul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs18/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs18/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs18/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +52,7 @@ Here's an example of how to enable the toolbar with edit option in the Grid:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs19/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs19/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs19/src/main.ts %}
 {% endhighlight %}
@@ -79,9 +75,7 @@ Here's an example that demonstrates how to disable editing for the column in the
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/grid/edit-cs20/src/app.component.html %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs20/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs20/src/main.ts %}
 {% endhighlight %}
@@ -90,8 +84,8 @@ Here's an example that demonstrates how to disable editing for the column in the
 {% previewsample "page.domainurl/samples/grid/edit-cs20" %}
 
 >* If you have set the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property to **true** for a column, editing will be automatically disabled for that column.
-> * You can disable the particular row using [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event. Please refer this [link](https://ej2.syncfusion.com/angular/documentation/grid/editing/in-line-editing#disable-editing-for-a-particular-row).
->* You can disable the particular cell using [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#celledit) event. Please refer this [link](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing#disable-editing-for-a-particular-cell).
+> * You can disble the particular row using [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.please refer this [link](https://ej2.syncfusion.com/angular/documentation/grid/editing/in-line-editing#disable-editing-for-a-particular-row).
+>* You can disble the particular cell using [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#celledit) event.please refer this [link](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing#disable-editing-for-a-particular-cell).
 
 ## Editing template column
 
@@ -105,9 +99,7 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs23/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs23/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs23/src/main.ts %}
 {% endhighlight %}
@@ -130,9 +122,7 @@ The following example that demonstrates how to customize the delete confirmation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-delete-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-delete-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-delete-cs1/src/main.ts %}
 {% endhighlight %}
@@ -150,9 +140,7 @@ In the following sample, the `CheckBox` component is rendered as a template in t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-single-click/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-single-click/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-single-click/src/main.ts %}
 {% endhighlight %}
@@ -170,9 +158,7 @@ In the following example, the `DropDownList` component is rendered within the [e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-enum/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-enum/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-enum/src/main.ts %}
 {% endhighlight %}
@@ -184,15 +170,13 @@ In the following example, the `DropDownList` component is rendered within the [e
 
 The edit template for complex column in Grid is used to customize the editing experience when dealing with complex data structures. This capability is particularly useful for handling nested data objects within grid columns. By default, the grid binds complex data to column fields using the dot (.) operator. However, when you render custom elements, such as input fields, in the edit template for a complex column, you must use the (___) underscore operator instead of the dot (.) operator to bind the complex object.
 
-In the following sample, the input element is rendered in the edit template of the FirstName and LastName column. The edited changes can be saved using the `name` property of the input element. Since the complex data is bound to the FirstName  and LastName column, The `name` property should be defined as **Name___FirstName and Name___LastName**, respectively, instead of using the dot notation (**Name.FirstName and Name.LastName**).
+In the following sample, the input element is rendered in the edit template of the FirstName and LastName column. The edited changes can be saved using the `name` property of the input element. Since the complex data is bound to the FirstName  and LastName column, The `name` property should be defined as **Name___FirstName** and **Name___LastName**, respectively, instead of using the dot notation (**Name.FirstName** and **Name.LastName**).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-complex/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-complex/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-complex/src/main.ts %}
 {% endhighlight %}
@@ -210,9 +194,7 @@ In the following code example, the Employee Name is a foreign key column. When e
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-tempalte/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-tempalte/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-tempalte/src/main.ts %}
 {% endhighlight %}
@@ -242,9 +224,7 @@ The following example demonstrates the integration of the Syncfusion Grid with a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-toolbar/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-toolbar/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-toolbar/src/main.ts %}
 {% endhighlight %}
@@ -256,17 +236,15 @@ The following example demonstrates the integration of the Syncfusion Grid with a
 
 Performing the edit operation in a custom external form in the Syncfusion Grid is a valuable feature when you need to customize the edit operation within a separate form rather than the default in-grid editing. 
 
-To enable the use of an external form for editing in Syncfusion Grid, you can make use of the `rowSelected` property. This property specifies whether the edit operation should be triggered when a row is selected.
+To enable the use of an external form for editing in Syncfusion Grid, you can make use of the `RowSelected` property. This property specifies whether the edit operation should be triggered when a row is selected.
 
-In the following example, it demonstrates how to edit the form using an external form by utilizing the `rowSelected` property:
+In the following example, it demonstrates how to edit the form using an external form by utilizing the `RowSelected` property:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-form/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-form/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-form/src/main.ts %}
 {% endhighlight %}
@@ -288,9 +266,7 @@ In the following example, the textbox is rendered in the **Freight** column usin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/edit-cs24/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/grid/edit-cs24/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/edit-cs24/src/main.ts %}
 {% endhighlight %}
@@ -305,7 +281,7 @@ In the following example, the textbox is rendered in the **Freight** column usin
 * [Cascading DropDownList with Grid Editing](../how-to/cascading-drop-down-list)
 * [Tab Inside the Dialog Editing](../how-to/using-tab-inside-the-dialog-editing)
 * [Apply animation for Grid Edit dialog in Angular Grid](https://www.syncfusion.com/forums/154544/apply-animation-for-grid-edit-dialog-in-angular-grid)
-* [CRUD operations using ASP.NET core web api methods in Angular Grid](https://www.syncfusion.com/forums/150090/crud-operations-using-asp-net-core-web-api-methods-in-angular-grid)
+* [CRUD operations using asp.net core web api methods in Angular Grid](https://www.syncfusion.com/forums/150090/crud-operations-using-asp-net-core-web-api-methods-in-angular-grid)
 * [How to restrict ArrowUp increase and ArrowDown decrease value in Grid numeric cell in Angular Grid](https://www.syncfusion.com/forums/150611/how-to-restrict-arrowup-increase-and-arrowdown-decrease-value-in-grid-numeric-cell-in)
 * [How to use DropDownList and Combo-Box in Batch-edit mode of Angular Grid](https://www.syncfusion.com/forums/151968/how-to-use-dropdownlist-and-combo-box-in-batch-edit-mode-of-angular-grid)
 * [How to use CellEditArgs event in Angular Grid](https://www.syncfusion.com/forums/153617/how-to-use-celleditargs-event-in-angular-grid)

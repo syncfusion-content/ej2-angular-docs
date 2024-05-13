@@ -7,6 +7,10 @@ import { TreeGridComponent, SortService, ColumnMenuService, PageService, FilterS
 import { FilterSettingsModel } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid height='250' allowSorting='true' allowPaging='true' [dataSource]='data' [treeColumnIndex]='1' childMapping='subtasks' [filterSettings]='filterSettings' (columnMenuOpen)='columnMenuOpen($event)' [allowFiltering]='true' showColumnMenu="true">
         <e-columns>

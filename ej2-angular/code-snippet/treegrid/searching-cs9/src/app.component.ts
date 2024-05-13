@@ -1,5 +1,7 @@
 
-
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule, FilterService, ToolbarService, } from '@syncfusion/ej2-angular-treegrid';
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { diacritics } from './datasource';
@@ -7,8 +9,14 @@ import { ToolbarItems, SearchSettingsModel, TreeGridComponent } from '@syncfusio
 import { SearchEventArgs } from '@syncfusion/ej2-angular-grids';
 import { Predicate, Query } from '@syncfusion/ej2-data';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
+import {SwitchModule} from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+    imports: [
+    TreeGridAllModule, SwitchModule
+    ],
+    providers: [FilterService, ToolbarService],
+    standalone: true,
     selector: 'app-container',
     template: `<div>
                 <label style="padding: 10px 10px">Enable or disable ignoreAccent property</label>

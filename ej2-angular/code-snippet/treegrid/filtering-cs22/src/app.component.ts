@@ -1,10 +1,17 @@
-
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule, FilterService  } from '@syncfusion/ej2-angular-treegrid';
 
 import { Component, OnInit,ViewChild} from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+    providers: [FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<div id='message' style='color:red'>{{message}}</div>
                 <ejs-treegrid #treegrid id='treegrid' [dataSource]='data' [treeColumnIndex]='1' height='275' [allowFiltering]='true' childMapping='subtasks' (actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)">

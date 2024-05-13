@@ -1,29 +1,20 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser'
-import { PageService, SortService, FilterService,ToolbarService,TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
+import { TreeGridAllModule, FilterService, ToolbarService, } from '@syncfusion/ej2-angular-treegrid';
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import {TextBoxComponent} from '@syncfusion/ej2-angular-inputs';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
+    imports: [
+    TreeGridAllModule, ButtonModule, TextBoxModule
     ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                ToolbarService],
-standalone: true,
+    providers: [FilterService, ToolbarService],
+    standalone: true,
     selector: 'app-container',
     template: `<div class="e-float-input" style="width: 120px; display: inline-block;">
                     <ejs-textbox #searchInput width="100" placeholder="Search text"></ejs-textbox>

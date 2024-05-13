@@ -1,8 +1,14 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RibbonModule } from '@syncfusion/ej2-angular-ribbon';
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
 import { Component, ViewChild } from '@angular/core';
 import { RibbonButtonSettingsModel, RibbonDropDownSettingsModel, DisplayMode, RibbonComponent } from '@syncfusion/ej2-angular-ribbon';
 import { ItemModel } from "@syncfusion/ej2-angular-splitbuttons";
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 @Component({
+  imports: [ RibbonModule, CheckBoxModule ],
+  standAlone: true,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

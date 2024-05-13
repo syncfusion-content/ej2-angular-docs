@@ -22,10 +22,11 @@ standalone: true,
                 <label style="padding: 30px 17px 0 0;">Select column name :</label>
                 <ejs-dropdownlist  style="padding: 26px 0 0 0" index="0" width="100" [dataSource]="columnData" [fields]='fields' (change) ="changeColumn($event)"></ejs-dropdownlist>
                 </div>
-                <div style="display: flex">
+    
+            <div style="display: flex">
                 <label style="padding: 30px 17px 0 0;">Align the text for columns :</label>
                 <ejs-dropdownlist  style="padding: 26px 0 0 0" index="0" width="100" [dataSource]="alignmentData" (change) ="changeAlignment($event)"></ejs-dropdownlist>
-               </div>
+              </div>
 
                 <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks'>
                     <e-columns>
@@ -48,6 +49,7 @@ export class AppComponent implements OnInit {
         { text: 'Center', value: 'Center' },
         { text: 'Justify', value: 'Justify' },
     ];
+
     public columnData: Object[] = [
         { text: 'Task Id', value: 'taskID' },
         { text: 'Start Date', value: 'startDate' },
