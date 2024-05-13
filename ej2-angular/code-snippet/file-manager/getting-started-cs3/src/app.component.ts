@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 @Component({
 imports: [FileManagerModule, ],
 
-,
+
 standalone: true,
   selector: 'app-root',
   styleUrls: ['./app.component.css'],
