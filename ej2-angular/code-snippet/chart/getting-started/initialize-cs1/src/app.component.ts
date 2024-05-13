@@ -11,7 +11,6 @@ imports: [
          ChartModule
     ],
 
-,
 standalone: true,
     selector: 'app-container',
     // specifies the template string for the Chart component
