@@ -1,12 +1,21 @@
 
 
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { Component, OnInit ,ViewChild,ViewEncapsulation} from '@angular/core';
 import { sampleData } from './datasource';
-import { TreeGridComponent, PageSettingsModel } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent, PageSettingsModel, PageService } from '@syncfusion/ej2-angular-treegrid';
 import { ChangeEventArgs, NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 
 @Component({
+    imports: [
+    TreeGridAllModule, NumericTextBoxModule
+    ],
+    providers:[PageService],
+    standalone: true,
     selector: 'app-container',
     encapsulation:ViewEncapsulation.None,
     template: `<div style="padding:0 0 20px 0">

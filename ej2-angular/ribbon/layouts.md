@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---     
 
-# Ribbon Layouts
+# Layouts in Angular Ribbon component 
 
 The Ribbon allows to customize the layout by using the [activeLayout](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#activelayout) property. The Ribbon component supports the following layouts:
 
@@ -33,7 +33,7 @@ In classic layout, the Ribbon component organizes the items and groups in a trad
 
 ### Defining items size
 
-You can use the [allowedSizes](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#allowedsizes) property to set the allowed size for an item. The Ribbon items can be appeared in three different sizes: Large(large icon with text), Medium(small icon with text) and Small(small icon only). On resizing, the items size can be changed based on the available width of the tab content from the order of Large-> Medium-> Small and viceversa.
+You can use the [allowedSizes](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#allowedsizes) property to set the allowed size for an item. The Ribbon items can be appeared in three different sizes: Large(large icon with text), Medium(small icon with text) and Small(small icon only). On resizing, the items size can be changed based on the available width of the tab content from the order of Large-> Medium-> Small and vice versa.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -252,9 +252,7 @@ You can use the [hideLayoutSwitcher](https://ej2.syncfusion.com/angular/document
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/HideLayoutSwitcher/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/HideLayoutSwitcher/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/HideLayoutSwitcher/src/main.ts %}
 {% endhighlight %}

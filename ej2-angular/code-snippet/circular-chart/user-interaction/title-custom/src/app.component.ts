@@ -1,7 +1,17 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { CircularChart3DAllModule } from '@syncfusion/ej2-angular-charts'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { CircularChart3DComponent } from '@syncfusion/ej2-angular-charts';
 
 @Component({
+imports: [
+         CircularChart3DAllModule
+    ],
+
+providers: [CircularChart3DAllModule],
+standalone: true,
   selector: 'app-container',
   template: `
   <ejs-circularchart3d #chart style='display:block;' align='center' [title]='title' [titleStyle]='titleStyle' [tilt]='tilt' [legendSettings]="legendSettings">

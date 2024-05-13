@@ -37,8 +37,8 @@ The following example demonstrates how to activate default filtering in the tree
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs4/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs4/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs4/src/main.ts %}
@@ -65,8 +65,8 @@ The following example illustrates how to enable different filter bar modes in th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs5/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs5/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs5/src/main.ts %}
@@ -87,8 +87,8 @@ The following example demonstrates how to display the filter text in the pager o
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs23/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs23/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs23/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs23/src/main.ts %}
@@ -109,8 +109,8 @@ The following example demonstrates how to show or hide the filter bar operator i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs24/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs24/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs24/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs24/src/main.ts %}
@@ -131,8 +131,8 @@ Here's an example that demonstrates how to hide the filter bar for a template co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs25/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs25/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs25/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs25/src/main.ts %}
@@ -158,8 +158,8 @@ The following example demonstrates how to show a custom component in the filter 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filter-template-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filter-template-cs1/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filter-template-cs1/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filter-template-cs1/src/main.ts %}

@@ -1,9 +1,18 @@
 
 
-import { Component, OnInit } from '@angular/core';
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule, FilterService  } from '@syncfusion/ej2-angular-treegrid';
+
+import { Component, OnInit ,ViewChild} from '@angular/core';
 import { diacritics } from './datasource';
 
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+    providers: [FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='0' height='275' [allowFiltering]='true' [filterSettings]='filterSettings'childMapping='Children' >
                     <e-columns>

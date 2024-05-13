@@ -1,6 +1,10 @@
 
 
-import { Component, OnInit } from '@angular/core';
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule, FilterService } from '@syncfusion/ej2-angular-treegrid';
+
+import { Component, OnInit ,ViewChild} from '@angular/core';
 import { sampleData ,dropdowndata} from './datasource';
 import { DataManager } from '@syncfusion/ej2-data';
 import { DropDownList } from '@syncfusion/ej2-angular-dropdowns';
@@ -8,6 +12,11 @@ import { createElement } from '@syncfusion/ej2-base';
 import { FilterSettingsModel, IFilter, Filter,Column } from '@syncfusion/ej2-angular-grids';
 
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+    providers: [FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='275' [allowFiltering]='true' [filterSettings]="filterSettings" childMapping='subtasks' >
                     <e-columns>

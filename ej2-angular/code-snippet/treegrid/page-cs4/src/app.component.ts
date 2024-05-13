@@ -1,9 +1,18 @@
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule, PageService } from '@syncfusion/ej2-angular-treegrid';
+import { SwitchModule } from '@syncfusion/ej2-angular-buttons';
+import { Component, OnInit, ViewChild, ViewEncapsulation} from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent, PageSettingsModel } from '@syncfusion/ej2-angular-treegrid';
 import { SwitchComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+    imports: [
+    TreeGridAllModule, SwitchModule
+    ],
+    providers:[PageService],
+    standalone: true,
     selector: 'app-container',
     encapsulation:ViewEncapsulation.None,
     template: `<div style="padding: 20px 0px 20px 0px">

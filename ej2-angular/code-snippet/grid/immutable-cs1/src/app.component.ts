@@ -1,3 +1,7 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
+
 import { Component, ViewChild, OnInit } from "@angular/core";
 import { GridComponent, RowDataBoundEventArgs, SelectionSettingsModel } from "@syncfusion/ej2-angular-grids";
 import { data } from "./datasource";
@@ -20,6 +24,13 @@ interface DataType {
 }
 
 @Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [PageService],
+standalone: true,
   selector: 'app-root',
   template: `
       <button  #addtop ejs-button class="e-control e-btn e-lib e-info" (click)="addTopEvent()">Add rows Data</button>

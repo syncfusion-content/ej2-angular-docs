@@ -22,9 +22,7 @@ You can add keytips to all the ribbon items by using the [keyTip](https://ej2.sy
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Keytip/item-keytip/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Keytip/item-keytip/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Keytip/item-keytip/src/main.ts %}
 {% endhighlight %}
@@ -46,9 +44,7 @@ You can add keytips to the file menu by using the [keyTip](https://ej2.syncfusio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Keytip/filemenu-keytip/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Keytip/filemenu-keytip/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Keytip/filemenu-keytip/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +66,7 @@ You can add keytips to backstage menu items by using the [keyTip](https://ej2.sy
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Keytip/backstage-keytip/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Keytip/backstage-keytip/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Keytip/backstage-keytip/src/main.ts %}
 {% endhighlight %}
@@ -94,9 +88,7 @@ You can add keytip to the layout switcher by using the [layoutSwitcherKeyTip](ht
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Keytip/layout-keytip/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Keytip/layout-keytip/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Keytip/layout-keytip/src/main.ts %}
 {% endhighlight %}
@@ -118,9 +110,7 @@ You can add keytip to the launcher icon by using the [launcherIconKeyTip](https:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/Keytip/launcher-keytip/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/Keytip/launcher-keytip/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/Keytip/launcher-keytip/src/main.ts %}
 {% endhighlight %}

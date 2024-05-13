@@ -16,9 +16,7 @@ Data points containing `null` or `undefined` values are considered empty points.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/pie-donut/empty-points/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/pie-donut/empty-points/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/pie-donut/empty-points/src/main.ts %}
 {% endhighlight %}
@@ -34,9 +32,7 @@ A specific color for an empty point can be set by using the `fill` property in `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/pie-donut/empty-point-custom/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/pie-donut/empty-point-custom/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/pie-donut/empty-point-custom/src/main.ts %}
 {% endhighlight %}

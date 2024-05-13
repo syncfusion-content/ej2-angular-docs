@@ -33,7 +33,9 @@ Here is an example that demonstrates the default filtering feature of the tree g
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs9/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs9/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs9/src/main.ts %}
 {% endhighlight %}
@@ -72,7 +74,9 @@ The following demo illustrates filtering records with different hierarchy modes.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs10/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs10/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs10/src/main.ts %}
 {% endhighlight %}
@@ -90,7 +94,9 @@ Here is an example of how to configure the initial filter using the `predicate` 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs11/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs11/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs11/src/main.ts %}
 {% endhighlight %}
@@ -110,7 +116,9 @@ The following example demonstrates, how to perform an initial filter with multip
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs12/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs12/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs12/src/main.ts %}
 {% endhighlight %}
@@ -130,8 +138,8 @@ The following example demonstrates how to perform an initial filter with multipl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs13/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs13/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs13/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs13/src/main.ts %}
@@ -176,8 +184,8 @@ Here's an example that demonstrates how to change the default filter operator co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs14/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs14/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs14/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="dataSource.ts" %}
 {% include code-snippet/treegrid/filtering-cs14/src/dataSource.ts %}
@@ -199,8 +207,8 @@ Here’s an example that demonstrates how to remove the filter bar for the taskN
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs15/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs15/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs15/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs15/src/main.ts %}
@@ -426,8 +434,8 @@ Consider the following sample where the `ignoreAccent` property is set to true i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs16/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs16/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs16/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs16/src/main.ts %}
@@ -446,8 +454,8 @@ Below is an example code demonstrating how to enable or disable case sensitivity
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs17/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs17/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs17/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs17/src/main.ts %}
@@ -468,8 +476,8 @@ Here's an example where the menu filter is enabled by default for all columns, b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs18/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs18/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs18/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs18/src/main.ts %}
@@ -492,8 +500,8 @@ The following example demostrates, how to programmatically filter the tree grid 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs19/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs19/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs19/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs19/src/main.ts %}
@@ -518,8 +526,8 @@ Below is an example demonstrating how to retrieve filtering data in a tree grid 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs20/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs20/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs20/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs20/src/main.ts %}
@@ -558,8 +566,8 @@ Here's an example of how to clear the filtering in a tree grid using the `clearF
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/filtering-cs21/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs21/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs21/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs21/src/main.ts %}
@@ -579,13 +587,20 @@ In the given example, the filtering is prevented for **duration** column during 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule, FilterService  } from '@syncfusion/ej2-angular-treegrid';
 
 import { Component, OnInit,ViewChild} from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+    providers: [FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<div id='message' style='color:red'>{{message}}</div>
                 <ejs-treegrid #treegrid id='treegrid' [dataSource]='data' [treeColumnIndex]='1' height='275' [allowFiltering]='true' childMapping='subtasks' (actionBegin)="actionBegin($event)" (actionComplete)="actionComplete($event)">
@@ -622,10 +637,11 @@ export class AppComponent implements OnInit {
       }
   }
 }
+
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/filtering-cs22/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/filtering-cs22/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/filtering-cs22/src/main.ts %}

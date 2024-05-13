@@ -35,9 +35,7 @@ In the example below, the Spreadsheet component is rendered with the `German cul
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/formula-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/formula-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/formula-cs3/src/main.ts %}
 {% endhighlight %}
@@ -57,9 +55,7 @@ The following code example shows an unsupported formula in the spreadsheet.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/formula-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/formula-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/formula-cs1/src/main.ts %}
 {% endhighlight %}
@@ -75,9 +71,7 @@ The following code example shows how to use `computeExpression` method in the sp
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/formula-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/formula-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/formula-cs2/src/main.ts %}
 {% endhighlight %}
@@ -104,9 +98,7 @@ The following code example shows the usage of named ranges support.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/spreadsheet/defined-name-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/spreadsheet/defined-name-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/spreadsheet/defined-name-cs1/src/main.ts %}
 {% endhighlight %}

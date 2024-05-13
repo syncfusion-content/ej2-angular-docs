@@ -1,37 +1,27 @@
-import { NgModule,ViewChild } from '@angular/core'
+
+import { NgModule, } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser'
-import { PageService, SortService, FilterService,ToolbarService,TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
+import { TreeGridAllModule, FilterService, ToolbarService, } from '@syncfusion/ej2-angular-treegrid';
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { TreeGridComponent, ToolbarItems,SearchSettingsModel } from '@syncfusion/ej2-angular-treegrid'; 
-
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
+    imports: [
+    TreeGridAllModule, DropDownListAllModule 
     ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                ToolbarService],
-standalone: true,
+    providers: [FilterService, ToolbarService],
+    standalone: true,
     selector: 'app-container',
     template: `<div style="display: flex">
                   <label style="padding:  10px 10px 26px 0">Change the search operators:</label>
                   <ejs-dropdownlist style="margin-top:5px" id="value" #dropdown index="0" width="100" [dataSource]="ddlData" [fields]='fields' (change)="valueChange($event)"></ejs-dropdownlist>
                 </div>
     
-                <ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' height='270' [toolbar]='toolbarOptions' childMapping='subtasks' [searchSettings]='searchSettings' >
+                <ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' height='230' [toolbar]='toolbarOptions' childMapping='subtasks' [searchSettings]='searchSettings' >
                     <e-columns>
                         <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                         <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>

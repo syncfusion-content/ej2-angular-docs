@@ -149,21 +149,7 @@ npm install @syncfusion/ej2-data --save
 In the `app.module.ts` file, import the **GridModule** from the `@syncfusion/ej2-angular-grids` package:
 
 {% tabs %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% raw %}
 
-import { GridModule } from '@syncfusion/ej2-angular-grids';
-
-@NgModule({
-  imports: [
-    // Other imports...
-    GridModule,
-  ],
-})
-export class AppModule { }
-
-{% endraw %}
-{% endhighlight %}
 {% endtabs %}
 
 **Step 3: Adding CSS reference**
@@ -331,30 +317,7 @@ export class AppComponent {
   </e-columns>
 </ejs-grid>
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule, HttpClientModule,
-    AppRoutingModule,
-    GridModule
-  ],
-  providers: [ToolbarService],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-
-{% endhighlight %}
 {% endtabs %}
 
 ## Handling filtering operation
@@ -451,30 +414,7 @@ export class AppComponent {
   </e-columns>
 </ejs-grid>
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { FilterService, GridModule } from '@syncfusion/ej2-angular-grids';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule, HttpClientModule,
-    AppRoutingModule,
-    GridModule
-  ],
-  providers: [FilterService],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-
-{% endhighlight %}
 {% endtabs %}
 
 ## Handling sorting operation
@@ -560,30 +500,7 @@ export class AppComponent {
   </e-columns>
 </ejs-grid>
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { SortService, GridModule } from '@syncfusion/ej2-angular-grids';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule, HttpClientModule,
-    AppRoutingModule,
-    GridModule
-  ],
-  providers: [SortService],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-
-{% endhighlight %}
 {% endtabs %}
 
 ## Handling paging operation
@@ -642,30 +559,7 @@ export class AppComponent {
   </e-columns>
 </ejs-grid>
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule, HttpClientModule,
-    AppRoutingModule,
-    GridModule
-  ],
-  providers: [PageService],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-
-{% endhighlight %}
 {% endtabs %}
 
 ## Handling CRUD operations
@@ -712,31 +606,7 @@ export class AppComponent {
   </e-columns>
 </ejs-grid>
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { EditService, GridModule, ToolbarService } from '@syncfusion/ej2-angular-grids';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule, HttpClientModule,
-    AppRoutingModule,
-    GridModule
-  ],
-  providers: [EditService, ToolbarService],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-
-
-{% endhighlight %}
 {% endtabs %}
 
 > Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.

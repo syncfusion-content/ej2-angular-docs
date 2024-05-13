@@ -14,8 +14,8 @@ import { data } from './datasource';
 import { EditSettingsModel, ToolbarItems, GridComponent, Column, SaveEventArgs, EditEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
+    imports: [
+
         GridModule,
         DatePickerAllModule,
         FormsModule,
@@ -26,10 +26,10 @@ imports: [
         AutoCompleteModule
     ],
 
-providers: [EditService, ToolbarService, SortService, PageService],
-standalone: true,
+    providers: [EditService, ToolbarService, SortService, PageService],
+    standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid #grid style="padding:70px" [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)="actionBegin($event)" height='273px'>
+    template: `<ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)="actionBegin($event)" height='273px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' [validationRules]='orderIDRules' 
                     textAlign='Right' isPrimaryKey='true' width=100></e-column>
@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
         this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
         this.orderIDRules = { required: true, number: true };
         this.customerIDRules = { required: true };
-        this.freightRules =  { min:1,max:1000 };
+        this.freightRules = { min: 1, max: 1000 };
     }
 
     actionBegin(args: EditEventArgs) {
@@ -70,11 +70,11 @@ export class AppComponent implements OnInit {
                 }
             }
         }
-        else if(args.requestType === 'add'){
+        else if (args.requestType === 'add') {
             for (const cols of (this.grid as GridComponent).columns) {
                 if ((cols as Column).field === 'CustomerID') {
                     (cols as Column).visible = true;
-                } 
+                }
             }
         }
         else if (args.requestType === 'save') {

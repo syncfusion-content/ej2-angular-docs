@@ -4,19 +4,18 @@ import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
 import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 
-
-
+import {  TextWrapSettingsModel } from '@syncfusion/ej2-angular-grids';
+import {DropDownListModule} from '@syncfusion/ej2-angular-dropdowns';
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent,  WrapMode } from '@syncfusion/ej2-angular-treegrid';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
-import {  TextWrapSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
 imports: [
         
         TreeGridModule,
-        ButtonModule
+        ButtonModule, DropDownListModule
     ],
 
 providers: [PageService,

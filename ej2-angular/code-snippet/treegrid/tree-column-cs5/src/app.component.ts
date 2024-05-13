@@ -21,7 +21,7 @@ providers: [PageService,
 standalone: true,
   selector: 'app-container',
   template: `<div class="control-section">
-               <ejs-treegrid #treegrid1 [dataSource]="data" allowPaging="true" childMapping="subtasks" height="350" [treeColumnIndex]="1"
+               <ejs-treegrid #treegrid1 [dataSource]="data" allowPaging="true" childMapping="subtasks" height="250" [treeColumnIndex]="1"
                 (dataBound)="dataBound($event)" (collapsed)="collapsed($event)" (expanded)="expanded($event)" [enablePersistence]=true>
                    <e-columns>
                       <e-column field="taskID" headerText="Task ID" isPrimaryKey="true" width="70" textAlign="Right" ></e-column>

@@ -2,7 +2,7 @@ import { NgModule,ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule, ToolbarService, SelectionService, EditService } from '@syncfusion/ej2-angular-treegrid'
 import { DropDownListAllModule  } from '@syncfusion/ej2-angular-dropdowns'
-
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons';
 
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -17,7 +17,7 @@ import {
 @Component({
 imports: [
         
-        TreeGridModule,DropDownListAllModule
+        TreeGridModule, DropDownListAllModule, ButtonModule
     ],
 
 providers: [ToolbarService, 
@@ -38,7 +38,7 @@ standalone: true,
                   </div>
                </div>
 
-                   <ejs-treegrid #treegrid [dataSource]='data' childMapping='subtasks' height='310' [treeColumnIndex]='1' [allowSelection]='false'>
+                   <ejs-treegrid #treegrid [dataSource]='data' childMapping='subtasks' height='230' [treeColumnIndex]='1' [allowSelection]='false'>
                       <e-columns>
                         <e-column field='taskID' headerText='Task ID' width='90' textAlign='Right'></e-column>
                         <e-column field='taskName' headerText='Task Name' width='200' freeze='Left'></e-column>

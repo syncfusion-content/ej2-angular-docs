@@ -1,11 +1,18 @@
-
-
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule, FilterService  } from '@syncfusion/ej2-angular-treegrid';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { Component, OnInit,ViewChild} from '@angular/core';
 import { sampleData } from './datasource';
 import { Column, FilterSettingsModel, FilterType,TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { DropDownListComponent, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
+    imports: [
+    TreeGridAllModule, DropDownListAllModule
+    ],
+    providers: [FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<div id="content" class="container">
                   <div class="input-container">

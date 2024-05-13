@@ -24,9 +24,7 @@ You can render the gallery items by using [items](https://ej2.syncfusion.com/ang
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/gallery/galleryItems/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/gallery/galleryItems/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/gallery/galleryItems/src/main.ts %}
 {% endhighlight %}
@@ -45,9 +43,7 @@ You can use the [content](https://ej2.syncfusion.com/angular/documentation/api/r
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/gallery/itemContent/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/gallery/itemContent/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/gallery/itemContent/src/main.ts %}
 {% endhighlight %}
@@ -66,9 +62,7 @@ You can use the [iconCss](https://ej2.syncfusion.com/angular/documentation/api/r
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/gallery/galleryIcon/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/gallery/galleryIcon/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/gallery/galleryIcon/src/main.ts %}
 {% endhighlight %}
@@ -89,9 +83,7 @@ The following sample showcases how to add title attribute to the gallery item us
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/gallery/htmlAttributes/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/gallery/htmlAttributes/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/gallery/htmlAttributes/src/main.ts %}
 {% endhighlight %}
@@ -112,9 +104,7 @@ The following sample showcases how to customize the appearance of each gallery i
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/gallery/classCustomization/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/gallery/classCustomization/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/gallery/classCustomization/src/main.ts %}
 {% endhighlight %}
@@ -136,9 +126,7 @@ You can use the [disabled](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/gallery/disabledItem/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/gallery/disabledItem/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/gallery/disabledItem/src/main.ts %}
 {% endhighlight %}
@@ -157,9 +145,7 @@ You can use the [header](https://ej2.syncfusion.com/angular/documentation/api/ri
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/gallery/galleryItems/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/gallery/galleryItems/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/gallery/galleryItems/src/main.ts %}
 {% endhighlight %}
@@ -184,9 +170,7 @@ The provided example demonstrates how to customize gallery items using the `item
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/gallery/itemHeightAndWidth/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/gallery/itemHeightAndWidth/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/gallery/itemHeightAndWidth/src/main.ts %}
 {% endhighlight %}
@@ -205,9 +189,7 @@ You can use the [cssClass](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/gallery/groupCustomization/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/gallery/groupCustomization/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/gallery/groupCustomization/src/main.ts %}
 {% endhighlight %}
@@ -231,9 +213,7 @@ The following example showcases the utilization of the `itemCount` property, dis
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/gallery/itemCount/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/gallery/itemCount/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/gallery/itemCount/src/main.ts %}
 {% endhighlight %}
@@ -252,9 +232,7 @@ You can use the [selectedItemIndex](https://ej2.syncfusion.com/angular/documenta
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/gallery/selectedItemIndex/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/gallery/selectedItemIndex/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/gallery/selectedItemIndex/src/main.ts %}
 {% endhighlight %}
@@ -279,9 +257,7 @@ The example demonstrates the customization of popup with `popupHeight` and `popu
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/ribbon/gallery/popupHeightWidth/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/ribbon/gallery/popupHeightWidth/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/ribbon/gallery/popupHeightWidth/src/main.ts %}
 {% endhighlight %}

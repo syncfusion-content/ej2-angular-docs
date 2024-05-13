@@ -1,17 +1,27 @@
 
 
 
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule, FilterService, ToolbarService, } from '@syncfusion/ej2-angular-treegrid';
+
+import { Component, OnInit ,ViewChild,ViewEncapsulation} from '@angular/core';
 import { sampleData } from './datasource';
 import { ToolbarItems, SearchSettingsModel, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { QueryCellInfoEventArgs, SearchEventArgs } from '@syncfusion/ej2-angular-grids';
 import { Predicate, Query } from '@syncfusion/ej2-data';
+import {ButtonModule} from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+    imports: [
+    TreeGridAllModule, ButtonModule,
+    ],
+    standalone: true,
+    providers: [FilterService, ToolbarService],
     selector: 'app-container',
     encapsulation:ViewEncapsulation.None,
     template: `<button ejs-button id='clear' (click)='clearSearch()'>Clear Search</button>
-                <ejs-treegrid #treegrid [dataSource]='data' height='270' [treeColumnIndex]='1' [toolbar]='toolbarOptions' [searchSettings]='searchOptions' childMapping='subtasks'>
+                <ejs-treegrid #treegrid [dataSource]='data' height='230' [treeColumnIndex]='1' [toolbar]='toolbarOptions' [searchSettings]='searchOptions' childMapping='subtasks'>
                     <e-columns>
                         <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                         <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>

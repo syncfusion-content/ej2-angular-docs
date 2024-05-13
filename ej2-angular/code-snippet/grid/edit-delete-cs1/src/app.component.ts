@@ -75,7 +75,6 @@ export class AppComponent {
     this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
   }
   toolbarClick(args: ClickEventArgs): void {
-    debugger;
     if ((args.item as Item).text === 'Delete') {
         const dialogObj= ((this.grid as GridComponent).editModule as any).dialogObj   ;
         dialogObj.header = 'Delete Confirmation Dialog';

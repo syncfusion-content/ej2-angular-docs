@@ -21,8 +21,7 @@ standalone: true,
                         <e-column field='orderID' headerText='Order ID' textAlign='Right' width=90></e-column>
                         <e-column field='orderName' headerText='Order Name' textAlign='Left' width=180></e-column>
                         <e-column field='orderDate' [format]='formatOptions' headerText='Order Date' textAlign='Left' width=120></e-column>
-                        <e-column field='shippedDate' [format]='shipFormat' headerText='Ship Date' textAlign='Left' width=170></e-column>
-                        <e-column field='units' headerText='Units' textAlign='Right' format='N' type='number' width=80></e-column>
+                        <e-column field='shippedDate' [format]='shipFormat' headerText='Ship Date' textAlign='Left' width=170></e-column><e-column field='units' headerText='Units' textAlign='Right' format='N' type='number' width=80></e-column>
                     </e-columns>
                 </ejs-treegrid>`
 })

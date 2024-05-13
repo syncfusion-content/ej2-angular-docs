@@ -22,9 +22,7 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module in to th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs300/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs300/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs300/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ Enabling this property causes the pivot table to render only the rows and column
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/single-page-mode/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/single-page-mode/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/single-page-mode/src/main.ts %}
 {% endhighlight %}
@@ -70,9 +66,7 @@ Virtual scrolling automatically works with "Popup" field list on setting the [en
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs302/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs302/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs302/src/main.ts %}
 {% endhighlight %}

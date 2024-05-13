@@ -18,9 +18,7 @@ The rendered 3D Circular Chart can be printed directly from the browser by calli
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/print/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/print/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/print/src/main.ts %}
 {% endhighlight %}
@@ -37,9 +35,7 @@ Input parameters for this method are `Export` Type for `format` and `fileName
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/user-interaction/export/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/user-interaction/export/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/user-interaction/export/src/main.ts %}
 {% endhighlight %}

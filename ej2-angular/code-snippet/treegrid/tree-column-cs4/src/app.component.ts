@@ -21,7 +21,7 @@ providers: [PageService,
                 FilterService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315' [treeColumnIndex]='1' childMapping='subtasks' expandStateMapping="isExpanded" >
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' expandStateMapping="isExpanded" >
                   <e-columns>
                     <e-column field="taskID" headerText="Task ID" width="70" textAlign="Right"></e-column>
                     <e-column field="taskName" headerText="Task Name" width="200"></e-column>

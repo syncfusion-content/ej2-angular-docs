@@ -1,8 +1,21 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, EditService, PageService, ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons'
+
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 
 @Component({
+imports: [
+        
+        GridModule,
+        ButtonAllModule
+    ],
+
+providers: [EditService, PageService, ToolbarService],
+standalone: true,
     selector: 'app-root',
     template: `
         <div style="padding: 5px 0px 20px 0px ">

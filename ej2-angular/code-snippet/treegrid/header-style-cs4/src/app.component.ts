@@ -1,15 +1,14 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewEncapsulation } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
 import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 
 
-
-import { Component, OnInit,ViewChild, ViewEncapsulation } from '@angular/core';
-import { sampleData } from './datasource';
-import {  Column, } from '@syncfusion/ej2-treegrid';
 import {  HeaderCellInfoEventArgs } from '@syncfusion/ej2-grids';
+import { Component, OnInit,ViewChild } from '@angular/core';
+import { sampleData } from './datasource';
+import { Column,  } from '@syncfusion/ej2-treegrid';
 @Component({
 imports: [
         
@@ -33,10 +32,10 @@ standalone: true,
                   </e-columns>
                 </ejs-treegrid>`,
     styles:[`
-    .e-treegrid .e-headercell.customcss {
-      background-color: #a2d6f4;
-      color:rgb(3, 2, 2);
-  }`]
+        .e-treegrid .e-headercell.customcss {
+              background-color: #a2d6f4;
+              color:rgb(3, 2, 2);
+              }`]
 })
 export class AppComponent implements OnInit {
 

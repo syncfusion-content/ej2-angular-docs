@@ -1,7 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
+
+import { Component, OnInit ,ViewChild} from '@angular/core';
 import { DataManager,Query, WebApiAdaptor,UrlAdaptor } from '@syncfusion/ej2-data';
 
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' [query]='query' parentIdMapping='ParentItem' hasChildMapping='isParent' idMapping='TaskID' height=265 allowPaging='true' allowFiltering='true' [pageSettings]='pageSettings' [filterSettings]='filterSettings'>
                     <e-columns>

@@ -33,9 +33,6 @@ Here is an example of how to specify column types in a gantt using the types men
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columntype-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columntype-cs1/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columntype-cs1/src/main.ts %}
 {% endhighlight %}
@@ -54,8 +51,6 @@ Here is an example of how to specify column types in a gantt using the types men
 4. If you have more than one column with the column type as a **checkbox**, the gantt will automatically enable the other column's checkbox when selecting one column checkbox.
 
 > To learn more about how to render boolean values as checkboxes in a Syncfusion GanttColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/angular/documentation/gantt/columns/columns#render-boolean-value-as-checkbox) section.
-
-> To learn more about how to show checkbox in a gantt column, please refer to the [Checkbox Column](https://ej2.syncfusion.com/angular/documentation/gantt/columns/checkbox-column) section.
 
 ## Column width
 
@@ -102,9 +97,6 @@ The column width is specified as an absolute pixel value. For example, a column 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnwidth-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnwidth-cs1/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnwidth-cs1/src/main.ts %}
 {% endhighlight %}
@@ -121,9 +113,6 @@ You can use the [columns.format](https://ej2.syncfusion.com/angular/documentatio
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnformat-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnformat-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnformat-cs1/src/main.ts %}
@@ -154,9 +143,6 @@ The following example code demonstrates the formatting of data for **TaskID** co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnformat-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnformat-cs5/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnformat-cs5/src/main.ts %}
 {% endhighlight %}
@@ -184,9 +170,6 @@ Format | Formatted value
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnformat-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnformat-cs2/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnformat-cs2/src/main.ts %}
 {% endhighlight %}
@@ -205,9 +188,6 @@ In this example, the format property specifies the date format as "**yyyy-MMM-dd
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnformat-cs3/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnformat-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnformat-cs3/src/main.ts %}
@@ -277,9 +257,6 @@ export class AppComponent{
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columntemplate-cs1/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columntemplate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -298,9 +275,6 @@ In the below example, the **numberFormatOptions** object is used as the `format`
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/customformat-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/customformat-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/customformat-cs1/src/main.ts %}
@@ -326,9 +300,6 @@ Here is an example of using the `textAlign` property to align the text of a Gant
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnalign-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnalign-cs1/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnalign-cs1/src/main.ts %}
 {% endhighlight %}
@@ -347,9 +318,6 @@ To enable the rendering of boolean values as checkboxes, you need to set the `di
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnformat-cs4/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnformat-cs4/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnformat-cs4/src/main.ts %}
@@ -370,9 +338,6 @@ Here is an example of how you can prevent a checkbox from being displayed in a p
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnformat-cs6/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnformat-cs6/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnformat-cs6/src/main.ts %}
@@ -399,9 +364,6 @@ To use `autoFitColumns` method, you need to inject **ResizeService** in the prov
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnautofit-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnautofit-cs1/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnautofit-cs1/src/main.ts %}
 {% endhighlight %}
@@ -420,9 +382,6 @@ Here's an example of how you can use the `lockColumn` property to lock a column 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnlock-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnlock-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnlock-cs1/src/main.ts %}
@@ -444,9 +403,6 @@ In the below example, the **Duration** column is defined with `visible` property
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnhide-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnhide-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnhide-cs1/src/main.ts %}
@@ -473,9 +429,6 @@ Here's an example of how to show or hide a column based on the HeaderText in the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnhide-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnhide-cs2/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnhide-cs2/src/main.ts %}
 {% endhighlight %}
@@ -492,9 +445,6 @@ Here's an example of how to show or hide a column based on the field in the Angu
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnhide-cs3/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnhide-cs3/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnhide-cs3/src/main.ts %}
@@ -518,9 +468,6 @@ Here is an example code that demonstrates how to control gantt actions for speci
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnactions-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnactions-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnactions-cs1/src/main.ts %}
@@ -593,9 +540,6 @@ You can update the column definitions in the Gantt using the [columns](https://h
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnupdate-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnupdate-cs1/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnupdate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -614,9 +558,6 @@ Here's an example of how you can add and remove a column from the gantt:
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/columnupdate-cs2/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/columnupdate-cs2/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/columnupdate-cs2/src/main.ts %}
@@ -642,9 +583,6 @@ In this example, we have a gantt that displays data with two columns: **Task Nam
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/gantt/columns/responsivecolumn-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/gantt/columns/responsivecolumn-cs1/src/app.module.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/gantt/columns/responsivecolumn-cs1/src/main.ts %}

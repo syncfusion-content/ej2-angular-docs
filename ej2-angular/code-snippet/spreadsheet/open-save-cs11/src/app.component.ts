@@ -41,7 +41,10 @@ export class AppComponent implements OnInit {
           );
           formData.append('fileName', 'Sample');
           formData.append('saveType', 'Xlsx');
-          formData.append('pdfLayoutSettings', JSON.stringify({ fitSheetOnOnePage: false, orientation: 'Portrait' })),
+          formData.append(
+            'PdfLayoutSettings',
+            JSON.stringify({ FitSheetOnOnePage: false })
+          );
           fetch(
             'https://services.syncfusion.com/angular/production/api/spreadsheet/save',
             {

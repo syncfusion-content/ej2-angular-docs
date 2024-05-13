@@ -16,9 +16,7 @@ A data label refers to a label associated with specific data points. It can be a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/datalabel/datalabel/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/datalabel/datalabel/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/datalabel/datalabel/src/main.ts %}
 {% endhighlight %}
@@ -36,9 +34,7 @@ Using the `position` property, we can place the data label either `inside` or `o
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/datalabel/position/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/datalabel/position/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/datalabel/position/src/main.ts %}
 {% endhighlight %}
@@ -54,9 +50,7 @@ The label content can be formatted using the template option. Inside the templat
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/datalabel/template/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/datalabel/template/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/datalabel/template/src/main.ts %}
 {% endhighlight %}
@@ -72,9 +66,7 @@ The connector line will be visible when the data label is placed `outside` the c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/datalabel/connector-line/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/datalabel/connector-line/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/datalabel/connector-line/src/main.ts %}
 {% endhighlight %}
@@ -90,9 +82,7 @@ Text from the data source can be mapped using the `name` property within the dat
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/datalabel/text-mapping/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/datalabel/text-mapping/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/datalabel/text-mapping/src/main.ts %}
 {% endhighlight %}
@@ -108,9 +98,7 @@ The data label for the 3D Circular Chart can be formatted using the `format` pro
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/datalabel/format/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/datalabel/format/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/datalabel/format/src/main.ts %}
 {% endhighlight %}
@@ -183,9 +171,7 @@ Individual text for the data points in the 3D Circular Chart can be customized u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/datalabel/custom/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/datalabel/custom/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/datalabel/custom/src/main.ts %}
 {% endhighlight %}
@@ -201,9 +187,7 @@ You can customize the data label of a pie chart using the `textRender` event as 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/datalabel/text-render/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/datalabel/text-render/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/datalabel/text-render/src/main.ts %}
 {% endhighlight %}
@@ -219,9 +203,7 @@ You can display the percentage values in the data label of a pie chart using the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/circular-chart/datalabel/percentage/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/circular-chart/datalabel/percentage/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/circular-chart/datalabel/percentage/src/main.ts %}
 {% endhighlight %}

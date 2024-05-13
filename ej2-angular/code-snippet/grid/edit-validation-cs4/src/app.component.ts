@@ -73,7 +73,6 @@ export class AppComponent {
         var valueError = getObject('valErrorPlacement', (this.grid as GridComponent).editModule).bind((this.grid as GridComponent).editModule);  
         (this.grid as GridComponent).editModule.formObj.customPlacement = (input, error) => { 
           valueError(input, error);
-          debugger;
           var element = document.getElementById(input.name + '_Error');
           var tooltipWidth = (element as HTMLElement).offsetWidth;
           var  inputElement = null;

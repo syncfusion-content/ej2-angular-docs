@@ -34,8 +34,8 @@ The following example demonstrates how to change the page size of a tree grid us
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/page-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/page-cs1/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/page-cs1/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/page-cs1/src/main.ts %}
@@ -56,8 +56,8 @@ The following example demonstrates how to change the page count of a tree grid u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/page-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/page-cs2/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/page-cs2/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/page-cs2/src/main.ts %}
@@ -78,8 +78,8 @@ The following example demonstrates how to dynamically change the current page us
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/page-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/page-cs3/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/page-cs3/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/page-cs3/src/main.ts %}
@@ -102,8 +102,8 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/page-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/page-cs4/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/page-cs4/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/page-cs4/src/main.ts %}
@@ -129,8 +129,8 @@ The following example demonstrates how to use the `pageSizeMode` property in the
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/page-cs11/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/page-cs11/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/page-cs11/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/page-cs11/src/main.ts %}
@@ -150,12 +150,21 @@ The following example demonstrates how to render a **NumericTextBox** component 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 import { Component, OnInit,ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import {PageSettingsModel, TreeGridComponent} from '@syncfusion/ej2-angular-treegrid';
+import {PageSettingsModel, TreeGridComponent, PageService} from '@syncfusion/ej2-angular-treegrid';
 import { ChangeEventArgs } from '@syncfusion/ej2-inputs';
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
+    imports: [
+    TreeGridAllModule, NumericTextBoxModule
+    ],
+    providers:[PageService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height=250 [treeColumnIndex]='1' [allowPaging]='true'  [pageSettings]='PageSettings' childMapping='subtasks' >
                     <ng-template #pagerTemplate let-data>
@@ -195,8 +204,8 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/pager-template-cs1/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/pager-template-cs1/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/pager-template-cs1/src/main.ts %}
@@ -217,8 +226,8 @@ The following example that demonstrates how to integrate the page size Dropdown 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/page-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/page-cs5/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/page-cs5/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/page-cs5/src/main.ts %}
@@ -239,8 +248,8 @@ The following example demonstrate how to customize the default values of the pag
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/page-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/page-cs6/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/page-cs6/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/page-cs6/src/main.ts %}
@@ -263,8 +272,8 @@ The following example demonstrates how to dynamically navigate to a particular p
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/page-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/page-cs7/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/page-cs7/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/page-cs7/src/main.ts %}
@@ -295,8 +304,8 @@ The following example demonstrates how to calculate the page size based on eleme
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/page-cs8/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/page-cs8/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/page-cs8/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/page-cs8/src/main.ts %}
@@ -315,8 +324,8 @@ Here's an example that demonstrates how to render the pager at the top of the tr
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/page-cs9/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/page-cs9/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/page-cs9/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/page-cs9/src/main.ts %}
@@ -344,12 +353,22 @@ The following example demonstrates how to use these events to display notificati
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
 
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
+
+import { Component, OnInit ,ViewChild,ViewEncapsulation} from '@angular/core';
 import { sampleData } from './datasource';
-import { TreeGridComponent,ToolbarItems, PageSettingsModel } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent,ToolbarItems, PageSettingsModel, PageService } from '@syncfusion/ej2-angular-treegrid';
 import { PageEventArgs } from '@syncfusion/ej2-grids';
 
 @Component({
+    imports: [
+    TreeGridAllModule,
+    ],
+    providers:[PageService],
+    standalone: true,
     selector: 'app-container',
     encapsulation:ViewEncapsulation.None,
     template: ` <p id="message" style="color:red;align:center">{{actioncomplete_message}}</p>
@@ -392,8 +411,8 @@ export class AppComponent implements OnInit {
 
 {% endraw %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/treegrid/page-cs10/src/app.module.ts %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/page-cs10/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/page-cs10/src/main.ts %}

@@ -1,31 +1,20 @@
-import { NgModule,ViewChild } from '@angular/core'
+
+
+import { NgModule, } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser'
-import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { FormsModule } from '@angular/forms'
 
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
-import { TreeGridComponent  } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridAllModule, TreeGridComponent, FilterService  } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule,
-        FormsModule
+    imports: [
+    TreeGridAllModule, DropDownListAllModule
     ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    providers: [FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<div style="padding-top: 7px; display: inline-block">Hierarchy Mode    
                <ejs-dropdownlist (change)='onChange($event)' [dataSource]='dropData' value='Parent' [fields]='fields'></ejs-dropdownlist>

@@ -35,7 +35,7 @@ standalone: true,
           .indents {
             text-indent: 20px !important;
           }
-      `,
+      `],
 })
 export class AppComponent implements OnInit {
   public data?: object[];

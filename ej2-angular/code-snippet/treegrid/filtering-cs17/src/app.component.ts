@@ -1,10 +1,17 @@
-
-
+import { NgModule, } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { TreeGridAllModule, FilterService  } from '@syncfusion/ej2-angular-treegrid';
+import {SwitchModule} from '@syncfusion/ej2-angular-buttons';
 import { Component, OnInit,ViewChild} from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
+    imports: [
+    TreeGridAllModule, SwitchModule
+    ],
+    providers: [FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<div>
                <label for="unchecked"> Enable Case Sensitivity </label>
