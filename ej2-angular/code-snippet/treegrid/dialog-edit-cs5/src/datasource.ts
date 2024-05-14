@@ -1,7 +1,7 @@
 /**
  * TreeGrid DataSource
  */
-
+ 
 export let sampleData: Object[] =  [
     {
         taskID: 1,
@@ -54,14 +54,12 @@ export let sampleData: Object[] =  [
         approved: false,
         duration: 11,
         progress: 66,
-
         subtasks: [
             {
                 taskID: 13,
                 taskName: 'Phase 1',
                 startDate: new Date('02/17/2017'),
                 endDate: new Date('02/27/2017'),
-                
                 priority: 'High',
                 approved: false,
                 progress: 50,
@@ -70,7 +68,6 @@ export let sampleData: Object[] =  [
                     taskID: 14,
                     taskName: 'Implementation Module 1',
                     startDate: new Date('02/17/2017'),
-
                     endDate: new Date('02/27/2017'),
                     priority: 'Normal',
                     duration: 11,
@@ -101,14 +98,12 @@ export let sampleData: Object[] =  [
                 priority: 'High',
                 approved: false,
                 duration: 12,
-
                 progress: 60,
                 subtasks: [{
                     taskID: 22,
                     taskName: 'Implementation Module 2',
                     startDate: new Date('02/17/2017'),
                     endDate: new Date('02/28/2017'),
-
                     priority: 'Critical',
                     approved: false,
                     duration: 12,
@@ -139,13 +134,11 @@ export let sampleData: Object[] =  [
                 priority: 'Normal',
                 approved: false,
                 duration: 11,
-
                 progress: 30,
                 subtasks: [{
                     taskID: 30,
                     taskName: 'Implementation Module 3',
                     startDate: new Date('02/17/2017'),
-
                     endDate: new Date('02/27/2017'),
                     priority: 'High',
                     approved: false,

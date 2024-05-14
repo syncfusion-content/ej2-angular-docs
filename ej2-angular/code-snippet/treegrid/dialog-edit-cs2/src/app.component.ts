@@ -2,10 +2,6 @@ import { NgModule,ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService,EditService,ToolbarService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
 
 import { L10n } from '@syncfusion/ej2-base';
 import { Component, OnInit } from '@angular/core';
@@ -22,28 +18,23 @@ L10n.load({
 });
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule,
-    ],
+    imports: [TreeGridModule],
 
-providers: [PageService,
+    providers: [PageService,
                 SortService,
                 FilterService,
                 EditService,
                 ToolbarService],
-standalone: true,
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' [toolbar]='toolbarOptions' [treeColumnIndex]='1' height='270' [editSettings]='editSettings' (actionComplete)="actionComplete($event)" childMapping='subtasks' >
-        <e-columns>
-                    <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
-                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
-                    <e-column field='priority' headerText='Priority' textAlign='Right' width=90></e-column>
-                    <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' type='date' editType='datepickeredit' width=90></e-column>
-                    <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
-        </e-columns>
+                    <e-columns>
+                        <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
+                        <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
+                        <e-column field='priority' headerText='Priority' textAlign='Right' width=90></e-column>
+                        <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' type='date' editType='datepickeredit' width=90></e-column>
+                        <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
+                    </e-columns>
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
@@ -65,7 +56,7 @@ export class AppComponent implements OnInit {
             dialog.showCloseIcon = false;
             dialog.height = 400;
             // change the header of the dialog
-            dialog.header = args.requestType === 'beginEdit' ? 'Edit Record of ' + args.rowData['taskName'] : 'New Customer';
+            dialog.header = args.requestType === 'beginEdit' ? 'Edit Record of ' + args.rowData['taskName'] : 'New Task Details';
         }
     }
 }

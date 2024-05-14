@@ -1,11 +1,7 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService,EditService,ToolbarService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
@@ -13,19 +9,14 @@ import { EditSettingsModel, ToolbarItems, TreeGridComponent, Column } from '@syn
 import { SaveEventArgs, EditEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule,
-    ],
+    imports: [TreeGridModule ],
 
-providers: [PageService,
+    providers: [PageService,
                 SortService,
                 FilterService,
                 EditService,
                 ToolbarService],
-standalone: true,
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' [toolbar]='toolbarOptions' [treeColumnIndex]='1' height='270' [editSettings]='editSettings' (actionComplete)="actionComplete($event)" (actionBegin)="actionBegin($event)" childMapping='subtasks'>
                     <e-columns>
