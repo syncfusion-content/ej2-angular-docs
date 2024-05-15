@@ -1,0 +1,92 @@
+.table {
+    border-collapse: collapse; 
+}
+
+/* plain table styles */
+
+.plainTables_item_1 .tableContent {
+    border: 1px solid black;
+}
+
+.plainTables_item_2 .tableContent,
+.plainTables_item_3 .tableContent {
+    border: 1px solid #c1c1c1;
+}
+
+.plainTables_item_4 .row_one .tableContent {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.plainTables_item_4 .row_three .tableContent {
+    border-bottom: 1px solid black;
+}
+
+.plainTables_item_5 .row_one .tableContent {
+    border-bottom: 1px solid black;
+}
+
+.plainTables_item_5 .row_one .tableContent,
+.plainTables_item_7 .row_one .tableContent {
+    border-bottom: 1px solid black;
+}
+.plainTables_item_5 .row_two .tableContent:first-child,
+.plainTables_item_5 .row_three .tableContent:first-child,
+.plainTables_item_7 .row_two .tableContent:first-child,
+.plainTables_item_7 .row_three .tableContent:first-child{
+    border-right: 1px solid black;
+}
+
+/* list table styles */
+
+.listTables_item_1 .row_one .tableContent {
+    border-bottom: 1px solid #83caeb;
+}
+
+.listTables_item_2 .row_one .tableContent,
+.listTables_item_2 .row_two .tableContent ,
+.listTables_item_2 .row_three .tableContent  {
+    border-bottom: 1px solid #83caeb;
+    border-top: 1px solid #83caeb;
+}
+
+.listTables_item_3 .row_one .tableContent {
+    border-top: 1px solid #156082;
+    border-bottom: 1px solid #156082;
+    background-color: #156082;
+    color: white;
+}
+.listTables_item_3 .row_three .tableContent {
+    border-bottom: 1px solid #156082;
+}
+
+.listTables_item_5 .row_one .tableContent,
+.listTables_item_7 .row_one .tableContent {
+    border-bottom: 1px solid white;
+}
+.listTables_item_5 .row_two .tableContent:first-child,
+.listTables_item_5 .row_three .tableContent:first-child,
+.listTables_item_7 .row_two .tableContent:first-child,
+.listTables_item_7 .row_three .tableContent:first-child{
+    border-right: 1px solid white;
+}
+
+.listTables_item_5 .tableContent {
+    background-color:  #156082;
+    color: white;
+}
+
+.listTables_item_7 .row_one .tableContent {
+    border-bottom: 1px solid black;
+}
+.listTables_item_7 .row_two .tableContent:first-child,
+.listTables_item_7 .row_three .tableContent:first-child{
+    border-right: 1px solid black;
+}
+
+.listTables_item_4 .row_one .tableContent {
+    border-top: 1px solid #156082;
+    border-bottom: 1px solid #156082;
+}
+.listTables_item_4 .row_three .tableContent {
+    border-bottom: 1px solid #156082;
+}

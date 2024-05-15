@@ -2,39 +2,24 @@ import { NgModule,ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService,EditService,ToolbarService,CommandColumnService  } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { CommandModel } from "@syncfusion/ej2-angular-grids" ;
 import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule,
-    ],
+    imports: [TreeGridModule],
 
-providers: [PageService,
-                SortService,
-                FilterService,
-                EditService,
-                ToolbarService,
-                CommandColumnService ],
-standalone: true,
+    providers: [PageService, EditService, ToolbarService, CommandColumnService ],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data'  [toolbar]='toolbarOptions' [treeColumnIndex]='1' height='270' [editSettings]='editSettings' childMapping='subtasks' >
-        <e-columns>
-                    <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
-                    <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
-                    <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
-                    <e-column headerText='Commands' width=120 [commands]='commands'></e-column>
-        </e-columns>
+                    <e-columns>
+                        <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
+                        <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
+                        <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
+                        <e-column headerText='Commands' width=120 [commands]='commands'></e-column>
+                    </e-columns>
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {

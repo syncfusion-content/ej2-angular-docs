@@ -9,27 +9,27 @@ import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
 import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
 import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
 
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { EditSettingsModel, ToolbarItems,GridComponent, EditEventArgs } from '@syncfusion/ej2-angular-grids';
+import { EditSettingsModel, ToolbarItems, GridComponent, EditEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DatePickerAllModule,
-        FormsModule,
-        TimePickerModule,
-        FormsModule,
-        TextBoxModule,
-        MultiSelectModule,
-        AutoCompleteModule
-    ],
+  imports: [
 
-providers: [EditService, ToolbarService, SortService, PageService],
-standalone: true,
-    selector: 'app-root',
-    template: `<ejs-grid #grid style="padding:70px" [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar'
+    GridModule,
+    DatePickerAllModule,
+    FormsModule,
+    TimePickerModule,
+    FormsModule,
+    TextBoxModule,
+    MultiSelectModule,
+    AutoCompleteModule
+  ],
+
+  providers: [EditService, ToolbarService, SortService, PageService],
+  standalone: true,
+  selector: 'app-root',
+  template: `<ejs-grid #grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar'
                (actionComplete)="actionComplete($event)" height='273px'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' 
@@ -43,42 +43,41 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
 
-    public data?: object[];
-    public editSettings?: EditSettingsModel;
-    public toolbar?: ToolbarItems[];
-    public orderIDRules?: Object;
-    public customerIDRules?: Object;
-    public freightRules?: Object;
-    @ViewChild('grid') public grid?: GridComponent;
+  public data?: object[];
+  public editSettings?: EditSettingsModel;
+  public toolbar?: ToolbarItems[];
+  public orderIDRules?: Object;
+  public customerIDRules?: Object;
+  public freightRules?: Object;
+  @ViewChild('grid') public grid?: GridComponent;
 
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
-        this.toolbar = ['Add', 'Edit', 'Delete'];
-        this.orderIDRules = { required: true, number: true };
-        this.customerIDRules = { required: true };
-        this.freightRules =  { min:1,max:1000 };
-    }
-    actionComplete(args: EditEventArgs) {
-      if (args.requestType === 'beginEdit' || args.requestType === 'add') {
-        const dialogInstance = (args as any).dialog;
-        dialogInstance.buttons = [
-          {
-              buttonModel: { content: 'Discard', cssClass: 'e-primary custom-button-style'  }, 
-              click: () => {
-                this.grid?.editModule.closeEdit();
-              }
-            },
-          {
-            buttonModel: { content: 'Submit', cssClass: 'e-success custom-button-style' },
-            click: () => {
-              this.grid?.editModule.endEdit();
-            }
+  ngOnInit(): void {
+    this.data = data;
+    this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
+    this.toolbar = ['Add', 'Edit', 'Delete'];
+    this.orderIDRules = { required: true, number: true };
+    this.customerIDRules = { required: true };
+    this.freightRules = { min: 1, max: 1000 };
+  }
+  actionComplete(args: EditEventArgs) {
+    if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+      const dialogInstance = (args as any).dialog;
+      dialogInstance.buttons = [
+        {
+          buttonModel: { content: 'Discard', cssClass: 'e-primary custom-button-style' },
+          click: () => {
+            this.grid?.editModule.closeEdit();
           }
-        ];
-        dialogInstance.refresh();
-      }
+        },
+        {
+          buttonModel: { content: 'Submit', cssClass: 'e-success custom-button-style' },
+          click: () => {
+            this.grid?.editModule.endEdit();
+          }
+        }
+      ];
     }
+  }
 }
 
 
