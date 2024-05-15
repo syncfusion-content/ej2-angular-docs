@@ -396,5 +396,3 @@ export class AppComponent implements OnInit {
 }
 {% endhighlight %}
 {% endtabs %}
-
-{% endtabs %}
