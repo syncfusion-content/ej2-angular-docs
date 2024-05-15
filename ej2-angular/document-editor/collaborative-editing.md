@@ -409,7 +409,45 @@ private ActionInfo AddOperationsToTable(ActionInfo action)
  }
 
 ```
+## How to perform Scaling in Collaborative Editing.
 
+As the number of user increases, maintaining responsiveness and performance becomes challenging. Scaling tackles this by distributing the workload across resources. You can scale the collaborative editing application using either ```Azure SignalR service or Redis backplane service```
+
+### 1. Scaling with Azure SignalR
+
+Azure SignalR Service is a scalable, managed service for real-time communication in web applications. It enables real-time messaging between web clients (browsers) and your server-side application(across multiple servers). 
+
+Below is a code snippet to configure Azure SignalR in an ASP.NET Core application using the ```AddAzureSignalR``` method
+
+```csharp
+builder.Services.AddSignalR() .AddAzureSignalR("<your-connection-string>", options => { 
+// Specify the channel name 
+options.Channels.Add("document-editor");
+ }); 
+```
+
+### 2. Scaling with Redis backplane
+
+Using a Redis backplane, you achieve horizontal scaling of your SignalR application. The SignalR leverages Redis to efficiently broadcast messages across multiple servers. This allows your application to handle large user bases with minimal latency.
+
+In the SignalR app, install the following NuGet package:
+* ` Microsoft.AspNetCore.SignalR.StackExchangeRedis`
+
+Below is a code snippet to configure Redis backplane in an ASP.NET Core application using the ```AddStackExchangeRedis ``` method
+
+```csharp
+builder.Services.AddSignalR().AddStackExchangeRedis("<your_Redis_connection_string>");
+```
+Configure options as needed:
+
+The following example shows how to add a channel prefix in the ConfigurationOptions object. 
+
+```csharp
+builder.Services.AddDistributedMemoryCache().AddSignalR().AddStackExchangeRedis(connectionString, options =>
+  {
+      options.Configuration.ChannelPrefix = "document-editor";
+  });
+```
 
 Full version of the code discussed about can be found in below GitHub location.
 
