@@ -108,9 +108,9 @@ In the below code sample, the **Pie** chart is rendered, and the other accumulat
 ### Drill Down/Up
 
 In the accumulation charts, drill down and drill up operations can be performed using the built-in context menu option. It will be shown while clicking on the chart series. The context menu has the following options:
-**Expand** - It is to drill down the corresponding series until the last level.
-**Collapse** - It is to drill up the corresponding series until the first level.
-**Exit** - It is to close the context menu.
+* **Expand** - It is to drill down the corresponding series until the last level.
+* **Collapse** - It is to drill up the corresponding series until the first level.
+* **Exit** - It is to close the context menu.
 
 > The drill operation in accumulation charts can be performed only for row headers.
 
