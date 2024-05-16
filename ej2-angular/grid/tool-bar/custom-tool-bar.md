@@ -93,4 +93,3 @@ The following example demonstrates how to render a **Button** component in the t
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/toolbar-template-cs2" %}
-
