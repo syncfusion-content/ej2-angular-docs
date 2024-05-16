@@ -341,7 +341,7 @@ Here is an example of how you can prevent a checkbox from being displayed in a b
 
 The Grid has a feature that allows to automatically adjust column widths based on the maximum content width of each column when you double-click on the resizer symbol located in a specific column header. This feature ensures that all data in the grid rows is displayed without wrapping. To use this feature, you need to inject the **ResizeService** in the provider section of **AppModule** and enable the resizer symbol in the column header by setting the [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowresizing) property to true in the grid.
 
-### Resizing a column to fit its content using autoFit method
+### Resizing a column to fit its content using AutoFit method
 
 The [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns) method resizes the column to fit the widest cell's content without wrapping. You can autofit specific columns at initial rendering by invoking the `autoFitColumns` method in [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event.
 
@@ -562,7 +562,7 @@ let column = this.grid.getColumnByField('ProductName');
 
 * **[getColumnByUid](https://ej2.syncfusion.com/angular/documentation/api/grid/#getcolumnbyuid)**:
 
-This method returns the column object that matches the specified UID.
+This method returns the column object that matches the specified unique identifier.
 
 ```ts
 let column = this.grid.getColumnByUid();

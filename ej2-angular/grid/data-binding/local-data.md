@@ -1090,11 +1090,11 @@ The following features are not supported in the immutable mode:
 * Infinite scroll
 * Column reorder
 * Rows,column spanning
-* Pdf export ,Excel export,Print
+* PDF export ,Excel export,Print
 * Column Resize
 * Drag and drop
-* Coulumn template
+* Column template
 * Column chooser
 * Clipboard
 * AutoFit
-* Flitering
+* Filtering

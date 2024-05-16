@@ -48,4 +48,3 @@ This is demonstrated in the following example.
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/custom-helper-loop-template" %}
-

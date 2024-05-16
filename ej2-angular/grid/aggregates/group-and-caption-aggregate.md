@@ -85,4 +85,3 @@ In some cases, you may want to disable the page-wise aggregates for grouping in 
 ## See also
 
 * [How to format aggregate value in angular grid](footer-aggregate.md#format-the-aggregate-value)
-

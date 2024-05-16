@@ -1,10 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { AccordionModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AccordionModule } from '@syncfusion/ej2-angular-navigations';
 import { Component, ViewEncapsulation, Inject, ViewChild } from "@angular/core";
 import {
   ExpandEventArgs,
@@ -13,7 +9,7 @@ import {
 } from "@syncfusion/ej2-navigations";
 import { closest } from "@syncfusion/ej2-base";
 import { AccordionComponent, AccordionItemModel } from "@syncfusion/ej2-angular-navigations";
-import { CheckBoxComponent } from "@syncfusion/ej2-angular-buttons";
+import { CheckBoxComponent, CheckBoxModule } from "@syncfusion/ej2-angular-buttons";
 
 @Component({
 imports: [
