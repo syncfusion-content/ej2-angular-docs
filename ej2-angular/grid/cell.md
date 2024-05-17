@@ -251,7 +251,7 @@ npm install jquery
 
 ```
 
-Step 2: Add the CDN link of Boostrap in the index.html file. Place the `link` tag in the `head` for the CSS, and the `script` tag for the JavaScript bundle before the closing `body`. 
+Step 2: Add the CDN link of Bootstrap in the index.html file. Place the `link` tag in the `head` for the CSS, and the `script` tag for the JavaScript bundle before the closing `body`. 
 
 ```html
 

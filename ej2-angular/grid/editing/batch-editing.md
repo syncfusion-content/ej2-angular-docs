@@ -193,4 +193,3 @@ Here's an example that demonstrates how to achieve immediate saving or updating 
   
 {% previewsample "page.domainurl/samples/grid/edit-batch-cs1" %}
 
-

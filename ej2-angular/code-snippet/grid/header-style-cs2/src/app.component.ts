@@ -19,12 +19,12 @@ standalone: true,
   template: `<ejs-grid #grid [dataSource]="data" allowPaging="true">
                 <e-columns>
                   <e-column field="OrderID" headerText="Order ID" 
-                  [customAttributes]="{class:'customcss'}" textAlign="Center">
+                  [customAttributes]="{class:'custom'}" textAlign="Center">
                   </e-column>
                   <e-column field="CustomerName" headerText="Customer Name" 
                   textAlign="Center"> </e-column>
                   <e-column field="OrderDate" headerText="Order Date" format="yMd"
-                  [customAttributes]="{class:'customcss'}" textAlign="Center">
+                  [customAttributes]="{class:'custom'}" textAlign="Center">
                   </e-column>
                   <e-column field="ShippedDate" headerText="Shipped Date" textAlign="Center" 
                   format="yMd"></e-column>

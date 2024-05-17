@@ -27,4 +27,3 @@ The following example demonstrates how to resize the grid on external button cli
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/grid-resize" %}
-

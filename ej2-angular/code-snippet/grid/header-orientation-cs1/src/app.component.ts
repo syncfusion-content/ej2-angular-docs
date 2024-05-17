@@ -39,11 +39,11 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = data;
-        this.customAttributes = { class: 'orientationcss' };
+        this.customAttributes = { class: 'orientation' };
     }
     setHeaderHeight() {
         // Obtain the width of the headerText content.
-        const textWidth = (document.querySelector('.orientationcss > div') as Element).scrollWidth;
+        const textWidth = (document.querySelector('.orientation > div') as Element).scrollWidth;
         const headerCell: NodeList = document.querySelectorAll('.e-headercell');
         for (let i = 0; i < headerCell.length; i++) {
             // Assign the obtained textWidth as the height of the headerCell.
