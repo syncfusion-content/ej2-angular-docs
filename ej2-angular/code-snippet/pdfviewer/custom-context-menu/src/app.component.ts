@@ -1,23 +1,20 @@
+import { NgModule, ViewChild } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+import { PdfViewerModule, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
+  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer'
+
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import {
-  LinkAnnotationService,
-  BookmarkViewService,
-  MagnificationService,
-  ThumbnailViewService,
-  ToolbarService,
-  NavigationService,
-  AnnotationService,
-  TextSearchService,
-  TextSelectionService,
-  FormFieldsService,
-  FormDesignerService,
-  PrintService,
-  PageOrganizerService
-} from '@syncfusion/ej2-angular-pdfviewer';
 import { MenuItemModel } from '@syncfusion/ej2-angular-navigations';
 import { CheckBoxComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
+imports: [
+    
+    PdfViewerModule,
+    CheckBoxModule
+  ],
+standalone: true,
   selector: 'app-container',
   template: `<div class="content-wrapper">
     <div>
