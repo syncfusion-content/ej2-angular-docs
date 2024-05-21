@@ -1,10 +1,14 @@
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { PdfViewerModule, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
+  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, PageOrganizerService, AnnotationService, FormDesignerService, FormFieldsService,} from '@syncfusion/ej2-angular-pdfviewer'
+
 
 import { Component, OnInit } from '@angular/core';
-import {LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, AnnotationService, TextSearchService, TextSelectionService, 
-  PrintService, FormDesignerService, FormFieldsService, PageOrganizerService} from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
+imports: [PdfViewerModule ],
+standalone: true,
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
   template: `<div class="content-wrapper">
