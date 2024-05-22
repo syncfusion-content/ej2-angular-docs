@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add additional data on upload in Angular Uploader component | Syncfusion
+title: Add additional data on upload in Angular Uploader | Syncfusion
 description: Learn here all about Add additional data on upload in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Add additional data on upload 
@@ -27,8 +27,8 @@ import { SelectedEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 export class AppComponent {
     public path: Object = {
-        saveUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Save',
-        removeUrl: 'https://ej2.syncfusion.com/services/api/uploadbox/Remove'
+        saveUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Save',
+        removeUrl: 'https://services.syncfusion.com/angular/production/api/FileUploader/Remove'
     };
 
     public onFileUpload: EmitType<SelectedEventArgs> = (args: any) =>  {
