@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
     }
     click(): any{
-    let fetch = new Fetch("https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData","GET");
+    let fetch = new Fetch("https://services.syncfusion.com/angular/production/api/SelfReferenceData","GET");
     let trgrid = this.treegrid;
     fetch.send();
     fetch.onSuccess = function (data: string) {

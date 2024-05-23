@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
             }
 }
         this.data = new DataManager({
-                url: 'https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData',
+                url: 'https://services.syncfusion.com/angular/production/api/SelfReferenceData',
                 adaptor: new SerialNoAdaptor, crossDomain: true, offline: true
             });
     }

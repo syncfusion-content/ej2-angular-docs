@@ -1,32 +1,37 @@
 ---
 layout: post
-title: Persisting data in server in Angular Treegrid component | Syncfusion
-description: Learn here all about Persisting data in server in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Persisting data in server in Angular TreeGrid component | Syncfusion
+description: Learn here all about Persisting data in server in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Persisting data in server 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Persisting data in server in Angular Treegrid component
+# Persisting data in server in Angular TreeGrid component
 
 Edited data can be persisted in the database using the RESTful web services.
 
-All the CRUD operations in the treegrid are done through [`DataManager`](../../data). The `DataManager` has an option to bind all the CRUD related data in server-side.
+All the CRUD operations in the tree grid are done through [DataManager](../../data). The `DataManager` has an option to bind all the CRUD related data in server-side.
 
-> For your information, the ODataAdaptor persists data in the server as per OData protocol.
+> The ODataAdaptor persists data in the server as per OData protocol.
 
 You can also check on this video about persisting data in server.
 
 {% youtube "https://www.youtube.com/watch?v=UuD7_W2yIVs" %}
 
-In the following section, we have explained how to perform CRUD operation in server-side using the [`UrlAdaptor`](../../../data/adaptors#url-adaptor) and `RemoteSave Adaptor`.
 
-## URL adaptor
+In the below section, we have explained how to get the edited data details on the server-side using the [UrlAdaptor](../../data/adaptors/#url-adaptor). Various adaptors are available to fetch data using `dataManager` property. Refer to the different adaptors section [here](https://ej2.syncfusion.com/angular/documentation/data/adaptors).
 
-You can use the [`UrlAdaptor`](../../../data/adaptors#url-adaptor) of `DataManager` when binding data source from remote data.
-In the initial load of treegrid, data are fetched from remote data and bound to the treegrid using `url` property of `DataManager`.
-You can map The CRUD operation in treegrid can be mapped to server-side Controller actions using the properties `insertUrl`, `removeUrl`, `updateUrl` and `batchUrl`.
+## Using URL adaptor
+
+You can use the [UrlAdaptor](../../data/adaptors/#url-adaptor) of [DataManager](../../data) when binding data source from remote data. In the initial load of tree grid, data are fetched from remote data and bound to the tree grid using **url** property of `DataManager`.
+
+When using `UrlAdaptor`, tree grid actions such as paging, filtering, sorting and editing must be handled on the server side.
+
+You can map the CRUD operation in tree grid can be mapped to server-side Controller actions using the properties **insertUrl**, **removeUrl**, **updateUrl**, **crudUrl** and **batchUrl**.
+
+>Refer to this section for handling only CRUD operations on the [server side](https://ej2.syncfusion.com/angular/documentation/treegrid/editing/persisting-data-in-server#remote-save-adaptor).
 
 The following code example describes the above behavior.
 
@@ -37,7 +42,7 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegri
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data'  [toolbar]='toolbarOptions' [treeColumnIndex]='1' height='270' [editSettings]='editSettings' idMapping='TaskID' parentIdMapping='parentID' >
+    template: `<ejs-treegrid [dataSource]='data'  [toolbar]='toolbarOptions' [treeColumnIndex]='1'      height='270' [editSettings]='editSettings' idMapping='TaskID' parentIdMapping='parentID' hasChildMapping='isParent' >
         <e-columns>
             <e-column field='TaskID' headerText='Task ID' width='90' textAlign='Right'></e-column>
             <e-column field='TaskName' headerText='Task Name' width='170'></e-column>
@@ -99,11 +104,11 @@ public ActionResult DataSource(DataManager dm)
 
 ```
 
-## Insert record
+### Insert record
 
-Using the `insertUrl` property, you can specify the controller action mapping URL to perform insert operation on the server-side.
+Using the **insertUrl** property, you can specify the controller action mapping URL to perform insert operation on the server-side.
 
-The following code example describes the above behavior and also we have inserted new record based on the newRowPosition TreeGrid editSettings as "Below".
+The following code example describes the above behavior and also demonstrates how to insert a new record based on the [newRowPosition](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#newrowposition) property of the tree grid's [editSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#editsettings), set as 'Below'.
 
 ```typescript
 
@@ -137,13 +142,13 @@ public int FindChildRecords(int id)
 
 ```
 
-The newly added record details are bound to the `value` parameter, and `relationalKey` contains the primaryKey value of a selected record, which helps to find the position of the newly added record. Please refer to the following screenshot.
+The newly added record details are bound to the `value` parameter, and `relationalKey` contains the primaryKey value of a selected record, which helps to find the position of the newly added record. Refer to the following screenshot.
 
 ![Insert](../images/insert.PNG)
 
-## Update record
+### Update record
 
-Using the `updateUrl` property, the controller action mapping URL can be specified to perform save/update operation on the server-side.
+Using the **updateUrl** property, the controller action mapping URL can be specified to perform save/update operation on the server-side.
 
 The following code example describes the previous behavior.
 
@@ -162,13 +167,13 @@ public ActionResult Update(TreeGridData value)
 
 ```
 
-The updated record details are bound to the `value` parameter. Please refer to the following screenshot.
+The updated record details are bound to the `value` parameter. Refer to the following screenshot.
 
 ![Update](../images/update.PNG)
 
-## Delete record
+### Delete record
 
-Using the `removeUrl` and `batchUrl` property, the controller action mapping URL can be specified to perform delete operation on the server-side.
+Using the **removeUrl** property, the controller action mapping URL can be specified to perform delete operation on the server-side.
 
 The following code example describes the previous behavior.
 
@@ -179,33 +184,184 @@ public ActionResult Delete(int key)
     TreeData.tree.Remove(TreeData.tree.Where(ds => ds.TaskID == key).FirstOrDefault());
 }
 
-// Remove method (batchUrl) will be triggered when we delete parent record.
+```
 
-public ActionResult Remove(List<TreeGridData> changed, List<TreeGridData> added, List<TreeGridData> deleted)
-{
-    for (var i = 0; i < deleted.Count; i++)
-    {
-        TreeData.tree.Remove(TreeData.tree.Where(ds => ds.TaskID == deleted[i].TaskID).FirstOrDefault());
-    }
+The deleted record primary key value is bound to the `key` parameter. Refer to the following screenshot.
+
+![Remove](../images/delete.PNG)
+
+While deleting parent record, the corresponding child records also bound to the `deleted` parameter. Refer to the following screenshot.
+
+![Delete](../images/remove.PNG)
+
+### CRUD URL
+
+Using the **crudUrl** property, the controller action mapping URL can be specified to perform all the CRUD operation at server-side using a single method instead of specifying separate controller action method for CRUD (insert, update and delete) operations.
+
+The action parameter of **crudUrl** is used to get the corresponding CRUD action.
+
+The following code example describes the above behavior.
+
+```typescript
+
+import { Component } from '@angular/core';
+import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
+@Component({
+  selector: 'app-root',
+  template: `
+  <ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='400' [toolbar]='toolbarOptions' [editSettings]='editSettings' idMapping='TaskID' parentIdMapping='ParentValue' hasChildMapping='isParent' >
+                <e-columns>
+                  <e-column field='TaskID' headerText='Task ID' width='90' textAlign='Right'></e-column>
+                  <e-column field='TaskName' headerText='Task Name' width='180'></e-column>
+                  <e-column field='Duration' headerText='Duration' width='80' textAlign='Right'></e-column>
+                </e-columns>
+               </ejs-treegrid>
+ `,
+
+})
+export class AppComponent {
+  public data: DataManager = new DataManager({
+    adaptor: new UrlAdaptor,
+    url: "Home/Datasource",
+    crudUrl: 'Home/CrudUpdate',
+  });
+  public editSettings: EditSettingsModel={ allowEditing: true, allowAdding: true, allowDeleting: true, newRowPosition: 'Below', mode: 'Row' };;
+  public toolbarOptions: ToolbarItems[] = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
 }
 
 ```
 
-The deleted record primary key value is bound to the `key` parameter. Please refer to the following screenshot.
+```typescript
 
-![Delete](../images/remove.PNG)
+public ActionResult CrudUpdate(CRUDModel<TreeData> value, string action)
+{
+    if (action == "update")
+    {
+        List<TreeData> data = new List<TreeData>();
+        data = TreeData.GetTree();
+        var val = data.Where(ds => ds.TaskID == value.Value.TaskID).FirstOrDefault();
+        val.TaskName = value.Value.TaskName;
+        val.Duration = value.Value.Duration;
+        return Json(val);
+    }
+    else if (action == "insert")
+    {
+        var c = 0;
+        for (; c < TreeData.GetTree().Count; c++)
+        {
+            if (TreeData.GetTree()[c].TaskID == value.RelationalKey)
+            {
+                if (TreeData.GetTree()[c].isParent == null)
+                {
+                    TreeData.GetTree()[c].isParent = true;
+                }
+                break;
+            }
+        }
+        c += FindChildRecords(value.RelationalKey);
+        TreeData.GetTree().Insert(c + 1, value.Value);
 
-While delete parent record, the parent and child records is bound to the `deleted` parameter. Please refer to the following screenshot.
+        return Json(value.Value);
+    }
+    else if (action == "remove")
+    {
+        TreeData.GetTree().Remove(TreeData.GetTree().Where(or => or.TaskID == int.Parse(value.Key.ToString())).FirstOrDefault());
+        return Json(value);
+    }
+    return Json(value.Value);
+}
 
-![Remove](../images/delete.PNG)
+```
+
+Refer to the following screenshot to know about the action parameter.
+
+![CRUD Update](../images/crudupdate.png)
+
+> If you specify both **insertUrl** and **crudUrl**, only the **insertUrl** will be invoked when adding the record.
+
+### Batch URL
+
+The **batchUrl** property supports only for batch editing mode. You can specify the controller action mapping URL to perform batch operation on the server-side.
+
+The following code example describes the above behavior.
+
+```typescript
+
+import { Component } from '@angular/core';
+import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
+import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
+@Component({
+  selector: 'app-root',
+  template: `
+  <ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='400' [toolbar]='toolbarOptions' [editSettings]='editSettings' idMapping='TaskID' parentIdMapping='ParentValue' hasChildMapping='isParent' >
+                <e-columns>
+                  <e-column field='TaskID' headerText='Task ID' width='90' textAlign='Right'></e-column>
+                  <e-column field='TaskName' headerText='Task Name' width='180'></e-column>
+                  <e-column field='Duration' headerText='Duration' width='80' textAlign='Right'></e-column>
+                </e-columns>
+               </ejs-treegrid>
+ `,
+
+})
+export class AppComponent {
+  public data: DataManager = new DataManager({
+    adaptor: new UrlAdaptor,
+    url: "Home/Datasource",
+    batchUrl: 'Home/BatchUpdate',
+  });
+  public editSettings: EditSettingsModel={ allowEditing: true, allowAdding: true, allowDeleting: true, newRowPosition: 'Below', mode: 'Batch' };;
+  public toolbarOptions: ToolbarItems[] = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+}
+
+```
+```typescript
+
+ public ActionResult BatchUpdate(string action,List<TreeData> added, List<TreeData> changed, List<TreeData> deleted, int? key)
+ {
+     List<TreeData> datas = new List<TreeData>();
+     datas = TreeData.GetTree();
+     if (changed != null)
+     {
+         for (var i = 0; i <changed.Count(); i++)
+         {
+             var ord = changed[i];
+             
+             var val = datas.Where(ds => ds.TaskID == ord.TaskID).FirstOrDefault();
+             val.TaskName = ord.TaskName;
+             val.Duration = ord.Duration;
+         }
+     }
+     if (deleted != null)
+     {
+         for (var i = 0; i < deleted.Count(); i++)
+         {
+             datas.Remove(datas.Where(or => or.TaskID == deleted[i].TaskID).FirstOrDefault());
+         }
+     }
+     if (added != null)
+     {
+         for (var i = 0; i < added.Count(); i++)
+         {
+             datas.Insert(0, added[i]);
+         }
+     }
+     var data = datas.ToList();
+     return Json(data);
+
+ }
+ 
+```
+
+![Batch](../images/batch.png)
 
 ## Remote save adaptor
 
-You may need to perform all Tree Grid Actions in client-side except the CRUD operations, that should be interacted with server-side to persist data. It can be achieved in TreeGrid by using **RemoteSaveAdaptor**.
+To interact with server-side only for the CRUD operations, you can utilize the RemoteSaveAdaptor. This adaptor allows you to persist data changes on the server while handling other actions locally.
 
 Datasource must be set to **json** property and set **RemoteSaveAdaptor** to the **adaptor** property. CRUD operations can be mapped to server-side using **updateUrl**, **insertUrl**, **removeUrl** and **batchUrl** properties.
 
-You can use the following code example to use **RemoteSaveAdaptor** in TreeGrid.
+You can use the following code example to use **RemoteSaveAdaptor** in Tree Grid.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -214,7 +370,7 @@ import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegri
 
 @Component({
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data'  [toolbar]='toolbarOptions' [treeColumnIndex]='1' height='270' [editSettings]='editSettings' idMapping='TaskID' parentIdMapping='parentID' >
+    template: `<ejs-treegrid [dataSource]='data'  [toolbar]='toolbarOptions' [treeColumnIndex]='1' height='270' [editSettings]='editSettings' hasChildMapping='isParent' idMapping='TaskID' parentIdMapping='parentID' >
         <e-columns>
             <e-column field='TaskID' headerText='Task ID' width='90' textAlign='Right'></e-column>
             <e-column field='TaskName' headerText='Task Name' width='170'></e-column>
@@ -307,3 +463,54 @@ public ActionResult Remove(List<TreeGridData> changed, List<TreeGridData> added,
 }
 
 ```
+
+## Passing additional parameter to server during CRUD operation
+
+The TreeGrid component allows you to include custom parameters in data requests. This feature is particularly useful when you need to provide additional information to the server for enhanced processing.
+
+By utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#query) property of the tree grid along with the `addParams` method of the Query class, you can easily incorporate custom parameters into data requests for every tree grid action.
+
+When performing CRUD operations in the Tree Grid, you can pass additional parameters using the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin) event.  In this event, you can pass the parameter using the addParams method with args.requestType as save for edit/add actions and args.requestType as delete for delete actions.
+
+The following example demonstrates how to send additional parameters to the server during CRUD actions.
+
+```typescript
+import { Component } from '@angular/core';
+import { DataManager, Query, UrlAdaptor } from '@syncfusion/ej2-data';
+import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-treegrid';
+@Component({
+  selector: 'app-root',
+  template: `
+  <ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' [query]='query' (actionBegin)='actionBegin($event)' height='400' [toolbar]='toolbarOptions' [editSettings]='editSettings' idMapping='TaskID' parentIdMapping='ParentValue' hasChildMapping='isParent' >
+                <e-columns>
+                  <e-column field='TaskID' headerText='Task ID' [isPrimaryKey]='true' width='90' textAlign='Right'></e-column>
+                  <e-column field='TaskName' headerText='Task Name' width='180'></e-column>
+                  <e-column field='Duration' headerText='Duration' width='80' textAlign='Right'></e-column>
+                </e-columns>
+               </ejs-treegrid>
+ `,
+
+})
+export class AppComponent {
+  public data: DataManager = new DataManager({
+    adaptor: new UrlAdaptor,
+    url: "Home/Datasource",
+    crudUrl: 'Home/CrudUpdate',
+    
+  });
+  public query?: Query;
+  public editSettings: EditSettingsModel={ allowEditing: true, allowAdding: true, allowDeleting: true, newRowPosition: 'Below', mode: 'Row' };;
+  public toolbarOptions: ToolbarItems[] = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+  public actionBegin(args: any) {
+    
+    if (args.requestType == 'save') {
+      this.query = new Query().addParams('Editing / Adding record', 'Success');
+    } else if(args.requestType == 'delete') {
+      this.query = new Query().addParams('Deleting record', 'Success');
+    }
+  }
+}
+
+```
+
+![Additional parameters](../images/additional_parameters.png)

@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = new DataManager({
-                url: 'https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData',
+                url: 'https://services.syncfusion.com/angular/production/api/SelfReferenceData',
                 adaptor: new WebApiAdaptor, crossDomain: true
             });
         this.query = new Query().addParams('ej2treegrid', 'true');

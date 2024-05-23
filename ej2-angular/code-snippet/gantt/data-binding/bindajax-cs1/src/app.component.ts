@@ -52,7 +52,7 @@ export class AppComponent {
     }
     bind(): void {
         const temp = this.ganttObj;
-        let fetch = new Fetch("https://ej2services.syncfusion.com/production/web-services/api/GanttData", "GET");
+        let fetch = new Fetch("https://services.syncfusion.com/angular/production/api/GanttData", "GET");
         temp!.showSpinner();
         fetch.send();
         fetch.onSuccess = function (data: any) {
