@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
     ]
 
     ngOnInit(): void {
-        this.data = new DataManager({ url: 'https://ej2services.syncfusion.com/js/development/api/UrlDataSource', adaptor: new UrlAdaptor });
+        this.data = new DataManager({ url: 'https://services.syncfusion.com/angular/production/api/orders', adaptor: new UrlAdaptor });
         this.loadingIndicator = { indicatorType: 'Spinner' };
         this.pageSettings = { pageCount: 3 };
     }
