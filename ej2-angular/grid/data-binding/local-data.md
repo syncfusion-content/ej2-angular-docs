@@ -1039,7 +1039,7 @@ export class AppComponent implements OnInit {
         this.isDataLoading = true;
         const grid = this.grid;  // Grid instance
         const ajax = new Ajax(
-                'https://ej2services.syncfusion.com/production/web-services/api/Orders',
+                'https://services.syncfusion.com/angular/production/api/orders',
                 'GET'
               );
         ajax.send();
