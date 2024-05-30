@@ -215,9 +215,7 @@ The following is the output of custom context menu with customization.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/pdfviewer/custom-context-menu/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/pdfviewer/custom-context-menu/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pdfviewer/custom-context-menu/src/main.ts %}
 {% endhighlight %}
