@@ -274,6 +274,7 @@ Custom format string must contain one or more  of the following standard date/ti
 | h / H | Denotes the hour. *h* for 12 hour and *H* for 24 hours format. |
 | m | Denotes minutes. |
 | s | Denotes seconds. |
+| f | Denotes milliseconds. |
 | a | Denotes the am/pm designator it will only be displayed if hour is specified in the h format. |
 | z | Denotes the time zone. |
 | ' (single quotes) | To display words in the formatted date you can specify the words with in the single quotes |
