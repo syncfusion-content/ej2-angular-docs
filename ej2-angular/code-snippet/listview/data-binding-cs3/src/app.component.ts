@@ -23,12 +23,12 @@ standalone: true,
 
 export class AppComponent {
     public data: Object = new DataManager({
-        url: '//js.syncfusion.com/ejServices/Wcf/Northwind.svc/',
+        url: 'https://services.syncfusion.com/angular/production/api/',
         crossDomain: true
     });
-    public query = new Query().from('Products').select('ProductID,ProductName').take(6);
-    public fields: Object = { id: 'ProductID', text: 'ProductName'  };
-    public headertitle = 'Product Name';
+    public query = new Query().from('ListView').select('EmployeeID,FirstName').take(10);
+    public fields: Object = { id: 'EmployeeID', text: 'FirstName'  };
+    public headertitle = 'Employees';
 }
 
 

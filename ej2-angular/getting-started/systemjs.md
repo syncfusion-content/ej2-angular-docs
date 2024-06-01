@@ -26,7 +26,7 @@ npm install
 
 Perform following steps to use Syncfusion angular components in angular app which uses SystemJS.
 
-`NOTE:` The [`Angular QuickStart`](https://github.com/angular/quickstart)  project has been deprecated. To create new angular projects, [`Angular CLI`](https://npmci.syncfusion.com/hotfix/17.1.0.1/angular/documentation/getting-started/angular-cli/) is the best way.
+`NOTE:` The [`Angular QuickStart`](https://github.com/angular/quickstart)  project has been deprecated. To create new angular projects, [`Angular CLI`](./angular-cli/) is the best way.
 
 ## Installing Syncfusion Grid Package
 
