@@ -225,7 +225,7 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
 
-> Replace https://localhost:****/api/grid with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
+> Replace https://localhost:xxxx/api/grid with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
 
 Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**.
 
