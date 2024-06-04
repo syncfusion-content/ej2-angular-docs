@@ -40,7 +40,7 @@ export class AppComponent {
     };
     click() {
         const kanban: KanbanComponent  = this.kanban as KanbanComponent;  // Grid instance
-        const ajax = new Ajax("https://ej2services.syncfusion.com/production/web-services/api/Orders", "GET");
+        const ajax = new Ajax("https://services.syncfusion.com/angular/production/api/Orders", "GET");
         ajax.send();
         ajax.onSuccess = (data: string) => {
             kanban.dataSource = JSON.parse(data);
