@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Severities in Angular Message component | Syncfusion
-description: Learn here all about Severities in Syncfusion Angular Message component of Syncfusion Essential JS 2 and more.
+title: Severities in Angular Message Component | Syncfusion
+description: Learn here all about severities support in Syncfusion Angular Message component, its elements and more.
 platform: ej2-angular
 control: Severities 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Severities in Angular Message component
+# Severities in Angular Message Component
 
 The severity denotes the importance and context of the message to the user. The message contains different severity types. Use the [severity](https://ej2.syncfusion.com/angular/documentation/api/message/#severity) property to display the messages with different severity levels.
 
