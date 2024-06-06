@@ -16,8 +16,8 @@ standalone: true,
     selector: 'app-container',
     // specifies the template string for the Chart component
     template: `<button ej-button id='print' (click)='export()'>Export</button>
-    <ejs-chart3d #chart style='display:block;' align='center' [primaryXAxis]='primaryXAxis'
-    rotation=7 tilt=10 depth=100 [enableRotation]='enableRotation'>
+    <ejs-chart3d #chart id="chart3D" style='display:block;' align='center' [primaryXAxis]='primaryXAxis'
+    rotation=7 tilt=10 depth=100 [enableExport]='enableExport' [enableRotation]='enableRotation'>
     <e-chart3d-series-collection>
         <e-chart3d-series [dataSource]='dataSource' type='Column' xName='country' yName='gold' name="Gold">
         </e-chart3d-series>
@@ -32,6 +32,7 @@ export class AppComponent {
     public dataSource?: Object[];
     public primaryXAxis?: Object;
     public enableRotation?: boolean;
+    public enableExport?: boolean;
     @ViewChild('chart')
     public chartObj?: ChartComponent;
     ngOnInit(): void {
@@ -51,9 +52,11 @@ export class AppComponent {
             labelPlacement: 'BetweenTicks'
         };
         this.enableRotation = true;
+        this.enableExport = true;
     }
     export() {
-        this.chartObj?.export("PNG", "charts");
+        var chart = (document.getElementById("chart3D") as any).ej2_instances[0];
+        chart.export("PNG", "Charts");
     }
 }
 
