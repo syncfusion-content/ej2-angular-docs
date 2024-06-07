@@ -44,7 +44,7 @@ The adaptor can be assigned using the **adaptor** property of the [`DataManager`
 ```typescript
 import { DataManager, Query, UrlAdaptor } from '@syncfusion/ej2-data';
 
-const SERVICE_URI = 'https://ej2services.syncfusion.com/angular/development/api/UrlDataSource';
+const SERVICE_URI = 'https://services.syncfusion.com/angular/production/api/UrlDataSource';
 
 new DataManager({
         url: SERVICE_URI,
@@ -109,14 +109,14 @@ You can use the **ODataV4Adaptor** to interact with ODataV4 service.
 
 ## Web API adaptor
 
-You can use the **WepApiAdaptor** to interact with Web API created with OData endpoint. The **WepApiAdaptor** is extended from the **ODataAdaptor**. Hence to use **WepApiAdaptor**, the endpoint should understand the OData formatted queries send along with request.
+You can use the **WebApiAdaptor** to interact with Web API created with OData endpoint. The **WebApiAdaptor** is extended from the **ODataAdaptor**. Hence to use **WebApiAdaptor**, the endpoint should understand the OData formatted queries send along with request.
 
 To enable OData query option for Web API, please refer to the [`documentation`](https://docs.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options)
 
 ```typescript
 import { DataManager, Query, WebApiAdaptor } from '@syncfusion/ej2-data';
 
-const SERVICE_URI = 'https://ej2services.syncfusion.com/angular/development/api/Orders';
+const SERVICE_URI = 'https://services.syncfusion.com/angular/production/api/Orders';
 
 new DataManager({
         url: SERVICE_URI,
@@ -126,7 +126,7 @@ new DataManager({
     });
 ```
 
-**WepApiAdaptor** expects JSON response from the server and the response object should contain properties **Items** and **Count** whose values are collection of entities and total count of the entities respectively.
+**WebApiAdaptor** expects JSON response from the server and the response object should contain properties **Items** and **Count** whose values are collection of entities and total count of the entities respectively.
 
 The sample response object should look like below.
 
@@ -281,14 +281,14 @@ export default resolvers;
 
 The query parameters will be send in a string format which contains the below details.
 
-| Parameters | Description |
-|-----|-----|
+| Parameters       | Description                                                                   |
+| ---------------- | ----------------------------------------------------------------------------- |
 | `RequiresCounts` | If it is `true` then the total count of records will be included in response. |
-| `Skip` | Holds the number of records to skip. |
-| `Take` | Holds the number of records to take. |
-| `Sorted` | Contains details about current sorted column and its direction. |
-| `Where` | Contains details about current filter column name and its constraints. |
-| `Group` | Contains details about current Grouped column names. |
+| `Skip`           | Holds the number of records to skip.                                          |
+| `Take`           | Holds the number of records to take.                                          |
+| `Sorted`         | Contains details about current sorted column and its direction.               |
+| `Where`          | Contains details about current filter column name and its constraints.        |
+| `Group`          | Contains details about current Grouped column names.                          |
 
 ### Performing CRUD action with GraphQLAdaptor
 

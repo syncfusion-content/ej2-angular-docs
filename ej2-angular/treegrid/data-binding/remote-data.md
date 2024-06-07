@@ -33,13 +33,123 @@ Similarly, if the user navigates to a new page, the root nodes of that specific 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/data-binding-cs4/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/data-binding-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/treegrid/data-binding-cs4" %}
+
+**Service code snippet:**
+
+```ts
+
+namespace Controllers
+{
+    [Produces("application/json")]
+    [Route("api/SelfReferenceData")]
+    public class SelfReferenceDataController : Controller
+    {
+        public static List<SelfReferenceData> tree = new List<SelfReferenceData>();
+        // GET: api/SelfReferenceData
+        [HttpGet]
+
+        public object Get()
+        {
+            var queryString = Request.Query;
+            if (tree.Count == 0)
+                tree = SelfReferenceData.GetTree();
+            //Filtering
+            if (queryString.Keys.Contains("$filter") && !queryString.Keys.Contains("$top"))
+            {
+                StringValues filter;
+                queryString.TryGetValue("$filter", out filter);
+                int fltr = Int32.Parse(filter[0].ToString().Split("eq")[1]);
+                IQueryable<SelfReferenceData> data1 = tree.Where(f => f.ParentItem == fltr).AsQueryable();
+                return new { result = data1.ToList(), count = data1.Count() };
+            }
+            List<SelfReferenceData> data = tree.ToList();
+            if (queryString.Keys.Contains("$select"))
+            {
+                data = (from ord in tree
+                        select new SelfReferenceData
+                        {
+                            ParentItem = ord.ParentItem
+                        }
+                        ).ToList();
+                return data;
+            }
+            data = data.Where(p => p.ParentItem == null).ToList();
+            int count = data.Count;
+             //Paging
+            if (queryString.Keys.Contains("$inlinecount"))
+            {
+                StringValues Skip;
+                StringValues Take;
+                
+                int skip = (queryString.TryGetValue("$skip", out Skip)) ? Convert.ToInt32(Skip[0]) : 0;
+                int top = (queryString.TryGetValue("$top", out Take)) ? Convert.ToInt32(Take[0]) : data.Count();
+       
+                return new { result = tree.Skip(skip).Take(top), count = tree.Count };
+            }
+            else
+            {
+                return SelfReferenceData.GetTree();
+            }
+        }
+        public class SelfReferenceData
+        {
+
+            [Key]
+            public int TaskID { get; set; }
+            public string TaskName { get; set; }
+            public DateTime StartDate { get; set; }
+            public DateTime EndDate { get; set; }
+            public String Progress { get; set; }
+            public String Priority { get; set; }
+            public int Duration { get; set; }
+            public int? ParentItem { get; set; }
+            public bool? isParent { get; set; }
+            public SelfReferenceData() { }
+            public static List<SelfReferenceData> GetTree()
+            {
+                if (tree.Count == 0)
+                {
+                    int root = -1;
+                    for (var t = 1; t <= 60; t++)
+                    {
+                        Random ran = new Random();
+                        string math = (ran.Next() % 3) == 0 ? "High" : (ran.Next() % 2) == 0 ? "Release Breaker" : "Critical";
+                        string progr = (ran.Next() % 3) == 0 ? "Started" : (ran.Next() % 2) == 0 ? "Open" : "In Progress";
+                        root++;
+                        int rootItem = tree.Count + root + 1;
+                        tree.Add(new SelfReferenceData() { TaskID = rootItem, TaskName = "Parent Task " + rootItem.ToString(), StartDate = new DateTime(1992, 06, 07), EndDate = new DateTime(1994, 08, 25), isParent = true, ParentItem = null, Progress = progr, Priority = math, Duration = ran.Next(1, 50) });
+                        int parent = tree.Count;
+                        for (var c = 0; c < 10; c++)
+                        {
+                            root++;
+                            string val = ((parent + c + 1) % 3 == 0) ? "Low" : "Critical";
+                            int parn = parent + c + 1;
+                            progr = (ran.Next() % 3) == 0 ? "In Progress" : (ran.Next() % 2) == 0 ? "Open" : "Validated";
+                            int iD = tree.Count + root + 1;
+                            tree.Add(new SelfReferenceData() { TaskID = iD, TaskName = "Child Task " + iD.ToString(), StartDate = new DateTime(1992, 06, 07), EndDate = new DateTime(1994, 08, 25), isParent = (((parent + c + 1) % 3) == 0), ParentItem = rootItem, Progress = progr, Priority = val, Duration = ran.Next(1, 50) });
+                            if ((((parent + c + 1) % 3) == 0))
+                            {
+                                int immParent = tree.Count;
+                                for (var s = 0; s < 3; s++)
+                                {
+                                    root++;
+                                    string Prior = (immParent % 2 == 0) ? "Validated" : "Normal";
+                                    tree.Add(new SelfReferenceData() { TaskID = tree.Count + root + 1, TaskName = "Sub Task " + (tree.Count + root + 1).ToString(), StartDate = new DateTime(1992, 06, 07), EndDate = new DateTime(1994, 08, 25), isParent = false, ParentItem = iD, Progress = (immParent % 2 == 0) ? "On Progress" : "Closed", Priority = Prior, Duration = ran.Next(1, 50) });
+                                }
+                            }
+                        }
+                    }
+                }
+                return tree;
+            }
+        }
+```
 
 > By default, `DataManager` uses `ODataAdaptor` for remote data-binding.
 > Based on the RESTful web services, set the corresponding adaptor to DataManager. Refer [`here`](https://ej2.syncfusion.com/documentation/data/adaptors/?no-cache=1) for more details.
