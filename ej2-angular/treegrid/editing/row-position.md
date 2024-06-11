@@ -8,7 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# New row position types in Angular TreeGrid component
+# Adding new record in Angular TreeGrid component
+
+The TreeGrid component allows you to add new records using the built-in toolbar with the **Add** button or programmatically using the [addRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#addrecord) method. Also, to utilize this method, the [allowadding](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#allowadding) porperty must be enabled. This guide outlines how to add new records at different positions within the Tree Grid.
+
+## New row position types
 
 The TreeGrid component offers the [newRowPosition](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#newrowposition) property to specify where to add new rows. This property allows you to add new rows at different positions within the Tree Grid hierarchy.
 
@@ -23,6 +27,26 @@ The TreeGrid component provides the following row positions when adding a new ro
  * **Child**: Inserts the new row as a child of the selected row.
 
  These row positions provide flexibility in managing the placement of new rows within the TreeGrid, allowing for efficient organization and structuring of data.
+
+## Give unique value to primary key column automatically
+
+In the TreeGrid component, you can automatically assign unique values to the primary key column using the [actionBegin]() event. During this event, you can set a unique value to the primary key column when the **args.requestType** as **add**.
+
+The following example demonstrates how to set a unique value to the primary key column using the `actionBegin` event.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/row-position-cs4/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/row-position-cs4/src/datasource.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/row-position-cs4/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/treegrid/row-position-cs4" %}
 
 ## Change new row position dynamically
 

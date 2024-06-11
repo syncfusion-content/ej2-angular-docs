@@ -27,7 +27,9 @@ You can use TreeGrid [`dataSource`](https://ej2.syncfusion.com/angular/documenta
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/data-binding-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/data-binding-cs1/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/data-binding-cs1/src/main.ts %}
 {% endhighlight %}

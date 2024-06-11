@@ -27,7 +27,7 @@ export class AppComponent{
     public columns?: object[];
     public ngOnInit(): void {
         this.data = new DataManager({
-            url: 'https://ej2services.syncfusion.com/production/web-services/api/GanttData',
+            url: 'https://services.syncfusion.com/angular/production/api/GanttData',
             adaptor: new WebApiAdaptor,
             crossDomain: true
         });

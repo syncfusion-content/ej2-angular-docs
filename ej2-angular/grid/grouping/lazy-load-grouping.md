@@ -63,7 +63,7 @@ public IActionResult UrlDatasource([FromBody] DataManagerRequest dm)
         DataSource = operation.PerformFiltering(DataSource, dm.Where, dm.Where[0].Operator);
     }
     int count = DataSource.Cast<Customers>().Count();
-    if (dm.Sorted != null && dm.Sorted.Count > 0) //Sorting
+    if (dm.IsLazyLoad == false && dm.Sorted != null && dm.Sorted.Count > 0) //Sorting for grouping
     {
         DataSource = operation.PerformSorting(DataSource, dm.Sorted);
     }   
@@ -78,6 +78,7 @@ public IActionResult UrlDatasource([FromBody] DataManagerRequest dm)
     if (dm.IsLazyLoad)
     {
         groupedData = operation.PerformGrouping<Customers>(DataSource, dm); // Lazy load grouping
+        groupedData = operation.PerformSorting(groupedData, dm); // Sorting with Lazy load grouping
         if (dm.OnDemandGroupInfo != null && dm.Group.Count() == dm.OnDemandGroupInfo.Level)
         {
             count = groupedData.Cast<Customers>().Count();
@@ -93,6 +94,8 @@ return dm.RequiresCounts ? Json(new { result = groupedData == null ? DataSource 
 }
 
 ```
+
+> For optimal performance, especially when dealing with lazy loading grouping, it is recommended to perform sorting after the grouping action.
 
 ## Lazy load grouping with infinite scrolling
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Strip line in Angular Chart component | Syncfusion
-description: Learn here all about Strip line in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Strip Line in Angular Chart Component | Syncfusion
+description: Learn here all about strip line in Syncfusion Essential Angular Chart component, it's elements and more.
 platform: ej2-angular
 control: Strip line 
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Strip line in Angular Chart component
+# Strip Line in Angular Chart Component
 
 <!-- markdownlint-disable MD036 -->
 

@@ -28,7 +28,7 @@ It is necessary to load the following CLDR data using the `loadCldr` function fo
 
 ### Installing CLDR data
 
-CLDR data is available as an npm package. So, you can instal it by adding the below command to our package.
+CLDR data is available as an npm package. So, you can install it by adding the below command to our package.
 
 ```bash
 npm install cldr-data

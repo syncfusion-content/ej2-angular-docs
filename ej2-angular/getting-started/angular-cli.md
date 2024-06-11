@@ -20,7 +20,7 @@ In this guide, we will show you how to create an Angular project and install the
 
 ## Setting up an Angular project
 
-Using [Angular CLI](https://github.com/angular/angular-cli), you can easily setup Angular projects. This section provides guidance for installing a specific version of Angular CLI and creating an Angular 17 application based on your requirements.
+Using [Angular CLI](https://github.com/angular/angular-cli), you can easily setup Angular projects. This section provides guidance for installing a specific version of Angular CLI and creating an Angular 18 application based on your requirements.
 
 ### Installing a Specific Version
 
@@ -32,13 +32,13 @@ npm install -g @angular/cli@16.0.1
 
 ### Installing the Latest Angular CLI
 
-To create an Angular 17 application, use the Angular CLI with the following command
+To create an Angular 18 application, use the Angular CLI with the following command
 
 ```bash
 npm install -g @angular/cli
 ```
 
-N> For Angular 17, it default for generates a standalone application. Detailed instructions on creating Syncfusion Angular standalone components using the latest version, please refer to the [Standalone guide](./angular-standalone).
+N> For Angular 18, it default for generates a standalone application. Detailed instructions on creating Syncfusion Angular standalone components using the latest version, please refer to the [Standalone guide](./angular-standalone).
 
 ## Create a new application
 
@@ -281,4 +281,3 @@ Syncfusion has a collection of sample applications that demonstrate the use of S
 ## See also
 
 * [Upgradation Guide](../upgrade/upgrading-syncfusion)
-* [Upgradation Guide](../upgrade/upgrading-syncfusion/)

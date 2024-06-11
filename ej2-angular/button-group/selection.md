@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Selection in Angular Button group component | Syncfusion
-description: Learn here all about Selection in Syncfusion Angular Button group component of Syncfusion Essential JS 2 and more.
+title: Selection in Angular Button Group Component | Syncfusion
+description: Learn here all about selection in Syncfusion Essential Angular Button Group component, it's elements and more.
 platform: ej2-angular
 control: Selection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Selection in Angular Button group component
+# Selection in Angular Button Group Component
 
 ## Selection
 

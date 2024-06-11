@@ -191,7 +191,7 @@ In the below sample, tree grid is rendered with a customized sort icon.
 {% include code-snippet/treegrid/sorting-cs9/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="sorting_style.css" %}
-{% include code-snippet/treegrid/sorting-cs9/sorting_style.css %}
+{% include code-snippet/treegrid/sorting-cs9/src/sorting_style.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
     public pageSettings?: Object;
     ngOnInit(): void {
         this.data = new DataManager({
-                url: 'https://ej2services.syncfusion.com/production/web-services/api/SelfReferenceData',
+                url: 'https://services.syncfusion.com/angular/production/api/SelfReferenceData',
                 adaptor: new WebApiAdaptor, crossDomain: true
             });
         this.loadingIndicator = {indicatorType: 'Shimmer'};

@@ -46,7 +46,6 @@ Here's an example of how to hide the drag and drop icon in the tree grid:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/dragndrop-cs2/src/app.component.ts %}
 {% endhighlight %}    
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/dragndrop-cs2/src/main.ts %}
 {% endhighlight %}
@@ -56,6 +55,32 @@ Here's an example of how to hide the drag and drop icon in the tree grid:
 
 > * Enabling the selection feature in the Tree Grid allows for the selection of rows before initiating the drag-and-drop operation.
 > * Multiple rows can be selected by clicking and dragging inside the tree grid. For multiple row selection, the [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#type) property must be set to **Multiple**.
+
+## Different drop positions
+
+In a Tree Grid, drag and drop functionality allows to rearrange rows to adjust their position. When dragging and dropping rows in a tree grid, you can drop rows into following positions:
+
+1. Above
+2. Below
+3. Child
+
+**Above**
+
+If the border line appears at the top of the target row, which is **Task ID: 5** while dropping, then the row will be added `above` the target row as sibling.
+
+![Above Position](../images/Above.png)
+
+**Below**
+
+If the border line appears at the bottom of the target row, which is **Task ID: 5** while dropping, then the row will be added `below` the target row as sibling.
+
+![Below Position](../images/Below.png)
+
+**Child**
+
+If the border line appears at both top and bottom of the target row, which is **Task ID: 5** while dropping, then the row will be added as `child` to the target row.
+
+![Child Position](../images/Child.png)
 
 ## Drag and drop to another tree grid
 
@@ -87,7 +112,6 @@ In the below example, the selected tree grid row is dragged and dropped in to th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/dragndrop-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/dragndrop-cs1/src/main.ts %}
 {% endhighlight %}
@@ -436,6 +460,31 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/treegrid/dragndrop-cs3" %}
 
+## Perform row drag and drop action programmatically 
+
+In the TreeGrid component, you can perform row drag and drop actions programmatically using the [reorderRows](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#reorderrows) method. This method allows you to easily reorder rows by specifying the indices and the desired drop position.
+
+**Parameters**
+
+The reorderRows method accepts three parameters:
+
+* **fromIndex:** The index of the row to be dragged.
+* **toIndex:** The index where the row should be dropped.
+* **position:** Specifies the drop position relative to the target row.
+
+In the following example, using `click` event of an external button, row at index 1 is dropped **below** the row at index 3 by using the `reorderRows` method.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/dragndrop-cs5/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/dragndrop-cs5/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/treegrid/dragndrop-cs5" %}
+
 ## Prevent reordering a row 
 
 To prevent the default behavior of dropping rows onto the target by setting the `cancel` property to `true` in [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdrop) event argument.
@@ -446,7 +495,6 @@ In the following example, the drop action is cancelled using the `rowDrop` event
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/dragndrop-cs4/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/dragndrop-cs4/src/main.ts %}
 {% endhighlight %}
