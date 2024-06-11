@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
     public primaryYAxis?: Object;
     public dataManager: DataManager = new DataManager({
-    url: 'https://ej2services.syncfusion.com/production/web-services/api/Orders'
+    url: 'https://services.syncfusion.com/angular/production/api/orders'
     });
     public query: Query = new Query().take(5).where('Estimate', 'lessThan', 3, false);
     ngOnInit(): void {

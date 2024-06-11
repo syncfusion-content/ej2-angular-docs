@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Treegrid component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Treegrid component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular TreeGrid component | Syncfusion
+description:  Checkout and learn about Getting started with Angular TreeGrid component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Treegrid component
+# Getting started with Angular TreeGrid component
 
 This section explains the steps required to create a simple Essential JS 2 TreeGrid and demonstrates the basic usage of the [`Angular Tree Grid control`](https://www.syncfusion.com/angular-components/angular-tree-grid) in a Angular CLI application.
 
@@ -39,7 +39,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -72,22 +72,23 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Registering TreeGrid Module
 
-Import TreeGrid module into the Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-treegrid` [src/app/app.module.ts].
+Import TreeGrid module into the Angular application(app.component.ts) from the package `@syncfusion/ej2-angular-treegrid` [src/app/app.component.ts].
 
 ```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { Component } from '@angular/core';
 // import the TreeGridModule for the TreeGrid component
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid';
-import { AppComponent }  from './app.component';
 
-@NgModule({
-  //declaration of ej2-angular-treegrid module into NgModule
-  imports:      [ BrowserModule, TreeGridModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  //declaration of ej2-angular-treegrid module
+  imports:      [ TreeGridModule ],
+ templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
-export class AppModule { }
+export class AppComponent { }
+
 ```
 
 ## Adding CSS reference
@@ -167,7 +168,9 @@ Tree Column is used to expand or collapse child rows is defined by using the [`t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/getting-started-cs1/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
@@ -201,7 +204,9 @@ In root-level paging mode, paging is based on the root-level rows only i.e., it 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/getting-started-cs2/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
@@ -211,17 +216,19 @@ In root-level paging mode, paging is based on the root-level rows only i.e., it 
 
 ## Enable Sorting
 
-The sorting feature enables the user to order the records.
-It can be enabled by setting [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowsorting) property to true.
-Also, need to inject the `SortService` module in the provider section as follow.
-If we didn't inject the `SortService` module, then user not able to sort when click on headers.
-Sorting feature can be customized using [`sortSettings`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#sortsettings) property.
+The sorting feature enables the user to order the records. It can be enabled by setting [`allowSorting`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowsorting) property to true. 
+
+Also, need to inject the `SortService` module in the provider section as follow. If we didn't inject the `SortService` module, then user not able to sort when click on headers.
+
+Sorting feature can be customized using [sortSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#sortsettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/getting-started-cs3/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
@@ -231,15 +238,17 @@ Sorting feature can be customized using [`sortSettings`](https://ej2.syncfusion.
 
 ## Enable Filtering
 
-The filtering feature enables you to view the reduced amount of records based on the filter criteria. It can be enabled by setting the [`allowFiltering`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowfiltering) property to true.  Also, need to inject the `FilterService` module in the provider section as follow. If `FilterService` module is not injected, filter bar will not be rendered in TreeGrid. Filtering feature can be customized using the [`filterSettings`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#filtersettings) property.
+The filtering feature enables you to view the reduced amount of records based on the filter criteria. It can be enabled by setting the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowfiltering) property to true.  Also, need to inject the `FilterService` module in the provider section as follow. If `FilterService` module is not injected, filter bar will not be rendered in TreeGrid. Filtering feature can be customized using the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#filtersettings) property.
 
-By default, filtered records are shown along with its parent records. This behavior can be changed by using the [`filterSettings-hierarchyMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel/#hierarchymode) property.
+By default, filtered records are shown along with its parent records. This behavior can be changed by using the [filterSettings-hierarchyMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettingsModel/#hierarchymode) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/getting-started-cs4/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
@@ -247,7 +256,7 @@ By default, filtered records are shown along with its parent records. This behav
   
 {% previewsample "page.domainurl/samples/treegrid/getting-started-cs4" %}
 
-> You can render the records in a collapsed state in the initial render of the tree grid by enabling the [`enableCollapseAll`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablecollapseall) property.
+> You can render the records in a collapsed state in the initial render of the tree grid by enabling the [enableCollapseAll](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablecollapseall) property.
 
 ## Run the application
 
@@ -263,7 +272,9 @@ The output will appear as follows.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/treegrid/getting-started-cs5/src/datasource.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
@@ -272,3 +283,13 @@ The output will appear as follows.
 {% previewsample "page.domainurl/samples/treegrid/getting-started-cs5" %}
 
 > You can refer to our [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.
+
+## See Also
+
+* [Getting Started with JavaScript documentation](https://ej2.syncfusion.com/documentation/treegrid/getting-started)
+* [Getting Started with JavaScript (ES5) documentation](https://ej2.syncfusion.com/javascript/documentation/treegrid/getting-started)
+* [Getting Started with React documentation](https://ej2.syncfusion.com/react/documentation/treegrid/getting-started)
+* [Getting Started with Vue documentation](https://ej2.syncfusion.com/vue/documentation/treegrid/getting-started)
+* [Getting Started with ASP.NET Core documentation](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core)
+* [Getting Started with ASP.NET MVC documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/getting-started-mvc)
+* [Getting Started with Blazor documentation](https://blazor.syncfusion.com/documentation/treegrid/getting-started-webapp)

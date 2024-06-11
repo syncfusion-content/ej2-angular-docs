@@ -1,0 +1,87 @@
+<ejs-ribbon id="ribbon">
+  <e-ribbon-tabs>
+    <e-ribbon-tab header="Home">
+      <e-ribbon-groups>
+        <e-ribbon-group header="Clipboard" groupIconCss='e-icons e-paste'>
+          <e-ribbon-collections>
+            <e-ribbon-collection>
+              <e-ribbon-items>
+                <e-ribbon-item type="SplitButton" [splitButtonSettings]="pasteButton">
+                </e-ribbon-item>
+              </e-ribbon-items>
+            </e-ribbon-collection>
+            <e-ribbon-collection>
+              <e-ribbon-items>
+                <e-ribbon-item type="Button" [buttonSettings]="cutButton">
+                </e-ribbon-item>
+                <e-ribbon-item type="Button" [buttonSettings]="copyButton">
+                </e-ribbon-item>
+                <e-ribbon-item type="Button" [buttonSettings]="formatPainter">
+                </e-ribbon-item>
+              </e-ribbon-items>
+            </e-ribbon-collection>
+          </e-ribbon-collections>
+        </e-ribbon-group>
+        <e-ribbon-group header="Table Styles">
+          <e-ribbon-collections>
+            <e-ribbon-collection>
+              <e-ribbon-items>
+                <e-ribbon-item type="Gallery" [gallerySettings]="gallerySettings">
+                </e-ribbon-item>
+              </e-ribbon-items>
+            </e-ribbon-collection>
+          </e-ribbon-collections>
+        </e-ribbon-group>
+        <e-ribbon-group header="Insert">
+          <e-ribbon-collections>
+            <e-ribbon-collection>
+              <e-ribbon-items>
+                <e-ribbon-item type="Button" [buttonSettings]="aboveButton">
+                </e-ribbon-item>
+                <e-ribbon-item type="Button" [buttonSettings]="belowButton">
+                </e-ribbon-item>
+              </e-ribbon-items>
+            </e-ribbon-collection>
+            <e-ribbon-collection>
+              <e-ribbon-items>
+                <e-ribbon-item type="Button" [buttonSettings]="leftButton">
+                </e-ribbon-item>
+                <e-ribbon-item type="Button" [buttonSettings]="rightButton">
+                </e-ribbon-item>
+              </e-ribbon-items>
+            </e-ribbon-collection>
+          </e-ribbon-collections>
+        </e-ribbon-group>
+      </e-ribbon-groups>
+    </e-ribbon-tab>
+  </e-ribbon-tabs>
+</ejs-ribbon>
+<ng-template #galleryTemplate let-data>
+  <div class="gallery-template {{data.items.cssClass}}">
+    <table class="table">
+        <tbody>
+            <tr class="row_one">
+                <td class="tableContent">—</td>
+                <td class="tableContent">—</td>
+                <td class="tableContent">—</td>
+                <td class="tableContent">—</td>
+                <td class="tableContent">—</td>
+            </tr>
+            <tr class="row_two">
+                <td class="tableContent">—</td>
+                <td class="tableContent">—</td>
+                <td class="tableContent">—</td>
+                <td class="tableContent">—</td>
+                <td class="tableContent">—</td>
+            </tr>
+            <tr class="row_three">
+                <td class="tableContent">—</td>
+                <td class="tableContent">—</td>
+                <td class="tableContent">—</td>
+                <td class="tableContent">—</td>
+                <td class="tableContent">—</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</ng-template>

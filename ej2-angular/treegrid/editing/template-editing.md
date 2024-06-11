@@ -1,26 +1,25 @@
 ---
 layout: post
-title: Template editing in Angular Treegrid component | Syncfusion
-description: Learn here all about Template editing in Syncfusion Angular Treegrid component of Syncfusion Essential JS 2 and more.
+title: Template editing in Angular TreeGrid component | Syncfusion
+description: Learn here all about Template editing in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Template editing 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template editing in Angular Treegrid component
+# Template editing in Angular TreeGrid component
 
 ## Reactive forms
 
-[`Reactive`](https://angular.io/guide/reactive-forms) Forms is a model-driven approach to create and manipulate the form controls. You can use reactive form to add and update treegrid records. To use reactive forms for editing operation, you can take leverage of the template support of dialog or inline edit mode. Setting the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel/#mode) as `Row/Dialog` and `editSettingsTemplate` as template variable of NgTemplate to define the treegrid editors.
+[Reactive](https://angular.io/guide/reactive-forms) Forms is a model-driven approach to create and manipulate the form controls. You can use reactive form to add and update the tree grid records. To use reactive forms for editing operation, you can take leverage of the template support of dialog or row edit mode. Setting the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#mode) as **Row/Dialog** and **editSettingsTemplate** as template variable of NgTemplate to define the tree grid editors.
 
-In the below sample, We have created the `FormGroup` with `FormControls` for each columns, in the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin)  event. While saving, we have validated the formgroup and updated the treegrid with the edited data from the FormGroup object.
+In the below sample, We have created the **FormGroup** with **FormControls** for each columns, in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin) event. While saving, we have validated the formgroup and updated the tree grid with the edited data from the FormGroup object.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-dlg-react-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-dlg-react-cs1/src/main.ts %}
 {% endhighlight %}
@@ -30,7 +29,7 @@ In the below sample, We have created the `FormGroup` with `FormControls` for eac
 
 ## Template-driven forms
 
-[`Template-driven`](https://angular.io/guide/forms#template-driven-forms) forms is a template-driven approach to create and manipulate the form controls. You can use template-driven form to add and update treegrid records. To use template-driven forms for editing operation, you can take leverage of the template support of dialog or inline edit mode. Setting the [`editSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel/#mode) as `Row/Dialog` and `editSettingsTemplate` as template variable of NgTemplate to define the treegrid editors.
+[Template-driven](https://angular.io/guide/forms#template-driven-forms) forms is a template-driven approach to create and manipulate the form controls. You can use template-driven form to add and update tree grid records. To use template-driven forms for editing operation, you can take leverage of the template support of dialog or row edit mode. Setting the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel/#mode) as `Row/Dialog` and `editSettingsTemplate` as template variable of NgTemplate to define the tree grid editors.
 
 In some cases, you need to add the new field editors in the dialog which are not present in the column model. In that situation, the dialog template will help you to customize the default edit dialog.
 
@@ -38,13 +37,13 @@ You can check this video to learn about how to customize the edit dialog of Tree
 
 {% youtube "https://www.youtube.com/watch?v=IlVJBZOVUoA" %}
 
-In the following sample, treegrid enabled with dialog template editing.
+
+In the below sample, We have created the FormGroup by using ngForm directive. While saving, we have validated the formgroup and updated the tree grid with the edited model data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/edit-dlg-temp-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/edit-dlg-temp-cs1/src/main.ts %}
 {% endhighlight %}
@@ -56,15 +55,15 @@ In the following sample, treegrid enabled with dialog template editing.
 
 ## Template context
 
-The Essential JS2 packages has a built-in template engine. Using the template engine, you can access the row information inside the HTML element and bind the attributes, values, or elements based on this row information.
+While using the edit template, you can access the row information inside the NgTemplate and you can bind the attributes or values or elements based on this row information.
 
 The following properties will be available at the time of template execution.
 
 | Property Name | Usage |
-|---------------|--------|
-| <kbd>isAdd</kbd> | A Boolean property; it defines whether the current row should be a new record or not.
+|---------------|-------|
+| <kbd>isAdd</kbd> | A boolean property; it defines whether the current row should be a new record or not. |
 
-In the following code example, the `taskID` textbox has been disabled by using the `isAdd` property.
+In the following code example, the **taskID** textbox has been disabled by using the **isAdd** property.
 
 ```
 // The disabled attributes will be added based on the isAdd property.
@@ -72,7 +71,7 @@ In the following code example, the `taskID` textbox has been disabled by using t
 
 ```
 
-The following code example illustrates rendering the `taskID` textbox, when a new record is added.
+The following code example illustrates rendering the **taskID** textbox, when a new record is added.
 
 ```
 
@@ -80,7 +79,7 @@ The following code example illustrates rendering the `taskID` textbox, when a ne
     <div class="e-float-input e-control-wrapper">
         <input formControlName="taskID" id="taskID" name="taskID" type="text" [attr.disabled]="!data.isAdd ? '' : null">
         <span class="e-float-line"></span>
-        <label class="e-float-text e-label-top" for="taskID">Task ID</label>
+        <label class="e-float-text e-label-top" for="taskID"> Task ID</label>
     </div>
 </div>
 
@@ -88,8 +87,7 @@ The following code example illustrates rendering the `taskID` textbox, when a ne
 
 ## Set focus to editor
 
-By default, the first input element in the dialog will be focused while opening the dialog.
-If the first input element is in disabled or hidden state, focus the valid input element in the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event based on `requestType` as `beginEdit`.
+By default, the first input element in the dialog will be focused while opening the dialog. If the first input element is in disabled or hidden state then you need to focused the valid input element in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event based on **requestType** as **beginEdit**.
 
 ```typescript
 
@@ -104,7 +102,7 @@ If the first input element is in disabled or hidden state, focus the valid input
 
 ## Disable form validation
 
-If you have interested to use [`angular form validation`](https://angular.io/guide/form-validation) then you need to disable the default validation rules in  the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event.
+If you have interested to use [angular form validation](https://angular.io/guide/form-validation) then you need to disable the default validation rules in  the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event.
 
 ```typescript
 
@@ -119,7 +117,7 @@ If you have interested to use [`angular form validation`](https://angular.io/gui
 
 ## Adding validation rules for custom editors
 
-If you have used additional fields that are not present in the column model, then add the validation rules to the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event.
+If you have interested to use our default form validation, the validation rules for the fields which are not present in the column model need to be add in  the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event.
 
 ```typescript
 
@@ -131,3 +129,80 @@ If you have used additional fields that are not present in the column model, the
     }
 
 ```
+
+## Render tab component inside the dialog template
+
+You can use [Tab](https://ej2.syncfusion.com/angular/documentation/tab/getting-started) component inside dialog edit UI using dialog template feature. The dialog template feature can be enabled by defining  [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#mode) as `Dialog` and **editSettingsTemplate** as template variable in NgTemplate to define the tree grid editors.
+
+To include tab components in the Dialog, please ensure the following steps:
+
+**Step 1**: To render the Tab component, use the `editSettingsTemplate` of the Tree Grid. Inside the content template of the tab items define the input elements.
+
+```
+<ejs-tab #tab id="tab_wizard" showCloseButton=false (selecting)='selecting($event)'>
+    <e-tabitems>
+        <e-tabitem [header]="{ 'text': 'Details' }" >
+            <ng-template #content>
+                <div id="tab1">
+                    <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <div class="e-float-input e-control-wrapper" [ngClass]="{'e-error': taskID.invalid && (taskID.dirty || taskID.touched)}">
+                        <input [(ngModel)]="data.taskID" required id="taskID" name="taskID" type="text" [attr.disabled]="!data.isAdd ? '' : null" #taskID="ngModel">
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text e-label-top" for="taskID"> Task ID</label>
+                    </div>
+                    <div id="taskIDError" *ngIf='taskID.invalid && (taskID.dirty || taskID.touched)'>
+                        <label class="e-error" for="taskID" id="taskID-info" style="display: block;">*Task ID is required</label>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <div class="e-float-input e-control-wrapper" [ngClass]="{'e-error': taskName.invalid && (taskName.dirty || taskName.touched)}">
+                        <input [(ngModel)]="data.taskName" required id="taskName" name="taskName" type="text" #taskName="ngModel">
+                        <span class="e-float-line"></span>
+                        <label class="e-float-text e-label-top" for="taskName">Task Name</label>
+                    </div>
+                    <div id="taskNameError" *ngIf='taskName.invalid && (taskName.dirty || taskName.touched)'>
+                        <label class="e-error" for="taskName" id="taskName-info" style="display: block;">*Customer Name is required</label>
+                    </div>
+                    </div>
+                    </div>
+                    <button ejs-button type="button" cssClass="e-info e-btn" style="float: right" (click)="nextBtn()" >next</button>
+                </div>
+            </ng-template>
+        </e-tabitem>
+        <e-tabitem [header]="{ 'text': 'Verify' }">
+            <ng-template #content>
+                <div id="tab2">
+                <div class="form-row" >
+                <div class="form-group col-md-6">
+                    <ejs-dropdownlist id="priority" name="priority" [(ngModel)]="data.priority" [dataSource]='priorityDistinctData' [fields]="{text: 'priority', value: 'priority' }" placeholder="Priority" popupHeight='300px' floatLabelType='Always'></ejs-dropdownlist>
+                </div>
+                </div>
+                <div class="form-row">
+                <div class="form-group col-md-6">
+                    <ejs-checkbox #approved name="approved" id="approved" label="Approved" [checked]="data.approved" ></ejs-checkbox>
+                </div>
+                </div>
+                    <button ejs-button type="button" cssClass="e-info e-btn" style="float: right" (click)='submitBtn()'>submit</button>
+                </div>
+            </ng-template>
+        </e-tabitem>
+    </e-tabitems>
+</ejs-tab>
+
+```
+
+In the following example, we have rendered tab control inside the edit dialog. The tab control has two tabs and once you fill the first tab and navigate to second one. The validation for first tab was done before navigate to second.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/treegrid/edit-dlg-temp-cs2/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/treegrid/edit-dlg-temp-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/treegrid/edit-dlg-temp-cs2" %}

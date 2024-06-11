@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cell range in Angular Spreadsheet component | Syncfusion
-description: Learn here all about Cell range in Syncfusion Angular Spreadsheet component of Syncfusion Essential JS 2 and more.
+title: Cell Range in Angular Spreadsheet Component | Syncfusion
+description: Learn here all about cell range in Syncfusion Essential Angular Spreadsheet component, it's elements and more.
 platform: ej2-angular
 control: Cell range 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Cell range in Angular Spreadsheet component
+# Cell Range in Angular Spreadsheet Component
 
 A group of cells in a sheet is known as cell range.
 

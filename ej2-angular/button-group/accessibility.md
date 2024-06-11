@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Button group component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Button group component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Button Group Component | Syncfusion
+description: Learn here all about accessibility in Syncfusion Essential Angular Button Group component, it's elements and more.
 control: Accessibility 
 platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Button group component
+# Accessibility in Angular Button Group Component
 
 The Button group component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -54,7 +54,7 @@ The Button group component followed the [keyboard interaction](https://www.w3.or
 | **Press** | **To do this** |
 | --- | --- |
 | <kbd>Tab</kbd> | Focuses the next button in the ButtonGroup. |
-| <kbd>Space</kbd> | Activates the focussed button in the ButtonGroup. |
+| <kbd>Space</kbd> | Activates the focused button in the ButtonGroup. |
 
 ### Radiobutton behavior
 

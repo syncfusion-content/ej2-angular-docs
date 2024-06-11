@@ -15,7 +15,7 @@ The [NPM](https://www.npmjs.com/search?q=@syncfusion/ej2-angular) packages are i
 
 ## Creating Angular application
 
-To create an Angular application, instal the [Angular CLI](https://github.com/angular/angular-cli) globally using the following command.
+To create an Angular application, install the [Angular CLI](https://github.com/angular/angular-cli) globally using the following command.
 
 ```
 npm install -g @angular/cli

@@ -79,5 +79,5 @@ npm run dev:ssr
 ## See also
 
 * [Angular Universal](https://github.com/angular/universal)
-* [Getting Started ASP.NET Core with Angular](../getting-started/aspnet-core.md)
-* [Getting Started ASP.NET MVC with Angular](../getting-started/aspnet-mvc.md)
+* [Getting Started ASP.NET Core with Angular](../getting-started/aspnet-core/)
+* [Getting Started ASP.NET MVC with Angular](../getting-started/aspnet-mvc/)
