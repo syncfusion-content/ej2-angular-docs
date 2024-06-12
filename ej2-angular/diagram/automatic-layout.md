@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Automatic layout in Angular Diagram component | Syncfusion
-description: Learn here all about Automatic layout in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Automatic layout in Angular Diagram Component | Syncfusion
+description: Learn here all about automatic layout in Syncfusion Essential Angular Diagram component its elements and more.
 platform: ej2-angular
 control: Automatic layout 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Automatic layout in Angular Diagram component
+# Automatic layout in Angular Diagram Component
 
 Diagram provides support to auto-arrange the nodes in the diagram area that is referred as `Layout`. It includes the following layout modes:
 
@@ -23,7 +23,7 @@ Diagram provides support to auto-arrange the nodes in the diagram area that is r
 
 ## Hierarchical layout
 
-The hierarchical tree layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root. To arrange the nodes in a hierarchical structure, specify the layout [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) as hierarchical tree.
+The hierarchical tree layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root. To arrange the nodes in a hierarchical structure, specify the layout [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) as hierarchical tree.
 
 >Note: If you want to use hierarchical tree layout in diagram, you need to inject HierarchicalTree in the diagram.
 
@@ -45,9 +45,9 @@ The following example shows how to arrange the nodes in a hierarchical structure
 
 ## Radial tree layout
 
-The radial tree layout arranges nodes on a virtual concentric circle around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement result in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. The layout [`root`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) property can be used to define the root node of the layout. When no root node is set, the algorithm automatically considers one of the diagram nodes as the root node.
+The radial tree layout arranges nodes on a virtual concentric circle around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement result in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. The layout [`root`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) property can be used to define the root node of the layout. When no root node is set, the algorithm automatically considers one of the diagram nodes as the root node.
 
-To arrange nodes in a radial tree structure, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) of the layout as `RadialTree`.
+To arrange nodes in a radial tree structure, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) of the layout as `RadialTree`.
 
 >Note: If you want to use radial tree layout in diagram, you need to inject DataBinding and RadialTree in the diagram.
 
@@ -69,7 +69,7 @@ The following code illustrates how to arrange the nodes in a radial tree structu
 
 ## Organizational Chart
 
-An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) of layout should be set as an `OrganizationalChart`.
+An organizational chart is a diagram that displays the structure of an organization and relationships. To create an organizational chart, the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) of layout should be set as an `OrganizationalChart`.
 
 The following code example illustrates how to create an organizational chart.
 
@@ -89,7 +89,7 @@ The following code example illustrates how to create an organizational chart.
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. The `getLayoutInfo` method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. The arrangements can be customized by overriding this function as explained.
 
-**GetLayoutInfo** - Set chart orientations, chart types, and offset to be left between parent and child nodes by overriding the method, `diagram.layout.getLayoutInfo`. The [`getLayoutInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) method is called to configure every subtree of the organizational chart. It takes the following arguments.
+**GetLayoutInfo** - Set chart orientations, chart types, and offset to be left between parent and child nodes by overriding the method, `diagram.layout.getLayoutInfo`. The [`getLayoutInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) method is called to configure every subtree of the organizational chart. It takes the following arguments.
 
 * **node** - Parent node to that options are to be customized.
 * **options** - Object to set the customizable properties.
@@ -173,13 +173,13 @@ The following code example illustrates how to add assistants to layout.
 
 The symmetric layout has been formed using nodes position by closer together or pushing them further apart. This is repeated iteratively until the system comes to an equilibrium state.
 
-The layout’s [`springLength`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) defined as how long edges should be, ideally. This will be the resting length for the springs. Edge attraction and vertex repulsion forces to be defined by using layout’s [`springFactor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout), the more sibling nodes repel each other. The relative positions do not change any more from one iteration to the next. The number of iterations can be specified by using layout’s [`maxIteration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout).
+The layout’s [`springLength`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) defined as how long edges should be, ideally. This will be the resting length for the springs. Edge attraction and vertex repulsion forces to be defined by using layout’s [`springFactor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/), the more sibling nodes repel each other. The relative positions do not change any more from one iteration to the next. The number of iterations can be specified by using layout’s [`maxIteration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/).
 
 >Note: If you want to use symmetric layout in diagram, you need to inject SymmetricLayout in the diagram.
 
 ## Mind Map layout
 
-A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) of layout should be set as `MindMap`.
+A mind map is a diagram that displays the nodes as a spider diagram organizes information around a central concept. To create mind map, the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) of layout should be set as `MindMap`.
 
 To create a Mindmap Layout using Angular Diagram, refer to the below video link,
 
@@ -187,7 +187,7 @@ To create a Mindmap Layout using Angular Diagram, refer to the below video link,
 
 ## Tree Orientation in layout
 
-An [`Orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) of a `MindMapTreeLayout` is used to arrange the tree layout according to a specific direction. By default, the orientation is set to Horizontal. The following table outlines the various orientation types available:
+An [`Orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) of a `MindMapTreeLayout` is used to arrange the tree layout according to a specific direction. By default, the orientation is set to Horizontal. The following table outlines the various orientation types available:
 
 <table>
 <tr>
@@ -224,7 +224,7 @@ The following code example illustrates how to create an mindmap layout
 
 ## Complex hierarchical tree
 
-Complex hierarchical tree layout is the extended version of the hierarchical tree layout. The child had been two or more parents. To create a complex hierarchical tree, the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) of layout should be set as `ComplexHierarchicalTree`.
+Complex hierarchical tree layout is the extended version of the hierarchical tree layout. The child had been two or more parents. To create a complex hierarchical tree, the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) of layout should be set as `ComplexHierarchicalTree`.
 
 The following code example illustrates how to create a complex hierarchical tree.
 
@@ -317,15 +317,15 @@ export class AppComponent {
 
 Orientation, spacings, and position of the layout can be customized with a set of properties.
 
-To explore layout properties, refer to [`Layout Properties`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout).
+To explore layout properties, refer to [`Layout Properties`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/).
 
 ### Layout bounds
 
-Diagram provides support to align the layout within any custom rectangular area. For more information about bounds, refer to [`bounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout).
+Diagram provides support to align the layout within any custom rectangular area. For more information about bounds, refer to [`bounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/).
 
 ### Layout alignment
 
-The layout can be aligned anywhere over the layout bounds/viewport using the [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) properties of the layout.
+The layout can be aligned anywhere over the layout bounds/viewport using the [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) properties of the layout.
 
 The following code illustrates how to align the layout at the top-left of the layout bounds.
 
@@ -345,11 +345,11 @@ The following code illustrates how to align the layout at the top-left of the la
 
 ### Layout spacing
 
-Layout provides support to add space horizontally and vertically between the nodes. The [`horizontalSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) and [`verticalSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) properties of the layout allows you to set the space between the nodes in horizontally and vertically.
+Layout provides support to add space horizontally and vertically between the nodes. The [`horizontalSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) and [`verticalSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) properties of the layout allows you to set the space between the nodes in horizontally and vertically.
 
 ### Layout margin
 
-Layout provides support to add some blank space between the layout bounds/viewport and the layout. The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) property of the layout allows you to set the blank space.
+Layout provides support to add some blank space between the layout bounds/viewport and the layout. The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) property of the layout allows you to set the blank space.
 
 The following code illustrates how to set the layout margin.
 
@@ -378,7 +378,7 @@ The layout orientation can used to arrange the layout based on the direction. th
 |BottomToTop|Aligns the layout from bottom to top. All the roots are placed at bottom of the diagram.|
 |RightToLeft|Aligns the layout from right to left. All the roots are placed at right of the diagram.|
 
-Diagram provides support to customize the  [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) of layout. You can set the desired orientation using layout.orientation.
+Diagram provides support to customize the  [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) of layout. You can set the desired orientation using layout.orientation.
 
 >Note: In the diagram the default orientation is TopToBottom.
 
@@ -400,7 +400,7 @@ The following code illustrates how to arrange the nodes in a BottomToTop orienta
 
 ### Fixed node
 
-Layout provides support to arrange the nodes with reference to the position of a fixed node and set it to the [`fixedNode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) of the layout property. This is helpful when you try to expand/collapse a node. It might be expected that the position of the double-clicked node should not be changed.
+Layout provides support to arrange the nodes with reference to the position of a fixed node and set it to the [`fixedNode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/) of the layout property. This is helpful when you try to expand/collapse a node. It might be expected that the position of the double-clicked node should not be changed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Line Chart in Angular Chart component | Syncfusion
-description: Learn here all about Line Chart in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Getting started with Angular Line Chart | Syncfusion
+description: Learn here all about Line Chart in Syncfusion Essential Angular Chart component, its elements and more.
 platform: ej2-angular
 control: Line Chart
 documentation: ug
@@ -71,5 +71,5 @@ The following properties can be used to customize the `line` series.
 
 ## See Also
 
-* [Data label](../data-labels/)
-* [Tooltip](../tool-tip/)
+* [Data label](../data-labels)
+* [Tooltip](../tool-tip)

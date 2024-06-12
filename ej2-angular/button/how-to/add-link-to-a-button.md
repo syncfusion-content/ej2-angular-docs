@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add link to a button in Angular Button component | Syncfusion
-description: Learn here all about Add link to a button in Syncfusion Angular Button component of Syncfusion Essential JS 2 and more.
+title: Add link to a button in Angular Button Component | Syncfusion
+description: Learn here all about add link to a button in Syncfusion Essential Angular Button component its elements and more.
 platform: ej2-angular
 control: Add link to a button 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add link to a button in Angular Button component
+# Add link to a button in Angular Button Component
 
 Link can be added to the Button by adding `e-link` using `cssClass` property and `<a>` tag with `href` attribute should be added inside the button element.
 
