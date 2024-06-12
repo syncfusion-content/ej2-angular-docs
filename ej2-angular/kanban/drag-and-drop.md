@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drag and drop in Angular Kanban component | Syncfusion
-description: Learn here all about Drag and drop in Syncfusion Angular Kanban component of Syncfusion Essential JS 2 and more.
+title: Drag and drop in Angular Kanban Component | Syncfusion
+description: Learn here all about drag and drop support in Syncfusion Essential Angular Kanban component, it's elements and more.
 platform: ej2-angular
 control: Drag and drop 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drag and drop in Angular Kanban component
+# Drag and drop in Angular Kanban Component
 
 All cards can be dragged and dropped across the columns or within the columns or swimlane row or kanban to an external source and vice versa.
 

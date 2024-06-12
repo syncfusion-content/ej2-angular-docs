@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Document editor component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Document editor component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Document Editor Component | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential Angular Document Editor component, it's elements and more.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Document editor component
+# Getting Started with Angular Document Editor Component
 
 This section explains the steps to create a Word document editor within your application and demonstrates the basic usage of the Document Editor component.
 
@@ -98,7 +98,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Configuring system JS
 
-[Syncfusion DocumentEditor packages](./getting-started#dependencies/) need to be mapped in systemjs.config.js configuration file.
+[Syncfusion DocumentEditor packages](./getting-started#dependencies) need to be mapped in systemjs.config.js configuration file.
 
 Syncfusion `ej2-angular-documenteditor` packages have to be mapped in the systemjs.config.js configuration file.
 

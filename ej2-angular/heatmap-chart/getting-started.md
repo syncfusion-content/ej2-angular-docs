@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Heatmap chart component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Heatmap chart component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular HeatMap Chart component | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential Angular HeatMap Chart component, it's elements and more.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Heatmap chart component
+# Getting Started with Angular HeatMap Chart Component
 
 This section explains  the steps required to create a heat map and demonstrates the basic usage of the heat map control.
 
@@ -283,4 +283,4 @@ The tooltip is used when you cannot display information by using the data labels
   
 {% previewsample "page.domainurl/samples/heatmap/getting-started/tooltip-cs1" %}
 
-> You can refer to our [Angular Heatmap Chart]( https://www.syncfusion.com/angular-ui-components/angular-heatmap-chart)  feature tour page for its groundbreaking feature representations. You can also explore our [Angular Heatmap Chart example](https://ej2.syncfusion.com/angular/demos/#/material/heatmap-chart/default) that shows how to render the Heatmap Chart in Angular.
+N> You can refer to our [Angular HeatMap Chart]( https://www.syncfusion.com/angular-components/angular-heatmap-chart) feature tour page for its groundbreaking feature representations. You can also explore our [Angular HeatMap Chart example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/heatmap-chart/default) that shows you how to render the HeatMap Chart in Angular.
