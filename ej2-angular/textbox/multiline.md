@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multiline in Angular Textbox component | Syncfusion
-description: Learn here all about Multiline in Syncfusion Angular Textbox component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Multiline in Angular Textbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Multiline 
 documentation: ug

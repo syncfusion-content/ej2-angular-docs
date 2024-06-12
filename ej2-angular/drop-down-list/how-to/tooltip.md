@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in Angular Drop down list component | Syncfusion
-description: Learn here all about Tooltip in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Tooltip in Syncfusion Essential JS 2 Angular Drop down list component and more.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug

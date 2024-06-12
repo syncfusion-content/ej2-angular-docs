@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style in Angular Dialog component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Style in Angular Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Style 
 documentation: ug

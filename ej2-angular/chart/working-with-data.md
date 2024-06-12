@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with data in Angular Chart component | Syncfusion
-description: Learn here all about Working with data in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Working with data in Angular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Working with data 
 documentation: ug

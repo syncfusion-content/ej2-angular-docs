@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add textbox programmatically in Angular Textbox component | Syncfusion
-description: Learn here all about Add textbox programmatically in Syncfusion Angular Textbox component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to add textbox programmatically in Syncfusion Angular Textbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Add textbox programmatically 
 documentation: ug

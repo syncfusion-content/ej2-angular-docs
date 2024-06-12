@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Observables in Angular Grid component | Syncfusion
-description: Learn here all about Observables in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Observables in Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Observables 
 documentation: ug

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Read all the values from dialog on button click in Angular Dialog component | Syncfusion
-description: Learn here all about Read all the values from dialog on button click in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: Read all the values from dialog Angular Dialog component | Syncfusion
+description: Learn here all about Read all the values from dialog on button click in Angular Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Read all the values from dialog on button click 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Read all the values from dialog on button click in Angular Dialog component
+# Read values from dialog on button click in Angular Dialog component
 
 You can read the dialog element values by binding the action handler to the footer buttons. The buttons property provides the options to bind events to the action buttons.
-For detailed information about buttons , refer to the [footer](../template/#footer) section.
+For detailed information about buttons , refer to the [footer](https://ej2.syncfusion.com/angular/documentation/dialog/template#footer) section.
 In the below sample, value of input elements within the dialog has been checked in the footer button click event and send the values as the content of confirmation dialog.
 
 {% tabs %}
