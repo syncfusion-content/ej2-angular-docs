@@ -1,14 +1,14 @@
 ---
 layout: post
-title: File source in Angular Uploader component | Syncfusion
-description: Learn here all about File source in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: File source in Angular Uploader Component | Syncfusion
+description: Learn here all about file source support in Syncfusion Essential Angular Uploader component, it's elements and more.
 platform: ej2-angular
 control: File source 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# File source in Angular Uploader component
+# File source in Angular Uploader Component
 
 ## Paste to upload
 
@@ -159,7 +159,7 @@ The class **e-upload-drag-hover** is available to handle this customization.
   
 {% previewsample "page.domainurl/samples/uploader/cus_draganddrop-cs1" %}
 
-> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
+> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/uploader/default) to understand how to browse the files which you want to upload to the server.
 
 ## See Also
 

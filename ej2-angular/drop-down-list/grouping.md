@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Grouping in Angular Drop down list component | Syncfusion
-description: Learn here all about Grouping in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: Grouping in Angular Dropdown List Component | Syncfusion
+description: Learn here all about grouping support in Syncfusion Essential Angular Drop down list component, it's elements and more.
 platform: ej2-angular
 control: Grouping 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping in Angular Drop down list component
+# Grouping in Angular Dropdown List Component
 
 The DropDownList supports wrapping nested elements into a group based on different categories. The category of each list item can be mapped through the [groupBy](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#fields) field in the data table. The group header is displayed both as inline and fixed headers. The fixed group header content is updated dynamically on scrolling the popup list with its category value.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Close popup in Angular Drop down list component | Syncfusion
-description: Learn here all about Close popup in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: Close popup in Angular Dropdown List Component | Syncfusion
+description: Learn here all about close popup support in Syncfusion Essential Angular Drop down list component, it's elements and more.
 platform: ej2-angular
 control: Close popup 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Close popup in Angular Drop down list component
+# Close popup in Angular Dropdown List Component
 
 By using the `hidePopup` method in DropDownList, you can close the popup on scroll when triggered the windows scroll event.
 
