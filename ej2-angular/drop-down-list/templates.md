@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Templates in Angular Drop down list component | Syncfusion
-description: Learn here all about Templates in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: Templates in Angular Dropdown List Component | Syncfusion
+description: Learn here all about templates in Syncfusion Essential Angular Dropdown List component, it's elements and more.
 platform: ej2-angular
 control: Templates 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Angular Drop down list component
+# Templates in Angular Dropdown List Component
 
 The DropDownList has been provided with several options to customize each list items, group title, selected value, header, and footer elements.
 
@@ -177,7 +177,7 @@ In the following sample, when the data fetch request fails, the DropDownList dis
 
 ## See Also
 
-* [How to achieve filtering](./filtering/)
-* [How to group the data using header](./grouping/)
-* [How to show the list items with icon](./how-to/icons-support/)
-* [How to render tooltip for the options](./how-to/tooltip/)
+* [How to achieve filtering](./filtering)
+* [How to group the data using header](./grouping)
+* [How to show the list items with icon](./how-to/icons-support)
+* [How to render tooltip for the options](./how-to/tooltip)

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timescale in Angular Schedule component | Syncfusion
-description: Learn here all about Timescale in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Timescale in Angular Schedule Component | Syncfusion
+description: Learn here all about timescale support in Syncfusion Essential Angular Schedule component, it's elements and more.
 platform: ej2-angular
 control: Timescale 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timescale in Angular Schedule component
+# Timescale in Angular Schedule Component
 
 The time slots are usually the time cells that are displayed on the Day, Week and Work Week views of both the vertical views (to the left most position) and timeline views (at the top position). The `timeScale` property allows you to control and set the required time slot duration for the work cells displayed on Scheduler. It includes the following sub-options such as,
 
@@ -36,7 +36,7 @@ The `interval` and `slotCount` properties can be used together on the Scheduler 
   
 {% previewsample "page.domainurl/samples/schedule/default-cs63" %}
 
-![Time Slot Duration](images/schedule-timeslot.png)
+![Time slot duration in React Schedule](images/react-schedule-timeslot.png)
 
 ## Customizing time cells using template
 
@@ -62,7 +62,7 @@ The `timeScale` property also provides template option to allow customization of
   
 {% previewsample "page.domainurl/samples/schedule/timescale-cs1" %}
 
-![Customizing Time Cells](images/schedule-custom-timecell.png)
+![Customizing time cells in React Schedule](images/react-schedule-custom-timecell.png)
 
 ## Hide the timescale
 
@@ -82,7 +82,7 @@ The grid lines which indicates the exact time duration can be enabled or disable
   
 {% previewsample "page.domainurl/samples/schedule/default-cs64" %}
 
-![Hide Time Scale](images/schedule-hide-timecell.png)
+![Hide time scale in React Schedule](images/react-schedule-hide-timecell.png)
 
 ## Highlighting current date and time
 
@@ -102,6 +102,6 @@ By default, Scheduler indicates current date with a highlighted date header on a
   
 {% previewsample "page.domainurl/samples/schedule/default-cs65" %}
 
-![Highlight current Time](images/schedule-highlight.png)
+![Highlight current time in React Schedule](images/react-schedule-highlight.png)
 
 > You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.

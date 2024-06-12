@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Table format in Angular Document editor component | Syncfusion
-description: Learn here all about Table format in Syncfusion Angular Document editor component of Syncfusion Essential JS 2 and more.
+title: Table format in Angular Document Editor Component | Syncfusion
+description: Learn here all about table format in Syncfusion Essential Angular Document editor component, it's elements and more.
 platform: ej2-angular
 control: Table format 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Table format in Angular Document editor component
+# Table format in Angular Document Editor Component
 
 Document Editor customizes the formatting of table, or table cells such as table width, cell margins, cell spacing, background color, and table alignment. This section describes how to customize these formatting for selected cells, rows, or table in detail.
 

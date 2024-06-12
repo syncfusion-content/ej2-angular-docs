@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Combo box component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Combo box component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular ComboBox Component | Syncfusion
+description: Learn here all about getting started with Syncfusion Essential Angular ComboBox component, it's elements and more.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Combo box component
+# Getting started with Angular ComboBox Component
 
 This section explains how to create a simple **ComboBox** component and configure its available functionalities in Angular.
 
@@ -252,8 +252,8 @@ In ComboBox, the `value` property supports two-way binding functionality. The fo
   
 {% previewsample "page.domainurl/samples/combobox/getting-started-cs14" %}
 
-> You can refer to our [Angular ComboBox]( https://www.syncfusion.com/angular-ui-components/angular-combobox) feature tour page for its groundbreaking feature representations. You can also explore our [Angular ComboBox example](https://ej2.syncfusion.com/angular/demos/#/material/combo-box/default) that shows how to render the ComboBox in Angular.
+> You can refer to our [Angular ComboBox]( https://www.syncfusion.com/angular-components/angular-combobox) feature tour page for its groundbreaking feature representations. You can also explore our [Angular ComboBox example](https://ej2.syncfusion.com/angular/demos/#/material/combo-box/default) that shows how to render the ComboBox in Angular.
 
 ## See Also
 
-* [How to bind the data](./data-binding/)
+* [How to bind the data](./data-binding)

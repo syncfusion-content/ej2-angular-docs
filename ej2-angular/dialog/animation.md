@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Animation in Angular Dialog component | Syncfusion
-description: Learn here all about Animation in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: Animation in Angular Dialog Component | Syncfusion
+description: Learn here all about animation in Syncfusion Essential Angular Dialog component, it's elements and more.
 platform: ej2-angular
 control: Animation 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Animation in Angular Dialog component
+# Animation in Angular Dialog Component
 
 The Dialog can be animated during the open and close actions. Also, user can customize animation's [`delay`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationSettings/#delay), [`duration`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationSettings/#duration) and [`effect`](https://ej2.syncfusion.com/angular/documentation/api/dialog/animationSettings/#effect).
 
