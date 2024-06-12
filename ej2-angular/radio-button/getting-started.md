@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Radio button component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Radio button component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular Radio Button Component | Syncfusion
+description:  Checkout and learn about getting started with Syncfusion Essential Angular Radio Button component, its elements and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Radio button component
+# Getting started with Angular Radio Button Component
 
 This section explains how to create a simple RadioButton, and demonstrate the basic usage of the RadioButton module in an Angular environment.
 
@@ -152,7 +152,7 @@ The Essential JS 2 RadioButton contains 2 different states visually, they are as
 * Checked
 * Unchecked
 
-The RadioButton [`checked`](https://ej2.syncfusion.com/angular/documentation/api/radio-button#checked) property is used to handle the checked and unchecked state.
+The RadioButton [`checked`](https://ej2.syncfusion.com/angular/documentation/api/radio-button/#checked) property is used to handle the checked and unchecked state.
 In the checked state an inner circle will be added to the visualization of RadioButton.
 
 {% tabs %}

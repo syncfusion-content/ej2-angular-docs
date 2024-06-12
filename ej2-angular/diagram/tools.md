@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tools in Angular Diagram component | Syncfusion
-description: Learn here all about Tools in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+description: Learn here all about tools in Syncfusion Essential Angular Diagram component of  JS 2 and more.
 platform: ej2-angular
 control: Tools 
 documentation: ug
@@ -16,7 +16,7 @@ Angular Drawing tool allows you to draw any kind of node/connector during runtim
 
 ## Shapes
 
-To draw a shape, set the JSON of that shape to the drawType property of the diagram and activate the drawing tool by using the [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram) property. The following code example illustrates how to draw a rectangle at runtime.
+To draw a shape, set the JSON of that shape to the drawType property of the diagram and activate the drawing tool by using the [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram/) property. The following code example illustrates how to draw a rectangle at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -50,7 +50,7 @@ The following code example illustrates how to draw a path.
 
 ## Connectors
 
-To draw connectors, set the JSON of the connector to the drawType property. The drawing [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram) can be activated by using the tool property. The following code example illustrates how to draw a straight line connector.
+To draw connectors, set the JSON of the connector to the drawType property. The drawing [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram/) can be activated by using the tool property. The following code example illustrates how to draw a straight line connector.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -146,7 +146,7 @@ When more than one of those tools are applied, a tool is activated based on the 
 |5th|SingleSelect|Allows you to select individual nodes or connectors.|
 |6th|None|Disables all tools.|
 
-Set the desired [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram) to the tool property of the diagram model. The following code illustrates how to enable single/multiple tools.
+Set the desired [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram/) to the tool property of the diagram model. The following code illustrates how to enable single/multiple tools.
 
 ```typescript
 // Enabling Single tool

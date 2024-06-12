@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Customized checkbox in Angular Check box component | Syncfusion
-description: Learn here all about Customized checkbox in Syncfusion Angular Check box component of Syncfusion Essential JS 2 and more.
+title: Customized checkbox in Angular Checkbox component | Syncfusion
+description: Learn here all about customized checkbox in Syncfusion Essential Angular Checkbox component, its elements and more.
 platform: ej2-angular
 control: Customized checkbox 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customized checkbox in Angular Check box component
+# Customized checkbox in Angular Checkbox Component
 
 ## Customize CheckBox Appearance
 
-You can customize the appearance of the CheckBox module using the CSS rules. Define own CSS rules according to your requirement and assign the class name to the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/check-box#cssclass) property.
+You can customize the appearance of the CheckBox module using the CSS rules. Define own CSS rules according to your requirement and assign the class name to the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/check-box/#cssclass) property.
 
 The background and border color of the CheckBox is customized through the custom classes to create primary, success, warning, danger, and info type of checkbox.
 
