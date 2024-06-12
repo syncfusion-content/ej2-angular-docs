@@ -16,7 +16,7 @@ Annotations are used to mark the specific area of interest in the Linear Gauge w
 
 ## Adding annotation
 
-To render the custom HTML elements in the Linear Gauge component, use the [`content`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#content) property in the [`e-annotation`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation). The annotation can be rendered either by specifying the id of the element or specifying the code to create a new element that needs to be displayed in the gauge area.
+To render the custom HTML elements in the Linear Gauge component, use the [`content`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#content) property in the [`e-annotation`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/). The annotation can be rendered either by specifying the id of the element or specifying the code to create a new element that needs to be displayed in the gauge area.
 
 <!-- markdownlint-disable MD036 -->
 
@@ -62,7 +62,7 @@ The following properties are used to customize the annotation.
 
 ### Changing the z-index
 
-To change the stack order of an annotation element, the [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#zindex) property of the [`e-annotation`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation) can be used.
+To change the stack order of an annotation element, the [`zIndex`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#zindex) property of the [`e-annotation`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/) can be used.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,7 +82,7 @@ To change the stack order of an annotation element, the [`zIndex`](https://ej2.
 
 ### Positioning an annotation
 
-The annotation can be placed anywhere in the Linear Gauge by setting the pixel value to the [`x`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#y) properties in the [`e-annotation`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation).
+The annotation can be placed anywhere in the Linear Gauge by setting the pixel value to the [`x`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#y) properties in the [`e-annotation`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -102,7 +102,7 @@ The annotation can be placed anywhere in the Linear Gauge by setting the pixel v
 
 ### Alignment of annotation
 
-The annotation can be aligned horizontally and vertically by using the [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#horizontalalignment) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#verticalalignment) properties respectively. The possible values can be **Center**, **Far**, **Near**, and **None**. The [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#horizontalalignment) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#verticalalignment) properties are not applicable when the [`x`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#y) properties are set in the [`e-annotation`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation).
+The annotation can be aligned horizontally and vertically by using the [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#horizontalalignment) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#verticalalignment) properties respectively. The possible values can be **Center**, **Far**, **Near**, and **None**. The [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#horizontalalignment) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#verticalalignment) properties are not applicable when the [`x`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/#y) properties are set in the [`e-annotation`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -120,7 +120,7 @@ The annotation can be aligned horizontally and vertically by using the [`horizon
 
 ## Multiple annotations
 
-Multiple annotations can be added to the Linear Gauge component by adding the multiple [`e-annotation`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation) in the [`e-annotations`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/#annotations) and customization for the annotation can be done with the [`e-annotation`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation).
+Multiple annotations can be added to the Linear Gauge component by adding the multiple [`e-annotation`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/) in the [`e-annotations`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/#annotations) and customization for the annotation can be done with the [`e-annotation`](https://ej2.syncfusion.com/angular/documentation/api/linear-gauge/annotation/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
