@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Config in Angular Toast component | Syncfusion
-description: Learn here all about Config in Syncfusion Angular Toast component of Syncfusion Essential JS 2 and more.
+title: Config in Angular Toast Component | Syncfusion
+description: Learn here all about Config in Syncfusion Essential Angular Toast component, it's elements and more.
 platform: ej2-angular
 control: Config 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Config in Angular Toast component
+# Config in Angular Toast Component
 
 This section explains on customizing the Toast appearance using built-in APIs.
 

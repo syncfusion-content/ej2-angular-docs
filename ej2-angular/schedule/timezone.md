@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timezone in Angular Schedule component | Syncfusion
-description: Learn here all about Timezone in Syncfusion Angular Schedule component of Syncfusion Essential JS 2 and more.
+title: Timezone in Angular Schedule Component | Syncfusion
+description: Learn here all about Timezone in Syncfusion Essential Angular Schedule component, it's elements and more.
 platform: ej2-angular
 control: Timezone 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Timezone in Angular Schedule component
+# Timezone in Angular Schedule Component
 
 The Scheduler makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the `timezone` property needs to be used. Apart from the default action of applying specific timezone to the Scheduler, it is also possible to set different time zone values for each appointments through the properties `startTimezone` and `endTimezone` which can be defined as separate fields within the event fields collection.
 
@@ -209,4 +209,4 @@ Returns `Date`
     console.log(convertedDate); //2018-12-05T15:25:11.000Z
 ```
 
-> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) to knows how to present and manipulate data.
+> You can refer to our [Angular Scheduler](https://www.syncfusion.com/angular-components/angular-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/schedule/overview) to knows how to present and manipulate data.

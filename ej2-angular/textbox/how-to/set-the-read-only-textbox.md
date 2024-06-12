@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set the read only textbox in Angular Textbox component | Syncfusion
-description: Learn here all about Set the read only textbox in Syncfusion Angular Textbox component of Syncfusion Essential JS 2 and more.
+title: Set the read only textbox in Angular TextBox Component | Syncfusion
+description: Learn here all about Set the read only textbox in Syncfusion Essential Angular Textbox component, it's elements and more.
 platform: ej2-angular
 control: Set the read only textbox 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set the read only textbox in Angular Textbox component
+# Set the read only textbox in Angular TextBox Component
 
 You can make the TextBox as `read-only` by setting the `readonly` attribute to the input element.
 
