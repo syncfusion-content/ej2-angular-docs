@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Angular Multi select component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Multi select component of Syncfusion Essential JS 2 and more.
+title: Data binding in Angular MultiSelect Component | Syncfusion
+description: Learn here all about data binding in Syncfusion Essential Angular Multi select component, it's element and more.
 platform: ej2-angular
 control: Data binding 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data binding in Angular Multi select component
+# Data binding in Angular MultiSelect component
 
 The MultiSelect loads the data either from local data sources or remote data services using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#datasource) property. It supports the data type of `array` or `DataManager`.
 
