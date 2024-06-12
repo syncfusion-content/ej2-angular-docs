@@ -24,8 +24,8 @@ standalone: true,
     <div align='center'>
     <ejs-maps id='container' #drilldown (shapeSelected)="shapeSelected($event)" style="display:block;">
     <e-layers>
-    <e-layer [shapeData]='worldmap' layerType='Geometry' shapePropertyPath='continent' shapeDataPath='continent' [dataSource]='dataSource' [shapeSettings]='shapeSettings' [markerSettings]='markerSettings'></e-layer>
-    <e-layer layerType='Geometry' [shapeData]='africa' [shapeSettings]='africa_shapeSettings' [highlightSettings]='highlightSettings'></e-layer>
+    <e-layer [shapeData]='worldmap' shapePropertyPath='continent' shapeDataPath='continent' [dataSource]='dataSource' [shapeSettings]='shapeSettings' [markerSettings]='markerSettings'></e-layer>
+    <e-layer [shapeData]='africa' [shapeSettings]='africa_shapeSettings' [highlightSettings]='highlightSettings'></e-layer>
     </e-layers>
     </ejs-maps>
     </div>

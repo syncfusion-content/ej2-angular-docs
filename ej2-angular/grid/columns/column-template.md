@@ -275,6 +275,31 @@ In the following code, we rendered the Chips component in the Grid **First Name*
   
 {% previewsample "page.domainurl/samples/grid/template-cs7" %}
 
+### Render ProgressBar component in a column
+
+The Syncfusion Grid component supports rendering the [Progress Bar](https://ej2.syncfusion.com/angular/documentation/progressbar/getting-started) component within a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property. Displaying the `Progress Bar` component in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
+
+In the following code, the `Progress Bar` component render in the Grid **Freight** column by defining the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property.
+
+```
+<div>
+    <ejs-progressbar id='data.OrderID' type='Linear' height='60' 
+    [value]='data.Freight' trackThickness=24 progressThickness='20'>
+    </ejs-progressbar>
+</div>
+```
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/template-cs9/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/template-cs9/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/template-cs9" %}
+
 ## Using condition template
 
 The conditional column [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) allows you to display template elements based on specific conditions.
@@ -430,3 +455,22 @@ export class AppComponent implements OnInit {
 {% previewsample "page.domainurl/samples/grid/custom-helper-template" %}
 
 > Custom helpers can only be used inside the ng-template directive of a column.
+
+## Dynamically adding template column
+
+The Syncfusion Grid component allows you to dynamically add template columns at runtime. This capability is particularly useful when the structure of the grid needs to be modified based on individual interactions or other dynamic conditions.
+
+Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
+
+The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) is added in column [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template), and an icon is displayed using the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#headertemplate) for the **ShipCountry** column. 
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/template-cs10/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/template-cs10/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/template-cs10" %}
