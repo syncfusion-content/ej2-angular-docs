@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Hide control buttons in Angular Color picker component | Syncfusion
-description: Learn here all about Hide control buttons in Syncfusion Angular Color picker component of Syncfusion Essential JS 2 and more.
+title: Hide control buttons in Angular Color Picker Component | Syncfusion
+description: Learn here all about hide control buttons support in Syncfusion Essential Angular Color Picker component, it's elements and more.
 platform: ej2-angular
 control: Hide control buttons 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hide control buttons in Angular Color picker component
+# Hide control buttons in Angular Color Picker Component
 
-ColorPicker can be rendered without control buttons (Apply/Cancel). In this case, while selecting a color, the ColorPicker pop-up is closed and selected colors will be applied directly. To hide control buttons, set the [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/color-picker#showbuttons) property to `false`.
+ColorPicker can be rendered without control buttons (Apply/Cancel). In this case, while selecting a color, the ColorPicker pop-up is closed and selected colors will be applied directly. To hide control buttons, set the [`showButtons`](https://ej2.syncfusion.com/angular/documentation/api/color-picker/#showbuttons) property to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
