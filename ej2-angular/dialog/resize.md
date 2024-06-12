@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Resize in Angular Dialog component | Syncfusion
-description: Learn here all about Resize in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: Resize in Angular Dialog Component | Syncfusion
+description: Learn here all about resize in Syncfusion Essential Angular Dialog component, it's elements and more details.
 platform: ej2-angular
 control: Resize 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resize in Angular Dialog component
+# Resize in Angular Dialog Component
 
 The Dialog supports resizing feature. To resize the dialog, we have to select and resize it by using its handle (grip) or hovering on any of the edges or borders of the dialog within the sample container.
 
