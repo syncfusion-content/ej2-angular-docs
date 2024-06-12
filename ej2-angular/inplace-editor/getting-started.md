@@ -105,7 +105,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 Once you have successfully installed the package, the component modules are ready to configure in your application from the installed location. Syncfusion Angular package provides two different types of ngModules.
 
-Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module/) to learn about `ngModules`.
+Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module) to learn about `ngModules`.
 
 Refer the following snippet to import the `InPlaceEditorAllModule` in `app.module.ts` from the `@syncfusion/ej2-angular-inplace-editor`.
 
@@ -216,9 +216,9 @@ export class AppComponent {
 
 ## Configuring DropDownList
 
-You can render the Essential JS2 DropDownList by changing the [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) property as [`DropDownList`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list) and configure its properties and methods using the `model` property.
+You can render the Essential JS2 DropDownList by changing the [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) property as [`DropDownList`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/) and configure its properties and methods using the `model` property.
 
-In the following sample, [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) and model values are configured to render the [`DropDownList`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list) component.
+In the following sample, [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) and model values are configured to render the [`DropDownList`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/) component.
 
 ```javascript
 import { Component } from '@angular/core';
