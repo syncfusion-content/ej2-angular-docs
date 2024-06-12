@@ -55,4 +55,4 @@ Default [`expandMode`](https://ej2.syncfusion.com/angular/documentation/api/acco
 
 ## See Also
 
-* [How to keep single pane open always](./how-to/to-keep-single-pane-open-always/)
+* [How to keep single pane open always](./how-to/to-keep-single-pane-open-always)
