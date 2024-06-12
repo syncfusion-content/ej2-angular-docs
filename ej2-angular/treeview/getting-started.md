@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting started with Angular Treeview component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Treeview component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Treeview Component | Syncfusion
+description: Learn all about getting started with Syncfusion Essential Angular Treeview component, it's elements and more.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Treeview component
+# Getting started with Angular Treeview Component
 
-This section explains the steps required to create a simple [Angular TreeView](https://www.syncfusion.com/angular-ui-components/angular-treeview) component, and configure its available functionalities
+This section explains the steps required to create a simple [Angular TreeView](https://www.syncfusion.com/angular-components/angular-treeview) component, and configure its available functionalities
 
 ## Setup Angular Environment
 
@@ -180,17 +180,17 @@ The output will appear as follows.
 {% include code-snippet/tree-view/getting-started-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/tree-view/getting-started-cs8" %}
 
 > You can also explore our [Angular TreeView](https://ej2.syncfusion.com/angular/demos/#/material/treeview/default) example to knows how to present and manipulate data.
 
 ## See Also
 
-* [How to customize treeview as accordion](./how-to/accordion-tree/)
+* [How to customize treeview as accordion](./how-to/accordion-tree)
 
-* [How to set tooltip for treeview nodes](./how-to/set-tool-tip-for-tree-nodes/)
+* [How to set tooltip for treeview nodes](./how-to/set-tool-tip-for-tree-nodes)
 
-* [How to filter nodes in treeview](./how-to/filtering-tree-nodes/)
+* [How to filter nodes in treeview](./how-to/filtering-tree-nodes)
 
-* [How to get all the child nodes through parentID](./how-to/get-all-child-nodes/)
+* [How to get all the child nodes through parentID](./how-to/get-all-child-nodes)

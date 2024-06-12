@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set disabled state in Angular Switch component | Syncfusion
-description: Learn here all about Set disabled state in Syncfusion Angular Switch component of Syncfusion Essential JS 2 and more.
+title: Set disabled state in Angular Switch Component | Syncfusion
+description: Learn here all about set disabled state in Syncfusion Essential Angular Switch component, it's element and more.
 platform: ej2-angular
 control: Set disabled state 
 documentation: ug

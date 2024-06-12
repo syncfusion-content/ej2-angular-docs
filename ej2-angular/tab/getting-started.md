@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Tab component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Tab component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular Tab Component | Syncfusion
+description: Learn all about getting started with Syncfusion Essential Angular Tab component, it's elements and more.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Tab component
+# Getting started with Angular Tab Component
 
 This section briefly explains about how to create a simple Tab using Angular by configuring the Tab header content.
 
@@ -47,7 +47,7 @@ cd my-app
 
 ## Installing Syncfusion Tab Package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
@@ -209,7 +209,7 @@ The following example illustrates the output in your browser.
 {% include code-snippet/tab/basic-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/tab/basic-cs4" %}
 
 > In the above sample code, `#element` is the `id` of the HTML element in a page to which the Tab is initialized.
@@ -248,7 +248,7 @@ You need to follow the below structure of `ng-template` to render the Tab,
 {% include code-snippet/tab/basic-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/tab/basic-cs5" %}
 
 ## Initialize the Tab using HTML elements
@@ -283,11 +283,11 @@ You need to follow the below structure of HTML elements to render the Tab,
 {% include code-snippet/tab/tab-container-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/tab/tab-container-cs1" %}
 
-> You can refer to our [Angular Tab](https://www.syncfusion.com/angular-ui-components/angular-tabs) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Tab example](https://ej2.syncfusion.com/angular/demos/#/material/tab/default) that shows you how to render the Tabs in Angular.
+> You can refer to our [Angular Tab](https://www.syncfusion.com/angular-components/angular-tabs) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Tab example](https://ej2.syncfusion.com/angular/demos/#/material/tab/default) that shows you how to render the Tabs in Angular.
 
 ## See Also
 
-* [How to load tab with DataSource](./how-to/load-tab-with-data-source/)
+* [How to load tab with DataSource](./how-to/load-tab-with-data-source)
