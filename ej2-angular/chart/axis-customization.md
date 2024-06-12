@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Axis customization in Angular Chart component | Syncfusion
-description: Learn here all about Axis customization in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Axis Customization in Angular Chart Component | Syncfusion
+description: Learn here all about Axis Customization in Syncfusion Angular Chart Component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Axis customization 
+control: Axis Customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -34,7 +34,7 @@ An axis can be positioned in the chart area using `crossesAt` and `crossesInAxis
 
 ## Title
 
-You can add a title to the axis using [`title`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#title) property to provide quick information to the user about the data plotted in the axis.
+You can add a title to the axis using [`title`](https://helpej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#title) property to provide quick information to the user about the data plotted in the axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

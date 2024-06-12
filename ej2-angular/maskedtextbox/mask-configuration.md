@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mask configuration in Angular Maskedtextbox component | Syncfusion
-description: Learn here all about Mask configuration in Syncfusion Angular Maskedtextbox component of Syncfusion Essential JS 2 and more.
+title: Mask configuration in Angular Maskedtextbox Component | Syncfusion
+description: Learn here all about Mask configuration in Syncfusion Angular Maskedtextbox Component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Mask configuration 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Mask configuration in Angular Maskedtextbox component
+# Mask configuration in Angular Maskedtextbox Component
 
 The mask is a combination of standard and custom mask elements that validates the user input based on its behavior.
 
@@ -101,7 +101,7 @@ In the following example, regular expression has been set for each input places.
 ## Prompt character
 
 The Prompt character is a prompting symbol in the MaskedTextBox for the mask elements. The symbol is used to show the input positions in the MaskedTextBox.
-You can customize the prompt character of MaskedTextBox by using the [`promptChar`](https://ej2.syncfusion.com/angular/documentation/api/maskedtextbox#promptchar) property.
+You can customize the prompt character of MaskedTextBox by using the [`promptChar`](https://helpej2.syncfusion.com/angular/documentation/api/maskedtextbox/#promptchar) property.
 
 The following example demonstrates the MaskedTextBox with customized prompt character as `*`.
 

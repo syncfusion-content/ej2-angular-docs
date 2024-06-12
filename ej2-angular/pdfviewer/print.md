@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Print in Angular Pdfviewer component | Syncfusion
-description: Learn here all about Print in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Print in Angular Pdfviewer Component | Syncfusion
+description: Learn here all about Print in Syncfusion Angular Pdfviewer Component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Print 
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Print in Angular PDF Viewer component
+# Print in Angular PDF Viewer Component
 
 The PDF Viewer supports printing the loaded PDF file. You can enable/disable the print using the following code snippet.
 
