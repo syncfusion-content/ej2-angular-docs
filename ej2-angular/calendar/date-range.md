@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Date range in Angular Calendar component
 
-You can restrict the user to select the date from a specified range of dates by utilizing the [`min`](https://ej2.syncfusion.com/angular/documentation/api/calendar#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/calendar#max) properties.  Always the min date has to be lesser than the max date.
+You can restrict the user to select the date from a specified range of dates by utilizing the [`min`](https://ej2.syncfusion.com/angular/documentation/api/calendar/#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/calendar/#max) properties.  Always the min date has to be lesser than the max date.
 
 The below example allows you to select a date within a range from 7th to 27th days in a month.
 
