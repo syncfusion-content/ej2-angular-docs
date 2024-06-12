@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Update npm package in Angular Common control | Syncfusion
-description: Learn here all about Update npm package in Syncfusion Angular Common control of Syncfusion Essential JS 2 and more.
+description: Learn here all about update npm package support in Syncfusion Essential Angular controls, it's elements and more.
 platform: ej2-angular
 control: common
 documentation: ug
@@ -9,7 +9,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Update Syncfusion npm package
+# Update Syncfusion npm package in Angular
 
 The latest Syncfusion npm package can be updated with the help of [`npm-check-updates`](https://www.npmjs.com/package/npm-check-updates) package.
 

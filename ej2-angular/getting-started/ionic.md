@@ -36,7 +36,7 @@ ionic start syncfusion-angular-ionic blank --type=angular
 ```
 This command will create a new Ionic template application in a folder called "syncfusion-angular-ionic" and will also install the default npm packages needed for the application.
 
->Refer to this [getting started](https://ionicframework.com/getting-started/#cli) document to install ionic framework.
+>Refer to this [getting started](https://ionicframework.com/#cli) document to install ionic framework.
 
 ## Installing Syncfusion Grid package
 
