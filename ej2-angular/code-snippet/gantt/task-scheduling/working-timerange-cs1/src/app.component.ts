@@ -2,10 +2,6 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { DayMarkersService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
@@ -20,7 +16,7 @@ providers: [DayMarkersService],
 standalone: true,
     selector: 'app-root',
     template:
-       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" highlightWeekends='true' [timelineSettings]="timelineSettings" [dayWorkingTime]="dayWorkingTime" [splitterSettings]="splitterSettings"></ejs-gantt>`,
+       `<ejs-gantt id="ganttDefault" [dayWorkingTime]="dayWorkingTime" height="430px" [dataSource]="data" [taskFields]="taskSettings" highlightWeekends='true' [timelineSettings]="timelineSettings" [splitterSettings]="splitterSettings"></ejs-gantt>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent{

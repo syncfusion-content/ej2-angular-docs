@@ -23,9 +23,7 @@ By applying these classes, users can easily customize the appearance of the Text
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/style-appearance-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/style-appearance-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/style-appearance-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,9 +40,7 @@ By adding these classes, users can choose between a filled or outline appearance
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/style-appearance-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/style-appearance-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/style-appearance-cs2/src/main.ts %}
 {% endhighlight %}
@@ -64,9 +60,7 @@ By utilizing the `cssClass` API, users can apply custom CSS classes to the TextA
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/style-appearance-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/style-appearance-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/style-appearance-cs3/src/main.ts %}
 {% endhighlight %}
@@ -146,9 +140,7 @@ To display a static clear button in the TextArea component, you can add the `e-s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/style-appearance-cs4/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/style-appearance-cs4/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/style-appearance-cs4/src/main.ts %}
 {% endhighlight %}
@@ -164,9 +156,7 @@ You can customize the TextArea styles such as background-color, text-color and b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/style-appearance-cs5/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/style-appearance-cs5/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/style-appearance-cs5/src/main.ts %}
 {% endhighlight %}
@@ -200,9 +190,7 @@ You can change the floating label color of the TextArea for both `success` and `
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/style-appearance-cs6/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/style-appearance-cs6/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/style-appearance-cs6/src/main.ts %}
 {% endhighlight %}
@@ -228,9 +216,7 @@ To add a mandatory asterisk (*) to the placeholder in the TextArea component, yo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/style-appearance-cs7/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/style-appearance-cs7/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/style-appearance-cs7/src/main.ts %}
 {% endhighlight %}

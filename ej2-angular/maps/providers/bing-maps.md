@@ -100,9 +100,13 @@ Maps.Inject(Zoom);
 export class AppComponent implements OnInit {
   public zoomSettings: object;
   ngOnInit(): void {
-    this.zoomSettings = {
-      enable:true,
-      toolbars: ["Zoom", "ZoomIn", "ZoomOut", "Pan", "Reset"]
+      this.zoomSettings = {
+          enable:true,
+          toolbarSettings: {
+              buttonSettings: {
+                  toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset'],
+              }
+          }
     };
     public load = (args: ILoadEventArgs) : void => {
       args.maps.getBingUrlTemplate("https://dev.virtualearth.net/REST/V1/Imagery/Metadata/Aerial?output=json&uriScheme=https&key=?").then(function(url) {

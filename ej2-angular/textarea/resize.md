@@ -23,9 +23,7 @@ The TextArea allows users to input and edit large amounts of text. Resizing this
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/resize-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/resize-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/resize-cs1/src/main.ts %}
 {% endhighlight %}
@@ -41,9 +39,7 @@ You can easily customize the width of the TextArea using the [width](https://ej2
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/resize-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/resize-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/resize-cs2/src/main.ts %}
 {% endhighlight %}

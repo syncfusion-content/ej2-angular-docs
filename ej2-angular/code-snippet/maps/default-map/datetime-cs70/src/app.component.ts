@@ -41,9 +41,11 @@ export class AppComponent implements OnInit {
         ];
         this.zoomSettings = {
             enable: true,
-            horizontalAlignment:'Near',
-            shouldZoomInitially: true
-    }
+            shouldZoomInitially: true,
+            toolbarSettings: {
+                horizontalAlignment: 'Near'
+            }
+        }
    }
 }
 

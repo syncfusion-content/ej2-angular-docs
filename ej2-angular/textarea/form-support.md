@@ -18,9 +18,7 @@ This integration enhances the usability of forms, allowing users to provide deta
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/form-support-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/form-support-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/form-support-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,9 +36,7 @@ By integrating TextArea components with the `FormValidator` component, users can
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/form-support-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/form-support-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/form-support-cs2/src/main.ts %}
 {% endhighlight %}

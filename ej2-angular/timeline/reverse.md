@@ -16,9 +16,7 @@ You can display the Timeline items in reverse order, for different alignments by
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/reverse/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timeline/reverse/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/reverse/src/main.ts %}
 {% endhighlight %}

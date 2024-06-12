@@ -16,12 +16,6 @@ SEE LICENSE IN license
 @syncfusion/ej2-angular-buttons
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-calendars
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-charts
-SEE LICENSE IN license
-
 @syncfusion/ej2-angular-dropdowns
 SEE LICENSE IN license
 
@@ -41,9 +35,6 @@ SEE LICENSE IN license
 SEE LICENSE IN license
 
 @syncfusion/ej2-calendars
-SEE LICENSE IN license
-
-@syncfusion/ej2-charts
 SEE LICENSE IN license
 
 @syncfusion/ej2-compression
@@ -83,9 +74,6 @@ SEE LICENSE IN license
 SEE LICENSE IN license
 
 @syncfusion/ej2-splitbuttons
-SEE LICENSE IN license
-
-@syncfusion/ej2-svg-base
 SEE LICENSE IN license
 
 @syncfusion/ej2-treegrid

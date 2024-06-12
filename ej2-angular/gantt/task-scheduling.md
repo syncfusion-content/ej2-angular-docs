@@ -103,7 +103,7 @@ You can define the various types of unscheduled tasks in the data source as foll
 
 ## Working time range
 
-In the Gantt control, working hours in a day for a project can be defined by using the [`dayWorkingTime`](https://ej2.syncfusion.com/angular/documentation/api/gantt/dayWorkingTime/) property. Based on the working hours, automatic date scheduling and duration validations for a task are performed.
+In the Gantt control, working hours for all days of a project can be defined by using the [`dayWorkingTime`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#dayworkingtime) property. Based on the working hours, automatic date scheduling and duration validations for a task are performed.
 
 The following code snippet explains how to define the working time range for the project in Gantt.
 
@@ -122,6 +122,32 @@ The following code snippet explains how to define the working time range for the
 > NOTE
 >* Individual tasks can lie between any time within the defined working time range of the project.
 >* The [`dayWorkingTime`](https://ej2.syncfusion.com/angular/documentation/api/gantt/dayWorkingTime/) property is used to define the working time for the whole project.
+
+### Working time range for specific day in a week
+
+In the Gantt control, [weekWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/#weekworkingtime) property enables you to specify different working hours for each day of the week in your Gantt chart. By configuring this property, you can ensure that tasks are only scheduled during defined working periods, avoiding non-working hours for that respective day.
+
+The [timeRange](https://ej2.syncfusion.com/angular/documentation/api/gantt/weekworkingtime/#timerange) property of `weekWorkingTime` accepts multiple breakup in the working time as like [dayWorkingTime](https://ej2.syncfusion.com/angular/documentation/api/gantt/#dayworkingtime) property. This working time range will apply only to the working days defined in [dayOfWeek](https://ej2.syncfusion.com/angular/documentation/api/gantt/weekworkingtime/#dayofweek) property of `weekWorkingTime`.
+
+The following code snippet explains how to define the week working time range for the project in Gantt. In the below sample working time range for `Monday` and `Tuesday` is set from `10` to `18`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/task-scheduling/week-workingtime-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/task-scheduling/week-workingtime-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/task-scheduling/week-workingtime-cs1" %}
+
+> NOTE
+>* By default working time range for all days will be `8` to `12` and `13` to `17` hours.
+>* If both `dayWorkingTime` and `weekWorkingTime` are mapped, priority will be given to `weekWorkingTime` property.
+>* Default working time defined in `dayWorkingTime` property will be used for the days left out in the `weekWorkingTime` property.
+>* If a day is a holiday or non-working day and also initialized in `weekWorkingTime` property, it will only be considered as a non-working day.
 
 ## Weekend/non-working days
 

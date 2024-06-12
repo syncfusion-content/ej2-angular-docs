@@ -46,7 +46,8 @@ In this example, the `columns.showInColumnChooser` property is set to false for 
   
 {% previewsample "page.domainurl/samples/grid/columnchooser-cs2" %}
 
->The `columns.showInColumnChooser` property is applied to each <e-column> element individually. By setting it to false, you can hide specific columns from the column chooser dialog.
+> * The `columns.showInColumnChooser` property is applied to each <e-column> element individually. By setting it to false, you can hide specific columns from the column chooser dialog.
+> * To work with showing and hiding columns, it is necessary to have at least one column of the grid in a visible state
 
 ## Open column chooser by externally
 

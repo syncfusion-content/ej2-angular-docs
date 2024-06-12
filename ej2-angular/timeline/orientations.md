@@ -20,9 +20,7 @@ You can display the items one below the other vertically by setting the [orienta
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/orientations/vertical/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timeline/orientations/vertical/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/orientations/vertical/src/main.ts %}
 {% endhighlight %}
@@ -44,9 +42,7 @@ In horizontal orientation, the items are displayed in a side-by-side manner by s
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/orientations/horizontal/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timeline/orientations/horizontal/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/orientations/horizontal/src/main.ts %}
 {% endhighlight %}

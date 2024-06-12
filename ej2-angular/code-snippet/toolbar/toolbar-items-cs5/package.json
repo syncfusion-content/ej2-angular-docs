@@ -21,7 +21,6 @@
     "@syncfusion/ej2-navigations": "*",
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-angular-buttons": "*",
-    "@syncfusion/ej2-angular-data": "*",
     "@syncfusion/ej2-angular-grids": "*",
     "@syncfusion/ej2-angular-inputs": "*",
     "@syncfusion/ej2-angular-dropdowns": "*",

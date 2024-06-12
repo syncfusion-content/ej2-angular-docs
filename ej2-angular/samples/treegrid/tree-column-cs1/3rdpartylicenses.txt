@@ -55,9 +55,6 @@ SEE LICENSE IN license
 @syncfusion/ej2-grids
 SEE LICENSE IN license
 
-@syncfusion/ej2-icons
-SEE LICENSE IN license
-
 @syncfusion/ej2-inputs
 SEE LICENSE IN license
 

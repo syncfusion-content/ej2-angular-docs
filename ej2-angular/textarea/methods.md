@@ -22,9 +22,7 @@ By calling the `focusIn` method, you can programmatically set focus to the TextA
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/methods-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/methods-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/methods-cs1/src/main.ts %}
 {% endhighlight %}
@@ -41,9 +39,7 @@ This method is beneficial for scenarios where user need to programmatically remo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/methods-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/methods-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/methods-cs2/src/main.ts %}
 {% endhighlight %}
@@ -60,9 +56,7 @@ This method returns an object containing the properties to be persisted, which c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/methods-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/methods-cs3/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/methods-cs3/src/main.ts %}
 {% endhighlight %}

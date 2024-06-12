@@ -27,11 +27,15 @@ export class AppComponent implements OnInit {
     public zoomSettings?: object;
     public urlTemplate?: string;
     ngOnInit(): void {
-           this.urlTemplate = 'https://tile.openstreetmap.org/level/tileX/tileY.png';
-           this.zoomSettings = {
-              enable: true,
-              toolbars: ["Zoom", "ZoomIn", "ZoomOut", "Pan", "Reset"]
-           }
+        this.urlTemplate = 'https://tile.openstreetmap.org/level/tileX/tileY.png';
+        this.zoomSettings = {
+            enable: true,
+            toolbarSettings: {
+                buttonSettings: {
+                    toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset']
+                }
+            }
+        }
     }
 }
 

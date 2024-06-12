@@ -1,8 +1,19 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import {TextAreaModule} from '@syncfusion/ej2-angular-inputs'
+
 import { Component,ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import {TextAreaComponent} from '@syncfusion/ej2-angular-inputs';
 import { FormValidator, FormValidatorModel } from '@syncfusion/ej2-inputs';
 
 @Component({
+imports: [
+        
+        TextAreaModule
+    ],
+
+
+standalone: true,
     selector: 'app-root',   
     template: `<div class="wrap">
                 <div class='textarea'>

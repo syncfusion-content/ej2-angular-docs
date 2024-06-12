@@ -1,27 +1,16 @@
 import { NgModule,ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
-import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent  } from '@syncfusion/ej2-angular-treegrid';
+
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        NumericTextBoxModule
-    ],
-
-,
-standalone: true,
+    imports: [TreeGridModule ],
+    standalone: true,
     selector: 'app-container',
-    template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1'  childMapping='subtasks' (dataBound)='dataBound($event)'>
+    template: ` <ejs-treegrid #treegrid [dataSource]='data' height='260' width='100%' [treeColumnIndex]='1'  childMapping='subtasks' (dataBound)='dataBound()'>
                     <e-columns>
                         <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                         <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
@@ -32,15 +21,17 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
 
-    public data?: object[];
-    @ViewChild('treegrid')
-    public treegrid?: TreeGridComponent;
+    public data?: Object[];
 
     ngOnInit(): void {
         this.data = sampleData.slice(0, 1);
     }
-    dataBound(args: any): void {
-        this.treegrid?.grid.hideScroll();
+
+    @ViewChild('treegrid')
+    public treeGridObj?: TreeGridComponent;
+   
+    dataBound(): void {
+        (this.treeGridObj as TreeGridComponent).grid.hideScroll();
     }
 }
 

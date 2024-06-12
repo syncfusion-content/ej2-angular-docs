@@ -25,9 +25,6 @@ SEE LICENSE IN license
 @syncfusion/ej2-angular-inputs
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-popups
-SEE LICENSE IN license
-
 @syncfusion/ej2-angular-treegrid
 SEE LICENSE IN license
 

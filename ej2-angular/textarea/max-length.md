@@ -19,9 +19,7 @@ You can enforce a maximum length limit for the text input in the TextArea using 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/max-length-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/max-length-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/max-length-cs1/src/main.ts %}
 {% endhighlight %}

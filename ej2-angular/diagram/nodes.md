@@ -62,6 +62,24 @@ The following code illustrates how to add a node.
   
 {% previewsample "page.domainurl/samples/diagram/nodes/run-cs1" %}
 
+## Add collection of nodes at runtime
+
+* The collection of nodes can be dynamically added using 'addElements' method.Each time an element is added to the diagram canvas, the 'collectionChange' event will be triggered.
+
+The following code illustrates how to add a nodes at runtime.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/nodes/nodecollection-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/nodes/nodecollection-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/nodes/nodecollection-cs1" %}
+
 ## Add node from palette
 
 Nodes can be predefined and added to the palette, and can be dropped into the diagram when needed. For more information about adding nodes from symbol palette, refer to [`Symbol Palette`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette/#palettes).
