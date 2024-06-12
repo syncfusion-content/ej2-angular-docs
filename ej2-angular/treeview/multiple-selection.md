@@ -62,6 +62,6 @@ When a node is selected, the selected node’s ID is displayed in alert.
 
 ## See Also
 
-* [How to hover and select the multiple line tree nodes](./how-to/hover-multi-line-tree-node/)
+* [How to hover and select the multiple line tree nodes](./how-to/hover-multi-line-tree-node)
 
-* [How to select only one child at a time, out of one specific parent](./how-to/select-one-child/)
+* [How to select only one child at a time, out of one specific parent](./how-to/select-one-child)

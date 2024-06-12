@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## ARIA attributes
 
-Tab component is designed by considering [WAI-ARIA](https://www.w3.org/TR/wai-aria-practices/#Tabpanel)
+Tab component is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/#Tabpanel)
 standard.
 Tab is supported with ARIA Accessibility which is accessible by on-screen readers, and other assistive
 technology devices.
