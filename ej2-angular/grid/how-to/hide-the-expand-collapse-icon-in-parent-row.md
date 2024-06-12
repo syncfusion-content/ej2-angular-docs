@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Hide the expand collapse icon in parent row in Angular Grid component | Syncfusion
-description: Learn here all about Hide the expand collapse icon in parent row in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Hide the expand collapse icon in Angular Grid Component | Syncfusion
+description: Learn here all about hide the expand collapse icon in Syncfusion Angular Grid component, it's elements and more.
 platform: ej2-angular
 control: Hide the expand collapse icon in parent row 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hide the expand collapse icon in parent row in Angular Grid component
+# Hide the expand collapse icon in Angular Grid Component
 
 By default, the expand/collapse icon will be visible even if the child grid is empty.
 
@@ -57,5 +57,5 @@ In the below demo, the expand/collapse icon in the row with **EmployeeID** as **
 {% include code-snippet/grid/template-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/grid/template-cs4" %}

@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Database data in Angular Chart component | Syncfusion
-description: Learn here all about Database data in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Database data in Angular Chart Component | Syncfusion
+description: Learn here all about database data in Syncfusion Essential Angular Chart Component, it's elements and more.
 platform: ej2-angular
 control: Database data 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Database data in Angular Chart component
+# Database data in Angular Chart Component
 
 * Create the chart data table using database. You can find the database table below,
 
-![Chart data](./images/chart-data.png)
+![Database data in Angular Chart](./images/angular-chart-database-data.png)
 
 You can assign data from the data base to the chart. The **series.dataSource** property should be provided with the data from the server, it accepts **JavaScript array of objects**.
 
@@ -165,4 +165,4 @@ export class AppComponent implements OnInit {
 
  The below screenshot shows the chart, that can fetched the data from the server,
 
-![Formatted Chart data from database](./images/chart.png)
+![Formatted Chart data from database in Angular](./images/angular-chart-formatted-data-from-database.png)

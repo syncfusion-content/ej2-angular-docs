@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styling in Angular Rich text editor component | Syncfusion
-description: Learn here all about Styling in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Styling in Angular Rich Text Editor Component | Syncfusion
+description: Learn here all about styling support in Syncfusion Essential Angular Rich Text Editor component, it's elements and more.
 platform: ej2-angular
 control: Styling 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Styling in Angular Rich text editor component
+# Styling in Angular Rich Text Editor Component
 
 ## Font name and Font size
 
@@ -49,7 +49,7 @@ The following sample demonstrates the option to add the font name and font size 
 {% include code-snippet/rich-text-editor/getting-started-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs24" %}
 
 ## Custom fonts and size
@@ -68,7 +68,7 @@ If you want to add additional font names and font sizes to font drop-down, pass 
 {% include code-snippet/rich-text-editor/getting-started-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs25" %}
 
 ## Font and Background color
@@ -90,12 +90,12 @@ The `FontColor` and the `BackgroundColor` property has two mode of `Picker` and 
 {% include code-snippet/rich-text-editor/getting-started-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+ 
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs26" %}
 
 ## Editor content styles
 
-By default, The content styles of Rich Text Editor are not returned while retrieving HTML value from the editor. So, the styles are not applied when using the HTML value outside of the editor. To get the styles to Rich Text Editor’s content for your application, You can copy and use the below styles directly in your application. The styles listed below which used in the UI elements of the Rich Text Editor.  
+By default, The content styles of Rich Text Editor are not returned while retrieving HTML value from the editor. So, the styles are not applied when using the HTML value outside of the editor. To get the styles to Rich Text Editor’s content for your application, You can copy and use the below styles directly in your application. The styles listed below which used in the UI elements of the Rich Text Editor.
 
 > Make sure to add a CSS class ‘e-rte-content’ to the content container.
 

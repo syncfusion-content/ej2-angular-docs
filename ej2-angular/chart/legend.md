@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Legend in Angular Chart component | Syncfusion
-description: Learn here all about Legend in Syncfusion Angular Chart component of Syncfusion Essential JS 2 and more.
+title: Legend in Angular Chart Component | Syncfusion
+description: Learn here all about legend in Syncfusion Essential Angular Chart component, it's elements and more.
 platform: ej2-angular
 control: Legend 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend in Angular Chart component
+# Legend in Angular Chart Component
 
 Legend provides information about the series rendered in the chart.
 
@@ -31,7 +31,7 @@ By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/
 {% include code-snippet/chart/axis/category-cs38/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs38" %}
 
 Custom position helps you to position the legend anywhere in the chart using x, y coordinates.
@@ -47,7 +47,7 @@ Custom position helps you to position the legend anywhere in the chart using x, 
 {% include code-snippet/chart/axis/category-cs39/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs39" %}
 
 <!-- markdownlint-disable MD036 -->
@@ -69,7 +69,7 @@ You can reverse the order of the legend items by using the [`reverse`](https://e
 {% include code-snippet/chart/axis/category-cs40/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs40" %}
 
 **Legend Alignment**
@@ -89,7 +89,7 @@ You can align the legend as `center`, `far` or `near` to the chart using [`align
 {% include code-snippet/chart/axis/category-cs41/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs41" %}
 
 ## Customization
@@ -108,7 +108,7 @@ in the [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart/se
 {% include code-snippet/chart/axis/category-cs42/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs42" %}
 
 ### Legend Size
@@ -126,7 +126,7 @@ By default, legend takes 20% - 25% of the chart's height horizontally, when it i
 {% include code-snippet/chart/axis/category-cs43/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs43" %}
 
 ### Legend Item Size
@@ -144,7 +144,7 @@ You can customize the size of the legend items by using the [`shapeHeight`](http
 {% include code-snippet/chart/axis/category-cs44/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs44" %}
 
 ### Paging for Legend
@@ -162,7 +162,7 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
 {% include code-snippet/chart/axis/legend-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/legend-cs1" %}
 
 ### Legend Text Wrap
@@ -180,7 +180,7 @@ When the legend text exceeds the container, the text can be wrapped by using [`t
 {% include code-snippet/chart/axis/category-cs45/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs45" %}
 
 ## Set the label color based on series color
@@ -198,7 +198,7 @@ You can set the legend label color based on series color by using chart's [loade
 {% include code-snippet/chart/axis/category-cs46/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs46" %}
 
 ## Series Selection on Legend
@@ -216,7 +216,7 @@ By default, legend click enables you to collapse the series visibility.  On oth
 {% include code-snippet/chart/axis/category-cs47/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs47" %}
 
 ## Enable Animation
@@ -234,7 +234,7 @@ You can customize the animation while clicking legend by setting enableAnimation
 {% include code-snippet/chart/axis/category-cs48/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs48" %}
 
 ## Collapsing Legend Item
@@ -252,7 +252,7 @@ By default, series name will be displayed as legend. To skip the legend for a pa
 {% include code-snippet/chart/axis/category-cs49/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs49" %}
 
 ## Legend Title
@@ -270,7 +270,7 @@ You can set title for legend using `title` property in `legendSettings`. You can
 {% include code-snippet/chart/axis/category-cs50/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs50" %}
 
 ## Arrow Page Navigation
@@ -288,7 +288,7 @@ By default, the page number will be enabled while legend paging. Now, you can di
 {% include code-snippet/chart/axis/category-cs51/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs51" %}
 
 ## Legend Item Padding
@@ -306,11 +306,11 @@ The [`itemPadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/l
 {% include code-snippet/chart/axis/category-cs52/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/chart/axis/category-cs52" %}
 
 >Note: To use legend feature, we need to inject `LegendService` into the `@NgModule.Providers`.
 
 ## See Also
 
-* [Customize each shape in legend](./how-to/legend-customization/#customize-each-shape-in-legend)
+* [Customize each shape in legend](./how-to/legend-customization)

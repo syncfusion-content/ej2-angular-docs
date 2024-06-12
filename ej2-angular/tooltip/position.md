@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Position in Angular Tooltip component | Syncfusion
-description: Learn here all about Position in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: Position in Angular Tooltip Component | Syncfusion
+description: Learn here all about position support in Syncfusion Essential Angular Tooltip component, it's elements and more.
 platform: ej2-angular
 control: Position 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Position in Angular Tooltip component
+# Position in Angular Tooltip Component
 
 Tooltips can be attached to 12 static locations around the target.
 On initializing the Tooltip, you can set the position property with any one of the following values:
@@ -50,7 +50,7 @@ On initializing the Tooltip, you can set the position property with any one of
 {% include code-snippet/tooltip/getting-started-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/tooltip/getting-started-cs15" %}
 
 ## Tip pointer positioning
@@ -79,7 +79,7 @@ The following code example illustrates how to set the pointer to the start posit
 {% include code-snippet/tooltip/getting-started-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/tooltip/getting-started-cs16" %}
 
 By default, tip pointers are auto adjusted so that the arrow does not point outside the target element.
@@ -99,7 +99,7 @@ The Tooltip and its tip pointer can be positioned dynamically based on the targe
 {% include code-snippet/tooltip/getting-started-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/tooltip/getting-started-cs17" %}
 
 ## Mouse trailing
@@ -118,7 +118,7 @@ By default, it is set to `false`.
 {% include code-snippet/tooltip/getting-started-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/tooltip/getting-started-cs18" %}
 
 > When mouse trailing option is enabled, the tip pointer position gets auto adjusted based on the target, and
@@ -145,7 +145,7 @@ The following code example illustrates how to set offset values.
 {% include code-snippet/tooltip/getting-started-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/tooltip/getting-started-cs19" %}
 
 > By default, collision is handled automatically and therefore when collision is detected the Tooltip fits horizontally and flips vertically.

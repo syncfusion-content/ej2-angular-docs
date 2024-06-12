@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filtering in Angular Drop down list component | Syncfusion
-description: Learn here all about Filtering in Syncfusion Angular Drop down list component of Syncfusion Essential JS 2 and more.
+title: Filtering in Angular Dropdown List Component | Syncfusion
+description: Learn here all about filtering support in Syncfusion Essential Angular Dropdown List component, it's elements and more.
 platform: ej2-angular
 control: Filtering 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filtering in Angular Drop down list component
+# Filtering in Angular Dropdown List Component
 
 The DropDownList has built-in support to filter data items when `allowFiltering` is enabled. The filter operation starts as soon as you start typing characters in the search box.
 
@@ -27,7 +27,7 @@ The following sample illustrates how to query the data source and pass the data 
 {% include code-snippet/dropdownlist/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs6" %}
 
 ## Limit the minimum filter character
@@ -47,7 +47,7 @@ In the following example, the remote request does not fetch the search data unti
 {% include code-snippet/dropdownlist/getting-started-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs7" %}
 
 ## Change the filter type
@@ -67,7 +67,7 @@ In the following examples, data filtering is done with `endsWith` type.
 {% include code-snippet/dropdownlist/getting-started-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs8" %}
 
 ## Case sensitive filtering
@@ -87,7 +87,7 @@ The following example shows how to perform case-sensitive filter.
 {% include code-snippet/dropdownlist/getting-started-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs9" %}
 
 ## Diacritics Filtering
@@ -107,11 +107,11 @@ In the following sample,data with diacritics are bound as dataSource for DropDow
 {% include code-snippet/dropdownlist/getting-started-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/dropdownlist/getting-started-cs10" %}
 
 ## See Also
 
-* [How to limit the search result while filtering](./how-to/search-on-filtering/)
-* [How to highlight the matched characters in filtering](./how-to/highlight-filtering/)
-* [How to modify the result data using remote data source](./how-to/modify-data/)
+* [How to limit the search result while filtering](./how-to/search-on-filtering)
+* [How to highlight the matched characters in filtering](./how-to/highlight-filtering)
+* [How to modify the result data using remote data source](./how-to/modify-data)
