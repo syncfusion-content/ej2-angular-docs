@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Prevent the focus on the first element in Angular Dialog component | Syncfusion
-description: Learn here all about Prevent the focus on the first element in Syncfusion Angular Dialog component of Syncfusion Essential JS 2 and more.
+title: Prevent the focus on first element in Angular Dialog Component | Syncfusion
+description: Learn here all about prevent the focus on the first element in Syncfusion Essential Angular Dialog component, its elements and more.
 platform: ej2-angular
 control: Prevent the focus on the first element 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevent the focus on the first element in Angular Dialog component
+# Prevent the focus on the first element in Angular Dialog Component
 
 By default, the dialog focuses on the first elements of the content area which can be active and focusable. You can prevent this default focusing behavior using the [open](https://ej2.syncfusion.com/angular/documentation/api/dialog/#open) event and by enabling the `preventFocus` argument.
 
