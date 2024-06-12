@@ -14,29 +14,29 @@ Interface for a class Tooltip
 
 ## Properties
 
-### afterClose [`EmitType<TooltipEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api-tooltipEventArgs.html)
+### afterClose [`EmitType<TooltipEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipEventArgs/)
 
 We can trigger `afterClose` event when the Tooltip Component gets closed.
 
-### afterOpen [`EmitType<TooltipEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api-tooltipEventArgs.html)
+### afterOpen [`EmitType<TooltipEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipEventArgs/)
 
 We can trigger `afterOpen` event after the Tooltip Component gets opened.
 
-### beforeClose [`EmitType<TooltipEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api-tooltipEventArgs.html)
+### beforeClose [`EmitType<TooltipEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipEventArgs/)
 
 We can trigger `beforeClose` event before the Tooltip hides from the screen. If returned false, then the Tooltip is no more hidden.
 
-### beforeCollision [`EmitType<TooltipEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api-tooltipEventArgs.html)
+### beforeCollision [`EmitType<TooltipEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipEventArgs/)
 
 We can trigger `beforeCollision` event for every collision fit calculation.
 
-### beforeOpen [`EmitType<TooltipEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api-tooltipEventArgs.html)
+### beforeOpen [`EmitType<TooltipEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipEventArgs/)
 
 We can trigger `beforeOpen` event before the Tooltip is displayed over the target element.
 When one of its arguments `cancel` is set to true, the Tooltip display can be prevented.
 This event is mainly used for the purpose of refreshing the Tooltip positions dynamically or to set customized styles in it and so on.
 
-### beforeRender [`EmitType<TooltipEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api-tooltipEventArgs.html)
+### beforeRender [`EmitType<TooltipEventArgs>`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipEventArgs/)
 
 We can trigger `beforeRender` event before the Tooltip and its contents are added to the DOM.
 When one of its arguments `cancel` is set to true, the Tooltip can be prevented from rendering on the page.
@@ -52,7 +52,7 @@ We can trigger `created` event after the Tooltip component is created.
 
 We can trigger `destroyed` event when the Tooltip component is destroyed.
 
-### animation [`AnimationModel`](https://ej2.syncfusion.com/angular/documentation/api-animationModel.html)
+### animation [`AnimationModel`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/animationModel/)
 
 We can set the same or different animation option to Tooltip while it is in open or close state.
 Refer the documentation {@link http://ej2.syncfusion.com/documentation/tooltip/animation.html?lang=typescript here}
@@ -117,7 +117,7 @@ It is used to determine the device mode to display the Tooltip content.
 If it is in desktop, it will show the Tooltip content when hovering on the target element.
 If it is in touch device, it will show the Tooltip content when tap and holding on the target element.
 
-### position [`Position`](https://ej2.syncfusion.com/angular/documentation/api-position.html)
+### position [`Position`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/position/)
 
 It is used to set the position of Tooltip element, with respect to Target element.
 
@@ -130,7 +130,7 @@ It is used to show or hide the tip pointer of Tooltip.
 It is used to denote the target selector where the Tooltip need to be displayed.
 The target element is considered as parent container.
 
-### tipPointerPosition [`TipPointerPosition`](https://ej2.syncfusion.com/angular/documentation/api-tipPointerPosition.html)
+### tipPointerPosition [`TipPointerPosition`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tipPointerPosition/)
 
 It is used to set the position of tip pointer on tooltip.
 When it sets to auto, the tip pointer auto adjusts within the space of target's length and does not point outside.
