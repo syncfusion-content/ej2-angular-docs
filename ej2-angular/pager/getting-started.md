@@ -32,10 +32,10 @@ cd my-app
 
 ## Installing Syncfusion Pager package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -133,6 +133,35 @@ export class AppComponent implements OnInit {
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/pager/pager-cs1" %}
+
+## Page sizes
+
+The [pageSizes](https://ej2.syncfusion.com/angular/documentation/api/pager/#pagesizes) property in the Syncfusion Pager component allows you to control the number of records displayed per page through a `DropDownList` integrated into the pager. This feature enhances the experience by providing flexibility in data viewing.
+
+**Enabling Page Sizes**
+
+To enable the `pageSizes` property, follow these steps:
+
+1. Import the `PagerDropDown` and `Pager` modules from the Syncfusion Grid package.
+
+2. Inject the `PagerDropDown` into the `Pager` module to enable the `DropDownList` in the pager.
+
+3. Configure the `pageSizes` property by setting it to either **true** or providing an array of custom values to define the available page size options.
+
+The following example demonstrates how to include the `pageSizes` property in the pager component.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/pager/pager-cs4/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/pager/pager-cs4/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/pager/pager-cs4" %}
+
+> When the `pageSizes` property is set to **true**, it utilizes the default values.
 
 ## Page Count
 

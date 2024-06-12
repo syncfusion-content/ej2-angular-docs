@@ -165,9 +165,7 @@ The following example shows a default Timeline component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/getting-started/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timeline/getting-started/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/getting-started/src/main.ts %}
 {% endhighlight %}

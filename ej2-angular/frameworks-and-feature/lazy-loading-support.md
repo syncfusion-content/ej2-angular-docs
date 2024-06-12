@@ -18,7 +18,7 @@ Lazy loading is a technique that loads additional payload only when needed, whic
 
 ## Creating a Syncfusion component in Angular
 
-To create a Syncfusion component in Angular, refer to the [getting started](../getting-started/angular-cli) documentation. Additionally, you can refer to the Angular [lazy-loading](https://angular.io/guide/lazy-loading-ngmodules) documentation for more information on how to implement lazy loading in your application.
+To create a Syncfusion component in Angular, refer to the [getting started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli) documentation. Additionally, you can refer to the Angular [lazy-loading](https://v17.angular.io/guide/lazy-loading-ngmodules) documentation for more information on how to implement lazy loading in your application.
 
 Here's an example of an Angular application that has routing enabled and uses lazy loading to load the `CustomersComponent` and `OrdersComponent`.
 
@@ -228,7 +228,7 @@ export const Order: Routes = [
 
 In the `app.routes.ts` file, code splitting to dynamically import the components has been implemented.
 
-```typecript
+```typescript
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [

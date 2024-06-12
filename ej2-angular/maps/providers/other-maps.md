@@ -74,7 +74,11 @@ export class AppComponent implements OnInit {
            this.urlTemplate = "http://api.tomtom.com/map/1/tile/basic/main/level/tileX/tileY.png?key=subscription_key";
            this.zoomSettings = {
               enable: true,
-              toolbars: ["Zoom", "ZoomIn", "ZoomOut", "Pan", "Reset"]
+              toolbarSettings: {
+                  buttonSettings: {
+                      toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset'],
+                  }
+              }
            }
     }
 }

@@ -40,7 +40,7 @@ providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickT
 })
 
 export class AppComponent {
-    private hostUrl: string = 'https://services.syncfusion.com/angular/production/';
+    private hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
     public toolbarSettings: Object = {
         items: ['FileManager']
     };

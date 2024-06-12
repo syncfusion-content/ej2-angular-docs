@@ -1,43 +1,29 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, HierarchicalTreeService, DataBindingService } from '@syncfusion/ej2-angular-diagrams'
-
-
-
-import { Component, OnInit, ViewChild } from "@angular/core";
-import {
-  NodeModel,
-  ConnectorModel,
-  LayoutModel,
-  Diagram,
-  DataSourceModel
-} from "@syncfusion/ej2-diagrams";
+import { ConnectorModel, DataBinding, DataSourceModel, Diagram, DiagramComponent, DiagramModule,HierarchicalTree,LayoutModel, NodeModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams'
+import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
 import { DataManager } from "@syncfusion/ej2-data";
-import { ShapeStyleModel } from "@syncfusion/ej2-angular-diagrams";
 export interface EmployeeInfo {
   Name: string;
   Role: string;
   color: string;
 }
-
+Diagram.Inject(DataBinding,HierarchicalTree);
 @Component({
 imports: [
          DiagramModule
     ],
-
-providers: [ HierarchicalTreeService, DataBindingService ],
 standalone: true,
   selector: "app-container",
   template: `<ejs-diagram id="diagram" width="100%" height="580px" [layout]='layout' [dataSourceSettings]='dataSourceSettings' [getNodeDefaults]='nodeDefaults' [getConnectorDefaults]='connectorDefaults'>
 </ejs-diagram>`
 })
 export class AppComponent {
-  @ViewChild("diagram") public layout?: LayoutModel;
-  public dataSourceSettings?: DataSourceModel;
+  @ViewChild("diagram")
+  public diagram?: DiagramComponent;
   public data: Object[] = [
     {
       Name: "Elizabeth",
-      Role: "Director"
+      Role: "Director",
+      ReportingPerson:null
     },
     {
       Name: "Christina",
@@ -70,7 +56,20 @@ export class AppComponent {
       Role: "Lead"
     }
   ];
+  public dataSourceSettings?: DataSourceModel = {
+    id: "Name",
+    parentId: "ReportingPerson",
+    dataManager: new DataManager(this.data as JSON[]),
+    doBinding: (nodeModel: NodeModel, data: object) => {
+      nodeModel.annotations = [
+        { content: (data as EmployeeInfo).Name, style: { color: "white" } }
+      ];
+    }
+  };
 
+  public layout: LayoutModel = {
+    type:'OrganizationalChart'
+  };
   public nodeDefaults(node: NodeModel): NodeModel {
     let codes: Object = {
       Director: "rgb(0, 139,139)",
@@ -91,16 +90,5 @@ export class AppComponent {
     connector.cornerRadius = 7;
     return connector;
   }
-  ngOnInit(): void {
-    this.layout = {
-      type: "OrganizationalChart"
-    };
-    this.dataSourceSettings = {
-      id: "Name",
-      parentId: "ReportingPerson",
-      dataManager: new DataManager(this.data as JSON[])
-    };
-  }
+
 }
-
-

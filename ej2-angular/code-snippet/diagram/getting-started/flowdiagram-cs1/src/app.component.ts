@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
+import { DiagramComponent, DiagramModule } from '@syncfusion/ej2-angular-diagrams'
 
 
 
@@ -22,32 +22,32 @@ standalone: true,
   selector: "app-container",
   template: `<ejs-diagram id="diagram" width="100%" height="580px" [getNodeDefaults]='nodeDefaults' [getConnectorDefaults]='connectorDefaults'>
     <e-nodes>
-        <e-node id='node1' [offsetY]=50 [shape]='terminator'>
+        <e-node id='node1' [offsetX]=300 [offsetY]=50 [shape]='terminator'>
             <e-node-annotations>
                 <e-node-annotation content='Start'></e-node-annotation>
             </e-node-annotations>
         </e-node>
-        <e-node id='node2' [offsetY]=140 [shape]='process'>
+        <e-node id='node2' [offsetX]=300 [offsetY]=140 [shape]='process'>
             <e-node-annotations>
                 <e-node-annotation content='var i = 0;'></e-node-annotation>
             </e-node-annotations>
         </e-node>
-        <e-node id='node3' [offsetY]=230 [shape]='decision'>
+        <e-node id='node3' [offsetX]=300 [offsetY]=230 [shape]='decision'>
             <e-node-annotations>
                 <e-node-annotation content='i < 10?'></e-node-annotation>
             </e-node-annotations>
         </e-node>
-        <e-node id='node4' [offsetY]=320 [shape]='preDefinedProcess'>
+        <e-node id='node4' [offsetX]=100 [offsetY]=320 [shape]='preDefinedProcess'>
             <e-node-annotations>
                 <e-node-annotation content='print(\"Hello!!\");'></e-node-annotation>
             </e-node-annotations>
         </e-node>
-        <e-node id='node5' [offsetY]=410 [shape]='process'>
+        <e-node id='node5' [offsetX]=300 [offsetY]=410 [shape]='process'>
             <e-node-annotations>
                 <e-node-annotation content='i++;'></e-node-annotation>
             </e-node-annotations>
         </e-node>
-        <e-node id='node6' [offsetY]=500 [shape]='terminator'>
+        <e-node id='node6' [offsetX]=500 [offsetY]=500 [shape]='terminator'>
             <e-node-annotations>
                 <e-node-annotation content='End'></e-node-annotation>
             </e-node-annotations>
@@ -74,6 +74,7 @@ standalone: true,
 })
 export class AppComponent {
   @ViewChild("diagram")
+  public diagram?: DiagramComponent;
   public terminator?: FlowShapeModel;
   public process?: FlowShapeModel;
   public decision?: FlowShapeModel;
@@ -84,6 +85,15 @@ export class AppComponent {
     node.height = 50;
     node.width = 140;
     node.offsetX = 300;
+    if(node.id === "node1" || node.id === "node4"){
+      node.style = { fill: "#357BD2", strokeColor: "white" };
+    }else if(node.id === "node2" || node.id === "node5"){
+          node.style = { fill: "yellow", strokeColor: "white" };
+    }else if(node.id === "node3"){
+          node.style = { fill: "#00FF00", strokeColor: "white" };
+    }else if(node.id === "node6"){
+            node.style = { fill: "red", strokeColor: "white" };
+    }
     return node;
   }
 
@@ -97,8 +107,8 @@ export class AppComponent {
     this.process = { type: 'Flow', shape: 'Process' };
     this.decision = { type: 'Flow', shape: 'Decision' };
     this.preDefinedProcess = { type: 'Flow', shape: 'PreDefinedProcess' };
-    this.segment1 = [{ length: 30, direction: "Right" }, { length: 300, direction: "Bottom" }];
-    this.segment2 = [{ length: 30, direction: "Left" }, { length: 200, direction: "Top" }];
+    this.segment1 = [{ length: 30, direction: "Right",type:'Orthogonal' }, { length: 300, direction: "Bottom",type:'Orthogonal' }];
+    this.segment2 = [{ length: 30, direction: "Left",type:'Orthogonal' }, { length: 200, direction: "Top",type:'Orthogonal' }];
   }
 }
 

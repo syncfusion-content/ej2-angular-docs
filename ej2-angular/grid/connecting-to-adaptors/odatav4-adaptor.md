@@ -763,3 +763,89 @@ public IActionResult Delete(int key)
 ![ODataV4Adaptor-Delete-record](../images/odatav4-adaptor-delete-record.png)
 
 > You can find the complete sample for the ODataV4Adaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-angular-data-grid) link.
+
+## Odata with custom url
+
+The Syncfusion ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the Datamanager
+
+**Configuring Custom URLs**
+
+To work with custom URLs for CRUD operations in the Syncfusion Grid, you can use the following properties:
+
+* insertUrl: Specifies the custom URL for inserting new records.
+* removeUrl: Specifies the custom URL for deleting records.
+* updateUrl: Specifies the custom URL for updating records.
+* batchUrl: Specifies the custom URL for batch editing operations.
+
+> Ensure that the routing configurations on the server-side are properly updated to handle these custom URLs.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+import { Component, ViewChild } from '@angular/core';
+import { GridComponent, ToolbarItems, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html'
+})
+export class AppComponent {
+  @ViewChild('grid')
+  public grid?: GridComponent;
+  public data?: DataManager;
+  public editSettings?: EditSettingsModel;
+  public toolbar?: ToolbarItems[];
+
+  ngOnInit(): void {
+    this.data = new DataManager({
+      url: 'https://localhost:xxxx/odata/Orders', // xxxx denotes port number
+      updateUrl: 'https://localhost:xxxx/odata/Orders/Update', // custom URL to update the record
+      insertUrl: 'https://localhost:xxxx/odata/Orders/Insert', // custom URL to insert new record
+      removeUrl: 'https://localhost:xxxx/odata/Orders/Delete', // custom URL to delete the record
+      adaptor: new ODataV4Adaptor()
+    });
+
+    this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
+    this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Search'];
+  }
+}
+{% endhighlight %}
+
+For batch editing, you can specify a custom batch URL as follows:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+import { Component, ViewChild } from '@angular/core';
+import { GridComponent, ToolbarItems, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html'
+})
+export class AppComponent {
+  @ViewChild('grid')
+  public grid?: GridComponent;
+  public data?: DataManager;
+  public editSettings?: EditSettingsModel;
+  public toolbar?: ToolbarItems[];
+
+  ngOnInit(): void {
+    this.data = new DataManager({
+      url: 'https://localhost:xxxx/odata/Orders', // xxxx denotes port number
+      BatchUrl: 'https://localhost:xxxx/odata/Orders/BatchUpdate', // custom URL for batch update
+      adaptor: new ODataV4Adaptor()
+    });
+
+    this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' };
+    this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Search'];
+  }
+}
+{% endhighlight %}
+{% endtabs %}
+
+
+
+

@@ -23,9 +23,7 @@ The `template` context receives the following information:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/template/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/timeline/template/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/template/src/main.ts %}
 {% endhighlight %}

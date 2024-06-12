@@ -66,8 +66,12 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
            this.urlTemplate = 'https://atlas.microsoft.com/map/imagery/png?subscription-key=Your-Key &api-version=1.0&style=satellite&zoom=level&x=tileX&y=tileY';
            this.zoomSettings = {
-              enable: true,
-              toolbars: ["Zoom", "ZoomIn", "ZoomOut", "Pan", "Reset"]
+               enable: true,
+               toolbarSettings: {
+                  buttonSettings: {
+                      toolbarItems: ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset'],
+                  }
+               }
            }
     }
 }

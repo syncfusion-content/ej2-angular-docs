@@ -22,9 +22,7 @@ The floating label functionality in the TextArea component allows the placeholde
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/float-label-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/float-label-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/float-label-cs1/src/main.ts %}
 {% endhighlight %}
@@ -40,9 +38,7 @@ Localization library allows to localize the placeholder text of the TextArea to 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/localization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/localization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/localization-cs1/src/main.ts %}
 {% endhighlight %}
@@ -57,9 +53,7 @@ In the below sample, `German` culture is loaded to the TextArea placeholder text
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/localization-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/textarea/localization-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/textarea/localization-cs1/src/main.ts %}
 {% endhighlight %}

@@ -16,9 +16,6 @@ SEE LICENSE IN license
 @syncfusion/ej2-angular-buttons
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-calendars
-SEE LICENSE IN license
-
 @syncfusion/ej2-angular-dropdowns
 SEE LICENSE IN license
 

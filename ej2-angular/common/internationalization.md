@@ -14,33 +14,50 @@ The `Internationalization` library provides support for formatting and parsing d
 
 ## Loading Culture Data
 
-It requires the following CLDR data to be load using `loadCldr` function for cultures other than `en-US`.
+Syncfusion CLDR data package contains only JSON data files generated using the official [Unicode CLDR](http://cldr.unicode.org/) JSON data. This helps users avoid utilizing the existing [cldr-data](https://www.npmjs.com/package/cldr-data) package, which has third-party library vulnerabilities. The `loadCldr` function is required to load the following CLDR data for cultures other than `en-US`.
+
+N> Syncfusion CLDR data package is published based on the releases of the Unicode CLDR JSON data. The package will be published within a week after the official [Unicode CLDR](http://cldr.unicode.org/) JSON data is released.
+
+### Individual file path reference
+
+Syncfusion CLDR data can be loaded by referring to individual paths from the package below, such as:
 
 | File Name | Path |
 | ------------- | ------------- |
-| ca-gregorian | cldr/main/en/ca-gregorian.json |
-| timeZoneNames |cldr/main/en/timeZoneNames.json |
-| numbers | cldr/main/en/numbers.json |
-| numberingSystems | cldr/supplemental/numberingSystems.json |
-| currencies | cldr/main/en/currencies.json |
+| ca-gregorian | @syncfusion/ej2-cldr-data/main/en/ca-gregorian.json |
+| timeZoneNames |@syncfusion/ej2-cldr-data/main/en/timeZoneNames.json |
+| numbers | @syncfusion/ej2-cldr-data/main/en/numbers.json |
+| currencies | @syncfusion/ej2-cldr-data/main/en/currencies.json |
+| numberingSystems | @syncfusion/ej2-cldr-data/supplemental/numberingSystems.json |
+
+### Single file path reference
+
+Syncfusion CLDR data can also be loaded by referring to a single path from the package below, such as:
+
+| File Name | Path |
+| ------------- | ------------- |
+| ca-gregorian, timeZoneNames, numbers, currencies  | @syncfusion/ej2-cldr-data/main/en/all.json |
+| numberingSystems | @syncfusion/ej2-cldr-data/supplemental/numberingSystems.json |
 
 >Note: For `en`, dependency files are already loaded in the library.
 
 ### Installing CLDR Data
 
-CLDR data is available as npm package. So, we can install it through below command to our package.
+Syncfusion CLDR data is available as npm package. So, we can install it through below command to our package.
 
 ```bash
-npm install cldr-data
+npm install @syncfusion/ej2-cldr-data
 ```
 
 ### Binding to i18n library
 
-```typescript
+The i18n library to use the CLDR data to format, parse number and date/time values in a way that is appropriate for the en culture. The loadCldr function takes two arguments, enNumberData and enTimeZoneData, which are the CLDR data for numbers and time zones, respectively, for the en culture.
 
+```ts
 import { loadCldr } from '@syncfusion/ej2-base';
+import enNumberData from "@syncfusion/ej2-cldr-data/main/en/numbers.json";
+import entimeZoneData from "@syncfusion/ej2-cldr-data/main/en/timeZoneNames.json";
 loadcldr(enNumberData, entimeZoneData);
-
 ```
 
 ## Changing Global Culture and Currency Code

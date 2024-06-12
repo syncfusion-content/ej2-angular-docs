@@ -39,9 +39,27 @@ The default column menu items are displayed in following table.
   
 {% previewsample "page.domainurl/samples/grid/grid-cs6" %}
 
-> You can disable column menu for a particular column by defining the [columns.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showcolumnmenu) as false.
+> * You can disable column menu for a particular column by defining the [columns.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showcolumnmenu) as false.
+> *  You can customize the default items by defining the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnmenuitems) with required items.
 
-> You can customize the default items by defining the [columnMenuItems](https://ej2.syncfusion.com/angular/documentation/api/grid/#columnmenuitems) with required items.
+## Prevent column menu for particular column
+
+The Syncfusion Angular Grid component provides the ability to prevent the appearance of the column menu for specific columns. This feature is useful when you want to restrict certain columns from being customizable through the column menu.
+
+To prevent the column menu for a particular column, you can set the [showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#showcolumnmenu) property to **false** for that specific column configuration. This will disable the column menu options specifically for the designated column, while other columns will have the column menu enabled.
+
+The following example demonstrates how to prevent the column menu for a specific column. In this example, the column menu is disabled for the **OrderID** column by setting the `showColumnMenu` property to **false**.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/prevent-column-menu/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/prevent-column-menu/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/prevent-column-menu" %}
 
 ## Add custom column menu item
 

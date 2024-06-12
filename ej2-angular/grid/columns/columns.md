@@ -444,17 +444,18 @@ Here's an example of how you can use the `lockColumn` property to lock a column 
 
 The Syncfusion Grid control allows you to show or hide columns dynamically by using property or methods available in the grid. This feature can be useful when you want to customize the visibility of columns in the Grid based on the requirements.
 
+> To work with showing and hiding columns, it is necessary to have at least one column of the grid in a visible state
+
 ### Using property
 
 You can show or hide columns in the Angular Grid using the [visible](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#visible) property of each column. By setting the `visible` property to **true** or **false**, you can control whether the column should be visible or hidden in the grid. Here's an example of how to show or hide a column in the Angular Grid using the visible property:
 
-In the below example, the **ShipCity** column is defined with `visible` property set to **false**, which will hide the column in the rendered grid.
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component is added to enable and disable the `visible` property. When the switch is toggled, the [change](https://ej2.syncfusion.com/angular/documentation/api/switch/#change) event is triggered and the `visible` property of the **ShipCity** column is updated accordingly. The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method is called to refresh the grid and display the updated content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/grid-cs15/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/grid-cs15/src/main.ts %}
 {% endhighlight %}
