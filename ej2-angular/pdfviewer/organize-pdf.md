@@ -16,6 +16,8 @@ The PDF Viewer allows you to manage your PDF documents efficiently by organizing
 
 To access the organize pages feature, simply open the PDF document in the PDF Viewer and navigate to the left vertical toolbar. Look for the `Organize Pages` option to begin utilizing these capabilities.
 
+![Alt text](images/organize-page.png)
+
 The page organization support enables you to perform various actions such as rotating, rearranging, inserting, copying, and deleting pages within a PDF document using organize pages dialog.
 
 ### Rotating PDF pages
@@ -25,11 +27,15 @@ You can adjust the orientation of PDF pages to ensure proper alignment. The rota
 * `Rotate clockwise`: Rotate the selected pages 90 degrees clockwise.
 * `Rotate counter-clockwise`: Rotate the selected pages 90 degrees counter-clockwise.
 
+![Alt text](images/rotate.gif)
+
 ### Rearranging PDF pages
 
 You can easily change the sequence of pages within your document using the drag and drop method:
 
 * `Drag and drop`: Click and drag a page thumbnail to the desired position within the document, then release it to rearrange the page order.
+
+![Alt text](images/rearrange.gif)
 
 ### Inserting new pages
 
@@ -38,6 +44,8 @@ Effortlessly add new pages to your document with the following options:
 * `Insert blank page left`: Insert a blank page to the left of the selected page using the respective icon.
 * `Insert blank page right`: Insert a blank page to the right of the selected page using the corresponding icon.
 
+![Alt text](images/insert.gif)
+
 ### Deleting PDF pages
 
 Removing unwanted pages from your document is straight forward:
@@ -45,15 +53,21 @@ Removing unwanted pages from your document is straight forward:
 * `Select pages to delete`: Click on the page thumbnails you wish to remove. You can select multiple pages at once.
 * `Delete selected pages`: Use the delete option in the organize pages pane to remove the selected pages from the document.
 
+![Alt text](images/delete.gif)
+
 ### Copying PDF pages
 
 Duplicate the pages within your PDF document effortlessly:
 
 * `Select pages to copy`: Click on the page thumbnails you wish to duplicate. Use the copy option to create duplicates. When a page is copied, the duplicate is automatically added to the right of the selected page. Multiple copies can be made using the toolbar action.
 
+![Alt text](images/copy.gif)
+
 ### Selecting all pages 
 
 Make comprehensive adjustments by selecting all pages simultaneously. This facilitates efficient editing and formatting across the entire document.
+
+![Alt text](images/selectall.gif)
 
 ### Real-time updates 
 
@@ -325,6 +339,8 @@ The following keyboard shortcuts are available at the organize pages dialog.
 
 * **Ctrl+Z** : Undo the last action performed.
 * **Ctrl+Y** : Redo the action that was undone
+
+![Alt text](images/undo-redo.gif)
 
 #### Conclusion
 

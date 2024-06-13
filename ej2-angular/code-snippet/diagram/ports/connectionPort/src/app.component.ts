@@ -5,7 +5,7 @@ import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
 
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, PointPortModel, PortVisibility,connectionDirection, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel, ConnectorModel, PointPortModel, PortVisibility, PortConnectionDirection } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -17,21 +17,21 @@ standalone: true,
     selector: "app-container",
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults'>
         <e-nodes>
-            <e-node id='node1' [offsetX]=150 [offsetY]=150 [ports]='port1'>
+            <e-node id='node1' [offsetX]=600 [offsetY]=300 [ports]='port1'>
                 <e-node-annotations>
-                    <e-node-annotation content="Node1">
+                    <e-node-annotation content="">
                     </e-node-annotation>
                 </e-node-annotations>
             </e-node>
-            <e-node id='node2' [offsetX]=350 [offsetY]=150 [ports]='port2'>
+            <e-node id='node2' [offsetX]=800 [offsetY]=200 [ports]='port2'>
                 <e-node-annotations>
-                    <e-node-annotation content="Custom Template">
+                    <e-node-annotation content="">
                     </e-node-annotation>
                 </e-node-annotations>
             </e-node>
         </e-nodes>
         <e-connectors>
-            <e-connector id='connector' type='Straight' sourceID='node1' sourcePortID='port1' targetID='node2' targetPortID='port2'>
+            <e-connector id='connector' type='Orthogonal' sourceID='node1' sourcePortID='port1' targetID='node2' targetPortID='port2'>
             </e-connector>
         </e-connectors>
     </ejs-diagram>`,
@@ -46,9 +46,13 @@ export class AppComponent {
             x: 0.5,
             y: 0.5
         },
-        visibility: PortVisibility.Visible
-        //specify the connectionDirection of the Port
-        connectionDirection:'Right'
+        visibility: PortVisibility.Visible,
+        // Specify the connection Direction
+        connectionDirection:'Right',
+        style: {
+            strokeColor: '#000000',
+            fill: ' #FFFF00'
+        },
     }]
     public port2: PointPortModel[] = [
         {
@@ -57,17 +61,21 @@ export class AppComponent {
                 x: 0,
                 y: 0
             },
-            visibility: PortVisibility.Visible
-             //specify the connectionDirection of the Port
-            connectionDirection:'Left'
+            visibility: PortVisibility.Visible,
+             // Specify the connection Direction
+            connectionDirection:'Left',
+            style: {
+                strokeColor: '#000000',
+                fill: ' #FFFF00'
+            },
         },
-      
+       
     ]
     public getNodeDefaults(node: NodeModel | any): NodeModel {
         node.height = 100;
         node.width = 100;
-        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
-        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
+        node.style.fill = '#6BA5D7';
+        node.style.strokeColor = 'white';
         return node;
     }
     public getConnectorDefaults(obj: ConnectorModel): void {
@@ -84,5 +92,3 @@ export class AppComponent {
         }
     }
 }
-
-

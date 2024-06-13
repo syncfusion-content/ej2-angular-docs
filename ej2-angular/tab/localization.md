@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Localization in Angular Tab component
 
-Localization library allows to localize the default text content of the Tab to different cultures using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/tab#locale) property. In Tab, the close button's tooltip text alone will be localize based on culture.  The close button is shown on tab header when enabled [`showCloseButton`](https://ej2.syncfusion.com/angular/documentation/api/tab#showclosebutton) property.
+Localization library allows to localize the default text content of the Tab to different cultures using the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/tab/#locale) property. In Tab, the close button's tooltip text alone will be localize based on culture.  The close button is shown on tab header when enabled [`showCloseButton`](https://ej2.syncfusion.com/angular/documentation/api/tab/#showclosebutton) property.
 
 | Locale key | en-US (default)  |
 |------|------|-------------|
