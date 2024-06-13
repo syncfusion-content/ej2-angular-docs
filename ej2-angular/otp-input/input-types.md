@@ -16,7 +16,7 @@ This section explains the the various types of OTP (One-Time Password) input com
 
 ### Number type
 
-You can set the [type](https://helpej2.syncfusion.com/angular/documentation/api/otp-input#type) property to [number](https://helpej2.syncfusion.com/angular/documentation/api/otp-input/otpInputType/) to use this input type as number. This is ideal for OTP input scenarios with numeric-only codes. By default `type` property is `number`.
+You can set the [type](https://ej2.syncfusion.com/angular/documentation/api/otp-input#type) property to [number](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpInputType/) to use this input type as number. This is ideal for OTP input scenarios with numeric-only codes. By default `type` property is `number`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +34,7 @@ You can set the [type](https://helpej2.syncfusion.com/angular/documentation/api/
 
 ### Text type
 
-You can set the [type](https://helpej2.syncfusion.com/angular/documentation/api/otp-input#type) property to [text](https://helpej2.syncfusion.com/angular/documentation/api/otp-input/otpInputType/) to use this input type as text. This is suitable when the OTP input need to include both letters and numbers.
+You can set the [type](https://ej2.syncfusion.com/angular/documentation/api/otp-input#type) property to [text](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpInputType/) to use this input type as text. This is suitable when the OTP input need to include both letters and numbers.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -52,7 +52,7 @@ You can set the [type](https://helpej2.syncfusion.com/angular/documentation/api/
 
 ### Password type
 
-You can set the [type](https://helpej2.syncfusion.com/angular/documentation/api/otp-input#type) property to [password](https://helpej2.syncfusion.com/angular/documentation/api/otp-input/otpInputType/) to use this input type as password in the otp Input.
+You can set the [type](https://ej2.syncfusion.com/angular/documentation/api/otp-input#type) property to [password](https://ej2.syncfusion.com/angular/documentation/api/otp-input/otpInputType/) to use this input type as password in the otp Input.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,7 +70,7 @@ You can set the [type](https://helpej2.syncfusion.com/angular/documentation/api/
 
 ## Value
 
-You can specify the value of OTP Input by using the [value](https://helpej2.syncfusion.com/angular/documentation/api/otp-input#value) property.
+You can specify the value of OTP Input by using the [value](https://ej2.syncfusion.com/angular/documentation/api/otp-input#value) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

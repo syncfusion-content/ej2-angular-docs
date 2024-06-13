@@ -23,7 +23,6 @@
     "@syncfusion/ej2-popups": "*",
     "@syncfusion/ej2-navigations": "*",
     "@syncfusion/ej2-angular-base": "*",
-    "@syncfusion/ej2-angular-data": "*",
     "@syncfusion/ej2-angular-grids": "*",
     "@syncfusion/ej2-angular-calendars": "*",
     "@angular/animations": "17.1.2",

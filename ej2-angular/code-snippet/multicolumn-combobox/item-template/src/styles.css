@@ -1,0 +1,11 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-grids/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-multicolumn-combobox/styles/material.css';
+
+/* template styles */
+.name, .emp-id, .city {
+    border: 1px solid;
+    border-color: #e0e0e0;
+    padding: 2px 2px 3px 4px;
+}

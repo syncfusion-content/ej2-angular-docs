@@ -77,7 +77,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent } from './app/app.component';
 // Imported Syncfusion RichTextEditorModule from Rich Text Editor package
 import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor';
 

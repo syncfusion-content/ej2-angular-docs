@@ -70,7 +70,7 @@ The OTP Input component's accessibility levels are ensured through an [accessibi
 
 HtmlAttributes allow you to specify additional HTML attributes to be applied to the OTP input component.
 
-You can pass HTML attributes as key-value pairs to the [htmlAttributes](https://helpej2.syncfusion.com/angular/documentation/api/otp-input#htmlattributes) property.
+You can pass HTML attributes as key-value pairs to the [htmlAttributes](https://ej2.syncfusion.com/angular/documentation/api/otp-input#htmlattributes) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -90,7 +90,7 @@ You can pass HTML attributes as key-value pairs to the [htmlAttributes](https://
 
 AriaLabels define the ARIA-label attribute for each input field in the OTP input component. ARIA-labels enhance accessibility by providing descriptive labels for screen reader users, improving the user experience for individuals with disabilities.
 
-You can provide an array of strings as ARIA-labels to the [ariaLabels](https://helpej2.syncfusion.com/angular/documentation/api/otp-input#arialabels) property. Each string corresponds to the ARIA-label attribute for the respective input field in the OTP input component.
+You can provide an array of strings as ARIA-labels to the [ariaLabels](https://ej2.syncfusion.com/angular/documentation/api/otp-input#arialabels) property. Each string corresponds to the ARIA-label attribute for the respective input field in the OTP input component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

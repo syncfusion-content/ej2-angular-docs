@@ -1,9 +1,18 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { MultiColumnComboBoxModule } from '@syncfusion/ej2-angular-multicolumn-combobox'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
 
 
 import { Component, HostListener, ViewChild } from '@angular/core';
 import { MultiColumnComboBoxComponent } from '@syncfusion/ej2-angular-multicolumn-combobox';
 
+
 @Component({
+    imports: [ FormsModule, ReactiveFormsModule, MultiColumnComboBoxModule, ButtonModule ],
+    standalone: true,
     selector: 'app-root',
     // specifies the template string for the MultiColumn ComboBox component with change event
     template: `<ejs-multicolumncombobox id='multicolumn' #multicolumn [dataSource]='empData' [fields]='fields' popupWidth='500px' popupHeight='250px' [placeholder]='waterMark'>

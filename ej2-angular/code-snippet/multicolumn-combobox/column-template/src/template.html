@@ -1,0 +1,36 @@
+<div id="wrapper">
+    <div id='content'>
+        <ejs-multicolumncombobox id='multicolumn' #multicolumn [dataSource]='data' [placeholder]='waterMark' [fields]='fields' cssClass='multicolumn-customize' [gridSettings]='gridSettings' text='Michael' popupHeight='230px'>
+            <e-columns>
+                <e-column field='Eimg' header='Photos' width='100' >
+                    <ng-template #template let-data>
+                        <div>
+                            <div><img class="empImage" src="https://ej2.syncfusion.com/demos/src/multicolumn-combobox/Employees/{{data.Eimg}}.png" alt="employee"/> </div>
+                        </div>
+                    </ng-template>
+                </e-column>
+                <e-column field='Name' header='Employee Name' width='135'>
+                    <ng-template #template let-data>
+                        <div>
+                            <div class="ename"> {{data.Name}} </div><div class="job"> {{data.Designation}} </div>
+                        </div>
+                    </ng-template>
+                </e-column>
+                <e-column field='DateofJoining' header='Date of Joining' width='135'>
+                    <ng-template #template let-data>
+                        <div>
+                            <div class="dateOfJoining"> {{data.DateofJoining}} </div>
+                        </div>
+                    </ng-template>
+                </e-column>
+                <e-column field='Country' header='Country' width='95'>
+                    <ng-template #template let-data>
+                        <div>
+                            <div class="country"> {{data.Country}} </div>
+                        </div>
+                    </ng-template>
+                </e-column>
+            </e-columns>
+        </ejs-multicolumncombobox>
+    </div>
+</div>

@@ -844,6 +844,7 @@ export class AppComponent {
   }
 }
 {% endhighlight %}
+{% endtabs %}
 
 
 
