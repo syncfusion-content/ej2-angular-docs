@@ -3,7 +3,7 @@ layout: post
 title: Getting started with Angular MultiColumn ComboBox | Syncfusion
 description:  Checkout and learn about Getting started with Angular MultiColumn ComboBox component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: MultiColumn ComboBox 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -144,7 +144,7 @@ export class AppComponent  { }
 
 ## Binding data source with fields and columns
 
-After initializing, populate the MultiColumn ComboBox with data by using the `dataSource` property, to map the data for each specified columns use the `<e-column>` selector and the `fields` property to map the data fields from the dataSource.
+After initializing, populate the MultiColumn ComboBox with data by using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#datasource) property, to map the data for each specified columns use the `<e-column>` selector and the [fields](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#fields) property to map the data fields from the dataSource.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -196,9 +196,7 @@ The following example illustrates the output in your browser.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multicolumn-combobox/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multicolumn-combobox/getting-started-cs1/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multicolumn-combobox/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
@@ -210,7 +208,7 @@ The following example illustrates the output in your browser.
 
 By default, the width of the popup list automatically adjusts according to the MultiColumn ComboBox input element's width, and the height of the popup list has '300px'.
 
-The height and width of the popup list can also be customized using the `popupHeight` and `popupWidth` properties respectively.
+The height and width of the popup list can also be customized using the [popupHeight](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#popupheight) and [popupWidth](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#popupwidth) properties respectively.
 
 In the following sample, popup list's width and height are configured.
 
@@ -218,9 +216,7 @@ In the following sample, popup list's width and height are configured.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/multicolumn-combobox/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/multicolumn-combobox/getting-started-cs2/src/app.module.ts %}
-{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/multicolumn-combobox/getting-started-cs2/src/main.ts %}
 {% endhighlight %}

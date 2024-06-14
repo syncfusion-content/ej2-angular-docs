@@ -1,0 +1,11 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-grids/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-multicolumn-combobox/styles/material.css';
+
+
+/* cssClass styles */
+.e-input-group.e-custom-multi-column {
+    color: #ab3243;
+    background: #32a5ab;
+}

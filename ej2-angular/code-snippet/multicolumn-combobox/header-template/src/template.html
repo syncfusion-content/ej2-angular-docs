@@ -1,0 +1,36 @@
+<div id="wrapper">
+    <div id='content'>
+        <ejs-multicolumncombobox id='multicolumn' #multicolumn [dataSource]='empData' [placeholder]='waterMark' [fields]='fields' [gridSettings]='gridSettings' popupHeight='230px'>
+            <e-columns>
+                <e-column field='EmpID' width='100'>
+                  <ng-template #headerTemplate let-data>
+                    <div>
+                        <div class="header"> <span>Employee ID</span></div>
+                    </div>
+                  </ng-template>
+                </e-column>
+                <e-column field='Name' width='135'>
+                  <ng-template #headerTemplate let-data>
+                    <div>
+                        <div class="header"> <span>Employee Name</span></div>
+                    </div>
+                  </ng-template>
+                </e-column>
+                <e-column field='Designation' width='135'>
+                  <ng-template #headerTemplate let-data>
+                    <div>
+                        <div class="header"> <span>Designation</span></div>
+                    </div>
+                  </ng-template>
+                </e-column>
+                <e-column field='Country' width='95'>
+                  <ng-template #headerTemplate let-data>
+                    <div>
+                        <div class="header"> <span>Country</span></div>
+                    </div>
+                  </ng-template>
+                </e-column>
+            </e-columns>
+        </ejs-multicolumncombobox>
+    </div>
+</div>
