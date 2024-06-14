@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
 values: any;
     ngOnInit(): void {
         this.data = new DataManager({
-        url: 'https://services.syncfusion.com/js/production/api/Employees/',
+        url: 'https://services.syncfusion.com/angular/production/api/Employees/',
         adaptor: new ODataAdaptor(),
         });
         this.importRules = {

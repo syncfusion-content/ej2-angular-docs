@@ -59,7 +59,7 @@ The following code illustrates how to add a node.
 {% include code-snippet/diagram/nodes/run-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/diagram/nodes/run-cs1" %}
 
 ## Add collection of nodes at runtime
