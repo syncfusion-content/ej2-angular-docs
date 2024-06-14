@@ -39,7 +39,7 @@ You can customize header styles by adding predefined classes in the Tab root ele
 
 ## Icon positions
 
-You can customize the position of the Tab header icons using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/tab/header#iconposition) property.  This property depends on the header items [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/tab/header#iconcss) property.  By default, Tab header icon is placed on left position.  The position values are as follows:
+You can customize the position of the Tab header icons using the [`iconPosition`](https://ej2.syncfusion.com/angular/documentation/api/tab/header/#iconposition) property.  This property depends on the header items [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/tab/header/#iconcss) property.  By default, Tab header icon is placed on left position.  The position values are as follows:
 
 * **Left**: Icon is placed on the left of the Tab header item.
 * **Right**: Icon is placed on the right of the Tab header item.
@@ -60,4 +60,4 @@ You can customize the position of the Tab header icons using the [`iconPosition`
 
 ## See Also
 
-* [How to customize selected tab styles](./how-to/customize-selected-tab-styles/)
+* [How to customize selected tab styles](./how-to/customize-selected-tab-styles)

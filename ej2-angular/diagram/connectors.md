@@ -64,15 +64,15 @@ The following code illustrates how to add a connectors collection at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/connectors/connectcollection-cs1/src/app.component.ts %}
+{% include code-snippet/diagram/connectors/connectorcollection-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/connectors/connectcollection-cs1/src/main.ts %}
+{% include code-snippet/diagram/connectors/connectorcollection-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/connectors/connectcollection-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorcollection-cs1" %}
 
 ## Connectors from palette
 

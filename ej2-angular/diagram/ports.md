@@ -147,4 +147,4 @@ The [`connectionDirection`](https://ej2.syncfusion.com/angular/documentation/api
   
 {% previewsample "page.domainurl/samples/diagram/ports/connectionPort" %}
 
-![maxSegmentThumb](images\connectionDirection.png)
+![maxSegmentThumb](images/connectionDirection.png)
