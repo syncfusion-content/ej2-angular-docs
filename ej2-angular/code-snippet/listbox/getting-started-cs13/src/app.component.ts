@@ -3,11 +3,9 @@ import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { ListBoxComponent, ListBoxAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
+import { CheckBoxSelection } from '@syncfusion/ej2-angular-dropdowns';
 import { Component } from '@angular/core';
+(ListBoxComponent as any).Inject(CheckBoxSelection);
 
 @Component({
 imports: [
@@ -34,7 +32,7 @@ public data: { [key: string]: Object }[] = [
     { text: 'McLaren P1' },
     { text: 'Ferrari LaFerrari' }
 ];
-public selection = { mode: "Single" }
+public selection = { mode: "Single", showCheckbox: true }
 }
 
 
