@@ -40,4 +40,4 @@ The [disableItem](https://ej2.syncfusion.com/angular/documentation/api/combo-box
 
 If you want to disabled the overall component to set the [enabled](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#enabled) property to false.
 
-{% [Disabled ComboBox Component](././images/combobox-disable.png)" %}
+![Disabled ComboBox Component](../images/combobox-disable.png)
