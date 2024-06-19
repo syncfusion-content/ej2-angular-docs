@@ -40,4 +40,4 @@ The [disableItem](https://ej2.syncfusion.com/angular/documentation/api/multi-sel
 
 If you want to disabled the overall component to set the [enabled](https://ej2.syncfusion.com/angular/documentation/api/multi-select/#enabled) property to false.
 
-{% [Disabled MultiSelect Component](././images/multiselect-disable.png)" %}
+![Disabled MultiSelect Component](../images/multiselect-disable.png)

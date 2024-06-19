@@ -136,9 +136,6 @@ The following example shows a default OTP Input component.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/otp-input/getting-started/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="app.module.ts" %}
-{% include code-snippet/otp-input/getting-started/src/app.module.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/otp-input/getting-started/src/main.ts %}
 {% endhighlight %}
