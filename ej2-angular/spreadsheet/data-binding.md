@@ -40,6 +40,20 @@ By default, when a data source is bound to a sheet, columns are auto-assigned fr
 
 > You can customize the mapping of column data only in the local data binding support.
 
+The following code example demonstrates how to customize the mapping of column data:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/field-mapping-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/field-mapping-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/spreadsheet/field-mapping-cs1" %}
+
 ## Remote data
 
 To bind remote data to the Spreadsheet control, assign service data as an instance of [`DataManager`](../data) to the `dataSource` property. To interact with remote data source, provide the service endpoint `url`.
