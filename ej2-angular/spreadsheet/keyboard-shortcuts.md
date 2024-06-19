@@ -16,6 +16,7 @@ The keyboard shortcuts supported in the spreadsheet are,
 |-------|---------|
 | Ctrl + O | Displays dialog to open a file. |
 | Ctrl + S / Alt + F2 | Saves the workbook. |
+| Ctrl + P | Print the active worksheet when the spreadsheet is in focus. |
 | F2 | Enables edit mode. |
 | ESC | Cancel edit mode and discard the changes. |
 | Backspace and SPACE | Clears content of the active cell and enables edit mode. |
@@ -107,6 +108,7 @@ The keyboard shortcuts supported in the spreadsheet are,
 | Shift + Enter | Complete the cell editing and select the cell above in the same column. |
 | Tab | Complete the cell editing and select the next cell in the same row. |
 | Shift + Tab | Complete the cell editing and select the previous cell in the same row. |
+| Shift + F2 | Open the dialog box to add or edit notes for the desired cells. Meanwhile, upon pressing the `Esc` key, the dialog box for notes, when in focus, will save and close. |
 | Alt | Focus on the active ribbon tab. |
 | Left | Move the focus to the previous items in the ribbon content. |
 | Right | Move the focus to the next items in the ribbon content. |
