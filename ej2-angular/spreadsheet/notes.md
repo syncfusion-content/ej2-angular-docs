@@ -72,15 +72,15 @@ In the below example, the note functionality is disabled in the Spreadsheet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/notes-cs2/src/app.component.ts %}
+{% include code-snippet/spreadsheet/note-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/notes-cs2/src/main.ts %}
+{% include code-snippet/spreadsheet/note-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/spreadsheet/notes-cs2" %}
+{% previewsample "page.domainurl/samples/spreadsheet/note-cs2" %}
 
 ## Integrating notes during initial loading and using cell data binding
 
@@ -88,15 +88,15 @@ The notes can be added initially when the Spreadsheet loads using cell data bind
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/notes-cs3/src/app.component.ts %}
+{% include code-snippet/spreadsheet/note-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/notes-cs3/src/main.ts %}
+{% include code-snippet/spreadsheet/note-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/spreadsheet/notes-cs3" %}
+{% previewsample "page.domainurl/samples/spreadsheet/note-cs3" %}
 
 ## Limitations
 
