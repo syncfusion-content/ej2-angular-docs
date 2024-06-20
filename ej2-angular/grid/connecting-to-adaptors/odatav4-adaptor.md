@@ -812,6 +812,7 @@ export class AppComponent {
   }
 }
 {% endhighlight %}
+{% endtabs %}
 
 For batch editing, you can specify a custom batch URL as follows:
 
