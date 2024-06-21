@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Edit types in Angular Grid component | Syncfusion
-description: Learn here all about Edit types in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+description: Learn here all about edit types in Angular Grid component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Edit types 
 documentation: ug
@@ -46,7 +46,7 @@ You can customize the default TextBox component in Grid edit form using its prop
 
 Component|Edit Type |Description|Example Customized edit params
 -----|---|-----|-----|
-[TextBox](../../textbox) |stringedit| The `stringedit` type renders a TextBox component for string data type columns. To customize the `TextBox` component, refer to the [TextBox API documentation](https://ej2.syncfusion.com/angular/documentation/api/textbox) for detailed information on available properties | params: { showClearButton : true}
+[TextBox](../../textbox) |stringedit| The `stringedit` type renders a TextBox component for string data type columns. To customize the `TextBox` component, refer to the [TextBox API documentation](https://ej2.syncfusion.com/angular/documentation/api/textbox/) for detailed information on available properties | params: { showClearButton : true}
 
 The following sample code demonstrates the customization applied to TextBox component of **CustomerID** Grid column:
 
@@ -112,7 +112,7 @@ You can customize the `DropDownList` component in Grid edit form using its prope
 
 Component|Edit Type |Description| Example Customized edit params
 -----|-----|-----|----|
-[DropDownList](../../drop-down-list)-|DropDownEdit|  The `dropdownedit` type renders a DropDownList component for string data type columns. To customize the DropDownList component, refer to the [DropDownList API documentation](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list) for detailed information on available properties.  | params: { value: ‘Germany’ }
+[DropDownList](../../drop-down-list)-|DropDownEdit|  The `dropdownedit` type renders a DropDownList component for string data type columns. To customize the DropDownList component, refer to the [DropDownList API documentation](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/) for detailed information on available properties.  | params: { value: ‘Germany’ }
 
 The following sample code demonstrates the customization applied to DropDownList component  of **ShipCity** Grid column:
 
@@ -134,7 +134,7 @@ In Syncfusion's Grid component, you have an option to provide a custom data sour
 
 To achieve this, you can utilize the [columns->edit->params](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#edit) property. This property allows you to define the edit params for the column within the grid.
 
-When setting a new data source using the edit params, you need to specify a new [query](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#query)  property for the DropDownList. The `query` property allows you to define custom queries for data retrieval and filtering.
+When setting a new data source using the edit params, you need to specify a new [query](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#query)  property for the DropDownList. The `query` property allows you to define custom queries for data retrieval and filtering.
 
 In the below demo, DropDownList is rendered with custom data source for the **ShipCountry** column :
 
@@ -154,7 +154,7 @@ In the below demo, DropDownList is rendered with custom data source for the **Sh
 
 The Syncfusion Grid component provides filtering for the DropDownList within the edit form. This feature allows to select options from a predefined list and easily search for specific items using the built-in filtering feature.  
 
-To enable filtering, set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#allowfiltering) property to **true** within the edit params. This will enable the filtering feature in the DropDownList.
+To enable filtering, set the [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#allowfiltering) property to **true** within the edit params. This will enable the filtering feature in the DropDownList.
 
 In the following demo, filtering is enabled for the **ShipCountry** column:
 
@@ -242,7 +242,7 @@ You can customize the DateTimePicker component in Grid edit form using its prope
 
 Component|Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[DateTimePicker](../../datetimepicker)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** component for date time data type columns. You can customize the DateTimePicker component, refer to the [DateTimePicker API documentation](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker) for detailed information on available properties. | params: { value: new Date() }
+[DateTimePicker](../../datetimepicker)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** component for date time data type columns. You can customize the DateTimePicker component, refer to the [DateTimePicker API documentation](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker/) for detailed information on available properties. | params: { value: new Date() }
  
 The following sample code demonstrates the customization applied to DatePicker component of **OrderDate** Grid column:
 
