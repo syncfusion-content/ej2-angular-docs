@@ -12,6 +12,9 @@ domainurl: ##DomainURL##
 The following section explains the steps required to create the Syncfusion's Angular Splitter component.
 The Splitter component will make splittable layouts by placing separator in-between two panes. Based on the position of the separator you can adjust size of the splitter panes in the dynamic manner.
 
+To get start quickly with Angular Splitter using CLI and Schematics, you can check on this video:
+{% youtube "https://www.youtube.com/watch?v=fAWnD2lbsvQ" %}
+
 ## Getting Started with Angular CLI
 
 The following section explains the steps required to create and configure basic angular-cli application.
@@ -70,7 +73,7 @@ Navigate to the created project folder.
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package

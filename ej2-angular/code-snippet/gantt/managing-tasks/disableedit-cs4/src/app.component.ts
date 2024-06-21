@@ -2,10 +2,6 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { EditService, ToolbarService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { ToolbarItem, EditSettingsModel } from '@syncfusion/ej2-angular-gantt';
 import { Gantt } from '@syncfusion/ej2-gantt';
@@ -15,7 +11,6 @@ import{projectData , editingResources}from "./data"
 imports: [
          GanttModule
     ],
-
 providers: [EditService, ToolbarService],
 standalone: true,
     selector: 'app-root',
@@ -36,6 +31,18 @@ export class AppComponent{
     public columns?: object[];
     public ngOnInit(): void {
         this.data = projectData;
+        this.editDialogFields = [
+            { type: 'General'},
+            { type: 'Dependency'},
+            { type: 'Resources'} , 
+            { type: 'Notes',additionalParams: {inlineMode: { enable: true,onSelection: true }} },
+        ];
+        this.addDialogFields = [
+            { type: 'General', headerText: 'General edit'},
+            { type: 'Dependency'},
+            { type: 'Resources'},
+            {type: 'Notes', additionalParams: {inlineMode: { enable: true,onSelection: true }}},
+        ]; 
         this.toolbar =  ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'ExpandAll', 'CollapseAll'];
         this.taskSettings = {
             id: 'TaskID',
@@ -63,20 +70,7 @@ export class AppComponent{
             allowDeleting: true,
             allowTaskbarEditing: true,
             showDeleteConfirmDialog: true
-            };
-        this.editDialogFields = [
-            { type: 'General'},
-            { type: 'Dependency'},
-            { type: 'Resources'} , 
-            { type: 'Notes',additionalParams: {inlineMode: { enable: true,onSelection: true }} },
-        ];
-        this.addDialogFields = [
-            { type: 'General', headerText: 'General edit'},
-            { type: 'Dependency'},
-            { type: 'Resources'},
-            {type: 'Notes', additionalParams: {inlineMode: { enable: true,onSelection: true }}},
-
-        ];    
+            };   
         this.columns = [
             { field: 'TaskID', headerText: 'Task ID' },
             { field: 'TaskName', headerText: 'Task Name', allowEditing: false },
