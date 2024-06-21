@@ -64,9 +64,9 @@ The following code illustrates how to add a node.
 
 ## Add collection of nodes at runtime
 
-* The collection of nodes can be dynamically added using 'addElements' method.Each time an element is added to the diagram canvas, the 'collectionChange' event will be triggered.
+* The collection of nodes can be dynamically added using [`addElements`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#addelements) method.Each time an element is added to the diagram canvas, the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#collectionChange--emittypecollectionchangeeventargs) event will be triggered.
 
-The following code illustrates how to add a nodes at runtime.
+The following code illustrates how to add nodes at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

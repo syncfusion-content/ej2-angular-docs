@@ -200,3 +200,19 @@ The following code explains how to customize the connector fixed user handle.
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/interaction/connectorfixeduserhandle-cs1" %}
+
+### Tooltip support for Fixed User Handle
+
+The diagram provides support to show tooltip when the mouse hovers over any fixed user handle. To show the tooltip on mouse over, the [`tooltip`](../api/diagram#tooltip) property of diagram model needs to be set with the tooltip [`content`](../api/diagram/diagramTooltip/#content) and [`position`](../api/diagram/diagramTooltip/#position) as shown in the following example.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/interaction/tooltipfixeduserhandle-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/interaction/tooltipfixeduserhandle-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/interaction/tooltipfixeduserhandle-cs1" %}
