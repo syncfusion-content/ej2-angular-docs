@@ -27,7 +27,7 @@ export class AppComponent {
     public diagram?: DiagramComponent;
     public shape: BpmnShapeModel = {
         type: 'Bpmn',
-        shape: 'Event',
+        shape: 'Gateway',
         // Sets type of the gateway as None
         gateway: {
             type: 'None'
