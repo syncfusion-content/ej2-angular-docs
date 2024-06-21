@@ -21,3 +21,5 @@ represent each list’s timeline such as ‘new’, ‘old’, and ‘preview’
 
 * **[Position](./types#position)** - Supports 3 different positions, such as `default`,
 `top` and `bottom`.
+
+
