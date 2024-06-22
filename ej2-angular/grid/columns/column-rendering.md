@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column Rendering in Angular Grid component | Syncfusion
-description: Learn here all about Column Rendering in Syncfusion Angular Grid component of Syncfusion Essential JS 2 and more.
+title: Column rendering in Angular Grid component | Syncfusion
+description: Learn here all about column rendering in Angular Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Columns 
 documentation: ug
