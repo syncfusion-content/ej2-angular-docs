@@ -34,7 +34,7 @@ The following value modules should be injected to extend Chart's functionality.
 | [`StepAreaSeriesService`](https://ej2.syncfusion.com/angular/documentation/api/chart/stepAreaSeries)| Inject this module to use the step area type series in the chart.|
 | [`SplineAreaSeriesService`](https://ej2.syncfusion.com/angular/documentation/api/chart/splineAreaSeries)| Inject this module to use the spline area type series in the chart.|
 | [`MultiColoredAreaSeriesService`](https://ej2.syncfusion.com/angular/documentation/api/chart/multiColoredAreaSeries)| Inject this module to use the multi colored area type series in the chart.|
-| [`ColumnSeriesService`](https://ej2.syncfusion.com/angular/documentation/api/chart/column)| Inject this module to use the column type series in the chart.||
+| [`ColumnSeriesService`](https://ej2.syncfusion.com/angular/documentation/api/chart/column)| Inject this module to use the column type series in the chart.|
 | [`RangeColumnSeriesService`](https://ej2.syncfusion.com/angular/documentation/api/chart/rangeColumnSeries)| Inject this module to use the range column type series in the chart.|
 | [`StackingColumnSeriesService`](https://ej2.syncfusion.com/angular/documentation/api/chart/stackingColumnSeries)| Inject this module to use the stacking column type series in the chart.|
 | [`BarSeriesService`](https://ej2.syncfusion.com/angular/documentation/api/chart/barSeries)| Inject this module to use the bar type series in the chart.|
