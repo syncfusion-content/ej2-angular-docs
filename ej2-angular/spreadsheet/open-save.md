@@ -118,6 +118,20 @@ spreadsheet.openFromJson({ file: file }, { ignoreStyle: true });
 | ignoreImage | If **true**, images will be excluded when loading the JSON data. |
 | ignoreNote | If **true**, notes will be excluded when loading the JSON data. |
 
+The following code snippet demonstrates how to configure the deserialization options and pass them as arguments to the openFromJson method:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/open-from-json/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/open-from-json/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/spreadsheet/open-from-json" %}
+
 ### External workbook confirmation dialog
 
 When you open an excel file that contains external workbook references, you will see a confirmation dialog. This dialog allows you to either continue with the file opening or cancel the operation. This confirmation dialog will appear only if you set the `AllowExternalWorkbook` property value to **false** during the open request, as shown below. This prevents the spreadsheet from displaying inconsistent data.
@@ -261,6 +275,20 @@ spreadsheet.saveAsJson({ onlyValues: true });
 | ignoreChart | If **true**, excludes charts from the JSON output. |
 | ignoreImage | If **true**, excludes images from the JSON output. |
 | ignoreNote | If **true**, excludes notes from the JSON output. |
+
+The following code snippet demonstrates how to configure the serialization options and pass them as arguments to the saveAsJson method:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/save-as-json/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/save-as-json/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/spreadsheet/save-as-json" %}
 
 ### Methods
 
