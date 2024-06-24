@@ -16,7 +16,7 @@ In this guide, we will show you how to create an Angular project and install the
 
 ## Prerequisites
 
-[System requirements for Syncfusion Angular UI components](../system-requirement/)
+[System requirements for Syncfusion Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 
 ## Setting up an Angular project
 
