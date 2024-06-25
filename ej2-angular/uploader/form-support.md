@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Form support in Angular Uploader component | Syncfusion
-description: Learn here all about Form support in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
+title: Form Support in Angular Uploader Component | Syncfusion
+description: Learn here all about form support in Syncfusion Angular Uploader component, it's elements, and more.
 platform: ej2-angular
 control: Form support 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form support in Angular Uploader component
+# Form Support in Angular Uploader Component
 
 The uploader component works with HTML form like default file input.
 The following configuration is must to make the uploader work inside the form.
@@ -36,7 +36,7 @@ When you reset the form, the file list and data will be cleared.
 ## Template-driven forms
 
 By using `ngModel` directive, you can bind the model to the uploader in template-driven forms.
-For more details, refer to the [Angular Documentation](https://angular.io/guide/forms#template-driven-forms)
+For more details, refer to the [Angular Documentation](https://v17.angular.io/guide/forms#template-driven-forms)
 
 The following sample demonstrates how to render uploader component with required validation inside the template-driven forms.
 
@@ -56,7 +56,7 @@ The following sample demonstrates how to render uploader component with required
 
 You can render the uploader component inside the reactive forms.
 The reactive forms rendered with the help of `FormGroup`.
-For more details, refer to the [Angular Documentation](https://angular.io/guide/reactive-forms)
+For more details, refer to the [Angular Documentation](https://v17.angular.io/guide/reactive-forms)
 
 The following sample demonstrates how to render uploader component with required validation inside the `reactive forms`.
 
@@ -72,4 +72,4 @@ The following sample demonstrates how to render uploader component with required
   
 {% previewsample "page.domainurl/samples/uploader/reactive-cs1" %}
 
-> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-ui-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.
+> You can also explore [Angular File Upload](https://www.syncfusion.com/angular-components/angular-file-upload) feature tour page for its groundbreaking features. You can also explore our [Angular File Upload example](https://ej2.syncfusion.com/angular/demos/#/material/uploader/default) to understand how to browse the files which you want to upload to the server.

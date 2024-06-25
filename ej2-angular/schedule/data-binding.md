@@ -119,7 +119,7 @@ export class AppComponent implements OnInit {
   onCreate() {
     const scheduleObj = this.scheduleObj; // Schedule instance
     const ajax = new Ajax(
-      "https://ej2services.syncfusion.com/production/web-services/api/Schedule",
+      "https://services.syncfusion.com/angular/production/api/Schedule",
       "GET"
     );
     ajax.send();
