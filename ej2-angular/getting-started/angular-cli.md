@@ -266,7 +266,7 @@ export class AppComponent implements OnInit {
   
 {% previewsample "page.domainurl/samples/common/quickstart1-cs1" %}
 
-By using the Syncfusion Angular Grid component, you can easily add a robust data Grid to your Angular application that supports paging and sorting of data. For more details refer [Syncfusion Angular Grid](../grid/getting-started/).
+By using the Syncfusion Angular Grid component, you can easily add a robust data Grid to your Angular application that supports paging and sorting of data. For more details refer [Syncfusion Angular Grid](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli).
 
 ## Syncfusion Angular components showcase samples
 
