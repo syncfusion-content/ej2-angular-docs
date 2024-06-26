@@ -12,6 +12,14 @@ domainurl: ##DomainURL##
 
 This section explains the steps to create a Word document editor within your application and demonstrates the basic usage of the Document Editor component.
 
+To get started quickly with DocumentEditor component using CLI, you can check the video below.
+
+{% youtube "https://www.youtube.com/watch?v=UHdjjR_BbQY" %}
+
+## Prerequisites
+
+[System requirements for Syncfusion Angular Document Editor](../system-requirement/)
+
 ## Dependencies
 
 The list of dependencies required to use the Document Editor component in your application is given below:
@@ -48,133 +56,50 @@ The Document Editor component requires server-side interactions for the followin
 
 To know about server-side dependencies, please refer this [page](../document-editor/web-services-overview).
 
-## Setup your development environment
+## Setup Angular Environment
 
-* To setup basic `Angular` sample use following commands.
-
-    ```javascript
-    git clone https://github.com/angular/quickstart.git quickstart
-    cd quickstart
-    npm install
-    ```
-
-For more information, refer to [Angular sample setup](https://angular.io/guide/setup/)
-
-## Installing Syncfusion DocumentEditor package
-
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
-
-Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
-
-Add [`@syncfusion/ej2-angular-documenteditor`](https://www.npmjs.com/package/@syncfusion/ej2-angular-documenteditor/v/20.2.38) package to the application.
+You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
 ```bash
-ng add @syncfusion/ej2-angular-documenteditor
+npm install -g @angular/cli@16.0.1
 ```
 
-### Angular compatibility compiled package(ngcc)
+## Create an Angular Application
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
-
-Add [`@syncfusion/ej2-angular-documenteditor@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-documenteditor/v/20.2.38-ngcc) package to the application.
+Start a new Angular application using below Angular CLI command.
 
 ```bash
-npm install @syncfusion/ej2-angular-documenteditor@ngcc --save
+ng new my-app
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+This command will prompt you for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
+
+![Initial_setup](images/Initial-setup.png)
+
+By default, it will create a CSS-based application.
+
+Next, navigate to the created project folder:
+
+```
+cd my-app
+```
+
+## Adding Syncfusion Document Editor package
+
+All the available Essential JS 2 packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
+
+To install Document Editor component, use the following command.
 
 ```bash
-@syncfusion/ej2-angular-documenteditor:"20.2.38-ngcc"
+npm install @syncfusion/ej2-angular-documenteditor --save
 ```
 
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
-
-## Configuring system JS
-
-[Syncfusion DocumentEditor packages](./getting-started#dependencies/) need to be mapped in systemjs.config.js configuration file.
-
-Syncfusion `ej2-angular-documenteditor` packages have to be mapped in the systemjs.config.js configuration file.
-
-```javascript
-/**
- * System configuration for Angular samples
- * Adjust as necessary for your application needs.
- */
-(function (global) {
-  System.config({
-    paths: {
-      // paths serve as alias
-      'npm:': 'node_modules/',
-      'syncfusion:': './node_modules/@syncfusion/',
-    },
-    // map tells the System loader where to look for things
-    map: {
-        // our app is within the app folder
-        'app': 'app',
-        // angular bundles
-        '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
-        '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
-        '@angular/compiler': 'npm:@angular/compiler/bundles/compiler.umd.js',
-        '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.js',
-        '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
-        '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
-        '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
-        '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
-
-        // syncfusion bundles
-        "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-buttons": "syncfusion:ej2-buttons/dist/ej2-buttons.umd.min.js",
-        "@syncfusion/ej2-splitbuttons": "syncfusion:ej2-splitbuttons/dist/ej2-splitbuttons.umd.min.js",
-        "@syncfusion/ej2-data": "syncfusion:ej2-data/dist/ej2-data.umd.min.js",
-        "@syncfusion/ej2-dropdowns": "syncfusion:ej2-dropdowns/dist/ej2-dropdowns.umd.min.js",
-        "@syncfusion/ej2-inputs": "syncfusion:ej2-inputs/dist/ej2-inputs.umd.min.js",
-        "@syncfusion/ej2-lists": "syncfusion:ej2-lists/dist/ej2-lists.umd.min.js",
-        "@syncfusion/ej2-navigations": "syncfusion:ej2-navigations/dist/ej2-navigations.umd.min.js",
-        "@syncfusion/ej2-compression": "syncfusion:ej2-compression/dist/ej2-compression.umd.min.js",
-        "@syncfusion/ej2-popups": "syncfusion:ej2-popups/dist/ej2-popups.umd.min.js",
-        "@syncfusion/ej2-file-utils": "syncfusion:ej2-file-utils/dist/ej2-file-utils.umd.min.js",
-        "@syncfusion/ej2-office-chart": "syncfusion:ej2-office-chart/dist/ej2-office-chart.umd.min.js",
-        "@syncfusion/ej2-calendars": "syncfusion:ej2-calendars/dist/ej2-calendars.umd.min.js",
-        "@syncfusion/ej2-pdf-export": "syncfusion:ej2-pdf-export/dist/ej2-pdf-export.umd.min.js",
-        "@syncfusion/ej2-svg-base": "syncfusion:ej2-svg-bases/dist/ej2-svg-base.umd.min.js",
-        "@syncfusion/ej2-charts": "syncfusion:ej2-charts/dist/ej2-charts.umd.min.js",
-        "@syncfusion/ej2-documenteditor": "syncfusion:ej2-documenteditor/dist/ej2-documenteditor.umd.min.js",
-        "@syncfusion/ej2-angular-base": "syncfusion:ej2-angular-base/dist/ej2-angular-base.umd.min.js",
-
-        "@syncfusion/ej2-angular-documenteditor": "syncfusion:ej2-angular-documenteditor/dist/ej2-angular-documenteditor.umd.min.js",
-        // other libraries
-        'rxjs': 'npm:rxjs',
-        'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
-    },
-    // packages tells the System loader how to load when no filename and/or no extension
-    packages: {
-      app: {
-        defaultExtension: 'js',
-        meta: {
-          './*.js': {
-            loader: 'systemjs-angular-loader.js'
-          }
-        }
-      },
-      rxjs: {
-        defaultExtension: 'js'
-      }
-    }
-  });
-})(this);
-```
+> The **--save** will instruct NPM to include the grid package inside of the **dependencies** section of the **package.json**.
 
 ## Adding CSS reference
 
-To render the Documenteditor component, need to import document editor and its dependent component’s styles.
-This can be referenced in your `[src/styles/styles.css]` using the following code.
+The following CSS files are available in **../node_modules/@syncfusion** package folder.
+This can be referenced in [src/styles.css] using following code.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -185,15 +110,7 @@ This can be referenced in your `[src/styles/styles.css]` using the following cod
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-documenteditor/styles/material.css';
-```
-
-> To know about individual component CSS, please refer to [Individual Component theme files](../appearance/theme-studio#filtering-a-specific-list-of-components) section.
-
-In case, if you want to make use of the combined CSS files of entire components, then you can avail it from the root folder of Essential JS 2 package and reference it with the code shown below.
-
-```css
-@import '../node_modules/@syncfusion/ej2/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-documenteditor/styles/material.css';
 ```
 
 ## Adding Component
@@ -201,6 +118,80 @@ In case, if you want to make use of the combined CSS files of entire components,
 You can add `DocumentEditorContainer` Component with  predefined toolbar and properties pane options or `DocumentEditor` component with customize options.
 
 >Note: Starting from `v19.3.0.x`, we have optimized the accuracy of text size measurements such as to match Microsoft Word pagination for most Word documents. This improvement is included as default behavior along with an optional API [to disable it and retain the document pagination behavior of older versions](../document-editor/how-to/disable-optimized-text-measuring).
+
+### DocumentEditorContainer Component
+
+DocumentEditorContainer is a predefined component which wraps DocumentEditor, Toolbar, Properties pane, and Status bar into a single component. And the toolbar and properties pane is used to view and modify the document in DocumentEditor thought public APIs available in it.
+
+#### Registering DocumentEditorContainer Module
+
+Import `DocumentEditorContainer` module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-documenteditor` [src/app/app.module.ts].
+
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
+import { AppComponent } from './default.component';
+
+/**
+ * Module
+ */
+@NgModule({
+    imports: [
+        BrowserModule,
+        DocumentEditorContainerModule
+    ],
+    declarations: [AppComponent],
+    bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+#### Adding DocumentEditorContainer component
+
+Modify the template in [src/app/app.component.ts] file to render the Document Editor Container component.
+Add the Angular Document Editor Container by using `<ejs-documenteditor>` selector in **template** section of the app.component.ts file.
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
+
+@Component({
+    selector: 'app-container',
+    // specifies the template string for the DocumentEditorContainer component
+    template: `<ejs-documenteditorcontainer serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
+    providers: [ToolbarService]
+})
+export class AppComponent implements OnInit {
+
+    ngOnInit(): void {
+    }
+}
+```
+
+#### Run the DocumentEditorContainer application
+
+The quickstart project is configured to compile and run the application in a browser. Use the following command to run the application.
+
+```javascript
+ng serve --open
+```
+
+DocumentEditorContainer output will be displayed as follows.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/document-editor/document-editor-container-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/document-editor/document-editor-container-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/document-editor/document-editor-container-cs2" %}
+
+>Note: If you see a license banner when running your application, it means that you need to obtain a license key and register it within the application in order to use Syncfusion components. You can find more information on how to obtain and register a license key on our [Licensing overview](../licensing/overview/) page.
 
 ### DocumentEditor Component
 
@@ -237,7 +228,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
       selector: 'app-container',
       // specifies the template string for the DocumentEditor component
-      template: `<ejs-documenteditor serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/"> </ejs-documenteditor>`
+      template: `<ejs-documenteditor serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/"> </ejs-documenteditor>`
 })
 export class AppComponent implements OnInit {
 
@@ -251,7 +242,7 @@ export class AppComponent implements OnInit {
 The quickstart project is configured to compile and run the application in a browser. Use the following command to run the application.
 
 ```javascript
-npm start
+ng serve --open
 ```
 
 Output will be displayed as follows.
@@ -268,77 +259,7 @@ Output will be displayed as follows.
   
 {% previewsample "page.domainurl/samples/document-editor/getting-started-cs1" %}
 
-### DocumentEditorContainer Component
-
-DocumentEditorContainer is a predefined component which wraps DocumentEditor, Toolbar, Properties pane, and Status bar into a single component. And the toolbar and properties pane is used to view and modify the document in DocumentEditor thought public APIs available in it.
-
-#### Registering DocumentEditorContainer Module
-
-Import `DocumentEditorContainer` module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-documenteditor` [src/app/app.module.ts].
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
-import { AppComponent } from './default.component';
-
-/**
- * Module
- */
-@NgModule({
-    imports: [
-        BrowserModule,
-        DocumentEditorContainerModule
-    ],
-    declarations: [AppComponent],
-    bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
-
-#### Adding DocumentEditorContainer component
-
-Modify the template in [src/app/app.component.ts] file to render the Document Editor Container component.
-Add the Angular Document Editor Container by using `<ejs-documenteditor>` selector in `template` section of the app.component.ts file.
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-import { ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
-
-@Component({
-    selector: 'app-container',
-    // specifies the template string for the DocumentEditorContainer component
-    template: `<ejs-documenteditorcontainer serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
-    providers: [ToolbarService]
-})
-export class AppComponent implements OnInit {
-
-    ngOnInit(): void {
-    }
-}
-```
-
-#### Run the DocumentEditorContainer application
-
-The quickstart project is configured to compile and run the application in a browser. Use the following command to run the application.
-
-```javascript
-npm start
-```
-
-DocumentEditorContainer output will be displayed as follows.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/document-editor/document-editor-container-cs2/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/document-editor/document-editor-container-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/document-editor/document-editor-container-cs2" %}
+>Note: If you see a license banner when running your application, it means that you need to obtain a license key and register it within the application in order to use Syncfusion components. You can find more information on how to obtain and register a license key on our [Licensing overview](../licensing/overview/) page.
 
 ## Frequently Asked Questions
 

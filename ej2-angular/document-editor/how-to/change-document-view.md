@@ -27,7 +27,7 @@ import {
 
 @Component({
       selector: 'app-root',
-      template: `<ejs-documenteditor id="container" #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="330px" style="display:block" [isReadOnly]=false [enableSelection]=true
+      template: `<ejs-documenteditor id="container" #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="330px" style="display:block" [isReadOnly]=false [enableSelection]=true
       [enablePrint]=true [enableSfdtExport]=true [enableWordExport]=true [enableOptionsPane]=true [enableContextMenu]=true
       [enableHyperlinkDialog]=true [enableBookmarkDialog]=true [enableTableOfContentsDialog]=true [enableSearch]=true
       [enableParagraphDialog]=true [enableListDialog]=true [enableTablePropertiesDialog]=true [enableBordersAndShadingDialog]=true
@@ -46,7 +46,7 @@ export class AppComponent {
     @ViewChild('documenteditor_default')
     public container: DocumentEditorComponent;
     onCreate(): void {
-        this.container.serviceUrl = 'https://ej2services.syncfusion.com/production/web-services/api/documenteditor/';
+        this.container.serviceUrl = 'https://services.syncfusion.com/angular/production/api/documenteditor/';
         this.container.layoutType='Continuous';
     }
 }
@@ -73,7 +73,7 @@ export class AppComponent {
     public container: DocumentEditorContainerComponent;
 
     onCreate(): void {
-        this.container.serviceUrl = 'https://ej2services.syncfusion.com/production/web-services/api/documenteditor/';
+        this.container.serviceUrl = 'https://services.syncfusion.com/angular/production/api/documenteditor/';
         this.container.layoutType='Continuous';
     }
 
