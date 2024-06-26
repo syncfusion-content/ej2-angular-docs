@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disable header and footer edit in document editor in Angular Document editor component | Syncfusion
+title: Disable Header and Footer Edit in Angular Document Editor | Syncfusion
 description: Learn here all about Disable header and footer edit in document editor in Syncfusion Angular Document editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Disable header and footer edit in document editor 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Disable header and footer edit in document editor in Angular Document editor component
+# Disable header and footer edit in Angular Document editor component
 
 ## Disable header and footer edit in DocumentEditorContainer instance
 
@@ -27,7 +27,7 @@ import {
 @Component({
       selector: 'app-root',
       // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`,
+      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`,
       providers: [ToolbarService],
 })
 export class AppComponent implements OnInit {
@@ -62,7 +62,7 @@ import {
 @Component({
       selector: 'app-root',
       // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`,
+      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`,
       providers: [ToolbarService],
 })
 export class AppComponent implements OnInit {
@@ -96,7 +96,7 @@ The following example code illustrates how to header and footer edit in `Documen
 // @Component({
 //   selector: 'app-root',
 //   // specifies the template string for the DocumentEditorContainer component
-//   template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=false (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`
+//   template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=false (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`
 // })
 // export class AppComponent implements OnInit {
 //   @ViewChild('documenteditor_default')
@@ -116,7 +116,7 @@ import {
 
 @Component({
       selector: 'app-root',
-      template: `<ejs-documenteditor #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="330px" style="display:block" [isReadOnly]=false [enableSelection]=true
+      template: `<ejs-documenteditor #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="330px" style="display:block" [isReadOnly]=false [enableSelection]=true
       [enablePrint]=true [enableSfdtExport]=true [enableWordExport]=true [enableOptionsPane]=true [enableContextMenu]=true
       [enableHyperlinkDialog]=true [enableBookmarkDialog]=true [enableTableOfContentsDialog]=true [enableSearch]=true
       [enableParagraphDialog]=true [enableListDialog]=true [enableTablePropertiesDialog]=true [enableBordersAndShadingDialog]=true

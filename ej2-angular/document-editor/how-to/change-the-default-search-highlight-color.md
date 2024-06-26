@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change the default search highlight color in Angular Document editor component | Syncfusion
+title: Change Search Highlight Color in Angular Document Editor | Syncfusion
 description: Learn here all about Change the default search highlight color in Syncfusion Angular Document editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Change the default search highlight color 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Change the default search highlight color in Angular Document editor component
+# Change Search Highlight Color in Angular Document Editor
 
 Document editor provides an options to change the default search highlight color using [`searchHighlightColor`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/documentEditorSettingsModel/#searchhighlightcolor) in Document editor settings. The highlight color which is given in [`documentEditorSettings`](https://ej2.syncfusion.com/angular/documentation/api/document-editor-container/#documenteditorsettings) will be highlighted on the searched text. By default, search highlight color is `yellow`.
 
@@ -22,7 +22,7 @@ import { ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
       selector: 'app-root',
       // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [documentEditorSettings]= "searchHighlightColor" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
+      template: `<ejs-documenteditorcontainer serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [documentEditorSettings]= "searchHighlightColor" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
       providers: [ToolbarService],
 })
 export class AppComponent implements OnInit {

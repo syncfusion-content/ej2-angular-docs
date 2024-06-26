@@ -26,7 +26,7 @@ export class AppComponent {
     public readonly: boolean = true;
     public selectedDate: Date = new Date(2020, 9, 20);
     private dataManager: DataManager = new DataManager({
-       url: 'https://ej2services.syncfusion.com/production/web-services/api/Schedule',
+       url: 'https://services.syncfusion.com/angular/production/api/Schedule',
        adaptor: new ODataV4Adaptor,
        crossDomain: true
     });

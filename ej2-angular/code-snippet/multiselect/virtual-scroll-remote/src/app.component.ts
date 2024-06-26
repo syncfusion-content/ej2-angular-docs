@@ -2,12 +2,9 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
 import { Component } from '@angular/core';
 import { MultiSelectComponent, VirtualScroll } from '@syncfusion/ej2-angular-dropdowns';
-import { Query, DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
+import { Query, DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
 
 MultiSelectComponent.Inject(VirtualScroll);
 
@@ -25,8 +22,8 @@ standalone: true,
 export class AppComponent {
     // bind the DataManager instance to dataSource property
     public customerData: DataManager = new DataManager({
-        url: 'https://services.syncfusion.com/angular/production/api/Employees',
-        adaptor: new WebApiAdaptor,
+        url: 'https://services.syncfusion.com/angular/production/api/VirtualDropdownData',
+        adaptor: new UrlAdaptor,
         crossDomain: true
     });
     // maps the appropriate column to fields property

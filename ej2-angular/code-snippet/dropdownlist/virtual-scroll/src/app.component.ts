@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
 import { Component } from '@angular/core';
 import { DropDownListComponent, VirtualScroll } from '@syncfusion/ej2-angular-dropdowns';
 

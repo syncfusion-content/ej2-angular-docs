@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize font family drop down in Angular Document editor component | Syncfusion
+title: Customize Font Family Dropdown in Angular Document Editor | Syncfusion
 description: Learn here all about Customize font family drop down in Syncfusion Angular Document editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customize font family drop down 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize font family drop down in Angular Document editor component
+# Customize font family drop down in Angular Document editor
 
 Document editor provides an options to customize the font family drop down list values using [`fontfamilies`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/documentEditorSettingsModel/#fontfamilies) in Document editor settings. Fonts which are added in fontFamilies of [`documentEditorSettings`](https://ej2.syncfusion.com/angular/documentation/api/document-editor-container/#documenteditorsettings) will be displayed on font drop down list of text properties pane and font dialog.
 
@@ -22,7 +22,7 @@ import { ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
       selector: 'app-root',
       // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [documentEditorSettings]= "fontFamilies" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
+      template: `<ejs-documenteditorcontainer serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [documentEditorSettings]= "fontFamilies" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
       providers: [ToolbarService]
 })
 export class AppComponent implements OnInit {

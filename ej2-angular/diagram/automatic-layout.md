@@ -25,7 +25,7 @@ Diagram provides support to auto-arrange the nodes in the diagram area that is r
 
 The hierarchical tree layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root. To arrange the nodes in a hierarchical structure, specify the layout [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) as hierarchical tree.
 
->Note: If you want to use hierarchical tree layout in diagram, you need to inject HierarchicalTree in the diagram.
+N> If you want to use hierarchical tree layout in diagram, you need to inject HierarchicalTree in the diagram.
 
 The following example shows how to arrange the nodes in a hierarchical structure.
 
@@ -47,7 +47,7 @@ The radial tree layout arranges nodes on a virtual concentric circle around a ro
 
 To arrange nodes in a radial tree structure, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) of the layout as `RadialTree`.
 
->Note: If you want to use radial tree layout in diagram, you need to inject DataBinding and RadialTree in the diagram.
+N> If you want to use radial tree layout in diagram, you need to inject DataBinding and RadialTree in the diagram.
 
 The following code illustrates how to arrange the nodes in a radial tree structure.
 
@@ -163,7 +163,7 @@ The symmetric layout has been formed using nodes position by closer together or 
 
 The layout’s [`springLength`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) defined as how long edges should be, ideally. This will be the resting length for the springs. Edge attraction and vertex repulsion forces to be defined by using layout’s [`springFactor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout), the more sibling nodes repel each other. The relative positions do not change any more from one iteration to the next. The number of iterations can be specified by using layout’s [`maxIteration`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout).
 
->Note: If you want to use symmetric layout in diagram, you need to inject SymmetricLayout in the diagram.
+N> If you want to use symmetric layout in diagram, you need to inject SymmetricLayout in the diagram.
 
 ## Mind Map layout
 
@@ -177,22 +177,12 @@ To create a Mindmap Layout using Angular Diagram, refer to the below video link,
 
 An [`Orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) of a `MindMapTreeLayout` is used to arrange the tree layout according to a specific direction. By default, the orientation is set to Horizontal. The following table outlines the various orientation types available:
 
-<table>
-<tr>
-<td><b>Orientation Type<b></td>
-<td><b>Description<b></td>
-</tr>
-<tr>
-<td>Horizontal</td>
-<td>Aligns the tree layout from left to right</td>
-</tr>
-<tr>
-<td>Vertical</td>
-<td>Aligns the tree layout from top to bottom</td>
-</tr>
-</table>
+| Orientation Type |Description|
+| -----------  | ----------- |
+|Horizontal|Aligns the tree layout from left to right|
+|Vertical|Aligns the tree layout from top to bottom|
 
->Note: If you want to use mind map layout in diagram, you need to inject MindMap in the diagram.
+N> If you want to use mind map layout in diagram, you need to inject MindMap in the diagram.
 
 The following code example illustrates how to create an mindmap layout
 
@@ -226,7 +216,7 @@ The following code example illustrates how to create a complex hierarchical tree
   
 {% previewsample "page.domainurl/samples/diagram/automaticlayout/complexhiertree-cs1" %}
 
->Note: If you want to use Complex hierarchical layout in diagram, you need to inject ComplexHierarchicalTree in the diagram.
+N> If you want to use Complex hierarchical layout in diagram, you need to inject ComplexHierarchicalTree in the diagram.
 
 ### Line Distribution
 
@@ -234,7 +224,7 @@ Line distribution is used to arrange the connectors without overlapping in autom
 
 The following code example illustrates how to create a complex hierarchical tree with line distribution.
 
->Note: If you want to use line distribution in diagram layout, you need to inject  LineDistribution module in the diagram.
+N> If you want to use line distribution in diagram layout, you need to inject  LineDistribution module in the diagram.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -252,7 +242,7 @@ The following code example illustrates how to create a complex hierarchical tree
 
 Linear arrangement is used to linearly arrange the child nodes in layout, which means the parent node is placed in the center corresponding to its children. When line distribution is enabled, linear arrangement is also activated by default. The [`arrangement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/childArrangement/#childarrangement) property of layout is used to enable or disable the linear arrangement in layout. By default arrangement will be `Nonlinear`.
 
->Note: If you want to use linear arrangement in diagram layout, you need to inject  LineDistribution module in the diagram. Linear arrangement is applicable only for complex hierarchical tree layout.
+N> If you want to use linear arrangement in diagram layout, you need to inject  LineDistribution module in the diagram. Linear arrangement is applicable only for complex hierarchical tree layout.
 
 The following code illustrates how to allow a linear arrangement in diagram layout.
 
@@ -358,7 +348,7 @@ The layout orientation can used to arrange the layout based on the direction. th
 
 Diagram provides support to customize the  [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout) of layout. You can set the desired orientation using layout.orientation.
 
->Note: In the diagram the default orientation is TopToBottom.
+N> In the diagram the default orientation is TopToBottom.
 
 The following code illustrates how to arrange the nodes in a BottomToTop orientation.
 

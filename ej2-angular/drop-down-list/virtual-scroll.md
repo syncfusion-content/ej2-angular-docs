@@ -62,6 +62,27 @@ The following sample displays the OrderId from the `Orders` Data Service.
   
 {% previewsample "page.domainurl/samples/dropdownlist/virtual-scroll-remote" %}
 
+## Customizing items count in virtualization 
+
+When the `enableVirtualization` property is enabled, the `take` property provided by the user within the Query parameter at the initial state or during the `actionBegin` event will be considered. Internally, it calculates the items that fit onto the current page (i.e., probably twice the amount of the popup's height). If the user-provided take value is less than the minimum number of items that fit into the popup, the user-provided take value will not be considered.
+
+The following sample shows the example for Customizing items count in virtualization.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/dropdownlist/virtual-scroll-items/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/dropdownlist/virtual-scroll-items/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="template.html" %}
+{% include code-snippet/dropdownlist/virtual-scroll-items/src/virtual-scroll.html %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/dropdownlist/virtual-scroll-items" %}
+
 ## Grouping
 
 The DropDownList component supports grouping with Virtualization. It allows you to organize elements into groups based on different categories. Each item in the list can be classified using the [groupBy](../api/drop-down-list/#fields) field in the data table. After grouping, virtualization works similarly to local data binding, providing a seamless user experience. When the data source is bound to remote data, an initial request is made to retrieve all data for the purpose of grouping. Subsequently, the grouped data works in the same way as local data binding on virtualization. 

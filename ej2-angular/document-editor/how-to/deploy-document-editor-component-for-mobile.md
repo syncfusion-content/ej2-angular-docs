@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deploy document editor component for mobile in Angular Document editor component | Syncfusion
+title: Deploy Document Editor for Mobile in Angular | Syncfusion
 description: Learn here all about Deploy document editor component for mobile in Syncfusion Angular Document editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Deploy document editor component for mobile 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Deploy document editor component for mobile in Angular Document editor component
+# Deploy document editor for mobile in Angular
 
 ## Document editor component for Mobile
 
@@ -25,7 +25,7 @@ import { ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
       selector: 'app-container',
       // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer #document_editor (documentChange)="onDocumentChange()" serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
+      template: `<ejs-documenteditorcontainer #document_editor (documentChange)="onDocumentChange()" serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
       providers: [ToolbarService]
 })
 export class AppComponent {

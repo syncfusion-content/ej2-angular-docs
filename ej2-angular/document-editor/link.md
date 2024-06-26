@@ -46,7 +46,7 @@ import {
       selector: 'app-container',
       // specifies the template string for the Document Editor container component
       template: `<div><button ejs-button (click)="insertText()" >Insert Text</button>
-      <ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer></div>`,
+      <ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer></div>`,
       encapsulation: ViewEncapsulation.None,
       providers: [ToolbarService]
 })

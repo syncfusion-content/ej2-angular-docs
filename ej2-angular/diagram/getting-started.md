@@ -60,7 +60,7 @@ To install Diagram component, use the following command.
 npm install @syncfusion/ej2-angular-diagrams --save
 ```
 
->Note: The –save will instruct NPM to include the diagram package inside of the dependencies section of the package.json.
+N> The --save will instruct NPM to include the diagram package inside of the dependencies section of the package.json.
 
 ## Registering Diagram Module
 
@@ -183,7 +183,7 @@ Now, run the application by using npm start command. Open the browser with the g
 npm start
 ```
 
->Note: The selector specified in the @Component decorator of the **app.component.ts** file must match the custom element tag used in the index.html file. For example, if your @Component decorator includes the selector "app-container", your index.html file should include an element `<app-container></app-container>`.
+N> The selector specified in the **@Component** decorator of the **app.component.ts** file must match the custom element tag used in the index.html file. For example, if your @Component decorator includes the selector "app-container", your index.html file should include an element `<app-container></app-container>`.
 
 ## Basic Diagram elements
 
@@ -243,71 +243,17 @@ The appearance of a node can be customized by changing its [`fill`](../api/diagr
 
 You can add multiple nodes with different shapes into diagram.
 
-```javascript
-import { DiagramComponent, DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
-import {
-  FlowShapeModel,
-  NodeModel,
-  ConnectorModel,
-} from "@syncfusion/ej2-angular-diagrams";
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/getting-started/connectnode-cs2/src/app.component.ts %}
+{% endhighlight %}
 
-@Component({
-imports: [
-         DiagramModule
-    ],
-
-providers: [ ],
-standalone: true,
-  selector: "app-container",
-  template: `<ejs-diagram id="diagram" width="100%" height="580px" [getNodeDefaults]='nodeDefaults' [getConnectorDefaults]='connectorDefaults'>
-    <e-nodes>
-        <e-node id='node1' [offsetX]=300 [offsetY]=50 [shape]='terminator'>
-            <e-node-annotations>
-                <e-node-annotation content='Start'></e-node-annotation>
-            </e-node-annotations>
-        </e-node>
-        <e-node id='node2' [offsetX]=300 [offsetY]=140 [shape]='process'>
-            <e-node-annotations>
-                <e-node-annotation content='var i = 0;'></e-node-annotation>
-            </e-node-annotations>
-        </e-node>
-        <e-node id='node3' [offsetX]=300 [offsetY]=230 [shape]='decision'>
-            <e-node-annotations>
-                <e-node-annotation content='i < 10?'></e-node-annotation>
-            </e-node-annotations>
-        </e-node>
-    </e-nodes>
-</ejs-diagram>`,
-  encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-  @ViewChild("diagram")
-  public diagram?: DiagramComponent;
-  public terminator?: FlowShapeModel;
-  public process?: FlowShapeModel;
-  public decision?: FlowShapeModel;
-  public nodeDefaults(node: NodeModel): NodeModel {
-    node.height = 50;
-    node.width = 140;
-    node.style = {fill:'skyblue', strokeColor: 'skyblue'};
-    return node;
-  }
-
-  public connectorDefaults(obj: ConnectorModel): ConnectorModel {
-    obj.type = "Orthogonal";
-    obj.targetDecorator = { shape: "Arrow", width: 10, height: 10 };
-    return obj;
-  }
-  ngOnInit(): void {
-    this.terminator = { type: 'Flow', shape: 'Terminator' };
-    this.process = { type: 'Flow', shape: 'Process' };
-    this.decision = { type: 'Flow', shape: 'Decision' };
-  }
-}
-
-
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/getting-started/connectnode-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/getting-started/connectnode-cs2" %}
 
 ### Connect flow chart nodes
 
@@ -377,7 +323,7 @@ Define Employee Information as JSON data. The following code example shows an em
 
 ### Map data source
 
-You can configure the above "Employee Information" with diagram, so that the nodes and connectors are automatically generated using the mapping properties. The following code example show how `dataSourceSettings` is used to map ID and parent with property name identifiers for employee information.
+You can configure the above "Employee Information" with diagram, so that the nodes and connectors are automatically generated using the mapping properties. The following code example demonstrates how to use [`dataSourceSettings`](../api/diagram/datasourcemodel/) to map [`id`](../api/diagram/dataSourceModel/#id) and [`parentId`](../api/diagram/dataSourceModel/#parentid) with the corresponding property names of employee information.
 
 ```typescript
 @Component({
@@ -435,7 +381,7 @@ export class AppComponent {
 
 ### Rendering layout with Datasource
 
-To create an organizational chart, the [`type`](../api/diagram/layout) of layout should be set as an `OrganizationalChart`. The following code example shows how DataManager is used to generate Layout based on the DataSourceSettings of the Diagram.
+To create an organizational chart, the [`type`](../api/diagram/layoutType/) of layout should be set as an `OrganizationalChart`. The following code example shows how DataManager is used to generate Layout based on the DataSourceSettings of the Diagram.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -465,4 +411,4 @@ The following code examples indicate how to define the default appearance of nod
   
 {% previewsample "page.domainurl/samples/diagram/getting-started/orgchart-cs2" %}
 
->Note: Please note that project generated through angular CLI project will always the changes made into application and compiled it automatically. We don’t need to run “npm start” command for each changes made into the application.
+N> Please note that project generated through angular CLI project will always the changes made into application and compiled it automatically. We don’t need to run “npm start” command for each changes made into the application.
