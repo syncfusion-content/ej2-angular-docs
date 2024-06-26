@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
+import { DiagramComponent, DiagramModule } from '@syncfusion/ej2-angular-diagrams'
 import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
-import { BasicShapeModel } from "@syncfusion/ej2-angular-diagrams";
+import {
+  FlowShapeModel,
+  NodeModel,
+  ConnectorModel,
+} from "@syncfusion/ej2-angular-diagrams";
 
 @Component({
 imports: [
@@ -15,30 +14,48 @@ imports: [
 providers: [ ],
 standalone: true,
   selector: "app-container",
-  template: `<ejs-diagram id="diagram" width="100%" height="580px" mode="SVG">
+  template: `<ejs-diagram id="diagram" width="100%" height="580px" [getNodeDefaults]='nodeDefaults' [getConnectorDefaults]='connectorDefaults'>
     <e-nodes>
-        <e-node id='node1' [height]=60 [width]=100 [offsetX]=300 [offsetY]=80 [shape]='shape'>
+        <e-node id='node1' [offsetX]=300 [offsetY]=50 [shape]='terminator'>
             <e-node-annotations>
                 <e-node-annotation content='Start'></e-node-annotation>
             </e-node-annotations>
         </e-node>
-        <e-node id='node2' [height]=60 [width]=100 [offsetX]=300 [offsetY]=160 [shape]='shape'>
+        <e-node id='node2' [offsetX]=300 [offsetY]=140 [shape]='process'>
             <e-node-annotations>
                 <e-node-annotation content='var i = 0;'></e-node-annotation>
             </e-node-annotations>
         </e-node>
+        <e-node id='node3' [offsetX]=300 [offsetY]=230 [shape]='decision'>
+            <e-node-annotations>
+                <e-node-annotation content='i < 10?'></e-node-annotation>
+            </e-node-annotations>
+        </e-node>
     </e-nodes>
-    <e-connectors>
-        <e-connector id='connector1' sourceID='node1' targetID='node2'></e-connector>
-    </e-connectors>
-  </ejs-diagram>`,
+</ejs-diagram>`,
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   @ViewChild("diagram")
-  public shape?: BasicShapeModel;
+  public diagram?: DiagramComponent;
+  public terminator?: FlowShapeModel;
+  public process?: FlowShapeModel;
+  public decision?: FlowShapeModel;
+  public nodeDefaults(node: NodeModel): NodeModel {
+    node.height = 50;
+    node.width = 140;
+    node.style = {fill:'skyblue', strokeColor: 'skyblue'};
+    return node;
+  }
+
+  public connectorDefaults(obj: ConnectorModel): ConnectorModel {
+    obj.type = "Orthogonal";
+    obj.targetDecorator = { shape: "Arrow", width: 10, height: 10 };
+    return obj;
+  }
   ngOnInit(): void {
-    this.shape = { type: "Basic", shape: "Rectangle" };
+    this.terminator = { type: 'Flow', shape: 'Terminator' };
+    this.process = { type: 'Flow', shape: 'Process' };
+    this.decision = { type: 'Flow', shape: 'Decision' };
   }
 }
-

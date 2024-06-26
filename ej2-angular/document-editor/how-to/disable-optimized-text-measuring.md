@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disable optimized text measuring in Angular Document editor component | Syncfusion
+title: Optimized Text Measuring in Angular Document Editor | Syncfusion
 description: Learn here all about Disable optimized text measuring in Syncfusion Angular Document editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Disable optimized text measuring 
@@ -31,7 +31,7 @@ import {
 
 @Component({
       selector: 'app-container',
-      template: `<ejs-documenteditor id="container" [documentEditorSettings]= "settings" serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="330px" style="display:block" [isReadOnly]=false [enableSelection]=true
+      template: `<ejs-documenteditor id="container" [documentEditorSettings]= "settings" serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="330px" style="display:block" [isReadOnly]=false [enableSelection]=true
       [enablePrint]=true [enableSfdtExport]=true [enableWordExport]=true [enableOptionsPane]=true [enableContextMenu]=true
       [enableHyperlinkDialog]=true [enableBookmarkDialog]=true [enableTableOfContentsDialog]=true [enableSearch]=true
       [enableParagraphDialog]=true [enableListDialog]=true [enableTablePropertiesDialog]=true [enableBordersAndShadingDialog]=true
@@ -62,7 +62,7 @@ import { ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
       selector: 'app-container',
       // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer [documentEditorSettings]= "settings" serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
+      template: `<ejs-documenteditorcontainer [documentEditorSettings]= "settings" serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
       providers: [ToolbarService]
 })
 export class AppComponent {

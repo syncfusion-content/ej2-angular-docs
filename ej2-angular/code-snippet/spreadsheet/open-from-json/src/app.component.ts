@@ -26,7 +26,7 @@ import { Component } from '@angular/core';
         <input type="checkbox" id="chart"><label for="chart">Ignore Chart</label>
         <input type="checkbox" id="image"><label for="image">Ignore Image</label>
         <input type="checkbox" id="note"><label for="note">Ignore Note</label>
-        <ejs-uploader #defaultupload [asyncSettings]='path' (success)='onUploadSuccess($event)' [allowedExtensions]='allowExtensions' [buttons]='buttons' [showFileList]='false'></ejs-uploader>
+        <ejs-uploader #defaultupload [asyncSettings]='path' (success)='onUploadSuccess($event)' [allowedExtensions]='allowedExtensions' [buttons]='buttons' [showFileList]='false'></ejs-uploader>
     </div>
     <ejs-spreadsheet #spreadsheet (beforeOpen)="beforeOpen($event)">
     </ejs-spreadsheet>

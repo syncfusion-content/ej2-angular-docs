@@ -19,7 +19,7 @@ imports: [
 standalone: true,
       selector: "app-container",
       template: `<button id='container_ruler_button'(click)="onClick(this)">Show/Hide Ruler</button>
-      <ejs-documenteditorcontainer #documenteditor serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" isReadOnly: false style="width:100%;display:block" [enableToolbar]=true [documentEditorSettings]= "enableRuler"> </ejs-documenteditorcontainer>`,
+      <ejs-documenteditorcontainer #documenteditor serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" isReadOnly: false style="width:100%;display:block" [enableToolbar]=true [documentEditorSettings]= "enableRuler"> </ejs-documenteditorcontainer>`,
       encapsulation: ViewEncapsulation.None,
       providers: []
 })

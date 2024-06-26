@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Move selection to specific position in Angular Document editor component | Syncfusion
+title: Move Selection to a Position in Angular Document Editor | Syncfusion
 description: Learn here all about Move selection to specific position in Syncfusion Angular Document editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Move selection to specific position 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Move selection to specific position in Angular Document editor component
+# Move Selection to Specific Position in Angular Document Editor
 
 Using [`select`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/selection/#select) API in selection module, You can set cursor position to anywhere in the document.
 
@@ -52,7 +52,7 @@ import {
 @Component({
       selector: 'app-root',
       // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`,
+      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`,
       providers: [ToolbarService],
 })
 export class AppComponent implements OnInit {

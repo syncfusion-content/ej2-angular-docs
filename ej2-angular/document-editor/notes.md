@@ -33,7 +33,7 @@ import {
 
 @Component({
       selector: 'app-container',
-      template: `<div><button ejs-button (click)="insertFootnote()" >Insert Footnote</button><ejs-documenteditor  id="container" serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" style="display:block;height:400px" [isReadOnly]=false [enableSelection]=true
+      template: `<div><button ejs-button (click)="insertFootnote()" >Insert Footnote</button><ejs-documenteditor  id="container" serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" style="display:block;height:400px" [isReadOnly]=false [enableSelection]=true
       [enablePrint]=true [enableSfdtExport]=true [enableWordExport]=true [enableOptionsPane]=true [enableContextMenu]=true
       [enableHyperlinkDialog]=true [enableBookmarkDialog]=true [enableTableOfContentsDialog]=true [enableSearch]=true
       [enableParagraphDialog]=true [enableListDialog]=true [enableTablePropertiesDialog]=true [enableBordersAndShadingDialog]=true
@@ -76,7 +76,7 @@ import {
 @Component({
       selector: 'app-container',
       //specifies the template string for the Document Editor component
-      template: `<div><button ejs-button (click)="insertEndnote()" >Insert Footnote</button><ejs-documenteditor  id="container" serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/" style="display:block;height:400px" [isReadOnly]=false [enableSelection]=true
+      template: `<div><button ejs-button (click)="insertEndnote()" >Insert Footnote</button><ejs-documenteditor  id="container" serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" style="display:block;height:400px" [isReadOnly]=false [enableSelection]=true
       [enablePrint]=true [enableSfdtExport]=true [enableWordExport]=true [enableOptionsPane]=true [enableContextMenu]=true
       [enableHyperlinkDialog]=true [enableBookmarkDialog]=true [enableTableOfContentsDialog]=true [enableSearch]=true
       [enableParagraphDialog]=true [enableListDialog]=true [enableTablePropertiesDialog]=true [enableBordersAndShadingDialog]=true
