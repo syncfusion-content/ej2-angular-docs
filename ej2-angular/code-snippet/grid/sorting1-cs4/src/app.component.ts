@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, SortService } from '@syncfusion/ej2-angular-grids'
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { SortEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
 imports: [
-        
         GridModule
     ],
 
@@ -37,9 +33,10 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
 
-    actionBegin({ requestType, columnName, cancel }: SortEventArgs) {
-        if (requestType === 'sorting' && columnName === 'OrderID') {
-            cancel = true;
+    actionBegin(args: SortEventArgs) {
+        if (args.requestType === 'sorting' && args.columnName === 'OrderID') {
+            this.message = args.requestType + ' action cancelled for ' + args.columnName + ' column';
+            args.cancel = true;
         }
     }
     actionComplete({ requestType, columnName }: SortEventArgs) {
