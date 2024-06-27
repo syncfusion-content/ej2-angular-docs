@@ -1,0 +1,22 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+.accordion-control-section {
+    margin: 0 10% 0 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .accordion-control-section {
+      margin: 0;
+  }
+}
