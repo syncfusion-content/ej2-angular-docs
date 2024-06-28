@@ -95,6 +95,7 @@ timelineSettings: any;
         addClass([this.ganttObj.ganttChartModule.chartElement], 'e-droppable');
     };
     onDragStop(args: DragAndDropEventArgs): void {
+        args.cancel = true;
         let chartEle: any = closest(args.target, '.e-chart-row');
         let gridEle: any = closest(args.target, '.e-row');
         if(gridEle){
@@ -102,8 +103,8 @@ timelineSettings: any;
           this.ganttObj.selectRow(index);
         }
         if (chartEle) {
-            var index = chartEle.ariaRowIndex;
-            this.ganttObj.selectRow(Number(index));
+            var index = chartEle.rowIndex;
+            this.ganttObj.selectRow(index);
         }
         let record: any = args.draggedNodeData;
         let selectedData = this.ganttObj.flatData[this.ganttObj.selectedRowIndex];
@@ -121,10 +122,6 @@ timelineSettings: any;
                 resources: resources
             };
             this.ganttObj.updateRecordByID(data);
-            var elements = document.querySelectorAll('.e-drag-item');
-            while (elements.length > 0 && elements[0].parentNode) {
-                elements[0].parentNode.removeChild(elements[0]);
-            }
         }
     }
 }

@@ -93,7 +93,7 @@ You can customize the popup list for when no data is found or no matches are fou
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/multicolumn-combobox/norecord-templatea" %}
+{% previewsample "page.domainurl/samples/multicolumn-combobox/norecord-template" %}
 
 ## Action failure template
 

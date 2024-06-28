@@ -7,10 +7,17 @@ control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
+# Getting started with Angular Dashboard Layout component
 
-# Getting started with Angular Dashboard layout component
+The following section explains the steps required to create the Syncfusion's Angular Dashboard Layout component.
+The Dashboard Layout is a grid-structured Layout component that helps create static and dynamic Dashboard Layouts with panels. It is also referred as Angular Dashboard Layout Template.
 
-This section explains how to create a simple **DashboardLayout** component and its basic usage.
+To get start quickly with Angular Dashboard Layout using CLI and Schematics, you can check on this video:
+{% youtube "https://www.youtube.com/watch?v=n4pActgI7uk" %} 
+
+## Getting Started with Angular CLI
+
+The following section explains the steps required to create and configure basic angular-cli application.
 
 ## Prerequisites
 
@@ -60,7 +67,7 @@ The following list of dependencies are required to use the DashboardLayout compo
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package

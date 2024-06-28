@@ -28,7 +28,9 @@ The `template` context receives the following information:
 {% include code-snippet/timeline/template/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
+{% raw %}
 {% include code-snippet/timeline/template/src/app.component.html %}
+{% endraw %}
 {% endhighlight %}
 {% highlight css tabtitle="app.component.css" %}
 {% include code-snippet/timeline/template/src/app.component.css %}
