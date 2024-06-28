@@ -1,0 +1,49 @@
+#container {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+.accordion-control-section {
+    margin: 0 10% 0 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .accordion-control-section {
+        margin: 0;
+    }
+}
+
+#err1, #err2, #err3 {
+    display: none;
+    color: red;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+#err1.show,
+#err2.show,
+#err3.show {
+    display: block;
+}
+
+.e-dialog {
+    max-height: 300px !important; /* csslint allow: important */
+}
+
+.template_title {
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 16px;
+}

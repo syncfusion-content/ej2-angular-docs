@@ -357,7 +357,6 @@ The following example demonstrates how the [actionBegin](https://ej2.syncfusion.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid/sorting1-cs4/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/sorting1-cs4/src/main.ts %}
 {% endhighlight %}

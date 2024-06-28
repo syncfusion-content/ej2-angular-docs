@@ -1,0 +1,60 @@
+/* Requied CSS for minimum height change in toolbar */
+
+.e-toolbar {
+    min-height: 10px !important;
+}
+
+.e-toolbar .e-toolbar-items {
+    min-height: 10px !important;
+}
+
+.e-hscroll .e-scroll-nav {
+    min-height: 10px !important;
+}
+
+.e-toolbar .e-toolbar-items .e-toolbar-item {
+    min-height: 10px !important;
+}
+
+.e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn.e-btn {
+    height: 20px !important;
+    line-height: 20px !important;
+}
+
+.e-toolbar .e-tbar-btn .e-icons.e-btn-icon {
+    font-size: 10px !important;
+}
+
+.e-toolbar .e-tbar-btn .e-tbar-btn-text {
+    font-size: 10px !important;
+}
+
+.e-toolbar .e-toolbar-items .e-toolbar-item .e-tbar-btn-text {
+    height: inherit !important;
+}
+
+.e-toolbar .e-toolbar-item .e-tbar-btn.e-btn .e-icons.e-btn-icon {
+    line-height: 20px !important;
+    min-height: 20px !important;
+}
+
+.e-toolbar .e-hor-nav {
+    min-height: 10px !important;
+}
+
+.e-toolbar .e-tbar-btn .e-tbar-btn-text {
+    line-height: 20px !important;
+}
+
+#container {
+    visibility: hidden;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
