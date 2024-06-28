@@ -51,7 +51,9 @@ You can specify the template content for the items, by using the selector for an
 {% include code-snippet/timeline/items/content/template-based/src/main.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.component.html" %}
+{% raw %}
 {% include code-snippet/timeline/items/content/template-based/src/app.component.html %}
+{% endraw %}
 {% endhighlight %}
 {% highlight css tabtitle="app.component.css" %}
 {% include code-snippet/timeline/items/content/template-based/src/app.component.css %}
