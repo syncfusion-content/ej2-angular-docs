@@ -70,7 +70,7 @@ Use below command to Navigate into the created project folder.
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -148,28 +148,18 @@ import { EmitType } from '@syncfusion/ej2-base';
 @Component({
   selector: 'app-root',
   template: `
-  <button class="e-control e-btn" style="position: absolute;" id="targetButton" (click)="onOpenDialog($event)">Open Dialog</button>
-  <div #container class='root-container'></div>
-  <ejs-dialog id='dialog' #ejDialog content='This is a Dialog with content' [target]='targetElement' width='250px'>
-  </ejs-dialog>`
+    <div id="dialog-container">
+        <button class="e-control e-btn" id="targetButton" (click)="onOpenDialog($event)">Open
+          Dialog</button>
+        <ejs-dialog id='dialog' #ejDialog target="#dialog-container" [showCloseIcon]='true' content='This is a Dialog content'
+          width='350px'>
+        </ejs-dialog>
+    </div>`
 })
 export class AppComponent implements OnInit {
-  @ViewChild('ejDialog') ejDialog: DialogComponent;
   // Create element reference for dialog target element.
-  @ViewChild('container', { read: ElementRef, static: true }) container: ElementRef;
-  // The Dialog shows within the target element.
-  public targetElement: HTMLElement;
+  @ViewChild('ejDialog') ejDialog: DialogComponent;
 
-  // To get all element of the dialog component after component get initialized.
-  ngOnInit() {
-    this.initilaizeTarget();
-  }
-
-  // Initialize the Dialog component target element.
-  public initilaizeTarget: EmitType<object> = () => {
-    this.targetElement = this.container.nativeElement.parentElement;
-  }
-  // Sample level code to handle the button click action
   public onOpenDialog = function(event: any): void {
       // Call the show method to open the Dialog
       this.ejDialog.show();
@@ -181,17 +171,9 @@ export class AppComponent implements OnInit {
 Add following styles in corresponding css file. The below mentioned styles are used in styles.css file,
 
 ```css
-
-html,
-body,
 #dialog-container {
-    display: block;
-    height: 100%;
-    margin: 0;
-    overflow: hidden;
-    width: 100%;
+    height: 500px;
 }
-
 ```
 
 >Note: Please do the necessary change in `index.html` file. In this demo we used id selector in `<app-root id='dialog-container'></app-root>`
@@ -275,7 +257,7 @@ The Dialog header can be enabled by adding the header content as text or HTML co
   
 {% previewsample "page.domainurl/samples/dialog/getting-started-cs4" %}
 
-## Enable footer
+## Enable default footer Buttons
 
 The Dialog provides built-in support to render the `buttons` on the footer (for ex: ‘OK’ or ‘Cancel’ buttons). Each Dialog button allows the user to perform any action while clicking on it.
 

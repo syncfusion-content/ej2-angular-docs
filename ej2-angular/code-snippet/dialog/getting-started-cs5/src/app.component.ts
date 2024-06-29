@@ -19,35 +19,22 @@ imports: [
 standalone: true,
     selector: 'app-root',
     template: `
-    <button class="e-control e-btn" style="position: absolute;" id="targetButton" (click)="onOpenDialog($event)">Open Dialog</button>
-    <div #container class='root-container'></div>
-      <ejs-dialog id='dialog' #ejDialog header='Dialog' content='This is a Dialog with button and primary button' [target]='targetElement'
-      width='250px' [buttons]='buttons'>
+      <div id="dialog-container">
+        <button class="e-control e-btn" id="targetButton" (click)="onOpenDialog($event)">Open Dialog</button>
+        <ejs-dialog id='dialog' #ejDialog target="#dialog-container" header='Dialog' [showCloseIcon]='true' content='This is a Dialog with button and primary button'
+          width='350px' [buttons]='buttons'>
       </ejs-dialog>
-        `
+      </div>`
 })
 
 export class AppComponent implements OnInit {
+  // Reference the Dialog element
      @ViewChild('ejDialog') ejDialog: DialogComponent | any;
-  // Create element reference for dialog target element.
-  @ViewChild('container', { read: ElementRef, static: true }) container: ElementRef | any;
-  // The Dialog shows within the target element.
-  public targetElement?: HTMLElement;
 
-  // To get all element of the dialog component after component get initialized.
-  ngOnInit() {
-    this.initilaizeTarget();
-  }
-
-  // Initialize the Dialog component's target element.
-  public initilaizeTarget: EmitType<object> = () => {
-    this.targetElement = this.container.nativeElement.parentElement;
-  }
-
-  // Hide the Dialog when click the footer button.
-  public hideDialog: EmitType<object> = () => {
-      this.ejDialog.hide();
-  }
+  // Show the Dialog when click the button
+  public onOpenDialog = (event: any): void => {
+    this.ejDialog.show();
+  };
 
   // Enables the footer buttons
   public buttons: Object = [
@@ -68,13 +55,8 @@ export class AppComponent implements OnInit {
     }
   ];
 
-  // Sample level code to handle the button click action
-  public onOpenDialog = (event: any): void => {
-      // Call the show method to open the Dialog
-      this.ejDialog.show();
-  };
+  // Hide the Dialog when click the footer button.
+  public hideDialog() {
+    this.ejDialog.hide();
 }
-
-
-
-
+}
