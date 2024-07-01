@@ -88,18 +88,19 @@ The notes can be added initially when the Spreadsheet loads using cell data bind
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/note-cs2/src/app.component.ts %}
+{% include code-snippet/spreadsheet/note-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/note-cs2/src/main.ts %}
+{% include code-snippet/spreadsheet/note-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/spreadsheet/note-cs2" %}
+{% previewsample "page.domainurl/samples/spreadsheet/note-cs3" %}
 
 ## Limitations
 
 * When importing the document with notes, the formatting of the content in the notes will not be available. Similarly, while adding notes, we cannot apply formatting to them.
 * The style and appearance of the dialog box for the notes, including size, color, border, and other elements, cannot be directly changed.
 * Exporting the workbook along with notes is not supported in file formats such as Comma Separated Values (.csv), Excel Macro-Enabled Workbook (.xlsm), Excel Binary Workbook (.xlsb), and PDF Document (.pdf).
+* Notes added outside the used ranges of the worksheet will not be included in the exported document.

@@ -10,6 +10,12 @@ MIT
 @syncfusion/ej2-angular-base
 SEE LICENSE IN license
 
+@syncfusion/ej2-angular-buttons
+SEE LICENSE IN license
+
+@syncfusion/ej2-angular-splitbuttons
+SEE LICENSE IN license
+
 @syncfusion/ej2-angular-spreadsheet
 SEE LICENSE IN license
 

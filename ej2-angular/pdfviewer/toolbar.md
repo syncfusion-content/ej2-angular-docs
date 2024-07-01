@@ -28,9 +28,9 @@ The following table shows built-in toolbar items and its actions:-
 | AnnotationEditTool | This tool provides options to enable or disable the edit mode of annotation in the PDF Viewer.|
 | CommentTool | This tool facilitates the addition of sticky notes to the pages of PDF documents in the PDF Viewer.|
 
-### Show/Hide the default toolbar
+## Show/Hide the built-in toolbar
 
-The PDF Viewer has an option to show or hide the complete default toolbar. You can achieve this by using following two ways.
+The PDF Viewer has an option to show or hide the complete built-in toolbar. You can achieve this by using following two ways.
 
 * **Show/Hide toolbar using enableToolbar API as in the following code snippet**
 
@@ -107,9 +107,9 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   </script>
   ```
 
-### Show/Hide the default toolbaritem
+## Show/Hide the built-in toolbaritem
 
-The PDF Viewer has an option to show or hide these grouped items in the default toolbar.
+The PDF Viewer has an option to show or hide these grouped items in the built-in toolbar.
 
 * **Show/Hide toolbaritem using toolbarSettings as in the following code snippet.**
 
@@ -188,7 +188,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   </script>
   ```
 
-### Show/Hide the left toolbar with the thumbnails and bookmarks
+## Show/Hide the left toolbar with the thumbnails and bookmarks
 
 The PDF Viewer has an option to show or hide the left toolbar with the thumbnails and bookmarks using enableNavigationToolbar API as in the following code sample.
 
@@ -466,11 +466,11 @@ N> When customizing toolbar items, you have the flexibility to include either ic
 
 ## Custom Toolbar
 
-The PDF Viewer provides API for user interactions options provided in its built-in toolbar. Using this, you can create your own User Interface for toolbar actions at the application level by hiding the default toolbar. The following steps are used to create the custom toolbar for PDF Viewer:
+The PDF Viewer provides API for user interactions options provided in its built-in toolbar. Using this, you can create your own User Interface for toolbar actions at the application level by hiding the built-in toolbar. The following steps are used to create the custom toolbar for PDF Viewer:
 
 **Step 1:** Follow the steps provided in the [link](https://ej2.syncfusion.com/angular/documentation/pdfviewer/getting-started) to create a simple PDF Viewer sample.
 
-**Step 2:** Hide the default toolbar of PDF Viewer using the following code snippet.,
+**Step 2:** Hide the built-in toolbar of PDF Viewer using the following code snippet.,
 
 {% tabs %}
 {% highlight js tabtitle="Standalone" %}
