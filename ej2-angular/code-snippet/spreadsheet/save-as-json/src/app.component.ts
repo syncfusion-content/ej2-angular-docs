@@ -27,7 +27,7 @@ import { Component } from '@angular/core';
         <input type="checkbox" id="note"><label for="note">Ignore Note</label>
         <button class="e-btn" (click)="saveFile()">Save with JSON Serialization</button>
     </div>
-    <ejs-spreadsheet #spreadsheet ></ejs-spreadsheet>
+    <ejs-spreadsheet #spreadsheet [openUrl]="openUrl" ></ejs-spreadsheet>
 </div>`
 })
 export class AppComponent {
@@ -36,6 +36,7 @@ export class AppComponent {
   }
   @ViewChild('spreadsheet')
   public spreadsheetObj!: SpreadsheetComponent;
+  public openUrl = 'https://services.syncfusion.com/angular/production/api/spreadsheet/open';
 
   createOptions() {
       const options: SerializationOptions = {};
