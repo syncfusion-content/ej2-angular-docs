@@ -190,7 +190,7 @@ Conditional formatting helps you to format a cell or range of cells based on the
 You can apply conditional formatting by using one of the following ways,
 
 * Select the conditional formatting icon in the Ribbon toolbar under the Home Tab.
-* Using the [`conditionalFormat()`](../api/spreadsheet/#conditionalformat) method to define the condition.
+* Using the [`conditionalFormat()`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#conditionalformat) method to define the condition.
 * Using the `conditionalFormats` in sheets model.
 
 Conditional formatting has the following types in the spreadsheet,
@@ -256,7 +256,7 @@ In the MAY and JUN columns, we have applied conditional formatting custom format
 You can clear the defined rules by using one of the following ways,
 
 * Using the “Clear Rules” option in the Conditional Formatting button of HOME Tab in the ribbon to clear the rule from selected cells.
-* Using the [`clearConditionalFormat()`](../api/spreadsheet/#clearconditionalformat) method to clear the defined rules.
+* Using the [`clearConditionalFormat()`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#clearconditionalformat) method to clear the defined rules.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

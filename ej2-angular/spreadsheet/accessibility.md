@@ -116,4 +116,4 @@ The accessibility compliance of the Spreadsheet component is shown in the follow
 
 ## See also
 
-* [Accessibility in Syncfusion Angular components](../common/accessibility)
+* [Accessibility in Syncfusion Angular components](https://ej2.syncfusion.com/angular/documentation/common/accessibility)

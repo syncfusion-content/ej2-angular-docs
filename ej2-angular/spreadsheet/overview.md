@@ -27,7 +27,6 @@ The Angular Spreadsheet is an user interactive component to organize and analyze
 * [Sorting](sort): Helps you to arrange the data to particular order in a selected range of cells.
 * [Filtering](filter): Helps you to view specific rows in the Spreadsheet by hiding the other rows.
 * [Undo Redo](undo-redo): Provides the option to perform undo redo operations in Spreadsheet.
-* [Collaborative editing](use-cases/collaborative-editing): Provides the option for real time changes across multiple users in the Spreadsheet.
 * [Hyperlink](link): Provides the option to navigate to web link or cell reference within the sheet or to other sheet in Spreadsheet.
 * [Resize](mobile-responsiveness): Allows you to change the row height and column width. Auto fit the rows and columns based on its content.
 * [Wrap text](cell-range#wrap-text): Provides the option to display the large content as multiple lines in a single cell.
@@ -48,7 +47,7 @@ The Angular Spreadsheet is an user interactive component to organize and analyze
 * [Password protection](protect-sheet#protect-workbook): Allows you to protect the workbook with a password.
 * [Multi-line editing](editing): Allows you to insert a line break between paragraphs of the text within a cell in a Spreadsheet.
 * [Calculate range selection](selection): Helps you to select a range or multiple ranges when editing a formula in a cell.
-* [Right-to-left (RTL)](right-to-left): Aligns content in the Spreadsheet component from right to left.
+* [Right-to-left (RTL)](global-local#right-to-left-rtl): Aligns content in the Spreadsheet component from right to left.
 * [Templates](template): Templates can be used to create custom user experiences in the Spreadsheet.
 * [Globalization](global-local): Personalize the Spreadsheet component with different languages, as well as culture-specific number, date, and time formatting.
 * [Accessibility](accessibility): Provides with built-in accessibility support which helps to access all the Spreadsheet component features through the keyboard, screen readers, or other assistive technology devices.
