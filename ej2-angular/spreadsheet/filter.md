@@ -22,14 +22,14 @@ In the active Spreadsheet, select a range of cells to filter by value of the cel
 
 * Select the filter item in the Ribbon toolbar.
 * Right-click the sheet, select the filter item in the context menu.
-* Use the [`applyFilter()`](../api/spreadsheet/#applyfilter) method programmatically.
+* Use the [`applyFilter()`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#applyfilter) method programmatically.
 * Use `Ctrl + Shift + L` keyboard shortcut to apply the filter.
 
 > * Use `Alt + Up/Down` keyboard shortcut to open the filter dialog.
 
 ## Filter by criteria
 
-The [`applyFilter()`](../api/spreadsheet/#applyfilter) method will apply the filter UI, based on the predicate and range given in the arguments.
+The [`applyFilter()`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#applyfilter) method will apply the filter UI, based on the predicate and range given in the arguments.
 
 > * The [`beforeFilter`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforefilter) event will be triggered before filtering the specified range.
 > * The [`filterComplete`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#filtercomplete) event will be triggered after the filter action is completed successfully.

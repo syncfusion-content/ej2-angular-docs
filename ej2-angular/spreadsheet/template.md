@@ -37,4 +37,3 @@ You can refer to our [Angular Spreadsheet](https://www.syncfusion.com/angular-ui
 * [Filtering](./filter)
 * [Sorting](./sort)
 * [Hyperlink](./link)
-* [`Collaborative Editing`](use-cases/collaborative-editing)
