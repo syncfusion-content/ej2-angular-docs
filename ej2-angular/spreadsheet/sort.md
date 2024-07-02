@@ -21,7 +21,7 @@ By default, the `sort` module is injected internally into Spreadsheet to perform
 In the active Spreadsheet, select a range of cells to sort by cell value. The range sort can be done by any of the following ways:
 * Select the sort item in the Ribbon toolbar and choose the ascending or descending item.
 * Right-click the sheet, select the sort item in the context menu and choose the ascending/descending item.
-* Use the [`sort()`](../api/spreadsheet/#sort) method programmatically.
+* Use the [`sort()`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#sort) method programmatically.
 
 The cell values can be sorted in the following orders:
 * Ascending
