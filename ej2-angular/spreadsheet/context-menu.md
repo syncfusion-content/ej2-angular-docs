@@ -38,10 +38,10 @@ Please find the table below for default context menu items and their actions.
 | [`Copy`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#copy) | Copy the selected row/column header data to the clipboard, so that you can paste it to somewhere else. |
 | [`Paste`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#paste) | Paste the data from clipboard to spreadsheet. |
 | [`Paste Special`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#paste) | `Values` - Paste the data values from clipboard to spreadsheet. `Formats` - Paste the data formats from clipboard to spreadsheet. |
-| [`Insert Columns`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#insertrow) | Insert new rows or columns into the worksheet. |
-| [`Delete Columns`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#deleterow) | Delete existing rows or columns from the worksheet. |
-| [`Hide Columns`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#insert) | Hide the rows and columns. |
-| [`UnHide Columns`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#delete) | Show the hidden rows and columns. |
+| [`Insert Rows`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#insertrow) / [`Insert Columns`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#insertcolumn) | Insert new rows or columns into the worksheet. |
+| [`Delete Rows`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#delete) / [`Delete Columns`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#delete) | Delete existing rows or columns from the worksheet. |
+| [`Hide Rows`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#hiderow) / [`Hide Columns`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#hidecolumn) | Hide the or and columns. |
+| [`UnHide Rows`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#hiderow) / [`UnHide Columns`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#hidecolumn) | Show the hidden rows or columns. |
 
 ## Context Menu Items in Pager
 
