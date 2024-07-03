@@ -137,11 +137,13 @@ In the following demo, editing is disabled for the `TaskName` column.
 
 In Gantt Chart, the controls such as form elements, grid and RTE in add and edit dialog can be customized by using [additionalParams](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property.
 
-### Customize general tab of dialog 
+### Customize general tab of dialog
 
-In the general tab of add/edit dialog, the custom input [fields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/#fields) can be included into fields by defining the field names either from the data source or template in [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/editDialogFieldSettings/) respectively.
+The form element in the `General` tab of the add/edit dialog can be added or removed by using the [fields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/#fields) property within the [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/editDialogFieldSettings/) settings respectively.
 
-In the below sample, added field from the template to general tab.
+The controls of the `fields` can be customized by using the [edit](https://ej2.syncfusion.com/angular/documentation/gantt/managing-tasks/managing-tasks#cell-edit-template) template feature.
+
+In the below sample, `General` tab is customized using the `fields` property. The fields **TaskID**, **TaskName** and **newInput** are added in both `addDialogFields` and `editDialogFields` settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -155,11 +157,15 @@ In the below sample, added field from the template to general tab.
   
 {% previewsample "page.domainurl/samples/gantt/managing-tasks/disableedit-cs2" %}
 
-### Customize dependency, segments and resources tab of dialog 
+### Customize dependency, segments and resources tab of dialog
 
-[Grid](https://ej2.syncfusion.com/angular/documentation/api/grid/) component in the dependency, segment and resource tab of add/edit dialog can be customized, by defining grid module properties in the [additionalParams](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property of [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/editDialogFieldSettings/). 
+You can customize the dependency, segments, and resource tabs of the dialog box using the [additionalParams](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property within the [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/editDialogFieldSettings/) settings respectively. This customization involves defining properties from the [grid](https://ej2.syncfusion.com/angular/documentation/api/grid/) within the `additionalParams` property.
 
-In the below code show cases, how to add additional features to dependency, segments and resources tab.
+In the example below: 
+* The `dependency` tab enables [sorting](https://ej2.syncfusion.com/angular/documentation/api/grid/#allowsorting) and [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbar) options. 
+* The `segments` tab enables `sorting` and `toolbar` options and includes a new column `newData` defined with a specified [field](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#field).
+* The `resources` tab defines a new column `Segment Task`  with specific properties such as `field`, [width](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#width) and [headerText](https://ej2.syncfusion.com/angular/documentation/api/grid/columnModel/#headertext).
+These customizations are applied to both `addDialogFields` and `editDialogFields` settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -175,9 +181,9 @@ In the below code show cases, how to add additional features to dependency, segm
 
 ### Customize note dialog tab
 
- [RTE](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/) component in notes tab of add and edit dialog can be customized, by defining RTE module properties in the [additionalParams](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property of [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/editDialogFieldSettings/). 
- 
- The below code shows how to enable inline mode to RTE in notes tab.
+You can customize the note dialog tab using the [additionalParams](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettingsModel/#additionalParams) property within the [addDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/addDialogFieldSettings/) and [editDialogFields](https://ej2.syncfusion.com/angular/documentation/api/gantt/editDialogFieldSettings/) settings respectively. This customization involves defining properties from the [RTE](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/) module within the `additionalParams` property.
+
+In the following example, the `notes` tab is customized with the [inlinemode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#inlinemode) property enabled, allowing for in-place editing. Additionally, the `OnSelection` property is enabled, which opens the toolbar inline upon selecting text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -102,7 +102,7 @@ import { LinkAnnotationService, BookmarkViewService,
 
 ## How to clear the selection focus from free text annotation
 
-The free text annotations selection focus can be cleared by using the `setAnnotationMode` property of the `annotationModule`.
+The free text annotations selection focus can be cleared by using the [setAnnotationMode](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotation/)  property of the `annotationModule`.
 
 Refer to the following code sample to remove the selection focus from the annotation by using a button click.
 

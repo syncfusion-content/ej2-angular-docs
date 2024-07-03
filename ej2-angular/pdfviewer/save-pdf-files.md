@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Saving PDF file
+# Saving PDF file in Angular PDF Viewer component
 
 After editing the PDF file with various annotation tools, you will need to save the updated PDF to the server, database, or local file system.
 
@@ -26,7 +26,7 @@ Start by following the steps provided in this [link](https://ej2.syncfusion.com/
 
 2. Open the `PdfViewerController.cs` file in your web service project.
 
-3. Modify the `Download()` method to open it in the viewer using URL
+3. Modify the [Download()](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/downloadStartEventArgs/) method to open it in the viewer using URL
 
 ```csharp
 
