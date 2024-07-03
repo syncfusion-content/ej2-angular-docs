@@ -84,7 +84,7 @@ standalone: true,
         <tr>
             <td class="col-lg-6 col-md-6 col-sm-6 col-xs-6 control-title"> MultiSelect </td>
             <td class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <ejs-inplaceeditor id="multiSelect" mode="Inline" type="MultiSelect" value="multiSelectValue" [model]="dropDownModel"></ejs-inplaceeditor>
+                <ejs-inplaceeditor id="multiSelect" mode="Inline" type="MultiSelect" [value]="multiSelectValue" [model]="dropDownModel"></ejs-inplaceeditor>
             </td>
         </tr>
         <tr>

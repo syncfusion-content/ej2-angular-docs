@@ -60,21 +60,23 @@ The following ARIA attributes are used in Gantt:
 
 ## Keyboard navigation
 
-The Gantt component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Gantt component.
+The Gantt component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns) guideline, ensuring accessibility for users of assistive technologies (AT) and those who rely solely on keyboard navigation. The following keyboard shortcuts are supported by the Gantt component:
 
 | **Press** | **To do this** |
 | --- | --- |
+| <kbd>Alt + J</kbd> | Focus Gantt component. |
+| <kbd>Tab / Shift + Tab</kbd> | Focus the next or previous element. |
 | <kbd>Home</kbd> | Selects the first row. |
 | <kbd>End</kbd> | Selects the last row. |
-| <kbd>DownArrow</kbd> | Moves the cell focus/row or cell selection downward. |
-| <kbd>UpArrow</kbd> | Moves the cell focus/row or cell selection upward. |
-| <kbd>LeftArrow</kbd> | Moves the cell focus/row or cell selection left side. |
-| <kbd>RightArrow</kbd> | Moves the cell focus/row or cell selection right side. |
+| <kbd>DownArrow</kbd> | Moves the row selection downward. |
+| <kbd>UpArrow</kbd> | Moves the row  selection upward. |
+| <kbd>LeftArrow</kbd> | Moves the cell focus/cell selection left side. |
+| <kbd>RightArrow</kbd> | Moves the cell focus/cell selection right side. |
 | <kbd>Ctrl + Up Arrow</kbd> | Collapses all tasks. |
 | <kbd>Ctrl + Down Arrow</kbd> | Expands all tasks. |
 | <kbd>Ctrl + Shift + Up Arrow</kbd> | Collapses the selected row. |
 | <kbd>Ctrl + Shift + Down Arrow</kbd> | Expands the selected row. |
-|<kbd>Enter</kbd> | Saves request. |
+| <kbd>Enter</kbd> | Saves request. |
 | <kbd>Esc</kbd> | Cancels request. |
 | <kbd>Insert</kbd> | Adds a new row. |
 | <kbd>Ctrl + Insert</kbd> | Opens addRowDialog. |
@@ -82,12 +84,21 @@ The Gantt component followed the [keyboard interaction](https://www.w3.org/WAI/A
 | <kbd>Delete</kbd> | Deletes the selected row. |
 | <kbd>Shift + F5</kbd> | FocusTask |
 | <kbd>Ctrl + Shift + F</kbd> | Focus search |
-| <kbd>Shift + DownArrow</kbd> | Extends the row/cell selection downwards. |
-| <kbd>Shift + UpArrow</kbd> | Extends the row/cell selection upwards. |
+| <kbd>Shift + DownArrow</kbd> | Extends the cell selection downwards. |
+| <kbd>Shift + UpArrow</kbd> | Extends the cell selection upwards. |
 | <kbd>Shift + LeftArrow</kbd> | Extends the cell selection to the left side. |
 | <kbd>Shift + RightArrow</kbd> | Extends the cell selection to the right side. |
-| <kbd>Tab / Shift + Tab</kbd> | To focus the close icon in the message. |
-| <kbd>Alt + j</kbd> | Focus Gantt component. |
+| <kbd>Ctrl + Z</kbd> | Undo the last action. |
+| <kbd>Ctrl + Y</kbd> | Redo the last action. |
+
+**Navigate between toolbar items using keyboard**
+
+In the Gantt component, follow these steps to navigate between toolbar items using the keyboard:
+
+**Step 1**: Press `ALT + J` to focus on the gantt component.
+**Step 2**: Press the `Tab` key to navigate to the first item in the toolbar.
+**Step 3**: Use the `LeftArrow` or `RightArrow` keys to move between toolbar items.
+**Step 4**: Press `Tab` key again to remove focus from the toolbar and return focus to the Gantt component.
 
 ## Ensuring accessibility
 

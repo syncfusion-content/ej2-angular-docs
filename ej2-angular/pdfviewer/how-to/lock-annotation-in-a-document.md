@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lock annotation in a document in Angular Pdfviewer component | Syncfusion
+title: Lock annotation in Angular Pdfviewer component | Syncfusion
 description: Learn here all about Lock annotation in a document in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Lock annotation in a document 
@@ -14,9 +14,9 @@ The PDF Viewer provides a support to enable or disable lock option for the annot
 
 ## Lock an annotation from code behind
 
-The annotation can be locked either by default settings or by an event using the `IsLocked` API.
+The annotation can be locked either by default settings or by an event using the [IsLocked](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotationSettings/) API.
 
-The following code sample illustrates how to lock custom stamp annotation in a PDF document through `ajaxRequestSuccess` event .
+The following code sample illustrates how to lock custom stamp annotation in a PDF document through [ajaxRequestSuccess](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/ajaxRequestSuccessEventArgs/) event .
 
 {% tabs %}
 {% highlight js tabtitle="Standalone" %}
