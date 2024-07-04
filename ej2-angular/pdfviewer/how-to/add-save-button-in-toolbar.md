@@ -158,4 +158,4 @@ These properties are commonly used when defining custom toolbar items with the `
 
 N> When customizing Save Button item, you have the flexibility to include either icons or text based on your design preference.
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/How%20to/Customize%20existing%20toolbar)
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/How%20to/Add%20Save%20Button%20in%20built%20in%20toolbar/Save%20Button)
