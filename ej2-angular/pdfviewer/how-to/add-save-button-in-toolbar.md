@@ -8,13 +8,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add Save Button in Built-In toolbar in Angular PDF Viewer component
+# Add a Save button in built-in toolbar of Angular PDF Viewer component
 
-## Adding Save Button in Built-In Toolbar
+PDF Viewer allows you to customize (add, show, hide, enable, and disable) existing items in the built-in toolbar.
 
-PDF Viewer allows you to customize(add, show, hide, enable, and disable) existing items in a toolbar.
-
-* Save Button - New  Save Button item can defined by [**CustomToolbarItemModel**](https://helpej2.syncfusion.com/angular/documentation/api/pdfviewer/customToolbarItemModel/) and with existing items in [**ToolbarSettings**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/toolbarSettings/) property. Save Button item click action can be  defined in [`toolbarclick`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/clickEventArgs/).
+* Save Button - `Save` button item can be defined by [**CustomToolbarItemModel**](https://helpej2.syncfusion.com/angular/documentation/api/pdfviewer/customToolbarItemModel/) and with existing items in [**ToolbarSettings**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/toolbarSettings/) property. `Save` button item-click action can be defined in [`toolbarclick`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/clickEventArgs/).
 
 * Show, Hide - Save Button item can be shown or hidden using the [`ToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/toolbarSettings/) property. Pre-defined toolbar items are available with [`ToolbarItem`](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/toolbarItem/).
 
@@ -130,32 +128,32 @@ export class AppComponent implements OnInit {
 
 N> Default value of toolbar items is ['OpenOption', 'PageNavigationTool','MagnificationTool', 'PanTool', 'SelectionTool', 'SearchOption', 'PrintOption', 'DownloadOption','UndoRedoTool', 'AnnotationEditTool', 'FormDesignerEditTool', 'CommentTool', 'SubmitForm'] 
 
-### Align Property
+### Align property
 
 The align property is used to specify the alignment of a save button item within the toolbar.
 
 `Left`: Aligns the item to the left side of the toolbar.
 `Right`: Aligns the item to the right side of the toolbar.
 
-### Tooltip Property
+### Tooltip property
 
 The tooltip property is used to set the tooltip text for a toolbar item. Tooltip provides additional information when a user hovers over the item.
 
-### CssClass Property
+### CssClass property
 
 The cssClass property is used to apply custom CSS classes to a toolbar item. It allows custom styling of the toolbar item.
 
-### Prefix Property
+### Prefix property
 
 The prefix property is used to set the CSS class or icon that should be added as a prefix to the existing content of the toolbar item.
 
-### ID Property
+### ID property
 
 The id property within a CustomToolbarItemModel is a compulsory attribute that plays a vital role in toolbar customization. It serves as a unique identifier for each toolbar item, facilitating distinct references and interactions.
 
 When defining or customizing Save Button items, it is mandatory to assign a specific and descriptive id to the item. 
 These properties are commonly used when defining custom toolbar items with the `CustomToolbarItemModel`` in the context of Syncfusion PDF Viewer. When configuring the toolbar using the `ToolbarSettings`` property, you can include these properties to customize the appearance and behavior of Save Button item.
 
-N> When customizing Save Button item, you have the flexibility to include either icons or text based on your design preference.
+N> When customizing `Save` button item, you have the flexibility to include either icons or text based on your design preference.
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/How%20to/Add%20Save%20Button%20in%20built%20in%20toolbar/Save%20Button)
