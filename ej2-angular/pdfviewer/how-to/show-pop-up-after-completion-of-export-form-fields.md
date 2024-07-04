@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Show pop up after completion of export form fields in Angular Pdfviewer component | Syncfusion
+title: Show pop up in Angular Pdfviewer component | Syncfusion
 description: Learn here all about Show pop up after completion of export form fields in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Show pop up after completion of export form fields 
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Show pop-up after completion of export form fields
 
-The `exportSuccess` event triggers when an export annotations succeed in the PDF Viewer where you can notify the pop-up message.
+The [exportSuccess](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/exportSuccessEventArgs/) event triggers when an export annotations succeed in the PDF Viewer where you can notify the pop-up message.
 
 Refer the following code to notify the pop-up once export annotations succeed.
 

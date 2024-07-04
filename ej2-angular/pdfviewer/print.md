@@ -89,7 +89,7 @@ You can invoke print action using the following code snippet.,
 
 ## Print the PDF document in the new window.
 
-PDF Viewer extension supports printing functionality for loaded PDF files directly within the browser. You can utilize the `printMode` parameter to specify the printing mode, with the option to choose `NewWindow` for printing. Below is a code snippet demonstrating how to implement this functionality
+PDF Viewer extension supports printing functionality for loaded PDF files directly within the browser. You can utilize the [printMode](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/printMode/) parameter to specify the printing mode, with the option to choose [NewWindow](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/printMode/) for printing. Below is a code snippet demonstrating how to implement this functionality
 
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}
@@ -156,11 +156,11 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 {% endhighlight %}
 {% endtabs %}
 
-By setting the printMode to `NewWindow`, the extension will open a new window for printing the PDF document, providing a seamless and user-friendly printing experience.
+By setting the printMode to [NewWindow](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/printMode/), the extension will open a new window for printing the PDF document, providing a seamless and user-friendly printing experience.
 
 ## Limiting the Dialog Opening for Printing
 
-In the Syncfusion PDF Viewer, you can control the printing process by leveraging the `printStart` event. This event enables you to customize the printing behavior, particularly restricting the dialog opening. Below is a code snippet demonstrating how to utilize this event
+In the Syncfusion PDF Viewer, you can control the printing process by leveraging the [printStart](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/printStartEventArgs/) event. This event enables you to customize the printing behavior, particularly restricting the dialog opening. Below is a code snippet demonstrating how to utilize this event
 
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}
@@ -238,7 +238,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 {% endhighlight %}
 {% endtabs %}
 
-In this code snippet, the `printStart` function is defined to handle the printStart event. By setting args.cancel to **true**, the print dialog opening is restricted. By default, the `cancel` property is set to `false`. 
+In this code snippet, the [printStart](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/printStartEventArgs/) function is defined to handle the printStart event. By setting args.cancel to **true**, the print dialog opening is restricted. By default, the [cancel](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/printStartEventArgs/) property is set to `false`. 
 
 ## See also
 
