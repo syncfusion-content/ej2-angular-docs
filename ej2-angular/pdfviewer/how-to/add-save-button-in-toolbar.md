@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add Save Button in Built-In Toolbar | Syncfusion
-description: Learn here all about addins save button in built in Toolbar in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
+description: Learn here all about adding save button in built in Toolbar in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Toolbar 
 documentation: ug
