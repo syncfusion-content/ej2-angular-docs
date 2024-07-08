@@ -30,13 +30,13 @@ export class AppComponent {
             dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
-            drilledMembers: [{ name: 'Country', items: ['France'] }],
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }, { name: 'Total', caption: 'Total Amount', type: 'CalculatedField' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
-            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            columns: [{ name: 'Date', caption: 'Date' }, { name: 'Product' }],
             filters: [],
-            calculatedFieldSettings: [{ name: 'Total', formula: '"Sum(Amount)"+"Sum(Sold)"' }]
+            drilledMembers: [{ name: 'Country', items: ['France'] }],
+            formatSettings: [{ name: 'Amount', format: 'C0' }],
+            rows: [{ name: 'Country' }, { name: 'State' }],
+            values: [{ name: 'Amount', caption: 'Sold Amount' }, { name: 'Quantity', caption: 'Quantity' }, { name: 'Total', caption: 'Total Units', type: 'CalculatedField' }],
+            calculatedFieldSettings: [{ name: 'Total', formula: '"Sum(Amount)"+"Sum(Quantity)"' }]
         };
         this.width = "100%";
     }

@@ -29,13 +29,13 @@ export class AppComponent {
     ngOnInit(): void {
         this.dataSourceSettings = {
             dataSource: Pivot_Data as IDataSet[],
+            columns: [{ name: 'Date', caption: 'Date' }, { name: 'Product' }],
             expandAll: false,
             enableSorting: true,
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Products' }],
+            filters: [{ name: 'Quarter' }],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: [{ name: 'Country' }]
+            rows: [{ name: 'Country' }, { name: 'State' }],
+            values: [{ name: 'Amount', caption: 'Sold Amount' }, { name: 'Quantity', caption: 'Quantity' }]
         };
         this.width = "100%";
     }
