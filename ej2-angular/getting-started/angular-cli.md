@@ -70,7 +70,7 @@ Syncfusion packages are distributed in npm under the `@syncfusion` scope. You ca
 
 Currently, Syncfusion provides two set of package structures for Angular components,
 
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler (Angular’s legacy compilation and rendering pipeline) package.
 
 Syncfusion's latest Angular packages are Ivy-distributed and compatible with Angular 12 and above. To install the package use the following command,
