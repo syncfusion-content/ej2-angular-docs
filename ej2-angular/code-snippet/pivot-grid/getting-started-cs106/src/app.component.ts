@@ -31,11 +31,11 @@ export class AppComponent {
             dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
-            columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
-            values: [{ name: 'Sold', caption: 'Units Sold' }, { name: 'Amount', caption: 'Sold Amount' }],
-            rows: [{ name: 'Country' }, { name: 'Products' }],
+            columns: [{ name: 'Date', caption: 'Date' }, { name: 'Product' }],
+            filters: [],
             formatSettings: [{ name: 'Amount', format: 'C0' }],
-            filters: []
+            rows: [{ name: 'Country' }, { name: 'State' }],
+            values: [{ name: 'Amount', caption: 'Sold Amount' }, { name: 'Quantity', caption: 'Quantity' }]
         };
         this.width = "100%";
     }
