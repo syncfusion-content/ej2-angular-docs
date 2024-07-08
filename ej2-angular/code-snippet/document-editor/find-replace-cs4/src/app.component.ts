@@ -10,7 +10,7 @@ import {ColorPickerModule } from '@syncfusion/ej2-angular-inputs'
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
-    DocumentEditorComponent, SelectionService
+    DocumentEditorComponent
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
@@ -25,21 +25,19 @@ imports: [
 
 
 standalone: true,
-      selector: 'app-container',
-      template: `<div>
-      <ejs-documenteditor #document_editor height="330px" style="display:block" [enableSelection]=true (created)="onCreated()"></ejs-documenteditor>
-      </div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [SelectionService]
+    selector: 'app-container',
+    template: `<div>
+    <ejs-documenteditor #document_editor height="330px" style="display:block" (created)="onCreated()" [isReadOnly]=false [enableEditor]=true ></ejs-documenteditor>
+    </div>`,
+    encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent {
     @ViewChild('document_editor')
     public documentEditor?: DocumentEditorComponent;
-
     onCreated(): void {
         if ((this.documentEditor as DocumentEditorComponent).isDocumentLoaded) {
-            let sfdt: string = `{
+            let sfdt: any = {
                 "sections": [
                     {
                         "blocks": [
@@ -88,7 +86,7 @@ export class AppComponent {
                         "name": "Default Paragraph Font"
                     }
                 ]
-            }`;
+            };
             //Open the document in Document Editor.
             (this.documentEditor as DocumentEditorComponent).open(JSON.stringify(sfdt));
             //Navigate to specified page number.

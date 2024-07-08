@@ -64,7 +64,7 @@ The following list of dependencies are required to use the pivot table component
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -319,6 +319,10 @@ The field list allows to add or remove fields and also rearrange the fields betw
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs105/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs105/src/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs105" %}
@@ -337,6 +341,10 @@ The grouping bar feature automatically populates fields from the bound data sour
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs106/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs106/src/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs106" %}
@@ -352,6 +360,10 @@ The filter axis contains collection of fields that would act as master filter ov
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs107/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs107/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -372,6 +384,10 @@ Also calculated fields can be added to the bound datasource at run time through 
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs108/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs108/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -399,6 +415,10 @@ ng serve --prod
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/pivot-grid/getting-started-cs109/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/pivot-grid/getting-started-cs109/src/datasource.ts %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs109" %}
@@ -414,5 +434,7 @@ ng serve --prod
 
 > But the parameter is mandatory in Angular 8 and above versions. So, follow the below code.
 > @ViewChild('pivotview', { static: false })
+
+For more information and to access the quick start project, visit: [GitHub Repository](https://github.com/SyncfusionExamples/getting-started-with-the-angular-pivot-table-component)
 
 > You can also explore our [Angular Pivot Table example](https://ej2.syncfusion.com/angular/demos/#/material/pivot-table/default) that shows how to rendering of the pivot table with drill-up and drill-down functionality bound to a relational report.
