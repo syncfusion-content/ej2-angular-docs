@@ -35,9 +35,9 @@ public records: { [key: string]: Object }[] = [];
     }
     // maps the appropriate column to fields property
     public fields: object = { text: 'text', value: 'id' };
-    public query: Query = new Query().take(20);
+    public query: Query = new Query().take(40);
     public onBegin: any = (e: any) => {
-        e.query = new Query().take(25);
+        e.query = new Query().take(45);
     };
     // set the placeholder to AutoComplete input
     public waterMark: string = 'e.g. Item 1';   
