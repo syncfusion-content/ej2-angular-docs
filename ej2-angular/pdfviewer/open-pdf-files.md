@@ -26,7 +26,7 @@ Start by following the steps provided in this [link](https://ej2.syncfusion.com/
 
 2. Open the `PdfViewerController.cs` file in your web service project.
 
-3. Modify the `Load()` method to open it in the viewer using URL
+3. Modify the [Load()](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#load) method to open it in the viewer using URL
 
 ```csharp
 
@@ -76,7 +76,7 @@ public IActionResult Load([FromBody] Dictionary<string, string> jsonData)
 
 **Step 3:**  Set the PDF Viewer Properties in React PDF viewer component
 
-Modify the `serviceUrl` property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server.Modify the documentPath with the correct PDF Document URL want to load. 
+Modify the [serviceUrl](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#serviceurl) property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server.Modify the documentPath with the correct PDF Document URL want to load. 
 
 ```typescript
 import { Component, OnInit } from '@angular/core';

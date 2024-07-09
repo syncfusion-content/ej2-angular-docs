@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Get the Base 64 string of the loaded PDF document
 
-The PDF Viewer library allows you to get the base 64 string of the loaded PDF document by using **saveAsBlob()** method. The entire PDF document will get as blob as like memory stream. So, we can save the blob or convert into stream and we can save it in the database. We can also load the PDF document from base 64 string using the **load()** method.
+The PDF Viewer library allows you to get the base 64 string of the loaded PDF document by using [**saveAsBlob()**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#saveasblob) method. The entire PDF document will get as blob as like memory stream. So, we can save the blob or convert into stream and we can save it in the database. We can also load the PDF document from base 64 string using the [**load()**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#load) method.
 
 The following steps are used to get the base 64 string of the loaded PDF document in the PDF viewer control.
 
@@ -41,7 +41,7 @@ base64ofloadedDocument() {
 
 ```
 
-**Step 3:** Use the following code snippet inside the **saveAsBlob()** method to load the document from the base 64 string.
+**Step 3:** Use the following code snippet inside the [**saveAsBlob()**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#saveasblob) method to load the document from the base 64 string.
 
 ```typescript
 // load the document from base 64 string.

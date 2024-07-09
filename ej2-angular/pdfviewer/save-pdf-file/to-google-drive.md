@@ -54,7 +54,7 @@ public PdfViewerController(IWebHostEnvironment hostingEnvironment, IMemoryCache 
 }
 ```
 
-5. Modify the `Download()` method to save the downloaded PDF files to Google Drive bucket
+5. Modify the [Download()](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#download) method to save the downloaded PDF files to Google Drive bucket
 
 ```csharp
 [HttpPost("Download")]
@@ -137,7 +137,7 @@ N> You must use a unique `Client_ID` from json file to interface your applicatio
 
 **Step 4:**  Set the PDF Viewer Properties in Angular PDF viewer component
 
-Modify the `serviceUrl` property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from Google Drive. Ensure that you correctly pass the document name from the files available in your drive folder to the documentPath property.
+Modify the `serviceUrl` property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the [documentPath](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#documentpath) property of the PDF viewer component to the desired name of the PDF file you wish to load from Google Drive. Ensure that you correctly pass the document name from the files available in your drive folder to the documentPath property.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';

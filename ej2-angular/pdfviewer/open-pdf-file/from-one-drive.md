@@ -145,7 +145,7 @@ N> Replace **Your_Tenent_ID**, **Your_Application_ID**, and **Your_Folder_Name_T
 
 **Step 4:**  Set the PDF Viewer Properties in Angular PDF viewer component
 
-Modify the `serviceUrl` property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from One Drive. Ensure that you correctly pass the document name from the files available in your drive folder to the documentPath property.
+Modify the [serviceUrl](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#serviceurl) property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the [documentPath](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#documentpath) property of the PDF viewer component to the desired name of the PDF file you wish to load from One Drive. Ensure that you correctly pass the document name from the files available in your drive folder to the documentPath property.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';

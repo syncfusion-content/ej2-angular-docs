@@ -336,7 +336,7 @@ We can open the already saved PDF document contains Form Fields in it by clickin
 
 ## Validate form fields
 
-The form fields in the PDF Document will be validated when the [enableFormFieldsValidation](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/validateFormFieldsArgs/) is set to true and hook the validateFormFields. The validateFormFields will be triggered when the PDF document is downloaded or printed with the non-filled form fields. The non-filled fields will be obtained in the [nonFillableFields](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/validateFormFieldsArgs/) property of the event arguments of validateFormFields.
+The form fields in the PDF Document will be validated when the [enableFormFieldsValidation](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#enableformfieldsvalidation) is set to true and hook the validateFormFields. The validateFormFields will be triggered when the PDF document is downloaded or printed with the non-filled form fields. The non-filled fields will be obtained in the [nonFillableFields](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/validateFormFieldsArgs/#nonfillablefields) property of the event arguments of validateFormFields.
 
 Add the following code snippet to validate the form fields,
 
@@ -428,7 +428,7 @@ export class AppComponent implements OnInit {
 {% endtabs %}
 ## Export and import form fields
 
-The PDF Viewer control provides the support to export and import the form field data in the following formats using the methods `importFormFields`, `exportFormFields`, `exportFormFieldsAsObject`.
+The PDF Viewer control provides the support to export and import the form field data in the following formats using the methods [importFormFields](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#importformfields), [exportFormFields](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#exportformfields), [exportFormFieldsAsObject](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#exportformfieldsasobject).
 
 * FDF
 * XFDF
@@ -437,7 +437,7 @@ The PDF Viewer control provides the support to export and import the form field 
 
 ### Export and import as FDF
 
-Using the `exportFormFields` method, the form field data can be exported in the specified data format. This method accepts two parameters:
+Using the [exportFormFields](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#exportformfields) method, the form field data can be exported in the specified data format. This method accepts two parameters:
 
 * The first one must be the destination path for the exported data. If path is not specified, it will ask for the location while exporting.
 * The second parameter should be the format type of the form data.
@@ -602,7 +602,7 @@ Form field properties in Syncfusion PDF Viewer allow you to customize and intera
 
 ### Signature and initial fields settings
 
-Using the `updateFormField` method, the form fields can be updated programmatically.
+Using the [updateFormField](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#updateformfields) method, the form fields can be updated programmatically.
 
 The following code example explains how to update the signature field properties on a button click.
 
@@ -738,7 +738,7 @@ The following code example explains how to update the properties of the initial 
 
 ### Textbox field settings
 
-Using the `updateFormField` method, the form fields can be updated programmatically.
+Using the [updateFormField](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#updateformfields) method, the form fields can be updated programmatically.
 
 The following code example explains how to update the Textbox field properties on a button click.
 
@@ -849,7 +849,7 @@ The following code example explains how to update the properties of the Textbox 
 
 ### Password field settings
 
-Using the `updateFormField` method, the form fields can be updated programmatically.
+Using the [updateFormField](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#updateformfields) method, the form fields can be updated programmatically.
 
 The following code example explains how to update the Password field properties on a button click.
 
@@ -958,7 +958,7 @@ The following code example explains how to update the properties of the Password
 
 ### CheckBox field settings
 
-Using the `updateFormField` method, the form fields can be updated programmatically.
+Using the [updateFormField](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#updateformfields) method, the form fields can be updated programmatically.
 
 The following code example explains how to update the CheckBox field properties on a button click.
 
@@ -1051,7 +1051,7 @@ The following code example explains how to update the properties of the CheckBox
 
 ### RadioButton field settings
 
-Using the `updateFormField` method, the form fields can be updated programmatically.
+Using the [updateFormField](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#updateformfields) method, the form fields can be updated programmatically.
 
 The following code example explains how to update the RadioButton field properties on a button click.
 
@@ -1144,7 +1144,7 @@ The following code example explains how to update the properties of the RadioBut
 
 ### ListBox field settings
 
-Using the `updateFormField` method, the form fields can be updated programmatically.
+Using the [updateFormField](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#updateformfields) method, the form fields can be updated programmatically.
 
 The following code example explains how to update the ListBox field properties on a button click.
 
@@ -1253,7 +1253,7 @@ The following code example explains how to update the properties of the ListBox 
 
 ### DropDown field settings
 
-Using the `updateFormField` method, the form fields can be updated programmatically.
+Using the [updateFormField](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#updateformfields) method, the form fields can be updated programmatically.
 
 The following code example explains how to update the DropDown field properties on a button click.
 

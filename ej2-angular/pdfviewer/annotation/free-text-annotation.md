@@ -102,7 +102,7 @@ import { LinkAnnotationService, BookmarkViewService,
 
 ## How to clear the selection focus from free text annotation
 
-The free text annotations selection focus can be cleared by using the [setAnnotationMode](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotation/)  property of the `annotationModule`.
+The free text annotations selection focus can be cleared by using the [setAnnotationMode](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotation/#setannotationmode)  property of the `annotationModule`.
 
 Refer to the following code sample to remove the selection focus from the annotation by using a button click.
 
@@ -151,7 +151,7 @@ RemoveSelection() {
 
 With the PDF Viewer library, you can add a Free Text annotation to the PDF Viewer control programmatically using the [**addAnnotation()**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotation/#addannotationn) method.
 
-Here's a example of how you can utilize the **addAnnotation()** method to include a Free Text annotation programmatically
+Here's a example of how you can utilize the [**addAnnotation()**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotation/#addannotation) method to include a Free Text annotation programmatically
 
 {% tabs %}
 {% highlight ts tabtitle="Standalone" %}
@@ -351,9 +351,9 @@ Find the sample [how to move the free text annotation programmatically](https://
 
 ## Get the newly added free text annotation ID
 
-To get the ID of a newly added free text annotation in the Syncfusion PDF viewer, you can use the **annotationAdd()** event. This event is triggered whenever a new annotation is added to the PDF document, and it provides the annotationAddEventHandler object as a parameter. You can access the ID of the new annotation through the AnnotationID property of the annotationAddEventHandler object.
+To get the ID of a newly added free text annotation in the Syncfusion PDF viewer, you can use the [**annotationAdd()**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotation/#addannotation) event. This event is triggered whenever a new annotation is added to the PDF document, and it provides the annotationAddEventHandler object as a parameter. You can access the ID of the new annotation through the AnnotationID property of the annotationAddEventHandler object.
 
-Here is an example of how you can use the **annotationAdd()** event to get the ID of a new free text annotation:
+Here is an example of how you can use the [**annotationAdd()**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotation/#addannotation) event to get the ID of a new free text annotation:
 
 ```typescript
 

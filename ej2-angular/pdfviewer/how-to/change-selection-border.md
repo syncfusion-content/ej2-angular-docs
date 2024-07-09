@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Customize the selection border
 
-The PDF Viewer library allows you to customize the annotations selection borders using the [**annotationSelectorSettings**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotationSelectorSettingsModel/#annotationselectorsettingsmodel) Property.
+The PDF Viewer library allows you to customize the annotations selection borders using the [**annotationSelectorSettings**](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#annotationselectorsettings) Property.
 
 The following steps are used to customize the selection border.
 

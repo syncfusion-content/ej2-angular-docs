@@ -238,7 +238,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 {% endhighlight %}
 {% endtabs %}
 
-In this code snippet, the [printStart](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/printStartEventArgs/) function is defined to handle the printStart event. By setting args.cancel to **true**, the print dialog opening is restricted. By default, the [cancel](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/printStartEventArgs/) property is set to `false`. 
+In this code snippet, the [printStart](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#printstart) function is defined to handle the printStart event. By setting args.cancel to **true**, the print dialog opening is restricted. By default, the [cancel](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/printStartEventArgs/) property is set to `false`. 
 
 ## See also
 
