@@ -2,8 +2,12 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+
+
+
 import { Component } from '@angular/core';
 import { DropDownListComponent, VirtualScroll } from '@syncfusion/ej2-angular-dropdowns';
+import { Query } from '@syncfusion/ej2-data';
 
 DropDownListComponent.Inject(VirtualScroll);
 
@@ -31,6 +35,10 @@ public records: { [key: string]: Object }[] = [];
     }
     // maps the appropriate column to fields property
     public fields: object = { text: 'text', value: 'id' };
+    public query: Query = new Query().take(40);
+    public onBegin: any = (e: any) => {
+        e.query = new Query().take(45);
+    };
     // set the placeholder to AutoComplete input
     public waterMark: string = 'e.g. Item 1';   
 }
