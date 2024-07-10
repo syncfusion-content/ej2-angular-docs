@@ -169,6 +169,23 @@ The following code example shows how to open the spreadsheet data as base64 stri
   
 {% previewsample "page.domainurl/samples/spreadsheet/base-64-string" %}
 
+### To open an excel file from blob data
+
+By default, the Spreadsheet component provides an option to browse files from the local file system and open them within the component. If you want to open an Excel file from blob data, you need to fetch the blob data from the server or another source and convert this blob data into a `File` object. Then, you can use the [open](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#open) method in the Spreadsheet component to load that `File` object.
+
+Please find the code to fetch the blob data and load it into the Spreadsheet component below.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/open-from-blobdata-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/open-from-blobdata-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/spreadsheet/open-from-blobdata-cs1" %}
 
 ### External workbook confirmation dialog
 
@@ -347,6 +364,24 @@ The following code example shows how to save the spreadsheet data as base64 stri
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/spreadsheet/base-64-string" %}
+
+### To save an excel file as blob data
+
+By default, the Spreadsheet component saves the Excel file and downloads it to the local file system. If you want to save an Excel file as blob data, you need to set `needBlobData` property to **true** and `isFullPost` property to **false** in the [beforeSave](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforesave) event of the spreadsheet. Subsequently, you will receive the spreadsheet data as a blob in the [saveComplete](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#savecomplete) event. You can then post the blob data to the server endpoint for saving.
+
+Please find below the code to retrieve blob data from the Spreadsheet component below.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/save-as-blobdata-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/save-as-blobdata-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/spreadsheet/save-as-blobdata-cs1" %}
 
 ### Methods
 
