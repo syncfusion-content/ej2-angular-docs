@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add the custom stamp based on the free text bounds | Syncfusion
-Description: Learn how to add the custom stamp based on the free text bounds in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
+description: Learn how to add the custom stamp based on the free text bounds in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Add the custom stamp based on the free text bounds 
 documentation: ug

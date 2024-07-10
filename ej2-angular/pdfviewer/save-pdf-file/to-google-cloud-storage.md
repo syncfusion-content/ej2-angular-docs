@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Save PDF files to Google Cloud Storage in Angular Pdfviewer Component | Syncfusion
+title: Save PDF to Google Cloud in Angular Pdfviewer Component | Syncfusion
 description: Learn here all about how to save PDF files to Google Cloud Storage in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Save PDF files to Google Cloud Storage

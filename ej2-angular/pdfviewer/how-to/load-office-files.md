@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load office files in PDF Viewer
+title: Load office files in Angular Pdfviewer component | Syncfusion
 description: Learn about how to load office files in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: How to load the Office products

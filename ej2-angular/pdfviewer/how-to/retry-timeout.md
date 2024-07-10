@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Retry Timeout | Syncfusion
-Description:  Learn here all about Retry Timeout in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Retry Timeout in Angular Pdfviewer component | Syncfusion
+description:  Learn here all about Retry Timeout in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Retry Timeout
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Retry Timeout
+# Retry Timeout in Angular Platform Control
 
 The **Retry Timeout** feature allows you to specify a duration for the PDF Viewer to retry failed AJAX requests before considering them permanent failures. It helps in handling temporary failures due to network issues or server unavailability.
 
