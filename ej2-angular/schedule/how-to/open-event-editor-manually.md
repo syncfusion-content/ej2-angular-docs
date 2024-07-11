@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Open Editor Window externally
 
-Schedule allows user to manually open the event editor on specific time or on certain events using `openEditor` method as shown below.
+Schedule allows user to manually open the event editor on specific time or on certain events using [`openEditor`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#openeditor) method as shown below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ Schedule allows user to manually open the event editor on specific time or on ce
 
 ## Open editor window on single click
 
-By default, Scheduler Editor window will open when double clicking the cells or appointments. You can also open the editor window with single click by using `openEditor` method in `eventClick` and `cellClick` events of scheduler and setting false to `showQuickInfo`. The following example shows how to open editor window on single click of cells and appointments.
+By default, Scheduler Editor window will open when double clicking the cells or appointments. You can also open the editor window with single click by using [`openEditor`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#openeditor) method in [`eventClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#eventclick) and [`cellClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#cellclick) events of scheduler and setting `false` to [`showQuickInfo`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#showquickinfo). The following example shows how to open editor window on single click of cells and appointments.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

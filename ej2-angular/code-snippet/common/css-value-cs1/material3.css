@@ -1,0 +1,19 @@
+/* rgb() values of material3 theme */
+:root {
+    --color-sf-black: 0, 0, 0;
+    --color-sf-white: 255, 255, 255;
+    --color-sf-primary: 103, 80, 164;
+    --color-sf-primary-container: 234, 221, 255;
+    --color-sf-secondary: 98, 91, 113;
+    --color-sf-secondary-container: 232, 222, 248;
+    --color-sf-tertiary: 125, 82, 96;
+    --color-sf-tertiary-container: 255, 216, 228;
+    --color-sf-surface: 255, 255, 255;
+    --color-sf-surface-variant: 231, 224, 236;
+    --color-sf-background: var(--color-sf-surface);
+    --color-sf-on-primary: 255, 255, 255;
+    --color-sf-on-primary-container: 33, 0, 94;
+    --color-sf-on-secondary: 255, 255, 255;
+    --color-sf-on-secondary-container: 30, 25, 43;
+    --color-sf-on-tertiary: 255, 255, 255;
+  }

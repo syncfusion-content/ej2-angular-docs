@@ -70,7 +70,7 @@ Navigate to the created project folder.
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -101,51 +101,22 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding In-place Editor module
-
-Once you have successfully installed the package, the component modules are ready to configure in your application from the installed location. Syncfusion Angular package provides two different types of ngModules.
-
-Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module/) to learn about `ngModules`.
-
-Refer the following snippet to import the `InPlaceEditorAllModule` in `app.module.ts` from the `@syncfusion/ej2-angular-inplace-editor`.
-
-```javascript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-// Imported syncfusion InPlaceEditorAllModule from ej2-angular-inplace-editor package
-import { InPlaceEditorAllModule } from '@syncfusion/ej2-angular-inplace-editor';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    // Registering EJ2 In-place Editor Module
-    InPlaceEditorAllModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-
-```
-
 ## Adding In-place Editor component
 
 Add the In-place Editor component snippet in `app.component.ts` as follows.
 
 ```typescript
 
+import { InPlaceEditorAllModule } from '@syncfusion/ej2-angular-inplace-editor'
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  template: `<ejs-inplaceeditor id="element" type="Text" value="Andrew" [model]="modelObj"></ejs-inplaceeditor>`
+imports: [
+         InPlaceEditorAllModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-inplaceeditor id="element" type="Text" value="Andrew" [model]="modelObj"></ejs-inplaceeditor>`
 })
 
 export class AppComponent {
@@ -200,9 +171,15 @@ By default, the Essential JS2 TextBox component is rendered in **In-place Editor
 Modify the template in `src/app/app.component.ts` file to render the `ej2-angular-inplace-editor` component.
 
 ```javascript
+
+import { InPlaceEditorAllModule } from '@syncfusion/ej2-angular-inplace-editor'
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+         InPlaceEditorAllModule
+    ],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-inplaceeditor id="element" type="Text" value="Andrew" [model]="modelObj"></ejs-inplaceeditor>`
 })
@@ -210,6 +187,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
     public modelObj: Object = { placeholder: 'Enter employee name' };
 }
+
 ```
 
 ## Configuring DropDownList
@@ -219,9 +197,15 @@ You can render the Essential JS2 DropDownList by changing the [`type`](https://
 In the following sample, [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) and model values are configured to render the [`DropDownList`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list) component.
 
 ```javascript
+
+import { InPlaceEditorAllModule } from '@syncfusion/ej2-angular-inplace-editor'
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+         InPlaceEditorAllModule
+    ],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-inplaceeditor id="element" type="DropDownList" mode="Inline" [model]="modelObj"></ejs-inplaceeditor>`
 })
@@ -230,6 +214,7 @@ export class AppComponent {
     public genderData : string[] = ['Male', 'Female'];
     public modelObj: Object = { placeholder: 'Select gender', dataSource: this.genderData };
 }
+
 ```
 
 ## Integrate DatePicker
@@ -237,9 +222,15 @@ export class AppComponent {
 You can render the Essential JS2 [DatePicker](https://ej2.syncfusion.com/angular/documentation/api/datepicker/) by changing the [`type`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) property as [`Date`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/inputType/) and also configure its properties and methods using the [`model`](https://ej2.syncfusion.com/angular/documentation/api/inplace-editor/#model) property.
 
 ```javascript
+
+import { InPlaceEditorAllModule } from '@syncfusion/ej2-angular-inplace-editor'
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+         InPlaceEditorAllModule
+    ],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-inplaceeditor id="element" type="Date" [value]="value" [model]="modelObj"></ejs-inplaceeditor>`
 })
@@ -248,6 +239,7 @@ export class AppComponent {
     public modelObj: Object = { showTodayButton: true };
     public value: Date = new Date('04/12/2018');
 }
+
 ```
 
 Once you have configured Textbox, DatePicker and DropDownList you will get following output as shown in below,

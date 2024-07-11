@@ -45,9 +45,9 @@ The following example code depicts how to set the Scheduler to display Monday, W
 
 ## Hiding weekend days
 
-The `showWeekend` property is used to either show or hide the weekend days of a week and it is not applicable on Work week view (as non-working days are usually not displayed on work week view). By default, it is set to `true`. The days which are not a part of the working days collection of a Scheduler are usually considered as non-working or weekend days.
+The [`showWeekend`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#showweekend) property is used to either show or hide the weekend days of a week and it is not applicable on Work week view (as non-working days are usually not displayed on work week view). By default, it is set to `true`. The days which are not a part of the working days collection of a Scheduler are usually considered as non-working or weekend days.
 
-Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore the remaining days (0, 2, 6 – Sunday, Tuesday and Saturday) are considered as non-working or weekend days and will be hidden from all the views when `showWeekend` property is set to `false`.
+Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore the remaining days (0, 2, 6 – Sunday, Tuesday and Saturday) are considered as non-working or weekend days and will be hidden from all the views when [`showWeekend`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#showweekend) property is set to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -67,7 +67,7 @@ Here, the working days are defined as [1, 3, 4, 5] on Scheduler and therefore th
 
 It is possible to show the week number count of a week in the header bar of the Scheduler by setting true to `showWeekNumber` property. By default, its default value is `false`. In Month view, the week numbers are displayed as a first column.
 
-> The `showWeekNumber` property is not applicable on Timeline views, as it has the equivalent [headerRows](./header-rows/#display-week-numbers-in-timeline-views) property to handle such requirement with additional customizations.
+> The [`showWeekNumber`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#showweeknumber) property is not applicable on Timeline views, as it has the equivalent [`headerRows`](./header-rows/#display-week-numbers-in-timeline-views) property to handle such requirement with additional customizations.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -107,15 +107,15 @@ For more details refer to [this link](https://docs.microsoft.com/en-us/dotnet/ap
   
 {% previewsample "page.domainurl/samples/schedule/default-cs92" %}
 
- **Note**: Enable the `showWeekNumber` property to configure the `weekRule` property. Also, the weekRule property depends on the value of the `firstDayOfWeek` property.
+ **Note**: Enable the [`showWeekNumber`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#showweeknumber) property to configure the `weekRule` property. Also, the weekRule property depends on the value of the [`firstDayOfWeek`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/views/#firstdayofweek) property.
 
 ## Set working hours
 
-Working hours indicates the work hour limit within the Scheduler, which is visually highlighted with an active color on work cells. The working hours can be set on Scheduler using the `workHours` property which is of object type and includes the following sub-options,
+Working hours indicates the work hour limit within the Scheduler, which is visually highlighted with an active color on work cells. The working hours can be set on Scheduler using the [`workHours`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#workhours) property which is of object type and includes the following sub-options,
 
-* `highlight` – enables/disables the highlighting of work hours.
-* `start` - sets the start time of the working/business hour of a day.
-* `end` - sets the end time limit of the working/business hour of a day.
+* [`highlight`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/workHoursModel/#highlight) – enables/disables the highlighting of work hours.
+* [`start`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/workHoursModel/#start) - sets the start time of the working/business hour of a day.
+* [`end`](https://helpej2.syncfusion.com/angular/documentation/api/schedule/workHoursModel/#end) - sets the end time limit of the working/business hour of a day.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -133,7 +133,7 @@ Working hours indicates the work hour limit within the Scheduler, which is visua
 
 ## Scheduler displaying custom hours
 
-It is possible to display the event Scheduler layout with specific time durations by hiding the unwanted hours. To do so, set the start and end hour for the Scheduler using the `startHour` and `endHour` properties respectively.
+It is possible to display the event Scheduler layout with specific time durations by hiding the unwanted hours. To do so, set the start and end hour for the Scheduler using the [`startHour`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#starthour) and [`endHour`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#endhour) properties respectively.
 
 The following code example displays the Scheduler starting from the time range 7.00 AM to 6.00 PM and the remaining hours are hidden on the UI.
 
@@ -153,7 +153,7 @@ The following code example displays the Scheduler starting from the time range 7
 
 ## Setting start day of the week
 
-By default, Scheduler defaults to `Sunday` as its first day of a week. To change the Scheduler's start day of a week with different day, set the `firstDayOfWeek` property with the values ranging from 0 to 6.
+By default, Scheduler defaults to `Sunday` as its first day of a week. To change the Scheduler's start day of a week with different day, set the [`firstDayOfWeek`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#firstdayofweek) property with the values ranging from 0 to 6.
 
 > Here, Sunday is always denoted as 0, Monday as 1 and so on.
 
@@ -173,7 +173,7 @@ By default, Scheduler defaults to `Sunday` as its first day of a week. To change
 
 ## Scroll to specific time and date
 
-You can manually scroll to a specific time on Scheduler by making use of the `scrollTo` method as depicted in the following code example.
+You can manually scroll to a specific time on Scheduler by making use of the [`scrollTo`](https://helpej2.syncfusion.com/angular/documentation/api/schedule#scrollto) method as depicted in the following code example.
 
 {% tabs %}
 {% highlight html tabtitle="app.component.html" %}

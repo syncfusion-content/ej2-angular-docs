@@ -47,7 +47,7 @@ cd syncfusion-angular-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -78,62 +78,32 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding Slider Module
-
-After installing the package, the component modules are available to configure into your application from installed syncfusion package. Syncfusion Angular package provides two different types of `ngModules`.
-
-Refer to [`Ng-Module`](https://ej2.syncfusion.com/angular/documentation/common/ng-module.html) to learn about `ngModules`.
-
-Refer to the following snippet to import the Slider module in `app.module.ts` from the `@syncfusion/ej2-angular-inputs`.
-
-```typescript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-
-import { AppComponent } from './app.component';
-
-// Imported syncfusion Slider module from inputs package
-import { SliderModule } from '@syncfusion/ej2-angular-inputs';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-
-    // Registering EJ2 Slider Module
-    SliderModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
-
 ## Adding Syncfusion Slider Component
 
 Add the Slider component snippet in `app.component.ts` as follows.
 
 ```typescript
+
+import { SliderModule } from '@syncfusion/ej2-angular-inputs'
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
-  template: `
-  <h1>
-    Hello Angular, Syncfusion Angular UI Slider!
-  </h1>
+imports: [
+    SliderModule
+  ],
+    standalone: true,
+    selector: 'app-root',
+    template: `
+    <div id='container'>
+        <div class='wrap'>
+            <ejs-slider id='slider' [value]=30></ejs-slider>
+        </div>
+    </div>`
+})
 
-  <ejs-slider id='slider' [value]=30></ejs-slider>
- `
- })
 export class AppComponent {
 }
+
 ```
 
 ## Adding Slider CSS reference
@@ -143,19 +113,10 @@ Add Slider component styles as given in the `angular-cli.json` file within the a
 >Note: If you are using Angular 6 project, add the changes in `angular.json` file.
 
 ```typescript
-{
-  "apps": [
-    {
-      "styles": [
-        "styles.css",
-        "./node_modules/@syncfusion/ej2-angular-inputs/styles/material.css",
-        "../node_modules/@syncfusion/ej2-base/styles/material.css",
-        "../node_modules/@syncfusion/ej2-buttons/styles/material.css",
-        "../node_modules/@syncfusion/ej2-popups/styles/material.css"
-      ]
-    }
-  ]
-}
+@import '../node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
 ```
 
 The below example shows a basic `Slider` example.

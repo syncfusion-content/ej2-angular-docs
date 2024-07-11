@@ -51,7 +51,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -82,43 +82,24 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding Breadcrumb module
-
-Import Breadcrumb module into Angular application(app.module.ts) from the package
-`@syncfusion/ej2-angular-navigations`.
-
-```javascript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-// Imported Syncfusion Breadcrumb module from navigations package.
-import { BreadcrumbModule } from '@syncfusion/ej2-angular-navigations';
-
-import { AppComponent } from './app.component';
-
-@NgModule({
-    imports: [BrowserModule, BreadcrumbModule], // Registering EJ2 Breadcrumb Module.
-    declarations: [AppComponent],
-    bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
-
 ## Adding Syncfusion Breadcrumb component
 
 Modify the template in `app.component.ts` file with `ejs-breadcrumb` to render the Breadcrumb
 component.
 
 ```javascript
+import { BreadcrumbModule } from '@syncfusion/ej2-angular-navigations'
 import { Component } from '@angular/core';
 import { enableRipple } from '@syncfusion/ej2-base';
 
 enableRipple(true);
 
 @Component({
-    selector: 'app-root',
-    template: `<!-- To Render Breadcrumb. -->
-            <ejs-breadcrumb [enableNavigation]="false"></ejs-breadcrumb>`
+imports: [ BreadcrumbModule],
+standalone: true,
+selector: 'app-root',
+template: `<!-- To Render Breadcrumb. -->
+  <ejs-breadcrumb [enableNavigation]="false"></ejs-breadcrumb>`
 })
 
 export class AppComponent {}

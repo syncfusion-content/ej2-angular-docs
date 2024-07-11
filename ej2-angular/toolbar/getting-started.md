@@ -48,7 +48,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -79,26 +79,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering Toolbar Module
-
-Import Toolbar module into Angular application(app.module.ts) from the package **@syncfusion/ej2-angular-navigations** [src/app/app.module.ts].
-
-```javascript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the ToolbarModule for the Toolbar component
-import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-navigations module into NgModule
-  imports:      [ BrowserModule, ToolbarModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding CSS reference
 
 The following CSS files are available in `../node_modules/@syncfusion` package folder.
@@ -118,12 +98,17 @@ Modify the template in [src/app/app.component.ts] file to render the toolbar com
 Add the Angular Toolbar by using `<ejs-toolbar>` selector in **template** section of the app.component.ts file.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the Toolbar component
-  template: `<ejs-toolbar>
+imports: [
+  ToolbarModule
+],
+standalone: true,
+selector: 'app-root',
+// specifies the template string for the Toolbar component
+template: `<ejs-toolbar>
           <e-items>
              <e-item text='Cut'></e-item>
              <e-item text='Copy'></e-item>
@@ -135,9 +120,7 @@ import { Component, OnInit } from '@angular/core';
           </e-items>
         </ejs-toolbar>`
 })
-export class AppComponent {
-
-}
+export class AppComponent { }
 
 ```
 

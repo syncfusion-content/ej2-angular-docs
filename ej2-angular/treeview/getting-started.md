@@ -35,7 +35,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -66,26 +66,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering Treeview Module
-
-Import Treeview module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-navigations` [src/app/app.module.ts].
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import Treeview component Module
-import { TreeViewModule } from '@syncfusion/ej2-angular-navigations';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of Treeview module into NgModule
-  imports:      [ BrowserModule, TreeViewModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding CSS Reference
 
 * Add Treeview component's styles as given below in `styles.css`.
@@ -105,13 +85,20 @@ Modify the template in [src/app/app.component.ts] file to render the Treeview co
 Add the Angular Treeview by using `<ejs-treeview>` selector in `template` section of the app.component.ts file.
 
 ```typescript
+
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  template: `<ejs-treeview id='treeelement' ></ejs-treeview>`
+imports: [
+  TreeViewModule
+],
+standalone: true,
+selector: 'app-root',
+template: `<ejs-treeview id='treeelement' ></ejs-treeview>`
 })
-export class AppComponent {}
+export class AppComponent { }
+
 ```
 
 ## Binding data source
@@ -120,12 +107,18 @@ TreeView can load data either from local data sources or remote data services. T
 Here, an array of JSON values is passed to the TreeView component.
 
 ```typescript
+
+import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-    selector: 'app-root',
-    template: `<ejs-treeview id='treeelement' [fields]='field'></ejs-treeview>`,
-    encapsulation: ViewEncapsulation.None
+imports: [
+  TreeViewModule
+],
+standalone: true,
+selector: 'app-root',
+template: `<ejs-treeview id='treeelement' [fields]='field'></ejs-treeview>`,
+encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
     constructor() {
@@ -157,6 +150,7 @@ export class AppComponent {
     ];
     public field:Object ={ dataSource: this.hierarchicalData, id: 'id', text: 'name', child: 'subChild' };
 }
+
 ```
 
 ## Run the application

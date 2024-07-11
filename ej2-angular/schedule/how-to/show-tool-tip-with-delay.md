@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Show tool tip with delay in Angular Schedule component
 
-In default, the Schedule tooltip is showed without any delay. We can set up the delay to the Schedule tooltip with the help of the Tooltip `openDelay` property.
+In default, the Schedule tooltip is showed without any delay. We can set up the delay to the Schedule tooltip with the help of the Tooltip [`openDelay`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/tooltipModel/#opendelay) property.
 
 The preview demonstrates setting up the delay to the Schedule tooltip. You can check the Schedule tooltip with delay here.
 

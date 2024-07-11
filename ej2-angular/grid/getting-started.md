@@ -21,7 +21,7 @@ To get start quickly with Angular Grid using CLI and Schematics, you can check o
 You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
 ```bash
-npm install -g @angular/cli@16.0.1
+npm install -g @angular/cli
 ```
 
 ## Create an Angular Application
@@ -56,26 +56,6 @@ npm install @syncfusion/ej2-angular-grids --save
 
 > The **--save** will instruct NPM to include the grid package inside of the **dependencies** section of the **package.json**.
 
-## Registering Grid Module
-
-Import Grid module into Angular application(app.module.ts) from the package **@syncfusion/ej2-angular-grids** [src/app/app.module.ts].
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the GridModule for the Grid component
-import { GridModule } from '@syncfusion/ej2-angular-grids';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-grids module into NgModule
-  imports:      [ BrowserModule, GridModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding CSS reference
 
 The following CSS files are available in **../node_modules/@syncfusion** package folder.
@@ -101,11 +81,16 @@ Add the Angular Grid by using `<ejs-grid>` selector in **template** section of t
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
+import { GridModule } from '@syncfusion/ej2-angular-grids'
 
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the Grid component
-  template: `<ejs-grid> </ejs-grid>`
+    imports: [
+      GridModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the Grid component
+    template: `<ejs-grid> </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 
@@ -120,10 +105,15 @@ export class AppComponent implements OnInit {
 Bind data for the Grid component by using [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) property. It accepts either array of JavaScript object or [DataManager](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/data-binding) instance.
 
 ```typescript
+import { GridModule } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 
 @Component({
+    imports: [
+      GridModule
+    ],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data'> </ejs-grid>`
 })

@@ -70,7 +70,7 @@ Navigate to the created project folder.
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -101,70 +101,40 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding Toast module
-
-After installing the package, the component modules are ready to configure in your application from installed syncfusion package. Syncfusion Angular package provides two different types of ngModules.
-
-Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module) to learn about `ngModules`.
-
-Refer the following snippet to import the `ToastModule` in `app.module.ts` from the `@syncfusion/ej2-angular-notifications`.
-
-```javascript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-// Imported syncfusion ToastModule from ej2-angular-notifications package
-import { ToastModule } from '@syncfusion/ej2-angular-notifications';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    // Registering EJ2 Toast Module
-    ToastModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-
-```
-
 ## Adding Toast component
 
 Add the Toast component snippet in `app.component.ts` as follows.
 
 ```typescript
 
+import { ToastModule } from '@syncfusion/ej2-angular-notifications'
 import { Component, ViewChild } from '@angular/core';
-import { ToastComponent } from '@syncfusion/ej2-angular-notifications';
 
 @Component({
-  selector: 'app-root',
-  template: `<ejs-toast #element (created)="onCreate($event)">
-    <ng-template #title>
-      <div>Sample Toast Title</div>
-    </ng-template>
-    <ng-template #content>
-      <div>Sample Toast Content</div>
-    </ng-template>
-    </ejs-toast>`
+imports: [
+         ToastModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-toast #element (created)="onCreate()">
+      <ng-template #title>
+        <div>Sample Toast Title</div>
+      </ng-template>
+      <ng-template #content>
+        <div>Sample Toast Content</div>
+      </ng-template>
+      </ejs-toast>`
 })
 
 export class AppComponent {
-  @ViewChild('element') element: ToastComponent;
+@ViewChild('element') element: any;
 
-    onCreate() {
-    this.element.show();
-  }
+  onCreate() {
+  this.element.show();
+}
 
-  constructor() {
-  }
+constructor() {
+}
 }
 
 ```

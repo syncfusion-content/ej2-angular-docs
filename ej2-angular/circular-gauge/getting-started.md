@@ -35,7 +35,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -66,39 +66,29 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering Circular Gauge Module
+## Add Circular Gauge component
 
-Import Circular Gauge module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-circulargauge` [src/app/app.module.ts].
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the CircularGaugeModule for the Circular Gauge component
-import { CircularGaugeModule } from '@syncfusion/ej2-angular-circulargauge';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ChartModule into NgModule
-  imports:      [ BrowserModule, CircularGaugeModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
-* Modify the template in `app.component.ts` file to render the `ej2-angular-circulargauge` component
-`[src/app/app.component.ts]`.
+Modify the template in `app.component.ts` file to render the `ej2-angular-circulargauge` component `[src/app/app.component.ts]`.
 
 ```javascript
+
+import { CircularGaugeModule } from '@syncfusion/ej2-angular-circulargauge'
+import { GaugeTooltipService } from '@syncfusion/ej2-angular-circulargauge'
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-container',
-  // specifies the template string for the Charts component
-  template: `<ejs-circulargauge id='circular-container'></ejs-circulargauge>`,
-  encapsulation: ViewEncapsulation.None
+imports: [
+         CircularGaugeModule
+    ],
+    providers: [ GaugeTooltipService ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the Charts component
+    template: `<ejs-circulargauge id='circular-container'></ejs-circulargauge>`,
+    encapsulation: ViewEncapsulation.None
 })
 export class AppComponent  { }
+
 ```
 
 <!-- markdownlint-disable MD033 -->

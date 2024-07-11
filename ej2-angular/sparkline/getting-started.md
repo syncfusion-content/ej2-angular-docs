@@ -41,38 +41,27 @@ npm install @syncfusion/ej2-angular-charts --save
 
 > The **--save** will instruct NPM to include the sparkline package inside of the `dependencies` section of the `package.json`.
 
-## Registering Sparkline Module
-
-* Import Sparkline module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-charts` [src/app/app.module.ts].
-
-  ```typescript
-  import { NgModule }      from '@angular/core';
-  import { BrowserModule } from '@angular/platform-browser';
-  // import the SparklineModule for the Sparkline component
-  import { SparklineModule } from '@syncfusion/ej2-angular-charts';
-  import { AppComponent }  from './app.component';
-
-  @NgModule({
-    //declaration of sparkline module into NgModule
-    imports:      [ BrowserModule, SparklineModule ],
-    declarations: [ AppComponent ],
-    bootstrap:    [ AppComponent ]
-  })
-  export class AppModule { }
-  ```
+## Add Sparkline component
 
 Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component `[src/app/app.component.ts]`.
 
   ```javascript
-  import { Component, ViewEncapsulation } from '@angular/core';
 
-  @Component({
-    selector: 'app-container',
+import { SparklineModule } from '@syncfusion/ej2-angular-charts'
+import { Component, ViewEncapsulation } from '@angular/core';
+
+@Component({
+imports: [
+      SparklineModule
+    ],
+    standalone: true,
+    selector: 'app-root',
     // specifies the template string for the Sparkline component
     template: `<ejs-sparkline id='sparkline-container'></ejs-sparkline>`,
     encapsulation: ViewEncapsulation.None
   })
   export class AppComponent  { }
+
   ```
 
   <!-- markdownlint-disable MD033 -->
@@ -92,16 +81,21 @@ Now run the application in the browser using the below command.
 The below example shows a basic Sparkline.
 
 ```typescript
+
+import { SparklineModule } from '@syncfusion/ej2-angular-charts'
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-container',
+imports: [
+      SparklineModule
+    ],
+    standalone: true,
+    selector: 'app-root',
     // specifies the template string for the Sparkline component
-    template: `<ejs-sparkline id="sparkline-container"></ejs-sparkline>`
-})
-export class AppComponent {
+    template: `<ejs-sparkline id='sparkline-container'></ejs-sparkline>`
+  })
+  export class AppComponent  { }
 
-}
 ```
 
 As we didn't specify dataSource to the Sparkline, no shape will be rendered and only an empty SVG element is appended to the Sparkline container.
@@ -119,17 +113,14 @@ Sparkline component are segregated into individual feature-wise modules. In orde
 
   ```javascript
 
-      import { NgModule } from '@angular/core';
-      import { BrowserModule } from '@angular/platform-browser';
-      import { AppComponent } from './app.component';
-      import { SparklineComponent, SparklineTooltipService } from '@syncfusion/ej2-angular-charts';
+      import { SparklineModule, SparklineTooltipService } from '@syncfusion/ej2-angular-charts'
+      import { Component } from '@angular/core';
 
-      @NgModule({
+      @Component({
           imports: [
-              BrowserModule,
+              SparklineModule,
           ],
-          declarations: [AppComponent, SparklineComponent],
-          bootstrap: [AppComponent],
+          standalone: true,
           providers: [ SparklineTooltipService ]
       })
 

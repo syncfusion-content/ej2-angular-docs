@@ -47,7 +47,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -78,39 +78,26 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding SplitButton module
-
-Import SplitButton module into Angular application(app.module.ts) from the package
-`@syncfusion/ej2-angular-splitbuttons`.
-
- ```typescript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-// Imported Syncfusion splitbutton module from splitbuttons package.
-import { SplitButtonModule } from '@syncfusion/ej2-angular-splitbuttons';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  imports:      [ BrowserModule, SplitButtonModule ], // Registering EJ2 SplitButton Module.
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding Syncfusion SplitButton component
 
 Modify the template in `app.component.ts` file to render the SplitButton component.
 
  ```typescript
+
+import { SplitButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
 import { Component } from '@angular/core';
 import { ItemModel } from '@syncfusion/ej2-angular-splitbuttons';
 
 @Component({
+imports: [
+        
+        SplitButtonModule
+    ],
+    standalone: true,
     selector: 'app-root',
-    template: `<!-- To Render splitbutton. -->
-               <ejs-splitbutton content="Paste" [items]='items'></ejs-splitbutton>`
+    template: `<div class="e-section-control">
+                <!-- To Render splitbutton. -->
+               <ejs-splitbutton content="Paste" [items]='items'></ejs-splitbutton></div>`
 })
 
 export class AppComponent {
@@ -120,6 +107,7 @@ export class AppComponent {
      { text: 'Paste'}
      ];
 }
+
 ```
 
 ## Adding CSS reference

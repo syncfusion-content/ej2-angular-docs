@@ -69,7 +69,7 @@ cd syncfusion-angular-combobox
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -100,26 +100,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering ComboBox module
-
-Import ComboBox module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-dropdowns`.
-
-```javascript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the ComboBoxModule for the ComboBox component
-import { ComboBoxModule } from '@syncfusion/ej2-angular-dropdowns';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-dropdowns module into NgModule
-  imports:      [ BrowserModule, ComboBoxModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding CSS reference
 
 The following CSS files are available in `../node_modules/@syncfusion` package folder.
@@ -140,14 +120,23 @@ This can be referenced in [src/styles.css] using following code.
 Modify the template in [src/app/app.component.ts] file to render the Angular ComboBox component. Add the Angular ComboBox by using `<ejs-combobox>` selector in `template` section of the app.component.ts file.
 
 ```javascript
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { ComboBoxModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the ComboBox component
-  template: `<ejs-combobox id='comboelement'></ejs-combobox>`
+imports: [
+        FormsModule, ReactiveFormsModule, ComboBoxModule,ButtonModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the ComboBox component
+    template: `<ejs-combobox id='comboelement'></ejs-combobox>`
 })
 export class AppComponent  { }
+
 ```
 
 ## Binding data source
@@ -155,9 +144,17 @@ export class AppComponent  { }
 After initializing, populate the ComboBox with data using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/combo-box/#datasource) property. Here, an array of string values passed to ComboBox component.
 
 ```typescript
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { ComboBoxModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        FormsModule, ReactiveFormsModule, ComboBoxModule,ButtonModule
+    ],
+    standalone: true,
     selector: 'app-root',
     // specifies the template string for the ComboBox component
     template: `<ejs-combobox id='comboelement' [dataSource]='data'></ejs-combobox>`
@@ -168,6 +165,7 @@ export class AppComponent {
     // defined the array of data
     public data: string[] = ['Cricket', 'Football', 'Rugby', 'Snooker', 'Tennis'];
 }
+
 ```
 
 ## Running the application

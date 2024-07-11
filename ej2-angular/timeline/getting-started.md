@@ -46,7 +46,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -77,27 +77,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding Timeline module
-
-Import Timeline module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-layouts`.
-
-```javascript
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
-
-// Import Syncfusion Timeline module from Timeline package.
-import { TimelineModule, TimelineAllModule } from '@syncfusion/ej2-angular-layouts';
-
-import { AppComponent } from "./app.component";
-
-@NgModule({
-  imports: [BrowserModule, TimelineAllModule, TimelineModule], // Registering EJ2 Timeline Module.
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
-})
-export class AppModule {}
-```
-
 ## Adding CSS reference
 
 Add Timeline component's styles as given below in `style.css`.
@@ -112,18 +91,22 @@ Add Timeline component's styles as given below in `style.css`.
 Modify the template in `app.component.ts` file with `ejs-timeline` to render the Timeline component.
 
 ```javascript
-import { Component } from "@angular/core";
-import { StepModel, Timeline } from '@syncfusion/ej2-angular-layouts';
+
+import { TimelineModule, TimelineAllModule } from '@syncfusion/ej2-angular-layouts'
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "app-root",
-  template: `<!-- To Render Timeline. -->
-    <div>
-        <ejs-timeline id="timeline"></ejs-timeline>
-    </div>`,
-})
-export class AppComponent {
-}
+  imports: [ TimelineModule, TimelineAllModule ],
+    standalone: true,
+    selector: "app-root",
+    template: `<!-- To Render Timeline. -->
+      <div>
+          <ejs-timeline id="timeline"></ejs-timeline>
+      </div>`,
+  })
+  export class AppComponent {
+  }
+
 ```
 
 ## Adding Items
@@ -131,24 +114,29 @@ export class AppComponent {
 You can define Timeline items by using `<e-item>` tag directive.
 
 ```javascript
-import { Component } from "@angular/core";
+
+import { TimelineModule, TimelineAllModule } from '@syncfusion/ej2-angular-layouts'
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "app-root",
-  template: `<!-- To Render Timeline. -->
-    <div>
-        <ejs-timeline id="timeline">
-          	<e-items>
-                <e-item></e-item>
-                <e-item></e-item>
-                <e-item></e-item>
-                <e-item></e-item>
-            </e-items>
-        </ejs-timeline>
-    </div>`,
+  imports: [ TimelineModule, TimelineAllModule ],
+    standalone: true,
+    selector: "app-root",
+    template: `<!-- To Render Timeline. -->
+      <div>
+          <ejs-timeline id="timeline">
+              <e-items>
+                  <e-item></e-item>
+                  <e-item></e-item>
+                  <e-item></e-item>
+                  <e-item></e-item>
+              </e-items>
+          </ejs-timeline>
+      </div>`,
 })
 export class AppComponent {
 }
+
 ```
 
 ## Running the application

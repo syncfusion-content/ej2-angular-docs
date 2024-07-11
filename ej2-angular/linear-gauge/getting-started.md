@@ -49,7 +49,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -80,40 +80,30 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering LinearGauge Module
+## Add LinearGauge component
 
-Import **LinearGaugeModule** into Angular application in the **src/app/app.module.ts** file from the package `@syncfusion/ej2-angular-lineargauge`.
-
-```typescript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the LinearGaugeModule for the LinearGauge component
-import { LinearGaugeModule } from '@syncfusion/ej2-angular-lineargauge';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of Linear Gauge module in NgModule
-  imports:      [ BrowserModule, LinearGaugeModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
-* Modify the template in **app.component.ts** file to render the Linear Gauge component.
+Modify the template in **app.component.ts** file to render the Linear Gauge component.
 `[src/app/app.component.ts]`.
 
-   ```javascript
-    import { Component, ViewEncapsulation } from '@angular/core';
+```javascript
 
-    @Component({
-     selector: 'app-container',
-     // specifies the template string for the LinearGauge component
-      template: `<ejs-lineargauge id='linear-container'></ejs-lineargauge>`,
-      encapsulation: ViewEncapsulation.None
-    })
-    export class AppComponent  { }
-  ```
+import { LinearGaugeModule } from '@syncfusion/ej2-angular-lineargauge'
+import { Component } from '@angular/core';
+
+@Component({
+imports: [
+         LinearGaugeModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the linear gauge component
+    template: `<ejs-lineargauge id="gauge-container"></ejs-lineargauge>`
+})
+export class AppComponent {
+
+}
+
+```
 
    Now use the `<code>app-container</code>` in the index.html instead of default one.
 
@@ -148,21 +138,18 @@ LinearGauge component is segregated into the individual feature-wise modules. In
 * `AnnotationsService` - Inject this provider to use Annotation feature.
 * `GaugeTooltipService` - Inject this provider to use Tooltip feature.
 
-These modules should be injected in the providers section of the **app.module.ts** file as follows,
+These modules should be injected in the providers section of the **app.component.ts** file as follows,
 
  ```javascript
-    import { NgModule } from '@angular/core';
-    import { BrowserModule } from '@angular/platform-browser';
-    import { AppComponent } from './app.component';
-    import { LinearGaugeComponent } from '@syncfusion/ej2-angular-lineargauge';
+    import { LinearGaugeModule } from '@syncfusion/ej2-angular-lineargauge'
+    import { Component } from '@angular/core';
     import { AnnotationsService, GaugeTooltipService} from '@syncfusion/ej2-angular-lineargauge';
 
-    @NgModule({
+    @Component({
         imports: [
-            BrowserModule,
+            LinearGaugeModule,
         ],
-        declarations: [AppComponent, LinearGaugeComponent],
-        bootstrap: [AppComponent],
+        standalone: true,
         providers: [ AnnotationsService, GaugeTooltipService ]
     })
 

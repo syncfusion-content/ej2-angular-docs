@@ -76,41 +76,31 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding OTP Input module
-
-Import OTP Input module into Angular application(app.module.ts) from the package
-`@syncfusion/ej2-angular-inputs`.
-
-```typescript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-// Importing OTP Input module from Syncfusion ej2-angular-inputs package.
-import { OtpInputModule } from '@syncfusion/ej2-angular-inputs';
-
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  imports:      [ BrowserModule, OtpInputModule ], // Declaration of OtpInputModule into NgModule.
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding Syncfusion OTP Input component
 
 Modify the template in `app.component.ts` file to render the OTP Input component.
 
 ```typescript
+
+import { OtpInputModule } from '@syncfusion/ej2-angular-inputs'
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  template: `<!-- To render OTP. -->
-             <div ejs-otpinput id="otpinput" />`
+imports: [
+        OtpInputModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    template: `<!-- To Render OTP Input component. -->
+      <div class="wrap">
+          <div id='otp-container' style="width: 350px;">
+              <div ejs-otpinput id="otpinput"></div>
+          </div>
+      </div>`
 })
-export class AppComponent  { }
+
+export class AppComponent { }
+
 ```
 
 ## Adding CSS reference

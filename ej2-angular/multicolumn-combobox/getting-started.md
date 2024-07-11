@@ -94,26 +94,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering MultiColumn ComboBox module
-
-Import MultiColumn ComboBox module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-multicolumn-combobox`.
-
-```javascript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the MultiColumn ComboBoxModule for the MultiColumn ComboBox component
-import { MultiColumnComboBoxModule } from '@syncfusion/ej2-angular-multicolumn-combobox';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-multicolumn-combobox module into NgModule
-  imports:      [ BrowserModule, MultiColumnComboBoxModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding CSS reference
 
 The following CSS files are available in `../node_modules/@syncfusion` package folder.
@@ -131,15 +111,21 @@ This can be referenced in [src/styles.css] using following code.
 Modify the template in [src/app/app.component.ts] file to render the Angular ComboBox component. Add the Angular MultiColumn ComboBox by using `<ejs-multicolumncombobox>` selector in `template` section of the app.component.ts file.
 
 ```javascript
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { MultiColumnComboBoxModule } from '@syncfusion/ej2-angular-multicolumn-combobox'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { Component } from '@angular/core';
-import { MultiColumnComboBoxComponent } from '@syncfusion/ej2-angular-multicolumn-combobox';
 
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the MultiColumn ComboBox component
-  template: `<ejs-multicolumncombobox id='multicolumn'></ejs-multicolumncombobox>`
+    imports: [ FormsModule, ReactiveFormsModule, MultiColumnComboBoxModule, ButtonModule ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the MultiColumn ComboBox component
+    template: `<ejs-multicolumncombobox id='multicolumn'></ejs-multicolumncombobox>`
 })
 export class AppComponent  { }
+
 ```
 
 ## Binding data source with fields and columns
@@ -147,10 +133,15 @@ export class AppComponent  { }
 After initializing, populate the MultiColumn ComboBox with data by using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#datasource) property, to map the data for each specified columns use the `<e-column>` selector and the [fields](https://ej2.syncfusion.com/angular/documentation/api/multicolumn-combobox#fields) property to map the data fields from the dataSource.
 
 ```typescript
-import { Component } from '@angular/core';
-import { MultiColumnComboBoxComponent } from '@syncfusion/ej2-angular-multicolumn-combobox';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { MultiColumnComboBoxModule } from '@syncfusion/ej2-angular-multicolumn-combobox'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { Component, HostListener, ViewChild } from '@angular/core';
 
 @Component({
+    imports: [ FormsModule, ReactiveFormsModule, MultiColumnComboBoxModule, ButtonModule ],
+    standalone: true,
     selector: 'app-root',
     // specifies the template string for the MultiColumn ComboBox component
     template: `<ejs-multicolumncombobox id='multicolumn' [dataSource]='employeeData' [fields]='fields'>
@@ -180,6 +171,7 @@ export class AppComponent {
     // maps the appropriate column to fields property
     public fields: Object = { text: 'Name', value: 'EmpID' };
 }
+
 ```
 
 ## Running the application

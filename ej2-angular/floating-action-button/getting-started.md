@@ -49,7 +49,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy Library Distribution package
@@ -80,41 +80,28 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding Floating Action Button module
-
-Import Floating Action Button module into Angular application(app.module.ts) from the package
-`@syncfusion/ej2-angular-buttons`.
-
- ```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-// Imported Syncfusion Floating Action Button module from buttons package.
-import { FabModule } from '@syncfusion/ej2-angular-buttons';
-import { AppComponent } from './app.component';
-
-@NgModule({
-    imports: [BrowserModule, FabModule], // Registering EJ2 Floating Action Button Module.
-    declarations: [AppComponent],
-    bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
-
 ## Adding Syncfusion Floating Action Button Component
 
 Modify the template in `app.component.ts` file to render the Floating Action Button component.
 
  ```typescript
+
+import { FabModule } from '@syncfusion/ej2-angular-buttons'
 import { Component } from '@angular/core';
 
 @Component({
+imports: [        
+        FabModule
+    ],
+    standalone: true,
     selector: 'app-root',
-    template: `<!-- To Render Floating Action Button -->
-               <button ejs-fab id='fab'></button>`
+    template: `
+                <!-- To Render Floating Action Button -->
+                <button ejs-fab id='fab' content='Add'></button>`
 })
 
 export class AppComponent { }
+
 ```
 
 ## Adding CSS reference

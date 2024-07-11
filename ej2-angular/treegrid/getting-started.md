@@ -115,12 +115,16 @@ Modify the template in [src/app/app.component.ts] file to render the TreeGrid co
 Add the Angular TreeGrid by using `<ejs-treegrid>` selector in `template` section of the app.component.ts file.
 
 ```typescript
+
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-container',
-  // specifies the template string for the TreeGrid component
-  template: `<ejs-treegrid> </ejs-treegrid>`
+    imports: [ TreeGridModule],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the TreeGrid component
+    template: `<ejs-treegrid> </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
 
@@ -136,21 +140,26 @@ Bind data for the TreeGrid component by using `dataSource` property.
 It accepts either an array of JavaScript object or `DataManager` instance.
 
 ```typescript
+
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 
 @Component({
-    selector: 'app-container',
+    imports: [ TreeGridModule],
+    standalone: true,
+    selector: 'app-root',
     template: `<ejs-treegrid [dataSource]='data'> </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
 
-    public data: Object[];
+    public data!: Object[];
 
     ngOnInit(): void {
         this.data = sampleData;
     }
 }
+
 ```
 
 ## Defining Columns

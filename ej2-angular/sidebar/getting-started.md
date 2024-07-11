@@ -65,7 +65,7 @@ Below dependency packages are required in order to use the `Sidebar` component i
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -107,36 +107,6 @@ To render the Sidebar component, need to import Sidebar and its dependent compon
 
 >Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-## Adding Sidebar module
-
-After installing the package, the sidebar component module is available to configure into your application from installed syncfusion package.
-
-Refer to the following snippet to import the sidebar module in `app.module.ts` from the `@syncfusion/ej2-angular-navigations`.
-
-```typescript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-
-// Imported syncfusion sidebar module from navigations package
-import { SidebarModule } from '@syncfusion/ej2-angular-navigations';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    // Registering EJ2 Sidebar Module
-    SidebarModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
-
 ## Adding Syncfusion component
 
 Add the sidebar component by using `<ejs-sidebar>` selector in `template` section of the `app.component.ts` file.
@@ -144,23 +114,24 @@ Add the sidebar component by using `<ejs-sidebar>` selector in `template` sectio
 Refer the sidebar component snippet in `app.component.ts` as follows.
 
 ```ts
-import { Component } from '@angular/core';
+import { SidebarModule } from '@syncfusion/ej2-angular-navigations'
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  template: ` <ejs-sidebar id="default-sidebar" >
-                <div class="title"> Sidebar content</div>
-              </ejs-sidebar>
-              <div>
-                <div class="title">Main content</div>
-                <div class="sub-title">
-                    Content goes here.
-                </div>
-              </div>`,
-  styleUrls: ['app/app.component.css']
- })
-export class AppComponent {
-}
+imports: [SidebarModule],
+standalone: true,
+selector: 'app-root',
+template: ` <ejs-sidebar id="default-sidebar" >
+              <div class="title"> Sidebar content</div>
+            </ejs-sidebar>
+            <div>
+              <div class="title">Main content</div>
+              <div class="sub-title">
+                  Content goes here.
+              </div>
+            </div>`,
+})
+export class AppComponent { }
 
 ```
 
