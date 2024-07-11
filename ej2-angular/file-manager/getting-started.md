@@ -67,7 +67,7 @@ The following list of dependencies are required to use the file manager componen
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -116,41 +116,6 @@ To render the file manager component, import the file manager and its dependent 
 
 >Note: To refer the combined component styles, use Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-## Adding File Manager module
-
-After installing the package, the file manager component module is available to configure into your application from installed syncfusion package.
-
-Refer to the following snippet to import the file manager module in `app.module.ts` from the `@syncfusion/ej2-angular-filemanager`.
-
-```typescript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-
-import { AppComponent } from './app.component';
-
-// Imported syncfusion filemanager module from filemanager package
-import { FileManagerModule } from '@syncfusion/ej2-angular-filemanager';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-
-    // Registering EJ2 filemanager Module
-    FileManagerModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
-
 ## Adding Syncfusion component
 
 Add the FileManager component by using `<ejs-filemanager>` selector in `template` section of the `app.component.ts` file.
@@ -158,19 +123,25 @@ Add the FileManager component by using `<ejs-filemanager>` selector in `template
 Refer the FileManager component snippet in `app.component.ts` as follows.
 
 ```typescript
+
+import { FileManagerModule, FileManagerAllModule  } from '@syncfusion/ej2-angular-filemanager'
 import { Component } from '@angular/core';
+
 @Component({
+imports: [FileManagerModule, FileManagerAllModule ],
+  standalone: true,
   selector: 'app-root',
-  styleUrls: ['app/app.component.css'],
   template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
 </ejs-filemanager>`
 })
+
 export class AppComponent {
   public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
   public ajaxSettings: object = {
     url: this.hostUrl + 'api/FileManager/FileOperations'
   };
 }
+
 ```
 
 >**Note:** The [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#ajaxsettings) must be defined while initializing the file manager. File manager utilizes the URL's mentioned in ajaxSettings to send [file operation](./file-operations) request to the server.
@@ -203,13 +174,18 @@ The following samples shows the basic file manager component in browser.
 To perform the download operation, initialize the `downloadUrl` property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#ajaxsettings) of File Manager component.
 
 ```typescript
+
+import { FileManagerModule, FileManagerAllModule  } from '@syncfusion/ej2-angular-filemanager'
 import { Component } from '@angular/core';
+
 @Component({
+imports: [FileManagerModule, FileManagerAllModule ],
+  standalone: true,
   selector: 'app-root',
-  styleUrls: ['app/app.component.css'],
   template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
 </ejs-filemanager>`
 })
+
 export class AppComponent {
   public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
   public ajaxSettings: object = {
@@ -217,6 +193,7 @@ export class AppComponent {
     downloadUrl: this.hostUrl + 'api/FileManager/Download'
   };
 }
+
 ```
 
 ## File Upload support
@@ -224,13 +201,18 @@ export class AppComponent {
 To perform the upload operation, initialize the `uploadUrl` property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#ajaxsettings) of File Manager Component.
 
 ```typescript
+
+import { FileManagerModule, FileManagerAllModule  } from '@syncfusion/ej2-angular-filemanager'
 import { Component } from '@angular/core';
+
 @Component({
+imports: [FileManagerModule, FileManagerAllModule ],
+  standalone: true,
   selector: 'app-root',
-  styleUrls: ['app/app.component.css'],
   template: `<ejs-filemanager id='default-filemanager' [ajaxSettings]='ajaxSettings'>
   </ejs-filemanager>`
 })
+
 export class AppComponent {
   public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
   public ajaxSettings: object = {
@@ -238,6 +220,7 @@ export class AppComponent {
     uploadUrl: this.hostUrl + 'api/FileManager/Upload'
   };
 }
+
 ```
 
 ## Image Preview support
@@ -258,27 +241,23 @@ To perform the image preview support in the File Manager component, need to init
 
 ## Injecting feature modules
 
-Basically, the file manager component contains a context menu for performing file operations, large-icons view for displaying the files and folders, and a breadcrumb for navigation. However, these basic functionalities can be extended by using the additional feature modules like toolbar, navigation pane, and details view to simplify the navigation and file operations within the file system. The above modules can be injected into file manager by importing them as providers in `app.module.ts`.
+Basically, the file manager component contains a context menu for performing file operations, large-icons view for displaying the files and folders, and a breadcrumb for navigation. However, these basic functionalities can be extended by using the additional feature modules like toolbar, navigation pane, and details view to simplify the navigation and file operations within the file system. The above modules can be injected into file manager by importing them as providers in `app.component.ts`.
 
-Refer the code snippet in for `app.module.ts`.
+Refer the code snippet in for `app.component.ts`.
 
 ```typescript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager';
-import { AppComponent } from './app.component';
 
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
+import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager';
+import { Component } from '@angular/core';
+
+@Component({
   imports: [
-    BrowserModule, FileManagerModule
+    FileManagerModule
   ],
-  providers: [NavigationPaneService, ToolbarService, DetailsViewService],
-  bootstrap: [AppComponent]
+  standalone: true,
+  providers: [NavigationPaneService, ToolbarService, DetailsViewService]
 })
-export class AppModule { }
+export class AppComponent { }
 
 ```
 

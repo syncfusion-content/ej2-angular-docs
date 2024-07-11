@@ -123,43 +123,24 @@ You can add `DocumentEditorContainer` Component with  predefined toolbar and pro
 
 DocumentEditorContainer is a predefined component which wraps DocumentEditor, Toolbar, Properties pane, and Status bar into a single component. And the toolbar and properties pane is used to view and modify the document in DocumentEditor thought public APIs available in it.
 
-#### Registering DocumentEditorContainer Module
-
-Import `DocumentEditorContainer` module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-documenteditor` [src/app/app.module.ts].
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
-import { AppComponent } from './default.component';
-
-/**
- * Module
- */
-@NgModule({
-    imports: [
-        BrowserModule,
-        DocumentEditorContainerModule
-    ],
-    declarations: [AppComponent],
-    bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
-
 #### Adding DocumentEditorContainer component
 
 Modify the template in [src/app/app.component.ts] file to render the Document Editor Container component.
 Add the Angular Document Editor Container by using `<ejs-documenteditor>` selector in **template** section of the app.component.ts file.
 
 ```typescript
+
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor'
 import { Component, OnInit } from '@angular/core';
 import { ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
-
 @Component({
-    selector: 'app-container',
+imports: [        
+      DocumentEditorContainerModule
+    ],
+    standalone: true,
+    selector: 'app-root',
     // specifies the template string for the DocumentEditorContainer component
-    template: `<ejs-documenteditorcontainer serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
+    template: `<ejs-documenteditorcontainer serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer>`,
     providers: [ToolbarService]
 })
 export class AppComponent implements OnInit {
@@ -167,6 +148,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
     }
 }
+
 ```
 
 #### Run the DocumentEditorContainer application
@@ -197,44 +179,30 @@ DocumentEditorContainer output will be displayed as follows.
 
 DocumentEditor Component is used to create , view and edit word documents. In this , you can customize the UI options based on your requirements to modify the document.
 
-#### Registering DocumentEditor Module
-
-Import Document Editor module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-documenteditor` [src/app/app.module.ts].
-
-```typescript
-  import { NgModule } from '@angular/core';
-  import { BrowserModule } from '@angular/platform-browser';
-  // import the DocumentEditorModule for the DocumentEditor component
-  import { DocumentEditorModule } from '@syncfusion/ej2-angular-documenteditor';
-  import { AppComponent } from './app.component';
-
-  @NgModule({
-        //declaration of ej2-angular-documenteditor module into NgModule
-        imports: [BrowserModule, DocumentEditorModule],
-        declarations: [AppComponent],
-        bootstrap: [AppComponent]
-  })
-  export class AppModule { }
-```
-
 #### Adding DocumentEditor component
 
 Modify the template in [src/app/app.component.ts] file to render the Document Editor component.
 Add the Angular Document Editor by using `<ejs-documenteditor>` selector in `template` section of the app.component.ts file.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
 
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor'
+import { Component, OnInit } from '@angular/core';
 @Component({
-      selector: 'app-container',
-      // specifies the template string for the DocumentEditor component
-      template: `<ejs-documenteditor serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/"> </ejs-documenteditor>`
+imports: [        
+      DocumentEditorContainerModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the DocumentEditorContainer component
+    template: `<ejs-documenteditorcontainer serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/"> </ejs-documenteditorcontainer>`
 })
 export class AppComponent implements OnInit {
 
     ngOnInit(): void {
     }
 }
+
 ```
 
 #### Run the  DocumentEditor application

@@ -70,39 +70,28 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering Chart Module
+## Add Chart component
 
-Import Chart module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-charts` [src/app/app.module.ts].
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the ChartModule for the Chart component
-import { ChartModule } from '@syncfusion/ej2-angular-charts';
-import { AppComponent } from './app/app.component';
-
-@NgModule({
-  //declaration of ChartModule into NgModule
-  imports:      [ BrowserModule, ChartModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
-* Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component
-`[src/app/app.component.ts]`.
+Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component `[src/app/app.component.ts]`.
 
 ```javascript
+
+import { ChartModule, ChartAllModule} from '@syncfusion/ej2-angular-charts'
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-container',
-  // specifies the template string for the Charts component
-  template: `<ejs-chart id='chart-container'></ejs-chart>`,
-  encapsulation: ViewEncapsulation.None
+imports: [
+  ChartModule,
+  ChartAllModule
+],
+standalone: true,
+selector: 'app-root',
+// specifies the template string for the Charts component
+template: `<ejs-chart id='chart-container'></ejs-chart>`,
+encapsulation: ViewEncapsulation.None
 })
-export class AppComponent  { }
+export class AppComponent { }
+
 ```
 
 <!-- markdownlint-disable MD033 -->
@@ -135,7 +124,7 @@ The below example shows a basic Charts.
 
 ## Module Injection
 
-Chart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature service in the AppModule. In the current application, we are going to modify the above basic chart to visualize sales data for a particular year.
+Chart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature service in the `app.component.ts`. In the current application, we are going to modify the above basic chart to visualize sales data for a particular year.
 For this application we are going to use  line series, tooltip, data label, category axis and legend feature of the chart. Please find relevant feature service name and description as follows.
 
 * `LineSeriesService` - Inject this provider to use line series.
@@ -147,19 +136,17 @@ For this application we are going to use  line series, tooltip, data label, cate
 These modules should be injected to the provider section as follows,
 
  ```javascript
-    import { NgModule } from '@angular/core';
-    import { BrowserModule } from '@angular/platform-browser';
-    import { AppComponent } from './app/app.component';
-    import { ChartComponent } from '@syncfusion/ej2-angular-charts';
+    import { ChartModule, ChartAllModule } from '@syncfusion/ej2-angular-charts'
     import { CategoryService, LegendService, TooltipService } from '@syncfusion/ej2-angular-charts';
     import { DataLabelService, LineSeriesService} from '@syncfusion/ej2-angular-charts';
+    import { Component } from '@angular/core';
 
-    @NgModule({
+    @Component({
         imports: [
-            BrowserModule,
+            ChartModule,
+            ChartAllModule
         ],
-        declarations: [AppComponent, ChartComponent],
-        bootstrap: [AppComponent],
+        standalone: true,
         providers: [ CategoryService, LegendService, TooltipService, DataLabelService, LineSeriesService ]
     })
 
