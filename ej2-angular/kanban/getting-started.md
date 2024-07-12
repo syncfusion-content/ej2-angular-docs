@@ -34,7 +34,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. Get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components. They are:
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -65,26 +65,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding Kanban Module
-
-Import Kanban module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-kanban` [src/app/app.module.ts].
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the KanbanModule for the Kanban component
-import { KanbanModule } from '@syncfusion/ej2-angular-kanban';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-kanban module into NgModule
-  imports:      [ BrowserModule, KanbanModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding CSS reference
 
 Add Kanban component’s styles as given in the following `styles.css.`
@@ -107,9 +87,15 @@ Modify the template in the [src/app/app.component.ts] file to render the Kanban 
 `src/app/app.component.ts`
 
 ```typescript
+
+import { KanbanModule } from '@syncfusion/ej2-angular-kanban'
 import { Component } from '@angular/core';
 
 @Component({
+imports: [        
+        KanbanModule
+    ],
+  standalone: true,
   selector: 'app-root',
   // specifies the template string for the Kanban component
   template: `<ejs-kanban>
@@ -122,6 +108,7 @@ import { Component } from '@angular/core';
         </ejs-kanban>`
 })
 export class AppComponent { }
+
 ```
 
 ## Run the application

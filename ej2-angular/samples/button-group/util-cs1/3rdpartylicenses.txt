@@ -28,9 +28,6 @@ SEE LICENSE IN license
 @syncfusion/ej2-buttons
 SEE LICENSE IN license
 
-@syncfusion/ej2-popups
-SEE LICENSE IN license
-
 @syncfusion/ej2-splitbuttons
 SEE LICENSE IN license
 

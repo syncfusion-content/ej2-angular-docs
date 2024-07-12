@@ -44,7 +44,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -75,40 +75,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding Skeleton module
-
-After installing the package, the component modules are ready to configure in your application from installed syncfusion package. Syncfusion Angular package provides two different types of ngModules.
-
-Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module/) to learn about `ngModules`.
-
-Refer the following snippet to import the `SkeletonModule` in `app.module.ts` from the `@syncfusion/ej2-angular-notifications`.
-
-```javascript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-// Imported syncfusion SkeletonModule from ej2-angular-notifications package
-import { SkeletonModule } from '@syncfusion/ej2-angular-notifications';
-
-@NgModule({
-    declarations: [
-        AppComponent
-    ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        // Registering EJ2 Skeleton Module
-        SkeletonModule
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
-})
-export class AppModule { }
-
-```
-
 ## Add Skeleton into application
 
 Modify the `template` in `app.component.ts` file to render the Skeleton component.
@@ -116,14 +82,21 @@ Modify the `template` in `app.component.ts` file to render the Skeleton componen
 `[src/app/app.component.ts]`
 
 ```typescript
+
+import { SkeletonModule } from '@syncfusion/ej2-angular-notifications'
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    template: `<ejs-skeleton height='15px'></ejs-skeleton>`
+imports: [       
+    SkeletonModule
+  ],
+  standalone: true,
+  selector: 'app-root',
+  template: `<ejs-skeleton height='15px'></ejs-skeleton>`
 })
 
 export class AppComponent { }
+
 ```
 
 ## Adding CSS reference

@@ -53,7 +53,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -84,27 +84,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding Ribbon module
-
-Import Ribbon module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-ribbon`.
-
-```javascript
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
-
-// Import Syncfusion Ribbon module from ribbon package.
-import { RibbonModule, RibbonAllModule } from "@syncfusion/ej2-angular-ribbon";
-
-import { AppComponent } from "./app.component";
-
-@NgModule({
-  imports: [BrowserModule, RibbonModule, RibbonAllModule], // Registering EJ2 Ribbon Module.
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
-})
-export class AppModule {}
-```
-
 ## Adding CSS reference
 
 Add Ribbon component's styles as given below in `style.css`.
@@ -127,14 +106,23 @@ Add Ribbon component's styles as given below in `style.css`.
 Modify the template in `app.component.ts` file with `ejs-ribbon` to render the Ribbon component.
 
 ```javascript
+
 import { Component } from "@angular/core";
+import { RibbonModule } from '@syncfusion/ej2-angular-ribbon';
 
 @Component({
-  selector: "app-root",
-  template: `<!-- To Render Ribbon. -->
-    <ejs-ribbon id="ribbon"></ejs-ribbon>`,
+imports: [ RibbonModule ],
+standalone: true,
+selector: "app-root",
+template: `<!-- To Render Ribbon. -->
+  <ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home"></e-ribbon-tab>
+    </e-ribbon-tabs>
+  </ejs-ribbon>`,
 })
-export class AppComponent {}
+export class AppComponent { }
+
 ```
 
 ## Adding Ribbon Tab
@@ -142,18 +130,23 @@ export class AppComponent {}
 In Ribbon, the options are arranged in tabs for easy access. You can use the `<e-ribbon-tab>` selector to define the ribbon tab like below.
 
 ```javascript
+
 import { Component } from "@angular/core";
+import { RibbonModule } from '@syncfusion/ej2-angular-ribbon';
 
 @Component({
-  selector: "app-root",
-  template: `<!-- To Render Ribbon. -->
-    <ejs-ribbon id="ribbon">
-      <e-ribbon-tabs>
-          <e-ribbon-tab header="Home"></e-ribbon-tab>
-      </e-ribbon-tabs>
-    </ejs-ribbon>`,
+imports: [ RibbonModule ],
+standalone: true,
+selector: "app-root",
+template: `<!-- To Render Ribbon. -->
+  <ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home"></e-ribbon-tab>
+    </e-ribbon-tabs>
+  </ejs-ribbon>`,
 })
-export class AppComponent {}
+export class AppComponent { }
+
 ```
 
 ## Adding Ribbon Group
@@ -161,22 +154,26 @@ export class AppComponent {}
 To define a ribbon group under each tab, you can use the `<e-ribbon-group>` selector like below. The `orientation` property of ribbon group defines whether the collection of items will be rendered column-wise or row-wise.
 
 ```javascript
+
 import { Component } from "@angular/core";
+import { RibbonModule } from '@syncfusion/ej2-angular-ribbon';
 
 @Component({
-  selector: "app-root",
-  template: `<!-- To Render Ribbon. -->
-    <ejs-ribbon id="ribbon">
-      <e-ribbon-tabs>
-          <e-ribbon-tab header="Home">
-              <e-ribbon-groups>
-                  <e-ribbon-group header="Clipboard" orientation="Row"></e-ribbon-group>
-              </e-ribbon-groups>
-          </e-ribbon-tab>
-      </e-ribbon-tabs>
-    </ejs-ribbon>`,
+imports: [ RibbonModule ],
+standalone: true,
+selector: "app-root",
+template: `<!-- To Render Ribbon. -->
+  <ejs-ribbon id="ribbon">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard" orientation="Row"></e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
+  </ejs-ribbon>`
 })
-export class AppComponent {}
+
 ```
 
 ## Adding Ribbon Item
@@ -184,11 +181,15 @@ export class AppComponent {}
 You can use the `<e-ribbon-collection>` selector to define each ribbon collection that contains one or more items. To define each ribbon item, you can use the `<e-ribbon-item>` selector and the `type` property to specify the type of component to be rendered, like a button, a drop-down button, a combo box, and more.
 
 ```javascript
+
 import { Component } from "@angular/core";
+import { RibbonModule } from '@syncfusion/ej2-angular-ribbon';
 import { RibbonSplitButtonSettingsModel, RibbonButtonSettingsModel } from '@syncfusion/ej2-angular-ribbon';
 
 @Component({
-  selector: "app-root",
+imports: [ RibbonModule ],
+standalone: true,
+selector: "app-root",
   template: `<!-- To Render Ribbon. -->
     <ejs-ribbon id="ribbon">
         <e-ribbon-tabs>
@@ -217,10 +218,11 @@ import { RibbonSplitButtonSettingsModel, RibbonButtonSettingsModel } from '@sync
     </ejs-ribbon>`,
 })
 export class AppComponent {
-    public pasteSettings: RibbonSplitButtonSettingsModel = { iconCss: "e-icons e-paste", items: [{ text: "Keep Source Format" }, { text: "Merge format" }, { text: "Keep text only" }], content: "Paste" };
-    public cutButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-cut", content: "Cut" };
-    public copyButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-copy", content: "Copy" };
+  public pasteSettings: RibbonSplitButtonSettingsModel = { iconCss: "e-icons e-paste", items: [{ text: "Keep Source Format" }, { text: "Merge format" }, { text: "Keep text only" }], content: "Paste" };
+  public cutButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-cut", content: "Cut" };
+  public copyButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-copy", content: "Copy" };
 }
+
 ```
 
 ## Running the application

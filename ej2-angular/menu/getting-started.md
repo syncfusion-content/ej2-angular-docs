@@ -51,7 +51,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -82,33 +82,13 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding Menu module
-
-Import Menu module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-navigations`.
-
-```javascript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-// Imported Syncfusion menu module from navigations package.
-import { MenuModule } from '@syncfusion/ej2-angular-navigations';
-
-import { AppComponent } from './app.component';
-
-@NgModule({
-    imports: [BrowserModule, MenuModule], // Registering EJ2 Menu Module.
-    declarations: [AppComponent],
-    bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
-
 ## Adding Syncfusion Menu component
 
 Modify the template in `app.component.ts` file with `ejs-menu` to render the Menu
 component.
 
 ```javascript
+import { MenuModule } from '@syncfusion/ej2-angular-navigations'
 import { Component } from '@angular/core';
 import { enableRipple } from '@syncfusion/ej2-base';
 import { MenuItemModel } from '@syncfusion/ej2-angular-navigations';
@@ -116,9 +96,11 @@ import { MenuItemModel } from '@syncfusion/ej2-angular-navigations';
 enableRipple(true);
 
 @Component({
-    selector: 'app-root',
+imports: [ MenuModule],
+standalone: true,
+selector: 'app-root',
     template: `<!-- To Render Menu. -->
-            <ejs-menu [items]='menuItems'></ejs-menu>`
+      <ejs-menu [items]='menuItems'></ejs-menu>`
 })
 
 export class AppComponent {

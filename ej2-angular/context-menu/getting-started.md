@@ -46,12 +46,12 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion  ContextMenu  Package
+## Installing Syncfusion ContextMenu Package
 
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -82,55 +82,38 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding ContextMenu module
-
-Import ContextMenu module into Angular application(app.module.ts) from the package
-`@syncfusion/ej2-angular-navigations`.
-
-```javascript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-// Imported Syncfusion contextmenu module from navigations package
-import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  imports:      [ BrowserModule, ContextMenuModule ], // Registering EJ2 ContextMenu Module
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding Syncfusion ContextMenu component
 
 Modify the template in `app.component.ts` file with `ejs-contextmenu` to render the ContextMenu component and the option contains `menuItems` and `target` in which ContextMenu will be opened.
 
 ```javascript
+import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
 import { Component } from '@angular/core';
 import { MenuItemModel } from '@syncfusion/ej2-navigations';
 
 @Component({
-  selector: 'app-root',
-  template: `<!--target element-->
-            <div id="target">Right click / Touch hold to open the ContextMenu</div>
-
-            <!-- To Render ContextMenu. -->
-            <ejs-contextmenu id='contextmenu' target='#target' [items]= 'menuItems'></ejs-contextmenu>`
+imports: [
+  ContextMenuModule
+],
+standalone: true,
+selector: 'app-root',
+template: `<!--target element-->
+  <div id="target">Right click / Touch hold to open the ContextMenu</div>
+  <!-- To Render ContextMenu. -->
+    <ejs-contextmenu id='contextmenu' target='#target' [items]= 'menuItems'></ejs-contextmenu>`
 })
 
 export class AppComponent {
-    public menuItems: MenuItemModel[] = [
-    {
-        text: 'Cut'
-    },
-    {
-        text: 'Copy'
-    },
-    {
-        text: 'Paste'
-    }];
+  public menuItems: MenuItemModel[] = [
+  {
+      text: 'Cut'
+  },
+  {
+      text: 'Copy'
+  },
+  {
+      text: 'Paste'
+  }];
 }
 ```
 

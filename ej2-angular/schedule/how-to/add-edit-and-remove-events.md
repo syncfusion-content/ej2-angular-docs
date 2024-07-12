@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Add edit and remove events in Angular Schedule component
 
-CRUD actions can be manually performed on appointments using `addEvent`, `saveEvent` and `deleteEvent` methods as shown below.
+CRUD actions can be manually performed on appointments using [`addEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#addevent), [`saveEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#saveevent) and [`deleteEvent`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#deleteevent) methods as shown below.
 
 ## Normal event
 

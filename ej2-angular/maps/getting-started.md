@@ -54,7 +54,7 @@ Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You
 
 Currently, Syncfusion provides two types of package structures for Angular components,
 
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -85,39 +85,28 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering Maps Module
-
-Import Maps module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-maps` [src/app/app.module.ts].
-
-```typescript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the MapsModule for the Maps component
-import { MapsModule } from '@syncfusion/ej2-angular-maps';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of Maps module into NgModule
-  imports:      [ BrowserModule, MapsModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
+## Add Maps component
 
 Modify the template in `app.component.ts` file to render the Maps component
 `[src/app/app.component.ts]`.
 
 ```javascript
+
+import { MapsModule } from '@syncfusion/ej2-angular-maps'
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-container',
+imports: [
+        MapsModule
+    ],
+    standalone: true,
+    selector: 'app-root',
   // specifies the template string for the maps component
   template: `<ejs-maps id='maps-container'></ejs-maps>`,
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent  { }
+
 ```
 
 Add the **world-map** data in the **app.component.ts** file.
@@ -167,11 +156,17 @@ Now use the <code>app-container</code> in the **index.html** instead of default 
 The below example shows a basic map.
 
 ```typescript
+
+import { MapsModule } from '@syncfusion/ej2-angular-maps'
 import { Component } from '@angular/core';
 import { world_map } from './world-map';
 
 @Component({
-    selector: 'app-container',
+imports: [
+        MapsModule
+    ],
+    standalone: true,
+    selector: 'app-root',
     // specifies the template string for the maps component
     template: `<ejs-maps id='maps-container'>
                 <e-layers>
@@ -182,6 +177,7 @@ import { world_map } from './world-map';
 export class AppComponent {
   public shapeData: object = world_map;
 }
+
 ```
 
 ## Module Injection
@@ -205,18 +201,15 @@ Now import the MapsTooltip, DataLabel and Legend modules from maps package
 `@syncfusion/ej2-angular-maps`
 
  ```javascript
-    import { NgModule } from '@angular/core';
-    import { BrowserModule } from '@angular/platform-browser';
-    import { AppComponent } from './app.component';
-    import { MapsComponent,LegendService, DataLabelService,MapsTooltipService} from '@syncfusion/ej2-angular-maps';
+    import { Component } from '@angular/core';
+    import { LegendService, DataLabelService, MapsTooltipService, MapsModule} from '@syncfusion/ej2-angular-maps';
 
     @NgModule({
         imports: [
-            BrowserModule,
+            MapsModule,
         ],
-        declarations: [AppComponent, MapsComponent],
-        bootstrap: [AppComponent],
-        providers: [ MapsComponent,LegendService, DataLabelService,MapsTooltipService ]
+        standalone: true,
+        providers: [ LegendService, DataLabelService,MapsTooltipService ]
     })
 
 ```

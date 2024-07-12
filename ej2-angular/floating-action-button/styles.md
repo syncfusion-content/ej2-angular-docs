@@ -55,7 +55,7 @@ To modify the Floating Action Button appearance, you need to override the defaul
 
 By using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#cssclass), you can customize the Floating Action Button to show text on hover with applied transition effect. For detailed information, refer `index.css` file below.
 
-The content will behave the same , when the `enableHtmlSantiizer` is enabled. Since we are adding only the valid tags in content, sanitizing the content will not affect it.
+The content will behave the same , when the `enableHtmlSanitizer` is enabled. Since we are adding only the valid tags in content, sanitizing the content will not affect it.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -71,3 +71,24 @@ The content will behave the same , when the `enableHtmlSantiizer` is enabled. Si
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/floating-action-button/styles-cs2" %}
+
+## Outline customization
+
+By using the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/floating-action-button/fab/#cssclass) property, you can customize the outline color of the Floating Action Button. Refer the `index.css` file below.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/floating-action-button/styles-cs3/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/floating-action-button/styles-cs3/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/floating-action-button/styles-cs3/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/floating-action-button/styles-cs3/index.css %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/floating-action-button/styles-cs3" %}
