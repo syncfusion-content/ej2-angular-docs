@@ -95,26 +95,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering PivotView Module
-
-Import PivotView module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-pivotview` [src/app/app.module.ts].
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the PivotViewModule for the pivot table component
-import { PivotViewModule } from '@syncfusion/ej2-angular-pivotview';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-pivotview module into NgModule
-  imports:      [ BrowserModule, PivotViewModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding CSS reference
 
 The following CSS files are available in ../node_modules/@syncfusion package folder. This can be referenced in [src/styles.css] using following code.
@@ -142,17 +122,24 @@ Add the template in [src/app/app.component.ts] file to render the pivot table co
 Add the Angular pivot table by using  `<ejs-pivotview>` selector in `template` section of the `app.component.ts` file.
 
 ```typescript
+
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit } from '@angular/core';
 import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 
 @Component({
+imports: [        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+  standalone: true,
   selector: 'app-root',
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350'></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public pivotData: IDataSet[];
-    public dataSourceSettings: IDataOptions;
+    public pivotData!: IDataSet[];
+    public dataSourceSettings!: IDataOptions;
 
     ngOnInit(): void {
     }
@@ -165,17 +152,24 @@ export class AppComponent implements OnInit {
 The Pivot Table component further needs to be populated with an appropriate data source. For illustration purpose, a collection of objects mentioning the sales details of certain products over a period and region has been prepared. This sample data is assigned to the pivot table component through `dataSource` property under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/).
 
 ```typescript
+
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit } from '@angular/core';
 import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 
 @Component({
+imports: [        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+  standalone: true,
   selector: 'app-root',
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public pivotData: IDataSet[];
-    public dataSourceSettings: IDataOptions;
+    public pivotData!: IDataSet[];
+    public dataSourceSettings!: IDataOptions;
 
     ngOnInit(): void {
 
@@ -187,7 +181,7 @@ export class AppComponent implements OnInit {
                 { 'Sold': 27, 'Amount': 46008, 'Country': 'France', 'Products': 'Mountain Bikes', 'Year': 'FY 2016', 'Quarter': 'Q1' }];
 
         this.dataSourceSettings = {
-            dataSource: this.pivotData,
+            dataSource: this.pivotData
         };
     }
 }
@@ -216,17 +210,24 @@ In-order to define each field in the respective axis, the following basic proper
 In this illustration, "Year" and "Quarter" are added in column, "Country" and "Products" in row, and "Sold" and "Amount" in value section respectively.
 
 ```typescript
+
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit } from '@angular/core';
 import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 
 @Component({
+imports: [        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+  standalone: true,
   selector: 'app-root',
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public pivotData: IDataSet[];
-    public dataSourceSettings: IDataOptions;
+    public pivotData!: IDataSet[];
+    public dataSourceSettings!: IDataOptions;
 
     ngOnInit(): void {
 
@@ -256,17 +257,24 @@ Formatting defines a way in which values should be displayed. For example, forma
 > Only fields from value section, which is in the form of numeric data values are applicable for formatting.
 
 ```typescript
+
+import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit } from '@angular/core';
 import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 
 @Component({
+imports: [        
+        PivotViewAllModule,
+        PivotFieldListAllModule
+    ],
+  standalone: true,
   selector: 'app-root',
   // specifies the template string for the pivot table component
   template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings></ejs-pivotview>`
 })
 export class AppComponent implements OnInit {
-    public pivotData: IDataSet[];
-    public dataSourceSettings: IDataOptions;
+    public pivotData!: IDataSet[];
+    public dataSourceSettings!: IDataOptions;
 
     ngOnInit(): void {
 

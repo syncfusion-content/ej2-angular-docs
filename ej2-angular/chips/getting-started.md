@@ -35,7 +35,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -66,26 +66,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering ChipList Module
-
-Import `ChipList` module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-buttons` [src/app/app.module.ts].
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the ChipListModule for the Chip component
-import { ChipListModule } from '@syncfusion/ej2-angular-buttons';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-buttons module into NgModule
-  imports:      [ BrowserModule, ChipListModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding CSS reference
 
 Add `Chip` component CSS using the following code in [`src/styles.css`].
@@ -95,17 +75,24 @@ Add `Chip` component CSS using the following code in [`src/styles.css`].
 @import "../node_modules/@syncfusion/ej2-angular-buttons/styles/material.css";
 ```
 
-## Add Chip
+## Add Chip component
 
 Modify the template in [src/app/app.component.ts] file to render the `Chip` component. Add the Angular `Chip` by using `<e-chip>` child selector with text attribute inside of `ChipList` component selector `<ejs-chiplist>` in `template` section of the `app.component.ts` file.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+
+import { ChipListModule } from '@syncfusion/ej2-angular-buttons'
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
-  // specifies the template string for the Chip component
-  template: `<ejs-chiplist text="Janet Leverling"></ejs-chiplist>`
+imports: [
+        
+        ChipListModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the Chip component
+    template: `<ejs-chiplist text="Janet Leverling"></ejs-chiplist>`
 })
 export class AppComponent {
 

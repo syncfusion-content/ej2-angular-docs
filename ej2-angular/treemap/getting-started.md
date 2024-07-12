@@ -42,38 +42,27 @@ npm install @syncfusion/ej2-angular-treemap --save
 
 > The **--save** will instruct NPM to include the treemap package inside of the `dependencies` section of the `package.json`.
 
-## Registering TreeMap Module
+## Add TreeMap component
 
-Import TreeMap module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-treemap` [src/app/app.module.ts].
-
-```typescript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the TreeMapModule for the TreeMap component
-import { TreeMapModule } from '@syncfusion/ej2-angular-treemap';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of chart module into NgModule
-  imports:      [ BrowserModule, TreeMapModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
-* Modify the template in `app.component.ts` file to render the `ej2-angular-treemap` component `[src/app/app.component.ts]`.
+Modify the template in `app.component.ts` file to render the `ej2-angular-treemap` component `[src/app/app.component.ts]`.
 
 ```javascript
+
+import { TreeMapModule, TreeMapAllModule } from '@syncfusion/ej2-angular-treemap'
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-container',
+imports: [
+      TreeMapModule, TreeMapAllModule
+    ],
+    standalone: true,
+    selector: 'app-root',
   // specifies the template string for the treemap component
   template: `<ejs-treemap id='treemap-container'></ejs-treemap>`,
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent  { }
+
 ```
 
 <!-- markdownlint-disable MD033 -->
@@ -93,16 +82,22 @@ npm start
 The below example shows a basic treemap.
 
 ```typescript
-import { Component } from '@angular/core';
+
+import { TreeMapModule, TreeMapAllModule } from '@syncfusion/ej2-angular-treemap'
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-    selector: 'app-container',
+imports: [
+      TreeMapModule, TreeMapAllModule
+    ],
+    standalone: true,
+    selector: 'app-root',
     // specifies the template string for the treemap component
-    template: `<ejs-treemap id="treemap-container"></ejs-treemap>`
+    template: `<ejs-treemap id='treemap-container'></ejs-treemap>`,
+    encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
+export class AppComponent  { }
 
-}
 ```
 
 Since we did not specify [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treemap/#datasource) for the TreeMap, no items will be rendered and only an empty SVG element will be appended to the treemap container.

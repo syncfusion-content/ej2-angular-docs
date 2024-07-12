@@ -62,7 +62,7 @@ cd syncfusion-angular-textbox
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -98,14 +98,21 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 * Modify the template as HTML input element with `e-input`class in `app.component.ts` file to render the `TextBox` component.
 
 ```javascript
+
+import {TextAreaModule} from '@syncfusion/ej2-angular-inputs'
 import { Component } from '@angular/core';
 
 @Component({
+imports: [        
+        TextAreaModule
+    ],
+    standalone: true,
     selector: 'app-root',
     template: `<input class="e-input" type="text" placeholder="Enter Name" />`
 })
 
 export class AppComponent { }
+
 ```
 
 ## Adding CSS reference
@@ -127,9 +134,14 @@ This can be referenced in [src/styles.css] using following code.
 You can create a TextBox with icon as a group by creating the parent div element with the class `e-input-group` and add the icon element as span with the class `e-input-group-icon`. For detailed information, refer to the [Groups](./groups) section.
 
 ```javascript
+
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+        
+    ],
+    standalone: true,
     selector: 'app-root',
     template: `<div class="wrap">
                 <div class="e-input-group">
@@ -141,25 +153,26 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-    public focusIn(target: HTMLElement): void {
+    public focusIn(target: HTMLElement | any): void {
         target.parentElement.classList.add('e-input-focus');
     }
 
-    public focusOut(target: HTMLElement): void {
+    public focusOut(target: HTMLElement | any): void {
         target.parentElement.classList.remove('e-input-focus');
     }
 
-    public onMouseDown(target: HTMLElement): void {
+    public onMouseDown(target: HTMLElement | any): void {
         target.classList.add('e-input-btn-ripple');
     }
 
-    public onMouseUp(target: HTMLElement): void {
+    public onMouseUp(target: HTMLElement | any): void {
         let ele: HTMLElement = target;
         setTimeout(
                 () => {ele.classList.remove('e-input-btn-ripple'); },
                 500);
     }
 }
+
 ```
 
 ## Running the application

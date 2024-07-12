@@ -35,7 +35,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -77,25 +77,6 @@ npm install @syncfusion/ej2-angular-barcode-generator --save
 ```
 
 > The **--save** will instruct NPM to include the barcode generator package inside of the `dependencies` section of the `package.json`.
-
-## Registering Barcode Generator Module
-
-Import Barcode Generator module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-barcode-generator` [src/app/app.module.ts].
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { BarcodeGeneratorAllModule,QRCodeGeneratorAllModule,DataMatrixGeneratorAllModule } from '@syncfusion/ej2-angular-barcode-generator';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-Barcode Generator module into NgModule
-  imports:      [ BrowserModule, BarcodeGeneratorAllModule, QRCodeGeneratorAllModule ,DataMatrixGeneratorAllModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
 
 ## Adding Barcode Generator control
 

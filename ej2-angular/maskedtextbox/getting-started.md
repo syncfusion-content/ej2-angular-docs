@@ -64,7 +64,7 @@ cd syncfusion-angular-maskedtextbox
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -95,26 +95,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering MaskedTextBox module
-
-Import MaskedTextBox module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-inputs`.
-
-```javascript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// imports the MaskedTextBoxModule for the MaskedTextBox component
-import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  // declaration of ej2-angular-inputs module into NgModule
-  imports:      [ BrowserModule,  MaskedTextBoxModule ],
-  declarations: [ AppComponent],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding CSS reference
 
 The following CSS files are available in `../node_modules/@syncfusion` package folder.
@@ -135,13 +115,20 @@ Modify the template in [src/app/app.component.ts] file to render the MaskedTextB
 Add the Angular MaskedTextBox by using `<ejs-maskedtextbox>` selector in `template` section of the app.component.ts file..
 
 ```javascript
+
+import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs'
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+    MaskedTextBoxModule
+  ],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-maskedtextbox></ejs-maskedtextbox>`
 })
 export class AppComponent  { }
+
 ```
 
 >Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
@@ -154,19 +141,26 @@ For more information about the usage of mask and configuration, refer to this [l
 The following example demonstrates the usage of mask element `0` that allows any single digit from `0` to `9`.
 
 ```typescript
-import { Component} from '@angular/core';
+
+import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-root',
-    // sets mask format to the MaskedTextBox
-    template: `
-            <ejs-maskedtextbox mask='000-000-0000'></ejs-maskedtextbox>
-            `
+imports: [
+    MaskedTextBoxModule
+  ],
+  standalone: true,
+  selector: 'app-root',
+  // sets mask format to the MaskedTextBox
+  template: `
+        <ejs-maskedtextbox mask='000-000-0000'></ejs-maskedtextbox>
+        `
 })
 export class AppComponent {
     constructor() {
     }
 }
+
 ```
 
 ## Running the application
@@ -212,7 +206,7 @@ The following example demonstrates two-way binding functionality with the Masked
 
 MaskedTextBox is a form component and validation is playing vital role in forms to get the valid data.
 Here to showcase the MaskedTextBox with form validations we have used the reactive form.
-For more details about Reactive Forms refer: [`https://angular.io/guide/reactive-forms`](https://angular.io/guide/reactive-forms).
+For more details about Reactive Forms refer: [`https://angular.dev/guide/forms/reactive-forms`](https://angular.dev/guide/forms/reactive-forms).
 
 * To use reactive forms, import `ReactiveFormsModule` from the `@angular/forms` package and add it to your NgModule's imports array. In addition to this, `FormGroup`, `FormControl` should be imported to the app component.
 * The `FormGroup` is used to declare `formGroupName` for the form. The constructor of this `FormGroup` then takes an object, that can contain sub-form-groups and `FormControls`.

@@ -54,37 +54,22 @@ npm install @syncfusion/ej2-angular-querybuilder --save
 
 The above package installs [Query Builder dependencies](./getting-started#dependencies) which are required to render the component in the Angular environment.
 
-## Adding Query Builder module
-
-Import Query Builder module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-querybuilder`.
-
-```typescript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-// Importing QueryBuilderModule from ej2-angular-querybuilder package.
-import { QueryBuilderModule } from '@syncfusion/ej2-angular-querybuilder';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  imports:      [ BrowserModule, QueryBuilderModule ], // Declaration of QueryBuilder module into NgModule.
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-
-```
-
 ## Adding Syncfusion Query Builder component
 
 Modify the template in `app.component.ts` file to render the Angular Query Builder component.
 
 ```typescript
+
+import { QueryBuilderModule } from '@syncfusion/ej2-angular-querybuilder'
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  template: `<!-- To render Query Builder. -->
+imports: [        
+      QueryBuilderModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    template: `<!-- To render Query Builder. -->
                <ejs-querybuilder width="70%">
                 <e-columns>
                   <e-column field="EmployeeID" label="Employee ID" type="number"></e-column>
@@ -100,6 +85,7 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   public values: string[] = ['Mr.', 'Mrs.'];
 }
+
 ```
 
 ## Adding CSS reference

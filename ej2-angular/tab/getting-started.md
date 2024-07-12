@@ -50,7 +50,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -81,26 +81,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering Tab Module
-
-Import Tab module into Angular application(app.module.ts) from the package **@syncfusion/ej2-angular-navigations** [src/app/app.module.ts].
-
-```javascript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the TabModule for the Tab component
-import { TabModule } from '@syncfusion/ej2-angular-navigations';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-navigations module into NgModule
-  imports:      [ BrowserModule, TabModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding CSS reference
 
 The following CSS files are available in `../node_modules/@syncfusion`package folder.
@@ -120,70 +100,80 @@ Modify the template in [src/app/app.component.ts] file to render the Angular Tab
 Add the Angular Tab by using `<ejs-tab>` selector in **template** section of the app.component.ts file.
 
 ```typescript
+import { TabModule } from '@syncfusion/ej2-angular-navigations'
 import { Component, OnInit } from '@angular/core';
 
-@Component({
-  selector: 'app-root',
-  // specifies the template string for the Tab component
-  template: `<ejs-tab> </ejs-tab>`
-})
-export class AppComponent implements OnInit {
+/**
+ * Tab Component
+ */
 
-    ngOnInit(): void {
-    }
+@Component({
+imports: [
+  TabModule
+],
+standalone: true,
+selector: 'app-root',
+// specifies the template string for the Tab component
+template: `<ejs-tab> </ejs-tab>`
+})
+
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+  }
 }
 
 ```
 
 ## Initialize the Tab using JSON items collection
 
-The Tab can be rendered by defining a JSON array. The item is rendered with header [`text`](https://ej2.syncfusion.com/angular/documentation/api/tab/header#text) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItemModel#content) for each Tab.
+The Tab can be rendered by defining a JSON array. The item is rendered with header [`text`](https://ej2.syncfusion.com/angular/documentation/api/tab/header/#text) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItemModel/#content) for each Tab.
 
 ```typescript
 
+import { TabModule } from '@syncfusion/ej2-angular-navigations'
 import { Component } from '@angular/core';
-import { TabComponent } from '@syncfusion/ej2-angular-navigations';
 
 /**
- * Adaptive Tab Component
+ * Tab Component
  */
 
 @Component({
-    selector: 'app-root',
-    template: `<ejs-tab id="element">
-            <e-tabitems>
-                <e-tabitem [header]='headerText[0]' [content]="content0"></e-tabitem>
-                <e-tabitem [header]='headerText[1]' [content]="content1"></e-tabitem>
-                <e-tabitem [header]='headerText[2]' [content]="content2"></e-tabitem>
-            </e-tabitems>
-        </ejs-tab>`
-
+imports: [
+  TabModule
+],
+standalone: true,
+selector: 'app-root',
+template: `<ejs-tab id="element">
+        <e-tabitems>
+            <e-tabitem [header]='headerText[0]' [content]="content0"></e-tabitem>
+            <e-tabitem [header]='headerText[1]' [content]="content1"></e-tabitem>
+            <e-tabitem [header]='headerText[2]' [content]="content2"></e-tabitem>
+        </e-tabitems>
+    </ejs-tab>`
 })
 export class AppComponent {
 
-       public headerText: Object[] = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
+   public headerText: Object[] = [{ 'text': 'Twitter' }, { 'text': 'Facebook' },{ 'text': 'WhatsApp' }];
 
-       public content0: string = 'Twitter is an online social networking service that enables users to send and read short 140-character ' +
-            'messages called "tweets". Registered users can read and post tweets, but those who are unregistered can only read ' +
-            'them. Users access Twitter through the website interface, SMS or mobile device app Twitter Inc. is based in San ' +
-            'Francisco and has more than 25 offices around the world. Twitter was created in March 2006 by Jack Dorsey, ' +
-            'Evan Williams, Biz Stone, and Noah Glass and launched in July 2006. The service rapidly gained worldwide popularity, ' +
-            'with more than 100 million users posting 340 million tweets a day in 2012.The service also handled 1.6 billion ' +
-            'search queries per day.';
+   public content0: string = 'Twitter is an online social networking service that enables users to send and read short 140-character ' +
+        'messages called "tweets". Registered users can read and post tweets, but those who are unregistered can only read ' +
+        'them. Users access Twitter through the website interface, SMS or mobile device app Twitter Inc. is based in San ' +
+        'Francisco and has more than 25 offices around the world. Twitter was created in March 2006 by Jack Dorsey, ' +
+        'Evan Williams, Biz Stone, and Noah Glass and launched in July 2006. The service rapidly gained worldwide popularity, ' +
+        'with more than 100 million users posting 340 million tweets a day in 2012.The service also handled 1.6 billion ' +
+        'search queries per day.';
 
-    public content1: string = 'Facebook is an online social networking service headquartered in Menlo Park, California. Its website was ' +
-            'launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo ' +
-            'Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website\'\s ' +
-            'membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford ' +
-            'University. It gradually added support for students at various other universities and later to high-school students.';
+public content1: string = 'Facebook is an online social networking service headquartered in Menlo Park, California. Its website was ' +
+        'launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo ' +
+        'Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website\'\s ' +
+        'membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford ' +
+        'University. It gradually added support for students at various other universities and later to high-school students.';
 
-    public content2: string = 'WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates ' +
-            'under a subscription business model. It uses the Internet to send text messages, images, video, user location and ' +
-            'audio media messages to other users using standard cellular mobile numbers. As of February 2016, WhatsApp had a user ' +
-            'base of up to one billion,[10] making it the most globally popular messaging application. WhatsApp Inc., based in ' +
-            'Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.';
-
-
+public content2: string = 'WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates ' +
+        'under a subscription business model. It uses the Internet to send text messages, images, video, user location and ' +
+        'audio media messages to other users using standard cellular mobile numbers. As of February 2016, WhatsApp had a user ' +
+        'base of up to one billion,[10] making it the most globally popular messaging application. WhatsApp Inc., based in ' +
+        'Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.';
 }
 
 ```

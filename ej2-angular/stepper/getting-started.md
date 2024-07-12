@@ -48,7 +48,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -79,27 +79,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding Stepper module
-
-Import Stepper module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-navigations`.
-
-```javascript
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
-
-// Import Syncfusion Stepper module from stepper package.
-import { StepperModule, StepperAllModule } from '@syncfusion/ej2-angular-navigations';
-
-import { AppComponent } from "./app.component";
-
-@NgModule({
-  imports: [BrowserModule, StepperAllModule, StepperModule], // Registering EJ2 Stepper Module.
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
-})
-export class AppModule {}
-```
-
 ## Adding CSS reference
 
 Add Stepper component's styles as given below in `style.css`.
@@ -115,18 +94,29 @@ Add Stepper component's styles as given below in `style.css`.
 Modify the template in `app.component.ts` file with `ejs-stepper` to render the Stepper component.
 
 ```javascript
+
 import { Component } from "@angular/core";
-import { StepModel, Stepper } from '@syncfusion/ej2-angular-navigations';
+import {StepperAllModule, StepperModule} from '@syncfusion/ej2-angular-navigations'
 
 @Component({
-  selector: "app-root",
-  template: `<!-- To Render Stepper. -->
-    <div>
-        <ejs-stepper id="default"></ejs-stepper>
-    </div>`,
+imports: [ StepperAllModule, StepperModule ],
+standalone: true,
+selector: "app-root",
+template: `<!-- To Render Stepper. -->
+  <div>
+      <ejs-stepper id="default">
+          <e-steps>
+              <e-step></e-step>
+              <e-step></e-step>
+              <e-step></e-step>
+              <e-step></e-step>
+              <e-step></e-step>
+          </e-steps>
+      </ejs-stepper>
+  </div>`,
 })
-export class AppComponent {
-}
+export class AppComponent { }
+
 ```
 
 ## Adding Steps
@@ -134,25 +124,29 @@ export class AppComponent {
 You can define steps by using `<e-step>` tag directive.
 
 ```javascript
+
 import { Component } from "@angular/core";
+import {StepperAllModule, StepperModule} from '@syncfusion/ej2-angular-navigations'
 
 @Component({
-  selector: "app-root",
-  template: `<!-- To Render Stepper. -->
-    <div>
-        <ejs-stepper id="default">
-          	<e-steps>
-                <e-step></e-step>
-                <e-step></e-step>
-                <e-step></e-step>
-                <e-step></e-step>
-                <e-step></e-step>
-            </e-steps>
-        </ejs-stepper>
-    </div>`,
+imports: [ StepperAllModule, StepperModule ],
+standalone: true,
+selector: "app-root",
+template: `<!-- To Render Stepper. -->
+  <div>
+      <ejs-stepper id="default">
+          <e-steps>
+              <e-step></e-step>
+              <e-step></e-step>
+              <e-step></e-step>
+              <e-step></e-step>
+              <e-step></e-step>
+          </e-steps>
+      </ejs-stepper>
+  </div>`,
 })
-export class AppComponent {
-}
+export class AppComponent { }
+
 ```
 
 ## Running the application

@@ -42,26 +42,6 @@ ng add @syncfusion/ej2-angular-gantt --save
 
 > The **--save** will instruct NPM to include the gantt package inside of the `dependencies` section of the `package.json`.
 
-## Registering Gantt Module
-
-Import Gantt module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-gantt` [src/app/app.module.ts].
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the GanttModule for the Gantt component
-import { GanttModule } from '@syncfusion/ej2-angular-gantt';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-gantt module into NgModule
-  imports:      [ BrowserModule, GanttModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding CSS reference
 
 The following CSS files are available in `../node_modules/@syncfusion` package folder.
@@ -90,11 +70,16 @@ Add the Angular Gantt by using `<ejs-gantt>` selector in `template` section of t
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the Gantt component
-  template: `<ejs-gantt> </ejs-gantt>`
+    imports: [
+        GanttModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the Gantt component
+    template: `<ejs-gantt> </ejs-gantt>`
 })
 export class AppComponent implements OnInit {
 
@@ -110,17 +95,26 @@ Bind data for the Gantt component by using [`dataSource`](https://ej2.syncfusion
 It accepts either array of JavaScript object or `DataManager` instance.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
+imports: [
+         GanttModule
+    ],
+
+standalone: true,
     selector: 'app-root',
-    template: `<ejs-gantt [dataSource]='data'> </ejs-gantt>`
+    template:
+       `<ejs-gantt id="ganttDefault" height="430px" [dataSource]="data" [taskFields]="taskSettings" ></ejs-gantt>`,
+    encapsulation: ViewEncapsulation.None
 })
-export class AppComponent implements OnInit {
+export class AppComponent{
+    // Data for Gantt
+    public data?: object[];
+    public taskSettings?: object;
 
-    public data: Object[];
-
-    ngOnInit(): void {
+    public ngOnInit(): void {
         this.data = [
             {
                 TaskID: 1,
@@ -145,6 +139,16 @@ export class AppComponent implements OnInit {
                 ]
             },
         ];
+        this.taskSettings = {
+            id: 'TaskID',
+            name: 'TaskName',
+            startDate: 'StartDate',
+            endDate: 'EndDate',
+            duration: 'Duration',
+            progress: 'Progress',
+            dependency: 'Predecessor',
+            child: 'subtasks'
+        };
     }
 }
 
@@ -152,7 +156,7 @@ export class AppComponent implements OnInit {
 
 ## Module injection
 
-The Gantt component was segregated into individual feature-wise modules. To use its feature, you need to inject its feature service in the AppModule.
+The Gantt component was segregated into individual feature-wise modules. To use its feature, you need to inject its feature service in the `app.component.ts`.
 Find the relevant feature modules and descriptions as follows:
 
 * [`Edit`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#editmodule) : Inject this module to use the editing feature.
@@ -162,21 +166,19 @@ Find the relevant feature modules and descriptions as follows:
 * [`Toolbar`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#toolbar) : Inject this module to use the toolbar items.
 * [`DayMarkers`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#daymarkersmodule) : Inject this module to highlight the days.
 
-Now, import the above-mentioned modules from the Gantt package and inject them into `provider` section of `AppModule` like following code:
+Now, import the above-mentioned modules from the Gantt package and inject them into `provider` section of `app.component.ts` like following code:
 
  ```javascript
-    import { NgModule } from '@angular/core';
-    import { BrowserModule } from '@angular/platform-browser';
-    import { AppComponent } from './app.component';
-    import { GanttComponent, EditService , FilterService, SortService, SelectionService, ToolbarService,DayMarkersService } from '@syncfusion/ej2-angular-gantt';
+    import { GanttModule } from '@syncfusion/ej2-angular-gantt';
+    import { Component } from '@angular/core';
+    import { EditService , FilterService, SortService, SelectionService, ToolbarService, DayMarkersService } from '@syncfusion/ej2-angular-gantt';
 
-    @NgModule({
+    @Component({
         imports: [
-            BrowserModule,
+            GanttModule
         ],
-        declarations: [AppComponent, GanttComponent],
-        bootstrap: [AppComponent],
-        providers: [ EditService , FilterService, SortService, SelectionService,ToolbarService,DayMarkersService ]
+        standalone: true,
+        providers: [ EditService , FilterService, SortService, SelectionService, ToolbarService, DayMarkersService ]
     })
 
  ```

@@ -18,7 +18,7 @@ The editor window usually opens on the Scheduler, when a cell or event is double
 
 In mobile devices, you can open the detailed editor window in edit mode by clicking the edit icon on the popup, that opens on single tapping an event. You can also open it in add mode by single tapping a cell, which will display a `+` indication, clicking on it again will open the editor window.
 
-> You can also prevent the editor window from opening, by rendering Scheduler in a `readonly` mode or by doing code customization within the `popupOpen` event.
+> You can also prevent the editor window from opening, by rendering Scheduler in a [`readonly`](https://ej2.syncfusion.com/angular/documentation/api/schedule#readonly) mode or by doing code customization within the [`popupOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupopen) event.
 
 ### How to change the editor window header title and text of footer buttons
 
@@ -40,7 +40,7 @@ You can change the header title and the text of buttons displayed at the footer 
 
 ### How to change the label text of default editor fields
 
-To change the default labels such as Subject, Location and other field names in the editor window, make use of the `title` property available within the field option of `eventSettings`.
+To change the default labels such as Subject, Location and other field names in the editor window, make use of the `title` property available within the field option of [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,7 +78,7 @@ It is possible to validate the required fields of the editor window from client-
 
 ### Add additional fields to the default editor
 
-The additional fields can be added to the default event editor by making use of the `popupOpen` event which gets triggered before the event editor opens on the Scheduler. The `popupOpen` is a client-side event that triggers before any of the generic popups opens on the Scheduler. The additional field (any of the form elements) should be added with a common class name `e-field`, so as to handle and process those additional data along with the default event object. In the following example, an additional field `Event Type` has been added to the default event editor and its value is processed accordingly.
+The additional fields can be added to the default event editor by making use of the [`popupOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupopen) event which gets triggered before the event editor opens on the Scheduler. The [`popupOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupopen) is a client-side event that triggers before any of the generic popups opens on the Scheduler. The additional field (any of the form elements) should be added with a common class name `e-field`, so as to handle and process those additional data along with the default event object. In the following example, an additional field `Event Type` has been added to the default event editor and its value is processed accordingly.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -94,7 +94,7 @@ The additional fields can be added to the default event editor by making use of 
 
 ### How to prevent the default focus of the editor widow
 
-When we open the editor window, by default it will be focus to the `Subject` field. And we can able to prevent the default focusing of the editor window using the `popupOpen` event as shown in the following code example.
+When we open the editor window, by default it will be focus to the `Subject` field. And we can able to prevent the default focusing of the editor window using the [`popupOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupopen) event as shown in the following code example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -110,7 +110,7 @@ When we open the editor window, by default it will be focus to the `Subject` fie
 
 ### Customizing the default time duration in editor window
 
-In default event editor window, start and end time duration are processed based on the `interval` value set within the `timeScale` property. By default, `interval` value is set to 30, and therefore the start/end time duration within the event editor will be in a 30 minutes time difference. You can change this duration value by changing the `duration` option within the `popupOpen` event as shown in the following code example.
+In default event editor window, start and end time duration are processed based on the `interval` value set within the [`timeScale`](https://ej2.syncfusion.com/angular/documentation/api/schedule#timescale) property. By default, [`interval`]() value is set to 30, and therefore the start/end time duration within the event editor will be in a 30 minutes time difference. You can change this duration value by changing the [`duration`](https://ej2.syncfusion.com/angular/documentation/api/schedule/popupOpenEventArgs/#duration) option within the [`popupOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupopen) event as shown in the following code example.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -126,7 +126,7 @@ In default event editor window, start and end time duration are processed based 
 
 ### How to prevent the display of editor and quick popups
 
-You prevent the display of editor and quick popup windows by passing the value `true` to `cancel` option within the `popupOpen` event.
+You prevent the display of editor and quick popup windows by passing the value `true` to `cancel` option within the [`popupOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupopen) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -140,7 +140,7 @@ You prevent the display of editor and quick popup windows by passing the value `
   
 {% previewsample "page.domainurl/samples/schedule/editor-window-cs7" %}
 
-In case, if you need to prevent only specific popups on Scheduler, then you can check the condition based on the popup type. The types of the popup that can be checked within the `popupOpen` event are as follows.
+In case, if you need to prevent only specific popups on Scheduler, then you can check the condition based on the popup type. The types of the popup that can be checked within the [`popupOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupopen) event are as follows.
 
 | Type | Description |
 |------|-------------|
@@ -193,7 +193,7 @@ export class AppComponent {
 
 ### Customizing timezone collection in the editor window
 
-By default, the timezone collections in the editor window have been loaded with built-in timezone collections. Now we can be able to customize the timezone collections using the `timezoneDataSource` property with the collection of `TimezoneFields` data.
+By default, the timezone collections in the editor window have been loaded with built-in timezone collections. Now we can be able to customize the timezone collections using the [`timezoneDataSource`](https://ej2.syncfusion.com/angular/documentation/api/schedule#timezonedatasource) property with the collection of [`TimezoneFields`](https://ej2.syncfusion.com/angular/documentation/api/schedule/timezoneFields/) data.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -209,13 +209,13 @@ By default, the timezone collections in the editor window have been loaded with 
 
 ## Customizing event editor using template
 
-The event editor window can be customized by making use of the `editorTemplate` option. Here, the custom window design is built with the required fields using the script template and its type should be of **text/x-template**.
+The event editor window can be customized by making use of the [`editorTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#editortemplate)option. Here, the custom window design is built with the required fields using the script template and its type should be of **text/x-template**.
 
-Each field defined within template should contain the **e-field** class, so as to allow the processing of those field values internally. The ID of this customized script template section is assigned to the `editorTemplate` option, so that these customized fields will be replaced onto the default editor window.
+Each field defined within template should contain the **e-field** class, so as to allow the processing of those field values internally. The ID of this customized script template section is assigned to the [`editorTemplate`](https://ej2.syncfusion.com/angular/documentation/api/schedule#editortemplate) option, so that these customized fields will be replaced onto the default editor window.
 
 >Note: **e-field** class only applicable for **DropDownList**, **DateTimePicker**, **MultiSelect**, **DatePicker**, **CheckBox** and **TextBox** components. Since we have processed the field values internally for the above mentioned components.
 
-As we are using our Syncfusion sub-components within our editor using template in the following example, the custom defined form elements needs to be configured as required Syncfusion components such as **DropDownList** and **DateTimePicker** within the `popupOpen` event. This particular step can be skipped, if the user needs to simply use the usual form elements.
+As we are using our Syncfusion sub-components within our editor using template in the following example, the custom defined form elements needs to be configured as required Syncfusion components such as **DropDownList** and **DateTimePicker** within the [`popupOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupopen) event. This particular step can be skipped, if the user needs to simply use the usual form elements.
 
 Learn the easiest way to customize the editor window of Angular Scheduler with your own design by watching this video:
 
@@ -307,11 +307,11 @@ In the following code example, validation has been added to the status field.
 
 ### How to save the customized event editor using template
 
-The **e-field** class is not added to each field defined within the template, so you should allow to set those field values externally by using the `popupClose` event.
+The **e-field** class is not added to each field defined within the template, so you should allow to set those field values externally by using the [`popupClose`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupclose) event.
 
 Note: You can allow to retrieve the data only on the `save` and `delete` option. Data cannot be retrieved on the `close` and `cancel` options in the editor window.
 
-The following code example shows how to save the customized event editor using a template by the `popupClose` event.
+The following code example shows how to save the customized event editor using a template by the [`popupClose`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupclose) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -325,7 +325,7 @@ The following code example shows how to save the customized event editor using a
   
 {% previewsample "page.domainurl/samples/schedule/resource-field-cs4" %}
 
-In case, if you need to prevent only specific popups on Scheduler, then you can check the condition based on the popup type. The types of the popup that can be checked within the `popupClose` event are as follows.
+In case, if you need to prevent only specific popups on Scheduler, then you can check the condition based on the popup type. The types of the popup that can be checked within the [`popupClose`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupclose) event are as follows.
 
 | Type | Description |
 |------|-------------|
@@ -361,7 +361,7 @@ The following code example shows how to enable save button in customized event e
 
 The quick info popups are the ones that gets opened, when a cell or appointment is single clicked on the desktop mode. On single clicking a cell, you can simply provide a subject and save it. Also, while single clicking on an event, a popup will be displayed where you can get the overview of the event information. You can also edit or delete those events through the options available in it.
 
-By default, these popups are displayed over cells and appointments of Scheduler and to disable this action, set `false` to `showQuickInfo` property.
+By default, these popups are displayed over cells and appointments of Scheduler and to disable this action, set `false` to [`showQuickInfo`](https://ej2.syncfusion.com/angular/documentation/api/schedule#showquickinfo) property.
 
 > The quick popup that opens while single clicking on the cells are not applicable on mobile devices.
 
@@ -379,7 +379,7 @@ By default, these popups are displayed over cells and appointments of Scheduler 
 
 ### How to open QuickInfo popup on multiple cell selection
 
-By default the `QuickInfo` popup will open on single click of the cell. To open the quick info popup on multiple cell selection, you need to select the cells and press `enter` key. You can open this popup immediately after multiple cell selection by setting up `true` to `quickInfoOnSelectionEnd` property where as its default value is `false`.
+By default the `QuickInfo` popup will open on single click of the cell. To open the quick info popup on multiple cell selection, you need to select the cells and press `enter` key. You can open this popup immediately after multiple cell selection by setting up `true` to [`quickInfoOnSelectionEnd`](https://ej2.syncfusion.com/angular/documentation/api/schedule#quickinfoonselectionend) property where as its default value is `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -409,7 +409,7 @@ L10n.load({
 
 ### Customizing quick popups
 
-The look and feel of the built-in quick popup window, which opens when single clicked on the cells or appointments can be customized by making use of the `quickInfoTemplates` property of the Scheduler. There are 3 sub-options available to customize them easily,
+The look and feel of the built-in quick popup window, which opens when single clicked on the cells or appointments can be customized by making use of the [`quickInfoTemplates`](https://ej2.syncfusion.com/angular/documentation/api/schedule#quickinfotemplates) property of the Scheduler. There are 3 sub-options available to customize them easily,
 
 * header - Accepts the template design that customizes the header part of the quick popup.
 * content - Accepts the template design that customizes the content part of the quick popup.
@@ -427,13 +427,13 @@ The look and feel of the built-in quick popup window, which opens when single cl
   
 {% previewsample "page.domainurl/samples/schedule/quick-popup-cs1" %}
 
-> The quick popup in adaptive mode can also be customized using `quickInfoTemplates` using `e-device` class.
+> The quick popup in adaptive mode can also be customized using [`quickInfoTemplates`](https://ej2.syncfusion.com/angular/documentation/api/schedule#quickinfotemplates) using `e-device` class.
 
 ## More events indicator and popup
 
 When the number of appointments count that lies on a particular time range * default appointment height exceeds the default height of a cell in month view and all other timeline views, a `+ more` text indicator will be displayed at the bottom of those cells. This indicator denotes that the cell contains few more appointments in it and clicking on that will display a popup displaying all the appointments present on that day.
 
-> To disable this option of showing popup with all hidden appointments, while clicking on the text indicator, you can do code customization within the `popupOpen` event.
+> To disable this option of showing popup with all hidden appointments, while clicking on the text indicator, you can do code customization within the [`popupOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#popupopen) event.
 
 The same indicator is displayed on all-day row in calendar views such as day, week and work week views alone, when the number of appointment count present in a cell exceeds three. Clicking on the text indicator here will not open a popup, but will allow the expand/collapse option for viewing the remaining appointments present in the all-day row.
 
@@ -487,7 +487,7 @@ The following code example shows you how to customize the details shown on the a
 
 ### How to prevent the display of popup when clicking on the more text indicator
 
-It is possible to prevent the display of popup window by passing the value `true` to `cancel` option within the `MoreEventsClick` event.
+It is possible to prevent the display of popup window by passing the value `true` to `cancel` option within the [`MoreEventsClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule#moreeventsclick) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -503,7 +503,7 @@ It is possible to prevent the display of popup window by passing the value `true
 
 ### How to navigate Day view when clicking on more text indicator
 
-The following code example shows you how to customize the `moreEventsClick` property to navigate to the Day view when clicking on the more text indicator.
+The following code example shows you how to customize the [`MoreEventsClick`](https://ej2.syncfusion.com/angular/documentation/api/schedule#moreeventsclick) property to navigate to the Day view when clicking on the more text indicator.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

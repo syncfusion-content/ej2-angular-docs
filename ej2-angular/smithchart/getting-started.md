@@ -35,7 +35,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -66,39 +66,28 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering TreeMap Module
+## Add SmithChart component
 
-Import TreeMap module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-charts` [src/app/app.module.ts].
-
-```typescript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the SmithchartModule for the Smithchart component
-import { SmithchartModule } from '@syncfusion/ej2-angular-charts';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-smithchart module into NgModule
-  imports:      [ BrowserModule, SmithchartModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
-* Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component
+Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component
 `[src/app/app.component.ts]`.
 
 ```javascript
+
+import { SmithchartModule } from '@syncfusion/ej2-angular-charts'
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-container',
-  // specifies the template string for the Smithchart component
-  template: `<ejs-smithchart style='display: block;' id='container'></ejs-smithchart>`,
-  encapsulation: ViewEncapsulation.None
+imports: [
+      SmithchartModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the Smithchart component
+    template: `<ejs-smithchart style='display: block;' id='container'></ejs-smithchart>`,
+    encapsulation: ViewEncapsulation.None
 })
 export class AppComponent  { }
+
 ```
 
 <!-- markdownlint-disable MD033 -->
@@ -131,7 +120,7 @@ The below example shows a basic Smithchart.
 
 ## Module Injection
 
-Smithchart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature service in the AppModule. In the current application, we are going to modify the above basic smithchart to visualize transmission lines.
+Smithchart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature service in the `app.component.ts`. In the current application, we are going to modify the above basic smithchart to visualize transmission lines.
 For this application we are going to use  tooltip and legend feature of the smithchart. Please find relevant feature service name and description as follows.
 
 * SmithchartLegendService - Inject this provider to use legend feature.
@@ -140,18 +129,16 @@ For this application we are going to use  tooltip and legend feature of the smit
 These modules should be injected to the provider section as follows,
 
  ```javascript
-    import { NgModule } from '@angular/core';
-    import { BrowserModule } from '@angular/platform-browser';
-    import { AppComponent } from './app.component';
-    import { SmithchartComponent } from '@syncfusion/ej2-angular-charts';
+
+    import { Component } from '@angular/core';
+    import { SmithchartModule } from '@syncfusion/ej2-angular-charts'
     import { SmithchartLegendService, TooltipRenderService } from '@syncfusion/ej2-angular-charts';
 
-    @NgModule({
+    @Component({
         imports: [
             BrowserModule,
         ],
-        declarations: [AppComponent, SmithchartComponent],
-        bootstrap: [AppComponent],
+        standalone: true,
         providers: [ SmithchartLegendService, TooltipRenderService ]
     })
 

@@ -35,7 +35,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -66,39 +66,27 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering RangeNavigator Module
+## Add RangeNavigator component
 
-Import Chart module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-charts` [src/app/app.module.ts].
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the RangeNavigatorModule for the RangeNavigator component
-import { RangeNavigatorModule } from '@syncfusion/ej2-angular-charts';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-    //declaration of RangeNavigatorModule into NgModule
-  imports:  [ BrowserModule, RangeNavigatorModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
-* Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component
-`[src/app/app.component.ts]`.
+Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component `[src/app/app.component.ts]`.
 
 ```javascript
-import { Component, ViewEncapsulation } from '@angular/core';
+
+import { ChartModule, RangeNavigatorModule } from '@syncfusion/ej2-angular-charts';
+import { Component,ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-container',
-  // specifies the template string for the RangeNavigator component
-  template: `<ejs-rangenavigator id="rn-container"></ejs-rangenavigator>`,
-  encapsulation: ViewEncapsulation.None
+imports: [
+  ChartModule, RangeNavigatorModule
+],
+standalone: true,
+selector: 'app-root',
+// specifies the template string for the RangeNavigator component
+template: `<ejs-rangenavigator id="rn-container"></ejs-rangenavigator>`,
+encapsulation: ViewEncapsulation.None
 })
-export class AppComponent  { }
+export class AppComponent { }
+
 ```
 
 <!-- markdownlint-disable MD033 -->
@@ -126,18 +114,16 @@ To create range navigator with additional features, inject the required modules.
 These modules should be injected to the provider section as follows,
 
  ```javascript
-    import { NgModule } from '@angular/core';
-    import { BrowserModule } from '@angular/platform-browser';
-    import { AppComponent } from './app.component';
-    import { RangeNavigatorComponent } from '@syncfusion/ej2-angular-charts';
+    import { Component } from '@angular/core';
+    import { ChartModule, RangeNavigatorModule } from '@syncfusion/ej2-angular-charts';
     import { AreaSeriesService, DateTimeService, RangeTooltipService } from '@syncfusion/ej2-angular-charts';
 
-    @NgModule({
+    @Component({
         imports: [
-            BrowserModule,
+            ChartModule,
+            RangeNavigatorModule
         ],
-        declarations: [AppComponent, RangeNavigatorComponent],
-        bootstrap: [AppComponent],
+        standalone: true,
         providers: [ AreaSeriesService, DateTimeService, RangeTooltipService ]
     })
 

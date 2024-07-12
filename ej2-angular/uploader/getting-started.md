@@ -63,7 +63,7 @@ cd syncfusion-angular-uploader
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -94,27 +94,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Initialize Uploader
-
-The below couple of steps describes to initialize the uploader component in Angular application.
-
-* Import `UploaderModule` from `@syncfusion/ej2-angular-inputs` package, inject into `imports` section of `NgModule` in the module file `src/app/app.module.ts` to use the `Uploader` component across the application.
-
-```typescript
-
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent }  from './app.component';
-import { UploaderModule  } from '@syncfusion/ej2-angular-inputs';
-@NgModule({
-  imports:      [ BrowserModule , UploaderModule],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-
-```
-
 ## Adding CSS reference
 
 The following CSS files are available in `../node_modules/@syncfusion` package folder.
@@ -138,9 +117,14 @@ Add the Angular Uploader by using `<ejs-uploader>` selector in `template` sectio
 
 ```typescript
 
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
 import { Component } from '@angular/core';
 
 @Component({
+imports: [
+         UploaderModule
+    ],
+    standalone: true,
     selector: 'app-root',
     template: `
                <ejs-uploader #defaultupload  [autoUpload]='false'></ejs-uploader>

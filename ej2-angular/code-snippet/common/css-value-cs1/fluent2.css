@@ -1,0 +1,23 @@
+/* Hex values of fluent2 theme */
+:root {
+    --color-sf-black: #000;
+    --color-sf-white: #fff;
+    --color-sf-primary: #0f6cbd;
+    --color-sf-primary-text-color: #fff;
+    --color-sf-primary-light: #b4d6fa;
+    --color-sf-primary-lighter: #ebf3fc;
+    --color-sf-primary-dark: #0f548c;
+    --color-sf-primary-darker: #0c3b5e;
+    --color-sf-success: #0e700e;
+    --color-sf-info: #008aa9;
+    --color-sf-warning: #bc4b09;
+    --color-sf-danger: #d13438;
+    --color-sf-success-light: #54b054;
+    --color-sf-info-light: #56bfd7;
+    --color-sf-warning-light: #fee5d7;
+    --color-sf-danger-light: #eeacb2;
+    --color-sf-success-dark: #54b054;
+    --color-sf-info-dark: #56bfd7;
+    --color-sf-warning-dark: #8a3707;
+    --color-sf-danger-dark: #6e0811;
+  }

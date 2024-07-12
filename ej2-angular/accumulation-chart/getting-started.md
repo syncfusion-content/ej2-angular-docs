@@ -68,47 +68,35 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering AccumulationChart Module
+## Add AccumulationChart component
 
-Import AccumulationChart module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-charts` [src/app/app.module.ts].
+Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component `[src/app/app.component.ts]`.
 
-   ```typescript
-    import { NgModule } from '@angular/core';
-    import { BrowserModule } from '@angular/platform-browser';
-     // import the AccumulationChartModule for the AccumulationChart component
-    import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts';
-    import { AppComponent } from './app/app.component';
+```javascript
 
-    @NgModule({
-      //declaration of AccumulationChartModule into NgModule
-      imports:      [ BrowserModule, AccumulationChartModule ],
-      declarations: [ AppComponent ],
-      bootstrap:    [ AppComponent ]
-     })
-    export class AppModule { }
-  ```
+import { AccumulationChartAllModule } from '@syncfusion/ej2-angular-charts'
+import { Component, ViewEncapsulation } from '@angular/core';
 
-* Modify the template in `app.component.ts` file to render the `ej2-angular-charts` component
-`[src/app/app.component.ts]`.
+@Component({
+imports: [
+  AccumulationChartAllModule
+],
+standalone: true,
+selector: 'app-root',
+// specifies the template string for the Accumulation Charts component
+template: `<ejs-accumulationchart id="pie-container">
+  </ejs-accumulationchart>`,
+encapsulation: ViewEncapsulation.None
+})
+export class AppComponent { }
 
-  ```javascript
-   import { Component, ViewEncapsulation } from '@angular/core';
+```
 
-   @Component({
-  selector: 'app-container',
-  // specifies the template string for the Accumulation Charts component
-  template: `<ejs-accumulationchart id="pie-container">
-    </ejs-accumulationchart>`,
-   encapsulation: ViewEncapsulation.None
-  })
-  export class AppComponent  { }
-  ```
+Now use the <code>app-container</code> in the index.html instead of default one.
 
-  Now use the <code>app-container</code> in the index.html instead of default one.
-
-  ```
-   <app-container></app-container>
-  ```
+```
+  <app-container></app-container>
+```
 
 * Now run the application in the browser using the below command.
 

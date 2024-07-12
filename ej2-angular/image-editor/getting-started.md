@@ -63,42 +63,28 @@ npm install @syncfusion/ej2-angular-image-editor --save
 The above package installs [Image Editor dependencies](./getting-started#dependencies) which
 are required to render the component in the Angular environment.
 
-## Adding Image Editor module
-
-Import Image Editor module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-image-editor`.
-
-```typescript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-// Importing ImageEditorModule from ej2-angular-image-editor package.
-import { ImageEditorModule } from '@syncfusion/ej2-angular-image-editor';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  imports:      [ BrowserModule, ImageEditorModule ], // Declaration of ImageEditor module into NgModule.
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-
-```
-
 ## Adding Syncfusion Image Editor component
 
 Modify the template in `app.component.ts` file to render the Angular Image Editor component.
 
 ```typescript
+
+import { ImageEditorModule } from '@syncfusion/ej2-angular-image-editor'
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  template: `<!-- To render Image Editor. -->
+imports: [        
+        ImageEditorModule
+    ],
+    standalone: true,
+    selector: 'app-root',
+    template: `<!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
                <ejs-imageeditor></ejs-imageeditor>
               </div>`
 })
 export class AppComponent  { }
+
 ```
 
 ## Adding CSS reference
