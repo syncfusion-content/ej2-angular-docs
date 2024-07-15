@@ -176,3 +176,5 @@ To save the modified image in an image editor, do the following steps.
 * Select the type of file to be saved from the popup to save with current modification done in an image.
 
 ![Export an image showcase](../code-snippet/image-editor/images/save.gif)
+
+
