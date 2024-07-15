@@ -242,6 +242,7 @@ Please find the code to fetch the blob data and load it into the Spreadsheet com
   
 {% previewsample "page.domainurl/samples/spreadsheet/open-from-blobdata-cs1" %}
 
+
 ### External workbook confirmation dialog
 
 When you open an excel file that contains external workbook references, you will see a confirmation dialog. This dialog allows you to either continue with the file opening or cancel the operation. This confirmation dialog will appear only if you set the `AllowExternalWorkbook` property value to **false** during the open request, as shown below. This prevents the spreadsheet from displaying inconsistent data.
@@ -486,7 +487,7 @@ You can find the server endpoint code to save the spreadsheet data as an Excel f
 //To save an Excel file to the server.
 fetch('https://localhost:{port number}/Home/Save')
 ```
-=======
+
 ### To save an excel file as blob data
 
 By default, the Spreadsheet component saves the Excel file and downloads it to the local file system. If you want to save an Excel file as blob data, you need to set `needBlobData` property to **true** and `isFullPost` property to **false** in the [beforeSave](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforesave) event of the spreadsheet. Subsequently, you will receive the spreadsheet data as a blob in the [saveComplete](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#savecomplete) event. You can then post the blob data to the server endpoint for saving.
@@ -588,3 +589,4 @@ You can refer to our [Angular Spreadsheet](https://www.syncfusion.com/angular-ui
 * [Filtering](./filter)
 * [Sorting](./sort)
 * [Hyperlink](./link)
+* [Docker Image](./docker-deployment)

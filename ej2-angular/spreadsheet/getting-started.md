@@ -53,7 +53,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
+1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -84,6 +84,24 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
+## Registering Spreadsheet Module
+
+Import Spreadsheet module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-spreadsheet` [src/app/app.module.ts].
+
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  imports:      [ BrowserModule, SpreadsheetAllModule ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+```
+
 ## Adding CSS reference
 
 The following CSS files are available in `../node_modules/@syncfusion` package folder.
@@ -107,18 +125,12 @@ This can be referenced in `[src/styles.css]` using following code.
 Modify the template in [src/app/app.component.ts] file to render the spreadsheet component. Add the Angular Spreadsheet by using `<ejs-spreadsheet>` selector in template section of the `app.component.ts` file.
 
 ```typescript
-
-import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
 import { Component } from '@angular/core';
 
 @Component({
-imports: [     
-      SpreadsheetAllModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    // specifies the template string for the Spreadsheet control
-    template: `<ejs-spreadsheet> </ejs-spreadsheet>`
+  selector: 'app-root',
+  // specifies the template string for the Spreadsheet control
+  template: `<ejs-spreadsheet> </ejs-spreadsheet>`
 })
 export class AppComponent { }
 
