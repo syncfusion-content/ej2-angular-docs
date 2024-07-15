@@ -5,37 +5,39 @@ import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor'
 
 
 
-import { Component, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
-import { DocumentEditorComponent } from '@syncfusion/ej2-angular-documenteditor';
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import {
+  DocumentEditorComponent, SfdtExportService, SelectionService, FontDialogService, EditorService, ContextMenuService
+} from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-imports: [
-        
-        ButtonModule,
-        DocumentEditorAllModule
-    ],
-
-
-standalone: true,
-      selector: "app-container",
-      template: `<button id='container_ruler_button'(click)="onClick(this)">Show/Hide Ruler</button>
-      <ejs-documenteditorcontainer #documenteditor serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" isReadOnly: false style="width:100%;display:block" [enableToolbar]=true [documentEditorSettings]= "enableRuler"> </ejs-documenteditorcontainer>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: []
+  imports: [
+    ButtonModule,
+    DocumentEditorAllModule
+  ],
+  standalone: true,
+  selector: 'app-container',
+  //specifies the template string for the Document Editor component
+  template: `<div>
+      <button ejs-button (click)="btnClick()" >Show/Hide Ruler</button>
+      <ejs-documenteditor #document_editor  id="container" height="330px" style="display:block" [isReadOnly]=false [enableSelection]=true
+      [enableSfdtExport]=true [enableContextMenu]=true
+      [enableFontDialog]=true [enableEditor]=true [documentEditorSettings]="documentEditorSettings" >
+      </ejs-documenteditor>
+      </div>`,
+  encapsulation: ViewEncapsulation.None,
+  providers: [SfdtExportService, SelectionService, FontDialogService, EditorService, ContextMenuService]
 })
-export class AppComponent implements OnInit {
-    @ViewChild("documenteditor")
-    public documentEditor: DocumentEditorComponent;
-    ngOnInit(): void {
-      this.documentEditor.enableAllModules();
-    }
-    public enableRuler = { showRuler: true };
 
+export class AppComponent {
+  @ViewChild('document_editor')
+  public documentEditor!: DocumentEditorComponent;
 
-    onClick(args: any):void {
-      this.documentEditor.documentEditorSettings.showRuler = !this.documentEditor.documentEditorSettings.showRuler;
-    }   
+  public documentEditorSettings = { showRuler: true };
+  public btnClick(): void {
+    this.documentEditorSettings.showRuler = !this.documentEditorSettings.showRuler;
+    this.documentEditor.documentEditorSettings = { showRuler: this.documentEditorSettings.showRuler };
+  }
 }
-
 
 
