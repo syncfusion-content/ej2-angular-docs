@@ -303,3 +303,6 @@ The following table illustrates those commands with the associated key values.
 * [How to disable the diagram interaction](./tools)
 * [How to control the diagram history](./undo-redo)
 * [How to create overview control to the diagram](./overview)
+
+
+
