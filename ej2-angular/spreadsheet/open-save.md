@@ -45,55 +45,6 @@ Please find the below table for the beforeOpen event arguments.
 > * Use `Ctrl + O` keyboard shortcut to open Excel documents.
 > * The default value of the [allowOpen](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#allowopen) property is `true`. For demonstration purpose, we have showcased the [allowOpen](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#allowopen) property in previous code snippet.
 
-### Open an external URL excel file while initial load
-
-You can achieve to access the remote excel file by using the [`created`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#created) event. In this event you can fetch the excel file and convert it to a blob. Convert this blob to a file and [`open`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#open) this file by using Spreadsheet component open method.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs2/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs2" %}
-
-### To add custom header during open
-
-You can add your own custom header to the open action in the Spreadsheet. For processing the data, it has to be sent from server to client side and adding customer header can provide privacy to the data with the help of Authorization Token. Through the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforeopen) event, the custom header can be added to the request during open action.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs8/app/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs8/app/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs8" %}
-
-
-### Open excel file into a read-only mode
-
-You can open excel file into a read-only mode by using the [`openComplete`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#opencomplete) event. In this event, you must protect all the sheets and lock its used range cells by using [`protectSheet`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#protectsheet) and [`lockCells`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#lockcells) methods.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs12/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs12/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs12" %}
-
 ### Open an excel file using a file uploader 
 
 If you explore your machine to select and upload an excel document using the file uploader, you will receive the uploaded document as a raw file in the [success](https://ej2.syncfusion.com/angular/documentation/api/uploader/#success) event of the file uploader. In this `success` event, you should pass the received raw file as an argument to the Spreadsheet's [open](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#open) method to see the appropriate output.
@@ -112,64 +63,41 @@ The following code example shows how to import an excel document using file uplo
   
 {% previewsample "page.domainurl/samples/spreadsheet/open-save-cs7" %}
 
+### Open an external URL excel file while initial load
 
-### Configure JSON deserialization options
-
-Previously, when opening a workbook JSON object into the Spreadsheet using the [openFromJson](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#openfromjson) method, the entire workbook, including all features specified in the JSON object, was processed and loaded into the Spreadsheet. 
-
-Now, you have the option to selectively ignore some features during the opening of the JSON object by configuring deserialization options and passing them as arguments to the `openFromJson` method. This argument is optional, and if not configured, the entire workbook JSON object will be loaded without ignoring any features.
-
-```ts
-spreadsheet.openFromJson({ file: file }, { ignoreStyle: true });
-```
-
-| Options | Description |
-| ----- | ----- |
-| onlyValues |  If **true**, only the cell values will be loaded. |
-| ignoreStyle | If **true**, styles will be excluded when loading the JSON data. |
-| ignoreFormula | If **true**, formulas will be excluded when loading the JSON data. |
-| ignoreFormat | If **true**, number formats will be excluded when loading the JSON data. |
-| ignoreConditionalFormat | If **true**, conditional formatting will be excluded when loading the JSON data. |
-| ignoreValidation | If **true**, data validation rules will be excluded when loading the JSON data. |
-| ignoreFreezePane | If **true**, freeze panes will be excluded when loading the JSON data. |
-| ignoreWrap | If **true**, text wrapping settings will be excluded when loading the JSON data. |
-| ignoreChart | If **true**, charts will be excluded when loading the JSON data. |
-| ignoreImage | If **true**, images will be excluded when loading the JSON data. |
-| ignoreNote | If **true**, notes will be excluded when loading the JSON data. |
-
-The following code snippet demonstrates how to configure the deserialization options and pass them as arguments to the openFromJson method:
+You can achieve to access the remote excel file by using the [`created`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#created) event. In this event you can fetch the excel file and convert it to a blob. Convert this blob to a file and [`open`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#open) this file by using Spreadsheet component open method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-from-json/src/app.component.ts %}
+{% include code-snippet/spreadsheet/open-save-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-from-json/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/spreadsheet/open-from-json" %}
-
-### Open an excel file from Base64 string data
-
-In the Syncfusion Spreadsheet component, there is no direct option to open data as a `Base64` string. To achieve this, the `import()` function fetches the `Base64` string, converts it to a Blob, creates a File object from the Blob, and then opens it using the [open](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#open) method in the spreadsheet.
-
-The following code example shows how to open the spreadsheet data as base64 string.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/base-64-string/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/base-64-string/src/main.ts %}
+{% include code-snippet/spreadsheet/open-save-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/spreadsheet/base-64-string" %}
+{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs2" %}
 
-### To open an Excel file located on a server
+### Open an excel file from blob data
+
+By default, the Spreadsheet component provides an option to browse files from the local file system and open them within the component. If you want to open an Excel file from blob data, you need to fetch the blob data from the server or another source and convert this blob data into a `File` object. Then, you can use the [open](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#open) method in the Spreadsheet component to load that `File` object.
+
+Please find the code to fetch the blob data and load it into the Spreadsheet component below.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/open-from-blobdata-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/open-from-blobdata-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/spreadsheet/open-from-blobdata-cs1" %}
+
+### Open an Excel file located on a server
 
 By default, the Spreadsheet component provides an option to browse files from the local file system and open them within the component. If you want to load an Excel file located on a server, you need to configure the server endpoint to fetch the Excel file from the server location, process it using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, and send it back to the client side as `JSON data`. On the client side, you should use the [openFromJson](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#openfromjson) method to load that `JSON data` into the Spreadsheet component.
 
@@ -224,24 +152,196 @@ You can find the server endpoint code to fetch and process the Excel file in thi
 fetch('https://localhost:{port number}/Home/Open')
 ```
 
-### To open an excel file from blob data
+### Open an excel file using a hosted web service in AWS Lambda
 
-By default, the Spreadsheet component provides an option to browse files from the local file system and open them within the component. If you want to open an Excel file from blob data, you need to fetch the blob data from the server or another source and convert this blob data into a `File` object. Then, you can use the [open](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#open) method in the Spreadsheet component to load that `File` object.
+Before proceeding with the opening process, you should deploy the spreadsheet open/save web API service in AWS Lambda. To host the open/save web service in the AWS Lambda environment, please refer to the following KB documentation.
 
-Please find the code to fetch the blob data and load it into the Spreadsheet component below.
+After deployment, you will get the AWS service URL for the open and save actions. Before opening the Excel file with this hosted open URL, you need to prevent the default file opening process to avoid getting a corrupted file on the open service end. The spreadsheet component appends the file to the `formData` and sends it to the open service, which causes the file to get corrupted. To prevent this, set the `args.cancel` value to `true` in the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforeopen) event. After that, you will get the selected file in the `beforeOpen` event argument. Then, convert this file into a base64 string and send it to the open service URL using a fetch request.
+
+On the open service end, convert the base64 string back to a file and pass it as an argument to the workbook `Open` method. The open service will process the file and return the spreadsheet data in JSON format. You will then receive this JSON data in the fetch success callback. Finally, use the [openFromJson](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#openfromjson) method to load this JSON data into the spreadsheet component.
+
+The following code example shows how to open an Excel file using a hosted web service in AWS Lambda, as mentioned above.
+
+```ts
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { SpreadsheetComponent, SpreadsheetModule } from '@syncfusion/ej2-angular-spreadsheet';
+
+@Component({
+    selector: 'app-root',
+    template: `<div class="control-section">
+    <ejs-spreadsheet #default [openUrl]="openUrl" (beforeOpen)="beforeOpenHandler($event)">
+    </ejs-spreadsheet>
+</div>`,
+    encapsulation: ViewEncapsulation.None,
+    standalone: true,
+    imports: [ SpreadsheetModule, ]
+})
+
+export class AppComponent {
+    constructor() {
+        
+    }
+    @ViewChild('default')
+    public spreadsheetObj: SpreadsheetComponent;
+    public openUrl = 'https://xxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/open';
+    
+
+    beforeOpenHandler(eventArgs) {
+        eventArgs.cancel = true; // To prevent the default open action.
+        if (eventArgs.file) {
+            const reader = new FileReader();
+            reader.readAsDataURL(eventArgs.file);
+            reader.onload = () => {
+                // Removing the xlsx file content-type.
+                const base64Data: any = reader.result.toString().replace('data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,', '');
+                this.openExcel({
+                    file: base64Data,
+                    extension: eventArgs.file.name.slice(eventArgs.file.name.lastIndexOf('.') + 1),
+                    password: eventArgs.password || ''
+                });
+            };
+        }
+    }
+
+    openExcel (requestData) {
+        // Fetch call to AWS server for open processing.
+        fetch('https://xxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/open', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json, text/plain',
+                'Content-Type': 'application/json;charset=UTF-8'
+            },
+            body: JSON.stringify(requestData)
+        }).then((response) => {
+            if (response.ok) {
+                return response.json();
+            }
+        }).then((data) => {
+            // Loading the JSON data into our spreadsheet.
+            if (data.Workbook && data.Workbook.sheets) {
+                this.spreadsheetObj.openFromJson({ file: data });
+            }
+        }).catch((error) => {
+            console.log(error);
+        });
+    };
+}
+```
+
+```csharp
+public IActionResult Open(OpenOptions openOptions)
+{
+    // Convert the base64 string to bytes array.
+    byte[] bytes = Convert.FromBase64String(openOptions.File);
+    // Loading the bytes array to stream.
+    MemoryStream stream = new MemoryStream(bytes);
+    OpenRequest open = new OpenRequest();
+    // Converting the stream into FormFile.
+    open.File = new FormFile(stream, 0, bytes.Length, "Sample", "Sample." + openOptions.Extension);
+    if (string.IsNullOrEmpty(openOptions.Password))
+        open.Password = openOptions.Password;
+    var result = Workbook.Open(open);
+    return Content(result);
+}
+
+public class OpenOptions
+{
+    public string File { get; set; } = string.Empty;
+    public string Password { get; set; } = string.Empty;
+    public string Extension { get; set; } = string.Empty;
+}
+```
+
+### Open an excel file from Base64 string data
+
+In the Syncfusion Spreadsheet component, there is no direct option to open data as a `Base64` string. To achieve this, the `import()` function fetches the `Base64` string, converts it to a Blob, creates a File object from the Blob, and then opens it using the [open](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#open) method in the spreadsheet.
+
+The following code example shows how to open the spreadsheet data as base64 string.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-from-blobdata-cs1/src/app.component.ts %}
+{% include code-snippet/spreadsheet/base-64-string/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-from-blobdata-cs1/src/main.ts %}
+{% include code-snippet/spreadsheet/base-64-string/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/spreadsheet/open-from-blobdata-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/base-64-string" %}
 
+### Open excel file into a read-only mode
+
+You can open excel file into a read-only mode by using the [`openComplete`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#opencomplete) event. In this event, you must protect all the sheets and lock its used range cells by using [`protectSheet`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#protectsheet) and [`lockCells`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#lockcells) methods.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/open-save-cs12/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/open-save-cs12/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs12" %}
+
+
+
+
+### Configure JSON deserialization options
+
+Previously, when opening a workbook JSON object into the Spreadsheet using the [openFromJson](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#openfromjson) method, the entire workbook, including all features specified in the JSON object, was processed and loaded into the Spreadsheet. 
+
+Now, you have the option to selectively ignore some features during the opening of the JSON object by configuring deserialization options and passing them as arguments to the `openFromJson` method. This argument is optional, and if not configured, the entire workbook JSON object will be loaded without ignoring any features.
+
+```ts
+spreadsheet.openFromJson({ file: file }, { ignoreStyle: true });
+```
+
+| Options | Description |
+| ----- | ----- |
+| onlyValues |  If **true**, only the cell values will be loaded. |
+| ignoreStyle | If **true**, styles will be excluded when loading the JSON data. |
+| ignoreFormula | If **true**, formulas will be excluded when loading the JSON data. |
+| ignoreFormat | If **true**, number formats will be excluded when loading the JSON data. |
+| ignoreConditionalFormat | If **true**, conditional formatting will be excluded when loading the JSON data. |
+| ignoreValidation | If **true**, data validation rules will be excluded when loading the JSON data. |
+| ignoreFreezePane | If **true**, freeze panes will be excluded when loading the JSON data. |
+| ignoreWrap | If **true**, text wrapping settings will be excluded when loading the JSON data. |
+| ignoreChart | If **true**, charts will be excluded when loading the JSON data. |
+| ignoreImage | If **true**, images will be excluded when loading the JSON data. |
+| ignoreNote | If **true**, notes will be excluded when loading the JSON data. |
+
+The following code snippet demonstrates how to configure the deserialization options and pass them as arguments to the openFromJson method:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/open-from-json/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/open-from-json/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/spreadsheet/open-from-json" %}
+
+### Add custom header during open
+
+You can add your own custom header to the open action in the Spreadsheet. For processing the data, it has to be sent from server to client side and adding customer header can provide privacy to the data with the help of Authorization Token. Through the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforeopen) event, the custom header can be added to the request during open action.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/open-save-cs8/app/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/open-save-cs8/app/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs8" %}
 
 ### External workbook confirmation dialog
 
@@ -299,129 +399,25 @@ Please find the below table for the beforeSave event arguments.
 > * The default value of [allowSave](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#allowsave) property is `true`. For demonstration purpose, we have showcased the [allowSave](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#allowsave) property in previous code snippet.
 > * Demo purpose only, we have used the online web service url link.
 
-### To send and receive custom params from client to server
+### Save an excel file as blob data
 
-Passing the custom parameters from client to server by using [`beforeSave`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforesave) event.
+By default, the Spreadsheet component saves the Excel file and downloads it to the local file system. If you want to save an Excel file as blob data, you need to set `needBlobData` property to **true** and `isFullPost` property to **false** in the [beforeSave](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforesave) event of the spreadsheet. Subsequently, you will receive the spreadsheet data as a blob in the [saveComplete](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#savecomplete) event. You can then post the blob data to the server endpoint for saving.
+
+Please find below the code to retrieve blob data from the Spreadsheet component below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs4/src/app.component.ts %}
+{% include code-snippet/spreadsheet/save-as-blobdata-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs4/src/main.ts %}
+{% include code-snippet/spreadsheet/save-as-blobdata-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs4" %}
+{% previewsample "page.domainurl/samples/spreadsheet/save-as-blobdata-cs1" %}
 
-Server side code snippets:
-
-```csharp
-
-    public IActionResult Save(SaveSettings saveSettings, string customParams)
-        {
-            Console.WriteLine(customParams); // you can get the custom params in controller side
-            return Workbook.Save(saveSettings);
-        }
-```
-
-### To add custom header during save
-
-You can add your own custom header to the save action in the Spreadsheet. For processing the data, it has to be sent from client to server side and adding customer header can provide privacy to the data with the help of Authorization Token. Through the [`fileMenuItemSelect`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#filemenuitemselect) event, the custom header can be added to the request during save action.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs11/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs11/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs11" %}
-
-### To change the PDF orientation
-
-By default, the PDF document is created in **Portrait** orientation. You can change the orientation of the PDF document by using the `args.pdfLayoutSettings.orientation` argument settings in the [`beforeSave`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforesave) event.
-
-The possible values are:
-
-* **Portrait** - Used to display content in a vertical layout.
-* **Landscape** - Used to display content in a horizontal layout.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs6/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs6/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs6" %}
-
-### Configure JSON serialization options
-
-Previously, when saving the Spreadsheet as a workbook JSON object using the [saveAsJson](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#saveasjson) method, the entire workbook with all loaded features were processed and saved as a JSON object. 
-
-Now, you have the option to selectively ignore some features while saving the Spreadsheet as a JSON object by configuring serialization options and passing them as arguments to the `saveAsJson` method. This argument is optional, and if not configured, the entire workbook JSON object will be saved without ignoring any features.
-
-```ts
-spreadsheet.saveAsJson({ onlyValues: true });
-```
-
-| Options | Description |
-| ----- | ----- |
-| onlyValues |  If **true**, includes only the cell values in the JSON output. |
-| ignoreStyle | If **true**, excludes styles from the JSON output. |
-| ignoreFormula | If **true**, excludes formulas from the JSON output. |
-| ignoreFormat | If **true**, excludes number formats from the JSON output. |
-| ignoreConditionalFormat | If **true**, excludes conditional formatting from the JSON output. |
-| ignoreValidation | If **true**, excludes data validation rules from the JSON output. |
-| ignoreFreezePane | If **true**, excludes freeze panes from the JSON output. |
-| ignoreWrap | If **true**, excludes text wrapping settings from the JSON output. |
-| ignoreChart | If **true**, excludes charts from the JSON output. |
-| ignoreImage | If **true**, excludes images from the JSON output. |
-| ignoreNote | If **true**, excludes notes from the JSON output. |
-
-The following code snippet demonstrates how to configure the serialization options and pass them as arguments to the saveAsJson method:
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/save-as-json/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/save-as-json/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/spreadsheet/save-as-json" %}
-
-### To save data as a Base64 string
-
-In the Spreadsheet component, there is currently no direct option to save data as a `Base64` string. You can achieve this by saving the Spreadsheet data as blob data and then converting that saved blob data to a `Base64` string using `FileReader`. 
-
-> You can get the Spreadsheet data as blob in the [saveComplete](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#savecomplete) event when you set the  `needBlobData` as **true** and `isFullPost` as **false** in the [beforeSave](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforesave) event.
-
-The following code example shows how to save the spreadsheet data as base64 string.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/base-64-string/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/base-64-string/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/spreadsheet/base-64-string" %}
-
-### To save an Excel file to a server
+### Save an Excel file to a server
 
 By default, the Spreadsheet component saves the Excel file and downloads it to the local file system. If you want to save an Excel file to a server location, you need to configure the server endpoint to convert the spreadsheet data into a file stream and save it to the server location. To do this, first, on the client side, you must convert the spreadsheet data into `JSON` format using the [saveAsJson](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#saveasjson) method and send it to the server endpoint. On the server endpoint, you should convert the received spreadsheet `JSON` data into a file stream using `Syncfusion.EJ2.Spreadsheet.AspNet.Core`, then convert the stream into an Excel file, and finally save it to the server location.
 
@@ -488,23 +484,230 @@ You can find the server endpoint code to save the spreadsheet data as an Excel f
 fetch('https://localhost:{port number}/Home/Save')
 ```
 
-### To save an excel file as blob data
+### Save an excel file using a hosted web service in AWS Lambda
 
-By default, the Spreadsheet component saves the Excel file and downloads it to the local file system. If you want to save an Excel file as blob data, you need to set `needBlobData` property to **true** and `isFullPost` property to **false** in the [beforeSave](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforesave) event of the spreadsheet. Subsequently, you will receive the spreadsheet data as a blob in the [saveComplete](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#savecomplete) event. You can then post the blob data to the server endpoint for saving.
+Before proceeding with the save process, you should deploy the spreadsheet open/save web API service in AWS Lambda. To host the open/save web service in the AWS Lambda environment, please refer to the following KB documentation.
 
-Please find below the code to retrieve blob data from the Spreadsheet component below.
+After deployment, you will get the AWS service URL for the open and save actions. Before saving the Excel file with this hosted save URL, you need to prevent the default save action to avoid getting a corrupted excel file on the client end. The save service returns the file stream as a result to the client, which can cause the file to become corrupted. To prevent this, set the `args.cancel` value to `true` in the [`beforeSave`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforesave) event. After that, convert the spreadsheet data into JSON format using the [saveAsJson](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#saveasjson) method in the `beforeSave` event and send it to the save service endpoint URL using a fetch request.
+
+On the server side, the save service will take the received JSON data, pass it to the workbook `Save` method, and return the result as a base64 string. The fetch success callback will receive the Excel file in base64 string format on the client side. Finally, you can then convert the base64 string back to a file on the client end to obtain a non-corrupted Excel file.
+
+The following code example shows how to save an Excel file using a hosted web service in AWS Lambda, as mentioned above.
+
+```ts
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { SpreadsheetComponent, SpreadsheetModule } from '@syncfusion/ej2-angular-spreadsheet';
+
+@Component({
+    selector: 'app-root',
+    template: `<div class="control-section">
+    <ejs-spreadsheet #default [saveUrl]="saveUrl" (beforeSave)="beforeSaveHandler($event)">
+    </ejs-spreadsheet>
+</div>`,
+    encapsulation: ViewEncapsulation.None,
+    standalone: true,
+    imports: [ SpreadsheetModule, ]
+})
+
+export class AppComponent {
+    constructor() {
+        
+    }
+    @ViewChild('default')
+    public spreadsheetObj!: SpreadsheetComponent;
+    public saveUrl = 'https://xxxxxxxxxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/save';
+
+    public saveInitiated: boolean;
+    
+    beforeSaveHandler (eventArgs) {
+        if (!this.saveInitiated) {
+            eventArgs.cancel = true; // Preventing default save action.
+            this.saveInitiated = true; // The "beforeSave" event will trigger for "saveAsJson" action also, so we are preventing for the "saveAsJson".
+            this.saveAsExcel(eventArgs);
+        }
+    }
+
+    saveAsExcel(eventArgs) {
+        // Convert the spreadsheet workbook to JSON data.
+        this.spreadsheetObj.saveAsJson().then(Json => {
+            this.saveInitiated = false;
+            const formData = new FormData();
+            // Passing the JSON data to server to perform save operation.
+            formData.append('JSONData', JSON.stringify((Json as any).jsonObject.Workbook));
+            formData.append('saveType', 'Xlsx');
+            formData.append('fileName', 'Worksheet');
+            formData.append('pdfLayoutSettings', '{"fitSheetOnOnePage":false,"orientation":"Portrait"}');
+            // Using fetch API to invoke the server for save processing.
+            fetch('https://xxxxxxxxxxxxxxxxxxxxxxxxx.amazonaws.com/Prod/api/spreadsheet/save', {
+                method: 'POST', body: formData
+            }).then(response => {
+                if (response.ok) {
+                    return response.blob();
+                }
+            }).then(data => {
+                const reader = new FileReader();
+                reader.onload = function () {
+                    //Converts the result of the file reading operation into a base64 string.
+                    const textBase64Str = reader.result.toString();
+                    //Converts the base64 string into a Excel base64 string.
+                    const excelBase64Str = atob(textBase64Str.replace('data:text/plain;base64,', ''));
+                    //Converts the Excel base64 string into byte characters.
+                    const byteCharacters = atob(excelBase64Str.replace('data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,', ''));
+                    const byteArrays = [];
+                    for (let i = 0; i < byteCharacters.length; i++) {
+                        byteArrays.push(byteCharacters.charCodeAt(i));
+                    }
+                    const byteArray = new Uint8Array(byteArrays);
+                    //creates a blob data from the byte array with xlsx content type.
+                    const blobData = new Blob([byteArray], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+                    const blobUrl = URL.createObjectURL(blobData);
+                    const anchor = document.createElement('a');
+                    anchor.download = 'Sample.xlsx';
+                    anchor.href = blobUrl;
+                    document.body.appendChild(anchor);
+                    anchor.click();
+                    URL.revokeObjectURL(blobUrl);
+                    document.body.removeChild(anchor);
+                }
+                reader.readAsDataURL(data);
+            });
+        });        
+    };
+}
+```
+
+```csharp
+public string Save([FromForm]SaveSettings saveSettings)
+{
+    // This will return the Excel in base64 string format.
+    return Workbook.Save<string>(saveSettings);
+}
+```
+
+### Save data as a Base64 string
+
+In the Spreadsheet component, there is currently no direct option to save data as a `Base64` string. You can achieve this by saving the Spreadsheet data as blob data and then converting that saved blob data to a `Base64` string using `FileReader`. 
+
+> You can get the Spreadsheet data as blob in the [saveComplete](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#savecomplete) event when you set the  `needBlobData` as **true** and `isFullPost` as **false** in the [beforeSave](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforesave) event.
+
+The following code example shows how to save the spreadsheet data as base64 string.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/save-as-blobdata-cs1/src/app.component.ts %}
+{% include code-snippet/spreadsheet/base-64-string/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/save-as-blobdata-cs1/src/main.ts %}
+{% include code-snippet/spreadsheet/base-64-string/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/spreadsheet/save-as-blobdata-cs1" %}
+{% previewsample "page.domainurl/samples/spreadsheet/base-64-string" %}
+
+### Configure JSON serialization options
+
+Previously, when saving the Spreadsheet as a workbook JSON object using the [saveAsJson](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#saveasjson) method, the entire workbook with all loaded features were processed and saved as a JSON object. 
+
+Now, you have the option to selectively ignore some features while saving the Spreadsheet as a JSON object by configuring serialization options and passing them as arguments to the `saveAsJson` method. This argument is optional, and if not configured, the entire workbook JSON object will be saved without ignoring any features.
+
+```ts
+spreadsheet.saveAsJson({ onlyValues: true });
+```
+
+| Options | Description |
+| ----- | ----- |
+| onlyValues |  If **true**, includes only the cell values in the JSON output. |
+| ignoreStyle | If **true**, excludes styles from the JSON output. |
+| ignoreFormula | If **true**, excludes formulas from the JSON output. |
+| ignoreFormat | If **true**, excludes number formats from the JSON output. |
+| ignoreConditionalFormat | If **true**, excludes conditional formatting from the JSON output. |
+| ignoreValidation | If **true**, excludes data validation rules from the JSON output. |
+| ignoreFreezePane | If **true**, excludes freeze panes from the JSON output. |
+| ignoreWrap | If **true**, excludes text wrapping settings from the JSON output. |
+| ignoreChart | If **true**, excludes charts from the JSON output. |
+| ignoreImage | If **true**, excludes images from the JSON output. |
+| ignoreNote | If **true**, excludes notes from the JSON output. |
+
+The following code snippet demonstrates how to configure the serialization options and pass them as arguments to the saveAsJson method:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/save-as-json/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/save-as-json/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/spreadsheet/save-as-json" %}
+
+### Send and receive custom params from client to server
+
+Passing the custom parameters from client to server by using [`beforeSave`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforesave) event.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/open-save-cs4/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/open-save-cs4/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs4" %}
+
+Server side code snippets:
+
+```csharp
+
+    public IActionResult Save(SaveSettings saveSettings, string customParams)
+        {
+            Console.WriteLine(customParams); // you can get the custom params in controller side
+            return Workbook.Save(saveSettings);
+        }
+```
+
+### Add custom header during save
+
+You can add your own custom header to the save action in the Spreadsheet. For processing the data, it has to be sent from client to server side and adding customer header can provide privacy to the data with the help of Authorization Token. Through the [`fileMenuItemSelect`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#filemenuitemselect) event, the custom header can be added to the request during save action.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/open-save-cs11/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/open-save-cs11/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs11" %}
+
+### Change the PDF orientation
+
+By default, the PDF document is created in **Portrait** orientation. You can change the orientation of the PDF document by using the `args.pdfLayoutSettings.orientation` argument settings in the [`beforeSave`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforesave) event.
+
+The possible values are:
+
+* **Portrait** - Used to display content in a vertical layout.
+* **Landscape** - Used to display content in a horizontal layout.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/open-save-cs6/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/open-save-cs6/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/spreadsheet/open-save-cs6" %}
+
+
+
 
 ### Methods
 
