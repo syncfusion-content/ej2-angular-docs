@@ -1,3 +1,9 @@
+export interface ColumnDataType
+{
+    OrderID:number;
+    ShipCountry:string;
+}
+
 export let data: Object[] = [
     {
         OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),
