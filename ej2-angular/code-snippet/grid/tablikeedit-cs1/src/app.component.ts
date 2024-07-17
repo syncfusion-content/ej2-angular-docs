@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common'; 
 import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
 import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TabAllModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
+import { TabAllModule,SelectingEventArgs,TabComponent } from '@syncfusion/ej2-angular-navigations'
+import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { DataUtil } from '@syncfusion/ej2-data';
-import { data } from './datasource';
+import { data, ColumnDataType } from './datasource';
 import { EditSettingsModel, ToolbarItems, GridComponent, DialogEditEventArgs } from '@syncfusion/ej2-angular-grids';
+import { CheckBoxAllModule,ButtonModule} from '@syncfusion/ej2-angular-buttons';
+import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
 imports: [
@@ -21,7 +21,7 @@ imports: [
         CheckBoxAllModule,
         TabAllModule,
         GridModule,
-        DropDownListAllModule, ReactiveFormsModule, FormsModule
+        DropDownListAllModule, ReactiveFormsModule, FormsModule,CommonModule,NumericTextBoxAllModule
     ],
 
 providers: [EditService, ToolbarService],
@@ -34,55 +34,94 @@ export class AppComponent implements OnInit {
     public data?: Object[];
     public editSettings?: EditSettingsModel;
     public toolbar?: ToolbarItems[];
-    public shipCountryDistinctData?: Object;
+    public shipCountryDistinctData?: { [key: string]: Object }[];
     @ViewChild('grid')
     grid?: GridComponent;
     @ViewChild('orderForm')
-    orderForm?: FormGroup;
+    orderForm: FormGroup;
     @ViewChild('tab')
-    tabObj: any;
+    tabObj: TabComponent;
+   
 
     ngOnInit(): void {
+        // Initialize component properties
         this.data = data;
         this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
         this.toolbar = ['Add', 'Edit', 'Delete'];
-        this.shipCountryDistinctData = DataUtil.distinct(data, 'ShipCountry', true );
+        this.shipCountryDistinctData = DataUtil.distinct(data, 'ShipCountry', true) as { [key: string]: Object }[];
     }
-
+    // Handle completion of editing dialog
     actionComplete(args: DialogEditEventArgs) {
-        if (((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add')) {
+        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
             // Disable default validation.
-            (args as any).form.ej2_instances[0].rules = {};
-            // Set initial Focus
-            if ((args as any).requestType === 'beginEdit') {
-                ((args as any).form.elements.namedItem('CustomerID')as HTMLInputElement).focus();
+            (args.form as HTMLFormElement)['ej2_instances'][0].removeRules();           
+            setTimeout(() => {
+                new DropDownList({
+                    value: (args.rowData as ColumnDataType).ShipCountry!==undefined ?(args.rowData as ColumnDataType).ShipCountry : "Germany" ,
+                    popupHeight: '200px',
+                    floatLabelType: 'Always',
+                    dataSource: this.shipCountryDistinctData,
+                    placeholder:'ShipCountry',
+                    fields: { text: 'ShipCountry', value: 'ShipCountry' }
+                
+                    }, (args.form as HTMLFormElement).elements.namedItem('ShipCountry') as HTMLInputElement);
+                
+            }, 1);
+                
+            // hide dialog button
+            (args.dialog as HTMLFormElement)['element'].querySelector('.e-footer-content').classList.add('e-hide');
+            // Add validation rules
+            (args.form as HTMLFormElement)['ej2_instances'][0].addRules('Freight', { max: 500 });
+            // Set initial focus
+            if (args.requestType === 'beginEdit') {
+                setTimeout(() => {
+                    ((args.form as HTMLFormElement).elements.namedItem('CustomerID') as HTMLInputElement).focus();
+                }, 1);
+            }
+            if(args.requestType === 'add') {
+                setTimeout(() => {
+                    ((args.form as HTMLFormElement).elements.namedItem('OrderID') as HTMLInputElement).focus();
+                }, 1);
             }
         }
-    }
 
+    }
+    // Move to the next tab
     nextBtn() {
-        this.moveNext();
+        if (this.orderForm.valid) 
+            this.moveNext();  
+    }
+    // Move to the previous tab
+    previousBtn() {
+        this.movePrevious();
     }
 
-    selecting(e: any) {
-        if(e.isSwiped){
-            e.cancel = true;
-        }
-        if(e.selectingIndex === 1) {
-            e.cancel = !this.orderForm?.valid;
-        }
+    // Handle tab selection
+    selecting(e: SelectingEventArgs) {
+        if (e.isSwiped) e.cancel = true;
+        e.cancel = !this.orderForm.valid;
+
     }
 
+    // Move to the next tab if the form is valid
     moveNext() {
-        if (this.orderForm?.valid) {
+        if (this.orderForm?.valid ) 
             this.tabObj.select(1);
-        }
+        
+        else
+            this.tabObj.select(1);    
     }
 
+    // Move to the previous tab if the form is valid
+    movePrevious() {
+        if (this.orderForm.valid) 
+            this.tabObj.select(0);   
+    }
+
+    // Handle submit button click
     submitBtn() {
-        if (this.orderForm?.valid) {
-            this.grid?.endEdit();
-        }
+        if (this.orderForm.valid) 
+            (this.grid as GridComponent).endEdit();     
     }
 }
 
