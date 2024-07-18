@@ -1,45 +1,45 @@
 ---
 layout: post
-title: Emoji Picker in Angular RichTextEditor | Syncfusion
-description: Learn about Emoji Picker in Syncfusion Angular RichTextEditor component of Syncfusion Essential JS 2 and more.
+title: Emoji Picker in Angular Rich Text Editor | Syncfusion
+description: Learn about Emoji Picker in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Emoji Picker
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Emoji Picker in Angular RichTextEditor component
+# Emoji Picker in the Angular Rich Text Editor component
 
-An emoji picker is a tool that allows users to add emojis or emoticons to their text easily. Typically, it is a small window or panel that displays a variety of emojis arranged in different categories, such as smileys, animals, food, and so on. Users can select the desired emoji by clicking on it or by typing its name in a search bar.
+An emoji picker is a tool designed for adding emojis or emoticons to text with ease. It usually appears as a small window or panel showcasing a variety of emojis categorized into sections such as smileys, animals, food, and more. The desired emoji can be selected by clicking on it or typing its name into a search bar.
 
-## Enabling the toolbar option and custom emojis.
+## Configure the emoji picker tool with custom emojis in the toolbar
 
-Add the `EmojiPicker` tool to the toolbar of the RichTextEditor by utilizing the `toolbarSettings` [items](../api/rich-text-editor/toolbarSettings/#items) property.
+Add the `EmojiPicker` tool to the Rich Text Editor toolbar using the `toolbarSettings` [items](../api/rich-text-editor/toolbarSettings/#items) property.
 
-By default, a predefined set of emojis is configured. However, you can customize these icons according to your needs. To achieve this, utilize the [emojiPickerSettings](../api/rich-text-editor/richTextEditorModel/#emojiPickerSettings) property.
+By default, a predefined set of emojis is configured. However, these icons can be customized according to specific needs by using the  [emojiPickerSettings](../api/rich-text-editor/richTextEditorModel/#emojiPickerSettings) property.
 
 ```ts
 
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
-import { RichTextEditorComponent, ToolbarService, HtmlEditorService, ImageService, QuickToolbarService, LinkService, EmojiPickerService } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorComponent, RichTextEditorModule, ToolbarService, HtmlEditorService, ImageService, QuickToolbarService, LinkService, TableService, PasteCleanupService, EmojiPickerService } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
+    imports: [RichTextEditorModule],
     selector: 'control-content',
+    standalone: true,
     templateUrl: 'insert-emoticons.html',
     encapsulation: ViewEncapsulation.None,
     styleUrls: ['style.css'],
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, EmojiPickerService]
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, EmojiPickerService, TableService, PasteCleanupService]
 })
 
 export class AppComponent {
 
-    @ViewChild('emojiPickerRTE')
-    public emojiPickerRTE: RichTextEditorComponent;
-
+    @ViewChild('emojiPickerEditor')
+    public emojiPickerEditor: RichTextEditorComponent;
     public toolbarSettings: ToolbarSettingsModel = {
-        items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', 'OrderedList',
-        'UnorderedList', '|', 'CreateLink', 'Image', '|', 'SourceCode', 'EmojiPicker', '|', 'Undo', 'Redo'
-    ]
+        items: ['EmojiPicker', 'Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', 'OrderedList',
+        'UnorderedList', '|', 'CreateLink', 'Image', '|', 'SourceCode', '|', 'Undo', 'Redo']
     };
     public emojiPickerSettings: EmojiSettingsModel =
     {
@@ -113,9 +113,9 @@ Additionally, you have the option to customize the icons of toolbar items using 
 
 When both `iconCSS` and `code` properties are provided, the `iconCSS` property takes precedence in determining the appearance of the toolbar item icon.
 
-Additionally, you have the option to enhance the user experience by implementing a filtering feature for efficiently managing a large dataset of emojis. By setting the [showSearchBox](../api/rich-text-editor/emojiSettings/#showSearchBox) property to true (which is the default value), users will be able to utilize a search box to filter the displayed emojis according to their preferences.
+Additionally, you have the option to enhance the user experience by implementing a filtering feature for efficiently managing a large dataset of emojis. By setting the [showSearchBox](../api/rich-text-editor/emojiSettings/#showSearchBox) property to `true` (which is the default value), users will be able to utilize a search box to filter the displayed emojis according to their preferences.
 
-The following code example shows how to add the emoji picker tool in the RichTextEditor.
+The following code example shows how to add the emoji picker tool in the Rich Text Editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
