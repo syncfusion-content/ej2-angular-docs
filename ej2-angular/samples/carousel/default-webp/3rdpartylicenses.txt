@@ -16,18 +16,6 @@ SEE LICENSE IN license
 @syncfusion/ej2-angular-buttons
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-calendars
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-dropdowns
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-grids
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-inputs
-SEE LICENSE IN license
-
 @syncfusion/ej2-angular-navigations
 SEE LICENSE IN license
 
@@ -37,25 +25,7 @@ SEE LICENSE IN license
 @syncfusion/ej2-buttons
 SEE LICENSE IN license
 
-@syncfusion/ej2-calendars
-SEE LICENSE IN license
-
-@syncfusion/ej2-compression
-SEE LICENSE IN license
-
 @syncfusion/ej2-data
-SEE LICENSE IN license
-
-@syncfusion/ej2-dropdowns
-SEE LICENSE IN license
-
-@syncfusion/ej2-excel-export
-SEE LICENSE IN license
-
-@syncfusion/ej2-file-utils
-SEE LICENSE IN license
-
-@syncfusion/ej2-grids
 SEE LICENSE IN license
 
 @syncfusion/ej2-inputs
@@ -65,12 +35,6 @@ SEE LICENSE IN license
 SEE LICENSE IN license
 
 @syncfusion/ej2-navigations
-SEE LICENSE IN license
-
-@syncfusion/ej2-notifications
-SEE LICENSE IN license
-
-@syncfusion/ej2-pdf-export
 SEE LICENSE IN license
 
 @syncfusion/ej2-popups
