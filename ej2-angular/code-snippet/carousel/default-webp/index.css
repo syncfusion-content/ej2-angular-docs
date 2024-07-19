@@ -1,0 +1,19 @@
+.control-container {
+  height: 360px;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.img-container {
+  height: 100%;
+  margin: 0;
+}
+
+.img-caption {
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  text-align: center;
+}

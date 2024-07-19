@@ -7,7 +7,7 @@ import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 
 
 
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { sampleData } from './datasource';
 import { ToolbarItems } from '@syncfusion/ej2-treegrid';
 import { ExcelExportProperties } from '@syncfusion/ej2-grids';

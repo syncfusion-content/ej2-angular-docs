@@ -12,6 +12,10 @@ domainurl: ##DomainURL##
 
 The navigators and indicators are used to transition the slides manually.
 
+To customize the Angular Carousel component, you can check on this video:
+
+{% youtube "https://www.youtube.com/watch?v=Q7oWiGNTUn8" %}
+
 ## Navigators
 
 ### Show or hide previous and next button
