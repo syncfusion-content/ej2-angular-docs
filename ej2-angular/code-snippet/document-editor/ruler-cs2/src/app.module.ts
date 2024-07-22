@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor';
+import { DocumentEditorAllModule, DocumentEditorContainerAllModule } from '@syncfusion/ej2-angular-documenteditor';
 import { AppComponent } from './app.component';
 
 
@@ -13,7 +13,8 @@ import { AppComponent } from './app.component';
     imports: [
         BrowserModule,
         ButtonModule,
-        DocumentEditorAllModule
+        DocumentEditorAllModule,
+        DocumentEditorContainerAllModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent]

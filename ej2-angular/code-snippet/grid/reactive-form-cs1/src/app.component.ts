@@ -1,86 +1,101 @@
-
-
 import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
-import { DialogEditEventArgs, SaveEventArgs, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { orderDetails } from './datasource';
+import {DialogEditEventArgs, SaveEventArgs } from '@syncfusion/ej2-angular-grids';
 import { DataUtil } from '@syncfusion/ej2-data';
 import { FormGroup, AbstractControl, FormControl, Validators } from '@angular/forms';
 
+/**
+ * Reactive Forms Dialog template sample
+ */
 @Component({
     selector: 'app-root',
     templateUrl: `reactive-form.html`
 })
 export class AppComponent implements OnInit {
 
-    public data?: object[];
-    public editSettings?: EditSettingsModel;
-    public toolbar?: ToolbarItems[];
-    public shipCountryDistinctData?: object[];
-    public orderForm?: FormGroup | any;
+    public data?: Object[];
+    public editSettings?: Object;
+    public toolbar?: string[];
+    public orderForm?: FormGroup|any;
+    public pageSettings?: Object;
+    public shipCityDistinctData?: Object[];
+    public shipCountryDistinctData?: Object[];
+    public submitClicked: boolean = false;
 
-    ngOnInit(): void {
-        this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
-        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-        this.shipCountryDistinctData = DataUtil.distinct(data, 'ShipCountry', true );
+    public ngOnInit(): void {
+        this.data = orderDetails;
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
+        this.toolbar = ['Add', 'Edit', 'Delete'];
+        this.pageSettings = { pageCount: 5};
+        this.shipCityDistinctData = DataUtil.distinct(orderDetails, 'ShipCity', true);
+        this.shipCountryDistinctData = DataUtil.distinct(orderDetails, 'ShipCountry', true );
     }
 
-    createFormGroup(data1: IOrderModel): FormGroup {
+    createFormGroup(data: IOrderModel): FormGroup {
         return new FormGroup({
-            OrderID: new FormControl(data1.OrderID, Validators.required),
-            OrderDate: new FormControl(data1.OrderDate, Validators.required),
-            CustomerID: new FormControl(data1.CustomerID, Validators.required),
-            Freight: new FormControl(data1.Freight),
-            ShipCountry: new FormControl(data1.ShipCountry)
+            OrderID: new FormControl(data.OrderID, Validators.required),
+            OrderDate: new FormControl(data.OrderDate, (this.dateValidator() as Object)),
+            CustomerName: new FormControl(data.CustomerName, Validators.required),
+            Freight: new FormControl(data.Freight,Validators.required),
+            ShipAddress: new FormControl(data.ShipAddress,Validators.required),
+            ShipCity: new FormControl(data.ShipCity,Validators.required),
+            ShipCountry: new FormControl(data.ShipCountry,Validators.required)
         });
     }
 
+    dateValidator() {
+        return (control: FormControl): null | Object  => {
+            return control.value && control.value.getFullYear &&
+            (1900 <= control.value.getFullYear() && control.value.getFullYear() <=  2099) ? null : { OrderDate: { value : control.value}};
+        }
+    }
 
     actionBegin(args: SaveEventArgs): void {
-        if ((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add') {
-            this.orderForm = this.createFormGroup((args as any).rowData);
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            this.submitClicked = false;
+            this.orderForm = this.createFormGroup((args.rowData as Object));
         }
-        if ((args as any).requestType === 'save') {
-            if ((this as any).orderForm.valid) {
-                (args as any).data = (this as any).orderForm.value;
+        if (args.requestType === 'save') {
+            this.submitClicked = true;
+
+            if (this.orderForm.valid) {
+                args.data = this.orderForm.value;
             } else {
-                (args as any).cancel = true;
+                args.cancel = true;
             }
         }
     }
 
     actionComplete(args: DialogEditEventArgs): void {
-        if ((args as any).requestType === 'beginEdit' || (args as any).requestType === 'add') {
-            // Set initial Focus
-            if ((args as any).requestType === 'beginEdit') {
-                ((args as any).form.elements.namedItem('CustomerID') as HTMLInputElement).focus();
-            } else if ((args as any).requestType === 'add') {
-                ((args as any).form.elements.namedItem('OrderID') as HTMLInputElement).focus();
+        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
+            // Set initial focus
+            if (args.requestType === 'beginEdit') {
+                ((args.form as HTMLFormElement).elements.namedItem('CustomerName') as HTMLInputElement).focus();
+            } else if (args.requestType === 'add') {
+                ((args.form as HTMLFormElement).elements.namedItem('OrderID') as HTMLInputElement).focus();
             }
         }
     }
 
-    public focusIn(target: HTMLElement | any): void {
-        (target as any).parentElement.classList.add('e-input-focus');
-    }
+    get OrderID(): AbstractControl  { return this.orderForm.get('OrderID'); }
+    get CustomerName(): AbstractControl { return this.orderForm.get('CustomerName'); }
+    get OrderDate(): AbstractControl { return this.orderForm.get('OrderDate'); }
+    get Freight(): AbstractControl { return this.orderForm.get('Freight'); }
+    get ShipCountry(): AbstractControl { return this.orderForm.get('ShipCountry'); }
+    get ShipCity(): AbstractControl { return this.orderForm.get('ShipCity'); }
 
-    public focusOut(target: HTMLElement | any): void {
-        (target as any).parentElement.classList.remove('e-input-focus');
-    }
-
-    get OrderID(): AbstractControl  { return (this as any).orderForm.get('OrderID'); }
-
-    get CustomerID(): AbstractControl { return (this as any).orderForm.get('CustomerID'); }
 
 }
+
 
 export interface IOrderModel {
     OrderID?: number;
-    CustomerID?: string;
+    CustomerName?: string;
+    ShipCity?: string;
     OrderDate?: Date;
     Freight?: number;
     ShipCountry?: string;
+    ShipAddress?: string;
 }
-
 
 

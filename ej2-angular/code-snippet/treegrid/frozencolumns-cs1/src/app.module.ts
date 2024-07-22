@@ -2,6 +2,7 @@ import { NgModule,ViewChild } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid';
 import { AppComponent } from './app.component';
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 /**
  * Module
@@ -9,7 +10,7 @@ import { AppComponent } from './app.component';
 @NgModule({
     imports: [
         BrowserModule,
-        TreeGridModule
+        TreeGridModule,NumericTextBoxModule 
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent]

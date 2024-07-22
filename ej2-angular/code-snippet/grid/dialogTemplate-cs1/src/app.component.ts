@@ -1,67 +1,77 @@
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { data } from './datasource';
-import { DialogEditEventArgs, SaveEventArgs, EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+import { DialogEditEventArgs, SaveEventArgs } from '@syncfusion/ej2-angular-grids';
 import { DataUtil } from '@syncfusion/ej2-data';
 import { FormGroup } from '@angular/forms';
 
+/**
+ * Template driven Forms sample
+ */
 @Component({
     selector: 'app-root',
     templateUrl: `template-driven.html`
 })
 export class AppComponent implements OnInit {
+    public data?: Object[];
+    public editSettings?: Object;
+    public toolbar?: string[];
+    public pageSettings?: Object;
+    public shipCityDistinctData?: Object[];
+    public shipCountryDistinctData?: Object[];
+    public orderData!: IOrderModel;
+    @ViewChild('orderForm')  public orderForm?: FormGroup|any;
 
-    public data?: object[];
-    public editSettings?: EditSettingsModel;
-    public toolbar?: ToolbarItems[];
-    public orderData?: object | any;
-    @ViewChild('orderForm') public orderForm?: FormGroup;
-    public shipCityDistinctData?: object[];
-    public shipCountryDistinctData?: object[];
-    public pageSettings: any;
-
-    ngOnInit(): void {
+    public ngOnInit(): void {
         this.data = data;
-        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog' };
-        this.toolbar = ['Add', 'Edit', 'Delete'];
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' };
+        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+        this.pageSettings = { pageCount: 5};
         this.shipCityDistinctData = DataUtil.distinct(data, 'ShipCity', true);
         this.shipCountryDistinctData = DataUtil.distinct(data, 'ShipCountry', true );
     }
 
     actionBegin(args: SaveEventArgs): void {
         if (args.requestType === 'beginEdit' || args.requestType === 'add') {
-            this.orderData = Object.assign({}, args.rowData);;
+            this.orderData = Object.assign({}, args.rowData);
         }
         if (args.requestType === 'save') {
-            if (this.orderForm?.valid) {
+            if (this.orderForm.valid) {
                 args.data = this.orderData;
             } else {
                 args.cancel = true;
             }
         }
-    }
+    } 
 
     actionComplete(args: DialogEditEventArgs): void {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            (args.form as any).ej2_instances[0].rules = {};
-            // Set initial Focus
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            // Set initial focus
             if (args.requestType === 'beginEdit') {
-                (args.form?.elements.namedItem('CustomerID') as HTMLInputElement).focus();
+                ((args.form as HTMLFormElement).elements.namedItem('CustomerName') as HTMLInputElement).focus();
+            } else if (args.requestType === 'add') {
+                ((args.form as HTMLFormElement).elements.namedItem('OrderID') as HTMLInputElement).focus();
             }
+
         }
     }
-}
+    public focusIn(event: FocusEvent): void {
+        ((event.target as HTMLElement).parentElement as HTMLElement).classList.add('e-input-focus');
+    }
 
+    public focusOut(event: FocusEvent): void {
+        ((event.target as HTMLElement).parentElement as HTMLElement).classList.remove('e-input-focus');
+        
+    }
+
+}
 export interface IOrderModel {
     OrderID?: number;
-    CustomerID?: string;
+    CustomerName?: string;
     ShipCity?: string;
     OrderDate?: Date;
     Freight?: number;
     ShipCountry?: string;
     ShipAddress?: string;
 }
-
 
 

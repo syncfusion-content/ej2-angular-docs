@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns';
 import { TabAllModule } from '@syncfusion/ej2-angular-navigations';
 import { CheckBoxAllModule, ButtonModule } from "@syncfusion/ej2-angular-buttons";
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 /**
  * Module
@@ -17,6 +18,7 @@ import { CheckBoxAllModule, ButtonModule } from "@syncfusion/ej2-angular-buttons
         CheckBoxAllModule,
         TabAllModule,
         GridModule,
+        NumericTextBoxModule,
         DropDownListAllModule, ReactiveFormsModule, FormsModule
     ],
     declarations: [AppComponent],
