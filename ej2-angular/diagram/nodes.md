@@ -26,7 +26,7 @@ To create a node easily and to know about different types of node shapes in a An
 
 ## Add node through nodes collection
 
-To create a node, define the [`node`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective) object and add that to nodes collection of the diagram model. The following code example illustrates how to add a node to the diagram.
+To create a node, define the [`node`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/) object and add that to nodes collection of the diagram model. The following code example illustrates how to add a node to the diagram.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +44,7 @@ To create a node, define the [`node`](https://ej2.syncfusion.com/angular/documen
 
 ## Add/Remove node at runtime
 
-* Nodes can be added at runtime by using public method, add and can be removed at runtime by using public method, remove. On adding node at runtime, the nodes collection is changed and the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#collectionChange--emittypecollectionchangeeventargs) event will trigger.
+* Nodes can be added at runtime by using public method, add and can be removed at runtime by using public method, remove. On adding node at runtime, the nodes collection is changed and the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#collectionChange--emittypecollectionchangeeventargs) event will trigger.
 
 * The node’s ID property is used to define the name of the node and its further used to find the node at runtime and do any customization.
 
@@ -64,7 +64,7 @@ The following code illustrates how to add a node.
 
 ## Add collection of nodes at runtime
 
-* The collection of nodes can be dynamically added using [`addElements`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#addelements) method.Each time an element is added to the diagram canvas, the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#collectionChange--emittypecollectionchangeeventargs) event will be triggered.
+* The collection of nodes can be dynamically added using [`addElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addelements) method.Each time an element is added to the diagram canvas, the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#collectionChange--emittypecollectionchangeeventargs) event will be triggered.
 
 The following code illustrates how to add nodes at runtime.
 
@@ -85,10 +85,10 @@ The following code illustrates how to add nodes at runtime.
 Nodes can be predefined and added to the palette, and can be dropped into the diagram when needed. For more information about adding nodes from symbol palette, refer to [`Symbol Palette`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette/#palettes).
 
 * Once you drag a node/connector from the palette to the diagram, the following events can be used to do your customization.
-* When a symbol is dragged into diagram from symbol palette, the [`dragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram#dragEnter--emittypeidragentereventargs>) event gets triggered.
-* When a symbol is dragged over diagram, the [`dragOver`](https://ej2.syncfusion.com/angular/documentation/api/diagram#dragOver--emittypeidragovereventargs>) event gets triggered.
-* When a symbol is dragged and dropped from symbol palette to diagram area, the [`drop`](https://ej2.syncfusion.com/angular/documentation/api/diagram#drop--emittypeidropeventargs>) event gets triggered.
-* When a symbol is dragged outside of the diagram, the [`dragLeave`](https://ej2.syncfusion.com/angular/documentation/api/diagram#dragLeave--emittypeidragleaveeventargs>) event gets triggered.
+* When a symbol is dragged into diagram from symbol palette, the [`dragEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#dragEnter--emittypeidragentereventargs>) event gets triggered.
+* When a symbol is dragged over diagram, the [`dragOver`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#dragOver--emittypeidragovereventargs>) event gets triggered.
+* When a symbol is dragged and dropped from symbol palette to diagram area, the [`drop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#drop--emittypeidropeventargs>) event gets triggered.
+* When a symbol is dragged outside of the diagram, the [`dragLeave`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#dragLeave--emittypeidragleaveeventargs>) event gets triggered.
 
 ## Create node through data source
 
@@ -100,14 +100,14 @@ Nodes can be interactively drawn by clicking and dragging the diagram surface by
 
 ## Position
 
-* Position of a node is controlled by using its [`offsetX`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#offsetX-number) and [`offsetY`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#offsetY-number) properties. By default, these offset properties represent the distance between the origin of the diagram’s page and node’s center point.
+* Position of a node is controlled by using its [`offsetX`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/#offsetX-number) and [`offsetY`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/#offsetY-number) properties. By default, these offset properties represent the distance between the origin of the diagram’s page and node’s center point.
 
-* You may expect this offset values to represent the distance between page origin and node’s top-left corner instead of center. The Pivot property helps to solve this problem. Default value of node’s [`pivot`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#pivot--pointmodel) point is (0.5, 0.5), that means center of the node.
+* You may expect this offset values to represent the distance between page origin and node’s top-left corner instead of center. The Pivot property helps to solve this problem. Default value of node’s [`pivot`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/#pivot--pointmodel) point is (0.5, 0.5), that means center of the node.
 
-* The size of the node can be controlled by using its [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#width-number) and
-[`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#height-number) properties.
+* The size of the node can be controlled by using its [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/#width-number) and
+[`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/#height-number) properties.
 
-* Rotation of a node is controlled by using its [`rotateAngle`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#rotateAngle-number) property.
+* Rotation of a node is controlled by using its [`rotateAngle`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/#rotateAngle-number) property.
 
 The following table illustrates how pivot relates offset values with node boundaries.
 
@@ -133,15 +133,15 @@ The following code illustrates how to change the `pivot` value.
 
 ## Flip
 
-The diagram Provides support to flip the node. [`flip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#flip) is performed to
+The diagram Provides support to flip the node. [`flip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/#flip) is performed to
 give the mirrored image of the original element.
 The flip types are as follows:
 
-* HorizontalFlip - [`Horizontal`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to change the element in horizontal direction.
+* HorizontalFlip - [`Horizontal`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection/) is used to change the element in horizontal direction.
 
-* VerticalFlip - [`Vertical`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) is used to change the element in vertical direction
+* VerticalFlip - [`Vertical`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection/) is used to change the element in vertical direction
 
-* Both - [`Both`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection) which involves both vertical and horizontal changes of the element.
+* Both - [`Both`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipDirection/) which involves both vertical and horizontal changes of the element.
 
 The following code illustrates how to provide the mirror image of the original element.
 
@@ -161,9 +161,9 @@ The following code illustrates how to provide the mirror image of the original e
 
 ## Appearance
 
-* The appearance of a node can be customized by changing its [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#fill-string) color, [`borderColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#borderColor-string), [`borderWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#borderWidth-number), [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#strokeDashArray-number), [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#opacity-number), and [`shadow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#shadow-number).
+* The appearance of a node can be customized by changing its [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#fill-string) color, [`borderColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/#borderColor-string), [`borderWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/#borderWidth-number), [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#strokeDashArray-number), [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#opacity-number), and [`shadow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#shadow-number).
 
-* The [`visible`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#visible-boolean) property of the node enables or disables the visibility of the node.
+* The [`visible`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/#visible-boolean) property of the node enables or disables the visibility of the node.
 
 The following code illustrates how to customize the appearance of the shape.
 
@@ -197,7 +197,7 @@ Use the following CSS to customize the style of main node on multiple selection.
 
 ## Gradient
 
-The [`gradient`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#gradient-gradientmodel) property of the node allows you to define and apply the gradient effect to that node.
+The [`gradient`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#gradient-gradientmodel) property of the node allows you to define and apply the gradient effect to that node.
 
 The gradient stop property defines the color and a position, where the previous color transition ends and a new color transition starts.
 
@@ -211,7 +211,7 @@ There are two types of gradients as follows:
 
 ## Linear gradient
 
-* [`LinearGradient`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#linearGradient-lineargradientmodel) defines a smooth transition between a set of colors (so-called stops) on a line.
+* [`LinearGradient`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#linearGradient-lineargradientmodel) defines a smooth transition between a set of colors (so-called stops) on a line.
 
 * A linear gradient’s x1, y1, x2, y2 properties are used to define the position (relative to the node) of the rectangular region that needs to be painted.
 
@@ -229,7 +229,7 @@ There are two types of gradients as follows:
 
 ## Radial gradient
 
-* [`RadialGradient`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel#radialGradient-radialgradientmodel) defines a smooth transition between stops on a circle.
+* [`RadialGradient`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#radialGradient-radialgradientmodel) defines a smooth transition between stops on a circle.
 
 * A radial gradient’s cx, cy, fx, fy properties are used to define the position (relative to the node) of the outermost or the innermost circle of the radial gradient.
 
@@ -247,7 +247,7 @@ There are two types of gradients as follows:
 
 ## Shadow
 
-Diagram provides support to add [`shadow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#shadow-shadowmodel) effect to a node that is disabled, by default. It can be enabled with the constraints property of the node. The following code illustrates how to drop shadow.
+Diagram provides support to add [`shadow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/#shadow-shadowmodel) effect to a node that is disabled, by default. It can be enabled with the constraints property of the node. The following code illustrates how to drop shadow.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -283,7 +283,7 @@ Diagram provides support to describe the state of the node. i.e., the node is ex
 
 >Note: Icon can be created only when the node has outEdges.
 
-* To explore the properties of expand and collapse icon, refer to [`expandIcon`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#expandIcon-iconshapemodel) and [`collapseIcon`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#collapseIcon-iconshapemodel).
+* To explore the properties of expand and collapse icon, refer to [`expandIcon`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/#expandIcon-iconshapemodel) and [`collapseIcon`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/#collapseIcon-iconshapemodel).
 
 * The expandIcon’s and collapseIcon’s shape properties allow to define the shape of the icon.
 
@@ -309,17 +309,17 @@ The following code example illustrates how to create an icon of various shapes.
 
 * The expand icon can be aligned relative to the node boundaries. It has margin, offset, horizontalAlignment, and verticalAlignment settings. It is quite tricky, when all four alignments are used together but gives you more control over alignment.
 
-* The [`iconColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#iconColor-string) property can be used to set the strokeColor of the Icon.
+* The [`iconColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#iconColor-string) property can be used to set the strokeColor of the Icon.
 
 ## Customizing collapse icon
 
-* Set the [`borderColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#borderColor-string), [`borderWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#borderWidth-number), background color for an collapseIcon using borderColor, borderWidth, and [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#fill-string) properties.
+* Set the [`borderColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#borderColor-string), [`borderWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#borderWidth-number), background color for an collapseIcon using borderColor, borderWidth, and [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#fill-string) properties.
 
-* Set a size for collapseIcon by using [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#height-number) properties.
+* Set a size for collapseIcon by using [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#height-number) properties.
 
 * Like expand icon, collapse icon also can be aligned relative to the node boundaries. It has margin, offset, horizontalAlignment, and verticalAlignment settings. It is quite tricky, when all four alignments are used together but gives you more control over alignment.
 
-* The [`iconColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel#iconColor-string) property can be used to set the strokeColor of the Icon.
+* The [`iconColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iconShapeModel/#iconColor-string) property can be used to set the strokeColor of the Icon.
 
 ## Interaction
 
@@ -327,11 +327,11 @@ Diagram provides support to drag, resize, or rotate the node interactively. For 
 
 ## Constraints
 
-The constraints property of the node allows you to enable/disable certain features. For more information about node constraints, refer to [`Node Constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective#constraints-nodeconstraints).
+The constraints property of the node allows you to enable/disable certain features. For more information about node constraints, refer to [`Node Constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeDirective/#constraints-nodeconstraints).
 
 ## Custom properties
 
-The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram#addInfo-object) property of the node allows to maintain additional information to the node.
+The [`addInfo`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addInfo-object) property of the node allows to maintain additional information to the node.
 
 ## Stack order
 
@@ -339,7 +339,7 @@ The nodes z-order property specifies the stack order of the node. A node with gr
 
 ## Data flow
 
-Node has the InEdges and OutEdges read-only property. In this property, you can find what are all the connectors that are connected to the node, and then you can find these connectors by using the [`getObject`](https://ej2.syncfusion.com/angular/documentation/api/diagram#getObject) method in the diagram.
+Node has the InEdges and OutEdges read-only property. In this property, you can find what are all the connectors that are connected to the node, and then you can find these connectors by using the [`getObject`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#getObject) method in the diagram.
 
 ```typescript
 
