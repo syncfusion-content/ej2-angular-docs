@@ -70,7 +70,7 @@ The following sample shows the example for Customizing items count in virtualiza
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/multiscomboboxelect/virtual-scroll-items/src/app.component.ts %}
+{% include code-snippet/combobox/virtual-scroll-items/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
