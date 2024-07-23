@@ -2,47 +2,57 @@ import { NgModule,ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { AggregateService  } from '@syncfusion/ej2-angular-treegrid'
+
+
+
 import { Component, OnInit } from '@angular/core';
-import { summaryRowData } from './datasource';
-
+import { summaryData } from './datasource';
+import { getObject, CustomSummaryType } from '@syncfusion/ej2-grids';
 @Component({
-    imports: [TreeGridModule],
+imports: [
+        
+        TreeGridModule
+    ],
 
-    providers: [AggregateService ],
-    standalone: true,
+providers: [AggregateService ],
+standalone: true,
     selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' height='240' [treeColumnIndex]='0'  childMapping='children' >
-                    <e-columns>
-                        <e-column field='FreightID' headerText='Freight ID'  width=130></e-column>
-                        <e-column field='FreightName' headerText='Freight Name'  width=195></e-column>
-                        <e-column field="isOrder" headerText="Order" width="150" type="boolean"></e-column>
-                        <e-column field='UnitWeight' headerText='Weight Per Unit' textAlign='Right' type='number' width=130></e-column>
-                        <e-column field='TotalUnits' headerText='Total Units' textAlign='Right' type='number' width=125></e-column>
-                    </e-columns>
-                    <e-aggregates>
-                        <e-aggregate [showChildSummary]='true'>
-                            <e-columns>
-                                <e-column field="UnitWeight" type="Max">
-                                    <ng-template #footerTemplate let-data>Maximum: {{data.Max}}</ng-template>
-                                </e-column>
-                                <e-column field="TotalUnits" type="Min">
-                                    <ng-template #footerTemplate let-data>Minimum: {{data.Min}}</ng-template>
-                                </e-column>
-                                <e-column field="isOrder" type="truecount">
-                                    <ng-template #footerTemplate let-data>TrueCount: {{data.truecount}} </ng-template>
-                                </e-column>
-                            </e-columns>
-                        </e-aggregate>
-                    </e-aggregates>
+    template: `<ejs-treegrid [dataSource]='data' height='245' [treeColumnIndex]='0'  childMapping='subtasks' >
+        <e-columns>
+                   <e-column field='category' headerText='Category'  width=240></e-column>
+                   <e-column field='units' headerText='Total Units'  textAlign='Right' type='number' Width=130></e-column>
+                   <e-column field='unitPrice' headerText='Unit Price($)' format='C2' textAlign='Right' type='number' width=110 ></e-column>
+                   <e-column field='price' headerText='Price($)' textAlign='Right' type='number' width=160 ></e-column>
+        </e-columns>
+        <e-aggregates >
+        <e-aggregate [showChildSummary]='false' >
+            <e-columns>
+                <e-column field="price" format='C2' type="Custom" [customAggregate]='customAggregateFn' columnName='category' >
+                    <ng-template #footerTemplate let-data>Count of Frozen seafood : {{data.Custom}}</ng-template>
+                </e-column>
+            </e-columns>
+        </e-aggregate>
+    </e-aggregates>
                 </ejs-treegrid>`
 })
 export class AppComponent implements OnInit {
 
     public data?: Object[];
-
     ngOnInit(): void {
-        this.data = summaryRowData;
+        this.data = summaryData;
     }
+    customAggregateFn (data: Object): number {
+        let sampleData: Object[] = getObject('result', data);
+        let countLength: number; countLength = 0;
+        sampleData.filter((item: Object) => {
+            let data: string = getObject('category', item);
+            if (data === 'Frozen seafood') {
+                countLength++;
+            }
+        });
+        return countLength;
+    };
 }
+
 
 
