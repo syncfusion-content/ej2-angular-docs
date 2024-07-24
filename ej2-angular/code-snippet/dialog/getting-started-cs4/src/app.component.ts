@@ -28,7 +28,7 @@ standalone: true,
 
 export class AppComponent implements OnInit {
   // Reference the Dialog element
-  @ViewChild('ejDialog') ejDialog: DialogComponent | any;
+  @ViewChild('ejDialog') ejDialog: DialogComponent |any;
 
   // Show the Dialog when click the button
   public onOpenDialog = (event: any): void => {

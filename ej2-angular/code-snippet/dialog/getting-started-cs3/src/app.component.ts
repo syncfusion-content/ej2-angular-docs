@@ -33,11 +33,11 @@ export class AppComponent implements OnInit {
 
   // Show the Dialog when click the button
   public onOpenDialog = (event: any): void => {
-    this.ejDialog.show();
+      this.ejDialog.show();
   };
 
   // Hide the Dialog when click the Dialog overlay
   public onOverlayClick() {
-    this.ejDialog.hide();
+      this.ejDialog.hide();
   }
 }

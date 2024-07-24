@@ -22,7 +22,7 @@ standalone: true,
         <button class="e-control e-btn" id="targetButton" (click)="onOpenDialog($event)">Open Dialog</button>
         <ejs-dialog id='dialog' #ejDialog target="#dialog-container" [showCloseIcon]='true' content='This is a Dialog content'
           width='350px'>
-        </ejs-dialog>
+      </ejs-dialog>
       </div>`
 })
 
@@ -32,6 +32,6 @@ export class AppComponent implements OnInit {
 
   // Show the Dialog when click the button
   public onOpenDialog = (event: any): void => {
-    this.ejDialog.show();
+      this.ejDialog.show();
   };
 }
