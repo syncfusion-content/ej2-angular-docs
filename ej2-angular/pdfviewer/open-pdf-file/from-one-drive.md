@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open PDF files from One Drive in Angular Pdfviewer Component | Syncfusion
+title: Open PDF from One Drive in Angular Pdfviewer Component | Syncfusion
 description: Learn here all about how to Open PDF files from One Drive in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Open PDF files from One Drive
@@ -145,7 +145,7 @@ N> Replace **Your_Tenent_ID**, **Your_Application_ID**, and **Your_Folder_Name_T
 
 **Step 4:**  Set the PDF Viewer Properties in Angular PDF viewer component
 
-Modify the `serviceUrl` property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from One Drive. Ensure that you correctly pass the document name from the files available in your drive folder to the documentPath property.
+Modify the [serviceUrl](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#serviceurl) property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the [documentPath](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#documentpath) property of the PDF viewer component to the desired name of the PDF file you wish to load from One Drive. Ensure that you correctly pass the document name from the files available in your drive folder to the documentPath property.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -184,4 +184,4 @@ N> The following NuGet packages are required to use the previous code example
 
 You can install these packages using the NuGet Package Manager in Visual Studio or Visual Studio Code.
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-one-drive)
+[View sample in GitHub]()

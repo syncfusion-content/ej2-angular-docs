@@ -14,9 +14,9 @@ The PDF Viewer provides a support to enable or disable lock option for the annot
 
 ## Lock an annotation from code behind
 
-The annotation can be locked either by default settings or by an event using the [IsLocked](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotationSettings/) API.
+The annotation can be locked either by default settings or by an event using the [IsLocked](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/annotationSettings/#islock) API.
 
-The following code sample illustrates how to lock custom stamp annotation in a PDF document through [ajaxRequestSuccess](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/ajaxRequestSuccessEventArgs/) event .
+The following code sample illustrates how to lock custom stamp annotation in a PDF document through [ajaxRequestSuccess](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#ajaxrequestsuccess) event .
 
 {% tabs %}
 {% highlight js tabtitle="Standalone" %}

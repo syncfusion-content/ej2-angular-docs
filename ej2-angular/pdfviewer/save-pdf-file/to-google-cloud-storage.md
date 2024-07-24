@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Save PDF files to Google Cloud Storage in Angular Pdfviewer Component | Syncfusion
+title: Save PDF to Google Cloud in Angular Pdfviewer Component | Syncfusion
 description: Learn here all about how to save PDF files to Google Cloud Storage in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Save PDF files to Google Cloud Storage
@@ -60,7 +60,7 @@ public PdfViewerController(IWebHostEnvironment hostingEnvironment, IMemoryCache 
 }
 ```
 
-5. Modify the `Download()` method to save the downloaded PDF files to Google Cloud Storage bucket
+5. Modify the [Download()](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#download) method to save the downloaded PDF files to Google Cloud Storage bucket
 
 ```csharp
 [HttpPost("Download")]
@@ -109,7 +109,7 @@ N> Replace **path/to/service-account-key.json** with the actual file path to you
 
 **Step 3:**  Set the PDF Viewer Properties in Angular PDF viewer component
 
-Modify the `serviceUrl` property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from Google Cloud Storage. Ensure that you correctly pass the document name from the files available in your bucket to the documentPath property.
+Modify the [serviceUrl](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#serviceurl) property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from Google Cloud Storage. Ensure that you correctly pass the document name from the files available in your bucket to the documentPath property.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';

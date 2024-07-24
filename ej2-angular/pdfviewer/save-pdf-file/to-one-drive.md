@@ -54,7 +54,7 @@ public PdfViewerController(IWebHostEnvironment hostingEnvironment, IMemoryCache 
 }
 ```
 
-5. Modify the `Download()` method to save the downloaded PDF files to One Drive bucket
+5. Modify the [Download()](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#download) method to save the downloaded PDF files to One Drive bucket
 
 ```csharp
 [HttpPost("Download")]
@@ -162,4 +162,4 @@ N> The following NuGet packages are required to use the previous code example
 
 You can install these packages using the NuGet Package Manager.
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-one-drive)
+[View sample in GitHub]()

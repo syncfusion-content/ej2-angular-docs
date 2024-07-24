@@ -59,7 +59,7 @@ public IActionResult Download([FromBody] Dictionary<string, string> jsonObject)
 
 **Step 3:**  Set the PDF Viewer Properties in React PDF viewer component
 
-Modify the `serviceUrl` property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server.Modify the documentPath with the correct PDF Document URL want to load. 
+Modify the [serviceUrl](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#serviceurl) property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server.Modify the documentPath with the correct PDF Document URL want to load. 
 
 ```typescript
 import { Component, OnInit } from '@angular/core';

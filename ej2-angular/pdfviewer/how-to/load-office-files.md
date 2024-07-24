@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load office files in PDF Viewer
+title: Load office files in Angular Pdfviewer component | Syncfusion
 description: Learn about how to load office files in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: How to load the Office products
@@ -96,7 +96,7 @@ public IActionResult GetImageStream([FromBody] Dictionary<string, string> jsonOb
         
 ```
 
-**Step 3:** In the following code, an XMLHttpRequest will generate the responseText from the base64 string and set that text as the `documentPath` of the PDF Viewer.
+**Step 3:** In the following code, an XMLHttpRequest will generate the responseText from the base64 string and set that text as the [documentPath](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#documentpath) of the PDF Viewer.
 
 ```html
 

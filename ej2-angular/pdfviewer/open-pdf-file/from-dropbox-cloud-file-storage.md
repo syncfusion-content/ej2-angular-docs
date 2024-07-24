@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open PDF files from Dropbox cloud file storage in Angular Pdfviewer Component | Syncfusion
+title: OpenPDF from DropboxCloud in Angular Pdfviewer Component | Syncfusion
 description: Learn here all about how to Open PDF files from Dropbox cloud file storage in Syncfusion Angular Pdfviewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Open PDF files from Dropbox cloud file storage
@@ -52,7 +52,7 @@ public PdfViewerController(IWebHostEnvironment hostingEnvironment, IMemoryCache 
 
 ```
 
-5. Modify the `Load()` method to load the PDF files from Dropbox cloud file storage.
+5. Modify the [Load()](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#load) method to load the PDF files from Dropbox cloud file storage.
 
 ```csharp
 
@@ -117,7 +117,7 @@ N> Replace **Your_Dropbox_Access_Token** with your actual Dropbox access token a
 
 **Step 4:**  Set the PDF Viewer Properties in Angular PDF viewer component
 
-Modify the `serviceUrl` property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from Dropbox cloud file storage. Ensure that you correctly pass the document name from the files available in your dropbox folder to the documentPath property.
+Modify the [serviceUrl](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#serviceurl) property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from Dropbox cloud file storage. Ensure that you correctly pass the document name from the files available in your dropbox folder to the documentPath property.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -149,6 +149,6 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 
 N> The **Dropbox.Api** NuGet package must be installed in your application to use the previous code example.
 
-N> Replace `PDF_Succinctly.pdf` with the actual document name that you want to load from Dropbox cloud file storage. Make sure to pass the document name from the dropbox folder to the `documentPath` property of the PDF viewer component
+N> Replace `PDF_Succinctly.pdf` with the actual document name that you want to load from Dropbox cloud file storage. Make sure to pass the document name from the dropbox folder to the [documentPath](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#documentpath) property of the PDF viewer component
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-dropbox-cloud-file-storage)

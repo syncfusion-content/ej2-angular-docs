@@ -125,7 +125,7 @@ public PdfViewerController(IConfiguration configuration, ILogger<PdfViewerContro
 }
 ```
 
-5. Modify the `Load()` method to load the PDF files from  Azure Blob Storage
+5. Modify the [Load()](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#load) method to load the PDF files from  Azure Blob Storage
 
 ```csharp
 
@@ -181,7 +181,7 @@ N> Replace **Your Connection string from Azure** with the actual connection stri
 
 **Step 3:**  Set the PDF Viewer Properties in Angular PDF viewer component
 
-Modify the `serviceUrl` property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the `documentPath` property of the PDF viewer component to the desired name of the PDF file you wish to load from Azure Blob Storage. Ensure that you correctly pass the document name from the files available in your azure contanier to the documentPath property.
+Modify the [serviceUrl](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#serviceurl) property of the PDF viewer component with the accurate URL of your web service project, replacing `https://localhost:44396/pdfviewer` with the actual URL of your server. Set the [documentPath](https://ej2.syncfusion.com/angular/documentation/api/pdfviewer/#load) property of the PDF viewer component to the desired name of the PDF file you wish to load from Azure Blob Storage. Ensure that you correctly pass the document name from the files available in your azure contanier to the documentPath property.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
