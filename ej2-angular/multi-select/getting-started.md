@@ -64,7 +64,7 @@ cd syncfusion-angular-multiselect
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
+1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -95,6 +95,26 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
+## Registering MultiSelect module
+
+Import MultiSelect module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-dropdowns`.
+
+```javascript
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+// import the MultiSelectModule for the MultiSelect component
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns';
+import { AppComponent }  from './app.component';
+
+@NgModule({
+  //declaration of ej2-angular-dropdowns module into NgModule
+  imports:      [ BrowserModule, MultiSelectModule ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+```
+
 ## Adding CSS reference
 
 The following CSS files are available in `../node_modules/@syncfusion` package folder. This can be referenced in [src/styles.css] using following code.
@@ -114,19 +134,12 @@ The following CSS files are available in `../node_modules/@syncfusion` package f
 Modify the template in [src/app/app.component.ts] file to render the Angular MultiSelect component. Add the Angular MultiSelect by using `<ejs-multiselect>` selector in `template` section of the app.component.ts file.
 
 ```javascript
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-        FormsModule, ReactiveFormsModule, MultiSelectModule, ButtonModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    // specifies the template string for the MultiSelect component
-    template: `<ejs-multiselect id='multiselectelement'></ejs-multiselect>`
+  selector: 'app-root',
+  // specifies the template string for the MultiSelect component
+  template: `<ejs-multiselect id='multiselectelement'></ejs-multiselect>`
 })
 export class AppComponent  { }
 ```
@@ -136,17 +149,9 @@ export class AppComponent  { }
 After initialization, populate the MultiSelect with data using the `dataSource` property. Here, an array of string values passed to MultiSelect component.
 
 ```typescript
-
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-        FormsModule, ReactiveFormsModule, MultiSelectModule, ButtonModule
-    ],
-    standalone: true,
     selector: 'app-root',
     // specifies the template string for the MultiSelect component
     template: `<ejs-multiselect id='multiselectelement' [dataSource]='data'></ejs-multiselect>`
@@ -157,7 +162,6 @@ export class AppComponent {
     // defined the array of data
     public data: string[] = ['Badminton', 'Basketball', 'Cricket', 'Football', 'Golf', 'Gymnastics', 'Hockey', 'Rugby', 'Snooker', 'Tennis'];
 }
-
 ```
 
 ## Running the application

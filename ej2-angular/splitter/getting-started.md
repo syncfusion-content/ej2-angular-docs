@@ -104,31 +104,59 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
+## Adding Splitter module
+
+Once you have successfully installed the layouts package, corresponding component modules are ready to configure in your application from the installed location. Syncfusion Angular package provides two different types of ngModules.
+
+Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module/) to learn about `ngModules`.
+
+Refer to the following snippet to import the `SplitterModule` in `app.module.ts` from the `@syncfusion/ej2-angular-layouts`.
+
+```javascript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+// Imported syncfusion SplitterModule from layouts package
+import { SplitterModule } from '@syncfusion/ej2-angular-layouts';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    // Registering EJ2 Splitter Module
+    SplitterModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+```
+
 ## Adding Splitter component
 
 Add the Splitter component snippet in `app.component.ts` as follows.
 
 ```typescript
 
-import { FormsModule } from '@angular/forms'
-import { SplitterModule } from '@syncfusion/ej2-angular-layouts'
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-         FormsModule, SplitterModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: `
-      <div id='container'>
-        <ejs-splitter #horizontal height='110px' width='100%' >
-            <e-panes>
-              <e-pane></e-pane>
-              <e-pane></e-pane>
-            </e-panes>
-        </ejs-splitter>
-      </div>`
+  selector: 'app-root',
+  template: `
+    <div id='container'>
+      <ejs-splitter #horizontal height='110px' width='100%' >
+          <e-panes>
+            <e-pane></e-pane>
+            <e-pane></e-pane>
+          </e-panes>
+      </ejs-splitter>
+    </div>`
 })
 export class AppComponent {
     constructor() {

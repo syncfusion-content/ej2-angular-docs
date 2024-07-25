@@ -49,7 +49,7 @@ The `Avatar` component is pure CSS component which doesn't need specific depende
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
+1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -99,20 +99,14 @@ Modify the `template` in `app.component.ts` file to render Avatar component.
 `[src/app/app.component.ts]`
 
 ```typescript
-
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-        
-    ],
-    standalone: true,
-    selector: 'app-root',
+    selector: 'my-app',
     template: `<div id='element'><span class="e-avatar">GR</span></div>`
 })
 
 export class AppComponent {}
-
 ```
 
 ## Run the application

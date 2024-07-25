@@ -54,28 +54,30 @@ cp -R ./node_modules/@syncfusion/ej2-pdfviewer/dist/ej2-pdfviewer-lib  src/asset
 
 ## Registering PDF Viewer Module
 
-Import PDF Viewer module into Angular application(app.component.ts) from the package `@syncfusion/ej2-angular-pdfviewer` [src/app/app.component.ts].
+Import PDF Viewer module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-pdfviewer` [src/app/app.module.ts].
 
 ```typescript
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 // import the PdfViewer Module for the PDF Viewer component
 import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
          NavigationService, TextSearchService, TextSelectionService,
          PrintService, FormDesignerService, FormFieldsService, 
          AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
-import { Component } from '@angular/core';
+import { AppComponent } from './app.component';
 
 @NgModule({
   //declaration of ej2-angular-pdfviewer module into NgModule
-  imports: [PdfViewerModule],
-  standalone: true,
-  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
+  imports: [BrowserModule, PdfViewerModule],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
+   providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
                ThumbnailViewService, ToolbarService, NavigationService,
                TextSearchService, TextSelectionService, PrintService,
                AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
-export class AppComponent { }
+export class AppModule { }
 ```
 
 ## Adding CSS reference
@@ -99,7 +101,6 @@ Add the Angular PDF Viewer component’s styles as given below in `src/styles.cs
 Add the Angular PDF Viewer by using `<ejs-pdfviewer>` selector in `template` section of the `src/app/app.component.ts` file to render the PDF Viewer component.
 
 ```typescript
-
 import { Component, OnInit } from '@angular/core';
 import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
@@ -108,8 +109,6 @@ import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
          AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
-  imports: [PdfViewerModule],
-  standalone: true,
   selector: 'app-root',
   // specifies the template string for the PDF Viewer component
   template: `<div class="content-wrapper">
@@ -124,14 +123,12 @@ import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
                TextSearchService, TextSelectionService, PrintService,
                AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService]
 })
-
 export class AppComponent implements OnInit {
   public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
   public resource: string = "https://cdn.syncfusion.com/ej2/23.1.43/dist/ej2-pdfviewer-lib";
   ngOnInit(): void {
   }
 }
-
 ```
 
 ## Run the application

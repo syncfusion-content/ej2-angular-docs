@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Open PDF file from Azure Blob Storage
 
-PDF Viewer allows to load PDF files from Azure Blob Storage using either the Standalone or Server-backend PDF Viewer. Below are the steps and a sample to demonstrate how to open a PDF from Azure Blob Storage.
+Currently, it's possible to load a PDF file from Azure Blob Storage into a PDF Viewer using either the Standalone or Server-backend PDF Viewer. Below are the steps and a sample to demonstrate how to open a PDF from Azure Blob Storage.
 
-## Using Standalone PDF Viewer
+## Open PDF file from Azure Blob Storage using Standalone PDF Viewer
 
 To load a PDF file from Azure Blob Storage in a PDF Viewer, you can follow the steps below
 
@@ -86,9 +86,9 @@ blobToBase64(blob: Blob): Promise<string> {
 }
 ```
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-azure-blob-storage/tree/master/Open%20and%20Save%20PDF%20in%20Azure%20Blob%20Storage%20using%20Standalone).
+[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-azure-blob-storage).
 
-## Using Server-Backed PDF Viewer
+## Open PDF file from Azure Blob Storage using Server-Backend PDF Viewer
 
 To load a PDF file from Azure Blob Storage in a PDF Viewer, you can follow the steps below
 
@@ -213,4 +213,4 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 
 N> The **Azure.Storage.Blobs** NuGet package must be installed in your application to use the previous code example.
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-azure-blob-storage/tree/master/Open%20and%20Save%20PDF%20in%20Azure%20Blob%20Storage%20using%20Server-Backend).
+[View sample in GitHub](https://github.com/SyncfusionExamples/open-save-pdf-documents-in-azure-blob-storage).

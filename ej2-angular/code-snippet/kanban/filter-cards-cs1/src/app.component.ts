@@ -43,7 +43,7 @@ export class AppComponent {
     change(args: ChangeEventArgs): void {
         let filterQuery: Query = new Query();
         if (args.value !== 'None') {
-            filterQuery = new Query().where('Priority', 'equal', args.value);
+            filterQuery = new Query().where('Priority', 'equal', args.value as string);
         }
         (this.kanbanObj as KanbanComponent).query = filterQuery;
     }

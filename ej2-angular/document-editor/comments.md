@@ -17,7 +17,28 @@ Document Editor allows you to add comments to documents. You can add, navigate a
 Comments can be inserted to the selected text.
 
 ```typescript
-this.documentEditor.editor.insertComment("Test comment");
+this.documentEditor.editor.insertComment('Test comment');
+```
+
+## Add a New Comment with Date, Author, and Status
+
+Comments can be inserted into the selected text with a specified date, author, and status.
+
+```typescript
+// In this example, a comment with the text "Nancy Davolio" is added by the author Rachel Green on July 23, 2024, at 2:30 PM. The isResolved status is set to false.
+
+// Create a specific date: July 23, 2024, at 2:30:00 PM.
+let specificDate = new Date(2024, 6, 23, 14, 30, 0); // Note: July is represented by 6 (0-based index).
+
+// Define the properties of the comment including author, date, and resolution status.
+let commentProperties: CommentProperties = { 
+    author: 'Nancy Davolio',          // The author of the comment.
+    dateTime: specificDate,           // The date and time when the comment is created.
+    isResolved: false                 // The status of the comment; false indicates it is unresolved.
+};
+
+// Insert the comment with the specified properties into the document editor.
+this.documentEditor.editor.insertComment('Hello world', commentProperties);
 ```
 
 ## Comment navigation
@@ -108,29 +129,9 @@ import { ToolbarService , DocumentEditorSettingsModel } from '@syncfusion/ej2-an
 })
 export class AppComponent implements OnInit {
     public mentionData: any = [
-        { "Name": "Selma Rose", "Eimg": "3", "EmailId": "selma@mycompany.com" },
-        { "Name": "Russo Kay", "Eimg": "8", "EmailId": "russo@mycompany.com" },
-        { "Name": "Camden Kate", "Eimg": "9", "EmailId": "camden@mycompany.com" },
-        { "Name": "Mary Kate", "Eimg": "4", "EmailId": "marry@mycompany.com" },
-        { "Name": "Ursula Ann", "Eimg": "2", "EmailId": "ursula@mycompany.com" },
-        { "Name": "Margaret", "Eimg": "5", "EmailId": "margaret@mycompany.com" },
-        { "Name": "Laura Grace", "Eimg": "6", "EmailId": "laura@mycompany.com" },
-        { "Name": "Robert", "Eimg": "8", "EmailId": "robert@mycompany.com" },
-        { "Name": "Albert", "Eimg": "9", "EmailId": "albert@mycompany.com" },
-        { "Name": "Michale", "Eimg": "10", "EmailId": "michale@mycompany.com" },
-        { "Name": "Andrew James", "Eimg": "7", "EmailId": "james@mycompany.com" },
-        { "Name": "Rosalie", "Eimg": "4", "EmailId": "rosalie@mycompany.com" },
-        { "Name": "Stella Ruth", "Eimg": "2", "EmailId": "stella@mycompany.com" },
-        { "Name": "Richard Rose", "Eimg": "10", "EmailId": "richard@mycompany.com" },
-        { "Name": "Gabrielle", "Eimg": "3", "EmailId": "gabrielle@mycompany.com" },
-        { "Name": "Thomas", "Eimg": "7", "EmailId": "thomas@mycompany.com" },
-        { "Name": "Charles Danny", "Eimg": "8", "EmailId": "charles@mycompany.com" },
-        { "Name": "Daniel", "Eimg": "10", "EmailId": "daniel@mycompany.com" },
-        { "Name": "Matthew", "Eimg": "7", "EmailId": "matthew@mycompany.com" },
-        { "Name": "Donald Krish", "Eimg": "9", "EmailId": "donald@mycompany.com" },
-        { "Name": "Yohana", "Eimg": "1", "EmailId": "yohana@mycompany.com" },
-        { "Name": "Kevin Paul", "Eimg": "10", "EmailId": "kevin@mycompany.com" },
-        { "Name": "Andrew Fuller", "Eimg": "3", "EmailId": "andrew@mycompany.com"}
+        { "Name": "Mary Kate", "EmailId": "marry@company.com" },
+        { "Name": "Andrew James", "EmailId": "james@company.com" },
+        { "Name": "Andrew Fuller", "EmailId": "andrew@company.com"}
     ];
     public settings: DocumentEditorSettingsModel = { mentionSettings : { dataSource: this.mentionData, fields: { text: 'Name' }}  };
     ngOnInit(): void {
