@@ -52,7 +52,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
+1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -83,6 +83,27 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
+## Adding Mention module
+
+Import Mention module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-dropdowns` [src/app/app.module.ts].
+
+```javascript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+// Import the MentionModule for the Mention component from the dropdown package.
+import { MentionModule } from '@syncfusion/ej2-angular-dropdowns';
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  imports: [ BrowserModule, MentionModule ], // Registering EJ2 Mention Module.
+  declarations: [ AppComponent ],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule { }
+```
+
 ## Adding CSS reference
 
 The following CSS files are available in `../node_modules/@syncfusion` package folder. Add Mentions component's styles as given below in `style.css`.
@@ -100,33 +121,23 @@ The following CSS files are available in `../node_modules/@syncfusion` package f
 Modify the template in the [src/app/app.component.ts] file to render the Mention component. Add the Angular Mention by using `<ejs-mention>` selector in `template` section of the app.component.ts file. To use the Mention component properly, the [`target`](https://ej2.syncfusion.com/angular/documentation/api/mention/#target) property should be configured so that it renders the Mention component in the configured element.
 
 ```javascript
-
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-import { MentionModule } from '@syncfusion/ej2-angular-dropdowns'
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-        FormsModule, ReactiveFormsModule, MentionModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    // Specifies the template string for the Mention component
-    template: `
-    <label id="comment" >Comments</label>
-    <!--Element which is the Mention component's target to list the suggestions-->
-    <div id="mentionElement" placeholder = "Type @ and tag user"></div>
-    <ejs-mention [dataSource]='userData' [target]='mentionTarget'></ejs-mention>`
+  selector: 'app-root',
+  // Specifies the template string for the Mention component
+  template: `
+  <label style="font-size: 15px; font-weight: 600;">Comments</label>
+  <!--Element which is the Mention component's target to list the suggestions-->
+  <div id="mentionElement" style="min-height: 100px; border: 1px solid #D7D7D7; border-radius: 4px; padding: 8px; font-size: 14px; width: 600px;"></div>
+  <ejs-mention [target]='mentionTarget'></ejs-mention>`
 })
 export class AppComponent {
     constructor() {
     }
-    // Defines the array of data.
-    public userData: string[] = ['Selma Rose', 'Garth', 'Robert', 'William', 'Joseph'];
     // Defines the target in which the Mention component is rendered.
-    public mentionTarget: string = "#mentionElement";
+    public mentionTarget: "#mentionElement";
 }
-
 ```
 
 ## Binding data source
@@ -134,16 +145,9 @@ export class AppComponent {
 After initializing, populate the data in Mention using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/mention/#datasource) property. Here, an array of string values is passed to the Mention component.
 
 ```typescript
-
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-import { MentionModule } from '@syncfusion/ej2-angular-dropdowns'
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-        FormsModule, ReactiveFormsModule, MentionModule
-    ],
-    standalone: true,
     selector: 'app-root',
     // Specifies the template string for the Mention component
     template: `

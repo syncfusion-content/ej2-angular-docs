@@ -10,7 +10,7 @@ import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
 imports: [
-        
+
 		DialogModule
     ],
 

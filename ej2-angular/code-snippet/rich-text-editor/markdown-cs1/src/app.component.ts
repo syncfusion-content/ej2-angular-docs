@@ -88,7 +88,7 @@ public onCreate(): void {
         this.rteObj!.showFullScreen();
     });
 }
-public actionComplete(e: any): void {
+public async actionComplete(e: any): Promise<void> {
     if (e.targetItem === 'Maximize' && isNullOrUndefined(e.args)) {
         this.fullPreview({ mode: true, type: '' });
     } else if (!this.mdSplit!.parentElement!.classList.contains('e-overlay')) {
@@ -99,18 +99,18 @@ public actionComplete(e: any): void {
             this.mdSplit!.classList.remove('e-active');
             this.mdsource!.classList.remove('e-active');
         }
-        this.markDownConversion();
+        await this.markDownConversion();
     }
 }
-public markDownConversion(): void {
+public async markDownConversion(): Promise<void> {
     if (this.mdSplit!.classList.contains('e-active')) {
         let id: string = this.rteObj!.getID() + 'html-preview';
         let htmlPreview: HTMLElement = this.rteObj!.element.querySelector('#' + id) as HTMLElement;
         debugger
-        htmlPreview.innerHTML =  Marked(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
+        htmlPreview.innerHTML = await Marked.parse(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
     }
 }
-public fullPreview(e: { [key: string]: string | boolean }): void {
+public async fullPreview(e: { [key: string]: string | boolean }): Promise<void> {
     let id: string = this.rteObj!.getID() + 'html-preview';
     this.htmlPreview = this.rteObj!.element.querySelector('#' + id) as HTMLElement;
     if ((this.mdsource!.classList.contains('e-active') || this.mdSplit!.classList.contains('e-active')) && e['mode']) {
@@ -135,7 +135,7 @@ public fullPreview(e: { [key: string]: string | boolean }): void {
             this.textArea!.style.width = '50%';
         }
         this.htmlPreview.style.display = 'block';
-        this.htmlPreview.innerHTML = Marked(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
+        this.htmlPreview.innerHTML = await Marked.parse(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
     }
 }
 }

@@ -16,7 +16,7 @@ imports: [
 
 standalone: true,
     selector: 'my-app',
-    template: `<ejs-listview id='sample-list' [dataSource]='data' [fields]='fields' [showHeader]='true' [headerTitle]='headertitle'></ejs-listview>`,
+    template: `<ejs-listview id='sample-list' [dataSource]='data' [fields]='fields' [showHeader]='true' [headerTitle]='headertitle' [animation]='animation'></ejs-listview>`,
 })
 
 export class AppComponent {
@@ -250,6 +250,8 @@ export class AppComponent {
 
     public fields: {[key: string]: string} ={ tooltip: 'text'};
     public headertitle = 'Continent';
+    public animation: Object  = { duration: 0};
+
 }
 
 

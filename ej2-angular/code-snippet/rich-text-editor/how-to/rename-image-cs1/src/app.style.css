@@ -1,12 +1,6 @@
-.below-30 {
-    background-color: orangered;
-  }
-  
-  .below-80 {
-    background-color: yellow;
-  } 
-  
-  .above-80 {
-    background-color: greenyellow
-  }
-  
+.e-richtexteditor {
+  max-width: 880px;
+  min-width: 250px;
+  min-height: 250px;
+  max-height: 400px;
+}

@@ -68,14 +68,14 @@ standalone: true,
             this.fullPreview();
         });
     }
-    public markDownConversion(): void {
+    public async markDownConversion(): Promise<void> {
         if (this.mdsource?.classList.contains('e-active')) {
             let id: string = this.rteObj?.getID() + 'html-view';
             let htmlPreview: Element = this.rteObj!.element.querySelector('#' + id) as Element;
-            htmlPreview.innerHTML = Marked(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
+            htmlPreview.innerHTML = await Marked.parse(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
         }
     }
-    public fullPreview(): void {
+    public async fullPreview(): Promise<void> {
         let id: string = this.rteObj!.getID() + 'html-preview';
         let htmlPreview: HTMLElement = this.rteObj!.element.querySelector('#' + id) as HTMLElement;
         if (this.mdsource!.classList.contains('e-active')) {
@@ -91,7 +91,7 @@ standalone: true,
             }
             this.textArea!.style.display = 'none';
             htmlPreview.style.display = 'block';
-            htmlPreview.innerHTML = Marked(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
+            htmlPreview.innerHTML = await Marked.parse(((this.rteObj!.contentModule as any).getEditPanel() as HTMLTextAreaElement).value);
             this.mdsource!.parentElement!.title = 'Code View';
         }
     }

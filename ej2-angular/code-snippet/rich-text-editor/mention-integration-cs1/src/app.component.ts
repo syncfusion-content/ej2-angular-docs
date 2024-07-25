@@ -53,7 +53,7 @@ popupWidth='250px' popupHeight='200px'>
 providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
 } )
 export class AppComponent {
-    @ViewChild('mention') mentionObj: Mention;
+    @ViewChild('mention') mentionObj!: Mention;
     public toolbarSettings: object = {
         items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', 'OrderedList',
         'UnorderedList', '|', 'CreateLink', 'Image', '|', 'SourceCode', '|', 'Undo', 'Redo'

@@ -139,42 +139,6 @@ The following sample demonstrate how to filter `script` tag from value.
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs23" %}
 
-## Resizable support
-
-This feature allows the editor to be resized dynamically. The users can enable or disable this feature using the `enableResize` property in the Rich Text Editor. If `enableResize` is set to true, the Rich Text Editor component creates grip at the bottom right corner, which allows resizing the component in the diagonal direction. The following sample demonstrates the resizable feature.
-
-### Enabling the resizable support
-
-To render the Rich Text Editor in the resizable mode, set the `enableResize` property to true. The above feature is segregated into individual feature-wise module. To use Resizable feature, inject `ResizeService` in the provider section of `AppModule`.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/toolbar/multirow-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/toolbar/multirow-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/rich-text-editor/toolbar/multirow-cs1" %}
-
-### Specifying the Minimum and Maximum width and height for Resize
-
-To have a restricted resizable area for the Rich Text Editor, you need to specify the min-width, max-width, min-height, and max-height CSS properties for the control's wrapper element. By default, the control is capable of resizing upto the current viewport. The `e-richtexteditor` CSS class will be available in the component's wrapper and can be used for applying the above mentioned styles.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/how-to/rename-image-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/how-to/rename-image-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/rich-text-editor/how-to/rename-image-cs1" %}
-
 ## Number and Bullet Format Lists
 
 This feature allows the user to change the appearance of the Numbered and Bulleted lists. Users can also apply different numbering or bullet formats lists such as lowercase greek, upper Alpha, square and circles. You can also customize the style type of the lists to be populated in the dropdown from the toolbar by using the `numberFormatList` and `bulletFormatList` properties in the Rich Text Editor.

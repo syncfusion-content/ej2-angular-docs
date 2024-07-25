@@ -11,78 +11,84 @@ domainurl: ##DomainURL##
 
 This section explains the steps required to create a simple Angular Rich Text Editor component and configure its available functionalities.
 
+To get start quickly with Angular Rich Text Editor using CLI and Schematics, you can check on this video:
+
+{% youtube "https://www.youtube.com/watch?v=wrod5Rzg85o" %}
+
 ## Setup Angular Environment
 
-Use [Angular CLI](https://github.com/angular/angular-cli) to setup the Angular applications. To install Angular CLI, use the following command.
+You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
-```javascript
-
-  npm install -g @angular/cli
-
+```bash
+npm install -g @angular/cli@16.0.1
 ```
 
 ## Create an Angular Application
 
-Start a new Angular application using the following Angular CLI command.
+Start a new Angular application using below Angular CLI command.
 
-```javascript
+```bash
+ng new my-app
+```
+This command will prompt you for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
 
-  ng new my-app
-  cd my-app
+![Initial_setup](images/Initial-setup.png)
+
+By default, it will create a CSS-based application.
+
+Next, navigate to the created project folder:
 
 ```
+cd my-app
+```
+## Adding Syncfusion Rich Text Edior package
 
-## Installing Syncfusion Rich Text Editor package
+All the available Essential JS 2 packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. Get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
-
-Currently, Syncfusion provides two types of package structures for Angular components. They are:
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
-
-### Ivy library distribution package
-
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the following command.
-
-Add [`@syncfusion/ej2-angular-richtexteditor`](https://www.npmjs.com/package/@syncfusion/ej2-angular-richtexteditor/v/20.2.38) package to the application.
+To install Rich Text Editor component, use the following command.
 
 ```bash
 npm install @syncfusion/ej2-angular-richtexteditor --save
 ```
 
-### Angular compatibility compiled package(ngcc)
+> The **--save** will instruct NPM to include the rich text editor package inside of the **dependencies** section of the **package.json**.
 
-For Angular version below 12, use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package, use the following command.
+## Registering Rich Text Editor Module
 
-Add [`@syncfusion/ej2-angular-richtexteditor@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-richtexteditor/v/20.2.38-ngcc) package to the application.
+Import Rich Text Editor module into Angular application(app.module.ts) from the package **@syncfusion/ej2-angular-richtexteditor** [src/app/app.module.ts].
 
-```bash
-npm install @syncfusion/ej2-angular-richtexteditor@ngcc --save
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent }  from './app.component';
+// import the RichTextEditorModule for the Rich Text Editor component
+import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor';
+
+@NgModule({
+  //declaration of ej2-angular-richtexteditor module into NgModule
+  imports:      [ BrowserModule, RichTextEditorModule ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
 ```
-
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as follows.
-
-```bash
-@syncfusion/ej2-angular-richtexteditor:"20.2.38-ngcc"
-```
-
->Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
-
 ## Adding CSS reference
 
-Add Rich Text Editor component’s styles as given in the following `styles.css`.
+The following CSS files are available in **../node_modules/@syncfusion** package folder.
+This can be referenced in [src/styles.css] using following code.
 
 ```css
 
-      @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-icons/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-      @import '../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
+  @import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
+  @import '../../node_modules/@syncfusion/ej2-icons/styles/material.css';
+  @import '../../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+  @import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+  @import '../../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+  @import '../../node_modules/@syncfusion/ej2-lists/styles/material.css';
+  @import '../../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+  @import '../../node_modules/@syncfusion/ej2-popups/styles/material.css';
+  @import '../../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+  @import '../../node_modules/@syncfusion/ej2-richtexteditor/styles/material.css';
 
 ```
 
@@ -94,13 +100,7 @@ Modify the template in the [src/app/app.component.ts] file to render the Rich Te
 
 import { Component } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
 @Component({
-  imports: [
-    RichTextEditorAllModule
-  ],
-
-  standalone: true,
   selector: 'app-root',
   template: `<ejs-richtexteditor id='defaultRTE'>
   <ng-template #valueTemplate>
@@ -129,65 +129,21 @@ export class AppComponent {
 
 ```
 
-## Initialize Rich Text Editor from `<iframe>` element
 
-The Rich Text Editor’s content is placed in an `iframe` and isolated from the rest of the page.
-
-Initialize the Rich Text Editor on div element and set the enable field [`iframeSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#iframesettings) property to true.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-iframe-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-iframe-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-iframe-cs1" %}
 
 ## Module Injection
 
-To create Rich Text Editor with additional features, inject the required modules. The following modules are used to extend Rich Text Editor’s basic functionality.
+To create Rich Text Editor with additional features, inject the required modules. The following modules are used to extend Rich Text Editor's basic functionality.
 
-* `Toolbar` - Inject this module to use Toolbar feature.
-* `Link` - Inject this module to use link feature in Rich Text Editor.
-* `Image`- Inject this module to use image feature in Rich Text Editor.
-* `Table`- Inject this module to use table feature in Rich Text Editor.
-* `Count` - Inject this module to use character count in Rich Text Editor.
-* `HtmlEditor` - Inject this module to use Rich Text Editor as html editor.
-* `MarkdownEditor`-Inject this module to use Rich Text Editor as markdown editor.
-* `QuickToolbar` - Inject this module to use quick toolbar feature for the target element.
-* `Resize` - Inject this module to use resize feature in Rich Text Editor.
-* `FileManager` - Inject this module to use file browser feature in Rich Text Editor.
-* `PasteCleanup` - Inject this module to use paste cleanup feature in Rich Text Editor.
-* `FormatPainter` - Inject this module to use format painter feature in Rich Text Editor.
-* `EmojiPicker` - Inject this module to use emoji picker feature in Rich Text Editor.
+* **HtmlEditor** - Inject this module to use Rich Text Editor as html editor.
+* **Image** - Inject this module to use image feature in Rich Text Editor.
+* **Link** - Inject this module to use link feature in Rich Text Editor.
+* **QuickToolbar** - Inject this module to use quick toolbar feature for the target element.
+* **Toolbar** - Inject this module to use Toolbar feature.
 
-These modules should be injected into the provider section of `AppModule`.
+These modules should be injected into the **providers** section of root **NgModule** or component class.
 
-## Run the application
-
-Use the following command to run the application in the browser.
-
-```bash
-ng serve --open
-```
-
-Output will appear as follows.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-value-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-value-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-value-cs1" %}
+> Additional feature modules are available [here](./module.md).
 
 ## Configure the Toolbar
 
@@ -224,6 +180,14 @@ Specifies the items to be rendered in the quick toolbar based on the target elem
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs2" %}
+
+## Run the application
+
+Use the following command to run the application in the browser.
+
+```bash
+ng serve --open
+```
 
 ## Retrieve the formatted content
 
@@ -271,3 +235,6 @@ To get the maximum number of characters in the Rich Text Editor's content, use [
 * [How to insert Emoticons](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/insert-emoticons)
 * [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/blog-posting)
 * [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/reactive-form)
+* [Accessibility in Rich text editor](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/accessibility)
+* [Keyboard support in Rich text editor](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/keyboard-support)
+* [Globalization in Rich text editor](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/globalization)

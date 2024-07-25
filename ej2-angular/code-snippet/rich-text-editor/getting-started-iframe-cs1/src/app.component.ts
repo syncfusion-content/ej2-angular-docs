@@ -1,7 +1,8 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+// import the RichTextEditorModule for the Rich Text Editor component
+import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor';
 
 
 
@@ -9,23 +10,13 @@ import { DialogModule } from '@syncfusion/ej2-angular-popups'
 import { Component } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
-imports: [
-        
-        RichTextEditorAllModule,
-        DialogModule
-    ],
-
-
-standalone: true,
   selector: 'app-root',
-  template: `<ejs-richtexteditor id='iframeRTE' [toolbarSettings]='tools' [iframeSettings]='iframe' [height]='height'>
+  template:  `<ejs-richtexteditor id='iframeRTE' [toolbarSettings]='tools' [iframeSettings]='iframe' [height]='height'>
   <ng-template #valueTemplate>
   <p>The Rich Text Editor component is WYSIWYG ("what you see is what you get") editor
         that provides the best user experience to create and update the content.
             Users can format their content using standard toolbar commands.</p>
-
             <p><b>Key features:</b></p>
-
             <ul><li><p>Provides &lt;IFRAME&gt; and &lt;DIV&gt; modes</p></li>
             <li><p>Capable of handling markdown editing.</p></li>
             <li><p>Contains a modular library to load the necessary functionality on demand.</p></li>
@@ -39,22 +30,23 @@ standalone: true,
             </ul>
   </ng-template>
   </ejs-richtexteditor>`,
+  styleUrls: ['./app.component.css'],
   providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
 })
 
 export class AppComponent {
-        public tools: object = {
-            items: ['Undo', 'Redo', '|',
-                'Bold', 'Italic', 'Underline', 'StrikeThrough', '|',
-                'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|',
-                'SubScript', 'SuperScript', '|',
-                'LowerCase', 'UpperCase', '|',
-                'Formats', 'Alignments', '|', 'OrderedList', 'UnorderedList', '|',
-                'Indent', 'Outdent', '|', 'CreateLink',
-                'Image', '|', 'ClearFormat', 'Print', 'SourceCode', '|', 'FullScreen']
-        };
-        public iframe: object = { enable: true };
-        public height: number = 500;
+  public tools: object = {
+      items: ['Undo', 'Redo', '|',
+          'Bold', 'Italic', 'Underline', 'StrikeThrough', '|',
+          'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|',
+          'SubScript', 'SuperScript', '|',
+          'LowerCase', 'UpperCase', '|',
+          'Formats', 'Alignments', '|', 'OrderedList', 'UnorderedList', '|',
+          'Indent', 'Outdent', '|', 'CreateLink',
+          'Image', '|', 'ClearFormat', 'Print', 'SourceCode', '|', 'FullScreen']
+  };
+  public iframe: object = { enable: true };
+  public height: number = 500;
 }
 
 

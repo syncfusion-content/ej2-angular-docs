@@ -18,7 +18,7 @@ To get start quickly with Angular Chart using CLI and Schematics, you can check 
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
+You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications. For more details about Angular CLI and Node versions, please refer to this [page](https://ej2.syncfusion.com/angular/documentation/system-requirement).<br>
 To install Angular CLI use the following command.
 
 ```bash

@@ -54,7 +54,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
+1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -85,6 +85,26 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
+## Registering Dropdown Tree Module
+
+Import Dropdown Tree module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-dropdowns`.
+
+```javascript
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+// import the DropDownTreeModule for the DropDownTree component
+import { DropDownTreeModule } from '@syncfusion/ej2-angular-dropdowns';
+import { AppComponent }  from './app.component';
+
+@NgModule({
+  //declaration of ej2-angular-dropdowns module into NgModule
+  imports:      [ BrowserModule, DropDownTreeModule ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+```
+
 ## Adding CSS Reference
 
 Add Dropdown Tree component's styles as given below in `styles.css`.
@@ -107,22 +127,13 @@ Add Dropdown Tree component's styles as given below in `styles.css`.
 Modify the template in [src/app/app.component.ts] file to render the Dropdown Tree component. Add the Angular Dropdown Tree by using `ejs-dropdowntree` selector in `template` section of the app.component.ts file.
 
 ```typescript
-
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-import { DropDownTreeModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-        FormsModule, ReactiveFormsModule, ButtonModule, DropDownTreeModule
-    ],
-    standalone: true,
-    selector: 'app-root',
-    template: `<ejs-dropdowntree id='dropdowntree'></ejs-dropdowntree>`
+  selector: 'app-root',
+  template: `<ejs-dropdowntree id='dropdowntree'></ejs-dropdowntree>`
 })
 export class AppComponent {}
-
 ```
 
 ## Binding data source
@@ -130,17 +141,9 @@ export class AppComponent {}
 The Dropdown Tree component can load the data either from local data sources or remote data services. This can be done using the `dataSource` property that is a member of the `fields` property. The dataSource property supports array of JavaScript objects and DataManager. Here, an array of JSON values is passed to the Dropdown Tree component.
 
 ```typescript
-
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-import { DropDownTreeModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-        FormsModule, ReactiveFormsModule, ButtonModule, DropDownTreeModule
-    ],
-    standalone: true,
     selector: 'app-root',
     // specifies the template string for the DropDownTree component
     template: `<ejs-dropdowntree id='dropdowntree' [fields]='fields' placeholder='Select a Item'></ejs-dropdowntree>`

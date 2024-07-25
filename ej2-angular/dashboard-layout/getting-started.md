@@ -67,8 +67,8 @@ The following list of dependencies are required to use the DashboardLayout compo
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-2. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
-3. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
+1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
+2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
@@ -125,72 +125,86 @@ Now, modify the `template` in `app.component.ts` file to render DashboardLayout 
 `[src/app/app.component.ts]`
 
 ```typescript
-
-import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts'
 import { Component } from '@angular/core';
 
 @Component({
-imports: [ DashboardLayoutModule],
-    standalone: true,
-    selector: 'app-root',
-    template: `
-    <div class="control-section">
-          <ejs-dashboardlayout id='defaultLayout' [columns]="5" #defaultLayout>
-              <div id="one" class="e-panel" data-row="0" data-col="0" data-sizeX="1" data-sizeY="1">
-                  <span id="close" class="e-template-icon e-clear-icon"></span>
-                  <div class="e-panel-container">
-                      <div class="text-align">0</div>
-                  </div>
-              </div>
-              <div id="two" class="e-panel" data-row="1" data-col="0" data-sizeX="1" data-sizeY="2">
-                  <span id="close" class="e-template-icon e-clear-icon"></span>
-                  <div class="e-panel-container">
-                      <div class="text-align">1</div>
-                  </div>
-              </div>
-              <div id="three" class="e-panel" data-row="0" data-col="1" data-sizeX="2" data-sizeY="2">
-                  <span id="close" class="e-template-icon e-clear-icon"></span>
-                  <div class="e-panel-container">
-                      <div class="text-align">2</div>
-                  </div>
-              </div>
-              <div id="four" class="e-panel" data-row="2" data-col="1" data-sizeX="1" data-sizeY="1">
-                  <span id="close" class="e-template-icon e-clear-icon"></span>
-                  <div class="e-panel-container">
-                      <div class="text-align">3</div>
-                  </div>
-              </div>
-              <div id="five" class="e-panel" data-row="2" data-col="2" data-sizeX="2" data-sizeY="1">
-                  <span id="close" class="e-template-icon e-clear-icon"></span>
-                  <div class="e-panel-container">
-                      <div class="text-align">4</div>
-                  </div>
-              </div>
-              <div id="six" class="e-panel" data-row="0" data-col="3" data-sizeX="1" data-sizeY="1">
-                  <span id="close" class="e-template-icon e-clear-icon"></span>
-                  <div class="e-panel-container">
-                      <div class="text-align">5</div>
-                  </div>
-              </div>
-              <div id="seven" class="e-panel" data-row="1" data-col="3" data-sizeX="1" data-sizeY="1">
-                  <span id="close" class="e-template-icon e-clear-icon"></span>
-                  <div class="e-panel-container">
-                      <div class="text-align">6</div>
-                  </div>
-              </div>
-              <div id="eight" class="e-panel" data-row="0" data-col="4" data-sizeX="1" data-sizeY="3">
-                  <span id="close" class="e-template-icon e-clear-icon"></span>
-                  <div class="e-panel-container">
-                      <div class="text-align">7</div>
-                  </div>
-              </div>
-          </ejs-dashboardlayout>
-      </div>`
+  selector: 'app-root',
+  styleUrls: ['default-style.css'],
+  template: `
+  <div class="control-section">
+        <ejs-dashboardlayout id='defaultLayout' [columns]="5" #defaultLayout [cellSpacing]='cellSpacing'>
+            <div id="one" class="e-panel" data-row="0" data-col="0" data-sizeX="1" data-sizeY="1">
+                <span id="close" class="e-template-icon e-clear-icon"></span>
+                <div class="e-panel-container">
+                    <div class="text-align">0</div>
+                </div>
+            </div>
+            <div id="two" class="e-panel" data-row="1" data-col="0" data-sizeX="1" data-sizeY="2">
+                <span id="close" class="e-template-icon e-clear-icon"></span>
+                <div class="e-panel-container">
+                    <div class="text-align">1</div>
+                </div>
+            </div>
+            <div id="three" class="e-panel" data-row="0" data-col="1" data-sizeX="2" data-sizeY="2">
+                <span id="close" class="e-template-icon e-clear-icon"></span>
+                <div class="e-panel-container">
+                    <div class="text-align">2</div>
+                </div>
+            </div>
+            <div id="four" class="e-panel" data-row="2" data-col="1" data-sizeX="1" data-sizeY="1">
+                <span id="close" class="e-template-icon e-clear-icon"></span>
+                <div class="e-panel-container">
+                    <div class="text-align">3</div>
+                </div>
+            </div>
+            <div id="five" class="e-panel" data-row="2" data-col="2" data-sizeX="2" data-sizeY="1">
+                <span id="close" class="e-template-icon e-clear-icon"></span>
+                <div class="e-panel-container">
+                    <div class="text-align">4</div>
+                </div>
+            </div>
+            <div id="six" class="e-panel" data-row="0" data-col="3" data-sizeX="1" data-sizeY="1">
+                <span id="close" class="e-template-icon e-clear-icon"></span>
+                <div class="e-panel-container">
+                    <div class="text-align">5</div>
+                </div>
+            </div>
+            <div id="seven" class="e-panel" data-row="1" data-col="3" data-sizeX="1" data-sizeY="1">
+                <span id="close" class="e-template-icon e-clear-icon"></span>
+                <div class="e-panel-container">
+                    <div class="text-align">6</div>
+                </div>
+            </div>
+            <div id="eight" class="e-panel" data-row="0" data-col="4" data-sizeX="1" data-sizeY="3">
+                <span id="close" class="e-template-icon e-clear-icon"></span>
+                <div class="e-panel-container">
+                    <div class="text-align">7</div>
+                </div>
+            </div>
+        </ejs-dashboardlayout>
+    </div>`
 })
 
 export class AppComponent {
 }
+```
 
+* Import DashboardLayout module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-layouts`.
+
+```javascript
+import { NgModule }      from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+// import the DashboardLayoutModule for the Dashboard Layout component
+import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts';
+import { AppComponent }  from './app.component';
+
+@NgModule({
+  //declaration of ej2-angular-layouts module into NgModule
+  imports:      [ BrowserModule, DashboardLayoutModule ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
 ```
 
 ## Run the application
@@ -224,20 +238,17 @@ Now, modify the `template` in `app.component.ts` file to render DashboardLayout 
 `[src/app/app.component.ts]`
 
 ```typescript
-
-import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts'
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component,ViewEncapsulation } from '@angular/core';
 
 @Component({
-imports: [ DashboardLayoutModule],
-    standalone: true,
-    selector: 'app-root',
-    template: `
-    <div class="control-section">
-      <ejs-dashboardlayout id='defaultLayout' #defaultLayout [cellSpacing]='cellSpacing' [panels]='panels' [columns]="5">
-      </ejs-dashboardlayout>
-    </div>`,
-    encapsulation: ViewEncapsulation.None
+  selector: 'app-root',
+  styleUrls: ['app/default-style.css'],
+  template: `
+  <div class="control-section">
+    <ejs-dashboardlayout id='defaultLayout' #defaultLayout [cellSpacing]='cellSpacing' [panels]='panels' [columns]="5">
+    </ejs-dashboardlayout>
+  </div>`,
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   public cellSpacing: number[] = [10, 10];
@@ -250,7 +261,6 @@ export class AppComponent {
     { "sizeX": 1, "sizeY": 1, "row": 2, "col": 3, content: '<div class="content">6</div>' }
   ]
 }
-
 ```
 
 The following example shows a basic DashboardLayout by using the `panels` property.
