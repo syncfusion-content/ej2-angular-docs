@@ -136,7 +136,6 @@ For custom sort comparer example, refer to the [`Sort a range by custom list`] b
 
 ### Sort a range by custom list
 
-
 You can also define the sorting of cell values based on your own customized personal list. In this article, custom list is achieved using `custom sort comparer`.
 
 In the following demo, the `Trustworthiness` column is sorted based on the custom lists `Perfect`, `Sufficient`, and `Insufficient`.
