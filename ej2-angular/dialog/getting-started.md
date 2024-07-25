@@ -101,51 +101,20 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding Dialog module
-
-Once you have successfully installed the popups package, the component modules are ready to configure in your application from the installed location. Syncfusion Angular package provides two different types of ngModules.
-
-Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module/) to learn about `ngModules`.
-
-Refer to the following snippet to import the `DialogModule` in `app.module.ts` from the `@syncfusion/ej2-angular-popups`.
-
-```javascript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-// Imported syncfusion DialogModule from popups package
-import { DialogModule } from '@syncfusion/ej2-angular-popups';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    // Registering EJ2 Dialog Module
-    DialogModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-
-```
-
 ## Adding Dialog component
 
 Add the Dialog component snippet in `app.component.ts` as follows.
 
 ```javascript
 
-import { Component, ViewChild, OnInit, ElementRef  } from '@angular/core';
-import { DialogComponent } from '@syncfusion/ej2-angular-popups';
-import { EmitType } from '@syncfusion/ej2-base';
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
+imports: [        
+		DialogModule
+   ],
+  standalone: true,
   selector: 'app-root',
   template: `
     <div id="dialog-container">
@@ -156,11 +125,11 @@ import { EmitType } from '@syncfusion/ej2-base';
         </ejs-dialog>
     </div>`
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   // Create element reference for dialog target element.
-  @ViewChild('ejDialog') ejDialog: DialogComponent;
-  
-  public onOpenDialog = function(event: any): void {
+  @ViewChild('ejDialog') ejDialog: any;
+
+  public onOpenDialog = (event: any): void => {
       // Call the show method to open the Dialog
       this.ejDialog.show();
   };
