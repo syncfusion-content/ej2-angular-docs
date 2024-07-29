@@ -22,13 +22,16 @@ this.documentEditor.editor.insertComment('Test comment');
 
 ## Add a New Comment with Date, Author, and Status
 
-Comments can be inserted into the selected text with a specified date, author, and status.
+Comments can be inserted into the selected text with a specified date, author, and status [`insertComment`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#insertcomment).
 
 ```typescript
-// In this example, a comment with the text "Nancy Davolio" is added by the author Rachel Green on July 23, 2024, at 2:30 PM. The isResolved status is set to false.
+// In this example, a comment with the text "Hello world"
+// is added by the author Nancy Davolio on July 23, 2024, at 2:30 PM. 
+// The isResolved status is set to false.
 
 // Create a specific date: July 23, 2024, at 2:30:00 PM.
-let specificDate = new Date(2024, 6, 23, 14, 30, 0); // Note: July is represented by 6 (0-based index).
+// Note: July is represented by 6 (0-based index).
+let specificDate = new Date(2024, 6, 23, 14, 30, 0); 
 
 // Define the properties of the comment including author, date, and resolution status.
 let commentProperties: CommentProperties = { 
@@ -39,6 +42,41 @@ let commentProperties: CommentProperties = {
 
 // Insert the comment with the specified properties into the document editor.
 this.documentEditor.editor.insertComment('Hello world', commentProperties);
+```
+
+## Add a Reply Comment with Date, Author, and Status
+
+Reply comments can be inserted into the parent comment with a specified date, author using [`insertReplyComment`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#insertreplycomment).
+
+```typescript
+// In this example, a comment with the text "Hello world"
+// is added by the author Nancy Davolio on July 23, 2024, at 2:30 PM. 
+// The isResolved status is set to false.
+
+// Create a specific date: July 23, 2024, at 2:30:00 PM.
+// Note: July is represented by 6 (0-based index).
+let specificDate = new Date(2024, 6, 23, 14, 30, 0);
+
+// Define the properties of the comment including author, date, and resolution status.
+let commentProperties: CommentProperties = { 
+    author: 'Nancy Davolio',          // The author of the comment.
+    dateTime: specificDate,           // The date and time when the comment is created.
+    isResolved: false                 // The status of the comment; false indicates it is unresolved.
+};
+
+// Insert the comment with the specified properties into the Document Editor.
+let comment: Comment = this.documentEditor.editor.insertComment('Hello world', commentProperties);
+// Insert a reply comment with specified properties into the Document Editor
+this.documentEditor.editor.insertReplyComment(comment.id, 'Hello world', commentProperties);
+```
+
+## Get Comments
+
+Document Editor allows to get the comments along with its reply and comment properties using [`getComments`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/#getcomments).
+
+```typescript
+//Get Comments in the document along with the properties author, date, status.
+let commentinfo: CommentInfo[] = this.container.documentEditor.getComments();
 ```
 
 ## Comment navigation
@@ -55,10 +93,20 @@ this.documentEditor.selection.navigatePreviousComment();
 
 ## Delete comment
 
-Current comment can be be deleted using the below code snippet.
+Current comment can be deleted using [`deleteComment`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#deletecomment).
 
 ```typescript
-this.documentEditor.editor.deleteComment();
+//Delete the current selected comment.
+this.container.documentEditor.editor.deleteComment();
+
+//Get Comments in the document along with the properties author, date, status.
+let commentinfo: CommentInfo[] = this.container.documentEditor.getComments();
+
+//Delete the particular parent comments and all of its reply comments
+this.container.documentEditor.editor.deleteComment(commentinfo[0].id);
+
+//Delete the particular reply comment.
+this.container.documentEditor.editor.deleteComment(commentinfo[0].replies[0].id);
 ```
 
 ## Delete all comment
