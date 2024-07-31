@@ -25,7 +25,7 @@ standalone: true,
   providers: [FieldListService],
   styleUrls: ['./app.component.css'],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotfieldlist #pivotfieldlist id='PivotFieldList' [dataSourceSettings]=dataSourceSettings renderMode="Popup" (enginePopulated)='afterPopulate($event)' target='#fieldlisttarget' allowCalculatedField='true' (load)='onLoad()' (dataBound)='ondataBound()'></ejs-pivotfieldlist> <ejs-pivotview #pivotview id='PivotView' height='530' (enginePopulated)='afterEnginePopulate($event)' [gridSettings]='gridSettings'></ejs-pivotview> <div class="col-md-2"><button ej-button id='fieldlistbtn'>Open Field List</button></div><div id='fieldlisttarget'></div>`
+  template: `<button ej-button id='fieldlistbtn'>Open Field List</button><ejs-pivotfieldlist #pivotfieldlist id='PivotFieldList' [dataSourceSettings]=dataSourceSettings renderMode="Popup" (enginePopulated)='afterPopulate($event)' target='#fieldlisttarget' allowCalculatedField='true' (load)='onLoad()' (dataBound)='ondataBound()'></ejs-pivotfieldlist> <ejs-pivotview #pivotview id='PivotView' height='530' (enginePopulated)='afterEnginePopulate($event)' [gridSettings]='gridSettings'></ejs-pivotview> <div class="col-md-2"></div><div id='fieldlisttarget'></div>`
 })
 
 export class AppComponent {
@@ -93,6 +93,3 @@ export class AppComponent {
         };
     }
  }
-
-
-

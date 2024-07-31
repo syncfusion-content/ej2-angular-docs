@@ -6,7 +6,7 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 import { Component, OnInit } from '@angular/core';
 import { IDataOptions, IDataSet, PivotView } from '@syncfusion/ej2-angular-pivotview';
-import { DataManager, WebApiAdaptor, Query, ReturnOption, ODataAdaptor } from '@syncfusion/ej2-data';
+import { DataManager, ODataV4Adaptor, WebApiAdaptor, Query, ReturnOption, ODataAdaptor } from '@syncfusion/ej2-data';
 
 @Component({
 imports: [
@@ -27,11 +27,11 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.data = new DataManager({
-      url: 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders',
-      adaptor: new ODataAdaptor(),
+      url: 'https://services.odata.org/V4/Northwind/Northwind.svc/Orders',
+      adaptor: new ODataV4Adaptor(),
       crossDomain: true
     });
-    this.data.defaultQuery = new Query().take(2);
+    this.data.defaultQuery = new Query().take(10);
     this.width = '100%';
     this.dataSourceSettings = {
       dataSource: this.data,
@@ -39,8 +39,8 @@ export class AppComponent implements OnInit {
       columns: [{ name: 'CustomerID', caption: 'Customer ID' }],
       rows: [{ name: 'ShipCountry', caption: 'Ship Country' }, { name: 'ShipCity', caption: 'Ship City' }],
       values: [{ name: 'Freight' }]
-      };
-    }
+    };
+  }
 }
 
 

@@ -20,7 +20,7 @@ imports: [
 standalone: true,
   selector: 'app-container',
   providers: [FieldListService, ToolbarService ],
-  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' width=width showToolbar='true' [toolbar]='toolbarOptions'></ejs-pivotview></div>`
+  template: `<div><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings showFieldList='true' [width]=width showToolbar='true' [toolbar]='toolbarOptions'></ejs-pivotview></div>`
 })
 export class AppComponent implements OnInit {
   public dataSourceSettings?: IDataOptions;
