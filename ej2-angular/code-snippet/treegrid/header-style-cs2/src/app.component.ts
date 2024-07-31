@@ -6,7 +6,7 @@ import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 
 
 
-import { Component, OnInit,ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit,ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
 @Component({
 imports: [

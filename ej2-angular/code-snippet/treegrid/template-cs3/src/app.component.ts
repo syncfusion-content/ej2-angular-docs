@@ -7,7 +7,7 @@ import { SparklineAllModule, } from '@syncfusion/ej2-angular-charts'
 
 
 
-import { Component, OnInit , ViewChild} from '@angular/core';
+import { Component, OnInit ,} from '@angular/core';
 import { textdata } from './datasource';
 import { Sparkline } from '@syncfusion/ej2-angular-charts';
 import { TreeGridComponent,} from '@syncfusion/ej2-angular-treegrid'

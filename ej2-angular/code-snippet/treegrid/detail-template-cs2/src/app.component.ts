@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 
-import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation,} from '@angular/core';
 import {
   TreeGridComponent,
   DetailRowService,
@@ -14,13 +14,11 @@ import { Internationalization } from '@syncfusion/ej2-base';
 let instance: Internationalization = new Internationalization();
 
 @Component({
-imports: [
+  imports: [
         ButtonModule,
         TreeGridModule
     ],
-
-,
-standalone: true,
+  standalone: true,
   selector: 'app-container',
   encapsulation: ViewEncapsulation.None,
   template: `<ejs-treegrid #treegrid [dataSource]='data' height=317 width='auto'  childMapping= 'Children'  >

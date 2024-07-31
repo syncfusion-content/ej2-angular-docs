@@ -2,7 +2,7 @@ import { NgModule,ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { textdata } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { Internationalization } from '@syncfusion/ej2-base';

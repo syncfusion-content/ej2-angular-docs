@@ -5,7 +5,7 @@ import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular
 import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { RowDataBoundEventArgs } from '@syncfusion/ej2-grids';
 import { sampleData } from './datasource';

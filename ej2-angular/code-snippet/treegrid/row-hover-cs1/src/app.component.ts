@@ -6,7 +6,7 @@ import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { SwitchModule } from '@syncfusion/ej2-angular-buttons'
 
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { sampleData } from './datasource';
 

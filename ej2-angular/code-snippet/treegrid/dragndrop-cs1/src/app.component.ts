@@ -1,4 +1,4 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid'
 import { GridModule, PageService, SelectionService, RowDDService } from '@syncfusion/ej2-angular-grids'

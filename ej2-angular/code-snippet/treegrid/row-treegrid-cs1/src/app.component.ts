@@ -4,7 +4,7 @@ import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService,EditService } from '@syncfusion/ej2-angular-treegrid'
 import { CheckBoxModule} from '@syncfusion/ej2-angular-buttons'
 
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit,  ViewEncapsulation } from '@angular/core';
 import {
   EditSettingsModel,
   TreeGridComponent,

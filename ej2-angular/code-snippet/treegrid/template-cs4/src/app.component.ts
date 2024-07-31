@@ -6,7 +6,7 @@ import { ColorPickerModule } from '@syncfusion/ej2-angular-inputs'
 
 
 
-import { Component, OnInit , ViewChild} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { textdata } from './datasource';
 import { ColorPickerEventArgs } from '@syncfusion/ej2-angular-inputs';
 import { TreeGridComponent,} from '@syncfusion/ej2-angular-treegrid'

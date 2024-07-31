@@ -6,7 +6,7 @@ import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 
 
 
-import { Component, NgIterable, OnInit,ViewChild } from '@angular/core';
+import { Component, NgIterable, OnInit, } from '@angular/core';
 import { sampleData } from './datasource';
 import { ColumnModel } from '@syncfusion/ej2-angular-treegrid';
 @Component({

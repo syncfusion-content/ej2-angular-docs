@@ -5,7 +5,7 @@ import { PageService, SortService, FilterService,EditService } from '@syncfusion
 import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit,  ViewEncapsulation } from '@angular/core';
 import {
   EditSettingsModel,
   TreeGridComponent,

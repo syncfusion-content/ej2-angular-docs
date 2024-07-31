@@ -8,7 +8,7 @@ import {TextBoxModule} from '@syncfusion/ej2-angular-inputs'
 
 
 
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';

@@ -4,7 +4,7 @@ import { ButtonModule, CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
 import { enableRipple } from '@syncfusion/ej2-base'
 import { SwitchModule} from '@syncfusion/ej2-angular-buttons'
 import { FormsModule } from '@angular/forms'
-
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -13,13 +13,14 @@ imports: [
         ButtonModule,
         CheckBoxModule,
         SwitchModule,
-        FormsModule
+        FormsModule,
+        CommonModule
     ],
 
 
 standalone: true,
     selector: 'app-root',
-    styleUrls:['./style.css'],
+    styleUrls:['./styles.css'],
     template:`<div [ngClass]="{'e-dark-mode': isChecked, 'dark': isChecked}">
     <ejs-checkbox label="Enable Darkmode" (change)="toggleCheckbox()"></ejs-checkbox><br/>
    

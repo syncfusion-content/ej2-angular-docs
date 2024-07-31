@@ -1,4 +1,4 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridAllModule,PageService, SelectionService, RowDDService } from '@syncfusion/ej2-angular-treegrid'
 import {ButtonModule} from '@syncfusion/ej2-angular-buttons'

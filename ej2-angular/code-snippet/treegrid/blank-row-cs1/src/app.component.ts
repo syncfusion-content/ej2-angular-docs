@@ -4,7 +4,7 @@ import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
 import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { projectData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { RowDataBoundEventArgs, Column } from '@syncfusion/ej2-angular-grids';

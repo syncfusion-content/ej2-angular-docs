@@ -4,7 +4,7 @@ import { TreeGridAllModule,PageService, SelectionService, RowDDService } from '@
 import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 
-import { Component, ViewChild, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component,  OnInit, ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { RowDragEventArgs } from '@syncfusion/ej2-angular-grids';

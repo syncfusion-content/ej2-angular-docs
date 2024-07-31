@@ -6,7 +6,7 @@ import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 
 
 
-import { Component, OnInit , ViewChild} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { textdata } from './datasource';
 
 

@@ -7,7 +7,7 @@ import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 
 
 
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent, SortService, ColumnMenuService, PageService, FilterService } from '@syncfusion/ej2-angular-treegrid';
 import { FilterSettingsModel } from '@syncfusion/ej2-angular-treegrid';

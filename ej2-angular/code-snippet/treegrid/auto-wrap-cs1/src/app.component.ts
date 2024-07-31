@@ -6,7 +6,7 @@ import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 
 import {  TextWrapSettingsModel } from '@syncfusion/ej2-angular-grids';
 import {DropDownListModule} from '@syncfusion/ej2-angular-dropdowns';
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent,  WrapMode } from '@syncfusion/ej2-angular-treegrid';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';

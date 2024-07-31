@@ -4,7 +4,7 @@ import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 
 
 
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { formatData } from './datasource';
  
 @Component({

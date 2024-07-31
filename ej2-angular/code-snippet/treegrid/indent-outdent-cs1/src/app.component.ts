@@ -5,7 +5,7 @@ import { RowDDService, ToolbarService } from '@syncfusion/ej2-angular-treegrid'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 
-import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation,  } from '@angular/core';
 import { sampleData } from './datasource';
 
 @Component({
@@ -19,7 +19,7 @@ imports: [
 providers: [RowDDService, ToolbarService],
 standalone: true,
   selector: 'app-container',
-  template: `<ejs-treegrid [dataSource]='data'  [treeColumnIndex]='1' height='270' childMapping='subtasks'  [toolbar]='toolbarOptions' >
+  template: `<ejs-treegrid [dataSource]='data'  [treeColumnIndex]='1' height='270' childMapping='subtasks'  [selectedRowIndex]='2' [toolbar]='toolbarOptions' >
                 <e-columns>
                     <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
                     <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>

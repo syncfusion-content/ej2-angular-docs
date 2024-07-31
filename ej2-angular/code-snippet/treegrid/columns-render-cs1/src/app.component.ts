@@ -6,7 +6,7 @@ import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 
 
 
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { TreeGridComponent, ReorderService } from '@syncfusion/ej2-angular-treegrid';

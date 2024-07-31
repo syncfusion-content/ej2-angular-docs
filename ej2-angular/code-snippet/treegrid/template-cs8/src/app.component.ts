@@ -7,7 +7,7 @@ import { DialogModule } from '@syncfusion/ej2-angular-popups'
 
 
 
-import { Component, OnInit , ViewChild} from '@angular/core';
+import { Component, OnInit , } from '@angular/core';
 import { textdata } from './datasource';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
