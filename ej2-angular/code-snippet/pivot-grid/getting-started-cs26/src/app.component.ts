@@ -25,25 +25,22 @@ export class AppComponent implements OnInit {
   public data?: DataManager;
   public width?: string;
 
-    ngOnInit(): void {
-
-        this.data = new DataManager({
-          url: 'https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/',
-          adaptor: new ODataAdaptor,
-          crossDomain: true
-        }).executeQuery(new Query().take(8)).then((e: ReturnOption) => {
-          this.dataSourceSettings = {
-            dataSource: this.data,
-            expandAll: true,
-            filters: [],
-            columns: [{ name: 'OrderDate'}, { name: 'ShipCity' }],
-            rows: [{ name: 'OrderID' }, { name: 'CustomerID' }],
-            values: [{ name: 'Freight' }]
-          }
-        }) as any;
-
-        this.width = '100%';
+  ngOnInit(): void {
+    this.data = new DataManager({
+      url: 'https://services.syncfusion.com/js/production/api/Orders',
+      adaptor: new ODataAdaptor,
+      crossDomain: true
+    })
+    this.dataSourceSettings = {
+      dataSource: this.data,
+      expandAll: true,
+      filters: [],
+      columns: [{ name: 'OrderDate' }, { name: 'ShipCity' }],
+      rows: [{ name: 'OrderID' }, { name: 'CustomerID' }],
+      values: [{ name: 'Freight' }]
     }
+    this.width = '100%';
+  }
 }
 
 

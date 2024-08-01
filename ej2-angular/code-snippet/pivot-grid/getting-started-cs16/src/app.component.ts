@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
             filters: [],
             conditionalFormatSettings: [
                 {
-                    measure: 'In_Stock',
+                    measure: 'Sold',
                     value1: 5000,
                     conditions: 'LessThan',
                     style: {

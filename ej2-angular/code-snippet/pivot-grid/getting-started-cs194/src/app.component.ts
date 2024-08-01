@@ -19,7 +19,7 @@ standalone: true,
   selector: 'app-container',
   providers: [FieldListService, CalculatedFieldService],
   // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width allowCalculatedField='true' showFieldList='true'></ejs-pivotview>`
+  template: `<ejs-pivotview #pivotview id='PivotView' height='600' [dataSourceSettings]=dataSourceSettings [width]=width allowCalculatedField='true' showFieldList='true'></ejs-pivotview>`
 })
 export class AppComponent {
     public dataSourceSettings?: IDataOptions;

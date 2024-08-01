@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Icons in Angular Appearance component
+# Predefined Icons Library in Syncfusion Angular Component
 
 Syncfusion's icon library is a collection of pre-designed icons that can be used to enhance the user interface of an application. This pre-designed icons are set of `base64` formatted font icons. Utilizing this icon library can make it simpler to create a cohesive, visually pleasing design for an application.
 
@@ -160,6 +160,10 @@ The complete package of Essential JS 2 icons is listed below. The corresponding 
 
 <!-- markdownlint-disable MD033 -->
 
+### Material 3
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/material3/demo.html" style="height:1000px;width:100%;"></iframe>
+
 ### Bootstrap 5
 
 <iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/bootstrap5/demo.html" style="height:1000px;width:100%;"></iframe>
@@ -187,6 +191,10 @@ The complete package of Essential JS 2 icons is listed below. The corresponding 
 ### High Contrast
 
 <iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/highcontrast/demo.html" style="height:1000px;width:100%;"></iframe>
+
+### Fluent 2
+
+<iframe class="doc-sample-frame" src="https://ej2.syncfusion.com/products/icons/fluent2/demo.html" style="height:1000px;width:100%;"></iframe>
 
 ### Fluent
 

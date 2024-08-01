@@ -388,7 +388,7 @@ public async Task<ActionInfo> UpdateAction([FromBody] ActionInfo param)
 {
     try
     {
-        ActionInfo modifiedAction = AddOperationsToTable(param);
+        ActionInfo modifiedAction = AddOperationsToCache(param);
         //After transformation broadcast changes to all users in the gropu
         await _hubContext.Clients.Group(param.RoomName).SendAsync("dataReceived", "action", modifiedAction);
         return modifiedAction;
@@ -399,7 +399,7 @@ public async Task<ActionInfo> UpdateAction([FromBody] ActionInfo param)
     }
 }
 
-private ActionInfo AddOperationsToTable(ActionInfo action)
+private ActionInfo AddOperationsToCache(ActionInfo action)
  {
      int clientVersion = action.Version;
      string insertScript = "-------"
