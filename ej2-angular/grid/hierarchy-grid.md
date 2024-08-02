@@ -38,6 +38,7 @@ The following example demonstrates how to enable the hierarchy feature in the gr
 
 > * Grid supports n level of child grids.
 > * Hierarchical binding is not supported when [DetailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#detailtemplate) is enabled.
+> * In Syncfusion Grid component, searching operates independently for parent and child grids. Searching within the parent grid filters only parent records, and similarly, searching within the child grid filters only child records. The component does not support simultaneous searching across both parent and child grids.
 
 ## Bind hierarchy grid with different field
 
@@ -184,6 +185,25 @@ The following example demonstrates how to obtain parent details in a child grid 
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/default-cs16" %}
+
+## Render aggregates in child grid
+
+The Aggregates feature in the Syncfusion angular Grid component allows you to display aggregate values in the footer, group footer, and group caption of the child grid. With this feature, you can easily perform calculations on specific columns and show summary information. 
+
+Rendering aggregates in a child grid involves displaying summary data at the footer or group caption of the grid. This can be particularly useful in hierarchical grids where each child grid represents detailed data that needs to be summarized.
+
+The following example demonstrates how to render aggregates in a child grid to display the sum and maximum values of the **Freight** column.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/child-grid-aggregate/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/child-grid-aggregate/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/child-grid-aggregate" %}
 
 ## Expand all by external button
 
