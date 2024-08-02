@@ -75,6 +75,76 @@ This is demonstrated in the following sample:
   
 {% previewsample "page.domainurl/samples/grid/toolbaricon-cs1" %}
 
+### Customize the built-in toolbar items
+
+The Syncfusion Angular Grid component allows you to customize the built-in toolbar items to meet your specific requirements. This can include adding, removing, or modifying toolbar items, as well as handling custom actions when toolbar buttons are clicked.
+
+To customize the built-in toolbar items, you can use the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event of the grid.
+
+The following example demonstrate how to customize the toolbar by disabling and canceling the **Add** button functionlity and showing a custom message when the **Add** button of toolbar is clicked.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, ToolbarService, ToolbarItems, EditSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+
+@Component({
+imports: [GridModule],
+
+providers: [ToolbarService],
+standalone: true,
+    selector: 'app-root',
+    template: `
+    <div style="margin-left:180px"><p style="color:red;" id="message">{{message}}</p></div>
+    <ejs-grid id='Grid' [dataSource]='data' height='270px' [toolbar]='toolbar' [editSettings]='editSettings' (toolbarClick)='clickHandler($event)'>
+        <e-columns>
+            <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+            <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
+            <e-column field='ShipCity' headerText='Ship City' width=100></e-column>
+            <e-column field='ShipName' headerText='Ship Name' width=120></e-column>
+        </e-columns>
+    </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data?: object[];
+    public toolbar?: ToolbarItems[] | object;
+    public editSettings?: EditSettingsModel;
+    public message?: string;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
+        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+    }
+
+    clickHandler(args: ClickEventArgs): void {
+        if (args.item.id === 'Grid_add') { // 'Grid_add' -> Grid component id + _ + toolbar item name
+            args.cancel = true;
+            const newRecord = {
+                OrderID: 10247,
+                CustomerID: 'TOMSP',
+                ShipName: 'Hanari Carnes',
+                ShipCity: 'Lyon',
+            };
+            (this.grid as GridComponent).addRecord(newRecord);
+            this.message = 'The default adding action is cancelled, and a new record is added using the addRecord method.';
+        }
+    }
+}
+{% endraw %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/toolbar-customization/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/toolbar-customization" %}
+
 ## Custom toolbar items
 
 Adding custom toolbar items to the Syncfusion Angular Grid involves incorporating personalized functionality into the toolbar.
