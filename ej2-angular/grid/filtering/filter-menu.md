@@ -169,6 +169,31 @@ You can prevent autofill feature by setting the [autofill](https://ej2.syncfusio
   
 {% previewsample "page.domainurl/samples/grid/filter-menu-cs7" %}
 
+## Hide default filter icons while perform filtering through method
+
+When performing filtering programmatically using methods in the Syncfusion Angular Grid component, you may want to hide the default filter icons to provide a simpler interface.
+
+To customize the filter icon in the Grid, use the **display** property of the **filtermenu** as mentioned below
+
+```css
+.e-filtermenudiv.e-icons.e-icon-filter {
+    display: none;
+}
+```
+
+The following example demonstrate how to hide the default filter icons while filtering the **CustomerID** column programmatically using a method.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/filter-menu-icon/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/filter-menu-icon/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/filter-menu-icon" %}
+
 ## Filter menu events
 
 The Syncfusion Angular Grid offers the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) events, which provide information about the actions being performed. Within the event handlers, you receive an argument named `requestType`. This argument specifies the [action](https://ej2.syncfusion.com/angular/documentation/api/grid/action/) that is being executed, such as `filterbeforeopen`, `filterafteropen`, or `filtering`. By analyzing this action type, you can implement custom logic or showcase messages.
