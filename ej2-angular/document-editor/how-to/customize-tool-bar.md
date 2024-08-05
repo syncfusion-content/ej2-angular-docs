@@ -37,7 +37,7 @@ export class AppComponent {
     public toolItem: CustomToolbarItemModel = {
           prefixIcon: "e-de-ctnr-lock",
           tooltipText: "Disable Image",
-          text: "Disable Image",
+          text: this.onWrapText("Disable Image"),
           id: "Custom"
     };
     public items = [this.toolItem, 'Undo', 'Redo', 'Separator', 'Image', 'Table', 'Hyperlink', 'Bookmark', 'TableOfContents', 'Separator', 'Header', 'Footer', 'PageSetup', 'PageNumber', 'Break', 'InsertFootnote', 'InsertEndnote', 'Separator', 'Find', 'Separator', 'Comments', 'TrackChanges', 'Separator', 'LocalClipboard', 'RestrictEditing', 'Separator', 'FormFields', 'UpdateFields','ContentControl'];
@@ -49,6 +49,18 @@ export class AppComponent {
                 break;
         }
     };
+    private onWrapText(text: string): string {
+    let content: string = '';
+      const index: number = text.lastIndexOf(' ');
+  
+      if (index !== -1) {
+          content = text.slice(0, index) + "<div class='e-de-text-wrap'>" + text.slice(index + 1) + "</div>";
+      } else {
+          content = text;
+      }
+  
+      return content;
+  }
 }
 ```
 
