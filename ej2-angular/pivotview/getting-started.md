@@ -31,8 +31,20 @@ Start a new Angular application using below Angular CLI command.
 
 ```bash
 ng new my-app
+```
+
+This command will prompt you for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
+
+![Initial_setup](images/Initial-setup.png)
+
+By default, it will create a CSS-based application.
+
+Next, navigate to the created project folder:
+
+```
 cd my-app
 ```
+
 
 ## Dependencies
 
