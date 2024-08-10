@@ -508,3 +508,5 @@ The event [`exportComplete`](https://ej2.syncfusion.com/angular/documentation/ap
 ## See Also
 
 * [Excel Exporting](./excel-export)
+
+* [Pdf Exporting](https://www.syncfusion.com/blogs/post/pdf-exporting-angular-pivot-table)
