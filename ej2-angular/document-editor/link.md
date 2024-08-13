@@ -152,5 +152,5 @@ You can use the following keyboard shortcut to open the hyperlink dialog if the 
 
 ## See Also
 
-* [Feature modules](../document-editor/feature-module/)
+* [Feature modules](https://ej2.syncfusion.com/angular/documentation/document-editor/feature-module)
 * [Hyperlink dialog](../document-editor/dialog#hyperlink-dialog)
