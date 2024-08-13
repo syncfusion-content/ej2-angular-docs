@@ -42,11 +42,14 @@ No, the Syncfusion license keys won't expire for a particular version and you ca
 
 ## When to generate new license key while upgrading
 
-You don't have to generate and change license keys for minor version upgrades. If you upgrade from one major version and another major version, you have to generate new license keys and register in the application.
+You don't need to generate and change license keys for minor version upgrades. However, when upgrading from one major version to another major version, you must generate a new license key and update it in your application.
 
 For example,
-* If you upgrade to weekly releases or the SP release in the same major version, you don't have to change license such as if you upgrade from the `20.1.47` version to `20.1.*` you don't have to change the license keys.
-* If you upgrade from one major version to another major version, you have to generate new license keys for the latest version and change in the application, such as if you upgrade from the `20.1.*` version to `20.2.*,` you have to generate new license keys for the latest version and change in the application.
+* If you are using a version like `25.1.X`, it is important to use the same version for all Syncfusion components in your application. The license key generated for version `25.X.XX` can be used. This key can be used across all minor versions within that major version, `v25`. This means you can upgrade all packages to `25.2.X` while still using the same license key.
+
+* However, if you upgrade from one major version to another—such as from `25.1.X` to `26.1.X`—you will need to generate a new license key for the latest version and update it in your application.
+
+>Note: The above-mentioned guidelines are not applicable to our packages on version `20.X.XX`, where `20.1` denotes one major version and `20.2` another major version. However, starting with our release version 21, we have adjusted the pattern. So if you are using `20.1.X`, when you upgrade to `20.2.X`, you have to generate new license keys for `20.2.X` and change in the application. Therefore, these guidelines apply to versions `21` and later.
 
 ## License registration for multiple developers on your project
 
