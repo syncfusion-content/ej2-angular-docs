@@ -53,25 +53,6 @@ npm install @syncfusion/ej2-angular-richtexteditor --save
 
 > The **--save** will instruct NPM to include the rich text editor package inside of the **dependencies** section of the **package.json**.
 
-## Registering Rich Text Editor Module
-
-Import Rich Text Editor module into Angular application(app.module.ts) from the package **@syncfusion/ej2-angular-richtexteditor** [src/app/app.module.ts].
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent }  from './app.component';
-// import the RichTextEditorModule for the Rich Text Editor component
-import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor';
-
-@NgModule({
-  //declaration of ej2-angular-richtexteditor module into NgModule
-  imports:      [ BrowserModule, RichTextEditorModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
 ## Adding CSS reference
 
 The following CSS files are available in **../node_modules/@syncfusion** package folder.
@@ -100,7 +81,12 @@ Modify the template in the [src/app/app.component.ts] file to render the Rich Te
 
 import { Component } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
 @Component({
+  imports: [
+    RichTextEditorAllModule
+  ],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-richtexteditor id='defaultRTE'>
   <ng-template #valueTemplate>
@@ -128,8 +114,6 @@ export class AppComponent {
 }
 
 ```
-
-
 
 ## Module Injection
 

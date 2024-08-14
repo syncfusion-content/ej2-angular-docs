@@ -12,6 +12,10 @@ domainurl: ##DomainURL##
 
 The Slider component is available in `@syncfusion/ej2-angular-inputs` package. Utilize this package to render the Slider Component.
 
+To get start quickly with Angular Range slider, you can check on this video:
+
+{% youtube "https://www.youtube.com/watch?v=_PInU4vTumk" %}
+
 ## Setting up angular project
 
 Angular provides the easiest way to set angular CLI projects using [`Angular CLI`](https://github.com/angular/angular-cli) tool.
