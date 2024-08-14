@@ -21,7 +21,7 @@ standalone: true,
   selector: 'app-container',
   providers: [FieldListService],
   // specifies the template string for the pivot table component
-  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width showFieldList='true' (dataBound)='ondataBound($event)'></ejs-pivotview></div><a id="save" class="btn btn-primary">Save</a><div class="fileUpload btn btn-primary"><span>Load</span><input id="files" type="file" class="upload" /></div>`,
+  template: `<div style="height: 480px;"><ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width showFieldList='true'></ejs-pivotview></div><a id="save" class="btn btn-primary" (click)="saveData()">Save</a><div class="fileUpload btn btn-primary"><span>Load</span><input id="files" type="file" class="upload" (change)="readBlob($event)"/></div>`,
   styleUrls: ['./app.component.css']
 })
 
@@ -32,31 +32,6 @@ export class AppComponent {
     @ViewChild('pivotview', {static: false})
     public pivotGridObj?: PivotView;
     public width?: string;
-
-    ondataBound(args: any) {
-       var dataSource = JSON.parse(this.pivotGridObj!.getPersistData()).dataSourceSettings.dataSource;
-        var a = document.getElementById('save') as HTMLElement ;
-        var mime_type = 'application/octet-stream'; // text/html, image/png, et c
-        a.setAttribute('download', 'pivot.JSON');
-        (a as any).href = 'data:'+ mime_type +';base64,'+ btoa(JSON.stringify(dataSource) || '');
-        (document.getElementById('files') as HTMLElement).addEventListener('change', this.readBlob, false);
-    }
-
-    readBlob(args: any) {
-        var files = (document.getElementById('load') as any).files;
-        var file = files[0];
-        var start = 0;
-        var stop = file.size - 1;
-        var reader = new FileReader();
-        var $this = this;
-        reader.onloadend = function(evt: any) {
-            if (evt!.target.readyState == FileReader.DONE) {
-                $this.pivotGridObj!.dataSourceSettings.dataSource = JSON.parse(evt.target.result);
-            }
-        };
-        var blob = file.slice(start, stop + 1);
-        reader.readAsBinaryString(blob);
-    }
 
     ngOnInit(): void {
         this.dataSourceSettings = {
@@ -72,6 +47,37 @@ export class AppComponent {
         };
         this.width = "100%";
     }
- }
+
+    saveData(): void {
+      if(this.pivotGridObj)
+      {
+      const dataSource = JSON.parse(this.pivotGridObj?.getPersistData()).dataSourceSettings;
+      const a: HTMLAnchorElement = document.createElement('a');
+      const mime_type = 'application/octet-stream';
+      a.setAttribute('download', 'pivot.JSON');
+      a.href = 'data:' + mime_type + ';base64,' + btoa(JSON.stringify(dataSource) || '');
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      }
+    }
+  
+    // Read and load data from JSON file
+    readBlob(event: Event): void {
+      const input = event.target as HTMLInputElement;
+      const file = input.files?.[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onloadend = (evt: ProgressEvent<FileReader>) => {
+          if (evt.target?.readyState === FileReader.DONE) {
+            const result = evt.target.result as string;
+            this.pivotGridObj!.dataSourceSettings = JSON.parse(result);
+          }
+        };
+        reader.readAsText(file);
+      }
+      input.value = '';
+    }
+  }
 
 
