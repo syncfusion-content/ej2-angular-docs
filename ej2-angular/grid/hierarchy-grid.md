@@ -297,7 +297,7 @@ To customize the appearance of the chid grid header root element, you can use th
 ```
 In this example, the **.e-detailcell** class targets the child grid and **.e-headercontent** targets its header root element. You can modify the `border` property to change the style of the header border. This customization allows you to override the thin line between the header and content of the child grid.
 
-![Child grid header](images/child-grid-header.png)
+![Child header Grid in Angular.](images/angular-grid-child-header.png)
 
 **Customizing the child grid header cell**
 
@@ -311,7 +311,7 @@ To customize the appearance of the grid header cell elements, you can use the fo
 ```
 In this example, the **.e-headercell** class targets the header cell elements. You can modify the `color` and `background-color` properties to change the text color and background of the child grid's header cells.
 
-![Child grid header cell](images/child-grid-header-cell.png)
+![Customize the child Grid header cell in Angular.](images/angular-grid-child-header-cell.png)
 
 **Customizing the child grid header cell div element**
 
@@ -326,7 +326,7 @@ To customize the appearance of the child grid header cell div element, you can u
 ```
 In this example, the **.e-headercelldiv** class targets the div element within the header cell of the child grid. You can modify the `font-size`, `font-weight`, `color` properties to change the font size, font-weight and color of the header text content.
 
-![Child grid header cell div element](images/child-grid-header-cell-div-element.png)
+![Child Grid header cell div element in Angular.](images/angular-grid-child-header-cell-div-element.png)
 
 ### Paging
 
@@ -344,7 +344,7 @@ To customize the appearance of the child grid pager root element, you can use th
 ```
 In this example, the **.e-detailcell** class targets the child grid and the **.e-gridpager** class targets the pager root element. You can modify the `font-family` to change the font family and `background-color` property to change the background color of the pager.
 
-![Child grid pager root element](images/child-grid-pager-root-element.png)
+![Angular Grid pager root element.](images/angular-grid-pager-root-element.png)
 
 **Customizing the child grid pager container element**
 
@@ -359,7 +359,7 @@ To customize the appearance of the child grid pager container element, you can u
 
 In this example, the **.e-pagercontainer** class targets the pager container element. You can modify the `border` property and `font-family` property to change the border color and font family of the pager container.
 
-![Child grid pager container element](images/child-grid-pager-container-element.png)
+![Angular Grid pager container element.](images/angular-grid-child-pager-container-element.png)
 
 **Customizing the child grid pager navigation elements**
 
@@ -380,7 +380,7 @@ To customize the appearance of the child grid pager navigation elements, you can
 
 In this example, the classes **.e-prevpagedisabled, .e-prevpage, .e-nextpage, .e-nextpagedisabled, .e-lastpagedisabled, .e-lastpage, .e-firstpage,** and **.e-firstpagedisabled** target the various pager navigation elements of the child grid. You can modify the `background-color` property to change the background color of these elements.
 
-![Child grid pager navigation elements](images/child-grid-pager-navigation-element.png)
+![Angular Grid pager navigation elements.](images/angular-grid-child-pager-navigation-element.png)
 
 **Customizing the child grid pager page numeric link elements**
 
@@ -401,7 +401,7 @@ To customize the appearance of the child grid pager current page numeric link el
 
 In this example, the **.e-numericitem** class targets the page numeric link elements. You can modify the `background-color`, `color` properties to change the background color and text color of these elements.
 
-![Child grid pager page numeric link elements](images/child-grid-pager-page-numeric-link-elements.png)
+![Angular Grid pager numeric link elements.](images/angular-grid-child-page-numeric-link-elements.png)
 
 **Customizing the child grid pager current page numeric element**
 
@@ -416,7 +416,7 @@ To customize the appearance of the child grid pager current page numeric element
 
 In this example, the **.e-currentitem** class targets the current page numeric item. You can modify the `background-color` property to change the background color of this element and `color` property to change the text color.
 
-![Child grid pager current page numeric element](images/child-grid-pager-current-page-numeric-element.png)
+![Angular Grid current pager numeric element.](images/angular-grid-child-current-page-numeric-element.png)
 
 ### Sorting
 
@@ -439,7 +439,7 @@ To customize the sorting icon that appears in the child grid header when sorting
 ```
 In this example, the **.e-detailcell** class targets the child grid and the **.e-icon-ascending::before** class targets the sorting icon for ascending order, and the **.e-icon-descending::before** class targets the sorting icon for descending order.
 
-![Child grid sorting icon](images/child-grid-sorting-icons.png)
+![Angular Grid sorting icon.](images/angular-grid-child-sorting-icons.png)
 
 **Customizing the child grid multi sorting icon**
 
@@ -454,7 +454,7 @@ To customize the multi sorting icon that appears in the child grid header when m
 
 In this example, the **.e-sortnumber** class targets the background color and font family of the multi sorting icon. You can modify the `background-color` and `font-family` properties to customize the appearance of the multi sorting icon.
 
-![Child grid multi sorting icon](images/child-grid-multi-sorting-icon.png)
+![Angular Grid multi sorting icon.](images/angular-grid-child-multi-sorting-icon.png)
 
 ### Filtering
 
@@ -472,7 +472,7 @@ To customize the appearance of the filter bar cell element in the child grid hea
 ```
 In this example, the **.e-detailcell** class targets the child grid and the **.e-filterbarcell** class targets the filter bar cell element in the child grid header. You can modify the `background-color` property to change the color of the filter bar cell element.
 
-![Child gird filter bar cell element](images/child-grid-filter-bar-cell-element.png)
+![Angular Grid filter bar cell element.](images/angular-grid-child-filter-bar-cell-element.png)
 
 **Customizing the child grid filter bar input element**
 
@@ -485,7 +485,7 @@ To customize the appearance of the filter bar input element in the child grid he
 ```
 In this example, the **.e-filterbarcell** class targets the filter bar cell element, and the **.e-input** class targets the input element within the cell. You can modify the `font-family` property to change the font of the filter bar input element.
 
-![Child gird filter bar input element](images/child-grid-filter-bar-input-element.png)
+![Angular Grid filter bar input element.](images/angular-grid-child-filter-bar-input-element.png)
 
 **Customizing the child grid filter bar input focus**
 
@@ -498,7 +498,7 @@ To customize the appearance of the child grid's filter bar input element's focus
 ```
 In this example, the **.e-filterbarcell** class targets the filter bar cell element, and the **.e-input-group.e-input-focus** class targets the focused input element. You can modify the `background-color` property to change the color of the focus highlight.
 
-![Child gird filter bar input focus](images/child-grid-filter-bar-input-element-focus.png)
+![Angular Grid filter bar input focus.](images/angular-grid-child-filter-bar-input-element-focus.png)
 
 **Customizing the child grid filter bar input clear icon**
 
@@ -511,7 +511,7 @@ To customize the appearance of the child grid's filter bar input element's clear
 ```
 In this example, the **.e-clear-icon** class targets the clear icon element within the input group. You can modify the `content` property to change the icon displayed.
 
-![Child gird filter bar input clear icon](images/child-grid-filter-bar-input-clear-icon.png)
+![Angular Grid filter bar input clear icon.](images/angular-grid-filter-bar-input-clear-icon.png)
 
 **Customizing the child grid child grid filtering icon**
 
@@ -524,7 +524,7 @@ To customize the appearance of the filtering icon in the child grid header, you 
 ```
 In this example, the **.e-icon-filter** class targets the filtering icon element. You can modify the `content` property to change the icon displayed.
 
-![Child gird filtering icon](images/child-grid-filtering-icon.png)
+![Angular Grid filtering icon.](images/angular-grid-child-filtering-icon.png)
 
 **Customizing the child grid filter dialog content**
 
@@ -537,7 +537,7 @@ To customize the appearance of the child grid's filter dialog's content element,
 ```
 In this example, the **.e-filter-popup .e-dlg-content** classes target the content element within the filter dialog. You can modify the `background-color` property to change the color of the dialog's content.
 
-![Child grid filter dialog content](images/child-grid-filter-dialog-content.png)
+![Angular Grid filter dialog content.](images/angular-grid-child-filter-dialog-content.png)
 
 **Customizing the child grid filter dialog footer**
 
@@ -550,7 +550,7 @@ To customize the appearance of the child grid's filter dialog's footer element, 
 ```
 In this example, the **.e-filter-popup .e-footer-content** classes target the footer element within the filter dialog. You can modify the `background-color` property to change the color of the dialog's footer.
 
-![Child grid filter dialog footer](images/child-grid-filter-dialog-footer.png)
+![Angular Grid filter dialog footer.](images/angular-grid-filter-dialog-footer.png)
 
 **Customizing the child grid filter dialog input element**
 
@@ -563,7 +563,7 @@ To customize the appearance of the child grid's filter dialog's input elements, 
 ```
 In this example, the **.e-filter-popup** class targets the filter dialog, and the **.e-input** class targets the input elements within the dialog. You can modify the `font-family` property to change the font of the input elements.
 
-![Child grid filter dialog input element](images/child-grid-filter-dialog-input-element.png)
+![Angular Grid filter dialog input element.](images/angular-grid-child-filter-dialog-input-element.png)
 
 **Customizing the child grid filter dialog button element**
 
@@ -576,7 +576,7 @@ To customize the appearance of the child grid's filter dialog's button elements,
 ```
 In this example, the **.e-filter-popup** class targets the filter dialog, and the **.e-btn** class targets the button elements within the dialog. You can modify the `font-family` property to change the font of the button elements.
 
-![Child grid filter dialog button element](images/child-grid-filter-dialog-button-element.png)
+![Angular Grid filter dialog button element.](images/angular-grid-child-filter-dialog-button-element.png)
 
 **Customizing the child grid excel filter dialog number filters element**
 
@@ -589,7 +589,7 @@ To customize the appearance of the excel filter dialog's number filters in the c
 ```
 In this example, the **.e-filter-popup .e-contextmenu-wrapper** ul classes target the number filter elements within the excel filter dialog. You can modify the `background-color` property to change the color of these elements.
 
-![Child grid excel filter dialog number filters element](images/child-grid-excel-filter-dialog-number-filters-element.png)
+![Angular Grid excel filter dialog number filters element.](images/angular-grid-child-excel-filter-dialog-element.png)
 
 ### Grouping
 
@@ -606,7 +606,7 @@ To customize the appearance of the child grid's group header element, you can us
 ```
 In this example, the **.e-detailcell** class targets the child grid and the **.e-groupdroparea** class targets the group header element. You can modify the `background-color` property to change the color of the group header.
 
-![Child grid group header](images/child-grid-group-header.png)
+![Child Grid group header in Angular.](images/angular-grid-child-group-header.png)
 
 **Customizing the child grid group expand or collapse icons**
 
@@ -623,7 +623,7 @@ To customize the appearance of the group expand/collapse icons in the child grid
 
 In this example, the **.e-icon-gdownarrow** and **.e-icon-grightarrow** classes target the expand and collapse icons, respectively. You can modify the `content` property to change the icon displayed. You can use the available Syncfusion icons based on your theme.
 
-![Child grid group expand or collapse icons](images/child-grid-group-expand-or-collapse-icons.png)
+![Child Grid group expand or collapse icons in Angular.](images/angular-grid-child-group-expand-or-collapse-icons.png)
 
 **Customizing the child grid group caption row**
 
@@ -642,7 +642,7 @@ To customize the appearance of the child grid's group caption row and the icons 
 
 In this example, the **.e-groupcaption** class targets the group caption row element, and the **.e-recordplusexpand** and **.e-recordpluscollapse** classes target the icons indicating record expansion or collapse. You can modify the `background-color` property to change the color of these elements.
 
-![Child grid group caption row](images/child-grid-group-caption-row.png)
+![Child Grid group caption row in Angular.](images/angular-child-grid-group-caption-row.png)
 
 **Customizing the child grid grouping indent cell**
 
@@ -656,7 +656,7 @@ To customize the appearance of the child grid's grouping indent cell element, yo
 
 In this example, the **.e-indentcell** class targets the grouping indent cell element. You can modify the `background-color` property to change the color of the indent cell.
 
-![Child grid grouping indent cell](images/child-grid-indent-cell.png)
+![child Grid grouping indent cell in Angular.](images/angular-child-grid-indent-cell.png)
 
 ### Toolbar
 
@@ -674,7 +674,7 @@ To customize the appearance of the child grid's toolbar root element, you can us
 
 In this example, the **.e-detailcell** class targets the child grid and the **.e-toolbar-items** class targets the background color of the toolbar root element. You can modify the `background-color` property to change the background color of the toolbar.
 
-![Child grid toolbar root element](images/child-grid-toolbar-root-element.png)
+![Child Grid toolbar root element in Angular.](images/angular-child-grid-toolbar-root-element.png)
 
 **Customizing the child grid toolbar button element**
 
@@ -688,7 +688,7 @@ To customize the appearance of the child grid's toolbar buttons, you can use the
 
 In this example, the **.e-toolbar .e-btn** selector targets the background color of the toolbar button elements. You can modify the `background-color` property to change the background color of the toolbar buttons.
 
-![Child grid toolbar button element](images/child-grid-toolbar-button-element.png)
+![Child Grid toolbar button element in Angular.](images/angular-child-grid-toolbar-button-element.png)
 
 ### Editing
 
@@ -706,8 +706,8 @@ To customize the appearance of edited and added row table elements in the child 
 ```
 In this example, the **.e-detailcell** class targets the child grid and the .**e-editedrow** class represents the edited row element, and the **.e-addedrow** class represents the added row element. You can modify the `background-color` property to change the color of these row table elements.
 
-![Child grid customizing the edited row element](images/child-grid-edited-row-element.png)
-![Child grid customizing the added row element](images/child-grid-added-row-element.png)
+![Child Grid customizing the edited row element in Angular.](images/angular-child-grid-edited-row-element.png)
+![Child Grid customizing the added row element in Angular.](images/angular-child-grid-added-row-element.png)
 
 **Customizing the child grid edited row input element**
 
@@ -721,7 +721,7 @@ To customize the appearance of edited row input elements in the child grid, you 
 ```
 In this example, the **.e-editedrow** class represents the edited row element, and the **.e-input** class represents the input elements within the form. You can modify the `font-family` property to change the font and `color` property  to change text color of the input elements.
 
-![Child grid customizing the edited row input element](images/child-grid-edited-row-input-element.png)
+![Child Grid customizing the edited row input element in Angular.](images/angular-child-grid-edited-row-input-element.png)
 
 **Customizing the child grid edit dialog header element**
 
@@ -734,7 +734,7 @@ To customize the appearance of the edit dialog header element in the child grid,
 ```
 In this example, the **.e-edit-dialog** class represents the edit dialog, and the **.e-dlg-header-content** class targets the header content within the dialog. You can modify the `background-color` property to change the color of the header element.
 
-![Child grid customizing the edit dialog header element](images/child-grid-edit-dialog-header-element.png)
+![Child Grid customizing the edit dialog header element in Angular.](images/angular-child-grid-edit-dialog-header-element.png)
 
 **Customizing the child grid edited row input element in dialog edit mode**
 
@@ -747,7 +747,7 @@ To customize the appearance of the child grid's edited row input elements in dia
 ```
 In this example, the **.e-gridform** class represents the editing form, and the **.e-float-input** class targets the floating input elements within the form. You can modify the `font-family` property to change the font of the input elements.
 
-![Child grid customizing the edited row input element in dialog](images/child-grid-edited-row-input-element-in-dialog.png)
+![Child Angular Grid edited row input element in dialog.](images/angular-child-grid-edited-row-input-element-in-dialog.png)
 
 **Customizing the child grid command column buttons**
 
@@ -763,8 +763,8 @@ To customize the appearance of the child grid's command column buttons such as e
 ```
 In this example, the **.e-edit, .e-delete, .e-update, and .e-cancel-icon** classes represent the respective command column buttons. You can modify the `color` property to change the color of these buttons.
 
-![Child grid customize command column button](images/child-grid-commandbutton-1.png)
-![Child grid customize command column button](images/child-grid-commandbutton-2.png)
+![Child Grid customize command column button in Angular.](images/angular-child-grid-command-button.png)
+![Child Grid customize command column button in Angular.](images/angular-child-grid-next-command-button.png)
 
 ### Aggregate
 
@@ -782,7 +782,7 @@ To customize the appearance of the child grid's aggregate root elements, you can
 
 In this example, the **.e-detailcell** class targets the child grid and the **e-gridfooter** class represents the root element of the aggregate row in the grid footer. You can modify the `font-family` property to change the font of the aggregate root element.
 
-![Child grid customize aggregate root element](images/child-grid-aggregate-root-element.png)
+![Child Grid customize aggregate root element in Angular.](images/angular-child-grid-aggregate-root-element.png)
 
 **Customizing the child grid aggregate cell elements**
 
@@ -796,7 +796,7 @@ To customize the appearance of the child grid's aggregate cell elements (summary
 
 In this example, the **e-summaryrow** class represents the summary row containing aggregate cells, and the **e-summarycell** class targets individual aggregate cells within the summary row. You can modify the `background-color` property to change the `color` of the aggregate cell elements.
 
-![Child grid customize aggregate cell element](images/child-grid-aggregate-cell-element.png)
+![Child Grid customize aggregate cell element in Angular.](images/angular-child-grid-aggregate-cell-element.png)
 
 ### Selection
 
@@ -813,7 +813,7 @@ To customize the appearance of the child grid's row selection, you can use the f
 ```
 In this example, the **.e-detailcell** class targets the child grid and the **.e-selectionbackground** class targets the background color of the row selection. You can modify the `background-color` property to change the background color of the selected rows.
 
-![Child grid row selection](images/child-grid-row-selection.png)
+![Child Grid row selection in Angular.](images/angular-child-grid-row-selection.png)
 
 **Customizing the child grid cell selection background**
 
@@ -827,7 +827,7 @@ To customize the appearance of the child grid's cell selection, you can use the 
 
 In this example, the **.e-cellselectionbackground** class targets the background color of the cell selection. You can modify the `background-color` property to change the background color of the selected cells.
 
-![Child grid cell selection](images/child-grid-cell-selection.png)
+![Child Grid cell selection in Angular.](images/angular-child-grid-cell-selection.png)
 
 **Customizing the child grid column selection background**
 
@@ -840,7 +840,7 @@ To customize the appearance of the child grid's column selection, you can use th
 ```
 In this example, the **.e-columnselection** class targets the background color of the column selection. You can modify the `background-color` property to change the background color of the selected columns.
 
-![Child grid cell selection](images/child-grid-column-selection.png)
+![Child Grid cell selection in Angular.](images/angular-child-grid-column-selection.png)
 
 ## See Also
 
