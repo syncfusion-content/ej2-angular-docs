@@ -7,7 +7,7 @@ import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeries
 
 
 import { Component, OnInit } from '@angular/core';
-import { splineData } from './datasource';
+import { chartData } from './datasource';
 
 @Component({
 imports: [
@@ -20,7 +20,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='SplineArea' xName='x' yName='y' name='London' width=2 [marker]='marker' fill='yellow' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='SplineArea' xName='x' yName='y' name='London' width=2 [marker]='marker' fill='yellow'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -32,11 +32,7 @@ export class AppComponent implements OnInit {
     public marker?: Object;
     border?: Object;
     ngOnInit(): void {
-        this.chartData = splineData;
-        this.border = {
-            width: 2.5,
-            color: 'red'
-        }
+        this.chartData = chartData;
         this.primaryXAxis = {
            title: 'Month',
            valueType: 'Category'

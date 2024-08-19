@@ -21,7 +21,7 @@ standalone: true,
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis'
     [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Line' xName='x' yName='y'></e-series>
+            <e-series [dataSource]='chartData' type='Line' xName='month' yName='sales'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -37,9 +37,9 @@ export class AppComponent implements OnInit {
         };
         this.primaryYAxis =
         {
-            title: 'Expense',
+            title: 'Sales',
         },
-        this.title = 'Efficiency of oil-fired power production';
+        this.title = 'Monthly Sales Comparison';
     }
 
 }

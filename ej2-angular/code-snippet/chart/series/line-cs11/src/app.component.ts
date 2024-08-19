@@ -8,6 +8,7 @@ import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeries
 
 import { Component, OnInit } from '@angular/core';
 import { Browser } from '@syncfusion/ej2-base';
+import { paretoData } from './datasource';
 @Component({
 imports: [
          ChartModule
@@ -33,22 +34,10 @@ export class AppComponent implements OnInit {
         topLeft: Browser.isDevice ? 4 : 6, topRight: Browser.isDevice ? 4 : 6
     };
     public paretoOptions: Object = {
-        marker: {
-            visible: true,
-            isFilled: true,
-            width: 7,
-            height: 7
-        },
-        dashArray: '3,2',
-        width: 2,
         fill: '#F7523F'
     };
     ngOnInit(): void {
-        this.chartData = [
-            { x: 'Button Defect', y: 23 }, { x: 'Pocket Defect', y: 16 },
-            { x: 'Collar Defect', y: 10 }, { x: 'Cuff Defect', y: 7 },
-            { x: 'Sleeve Defect', y: 6 }, { x: 'Other Defect', y: 2 }
-        ];
+        this.chartData = paretoData;
         this.primaryXAxis = {
             interval: 1,
             valueType: 'Category',

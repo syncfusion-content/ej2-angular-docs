@@ -7,7 +7,7 @@ import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesServic
 
 
 import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
+import { chartData } from './datasource';
 
 @Component({
 imports: [
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
     public title?: string;
     public data?: Object[];
     ngOnInit(): void {
-        this.data = data;
+        this.data = chartData;
         this.primaryXAxis = {
             title: 'Years',
             valueType: 'Category'

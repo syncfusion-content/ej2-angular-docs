@@ -7,7 +7,7 @@ import { AreaSeriesService, RangeAreaSeriesService, StepAreaSeriesService, Stack
 
 
 import { Component, OnInit } from '@angular/core';
-import { percentData } from './datasource';
+import { stackedData } from './datasource';
 @Component({
 imports: [
          ChartModule, ChartAllModule
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
     public title?: string;
     public primaryYAxis?: Object;
     ngOnInit(): void {
-        this.chartData = percentData;
+        this.chartData = stackedData;
         this.primaryXAxis = {
             valueType: 'DateTime'
         };

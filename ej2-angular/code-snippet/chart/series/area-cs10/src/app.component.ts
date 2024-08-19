@@ -20,7 +20,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Area' xName='x' yName='y' name='Product A' width=2 [border]='border' opacity=0.5></e-series>
+            <e-series [dataSource]='chartData' type='Area' xName='x' yName='y' name='Product A' width=2  fill='#69D2E7', [border]='border'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -31,9 +31,7 @@ export class AppComponent implements OnInit {
     primaryXAxis: any;
     primaryYAxis: any;
     ngOnInit(): void {
-        this.border = {
-          width: 1.5
-        };
+        this.border ={ width: 2, color: '#962D18' };
         this.chartData = areaData;
         this.title = 'Average Sales Comparison';
     }

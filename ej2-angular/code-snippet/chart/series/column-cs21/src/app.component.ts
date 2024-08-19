@@ -8,7 +8,7 @@ import { CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService
 
 
 import { Component, OnInit } from '@angular/core';
-import { percentData } from './datasource';
+import { stackedData } from './datasource';
 @Component({
 imports: [
          ChartModule
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
     public title?: string;
     primaryYAxis: any;
     ngOnInit(): void {
-        this.chartData = percentData;
+        this.chartData = stackedData;
         this.primaryXAxis = {
             title: 'Years',
             interval: 1,

@@ -7,7 +7,7 @@ import { AreaSeriesService, RangeAreaSeriesService, StepAreaSeriesService, Stack
 
 
 import { Component, OnInit } from '@angular/core';
-import { splineRangeData } from './datasource';
+import { splinedata } from './datasource';
 
 @Component({
 imports: [
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     public title?: string;
     public primaryYAxis?: Object;
     ngOnInit(): void {
-        this.chartData = splineRangeData;
+        this.chartData = splinedata;
         this.primaryXAxis = {
            valueType: 'Category',
             edgeLabelPlacement: 'Shift',
