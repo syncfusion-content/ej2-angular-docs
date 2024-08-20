@@ -32,11 +32,11 @@ The `formFieldAdd` event is triggered when a new form field is added, either pro
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/addformfieldevent-cs2/src/app.component.ts %}
+{% include code-snippet/pdfviewer/formfieldaddevent-cs2/src/app/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pdfviewer/addformfieldevent-cs2/src/main.ts %}
+{% include code-snippet/pdfviewer/formfieldaddevent-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -46,7 +46,7 @@ The `formFieldClick` event is triggered when a form field is clicked. The event 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/formfieldclickevent-cs2/src/app.component.ts %}
+{% include code-snippet/pdfviewer/formfieldclickevent-cs2/src/app/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -60,7 +60,7 @@ The `formFieldDoubleClick` event is triggered when a form field is double-clicke
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/formfielddoubleclickevent-cs2/src/app.component.ts %}
+{% include code-snippet/pdfviewer/formfielddoubleclickevent-cs2/src/app/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -74,7 +74,7 @@ The `formFieldFocusOut` event is triggered when a form field loses focus. The ev
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/formfieldfocusoutevent-cs2/src/app.component.ts %}
+{% include code-snippet/pdfviewer/formfieldfocusoutevent-cs2/src/app/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -88,7 +88,7 @@ The `formFieldMouseLeave` event is triggered when the mouse leaves a form field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/formfieldmouseleaveevent-cs2/src/app.component.ts %}
+{% include code-snippet/pdfviewer/formfieldmouseleaveevent-cs2/src/app/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -102,7 +102,7 @@ The `formFieldMouseOver` event is triggered when the mouse hovers over a form fi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/formfieldmouseoverevent-cs2/src/app.component.ts %}
+{% include code-snippet/pdfviewer/formfieldmouseoverevent-cs2/src/app/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -116,7 +116,7 @@ The `formFieldMove` event is triggered when the mouse moves inside a form field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/formfieldmousemoveevent-cs2/src/app.component.ts %}
+{% include code-snippet/pdfviewer/formfieldmousemoveevent-cs2/src/app/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -130,7 +130,7 @@ The `formFieldPropertiesChange` event is triggered when the properties of a form
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/formfieldpropertieschangeevent-cs2/src/app.component.ts %}
+{% include code-snippet/pdfviewer/formfieldpropertieschangeevent-cs2/src/app/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -144,7 +144,7 @@ The `formFieldRemove` event is triggered when a form field is removed from the P
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/formfieldremoveevent-cs2/src/app.component.ts %}
+{% include code-snippet/pdfviewer/formfieldremoveevent-cs2/src/app/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -158,7 +158,7 @@ The `formFieldResize` events are triggered when a form field in a PDF is resized
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/formfieldresizeevent-cs2/src/app.component.ts %}
+{% include code-snippet/pdfviewer/formfieldresizeevent-cs2/src/app/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -172,7 +172,7 @@ The `formFieldSelect` events are triggered when a form field in a PDF is selecte
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/formfieldselectevent-cs2/src/app.component.ts %}
+{% include code-snippet/pdfviewer/formfieldselectevent-cs2/src/app/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -186,7 +186,7 @@ The `formFieldUnselect` events are triggered when a form field in a PDF is unsel
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/formfieldunselectevent-cs2/src/app.component.ts %}
+{% include code-snippet/pdfviewer/formfieldunselectevent-cs2/src/app/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -200,7 +200,7 @@ The `formFieldUnselect` events are triggered when a required form field is left 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pdfviewer/formfieldvalidationevent-cs2/src/app.component.ts %}
+{% include code-snippet/pdfviewer/formfieldvalidationevent-cs2/src/app/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
