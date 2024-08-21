@@ -33,7 +33,6 @@ public data: { [key: string]: Object }[] = [
     { text: 'Ferrari LaFerrari' }
 ];
 public selection = {
-    showCheckbox: true,
     mode: "Multiple"
  }
 }
