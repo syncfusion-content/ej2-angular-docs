@@ -27,17 +27,16 @@ Allows multiple users to work on the same document simultaneously. This can be d
 
 To support collaborative editing, it's crucial to have a backing system that temporarily stores the editing operations of all active users. There are two primary options:
 
-- *Distributed Cache*: Handles a higher number of `HTTP` requests per second compared to a database approach. For instance, a server with 2 vCPUs and 8GB RAM can handle up to 125 requests per second using a distributed cache.
-- *Database*: With the same server configuration, it can handle up to 50 requests per second.
+- ***Distributed Cache***: Handles more HTTP requests per second than a database approach. For example, a server with 2 vCPUs and 8GB RAM can process up to 125 requests per second using a distributed cache. We highly recommend using a distributed cache as a backing system over a database.
 
-Using the distributed cache or database all the editing operations are queued in order and conflict resolution is performed using `Operational Transformation` Algorithm.
+- ***Database***: With the same server configuration, it can handle up to 50 requests per second.
 
-> *Recommendation* - If you expect average `http` requests per second of your live application as 50 or below, then the database can provide reliable a backing system for operation queue. If you expect average requests per second of your live application as above 50, then the distributed cache is highly recommended backing system.
+Using the distributed cache or database all the editing operations are queued in order and conflict resolution is performed using `Operational Transformation` algorithm.
 
-> Tips to calculate the average requests per second of your application:
-Assume the editor in your live application is actively used by 1000 users and each user's edit can trigger 2 to 5 requests per second. The total requests per second of your applications will be around 2000 to 5000. In this case, you can finalize a configuration to support around 5000 average requests per second.
+>**Tips**: To calculate the average requests per second of your application Assume the editor in your live application is actively used by 1000 users and each user’s edit can trigger 2 to 5 requests per second. The total requests per second of your applications will be around 2000 to 5000. In this case, you can finalize a configuration to support around 5000 average requests per second.
 
-> Note: The above metrics are based solely on the collaborative editing module. Actual throughput may decrease depending on other server-side interactions, such as document importing, pasting formatted content, editing restrictions, and spell checking. Therefore, it is advisable to monitor your app's traffic and choose a configuration that best suits your needs.
+>**Note**: The above metrics are based solely on the collaborative editing module. Actual throughput may decrease depending on other server-side interactions, such as document importing, pasting formatted content, editing restrictions, and spell checking. Therefore, it is advisable to monitor your app’s traffic and choose a configuration that best suits your needs.
+
 #### See Also
 
 - [Collaborative editing using Redis cache in ASP.NET Core](../../document-editor/collaborative-editing/using-distributed-cache-asp-net-core)
