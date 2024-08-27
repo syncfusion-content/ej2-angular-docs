@@ -280,4 +280,4 @@ Syncfusion has a collection of sample applications that demonstrate the use of S
 
 ## See also
 
-* [Upgrade Guide](../upgrade/upgrading-syncfusion)
+* [Upgradation Guide](../upgrade/upgrading-syncfusion)
