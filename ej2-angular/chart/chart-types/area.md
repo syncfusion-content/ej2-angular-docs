@@ -26,7 +26,6 @@ To render an [area](https://www.syncfusion.com/angular-components/angular-charts
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/area-cs1/src/main.ts %}
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/chart/series/area-cs1/src/datasource.ts %}
@@ -45,6 +44,10 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/area-cs12/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/area-cs12/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -66,7 +69,6 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesMode
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/area-cs9/src/main.ts %}
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/chart/series/area-cs9/src/datasource.ts %}
@@ -85,7 +87,6 @@ The [fill](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesMode
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/area-cs11/src/main.ts %}
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/chart/series/area-cs11/src/datasource.ts %}
@@ -106,7 +107,6 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesM
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/area-cs13/src/main.ts %}
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/chart/series/area-cs13/src/datasource.ts %}
@@ -127,7 +127,6 @@ The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/serie
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chart/series/area-cs13/src/main.ts %}
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight ts tabtitle="datasource.ts" %}
 {% include code-snippet/chart/series/area-cs13/src/datasource.ts %}

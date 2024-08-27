@@ -42,6 +42,7 @@ To render a [`candle`](https://www.syncfusion.com/angular-components/angular-cha
 
 You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#datasource) property within the series configuration. This allows you to connect a JSON dataset or remote data to your chart. To display the data correctly, map the fields from the data to the chart series [`xName`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#xname), [`high`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#high), [`low`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#low), [`open`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#open) and [`close`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#close) properties.
 
+{% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/candle-cs3/src/app.component.ts %}
 {% endhighlight %}
