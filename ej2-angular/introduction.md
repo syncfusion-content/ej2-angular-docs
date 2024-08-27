@@ -138,6 +138,7 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/switch/getting-started/">Toggle Switch Button</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/signature/getting-started/">Signature</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/rating/getting-started/">Rating</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/otp-input/getting-started">OTP Input</a></div>
         <div><p class="controlcategory">FORMS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/query-builder/getting-started/">Query Builder</a></div>
     </td>
@@ -150,6 +151,7 @@ letter-spacing: 0.7px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/multi-select/getting-started/">Multiselect DropDown</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/drop-down-tree/getting-started/">DropDown Tree</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/mention/getting-started">Mention</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/multicolumn-combobox/getting-started">MultiColumn ComboBox</a></div>
         <div><p class="controlcategory">NAVIGATION</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/accordion/getting-started/">Accordion</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/carousel/getting-started">Carousel</a></div>
@@ -206,4 +208,4 @@ A good starting point would be to refer to the code snippets in the [online samp
 
 * [Getting started Syncfusion Angular with ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc/)
 
-* [Getting started with Syncfusion Angular Treeshaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking/)
+* [Getting started with Syncfusion Angular Tree Shaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking/)

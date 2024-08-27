@@ -44,7 +44,6 @@ export class AppComponent implements OnInit {
 
             const EmployeeID = 'EmployeeID';
             const value = new DataManager(employeeData).executeLocal(new Query().where('FirstName', 'equal', (this.autoComplete as AutoComplete).value));
-            console.log(value[0]);
             return value.length && (value[0] as ForeignKeyDataType)[EmployeeID]; // to convert foreign key value to local value.
         },
         destroy: () => { // to destroy the custom component.
