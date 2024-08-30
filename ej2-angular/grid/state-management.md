@@ -88,7 +88,71 @@ Here is an example of how to integrate version-based persistence into your Angul
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/state-persistence-cs3/src/app.component.ts %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+
+
+
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { FilterService, PageService, GridComponent, GroupService, SortService, ReorderService } from '@syncfusion/ej2-angular-grids';
+import { enableVersionBasedPersistence } from '@syncfusion/ej2-base';
+
+enableVersionBasedPersistence(true);
+
+@Component({
+imports: [
+        
+        GridModule,
+        ButtonModule
+    ],
+
+standalone: true,
+    selector: 'app-root',
+    template: `<h4 id='message'>{{message}}</h4>
+    <button ejs-button *ngFor="let v of versions" [id]="'restore' + v" (click)="clickHandler('v.' + v)">Version {{ v }}</button>
+               <ejs-grid #grid id="OrderDetails" [dataSource]='data' [enablePersistence]='true' [ej2StatePersistenceVersion]='gridversion' 
+               [allowPaging]='true' [allowFiltering]='true' [allowReordering]='true' [allowSorting]='true' [allowGrouping]='true' height='210px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+                </e-columns>
+                </ejs-grid>`,
+    providers: [FilterService, PageService, GroupService, SortService, ReorderService]
+})
+export class AppComponent implements OnInit {
+
+    public data?: object[];
+    @ViewChild('grid')
+    public grid?: GridComponent;
+    public message?: string;
+    public gridversion?: string = 'v.0';
+    public versions: number[] = [1, 2, 3];
+
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+    clickHandler(version: string) {
+        const grid = this.grid as GridComponent;
+        grid.ej2StatePersistenceVersion = version;
+        var persistedGridSettings: string = (window.localStorage.getItem(`gridOrderDetails` + grid.ej2StatePersistenceVersion)) as string;
+        if (persistedGridSettings) {
+            grid.setProperties(JSON.parse(persistedGridSettings));
+            this.message = `Grid state restored to ` + version;
+        } else {
+            var gridData = grid.getPersistData();
+            window.localStorage.setItem((`gridOrderDetails` + grid.ej2StatePersistenceVersion), gridData);
+        }
+
+    }
+}
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -111,7 +175,30 @@ The provided code demonstrates how to save and restore the previous state of a S
 {% include code-snippet/grid/state-persistence-cs4/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.html" %}
-{% include code-snippet/grid/state-persistence-cs4/src/app.component.html %}
+{% raw %}
+<div class="control-section">
+    <button ejs-button class="e-success" (click)="save()">Save</button>
+    <button ejs-button class="e-danger" (click)="restore()">restore</button>
+    <div id='message'>{{message}}</div>
+    <ejs-grid #Orders id="Orders" [dataSource]="data" allowPaging="true" allowSorting="true" allowFiltering="true"
+        [allowGrouping]="true" [editSettings]="editSettings" [groupSettings]="groupOptions"
+        [filterSettings]="filterOptions" [toolbar]="toolbar" [pageSettings]="pageSettings" [enablePersistence]="true"
+        height="320" (actionBegin)="actionBegin()">
+        <e-columns>
+            <e-column field="OrderID" headerText="Order ID" width="140" textAlign="Right" isPrimaryKey="true"
+                [validationRules]="orderidrules"></e-column>
+            <e-column field="CustomerID" headerText="Customer ID" width="140" [validationRules]="customeridrules">
+            </e-column>
+            <e-column field="Freight" headerText="Freight" width="140" format="C2" textAlign="Right"
+                editType="numericedit" [validationRules]="freightrules"></e-column>
+            <e-column field="OrderDate" [allowGrouping]="false" headerText="Order Date" width="120"
+                editType="datetimepickeredit" [format]="formatoptions" textAlign="Right"></e-column>
+            <e-column field="ShipCountry" headerText="Ship Country" width="150" editType="dropdownedit"
+                [edit]="editparams"></e-column>
+        </e-columns>
+    </ejs-grid>
+</div>
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -204,7 +291,78 @@ To restore these column properties and achieve persistence, you can follow the a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/state-persistence-cs8/src/app.component.ts %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
+import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons'
+
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { FilterService, PageService, GridComponent, Column } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+imports: [
+        
+        GridModule,
+        ButtonAllModule
+    ],
+
+standalone: true,
+    selector: 'app-root',
+    template: `<div id='message'>{{message}}</div><button ejs-button id='save' (click)='save()'>Save column settings</button><button ejs-button id='restore' (click)='restore()'>Restore column settings</button>
+               <ejs-grid #Grid id="Orders" [dataSource]='data' [enablePersistence]='true' [allowPaging]='true' [allowFiltering]='true'
+           height='210px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120>
+                    </e-column>
+                    <e-column field='CustomerID' headerText='Customer ID' width=150 headerTemplate='<button ejs-button>HeaderTemplate</button>'>
+                    </e-column>
+                    <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                    <e-column field='ShipName' headerText='Ship Name' width=150 template='#template'>
+                    </e-column>
+                </e-columns>
+                </ejs-grid>`,
+    providers: [GroupService, FilterService, PageService]
+})
+export class AppComponent implements OnInit {
+
+    public data?: object[];
+    @ViewChild('Grid')
+    public grid?: GridComponent;
+    public message: string = '';
+    public persistedGridSettings?: object;
+
+    ngOnInit(): void {
+        this.data = data;
+    }
+    save() {
+        this.persistedGridSettings = JSON.parse(((this.grid as GridComponent)).getPersistData());
+        var gridColumns = Object.assign([], ((this.grid as GridComponent)).getColumns());
+        (this.persistedGridSettings as any).columns.forEach((persistedColumn: Column) => {
+            const column = gridColumns.find((col: Column) => col.field === persistedColumn.field);
+            if (column) {
+                persistedColumn.headerText = 'Text Changed';
+                persistedColumn.template = (column as Column).template;
+                persistedColumn.headerTemplate = (column as Column).headerTemplate;
+            }
+        });
+        window.localStorage.setItem('gridOrders1', JSON.stringify(this.persistedGridSettings));
+        this.grid?.setProperties(this.persistedGridSettings as object);
+        this.message = 'Saved the headerText, template column, and headerTemplate properties in the persisted settings';
+    }
+    restore() {
+        const savedSettings = window.localStorage.getItem("gridOrders1");
+        if (savedSettings) {
+            this.grid?.setProperties(JSON.parse(savedSettings));
+            this.message = 'Restored the headerText, template column, and headerTemplate';
+        } else {
+            this.message = 'No saved settings found.';
+        }
+    }
+
+}
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
