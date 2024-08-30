@@ -114,12 +114,75 @@ The following example demonstrates how to render a **NumericTextBox** component 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/pager-template-cs1/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/pager-template-cs1/src/app.template.html %}
-{% endhighlight %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
+import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
+import { data } from './datasource';
+import { PageService,GridComponent, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { ChangeEventArgs } from '@syncfusion/ej2-angular-inputs';
 
+@Component({
+imports: [
+        
+        GridModule,
+        NumericTextBoxModule
+    ],
+
+providers: [PageService,
+                SortService,
+                FilterService,
+                GroupService],
+standalone: true,
+    selector: 'app-root',
+    template:`
+        <ejs-grid #grid [dataSource]='data' [allowPaging]='true'
+        [pageSettings]='initialPage'>
+            <ng-template #pagerTemplate let-data>
+            <div class="e-pagertemplate">
+                <div class="col-lg-12 control-section">
+                    <div class="content-wrapper">
+                    <ejs-numerictextbox format='###.##' step='1' min='1' max='3' value={{data.currentPage}} 
+                    (change)='change($event)' width="200px"></ejs-numerictextbox>
+                    </div>
+                </div>
+                <div id="totalPages" class="e-pagertemplatemessage" 
+                style="margin-top:5px;margin-left:30px;border: none; display: inline-block ">
+                <span class="e-pagenomsg">{{data.currentPage}} of {{data.totalPages}} pages 
+                ({{data.totalRecordsCount}} items)</span>
+            </div>
+            </div>
+            </ng-template>
+            <e-columns>
+                <e-column field='OrderID' headerText='Order ID' width=120></e-column>
+                <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+                <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
+                <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
+            </e-columns>
+            </ejs-grid>`,
+    encapsulation: ViewEncapsulation.None
+})
+export class AppComponent {
+   
+
+    @ViewChild('grid')
+    public grid?: GridComponent;
+    public data: Object[] = [];
+    public initialPage?: PageSettingsModel;
+    
+    ngOnInit(): void {
+        this.data = data;
+        this.initialPage = { pageSize: 5 };
+    }
+    change(args: ChangeEventArgs) {
+      this.initialPage = { currentPage: args.value };
+  }
+}
+{% endraw %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/pager-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -254,7 +317,63 @@ The following example that example demonstrates how to use these events to displ
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/paging1-cs19/src/app.component.ts %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { PageEventArgs } from '@syncfusion/ej2-grids';
+import { orderDetails } from './datasource';
+
+@Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [PageService, ToolbarService, EditService],
+standalone: true,
+    selector: 'app-root',
+    template: `
+    <p id="message1">{{ message1 }}</p>
+    <p id="message">{{ message }}</p>    
+    <ejs-grid #grid [dataSource]="data" allowPaging="true"
+            (actionBegin)="onActionBegin($event)" (actionComplete)="onActionComplete($event)"
+            [pageSettings]="initialPage">
+            <e-columns>
+                <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-column>
+                <e-column field="CustomerID" headerText="Customer ID" width="120"></e-column>
+                <e-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="90"></e-column>
+                <e-column field="OrderDate" headerText="Order Date" textAlign="Right" format="yMd" width="120"></e-column>
+            </e-columns>
+        </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+    public data?: object[];
+    public initialPage?: object;
+    @ViewChild('grid') grid?: GridComponent;
+    public message?: string;
+    public message1?: string;
+
+    ngOnInit(): void {
+        this.data = orderDetails;
+        this.initialPage = { pageSize: 5 };
+    }
+    onActionBegin({requestType,currentPage,previousPage}: PageEventArgs) {
+        if (requestType === 'paging') {
+            this.message = (currentPage as string) > (previousPage as string)
+                ? `You are going to switch to page ${parseInt((currentPage as string), 10) + 1}`
+                : `You are going to switch to page ${previousPage}`;
+        }
+    }
+    onActionComplete(args: PageEventArgs) {
+        if (args.requestType === 'paging') {
+            this.message1 = 'Now you are in page ' + args.currentPage;
+        }
+    }
+}
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

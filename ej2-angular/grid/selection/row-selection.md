@@ -206,7 +206,65 @@ To achieve this, you can leverage the [getSelectedRowIndexes](https://ej2.syncfu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs8/src/app.component.ts %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
+import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+imports: [
+        
+        GridModule,
+        ButtonModule
+        ],
+
+providers: [EditService, ToolbarService, PageService, FilterService],
+standalone: true,
+  selector: 'app-root',
+  template: ` 
+        <div style="padding: 10px 0px 20px 0px">
+          <button ejs-button class="btn" (click)="click()">Get selected row indexes</button>
+        </div>
+        <p id="message" *ngIf="showMessage">Selected row indexes: {{ selectedRowIndexes }}</p>
+        <ejs-grid #grid [dataSource]="data" height="315px" 
+        [selectionSettings]="selectionOptions">
+          <e-columns>
+            <e-column field="OrderID" headerText="Order ID" textAlign="Right" 
+            width="120"></e-column>
+            <e-column field="CustomerID" headerText="Customer ID" width="150">
+            </e-column>
+            <e-column field="ShipCity" headerText="Ship City" width="150">
+            </e-column>
+            <e-column field="ShipName" headerText="Ship Name" width="150">
+            </e-column>
+          </e-columns>
+        </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+  public data?: object[];
+  public selectedRowIndexes: number[] = [];
+  public selectionOptions?: SelectionSettingsModel;
+  public showMessage = false;
+
+  @ViewChild('grid')
+  public grid?: GridComponent;
+
+  ngOnInit(): void {
+    this.data = data;
+    this.selectionOptions = { type: 'Multiple' };
+  }
+  click() {
+    this.selectedRowIndexes = (this.grid as GridComponent).getSelectedRowIndexes();
+    this.showMessage = this.selectedRowIndexes.length > 0;
+  }
+}
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -228,7 +286,88 @@ The following example demonstrates how to retrieve selected records from various
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-cs12/src/app.component.ts %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import {GridModule, PageService, EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { DialogModule } from '@syncfusion/ej2-angular-popups'
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { GridComponent, SelectionSettingsModel, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+imports: [
+        
+        GridModule,
+        ButtonModule,
+        DialogModule
+    ],
+
+providers: [EditService, ToolbarService, PageService, FilterService],
+standalone: true,
+  selector: 'app-root',
+  template: `
+    <div style="padding: 20px 0px">
+      <button ejs-button class="sample" (click)="showSelectedRecords()">Show Selected Records</button>
+    </div>
+    <ejs-grid #grid [dataSource]="data" allowPaging="true" [selectionSettings]="selectionOptions" 
+    [pageSettings]="pageOptions">
+      <e-columns>
+        <e-column type="checkbox" width="50"></e-column>
+        <e-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" 
+        width="120"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="120"></e-column>
+        <e-column field="ShipCountry" headerText="Ship Country" width="130"></e-column>
+        <e-column field="Freight" headerText="Freight" format="C2" width="100"></e-column>
+      </e-columns>
+    </ejs-grid>
+    <ejs-dialog #dialogComponent [header]="'Selected Records'" [content]="dialogContent"
+      [visible]="dialogVisible" (close)="dialogClose()" showCloseIcon="true" width="400px" 
+      [position]='{ X: 300, Y: 100 }'>
+      <ng-template #dialogContent>
+        <ng-container>
+          <div *ngFor="let record of selectedRecords">
+            <p><b>Order ID:</b> {{ record.OrderID }}</p>
+          </div>
+        </ng-container>
+      </ng-template>
+    </ejs-dialog>
+  `
+})
+export class AppComponent implements OnInit {
+
+  public data?: object[];
+  public selectionOptions?: SelectionSettingsModel;
+  public pageOptions?: PageSettingsModel;
+  public dialogVisible: boolean = false;
+  public selectedRecords: Order[] = [];
+  @ViewChild('grid')
+  public grid?: GridComponent;
+
+  ngOnInit(): void {
+    this.data = data;
+    this.selectionOptions = { type: 'Multiple', persistSelection: true };
+    this.pageOptions = { pageSize: 5 };
+  }
+
+  showSelectedRecords(): void {
+    this.selectedRecords = (this.grid as GridComponent).getSelectedRecords();
+    if (this.selectedRecords.length > 0) {
+      this.dialogVisible = true;
+    }
+  }
+  dialogClose(): void {
+    this.dialogVisible = false;
+  }
+}
+interface Order {
+  OrderID?: number;
+  CustomerID?: string;
+  ShipCountry?: string;
+  Freight?: number;
+}
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -250,7 +389,68 @@ Here's an example that displays the selected row count using the `getSelectedRec
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-record-cs1/src/app.component.ts %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
+import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { GridComponent, SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+imports: [
+        
+        GridModule,
+        ButtonModule
+    ],
+
+providers: [EditService, ToolbarService, PageService, FilterService],
+standalone: true,
+  selector: 'app-root',
+  template: `
+    <div style="padding: 20px 0px">
+      <button ejs-button class="sample" (click)="click()">Selected Records count</button>
+    </div>
+    <p id="message" *ngIf="showMessage">Selected record count: {{ selectedRecordscount }}</p>
+    <div class="control-section">
+      <ejs-grid #grid [dataSource]="data" allowPaging="true" [allowSelection]="true" 
+      [selectionSettings]="selectionOptions">
+        <e-columns>
+          <e-column field="OrderID" isPrimaryKey="true" headerText="Order ID" width="120" 
+          textAlign="Right"></e-column>
+          <e-column field="CustomerID" headerText="Customer ID" width="150"></e-column>
+          <e-column field="OrderDate" headerText="Order Date" width="130" format="yMd" 
+          textAlign="Right"></e-column>
+          <e-column field="Freight" headerText="Freight" width="120" format="C2" 
+          textAlign="Right"></e-column>
+          <e-column field="ShipCountry" headerText="Ship Country" width="130" format="yMd" 
+          textAlign="Right"></e-column>
+        </e-columns>
+      </ejs-grid>
+    </div>
+  `,
+})
+export class AppComponent implements OnInit {
+
+  @ViewChild('grid') public grid?: GridComponent;
+  public data?: Object[];
+  public selectionOptions?: SelectionSettingsModel;
+  public showMessage = false;
+  public selectedRecordscount: number = 0;
+
+  public ngOnInit(): void {
+    this.data = data;
+    this.selectionOptions = { type: 'Multiple' };
+  }
+  click(): void {
+    this.selectedRecordscount = (this.grid as GridComponent).getSelectedRecords().length;
+    this.showMessage = this.selectedRecordscount > 0;
+  }
+}
+
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -296,7 +496,97 @@ In the following example, row selection is canceled when the value of **Customer
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/selection-row-cs3/src/app.component.ts %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
+import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
+
+import { Component, OnInit, ViewChild, Renderer2 } from '@angular/core';
+import { data ,Order} from './datasource';
+import {
+  GridComponent,
+  SelectionSettingsModel,
+  PageSettingsModel,
+  RowSelectingEventArgs,
+  RowSelectEventArgs,
+  RowDeselectEventArgs,
+  RowDeselectingEventArgs,
+} from '@syncfusion/ej2-angular-grids';
+import { DialogComponent } from '@syncfusion/ej2-angular-popups';
+
+@Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [EditService, ToolbarService, PageService, FilterService],
+standalone: true,
+  selector: 'app-root',
+  template: `
+        <p id="message">{{ message }}</p>
+        <div style="padding: 20px 0px 0px 0px">
+          <ejs-grid
+            #grid
+            [enableHover]='false'
+            [dataSource]="data"
+            [selectionSettings]="selectionOptions"
+            (rowSelected)="rowSelected($event)"
+            (rowSelecting)="rowselecting($event)"
+            (rowDeselected)="rowDeselected($event)"
+            (rowDeselecting)="rowDeselecting($event)">
+            <e-columns>
+              <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="120">
+              </e-column>
+              <e-column field="CustomerID" headerText="Customer ID" width="120">
+              </e-column>
+              <e-column field="ShipCountry" headerText="Ship Country" width="130">
+              </e-column>
+              <e-column field="Freight" headerText="Freight" format="C2" width="100">
+              </e-column>
+            </e-columns>
+          </ejs-grid>
+        </div>`,
+})
+export class AppComponent implements OnInit {
+  public data?: Object[];
+  public selectionOptions?: SelectionSettingsModel;
+  public pageOptions?: PageSettingsModel;
+  public message?: string;
+
+  @ViewChild('grid') public grid?: GridComponent;
+  @ViewChild('dialogComponent') public dialog?: DialogComponent;
+  public selectedCellCount: number = 0;
+  public dialogVisible: boolean = false;
+
+  ngOnInit(): void {
+    this.data = data;
+    this.selectionOptions = { mode: 'Row', type: 'Multiple' };
+    this.pageOptions = { pageSize: 5 };
+  }
+  rowselecting(args: RowSelectingEventArgs): void {
+    this.message = `Trigger rowSelecting`;
+    if ((args.data as Order).CustomerID == 'VINET')
+      args.cancel = true;
+  }
+  rowSelected(args: RowSelectEventArgs): void {
+    this.message = ` Trigger rowSelected`;
+    if ((args.data as Order).Freight > 10 || (args.data as Order).Freight <= 140)
+      (args.row as HTMLElement).style.backgroundColor = 'rgb(96, 158, 101)'; 
+  }
+  rowDeselected(args: RowDeselectEventArgs ): void {
+    this.message = `Trigger rowDeselected`;
+    if ((args.data as Order).Freight <= 10)
+    (args.row as HTMLElement).style.backgroundColor = 'red';
+  }
+  rowDeselecting(args: RowDeselectingEventArgs): void {
+    this.message = `Trigger rowDeselecting`;
+    if ((args.data as Order).Freight > 140)
+    (args.row as HTMLElement).style.backgroundColor = 'yellow';
+  }
+}
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %} 

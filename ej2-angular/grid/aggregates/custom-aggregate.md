@@ -29,7 +29,25 @@ Here's an example that demonstrates how to use the custom aggregate feature in t
 {% include code-snippet/grid/aggregates-custom-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/grid/aggregates-custom-cs1/src/app.template.html %}
+{% raw %}
+<ejs-grid [dataSource]='data' height='268px'>
+    <e-columns>
+        <e-column field='OrderID' headerText='Order ID' textAlign='right' width=120></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+        <e-column field='Freight' format='C2' width=150></e-column>
+        <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+    </e-columns>
+    <e-aggregates>
+        <e-aggregate>
+            <e-columns>
+                <e-column columnName="ShipCountry" type="Custom" [customAggregate]="customAggregateFn">
+                    <ng-template #footerTemplate let-data>Brazil Count: {{data.Custom}}</ng-template>
+                </e-column>
+            </e-columns>
+        </e-aggregate>
+    </e-aggregates>
+</ejs-grid>
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -52,7 +70,25 @@ Here's an example that demonstrates how to show the count of distinct values for
 {% include code-snippet/grid/aggregates-custom-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/grid/aggregates-custom-cs2/src/app.template.html %}
+{% raw %}
+<ejs-grid [dataSource]='data' height='268px'>
+    <e-columns>
+        <e-column field='OrderID' headerText='Order ID' textAlign='right' width=120></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+        <e-column field='Freight' format='C2' width=150></e-column>
+        <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+    </e-columns>
+    <e-aggregates>
+        <e-aggregate>
+            <e-columns>
+                <e-column columnName="ShipCountry" type="Custom" [customAggregate]="customAggregateFn">
+                    <ng-template #footerTemplate let-data>Distinct Count: {{data.Custom}}</ng-template>
+                </e-column>
+            </e-columns>
+        </e-aggregate>
+    </e-aggregates>
+</ejs-grid>
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
