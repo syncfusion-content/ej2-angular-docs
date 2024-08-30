@@ -77,6 +77,8 @@ The following table shows the default text values used in PDF Viewer in 'en-US' 
 |Print text|Print|
 |Search text|Search|
 |Annotation Edit text|Edit Annotation|
+|Save|Save|
+|Save As|Save As|
 
 The different locale value for the PDF Viewer can be specified using the locale property.
 
@@ -213,7 +215,9 @@ You have to map the text content based on locale like following script in sample
                         'Pan text': 'مقلاة',
                         'Print text': 'طباعة',
                         'Search text': 'بحث',
-                        'Annotation Edit text': 'تحرير التعليق التوضيحي'
+                        'Annotation Edit text': 'تحرير التعليق التوضيحي',
+                        'Save': 'يحفظ',
+                        'Save As': 'حفظ باسم',
                     }
                 }
             });
