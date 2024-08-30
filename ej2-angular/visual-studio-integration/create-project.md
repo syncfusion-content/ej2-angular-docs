@@ -18,7 +18,7 @@ Syncfusion provides the **Visual Studio Project Templates** for create the Syncf
 
 The following steps help you to create the Syncfusion Angular application through the Visual Studio:
 
-1. Open the Visual Studio 2017 or later.
+1. Open the Visual Studio 2022.
 
 2. To create a Syncfusion Angular project, follow either one of the options below:
   
@@ -32,13 +32,13 @@ The following steps help you to create the Syncfusion Angular application throug
 
      **Option 2:**
 
-      Choose **File > New > Project in Visual Studio**. The Create a new project dialog opens. You can get the **Syncfusion** provided templates by filtering the Project type with Syncfusion or use the **Search option** with the key word of Syncfusion.
+      Choose **File -> New -> Project**. Opens a new dialog to create a new project. By filtering the project type with Syncfusion or using the **Syncfusion** keyword in the search option, you can get the templates offered by Syncfusion for ASP.NET Core.
 
       ![syncfusion template](images/create-new-project.png)
 
       > In Visual Studio 2017, choose **File > New > Project** and navigate to **Syncfusion > .NET Core > Syncfusion ASP.NET Core Web Application** in **Visual Studio**.
 
-3. Select the Syncfusion ASP.NET Core Web Application and choose the Next button.
+3. Select the **Syncfusion ASP.NET Core Web Application** and choose the Next button.
 
     ![syncfusion template](images/syncfusion-template.png)
 
@@ -46,7 +46,9 @@ The following steps help you to create the Syncfusion Angular application throug
 
     ![project configuration](images/angular-project-wizard.png)
 
-    Choose the Syncfusion Angular template and choose required theme and asset.
+    Choose the Syncfusion Angular template and choose required theme, authentication type and asset.
+
+    > Syncfusion Angular project template available from .NET 6.0 and .NET 7.0
 
 5. Click the Create button, the Syncfusion Angular application has been created.
 
