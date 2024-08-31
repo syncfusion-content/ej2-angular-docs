@@ -42,9 +42,83 @@ In this demo, the custom element is rendered for both **CustomerID** and **Order
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/header-template-cs1/src/app.component.ts %}
-{% endhighlight %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { CheckBoxModule,RadioButtonModule,SwitchModule, } from '@syncfusion/ej2-angular-buttons'
 
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
+
+@Component({
+imports: [
+        
+        GridModule,
+        DropDownListAllModule,
+        ButtonModule,
+        CheckBoxModule,
+        RadioButtonModule,
+        SwitchModule,
+    ],
+
+
+standalone: true,
+  selector: 'app-root',
+  template: `<ejs-grid [dataSource]="data" height="315px">
+              <e-columns>
+                <e-column
+                  field="OrderID"
+                  headerText="Order ID"
+                  textAlign="Right"
+                  width="120">
+                </e-column>
+                <e-column field="CustomerID" headerText="Customer ID" width="140">
+                  <ng-template #headerTemplate let-data>
+                    <div>
+                      <span class="e-icon-userlogin e-icons employee"></span> Customer ID
+                    </div>
+                  </ng-template>
+                </e-column>
+                <e-column field="Freight" headerText="Freight" format="C" width="120">
+                  <ng-template #headerTemplate let-data>
+                    <div>
+                      <ejs-dropdownlist index="0" width="130" [dataSource]="dropdownData">
+                      </ejs-dropdownlist>
+                    </div>
+                  </ng-template>
+                </e-column>
+                <e-column field="OrderDate" textAlign="Right" format="yMd" width="140">
+                  <ng-template #headerTemplate let-data>
+                    <div>
+                      <ejs-switch (change)="onSwitchToggle($event)"></ejs-switch>
+                      <label style="padding: 0px 0px 0px 10px">{{ headerText }}</label>
+                    </div>
+                  </ng-template>
+                </e-column>
+              </e-columns>
+           </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+  public data: Object[] = [];
+  public dropdownData: string[] = [];
+  public headerText: string = 'Order Date';
+
+  ngOnInit() {
+    this.data = data;
+    this.dropdownData = ['Freight', 'Shipment', 'Cargo'];
+  }
+  onSwitchToggle(args:ChangeEventArgs) {
+    this.headerText = args.checked ? 'Purchase Date' : 'Order Date';
+  }
+
+}
+{% endraw %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/header-template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -63,7 +137,113 @@ You can customize the appearance of the stacked header elements by using the hea
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/stacked-header-cs2/src/app.component.ts %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule,PageService } from '@syncfusion/ej2-angular-grids'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
+
+import { Component, OnInit } from '@angular/core';
+import { orderDetails } from './datasource';
+import { ColumnModel } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+imports: [
+        
+        GridModule,
+        ButtonModule,
+        TooltipModule,
+        DropDownListAllModule
+    ],
+
+providers: [PageService],
+standalone: true,
+  selector: 'app-root',
+  template: `<div>
+              <ejs-grid [dataSource]="data" allowPaging="true">
+                <e-columns>
+                  <e-column field="OrderID" width="120" textAlign="Center">
+                    <ng-template #headerTemplate let-data>
+                      <div>
+                        <a href="#">OrderID</a>
+                      </div>
+                    </ng-template>
+                  </e-column>
+                  <e-column headerText="Order Details" [columns]="orderColumns">
+                    <ng-template #headerTemplate let-data>
+                      <div>
+                        <ejs-dropdownlist index="0" 
+                        [dataSource]="dropdownData">
+                        </ejs-dropdownlist>
+                      </div>
+                    </ng-template>
+                  </e-column>
+                  <e-column headerText="Ship Details" [columns]="shipColumns">
+                    <ng-template #headerTemplate let-column>
+                      <div>
+                        <span>{{ column.headerText }}</span>
+                        <span>(<i class="fa fa-truck"></i>)</span>
+                      </div>
+                    </ng-template>
+                  </e-column>
+                </e-columns>
+              </ejs-grid>
+            </div>`
+})
+export class AppComponent implements OnInit {
+
+  public data?: Object[] = [];
+  public orderColumns?: ColumnModel[];
+  public shipColumns?: ColumnModel[];
+  public dropdownData?: string[];
+
+  public ngOnInit(): void {
+
+    this.data = orderDetails;
+    this.orderColumns = [
+      {
+        field: 'OrderDate',
+        headerText: 'Order Date',
+        format: 'yMd',
+        width: 130,
+        textAlign: 'Right',
+        minWidth: 10,
+      },
+      {
+        field: 'Freight',
+        headerText: 'Freight ($)',
+        width: 120,
+        format: 'C1',
+        textAlign: 'Right',
+        minWidth: 10,
+      },
+    ];
+
+    this.shipColumns = [
+      {
+        field: 'ShippedDate',
+        headerText: 'Shipped Date',
+        format: 'yMd',
+        textAlign: 'Right',
+        width: 150,
+        minWidth: 10,
+      },
+      {
+        field: 'ShipCountry',
+        headerText: 'Ship Country',
+        width: 150,
+        minWidth: 10,
+      },
+    ];
+
+    this.dropdownData = ['Order Details', 'Order Information'];
+  }
+
+}
+
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -382,7 +562,10 @@ export class AppComponent {
 
 **Step 2**:  Use the translate pipe in your HTML code to translate the `headerText` of the column.
 
-```html
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.html" %}
+{% raw %}
 <h1> Ngx translate pipe for header text in Angular Grid component</h1>
 <h1></h1>
 <div class="container-fluid py-3">
@@ -408,8 +591,10 @@ export class AppComponent {
     </e-columns>
   </ejs-grid>
 <div>
+{% endraw %}
+{% endhighlight %}
+{% endtabs %}
 
-```
 
 **Step 3**: Import the **TranslateModule** and **TranslateLoader** in your app.module.ts file. You also need to import the `HttpClientModule` to enable HTTP requests for loading translation files.
 
@@ -554,8 +739,9 @@ export class AppComponent {
 
 **Step 2**: Use the ngx-translate pipe in your Angular Grid component header templates to translate the headers dynamically.
 
-```Html
-
+{% tabs %}
+{% highlight ts tabtitle="app.component.html" %}
+{% raw %}
 <h1> Ngx translate pipe for header template in Angular Grid component</h1>
 <h1></h1><div class="container-fluid py-3">
   <div class="btn-group btn-group-sm py-5">
@@ -597,8 +783,9 @@ export class AppComponent {
     </e-columns>
   </ejs-grid>
 </div>
-
-```
+{% endraw %}
+{% endhighlight %}
+{% endtabs %} 
 
 **Step 3**: Import the required modules in **app.module.ts** file along with translate loader function,
 

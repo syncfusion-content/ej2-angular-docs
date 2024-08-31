@@ -84,8 +84,8 @@ Here's an example that demonstrates how to disable editing for the column in the
 {% previewsample "page.domainurl/samples/grid/edit-cs20" %}
 
 >* If you have set the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property to **true** for a column, editing will be automatically disabled for that column.
-> * You can disble the particular row using [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.please refer this [link](https://ej2.syncfusion.com/angular/documentation/grid/editing/in-line-editing#disable-editing-for-a-particular-row).
->* You can disble the particular cell using [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#celledit) event.please refer this [link](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing#disable-editing-for-a-particular-cell).
+> * You can disable the particular row using [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.please refer this [link](https://ej2.syncfusion.com/angular/documentation/grid/editing/in-line-editing#disable-editing-for-a-particular-row).
+>* You can disable the particular cell using [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#celledit) event.please refer this [link](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing#disable-editing-for-a-particular-cell).
 
 ## Editing template column
 
@@ -97,7 +97,71 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-cs23/src/app.component.ts %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
+import { Component, OnInit } from '@angular/core';
+import { data } from './datasource';
+import { EditSettingsModel, ToolbarItems } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+imports: [
+        
+        GridModule,
+        DatePickerAllModule,
+        FormsModule,
+        TimePickerModule,
+        FormsModule,
+        TextBoxModule,
+        MultiSelectModule,
+        AutoCompleteModule
+    ],
+
+providers: [EditService, ToolbarService, SortService, PageService],
+standalone: true,
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'>
+                <e-columns>
+                    <e-column field='OrderID' headerText='Order ID' [validationRules]='orderIDRules' textAlign='Right' isPrimaryKey='true' width=100></e-column>
+                    <e-column field='CustomerID' [validationRules]='customerIDRules'  headerText='Customer ID' width=120></e-column>
+                    <e-column field='Freight' headerText='Freight' textAlign= 'Right'
+                    editType= 'numericedit' width=120  [validationRules]='freightRules' format= 'C2'></e-column>
+                    <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150>
+                        <ng-template #template let-data>
+                            <a href="#">{{data.ShipCountry}}</a>
+                        </ng-template>
+                    </e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public orderIDRules?: object;
+    public customerIDRules?: object;
+    public freightRules?: Object;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true };
+        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+        this.orderIDRules = { required: true };
+        this.freightRules =  { min:1, max:1000 };
+        this.customerIDRules = { required: true };
+
+    }
+}
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -281,7 +345,7 @@ In the following example, the textbox is rendered in the **Freight** column usin
 * [Cascading DropDownList with Grid Editing](../how-to/cascading-drop-down-list)
 * [Tab Inside the Dialog Editing](../how-to/using-tab-inside-the-dialog-editing)
 * [Apply animation for Grid Edit dialog in Angular Grid](https://www.syncfusion.com/forums/154544/apply-animation-for-grid-edit-dialog-in-angular-grid)
-* [CRUD operations using asp.net core web api methods in Angular Grid](https://www.syncfusion.com/forums/150090/crud-operations-using-asp-net-core-web-api-methods-in-angular-grid)
+* [CRUD operations using ASP.NET core web api methods in Angular Grid](https://www.syncfusion.com/forums/150090/crud-operations-using-asp-net-core-web-api-methods-in-angular-grid)
 * [How to restrict ArrowUp increase and ArrowDown decrease value in Grid numeric cell in Angular Grid](https://www.syncfusion.com/forums/150611/how-to-restrict-arrowup-increase-and-arrowdown-decrease-value-in-grid-numeric-cell-in)
 * [How to use DropDownList and Combo-Box in Batch-edit mode of Angular Grid](https://www.syncfusion.com/forums/151968/how-to-use-dropdownlist-and-combo-box-in-batch-edit-mode-of-angular-grid)
 * [How to use CellEditArgs event in Angular Grid](https://www.syncfusion.com/forums/153617/how-to-use-celleditargs-event-in-angular-grid)

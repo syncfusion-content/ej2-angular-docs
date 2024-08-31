@@ -26,7 +26,26 @@ Here's an example that demonstrates how to use group footer aggregates in the Sy
 {% include code-snippet/grid/aggregates-group-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/aggregates-group-cs1/src/app.template.html %}
+{% raw %}
+<ejs-grid [dataSource]='data' height='290px' [allowGrouping]="true" [groupSettings]="groupOptions">
+    <e-columns>
+        <e-column field='OrderID' headerText='Order ID' textAlign='right' width=120></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+        <e-column field='OrderDate' headerText='Order Date' format='yMd' width=120></e-column>
+        <e-column field='Freight' format='C2' width=150></e-column>
+        <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+    </e-columns>
+    <e-aggregates>
+        <e-aggregate>
+            <e-columns>
+                <e-column field="Freight" type="sum">
+                    <ng-template #groupFooterTemplate let-data>Sum: {{data.sum}}</ng-template>
+                </e-column>
+            </e-columns>
+        </e-aggregate>
+    </e-aggregates>
+</ejs-grid>
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -50,7 +69,26 @@ Here's an example that demonstrates how to use group and caption aggregates in t
 {% include code-snippet/grid/aggregates-group-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/aggregates-group-cs2/src/app.template.html %}
+{% raw %}
+<ejs-grid [dataSource]='data' height='290px' [allowGrouping]="true" [groupSettings]="groupOptions">
+    <e-columns>
+        <e-column field='OrderID' headerText='Order ID' textAlign='right' width=120></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+        <e-column field='OrderDate' headerText='Order Date' format='yMd' width=120></e-column>
+        <e-column field='Freight' format='C2' width=150></e-column>
+        <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+    </e-columns>
+    <e-aggregates>
+        <e-aggregate>
+            <e-columns>
+                <e-column field="Freight" type="max">
+                    <ng-template #groupCaptionTemplate let-data>Max: {{data.max}}</ng-template>
+                </e-column>
+            </e-columns>
+        </e-aggregate>
+    </e-aggregates>
+</ejs-grid>
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -72,7 +110,32 @@ In some cases, you may want to disable the page-wise aggregates for grouping in 
 {% include code-snippet/grid/aggregates-group-cs3/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/aggregates-group-cs3/src/app.template.html %}
+{% raw %}
+<ejs-grid [dataSource]='data' height='350px' [allowPaging]="true" [allowGrouping]="true" [groupSettings]="groupOptions" [pageSettings]="pageOptions">
+    <e-columns>
+        <e-column field='OrderID' headerText='Order ID' textAlign='right' width=120></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+        <e-column field='OrderDate' headerText='Order Date' format='yMd' width=120></e-column>
+        <e-column field='Freight' format='C2' width=150></e-column>
+        <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+    </e-columns>
+    <e-aggregates>
+        <e-aggregate>
+            <e-columns>
+                <e-column field="Freight" type="sum">
+                    <ng-template #groupFooterTemplate let-data>Sum: {{data.sum}}</ng-template>
+                </e-column>
+                <e-column field="Freight" type="max">
+                    <ng-template #groupCaptionTemplate let-data>Max: {{data.max}}</ng-template>
+                </e-column>
+                <e-column field="Freight" type="sum">
+                    <ng-template #footerTemplate let-data>Sum: {{data.sum}}</ng-template>
+                </e-column>
+            </e-columns>
+        </e-aggregate>
+    </e-aggregates>
+</ejs-grid>
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

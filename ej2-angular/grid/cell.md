@@ -264,8 +264,10 @@ Step 2: Add the CDN link of Bootstrap in the index.html file. Place the `link` t
 
 Step 3: The following code demonstrates how to render Bootstrap tooltip for the **CustomerID** field with `ng-template` on grid cells using ngAfterViewChecked` method,
 
-```typescript
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% raw %}
 import { AfterViewChecked, Component } from '@angular/core';
 import { orderDataSource } from './data';
 import 'bootstrap';
@@ -287,7 +289,7 @@ declare var $: any;
                 [title]="data.CustomerID"
                 data-placement="left"
                 data-delay='{"show":"800", "hide":"300"}'>
-                <i class="fas fa-pencil-alt"></i>{{ data.CustomerID }}
+                <i class="fas fa-pencil-alt"></i> {{data.CustomerID }}
               </div>
             </div>
           </div>
@@ -307,8 +309,9 @@ export class AppComponent implements AfterViewChecked {
   }
 
 }
-
-```
+{% endraw %}
+{% endhighlight %}
+{% endtabs %}
 
 The following screenshot represents the Bootstrap tooltip for the **CustomerID** field,
 
