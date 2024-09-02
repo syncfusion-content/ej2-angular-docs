@@ -29,7 +29,29 @@ By default, the aggregate values are displayed in the footer, group, and caption
 {% include code-snippet/grid/aggregates-cs1/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/aggregates-cs1/src/app.template.html %}
+{% raw %}
+<ejs-grid [dataSource]='data' height='290px' [allowGrouping]='true' [allowPaging]='true' [groupSettings]='groupOptions'>
+    <e-columns>
+        <e-column field='OrderID' headerText='Order ID' textAlign='right' width=120></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
+        <e-column field='OrderDate' headerText='Order Date' format='yMd' width=120></e-column>
+        <e-column field='Freight' format='C2' width=150></e-column>
+        <e-column field='ShipCountry' headerText='Ship Country' width=150></e-column>
+    </e-columns>
+    <e-aggregates>
+        <e-aggregate>
+            <e-columns>
+                <e-column field='Freight' type='sum'>
+                    <ng-template #groupFooterTemplate let-data>Sum: {{data.sum}}</ng-template>
+                </e-column>
+                <e-column field='Freight' type='max'>
+                    <ng-template #groupCaptionTemplate let-data>Max: {{data.max}}</ng-template>
+                </e-column>
+            </e-columns>
+        </e-aggregate>
+    </e-aggregates>
+</ejs-grid>
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -64,9 +86,39 @@ Here is an example that demonstrates how to use built-in aggregates types in the
 {% include code-snippet/grid/aggregates-cs2/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="app.template.html" %}
-{% include code-snippet/grid/aggregates-cs2/src/app.template.html %}
+{% raw %}
+<ejs-grid [dataSource]="data" height="290px" [allowGrouping]="true" [groupSettings]="groupOptions">
+    <e-columns>
+        <e-column field="OrderID" headerText="Order ID" textAlign="right" width="120"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="150"></e-column>
+        <e-column field="OrderDate" headerText="Order Date" format="yMd" type="date" width="120"></e-column>
+        <e-column field="ShippedDate" headerText="Shipped Date" format="yMd" type="date" width="120"></e-column>
+        <e-column field="Freight" format="C2" width="150"></e-column>
+        <e-column field="isVerified" headerText="Verified" width="150" type="boolean"></e-column>
+        <e-column field="ShipCity" headerText="ShipCity" width="150"></e-column>
+        <e-column field="ShipCountry" headerText="Ship Country" width="150"></e-column>
+    </e-columns>
+    <e-aggregates>
+        <e-aggregate>
+            <e-columns>
+                <e-column field="Freight" type="max">
+                    <ng-template #footerTemplate let-data>Max: {{ data.max }}</ng-template>
+                </e-column>
+                <e-column field="ShippedDate" type="max">
+                    <ng-template #footerTemplate let-data>Max: {{ data.max | date: 'dd/MM/yyyy' }}</ng-template>
+                </e-column>
+                <e-column field="OrderDate" type="min">
+                    <ng-template #footerTemplate let-data>Min: {{ data.min | date: 'dd/MM/yyyy' }}</ng-template>
+                </e-column>
+                <e-column field="isVerified" type="truecount">
+                    <ng-template #footerTemplate let-data>TrueCount: {{ data.truecount }}</ng-template>
+                </e-column>
+            </e-columns>
+        </e-aggregate>
+    </e-aggregates>
+</ejs-grid>
+{% endraw %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/aggregates-cs2/src/main.ts %}
 {% endhighlight %}

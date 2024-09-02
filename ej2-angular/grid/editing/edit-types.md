@@ -398,7 +398,100 @@ The following example demonstrates how to render images in the DropDownList edit
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-drobdown-image/src/app.component.ts %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, EditService, ToolbarService, SortService, PageService, ForeignKeyService } from '@syncfusion/ej2-angular-grids'
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
+import { Component, ViewChild } from '@angular/core';
+import { columnDataType, data, employeeData } from './datasource';
+import { GridComponent, EditService, ToolbarService, ToolbarItems, EditSettingsModel, ForeignKeyService, SaveEventArgs } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+imports: [
+        
+        GridModule,
+        DatePickerAllModule,
+        FormsModule,
+        TimePickerModule,
+        FormsModule,
+        TextBoxModule,
+        MultiSelectModule,
+        AutoCompleteModule,
+        DropDownListModule
+    ],
+
+providers: [EditService, ToolbarService, SortService, PageService, ForeignKeyService],
+standalone: true,
+    selector: 'app-root',
+    template: `
+            <ejs-grid #grid [dataSource]="data" [allowPaging]="true" [pageSettings]="pageSettings" (actionBegin)="actionBegin($event)" [editSettings]="editOptions" [toolbar]="toolbarItems" >
+            <e-columns>
+                <e-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" [validationRules]="orderIDRules" isPrimaryKey="true"></e-column>
+                <e-column field="EmployeeID" foreignKeyValue='FirstName' foreignKeyField='EmployeeID' [dataSource]='employeeData' headerText="Employee Name" width="220">
+                <ng-template #editTemplate let-data>
+                    <ejs-dropdownlist [dataSource]='employeeData' [(ngModel)]="orderData.EmployeeID" [fields]='dropdownFields' [itemTemplate]="itemTemplate">
+                    <ng-template #itemTemplate let-data>
+                        <div>
+                        <img class="empImage" width="50px" [src]="'https://ej2.syncfusion.com/demos/src/grid/images/' + data.EmployeeID + '.png'" alt="employee" />
+                        <div class="ename">{{ data.FirstName }}</div>
+                        </div>
+                    </ng-template>
+                    </ejs-dropdownlist>
+                </ng-template>
+                </e-column>
+                <e-column field="Freight" headerText="Freight" width="100" format="C2" textAlign="Right" editType="numericedit"></e-column>
+                <e-column field="ShipName" headerText="Ship Name" width="170"></e-column>
+                <e-column field="ShipCountry" headerText="Ship Country" width="150" editType="dropdownedit"></e-column>
+            </e-columns>
+            </ejs-grid>`,
+    providers: [EditService, ToolbarService, ForeignKeyService],
+})
+export class AppComponent {
+
+    public data?: Object[];
+    public pageSettings?: Object;
+    public toolbarItems?: ToolbarItems[];
+    public editOptions?: EditSettingsModel;
+    public employeeData?: Object;
+    public orderIDRules?: Object;
+    public orderData?: object | any;
+    public dropdownFields?: Object;
+
+    @ViewChild('grid')
+    public grid?: GridComponent;
+
+    public ngOnInit(): void {
+        this.data = data;
+        this.pageSettings = { pageCount: 5 };
+        this.toolbarItems = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+        this.employeeData = employeeData;
+        this.editOptions = {
+            allowEditing: true,
+            allowAdding: true,
+            allowDeleting: true,
+            mode: 'Normal',
+        };
+        this.orderIDRules = { required: true };
+        this.dropdownFields = { text: 'FirstName', value: 'EmployeeID' };
+    }
+
+    actionBegin(args: SaveEventArgs) {
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            this.orderData = Object.assign({}, args.rowData);
+        }
+        if (args.requestType === 'save') {
+            (args.data as columnDataType)['EmployeeID'] = this.orderData['EmployeeID'];
+        }
+    }
+}
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -420,7 +513,114 @@ The following example demonstrates how to render a DropDownList component with m
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-multicolumn-dropdown/src/app.component.ts %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
+
+import { Component, OnInit } from '@angular/core';
+import { columnDataType, data } from './datasource';
+import {
+    EditSettingsModel,
+    ToolbarItems,
+    SaveEventArgs,
+} from '@syncfusion/ej2-angular-grids';
+import { Query } from '@syncfusion/ej2-data';
+
+@Component({
+imports: [
+        
+        GridModule,
+        DatePickerAllModule,
+        FormsModule,
+        TimePickerModule,
+        FormsModule,
+        TextBoxModule,
+        MultiSelectModule,
+        AutoCompleteModule,
+        DropDownListModule
+    ],
+
+providers: [EditService, ToolbarService, SortService, PageService],
+standalone: true,
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' [editSettings]='editSettings' [toolbar]='toolbar' height='273px'
+        (actionBegin)='actionBegin($event)'>
+        <e-columns>
+            <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' 
+                isPrimaryKey='true' [validationRules]='orderIDRules'></e-column>
+            <e-column field='CustomerID' headerText='Customer Name' width='120'></e-column>
+            <e-column field='Freight' headerText='Freight' width='120' format='C2' textAlign='Right' 
+                editType='numericedit' [validationRules]='freightRules'></e-column>
+            <e-column field='OrderDate' headerText='Order Date' width='130' editType='datepickeredit' 
+                format='yMd' textAlign='Right'></e-column>
+            <e-column field='ShipCountry' headerText='Ship Country' width=300>
+                <ng-template #editTemplate let-data3>
+                    <ejs-dropdownlist [dataSource]='data' 
+                    [fields]='fields' [query]='query'[(value)]="orderData.ShipCountry">
+                    <ng-template #headerTemplate="" let-data2="">
+                    <table><tr><th>EmployeeID</th><th>ShipCountry</th></tr></table>
+                    </ng-template>
+                        <ng-template #itemTemplate let-data1>
+                        <div class="e-grid">
+                        <table class="e-table">
+                            <tbody>
+                                <tr>
+                                    <td class="e-rowcell">{{ data1.EmployeeID }}</td>
+                                    <td class="e-rowcell">{{ data1.ShipCountry }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                        </ng-template>
+                    </ejs-dropdownlist>
+                </ng-template>
+            </e-column>
+        </e-columns>
+    </ejs-grid>`,
+})
+export class AppComponent implements OnInit {
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public orderData?: object | any;
+    public orderIDRules?: object;
+    public freightRules?: object;
+    public fields = { text: 'ShipCountry' };
+    public query: Query = new Query()
+        .from('data')
+        .select(['EmployeeID', 'ShipCountry', 'OrderID'])
+        .take(6);
+
+    ngOnInit(): void {
+        this.data = data;
+        this.orderIDRules = { required: true };
+        this.freightRules = { required: true, min: 1, max: 1000 };
+        this.editSettings = {
+            allowEditing: true,
+            allowAdding: true,
+            allowDeleting: true,
+        };
+        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+    }
+
+    actionBegin(args: SaveEventArgs) {
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            this.orderData = Object.assign({}, args.rowData);
+        }
+        if (args.requestType === 'save') {
+            (args.data as columnDataType)['ShipCountry'] = this.orderData['ShipCountry'];
+        }
+    }
+}
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -522,7 +722,124 @@ The following example demonstrates how to render a Upload component in the **Ord
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/edit-upload/src/app.component.ts %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, EditService, ToolbarService, SortService, PageService } from '@syncfusion/ej2-angular-grids'
+import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
+import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
+import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
+import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
+
+import { Component, OnInit } from '@angular/core';
+import { employeeData } from './datasource';
+import {
+    EditSettingsModel,
+    ToolbarItems,
+    SaveEventArgs
+} from '@syncfusion/ej2-angular-grids';
+import { FileInfo, SuccessEventArgs } from '@syncfusion/ej2-angular-inputs';
+
+@Component({
+imports: [
+        
+        GridModule,
+        DatePickerAllModule,
+        FormsModule,
+        TimePickerModule,
+        FormsModule,
+        TextBoxModule,
+        MultiSelectModule,
+        AutoCompleteModule,
+        UploaderModule
+    ],
+
+providers: [EditService, ToolbarService, SortService, PageService],
+standalone: true,
+    selector: 'app-root',
+    template: `
+        <ejs-grid [dataSource]='data' allowPaging='true' [editSettings]='editSettings' [toolbar]='toolbar' (actionBegin)='actionBegin($event)'>
+            <e-columns>
+                <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' isPrimaryKey='true' width=100></e-column>
+                <e-column field='FirstName' headerText='First Name' textAlign='Left'  width=120></e-column>
+                <e-column field='LastName' headerText='Last Name'  textAlign='Left' width=120></e-column>
+                <e-column field='Title' headerText='Title'  textAlign='Left' width=120 ></e-column>
+                <e-column headerText='Employee Image' width='150' textAlign='Center'>
+                    <ng-template #template let-data>
+                        <div class="image">
+                        <img [src]="!data.Image ? 'https://ej2.syncfusion.com/angular/demos/assets/grid/images/' + data.EmployeeID + '.png' : data.Image"  alt="{{data.EmployeeID}}" />
+                        </div>
+                    </ng-template>
+                    <ng-template #editTemplate let-data>
+                        <ejs-uploader #defaultupload (success)="onUploadSuccess($event)" [asyncSettings]='path' multiple='false'></ejs-uploader>
+                    </ng-template>
+                </e-column>
+            </e-columns>
+        </ejs-grid>
+    `,
+})
+export class AppComponent implements OnInit {
+    public data?: object[];
+    public editSettings?: EditSettingsModel;
+    public toolbar?: ToolbarItems[];
+    public orderData?: object | any;
+    public orderIDRules?: object;
+    public customerIDRules?: object;
+    public freightRules?: object;
+    public strm?:string;
+    public path: object = {
+        saveUrl: 'https://services.syncfusion.com/react/production/api/FileUploader/Save',
+        removeUrl: 'https://services.syncfusion.com/react/production/api/FileUploader/Remove'
+    };
+
+    ngOnInit(): void {
+        this.data = employeeData;
+        this.orderIDRules = { required: true };
+        this.customerIDRules = { required: true, minLength: 5 };
+        this.freightRules = { required: true, min: 1, max: 1000 };
+        this.editSettings = {
+            allowEditing: true,
+            allowAdding: true,
+            allowDeleting: true,
+        };
+        this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
+    }
+
+    actionBegin(args: SaveEventArgs) {
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            this.orderData = Object.assign({}, args.rowData);
+        }
+        if (args.requestType === 'save') {
+            (args.data as columnDataType)['Image'] = this.strm;
+        }
+    }
+
+    onUploadSuccess(args: SuccessEventArgs) {
+        if (args.operation === 'upload') {
+            const fileBlob = (args.file as FileInfo).rawFile as Blob;
+            const file = new File([fileBlob], (args.file as FileInfo).name);
+            this.strm = this.getBase64(file);
+        }
+    }
+
+    getBase64(file:File): string {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+            this.strm = reader.result as string;
+        };
+        return (this.strm as string); 
+    }
+}
+
+export interface columnDataType{
+    Image?: string;
+ }
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

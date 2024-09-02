@@ -223,7 +223,7 @@ The following example demonstrates how to collapse all grouped rows at the initi
 
 By default, the Syncfusion Grid supports interaction-oriented column grouping, where users manually group columns by dragging and dropping them into the grouping area of the grid. Grid provides an ability to group and ungroup a column using [groupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/#groupcolumn) and [ungroupColumn](https://ej2.syncfusion.com/angular/documentation/api/grid/#ungroupcolumn) methods. These methods provide a programmatic approach to perform column grouping and ungrouping.
 
-The following example demonstrates how to group and upgroup the columns in a grid. It utilizes the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component to select the column. When an external button is clicked, the `groupColumn` and `ungroupColumn` methods are called to group or ungroup the selected column.
+The following example demonstrates how to group and ungroup the columns in a grid. It utilizes the [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) component to select the column. When an external button is clicked, the `groupColumn` and `ungroupColumn` methods are called to group or ungroup the selected column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -277,7 +277,84 @@ The following example demonstrates the function that collapses the selected row 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs7/src/app.component.ts %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
+import { FormsModule } from '@angular/forms'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { data } from './datasource';
+import { GroupSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+imports: [
+        
+        GridModule,
+        FormsModule,
+        ButtonModule
+    ],
+
+providers: [GroupService],
+standalone: true,
+    selector: 'app-root',
+    template: `
+    <div style="display:flex">
+    <input
+      type="number"
+      [(ngModel)]="groupedRowIndex"
+      placeholder="Enter Grouped Row Index"
+    />
+    <button ejs-button (click)="onExpandCollapseButtonClick()">
+      Collapse or Expand Row
+    </button>
+    </div>
+    <div style="padding-top:5px">
+      <p style="color:red; ">{{ message }}</p>
+    </div>
+  
+  <ejs-grid #grid style="padding-top: 5px" [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupSettings' height='240px'>
+    <e-columns>
+      <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90 [allowGrouping]='false'></e-column>
+      <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
+      <e-column field='ShipCity' headerText='Ship City' width=100 [allowGrouping]='false'></e-column>
+      <e-column field='ShipName' headerText='Ship Name' width=120 [allowGrouping]='false'></e-column>
+    </e-columns>
+  </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data?: object[];
+    public groupSettings?: GroupSettingsModel;
+    public groupedRowIndex?: number;
+    public message?:string
+    @ViewChild('grid')
+    public grid?: GridComponent;
+
+    ngOnInit(): void {
+        this.data = data;
+        this.groupSettings = { columns: ['CustomerID'] };
+    }
+
+   onExpandCollapseButtonClick() {
+      const groupedRows = Array.from(
+      (this.grid as GridComponent)
+        .getContentTable()
+        .querySelectorAll('.e-recordplusexpand, .e-recordpluscollapse')
+    );
+
+    if (groupedRows.length >= 0 && (this.groupedRowIndex as number) < groupedRows.length) {
+      this.message = '';
+      const groupCaptionElement = groupedRows[this.groupedRowIndex as number];
+      (this.grid as GridComponent).groupModule.expandCollapseRows(groupCaptionElement);
+    } else {
+      (this.message as string) =
+        'The entered index exceeds the total number of grouped rows. Please enter a valid grouped index.';
+    }
+  }
+}
+{% endraw %}
+
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -319,7 +396,65 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/grouping1-cs6/src/app.component.ts %}
+{% raw %}
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids'
+
+
+
+import { Component, OnInit, } from '@angular/core';
+import { data } from './datasource';
+import { GroupEventArgs, GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+imports: [
+        
+        GridModule
+    ],
+
+providers: [GroupService],
+standalone: true,
+    selector: 'app-root',
+    template: `
+    <div style="margin-left:100px;"><p style="color:red;" id="message">{{message}}</p></div>
+    <ejs-grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupSettings' (actionComplete)='actionComplete($event)' (actionBegin)='actionBegin($event)' height='260px'>
+        <e-columns>
+            <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+            <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
+            <e-column field='ShipCity' headerText='Ship City' width=100></e-column>
+            <e-column field='ShipName' headerText='Ship Name' width=120></e-column>
+        </e-columns>        
+    </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data?: object[];
+    public groupSettings?: GroupSettingsModel;
+    public message?: string
+    ngOnInit(): void {
+        this.data = data;
+    }
+
+    actionBegin(args: GroupEventArgs) {
+        if (args.requestType === 'grouping' && args.columnName === 'OrderID') {
+            args.cancel = true
+            this.message = args.requestType + ' action is cancelled for ' + args.columnName + ' column';
+        }
+    }
+
+    actionComplete(args: GroupEventArgs) {
+        if (args.requestType === 'grouping') {
+            this.message = args.requestType + ' action completed for ' + args.columnName + ' column';
+        }
+        else {
+            this.message = ''
+        }
+    }
+
+}
+
+{% endraw %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
