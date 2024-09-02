@@ -1,31 +1,18 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
 import { Component, OnInit } from '@angular/core';
-import {
-  QueryCellInfoEventArgs,
-  GridLine,
-  Column,
-} from '@syncfusion/ej2-angular-grids';
+import { QueryCellInfoEventArgs, GridLine, Column, } from '@syncfusion/ej2-angular-grids';
 import { columnSpanData } from './datasource';
 import { EmitType } from '@syncfusion/ej2-base';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
-  selector: 'app-container',
-  template: `<ejs-treegrid [dataSource]='data' [height]='height' [width]='width' [gridLines]='gridLines' childMapping="subtasks" [treeColumnIndex]='1'
+    imports: [TreeGridModule,],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<ejs-treegrid [dataSource]='data' [height]='height' [width]='width' [gridLines]='gridLines' childMapping="subtasks" [treeColumnIndex]='1'
               [allowTextWrap]='textWrap' (queryCellInfo)='queryCellInfoEvent($event)'>
                <e-columns>
                   <e-column field='EmployeeID' headerText='Employee ID' width='150' textAlign="Right" isPrimaryKey=true></e-column>
@@ -48,157 +35,157 @@ standalone: true,
             </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
-  public data: object[] = columnSpanData;
-  public height: string | number = 'auto';
-  public width: string | number = 'auto';
-  public gridLines: GridLine = 'Both';
-  public textWrap: boolean = true;
-  
-  public queryCellInfoEvent: EmitType<QueryCellInfoEventArgs> = (
-    args: QueryCellInfoEventArgs
-  ) => {
-    let data: any = args.data as any;
-    switch (data.EmployeeID) {
-      case 10001:
-        if (
-          (args.column as Column).field === '9:00' ||
-          (args.column as Column).field === '2:30' ||
-          (args.column as Column).field === '4:30'
-        ) {
-          args.colSpan = 2;
-        } else if ((args.column as Column).field === '11:00') {
-          args.colSpan = 3;
+    public data: object[] = columnSpanData;
+    public height: string | number = 'auto';
+    public width: string | number = 'auto';
+    public gridLines: GridLine = 'Both';
+    public textWrap: boolean = true;
+
+    public queryCellInfoEvent: EmitType<QueryCellInfoEventArgs> = (
+        args: QueryCellInfoEventArgs
+    ) => {
+        let data: any = args.data as any;
+        switch (data.EmployeeID) {
+            case 10001:
+                if (
+                    (args.column as Column).field === '9:00' ||
+                    (args.column as Column).field === '2:30' ||
+                    (args.column as Column).field === '4:30'
+                ) {
+                    args.colSpan = 2;
+                } else if ((args.column as Column).field === '11:00') {
+                    args.colSpan = 3;
+                }
+                break;
+            case 10002:
+                if (
+                    (args.column as Column).field === '9:30' ||
+                    (args.column as Column).field === '2:30' ||
+                    (args.column as Column).field === '4:30'
+                ) {
+                    args.colSpan = 3;
+                } else if ((args.column as Column).field === '11:00') {
+                    args.colSpan = 4;
+                }
+                break;
+            case 10003:
+                if (
+                    (args.column as Column).field === '9:00' ||
+                    (args.column as Column).field === '11:30'
+                ) {
+                    args.colSpan = 3;
+                } else if (
+                    (args.column as Column).field === '10:30' ||
+                    (args.column as Column).field === '3:30' ||
+                    (args.column as Column).field === '4:30' ||
+                    (args.column as Column).field === '2:30'
+                ) {
+                    args.colSpan = 2;
+                }
+                break;
+            case 10004:
+                if ((args.column as Column).field === '9:00') {
+                    args.colSpan = 3;
+                } else if ((args.column as Column).field === '11:00') {
+                    args.colSpan = 4;
+                } else if (
+                    (args.column as Column).field === '4:00' ||
+                    (args.column as Column).field === '2:30'
+                ) {
+                    args.colSpan = 2;
+                }
+                break;
+            case 10005:
+                if ((args.column as Column).field === '9:00') {
+                    args.colSpan = 4;
+                } else if ((args.column as Column).field === '11:30') {
+                    args.colSpan = 3;
+                } else if (
+                    (args.column as Column).field === '3:30' ||
+                    (args.column as Column).field === '4:30' ||
+                    (args.column as Column).field === '2:30'
+                ) {
+                    args.colSpan = 2;
+                }
+                break;
+            case 10006:
+                if (
+                    (args.column as Column).field === '9:00' ||
+                    (args.column as Column).field === '4:30' ||
+                    (args.column as Column).field === '2:30' ||
+                    (args.column as Column).field === '3:30'
+                ) {
+                    args.colSpan = 2;
+                } else if (
+                    (args.column as Column).field === '10:00' ||
+                    (args.column as Column).field === '11:30'
+                ) {
+                    args.colSpan = 3;
+                }
+                break;
+            case 10007:
+                if (
+                    (args.column as Column).field === '9:00' ||
+                    (args.column as Column).field === '3:00' ||
+                    (args.column as Column).field === '10:30'
+                ) {
+                    args.colSpan = 2;
+                } else if (
+                    (args.column as Column).field === '11:30' ||
+                    (args.column as Column).field === '4:00'
+                ) {
+                    args.colSpan = 3;
+                }
+                break;
+            case 10008:
+                if (
+                    (args.column as Column).field === '9:00' ||
+                    (args.column as Column).field === '10:30' ||
+                    (args.column as Column).field === '2:30'
+                ) {
+                    args.colSpan = 3;
+                } else if ((args.column as Column).field === '4:00') {
+                    args.colSpan = 2;
+                }
+                break;
+            default:
+                this.extendQueryCellEvent(args, data.EmployeeID);
         }
-        break;
-      case 10002:
-        if (
-          (args.column as Column).field === '9:30' ||
-          (args.column as Column).field === '2:30' ||
-          (args.column as Column).field === '4:30'
-        ) {
-          args.colSpan = 3;
-        } else if ((args.column as Column).field === '11:00') {
-          args.colSpan = 4;
+        if ((args.colSpan as number) > 1) {
+            (args.cell as HTMLElement).style.border = '1px solid red';
         }
-        break;
-      case 10003:
-        if (
-          (args.column as Column).field === '9:00' ||
-          (args.column as Column).field === '11:30'
-        ) {
-          args.colSpan = 3;
-        } else if (
-          (args.column as Column).field === '10:30' ||
-          (args.column as Column).field === '3:30' ||
-          (args.column as Column).field === '4:30' ||
-          (args.column as Column).field === '2:30'
-        ) {
-          args.colSpan = 2;
+    };
+    public extendQueryCellEvent: EmitType<QueryCellInfoEventArgs> = (
+        args: QueryCellInfoEventArgs,
+        value: number
+    ) => {
+        switch (value) {
+            case 10009:
+                if (
+                    (args.column as Column).field === '9:00' ||
+                    (args.column as Column).field === '11:30'
+                ) {
+                    args.colSpan = 3;
+                } else if (
+                    (args.column as Column).field === '4:30' ||
+                    (args.column as Column).field === '2:30'
+                ) {
+                    args.colSpan = 2;
+                }
+                break;
+            case 100010:
+                if (
+                    (args.column as Column).field === '9:00' ||
+                    (args.column as Column).field === '2:30' ||
+                    (args.column as Column).field === '4:00' ||
+                    (args.column as Column).field === '11:30'
+                ) {
+                    args.colSpan = 3;
+                } else if ((args.column as Column).field === '10:30') {
+                    args.colSpan = 2;
+                }
+                break;
         }
-        break;
-      case 10004:
-        if ((args.column as Column).field === '9:00') {
-          args.colSpan = 3;
-        } else if ((args.column as Column).field === '11:00') {
-          args.colSpan = 4;
-        } else if (
-          (args.column as Column).field === '4:00' ||
-          (args.column as Column).field === '2:30'
-        ) {
-          args.colSpan = 2;
-        }
-        break;
-      case 10005:
-        if ((args.column as Column).field === '9:00') {
-          args.colSpan = 4;
-        } else if ((args.column as Column).field === '11:30') {
-          args.colSpan = 3;
-        } else if (
-          (args.column as Column).field === '3:30' ||
-          (args.column as Column).field === '4:30' ||
-          (args.column as Column).field === '2:30'
-        ) {
-          args.colSpan = 2;
-        }
-        break;
-      case 10006:
-        if (
-          (args.column as Column).field === '9:00' ||
-          (args.column as Column).field === '4:30' ||
-          (args.column as Column).field === '2:30' ||
-          (args.column as Column).field === '3:30'
-        ) {
-          args.colSpan = 2;
-        } else if (
-          (args.column as Column).field === '10:00' ||
-          (args.column as Column).field === '11:30'
-        ) {
-          args.colSpan = 3;
-        }
-        break;
-      case 10007:
-        if (
-          (args.column as Column).field === '9:00' ||
-          (args.column as Column).field === '3:00' ||
-          (args.column as Column).field === '10:30'
-        ) {
-          args.colSpan = 2;
-        } else if (
-          (args.column as Column).field === '11:30' ||
-          (args.column as Column).field === '4:00'
-        ) {
-          args.colSpan = 3;
-        }
-        break;
-      case 10008:
-        if (
-          (args.column as Column).field === '9:00' ||
-          (args.column as Column).field === '10:30' ||
-          (args.column as Column).field === '2:30'
-        ) {
-          args.colSpan = 3;
-        } else if ((args.column as Column).field === '4:00') {
-          args.colSpan = 2;
-        }
-        break;
-      default:
-        this.extendQueryCellEvent(args, data.EmployeeID);
-    }
-    if ((args.colSpan as number) > 1) {
-      (args.cell as HTMLElement).style.border = '1px solid red';
-    }
-  };
-  public extendQueryCellEvent: EmitType<QueryCellInfoEventArgs> = (
-    args: QueryCellInfoEventArgs,
-    value: number
-  ) => {
-    switch (value) {
-      case 10009:
-        if (
-          (args.column as Column).field === '9:00' ||
-          (args.column as Column).field === '11:30'
-        ) {
-          args.colSpan = 3;
-        } else if (
-          (args.column as Column).field === '4:30' ||
-          (args.column as Column).field === '2:30'
-        ) {
-          args.colSpan = 2;
-        }
-        break;
-      case 100010:
-        if (
-          (args.column as Column).field === '9:00' ||
-          (args.column as Column).field === '2:30' ||
-          (args.column as Column).field === '4:00' ||
-          (args.column as Column).field === '11:30'
-        ) {
-          args.colSpan = 3;
-        } else if ((args.column as Column).field === '10:30') {
-          args.colSpan = 2;
-        }
-        break;
-    }
-  };
-  ngOnInit(): void {}
+    };
+    ngOnInit(): void { }
 }

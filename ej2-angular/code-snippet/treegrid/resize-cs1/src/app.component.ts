@@ -1,25 +1,15 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import { TreeGridComponent,ResizeService  } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent, ResizeService } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule,],
+    providers: [ResizeService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [allowResizing]='true' (dataBound)='onDataBound()' [treeColumnIndex]='1' childMapping='subtasks' >
                     <e-columns>
@@ -30,7 +20,7 @@ standalone: true,
                         <e-column field='progress' headerText='Progress' textAlign='Right' width=120></e-column>
                     </e-columns>
                 </ejs-treegrid>`,
-    providers: [ResizeService ]
+
 })
 export class AppComponent implements OnInit {
 
@@ -42,7 +32,7 @@ export class AppComponent implements OnInit {
         this.data = sampleData;
     }
     onDataBound() {
-            (this.treeGridObj as TreeGridComponent).autoFitColumns(['taskName']);
+        (this.treeGridObj as TreeGridComponent).autoFitColumns(['taskName']);
     }
 }
 

@@ -1,20 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule, ResizeService } from '@syncfusion/ej2-angular-treegrid'
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 
 @Component({
-imports: [
-        
-        TreeGridModule
-    ],
-
-providers: [ResizeService],
-standalone: true,
+    imports: [TreeGridModule],
+    providers: [ResizeService],
+    standalone: true,
     selector: 'app-container',
     template: `<div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>
           

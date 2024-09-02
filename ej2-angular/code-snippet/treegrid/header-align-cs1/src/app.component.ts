@@ -1,29 +1,17 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
 import { Component, OnInit, } from '@angular/core';
 import { sampleData } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
-import { Column, TreeGridComponent,} from '@syncfusion/ej2-angular-treegrid';
+import { Column, TreeGridComponent, } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule, DropDownListAllModule],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<div style="display: flex">
               <label style="padding: 30px 17px 0 0;">Align the text of header text :</label>
@@ -47,17 +35,17 @@ export class AppComponent implements OnInit {
     public treegrid?: TreeGridComponent;
 
     public alignmentData: Object[] = [
-      { text: 'Left', value: 'Left' },
-      { text: 'Right', value: 'Right' },
-      { text: 'Center', value: 'Center' },
-      { text: 'Justify', value: 'Justify' }
+        { text: 'Left', value: 'Left' },
+        { text: 'Right', value: 'Right' },
+        { text: 'Center', value: 'Center' },
+        { text: 'Justify', value: 'Justify' }
     ];
-  
+
     public changeAlignment(args: ChangeEventArgs): void {
-      (this.treegrid as TreeGridComponent).grid.columns.forEach((col:any) => {
-        (col as Column).headerTextAlign = args.value as any;
-      });
-      (this.treegrid as TreeGridComponent).refreshHeader();
+        (this.treegrid as TreeGridComponent).grid.columns.forEach((col: any) => {
+            (col as Column).headerTextAlign = args.value as any;
+        });
+        (this.treegrid as TreeGridComponent).refreshHeader();
     }
     ngOnInit(): void {
         this.data = sampleData;

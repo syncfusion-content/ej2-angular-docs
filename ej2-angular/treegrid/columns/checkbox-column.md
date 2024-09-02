@@ -20,7 +20,6 @@ The following demo demonstrates the hierarchical selection of checkboxes in the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/checkbox-column-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/checkbox-column-cs1/src/main.ts %}
 {% endhighlight %}
@@ -42,7 +41,6 @@ The following demo demonstrates selecting checkboxes in the tree grid using the 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/checkbox-column-cs2/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/checkbox-column-cs2/src/main.ts %}
 {% endhighlight %}
@@ -62,7 +60,6 @@ In the Tree Grid, you can retrieve details of checked records when using the che
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/checkbox-column-cs7/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/checkbox-column-cs7/src/main.ts %}
 {% endhighlight %}
@@ -80,7 +77,6 @@ In the following demo, rendering checkboxes with a checked state at the initial 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/checkbox-column-cs3/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/checkbox-column-cs3/src/main.ts %}
 {% endhighlight %}
@@ -100,7 +96,6 @@ In the following demo, hiding checkboxes for parent rows in the tree grid by usi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/checkbox-column-cs4/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/checkbox-column-cs4/src/main.ts %}
 {% endhighlight %}
@@ -116,7 +111,6 @@ In the following demo, hiding checkboxes for child rows in the tree grid by usin
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/checkbox-column-cs6/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/checkbox-column-cs6/src/main.ts %}
 {% endhighlight %}
@@ -136,7 +130,6 @@ In the following demo, customize the background color of selected rows by utiliz
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/checkbox-column-cs5/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/checkbox-column-cs5/src/main.ts %} 
 {% endhighlight %}

@@ -1,23 +1,14 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { TreeGridAllModule,PageService, SelectionService, RowDDService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-import { Component, OnInit} from '@angular/core';
+import { TreeGridAllModule, PageService, SelectionService, RowDDService } from '@syncfusion/ej2-angular-treegrid'
+import { Component, OnInit } from '@angular/core';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { sampleData } from './datasource';
 
 @Component({
-imports: [
-        
-        TreeGridAllModule,
-        ButtonModule,
-        DropDownListAllModule
-    ],
-
-providers: [PageService, SelectionService, RowDDService],
-standalone: true,
+    imports: [TreeGridAllModule],
+    providers: [PageService, SelectionService, RowDDService],
+    standalone: true,
     selector: 'app-container',
     template: `
         <ejs-treegrid id='TreeGrid' #treegrid [dataSource]='data' height='250' [allowRowDragAndDrop]='true'
@@ -33,14 +24,14 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
     public data?: Object[];
-     @ViewChild('treegrid')
+    @ViewChild('treegrid')
     public treegridObj?: TreeGridComponent;
     ngOnInit(): void {
         this.data = sampleData;
     }
     public rowDrop(args: any) {
         //Here prevent the row drop action
-          args.cancel = true;
-      
+        args.cancel = true;
+
     };
 }

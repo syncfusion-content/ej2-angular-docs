@@ -1,27 +1,16 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { TreeGridComponent, ReorderService } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule,],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height='285' [treeColumnIndex]='1' childMapping='subtasks'>
                  <e-columns>
@@ -32,16 +21,16 @@ standalone: true,
                     <e-column field='progress' headerText='Progress' textAlign='Right' width=120></e-column>
                  </e-columns>
                </ejs-treegrid>`,
-    
+
 })
 export class AppComponent implements OnInit {
 
     public data?: Object[];
-   
+
     ngOnInit(): void {
         this.data = sampleData;
     }
-    
+
 }
 
 

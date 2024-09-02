@@ -15,13 +15,13 @@ This section explains the steps required to create a simple Standalone Angular P
 ## Setup Angular Environment
 
 You can use the [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI globally use the following command.
+To install the latest Angular CLI globally use the following command.
 
 ```bash
-npm install -g @angular/cli@16.0.1
+npm install -g @angular/cli
 ```
 
-N> Use the command **npm install --save @angular/cli@12.0.2** to install the latest Angular CLI version 12.0.2
+N> Use the command **npm install --save @angular/cli@12.0.2** to install the Angular CLI version 12.0.2
 
 ## Create an Angular Application
 

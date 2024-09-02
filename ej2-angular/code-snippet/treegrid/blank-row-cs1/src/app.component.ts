@@ -1,27 +1,20 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
 import { Component, OnInit } from '@angular/core';
 import { projectData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { RowDataBoundEventArgs, Column } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
-  selector: 'app-container',
-  template: `<ejs-treegrid #treegrid [dataSource]='data' height='315px' [treeColumnIndex]='1' idMapping='TaskID' parentIdMapping="parentID" (rowDataBound)='rowDataBound($event)'>
+    imports: [ TreeGridModule, ],
+   providers: [PageService,
+        SortService,
+        FilterService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='315px' [treeColumnIndex]='1' idMapping='TaskID' parentIdMapping="parentID" (rowDataBound)='rowDataBound($event)'>
                 <e-columns>
                     <e-column field='TaskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                     <e-column field='TaskName' headerText='Task Name' textAlign='Left' width=180></e-column>
@@ -32,34 +25,35 @@ standalone: true,
               </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
-  public data?: object[];
-  
-  @ViewChild('treegrid')
-  public treegrid?: TreeGridComponent;
+    public data?: object[];
 
-  ngOnInit(): void {
-    this.data = projectData;
-  }
-  rowDataBound(args: RowDataBoundEventArgs) {
-    let count = 0;
-    let data: any = projectData[(args.data as any).index];
-    let keys = Object.keys(data);
-    for (let i = 0; i < keys.length; i++) {
-      if (
-        data[keys[i]] == null ||
-        data[keys[i]] == '' ||
-        data[keys[i]] == undefined
-      ) {
-        count++;
-      }
+    @ViewChild('treegrid')
+    public treegrid?: TreeGridComponent;
+
+    ngOnInit(): void {
+        this.data = projectData;
     }
-    if (count == keys.length || count == keys.length - 1) {
-      var col: any = (this.treegrid as TreeGridComponent).columns;
-      for (let i = 0; i < col.length; i++) {
-        if ((col[i] as Column).displayAsCheckBox) {
-          (args.row as Element).children[i].innerHTML = '';
+    rowDataBound(args: RowDataBoundEventArgs) {
+        let count = 0;
+        let data: any = projectData[(args.data as any).index];
+        let keys = Object.keys(data);
+        for (let i = 0; i < keys.length; i++) {
+            if (
+                data[keys[i]] == null ||
+                data[keys[i]] == '' ||
+                data[keys[i]] == undefined
+            ) {
+                count++;
+            }
         }
-      }
+        if (count == keys.length || count == keys.length - 1) {
+            var col: any = (this.treegrid as TreeGridComponent).columns;
+            for (let i = 0; i < col.length; i++) {
+                if ((col[i] as Column).displayAsCheckBox) {
+                    (args.row as Element).children[0].innerHTML='';
+                    (args.row as Element).children[i].innerHTML = '';
+                }
+            }
+        }
     }
-  }
 }

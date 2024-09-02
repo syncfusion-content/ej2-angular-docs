@@ -24,7 +24,6 @@ Here's an example of how to enable drag and drop within the tree grid:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/row-cs3/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-cs3/src/main.ts %}
 {% endhighlight %}
@@ -94,7 +93,6 @@ Here's an example code snippet that demonstrates how to enable row drag and drop
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/row-cs4/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-cs4/src/main.ts %}
 {% endhighlight %}
@@ -452,7 +450,6 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/dragndrop-cs3/src/main.ts %}
 {% endhighlight %}
@@ -512,7 +509,6 @@ In the following example, the drop action of the **Child** position is prevented
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/row-cs5/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-cs5/src/main.ts %}
 {% endhighlight %}

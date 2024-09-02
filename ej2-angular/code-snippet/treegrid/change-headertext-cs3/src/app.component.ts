@@ -1,31 +1,16 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import {TextBoxModule} from '@syncfusion/ej2-angular-inputs'
-
-
-
-import { Component, OnInit} from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
-import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,DropDownListAllModule,
-        TextBoxModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule, ButtonModule],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<div>
                     <label style="padding: 30px 17px 0 0" >Click the change button :</label>
@@ -48,23 +33,23 @@ export class AppComponent implements OnInit {
 
     public data?: Object[];
     public headerTextMap: { [key: string]: string } = {
-         'taskID' :'Task ID' ,
-       'taskName': 'Task Name' ,
-        'startDate': 'Start Date' ,
+        'taskID': 'Task ID',
+        'taskName': 'Task Name',
+        'startDate': 'Start Date',
         'duration': 'Duration',
-       'progress': 'Progress' 
+        'progress': 'Progress'
     };
-          
-      @ViewChild('treegrid')
-      public treegrid?: TreeGridComponent;
-    
-      public ChangeHeaderText(): void {
-        this.treegrid?.columns.forEach((column:  any) => {
-          column.headerText = this.headerTextMap[column.field as string];
-      });
-      this.treegrid?.refreshHeader();
+
+    @ViewChild('treegrid')
+    public treegrid?: TreeGridComponent;
+
+    public ChangeHeaderText(): void {
+        this.treegrid?.columns.forEach((column: any) => {
+            column.headerText = this.headerTextMap[column.field as string];
+        });
+        this.treegrid?.refreshHeader();
     }
-      
+
     ngOnInit(): void {
         this.data = sampleData;
     }

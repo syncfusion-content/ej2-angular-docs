@@ -1,21 +1,15 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { textdata } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule
-    ],
-
-,
-standalone: true,
-  selector: 'app-container',
-  template: `<ejs-treegrid #treegrid [dataSource]='data' height=291 width='auto' childMapping= 'Children' >
+    imports: [TreeGridModule],
+    standalone: true,
+    selector: 'app-container',
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height=291 width='auto' childMapping= 'Children' >
                 <e-columns>
                     <e-column field = 'EmpID' headerText = 'Employee ID' width = '180'></e-column>
                     <e-column headerText="Employee Image" width="150" textAlign="Center"></e-column>
@@ -59,12 +53,12 @@ standalone: true,
             </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
-  public data?: Object[];
+    public data?: Object[];
 
-  @ViewChild('treegrid')
-  public treegrid?: TreeGridComponent;
+    @ViewChild('treegrid')
+    public treegrid?: TreeGridComponent;
 
-  ngOnInit(): void {
-    this.data = textdata;
-  }
+    ngOnInit(): void {
+        this.data = textdata;
+    }
 }

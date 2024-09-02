@@ -1,26 +1,15 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { projectData } from './datasource';
 import { PageSettingsModel, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule,],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' parentIdMapping='parentID' idMapping='TaskID' height=265 allowPaging="true" [pageSettings]="pageSettings" (rowDataBound)='rowDataBound($event)'>
                     <e-columns> 
@@ -33,28 +22,28 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
 
-  public data?: Object[];
-  @ViewChild('treegrid')
-  public treegrid?: TreeGridComponent;
-  public pageSettings?: PageSettingsModel;
+    public data?: Object[];
+    @ViewChild('treegrid')
+    public treegrid?: TreeGridComponent;
+    public pageSettings?: PageSettingsModel;
 
-  ngOnInit(): void {
-    this.data = projectData;
-    this.pageSettings = { pageSize: 8 };
-  }
-  rowDataBound({ row }: any) {
-    if (row) {
-      var rowIndex = parseInt(row.getAttribute('aria-rowIndex') as string);
-      var currentPageNumber = (this.treegrid as TreeGridComponent).grid
-        .pageSettings.currentPage;
-      var pageSize = (this.treegrid as TreeGridComponent).pageSettings.pageSize;
-      var startIndex =
-        ((currentPageNumber as number) - 1) * (pageSize as number);
-      (row.querySelector('.e-rowcell') as Element).innerHTML = (
-        startIndex + rowIndex
-      ).toString();
+    ngOnInit(): void {
+        this.data = projectData;
+        this.pageSettings = { pageSize: 8 };
     }
-  }
+    rowDataBound({ row }: any) {
+        if (row) {
+            var rowIndex = parseInt(row.getAttribute('aria-rowIndex') as string);
+            var currentPageNumber = (this.treegrid as TreeGridComponent).grid
+                .pageSettings.currentPage;
+            var pageSize = (this.treegrid as TreeGridComponent).pageSettings.pageSize;
+            var startIndex =
+                ((currentPageNumber as number) - 1) * (pageSize as number);
+            (row.querySelector('.e-rowcell') as Element).innerHTML = (
+                startIndex + rowIndex
+            ).toString();
+        }
+    }
 }
 
 

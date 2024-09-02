@@ -20,7 +20,6 @@ To enable the `headerText` property, you simply need to define it in the **e-col
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-render-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-render-cs1/src/main.ts %}
 {% endhighlight %}
@@ -41,7 +40,6 @@ In this demo, the custom element is rendered for both **taskName** and **duratio
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-header-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-header-cs1/src/main.ts %}
 {% endhighlight %}
@@ -62,7 +60,6 @@ You can customize the appearance of the stacked header elements by using the hea
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-header-cs2/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-header-cs2/src/main.ts %}
 {% endhighlight %}
@@ -85,7 +82,6 @@ Here is an example of using the `headerTextAlign` property to align the text of 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/header-align-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/header-align-cs1/src/main.ts %}
 {% endhighlight %}
@@ -118,7 +114,6 @@ In the example below, the `textWrapSettings.wrapMode` property is set to **Heade
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/auto-wrap-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/auto-wrap-cs1/src/main.ts %}
 {% endhighlight %}
@@ -148,7 +143,6 @@ To change the height of the header dynamically, you can use the [getHeaderConten
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/columns-cs2/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/columns-cs2/src/main.ts %}
 {% endhighlight %}
@@ -201,7 +195,6 @@ Here is an example of how to change the header text of a column using the `getCo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/change-headertext-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/change-headertext-cs1/src/main.ts %}
 {% endhighlight %}
@@ -217,7 +210,6 @@ If you want to change the header text of all columns in the tree grid, you can l
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/change-headertext-cs3/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/change-headertext-cs3/src/main.ts %}
 {% endhighlight %}
@@ -270,7 +262,6 @@ setHeaderHeight(args) {
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/header-orientation-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/header-orientation-cs1/src/main.ts %}
 {% endhighlight %}
@@ -645,7 +636,6 @@ Here's an example of how to use the `beforeRender` event to add a custom tooltip
 {% highlight ts tabtitle="app.component.ts" %} 
 {% include code-snippet/treegrid/header-tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/header-tooltip-cs1/src/main.ts %}
 {% endhighlight %}   
@@ -675,7 +665,6 @@ Here's an example that demonstrates how to customize the appearance of a specifi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/header-style-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/header-style-cs1/src/main.ts %}
 {% endhighlight %}
@@ -713,7 +702,6 @@ The following example demonstrates how to customize the appearance of the **Task
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/header-style-cs2/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/header-style-cs2/src/main.ts %}
 {% endhighlight %}
@@ -741,7 +729,6 @@ Here's an example of how to use these methods to change the style of a specific 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/header-style-cs3/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/header-style-cs3/src/main.ts %}
 {% endhighlight %}
@@ -761,7 +748,6 @@ The following example demonstrates how to add a `headerCellInfo` event handler t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/header-style-cs4/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/header-style-cs4/src/main.ts %}
 {% endhighlight %}
@@ -781,7 +767,6 @@ The following example demonstrates how to use the `refreshHeader` method to upda
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/refresh-header-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/refresh-header-cs1/src/main.ts %}
 {% endhighlight %}

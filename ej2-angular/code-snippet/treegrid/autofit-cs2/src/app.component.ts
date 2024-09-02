@@ -1,26 +1,15 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { PageService, SortService, FilterService,ColumnChooserService,ToolbarService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-
-
+import { PageService, SortService, FilterService, ColumnChooserService, ToolbarService } from '@syncfusion/ej2-angular-treegrid'
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
-import { TreeGridComponent,TreeActionEventArgs, } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent, TreeActionEventArgs, } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,ColumnChooserService,ToolbarService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule,],
+    providers: [PageService, ColumnChooserService, ToolbarService, SortService, FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' [allowPaging]="true"
                  [toolbar]="toolbarItems" (actionComplete)="onActionComplete($event)" [showColumnChooser]= 'true' >
@@ -34,21 +23,21 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
 
-  public data?: object[];
-  @ViewChild('treegrid')
-  public treegrid?: TreeGridComponent; 
-  public toolbarItems?: string[];
+    public data?: object[];
+    @ViewChild('treegrid')
+    public treegrid?: TreeGridComponent;
+    public toolbarItems?: string[];
 
-  ngOnInit(): void {
-    this.data = sampleData;
-    this.toolbarItems = ['ColumnChooser'];
-  }
-
-  public onActionComplete({ requestType }: TreeActionEventArgs): void {
-    if (requestType === 'columnstate') {
-      (this.treegrid as TreeGridComponent).autoFitColumns();
+    ngOnInit(): void {
+        this.data = sampleData;
+        this.toolbarItems = ['ColumnChooser'];
     }
-  }
+
+    public onActionComplete({ requestType }: TreeActionEventArgs): void {
+        if (requestType === 'columnstate') {
+            (this.treegrid as TreeGridComponent).autoFitColumns();
+        }
+    }
 }
 
 

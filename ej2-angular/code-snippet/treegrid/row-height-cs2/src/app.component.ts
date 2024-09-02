@@ -2,28 +2,17 @@ import { NgModule, } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { RowDataBoundEventArgs } from '@syncfusion/ej2-grids';
 import { sampleData } from './datasource';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
-  selector: 'app-container',
-  template: `<ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' height='250' childMapping='subtasks' (rowDataBound)='rowDataBound($event)' >
+    imports: [TreeGridModule,],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' height='250' childMapping='subtasks' (rowDataBound)='rowDataBound($event)' >
                   <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                     <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
@@ -33,16 +22,16 @@ standalone: true,
                 </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
-  public data?: Object[];
-  @ViewChild('treegrid')
-  public treegrid: TreeGridComponent | undefined;
+    public data?: Object[];
+    @ViewChild('treegrid')
+    public treegrid: TreeGridComponent | undefined;
 
-  ngOnInit(): void {
-    this.data = sampleData;
-  }
-  public rowDataBound(args: RowDataBoundEventArgs) {
-    if ((args.data as any)['taskID'] === 5) {
-      args.rowHeight = 90;
+    ngOnInit(): void {
+        this.data = sampleData;
     }
-  }
+    public rowDataBound(args: RowDataBoundEventArgs) {
+        if ((args.data as any)['taskID'] === 5) {
+            args.rowHeight = 90;
+        }
+    }
 }

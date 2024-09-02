@@ -1,25 +1,16 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { RowDDService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
-    ],
-
-providers: [RowDDService],
-standalone: true,
-  selector: 'app-container',
-  template: `<div>
+    imports: [TreeGridModule],
+    providers: [RowDDService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<div>
                     <div style="float:left;width:49%">
                         <ejs-treegrid id='TreeGrid' [dataSource]='data' [allowRowDragAndDrop]='true' height='250' [treeColumnIndex]='1' [rowDropSettings]='first_treeDrop'
                              [selectionSettings]='selectionSettings' childMapping='subtasks' >
@@ -45,14 +36,14 @@ standalone: true,
                 </div>`,
 })
 export class AppComponent implements OnInit {
-  public data?: Object[];
-  public first_treeDrop?: Object;
-  public second_treeDrop?: Object;
-  public selectionSettings?: Object;
-  ngOnInit(): void {
-    this.data = sampleData;
-    this.selectionSettings = { type: 'Multiple' };
-    this.first_treeDrop = { targetID: 'destTree' };
-    this.second_treeDrop = { targetID: 'TreeGrid' };
-  }
+    public data?: Object[];
+    public first_treeDrop?: Object;
+    public second_treeDrop?: Object;
+    public selectionSettings?: Object;
+    ngOnInit(): void {
+        this.data = sampleData;
+        this.selectionSettings = { type: 'Multiple' };
+        this.first_treeDrop = { targetID: 'destTree' };
+        this.second_treeDrop = { targetID: 'TreeGrid' };
+    }
 }

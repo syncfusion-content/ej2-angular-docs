@@ -1,13 +1,10 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import {TextBoxModule} from '@syncfusion/ej2-angular-inputs'
-
-
-
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
@@ -15,17 +12,9 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,DropDownListAllModule,
-        TextBoxModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule, ButtonModule, DropDownListAllModule, TextBoxModule],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<div style="display: flex">
                <label style="padding: 30px 20px 0 0" > Select column name  :</label>
@@ -64,22 +53,22 @@ export class AppComponent implements OnInit {
         { text: 'Start Date', value: 'startDate' },
         { text: 'Duration', value: 'duration' },
         { text: 'Progress', value: 'progress' }
-      ];
-      public field?: Object = { text: 'text', value: 'value' };
-      @ViewChild('dropdown') public dropdown?: DropDownListComponent;
-      @ViewChild('textbox') public textbox?: TextBoxComponent;
-      @ViewChild('treegrid')
-      public treegrid?: TreeGridComponent;
-    
-      public ChangeHeaderText(): void {
+    ];
+    public field?: Object = { text: 'text', value: 'value' };
+    @ViewChild('dropdown') public dropdown?: DropDownListComponent;
+    @ViewChild('textbox') public textbox?: TextBoxComponent;
+    @ViewChild('treegrid')
+    public treegrid?: TreeGridComponent;
+
+    public ChangeHeaderText(): void {
         if ((this.textbox as TextBoxComponent).element.value.trim() !== '') {
-          const column = (this.treegrid as TreeGridComponent).grid.getColumnByField(
-            (((this.dropdown as DropDownListComponent).value as string))
-          );
-          column.headerText = (this.textbox as TextBoxComponent).element.value;
-          (this.treegrid as TreeGridComponent).refreshHeader();
+            const column = (this.treegrid as TreeGridComponent).grid.getColumnByField(
+                (((this.dropdown as DropDownListComponent).value as string))
+            );
+            column.headerText = (this.textbox as TextBoxComponent).element.value;
+            (this.treegrid as TreeGridComponent).refreshHeader();
         }
-      }
+    }
     ngOnInit(): void {
         this.data = sampleData;
     }

@@ -1,26 +1,18 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { RowDDService } from '@syncfusion/ej2-angular-treegrid'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule,
-    ],
-
-providers: [RowDDService],
-standalone: true,
-  selector: 'app-container',
-  template: `
+    imports: [TreeGridModule, ButtonModule],
+    providers: [RowDDService],
+    standalone: true,
+    selector: 'app-container',
+    template: `
     <button ejs-button (click)="Indenting()">Indent</button>
     <button ejs-button (click)="Outdenting()">Outdent</button>
     <ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' height='270' childMapping='subtasks'  >
@@ -33,25 +25,25 @@ standalone: true,
     </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
-  @ViewChild('treegrid')
-  public treegrid?: TreeGridComponent;
-  public data?: Object[];
+    @ViewChild('treegrid')
+    public treegrid?: TreeGridComponent;
+    public data?: Object[];
 
-  ngOnInit(): void {
-    this.data = sampleData;
-  }
+    ngOnInit(): void {
+        this.data = sampleData;
+    }
 
-  public Indenting(): void {
-    //Here, the row is selected before indenting by passing the index in the selectRow method.
-    this.treegrid?.selectRow(2);
-    //After selecting the row, the selected row is indented using the indent method.
-    this.treegrid?.indent();
-  }
+    public Indenting(): void {
+        //Here, the row is selected before indenting by passing the index in the selectRow method.
+        this.treegrid?.selectRow(2);
+        //After selecting the row, the selected row is indented using the indent method.
+        this.treegrid?.indent();
+    }
 
-  public Outdenting(): void {
-    //Here, the row is selected before outdenting by passing the index in the selectRow method.
-    this.treegrid?.selectRow(2);
-    //After selecting the row, the selected row is outdented using the outdent method.
-    this.treegrid?.outdent();
-  }
+    public Outdenting(): void {
+        //Here, the row is selected before outdenting by passing the index in the selectRow method.
+        this.treegrid?.selectRow(2);
+        //After selecting the row, the selected row is outdented using the outdent method.
+        this.treegrid?.outdent();
+    }
 }

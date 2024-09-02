@@ -1,27 +1,19 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
+import { CommonModule } from '@angular/common';
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-
-import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import {
-  TreeGridComponent,
-  DetailRowService,
-} from '@syncfusion/ej2-angular-treegrid';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { TreeGridComponent, DetailRowService, } from '@syncfusion/ej2-angular-treegrid';
 import { textdata } from './datasource';
 import { Internationalization } from '@syncfusion/ej2-base';
 
 let instance: Internationalization = new Internationalization();
 
 @Component({
-imports: [
-        
-        TreeGridModule
-    ],
-
-,
-standalone: true,
-  selector: 'app-container',
-  template: `<ejs-treegrid #treegrid [dataSource]='data' height=317 width='auto' childMapping= 'Children' >
+    imports: [TreeGridModule,CommonModule],
+    standalone: true,
+    selector: 'app-container',
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height=317 width='auto' childMapping= 'Children' >
                 <e-columns>
                     <e-column field='Name' headerText='First Name' width='160'></e-column>
                     <e-column field='DOB' headerText = 'DOB' width='105' type='date' format='yMd'></e-column>
@@ -44,22 +36,22 @@ standalone: true,
                   </div>
                  </ng-template>
               </ejs-treegrid>`,
-  providers: [DetailRowService],
+    providers: [DetailRowService],
 })
 export class AppComponent implements OnInit {
-  public data?: Object[];
+    public data?: Object[];
 
-  @ViewChild('treegrid')
-  public treegrid?: TreeGridComponent;
+    @ViewChild('treegrid')
+    public treegrid?: TreeGridComponent;
 
-  ngOnInit(): void {
-    this.data = textdata;
-  }
+    ngOnInit(): void {
+        this.data = textdata;
+    }
 
-  public format(value: Date): string {
-    return instance.formatDate(value, { skeleton: 'yMd', type: 'date' });
-  }
+    public format(value: Date): string {
+        return instance.formatDate(value, { skeleton: 'yMd', type: 'date' });
+    }
 }
 export interface DateFormat extends Window {
-  format?: Function;
+    format?: Function;
 }

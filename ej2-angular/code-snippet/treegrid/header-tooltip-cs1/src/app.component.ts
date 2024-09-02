@@ -1,27 +1,15 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-
-
-import { Component, OnInit,} from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import { sampleData } from './datasource';
-import { TooltipComponent, TooltipEventArgs } from "@syncfusion/ej2-angular-popups";
+import { TooltipComponent, TooltipEventArgs , TooltipAllModule} from "@syncfusion/ej2-angular-popups";
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        TooltipAllModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule,  TooltipAllModule],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `  <ejs-tooltip #tooltip (beforeRender)="beforeRender($event)" target=".e-headertext">
                     <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks'  [allowFiltering]="true" [allowSorting]="true">
@@ -41,11 +29,11 @@ export class AppComponent implements OnInit {
     @ViewChild('tooltip')
     public toolTip?: TooltipComponent;
     public columnDescriptions: { [key: string]: string } = {
-      "Task ID": "A unique number assigned to each task.",
-      "Task Name": "The process of the task name.",
-      "Duration": "The duration of the task.",
-      "Progress": "The progress state of the task.",
-      "Start Date": "The date when the order was placed.",
+        "Task ID": "A unique number assigned to each task.",
+        "Task Name": "The process of the task name.",
+        "Duration": "The duration of the task.",
+        "Progress": "The progress state of the task.",
+        "Start Date": "The date when the order was placed.",
     };
     ngOnInit(): void {
         this.data = sampleData;
@@ -53,9 +41,9 @@ export class AppComponent implements OnInit {
     beforeRender(args: TooltipEventArgs) {
         const description = this.columnDescriptions[args.target.innerText];
         if (description) {
-          (this.toolTip as TooltipComponent).content = args.target.innerText + ": " + description;
+            (this.toolTip as TooltipComponent).content = args.target.innerText + ": " + description;
         }
-      }
+    }
 }
 
 

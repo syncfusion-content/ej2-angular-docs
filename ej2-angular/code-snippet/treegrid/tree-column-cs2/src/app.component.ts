@@ -1,28 +1,19 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent, Column } from '@syncfusion/ej2-angular-treegrid';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
-  selector: 'app-container',
-  encapsulation: ViewEncapsulation.None,
-  template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' (queryCellInfo)=querycellinfo($event)>
+    imports: [TreeGridModule],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
+    selector: 'app-container',
+    encapsulation: ViewEncapsulation.None,
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' (queryCellInfo)=querycellinfo($event)>
                 <e-columns>
                   <e-column field='taskID' headerText='Task ID' width=90></e-column>
                   <e-column field='taskName' headerText='Task Name' width=180></e-column>
@@ -30,27 +21,27 @@ standalone: true,
                   <e-column field='duration' headerText='Duration' width=80></e-column>
                 </e-columns>
               </ejs-treegrid>`,
-  styles: [
-      ` 
+    styles: [
+        ` 
           .indents {
             text-indent: 20px !important;
           }
       `],
 })
 export class AppComponent implements OnInit {
-  public data?: object[];
-  @ViewChild('treegrid') public treegrid?: TreeGridComponent;
+    public data?: object[];
+    @ViewChild('treegrid') public treegrid?: TreeGridComponent;
 
-  ngOnInit(): void {
-    this.data = sampleData;
-  }
-
-  querycellinfo(args: any): void {
-    if (
-      !args.data.hasChildRecords &&
-      args.column.index == (this.treegrid as TreeGridComponent).treeColumnIndex
-    ) {
-      args.cell.classList.add('indents');
+    ngOnInit(): void {
+        this.data = sampleData;
     }
-  }
+
+    querycellinfo(args: any): void {
+        if (
+            !args.data.hasChildRecords &&
+            args.column.index == (this.treegrid as TreeGridComponent).treeColumnIndex
+        ) {
+            args.cell.classList.add('indents');
+        }
+    }
 }

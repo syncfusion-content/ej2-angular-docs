@@ -1,30 +1,21 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { PageService, SortService, FilterService  } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import {TextBoxModule} from '@syncfusion/ej2-angular-inputs';
-import {DropDownListModule} from '@syncfusion/ej2-angular-dropdowns';
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
-import {  ResizeMode } from '@syncfusion/ej2-angular-grids';
+import { ResizeMode } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
-import { ResizeService,TreeGridComponent  } from '@syncfusion/ej2-angular-treegrid';
+import { ResizeService, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule, TextBoxModule,DropDownListModule
-    ],
-
-providers: [PageService,
-                SortService,ResizeService ,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule, ButtonModule, TextBoxModule, DropDownListModule],
+    providers: [PageService, SortService, ResizeService, FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<div style="display:flex;">
                 <label style="padding: 10px 10px 26px 0">Change the field: </label>
@@ -59,19 +50,19 @@ export class AppComponent implements OnInit {
     @ViewChild('textbox')
     public textbox?: any;
 
-    ngOnInit(): void { 
+    ngOnInit(): void {
         this.data = sampleData;
     }
 
-   public ddlData: object[] = [
-    { text: 'taskID', value: 'taskID' },
-    { text: 'taskName', value: 'taskName' },
-    { text: 'startDate', value: 'startDate' },
-    { text: 'duration', value: 'duration' },
-    { text: 'progress', value: 'progress' },
-  ];
-  onExternalResize() {
-    (this.treegrid as TreeGridComponent).getColumnByField((this.dropDown as DropDownListComponent).value as string).width = this.textbox.element.value;
-    (this.treegrid as TreeGridComponent).refreshColumns();
-  }
+    public ddlData: object[] = [
+        { text: 'taskID', value: 'taskID' },
+        { text: 'taskName', value: 'taskName' },
+        { text: 'startDate', value: 'startDate' },
+        { text: 'duration', value: 'duration' },
+        { text: 'progress', value: 'progress' },
+    ];
+    onExternalResize() {
+        (this.treegrid as TreeGridComponent).getColumnByField((this.dropDown as DropDownListComponent).value as string).width = this.textbox.element.value;
+        (this.treegrid as TreeGridComponent).refreshColumns();
+    }
 }

@@ -1,24 +1,17 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { TreeGridModule, ResizeService } from '@syncfusion/ej2-angular-treegrid'
+import { TreeGridModule, } from '@syncfusion/ej2-angular-treegrid'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
-import {  ResizeMode } from '@syncfusion/ej2-angular-grids';
+import { ResizeMode } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
-import { ResizeService,TreeGridComponent  } from '@syncfusion/ej2-angular-treegrid';
+import { ResizeService, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,DropDownListAllModule
-    ],
-
-providers: [ResizeService],
-standalone: true,
+    imports: [TreeGridModule, DropDownListAllModule],
+    providers: [ResizeService],
+    standalone: true,
     selector: 'app-container',
     template: `<div style="display: flex">
                    <label style="padding: 10px 10px 26px 0"> Change the resize mode: </label>
@@ -42,16 +35,16 @@ export class AppComponent implements OnInit {
     @ViewChild('treegrid')
     public treegrid?: TreeGridComponent;
     public ddlData: object[] = [
-      { text: 'Normal', value: 'Normal' },
-      { text: 'Auto', value: 'Auto' },
+        { text: 'Normal', value: 'Normal' },
+        { text: 'Auto', value: 'Auto' },
     ];
-    ngOnInit(): void { 
+    ngOnInit(): void {
         this.data = sampleData;
     }
 
     valueChange(args: ChangeEventArgs): void {
         (this.treegrid as TreeGridComponent).grid.resizeSettings.mode = (args.value as ResizeMode);
-      }
+    }
 }
 
 

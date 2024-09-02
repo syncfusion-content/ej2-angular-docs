@@ -1,29 +1,15 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { PageService, SortService, FilterService,ToolbarService,TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { PageService, SortService, FilterService, ToolbarService, TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { ColorPickerModule } from '@syncfusion/ej2-angular-inputs'
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { textdata } from './datasource';
 import { ColorPickerEventArgs } from '@syncfusion/ej2-angular-inputs';
-import { TreeGridComponent,} from '@syncfusion/ej2-angular-treegrid'
+import { TreeGridComponent, } from '@syncfusion/ej2-angular-treegrid'
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        ColorPickerModule 
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                ToolbarService],
-standalone: true,
+    imports: [TreeGridModule, ColorPickerModule],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height=291 width='auto' childMapping= 'Children' [enableHover]="false">
                     <e-columns>
@@ -42,23 +28,23 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
 
-        public data?: Object[] ;
-        @ViewChild('treegrid')
-        treegrid?: TreeGridComponent;
-        public modeSettings = 'Palette'
-            
-        ngOnInit(): void {
-            this.data =textdata;
-        }
-        
-        change(args: ColorPickerEventArgs) {
-            const selectedRows = (this.treegrid as TreeGridComponent).getSelectedRows() as HTMLElement[];
-            for (const row of selectedRows) {
-                row.style.backgroundColor = args.value as string;
-            }
-            (this.treegrid as TreeGridComponent).clearSelection();
-        }
+    public data?: Object[];
+    @ViewChild('treegrid')
+    treegrid?: TreeGridComponent;
+    public modeSettings = 'Palette'
+
+    ngOnInit(): void {
+        this.data = textdata;
     }
+
+    change(args: ColorPickerEventArgs) {
+        const selectedRows = (this.treegrid as TreeGridComponent).getSelectedRows() as HTMLElement[];
+        for (const row of selectedRows) {
+            row.style.backgroundColor = args.value as string;
+        }
+        (this.treegrid as TreeGridComponent).clearSelection();
+    }
+}
 
 
 

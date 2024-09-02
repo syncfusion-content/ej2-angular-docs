@@ -1,24 +1,13 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, OnInit, } from '@angular/core';
 import { stringData } from './datasource';
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule,],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' >
                     <e-columns>
@@ -37,9 +26,10 @@ export class AppComponent implements OnInit {
         this.data = stringData;
     }
     orderFormatter(field: string, data: Object | any, column: Object): string {
-        return data[field].map(function (s: {lastName: string, firstName: string}): string {
-            return s.lastName || s.firstName }).join(' ');
-    }   
+        return data[field].map(function (s: { lastName: string, firstName: string }): string {
+            return s.lastName || s.firstName
+        }).join(' ');
+    }
 }
 
 
