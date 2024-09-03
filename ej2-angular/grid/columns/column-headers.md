@@ -119,7 +119,6 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid/header-template-cs1/src/main.ts %}
 {% endhighlight %}
