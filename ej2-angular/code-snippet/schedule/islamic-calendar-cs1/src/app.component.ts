@@ -12,17 +12,17 @@ import {
   AgendaService, TimelineViewsService, TimelineMonthService, EventSettingsModel, WorkWeekService
 } from '@syncfusion/ej2-angular-schedule';
 import { scheduleData } from './datasource';
-import * as localeObj from "./locale.json";
-import * as numberingSystems from "./numberingSystems.json";
-import * as ca_gregorian from "./ca-gregorian.json";
-import * as numbers from "./numbers.json";
-import * as timeZoneNames from "./timeZoneNames.json";
-import * as ca_islamic from "./ca-islamic.json";
+import * as localeObj from './locale.json';
+import arNumberData from '@syncfusion/ej2-cldr-data/main/ar/numbers.json';
+import artimeZoneData from '@syncfusion/ej2-cldr-data/main/ar/timeZoneNames.json';
+import arGregorian from '@syncfusion/ej2-cldr-data/main/ar/ca-gregorian.json';
+import arIslamic from '@syncfusion/ej2-cldr-data/main/ar/ca-islamic.json';
+import arNumberingSystem from '@syncfusion/ej2-cldr-data/supplemental/numberingSystems.json';
 
 Calendar.Inject(Islamic);
 
 L10n.load(localeObj);
-loadCldr(numberingSystems, ca_gregorian, numbers, timeZoneNames, ca_islamic);
+loadCldr(arNumberData, artimeZoneData, arGregorian, arIslamic, arNumberingSystem);
 
 @Component({
 imports: [
