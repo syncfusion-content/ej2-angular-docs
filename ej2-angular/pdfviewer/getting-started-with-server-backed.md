@@ -138,7 +138,21 @@ The output will appear as follows.
 {% include code-snippet/pdfviewer/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
+N> If you are using an Angular version below 17, you need import the **AppModule** in the **main.ts** file
+
+```typescript
+
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { AppModule } from './app/app.module';
+
+
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
+
+```
+
 {% previewsample "page.domainurl/samples/pdfviewer/getting-started-cs1" %}
 
 > For PDF Viewer serviceUrl creation, follow the steps provided in the [link](https://ej2.syncfusion.com/documentation/pdfviewer/how-to/create-pdfviewer-service/)
