@@ -125,7 +125,7 @@ import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
 })
 export class AppComponent implements OnInit {
   public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-  public resource: string = "https://cdn.syncfusion.com/ej2/23.1.43/dist/ej2-pdfviewer-lib";
+  public resource: string = "https://cdn.syncfusion.com/ej2/26.2.11/dist/ej2-pdfviewer-lib";
   ngOnInit(): void {
   }
 }
@@ -168,7 +168,7 @@ import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
 })
 export class AppComponent implements OnInit {
     public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-    public resource: string = "https://cdn.syncfusion.com/ej2/23.1.43/dist/ej2-pdfviewer-lib";
+    public resource: string = "https://cdn.syncfusion.com/ej2/26.2.11/dist/ej2-pdfviewer-lib";
     ngOnInit(): void {
     }
 }
@@ -178,7 +178,21 @@ export class AppComponent implements OnInit {
 {% include code-snippet/pdfviewer/getting-started-cs1-standalone/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
+N> If you are using an Angular version below 17, you need import the **AppModule** in the **main.ts** file
+
+```typescript
+
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { AppModule } from './app/app.module';
+
+
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
+
+```
+
 {% previewsample "page.domainurl/samples/pdfviewer/getting-started-cs1-standalone" %}
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Getting%20started%20-%20Standalone).
