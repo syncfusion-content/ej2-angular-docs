@@ -26,7 +26,7 @@ The following example shows chart preservation in Document Editor.
   
 {% previewsample "page.domainurl/samples/document-editor/import-cs1" %}
 
-# Supported Chart Types
+## Supported Chart Types
 
 The following chart types are supported in document editor
 * Scatter_Markers
