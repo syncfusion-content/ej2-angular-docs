@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Scheduler integrates different date-time formats and cultures, which allows it to function globally, thus meeting the diverse needs of different regions.
 
-You can adapt the Scheduler to various languages by parsing and formatting the date or number ([`Internationalization`](http://ej2.syncfusion.com/documentation/base/intl.html)), adding culture specific customization and translation to the text ([`Localization`](http://ej2.syncfusion.com/documentation/base/localization.html)).
+You can adapt the Scheduler to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization)), adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization)).
 
 ## Globalization
 
@@ -20,107 +20,30 @@ The Internationalization library provides support for formatting and parsing the
 
 By default, Scheduler is set to follow the English culture ('en-US'). If you want to go with different culture other than English, follow the below steps.
 
-* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
+* Install the `ej2-cldr-data` package using the Syncfusion npm package by running the command below..
 
   ```
-  npm install cldr-data --save
+  npm install @syncfusion/ej2-cldr-data --save
   ```
 
-Once the package is installed, you can find the culture specific JSON data under the location `\node_modules\cldr-data`.
-
-* Now import the installed CLDR JSON data into the `app.component.ts` file. To import JSON data, you need to install the JSON plugin loader. Here, we have used the SystemJS JSON plugin loader.
-
-  ```sh
-  npm install systemjs-plugin-json --save-dev
-  ```
-
-* Once installed, configure the `system.config.js` configuration settings as shown in the following code to map the `systemjs-plugin-json` loader.
-
-```typescript
-/**
- * System configuration for Angular samples
- * Adjust as necessary for your application needs.
- */
-(function (global) {
-  System.config({
-    paths: {
-      // paths serve as alias
-      'npm:': 'node_modules/',
-      "syncfusion:": "node_modules/@syncfusion/", // syncfusion alias
-    },
-    // map tells the System loader where to look for things
-    map: {
-      // our app is within the app folder
-      'app': 'app',
-
-      // angular bundles
-      '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
-      '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
-      '@angular/compiler': 'npm:@angular/compiler/bundles/compiler.umd.js',
-      '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.js',
-      '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
-      '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
-      '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
-      '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
-
-      // syncfusion bundles
-      "@syncfusion/ej2-inputs": "syncfusion:ej2-inputs/dist/ej2-inputs.umd.min.js",
-        "@syncfusion/ej2-calendars": "syncfusion:ej2-calendars/dist/ej2-calendars.umd.min.js",
-        "@syncfusion/ej2-lists": "syncfusion:ej2-lists/dist/ej2-lists.umd.min.js",
-        "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-schedule": "syncfusion:ej2-schedule/dist/ej2-schedule.umd.min.js",
-        "@syncfusion/ej2-data": "syncfusion:ej2-data/dist/ej2-data.umd.min.js",
-        "@syncfusion/ej2-buttons": "syncfusion:ej2-buttons/dist/ej2-buttons.umd.min.js",
-        "@syncfusion/ej2-popups": "syncfusion:ej2-popups/dist/ej2-popups.umd.min.js",
-        "@syncfusion/ej2-navigations": "syncfusion:ej2-navigations/dist/ej2-navigations.umd.min.js",
-        "@syncfusion/ej2-dropdowns": "syncfusion:ej2-dropdowns/dist/ej2-dropdowns.umd.min.js",
-        "@syncfusion/ej2-splitbuttons": "syncfusion:ej2-splitbuttons/dist/ej2-splitbuttons.umd.min.js",
-        "@syncfusion/ej2-angular-base": "syncfusion:ej2-angular-base/dist/ej2-angular-base.umd.min.js",
-        "@syncfusion/ej2-angular-schedule": "syncfusion:ej2-angular-schedule/dist/ej2-angular-schedule.umd.min.js",
-        "cldr-data": 'npm:cldr-data',
-        "plugin-json": "npm:systemjs-plugin-json/json.js",
-
-      // other libraries
-      'rxjs':                      'npm:rxjs',
-      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
-    },
-    meta: {
-      '*.json': { loader: 'plugin-json' }
-    },
-    // packages tells the System loader how to load when no filename and/or no extension
-    packages: {
-      app: {
-        defaultExtension: 'js',
-        meta: {
-          './*.js': {
-            loader: 'systemjs-angular-loader.js'
-          }
-        }
-      },
-      "cldr-data": { main: 'index.js', defaultExtension: 'js' },
-      rxjs: {
-        defaultExtension: 'js'
-      }
-    }
-  });
-})(this);
-```
+Once the package is installed, you can find the culture specific JSON data under the location `\node_modules\@syncfusion\ej2-cldr-data`.
 
 * Now import the required cultures from the installed location to `app.component.ts` file as given in the following code example.
+
+    1. numberingSystems.json
+    2. ca-gregorian.json
+    3. numbers.json
+    4. timeZoneNames.json
 
 ```typescript
 //import the loadCldr from ej2-base
 import { loadCldr} from '@syncfusion/ej2-base';
-import * as numberingSystems from 'cldr-data/supplemental/numberingSystems.json';
-import * as gregorian from 'cldr-data/main/fr-CH/ca-gregorian.json';
-import * as numbers from 'cldr-data/main/fr-CH/numbers.json';
-import * as timeZoneNames from 'cldr-data/main/fr-CH/timeZoneNames.json';
+import frNumberData from '@syncfusion/ej2-cldr-data/main/fr-CH/numbers.json';
+import frtimeZoneData from '@syncfusion/ej2-cldr-data/main/fr-CH/timeZoneNames.json';
+import frGregorian from '@syncfusion/ej2-cldr-data/main/fr-CH/ca-gregorian.json';
+import frNumberingSystem from '@syncfusion/ej2-cldr-data/supplemental/numberingSystems.json';
 
-// Angular CLI 8.0 and above versions
-loadCldr(numberingSystems['default'], gregorian['default'], numbers['default'], timeZoneNames['default']);
-
-// Angular CLI 8.0 below versions
-loadCldr(numberingSystems, gregorian, numbers, timeZoneNames);
+loadCldr(frNumberData, frtimeZoneData, frGregorian, frNumberingSystem);
 ```
 
 * Set the culture to Scheduler by using the `locale` property.
@@ -136,6 +59,8 @@ loadCldr(numberingSystems, gregorian, numbers, timeZoneNames);
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/schedule/localization-cs1" %}
+
+> Refer [here](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) for common information about globalization.
 
 ## Localizing the static Scheduler text
 
@@ -155,7 +80,7 @@ For example, the following code example lets you to define the French translatio
   
 {% previewsample "page.domainurl/samples/schedule/localization-cs2" %}
 
-The localized words for static text used in Scheduler and Recurrence Editor can be referred from the following code.
+The localized words for static text used in Scheduler and Recurrence Editor can be referred from the following code. You can access the static text for all cultures from [`here`](https://github.com/syncfusion/ej2-locale).
 
 ```typescript
 L10n.load({
@@ -165,7 +90,6 @@ L10n.load({
             "week": "Week",
             "workWeek": "Work Week",
             "month": "Month",
-            "year": "Year",
             "year": "Year",
             "agenda": "Agenda",
             "weekAgenda": "Week Agenda",
@@ -243,6 +167,8 @@ L10n.load({
             "collapseAllDaySection": "Collapse-all-day-section",
             "searchTimezone": "Search Timezone",
             "noRecords": "No records found",
+            "deleteRecurrenceContent": "Do you want to delete only this event or entire series?",
+            "of": "of"
         },
         "recurrenceeditor": {
             "none": "None",
@@ -326,23 +252,6 @@ The following example demonstrates the Scheduler component in 24 hours format.
 {% previewsample "page.domainurl/samples/schedule/default-cs55" %}
 
 ![Time Format](images/schedule-timeformat.png)
-
-> Note: To import the required cultures from the installed location to `app.component.ts` file as given in the following code example.
-
-```typescript
-//import the loadCldr from ej2-base
-import { loadCldr} from '@syncfusion/ej2-base';
-import * as numberingSystems from 'cldr-data/supplemental/numberingSystems.json';
-import * as gregorian from 'cldr-data/main/fr-CH/ca-gregorian.json';
-import * as numbers from 'cldr-data/main/fr-CH/numbers.json';
-import * as timeZoneNames from 'cldr-data/main/fr-CH/timeZoneNames.json';
-
-// Angular CLI 8.0 and above versions
-loadCldr(numberingSystems['default'], gregorian['default'], numbers['default'], timeZoneNames['default']);
-
-// Angular CLI 8.0 below versions
-loadCldr(numberingSystems, gregorian, numbers, timeZoneNames);
-```
 
 ## Displaying Scheduler in RTL mode
 
