@@ -7,7 +7,7 @@ import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 
 
 
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { EditSettingsModel, ToolbarItems, TreeGridComponent, Toolbar } from '@syncfusion/ej2-angular-treegrid';
 import { Grid } from '@syncfusion/ej2-angular-grids';
