@@ -21,10 +21,10 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StackingArea' xName='x' yName='y' name='Organic'></e-series>
-            <e-series [dataSource]='chartData' type='StackingArea' xName='x' yName='y1' name='Fair-trade' ></e-series>
-            <e-series [dataSource]='chartData' type='StackingArea' xName='x' yName='y2' name='Veg Alternatives'></e-series>
-            <e-series [dataSource]='chartData' type='StackingArea' xName='x' yName='y3' name='Others'></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea' xName='x' yName='y' [marker]='marker' name='Organic'></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea' xName='x' yName='y1' [marker]='marker' name='Fair-trade' ></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea' xName='x' yName='y2' [marker]='marker' name='Veg Alternatives'></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea' xName='x' yName='y3' [marker]='marker' name='Others'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -33,11 +33,13 @@ export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
     public primaryYAxis?: Object;
+    public marker?: Object;
     ngOnInit(): void {
         this.chartData = stackedData;
         this.primaryXAxis = {
             valueType: 'DateTime'
         };
+        this.marker = {visible: true};
         this.title = 'Trend in Sales of Ethical Produce';
     }
     public pointRender(args: IPointRenderEventArgs) {

@@ -44,11 +44,7 @@ export class AppComponent implements OnInit {
     public columnWidth: number = 0.99;
     public showNormalDistribution: boolean = true;
     public pointRender(args: IPointRenderEventArgs)  {
-        if (args.point.y >= 15) {
-            args.fill = '#ff6347';
-        } else {
             args.fill = '#009cb8';
-        }
     }
     ngOnInit(): void {
 

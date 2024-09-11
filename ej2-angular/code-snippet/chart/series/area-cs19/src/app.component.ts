@@ -20,7 +20,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' (pointRender)="pointRender($event)" [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Area' xName='x' yName='y' name='Product A'></e-series>
+            <e-series [dataSource]='chartData' type='Area' xName='x' yName='y' name='Product A' [marker]='marker'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -29,8 +29,10 @@ export class AppComponent implements OnInit {
     public title?: string;
     primaryXAxis: any;
     primaryYAxis: any;
+    public marker?: Object;
     ngOnInit(): void {
         this.chartData = areaData;
+        this.marker = {visible: true};
         this.title = 'Average Sales Comparison';
     }
     public pointRender(args: IPointRenderEventArgs): void {

@@ -1,4 +1,4 @@
-export let chartData: Object[] = [
+export let waterfallData: Object[] = [
     { x: 'Income', y: 4711 },
     { x: 'Sales', y: -1015 },
     { x: 'Development', y: -688 },

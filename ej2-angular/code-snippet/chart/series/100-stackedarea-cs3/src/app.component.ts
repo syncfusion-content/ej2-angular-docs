@@ -19,10 +19,10 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y' name='USA' dashArray='2,5'></e-series>
-            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y1' name='UK' dashArray='2,5'></e-series>
-            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y2' name='Canada' dashArray='2,5'></e-series>
-            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y3' name='China' dashArray='2,5'></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y' [border]='border' name='USA' dashArray='2,5'></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y1' [border]='border' name='UK' dashArray='2,5'></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y2' [border]='border' name='Canada' dashArray='2,5'></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y3' [border]='border' name='China' dashArray='2,5'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })

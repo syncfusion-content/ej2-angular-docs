@@ -155,6 +155,26 @@ Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 {% previewsample "page.domainurl/samples/chart/series/stackedbar-cs4" %}
 
+## 100% Cylindrical stacked bar chart
+
+To render a 100% cylindrical stacked bar chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#columnfacet) property to `Cylinder` in the chart series. This property transforms the regular 100% stacked bars into cylindrical shapes, enhancing the visual representation of the data.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/bar-cs9/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/bar-cs9/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/bar-cs9/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/bar-cs9" %}
+
 ## Empty points
 
 Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
@@ -218,26 +238,6 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/accumula
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chart/series/stackedbar-cs7" %}
-
-## 100% Cylindrical stacked bar chart
-
-To render a 100% cylindrical stacked bar chart, set the [`columnFacet`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#columnfacet) property to `Cylinder` in the chart series. This property transforms the regular 100% stacked bars into cylindrical shapes, enhancing the visual representation of the data.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/bar-cs9/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/bar-cs9/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/bar-cs9/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/chart/series/bar-cs9" %}
 
 ## Events
 

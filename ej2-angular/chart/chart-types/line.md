@@ -155,6 +155,32 @@ The [width](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDir
 
 {% previewsample "page.domainurl/samples/chart/series/line-cs16" %}
 
+## Multicolored Line
+
+To render a multicolored line series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
+
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `MultiColoredLine` in your chart configuration. This specifies that the series should be rendered as a multicolored line chart, with different segments of the line having distinct colors.
+
+2. **Inject the MultiColoredLineSeries module**: Use the `@NgModule.providers` method to inject the `MultiColoredLineSeriesService` module in your chart. This step is essential, as it ensures that the necessary functionalities for rendering line series are available in your chart.
+
+3. **Map individual colors**: Utilize the `pointColorMapping` property to assign individual colors to each data point. This allows you to customize the color of each segment of the line based on your data.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/line-cs7/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/line-cs7/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/line-cs7/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chart/series/line-cs7" %}
+
 ## Empty points
 
 Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
@@ -218,32 +244,6 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/accumula
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chart/series/line-cs19" %}
-
-## Multicolored Line
-
-To render a multicolored line series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
-
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `MultiColoredLine` in your chart configuration. This specifies that the series should be rendered as a multicolored line chart, with different segments of the line having distinct colors.
-
-2. **Inject the MultiColoredLineSeries module**: Use the `@NgModule.providers` method to inject the `MultiColoredLineSeriesService` module in your chart. This step is essential, as it ensures that the necessary functionalities for rendering line series are available in your chart.
-
-3. **Map individual colors**: Utilize the `pointColorMapping` property to assign individual colors to each data point. This allows you to customize the color of each segment of the line based on your data.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/line-cs7/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/line-cs7/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/line-cs7/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/samples/chart/series/line-cs7" %}
 
 ## Events
 

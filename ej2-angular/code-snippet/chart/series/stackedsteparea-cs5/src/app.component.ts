@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
             valueType: 'DateTime'
         };
         this.title = 'Annual Temperature Comparison';
-        this.emptyPointSettings = { mode: 'Average' };
+        this.emptyPointSettings = { mode: 'Gap' };
     }
 
 }

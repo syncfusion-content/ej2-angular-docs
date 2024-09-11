@@ -21,7 +21,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold' fill: 'url(#gradient)'></e-series>
+            <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold' fill='url(#gradient)'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })

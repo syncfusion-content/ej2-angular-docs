@@ -40,19 +40,19 @@ You can bind data to the chart using the [`dataSource`](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs19/src/app.component.ts %}
+{% include code-snippet/chart/series/column-cs18/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs19/src/main.ts %}
+{% include code-snippet/chart/series/column-cs18/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/column-cs19/src/datasource.ts %}
+{% include code-snippet/chart/series/column-cs18/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/chart/series/column-cs19" %}
+{% previewsample "page.domainurl/samples/chart/series/column-cs18" %}
 
 ## Series customization
 
@@ -156,70 +156,6 @@ Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
   
 {% previewsample "page.domainurl/samples/chart/series/column-cs45" %}
 
-## Empty points
-
-Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
-
-**Mode**
-
-Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/emptyPointSettingsModel/#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs44/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs44/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/column-cs44/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/column-cs44" %}
-
-**Fill**
-
-Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/emptyPointSettingsModel/#fill) property to customize the fill color of empty points in the series.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs46/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs46/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/column-cs46/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/column-cs46" %}
-
-**Border**
-
-Use the [`border`](../../api/chart/emptyPointSettings/#border) property to customize the width and color of the border for empty points.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/column-cs47/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/column-cs47/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/column-cs47/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/column-cs47" %}
-
 ## Column spacing and width
 
 Use the [`columnSpacing`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/emptyPointSettingsModel/#border) property in the series to adjust the space between columns.
@@ -320,6 +256,70 @@ To render a cylindrical column chart, set the [`columnFacet`](https://ej2.syncfu
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/column-cs32" %}
+
+## Empty points
+
+Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
+
+**Mode**
+
+Use the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/emptyPointSettingsModel/#mode) property to define how empty or missing data points are handled in the series. The default mode for empty points is `Gap`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/column-cs44/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/column-cs44/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/column-cs44/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/column-cs44" %}
+
+**Fill**
+
+Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/emptyPointSettingsModel/#fill) property to customize the fill color of empty points in the series.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/column-cs46/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/column-cs46/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/column-cs46/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/column-cs46" %}
+
+**Border**
+
+Use the [`border`](../../api/chart/emptyPointSettings/#border) property to customize the width and color of the border for empty points.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/column-cs47/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/column-cs47/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/column-cs47/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/column-cs47" %}
 
 ## Events
 

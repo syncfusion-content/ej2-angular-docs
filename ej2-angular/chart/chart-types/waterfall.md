@@ -78,7 +78,7 @@ By default, the negativeFillColor as ‘#E94649’ and the summaryFillColor as �
   
 {% previewsample "page.domainurl/samples/chart/series/waterfall-cs2" %}
 
-## Empty points
+## Empty points 
 
 Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
 
@@ -150,26 +150,6 @@ The [`seriesRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/waterfall-cs6/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/waterfall-cs6/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/waterfall-cs6/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/waterfall-cs6" %}
-
-### Point render
-
-The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows you to customize each data point before it is rendered on the chart.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chart/series/waterfall-cs7/src/app.component.ts %}
 {% endhighlight %}
 
@@ -183,6 +163,26 @@ The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/i
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/waterfall-cs7" %}
+
+### Point render
+
+The [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/chart/iPointRenderEventArgs/) event allows you to customize each data point before it is rendered on the chart.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/waterfall-cs6/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/waterfall-cs6/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/waterfall-cs6/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/waterfall-cs6" %}
 
 ## See Also
 

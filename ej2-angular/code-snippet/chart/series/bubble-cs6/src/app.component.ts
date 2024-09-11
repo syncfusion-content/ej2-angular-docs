@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
     this.data = bubbleData;
     this.emptyPointSettings= {
-        mode: 'Zero',
+        mode: 'Average',
         fill: 'red'
     }
     this.title = 'GDP vs Literacy Rate';

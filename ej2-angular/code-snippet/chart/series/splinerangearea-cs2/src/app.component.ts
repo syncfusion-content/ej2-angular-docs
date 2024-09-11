@@ -20,8 +20,8 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high' low='low' name='England' dashArray='5,5'></e-series>
-            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high1' low='low1' name='India' dashArray='5,5'></e-series>
+            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high' low='low' name='England' dashArray='5,5' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high1' low='low1' name='India' dashArray='5,5' [border]='border'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -29,6 +29,7 @@ export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
     public chartData?: Object[];
     public title?: string;
+    public border?: Object;
     public primaryYAxis?: Object;
     ngOnInit(): void {
         this.chartData = splinedata;
@@ -44,6 +45,7 @@ export class AppComponent implements OnInit {
             maximum: 40,
             majorTickLines: { width: 0 }
         };
+        this.border = {width:2, color: 'red'};
         this.title = 'Monthly Temperature Range'
     }
 }

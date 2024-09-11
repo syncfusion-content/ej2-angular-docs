@@ -1,4 +1,4 @@
-export let stackedData: Object[] = [
+export let stackData: Object[] = [
         { x: 'Jan', y: 6,  y1: 6,  y2: -1 }, 
         { x: 'Feb', y: 8 , y1: 8,  y2: -1.5 },
         { x: 'Mar', y: 12, y1: 11, y2: -2 }, 

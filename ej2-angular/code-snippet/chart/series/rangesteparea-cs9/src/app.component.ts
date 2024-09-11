@@ -20,7 +20,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='RangeStepArea' xName='x' high='high' low='low'></e-series>
+            <e-series [dataSource]='chartData' type='RangeStepArea' xName='x' high='high' low='low' [marker]='marker'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -31,6 +31,7 @@ export class AppComponent implements OnInit {
     public primaryYAxis?: Object;
     public emptyPointSettings?: Object;
     public border?: Object;
+    public marker?: Object;
     ngOnInit(): void {
         this.primaryXAxis = {
            valueType: 'Category',
@@ -44,7 +45,8 @@ export class AppComponent implements OnInit {
             maximum: 40,
             majorTickLines: { width: 0 }
         };
-        this.title = 'Monthly Temperature Range'
+        this.title = 'Monthly Temperature Range';
+        this.marker = { visible: true};
     }
     public pointRender(args: IPointRenderEventArgs) {
         args.fill = '#ff6347';

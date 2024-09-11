@@ -41,12 +41,7 @@ export class AppComponent implements OnInit {
         this.title = 'Olympic Medals';
     }
     public pointRender(args: IPointRenderEventArgs)  {
-        if (args.point.y <= 40) {
-            args.fill = '#ff6347';
-        }
-        else {
             args.fill = '#009cb8';
-        }
     }
 
 }

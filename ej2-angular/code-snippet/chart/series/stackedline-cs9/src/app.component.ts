@@ -52,12 +52,7 @@ export class AppComponent implements OnInit {
         
     }
     public pointRender(args: IPointRenderEventArgs) {
-        if (args.point.y < 100) {
-            args.fill = '#ff6347';
-        }
-        else {
             args.fill = '#009cb8';
-        }
     }
 
 }

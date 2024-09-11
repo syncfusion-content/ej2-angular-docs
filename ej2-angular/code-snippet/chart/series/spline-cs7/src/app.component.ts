@@ -20,7 +20,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Spline' xName='x' yName='y' [emptyPointSettings]='emptyPointSettings' name='London'></e-series>
+            <e-series [dataSource]='chartData' type='Spline' xName='x' yName='y' [emptyPointSettings]='emptyPointSettings' name='London' [marker]='marker'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -30,8 +30,10 @@ export class AppComponent implements OnInit {
     public title?: string;
     public primaryYAxis?: Object;
     public emptyPointSettings?: Object;
+    public marker?: Object;
     ngOnInit(): void {
         this.chartData = splineData;
+        this.marker = { visible: true};
         this.primaryXAxis = {
            title: 'Month',
            valueType: 'Category'

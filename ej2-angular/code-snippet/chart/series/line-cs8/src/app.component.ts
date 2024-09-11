@@ -30,6 +30,9 @@ export class AppComponent implements OnInit {
     public title?: string;
     public primaryYAxis?: Object;
     ngOnInit(): void {
+        this.primaryXAxis = {
+            valueType: 'Category'
+        };
         this.chartData = lineData;
         this.title = 'Monthly Sales Comparison';
     }

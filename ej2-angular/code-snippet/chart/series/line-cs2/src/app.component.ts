@@ -18,18 +18,15 @@ providers: [ CategoryService, LineSeriesService, StepLineSeriesService, SplineSe
         SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StepLine' xName='month' yName='sales' name='USA' width=2></e-series>
+            <e-series [dataSource]='chartData' type='StepLine' xName='x' yName='y'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
-primaryXAxis: any;
-    primaryYAxis: any;
-    marker: any;
     ngOnInit(): void {
         this.chartData = stepData;
         this.title = 'Monthly Sales Comparison';

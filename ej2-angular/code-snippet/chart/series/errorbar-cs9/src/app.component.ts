@@ -16,7 +16,7 @@ imports: [
 providers: [ColumnSeriesService, LineSeriesService, ErrorBarService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event) [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='x' yName='y' name='India' width=2 [marker]='marker' [errorBar]='errorBar'></e-series>
         </e-series-collection>

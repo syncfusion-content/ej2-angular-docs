@@ -21,7 +21,7 @@ standalone: true,
         <e-series-collection>
             <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y' name='USA' [emptyPointSettings]='emptyPointSettings'></e-series>
             <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y1' name='UK'></e-series>
-            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y2' name='Canada' [emptyPointSettings1]='emptyPointSettings1'></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y2' name='Canada' [emptyPointSettings]='emptyPointSettings1'></e-series>
             <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y3' name='China'></e-series>
         </e-series-collection>
     </ejs-chart>`

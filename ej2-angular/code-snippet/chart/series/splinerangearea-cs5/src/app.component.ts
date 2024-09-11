@@ -20,8 +20,8 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high' low='low' name='England' [emptyPointSettings]='emptyPointSettings'></e-series>
-            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high1' low='low1' name='India' [emptyPointSettings1]='emptyPointSettings1'></e-series>
+            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high' low='low' name='England' [marker]='marker' [emptyPointSettings]='emptyPointSettings'></e-series>
+            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high1' low='low1' name='India' [marker]='marker' [emptyPointSettings]='emptyPointSettings'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -30,6 +30,7 @@ export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
     public primaryYAxis?: Object;
+    public marker?: Object;
     public emptyPointSettings1?: Object;
     public emptyPointSettings?: Object;
     ngOnInit(): void {
@@ -46,12 +47,10 @@ export class AppComponent implements OnInit {
             maximum: 40,
             majorTickLines: { width: 0 }
         };
+        this.marker = {visible: true};
         this.title = 'Monthly Temperature Range'
-        this.emptyPointSettings1= {
-            mode: 'Zero'
-        };
         this.emptyPointSettings = {
-            mode: 'Gap', fill: 'red', border: { width: 2, color: 'green' }
+            mode: 'Average', fill: 'red', border: { width: 2, color: 'green' }
         }
     }
 }

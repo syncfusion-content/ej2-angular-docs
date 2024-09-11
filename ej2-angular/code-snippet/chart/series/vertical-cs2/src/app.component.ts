@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
         };
         this.title = 'Climate Graph-2012';
         this.emptyPointSettings = {
-            mode: 'Zero', fill: 'red', border: {width: 2, color: 'green'}
+            mode: 'Average', fill: 'red', border: {width: 2, color: 'green'}
         }
     }
 

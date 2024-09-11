@@ -21,8 +21,8 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high' low='low' name='England'></e-series>
-            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high1' low='low1' name='India'></e-series>
+            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' [marker]='marker' high='high' low='low' name='England'></e-series>
+            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' [marker]='marker' high='high1' low='low1' name='India'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -31,6 +31,7 @@ export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
     public primaryYAxis?: Object;
+    public marker?: Object;
     ngOnInit(): void {
         this.chartData = splinedata;
         this.primaryXAxis = {
@@ -45,6 +46,7 @@ export class AppComponent implements OnInit {
             maximum: 40,
             majorTickLines: { width: 0 }
         };
+        this.marker = {visible: true};
         this.title = 'Monthly Temperature Range'
     }
     public pointRender(args: IPointRenderEventArgs) {

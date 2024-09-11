@@ -1,4 +1,4 @@
-export let chartData: Object[] = [
+export let stepData: Object[] = [
     { x: 1, y: 7 },   { x: 2, y: 1 }, 
     { x: 3, y: 1 },   { x: 4, y: 14 }, 
     { x: 5, y: null },   { x: 6, y: 10 },

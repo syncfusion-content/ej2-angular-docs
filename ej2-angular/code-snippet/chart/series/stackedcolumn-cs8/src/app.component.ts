@@ -43,8 +43,6 @@ export class AppComponent implements OnInit {
             valueType: 'Category'
         };
         this.title = 'Mobile Game Market by Country';
-        this.emptyPointSettings = { mode: 'Zero' };
-        this.emptyPointSettings1 = { mode: 'Average', fill: 'red', border: { width: 2, color: 'green' } };
     }
     public seriesRender(args: ISeriesRenderEventArgs) {
         if (args.series.index === 0) {

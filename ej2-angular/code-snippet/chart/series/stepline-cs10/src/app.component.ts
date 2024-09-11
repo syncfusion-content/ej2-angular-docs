@@ -8,7 +8,7 @@ import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeries
 
 
 import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
+import { stepData } from './datasource';
 
 @Component({
 imports: [
@@ -21,7 +21,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StepLine' xName='x' yName='y' name='USA' [emptyPointSettings]='emptyPointSettings'></e-series>
+            <e-series [dataSource]='chartData' type='StepLine' xName='x' yName='y' [marker]='marker'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -33,14 +33,17 @@ export class AppComponent implements OnInit {
     primaryYAxis: any;
     marker: any;
     ngOnInit(): void {
-        this.chartData = data;
+        this.chartData = stepData;
         this.title = 'CO2 - Intensity Analysis';
-        this.emptyPointSettings = {
-            mode: 'Gap', fill: 'red', border: {width: 2, color: 'green'}
-        }
+        this.marker = { visible: true };
     }
     public pointRender(args: IPointRenderEventArgs) {
-        args.fill = '#ff6347';
+        if (args.point.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
     }
 }
 

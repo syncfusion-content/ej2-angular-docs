@@ -19,7 +19,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='RangeStepArea' xName='x' high='high' low='low' opacity=0.4 fill='red'></e-series>
+            <e-series [dataSource]='chartData' type='RangeStepArea' xName='x' high='high' low='low' fill='red'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })

@@ -20,7 +20,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='SplineArea' xName='x' yName='y' name='London' width=2 [marker]='marker' fill: 'url(#gradient)'></e-series>
+            <e-series [dataSource]='chartData' type='SplineArea' xName='x' yName='y' name='London' width=2 [marker]='marker' fill='url(#gradient)'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })

@@ -1,9 +1,14 @@
 export let lineData: Object[] = [
-             { x: 2005, y: 28 }, 
-             { x: 2006, y: null },
-             { x: 2007, y: 26 }, 
-             { x: 2008, y: 27 },
-             { x: 2009, y: undefined }, 
-             { x: 2010, y: 35 }, 
-             { x: 2011, y: 30 }
-        ];
+     { month: 'Jan', sales: 35 },
+     { month: 'Feb', sales: 28 },
+     { month: 'Mar', sales: 34 },
+     { month: 'Apr', sales: 32 },
+     { month: 'May', sales: 40 },
+     { month: 'Jun', sales: 32 },
+     { month: 'Jul', sales: 35 },
+     { month: 'Aug', sales: 55 },
+     { month: 'Sep', sales: 38 },
+     { month: 'Oct', sales: 30 },
+     { month: 'Nov', sales: 25 },
+     { month: 'Dec', sales: 32 }
+ ];

@@ -20,7 +20,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='RangeArea' xName='x' high='high' low='low' name='India' [emptyPointSettings]='emptyPointSettings'></e-series>
+            <e-series [dataSource]='chartData' type='RangeArea' xName='x' high='high' low='low' name='India' [emptyPointSettings]='emptyPointSettings' [marker]='marker'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -31,6 +31,7 @@ export class AppComponent implements OnInit {
     public title?: string;
     public primaryYAxis?: Object;
     public emptyPointSettings?: Object;
+    public marker?: Object;
     ngOnInit(): void {
         this.chartData = chartData;
         this.border = {
@@ -45,9 +46,10 @@ export class AppComponent implements OnInit {
             title: 'Temperature(Celsius)',
             minimum: 0, maximum: 20
         };
+        this.marker = {visible: true};
         this.title = 'Maximum and Minimum Temperature';
         this. emptyPointSettings= {
-            mode: 'Zero', fill: 'red'
+            mode: 'Average', fill: 'red'
         }
     }
 }

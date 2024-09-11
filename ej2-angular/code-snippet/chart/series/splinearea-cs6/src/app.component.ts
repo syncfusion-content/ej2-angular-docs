@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
            title: 'Month',
            valueType: 'Category'
         };
-        this.marker = { visible: false, width: 10, height: 10 };
+        this.marker = { visible: true, width: 10, height: 10 };
         this.title = 'Climate Graph-2012';
         this.emptyPointSettings= {
             mode: 'Average', fill: 'red', border: {width: 2, color: 'green'}

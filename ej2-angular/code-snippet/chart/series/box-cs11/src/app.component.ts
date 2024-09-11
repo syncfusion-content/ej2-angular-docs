@@ -15,7 +15,7 @@ imports: [
 providers: [CategoryService, BoxAndWhiskerSeriesService, DataLabelService],
 standalone: true,
     selector: 'app-container',
-    template: ` <ejs-chart id='chart-container' (seriesRender)='SeriesRender($event)' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
+    template: ` <ejs-chart id='chart-container' (seriesRender)='seriesRender($event)' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
             [title]='title' >
             <e-series-collection>
                 <e-series [dataSource]='data' type='BoxAndWhisker' xName='x' yName='y' [marker]='marker'> </e-series>

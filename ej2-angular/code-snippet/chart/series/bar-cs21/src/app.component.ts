@@ -31,12 +31,7 @@ export class AppComponent implements OnInit {
         this.title = 'Unemployment rate (%)';
     }
     public pointRender(args: IPointRenderEventArgs): void {
-        if (args.point.y < 7.5) {
-            args.fill = '#ff6347';
-        }
-        else {
             args.fill = '#009cb8';
-        }
       };
 
 }

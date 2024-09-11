@@ -7,7 +7,7 @@ import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeries
 
 
 import { Component, OnInit } from '@angular/core';
-import { data } from './datasource';
+import { stepData } from './datasource';
 
 @Component({
 imports: [
@@ -20,7 +20,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StepLine' xName='x' yName='y' name='USA' step='Left' ></e-series>
+            <e-series [dataSource]='chartData' type='StepLine' xName='x' yName='y' step='Left' ></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     primaryYAxis: any;
     marker: any;
     ngOnInit(): void {
-        this.chartData = data;
+        this.chartData = stepData;
         this.title = 'CO2 - Intensity Analysis';
     }
 

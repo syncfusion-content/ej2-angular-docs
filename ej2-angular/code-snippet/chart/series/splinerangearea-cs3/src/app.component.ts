@@ -21,7 +21,7 @@ standalone: true,
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high' low='low' name='England' [emptyPointSettings]='emptyPointSettings'></e-series>
-            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high1' low='low1' name='India' [emptyPointSettings1]='emptyPointSettings1'></e-series>
+            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high1' low='low1' name='India' [emptyPointSettings]='emptyPointSettings'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -47,9 +47,6 @@ export class AppComponent implements OnInit {
             majorTickLines: { width: 0 }
         };
         this.title = 'Monthly Temperature Range'
-        this.emptyPointSettings1= {
-            mode: 'Zero'
-        };
         this.emptyPointSettings = {
             mode: 'Gap'
         }

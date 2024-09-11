@@ -20,7 +20,7 @@ standalone: true,
     template: ` <ejs-chart id='chartcontainer' (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'
             [title]='title' >
             <e-series-collection>
-                <e-series [dataSource]='data' type='Polar' xName='x' yName='y' drawType='Line'> </e-series>
+                <e-series [dataSource]='data' type='Polar' xName='x' yName='y' [marker]='marker' drawType='Line'> </e-series>
             </e-series-collection>
     </ejs-chart>`
 })
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     public primaryYAxis?: Object;
     public data?: Object[];
     public emptyPointSettings?: Object;
-
+    public marker?: object;
     ngOnInit(): void {
         this.data = radarData;
         this.primaryXAxis = {
@@ -38,6 +38,7 @@ export class AppComponent implements OnInit {
             minimum: 2004, maximum: 2012, interval: 1
             };
         this.title = 'Efficiency of oil-fired power production';
+        this.marker = {visible: true};
     }
     public pointRender(args: IPointRenderEventArgs) {
         args.fill = '#ff6347';

@@ -29,13 +29,11 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.primaryXAxis = {
             title: 'Height (cm)',
-            minimum: 120, maximum: 180,
             edgeLabelPlacement: 'Shift',
             labelFormat: '{value}cm'
         };
         this.primaryYAxis = {
             title: 'Weight (kg)',
-            minimum: 60, maximum: 90,
             labelFormat: '{value}kg',
             rangePadding: 'None'
         };

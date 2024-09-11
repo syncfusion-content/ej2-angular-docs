@@ -19,7 +19,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StepArea' xName='x' yName='y' name='England' [emptyPointSettings]='emptyPointSettings'></e-series>
+            <e-series [dataSource]='chartData' type='StepArea' xName='x' yName='y' name='England' [marker]='marker' [emptyPointSettings]='emptyPointSettings'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -29,6 +29,7 @@ export class AppComponent implements OnInit {
     public title?: string;
     public primaryYAxis?: Object;
     public emptyPointSettings?: Object;
+    public marker?: Object;
     ngOnInit(): void {
         this.chartData = stepData;
         this.primaryXAxis = {
@@ -38,6 +39,7 @@ export class AppComponent implements OnInit {
         this.primaryYAxis = {
             title: 'Runs'
         };
+        this.marker = { visible: true };
         this.emptyPointSettings = {
             mode: 'Zero', fill: 'red', border: {width: 2, color: 'green'}
         }

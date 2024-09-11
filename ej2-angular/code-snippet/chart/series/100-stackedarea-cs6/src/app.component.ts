@@ -19,9 +19,9 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y' name='USA' [emptyPointSettings]='emptyPointSettings'></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y' name='USA' [marker]='marker' [emptyPointSettings]='emptyPointSettings'></e-series>
             <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y1' name='UK'></e-series>
-            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y2' name='Canada' [emptyPointSettings1]='emptyPointSettings1'></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y2' name='Canada' [emptyPointSettings]='emptyPointSettings1'></e-series>
             <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y3' name='China'></e-series>
         </e-series-collection>
     </ejs-chart>`
@@ -33,14 +33,16 @@ export class AppComponent implements OnInit {
     public emptyPointSettings?: Object;
     public emptyPointSettings1?: Object;
     public primaryYAxis?: Object;
+    public marker?: Object;
     ngOnInit(): void {
         this.chartData = stackedData;
         this.primaryXAxis = {
             valueType: 'DateTime'
         };
+        this.marker = {visible: true};
         this.title = 'Annual Temperature Comparison';
-        this.emptyPointSettings = {mode: 'Zero'};
-        this.emptyPointSettings1 = {mode: 'Average', fill: 'red', border: 2, color: 'green'};
+        this.emptyPointSettings = {mode: 'Zero', fill: 'red', border:{width: 2, color: 'green'}};
+        this.emptyPointSettings1 = {mode: 'Average'};
     }
 
 }

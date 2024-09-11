@@ -22,7 +22,7 @@ standalone: true,
     template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis'
     [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Line' xName='x' yName='y' ></e-series>
+            <e-series [dataSource]='chartData' type='Line' [marker]='marker' xName='month' yName='sales'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -31,12 +31,13 @@ export class AppComponent implements OnInit {
     public title?: string;
      public primaryXAxis?: Object;
       public primaryYAxis?: Object;
-      public emptyPointSettings?: Object;
+      public marker?: Object;
     ngOnInit(): void {
         this.chartData = lineData;
         this.primaryXAxis = {
-            interval: 1
+            interval: 1, valueType: 'Category'
         };
+        this.marker = {visible: true};
         this.primaryYAxis =
         {
             title: 'Expense',
@@ -44,7 +45,12 @@ export class AppComponent implements OnInit {
         this.title = 'Efficiency of oil-fired power production';
     }
     public pointRender(args: IPointRenderEventArgs) {
-        args.fill = '#ff6347';
+        if (args.point.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
     }
 
 }

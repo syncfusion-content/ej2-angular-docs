@@ -20,15 +20,16 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y' name='UK' dashArray='2,7'></e-series>
-            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y1' name='Germany' dashArray='2,7'></e-series>
-            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y2' name='France' dashArray='2,7'></e-series>
-            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y3' name='Italy' dashArray='2,7'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y' name='UK' dashArray='2,7' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y1' name='Germany' dashArray='2,7' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y2' name='France' dashArray='2,7' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y3' name='Italy' dashArray='2,7' [border]='border'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
+    public border?: Object;
     public chartData?: Object[];
     public title?: string;
     primaryYAxis: any;
@@ -40,6 +41,7 @@ export class AppComponent implements OnInit {
             valueType: 'Category'
         };
         this.title = 'Mobile Game Market by Country';
+        this.border = {width: 2, color: 'red'}
     }
 
 }

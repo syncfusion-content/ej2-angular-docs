@@ -18,12 +18,48 @@ providers: [ CategoryService, LineSeriesService, StepLineSeriesService, SplineSe
         SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis'>
+    template: `
+       <svg style="width:1px; height:1px">
+        <defs>
+            <linearGradient id="gradient1">
+                <stop offset="0%" style="stop-color:coral;stop-opacity:5" />
+                <stop offset="50%" style="stop-color:mediumseagreen;stop-opacity:5" />
+            </linearGradient>
+        </defs>
+    </svg>
+    
+    <svg style="width:1px; height:1px">
+        <defs>
+            <linearGradient id="gradient2">
+                <stop offset="0%" style="stop-color:darkred;stop-opacity:5" />
+                <stop offset="50%" style="stop-color:darkorange;stop-opacity:5" />
+            </linearGradient>
+        </defs>
+    </svg>
+    
+    <svg style="width:1px; height:1px">
+        <defs>
+            <linearGradient id="gradient3">
+                <stop offset="0%" style="stop-color:darkmagenta;stop-opacity:5" />
+                <stop offset="50%" style="stop-color:darkcyan;stop-opacity:5" />
+            </linearGradient>
+        </defs>
+    </svg>
+    
+    <svg style="width:1px; height:1px">
+        <defs>
+            <linearGradient id="gradient4">
+                <stop offset="0%" style="stop-color:darkviolet;stop-opacity:5" />
+                <stop offset="50%" style="stop-color:darkgoldenrod;stop-opacity:5" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StackingLine' xName='x' yName='y' name='John' width='2' [marker]='marker' fill='url(#gradient1)'> </e-series>
-            <e-series [dataSource]='chartData' type='StackingLine' xName='x' yName='y1' name='Peter' width='2' [marker]='marker' fill='url(#gradient2)'> </e-series>
-            <e-series [dataSource]='chartData' type='StackingLine' xName='x' yName='y2' name='Steve' width='2' [marker]='marker' fill='url(#gradient3)'> </e-series>
-            <e-series [dataSource]='chartData' type='StackingLine' xName='x' yName='y3' name='Charle' width='2' [marker]='marker' fill='url(#gradient4)'> </e-series>
+            <e-series [dataSource]='chartData' type='StackingLine100' xName='x' yName='y' name='John'  [marker]='marker' [fill]="'url(#gradient1)'"> </e-series>
+            <e-series [dataSource]='chartData' type='StackingLine100' xName='x' yName='y1' name='Peter'  [marker]='marker' [fill]="'url(#gradient2)'"> </e-series>
+            <e-series [dataSource]='chartData' type='StackingLine100' xName='x' yName='y2' name='Steve'  [marker]='marker' [fill]="'url(#gradient3)'"> </e-series>
+            <e-series [dataSource]='chartData' type='StackingLine100' xName='x' yName='y3' name='Charle'  [marker]='marker' [fill]="'url(#gradient4)'"> </e-series>
         </e-series-collection>
     </ejs-chart>`
 })

@@ -19,7 +19,7 @@ standalone: true,
     template: ` <ejs-chart style='display:block;' id='chart-container' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
                 [title]='title' >
                 <e-series-collection>
-                    <e-series [dataSource]='data' type='Hilo' xName='x' high='high' low='low' name='India' fill: 'url(#gradient)'> </e-series>
+                    <e-series [dataSource]='data' type='Hilo' xName='x' high='high' low='low' name='India' fill= 'url(#gradient)'> </e-series>
                 </e-series-collection>
      </ejs-chart>`
 })

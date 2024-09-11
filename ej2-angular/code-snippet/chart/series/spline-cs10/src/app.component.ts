@@ -21,7 +21,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Spline' xName='x' yName='y' name='London'></e-series>
+            <e-series [dataSource]='chartData' type='Spline' xName='x' yName='y' name='London' [marker]='marker'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -30,7 +30,9 @@ export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
     public primaryYAxis?: Object;
+    public marker?: Object;
     ngOnInit(): void {
+        this.marker = { visible: true };
         this.chartData = splineData;
         this.primaryXAxis = {
            title: 'Month',

@@ -1,4 +1,4 @@
-export let chartData: Object[] = [
+export let areaData: Object[] = [
         { x: 1900, y: 4 }, 
         { x: 1920, y: 3.0 },
         { x: 1940, y: 3.8 },

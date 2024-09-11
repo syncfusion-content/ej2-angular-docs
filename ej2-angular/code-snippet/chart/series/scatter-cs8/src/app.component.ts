@@ -14,9 +14,9 @@ imports: [
 providers: [ ScatterSeriesService, LegendService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event) [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
+    template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Scatter' xName='x' yName='y' name='Male' '[emptyPointSettings]='emptyPointSettings'></e-series>
+            <e-series [dataSource]='chartData' type='Scatter' xName='x' yName='y' name='Male' ></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -30,13 +30,11 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.primaryXAxis = {
             title: 'Height (cm)',
-            minimum: 120, maximum: 180,
             edgeLabelPlacement: 'Shift',
             labelFormat: '{value}cm'
         };
         this.primaryYAxis = {
             title: 'Weight (kg)',
-            minimum: 60, maximum: 90,
             labelFormat: '{value}kg',
             rangePadding: 'None'
         };

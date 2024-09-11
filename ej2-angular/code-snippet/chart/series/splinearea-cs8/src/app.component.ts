@@ -38,16 +38,11 @@ export class AppComponent implements OnInit {
            title: 'Month',
            valueType: 'Category'
         };
-        this.marker = { visible: false, width: 10, height: 10 };
+        this.marker = { visible: true, width: 10, height: 10 };
         this.title = 'Climate Graph-2012';
     }
     public pointRender(args: IPointRenderEventArgs){
-        if (args.point.y < 10) {
-            args.fill = '#ff6347';
-        }
-        else {
-            args.fill = '#009cb8';
-        }
+            args.fill = 'red';
     }
 }
 

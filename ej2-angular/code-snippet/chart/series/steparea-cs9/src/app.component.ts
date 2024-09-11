@@ -20,7 +20,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" (pointRender)='pointRender($event)' [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StepArea' xName='x' yName='y' name='England'></e-series>
+            <e-series [dataSource]='chartData' type='StepArea' xName='x' yName='y' [marker]='marker' name='England'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -29,6 +29,7 @@ export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
     public primaryYAxis?: Object;
+    public marker?: Object;
     ngOnInit(): void {
         this.chartData = stepData;
         this.primaryXAxis = {
@@ -38,15 +39,11 @@ export class AppComponent implements OnInit {
         this.primaryYAxis = {
             title: 'Runs'
         };
+        this.marker = { visible: true };
         this.title = 'England - Run Rate';
     }
-    public pointRender(args: IPointRenderEventArgs) {
-        if (args.point.y <= 8) {
-            args.fill = '#ff6347';
-        }
-        else {
-            args.fill = '#009cb8';
-        }
+    public pointRender(args: IPointRenderEventArgs) { 
+            args.fill = 'red';
     }
 }
 

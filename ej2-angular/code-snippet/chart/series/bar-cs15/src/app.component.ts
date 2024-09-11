@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
     primaryYAxis: any;
     ngOnInit(): void {
         this.chartData = barData;
-        this.emptyPointSettings = { mode: 'Average' };
+        this.emptyPointSettings = { mode: 'Gap' };
         this.title = 'Unemployment rate (%)';
     }
 

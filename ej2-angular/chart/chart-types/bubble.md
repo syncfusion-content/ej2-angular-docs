@@ -98,6 +98,26 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
   
 {% previewsample "page.domainurl/samples/chart/series/bubble-cs4" %}
 
+## Size mapping
+
+Use the [`size`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#size) property to map the size of each bubble to the value specified in the data source.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/bubble-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/bubble-cs2/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/bubble-cs2/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/bubble-cs2" %}
+
 ## Empty points
 
 Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
@@ -161,26 +181,6 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/accumula
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/bubble-cs7" %}
-
-## Size mapping
-
-Use the [`size`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#size) property to map the size of each bubble to the value specified in the data source.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/bubble-cs2/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/bubble-cs2/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/bubble-cs2/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/bubble-cs2" %}
 
 ## Events
 

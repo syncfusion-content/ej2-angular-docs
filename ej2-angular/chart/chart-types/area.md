@@ -121,19 +121,19 @@ The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/serie
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/area-cs13/src/app.component.ts %}
+{% include code-snippet/chart/series/area-cs14/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/area-cs13/src/main.ts %}
+{% include code-snippet/chart/series/area-cs14/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/area-cs13/src/datasource.ts %}
+{% include code-snippet/chart/series/area-cs14/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/chart/series/area-cs13" %}
+{% previewsample "page.domainurl/samples/chart/series/area-cs14" %}
 
 ## Area border
 
@@ -155,6 +155,35 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/se
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/area-cs10" %}
+
+## Multicolored area
+
+To render a multicolored area series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
+
+1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `MultiColoredArea` in your chart configuration. This specifies that the series should be rendered as a multicolored area chart, with different segments of the area having distinct colors.
+
+2. **Inject the MultiColoredAreaSeries module**: Use the `@NgModule.providers` method to inject the `MultiColoredAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering area series are available.
+
+3. **Customize the Segments**: Define the segments of the series using the [`segments`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#segments) property. Each segment can be customized with properties such as `value`, `color`, and `dashArray`.
+   * [value](https://ej2.syncfusion.com/angular/documentation/api/chart/chartSegmentModel/#value) - Specifies the endpoint of the segment.
+   * [color](https://ej2.syncfusion.com/angular/documentation/api/chart/chartSegmentModel/#color) - Defines the color of the segment.
+   * [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/chartSegmentModel/#dasharray) - Defines the dashes or gaps in the segment.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/area-cs8/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/area-cs8/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/area-cs8/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/area-cs8" %}
 
 ## Empty points
 
@@ -219,35 +248,6 @@ Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/accumula
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/area-cs17" %}
-
-## Multicolored area
-
-To render a multicolored area series in your chart, you need to follow a few steps to configure it correctly. Here's a concise guide on how to do this:
-
-1. **Set the series type**: Define the series [`type`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#type) as `MultiColoredArea` in your chart configuration. This specifies that the series should be rendered as a multicolored area chart, with different segments of the area having distinct colors.
-
-2. **Inject the MultiColoredAreaSeries module**: Use the `@NgModule.providers` method to inject the `MultiColoredAreaSeries` module into your chart. This step is essential, as it ensures that the necessary functionalities for rendering area series are available.
-
-3. **Customize the Segments**: Define the segments of the series using the [`segments`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#segments) property. Each segment can be customized with properties such as `value`, `color`, and `dashArray`.
-   * [value](https://ej2.syncfusion.com/angular/documentation/api/chart/chartSegmentModel/#value) - Specifies the endpoint of the segment.
-   * [color](https://ej2.syncfusion.com/angular/documentation/api/chart/chartSegmentModel/#color) - Defines the color of the segment.
-   * [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/chartSegmentModel/#dasharray) - Defines the dashes or gaps in the segment.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/area-cs8/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/area-cs8/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/area-cs8/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/area-cs8" %}
 
 ## Events
 

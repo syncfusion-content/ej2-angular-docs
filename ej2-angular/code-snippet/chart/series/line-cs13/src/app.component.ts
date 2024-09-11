@@ -18,10 +18,19 @@ providers: [ CategoryService, LineSeriesService, StepLineSeriesService, SplineSe
         SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis'
+    template: `
+      <svg>
+        <defs>
+            <linearGradient id="gradient">
+                <stop offset="0%" style="stop-color:#FF0000;stop-opacity:5" />
+                <stop offset="70%" style="stop-color:#00FF00;stop-opacity:5" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis'
     [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Line' xName='x' yName='y' fill: 'url(#gradient)'></e-series>
+            <e-series [dataSource]='chartData' type='Line' xName='x' yName='y' [fill]= "'url(#gradient)'"></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -33,7 +42,8 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.chartData = lineData;
         this.primaryXAxis = {
-            interval: 1
+            interval: 1,
+            valueType: 'Category'
         };
         this.primaryYAxis =
         {

@@ -17,9 +17,9 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StackingBar100' xName='x' yName='y' name='Apple' [border]='border' [dashArray]='2,5'></e-series>
-            <e-series [dataSource]='chartData' type='StackingBar100' xName='x' yName='y1' name='Orange' [border]='border' [dashArray]='2,5'></e-series>
-            <e-series [dataSource]='chartData' type='StackingBar100' xName='x' yName='y2' name='Wastage' [border]='border' [dashArray]='2,5'></e-series>
+            <e-series [dataSource]='chartData' type='StackingBar100' xName='x' yName='y' name='Apple' [border]='border' [dashArray]='2'></e-series>
+            <e-series [dataSource]='chartData' type='StackingBar100' xName='x' yName='y1' name='Orange' [border]='border' [dashArray]='2'></e-series>
+            <e-series [dataSource]='chartData' type='StackingBar100' xName='x' yName='y2' name='Wastage' [border]='border' [dashArray]='2'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })

@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
         this.title = 'Maximum and minimum Temperature';
     }
     public pointRender(args: IPointRenderEventArgs) {
-        args.fill = '#ff6347';
+        args.fill = 'green';
     }
 }
 

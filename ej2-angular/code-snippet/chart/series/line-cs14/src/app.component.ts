@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.chartData = lineData;
         this.primaryXAxis = {
-            interval: 1
+            interval: 1, valueType: 'Category'
         };
         this.primaryYAxis =
         {

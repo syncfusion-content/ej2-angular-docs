@@ -174,7 +174,7 @@ Use the [`fill`](https://ej2.syncfusion.com/angular/documentation/api/accumulati
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/rangesteparea-cs/src/main.ts %}
+{% include code-snippet/chart/series/rangesteparea-cs6/src/main.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="datasource.ts" %}

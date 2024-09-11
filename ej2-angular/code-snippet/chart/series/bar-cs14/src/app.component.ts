@@ -24,7 +24,7 @@ standalone: true,
 export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
-    public border?: Object'
+    public border?: Object;
     primaryXAxis: any;
     primaryYAxis: any;
     ngOnInit(): void {

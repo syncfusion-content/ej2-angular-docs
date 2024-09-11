@@ -20,7 +20,7 @@ standalone: true,
     template: ` <ejs-chart id='chartcontainer' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
             [title]='title' >
             <e-series-collection>
-                <e-series [dataSource]='data' type='Polar' xName='x' high='high' low='low' drawType='SplineArea' name='Gold'> </e-series>
+                <e-series [dataSource]='data' type='Polar' xName='x' yName='y' drawType='SplineArea' name='Gold'> </e-series>
             </e-series-collection>
     </ejs-chart>`
 })
@@ -32,7 +32,6 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = chartData;
         this.primaryXAxis = {
-            valueType: 'Category',
             title: 'Months'
         };
         this.primaryYAxis = {

@@ -20,8 +20,8 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high' low='low' name='England' opacity=0.4></e-series>
-            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high1' low='low1' name='India' opacity=0.4></e-series>
+            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high' low='low' name='England'></e-series>
+            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high1' low='low1' name='India'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
