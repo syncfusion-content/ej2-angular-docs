@@ -56,7 +56,7 @@ The steps below assist you to install the Syncfusion ASP.NET Core extensions fro
 
 ## Install from the Visual Studio Marketplace
 
-The steps below illustrate how to download and install the Syncfusion ASP.NET Core extension from the Visual Studio Marketplace.
+The steps below illustrate how to download and install the Syncfusion ASP.NET Core extension from the Visual Studio Marketplace.  
 
 1. Download the Syncfusion ASP.NET Core Extensions from the below Visual Studio Marketplace.
 
