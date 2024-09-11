@@ -87,7 +87,7 @@ initializeSignalR = (): void => {
 
   this.connection.onclose(async () => {
     if (this.connection && this.connection.state === HubConnectionState.Disconnected) {
-      alert('Connection lost. Please relod the browser to continue.');
+      alert('Connection lost. Please reload the browser to continue.');
     }
   });
 }
