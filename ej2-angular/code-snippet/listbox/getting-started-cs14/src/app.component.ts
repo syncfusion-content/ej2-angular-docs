@@ -32,7 +32,9 @@ public data: { [key: string]: Object }[] = [
     { text: 'McLaren P1' },
     { text: 'Ferrari LaFerrari' }
 ];
-public selection = { mode: "Multiple" }
+public selection = {
+    mode: "Multiple"
+ }
 }
 
 
