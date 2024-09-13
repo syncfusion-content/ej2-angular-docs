@@ -32,6 +32,26 @@ The template expression should be provided inside the ${...} interpolation synta
   
 {% previewsample "page.domainurl/samples/dropdowntree/template/itemTemplate-cs1" %}
 
+## Value template
+
+The currently selected value that is displayed by default on the DropDownTree input element can be customized using the [valueTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree#valuetemplate) property.
+
+In the following sample, the selected value is displayed as a combined text of both `Name` and `Job` in the DropDownTree input, which is separated by a hyphen.
+
+The template expression should be provided inside the ${...} interpolation syntax and {% raw %}`{{...}}`{% endraw %} for ng-template .
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/dropdowntree/template/valueTemplate-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/dropdowntree/template/valueTemplate-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/dropdowntree/template/valueTemplate-cs1" %}
+
 ## Header template
 
 The header element is shown statically at the top of the popup list items within the Dropdown Tree. A custom element can be placed as a header element using the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#headertemplate) property.
