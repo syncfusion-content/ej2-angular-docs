@@ -23,6 +23,8 @@ npm install -g @angular/cli
 
 N> Use the command **npm install --save @angular/cli@12.0.2** to install the Angular CLI version 12.0.2
 
+N> You can refer this [link](./how-to/create-a-standalone-pdf-viewer-in-angular-17-and-above-with-no-standalone-flag) to Create a Standalone PDF Viewer in Angular 17 and above with-no-standalone-flag. You can refer this [link](./how-to/create-a-standalone-pdf-viewer-in-angular-17-and-above-without-no-standalone-flag) to Create a Standalone PDF Viewer in Angular 17 and above without --no-standalone flag 
+
 ## Create an Angular Application
 
 Start a new Angular application using the Angular CLI command as follows.
@@ -175,38 +177,17 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pdfviewer/getting-started-cs1-standalone/src/main.ts %}
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { AppModule } from './app/app.module';
+
+
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
+
 {% endhighlight %}
 {% endtabs %}
 
-N> If you are using an Angular version below 17, you need import the **AppModule** in the **main.ts** file
-
-```typescript
-
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
-import { AppModule } from './app/app.module';
-
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
-
-```
-
 {% previewsample "page.domainurl/samples/pdfviewer/getting-started-cs1-standalone" %}
-
-N> If you are using an Angular version below 17, you need import the **AppModule** in the **main.ts** file
-
-```typescript
-
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
-import { AppModule } from './app/app.module';
-
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
-
-```
 
 [View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Getting%20started%20-%20Standalone).

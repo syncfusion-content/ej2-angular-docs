@@ -155,6 +155,26 @@ Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 {% previewsample "page.domainurl/samples/chart/series/stackedsteparea-cs6" %}
 
+**No risers**
+
+The [`noRisers`] feature allows the stacked step series to appear as a continuous flow, eliminating the vertical lines between points. This approach is useful for highlighting trends without the distraction of risers.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/stackedsteparearaiser-cs/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/stackedsteparearaiser-cs/src/main.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/chart/series/stackedsteparearaiser-cs/src/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/stackedsteparearaiser-cs" %}
+
 ## Empty points
 
 Data points with `null` or `undefined` values are considered empty. Empty data points are ignored and not plotted on the chart.
