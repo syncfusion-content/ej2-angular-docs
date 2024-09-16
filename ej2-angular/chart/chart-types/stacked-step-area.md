@@ -157,7 +157,7 @@ Use the [`step`](https://ej2.syncfusion.com/angular/documentation/api/chart/seri
 
 **No risers**
 
-The [`noRisers`] feature allows the stacked step series to appear as a continuous flow, eliminating the vertical lines between points. This approach is useful for highlighting trends without the distraction of risers.
+The [`noRisers`] feature allows the stacked step area series to appear as a continuous flow, eliminating the vertical lines between points. This approach is useful for highlighting trends without the distraction of risers.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

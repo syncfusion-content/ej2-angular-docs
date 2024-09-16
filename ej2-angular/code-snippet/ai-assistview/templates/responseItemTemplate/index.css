@@ -1,0 +1,36 @@
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  width: 30%;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+#wrapper {
+  height: 350px;
+  width: 650px;
+}
+
+#response-item .e-assistview-icon:before {
+  margin-right: 10px;
+}
+
+#response-item .responseItemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px
+}
+
+#response-item .responseItemContent .response-header {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+#response-item .responseItemContent .content {
+  margin-left: 35px;
+}
