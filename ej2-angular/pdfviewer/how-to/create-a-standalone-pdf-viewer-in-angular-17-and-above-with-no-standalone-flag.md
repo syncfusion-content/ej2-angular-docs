@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting started Standalone Angular PDF Viewer component | Syncfusion
-description: Checkout and learn about Getting started with Standalone Angular PDF Viewer component of Syncfusion Essential JS 2 and more details.
+title: PDF Viewer in Angular 17+ with no-standalone | Syncfusion
+description: Checkout and learn about Create a Standalone PDF Viewer in Angular 17 and above with --no-standalone flag of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: PDF Viewer 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Standalone PDF Viewer component
+# Create a PDF Viewer in Angular 17 and above with --no-standalone flag
 
-This section explains the steps required to create a simple Standalone Angular PDF Viewer and demonstrates the basic usage of the PDF Viewer control in a Angular CLI application.
+This section explains the steps required to create a simple Standalone Angular PDF Viewer in Angular 17 and above with --no-standalone flag.
 
 ## Setup Angular Environment
 
@@ -21,16 +21,12 @@ To install the latest Angular CLI globally use the following command.
 npm install -g @angular/cli
 ```
 
-N> Use the command **npm install --save @angular/cli@12.0.2** to install the Angular CLI version 12.0.2
-
-N> You can refer this [link](./how-to/create-a-standalone-pdf-viewer-in-angular-17-and-above-with-no-standalone-flag) to Create a Standalone PDF Viewer in Angular 17 and above with-no-standalone-flag. You can refer this [link](./how-to/create-a-standalone-pdf-viewer-in-angular-17-and-above-without-no-standalone-flag) to Create a Standalone PDF Viewer in Angular 17 and above without --no-standalone flag 
-
 ## Create an Angular Application
 
 Start a new Angular application using the Angular CLI command as follows.
 
 ```bash
-ng new my-app
+ng new my-app --no-standalone
 cd my-app
 ```
 
@@ -185,7 +181,3 @@ import { AppModule } from './app/app.module';
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));{% endhighlight %}
 {% endtabs %}
-
-{% previewsample "page.domainurl/samples/pdfviewer/getting-started-cs1-standalone" %}
-
-[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/Getting%20started%20-%20Standalone).
