@@ -1,0 +1,38 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms'
+import { DateTimePickerModule } from '@syncfusion/ej2-angular-calendars'
+
+
+
+
+import { Component } from "@angular/core";
+
+@Component({
+imports: [
+        
+        DateTimePickerModule,
+        FormsModule
+    ],
+
+
+standalone: true,
+  selector: 'app-root',
+  template: `<ejs-datetimepicker [value]='date' [minTime]='minTime' [maxTime]='maxTime'></ejs-datetimepicker>`
+})
+export class AppComponent {
+  public today: Date = new Date();
+  public currentYear: number = this.today.getFullYear();
+  public currentMonth: number = this.today.getMonth();
+  public currentDay: number = this.today.getDate();
+  public currentHour: number = this.today.getHours();
+  public currentMinute: number = this.today.getMinutes();
+  public currentSecond: number = this.today.getSeconds();
+  public date: Date = new Date(new Date().setDate(14));
+  public minTime: Date = new Date(this.currentYear,this.currentMonth,7,0,0,0);
+  public maxTime: Date = new Date(this.currentYear,this.currentMonth,27,20,30,0);
+  constructor() {}
+}
+
+
+
