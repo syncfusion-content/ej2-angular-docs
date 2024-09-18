@@ -183,7 +183,9 @@ import { AppModule } from './app/app.module';
 
 
 platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));{% endhighlight %}
+  .catch(err => console.error(err));
+
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/pdfviewer/getting-started-cs1-standalone" %}
