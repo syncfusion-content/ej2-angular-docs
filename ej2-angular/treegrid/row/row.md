@@ -26,7 +26,6 @@ Here's an example illustrating how you can utilize the `rowDataBound` event to c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/row-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-cs1/src/main.ts %}
 {% endhighlight %}
@@ -58,7 +57,6 @@ Here's an example of how to use the **.e-selectionbackground** class to style th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/row-style-selected-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-style-selected-cs1/src/main.ts %}
 {% endhighlight %}
@@ -82,7 +80,6 @@ The following example demonstrates how to use `getRowByIndex` method to customiz
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/rows-event-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/rows-event-cs1/src/main.ts %}
 {% endhighlight %}
@@ -108,7 +105,6 @@ Please refer to the following example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/alt-row-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/alt-row-cs1/src/main.ts %}
 {% endhighlight %}
@@ -128,7 +124,6 @@ Please refer to the following example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/alt-row-cs2/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/alt-row-cs2/src/main.ts %}
 {% endhighlight %}
@@ -146,7 +141,6 @@ In the following example, the demonstration illustrates how to dynamically alter
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/row-height-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-height-cs1/src/main.ts %}
 {% endhighlight %}
@@ -170,7 +164,6 @@ In the below example, the row height for the row with **taskID** as '5' is set a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/row-height-cs2/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-height-cs2/src/main.ts %}
 {% endhighlight %}
@@ -194,7 +187,6 @@ Here is an example that demonstrates how to enable/disable the Row Hover feature
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/row-hover-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-hover-cs1/src/main.ts %}
 {% endhighlight %}
@@ -291,7 +283,6 @@ export class AppComponent implements OnInit {
 }
 {% endraw %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-hover-cs3/src/main.ts %}
 {% endhighlight %}
@@ -312,7 +303,6 @@ Here's an example that demonstrates how to use the `rowDataBound` event and `get
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/row-hover-cs2/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-hover-cs2/src/main.ts %}
 {% endhighlight %}
@@ -346,7 +336,6 @@ Here's an example of how to add a new row using the `addRecord` method:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/add-new-row-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/add-new-row-cs1/src/main.ts %}
 {% endhighlight %}
@@ -438,7 +427,6 @@ export class AppComponent implements OnInit {
 
 {% endraw %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/row-treegrid-cs1/src/main.ts %}
 {% endhighlight %}

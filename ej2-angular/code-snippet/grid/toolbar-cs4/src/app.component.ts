@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { ToolbarService } from '@syncfusion/ej2-angular-grids'
+import { ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
 
 
 import { Component, OnInit } from '@angular/core';
@@ -15,7 +15,7 @@ imports: [
         GridModule
     ],
 
-providers: [ToolbarService],
+providers: [ToolbarService, EditService],
 standalone: true,
     selector: 'app-root',
     template: `

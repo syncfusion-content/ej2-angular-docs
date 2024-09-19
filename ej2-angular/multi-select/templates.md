@@ -155,6 +155,6 @@ In the following sample, when the data fetch request fails, the MultiSelect disp
 
 ## See Also
 
-* [How to bind the data](./data-binding/)
-* [How to group the data using header](./grouping/)
-* [How to customize the options in MultiSelect](./chip-customization/)
+* [How to bind the data](./data-binding)
+* [How to group the data using header](./grouping)
+* [How to customize the options in MultiSelect](./chip-customization)

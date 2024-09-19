@@ -1,29 +1,20 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import {
-  TreeGridComponent,
-  DetailRowService,
-} from '@syncfusion/ej2-angular-treegrid';
+import { Component, OnInit, ViewEncapsulation, } from '@angular/core';
+import { TreeGridComponent, DetailRowService, } from '@syncfusion/ej2-angular-treegrid';
 import { textdata } from './datasource';
 import { Internationalization } from '@syncfusion/ej2-base';
 
 let instance: Internationalization = new Internationalization();
 
 @Component({
-imports: [
-        ButtonModule,
-        TreeGridModule
-    ],
-
-,
-standalone: true,
-  selector: 'app-container',
-  encapsulation: ViewEncapsulation.None,
-  template: `<ejs-treegrid #treegrid [dataSource]='data' height=317 width='auto'  childMapping= 'Children'  >
+    imports: [ButtonModule, TreeGridModule],
+    standalone: true,
+    selector: 'app-container',
+    encapsulation: ViewEncapsulation.None,
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height=317 width='auto'  childMapping= 'Children'  >
                 <e-columns>
                     <e-column field='Name' headerText='First Name' width='160'></e-column>
                     <e-column field='DOB' headerText = 'DOB' width='105' type='date' format='yMd'></e-column>
@@ -53,42 +44,42 @@ standalone: true,
                  </div>
                 </ng-template>
               </ejs-treegrid>`,
-  styles: [
-    `.e-hidedetailrow{
+    styles: [
+        `.e-hidedetailrow{
     display: none; /*//hide detailrow*/
     }`,
-  ],
-  providers: [DetailRowService],
+    ],
+    providers: [DetailRowService],
 })
 export class AppComponent implements OnInit {
-  public data?: Object[];
+    public data?: Object[];
 
-  @ViewChild('treegrid')
-  public treegrid?: TreeGridComponent;
+    @ViewChild('treegrid')
+    public treegrid?: TreeGridComponent;
 
-  ngOnInit(): void {
-    this.data = textdata;
-  }
-
-  detailrow(args: any) {
-    //Here get the corresponding row of the button clicked
-    var target_row = args.target.closest('.e-row');
-
-    //Check whether the next row is a detail row and if it is, determine if it is hidden or not.
-    if (
-      target_row.nextSibling.classList.contains('e-hidedetailrow') &&
-      target_row.nextSibling.classList.contains('e-detailrow')
-    ) {
-      target_row.nextSibling.classList.remove('e-hidedetailrow');
-    } else if (target_row.nextSibling.classList.contains('e-detailrow')) {
-      target_row.nextSibling.classList.add('e-hidedetailrow');
+    ngOnInit(): void {
+        this.data = textdata;
     }
-  }
 
-  public format(target_rowue: Date): string {
-    return instance.formatDate(target_rowue, { skeleton: 'yMd', type: 'date' });
-  }
+    detailrow(args: any) {
+        //Here get the corresponding row of the button clicked
+        var target_row = args.target.closest('.e-row');
+
+        //Check whether the next row is a detail row and if it is, determine if it is hidden or not.
+        if (
+            target_row.nextSibling.classList.contains('e-hidedetailrow') &&
+            target_row.nextSibling.classList.contains('e-detailrow')
+        ) {
+            target_row.nextSibling.classList.remove('e-hidedetailrow');
+        } else if (target_row.nextSibling.classList.contains('e-detailrow')) {
+            target_row.nextSibling.classList.add('e-hidedetailrow');
+        }
+    }
+
+    public format(target_rowue: Date): string {
+        return instance.formatDate(target_rowue, { skeleton: 'yMd', type: 'date' });
+    }
 }
 export interface DateFormat extends Window {
-  format?: Function;
+    format?: Function;
 }

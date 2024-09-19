@@ -1,22 +1,16 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { formatData } from './datasource';
- 
-@Component({
-imports: [
-        
-        TreeGridModule,
-    ],
 
-,
-standalone: true,
-    selector: 'app-container',
-    template: `<ejs-treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' >
+@Component({
+  imports: [
+    TreeGridModule,
+  ],
+  standalone: true,
+  selector: 'app-container',
+  template: `<ejs-treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' >
                     <e-columns>
                         <e-column field='orderID' headerText='Order ID' textAlign='Right' width=90></e-column>
                         <e-column field='orderName' headerText='Order Name' textAlign='Left' width=180></e-column>
@@ -26,11 +20,11 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
 
-    public data?: Object[];
-   
-    ngOnInit(): void {
-        this.data = formatData;
-    }
+  public data?: Object[];
+
+  ngOnInit(): void {
+    this.data = formatData;
+  }
 }
 
 

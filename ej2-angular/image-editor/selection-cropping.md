@@ -72,7 +72,7 @@ The selection region can be changed programmatically by using [`selectionChangin
 
 The [`SelectionChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/selectionChangeEventArgs/#selectionchangeeventargs) is used in these events to customize the selection and it has the following parameters. 
 
-SelectionChangeEventArgs.cction - The type of action such as inserting or resizing 
+SelectionChangeEventArgs.action - The type of action such as inserting or resizing 
 
 SelectionChangeEventArgs.cancel - Specifies to cancel the selection. 
 
@@ -100,6 +100,54 @@ Here is an example of circle cropping using the [`select`](https://ej2.syncfusio
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs14" %}
+
+## Maintaining Original Image Size During Cropping
+
+In the image editor, when an image is cropped, it is usually enlarged or scaled to improve visibility within the user interface. If you want to prevent this scaling and maintain the original cropping size, you can bind to the ‘cropping’ event and set the preventScaling value to true. This not only keeps the image size consistent during cropping but also ensures that the saved image retains its original cropping size without being enlarged.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/image-editor/default-cs43/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/image-editor/default-cs43/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/image-editor/default-cs43" %}
+
+## Locking Selection Area During Cropping
+
+When selecting an area for cropping, users can typically resize the selection from all corners and edges. If you want to prevent the [`selectionChanging`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/#selectionchanging) event. Check if the action is `resize`, and if it is, set `previousSelectionSettings` value to `currentSelectionSettings` value. This will lock the selection area, preventing any adjustments to its size.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/image-editor/default-cs50/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/image-editor/default-cs50/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/image-editor/default-cs50" %}
+
+### Cropping with Custom Ratio Selection
+
+Users can perform cropping either through the toolbar or by using our public methods. While predefined ratio selections are available in the toolbar, users can also crop with custom ratios using our public method, [`select`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/#select). Regardless of the ratio type used, the selection will adhere to the specified ratio, even when resizing the selection area.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/image-editor/default-cs52/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/image-editor/default-cs52/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/image-editor/default-cs52" %}
 
 ## Cropping event 
 

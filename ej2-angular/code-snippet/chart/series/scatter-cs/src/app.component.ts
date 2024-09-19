@@ -14,8 +14,8 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='series1' type='Scatter' xName='x' yName='y' name='Male' opacity=0.9 [marker]='marker' fill='orange'></e-series>
-            <e-series [dataSource]='series2' type='Scatter' xName='x' yName='y' name='Female' opacity=0.9 [marker]='marker' fill='red'></e-series>
+            <e-series [dataSource]='series1' type='Scatter' xName='x' yName='y' name='Male' fill='orange'></e-series>
+            <e-series [dataSource]='series2' type='Scatter' xName='x' yName='y' name='Female' fill='red'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -26,7 +26,6 @@ export class AppComponent implements OnInit {
     public primaryYAxis?: Object;
     public series1?: Object;
     public series2?: Object;
-    public marker?: Object;
     getScatterData(): any {
         let series1: Object[] = [];
         let series2: Object[] = [];
@@ -70,7 +69,6 @@ export class AppComponent implements OnInit {
             rangePadding: 'None'
         };
         this.title = 'Height Vs Weight';
-        this.marker = {  width: 10, height: 10 };
         this.series1 = this.getScatterData().series1;
         this.series2 = this.getScatterData().series2;
     }

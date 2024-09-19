@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 
 # Drag and drop in Angular File manager component
 
-The file manager allows files or folders to be moved from one folder to another by using the  [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#allowdraganddrop) property. It also supports uploading a file by dragging it from Windows Explorer to  FileManager control. You can enable or disable this support by using the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#allowdraganddrop) property of file manager.
+The file manager allows files and folders to be moved within the file system by drag and dropping them. This support can be enabled or disabled using the [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#allowdraganddrop) property of the file manager.
 
-The event triggered in drag and drop support are
+The events which trigger when using drag and drop functionality are listed below.
 
 * [fileDragStart](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#filedragstart) - Triggers when the file/folder dragging is started.
 * [fileDragging](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#filedragging) - Triggers while dragging the file/folder.

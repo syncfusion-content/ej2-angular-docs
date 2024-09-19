@@ -1,23 +1,15 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule, ReorderService } from '@syncfusion/ej2-angular-treegrid'
-import { ButtonModule,  } from '@syncfusion/ej2-angular-buttons'
-
-
-
+import { ButtonModule, } from '@syncfusion/ej2-angular-buttons'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [ReorderService],
-standalone: true,
+    imports: [TreeGridModule, ButtonModule],
+    providers: [ReorderService],
+    standalone: true,
     selector: 'app-container',
     template: ` <button ejs-button id='reordersingle' cssClass="e-info" (click)='reorderSingleColumnUsingFieldName()'>Reorder single Column</button>
                 <button ejs-button id='reordermultiple' cssClass="e-info" (click)='reorderMultipleColumnsUsingFieldName()'>Reorder Multiple Columns</button>
@@ -47,6 +39,3 @@ export class AppComponent implements OnInit {
         (this.treegridObj as TreeGridComponent).reorderColumns(['startDate', 'duration', 'progress'], 'taskID');
     }
 }
-
-
-

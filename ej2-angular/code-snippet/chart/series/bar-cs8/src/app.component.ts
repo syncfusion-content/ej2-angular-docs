@@ -6,7 +6,7 @@ import { BarSeriesService, StackingBarSeriesService, CategoryService} from '@syn
 
 
 import { Component, OnInit } from '@angular/core';
-import { cylindricalData } from './datasource';
+import { stackedData } from './datasource';
 @Component({
 imports: [
          ChartModule
@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
     primaryYAxis: any;
     primaryXAxis: any;
     ngOnInit(): void {
-        this.chartData = cylindricalData;
+        this.chartData = stackedData;
     }
 
 }

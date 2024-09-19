@@ -16,7 +16,7 @@ The Angular Image Editor allows adding annotations to the image, including text,
 
 The text annotation feature in the Image Editor provides the capability to add and customize labels, captions, and other text elements directly onto the image. With this feature, you can easily insert text at specific locations within the image and customize various aspects of the text to meet your requirements. 
 
-You have control over the customization options including text content, font family, font style and font size for the text annotation.
+You have control over the customization options including text content, font family, font style, font color, fill color, stroke color, stroke width and font size for the text annotation.
 
 ### Add a text
 
@@ -39,6 +39,14 @@ The [`drawText`](https://ej2.syncfusion.com/angular/documentation/api/image-edit
 * color: Specifies the font color of the text, allowing you to define the desired color using appropriate color values or names.
 
 * isSelected: Specifies to show the text in the selected state.
+
+* degree: Specifies the degree to rotate the text.
+
+* fillColor: Specifies the background color of the text.
+
+* strokeColor: Specifies the outline color of the text annotation.
+
+* strokeWidth: Specifies the outline stroke width of the text annotation.
 
 By utilizing the [`drawText`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawtext) method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
 
@@ -204,7 +212,7 @@ The Image Editor component provides the ability to add shape annotations to an i
 
 The [`drawRectangle`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawrectangle)  method is used to insert a rectangle to the Angular Image Editor component. Rectangle annotations are valuable tools for highlighting, emphasizing, or marking specific areas of an image to draw attention or provide additional context.
 
-The [`drawRectangle`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawrectangle) method in the Angular Image Editor component takes seven parameters to define the properties of the rectangle annotation: 
+The [`drawRectangle`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawrectangle) method in the Angular Image Editor component takes ten parameters to define the properties of the rectangle annotation: 
 
 * x: Specifies the x-coordinate of the top-left corner of the rectangle. 
 
@@ -223,6 +231,8 @@ The [`drawRectangle`](https://ej2.syncfusion.com/angular/documentation/api/image
 * degree: Specifies the degree to rotate the rectangle.
 
 * isSelected: Specifies to show the rectangle in the selected state.
+
+* borderRadius: Specifies the radius to apply border radius to rectangle.824314: Image Editor New UG Sample
 
 The [`drawEllipse`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawellipse) method is used to insert a ellipse to the Angular Image Editor component. Ellipse annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
@@ -377,3 +387,18 @@ In the following example, you can use the [`drawImage`](https://ej2.syncfusion.c
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs37" %}
 
+### Customize Default Stroke Color for Shapes 
+
+We provide default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the [`shapeChanging`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapechanging) event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. This approach allows conditional updates to the `currentShapeSettings`, ensuring that only the desired defaults are changed while maintaining the other settings.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/image-editor/default-cs51/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/image-editor/default-cs51/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/image-editor/default-cs51" %}

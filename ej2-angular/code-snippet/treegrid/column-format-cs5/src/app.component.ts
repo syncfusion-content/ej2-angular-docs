@@ -1,20 +1,13 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { formatData } from './datasource';
- 
-@Component({
-imports: [
-        
-        TreeGridModule
-    ],
 
-,
-standalone: true,
+@Component({
+    imports: [ TreeGridModule,CommonModule   ],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' >
                     <e-columns>
@@ -25,7 +18,7 @@ standalone: true,
                                  {{ data.orderDate | date:'dd/MMM/yyyy' }}
                             </ng-template>
                         </e-column>
-                        <e-column field='shippedDate' headerText='Ship Date' textAlign='Right' width=150></e-column>
+                        <e-column field='shippedDate' headerText='Ship Date' textAlign='Right' width=400></e-column>
                         <e-column field='units' headerText='Units' textAlign='Right' format='N' type='number' width=80></e-column>
                     </e-columns>
              </ejs-treegrid>`
@@ -33,7 +26,7 @@ standalone: true,
 export class AppComponent implements OnInit {
 
     public data?: Object[];
-    
+
     ngOnInit(): void {
         this.data = formatData;
     }

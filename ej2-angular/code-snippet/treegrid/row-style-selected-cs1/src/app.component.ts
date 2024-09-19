@@ -1,27 +1,14 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-import { Component, OnInit,ViewEncapsulation  } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-container',
     encapsulation: ViewEncapsulation.None,
     template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='250' [enableHover]='false' childMapping='subtasks' >
@@ -33,10 +20,10 @@ standalone: true,
                      </e-columns>
                 </ejs-treegrid>`,
     styles: [
-                `.e-treegrid .e-selectionbackground {
+        `.e-treegrid .e-selectionbackground {
                     background-color: #f9920b !important;
                 }`,
-            ],
+    ],
 })
 export class AppComponent implements OnInit {
 

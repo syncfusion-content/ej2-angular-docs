@@ -84,8 +84,8 @@ Here's an example that demonstrates how to disable editing for the column in the
 {% previewsample "page.domainurl/samples/grid/edit-cs20" %}
 
 >* If you have set the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property to **true** for a column, editing will be automatically disabled for that column.
-> * You can disable the particular row using [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.please refer this [link](https://ej2.syncfusion.com/angular/documentation/grid/editing/in-line-editing#disable-editing-for-a-particular-row).
->* You can disable the particular cell using [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#celledit) event.please refer this [link](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing#disable-editing-for-a-particular-cell).
+> * You can disble the particular row using [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/grid/#actionbegin) event.please refer this [link](https://ej2.syncfusion.com/angular/documentation/grid/editing/in-line-editing#disable-editing-for-a-particular-row).
+>* You can disble the particular cell using [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#celledit) event.please refer this [link](https://ej2.syncfusion.com/angular/documentation/grid/editing/batch-editing#disable-editing-for-a-particular-cell).
 
 ## Editing template column
 

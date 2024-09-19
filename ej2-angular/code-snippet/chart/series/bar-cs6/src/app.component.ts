@@ -17,7 +17,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='Bar' xName='x' yName='y' name='India' fill='yellow' dashArray='5.5' opacity='0.8' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='Bar' xName='x' yName='y' name='India' dashArray='5.5' [border]='border'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })

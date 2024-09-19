@@ -7,7 +7,7 @@ import { AreaSeriesService, RangeAreaSeriesService, StepAreaSeriesService, Stack
 
 
 import { Component, OnInit } from '@angular/core';
-import { stepData } from './datasource';
+import { chartData } from './datasource';
 @Component({
 imports: [
          ChartModule, ChartAllModule
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
     public title?: string;
     public primaryYAxis?: Object;
     ngOnInit(): void {
-        this.chartData = stepData;
+        this.chartData = chartData;
         this.primaryXAxis = {
             valueType: 'Double',
             title: 'Overs'

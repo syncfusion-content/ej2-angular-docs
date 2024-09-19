@@ -1,26 +1,17 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
-  selector: 'app-container',
-  template: `<div class="control-section">
+    imports: [TreeGridModule,],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<div class="control-section">
                 <div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>
           
                     <ejs-treegrid #treegrid [dataSource]="data" allowPaging="true" childMapping="subtasks" height="250"
@@ -39,22 +30,22 @@ standalone: true,
                </div>`,
 })
 export class AppComponent implements OnInit {
-  public data: Object[] = [];
-  public message?: string;
-  ngOnInit(): void {
-    this.data = sampleData;
-  }
+    public data: Object[] = [];
+    public message?: string;
+    ngOnInit(): void {
+        this.data = sampleData;
+    }
 
-  expanding(args: any): void {
-    this.message = 'Expanding event is triggered';
-  }
-  collapsing(args: any): void {
-    this.message = 'Collapsing event is triggered';
-  }
-  expanded(args: any): void {
-    this.message = 'Expanded event is triggered';
-  }
-  collapsed(args: any): void {
-    this.message = 'Collapsed event is triggered';
-  }
+    expanding(args: any): void {
+        this.message = 'Expanding event is triggered';
+    }
+    collapsing(args: any): void {
+        this.message = 'Collapsing event is triggered';
+    }
+    expanded(args: any): void {
+        this.message = 'Expanded event is triggered';
+    }
+    collapsed(args: any): void {
+        this.message = 'Collapsed event is triggered';
+    }
 }

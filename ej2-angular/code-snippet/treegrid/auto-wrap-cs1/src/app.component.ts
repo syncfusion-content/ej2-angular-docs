@@ -1,27 +1,19 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-import {  TextWrapSettingsModel } from '@syncfusion/ej2-angular-grids';
-import {DropDownListModule} from '@syncfusion/ej2-angular-dropdowns';
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { TextWrapSettingsModel } from '@syncfusion/ej2-angular-grids';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
-import { TreeGridComponent,  WrapMode } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent, WrapMode } from '@syncfusion/ej2-angular-treegrid';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule, DropDownListModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule, ButtonModule, DropDownListModule],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<div style="display: flex">
                <label style="padding: 30px 17px 0 0" >Autowrap for header column :</label>
@@ -47,12 +39,12 @@ export class AppComponent implements OnInit {
     public treegrid?: TreeGridComponent;
     public wrapSettings: TextWrapSettingsModel = { wrapMode: 'Header' };
     public dropdownData: Object[] = [
-      { text: 'Header', value: 'Header' },
-      { text: 'Both', value: 'Both' },
+        { text: 'Header', value: 'Header' },
+        { text: 'Both', value: 'Both' },
     ];
-  
+
     valueChange(args: ChangeEventArgs): void {
-      (this.treegrid as TreeGridComponent).textWrapSettings.wrapMode = (args.value as WrapMode);
+        (this.treegrid as TreeGridComponent).textWrapSettings.wrapMode = (args.value as WrapMode);
     }
     ngOnInit(): void {
         this.data = sampleData;

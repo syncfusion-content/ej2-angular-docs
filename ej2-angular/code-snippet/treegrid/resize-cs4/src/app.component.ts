@@ -2,24 +2,13 @@ import { NgModule,ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { stackedData } from './datasource';
 import { ResizeService  } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
+imports: [ TreeGridModule,],
+providers: [PageService, SortService, FilterService, ResizeService],
 standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' childMapping='subtasks' height='260' [allowResizing]='true' [treeColumnIndex]='1' >
@@ -29,7 +18,7 @@ standalone: true,
                         <e-column headerText='Price Details' [columns]='priceColumns'></e-column>
                     </e-columns>
                 </ejs-treegrid>`,
-    providers: [ResizeService ]
+    
 })
 export class AppComponent implements OnInit {
 

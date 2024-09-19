@@ -7,7 +7,7 @@ import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeries
 
 
 import { Component, OnInit } from '@angular/core';
-import { splineData } from './datasource';
+import { paretoData } from './datasource';
 
 @Component({
 imports: [
@@ -32,25 +32,21 @@ export class AppComponent implements OnInit {
     public marker?: Object;
     public tooltip?: Object;
     ngOnInit(): void {
-        this.chartData = [
-                    { x: 'Traffic', y: 56 }, { x: 'Child Care', y: 44.8 },
-                    { x: 'Transport', y: 27.2 }, { x: 'Weather', y: 19.6 },
-                    { x: 'Emergency', y: 6.6 }
-                ];
+        this.chartData = paretoData;
         this.primaryXAxis = {
             title: 'Defects',
             valueType: 'Category',
         };
         this.marker = { visible: true, width: 10, height: 10 };
         this.primaryYAxis = {
-         title: 'Frequency',
+         title: 'Frequency of Occurence',
             minimum: 0,
             maximum: 150,
             interval: 30,
 
         };
         this.tooltip = { enable: true, shared: true }
-        this.title = 'Climate Graph-2012';
+        this.title = 'Pareto chart - Defects in Shirts';
     }
 
 }

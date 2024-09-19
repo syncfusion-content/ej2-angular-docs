@@ -1,26 +1,16 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild, ViewEncapsulation } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { PageService, SortService, FilterService, ColumnChooserService, ToolbarService} from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { PageService, SortService, FilterService, ColumnChooserService, ToolbarService } from '@syncfusion/ej2-angular-treegrid'
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                ToolbarService,
-                ColumnChooserService,],
-standalone: true,
+    imports: [TreeGridModule,],
+    encapsulation:ViewEncapsulation.None,
+    providers: [PageService, SortService, FilterService, ToolbarService, ColumnChooserService,],
+    standalone: true,
     selector: 'app-container',
     template: ` <ejs-treegrid #treegrid id="TreeGrid" [dataSource]='data' [toolbar]="toolbar" [treeColumnIndex]='1' [showColumnChooser]='true' height='270' childMapping='subtasks'>
                     <e-columns>
@@ -32,11 +22,19 @@ standalone: true,
                             <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
                     </e-columns>
                 </ejs-treegrid>`,
+    styles:[`.e-treegrid .e-dialog.e-ccdlg {
+        height: 500px;
+        width: 200px;
+    }
+    .e-treegrid .e-ccdlg .e-cc-contentdiv {
+        height: 200px;
+        width: 230px;
+    }`]
 })
 export class AppComponent implements OnInit {
     public data: object[] = [];
     public toolbar?: string[];
-    
+
     ngOnInit(): void {
         this.data = sampleData;
         this.toolbar = ['ColumnChooser'];

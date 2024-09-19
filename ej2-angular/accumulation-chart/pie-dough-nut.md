@@ -127,6 +127,22 @@ The fill color and the text in the data source can be mapped to the chart using 
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs25" %}
 
+## Border Radius
+
+You can create rounded corners for each slice by using the [borderRadius] option, which gives the chart a modern and polished appearance.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/pie-cs39/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/pie-cs39/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/pie-cs39" %}
+
 ## Hide pie or doughnut border
 
 By default, the border will appear in the pie/doughnut chart while mouse hover on the chart. You can disable the the border by setting `enableBorderOnMouseMove` property is `false`.
@@ -142,6 +158,22 @@ By default, the border will appear in the pie/doughnut chart while mouse hover o
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs26" %}
+
+## Patterns
+
+You can apply different patterns to the pie slices using the [`applyPattern`] property in the series and the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/iAccPointRenderEventArgs/) event.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/pie-cs40/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/pie-cs40/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/pie-cs40" %}
 
 ## Multi-level pie chart
 

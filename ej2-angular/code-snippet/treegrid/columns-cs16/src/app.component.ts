@@ -1,26 +1,18 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent, Column } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
-  selector: 'app-container',
-  template: `<button ejs-button id='add' cssClass="e-info" (click)='addColumns()'> Add Column</button>
+    imports: [TreeGridModule, ButtonModule],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<button ejs-button id='add' cssClass="e-info" (click)='addColumns()'> Add Column</button>
              <button ejs-button id='delete' cssClass="e-info" (click)='deleteColumns()'> Delete Column</button>
     
              <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks'>
@@ -33,27 +25,27 @@ standalone: true,
               </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
-  public data?: object[];
-  @ViewChild('treegrid')
-  public treegrid?: TreeGridComponent;
-  
-  ngOnInit(): void {
-    this.data = sampleData;
-  }
-  addColumns(): void {
-    var col: any = (this.treegrid as TreeGridComponent).columns;
-    var newColumns = [
-      { field: 'progress', headerText: 'Progress', width: 120 },
-      { field: 'priority', headerText: 'Priority', width: 120, format: 'yMd' },
-    ];
-    newColumns.forEach((cols: any) => {
-      col.push(cols);
-    });
-    (this.treegrid as TreeGridComponent).refreshColumns();
-  }
-  deleteColumns(): void {
-    var col: any = (this.treegrid as TreeGridComponent).columns;
-    col.pop();
-    (this.treegrid as TreeGridComponent).refreshColumns();
-  }
+    public data?: object[];
+    @ViewChild('treegrid')
+    public treegrid?: TreeGridComponent;
+
+    ngOnInit(): void {
+        this.data = sampleData;
+    }
+    addColumns(): void {
+        var col: any = (this.treegrid as TreeGridComponent).columns;
+        var newColumns = [
+            { field: 'progress', headerText: 'Progress', width: 120 },
+            { field: 'priority', headerText: 'Priority', width: 120, format: 'yMd' },
+        ];
+        newColumns.forEach((cols: any) => {
+            col.push(cols);
+        });
+        (this.treegrid as TreeGridComponent).refreshColumns();
+    }
+    deleteColumns(): void {
+        var col: any = (this.treegrid as TreeGridComponent).columns;
+        col.pop();
+        (this.treegrid as TreeGridComponent).refreshColumns();
+    }
 }

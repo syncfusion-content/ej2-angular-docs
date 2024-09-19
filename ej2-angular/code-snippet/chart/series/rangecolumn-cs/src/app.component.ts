@@ -21,8 +21,8 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='data1' type='RangeColumn' xName='x' low='low' high='high' fill='yellow' [border]='border' dashArray='5.5'></e-series>
-            <e-series [dataSource]='data2' type='RangeColumn' xName='x' low='low' high='high' fill='yellow' [border]='border' dashArray='5.5'></e-series>
+            <e-series [dataSource]='data1' type='RangeColumn' xName='x' low='low' high='high' fill='red' ></e-series>
+            <e-series [dataSource]='data2' type='RangeColumn' xName='x' low='low' high='high' fill='yellow' ></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -36,10 +36,6 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data1 = data1;
         this.data2 = data2;
-        this.border = {
-            width: 2.5,
-            color: 'brown'
-        }
         this.primaryXAxis = {
             title: 'month',
             valueType: 'Category'

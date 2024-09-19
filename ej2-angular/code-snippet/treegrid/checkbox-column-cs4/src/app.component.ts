@@ -1,26 +1,17 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
-  selector: 'app-container',
-  template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' autoCheckHierarchy='true' (rowDataBound)="rowdatabound($event)" >
+    imports: [TreeGridModule,],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' autoCheckHierarchy='true' (rowDataBound)="rowdatabound($event)" >
                <e-columns>
                  <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                  <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180 [showCheckbox]='true'></e-column>
@@ -30,17 +21,17 @@ standalone: true,
               </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
-  public data?: Object[];
-  @ViewChild('treegrid') treegrid?: TreeGridComponent;
-  
-  ngOnInit(): void {
-    this.data = sampleData;
-  }
+    public data?: Object[];
+    @ViewChild('treegrid') treegrid?: TreeGridComponent;
 
-  rowdatabound(args: any): void {
-    if (args.data.hasChildRecords) {
-      //Here hide the parent checkboxes
-      args.row.querySelector('.e-checkbox-wrapper').style.display = 'none';
+    ngOnInit(): void {
+        this.data = sampleData;
     }
-  }
+
+    rowdatabound(args: any): void {
+        if (args.data.hasChildRecords) {
+            //Here hide the parent checkboxes
+            args.row.querySelector('.e-checkbox-wrapper').style.display = 'none';
+        }
+    }
 }

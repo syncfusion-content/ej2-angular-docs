@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Filters in the Angular Image Editor component
 
-Filters are pre-defined effects that can be applied to an image to alter its appearance or mood. Image filters can be used to add visual interest or to enhance certain features of the image. Some common types of image filters include cold, warm, chrome, sepia, and invert. This can be done by either using the toolbar or the [`applyImageFilter`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#applyimagefilter) method which takes a single parameter: the filter applied to an image. 
+Filters are pre-defined effects that can be applied to an image to alter its appearance or mood. Image filters can be used to add visual interest or to enhance certain features of the image. Some common types of image filters include cold, warm, chrome, sepia, and invert. This can be done by either using the toolbar or the [`applyImageFilter`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#applyimagefilter) method which takes a single parameter: the filter applied to an image.
 
 ## Apply filter effect
 

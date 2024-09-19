@@ -1,32 +1,21 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { PageService, SortService, FilterService,EditService } from '@syncfusion/ej2-angular-treegrid'
-import { CheckBoxModule} from '@syncfusion/ej2-angular-buttons'
-
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import {
-  EditSettingsModel,
-  TreeGridComponent,
-} from '@syncfusion/ej2-angular-treegrid';
+import { PageService, SortService, FilterService, EditService } from '@syncfusion/ej2-angular-treegrid'
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { EditSettingsModel, TreeGridComponent, } from '@syncfusion/ej2-angular-treegrid';
 import { RowDataBoundEventArgs } from '@syncfusion/ej2-grids';
 import { sampleData } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        CheckBoxModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,EditService],
-standalone: true,
-  selector: 'app-container',
-  encapsulation: ViewEncapsulation.None,
-  template: `<div style="padding:2px 0px 0px 0px">
+    imports: [TreeGridModule, CheckBoxModule],
+    providers: [PageService, SortService, FilterService, EditService],
+    standalone: true,
+    selector: 'app-container',
+    encapsulation: ViewEncapsulation.None,
+    template: `<div style="padding:2px 0px 0px 0px">
              <ejs-checkbox #checkbox label='Show / Hide Row' 
                   (change)="onCheckBoxChange($event)"></ejs-checkbox>
             </div>
@@ -42,55 +31,55 @@ standalone: true,
             </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
-  public data?: Object[];
-  public rowIndex?: number;
-  public hiddenRows: number[] = [];
-  @ViewChild('treegrid')
-  public treegrid: TreeGridComponent | undefined;
-  public message?: string = '';
+    public data?: Object[];
+    public rowIndex?: number;
+    public hiddenRows: number[] = [];
+    @ViewChild('treegrid')
+    public treegrid: TreeGridComponent | undefined;
+    public message?: string = '';
 
-  ngOnInit(): void {
-    this.data = sampleData;
-  }
-  public onCheckBoxChange(args: ChangeEventArgs) {
-    if (args.checked) {
-      for (
-        let i = 0;
-        i < (this.treegrid as TreeGridComponent).grid.getRowsObject().length;
-        i++
-      ) {
-        if (
-          (
-            (this.treegrid as TreeGridComponent).grid.getRowsObject()[i]
-              .data as any
-          ).duration === 0
-        ) {
-          // check the row value
-          this.rowIndex = (
-            this.treegrid as TreeGridComponent
-          ).grid.getRowsObject()[i].index; //get particular row index
-          (
-            (this.treegrid as TreeGridComponent).getRowByIndex(
-              this.rowIndex
-            ) as HTMLElement
-          ).style.display = 'none'; //hide row
-          this.hiddenRows.push(this.rowIndex as number); // add row index to hiddenRows array
-        }
-      }
-      if (this.hiddenRows.length > 0) {
-       this.message = `Rows with a duration column value of '0' have been hidden`;
-      }
-    } else {
-      // Show hidden rows
-      this.hiddenRows.forEach((rowIndex: number) => {
-        (
-          (this.treegrid as TreeGridComponent).getRowByIndex(
-            rowIndex
-          ) as HTMLElement
-        ).style.display = '';
-      });
-      this.hiddenRows = [];
-      this.message = 'Show all hidden rows';
+    ngOnInit(): void {
+        this.data = sampleData;
     }
-  }
+    public onCheckBoxChange(args: ChangeEventArgs) {
+        if (args.checked) {
+            for (
+                let i = 0;
+                i < (this.treegrid as TreeGridComponent).grid.getRowsObject().length;
+                i++
+            ) {
+                if (
+                    (
+                        (this.treegrid as TreeGridComponent).grid.getRowsObject()[i]
+                            .data as any
+                    ).duration === 0
+                ) {
+                    // check the row value
+                    this.rowIndex = (
+                        this.treegrid as TreeGridComponent
+                    ).grid.getRowsObject()[i].index; //get particular row index
+                    (
+                        (this.treegrid as TreeGridComponent).getRowByIndex(
+                            this.rowIndex
+                        ) as HTMLElement
+                    ).style.display = 'none'; //hide row
+                    this.hiddenRows.push(this.rowIndex as number); // add row index to hiddenRows array
+                }
+            }
+            if (this.hiddenRows.length > 0) {
+                this.message = `Rows with a duration column value of '0' have been hidden`;
+            }
+        } else {
+            // Show hidden rows
+            this.hiddenRows.forEach((rowIndex: number) => {
+                (
+                    (this.treegrid as TreeGridComponent).getRowByIndex(
+                        rowIndex
+                    ) as HTMLElement
+                ).style.display = '';
+            });
+            this.hiddenRows = [];
+            this.message = 'Show all hidden rows';
+        }
+    }
 }

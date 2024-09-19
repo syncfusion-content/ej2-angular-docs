@@ -5,7 +5,7 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesService, StackingColumnSeriesService, StackingAreaSeriesService, RangeColumnSeriesService, ScatterSeriesService, PolarSeriesService, CategoryService, RadarSeriesService, SplineSeriesService} from '@syncfusion/ej2-angular-charts'
 
 
-
+import { chartData } from './datasource'
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -31,8 +31,7 @@ export class AppComponent implements OnInit {
 
 
     ngOnInit(): void {
-        this.data = [{ x: 2005, y: 28 }, { x: 2006, y: 25 },{ x: 2007, y: 26 }, { x: 2008, y: 27 },
-                     { x: 2009, y: 32 }, { x: 2010, y: 35 }, { x: 2011, y: 30 }];
+        this.data = chartData;
         this.primaryXAxis = {
             title: 'Year',
             minimum: 2004, maximum: 2012, interval: 1

@@ -1,28 +1,13 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { PageService, SortService, FilterService,ToolbarService,TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { PageService, SortService, FilterService, ToolbarService, TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-import { Component, OnInit , ViewChild} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { textdata } from './datasource';
 
-
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                ToolbarService],
-standalone: true,
+    imports: [TreeGridModule, DropDownListAllModule],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height=291 width='auto' childMapping= 'Children' [enableHover]="false">
                     <e-columns>
@@ -42,15 +27,15 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
 
-        public data?: Object[] ;
-        public dropData?: string[];
-            
-        ngOnInit(): void {
-            this.data =textdata;
-            this.dropData = ['USA', 'UK', 'London'];
-        }
-        
+    public data?: Object[];
+    public dropData?: string[];
+
+    ngOnInit(): void {
+        this.data = textdata;
+        this.dropData = ['USA', 'UK', 'London'];
     }
+
+}
 
 
 

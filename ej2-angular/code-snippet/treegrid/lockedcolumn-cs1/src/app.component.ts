@@ -1,19 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule, ReorderService } from '@syncfusion/ej2-angular-treegrid'
-
-import { Component, OnInit, ViewEncapsulation  } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
-import { ReorderService } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule
-    ],
-
-providers: [ReorderService],
-standalone: true,
+    imports: [TreeGridModule ],
+    providers: [ReorderService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height='285' [allowReordering]='true' [allowSelection]='false' [treeColumnIndex]='2' childMapping='subtasks' >
                   <e-columns>
@@ -24,9 +18,9 @@ standalone: true,
                       <e-column field='progress' headerText='Progress' textAlign='Right' width=120></e-column>
                   </e-columns>
                 </ejs-treegrid>`,
-                providers: [ReorderService],
-                encapsulation: ViewEncapsulation.None,
-                styleUrls: ['./custom-column.style.css']
+
+    encapsulation: ViewEncapsulation.None,
+    styleUrls: ['./custom-column.style.css']
 })
 export class AppComponent implements OnInit {
 
@@ -35,6 +29,6 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = sampleData;
-         this.customAttributes = {class: 'customcss'};
+        this.customAttributes = { class: 'customcss' };
     }
 }

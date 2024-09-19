@@ -19,10 +19,10 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart style='display:block;' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'>
 	    <e-series-collection>
-	        <e-series stackingGroup="A" [dataSource]='data' type='StackingColumn' xName='x' yName='y' name='UK' width='2'> </e-series>
-		    <e-series stackingGroup="B" [dataSource]='data1' type='StackingColumn' xName='x' yName='y' name='Germany' width='2'> </e-series>
-		    <e-series stackingGroup="A" [dataSource]='data2' type='StackingColumn' xName='x' yName='y' name='France' width='2'> </e-series>
-		    <e-series stackingGroup="B" [dataSource]='data3' type='StackingColumn' xName='x' yName='y' name='Italy' width='2'> </e-series>
+	        <e-series stackingGroup="UKAndGermany" [dataSource]='data' type='StackingColumn' xName='x' yName='y' name='UK' width='2'> </e-series>
+		    <e-series stackingGroup="UKAndGermany" [dataSource]='data1' type='StackingColumn' xName='x' yName='y' name='Germany' width='2'> </e-series>
+		    <e-series stackingGroup="FranceAndItaly" [dataSource]='data2' type='StackingColumn' xName='x' yName='y' name='France' width='2'> </e-series>
+		    <e-series stackingGroup="FranceAndItaly" [dataSource]='data3' type='StackingColumn' xName='x' yName='y' name='Italy' width='2'> </e-series>
 	    </e-series-collection>
 	</ejs-chart>`
 })

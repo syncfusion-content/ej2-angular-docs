@@ -29,7 +29,6 @@ The default column menu items are displayed in following table.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-menu-cs1/src/main.ts %}
 {% endhighlight %}
@@ -51,7 +50,6 @@ Consider the following example, which demonstrates how to add a custom column me
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-menu-cs2/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-menu-cs2/src/main.ts %}
 {% endhighlight %}
@@ -69,7 +67,6 @@ In the following sample, the **Filter** item was hidden in the column menu when 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-menu-cs3/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-menu-cs3/src/main.ts %}
 {% endhighlight %}
@@ -106,7 +103,6 @@ Here is an example that demonstrates how to customize the column menu icon in th
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-menu-cs5/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-menu-cs5/src/main.ts %}
 {% endhighlight %}
@@ -126,7 +122,6 @@ Here is an example of how to configure the `columnMenuItems` property to include
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-menu-cs4/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-menu-cs4/src/main.ts %}
 {% endhighlight %}
@@ -145,7 +140,6 @@ The column menu in Syncfusion Angular Tree Grid provides a set of events that al
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/column-menu-cs6/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/column-menu-cs6/src/main.ts %}
 {% endhighlight %}

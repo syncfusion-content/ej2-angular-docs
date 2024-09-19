@@ -1,28 +1,14 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent, SortService, ColumnMenuService, PageService, FilterService } from '@syncfusion/ej2-angular-treegrid';
 import { FilterSettingsModel } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule,],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid height='250' allowSorting='true' allowPaging='true' [dataSource]='data' [treeColumnIndex]='1' childMapping='subtasks' [filterSettings]='filterSettings' [allowFiltering]='true' showColumnMenu="true">
                     <e-columns>
@@ -41,7 +27,7 @@ export class AppComponent implements OnInit {
     public treegrid?: TreeGridComponent;
     public data?: object[];
     public filterSettings: FilterSettingsModel = { type: 'Menu' };
-    
+
     ngOnInit(): void {
         this.data = sampleData;
     }

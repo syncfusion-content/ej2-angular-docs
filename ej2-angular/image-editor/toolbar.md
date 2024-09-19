@@ -155,6 +155,6 @@ Here is an example of adding the custom toolbar item to the contextual toolbar.
 {% include code-snippet/image-editor/default-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/image-editor/default-cs12" %}
 

@@ -7,7 +7,7 @@ import { AreaSeriesService, RangeAreaSeriesService, StepAreaSeriesService, Stack
 
 
 import { Component, OnInit } from '@angular/core';
-import { rangeData } from './datasource';
+import { chartData } from './datasource';
 
 @Component({
 imports: [
@@ -20,7 +20,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='RangeArea' xName='x' high='high' low='low' name='India' fill='#69D2E7' opacity=0.6></e-series>
+            <e-series [dataSource]='chartData' type='RangeArea' xName='x' high='high' low='low' name='India' ></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     public title?: string;
     public primaryYAxis?: Object;
     ngOnInit(): void {
-        this.chartData = rangeData;
+        this.chartData = chartData;
         this.primaryXAxis = {
            title: 'Month',valueType: 'Category',
            edgeLabelPlacement: 'Shift'
