@@ -54,7 +54,7 @@ this.diagram.loadDiagram(saveData);
 
 ## Loaded Event
 
-The [`Loaded`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loaded) event triggers when all diagram elements are loaded using [`loadDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loadDiagram) method. You can use this event to customize diagram elements during the loading process.
+The [`loaded`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loaded) event triggers when all diagram elements are loaded using [`loadDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loadDiagram) method. You can use this event to customize diagram elements during the loading process.
 
 ```typescript
 
