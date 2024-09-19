@@ -126,7 +126,7 @@ You can utilize the [`fileOpened`](https://helpej2.syncfusion.com/angular/docume
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/image-editor/default-cs853 %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs53 %}
 
 ## Save
 
@@ -170,9 +170,9 @@ To save an image as a base64 format, use the [`getImageData`](https://helpej2.sy
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs49" %}
 
-### Save the image aa byte[]
+### Save the image a byte[]
 
-To save an image as a byte array (byte[]), use the [`getImageData`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/#getimagedata) method of the editor to retrieve the image data and convert it into a byte array. You can then invoke the open method on the Syncfusion Image Editor instance to load this byte array into the editor. The resulting byte array can be stored in a database for data management and maintenance.
+To save an image as a byte array, use the [`getImageData`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/#getimagedata) method of the editor to retrieve the image data and convert it into a byte array. You can then invoke the open method on the Syncfusion Image Editor instance to load this byte array into the editor. The resulting byte array can be stored in a database for data management and maintenance.
 
 ### Save the image as blob
 
