@@ -72,7 +72,7 @@ The selection region can be changed programmatically by using [`selectionChangin
 
 The [`SelectionChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/selectionChangeEventArgs/#selectionchangeeventargs) is used in these events to customize the selection and it has the following parameters. 
 
-SelectionChangeEventArgs.cction - The type of action such as inserting or resizing 
+SelectionChangeEventArgs.action - The type of action such as inserting or resizing 
 
 SelectionChangeEventArgs.cancel - Specifies to cancel the selection. 
 
@@ -119,7 +119,7 @@ In the image editor, when an image is cropped, it is usually enlarged or scaled 
 
 ## Locking Selection Area During Cropping
 
-When selecting an area for cropping, users can typically resize the selection from all corners and edges. If you want to prevent the [`resizing`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/#resizing) of the selection area, you can bind to the resizing event and set cancel to true. This will lock the selection area, preventing any adjustments to its size.
+When selecting an area for cropping, users can typically resize the selection from all corners and edges. If you want to prevent the [`selectionChanging`](https://helpej2.syncfusion.com/angular/documentation/api/image-editor/#selectionchanging) event. Check if the action is `resize`, and if it is, set `previousSelectionSettings` value to `currentSelectionSettings` value. This will lock the selection area, preventing any adjustments to its size.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
