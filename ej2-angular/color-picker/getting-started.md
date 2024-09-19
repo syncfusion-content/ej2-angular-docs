@@ -150,7 +150,7 @@ The following sample shows the inline type rendering of ColorPicker.
 {% include code-snippet/colorpicker/getting-started/inline-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/colorpicker/getting-started/inline-cs1" %}
 
 >> The `showButtons` property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [`showButtons`](./how-to/hide-control-buttons) sample.
