@@ -8,15 +8,11 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-imports: [
-        
-        TreeGridModule, ButtonModule
-    ],
-
-providers: [ReorderService],
-standalone: true,
-  selector: 'app-container',
-  template: `<button id='show' ejs-button class='e-flat' (click)='show()'> Show </button>
+    imports: [TreeGridModule, ButtonModule],
+    providers: [ReorderService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<button id='show' ejs-button class='e-flat' (click)='show()'> Show </button>
              <button id='hide' ejs-button class='e-flat' (click)='hide()'> Hide </button>
 
               <ejs-treegrid #treegrid [dataSource]='data' height='285' [treeColumnIndex]='1' childMapping='subtasks' >
@@ -30,24 +26,24 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
 
-  public data?: Object[];
-  @ViewChild('treegrid')
-  public treeGridObj?: TreeGridComponent;
-  
-  ngOnInit(): void {
-    this.data = sampleData;
-  }
-  show() {
-    (this.treeGridObj as TreeGridComponent).showColumns(
-      'Task Name',
-      'headerText'
-    ); //show by HeaderText
-  }
+    public data?: Object[];
+    @ViewChild('treegrid')
+    public treeGridObj?: TreeGridComponent;
 
-  hide() {
-    (this.treeGridObj as TreeGridComponent).hideColumns(
-      'Task Name',
-      'headerText'
-    ); //hide by HeaderText
-  }
+    ngOnInit(): void {
+        this.data = sampleData;
+    }
+    show() {
+        (this.treeGridObj as TreeGridComponent).showColumns(
+            'Task Name',
+            'headerText'
+        ); //show by HeaderText
+    }
+
+    hide() {
+        (this.treeGridObj as TreeGridComponent).hideColumns(
+            'Task Name',
+            'headerText'
+        ); //hide by HeaderText
+    }
 }

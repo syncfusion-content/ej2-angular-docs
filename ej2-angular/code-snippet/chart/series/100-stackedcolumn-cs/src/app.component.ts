@@ -20,10 +20,10 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y' name='UK' fill='red' [border]='border'></e-series>
-            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y1' name='Germany' fill='yellow' [border]='border'></e-series>
-            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y2' name='France' fill='green' [border]='border'></e-series>
-            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y3' name='Italy' fill='blue' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y' name='UK' fill='red'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y1' name='Germany' fill='yellow'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y2' name='France' fill='green'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y3' name='Italy' fill='blue'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -35,10 +35,6 @@ export class AppComponent implements OnInit {
     primaryYAxis: any;
     ngOnInit(): void {
         this.chartData = percentData;
-        this.border = {
-            width: 2.5,
-            color: 'brown'
-        }
         this.primaryXAxis = {
             title: 'Years',
             interval: 1,

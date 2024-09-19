@@ -64,7 +64,7 @@ cd syncfusion-angular-multiselect
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -207,4 +207,4 @@ In the following sample, popup list's width and height are configured.
   
 {% previewsample "page.domainurl/samples/multiselect/getting-started-cs13" %}
 
-> You can refer to our [Angular MultiSelect](https://www.syncfusion.com/angular-ui-components/angular-multiselect-dropdown) feature tour page for its groundbreaking feature representations. You can also explore our [Angular MultiSelect example](https://ej2.syncfusion.com/angular/demos/#/material/multi-select/default) that shows how to render the MultiSelect Dropdown in Angular.
+> You can refer to our [Angular MultiSelect](https://www.syncfusion.com/angular-components/angular-multiselect-dropdown) feature tour page for its groundbreaking feature representations. You can also explore our [Angular MultiSelect example](https://ej2.syncfusion.com/angular/demos/#/material/multi-select/default) that shows how to render the MultiSelect Dropdown in Angular.

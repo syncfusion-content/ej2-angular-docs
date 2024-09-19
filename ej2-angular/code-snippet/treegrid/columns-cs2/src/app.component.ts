@@ -1,26 +1,16 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule, ButtonModule],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<div >
                 <button ejs-button id="small" cssClass="e-small" (click)="changeHeaderHeight($event)">Change height 20px</button>
@@ -50,16 +40,16 @@ export class AppComponent implements OnInit {
     }
     changeHeaderHeight(event: MouseEvent): void {
         const heightMap: { [key: string]: string } = {
-          small: '20px',
-          medium: '42px',
-          big: '60px'
-        };    const headerCells = (this.treegrid as TreeGridComponent).getHeaderContent().querySelectorAll('.e-headercell');
-        headerCells.forEach((headerCell:Element) => {
-          (headerCell as HTMLElement).style.height = (heightMap)[
-            (event.target as HTMLButtonElement).id
-          ];
+            small: '20px',
+            medium: '42px',
+            big: '60px'
+        }; const headerCells = (this.treegrid as TreeGridComponent).getHeaderContent().querySelectorAll('.e-headercell');
+        headerCells.forEach((headerCell: Element) => {
+            (headerCell as HTMLElement).style.height = (heightMap)[
+                (event.target as HTMLButtonElement).id
+            ];
         });
-      }
+    }
 }
 
 

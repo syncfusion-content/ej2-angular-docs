@@ -111,6 +111,22 @@ Using the [`enableScrollbar`](https://ej2.syncfusion.com/angular/documentation/a
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/scrollbar-cs1" %}
 
+## Enable animation
+
+Enable the [enableAnimation] property to experience smooth transitions when zooming in on the chart.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/user-interaction/zoom-cs10/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/user-interaction/zoom-cs10/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/user-interaction/zoom-cs10" %}
+
 ## Auto interval on zooming
 
 By using [`enableAutoIntervalOnZooming`](https://ej2.syncfusion.com/angular/documentation/api/chart/axis/#enableAutoIntervalOnZooming) property, the axis interval will get calculated automatically with respect to the zoomed range.

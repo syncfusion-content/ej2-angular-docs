@@ -44,7 +44,6 @@ In the following demo, the expand and collapse icons are customized using the CS
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/tree-column-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/tree-column-cs1/src/main.ts %}
 {% endhighlight %}
@@ -65,7 +64,6 @@ In the following demonstration, apply an indent space by adding a CSS class to t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/tree-column-cs2/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/tree-column-cs2/src/main.ts %}
 {% endhighlight %}
@@ -83,7 +81,6 @@ In the following demo, all parent rows are rendered in a collapsed state in init
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/tree-column-cs3/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/tree-column-cs3/src/main.ts %}
 {% endhighlight %}
@@ -102,7 +99,6 @@ In the following demonstration, the JSON object has an `isExpanded` property wit
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/tree-column-cs4/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/tree-column-cs4/src/main.ts %}
 {% endhighlight %}
@@ -127,7 +123,6 @@ In the following demo, the above-mentioned steps have been followed to persist t
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/tree-column-cs5/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/tree-column-cs5/src/main.ts %}
 {% endhighlight %}
@@ -221,7 +216,6 @@ The following events are available for handling expand and collapse actions:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/tree-column-cs6/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/tree-column-cs6/src/main.ts %}
 {% endhighlight %}

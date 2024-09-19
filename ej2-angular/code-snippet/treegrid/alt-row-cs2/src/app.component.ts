@@ -1,28 +1,17 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { RowDataBoundEventArgs } from '@syncfusion/ej2-grids';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
-  selector: 'app-container',
-  template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='250' [enableHover]='false' (rowDataBound)='rowBound($event)' childMapping='subtasks' >
+    imports: [TreeGridModule],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='250' [enableHover]='false' (rowDataBound)='rowBound($event)' childMapping='subtasks' >
                     <e-columns>
                         <e-column field='taskID' headerText='Task ID' textAlign='Right' width=90></e-column>
                         <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
@@ -32,18 +21,18 @@ standalone: true,
                 </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
-  public data?: Object[];
+    public data?: Object[];
 
-  ngOnInit(): void {
-    this.data = sampleData;
-  }
-  rowBound(args: RowDataBoundEventArgs | any) {
-    if (!args.data.hasChildRecords) {
-      //Here apply the background color of child rows
-      args.row.style.background = '#33ff12';
-    } else {
-      //Here apply the background color of parent rows
-      args.row.style.background = '#ff2f1f';
+    ngOnInit(): void {
+        this.data = sampleData;
     }
-  }
+    rowBound(args: RowDataBoundEventArgs | any) {
+        if (!args.data.hasChildRecords) {
+            //Here apply the background color of child rows
+            args.row.style.background = '#33ff12';
+        } else {
+            //Here apply the background color of parent rows
+            args.row.style.background = '#ff2f1f';
+        }
+    }
 }

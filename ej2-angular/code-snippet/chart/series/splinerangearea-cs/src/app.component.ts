@@ -7,7 +7,7 @@ import { AreaSeriesService, RangeAreaSeriesService, StepAreaSeriesService, Stack
 
 
 import { Component, OnInit } from '@angular/core';
-import { splineRangeData } from './datasource';
+import { splinedata } from './datasource';
 
 @Component({
 imports: [
@@ -20,23 +20,18 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high' low='low' name='England' opacity=0.4 fill='red' [border]='border'></e-series>
-            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high1' low='low1' name='India' opacity=0.4 fill='blue' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high' low='low' name='England' fill='red'></e-series>
+            <e-series [dataSource]='chartData' type='SplineRangeArea' xName='x' high='high1' low='low1' name='India' fill='blue'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
 export class AppComponent implements OnInit {
     public primaryXAxis?: Object;
-    public border?: Object;
     public chartData?: Object[];
     public title?: string;
     public primaryYAxis?: Object;
     ngOnInit(): void {
-        this.chartData = splineRangeData;
-        this.border = {
-            width: 2,
-            color: 'brown'
-        }
+        this.chartData = splinedata;
         this.primaryXAxis = {
            valueType: 'Category',
             edgeLabelPlacement: 'Shift',

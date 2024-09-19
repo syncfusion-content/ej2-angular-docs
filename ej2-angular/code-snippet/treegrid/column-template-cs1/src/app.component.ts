@@ -9,7 +9,7 @@ import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 
 
 
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { sampleData } from './datasource';
 import { getValue, isNullOrUndefined } from '@syncfusion/ej2-base';
 import { BeforeOpenCloseEventArgs } from '@syncfusion/ej2-inputs';

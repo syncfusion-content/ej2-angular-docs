@@ -7,7 +7,7 @@ import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesServic
 
 
 import { Component, OnInit } from '@angular/core';
-import { radarData } from './datasource';
+import { chartData } from './datasource';
 @Component({
 imports: [
          ChartModule, ButtonModule, ChartAllModule
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
 
 
     ngOnInit(): void {
-        this.data = radarData;
+        this.data = chartData;
         this.primaryXAxis = {
             title: 'Year', startAngle: 90,
             minimum: 2004, maximum: 2012, interval: 1

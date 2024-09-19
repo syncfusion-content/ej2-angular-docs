@@ -1,0 +1,53 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
+    SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts'
+
+
+
+import { Component, OnInit } from '@angular/core';
+import { chartData } from './datasource';
+
+@Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ CategoryService, LineSeriesService, StepLineSeriesService, SplineSeriesService, StackingLineSeriesService, DateTimeService,
+        SplineAreaSeriesService, MultiColoredLineSeriesService, ParetoSeriesService, ColumnSeriesService],
+standalone: true,
+    selector: 'app-container',
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis'>
+        <e-series-collection>
+            <e-series [dataSource]='chartData' type='StackingLine' xName='x' yName='y' name='John' width='2' [marker]='marker' dashArray='5,5'> </e-series>
+            <e-series [dataSource]='chartData' type='StackingLine' xName='x' yName='y1' name='Peter' width='2' [marker]='marker' dashArray='5,5'> </e-series>
+            <e-series [dataSource]='chartData' type='StackingLine' xName='x' yName='y2' name='Steve' width='2' [marker]='marker' dashArray='5,5'> </e-series>
+            <e-series [dataSource]='chartData' type='StackingLine' xName='x' yName='y3' name='Charle' width='2' [marker]='marker' dashArray='5,5'> </e-series>
+        </e-series-collection>
+    </ejs-chart>`
+})
+export class AppComponent implements OnInit {
+    public primaryXAxis?: Object;
+    public title?: string;
+    public primaryYAxis?: Object;
+    public marker?: Object;
+    public series?: Object;
+    public chartData?: Object[]; 
+    ngOnInit(): void {
+        this.primaryXAxis = {
+            interval: 1, valueType: 'Category'
+        };
+        this.primaryYAxis =
+        {
+            title: 'Expense',
+            interval: 100,
+            labelFormat: '${value}',
+        },
+        this.chartData = chartData;
+        this.marker = { visible: true };
+    }
+
+}
+
+

@@ -5,6 +5,8 @@
 export let textdata: Object[] = [{
     'Name': 'Robert King',
     'FullName': 'RobertKing',
+    'FirstName': 'Robert',
+    'LastName':'King',
     'Designation': 'Chief Executive Officer',
     'EmployeeID': '1',
     'EmpID': 'EMP001',
@@ -16,6 +18,8 @@ export let textdata: Object[] = [{
     'Children': [{
         'Name': 'David william',
         'FullName': 'DavidWilliam',
+        'FirstName': 'David',
+    'LastName':'william',
         'Designation': 'Vice President',
         'EmployeeID': '2',
         'EmpID': 'EMP004',
@@ -28,6 +32,8 @@ export let textdata: Object[] = [{
         'Children': [{
             'Name': 'Nancy Davolio',
             'FullName': 'NancyDavolio',
+            'FirstName': 'Nancy',
+    'LastName':'Davolio',
             'Designation': 'Marketing Executive',
             'EmployeeID': '3',
             'EmpID': 'EMP035',
@@ -39,6 +45,8 @@ export let textdata: Object[] = [{
                 {
                     'Name': 'Andrew Fuller',
                     'FullName': 'AndrewFuller',
+                    'FirstName': 'Andrew',
+    'LastName':'Fuller',
                     'Designation': 'Sales Representative',
                     'EmployeeID': '4',
                     'EmpID': 'EMP045',
@@ -50,6 +58,8 @@ export let textdata: Object[] = [{
             {
                 'Name': 'Anne Dodsworth',
                 'FullName': 'AnneDodsworth',
+                'FirstName': 'Anne',
+    'LastName':'Dodsworth',
                 'Designation': 'Sales Representative',
                 'EmployeeID': '5',
                 'EmpID': 'EMP091',
@@ -61,6 +71,8 @@ export let textdata: Object[] = [{
             {
                 'Name': 'Michael Suyama',
                 'FullName': 'MichaelSuyama',
+                'FirstName': 'Michael',
+    'LastName':'Suyama',
                 'Designation': 'Sales Representative',
                 'EmployeeID': '6',
                 'EmpID': 'EMP110',
@@ -72,6 +84,8 @@ export let textdata: Object[] = [{
             {
                 'Name': 'Janet Leverling',
                 'FullName': 'JanetLeverling',
+                'FirstName': 'Janet',
+    'LastName':'Leverling',
                 'Designation': 'Sales Coordinator',
                 'EmployeeID': '7',
                 'EmpID': 'EMP131',
@@ -86,6 +100,8 @@ export let textdata: Object[] = [{
         {
             'Name': 'Romey Wilson',
             'FullName': 'RomeyWilson',
+            'FirstName': 'Romey',
+    'LastName':'Wilson',
             'Designation': 'Sales Executive',
             'EmployeeID': '8',
             'EmpID': 'EMP039',
@@ -97,6 +113,8 @@ export let textdata: Object[] = [{
             {
                 'Name': 'Margaret Peacock',
                 'FullName': 'MargaretPeacock',
+                'FirstName': 'Margaret',
+    'LastName':'Peacock',
                 'Designation': 'Sales Representative',
                 'EmployeeID': '9',
                 'EmpID': 'EMP213',
@@ -108,6 +126,8 @@ export let textdata: Object[] = [{
             {
                 'Name': 'Laura Callahan',
                 'FullName': 'LauraCallahan',
+                'FirstName': 'Laura',
+    'LastName':'Callahan',
                 'Designation': 'Sales Coordinator',
                 'EmployeeID': '10',
                 'EmpID': 'EMP201',
@@ -119,6 +139,8 @@ export let textdata: Object[] = [{
             {
                 'Name': 'Steven Buchanan',
                 'FullName': 'StevenBuchanan',
+                'FirstName': 'Steven',
+    'LastName':'Buchanan',
                 'Designation': 'Sales Representative',
                 'EmployeeID': '11',
                 'EmpID': 'EMP197',
@@ -130,6 +152,8 @@ export let textdata: Object[] = [{
             {
                 'Name': 'Tedd Lawson',
                 'FullName': 'TeddLawson',
+                'FirstName': 'Tedd',
+    'LastName':'Lawson',
                 'Designation': 'Sales Representative',
                 'EmployeeID': '12',
                 'EmpID': 'EMP167',

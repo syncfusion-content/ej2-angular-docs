@@ -1,13 +1,9 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { GridModule } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import {
-  TreeGridComponent,
-  DetailRowService,
-} from '@syncfusion/ej2-angular-treegrid';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { TreeGridComponent, DetailRowService, } from '@syncfusion/ej2-angular-treegrid';
 import { sampleData, textdata } from './datasource';
 import { Internationalization } from '@syncfusion/ej2-base';
 import { DetailDataBoundEventArgs, Grid } from '@syncfusion/ej2-grids';
@@ -15,16 +11,10 @@ import { DetailDataBoundEventArgs, Grid } from '@syncfusion/ej2-grids';
 let instance: Internationalization = new Internationalization();
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        GridModule 
-    ],
-
-,
-standalone: true,
-  selector: 'app-container',
-  template: `<ejs-treegrid #treegrid [dataSource]='data' height=317 width='auto' childMapping= 'Children' (detailDataBound)='detailDataBound($event)' >
+    imports: [TreeGridModule, GridModule],
+    standalone: true,
+    selector: 'app-container',
+    template: `<ejs-treegrid #treegrid [dataSource]='data' height=317 width='auto' childMapping= 'Children' (detailDataBound)='detailDataBound($event)' >
                 <e-columns>
                     <e-column field='Name' headerText='First Name' width='160'></e-column>
                     <e-column field='DOB' headerText = 'DOB' width='105' type='date' format='yMd'></e-column>
@@ -35,36 +25,36 @@ standalone: true,
                     <div class = 'custom-grid' ></div>
                 </ng-template>
             </ejs-treegrid>`,
-  providers: [DetailRowService],
+    providers: [DetailRowService],
 })
 export class AppComponent implements OnInit {
-  public data?: Object[];
+    public data?: Object[];
 
-  @ViewChild('treegrid')
-  public treegrid?: TreeGridComponent;
+    @ViewChild('treegrid')
+    public treegrid?: TreeGridComponent;
 
-  ngOnInit(): void {
-    this.data = textdata;
-  }
-  detailDataBound(e: DetailDataBoundEventArgs) {
-    let detail = new Grid({
-      dataSource: sampleData,
-      columns: [
-        { field: 'taskID', headerText: 'Order ID', width: 110 },
-        { field: 'taskName', headerText: 'Customer Name', width: 140 },
-        { field: 'priority', headerText: 'Ship Country', width: 150 },
-      ],
-    });
-    detail.appendTo(
-      (e.detailElement as HTMLElement).querySelector(
-        '.custom-grid'
-      ) as HTMLElement
-    );
-  }
-  public format(value: Date): string {
-    return instance.formatDate(value, { skeleton: 'yMd', type: 'date' });
-  }
+    ngOnInit(): void {
+        this.data = textdata;
+    }
+    detailDataBound(e: DetailDataBoundEventArgs) {
+        let detail = new Grid({
+            dataSource: sampleData,
+            columns: [
+                { field: 'taskID', headerText: 'Order ID', width: 110 },
+                { field: 'taskName', headerText: 'Customer Name', width: 140 },
+                { field: 'priority', headerText: 'Ship Country', width: 150 },
+            ],
+        });
+        detail.appendTo(
+            (e.detailElement as HTMLElement).querySelector(
+                '.custom-grid'
+            ) as HTMLElement
+        );
+    }
+    public format(value: Date): string {
+        return instance.formatDate(value, { skeleton: 'yMd', type: 'date' });
+    }
 }
 export interface DateFormat extends Window {
-  format?: Function;
+    format?: Function;
 }

@@ -1,23 +1,14 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { RowDDService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
-    ],
-
-providers: [RowDDService],
-standalone: true,
+    imports: [TreeGridModule,],
+    providers: [RowDDService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid id='TreeGrid' [dataSource]='data' height='250' [allowRowDragAndDrop]='true' [treeColumnIndex]='1' childMapping='subtasks' >
                     <e-columns>
@@ -31,7 +22,7 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
     public data?: Object[];
-   
+
     ngOnInit(): void {
         this.data = sampleData;
     }

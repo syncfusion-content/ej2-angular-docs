@@ -1,27 +1,15 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { PageService, SortService, FilterService, ColumnChooserService, ToolbarService} from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { PageService, SortService, FilterService, ColumnChooserService, ToolbarService } from '@syncfusion/ej2-angular-treegrid'
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
-import { ToolbarItems, GridComponent, ColumnChooserSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                ToolbarService,
-                ColumnChooserService,],
-standalone: true,
+    imports: [TreeGridModule],
+    providers: [PageService, SortService, FilterService, ToolbarService, ColumnChooserService,],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid id="TreeGrid" [dataSource]='data' [toolbar]="toolbarOptions" [treeColumnIndex]='1' [showColumnChooser]='true' height='270' childMapping='subtasks' (load)=load($event)>
                    <e-columns>
@@ -44,7 +32,7 @@ export class AppComponent implements OnInit {
         this.data = sampleData;
         this.toolbarOptions = ['ColumnChooser'];
     }
-    load(args:any) {
+    load(args: any) {
         (this.treegrid as TreeGridComponent).grid.columnChooserSettings = { operator: 'contains' };
-      }
+    }
 }

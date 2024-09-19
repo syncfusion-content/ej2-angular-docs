@@ -1,23 +1,15 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild, ViewEncapsulation } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule, ToolbarService, SelectionService, EditService } from '@syncfusion/ej2-angular-treegrid'
-
-
-
 import { TreeGrid, Selection, Edit, Toolbar, EditSettingsModel, FreezeService } from '@syncfusion/ej2-angular-treegrid';
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 
 @Component({
-imports: [
-        
-        TreeGridModule
-    ],
-
-providers: [ToolbarService, 
-        SelectionService,
-        EditService],
-standalone: true,
+    imports: [TreeGridModule],
+    encapsulation:ViewEncapsulation.None,
+    providers: [ToolbarService, SelectionService, EditService, FreezeService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid [dataSource]='data' childMapping='subtasks' height='310' [treeColumnIndex]='0' enableHover='false'>
                  <e-columns>
@@ -31,12 +23,20 @@ standalone: true,
                     <e-column field='approved' headerText='Approved' textAlign='Left' width='110'></e-column>
                  </e-columns>
                 </ejs-treegrid>`,
-    providers: [FreezeService]
+    styles:[`
+    .e-treegrid .e-leftfreeze.e-freezeleftborder {
+        border-right-color: rgb(0, 255, 0);
+    }
+    
+    .e-treegrid .e-rightfreeze.e-freezerightborder {
+        border-left-color: rgb(0, 0, 255) !important;
+    }`]
+
 })
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    
+
     ngOnInit(): void {
         this.data = sampleData;
     }

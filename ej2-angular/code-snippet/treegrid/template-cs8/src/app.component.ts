@@ -1,30 +1,17 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { PageService, SortService, FilterService,ToolbarService,TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
+import { PageService, SortService, FilterService, ToolbarService, TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { DialogModule } from '@syncfusion/ej2-angular-popups'
-
-
-
-import { Component, OnInit , ViewChild} from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import { textdata } from './datasource';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule,DialogModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                ToolbarService],
-standalone: true,
+    imports: [TreeGridModule, ButtonModule, DropDownListAllModule, DialogModule],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height=291 width='auto' childMapping= 'Children' [enableHover]="false">
                     <e-columns>
@@ -48,25 +35,25 @@ standalone: true,
 })
 export class AppComponent implements OnInit {
 
-    public data?: Object[] ;
+    public data?: Object[];
     public header?: string;
     @ViewChild('treegrid')
     public treegrid?: TreeGridComponent;
 
     @ViewChild('Dialog')
     public dialog?: DialogComponent;
-    
-    public selectedRecord:any;
-            
-        ngOnInit(): void {
-            this.data =textdata;
-            this.header = 'Selected Row Details';
-        }
-        showDetails(data: any) {
-            (this.dialog as DialogComponent).visible = true;
-            this.selectedRecord = data;
-        }
+
+    public selectedRecord: any;
+
+    ngOnInit(): void {
+        this.data = textdata;
+        this.header = 'Selected Row Details';
     }
+    showDetails(data: any) {
+        (this.dialog as DialogComponent).visible = true;
+        this.selectedRecord = data;
+    }
+}
 
 
 

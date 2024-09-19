@@ -1,4 +1,4 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { DialogModule } from '@syncfusion/ej2-angular-popups'
@@ -8,28 +8,15 @@ import { ChipListModule } from '@syncfusion/ej2-angular-buttons'
 import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
 import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
-
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { RowDataBoundEventArgs } from '@syncfusion/ej2-grids';
 
 @Component({
-imports: [
-        TreeGridModule,
-        DialogModule,
-        SwitchModule,
-        CheckBoxModule,
-        DropDownListAllModule,
-        NumericTextBoxAllModule,
-        ButtonModule,
-        ChipListModule,
-        DatePickerAllModule,
-    ],
-
-,
-standalone: true,
-  selector: 'app-container',
-  template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='250'  childMapping='subtasks' >
+    imports: [TreeGridModule, DropDownListAllModule, NumericTextBoxAllModule, ChipListModule, DatePickerAllModule],
+    standalone: true,
+    selector: 'app-container',
+    template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' height='250'  childMapping='subtasks' >
                     <e-columns>
                         <e-column field='taskID' headerText='Task ID'  width=90></e-column>
                         <e-column field='taskName' headerText='Task Name' textAlign='Left' width=100></e-column>
@@ -64,12 +51,12 @@ standalone: true,
             </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
-  public data?: Object[];
-  public dropData?: string[];
-  public priorityData?: string[];
-  ngOnInit(): void {
-    this.data = sampleData;
-    this.dropData = ['Planning', 'Design', 'Development', 'Testing'];
-    this.priorityData = ['High', 'Low', 'Critical', 'Normal'];
-  }
+    public data?: Object[];
+    public dropData?: string[];
+    public priorityData?: string[];
+    ngOnInit(): void {
+        this.data = sampleData;
+        this.dropData = ['Planning', 'Design', 'Development', 'Testing'];
+        this.priorityData = ['High', 'Low', 'Critical', 'Normal'];
+    }
 }

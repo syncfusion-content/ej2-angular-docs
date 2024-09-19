@@ -1,23 +1,16 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
-
-
-import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FreezeService, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 import { sampleData } from './datasource';
 
 @Component({
-imports: [
-        
-        TreeGridModule, NumericTextBoxModule, ButtonModule
-    ],
-
-,
-standalone: true,
+    imports: [TreeGridModule, NumericTextBoxModule, ButtonModule],
+    standalone: true,
     selector: 'app-container',
     template: ` <div style="display: flex">
                    <label style="padding: 10px 10px 26px 0">Change the frozen columns:</label>
@@ -41,12 +34,12 @@ standalone: true,
                     <e-column field='approved' headerText='Approved' textAlign='Left' width='110'></e-column>
                   </e-columns>
                 </ejs-treegrid>`,
-providers: [FreezeService]
+    providers: [FreezeService]
 })
 export class AppComponent implements OnInit {
 
     public data?: Object[];
-    
+
     @ViewChild('treegrid')
     public treegrid?: TreeGridComponent;
 
@@ -57,8 +50,8 @@ export class AppComponent implements OnInit {
         this.data = sampleData;
     }
     frozenColumnFn() {
-      (this.treegrid as TreeGridComponent).frozenColumns = (this.frozenColumns as NumericTextBoxComponent).value;
-      }
+        (this.treegrid as TreeGridComponent).frozenColumns = (this.frozenColumns as NumericTextBoxComponent).value;
+    }
 }
 
 

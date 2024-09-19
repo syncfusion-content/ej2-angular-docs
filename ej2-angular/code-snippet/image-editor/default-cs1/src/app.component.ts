@@ -23,7 +23,9 @@ standalone: true,
               <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar"></ejs-imageeditor>
               </div>
-              <button class="e-btn e-primary" (click)="btnClick()">Click</button>
+              <button class="e-btn e-primary" (click)="btnClick()">Add Text</button>
+              <button class="e-btn e-primary" (click)="outlineText()">Text Outline</button>
+              <button class="e-btn e-primary" (click)="bgColour()">Background Color</button>
               </div>`
 })
 
@@ -41,6 +43,14 @@ export class AppComponent {
     btnClick(): void {
         let dimension: any = this.imageEditorObj?.getImageDimension();
         this.imageEditorObj?.drawText(dimension?.x, dimension?.y);
+    }
+    outlineText(): void {
+        let dimension: any = this.imageEditorObj?.getImageDimension();
+        this.imageEditorObj?.drawText(dimension.x, dimension.y+100, 'Syncfusion', 'Arial', 70, false, false, '', false, null, '', 'green', 8);
+    }
+    bgColour(): void {
+        let dimension: any = this.imageEditorObj?.getImageDimension();
+        this.imageEditorObj?.drawText(dimension.x, dimension.y+200, 'Syncfusion', 'Arial', 70, false, false, '', false, null, 'red', '', null);
     }
 }
 

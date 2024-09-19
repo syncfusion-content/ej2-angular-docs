@@ -1,27 +1,19 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { Component, OnInit } from '@angular/core';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 import { sampleData } from './datasource';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
-  selector: 'app-container',
-  template: `<div>
+    imports: [TreeGridModule, ButtonModule],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<div>
                <label style="padding: 30px 17px 0 0" >Get the checked record details :</label>
               <button ejs-button id="buttons" (click)="GetCheckedRecord()">Checked Records</button>
               <button ejs-button id="buttons" (click)="GetCheckedIndex()">Checked Index</button>
@@ -38,47 +30,47 @@ standalone: true,
                 </ejs-treegrid>`,
 })
 export class AppComponent implements OnInit {
-  public data?: Object[];
-  public message?: any;
-  public header?: string;
-  public checked_record?: any;
-  @ViewChild('treegrid')
-  public treegrid: TreeGridComponent | undefined;
+    public data?: Object[];
+    public message?: any;
+    public header?: string;
+    public checked_record?: any;
+    @ViewChild('treegrid')
+    public treegrid: TreeGridComponent | undefined;
 
-  @ViewChild('Dialog')
-  public dialog?: DialogComponent;
+    @ViewChild('Dialog')
+    public dialog?: DialogComponent;
 
-  ngOnInit(): void {
-    this.data = sampleData;
-    this.header = 'Checked record Details';
-  }
-  GetCheckedRecord(): void {
-    this.checked_record = (
-      this.treegrid as TreeGridComponent
-    ).getCheckedRecords();
-
-    if (this.checked_record.length != 0) debugger;
-
-    var content = '';
-    for (var i = 0; i < this.checked_record.length; i++) {
-      content +=
-        'TaskID: ' +
-        this.checked_record[i].taskID +
-        ', Task Name: ' +
-        this.checked_record[i].taskName +
-        ', Date: ' +
-        this.checked_record[i].startDate +
-        ', Duration: ' +
-        this.checked_record[i].duration +
-        '<br>';
+    ngOnInit(): void {
+        this.data = sampleData;
+        this.header = 'Checked record Details';
     }
-    this.message = content;
-  }
-  GetCheckedIndex(): void {
-    var checked_index = (
-      this.treegrid as TreeGridComponent
-    ).getCheckedRowIndexes();
-    if (checked_index.length != 0)
-      this.message = 'Checked records Index:' + checked_index;
-  }
+    GetCheckedRecord(): void {
+        this.checked_record = (
+            this.treegrid as TreeGridComponent
+        ).getCheckedRecords();
+
+        if (this.checked_record.length != 0) debugger;
+
+        var content = '';
+        for (var i = 0; i < this.checked_record.length; i++) {
+            content +=
+                'TaskID: ' +
+                this.checked_record[i].taskID +
+                ', Task Name: ' +
+                this.checked_record[i].taskName +
+                ', Date: ' +
+                this.checked_record[i].startDate +
+                ', Duration: ' +
+                this.checked_record[i].duration +
+                '<br>';
+        }
+        this.message = content;
+    }
+    GetCheckedIndex(): void {
+        var checked_index = (
+            this.treegrid as TreeGridComponent
+        ).getCheckedRowIndexes();
+        if (checked_index.length != 0)
+            this.message = 'Checked records Index:' + checked_index;
+    }
 }

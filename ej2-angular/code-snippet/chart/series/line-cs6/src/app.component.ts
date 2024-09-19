@@ -7,7 +7,7 @@ import { CategoryService, LineSeriesService, StepLineSeriesService, SplineSeries
 
 
 import { Component, OnInit } from '@angular/core';
-import { splineData } from './datasource';
+import { chartData } from './datasource';
 
 @Component({
 imports: [
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     public primaryYAxis?: Object;
     public marker?: Object;
     ngOnInit(): void {
-        this.chartData = splineData;
+        this.chartData = chartData;
         this.primaryXAxis = {
            title: 'Month',
            valueType: 'Category'

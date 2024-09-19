@@ -1,26 +1,16 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-    encapsulation:ViewEncapsulation.None,
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule,],
+    encapsulation: ViewEncapsulation.None,
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' height='250' (dataBound)="dataBound()" [treeColumnIndex]='1' childMapping='subtasks'>
                  <e-columns>
@@ -36,7 +26,7 @@ export class AppComponent implements OnInit {
 
     public data?: Object[];
     @ViewChild('treegrid')
-    public treegrid?:TreeGridComponent;
+    public treegrid?: TreeGridComponent;
 
     ngOnInit(): void {
         this.data = sampleData;
@@ -50,7 +40,7 @@ export class AppComponent implements OnInit {
         ((this.treegrid as TreeGridComponent).getColumnHeaderByIndex(columnIndex) as HTMLElement).style.color = '#0d0b0b';
         const index = (this.treegrid as TreeGridComponent).getColumnIndexByUid('grid-column39');
         ((this.treegrid as TreeGridComponent).getColumnHeaderByIndex(index) as HTMLElement).style.color = '#0d0b0b';
-      }
+    }
 }
 
 

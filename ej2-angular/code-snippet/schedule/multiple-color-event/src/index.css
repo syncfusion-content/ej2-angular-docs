@@ -1,0 +1,42 @@
+.schedule-event-template.e-schedule .e-vertical-view .e-content-wrap .e-appointment {
+    border-radius: 8px;
+  }
+  
+  .schedule-event-template.e-schedule .e-vertical-view .e-content-wrap .e-appointment .e-appointment-details {
+    padding: 0;
+    height: 100%;
+  }
+  
+  .schedule-event-template.e-schedule .template-wrap {
+    height: 100%;
+    white-space: normal;
+  }
+  
+  .schedule-event-template.e-schedule .template-wrap .subject {
+    font-weight: 600;
+    font-size: 15px;
+    padding: 4px 4px 4px;
+    height: 25px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .schedule-event-template.e-schedule .e-timeline-view .e-appointment .e-appointment-details {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .schedule-event-template.e-schedule .e-timeline-view .template-wrap {
+    width: 100%;
+  }
+  
+  .schedule-event-template.e-schedule .e-timeline-view .template-wrap .subject {
+    font-size: 16px;
+    height: 36px;
+    text-align: center;
+    border-style: solid;
+    border-width: 0 15px;
+  }
+  

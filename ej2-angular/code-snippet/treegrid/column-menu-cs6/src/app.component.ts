@@ -2,25 +2,13 @@ import { NgModule,ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { ColumnMenuService } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
+imports: [ TreeGridModule,],
+providers: [PageService, SortService, FilterService,ColumnMenuService],
 standalone: true,
     selector: 'app-container',
     template: `<div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>
@@ -34,7 +22,6 @@ standalone: true,
                         <e-column field='progress' headerText='Progress' textAlign='Right' width=150></e-column>
                     </e-columns>
                 </ejs-treegrid>`,
-    providers: [ColumnMenuService]
 })
 export class AppComponent implements OnInit {
 

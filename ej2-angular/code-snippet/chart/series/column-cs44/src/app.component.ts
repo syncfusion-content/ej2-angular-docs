@@ -1,0 +1,47 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule } from '@syncfusion/ej2-angular-charts'
+import { CategoryService, DateTimeService, ScrollBarService, ColumnSeriesService, LineSeriesService, 
+    ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService,LegendService, TooltipService
+ } from '@syncfusion/ej2-angular-charts'
+
+
+
+import { Component, OnInit } from '@angular/core';
+import { columnData } from './datasource';
+
+@Component({
+imports: [
+         ChartModule
+    ],
+
+providers: [ CategoryService, DateTimeService, ScrollBarService, LineSeriesService, ColumnSeriesService, 
+        ChartAnnotationService, RangeColumnSeriesService, StackingColumnSeriesService, LegendService, TooltipService,],
+standalone: true,
+    selector: 'app-container',
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title'>
+        <e-series-collection>
+            <e-series [dataSource]='chartData' type='Column' xName='country' yName='gold' name='Gold' [emptyPointSettings]='emptyPointSettings'></e-series>
+        </e-series-collection>
+    </ejs-chart>`
+})
+export class AppComponent implements OnInit {
+    public primaryXAxis?: Object;
+    public chartData?: Object[];
+    public title?: string;
+    public emptyPointSettings?: Object;
+    public border?: Object;
+    primaryYAxis: any;
+    ngOnInit(): void {
+        this.chartData = columnData;
+        this.primaryXAxis = {
+           valueType: 'Category',
+           title: 'Countries'
+        };
+        this.emptyPointSettings = { mode: 'Gap' };
+        this.title = 'Olympic Medals';
+    }
+
+}
+
+

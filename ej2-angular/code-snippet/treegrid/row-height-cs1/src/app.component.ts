@@ -1,28 +1,18 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { sampleData } from './datasource';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule,
-        DropDownListAllModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
-  selector: 'app-container',
-  template: `<div>
+    imports: [TreeGridModule, ButtonModule],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<div>
               <button ejs-button id="small" cssClass="e-small" (click)="clickHandler($event)">
                 Change height 20px</button>
 
@@ -45,19 +35,19 @@ standalone: true,
             </div>`,
 })
 export class AppComponent implements OnInit {
-  public data?: Object[];
-  @ViewChild('treegrid')
-  public treegrid: TreeGridComponent | undefined;
-  public heightRow: { [key: string]: number } = {
-    small: 20,
-    medium: 40,
-    big: 60,
-  };
-  ngOnInit(): void {
-    this.data = sampleData;
-  }
-  clickHandler(args: MouseEvent): void {
-    (this.treegrid as TreeGridComponent).rowHeight =
-      this.heightRow[(args.target as HTMLElement).id];
-  }
+    public data?: Object[];
+    @ViewChild('treegrid')
+    public treegrid: TreeGridComponent | undefined;
+    public heightRow: { [key: string]: number } = {
+        small: 20,
+        medium: 40,
+        big: 60,
+    };
+    ngOnInit(): void {
+        this.data = sampleData;
+    }
+    clickHandler(args: MouseEvent): void {
+        (this.treegrid as TreeGridComponent).rowHeight =
+            this.heightRow[(args.target as HTMLElement).id];
+    }
 }

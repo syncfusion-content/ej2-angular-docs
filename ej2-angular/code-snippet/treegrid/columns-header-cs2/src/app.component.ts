@@ -1,25 +1,14 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { stackedData } from './datasource';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule,],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<ejs-treegrid #treegrid [dataSource]='data' childMapping='subtasks' height='260'  [treeColumnIndex]='1' >
             <e-columns>
@@ -41,7 +30,7 @@ export class AppComponent implements OnInit {
         this.orderColumns = [
             { field: 'orderID', headerText: 'Order ID', textAlign: 'Right', width: 90 },
             { field: 'orderName', headerText: 'Order Name', textAlign: 'Left', width: 180 },
-            { field: 'orderDate', headerText: 'Order Date', textAlign: 'Right', width: 120, format: 'yMd'}
+            { field: 'orderDate', headerText: 'Order Date', textAlign: 'Right', width: 120, format: 'yMd' }
         ];
         this.shipColumns = [
             { field: 'shipMentCategory', headerText: 'Shipment Category', textAlign: 'Left', width: 150 },

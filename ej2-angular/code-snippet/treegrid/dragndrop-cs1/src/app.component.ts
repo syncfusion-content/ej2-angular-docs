@@ -1,10 +1,7 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid'
 import { GridModule, PageService, SelectionService, RowDDService } from '@syncfusion/ej2-angular-grids'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { sampleGridData } from './datasource';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
@@ -12,18 +9,11 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 import { GridComponent, RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        TreeGridAllModule,
-        ButtonModule,
-        DropDownListAllModule
-    ],
-
-providers: [PageService, SelectionService, RowDDService],
-standalone: true,
-  selector: 'app-container',
-  template: `<div>
+    imports: [GridModule, TreeGridAllModule,],
+    providers: [PageService, SelectionService, RowDDService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<div>
                 <div style="float:left;width:49%">
                     <ejs-treegrid #treegrid id='TreeGrid'  [dataSource]='sourceData' childMapping='subtasks'  [allowPaging]="true" [pageSettings]="true" [allowSelection]="true" [allowRowDragAndDrop]="true" 
                       [selectionSettings]="selectionOptions" [rowDropSettings]="srcDropOptions" (rowDrop)='onRowDrop($event)' [editSettings]='treeGridEditSettings'>
@@ -50,36 +40,36 @@ standalone: true,
             </div>`,
 })
 export class AppComponent implements OnInit {
-  @ViewChild('grid')
-  gridObject!: GridComponent;
-  @ViewChild('treegrid')
-  treeGridObject!: TreeGridComponent;
-  public sourceData: Object[] = [];
-  public selectionOptions?: Object;
-  public srcDropOptions?: Object;
-  public treegridData: object[] = [];
-  public gridEditSettings?: Object;
-  public treeGridEditSettings?: Object;
+    @ViewChild('grid')
+    gridObject!: GridComponent;
+    @ViewChild('treegrid')
+    treeGridObject!: TreeGridComponent;
+    public sourceData: Object[] = [];
+    public selectionOptions?: Object;
+    public srcDropOptions?: Object;
+    public treegridData: object[] = [];
+    public gridEditSettings?: Object;
+    public treeGridEditSettings?: Object;
 
-  ngOnInit(): void {
-    this.sourceData = sampleGridData;
-    this.selectionOptions = { type: 'Multiple' };
-    this.srcDropOptions = { targetID: 'Grid' };
-    this.gridEditSettings = { allowAdding: true, allowEditing: true };
-    this.treeGridEditSettings = { allowDeleting: true };
-  }
-  onRowDrop(args: RowDragEventArgs) {
-    if ((args.target as Element).closest('.e-grid')) {
-      args.cancel = true;
-      var rowIndex = !isNullOrUndefined(
-        (args.target as Element).closest('.e-row') as Element
-      )
-        ? ((args.target as HTMLElement).closest('.e-row') as any).rowIndex
-        : 0;
-      for (var i = 0; i < (args.data as Object[]).length; i++) {
-        this.gridObject.addRecord((args.data as Object[])[i], rowIndex);
-        this.treeGridObject.deleteRecord('taskID', (args.data as Object[])[i]);
-      }
+    ngOnInit(): void {
+        this.sourceData = sampleGridData;
+        this.selectionOptions = { type: 'Multiple' };
+        this.srcDropOptions = { targetID: 'Grid' };
+        this.gridEditSettings = { allowAdding: true, allowEditing: true };
+        this.treeGridEditSettings = { allowDeleting: true };
     }
-  }
+    onRowDrop(args: RowDragEventArgs) {
+        if ((args.target as Element).closest('.e-grid')) {
+            args.cancel = true;
+            var rowIndex = !isNullOrUndefined(
+                (args.target as Element).closest('.e-row') as Element
+            )
+                ? ((args.target as HTMLElement).closest('.e-row') as any).rowIndex
+                : 0;
+            for (var i = 0; i < (args.data as Object[]).length; i++) {
+                this.gridObject.addRecord((args.data as Object[])[i], rowIndex);
+                this.treeGridObject.deleteRecord('taskID', (args.data as Object[])[i]);
+            }
+        }
+    }
 }

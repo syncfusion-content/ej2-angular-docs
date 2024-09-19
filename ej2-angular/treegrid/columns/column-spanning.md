@@ -18,7 +18,6 @@ In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/spanning-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/spanning-cs1/src/main.ts %}
 {% endhighlight %}
@@ -34,7 +33,6 @@ You can change the border color for the spanned cells by the using [queryCellInf
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/treegrid/spanning-cs2/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/treegrid/spanning-cs2/src/main.ts %}
 {% endhighlight %}

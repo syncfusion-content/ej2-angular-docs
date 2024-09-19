@@ -50,7 +50,7 @@ ng new syncfusion-angular-app
 
 This command will prompt you for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
 
-![Initial setup in Angular.](images/angular-initial-setup.PNG)
+![Initial_setup](images/Initial_setup.PNG)
 
 By default, it will create a CSS-based application. You can specify that you want to use SCSS by running the following command instead:
 
@@ -70,7 +70,7 @@ Syncfusion packages are distributed in npm under the `@syncfusion` scope. You ca
 
 Currently, Syncfusion provides two set of package structures for Angular components,
 
-1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler (Angular’s legacy compilation and rendering pipeline) package.
 
 Syncfusion's latest Angular packages are Ivy-distributed and compatible with Angular 12 and above. To install the package use the following command,
@@ -148,7 +148,7 @@ This will add a Grid to your application with the specified columns and data.
 
 Run the `ng serve` command in the console, it will serve your application and you can open the browser window.
 
-![Angular CLI application.](images/angular-cli-application.PNG)
+![output](images/ang-cli.PNG)
 
 Refer the below sample for more information.
 

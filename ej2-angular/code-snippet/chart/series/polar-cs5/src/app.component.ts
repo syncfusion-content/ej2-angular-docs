@@ -7,7 +7,7 @@ import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesServic
 
 
 import { Component, OnInit } from '@angular/core';
-import { polarCategory } from './datasource';
+import { chartData } from './datasource';
 
 @Component({
 imports: [
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     public primaryYAxis?: Object;
     public data?: Object[];
     ngOnInit(): void {
-        this.data = polarCategory;
+        this.data = chartData;
         this.primaryXAxis = {
             title: 'Month',
             valueType: 'Category'

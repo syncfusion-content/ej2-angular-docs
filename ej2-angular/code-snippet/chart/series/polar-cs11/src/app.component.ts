@@ -7,7 +7,7 @@ import { AreaSeriesService, LineSeriesService, ExportService, ColumnSeriesServic
 
 
 import { Component, OnInit } from '@angular/core';
-import { radarData } from './datasource';
+import { chartData } from './datasource';
 
 @Component({
 imports: [
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
     public title?: string;
     public data?: Object[];
     ngOnInit(): void {
-        this.data = radarData;
+        this.data = chartData;
         this.title = 'Efficiency of oil-fired power production';
 
     }

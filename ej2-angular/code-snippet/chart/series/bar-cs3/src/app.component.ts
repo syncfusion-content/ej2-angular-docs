@@ -6,7 +6,7 @@ import { BarSeriesService, StackingBarSeriesService, CategoryService} from '@syn
 
 
 import { Component, OnInit } from '@angular/core';
-import { stackData } from './datasource';
+import { stackedData } from './datasource';
 @Component({
 imports: [
          ChartModule
@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
     public title?: string;
 primaryYAxis: any;
     ngOnInit(): void {
-        this.chartData = stackData;
+        this.chartData = stackedData;
         this.primaryXAxis = {
             valueType: 'Category',
             title: 'Months'

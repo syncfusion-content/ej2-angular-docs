@@ -1,26 +1,16 @@
-import { NgModule,ViewChild } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
-import {ButtonModule} from '@syncfusion/ej2-angular-buttons'
-
-
-
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
+import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
-imports: [
-        
-        TreeGridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService],
-standalone: true,
+    imports: [TreeGridModule, ButtonModule],
+    providers: [PageService, SortService, FilterService],
+    standalone: true,
     selector: 'app-container',
     template: `<button ejs-button id="btnId" cssClass="e-info" (click)='updateColumns()'> Update Columns </button>
                <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' >
@@ -43,18 +33,18 @@ export class AppComponent implements OnInit {
 
     updateColumns(): void {
         // Modifying column properties
-    var column: any = (this.treegrid as TreeGridComponent).columns;
+        var column: any = (this.treegrid as TreeGridComponent).columns;
 
-    column[0].textAlign = 'Center';
-    column[0].width = '100';
-    column[2].visible = false;
-    column[1].customAttributes = {
-      class: 'customcss',
-    };
-    // Applying changes to the treegrid
-    (this.treegrid as TreeGridComponent).refreshColumns();
-  }
-   
+        column[0].textAlign = 'Center';
+        column[0].width = '100';
+        column[2].visible = false;
+        column[1].customAttributes = {
+            class: 'customcss',
+        };
+        // Applying changes to the treegrid
+        (this.treegrid as TreeGridComponent).refreshColumns();
+    }
+
 }
 
 
