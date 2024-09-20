@@ -31,7 +31,7 @@ import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import {PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
   ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, 
-  FormDesignerService, FormFieldsService, TextFieldSettings, SignatureFieldSettings, InitialFieldSettings, 
+  FormDesignerService, LoadEventArgs, FormFieldsService, TextFieldSettings, SignatureFieldSettings, InitialFieldSettings, 
   CheckBoxFieldSettings, RadioButtonFieldSettings } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
   public document: string = 'https://cdn.syncfusion.com/content/pdf/form-designer.pdf';
   public resource: string = "https://cdn.syncfusion.com/ej2/23.1.43/dist/ej2-pdfviewer-lib";
 
-  documentLoaded(e: any): void {
+  documentLoaded(e: LoadEventArgs): void {
     this.pdfviewerControl?.formDesignerModule.addFormField("Textbox", {name: 'First Name', bounds: { X: 146, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.addFormField("Textbox", { name: "Middle Name", bounds: { X: 338, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.addFormField('Textbox', {name: 'Last Name',bounds: { X: 530, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
@@ -108,7 +108,7 @@ import { Component, OnInit } from '@angular/core';
 import {PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
   ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, 
   FormDesignerService, FormFieldsService, TextFieldSettings, SignatureFieldSettings, InitialFieldSettings, 
-  CheckBoxFieldSettings, RadioButtonFieldSettings } from '@syncfusion/ej2-angular-pdfviewer';
+  CheckBoxFieldSettings, LoadEventArgs, RadioButtonFieldSettings } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-container',
@@ -132,7 +132,7 @@ export class AppComponent implements OnInit {
   public document: string = 'https://cdn.syncfusion.com/content/pdf/form-designer.pdf';
   public resource: string = "https://cdn.syncfusion.com/ej2/23.1.43/dist/ej2-pdfviewer-lib";
 
-   documentLoaded(e: any): void {
+   documentLoaded(e: LoadEventArgs): void {
     this.pdfviewerControl?.formDesignerModule.addFormField("Textbox", {name: 'First Name', bounds: { X: 146, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.addFormField("Textbox", { name: "Middle Name", bounds: { X: 338, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.addFormField('Textbox', {name: 'Last Name',bounds: { X: 530, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
@@ -185,7 +185,7 @@ import { Component, OnInit } from '@angular/core';
 import {PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
   ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, 
   FormDesignerService, FormFieldsService, TextFieldSettings, SignatureFieldSettings, InitialFieldSettings, 
-  CheckBoxFieldSettings, RadioButtonFieldSettings } from '@syncfusion/ej2-angular-pdfviewer';
+  CheckBoxFieldSettings, LoadEventArgs, RadioButtonFieldSettings } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-container',
@@ -209,7 +209,7 @@ export class AppComponent implements OnInit {
   public document: string = 'https://cdn.syncfusion.com/content/pdf/form-designer.pdf';
   public resource: string = "https://cdn.syncfusion.com/ej2/23.1.43/dist/ej2-pdfviewer-lib";
 
-  documentLoaded(e: any): void {
+  documentLoaded(e: LoadEventArgs): void {
     this.pdfviewerControl?.formDesignerModule.addFormField("Textbox", {name: 'First Name', bounds: { X: 146, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.addFormField("Textbox", { name: "Middle Name", bounds: { X: 338, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.addFormField('Textbox', {name: 'Last Name',bounds: { X: 530, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);

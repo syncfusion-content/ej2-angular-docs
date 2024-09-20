@@ -10,8 +10,13 @@ domainurl: ##DomainURL##
 
 # Getting started with Standalone PDF Viewer component
 
-This section explains the steps required to create a simple Standalone Angular PDF Viewer and demonstrates the basic usage of the PDF Viewer control in a Angular CLI application.
+This section explains the steps required to create a simple Standalone Angular PDF Viewer and demonstrates the basic usage of the PDF Viewer control in a Angular CLI application (for Angular versions below 17).
 
+N> For Angular 17+, see the following links:
+
+* [Create a Standalone PDF Viewer in Angular 17 and above with-no-standalone-flag](./how-to/create-a-standalone-pdf-viewer-in-angular-17-and-above-with-no-standalone-flag).
+* [Create a Standalone PDF Viewer in Angular 17 and above without --no-standalone flag](./how-to/create-a-standalone-pdf-viewer-in-angular-17-and-above-without-no-standalone-flag).
+  
 ## Setup Angular Environment
 
 You can use the [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
@@ -22,8 +27,6 @@ npm install -g @angular/cli
 ```
 
 N> Use the command **npm install --save @angular/cli@12.0.2** to install the Angular CLI version 12.0.2
-
-N> You can refer this [link](./how-to/create-a-standalone-pdf-viewer-in-angular-17-and-above-with-no-standalone-flag) to Create a Standalone PDF Viewer in Angular 17 and above with-no-standalone-flag. You can refer this [link](./how-to/create-a-standalone-pdf-viewer-in-angular-17-and-above-without-no-standalone-flag) to Create a Standalone PDF Viewer in Angular 17 and above without --no-standalone flag 
 
 ## Create an Angular Application
 

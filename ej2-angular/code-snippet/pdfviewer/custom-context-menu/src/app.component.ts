@@ -2,7 +2,7 @@ import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
 import { PdfViewerModule, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer'
+  ToolbarService, NavigationService, LoadEventArgs, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer'
 
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { MenuItemModel } from '@syncfusion/ej2-angular-navigations';
@@ -91,7 +91,7 @@ export class AppComponent implements OnInit {
       id: 'read_only_false'
     },
   ]
-  public documentLoaded(e: any): void {
+  public documentLoaded(e: LoadEventArgs): void {
     var pdfViewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
     pdfViewer.addCustomMenu(this.menuItems, false, false);
   }

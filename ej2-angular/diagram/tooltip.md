@@ -201,3 +201,21 @@ To animate the tooltip, a set of specific animation effects are available, and i
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/tooltip/tooltipanimation-cs1" %}
+
+## Tooltip for Annotation
+
+Tooltips can be added to annotations to display additional information on mouseover. 
+To display tooltips on mouseover, set the desired tooltip text to the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram#tooltip) property of the annotation.
+Tooltips for Annotations can be enabled or disabled by setting the [`AnnotationConstraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationConstraints#AnnotationConstraints) property as [`Tooltip`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationConstraints#AnnotationConstraints). 
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/tooltip/annotationtooltip-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/tooltip/annotationtooltip-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/tooltip/annotationtooltip-cs1" %}

@@ -280,6 +280,7 @@ import {
 } from '@syncfusion/ej2-angular-pdfviewer';
 import { ComboBox } from "@syncfusion/ej2-dropdowns";
 import { TextBox } from "@syncfusion/ej2-inputs";
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
   selector: 'app-root',
@@ -334,7 +335,7 @@ export class AppComponent implements OnInit {
     toolbarItems: [this.toolItem1, this.toolItem2, 'OpenOption', 'PageNavigationTool', 'MagnificationTool', this.toolItem3, 'PanTool', 'SelectionTool', 'SearchOption', 'PrintOption', 'DownloadOption', 'UndoRedoTool', 'AnnotationEditTool', 'FormDesignerEditTool', this.toolItem4, 'CommentTool', 'SubmitForm']
   };
  
-  public toolbarClick(args: any): void {
+  public toolbarClick(args: ClickEventArgs): void {
       var pdfViewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
       if (args.item && args.item.id === 'print') {
             pdfViewer.printModule.print();
@@ -361,6 +362,7 @@ import {
 } from '@syncfusion/ej2-angular-pdfviewer';
 import { ComboBox } from "@syncfusion/ej2-dropdowns";
 import { TextBox } from "@syncfusion/ej2-inputs";
+import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
   selector: 'app-root',
@@ -415,7 +417,7 @@ export class AppComponent implements OnInit {
     toolbarItems: [this.toolItem1, this.toolItem2, 'OpenOption', 'PageNavigationTool', 'MagnificationTool', this.toolItem3, 'PanTool', 'SelectionTool', 'SearchOption', 'PrintOption', 'DownloadOption', 'UndoRedoTool', 'AnnotationEditTool', 'FormDesignerEditTool', this.toolItem4, 'CommentTool', 'SubmitForm']
   };
  
-  public toolbarClick(args: any): void {
+  public toolbarClick(args: ClickEventArgs): void {
       var pdfViewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
       if (args.item && args.item.id === 'print') {
             pdfViewer.printModule.print();

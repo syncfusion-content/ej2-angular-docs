@@ -32,14 +32,16 @@ Icons can be used from the npm package `ej2-icons`. To use the icons, install th
 
 Refer to the following syntax to use icons in a Angular application:
 
+`[src/styles.css]`
+
 ```css
-@import "../node_modules/@syncfusion/ej2-icons/<theme_name>.css";
+@import "../node_modules/@syncfusion/ej2-icons/styles/<theme_name>.css";
 ```
 
 **Example:**
 
 ```css
-@import "../node_modules/@syncfusion/ej2-icons/material.css";
+@import "../node_modules/@syncfusion/ej2-icons/styles/material.css";
 ```
 
 ### CDN reference

@@ -13,6 +13,16 @@
   width: 650px;
 }
 
+#banner .e-view-container {
+  margin: auto;
+}
+#banner .e-banner-view {
+  margin-left: 0;
+}
+.banner-content .e-assistview-icon:before {
+  font-size: 35px;
+}
+
 #banner .banner-content {
   text-align: center;
 }

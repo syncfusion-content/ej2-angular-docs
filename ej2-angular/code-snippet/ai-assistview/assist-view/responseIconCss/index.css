@@ -12,3 +12,7 @@
   height: 350px;
   width: 650px;
 }
+
+.e-icons.e-bullet-4:before {
+  font-size: 30px;
+}

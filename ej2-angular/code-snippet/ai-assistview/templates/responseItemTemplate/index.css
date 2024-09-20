@@ -31,6 +31,18 @@
   align-items: center;
 }
 
-#response-item .responseItemContent .content {
+#response-item .responseItemContent .assist-response-content {
+  margin-left: 35px;
+}
+
+.responseItemContent .assist-response-content {
+  margin-left: 35px;
+}
+
+.responseItemContent .response-header .e-assistview-icon:before {
+  margin-right: 10px;
+}
+
+#response-item .e-response-item-template .e-toolbar-items {
   margin-left: 35px;
 }

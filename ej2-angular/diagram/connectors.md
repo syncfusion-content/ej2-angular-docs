@@ -354,6 +354,24 @@ Use the following CSS to customize the segment thumb shape.
 
 ```
 
+## How to customize Orthogonal Segment Thumb Size
+
+Orthogonal segment thumbs default to size 10. This can be adjusted globally or for individual connectors using the  [`segmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#segmentThumbSize-SegmentThumbSize) property.
+To change the thumb size for all Orthogonal connectors, set the [`segmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#segmentThumbSize-SegmentThumbSize) property in the diagram’s model.
+To customize the thumb size for a specific connector, disable the [`InheritSegmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints) constraint, then set the desired [`segmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#segmentThumbSize-SegmentThumbSize).
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/connectors/connectorsorthothumbsize-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/connectors/connectorsorthothumbsize-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsorthothumbsize-cs1" %}
+
 ## Bezier
 
 Bezier segments are used to create curve segments and the curves are configurable either with the control points or with vectors.
@@ -554,6 +572,24 @@ Also, the visibility of control points can be controlled using the bezierSetting
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorBezierAvoidOverlapping-cs1" %}
+
+## How to customize Bezier Segment Thumb Size
+
+Bezier segment thumbs default to size 10. This can be adjusted globally or for individual connectors using the [`segmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#segmentThumbSize-SegmentThumbSize) property.
+To change the thumb size for all Bezier connectors, set the [`segmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#segmentThumbSize-SegmentThumbSize) property in the diagram’s model.
+To customize the thumb size for a specific connector, disable the [`InheritSegmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints) constraint, then set the desired [`segmentThumbSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#segmentThumbSize-SegmentThumbSize).
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/connectors/connectorsbezierthumbsize-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/connectors/connectorsbezierthumbsize-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/connectors/connectorsbezierthumbsize-cs1" %}
 
 ## Decorator
 

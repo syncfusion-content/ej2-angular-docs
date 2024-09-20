@@ -216,3 +216,19 @@ The diagram provides support to show tooltip when the mouse hovers over any fixe
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/interaction/tooltipfixeduserhandle-cs1" %}
+
+### Customizing Fixed User Handles with HTML Templates
+
+Fixed user handles are interactive elements added to nodes and connectors. Their appearance can be customized using HTML templates. To render fixed user handle with HTML templates, we need to create an HTML element inside a `<ng-template>` tag then add the template reference using the [`fixedUserHandleTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#fixeduserhandletemplate) property in the diagram model.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/interaction/fixeduserhandletemplate-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/interaction/fixeduserhandletemplate-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/interaction/fixeduserhandletemplate-cs1" %}

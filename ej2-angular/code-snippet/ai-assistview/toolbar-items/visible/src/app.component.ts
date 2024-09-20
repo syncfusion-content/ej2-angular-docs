@@ -20,7 +20,10 @@ export class AppComponent {
     public aiAssistViewComponent!: AIAssistViewComponent;
 
     public toolbarSettings: ToolbarSettingsModel = {
-        items: [ { type: 'Button', iconCss: 'e-icons e-refresh', align: 'Right', visible: false } ]
+        items: [
+            { type: 'Button', iconCss: 'e-icons e-refresh', align: 'Right', visible: false },
+            { type: 'Button', iconCss: 'e-icons e-user', align: 'Right' }
+          ]
     };
     
     public onPromptRequest = (args: PromptRequestEventArgs) => {

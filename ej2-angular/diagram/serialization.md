@@ -52,6 +52,38 @@ this.diagram.loadDiagram(saveData);
 
 >Note: Before loading a new diagram, existing diagram is cleared.
 
+## Loaded Event
+
+The [`loaded`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loaded) event triggers when all diagram elements are loaded using [`loadDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram#loadDiagram) method. You can use this event to customize diagram elements during the loading process.
+
+```typescript
+
+<ejs-diagram #diagram id="diagram" width="100%" height="700px" (loaded)="loaded()" >
+</ejs-diagram>
+export class AppComponent {
+  public loaded(args:ILoadedEventArgs): void {
+      //You can use this event to customize diagram elements during the loading process
+  }
+}
+
+```
+
+The event has two arguments such as name, diagram
+
+**name**
+
+Type: String
+
+Description: Returns the event name.
+
+**diagram**
+
+Type: Diagram
+
+Description: Returns the diagram model properties.
+
+Users can perform customizations or modifications to the diagram elements once the loading process is complete.
+
 ## Prevent default values
 
 The diagram provides supports to simplifying the saved JSON object without adding the default properties that are presented in the diagram.

@@ -15,12 +15,12 @@ import { AIAssistViewComponent, PromptRequestEventArgs } from '@syncfusion/ej2-a
     template: `
     <div ejs-aiassistview>
         <e-views>
-            <e-view type="Assist" name="Prompt">
+            <e-view type="Assist" name="Prompt" [viewTemplate]="viewTemplate">
                 <ng-template #viewTemplate>
                     <div class="view-container"><h5>Prompt view content</h5></div>
                 </ng-template>
             </e-view>
-            <e-view type="Custom" name="Response">
+            <e-view type="Custom" name="Response" [viewTemplate]="viewTemplate">
                 <ng-template #viewTemplate>
                     <div class="view-container"><h5>Response view content</h5></div>
                 </ng-template>
