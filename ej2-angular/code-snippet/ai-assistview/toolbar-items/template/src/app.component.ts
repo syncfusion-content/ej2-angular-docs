@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AIAssistViewModule } from '@syncfusion/ej2-angular-interactive-chat';
+import { DropDownButton } from '@syncfusion/ej2-angular-splitbuttons';
 
 import { Component, HostListener, ViewChild } from '@angular/core';
 import { AIAssistViewComponent, PromptRequestEventArgs, ToolbarSettingsModel } from '@syncfusion/ej2-angular-interactive-chat';
@@ -12,7 +13,7 @@ import { AIAssistViewComponent, PromptRequestEventArgs, ToolbarSettingsModel } f
     standalone: true,
     selector: 'app-root',
     // specifies the template string for the AI AssistView component
-    template: `<div ejs-aiassistview id="template" #aiAssistViewComponent (promptRequest)="onPromptRequest($event)" [toolbarSettings]="toolbarSettings"></div>`
+    template: `<div ejs-aiassistview #aiAssistViewComponent (promptRequest)="onPromptRequest()" [toolbarSettings]="toolbarSettings" (created)="created()"></div>`
 })
 
 export class AppComponent {
@@ -20,8 +21,32 @@ export class AppComponent {
     public aiAssistViewComponent!: AIAssistViewComponent;
 
     public toolbarSettings: ToolbarSettingsModel = {
-        items: [ { type: 'Input', template: 'Your personalized assistant for smarter prompts and responses.', align: 'Center' } ]
+        items: [
+          {
+            type: 'Input', align: 'Right',
+            template: '<button id="ddMenu"></button>'
+          }
+        ]
     };
+
+    public created = () => {
+        var dropdown: DropDownButton = new DropDownButton({
+            items: this.dropdownItems,
+            content: 'English'
+        }, '#ddMenu');
+    };
+
+    public dropdownItems = [
+        {
+            text: 'हिंदी'
+        },
+        {
+            text: 'தமிழ்'
+        },
+        {
+            text: 'తెలుగు'
+        }
+    ];
     
     public onPromptRequest = (args: PromptRequestEventArgs) => {
         setTimeout(() => {

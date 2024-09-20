@@ -19,7 +19,7 @@ export class AppComponent {
     @ViewChild('aiAssistViewComponent')
     public aiAssistViewComponent!: AIAssistViewComponent;
   
-    public responseIconCss: string = 'e-icons e-star-filled';
+    public responseIconCss: string = 'e-icons e-bullet-4';
   
     public promptsData = [
         {

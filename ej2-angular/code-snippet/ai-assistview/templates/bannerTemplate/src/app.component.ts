@@ -16,7 +16,9 @@ import { AIAssistViewComponent } from '@syncfusion/ej2-angular-interactive-chat'
     <div ejs-aiassistview id="banner" #aiAssistViewComponent (promptRequest)="onPromptRequest()">
         <ng-template #bannerTemplate>
             <div class="banner-content">
-                <h1><span class="e-icons e-assistview-icon"></span>AI Assistance</h1>
+                <div class="e-icons e-assistview-icon"></div>
+                <h3>AI Assistance</h3>
+                <div>Your everyday AI companion.</div>
             </div>
         </ng-template>
     </div>`

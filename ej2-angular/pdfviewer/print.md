@@ -168,7 +168,7 @@ In the Syncfusion PDF Viewer, you can control the printing process by leveraging
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService, ToolbarService, NavigationService,
-         TextSearchService, AnnotationService, TextSelectionService,
+         TextSearchService, PrintStartEventArgs, AnnotationService, TextSelectionService,
          PrintService
        } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
@@ -191,7 +191,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
     public resource: string = "https://cdn.syncfusion.com/ej2/23.1.43/dist/ej2-pdfviewer-lib";
     ngOnInit(): void {
     }
-    printStart(args: any){
+    printStart(args: PrintStartEventArgs){
       console.log(args);
       args.cancel = true; 
     }
@@ -204,7 +204,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 import { Component, OnInit } from '@angular/core';
 import { LinkAnnotationService, BookmarkViewService, MagnificationService,
          ThumbnailViewService, ToolbarService, NavigationService,
-         TextSearchService, AnnotationService, TextSelectionService,
+         TextSearchService, PrintStartEventArgs, AnnotationService, TextSelectionService,
          PrintService
        } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
@@ -229,7 +229,7 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 
     ngOnInit(): void {
     }
-    printStart(args: any){
+    printStart(args: PrintStartEventArgs){
       console.log(args);
       args.cancel = true; 
     }

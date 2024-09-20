@@ -13,8 +13,6 @@
   width: 650px;
 }
 
-#template .e-template {
-  font-size: 14px;
-  font-weight: 300;
-  text-shadow: 1px 1px 2px rgb(87 83 83 / 50%);
+.custom-dropdown.e-dropdown-popup ul {
+  min-width: 100px;
 }
