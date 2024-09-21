@@ -19,7 +19,7 @@ export class AppComponent {
     @ViewChild('aiAssistViewComponent')
     public aiAssistViewComponent!: AIAssistViewComponent;
 
-    public cssClass: string = 'e-custom';
+    public cssClass: string = 'custom-container';
 
     public onPromptRequest = () => {
         setTimeout(() => {

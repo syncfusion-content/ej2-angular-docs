@@ -24,7 +24,7 @@ import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
          NavigationService, TextSearchService, TextSelectionService,
          PrintService, FormDesignerService, FormFieldsService, 
-         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
+         AnnotationService, DownloadStartEventArgs, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
@@ -45,7 +45,7 @@ import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
     public resource: string = "https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2-pdfviewer-lib";
     ngOnInit(): void {
     }
-    public downloadStart(args: any): void {
+    public downloadStart(args: DownloadStartEventArgs): void {
       // Your custom logic here
       args.cancel = true; // Prevent download action
     }
@@ -60,7 +60,7 @@ import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
          NavigationService, TextSearchService, TextSelectionService,
          PrintService, FormDesignerService, FormFieldsService, 
-         AnnotationService, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
+         AnnotationService, DownloadStartEventArgs, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
@@ -83,7 +83,7 @@ import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
 
     ngOnInit(): void {
     }
-  public downloadStart(args: any): void {
+  public downloadStart(args: DownloadStartEventArgs): void {
     // Your custom logic here
     args.cancel = true; // Prevent download action
   }

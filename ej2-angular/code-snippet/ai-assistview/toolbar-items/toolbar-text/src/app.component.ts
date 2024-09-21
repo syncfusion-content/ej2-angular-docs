@@ -20,7 +20,7 @@ export class AppComponent {
     public aiAssistViewComponent!: AIAssistViewComponent;
 
     public toolbarSettings: ToolbarSettingsModel = {
-        items: [ { text: 'Get intelligent responses tailored to your needs', align: 'Center' } ]
+        items: [ { text: 'Welcome User !', align: 'Right' } ]
     };
     
     public onPromptRequest = (args: PromptRequestEventArgs) => {

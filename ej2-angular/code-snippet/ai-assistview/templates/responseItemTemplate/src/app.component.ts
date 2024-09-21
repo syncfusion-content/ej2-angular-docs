@@ -18,9 +18,9 @@ import { AIAssistViewComponent, PromptRequestEventArgs } from '@syncfusion/ej2-a
             <div class="responseItemContent">
                 <div class="response-header">
                     <span class="e-icons e-assistview-icon"></span>
-                    AI AssistView
+                    AI Assist
                 </div>
-                <div class="content" [innerHTML]='data.response'></div>
+                <div class="assist-response-content" [innerHTML]='data.response'></div>
             </div>
         </ng-template>
     </div>`

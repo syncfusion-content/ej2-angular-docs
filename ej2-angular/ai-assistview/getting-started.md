@@ -66,7 +66,7 @@ Currently, Syncfusion provides two types of package structures for Angular compo
 
 Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
-Add [`@syncfusion/ej2-angular-interactive-chat`](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat/v/20.2.38) package to the application.
+Add [`@syncfusion/ej2-angular-interactive-chat`](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat/v/27.1.48) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-interactive-chat --save
@@ -76,7 +76,7 @@ npm install @syncfusion/ej2-angular-interactive-chat --save
 
 For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
 
-Add [`@syncfusion/ej2-angular-interactive-chat@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-interactive-chat@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat/v/27.1.48-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-interactive-chat@ngcc --save
@@ -85,7 +85,7 @@ npm install @syncfusion/ej2-angular-interactive-chat@ngcc --save
 To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
 
 ```bash
-@syncfusion/ej2-angular-interactive-chat:"20.2.38-ngcc"
+@syncfusion/ej2-angular-interactive-chat:"27.1.48-ngcc"
 ```
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
@@ -162,7 +162,7 @@ The following example illustrates the output in your browser.
 
 ## Configure suggestions and responses
 
-You can use the `promptSuggestions` property to add prompt suggestions and the `promptRequest` event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
+You can use the [promptSuggestions](../api/ai-assist-view#promptsuggestions) property to add prompt suggestions and the [promptRequest](../api/ai-assist-view#promptrequest) event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

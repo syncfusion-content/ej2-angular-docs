@@ -15,7 +15,6 @@
 
 .custom-footer {
   display: flex;
-  flex-direction: column;
   gap: 10px;
   padding: 10px;
   background-color: transparent;
@@ -30,4 +29,5 @@
 
 #sendPrompt {
   padding: 5px 15px;
+  align-self: flex-end;
 }

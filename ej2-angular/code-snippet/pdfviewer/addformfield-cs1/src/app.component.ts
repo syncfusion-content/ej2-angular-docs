@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { PdfViewerModule, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService, PdfViewerComponent} from '@syncfusion/ej2-angular-pdfviewer'
+  ToolbarService, NavigationService, TextSearchService, LoadEventArgs, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService, PdfViewerComponent} from '@syncfusion/ej2-angular-pdfviewer'
 
 
 
@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
   public document: string = 'https://cdn.syncfusion.com/content/pdf/form-designer.pdf';
   public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
  
-  documentLoaded(e: any): void {
+  documentLoaded(e: LoadEventArgs): void {
     this.pdfviewerControl?.formDesignerModule.addFormField("Textbox", {name: 'First Name', bounds: { X: 146, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.addFormField("Textbox", { name: "Middle Name", bounds: { X: 338, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);
     this.pdfviewerControl?.formDesignerModule.addFormField('Textbox', {name: 'Last Name',bounds: { X: 530, Y: 229, Width: 150, Height: 24 },} as TextFieldSettings);

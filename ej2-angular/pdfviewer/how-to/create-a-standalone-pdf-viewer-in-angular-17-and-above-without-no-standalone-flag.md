@@ -1,6 +1,6 @@
 ---
 layout: post
-title: title: PDF Viewer in Angular 17+ without no-standalone | Syncfusion
+title: PDF Viewer in Angular 17+ without no-standalone | Syncfusion
 description: Checkout and learn about Create a Standalone PDF Viewer in Angular 17 and above without --no-standalone flag of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: PDF Viewer 
@@ -75,7 +75,7 @@ import {
   template: `<div class="content-wrapper">
                 <ejs-pdfviewer id="pdfViewer"
                     [documentPath]='document'
-                    [serviceUrl]='service' 
+                    [resourceUrl]='resource' 
                     style="height:640px;display:block">
                 </ejs-pdfviewer>
              </div>`,
@@ -87,7 +87,7 @@ import {
 })
 export class AppComponent implements OnInit {
   public document: string = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
-  public service: string = "https://services.syncfusion.com/angular/production/api/pdfviewer";
+  public resource: string = "https://cdn.syncfusion.com/ej2/26.2.11/dist/ej2-pdfviewer-lib";
   ngOnInit(): void {
   }
 }

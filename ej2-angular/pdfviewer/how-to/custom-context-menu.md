@@ -49,7 +49,7 @@ The following code shows how to add custom option in context menu.
       id: 'read_only_false'
     },
   ]
-  public documentLoaded(e: any): void {
+  public documentLoaded(e: LoadEventArgs): void {
     var pdfViewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
     pdfViewer.addCustomMenu(this.menuItems, false, false);
   }
@@ -93,7 +93,7 @@ The PDF Viewer feature enables customization of custom options and the ability t
       id: 'read_only_false'
     },
   ]
-  public documentLoaded(e: any): void {
+  public documentLoaded(e: LoadEventArgs): void {
     var pdfViewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
     pdfViewer.addCustomMenu(this.menuItems, false, false);
   }
@@ -137,7 +137,7 @@ export class CustomContextMenuComponent implements OnInit {
       id: 'read_only_false'
     },
   ]
-  public documentLoaded(e: any): void {
+  public documentLoaded(e: LoadEventArgs): void {
     var pdfViewer = (<any>document.getElementById('pdfViewer')).ej2_instances[0];
     pdfViewer.addCustomMenu(this.menuItems, false, false);
   }

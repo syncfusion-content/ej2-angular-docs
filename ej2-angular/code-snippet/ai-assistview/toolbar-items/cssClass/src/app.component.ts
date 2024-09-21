@@ -20,7 +20,7 @@ export class AppComponent {
     public aiAssistViewComponent!: AIAssistViewComponent;
 
     public toolbarSettings: ToolbarSettingsModel = {
-        items: [ { type: 'Button', iconCss: 'e-icons e-user', align: 'Right', cssClass: 'e-custom' } ]
+        items: [ { type: 'Button', iconCss: 'e-icons e-user', align: 'Right', cssClass: 'custom-btn' } ]
     };
     
     public onPromptRequest = (args: PromptRequestEventArgs) => {
