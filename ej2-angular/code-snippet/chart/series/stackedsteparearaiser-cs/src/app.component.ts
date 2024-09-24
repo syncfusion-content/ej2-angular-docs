@@ -19,8 +19,8 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StackingStepArea' xName='x' yName='y' name='USA' noRisers='true'></e-series>
-            <e-series [dataSource]='chartData' type='StackingStepArea' xName='x' yName='y1' name='UK' noRisers='true'></e-series>
+            <e-series [dataSource]='chartData' type='StackingStepArea' xName='x' yName='y' opacity='0.1' [border]='border' name='USA' noRisers='true'></e-series>
+            <e-series [dataSource]='chartData' type='StackingStepArea' xName='x' opacity='0.1' [border]='border' yName='y1' name='UK' noRisers='true'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -30,6 +30,7 @@ export class AppComponent implements OnInit {
     public title?: string;
     public step?: string;
     public primaryYAxis?: Object;
+    public border?: object;
     ngOnInit(): void {
         this.chartData = percentData;
         this.primaryXAxis = {
@@ -37,6 +38,7 @@ export class AppComponent implements OnInit {
         };
         this.title = 'Annual Temperature Comparison';
         this.step = 'Center';
+        this.border = { width: 1.5 };
     }
 
 }
