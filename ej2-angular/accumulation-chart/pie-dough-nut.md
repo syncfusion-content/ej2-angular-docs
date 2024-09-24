@@ -129,7 +129,7 @@ The fill color and the text in the data source can be mapped to the chart using 
 
 ## Border Radius
 
-You can create rounded corners for each slice by using the [borderRadius] option, which gives the chart a modern and polished appearance.
+You can create rounded corners for each slice by using the [`borderRadius`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeriesModel/#borderradius) option, which gives the chart a modern and polished appearance.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -161,7 +161,7 @@ By default, the border will appear in the pie/doughnut chart while mouse hover o
 
 ## Patterns
 
-You can apply different patterns to the pie slices using the [`applyPattern`] property in the series and the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/iAccPointRenderEventArgs/) event.
+You can apply different patterns to the pie slices using the [`applyPattern`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/accumulationSeriesModel/#applypattern) property in the series and the [`pointRender`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/iAccPointRenderEventArgs/) event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
