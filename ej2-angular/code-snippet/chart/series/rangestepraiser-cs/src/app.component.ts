@@ -19,7 +19,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='RangeStepArea' xName='x' high='high' low='low' name='India' noRisers='true'></e-series>
+            <e-series [dataSource]='chartData' type='RangeStepArea' xName='x' high='high' low='low' name='India' noRisers='true' opacity='0.1' [border]='border'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -28,6 +28,7 @@ export class AppComponent implements OnInit {
     public chartData: Object[] = chartData;
     public title?: string;
     public primaryYAxis?: Object;
+    public border?: object;
     ngOnInit(): void {
         this.primaryXAxis = {
            valueType: 'Category',
@@ -41,6 +42,7 @@ export class AppComponent implements OnInit {
             maximum: 40,
             majorTickLines: { width: 0 }
         };
+        this.border = { width: 1.5};
         this.title = 'Monthly Temperature Range'
     }
 }

@@ -19,7 +19,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StepArea' xName='x' noRaiser='true' yName='y' name='England' noRisers='true'></e-series>
+            <e-series [dataSource]='chartData' type='StepArea' xName='x' noRaiser='true' yName='y' name='England' [border]='border' opacity='0.1' noRisers='true'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -28,6 +28,7 @@ export class AppComponent implements OnInit {
     public chartData?: Object[];
     public title?: string;
     public primaryYAxis?: Object;
+    public border?: object;
     ngOnInit(): void {
         this.chartData = stepData;
         this.primaryXAxis = {
@@ -37,6 +38,7 @@ export class AppComponent implements OnInit {
         this.primaryYAxis = {
             title: 'Runs'
         };
+        this.border = { width: 1.5 };
         this.title = 'England - Run Rate';
     }
 
