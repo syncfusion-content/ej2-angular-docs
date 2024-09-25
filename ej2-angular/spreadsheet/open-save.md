@@ -130,7 +130,7 @@ By default, the Spreadsheet component provides an option to browse files from th
 ```js
 
     // Fetch call to server to load the Excel file.
-    fetch('https://localhost:{{Your port number}}/Home/Open', {
+    fetch('https://localhost:{{your_port_number}}/Home/Open', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -149,7 +149,7 @@ You can find the server endpoint code to fetch and process the Excel file in thi
 
 ```js
 // To open an Excel file from the server.
-fetch('https://localhost:{port number}/Home/Open')
+fetch('https://localhost:{{port_number}}/Home/Open')
 ```
 
 ### Open an excel file using a hosted web service in AWS Lambda
@@ -436,7 +436,7 @@ By default, the Spreadsheet component saves the Excel file and downloads it to t
         formData.append('JSONData', JSON.stringify(json.jsonObject.Workbook));
         formData.append('PdfLayoutSettings', JSON.stringify({ FitSheetOnOnePage: false }));
         // Using fetch to invoke the save process.
-        fetch('https://localhost:{{Your port number}}/Home/Save', {
+        fetch('https://localhost:{{your_port_number}}/Home/Save', {
             method: 'POST',
             body: formData
         }).then((response) => {
@@ -483,7 +483,7 @@ You can find the server endpoint code to save the spreadsheet data as an Excel f
 
 ```js
 //To save an Excel file to the server.
-fetch('https://localhost:{port number}/Home/Save')
+fetch('https://localhost:{{port_number}}/Home/Save')
 ```
 
 ### Save an excel file using a hosted web service in AWS Lambda
@@ -783,8 +783,8 @@ And also refer [this](https://ej2.syncfusion.com/aspnetcore/documentation/spread
 
 The following list of Excel file formats are supported in Spreadsheet:
 
-* MS Excel (.xlsx)
-* MS Excel 97-2003 (.xls)
+* Microsoft Excel (.xlsx)
+* Microsoft Excel 97-2003 (.xls)
 * Comma Separated Values (.csv)
 
 ## Note

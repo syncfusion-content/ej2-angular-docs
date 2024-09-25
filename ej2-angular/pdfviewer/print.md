@@ -314,6 +314,9 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
   public printScaleFactor = 0.5;
   }
 
+{% endhighlight %}
+{% endtabs %}
+
 ## See also
 
 * [Toolbar items](./toolbar)
