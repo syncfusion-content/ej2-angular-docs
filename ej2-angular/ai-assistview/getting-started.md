@@ -120,6 +120,7 @@ This can be referenced in [src/styles.css] using following code.
 @import '../node_modules/@syncfusion/ej2-interactive-chat/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
 ```
 
 ## Adding AI AssistView component
