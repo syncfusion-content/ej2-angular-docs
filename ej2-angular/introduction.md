@@ -64,6 +64,9 @@ letter-spacing: 0.7px;
 </tbody>
 <tr>
     <td>
+        <div><p class="controlcategory">SMART COMPONENTS</p></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/smart-paste-button/getting-started/">Smart Paste</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/smart-textarea/getting-started/">Smart TextArea</a></div>
         <div><p class="controlcategory">GRIDS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/grid/getting-started/">DataGrid</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/pivotview/getting-started/">Pivot Table</a></div>
@@ -208,4 +211,4 @@ A good starting point would be to refer to the code snippets in the [online samp
 
 * [Getting started Syncfusion Angular with ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc/)
 
-* [Getting started with Syncfusion Angular Treeshaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking/)
+* [Getting started with Syncfusion Angular Tree shaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking/)
