@@ -26,7 +26,7 @@ standalone: true,
         <e-connectors>
             <e-connector id='connector1' type='Orthogonal' sourceID='node1'  targetID='node2' [segments]='segments1' [constraints]='Constraints1'>
             </e-connector>
-            <e-connector id='connector2' type='Orthogonal' sourceID='node3'  targetID='node4' [segments]='segments2' [constraints]='Constraints2' [ segmentThumbSize] = 20 >
+            <e-connector id='connector2' type='Orthogonal' sourceID='node3'  targetID='node4' [segments]='segments2' [constraints]='Constraints2' [segmentThumbSize] = 20 >
             </e-connector>
         </e-connectors>
     </ejs-diagram>`,

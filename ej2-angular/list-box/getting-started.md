@@ -52,7 +52,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -123,10 +123,13 @@ export class AppComponent  { }
 
 ## Adding CSS reference
 
-Add Button component's styles as given below in `style.css`.
+Add List box component's styles as given below in `style.css`.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-lists/styles/material.css";
 ```
 
 ## Binding data source
