@@ -66,37 +66,6 @@ The client-side method [`startGroupAction`](https://ej2.syncfusion.com/angular/d
   
 {% previewsample "page.domainurl/samples/diagram/undoRedo/groupAction-cs1" %}
 
-### Track custom changes
-
-Diagram provides options to track the changes that are made to custom properties. For example, in case of an employee relationship diagram, track the changes in the employee information. The historyList of the diagram enables you to track such changes.
-
-Before changing the employee information, save the existing information to historyList by using the client-side method push of historyList.
-
-The historyList canLog method can be used which takes a history entry as argument and returns whether the specific entry can be added or not.
-
-```typescript
-@Component({
-    selector: "app-container",
-    // render initialized Diagram
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px"  (created)='create($event)'>
-        </ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-    @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public created(args: Object): void {
-        //Creates a custom entry
-        let entry: HistoryEntry = {
-            undoObject: this.diagram.nodes[0];
-        };
-        // adds the history to history list
-        this.diagram.historyList.push(entry);
-        this.diagram.dataBind();
-    }
-}
-```
-
 ## canLog
 
 canLog in the history list, which takes a history entry as argument and returns whether the specific entry can be added or not.

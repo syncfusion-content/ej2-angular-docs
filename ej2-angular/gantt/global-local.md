@@ -93,7 +93,8 @@ eventMarkers | Event markers
 leftTaskLabel | Left task label
 rightTaskLabel | Right task label
 timelineCell | Timeline cell
-confirmPredecessorDelete | Are you sure you want to remove dependency link?taskMode | Task Mode
+confirmPredecessorDelete | Are you sure you want to remove dependency link?
+taskMode | Task Mode
 changeScheduleMode | Change Schedule Mode
 subTasksStartDate | SubTasks Start Date
 subTasksEndDate | SubTasks End Date

@@ -598,6 +598,8 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
 
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/How%20to/TextSearch)
+
 ## See also
 
 * [Toolbar items](./toolbar)
