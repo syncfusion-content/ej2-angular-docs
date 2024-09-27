@@ -137,7 +137,7 @@ a* |Everything that starts with "a".
 *a* |Everything that has an "a" in it.
 *a*b* |Everything that has an "a" in it, followed by anything, followed by a "b", followed by anything.
 
-![WildcardFilter](../images/wildcard_search.gif)
+![Wildcard filter in Angular Grid.](../images/angular-grid-wildcard-search.gif)
 
 ### LIKE filtering
 
@@ -155,7 +155,7 @@ Operator |Description
 ab% |Returns all the value that are ends with "ab" character.
 %ab |Returns all the value that are starts with "ab" character.
 
-![LIKEFilter](../images/like_filter.gif)
+![LIKE filter in Angular Grid.](../images/angular-grid-like-filter.gif)
 
 >By default, the Syncfusion Angular Grid uses different filter operators for different column types. The default filter operator for string type columns is **startsWith**, for numerical type columns is **equal**, and for boolean type columns is also **equal**.
 

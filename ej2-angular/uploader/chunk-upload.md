@@ -104,127 +104,45 @@ The following example explains about chunk upload with cancel support.
 The server-side implementation entirely depends on the application requirements and logic. The following code snippet provides the server-side logic to handle the chunk upload using the uploader components.
 
 ```csharp
-// Server configuration for upload a file.
-public void Save()
+public async Task<IActionResult> Save(IFormFile UploadFiles) // Save the uploaded file
 {
-    try
+    if (UploadFiles.Length > 0)
     {
-        if (HttpContext.Current.Request.Files.AllKeys.Length > 0)
+        if (!Directory.Exists(uploads)) //Create directory if not exists
         {
-            var httpPostedChunkFile = HttpContext.Current.Request.Files["chunkFile"];
-            if (httpPostedChunkFile != null)
-            {
-                var saveFile = HttpContext.Current.Server.MapPath("UploadingFiles");
-                // Save the chunk file in temporery location with .part extension
-                var SaveFilePath = Path.Combine(saveFile, httpPostedChunkFile.FileName + ".part");
-                var chunkIndex = HttpContext.Current.Request.Form["chunkIndex"];
-                if (chunkIndex == "0")
-                {
-                    httpPostedChunkFile.SaveAs(SaveFilePath);
-                }
-                else
-                {
-                    // Merge the current chunk file with previous uploaded chunk files
-                    MergeChunkFile(SaveFilePath, httpPostedChunkFile.InputStream);
-                    var totalChunk = HttpContext.Current.Request.Form["totalChunk"];
-                    if (Convert.ToInt32(chunkIndex) == (Convert.ToInt32(totalChunk) - 1))
-                    {
-                        var savedFile = HttpContext.Current.Server.MapPath("UploadedFiles");
-                        var originalFilePath = Path.Combine(savedFile, httpPostedChunkFile.FileName);
-                        // After all the chunk files completely uploaded, remove the .part extension and move this file into save location
-                        System.IO.File.Move(SaveFilePath, originalFilePath);
-                    }
-                }
-                HttpResponse ChunkResponse = HttpContext.Current.Response;
-                ChunkResponse.Clear();
-                ChunkResponse.ContentType = "application/json; charset=utf-8";
-                ChunkResponse.StatusDescription = "File uploaded succesfully";
-                ChunkResponse.End();
-            }
-            var httpPostedFile = HttpContext.Current.Request.Files["UploadFiles"];
+            Directory.CreateDirectory(uploads);
+        }
 
-            if (httpPostedFile != null)
+        if (UploadFiles.ContentType == "application/octet-stream") //Handle chunk upload
+        {
+            var filePath = Path.Combine(uploads, UploadFiles.FileName);
+            using (var fileStream = new FileStream(filePath, FileMode.Append))
             {
-                var fileSave = HttpContext.Current.Server.MapPath("UploadedFiles");
-                var fileSavePath = Path.Combine(fileSave, httpPostedFile.FileName);
-                if (!File.Exists(fileSavePath))
-                {
-                    httpPostedFile.SaveAs(fileSavePath);
-                    HttpResponse Response = HttpContext.Current.Response;
-                    Response.Clear();
-                    Response.ContentType = "application/json; charset=utf-8";
-                    Response.StatusDescription = "File uploaded succesfully";
-                    Response.End();
-                }
-                else
-                {
-                    HttpResponse Response = HttpContext.Current.Response;
-                    Response.Clear();
-                    Response.Status = "400 File already exists";
-                    Response.StatusCode = 400;
-                    Response.StatusDescription = "File already exists";
-                    Response.End();
-                }
+                await UploadFiles.CopyToAsync(fileStream);
+            }
+        }
+        else //Handle normal upload
+        {
+            var filePath = Path.Combine(uploads, UploadFiles.FileName);
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                await UploadFiles.CopyToAsync(fileStream);
             }
         }
     }
-    catch (Exception e)
-    {
-        HttpResponse Response = HttpContext.Current.Response;
-        Response.Clear();
-        Response.ContentType = "application/json; charset=utf-8";
-        Response.StatusCode = 400;
-        Response.Status = "400 No Content";
-        Response.StatusDescription = e.Message;
-        Response.End();
-    }
+    return Ok();
 }
-// Server configuration for remove a uploaded file
-public void Remove()
+
+public void Remove(string UploadFiles) // Delete the uploaded file
 {
-    try
+    if (UploadFiles != null)
     {
-        var fileSave = "";
-        if (HttpContext.Current.Request.Form["cancelUploading"] != null)
+        var filePath = Path.Combine(uploads, UploadFiles);
+        if (System.IO.File.Exists(filePath))
         {
-            fileSave = HttpContext.Current.Server.MapPath("UploadingFiles");
-        } else
-        {
-            fileSave = HttpContext.Current.Server.MapPath("UploadedFiles");
+            //Delete the file from server
+            System.IO.File.Delete(filePath);
         }
-        var fileName = HttpContext.Current.Request.Files["UploadFiles"].FileName;
-        var fileSavePath = Path.Combine(fileSave, fileName);
-        if (File.Exists(fileSavePath))
-        {
-            File.Delete(fileSavePath);
-        }
-    }
-    catch (Exception e)
-    {
-        HttpResponse Response = HttpContext.Current.Response;
-        Response.Clear();
-        Response.Status = "404 File not found";
-        Response.StatusCode = 404;
-        Response.StatusDescription = "File not found";
-        Response.End();
-    }
-}
-// Merge the current chunk file with previous uploaded chunk files
-public void MergeChunkFile(string fullPath, Stream chunkContent)
-{
-    try
-    {
-        using (FileStream stream = new FileStream(fullPath, FileMode.Append, FileAccess.Write, FileShare.ReadWrite))
-        {
-            using (chunkContent)
-            {
-                chunkContent.CopyTo(stream);
-            }
-        }
-    }
-    catch (IOException ex)
-    {
-        throw ex;
     }
 }
 ```
