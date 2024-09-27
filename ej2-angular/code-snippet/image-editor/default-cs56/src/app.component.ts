@@ -43,20 +43,20 @@ export class AppComponent {
         this.imageEditorObj?.drawRedact(RedactType.Blur, dimension?.x, dimension.y, 200, 300);
     }
     updateRedact(): void {
-      let redacts: RedactSettings[] = this.imageEditorObj?.getRedacts();
+      let redacts: RedactSettings[] | any = this.imageEditorObj?.getRedacts();
       if (redacts.length > 0) {
         redacts[redacts.length - 1].blurIntensity = 100;
         this.imageEditorObj?.updateRedact(redacts[redacts.length - 1]);
       }
     }
     selectRedact(): void {
-      let redacts: RedactSettings[] = this.imageEditorObj?.getRedacts();
+      let redacts: RedactSettings[] | any = this.imageEditorObj?.getRedacts();
       if (redacts.length > 0) {
           this.imageEditorObj?.selectRedact(redacts[redacts.length - 1].id);
       }
     }
     deleteRedact(): void {
-      let redacts: RedactSettings[] = this.imageEditorObj?.getRedacts();
+      let redacts: RedactSettings[] | any = this.imageEditorObj?.getRedacts();
       if (redacts.length > 0) {
         this.imageEditorObj?.deleteRedact(redacts[redacts.length - 1].id);
       }

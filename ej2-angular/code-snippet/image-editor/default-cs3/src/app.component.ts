@@ -45,16 +45,16 @@ export class AppComponent {
     }
     rectangleClick(): void {
         let dimension: any = this.imageEditorObj?.getImageDimension();
-        this.imageEditorObj?.drawRectangle(dimension.x, dimension.y, 200, 100);
-        this.imageEditorObj?.drawRectangle(dimension.x + 300, dimension.y, 200, 100, null, '', '', null, null, 8);
+        this.imageEditorObj?.drawRectangle(dimension.x + 10, dimension.y + 60, 150, 70);
+        this.imageEditorObj?.drawRectangle(dimension.x + 250, dimension.y + 60, 150, 700, null, '', '', null, null, 8);
     }
     ellipseClick(): void {
         let dimension: any = this.imageEditorObj?.getImageDimension();
-        this.imageEditorObj?.drawEllipse(dimension.x, dimension.y);
+        this.imageEditorObj?.drawEllipse(dimension.x, dimension.y + 200);
     }
     lineClick(): void {
       let dimension: any = this.imageEditorObj?.getImageDimension();
-      this.imageEditorObj?.drawLine(dimension.x, dimension.y);
+      this.imageEditorObj?.drawLine(dimension.x+300, dimension.y+300);
     }
     pathClick(): void {
       let dimension: any = this.imageEditorObj?.getImageDimension();
@@ -62,7 +62,7 @@ export class AppComponent {
     }
     arrowClick(): void {
       let dimension: any = this.imageEditorObj?.getImageDimension();
-      this.imageEditorObj?.drawArrow(dimension.x, dimension.y+10, dimension.x+50, dimension.y+10, 10);
+      this.imageEditorObj?.drawArrow(dimension.x + 100, dimension.y + 30, dimension.x + 100, dimension.y+10, 10);
     }
 }
 

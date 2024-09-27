@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
+import { AnnotationConstraints, DiagramModule, OrthogonalSegmentModel, PointModel } from '@syncfusion/ej2-angular-diagrams'
 
 
 
@@ -17,12 +17,12 @@ standalone: true,
     selector: "app-container",
     template: `<ejs-diagram #diagram id="diagram" width="900px" height="500px" [getNodeDefaults]  ='getNodeDefaults' >
           <e-nodes>
-            <e-node id='node1' [offsetX]=250 [offsetY]=250 >
+            <e-node id='node1' [offsetX]=250 [offsetY]=150 >
             <e-node-annotations>
                     <e-node-annotation
-                    id= 'label1' content="Annotation"
-                    tooltip = "tooltip1"
-                    constraints = "constraints1"
+                    id= 'label1' content="Rectangle"
+                    [tooltip] = "tooltip1"
+                    [constraints] = "constraints1"
                     >
                     </e-node-annotation>
             </e-node-annotations>

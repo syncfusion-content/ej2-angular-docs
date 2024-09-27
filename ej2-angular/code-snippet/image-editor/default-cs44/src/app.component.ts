@@ -45,7 +45,7 @@ import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
           canvas.height = imageData.height;
           ctx.putImageData(imageData, 0, 0);
           canvas.toBlob((blob) =>{
-              this.blobUrl = URL.createObjectURL(blob);// For getting blob.
+              this.blobUrl = URL.createObjectURL(blob as any);// For getting blob.
           });
       }
       setImage(): void {
