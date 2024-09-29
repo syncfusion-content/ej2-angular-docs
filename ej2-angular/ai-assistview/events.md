@@ -26,8 +26,6 @@ The AI AssistView component triggers the [created](../api/ai-assist-view#created
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/ai-assistview/events/created" %}
-
 ## promptRequest
 
 The [promptRequest](../api/ai-assist-view#promptrequest) event is triggered when the prompt request is made in the AI AssistView component.
@@ -42,8 +40,6 @@ The [promptRequest](../api/ai-assist-view#promptrequest) event is triggered when
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/ai-assistview/events/promptRequest" %}
-
 ## promptChanged
 
 The [promptChanged](../api/ai-assist-view#promptchanged) event is triggered when the prompt text is changed in the AI AssistView component.
@@ -57,5 +53,3 @@ The [promptChanged](../api/ai-assist-view#promptchanged) event is triggered when
 {% include code-snippet/ai-assistview/events/promptChanged/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-
-{% previewsample "page.domainurl/samples/ai-assistview/events/promptChanged" %}
