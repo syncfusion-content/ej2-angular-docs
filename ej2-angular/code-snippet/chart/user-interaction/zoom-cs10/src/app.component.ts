@@ -39,11 +39,11 @@ border: any;
             valueType: 'DateTime',
             labelFormat: 'yMMM',
             zoomFactor: 0.2, zoomPosition: 0.6,
-            enableAnimation: true
         };
         this.zoom = {
             enableSelectionZooming: true,
-            enablePan: true
+            enablePan: true,
+            enableAnimation: true
         };
         this.animation = { enable: false};
         this.legend = { visible: false };
