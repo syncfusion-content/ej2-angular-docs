@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
 import { PieSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationAnnotationService,
@@ -17,7 +17,7 @@ providers: [PieSeriesService, AccumulationLegendService, AccumulationTooltipServ
      AccumulationAnnotationService, AccumulationChartComponent],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings'>
+    template: `<ejs-accumulationchart #chart id="chart-container" [legendSettings]='legendSettings'>
         <e-accumulation-series-collection>
             <e-accumulation-series [dataSource]='piedata' xName='x' yName='y'  legendShape='Rectangle'></e-accumulation-series>
         </e-accumulation-series-collection>
@@ -25,6 +25,7 @@ standalone: true,
     <button ej-button id='add' (click)='click()'>Add Point</button>`
 })
 export class AppComponent implements OnInit {
+    @ViewChild('chart')
     public chart?: AccumulationChartComponent;
     public piedata?: Object[];
     public legendSettings?: Object;
@@ -35,7 +36,7 @@ export class AppComponent implements OnInit {
         this.piedata = pieData;
     }
     click() {
-        this.chart?.series[0].addPoint({ x: 'Dec', y: 15 });
+        (this.chart as any).series[0].addPoint({ x: 'Dec', y: 15 });
       }
 }
 

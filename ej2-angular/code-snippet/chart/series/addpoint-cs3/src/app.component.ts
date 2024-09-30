@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core'
+import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
 import { PieSeriesService, AccumulationLegendService, AccumulationTooltipService, AccumulationAnnotationService,
@@ -17,7 +17,7 @@ providers: [PieSeriesService, AccumulationLegendService, AccumulationTooltipServ
      AccumulationAnnotationService, AccumulationChartComponent],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-accumulationchart id="chart-container" [legendSettings]='legendSettings'>
+    template: `<ejs-accumulationchart #chart id="chart-container" [legendSettings]='legendSettings'>
         <e-accumulation-series-collection>
             <e-accumulation-series [dataSource]='piedata' xName='x' yName='y'  legendShape='Rectangle'></e-accumulation-series>
         </e-accumulation-series-collection>
@@ -25,6 +25,7 @@ standalone: true,
     <button ej-button id='add' (click)='click()'>Update Data</button>`
 })
 export class AppComponent implements OnInit {
+    @ViewChild('chart')
     public chart?: AccumulationChartComponent;
     public piedata?: Object[];
     public legendSettings?: Object;
@@ -38,13 +39,15 @@ export class AppComponent implements OnInit {
         this.piedata = pieData;
     }
     click() {
-        const newData = (this.chart.series[0].dataSource as Object[]).map((item: { x: string, y: number }) => {
-            const value: number = this.getRandomInt(10, 90);
-            return { x: item.x, y: value };
-        });
-        if (this.chart.series.length > 0) {
-            this.chart.series[0].setData(newData, 500);
-        }
+        const newData = [
+            { x: 'Jan', y: 3 },
+            { x: 'Feb', y: 3.5 },
+            { x: 'Mar', y: 7 },
+            { x: 'Aug', y: 25 },
+            { x: 'Sep', y: 21 },
+            { x: 'Oct', y: 15 },
+          ];
+        (this.chart as any).series[0].setData(newData, 500);
       }
 }
 
