@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
+import { TimelineModule, TimelineAllModule } from '@syncfusion/ej2-angular-layouts'
 
 
 import { Component } from '@angular/core';
