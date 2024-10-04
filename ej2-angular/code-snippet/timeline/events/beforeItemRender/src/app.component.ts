@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 
 
 import { Component } from '@angular/core';
-import { TimelineItemModel, TimelineRenderingEventArgs } from "@syncfusion/ej2-angular-layouts";
+import { TimelineItemModel, TimelineRenderingEventArgs, TimelineModule, TimelineAllModule } from "@syncfusion/ej2-angular-layouts";
 
 @Component({
 imports: [ TimelineModule, TimelineAllModule ],
