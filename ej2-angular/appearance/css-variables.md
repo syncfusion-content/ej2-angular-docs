@@ -120,7 +120,7 @@ Example for `Bootstrap 5.3` customization using CSS class.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/common/Bootstrap5.3-cs2" %}
+{% previewsample "page.domainurl/samples/common/bootstrap5.3-cs2" %}
 
 **Default Bootstrap 5.3 primary value**
 
