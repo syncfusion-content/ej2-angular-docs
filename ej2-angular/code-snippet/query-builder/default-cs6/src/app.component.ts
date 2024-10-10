@@ -43,6 +43,10 @@ L10n.load({
             'ValidationMessage': 'Dieses Feld wird benötigt',
             'True': 'Wahr',
             'False': 'Falsch',
+            'IsEmpty': 'Ist leer',
+            'IsNotEmpty': 'Ist nicht leer',
+            'IsNull': 'Ist Null',
+            'IsNotNull': 'Ist nicht Null'
         }
     }
 });
