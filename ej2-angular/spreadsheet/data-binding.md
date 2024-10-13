@@ -154,6 +154,26 @@ The following table defines the arguments of the `dataSourceChanged` event.
   
 {% previewsample "page.domainurl/samples/spreadsheet/dynamic-data-binding-cs1" %}
 
+## Dynamic data binding using updateRange method
+
+The [updateRange](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#updaterange) method allows you to dynamically update the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/rangeModel/#datasource) in a spreadsheet without manually iterating through each cell. This method is especially useful for efficiently applying bulk updates to a specific range within the spreadsheet.
+
+To use the [updateRange](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#updaterange) method, provide the new [dataSource](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/rangeModel/#datasource) and specify the starting cell for the update using the [startCell](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/rangeModel/#startcell) property of the `RangeDirective`. Additionally, set the `sheetIndex` to target the appropriate sheet for the update.
+
+The following code example demonstrates how to dynamically update data using the [updateRange](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#updaterange) method.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/dynamic-data-binding-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/dynamic-data-binding-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/spreadsheet/dynamic-data-binding-cs2" %}
+
 ## Note
 
 You can refer to our [Angular Spreadsheet](https://www.syncfusion.com/angular-ui-components/angular-spreadsheet) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Spreadsheet example](https://ej2.syncfusion.com/angular/demos/#/material/spreadsheet/default) to knows how to present and manipulate data.
