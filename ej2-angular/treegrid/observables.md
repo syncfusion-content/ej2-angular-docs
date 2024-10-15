@@ -66,34 +66,48 @@ export class AppComponent implements OnInit {
 ```
 
 ```
-import { DataManager, Query, } from '@syncfusion/ej2-data';
-import { Http } from '@angular/http';
+import { DataManager, DataResult, Query } from '@syncfusion/ej2-data';
 import { Injectable } from '@angular/core';
 import { DataStateChangeEventArgs } from '@syncfusion/ej2-angular-treegrid';
-import { Subject } from 'rxjs/Subject';
-import { Observable } from 'rxjs/Observable';
+import { Subject } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class DataService extends Subject<Object> {
 
   private BASE_URL = '/api/tasks';  //// provide the service url required to fetch data from server  
 
-  constructor(private http: Http) {
+   constructor(private http: HttpClient) {
     super();
+  }
+  private applyPaging(query: Query, state: any) {
+    // Check if both 'take' and 'skip' values are available
+    if (state.take && state.skip) {
+      // Calculate pageSkip and pageTake values to get pageIndex and pageSize
+      const pageSkip = state.skip / state.take + 1;
+      const pageTake = state.take;
+      query.page(pageSkip, pageTake);
+    }
+    // If if only 'take' is available and 'skip' is 0, apply paging for the first page.
+    else if (state.skip === 0 && state.take) {
+      query.page(1, state.take);
+    }
   }
 
   public getData(state: DataStateChangeEventArgs): Observable<DataStateChangeEventArgs> {
-    const pageQuery = `$skip=${state.skip}&$top=${state.take}`;
-
-      /// filter query for fetching only the root level records
-    const treegridQuery = "$filter='ParentId eq null'";
-    return this.http
-      .get(`${this.BASE_URL}?${pageQuery}&${treegridQuery}&$inlinecount=allpages&$format=json`)
-      .map((response: any) => response.json())
-      .map((response: any) => (<DataResult>{
-                result: response['d']['results'],
-                count: parseInt(response['d']['__count'], 10)
-            }))
-      .map((data: any) => data);
+   const query = new Query();
+    // paging
+    this.applyPaging(query, state);
+    return this.http.get(`${this.BASE_URL}`).pipe(
+      map((response: any[]) => {
+        const currentResult: any = new DataManager(response).executeLocal(
+          query
+        );
+       return {
+          result: currentResult,
+          count: response.length,
+        };
+      }))
   }
   public execute(state: DataStateChangeEventArgs): void {
     this.getData(state).subscribe(x => {

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Events
+# Events in Angular Ribbon component
 
 This section describes the ribbon events that will be triggered when appropriate actions are performed. The following events are available in the ribbon component.
 
@@ -199,6 +199,54 @@ export class AppComponent {
     public launchClick(args: LauncherClickEventArgs) {
         // Your required actions here
     }
+}
+```
+
+## overflowPopupOpen
+
+The [overflowPopupOpen](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#overflowpopupopen) event is triggered while opening the overflow popup.
+
+## overflowPopupClose
+
+The [overflowPopupClose](https://ej2.syncfusion.com/angular/documentation/api/ribbon/#overflowpopupclose) event is triggered while closing the overflow popup.
+
+The following code example demonstrates the ribbon rendered with `overflowPopupOpen` and `overflowPopupClose` events.
+
+```javascript
+import { Component } from "@angular/core";
+import { RibbonButtonSettingsModel, RibbonItemSize, OverflowPopupEventArgs } from '@syncfusion/ej2-angular-ribbon';
+
+@Component({
+  selector: "app-root",
+  template: `<!-- To Render Ribbon. -->
+    <ejs-ribbon id="ribbon" activeLayout="Simplified" (overflowPopupOpen)='overFlowPopupOpen($event)' (overflowPopupClose)='overFlowPopupClose($event)'>
+        <e-ribbon-tabs>
+            <e-ribbon-tab header="Home">
+                <e-ribbon-groups>
+                    <e-ribbon-group header="Clipboard">
+                        <e-ribbon-collections>
+                            <e-ribbon-collection>
+                                <e-ribbon-items>
+                                    <e-ribbon-item type="Button" [buttonSettings]="cutButton">
+                                    </e-ribbon-item>
+                                </e-ribbon-items>
+                            </e-ribbon-collection>
+                        </e-ribbon-collections>
+                    </e-ribbon-group>
+                </e-ribbon-groups>
+            </e-ribbon-tab>
+        </e-ribbon-tabs>
+    </ejs-ribbon>`,
+})
+export class AppComponent {
+  public largeSize: RibbonItemSize = RibbonItemSize.Large;
+  public cutButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-cut", content: "Cut" };
+  public overFlowPopupOpen(args: OverflowPopupEventArgs) {
+    // Your required actions here
+  }
+  public overFlowPopupClose(args: OverflowPopupEventArgs) {
+    // Your required actions here
+  }
 }
 ```
 
@@ -1456,7 +1504,7 @@ export class AppComponent {
 
 ### beforeClick
 
-The [beforeClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupButtonItemModel/#beforeclick) event is triggered before selecting a button from the groupbutton items.
+The [beforeClick](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupButtonItemModel/#beforeclick) event is triggered before selecting a button from the GroupButton items.
 
 ```javascript
 
@@ -1517,7 +1565,7 @@ export class AppComponent {
 
 ### click
 
-The [click](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupButtonItemModel/#click) event is triggered when selecting a button from the groupbutton items.
+The [click](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonGroupButtonItemModel/#click) event is triggered when selecting a button from the GroupButton items.
 
 ```javascript
 
