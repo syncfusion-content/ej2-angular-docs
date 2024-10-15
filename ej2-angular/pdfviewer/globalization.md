@@ -39,7 +39,7 @@ The following table shows the default text values used in PDF Viewer in 'en-US' 
 |Zoom Out|Zoom out|
 |Page Thumbnails|Page thumbnails|
 |Bookmarks|Bookmarks|
-|Print|Print file
+|Print|Print file|
 |Password Protected|Password required|
 |Copy|Copy|
 |Text Selection|Text selection tool|
@@ -77,8 +77,187 @@ The following table shows the default text values used in PDF Viewer in 'en-US' 
 |Print text|Print|
 |Search text|Search|
 |Annotation Edit text|Edit Annotation|
+|Line Thickness|Line Thickness|
+|Line Properties|Line Properties|
+|Start Arrow|Start Arrow |
+|End Arrow|End Arrow|
+|Line Style|Line Style|
+|Fill Color|Fill Color|
+|Line Color|Line Color|
+|None|None|
+|Open Arrow|Open Arrow|
+|Closed Arrow|Closed Arrow|
+|Round Arrow|Round Arrow|
+|Square Arrow|Square Arrow|
+|Diamond Arrow|Diamond Arrow|
+|Cut|Cut|
+|Paste|Paste|
+|Delete Context|Delete Context|
+|Properties|Properties|
+|Add Stamp|Add Stamp|
+|Add Shapes|Add Shapes|
+|Stroke edit|Stroke Edit|
+|Change thickness|Change Thickness|
+|Add line|Add Line|
+|Add arrow|Add Arrow|
+|Add rectangle|Add Rectangle|
+|Add circle|Add Circle|
+|Add polygon|Add Polygon|
+|Add Comments|Add Comments|
+|Comments| Comments|
+|No Comments Yet|No Comments Yet|
+|Accepted| Accepted|
+|Completed| Completed|
+|Cancelled| Cancelled|
+|Rejected| Rejected|
+|Leader Length|Leader Length|
+|Scale Ratio|Scale Ratio|
+|Calibrate| Calibrate|
+|Calibrate Distance|Calibrate Distance|
+|Calibrate Perimeter|Calibrate Perimeter|
+|Calibrate Area|Calibrate Area|
+|Calibrate Radius|Calibrate Radius|
+|Calibrate Volume|Calibrate Volume|
+|Depth|Depth|
+|Closed|Closed|
+|Round|Round|
+|Square|Square|
+|Diamond|Diamond|
+|Edit|Edit|
+|Comment|Comment|
+|Comment Panel|Comment Panel|
+|Set Status|Set Status|
+|Post|Post|
+|Page|Page|
+|Add a comment|Add a comment|
+|Add a reply|Add a reply|
+|Import Annotations|Import Annotations|
+|Export Annotations|Export Annotations|
+|Add|Add|
+|Clear|Clear|
+|Bold|Bold|
+|Italic|Italic|
+|Strikethroughs|Strikethroughs|
+|Underlines|Underlines|
+|Superscript|Superscript|
+|Subscript|Subscript|
+|Align left|Align Left|
+|Align right|Align Right|
+|Center|Center|
+|Justify|Justify|
+|Font color|Font Color|
+|Text Align|Text Align|
+|Text Properties|Text Properties|
+|Draw Signature|Draw Signature|
+|Create| Create|
+|Font family|Font Family|
+|Font size|Font Size|
+|Free Text|Free Text|
+|Import Failed|Import Failed|
+|File not found|File Not Found|
+|Export Failed|Export Failed|
+|Dynamic|Dynamic|
+|Standard Business|Standard Business|
+|Sign Here|Sign Here|
+|Custom Stamp|Custom Stamp|
+|InitialFieldDialogHeaderText|Initial Field Dialog Header Text|
+|HandwrittenInitialDialogHeaderText|Handwritten Initial Dialog Header Text|
+|SignatureFieldDialogHeaderText|Signature Field Dialog Header Text|
+|HandwrittenSignatureDialogHeaderText|Handwritten Signature Dialog Header Text|
+|Draw-hand Signature|Draw-hand Signature|
+|Type Signature|Type Signature|
+|Upload Signature|Upload Signature|
+|Browse Signature Image|Browse Signature Image|
+|Save Signature|Save Signature|
+|Save Initial|Save Initial|
+|highlight|highlight|
+|underline|underline|
+|strikethrough|strikethrough|
+|FormDesigner|Form Designer|
+|SubmitForm|Submit Form|
+|Search text|Search Text|
+|Draw Ink|Draw Ink|
+|Revised|Revised|
+|Reviewed|Reviewed|
+|Received|Received|
+|Confidential|Confidential|
+|Approved|Approved|
+|Not Approved|Not Approved|
+|Witness|Witness|
+|Initial Here|Initial Here|
+|Draft|Draft|
+|Final|Final|
+|For Public Release|For Public Release|
+|Not For Public Release|Not For Public Release|
+|For Comment|For Comment|
+|Void|Void|
+|Preliminary Results|Preliminary Results|
+|Information Only|Information Only|
+|Enter Signature as Name|Enter Signature as Name|
+|Textbox|Textbox|
+|Password|Password|
+|Check Box|Check Box|
+|Radio Button|Radio Button|
+|Dropdown|Dropdown|
+|List Box|List Box|
+|Signature|Signature|
+|Delete FormField|Delete FormField|
+|FormDesigner Edit text|Form Designer Edit Text|
+|in|in|
+|m|m|
+|ft_in|ft_in|
+|ft|ft|
+|p|p|
+|cm|cm|
+|mm|mm|
+|pt|pt|
+|cu|cu|
+|sq|sq|
+|General|General|
+|Appearance|Appearance|
+|Options|Options|
+|Textbox Properties|Textbox Properties|
+|Name|Name|
+|Tooltip|Tooltip|
+|Value|Value|
+|Form Field Visibility|Form Field Visibility|
+|Read Only|Read Only|
+|Required|Required|
+|Checked|Checked|
+|Show Printing|Show Printing|
+|Formatting|Formatting|
+|Fill|Fill|
+|Border|Border|
+|Border Color|Border Color|
+|Thickness|Thickness|
+|Max Length|Max Length|
+|List Item|List Item|
+|Export Value|Export Value|
+|Dropdown Item List|Dropdown Item List|
+|List Box Item List|List Box Item List|
+|Delete Item|Delete Item|
+|Up|Up|
+|Down|Down|
+|Multiline|Multiline|
+|Initial|Initial|
+|Export XFDF|Export XFDF|
+|Import XFDF|Import XFDF|
+|Organize Pages|Organize Pages|
+|Insert Right|Insert Right|
+|Insert Left|Insert Left|
+|Total|Total|
+|Pages|Pages|
+|Rotate Right|Rotate Right|
+|Rotate Left|Rotate Left|
+|Delete Page|Delete Page|
+|Delete Pages|Delete Pages|
+|Copy Page|Copy Page|
+|Copy Pages|Copy Pages|
 |Save|Save|
 |Save As|Save As|
+|Select All|Select All|
+|Import Document|Import Document|
+|Match any word|Match any word|
 
 The different locale value for the PDF Viewer can be specified using the locale property.
 
@@ -186,11 +365,10 @@ You have to map the text content based on locale like following script in sample
                         'Match case': 'حالة مباراة',
                         'Apply': 'تطبيق',
                         'GoToPage': 'انتقل إلى صفحة',
-                        // tslint:disable-next-line:max-line-length
                         'No matches': 'انتهى العارض من البحث في المستند. لم يتم العثور على مزيد من التطابقات',
                         'No Text Found': 'لم يتم العثور على نص',
-                        'Undo' : 'فك',
-                        'Redo' : 'فعل ثانية',
+                        'Undo': 'فك',
+                        'Redo': 'فعل ثانية',
                         'Annotation': 'إضافة أو تعديل التعليقات التوضيحية',
                         'Highlight': 'تسليط الضوء على النص',
                         'Underline': 'تسطير النص',
@@ -199,11 +377,11 @@ You have to map the text content based on locale like following script in sample
                         'Opacity': 'غموض',
                         'Color edit': 'غير اللون',
                         'Opacity edit': 'تغيير التعتيم',
-                        'Highlight context': 'تسليط الضوء',
-                        'Underline context': 'أكد',
-                        'Strikethrough context': 'يتوسطه',
+                        'highlight': 'تسليط الضوء',
+                        'underline': 'أكد',
+                        'strikethrough': 'يتوسطه',
                         // tslint:disable-next-line:max-line-length
-                        'Server error': 'خدمة الانترنت لا يستمع. يعتمد قوات الدفاع الشعبي المشاهد على خدمة الويب لجميع ميزاته. يرجى بدء خدمة الويب للمتابعة.'
+                        'Server error': 'خدمة الانترنت لا يستمع. يعتمد قوات الدفاع الشعبي المشاهد على خدمة الويب لجميع ميزاته. يرجى بدء خدمة الويب للمتابعة.',
                         'Open text': 'افتح',
                         'First text': 'الصفحة الأولى',
                         'Previous text': 'الصفحة السابقة',
@@ -214,10 +392,189 @@ You have to map the text content based on locale like following script in sample
                         'Selection text': 'اختيار',
                         'Pan text': 'مقلاة',
                         'Print text': 'طباعة',
-                        'Search text': 'بحث',
+                        'Seach text': 'بحث',
                         'Annotation Edit text': 'تحرير التعليق التوضيحي',
+                        'Line Thickness': 'سمك الخط',
+                        'Line Properties': 'خط الخصائص',
+                        'Start Arrow': 'ابدأ السهم',
+                        'End Arrow': 'نهاية السهم',
+                        'Line Style': 'أسلوب الخط',
+                        'Fill Color': 'ملء اللون',
+                        'Line Color': ' الخط اللون',
+                        'None': 'لا شيء',
+                        'Open Arrow': 'افتح',
+                        'Closed Arrow': 'مغلق',
+                        'Round Arrow': 'مستدير',
+                        'Square Arrow': 'مربع',
+                        'Diamond Arrow': 'الماس',
+                        'Cut': 'يقطع',
+                        'Paste': 'معجون',
+                        'Delete Context': 'حذف',
+                        'Properties': 'الخصائص',
+                        'Add Stamp': 'إضافة الطوابع',
+                        'Add Shapes': 'أضف الأشكال',
+                        'Stroke edit': 'تغيير لون السكتة الدماغية',
+                        'Change thickness': 'تغيير سمك الحدود',
+                        'Add line': 'إضافة خط',
+                        'Add arrow': 'سهم إضافة',
+                        'Add rectangle': 'أضف مستطيل',
+                        'Add circle': 'إضافة دائرة',
+                        'Add polygon': 'أضف مضلع',
+                        'Add Comments': 'أضف تعليقات',
+                        'Comments': 'تعليقات',
+                        'No Comments Yet': 'لا توجد تعليقات حتى الآن',
+                        'Accepted': 'وافقت',
+                        'Completed': 'منجز',
+                        'Cancelled': 'ألغيت',
+                        'Rejected': 'مرفوض',
+                        'Leader Length': 'زعيم الطول',
+                        'Scale Ratio': 'نسبة مقياس',
+                        'Calibrate': 'عاير',
+                        'Calibrate Distance': 'معايرة المسافة',
+                        'Calibrate Perimeter': 'معايرة محيط',
+                        'Calibrate Area': 'عاير منطقة',
+                        'Calibrate Radius': 'معايرة نصف القطر',
+                        'Calibrate Volume': 'معايرة الحجم',
+                        'Depth': 'عمق',
+                        'Closed': 'مغلق',
+                        'Round': 'مستدير',
+                        'Square': 'ميدان',
+                        'Diamond': 'الماس',
+                        'Edit': 'تصحيح',
+                        'Comment': 'تعليقات',
+                        'Comment Panel': 'لوحة التعليقات',
+                        'Set Status': 'تعيين الحالة',
+                        'Post': 'بريد',
+                        'Page': 'صفحة',
+                        'Add a comment': 'أضف تعليق',
+                        'Add a reply': 'أضف رد',
+                        'Import Annotations': 'استيراد التعليقات التوضيحية',
+                        'Export Annotations': 'شروح التصدير',
+                        'Add': 'أضف',
+                        'Clear': 'واضح',
+                        'Bold': 'بالخط العريض',
+                        'Italic': 'مائل',
+                        'Strikethroughs': 'يتوسطه',
+                        'Underlines': 'تحت الخط',
+                        'Superscript': 'حرف فوقي',
+                        'Subscript': 'الفرعية النصي',
+                        'Align left': 'محاذاة اليسار',
+                        'Align right': 'محاذاة اليمين',
+                        'Center': 'مركز',
+                        'Justify': 'برر',
+                        'Font color': 'لون الخط',
+                        'Text Align': 'محاذاة النص',
+                        'Text Properties': 'نوع الخط',
+                        'Draw Signature': 'ارسم التوقيع',
+                        'Create': 'خلق',
+                        'Font family': 'خط العائلة',
+                        'Font size': 'حجم الخط',
+                        'Free Text': 'نص حر',
+                        'Import Failed': 'نوع ملف سلمان أو اسم الملف غير صالح ؛ يرجى تحديد ملف سلمانصالح',
+                        'File not found': 'لم يتم العثور على ملف سلمان المستورد في الموقع المطلوب',
+                        'Export Failed': 'شل إجراء تصدير التعليقات التوضيحية ؛ يرجى التأكد من إضافة التعليقات التوضيحية بشكل صحيح',
+                        'Dynamic': 'متحرك',
+                        'Standard Business': 'الأعمال القياسية',
+                        'Sign Here': 'وقع هنا',
+                        'Custom Stamp': 'ختم مخصص',
+                        'InitialFieldDialogHeaderText': 'إضافة الأولية',
+                        'HandwrittenInitialDialogHeaderText': 'إضافة الأولية',
+                        'SignatureFieldDialogHeaderText': 'أضف التوقيع',
+                        'HandwrittenSignatureDialogHeaderText': 'أضف التوقيع',
+                        'Draw-hand Signature': 'يرسم',
+                        'Type Signature': 'نوع',
+                        'Upload Signature': 'تحميل',
+                        'Browse Signature Image': 'تصفح',
+                        'Save Signature': 'احفظ التوقيع',
+                        'Save Initial': 'حفظ الأولي',
+                        'Highlight context': 'تسليط الضوء',
+                        'Underline context': 'تسطير',
+                        'Strikethrough context': 'يتوسطه خط',
+                        'FormDesigner': 'إضافة وتحرير حقل النموذج',
+                        'SubmitForm': 'تقديم النموذج',
+                        'Search text': 'بحث',
+                        'Draw Ink': 'ارسم الحبر',
+                        'Revised': 'مراجعة',
+                        'Reviewed': 'تمت المراجعة',
+                        'Received': 'تم الاستلام',
+                        'Confidential': 'مؤتمن',
+                        'Approved': 'وافق',
+                        'Not Approved': 'غير مقبول',
+                        'Witness': 'الشاهد',
+                        'Initial Here': 'المبدئي هنا',
+                        'Draft': 'مشروع',
+                        'Final': 'أخير',
+                        'For Public Release': 'للنشر العام',
+                        'Not For Public Release': 'ليس للنشر العام',
+                        'For Comment': 'للتعليق',
+                        'Void': 'فارغ',
+                        'Preliminary Results': 'نتائج اولية',
+                        'Information Only': 'المعلومات فقط',
+                        'Enter Signature as Name': 'أدخل أسمك',
+                        'Textbox': 'مربع الكتابة',
+                        'Password': 'كلمه السر',
+                        'Check Box': 'خانة اختيار',
+                        'Radio Button': 'زر الراديو',
+                        'Dropdown': 'اسقاط',
+                        'List Box': 'مربع القائمة',
+                        'Signature': 'إمضاء',
+                        'Delete FormField': 'حذف حقل النموذج',
+                        'FormDesigner Edit text': 'إضافة وتحرير حقل النموذج',
+                        'in': 'في',
+                        'm': 'م',
+                        'ft_in': 'قدم',
+                        'ft': 'قدم',
+                        'p': 'ص',
+                        'cm': 'سم',
+                        'mm': 'مم',
+                        'pt': 'نقطة',
+                        'cu': 'مكعب',
+                        'sq': 'قدم مربع',
+                        'General': 'جنرال لواء',
+                        'Appearance': 'مظهر خارجي',
+                        'Options': 'والخيارات',
+                        'Textbox Properties': 'خصائص مربع النص',
+                        'Name': 'اسم',
+                        'Tooltip': 'تلميح',
+                        'Value': 'القيمة',
+                        'Form Field Visibility': 'رؤية حقل النموذج',
+                        'Read Only': 'يقرأ فقط',
+                        'Required': 'مطلوب',
+                        'Checked': 'التحقق',
+                        'Show Printing': 'عرض الطباعة',
+                        'Formatting': 'صيغة',
+                        'Fill': 'يملأ',
+                        'Border': 'الحدود',
+                        'Border Color': 'لون الحدود',
+                        'Thickness': 'السماكة',
+                        'Max Length': 'الحد الاقصى للطول',
+                        'List Item': 'اسم العنصر',
+                        'Export Value': 'قيمة البند',
+                        'Dropdown Item List': 'قائمة العناصر المنسدلة',
+                        'List Box Item List': 'قائمة عناصر مربع القائمة',
+                        'Delete Item': 'حذف',
+                        'Up': 'فوق',
+                        'Down': 'تحت',
+                        'Multiline': 'متعدد الأسطر',
+                        'Initial': 'أولي',
+                        'Export XFDF': 'تصدير التعليق التوضيحي إلى ملف XFDF',
+                        'Import XFDF': 'استيراد التعليقات التوضيحية من ملف XFDF',
+                        'Organize Pages': 'تنظيم الصفحات',
+                        'Insert Right': 'أدخل الحق',
+                        'Insert Left': 'أدخل اليسار',
+                        'Total': 'المجموع',
+                        'Pages': 'الصفحات',
+                        'Rotate Right': 'تدوير لليمين',
+                        'Rotate Left': 'استدر يسارا',
+                        'Delete Page': 'حذف الصفحة',
+                        'Delete Pages': 'حذف الصفحات',
+                        'Copy Page': 'انسخ الصفحة',
+                        'Copy Pages': 'نسخ الصفحات',
                         'Save': 'يحفظ',
                         'Save As': 'حفظ باسم',
+                        'Select All': 'اختر الكل',
+                        'Import Document': 'استيراد المستند',
+                        'Match any word': 'تطابق أي كلمة'
                     }
                 }
             });
