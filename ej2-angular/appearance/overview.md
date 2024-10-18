@@ -3026,6 +3026,6 @@ The following list of common variables is used in the Syncfusion Angular library
 
 ## Suggested link
 
-* [Syncfusion icons and Customization](../appearance/icons/)
-* [Theme studio for Syncfusion Component](../appearance/theme-studio/)
-* [Angular with SCSS compilation](../common/how-to/sass/)
+* [Syncfusion icons and Customization](../appearance/icons)
+* [Theme studio for Syncfusion Component](../appearance/theme-studio)
+* [Angular with SCSS compilation](../common/how-to/sass)

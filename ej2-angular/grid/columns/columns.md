@@ -14,7 +14,7 @@ In Syncfusion Angular Grid, Columns are fundamental elements that play a pivotal
 
 ## Column types
 
-The Syncfusion Grid component allows you to specify the type of data that a column binds using the [columns.type](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format), such as [number](../../common/internationalization/#number-formatting) or [date](../../common/internationalization/#manipulating-datetime), for displaying the column data. 
+The Syncfusion Grid component allows you to specify the type of data that a column binds using the [columns.type](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format), such as [number](../../common/internationalization#number-formatting) or [date](../../common/internationalization#manipulating-datetime), for displaying the column data. 
 
 Grid supports the following column types:
 
@@ -597,7 +597,7 @@ let fieldNames = this.grid.getColumnFieldNames()
 
 ### Updating column definitions
 
-You can update the column definitions in the Grid using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column) property. You can modify the properties of the column objects in the columns array to update the columns dynamically. For example, you can change the headerText, width, visible, and other properties of a column to update its appearance and behavior in the grid and then call the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method to apply the changes to the grid.
+You can update the column definitions in the Grid using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column/) property. You can modify the properties of the column objects in the columns array to update the columns dynamically. For example, you can change the headerText, width, visible, and other properties of a column to update its appearance and behavior in the grid and then call the [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid/#refreshcolumns) method to apply the changes to the grid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -613,7 +613,7 @@ You can update the column definitions in the Grid using the [columns](https://ej
 
 ### Adding/Removing Columns
 
-The Grid component allows you to dynamically add or remove columns to and from the grid using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column) property, which can be accessed through the instance of the Grid.
+The Grid component allows you to dynamically add or remove columns to and from the grid using the [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/column/) property, which can be accessed through the instance of the Grid.
 
 To add a new column to the Grid, you can directly **push** the new column object to the columns property.To remove a column from the Grid, you can use the **pop** method, which removes the last element from the columns array of the Grid. Alternatively, you can use the splice method to remove a specific column from the columns array.
 

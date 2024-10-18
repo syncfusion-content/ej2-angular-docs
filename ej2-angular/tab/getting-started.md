@@ -270,7 +270,7 @@ You need to follow the below structure of HTML elements to render the Tab,
   
 {% previewsample "page.domainurl/samples/tab/tab-container-cs1" %}
 
-> You can refer to our [Angular Tab](https://www.syncfusion.com/angular-ui-components/angular-tabs) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Tab example](https://ej2.syncfusion.com/angular/demos/#/material/tab/default) that shows you how to render the Tabs in Angular.
+> You can refer to our [Angular Tab](https://www.syncfusion.com/angular-components/angular-tabs) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Tab example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/tab/default) that shows you how to render the Tabs in Angular.
 
 ## See Also
 

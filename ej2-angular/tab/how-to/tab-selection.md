@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Tab selection in Angular Tab component
 
-We can able to find the tab selection whether it is selected by user interaction or programmatically way in the [`selecting`](https://ej2.syncfusion.com/angular/documentation/api/tab#selecting) and [`selected`](https://ej2.syncfusion.com/angular/documentation/api/tab#selected) event argument with the field of `isInteracted`. When the user changes the tab through click actions it will return true otherwise, it will return false. The following code example depicts to find the tab selecting the state in selecting and selected events.
+We can able to find the tab selection whether it is selected by user interaction or programmatically way in the [`selecting`](https://ej2.syncfusion.com/angular/documentation/api/tab/#selecting) and [`selected`](https://ej2.syncfusion.com/angular/documentation/api/tab/#selected) event argument with the field of `isInteracted`. When the user changes the tab through click actions it will return true otherwise, it will return false. The following code example depicts to find the tab selecting the state in selecting and selected events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
