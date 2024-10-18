@@ -116,9 +116,9 @@ The following example demonstrates how to enable the toggle selection for both c
 
 The clear selection programmatically feature is particularly useful when you need to remove the selected rows or cells or columns from the Grid component.
 
-To clear the selection in the component programmatically, you can use the [clearSelection](https://ej2.syncfusion.com/angular/documentation/api-grid.html#clearSelection)  method. 
+To clear the selection in the component programmatically, you can use the [clearSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#clearselection)  method. 
 
-In the following example, it demonstrates how to clear all selection by calling the [clearSelection](https://ej2.syncfusion.com/angular/documentation/api-grid.html#clearSelection) method in the button click event.
+In the following example, it demonstrates how to clear all selection by calling the [clearSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selection/#clearselection) method in the button click event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
