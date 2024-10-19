@@ -1,12 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, UndoRedoService } from '@syncfusion/ej2-angular-diagrams'
-
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
-import { DiagramComponent, Diagram, NodeModel, HistoryEntry, ShapeStyleModel } from "@syncfusion/ej2-angular-diagrams";
+import { DiagramModule, UndoRedoService, DiagramComponent, Diagram, HistoryEntry } from "@syncfusion/ej2-angular-diagrams";
 @Component({
 imports: [
          DiagramModule
@@ -15,9 +8,9 @@ imports: [
 providers: [UndoRedoService],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram  #diagram id="diagram" width="100%" height="580px" [getNodeDefaults]='getNodeDefaults' (created)='created($event)'>
+    template: `<ejs-diagram  #diagram id="diagram" width="100%" height="580px" (created)='created($event)'>
         <e-nodes>
-            <e-node id='node1' [offsetX]=150 [offsetY]=150>
+            <e-node id='node1' [offsetX]=150 [offsetY]=150 [width]=100 [height]=100>
             </e-node>
         </e-nodes>
     </ejs-diagram>`,
@@ -26,16 +19,9 @@ standalone: true,
 export class AppComponent {
   @ViewChild("diagram")
     public diagram?: DiagramComponent;
-    public getNodeDefaults(node: NodeModel): NodeModel {
-        node.height = 100;
-        node.width = 100;
-        ((node as NodeModel).style as ShapeStyleModel).fill = '#6BA5D7';
-        ((node as NodeModel).style as ShapeStyleModel).strokeColor = 'white';
-        return node;
-    };
     public created(args: Object): void {
         // canLog decide whether the entry add or not in history List
-        (this.diagram as Diagram | any).historyList.canLog = function(entry: HistoryEntry) {
+        (this.diagram as Diagram | any).historyManager.canLog = function(entry: HistoryEntry) {
             entry.cancel = true;
             return entry;
         }

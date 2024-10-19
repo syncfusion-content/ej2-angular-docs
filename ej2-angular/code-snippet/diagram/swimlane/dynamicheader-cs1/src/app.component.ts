@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, SwimLaneModel,Diagram, NodeModel,Node, LaneModel,HeaderModel, ShapeModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, DiagramModule, Diagram, NodeModel, ShapeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -15,8 +9,9 @@ imports: [
 providers: [ ],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [nodes]="nodes" (created)='created($event)'>
-    </ejs-diagram>`,
+    template: `<button (click)="updateHeaderStyle()">UpdateHeaderStyle</button><ejs-diagram #diagram id="diagram" width="100%" height="580px" [nodes]="nodes" >
+    </ejs-diagram>
+    `,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
@@ -50,10 +45,10 @@ export class AppComponent {
       ]
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
-     public created(args: Object): void { 
-        ((this.diagram as Diagram).nodes[0].shape as ShapeModel | any).header.style.fill = 'red';
-        (this.diagram as Diagram).dataBind();
+     public updateHeaderStyle(): void {
+        if (this.diagram && this.diagram.nodes.length > 0) {
+            ((this.diagram as Diagram).nodes[0].shape as ShapeModel | any).header.style.fill = 'red';
+            (this.diagram as Diagram).dataBind();
+        }
     }
 }
-
-

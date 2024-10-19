@@ -1,12 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { Diagram, NodeModel, HtmlModel, TextStyleModel } from '@syncfusion/ej2-diagrams';
-import { DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
+import { HtmlModel } from '@syncfusion/ej2-diagrams';
+import { DiagramModule, DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
 
 
 @Component({
@@ -18,9 +12,9 @@ providers: [ ],
 standalone: true,
     selector: "app-container",
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" >
-    <ng-template #nodeTemplate let-data >
-        <ng-container *ngIf="data.id == 'Node'">
-            <input type = "button" value= {{data.id}} >
+        <ng-template #nodeTemplate let-data >
+        <ng-container>
+            <div style="background:#6BA5D7;height:100%;width:100%;"><button type="button" style="width:100px"> Button</button></div>
         </ng-container>
         </ng-template>
         <e-nodes>

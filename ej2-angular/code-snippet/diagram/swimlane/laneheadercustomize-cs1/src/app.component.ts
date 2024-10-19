@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, SwimLaneModel,Diagram, NodeModel,Node, LaneModel,HeaderModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, DiagramModule, NodeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -27,20 +21,22 @@ export class AppComponent {
                 orientation: 'Horizontal',
                 //Intialize header to swimlane
                 header: {
-                    annotation: { content: 'ONLINE PURCHASE STATUS', style: { fill: 'pink' } },
+                    annotation: { content: 'ONLINE PURCHASE STATUS' },
                     height: 50, style: { fontSize: 11 },
                 },
                 lanes: [
                     {
-                        id: 'stackCanvas1',
-                        height: 100,
-                        // customization of lane header
-                        header: {
-                            annotation: { content: 'Online Consumer' }, width: 30,
-                            style: { fontSize: 11, fill: 'red'  }
-                        }
-                    }
-                ],
+                      id: 'stackCanvas1',
+                      height: 100,
+                      // customization of lane header
+                      header: {
+                        annotation: { content: 'Online Consumer', style: { fill: 'white', color: 'red' } },
+                        width: 30,
+                        style: { fontSize: 11, fill: 'red' },
+                      },
+                      style: { fill: 'violet' },
+                    },
+                  ],
                 phases: [{
                     id: 'phase1', offset: 170,
                         header: { annotation: { content: 'Phase' } }
@@ -56,5 +52,3 @@ export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;  
 }
-
-

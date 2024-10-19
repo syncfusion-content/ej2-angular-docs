@@ -1,80 +1,101 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, SwimLaneModel,Diagram, NodeModel,Node, LaneModel,HeaderModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel,DiagramModule, ShapeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
-imports: [
-         DiagramModule
+    imports: [
+        DiagramModule
     ],
-
-providers: [ ],
-standalone: true,
+    providers: [],
+    standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [nodes]="nodes" (created)='created($event)'>
-    </ejs-diagram>`,
+    template: `
+        <button (click)="addPhase()">addPhase</button>
+        <button (click)="removePhase()">removePhase</button>
+        <ejs-diagram #diagram id="diagram" width="100%" height="600px" [nodes]="nodes"></ejs-diagram>
+       
+    `,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-      public nodes: NodeModel[] = [
+    public nodes: NodeModel[] = [
         {
-            id: 'swimlane',
+            id: 'swim1',
             shape: {
                 type: 'SwimLane',
                 orientation: 'Horizontal',
                 header: {
-                    annotation: { content: 'ONLINE PURCHASE STATUS', style: { fill: 'pink' } },
-                    height: 50, style: { fontSize: 11 },
+                    annotation: {
+                        content: 'ONLINE PURCHASE STATUS',
+                    },
+                    height: 50,
+                    style: { fontSize: 11 },
                 },
-               lanes: [
+                lanes: [
                     {
                         id: 'stackCanvas1',
                         height: 100,
                         header: {
-                            annotation: { content: 'CUSTOMER' }, width: 50,
-                            style: { fontSize: 11 }
+                            annotation: { content: 'CUSTOMER' },
+                            width: 50,
+                            style: { fontSize: 11 },
                         },
-                          children: [
-                            {
-                                id: 'Order',
-                                margin: { left: 60, top: 20 },
-                                height: 40, width: 100
-                            }
-                        ],
                     },
-
                 ],
-               // Set phase to swimlane
-             phases: [
-                 {
-                     id: 'phase1', offset: 120,
-                     header: { annotation: { content: 'Phase' } }
-                 },{
-                    id: 'phase2', offset: 200,
-                    header: { annotation: { content: 'Phase' } }
-                },
-                 ],
+                phases: [
+                    {
+                        id: 'phase1',
+                        offset: 120,
+                        header: { annotation: { content: 'Phase' } },
+                    },
+                    {
+                        id: 'phase2',
+                        offset: 200,
+                        header: { annotation: { content: 'Phase' } },
+                    },
+                ],
                 phaseSize: 20,
             },
-            offsetX: 420, offsetY: 270,
-            height: 100,
-            width: 650
+            offsetX: 300,
+            offsetY: 200,
+            height: 200,
+            width: 350,
         },
-      ]
+    ];
+
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
-    public created(args: Object): void {
-        let phase = [{
-            id: 'phase3', offset: 220,
-            header: { annotation: { content: 'Phase' } }
-        }] as any
-        (this.diagram as Diagram).addPhases((this.diagram as Diagram).nodes[0],phase);
-        (this.diagram as Diagram).dataBind();
+
+    public addPhase(): void {
+        let swimlane = this.diagram?.getObject('swim1');
+        const newPhase = [
+            {
+                id: 'phase3',
+                offset: 250,
+                header: { annotation: { content: 'New Phase' } },
+            },
+        ];
+        if (swimlane) {
+            /**
+             * To add phases
+             * parameter 1 - object representing the swimlane to which phases will be added.
+             * parameter 2 - objects representing the phases to be added.
+             */
+            (this.diagram as Diagram).addPhases(swimlane, newPhase);
+        }
+    }
+
+    public removePhase(): void {
+        let swimlane:NodeModel = (this.diagram as Diagram).getObject('swim1');
+        if (swimlane) {
+            let phase = ((swimlane.shape) as ShapeModel | any).phases[
+                ((swimlane.shape) as ShapeModel | any).phases.length - 1
+            ];
+            /**
+             * To remove phase
+             * parameter 1 - representing the swimlane to remove the phase from.
+             * paramter 2 - representing the phase to be removed.
+             */
+            (this.diagram as Diagram).removePhase(swimlane, phase);
+        }
     }
 }
-
-

@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, SymbolPaletteModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
-import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
- import { SymbolPaletteComponent, SymbolPalette, SymbolPreviewModel, NodeModel, ConnectorModel, PaletteModel, SwimLaneModel, LaneModel, HeaderModel, MarginModel, ExpandTool, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { SymbolPreviewModel,  DiagramModule, SymbolPaletteModule, NodeModel, PaletteModel, MarginModel, ExpandTool, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [

@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, SwimLaneModel,Diagram, NodeModel,Node, LaneModel,HeaderModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, DiagramModule, Diagram, NodeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -15,7 +9,7 @@ imports: [
 providers: [ ],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [nodes]="nodes" (created)='created($event)'>
+    template: `<button (click) = "updateLane()">updateLane</button><ejs-diagram #diagram id="diagram" width="100%" height="580px" [nodes]="nodes" >
     </ejs-diagram>`,
     encapsulation: ViewEncapsulation.None
 })
@@ -27,7 +21,7 @@ export class AppComponent {
                 orientation: 'Horizontal',
                 //Intialize header to swimlane
                 header: {
-                    annotation: { content: 'ONLINE PURCHASE STATUS', style: { fill: 'pink' } },
+                    annotation: { content: 'ONLINE PURCHASE STATUS' },
                     height: 50, style: { fontSize: 11 },
                 },
                 lanes: [
@@ -55,11 +49,10 @@ export class AppComponent {
       ]
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
-    public created(args: Object): void {
-        // Update the connector properties at the run time
+    public updateLane(): void
+    {
         ((this.diagram as Diagram).nodes[0].shape as any).lanes[0].header.style.fill = 'blue';
+        ((this.diagram as Diagram).nodes[0].shape as any).lanes[0].header.annotation.style.color = 'white';
         (this.diagram as Diagram).dataBind();
     }
 }
-
-
