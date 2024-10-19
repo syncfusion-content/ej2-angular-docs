@@ -1,0 +1,35 @@
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { DiagramModule, DiagramComponent, PointModel } from '@syncfusion/ej2-angular-diagrams';
+
+@Component({
+imports: [
+         DiagramModule
+    ],
+
+providers: [ ],
+standalone: true,
+    selector: "app-container",
+    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" >
+        <e-connectors>
+            <e-connector id='connector' [sourcePoint]='sourcePoint1' [targetPoint]='targetPoint1'>
+                <e-connector-annotations>
+                    <e-connector-annotation content='Annotation' offset='0.2'>
+                    </e-connector-annotation>
+                </e-connector-annotations>
+            </e-connector>
+        </e-connectors>
+    </ejs-diagram>`,
+    encapsulation: ViewEncapsulation.None
+})
+export class AppComponent {
+    @ViewChild("diagram")
+    public diagram?: DiagramComponent;
+    public sourcePoint1?: PointModel;
+    public targetPoint1?: PointModel;
+    ngOnInit(): void {
+        this.sourcePoint1 = { x: 300, y: 100 };
+        this.targetPoint1 = { x: 400, y: 200 };
+    }
+}
+
+

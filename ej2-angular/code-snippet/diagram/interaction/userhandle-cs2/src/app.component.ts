@@ -1,81 +1,60 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, SelectorModel, IElement, randomId, cloneObject, UserHandleModel, SelectorConstraints, ToolBase, NodeModel, Diagram, MoveTool, ShapeStyleModel, MouseEventArgs, ConnectorModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, UserHandleModel, SelectorModel, DiagramModule, UserHandleEventsArgs } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
-imports: [
-         DiagramModule
+    imports: [
+        DiagramModule
     ],
+    providers: [ ],
+    standalone: true,
+    selector: 'app-container',
 
-providers: [ ],
-standalone: true,
-  selector: "app-container",
-  template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults]='getNodeDefaults' [getCustomTool]='getCustomTool' [selectedItems]='selectedItems'>
-        <e-nodes>
-            <e-node id='node1' [offsetX]=150 [offsetY]=150></e-node>
-        </e-nodes>
-    </ejs-diagram>`,
-  encapsulation: ViewEncapsulation.None
+  template: `
+    <ejs-diagram #diagram id="diagram" width="100%" height="600px" [selectedItems]='selectedItems' (onUserHandleMouseDown) = "onUserHandleMouseDown($event)">
+      <e-nodes>
+        <e-node id='node1' [offsetX]=200 [offsetY]=200 [height]=100 [width]= 100 ></e-node>
+      </e-nodes>
+    </ejs-diagram>
+  `,
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-  @ViewChild("diagram")
-  public diagram?: DiagramComponent;
+  @ViewChild('diagram')
+   public diagram?: DiagramComponent;
 
-  public handles: UserHandleModel[] = [
+  public userHandles: UserHandleModel[] = [
     {
-      name: "clone",
-      pathData: "M60.3,18H27.5c-3,0-5.5,2.4-5.5,5.5v38.2h5.5V23.5h32.7V18z M68.5, 28.9h-30c-3, 0-5.5,2.4-5.5,5.5v38.2c0,3,2.4,5.5,5.5,5.5h30c3,0,5.5-2.4,5.5-5.5V34.4C73.9,31.4,71.5,28.9,68.5,28.9z M68.5,72.5h-30V34.4h30V72.5z",
-      visible: true,
-      offset: 0,
-      side: "Bottom",
-      margin: { top: 0, bottom: 0, left: 0, right: 0 }
+        name: 'clone',
+        pathData:
+          'M0,3.42 L1.36,3.42 L1.36,12.39 L9.62,12.39 L9.62,13.75 L1.36,13.75 C0.97,13.75,0.65,13.62,0.39,13.36 C0.13,13.1,0,12.78,0,12.39 Z M4.13,0 L12.39,0 C12.78,0,13.1,0.13,13.36,0.39 C13.62,0.65,13.75,0.97,13.75,1.36 L13.75,9.62 C13.75,10.01,13.62,10.33,13.36,10.6 C13.1,10.87,12.78,11.01,12.39,11.01 L4.13,11.01 C3.72,11.01,3.39,10.87,3.13,10.6 C2.87,10.33,2.74,10.01,2.74,9.62 L2.74,1.36 C2.74,0.97,2.87,0.65,3.13,0.39 C3.39,0.13,3.72,0,4.13,0 Z ',
+        offset: 1,
+        //Sets the border width of user handle
+        borderWidth: 5,
+        //Sets the border color of user handle
+        borderColor: '#64Abbb',
+        //Sets the background color of user handle
+        backgroundColor: 'yellow',
+        //Sets the path data color of user handle
+        pathColor: 'green',
+        //Sets the size of user handle
+        size: 40,
+        //Sets the visibility of user handle
+        visible: true,
+      
     }
   ];
+//Define user handles in selectedItems property
   public selectedItems: SelectorModel = {
-    constraints: SelectorConstraints.UserHandle,
-    userHandles: this.handles
+    userHandles: this.userHandles
   };
-  public getNodeDefaults(node: NodeModel): NodeModel {
-    node.height = 100;
-    node.width = 100;
-    ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
-    ((node as NodeModel).style as ShapeStyleModel).strokeColor = "#6BA5D7";
-    return node;
-  }
-  public getCustomTool: Function = this.getTool.bind(this);
-  public getTool(action: string): ToolBase {
-    let tool: ToolBase = new ToolBase({} as any);
-    if (action === "clone") {
-      let cloneTool: CloneTool = new CloneTool((this.diagram as Diagram).commandHandler);
-      (cloneTool as CloneTool).diagram = this.diagram as Diagram;
-      return cloneTool;
-    }
-    return tool;
-  }
+
+  public onUserHandleMouseDown(args: UserHandleEventsArgs)
+  {
+    if (args.element) {
+        //To clone the selected node
+        (this.diagram as DiagramComponent).copy();
+        (this.diagram as DiagramComponent).paste();
+      }
+  };
+
 }
-
-//Defines the clone tool used to copy Node/Connector.
-class CloneTool extends MoveTool {
-  public diagram?: Diagram = undefined;
-  public override mouseDown(args: MouseEventArgs): void {
-    let newObject: NodeModel | ConnectorModel;
-    if ((((this.diagram as Diagram).selectedItems as SelectorModel).nodes as NodeModel[]).length > 0) {
-      newObject = cloneObject((((this.diagram as Diagram).selectedItems as SelectorModel).nodes as NodeModel[])[0]) as NodeModel;
-    } else {
-      newObject = cloneObject((((this.diagram as Diagram).selectedItems as SelectorModel).connectors as ConnectorModel[])[0]) as ConnectorModel;
-    }
-    newObject.id += randomId();
-    (this.diagram as Diagram).paste([newObject]);
-    args.source = (this.diagram as Diagram).nodes[(this.diagram as Diagram).nodes.length - 1] as IElement;
-    args.sourceWrapper = args.source.wrapper;
-    super.mouseDown(args);
-    this.inAction = true;
-  }
-}
-
-

@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ShapeStyleModel, MarginModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, NodeModel, ShapeStyleModel, MarginModel, DiagramModule, FixedUserHandleClickEventArgs } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -15,11 +9,11 @@ imports: [
 providers: [ ],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults'>
+    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" (fixedUserHandleClick) = "fixedUserHandleClick($event)">
         <e-nodes>
-            <e-node id='node1' [offsetX]=150 [offsetY]=150>
+            <e-node id='node1' [height]=100 [width]= 100 [offsetX]=250 [offsetY]=250 >
                        <e-node-fixeduserhandles>
-                                <e-node-fixeduserhandle [margin]='margin1' pathData='M60.3,18H27.5c-3,0-5.5,2.4-5.5,5.5v38.2h5.5V23.5h32.7V18z M68.5,28.9h-30c-3,0-5.5,2.4-5.5,5.5v38.2c0,3,2.4,5.5,5.5,5.5h30c3,0,5.5-2.4,5.5-5.5V34.4C73.9,31.4,71.5,28.9,68.5,28.9z M68.5,72.5h-30V34.4h30V72.5z'>
+                                <e-node-fixeduserhandle  id = 'color'[margin]='margin1' [width] = 20 [height] = 20 pathData= 'M31.5,13.5 C31.5,20.95,24.44,27,15.75,27 C7.059999999999999,27,0,20.95,0,13.5 C0,6.050000000000001,7.06,0,15.75,0 C24.44,0,31.5,6.05,31.5,13.5 Z M13.12,4.5 L13.12,11.25 L5.25,11.25 L5.25,15.75 L13.12,15.75 L13.12,22.5 L18.38,22.5 L18.38,15.75 L26.25,15.75 L26.25,11.25 L18.38,11.25 L18.38,4.5 Z '>
                                 </e-node-fixeduserhandle>
                         </e-node-fixeduserhandles>
         </e-node>
@@ -34,14 +28,12 @@ export class AppComponent {
         this.margin1 = { right: 20 };
     }
     public diagram?: DiagramComponent;
-    public getNodeDefaults(node: NodeModel): NodeModel {
-        node.height = 100;
-        node.width = 100;
-        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
-        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
-        return node;
-    }
+    public fixedUserHandleClick(args: FixedUserHandleClickEventArgs)
+    {
+      if (args.element) {
+        let node = args.element;
+        ((node as NodeModel).style as ShapeStyleModel).fill = ((node as NodeModel).style as ShapeStyleModel).fill === '#64A6' ? '#64Abbb' : '#64A6';
+        this.diagram?.dataBind();
+        }
+    };
 }
-
-
-

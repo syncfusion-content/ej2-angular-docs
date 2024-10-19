@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramModule, DiagramComponent, NodeModel, DecoratorModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -15,27 +9,27 @@ imports: [
 providers: [ ],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults' [getConnectorDefaults]='getConnectorDefaults'>
+    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults'>
         <e-nodes>
             <e-node id='node1' [offsetX]=150 [offsetY]=150>
                 <e-node-annotations>
-                    <e-node-annotation id="label1" content="Task1" [horizontalAlignment]="horizontalAlignment">
+                    <e-node-annotation id="label1" content="Task1">
                     </e-node-annotation>
                 </e-node-annotations>
             </e-node>
             <e-node id='node2' [offsetX]=350 [offsetY]=150>
                 <e-node-annotations>
-                    <e-node-annotation id="label1" content="Task2" [horizontalAlignment]="horizontalAlignment">
+                    <e-node-annotation id="label1" content="Task2">
                     </e-node-annotation>
                 </e-node-annotations>
             </e-node>
         </e-nodes>
         <e-connectors>
-            <e-connector id='connector' type='Orthogonal' [sourceID]='node1' [targetID]='node2'>
+            <e-connector id='connector' type='Orthogonal' sourceID='node1' targetID='node2' [targetDecorator]='shape'>
                 <e-connector-annotations>
-                    <e-connector-annotation content='0' [offset]=0>
+                    <e-connector-annotation content='0' [offset]=0 alignment='Before'>
                     </e-connector-annotation>
-                    <e-connector-annotation content='1' [offset]=1>
+                    <e-connector-annotation content='1' [offset]=1 alignment='After'>
                     </e-connector-annotation>
                 </e-connector-annotations>
             </e-connector>
@@ -46,28 +40,14 @@ standalone: true,
 export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
-    node1: any;
-    node2: any;
-    horizontalAlignment: any;
+    public shape?: DecoratorModel;
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
-        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
-    public getConnectorDefaults(obj: ConnectorModel): void {
-        obj.style = {
-            strokeColor: '#6BA5D7',
-            fill: '#6BA5D7',
-            strokeWidth: 2
-        }
-        obj.targetDecorator = {
-            style: {
-                fill: '#6BA5D7',
-                strokeColor: '#6BA5D7'
-            }
-        }
+    ngOnInit(): void {
+        this.shape = { shape: 'None' }
     }
 }
 

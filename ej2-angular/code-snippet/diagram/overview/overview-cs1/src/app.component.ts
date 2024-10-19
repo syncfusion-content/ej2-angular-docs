@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, OverviewModule, DataBindingService, HierarchicalTreeService } from '@syncfusion/ej2-angular-diagrams'
-
-
-
-import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent,OverviewComponent, Diagram, NodeModel, ConnectorModel,OverviewModel, SnapSettingsModel, LayoutModel, DataSourceModel, TextModel, DecoratorModel, ShapeStyleModel,  } from '@syncfusion/ej2-angular-diagrams';
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { DiagramComponent, Diagram, NodeModel, ConnectorModel, SnapSettingsModel, LayoutModel, DataSourceModel, TextModel, DecoratorModel, ShapeStyleModel, DiagramModule, OverviewModule, DataBindingService, HierarchicalTreeService  } from '@syncfusion/ej2-angular-diagrams';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 
 @Component({

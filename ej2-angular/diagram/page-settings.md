@@ -10,19 +10,16 @@ domainurl: ##DomainURL##
 
 # Page settings in Angular Diagram component
 
-Page settings enable to customize the appearance, width, and height of the diagram page.
+Page settings allow customization of the appearance, size, and orientation of the diagram page.
 
 ## Page size and appearance
 
-* The size and appearance of the diagram pages can be customized with the page settings property.
+The [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings#height-number) properties in page settings determine the size of the page. Additionally, the [`background`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/) property allows customization of the page's appearance. The [`color`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/#color) property of background is used to define the color of the page. The [`margin`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/marginModel/) property defines the page margins.
 
-* The [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings#height-number) properties of page settings define the size of the page and based on the size, the [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings#orientation-PageOrientation) will be set for the page. In addition to that, the appearance of the page can be customized with [`source`](https://ej2.syncfusion.com/angular/documentation/api/diagram/background#source-string) and set of appearance specific properties.
 
-* The [`color`](https://ej2.syncfusion.com/angular/documentation/api/diagram/background#color-string) property is used to customize the background color and border color of the page.
+To explore those properties, refer to [`Page Settings`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/pageSettingsModel/).
 
-* The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings#margin-MarginModel) property is used to define the page margin.
-
-* To explore those properties, refer to [`Page Settings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings).
+The following example shows the customization of page settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -38,9 +35,9 @@ Page settings enable to customize the appearance, width, and height of the diagr
 
 ## Set background image
 
-Stretch and align the background image anywhere over the diagram area. The [`source`](https://ej2.syncfusion.com/angular/documentation/api/diagram/background#source-string) property of [`background`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings#background-BackgroundModel) allows you to set the path of the image. The [`scale`](https://ej2.syncfusion.com/angular/documentation/api/diagram/background#scale-string) and the [`align`](https://ej2.syncfusion.com/angular/documentation/api/diagram/background#align-ImageAlignment) properties help to stretch/align the background images.
+A background image can be attached to the page by using the [`source`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/#source) property of [`background`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/background/). The [`scale`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/#scale) property adjusts how the background image stretches, while the [`align`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/#align) property aligns the image within the diagram page.
 
-The following code illustrates how to stretch and align the background image.
+The following code illustrates how to set background image to the diagram page.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,13 +51,32 @@ The following code illustrates how to stretch and align the background image.
   
 {% previewsample "page.domainurl/samples/diagram/pagesettings/background-cs1" %}
 
+## Page orientation
+
+There are two types of page orientations:
+
+- Landscape
+- Portrait
+
+Depending on the orientation selected, the width and height properties are adjusted accordingly. By default, the orientation is set to 'Landscape'. In the following example, the height and width properties of pageSettings are swapped when setting the orientation to 'Portrait'.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/pagesettings/orientation-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/pagesettings/orientation-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/pagesettings/orientation-cs1" %}
+
 ## Multiple page and page breaks
 
-When multiple page is enabled, the size of the page dynamically increases or decreases in multiples of page width and height and completely fits diagram within the page boundaries. Page breaks is used as a visual guide to see how pages are split into multiple pages.
+When multiple pages are enabled, the page size dynamically adjusts in multiples of the specified width and height, ensuring the entire diagram fits within the page boundaries. Page breaks serve as visual guides indicating how pages are split.
 
-The [`multiplePage`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings#multiplepage-boolean) and [`showPageBreak`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings#showpagebreaks-boolean) properties of page settings allow you to enable/disable multiple pages and page breaks respectively.
-
-The following code illustrates how to enable multiple page and page break lines.
+The [`multiplePage`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/pageSettingsModel/#multiplepage) and [`showPageBreak`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/pageSettingsModel/#showpagebreaks) properties in page settings control the ability to enable multiple pages and display page break lines, respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,11 +90,19 @@ The following code illustrates how to enable multiple page and page break lines.
   
 {% previewsample "page.domainurl/samples/diagram/pagesettings/pagebreak-cs1" %}
 
+The color of the page break lines can be customized by overriding the styles of the .e-diagram-page-break class. For more details refer to [`CSS customization`](https://ej2.syncfusion.com/angular/documentation/diagram/style#customizing-the-page-breaks)
+
 ## Boundary constraints
 
-The diagram provides support to restrict/customize the interactive region, out of which the elements cannot be dragged, resized, or rotated. The [`boundaryConstraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings#boundaryconstraints-BoundaryConstraints) property of page settings allows you to customize the interactive region. To explore the boundary constraints, refer to [`Boundary Constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/boundaryConstraints).
+The diagram supports restricting or customizing the interactive region where elements cannot be dragged, resized, or rotated. You can achieve this using the [`boundaryConstraints`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/boundaryConstraints/) property in page settings.
 
-The following code example illustrates how to define boundary constraints with respect to the page.
+There are three types of boundary constraints. They are:
+- Infinity
+- Diagram
+- Page
+To explore these constraints further, refer to [`Boundary Constraints`](https://ej2.syncfusion.com/angular/documentation/diagram/constraints#boundary-constraints).
+
+Below is an example illustrating how to define boundary constraints within the diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -91,3 +115,21 @@ The following code example illustrates how to define boundary constraints with r
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/pagesettings/boundary-cs1" %}
+
+## Fit options
+
+The [`fitOptions`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/fitOptionsModel/) in page settings control how diagram content is fitted within the diagram page. The [`canFit`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/fitOptionsModel/#canfit) property within fitOptions centers the content within the viewport during diagram rendering. Additionally, the [`region`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramRegions/) property specifies whether to fit the page or the content to the center of the viewport. Choosing CustomBounds for the [`region`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/diagramRegions/) allows fitting custom bounds within the diagram by defining them in the [`customBounds`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/fitOptionsModel/#custombounds) property of fitOptions. The [`canZoomIn`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/fitOptionsModel/#canzoomin) property enables zooming in to fit smaller content within the viewport. Additionally, the [`margin`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/marginModel/) property defines the space around the fitted content within the viewport, while the [`mode`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/fitModes/) property sets the fitting mode, typically defaulting to 'Page' but also offering options like 'Width' and 'Height' for specific dimension constraints.
+
+The following example demonstrates how fitOptions are utilized in diagram page settings.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/pagesettings/fitoption-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/pagesettings/fitoption-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/pagesettings/fitoption-cs1" %}

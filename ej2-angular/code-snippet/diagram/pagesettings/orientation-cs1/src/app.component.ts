@@ -1,0 +1,68 @@
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { DiagramModule, DiagramComponent, NodeModel, PageSettingsModel } from '@syncfusion/ej2-angular-diagrams';
+
+@Component({
+imports: [
+         DiagramModule
+    ],
+
+providers: [ ],
+standalone: true,
+    selector: "app-container",
+    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults' [pageSettings]="pageSettings">
+        <e-nodes>
+            <e-node id='node1' [offsetX]=150 [offsetY]=150>
+                <e-node-annotations>
+                    <e-node-annotation id="label1" content="Rectangle1" >
+                    </e-node-annotation>
+                </e-node-annotations>
+            </e-node>
+            <e-node id='node2' [offsetX]=300 [offsetY]=350>
+                <e-node-annotations>
+                    <e-node-annotation id="label1" content="Rectangle2" >
+                    </e-node-annotation>
+                </e-node-annotations>
+            </e-node>
+        </e-nodes>
+        <e-connectors>
+            <e-connector id='connector' sourceID='node1' targetID='node2'>
+            </e-connector>
+        </e-connectors>
+    </ejs-diagram>`,
+    encapsulation: ViewEncapsulation.None
+})
+export class AppComponent {
+    @ViewChild("diagram")
+    public diagram?: DiagramComponent;
+    public pageSettings?: PageSettingsModel;
+    ngOnInit(): void {
+        // Defines the pageSettings for the diagram
+        this.pageSettings = {
+            // Sets the PageOrientation for the diagram to page
+            orientation: 'Portrait',
+            // Sets the Page Break for diagram
+            showPageBreaks: true,
+            // Defines the background color and image  of diagram
+            background: {
+                color: 'grey'
+            },
+            // Sets the width for the Page
+            width: 500,
+            // Sets the height for the Page
+            height: 300,
+            // Sets the space to be left between an annotation and its parent node/connector
+            margin: {
+                left: 10,
+                top: 10,
+                bottom: 10
+            },
+        }
+    }
+    public getNodeDefaults(node: NodeModel): NodeModel {
+        node.height = 100;
+        node.width = 100;
+        return node;
+    }
+}
+
+

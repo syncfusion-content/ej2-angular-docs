@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ShapeAnnotationModel, ShapeStyleModel, ConnectionShapes } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramModule, DiagramComponent, Diagram, NodeModel, ShapeAnnotationModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -15,9 +9,13 @@ imports: [
 providers: [ ],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults' (created)='created($event)'>
+    template: `
+    <div class="button">
+    <button id="clearButton" (click)='onClick($event)'>Remove Annotation</button>
+    </div>
+    <ejs-diagram #diagram id="diagram" width="100%" height="580px">
         <e-nodes>
-            <e-node id='node1' [offsetX]=150 [offsetY]=150>
+            <e-node id='node1' [offsetX]=150 [offsetY]=150 [width]=100 [height]=100>
                 <e-node-annotations>
                     <e-node-annotation id="label1" content="Annotation">
                     </e-node-annotation>
@@ -30,20 +28,13 @@ standalone: true,
 export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
-    public getNodeDefaults(node: NodeModel): NodeModel {
-        node.height = 100;
-        node.width = 100;
-        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
-        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
-        return node;
-    }
     public annotation: ShapeAnnotationModel[] = [
     {
        id: 'label1', content: 'Annotation'
     }
 ];
-    public created(args: Object): void {
-        (this.diagram as Diagram).removeLabels(((this.diagram as Diagram).nodes as NodeModel[])[0] as any, this.annotation);
+    onClick = (args: MouseEvent) => {
+    (this.diagram as Diagram).removeLabels(((this.diagram as Diagram).nodes as NodeModel[])[0] as any, this.annotation);
     }
 }
 

@@ -1,12 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
+import { DiagramModule, DiagramComponent, Diagram, NodeModel } from '@syncfusion/ej2-angular-diagrams'
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel } from '@syncfusion/ej2-angular-diagrams';
-
 @Component({
 imports: [
          DiagramModule

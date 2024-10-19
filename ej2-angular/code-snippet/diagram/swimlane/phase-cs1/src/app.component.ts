@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, SwimLaneModel,Diagram, NodeModel,Node, LaneModel,HeaderModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, DiagramModule, NodeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -27,7 +21,7 @@ export class AppComponent {
                 type: 'SwimLane',
                 orientation: 'Horizontal',
                 header: {
-                    annotation: { content: 'ONLINE PURCHASE STATUS', style: { fill: 'pink' } },
+                    annotation: { content: 'ONLINE PURCHASE STATUS' },
                     height: 50, style: { fontSize: 11 },
                 },
                lanes: [
@@ -68,5 +62,3 @@ export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;  
 }
-
-
