@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Load tab with data source in Angular Tab component
 
-You can bind any data object to Tab items, by mapping it to [`header`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItem#header) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItem#content)&nbsp; property.
+You can bind any data object to Tab items, by mapping it to [`header`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItem/#header) and [`content`](https://ej2.syncfusion.com/angular/documentation/api/tab/tabItem/#content)&nbsp; property.
 
 You can watch the following video to learn more about loading tab items from a remote data source in the Angular Tabs component:
 
 {% youtube "https://www.youtube.com/watch?v=N34FcZmCN98" %}
 
-In the below demo, Data is fetched from an `OData` service using `DataManager`. The result data is formatted as a JSON object with `header` and `content` fields, which is set to [`items`](https://ej2.syncfusion.com/angular/documentation/api/accordion#items) property of Tab.
+In the below demo, Data is fetched from an `OData` service using `DataManager`. The result data is formatted as a JSON object with `header` and `content` fields, which is set to [`items`](https://ej2.syncfusion.com/angular/documentation/api/accordion/#items) property of Tab.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
