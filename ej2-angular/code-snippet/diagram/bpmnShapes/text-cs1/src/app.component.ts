@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, BpmnDiagramsService } from '@syncfusion/ej2-angular-diagrams'
-
-
-
+import { DiagramModule, BpmnDiagramsService, DiagramComponent, BpmnShapeModel  } from '@syncfusion/ej2-angular-diagrams'
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, BpmnShapeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -54,5 +48,3 @@ export class AppComponent {
     }
    
 }
-
-

@@ -1,13 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel,ConnectorEditing, OrthogonalSegmentModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
-import {ConnectorConstraints} from '@syncfusion/ej2-diagrams';
-Diagram.Inject(ConnectorEditing);
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { DiagramComponent, DiagramModule, OrthogonalSegmentModel, PointModel, ConnectorConstraints } from '@syncfusion/ej2-angular-diagrams';
 @Component({
 imports: [
          DiagramModule
@@ -16,9 +8,9 @@ imports: [
 providers: [ ],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getConnectorDefaults] ='getConnectorDefaults'>
+    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" >
         <e-connectors>
-            <e-connector id='connector' type='Orthogonal' [sourcePoint]='sourcePoint' [targetPoint]='targetPoint' maxSegmentThumb='maxSegmentThumb' [constraints] ='constraints' [segments]='segments'>
+            <e-connector id='connector' type='Orthogonal' [sourcePoint]='sourcePoint' [targetPoint]='targetPoint' [segments]='segments' [constraints]= "constraints" >
             </e-connector>
         </e-connectors>
     </ejs-diagram>`,
@@ -29,32 +21,36 @@ export class AppComponent {
     public diagram?: DiagramComponent;
     public sourcePoint?: PointModel;
     public targetPoint?: PointModel;
-    public maxSegmentThumb?: number;
-    public constraints ?: ConnectorConstraints ;
     public segments?: OrthogonalSegmentModel;
+    public constraints ?: ConnectorConstraints ;
     ngOnInit(): void {
-        this.sourcePoint = { x: 100, y: 100 };
-        this.targetPoint = { x: 200, y: 200 };
-        this.maxSegmentThumb = 3;
-        this.constraints =ConnectorConstraints.Default & ~ConnectorConstraints.DragSegmentThumb;
-        this.segments = [{
-            // Defines the segment type of the connector
-            type: 'Orthogonal'
-        }]
+        this.constraints =ConnectorConstraints.Default | ConnectorConstraints.DragSegmentThumb;
+        this.sourcePoint = { x: 300, y: 100 };
+        this.targetPoint = { x: 350, y: 150 };
+        this.segments = [
+            {
+                type: 'Orthogonal',
+                direction: 'Bottom',
+                length: 150
+            },
+            {
+                type: 'Orthogonal',
+                direction: 'Right',
+                length: 150
+            },
+            {
+              type: 'Orthogonal',
+              direction: 'Top',
+              length: 100,
+            },
+            {
+              type: 'Orthogonal',
+              direction: 'Left',
+              length: 100,
+            }, 
+        ]
     }
-    public getConnectorDefaults(obj: ConnectorModel): void {
-        obj.style = {
-            strokeColor: '#6BA5D7',
-            fill: '#6BA5D7',
-            strokeWidth: 2
-        }
-        obj.targetDecorator = {
-            style: {
-                fill: '#6BA5D7',
-                strokeColor: '#6BA5D7'
-            }
-        }
-    }
+
 }
 
 

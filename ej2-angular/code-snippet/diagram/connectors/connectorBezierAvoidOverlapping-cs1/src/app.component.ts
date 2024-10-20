@@ -15,7 +15,7 @@ imports: [
 providers: [ ],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="600px" [getNodeDefaults]='getNodeDefaults' [getConnectorDefaults] ='getConnectorDefaults'>
+    template: `<ejs-diagram #diagram id="diagram" width="100%" height="600px" [getNodeDefaults]='getNodeDefaults' >
         <e-nodes>
             <e-node id='Start' [offsetX]=250 [offsetY]=150 [ports]='StartPort'>
                 <e-node-annotations>
@@ -23,7 +23,7 @@ standalone: true,
                     </e-node-annotation>
                 </e-node-annotations>
             </e-node>
-            <e-node id='End' [offsetX]=450 [offsetY]=200 [ports]='EndPort'>
+            <e-node id='End' [offsetX]=500 [offsetY]=200 [ports]='EndPort'>
                 <e-node-annotations>
                     <e-node-annotation content="End">
                     </e-node-annotation>
@@ -31,7 +31,7 @@ standalone: true,
             </e-node>
         </e-nodes>
         <e-connectors>
-            <e-connector id='connector1' type='Bezier' sourceID='Start' targetID='End'  sourcePortID='StartPort' targetPortID='EndPort' bezierSettings='bezierSettings'>
+            <e-connector id='connector1' type='Bezier' sourceID='Start' targetID='End'  sourcePortID='StartPort' targetPortID='EndPort' bezierSettings='bezierSettings' [constraints]='constraints'>
             </e-connector>
         </e-connectors>
     </ejs-diagram>`,
@@ -68,15 +68,9 @@ export class AppComponent {
         ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
-    public getConnectorDefaults(connector: ConnectorModel): void {
-     connector.style = {
-        strokeColor: '#6BA5D7',
-        fill: '#6BA5D7',
-        strokeWidth: 2
-    },
-    connector.targetDecorator = { shape: 'None' },
-    connector.constraints = ConnectorConstraints.Default | ConnectorConstraints.DragSegmentThumb;
-    }
+
+    constraints = ConnectorConstraints.Default | ConnectorConstraints.DragSegmentThumb;
+   
 }
 
 

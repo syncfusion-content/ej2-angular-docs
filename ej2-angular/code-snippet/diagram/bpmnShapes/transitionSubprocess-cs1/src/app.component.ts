@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, BpmnDiagramsService } from '@syncfusion/ej2-angular-diagrams'
-
-
-
+import { DiagramModule, BpmnDiagramsService,DiagramComponent, NodeModel, BpmnShapeModel } from '@syncfusion/ej2-angular-diagrams'
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, BpmnShapeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -26,41 +20,41 @@ export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
     public shape: BpmnShapeModel = {
+        //Sets type as Bpmn and shape as activity
         type: 'Bpmn',
-        shape: 'Event',
-        //Sets activity as Task
+        shape: 'Activity',
+        //Sets activity as SubProcess
         activity: {
-            activity: 'SubProcess',
-            //Sets the collapsed as true and type as Event
-            subProcess: {
-                collapsed: true,
-                type: 'Transition',
-                //Sets event as Intermediate and trigger as Cancel
-                event: [{
-                        event: 'Intermediate',
-                        trigger: 'Cancel',
-                        offset: {
-                            x: 0.25,
-                            y: 1
-                        }
-                    },
-                    {
-                        event: 'Intermediate',
-                        trigger: 'Error',
-                        offset: {
-                            x: 0.25,
-                            y: 1
-                        }
-                    },
-                ]
-            } as any
+          activity: 'SubProcess',
+          //Sets the collapsed as true and type as Event
+          subProcess: {
+            collapsed: true,
+            type: 'Transaction',
+            //Sets transaction
+            transaction: {
+              success: {
+                id: 'success',
+                event: 'Start',
+                trigger: 'None',
+              },
+              failure: {
+                id: 'failure',
+                event: 'ThrowingIntermediate',
+                trigger: 'Error',
+              },
+              cancel: {
+                id: 'cancel',
+                event: 'End',
+                trigger: 'Cancel',
+              },
+            },
+          },
         },
-    }
+      }
+    
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
         return node;
     }
 }
-
-

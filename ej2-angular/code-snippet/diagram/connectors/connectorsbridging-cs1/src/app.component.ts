@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, ConnectorBridgingService } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, ConnectorModel, DecoratorModel, PointModel, DiagramConstraints } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, DiagramModule, ConnectorModel , ConnectorBridgingService, NodeModel, ShapeStyleModel, DiagramConstraints } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -15,44 +9,73 @@ imports: [
 providers: [ConnectorBridgingService],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getConnectorDefaults] ='getConnectorDefaults' [constraints]='constraints'>
-        <e-connectors>
-            <e-connector id='connector1' type='Straight' [sourcePoint]='sourcePoint1' [targetPoint]='targetPoint1'></e-connector>
-            <e-connector id='connector2' type='Straight' [sourcePoint]='sourcePoint2' [targetPoint]='targetPoint2'></e-connector>
-        </e-connectors>
-    </ejs-diagram>`,
+    template: `<ejs-diagram id="diagram" width="100%" height="580px"  [nodes] = 'nodes' [connectors] = 'connectors' [getNodeDefaults] ='getNodeDefaults' [constraints]='diagramConstraints'></ejs-diagram>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
-    public sourcePoint1?: PointModel;
-    public targetPoint1?: PointModel;
-    public sourcePoint2?: PointModel;
-    public targetPoint2?: PointModel;
-    public sourceDecorator?: DecoratorModel;
-    public targetDecorator?: DecoratorModel;
-    public constraints?: DiagramConstraints;
+    public diagramConstraints?: DiagramConstraints;
     ngOnInit(): void {
-        this.sourcePoint1 = { x: 100, y: 100 };
-        this.targetPoint1 = { x: 200, y: 200 };
-        this.sourcePoint2 = { x: 200, y: 100 };
-        this.targetPoint2 = { x: 100, y: 200 };
-        this.constraints = DiagramConstraints.Default | DiagramConstraints.Bridging;
+        this.diagramConstraints = DiagramConstraints.Default | DiagramConstraints.Bridging;
     }
-    public getConnectorDefaults(obj: ConnectorModel): void {
-        obj.style = {
-            strokeColor: '#6BA5D7',
-            fill: '#6BA5D7',
-            strokeWidth: 2
-        }
-        obj.targetDecorator = {
-            style: {
-                fill: '#6BA5D7',
-                strokeColor: '#6BA5D7'
-            }
-        }
-    }
+    public nodes: NodeModel[] = [{
+        id: 'Transaction',
+        width: 150,
+        height: 60,
+        offsetX: 300,
+        offsetY: 60,
+        shape: {
+            type: 'Flow',
+            shape: 'Terminator'
+        },
+        annotations: [{
+            id: 'label1',
+            content: 'Start Transaction',
+            offset: { x: 0.5, y: 0.5 }
+        }]
+    },
+    {
+        id: 'Verification',
+        width: 150,
+        height: 60,
+        offsetX: 300,
+        offsetY: 250,
+        shape: {
+            type: 'Flow',
+            shape: 'Process'
+        },
+        annotations: [{
+            id: 'label2',
+            content: 'Verification',
+            offset: { x: 0.5, y: 0.5 }
+        }]
+    }];
+
+    public connectors: ConnectorModel[] = [{
+        id: 'connector1',
+        type: 'Straight',
+        sourceID: 'Transaction',
+        targetID: 'Verification'
+    },
+    {
+        id: 'connector2',
+        type: 'Straight',
+        sourcePoint: { x: 200, y: 130 },
+        targetPoint: { x: 400, y: 130 }
+    },
+    {
+        id: 'connector3',
+        type: 'Straight',
+        sourcePoint: { x: 200, y: 170 },
+        targetPoint: { x: 400, y: 170 }
+    }];
+
+    public getNodeDefaults(node: NodeModel): void {
+        node.height = 100;
+        node.width = 100;
+        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
+        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
+    };
+    
 }
-
-

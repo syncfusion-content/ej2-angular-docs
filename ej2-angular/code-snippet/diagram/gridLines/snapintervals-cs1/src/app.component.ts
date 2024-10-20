@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, SnappingService } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, SnapSettingsModel, SnapConstraints, NodeModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramModule, SnappingService, DiagramComponent, SnapSettingsModel, SnapConstraints, NodeModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -20,7 +14,8 @@ standalone: true,
         <e-nodes>
             <e-node id='node1' [offsetX]=150 [offsetY]=150></e-node>
         </e-nodes>
-    </ejs-diagram>`
+    </ejs-diagram>`,
+    encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
     @ViewChild("diagram")
@@ -28,10 +23,10 @@ export class AppComponent {
     public snapSettings: SnapSettingsModel = {
         horizontalGridlines: {
             // Defines the snap interval for object
-            snapIntervals: [10]
+            snapIntervals: [20]
         },
         verticalGridlines: {
-            snapIntervals: [10]
+            snapIntervals: [20]
         },
         constraints: SnapConstraints.All
     };

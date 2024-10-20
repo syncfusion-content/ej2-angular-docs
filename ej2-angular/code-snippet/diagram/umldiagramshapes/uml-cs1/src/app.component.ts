@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, SymbolPaletteModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
-import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import { SymbolPaletteComponent, SymbolPalette, NodeModel, MarginModel, PaletteModel,SymbolInfo,DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramModule, SymbolPaletteModule,NodeModel, MarginModel, PaletteModel,SymbolInfo,DiagramComponent } from '@syncfusion/ej2-angular-diagrams'
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
 imports: [
@@ -20,7 +14,7 @@ standalone: true,
       <ejs-symbolpalette
         id="symbolpalette"
         width="100%"
-        height="700px"
+        height="200px"
         [symbolHeight]="80"
         [symbolWidth]="80"
         [palettes]="palettes"

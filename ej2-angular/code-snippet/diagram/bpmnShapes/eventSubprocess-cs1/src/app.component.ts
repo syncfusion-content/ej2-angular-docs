@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, BpmnDiagramsService } from '@syncfusion/ej2-angular-diagrams'
-
-
-
+import { DiagramModule, BpmnDiagramsService , DiagramComponent, NodeModel, BpmnShapeModel } from '@syncfusion/ej2-angular-diagrams'
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, BpmnShapeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -27,19 +21,23 @@ export class AppComponent {
     public diagram?: DiagramComponent;
     public shape: BpmnShapeModel = {
         type: 'Bpmn',
-        shape: 'Event',
-        //Sets activity as Task
+        shape: 'Activity',
+        //Sets activity as SubProcess
         activity: {
             activity: 'SubProcess',
-            //Sets the collapsed as true and type as Event
+            //Sets the collapsed as false and type as Event
             subProcess: {
-                collapsed: true,
+                collapsed: false,
                 type: 'Event',
-                //Sets event as Start and trigger as Message
-                event: {
-                    event: 'Start',
-                    trigger: 'Message'
-                }
+            //Sets event as Start and trigger as Message
+            events: [
+                {
+                  id: 'event',
+                  event: 'Start',
+                  trigger: 'Message',
+                  offset: { x: 0.5, y: 0 },
+                },
+              ],  
             }
         }
     } as BpmnShapeModel;
@@ -49,5 +47,3 @@ export class AppComponent {
         return node;
     }
 }
-
-

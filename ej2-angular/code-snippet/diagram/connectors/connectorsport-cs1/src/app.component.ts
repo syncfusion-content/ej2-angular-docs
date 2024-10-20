@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, PointPortModel, PortVisibility, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, DiagramModule, NodeModel, PointPortModel, PortVisibility, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -25,13 +19,13 @@ standalone: true,
             </e-node>
             <e-node id='node2' [offsetX]=350 [offsetY]=150 [ports]='port2'>
                 <e-node-annotations>
-                    <e-node-annotation content="Custom Template">
+                    <e-node-annotation content="Node2">
                     </e-node-annotation>
                 </e-node-annotations>
             </e-node>
         </e-nodes>
         <e-connectors>
-            <e-connector id='connector' type='Straight' sourceID='node1' sourcePortID='port1' targetID='node2' targetPortID='port2'>
+            <e-connector id='connector' type='Orthogonal' sourceID='node1' sourcePortID='port1' targetID='node2' targetPortID='port2'>
             </e-connector>
         </e-connectors>
     </ejs-diagram>`,
@@ -46,6 +40,8 @@ export class AppComponent {
             x: 0,
             y: 0.5
         },
+        shape: 'X',
+      
         visibility: PortVisibility.Visible
     }]
     public port2: PointPortModel[] = [
@@ -55,6 +51,8 @@ export class AppComponent {
                 x: 1,
                 y: 0.5
             },
+            shape: 'Circle',
+           
             visibility: PortVisibility.Visible
         },
         {
@@ -63,6 +61,7 @@ export class AppComponent {
                 x: 0.5,
                 y: 0
             },
+           
             visibility: PortVisibility.Visible
         }
     ]
@@ -73,19 +72,7 @@ export class AppComponent {
         ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
-    public getConnectorDefaults(obj: ConnectorModel): void {
-        obj.style = {
-            strokeColor: '#6BA5D7',
-            fill: '#6BA5D7',
-            strokeWidth: 2
-        }
-        obj.targetDecorator = {
-            style: {
-                fill: '#6BA5D7',
-                strokeColor: '#6BA5D7'
-            }
-        }
-    }
+   
 }
 
 
