@@ -1,12 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, DiagramContextMenuService } from '@syncfusion/ej2-angular-diagrams'
-
-
-
-import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
-import { DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramModule, DiagramContextMenuService,DiagramComponent } from '@syncfusion/ej2-angular-diagrams'
+import { Component, ViewChild } from "@angular/core";
 import { ConnectorModel } from '@syncfusion/ej2-diagrams';
+
 @Component({
 imports: [
          DiagramModule
@@ -37,5 +32,3 @@ export class AppComponent {
   }
  ];
 }
-
-

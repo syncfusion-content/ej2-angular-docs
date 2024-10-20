@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, StraightSegmentModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { DiagramComponent, DiagramModule, StraightSegmentModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -15,7 +9,7 @@ imports: [
 providers: [ ],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getConnectorDefaults] ='getConnectorDefaults'>
+    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" >
         <e-connectors>
             <e-connector id='connector' type='Straight' [sourcePoint]='sourcePoint' [targetPoint]='targetPoint' [segments]='segments'>
             </e-connector>
@@ -37,19 +31,6 @@ export class AppComponent {
             type: 'Straight',
             point: { x: 100, y: 150 }
         }] as StraightSegmentModel;
-    }
-    public getConnectorDefaults(obj: ConnectorModel): void {
-        obj.style = {
-            strokeColor: '#6BA5D7',
-            fill: '#6BA5D7',
-            strokeWidth: 2
-        }
-        obj.targetDecorator = {
-            style: {
-                fill: '#6BA5D7',
-                strokeColor: '#6BA5D7'
-            }
-        }
     }
 }
 

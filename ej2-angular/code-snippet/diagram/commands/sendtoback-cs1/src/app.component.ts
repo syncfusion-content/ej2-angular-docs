@@ -1,27 +1,21 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
+import { DiagramModule,DiagramComponent, NodeModel, ConnectorModel, ShapeStyleModel  } from '@syncfusion/ej2-angular-diagrams'
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
-imports: [
-         DiagramModule
+    imports: [
+        DiagramModule
     ],
 
-providers: [ ],
-standalone: true,
+    providers: [],
+    standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults' (created)='created($event)'>
+    template: `<button (click)="sendToBack()">Send To Back</button><ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults'>
         <e-nodes>
-            <e-node id='node1' [offsetX]=100 [offsetY]=100>
+            <e-node id='node1' [offsetX]=120 [offsetY]=100>
             </e-node>
-            <e-node id='node2' [offsetX]=240 [offsetY]=100>
+            <e-node id='node2' [offsetX]=150 [offsetY]=120>
             </e-node>
-            <e-node id='node3' [offsetX]=240 [offsetY]=100>
+            <e-node id='node3' [offsetX]=170 [offsetY]=150>
             </e-node>
         </e-nodes>
     </ejs-diagram>`,
@@ -34,19 +28,10 @@ export class AppComponent {
     public getNodeDefaults(node: NodeModel | any): NodeModel {
         node.height = 100;
         node.width = 100;
-        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
-        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
-    public created(args: Object): void {
-        this.selArray = [];
-        //(this.diagram as Diagram).appendTo('#element');
-        this.selArray.push((this.diagram as DiagramComponent).nodes[2]);
-        //Selects the nodes
-        (this.diagram as DiagramComponent).select(this.selArray);
-        //Sends to back
+    public sendToBack(): void {
+        //send to back
         (this.diagram as DiagramComponent).sendToBack();
     }
 }
-
-

@@ -1,13 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { Diagram, DiagramComponent, NodeModel, ConnectorModel } from '@syncfusion/ej2-angular-diagrams';
-import { NodeConstraints, LineRouting, DiagramConstraints, ConnectorConstraints, SnapConstraints, SnapSettingsModel } from '@syncfusion/ej2-diagrams';
+import { Diagram, DiagramComponent, NodeModel, ConnectorModel,DiagramModule } from '@syncfusion/ej2-angular-diagrams';
+import { LineRouting, DiagramConstraints} from '@syncfusion/ej2-diagrams';
 Diagram.Inject(LineRouting);
 
 @Component({

@@ -1,29 +1,23 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
+import { DiagramModule,DiagramComponent, NodeModel, ShapeStyleModel  } from '@syncfusion/ej2-angular-diagrams'
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
-imports: [
-         DiagramModule
+    imports: [
+        DiagramModule
     ],
 
-providers: [ ],
-standalone: true,
+    providers: [],
+    standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults' [getConnectorDefaults]="getConnectorDefaults" (created)='created($event)'>
+    template: `<label>( CTRL + G ) </label><button (click)="group()">Group</button>
+   <label>( CTRL + Shift + G) </label> <button (click)="unGroup()">Un Group</button>
+    <ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults' >
         <e-nodes>
             <e-node id='node1' [offsetX]=100 [offsetY]=100>
             </e-node>
-            <e-node id='node2' [offsetX]=240 [offsetY]=100>
+            <e-node id='node2' [offsetX]=300 [offsetY]=100>
             </e-node>
-            <e-node id='node3' [offsetX]=240 [offsetY]=100>
-            </e-node>
-            <e-node id='group1' [offsetX]=240 [offsetY]=100 [children]="children">
+            <e-node id='node3' [offsetX]=200 [offsetY]=200>
             </e-node>
         </e-nodes>
         <e-connectors>
@@ -36,38 +30,25 @@ standalone: true,
 export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
-    public children?: string[];
-sourcePoint1: any;
-targetPoint1: any;
-    ngOnInit(): void {
-        this.children = ['node1', 'node2', 'connector'];
-    }
+
+    sourcePoint1: any = "node1";
+    targetPoint1: any = "node2";
+
+    // public children = ['node1', 'node2', 'node3', 'connector'];
     public getNodeDefaults(node: NodeModel | any): NodeModel {
-        node.height = 100;
+        node.height = 70;
         node.width = 100;
-        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
-        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
-    public getConnectorDefaults(obj: ConnectorModel): void {
-        obj.style = {
-            strokeColor: '#6BA5D7',
-            fill: '#6BA5D7',
-            strokeWidth: 2
-        }
-        obj.targetDecorator = {
-            style: {
-                fill: '#6BA5D7',
-                strokeColor: '#6BA5D7'
-            }
-        }
-    }
-    public created(args: Object): void {
+    public group(): void {
         //Selects the diagram
         (this.diagram as DiagramComponent).selectAll();
         //Groups the selected elements.
         (this.diagram as DiagramComponent).group();
     }
+
+    public unGroup(): void {
+        //unGroups the selected elements.
+        (this.diagram as DiagramComponent).unGroup();
+    }
 }
-
-

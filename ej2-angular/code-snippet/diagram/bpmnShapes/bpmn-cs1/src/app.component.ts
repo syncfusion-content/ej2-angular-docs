@@ -1,19 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, BpmnDiagramsService } from '@syncfusion/ej2-angular-diagrams'
-
-
-
+import { DiagramModule, BpmnDiagramsService, DiagramComponent, NodeModel, BpmnShapeModel } from '@syncfusion/ej2-angular-diagrams'
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, BpmnDiagrams, NodeModel, BpmnShapeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
-imports: [
-         DiagramModule
+    imports: [
+        DiagramModule
     ],
 
-providers: [BpmnDiagramsService],
-standalone: true,
+    providers: [BpmnDiagramsService],
+    standalone: true,
     selector: "app-container",
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults'>
         <e-nodes>
@@ -39,5 +33,3 @@ export class AppComponent {
         return node;
     }
 }
-
-

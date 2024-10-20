@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, ConnectorModel, PointPortModel ,PortVisibility, ShapeStyleModel} from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, DiagramModule, NodeModel, PointPortModel ,PortVisibility, ShapeStyleModel} from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -15,7 +9,9 @@ imports: [
 providers: [ ],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults'  (created)='created($event)'>
+    template: `
+     <button (click)="Update()">Update</button>
+    <ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults' >
         <e-nodes>
             <e-node id='node1' [offsetX]=150 [offsetY]=150 [ports]='port1'>
                 <e-node-annotations>
@@ -31,7 +27,7 @@ standalone: true,
             </e-node>
         </e-nodes>
         <e-connectors>
-            <e-connector id='connector' type='Straight' sourceID='node1' sourcePortID='port1' targetID='node2' targetPortID='port2'>
+            <e-connector id='connector' type='Orthogonal' sourceID='node1' sourcePortID='port1' targetID='node2' targetPortID='port3'>
             </e-connector>
         </e-connectors>
     </ejs-diagram>`,
@@ -40,29 +36,43 @@ standalone: true,
 export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
-    public port1: PointPortModel[] = [{
+    public port1: PointPortModel[] = [
+        {
         id: 'port1',
         offset: {
             x: 0,
             y: 0.5
         },
+        shape: 'X',
         visibility: PortVisibility.Visible
-    }]
-    public port2: PointPortModel[] = [
-        {
-            id: 'port2',
-            offset: {
-                x: 1,
-                y: 0.5
-            },
-            visibility: PortVisibility.Visible
+        
+    },
+    {
+        id: 'port2',
+        offset: {
+            x: 1,
+            y: 0.5
         },
+        shape: 'Circle',
+        visibility: PortVisibility.Visible
+    },
+]
+    public port2: PointPortModel[] = [
         {
             id: 'port3',
             offset: {
                 x: 0.5,
                 y: 0
             },
+            visibility: PortVisibility.Visible
+        },
+        {
+            id: 'port4',
+            offset: {
+                x: 0.5,
+                y: 1
+            },
+            shape: 'Circle',
             visibility: PortVisibility.Visible
         }
     ]
@@ -73,23 +83,14 @@ export class AppComponent {
         ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
-    public getConnectorDefaults(obj: ConnectorModel): void {
-        obj.style = {
-            strokeColor: '#6BA5D7',
-            fill: '#6BA5D7',
-            strokeWidth: 2
-        }
-        obj.targetDecorator = {
-            style: {
-                fill: '#6BA5D7',
-                strokeColor: '#6BA5D7'
-            }
-        }
-    }
-
-    public created(args: Object): void {
-        // Update the target portID at the run time
-        (this.diagram as DiagramComponent).connectors[0].targetPortID = 'port3';
+    Update()
+    {
+        //update port at runtime
+        if (this.diagram ) {
+            this.diagram.connectors[0].sourcePortID = 'port2';
+            this.diagram.connectors[0].targetPortID = 'port4';
+            this.diagram.dataBind(); // Assuming dataBind is a method of the diagram
+          }
     }
 }
 

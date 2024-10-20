@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { AnnotationConstraints, DiagramModule, OrthogonalSegmentModel, PointModel } from '@syncfusion/ej2-angular-diagrams'
-
-
-
-import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, NodeConstraints, DiagramTooltipModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import {  AnnotationConstraints, DiagramModule, OrthogonalSegmentModel, PointModel, DiagramComponent, NodeModel,ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [

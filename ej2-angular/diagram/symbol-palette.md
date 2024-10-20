@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Symbol palette in Angular Diagram component
 
-The **SymbolPalette** displays a collection of palettes. The palette shows a set of nodes and connectors. It allows to drag and drop the nodes and connectors into the diagram.
+The [`symbolPalette`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/)  is a gallery of reusable symbols and diagram elements that can be dragged and dropped on the diagram surface multiple times.
 
 ## Create symbol palette
 
-The [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#height-number) properties of the symbol palette allows to define the size of the symbol palette.
+The [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/#height) properties of the symbol palette allows to define the size of the symbol palette.
 
 ```typescript
 @Component({
@@ -26,257 +26,179 @@ The [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palet
 export class AppComponent {}
 ```
 
-## Add palettes to SymbolPalette
+## Add nodes and palettes to SymbolPalette
 
-A palette allows to display a group of related symbols and it textually annotates the group with its header. A [`Palettes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#palettes-PaletteModel[]) can be added as a collection of symbol groups.
+The collection of predefined symbols can be added to palettes using the [`symbols`](https://ej2.syncfusion.com/angular/documentation/api/diagram/paletteModel/#symbols) property.
 
-The collection of predefined symbols can be added in palettes using the [`symbols`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#symbols-[]) property.
+A palette displays a group of related symbols and textually annotates the group with its header. A [`Palettes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/paletteModel/#palettemodel) can be added as a collection of symbol groups.
 
-To initialize a palette, define a JSON object with the property [`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#id-string) that is unique ID is set to the palettes.
+To initialize a palette, define a JSON object with the unique property [`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/paletteModel/#id). Additionally, include the symbols property, which contains an array of different symbols.
 
-The [`allowDrag`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette#allowdrag) property allows the user to drag the symbol from the symbol palette.
-
-The following code example illustrates how to define a palette and how its added to symbol palette.
+The following code example illustrates how to define symbols in a palette and how to add them to the symbol palette:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/symbolpalette/palettes-cs1/src/app.component.ts %}
+{% include code-snippet/diagram/symbolpalette/palettes/palettes-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/symbolpalette/palettes-cs1/src/main.ts %}
+{% include code-snippet/diagram/symbolpalette/palettes/palettes-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes/palettes-cs1" %}
 
-## Customize the palette header
+## Add connectors in symbol palette
 
-Palettes can be annotated with its header texts.
-
-The [`title`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#title-string) displayed as the header text of palette.
-
-The [`expanded`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#expanded-boolean) property of palette allows to expand/collapse its palette items.
-
-The [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#height-number) property of palette sets the height of the symbol group.
-
-The [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/diagram/palette#iconCss-string) property sets the content of the symbol group.
-
-The [`description`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolDescription#description) defines the text to be displayed and how that is to be handled in `getSymbolInfo`.
-
-Also, any HTML element into a palette header can be embedded by defining the getSymbolInfo property.
-
-The following code example illustrates how to customize palette headers.
+Connectors can be added to the symbol palette by defining them in the symbols array of the palette. 
+The following example shows how to render connectors in the symbol palette:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/symbolpalette/paletteheader-cs1/src/app.component.ts %}
+{% include code-snippet/diagram/symbolpalette/palettes/palette-con/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/symbolpalette/paletteheader-cs1/src/main.ts %}
+{% include code-snippet/diagram/symbolpalette/palettes/palette-con/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/symbolpalette/paletteheader-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes/palette-con" %}
 
-## Restrict expansion of the palette panel
+## Add group nodes in symbol palette
 
-The symbol palette panel can be restricted from getting expanded. The `cancel` argument of the `paletteExpanding` property defines whether the palette's panel should be expanded or collapsed. By default, the panel is expanded. This restriction can be done for each of the palettes in the symbol palette as desired.
-
-In the following code example, the basic shapes palette is restricted from getting collapsed whereas the swimlane shapes palette can be expanded or collapsed.
+The symbol palette supports adding group nodes. To add group nodes to the palette, the child nodes should be defined first, followed by the parent node. Refer to the following code to see how to render group nodes in the symbol palette:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/symbolpalette/restrictexpand-cs1/src/app.component.ts %}
+{% include code-snippet/diagram/symbolpalette/palettes/palette-grp/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/symbolpalette/restrictexpand-cs1/src/main.ts %}
+{% include code-snippet/diagram/symbolpalette/palettes/palette-grp/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/symbolpalette/restrictexpand-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes/palette-grp" %}
+
+## Drag and drop symbols from palette to diagram
+
+To drag and drop symbols from the palette to the diagram canvas, mousedown on the desired symbol in the palette, drag it to the desired location on the diagram canvas, and release the mouse button to drop it.
+
+![Drag and drop symbols](images/symbol-palette-drag-drop.gif)
+
+## Add symbols to palette at runtime
+
+Symbols can be added to palette at runtime by using public method, `addPaletteItem`. The following example shows how to add shapes to the palette at runtime.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/symbolpalette/palettes/symbol-add/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/symbolpalette/palettes/symbol-add/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes/symbol-add" %}
+
+## Remove symbols from palette at runtime
+
+Symbols can be removed from palette at runtime by using public method, `removePaletteItem`. The following example shows how to remove shapes from the palette at runtime.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/symbolpalette/palettes/symbol-rmv/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/symbolpalette/palettes/symbol-rmv/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes/symbol-rmv" %}
+
+## Symbol defaults
+
+While adding more symbols such as nodes and connectors to the palette, you can define the default settings for those objects using the [`getNodeDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/#getnodedefaults) and the [`getConnectorDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/#getconnectordefaults) properties of symbol palette.
+These properties allow you to specify default configurations for nodes and connectors, ensuring consistency and saving time when adding multiple symbols. By setting these properties, you can predefine attributes such as size, color, shape for nodes and line style, thickness, for connectors. 
+
+In the following example, the fill color of node and target decorator shape of connector is defined in getNodeDefaults and getConnectorDefaults respectively.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/symbolpalette/palettes/default-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/symbolpalette/palettes/default-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes/default-cs1" %}
+
+## Add palettes at runtime
+
+You can dynamically add palettes to the symbol palette at runtime to enhance flexibility and customization. This allows you to introduce new groups of symbols as needed without having to reload or reinitialize the diagram. The `addPalettes` method of the symbol palette enables you to create and configure new palettes programmatically. This method takes parameters that define the palette's properties, such as the palette `ID`, `title`, and the `symbols` it contains.
+
+Follow the example below to see how to add a palette at runtime.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/symbolpalette/palettes/palette-add/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/symbolpalette/palettes/palette-add/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes/palette-add" %}
+
+## Remove palettes at runtime
+
+You can remove palettes from the symbol palette at runtime. There are two ways to do this:
+
+* Use the `removePalette` method to remove a single palette by its ID.
+* Use the `removePalettes` method to remove multiple palettes by passing an array of palette IDs as a parameter.
+
+Follow the example below to see how to remove palettes at runtime.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/symbolpalette/palettes/palette-rmv/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/symbolpalette/palettes/palette-rmv/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes/palette-rmv" %}
 
 ## Stretch the symbols into the palette
 
-The [`fit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolInfo#fit-boolean) property defines whether the symbol has to be fit inside the size, that is defined by the symbol palette. For example, when you resize the rectangle in the symbol, ratio of the rectangle size has to be maintained rather changing into square shape. The following code example illustrates how to customize the symbol size.
+The [`fit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolInfo/#fit) property defines whether the symbol has to be fit inside the size, that is defined by the symbol palette. For example, when you resize the rectangle in the symbol, ratio of the rectangle size has to be maintained rather changing into square shape. The following code example illustrates how to customize the symbol size.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/symbolpalette/fit-cs1/src/app.component.ts %}
+{% include code-snippet/diagram/symbolpalette/palettes/fit-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/symbolpalette/fit-cs1/src/main.ts %}
+{% include code-snippet/diagram/symbolpalette/palettes/fit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/symbolpalette/fit-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/symbolpalette/palettes/fit-cs1" %}
 
-## Add/Remove symbols to palette at runtime
+## Refresh symbol palette
 
-* Symbols can be added to palette at runtime by using public method, [`addPaletteItem`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette/#addpaletteitem).
-
-* Symbols can be removed from palette at runtime by using public method, [`removePaletteItem`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette/#removepaletteitem).
-
-## Customize the size of symbols
-
-The size of the individual symbol can be customized. The [`symbolWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/#symbolwidth) and  [`symbolHeight`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/#symbolheight) properties of node enables you to define the size of the symbols. The following code example illustrates how to change the size of a symbol.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/symbolpalette/size-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/symbolpalette/size-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/symbolpalette/size-cs1" %}
-
-The [`symbolMargin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/#symbolmargin) property is used to create the space around elements, outside of any defined borders.
-
-## Symbol preview
-
-The symbol preview size of the palette items can be customized using [`symbolPreview`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview).
-The [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview#height-number) properties of SymbolPalette enables you to define the preview size to all the symbol palette items. The [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPreview#offset-PointModel) of the dragging helper relative to the mouse cursor.
-
-The following code example illustrates how to change the preview size of a palette item.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/symbolpalette/fit-cs2/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/symbolpalette/fit-cs2/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/symbolpalette/fit-cs2" %}
-
-## Default settings
-
-While adding more number of symbols such as nodes and connectors to the palette, define the default settings for those objects through the [`getNodeDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/#getnodedefaults) and the [`getConnectorDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/symbolPaletteModel/#getconnectordefaults) properties of diagram allows to define the default settings for nodes and connectors.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/symbolpalette/default-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/symbolpalette/default-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/symbolpalette/default-cs1" %}
-
-## Adding symbol description for symbols in the palette
-
-The diagram provides support to add symbol description below each symbol of a palette. This descriptive representation of each symbol will enhance the details of the symbol visually. The height and width of the symbol description can also be set individually.
-
-* The property `getSymbolInfo`, can be used to add the symbol description at runtime.
-
-The following code is an example to set a symbol description for symbols in the palette.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/symbolpalette/symboldesc-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/symbolpalette/symboldesc-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/symbolpalette/symboldesc-cs1" %}
-
-## Tooltip for symbols in symbol palette
-
-The Symbol palette supports displaying tooltips when mouse hovers over the symbols. You can customize the tooltip for each symbol in the symbol palette.
-
-### Default tooltip for symbols
-
-When hovering over symbols in the symbol palette, the default tooltip displays the symbol's ID.
-Refer to the image below for an illustration of the tooltip behavior in the symbol palette.
-
-
-![SymmbolPaletteTooltip](../diagram/images/SymbolPalatteTooltip.gif)
-
-### Custom tooltip for symbols
-
-To customize the tooltips for symbols in the symbol palette, assign a custom tooltip to the 'Tooltip' content property of each symbol. Once you define the custom tooltip, enable the Tooltip constraints for each symbol, ensuring that the tooltips are displayed when users hover over them.
-
-Here, the code provided below demonstrates how to define tooltip content to symbols within a symbol palette.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/symbolpalette/symboldesc-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/symbolpalette/symboldesc-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/symbolpalette/symboldesc-cs1" %}
-
-
-### How to provide different tooltip for Symbol palette and diagram elements.
-
-Differentiate the tooltips between symbols in the symbol palette and dropped nodes by utilizing the dragEnter event. When a custom tooltip is defined for a symbol, it will be displayed for both the symbol and the dropped node in the diagram canvas. 
-
-However, to provide distinct tooltips for symbols in the palette and dropped nodes, capture the dragEnter event and assign specific tooltips dynamically.  
-
-When a symbol is dragged from the symbol palette and enters the diagram canvas, the [`DragEnter`] [`IDragEnterEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragEnterEventArgs) event is triggered. Within this event, you can define a new tooltip for the dropped node. By assigning custom tooltip content to the Tooltip property of the node, you can provide a distinct tooltip that is specific to the dropped node.
-
-The following image illustrates the differentiation of tooltips displayed in the Symbol Palette and the Diagram.
-
-
-![SymmbolPaletteCustomTooltip](../diagram/images/SymbolCustomTooltip.gif)
-
-The following code snippet will demonstrate how to define two different tooltip for symbol in the symbol palette and dropped node in the diagram canvas.
+The `refresh` method allows you to refresh the symbols dynamically in the SymbolPalette.
 
 ```ts
-//Initialize the Diagram
- let diagram: Diagram = new Diagram({
-            width: '100%', height: '500px',
-            connectors: connectors, nodes: nodes,
-            //event to change tooltip content while dragging symbols into Diagram
-            dragEnter: dragEnter,
-        });
- diagram.appendTo('#diagram');
+//To refresh the symbols in symbol palette
+symbolPalette.refresh();
 
-function dragEnter(args:IDragEnterEventArgs)
-    {
-        //enable tooltip connstraints for the dragged symbol
-        args.dragItem.constraints = NodeConstraints.Default | NodeConstraints.Tooltip;
-
-        //change the tooltip content of the dragged symbol
-        args.dragItem.tooltip.content='This is Diagram Tooltip';
-    }
 ```
-
-## Palette interaction
-
-Palette interaction notifies the element enter, leave, and dragging of the symbols into the diagram.
-
-## DragEnter
-
-[`DragEnter`] [`IDragEnterEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragEnterEventArgs) notifies, when the element enter into the diagram from symbol palette.
-
-## DragLeave
-
-[`DragLeave`] [`IDragLeaveEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragLeaveEventArgs) notifies, when the element leaves from  the diagram.
-
-## DragOver
-
-[`DragOver`] [`IDragOverEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDragOverEventArgs) notifies, when an element drag over another diagram element.
-
->Note: The diagram provides support to cancel the drag and drop operation from the symbol palette to the diagram when the ESC key is pressed.
-
-## See Also
-
-* [How to add the symbol to the diagram](./nodes)
