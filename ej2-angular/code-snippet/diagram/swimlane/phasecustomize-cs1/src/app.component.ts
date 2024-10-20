@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, SwimLaneModel,Diagram, NodeModel,Node, LaneModel,HeaderModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, DiagramModule, NodeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -27,7 +21,7 @@ export class AppComponent {
                 type: 'SwimLane',
                 orientation: 'Horizontal',
                 header: {
-                    annotation: { content: 'ONLINE PURCHASE STATUS', style: { fill: 'pink' } },
+                    annotation: { content: 'ONLINE PURCHASE STATUS' },
                     height: 50, style: { fontSize: 11 },
                 },
                lanes: [
@@ -38,27 +32,28 @@ export class AppComponent {
                             annotation: { content: 'CUSTOMER' }, width: 50,
                             style: { fontSize: 11 }
                         },
-                          children: [
-                            {
-                                id: 'Order',
-                                margin: { left: 60, top: 20 },
-                                height: 40, width: 100
-                            }
-                        ],
                     },
 
                 ],
                 phases: [
-                 {
-                     id: 'phase1', offset: 120,
-                     // set the phase info
-                     addInfo:{name:'phase1'},
-                     header: { annotation: { content: 'Phase' } },style:{fill:'red'}
-                 },{
-                    id: 'phase2', offset: 200,
-                    header: { annotation: { content: 'Phase' } }
-                },
-                 ],
+                    {
+                      id: 'phase1',
+                      offset: 150,
+                      addInfo: { name: 'phase1' },
+                      header: {
+                        annotation: {
+                          content: 'First phase',
+                          style: { fill: 'yellow', color: 'red' },
+                        },
+                      },
+                    },
+                    {
+                      id: 'phase2',
+                      offset: 200,
+                      header: { annotation: { content: 'Second phase' } },
+                      style: { fill: 'violet' },
+                    },
+                  ],
                 phaseSize: 20,
             },
             offsetX: 420, offsetY: 270,
@@ -69,5 +64,3 @@ export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;  
 }
-
-

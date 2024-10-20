@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, TextStyleModel, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { DiagramModule, DiagramComponent, NodeModel, TextStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -19,7 +13,19 @@ standalone: true,
         <e-nodes>
             <e-node id='node1' [offsetX]=150 [offsetY]=150>
                 <e-node-annotations>
-                    <e-node-annotation id="label1" content="Annotation Text Wrapping" [style]="style">
+                    <e-node-annotation id="label1" content="Annotation Text WrapWithOverflow" [style]="node1Style">
+                    </e-node-annotation>
+                </e-node-annotations>
+            </e-node>
+            <e-node id='node2' [offsetX]=350 [offsetY]=150>
+                <e-node-annotations>
+                    <e-node-annotation id="label1" content="Annotation Text Wrapp" [style]="node2Style">
+                    </e-node-annotation>
+                </e-node-annotations>
+            </e-node>
+            <e-node id='node3' [offsetX]=550 [offsetY]=150>
+                <e-node-annotations>
+                    <e-node-annotation id="label1" content="Annotation Text NoWrap" [style]="node3Style">
                     </e-node-annotation>
                 </e-node-annotations>
             </e-node>
@@ -30,17 +36,23 @@ standalone: true,
 export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
-    public style?: TextStyleModel;
+    public node1Style?: TextStyleModel;
+    public node2Style?: TextStyleModel;
+    public node3Style?: TextStyleModel;
     ngOnInit(): void {
-        this.style = {
+        this.node1Style = {
+            textWrapping: 'WrapWithOverflow'
+        }
+        this.node2Style = {
             textWrapping: 'Wrap'
+        }
+        this.node3Style = {
+            textWrapping: 'NoWrap'
         }
     }
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
-        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
 }
