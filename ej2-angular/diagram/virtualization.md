@@ -10,31 +10,26 @@ domainurl: ##DomainURL##
 
 # Virtualization in Angular Diagram component
 
+Virtualization is a technique to optimize the performance of diagrams, especially when working with larger diagrams
+
 ## Virtualization in Diagram
 
-Virtualization is the process of loading the diagramming objects available in the visible area of the Diagram control, that is, only the diagramming objects that lie within the ViewPort of the Scroll Viewer are loaded (remaining objects are loaded only when they come into view).
+Virtualization optimizes the diagram performance by loading only the diagramming objects within the visible area, or ViewPort, of the Scroll Viewer. This means that only the nodes and connectors that are currently in view are loaded, while the remaining objects are loaded dynamically as they come into view.
 
-This feature gives an optimized performance while loading and dragging items to the Diagram that consists of many Nodes and Connectors.
+This feature significantly enhances performance, especially when working with diagrams containing a large number of nodes and connectors. By reducing the number of objects that need to be processed at any given time, virtualization ensures smoother interactions, such as loading and dragging items within the diagram.
 
-The following code illustrates how to enable Virtualization mode in the diagram.
+To enable virtualization in a diagram, you need to include the virtualization constraint in the diagram's constraints. For more information, refer to the  [`diagram constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramConstraints/#diagramconstraints).
 
-```typescript
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramConstraints } from '@syncfusion/ej2-diagrams';
-import { DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
-@Component({
-  selector: "app-container",
-  // specifies the template string for the diagram component
-  template: `<ejs-diagram id="diagram" width="100%" height="580px" [constraints]='diagramConstraints'></ejs-diagram>`
-})
-export class AppComponent {
-    @ViewChild("diagram")
-    public diagram: DiagramComponent;
+The following code example demonstrates how to enable Virtualization mode in the diagram:
 
-    public diagramConstraints: DiagramConstraints;
-    ngOnInit(): void {
-         //Enable virtualization in diagram
-        this.diagramConstraints = DiagramConstraints.Default | DiagramConstraints.Virtualization;
-    }
-}
-```
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/virtualization/virtualization-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/virtualization/virtualization-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+          
+{% previewsample "page.domainurl/samples/diagram/virtualization/virtualization-cs1" %}

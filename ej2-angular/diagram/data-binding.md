@@ -57,80 +57,17 @@ To learn more about data manager, refer to [`Data Manager`](https://ej2.syncfusi
 
 To bind remote data to the diagram,configure the fields of [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel). The following code illustrates how to bind remote data to the diagram.
 
-```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
-import { Diagram, NodeModel, ConnectorModel, SnapConstraints, SnapSettingsModel, DiagramTools } from '@syncfusion/ej2-diagrams';
-import { DataManager, Query } from '@syncfusion/ej2-data';
-@Component({
-    selector: 'app-container',
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="490px" [snapSettings]='snapSettings' [getConnectorDefaults]='connDefaults' [getNodeDefaults]='nodeDefaults' [tool]='tool' [layout]='layout' [dataSourceSettings]='data'>
-    </ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
-})
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/dataBinding/remoteBinding-cs1/src/app.component.ts %}
+{% endhighlight %}
 
-export class AppComponent {
-
-    public nodeDefaults(obj: NodeModel): NodeModel {
-        obj.width = 80;
-        obj.height = 40;
-        //Initialize shape
-        obj.shape = { type: 'Basic', shape: 'Rectangle' };
-        obj.style = { fill: '#048785', strokeColor: 'Transparent' };
-        return obj;
-    };
-
-    public data: Object = {
-        id: 'EmployeeID', parentId: 'ReportsTo',
-        dataManager: new DataManager(
-            { url: 'http://mvc.syncfusion.com/Services/Northwnd.svc/', crossDomain: true },
-            new Query().from('Employees').select('EmployeeID,ReportsTo,FirstName').take(9),
-        ),
-        //binds the external data with node
-        doBinding: (nodeModel: NodeModel, data: DataInfo, diagram: Diagram) => {
-            nodeModel.annotations = [{
-                /* tslint:disable:no-string-literal */
-                content: data['FirstName'],
-                style: { color: 'white' }
-            }];
-        }
-    };
-
-    public connDefaults(connector: ConnectorModel): void {
-        connector.type = 'Orthogonal';
-        connector.style.strokeColor = '#048785';
-        connector.targetDecorator.shape = 'None';
-    };
-
-    public tool: DiagramTools = DiagramTools.ZoomPan;
-    public snapSettings: SnapSettingsModel = { constraints: SnapConstraints.None };
-
-    public layout: Object = {
-        type: 'HierarchicalTree', margin: { left: 0, right: 0, top: 100, bottom: 0 },
-        verticalSpacing: 40,
-        getLayoutInfo: (node: NodeModel, options: TreeInfo) => {
-            if (options.level === 3) {
-                node.style.fill = '#3c418d';
-            }
-            if (options.level === 2) {
-                node.style.fill = '#108d8d';
-                options.type = 'Center';
-                options.orientation = 'Horizontal';
-            }
-            if (options.level === 1) {
-                node.style.fill = '#822b86';
-            }
-        }
-    };
-}
-
-export interface EmployeeInfo {
-    Role: string;
-    color: string;
-}
-export interface DataInfo {
-    [key: string]: string;
-}
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/dataBinding/remoteBinding-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/dataBinding/remoteBinding-cs1" %}
 
 ## CRUD
 

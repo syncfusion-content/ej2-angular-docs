@@ -28,7 +28,7 @@ The UML class diagram shapes are explained as follows.
 
 * The method’s [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel#name), [`parameters`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel#parameters), [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel#type), and [`scope`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel#scope) properties allow you to define the name, parameter, return type, and visibility of the methods.
 
-* The method parameters object properties allow you to define the name and type of the parameter.
+* The method [`parameters`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassMethodModel#parameters) object properties allow you to define the name and type of the parameter.
 
 * The following code example illustrates how to create a class.
 
@@ -46,7 +46,7 @@ The UML class diagram shapes are explained as follows.
 
 ### Interface
 
-* An interface is a specific type of classifier that signifies a declaration of a cohesive set of public features and obligations. When creating an interface, it involves defining the classifier property using the [`interface`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel#interface) notation. This essential concept in object-oriented programming outlines a contract for classes to adhere to, specifying the required methods and behaviors without delving into the implementation details.
+* An [`interface`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel#interface) is a specific type of classifier that signifies a declaration of a cohesive set of public features and obligations. When creating an interface, it involves defining the classifier property using the interface notation. This essential concept in object-oriented programming outlines a contract for classes to adhere to, specifying the required methods and behaviors without delving into the implementation details.
 
 * Also, define the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel#name), [`attributes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel#attributes), and [`methods`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlInterfaceModel#methods) of the interface using the interface property of the node.
 
@@ -72,9 +72,9 @@ The UML class diagram shapes are explained as follows.
 
 ### Enumeration
 
-* To establish an enumeration, designate the classifier property of the node as [enumeration](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel#enumeration). Additionally, define the name and enumerate the members of the enumeration using the appropriate enumeration property of the node. This process encapsulates a set of distinct values within the enumeration, allowing for a clear representation of specific, named constants within a system.
+* To establish an enumeration, designate the classifier property of the node as [enumeration](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassifierShapeModel#enumeration). Additionally, define the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel#name) and enumerate the [`members`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/umlEnumerationModel/#umlenumerationmodel) of the enumeration using the appropriate enumeration property of the node. This process encapsulates a set of distinct values within the enumeration, allowing for a clear representation of specific, named constants within a system.
 
-* You can set a name for the enumeration members collection using the name property of members collection.
+* You can set a name for the enumeration members collection using the [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/umlClassAttributeModel#name) property of members collection.
 
 * The following code example illustrates how to create an enumeration.
 
@@ -99,17 +99,17 @@ The UML class diagram shapes are explained as follows.
 | Association | ![Association](images/Association.png) |
 | Aggregation | ![Aggregation](images/Aggregation.png)  |
 | Composition | ![Composition](images/Composition.png) |
-| Inheritance | ![Inheritance](images/Inheritance.png)   |
-| Dependency  | ![Dependency](images/Dependency.png) |
+| Inheritance | ![Inheritance](images/Dependency.png)    |
+| Dependency  | ![Dependency](images/Inheritance.png)|
 
 ### Association
 
-Association is basically a set of links that connects elements of an UML model. The type of association are as follows.
+`Association` is basically a set of links that connects elements of an UML model. The type of association are as follows.
 
-1. Directional
-2. BiDirectional
+    1. Directional
+    2. BiDirectional
 
-The association property allows you to define the type of association. The default value of association is “Directional”. The following code example illustrates how to create an association.
+The association property allows you to define the type of association. The default value of association is`“Directional”`. The following code example illustrates how to create an association.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -125,9 +125,7 @@ The association property allows you to define the type of association. The defau
 
 ### Aggregation
 
-Aggregation is a binary association between a property and one or more composite objects which group together a set of instances.
-
-Aggregation is decorated with a hollow diamond. To create an aggregation shape, define the relationship as “aggregation”.
+`Aggregation` is a binary association between a property and one or more composite objects that group together a set of instances. Aggregation is decorated with a hollow diamond. To create an aggregation shape, define the [`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#relationship) of connector shape as “Aggregation”.
 
 The following code example illustrates how to create an aggregation.
 
@@ -145,7 +143,7 @@ The following code example illustrates how to create an aggregation.
 
 ### Composition
 
-Composition is a “strong” form of “aggregation”. Composition is decorated with a black diamond. To create a composition shape, define the relationship property of connector as “composition”.
+Composition is a strong form of `aggregation`. The composition is decorated with a black diamond. To create a composition shape, define the [`relationship`][`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#relationship) property of the connector shape as "Composition".
 
 The following code example illustrates how to create a composition.
 
@@ -161,29 +159,11 @@ The following code example illustrates how to create a composition.
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/composition-cs1" %}
 
-### Dependency
-
-Dependency is a directed relationship, which is used to show that some UML elements needs or depends on other model elements for specifications. Dependency is shown as dashed line with opened arrow. To create a dependency, define the relationship property of connector as “dependency”.
-
-The following code example illustrates how to create an dependency.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/dependency-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/dependency-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/dependency-cs1" %}
-
 ### Inheritance
 
 Inheritance is also called as “generalization”. Inheritance is a binary taxonomic directed relationship between a more general classifier (super class) and a more specific classifier (subclass). Inheritance is shown as a line with hollow triangle.
 
-To create an inheritance, define the relationship as “inheritance”.
+To create an inheritance, define the [`relationship`][`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#relationship) as “inheritance”.
 
 The following code example illustrates how to create an inheritance.
 
@@ -199,24 +179,42 @@ The following code example illustrates how to create an inheritance.
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/inheritance-cs1" %}
 
+### Dependency
+
+Dependency is a directed relationship, which is used to show that some UML elements needs or depends on other model elements for specifications. Dependency is shown as dashed line with opened arrow. To create a dependency, define the [`relationship`][`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#relationship) property of the connector shape as “dependency”.
+
+The following code example illustrates how to create an dependency.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/umldiagramshapes/dependency-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/umldiagramshapes/dependency-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/dependency-cs1" %}
+
 ### Multiplicity
 
 Multiplicity is a definition of an inclusive interval of non-negative integers to specify the allowable number of instances of described element. The type of multiplicity are as follows.
 
-* OneToOne
-* ManyToOne
-* OneToMany
-* ManyToMany
+    1. OneToOne
+    2. ManyToOne
+    3. OneToMany
+    4. ManyToMany
 
-1.By default the multiplicity will be considered as “OneToOne”.
+By default the multiplicity will be considered as “OneToOne”.
 
-2.The multiplicity property in UML allows you to specify large number of elements or some collection of elements.
+The multiplicity property in UML allows you to specify large number of elements or some collection of elements.
 
-3.The shape multiplicity’s source property is used to set the source label to connector and the target property is used to set the target label to connector.
+The shape multiplicity’s [`source`](https://ej2.syncfusion.com/angular/documentation/api/diagram/classifierMultiplicityModel/#source) property is used to set the source label to connector and the [`target`](https://ej2.syncfusion.com/angular/documentation/api/diagram/classifierMultiplicityModel/#target) property is used to set the target label to connector.
 
-4.To set an optionality or cardinality for the connector source label, use optional property.
+To set an optionality or cardinality for the connector source label, use [`optional`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicityLabelModel/#optional) property.
 
-5.The [`lowerBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicityLabelModel#lowerBounds) and [`upperBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicityLabelModel#upperBounds) could be natural constants or constant expressions evaluated to natural (non negative) number. Upper bound could be also specified as asterisk ‘\*’ which denotes unlimited number of elements. Upper bound should be greater than or equal to the lower bound.
+The [`lowerBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicityLabelModel#lowerBounds) and [`upperBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/multiplicityLabelModel#upperBounds) could be natural constants or constant expressions evaluated to natural (non negative) number. Upper bound could be also specified as asterisk ‘\*’ which denotes unlimited number of elements. Upper bound should be greater than or equal to the lower bound.
 
 The following code example illustrates how to customize the multiplicity.
 
@@ -240,14 +238,8 @@ In UML nodes, child elements such as member, method and attribute can be added e
 
 The [addChildToUmlNode](https://ej2.syncfusion.com/angular/documentation/api/diagram#addchildtoumlnode) method is employed for dynamically adding a child to the UML node during runtime, providing flexibility in modifying the diagram structure programmatically.
 
-The following code illustrates how to add methods to UML nodes in diagram.
+The following code example illustrates how to add members, methods and attributes to UML node at rumtime.
 
-```ts
-let node = diagram.selectedItems.nodes[0];
-let methods = { name: 'getHistory', style: { color: "red", }, parameters: [{ name: 'Date', style: {} }], type: 'History' };
-diagram.addChildToUmlNode(node, methods, 'Method');
-
-```
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/umldiagramshapes/umlmethod-cs1/src/app.component.ts %}
@@ -260,50 +252,6 @@ diagram.addChildToUmlNode(node, methods, 'Method');
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlmethod-cs1" %}
 
-
-The following code illustrates how to add attributes to UML nodes in diagram.
-
-```ts
-let node = diagram.selectedItems.nodes[0];
-let attributes = { name: 'accepted', type: 'Date', style: { color: "red", } };
-diagram.addChildToUmlNode(node, attributes, "Attribute");
-
-```
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlattribute-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlattribute-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlattribute-cs1" %}
-
-The following code illustrates how to add members to UML nodes in diagram.
-
-```ts
-let node = diagram.selectedItems.nodes[0];
-let members = { name: 'Checking new', style: { color: "red", }, isSeparator: true };
-diagram.addChildToUmlNode(node, members, "Member");
-
-```
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlmember-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/umldiagramshapes/umlmember-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/umldiagramshapes/umlmember-cs1" %}
-
-
 ### Adding UML child through user interaction
 
 To include a child, select a node, move the mouse outside it, and position the pointer near the right side. A highlighter emerges between the two child elements. Click the highlighter to add a child type to the chosen UML node seamlessly. The following gif illustrates how to add Child through user interaction.
@@ -312,7 +260,7 @@ To include a child, select a node, move the mouse outside it, and position the p
 
 ## Adding UML Nodes in Symbol palette
 
-UML built-in shapes are efficiently rendered in a symbol palette. The `symbols` property is utilized to define UML symbols with the necessary classes and methods. By incorporating this feature, you can seamlessly augment the palette with a curated collection of predefined UML symbols, thereby enhancing the versatility of your UML diagramming application.
+UML built-in shapes are easily rendered in a symbol palette. The [`symbols`](https://ej2.syncfusion.com/angular/documentation/api/diagram/paletteModel/#symbols) property of [`palettes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/paletteModel/) is used to define UML symbols with the necessary classes and methods. This feature allows you to add a collection of predefined UML symbols to the palette, making your UML diagramming application more versatile.
 
 The following code example showcases the rendering of UML built-in shapes in a symbol palette
 
@@ -328,7 +276,7 @@ The following code example showcases the rendering of UML built-in shapes in a s
   
 {% previewsample "page.domainurl/samples/diagram/umldiagramshapes/uml-cs1" %}
 
-## Editing
+## Editing in UML nodes
 
 You can edit the name, attributes, and methods of the class diagram shapes just double clicking, similar to editing a node annotation.
 

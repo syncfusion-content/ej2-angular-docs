@@ -12,10 +12,10 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD010 -->
 
-There are several commands available in the diagram as follows.
+The commands in diagram control are used to perform various interactions within the diagram when called. Several commands are available in the diagram, as follows:
 
 * Alignment commands
-* Spacing commands
+* Distribute commands
 * Sizing commands
 * Clipboard commands
 * Grouping commands
@@ -25,175 +25,142 @@ There are several commands available in the diagram as follows.
 * FitToPage commands
 * Undo/Redo commands
 
-## Align
+## Align commands
 
-Alignment commands enable you to align the selected or defined objects such as nodes and connectors with respect to the selection boundary. Refer to [`align`](https://ej2.syncfusion.com/angular/documentation/api/diagram#align) commands which shows how to use align methods in the diagram.
+The alignment command enables you to align selected or defined objects, such as nodes and connectors, with respect to the selection boundary or the first selected object. The [`align`](https://ej2.syncfusion.com/angular/documentation/api/diagram#align) method parameters are explained below..
+
+### Alignment Options
+
+The [`Alignment Options`](https://ej2.syncfusion.com/angular/documentation/api/diagram/alignmentOptions/) defines the alignment position of objects to be aligned.
+
+|Alignment|Description|
+|----|----|
+|Left| Aligns all the selected objects at the left of the selection boundary|
+|Right| Aligns all the selected objects at the right of the selection boundary|
+|Center| Aligns all the selected objects at the center of the selection boundary|
+|Top| Aligns all the selected objects at the top of the selection boundary|
+|Bottom| Aligns all the selected objects at the bottom of the selection boundary|
+|Middle| Aligns all the selected objects at the middle of the selection boundary|
 
 <!-- markdownlint-disable MD033 -->
 
-| Parameters | Description |
-|:------------| :------: |
-|[`Alignment Options`](https://ej2.syncfusion.com/angular/documentation/api/diagram/alignmentOptions#AlignmentOptions) | <p align="left">Defines the specific direction, with respect to which the objects to be aligned. <br> The accepted values of the argument "alignment options" are as follows.</p> <table><tr><td> Left </td><td align="left"> Aligns all the selected objects at the left of the selection boundary. </td></tr><tr><td> Right </td><td align="left"> Aligns all the selected objects at the right of the selection boundary. </td></tr><tr><td> Center </td><td align="left"> Aligns all the selected objects at the center of the selection boundary. </td></tr><tr><td>Top </td><td align="left"> Aligns all the selected objects at the top of the selection boundary. </td></tr><tr><td> Bottom </td><td align="left"> Aligns all the selected objects at the bottom of the selection boundary. </td></tr><tr><td> Middle </td><td align="left"> Aligns all the selected objects at the middle of the selection boundary. </td></tr></table>|
-| Objects | <p align="left">Defines the objects to be aligned. This is an optional parameter. By default, all the nodes and connectors in the selected region of the diagram gets aligned.</p> |
-[`Alignment Mode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/alignmentMode#AlignmentMode)  | <p align="left">Defines the specific mode, with respect to which the objects to be aligned. This is an optional parameter. The default alignment mode is `Object`.<br> The accepted values of the argument "alignment mode" are as follows.</p> <table><tr><td> Object </td><td align="left"> Aligns the objects based on the first object in the selected list. </td></tr><tr><td> Selector </td><td align="left"> Aligns the objects based on the selection boundary. </td></tr></table>|
+### Objects 
+
+Defines the objects to be aligned. This is an optional parameter. By default, all the nodes and connectors in the selected region of the diagram gets aligned.
+
+### Alignment Mode
+
+[`Alignment Mode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/alignmentMode/) defines the specific mode, with respect to which the objects to be aligned. This is an optional parameter. The default alignment mode is `Object`. The accepted values of the argument "alignment mode" are as follows.
+
+The below table shows the alignment as `Left` for different alignment modes.
+
+|Nodes before alignment|Alignment mode|Description|Output image|
+|----|----|----|----|
+|![Align original](images/alignOrginal.png)|Object (Default)|Aligns the objects based on the bounds of first object in the selected list.|![Align Object](images/alignObject.png)|
+|![Align original](images/alignOrginal.png)|Selector|Aligns the objects based on the selection boundary.|![Align Selector](images/alignSelector.png)|
+
 
 The following code example illustrates how to align all the selected objects at the left side of the selection boundary.
 
-```typescript
-@Component({
-    selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults' (created)='created($event)'>
-        <e-nodes>
-            <e-node id='node1' [offsetX]=100 [offsetY]=100 [width]=90>
-            </e-node>
-            <e-node id='node2' [offsetX]=100 [offsetY]=170 [width]=100>
-            </e-node>
-            <e-node id='node3' [offsetX]=100 [offsetY]=240 [width]=140>
-            </e-node>
-        </e-nodes>
-    </ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-    @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public selArray: (NodeModel | ConnectorModel)[] = [];
-    public getNodeDefaults(node: NodeModel): NodeModel {
-        node.height = 60;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
-        return node;
-    }
-    public created(args: Object): void {
-        this.selArray = [];
-        this.selArray.push(this.diagram.nodes[0], this.diagram.nodes[1], this.diagram.nodes[2]);
-        //Selects the nodes
-        this.diagram.select(this.selArray);
-        //Sets direction as left
-        this.diagram.align('Left', this.diagram.selectedItems.nodes, 'Selector');
-        this.diagram.dataBind();
-    }
-}
-```
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/commands/aligMode-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/commands/aligMode-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/commands/aligMode-cs1" %}
 
 ![Align Sample](images/Commands_img1.png)
 
-## Distribute
+## Distribute commands
 
-The [`Distribute`](https://ej2.syncfusion.com/angular/documentation/api/diagram#distribute) commands enable to place the selected objects on the page at equal intervals from each other. The selected objects are equally spaced within the selection boundary.
+The [`Distribute`](https://ej2.syncfusion.com/angular/documentation/api/diagram#distribute) method enable you to place the selected objects on the page at equal intervals from each other. The selected objects are equally spaced within the selection boundary. The [`Distribute`](https://ej2.syncfusion.com/angular/documentation/api/diagram#distribute) method parameters are explained below.
 
-The factor to distribute the shapes [`DistributeOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/distributeOptions#DistributeOptions) are listed as follows:
+### Distribute options
 
-* RightToLeft: Distributes the objects based on the distance between the right and left sides of the adjacent objects.
-* Left: Distributes the objects based on the distance between the left sides of the adjacent objects.
-* Right: Distributes the objects based on the distance between the right sides of the adjacent objects.
-* Center: Distributes the objects based on the distance between the center of the adjacent objects.
-* BottomToTop: Distributes the objects based on the distance between the bottom and top sides of the adjacent objects.
-* Top: Distributes the objects based on the distance between the top sides of the adjacent objects.
-* Bottom: Distributes the objects based on the distance between the bottom sides of the adjacent objects.
-* Middle: Distributes the objects based on the distance between the vertical center of the adjacent objects.
+The factors for distributing shapes using  [`DistributeOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/distributeOptions#DistributeOptions) are listed as follows:
 
-The following code example illustrates how to execute the space commands.
+|Distribute option| Description|
+|----|----|
+| RightToLeft | Distributes the objects based on the distance between the right and left sides of the adjacent objects. |
+| Left | Distributes the objects based on the distance between the left sides of the adjacent objects. |
+| Right | Distributes the objects based on the distance between the right sides of the adjacent objects. |
+| Center | Distributes the objects based on the distance between the center of the adjacent objects. |
+| BottomToTop | Distributes the objects based on the distance between the bottom and top sides of the adjacent objects. |
+| Top | Distributes the objects based on the distance between the top sides of the adjacent objects. |
+| Bottom | Distributes the objects based on the distance between the bottom sides of the adjacent objects. |
+| Middle | Distributes the objects based on the distance between the vertical center of the adjacent objects. |
 
-```typescript
-@Component({
-    selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults' (created)='created($event)'>
-        <e-nodes>
-            <e-node id='node1' [offsetX]=100 [offsetY]=100>
-            </e-node>
-            <e-node id='node2' [offsetX]=100 [offsetY]=170>
-            </e-node>
-            <e-node id='node3' [offsetX]=100 [offsetY]=240>
-            </e-node>
-        </e-nodes>
-    </ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-    @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public selArray: (NodeModel | ConnectorModel)[] = [];
-    public getNodeDefaults(node: NodeModel): NodeModel {
-        node.width = 90;
-        node.height = 60;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
-        return node;
-    }
-    public created(args: Object): void {
-        this.selArray = [];
-        this.selArray.push(this.diagram.nodes[0], this.diagram.nodes[1], this.diagram.nodes[2]);
-        //Selects the nodes
-        this.diagram.select(this.selArray);
-        //Distributes space between the nodes
-        this.diagram.distribute('RightToLeft', this.diagram.selectedItems.nodes);
-    }
-}
-```
+### Objects 
+
+Defines the objects to be distributed. This is an optional parameter. By default, all the nodes and connectors in the selected region of the diagram gets distributed.
+
+The following code example illustrates how the nodes are distributed using the `RightToLeft` option.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/commands/distribute-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/commands/distribute-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/commands/distribute-cs1" %}
+
 
 ![Distribute Sample](images/Commands_img2.png)
 
-## Sizing
+## Sizing commands
 
-Sizing [`sameSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sameSize) commands enable to equally size the selected nodes with respect to the first selected object.
+The [`sameSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#sameSize) command enables you to size all selected nodes to match the size of the first selected object or the first node in the objects collection you provide as the second parameter. The parameters for the [`sameSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sameSize) method are explained below.
 
-[`SizingOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/sizingOptions) are as follows:
+### Sizing options
 
-* Width: Scales the width of the selected objects.
-* Height: Scales the height of the selected objects.
-* Size: Scales the selected objects both vertically and horizontally.
+[`SizingOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/sizingOptions) include:
+
+|Sizing options|Description|
+|----|----|
+| Width | Adjusts the width of all objects to match the width of the first node in the objects collection. |
+| Height | Adjusts the height of all objects to match the height of the first node in the objects collection. |
+| Size | Adjusts both the width and height of all objects to match the size of the first node in the objects collection. |
+
+### Objects
+
+This optional parameter defines which objects should be scaled. By default, all nodes and connectors within the selected region of the diagram are scaled.
 
 The following code example illustrates how to execute the size commands.
 
-```typescript
-@Component({
-    selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults' (created)='created($event)'>
-        <e-nodes>
-            <e-node id='node1' [offsetX]=100 [offsetY]=100 [width]=90>
-            </e-node>
-            <e-node id='node2' [offsetX]=100 [offsetY]=170 [width]=100>
-            </e-node>
-            <e-node id='node3' [offsetX]=100 [offsetY]=240 [width]=140>
-            </e-node>
-        </e-nodes>
-    </ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-    @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public selArray: (NodeModel | ConnectorModel)[] = [];
-    public getNodeDefaults(node: NodeModel): NodeModel {
-        node.width = 90;
-        node.height = 60;
-        node.style.fill = "#6BA5D7";
-        node.style.strokeColor = "White";
-        return node;
-    }
-    public created(args: Object): void {
-        this.selArray = [];
-        this.selArray.push(this.diagram.nodes[0], this.diagram.nodes[1], this.diagram.nodes[2]);
-        //Selects the nodes
-        this.diagram.select(this.selArray);
-        //Resizes the selected nodes with the same width
-        this.diagram.sameSize('Width', this.diagram.selectedItems.nodes);
-    }
-}
-```
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/commands/sizing-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/commands/sizing-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/commands/sizing-cs1" %}
 
 ![Sizing Sample](images/Commands_img3.png)
 
-## Clipboard
+## Clipboard commands
 
-Clipboard commands are used to cut, copy, or paste the selected elements. Refer to the following link which shows how to use clipboard methods in the diagram.
+Clipboard commands are used to cut, copy, or paste selected elements in the diagram using the[`cut`](https://ej2.syncfusion.com/angular/documentation/api/diagram#cut), [`copy`](https://ej2.syncfusion.com/angular/documentation/api/diagram#copy), [`paste`](https://ej2.syncfusion.com/angular/documentation/api/diagram#paste) methods. You can also use keyboard shortcuts for these actions. For detailed information on using these methods refer the below table.
 
-* Cuts the selected elements from the diagram to the diagram’s clipboard, [`cut`](https://ej2.syncfusion.com/angular/documentation/api/diagram#cut).
+| Command (Shortcut key) | Description |
+|---------|-------------|
+| `Cut` (CTRL+X)  | Removes the selected elements from the diagram and places them onto the diagram’s clipboard. This operation is performed using the [`cut`](https://ej2.syncfusion.com/angular/documentation/api/diagram#cut) method. |
+| `Copy`(CTRL+C)  | Duplicates the selected elements and places them onto the diagram’s clipboard without removing them from their original location. Use the [`copy`](https://ej2.syncfusion.com/angular/documentation/api/diagram#copy) method for this operation. |
+| `Paste`(CTRL+V) | Inserts the elements stored on the diagram’s clipboard (nodes and connectors) into the diagram. This can be done using the [`paste`](https://ej2.syncfusion.com/angular/documentation/api/diagram#paste) method. |
 
-* Copies the selected elements from the diagram to the diagram’s clipboard, [`copy`](https://ej2.syncfusion.com/angular/documentation/api/diagram#copy).
-
-* Pastes the diagram’s clipboard data (nodes/connectors) into the diagram, [`paste`](https://ej2.syncfusion.com/angular/documentation/api/diagram#paste).
+The [`paste`](https://ej2.syncfusion.com/angular/documentation/api/diagram#paste) method optionally accepts a collection of nodes or connectors to be added to the diagram.
 
 The following code illustrates how to execute the clipboard commands.
 
@@ -209,15 +176,16 @@ The following code illustrates how to execute the clipboard commands.
   
 {% previewsample "page.domainurl/samples/diagram/commands/clipboard-cs1" %}
 
-## Grouping
+## Grouping commands
 
-**Grouping commands** are used to group/ungroup the selected elements on the diagram. Refer to the following link which shows how to use grouping commands in the diagram.
+Grouping Commands are used to group or ungroup selected elements in the diagram. Grouping commands help in managing and organizing multiple elements by combining them into a single group or separating them into individual elements. You can also use keyboard shortcuts for these actions. The following table provides more details on these commands:
 
-[`Group`](https://ej2.syncfusion.com/angular/documentation/api/diagram#group) the selected nodes and connectors in the diagram.
+| Commands (Shortcut key) | Description|
+|----|----|
+| [`Group`](https://ej2.syncfusion.com/angular/documentation/api/diagram#group) (CTRL+G) | Combines the selected nodes and connectors into a single group, allowing you to move, resize, or apply other operations to all grouped elements as a unit. |
+| [`Ungroup`](https://ej2.syncfusion.com/angular/documentation/api/diagram#ungroup) (CTRL+Shift+U) | Splits a previously grouped set of nodes and connectors into individual elements, enabling you to modify or manipulate them separately.            |
 
-[`Ungroup`](https://ej2.syncfusion.com/angular/documentation/api/diagram#ungroup) the selected nodes and connectors in the diagram.
-
-The following code illustrates how to execute the grouping commands.
+The following code examples demonstrate how to use the grouping commands in diagram:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -231,11 +199,37 @@ The following code illustrates how to execute the grouping commands.
   
 {% previewsample "page.domainurl/samples/diagram/commands/grouping-cs1" %}
 
+
+## Rotate commands
+
+The [`rotate`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#rotate) commands in the diagram allow users to rotate selected elements by specified angles. These commands are useful for adjusting the rotate angle of nodes or shapes within the diagram.
+
+| Parameter | Type | Description |
+|----------|-------|-------------|
+| obj | NodeModel / ConnectorModel/ SelectorModel | The objects to be rotated. |
+| angle | number | The angle by which the objects should be rotated (in degrees). |
+| pivot (optional)   | PointModel| The reference point with respect to which the objects will be rotated. |
+| rotateUsingHandle (optional) | boolean | Whether to rotate using the handle. |
+
+You can also use CTRL+R to rotate clockwise and CTRL+L to rotate anti-clockwise. The following example shows how to rotate nodes in clockwise and anti-clockwise direction.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/commands/rotate-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/commands/rotate-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/commands/rotate-cs1" %}
+
 ## Z-Order command
 
-**Z-Order commands** enable you to visually arrange the selected objects such as nodes and connectors on the page.
+**Z-Order commands** enable you to visually arrange the selected objects such as nodes and connectors, on the diagram page.
 
-### bringToFront command
+### BringToFront command
 
 The [`bringToFront`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringToFront) command visually brings the selected element to front over all the other overlapped elements. The following code illustrates how to execute the `bringToFront` command.
 
@@ -251,7 +245,7 @@ The [`bringToFront`](https://ej2.syncfusion.com/angular/documentation/api/diagra
   
 {% previewsample "page.domainurl/samples/diagram/commands/bringtofront-cs1" %}
 
-### sendToBack command
+### send To back command
 
 The [`sendToBack`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sendToBack) command visually moves the selected element behind all the other overlapped elements. The following code illustrates how to execute the `sendToBack` command.
 
@@ -267,7 +261,7 @@ The [`sendToBack`](https://ej2.syncfusion.com/angular/documentation/api/diagram#
   
 {% previewsample "page.domainurl/samples/diagram/commands/sendtoback-cs1" %}
 
-### moveForward command
+### Move Forward command
 
 The [`moveForward`](https://ej2.syncfusion.com/angular/documentation/api/diagram#moveForward) command visually moves the selected element over the nearest overlapping element. The following code illustrates how to execute the `moveForward` command.
 
@@ -283,7 +277,7 @@ The [`moveForward`](https://ej2.syncfusion.com/angular/documentation/api/diagram
   
 {% previewsample "page.domainurl/samples/diagram/commands/moveforward-cs1" %}
 
-### sendBackward command
+### send Backward command
 
 The [`sendBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sendBackward) command visually moves the selected element behind the underlying element. The following code illustrates how to execute the `sendBackward` command.
 
@@ -298,6 +292,8 @@ The [`sendBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagra
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/commands/sendbackward-cs1" %}
+
+The Z-order commands can also be performed using keyboard shortcuts. For more information, refer to the [`keyboard commands`](./interaction/#keyboard).
 
 ## Zoom
 
@@ -327,99 +323,95 @@ export class AppComponent {
 }
 ```
 
+For more information about zoom refer to the [zoom](././scroll-settings/#update-zoom-at-runtime)
+
 ## Nudge command
 
-The [`nudge`](https://ej2.syncfusion.com/angular/documentation/api/diagram#nudge) commands move the selected elements towards up, down, left, or right by 1 pixel.
+The [`nudge`](https://ej2.syncfusion.com/angular/documentation/api/diagram#nudge) commands move the selected elements towards up, down, left, or right by 1 pixel. The parameters of [`nudge`](https://ej2.syncfusion.com/angular/documentation/api/diagram#nudge) method is explained below.
 
-[`NudgeDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nudgeDirection) nudge command moves the selected elements towards the specified direction by 1 pixel, by default.
+| Parameter    | Type           | Description                                                      |
+|--------------|-----------|-----------|
+| direction    |[`NudgeDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nudgeDirection/) | Defines the direction in which the objects should be moved.      |
+| x (optional) | number         | The horizontal distance by which the selected objects should be moved. |
+| y (optional) | number         | The vertical distance by which the selected objects should be moved.   |
+| type (optional) | string      | A string that defines the type of nudge action.                           |
 
-The accepted values of the argument "direction" are as follows:
+The accepted values for the "direction" argument are as follows:
 
-* Up: Moves the selected elements towards up by the specified delta value.
-* Down: Moves the selected elements towards down by the specified delta value.
-* Left: Moves the selected elements towards left by the specified delta value.
-* Right: Moves the selected elements towards right by the specified delta value.
+* Up: Moves the selected elements up by the specified delta value.
+* Down: Moves the selected elements down by the specified delta value.
+* Left: Moves the selected elements left by the specified delta value.
+* Right: Moves the selected elements right by the specified delta value.
 
 The following code illustrates how to execute nudge command.
 
-```typescript
-@Component({
-    selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" (created)='created($event)'>
-    </ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-    @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public created(args: Object): void {
-        //Nudges to right
-        this.diagram.nudge('Right');
-    }
-}
-```
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/commands/nudge-cs1/src/app.component.ts %}
+{% endhighlight %}
 
-## Nudge by using arrow keys
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/commands/nudge-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/commands/nudge-cs1" %}
 
-The corresponding arrow keys are used to move the selected elements towards up, down, left, or right direction by 1 pixel.
+### Nudge by using arrow keys
+
+The arrow keys can be used to move the selected elements up, down, left, or right by 1 pixel.
 
 ![Nudge Command](images/Commands_img4.png)
 
 Nudge commands are particularly useful for accurate placement of elements.
 
+N> The position change event will not trigger when using keyboard keys to move a node or connector.
+
 ## BringIntoView
 
-The [`bringIntoView`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringIntoView) command brings the specified rectangular region into the viewport of the diagram.
+The [`bringIntoView`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringIntoView) command brings the specified rectangular region into the viewport of the diagram, ensuring that it is visible within the current view.
+
+The [`bringIntoView`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#bringintoview) method takes a single parameter, an object that defines the rectangular region to bring into view. This object should include properties such as x, y, width, and height to specify the exact region to be made visible.
 
 The following code illustrates how to execute the `bringIntoView` command.
 
-```typescript
-@Component({
-    selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" (created)='created($event)'>
-    </ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-    @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public bound: Rect
-    public created(args: Object): void {
-        //Brings the specified rectangular region of the Diagram content to the viewport of the page.
-        this.bound= new Rect(200, 400, 500, 400);
-        this.diagram.bringIntoView(this.bound);
-    }
-}
-```
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/commands/bringIntoView-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/commands/bringIntoView-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/commands/bringIntoView-cs1" %}
 
 ## BringToCenter
 
-The [`bringToCenter`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringToCenter) command brings the specified rectangular region of the diagram content to the center of the viewport.
+The [`bringToCenter`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringToCenter) command brings the specified rectangular region of the diagram content within the viewport.
+
+ The [`bringToCenter`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringToCenter) method takes a single parameter, an object that defines the rectangular region to be centered. This object should include properties such as x, y, width, and height to specify the exact region to be brought to the center.
 
 The following code illustrates how to execute the `bringToCenter` command.
 
-```typescript
-@Component({
-    selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" (created)='created($event)'>
-    </ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-    @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public bound: Rect
-    public created(args: Object): void {
-        //Brings the specified rectangular region of the Diagram content to the center of the viewport.
-        this.bound= new Rect(200, 400, 500, 400);
-        this.diagram.bringToCenter(this.bound);
-    }
-}
-```
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/commands/bringToCenter-cs1/src/app.component.ts %}
+{% endhighlight %}
 
-## FitToPage command
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/commands/bringToCenter-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/commands/bringToCenter-cs1" %}
 
-The [`fitToPage`](https://ej2.syncfusion.com/angular/documentation/api/diagram#fitToPage) command helps to fit the diagram content into the view with respect to either width, height, or at the whole.
+## FitToPage
+
+The [`fitToPage`](https://ej2.syncfusion.com/angular/documentation/api/diagram#fitToPage) command helps to fit the diagram content into the view with respect to either width, height, or the entire content. The fitToPage method takes one parameter, [`fitOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions/), which specifies the options for fitting the diagram to the page.
+
+### FitOptions
 
 The [`mode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/fitModes#modes) parameter defines whether the diagram has to be horizontally/vertically fit into the viewport with respect to width, height, or entire bounds of the diagram.
 
@@ -429,42 +421,32 @@ The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFit
 
 The [`canZoomIn`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#canZoomIn) parameter enables/disables zooming to fit the smaller content into a larger viewport.
 
+The [`canZoomOut`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions/#canzoomout) parameter enables or disables zooming out to fit larger content into a smaller viewport.
+
 The [`customBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#customBounds) parameter the custom region that has to be fit into the viewport.
 
 The following code illustrates how to execute `FitToPage` command.
 
-```typescript
-@Component({
-    selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" (created)='created($event)'>
-    </ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-    @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public bound: Rect;
-    public created(args: Object): void {
-        //fit the diagram to the page with respect to mode and region
-        this.diagram.fitToPage({
-            mode: 'Page',
-            region: 'Content',
-            margin: {
-                bottom: 50
-            },
-            canZoomIn: false
-        });
-    }
-}
-```
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/commands/fitToPage-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/commands/fitToPage-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/commands/fitToPage-cs1" %}
 
 ## Command manager
 
-Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some built-in commands. [`CommandManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/commandManager#commandManager) provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
+The Diagram provides support for mapping or binding command execution to specific key gestures. It includes built-in commands and allows for the definition of custom commands through the [`CommandManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/commandManager#commandManager). Custom commands are executed when the specified key gesture is recognized.
 
 ## Custom command
 
-To define a custom command, specify the following properties:
+To define a custom command, you need to specify the following properties:
+
 * [`execute`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command#execute): A method to be executed.
 * [`canExecute`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command#canexecute): A method to define whether the command can be executed at the moment.
 * [`gesture`](https://ej2.syncfusion.com/angular/documentation/api/diagram/keyGestureModel#gesture): A combination of [`keys`](https://ej2.syncfusion.com/angular/documentation/api/diagram/keys#key) and [`KeyModifiers`](https://ej2.syncfusion.com/angular/documentation/api/diagram/keyModifiers#keymodifiers).
@@ -473,105 +455,42 @@ To define a custom command, specify the following properties:
 
 To explore the properties of custom commands, refer to [`Commands`](https://ej2.syncfusion.com/angular/documentation/api/diagram/command#commands).
 
-The following code example illustrates how to define a custom command.
+The following code example illustrates how to use the command manager to clone a node and change the fill color of a node while pressing `G` and `Shift+G` or `Alt+G`, respectively:
 
-```typescript
-@Component({
-    selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [commandManager]="commandManager">
-    </ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-    @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public commandManager: CommandManager;
-    ngOnInit(): void {
-        this.commandManager = {
-            commands: [{
-                name: 'customCopy',
-                parameter: 'node',
-                //Method to define whether the command can be executed at the current moment
-                canExecute: function() {
-                    //Defines that the clone command can be executed, if and only if the selection list is not empty.
-                    if (diagram.selectedItems.nodes.length > 0 || diagram.selectedItems.connectors.length > 0) {
-                        return true;
-                    }
-                    return false;
-                },
-                //Command handler
-                execute: function() {
-                    //Logic to clone the selected element
-                    diagram.copy();
-                    diagram.paste();
-                    diagram.dataBind();
-                },
-                //Defines that the clone command has to be executed on the recognition of key press.
-                gesture: {
-                    key: Keys.G,
-                    keyModifiers: KeyModifiers.Shift | KeyModifiers.Alt
-                }
-            }]
-        },
-    }
-}
-```
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/commands/customCommand-cs1/src/app.component.ts %}
+{% endhighlight %}
 
-## Modify the existing command
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/commands/customCommand-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/commands/customCommand-cs1" %}
+
+### Disable/Modify the existing command
 
 When any one of the default commands is not desired, they can be disabled. To change the functionality of a specific command, the command can be completely modified.
 
-The following code example illustrates how to disable a command and how to modify the built-in commands.
+The following code example illustrates how to disable the default cut and delete commands using CTRL+X and Delete keys, and how to modify the copy command to clone a node using CTRL+C:
 
-```typescript
-@Component({
-    selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [commandManager]="commandManager">
-    </ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-    @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public commandManager: CommandManager;
-    ngOnInit(): void {
-        this.commandManager = {
-            commands: [
-                {
-                    name: 'nudgeRight',
-                    execute: (): void => {
-                    },
-                },
-                {
-                    name: 'nudgeUp',
-                    execute: (): void => {
-                    },
-                },
-                {
-                    name: 'nudgeDown',
-                    execute: (): void => {
-                    },
-                },
-                {
-                    name: 'nudgeLeft',
-                    canExecute: (): boolean => {
-                        if (this.diagram.selectedItems.nodes.length > 0) {
-                        return true;
-                        }
-                        return false;
-                    },
-                    execute: (): void => {
-                        this.diagram.nudge("Left");
-                    },
-                    gesture: {
-                        key: Keys.Left
-                    }
-                }
-            ]
-        },
-    }
-}
-```
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/commands/modify-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/commands/modify-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/commands/modify-cs1" %}
+
+## Undo-redo
+
+Undo/redo commands can be executed through shortcut keys. Shortcut key for undo is **`Ctrl+z`** and shortcut key for redo is **`Ctrl+y`**. For more information refer to the [`undo-redo`](./undo-redo)
 
 ## See Also
 

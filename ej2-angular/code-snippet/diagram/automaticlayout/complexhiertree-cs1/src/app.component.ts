@@ -1,105 +1,62 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, HierarchicalTreeService, DataBindingService } from '@syncfusion/ej2-angular-diagrams'
-
-
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DecoratorModel, DiagramComponent, StrokeStyleModel } from '@syncfusion/ej2-angular-diagrams';
-import {
-    NodeModel, ConnectorModel, DiagramTools, Diagram, DataBinding, ComplexHierarchicalTree,
-    SnapConstraints, SnapSettingsModel, LayoutModel, LayoutOrientation
-} from '@syncfusion/ej2-diagrams';
-import { DataManager } from '@syncfusion/ej2-data';
-import { ChangeEventArgs as NumericChangeEventArgs } from '@syncfusion/ej2-inputs';
+import { DiagramModule, DiagramComponent, NodeModel, ConnectorModel, Diagram, DataBinding,
+  ComplexHierarchicalTree, LayoutModel } from '@syncfusion/ej2-angular-diagrams';
+
 Diagram.Inject(DataBinding, ComplexHierarchicalTree);
 
-export interface DataInfo {
-    [key: string]: string;
-}
-
-/**
- * Sample for Multiple parent sample
- */
 @Component({
-imports: [
-         DiagramModule
-    ],
-
-providers: [HierarchicalTreeService, DataBindingService],
-standalone: true,
-    selector: 'app-container',
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getConnectorDefaults]='connDefaults'
-    [getNodeDefaults]='nodeDefaults' [tool]='tool' [layout]='layout' [dataSourceSettings]='data' [snapSettings]='snapSettings'
-    (created)="created()"></ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
+  imports: [ DiagramModule ],
+  providers: [],
+  standalone: true,
+  selector: 'app-container',
+  template: `<ejs-diagram #diagram id="diagram" width="100%" height="1000px" [nodes]='nodes' [connectors]='connectors'
+  [getConnectorDefaults]='connectorDefaults' [getNodeDefaults]='nodeDefaults' [layout]='layout'></ejs-diagram>`,
+  encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent {
-    @ViewChild('diagram')
-    public diagram?: DiagramComponent;
+  @ViewChild('diagram')
+  public diagram?: DiagramComponent;
 
-    public nodeDefaults(obj: NodeModel): NodeModel {
-        obj.width = 40; obj.height = 40;
-        //Initialize shape
-        obj.shape = { type: 'Basic', shape: 'Rectangle', cornerRadius: 7 };
-        return obj;
-    };
-    public data: Object = {
-        id: 'Name', parentId: 'ReportingPerson',
-        dataSource: new DataManager([
-            {"Name": "node11","fillColor": "#e7704c","border": "#c15433"},
-            {"Name": "node12","ReportingPerson": ["node114"],"fillColor": "#efd46e","border": "#d6b123"},
-            {"Name": "node13","ReportingPerson": ["node12"],"fillColor": "#58b087","border": "#16955e"},
-            {"Name": "node14","ReportingPerson": ["node12"],"fillColor": "#58b087","border": "#16955e"},
-            {"Name": "node15","ReportingPerson": ["node12"],"fillColor": "#58b087","border": "#16955e"},
-            {"Name": "node16","ReportingPerson": [],"fillColor": "#14ad85"},
-            {"Name": "node17","ReportingPerson": ["node13","node14","node15"],"fillColor": "#659be5","border": "#3a6eb5"},
-            {"Name": "node18","ReportingPerson": [],"fillColor": "#14ad85"},
-            {"Name": "node19","ReportingPerson": ["node16","node17","node18"],"fillColor": "#8dbe6c","border": "#489911"},
-            {"Name": "node110","ReportingPerson": ["node16","node17","node18"],"fillColor": "#8dbe6c","border": "#489911"},
-            {"Name": "node111","ReportingPerson": ["node16","node17","node18","node116"],"fillColor": "#8dbe6c","border": "#489911"},
-            {"Name": "node21","fillColor": "#e7704c","border": "#c15433"},
-            {"Name": "node22","ReportingPerson": ["node114"],"fillColor": "#efd46e","border": "#d6b123"},
-            {"Name": "node23","ReportingPerson": ["node22"],"fillColor": "#58b087","border": "#16955e"},
-            {"Name": "node24","ReportingPerson": ["node22"],"fillColor": "#58b087","border": "#16955e"},
-            {"Name": "node25","ReportingPerson": ["node22"],"fillColor": "#58b087","border": "#16955e"},
-            {"Name": "node26","ReportingPerson": [],"fillColor": "#14ad85"},
-            {"Name": "node27","ReportingPerson": ["node23","node24","node25"],"fillColor": "#659be5","border": "#3a6eb5"},
-            {"Name": "node28","ReportingPerson": [],"fillColor": "#14ad85"},
-            {"Name": "node29","ReportingPerson": ["node26","node27","node28","node116"],"fillColor": "#8dbe6c","border": "#489911"},
-            {"Name": "node210","ReportingPerson": ["node26","node27","node28"],"fillColor": "#8dbe6c","border": "#489911"},
-            {"Name": "node211","ReportingPerson": ["node26","node27","node28"],"fillColor": "#8dbe6c","border": "#489911"},
-            {"Name": "node31","fillColor": "#e7704c","border": "#c15433"},
-            {"Name": "node114","ReportingPerson": ["node11","node21","node31"],"fillColor": "#f3904a","border": "#d3722e"},
-            {"Name": "node116","ReportingPerson": ["node12","node22"],"fillColor": "#58b087","border": "#16955e"}
-        ],),
-        //binds the external data with node
-        doBinding: (nodeModel: NodeModel, data: DataInfo, diagram: Diagram) => {
-            /* tslint:disable:no-string-literal */
-            nodeModel.style = { fill: data['fillColor'], strokeWidth: 1, strokeColor: data['border'] };
-        }
-    };
-    public created(): void {
-        (this.diagram as DiagramComponent).fitToPage();
-    };
-    public connDefaults(connector: ConnectorModel): void {
-        connector.type = 'Orthogonal';
-        connector.cornerRadius = 7;
-        ((connector as ConnectorModel).targetDecorator as DecoratorModel).height = 7;
-        ((connector as ConnectorModel).targetDecorator as DecoratorModel).width = 7;
-        ((connector as ConnectorModel).style as StrokeStyleModel).strokeColor = '#6d6d6d';
-    };
+  //Initialize nodes for diagram
+  public nodes: NodeModel[] = [
+    { id: 'node1' },
+    { id: 'node2' },
+    { id: 'node3' },
+    { id: 'node4' },
+    { id: 'node5' },
+    { id: 'node6' },
+    { id: 'node7' },
+  ];
 
-    public tool: DiagramTools = DiagramTools.ZoomPan;
+  //Initialize connectors for diagram
+  public connectors: ConnectorModel[] = [
+    { id: 'node1-node4', sourceID: 'node1', targetID: 'node4' },
+    { id: 'node2-node4', sourceID: 'node2', targetID: 'node4' },
+    { id: 'node3-node4', sourceID: 'node3', targetID: 'node4' },
+    { id: 'node4-node5', sourceID: 'node4', targetID: 'node5' },
+    { id: 'node4-node6', sourceID: 'node4', targetID: 'node6' },
+    { id: 'node5-node6', sourceID: 'node6', targetID: 'node7' },
+  ];
 
-    public snapSettings: SnapSettingsModel = { constraints: SnapConstraints.None };
+  //Uses layout to auto-arrange nodes on the Diagram page
+  public layout: LayoutModel = {
+    //Sets layout type
+    type: 'ComplexHierarchicalTree',
+  };
 
-    public layout: LayoutModel = {
-        type: 'ComplexHierarchicalTree',
-        horizontalSpacing: 40, verticalSpacing: 40, orientation: 'TopToBottom',
-        margin: { left: 10, right: 0, top: 50, bottom: 0 }
-    };
+  //Sets the default properties for all the Nodes
+  public nodeDefaults(node: NodeModel): NodeModel {
+    node.width = 70; node.height = 70;
+    node.annotations = [{ content: node.id }];
+    return node;
+  };
+
+  //Sets the default properties for all the connectors
+  public connectorDefaults(connector: ConnectorModel): ConnectorModel {
+    connector.type = 'Orthogonal';
+    return connector;
+  };
+   
 }
-
-

@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, SnappingService } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, SnapSettingsModel, SnapConstraints } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, SnapSettingsModel, SnapConstraints,DiagramModule, SnappingService } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -16,7 +10,8 @@ providers: [SnappingService],
 standalone: true,
   selector: "app-container",
   // specifies the template string for the diagram component
-  template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [snapSettings]='snapSettings'></ejs-diagram>`
+  template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [snapSettings]='snapSettings'></ejs-diagram>`,
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
     @ViewChild("diagram")
@@ -26,5 +21,3 @@ export class AppComponent {
         constraints:  SnapConstraints.ShowLines
     };
 }
-
-

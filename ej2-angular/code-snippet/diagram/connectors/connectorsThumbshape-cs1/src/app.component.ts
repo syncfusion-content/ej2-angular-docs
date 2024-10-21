@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel,ConnectorEditing, ConnectorModel,ConnectorConstraints, OrthogonalSegmentModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { DiagramComponent, Diagram, DiagramModule,ConnectorEditing,ConnectorConstraints, OrthogonalSegmentModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
 Diagram.Inject(ConnectorEditing);
 
 @Component({
@@ -16,9 +10,9 @@ imports: [
 providers: [ ],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="900px" height="500px" [getConnectorDefaults] ='getConnectorDefaults'>
+    template: `<ejs-diagram #diagram id="diagram" width="900px" height="500px" [segmentThumbShape] = 'segmentThumbShape'>
         <e-connectors>
-            <e-connector id='connector2' type='Orthogonal' [sourcePoint]='sourcePoint' [targetPoint]='targetPoint' [segments]='segments'>
+            <e-connector id='connector2' type='Orthogonal' [sourcePoint]='sourcePoint' [targetPoint]='targetPoint' [segments]='segments' [constraints]='constraints' >
             </e-connector>
         </e-connectors>
     </ejs-diagram>`,
@@ -48,14 +42,9 @@ export class AppComponent {
             }
         ]
     }
-    public getConnectorDefaults(connector: ConnectorModel): void {
-        connector.style = {
-            strokeColor: '#6BA5D7',
-            fill: '#6BA5D7',
-            strokeWidth: 2
-        }
-        connector.constraints = ConnectorConstraints.Default | ConnectorConstraints.DragSegmentThumb;
-    }
+    constraints = ConnectorConstraints.Default | ConnectorConstraints.DragSegmentThumb;
+    //Sets segmentThumbShape as arrow
+    segmentThumbShape ="Arrow";
 }
 
 
