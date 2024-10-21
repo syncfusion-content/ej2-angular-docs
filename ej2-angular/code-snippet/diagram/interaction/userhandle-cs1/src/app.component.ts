@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, SelectorModel, IElement, randomId, cloneObject, UserHandleModel, SelectorConstraints, ToolBase, NodeModel, Diagram, MoveTool, ShapeStyleModel, MouseEventArgs, ConnectorModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramModule, DiagramComponent, SelectorModel, IElement, randomId, cloneObject, UserHandleModel, SelectorConstraints, ToolBase, NodeModel, Diagram, MoveTool, ShapeStyleModel, MouseEventArgs, ConnectorModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -43,8 +37,6 @@ export class AppComponent {
   public getNodeDefaults(node: NodeModel): NodeModel {
     node.height = 100;
     node.width = 100;
-    ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
-    ((node as NodeModel).style as ShapeStyleModel).strokeColor = "#6BA5D7";
     return node;
   }
   public getCustomTool: Function = this.getTool.bind(this);

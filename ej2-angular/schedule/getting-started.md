@@ -313,4 +313,4 @@ The output will display the Scheduler with the specified view configuration.
   
 {% previewsample "page.domainurl/samples/schedule/views-cs1" %}
 
-> You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/material/schedule/overview) that shows how to use the toolbar buttons to play with Scheduler functionalities.
+> You can also explore our [Angular Scheduler example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/schedule/overview) that shows how to use the toolbar buttons to play with Scheduler functionalities.
