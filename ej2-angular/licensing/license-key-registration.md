@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Register Syncfusion License key in EJ2-Angular application
 
-Syncfusion license key should be registered, if your project using Syncfusion EJ2-Angular packages reference. The generated license key is a string that needs to be registered after any [Syncfusion Angular reference](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/#create-a-new-application).
+Syncfusion license key should be registered, if your project using Syncfusion EJ2-Angular packages reference. The generated license key is a string that needs to be registered after any [Syncfusion Angular reference](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli#create-a-new-application).
 
 >Note: Syncfusion license validation is done offline during application execution and does not require internet access. Apps registered with a Syncfusion license key can be deployed on any system that does not have an internet connection.
 
-Generate the [Syncfusion license key](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-generation/) and register it in one of the following ways,
+Generate the [Syncfusion license key](https://ej2.syncfusion.com/angular/documentation/licensing/license-key-generation) and register it in one of the following ways,
 
 * [Register the license key in the project](#register-syncfusion-license-key-in-the-project)
 * [Register the license key using the npx command](#register-syncfusion-license-key-using-the-npx-command)
@@ -71,7 +71,7 @@ The following steps show how to register the Syncfusion license key with the lic
 
 * Remove the `.cache` folder from node modules in the application.
 
-* Now run the application. If you are facing a license validation error, refer to this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-errors/) to resolve it. Also, find the most frequent license registration questions from this [`link`](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot/).
+* Now run the application. If you are facing a license validation error, refer to this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-errors) to resolve it. Also, find the most frequent license registration questions from this [`link`](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot).
 
 >If you don't want to use the license text file in the application, refer to this [link](#register-the-license-key-with-the-environment-variable) to use an environment variable and register the Syncfusion license key. Also, check out some common licensing FAQs while registering the license key using the npx command from this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot#Reactivating-license-once-after-updating-the-package-version-while-using-npx)
 
@@ -85,7 +85,7 @@ The following steps show how to set environment variable in different operating 
 
 #### Windows
 
-* Open the command prompt and use [setx](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/setx) command to add the new environment variable.
+* Open the command prompt and use [setx](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/setx) command to add the new environment variable.
 
   ```sh
   setx SYNCFUSION_LICENSE "license key"
@@ -135,7 +135,7 @@ The following steps show how to set environment variable in different operating 
 
 * Remove the `.cache` folder from node modules in the application.
 
-* Now run the application. If you are facing a license validation error, refer to this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-errors/) to resolve it. Also, find the most frequent license registration questions from this [`link`](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot/).
+* Now run the application. If you are facing a license validation error, refer to this [link](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-errors) to resolve it. Also, find the most frequent license registration questions from this [`link`](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot).
 
 ### Register Syncfusion license key in CI services
 
@@ -143,7 +143,7 @@ The following sections show how to use an environment variable in CI services.
 
 #### GitHub Actions
 
-* Create a [new Repository Secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) or an [Organization Secret](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-an-organization). Set the name of the secret to `SYNCFUSION_LICENSE` and use the license key as a value.
+* Create a [new Repository Secret](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#creating-encrypted-secrets-for-a-repository) or an [Organization Secret](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions#creating-encrypted-secrets-for-an-organization). Set the name of the secret to `SYNCFUSION_LICENSE` and use the license key as a value.
 
 * Add the Syncfusion license activation command after running npm install or yarn like below,
 
@@ -160,7 +160,7 @@ The following sections show how to use an environment variable in CI services.
 
 #### Azure Pipelines (YAML)
 
-* Create a new [User-defined Variable](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch) named `SYNCFUSION_LICENSE`. Use the license key as a value.
+* Create a new [User-defined Variable](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch) named `SYNCFUSION_LICENSE`. Use the license key as a value.
 
 * Add the Syncfusion license activation command after running npm install or yarn like below,
 
@@ -198,7 +198,7 @@ steps:
 
 #### Azure Pipelines (Classic)
 
-* Create a new [User-defined Variable](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch) named `SYNCFUSION_LICENSE`. Use the license key as a value.
+* Create a new [User-defined Variable](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch) named `SYNCFUSION_LICENSE`. Use the license key as a value.
 
 * Add the Syncfusion license activation command after running npm install or yarn using bash task like below,
 
@@ -211,4 +211,4 @@ npx syncfusion-license activate
 
 ## See Also
 
-* [Licensing FAQ](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot/)
+* [Licensing FAQ](https://ej2.syncfusion.com/angular/documentation/licensing/licensing-troubleshoot)

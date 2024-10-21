@@ -10,27 +10,35 @@ domainurl: ##DomainURL##
 
 # Tools in Angular Diagram component
 
+The tools in the diagram control can perform various actions such as selecting, panning, and drawing. These tools are explained below.
+
+- `Select`: Allows you to choose specific elements within the diagram.
+- `Pan`: Enables you to move the view of the diagram to different areas without altering the elements.
+- `Draw`: Provides the ability to draw new shapes, connectors, on the diagram surface.
+
+These tools are essential for creating, editing, and navigating complex diagrams efficiently.
+
 ## Drawing tools
 
 Angular Drawing tool allows you to draw any kind of node/connector during runtime by clicking and dragging on the diagram page.
 
-## Shapes
+### Draw nodes
 
-To draw a shape, set the JSON of that shape to the drawType property of the diagram and activate the drawing tool by using the [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram) property. The following code example illustrates how to draw a rectangle at runtime.
+To draw a shape, set the JSON of that shape to the [`drawingObject`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#drawingobject) property of the diagram and activate the drawing tool by using the [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#tool) property. The following code example illustrates how to draw a rectangle at runtime:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tools/rectangle-cs1/src/app.component.ts %}
+{% include code-snippet/diagram/tools/tool-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tools/rectangle-cs1/src/main.ts %}
+{% include code-snippet/diagram/tools/tool-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/tools/rectangle-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/tools/tool-cs1" %}
 
-The following code example illustrates how to draw a path.
+The following code example illustrates how to draw a path shape.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,25 +52,9 @@ The following code example illustrates how to draw a path.
   
 {% previewsample "page.domainurl/samples/diagram/tools/path-cs1" %}
 
-## Connectors
+### Text Nodes
 
-To draw connectors, set the JSON of the connector to the drawType property. The drawing [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram) can be activated by using the tool property. The following code example illustrates how to draw a straight line connector.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/tools/connector-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/tools/connector-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/tools/connector-cs1" %}
-
-## Text
-
-Diagram allows you to create a textNode, when you click on the diagram page. The following code illustrates how to draw a text.
+Similarly, you can draw a text node by setting the type of shape as 'Text' in the [`drawingObject`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#drawingobject) property. The [`text`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textModel/) type node contains a property called content, which specifies the text within the node. You can add the content to the text node once you finish drawing the node. Here is how you can draw a text node at runtime:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,11 +68,27 @@ Diagram allows you to create a textNode, when you click on the diagram page. The
   
 {% previewsample "page.domainurl/samples/diagram/tools/text-cs1" %}
 
-Once you activate the TextTool, perform label editing of a node/connector.
+## Draw Connectors
 
-## Polygon
+To draw connector, set the JSON of that connector to the [`drawingObject`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#drawingobject) property of the diagram. The drawing tool can be activated by using the [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#tool) property. The following code example illustrates how to draw different types of connector using drawing tool.
 
-Diagram allows to create the polygon shape by clicking and moving the mouse at runtime on the diagram page.
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/tools/connector-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/tools/connector-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/tools/connector-cs1" %}
+
+### Polygon shape
+
+The diagram allows you to create polygon shapes by clicking and moving the mouse at runtime on the diagram page. This interactive feature enables users to define custom shapes with multiple sides by specifying points directly on the diagram canvas.
+
+To draw a polygon shape, you need to set the [`drawingObject`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#drawingobject) property with the appropriate JSON configuration for a `polygon`. This includes specifying the type as 'Polygon'.
 
 The following code illustrates how to draw a polygon shape.
 
@@ -98,9 +106,11 @@ The following code illustrates how to draw a polygon shape.
 
 ## Polyline Connector
 
-Diagram allows to create the polyline segments with straight lines and angled vertices at the control points by clicking and moving the mouse at runtime on the diagram page.
+The diagram control enables users to create polyline connectors interactively by clicking and dragging the mouse on the diagram canvas at runtime. It allows creating polyline segments with straight lines and angled vertices at control points directly within the diagram interface. 
 
-The following code illustrates how to draw a polyline connector.
+To draw a polyline connector, set the type of the [`drawingObject`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#drawingobject) as '`Polyline`'.
+
+The following code illustrates how to draw a Polyline connector at runtime:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -114,6 +124,28 @@ The following code illustrates how to draw a polyline connector.
   
 {% previewsample "page.domainurl/samples/diagram/tools/polyline-cs1" %}
 
+### Freehand Drawing
+
+The diagram supports free-hand drawing, allowing users to draw anything independently on the diagram page. Free-hand drawing is enabled by setting the type of the [`drawingObject`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#drawingobject) property to '`Freehand`'.
+
+The following code illustrates how to perform freehand drawing:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/tools/freehand-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/tools/freehand-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/tools/freehand-cs1" %}
+
+The segments of a freehand connector can be adjusted at runtime by dragging the segment thumb, as shown in the image below. To enable segment editing, you should set the [`DragSegmentThumb`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorModel/#constraints) constraint for the connector.
+
+![Freehand connector drawing](images/freehand-draw.gif)
+
 ## Tool selection
 
 There are some functionalities that can be achieved by clicking and dragging on the diagram surface. They are as follows.
@@ -122,8 +154,7 @@ There are some functionalities that can be achieved by clicking and dragging on 
 * Pan the diagram: Zoom pan
 * Draw nodes/connectors: DrawOnce/DrawOnce
 
-As all the three behaviors are completely different, you can achieve only one behavior at a time based on the tool that you choose.
-When more than one of those tools are applied, a tool is activated based on the precedence given in the following table.
+selected tool. When multiple tools are applied, precedence is determined as follows:
 
 |Precedence|Tools|Description|
 |----------|-----|-----------|
@@ -134,43 +165,38 @@ When more than one of those tools are applied, a tool is activated based on the 
 |5th|SingleSelect|Allows you to select individual nodes or connectors.|
 |6th|None|Disables all tools.|
 
-Set the desired [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram) to the tool property of the diagram model. The following code illustrates how to enable single/multiple tools.
+These tools provide flexibility and functionality for creating and interacting with elements within the diagram interface.
 
-```typescript
-// Enabling Single tool
-@Component({
-    selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px">
-    </ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-    @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public tool: DiagramTools
-    ngOnInit(): void {
-        this.tool = DiagramTools.DrawOnce
-    }
-}
+### Zoom pan tool
 
-```
+To activate panning mode set the [`tool`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#tool) property of the diagram as `ZoomPan`. The following code illustrates how to enable Zoom pan in the diagram
 
-```typescript
-// Enabling multiple tools
-@Component({
-    selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px">
-    </ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-    @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public tool: DiagramTools
-    ngOnInit(): void {
-        // Selects when you click a node and pans when you click the Diagram surface
-        this.tool = DiagramTools.DrawOnce | DiagramTools.ZoomPan
-    }
-}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/tools/zoomPan-cs1/src/app.component.ts %}
+{% endhighlight %}
 
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/tools/zoomPan-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/tools/zoomPan-cs1" %}
+
+N> Please note that panning the diagram is not possible when 'multiplePage' is set to false if any diagram object (node or connector) is outside the defined page break area.
+
+## Events
+
+The [`elementDraw`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#elementdraw) event is triggered whenever a node or connector is drawn using a drawing tool in the diagram. This event provides a way to capture and respond to actions when elements are created on the canvas.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/tools/events-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/tools/events-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/tools/events-cs1" %}

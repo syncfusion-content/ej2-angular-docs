@@ -1,20 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, OverviewModule, DataBindingService, HierarchicalTreeService } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent,OverviewComponent, Diagram, NodeModel, ConnectorModel,OverviewModel, SnapSettingsModel, LayoutModel, DataSourceModel, RulerSettingsModel,  } from '@syncfusion/ej2-angular-diagrams';
-import { DataManager, Query } from '@syncfusion/ej2-data';
+import { DiagramModule, DiagramComponent ,RulerSettingsModel} from '@syncfusion/ej2-angular-diagrams';
+
 
 @Component({
 imports: [
-         DiagramModule, OverviewModule
+         DiagramModule
     ],
-
-providers: [DataBindingService, HierarchicalTreeService],
-standalone: true,
+    providers: [ ],
+    standalone: true,
     selector: "app-container",
     template: `<div><ejs-diagram #diagram id="diagram" width="100%" height="600px" [rulerSettings]='rulerSettings'></ejs-diagram></div>`,
     encapsulation: ViewEncapsulation.None
@@ -22,7 +15,22 @@ standalone: true,
 export class AppComponent {
      @ViewChild('diagram')
     public diagram?: DiagramComponent;
-    public rulerSettings: RulerSettingsModel = { showRulers: true, horizontalRuler:{interval:8, segmentWidth:100, thickness:25, tickAlignment:"LeftOrTop"},verticalRuler:{interval:10, segmentWidth:150, thickness:35, tickAlignment:"RightOrBottom"}  }
+    public rulerSettings: RulerSettingsModel = { showRulers: true, 
+        horizontalRuler:{
+            interval:8, 
+            segmentWidth:100, 
+            thickness:25, 
+            //Align horizontal ruler tick to the bottom side.
+            tickAlignment:"RightOrBottom"
+        },
+        verticalRuler:{
+            interval:10, 
+            segmentWidth:200, 
+            thickness:35, 
+            //Align vertical ruler tick to the left side.
+            tickAlignment:"LeftOrTop"
+        } 
+    }
 }
 
 

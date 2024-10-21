@@ -10,18 +10,16 @@ domainurl: ##DomainURL##
 
 # Interaction in Angular Diagram component
 
+## Selector
+
+The selector visually represents selected elements, acting as a container to modify their size, position, and rotation angle interactively or programmatically. It supports selecting both single and multiple elements simultaneously.
+
 ## Selection
 
-Selector provides a visual representation of selected elements. It behaves like a container and allows to update the size, position, and rotation angle of the selected elements through interaction and by using program. Single or multiple elements can be selected at a time.
+An element can be selected by clicking that element. During single click, all previously selected items are cleared.
 
-## Single selection
-
-An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elements are visually represented.
-
-![Single Selection](images/single-select.gif)
-
-* While selecting the diagram elements, the following events can be used to do your customization.
-* When selecting/unselecting the diagram elements, the [`selectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#selectionChange--emittypeiselectionchangeeventargs) event gets triggered.
+When selecting/unselecting the diagram elements, the [`selectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#selectionchange) event and [`click`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#click) gets triggered. 
+These events enable you to customize the selected elements as needed.
 
 ## Selecting a group
 
@@ -31,132 +29,244 @@ When a child element of any group is clicked, its contained group is selected in
 
 Multiple elements can be selected with the following ways:
 
-* **Ctrl+Click** - During single click, any existing item in the selection list be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
-* **Selection rectangle/rubber band selection** - Clicking and dragging the diagram area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
+#### Ctrl+Click
 
-![Multiple Rubberband Selection](images/multiselect_Highlight.gif)
+During single click, any existing item in the selection list be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
 
-## Select/Unselect elements using program
+#### Rubber band selection
 
-The client-side methods [`select`](https://ej2.syncfusion.com/angular/documentation/api/diagram#select) and [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/diagram#clearselection) help to select or clear the selection of the elements at runtime. The following code example illustrates how to select or clear the selection of an item using program.
+Clicking and dragging in the diagram area allows you to create a rectangular region. The elements covered within this rectangular region will be selected when you release the mouse button.
 
-Get the current selected items from the [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel#nodes-nodemodel[]) and [`connectors`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel#connectors-connectormodel[]) collection of the [`selectedItems`](https://ej2.syncfusion.com/angular/documentation/api/diagram#selectAll#selecteditems-selectormodel) property of the diagram model.
+In rubber band selection, you can set the selection of items by region using the following modes:
 
-## Select entire elements in diagram programmatically
+- CompleteIntersect: Selects items that are fully covered within the rectangular selection region.
+- PartialIntersect: Selects items that are partially covered within the rectangular selection region.
 
-The client-side method [`selectAll`](https://ej2.syncfusion.com/angular/documentation/api/diagram#selectAll) used to select all the elements such as nodes/connectors in the diagram. Refer to the following link which shows how to use [`selectAll`](https://ej2.syncfusion.com/angular/documentation/api/diagram#selectAll) method on the diagram.
+This can be configured with the [`rubberBandSelectionMode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel/#rubberbandselectionmode).
 
-## Drag
+### Select/Unselect elements using API
 
-* An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
-* When you drag the elements in the diagram, the [`positionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#positionChange--emittypeidraggingeventargs) event gets triggered and to do customization in this event.
+The [`select`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#select) and [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#clearselection) methods are used to dynamically select or clear the selection of elements at runtime. The following code example demonstrates how these methods can be utilized to select or clear the selection of elements.
 
-![Drag](images/drag.gif)
+```typescript
+import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
+import { DiagramConstraints } from '@syncfusion/ej2-diagrams';
+@Component({
+  selector: "app-container",
+  // specifies the template string for the diagram component
+  template: `<ejs-diagram id="diagram" width="100%" height="900px" [nodes]='nodes'></ejs-diagram>`
+})
+export class AppComponent {
+    @ViewChild("diagram")
+    public diagramConstraints: DiagramConstraints;
+    public nodes: NodeModel[] = [
+        {
+            id: 'node1',
+            width: 90,
+            height: 60,
+            offsetX: 100,
+            offsetY: 100,
+            style: {
+                fill:   '#6BA5D7',
+                strokeColor: 'white',
+                strokeWidth: 1
+            },
+        }
+    ]
+    ngOnInit(): void {
+        //Select a specified collection of nodes and connectors in the diagram
+        (this.diagram as any).select([this.diagram.nodes[0]]);
+        //Removes all elements from the selection list, clearing the current selection.
+        (this.diagram as any).clearSelection();
+    }
+}
 
-## Resize
+```
 
-* Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized.
-* When one corner of the selector is dragged, opposite corner is in a static position.
-* When a node is resized, the [`sizeChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sizeChange--emittypeisizechangeeventargs) event gets triggered.
+### Get selected items
 
-![Resize](images/resize.gif)
+You can get the currently selected [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel/#nodes) and [`connectors`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel/#connectors) using [`selectedItems`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#selecteditems) property of the diagram.
 
->Note: While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to `Snapping`.
+```ts
 
-## Rotate
+this.selectedNodes = this.diagram.selectedItems.nodes;
+this.selectedConnectors = this.diagram.selectedItems.connectors;
 
-* A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
-* The node is rotated with reference to the static pivot point.
-* Pivot thumb (thumb at the middle of the node) appears while rotating the node to represent the static point.
+```
 
-![rotate](images/rotate.gif)
+You can also get the currently selected objects, both nodes and connectors, in a single array called [`selectedObjects`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel/#selectedobjects) within the [`selectedItems`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#selecteditems) property of the diagram.
 
-## Connection editing
+```ts
 
-* Each segment of a selected connector is editable with some specific handles/thumbs.
+this.selectedObjects = this.diagram.selectedItems.selectedObjects;
 
->Note: For connector editing, you have to inject the [`ConnectorEditing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorEditing) module.
+```
 
-## End point handles
+### Toggle selection
 
-Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
-
-![Drag End Point Handles](images/connector-end-point.gif)
-
-* If you drag the connector end points, then the following events can be used to do your customization.
-* When the connector source point is changed, the [`sourcePointChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sourcePointChange--emittypeiendchangeeventargs) event gets triggered.
-* When the connector target point is changed, the [`targetPointChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#targetPointChange--emittypeiendchangeeventargs) event gets triggered.
-* When you connect connector with ports/node or disconnect from it, the [`connectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#connectionChange--emittypeiconnectionchangeeventargs) event gets triggered.
-
-## Straight segment editing
-
-* End point of each straight segment is represented by a thumb that enables to edit the segment.
-* Any number of new segments can be inserted into a straight line by clicking, when Shift and Ctrl keys are pressed (Ctrl+Shift+Click).
-
-![Straight Segment Editing Addition](images/straight-segment-add.gif)
-
-* Straight segments can be removed by clicking the segment end point, when Ctrl and Shift keys are pressed (Ctrl+Shift+Click).
-
-![straight-segment-remove-gif](images/straight-segment-remove.gif)
-
-## Orthogonal thumbs
-
-* Orthogonal thumbs allow you to adjust the length of adjacent segments by clicking and dragging it.
-* When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
-* The orthogonal segment thumbs can be edited, by injecting the [`ConnectorEditing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorEditing) module. The connector constraints has to be set as DragSegmentThumb. The following code example illustrates how to edit an orthogonal segment.
+The [`canToggleSelection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel/#cantoggleselection) property determines whether the selection state of a diagram element should toggle with a mouse click at runtime. By default, this property is set to false. In the following example, the node can be selected with the first click and unselected with the second click.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/interaction/connectoredit-cs1/src/app.component.ts %}
+{% include code-snippet/diagram/interaction/interactions-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/interaction/connectoredit-cs1/src/main.ts %}
+{% include code-snippet/diagram/interaction/interactions-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/interaction/connectoredit-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/interaction/interactions-cs1" %}
 
-![orthogonal Segment Edit](images/orthogonal-segment-edit.gif)
+## Select entire elements in diagram programmatically
 
-## Bezier thumbs
+The [`selectAll`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#selectall) method of diagram is used to select all the elements such as nodes/connectors in the diagram. Refer to the following code snippet.
 
-Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
+```ts
+//Selects all the nodes and connectors in diagram
+this.diagram.selectAll();
 
-![Bezier Segement Thumb](images/bezier-segement-thumb.gif)
+```
 
-## Drag and drop nodes over other elements
+You can also use the CTRL+A keys to select all nodes and connectors in the diagram.
 
-Diagram provides support to drop a node/connector over another node/connector. The [`drop`](https://ej2.syncfusion.com/angular/documentation/api/diagram#drop--emittypeidropeventargs) event is raised to notify that an element is dropped over another one and it is disabled, by default. It can enabled with the constraints property.
+## Drag
+
+You can drag an object by clicking and dragging it. When multiple elements are selected, dragging any one of them moves all selected elements together.
+As you drag elements within the diagram, the [`positionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#positionchange) event is triggered, providing opportunities to customize the dragged elements.
+
+## Resize
+
+The selector in the diagram is designed with eight resizing handles, commonly referred to as thumbs. These handles allow users to adjust the size of selected items by clicking and dragging them. When resizing, dragging any handle modifies the dimensions of the selected elements accordingly. Notably, when dragging one corner handle, the opposite corner remains fixed to specific alignment of the selected item.
+
+During the resizing process, the diagram triggers the [`sizeChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#sizechange) event, allowing customization based on the size of the element.
+
+N>  While dragging and resizing, the objects are snapped towards the nearest objects to make better alignments.
+
+### Aspect ratio
+
+Maintaining aspect ratio in diagram means that when you resize a node, by dragging its corner, both its width and height adjust proportionally. This ensures that the node retains its original shape and proportions. Aspect ratio constraints can be applied by configuring the [`NodeConstraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints/) property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/interaction/interactions-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/interaction/interactions-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/interaction/interactions-cs2" %}
+
+### Customizing resize-thumb size
+
+You can change the size of the node resize thumb and the connector end point handle by using the [`handleSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel/#handlesize) property. The following example shows the resize handle size customization.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/interaction/interactions-cs3/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/interaction/interactions-cs3/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/interaction/interactions-cs3" %}
+
+The appearance such as fill, stroke, and stroke width of the node resize thumb and connector end point handle can be customized by overriding the e-diagram-resize-handle and e-diagram-endpoint-handle classes respectively.
+
+## Rotate
+
+A rotation handler is positioned above the selector. Clicking and dragging this handler in a circular motion rotates the node. The node rotates around a fixed pivot point. A pivot thumb, located at the center of the node, appears during rotation to indicate the fixed point.
+Rotating a node triggers the [`rotateChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#rotatechange) event.
+
+### Customize rotate handle position
+
+The position of the rotate handle can be adjusted by modifying the pivot point of the node using the [`pivot`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#pivot) property. By default, the pivot point is set to (0.5, 0.5). The following example shows how to render the rotate handle at the left top corner of the node.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/interaction/interactions-cs4/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/interaction/interactions-cs4/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/interaction/interactions-cs4" %}
+
+![Node interaction](./images/node-interactions.gif)
+
+## Connection editing
+
+Each segment of a selected connector is editable with some specific handles/thumbs.
+
+N> For connector editing, you have to inject the [`ConnectorEditing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorEditing/) module.
+
+### Drag connector end points
+
+Source and target points of selected connectors are represented by two handles. Clicking and dragging these handles allows you to adjust the source and target points.
+
+Dragging the connector end points triggers the following events for customization:
+
+When the connector's source point is changed, the [`sourcePointChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iEndChangeEventArgs/) event is triggered.
+When the connector's target point is changed, the [`targetPointChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iEndChangeEventArgs/) event is triggered.
+Connecting a connector to port/node or disconnecting from them triggers the [`connectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iConnectionChangeEventArgs/) event.
+
+## Straight segment editing
+
+The end point of each straight segment is represented by a thumb that allows you to edit the segment. You can insert any number of new segments into a straight line by clicking while holding the Shift and Ctrl keys (Ctrl+Shift+Click).
+
+
+Straight segments can be removed by clicking the segment end point while holding the Ctrl and Shift keys (Ctrl+Shift+Click).
+
+### Orthogonal segment editing
+
+Orthogonal thumbs allow you to adjust the length of adjacent segments by clicking and dragging them. When necessary, segments are automatically added or removed during dragging to maintain proper orthogonal routing.
+
+When editing a segment, the [`segmentChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iSegmentChangeEventArgs/#isegmentchangeeventargs) event is triggered. When new segments are added to the collection of connector segments, the [`segmentCollectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iSegmentCollectionChangeEventArgs/) event is triggered.
+
+### Bezier segment editing
+
+Bezier segment thumbs allow you to adjust the segments by clicking and dragging them.
+
+#### Bezier Control Points
+
+Bezier segments are annotated with two thumbs representing the control points. These control points can be adjusted by clicking and dragging the control thumbs. Dragging the control point changes the angle and distance of the points from the segment point, modifying the curve.
+
+![Connector interaction](./images/connector-interaction.gif)
 
 ## User handles
 
-* User handles are used to add some frequently used commands around the selector. To create user handles, define and add them to the [`userHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel#userHandles-userhandlemodel[]) collection of the [`selectedItems`](https://ej2.syncfusion.com/angular/documentation/api/diagram#selectAll#selecteditems-selectormodel) property.
-* The name property of user handle is used to define the name of the user handle and its further used to find the user handle at runtime and do any customization.
+User handles are used to add frequently used commands around the selector. To create user handles, define and add them to the [`userHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel/) collection of the [`selectedItems`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#selecteditems) property. The [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel/#name) property of userHandles is used to define the name of the user handle, which can then be used at runtime for identification and customization.
 
-## Alignment
+The following events are triggered when interacting with a user handle:
 
-User handles can be aligned relative to the node boundaries. It has [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#margin-marginmodel), [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#offset-number), [`side`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#side-side), [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#horizontalalignment-horizontalalignment), and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#verticalalignment-verticalalignment) settings. It is quite tricky when all four alignments are used together but gives more control over alignment.
+* [`click`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#click) - Triggered when the user handle is clicked.
+* [`onUserHandleMouseEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#onuserhandlemouseenter) - Triggered when the mouse enters the user handle region.
+* [`onUserHandleMouseDown`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#onuserhandlemousedown) - Triggered when the mouse is pressed down on the user handle.
+* [`onUserHandleMouseUp`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#onuserhandlemouseup) - Triggered when the mouse is released on the user handle.
+* [`onUserHandleMouseLeave`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#onuserhandlemouseleave) - Triggered when the mouse leaves the user handle region.
 
-## Offset
+## Fixed user handle
 
-The [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#offset-number) property of [`userHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel#userHandles-userhandlemodel[]) is used to align the user handle based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
+Fixed user handles are used to perform specific actions when interacted with. Unlike regular user handles, [`fixedUserHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodefixeduserhandlemodel/) are defined within the node/connector object, allowing different fixed user handles to be added to different nodes.
 
-## Side
+The following events are triggered when interacting with a fixed user handle:
 
-The [`side`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#side-side) property of [`userHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel#userHandles-userhandlemodel[]) is used to align the user handle by using the [`Top`](https://ej2.syncfusion.com/angular/documentation/api/diagram/side#top), [`Bottom`](https://ej2.syncfusion.com/angular/documentation/api/diagram/side#bottom), [`Left`](https://ej2.syncfusion.com/angular/documentation/api/diagram/side#left), and [`Right`](https://ej2.syncfusion.com/angular/documentation/api/diagram/side#right) options.
+* [`click`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#click) - Triggered when the fixed user handle is clicked.
+* [`onFixedUserHandleMouseEnter`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#onfixeduserhandlemouseenter) - Triggered when the mouse enters the fixed user handle region.
+* [`onFixedUserHandleMouseDown`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#onfixeduserhandlemousedown) - Triggered when the mouse is pressed down on the fixed user handle.
+* [`onFixedUserHandleMouseUp`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#onfixeduserhandlemouseup) - Triggered when the mouse is released on the fixed user handle.
+* [`onFixedUserHandleMouseLeave`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#onfixeduserhandlemouseleave) - Triggered when the mouse leaves the fixed user handle region.
+* [`fixedUserHandleClick`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#fixeduserhandleclick) - Triggered when the fixed user handle is clicked.
 
-## Horizontal and vertical alignments
+## Determining Mouse Button Clicks
 
-The [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#horizontalalignment-horizontalalignment) property of [`userHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel#userHandles-userhandlemodel[]) is used to set how the user handle is horizontally aligned at the position based on the [`offset`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#offset-number). The [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#verticalalignment-verticalalignment) property is used to set how user handle is vertically aligned at the position.
-
-## Margin
-
-Margin is an absolute value used to add some blank space in any one of its four sides. The [`userHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel#userHandles-userhandlemodel[]) can be displaced with the [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#margin-marginmodel) property.
-
-## Notification for the mouse button clicked
-
-The diagram component notifies the mouse button clicked. For example, whenever the right mouse button is clicked, the clicked button is notified as right. The mouse click is notified with,
+The diagram component can determine which mouse button was clicked. For example, when the right mouse button is clicked, the click event will specify that the right button was clicked. This is handled through the mouse [`click`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#click) event, which provides details about whether the left or right button was clicked.
 
 | Notification | Description |
 |----------------|--------------|
@@ -180,33 +290,13 @@ export class AppComponent {
 }
 ```
 
-## Appearance
+## Allow drop
 
-The appearance of the user handle can be customized by using the [`size`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#size-number), [`borderColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#bordercolor-string), [`backgroundColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#backgroundcolor-string), [`visible`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#visible-boolean), [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#pathdata-string), and [`pathColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandle#pathcolor-string) properties of the [`userHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel#userHandles-userhandlemodel[]).
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/interaction/userhandle-cs1/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/interaction/userhandle-cs1/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/interaction/userhandle-cs1" %}
+The diagram supports dropping a node or connector onto another node or connector. To determine the target where the node or connector is dropped, you need to enable the [`allowDrop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeConstraints/) constraint in the node's or connector's constraints property. This setting enables a highlighter to indicate potential drop targets when dragging any node or connector over another one. Upon dropping the node or connector, the [`drop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#drop) event is triggered to indicate which element was dropped over which other element.
 
 ## Zoom pan
 
-* When a large diagram is loaded, only certain portion of the diagram is visible. The remaining portions are clipped. Clipped portions can be explored by scrolling the scrollbars or panning the diagram.
-* Diagram can be zoomed in or out by using Ctrl + mouse wheel.
-* When the diagram is zoomed or panned, the [`scrollChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#scrollChange--emittypeiscrollchangeeventargs) event gets triggered.
-
-![Zoom Pan](images/Zoom-pan.gif)
-
-## Zoom pan status
-
-Diagram provides the support to notify the pan status of the zoom pan tool. When ever the diagram is panning the [`scrollChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#scrollChange--emittypeiscrollchangeeventargs) event is triggered and hence the pan status can be obtained. The pan status is notified with Start, Progress, and Completed.
+When loading a large diagram, only a certain portion of the diagram is initially visible, the remaining parts are clipped. You can explore these clipped portions by scrolling the scrollbars or panning the diagram. You can zoom in or out on the diagram by using Ctrl + mouse wheel. When the diagram is zoomed or panned, the [`scrollChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#scrollchange) event is triggered.
 
 |  Pan Status  | Description|
 |--------------|---------|
@@ -214,29 +304,7 @@ Diagram provides the support to notify the pan status of the zoom pan tool. When
 | Progress | When the mouse is in motion the status is notified as progress.|
 | Completed | When panning is stopped the status is notified with completed.|
 
-```typescript
-@Component({
-    selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults]="getNodeDefaults" (created)='created($event)'
-    (scrollChange)='scrollChange($event)'>
-    </ejs-diagram>`,
-    encapsulation: ViewEncapsulation.None
-})
-export class AppComponent {
-    @ViewChild("diagram")
-    public diagram: DiagramComponent;
-    public panStatus: string
-    public scrollChange(args: IScrollChangeEventArgs) {
-    // Obtains the zoom pan status
-    this.panStatus = args.panState;
-    }
-    public created(args: Object): void {
-        //Sets the Zoom pan tool
-        this.diagram.tool = DiagramTools.ZoomPan;
-        this.diagram.dataBind();
-    }
-}
-```
+![Zoom Pan](./images/Zoom-pan.gif)
 
 ## Keyboard
 
@@ -295,6 +363,8 @@ The following table illustrates those commands with the associated key values.
 | Control + Shift + F | Bring To Front | Bring the selected shape forward in the stacking order, making it appear in front of other shapes.|
 | Control + [ | Send Backward | Move the selected shape one step backward in the layer order. |
 | Control + ] | Bring Forward | Move the selected shape one step forward in the layer order.|
+
+N> Please note that the positionChange event is triggered for dragging nodes/connectors using mouse interactions only and not supported for Keyboard  interactions
 
 ## See Also
 
