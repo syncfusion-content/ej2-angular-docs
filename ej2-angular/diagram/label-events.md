@@ -22,15 +22,15 @@ The [`keyDown`](https://helpej2.syncfusion.com/angular/documentation/api/diagram
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/keyDown-cs1/src/app.component.ts %}
+{% include code-snippet/diagram/labels/keyDown-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/keyDown-cs1/src/main.ts %}
+{% include code-snippet/diagram/labels/keyDown-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/nodes/keyDown-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/keyDown-cs1" %}
 
 ## KeyUp event
 
@@ -38,15 +38,15 @@ The [`keyUp`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/i
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/keyUp-cs1/src/app.component.ts %}
+{% include code-snippet/diagram/labels/keyUp-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/keyUp-cs1/src/main.ts %}
+{% include code-snippet/diagram/labels/keyUp-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/nodes/keyUp-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/keyUp-cs1" %}
 
 ## Double click event
 
@@ -54,15 +54,15 @@ The [`doubleClick`](https://helpej2.syncfusion.com/angular/documentation/api/dia
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/doubleClick-cs1/src/app.component.ts %}
+{% include code-snippet/diagram/labels/doubleClick-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/doubleClick-cs1/src/main.ts %}
+{% include code-snippet/diagram/labels/doubleClick-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/nodes/doubleClick-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/doubleClick-cs1" %}
 
 ## TextEdit event
 
@@ -70,15 +70,15 @@ The [`textEdit`](https://helpej2.syncfusion.com/angular/documentation/api/diagra
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/nodes/textEdit-cs1/src/app.component.ts %}
+{% include code-snippet/diagram/labels/textEdit-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/nodes/textEdit-cs1/src/main.ts %}
+{% include code-snippet/diagram/labels/textEdit-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/nodes/textEdit-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/labels/textEdit-cs1" %}
 
 You can prevent adding new text to the annotation by setting the `cancel` property of [`textEdit`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/iTextEditEventArgs/) to true.
 

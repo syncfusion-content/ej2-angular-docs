@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { Diagram, DiagramComponent, NodeModel, PointPortModel, PortVisibility, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramModule, Diagram, DiagramComponent, PointPortModel, PortVisibility } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -16,11 +10,12 @@ providers: [ ],
 standalone: true,
   selector: "app-container",
   // specifies the template string for the diagram component
-  template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults]='getNodeDefaults' (created)='created($event)'>
+  template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" >
         <e-nodes>
-            <e-node id='node1' [offsetX]=150 [offsetY]=150></e-node>
+            <e-node id='node1' [offsetX]=250 [offsetY]=250 [width]=100 [height]=100></e-node>
         </e-nodes>
-    </ejs-diagram>`
+    </ejs-diagram>
+    <button (click)='addPort()'>AddPort</button>`
 })
 export class AppComponent {
     @ViewChild("diagram")
@@ -59,15 +54,12 @@ export class AppComponent {
             visibility: PortVisibility.Visible
         }
     ]
-    public getNodeDefaults(node: NodeModel): NodeModel {
-        node.height = 100;
-        node.width = 100;
-        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
-        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
-        return node;
-    }
-    public created(args: Object): void {
+
+    addPort(){
         // Method to add ports through run time
+        // Parameters:
+        // - node: The node to which the port will be added.
+        // - port: The port collection to be added to the node.
         (this.diagram as Diagram).addPorts((this.diagram as Diagram).nodes[0], this.ports);
     }
 }

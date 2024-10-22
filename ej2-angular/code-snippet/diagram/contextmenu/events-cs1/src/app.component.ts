@@ -1,12 +1,6 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule, DiagramContextMenuService } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
-import { ContextMenuSettingsModel,DiagramBeforeMenuOpenEventArgs, Diagram, NodeModel, ConnectorModel } from '@syncfusion/ej2-diagrams';
+import { DiagramModule, DiagramContextMenuService,DiagramComponent } from '@syncfusion/ej2-angular-diagrams';
+import { ContextMenuSettingsModel,DiagramBeforeMenuOpenEventArgs, } from '@syncfusion/ej2-diagrams';
 import { MenuEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
@@ -17,17 +11,17 @@ imports: [
 providers: [DiagramContextMenuService],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults' [getConnectorDefaults]='getConnectorDefaults' [contextMenuSettings]="contextMenuSettings"  (contextMenuOpen)="contextMenuOpen($event)" (contextMenuClick)="contextMenuClick($event)">
+    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px"  [contextMenuSettings]="contextMenuSettings" (contextMenuBeforeItemRender)="contextMenuBeforeItemRender($event)" (contextMenuOpen)="contextMenuOpen($event)" (contextMenuClick)="contextMenuClick($event)">
         <e-nodes>
-            <e-node id='node1' [offsetX]=150 [offsetY]=150>
+            <e-node id='node1' [offsetX]=100 [offsetY]=100>
                 <e-node-annotations>
-                    <e-node-annotation id="label1" content="Rectangle1" [horizontalAlignment]="horizontalAlignment">
+                    <e-node-annotation id="label1" content="Rectangle1" [width]=100 [height]=100>
                     </e-node-annotation>
                 </e-node-annotations>
             </e-node>
-            <e-node id='node2' [offsetX]=350 [offsetY]=150>
+            <e-node id='node2' [offsetX]=300 [offsetY]=100 [width]=100 [height]=100>
                 <e-node-annotations>
-                    <e-node-annotation id="label1" content="Rectangle2" [horizontalAlignment]="horizontalAlignment">
+                    <e-node-annotation id="label1" content="Rectangle2" >
                     </e-node-annotation>
                 </e-node-annotations>
             </e-node>
@@ -42,59 +36,41 @@ standalone: true,
 export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
-    public contextMenuSettings?: ContextMenuSettingsModel
-    horizontalAlignment: any;
+    public contextMenuSettings?: ContextMenuSettingsModel;
     ngOnInit(): void {
         //Enables the context menu
-        let $this = this as any;
         this.contextMenuSettings = {
             //Enables the context menu
             show: true,
-            items: [{
-                text: 'delete',
-                id: 'delete',
-            }],
+            items: [
+                {
+                    text: 'menu item 1',
+                    id: 'item1',
+                },
+                {
+                    text: 'menu item 2',
+                    id: 'item2'
+                },
+            ],
             // Hides the default context menu items
-            showCustomMenuOnly: false,
+            showCustomMenuOnly: true,
         } as ContextMenuSettingsModel;
     }
+
+    public contextMenuBeforeItemRender(args: MenuEventArgs): void {
+        //Triggers for each menu item
+        console.log('context menu before item render');
+    }
     public contextMenuOpen(args: DiagramBeforeMenuOpenEventArgs): void {
-        for (let item of args.items) {
-          if (item.text === 'delete') {
-              if ((!this.diagram as any).selectedItems.nodes.length && !(this.diagram as any).selectedItems.connectors.length) {
-                  args.hiddenItems.push(item.id as string);
-              }
-          }
-      }
-      }
+        //Triggers when the menu is openned
+        console.log('context menu openned');
+    }
       
-      public contextMenuClick(args: MenuEventArgs): void {
-        if (args.item.id === 'delete') {
-          if (((this.diagram as any).selectedItems.nodes.length + (this.diagram as any).selectedItems.connectors.length) > 0) {
-              (this.diagram as any).cut();
-          }
-      }
-      }
-    public getNodeDefaults(node: NodeModel): NodeModel {
-        node.height = 100;
-        node.width = 100;
-        ((node as NodeModel).style as ShapeStyleModel ).fill = "#6BA5D7";
-        ((node as NodeModel).style as ShapeStyleModel ).strokeColor = "White";
-        return node;
+    public contextMenuClick(args: MenuEventArgs): void {
+        //Triggers when the item is clicked
+        console.log('context menu clicked');
     }
-    public getConnectorDefaults(obj: ConnectorModel): void {
-        obj.style = {
-            strokeColor: '#6BA5D7',
-            fill: '#6BA5D7',
-            strokeWidth: 2
-        }
-        obj.targetDecorator = {
-            style: {
-                fill: '#6BA5D7',
-                strokeColor: '#6BA5D7'
-            }
-        }
-    }
+    
 }
 
 
