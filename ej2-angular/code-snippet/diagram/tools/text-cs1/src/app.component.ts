@@ -1,11 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DiagramComponent, Diagram, NodeModel, TextModel, DiagramTools, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramModule, DiagramComponent, Diagram, NodeModel, TextModel, DiagramTools, ShapeStyleModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
 imports: [
@@ -26,8 +20,6 @@ export class AppComponent {
     public getNodeDefaults(node: NodeModel): NodeModel {
         node.height = 100;
         node.width = 100;
-        ((node as NodeModel).style as ShapeStyleModel).fill = "#6BA5D7";
-        ((node as NodeModel).style as ShapeStyleModel).strokeColor = "White";
         return node;
     }
     public created(args: Object): void {
@@ -39,7 +31,7 @@ export class AppComponent {
         };
         (this.diagram as Diagram).drawingObject = this.node;
         //To draw an object once, activate draw once
-        (this.diagram as Diagram).tool = DiagramTools.DrawOnce;
+        (this.diagram as Diagram).tool = DiagramTools.ContinuousDraw;
         (this.diagram as Diagram).dataBind();
     }
 }

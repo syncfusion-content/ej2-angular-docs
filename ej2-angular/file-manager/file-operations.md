@@ -59,31 +59,51 @@ To achieve the directory upload in the physical file service provider, use the b
 [Route("Upload")]
         public IActionResult Upload(string path, IList<IFormFile> uploadFiles, string action)
         {
-            FileManagerResponse uploadResponse;
-            foreach (var file in uploadFiles)
+            try
             {
-                var folders = (file.FileName).Split('/');
-                // checking the folder upload
-                if (folders.Length > 1)
+                FileManagerResponse uploadResponse;
+                foreach (var file in uploadFiles)
                 {
-                    for (var i = 0; i < folders.Length - 1; i++)
+                    var folders = (file.FileName).Split('/');
+                    // checking the folder upload
+                    if (folders.Length > 1)
                     {
-                        string newDirectoryPath = Path.Combine(this.basePath + path, folders[i]);
-                        if (!Directory.Exists(newDirectoryPath))
+                        for (var i = 0; i < folders.Length - 1; i++)
                         {
-                            this.operation.ToCamelCase(this.operation.Create(path, folders[i]));
+                            string newDirectoryPath = Path.Combine(this.basePath + path, folders[i]);
+                            // checking the directory traversal
+                            if (Path.GetFullPath(newDirectoryPath) != (Path.GetDirectoryName(newDirectoryPath) + Path.DirectorySeparatorChar + folders[i]))
+                            {
+                                throw new UnauthorizedAccessException("Access denied for Directory-traversal");
+                            }
+                            if (!Directory.Exists(newDirectoryPath))
+                            {
+                                this.operation.ToCamelCase(this.operation.Create(path, folders[i]));
+                            }
+                            path += folders[i] + "/";
                         }
-                        path += folders[i] + "/";
                     }
                 }
+                uploadResponse = operation.Upload(path, uploadFiles, action, size, null);
+                if (uploadResponse.Error != null)
+                {
+                    Response.Clear();
+                    Response.ContentType = "application/json; charset=utf-8";
+                    Response.StatusCode = Convert.ToInt32(uploadResponse.Error.Code);
+                    Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = uploadResponse.Error.Message;
+                }
             }
-            uploadResponse = operation.Upload(path, uploadFiles, action, null);
-            if (uploadResponse.Error != null)
+            catch (Exception e)
             {
-               Response.Clear();
-               Response.ContentType = "application/json; charset=utf-8";
-               Response.StatusCode = Convert.ToInt32(uploadResponse.Error.Code);
-               Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = uploadResponse.Error.Message;
+                ErrorDetails er = new ErrorDetails();
+                er.Message = e.Message.ToString();
+                er.Code = "417";
+                er.Message = "Access denied for Directory-traversal";
+                Response.Clear();
+                Response.ContentType = "application/json; charset=utf-8";
+                Response.StatusCode = Convert.ToInt32(er.Code);
+                Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = er.Message;
+                return Content("");
             }
             return Content("");
         }
@@ -112,35 +132,47 @@ Refer to the [GitHub](https://github.com/SyncfusionExamples/azure-aspcore-file-p
 To perform the directory upload in the NodeJS file service provider, use the below code snippet in `app.post` method in the `filesystem-server.js` file.
 
 ```typescript
-var folders = (req.body.filename).split('/');
-var filepath = req.body.path;
+var folders = (path.normalize(req.body.filename).replace(/^(\.\.[\/\\])+/, '').replace(/\\/g, "/")).split('/');
+var filepath = path.normalize(req.body.path).replace(/^(\.\.[\/\\])+/, '').replace(/\\/g, "/");
 var uploadedFileName = folders[folders.length - 1];
 // checking the folder upload
 if (folders.length > 1)
-   {
-     for (var i = 0; i < folders.length - 1; i++)
-       {
-          var newDirectoryPath = path.join(contentRootPath + filepath, folders[i]);
-          if (!fs.existsSync(newDirectoryPath)) {
-                fs.mkdirSync(newDirectoryPath);
-                (async () => {
-                           await FileManagerDirectoryContent(req, res, newDirectoryPath).then(data => {
-                                response = { files: data };
-                                response = JSON.stringify(response);
-                           });
-                        })();
-                    }
-                    filepath += folders[i] + "/";
-                }
-                fs.rename('./' + uploadedFileName, path.join(contentRootPath, filepath + uploadedFileName), function (err) {
-                    if (err) {
-                        if (err.code != 'EBUSY') {
-                            errorValue.message = err.message;
-                            errorValue.code = err.code;
-                        }
-                    }
-                });
+{
+    for (var i = 0; i < folders.length - 1; i++)
+    {
+        var newDirectoryPath = path.join(contentRootPath + filepath, folders[i]);
+        const fullPath = (contentRootPath + filepath + folders[i]).replace(/[\\/]/g, "\\");
+        const isValidatePath = fullPath == newDirectoryPath ? true : false;
+        // checking the directory traversal
+        if(!isValidatePath){
+            var errorMsg = new Error();
+            errorMsg.message = "Access denied for Directory-traversal";
+            errorMsg.code = "401";
+            response = { error: errorMsg };
+            response = JSON.stringify(response);
+            res.setHeader('Content-Type', 'application/json');
+            res.json(response);
+        }
+        if (!fs.existsSync(newDirectoryPath)) {
+            fs.mkdirSync(newDirectoryPath);
+            (async () => {
+               await FileManagerDirectoryContent(req, res, newDirectoryPath).then(data => {
+                    response = { files: data };
+                    response = JSON.stringify(response);
+               });
+            })();
+        }
+        filepath += folders[i] + "/";
+    }
+    fs.rename('./' + uploadedFileName, path.join(contentRootPath, filepath + uploadedFileName), function (err) {
+        if (err) {
+            if (err.code != 'EBUSY') {
+                errorValue.message = err.message;
+                errorValue.code = err.code;
             }
+        }
+    });
+}
 ```
 
 Refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem/blob/master/filesystem-server.js#L788) for more details.
@@ -794,8 +826,7 @@ The following table represents the request parameters of *download* operations.
             },
             _fm_htmlAttr:
             {
-                class:"e-large-icon",
-                title:"1.png"
+                class:"e-large-icon"
             }
         }
     ]

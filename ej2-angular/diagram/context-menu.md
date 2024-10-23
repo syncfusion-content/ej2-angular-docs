@@ -12,12 +12,14 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD010 -->
 
-In graphical user interface (GUI), a context menu is a type of menu that appears when you perform right-click operation. Nested level of context menu items can be created.
-Diagram provides some in-built context menu items and allows to define custom menu items through the [`contextMenuSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram#contextMenuSettings) property
+In a graphical user interface (GUI), a context menu is a type of menu that appears when you perform a right-click operation. It offers users a set of actions relevant to the current context. In diagrams, context menus can be customized extensively. The Diagram control provides built-in context menu items while also allowing users to define custom menu items through the[`contextMenuSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram#contextMenuSettings) property. This flexibility enables tailoring menus to specific application needs, including creating nested levels of menu items for more intricate user interactions.
 
-## Customize context menu
+N> If you want to use contextMenu in diagram, you need to inject `DiagramContextMenu` Module in the diagram.
 
-The [`show`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuSettings#show-boolean) property helps you to enable/disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands.
+## Default context menu
+
+Diagram provides some default context menu items to ease the execution of some frequently used commands. The [`show`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuSettings#show-boolean) property helps you to enable/disable the context menu.
+
 The following code illustrates how to enable the default context menu items.
 
 {% tabs %}
@@ -32,21 +34,21 @@ The following code illustrates how to enable the default context menu items.
   
 {% previewsample "page.domainurl/samples/diagram/contextmenu/contextmenu-cs1" %}
 
-Context menu can be defined for individual node with the desired context menu items.
+## Customize context menu
 
-* Apart from the default context menu items, define some additional context menu items. Those additional items have to be defined and added to the [`items`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuSettingsModel#items) property of the context menu.
+Context menus can be customized for individual nodes by defining specific menu items beyond the default options. To add additional context menu items, you need to define and incorporate them into the [`items`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuSettingsModel#items) property of the context menu.
 
-* Set text and ID for context menu item using the context menu [`text`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#text-string) and [`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#id-string) properties respectively.
+Each custom item can be defined with specific text and ID using the [`text`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#text-string) and [`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#id-string)  properties, respectively. Additionally, you can enhance visual cues by associating icons through the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#iconCss-string) for enabling the use of font icons. The [`target`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#target-string) property specifies where each menu item should appear, and separators can be included using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#separator-boolean) property to visually group menu items. This flexibility allows for a tailored user interface that meets specific application needs efficiently. Nested menu items are defined within the [`items`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel/#items) property of a parent menu item.
 
-* Set an image for the context menu item using the context menu [url](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#url) property.
+### To Display custom menu alone
 
-* The [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#iconCss-string) property defines the class/multiple classes separated by a space for the menu item that is used to include an icon. Menu item can include font icon and sprite image.
+To display the custom context menu items alone, set the [`showCustomMenuOnly`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuSettingsModel#showCustomMenuOnly)property to true.
 
-* The [`target`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#target-string) property used to set the target to show the menu item.
+### Context menu click
 
-* The [`separator`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#separator-boolean) property defines the horizontal lines that are used to separate the menu items. You cannot select the separators. You can enable separators to group the menu items using the separator property.
+Upon clicking custom menu items, actions are handled using the [`contextMenuClick`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#contextmenuclick) event in the diagram. This event allows you to define actions based on which menu item is clicked. For instance, in the example below, the cloning of nodes and the change of fill color for nodes and annotations are efficiently managed and implemented through this event.
 
-The following code example illustrates how to add custom context menu items.
+The following code illustrates context menu click.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,13 +62,47 @@ The following code example illustrates how to add custom context menu items.
   
 {% previewsample "page.domainurl/samples/diagram/contextmenu/custom-cs1" %}
 
-To display the custom context menu items alone, set  the [`showCustomMenuOnly`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuSettingsModel#showCustomMenuOnly) property to true.
+### Context menu open
+
+In certain situations, you may want to hide specific menu items based on the selected elements in the diagram. This can be achieved using the [`contextMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramBeforeMenuOpenEventArgs#DiagramBeforeMenuOpenEventArgs) event. When the context menu is opened via right-click, the `contextMenuOpen` event is triggered. Within this event, you can create an array of menu items to hide for the selected element and pass it to the [`hiddenItems`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramBeforeMenuOpenEventArgs/#hiddenitems) property of the contextMenuOpen event argument. 
+
+The following example demonstrates how to display different custom menu items for nodes, connectors, and the diagram based on the selection.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/contextmenu/custom-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/contextmenu/custom-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/contextmenu/custom-cs2" %}
+
+### Context menu with Url
+
+[`url`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel/#url) property of the menu item is used to set the url of any website which will be opened upon clicking on them. 
+
+The following example shows the context menu with url for three websites.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/contextmenu/custom-cs3/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/contextmenu/custom-cs3/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/contextmenu/custom-cs3-cs1" %}
 
 ## Template Support for Context menu
 
-* Diagram provides template support for context menu. The context menu items can be customized by using the `contextMenuBeforeItemRender` event. The contextMenuBeforeItemRender event triggers while rendering each menu item.
+Diagram provides template support for the context menu. The template for the context menu items can be customized before rendering by using the [`contextMenuBeforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#contextmenubeforeitemrender) event, which triggers while rendering each menu item.
 
-* In the following sample, the menu item is rendered with key code for specified action in ContextMenu using the template. Here, the key code is specified for the cut and copy at right corner of the menu items by adding a span element in the `contextMenuBeforeItemRender` event.
+In the following example, menu items are rendered with shortcut key codes for specific actions in the context menu using a template. The key codes for cut, copy, and paste actions are displayed at the right corner of the menu items by adding a span element in the `contextMenuBeforeItemRender` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,8 +118,13 @@ To display the custom context menu items alone, set  the [`showCustomMenuOnly`](
 
 ## Context menu events
 
-You would be notified with events, when you try to open the context menu items [`contextMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramBeforeMenuOpenEventArgs#DiagramBeforeMenuOpenEventArgs) and when you click the menu items `contextMenuClick`.
-The following code example illustrates how to define those events.
+|Event|Description|
+|----|----|
+|[`contextMenuBeforeItemRender`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#contextmenubeforeitemrender)|Triggers while initializing each menu item.|
+|[`contextMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramBeforeMenuOpenEventArgs#DiagramBeforeMenuOpenEventArgs)|Triggers upon right-click before opening the context menu.|
+|[`contextMenuClick`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#contextmenuclick)|Triggers when a menu item is clicked.|
+
+The following example shows how to get these events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,3 +137,7 @@ The following code example illustrates how to define those events.
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/diagram/contextmenu/events-cs1" %}
+
+## See Also
+
+* [How to open context menu on left click](https://support.syncfusion.com/kb/article/15100/how-to-perform-clipboard-operation-with-custom-context-menu-on-left-click-using-javascript-diagram)

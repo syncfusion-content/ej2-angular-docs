@@ -124,15 +124,15 @@ When a JSON file is uploaded, it undergoes parsing to extract its JSON data. Thi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/serialisation-cs1/src/app.component.ts %}
+{% include code-snippet/diagram/serialisation/serialisation-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/serialisation-cs1/src/main.ts %}
+{% include code-snippet/diagram/serialisation/serialisation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/samples/diagram/serialisation-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/serialisation/serialisation-cs1" %}
 
 
 ## Importing and Exporting Mind Map and Flowchart Diagrams using Mermaid Syntax
@@ -159,15 +159,15 @@ The following example shows how to load flowchart diagram from mermaid syntax.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/serialisation-cs2/src/app.component.ts %}
+{% include code-snippet/diagram/serialisation/serialisation-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/serialisation-cs2/src/main.ts %}
+{% include code-snippet/diagram/serialisation/serialisation-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/samples/diagram/serialisation-cs2" %}
+{% previewsample "page.domainurl/samples/diagram/serialisation/serialisation-cs2" %}
 
 #### Load mindmap layout
 
@@ -175,15 +175,15 @@ The following example shows how to load mind map diagram from mermaid syntax.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/serialisation-cs3/src/app.component.ts %}
+{% include code-snippet/diagram/serialisation/serialisation-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/serialisation-cs3/src/main.ts %}
+{% include code-snippet/diagram/serialisation/serialisation-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/samples/diagram/serialisation-cs3" %}
+{% previewsample "page.domainurl/samples/diagram/serialisation/serialisation-cs3" %}
 
 
 >Note: Mermaid syntax data serialization and deserialization are only supported for Flowchart and Mind map layouts. Please ensure that your diagram uses one of these layouts to successfully load the data.

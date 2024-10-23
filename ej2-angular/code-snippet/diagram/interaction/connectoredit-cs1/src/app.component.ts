@@ -1,40 +1,35 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
-
-
-
-import { Component, ViewEncapsulation, ViewChild, Inject } from '@angular/core';
-import {ConnectorModel,Diagram,ConnectorEditing, ConnectorConstraints,PointModel,DiagramComponent
-} from '@syncfusion/ej2-angular-diagrams';
-Diagram.Inject(ConnectorEditing)
-
-/**
- * Sample for DrawingTool
- */
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { DiagramComponent, DiagramModule, ConnectorModel, PointModel } from '@syncfusion/ej2-angular-diagrams';
+ 
 @Component({
 imports: [
          DiagramModule
     ],
-
+ 
 providers: [ ],
 standalone: true,
-    selector: 'app-container',
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="540px" [connectors]="connectors">
-</ejs-diagram>`,
+    selector: "app-container",
+    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" >
+        <e-connectors>
+            <e-connector id='connector' type='Orthogonal' [sourcePoint]='sourcePoint1' [targetPoint]='targetPoint1'>
+                <e-connector-fixeduserhandles>
+                    <e-connector-fixeduserhandle id='usercon1' [width]=20 [height]=20 [offset] = 0.5 [alignment]='alignment' [displacement]= 'displacement' pathData='M60.3,18H27.5c-3,0-5.5,2.4-5.5,5.5v38.2h5.5V23.5h32.7V18z M68.5,28.9h-30c-3,0-5.5,2.4-5.5,5.5v38.2c0,3,2.4,5.5,5.5,5.5h30c3,0,5.5-2.4,5.5-5.5V34.4C73.9,31.4,71.5,28.9,68.5,28.9z M68.5,72.5h-30V34.4h30V72.5z'>
+                    </e-connector-fixeduserhandle>
+                </e-connector-fixeduserhandles>
+            </e-connector>
+        </e-connectors>
+    </ejs-diagram>`,
     encapsulation: ViewEncapsulation.None
 })
-
 export class AppComponent {
-    @ViewChild('diagram')
+    @ViewChild("diagram")
     public diagram?: DiagramComponent;
-    ngOnInit(): void {}
-        public sourcePoint: PointModel = { x: 100, y: 100 };
-        public targetPoint: PointModel = { x: 200, y: 200 }
-        public connectors: ConnectorModel[] = [{
-      id: 'connector1', type: 'Orthogonal', sourcePoint:this.sourcePoint, targetPoint:this.targetPoint,
-      constraints:ConnectorConstraints.Default | ConnectorConstraints.DragSegmentThumb
-    }];
+    public sourcePoint1?: PointModel;
+    targetPoint1?: Object;
+    ngOnInit(): void {
+        this.sourcePoint1 = { x: 300, y: 100 };
+        this.targetPoint1 = { x: 400, y: 200 };
+    }
+    public alignment = "Before";
+    public displacement = {x:10,y:10};
 }
-
-

@@ -64,15 +64,15 @@ The following code example illustrates how to align all the selected objects at 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/commands/aligMode-cs1/src/app.component.ts %}
+{% include code-snippet/diagram/commands/alignMode-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/commands/aligMode-cs1/src/main.ts %}
+{% include code-snippet/diagram/commands/alignMode-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/commands/aligMode-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/commands/alignMode-cs1" %}
 
 ![Align Sample](images/Commands_img1.png)
 
