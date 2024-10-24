@@ -15,6 +15,8 @@
     height: 100px;
     width: 100px;
 }
-#diagram {
+
+#chart-container {
     display: block;
+    height: 350px;
 }

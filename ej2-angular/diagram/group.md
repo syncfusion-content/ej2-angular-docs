@@ -10,17 +10,29 @@ domainurl: ##DomainURL##
 
 # Group in Angular Diagram component
 
-## Create group
-
 Group is used to cluster multiple nodes and connectors into a single element. It acts like a container for its children (nodes, groups, and connectors). Every change made to the group also affects the children. Child elements can be edited individually.
 
+## Create group
 
 ## Add group when initializing diagram
 
-A group can be added to the diagram model through [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#nodes) collection. To define an object as group, add the child objects to the [`children`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#children) collection of the group.  The following code illustrates how to create a group node.
+A group can be added to the diagram model through [`nodes`](https://ej2.syncfusion.com/angular/documentation/api/diagram#nodes-NodeModel) collection. To define an object as group, add the child objects to the [`children`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#children-string) collection of the group.
+
+* The [`padding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node#padding-MarginModel) property of a group node defines the spacing between the group node’s edges and its children.
 
 * While creating group, its child node need to be declared before the group declaration.
 
+* Add a node to the existing group child by using the `diagram.group` method.
+
+* The group’s `diagram.unGroup` method is used to define whether the group can be ungrouped or not.
+
+* A group can be added into a child of another group.
+
+To create a group using Nodes and Connectors in the Angular Diagram, refer to the below video link,
+
+{% youtube "youtube:https://www.youtube.com/watch?v=CXrWa_ZDu_s&t=350s" %}
+
+The following code illustrates how to create a group node.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,11 +46,21 @@ A group can be added to the diagram model through [`nodes`](https://ej2.syncfusi
   
 {% previewsample "page.domainurl/samples/diagram/groups/group-cs1" %}
 
-Connectors can be added to a group. To create a group using Nodes and Connectors in the Angular Diagram, refer to the below video link,
+The following code illustrates how a ungroup  at runtime.
 
-{% youtube "youtube:https://www.youtube.com/watch?v=CXrWa_ZDu_s&t=350s" %}
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/groups/ungroup-cs1/src/app.component.ts %}
+{% endhighlight %}
 
-The following code illustrates how to add connectors into a group.
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/groups/ungroup-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/groups/ungroup-cs1" %}
+
+Connectors can be added to a group. The following code illustrates how to add connectors into a group.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -52,43 +74,9 @@ The following code illustrates how to add connectors into a group.
   
 {% previewsample "page.domainurl/samples/diagram/groups/groupaddconnector-cs1" %}
 
-## Group nodes at runtime
+## Add group at runtime
 
-Groups can be dynamically created during runtime in the diagram by invoking the [`diagram.group`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#group) method. To initiate this process, first, select the nodes that you intend to include within the group. Subsequently, by utilizing the [`diagram.group`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#group) method, the selected nodes will be encapsulated within a newly formed group node.
-
-The following code illustrates how to group at runtime.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/groups/group-runtime/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/groups/group-runtime/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/groups/group-runtime" %}
-
-## UnGroup nodes at runtime
-
-Group node can be unGrouped dynamically, by using the [`diagram.unGroup`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#ungroup) method. The following code example shows how to unGroup group node at runtime.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/groups/ungroup-runtime/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/groups/ungroup-runtime/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/groups/ungroup-runtime" %}
-
-## Add group node at runtime
-
-A group node can be added at runtime by using the diagram method [`diagram.add`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#add).
+A group node can be added at runtime by using the client-side method `diagram.add`.
 
 The following code illustrates how a group node is added at runtime.
 
@@ -106,9 +94,9 @@ The following code illustrates how a group node is added at runtime.
 
 ## Add collection of group nodes at runtime
 
-* The collection of group nodes can be dynamically added using [`addElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addelements) method.Each time an element is added to the diagram canvas, the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iCollectionChangeEventArgs/) event will be triggered.
+* The collection of group nodes can be dynamically added using [`addElements`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#addelements) method.Each time an element is added to the diagram canvas, the [`collectionChange`](https://ej2.syncfusion.com/angular/documentation/api/diagram#collectionChange--emittypecollectionchangeeventargs) event will be triggered.
 
-The following code illustrates how to add group nodes collection at runtime.
+The following code illustrates how to add group nodes at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -122,11 +110,9 @@ The following code illustrates how to add group nodes collection at runtime.
   
 {% previewsample "page.domainurl/samples/diagram/groups/groupcollection-cs1" %}
 
-## Add/Remove children from group
+## Add children To group at runtime
 
-### Add children To group at runtime
-
-A childNode can be added to the specified Group at runtime by utilizing the diagram method [`diagram.addChildToGroup`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addchildtogroup). 
+A childNode can be added to the specified Group at runtime by utilizing the client-side method `diagram.addChildToGroup`. 
 
 This functionality is achieved by passing the group and existing children as arguments to the method.
 
@@ -137,9 +123,9 @@ The following code illustrates how a child node and a group node can be passed a
 this.diagram.addChildToGroup(groupNode, childNode); 
 
 ```
-### Remove children from group at runtime
+## Remove children from group at runtime
 
-A specific child from a group node can be removed at runtime by utilizing the diagram method [`diagram.removeChildFromGroup`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#removechildfromgroup). 
+A specific child from a group node can be removed at runtime by utilizing the client-side method `diagram.removeChildFromGroup `. 
 
 This functionality is achieved by passing the group and its children as arguments to the method.
 
@@ -162,81 +148,16 @@ this.diagram.removeChildFromGroup (groupNode, childNode);
   
 {% previewsample "page.domainurl/samples/diagram/groups/groupchild-cs1" %}
 
-## Group padding
-
-The [`Padding`](https://ej2.syncfusion.com/angular/documentation/api/diagram/nodeModel/#padding) property of a group node defines the spacing between the group node’s edges and its children.
-
-The following code illustrates how to add Padding to the node group.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/groups/group-padding/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/groups/group-padding/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/groups/group-padding" %}
-
-## Nested group
-
-Nested groups are essentially groups within groups, where a group can contain other groups as its children, creating a hierarchy that helps manage complexity and relationships between different elements.
-
-![Nested Group GIF](images/nestedGroup.gif)
-
- The following code illustrates how to create nested group node.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/groups/group-nested/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/groups/group-nested/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/groups/group-nested" %}
-
-## Add Group in palette
-
-Group node can be added in symbol palette like the normal nodes.  The following code illustrates how to render group node in palette.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/groups/group-palette/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/groups/group-palette/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/groups/group-palette" %}
-
-## Update group node at runtime
-
-Group can be updated dynamically similar to the normal nodes.  The following code illustrates how to update group node at runtime.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/diagram/groups/group-update/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/diagram/groups/group-update/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/diagram/groups/group-update" %}
-
 ## Container
 
-Containers are used to automatically measure and arrange the size and position of the child elements in a predefined manner. There are two types of containers available.
+Containers are used to automatically measure and arrange the size and position of the child elements in a predefined manner.
 
-***Canvas***
+There are two types of containers available.
+
+* Canvas
+* Stack
+
+## Canvas
 
 * The canvas panel supports absolute positioning and provides the least layout functionality to its contained diagram elements.
 
@@ -246,15 +167,15 @@ Containers are used to automatically measure and arrange the size and position o
 
 * It allows elements to be either vertically or horizontally aligned.
 
-* Child can be defined with the collection [`canvas.children`](https://ej2.syncfusion.com/angular/documentation/api/diagram/canvas/#children) property.
+* Child can be defined with the collection [`canvas.children`](https://ej2.syncfusion.com/angular/documentation/api/diagram/canvas#children-DiagramElement) property.
 
-* Basic element can be defined with the collection of `basicElements`.
+* Basic element can be defined with the collection of [`basicElements`](https://ej2.syncfusion.com/angular/documentation/api/diagram#basicElements-DiagramElement).
 
-***Stack***
+## Stack
 
 * Stack panel is used to arrange its children in a single line or stack order, either vertically or horizontally.
 
-* It controls spacing by setting margin properties of child and padding properties of group. By default, a stack panel’s [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel/#orientation) is vertical.
+* It controls spacing by setting margin properties of child and padding properties of group. By default, a stack panel’s [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel#orientation-Orientation) is vertical.
 
 The following code illustrates how to add a stack panel.
 
@@ -280,17 +201,7 @@ The following code illustrates how to add a stack panel.
 
 ## Interaction
 
-Group node interactions can be performed similarly to normal nodes. Fundamental diagram interactions like selecting, dragging, resizing, and rotating apply equally to group nodes. For more informatation refer to the [`nodes interactions`](https://ej2.syncfusion.com/angular/documentation/diagram/nodes#interaction)
-
-### Selecting a Node Group
-
-When a child element within a node group is clicked, the entire contained node group is selected instead of the individual child element. Subsequent clicks on the selected element change the selection from top to bottom within the hierarchy, moving from the parent node group to its children.
-
-![Group Interactions GIF](images/groupInteractions-Gif.gif)
-
-## Events
-
-The events triggered when interacting with group nodes are similar to those for individual nodes.
+You can edit the group and its children at runtime. For more information about how to interact with a group, refer to `Edit Groups`.
 
 ## See Also
 

@@ -1,19 +1,23 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { DiagramModule } from '@syncfusion/ej2-angular-diagrams'
+
+
+
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-import { DiagramComponent, DiagramModule, NodeModel } from '@syncfusion/ej2-angular-diagrams';
+import { DiagramComponent, Diagram, NodeModel } from '@syncfusion/ej2-angular-diagrams';
 
 @Component({
-    imports: [
-        DiagramModule
+imports: [
+         DiagramModule
     ],
 
-    providers: [],
-    standalone: true,
+providers: [ ],
+standalone: true,
     selector: "app-container",
     template: `
-    <button (click)="addChild()">addChildToGroup</button>
-    <button (click)="removeChild()">removeChildFromGroup</button>
+    <button (click)="addChild()">addChild</button>
+    <button (click)="removeChild()">removeChild</button>
     <ejs-diagram #diagram id="diagram" width="100%" height="600" [nodes]="nodes" >
     </ejs-diagram>`,
     encapsulation: ViewEncapsulation.None
@@ -22,7 +26,22 @@ export class AppComponent {
     @ViewChild("diagram")
     public diagram?: DiagramComponent;
     public nodes?: NodeModel[];
+
+    addChild() {
+        (this.diagram as any).addChildToGroup(
+          (this.diagram as any).nodes[2],
+          'node3'
+        );
+    }
+    removeChild() {
+        (this.diagram as any).removeChildFromGroup(
+          (this.diagram as any).nodes[2],
+          'node3'
+        );
+    }
+  
     ngOnInit(): void {
+
         this.nodes = [
             {
                 id: 'node1', width: 150, height: 100, offsetX: 100, offsetY: 100, annotations: [{ content: 'Node1' }]
@@ -34,27 +53,6 @@ export class AppComponent {
                 id: 'node3', width: 100, height: 100, offsetX: 300, offsetY: 300, annotations: [{ content: 'Node3' }]
             }
         ];
-    }
-    addChild() {
-        // Adds the specified diagram object to the specified group node.
-        /**
-         * parameter 1 - The group node to which the diagram object will be added.
-         * parameter 2 - The diagram object to be added to the group.
-         */
-        (this.diagram as DiagramComponent).addChildToGroup(
-            (this.diagram as DiagramComponent).getObject('group1'),
-            'node3'
-        );
-    }
-    removeChild() {
-        // Removes the specified diagram object from the specified group node.
-        /**
-         * parameter 1 - The group node from which the diagram object will be removed.
-         * parameter 2 - The diagram object to be removed from the group.
-         */
-        (this.diagram as DiagramComponent).removeChildFromGroup(
-            (this.diagram as DiagramComponent).getObject('group1'),
-            'node3'
-        );
+
     }
 }
