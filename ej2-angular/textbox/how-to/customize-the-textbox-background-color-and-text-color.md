@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the textbox background color and text color in Angular Textbox component | Syncfusion
-description: Learn here all about Customize the textbox background color and text color in Syncfusion Angular Textbox component of Syncfusion Essential JS 2 and more.
+title: Customize TextBox Background and Text Color in Angular | Syncfusion
+description: Learn here all about Customize the TextBox background color and text color in Syncfusion Angular TextBox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Customize the textbox background color and text color 
+control: Customize the TextBox background color and text color 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the textbox background color and text color in Angular Textbox component
+# Customize the TextBox background color and text color in Angular
 
 You can customize the textbox styles such as background-color, text-color and border-color by overriding its default styles.
 

@@ -67,7 +67,7 @@ To render `flowchart` layout, you need to set the [`layoutType`](https://ej2.syn
 
 ![EJ2 Flowchart layout diagram](./images/flowchart-images/Flowchart_Layout.png)
 
->Note: If you want to convert the data source into flowchart layout, you need to inject DataBinding along with FlowchartLayout module in the diagram.
+N> If you want to convert the data source into flowchart layout, you need to inject DataBinding along with FlowchartLayout module in the diagram.
 
 
 ## Defining data source with appearance configuration
@@ -232,7 +232,7 @@ The following table will explain the pictorial representation of the behavior:
 | Left In Flow | Same As Flow |![EJ2 Diagram displays Decision Output in Vertical](./images/flowchart-images/Flowchart_YesLeft_NoSame.png)|![EJ2 Diagram displays Decision Output in Horizontal](./images/flowchart-images/Flowchart_YesLeft_NoSame_LTR.png) |
 |Same As Flow |Same As Flow|![EJ2 Diagram displays Decision Output in Vertical](./images/flowchart-images/Flowchart_VerticalSameBranches.png)|![EJ2 Diagram displays Decision Output in Horizontal](./images/flowchart-images/Flowchart_HorizontalSameBranches.png)|
 
->Note: If both branch directions are same, **Yes** branch will be prioritized.
+N> If both branch directions are same, **Yes** branch will be prioritized.
 
 
 ## Custom Yes and No branch values

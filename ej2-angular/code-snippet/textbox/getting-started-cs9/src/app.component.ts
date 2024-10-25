@@ -1,31 +1,19 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { FormsModule } from '@angular/forms'
-
-
-
-
 import { Component } from '@angular/core';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
 imports: [
-        
-        FormsModule
+        TextBoxModule
     ],
 
 
 standalone: true,
     selector: 'app-root',
     template: `<div class="wrap">
-                <input class="e-input" type="text" value="John"  placeholder="Enter Name" readonly />
-                <div class="e-float-input">
-                    <input type='text' value="John" required readonly/>
-                    <span class="e-float-line"></span>
-                    <label class="e-float-text e-label-top">Enter Name</label>
-                </div>
+                <ejs-textbox placeholder="Enter Name" value="John" [readonly]="true"> </ejs-textbox>
+                <ejs-textbox placeholder="Enter Name" floatLabelType="Auto" [readonly]="true"></ejs-textbox>
               </div>`
 })
 
-export class AppComponent {}
-
-
+export class AppComponent {
+}

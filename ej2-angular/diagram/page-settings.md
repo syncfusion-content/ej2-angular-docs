@@ -14,7 +14,7 @@ Page settings allow customization of the appearance, size, and orientation of th
 
 ## Page size and appearance
 
-The [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings#height-number) properties in page settings determine the size of the page. Additionally, the [`background`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/) property allows customization of the page's appearance. The [`color`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/#color) property of background is used to define the color of the page. The [`margin`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/marginModel/) property defines the page margins.
+The [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pageSettings#height) properties in page settings determine the size of the page. Additionally, the [`background`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/) property allows customization of the page's appearance. The [`color`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/#color) property of background is used to define the color of the page. The [`margin`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/marginModel/) property defines the page margins.
 
 
 To explore those properties, refer to [`Page Settings`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/pageSettingsModel/).
@@ -35,7 +35,7 @@ The following example shows the customization of page settings.
 
 ## Set background image
 
-A background image can be attached to the page by using the [`source`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/#source) property of [`background`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/background/). The [`scale`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/#scale) property adjusts how the background image stretches, while the [`align`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/#align) property aligns the image within the diagram page.
+A background image can be attached to the page by using the [`source`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/#source) property of [`background`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/). The [`scale`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/#scale) property adjusts how the background image stretches, while the [`align`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/backgroundModel/#align) property aligns the image within the diagram page.
 
 The following code illustrates how to set background image to the diagram page.
 

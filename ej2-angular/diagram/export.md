@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Diagram provides support to export its content as image/svg files. The [`exportDiagram`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#exportdiagram) method of diagrams helps to export the diagram. The following code illustrates how to export the diagram as image.
 
->Note: To Export diagram, you need to inject `PrintAndExport` in the diagram.
+N> To Export diagram, you need to inject `PrintAndExport` in the diagram.
 
 To print and export the diagram in Angular, refer to the below video link.
 
@@ -137,7 +137,7 @@ The following example shows how to export diagram with different regions.
 {% previewsample "page.domainurl/samples/diagram/export/export-cs3" %}
 
 
->Note: The [`bounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExportOptions/#bounds) property of [`exportOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExportOptions/) should be defined to export the diagram with CustomBounds region.
+N> The [`bounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExportOptions/#bounds) property of [`exportOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iExportOptions/) should be defined to export the diagram with CustomBounds region.
 
 
 ### MultiplePage

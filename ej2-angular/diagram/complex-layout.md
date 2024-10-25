@@ -51,7 +51,7 @@ The following code example illustrates how to create a complex hierarchical tree
 
 ![Complex hierarchical tree layout](images/complex-2.png)
 
->Note: In Diagram Layouts, all root nodes will always render at the same level. This default behavior cannot be changed to render different trees at distinct levels.
+N> In Diagram Layouts, all root nodes will always render at the same level. This default behavior cannot be changed to render different trees at distinct levels.
 
 
 ## Line Distribution
@@ -73,7 +73,7 @@ The following code example illustrates how to create a complex hierarchical tree
 
 {% previewsample "page.domainurl/samples/diagram/automaticlayout/complexhiertree-cs3" %}
 
->Note: If you want to use line distribution in diagram layout, you need to inject  LineDistribution module in the diagram.
+N> If you want to use line distribution in diagram layout, you need to inject  LineDistribution module in the diagram.
 
 ![Different point](images/complex-diffPoint.png)
 
@@ -82,7 +82,7 @@ The following code example illustrates how to create a complex hierarchical tree
 
 Linear arrangement is used to linearly arrange the child nodes in layout, which means the parent node is placed in the center corresponding to its children. When line distribution is enabled, linear arrangement is also activated by default. The [`arrangement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/childarrangement/) property of layout is used to enable or disable the linear arrangement in layout. By default arrangement will be `Nonlinear`.
 
->Note: If you want to use linear arrangement in diagram layout, you need to inject  LineDistribution module in the diagram. Linear arrangement is applicable only for complex hierarchical tree layout.
+N> If you want to use linear arrangement in diagram layout, you need to inject  LineDistribution module in the diagram. Linear arrangement is applicable only for complex hierarchical tree layout.
 
 The following code illustrates how to allow a linear arrangement in diagram layout.
 

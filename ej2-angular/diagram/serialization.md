@@ -58,7 +58,7 @@ this.diagram.loadDiagram(saveData);
 
 ```
 
->Note: Before loading a new diagram, existing diagram is cleared.
+N> Before loading a new diagram, existing diagram is cleared.
 
 ## Loaded Event
 
@@ -186,4 +186,4 @@ The following example shows how to load mind map diagram from mermaid syntax.
 {% previewsample "page.domainurl/samples/diagram/serialisation/serialisation-cs3" %}
 
 
->Note: Mermaid syntax data serialization and deserialization are only supported for Flowchart and Mind map layouts. Please ensure that your diagram uses one of these layouts to successfully load the data.
+N> Mermaid syntax data serialization and deserialization are only supported for Flowchart and Mind map layouts. Please ensure that your diagram uses one of these layouts to successfully load the data.

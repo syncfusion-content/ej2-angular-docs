@@ -104,7 +104,7 @@ The layout orientation can used to arrange the layout based on the direction. th
 
 Diagram provides support to customize the  [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/layout/#orientation) of layout. You can set the desired orientation using layout.orientation.
 
->Note: In the diagram the default orientation is `TopToBottom`.
+N> In the diagram the default orientation is `TopToBottom`.
 
 The following code demonstrates how to set the initial orientation for the layout and how to change it dynamically at runtime.
 
@@ -171,7 +171,7 @@ Diagram allows to expand/collapse the subtrees of a layout. The node’s isExpan
 
 {% previewsample "page.domainurl/samples/diagram/automaticlayout/layout-expandandcollapse-cs1" %}
 
-For more details about customizing the expand and collapse icon refer [`expand Collapse`](./expandAndCollapse)
+For more details about customizing the expand and collapse icon refer [`expand Collapse`](./nodes-expandAndCollapse)
 
 ## Layout animation
 
@@ -192,7 +192,7 @@ In the following example, the enableAnimation property ensures that the layout c
 
 {% previewsample "page.domainurl/samples/diagram/automaticlayout/layout-animation-cs1" %}
 
->Note: To enable layout animation, you need to inject LayoutAnimation module in diagram.
+N> To enable layout animation, you need to inject LayoutAnimation module in diagram.
 
 ## Parent - child relation with dropped nodes from symbol palette
 

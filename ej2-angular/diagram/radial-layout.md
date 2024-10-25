@@ -32,7 +32,7 @@ You can create a radial tree layout with DataSource. The following code example 
 
 {% previewsample "page.domainurl/samples/diagram/automaticlayout/radiallayout-cs1" %}
 
->Note: If you want to convert the data source into layout, you need to inject DataBinding along with RadialTree module in the diagram.
+N> If you want to convert the data source into layout, you need to inject DataBinding along with RadialTree module in the diagram.
 
 
 ## Radial tree with nodes and connectors
@@ -52,6 +52,6 @@ You can render a radial tree layout without using DataSource. The following code
 
 {% previewsample "page.domainurl/samples/diagram/automaticlayout/radiallayout-cs2" %}
 
->Note: If you want to use radial tree layout in diagram, you need to inject RadialTree in the diagram.
+N> If you want to use radial tree layout in diagram, you need to inject RadialTree in the diagram.
 
 ![Radial tree](images/RadialTree.png)

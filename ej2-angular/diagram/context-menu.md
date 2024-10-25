@@ -96,7 +96,7 @@ The following example shows the context menu with url for three websites.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/diagram/contextmenu/custom-cs3-cs1" %}
+{% previewsample "page.domainurl/samples/diagram/contextmenu/custom-cs3" %}
 
 ## Template Support for Context menu
 

@@ -40,7 +40,7 @@ The following table outlines the various orientation types available:
 |Horizontal|Aligns the tree layout from left to right|
 |Vertical|Aligns the tree layout from top to bottom|
 
->Note: If you want to use mind map layout in diagram, you need to inject MindMap in the diagram.
+N> If you want to use mind map layout in diagram, you need to inject MindMap in the diagram.
 
 
 ## Mind Map branch
