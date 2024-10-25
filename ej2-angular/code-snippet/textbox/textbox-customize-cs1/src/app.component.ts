@@ -1,41 +1,19 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-
-
-
 import { Component } from '@angular/core';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
 imports: [
-        
+        TextBoxModule
     ],
-
-
 standalone: true,
     selector: 'app-root',
     template: `<div class="wrap">
                 <label> Normal Input </label>
-                <div class="e-input-group">
-                    <input (focus)="focusIn($event.target)" (blur)="focusOut($event.target)" class="e-input" type="text" placeholder="First Name">
-                </div>
+                    <ejs-textbox placeholder="First Name"> </ejs-textbox>
                  <label> Floating Input </label>
-                <div class="e-float-input">
-                    <input (focus)="focusIn($event.target)" (blur)="focusOut($event.target)" type="text" required>
-                    <span class="e-float-line"></span>
-                    <label class="e-float-text">Last Name</label>
-                </div>
+                 <ejs-textbox placeholder="Last Name" floatLabelType="Auto"> </ejs-textbox>
               </div>`
 })
 
 export class AppComponent {
-    public focusIn(target: any): void {
-        target.parentElement.classList.add('e-input-focus');
-    }
-
-    public focusOut(target: any): void {
-        target.parentElement.classList.remove('e-input-focus');
-    }
 }
-
-
-

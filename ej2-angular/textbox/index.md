@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Index in Angular Textbox component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular Textbox component of Syncfusion Essential JS 2 and more.
+title: Index in Angular TextBox component | Syncfusion
+description: Learn here all about Index in Syncfusion Angular TextBox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Index 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Textbox component
+# Index in Angular TextBox component
 
 The **TextBox** is an input element that allows to get input from the user. It allows the user to edit or display the text value.
 

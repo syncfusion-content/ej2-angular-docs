@@ -38,7 +38,8 @@
   color: #ffca1c;
 }
 
-.e-input-group.e-error .e-input { /* csslint allow: adjoining-classes */
+.e-input-group.e-error input.e-input, 
+.e-input-group.e-control-wrapper.e-error input.e-input { /* csslint allow: adjoining-classes */
   color: #f44336;
 }
 

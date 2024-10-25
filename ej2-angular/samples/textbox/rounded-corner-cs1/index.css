@@ -113,3 +113,7 @@
 .e-input-group-icon.e-input-search:before { /* csslint allow: adjoining-classes */
   content: '\e806';
 }
+
+.e-input-group.e-corner{
+  border-radius: 10px;
+}

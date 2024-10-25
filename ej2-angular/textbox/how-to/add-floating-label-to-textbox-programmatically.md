@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Add floating label to textbox programmatically in Angular Textbox component | Syncfusion
-description: Learn here all about Add floating label to textbox programmatically in Syncfusion Angular Textbox component of Syncfusion Essential JS 2 and more.
+title: Add floating label to TextBox programmatically in Angular | Syncfusion
+description: Learn here all about Add floating label to TextBox programmatically in Syncfusion Angular TextBox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Add floating label to textbox programmatically 
+control: Add floating label to TextBox programmatically 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add floating label to textbox programmatically in Angular Textbox component
+# Add Floating Label to TextBox Programmatically in Angular
 
 The `Floating Label TextBox` floats label above the TextBox after focusing, or entering a value in the TextBox.
 

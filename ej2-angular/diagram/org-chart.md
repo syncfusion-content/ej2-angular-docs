@@ -30,7 +30,7 @@ The following code example illustrates how to create an organizational chart wit
 
 {% previewsample "page.domainurl/samples/diagram/automaticlayout/organizationalchart-cs1" %}
 
->Note: If you want to use Organizational chart layout in diagram, you need to inject HierarchicalTree module along with DataBinding module in the diagram.
+N> If you want to use Organizational chart layout in diagram, you need to inject HierarchicalTree module along with DataBinding module in the diagram.
 
 
 ## Organizational chart with nodes and connectors
@@ -145,4 +145,4 @@ The following code example illustrates how to add assistants to layout.
 
 ![Assistant](images/assistant.png)
 
->Note: An Assistant node cannot have any child nodes
+N> An Assistant node cannot have any child nodes

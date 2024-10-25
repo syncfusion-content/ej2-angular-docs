@@ -1,42 +1,22 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
-
-
-
 import { Component } from '@angular/core';
+import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
 imports: [
-        
-        FormsModule
+        TextBoxModule,
+        FormsModule 
     ],
 
 
 standalone: true,
     selector: 'app-root',
     template: `<div class="wrap">
-                <div class="e-float-input e-input-group e-success">
-                    <input type="text" (focus)="focusIn($event.target)" (blur)="focusOut($event.target)" required/>
-                    <span class="e-float-line"></span>
-                    <label class="e-float-text">Success</label>
-                </div>
-                <div class="e-float-input e-input-group e-warning">
-                    <input type="text"(focus)="focusIn($event.target)" (blur)="focusOut($event.target)" required/>
-                    <span class="e-float-line"></span>
-                    <label class="e-float-text">Warning</label>
-                </div></div>`
+                <ejs-textbox placeholder="Success" floatLabelType="Auto" cssClass="e-success"></ejs-textbox>
+                <ejs-textbox placeholder="Warning" floatLabelType="Auto" cssClass="e-warning"></ejs-textbox>>
+              </div>`
 })
 
 export class AppComponent {
-    public focusIn(target: any): void {
-        target.parentElement.classList.add('e-input-focus');
-    }
 
-    public focusOut(target: any): void {
-        target.parentElement.classList.remove('e-input-focus');
-    }
 }
-
-
-

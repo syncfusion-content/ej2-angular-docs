@@ -69,7 +69,7 @@ The diagram method [`startGroupAction`](https://helpej2.syncfusion.com/angular/d
 
 ## Stack limit
 
-The [`stackLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram) property of history manager is used to limits the number of actions to be stored on the history manager.
+The [`stackLimit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/history/#stacklimit) property of history manager is used to limits the number of actions to be stored on the history manager.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -99,7 +99,7 @@ Undo, Redo process can be avoided for particular element by using [`canLog`](htt
   
 {% previewsample "page.domainurl/samples/diagram/undoRedo/canLog-cs1" %}
 
-### undo/redo stack
+## undo/redo stack
 
 The [`undoStack`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/history/#undostack) property is used to get the collection of undo actions which should be performed in the diagram. The [`redoStack`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/history/#redostack) property is used to get the collection of redo actions which should be performed in the diagram. The undoStack/redoStack is the read-only property.
 
