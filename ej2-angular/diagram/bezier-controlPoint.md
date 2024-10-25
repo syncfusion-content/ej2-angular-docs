@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## How to interact with the bezier segments efficiently
 
-While interacting with multiple bezier segments, maintain their control points at the same distance and angle by using the bezierSettings.smoothness property of the connector class.
+While interacting with multiple bezier segments, maintain their control points at the same distance and angle by using the bezierSettings smoothness property of the connector class.
 
 | BezierSmoothness value | Description | Output |
 |-------- | -------- | -------- |
