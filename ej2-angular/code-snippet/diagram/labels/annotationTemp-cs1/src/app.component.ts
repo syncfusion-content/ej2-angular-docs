@@ -10,13 +10,13 @@ providers: [ ],
 standalone: true,
     selector: "app-container",
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" >
-        <ng-template #annotationTemplate >
-                <input type = "button" value= 'button' >
+        <ng-template #annotationTemplate let-data>
+            <input width="100%" style="width: 100px" type = "button" [value]= "data.id" >
         </ng-template>
         <e-nodes>
             <e-node id='node1' [offsetX]=150 [offsetY]=150 [height]=100 [width]=100>
                 <e-node-annotations>
-                    <e-node-annotation id="label1" >
+                    <e-node-annotation id="Node" >
                     </e-node-annotation>
                 </e-node-annotations>
             </e-node>
@@ -24,7 +24,7 @@ standalone: true,
         <e-connectors>
             <e-connector id='connector' [sourcePoint]='sourcePoint' [targetPoint]='targetPoint'>
                 <e-connector-annotations>
-                    <e-connector-annotation>
+                    <e-connector-annotation id="Connector">
                     </e-connector-annotation>
                 </e-connector-annotations>
             </e-connector>

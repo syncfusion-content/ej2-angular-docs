@@ -20,7 +20,7 @@ The [`print`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#prin
 
 ```
 
->Note: To Print diagram you need to inject `PrintAndExport` in the diagram.
+N> To Print diagram you need to inject `PrintAndExport` in the diagram.
 
 ## Print Options
 

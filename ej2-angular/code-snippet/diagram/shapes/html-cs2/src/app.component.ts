@@ -14,7 +14,7 @@ standalone: true,
     template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" >
         <ng-template #nodeTemplate let-data >
         <ng-container>
-            <div style="background:#6BA5D7;height:100%;width:100%;"><button type="button" style="width:100px"> Button</button></div>
+            <div style="background:#6BA5D7;height:100%;width:100%;"><input width="100%" style="width: 100px" type = "button" [value]= "data.id" ></div>
         </ng-container>
         </ng-template>
         <e-nodes>

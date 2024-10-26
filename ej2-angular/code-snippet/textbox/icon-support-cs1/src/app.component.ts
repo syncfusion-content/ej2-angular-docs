@@ -1,46 +1,18 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-
-
-
-import { Component } from '@angular/core';
+import { Component, ViewChild} from '@angular/core';
+import { TextBoxComponent, TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
-    ],
-
-
-standalone: true,
+    imports: [TextBoxModule],
+    standalone: true,
     selector: 'app-root',
-    template: `<div class="wrap">
-                <div class="e-input-group">
-                <input class="e-input" name='input' type="text" (focus)="focusIn($event.target)"
-                placeholder = "Enter Date" (blur)="focusOut($event.target)"/>
-                <span class="e-input-group-icon e-input-popup-date" (mouseup)="onMouseUp($event.target)" (mousedown)="onMouseDown($event.target)"></span>
-                </div>
-              </div>`
+    template: `<ejs-textbox #textbox placeholder = "Enter Date" (created)="onCreate($event)"></ejs-textbox>`
 })
 
 export class AppComponent {
-    public focusIn(target: HTMLElement | any): void {
-        target.parentElement.classList.add('e-input-focus');
-    }
+    @ViewChild('textbox')
+    public textboxObj: TextBoxComponent;
 
-    public focusOut(target: HTMLElement | any): void {
-        target.parentElement.classList.remove('e-input-focus');
-    }
-
-    public onMouseDown(target: HTMLElement | any): void {
-        target.classList.add('e-input-btn-ripple');
-    }
-
-    public onMouseUp(target: HTMLElement | any): void {
-        let ele: HTMLElement = target;
-        setTimeout(
-                () => {ele.classList.remove('e-input-btn-ripple'); },
-                500);
+    public onCreate(args: any) {
+        (this.textboxObj as any).addIcon('append', 'e-icons e-input-popup-date');
     }
 }
-
-

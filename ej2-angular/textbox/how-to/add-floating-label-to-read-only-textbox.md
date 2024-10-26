@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Add floating label to read only textbox in Angular Textbox component | Syncfusion
-description: Learn here all about Add floating label to read only textbox in Syncfusion Angular Textbox component of Syncfusion Essential JS 2 and more.
+title: How to Add Floating Label to Read-Only TextBox in Angular | Syncfusion
+description: Learn here all about Add floating label to read only TextBox in Syncfusion Angular TextBox component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Add floating label to read only textbox 
+control: Add floating label to read only TextBox 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Add floating label to read only textbox in Angular Textbox component
+# Add floating label to read only TextBox in Angular TextBox component
 
-You can achieve floating label for read-only textboxes by adding/removing `e-label-top` and `e-label-bottom` classes to the label element
+You can achieve floating label for read-only textboxes by using [FloatLabelType](https://ej2.syncfusion.com/angular/documentation/api/textbox/#floatlabeltype) property.
 
-In this sample, click the update value button to fill the read-only textbox with value and float a label.
+In this sample, click the update value button to fill the read-only TextBox with value and float a label.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

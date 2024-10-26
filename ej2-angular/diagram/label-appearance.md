@@ -63,7 +63,7 @@ The following codes illustrates how to align annotations.
 
 ## Annotation Margin
 
-[`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#margin-marginmodel) is an absolute value used to add some blank space in any one of its four sides. The annotations can be displaced with the margin property. The following code example illustrates how to align a annotation based on its `offset`, `horizontalAlignment`, `verticalAlignment`, and [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel/) values.
+[`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#margin) is an absolute value used to add some blank space in any one of its four sides. The annotations can be displaced with the margin property. The following code example illustrates how to align a annotation based on its `offset`, `horizontalAlignment`, `verticalAlignment`, and [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel/) values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -79,7 +79,7 @@ The following codes illustrates how to align annotations.
 
 ## Hyperlink
 
-Diagram provides a support to add a [`hyperlink`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#hyperLink-hyperlinkmodel) for the nodes/connectors annotation. It can also be customized  with the below properties.
+Diagram provides a support to add a [`hyperlink`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#hyperlink) for the nodes/connectors annotation. It can also be customized  with the below properties.
 
 A User can open the hyperlink in the new window, the same tab and the new tab by using the  [`hyperlinkOpenState`](https://ej2.syncfusion.com/angular/documentation/api/diagram/hyperlinkModel/#hyperlinkopenstate)  property
 
@@ -205,7 +205,7 @@ When text overflows node boundaries, you can control it by using [`text wrapping
 
 ## Text overflow
 
-The label’s [`TextOverflow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textOverFlow-textoverflow) property is used control whether to display the overflowed content in node or not.
+The label’s [`TextOverflow`](https://ej2.syncfusion.com/angular/documentation/api/diagram/textStyleModel/#textoverflow) property is used control whether to display the overflowed content in node or not.
 
 - `Clip` - The text which overflowing node's bounds will be removed.
 - `Ellipsis` - The text which overflowing nodes's bounds will be replaced by three dots.

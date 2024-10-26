@@ -1,105 +1,62 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
+import { TextBoxComponent, TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 
-
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
 imports: [
-        
-        FormsModule,
+        TextBoxModule,
+        FormsModule
     ],
 
 
 standalone: true,
     selector: 'app-root',
     template: `<div class="wrap">
-
                 <h4> TextBox with icons </h4>
-
-                <div class="e-input-group">
-                    <input class="e-input" type="text" (focus)="focusIn($event.target)"
-                    placeholder = "Enter Date" (blur)="focusOut($event.target)"/>
-                    <span class="e-input-group-icon e-input-popup-date" (mouseup)="onMouseUp($event.target)" (mousedown)="onMouseDown($event.target)"></span>
-                </div>
-
-                <div class="e-input-group e-float-icon-left">
-                    <span class="e-input-group-icon e-input-date" (mouseup)="onMouseUp($event.target)" (mousedown)="onMouseDown($event.target)"></span>
-                    <div class="e-input-in-wrap">
-                        <input class="e-input" type="text" (focus)="focusIn($event.target)"
-                        placeholder = "Enter Date" (blur)="focusOut($event.target)"/>
-                    </div>
-                </div>
-
-                <div class="e-input-group e-float-icon-left">
-                    <span class="e-input-group-icon e-input-date" (mouseup)="onMouseUp($event.target)" (mousedown)="onMouseDown($event.target)"></span>
-                    <div class="e-input-in-wrap">
-                        <input class="e-input" type="text" (focus)="focusIn($event.target)"
-                        placeholder = "Enter Date" (blur)="focusOut($event.target)"/>
-                        <span class="e-input-group-icon e-input-down" (mouseup)="onMouseUp($event.target)" (mousedown)="onMouseDown($event.target)"></span>
-                    </div>
-                </div>
+                <ejs-textbox #textbox placeholder = "Enter Date" (created)="onCreate($event)"></ejs-textbox>
+                <ejs-textbox #textbox1 placeholder = "Enter Date" (created)="onCreate1($event)"></ejs-textbox>
+                <ejs-textbox #textbox2 placeholder = "Enter Date" (created)="onCreate2($event)"></ejs-textbox>
 
                 <h4> Floating label with icons </h4>
-
-                <div class="e-float-input e-input-group">
-                    <input type="text" required (focus)="focusIn($event.target)" (blur)="focusOut($event.target)">
-                    <span class="e-float-line"></span>
-                    <label class="e-float-text" >Enter Date</label>
-                    <span class="e-input-group-icon e-input-popup-date" (mouseup)="onMouseUp($event.target)" (mousedown)="onMouseDown($event.target)"></span>
-                </div>
-
-                <div class="e-float-input e-input-group e-float-icon-left">
-                    <span class="e-input-group-icon e-input-date" (mouseup)="onMouseUp($event.target)" (mousedown)="onMouseDown($event.target)"></span>
-                    <div class="e-input-in-wrap">
-                        <input type="text" required (focus)="focusIn($event.target)" (blur)="focusOut($event.target)">
-                        <span class="e-float-line"></span>
-                        <label class="e-float-text" >Enter Date</label>
-                    </div>
-                </div>
-
-                <div class="e-float-input e-input-group e-float-icon-left">
-                    <span class="e-input-group-icon e-input-date" (mouseup)="onMouseUp($event.target)" (mousedown)="onMouseDown($event.target)"></span>
-                    <div class="e-input-in-wrap">
-                        <input type="text" required (focus)="focusIn($event.target)" (blur)="focusOut($event.target)">
-                        <span class="e-float-line"></span>
-                        <label class="e-float-text" >Enter Date</label>
-                        <span class="e-input-group-icon e-input-down" (mouseup)="onMouseUp($event.target)" (mousedown)="onMouseDown($event.target)"></span>
-                    </div>
-                </div>
+                <ejs-textbox #textbox3 placeholder = "Enter Date" floatLabelType="Auto" (created)="onCreate3($event)"></ejs-textbox>
+                <ejs-textbox #textbox4 placeholder = "Enter Date" floatLabelType="Auto" (created)="onCreate4($event)"></ejs-textbox>
+                <ejs-textbox #textbox5 placeholder = "Enter Date" floatLabelType="Auto" (created)="onCreate5($event)"></ejs-textbox>
               </div>`
 })
 
 export class AppComponent {
-    public focusIn(target: any): void {
-        let parent: HTMLElement = target.parentElement as HTMLElement;
-        if (parent.classList.contains('e-input-in-wrap')) {
-            (parent.parentElement as HTMLElement).classList.add('e-input-focus');
-        } else {
-            parent.classList.add('e-input-focus');
-        }
-    }
+    @ViewChild('textbox')
+    public textboxObj: TextBoxComponent;
+    @ViewChild('textbox1')
+    public textboxObj1: TextBoxComponent;
+    @ViewChild('textbox2')
+    public textboxObj2: TextBoxComponent;
+    @ViewChild('textbox3')
+    public textboxObj3: TextBoxComponent;
+    @ViewChild('textbox4')
+    public textboxObj4: TextBoxComponent;
+    @ViewChild('textbox5')
+    public textboxObj5: TextBoxComponent;
 
-    public focusOut(target: any): void {
-        let parent: HTMLElement = target.parentElement as HTMLElement;
-        if (parent.classList.contains('e-input-in-wrap')) {
-            (parent.parentElement as HTMLElement).classList.remove('e-input-focus');
-        } else {
-            parent.classList.remove('e-input-focus');
-        }
+    public onCreate(args: any) {
+        (this.textboxObj as any).addIcon('append', 'e-icons e-input-popup-date');
     }
-
-    public onMouseDown(target: any): void {
-        target.classList.add('e-input-btn-ripple');
+    public onCreate1(args: any) {
+        (this.textboxObj1 as any).addIcon('prepend', 'e-icons e-input-popup-date');
     }
-
-    public onMouseUp(target: any): void {
-        let ele: HTMLElement = target;
-        setTimeout(
-            () => {ele.classList.remove('e-input-btn-ripple'); 
-        }, 500);
+    public onCreate2(args: any) {
+        (this.textboxObj2 as any).addIcon('prepend', 'e-icons e-input-down');
+    }
+    public onCreate3(args: any) {
+        (this.textboxObj3 as any).addIcon('append', 'e-icons e-input-popup-date');
+    }
+    public onCreate4(args: any) {
+        (this.textboxObj4 as any).addIcon('prepend', 'e-icons e-input-popup-date');
+    }
+    public onCreate5(args: any) {
+        (this.textboxObj5 as any).addIcon('prepend', 'e-icons e-input-down');
     }
  }
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting started with Angular Textbox component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Textbox component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular TextBox component | Syncfusion
+description:  Checkout and learn about Getting started with Angular TextBox component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Textbox component
+# Getting started with Angular TextBox component
 
-This section briefly explains about how to create a simple TextBox through CSS classes using Angular seed repository.
+This section briefly explains about how to create a simple TextBox using Angular seed repository.
 
 To get started quickly with Angular TextBox component, you can check out this video:
 {% youtube "https://www.youtube.com/watch?v=v90dQ41gDcQ" %}
@@ -95,20 +95,20 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding TextBox to the application
 
-* Modify the template as HTML input element with `e-input`class in `app.component.ts` file to render the `TextBox` component.
+* Modify the template as `ejs-textbox` tag in `app.component.ts` file to render the `TextBox` component.
 
 ```javascript
 
-import {TextAreaModule} from '@syncfusion/ej2-angular-inputs'
+import {TextBoxModule} from '@syncfusion/ej2-angular-inputs'
 import { Component } from '@angular/core';
 
 @Component({
 imports: [        
-        TextAreaModule
+        TextBoxModule
     ],
     standalone: true,
     selector: 'app-root',
-    template: `<input class="e-input" type="text" placeholder="Enter Name" />`
+    template: `<ejs-textbox placeholder="Enter Name"></ejs-textbox>`
 })
 
 export class AppComponent { }
@@ -131,45 +131,26 @@ This can be referenced in [src/styles.css] using following code.
 
 ## Adding icons to the TextBox
 
-You can create a TextBox with icon as a group by creating the parent div element with the class `e-input-group` and add the icon element as span with the class `e-input-group-icon`. For detailed information, refer to the [Groups](./groups) section.
+You can create a TextBox with an icon by using the [addIcon](https://ej2.syncfusion.com/react/documentation/api/textbox/#addicon) method within the [created](https://ej2.syncfusion.com/react/documentation/api/textbox/#created) event. For detailed information, refer to the [Groups](./groups/) section.
 
 ```javascript
 
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { TextBoxComponent, TextBoxModule } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
-    ],
+    imports: [TextBoxModule],
     standalone: true,
     selector: 'app-root',
-    template: `<div class="wrap">
-                <div class="e-input-group">
-                <input class="e-input" name='input' type="text" (focus)="focusIn($event.target)"
-                placeholder = "Enter Date" (blur)="focusOut($event.target)"/>
-                <span class="e-input-group-icon e-input-popup-date" (mouseup)="onMouseUp($event.target)" (mousedown)="onMouseDown($event.target)"></span>
-                </div>
-              </div>`
+    template: `<ejs-textbox #textbox placeholder = "Enter Date" (created)="onCreate($event)"></ejs-textbox>`
 })
 
 export class AppComponent {
-    public focusIn(target: HTMLElement | any): void {
-        target.parentElement.classList.add('e-input-focus');
-    }
+    @ViewChild('textbox')
+    public textboxObj: TextBoxComponent;
 
-    public focusOut(target: HTMLElement | any): void {
-        target.parentElement.classList.remove('e-input-focus');
-    }
-
-    public onMouseDown(target: HTMLElement | any): void {
-        target.classList.add('e-input-btn-ripple');
-    }
-
-    public onMouseUp(target: HTMLElement | any): void {
-        let ele: HTMLElement = target;
-        setTimeout(
-                () => {ele.classList.remove('e-input-btn-ripple'); },
-                500);
+    public onCreate(args: any) {
+        (this.textboxObj as any).addIcon('append', 'e-icons e-input-popup-date');
     }
 }
 
