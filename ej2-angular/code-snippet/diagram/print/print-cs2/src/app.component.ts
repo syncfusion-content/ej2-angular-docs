@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { DiagramComponent, DiagramModule, NodeModel, Diagram, PageSettingsModel,
-  SnapConstraints, IExportOptions, PrintAndExport } from '@syncfusion/ej2-angular-diagrams';
+  SnapConstraints, IPrintOptions, PrintAndExport } from '@syncfusion/ej2-angular-diagrams';
 
 Diagram.Inject(PrintAndExport);
 
@@ -83,7 +83,7 @@ export class AppComponent {
   }
 
   onPrintClick() {
-    const printOptions: IExportOptions = {};
+    const printOptions: IPrintOptions = {};
     printOptions.mode = 'Data';
     printOptions.region = 'PageSettings';
     printOptions.multiplePage = true;

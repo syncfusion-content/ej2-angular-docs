@@ -26,7 +26,7 @@ Gateway is used to control the flow of a process and it is represented as a diam
   
 {% previewsample "page.domainurl/samples/diagram/bpmnShapes/gateway-cs1" %}
 
->Note: By default, the `gateway` will be set as **none**.
+N> By default, the `gateway` will be set as **none**.
 
 There are several types of gateways as tabulated:
 

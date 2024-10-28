@@ -21,7 +21,7 @@ standalone: true,
         <e-connectors>
             <e-connector id='connector' type='Orthogonal' [sourcePoint]='sourcePoint' [targetPoint]='targetPoint'>
                 <e-connector-annotations>
-                    <e-connector-annotation [hyperlink]="hyperlink">
+                    <e-connector-annotation [hyperlink]="connectorHyperlink">
                     </e-connector-annotation>
                 </e-connector-annotations>
             </e-connector>
@@ -36,9 +36,14 @@ export class AppComponent {
     public targetPoint?: PointModel;
     public hyperlink: HyperlinkModel = {
       content: 'Google', link: 'https://google.com',
-      //Set the link to open in the current tab
-      hyperlinkOpenState:'CurrentTab'
+      //Set the link to open in the new tab
+      hyperlinkOpenState:'NewWindow'
     }
+    public connectorHyperlink: HyperlinkModel = {
+        link: 'https://google.com',
+        //Set the link to open in the new tab
+        hyperlinkOpenState:'NewWindow'
+      }
     ngOnInit(): void {
         this.sourcePoint = { x: 300, y: 150 };
         this.targetPoint = { x: 500, y: 300 };

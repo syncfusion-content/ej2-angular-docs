@@ -1,4 +1,4 @@
-import { DiagramModule, DiagramRegions, IExportOptions, PageSettingsModel, PrintAndExport,
+import { DiagramModule, DiagramRegions, IPrintOptions, PageSettingsModel, PrintAndExport,
   DiagramComponent, Diagram, NodeModel  } from '@syncfusion/ej2-angular-diagrams';
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 
@@ -24,7 +24,7 @@ Diagram.Inject(PrintAndExport);
 export class AppComponent {
   @ViewChild('diagram')
   public diagram!: DiagramComponent;
-  public exportOptions: IExportOptions = {};
+  public printOptions: IPrintOptions = {};
   public pageSettings: PageSettingsModel = { width: 200, height: 200 };
 
   public nodes: NodeModel[] = [
@@ -48,10 +48,10 @@ export class AppComponent {
 
   // Function to handle the print button click
   onPrintClick(region: string) {
-    this.exportOptions = {
+    this.printOptions = {
       region: region as DiagramRegions,
     };
-    this.diagram.print(this.exportOptions);
+    this.diagram.print(this.printOptions);
   }
   
 }

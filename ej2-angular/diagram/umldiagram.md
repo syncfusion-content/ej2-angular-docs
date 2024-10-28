@@ -143,7 +143,7 @@ The following code example illustrates how to create an aggregation.
 
 ### Composition
 
-Composition is a strong form of `aggregation`. The composition is decorated with a black diamond. To create a composition shape, define the [`relationship`][`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#relationship) property of the connector shape as "Composition".
+Composition is a strong form of `aggregation`. The composition is decorated with a black diamond. To create a composition shape, define the [`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#relationship) property of the connector shape as "Composition".
 
 The following code example illustrates how to create a composition.
 
@@ -163,7 +163,7 @@ The following code example illustrates how to create a composition.
 
 Inheritance is also called as “generalization”. Inheritance is a binary taxonomic directed relationship between a more general classifier (super class) and a more specific classifier (subclass). Inheritance is shown as a line with hollow triangle.
 
-To create an inheritance, define the [`relationship`][`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#relationship) as “inheritance”.
+To create an inheritance, define the [`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#relationship) as “inheritance”.
 
 The following code example illustrates how to create an inheritance.
 
@@ -181,7 +181,7 @@ The following code example illustrates how to create an inheritance.
 
 ### Dependency
 
-Dependency is a directed relationship, which is used to show that some UML elements needs or depends on other model elements for specifications. Dependency is shown as dashed line with opened arrow. To create a dependency, define the [`relationship`][`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#relationship) property of the connector shape as “dependency”.
+Dependency is a directed relationship, which is used to show that some UML elements needs or depends on other model elements for specifications. Dependency is shown as dashed line with opened arrow. To create a dependency, define the [`relationship`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#relationship) property of the connector shape as “dependency”.
 
 The following code example illustrates how to create an dependency.
 
@@ -332,7 +332,7 @@ The following code illustrates how to create a UmlActivity shapes.
 
 ### Uml Activity connector
 
-To create an Uml Activity connector, define the type as "UmlActivity" and flow as either "Exception" or "Control" or "Object".
+To establish a UML Activity connector, specify the [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/relationShipModel/#type) of connector shape as "UmlActivity" and define the flow as either "Exception," "Control," or "Object." This configuration delineates the nature of the connection, allowing for a precise representation of the interaction within the activity diagram.
 
 The following code illustrates how to create a UmlActivity connector.
 

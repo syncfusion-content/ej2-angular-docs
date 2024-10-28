@@ -1,6 +1,6 @@
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { DiagramComponent, DiagramModule, NodeModel, Diagram, SnapConstraints,
-  IExportOptions, PrintAndExport } from '@syncfusion/ej2-angular-diagrams';
+  IPrintOptions, PrintAndExport } from '@syncfusion/ej2-angular-diagrams';
 
 Diagram.Inject(PrintAndExport);
 
@@ -77,7 +77,7 @@ export class AppComponent {
   }
 
   onPrintClick() {
-    const printOptions: IExportOptions = {};
+    const printOptions: IPrintOptions = {};
     printOptions.margin = { left: 400, top: 100 };
     this.diagramInstance.print(printOptions);
   };

@@ -102,7 +102,7 @@ You can select single or multiple cells, rows, or columns using mouse and keyboa
   
 {% previewsample "page.domainurl/samples/spreadsheet/selected-cell-values" %}
 
-## How to remove selection in the spreadsheet
+## Remove Selection
 
 The following sample shows, how to remove the selection in the spreadsheet. Here changing the `mode` as `None` in [`selectionSettings`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#selectionsettings) to disable's the UI selection.
 

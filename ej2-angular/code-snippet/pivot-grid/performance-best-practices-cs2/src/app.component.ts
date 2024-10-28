@@ -6,7 +6,7 @@ import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-ang
 
 import { Component } from '@angular/core';
 import { IDataOptions, PivotView, GroupingBarService, GroupingService, IDataSet } from '@syncfusion/ej2-angular-pivotview';
-import { gData } from './datasource';
+import { Group_Data } from './datasource';
 
 @Component({
     imports: [
@@ -35,7 +35,7 @@ export class AppComponent {
         this.height = 350;
 
         this.dataSourceSettings = {
-            dataSource: gData as IDataSet[],
+            dataSource: Group_Data as IDataSet[],
             expandAll: false,
             enableSorting: true,
             columns: [{ name: 'Product_ID', caption: 'Product ID' }],

@@ -9,7 +9,7 @@ Diagram.Inject(PrintAndExport);
   selector: 'app-container',
 
   template: `
-    <button id="print" (click)="exportDiagram()">Print</button>
+    <button id="export" (click)="exportDiagram()">Export</button>
     <ejs-diagram #diagram id="diagram" width="100%" height="580px" [nodes]='nodes'
     [snapSettings]="snapSettings"></ejs-diagram> `,
 
