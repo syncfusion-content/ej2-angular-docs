@@ -14,7 +14,7 @@ User handles are used to add frequently used commands around the selector.
 
 ## Create user handle
 
-To create user handles, define and add them to the [`userHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel/#userhandles) collection of the [`selectedItems`](https://ej2.syncfusion.com/angular/documentation/api/diagram#selectAll#selecteditems-selectormodel) property. The [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel/#name) property of userHandles is used to define the name of the user handle, which can then be used at runtime for identification and customization. The [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel/#pathdata) property is used to define the path data of userhandle.
+To create user handles, define and add them to the [`userHandles`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel/#userhandles) collection of the [`selectedItems`](https://ej2.syncfusion.com/angular/documentation/api/diagram/selectorModel/) property. The [`name`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel/#name) property of userHandles is used to define the name of the user handle, which can then be used at runtime for identification and customization. The [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel/#pathdata) property is used to define the path data of userhandle.
 
 The following example shows how to render user handle.
 
@@ -66,6 +66,8 @@ The [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api
 
 The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/userHandleModel/#margin) property adds blank space to any of the four sides of the user handle, allowing for precise displacement.
 
+In the following example, the user handle is aligned to the bottom-right corner of the node.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/diagram/interaction/userhandle-cs5/src/app.component.ts %}
@@ -107,7 +109,7 @@ The diagram provides support to show a tooltip when the mouse hovers over any us
   
 {% previewsample "page.domainurl/samples/diagram/interaction/userhandletooltip-cs1" %}
 
-You can also customize other properties of the tooltip, such as [`position`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#position), [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#width), [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#height), etc. For more information refer to the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/diagram/tool-tip) section.
+You can also customize other properties of the tooltip, such as [`position`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#position), [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#width), [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#height), etc. For more information refer to the [`tooltip`](./tooltip) section.
 
 ## Appearance
 
@@ -347,7 +349,7 @@ The diagram provides support to show a tooltip when the mouse hovers over any fi
   
 {% previewsample "page.domainurl/samples/diagram/interaction/tooltipfixeduserhandle-cs1" %}
 
-You can also customize other properties of the tooltip, such as [`position`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#position), [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#width), [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#height), etc. For more information refer to the [`tooltip`](https://ej2.syncfusion.com/angular/documentation/diagram/tool-tip) section.
+You can also customize other properties of the tooltip, such as [`position`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#position), [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#width), [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramTooltipModel/#height), etc. For more information refer to the [`tooltip`](./tooltip) section.
 
 ### Appearance
 

@@ -38,7 +38,7 @@ To create and add annotation to Nodes and Connectors using the Angular Diagram, 
 
 Annotations can be added at runtime by using the client-side method [`addLabels`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addlabels). The following code illustrates how to add a annotation to a node.
 
-The annotation's [`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#id) property is used to define the name of the annotation and its further used to find the annotation at runtime and do any customization.
+The annotation's [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#id) property is used to define the name of the annotation and its further used to find the annotation at runtime and do any customization.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

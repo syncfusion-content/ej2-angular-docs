@@ -36,7 +36,7 @@ The following code example illustrates how to create decorators of various shape
 
 ### Customize the decorator appearance
 
-* The source decorator’s [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokecolor), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokewidth), and [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokedasharray) properties are used to customize the color, width, and appearance of the decorator.
+* The source decorator’s [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle\#strokecolor), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle\#strokewidth), and [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokedasharray) properties are used to customize the color, width, and appearance of the decorator.
 
 * To set the border stroke color, stroke width, and stroke dash array for the target decorator, use [`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokecolor), [`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokewidth), and [`strokeDashArray`](https://ej2.syncfusion.com/angular/documentation/api/diagram/strokeStyle#strokedasharray).
 
@@ -181,7 +181,7 @@ The following code example illustrates how to customize the segment appearance.
 
 ## Connector constraints
 
-* The [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#constraints-ConnectorConstraints) property of connector allows to enable/disable certain features of connectors.
+* The [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#constraints) property of connector allows to enable/disable certain features of connectors.
 
 * To enable or disable the constraints, refer [`constraints`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/connectorConstraints/#connectorconstraints).
 

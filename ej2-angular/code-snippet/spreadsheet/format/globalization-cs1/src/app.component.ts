@@ -1,6 +1,6 @@
 import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
 import { Component, ViewChild } from '@angular/core';
-import { loadCldr, setCulture, setCurrencyCode, Ajax } from '@syncfusion/ej2-base';
+import { loadCldr, setCulture, setCurrencyCode, Fetch } from '@syncfusion/ej2-base';
 import { SpreadsheetComponent, getFormatFromType, configureLocalizedFormat, FormatOption } from '@syncfusion/ej2-angular-spreadsheet';
 import { ChangeEventArgs, DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 import { data } from './datasource';
@@ -11,9 +11,9 @@ const loadCultureFiles: (locales: string[]) => void = (locales: string[]): void 
     locales.forEach((locale: string) => {
         for (const fileName of files) {
             const url: string = `./cldr-data/${fileName === 'numberingSystems' ? '' : `${locale}/`}${fileName}.json`;
-            const ajax: Ajax = new Ajax(url, 'GET', false);
-            ajax.onSuccess = (value: string) => loadCldr(JSON.parse(value));
-            ajax.send();
+            const fetch: Fetch = new Fetch(url, 'GET');
+            fetch.onSuccess = (value: string) => loadCldr((value));
+            fetch.send();
         }
     });
 }
@@ -101,8 +101,10 @@ export class AppComponent {
         // Mapping default number formats for the German ('de') locale after the spreadsheet is created in the created event.
         configureLocalizedFormat(this.spreadsheetObj, localeFormats['de']);
         // You need to invoke a refresh if the formats are configured after the spreadsheet component has been created.
-        this.spreadsheetObj.refresh();
-        this.applyFormats();
+        setTimeout(()=>{
+            this.spreadsheetObj.refresh();
+        });
+        this.applyFormats(); 
     }
 
     change(args: ChangeEventArgs): void {
@@ -151,5 +153,3 @@ export class AppComponent {
         this.spreadsheetObj.numberFormat('0.00%', 'G2:G11');
     }
 };
-
-
