@@ -256,7 +256,7 @@ Node has the InEdges and OutEdges read-only property. In this property, you can 
 
 ```typeScript
 
-@@Component({
+@Component({
 imports: [
          DiagramModule
     ],

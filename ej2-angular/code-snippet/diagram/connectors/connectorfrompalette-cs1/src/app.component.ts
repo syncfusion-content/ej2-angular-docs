@@ -31,7 +31,7 @@ export class AppComponent {
           type: 'Orthogonal',
           sourcePoint: { x: 0, y: 0 },
           targetPoint: { x: 40, y: 40 },
-          
+          style: { strokeDashArray: '4 4' },
         },
         {
           id: 'straight',

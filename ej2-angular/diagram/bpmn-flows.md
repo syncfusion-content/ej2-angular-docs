@@ -80,7 +80,7 @@ The following table contains various representation of sequence flows.
 
 N> The default value for the property `sequence` is **normal**.
 
-## Message
+## Message flow
 
 A [`Message`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnFlow#message) flow shows the flow of messages between two participants and is represented by dashed line. The types of message are as follows:
 

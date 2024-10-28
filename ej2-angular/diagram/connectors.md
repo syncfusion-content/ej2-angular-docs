@@ -29,7 +29,7 @@ To create and customize the connectors easily in the Angular Diagram component, 
 
 ## Add connectors through connectors collection
 
-The [`sourcePoint`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourcepoint-PointModel) and [`targetPoint`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetpoint-PointModel) properties of connector allow you to define the end points of a connector.
+The [`sourcePoint`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourcepoint) and [`targetPoint`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetpoint) properties of connector allow you to define the end points of a connector.
 
 The following code example illustrates how to add a connector through connector collection.
 
@@ -177,7 +177,7 @@ The following code example explains how to customize the connector using [`getCo
 
 ### Connection with nodes
 
-* The [`sourceID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourceid-string) and [`targetID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetid-string) properties allow to define the nodes to be connected.
+* The [`sourceID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourceid) and [`targetID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetid) properties allow to define the nodes to be connected.
 
 The following code example illustrates how to connect two nodes.
 
@@ -225,7 +225,7 @@ export class AppComponent {
 
 ## Connections with ports
 
-The [`sourcePortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourceportid-string) and [`targetPortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetportid-string) properties allow to create connections between some specific points of source/target nodes.
+The [`sourcePortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourceportid) and [`targetPortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetportid) properties allow to create connections between some specific points of source/target nodes.
 
 The following code example illustrates how to create port to port connections.
 
@@ -241,7 +241,7 @@ The following code example illustrates how to create port to port connections.
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorsport-cs1" %}
 
-Similarly, the `sourcePortID` or `targetPortID` can be changed at the runtime by changing the port [`sourcePortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourceportid-string) or [`targetPortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetportid-string).
+Similarly, the `sourcePortID` or `targetPortID` can be changed at the runtime by changing the port [`sourcePortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#sourceportid) or [`targetPortID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#targetportid).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -340,7 +340,7 @@ The following gif illustrates how the connector automatically re-routes the segm
 
 ![LineRouting GIF](images/lineRouting.GIF.gif)
 
-* In some situations, automatic line routing enabled diagram needs to ignore a specific connector from automatic line routing. So, in this case, auto routing feature can be disabled to the specific connector using the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#constraints-ConnectorConstraints) property of the connector like the following code snippet.
+* In some situations, automatic line routing enabled diagram needs to ignore a specific connector from automatic line routing. So, in this case, auto routing feature can be disabled to the specific connector using the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#constraints) property of the connector like the following code snippet.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
