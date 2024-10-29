@@ -250,6 +250,32 @@ The following example demonstrates how to remove the context menu option in the 
   
 {% previewsample "page.domainurl/samples/grid/excel-like-filtering-cs8" %}
 
+## Hide sorting option in filter dialog
+
+The Excel-like filter dialog in the Syncfusion Angular Grid includes built-in sorting options (ascending and descending) by default. To hide these options, set the **display** property of the following CSS classes to **none**, which will prevent the sorting options from appearing in the filter dialog:
+
+```
+.e-excel-ascending,
+.e-excel-descending,
+.e-separator.e-excel-separator {
+ display: none;
+}
+```
+
+Here is a simple example demonstrating how to hide the sorting options in the Excel filter dialog:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/excel-like-filtering-hide/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/excel-like-filtering-hide/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/excel-like-filtering-hide" %}
+
 ## Render checkbox list data in on-demand for excel/checkbox filtering
 
 The Excel/Checkbox filter type of Grid has a restriction where only the first 1000 unique sorted items are accessible to view in the filter dialog checkbox list content by scrolling. This limitation is in place to avoid any rendering delays when opening the filter dialog. However, the searching and filtering processes consider all unique items in that particular column.

@@ -1,23 +1,15 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, EditService, ToolbarService, SortService } from '@syncfusion/ej2-angular-grids'
 
-
-
+import { GridModule, SortService } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
-import { SortEventArgs  } from '@syncfusion/ej2-angular-grids';
+import { SortEventArgs } from '@syncfusion/ej2-angular-grids';
 
 let action: string;
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [SortService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [SortService],
+    standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' allowSorting='true' (actionBegin)='actionBegin($event)' >
                     <e-columns>
@@ -37,7 +29,7 @@ export class AppComponent implements OnInit {
         this.data = data;
     }
     actionBegin(args: SortEventArgs) {
-        if ((args as any).requestType === 'sorting') {
+        if (args.requestType === 'sorting') {
             action = (args as any).direction;
         }
     }
@@ -56,6 +48,4 @@ export class AppComponent implements OnInit {
         }
     }
 }
-
-
 

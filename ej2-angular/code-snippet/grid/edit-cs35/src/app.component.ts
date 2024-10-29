@@ -10,7 +10,7 @@ import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
 import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { employeeDetails } from './datasource';
+import { employeeDetails, columnDataType } from './datasource';
 import { EditSettingsModel, ToolbarItems, IEditCell, GridComponent, EditEventArgs } from '@syncfusion/ej2-angular-grids';
 import { Query } from '@syncfusion/ej2-data';
 import { ChangeEventArgs } from '@syncfusion/ej2-inputs';
@@ -104,7 +104,7 @@ export class AppComponent implements OnInit {
                 dataSource: salaryDetails,
                 fields: { value: 'salary', text: 'salary' },
                 allowFiltering: true,
-
+                change: this.customFn.bind(this)
             }
         };
     }
@@ -143,12 +143,14 @@ export class AppComponent implements OnInit {
         }
     }
 
-    public customFn(args: { value: number }): boolean {
+    public customFn(args: { value: string }): boolean {
         const formObj = (this.grid as GridComponent).editModule.formObj.element['ej2_instances'][0];
+        let salary = parseInt(args.value)
+
         switch (window.role ) {
 
             case 'Sales':
-                if ((args.value >= 5000) && (args.value < 15000))
+                if ((salary >= 5000) && (salary < 15000))
                     return true;
                 else
                     formObj.rules['Salary']['required'][1] = 'Please enter valid Sales Salary >=5000 and< 15000';
@@ -156,7 +158,7 @@ export class AppComponent implements OnInit {
                 break;
 
             case 'Support':
-                if ((args.value >= 15000 && args.value < 19000))
+                if ((salary >= 15000 && salary < 19000))
                     return true;
                 else
                     formObj.rules['Salary']['required'][1] = 'Please enter valid Support Salary >=15000 and < 19000';
@@ -164,7 +166,7 @@ export class AppComponent implements OnInit {
                 break;
 
             case 'Engineer':
-                if ((args.value >= 25000 && args.value < 30000))
+                if ((salary >= 25000 && salary < 30000))
                     return true;
                 else
                     formObj.rules['Salary']['required'][1] = 'Please enter valid Engineer Salary between >=25000 and < 30000';
@@ -172,7 +174,7 @@ export class AppComponent implements OnInit {
                 break;
 
             case 'TeamLead':
-                if ((args.value >= 30000) && (args.value < 50000))
+                if ((salary >= 30000) && (salary < 50000))
                     return true;
                 else
                     formObj.rules['Salary']['required'][1] = 'Please enter valid TeamLead Salary >= 30000 and < 50000';
@@ -180,7 +182,7 @@ export class AppComponent implements OnInit {
                 break;
 
             case 'Manager':
-                if ((args.value >= 50000) && (args.value < 70000))
+                if ((salary >= 50000) && (salary < 70000))
                     return true;
                 else
                     formObj.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';
@@ -198,7 +200,7 @@ export class AppComponent implements OnInit {
     }
     actionBegin(args: EditEventArgs) {
         
-        window.role = args.rowData as { Role: string }['Role'];
+        window.role = (args.rowData as columnDataType)['Role'];
     }
 
 }

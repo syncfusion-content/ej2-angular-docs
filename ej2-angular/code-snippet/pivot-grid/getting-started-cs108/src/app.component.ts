@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
-
-
-
 import { Component } from '@angular/core';
 import { IDataOptions, IDataSet, PivotView, FieldListService, CalculatedFieldService } from '@syncfusion/ej2-angular-pivotview';
 import { Pivot_Data } from './datasource';
@@ -14,13 +11,11 @@ imports: [
         PivotViewAllModule,
         PivotFieldListAllModule
     ],
-
-
-standalone: true,
-  selector: 'app-container',
-  providers: [FieldListService, CalculatedFieldService],
-  // specifies the template string for the pivot table component
-  template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width allowCalculatedField='true' showFieldList='true'></ejs-pivotview>`
+    standalone: true,
+    selector: 'app-container',
+    providers: [FieldListService, CalculatedFieldService],
+    // specifies the template string for the pivot table component
+    template: `<ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings [width]=width allowCalculatedField='true' showFieldList='true'></ejs-pivotview>`
 })
 export class AppComponent {
     public dataSourceSettings?: IDataOptions;
@@ -40,6 +35,6 @@ export class AppComponent {
         };
         this.width = "100%";
     }
- }
+}
 
 

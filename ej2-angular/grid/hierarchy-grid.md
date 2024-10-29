@@ -296,6 +296,36 @@ The following example demonstrates how to expand and collapse the hierarchy grid
 
 > The `expandAll` and `collapseAll` methods are not recommended for large datasets due to the considerable time it takes to update the changes in the UI.
 
+## Customize hierarchy grid icons
+
+You can customize the default expand/collapse icons in the Hierarchy Grid of Syncfusion Grid component using custom CSS, allowing you to modify their visual representation. To achieve this, add the following CSS to your index.html file:
+
+```
+    .e-grid .e-icon-grightarrow::before,
+    .e-grid-menu .e-icon-grightarrow::before {
+    content: '\e85f';
+    }
+    .e-grid .e-icon-gdownarrow::before,
+    .e-grid-menu .e-icon-gdownarrow::before {
+    content: '\e83f';
+    }
+
+```
+
+In the demo below, the expand/collapse icons have been changed to arrow-down and arrow-right icons.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/default-change-icon/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/default-change-icon/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/default-change-icon" %}
+
 ## Hide the expand/collapse icon in parent row when no record in child grid
 
 The Syncfusion Angular Grid allows you to hide the expand/collapse icon in the parent row when there are no records in the child grid. However, in certain scenarios, you may want to hide the expand/collapse icon for parent rows that do not have any child records, providing a cleaner and more intuitive interface by eliminating unnecessary icons in empty parent rows.
