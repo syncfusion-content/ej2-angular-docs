@@ -2,7 +2,7 @@ export interface columnDataType
 {
  EmployeeID:string,
  Role:string,
- Salary:string,
+ Salary:number,
  Address:string
 }
 

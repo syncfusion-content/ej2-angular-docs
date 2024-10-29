@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
-
-
-
 import { Component } from '@angular/core';
 import { IDataOptions, PivotView, GroupingBarService, GroupingService, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 import { Group_Data } from './datasource';
@@ -14,8 +11,6 @@ import { Group_Data } from './datasource';
         PivotViewAllModule,
         PivotFieldListAllModule
     ],
-
-
     standalone: true,
     selector: 'app-container',
     providers: [GroupingBarService, GroupingService],
@@ -30,10 +25,8 @@ export class AppComponent {
     public dataSourceSettings?: IDataOptions;
 
     ngOnInit(): void {
-
         this.width = "100%";
         this.height = 350;
-
         this.dataSourceSettings = {
             dataSource: Group_Data as IDataSet[],
             expandAll: false,
