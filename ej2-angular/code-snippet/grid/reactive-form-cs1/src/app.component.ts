@@ -1,7 +1,5 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { CommonModule } from '@angular/common'; 
 
+import { CommonModule } from '@angular/common'; 
 import { GridModule, EditService, ToolbarService } from '@syncfusion/ej2-angular-grids'
 import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
@@ -18,7 +16,7 @@ import { FormGroup, AbstractControl, FormControl, Validators } from '@angular/fo
 imports: [
         
         GridModule,
-        NumericTextBoxAllModule, DatePickerAllModule,CommonModule
+        NumericTextBoxAllModule, DatePickerAllModule,CommonModule,
         DropDownListAllModule, ReactiveFormsModule, FormsModule,TextAreaModule
     ],
 

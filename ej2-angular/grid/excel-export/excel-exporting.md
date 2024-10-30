@@ -215,6 +215,24 @@ The following example demonstrates how to export the grid with custom date forma
   
 {% previewsample "page.domainurl/samples/grid/excel-exporting-date" %}
 
+## Merge duplicate cells in a specific column before exporting
+
+You can merge duplicate cells (based on their values) in a specific column of the Syncfusion Grid. This can be achieved by utilizing the [dataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#databound) event. Additionally, you can merge duplicate cells in the specified column during export by using the [excelQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/#excelquerycellinfo) event for Excel and CSV formats. This functionality is useful for improving the readability of your data and providing a clearer visual representation.
+
+Here’s an example demonstrating how to merge duplicate cells in the OrderID column in both Grid view and export:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/excel-exporting-merge/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/excel-exporting-merge/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/excel-exporting-merge" %}
+
 ## Exporting multiple grids
 
 Exporting multiple grids in the Syncfusion Angular Grid component allows you to export different grids to compare them side by side in external applications on the same or different pages of a Excel. Each grid is identified by its unique ID. You can specify which grid to export by listing their IDs in the [exportGrids](https://ej2.syncfusion.com/angular/documentation/api/grid/#exportgrids) property.

@@ -104,45 +104,90 @@ The following example explains about chunk upload with cancel support.
 The server-side implementation entirely depends on the application requirements and logic. The following code snippet provides the server-side logic to handle the chunk upload using the uploader components.
 
 ```csharp
-public async Task<IActionResult> Save(IFormFile UploadFiles) // Save the uploaded file
+public string uploads = Path.Combine(Directory.GetCurrentDirectory(), "Uploaded Files"); // Set your desired upload directory path
+
+public async Task<IActionResult> Save(IFormFile UploadFiles)
 {
-    if (UploadFiles.Length > 0)
+    try
     {
-        if (!Directory.Exists(uploads)) //Create directory if not exists
+        if (UploadFiles.Length > 0)
         {
-            Directory.CreateDirectory(uploads);
+            var fileName = UploadFiles.FileName;
+
+            // Create upload directory if it doesn't exist
+            if (!Directory.Exists(uploads))
+            {
+                Directory.CreateDirectory(uploads);
+            }
+
+            if (UploadFiles.ContentType == "application/octet-stream") //Handle chunk upload
+            {
+                // Fetch chunk-index and total-chunk from form data
+                var chunkIndex = Request.Form["chunk-index"];
+                var totalChunk = Request.Form["total-chunk"];
+
+                // Path to save the chunk files with .part extension
+                var tempFilePath = Path.Combine(uploads, fileName + ".part");
+
+                using (var fileStream = new FileStream(tempFilePath, chunkIndex == "0" ? FileMode.Create : FileMode.Append))
+                {
+                    await UploadFiles.CopyToAsync(fileStream);
+                }
+
+                // If all chunks are uploaded, move the file to the final destination
+                if (Convert.ToInt32(chunkIndex) == Convert.ToInt32(totalChunk) - 1)
+                {
+                    var finalFilePath = Path.Combine(uploads, fileName);
+
+                    // Move the .part file to the final destination without the .part extension
+                    System.IO.File.Move(tempFilePath, finalFilePath);
+
+                    return Ok(new { status = "File uploaded successfully" });
+                }
+
+                return Ok(new { status = "Chunk uploaded successfully" });
+            }
+            else //Handle normal upload
+            {
+                var filePath = Path.Combine(uploads, fileName);
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await UploadFiles.CopyToAsync(fileStream);
+                }
+
+                return Ok(new { status = "File uploaded successfully" });
+            }
         }
 
-        if (UploadFiles.ContentType == "application/octet-stream") //Handle chunk upload
-        {
-            var filePath = Path.Combine(uploads, UploadFiles.FileName);
-            using (var fileStream = new FileStream(filePath, FileMode.Append))
-            {
-                await UploadFiles.CopyToAsync(fileStream);
-            }
-        }
-        else //Handle normal upload
-        {
-            var filePath = Path.Combine(uploads, UploadFiles.FileName);
-            using (var fileStream = new FileStream(filePath, FileMode.Create))
-            {
-                await UploadFiles.CopyToAsync(fileStream);
-            }
-        }
+        return BadRequest(new { status = "No file to upload" });
     }
-    return Ok();
+    catch (Exception ex)
+    {
+        return StatusCode(500, new { status = "Error", message = ex.Message });
+    }
 }
 
-public void Remove(string UploadFiles) // Delete the uploaded file
+// Method to handle file removal (optional if needed)
+public async Task<IActionResult> Remove(string UploadFiles)
 {
-    if (UploadFiles != null)
+    try
     {
         var filePath = Path.Combine(uploads, UploadFiles);
+
         if (System.IO.File.Exists(filePath))
         {
-            //Delete the file from server
             System.IO.File.Delete(filePath);
+            return Ok(new { status = "File deleted successfully" });
         }
+        else
+        {
+            return NotFound(new { status = "File not found" });
+        }
+    }
+    catch (Exception ex)
+    {
+        return StatusCode(500, new { status = "Error", message = ex.Message });
     }
 }
 ```
