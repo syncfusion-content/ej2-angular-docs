@@ -4,16 +4,15 @@ import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
 import { Component, ViewChild } from '@angular/core';
 import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 
-// Remove the node from TreeView component
+// Refresh the node in TreeView component
 @Component({
-  imports: [
-          TreeViewModule
-      ],
-  standalone: true,
-  selector: 'app-container',
-  template: `<div id='treeparent'><ejs-treeview #tree id="listtree" [fields]='listfields'></ejs-treeview>
-      <button id="button1" (click)="onClick1($event)">Remove Parent</button>
-        <button id="button2" (click)="onClick2($event)">Remove Child</button></div>`
+    imports: [
+            TreeViewModule
+        ],
+    standalone: true,
+    selector: 'app-container',
+    template: `<div id='treeparent'><ejs-treeview #tree id="listtree" [fields]='listfields'"></ejs-treeview>
+        <button id="button" (click)="onClick($event)">Refresh Node</button></div>`
 })
 export class AppComponent {
 
@@ -31,13 +30,10 @@ export class AppComponent {
     { id: 10, pid: 7, name: 'Child 3' },
   ];
   public listfields: Object = { dataSource: this.localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' };
-  
-  //Remove single node from the TreeView component
-  onClick1(event: any) {
-    this.tree.removeNodes(['7']);
-  }
-  // Remove multiple nodes from the TreeView component
-  onClick2(event: any) {
-    this.tree.removeNodes(['3','4']);
+  onClick(event: any) {
+    // Refresh the node having id 4 in the TreeView component.
+    var nodeData = this.tree.getTreeData('4');
+    nodeData[0].name = 'Node refreshed';
+    this.tree?.refreshNode('4', nodeData); // Refresh the node with new data.
   }
 }

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser'
-import { NgModule } from '@angular/core'
-import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService  } from '@syncfusion/ej2-angular-filemanager'
+import { NgModule, ViewEncapsulation } from '@angular/core'
+import { FileManagerAllModule, NavigationPaneService, ToolbarService, DetailsViewService  } from '@syncfusion/ej2-angular-filemanager'
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
 
 
@@ -11,9 +11,10 @@ import {FileManagerComponent} from '@syncfusion/ej2-angular-filemanager';
 import { CheckBoxComponent, ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-imports: [FileManagerModule,  CheckBoxModule],
+imports: [FileManagerAllModule,  CheckBoxModule],
 
 providers:[ NavigationPaneService, ToolbarService, DetailsViewService],
+encapsulation: ViewEncapsulation.None,
 standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
@@ -31,7 +32,7 @@ standalone: true,
                 <e-toolbaritem name= "Rename"></e-toolbaritem>
                 <e-toolbaritem name= "Select">
                     <ng-template #template>
-                        <ejs-checkbox #checkbox label="Select All" [checked]="false" (change)="onChange()"></ejs-checkbox>
+                        <ejs-checkbox #checkbox label="Select All" [checked]="false" (change)="onChange($event)"></ejs-checkbox>
                     </ng-template>
                 </e-toolbaritem>
                 <e-toolbaritem name= "Selection"></e-toolbaritem>
@@ -43,7 +44,8 @@ standalone: true,
 export class AppComponent {
     @ViewChild('fileManager')
     public fileManagerInstance?: FileManagerComponent;
-    public checkbox: CheckBoxComponent;
+    @ViewChild('checkbox')
+    public checkbox?: CheckBoxComponent;
     public ajaxSettings?: object;
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
     public ngOnInit(): void {
