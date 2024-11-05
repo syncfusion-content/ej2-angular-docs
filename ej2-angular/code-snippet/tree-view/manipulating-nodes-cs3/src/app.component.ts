@@ -4,17 +4,15 @@ import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
 import { Component, ViewChild } from '@angular/core';
 import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 
-// Add the node to the TreeView component
+// Update the node in TreeView component
 @Component({
   imports: [
           TreeViewModule
       ],
   standalone: true,
   selector: 'app-container',
-  template: `<div id='treeparent'><ejs-treeview #tree id="listtree" [fields]='listfields'></ejs-treeview>
-        <button id="button1" (click)="onClick1($event)">Add Parent</button>
-        <button id="button2" (click)="onClick2($event)">Add Child</button>
-      </div>`
+  template: `<div id='treeparent'><ejs-treeview #tree id="listtree" allowEditing='allowEditing' [fields]='listfields'>
+      </ejs-treeview><button id="button" (click)="onClick($event)">Update node</button></div>`
 })
 export class AppComponent {
 
@@ -32,15 +30,9 @@ export class AppComponent {
     { id: 10, pid: 7, name: 'Child 3' },
   ];
   public listfields: Object = { dataSource: this.localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' };
-  
-  //Add parent node and child node to the TreeView component
-  onClick1(event: any) {
-    this.tree.addNodes([
-      { id: 12, name: 'New Parent' },
-      { id: 13, pid: 12, name: 'New Child1' },
-    ]);
-  }
-  onClick2(event: any) {
-    this.tree.addNodes([{ id: 11, name: 'New Child2', pid: 1 }], '1', null);
+  public allowEditing: boolean = true;
+  onClick(event: any) {
+    // Update the node with new text in the TreeView component.
+    this.tree?.updateNode('4', 'Node updated');
   }
 }

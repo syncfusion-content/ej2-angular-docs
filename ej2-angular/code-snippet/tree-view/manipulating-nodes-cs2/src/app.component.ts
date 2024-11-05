@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { FormsModule } from '@angular/forms'
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
 import { Component, ViewChild } from '@angular/core';
 import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 
-// Move the node to the target node
+// Remove the node from TreeView component
 @Component({
   imports: [
           TreeViewModule
@@ -13,7 +12,8 @@ import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
   standalone: true,
   selector: 'app-container',
   template: `<div id='treeparent'><ejs-treeview #tree id="listtree" [fields]='listfields'></ejs-treeview>
-  <button id="button" (click)="onClick($event)">Move Node</button></div>`
+      <button id="button1" (click)="onClick1($event)">Remove Parent</button>
+        <button id="button2" (click)="onClick2($event)">Remove Child</button></div>`
 })
 export class AppComponent {
 
@@ -31,8 +31,13 @@ export class AppComponent {
     { id: 10, pid: 7, name: 'Child 3' },
   ];
   public listfields: Object = { dataSource: this.localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' };
-  onClick(event: any) {
-    // Move the node with id 2 to the target node with id 3 to the index of 1.
-    this.tree.moveNodes(['2'], '3', 1); 
+  
+  //Remove single node from the TreeView component
+  onClick1(event: any) {
+    this.tree?.removeNodes(['7']);
+  }
+  // Remove multiple nodes from the TreeView component
+  onClick2(event: any) {
+    this.tree?.removeNodes(['3','4']);
   }
 }
