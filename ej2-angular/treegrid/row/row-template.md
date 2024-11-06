@@ -37,7 +37,7 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
                             {{data.EmpID}}
                         </td>
                         <td class="rowphoto">
-                            <img src="../assets/images/{{data.FullName}}.png" alt="{{data.FullName}}" />
+                            <img src="{{data.FullName}}.png" alt="{{data.FullName}}" />
                         </td>
                         <td class="details">
                             <table class="CardTable">
@@ -121,7 +121,7 @@ const instance: Internationalization = new Internationalization();
                             {{data.EmpID}}
                         </td>
                         <td class="rowphoto">
-                            <img src="../assets/images/{{data.FullName}}.png" alt="{{data.FullName}}" />
+                            <img src="{{data.FullName}}.png" alt="{{data.FullName}}" />
                         </td>
                         <td class="details">
                             <table class="CardTable">
