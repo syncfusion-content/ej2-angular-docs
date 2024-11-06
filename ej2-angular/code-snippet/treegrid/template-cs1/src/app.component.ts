@@ -14,7 +14,7 @@ import { textdata } from './datasource';
                         <e-column headerText = 'Employee Name' width = '150'>
                             <ng-template #template let-data>
                                   <div style="position:relative;display:inline-block;">
-                                    <img src="../assets/images/{{data.FullName}}.png" alt="{{data.FullName}}" />
+                                        <img src="{{data.FullName}}.png" alt="{{data.FullName}}" />
                                   </div>
                             </ng-template>
                         </e-column>
