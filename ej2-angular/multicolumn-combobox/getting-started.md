@@ -122,6 +122,7 @@ This can be referenced in [src/styles.css] using following code.
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-grids/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-multicolumn-combobox/styles/material.css';
 ```
