@@ -10,7 +10,7 @@ import { MultiSelectModule } from '@syncfusion/ej2-angular-dropdowns'
 import { AutoCompleteModule } from '@syncfusion/ej2-angular-dropdowns'
 
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { employeeDetails, columnDataType } from './datasource';
+import { columnDataType, employeeDetails } from './datasource';
 import { EditSettingsModel, ToolbarItems, IEditCell, GridComponent, EditEventArgs } from '@syncfusion/ej2-angular-grids';
 import { Query } from '@syncfusion/ej2-data';
 import { ChangeEventArgs } from '@syncfusion/ej2-inputs';
@@ -47,7 +47,8 @@ imports: [
         FormsModule,
         TextBoxModule,
         MultiSelectModule,
-        AutoCompleteModule
+        AutoCompleteModule,
+        DropDownListModule
     ],
 
 providers: [EditService, ToolbarService, SortService, PageService],
@@ -146,7 +147,6 @@ export class AppComponent implements OnInit {
     public customFn(args: { value: string }): boolean {
         const formObj = (this.grid as GridComponent).editModule.formObj.element['ej2_instances'][0];
         let salary = parseInt(args.value)
-
         switch (window.role ) {
 
             case 'Sales':
@@ -188,18 +188,16 @@ export class AppComponent implements OnInit {
                     formObj.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';
 
                 break;
-
         }
         return false;
     }
     load(): void {
         let column = (this.grid as GridComponent).getColumnByField('Salary');
         column.validationRules = {
-            required: [this.customFn.bind(this), 'Please enter valid salary'],
+            required: [this.customFn.bind(this),'Please enter valid salary'],
         };
     }
     actionBegin(args: EditEventArgs) {
-        
         window.role = (args.rowData as columnDataType)['Role'];
     }
 
