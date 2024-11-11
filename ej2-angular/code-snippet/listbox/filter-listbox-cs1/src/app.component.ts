@@ -1,4 +1,3 @@
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { ListBoxComponent , ListBoxAllModule} from '@syncfusion/ej2-angular-dropdowns'
 import { Query } from '@syncfusion/ej2-data';
 import { Component } from '@angular/core';
@@ -14,7 +13,7 @@ imports: [
 standalone: true,
     selector: 'app-container',
     template: `<div class="e-section-control">
-                Enter Tex: <input id='filterTextBox' type="text" (input)="onFilterChange($event)" placeholder="Enter text to filter">
+                Enter Tex: <input id='filterTextBox' (input)="onFilterChange($event)" placeholder="Enter text to filter">
                 <h4>Select your favorite car:</h4>
                 <ejs-listbox id="listbox"  [dataSource]="data"></ejs-listbox></div>`
 })

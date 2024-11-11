@@ -66,6 +66,47 @@ export class AppComponent implements OnInit {
 ```
 
 ```
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { CrudService } from './data.service';
+import { Tasks } from './tasks';
+import { TreeGridComponent, DataStateChangeEventArgs } from '@syncfusion/ej2-angular-treegrid';
+@Component({
+    selector: 'app-root',
+    template: `<ejs-treegrid #treegrid [dataSource]='data | async' [treeColumnIndex]='1' parentIdMapping='ParentId' idMapping='TaskId' hasChildMapping='isParent' (dataStateChange)= 'dataStateChange($event)' [allowPaging]="true" [allowSorting]="true" [pageSettings]="pageSettings">
+        <e-columns>
+            <e-column field='TaskId' headerText='Task ID' width='90' textAlign='Right'></e-column>
+            <e-column field='TaskName' headerText='Task Name' width='170'></e-column>
+            <e-column field='Progress' headerText='Progress' width='130' textAlign='Right'></e-column>
+            <e-column field='Duration' headerText='Duration' width='80' textAlign='Right'></e-column>
+        </e-columns>
+                </ejs-treegrid>`
+})
+export class AppComponent implements OnInit {
+
+    public data: Observable<DataStateChangeEventArgs>;
+    public pageSettings: Object;
+    public state: DataStateChangeEventArgs;
+    @ViewChild('treegrid')
+    public treegrid: TreeGridComponent;
+    tasks: Tasks[];
+    constructor(private dataService: DataService) {
+        this.data = dataService;
+    }
+
+    public dataStateChange(state: DataStateChangeEventArgs): void {
+        this.dataService.execute(state);
+    }
+
+    public ngOnInit(): void {
+        this.pageSettings = { pageSize: 1, pageSizeMode: 'Root' };
+        const state: any = { skip: 0, take: 1 };
+        this.dataService.execute(state);
+    }
+}
+```
+
+```
 import { DataManager, DataResult, Query } from '@syncfusion/ej2-data';
 import { Injectable } from '@angular/core';
 import { DataStateChangeEventArgs } from '@syncfusion/ej2-angular-treegrid';

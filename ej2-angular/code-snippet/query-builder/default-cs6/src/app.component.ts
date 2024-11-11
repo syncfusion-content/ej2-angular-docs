@@ -46,7 +46,7 @@ L10n.load({
             'IsEmpty': 'Ist leer',
             'IsNotEmpty': 'Ist nicht leer',
             'IsNull': 'Ist Null',
-            'IsNotNull': 'Ist nicht Null',
+            'IsNotNull': 'Ist nicht Null'
         }
     }
 });

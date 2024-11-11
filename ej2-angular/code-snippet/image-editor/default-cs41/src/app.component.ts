@@ -28,7 +28,7 @@ export class AppComponent {
       const reader = new FileReader();
       reader.onload = () => {
         // Load the image into the Image Editor
-        this.imageEditorObj?.open(reader.result as any);
+        this.imageEditorObj?.open(reader.result  as any);
       };
       reader.readAsDataURL(args.filesData[0].rawFile);
     }
