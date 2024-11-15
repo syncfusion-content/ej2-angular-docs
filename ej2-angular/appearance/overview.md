@@ -22,8 +22,8 @@ The  Syncfusion Angular UI can allows you to apply styles for your application. 
 |Material 3 Dark | material3-dark.css |
 |Bootstrap 5 | bootstrap5.css |
 |Bootstrap 5 Dark | bootstrap5-dark.css |
-| Fluent | fluent.css |
-| Fluent Dark | fluent-dark.css |
+|Fluent | fluent.css |
+|Fluent Dark | fluent-dark.css |
 |Google’s Material | material.css |
 |Google’s Material-Dark | material-dark.css |
 |Tailwind CSS | tailwind.css |
@@ -889,7 +889,7 @@ The following list of common variables is used in the Syncfusion Angular library
             </td>
         </tr>
         <tr>
-            <td>--color-sf-on-tertiary-containe</td>
+            <td>--color-sf-on-tertiary-container</td>
             <td>
                 <span class="circle-color-indicator" style="background: rgb(55, 11, 30)"></span> rgb(55, 11, 30)
             </td>

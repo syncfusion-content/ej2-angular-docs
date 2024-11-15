@@ -19,6 +19,8 @@ The TextArea allows users to input and edit large amounts of text. Resizing this
 | Both | Allows users to adjust both the height and width of the TextArea, offering maximum flexibility in resizing. It is ideal for situations where users need precise control over the dimensions of the TextArea. |
 | None | Disables the resizing in the TextArea. This option is ideal for situations where maintaining a consistent layout is critical, and resizing by users is unnecessary. |
 
+> In addition to the above options, the `resizeMode` property defaults to `Both`. In this case, the width of the TextArea will not be adjusted automatically. You can still update it manually through the [cols](https://ej2.syncfusion.com/angular/documentation/api/textarea/#cols) property or with CSS.
+
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/textarea/resize-cs1/src/app.component.ts %}

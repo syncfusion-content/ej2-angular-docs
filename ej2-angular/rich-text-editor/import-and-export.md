@@ -79,7 +79,6 @@ The following code block provides a detailed explanation of the API endpoint use
 The `ImportWord` functionality is integrated within the `actionBegin` and `actionComplete` events. If the cancel property is set to true in the `actionBegin` event argument, the execution of the `ImportWord` functionality can be prevented.
 
 > Rich Text Editor features are segregated into individual feature-wise modules. To use use Import/Export feature, inject `ImportExportService` in the provider section.
-
 The following example illustrates how to set up the `ImportWord` in the Rich Text Editor to facilitate content importation from Word documents:
 
 {% tabs %}

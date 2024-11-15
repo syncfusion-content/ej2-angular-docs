@@ -1,4 +1,3 @@
-
 import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService, ImportExportService, ToolbarSettingsModel, ExportWordModel, ExportPdfModel } from '@syncfusion/ej2-angular-richtexteditor'
 import { Component } from '@angular/core';
 @Component({
