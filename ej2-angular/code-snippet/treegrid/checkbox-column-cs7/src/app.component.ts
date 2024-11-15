@@ -18,7 +18,7 @@ import { sampleData } from './datasource';
               <button ejs-button id="buttons" (click)="GetCheckedRecord()">Checked Records</button>
               <button ejs-button id="buttons" (click)="GetCheckedIndex()">Checked Index</button>
                </div>
-               <div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>
+               <div style="margin-left:180px"><p style="color:red;" id="message" [innerHTML]="message"></p></div>
           
                 <ejs-treegrid #treegrid [dataSource]='data' height='250' [treeColumnIndex]='1' childMapping='subtasks' autoCheckHierarchy='true' >
                  <e-columns>

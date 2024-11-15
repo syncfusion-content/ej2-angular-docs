@@ -55,6 +55,7 @@ standalone: true,
 })
 
 export class AppComponent implements OnInit {
+   ngOnInit(): void {}
   // Reference the Dialog element
     @ViewChild('ejDialog') ejDialog: DialogComponent |any;
 

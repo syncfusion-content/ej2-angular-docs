@@ -4,11 +4,11 @@ import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { PageService, SortService, FilterService } from '@syncfusion/ej2-angular-treegrid'
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
-import { ColumnMenuService } from '@syncfusion/ej2-angular-treegrid';
+import { ColumnMenuService, ResizeService } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
 imports: [ TreeGridModule,],
-providers: [PageService, SortService, FilterService,ColumnMenuService],
+providers: [PageService, SortService, FilterService, ColumnMenuService, ResizeService],
 standalone: true,
     selector: 'app-container',
     template: `<div style="margin-left:180px"><p style="color:red;" id="message">{{ message }}</p></div>
@@ -37,6 +37,3 @@ export class AppComponent implements OnInit {
         this.message = 'columnMenuClick event is Triggered';
     }
 }
-
-
-
