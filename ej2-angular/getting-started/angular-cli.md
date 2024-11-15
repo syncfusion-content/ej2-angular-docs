@@ -8,65 +8,72 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular CLI
+# Getting Started with Angular using Angular CLI and TypeScript
 
-The Angular CLI is a command-line interface tool that allows developers to create, manage, and build Angular applications. This makes it easy to set up a new Angular project and get started with development.
+This article provides a step-by-step guide for setting up an Angular project using TypeScript with the Angular CLI and integrating Syncfusion Angular components.
 
-In this guide, we will show you how to create an Angular project and install the Syncfusion Angular UI Components (Essential JS 2) to get started with development.
+The Angular CLI is a command-line tool that enables developers to create, manage, and build Angular applications easily, making it ideal for setting up a new Angular project and starting development quickly.
 
 ## Prerequisites
 
 [System requirements for Syncfusion Angular UI components](../system-requirement)
 
-## Setting up an Angular project
+## Set up the Angular application
 
-Using [Angular CLI](https://github.com/angular/angular-cli), you can easily setup Angular projects. This section provides guidance for installing a specific version of Angular CLI and creating an Angular 18 application based on your requirements.
-
-### Installing a Specific Version
-
-To install a specific version of Angular CLI, use the following command,
-
-```bash
-npm install -g @angular/cli@16.0.1
-```
-
-### Installing the Latest Angular CLI
-
-To create an Angular 18 application, use the Angular CLI with the following command
+A good way to start with Angular is by generating a new application using the [Angular CLI](https://github.com/angular/angular-cli). The following command installs Angular CLI globally:
 
 ```bash
 npm install -g @angular/cli
 ```
 
-N> For Angular 18, it default for generates a standalone application. Detailed instructions on creating Syncfusion Angular standalone components using the latest version, please refer to the [Standalone guide](./angular-standalone).
+> For Angular 18, it default for generates a standalone application. Detailed instructions on creating Syncfusion Angular standalone components using the latest version, please refer to the [Standalone guide](./angular-standalone).
+
+
+### Installing a specific version
+
+To install a specific version of Angular CLI, use the following command:
+
+```bash
+npm install -g @angular/cli@16.0.1
+```
 
 ## Create a new application
 
-Once the Angular CLI is installed, execute the following command to create a new project,
+With Angular CLI installed, execute the following command to create a new application:
 
 ```bash
 ng new syncfusion-angular-app
 ```
 
-This command will prompt you for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
+This command prompts you to configure settings such as whether to include Angular routing and which stylesheet format to use.
 
-![Initial_setup](images/Initial_setup.PNG)
+```bash
 
-By default, it will create a CSS-based application. You can specify that you want to use SCSS by running the following command instead:
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
+```
+
+By default, it will create a CSS-based application. Specify SCSS as the style format if needed:
 
 ```bash
 ng new syncfusion-angular-app --style=scss
 ```
 
-Next, navigate to the created project folder:
+Navigate to the created application folder:
 
 ```bash
 cd syncfusion-angular-app
 ```
 
-## Installing Syncfusion Angular packages
+## Adding Syncfusion Angular packages
 
-Syncfusion packages are distributed in npm under the `@syncfusion` scope. You can obtain all of the available Angular Syncfusion packages from [npm]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion Angular component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-angular). To use Syncfusion Angular components in the project, install the necessary package.
+
+This article uses the [Angular Grid component](https://www.syncfusion.com/angular-components/angular-grid) as an example. To add the Angular Grid component, install the `@syncfusion/ej2-angular-grids` package:
 
 Currently, Syncfusion provides two set of package structures for Angular components,
 
@@ -80,7 +87,7 @@ ng add @syncfusion/ej2-angular-grids
 ```
 If you are not using fully ivy compiler application, use the `ngcc` tagged packages of the Syncfusion Angular components.
 
-N> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](../common/troubleshooting/ngcc-compatibility).
+> The ngcc packages are still compatible with Angular CLI versions 15 and below. However, they may generate warnings suggesting the use of IVY compiled packages. Starting from Angular 16, support for the ngcc package has been completely removed. If you have further questions regarding ngcc compatibility, please refer to the following [FAQ](../common/troubleshooting/ngcc-compatibility).
 
 ```bash
 npm add @syncfusion/ej2-angular-grids@20.2.38-ngcc
@@ -92,15 +99,40 @@ The above command does the following configuration to your Angular app,
  * Imports the `GridModule` in your application module `app.module.ts`.
  * Registers the Syncfusion UI default theme (material) in the `angular.json` file.
  
-This makes it easy to add the Syncfusion Angular Grids module to your project and start using it in your application.
+This makes it easy to add the Syncfusion Angular Grids module to your application and start using it in your application.
 
 For more information about version compatibility, see [version compatibility](../upgrade/version-compatibility).
 
+## Import Syncfusion CSS Styles
+
+You can add Syncfusion Angular component themes in several ways: by using CSS or SCSS styles from npm packages, CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio/). The [themes topic](https://ej2.syncfusion.com/angular/documentation/appearance/theme/) provides more details on built-in themes and different ways to reference them in an Angular project.
+
+By default, the `Material` theme is registered in the `styles.css` file when running `ng add` command.
+
+The default `Material` theme includes styles for all Syncfusion Angular components. If you only want to use the styles for specific Syncfusion components, you can import only the required dependencies. For example, to use the styles for the Grid component alone, you can import the required dependencies as shown in the following snippet.
+ 
+
+```css
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+```
+
+> The order of importing CSS styles should align with its dependency graph.
+
+For information on using SCSS styles, see [here](../common/how-to/sass/).
+
 ## Adding Syncfusion Angular components
 
-To use Syncfusion Angular components in your application, you will need to add them to your template and specify their properties in your component class.
+1.To add the Syncfusion Grid component, include it in the template and specify its properties in the component class.
 
-In `src/app/app.component.ts`, you can use column directives with the `<ejs-grid>` selector and specify the `e-column` elements inside the `<ejs-grid>` element in the template for your component. The `e-column` element allows you to define the properties of a column in the Grid, such as its field name, header text, and data type.
+2.In `src/app/app.component.ts`, define the Grid component’s columns using the `<ejs-grid>` selector and add `<e-columns>`, `<e-column>` elements elements within the Grid for specific configurations. The `e-column` element allows you to define the properties of a column in the Grid, such as its field name, header text, and data type.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -142,15 +174,18 @@ export class AppComponent {
   ];
 }
 ```
-This will add a Grid to your application with the specified columns and data.
+
+3.This will display a Grid with specified columns and data in your application.
 
 ## Run the application
 
-Run the `ng serve` command in the console, it will serve your application and you can open the browser window.
+To start the application, use the following command:
 
-![output](images/ang-cli.PNG)
+```bash
+ng serve
+```
 
-Refer the below sample for more information.
+The output will appears as follows:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -169,26 +204,6 @@ Refer the below sample for more information.
 You can also refer below video to get start Syncfusion Angular Grid component.
 
 {% youtube "https://www.youtube.com/watch?v=lk83TlHQ95c" %}
-
-## Syncfusion components-based styles
-
-By default, the `Material` theme is registered in the `styles.css` file when you run the `ng add` command. However, Syncfusion Angular components offer a range of built-in [themes](../appearance/theme-studio) that you can easily add to your project by importing the relevant theme.
-
- The default `Material` theme includes styles for all Syncfusion Angular components. If you only want to use the styles for specific Syncfusion components, you can import only the required dependencies. For example, to use the styles for the Grid component alone, you can import the required dependencies as shown in the following snippet,
-
-```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';  
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
-```
-
-For information on using SCSS styles, see [here](../common/how-to/sass).
 
 ## Adding feature Modules to Syncfusion Angular components
 
@@ -280,4 +295,9 @@ Syncfusion has a collection of sample applications that demonstrate the use of S
 
 ## See also
 
+* [Getting Started with Angular Standalone](./angular-standalone)
+* [Getting Started ASP.NET Core with Angular using Project Template](./aspnet-core)
+* [Getting Started with Angular CLI as Front end in ASP.NET MVC](./aspnet-mvc)
+* [Getting started with Ionic and Angular](./ionic)
+* [Getting started with Angular and Electron](./electron)
 * [Upgradation Guide](../upgrade/upgrading-syncfusion)

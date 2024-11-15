@@ -317,6 +317,8 @@ import { LinkAnnotationService, BookmarkViewService, MagnificationService,
 {% endhighlight %}
 {% endtabs %}
 
+[View sample in GitHub](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/How%20to/Customization%20%20Print%20Quality)
+
 ## See also
 
 * [Toolbar items](./toolbar)

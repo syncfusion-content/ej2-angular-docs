@@ -31,7 +31,7 @@ import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import {PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
   ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, 
-  FormDesignerService, FormFieldsService, LoadEventArgs, TextFieldSettings, SignatureFieldSettings, InitialFieldSettings, 
+  FormDesignerService, LoadEventArgs, FormFieldsService, TextFieldSettings, SignatureFieldSettings, InitialFieldSettings, 
   CheckBoxFieldSettings, RadioButtonFieldSettings } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
@@ -106,9 +106,9 @@ Using updateFormField method, Form Field can be updated programmatically. We sho
 import { ViewChild } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import {PdfViewerComponent, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, LoadEventArgs, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, 
+  ToolbarService, NavigationService, TextSearchService, TextSelectionService, PrintService, AnnotationService, 
   FormDesignerService, FormFieldsService, TextFieldSettings, SignatureFieldSettings, InitialFieldSettings, 
-  CheckBoxFieldSettings, RadioButtonFieldSettings } from '@syncfusion/ej2-angular-pdfviewer';
+  CheckBoxFieldSettings, LoadEventArgs, RadioButtonFieldSettings } from '@syncfusion/ej2-angular-pdfviewer';
 
 @Component({
   selector: 'app-container',

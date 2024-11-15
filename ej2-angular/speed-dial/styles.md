@@ -152,3 +152,24 @@ You can use [`opensOnHover`](https://ej2.syncfusion.com/angular/documentation/ap
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/speed-dial/styles-cs6" %}
+
+## Customized icon
+
+You can use the [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#cssclass) property to customize the appearance of the speedDial component in its default primary state. Below example demonstrates the `cssClass` property usage in speedDial.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/speed-dial/styles-cs7/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.module.ts" %}
+{% include code-snippet/speed-dial/styles-cs7/src/app.module.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/speed-dial/styles-cs7/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/speed-dial/styles-cs7/index.css %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/speed-dial/styles-cs7" %}
