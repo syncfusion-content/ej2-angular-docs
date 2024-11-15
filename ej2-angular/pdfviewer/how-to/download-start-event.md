@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title: Controlling File Downloads in Angular Pdfviewer component | Syncfusion
@@ -60,7 +61,7 @@ import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
          MagnificationService, ThumbnailViewService, ToolbarService,
          NavigationService, TextSearchService, TextSelectionService,
          PrintService, FormDesignerService, FormFieldsService, 
-         AnnotationService, DownloadStartEventArgs, PageOrganizerService } from '@syncfusion/ej2-angular-pdfviewer';
+         AnnotationService, PageOrganizerService, DownloadStartEventArgs } from '@syncfusion/ej2-angular-pdfviewer';
 @Component({
   selector: 'app-container',
   // specifies the template string for the PDF Viewer component
