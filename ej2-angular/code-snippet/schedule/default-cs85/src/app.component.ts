@@ -31,7 +31,7 @@ standalone: true,
     <ejs-schedule width="100%" height="550px" [selectedDate]="selectedDate" [views]="views"
       [eventSettings]="eventSettings">
       <e-views>
-        <e-view option='TimelineYear' displayName='Horizontal Timeline Year' isSelected=true></e-view>
+        <e-view option='TimelineYear' displayName='Horizontal Timeline Year' isSelected=true [group]="groupSettings"></e-view>
         <e-view option='TimelineYear' displayName='Vertical Timeline Year' orientation='Vertical' [group]="groupSettings"></e-view>
       </e-views>
       <e-resources>
