@@ -30,6 +30,7 @@ standalone: true,
   template: `<ejs-schedule width='100%' height='550px' [selectedDate]="selectedDate" [eventSettings]="eventSettings" >
       <e-views>
         <e-view option='TimelineYear' displayName='Horizontal Timeline Year' isSelected=true></e-view>
+         <e-view option='TimelineYear' displayName='Vertical Timeline Year'orientation='Vertical'></e-view>
       </e-views>
     </ejs-schedule>`
 })

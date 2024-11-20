@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
-import { TreeGridComponent, SortService, ColumnMenuService, PageService, FilterService } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridComponent, SortService, ColumnMenuService, PageService, FilterService, ResizeService } from '@syncfusion/ej2-angular-treegrid';
 import { FilterSettingsModel } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
@@ -19,7 +19,7 @@ import { FilterSettingsModel } from '@syncfusion/ej2-angular-treegrid';
                         <e-column field='progress' headerText='Progress' textAlign='Right' width=150></e-column>
                     </e-columns>
                 </ejs-treegrid>`,
-    providers: [SortService, ColumnMenuService, PageService, ColumnMenuService, FilterService]
+    providers: [SortService, ColumnMenuService, PageService, ColumnMenuService, FilterService, ResizeService]
 })
 export class AppComponent implements OnInit {
 

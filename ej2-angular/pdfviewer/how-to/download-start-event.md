@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Controlling File Downloads in Angular Pdfviewer component | Syncfusion
