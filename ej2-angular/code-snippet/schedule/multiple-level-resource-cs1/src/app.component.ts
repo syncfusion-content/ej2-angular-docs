@@ -7,7 +7,7 @@ import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
 
 import { Component } from "@angular/core";
 import {
-  WeekService, MonthService, AgendaService, TimelineViewsService, TimelineMonthService,DayService,MonthAgendaService,WorkWeekService
+  WeekService, MonthService, AgendaService, TimelineViewsService, TimelineMonthService,DayService,MonthAgendaService,WorkWeekService,
   EventSettingsModel, GroupModel } from "@syncfusion/ej2-angular-schedule";
 import { resourceData } from "./datasource";
 @Component({

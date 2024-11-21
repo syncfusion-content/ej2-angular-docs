@@ -39,7 +39,6 @@ providers: [DayService,
                 MonthAgendaService],
 standalone: true,
   selector: 'app-root',
-  providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService],
   // specifies the template string for the Schedule component
   template: `<ejs-schedule width='100%' height='550px' locale='fr-CH' [selectedDate]='selectedDate'[eventSettings]='eventSettings' [views]='views'></ejs-schedule>`
 })

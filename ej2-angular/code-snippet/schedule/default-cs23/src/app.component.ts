@@ -6,7 +6,7 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 
 
 import { Component, ViewEncapsulation } from '@angular/core';
-import { View, DayService, WeekService, TimelineViewsService, MonthService, WorkWeekService, AgendaService  } from '@syncfusion/ej2-angular-schedule';
+import { View, DayService, WeekService, TimelineViewsService, MonthService, WorkWeekService, AgendaService, MonthAgendaService  } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
 imports: [

@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { TooltipModule } from '@syncfusion/ej2-angular-popups'
 import { RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
 
 
+import { TooltipEventArgs } from '@syncfusion/ej2-popups';
 
 
 import { Component, ViewChild } from '@angular/core';
 import { Fetch } from '@syncfusion/ej2-base';
-import { TooltipComponent, TooltipEventArgs, TooltipModule } from '@syncfusion/ej2-angular-popups';
+import { TooltipComponent, TooltipModule } from '@syncfusion/ej2-angular-popups';
 @Component({
 imports: [
         
@@ -42,7 +42,7 @@ export class AppComponent  {
   onBeforeRender(args: TooltipEventArgs): void {
     this.tooltipControl.content = 'Loading...';
     this.tooltipControl.dataBind();
-    let fetchApi: Fetch = new Fetch('./tooltipdata.json', 'GET');
+    let fetchApi: Fetch = new Fetch('assets/tooltipdata.json', 'GET');
     fetchApi.send().then(
         (result: any) => {
             for (let i: number = 0; i < result.length; i++) {
