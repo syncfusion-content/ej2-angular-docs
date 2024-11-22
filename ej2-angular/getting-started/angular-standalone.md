@@ -71,13 +71,10 @@ In `src/app/app.component.ts`, you can use column directives with the `<ejs-grid
 ```typescript
 import { Component } from '@angular/core';
 import { GridModule, PagerModule } from '@syncfusion/ej2-angular-grids';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [GridModule, PagerModule, CommonModule, RouterOutlet],
+  imports: [GridModule, PagerModule],
   template: `
   <h1>
     Syncfusion Angular UI Grid!
@@ -92,6 +89,7 @@ import { RouterOutlet } from '@angular/router';
     </e-columns>
   </ejs-grid>
  `
+  styleUrl: './app.component.css'
  })
 export class AppComponent {
   public data: Object[] = [

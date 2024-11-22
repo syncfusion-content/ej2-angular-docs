@@ -1,26 +1,21 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { HttpClientModule } from '@angular/common/http'
-import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+/**
+ * Loading ajax content sample
+ */
 
+import { Component, ViewChild, ViewEncapsulation, Inject } from '@angular/core';
+import {
+  TooltipComponent,
+  TooltipModule,
+} from '@syncfusion/ej2-angular-popups';
+import { TooltipEventArgs } from '@syncfusion/ej2-popups';
+import { HttpClient } from '@angular/common/http';
 
-
-import { Component, ViewChild, Inject } from '@angular/core';
-import { TooltipComponent, TooltipEventArgs } from '@syncfusion/ej2-angular-popups';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { ListViewModule } from '@syncfusion/ej2-angular-lists';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
-imports: [
-        
-        HttpClientModule,
-        TooltipModule
-    ],
-
-
-standalone: true,
-    selector: 'my-app',
-    template: `
+  selector: 'my-app',
+  template: `
         <div id="tool">
         <h4>National Sports</h4>
         <ejs-tooltip #tooltip id="tooltip" class="e-prevent-select" content='Loading...' target="#countryList [title]"
@@ -39,67 +34,57 @@ standalone: true,
         </ejs-tooltip>
         </div>
         `,
-    styles: [`
-        #countryList {
-          padding: 5px;
-        }
-
-        #countryList ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          width: 100px;
-          border: 1px solid #c4c4c4;
-        }
-
-        #countryList li {
-          padding: 10px;
-        }
-
-        #countryList li:hover {
-          background-color: #ececec;
-        }
-
-        .contentWrap {
-          padding: 3px 0;
-          line-height: 16px;
-        }
-
-        .def {
-          float: right;
-        }
-        #tool {
-          width: 350px;
-          position: relative;
-          left: 50%;
-          transform: translateX(-25%);
-        }
-        `]
+  encapsulation: ViewEncapsulation.None,
+  standalone: true,
+  imports: [TooltipModule, ListViewModule, HttpClientModule],
 })
-
 export class AppComponent {
-    @ViewChild('tooltip')
-    public tooltipControl: TooltipComponent | any ;
-    constructor( @Inject(HttpClientModule) public http: HttpClient) { }
+  //Define an Array of JSON data
+  public listViewData: { [key: string]: Object }[] = [
+    { id: '1', text: 'Australia' },
+    { id: '2', text: 'Bhutan' },
+    { id: '3', text: 'China' },
+    { id: '4', text: 'Cuba' },
+    { id: '5', text: 'India' },
+    { id: '6', text: 'Switzerland' },
+    { id: '7', text: 'United States' },
+  ];
 
-    onBeforeRender(args: TooltipEventArgs) {
-        (this as any).http.get('tooltipdata.json')
-            .map((res: { json: () => any; }) => res.json())
-            .subscribe(
-            (result: any) => {
-                for (let i: number = 0; i < result.length; i++) {
-                    if (result[i].Id === args.target.getAttribute('data-content')) {
-                        this.tooltipControl!.content = "<div class='contentWrap'><div class='def'>" + result[i].Sports + "</div></div>";
-                    }
-                }
-                this.tooltipControl!.dataBind();
-            },
-            (err: Response) => {
-                this.tooltipControl!.content = err.statusText;
-                this.tooltipControl!.dataBind();
-            });
-    }
+  //Map appropriate columns to fields property
+  public fields: Object = { text: 'text', tooltip: 'id' };
+
+  @ViewChild('tooltip')
+  public tooltipControl!: TooltipComponent;
+
+  constructor(@Inject(HttpClient) public http: HttpClient) {}
+
+  /**
+   * Process tooltip ajax content.
+   */
+
+  onBeforeRender(args: TooltipEventArgs) {
+    this.tooltipControl.content = 'Loading...';
+    this.tooltipControl!.dataBind();
+    this.http.get('assets/tooltipdata.json').subscribe(
+      (result: any) => {
+        for (let i: number = 0; i < result.length; i++) {
+          if (result[i].Id === args.target.getAttribute('data-content')) {
+            /* tslint:disable */
+            this.tooltipControl.content =
+              "<div class='contentWrap'><span class=" +
+              result[i].Class +
+              "></span><div class='def'>" +
+              result[i].Sports +
+              '</div></div>';
+            /* tslint:enable */
+          }
+        }
+        this.tooltipControl!.dataBind();
+      },
+      (err: Response) => {
+        this.tooltipControl.content = err.statusText;
+        this.tooltipControl!.dataBind();
+      }
+    );
+  }
 }
-
-
-
