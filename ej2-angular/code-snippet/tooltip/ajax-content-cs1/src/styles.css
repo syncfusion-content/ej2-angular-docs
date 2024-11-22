@@ -2,3 +2,38 @@
 @import 'node_modules/@syncfusion/ej2-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
+
+#countryList {
+    padding: 5px;
+}
+
+#countryList ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    border: 1px solid #c4c4c4;
+}
+
+#countryList li {
+    padding: 10px;
+}
+
+#countryList li:hover {
+    background-color: #ececec;
+}
+
+.contentWrap {
+    padding: 3px 0;
+    line-height: 16px;
+}
+
+.def {
+    float: right;
+}
+#tool {
+    width: 350px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-25%);
+}

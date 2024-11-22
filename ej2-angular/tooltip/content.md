@@ -44,6 +44,10 @@ N> The Tooltip **target** property includes a unique identifier used to associat
 {% include code-snippet/tooltip/ajax-content-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="tooltipdata.json" %}
+{% include code-snippet/tooltip/ajax-content-cs1/src/assets/tooltipdata.json %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/ajax-content-cs1/src/main.ts %}
 {% endhighlight %}

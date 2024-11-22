@@ -29,7 +29,8 @@ standalone: true,
   <ejs-recurrenceeditor #recurrenceObj [value]="value" (change)="onChange($event)"></ejs-recurrenceeditor>`
 })
 export class AppComponent {
-    @ViewChild('recurrenceObj') public recObject: RecurrenceEditor;
+    @ViewChild('recurrenceObj') public recObject: RecurrenceEditor =
+    new RecurrenceEditor();
     public value = 'FREQ=DAILY;INTERVAL=1';
     public dateArray: string[] = [];
     public selectRule: string = 'Select Rule';

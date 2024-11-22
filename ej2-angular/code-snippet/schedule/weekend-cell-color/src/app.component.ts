@@ -17,7 +17,7 @@ imports: [
     ],
 standalone: true,
   selector: 'app-root',
-  providers: [View, DayService, WeekService, WorkWeekService, MonthService, AgendaService, ResizeService, DragAndDropService],
+  providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, ResizeService, DragAndDropService],
   // specifies the template string for the Schedule component
   template: `<ejs-schedule width='100%' height='650px' cssClass='schedule-cell-customization' [selectedDate]="selectedDate" [eventSettings]="eventSettings"
   [(currentView)]="currentView" (renderCell)="onRenderCell($event)"></ejs-schedule>`,
