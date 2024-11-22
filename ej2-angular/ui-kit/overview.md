@@ -12,32 +12,64 @@ domainurl: ##DomainURL##
 
 The Essential UI Kit for Angular comprises over 120 responsive, ready-to-use, easy-to-implement, and customizable blocks designed to help you quickly build web applications. These blocks are developed using HTML, CSS, TypeScript, and Syncfusion Angular components, delivering robust functionality and ease of use. They are compatible with both Tailwind and Bootstrap 5.3 CSS frameworks, supporting light and dark modes to offer flexibility and seamless integration across different user preferences. The UI kit includes blocks for the following categories:
 
-| **Category**      | **Blocks**                                               |
-|-------------------|----------------------------------------------------------|
-| **Authentication**| Sign In                                                  |
-|                   | Sign Up                                                  |
-|                   | Mobile - Sign In                                         |
-|                   | OTP - Sign In                                            |
-|                   | Forgot Password                                          |
-|                   | Sign Out                                                 |
-|                   | Unlock Session                                           |
-| **Layouts**       | Navigation Bar                                           |
-|                   | Sidebar                                                  |
-|                   | Floating Menu                                            |
-|                   | Search                                                   |
-|                   | Grid                                                     |
-|                   | List View                                                |
-|                   | Tile View                                                |
-|                   | Calendar                                                 |
-|                   | Cards                                                    |
-|                   | Pagination                                               |
-|                   | Footer                                                   |
-| **E-commerce**    | Pricing Card                                             |
-|                   | Plan and Price Comparison                                |
-|                   | Checkout Page                                            |
-|                   | Product Return Page                                      |
-| **Communication** | Email                                                    |
-|                   | Chat                                                     |
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Blocks</th>
+  </tr>
+  <tr>
+    <td>Authentication</td>
+    <td>
+      <ul>
+        <li>Sign In</li>
+        <li>Sign Up</li>
+        <li>Mobile - Sign In</li>
+        <li>OTP - Sign In</li>
+        <li>Forgot Password</li>
+        <li>Sign Out</li>
+        <li>Unlock Session</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Layouts</td>
+    <td>
+      <ul>
+        <li>Navigation Bar</li>
+        <li>Sidebar</li>
+        <li>Floating Menu</li>
+        <li>Search</li>
+        <li>Grid</li>
+        <li>List View</li>
+        <li>Tile View</li>
+        <li>Calendar</li>
+        <li>Cards</li>
+        <li>Pagination</li>
+        <li>Footer</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>E-commerce</td>
+    <td>
+      <ul>
+        <li>Pricing Card</li>
+        <li>Plan and Price Comparison</li>
+        <li>Checkout Page</li>
+        <li>Product Return Page</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>Communication</td>
+    <td>
+      <ul>
+        <li>Email</li>
+        <li>Chat</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 > These provide pre-designed blocks for the quick implementation of web applications. However, customization and the integration of business logic must be handled on your end to meet your specific requirements.
 
