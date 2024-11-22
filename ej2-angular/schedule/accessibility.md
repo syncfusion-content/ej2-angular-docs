@@ -89,7 +89,7 @@ The Scheduler component's accessibility levels are ensured through an [accessibi
 
 The accessibility compliance of the Scheduler component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/schedule.html) in a new window to evaluate the accessibility of the Scheduler component with accessibility tools.
 
-{% previewsample "https://ej2.syncfusion.com/accessibility/schedule.html" %}
+{% previewsample "page.domainurl/samples/schedule/default-cs1" %}
 
 ## See also
 

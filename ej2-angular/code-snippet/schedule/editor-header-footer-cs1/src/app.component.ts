@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
-
+import {CommonModule} from '@angular/common';
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
   ScheduleComponent, MonthService, DayService, WeekService,
@@ -11,7 +11,7 @@ import {
 @Component({
 imports: [
         
-        ScheduleModule
+        ScheduleModule, CommonModule
     ],
 
 providers: [DayService, 

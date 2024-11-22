@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule, RecurrenceEditorModule  } from '@syncfusion/ej2-angular-schedule'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { DateTimePickerModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars'
 import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
 
 
@@ -10,7 +10,7 @@ import { Component, ViewChild } from '@angular/core';
 import { ChangeEventArgs } from '@syncfusion/ej2-calendars';
 import { extend, isNullOrUndefined } from '@syncfusion/ej2-base';
 import { DateTimePicker } from '@syncfusion/ej2-calendars';
-import { EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs, RecurrenceEditor, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
+import { EventSettingsModel, PopupOpenEventArgs, RecurrenceEditor, ScheduleComponent } from '@syncfusion/ej2-angular-schedule';
 import { eventData } from './datasource';
 @Component({
 imports: [

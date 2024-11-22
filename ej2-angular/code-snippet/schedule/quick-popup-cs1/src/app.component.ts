@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 
 
-
+import { CommonModule } from '@angular/common';
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { isNullOrUndefined } from '@syncfusion/ej2-base';
 import { ScheduleComponent, CurrentAction, EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, PopupOpenEventArgs,  AgendaService,
@@ -12,7 +12,7 @@ import { scheduleData } from './datasource';
 @Component({
 imports: [
         
-        ScheduleModule
+        ScheduleModule, CommonModule
     ],
 standalone: true,
     selector: 'app-root',
