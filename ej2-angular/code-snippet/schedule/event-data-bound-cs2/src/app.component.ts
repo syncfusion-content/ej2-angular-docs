@@ -5,7 +5,7 @@ import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
 import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService} from '@syncfusion/ej2-angular-schedule'
 
 
-
+import { CommonModule } from '@angular/common';
 import { Component, ViewChild } from '@angular/core';
 import { eventsData } from './datasource';
 import { EventSettingsModel,
@@ -15,7 +15,8 @@ import { EventSettingsModel,
 imports: [
         
         ScheduleModule,
-        TimePickerModule
+        TimePickerModule,
+        CommonModule
     ],
 
 providers: [DayService, 

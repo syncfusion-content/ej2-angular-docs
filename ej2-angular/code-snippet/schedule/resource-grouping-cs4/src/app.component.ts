@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaServicem,  DragAndDropService, View, ScheduleComponent, EventSettingsModel, GroupModel,} from '@syncfusion/ej2-angular-schedule'
+import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService,  DragAndDropService, View, ScheduleComponent, EventSettingsModel, GroupModel,} from '@syncfusion/ej2-angular-schedule'
 
 
 

@@ -245,7 +245,7 @@ The following code example shows how to hide the weekend days on `MonthAgenda` v
 
 Similar to the day view, it shows a single day with all its appointments where the time slots are displayed horizontally. By default, the cell height adjusts as per the height set to Scheduler. When the number of appointments exceeds the visible area of the cells, the `+ more` text indicator will be displayed at the bottom to denote the presence of few more appointments in that time range.
 
-To make use of the timeline views (Timeline Day, Timeline Week and Timeline Work Week) on Scheduler, import and inject the module `TimelineViews` from the `ej2-schedule` package.
+To make use of the timeline views (Timeline Day, Timeline Week and Timeline Work Week) on Scheduler, import and inject the module `TimelineViews` from the `ej2-angular-schedule` package.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -293,7 +293,7 @@ The following code example depicts how to display the timeline work week view on
 
 ### Timeline Month view
 
-A Timeline Month view displays the current month days along with its appointments. To make use of the timeline Month view on Scheduler, import and inject `TimelineMonth` module from the `ej2-schedule` package.
+A Timeline Month view displays the current month days along with its appointments. To make use of the timeline Month view on Scheduler, import and inject `TimelineMonth` module from the `ej2-angular-schedule` package.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -315,7 +315,7 @@ A Timeline Month view displays the current month days along with its appointment
 
 In Timeline Year view, each row depicts a single resource. Whereas in the vertical view, each resource is grouped parallelly as columns. Here, the resource grouping follows the tree-view like hierarchical grouping structure and can contain any level of child resources.
 
-To make use of the timeline Year view on Scheduler, import and inject `TimelineYear` module from the `ej2-schedule` package.
+To make use of the timeline Year view on Scheduler, import and inject `TimelineYear` module from the `ej2-angular-schedule` package.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

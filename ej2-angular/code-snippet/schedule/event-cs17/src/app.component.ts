@@ -14,7 +14,6 @@ import {
 
 @Component({
 imports: [
-        
         ScheduleModule,
         TimePickerModule
     ],
@@ -25,7 +24,7 @@ providers: [DayService,
                 MonthService,
                 AgendaService,
                 MonthAgendaService,
-                TimelineViewsService, TimelineMonthService]],
+                TimelineViewsService, TimelineMonthService],
 standalone: true,
     selector: 'app-root',
     // specifies the template string for the Schedule component
