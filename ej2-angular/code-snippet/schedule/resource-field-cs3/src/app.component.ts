@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { TimePickerModule } from '@syncfusion/ej2-angular-calendars'
+import { DateTimePickerModule, TimePickerModule } from '@syncfusion/ej2-angular-calendars'
 
 
 

@@ -26,7 +26,7 @@ A good way to start with Angular is by generating a new application using the [A
 npm install -g @angular/cli
 ```
 
-> For Angular 18, it default for generates a standalone application. Detailed instructions on creating Syncfusion Angular standalone components using the latest version, please refer to the [Standalone guide](./angular-standalone).
+> For Angular 19, it default for generates a standalone application. Detailed instructions on creating Syncfusion Angular standalone components using the latest version, please refer to the [Standalone guide](./angular-standalone).
 
 
 ### Installing a specific version

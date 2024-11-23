@@ -7,7 +7,7 @@ import { DayService, WeekService, WorkWeekService, MonthService, AgendaService, 
 
 
 import { Component, ViewChild } from '@angular/core';
-import { ScheduleComponent, EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, View } from '@syncfusion/ej2-angular-schedule';
+import { ScheduleComponent, EventSettingsModel, View } from '@syncfusion/ej2-angular-schedule';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({

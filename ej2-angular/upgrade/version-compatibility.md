@@ -16,6 +16,7 @@ The following table represents the supported Angular versions by different Syncf
 
 | Version | Syncfusion Angular components version |
 | ------------- | ------------- |
+| [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 and above |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 and above |
 | [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/) | 23.2.4 and above |
 | [Angular v16](https://blog.angular.io/angular-v16-is-here-4d7a28ec680d/) | 21.1.39 and above |
