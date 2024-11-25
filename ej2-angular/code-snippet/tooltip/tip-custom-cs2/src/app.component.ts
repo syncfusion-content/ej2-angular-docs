@@ -8,7 +8,7 @@ import { RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
 
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
-import { RadioButtonComponent, ChangeArgs, ButtonComponent } from '@syncfusion/ej2-angular-buttons';
+import { ChangeArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
 imports: [

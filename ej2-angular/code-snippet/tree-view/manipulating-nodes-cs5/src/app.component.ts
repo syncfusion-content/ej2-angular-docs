@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
-import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+import { TreeViewModule, TreeViewComponent } from '@syncfusion/ej2-angular-navigations'
 import { Component, ViewChild } from '@angular/core';
-import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 
 // Move the node to the target node
 @Component({
@@ -13,6 +12,7 @@ import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
   standalone: true,
   selector: 'app-container',
   template: `<div id='treeparent'><ejs-treeview #tree id="listtree" [fields]='listfields'></ejs-treeview>
+  </div><div id="btn">
   <button id="button" (click)="onClick($event)">Move Node</button></div>`
 })
 export class AppComponent {
@@ -33,6 +33,6 @@ export class AppComponent {
   public listfields: Object = { dataSource: this.localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' };
   onClick(event: any) {
     // Move the node with id 2 to the target node with id 3 to the index of 1.
-    this.tree?.moveNodes(['2'], '3', 1); 
+    (this.tree as TreeViewComponent).moveNodes(['2'], '3', 1); 
   }
 }

@@ -40,7 +40,7 @@ imports: [
         GridModule
     ],
 
-providers: [GroupService, PageService]
+providers: [GroupService, PageService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [locale]='"de-DE"' [allowGrouping]='true' [allowPaging]='true' [pageSettings]='pageOptions' height='220px'>

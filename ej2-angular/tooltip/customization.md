@@ -38,6 +38,10 @@ The following code example shows the way to achieve it.
 {% include code-snippet/tooltip/custom-css-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tooltip/custom-css-cs1/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/custom-css-cs1/src/main.ts %}
 {% endhighlight %}

@@ -15,12 +15,11 @@ imports: [
 
 standalone: true,
     selector: 'my-app',
-    template: `
-    <ejs-tooltip id="tooltip" content='Tooltip customized' cssClass='customtooltip'>
+    template: `<ejs-tooltip id="tooltip" content='Tooltip customized' cssClass='customtooltip'>
             Show tooltip
     </ejs-tooltip>
     `,
-    styleUrls: ['./custom.css'],
+    styleUrls: ['styles.css'],
     encapsulation: ViewEncapsulation.None
 })
 

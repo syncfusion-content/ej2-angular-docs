@@ -18,6 +18,7 @@
     "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-inputs": "*",
     "@syncfusion/ej2-buttons": "*",
+    "@syncfusion/ej2-navigations": "*",
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-angular-inputs": "*",
     "@angular/animations": "17.1.2",
