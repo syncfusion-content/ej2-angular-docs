@@ -154,7 +154,7 @@ Now that **my-angular-app** is set up with the desired theme configuration, the 
 
 ### Steps to explore and copy block code snippets from the online demo
 
-1. In the [online demo](#), navigate to the "Authentication" category and select the "Sign In" block. This will direct you to the appropriate demo page.
+1. In the [online demo](https://ej2.syncfusion.com/angular/essential-ui-kit/#/blocks), navigate to the "Authentication" category and select the "Sign In" block. This will direct you to the appropriate demo page.
 
     ![Navigate to the sign-in block demo](images/navigate-to-the-sign-in-block-demo.png)
 
@@ -196,7 +196,7 @@ Once the necessary packages are added, run the `npm install` command via the ter
 
 ![Install Syncfusion component packages](images/install-syncfusion-component-packages.png)
 
-Finally, go to the [online demo](#) or the [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-angular) and copy the required **TypeScript** code into your app. This typically includes the import module to run Syncfusion Angular components and any basic code required for the component to function.
+Finally, go to the [online demo](https://ej2.syncfusion.com/angular/essential-ui-kit/#/blocks) or the [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-angular) and copy the required **TypeScript** code into your app. This typically includes the import module to run Syncfusion Angular components and any basic code required for the component to function.
 
 ![Import Syncfusion component module in TypeScript](images/import-syncfusion-component-module-in-typescript.png)
 
