@@ -68,6 +68,10 @@ We can use `ng-template` property to customize list items in UI virtualization.
 {% include code-snippet/listview/virtualization/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/listview/virtualization/template-cs1/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/virtualization/template-cs1/src/main.ts %}
 {% endhighlight %}

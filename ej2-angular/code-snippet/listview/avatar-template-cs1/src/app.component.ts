@@ -6,11 +6,12 @@ import { ListViewModule } from '@syncfusion/ej2-angular-lists'
 
 
 import { Component } from '@angular/core';
+import { CommonModule, NgIf } from '@angular/common';
 
 @Component({
 imports: [
         
-        ListViewModule
+        ListViewModule, CommonModule, NgIf
     ],
 
 

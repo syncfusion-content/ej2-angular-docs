@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+import { TreeViewModule, TreeViewComponent } from '@syncfusion/ej2-angular-navigations'
 import { Component, ViewChild } from '@angular/core';
-import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 
 // Refresh the node in TreeView component
 @Component({
@@ -11,7 +10,9 @@ import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
         ],
     standalone: true,
     selector: 'app-container',
-    template: `<div id='treeparent'><ejs-treeview #tree id="listtree" [fields]='listfields'"></ejs-treeview>
+    template: `<div id='treeparent'><ejs-treeview #tree id="listtree" [fields]='listfields'>
+    </ejs-treeview></div>
+    <div id="btn">
         <button id="button" (click)="onClick($event)">Refresh Node</button></div>`
 })
 export class AppComponent {
@@ -32,8 +33,8 @@ export class AppComponent {
   public listfields: Object = { dataSource: this.localData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' };
   onClick(event: any) {
     // Refresh the node having id 4 in the TreeView component.
-    var nodeData = this.tree.getTreeData('4');
-    nodeData[0].name = 'Node refreshed';
-    this.tree?.refreshNode('4', nodeData); // Refresh the node with new data.
+    let nodeData = (this.tree as TreeViewComponent).getTreeData('4');    
+      nodeData[0]['name'] = 'Node refreshed';    
+      (this.tree as TreeViewComponent).refreshNode('4', nodeData); // Refresh the node with new data.    
   }
 }

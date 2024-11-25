@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 # Build your first Angular app with our blocks
 
 ## Create an Angular app
-To create an Angular app, please refer to the official Angular setup guide [here](https://v17.angular.io/guide/setup-local) to get started. In this example, I have created an Angular app named **my-angular-app** and will walk you through the step-by-step process of adding a simple sign-in block.
+To create a new Angular app, please refer to the official Angular setup guide [here](https://v17.angular.io/guide/setup-local) to get started. In this example, I have created a new Angular app named **my-angular-app** and will walk you through the step-by-step process of adding a simple sign-in block.
 
 ![New Angular App](images/new-angular-app.png)
 
 ## Setting up Tailwind or Bootstrap 5.3 theme in the app
 
-After creating your Angular app named **my-angular-app**, open it in Visual Studio Code (which we'll be using throughout this walkthrough). Once the app is open, before proceeding further, navigate to the `src -> app -> app.component.html` file and remove the template HTML code. Remember, only remove the template HTML code and not the `<router-outlet />` code. 
+After creating the new Angular app named **my-angular-app**, open it in Visual Studio Code (which we'll be using throughout this walkthrough). Once the app is open, before proceeding further, navigate to the **src -> app -> app.component.html** file and remove the template HTML code. Remember, only remove the template HTML code and not the `<router-outlet />` code. 
 
 The next step is to choose a theme, either **Tailwind** or **Bootstrap 5.3**, in both light and dark modes, and configure the app accordingly.
 
@@ -154,7 +154,7 @@ Now that **my-angular-app** is set up with the desired theme configuration, the 
 
 ### Steps to explore and copy block code snippets from the online demo
 
-1. In the online demo, navigate to the "Authentication" category and select the "Sign In" block. This will direct you to the appropriate demo page.
+1. In the [online demo](https://ej2.syncfusion.com/angular/essential-ui-kit/#/blocks), navigate to the "Authentication" category and select the "Sign In" block. This will direct you to the appropriate demo page.
 
     ![Navigate to the sign-in block demo](images/navigate-to-the-sign-in-block-demo.png)
 
@@ -162,21 +162,21 @@ Now that **my-angular-app** is set up with the desired theme configuration, the 
 
     ![Choose Tailwind or Bootstrap theme](images/choose-tailwind-or-bootstrap-theme.png)
 
-3. In the "Code" tab, copy the HTML code using the "Copy to clipboard" option and paste it into the `src -> app -> app.component.html` file.
+3. In the "Code" tab, copy the HTML code using the "Copy to clipboard" option and paste it into the **src -> app -> app.component.html** file.
 
     ![Copy HTML code snippet to clipboard](images/copy-HTML-code-snippet-to-clipboard.png)
 
-4. If CSS is provided, copy the CSS code and paste it into the `src -> app -> app.component.css` file; otherwise, ignore it.
+4. If CSS is provided, copy the CSS code and paste it into the **src -> app -> app.component.css** file; otherwise, ignore it.
 
 ### Steps to explore and copy block code snippets from the GitHub app
 
-1. After downloading and opening the GitHub app in Visual Studio Code, navigate to the following folder: `src -> blocks-section`.
+1. On [downloading](https://github.com/syncfusion/essential-ui-kit-for-angular) and opening the GitHub app in Visual Studio Code, navigate to the following folder: **src -> blocks-section**.
 
     ![Downloaded GitHub app in Visual Studio Code](images/downloaded-github-app-in-visual-studio-code.png)
 
 2. Inside, you'll find a list of folders, each corresponding to a specific block. Open the "signin" block folder, where you'll see the demo arranged sequentially.
 
-3. Go to the first folder, `src/blocks-section/signin/signin-1`, where you'll find the HTML, CSS, and TS files of the simple sign-in block. You can copy the code directly from these files.
+3. Go to the first folder, **src/blocks-section/signin/signin-1**, where you'll find the HTML, CSS, and TS files of the simple sign-in block. You can copy the code directly from these files.
 
     ![View the sign-in block demo files](images/view-the-sign-in-block-demo-files.png)
 
@@ -186,17 +186,17 @@ Now that **my-angular-app** is set up with the desired theme configuration, the 
 
 ## Steps to install and configure Syncfusion components
 
-While copying and pasting the HTML code, you'll notice that Syncfusion Angular components are used. To incorporate them into **my-angular-app**, install the necessary packages and add the corresponding modules to the `src/app/app.component.ts` file for the app to run.
+While copying and pasting the HTML code, you'll notice that Syncfusion Angular components are used. To incorporate them into **my-angular-app**, install the necessary packages and add the corresponding modules to the **src/app/app.component.ts** file for the app to run.
 
 In the simple sign-in block, components such as textbox, checkbox and button are used. After copying and pasting the code into the HTML file, open the **package.json** file and add the required packages: `@syncfusion/ej2-angular-buttons` and `@syncfusion/ej2-angular-inputs`. For more details about other Syncfusion Angular component packages, refer to this [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular).
 
 ![Adding required packages for Syncfusion components](images/adding-required-packages-for-syncfusion-components.png)
 
-Once the necessary packages are added, run the `npm install` command via the terminal to install those packages in the `node_modules` folder.
+Once the necessary packages are added, run the `npm install` command via the terminal to install those packages in the **node_modules** folder.
 
 ![Install Syncfusion component packages](images/install-syncfusion-component-packages.png)
 
-Finally, go to the online demo or the GitHub repository and copy the required "TypeScript" code into your app. This typically includes the import module to run Syncfusion Angular components and any basic code required for the component to function.
+Finally, go to the [online demo](https://ej2.syncfusion.com/angular/essential-ui-kit/#/blocks) or the [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-angular) and copy the required **TypeScript** code into your app. This typically includes the import module to run Syncfusion Angular components and any basic code required for the component to function.
 
 ![Import Syncfusion component module in TypeScript](images/import-syncfusion-component-module-in-typescript.png)
 
@@ -204,7 +204,7 @@ Finally, go to the online demo or the GitHub repository and copy the required "T
 
 ## Steps to import and add assets to the app
 
-If you want to view and experience the images used in our simple sign-in design, you can download the **assets** folder from the following GitHub [link](https://github.com/syncfusion/essential-ui-kit-for-angular) and place it inside the **src** folder of **my-angular-app**.
+If you want to view and experience the images used in our simple sign-in design, you can download the **assets** folder from the following [GitHub link](https://github.com/syncfusion/essential-ui-kit-for-angular/tree/master/ui-blocks/src) and place it inside the **src** folder of **my-angular-app**, modifying the image URL if required.
 
 ## Steps to run the app
 
@@ -214,4 +214,4 @@ Now that everything is set up in **my-angular-app** — the HTML, TS, CSS (if ap
 
 To view the app in your browser, simply **Ctrl + Click** (or **Cmd + Click** on macOS) on the localhost URL displayed in the terminal. This will open the app in your default browser, allowing you to view and experience the simple sign-in block.
 
-![View the app in the browser using the localhost URL](images/View-the-app-in-the-browser-using-the-localhost-URL.png)
+![View the app in the browser using the localhost URL](images/view-the-app-in-the-browser-using-the-localhost-URL.png)

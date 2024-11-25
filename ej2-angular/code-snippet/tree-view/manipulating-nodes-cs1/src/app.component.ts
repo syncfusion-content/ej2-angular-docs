@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+import { TreeViewModule, TreeViewComponent } from '@syncfusion/ej2-angular-navigations'
 import { Component, ViewChild } from '@angular/core';
-import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 
 // Add the node to the TreeView component
 @Component({
@@ -11,10 +10,11 @@ import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
       ],
   standalone: true,
   selector: 'app-container',
-  template: `<div id='treeparent'><ejs-treeview #tree id="listtree" [fields]='listfields'></ejs-treeview>
-        <button id="button1" (click)="onClick1($event)">Add Parent</button>
-        <button id="button2" (click)="onClick2($event)">Add Child</button>
-      </div>`
+  template: `<div id='treeparent'><ejs-treeview #tree id="listtree" [fields]='listfields'></ejs-treeview>        
+      </div>
+      <div id="btn">
+      <button id="button1" (click)="onClick1($event)">Add Parent</button>
+      <button id="button2" (click)="onClick2($event)">Add Child</button> </div>`,
 })
 export class AppComponent {
 
@@ -35,12 +35,12 @@ export class AppComponent {
   
   //Add parent node and child node to the TreeView component
   onClick1(event: any) {
-    this.tree?.addNodes([
+    (this.tree as TreeViewComponent).addNodes([
       { id: 12, name: 'New Parent' },
       { id: 13, pid: 12, name: 'New Child1' },
     ]);
   }
   onClick2(event: any) {
-    this.tree?.addNodes([{ id: 11, name: 'New Child2', pid: 1 }], '1');
+    (this.tree as TreeViewComponent).addNodes([{ id: 11, name: 'New Child2', pid: 1 }], '1');
   }
 }
