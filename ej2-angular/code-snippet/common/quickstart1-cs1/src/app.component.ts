@@ -17,7 +17,7 @@ imports: [
 providers: [PageService,
                 SortService,
                 FilterService,
-                GroupService]
+                GroupService],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' [allowPaging]="true" [allowSorting]="true"

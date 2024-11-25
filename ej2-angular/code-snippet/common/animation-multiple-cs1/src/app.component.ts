@@ -13,7 +13,8 @@ standalone: true,
   template: `
     <div #element1 class='animation1'></div>
     <div #element2 class='animation2'></div>
-    `
+    `,
+ styleUrls: ['../index.css']
 })
 
 export class AppComponent {

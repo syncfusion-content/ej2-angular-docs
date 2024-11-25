@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+import { TreeViewModule, TreeViewComponent } from '@syncfusion/ej2-angular-navigations'
 import { Component, ViewChild } from '@angular/core';
-import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 
 // Update the node in TreeView component
 @Component({
@@ -12,7 +11,7 @@ import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
   standalone: true,
   selector: 'app-container',
   template: `<div id='treeparent'><ejs-treeview #tree id="listtree" allowEditing='allowEditing' [fields]='listfields'>
-      </ejs-treeview><button id="button" (click)="onClick($event)">Update node</button></div>`
+      </ejs-treeview></div><div id="btn"> <button id="button" (click)="onClick($event)">Update node</button></div>`
 })
 export class AppComponent {
 
@@ -33,6 +32,6 @@ export class AppComponent {
   public allowEditing: boolean = true;
   onClick(event: any) {
     // Update the node with new text in the TreeView component.
-    this.tree?.updateNode('4', 'Node updated');
+    (this.tree as TreeViewComponent).updateNode('4', 'Node updated');
   }
 }

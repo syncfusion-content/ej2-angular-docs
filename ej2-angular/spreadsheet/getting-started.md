@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Angular Spreadsheet component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Spreadsheet component of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn here all about getting started with Syncfusion Essential Angular Spreadsheet component, it's elements, and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
@@ -158,7 +158,7 @@ The following example shows a basic Spreadsheet component
   
 {% previewsample "page.domainurl/samples/spreadsheet/spreadsheet-cs1" %}
 
-> You can refer to our [Angular Spreadsheet](https://www.syncfusion.com/angular-components/angular-spreadsheet) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Spreadsheet example](https://ej2.syncfusion.com/angular/demos/#/material/spreadsheet/default) that shows you how present and manipulate data, including editing, formulas, formatting, importing, and exporting.
+> You can refer to our [Angular Spreadsheet](https://www.syncfusion.com/angular-components/angular-spreadsheet) feature tour page for its groundbreaking feature representations. You can also explore our [Angular Spreadsheet example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/spreadsheet/default) that shows you how present and manipulate data, including editing, formulas, formatting, importing, and exporting.
 
 ## See Also
 
