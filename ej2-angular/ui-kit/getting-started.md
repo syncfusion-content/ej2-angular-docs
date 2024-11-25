@@ -71,4 +71,4 @@ By adding the license key, you ensure that the blocks are fully functional and f
 
 ## Get Started by Viewing the Online Demo
 
-If you prefer a quick demo instead of downloading the app, you can explore the blocks directly through the online demo. Simply visit the official [Essential UI Kit for Angular](#) website to interact with the blocks.
+If you prefer a quick demo instead of downloading the app, you can explore the blocks directly through the online demo. Simply visit the official [Essential UI Kit for Angular](https://ej2.syncfusion.com/angular/essential-ui-kit/#/blocks) website to interact with the blocks.
