@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Build your first Angular app with our blocks
 
-## Create an Angular app
+## Create a new Angular app
 To create a new Angular app, please refer to the official Angular setup guide [here](https://v17.angular.io/guide/setup-local) to get started. In this example, I have created a new Angular app named **my-angular-app** and will walk you through the step-by-step process of adding a simple sign-in block.
 
 ![New Angular App](images/new-angular-app.png)
