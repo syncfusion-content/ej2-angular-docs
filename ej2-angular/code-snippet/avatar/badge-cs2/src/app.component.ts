@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
 imports: [
-        
+        CommonModule
     ],
 
 
