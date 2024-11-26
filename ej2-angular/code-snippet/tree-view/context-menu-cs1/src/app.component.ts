@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
-import { TreeViewModule, BeforeOpenCloseMenuEventArgs, MenuEventArgs, MenuItemModel, ContextMenuComponent, ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
+import { TreeViewModule, ContextMenuModule } from '@syncfusion/ej2-angular-navigations';
+import { NodeClickEventArgs, BeforeOpenCloseMenuEventArgs, MenuEventArgs, MenuItemModel } from '@syncfusion/ej2-navigations';
 import { Component, Inject, ViewChild } from '@angular/core';
-import { TreeViewComponent, NodeClickEventArgs, BeforeOpenCloseMenuEventArgs, MenuEventArgs, MenuItemModel, ContextMenuComponent } from '@syncfusion/ej2-angular-navigations';
+import { TreeViewComponent, ContextMenuComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
 imports: [

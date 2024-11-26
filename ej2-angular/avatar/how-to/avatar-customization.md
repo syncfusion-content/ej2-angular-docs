@@ -20,6 +20,10 @@ by adding custom class or directly selecting the avatar class from the CSS.
 {% include code-snippet/avatar/color-cs2/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/avatar/color-cs2/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/avatar/color-cs2/src/main.ts %}
 {% endhighlight %}
@@ -36,6 +40,11 @@ designed in such a way that the width and height will be relative to font-size. 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/custom-size-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/avatar/custom-size-cs2/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -55,6 +64,10 @@ etc. Some of them are given below.
 {% include code-snippet/avatar/media-formats-cs2/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/avatar/media-formats-cs2/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/avatar/media-formats-cs2/src/main.ts %}
 {% endhighlight %}
@@ -72,6 +85,10 @@ data-source from the server or remote data or AJAX. We have also rendered the av
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/angular-avatar-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/avatar/angular-avatar-cs2/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
