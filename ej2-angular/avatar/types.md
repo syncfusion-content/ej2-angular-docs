@@ -30,6 +30,10 @@ class to change the appearance of the avatar.
 {% include code-snippet/avatar/size-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/avatar/size-cs1/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/avatar/size-cs1/src/main.ts %}
 {% endhighlight %}

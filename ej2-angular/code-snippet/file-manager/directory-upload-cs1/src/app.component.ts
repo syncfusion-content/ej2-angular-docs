@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
-import { FileManagerModule,NavigationPaneService, ToolbarService, DetailsViewService  } from '@syncfusion/ej2-angular-filemanager'
+import { FileManagerModule } from '@syncfusion/ej2-angular-filemanager'
 
 
 

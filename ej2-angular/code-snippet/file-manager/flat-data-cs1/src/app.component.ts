@@ -33,11 +33,11 @@ import {
   imports: [FileManagerModule, FileManagerAllModule],
 })
 export class AppComponent {
-  public contextMenuSettings: object;
-  public toolbarSettings: ToolbarSettingsModel;
-  public permission: Permission;
-  public fileData: FileData[];
-  public resultData: { [key: string]: Object }[];
+  public contextMenuSettings?: object;
+  public toolbarSettings?: ToolbarSettingsModel;
+  public permission?: Permission;
+  public fileData?: FileData[];
+  public resultData?: { [key: string]: Object }[];
   public ngOnInit(): void {
     this.permission = {
       copy: false,
@@ -57,7 +57,7 @@ export class AppComponent {
         id: '0',
         isFile: false,
         name: 'Files',
-        parentId: null,
+        parentId: undefined,
         size: 1779448,
         type: 'folder',
       },

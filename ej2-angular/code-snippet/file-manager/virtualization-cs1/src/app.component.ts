@@ -3,15 +3,12 @@ import { NgModule } from '@angular/core'
 import { FileManagerModule,  NavigationPaneService, ToolbarService, DetailsViewService, VirtualizationService } from '@syncfusion/ej2-angular-filemanager'
 
 import { Component, ViewEncapsulation } from '@angular/core';
-import { FileManagerComponent, NavigationPaneService, ToolbarService, DetailsViewService, VirtualizationService } from '@syncfusion/ej2-angular-filemanager';
 /**
  * File Manager virtualization feature sample
  */
 
 @Component({
 imports: [FileManagerModule, ],
-
-providers:[ NavigationPaneService, ToolbarService, DetailsViewService, VirtualizationService ],
 standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
@@ -26,10 +23,10 @@ export class AppComponent {
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
     public ngOnInit(): void {
         this.ajaxSettings = {
-            url: this.hostUrl + 'api/FileManager/FileOperations',
-            getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
-            uploadUrl: this.hostUrl + 'api/FileManager/Upload',
-            downloadUrl: this.hostUrl + 'api/FileManager/Download'
+            url: this.hostUrl + 'api/Virtualization/FileOperations',
+            getImageUrl: this.hostUrl + 'api/Virtualization/GetImage',
+            uploadUrl: this.hostUrl + 'api/Virtualization/Upload',
+            downloadUrl: this.hostUrl + 'api/Virtualization/Download'
         };
         this.view = "Details";
     }
