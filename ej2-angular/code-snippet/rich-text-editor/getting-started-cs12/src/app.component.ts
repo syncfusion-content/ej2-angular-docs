@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RichTextEditorModule, InlineModeModel, ToolbarSettingsModel, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, InlineModeModel, ToolbarSettingsModel, ToolbarService, LinkService, ImageService, HtmlEditorService, FormatModel, FontFamilyModel, QuickToolbarService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
     imports: [RichTextEditorModule],
@@ -12,6 +12,12 @@ import { RichTextEditorModule, InlineModeModel, ToolbarSettingsModel, ToolbarSer
 export class AppComponent {
     public value: string = "<p>The sample is configured with inline mode of editor. Initially, the editor is rendered without a <a href='https://ej2.syncfusion.com/home/' target='_blank'>toolbar</a>. The toolbar becomes visible only when the content is selected.</p>"
     public inlineMode: InlineModeModel = { enable: true, onSelection: true };
+    public format: FormatModel = {
+        width: 'auto',
+    };
+      public fontFamily: FontFamilyModel = {
+        width: 'auto',
+    };
     public toolbarSettings: ToolbarSettingsModel = {
         items: ['Bold', 'Italic', 'Underline',
             'Formats', '-', 'Alignments', 'OrderedList', 'UnorderedList',

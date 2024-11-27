@@ -9,13 +9,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 import { Component, ViewChild } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextEditorComponent  } from '@syncfusion/ej2-angular-richtexteditor';
+import { NgIf } from '@angular/common';
 @Component({
 imports: [
         
         RichTextEditorAllModule,
         FormsModule,
 		ButtonModule,
-        ReactiveFormsModule
+        ReactiveFormsModule, NgIf
     ],
 
 
