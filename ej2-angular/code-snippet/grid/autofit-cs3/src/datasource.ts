@@ -3,7 +3,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Kia Silverbrook',
         'NumberofPatentFamilies': 4737,
         'Country': 'Australia',
-        'Number of INPADOC patents': 9839,
+        'NumberOfINPADOCPatents': 9839,
         'Active': '1994-2016',
         'Mainfieldsofinvention': 'Printing, Digital paper, Internet, Electronics,Lab-on-a-chip, MEMS, Mechanical, VLSI',
 
@@ -12,7 +12,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Shunpei Yamazaki',
         'NumberofPatentFamilies': 4677,
         'Country': 'Japan',
-        'Number of INPADOC patents': '10000+',
+        'NumberOfINPADOCPatents': '10000+',
         'Active': '1976-2016',
         'Mainfieldsofinvention': 'Thin film transistors, Liquid crystal displays, Solar cells, Flash memory, OLED',
 
@@ -21,7 +21,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Lowell L. Wood, Jr.',
         'NumberofPatentFamilies': 1419,
         'Country': 'USA',
-        'Number of INPADOC patents': 1332,
+        'NumberOfINPADOCPatents': 1332,
         'Active': '1977-2016',
         'Mainfieldsofinvention': 'Mosquito laser, Nuclear weapons',
 
@@ -30,7 +30,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Paul Lapstun',
         'NumberofPatentFamilies': 1281,
         'Country': 'Australia',
-        'Number of INPADOC patents': 3099,
+        'NumberOfINPADOCPatents': 3099,
         'Active': '2000-2016',
         'Mainfieldsofinvention': 'Printing, Digital paper, Internet, Electronics, CGI, VLSI',
 
@@ -39,7 +39,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Gurtej Sandhu',
         'NumberofPatentFamilies': 1255,
         'Country': 'India',
-        'Number of INPADOC patents': 2038,
+        'NumberOfINPADOCPatents': 2038,
         'Active': '1991-2016',
         'Mainfieldsofinvention': 'Thin film processes and materials, VLSI, Semiconductor device fabrication',
 
@@ -48,7 +48,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Jun Koyama',
         'NumberofPatentFamilies': 1240,
         'Country': 'Japan',
-        'Number of INPADOC patents': 4126,
+        'NumberOfINPADOCPatents': 4126,
         'Active': '1991-2016',
         'Mainfieldsofinvention': 'Thin film transistors, Liquid crystal displays, OLED',
 
@@ -57,7 +57,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Roderick A. Hyde',
         'NumberofPatentFamilies': 1240,
         'Country': 'USA',
-        'Number of INPADOC patents': 3360,
+        'NumberOfINPADOCPatents': 3360,
         'Active': '2001-2016',
         'Mainfieldsofinvention': 'Various',
 
@@ -66,7 +66,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Leonard Forbes',
         'NumberofPatentFamilies': 1093,
         'Country': 'Canada',
-        'Number of INPADOC patents': 1398,
+        'NumberOfINPADOCPatents': 1398,
         'Active': '1991-2016',
         'Mainfieldsofinvention': 'Semiconductor Memories, CCDs, Thin film processes and materials, VLSI',
 
@@ -75,7 +75,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Thomas Edison',
         'NumberofPatentFamilies': 1084,
         'Country': 'USA',
-        'Number of INPADOC patents': 2332,
+        'NumberOfINPADOCPatents': 2332,
         'Active': '1847(b)-1931(d)',
         'Mainfieldsofinvention': 'Electric power, Lighting, Batteries, Phonograph, Cement, Telegraphy, Mining',
 
@@ -84,7 +84,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Donald E. Weder',
         'NumberofPatentFamilies': 999,
         'Country': 'USA',
-        'Number of INPADOC patents': 1993,
+        'NumberOfINPADOCPatents': 1993,
         'Active': '1976-2015',
         'Mainfieldsofinvention': 'Florist supplies',
 
@@ -93,7 +93,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'George Albert Lyon',
         'NumberofPatentFamilies': 993,
         'Country': 'Canada',
-        'Number of INPADOC patents': 'NA',
+        'NumberOfINPADOCPatents': 'NA',
         'Active': '1882(b)-1961(d)',
         'Mainfieldsofinvention': 'Automotive, Stainless steel products',
 
@@ -102,7 +102,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'John F. O\'Connor',
         'NumberofPatentFamilies': 949,
         'Country': 'USA',
-        'Number of INPADOC patents': 'NA',
+        'NumberOfINPADOCPatents': 'NA',
         'Active': '1864(b)-1938(d)',
         'Mainfieldsofinvention': 'Railway draft gearing',
 
@@ -111,7 +111,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Melvin De Groote',
         'NumberofPatentFamilies': 925,
         'Country': 'USA',
-        'Number of INPADOC patents': 'NA',
+        'NumberOfINPADOCPatents': 'NA',
         'Active': '1895(b)-1963(d)',
         'Mainfieldsofinvention': 'Chemical de-emulsifiers',
 
@@ -120,7 +120,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Jay S. Walker',
         'NumberofPatentFamilies': 918,
         'Country': 'USA',
-        'Number of INPADOC patents': 2206,
+        'NumberOfINPADOCPatents': 2206,
         'Active': '1998-2016',
         'Mainfieldsofinvention': 'Gaming machines',
 
@@ -129,7 +129,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Edward K. Y. Jung',
         'NumberofPatentFamilies': 911,
         'Country': 'USA',
-        'Number of INPADOC patents': 2254,
+        'NumberOfINPADOCPatents': 2254,
         'Active': '1996-2016',
         'Mainfieldsofinvention': 'Various',
 
@@ -138,7 +138,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Francis H. Richards',
         'NumberofPatentFamilies': 894,
         'Country': 'USA',
-        'Number of INPADOC patents': 'NA',
+        'NumberOfINPADOCPatents': 'NA',
         'Active': '1850(b)-19??(d)',
         'Mainfieldsofinvention': 'Mechanical, automation',
 
@@ -147,7 +147,7 @@ export const inventoryData: Object[] = [
         'Inventor': 'Kangguo Cheng',
         'NumberofPatentFamilies': 884,
         'Country': 'USA',
-        'Number of INPADOC patents': 1314,
+        'NumberOfINPADOCPatents': 1314,
         'Active': '2004-2016',
         'Mainfieldsofinvention': 'Semiconductor device fabrication, Semiconductor memory, Semiconductor device',
 
