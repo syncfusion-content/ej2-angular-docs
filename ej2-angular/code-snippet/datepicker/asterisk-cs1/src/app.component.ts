@@ -16,7 +16,7 @@ imports: [
 
 standalone: true,
     selector: 'app-root',
-    template: `<ejs-datepicker floatLabelType="auto" placeholder="Enter date"></ejs-datepicker>`
+    template: `<ejs-datepicker floatLabelType="Auto" placeholder="Enter date"></ejs-datepicker>`
 })
 export class AppComponent {
     constructor() {

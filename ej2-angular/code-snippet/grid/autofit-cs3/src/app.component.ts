@@ -20,7 +20,7 @@ template: `<ejs-grid #grid [dataSource]='data' height='315px' [allowResizing]='t
   <e-column field='Inventor' headerText='Inventor' textAlign='Right' width=100 clipMode='EllipsisWithTooltip'></e-column>
   <e-column field='NumberofPatentFamilies' headerText='Number of Patent Families' width=120></e-column>
   <e-column field='Country' headerText='Country' width=80></e-column>
-  <e-column field='Number of INPADOC patents' headerText='Number of INPADOC patents' width=150></e-column>
+  <e-column field='NumberOfINPADOCPatents' headerText='Number of INPADOC patents' width=150></e-column>
   <e-column field='Active' headerText='Active' width=100></e-column>
   <e-column field='Mainfieldsofinvention' headerText='Main fields of invention' width=100></e-column>
   </e-columns>
