@@ -4,13 +4,10 @@ import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 import { NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
-import { DropDownList, DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 import { DashboardLayoutComponent } from '@syncfusion/ej2-angular-layouts';
 
 @Component({
@@ -102,24 +99,29 @@ export class AppComponent {
     ];
     addClick() {
         this.panel = {
-        id: "Panel"+ this.count.toString(),
-        sizeX: this.sizeX?.value,
-        sizeY: this.sizeY?.value,
-        row: this.row?.value,
-        col: this.column?.value,
-        content: "<div class='content'>"+ this.count +"</div>"
-        }
+          id: 'Panel' + this.count.toString(),
+          sizeX: (this.sizeX as any).value,
+          sizeY: (this.sizeY as any).value,
+          row: (this.row as any).value,
+          col: (this.column as any).value,
+          content: "<div class='content'>" + this.count + '</div>',
+        };
         this.dashboard?.addPanel(this.panel);
         this.count = this.count + 1;
-        (<any>this.dropDownListObject?.dataSource).push(this.panel.id);
-        this.dropDownListObject?.refresh();
-    };
+        (this.dropDownListObject as any).dataSource.push(this.panel.id);
+        (this.dropDownListObject as any)?.refresh();
+    }
     removeClick() {
-        this.dashboard?.removePanel(<any>this.dropDownListObject?.value);
-        (<any>this.dropDownListObject?.dataSource).splice((<any>this.dropDownListObject?.dataSource).indexOf(this.dropDownListObject?.value), 1);
-        this.dropDownListObject?.refresh();
-        (this.dropDownListObject as DropDownListComponent).value = null as any;
-    };
+        this.dashboard?.removePanel((this.dropDownListObject as any).value);
+        (this.dropDownListObject as any).dataSource.splice(
+          (this.dropDownListObject as any).dataSource.indexOf(
+            (this.dropDownListObject as any).value
+          ),
+          1
+        );
+        (this.dropDownListObject as any)?.refresh();
+        (this.dropDownListObject as any).value = null as any;
+    }
 }
 
 
