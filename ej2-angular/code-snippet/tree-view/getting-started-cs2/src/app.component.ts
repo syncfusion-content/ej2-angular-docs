@@ -58,7 +58,7 @@ export class AppComponent {
     //set the checknodes to the TreeView
     public checkedNodes: string[] = ['2','6'];
     public nodeChecked(args: any): void{
-      alert("The checked node's id is: "+this.tree?.checkedNodes);
+      alert("The checked node's id is: " + (this.tree as any).checkedNodes);
 
     }
 

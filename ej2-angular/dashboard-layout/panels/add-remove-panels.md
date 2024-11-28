@@ -29,6 +29,10 @@ The following sample demonstrates how to add and remove the panels dynamically i
 {% include code-snippet/dashboard-layout/add-remove-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="default-style.css" %}
+{% include code-snippet/dashboard-layout/add-remove-panels-cs1/src/default-style.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/add-remove-panels-cs1/src/main.ts %}
 {% endhighlight %}

@@ -46,6 +46,10 @@ In the following example, **code**, **name**, and **countries** columns from hie
 {% include code-snippet/tree-view/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/getting-started-cs3/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
@@ -64,6 +68,10 @@ In the following example, **id**, **pid**, **hasChild**, and **name** columns fr
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/getting-started-cs4/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/getting-started-cs4/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -107,6 +115,10 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from orders table have
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/getting-started-cs5/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/getting-started-cs5/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

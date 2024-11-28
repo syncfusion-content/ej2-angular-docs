@@ -15,14 +15,3 @@
     width: 250px;
     margin: 0 auto;
 }
-
-.custom .head{
-    height: 40px;
-    line-height: 40px;
-    font-size: 14px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 20px;
-    font-weight: bold;
-    border-bottom: 1px solid #e0e0e0;
-}
