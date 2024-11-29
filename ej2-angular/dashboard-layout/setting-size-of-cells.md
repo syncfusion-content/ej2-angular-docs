@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting size of cells in Angular Dashboard layout component | Syncfusion
+title: Set cell size  in Angular Dashboard layout component | Syncfusion
 description: Learn here all about Setting size of cells in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Setting size of cells 
@@ -45,6 +45,10 @@ The following sample demonstrates the usage of the `cellSpacing` property, which
 {% include code-snippet/dashboard-layout/setting-cell-spacing-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="default-style.css" %}
+{% include code-snippet/dashboard-layout/setting-cell-spacing-cs1/src/default-style.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/setting-cell-spacing-cs1/src/main.ts %}
 {% endhighlight %}
@@ -63,6 +67,10 @@ In the following sample, the gridlines indicate the cells split-up of the layout
 {% include code-snippet/dashboard-layout/graphical-representation-of-layout-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="default-style.css" %}
+{% include code-snippet/dashboard-layout/graphical-representation-of-layout-cs1/src/default-style.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/graphical-representation-of-layout-cs1/src/main.ts %}
 {% endhighlight %}
@@ -79,6 +87,10 @@ The following sample demonstrates Dashboard Layout in right-to-left direction.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dashboard-layout/rtl-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="default-style.css" %}
+{% include code-snippet/dashboard-layout/rtl-cs1/src/default-style.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

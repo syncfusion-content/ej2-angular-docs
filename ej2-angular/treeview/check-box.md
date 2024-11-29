@@ -31,6 +31,10 @@ In the following example, the `showCheckBox` property is enabled.
 {% include code-snippet/tree-view/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/getting-started-cs1/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
@@ -49,6 +53,10 @@ If any more nodes are checked, the checked nodes' IDs will be displayed in alert
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/getting-started-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/getting-started-cs2/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

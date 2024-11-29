@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting header of panels in Angular Dashboard layout component | Syncfusion
+title: Set panels header in Angular Dashboard layout component | Syncfusion
 description: Learn here all about Setting header of panels in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Setting header of panels 
@@ -19,6 +19,10 @@ The following sample demonstrates how to add content for each panel using the he
 {% include code-snippet/dashboard-layout/header-and-content-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="default-style.css" %}
+{% include code-snippet/dashboard-layout/header-and-content-of-panels-cs1/src/default-style.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/header-and-content-of-panels-cs1/src/main.ts %}
 {% endhighlight %}
@@ -35,6 +39,10 @@ The following sample demonstrates how to add ej2-chart components as the `conten
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dashboard-layout/components-as-content-of-panels-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="default-style.css" %}
+{% include code-snippet/dashboard-layout/components-as-content-of-panels-cs1/src/default-style.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

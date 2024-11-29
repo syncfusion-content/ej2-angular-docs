@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Position sizing of panels in Angular Dashboard layout component | Syncfusion
+title: Position and size in Angular Dashboard layout component | Syncfusion
 description: Learn here all about Position sizing of panels in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Position sizing of panels 
@@ -40,6 +40,10 @@ The following sample demonstrates the positioning of panels within the dashboard
 {% include code-snippet/dashboard-layout/positioning-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="default-style.css" %}
+{% include code-snippet/dashboard-layout/positioning-of-panels-cs1/src/default-style.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/positioning-of-panels-cs1/src/main.ts %}
 {% endhighlight %}
@@ -56,6 +60,10 @@ The following sample demonstrates the sizing of panels within the dashboard layo
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dashboard-layout/sizing-of-panels-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="default-style.css" %}
+{% include code-snippet/dashboard-layout/sizing-of-panels-cs1/src/default-style.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

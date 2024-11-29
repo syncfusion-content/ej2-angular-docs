@@ -18,11 +18,18 @@ The content of each list item within the Dropdown Tree can be customized with th
 
 In the following sample, the Dropdown Tree list items are customized with employee information such as **name** and **job** using the **itemTemplate** property.
 
-The template expression should be provided inside the ${...} interpolation syntax and {% raw %}`{{...}}`{% endraw %} for ng-template .
+The template expression should be provided inside the ${...} interpolation syntax and 
+{% raw %}
+{{...}}
+{% endraw %} for ng-template .
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdowntree/template/itemTemplate-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/template/itemTemplate-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -38,11 +45,18 @@ The currently selected value that is displayed by default on the Dropdown Tree i
 
 In the following sample, the selected value is displayed as a combined text of both `Name` and `Job` in the Dropdown Tree input, which is separated by a hyphen.
 
-The template expression should be provided inside the ${...} interpolation syntax and {% raw %}`{{...}}`{% endraw %} for ng-template .
+The template expression should be provided inside the ${...} interpolation syntax and 
+{% raw %}
+{{...}}
+{% endraw %} for ng-template .
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdowntree/template/valueTemplate-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/template/valueTemplate-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -63,6 +77,10 @@ In the following sample, the header is customized with the custom element.
 {% include code-snippet/dropdowntree/template/headerTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/template/headerTemplate-cs1/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdowntree/template/headerTemplate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -79,6 +97,10 @@ In the following sample, the footer element displays the total number of employe
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdowntree/template/footerTemplate-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/template/footerTemplate-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -99,6 +121,10 @@ In the following sample, popup list content displays the notification of no data
 {% include code-snippet/dropdowntree/template/noRecordsTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/template/noRecordsTemplate-cs1/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdowntree/template/noRecordsTemplate-cs1/src/main.ts %}
 {% endhighlight %}
@@ -115,6 +141,10 @@ In the following sample, when the data fetch request fails, the Dropdown Tree di
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdowntree/template/actionFailureTemplate-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/template/actionFailureTemplate-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -137,6 +167,10 @@ In the following sample, the Dropdown Tree is rendered with default value of the
 {% include code-snippet/dropdowntree/template/customTemplate-mode-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/template/customTemplate-mode-cs1/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdowntree/template/customTemplate-mode-cs1/src/main.ts %}
 {% endhighlight %}
@@ -149,6 +183,10 @@ In the following sample, the Dropdown Tree is rendered with custom value of the 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdowntree/template/customTemplate-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/template/customTemplate-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

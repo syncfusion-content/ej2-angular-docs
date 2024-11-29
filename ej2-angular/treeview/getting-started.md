@@ -168,6 +168,10 @@ The output will appear as follows.
 {% include code-snippet/tree-view/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/getting-started-cs8/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/getting-started-cs8/src/main.ts %}
 {% endhighlight %}

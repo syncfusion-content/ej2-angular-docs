@@ -32,13 +32,3 @@
     font-style: normal;
   }
   
-
-#treeparent {
-    display: block;
-    max-width: 400px;
-    max-height: 330px;
-    margin: auto;
-    overflow: auto;
-    border: 1px solid #dddddd;
-    border-radius: 3px;
-}
