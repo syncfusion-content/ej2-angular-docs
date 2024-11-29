@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Identify the context menu opened in the Angular Spreadsheet component | Syncfusion
+title: Interactive context menu in Angular Spreadsheet | Syncfusion
 description: Learn here all about how to identify the context menu opened in Syncfusion Angular Spreadsheet component of Syncfusion Essential JS 2 and more. 
 platform: ej2-angular
 control: Spreadsheet
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Identify the context menu opened in Angular Spreadsheet component
+# Identify the context menu opened in Angular Spreadsheet Component
 
 The Spreadsheet includes several context menus that will open and display depending on the action. When you right-click on a cell, for example, a context menu with options related to the cell element appears.
 

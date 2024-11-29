@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Setting prompt text
 
-You can use the [prompt](../api/ai-assist-view#prompt) property to define the prompt text for the AI AssistView component.
+You can use the [prompt](../api/ai-assistview#prompt) property to define the prompt text for the AI AssistView component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ You can use the [prompt](../api/ai-assist-view#prompt) property to define the pr
 
 ## Setting prompt placeholder
 
-You can use the [promptPlaceholder](../api/ai-assist-view#promptplaceholder) property to set the placeholder text for the prompt textarea. The default value is `Type prompt for assistance...`.
+You can use the [promptPlaceholder](../api/ai-assistview#promptplaceholder) property to set the placeholder text for the prompt textarea. The default value is `Type prompt for assistance...`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,9 +44,9 @@ You can use the [promptPlaceholder](../api/ai-assist-view#promptplaceholder) pro
 
 ## Prompt-response collection
 
-You can use the [prompts](../api/ai-assist-view#prompts) property to initialize the component with the configured data as a collection of prompts and responses or individual entries.
+You can use the [prompts](../api/ai-assistview#prompts) property to initialize the component with the configured data as a collection of prompts and responses or individual entries.
 
-> The [prompts](../api/ai-assist-view#prompts) collection stores all the prompts and responses generated.
+> The [prompts](../api/ai-assistview#prompts) collection stores all the prompts and responses generated.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,7 +62,7 @@ You can use the [prompts](../api/ai-assist-view#prompts) property to initialize 
 
 ## Adding prompt suggestions
 
-You can use the [promptSuggestions](../api/ai-assist-view#promptsuggestions) property, to add the suggestions in both initial and on-demand which help users to refine their prompts. Additionally, custom header can be set for suggestions further enhancing the user experience.
+You can use the [promptSuggestions](../api/ai-assistview#promptsuggestions) property, to add the suggestions in both initial and on-demand which help users to refine their prompts. Additionally, custom header can be set for suggestions further enhancing the user experience.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,7 +78,7 @@ You can use the [promptSuggestions](../api/ai-assist-view#promptsuggestions) pro
 
 ### Adding suggestions header
 
-You can use the [promptSuggestionsHeader](../api/ai-assist-view#promptsuggestionsheader) property to set the header text for the prompt suggestions in the AI AssistView.
+You can use the [promptSuggestionsHeader](../api/ai-assistview#promptsuggestionsheader) property to set the header text for the prompt suggestions in the AI AssistView.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -94,7 +94,7 @@ You can use the [promptSuggestionsHeader](../api/ai-assist-view#promptsuggestion
 
 ## Adding prompt iconCss
 
-You can customize the appearance of the prompter avatar by using the [promptIconCss](../api/ai-assist-view#prompticoncss) property.
+You can customize the appearance of the prompter avatar by using the [promptIconCss](../api/ai-assistview#prompticoncss) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -110,7 +110,7 @@ You can customize the appearance of the prompter avatar by using the [promptIcon
 
 ## Adding response iconCss
 
-You can use the [responseIconCss](../api/ai-assist-view#responseiconcss) property to customize the appearance of the responder avatar. By default, the `e-assistview-icon` class is added as the built-in AI AssistView response icon.
+You can use the [responseIconCss](../api/ai-assistview#responseiconcss) property to customize the appearance of the responder avatar. By default, the `e-assistview-icon` class is added as the built-in AI AssistView response icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -126,7 +126,7 @@ You can use the [responseIconCss](../api/ai-assist-view#responseiconcss) propert
 
 ## Show or hide clear button
 
-You can use the [showClearButton](../api/ai-assist-view#showclearbutton) property to show or hide the clear button. By default, its value is `false`, when the clear button is clicked, the prompt text entered will be cleared.
+You can use the [showClearButton](../api/ai-assistview#showclearbutton) property to show or hide the clear button. By default, its value is `false`, when the clear button is clicked, the prompt text entered will be cleared.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

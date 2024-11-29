@@ -10,3 +10,17 @@
 @import 'node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
+
+
+.custom .foot{
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+    font-weight: bold;
+}
+.custom .e-ddt-footer{
+    border-top: 1px solid #e0e0e0;
+}
