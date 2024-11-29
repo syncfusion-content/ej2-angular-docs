@@ -10,7 +10,8 @@ standalone: true,
     template:` <div id='container'>
     <div id='droppable'><p class='drop'>Drop target </p></div>
     <div id='draggable'><p class='drag'>Draggable Element </p></div>
-    </div> `
+    </div> `,
+    styleUrls: ['../index.css']
 })
 
 export class AppComponent {

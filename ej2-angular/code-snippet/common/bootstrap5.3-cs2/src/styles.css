@@ -1,5 +1,5 @@
 :root {
-  --color-sf-primary: 104, 134, 164;
+  --color-sf-primary: rgba(13,110,253,1);
 }
 
 @import 'node_modules/@syncfusion/ej2-base/styles/bootstrap5.3.css';

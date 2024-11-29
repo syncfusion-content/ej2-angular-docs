@@ -12,7 +12,8 @@ standalone: true,
     selector: 'app-root',
     template:` <div id='container'>
     <div #ele class='element'><p class='drag'>Draggable Element </p></div>
-    </div> `
+    </div> `,
+    styleUrls: ['../index.css']
 })
 
 export class AppComponent {

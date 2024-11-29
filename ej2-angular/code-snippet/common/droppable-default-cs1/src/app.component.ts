@@ -12,7 +12,8 @@ standalone: true,
     selector: 'app-root',
     template:` <div id='container'>
     <div #droppable class='droppable'><p class='drop'>Drop target </p></div>
-    </div> `
+    </div> `,
+    styleUrls: ['../index.css']
 })
 
 export class AppComponent {
