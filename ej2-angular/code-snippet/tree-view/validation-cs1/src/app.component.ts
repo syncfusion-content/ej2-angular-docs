@@ -1,13 +1,9 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
-import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
+import { TreeViewModule, TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 import { Component, ViewChild } from '@angular/core';
-import { TreeViewComponent, NodeEditEventArgs } from '@syncfusion/ej2-angular-navigations';
+import { NodeEditEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
 imports: [
