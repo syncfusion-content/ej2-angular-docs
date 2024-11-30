@@ -21,6 +21,10 @@ The following sample demonstrates the usage of the `mediaQuery` property to turn
 {% include code-snippet/dashboard-layout/responsive-adaptive-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="default-style.css" %}
+{% include code-snippet/dashboard-layout/responsive-adaptive-cs1/src/default-style.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/responsive-adaptive-cs1/src/main.ts %}
 {% endhighlight %}

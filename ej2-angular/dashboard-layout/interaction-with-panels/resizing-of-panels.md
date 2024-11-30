@@ -26,6 +26,10 @@ The following sample demonstrates how to enable and disable the resizing of pane
 {% include code-snippet/dashboard-layout/resizing-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="default-style.css" %}
+{% include code-snippet/dashboard-layout/resizing-of-panels-cs1/src/default-style.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/resizing-of-panels-cs1/src/main.ts %}
 {% endhighlight %}
@@ -52,6 +56,10 @@ The following sample demonstrates resizing panels programmatically in the Dashbo
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dashboard-layout/resize-panel-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="default-style.css" %}
+{% include code-snippet/dashboard-layout/resize-panel-cs1/src/default-style.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

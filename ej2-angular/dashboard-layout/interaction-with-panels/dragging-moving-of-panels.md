@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dragging moving of panels in Angular Dashboard layout component | Syncfusion
+title: Dragging panels in Angular Dashboard layout component | Syncfusion
 description: Learn here all about Dragging moving of panels in Syncfusion Angular Dashboard layout component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Dragging moving of panels 
@@ -26,6 +26,10 @@ The following sample demonstrates dragging and pushing of panels. For example, w
 {% include code-snippet/dashboard-layout/dragging-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="default-style.css" %}
+{% include code-snippet/dashboard-layout/dragging-of-panels-cs1/src/default-style.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/dragging-of-panels-cs1/src/main.ts %}
 {% endhighlight %}
@@ -44,6 +48,10 @@ The following sample demonstrates customizing the dragging handler of the panels
 {% include code-snippet/dashboard-layout/customizing-the-dragging-handler-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="default-style.css" %}
+{% include code-snippet/dashboard-layout/customizing-the-dragging-handler-cs1/src/default-style.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dashboard-layout/customizing-the-dragging-handler-cs1/src/main.ts %}
 {% endhighlight %}
@@ -60,6 +68,10 @@ The following sample demonstrates Dashboard Layout with dragging support disable
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dashboard-layout/disable-dragging-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="default-style.css" %}
+{% include code-snippet/dashboard-layout/disable-dragging-cs1/src/default-style.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
