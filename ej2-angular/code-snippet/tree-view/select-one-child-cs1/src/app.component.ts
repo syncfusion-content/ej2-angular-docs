@@ -2,12 +2,9 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
 import { Component, Inject, ViewChild } from '@angular/core';
-import { TreeViewComponent, NodeSelectEventArgs } from '@syncfusion/ej2-angular-navigations';
+import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
+import { NodeSelectEventArgs } from '@syncfusion/ej2-navigations';
 /**
  * Single child selection at a time
  */
@@ -54,10 +51,10 @@ export class AppComponent {
        this.childCount = true
     }
     if (id != null && id === this.parent) {
-      let element: HTMLElement = this.tree?.element.querySelector('[data-uid="' + id + '"]') as HTMLElement;
+      let element: HTMLElement = (this.tree as any).element.querySelector('[data-uid="' + id + '"]') as HTMLElement;
       let liElements: any = element.querySelectorAll('ul li');
       for (let i: number = 0; i < liElements.length; i++) {
-        let nodeData: any = this.tree?.getNode(liElements[i]);
+        let nodeData: any = (this.tree as any).getNode(liElements[i]);
         if (nodeData.selected && args.action === "select" && this.child !== args.nodeData['id']) {
           args.cancel = true;
         }

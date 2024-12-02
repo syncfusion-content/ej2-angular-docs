@@ -4,3 +4,32 @@
 @import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
+
+#treeparent {
+    display: block;
+    max-width: 400px;
+    max-height: 320px;
+    margin: auto;
+    overflow: auto;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+
+.details {
+    padding-left: 10px;
+}
+
+/*apply custom css to first level*/
+.mytree .e-level-1 > .e-text-content .e-list-text {
+    font-style: italic;
+}
+
+/*apply custom css to second level*/
+.mytree .e-level-2 > .e-text-content .e-list-text {
+color: darkmagenta;
+}
+
+/*apply custom css to all the leaf nodes*/
+.mytree .e-level-3 > .e-text-content .e-list-text {
+font-weight: bold;
+}

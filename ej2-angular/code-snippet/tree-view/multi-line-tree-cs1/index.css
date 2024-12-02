@@ -15,18 +15,3 @@
     width: 350px;
     margin: 0 auto;
 }
-
-#treeparent {
-    display: block;
-    max-width: 400px;
-    max-height: 320px;
-    margin: auto;
-    overflow: auto;
-    border: 1px solid #dddddd;
-    border-radius: 3px;
-}
-
-.customTree li .e-list-text{
-    white-space: normal;
-    word-break: break-all;
-  }

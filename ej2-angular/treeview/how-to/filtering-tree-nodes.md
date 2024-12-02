@@ -19,6 +19,10 @@ The following code example demonstrates how to filter the tree nodes in a TreeVi
 {% include code-snippet/tree-view/filtering-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/filtering-cs1/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/filtering-cs1/src/main.ts %}
 {% endhighlight %}

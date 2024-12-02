@@ -36,7 +36,10 @@ export class AppComponent {
     // set the placeholder to the MultiSelect input
     public placeholder: string = 'Select countries';
     //Bind the filter event
-    public onFiltering: EmitType<FilteringEventArgs>  =  (e: FilteringEventArgs) => {
+    public onFiltering: EmitType<FilteringEventArgs> = (e: FilteringEventArgs) => {
+
+        e.preventDefaultAction = true; // Prevent the default built-in filter.
+
         let query = new Query();
         //frame the query based on search string with filter type.
         query = (e.text != "") ? query.where("country", "startswith", e.text, true) : query;

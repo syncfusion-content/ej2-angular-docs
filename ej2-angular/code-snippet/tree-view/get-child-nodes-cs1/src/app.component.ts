@@ -1,13 +1,8 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
-import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
+import { TreeViewModule, TreeViewComponent } from '@syncfusion/ej2-angular-navigations'
 import { Component, Inject, ViewChild } from '@angular/core';
-import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 /**
  * Treeview sample for getting child details via parent ID
  */
@@ -70,18 +65,20 @@ export class AppComponent {
     @ViewChild ('treevalidate') tree?: TreeViewComponent;
 
     public onCreate(args: any): void {
-        let proxy = this.tree;
+        let proxy = this.tree as TreeViewComponent;
         (document.getElementById("btn") as HTMLElement).addEventListener("click",(event)=>{
             let id = (document.getElementById('Nodes') as HTMLElement | any).value
-            let element= proxy?.element.querySelector('[data-uid="' + id + '"]');
+            let element = proxy?.element.querySelector('[data-uid="' + id + '"]');
             // Gets the child Element
-            let liElements = element?.querySelectorAll('ul li');
-            let arr= [];
-            for (let i = 0; i < (liElements as NodeListOf<Element>).length; i++) {
-                let nodeData= proxy?.getNode((liElements as NodeListOf<Element>)[i]);
-                arr.push(nodeData);
-            }
-            alert(JSON.stringify(arr));
+            if (element != null) {
+                  let liElements = element.querySelectorAll('ul li');
+                  let arr = [];
+                  for (let i = 0; i < (liElements as NodeListOf<Element>).length; i++) {
+                    let nodeData = proxy?.getNode((liElements as NodeListOf<Element>)[i]);
+                    arr.push(nodeData);
+                  }
+                  alert(JSON.stringify(arr));
+                }
         });
     }
 }

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auto hide show expand collapse icon in Angular Treeview component | Syncfusion
+title: Hide expand/collapse icons in Angular TreeView component | Syncfusion
 description: Learn here all about Auto hide show expand collapse icon in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Auto hide show expand collapse icon 
@@ -15,6 +15,10 @@ You can display the expand icon by hovering the mouse over TreeView and hide the
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/auto-hide-icons-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/auto-hide-icons-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

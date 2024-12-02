@@ -4,10 +4,8 @@ import { FormsModule } from '@angular/forms'
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
 import { MaskedTextBoxModule } from '@syncfusion/ej2-angular-inputs'
 
-
-
-
-import {FieldsSettingsModel, TreeViewComponent} from "@syncfusion/ej2-angular-navigations"
+import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
+import { FieldsSettingsModel } from '@syncfusion/ej2-navigations';
 import {MaskedTextBoxComponent} from "@syncfusion/ej2-angular-inputs"
 import { Component, Inject, ViewChild } from '@angular/core';
 import { DataManager, Query, ReturnOption, Predicate } from '@syncfusion/ej2-data';
