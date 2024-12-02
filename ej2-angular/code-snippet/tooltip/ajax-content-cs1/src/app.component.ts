@@ -3,11 +3,7 @@
  */
 
 import { Component, ViewChild, ViewEncapsulation, Inject } from '@angular/core';
-import {
-  TooltipComponent,
-  TooltipModule,
-} from '@syncfusion/ej2-angular-popups';
-import { TooltipEventArgs } from '@syncfusion/ej2-popups';
+import { TooltipComponent, TooltipModule, TooltipEventArgs } from '@syncfusion/ej2-angular-popups';
 import { HttpClient } from '@angular/common/http';
 
 import { ListViewModule } from '@syncfusion/ej2-angular-lists';

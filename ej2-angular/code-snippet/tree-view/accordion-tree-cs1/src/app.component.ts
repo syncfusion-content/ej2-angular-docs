@@ -2,12 +2,9 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
 import { Component, Inject, ViewChild } from '@angular/core';
-import { TreeViewComponent, NodeSelectEventArgs } from '@syncfusion/ej2-angular-navigations';
+import { NodeSelectEventArgs } from '@syncfusion/ej2-navigations';
+import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 /**
  * TreeView Accordion sample
  */

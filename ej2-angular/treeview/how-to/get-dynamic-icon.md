@@ -17,6 +17,10 @@ In TreeView component, you can get the original bound data using the `getTreeDat
 {% include code-snippet/tree-view/icon-css-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/icon-css-cs1/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/icon-css-cs1/src/main.ts %}
 {% endhighlight %}
