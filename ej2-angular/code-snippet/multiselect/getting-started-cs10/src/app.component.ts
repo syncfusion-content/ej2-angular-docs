@@ -43,7 +43,10 @@ export class AppComponent {
     //set the height of the popup element
     public popupHeight: string = '250px';
     //Bind the filter event
-    public onFiltering: EmitType<FilteringEventArgs>  =  (e: FilteringEventArgs) => {
+    public onFiltering: EmitType<FilteringEventArgs> = (e: FilteringEventArgs) => {
+
+        e.preventDefaultAction = true; // Prevent the default built-in filter.
+
          // load overall data when search key empty.
         if(e.text == '') e.updateData(this.sportsData);
         else{
