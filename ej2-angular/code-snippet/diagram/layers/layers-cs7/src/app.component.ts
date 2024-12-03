@@ -9,6 +9,8 @@ providers: [ ],
 standalone: true,
     selector: "app-container",
     template: `
+    <button (click)="bringLayerForward()">bringLayerForward</button>
+    <button (click)="sendLayerBackward()">sendLayerBackward</button>
     <ejs-diagram #diagram id="diagram" width="100%" height="580px" [layers]="layers">
     <e-nodes>
             <e-node id='node1' [width]=100 [height]=100 [offsetX]=100 [offsetY]=100 >
@@ -30,9 +32,7 @@ standalone: true,
                 </e-node-annotations>
             </e-node>
     </e-nodes>
-    </ejs-diagram>
-    <button (click)="bringLayerForward()">bringLayerForward</button>
-    <button (click)="sendLayerBackward()">sendLayerBackward</button>`,
+    </ejs-diagram>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

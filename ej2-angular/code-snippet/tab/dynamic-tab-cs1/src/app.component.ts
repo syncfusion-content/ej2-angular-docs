@@ -37,8 +37,7 @@ export class AppComponent {
       @ViewChild('element') tabInstance?: TabComponent;
 
     public totalItems?: number;
-    public headerText: Object = [{ 'text': 'Tab1' }, { 'iconCss': 'e-add-icon' }];
-
+    public headerText: { text?: string, iconCss?: string }[] = [{ 'text': 'Tab1' }, { 'iconCss': 'e-add-icon' }];
     public tabCreated(): void {
         let tooltip: Tooltip = new Tooltip({
             content: 'Add Tab'

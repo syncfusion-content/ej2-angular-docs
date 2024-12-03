@@ -15,33 +15,3 @@
     width: 350px;
     margin: 0 auto;
 }
-
-#treeparent {
-    display: block;
-    max-width: 350px;
-    max-height: 350px;
-    margin: auto;
-    overflow: auto;
-}
-.accordiontree .e-list-item.e-level-1 > .e-fullrow, .accordiontree .e-list-item.e-level-1.e-active > .e-fullrow,  .accordiontree .e-list-item.e-level-1.e-hover > .e-fullrow , .accordiontree .e-list-item.e-level-1 > .e-fullrow, .accordiontree .e-list-item.e-level-1.e-active.e-hover > .e-fullrow {
-    background-color: darkslateblue;
-    border-color: darkslateblue;
-}
-
-.accordiontree .e-list-item.e-level-1 > .e-text-content .e-list-text, .accordiontree .e-list-item.e-level-1.e-active > .e-text-content .e-list-text,  .accordiontree .e-list-item.e-level-1.e-hover > .e-text-content .e-list-text,  .accordiontree .e-list-item.e-level-1.e-active.e-hover > .e-text-content .e-list-text {
-    color: white;
-    font-size: 16px;
-} 
-.accordiontree .e-list-item.e-level- .e-icons.e-icon-collapsible, .accordiontree .e-list-item.e-level-1 .e-icons.e-icon-collapsible,.accordiontree .e-list-item.e-level-1 .e-icon-expandable {
-    display: none
-}
-
-.accordiontree .e-list-item.e-level-2 > .e-fullrow, .accordiontree .e-list-item.e-level-2.e-active > .e-fullrow,  .accordiontree .e-list-item.e-level-2.e-hover > .e-fullrow , .accordiontree .e-list-item.e-level-2 > .e-fullrow, .accordiontree .e-list-item.e-level-2.e-active.e-hover > .e-fullrow {
-    background-color: white;
-    border-color: white;
-}
-
-.accordiontree .e-list-item.e-level-2 > .e-text-content .e-list-text, .accordiontree .e-list-item.e-level-2.e-active > .e-text-content .e-list-text,  .accordiontree .e-list-item.e-level-2.e-hover > .e-text-content .e-list-text,  .accordiontree .e-list-item.e-level-2.e-active.e-hover > .e-text-content .e-list-text {
-    color: blue;
-    font-size: 14px;
-} 

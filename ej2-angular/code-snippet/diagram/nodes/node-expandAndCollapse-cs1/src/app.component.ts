@@ -64,7 +64,7 @@ export class AppComponent {
       (obj.expandIcon = {
         height: 15,
         width: 15,
-        shape: 'Plus',
+        shape: 'Minus',
         fill: 'lightgray',
         offset: {
           x: 0.5,
@@ -77,7 +77,7 @@ export class AppComponent {
     };
     obj.collapseIcon.height = 15;
     obj.collapseIcon.width = 15;
-    obj.collapseIcon.shape = 'Minus';
+    obj.collapseIcon.shape = 'Plus';
     obj.borderColor = 'white';
     obj.backgroundColor = '#6BA5D7';
     obj.borderWidth = 1;
