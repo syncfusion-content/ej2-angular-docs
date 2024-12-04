@@ -10,6 +10,10 @@ domainurl: ##DomainURL##
 
 # Bubble heatmap in Angular Heatmap chart component
 
+This section explains how to customize the appearance of the HeatMap cells as bubbles. The below video demonstrates the same.
+
+{% youtube "https://www.youtube.com/watch?v=WTK0lubgN9E" %}
+
 Data points represent the data source values with **gradient** or **fixed** colors in the HeatMap. You can customize the appearance of these data points by changing the `color` and `size` attributes.
 
 The data points can be represented in color fill or bubble shape by defining the [tileType](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#tiletype) property. By default, the data points are color filled with gradient or fixed colors and this depiction of data points is defined as `Rect` in the `tileType` property.
@@ -26,7 +30,7 @@ In bubble HeatMap, you can display the data points with bubble size, bubble colo
 
 In this bubble HeatMap type, the size factor of the bubble is used to denote the data variations. The radius of the bubble varies according to data values.
 
-By default, the bubble with small size denotes the data value with small magnitude and the larger bubble size denotes the data value with larger magnitude. This behavior can be inversed by using the [isinversedbubblesize](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#isinversedbubblesize) property.
+By default, the bubble with small size denotes the data value with small magnitude and the larger bubble size denotes the data value with larger magnitude. This behavior can be inversed by using the [isInversedBubbleSize](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#isinversedbubblesize) property.
 
 To render a bubble HeatMap with size series, set the [bubbleType](https://ej2.syncfusion.com/angular/documentation/api/heatmap/cellSettings/#bubbletype) property to **Size**.
 
