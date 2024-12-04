@@ -14,6 +14,8 @@ domainurl: ##DomainURL##
 
 This section explains the steps required to create a simple Linear Gauge and demonstrate the basic usage of the Linear Gauge component.
 
+{% youtube "https://www.youtube.com/watch?v=KHAuX1TQisU" %}
+
 ## Dependencies
 
 Below is the list of minimum dependencies required to use the Linear Gauge component.

@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Treemap component
 
-This section explains you the steps required to create a TreeMap control and demonstrate the basic usage of the TreeMap control.
+This section explains the steps required to create a TreeMap control and demonstrates the basic usage of the TreeMap component.
+
+{% youtube "https://www.youtube.com/watch?v=1AvAKz1EPc8" %}
 
 ## Setup Angular Environment
 

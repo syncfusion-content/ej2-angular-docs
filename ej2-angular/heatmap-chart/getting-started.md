@@ -10,7 +10,11 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Heatmap chart component
 
-This section explains  the steps required to create a heat map and demonstrates the basic usage of the heat map control.
+This section explains the steps required to create a heat map and demonstrates the basic usage of the HeatMap component.
+
+You can explore some useful features in the HeatMap component using the following video.
+
+{% youtube "https://www.youtube.com/watch?v=GG3l2cAst7Y" %}
 
 ## Setup Angular Environment
 

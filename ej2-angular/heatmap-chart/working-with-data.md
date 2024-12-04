@@ -10,6 +10,10 @@ domainurl: ##DomainURL##
 
 # Working with data in Angular Heatmap chart component
 
+This section shows how to bind data to the HeatMap component. The below video demonstrates the same.
+
+{% youtube "https://www.youtube.com/watch?v=oK23v5DbbLg" %}
+
 Heat map visualizes the JSON data and two-dimensional array data. Using the data adaptor support, data can be bound to the heat map.
 
 ## Data adaptor

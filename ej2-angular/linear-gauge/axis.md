@@ -10,6 +10,10 @@ domainurl: ##DomainURL##
 
 # Axis in Angular Linear gauge component
 
+This section explains how to customize the appearance of the axis labels, ranges, and pointers in the Linear Gauge component. The below video demonstrates the same.
+
+{% youtube "https://www.youtube.com/watch?v=pI9KyD74NQo" %}
+
 <!-- markdownlint-disable MD013 -->
 
 Axis is used to indicate the numeric values in the linear scale. The Linear Gauge component can have any number of axes. The sub-elements of an axis are line, ticks, labels, ranges, and pointers.
