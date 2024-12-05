@@ -1,14 +1,9 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-import { ListBoxComponent, ListBoxAllModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ListBoxComponent, ListBoxAllModule, CheckBoxSelection } from '@syncfusion/ej2-angular-dropdowns'
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
 import { Component } from '@angular/core';
-import { ListBoxComponent, CheckBoxSelection } from '@syncfusion/ej2-angular-dropdowns';
 
 ListBoxComponent.Inject(CheckBoxSelection);
 

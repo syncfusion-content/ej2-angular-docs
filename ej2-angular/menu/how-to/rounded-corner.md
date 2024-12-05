@@ -17,6 +17,10 @@ The rounded corner can be achieved by using the [`cssClass`](https://ej2.syncfus
 {% include code-snippet/menu/rounded-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/menu/rounded-cs1/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/menu/rounded-cs1/src/main.ts %}
 {% endhighlight %}

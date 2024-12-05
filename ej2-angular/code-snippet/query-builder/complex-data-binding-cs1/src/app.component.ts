@@ -4,16 +4,10 @@ import { QueryBuilderModule } from '@syncfusion/ej2-angular-querybuilder'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 import { CheckBoxModule, RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { DropDownButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
-
-
-
-
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { QueryBuilderComponent } from '@syncfusion/ej2-angular-querybuilder';
 import {  RuleModel, RuleChangeEventArgs, ColumnsModel } from '@syncfusion/ej2-querybuilder';
-import { RadioButton, ChangeEventArgs } from '@syncfusion/ej2-buttons';
 import { getComponent} from '@syncfusion/ej2-base';
-import { MultiSelect, CheckBoxSelection } from '@syncfusion/ej2-dropdowns';
 import { RadioButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
