@@ -54,7 +54,7 @@ The following code explains how to add ports when initializing the node.
 
 ## Add ports at runtime
 
-You can add ports to the nodes  at runtime by using the diagram method [`addPorts`](https://ej2.syncfusion.com/angular/documentation/api/diagram#addPorts). The following code illustrates how to add ports to node at runtime.
+You can add ports to the nodes  at runtime by using the diagram method [`addPorts`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#addports).  The following code illustrates how to add ports to node at runtime.
 
 The port’s ID property is used to define the unique ID for the port and its further used to find the port at runtime.
 If ID is not set, then default ID is automatically set.
@@ -73,7 +73,7 @@ If ID is not set, then default ID is automatically set.
 
 ## Remove ports at runtime
 
-You can remove ports at runtime by using diagram method  [`removePorts`](https://ej2.syncfusion.com/angular/documentation/api/diagram#removePorts). Refer to the following example which shows how to remove ports at runtime.
+You can remove ports at runtime by using diagram method  [`removePorts`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#removeports). Refer to the following example which shows how to remove ports at runtime.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -89,7 +89,7 @@ You can remove ports at runtime by using diagram method  [`removePorts`](https:/
 
 ## Update port at runtime
 
-You can change any port properties at runtime and update it through the diagram method [`dataBind`](https://ej2.syncfusion.com/angular/documentation/api/diagram#dataBind).
+You can change any port properties at runtime and update it through the diagram method [`dataBind`].
 
 The following code example illustrates how to change the port properties.
 
@@ -108,7 +108,7 @@ The following code example illustrates how to change the port properties.
 
 ## Specify connection direction to port
 
-The [`connectionDirection`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/port/#connectionDirection) property of a port allows users to specify the direction in which a connector should establish a connection. This can be either to the port (incoming) or from the port (outgoing).
+The [`connectionDirection`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#connectiondirection) property of a port allows users to specify the direction in which a connector should establish a connection. This can be either to the port (incoming) or from the port (outgoing).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

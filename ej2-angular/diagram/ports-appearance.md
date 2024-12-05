@@ -11,8 +11,8 @@ domainurl: ##DomainURL##
 
 ## Appearance
 
-The appearance of ports can be customized by using[`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#strokeColor-string),
-[`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#strokeWidth-string), [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#fill-string) and [`opacity`]() properties of the port. Customize the port size by using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#width-number) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#height-number) properties of port. The ports [`visibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#visibility-boolean) property allows you to define, when the port should be visible.
+The appearance of ports can be customized by using[`strokeColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#strokecolor),
+[`strokeWidth`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#strokewidth), [`fill`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#fill) and [`opacity`](https://ej2.syncfusion.com/angular/documentation/api/diagram/shapeStyleModel/#opacity) properties of the port. Customize the port size by using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#height) properties of port. The ports [`visibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#visibility) property allows you to define, when the port should be visible.
 
 For more information about port visibility refer [`Port Visibility`](#port-visibility)
 
@@ -48,7 +48,7 @@ The appearance of port can be changed at runtime by customizing the style of por
 
 ## Port visibility
 
-The visibility of the ports is determined by the [`visibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#visibility-boolean) property of port using the [`PortVisibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portVisibility/)enum, This enum includes properties such as `Connect`, `Hidden`, `Hover`, and `Visible`. By default, the port visibility is set to **Hidden**.
+The visibility of the ports is determined by the [`visibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#visibility) property of port using the [`PortVisibility`](https://ej2.syncfusion.com/angular/documentation/api/diagram/portVisibility/)enum, This enum includes properties such as `Connect`, `Hidden`, `Hover`, and `Visible`. By default, the port visibility is set to **Hidden**.
 
 | Property | Definition |
 |----|----|
