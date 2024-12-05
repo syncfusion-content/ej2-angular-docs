@@ -15,19 +15,3 @@
     width: 350px;
     margin: 0 auto;
 }
-
-#treeparent {
-    width: 225px;
-	min-height: 250px;
-	max-height: auto;
-	border: 1px solid #bbbbbb;
-	margin: 0 auto;
-}
-.e-mask .e-input {
-	border: none;
-	border-bottom: 1px solid #bbbbbb;
-}
-#search{
-    width: 225px;
-    height: 26px;
-}

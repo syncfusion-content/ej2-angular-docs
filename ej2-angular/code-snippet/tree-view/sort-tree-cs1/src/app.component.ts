@@ -3,11 +3,9 @@ import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
 
-
-
-
 import { Component, Inject, ViewChild } from '@angular/core';
-import { TreeViewComponent, NodeExpandEventArgs, FieldsSettingsModel } from '@syncfusion/ej2-angular-navigations';
+import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
+import { NodeExpandEventArgs, FieldsSettingsModel } from '@syncfusion/ej2-navigations';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 /**
  * Treeview Disable check box of parent nodes sample

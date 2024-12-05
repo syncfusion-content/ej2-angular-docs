@@ -10,13 +10,17 @@ domainurl: ##DomainURL##
 
 # Layout in Angular Treemap component
 
+This section explains how to customize the appearance of the TreeMap component. The below video demonstrates the same.
+
+{% youtube "https://www.youtube.com/watch?v=phfdhfoRnpM" %}
+
 Determine the visual representation of nodes belonging to all the TreeMap levels using the [`layoutType`](https://ej2.syncfusion.com/angular/documentation/api/treemap/#layouttype) property.
 
 ## Types of layout
 
 The available layout types are,
 
-* Squarfied
+* Squarified
 * SliceAndDiceVertical
 * SliceAndDiceHorizontal
 * SliceAndDiceAuto
