@@ -62,7 +62,7 @@ export class AppComponent {
     (obj.height = 40),
       (obj.width = 100),
       (obj.expandIcon = {
-        shape: 'ArrowDown',
+        shape: 'ArrowUp',
         width: 20,
         height: 20,
         fill: 'red',
@@ -80,7 +80,7 @@ export class AppComponent {
         x: 0.5,
         y: 0.85,
       },
-      shape: 'ArrowUp',
+      shape: 'ArrowDown',
       width: 20,
       height: 20,
       fill: 'green',
@@ -91,7 +91,6 @@ export class AppComponent {
     };
     obj.collapseIcon.height = 15;
     obj.collapseIcon.width = 15;
-    obj.collapseIcon.shape = 'Minus';
     obj.borderColor = 'white';
     obj.backgroundColor = '#6BA5D7';
     obj.borderWidth = 1;

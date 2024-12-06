@@ -286,7 +286,7 @@ The [`resetSegments`](https://ej2.syncfusion.com/angular/documentation/api/diagr
 
 ## Enable Connector Splitting
 
-The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. Split the connector between two nodes when dropping a new node onto an existing connector and create a connection between the new node and existing nodes by setting the [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/enableConnectorSplit/) as true. The default value of the [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/enableConnectorSplit/) is false
+The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. Split the connector between two nodes when dropping a new node onto an existing connector and create a connection between the new node and existing nodes by setting the [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/enableconnectorsplit/) as true. The default value of the [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/enableconnectorsplit/) is false
 
 The following code illustrates how to split the connector and create a connection with new node.
 
@@ -306,7 +306,7 @@ The following code illustrates how to split the connector and create a connectio
 
 ### Preserve connector style while connector splitting
 
-When splitting a connector using [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/enableConnectorSplit/), the new connector created will be a normal connector without any specific styles. To ensure the new connector has the same style as the original connector, you can use the collectionChange event to apply the styles.
+When splitting a connector using [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/enableconnectorsplit/), the new connector created will be a normal connector without any specific styles. To ensure the new connector has the same style as the original connector, you can use the collectionChange event to apply the styles.
 
 The following example demonstrates how to apply the same style of the original connector to the newly added connector:
 

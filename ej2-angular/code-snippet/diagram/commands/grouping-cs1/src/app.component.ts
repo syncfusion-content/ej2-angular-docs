@@ -10,7 +10,7 @@ import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
     standalone: true,
     selector: "app-container",
     template: `<label>( CTRL + G ) </label><button (click)="group()">Group</button>
-   <label>( CTRL + Shift + G) </label> <button (click)="unGroup()">Un Group</button>
+   <label>( CTRL + Shift + U) </label> <button (click)="unGroup()">Un Group</button>
     <ejs-diagram #diagram id="diagram" width="100%" height="580px" [getNodeDefaults] ='getNodeDefaults' >
         <e-nodes>
             <e-node id='node1' [offsetX]=100 [offsetY]=100>

@@ -12,13 +12,12 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD010 -->
 
-In a graphical user interface (GUI), a context menu is a type of menu that appears when you perform a right-click operation. It offers users a set of actions relevant to the current context. In diagrams, context menus can be customized extensively. The Diagram control provides built-in context menu items while also allowing users to define custom menu items through the[`contextMenuSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram#contextMenuSettings) property. This flexibility enables tailoring menus to specific application needs, including creating nested levels of menu items for more intricate user interactions.
+In a graphical user interface (GUI), a context menu is a type of menu that appears when you perform a right-click operation. It offers users a set of actions relevant to the current context. In diagrams, context menus can be customized extensively. The Diagram control provides built-in context menu items while also allowing users to define custom menu items through the[`contextMenuSettings`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#contextmenusettings) property. This flexibility enables tailoring menus to specific application needs, including creating nested levels of menu items for more intricate user interactions.
 
-N> If you want to use contextMenu in diagram, you need to inject `DiagramContextMenu` Module in the diagram.
 
 ## Default context menu
 
-Diagram provides some default context menu items to ease the execution of some frequently used commands. The [`show`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuSettings#show-boolean) property helps you to enable/disable the context menu.
+Diagram provides some default context menu items to ease the execution of some frequently used commands. The [`show`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuSettings#show) property helps you to enable/disable the context menu.
 
 The following code illustrates how to enable the default context menu items.
 
@@ -38,7 +37,7 @@ The following code illustrates how to enable the default context menu items.
 
 Context menus can be customized for individual nodes by defining specific menu items beyond the default options. To add additional context menu items, you need to define and incorporate them into the [`items`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuSettingsModel#items) property of the context menu.
 
-Each custom item can be defined with specific text and ID using the [`text`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#text-string) and [`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#id-string)  properties, respectively. Additionally, you can enhance visual cues by associating icons through the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#iconCss-string) for enabling the use of font icons. The [`target`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#target-string) property specifies where each menu item should appear, and separators can be included using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#separator-boolean) property to visually group menu items. This flexibility allows for a tailored user interface that meets specific application needs efficiently. Nested menu items are defined within the [`items`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel/#items) property of a parent menu item.
+Each custom item can be defined with specific text and ID using the [`text`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#text) and [`ID`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#id)  properties, respectively. Additionally, you can enhance visual cues by associating icons through the [`iconCss`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#iconCss) for enabling the use of font icons. The [`target`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#target) property specifies where each menu item should appear, and separators can be included using the [`separator`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel#separator) property to visually group menu items. This flexibility allows for a tailored user interface that meets specific application needs efficiently. Nested menu items are defined within the [`items`](https://ej2.syncfusion.com/angular/documentation/api/diagram/contextMenuItemModel/#items) property of a parent menu item.
 
 ### To Display custom menu alone
 
@@ -140,4 +139,4 @@ The following example shows how to get these events.
 
 ## See Also
 
-* [How to open context menu on left click](https://support.syncfusion.com/kb/article/15100/how-to-perform-clipboard-operation-with-custom-context-menu-on-left-click-using-javascript-diagram)
+* [How to open context menu on left click](https://support.syncfusion.com/kb/article/15097/how-to-perform-clipboard-operation-with-custom-context-menu-on-left-click-using-angular-diagram)

@@ -9,7 +9,9 @@ imports: [
 providers: [ ],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px">
+    template: `<button (click)='getInEdges()'>Get InEdges</button>
+    <button (click)='getOutEdges()'>Get OutEdges</button>
+    <ejs-diagram #diagram id="diagram" width="100%" height="580px">
         <e-nodes>
             <e-node id='node1' [offsetX]=250 [offsetY]=250 [width]=100 [height]=100 [ports]='port1'>
             </e-node>
@@ -22,9 +24,7 @@ standalone: true,
             <e-connector id='connector2' type='Orthogonal' sourceID='node2' sourcePortID='port4' targetID='node1' targetPortID='port2'>
             </e-connector>
         </e-connectors>
-    </ejs-diagram>
-    <button (click)='getInEdges()'>Get InEdges</button>
-    <button (click)='getOutEdges()'>Get OutEdges</button>`,
+    </ejs-diagram>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

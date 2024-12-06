@@ -9,7 +9,8 @@ imports: [
 providers: [ ],
 standalone: true,
     selector: "app-container",
-    template: `<ejs-diagram #diagram id="diagram" width="100%" height="580px" >
+    template: `<button (click)='portDirection()'>Update Port Direction</button>
+    <ejs-diagram #diagram id="diagram" width="100%" height="580px" >
         <e-nodes>
             <e-node id='node1' [offsetX]=200 [offsetY]=300 [width]=100 [height]=100 [ports]='port1'>
             </e-node>
@@ -20,8 +21,7 @@ standalone: true,
             <e-connector id='connector' type='Orthogonal' sourceID='node1' sourcePortID='port1' targetID='node2' targetPortID='port2'>
             </e-connector>
         </e-connectors>
-    </ejs-diagram>
-    <button (click)='portDirection()'>Update Port Direction</button>`,
+    </ejs-diagram>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {

@@ -9,6 +9,7 @@ providers: [ ],
 standalone: true,
     selector: "app-container",
     template: `
+    <button (click)="moveObjects()">moveObjects</button>
     <ejs-diagram #diagram id="diagram" width="100%" height="580px" [layers]="layers">
     <e-nodes>
             <e-node id='node1' [width]=100 [height]=100 [offsetX]=100 [offsetY]=100 >
@@ -30,8 +31,7 @@ standalone: true,
                 </e-node-annotations>
             </e-node>
     </e-nodes>
-    </ejs-diagram>
-    <button (click)="moveObjects()">moveObjects</button>`,
+    </ejs-diagram>`,
     encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
@@ -59,5 +59,6 @@ export class AppComponent {
      */
      moveObjects() {
         (this.diagram as any).moveObjects(['node1'], 'layer2');
+        console.log(this.layers);
     }
 }
