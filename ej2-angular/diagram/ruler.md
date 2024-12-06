@@ -81,4 +81,4 @@ The following code demonstrates how to use the `arrangeTick` function to customi
 
 The HorizontalRuler’s [`markerColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler/#markercolor) and VerticalRuler’s [`markerColor`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramRuler/#markercolor) properties are used to define the ruler marker color and marker will be shown while hovering mouse over the diagram canvas.
 
-N> The MarkerColor property can be customized using the [`marker`](./style/#customizing-the-ruler) CSS style.
+N> The MarkerColor property can be customized using the [`marker`] CSS style.

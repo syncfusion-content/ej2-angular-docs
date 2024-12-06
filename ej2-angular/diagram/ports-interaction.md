@@ -90,10 +90,10 @@ There are several events that can be triggered while interacting with ports. The
 
 | Event| Description|
 |----|----|
-| [`Click`](../api/diagram/iClickEventArgs/)   | Triggers when the port is clicked. |
-| [`Element Draw`](../api/diagram/iElementDrawEventArgs/)  | Triggers when drawing a connector from the port. |
-| [`Position Change`](../api/diagram/iDraggingEventArgs/)  | Triggers when the port is dragged. |
-| [`Connection Change`](../api/diagram/iConnectionChangeEventArgs/) | Triggers when a connector is connected or disconnected from the port|
+| [`Click`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iClickEventArgs/)   | Triggers when the port is clicked. |
+| [`Element Draw`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iElementDrawEventArgs/)  | Triggers when drawing a connector from the port. |
+| [`Position Change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iDraggingEventArgs/)  | Triggers when the port is dragged. |
+| [`Connection Change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iConnectionChangeEventArgs/) | Triggers when a connector is connected or disconnected from the port|
 
 The following example shows how to get these events in diagram.
 
