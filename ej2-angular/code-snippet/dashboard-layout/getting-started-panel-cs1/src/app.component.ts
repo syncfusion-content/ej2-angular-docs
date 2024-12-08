@@ -12,7 +12,7 @@ imports: [ DashboardLayoutModule],
 
 standalone: true,
     selector: 'app-root',
-    styleUrls: ['./default-style.css'],
+    styleUrls: ['./app.component.css'],
     template: `
     <div class="control-section">
         <ejs-dashboardlayout id='defaultLayout' #defaultLayout [columns]='5' [cellSpacing]='cellSpacing' [panels]='panels'>

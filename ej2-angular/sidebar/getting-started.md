@@ -98,7 +98,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding Styles
 
-To render the Sidebar component, need to import Sidebar and its dependent component's styles as given below in `app.component.css`.
+To render the Sidebar component, need to import Sidebar and its dependent component's styles as given below in `[src/styles.css]`.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -150,6 +150,10 @@ The following samples shows the sidebar component in browser.
 {% include code-snippet/sidebar/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/sidebar/getting-started-cs1/src/app.component.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sidebar/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
@@ -171,6 +175,10 @@ N> To achieve a proper **backdrop**, we suggest that you create a wrapper parent
 {% include code-snippet/sidebar/showBackDrop-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/sidebar/showBackDrop-cs1/src/app.component.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sidebar/showBackDrop-cs1/src/main.ts %}
 {% endhighlight %}
@@ -189,6 +197,10 @@ Positioning the Sidebar to the right or left of the main content can be achieved
 {% include code-snippet/sidebar/position-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/sidebar/position-cs1/src/app.component.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sidebar/position-cs1/src/main.ts %}
 {% endhighlight %}
@@ -203,6 +215,10 @@ Animation transitions can be set while expanding or collapsing the Sidebar using
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sidebar/animate-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/sidebar/animate-cs1/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -221,6 +237,10 @@ Sidebar can be closed on document click by setting [`closeOnDocumentClick`](http
 {% include code-snippet/sidebar/document-click-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/sidebar/document-click-cs1/src/app.component.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sidebar/document-click-cs1/src/main.ts %}
 {% endhighlight %}
@@ -235,6 +255,10 @@ Expand or collapse the Sidebar while swiping in touch devices using [`enableGest
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sidebar/gestures-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/sidebar/gestures-cs1/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
