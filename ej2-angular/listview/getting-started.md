@@ -130,6 +130,10 @@ The output will appear as follows.
 {% include code-snippet/listview/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/listview/getting-started-cs1/src/app.component.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/getting-started-cs1/src/main.ts %}
 {% endhighlight %}

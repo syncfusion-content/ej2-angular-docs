@@ -14,7 +14,8 @@ imports: [
 
 
 standalone: true,
-    selector: 'app-container',
+    selector: 'app-root',
+    styleUrls: ['./app.component.css'],
     template: `<div id='treeparent'><ejs-treeview id='treeelement' [fields]='field'></ejs-treeview></div>`
 })
 export class AppComponent {
