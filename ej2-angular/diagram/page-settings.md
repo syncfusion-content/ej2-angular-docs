@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Page settings in Angular Diagram component | Syncfusion
-description: Learn here all about Page settings in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Page settings in Angular Diagram component | Syncfusion®
+description: Learn here all about Page settings in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Page settings 
 documentation: ug

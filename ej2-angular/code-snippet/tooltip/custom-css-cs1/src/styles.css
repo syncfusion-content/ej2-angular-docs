@@ -2,3 +2,103 @@
 @import 'node_modules/@syncfusion/ej2-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
+
+#loader {
+  color: #008cff;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 30%;
+  height: 40px;
+}
+ 
+#tooltip {
+  background-color: #cfd8dc;
+  border: 3px solid #eceff1;
+  box-sizing: border-box;
+  margin: 80px auto;
+  padding: 20px 0;
+  width: 200px;
+  text-align: center;
+  color: #424242;
+  font-size: 20px;
+  user-select: none;
+}
+ 
+/* csslint ignore:start */
+.customtooltip.e-tooltip-wrap {
+  border-radius: 4px;
+  opacity: 1;
+}
+ 
+.customtooltip.e-tooltip-wrap.e-popup {
+  background-color: #fff;
+  border: 2px solid #000;
+}
+ 
+.customtooltip.e-tooltip-wrap .e-tip-content {
+  color: #000;
+  font-size: 12px;
+  line-height: 20px;
+}
+ 
+.customtooltip.e-tooltip-wrap .e-arrow-tip {
+  position: absolute;
+}
+ 
+.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-bottom,
+.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-top {
+  height: 12px;
+  width: 24px;
+  left: 50%;
+}
+ 
+.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-bottom {
+  top: 100%;
+}
+ 
+.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-top {
+  top: -9px;
+}
+ 
+.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-left,
+.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-right {
+  height: 24px;
+  width: 12px;
+}
+ 
+.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-left {
+  left: -9px;
+  top: 48%;
+}
+ 
+.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-right {
+  left: 100%;
+  top: 50%;
+}
+ 
+.customtooltip.e-tooltip-wrap .e-arrow-tip-outer {
+  border: 12px solid transparent;
+}
+ 
+.customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
+  border-top-color: #000;
+}
+ 
+.customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
+  border-bottom-color: #000;
+}
+ 
+.customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-left {
+  border-right-color: #000;
+}
+ 
+.customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-right {
+  border-left-color: #000;
+}
+ 
+.customtooltip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom {
+  color: #fff;
+  font-size: 25.9px;
+}
+/* csslint ignore:end */

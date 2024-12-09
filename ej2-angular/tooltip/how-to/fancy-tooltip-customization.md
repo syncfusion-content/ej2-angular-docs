@@ -64,6 +64,10 @@ The arrow tip pointer can also be disabled by using the [`showTipPointer`](https
 {% include code-snippet/tooltip/tip-custom-cs2/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tooltip/tip-custom-cs2/src/styles.css %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/tip-custom-cs2/src/main.ts %}
 {% endhighlight %}

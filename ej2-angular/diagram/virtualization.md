@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualization in Angular Diagram component | Syncfusion
-description: Learn here all about Virtualization in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Virtualization in Angular Diagram component | Syncfusion®
+description: Learn here all about Virtualization in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Virtualization 
 documentation: ug

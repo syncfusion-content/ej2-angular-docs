@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interaction in Angular Diagram component | Syncfusion
-description: Learn here all about Interaction in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Interaction in Angular Diagram component | Syncfusion®
+description: Learn here all about Interaction in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Interaction 
 documentation: ug

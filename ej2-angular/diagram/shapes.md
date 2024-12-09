@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Shapes in Angular Diagram component | Syncfusion
-description: Learn here all about Shapes in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Shapes in Angular Diagram component | Syncfusion®
+description: Learn here all about Shapes in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Shapes 
 documentation: ug

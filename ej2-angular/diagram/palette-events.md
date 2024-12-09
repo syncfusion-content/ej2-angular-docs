@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Symbol Palette Events in EJ2 Angular Diagram component | Syncfusion
-description: Learn here all about Symbol palette in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Symbol Palette Events in EJ2 Angular Diagram component | Syncfusion®
+description: Learn here all about Symbol palette in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Symbol palette 
 documentation: ug

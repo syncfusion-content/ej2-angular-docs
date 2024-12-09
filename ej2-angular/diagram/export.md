@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export in Angular Diagram component | Syncfusion
-description: Learn here all about Export in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Export in Angular Diagram component | Syncfusion®
+description: Learn here all about Export in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Export 
 documentation: ug
@@ -214,4 +214,4 @@ this.diagram.exportDiagram(this.options);
 ## Limitations
 
 
-Currently, printing diagram with native and HTML nodes is not supported. To overcome this limitation, we make use of the Syncfusion Essential PDF library. This library incorporates the Syncfusion Essential HTML converter, which employs the advanced Blink rendering engine. This converter seamlessly transforms HTML content into images. Refer to [`export Html-and-Native node`](https://support.syncfusion.com/kb/article/14422/how-to-print-or-export-the-html-and-native-node-into-image-format-using-angular-diagram) kb for more information.
+Currently, printing diagram with native and HTML nodes is not supported. To overcome this limitation, we make use of the Syncfusion Essential® PDF library. This library incorporates the Syncfusion Essential® HTML converter, which employs the advanced Blink rendering engine. This converter seamlessly transforms HTML content into images. Refer to [`export Html-and-Native node`](https://support.syncfusion.com/kb/article/14422/how-to-print-or-export-the-html-and-native-node-into-image-format-using-angular-diagram) kb for more information.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in Angular Diagram component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Style in Angular Diagram component | Syncfusion®
+description: Learn here all about Style in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Style 
 documentation: ug

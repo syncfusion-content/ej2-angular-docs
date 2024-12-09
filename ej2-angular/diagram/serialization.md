@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization in Angular Diagram component | Syncfusion
-description: Learn here all about Serialization in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Serialization in Angular Diagram component | Syncfusion®
+description: Learn here all about Serialization in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Serialization 
 documentation: ug

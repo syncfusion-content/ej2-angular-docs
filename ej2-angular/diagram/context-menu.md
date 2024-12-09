@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Context menu in Angular Diagram component | Syncfusion
-description: Learn here all about Context menu in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Context menu in Angular Diagram component | Syncfusion®
+description: Learn here all about Context menu in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Context menu 
 documentation: ug

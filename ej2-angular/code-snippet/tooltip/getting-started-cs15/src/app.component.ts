@@ -2,11 +2,9 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TooltipModule } from '@syncfusion/ej2-angular-popups'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
-import { TooltipComponent, Position } from '@syncfusion/ej2-angular-popups';
+import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
+import { Position } from '@syncfusion/ej2-popups';
 
 @Component({
 imports: [

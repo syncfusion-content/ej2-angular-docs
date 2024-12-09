@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ports positioning in Angular Diagram component | Syncfusion
-description: Learn here all about Ports in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Ports positioning in Angular Diagram component | Syncfusion®
+description: Learn here all about Ports in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Ports 
 documentation: ug

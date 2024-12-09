@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearence of a nodes in Angular Diagram component | Syncfusion
-description: Learn here all about Nodes in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Appearence of a nodes in Angular Diagram component | Syncfusion®
+description: Learn here all about Nodes in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Appearence of a nodes 
 documentation: ug

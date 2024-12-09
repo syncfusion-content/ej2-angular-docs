@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in Angular Diagram component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Data binding in Angular Diagram component | Syncfusion®
+description: Learn here all about Data binding in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Data binding 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bezier Segment edit orientation in Angular Diagram component | Syncfusion
-description: Learn here all about Connectors in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Bezier Segment edit orientation in Angular Diagram component | Syncfusion®
+description: Learn here all about Connectors in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Bezier Segment edit orientation 
 documentation: ug

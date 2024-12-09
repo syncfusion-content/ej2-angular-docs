@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Complex hierarchical tree layout in Angular Diagram component | Syncfusion
-description: Learn here all about Automatic layout in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Complex hierarchical tree layout in Angular Diagram component | Syncfusion®
+description: Learn here all about Automatic layout in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Complex hierarchical tree layout
 documentation: ug
