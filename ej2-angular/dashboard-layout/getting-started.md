@@ -103,8 +103,8 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 To render the DashboardLayout component, import the DashboardLayout and its dependent component's styles as given below in `[src/styles.css]`.
 
 ```css
-@import "../../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../../node_modules/@syncfusion/ej2-angular-layouts/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-angular-layouts/styles/material.css";
 ```
 
 >Note: To refer the combined component styles, use Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
@@ -129,7 +129,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  styleUrls: ['default-style.css'],
+  styleUrls: ['./app.component.css'],
   template: `
   <div class="control-section">
         <ejs-dashboardlayout id='defaultLayout' [columns]="5" #defaultLayout [cellSpacing]='cellSpacing'>
@@ -189,7 +189,7 @@ export class AppComponent {
 }
 ```
 
-* Import DashboardLayout module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-layouts`.
+* Import DashboardLayout module into Angular application(`app.module.ts`) from the package `@syncfusion/ej2-angular-layouts`.
 
 ```javascript
 import { NgModule }      from '@angular/core';
@@ -222,8 +222,8 @@ The following example shows a basic DashboardLayout by adding the panels propert
 {% include code-snippet/dashboard-layout/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="default-style.css" %}
-{% include code-snippet/dashboard-layout/getting-started-cs1/src/default-style.css %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/dashboard-layout/getting-started-cs1/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -246,7 +246,7 @@ import { Component,ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  styleUrls: ['app/default-style.css'],
+  styleUrls: ['./app.component.css'],
   template: `
   <div class="control-section">
     <ejs-dashboardlayout id='defaultLayout' #defaultLayout [cellSpacing]='cellSpacing' [panels]='panels' [columns]="5">
@@ -274,8 +274,8 @@ The following example shows a basic DashboardLayout by using the `panels` proper
 {% include code-snippet/dashboard-layout/getting-started-panel-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="default-style.css" %}
-{% include code-snippet/dashboard-layout/getting-started-panel-cs1/src/default-style.css %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/dashboard-layout/getting-started-panel-cs1/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

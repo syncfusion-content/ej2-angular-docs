@@ -49,7 +49,7 @@ The `Avatar` component is pure CSS component which doesn't need specific depende
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -85,9 +85,9 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 To render the Avatar component, import the Avatar and its dependent component's styles as given below in `[src/styles.css]`.
 
 ```css
-@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import "../../node_modules/@syncfusion/ej2-angular-layouts/styles/material.css";
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
 ```
 
 >Note: To refer the combined component styles, use Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
@@ -102,7 +102,7 @@ Modify the `template` in `app.component.ts` file to render Avatar component.
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'my-app',
+    selector: 'app-root',
     template: `<div id='element'><span class="e-avatar">GR</span></div>`
 })
 
@@ -122,6 +122,10 @@ The following example shows a basic Avatar component.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/getting-started-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/avatar/getting-started-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

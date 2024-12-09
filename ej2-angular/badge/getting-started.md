@@ -130,8 +130,8 @@ The following example shows a basic badge component.
 {% include code-snippet/badge/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/badge/getting-started-cs1/src/styles.css %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/badge/getting-started-cs1/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
