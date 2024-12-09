@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scroll settings in Angular Diagram component | Syncfusion
-description: Learn here all about Scroll settings in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Scroll settings in Angular Diagram component | Syncfusion®
+description: Learn here all about Scroll settings in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Scroll settings 
 documentation: ug

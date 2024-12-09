@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bpmn Datasource in Angular Diagram component | Syncfusion
-description: Learn here all about Bpmn shapes in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Bpmn Datasource in Angular Diagram component | Syncfusion®
+description: Learn here all about Bpmn shapes in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Bpmn Datasource 
 documentation: ug

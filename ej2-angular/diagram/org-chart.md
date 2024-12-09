@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Org-chart layout in Angular Diagram component | Syncfusion
-description: Learn here all about Org-chart layout in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Org-chart layout in Angular Diagram component | Syncfusion®
+description: Learn here all about Org-chart layout in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Org-chart layout 
 documentation: ug

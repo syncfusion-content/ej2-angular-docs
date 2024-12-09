@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Nodes in Angular Diagram component | Syncfusion
-description: Learn here all about Nodes in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Nodes in Angular Diagram component | Syncfusion®
+description: Learn here all about Nodes in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Nodes 
 documentation: ug

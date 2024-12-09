@@ -16,7 +16,7 @@ imports: [
 
 
 standalone: true,
-  selector: 'my-app',
+  selector: 'app-root',
   template: `
     <div id='container' style="display: inline-block; position: relative; left: 50%;top: 100px;transform: translateX(-50%);">
         <ejs-tooltip id='tooltip' content='Tooltip content' target="#target">

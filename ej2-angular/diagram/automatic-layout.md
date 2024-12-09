@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Automatic layout in Angular Diagram component | Syncfusion
-description: Learn here all about Automatic layout in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Automatic layout in Angular Diagram component | Syncfusion®
+description: Learn here all about Automatic layout in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Automatic layout 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip in Angular Diagram component | Syncfusion
-description: Learn here all about Tooltip in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Tooltip in Angular Diagram component | Syncfusion®
+description: Learn here all about Tooltip in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Tooltip 
 documentation: ug

@@ -15,7 +15,7 @@ imports: [
 
 
 standalone: true,
-    selector: 'my-app',
+    selector: 'app-root',
     template: `<ejs-chiplist text="Janet Leverling"></ejs-chiplist>`
 })
 export class AppComponent {

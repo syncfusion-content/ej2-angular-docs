@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Angular Diagram component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Diagram component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular Diagram component | Syncfusion®
+description:  Checkout and learn about Getting started with Angular Diagram component of Syncfusion Essential® JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
@@ -14,7 +14,7 @@ This section explains you the steps required to create a simple diagram and demo
 
 ## Prerequisites
 
-[`System requirements for Syncfusion Angular UI components`](https://ej2.syncfusion.com/angular/documentation/system-requirement)
+[`System requirements for Syncfusion® Angular UI components`](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 
 ## Dependencies
 
@@ -50,9 +50,9 @@ ng new my-diagram-app
 cd my-diagram-app
 ```
 
-## Installing Syncfusion Diagram package
+## Installing Syncfusion® Diagram package
 
-All the available Essential JS 2 packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
+All the available Essential® JS 2 packages are published in [npmjs.com](https://www.npmjs.com/~syncfusionorg) registry.
 
 To install Diagram component, use the following command.
 
@@ -87,7 +87,7 @@ export class AppComponent {}
 
 ## Adding CSS reference
 
-Combined CSS files are available in the Essential JS 2 package root folder. This can be referenced in [src/styles.css] using following code.
+Combined CSS files are available in the Essential® JS 2 package root folder. This can be referenced in [src/styles.css] using following code.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-angular-diagrams/styles/material.css';
@@ -221,7 +221,7 @@ Create and add a `node` (JSON data) with specific position, size, label, and sha
 
 ### Apply shape and style to node
 
-Syncfusion diagram control provides support to render many built-in shapes in diagram.
+Syncfusion® diagram control provides support to render many built-in shapes in diagram.
 Please refer to [`Shapes`](shapes) to know about built-in Shapes.
 
 The appearance of a node can be customized by changing its [`fill`](../api/diagram/shapeStyleModel/#fill-string) color, [`strokeColor`](../api/diagram/shapeStyleModel/#strokecolor-string), [`strokeWidth`](../api/diagram/shapeStyleModel/#strokewidth-number), [`borderColor`](../api/diagram/node/#borderColor-string), [`borderWidth`](../api/diagram/node/#borderWidth-number), [`strokeDashArray`](../api/diagram/shapeStyleModel/#strokeDashArray-number),  [`opacity`](../api/diagram/shapeStyleModel/#opacity-number), and [`shadow`](../api/diagram/shapeStyleModel/#shadow-number).
