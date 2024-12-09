@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layers in Angular Diagram component | Syncfusion
-description: Learn here all about Layers in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Layers in Angular Diagram component | Syncfusion®
+description: Learn here all about Layers in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Layers 
 documentation: ug

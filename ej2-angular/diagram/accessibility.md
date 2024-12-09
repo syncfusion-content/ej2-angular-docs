@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Angular Diagram component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Diagram component | Syncfusion®
+description: Learn here all about Accessibility in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Accessibility 
 documentation: ug
@@ -104,7 +104,7 @@ Attribute provides the text label with some default description for below elemen
 
 ### Mobile device support
 
-Syncfusion Diagram component are more user-friendly and accessible to individuals using mobile devices, including those with disabilities. These are designed to be responsive, adaptable to various screen sizes and orientations, and touch-friendly.
+Syncfusion® Diagram component are more user-friendly and accessible to individuals using mobile devices, including those with disabilities. These are designed to be responsive, adaptable to various screen sizes and orientations, and touch-friendly.
 
 ### Screen Reader Support
 
@@ -112,7 +112,7 @@ The Diagram component supports and its information was dictated properly by the 
 
 ### Keyboard navigation support
 
-Syncfusion Diagram component support keyboard navigation, allowing users who rely on alternate methods to effortlessly navigate and interact with the component.
+Syncfusion® Diagram component support keyboard navigation, allowing users who rely on alternate methods to effortlessly navigate and interact with the component.
 
 ## Keyboard interaction
 
@@ -144,4 +144,4 @@ The accessibility compliance of the Diagram component is shown in the following 
 
 ## See also
 
-- [Accessibility in Syncfusion Angular components](../common/accessibility)
+- [Accessibility in Syncfusion® Angular components](../common/accessibility)

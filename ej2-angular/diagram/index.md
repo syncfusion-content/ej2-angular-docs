@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Index in Angular Diagram component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Index in Angular Diagram component | Syncfusion®
+description: Learn here all about Index in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Index 
 documentation: ug

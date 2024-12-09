@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Flowchart layout in Angular Diagram component | Syncfusion
-description: Learn here all about Flowchart layout in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Flowchart layout in Angular Diagram component | Syncfusion®
+description: Learn here all about Flowchart layout in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Flowchart layout 
 documentation: ug

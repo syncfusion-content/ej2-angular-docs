@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Group in Angular Diagram component | Syncfusion
-description: Learn here all about Group in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Group in Angular Diagram component | Syncfusion®
+description: Learn here all about Group in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Group 
 documentation: ug

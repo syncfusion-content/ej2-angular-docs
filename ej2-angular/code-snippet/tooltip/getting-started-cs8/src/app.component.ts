@@ -16,7 +16,7 @@ imports: [
 
 
 standalone: true,
-    selector: 'my-app',
+    selector: 'app-root',
     template: `
         <div id="tool">
           <ejs-tooltip target='.e-info' position='RightCenter'>

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector customization in Angular Diagram component | Syncfusion
-description: Learn here all about Connectors in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Connector customization in Angular Diagram component | Syncfusion®
+description: Learn here all about Connectors in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Connector customization
 documentation: ug

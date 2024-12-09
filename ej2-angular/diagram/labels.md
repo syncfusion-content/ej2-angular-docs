@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Labels in Angular Diagram component | Syncfusion
-description: Learn here all about Labels in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Labels in Angular Diagram component | Syncfusion®
+description: Learn here all about Labels in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Labels 
 documentation: ug

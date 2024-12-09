@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mind-map layout in Angular Diagram component | Syncfusion
-description: Learn here all about Mind-map layout in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Mind-map layout in Angular Diagram component | Syncfusion®
+description: Learn here all about Mind-map layout in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Mind-map layout 
 documentation: ug

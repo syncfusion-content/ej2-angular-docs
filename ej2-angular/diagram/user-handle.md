@@ -1,7 +1,7 @@
 ---
 layout: post
-title: User handle in Angular Diagram component | Syncfusion
-description: Learn here all about User handle in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: User handle in Angular Diagram component | Syncfusion®
+description: Learn here all about User handle in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: User handle 
 documentation: ug

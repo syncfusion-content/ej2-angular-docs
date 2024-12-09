@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tools in Angular Diagram component | Syncfusion
-description: Learn here all about Tools in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Tools in Angular Diagram component | Syncfusion®
+description: Learn here all about Tools in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Tools 
 documentation: ug

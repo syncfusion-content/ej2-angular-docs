@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Node Labels in Angular Diagram component | Syncfusion
-description: Learn here all about Labels in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Node Labels in Angular Diagram component | Syncfusion®
+description: Learn here all about Labels in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Node Labels
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Swim lane in symbol palette Angular Diagram component | Syncfusion
-description: Learn here all about Swim lane in Syncfusion Angular Diagram component of Syncfusion Essential JS 2 and more.
+title: Swim lane in symbol palette Angular Diagram component | Syncfusion®
+description: Learn here all about Swim lane in Syncfusion® Angular Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Swim lane in symbol palette
 documentation: ug
