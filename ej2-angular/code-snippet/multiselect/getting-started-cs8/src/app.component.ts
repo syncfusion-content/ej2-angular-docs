@@ -44,7 +44,7 @@ export class AppComponent {
     public onFiltering: EmitType<FilteringEventArgs> = (e: FilteringEventArgs) => {
 
         e.preventDefaultAction = true; // Prevent the default built-in filter.
-
+        
         // load overall data when search key empty.
         if(e.text == '') e.updateData(this.searchData);
         else{

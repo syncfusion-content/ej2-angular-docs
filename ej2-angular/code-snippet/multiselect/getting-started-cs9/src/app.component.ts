@@ -42,7 +42,7 @@ export class AppComponent {
     public sorting: string = 'Ascending';
     //Bind the filter event
     public onFiltering: EmitType<FilteringEventArgs> = (e: FilteringEventArgs) => {
-
+        
         e.preventDefaultAction = true; // Prevent the default built-in filter.
 
         // load overall data when search key empty.
