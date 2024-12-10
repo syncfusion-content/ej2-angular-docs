@@ -3,7 +3,7 @@ layout: post
 title: JWT Authentication in Angular Uploader component | Syncfusion
 description: Learn here all about File Upload Using JWT Authentication in Syncfusion Angular Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: JWT Authentication
+control: JWT Authentication  
 documentation: ug
 domainurl: ##DomainURL##
 ---
