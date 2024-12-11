@@ -11,33 +11,16 @@ import { Component, HostListener, ViewChild } from '@angular/core';
     standalone: true,
     selector: 'app-root',
     // specifies the template string for the Chat UI component
-    template: `<div ejs-chatui id='chatUI' [messages]="messages" [user]="currentUserModel"></div>`
+    template: `<div id="chatui" ejs-chatui [user]="currentUserModel">
+        <e-messages>
+            <e-message text="Want to get coffee tomorrow?" [author]="currentUserModel" id="msg1"></e-message>
+            <e-message text="Sure! What time?" [author]="michaleUserModel" id="msg2"></e-message>
+            <e-message text="How about 10 AM?" [author]="currentUserModel" id="msg3"></e-message>
+        </e-messages>
+    </div>`
 })
 
 export class AppComponent {
-    public currentUserModel = {
-        user: 'Albert',
-        id: 'user1'
-    };
-    public michaleUserModel = {
-        user: 'Michale Suyama',
-        id: 'user2'
-    };
-    public messages = [
-        {
-            id: "msg1",
-            author: this.currentUserModel,
-            text: 'Want to get coffee tomorrow?'
-        },
-        {
-            id: "msg2",
-            author: this.michaleUserModel,
-            text: 'Sure! What time?'
-        },
-        {
-            id: "msg3",
-            author: this.currentUserModel,
-            text: 'How about 10 AM?'
-        }
-    ];
+    public currentUserModel: UserModel = { user: 'Albert', id: 'user1' };
+    public michaleUserModel: UserModel = { user: 'Michale Suyama', id: 'user2' };
 }

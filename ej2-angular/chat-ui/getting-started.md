@@ -119,11 +119,11 @@ This can be referenced in [src/styles.css] using following code.
 
 ```css
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import '../node_modules/@syncfusion/ej2-interactive-chat/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-interactive-chat/styles/material.css';
 ```
 
 ## Adding Chat UI component
@@ -166,7 +166,7 @@ The following example illustrates the output in your browser.
 
 ## Configure messages and user
 
-You can use the `messages` property to add messages and the `user` property to configure the current user for the chat.
+You can use the `<e-messages>` tag directive to group all the messages and `<e-message>` tag to define each message and the `user` property to configure the current user for the chat.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
