@@ -26,7 +26,7 @@ You can use the `timeBreakTemplate` property to customize the template, such as 
 
 ## Typing users template
 
-You can use the `typingUsersTemplate` property to customize the display of users currently typing in the chat. It allows for styling and positioning of the typing indicator, enhancing the user experience. The template context includes `Users`.
+You can use the `typingUsersTemplate` property to customize the display of users currently typing in the chat. It allows for styling and positioning of the typing indicator, enhancing the user experience. The template context includes `users`.
 
 ## Suggestion template
 

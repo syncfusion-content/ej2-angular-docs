@@ -19,10 +19,10 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y' [border]='border' name='USA' dashArray='2,5'></e-series>
-            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y1' [border]='border' name='UK' dashArray='2,5'></e-series>
-            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y2' [border]='border' name='Canada' dashArray='2,5'></e-series>
-            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y3' [border]='border' name='China' dashArray='2,5'></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y' [border]='border' name='USA' ></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y1' [border]='border' name='UK' ></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y2' [border]='border' name='Canada' ></e-series>
+            <e-series [dataSource]='chartData' type='StackingArea100' xName='x' yName='y3' [border]='border' name='China' ></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -36,7 +36,8 @@ export class AppComponent implements OnInit {
         this.chartData = stackedData;
         this.border = {
             width: 2.5,
-            color: 'white'
+            color: 'white',
+            dashArray: '2,5'
         }
         this.primaryXAxis = {
             valueType: 'DateTime'

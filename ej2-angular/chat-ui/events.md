@@ -16,10 +16,40 @@ This section describes the Chat UI events that will be triggered when appropriat
 
 The Chat UI component triggers the `created` event when the component rendering is completed.
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/events/created/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/events/created/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Sending message
 
 The `messageSend` event is triggered before sending a message in the Chat UI component.
 
-## User Typing
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/events/messagesend/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/events/messagesend/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+## User typing
 
 The `userTyping` event is triggered when the user is typing a message in the Chat UI component.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/events/usertyping/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/events/usertyping/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}

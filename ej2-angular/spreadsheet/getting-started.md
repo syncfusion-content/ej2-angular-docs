@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Spreadsheet component
 
-This section explains the steps to create a simple Spreadsheet control with basic features in an Angular environment.
+This section explains the steps to create a simple Spreadsheet component with basic features in an Angular environment.
 
 To get start quickly with Angular Spreadsheet using CLI, you can check on this video:
 
@@ -18,7 +18,7 @@ To get start quickly with Angular Spreadsheet using CLI, you can check on this v
 
 ## Dependencies
 
-The following list of dependencies are required to use the Spreadsheet control in your application.
+The following list of dependencies are required to use the Spreadsheet component in your application.
 
 ```js
   |-- @syncfusion/ej2-angular-spreadsheet
@@ -32,8 +32,7 @@ The following list of dependencies are required to use the Spreadsheet control i
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI use the following command.
+You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
 ```bash
 npm install -g @angular/cli
@@ -45,6 +44,25 @@ Start a new Angular application using below Angular CLI command.
 
 ```bash
 ng new my-app
+```
+
+This command prompts you to configure settings such as whether to include Angular routing and which stylesheet format to use.
+
+```bash
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
+```
+
+By default, it will create a CSS-based application.
+
+Navigate to the created application folder:
+
+```bash
 cd my-app
 ```
 
@@ -82,25 +100,13 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 @syncfusion/ej2-angular-spreadsheet:"20.2.38-ngcc"
 ```
 
+The above command does the following configuration to your Angular app,
+ 
+ * Adds `@syncfusion/ej2-angular-spreadsheet` package and its peer dependencies to your `package.json` file.
+ * Imports the `SpreadsheetAllModule` in your application module `app.module.ts`.
+ * Registers the Syncfusion UI default theme (material) in the `angular.json` file.
+
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
-
-## Registering Spreadsheet Module
-
-Import Spreadsheet module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-spreadsheet` [src/app/app.module.ts].
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet';
-import { AppComponent } from './app.component';
-
-@NgModule({
-  imports:      [ BrowserModule, SpreadsheetAllModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
 
 ## Adding CSS reference
 
@@ -120,16 +126,20 @@ This can be referenced in `[src/styles.css]` using following code.
 @import '../node_modules/@syncfusion/ej2-grids/styles/material.css';
 ```
 
-## Add Spreadsheet control
+## Add Spreadsheet component
 
 Modify the template in [src/app/app.component.ts] file to render the spreadsheet component. Add the Angular Spreadsheet by using `<ejs-spreadsheet>` selector in template section of the `app.component.ts` file.
 
 ```typescript
 import { Component } from '@angular/core';
+import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
 
 @Component({
+  imports: [
+        SpreadsheetAllModule
+    ],
   selector: 'app-root',
-  // specifies the template string for the Spreadsheet control
+  // specifies the template string for the Spreadsheet component
   template: `<ejs-spreadsheet> </ejs-spreadsheet>`
 })
 export class AppComponent { }

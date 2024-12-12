@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChatUIModule, UserModel } from '@syncfusion/ej2-angular-interactive-chat';
 
-import { Component, HostListener, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -13,9 +13,9 @@ import { Component, HostListener, ViewChild } from '@angular/core';
     // specifies the template string for the Chat UI component
     template: `<div id="chatui" ejs-chatui [user]="currentUserModel">
         <e-messages>
-            <e-message text="Want to get coffee tomorrow?" [author]="currentUserModel" id="msg1"></e-message>
-            <e-message text="Sure! What time?" [author]="michaleUserModel" id="msg2"></e-message>
-            <e-message text="How about 10 AM?" [author]="currentUserModel" id="msg3"></e-message>
+            <e-message text="Hi Michale, are we on track for the deadline?" [author]="currentUserModel"></e-message>
+            <e-message text="Yes, the design phase is complete." [author]="michaleUserModel"></e-message>
+            <e-message text="I’ll review it and send feedback by today." [author]="currentUserModel"></e-message>
         </e-messages>
     </div>`
 })

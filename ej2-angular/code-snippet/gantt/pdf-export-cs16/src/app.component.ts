@@ -27,8 +27,8 @@ export class AppComponent{
     public taskSettings?: object;
     public toolbar?: ToolbarItem[];
     @ViewChild('gantt', {static: true})
-    public editSettings?: EditSettingsModel;
     public ganttChart?: GanttComponent;
+    public editSettings?: EditSettingsModel;
     public columns?: object[];
     public gridLines?: string;
     public ngOnInit(): void {

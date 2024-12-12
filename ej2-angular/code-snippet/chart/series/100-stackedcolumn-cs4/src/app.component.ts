@@ -20,10 +20,10 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y' name='UK' [dashArray]='2,5' [border]='border'></e-series>
-            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y1' name='Germany' [dashArray]='2,5' [border]='border1'></e-series>
-            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y2' name='France' [dashArray]='2,5' [border]='border2'></e-series>
-            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y3' name='Italy' [dashArray]='2,5' [border]='border3'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y' name='UK' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y1' name='Germany' [border]='border1'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y2' name='France' [border]='border2'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn100' xName='x' yName='y3' name='Italy' [border]='border3'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -43,10 +43,10 @@ export class AppComponent implements OnInit {
             interval: 1,
             valueType: 'Category'
         };
-        this.border = {width: 1.5, color: 'blue'};
-        this.border1 = {width: 1.5, color: 'green'};
-        this.border2 = {width: 1.5, color: 'orange'};
-        this.border3 = {width: 1.5, color: 'red'};
+        this.border = {width: 1.5, color: 'blue', dashArray: '2,5'};
+        this.border1 = {width: 1.5, color: 'green', dashArray: '2,5'};
+        this.border2 = {width: 1.5, color: 'orange', dashArray: '2,5'};
+        this.border3 = {width: 1.5, color: 'red', dashArray: '2,5'};
         this.title = 'Gross Domestic Product Growth';
     }
 

@@ -115,30 +115,9 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesM
   
 {% previewsample "page.domainurl/samples/chart/series/area-cs13" %}
 
-**Dash array**
-
-The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#dasharray) property determines the pattern of dashes and gaps in the series.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chart/series/area-cs14/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chart/series/area-cs14/src/main.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/chart/series/area-cs14/src/datasource.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/chart/series/area-cs14" %}
-
 ## Area border
 
-Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#border) property to customize the width and color of the series border.
-
+Use the [`border`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#border) property to customize the width, color and dasharray of the series border.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

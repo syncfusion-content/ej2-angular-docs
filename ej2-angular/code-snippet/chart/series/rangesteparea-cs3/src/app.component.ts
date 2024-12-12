@@ -19,7 +19,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
        <e-series-collection>
-            <e-series [dataSource]='chartData' type='RangeStepArea' xName='x' high='high' low='low' name='India' [border]='border' [dashArray]= '5'></e-series>
+            <e-series [dataSource]='chartData' type='RangeStepArea' xName='x' high='high' low='low' name='India' [border]='border'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
             majorTickLines: { width: 0 }
         };
         this.title = 'Monthly Temperature Range'
-        this.border= { width: 2, color: '#ff4251' }
+        this.border= { width: 2, color: '#ff4251', dashArray: '5' }
     }
 }
 
