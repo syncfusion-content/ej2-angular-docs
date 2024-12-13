@@ -11,16 +11,6 @@
   width: 30%;
 }
 
-#target {
-  border: 1px dashed;
-  height: 150px;
-  padding: 10px;
-  position: relative;
-  text-align: justify;
-  color: gray;
-  user-select: none;
-}
-
 .e-data {
   border: 1px solid rgba(0, 0, 0, 0.87);
   padding: 8px;

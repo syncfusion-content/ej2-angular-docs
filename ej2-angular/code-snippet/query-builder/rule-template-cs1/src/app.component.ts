@@ -4,9 +4,7 @@ import { QueryBuilderModule } from '@syncfusion/ej2-angular-querybuilder'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 import { SliderModule } from '@syncfusion/ej2-angular-inputs'
 import { enableRipple } from '@syncfusion/ej2-base'
-
-
-
+import { CommonModule } from '@angular/common';
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { QueryBuilderComponent } from '@syncfusion/ej2-angular-querybuilder';
 import { ActionEventArgs, RuleModel } from '@syncfusion/ej2-querybuilder';
@@ -16,7 +14,7 @@ import { employeeData } from './datasource';
 
 @Component({
 imports: [
-        
+  CommonModule,
         QueryBuilderModule,
 		SliderModule,
 		DropDownListModule

@@ -5,11 +5,7 @@ import { SignatureModule } from '@syncfusion/ej2-angular-inputs'
 import { SplitButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { enableRipple } from '@syncfusion/ej2-base'
-
-
-
 import { Component, ViewChild } from '@angular/core';
-import { enableRipple } from '@syncfusion/ej2-base';
 import { SignatureComponent } from '@syncfusion/ej2-angular-inputs';
 import { ItemModel, MenuEventArgs } from '@syncfusion/ej2-angular-splitbuttons';
 import { Signature, SignatureFileType } from '@syncfusion/ej2-inputs';

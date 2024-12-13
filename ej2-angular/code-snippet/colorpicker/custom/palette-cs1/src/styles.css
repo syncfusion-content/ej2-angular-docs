@@ -13,3 +13,10 @@
 .e-section-control {
 	margin-top: 150px;
 }
+
+#preview {
+	border: 1px solid;
+	background-color: #ba68c8;
+	height: 40px;
+	width: 100%;
+}

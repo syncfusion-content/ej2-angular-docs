@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Setting width
 
-You can use the [width](../api/ai-assist-view#width) property to set the width of the AI AssistView. The default value is `100%`.
+You can use the [width](../api/ai-assistview#width) property to set the width of the AI AssistView. The default value is `100%`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ You can use the [width](../api/ai-assist-view#width) property to set the width o
 
 ## Setting height
 
-You can use the [height](../api/ai-assist-view#height) property to set the height of the AI AssistView. The default value is `100%`.
+You can use the [height](../api/ai-assistview#height) property to set the height of the AI AssistView. The default value is `100%`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +44,7 @@ You can use the [height](../api/ai-assist-view#height) property to set the heigh
 
 ## Cssclass
 
-You can customize the appearance of the AI AssistView component by using the [cssClass](../api/ai-assist-view#cssclass) property.
+You can customize the appearance of the AI AssistView component by using the [cssClass](../api/ai-assistview#cssclass) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

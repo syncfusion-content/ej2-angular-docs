@@ -19,8 +19,8 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StackingStepArea' xName='x' yName='y' name='USA' dashArray='2,5' [border]='border'></e-series>
-            <e-series [dataSource]='chartData' type='StackingStepArea' xName='x' yName='y1' name='UK' dashArray='2,5' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='StackingStepArea' xName='x' yName='y' name='USA' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='StackingStepArea' xName='x' yName='y1' name='UK' [border]='border'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
         this.primaryXAxis = {
             valueType: 'DateTime'
         };
-        this.border={ width: 2, color: 'red' };
+        this.border={ width: 2, color: 'red', dashArray: '2,5' };
         this.title = 'Annual Temperature Comparison';
     }
 

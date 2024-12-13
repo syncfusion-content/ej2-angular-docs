@@ -4,11 +4,7 @@ import { FormsModule } from '@angular/forms'
 import { SignatureModule } from '@syncfusion/ej2-angular-inputs'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { enableRipple } from '@syncfusion/ej2-base'
-
-
-
 import { Component, ViewChild } from '@angular/core';
-import { enableRipple } from '@syncfusion/ej2-base';
 import { SignatureComponent } from '@syncfusion/ej2-angular-inputs';
 
 enableRipple(true);

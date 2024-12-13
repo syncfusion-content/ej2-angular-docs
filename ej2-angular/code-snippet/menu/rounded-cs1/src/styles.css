@@ -15,3 +15,14 @@
 .e-section-control {
 	margin-top: 150px;
 }
+
+/* Styles to achieve rounder corner in menu */
+.e-menu-wrapper.e-rounded-menu:not(.e-menu-popup),
+.e-menu-wrapper.e-rounded-menu .e-menu {
+  border-radius: 20px;
+}
+
+/* Increased the menu component left and right padding for better rounded corner UI */
+.e-menu-wrapper.e-rounded-menu ul.e-menu {
+  padding: 0 14px;
+}

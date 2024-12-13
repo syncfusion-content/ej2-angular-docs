@@ -37,9 +37,9 @@ export class AppComponent implements OnInit {
             valueType: 'Category',
             title: 'Months'
         };
-        this.border = { width: 2, color: '#ff4251' };
-        this.border1 = { width: 2, color: '#4C4C4C' };
-        this.border2 = { width: 2, color: '#794F1B' };
+        this.border = { width: 2, color: '#ff4251', dashArray: '2,5' };
+        this.border1 = { width: 2, color: '#4C4C4C', dashArray: '2,5' };
+        this.border2 = { width: 2, color: '#794F1B', dashArray: '2,5' };
         this.title = 'Sales Comparison';    
     }
 

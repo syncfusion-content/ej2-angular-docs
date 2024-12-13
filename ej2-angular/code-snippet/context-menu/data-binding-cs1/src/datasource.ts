@@ -1,9 +1,9 @@
 export let data: Record[] = [
-    { id: 1, parentId: null, text: 'View' },
-    { id: 2, parentId: null, text: 'Sort by' },
-    { id: 3, parentId: null, text: 'New' },
-    { id: 4, parentId: null, text: 'Display Settings' },
-    { id: 5, parentId: null, text: 'Personalize' },
+    { id: 1, parentId: 0, text: 'View' },
+    { id: 2, parentId: 0, text: 'Sort by' },
+    { id: 3, parentId: 0, text: 'New' },
+    { id: 4, parentId: 0, text: 'Display Settings' },
+    { id: 5, parentId: 0, text: 'Personalize' },
     //first level child
     { id: 6, parentId: 1, text: 'Large Icons' },
     { id: 7, parentId: 1, text: 'Medium Icons' },
