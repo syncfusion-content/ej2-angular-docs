@@ -39,6 +39,10 @@ The steps to perform two-way binding.
 {% include code-snippet/colorpicker/ng-model-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="template.html" %}
+{% include code-snippet/colorpicker/ng-model-cs1/src/template.html %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/colorpicker/ng-model-cs1/src/main.ts %}
 {% endhighlight %}

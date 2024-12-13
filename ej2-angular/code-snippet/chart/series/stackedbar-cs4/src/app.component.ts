@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
             title: 'Months'
         };
         this.title = 'Sales Comparison';    
-        this.border = { width: 1.5, color: 'red' };
+        this.border = { width: 1.5, color: 'red', dashArray: '2,5' };
     }
 
 }

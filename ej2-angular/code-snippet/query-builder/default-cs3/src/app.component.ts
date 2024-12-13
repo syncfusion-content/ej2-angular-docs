@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core'
+import { NgModule, OnInit } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { QueryBuilderModule } from '@syncfusion/ej2-angular-querybuilder'
 import { enableRipple } from '@syncfusion/ej2-base'
@@ -32,7 +32,7 @@ standalone: true,
 })
 
 export class AppComponent implements OnInit {
-
+    public importRules: any = [];
     public data?: DataManager;
     public values: string[] = ['Mr.', 'Mrs.'];
     ngOnInit(): void {

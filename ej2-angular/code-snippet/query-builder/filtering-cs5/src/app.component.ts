@@ -2,17 +2,16 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { QueryBuilderModule } from '@syncfusion/ej2-angular-querybuilder'
 import { enableRipple } from '@syncfusion/ej2-base'
-
-
-
+import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { RuleModel, QueryBuilderComponent } from '@syncfusion/ej2-angular-querybuilder';
 import { employeeData  } from './datasource';
 import { DataManager, Query } from '@syncfusion/ej2-data';
+
 @Component({
 imports: [
         
-        QueryBuilderModule,
+        QueryBuilderModule, CommonModule
     ],
 
 

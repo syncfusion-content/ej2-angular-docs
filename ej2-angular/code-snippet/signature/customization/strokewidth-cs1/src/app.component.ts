@@ -3,11 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { SignatureModule } from '@syncfusion/ej2-angular-inputs'
 import { enableRipple } from '@syncfusion/ej2-base'
-
-
-
 import { Component } from '@angular/core';
-import { enableRipple } from '@syncfusion/ej2-base';
 import { SignatureComponent } from '@syncfusion/ej2-angular-inputs';
 
 enableRipple(true);

@@ -32,11 +32,11 @@ The accessibility compliance for the Kanban component is outlined below.
         margin: 0.5em 0;
     }
 </style>
-![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) - All features of the component meet the requirement.
+![Yes](images/full.png) - All features of the component meet the requirement.
 
-![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png)  - Some features of the component do not meet the requirement.
+![Intermediate](images/partial.png)  - Some features of the component do not meet the requirement.
 
-![No](https://cdn.syncfusion.com/content/images/documentation/not-supported.png)  - The component does not meet the requirement.
+![No](images/not-supported.png)  - The component does not meet the requirement.
 
 ## WAI-ARIA attributes
 
@@ -80,7 +80,7 @@ The Kanban component's accessibility levels are ensured through an [accessibilit
 
 The accessibility compliance of the Kanban component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/kanban.html) in a new window to evaluate the accessibility of the Kanban component with accessibility tools.
 
-{% previewsample "<https://ej2.syncfusion.com/accessibility/kanban.html>" %}
+{% previewsample "https://ej2.syncfusion.com/accessibility/kanban.html" %}
 
 ## See also
 

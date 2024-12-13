@@ -1,24 +1,18 @@
-import { NgModule } from '@angular/core'
+import { NgModule, Component, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { ColorPickerModule, SignatureModule } from '@syncfusion/ej2-angular-inputs'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 import { SplitButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
 import { ToolbarModule } from '@syncfusion/ej2-angular-navigations'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { enableRipple } from '@syncfusion/ej2-base'
-
-
-
-import { Component, ViewChild } from '@angular/core';
-import { addClass, createElement, getComponent } from '@syncfusion/ej2-base';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { enableRipple, addClass, createElement, getComponent } from '@syncfusion/ej2-base';
 import { SignatureComponent } from '@syncfusion/ej2-angular-inputs';
 import { SplitButton, ItemModel, MenuEventArgs, DropDownButton } from '@syncfusion/ej2-splitbuttons';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations';
 import { Button, ChangeEventArgs, CheckBox } from '@syncfusion/ej2-buttons';
 import { ColorPicker, ColorPickerEventArgs, NumericTextBox, PaletteTileEventArgs, Signature, SignatureFileType } from '@syncfusion/ej2-inputs';
 import { DropDownList } from '@syncfusion/ej2-angular-dropdowns';
-import { enableRipple } from '@syncfusion/ej2-base';
 
 enableRipple(true);
 

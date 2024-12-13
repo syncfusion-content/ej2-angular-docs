@@ -90,6 +90,10 @@ The value template for a particular column can be specified using the content of
 {% include code-snippet/query-builder/template-cs1/src/app.component.ts %}
 {% endhighlight %}
 
+{% highlight ts tabtitle="template-driven.html" %}
+{% include code-snippet/query-builder/template-cs1/src/template-driven.html %}
+{% endhighlight %}
+
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/template-cs1/src/main.ts %}
 {% endhighlight %}
@@ -113,6 +117,7 @@ In the following sample, dropdown and slider are used as the custom component an
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/query-builder/rule-template-cs1/src/main.ts %}
 {% endhighlight %}
+
 {% highlight ts tabtitle="template-driven.html" %}
 {% include code-snippet/query-builder/rule-template-cs1/src/template-driven.html %}
 {% endhighlight %}

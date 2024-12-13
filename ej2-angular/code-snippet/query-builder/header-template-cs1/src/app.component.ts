@@ -4,9 +4,7 @@ import { QueryBuilderModule } from '@syncfusion/ej2-angular-querybuilder'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
 import { DropDownButtonModule } from '@syncfusion/ej2-angular-splitbuttons'
-
-
-
+import { CommonModule } from '@angular/common';
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { QueryBuilderComponent } from '@syncfusion/ej2-angular-querybuilder';
 import { ActionEventArgs, RuleModel } from '@syncfusion/ej2-querybuilder';
@@ -15,7 +13,7 @@ import { closest } from '@syncfusion/ej2-base';
 
 @Component({
 imports: [
-    
+    CommonModule,
 	  QueryBuilderModule,
     CheckBoxModule,
     DropDownListModule,

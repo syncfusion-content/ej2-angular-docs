@@ -154,6 +154,22 @@ The latitude and longitude values are used to determine the location of each mar
   
 {% previewsample "page.domainurl/samples/maps/default-map/datetime-cs69" %}
 
+### Setting different sizes for markers individually
+
+The size of the markers in a marker group can be customized using the `widthValuePath` and `heightValuePath` properties, which allow the user to change the width and height of the markers based on values from the given data source. Bind the data source to the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/#datasource) property of the `markerSettings`, and specify the field names containing the width and height values in the data source for the `widthValuePath` and `heightValuePath` properties.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/maps/default-map/marker-size-customization-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/maps/default-map/marker-size-customization-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/maps/default-map/marker-size-customization-cs1" %}
+
 ## Repositioning the marker using drag and drop
 
 The markers on the map can be dragged and dropped to change their position. To enable marker drag and drop, set the [enableDrag](https://helpej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/#enabledrag) property to **true** in the [markerSettings](https://helpej2.syncfusion.com/angular/documentation/api/maps/markerSettingsModel/) property.
@@ -215,9 +231,9 @@ The Maps can be initially scaled to the center value based on the marker distanc
 
 ## Marker clustering
 
-Maps provide support to cluster the markers when they overlap each other. The number on a cluster indicates how many overlapped markers it contains. If zooming is performed on any of the cluster locations in Maps, the number on the cluster will decrease, and the individual markers will be seen on the map. When zooming out, the overlapping marker will increase. So that it can cluster again and increase the count over the cluster.
+Maps support hiding and clustering markers when they overlap. The number on a cluster indicates how many overlapping markers it contains. When zooming into any cluster location on the map, the number on the cluster decreases, and individual markers become visible. When zooming out, the overlapping markers increase, causing them to cluster again, which increases the count on the cluster.
 
-To enable clustering in markers, set the [`allowClustering`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerClusterSettingsModel/#allowclustering) property of [`markerClusterSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerClusterSettingsModel) as **true** and customization of clustering can be done with the [`markerClusterSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerClusterSettingsModel).
+To enable clustering for markers within a layer, set the [allowClustering](https://ej2.syncfusion.com/angular/documentation/api/maps/markerClusterSettingsModel/#allowclustering) property of [markerClusterSettings](https://ej2.syncfusion.com/angular/documentation/api/maps/markerClusterSettingsModel) in the [layers](https://ej2.syncfusion.com/angular/documentation/api/maps/#layers) to **true**. Customization of clustering can be done using the `markerClusterSettings` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -231,7 +247,7 @@ To enable clustering in markers, set the [`allowClustering`](https://ej2.syncfus
   
 {% previewsample "page.domainurl/samples/maps/default-map/datetime-cs71" %}
 
-## Customization of marker cluster
+### Customization of marker cluster
 
 The following properties are available to customize the marker clustering in the Maps component.
 
@@ -259,7 +275,7 @@ The following properties are available to customize the marker clustering in the
   
 {% previewsample "page.domainurl/samples/maps/default-map/datetime-cs72" %}
 
-## Expanding the marker cluster
+### Expanding the marker cluster
 
 The cluster is formed by grouping an identical and non-identical marker from the surrounding area. By clicking on the cluster and setting the [`allowClusterExpand`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerClusterSettingsModel/#allowclusterexpand) property in [`markerClusterSettings`](https://ej2.syncfusion.com/angular/documentation/api/maps/markerClusterSettingsModel) as **true** to expand the identical markers. If zooming is performed in any of the locations of the cluster, the number on the cluster will decrease and the overlapping marker will be split into an individual marker on the map. When performing zoom out, it will increase the marker count and then cluster it again.
 
@@ -274,6 +290,24 @@ The cluster is formed by grouping an identical and non-identical marker from the
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/maps/default-map/datetime-cs73" %}
+
+### Clustering markers within each marker group
+
+Marker clustering can be enabled for each marker group in the map by using the `clusterSettings` property within the `markerSettings` property in the [layers](https://ej2.syncfusion.com/angular/documentation/api/maps/#layers). This allows for individual customization of clusters for each marker group which group markers that are located near each other to reduce clutter and improve readability. When the `allowClustering` property is set to **true**, the markers within each group are clustered and visually represented as separate clusters. As users zoom in, the clusters expand to reveal individual markers, enabling more detailed exploration. Clusters can also be expanded manually by setting the `allowClusterExpand` property to **true**. The appearance of the clusters and their expansion behavior can be customized using the `clusterSettings` property, similar to the `markerClusterSettings` property, as explained in the sections above.
+
+>When the `clusterSettings` property is enabled for an individual marker group, the `markerClusterSettings` property within the layers becomes ineffective.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/maps/default-map/marker-clusters-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/maps/default-map/marker-clusters-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/maps/default-map/marker-clusters-cs1" %}
 
 ## Tooltip for marker
 

@@ -5,11 +5,7 @@ import { SignatureModule } from '@syncfusion/ej2-angular-inputs'
 import { DialogModule } from '@syncfusion/ej2-angular-popups'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { enableRipple } from '@syncfusion/ej2-base'
-
-
-
 import { Component, ViewChild } from '@angular/core';
-import { enableRipple } from '@syncfusion/ej2-base';
 import { SignatureComponent } from '@syncfusion/ej2-angular-inputs';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 

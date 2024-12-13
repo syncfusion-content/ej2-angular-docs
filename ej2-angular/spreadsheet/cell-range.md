@@ -137,6 +137,21 @@ You can clear the highlighted invalid data by using the following ways,
   
 {% previewsample "page.domainurl/samples/spreadsheet/data-validation-cs1" %}
 
+### Custom Data validation
+
+The Spreadsheet supports custom data validation, allowing users to define their own validation rules for specific cells or ranges. This feature enables you to set conditions that the entered data must meet, making it particularly useful when predefined validation options, such as numbers, dates, or lists, are insufficient.
+
+With custom validation, you can enforce rules using logical expressions or formulas, ensuring that only valid data is entered into the Spreadsheet.
+
+For example, consider a scenario where you want to ensure that a cell contains a number between 10 and 100. To achieve this, define a validation rule using a formula that checks if the entered value is greater than 10 and less than 100. The formula for this validation is =AND(A1>10, A1<100), where A1 refers to the cell being validated.
+
+When this rule is applied, the Spreadsheet evaluates the entered value against the formula. If a user enters a value outside the specified range, an alert notifies them of the invalid input. This helps users correct errors efficiently and ensures that only desired values are accepted.
+
+You can apply custom data validation using two methods.
+
+* The first is through the Data Validation dialog in the Ribbon toolbar. Navigate to the Data tab, select the Data Validation option, and choose the Custom type from the Allow dropdown menu.
+* The second method is programmatically, using the [`addDataValidation()`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#adddatavalidation) method, which allows developers to set custom rules dynamically via code.
+
 ### Limitations of Data validation
 
 The following features have some limitations in Data Validation:

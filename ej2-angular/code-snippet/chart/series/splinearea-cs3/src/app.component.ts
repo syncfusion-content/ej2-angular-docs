@@ -20,7 +20,7 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='SplineArea' xName='x' yName='y' name='London' width=2 [marker]='marker' dashArray='5,5' [border]='border'></e-series>
+            <e-series [dataSource]='chartData' type='SplineArea' xName='x' yName='y' name='London' width=2 [marker]='marker' [border]='border'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
            valueType: 'Category'
         };
         this.border = {
-            width: 2, color: 'red'
+            width: 2, color: 'red', dashArray='5,5'
         };
         this.marker = { visible: false, width: 10, height: 10 };
         this.title = 'Climate Graph-2012';
