@@ -13,3 +13,9 @@
 .e-section-control {
 	margin-top: 150px;
 }
+
+.e-btn-icon.e-dropdownbtn-preview {
+	background-color: #008000;
+	height: 18px;
+	width: 18px;
+}

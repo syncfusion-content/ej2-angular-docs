@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
         this.primaryXAxis = {
             valueType: 'Category',
             };
-        this.border = { width: 2, color: 'green' }
+        this.border = { width: 2, color: 'green', dashArray: '2,5' }
         this.title = 'Company Revenue and Profit';
         this.marker = { visible: true }
 

@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     primaryXAxis: any;
     primaryYAxis: any;
     ngOnInit(): void {
-        this.border ={ width: 2, color: '#962D18' };
+        this.border ={ width: 2, color: '#962D18', dashArray: '2,5' };
         this.chartData = areaData;
         this.title = 'Average Sales Comparison';
     }

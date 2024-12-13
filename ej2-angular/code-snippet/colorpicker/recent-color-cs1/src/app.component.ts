@@ -18,7 +18,7 @@ standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <h4>Choose Color</h4>
-               <ejs-input ejs-colorpicker type="color" id="element" [showRecentColors]="true" /></div>`
+               <ejs-input ejs-colorpicker type="color" id="element" [showRecentColors]="true" mode="Palette" /></div>`
 })
 
 export class AppComponent { }

@@ -31,7 +31,7 @@ export class AppComponent {
     public menuItems: MenuItemModel[] = [
         {
             id: 'settingIcon',
-            iconCss: 'em-icons e-file',
+            iconCss: 'e-icons e-settings',
             items: [
                 { text: 'Open',
                   items: [

@@ -10,13 +10,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextEditorComponent } from '@syncfusion/ej2-angular-richtexteditor';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { NgIf } from '@angular/common';
 @Component({
 imports: [
         
         RichTextEditorAllModule,
         FormsModule,
 		ButtonModule,
-        ReactiveFormsModule
+        ReactiveFormsModule, NgIf
     ],
 
 
