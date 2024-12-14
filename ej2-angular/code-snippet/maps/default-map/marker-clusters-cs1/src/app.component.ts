@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { MapsModule } from '@syncfusion/ej2-angular-maps'
-import { MarkerService, MapsTooltipService, ZoomService } from '@syncfusion/ej2-angular-maps'
+import { MapsModule } from '@syncfusion/ej2-angular-maps';
+import { MarkerService, MapsTooltipService, ZoomService } from '@syncfusion/ej2-angular-maps';
 import { Component, OnInit  } from '@angular/core';
 import { world_map } from './world-map';
 @Component({
@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
                         },
                         shape: 'Image',
                         height: 40, width: 40,
-                        imageUrl: './cluster-france.svg'
+                        imageUrl: 'https://ej2.syncfusion.com/angular/demos/assets/maps/images/cluster-france.svg'
                     },
                     visible: true,
                     dataSource: [
@@ -85,7 +85,7 @@ export class AppComponent implements OnInit {
                             color: 'white',
                             size: '10px'
                         },
-                        imageUrl: './cluster-usa.svg'
+                        imageUrl: 'https://ej2.syncfusion.com/angular/demos/assets/maps/images/cluster-usa.svg'
                     },
                     visible: true,
                     dataSource: [
@@ -121,7 +121,7 @@ export class AppComponent implements OnInit {
                             color: 'white',
                             size: '10px'
                         },
-                        imageUrl: './cluster-india.svg'
+                        imageUrl: 'https://ej2.syncfusion.com/angular/demos/assets/maps/images/cluster-india.svg'
                     },
                     visible: true,
                     dataSource: [

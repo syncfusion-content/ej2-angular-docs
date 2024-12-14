@@ -329,6 +329,77 @@ The following code snippet demonstrates how to configure the deserialization opt
 
 {% previewsample "page.domainurl/samples/spreadsheet/open-from-json" %}
 
+### Chunk response processing
+
+When opening large Excel files with many features and data, the server response can become very large. This might cause memory issues or connection problems during data transmission. The `Chunk Response Processing` feature solves this by dividing the server response into smaller parts, called chunks, and sending them to the client in parallel. The client receives these chunks and combines them to load the Excel data smoothly into the spreadsheet.
+
+You can enable this feature by setting the [`chunkSize`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/openSettings/#chunksize) property in the [`openSettings`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#opensettings) object. Set the [`chunkSize`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/openSettings/#chunksize) to a value greater than 0 (in bytes). The [`chunkSize`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/openSettings/#chunksize) defines how large each chunk will be. Make sure your server supports chunked responses to use this feature effectively.
+
+> This feature reduces memory usage on both the server and client, ensuring that resources are managed efficiently during data transmission. By sending smaller parts of data, it prevents connection issues that could occur with large payloads, making the transmission process more reliable. Additionally, it allows large Excel files to be loaded smoothly into the spreadsheet, providing a seamless user experience even with extensive data.
+
+The following code example demonstrates the client-side and server-side configuration required for handling chunk-based responses when opening an Excel file.
+
+**Client Side**:
+
+```typescript
+import { OpenSettingsModel, SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
+import { Component, ViewChild } from '@angular/core';
+import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
+
+@Component({
+  imports: [
+    SpreadsheetAllModule
+  ],
+  standalone: true,
+  selector: 'app-container',
+  template: `<ejs-spreadsheet #spreadsheet [openUrl]="openUrl" [openSettings]="openSettings"></ejs-spreadsheet>`
+})
+export class AppComponent {
+  @ViewChild('spreadsheet') public spreadsheetObj?: SpreadsheetComponent;
+
+  public openSettings: OpenSettingsModel = {
+    // Specifies the size (in bytes) of each chunk for the server response when opening a document.
+    chunkSize: 1000000,
+    // Specifies the number of retry attempts for a failed server request when returning the opened file responses in chunks.
+    // This ensures reliable handling of temporary network or server disruptions during the chunked response process.
+    retryCount: 3,
+    // Specifies the delay (in milliseconds) before retrying a failed server request when returning the opened file responses in chunks.
+    // This ensures controlled retries in case of temporary network or server disruptions during the chunked response process.
+    retryAfterDelay: 500
+  }
+
+  public openUrl: string = "https://localhost:{{port_number}}/Home/Open";
+}
+```
+
+**Server Endpoint**:
+
+```csharp
+public IActionResult Open(IFormCollection openRequest)
+{
+    OpenRequest open = new OpenRequest();
+    if (openRequest.Files.Count > 0)
+    {
+        open.File = openRequest.Files[0];
+    }
+    Microsoft.Extensions.Primitives.StringValues chunkPayload;
+    if (openRequest.TryGetValue("chunkPayload", out chunkPayload))
+    {
+        // The chunk payload JSON data includes information essential for processing chunked responses.
+        open.ChunkPayload = chunkPayload;
+    }
+    var result = Workbook.Open(open, 150);
+    return Content(result);
+}
+```
+
+The [attachment](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WebApplication1_7-101537213) includes the server endpoint code for handling chunk-based open processing. After launching the server endpoint, update the `openUrl` property of the spreadsheet in the client-side sample with the server URL, as shown below.
+
+```typescript
+    // Specifies the service URL for processing the Excel file, converting it into a format suitable for loading in the spreadsheet.
+    <ejs-spreadsheet #spreadsheet openUrl="https://localhost:{{port_number}}/Home/Open"></ejs-spreadsheet>
+```
+
 ### Add custom header during open
 
 You can add your own custom header to the open action in the Spreadsheet. For processing the data, it has to be sent from server to client side and adding customer header can provide privacy to the data with the help of Authorization Token. Through the [`beforeOpen`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#beforeopen) event, the custom header can be added to the request during open action.

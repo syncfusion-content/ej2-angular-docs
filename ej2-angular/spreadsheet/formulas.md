@@ -121,6 +121,20 @@ In Automatic Mode, formulas are recalculated instantly whenever a dependent cell
 
 For example, consider a spreadsheet where cell `C1` contains the formula `=A1+B1`. When the value in `A1` or `B1` changes, `C1` updates immediately without requiring any user intervention. You can enable this mode by setting the [`calculationMode`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#calculationmode) property to `Automatic`.
 
+The following code example demonstrates how to set the Automatic calculation mode in a Spreadsheet.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/calculation-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/calculation-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/spreadsheet/calculation-cs1" %}
+
 ### Manual Mode
 
 In Manual Mode, formulas are not recalculated automatically when cell values are modified. Instead, recalculations must be triggered explicitly. This mode is ideal for scenarios where performance optimization is a priority, such as working with large datasets or computationally intensive formulas.
@@ -129,6 +143,20 @@ For example, imagine a spreadsheet where cell `C1` contains the formula `=A1+B1`
 
 * `Calculate Sheet`: Recalculates formulas for the active sheet only.
 * `Calculate Workbook`: Recalculates formulas across all sheets in the workbook.
+
+The following code example demonstrates how to set the Manual calculation mode in a Spreadsheet.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/calculation-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/calculation-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/spreadsheet/calculation-cs2" %}
 
 ## Supported Formulas
 

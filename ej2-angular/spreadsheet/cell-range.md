@@ -152,6 +152,20 @@ You can apply custom data validation using two methods.
 * The first is through the Data Validation dialog in the Ribbon toolbar. Navigate to the Data tab, select the Data Validation option, and choose the Custom type from the Allow dropdown menu.
 * The second method is programmatically, using the [`addDataValidation()`](https://ej2.syncfusion.com/angular/documentation/api/spreadsheet/#adddatavalidation) method, which allows developers to set custom rules dynamically via code.
 
+The following code example demonstrates how to add custom data validation with a formula in a Spreadsheet.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/spreadsheet/data-validation-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/spreadsheet/data-validation-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/spreadsheet/data-validation-cs2" %}
+
 ### Limitations of Data validation
 
 The following features have some limitations in Data Validation:
