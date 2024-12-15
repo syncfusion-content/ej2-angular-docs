@@ -20,10 +20,10 @@ standalone: true,
     selector: 'app-container',
     template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title'>
         <e-series-collection>
-            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y' name='UK' [border]='border'></e-series>
-            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y1' name='Germany' [border]='border1'></e-series>
-            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y2' name='France' [border]='border2'></e-series>
-            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y3' name='Italy' [border]='border3'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y' name='UK'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y1' name='Germany'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y2' name='France'></e-series>
+            <e-series [dataSource]='chartData' type='StackingColumn' xName='x' yName='y3' name='Italy'></e-series>
         </e-series-collection>
     </ejs-chart>`
 })
@@ -44,10 +44,10 @@ export class AppComponent implements OnInit {
             valueType: 'Category'
         };
         this.title = 'Mobile Game Market by Country';
-        this.border = { width: 2, color: '#ff4251'};
-        this.border1 = { width: 2, color: '#4C4C4C'};
-        this.border2 = { width: 2, color: '#794F1B'};
-        this.border3 = { width: 2, color: '#1a9a6f'};
+        this.border = { width: 2, color: '#ff4251', dashArray: '2,5'};
+        this.border1 = { width: 2, color: '#4C4C4C', dashArray: '2,5'};
+        this.border2 = { width: 2, color: '#794F1B', dashArray: '2,5'};
+        this.border3 = { width: 2, color: '#1a9a6f', dashArray: '2,5'};
     }
 
 }

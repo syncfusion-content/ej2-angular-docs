@@ -16,7 +16,7 @@ To known more about legend settings, you can check on this video:
 
 {% youtube "https://www.youtube.com/watch?v=jfQ-7ftHodI" %}
 
-## Position and Alignment
+## Position and alignment
 
 By using the [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#position) property, you can position the legend at left, right, top or bottom of the chart. The legend is positioned at the bottom of the chart, by default.
 
@@ -48,7 +48,7 @@ Custom position helps you to position the legend anywhere in the chart using x, 
 
 <!-- markdownlint-disable MD036 -->
 
-**Legend Reverse**
+**Legend reverse**
 
 <!-- markdownlint-disable MD036 -->
 
@@ -66,7 +66,7 @@ You can reverse the order of the legend items by using the [`reverse`](https://e
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs40" %}
 
-**Legend Alignment**
+**Legend alignment**
 
 <!-- markdownlint-disable MD036 -->
 
@@ -86,8 +86,7 @@ You can align the legend as `center`, `far` or `near` to the chart using [`align
 
 ## Customization
 
-To change the legend icon shape, you can use [`legendShape`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#legendshape) property
-in the [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/). By default legend icon shape is `seriesType`.
+To change the legend icon shape, you can use [`legendShape`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/#legendshape) property in the [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart/series/). By default legend icon shape is `seriesType`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -101,7 +100,7 @@ in the [`series`](https://ej2.syncfusion.com/angular/documentation/api/chart/se
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs42" %}
 
-### Legend Size
+### Legend size
 
 By default, legend takes 20% - 25% of the chart's height horizontally, when it is placed on top or bottom position and 20% - 25% of the chart's width vertically, when placed on left or right position of the chart. You can change this default legend size by using the [`width`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#height) property of the `legendSettings`.
 
@@ -117,7 +116,7 @@ By default, legend takes 20% - 25% of the chart's height horizontally, when it i
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs43" %}
 
-### Legend Item Size
+### Legend item size
 
 You can customize the size of the legend items by using the [`shapeHeight`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#shapeheight) and [`shapeWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#shapewidth) property.
 
@@ -133,7 +132,7 @@ You can customize the size of the legend items by using the [`shapeHeight`](http
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs44" %}
 
-### Paging for Legend
+### Paging for legend
 
 Paging will be enabled by default, when the legend items exceeds the legend bounds. You can view each legend items by navigating between the pages using navigation buttons.
 
@@ -149,7 +148,7 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
   
 {% previewsample "page.domainurl/samples/chart/axis/legend-cs1" %}
 
-### Legend Text Wrap
+### Legend text wrap
 
 When the legend text exceeds the container, the text can be wrapped by using [`textWrap`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#textwrap) Property. End user can also wrap the legend text based on the [`maximumLabelWidth`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#maximumlabelwidth) property.
 
@@ -181,7 +180,7 @@ You can set the legend label color based on series color by using chart's [loade
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs46" %}
 
-## Series Selection on Legend
+## Series selection on legend
 
 By default, legend click enables you to collapse the series visibility.  On other hand, if you need to select a series through legend click, disable the [`toggleVisibility`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#togglevisibility).
 
@@ -197,7 +196,7 @@ By default, legend click enables you to collapse the series visibility.  On oth
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs47" %}
 
-## Enable Animation
+## Enable animation
 
 You can customize the animation while clicking legend by setting enableAnimation as true or false using `enableAnimation` property in chart.
 
@@ -213,7 +212,7 @@ You can customize the animation while clicking legend by setting enableAnimation
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs48" %}
 
-## Collapsing Legend Item
+## Collapsing legend item
 
 By default, series name will be displayed as legend. To skip the legend for a particular series, you can give empty string to the series name.
 
@@ -229,7 +228,7 @@ By default, series name will be displayed as legend. To skip the legend for a pa
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs49" %}
 
-## Legend Title
+## Legend title
 
 You can set title for legend using `title` property in `legendSettings`. You can also customize the `fontStyle`, `size`, `fontWeight`, `color`, `textAlignment`, `fontFamily`, `opacity` and `textOverflow` of legend title. `titlePosition` is used to set the legend position in `Top`, `Left` and `Right` position. `maximumTitleWidth` is used to set the width of the legend title. By default, it will be `100px`.
 
@@ -245,7 +244,7 @@ You can set title for legend using `title` property in `legendSettings`. You can
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs50" %}
 
-## Arrow Page Navigation
+## Arrow page navigation
 
 By default, the page number will be enabled while legend paging. Now, you can disable that page number and also you can get left and right arrows for page navigation. You have to set `false` value to `enablePages` to get this support.
 
@@ -261,7 +260,7 @@ By default, the page number will be enabled while legend paging. Now, you can di
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs51" %}
 
-## Legend Item Padding
+## Legend item padding
 
 The [`itemPadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/legendSettings/#itempadding) property can be used to adjust the space between the legend items.
 
@@ -277,8 +276,24 @@ The [`itemPadding`](https://ej2.syncfusion.com/angular/documentation/api/chart/l
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs52" %}
 
+## Legend layout
+
+The `layout` property in `legendSettings` allows you to display the legend either horizontally or vertically. By default, the `layout` is set to **Auto**. The `maximumColumns` property in `legendSettings` defines the maximum number of columns that can be displayed within the available space when using the auto layout. Additionally, enabling the `fixedWidth` property in `legendSettings` ensures that all legend items are displayed with equal widths. The width of each item is determined by the maximum width among the legend items.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/axis/category-cs53/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/axis/category-cs53/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/axis/category-cs53" %}
+
 >Note: To use legend feature, we need to inject `LegendService` into the `@NgModule.Providers`.
 
-## See Also
+## See also
 
 * [Customize each shape in legend](./how-to/legend-customization#customize-each-shape-in-legend)

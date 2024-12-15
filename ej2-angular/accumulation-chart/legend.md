@@ -25,7 +25,7 @@ Here, the legend for a point can be collapsed by giving the empty string to the 
   
 {% previewsample "page.domainurl/samples/chart/series/legend-cs2" %}
 
-## Position and Alignment
+## Position and alignment
 
 By using the position property, you can position the legend at the `left`, `right`, `top` or `bottom` of the chart.
 You can also align the legend to `center`, `far` or `near` of the chart using the alignment property.
@@ -42,7 +42,7 @@ You can also align the legend to `center`, `far` or `near` of the chart usi
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs8" %}
 
-## Legend Reverse
+## Legend reverse
 
 You can reverse the order of the legend items by using the [`reverse`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/legendSettingsModel/#reverse) property. By default, legend for the first series in the collection will be placed first.
 
@@ -58,7 +58,7 @@ You can reverse the order of the legend items by using the [`reverse`](https://e
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs9" %}
 
-## Legend Shape
+## Legend shape
 
 To change the legend icon shape, use the `legendShape` property in the `series`. By default, legend icon shape is `seriesType`.
 
@@ -74,7 +74,7 @@ To change the legend icon shape, use the `legendShape` property in the `series
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs10" %}
 
-## Legend Size
+## Legend size
 
 The legend size can be changed by using the `width` and `height` properties of the `legendSettings`.
 
@@ -90,7 +90,7 @@ The legend size can be changed by using the `width` and `height` properties of t
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs11" %}
 
-## Legend Item Size
+## Legend item size
 
 You can customize the size of the legend items by using the `shapeHeight` and `shapeWidth` properties.
 
@@ -106,7 +106,7 @@ You can customize the size of the legend items by using the `shapeHeight` and `s
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs12" %}
 
-## Enable Animation
+## Enable animation
 
 You can customize the animation while clicking legend by setting enableAnimation as true or false using `enableAnimation` property in Accumulation Chart.
 
@@ -122,7 +122,7 @@ You can customize the animation while clicking legend by setting enableAnimation
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs13" %}
 
-## Paging for Legend
+## Paging for legend
 
 Paging will be enabled by default, when the legend items exceeds the legend bounds. You can view the each legend item by navigating between the pages using the navigation buttons.
 
@@ -138,7 +138,7 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs14" %}
 
-## Legend Text Wrap
+## Legend text wrap
 
 When the legend text exceeds the container, the text can be wrapped by using `textWrap` Property. End user can also wrap the legend text based on the `maximumLabelWidth` property.
 
@@ -154,7 +154,7 @@ When the legend text exceeds the container, the text can be wrapped by using `te
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs15" %}
 
-## Legend Title
+## Legend title
 
 You can set title for legend using `title` property in `legendSettings`. You can also customize the `fontStyle`, `size`, `fontWeight`, `color`, `textAlignment`, `fontFamily`, `opacity` and `textOverflow` of legend title. `titlePosition` is used to set the legend position in `Top`, `Left` and `Right` position. `maximumTitleWidth` is used to set the width of the legend title. By default, it will be `100px`.
 
@@ -170,7 +170,7 @@ You can set title for legend using `title` property in `legendSettings`. You can
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs16" %}
 
-## Arrow Page Navigation
+## Arrow page navigation
 
 By default, the page number will be enabled while legend paging. Now, you can disable that page number and also you can get left and right arrows for page navigation. You have to set `false` value to `enablePages` to get this support.
 
@@ -186,7 +186,7 @@ By default, the page number will be enabled while legend paging. Now, you can di
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs17" %}
 
-## Legend Item Padding
+## Legend item padding
 
 The [`itemPadding`](https://ej2.syncfusion.com/angular/documentation/api/accumulation-chart/legendSettings/#itempadding) property can be used to adjust the space between the legend items.
 
@@ -201,3 +201,19 @@ The [`itemPadding`](https://ej2.syncfusion.com/angular/documentation/api/accumul
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs18" %}
+
+## Legend layout
+
+The `layout` property in `legendSettings` allows you to display the legend either horizontally or vertically. By default, the `layout` is set to **Auto**. The `maximumColumns` property in `legendSettings` defines the maximum number of columns that can be displayed within the available space when using the auto layout. Additionally, enabling the `fixedWidth` property in `legendSettings` ensures that all legend items are displayed with equal widths. The width of each item is determined by the maximum width among the legend items.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/pie-cs44/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/pie-cs44/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/pie-cs44" %}

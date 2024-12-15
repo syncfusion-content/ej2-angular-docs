@@ -7,3 +7,13 @@
 .e-section-control {
 	margin-top: 150px;
 }
+
+.e-div {
+	width: 40%;
+	border: 1px dashed;
+	height: 150px;
+	margin: 10px;
+	text-align: center;
+	line-height: 150px;
+	display: inline-block;
+}

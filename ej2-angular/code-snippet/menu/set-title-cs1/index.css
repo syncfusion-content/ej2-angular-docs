@@ -11,10 +11,6 @@ body {
   text-align: center;
 }
 
-.e-file::before {
-  content: '\e886';
-}
-
 .e-menu-wrapper .e-menu .e-menu-item.e-menu-caret-icon .e-icons.e-caret {
   display: none;
 }

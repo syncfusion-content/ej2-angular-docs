@@ -1,0 +1,13 @@
+<div id="footerTemplate" #chatUIComponent ejs-chatui [user]="currentUserModel">
+  <e-messages>
+      <e-message text="Hi Michale, are we on track for the deadline?" [author]="currentUserModel"></e-message>
+      <e-message text="Yes, the design phase is complete." [author]="michaleUserModel"></e-message>
+      <e-message text="I’ll review it and send feedback by today." [author]="currentUserModel"></e-message>
+  </e-messages>
+  <ng-template #footerTemplate let-data>
+    <div class="custom-footer">
+      <input id="chatTextArea" class="e-input" placeholder="Type your message..."/>
+      <button id="sendMessage" class="e-btn e-primary" (click)="buttonClick()"><span class="e-icons e-send-1"></span></button>
+    </div>
+  </ng-template>
+</div>

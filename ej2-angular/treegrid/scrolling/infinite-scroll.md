@@ -92,3 +92,4 @@ The following example demonstrates how to enable/disable cache mode in infinite 
 * Limitations of row drag and drop with infinite scrolling
     1. In cache mode, the tree grid refreshes automatically if the content's **tr** element count exceeds the cache limit of the tree grid's content after the drop action.
     2. In remote data, changes are applied only in the UI. They will be lost once the tree grid is refreshed. To restore them, you need to update the changes in your database. By using the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdrop) event, you can send the request to the server and apply the changes in your database. After this, you need to refresh the tree grid to show the updated data.
+* Infinite scrolling does not support rendering records in a collapsed state. All records must be fully expanded at initial rendering for proper functionality.

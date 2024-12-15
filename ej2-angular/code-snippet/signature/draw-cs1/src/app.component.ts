@@ -5,11 +5,7 @@ import { SignatureModule } from '@syncfusion/ej2-angular-inputs'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { enableRipple } from '@syncfusion/ej2-base'
-
-
-
 import { Component, ViewChild } from '@angular/core';
-import { enableRipple } from '@syncfusion/ej2-base';
 import { SignatureComponent } from '@syncfusion/ej2-angular-inputs';
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 

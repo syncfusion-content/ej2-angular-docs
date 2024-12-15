@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Axis labels in Angular Chart component
 
-## Smart Axis Labels
+## Smart axis labels
 
 When the axis labels overlap with each other, you can use [`labelIntersectAction`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelintersectaction) property in the axis, to place them smartly.
 
@@ -56,7 +56,7 @@ When setting `labelIntersectAction` as `Rotate90`
   
 {% previewsample "page.domainurl/samples/chart/axis/multiple-cs3" %}
 
-## Axis Labels Positioning
+## Axis labels positioning
 
 By default, the axis labels can be placed at `outside` the axis line and this also can be placed at `inside` the axis line using the `labelPosition` property.
 
@@ -72,7 +72,7 @@ By default, the axis labels can be placed at `outside` the axis line and this al
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs9" %}
 
-## Multilevel Labels
+## Multilevel labels
 
 Any number of levels of labels can be added to an axis using the `multiLevelLabels` property. This property can be configured using the following properties:
 
@@ -165,9 +165,10 @@ are `Rectangle`, `Brace`, `WithoutBorder`, `WithoutTopBorder`, `WithoutTopandBot
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs14" %}
 
-## Edge Label Placement
+## Edge label placement
 
-Labels with long text at the edges of an axis may appear partially in the chart. To avoid this, use [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#edgelabelplacement) property in axis, which moves the label inside the chart area for better appearance or hides it.
+Labels with long text at the edges of an axis may appear partially in the chart. To avoid this,
+use [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#edgelabelplacement) property in axis, which moves the label inside the chart area for better appearance or hides it. By default, the [`edgeLabelPlacement`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#edgelabelplacement) property is set to Shift to ensure that labels are shifted inside the chart area, avoiding any overlap or coincidence.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -197,7 +198,7 @@ You can trim the label using [`enableTrim`](https://ej2.syncfusion.com/angular/d
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs15" %}
 
-## Labels Customization
+## Labels customization
 
 The [`labelStyle`](https://ej2.syncfusion.com/angular/documentation/api/chart/axisDirective/#labelstyle) property of an axis provides options to customize the `color`, `font-family`, `font-size` and `font-weight` of the axis labels.
 
@@ -217,7 +218,7 @@ To known more about labels customization, you can check on this video:
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs16" %}
 
-### Label Rotation
+### Label rotation
 
 The axis labels can be rotated based on the `labelRotation` property in `primaryXAxis`.
 
@@ -233,7 +234,7 @@ The axis labels can be rotated based on the `labelRotation` property in `primary
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs17" %}
 
-## Customizing Specific Point
+## Customizing specific point
 
 You can customize the specific text in the axis labels using `axisLabelRender` event.
 
@@ -265,7 +266,7 @@ Line break feature used to customize the long axis label text into multiple line
   
 {% previewsample "page.domainurl/samples/chart/axis/category-cs19" %}
 
-## Maximum Labels
+## Maximum labels
 
 `MaximumLabels` property is set, then the labels will be rendered based on the count in the property per 100 pixel. If you have set range (minimum, maximum, interval) and maximumLabels, then the priority goes to range only. If you haven’t set the range, then we have considered priority to maximumLabels property.
 

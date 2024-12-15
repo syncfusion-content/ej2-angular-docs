@@ -133,6 +133,22 @@ The chart area background can be customized by using the [`background`](https://
   
 {% previewsample "page.domainurl/samples/chart/series/column-cs15" %}
 
+**Chart area margin**
+
+You can customize the space between the chart area from its chart container through `margin` property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/column-cs52/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/column-cs52/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/column-cs52" %}
+
 ## Animation
 
 You can customize animation for a particular series using [`animation`](https://ej2.syncfusion.com/angular/documentation/api/chart/animationModel/) property. You can enable or disable animation of the series using `enable` property, `duration` specifies the duration of an animation and `delay` allows us to start the animation at desire time.

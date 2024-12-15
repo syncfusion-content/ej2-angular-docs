@@ -2,23 +2,18 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { SignatureComponent } from '@syncfusion/ej2-angular-inputs'
-import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { enableRipple } from '@syncfusion/ej2-base'
-
-
-
-import { Component, ViewChild } from '@angular/core';
+import { ButtonModule, CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
 import { enableRipple } from '@syncfusion/ej2-base';
-import { SignatureComponent } from '@syncfusion/ej2-angular-inputs';
+import { Component, ViewChild } from '@angular/core';
 import { Button, ChangeEventArgs } from '@syncfusion/ej2-buttons';
 import { getComponent } from '@syncfusion/ej2-base';
+import { SignatureModule } from '@syncfusion/ej2-angular-inputs';
 
 enableRipple(true);
 
 @Component({
 imports: [
-        FormsModule,CheckBoxModule,ButtonModule
+        FormsModule,CheckBoxModule,ButtonModule, SignatureModule
     ],
 
 

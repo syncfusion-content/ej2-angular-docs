@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
     primaryYAxis: any;
     ngOnInit(): void {
         this.chartData = barData;
-        this.border = { width: 2, color: '#ff4251' };
+        this.border = { width: 2, color: '#ff4251', dashArray: '2,5' };
         this.title = 'Unemployment rate (%)';
     }
 

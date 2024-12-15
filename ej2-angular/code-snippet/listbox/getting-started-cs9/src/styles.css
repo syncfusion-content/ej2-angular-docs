@@ -7,3 +7,8 @@
 .e-section-control {
 	margin-top: 150px;
 }
+
+.e-disabled {
+	cursor: default;
+	opacity: .35;
+}

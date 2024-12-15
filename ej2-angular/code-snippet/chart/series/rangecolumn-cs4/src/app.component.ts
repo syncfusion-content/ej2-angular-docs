@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
             valueType: 'Category'
         };
         this.title = 'Maximum and minimum Temperature';
-        this.border = { width: 2, color: '#4C4C4C' }
+        this.border = { width: 2, color: '#4C4C4C', dashArray: '2,5' }
     }
 }
 

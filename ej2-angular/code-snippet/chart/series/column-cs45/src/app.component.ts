@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
            valueType: 'Category',
            title: 'Countries'
         };
-        this.border = { width: 2, color: '#FFA500' };
+        this.border = { width: 2, color: '#FFA500', dashArray: '2,5' };
         this.title = 'Olympic Medals';
     }
 

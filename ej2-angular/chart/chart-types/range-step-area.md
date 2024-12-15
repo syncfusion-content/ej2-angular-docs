@@ -100,9 +100,9 @@ The [opacity](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesD
 {% previewsample "page.domainurl/samples/chart/series/rangesteparea-cs2" %}
 
 
-**Dash array**
+**Border**
 
-The [dashArray](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#dasharray) property determines the pattern of dashes and gaps in the series.
+Use the [border](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesDirective/#border) property to customize the width, color and dasharray of the series border.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

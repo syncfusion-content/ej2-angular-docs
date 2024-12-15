@@ -179,7 +179,7 @@ The marker can be customized in terms of color, border, width and height by usin
 
 ## Dragging Pointer
 
-The pointers can be dragged over the axis line by clicking and dragging the same. To enable or disable the pointer drag, use the [`enablePointerDrag`](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/circularGaugeModel/#enablepointerdrag) property.
+The pointers can be dragged along the axis line by clicking and dragging them. To enable or disable the drag functionality for all pointers across all axes, use the [enablePointerDrag](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/circularGaugeModel/#enablepointerdrag) property. When this property is set to **true**, all pointers can be dynamically adjusted by dragging. Setting it to **false** keeps all pointers fixed in their specified positions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -192,6 +192,26 @@ The pointers can be dragged over the axis line by clicking and dragging the same
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-cs10" %}
+
+### Enabling drag functionality for a specific pointer
+
+To enable or disable the drag functionality for specific pointers along the axis line, use the [enableDrag](https://ej2.syncfusion.com/angular/documentation/api/circular-gauge/pointerDirective/#enabledrag) property in the required pointer model.
+
+>When the `enableDrag` property is enabled for any individual pointer model, the `enablePointerDrag` property becomes ineffective.
+
+The following example demonstrates how to enable the drag functionality for multiple pointers individually.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/circulargauge/gauge-pointers-drag-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/circulargauge/gauge-pointers-drag-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/circulargauge/gauge-pointers-drag-cs1" %}
 
 ## Multiple Pointers
 

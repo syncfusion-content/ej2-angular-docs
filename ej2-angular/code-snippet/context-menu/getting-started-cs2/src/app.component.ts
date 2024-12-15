@@ -2,11 +2,7 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
 import { enableRipple } from '@syncfusion/ej2-base'
-
-
-
 import { Component } from '@angular/core';
-import { enableRipple } from '@syncfusion/ej2-base';
 import { MenuItemModel } from '@syncfusion/ej2-angular-navigations';
 
 enableRipple(true);

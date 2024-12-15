@@ -139,3 +139,19 @@ Using [`tooltipRender`](https://ej2.syncfusion.com/angular/documentation/api/acc
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/series/pie-cs37" %}
+
+## Enable highlight
+
+By setting the `enableHighlight` property to **true**, the hovered pie slice is highlighted, while the remaining slices are dimmed, enhancing focus and clarity.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/series/pie-cs45/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/series/pie-cs45/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/series/pie-cs45" %}
