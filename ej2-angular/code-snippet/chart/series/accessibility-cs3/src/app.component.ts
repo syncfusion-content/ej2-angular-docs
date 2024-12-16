@@ -1,0 +1,56 @@
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts';
+import { Component, OnInit } from '@angular/core';
+import { columnData } from './datasource';
+
+@Component({
+    imports: [ChartModule],
+    providers: [CategoryService, ColumnSeriesService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' [titleStyle]='titleStyle' [subTitle]='subTitle' [subTitleStyle]='subTitleStyle'>
+        <e-series-collection>
+            <e-series [dataSource]='columnData' type='Column' xName='country' yName='gold' name='Gold'></e-series>
+            <e-series [dataSource]='columnData' type='Column' xName='country' yName='silver' name='Silver'></e-series>
+            <e-series [dataSource]='columnData' type='Column' xName='country' yName='bronze' name='Bronze'></e-series>
+        </e-series-collection>
+    </ejs-chart>`
+})
+export class AppComponent implements OnInit {
+    public primaryXAxis?: Object;
+    public primaryYAxis?: Object;
+    public columnData?: Object[];
+    public title?: string;
+    public titleStyle?: Object;
+    public subTitle?: string;
+    public subTitleStyle?: Object;
+    ngOnInit(): void {
+        this.columnData = columnData;
+        this.primaryXAxis = {
+            valueType: 'Category',
+            title: 'Countries',
+            labelPlacement: 'OnTicks'
+        };
+        this.primaryYAxis = {
+            minimum: 0,
+            maximum: 80,
+            interval: 20,
+            title: 'Medals'
+        };
+        this.title = 'Olympic Medals Comparison by Country';
+        this.subTitle = 'Medal Comparison';
+        this.titleStyle = {
+            accessibility: {
+                accessibilityDescription: 'This chart shows the number of gold, silver, and bronze medals won by different countries in the Olympics.',
+                accessibilityRole: 'heading'
+            }
+        };
+        this.subTitleStyle = {
+            accessibility: {
+                accessibilityDescription: 'The subtitle provides additional context for the Olympic medal distribution chart.',
+                accessibilityRole: 'heading'
+            }
+        };
+    }
+
+}

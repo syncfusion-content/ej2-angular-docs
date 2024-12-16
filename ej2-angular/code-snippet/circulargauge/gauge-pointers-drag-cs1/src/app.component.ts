@@ -18,9 +18,6 @@ import { Component, OnInit } from '@angular/core';
     </ejs-circulargauge>`
 })
 export class AppComponent implements OnInit {
-    public markerSize?: number;
-    public pointerCap?: Object;
-    public pointerTail?: Object;
     public pointers?: Object;
     ngOnInit(): void {
         this.pointers = [
@@ -54,15 +51,5 @@ export class AppComponent implements OnInit {
                 pointerWidth: 25
             }
         ];
-        this.markerSize = 15;
-        this.pointerCap = {
-            radius: 15,
-            border: {
-                width: 5
-            }
-        };
-        this.pointerTail = {
-            length: '22%'
-        };
     }
 }

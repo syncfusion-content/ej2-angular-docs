@@ -15,7 +15,7 @@ imports: [
 
 
 standalone: true,
-    selector: 'app-root',
+    selector: 'app-container',
     // specifies the template string for the DropDownTree component
     template: `<ejs-dropdowntree id='dropdowntree' [fields]='fields' placeholder='Select a Item'></ejs-dropdowntree>`
 })

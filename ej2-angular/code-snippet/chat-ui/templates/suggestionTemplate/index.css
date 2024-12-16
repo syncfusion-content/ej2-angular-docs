@@ -1,0 +1,37 @@
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  width: 30%;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+#wrapper {
+  height: 380px;
+  width: 450px;
+  margin: 0 auto;
+}
+
+#suggestionTemplate .e-suggestion-list li {
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+#suggestionTemplate .suggestion-item {
+  display: flex;
+  align-items: center;
+  background-color: #87b6fb;
+  color: black;
+  padding: 4px;
+  gap: 5px;
+  height: 30px;
+  border-radius: 5px;
+}
+#suggestionTemplate .suggestion-item .content {
+  padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

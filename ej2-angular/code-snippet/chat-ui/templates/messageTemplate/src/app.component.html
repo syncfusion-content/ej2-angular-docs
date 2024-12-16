@@ -1,0 +1,7 @@
+<div id="messageTemplate" ejs-chatui [user]="currentUserModel" [messages]="chatMessages">
+    <ng-template #messageTemplate let-data>
+        <div class="message-items e-card">
+            <div class="message-text">{{data.message.text}}</div>
+        </div>
+    </ng-template>
+</div>

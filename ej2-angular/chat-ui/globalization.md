@@ -20,7 +20,31 @@ The Chat UI can be localized to any culture by defining the text of the Chat UI 
 |twoUserTyping|{0} and {1} are typing|
 |threeUserTyping|{0}, {1}, and {2} other are typing|
 |multipleUsersTyping|{0}, {1}, and {2} others are typing|
- 
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/globalization/localization/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/globalization/localization/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chat-ui/globalization/localization" %}
+
 ## RTL
- 
+
 RTL provides an option to switch the text direction and layout of the Chat UI component from right to left by setting the `enableRtl` property to `true`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/globalization/enableRtl/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/globalization/enableRtl/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chat-ui/globalization/enableRtl" %}

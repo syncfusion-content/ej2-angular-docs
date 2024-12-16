@@ -1,0 +1,11 @@
+<div id="suggestionTemplate" ejs-chatui [user]="currentUserModel" [suggestions]="suggestions">
+  <e-messages>
+      <e-message text="Hi Michale, are we on track for the deadline?" [author]="currentUserModel"></e-message>
+      <e-message text="Yes, the design phase is complete." [author]="michaleUserModel"></e-message>
+  </e-messages>
+  <ng-template #suggestionTemplate let-data>
+    <div class='suggestion-item active'>
+      <div class="content">{{data.suggestion}}</div>
+    </div>
+  </ng-template>
+</div>

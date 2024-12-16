@@ -76,9 +76,9 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 <!-- markdownlint-disable MD013 -->
 
- You can format the each series tooltip separately using series [`tooltipFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#tooltipformat) property.
+You can format the each series tooltip separately using series [`tooltipFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#tooltipformat) property.
 
- >Note: If series [`tooltipFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#tooltipformat) is given, it shows the tooltip for that series in that format, or else it will take tooltip format.
+>Note: If series [`tooltipFormat`](https://ej2.syncfusion.com/angular/documentation/api/chart/seriesModel/#tooltipformat) is given, it shows the tooltip for that series in that format, or else it will take tooltip format.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -109,6 +109,22 @@ Any HTML elements can be displayed in the tooltip by using the [`template`](http
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/tooltip-cs4" %}
+
+## Enable highlight
+
+By setting the `enableHighlight` property to **true**, you can highlight all points in the hovered series while dimming points in other series, enhancing focus and clarity.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/user-interaction/tooltip-cs12/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/user-interaction/tooltip-cs12/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/user-interaction/tooltip-cs12" %}
 
 ## Tooltip mapping name
 

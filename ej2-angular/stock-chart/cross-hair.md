@@ -58,3 +58,20 @@ Color and width of the crosshair line can be customized by using the [`line`](ht
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/stock-chart/cross-hair-cs3" %}
+
+
+**Snap to data**
+
+Enabling the `snapToData` property in the crosshair aligns it with the nearest data point instead of following the exact mouse position.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/stock-chart/cross-hair-cs4/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/stock-chart/cross-hair-cs4/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/stock-chart/cross-hair-cs4" %}

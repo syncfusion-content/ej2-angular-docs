@@ -14,6 +14,18 @@ domainurl: ##DomainURL##
 
 You can use the `showTimeBreak` property to display date-wise separations between all the messages which enhances the readability and message organizing. The default value is `false`, indicating time breaks are disabled unless it is enabled.
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chat-ui/time/showTimeBreak/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chat-ui/time/showTimeBreak/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/chat-ui/time/showTimeBreak" %}
+
 ## Time break template
 
 > Refer to the [Templates](./templates#time-break-template) section for more details about the Time break template.

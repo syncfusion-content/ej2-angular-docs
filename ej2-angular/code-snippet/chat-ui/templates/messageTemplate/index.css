@@ -1,0 +1,29 @@
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  width: 30%;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+#wrapper {
+  height: 380px;
+  width: 450px;
+  margin: 0 auto;
+}
+
+#messageTemplate .e-right .message-items {
+  border-radius: 16px 16px 2px 16px;
+  background-color: #c5ffbf;
+}
+
+#messageTemplate .e-left .message-items {
+  border-radius: 16px 16px 16px 2px;
+  background-color: #f5f5f5;
+}
+
+#messageTemplate .message-items {
+  padding: 5px;
+}
