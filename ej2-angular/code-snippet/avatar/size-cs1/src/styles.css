@@ -1,33 +1,3 @@
 @import 'node_modules/@syncfusion/ej2-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-layouts/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-lists/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-lists/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
-
-#container {
-    visibility: hidden;
-}
-
-#loader {
-    color: #008cff;
-    height: 40px;
-    left: 45%;
-    position: absolute;
-    top: 45%;
-    width: 30%;
-}
-
-#element {
-    display: block;
-    width: 300px;
-    margin: 100px auto;
-    border-radius: 3px;
-}
-
-.e-avatar {
-  background-image: url('https://ej2.syncfusion.com/demos/src/grid/images/2.png');
-  margin: 2px;
-}
+@import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';

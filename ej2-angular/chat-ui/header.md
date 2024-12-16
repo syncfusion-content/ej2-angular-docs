@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Show or hide header
 
-You can use `showHeader` property to enable or disable the chat header. It contains the following options `headerText` and `headerIconCss`. 
+You can use [showHeader](../api/chat-ui#showheader) property to enable or disable the chat header. It contains the following options [headerText](../api/chat-ui#headertext) and [headerIconCss](../api/chat-ui#headericoncss).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ You can use `showHeader` property to enable or disable the chat header. It conta
 
 ### Setting header text
 
-You can use the `headerText` property to display the text that appears in the header, which indicates the current username or the group name providing the context for the conversation.
+You can use the [headerText](../api/chat-ui#headertext) property to display the text that appears in the header, which indicates the current username or the group name providing the context for the conversation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,7 +44,7 @@ You can use the `headerText` property to display the text that appears in the he
 
 ### Setting header icon CSS
 
-You can use the `headerIconCss` property to customize the styling of the header icon.
+You can use the [headerIconCss](../api/chat-ui#headericoncss) property to customize the styling of the header icon.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -60,7 +60,7 @@ You can use the `headerIconCss` property to customize the styling of the header 
 
 ## Toolbar
 
-You can render the Chat UI toolbar items by using the items property in the headerToolbar.
+You can render the Chat UI toolbar items by using the `items` property in the [headerToolbar](../api/chat-ui#headertoolbar).
 
 ### Setting Items
 

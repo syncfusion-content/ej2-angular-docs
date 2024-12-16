@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Show or hide footer
 
-You can use showFooter property to enable or disable the chat footer.
+You can use [showFooter](../api/chat-ui#showfooter) property to enable or disable the chat footer.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,3 +1,4 @@
+{% raw %}
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { Component } from '@angular/core';
@@ -7,10 +8,9 @@ import { CommonModule } from '@angular/common';
 imports: [
         CommonModule
     ],
-
-
 standalone: true,
     selector: 'my-app',
+    styleUrls: ['./app.component.css'],
     template: `
     <div class='control-pane'>
         <div class="sample_container avatar-badge">
@@ -55,6 +55,4 @@ export class AppComponent {
     ];
 }
 
-
-
-
+{% endraw %}

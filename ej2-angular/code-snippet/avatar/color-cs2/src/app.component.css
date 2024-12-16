@@ -1,0 +1,44 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+#element {
+    display: flex;
+    width: 400px;
+    margin: 100px auto;
+    border-radius: 3px;
+    justify-content: center;
+}
+
+.e-avatar {
+    margin: 2px;
+}
+
+.e-avatar.green {
+    background-color: #87eb87;
+}
+
+.e-avatar.violet {
+    background-color: #ee82ee;
+}
+
+.e-avatar.blue {
+    background-color: #7171e4;
+}
+
+.e-avatar.red {
+    background-color: #d86e6e;
+}
+
+.e-avatar.rose {
+    background-color: #bc8f8f;
+}

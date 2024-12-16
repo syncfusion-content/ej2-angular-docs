@@ -12,16 +12,15 @@ domainurl: ##DomainURL##
 
 ## Colour customization
 
-The avatar comes with default background colour (grey). This can be easily customized to desired colour
-by adding custom class or directly selecting the avatar class from the CSS.
+The avatar comes with default background colour (grey). This can be easily customized to desired colour by adding custom class or directly selecting the avatar class from the CSS.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/color-cs2/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/avatar/color-cs2/src/styles.css %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/avatar/color-cs2/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -33,9 +32,7 @@ by adding custom class or directly selecting the avatar class from the CSS.
 
 ## Customize avatar sizes
 
-Even though the avatar comes with five predefined sizes, sometimes it's not enough. So, the avatar is
-designed in such a way that the width and height will be relative to font-size. By changing the
-`font-size` of the avatar element, you can change the width and height automatically.
+Even though the avatar comes with five predefined sizes, sometimes it's not enough. So, the avatar is designed in such a way that the width and height will be relative to font-size. By changing the `font-size` of the avatar element, you can change the width and height automatically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -64,8 +61,8 @@ etc. Some of them are given below.
 {% include code-snippet/avatar/media-formats-cs2/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/avatar/media-formats-cs2/src/styles.css %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/avatar/media-formats-cs2/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -77,9 +74,7 @@ etc. Some of them are given below.
 
 ## Dynamic avatar rendering from datasource
 
-We can render avatar component dynamically from a data-source. In this sample we have rendered the avatar component
-using a data-source which contains the image source in different sizes dynamically. This is applicable also for
-data-source from the server or remote data or AJAX. We have also rendered the avatar using `CSS` property
+We can render avatar component dynamically from a data-source. In this sample we have rendered the avatar component using a data-source which contains the image source in different sizes dynamically. This is applicable also for data-source from the server or remote data or AJAX. We have also rendered the avatar using `CSS` property
 `background-image` and using image tag.
 
 {% tabs %}
