@@ -7,10 +7,9 @@ import { CommonModule } from '@angular/common';
 imports: [
         CommonModule
     ],
-
-
 standalone: true,
     selector: 'my-app',
+    styleUrls: ['./app.component.css'],
     template: `
     <div id='element'>
     <div class="sample_container avatar-badge">

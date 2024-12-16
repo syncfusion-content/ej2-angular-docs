@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Show or hide time break
 
-You can use the `showTimeBreak` property to display date-wise separations between all the messages which enhances the readability and message organizing. The default value is `false`, indicating time breaks are disabled unless it is enabled.
+You can use the [showTimeBreak](../api/chat-ui#showtimebreak) property to display date-wise separations between all the messages which enhances the readability and message organizing. The default value is `false`, indicating time breaks are disabled unless it is enabled.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

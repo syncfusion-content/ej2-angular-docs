@@ -1,18 +1,11 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { ListViewModule } from '@syncfusion/ej2-angular-lists'
-
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import  { ListViewModule } from '@syncfusion/ej2-angular-lists';
 
 @Component({
-imports: [
-        
-        ListViewModule
-    ],
-
-
-standalone: true,
     selector: 'my-app',
+    imports: [ListViewModule, CommonModule],    
+    styleUrls: ['./app.component.css'],
     template: `
     <div id="letterAvatarList">
         <ejs-listview id='letterAvatarList' [dataSource]='dataSource' [headerTitle]='headerTitle' [showHeader]='true' [sortOrder]='sortOrder'>
@@ -43,7 +36,3 @@ export class AppComponent {
     public headerTitle: string = 'Contacts';
     public sortOrder: string = 'Ascending';
 }
-
-
-
-

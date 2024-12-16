@@ -166,7 +166,7 @@ The following example illustrates the output in your browser.
 
 ## Configure messages and user
 
-You can use the `<e-messages>` tag directive to group all the messages and `<e-message>` tag to define each message and the `user` property to configure the current user for the chat.
+You can use the `<e-messages>` tag directive to group all the messages and `<e-message>` tag to define each message and the [user](../api/chat-ui#user) property to configure the current user for the chat.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

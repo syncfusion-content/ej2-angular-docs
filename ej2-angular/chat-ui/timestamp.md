@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Show or hide timestamp
 
-You can use the `showTimeStamp` property to enable or disable timestamps for all messages which displays the exact date and time when they were sent. By default, the value is `true`.
+You can use the [showTimeStamp](../api/chat-ui#showtimestamp) property to enable or disable timestamps for all messages which displays the exact date and time when they were sent. By default, the value is `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ You can use the `showTimeStamp` property to enable or disable timestamps for all
 
 ## Setting timestamp format
 
-You can use the `timeStampFormat` property to display time formats for all the messages which are displayed with the messages being sent. By default, the value is `dd/MM/yyyy hh:mm a`.
+You can use the [timeStampFormat](../api/chat-ui#timestampformat) property to display time formats for all the messages which are displayed with the messages being sent. By default, the value is `dd/MM/yyyy hh:mm a`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
