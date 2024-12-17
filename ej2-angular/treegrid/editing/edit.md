@@ -128,11 +128,21 @@ In the below demo, the **priority** column is rendered with the template.
 
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { sampleData } from './datasource';
+import { FormsModule } from '@angular/forms';
 import { Column, EditSettingsModel,ToolbarItems, TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { CommonModule } from '@angular/common';import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
     selector: 'app-container',
+    imports: [
+        TreeGridAllModule,
+        DropDownListModule,
+        FormsModule,
+        CommonModule,
+      ],
+    standalone: true,
     template: `     <ejs-treegrid #treegrid [dataSource]='data'  [treeColumnIndex]='1' height='230' [toolbar]='toolbar' [editSettings]='editSettings' (actionBegin)="actionBegin($event)" childMapping='subtasks' >
                         <e-columns>
                             <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>

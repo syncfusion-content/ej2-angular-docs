@@ -19,8 +19,8 @@ badges (.`e-badge-notification`) in the following sample.
 {% include code-snippet/avatar/badge-cs2/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/avatar/badge-cs2/src/styles.css %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/avatar/badge-cs2/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

@@ -1,0 +1,115 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
+
+#element {
+  width: 400px;
+  margin: auto;
+  border-radius: 3px;
+  justify-content: center;
+}
+
+/* Listview Customization */
+
+#letterAvatarList {
+  max-width: 350px;
+  margin: auto;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+
+#letterAvatarList .listWrapper {
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+
+#letterAvatarList .e-list-header {
+  height: 54px;
+}
+
+.material #letterAvatarList .e-list-header .e-text {
+  line-height: 22px;
+}
+
+.fabric #letterAvatarList .e-list-header .e-text {
+  line-height: 22px;
+}
+
+.bootstrap #letterAvatarList .e-list-header .e-text {
+  line-height: 13px;
+}
+
+.highcontrast #letterAvatarList .e-list-header .e-text {
+  line-height: 20px;
+}
+
+#letterAvatarList .e-list-item {
+  cursor: pointer;
+  height: 50px;
+  line-height: 44px;
+  border: 0;
+}
+
+/* Badge Positioning */
+
+#letterAvatarList .e-badge {
+  margin-top: 12px;
+}
+
+#letterAvatarList .listWrapper .text {
+  width: 60%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 50px;
+}
+
+/* Avatar Positioning */
+
+#letterAvatarList .listWrapper .e-avatar {
+  position: absolute;
+  top: calc(100% - 40px);
+  font-size: 10px;
+  left: 5px;
+}
+
+/* Avatar Background Customization */
+
+#letterAvatarList .e-list-item:nth-child(1) .e-avatar {
+  background-color: #039BE5;
+}
+
+#letterAvatarList .e-list-item:nth-child(3) .e-avatar {
+  background-color: #E91E63;
+}
+
+#letterAvatarList .e-list-item:nth-child(5) .e-avatar {
+  background-color: #009688;
+}
+
+/* Avatar images using 'background-image' property */
+
+.pic01 {
+  background-image: url('https://ej2.syncfusion.com/demos/src/grid/images/2.png');
+}
+
+.pic02 {
+  background-image: url('https://ej2.syncfusion.com/demos/src/grid/images/5.png');
+}
+
+.pic03 {
+  background-image: url('https://ej2.syncfusion.com/demos/src/grid/images/6.png');
+}
+
+.pic04 {
+  background-image: url('https://ej2.syncfusion.com/demos/src/grid/images/7.png');
+}

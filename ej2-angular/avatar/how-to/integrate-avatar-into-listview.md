@@ -10,17 +10,20 @@ domainurl: ##DomainURL##
 
 # Integrate avatar into listview in Angular Avatar component
 
-Avatar is integrated into the listview to create contacts applications. The `xsmall` size avatar is
-used to match the size of the list item. Letters and images are also used as avatar content.
+Avatar is integrated into the listview to create contacts applications. The `xsmall` size avatar is used to match the size of the list item. Letters and images are also used as avatar content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
 
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import  { ListViewModule } from '@syncfusion/ej2-angular-lists';
 
 @Component({
     selector: 'my-app',
+    imports: [ListViewModule, CommonModule],    
+    styleUrls: ['./app.component.css'],
     template: `
     <div id="letterAvatarList">
         <ejs-listview id='letterAvatarList' [dataSource]='dataSource' [headerTitle]='headerTitle' [showHeader]='true' [sortOrder]='sortOrder'>
@@ -51,8 +54,11 @@ export class AppComponent {
     public headerTitle: string = 'Contacts';
     public sortOrder: string = 'Ascending';
 }
-
 {% endraw %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/avatar/listview-cs2/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

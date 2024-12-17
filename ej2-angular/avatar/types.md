@@ -14,8 +14,7 @@ This section explains different types of avatar.
 
 ## Avatar size
 
-The Essential JS 2 Avatar has the following predefined sizes that can be used with the `.e-avatar`
-class to change the appearance of the avatar.
+The Essential JS 2 Avatar has the following predefined sizes that can be used with the `.e-avatar` class to change the appearance of the avatar.
 
 | Class Name         | Description
 | :-------------     |:-------------
@@ -30,8 +29,8 @@ class to change the appearance of the avatar.
 {% include code-snippet/avatar/size-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="styles.css" %}
-{% include code-snippet/avatar/size-cs1/src/styles.css %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/avatar/size-cs1/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -50,12 +49,15 @@ The types of Essential JS 2 avatar are:
 
 ### Default
 
-The default style of the avatar is rectangular shape with rounded corners, which can be applied from
-adding the modifier class `.e-avatar` to the target element.
+The default style of the avatar is rectangular shape with rounded corners, which can be applied from adding the modifier class `.e-avatar` to the target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/default-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/avatar/default-cs1/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -72,6 +74,10 @@ The circle avatar style can be applied by adding the modifier class `.e-avatar-c
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/circle-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/avatar/circle-cs1/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

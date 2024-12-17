@@ -1,4 +1,5 @@
-import { NgModule, } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 
@@ -11,7 +12,7 @@ import { TextBoxModule} from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     imports: [
-    TreeGridAllModule,TextBoxModule
+    TreeGridAllModule,TextBoxModule, FormsModule
     ],
     providers: [EditService, ToolbarService, PageService],
     standalone: true,

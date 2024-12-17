@@ -49,9 +49,7 @@ export class AppComponent implements OnInit {
             }
         }
         if (args.requestType == 'add') {
-            if (!this.isAddable) {
                 args.cancel = true;
-            }
         }
     }
     

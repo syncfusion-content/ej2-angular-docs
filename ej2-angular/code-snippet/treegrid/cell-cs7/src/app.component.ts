@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
     }
 
     valueChange(args: ChangeEventArgs): void {
-        var column_inx=(this.treegrid as TreeGridComponent).getColumnIndexByField('priority');
+        var column_inx=(this.treegrid as TreeGridComponent).getColumnIndexByField('taskName');
         ((this.treegrid as TreeGridComponent).columns[column_inx] as any).clipMode = (args.value as any);
         (this.treegrid as TreeGridComponent).refreshColumns();
       }
