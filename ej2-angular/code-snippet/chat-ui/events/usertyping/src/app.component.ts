@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
     standalone: true,
     selector: 'app-root',
     // specifies the template string for the Chat UI component
-    template: `<div id="chatui" ejs-chatui [user]="currentUserModel" (userTyping)="onTyping()">
+    template: `<div id="chatui" ejs-chatui [user]="currentUserModel" (userTyping)="onTyping($event)">
         <e-messages>
             <e-message text="Hi Michale, are we on track for the deadline?" [author]="currentUserModel"></e-message>
             <e-message text="Yes, the design phase is complete." [author]="michaleUserModel"></e-message>
