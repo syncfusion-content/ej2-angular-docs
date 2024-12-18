@@ -8,22 +8,22 @@ import { Component, ViewChild } from '@angular/core';
 import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 
 @Component({
-imports: [
-        
-        DropDownButtonModule,
-        UploaderModule,
-        SpreadsheetAllModule
-    ],
+  imports: [
+
+    DropDownButtonModule,
+    UploaderModule,
+    SpreadsheetAllModule
+  ],
 
 
-standalone: true,
+  standalone: true,
   selector: 'app-container',
   template:
-    "<div class='control-section'><ejs-spreadsheet #default [openUrl]='openUrl' [saveUrl]='saveUrl'></ejs-spreadsheet><ejs-uploader #defaultupload id='defaultfileupload' [asyncSettings]='path' (success)='onUploadSuccess($event)' [allowedExtensions]='allowExtensions'></ejs-uploader> </div>",
+    `<div class='control-section'><ejs-uploader #defaultupload id='defaultfileupload' [asyncSettings]='path' (success)='onUploadSuccess($event)' [allowedExtensions]='allowedExtensions'></ejs-uploader><ejs-spreadsheet #default [openUrl]='openUrl' [saveUrl]='saveUrl'></ejs-spreadsheet></div>`
 })
 export class AppComponent {
   @ViewChild('default')
-  public spreadsheetObj: SpreadsheetComponent;
+  public spreadsheetObj!: SpreadsheetComponent;
   public openUrl: string =
     'https://services.syncfusion.com/angular/production/api/spreadsheet/open';
   public saveUrl: string =
@@ -34,7 +34,7 @@ export class AppComponent {
   };
   public allowedExtensions: string = '.xlsx, .xls, .csv';
 
-  onUploadSuccess(args) {
+  onUploadSuccess(args: any) {
     if (args.operation == 'upload')
       this.spreadsheetObj.open({ file: args.file.rawFile });
   }

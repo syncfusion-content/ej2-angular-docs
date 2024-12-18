@@ -24,9 +24,9 @@ standalone: true,
 
 export class AppComponent {
   @ViewChild('spreadsheet')
-  public spreadsheetObj: SpreadsheetComponent;
+  public spreadsheetObj!: SpreadsheetComponent;
   beforeOpen(args: BeforeOpenEventArgs) {
-    args.requestData['headers'] = {
+    args.requestData = {
       ...args.requestData,
       headers: { Authorization: 'YOUR TEXT' },
     };
