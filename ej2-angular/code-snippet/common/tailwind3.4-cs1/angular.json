@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bootstrap5.3": {
+    "tailwind3": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/bootstrap5.3",
+            "outputPath": "dist/tailwind3",
             "index": "index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "bootstrap5.3:build:production"
+              "buildTarget": "tailwind3:build:production"
             },
             "development": {
-              "buildTarget": "bootstrap5.3:build:development"
+              "buildTarget": "tailwind3:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "bootstrap5.3:build"
+            "buildTarget": "tailwind3:build"
           }
         },
         "test": {
