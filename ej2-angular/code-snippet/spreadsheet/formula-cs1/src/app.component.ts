@@ -10,13 +10,13 @@ import { dataSource } from './datasource';
 enableRipple(true);
 
 @Component({
-imports: [
-        
-        SpreadsheetAllModule
-    ],
+  imports: [
+
+    SpreadsheetAllModule
+  ],
 
 
-standalone: true,
+  standalone: true,
   selector: 'app-container',
   template: `<ejs-spreadsheet #spreadsheet (created)="created()" [showRibbon]="false"
                 [showSheetTabs]="false">
@@ -80,7 +80,7 @@ standalone: true,
 })
 export class AppComponent {
   @ViewChild('spreadsheet')
-  spreadsheetObj: SpreadsheetComponent | undefined;
+  public spreadsheetObj!: SpreadsheetComponent;
 
   data: object[] = dataSource;
 

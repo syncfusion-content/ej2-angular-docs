@@ -15,10 +15,10 @@
           "options": {
             "outputPath": "dist",
             "index": "index.html",
-            "main": "app/main.ts",
+            "main": "src/main.ts",
             "tsConfig": "tsconfig.json",
             "styles": [
-              "app/styles.css"
+              "src/styles.css"
             ],
             "assets": []
           },

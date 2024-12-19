@@ -17,3 +17,7 @@
 
 @import 'node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
+
+.customClass.e-cell {
+    background-color: red;
+}

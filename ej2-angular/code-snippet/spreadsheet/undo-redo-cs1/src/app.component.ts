@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
         let actionEvents: any = args;
         if (actionEvents.eventArgs.action == "customCSS") {
             let Element:HTMLElement = this.spreadsheetObj!.getCell(actionEvents.eventArgs.rowIdx,actionEvents.eventArgs.colIdx);
-            if (actionEvents.eventArgs.requestType == "undo") {
+            if (actionEvents.isUndoRedo && actionEvents.isUndo) {
                 removeClass([Element],'customClass'); // To remove the custom class in undo action
             }
             else {

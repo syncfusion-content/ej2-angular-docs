@@ -59,7 +59,7 @@ export class AppComponent {
         this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:D1');
         this.spreadsheetObj!.cellFormat({ fontWeight: 'bold'}, 'A11:D11');
         this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'Salary!A1:D1');
-        this.spreadsheetObj!.protectSheet(1, { selectCells: false}, "syncfusion"); // protect sheet with password
+        this.spreadsheetObj!.protectSheet(1, { selectCells: true}, "syncfusion"); // protect sheet with password
     }
 }
 
