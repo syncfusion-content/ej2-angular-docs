@@ -1,22 +1,21 @@
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { Browser } from '@syncfusion/ej2-base';
 import { ContextMenuComponent, ContextMenuModule, BeforeOpenCloseMenuEventArgs } from '@syncfusion/ej2-angular-navigations';
-import { SBDescriptionComponent } from '../common/dp.component';
-import { SBActionDescriptionComponent } from '../common/adp.component';
 
 @Component({
-  selector: 'control-content',
-  templateUrl: 'template.html',
-  styleUrls: ['template.css'],
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  styleUrls: ['styles.css'],
   encapsulation: ViewEncapsulation.None,
   standalone: true,
-  imports: [ContextMenuModule, SBActionDescriptionComponent, SBDescriptionComponent]
+  imports: [ContextMenuModule]
 })
+
 export class AppComponent {
   public content: string = '';
 
   @ViewChild('contextmenu')
-  public contextmenu: ContextMenuComponent;
+  public contextmenu!: ContextMenuComponent;
 
   public data: any = [
     {
@@ -55,10 +54,10 @@ export class AppComponent {
 
   onCreated(): void {
     if (Browser.isDevice) {
-      this.content = 'Touch hold to open the Context Menu and select the answer type';
+      this.content = 'Touch hold to open the Context Menu';
       this.contextmenu.animationSettings.effect = 'ZoomIn';
     } else {
-      this.content = 'Right click/Touch hold to open the Context Menu and select the answer type';
+      this.content = 'Right click/Touch hold to open the Context Menu';
       this.contextmenu.animationSettings.effect = 'SlideDown';
     }
   }

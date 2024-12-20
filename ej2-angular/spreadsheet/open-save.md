@@ -53,11 +53,11 @@ The following code example shows how to import an excel document using file uplo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs7/app/app.component.ts %}
+{% include code-snippet/spreadsheet/open-save-cs7/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs7/app/main.ts %}
+{% include code-snippet/spreadsheet/open-save-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -406,11 +406,11 @@ You can add your own custom header to the open action in the Spreadsheet. For pr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs8/app/app.component.ts %}
+{% include code-snippet/spreadsheet/open-save-cs8/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/spreadsheet/open-save-cs8/app/main.ts %}
+{% include code-snippet/spreadsheet/open-save-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 

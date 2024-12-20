@@ -1,0 +1,26 @@
+:root{
+  --color-sf-content-bg-color: rgba(255, 255, 255);
+  --color-sf-content-bg-color-alt1: #f9fafb;
+  --color-sf-content-bg-color-alt2: #f3f4f6;
+  --color-sf-content-bg-color-alt3: #e5e7eb;
+  --color-sf-content-bg-color-alt4: #9ca3af;
+  --color-sf-content-bg-color-alt5: #6b7280;
+  --color-sf-content-bg-color-hover: #f9fafb;
+  --color-sf-content-bg-color-pressed: #f3f4f6;
+  --color-sf-content-bg-color-focus: #f9fafb;
+  --color-sf-content-bg-color-selected: #e5e7eb;
+  --color-sf-content-bg-color-dragged: #f3f4f6;
+  --color-sf-content-bg-color-disabled: #ffffff;
+  --color-sf-flyout-bg-color: #ffffff;
+  --color-sf-flyout-bg-color-hover: #f3f4f6;
+  --color-sf-flyout-bg-color-pressed: #e5e7eb;
+  --color-sf-flyout-bg-color-focus: #f3f4f6;
+  --color-sf-flyout-bg-color-selected: #e5e7eb;
+  --color-sf-flyout-bg-color-disabled: #fff;
+  --color-sf-overlay-bg-color: rgba(107, 114, 128, 74.9);
+  --color-sf-table-bg-color-hover: #f9fafb;
+  --color-sf-table-bg-color-pressed: #f3f4f6;
+  --color-sf-table-bg-color-selected: #e5e7eb;
+  --color-sf-text-input-bg-color: #ffffff;
+  --color-sf-treeview-item-active-hover-bg: #e5e7eb;
+}
