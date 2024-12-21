@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DropDownButtonModule, ItemModel } from '@syncfusion/ej2-angular-splitbuttons';
+import { CommonModule } from '@angular/common';
 
 @Component({
   standalone: true,
@@ -7,10 +8,21 @@ import { DropDownButtonModule, ItemModel } from '@syncfusion/ej2-angular-splitbu
   template: `
     <div class="e-section-control">
       <!-- DropDownButton with custom itemTemplate -->
-      <button ejs-dropdownbutton [items]='items' content='DropdownButton' [itemTemplate]='itemTemplate'></button>
+     <button ejs-dropdownbutton [items]='items' content='DropdownButton' [itemTemplate]='itemTemplate'></button>
+      <ng-template #itemTemplate let-data>
+        <div>
+          <span class="e-menu-icon {{data.iconCss}}"></span>
+          <ng-container *ngIf="data.url; else textTemplate">
+            <span class="custom-class"><a [href]="data.url" target="_blank" rel="noopener noreferrer">{{data.text}}</a></span>
+          </ng-container>
+          <ng-template #textTemplate>
+            <span class="custom-class">{{data.text}}</span>
+          </ng-template>
+        </div>
+      </ng-template>
     </div>
   `,
-  imports: [DropDownButtonModule]
+  imports: [DropDownButtonModule, CommonModule]
 })
 export class AppComponent {
   // Initialize DropDownButton items
@@ -22,21 +34,4 @@ export class AppComponent {
     { separator: true },
     { text: 'Syncfusion', iconCss: 'e-icons e-mouse-pointer', url: 'http://www.syncfusion.com' }
   ];
-
-  // Template function to customize each item
-  public itemTemplate(data: ItemModel): string {
-    if (data.url) {
-      return `
-        <div>
-          <span class="e-menu-icon ${data.iconCss}"></span>
-          <span class="custom-class"><a href="${data.url}" target="_blank" rel="noopener noreferrer">${data.text}</a></span>
-        </div>`;
-    } else {
-      return `
-        <div>
-          <span class="e-menu-icon ${data.iconCss}"></span>
-          <span class="custom-class">${data.text}</span>
-        </div>`;
-    }
-  }
 }

@@ -58,7 +58,7 @@ imports: [
       TreeMapModule, TreeMapAllModule
     ],
     standalone: true,
-    selector: 'app-root',
+    selector: 'app-container',
   // specifies the template string for the treemap component
   template: `<ejs-treemap id='treemap-container'></ejs-treemap>`,
   encapsulation: ViewEncapsulation.None

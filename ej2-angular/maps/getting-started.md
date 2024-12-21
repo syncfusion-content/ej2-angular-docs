@@ -100,7 +100,7 @@ imports: [
         MapsModule
     ],
     standalone: true,
-    selector: 'app-root',
+    selector: 'app-container',
   // specifies the template string for the maps component
   template: `<ejs-maps id='maps-container'></ejs-maps>`,
   encapsulation: ViewEncapsulation.None
