@@ -1,0 +1,18 @@
+<div class="control-section">
+    <div class="contextmenu-control">
+        <div id="contextmenutarget">{{content}}</div>
+        <ejs-contextmenu #contextmenu cssClass="e-contextMenu-template" id="contextmenu" (created)="onCreated()"
+            [target]="'#contextmenutarget'" [items]="data" [itemTemplate]="itemTemplate"
+            (beforeOpen)="addTemplateClass($event)">
+            <ng-template #itemTemplate let-data>
+                <div class="menu-wrapper">
+                    <span class="{{data.iconCss}} icon-right"></span>
+                    <div class="text-content">
+                        <span class="text">{{ data.answerType }}</span>
+                        <span class="description">{{ data.description }}</span>
+                    </div>
+                </div>
+            </ng-template>
+        </ejs-contextmenu>
+    </div>
+</div>

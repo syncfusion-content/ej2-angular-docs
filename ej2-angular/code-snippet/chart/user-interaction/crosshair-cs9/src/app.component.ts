@@ -8,7 +8,7 @@ import { chartData } from './datasource';
     providers: [DateTimeService, LineSeriesService, TooltipService, CrosshairService, LegendService],
     standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' [crosshair]='crosshair' [tooltip]='tooltip'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' [crosshair]='crosshair' [tooltip]='tooltip' [legendSettings]='legendSettings'>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='x' yName='y' name='John' width='2' [marker]='marker'></e-series>
         </e-series-collection>
@@ -22,6 +22,7 @@ export class AppComponent implements OnInit {
     public title?: string;
     public tooltip?: Object;
     public marker?: Object;
+    public legendSettings?: Object;
     ngOnInit(): void {
         this.chartData = chartData;
         this.primaryXAxis = {
@@ -44,6 +45,7 @@ export class AppComponent implements OnInit {
         this.tooltip = { enable: true, shared: true, format: '${series.name} : ${point.x} : ${point.y}' };
         this.title = 'Average Sales per Person';
         this.marker = { visible: true };
+        this.legendSettings = { visible: false };
     }
 
 }

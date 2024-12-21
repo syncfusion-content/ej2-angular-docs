@@ -1,22 +1,19 @@
 import { ChartModule } from '@syncfusion/ej2-angular-charts';
-import { CandleSeriesService, LineSeriesService, AccumulationDistributionIndicatorService, DateTimeService, CrosshairService, TooltipService, IAxisLabelRenderEventArgs } from '@syncfusion/ej2-angular-charts';
+import { CandleSeriesService, LineSeriesService, AccumulationDistributionIndicatorService, DateTimeService, CrosshairService, TooltipService, LegendService, IAxisLabelRenderEventArgs, TechnicalIndicatorModel } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 import { chartData } from './datasource';
 
 @Component({
     imports: [ChartModule],
-    providers: [CandleSeriesService, LineSeriesService, AccumulationDistributionIndicatorService, DateTimeService, CrosshairService, TooltipService],
+    providers: [CandleSeriesService, LineSeriesService, AccumulationDistributionIndicatorService, DateTimeService, CrosshairService, TooltipService, LegendService],
     standalone: true,
     selector: 'app-container',
     template:
         `<ejs-chart id='chartcontainer' style="display:block;" [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis'
-              [axes]='axes' [chartArea]='chartArea' [crosshair]='crosshair' [tooltip]:'tooltip' (axisLabelRender)= 'axisLabelRender($event)'>
+              [axes]='axes' [chartArea]='chartArea' [crosshair]='crosshair' [tooltip]='tooltip' (axisLabelRender)='axisLabelRender($event)' [indicators]='indicators' [legendSettings]='legendSettings'>
             <e-series-collection>
                 <e-series [dataSource]='chartData' type='Candle' width=2 xName='x' high='high' low='low' open='open' close='close' volume='volume' name='Apple Inc' [animation]='animation'></e-series>
             </e-series-collection>
-            <e-indicators>
-                <e-indicator type='AccumulationDistribution' field="Close" yAxisName='secondary' fill="blue" period=3 seriesName='Apple Inc' [animation]='animation' [accessibility]='accessibility'> </e-indicator>
-            </e-indicators>
         </ejs-chart>`
 })
 export class AppComponent implements OnInit {
@@ -30,7 +27,8 @@ export class AppComponent implements OnInit {
     public chartArea?: Object;
     public accessibility?: Object;
     public animation?: Object;
-
+    public indicators?: TechnicalIndicatorModel[];
+    public legendSettings?: Object;
     public axisLabelRender(args: IAxisLabelRenderEventArgs): void {
         if (args.axis.name === 'secondary') {
             let value: number = Number(args.text) / 1000000000;
@@ -66,11 +64,23 @@ export class AppComponent implements OnInit {
             border: { width: 0 }
         };
         this.tooltip = { enable: true, shared: true };
-        this.accessibility = {
-            accessibilityDescription: 'The Accumulation Distribution indicator is used to assess the buying and selling pressure of Apple Inc. stock.',
-            accessibilityRole: 'indicator'
-        };
-        this.animation = { enable: true };
+        this.legendSettings = { visible: false };
+        this.indicators = [
+            {
+                type: 'AccumulationDistribution',
+                field: 'Close',
+                yAxisName: 'secondary',
+                xName: 'x',
+                fill: 'blue',
+                period: 3,
+                seriesName: 'Apple Inc',
+                animation: { enable: true },
+                accessibility: {
+                    accessibilityDescription: 'The Accumulation Distribution indicator is used to assess the buying and selling pressure of Apple Inc. stock.',
+                    accessibilityRole: 'indicator'
+                }
+            }
+        ];
     }
 
 }
