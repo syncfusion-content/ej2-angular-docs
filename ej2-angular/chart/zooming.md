@@ -81,7 +81,7 @@ By default, zoomin, zoomout, pan and reset buttons will be displayed for zoomed 
 
 ### Toolbar customization
 
-The zoom toolbar in the chart can be repositioned using the `toolbarPosition` property, allowing flexible alignment and placement. It supports horizontal alignments (**Near**, **Center**, and **Far**) and vertical alignments (**Top**, **Middle**, and **Bottom**), with default values set to **Far** and **Top**, respectively. For precise placement, the `x` and `y` properties can be used to adjust the toolbar's position within the chart area. Additionally, enabling the `draggable` property allows users to freely move the toolbar within the chart area, ensuring optimal usability.
+The zoom toolbar in the chart can be repositioned using the [`toolbarPosition`](https://ej2.syncfusion.com/angular/documentation/api/chart/zoomSettingsModel/#toolbarposition) property, allowing flexible alignment and placement. It supports horizontal alignments (**Near**, **Center**, and **Far**) and vertical alignments (**Top**, **Middle**, and **Bottom**), with default values set to **Far** and **Top**, respectively. For precise placement, the [`x`](https://ej2.syncfusion.com/angular/documentation/api/chart/toolbarPositionModel/#x) and [`y`](https://ej2.syncfusion.com/angular/documentation/api/chart/toolbarPositionModel/#y) properties can be used to adjust the toolbar's position within the chart area. Additionally, enabling the [`draggable`](https://ej2.syncfusion.com/angular/documentation/api/chart/toolbarPositionModel/#draggable) property allows users to freely move the toolbar within the chart area, ensuring optimal usability.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

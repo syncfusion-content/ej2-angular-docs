@@ -135,7 +135,7 @@ The chart area background can be customized by using the [`background`](https://
 
 **Chart area margin**
 
-You can customize the space between the chart area from its chart container through `margin` property.
+You can customize the space between the chart area from its chart container through [`margin`](https://ej2.syncfusion.com/angular/documentation/api/chart/chartAreaModel/#margin) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -8,7 +8,9 @@ import { chartData } from './datasource';
     providers: [CategoryService, LineSeriesService, LegendService, TooltipService, DataLabelService],
     standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' [tooltip]=tooltip' [legendSettings]='legendSettings' [accessibility]='accessibility' focusBorderColor='#FF0000' focusBorderWidth=3 focusBorderMargin=5>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' 
+    [tooltip]='tooltip' [legendSettings]='legendSettings' [accessibility]='accessibility' focusBorderColor='#FF0000' 
+    focusBorderWidth=3 focusBorderMargin=5>
         <e-series-collection>
             <e-series [dataSource]='chartData' type='Line' xName='month' yName='sales' name='Sales' [marker]='marker'></e-series>
         </e-series-collection>

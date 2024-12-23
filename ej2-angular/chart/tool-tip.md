@@ -112,7 +112,7 @@ Any HTML elements can be displayed in the tooltip by using the [`template`](http
 
 ## Enable highlight
 
-By setting the `enableHighlight` property to **true**, you can highlight all points in the hovered series while dimming points in other series, enhancing focus and clarity.
+By setting the [`enableHighlight`](https://ej2.syncfusion.com/angular/documentation/api/chart/tooltipSettingsModel/#enablehighlight) property to **true**, you can highlight all points in the hovered series while dimming points in other series, enhancing focus and clarity.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

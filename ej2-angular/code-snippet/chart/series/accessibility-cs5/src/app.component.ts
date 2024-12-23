@@ -1,5 +1,5 @@
 import { ChartModule } from '@syncfusion/ej2-angular-charts';
-import { ScatterSeriesService, TrendlinesService, TooltipService } from '@syncfusion/ej2-angular-charts';
+import { ScatterSeriesService, TrendlinesService, TooltipService, LineSeriesService, LegendService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 
 let data: Object[] = [];
@@ -14,10 +14,10 @@ for (i = 1973; i <= 2013; i++) {
 }
 @Component({
     imports: [ChartModule],
-    providers: [ScatterSeriesService, TrendlinesService, TooltipService],
+    providers: [ScatterSeriesService, TrendlinesService, TooltipService, LineSeriesService, LegendService],
     standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id='chartcontainer' [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [chartArea]= 'chartArea' [tooltip]='tooltip'>
+    template: `<ejs-chart id='chartcontainer' [title]='title' [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [chartArea]= 'chartArea' [tooltip]='tooltip' [legendSettings]='legendSettings'>
             <e-series-collection>
                 <e-series [dataSource]='chartData' type='Scatter' xName='x' yName='y' fill='#0066FF' name='Apple Inc'>
                      <e-trendlines>
@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
     public chartArea?: Object;
     public tooltip?: Object;
     public accessibility?: Object;
-
+    public legendSettings?: Object;
     ngOnInit(): void {
         this.chartData = data;
         this.primaryXAxis = {
@@ -54,6 +54,7 @@ export class AppComponent implements OnInit {
             accessibilityDescription: 'A linear trendline representing the general trend of the historical Indian Rupee rate against the US Dollar.',
             accessibilityRole: 'line'
         };
+        this.legendSettings = { visible: false };
     }
 
 }
