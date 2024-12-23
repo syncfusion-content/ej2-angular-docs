@@ -63,7 +63,7 @@ The [`fill`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshai
 
 **Snap to data**
 
-Enabling the `snapToData` property in the crosshair aligns it with the nearest data point instead of following the exact mouse position.
+Enabling the [`snapToData`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettingsModel/#snaptodata) property in the crosshair aligns it with the nearest data point instead of following the exact mouse position.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

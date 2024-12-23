@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 # Clipboard in Angular Schedule component
 
 The Clipboard functionality in the Syncfusion Schedule control enhances scheduling efficiency by enabling users to cut, copy, and paste appointments with ease. This feature is especially beneficial for those managing multiple appointments, as it eliminates the need for repetitive data entry and allows users to quickly adjust their schedules without hassle.
-To activate the clipboard feature in the scheduler, simply set the [`allowClipboard`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowClipboard) property to **true**.
+To activate the clipboard feature in the scheduler, simply set the [`allowClipboard`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowclipboard) property to **true**.
 
->Note: The [`allowKeyboardInteraction`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowKeyboardInteraction) property must be true for proper functionality of the clipboard feature.
+>Note: The [`allowKeyboardInteraction`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowkeyboardinteraction) property must be true for proper functionality of the clipboard feature.
 
-## Cut, Copy and Paste using keyboard
+## Cut, copy and paste using keyboard
 
 The Syncfusion Schedule control supports keyboard shortcuts to streamline the process of managing appointments.
 
@@ -46,7 +46,7 @@ To use these shortcuts, simply click on the appointment and press **Ctrl+C** to 
 
 >Note: For Mac users, use **Cmd** instead of **Ctrl** for copy, cut, and paste operations.
 
-## Cut, Copy, and Paste using Context Menu
+## Cut, copy, and paste using context menu
 
 You can programmatically manage appointments by using the public methods **cut**, **copy**, and **paste**. These methods allow you to perform the same actions as the context menu or external buttons.
 
@@ -74,9 +74,9 @@ By using these methods, you can programmatically cut, copy, and paste appointmen
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/schedule/clipboard-cs2" %}
-## Modifying Content Before Pasting
+## Modifying content before pasting
 
-You can modify the content of an appointment before pasting it by using [`beforePaste`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#beforePaste) event accessing the appointment details and making necessary changes.
+You can modify the content of an appointment before pasting it by using [`beforePaste`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#beforepaste) event accessing the appointment details and making necessary changes.
 
 The following example demonstrates how to seamlessly copy and paste content from a grid to a scheduler. To do this, follow these steps:
 

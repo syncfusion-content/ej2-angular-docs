@@ -91,16 +91,18 @@ export class AppComponent {
     ]
     
 
-    public onBeforePaste (args: BeforePasteEventArgs)  {
-        const dataArray: string[] = (args.data as string).split('\t');
-        const result: ScheduleData = {
-            Id: dataArray[0],
-            Subject: dataArray[1],
-            StartTime: new Date(dataArray[4]).toISOString(),
-            EndTime: new Date(new Date(dataArray[4]).getTime() + 60 * 60 * 1000).toISOString(),
-            Location: dataArray[2],
-            Description: dataArray[3]
-        };
-        args.data = [result];
+    public onBeforePaste(args: BeforePasteEventArgs) {
+        if (typeof args.data === 'string') {
+            const dataArray: string[] = (args.data as string).split('\t');
+            const result: ScheduleData = {
+                Id: dataArray[0],
+                Subject: dataArray[1],
+                StartTime: new Date(dataArray[4]).toISOString(),
+                EndTime: new Date(new Date(dataArray[4]).getTime() + 60 * 60 * 1000).toISOString(),
+                Location: dataArray[2],
+                Description: dataArray[3]
+            };
+            args.data = [result];
+        }    
     }
 }

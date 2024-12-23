@@ -1,14 +1,14 @@
 import { ChartModule } from '@syncfusion/ej2-angular-charts';
-import { CategoryService, ColumnSeriesService } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, ColumnSeriesService, LegendService } from '@syncfusion/ej2-angular-charts';
 import { Component, OnInit } from '@angular/core';
 import { columnData } from './datasource';
 
 @Component({
     imports: [ChartModule],
-    providers: [CategoryService, ColumnSeriesService],
+    providers: [CategoryService, ColumnSeriesService, LegendService],
     standalone: true,
     selector: 'app-container',
-    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' [titleStyle]='titleStyle' [subTitle]='subTitle' [subTitleStyle]='subTitleStyle'>
+    template: `<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [title]='title' [titleStyle]='titleStyle' [subTitle]='subTitle' [subTitleStyle]='subTitleStyle' [legendSettings]='legendSettings'>
         <e-series-collection>
             <e-series [dataSource]='columnData' type='Column' xName='country' yName='gold' name='Gold'></e-series>
             <e-series [dataSource]='columnData' type='Column' xName='country' yName='silver' name='Silver'></e-series>
@@ -24,6 +24,7 @@ export class AppComponent implements OnInit {
     public titleStyle?: Object;
     public subTitle?: string;
     public subTitleStyle?: Object;
+    public legendSettings?: Object;
     ngOnInit(): void {
         this.columnData = columnData;
         this.primaryXAxis = {
@@ -51,6 +52,7 @@ export class AppComponent implements OnInit {
                 accessibilityRole: 'heading'
             }
         };
+        this.legendSettings = { visible: true };
     }
 
 }
