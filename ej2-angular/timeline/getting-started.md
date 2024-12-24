@@ -12,6 +12,9 @@ domainurl: ##DomainURL##
 
 This section explains how to create a simple Timeline, and demonstrate the basic usage of the Timeline module in an Angular environment.
 
+To get start quickly with Angular Timeline using CLI and Schematics, you can check on this video:
+{% youtube "https://www.youtube.com/watch?v=7CHPsUJESMc&t=26s" %}
+
 ## Dependencies
 
 The list of dependencies required to use the Timeline module in your application is given below:
@@ -46,7 +49,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
