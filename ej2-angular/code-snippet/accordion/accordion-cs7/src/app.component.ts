@@ -1,19 +1,12 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { AccordionModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { AccordionComponent } from '@syncfusion/ej2-angular-navigations';
 import {ExpandEventArgs, AccordionClickArgs} from '@syncfusion/ej2-navigations';
 
 @Component({
-imports: [
-         AccordionModule
-    ],
-
-
+imports: [ AccordionModule],
 standalone: true,
     selector: 'app-container',
     template: `
@@ -79,5 +72,3 @@ export class AppComponent {
     }
   }
 }
-
-

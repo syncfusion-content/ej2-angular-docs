@@ -1,22 +1,15 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
+import { GridModule, PageService,Column, GridComponent, TextAlign} from '@syncfusion/ej2-angular-grids'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
 import { Component, ViewChild } from '@angular/core';
-import { Column, GridComponent, TextAlign } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListAllModule
-    ],
-
-providers: [PageService],
-standalone: true,
+  imports: [ GridModule, DropDownListAllModule],
+  providers: [PageService],
+  standalone: true,
   selector: 'app-root',
   template: `<div style="display: flex">
               <label style="padding: 30px 17px 0 0;">Align the text of header text :</label>

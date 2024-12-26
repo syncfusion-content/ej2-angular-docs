@@ -10,7 +10,6 @@ imports: [
     ],
 standalone: true,
     selector: 'my-app',
-    styleUrls: ['./app.component.css'],
     template: `
     <div class='control-pane'>
         <div class="sample_container avatar-badge">

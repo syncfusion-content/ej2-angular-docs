@@ -1,20 +1,12 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
-import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
-
+import { GridModule,GridComponent, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
+import { ChangeEventArgs, NumericTextBoxComponent,NumericTextBoxModule} from '@syncfusion/ej2-angular-inputs';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { orderDetails } from './datasource';
-import { ChangeEventArgs, NumericTextBoxComponent } from '@syncfusion/ej2-angular-inputs';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        NumericTextBoxModule
-    ],
-
+imports: [GridModule,NumericTextBoxModule],
 providers: [PageService, ToolbarService, EditService],
 standalone: true,
   selector: 'app-root',
@@ -48,6 +40,5 @@ export class AppComponent implements OnInit {
   }
   calculatePageSize({ value }: ChangeEventArgs) {
     (this.grid as GridComponent).pageSettings.pageSize = (this.grid as GridComponent).calculatePageSizeByParentHeight((value as number).toString());
-    
-}
+  }
 }

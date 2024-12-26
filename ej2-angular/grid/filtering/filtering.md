@@ -347,7 +347,6 @@ import { FilterSettingsModel, GridComponent, FilterEventArgs } from '@syncfusion
 
 @Component({
 imports: [
-        
         GridModule,
         MultiSelectModule,
         DropDownListAllModule,

@@ -499,30 +499,15 @@ In the following example, row selection is canceled when the value of **Customer
 {% raw %}
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
-import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
-
-import { Component, OnInit, ViewChild, Renderer2 } from '@angular/core';
+import { GridModule} from '@syncfusion/ej2-angular-grids'
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { data ,Order} from './datasource';
-import {
-  GridComponent,
-  SelectionSettingsModel,
-  PageSettingsModel,
-  RowSelectingEventArgs,
-  RowSelectEventArgs,
-  RowDeselectEventArgs,
-  RowDeselectingEventArgs,
-} from '@syncfusion/ej2-angular-grids';
+import { GridModule,GridComponent, SelectionSettingsModel,PageSettingsModel,RowSelectingEventArgs, RowSelectEventArgs, RowDeselectEventArgs, RowDeselectingEventArgs} from '@syncfusion/ej2-angular-grids';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [EditService, ToolbarService, PageService, FilterService],
-standalone: true,
+  imports: [ GridModule],
+  standalone: true,
   selector: 'app-root',
   template: `
         <p id="message">{{ message }}</p>

@@ -16,6 +16,7 @@
     "@syncfusion/ej2-angular-lists": "*",
     "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-layouts": "*",
+    "@syncfusion/ej2-lists": "*",
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-angular-buttons": "*",
     "@angular/animations": "17.1.2",

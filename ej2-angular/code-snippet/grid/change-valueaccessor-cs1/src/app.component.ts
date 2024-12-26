@@ -1,28 +1,16 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService } from '@syncfusion/ej2-angular-grids'
+import { GridModule,GridComponent, ColumnModel,PageService } from '@syncfusion/ej2-angular-grids'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import {TextBoxModule} from '@syncfusion/ej2-angular-inputs'
-
+import { DropDownListAllModule,DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
+import {TextBoxModule,TextBoxComponent} from '@syncfusion/ej2-angular-inputs'
 import { Component, ViewChild } from '@angular/core';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
-import { GridComponent, ColumnModel } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
-import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule,
-        DropDownListAllModule,
-        TextBoxModule
-    ],
-
-providers: [PageService],
-standalone: true,
+  imports: [ GridModule, ButtonModule, DropDownListAllModule,TextBoxModule],
+  providers: [PageService],
+  standalone: true,
   selector: 'app-root',
   template: `<div style="display: flex">
               <label style="padding: 30px 20px 0 0">Select column name:</label>

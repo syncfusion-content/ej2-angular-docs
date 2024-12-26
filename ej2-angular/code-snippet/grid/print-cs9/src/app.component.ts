@@ -2,31 +2,28 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ChartModule } from '@syncfusion/ej2-angular-charts'
 import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, GroupService  } from '@syncfusion/ej2-angular-grids'
 import { AccumulationChartModule } from '@syncfusion/ej2-angular-charts'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { PieSeriesService, AccumulationTooltipService, AccumulationDataLabelService } from '@syncfusion/ej2-angular-charts'
-import { LineSeriesService, DateTimeService, DataLabelService,StackingColumnSeriesService,CategoryService, ChartShape,
+import { LineSeriesService, DateTimeService, DataLabelService,StackingColumnSeriesService,CategoryService,
        StepAreaSeriesService,SplineSeriesService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
        SelectionService,ScatterSeriesService
     } from '@syncfusion/ej2-angular-charts'
 
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ChartComponent } from '@syncfusion/ej2-angular-charts';
-import { GridComponent, ActionEventArgs, PageService, PrintEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GridComponent,PageService, ActionEventArgs, PrintEventArgs } from '@syncfusion/ej2-angular-grids';
 import { Query, DataManager } from '@syncfusion/ej2-data';
 import { orderData } from './datasource';
 
 @Component({
-imports: [
-         ChartModule, AccumulationChartModule, GridModule,ButtonModule
-    ],
+    imports: [ ChartModule, AccumulationChartModule, GridModule,ButtonModule],
 
-providers: [ LineSeriesService, DateTimeService, DataLabelService, StackingColumnSeriesService,CategoryService,
-               StepAreaSeriesService, SplineSeriesService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
-               PieSeriesService, AccumulationTooltipService, AccumulationDataLabelService, SelectionService,ScatterSeriesService
-               ,PageService],
-standalone: true,
+    providers: [ LineSeriesService, DateTimeService, DataLabelService, StackingColumnSeriesService,CategoryService,
+                StepAreaSeriesService, SplineSeriesService, ChartAnnotationService, LegendService, TooltipService, StripLineService,
+                PieSeriesService, AccumulationTooltipService, AccumulationDataLabelService, SelectionService,ScatterSeriesService
+                ,PageService],
+    standalone: true,
     selector: 'app-root',
     template: `
         <button class ='printbtn' ejs-button cssClass="e-danger" (click)="onClick()"> Print </button>
@@ -55,8 +52,7 @@ standalone: true,
                 </e-series-collection>
             </ejs-chart>
         </div>
-    `,
-    providers: [PageService]
+    `
 })
 export class AppComponent implements OnInit {
     public primaryXAxis?: Object;

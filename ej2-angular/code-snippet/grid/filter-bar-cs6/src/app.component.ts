@@ -3,22 +3,13 @@ import { BrowserModule } from '@angular/platform-browser'
 import { GridModule } from '@syncfusion/ej2-angular-grids'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { GridComponent, Column } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                GroupService],
+imports: [GridModule,ButtonModule],
+providers: [PageService,SortService,FilterService,GroupService],
 standalone: true,
   selector: 'app-root',
   template: `

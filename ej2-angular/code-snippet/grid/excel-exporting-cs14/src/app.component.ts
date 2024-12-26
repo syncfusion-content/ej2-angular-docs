@@ -1,28 +1,15 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, ExcelExportService,DetailRowService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
+import { GridModule, ToolbarService, ExcelExportService,DetailRowService, GridComponent,ToolbarItems,ExcelExportProperties,GridModel } from '@syncfusion/ej2-angular-grids'
+import { DropDownListAllModule, DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, employeeData } from './datasource';
-import {
-    GridComponent,
-    ToolbarItems,
-    ExcelExportProperties,
-    GridModel,
-} from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListAllModule
-    ],
-
-providers: [ExcelExportService, ToolbarService, DetailRowService],
-standalone: true,
+    imports: [GridModule,DropDownListAllModule],
+    providers: [ExcelExportService, ToolbarService, DetailRowService],
+    standalone: true,
     selector: 'app-root',
     template: `
             <div style="display: flex">

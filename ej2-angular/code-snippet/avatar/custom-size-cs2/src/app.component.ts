@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
 imports: [ ],
 standalone: true,
 selector: 'my-app',
-styleUrls: ['./app.component.css'],
 template: `
 <div id='element'>
         <span class="e-avatar">26px</span>

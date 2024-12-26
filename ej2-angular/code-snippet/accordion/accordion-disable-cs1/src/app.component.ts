@@ -4,7 +4,6 @@ import { DialogAllModule } from '@syncfusion/ej2-angular-popups'
 import { DatePickerAllModule } from '@syncfusion/ej2-angular-calendars'
 import { NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs'
 import { AccordionModule } from '@syncfusion/ej2-angular-navigations'
-
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { enableRipple, isNullOrUndefined as isNOU } from '@syncfusion/ej2-base';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
@@ -17,15 +16,7 @@ import { ElementRef } from '@angular/core';
 enableRipple(true);
 
 @Component({
-imports: [
-        
-        DialogAllModule,
-        AccordionModule,
-        DatePickerAllModule,
-        NumericTextBoxAllModule
-    ],
-
-
+imports: [ DialogAllModule, AccordionModule, DatePickerAllModule, NumericTextBoxAllModule ],
 standalone: true,
   selector: 'app-container',
   templateUrl: './app.component.html'
@@ -173,6 +164,3 @@ export class AppComponent implements OnInit {
     }
   }
 }
-
-
-

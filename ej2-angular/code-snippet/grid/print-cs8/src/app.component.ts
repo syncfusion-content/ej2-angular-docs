@@ -1,20 +1,12 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, ToolbarService, PageService } from '@syncfusion/ej2-angular-grids'
-
-
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
 import { ToolbarItems, PageSettingsModel, GridComponent } from '@syncfusion/ej2-angular-grids';
 
-
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [ GridModule],
 providers: [ToolbarService, PageService],
 standalone: true,
     selector: 'app-root',

@@ -1,23 +1,15 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, ExcelExportService } from '@syncfusion/ej2-angular-grids'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-
+import { GridModule, ToolbarService, ExcelExportService,GridComponent, ToolbarItems, ExcelExportProperties,PageService } from '@syncfusion/ej2-angular-grids'
+import { TextBoxModule,TextBoxComponent } from '@syncfusion/ej2-angular-inputs'
 import { Component,  ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems, ExcelExportProperties } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
-import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
-        GridModule,
-        TextBoxModule
-    ],
-
-providers: [ExcelExportService, ToolbarService],
-standalone: true,
+    imports: [GridModule,TextBoxModule],
+    providers: [ExcelExportService, ToolbarService,PageService],
+    standalone: true,
     selector: 'app-root',
     template: `
             <div style="padding: 0px 0 20px 0">

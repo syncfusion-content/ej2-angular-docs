@@ -1,11 +1,11 @@
-import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, ViewChild } from '@angular/core';
+import { GridModule,GridComponent } from '@syncfusion/ej2-angular-grids';
 import { orderDetails } from './datasource';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-imports: [ GridModule,  FormsModule, ButtonModule],
-
-standalone: true,
+  imports: [ GridModule, ButtonModule],
+  standalone: true,
   selector: 'app-root',
   template: `
       <div>
@@ -17,7 +17,7 @@ standalone: true,
           Change height 60px</button>
       </div>
       <div class="control-section"  style="padding-top:20px">
-          <ejs-grid #grid [dataSource]='data' rowHeight='42' height='400' [toolbar]='toolbar'>
+          <ejs-grid #grid [dataSource]='data' rowHeight='42' height='400'>
               <e-columns>
                   <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'>
                   </e-column>
@@ -40,7 +40,6 @@ export class AppComponent {
 
   @ViewChild('grid')
   public grid?: GridComponent;
-  public toolbar?: Object[];
   public heightRow: { [key: string]: number } = {
     small: 20,
     medium: 40,

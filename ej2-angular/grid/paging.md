@@ -117,26 +117,15 @@ The following example demonstrates how to render a **NumericTextBox** component 
 {% raw %}
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
-import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
+import { NumericTextBoxModule,ChangeEventArgs } from '@syncfusion/ej2-angular-inputs'
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { data } from './datasource';
-import { PageService,GridComponent, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-inputs';
+import {GridModule, PageService,GridComponent, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        NumericTextBoxModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                GroupService],
-standalone: true,
+    imports: [ GridModule, NumericTextBoxModule],
+    providers: [PageService],
+    standalone: true,
     selector: 'app-root',
     template:`
         <ejs-grid #grid [dataSource]='data' [allowPaging]='true'
@@ -320,20 +309,15 @@ The following example that example demonstrates how to use these events to displ
 {% raw %}
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
+import { GridModule,GridComponent, PageService } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { PageEventArgs } from '@syncfusion/ej2-grids';
 import { orderDetails } from './datasource';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService, ToolbarService, EditService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [PageService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <p id="message1">{{ message1 }}</p>

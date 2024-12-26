@@ -1,3 +1,19 @@
+export interface Order {
+    OrderID: number;
+    CustomerID: string;
+    EmployeeID: number;
+    OrderDate: Date;
+    ShipName: string;
+    ShipCity: string;
+    ShipAddress: string;
+    ShipRegion: string;
+    ShipPostalCode: string;
+    ShipCountry: string;
+    Freight: number;
+    Verified: boolean;
+}
+
+
 export let data: Object[] = [
     {
         OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),

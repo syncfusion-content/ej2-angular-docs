@@ -1,19 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, PageService, SelectionService, RowDDService } from '@syncfusion/ej2-angular-grids'
-
 import { Component, ViewChild,OnInit } from '@angular/core';
 import { GridComponent, RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
 import { orderDetails, columnDataType } from './datasource';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService, SelectionService, RowDDService],
-standalone: true,
+  imports: [ GridModule],
+  providers: [PageService, SelectionService, RowDDService],
+  standalone: true,
   selector: 'app-root',
   template: `<div style="text-align:center">
              <p style="color:red;" id="message">{{ message }}</p>
@@ -37,9 +32,7 @@ standalone: true,
                 <e-column field="ShipCountry" headerText="Ship Country"
                 width="120"></e-column>
               </e-columns>
-            </ejs-grid>`,
-  styleUrls: ['./app.style.css']
-
+            </ejs-grid>`
 })
 export class AppComponent implements OnInit {
 
