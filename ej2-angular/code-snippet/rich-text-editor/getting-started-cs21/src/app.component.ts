@@ -1,31 +1,18 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
-
-
-
 import { Component } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService, CountService } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, ToolbarSettingsModel, ToolbarService, LinkService, ImageService, HtmlEditorService, CountService, QuickToolbarService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
-imports: [
-        
-        RichTextEditorAllModule,
-        DialogModule
-    ],
-
-
-standalone: true,
+    imports: [RichTextEditorModule],
+    standalone: true,
     selector: 'app-root',
-    template: `<ejs-richtexteditor id='defaultRTE' [toolbarSettings]='tools' [undoRedoSteps] ='steps' [undoRedoTimer]='timer'>
+    template: `<ejs-richtexteditor id='editor' [toolbarSettings]='tools' [undoRedoSteps] ='steps' [undoRedoTimer]='timer'>
                </ejs-richtexteditor>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, CountService]
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, CountService, QuickToolbarService, TableService, PasteCleanupService]
 })
-export class AppComponent  {
-    public tools = {items: ['Undo', 'Redo']};
-    public steps = 50;
-    public timer = 400;
+export class AppComponent {
+    public tools: ToolbarSettingsModel = { items: ['Undo', 'Redo'] };
+    public steps: number= 50;
+    public timer: number = 400;
 }
 
 

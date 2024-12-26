@@ -78,29 +78,6 @@ This sample used [`Code mirror`](https://codemirror.net/) plugin helps to highli
 {% endhighlight %}
 {% endtabs %}
 
-## Undo/redo manager
-
-Undo and redo tools allow you to edit the text by disregard/cancel the recently made changes and restore it to previous state. It is a useful tool to restore the performed action which got changed by mistake. By default, upto 30 actions can be undo/redo in the editor.
-
-To undo and redo operations, do one of the following:
-
-* Press the undo/redo button on the toolbar.
-* Press the `Ctrl + Z/Ctrl + Y` combination on the keyboard.
-
-Customize the undo/redo step count using the [`undoRedoSteps`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#undoredosteps) property. By default, undo/redo actions take 300ms time interval for store the action to the undoRedoManager. The time interval can be customized by using the [`undoRedoTimer`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#undoredotimer).
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs21/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/rich-text-editor/getting-started-cs21/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs21" %}
-
 ## Prevention of cross-site scripting (XSS)
 
 The Rich Text Editor allow the users to edit the content with security by preventing cross-site scripting (XSS). By default, provided built-in support to remove the elements from editor content which cause XSS attack. The editor removes the elements based on the attributes if there is possible to execute script.

@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Style in Angular Rich text editor component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Style in Angular Rich Text Editor component | Syncfusion
+description: Learn here all about Style in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Style 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Rich text editor component
+# Style in the Angular Rich Text Editor component
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The content below outlines the CSS structure you can use to customize the appearance of the control according to your preferences.
 
 ## Customizing the Rich Text Editor's content
 
-Use the following CSS to customize the default Rich Text Editor's content properties like font-family, font-size and color.
+Use the following CSS to modify the default style of the Rich Text Editor's content area, including font properties, background, and text color.
 
 ```CSS
 /* To change font family and font size */
@@ -62,7 +62,7 @@ Use the following CSS to customize the default color in the Rich Text Editor's t
 }
 ```
 
-## Customizing the Rich Text Editor's character count
+## Customizing the character count
 
 Use the following CSS to customize the default color in the Rich Text Editor's character count.
 
@@ -77,3 +77,33 @@ Use the following CSS to customize the default color in the Rich Text Editor's c
     padding-right: 14px;
 }
 ```
+
+## Customizing the placeholder
+
+Use the following CSS to customize the default color in the Rich Text Editor's placeholder.
+
+```CSS
+
+.e-richtexteditor .e-rte-placeholder {
+    color: blue;
+    font-family: monospace;
+}
+
+```
+
+## Customizing the border color
+
+Use the following CSS to customize the border color in the Rich Text Editor's container.
+
+```CSS
+
+.e-richtexteditor .e-rte-container{
+    border: 2px solid #454bc1;
+    border-radius: 4px;
+}
+
+```
+## See Also
+
+* [Editor Styles in the Rich Text Editor](./styling)
+
