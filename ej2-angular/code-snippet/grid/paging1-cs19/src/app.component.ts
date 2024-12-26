@@ -1,20 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
-
+import { GridModule,GridComponent, PageService } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { PageEventArgs } from '@syncfusion/ej2-grids';
 import { orderDetails } from './datasource';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService, ToolbarService, EditService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [PageService],
+    standalone: true,
     selector: 'app-root',
     template: `
     <p id="message1">{{ message1 }}</p>

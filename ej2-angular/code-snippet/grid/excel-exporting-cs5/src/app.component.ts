@@ -1,22 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, ExcelExportService, FilterService } from '@syncfusion/ej2-angular-grids'
-import { SwitchModule } from '@syncfusion/ej2-angular-buttons'
-
+import { GridModule, ToolbarService, ExcelExportService,PageService,GridComponent, ToolbarItems, ExcelExportProperties } from '@syncfusion/ej2-angular-grids'
+import { SwitchModule,SwitchComponent } from '@syncfusion/ej2-angular-buttons'
 import { Component, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems, ExcelExportProperties } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
-import { SwitchComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-imports: [
-        
-        GridModule,
-        SwitchModule
-    ],
-
-providers: [ExcelExportService, ToolbarService, FilterService],
+imports: [GridModule,SwitchModule],
+providers: [ExcelExportService, ToolbarService,PageService],
 standalone: true,
     selector: 'app-root',
     template: `

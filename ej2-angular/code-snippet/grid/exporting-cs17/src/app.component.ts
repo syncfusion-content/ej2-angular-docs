@@ -1,13 +1,8 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, PdfExportService, GroupService } from '@syncfusion/ej2-angular-grids'
-
-
-
-
+import { GridModule, ToolbarService, PdfExportService, GroupService, GridComponent, ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, base64AlgeriaFont } from './datasource';
-import { GridComponent, ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { PdfTrueTypeFont } from '@syncfusion/ej2-pdf-export';
 

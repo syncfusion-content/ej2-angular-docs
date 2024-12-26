@@ -1,10 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { AccordionModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { AccordionComponent } from '@syncfusion/ej2-angular-navigations';
 import { Accordion, ExpandEventArgs, AccordionClickArgs, AccordionItemModel } from '@syncfusion/ej2-navigations';
@@ -13,11 +9,7 @@ import { accordion } from './datasource';
 let dbFlag: number = 0;
 let dynamciAcrdnCount: number = 2;
 @Component({
-imports: [
-         AccordionModule
-    ],
-
-
+imports: [ AccordionModule],
 standalone: true,
     selector: 'app-container',
     template: `
@@ -55,7 +47,7 @@ standalone: true,
 export class AppComponent {
     @ViewChild('element') acrdnInstance?: AccordionComponent;
     public expanded(e: ExpandEventArgs) {
-         let Elementindex = document.getElementsByClassName("e-expand-state e-selected e-active")[0];
+      let Elementindex = (this.acrdnInstance as AccordionComponent).element.getElementsByClassName("e-expand-state e-selected e-active")[0];
          if([].slice.call(((e.element as HTMLElement).parentElement as HTMLElement).children).indexOf((e as any).element as never) == [].slice.call(((e.element as HTMLElement).parentElement as HTMLElement).children).indexOf(Elementindex as never)) {
             let array: AccordionItemModel[] = accordion as AccordionItemModel[];
             for(let i: number = 0 ; i < dynamciAcrdnCount; i++)
@@ -70,6 +62,3 @@ export class AppComponent {
     ngAfterViewInit() {
     }
 }
-
-
-

@@ -291,27 +291,15 @@ In the following example, cell selection is canceled when the value of **ShipCou
 {% raw %}
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService } from '@syncfusion/ej2-angular-grids'
-import { EditService, ToolbarService, FilterService } from '@syncfusion/ej2-angular-grids'
+import { GridModule } from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit, ViewChild, Renderer2 } from '@angular/core';
 import { Order, data } from './datasource';
-import {
-  GridComponent,
-  SelectionSettingsModel,
-  PageSettingsModel,
-  CellSelectEventArgs,
-  CellSelectingEventArgs,
-  CellDeselectEventArgs
-} from '@syncfusion/ej2-angular-grids';
+import { GridComponent, SelectionSettingsModel,PageSettingsModel,CellSelectEventArgs,CellSelectingEventArgs,
+CellDeselectEventArgs} from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [EditService, ToolbarService, PageService, FilterService],
-standalone: true,
+  imports: [ GridModule],
+  standalone: true,
   selector: 'app-root',
   template: `
         <p id="message">{{ message }}</p>

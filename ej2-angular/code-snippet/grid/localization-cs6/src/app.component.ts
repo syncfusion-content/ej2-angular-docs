@@ -1,10 +1,7 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, ToolbarService, EditService,ExcelExportService,PdfExportService,SearchService  } from '@syncfusion/ej2-angular-grids'
+import { GridModule, PageService  } from '@syncfusion/ej2-angular-grids'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { L10n, loadCldr, setCulture, setCurrencyCode } from '@syncfusion/ej2-base';
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
@@ -16,19 +13,12 @@ import numberingSystems from './numberingSystems.json'
 import frFRLocalization from './locale.json';
 
 L10n.load(frFRLocalization);
-
-
 setCulture('fr-FR'); // Change the Grid culture
 setCurrencyCode('EUR');
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule
-    ],
-
-providers: [PageService, ToolbarService, EditService,ExcelExportService,PdfExportService,SearchService ],
+imports: [GridModule,ButtonModule],
+providers: [PageService ],
 standalone: true,
     selector: 'app-root',
     template: `

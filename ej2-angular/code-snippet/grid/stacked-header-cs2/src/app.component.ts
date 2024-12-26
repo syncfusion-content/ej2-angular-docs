@@ -1,25 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,PageService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+import { GridModule,PageService,ColumnModel } from '@syncfusion/ej2-angular-grids'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
 import { Component, OnInit } from '@angular/core';
 import { orderDetails } from './datasource';
-import { ColumnModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule,
-        TooltipModule,
-        DropDownListAllModule
-    ],
-
-providers: [PageService],
-standalone: true,
+  imports: [ GridModule,DropDownListAllModule],
+  providers: [PageService],
+  standalone: true,
   selector: 'app-root',
   template: `<div>
               <ejs-grid [dataSource]="data" allowPaging="true">

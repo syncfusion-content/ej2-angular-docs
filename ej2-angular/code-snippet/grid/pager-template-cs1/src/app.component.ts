@@ -1,26 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
-import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids'
-import { NumericTextBoxModule } from '@syncfusion/ej2-angular-inputs'
-
+import { NumericTextBoxModule,ChangeEventArgs } from '@syncfusion/ej2-angular-inputs'
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 import { data } from './datasource';
-import { PageService,GridComponent, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-inputs';
+import {GridModule, PageService,GridComponent, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        NumericTextBoxModule
-    ],
-
-providers: [PageService,
-                SortService,
-                FilterService,
-                GroupService],
-standalone: true,
+    imports: [ GridModule, NumericTextBoxModule ],
+    providers: [PageService],
+    standalone: true,
     selector: 'app-root',
     template:`
         <ejs-grid #grid [dataSource]='data' [allowPaging]='true'

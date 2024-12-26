@@ -3,9 +3,11 @@ import { Component } from '@angular/core';
 import  { ListViewModule } from '@syncfusion/ej2-angular-lists';
 
 @Component({
+    imports: [
+        ListViewModule, CommonModule
+    ],
     selector: 'my-app',
-    imports: [ListViewModule, CommonModule],    
-    styleUrls: ['./app.component.css'],
+    standalone: true,
     template: `
     <div id="letterAvatarList">
         <ejs-listview id='letterAvatarList' [dataSource]='dataSource' [headerTitle]='headerTitle' [showHeader]='true' [sortOrder]='sortOrder'>

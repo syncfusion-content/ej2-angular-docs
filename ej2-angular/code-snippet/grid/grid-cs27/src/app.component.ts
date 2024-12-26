@@ -1,16 +1,16 @@
 import { Component, OnInit, ViewChild } from "@angular/core";
 import { data } from "./datasource";
-import { TooltipComponent, TooltipEventArgs } from "@syncfusion/ej2-angular-popups";
+import {TooltipAllModule, TooltipComponent, TooltipEventArgs } from "@syncfusion/ej2-angular-popups";
+import { GridModule, PageService} from '@syncfusion/ej2-angular-grids'
 
 @Component({
-imports: [TooltipAllModule, GridModule,  FormsModule],
-
-standalone: true,
+  imports: [TooltipAllModule, GridModule],
+  standalone: true,
+  providers: [PageService],
   selector: "app-root",
   template: `
     <div class="control-section" >
-      <ejs-tooltip #tooltip (beforeRender)="beforeRender($event)" 
-      target=".e-headertext">
+      <ejs-tooltip #tooltip (beforeRender)="beforeRender($event)" target=".e-headertext">
         <ejs-grid [dataSource]="data" allowPaging='true'>
           <e-columns>
             <e-column field="OrderID" headerText="Order ID" width="120">

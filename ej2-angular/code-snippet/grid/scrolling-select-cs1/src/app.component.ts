@@ -1,22 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-
+import { GridModule, PageService, ToolbarService, EditService,RowSelectEventArgs, GridComponent } from '@syncfusion/ej2-angular-grids'
+import { DropDownListModule,ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { RowSelectEventArgs, GridComponent } from '@syncfusion/ej2-angular-grids';
-import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
  
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListModule 
-        ],
-
-providers: [PageService, ToolbarService, EditService],
-standalone: true,
+    imports: [GridModule,DropDownListModule ],
+    providers: [PageService, ToolbarService, EditService],
+    standalone: true,
     selector: 'app-root',
     template: `   
             <div style="display: flex">

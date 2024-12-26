@@ -1,21 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule } from '@syncfusion/ej2-angular-grids'
+import { GridModule,GridComponent } from '@syncfusion/ej2-angular-grids'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule
-    ],
-
-
-standalone: true,
+  imports: [GridModule, ButtonModule],
+  standalone: true,
   selector: 'app-root',
   template: `<button ejs-button (click)="refreshHeader()">Refresh Header</button>
             <div class="control-section" style='padding:20px 0px 0px 0px'>

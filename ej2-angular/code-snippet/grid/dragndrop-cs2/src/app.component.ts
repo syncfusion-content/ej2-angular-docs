@@ -1,19 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, SelectionService, RowDDService } from '@syncfusion/ej2-angular-grids'
-
+import { GridModule,SelectionService, RowDDService } from '@syncfusion/ej2-angular-grids'
 import { GridComponent, RowDragEventArgs } from '@syncfusion/ej2-angular-grids';
 import { data } from './datasource';
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PageService, SelectionService, RowDDService],
-standalone: true,
+    imports: [ GridModule],
+    providers: [SelectionService, RowDDService],
+    standalone: true,
     selector: 'app-root',
     template: `<div class="control-section">
                 <ejs-grid #grid [dataSource]="data" [allowRowDragAndDrop]="true"
@@ -34,9 +29,8 @@ standalone: true,
                         width="130"></e-column>
                     </e-columns>
                 </ejs-grid>
-            </div>`,
-    styleUrls: ['./app.style.css']
-})
+            </div>`
+    })
 export class AppComponent {
     public data: Object[] = [];
     public selectOptions?: Object;

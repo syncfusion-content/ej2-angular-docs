@@ -2,34 +2,18 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule } from '@syncfusion/ej2-angular-grids'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { CheckBoxModule,RadioButtonModule,SwitchModule, } from '@syncfusion/ej2-angular-buttons'
-
+import { ButtonModule, SwitchModule  } from '@syncfusion/ej2-angular-buttons'
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListAllModule,
-        ButtonModule,
-        CheckBoxModule,
-        RadioButtonModule,
-        SwitchModule,
-    ],
-
-
-standalone: true,
+  imports: [ GridModule, DropDownListAllModule, ButtonModule,SwitchModule ],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-grid [dataSource]="data" height="315px">
               <e-columns>
-                <e-column
-                  field="OrderID"
-                  headerText="Order ID"
-                  textAlign="Right"
-                  width="120">
+                <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="120">
                 </e-column>
                 <e-column field="CustomerID" headerText="Customer ID" width="140">
                   <ng-template #headerTemplate let-data>
