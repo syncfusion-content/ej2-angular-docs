@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Orientations in Angular Timeline component
 
-The Timeline component supports the display of items in both horizontal and vertical direction by using the [orientation](../api/timeline#orientation) property.
+The Timeline component supports the display of items in both the horizontal and vertical direction by using the [orientation](../api/timeline#orientation) property.
 
 ## Vertical
 
-You can display the items one below the other vertically by setting the [orientation](../api/timeline#orientation) property to `Vertical`. By default, the items are displayed in vertical orientation.
+You can display the items vertically, one below the other, by setting the [orientation](../api/timeline#orientation) property to `Vertical`. By default, the items are displayed in vertical orientation.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -27,8 +27,8 @@ You can display the items one below the other vertically by setting the [orienta
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/timeline/orientations/vertical/src/app.component.html %}
 {% endhighlight %}
-{% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/timeline/orientations/vertical/src/app.component.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/timeline/orientations/vertical/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -36,7 +36,7 @@ You can display the items one below the other vertically by setting the [orienta
 
 ## Horizontal
 
-In horizontal orientation, the items are displayed in a side-by-side manner by setting the [orientation](../api/timeline#orientation) property to `Horizontal`.
+You can display the items horizontally, in a side-by-side manner, by setting the [orientation](../api/timeline#orientation) property to `Horizontal`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,8 +49,8 @@ In horizontal orientation, the items are displayed in a side-by-side manner by s
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/timeline/orientations/horizontal/src/app.component.html %}
 {% endhighlight %}
-{% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/timeline/orientations/horizontal/src/app.component.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/timeline/orientations/horizontal/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   

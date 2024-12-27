@@ -171,7 +171,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-container',
-  styleUrls: ['default-style.css'],
   templateUrl: 'app.template.html'
 })
 
@@ -212,8 +211,8 @@ The following example shows a basic DashboardLayout by adding the panels propert
 {% include code-snippet/dashboard-layout/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="default-style.css" %}
-{% include code-snippet/dashboard-layout/getting-started-cs2/src/default-style.css %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dashboard-layout/getting-started-cs2/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

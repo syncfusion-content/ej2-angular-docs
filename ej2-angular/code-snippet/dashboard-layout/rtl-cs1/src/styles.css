@@ -1,7 +1,29 @@
 @import "node_modules/@syncfusion/ej2-base/styles/material.css";
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
+
+.control-section {
+    margin: 0 auto;
+    width: 500px;
+}
+
+#defaultLayout {
+    padding: 10px;
+}
+
+#defaultLayout .e-panel .e-panel-container {
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.content {
+    line-height: 90px;
+    text-align: center;
+}
+
+.e-panel-header {
+    padding: 10px;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+}

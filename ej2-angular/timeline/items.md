@@ -31,8 +31,8 @@ You can define string content for the Timeline items.
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/timeline/items/content/string-based/src/app.component.html %}
 {% endhighlight %}
-{% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/timeline/items/content/string-based/src/app.component.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/timeline/items/content/string-based/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -46,7 +46,6 @@ You can specify the template content for the items, by using the selector for an
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/items/content/template-based/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/items/content/template-based/src/main.ts %}
 {% endhighlight %}
@@ -55,8 +54,8 @@ You can specify the template content for the items, by using the selector for an
 {% include code-snippet/timeline/items/content/template-based/src/app.component.html %}
 {% endraw %}
 {% endhighlight %}
-{% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/timeline/items/content/template-based/src/app.component.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/timeline/items/content/template-based/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -77,8 +76,8 @@ You can add additional information to each Timeline item, by using the [opposite
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/timeline/items/opposite-content/src/app.component.html %}
 {% endhighlight %}
-{% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/timeline/items/opposite-content/src/app.component.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/timeline/items/opposite-content/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -86,7 +85,7 @@ You can add additional information to each Timeline item, by using the [opposite
 
 ## Dot item
 
-You can define CSS class to set icons, background colors, or images to personalize the appearance of dots associated with each Timeline item by using the [dotCss](../api/timeline/timelineItem/#dotcss) property.
+You can define a CSS class to personalize the appearance of dots associated with each Timeline item by using the [dotCss](../api/timeline/timelineItem/#dotcss) property. This allows you to set icons, background colors, or images for the dots.
 
 ### Adding icons
 
@@ -111,8 +110,8 @@ You can display text for the Timeline items using the `dotCss` property, by addi
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/timeline/items/dot-item/src/app.component.html %}
 {% endhighlight %}
-{% highlight css tabtitle="index.css" %}
-{% include code-snippet/timeline/items/dot-item/index.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/timeline/items/dot-item/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -133,8 +132,8 @@ You can use the [disabled](api/timeline/timelineItem/#disabled) property to disa
 {% highlight html tabtitle="app.component.html" %}
 {% include code-snippet/timeline/items/disabled/src/app.component.html %}
 {% endhighlight %}
-{% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/timeline/items/disabled/src/app.component.css %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/timeline/items/disabled/src/styles.css %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -143,3 +142,21 @@ You can use the [disabled](api/timeline/timelineItem/#disabled) property to disa
 ## cssClass
 
 You can customize the appearance of the Timeline item by specifying a custom CSS class using the [cssClass](../api/timeline/timelineItem/#cssclass) property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/timeline/items/css-class/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/timeline/items/css-class/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/timeline/items/css-class/src/app.component.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/timeline/items/css-class/src/styles.css %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/timeline/items/css-class" %}

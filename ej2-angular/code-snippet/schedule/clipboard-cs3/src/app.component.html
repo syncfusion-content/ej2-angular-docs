@@ -1,10 +1,11 @@
 <div class="schedule-container">
     <ejs-schedule #scheduleObj height='550px' [selectedDate]="selectedDate" [allowResizing]="allowResizing"
-        [allowDragAndDrop]="allowDragDrop" [eventSettings]="eventSettings" [allowClipboard]="true" [showQuickInfo]="false" (beforePaste)="onBeforePaste($event)">
+        [allowDragAndDrop]="allowDragDrop" [eventSettings]="eventSettings" [allowClipboard]="true"
+        [showQuickInfo]="false" (beforePaste)="onBeforePaste($event)">
     </ejs-schedule>
 
-    <ejs-grid
-        id="Grid" #gridObj [dataSource]="gridData" width="550px" height="450px" cssClass="drag-grid" [allowSelection]="true" >
+    <ejs-grid id="Grid" #gridObj [dataSource]="gridData" width="40%" height="450px" cssClass="drag-grid"
+        [allowSelection]="true">
         <e-columns>
             <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-column>
             <e-column field="CustomerID" headerText="Customer ID" width="100"></e-column>

@@ -108,7 +108,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 Once you have successfully installed the layouts package, corresponding component modules are ready to configure in your application from the installed location. Syncfusion Angular package provides two different types of ngModules.
 
-Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module/) to learn about `ngModules`.
+Refer to [Ng-Module](https://ej2.syncfusion.com/angular/documentation/common/ng-module) to learn about `ngModules`.
 
 Refer to the following snippet to import the `SplitterModule` in `app.module.ts` from the `@syncfusion/ej2-angular-layouts`.
 
@@ -195,7 +195,7 @@ The following CSS files are available in `../node_modules/@syncfusion` package f
 
 You can load the pane contents either as HTML element or string type using [content](https://ej2.syncfusion.com/angular/documentation/api/splitter/panePropertiesModel/#content) property.
 
-For detailed information, refer to the [Pane Content](./pane-content/) section.
+For detailed information, refer to the [Pane Content](./pane-content) section.
 
 ## Running the application
 

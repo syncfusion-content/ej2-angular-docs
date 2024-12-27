@@ -2,6 +2,26 @@
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
+
+#dashboard_default .e-panel .e-panel-container .content {
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    line-height: 90px;
+}
+
+div#properties {
+    width: 205px;
+    margin-left: 15px;
+    padding: 15px;
+    position: absolute;
+}
+
+.inline {
+    display: inline-block;
+}
+
+div#control {
+    width: 500px;
+}

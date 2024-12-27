@@ -107,14 +107,19 @@ Modify the `template` in `app.component.ts` file to render Avatar component.
 `[src/app/app.component.ts]`
 
 ```typescript
+
 import { Component } from '@angular/core';
 
 @Component({
+    imports: [
+    ],
+    standalone: true,
     selector: 'app-root',
     template: `<div id='element'><span class="e-avatar">GR</span></div>`
 })
 
 export class AppComponent {}
+
 ```
 
 ## Run the application

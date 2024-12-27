@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Save restore in Angular Dashboard layout component
 
-The current layout structure of the Dashboard Layout component can be obtained and saved to construct another dashboard with same panel structure using the serialize public method of the component. This method returns the component's current panel setting which can be used to construct a dashboard with the same layout settings.
+The current layout structure of the Dashboard Layout component can be obtained and saved using the [`serialize`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/#serialize) public method of the component. This can be used to construct another dashboard with the same panel structure. This method returns the component's current panel settings which can be used to construct a dashboard with the same layout settings.
 
-The following sample demonstrates how to save and restore the state of the panels using the serialize method. Click Save to store the panel's settings and click Restore to restore the previously saved panel settings.
+The following sample demonstrates how to save and restore the state of the panels using the serialize method. Click Save to store the panel settings and click Restore to restore the previously saved panel settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dashboard-layout/save-restore-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="default-style.css" %}
-{% include code-snippet/dashboard-layout/save-restore-cs1/src/default-style.css %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dashboard-layout/save-restore-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

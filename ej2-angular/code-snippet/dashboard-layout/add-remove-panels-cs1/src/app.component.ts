@@ -11,12 +11,9 @@ import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 import { DashboardLayoutComponent } from '@syncfusion/ej2-angular-layouts';
 
 @Component({
-imports: [ DashboardLayoutModule, ButtonModule, NumericTextBoxModule, DropDownListModule],
-
-
-standalone: true,
+    imports: [DashboardLayoutModule, ButtonModule, NumericTextBoxModule, DropDownListModule],
+    standalone: true,
     selector: 'app-root',
-    styleUrls: ['./default-style.css'],
     template: `
         <div class="control-section">
         <div class="inline" id="control">
@@ -89,22 +86,22 @@ export class AppComponent {
     public columns: number = 5;
     public count: number = 7;
     public panel?: any;
-    public panels: any = [{'id':'Panel0', 'sizeX': 1, 'sizeY': 1,'row': 0, 'col': 0, content:'<div class="content">0</div>'},
-    {'id':'Panel1', 'sizeX': 3, 'sizeY': 2,'row': 0, 'col': 1, content:'<div class="content">1</div>'},
-    {'id':'Panel2', 'sizeX': 1, 'sizeY': 3,'row': 0, 'col': 4, content:'<div class="content">2</div>'},
-    {'id':'Panel3', 'sizeX': 1, 'sizeY': 1,'row': 1, 'col': 0, content:'<div class="content">3</div>'},
-    {'id':'Panel4', 'sizeX': 2, 'sizeY': 1,'row': 2, 'col': 0, content:'<div class="content">4</div>'},
-    {'id':'Panel5', 'sizeX': 1, 'sizeY': 1,'row': 2, 'col': 2, content:'<div class="content">5</div>'},
-    {'id':'Panel6','sizeX': 1, 'sizeY': 1,'row': 2, 'col': 3, content:'<div class="content">6</div>'}
+    public panels: any = [{ 'id': 'Panel0', 'sizeX': 1, 'sizeY': 1, 'row': 0, 'col': 0, content: '<div class="content">0</div>' },
+    { 'id': 'Panel1', 'sizeX': 3, 'sizeY': 2, 'row': 0, 'col': 1, content: '<div class="content">1</div>' },
+    { 'id': 'Panel2', 'sizeX': 1, 'sizeY': 3, 'row': 0, 'col': 4, content: '<div class="content">2</div>' },
+    { 'id': 'Panel3', 'sizeX': 1, 'sizeY': 1, 'row': 1, 'col': 0, content: '<div class="content">3</div>' },
+    { 'id': 'Panel4', 'sizeX': 2, 'sizeY': 1, 'row': 2, 'col': 0, content: '<div class="content">4</div>' },
+    { 'id': 'Panel5', 'sizeX': 1, 'sizeY': 1, 'row': 2, 'col': 2, content: '<div class="content">5</div>' },
+    { 'id': 'Panel6', 'sizeX': 1, 'sizeY': 1, 'row': 2, 'col': 3, content: '<div class="content">6</div>' }
     ];
     addClick() {
         this.panel = {
-          id: 'Panel' + this.count.toString(),
-          sizeX: (this.sizeX as any).value,
-          sizeY: (this.sizeY as any).value,
-          row: (this.row as any).value,
-          col: (this.column as any).value,
-          content: "<div class='content'>" + this.count + '</div>',
+            id: 'Panel' + this.count.toString(),
+            sizeX: (this.sizeX as any).value,
+            sizeY: (this.sizeY as any).value,
+            row: (this.row as any).value,
+            col: (this.column as any).value,
+            content: "<div class='content'>" + this.count + '</div>',
         };
         this.dashboard?.addPanel(this.panel);
         this.count = this.count + 1;
@@ -114,14 +111,12 @@ export class AppComponent {
     removeClick() {
         this.dashboard?.removePanel((this.dropDownListObject as any).value);
         (this.dropDownListObject as any).dataSource.splice(
-          (this.dropDownListObject as any).dataSource.indexOf(
-            (this.dropDownListObject as any).value
-          ),
-          1
+            (this.dropDownListObject as any).dataSource.indexOf(
+                (this.dropDownListObject as any).value
+            ),
+            1
         );
         (this.dropDownListObject as any)?.refresh();
         (this.dropDownListObject as any).value = null as any;
     }
 }
-
-

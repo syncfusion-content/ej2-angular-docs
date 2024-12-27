@@ -1,8 +1,47 @@
 @import "node_modules/@syncfusion/ej2-base/styles/material.css";
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
 
+.control-section {
+    margin: 0 auto;
+    width: 500px;
+}
+
+#defaultLayout {
+    padding: 10px;
+}
+
+#defaultLayout .e-panel .e-panel-container .content {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 100%;
+}
+
+.e-dashboard-layout.e-control .e-panel .e-panel-container .e-panel-header {
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.e-panel .e-header-text {
+    padding: 12px 0 12px 0;
+}
+
+.e-dashboard-layout.e-control .e-panel:hover {
+    border: 0px;
+}
+
+.e-dashboard-layout.e-control .e-panel .e-panel-header {
+    font-size: 15px;
+    font-weight: 500;
+    height: 37px;
+    padding: 10px;
+    vertical-align: middle;
+    /* text-align: left; */
+    border-bottom: 0.5px solid rgba(0, 0, 0, .125);
+}
+
+.e-panel-header {
+    padding: 10px;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, .03);
+}
