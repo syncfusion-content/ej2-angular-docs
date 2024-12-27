@@ -22,14 +22,13 @@ interface ScheduleData {
 }
 
 @Component({
-imports: [
-        
+    imports: [
         ScheduleModule,
         ButtonModule,
         ContextMenuModule,
         GridModule
     ],
-standalone: true,
+    standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html',
     providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService],
@@ -44,7 +43,7 @@ export class AppComponent {
     public selectedDate: Date = new Date(2024, 1, 15);
     public eventSettings: EventSettingsModel = { dataSource: <Object[]>extend([], scheduleData, undefined, true) };
 
-    public gridData: Record<string, any>[] = [ 
+    public gridData: Record<string, any>[] = [
         {
             OrderID: 10248, CustomerID: 'VINET', Role: 'Admin', EmployeeID: 5,
             ShipName: 'Vins et alcools Chevalier', ShipCity: 'Reims', ShipAddress: '59 rue de l Abbaye',
@@ -87,20 +86,21 @@ export class AppComponent {
             ShipRegion: 'CJ', Mask: '7777', ShipPostalCode: '3012', ShipCountry: 'Switzerland', Freight: 22.98, Verified: !1,
             OrderDate: new Date('2024-01-07')
         }
-    
-    ]
-    
 
-    public onBeforePaste (args: BeforePasteEventArgs)  {
-        const dataArray: string[] = (args.data as string).split('\t');
-        const result: ScheduleData = {
-            Id: dataArray[0],
-            Subject: dataArray[1],
-            StartTime: new Date(dataArray[4]).toISOString(),
-            EndTime: new Date(new Date(dataArray[4]).getTime() + 60 * 60 * 1000).toISOString(),
-            Location: dataArray[2],
-            Description: dataArray[3]
-        };
-        args.data = [result];
+    ]
+
+    public onBeforePaste(args: BeforePasteEventArgs) {
+        if (typeof args.data === 'string') {
+            const dataArray: string[] = (args.data as string).split('\t');
+            const result: ScheduleData = {
+                Id: dataArray[0],
+                Subject: dataArray[1],
+                StartTime: new Date(dataArray[4]).toISOString(),
+                EndTime: new Date(new Date(dataArray[4]).getTime() + 60 * 60 * 1000).toISOString(),
+                Location: dataArray[2],
+                Description: dataArray[3]
+            };
+            args.data = [result];
+        }
     }
 }

@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 
 # Avatar customization in Angular Avatar component
 
-## Colour customization
+## Color customization
 
-The avatar comes with default background colour (grey). This can be easily customized to desired colour by adding custom class or directly selecting the avatar class from the CSS.
+The avatar comes with default background color (grey). This can be easily customized to desired color by adding custom class or directly selecting the avatar class from the CSS.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/color-cs2/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/avatar/color-cs2/src/app.component.css %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/avatar/color-cs2/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -32,7 +32,7 @@ The avatar comes with default background colour (grey). This can be easily custo
 
 ## Customize avatar sizes
 
-Even though the avatar comes with five predefined sizes, sometimes it's not enough. So, the avatar is designed in such a way that the width and height will be relative to font-size. By changing the `font-size` of the avatar element, you can change the width and height automatically.
+Although the avatar comes with five predefined sizes, sometimes these are not sufficient. So, the avatar is designed in such a way that the width and height will be relative to font-size. By changing the `font-size` of the avatar element, you can change the width and height automatically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -53,16 +53,15 @@ Even though the avatar comes with five predefined sizes, sometimes it's not enou
 
 ## Use various media in avatar
 
-Avatars can be used with a wide variety of media formats like SVG, font-icons, images, letters, words,
-etc. Some of them are given below.
+Avatars can be used with a wide variety of media formats like SVG, font-icons, images, letters, words, etc. Some of them are given below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/avatar/media-formats-cs2/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/avatar/media-formats-cs2/src/app.component.css %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/avatar/media-formats-cs2/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

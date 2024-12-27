@@ -54,8 +54,8 @@ standalone: true,
 export class AppComponent {
     @ViewChild('tooltip') public control : TooltipComponent | any;
 
-    onChange(value: string | any) {
-        this.control.position = value as Position;
+    onChange(target: string | any) {
+        this.control.position = target.value as Position;
     }
 }
 

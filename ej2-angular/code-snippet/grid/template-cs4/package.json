@@ -16,6 +16,7 @@
     "@syncfusion/ej2-angular-buttons": "*",
     "@syncfusion/ej2-angular-grids": "*",
     "@syncfusion/ej2-base": "*",
+    "@syncfusion/ej2-data": "*",
     "@syncfusion/ej2-buttons": "*",
     "@syncfusion/ej2-calendars": "*",
     "@syncfusion/ej2-dropdowns": "*",

@@ -43,30 +43,17 @@ In this demo, the custom element is rendered for both **CustomerID** and **Order
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% raw %}
-import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule } from '@syncfusion/ej2-angular-grids'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { CheckBoxModule,RadioButtonModule,SwitchModule, } from '@syncfusion/ej2-angular-buttons'
-
+import { ButtonModule, SwitchModule  } from '@syncfusion/ej2-angular-buttons'
 import { Component, OnInit } from '@angular/core';
 import { data } from './datasource';
 import { ChangeEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
-imports: [
-        
-        GridModule,
-        DropDownListAllModule,
-        ButtonModule,
-        CheckBoxModule,
-        RadioButtonModule,
-        SwitchModule,
-    ],
-
-
-standalone: true,
+  imports: [ GridModule, DropDownListAllModule, ButtonModule,SwitchModule ],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-grid [dataSource]="data" height="315px">
               <e-columns>
@@ -140,26 +127,15 @@ You can customize the appearance of the stacked header elements by using the hea
 {% raw %}
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule,PageService } from '@syncfusion/ej2-angular-grids'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { TooltipModule } from '@syncfusion/ej2-angular-popups'
+import { GridModule,PageService,ColumnModel } from '@syncfusion/ej2-angular-grids'
 import { DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
 import { Component, OnInit } from '@angular/core';
 import { orderDetails } from './datasource';
-import { ColumnModel } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-imports: [
-        
-        GridModule,
-        ButtonModule,
-        TooltipModule,
-        DropDownListAllModule
-    ],
-
-providers: [PageService],
-standalone: true,
+  imports: [ GridModule,DropDownListAllModule],
+  providers: [PageService],
+  standalone: true,
   selector: 'app-root',
   template: `<div>
               <ejs-grid [dataSource]="data" allowPaging="true">

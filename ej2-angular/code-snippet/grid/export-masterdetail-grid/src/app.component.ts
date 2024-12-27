@@ -1,22 +1,16 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, ExcelExportService } from '@syncfusion/ej2-angular-grids'
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data, customerData } from './datasource';
-import { GridComponent, ToolbarItems, ExcelExportProperties, RowSelectEventArgs } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, ToolbarItems, ExcelExportProperties, RowSelectEventArgs,GridModule, ToolbarService, ExcelExportService} from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 type carType = { CustomerID: string, CustomerName: string, ContactName: string };
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [ToolbarService, ExcelExportService],
-standalone: true,
+  imports: [ GridModule],
+  providers: [ToolbarService, ExcelExportService],
+  standalone: true,
   selector: 'app-root',
   template: `<ejs-grid #mastergrid id="mastergrid" [dataSource]='masterdata' 
              [selectedRowIndex]="1" [toolbar]='toolbarOptions' 

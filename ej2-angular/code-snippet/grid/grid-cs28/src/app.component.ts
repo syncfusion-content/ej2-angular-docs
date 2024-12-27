@@ -1,10 +1,11 @@
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridComponent, GridModule } from '@syncfusion/ej2-angular-grids';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { data } from './datasource';
 
 @Component({
-imports: [ GridModule,  FormsModule, ButtonModule],
-standalone: true,
+  imports: [ GridModule,ButtonModule],
+  standalone: true,
   selector: 'app-root',
   template: `<div >
               <button ejs-button id="small" cssClass="e-small" 

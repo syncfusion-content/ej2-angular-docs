@@ -1,26 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, PdfExportService, GroupService } from '@syncfusion/ej2-angular-grids'
-
-
-
-
+import { GridModule, ToolbarService, PdfExportService, GroupService,GridComponent, ToolbarItems, PdfExportProperties} from '@syncfusion/ej2-angular-grids'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems, PdfExportProperties } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
-import {
-    PdfStandardFont,
-    PdfFontFamily,
-    PdfFontStyle,
-  } from '@syncfusion/ej2-pdf-export';
+import {PdfStandardFont,PdfFontFamily,PdfFontStyle } from '@syncfusion/ej2-pdf-export';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
+imports: [GridModule],
 providers: [PdfExportService, ToolbarService, GroupService],
 standalone: true,
     selector: 'app-root',

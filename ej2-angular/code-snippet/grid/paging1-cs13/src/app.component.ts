@@ -1,21 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
-import { SwitchModule } from '@syncfusion/ej2-angular-buttons'
-
+import { GridModule,GridComponent, PageService } from '@syncfusion/ej2-angular-grids'
+import { SwitchModule,SwitchComponent } from '@syncfusion/ej2-angular-buttons'
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent } from '@syncfusion/ej2-angular-grids';
-import { SwitchComponent } from '@syncfusion/ej2-angular-buttons';
 import { orderDetails } from './datasource';
 
 @Component({
-imports: [
-        
-        GridModule,
-        SwitchModule
-    ],
-
-providers: [PageService, ToolbarService, EditService],
+imports: [GridModule,SwitchModule],
+providers: [PageService],
 standalone: true,
     selector: 'app-root',
     template: `

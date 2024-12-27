@@ -82,12 +82,20 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding style sheet to the application
 
-To render the Avatar component, import the Avatar and its dependent component's styles as given below in `[src/styles.css]`.
+To render the Avatar component, import the Avatar and its dependent component styles using relative paths as shown below in `[src/styles.css]`.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
+```
+
+Alternatively, you can import the styles directly relative to the **node_modules** folder based on your CSS file's location, as shown below:
+
+```css
+@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-layouts/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
 ```
 
 >Note: To refer the combined component styles, use Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.

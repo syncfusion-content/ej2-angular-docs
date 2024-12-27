@@ -1,25 +1,15 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, PageService, ToolbarService, EditService } from '@syncfusion/ej2-angular-grids'
-import { TextBoxModule } from '@syncfusion/ej2-angular-inputs'
-import { ButtonAllModule } from '@syncfusion/ej2-angular-buttons'
-
+import { GridModule, GridComponent, PageSettingsModel, PageService } from '@syncfusion/ej2-angular-grids'
+import { TextBoxModule, TextBoxComponent } from '@syncfusion/ej2-angular-inputs'
+import { ButtonAllModule,ButtonComponent } from '@syncfusion/ej2-angular-buttons'
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { orderDetails } from './datasource';
-import { GridComponent, PageSettingsModel } from '@syncfusion/ej2-angular-grids';
-import { TextBoxComponent } from '@syncfusion/ej2-angular-inputs';
-import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-imports: [
-        
-        GridModule,
-        TextBoxModule,
-        ButtonAllModule 
-    ],
-
-providers: [PageService, ToolbarService, EditService],
-standalone: true,
+  imports: [GridModule,TextBoxModule, ButtonAllModule],
+  providers: [PageService, ToolbarService, EditService],
+  standalone: true,
   selector: 'app-root',
   template: `
         <div>

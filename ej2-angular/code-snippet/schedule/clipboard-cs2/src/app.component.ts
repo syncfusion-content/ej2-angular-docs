@@ -4,22 +4,20 @@ import { ScheduleModule } from '@syncfusion/ej2-angular-schedule'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations'
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
-import { extend, closest, isNullOrUndefined, remove, removeClass } from '@syncfusion/ej2-base';
-import { DataManager, Query } from '@syncfusion/ej2-data';
+import { extend, closest, isNullOrUndefined, remove } from '@syncfusion/ej2-base';
 import {
-    EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, AgendaService, ScheduleComponent, CellClickEventArgs, MonthAgendaService
+    EventSettingsModel, DayService, WeekService, WorkWeekService, MonthService, AgendaService, ScheduleComponent, MonthAgendaService
 } from '@syncfusion/ej2-angular-schedule';
 import { ContextMenuComponent, MenuItemModel, BeforeOpenCloseMenuEventArgs, MenuEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { scheduleData } from './datasource';
 
 @Component({
-imports: [
-        
+    imports: [
         ScheduleModule,
         ButtonModule,
         ContextMenuModule
     ],
-standalone: true,
+    standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html',
     providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService],
@@ -29,7 +27,6 @@ standalone: true,
 export class AppComponent {
     @ViewChild('scheduleObj') public scheduleObj!: ScheduleComponent;
     @ViewChild('menuObj') public menuObj!: ContextMenuComponent;
-
     public allowResizing: Boolean = false;
     public allowDragDrop: Boolean = false;
     public selectedDate: Date = new Date(2024, 1, 15);
@@ -41,10 +38,6 @@ export class AppComponent {
         { text: 'Copy Event', iconCss: 'e-icons e-copy', id: 'Copy' },
         { text: 'Paste', iconCss: 'e-icons e-paste', id: 'Paste' }
     ];
-
-    ngOnInit(): void {
-        // Any initialization logic can be placed here
-    }
 
     public onContextMenuBeforeOpen(args: BeforeOpenCloseMenuEventArgs): void {
         const newEventElement: HTMLElement = document.querySelector('.e-new-event') as HTMLElement;
@@ -86,5 +79,3 @@ export class AppComponent {
         }
     }
 }
-
-

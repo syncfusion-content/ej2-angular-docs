@@ -1,19 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GridModule, ToolbarService, ExcelExportService, FilterService } from '@syncfusion/ej2-angular-grids'
-
+import { GridComponent, ToolbarItems, GroupService, PageService, GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { Component, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { GridComponent, ToolbarItems, GroupService, PageService, GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { ClickEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [ExcelExportService, ToolbarService, FilterService],
+imports: [GridModule],
 standalone: true,
     selector: 'app-root',
     template: `<ejs-grid #grid id='Grid' [dataSource]='data' [toolbar]='toolbarOptions' 
@@ -29,7 +23,7 @@ standalone: true,
                     <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
                 </e-columns>
                 </ejs-grid>`,
-    providers: [PageService, GroupService]
+    providers: [PageService, GroupService,ExcelExportService, ToolbarService, FilterService]
 })
 export class AppComponent {
 

@@ -1,20 +1,12 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GridModule, ToolbarService, PdfExportService } from '@syncfusion/ej2-angular-grids'
-
+import {GridModule, EditService, ToolbarService, PageService, EditEventArgs} from '@syncfusion/ej2-angular-grids';
 import { Component, ViewChild } from '@angular/core';
 import { data } from './datasource';
-import { EditService, ToolbarService, PageService, EditEventArgs, GridComponent } from '@syncfusion/ej2-angular-grids';
-import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
 
 @Component({
-imports: [
-        
-        GridModule
-    ],
-
-providers: [PdfExportService, ToolbarService],
-standalone: true,
+    imports: [ GridModule],
+    standalone: true,
     selector: 'app-root',
     template: `
         <div class="control-section">
