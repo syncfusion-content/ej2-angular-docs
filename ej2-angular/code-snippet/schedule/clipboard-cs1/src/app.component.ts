@@ -11,13 +11,12 @@ import {
 import { scheduleData } from './datasource';
 
 @Component({
-imports: [
-        
+    imports: [
         ScheduleModule,
         ButtonModule,
         ContextMenuModule
     ],
-standalone: true,
+    standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html',
     providers: [DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService],
@@ -31,7 +30,6 @@ export class AppComponent {
     public allowDragDrop: Boolean = false;
     public selectedDate: Date = new Date(2024, 1, 15);
     public eventSettings: EventSettingsModel = { dataSource: <Object[]>extend([], scheduleData, undefined, true) };
-
 }
 
 

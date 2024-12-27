@@ -1,0 +1,20 @@
+@import "node_modules/@syncfusion/ej2-base/styles/material.css";
+@import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
+
+.eat .e-dot,
+.eat.e-timeline-item.e-connector::after {
+    background-color: aqua;
+    border-color: aqua;
+}
+
+.code .e-dot,
+.code.e-timeline-item.e-connector::after {
+    background-color: blue;
+    border-color: blue;
+}
+
+.repeat .e-dot,
+.repeat.e-timeline-item.e-connector::after {
+    background-color: yellow;
+    border-color: yellow;
+}

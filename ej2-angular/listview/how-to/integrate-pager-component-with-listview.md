@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integrate pager component with listview in Angular Listview component | Syncfusion
+title: Integrate pager component in Angular Listview component | Syncfusion
 description: Learn here all about Integrate pager component with listview in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Integrate pager component with listview 

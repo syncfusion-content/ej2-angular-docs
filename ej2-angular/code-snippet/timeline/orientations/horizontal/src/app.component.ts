@@ -7,12 +7,9 @@ import { TimelineItemModel, TimelineModule, TimelineAllModule } from "@syncfusio
 
 @Component({
 imports: [ CommonModule, TimelineModule, TimelineAllModule ],
-
-
 standalone: true,
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css'],
 })
 
 export class AppComponent  {
@@ -25,5 +22,4 @@ export class AppComponent  {
     ];
   
 }
-
 

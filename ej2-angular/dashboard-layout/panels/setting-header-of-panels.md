@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Setting header of panels in Angular Dashboard layout component
 
-The dashboard layout component is mostly used to represent the data used for monitoring or managing a process. These data or any HTML template can be placed as the content of a panel using the `content` property. Also, word or phrase that summarize the panel’s content can be added as the header on the top of each panel using the `header` property of the panel.
+The dashboard layout component is primarily used to represent data for monitoring or managing processes. These data or any HTML template can be placed as the content of a panel using the [`content`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/panelModel/#content) property. Also, a word or phrase that summarizes the panel's content can be added as the header on the top of each panel using the [`header`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/panelModel/#header) property of the panel.
 
 The following sample demonstrates how to add content for each panel using the header and content properties of the panels.
 
@@ -19,8 +19,8 @@ The following sample demonstrates how to add content for each panel using the he
 {% include code-snippet/dashboard-layout/header-and-content-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="default-style.css" %}
-{% include code-snippet/dashboard-layout/header-and-content-of-panels-cs1/src/default-style.css %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dashboard-layout/header-and-content-of-panels-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -32,17 +32,17 @@ The following sample demonstrates how to add content for each panel using the he
 
 ## Placing components as content of panels
 
-In a dashboard, components like the chart, grids, maps, gauge and more . can be used to present a complex data. Such components can be placed as the panel content by assigning the corresponding component element as the `content` of the panel.
+In a dashboard, components like charts, grids, maps, gauges, and more can be used to present complex data. Such components can be placed as the panel content by assigning the corresponding component element to the [`content`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/panelModel/#content) of the panel.
 
-The following sample demonstrates how to add ej2-chart components as the `content` for each panel in the dashboard layout component.
+The following sample demonstrates how to add EJ2-Chart components as the `content` for each panel in the dashboard layout component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dashboard-layout/components-as-content-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="default-style.css" %}
-{% include code-snippet/dashboard-layout/components-as-content-of-panels-cs1/src/default-style.css %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dashboard-layout/components-as-content-of-panels-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

@@ -4,4 +4,40 @@
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
+
+#container {
+    margin: 0 auto;
+    width: 800px;
+}
+
+#defaultLayout .e-panel .e-panel-container .content {
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+}
+
+td {
+    padding: 5px;
+}
+
+div#properties {
+    width: 205px;
+    margin-left: 15px;
+    border: 1px solid black;
+    padding: 15px;
+    position: absolute;
+}
+
+.inline {
+    display: inline-block;
+}
+
+div#control {
+    width: 500px;
+}
+
+#resize {
+    margin-left: 40%;
+}

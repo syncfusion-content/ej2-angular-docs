@@ -13,7 +13,6 @@ imports: [ DashboardLayoutModule, ChartAllModule, AccumulationChartAllModule],
 
 standalone: true,
     selector: 'app-root',
-    styleUrls: ['./default-style.css'],
     template: `
         <div class="control-section">
             <ejs-dashboardlayout [columns]="6" #editLayout [cellSpacing]='cellSpacing' [draggableHandle]='draggableHandle'>

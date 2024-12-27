@@ -10,21 +10,21 @@ domainurl: ##DomainURL##
 
 # Item configuration in Angular Toolbar component
 
-The Toolbar can be rendered by defining an array of [`items`](https://ej2.syncfusion.com/angular/documentation/api/toolbar#items). Items can be constructed with the following built-in command types or item template.
+The Toolbar can be rendered by defining an array of [`items`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/#items). Items can be constructed with the following built-in command types or item template.
 
 ## Button
 
-`Button` is the default command [`type`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#type), and it can be rendered by using the [`text`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#text) property.
+`Button` is the default command [`type`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#type), and it can be rendered by using the [`text`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#text) property.
 Properties of the button command type:
 
   Property   | Description
 ------------ | -------------
-  [`text`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#text) | The text to be displayed for button.
- [`id`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#id) | The ID of the button to be rendered. If the ID is not given, auto ID is generated.
-  [`prefixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#prefixicon) | Defines the class used to specify an icon for the button. The icon is `positioned before` the text if text is available or the icon alone button is rendered.
-[`suffixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#suffixicon) | Defines the class used to specify an icon for the button. The icon is `positioned after` the text if text is available. If both [`prefixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#prefixicon) and [`suffixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#suffixicon) are specified, only `prefixIcon` is considered.
-  [`width`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#width) | Used to set the [`width`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#width) of the button.
-  [`align`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#align) | Specifies the location for aligning Toolbar items.
+  [`text`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#text) | The text to be displayed for button.
+ [`id`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#id) | The ID of the button to be rendered. If the ID is not given, auto ID is generated.
+  [`prefixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#prefixicon) | Defines the class used to specify an icon for the button. The icon is `positioned before` the text if text is available or the icon alone button is rendered.
+[`suffixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#suffixicon) | Defines the class used to specify an icon for the button. The icon is `positioned after` the text if text is available. If both [`prefixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#prefixicon) and [`suffixIcon`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#suffixicon) are specified, only `prefixIcon` is considered.
+  [`width`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#width) | Used to set the [`width`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#width) of the button.
+  [`align`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#align) | Specifies the location for aligning Toolbar items.
 
 ## Separator
 
@@ -46,7 +46,7 @@ The `Separator` type adds a vertical separation between the Toolbar's single/mul
 
 ## Input
 
-The `Input` type is only applicable for adding `template` elements when the [`template`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item#template) property is defined as an `object`.
+The `Input` type is only applicable for adding `template` elements when the [`template`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/item/#template) property is defined as an `object`.
 Input type creates an `input element` internally that acts as the container for `Syncfusion` input based components.
 
 >Note: Set toolbar item **type** property value as `Input` only for Input components.
@@ -189,4 +189,4 @@ With the above code, the user can switch between the Toolbar items using the Tab
 
 ## See Also
 
-* [How to set item wise custom template](./how-to/set-item-wise-custom-template/)
+* [How to set item wise custom template](./how-to/set-item-wise-custom-template)
