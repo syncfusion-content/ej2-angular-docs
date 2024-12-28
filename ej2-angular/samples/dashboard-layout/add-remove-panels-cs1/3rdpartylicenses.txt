@@ -25,9 +25,6 @@ SEE LICENSE IN license
 @syncfusion/ej2-angular-layouts
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-navigations
-SEE LICENSE IN license
-
 @syncfusion/ej2-base
 SEE LICENSE IN license
 
