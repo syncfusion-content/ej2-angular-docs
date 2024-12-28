@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter list items in the listview in Angular Listview component | Syncfusion
+title: Filter list items in the Angular Listview component | Syncfusion
 description: Learn here all about Filter list items in the listview in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Filter list items in the listview 

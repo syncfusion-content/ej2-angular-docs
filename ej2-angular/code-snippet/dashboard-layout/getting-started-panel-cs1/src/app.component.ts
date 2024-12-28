@@ -1,18 +1,12 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts'
-
-
-
-import { Component,ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-imports: [ DashboardLayoutModule],
-
-
-standalone: true,
+    imports: [DashboardLayoutModule],
+    standalone: true,
     selector: 'app-root',
-    styleUrls: ['./app.component.css'],
     template: `
     <div class="control-section">
         <ejs-dashboardlayout id='defaultLayout' #defaultLayout [columns]='5' [cellSpacing]='cellSpacing' [panels]='panels'>
@@ -31,5 +25,3 @@ export class AppComponent {
     { "sizeX": 1, "sizeY": 1, "row": 2, "col": 3, content: '<div class="content">6</div>' }
     ]
 }
-
-

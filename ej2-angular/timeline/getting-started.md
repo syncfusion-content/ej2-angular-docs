@@ -103,11 +103,18 @@ export class AppModule {}
 
 ## Adding CSS reference
 
-Add Timeline component's styles as given below in `style.css`.
+Add Timeline component's styles as given below in `[src/styles.css]`.
 
 ```css
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
 @import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
+```
+
+Alternatively, based on the location of your CSS file, you can import the styles as shown below:
+
+```css
+@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-layouts/styles/material.css';
 ```
 
 ## Adding Syncfusion Timeline component
@@ -115,18 +122,21 @@ Add Timeline component's styles as given below in `style.css`.
 Modify the template in `app.component.ts` file with `ejs-timeline` to render the Timeline component.
 
 ```javascript
-import { Component } from "@angular/core";
-import { StepModel, Timeline } from '@syncfusion/ej2-angular-layouts';
+import { TimelineModule, TimelineAllModule } from '@syncfusion/ej2-angular-layouts'
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "app-root",
-  template: `<!-- To Render Timeline. -->
-    <div>
-        <ejs-timeline id="timeline"></ejs-timeline>
-    </div>`,
-})
+    imports: [ TimelineModule, TimelineAllModule ],
+    standalone: true,
+    selector: "app-root",
+    template: `<!-- To Render Timeline. -->
+      <div>
+          <ejs-timeline id="timeline"></ejs-timeline>
+      </div>`,
+  })
 export class AppComponent {
 }
+
 ```
 
 ## Adding Items
@@ -134,14 +144,17 @@ export class AppComponent {
 You can define Timeline items by using `<e-item>` tag directive.
 
 ```javascript
-import { Component } from "@angular/core";
+import { TimelineModule, TimelineAllModule } from '@syncfusion/ej2-angular-layouts'
+import { Component } from '@angular/core';
 
 @Component({
+  imports: [ TimelineModule, TimelineAllModule ],
+  standalone: true,
   selector: "app-root",
   template: `<!-- To Render Timeline. -->
     <div>
         <ejs-timeline id="timeline">
-          	<e-items>
+            <e-items>
                 <e-item></e-item>
                 <e-item></e-item>
                 <e-item></e-item>
@@ -152,6 +165,7 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
 }
+
 ```
 
 ## Running the application

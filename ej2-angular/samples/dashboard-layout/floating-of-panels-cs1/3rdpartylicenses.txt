@@ -16,16 +16,7 @@ SEE LICENSE IN license
 @syncfusion/ej2-angular-buttons
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-dropdowns
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-inputs
-SEE LICENSE IN license
-
 @syncfusion/ej2-angular-layouts
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-navigations
 SEE LICENSE IN license
 
 @syncfusion/ej2-base
@@ -34,16 +25,7 @@ SEE LICENSE IN license
 @syncfusion/ej2-buttons
 SEE LICENSE IN license
 
-@syncfusion/ej2-dropdowns
-SEE LICENSE IN license
-
-@syncfusion/ej2-inputs
-SEE LICENSE IN license
-
 @syncfusion/ej2-layouts
-SEE LICENSE IN license
-
-@syncfusion/ej2-navigations
 SEE LICENSE IN license
 
 rxjs

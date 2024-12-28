@@ -12,13 +12,13 @@ domainurl: ##DomainURL##
 
 Panels are the basic building blocks of the dashboard layout component. They act as a container for the data to be visualized or presented. These panels can be positioned or resized for effective presentation of the data.
 
-The following table represents all the available panel properties and the corresponding functionalities
+The following table represents all the available panel properties and the corresponding functionalities.
 
 | **PanelObject** | **Description** |
 | --- | --- |
-| <kbd>id</kbd> | Specifies the ID value of the panel. |
-| <kbd>row</kbd> | Specifies the row value in which the panel to be placed. |
-| <kbd>col</kbd> | Specifies the column value in which the panel to be placed. |
+| <kbd>id</kbd> | Specifies the ID of the panel. |
+| <kbd>row</kbd> | Specifies the row in which the panel is to be placed. |
+| <kbd>col</kbd> | Specifies the column in which the panel is to be placed. |
 | <kbd>sizeX</kbd> | Specifies the width of the panel in cells count. |
 | <kbd>sizeY</kbd> | Specifies the height of the panel in cells count. |
 | <kbd>minSizeX</kbd> |Specifies the minimum width of the panel in cells count. |
@@ -31,7 +31,7 @@ The following table represents all the available panel properties and the corres
 
 ## Positioning of panels
 
-The panels within the layout can be easily positioned or ordered using the `row` and `col` properties of the panels. Positioning of panels will be beneficial to represent the data in any desired order.
+The panels within the layout can be easily positioned or ordered using the [`row`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/panelModel/#row) and [`col`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/panelModel/#col) properties of the panels. Positioning panels is beneficial for representing data in any desired order.
 
 The following sample demonstrates the positioning of panels within the dashboard layout using the row and column properties of the panels.
 
@@ -40,8 +40,8 @@ The following sample demonstrates the positioning of panels within the dashboard
 {% include code-snippet/dashboard-layout/positioning-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="default-style.css" %}
-{% include code-snippet/dashboard-layout/positioning-of-panels-cs1/src/default-style.css %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dashboard-layout/positioning-of-panels-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -53,7 +53,7 @@ The following sample demonstrates the positioning of panels within the dashboard
 
 ## Sizing of panels
 
-A panel's size can be varied easily by defining the `sizeX` and `sizeY` properties. The `sizeX` property defines the width and the `sizeY` property defines height of a panel in cells count. These properties are helpful in designing a dashboard, where the content of each panel may vary in size.
+A panel's size can be varied easily by defining the [`sizeX`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/panelModel/#sizex) and [`sizeY`](https://ej2.syncfusion.com/angular/documentation/api/dashboard-layout/panelModel/#sizey) properties. The `sizeX` property defines the width and the `sizeY` property defines height of a panel in cells count. These properties are helpful in designing a dashboard, where the content of each panel may vary in size.
 
 The following sample demonstrates the sizing of panels within the dashboard layout using the sizeX and sizeY properties of the panels.
 
@@ -62,8 +62,8 @@ The following sample demonstrates the sizing of panels within the dashboard layo
 {% include code-snippet/dashboard-layout/sizing-of-panels-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="default-style.css" %}
-{% include code-snippet/dashboard-layout/sizing-of-panels-cs1/src/default-style.css %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dashboard-layout/sizing-of-panels-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

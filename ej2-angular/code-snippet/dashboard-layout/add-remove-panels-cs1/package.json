@@ -19,7 +19,6 @@
     "@syncfusion/ej2-angular-inputs": "*",
     "@syncfusion/ej2-angular-layouts": "*",
     "@syncfusion/ej2-angular-base": "*",
-    "@syncfusion/ej2-angular-navigations": "*",
     "@angular/animations": "17.1.2",
     "@angular/common": "17.1.2",
     "@angular/compiler": "17.1.2",
