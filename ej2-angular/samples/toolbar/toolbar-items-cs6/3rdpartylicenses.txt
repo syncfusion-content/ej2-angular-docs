@@ -40,10 +40,16 @@ SEE LICENSE IN license
 @syncfusion/ej2-buttons
 SEE LICENSE IN license
 
+@syncfusion/ej2-calendars
+SEE LICENSE IN license
+
 @syncfusion/ej2-data
 SEE LICENSE IN license
 
 @syncfusion/ej2-dropdowns
+SEE LICENSE IN license
+
+@syncfusion/ej2-grids
 SEE LICENSE IN license
 
 @syncfusion/ej2-inputs
