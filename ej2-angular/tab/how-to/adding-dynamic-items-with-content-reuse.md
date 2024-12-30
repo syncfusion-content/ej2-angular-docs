@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding dynamic items with content reuse in Angular Tab component | Syncfusion
+title: Dynamic content reuse in Angular Tab component | Syncfusion
 description: Learn here all about Adding dynamic items with content reuse in Syncfusion Angular Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Adding dynamic items with content reuse 
@@ -25,6 +25,20 @@ Refer to the following sample.
 {% endhighlight %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tab/content-reuse-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight html tabtitle="date-picker.component.html" %}
+{% include code-snippet/tab/content-reuse-cs1/src/date-picker.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="date-picker.component.ts" %}
+{% include code-snippet/tab/content-reuse-cs1/src/date-picker.component.ts %}
+{% endhighlight %}
+
+{% highlight html tabtitle="drop-down.component.html" %}
+{% include code-snippet/tab/content-reuse-cs1/src/drop-down.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="drop-down.component.ts" %}
+{% include code-snippet/tab/content-reuse-cs1/src/drop-down.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
