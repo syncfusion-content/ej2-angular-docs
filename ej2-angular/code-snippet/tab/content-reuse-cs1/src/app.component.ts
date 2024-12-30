@@ -3,16 +3,12 @@ import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns'
 import { DatePickerModule } from '@syncfusion/ej2-angular-calendars'
-import { TabAllModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
-
-
+import { DatePickerComponent } from './date-picker.component';
+import { TabAllModule } from '@syncfusion/ej2-angular-navigations';
+import { DropDownComponent } from './drop-down.component';
 import { Component, ViewChild, OnInit, TemplateRef } from '@angular/core';
 import { createElement } from '@syncfusion/ej2-base';
-import { TabComponent, SelectEventArgs  } from '@syncfusion/ej2-angular-navigations';
+import { TabComponent, SelectEventArgs } from '@syncfusion/ej2-angular-navigations';
 import { enableRipple } from '@syncfusion/ej2-base';
 
 enableRipple(true);
@@ -22,12 +18,10 @@ enableRipple(true);
  */
 
 @Component({
-imports: [TabAllModule,  FormsModule, DatePickerModule ],
-
-
-standalone: true,
+  imports: [ TabAllModule, FormsModule, DatePickerModule, DatePickerComponent, DropDownComponent ],
+  standalone: true,
   selector: 'my-app',
-  templateUrl: 'app/app.component.html',
+  templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
 })
 
@@ -65,13 +59,13 @@ export class AppComponent {
     'Hockey'
   ];
 
-  public tabItemsHeaderText: Object = [{ 'text': 'DatePicker' }, { 'text': 'Dropdown' }, { 'text': 'Reused Dropdown' }];
+  public tabItemsHeaderText: Object[] = [{ 'text': 'DatePicker' }, { 'text': 'Dropdown' }, { 'text': 'Reused Dropdown' }];
 
   public addButtonClicked(e: any): void {
     var newtabItem = [
       { header: { text: 'DynamicTabItem' }, content: this.ThirdDropDowntemplate }
     ];
-    (this.tabObj as TabComponent).addTab(newtabItem as any,1);
+    (this.tabObj as TabComponent).addTab(newtabItem as any, 1);
   }
 
   public removeButtonClicked(e: any): void {
@@ -79,8 +73,4 @@ export class AppComponent {
   }
 
 }
-
-
-
-
 

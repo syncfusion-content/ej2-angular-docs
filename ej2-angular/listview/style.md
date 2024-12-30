@@ -110,9 +110,9 @@ Use the following CSS to customize the selected list item.
 
 ```CSS
 
-.e-listview .e-list-item.e-focused {
-    color: #2fa1ff;
-    background-color: rgb(0, 15, 100);
+.e-listview .e-list-item.e-active {
+    color: red;
+    background-color: aqua;
 }
 
 ```

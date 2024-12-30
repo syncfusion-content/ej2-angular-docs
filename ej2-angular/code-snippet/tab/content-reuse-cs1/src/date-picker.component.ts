@@ -4,6 +4,8 @@ import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
 
 @Component({
   selector: 'date-picker',
+  standalone: true,
+  imports: [DatePickerModule],
   templateUrl: './date-picker.component.html',
   styles: [`h1 { font-family: Lato; }`]
 })
