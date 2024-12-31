@@ -3,19 +3,13 @@ import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { DropDownTreeModule } from '@syncfusion/ej2-angular-dropdowns'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
+    imports: [
         FormsModule, ReactiveFormsModule, ButtonModule, DropDownTreeModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-container',
     // specifies the template string for the DropDownTree component
     template: `<ejs-dropdowntree id='dropdownTree' [fields]='fields'></ejs-dropdowntree>`
@@ -75,8 +69,6 @@ export class AppComponent {
             ]
         },
     ];
-    public fields :Object = { dataSource: this.data, value: 'code', text: 'name', child: 'countries'  };
+    public fields: Object = { dataSource: this.data, value: 'code', text: 'name', child: 'countries' };
 }
-
-
 

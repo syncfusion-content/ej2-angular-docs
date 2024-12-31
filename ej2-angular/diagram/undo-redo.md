@@ -121,6 +121,22 @@ export class AppComponent {
 }
 ```
 
+## canUndo and canRedo 
+
+The [`canUndo`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/history/#canundo) property returns true if there are actions in the undo history stack; otherwise, it returns false. This property helps identify whether any actions are present in the undo stack.The [`canRedo`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/history/#canredo) property returns true if there are actions in the redo history stack; otherwise, it returns false. This property helps identify whether any actions are present in the redo stack.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/undoRedo/canUndo-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/undoRedo/canUndo-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/undoRedo/canUndo-cs1" %}
+
 ## Current entry
 
 While performing interactions with a node or connector, the current history entry is added to the [`currentEntry`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/history/#currententry) property of the [`historyManager`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#historymanager).

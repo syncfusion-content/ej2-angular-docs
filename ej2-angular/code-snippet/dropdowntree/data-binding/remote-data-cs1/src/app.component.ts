@@ -3,20 +3,14 @@ import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { DropDownTreeModule } from '@syncfusion/ej2-angular-dropdowns'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
 import { Component } from '@angular/core';
 import { Query, DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 
 @Component({
-imports: [
+    imports: [
         FormsModule, ReactiveFormsModule, ButtonModule, DropDownTreeModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-container',
     // specifies the template string for the DropDownTree component
     template: `<ejs-dropdowntree id='dropdownTree' [fields]='fields'></ejs-dropdowntree>`
@@ -26,7 +20,7 @@ export class AppComponent {
     constructor() {
 
     }
-     // Use data manager to get dropdown tree data from remote source
+    // Use data manager to get dropdown tree data from remote source
     public data: Object = new DataManager({
         url: 'https://services.odata.org/V4/Northwind/Northwind.svc',
         adaptor: new ODataV4Adaptor,
@@ -40,6 +34,4 @@ export class AppComponent {
         child: { dataSource: this.data, query: this.query1, value: 'OrderID', parentValue: 'EmployeeID', text: 'ShipName' }
     };
 }
-
-
 
