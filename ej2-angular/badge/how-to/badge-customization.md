@@ -18,7 +18,9 @@ Even though badges come with `8 predefined colors`, you can also customize the c
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/color-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/badge/color-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/color-cs2/src/main.ts %}
 {% endhighlight %}
@@ -35,7 +37,9 @@ adjust the `font size` of the badge.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/size-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/badge/size-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/size-cs2/src/main.ts %}
 {% endhighlight %}
@@ -52,7 +56,9 @@ This can be done by adding a custom class to the badge element to override the d
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/custom-position-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/badge/custom-position-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/custom-position-cs2/src/main.ts %}
 {% endhighlight %}

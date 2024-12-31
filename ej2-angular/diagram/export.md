@@ -55,7 +55,6 @@ The diagram provides support to export the desired region of the diagram to vari
 
 * JPG
 * PNG
-* BMP
 * SVG
 
 

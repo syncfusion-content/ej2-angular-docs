@@ -1274,7 +1274,6 @@ This article describes the API migration process of Diagram component from Essen
 </code>
 </td>
 </tr>
-</tr>
 
 <tr>
 <td><b>Sets the pattern of dashes and gaps used to stroke the path of the connector</b></td>
@@ -6321,7 +6320,7 @@ This article describes the API migration process of Diagram component from Essen
 </tr>
 
 <tr>
-<td><b>Enable or disable persisting component's state between page reloads/b></td>
+<td><b>Enable or disable persisting component's state between page reloads</b></td>
 <td><b>Not applicable</b>
 </td>
 <td>
@@ -6528,7 +6527,7 @@ This article describes the API migration process of Diagram component from Essen
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.endGroupAction`</i>
+<b>Property</b>:<i>`historyManager.endGroupAction`</i>
 </br>
 </br>
 <b>HTML</b>
@@ -6563,11 +6562,11 @@ This article describes the API migration process of Diagram component from Essen
         public created() {
             let objects: (NodeModel | ConnectorModel)[] = [];
                 objects.push(this.diagram.nodes[0], this.diagram.nodes[1], this.diagram.connectors[0]);
-                this.diagram.historyList.startGroupAction();
+                this.diagram.historyManager.startGroupAction();
                 this.diagram.distribute('Top', objects);
                 this.diagram.distribute('Bottom', objects);
                 this.diagram.distribute('BottomToTop', objects);
-                this.diagram.historyList.endGroupAction();
+                this.diagram.historyManager.endGroupAction();
         }
 </code></td>
 </tr>
@@ -6624,7 +6623,7 @@ This article describes the API migration process of Diagram component from Essen
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.push`</i>
+<b>Property</b>:<i>`historyManager.push`</i>
 </br>
 </br>
 
@@ -6655,7 +6654,7 @@ This article describes the API migration process of Diagram component from Essen
             let object = diagram.nodes[0];
         object['description'] = (document.getElementById('custom') as HTMLSelectElement).value;
         let entry: HistoryEntry = { undoObject: object };
-        this.diagram.historyList.push(entry);
+        this.diagram.historyManager.push(entry);
         this.diagram.dataBind();
         }
 </code></td>
@@ -6694,7 +6693,7 @@ This article describes the API migration process of Diagram component from Essen
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.redo`</i>
+<b>Property</b>:<i>`historyManager.redo`</i>
 </br>
 </br>
 <b>HTML</b>
@@ -6727,12 +6726,12 @@ This article describes the API migration process of Diagram component from Essen
     let entry = {
         undoObject: node1
     };
-    this.diagram.historyList.push(entry);
-    this.diagram.historyList.undo = function(args: HistoryEntry) {
+    this.diagram.historyManager.push(entry);
+    this.diagram.historyManager.undo = function(args: HistoryEntry) {
         args.redoObject = cloneObject(args.undoObject) as NodeModel;
         args.undoObject['customName'] = 'customNodeChange';
     }
-    this.diagram.historyList.redo = function(args: HistoryEntry) {
+    this.diagram.historyManager.redo = function(args: HistoryEntry) {
         let current: NodeModel = cloneObject(args.undoObject) as NodeModel;
         args.undoObject['customName'] = args.redoObject['customName'];
         args.redoObject = current;
@@ -6754,7 +6753,7 @@ This article describes the API migration process of Diagram component from Essen
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.redoStack`</i>
+<b>Property</b>:<i>`historyManager.redoStack`</i>
 </br>
 </br>
 
@@ -6775,7 +6774,7 @@ This article describes the API migration process of Diagram component from Essen
     }]
     public created() {
     let diagram = $("#diagramContent").ejDiagram("instance");
-    diagram.historyList.redoStack();
+    diagram.historyManager.redoStack();
     }
 </code></td>
 </tr>
@@ -6808,7 +6807,30 @@ This article describes the API migration process of Diagram component from Essen
 </code>
 </td>
 <td>
-<b>Not applicable</b></td>
+<b>Property</b>:<i>`historyManager.stackLimit`</i>
+</br>
+</br>
+
+<b>HTML</b>
+<code>
+
+     <ejs-diagram id="diagram" width="1000" height="600" (created)="created" [nodes] ="nodes">
+     </ejs-diagram>
+</code>
+<b>Script</b>
+<code>
+
+     public  nodes= [{
+        offsetX: 100,
+        offsetY: 100,
+        width: 100,
+        height: 100,
+    }]
+    public created() {
+    this.diagram.historyManager.stackLimit();
+    }
+</code>
+</td>
 </tr>
 
 <tr>
@@ -6854,7 +6876,7 @@ This article describes the API migration process of Diagram component from Essen
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.startGroupAction`</i>
+<b>Property</b>:<i>`historyManager.startGroupAction`</i>
 </br>
 </br>
 
@@ -6876,12 +6898,11 @@ This article describes the API migration process of Diagram component from Essen
     public created() {
     let objects: (NodeModel | ConnectorModel)[] = [];
             objects.push(this.diagram.nodes[0], this.diagram.nodes[1], this.diagram.connectors[0]);
-            this.diagram.historyList.startGroupAction();
+            this.diagram.historyManager.startGroupAction();
             this.diagram.distribute('Top', objects);
             this.diagram.distribute('Bottom', objects);
             this.diagram.distribute('BottomToTop', objects);
-            this.diagram.historyList.endGroupAction();
-    }
+            this.diagram.historyManager.endGroupAction();
     }
 </code></td>
 </tr>
@@ -6918,7 +6939,7 @@ This article describes the API migration process of Diagram component from Essen
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.undo`</i>
+<b>Property</b>:<i>`historyManager.undo`</i>
 </br>
 </br>
 
@@ -6947,18 +6968,17 @@ This article describes the API migration process of Diagram component from Essen
     let entry = {
         undoObject: node1
     };
-    this.diagram.historyList.push(entry);
-    this.diagram.historyList.undo = function(args: HistoryEntry) {
+    this.diagram.historyManager.push(entry);
+    this.diagram.historyManager.undo = function(args: HistoryEntry) {
         args.redoObject = cloneObject(args.undoObject) as NodeModel;
         args.undoObject['customName'] = 'customNodeChange';
     }
-    this.diagram.historyList.redo = function(args: HistoryEntry) {
+    this.diagram.historyManager.redo = function(args: HistoryEntry) {
         let current: NodeModel = cloneObject(args.undoObject) as NodeModel;
         args.undoObject['customName'] = args.redoObject['customName'];
         args.redoObject = current;
     }
     }
-        }
 </code></td>
 </tr>
 
@@ -6992,12 +7012,10 @@ This article describes the API migration process of Diagram component from Essen
     let diagram = $("#diagramContent").ejDiagram("instance");
     diagram.model.historyManager.undoStack();
     }
-    }
-        }
 </code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.undoStack`</i>
+<b>Property</b>:<i>`historyManager.undoStack`</i>
 </br>
 </br>
 <b>HTML</b>
@@ -7020,17 +7038,40 @@ This article describes the API migration process of Diagram component from Essen
             redo: customUndoRedo
         }
         public created() {
-            this.diagram.historyList.undoStack();
+            this.diagram.historyManager.undoStack();
     }
 </code></td>
 </tr>
 <tr>
 <td><b>Set the current entry object</b></td>
 <td>
-<b>Not applicable</b>
+<b>Property</b>:<i>`historyList.currentEntry`</i>
+</br>
+</br>
+
+<b>HTML</b>
+<code>
+
+     <ej-diagram id="diagramCore" width="1000" height="600" (created)="created" [nodes] ="nodes">
+     </ej-diagram>
+</code>
+<b>Script</b>
+<code>
+
+    public nodes = [{
+            offsetX: 100,
+            offsetY: 100,
+            width: 100,
+            height: 100,
+        }]
+    public created() {
+        let diagram = $("#diagramContent").ejDiagram("instance");
+        diagram.historyList.currentEntry();
+    }
+</code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.currentEntry`</i>
+<b>Property</b>:<i>`historyManager.currentEntry`</i>
 </br>
 </br>
 <b>HTML</b>
@@ -7053,7 +7094,7 @@ This article describes the API migration process of Diagram component from Essen
             redo: customUndoRedo
         }
         public created() {
-        diagram.historyList.currentEntry();
+        diagram.historyManager.currentEntry();
         }
 </code></td>
 </tr>
@@ -7061,10 +7102,33 @@ This article describes the API migration process of Diagram component from Essen
 <tr>
 <td><b>set the history entry can be undo</b></td>
 <td>
-<b>Not applicable</b>
+<b>Property</b>:<i>`historyList.canUndo`</i>
+</br>
+</br>
+
+<b>HTML</b>
+<code>
+
+     <ej-diagram id="diagramCore" width="1000" height="600" (created)="created" [nodes] ="nodes">
+     </ej-diagram>
+</code>
+<b>Script</b>
+<code>
+
+    public nodes = [{
+            offsetX: 100,
+            offsetY: 100,
+            width: 100,
+            height: 100,
+        }]
+    public created() {
+        let diagram = $("#diagramContent").ejDiagram("instance");
+        diagram.historyList.canUndo();
+    }
+</code>
 </td>
 <td>
-<b>Property</b>:<i>`historyList.canUndo`</i>
+<b>Property</b>:<i>`historyManager.canUndo`</i>
 </br>
 </br>
 <b>HTML</b>
@@ -7087,15 +7151,12 @@ This article describes the API migration process of Diagram component from Essen
             redo: customUndoRedo
         }
         public created() {
-            diagram.historyList.canUndo = true;
+            diagram.historyManager.canUndo = true;
         }
 </code></td>
 </tr>
 <tr>
 <td><b>Set the history entry can be redo</b></td>
-<td>
-<b>Not applicable</b>
-</td>
 <td>
 <b>Property</b>:<i>`historyList.canRedo`</i>
 </br>
@@ -7104,6 +7165,32 @@ This article describes the API migration process of Diagram component from Essen
 <b>HTML</b>
 <code>
 
+     <ej-diagram id="diagramCore" width="1000" height="600" (created)="created" [nodes] ="nodes">
+     </ej-diagram>
+</code>
+<b>Script</b>
+<code>
+
+    public nodes = [{
+            offsetX: 100,
+            offsetY: 100,
+            width: 100,
+            height: 100,
+        }]
+    public created() {
+        let diagram = $("#diagramContent").ejDiagram("instance");
+        diagram.historyList.canRedo();
+    }
+</code>
+</td>
+<td>
+<b>Property</b>:<i>`historyManager.canRedo`</i>
+</br>
+</br>
+
+<b>HTML</b>
+<code>
+
      <ejs-diagram id="diagramCore" width="1000" height="600" (created)="created" [nodes] ="nodes">
      </ejs-diagram>
 </code>
@@ -7121,7 +7208,7 @@ This article describes the API migration process of Diagram component from Essen
             redo: customUndoRedo
         }
         public created() {
-            diagram.historyList.canUndo = true;
+            diagram.historyManager.canUndo = true;
         }
 </code></td>
 </tr>
@@ -7155,7 +7242,7 @@ This article describes the API migration process of Diagram component from Essen
 </code>
 </td></td>
 <td>
-<b>Property</b>:<i>`historyList.canLog`</i>
+<b>Property</b>:<i>`historyManager.canLog`</i>
 </br>
 </br>
 
@@ -7176,7 +7263,7 @@ This article describes the API migration process of Diagram component from Essen
         }]
 
         public created() {
-            diagram.historyList.canLog = function (entry: HistoryEntry) {
+            diagram.historyManager.canLog = function (entry: HistoryEntry) {
             entry.cancel = true;
             return entry;
         }
@@ -14330,5 +14417,70 @@ this.diagram.loadDiagram(ej1data, true);
             }
         }
 </code></td>
+</tr>
+</table>
+
+## setConstraints
+
+<!-- markdownlint-disable MD033 -->
+<table>
+<tr>
+<td style="width: 20%;"><b>behavior</b></td>
+<td style="width: 40%;"><b>API in Essential® JS 1</b></td>
+<td><b>API in Essential® JS 2</b></td>
+</tr>
+
+<tr>
+<td><b>Set constraints to node</b></br>
+<b>The diagram.setConstraints(node) property is not available in the EJ2 Diagram </b></td>
+<td>
+<b>Property</b>:<i>`setConstraints`</i>
+</br>
+</br>
+<b>HTML</b>
+<code>
+     <ej-diagram id="diagram" width="1000" height="600" [nodes]="nodes" [created]="created">
+     </ej-diagram>
+</code>
+<b>Script</b>
+<code>
+    public nodes=[{
+        name: "Elizabeth",
+        width: 70,
+        height: 40,
+        offsetX: 100,
+        offsetY: 100,
+        Designation: "Managing Director"
+    }]
+    created(){
+        for (var i = 0; i < diagram.nodes.length; i++) {
+            var node = diagram.nodes[i];
+            this.diagram.setConstraints(node);
+        }
+    }
+</code>
+</td>
+<td>
+<b>Property</b>:<i>`setConstraints`</i>
+<b>Not applicable</b></br>
+<b>In EJ2, constraints are set directly on each node</b>
+</br>
+</br>
+<b>HTML</b>
+<code>
+     <ej-diagram id="diagram" width="1000" height="600" [nodes]="nodes"></ej-diagram>
+</code>
+<b>Script</b>
+<code>
+    public nodes=[{
+        name: "Elizabeth",
+        width: 70,
+        height: 40,
+        offsetX: 100,
+        offsetY: 100,
+        constraints: NodeConstraints.Default & ~NodeConstraints.Rotate 
+    }]
+</code>
+</td>
 </tr>
 </table>

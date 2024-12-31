@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Getting started with Angular Badge component
 
-The following section explains the steps required to create a simple **Badge** component using styles and its basic usage.
+The following section explains the steps required to create a simple **Badge** component using styles and demonstrate its basic usage.
 
 ## Setting up angular project
 
@@ -48,7 +48,7 @@ The `Badge` component is pure CSS component which doesn't need specific dependen
 
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion provides two types of package structures for Angular components,
+Currently, Syncfusion provides two types of package structures for Angular components:
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
@@ -88,6 +88,14 @@ To render the Badge component, import the Badge and its dependent component's st
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-notifications/styles/material.css';
+```
+
+Alternatively, based on the location of your CSS file, you can import the styles as shown below:
+
+```css
+@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-notifications/styles/material.css';
 ```
 
 >Note: To refer the combined component styles, use Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
@@ -130,8 +138,8 @@ The following example shows a basic badge component.
 {% include code-snippet/badge/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/badge/getting-started-cs1/src/app.component.css %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/badge/getting-started-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

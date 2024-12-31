@@ -11,6 +11,23 @@
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
 
+#container {
+    visibility: hidden;
+}
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  width: 30%;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+#wrapper {
+    width: 250px;
+    margin: 0 auto;
+}
 
 .custom .head{
     height: 40px;

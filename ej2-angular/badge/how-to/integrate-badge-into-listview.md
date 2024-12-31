@@ -18,7 +18,9 @@ In the following sample, `default` badges are used and there is no need to custo
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/badge/listview-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/badge/listview-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/badge/listview-cs2/src/main.ts %}
 {% endhighlight %}

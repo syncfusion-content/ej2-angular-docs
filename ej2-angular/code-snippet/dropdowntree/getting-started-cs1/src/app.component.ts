@@ -3,18 +3,13 @@ import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { DropDownTreeModule } from '@syncfusion/ej2-angular-dropdowns'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
+    imports: [
         FormsModule, ReactiveFormsModule, ButtonModule, DropDownTreeModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-container',
     // specifies the template string for the DropDownTree component
     template: `<ejs-dropdowntree id='dropdowntree' [fields]='fields' placeholder='Select a Item'></ejs-dropdowntree>`
@@ -24,33 +19,31 @@ export class AppComponent {
     }
     // defined the array of data
     public data: { [key: string]: Object }[] = [
-     {
-        nodeId: '01', nodeText: 'Music',
-        nodeChild: [
-            { nodeId: '01-01', nodeText: 'Gouttes.mp3' }
-        ]
-     },
-     {
-        nodeId: '02', nodeText: 'Videos', expanded: true,
-        nodeChild: [
-            { nodeId: '02-01', nodeText: 'Naturals.mp4' },
-            { nodeId: '02-02', nodeText: 'Wild.mpeg' },
-        ]
-     },
-     {
-        nodeId: '03', nodeText: 'Documents',
-        nodeChild: [
-            { nodeId: '03-01', nodeText: 'Environment Pollution.docx' },
-            { nodeId: '03-02', nodeText: 'Global Water, Sanitation, & Hygiene.docx' },
-            { nodeId: '03-03', nodeText: 'Global Warming.ppt' },
-            { nodeId: '03-04', nodeText: 'Social Network.pdf' },
-            { nodeId: '03-05', nodeText: 'Youth Empowerment.pdf' },
-        ]
-     },
+        {
+            nodeId: '01', nodeText: 'Music',
+            nodeChild: [
+                { nodeId: '01-01', nodeText: 'Gouttes.mp3' }
+            ]
+        },
+        {
+            nodeId: '02', nodeText: 'Videos', expanded: true,
+            nodeChild: [
+                { nodeId: '02-01', nodeText: 'Naturals.mp4' },
+                { nodeId: '02-02', nodeText: 'Wild.mpeg' },
+            ]
+        },
+        {
+            nodeId: '03', nodeText: 'Documents',
+            nodeChild: [
+                { nodeId: '03-01', nodeText: 'Environment Pollution.docx' },
+                { nodeId: '03-02', nodeText: 'Global Water, Sanitation, & Hygiene.docx' },
+                { nodeId: '03-03', nodeText: 'Global Warming.ppt' },
+                { nodeId: '03-04', nodeText: 'Social Network.pdf' },
+                { nodeId: '03-05', nodeText: 'Youth Empowerment.pdf' },
+            ]
+        },
     ];
-     //binding data source through fields property
+    //binding data source through fields property
     public fields: Object = { dataSource: this.data, value: 'nodeId', text: 'nodeText', child: 'nodeChild' };
 }
-
-
 
