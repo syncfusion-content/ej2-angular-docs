@@ -77,7 +77,7 @@ This feature allows you to read the data source and perform add or edit or delet
 
 * This feature allows you to define the nodes and connectors collection in the data source and connectionDataSource respectively.
 
-* You can set the data collection in the model’s dataSourceSettings [`dataManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#dataManager) property. The nodes will be generated based on the data specified in the data source.
+* You can set the data collection in the model’s dataSourceSettings [`datasource`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel/#datasource) property. The nodes will be generated based on the data specified in the data source.
 
 * You can set the connector collection in the model’s dataSourceSettings [`connectionDataSource`](https://ej2.syncfusion.com/angular/documentation/api/diagram/dataSourceModel#connectionDataSource) property.
 
@@ -98,6 +98,18 @@ This feature allows you to read the data source and perform add or edit or delet
 * The dataSourceSettings crudAction’s [`customFields`](https://ej2.syncfusion.com/angular/documentation/api/diagram/crudActionModel#customFields) property is used to maintain the additional information for nodes.
 
 * Similarly, connectionDataSource’s crudAction’s [`customFields`](https://ej2.syncfusion.com/angular/documentation/api/diagram/crudActionModel#customFields) is used to maintain the additional information for connectors.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/dataBinding/connectionDataSource-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/dataBinding/connectionDataSource-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/dataBinding/connectionDataSource-cs1" %}
 
 ## How to perform Editing at runtime
 

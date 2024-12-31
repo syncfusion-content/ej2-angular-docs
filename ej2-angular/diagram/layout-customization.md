@@ -216,7 +216,13 @@ Find the code example to create parent - child relation between source and targe
 
 ## setNodeTemplate
 
- The [`setNodeTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#setnodetemplate) function is provided for the purpose of customizing nodes. It will be called for each node on node initialization. In this function, the node style and its properties can be customized and can bind the custom JSON with node.
+The [`setNodeTemplate`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#setnodetemplate) function allows you to customize the visual representation and behavior of nodes within your diagram. It is invoked during the initialization of each node, enabling you to define the node’s style, properties, and bind custom JSON data to it.
+
+Typically, the `setNodeTemplate` function accepts a container element (e.g., StackPanel, Grid) to organize the visual components within the node. In the following example, a [`StackPanel`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel) is used to organize the node's content, with an [`ImageElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/imageElement) displaying an image and a TextBlock showing text bound to the "Name" property of the node’s data. The StackPanel can contain a variety of elements, including [`PathElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/pathElement),[`NativeElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramNativeElement),[`DiagramElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramElement) and [`HtmlElement`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diagramHtmlElement).
+You can also set the [`cornerRadius`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel/#cornerradius) to create a rounded appearance for the node, while [`horizontalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel/#horizontalalignment) and [`verticalAlignment`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel/#verticalalignment) control the positioning of the StackPanel within the node. 
+
+The [`orientation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/stackPanel/#orientation) property determines whether child elements are arranged horizontally or vertically.By effectively utilizing the setNodeTemplate function, you can create visually appealing and informative nodes that enhance the overall user experience of your diagram.
+
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

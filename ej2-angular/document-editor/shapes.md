@@ -14,7 +14,7 @@ Shapes are drawing objects that include a text box, rectangles, lines, curves, c
 
 ## Supported shapes
 
-The Document Editor has preservation support for Text box, Rectangle, Rounded Rectangle and Line shapes.
+The DocumentEditor has preservation support for Lines, Rectangle, Basic Shapes, Block Arrows, Equation Shapes,Flowchart and Stars and Banners.
 
 ![List of supported shapes in DocumentEditor](images/Shapes_images/supported_shapes.png)
 
