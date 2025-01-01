@@ -1,18 +1,15 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ListViewModule } from '@syncfusion/ej2-angular-lists'
-
-
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-        
+    imports: [
+        CommonModule,
         ListViewModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <div class="sample_container badge-list">
@@ -67,7 +64,4 @@ export class AppComponent {
     }
 
 }
-
-
-
 

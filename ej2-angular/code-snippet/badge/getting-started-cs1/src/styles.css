@@ -1,3 +1,25 @@
 @import '/node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '/node_modules/@syncfusion/ej2-notifications/styles/material.css';
 @import '/node_modules/@syncfusion/ej2-angular-notifications/styles/material.css';
+
+#container {
+    visibility: hidden;
+}
+
+#element {
+    display: flex;
+    width: 400px;
+    margin: auto;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    justify-content: center;
+}
+
+#loader {
+    color: #008cff;
+    height: 40px;
+    left: 45%;
+    position: absolute;
+    top: 45%;
+    width: 30%;
+}
