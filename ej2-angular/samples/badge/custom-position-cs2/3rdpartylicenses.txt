@@ -7,6 +7,15 @@ MIT
 @angular/platform-browser
 MIT
 
+@syncfusion/ej2-angular-notifications
+SEE LICENSE IN license
+
+@syncfusion/ej2-base
+SEE LICENSE IN license
+
+@syncfusion/ej2-notifications
+SEE LICENSE IN license
+
 rxjs
 Apache-2.0
                                Apache License

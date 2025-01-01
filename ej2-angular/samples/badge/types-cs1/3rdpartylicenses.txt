@@ -10,34 +10,10 @@ MIT
 @syncfusion/ej2-angular-base
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-buttons
+@syncfusion/ej2-angular-notifications
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-inputs
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-lists
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-popups
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-splitbuttons
-SEE LICENSE IN license
-
-@syncfusion/ej2-buttons
-SEE LICENSE IN license
-
-@syncfusion/ej2-inputs
-SEE LICENSE IN license
-
-@syncfusion/ej2-lists
-SEE LICENSE IN license
-
-@syncfusion/ej2-popups
-SEE LICENSE IN license
-
-@syncfusion/ej2-splitbuttons
+@syncfusion/ej2-notifications
 SEE LICENSE IN license
 
 rxjs
