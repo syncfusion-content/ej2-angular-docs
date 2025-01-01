@@ -83,7 +83,7 @@ imports: [
          HeatMapModule, HeatMapAllModule
     ],
     standalone: true,
-    selector: 'app-root',
+    selector: 'my-app',
     // specifies the template string for the HeatMap component
     template: `<ejs-heatmap id="heatmap-container"></ejs-heatmap>`,
     encapsulation: ViewEncapsulation.None
