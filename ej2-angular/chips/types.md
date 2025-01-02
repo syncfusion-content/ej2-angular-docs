@@ -10,22 +10,24 @@ domainurl: ##DomainURL##
 
 # Types in Angular Chips component
 
-The ChipList control has the following types.
+The Chips component has the following types:
 
-* Input Chip
-* Choice Chip
-* Filter Chip
-* Action Chip
+* Input Chips
+* Choice Chips
+* Filter Chips
+* Action Chips
 
-## Input Chip
+## Input Chips
 
-Input Chip holds information in compact form. It converts user input into chips.
+Input Chips holds information in compact form. It allows users to convert their input into chips.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/types/input-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/chips/types/input-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/types/input-cs1/src/main.ts %}
 {% endhighlight %}
@@ -33,15 +35,17 @@ Input Chip holds information in compact form. It converts user input into chips.
   
 {% previewsample "page.domainurl/samples/chips/types/input-cs1" %}
 
-## Choice Chip
+## Choice Chips
 
-Choice Chip allows you to select a single chip from the set of ChipList/ChipCollection. It can be enabled by setting the `selection` property to `Single`.
+Choice Chips allows users to select a single chip from the set of ChipList/ChipCollection. It can be enabled by setting the [`selection`](https://ej2.syncfusion.com/angular/documentation/api/chips/#selection) property to `Single`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/types/input-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/chips/types/input-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/types/input-cs2/src/main.ts %}
 {% endhighlight %}
@@ -49,15 +53,17 @@ Choice Chip allows you to select a single chip from the set of ChipList/ChipColl
   
 {% previewsample "page.domainurl/samples/chips/types/input-cs2" %}
 
-## Filter Chip
+## Filter Chips
 
-Filter Chip allows you to select a multiple chip from the set of ChipList/ChipCollection. It can be enabled by setting the `selection` property to `Multiple`.
+Filter Chips allows you to select multiple chips from the set of ChipList/ChipCollection. It can be enabled by setting the [`selection`](https://ej2.syncfusion.com/angular/documentation/api/chips/#selection) property to `Multiple`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/types/input-cs3/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/chips/types/input-cs3/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/types/input-cs3/src/main.ts %}
 {% endhighlight %}
@@ -65,15 +71,17 @@ Filter Chip allows you to select a multiple chip from the set of ChipList/ChipCo
   
 {% previewsample "page.domainurl/samples/chips/types/input-cs3" %}
 
-## Action Chip
+## Action Chips
 
-The Action Chip triggers the event like click or delete, which helps doing action based on the event.
+The Action Chips triggers events like click or delete, which helps perform actions based on the event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/types/input-cs4/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/chips/types/input-cs4/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/types/input-cs4/src/main.ts %}
 {% endhighlight %}
@@ -81,15 +89,17 @@ The Action Chip triggers the event like click or delete, which helps doing actio
   
 {% previewsample "page.domainurl/samples/chips/types/input-cs4" %}
 
-### Deletable Chip
+### Deletable Chips
 
-Deletable Chip allows you to delete a chip from ChipList/ChipCollection. It can be enabled by setting the `enableDelete` property to `true`.
+Deletable Chips allows users to delete a chip from ChipList/ChipCollection. It can be enabled by setting the [`enableDelete`](https://ej2.syncfusion.com/angular/documentation/api/chips/#enabledelete) property to `true`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/chips/types/input-cs5/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/chips/types/input-cs5/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chips/types/input-cs5/src/main.ts %}
 {% endhighlight %}

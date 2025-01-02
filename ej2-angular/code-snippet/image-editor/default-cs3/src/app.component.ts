@@ -46,7 +46,7 @@ export class AppComponent {
     rectangleClick(): void {
         let dimension: any = this.imageEditorObj?.getImageDimension();
         this.imageEditorObj?.drawRectangle(dimension.x + 10, dimension.y + 60, 150, 70);
-        this.imageEditorObj?.drawRectangle(dimension.x + 250, dimension.y + 60, 150, 700, null, '', '', null, null, 8);
+        this.imageEditorObj?.drawRectangle(dimension.x + 250, dimension.y + 60, 150, 700, 0, '', '', 0, false, 8);
     }
     ellipseClick(): void {
         let dimension: any = this.imageEditorObj?.getImageDimension();

@@ -56,7 +56,7 @@ export class AppComponent {
           },
       ]}
     ];
-    public field:Object ={ dataSource: this.data, id: 'id', text: 'name', child: 'subChild' };
+    public field:Object ={ dataSource: this.data, id: 'nodeId', text: 'nodeText', child: 'nodeChild' };
     clicked(args: any): void {
       let nodeId = args.node.getAttribute('data-uid');
       let nodeData: any = this.treeView?.getTreeData(nodeId)[0];

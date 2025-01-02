@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Templates in Angular Drop down tree component | Syncfusion
-description: Learn here all about Templates in Syncfusion Angular Drop down tree component of Syncfusion Essential JS 2 and more.
+title: Templates in Angular Dropdown Tree component | Syncfusion
+description: Learn here all about Templates in Syncfusion Angular Dropdown Tree component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Templates 
+control: Dropdown Tree
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Templates in Angular Drop down tree component
+# Templates in Angular Dropdown Tree component
 
 The Dropdown Tree provides support to customize each list item, header, and footer elements. It uses the Essential JS 2 Template engine to compile and render the elements properly.
 
@@ -18,7 +18,9 @@ The content of each list item within the Dropdown Tree can be customized with th
 
 In the following sample, the Dropdown Tree list items are customized with employee information such as **name** and **job** using the **itemTemplate** property.
 
-The template expression should be provided inside the ${...} interpolation syntax and {% raw %}{{...}}{% endraw %} for ng-template .
+{% raw %}
+The template expression should be provided inside the ${...} interpolation syntax and {{...}} for ng-template.
+{% endraw %} 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,10 +44,9 @@ The currently selected value that is displayed by default on the Dropdown Tree i
 
 In the following sample, the selected value is displayed as a combined text of both `Name` and `Job` in the Dropdown Tree input, which is separated by a hyphen.
 
-The template expression should be provided inside the ${...} interpolation syntax and 
 {% raw %}
-{{...}}
-{% endraw %} for ng-template .
+The template expression should be provided inside the ${...} interpolation syntax and {{...}}for ng-template.
+{% endraw %}
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -109,7 +110,7 @@ In the following sample, the footer element displays the total number of employe
 
 ## No records template
 
-The Dropdown Tree is supports to display custom design in the popup list content using the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#norecordstemplate) property when no matches found on search.
+The Dropdown Tree supports the display of custom design in the popup list content using the [noRecordsTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#norecordstemplate) property when no matches found on search.
 
 In the following sample, popup list content displays the notification of no data available.
 
@@ -153,7 +154,7 @@ In the following sample, when the data fetch request fails, the Dropdown Tree di
 
 ## Custom template to show selected items in input
 
-In Dropdown Tree, while selecting more than one items via checkbox or multi selection support, all the selected items will be displayed in the input. Instead of displaying all the selected item text, the custom template can be displayed by setting the the [mode](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#mode) property as ***Custom*** and [customTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#customTemplate) property.
+In Dropdown Tree, while selecting more than one items via checkbox or multi selection support, all the selected items will be displayed in the input. Instead of displaying all the selected item text, the custom template can be displayed by setting the [mode](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#mode) property as ***Custom*** and [customTemplate](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#customTemplate) property.
 
 When the **mode** property is set as **Custom**, the Dropdown Tree displays the default template value **(${value.length} item(s) selected)** like **1 item(s) selected or 2 item(s) selected**. The default template can be customized by setting **customTemplate**  property.
 

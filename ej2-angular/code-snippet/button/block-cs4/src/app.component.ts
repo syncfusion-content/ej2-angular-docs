@@ -19,13 +19,13 @@ standalone: true,
     selector: 'app-root',
     styleUrls:['./style.css'],
     template:`<div class="e-section-control">
-              <button #btn ejs-button [isPrimary]="true">Button</button></div>`
+              <button #btn ejs-button [isPrimary]="true" (created)="onCreated()">Button</button></div>`
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent {
   @ViewChild('btn')
   private btn: ButtonComponent| any;
-  ngOnInit() {
+  onCreated() {
     this.btn.element.setAttribute("title", "Primary Button")
   }
 }
