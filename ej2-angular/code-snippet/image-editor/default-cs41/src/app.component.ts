@@ -13,7 +13,7 @@ import { UploaderModule } from '@syncfusion/ej2-angular-inputs'
   template: `<div class="e-section-control">
               <!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
-              <ejs-uploader #defaultupload  (selected)="selected()" ></ejs-uploader>
+              <ejs-uploader #defaultupload  (selected)="selected($event)" ></ejs-uploader>
                 <ejs-imageeditor #imageEditor ></ejs-imageeditor>
               </div>
               </div>`

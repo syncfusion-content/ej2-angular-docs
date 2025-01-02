@@ -41,7 +41,7 @@ export class AppComponent {
 
   public toolbarUpdating(args: ToolbarEventArgs): void {
     if (args.toolbarType === 'pen') {
-      args.toolbarItems.forEach((item: ItemModel) => {
+      args.toolbarItems?.forEach((item: any) => {
         if (item.align === 'Center' && (item.tooltipText === 'Stroke Width' || item.tooltipText === 'Remove' || item.type === 'Separator')) {
           item.visible = false;
         }

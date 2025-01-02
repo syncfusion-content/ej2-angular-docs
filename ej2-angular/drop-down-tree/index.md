@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Index in Angular Drop down tree component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular Drop down tree component of Syncfusion Essential JS 2 and more.
+title: Index in Angular Dropdown Tree component | Syncfusion
+description: Learn here all about Index in Syncfusion Angular Dropdown Tree component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Index 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Drop down tree component
+# Index in Angular Dropdown Tree component
 
 The Dropdown Tree component allows you to select single or multiple values from the hierarchical data in a tree-like structure. It has several out-of-the-box features, such as data binding, check boxes, templates, UI customization, accessibility, and pre-selected values. The available key features are
 

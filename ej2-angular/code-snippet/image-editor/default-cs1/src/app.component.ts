@@ -46,11 +46,11 @@ export class AppComponent {
     }
     outlineText(): void {
         let dimension: any = this.imageEditorObj?.getImageDimension();
-        this.imageEditorObj?.drawText(dimension.x, dimension.y+100, 'Syncfusion', 'Arial', 70, false, false, '', false, null, '', 'green', 8);
+        this.imageEditorObj?.drawText(dimension.x, dimension.y+100, 'Syncfusion', 'Arial', 70, false, false, '', false, 0, '', 'green', 8);
     }
     bgColour(): void {
         let dimension: any = this.imageEditorObj?.getImageDimension();
-        this.imageEditorObj?.drawText(dimension.x, dimension.y+200, 'Syncfusion', 'Arial', 70, false, false, '', false, null, 'red', '', null);
+        this.imageEditorObj?.drawText(dimension.x, dimension.y+200, 'Syncfusion', 'Arial', 70, false, false, '', false, 0, 'red', '', 0);
     }
 }
 
