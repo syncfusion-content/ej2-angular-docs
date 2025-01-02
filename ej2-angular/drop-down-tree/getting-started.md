@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Drop down tree component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Drop down tree component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular Dropdown Tree component | Syncfusion
+description:  Checkout and learn about Getting started with Angular Dropdown Tree component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Dropdown Tree
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Drop down tree component
+# Getting started with Angular Dropdown Tree component
 
 This section explains you about how to create a simple **Dropdown Tree** component and configure its available functionalities in Angular.
 
@@ -150,7 +150,7 @@ export class AppComponent {}
 
 ## Binding data source
 
-The Dropdown Tree component can load the data either from local data sources or remote data services. This can be done using the `dataSource` property that is a member of the `fields` property. The dataSource property supports array of JavaScript objects and DataManager. Here, an array of JSON values is passed to the Dropdown Tree component.
+The Dropdown Tree component can load the data either from local data sources or remote data services. This can be done using the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/fieldsModel/#datasource) property that is a member of the [`fields`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#fields) property. The `dataSource` property supports array of JavaScript objects and DataManager. Here, an array of JSON values is passed to the Dropdown Tree component.
 
 ```typescript
 import { Component } from '@angular/core';

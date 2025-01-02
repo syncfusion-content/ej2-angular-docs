@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Checkbox in Angular Drop down tree component | Syncfusion
-description: Learn here all about Checkbox in Syncfusion Angular Drop down tree component of Syncfusion Essential JS 2 and more.
+title: Checkbox in Angular Dropdown Tree component | Syncfusion
+description: Learn here all about Checkbox in Syncfusion Angular Dropdown Tree component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Checkbox 
+control: Dropdown Tree
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Checkbox in Angular Drop down tree component
+# Checkbox in Angular Dropdown Tree component
 
-The Dropdown Tree component allows you to check more than one item from the tree without affecting the UI's appearance by enabling the `showCheckBox` property. When this property is enabled, checkbox appears before each item text in the popup.
+The Dropdown Tree component allows you to check more than one item from the tree without affecting the UI's appearance by enabling the [`showCheckBox`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#showcheckbox) property. When this property is enabled, checkbox appears before each item text in the popup.
 
 In the following example, the `showCheckBox` property is enabled.
 
@@ -18,7 +18,9 @@ In the following example, the `showCheckBox` property is enabled.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdowntree/checkboxes-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/checkboxes-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdowntree/checkboxes-cs1/src/main.ts %}
 {% endhighlight %}
@@ -28,7 +30,7 @@ In the following example, the `showCheckBox` property is enabled.
 
 ## Auto Check
 
-By default, the checkbox state of the parent and child items in the Dropdown Tree will not be dependent over each other. If you need dependent checked state, then enable the `autoCheck` property which is a member of `treeSettings` property.
+By default, the checkbox state of the parent and child items in the Dropdown Tree will not be dependent over each other. If you need dependent checked state, then enable the [`autoCheck`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/treeSettingsModel/#autocheck) property which is a member of [`treeSettings`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#treesettings) property.
 
 * If one or more child items are not in the checked state, then the parent item will be in the intermediate state.
 
@@ -42,7 +44,9 @@ In the following example, the `autoCheck` property is enabled.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdowntree/autocheck-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/autocheck-cs1/src/app.component.ts %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdowntree/autocheck-cs1/src/main.ts %}
 {% endhighlight %}
@@ -54,15 +58,17 @@ In the following example, the `autoCheck` property is enabled.
 
 The Dropdown Tree component has in-built support to select all the tree items using Select All options in the header.
 
-When the `showSelectAll` property is set to true, a checkbox will be displayed in the popup header that allows you to select or deselect all the tree items in the popup.
+When the [`showSelectAll`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#showselectall) property is set to true, a checkbox will be displayed in the popup header that allows you to select or deselect all the tree items in the popup.
 
-By default, `Select All` and `unSelect All` text values will be showcased along with the checkbox in the popup header to indicate the action to be performed on checking or unchecking the checkbox. You can customize these name attributes by using `selectAllText` and `unSelectAllText` properties respectively.
+By default, `Select All` and `Unselect All` text values will be showcased along with the checkbox in the popup header to indicate the action to be performed on checking or unchecking the checkbox. You can customize these name attributes by using [`selectAllText`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#selectalltext) and [`unSelectAllText`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-tree/#unselectalltext) properties respectively.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/dropdowntree/select-all-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/dropdowntree/select-all-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdowntree/select-all-cs1/src/main.ts %}
 {% endhighlight %}

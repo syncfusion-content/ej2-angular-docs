@@ -4,15 +4,12 @@ import { RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 import { enableRipple } from '@syncfusion/ej2-base'
 import { FormsModule } from '@angular/forms'
-
-
-
-
+import {CommonModule} from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
 imports: [
-        
+    CommonModule,
         RadioButtonModule,
         FormsModule,
         DropDownListModule

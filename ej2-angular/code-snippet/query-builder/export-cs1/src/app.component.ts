@@ -63,13 +63,13 @@ export class AppComponent implements OnInit {
         }]
     };
     }
-     getSql(): void {
+    getSql(): void {
         this.Dialog!.content = this.qryBldrObj!.getSqlFromRules(this.qryBldrObj!.getRules());
-        this.Dialog!.show();
+        (this.Dialog as any).show();
     }
      getJson(): void {
-         this.Dialog!.content =  '<pre>' + JSON.stringify({ condition: this.qryBldrObj!.rule.condition, rules: this.qryBldrObj!.rule.rules }, null, 4) + '</pre>';
-        this.Dialog!.show();
+        this.Dialog!.content =  '<pre>' + JSON.stringify({ condition: this.qryBldrObj!.rule.condition, rules: this.qryBldrObj!.rule.rules }, null, 4) + '</pre>';
+        (this.Dialog as any).show();
     }
 }
 

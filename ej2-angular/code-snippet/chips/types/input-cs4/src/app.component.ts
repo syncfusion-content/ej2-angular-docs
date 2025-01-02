@@ -2,21 +2,14 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ChipListModule } from '@syncfusion/ej2-angular-buttons'
 import { enableRipple } from '@syncfusion/ej2-base'
-
-
-
-
 import { Component, OnInit } from '@angular/core';
 import { ClickEventArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
-imports: [
-        
-        ChipListModule
-    ],
-
-
-standalone: true,
+  imports: [
+    ChipListModule
+  ],
+  standalone: true,
   selector: 'my-app',
   // specifies the template string for the Chip component
   template: `
@@ -31,13 +24,10 @@ standalone: true,
   `
 })
 export class AppComponent {
-  constructor() {}
+  constructor() { }
   chipclick(e: ClickEventArgs) {
-   if(e.text){
+    if (e.text) {
       alert("you have clicked " + e.text);
-   }
+    }
   }
 }
-
-
-

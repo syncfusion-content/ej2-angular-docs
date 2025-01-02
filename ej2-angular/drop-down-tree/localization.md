@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in Angular Drop down tree component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular Drop down tree component of Syncfusion Essential JS 2 and more.
+title: Localization in Angular Dropdown Tree component | Syncfusion
+description: Learn here all about Localization in Syncfusion Angular Dropdown Tree component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Localization 
+control: Dropdown Tree
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular Drop down tree component
+# Localization in Angular Dropdown Tree component
 
 The Dropdown Tree component can be localized to any culture by defining the texts and messages of the Dropdown Tree in the corresponding culture. The default locale of the Dropdown Tree is `en` (English). The following table represents the default texts and messages of the Dropdown Tree in `en` culture.
 

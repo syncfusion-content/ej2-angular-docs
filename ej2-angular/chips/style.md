@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Style in Angular Chips component
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+The following content provides the exact CSS structure that can be used to modify the component's appearance based on the user preference.
 
 ## Customizing the chip text
 
