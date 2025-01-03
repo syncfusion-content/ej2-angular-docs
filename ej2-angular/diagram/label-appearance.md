@@ -140,9 +140,9 @@ N> For the proper alignment of template, we need to mention width and height for
 
 ### Annotation template
 
-For annotation template you should define a template in html file which you want to render in annotation and assign it to the [`annotationTemplate`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#annotationtemplate) property of diagram.
+For annotation template you should define a template in html file which you want to render in annotation and assign it to the [`annotationTemplate`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#annotationtemplate) property of diagram. This template can be applied to both nodes and connectors within the diagram.
 
-The following code illustrates how to define a annotationTemplate in annotation.
+The following code illustrates how to define a annotationTemplate in annotation for nodes and connectors.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

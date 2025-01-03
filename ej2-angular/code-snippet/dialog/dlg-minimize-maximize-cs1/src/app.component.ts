@@ -32,7 +32,7 @@ standalone: true,
 })
 
 export class AppComponent implements OnInit {
-    @ViewChild('Dialog') dialogObj: DialogComponent | undefined;
+    @ViewChild('Dialog') dialogObj: DialogComponent | any;
     // Create element reference for dialog target element.
     @ViewChild('container', { read: ElementRef }) container: ElementRef | undefined;
     // The Dialog shows within the target element.
