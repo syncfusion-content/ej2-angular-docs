@@ -124,6 +124,76 @@ The following example demonstrates the TreeGrid in `Deutsch` culture.
   
 {% previewsample "page.domainurl/samples/treegrid/internationalization-cs1" %}
 
+### Localization of dependent components in TreeGrid
+
+When localizing TreeGrid, it's important to include dependent components like DatePicker, Form Validator, and Grid, as they have their own static text that requires localization. Follow these steps to localize these components:
+
+1. **DatePicker**: Localize placeholders, "today" text, etc., using the [DatePicker localization keys](https://ej2.syncfusion.com/angular/documentation/datepicker/globalization)
+
+    Example localization keys for the date picker:
+    ```json
+   "datepicker": {
+            "placeholder": "Wählen Sie ein Datum",
+            "today": "heute"
+        }
+    ```
+
+
+2. **Form Validator**: Localize validation messages (e.g., required fields, email validation) using the [Form Validator localization keys](https://ej2.syncfusion.com/documentation/form-validator/localization).
+
+    Example keys for form validation localization:
+    ```json
+    "formValidator":{
+        "required": "This field is required",
+        "email": "Please enter a valid email address",
+        "minLength": "Please enter at least {0} characters"
+    }
+    ```
+3. **Grid Keys**: For additional TreeGrid-related keys, use the [Grid localization keys](https://ej2.syncfusion.com/angular/documentation/grid/global-local#localization).
+
+   Example keys for grid keys localization:
+    ```json
+    "grid" :{
+        "True": "true",
+        "False": "false",
+        "Item": "item",
+        "Items": "items",
+        "OKButton": "OK",
+    }
+    ```
+
+
+
+    Below is an example JSON snippet consolidating the localization keys for dependent components used in TreeGrid using  [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n/#load) function of the [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n/) class and update the `locale` property of treegrid with the culture name used in the `load` function:
+
+    ```json
+
+    L10n.load({
+
+        'de-DE': {
+
+        "datepicker": {
+                "placeholder": "Wählen Sie ein Datum",
+                "today": "heute"
+            },
+
+        "formValidator":{
+            "required": "This field is required",
+            "email": "Please enter a valid email address",
+            "minLength": "Please enter at least {0} characters"
+        },
+
+        "grid" :{
+            "True": "true",
+            "False": "false",
+            "Item": "item",
+            "Items": "items",
+            "OKButton": "OK",
+        }
+    }
+    });
+    ```
+
 ## Internationalization
 
 The [`Internationalization`](../common/internationalization/) library is used to globalize number, date, and time values in treegrid component using format strings in the [`columns.format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format).
