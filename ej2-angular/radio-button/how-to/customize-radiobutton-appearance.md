@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize radiobutton appearance in Angular Radio button component | Syncfusion
+title: Customize appearance in Angular Radio button component | Syncfusion
 description: Learn here all about Customize radiobutton appearance in Syncfusion Angular Radio button component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Customize radiobutton appearance 
@@ -19,6 +19,10 @@ The background and border color of the RadioButton is customized through the cus
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/radio-button/howto-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/radio-button/howto-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

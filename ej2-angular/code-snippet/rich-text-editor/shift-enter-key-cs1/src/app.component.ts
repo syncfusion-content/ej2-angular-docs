@@ -1,27 +1,14 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
-
-
-
-    import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
-    import { createElement } from '@syncfusion/ej2-base';
-    import { RichTextEditorComponent, ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
-    import { DropDownListComponent, FieldSettingsModel } from '@syncfusion/ej2-angular-dropdowns';
-    @Component({
-imports: [
-        
-        RichTextEditorAllModule,
-        DialogModule,
+import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
+import { RichTextEditorModule, RichTextEditorComponent, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
+import { DropDownListModule, DropDownListComponent, FieldSettingsModel } from '@syncfusion/ej2-angular-dropdowns';
+@Component({
+    imports: [
+        RichTextEditorModule,
         DropDownListModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-root',
-    template:`<div class="control-section">
+    template: `<div class="control-section">
         <table class='api'>
             <tbody>
                 <tr>
@@ -37,44 +24,38 @@ standalone: true,
             </tbody>
         </table>
         <br>
-        <ejs-richtexteditor id='defaultRTE' #defaultRTE [height]='rteHeight'>
-            <ng-template #valueTemplate>
-                <p>In Rich text Editor, the enter key and shift + enter key actions can be customized using the enterKey and shiftEnterKey APIs. And the possible values are as follows:</p><ul><li>P - When 'P' is configured, pressing enter or shift + enter will create a 'p' tag</li><li>DIV - When 'DIV' is configured, pressing enter or shift + enter will create a 'div' tag</li><li>BR - When 'BR' is configured, pressing enter or shift + enter will create a 'br' tag</li></ul>
-            </ng-template>
+        <ejs-richtexteditor id='editor' #editor [height]='editorHeight' [(value)]='value'>
         </ejs-richtexteditor>
     </div>`,
     encapsulation: ViewEncapsulation.None,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
-    })
-    export class AppComponent  {
-         @ViewChild('defaultRTE')
-        public rteObj?: RichTextEditorComponent;
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
+})
+export class AppComponent {
+    @ViewChild('editor')
+    public editorObj?: RichTextEditorComponent;
+    @ViewChild('shiftEnterOption')
+    public shiftEnterObj?: DropDownListComponent;
+    public value: string = "<p>In Rich Text Editor, the enter key and shift + enter key actions can be customized using the enterKey and shiftEnterKey APIs. And the possible values are as follows:</p><ul><li>P - When 'P' is configured, pressing enter or shift + enter will create a 'p' tag</li><li>DIV - When 'DIV' is configured, pressing enter or shift + enter will create a 'div' tag</li><li>BR - When 'BR' is configured, pressing enter or shift + enter will create a 'br' tag</li></ul>";
 
-        @ViewChild('shiftEnterOption')
-        public shiftEnterObj?: DropDownListComponent;
+    public shiftEnterData: { [key: string]: Object }[] = [
+        { Text: 'Create a new <br>', Value: 'BR' },
+        { Text: 'Create a new <div>', Value: 'DIV' },
+        { Text: 'Create a new <p>', Value: 'P' }
+    ];
 
-        public shiftEnterData: { [key: string]: Object }[] = [
-            { Text: 'Create a new <br>', Value: 'BR' },
-            { Text: 'Create a new <div>', Value: 'DIV' },
-            { Text: 'Create a new <p>', Value: 'P' }
-        ];
-
-        public shiftEnterPlaceHolder: string = 'When pressing the shift + enter key';
-        public floatLabel: string = 'Always';
-        public fields: FieldSettingsModel = { text: 'Text', value: 'Value' };
-        public rteHeight = 220;
-        public height: string = '200px';
-        public shiftEnterValue: string = 'BR';
-        public shiftEnterChange(): void {
-            if (this.shiftEnterObj!.value === 'BR') {
-                this.rteObj!.shiftEnterKey = 'BR';
-            } else if (this.shiftEnterObj!.value === 'DIV') {
-                this.rteObj!.shiftEnterKey = 'DIV';
-            } else if (this.shiftEnterObj!.value === 'P') {
-                this.rteObj!.shiftEnterKey = 'P';
-            }
+    public shiftEnterPlaceHolder: string = 'When pressing the shift + enter key';
+    public floatLabel: string = 'Always';
+    public fields: FieldSettingsModel = { text: 'Text', value: 'Value' };
+    public editorHeight = 220;
+    public height: string = '200px';
+    public shiftEnterValue: string = 'BR';
+    public shiftEnterChange(): void {
+        if (this.shiftEnterObj!.value === 'BR') {
+            this.editorObj!.shiftEnterKey = 'BR';
+        } else if (this.shiftEnterObj!.value === 'DIV') {
+            this.editorObj!.shiftEnterKey = 'DIV';
+        } else if (this.shiftEnterObj!.value === 'P') {
+            this.editorObj!.shiftEnterKey = 'P';
         }
     }
-
-
-
+}

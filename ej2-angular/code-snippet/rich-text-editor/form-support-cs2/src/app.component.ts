@@ -1,50 +1,55 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+import { CommonModule } from '@angular/common';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-
-
-
-
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService, RichTextEditorComponent } from '@syncfusion/ej2-angular-richtexteditor';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { NgIf } from '@angular/common';
+import { Component, ViewChild } from '@angular/core';
+import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService, RichTextEditorComponent } from '@syncfusion/ej2-angular-richtexteditor';
+import { FormControl, FormGroup, Validators, AbstractControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 @Component({
-imports: [
-        
-        RichTextEditorAllModule,
+    imports: [
+        RichTextEditorModule,
         FormsModule,
-		ButtonModule,
-        ReactiveFormsModule, NgIf
+        CommonModule,
+        ButtonModule,
+        ReactiveFormsModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-root',
-    template: `<div class="control-section">    <div class="content-wrapper">        <div id="content" class="box-form" style="margin: 0 auto; max-width:750px; padding:25px">            <form [formGroup]="rteForm" (ngSubmit)="onSubmit()">                <div class="form-group">                    <ejs-richtexteditor #fromRTE formControlName="name" (created)="rteCreated()">                    </ejs-richtexteditor>                    <div *ngIf="rteForm!.invalid && rteForm!.controls['name'].touched" class="alert alert-danger">                        <div *ngIf="rteForm.controls['name'].errors!['required']">                            Value is required.                        </div>                    </div>                </div>                <div class="form-group">                    <button type="submit" ejs-button [disabled]="!rteForm.valid">Submit</button>                    <button type="reset" ejs-button (click)="rteForm.reset()" style="margin-left: 20px">Reset</button>                </div>            </form>        </div>    </div></div>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
+    template: `<div class="control-section">
+        <div class="content-wrapper">
+        <div id="content" class="box-form" style="margin: 0 auto; max-width:750px; padding:25px">
+        <form [formGroup]="editorForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+        <ejs-richtexteditor #fromEditor formControlName="name" (created)="editorCreated()">
+        </ejs-richtexteditor>
+        <div id="error"></div>
+        </div>
+        <div class="form-group">
+        <button type="submit" ejs-button>Submit</button>
+        <button type="reset" ejs-button (click)="editorForm.reset()" style="margin-left: 20px">Reset</button>
+        </div>
+        </form>
+        </div>
+        </div>`,
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
 })
 export class AppComponent {
 
-    rteForm!: FormGroup;
+    editorForm!: FormGroup;
 
-    @ViewChild('fromRTE')
-    private rteEle: RichTextEditorComponent | undefined;
+    @ViewChild('fromEditor')
+    private editorEle: RichTextEditorComponent | undefined;
 
     constructor() {
         // <--- inject FormBuilder
     }
 
     ngOnInit(): void {
-        this.rteForm = new FormGroup({
+        this.editorForm = new FormGroup({
             'name': new FormControl(null, Validators.required)
         });
     }
 
-    rteCreated(): void {
-        this.rteEle!.element.focus();
+    editorCreated(): void {
+        this.editorEle!.element.focus();
     }
 
     onSubmit(): void {
