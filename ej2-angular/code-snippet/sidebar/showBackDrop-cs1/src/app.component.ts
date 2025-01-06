@@ -1,19 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { SidebarModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-import { Component, ViewChild} from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [SidebarModule, ],
-
-
-standalone: true,
+    imports: [SidebarModule,],
+    standalone: true,
     selector: 'app-root',
-    styleUrls: ['./app.component.css'],
     template: ` <ejs-sidebar id="default-sidebar" #sidebar (created)="onCreated($event)" style="visibility: hidden" [width]="width" [showBackdrop]="showBackdrop" [closeOnDocumentClick]="closeOnDocumentClick">
                     <div class="title"> Sidebar content</div>
                     <div class="sub-title">
@@ -35,7 +29,7 @@ export class AppComponent {
     @ViewChild('sidebar') sidebar?: SidebarComponent;
     public showBackdrop: boolean = true;
     public type: string = 'Push';
-    public width: string ='280px';
+    public width: string = '280px';
     public closeOnDocumentClick: boolean = true;
     public onCreated(args: any) {
         (this.sidebar as SidebarComponent).element.style.visibility = '';
@@ -44,8 +38,8 @@ export class AppComponent {
         this.sidebar?.hide();
     };
 
-    toggleClick():void{
-      this.sidebar?.show();
+    toggleClick(): void {
+        this.sidebar?.show();
     }
 }
 

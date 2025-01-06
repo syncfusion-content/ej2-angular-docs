@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Hide sidebar in Angular Sidebar component | Syncfusion
-description: Learn here all about Hide sidebar in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: Hide Sidebar in Angular Sidebar component | Syncfusion
+description: Learn here all about Hide Sidebar in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Hide sidebar 
+control: Sidebar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hide sidebar in Angular Sidebar component
+# Hide Angular Sidebar component
 
-The following example demonstrates how to hide master page sidebar. Initially sidebar is rendered with master page. While navigate to another page, it hides the master page sidebar using angular routing.
+The following example demonstrates how to hide the master page Sidebar. Initially, the Sidebar is rendered with the master page. When navigating to another page, it hides the master page Sidebar using Angular routing.
 
 Refer the Sidebar component in `app.component.html`
 
@@ -111,7 +111,7 @@ import { Router, NavigationEnd } from '@angular/router';
     styleUrls: ['./app.component.css'],
     encapsulation:ViewEncapsulation.None
 })
-export class AppComponent implements AfterViewInit { {
+export class AppComponent implements AfterViewInit {
   @ViewChild('sidebar')
   // Instance of the Sidebar in the main page
   public sidebarInstance: SidebarComponent;
@@ -140,12 +140,12 @@ export class AppComponent implements AfterViewInit { {
   }
 
   checkURL() {
-    //Based on the routed URL, Sidebar in the main page will expand or collapse.
+    //Based on the routed URL, the Sidebar in the main page will expand or collapse.
     (!this.urlValue || this.urlValue !== "/") ? this.sidebarInstance.hide() : this.sidebarInstance.show();
   }
 
   closeClick() {
-    //On clicking the close icon, Sidebar will get collapsed
+    //On clicking the close icon, the Sidebar will get collapsed
     this.sidebarInstance.hide();
   }
 
@@ -159,6 +159,6 @@ export class AppComponent implements AfterViewInit { {
 
 ```
 
-The following Sample demonstrates how to Hide the sidebar using angular service in routing application. Refer to this sample.
+The following sample demonstrates how to hide the Sidebar using Angular service in routing application. Refer to this sample.
 
 [Sample](https://github.com/SyncfusionExamples/how-to-hide-angular-sidebar-using-angular-service-in-routing-application)

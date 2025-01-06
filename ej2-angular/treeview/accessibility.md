@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Accessibility in Angular Treeview component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular TreeView component | Syncfusion
+description: Learn here all about Accessibility in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accessibility 
+control: TreeView 
 documentation: ug
 domainurl: ##DomainURL##
 ---

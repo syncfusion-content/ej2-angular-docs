@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Initialize sidebar using systemjs in Angular Sidebar component | Syncfusion
-description: Learn here all about Initialize sidebar using systemjs in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
+title: Initialize Sidebar using systemjs in Angular Sidebar component | Syncfusion
+description: Learn here all about Initialize Sidebar using systemjs in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Initialize sidebar using systemjs 
+control: Sidebar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Initialize sidebar using systemjs in Angular Sidebar component
+# Initialize Sidebar using systemjs in Angular Sidebar component
 
-Sidebar can also be initialized using `SystemJS` as follows
+Sidebar can also be initialized using `SystemJS` as follows:
 
 ## Installation and configuration
 
-* To setup basic `Angular` sample use the following commands.
+* To setup basic `Angular` sample, use the following commands.
 
    ```sh
    git clone https://github.com/angular/quickstart.git quickstart
@@ -30,7 +30,7 @@ For more information, refer to [Angular sample setup](https://angular.io/docs/ts
    npm install @syncfusion/ej2-angular-navigations --save
    ```
 
- The above package installs Sidebar dependencies which are required to render the component in an Angular environment.
+ The above package installs Sidebar dependencies that are required to render the component in an Angular environment.
 
 * Syncfusion `ej2-angular-navigations` packages need to be mapped in `systemjs.config.js` configuration file.
 
@@ -107,10 +107,9 @@ To render the Sidebar component, need to import Sidebar and its dependent compon
 
 ## Create a simple Sidebar
 
-Refer the following code to include the Sidebar in application .
+Refer the following code to include the Sidebar in your application .
 
-* Create an `Angular` component with Sidebar. Add the following sidebar template in component template of
-`app.component.ts`
+* Create an `Angular` application with Sidebar component. Add the following Sidebar template in component template of `app.component.ts`
 
 ```HTML
 <ejs-sidebar id="default-sidebar" >
@@ -128,7 +127,7 @@ Refer the following code to include the Sidebar in application .
 * In the module, declare the Component and Directives required to render the Sidebar.
 * Bootstrap the application with the above module.
 
-Refer to the following snippet to import the sidebar module in app.module.ts from the @syncfusion/ej2-angular-navigations.
+Refer to the following snippet to import the Sidebar module in app.module.ts from the @syncfusion/ej2-angular-navigations.
 
 ```Typescript
 import { AppComponent } from './app.component';
@@ -155,13 +154,15 @@ Use the npm run start command to run the application in the browser.
 npm start
 ```
 
-The following samples shows the sidebar component in browser.
+The following sample shows the Sidebar component in the browser.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/sidebar/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/sidebar/getting-started-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/sidebar/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
