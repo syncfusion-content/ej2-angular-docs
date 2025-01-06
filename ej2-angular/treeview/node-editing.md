@@ -1,25 +1,22 @@
 ---
 layout: post
-title: Node editing in Angular Treeview component | Syncfusion
-description: Learn here all about Node editing in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
+title: Node editing in Angular TreeView component | Syncfusion
+description: Learn here all about Node editing in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Node editing 
+control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Node editing in Angular Treeview component
+# Node editing in Angular TreeView component
 
-The TreeView allows you to edit nodes by setting the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/treeview#allowediting)
-property to **true**.
-To directly edit the nodes in place, **double click** the TreeView node or **select** the node and press **F2** key.
+The TreeView allows you to edit nodes by setting the [allowEditing](https://ej2.syncfusion.com/angular/documentation/api/treeview#allowediting) property to **true**. To directly edit the nodes in place, **double click** the TreeView node or **select** the node and press the **F2** key.
 
-When editing is completed by focus out or by pressing the **Enter** key, the modified node’s text saves automatically.
-If you do not want to save the modified node’s text in TreeView node, press **Escape** key. It does not save the edited text to the TreeView node.
+When editing is completed by losing focus or by pressing the **Enter** key, the modified node's text saves automatically. If you do not want to save the modified node’s text in TreeView node, press **Escape** key. It does not save the edited text to the TreeView node.
 
-* Node editing can also be performed programmatically by using the [`beginEdit`](https://ej2.syncfusion.com/angular/documentation/api/treeview#beginedit) method. On passing the node ID or element through this method, the edit textbox will be created for the particular node thus allowing us to edit it.
+* Node editing can also be performed programmatically by using the [`beginEdit`](https://ej2.syncfusion.com/angular/documentation/api/treeview#beginedit) method. When passing the node ID or element through this method, an edit textbox will be created for the particular node, allowing it to be edited.
 
-* If you need to validate or prevent editing, the [`nodeEditing`](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodeediting) event can be used which is triggered before the TreeView node is renamed. On successfully renaming a node the [`nodeEdited`](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodeedited) event will be triggered.
+* If you need to validate or prevent editing, you can use the [`nodeEditing`](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodeediting) event. This event is triggered before the TreeView node is renamed. On successfully renaming a node the [`nodeEdited`](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodeedited) event will be triggered.
 
 In the following example, the first level node’s text cannot be changed, but all other level nodes' text can be changed.
 
@@ -27,7 +24,9 @@ In the following example, the first level node’s text cannot be changed, but a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/getting-started-cs12/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/getting-started-cs12/src/main.ts %}
 {% endhighlight %}

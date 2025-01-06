@@ -2,25 +2,19 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
 import { Component, Inject, ViewChild } from '@angular/core';
-import { DragAndDropEventArgs} from '@syncfusion/ej2-angular-navigations';
+import { DragAndDropEventArgs } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [
+    imports: [
         FormsModule, TreeViewModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-container',
-    template:  `<div id='treeparent'><ejs-treeview id="icons" [fields]='field' sortOder='Ascending' allowDragAndDrop='allowDragAndDrop' (nodeDragStop)='dragStop($event)' (nodeDragging)='nodeDrag($event)'></ejs-treeview></div>`
+    template: `<div id='treeparent'><ejs-treeview id="icons" [fields]='field' sortOder='Ascending' allowDragAndDrop='allowDragAndDrop' (nodeDragStop)='dragStop($event)' (nodeDragging)='nodeDrag($event)'></ejs-treeview></div>`
 })
 export class AppComponent {
-      // Hierarchical data source for TreeView component
+    // Hierarchical data source for TreeView component
     public hierarchicalData: Object[] = [
         {
             nodeId: '01', nodeText: 'Music', icon: 'folder',
@@ -69,20 +63,18 @@ export class AppComponent {
             ]
         }
     ];
-    public field:Object = { dataSource: this.hierarchicalData, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', imageUrl: 'image' };
+    public field: Object = { dataSource: this.hierarchicalData, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'icon', imageUrl: 'image' };
     public allowDragAndDrop: boolean = true;
 
-public nodeDrag(args: DragAndDropEventArgs): void {
-  if (args.droppedNode != null && args.droppedNode.getElementsByClassName('folder') && args.droppedNode.getElementsByClassName('folder').length === 0) {
-      args.dropIndicator = 'e-no-drop';
-  }
-}
+    public nodeDrag(args: DragAndDropEventArgs): void {
+        if (args.droppedNode != null && args.droppedNode.getElementsByClassName('folder') && args.droppedNode.getElementsByClassName('folder').length === 0) {
+            args.dropIndicator = 'e-no-drop';
+        }
+    }
 
-public dragStop(args: DragAndDropEventArgs): void {
-  if (args.droppedNode != null && args.droppedNode.getElementsByClassName('folder') && args.droppedNode.getElementsByClassName('folder').length === 0) {
-      args.cancel = true;
-  }
-}
-
-
+    public dragStop(args: DragAndDropEventArgs): void {
+        if (args.droppedNode != null && args.droppedNode.getElementsByClassName('folder') && args.droppedNode.getElementsByClassName('folder').length === 0) {
+            args.cancel = true;
+        }
+    }
 }

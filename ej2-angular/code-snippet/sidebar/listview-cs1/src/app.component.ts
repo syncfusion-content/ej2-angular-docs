@@ -2,20 +2,13 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SidebarModule } from '@syncfusion/ej2-angular-navigations'
 import { ListViewModule } from '@syncfusion/ej2-angular-lists'
-
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [SidebarModule, ListViewModule, ],
-
-
-standalone: true,
+    imports: [SidebarModule, ListViewModule,],
+    standalone: true,
     selector: 'app-root',
-    styleUrls: ['./app.component.css'],
     template: `  <ejs-sidebar id="default-sidebar" #sidebar [width]="width">
                         <div class="title1">Menu</div>
                             <div class="closebtn">
@@ -60,6 +53,4 @@ export class AppComponent {
         this.sidebar?.hide();
     }
 }
-
-
 

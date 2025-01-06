@@ -1,20 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SidebarModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [SidebarModule, ],
-
-
-standalone: true,
+    imports: [SidebarModule,],
+    standalone: true,
     selector: 'app-root',
-    styleUrls: ['./app.component.css'],
     template: `  <ejs-sidebar id="default-sidebar" #sidebar (open)="open($event)" (close)="close($event)">
                         <div class="title"> Sidebar content</div>
                         <div class="sub-title">
@@ -45,7 +38,7 @@ standalone: true,
 export class AppComponent {
     @ViewChild('sidebar') sidebar?: SidebarComponent;
     public open(args: any) {
-       console.log("Sidebar Opened");
+        console.log("Sidebar Opened");
     }
     public close(args: any) {
         console.log("Sidebar Closed");
@@ -60,6 +53,4 @@ export class AppComponent {
         this.sidebar?.hide();
     }
 }
-
-
 

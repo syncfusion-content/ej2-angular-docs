@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility in Angular Sidebar component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Sidebar component of Syncfusion Essential JS 2 and more.
-control: Accessibility 
+control: Sidebar 
 platform: ej2-react
 documentation: ug
 domainurl: ##DomainURL##
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Accessibility in Angular Sidebar component
 
-The Sidebar component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The Sidebar component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Sidebar component is outlined below.
 
@@ -41,8 +41,8 @@ The accessibility compliance for the Sidebar component is outlined below.
 ## WAI-ARIA attributes
 
 The Sidebar component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/) patterns to meet accessibility standards. By default, the Sidebar utilizes the [complementary](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/complementary_role) role, with the option to modify the ARIA role based on provided attributes to the root element, depending on the specific use case.
- 
-If there are multiple complementary landmark roles or aside elements in a document, it is important to provide a label for each landmark using the `aria-label` attribute. Alternatively, if the aside has a descriptive title, it can be referenced using the `aria-labelledby` attribute. This label will help assistive technology users quickly understand the purpose of each landmark.
+
+If there are multiple complementary landmark roles or aside elements in a document, it is important to provide labels. This can be done using the `aria-label` attribute for each landmark. Alternatively, if the aside has a descriptive title, it can be referenced using the `aria-labelledby` attribute. This label will help assistive technology users quickly understand the purpose of each landmark.
  
 For optimal accessibility, it is recommended to incorporate a trigger component that is navigable via a keyboard, such as a button. If this is not feasible, inclusion of the `tabIndex` attribute becomes necessary. Furthermore, explicit handling of the `aria-expanded` attribute is required for the trigger element.
 

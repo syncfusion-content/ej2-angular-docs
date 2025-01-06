@@ -1,23 +1,15 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SidebarModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [
-        
+    imports: [
         SidebarModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-root',
-    styleUrls: ['./app.component.css'],
     template: ` <ejs-sidebar #dockBar id="dockSidebar" [enableDock]='enableDock' [width]='width' [dockSize]='dockSize'>
                     <div class="dock">
                         <ul>
@@ -60,6 +52,4 @@ export class AppComponent {
         this.dockBar?.toggle();
     }
 }
-
-
 

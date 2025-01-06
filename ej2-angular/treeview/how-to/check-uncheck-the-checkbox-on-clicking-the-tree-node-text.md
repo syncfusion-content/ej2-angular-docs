@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Check uncheck the checkbox on clicking the tree node text in Angular Treeview component | Syncfusion
-description: Learn here all about Check uncheck the checkbox on clicking the tree node text in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
+title: Toggle checkbox by node text click in Angular TreeView component | Syncfusion
+description: Learn here all about Check uncheck the checkbox on clicking the tree node text in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Check uncheck the checkbox on clicking the tree node text 
+control: TreeView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Check uncheck the checkbox on clicking the tree node text in Angular Treeview component
+# Check uncheck the checkbox on click the tree node text in Angular TreeView component
 
-You can check and uncheck the checkboxes of tree view by clicking the tree node using the `nodeClicked` event of TreeView.
+You can check and uncheck the checkboxes of the TreeView by clicking the tree node using the [`nodeClicked`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeclicked) event of TreeView.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

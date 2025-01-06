@@ -1,6 +1,20 @@
-
 @import 'node_modules/@syncfusion/ej2-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
+
+#treeparent {
+    display: block;
+    max-width: 400px;
+    max-height: 320px;
+    margin: auto;
+    overflow: auto;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+
+#contextmenutree {
+    padding: 0px;
+    font-size: inherit;
+}

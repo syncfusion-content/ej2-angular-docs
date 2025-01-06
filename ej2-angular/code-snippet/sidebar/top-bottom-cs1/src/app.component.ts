@@ -1,20 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SidebarModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [SidebarModule, ],
-
-
-standalone: true,
+    imports: [SidebarModule,],
+    standalone: true,
     selector: 'app-root',
-    styleUrls: ['./app.component.css'],
     template: `  <ejs-sidebar id="top-sidebar" #topSidebar [type]="type" (open)="top_sidebar_open()" (close)="top_sidebar_close()">
                         <div class="title">
                             <div style="display:inline-block"> Top Sidebar </div>
@@ -49,7 +42,7 @@ export class AppComponent {
 
     public type: string = 'Push';
     // only for sample browser use
-    constructor( ) {
+    constructor() {
 
     }
     topBtnClick() {
@@ -89,6 +82,5 @@ export class AppComponent {
         element.classList.remove("bottom_animation_content");
     }
 }
-
 
 

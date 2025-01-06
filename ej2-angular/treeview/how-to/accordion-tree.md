@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Accordion tree in Angular Treeview component | Syncfusion
-description: Learn here all about Accordion tree in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
+title: Accordion tree in Angular TreeView component | Syncfusion
+description: Learn here all about Accordion tree in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accordion tree 
+control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accordion tree in Angular Treeview component
+# Accordion tree in Angular TreeView component
 
-Accordion is an interface where a list of items can be collapsed or expanded, but only one list can be collapsed or expanded at a time. You can customize the TreeView to make it behave as an accordion. Refer to the following code sample to create an accordion tree.
+Accordion is an interface where a list of items can be collapsed or expanded, but only one list can be collapsed or expanded at a time. You can customize the TreeView to make it behave like an Accordion using [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#cssclass) property and [`nodeSelected`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodeselected) event. Refer to the following code sample to create an accordion tree.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

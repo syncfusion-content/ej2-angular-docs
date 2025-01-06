@@ -4,12 +4,12 @@ import { RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 import { enableRipple } from '@syncfusion/ej2-base'
 import { FormsModule } from '@angular/forms'
-import {CommonModule} from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
 imports: [
-    CommonModule,
+        CommonModule,
         RadioButtonModule,
         FormsModule,
         DropDownListModule
@@ -28,15 +28,12 @@ standalone: true,
                 </div>
                 <div class="dropDownList-control">
                     <h4>Payment Method</h4>
-                    <ejs-dropdownlist [dataSource]='paymentMethod' [(value)]="value" ></ejs-dropdownlist>
+                    <ejs-dropdownlist [dataSource]='paymentMethod' [(value)]="value"></ejs-dropdownlist>
                 </div>
                 </div>`
 })
 
 export class AppComponent {
-    public paymentMethod: string[] = ['Credit card', 'Debit card', 'Net Banking', 'Other Wallets' ];
+    public paymentMethod: string[] = ['Credit card', 'Debit card', 'Net Banking', 'Other Wallets'];
     public value:string = "Credit card";
 }
-
-
-

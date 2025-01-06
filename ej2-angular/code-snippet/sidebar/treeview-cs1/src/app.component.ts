@@ -1,20 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SidebarModule, TreeViewModule } from '@syncfusion/ej2-angular-navigations'
-
-
-
-
-import { Component, ViewChild} from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { SidebarComponent, TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [SidebarModule,  TreeViewModule],
-
-
-standalone: true,
+    imports: [SidebarModule, TreeViewModule],
+    standalone: true,
     selector: 'app-root',
-    styleUrls: ['./app.component.css'],
     template: `  <div id="wrapper">
                         <div class="col-lg-12 col-sm-12 col-md-12" id="sidebar-section">
                             <div class="col-lg-12 col-sm-12 col-md-12">
@@ -87,10 +80,10 @@ export class AppComponent {
     public treeviewInstance?: TreeViewComponent;
     public width: string = '290px';
     public enableDock: boolean = true;
-    public dockSize:string ="44px";
+    public dockSize: string = "44px";
     public mediaQuery: string = ('(min-width: 600px)');
     public target: string = '.main-content';
-  
+
     public data: Object[] = [
         {
             nodeId: '01', nodeText: 'Installation', iconCss: 'icon-microchip icon',
@@ -109,7 +102,7 @@ export class AppComponent {
                 { nodeId: '04-03', nodeText: 'DateTimePicker', iconCss: 'icon-circle-thin icon' },
                 { nodeId: '04-04', nodeText: 'DateRangePicker', iconCss: 'icon-circle-thin icon' },
                 { nodeId: '04-05', nodeText: 'TimePicker', iconCss: 'icon-circle-thin icon' },
-                { nodeId: '04-06', nodeText: 'SideBar', iconCss: 'icon-circle-thin icon' }
+                { nodeId: '04-06', nodeText: 'Sidebar', iconCss: 'icon-circle-thin icon' }
             ]
         },
         {
@@ -120,7 +113,7 @@ export class AppComponent {
                 { nodeId: '05-03', nodeText: 'DateTimePicker', iconCss: 'icon-circle-thin icon' },
                 { nodeId: '05-04', nodeText: 'DateRangePicker', iconCss: 'icon-circle-thin icon' },
                 { nodeId: '05-05', nodeText: 'TimePicker', iconCss: 'icon-circle-thin icon' },
-                { nodeId: '05-06', nodeText: 'SideBar', iconCss: 'icon-circle-thin icon' }
+                { nodeId: '05-06', nodeText: 'Sidebar', iconCss: 'icon-circle-thin icon' }
             ]
         },
         {
@@ -139,7 +132,7 @@ export class AppComponent {
             nodeId: '10', nodeText: 'License', iconCss: 'icon-doc-text icon'
         }
     ];
-    public field:Object ={ dataSource: this.data, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'iconCss' };
+    public field: Object = { dataSource: this.data, id: 'nodeId', text: 'nodeText', child: 'nodeChild', iconCss: 'iconCss' };
 
     public onCreated(args: any) {
         (this.sidebarTreeviewInstance as SidebarComponent).element.style.visibility = '';
@@ -148,18 +141,15 @@ export class AppComponent {
         (this.treeviewInstance as TreeViewComponent).collapseAll();
     }
     openClick() {
-        if((this.sidebarTreeviewInstance as SidebarComponent).isOpen)
-        {
+        if ((this.sidebarTreeviewInstance as SidebarComponent).isOpen) {
             (this.sidebarTreeviewInstance as SidebarComponent).hide();
             (this.treeviewInstance as TreeViewComponent).collapseAll();
         }
         else {
             (this.sidebarTreeviewInstance as SidebarComponent).show();
             (this.treeviewInstance as TreeViewComponent).expandAll();
-        }  
+        }
     }
-  };
-
-
+};
 
 

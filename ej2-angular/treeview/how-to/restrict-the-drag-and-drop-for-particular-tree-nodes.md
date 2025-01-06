@@ -1,17 +1,16 @@
 ---
 layout: post
 title: Restrict drag-and-drop in Angular TreeView Component | Syncfusion
-description: Learn here all about Restrict the drag and drop for particular tree nodes in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Restrict the drag and drop for particular tree nodes in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Restrict the drag and drop for particular tree nodes 
+control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Restrict drag and drop nodes in Angular Treeview component
+# Restrict drag and drop nodes in Angular TreeView component
 
-You can able to restrict to drag and drop files under folder only.
-These can be achieved by using 'nodeDragStop' and 'nodeDragging' event of TreeView.
+You are able to restrict drag and drop operations to allow files to be dropped only under folders. This can be achieved by using [`nodeDragStop`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragstop) and [`nodeDragging`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#nodedragging) events of TreeView.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
