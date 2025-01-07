@@ -3,7 +3,7 @@ layout: post
 title: Index in Angular Tooltip component | Syncfusion
 description: Learn here all about Index in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Index 
+control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---

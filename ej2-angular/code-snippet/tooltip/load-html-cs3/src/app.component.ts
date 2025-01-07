@@ -2,29 +2,19 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TooltipModule } from '@syncfusion/ej2-angular-popups'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 
 @Component({
-imports: [
-        
-        TooltipModule, ButtonModule
-    ],
-
-
-standalone: true,
-    selector: 'my-app',
-    template: `
-    <div id="content">
-        <h2>HTML Tags</h2>
-          Through templates, <b><span style="color:#e3165b">tooltip content</span></b> can be loaded with <u><i> inline HTML, images, iframe, videos, maps </i></u>. A title can be added to the content
-      </div>
+  imports: [
+    TooltipModule, ButtonModule
+  ],
+  standalone: true,
+  selector: 'my-app',
+  template: `    
       <div class="tooltipContent">
         <ejs-tooltip #tooltip id="tooltip" position='BottomCenter'>
           <ng-template #content>
+          <h2>HTML Tags</h2>
             <div>
               Through templates,<b><span style="color:#e3165b">tooltip content</span></b> can be loaded with <u><i> inline HTML, images, iframe, videos, maps </i></u>. A title can be added to the content
             </div>
@@ -33,11 +23,10 @@ standalone: true,
         </ejs-tooltip>
       </div>
     `,
-    encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.None,
 })
 
 export class AppComponent {
 }
-
 
 

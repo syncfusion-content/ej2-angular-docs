@@ -3,7 +3,7 @@ layout: post
 title: How to in Angular Tooltip component | Syncfusion
 description: Learn here all about How to in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: How to 
+control: Tooltip
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -29,7 +29,7 @@ By default, Tooltips will not be displayed on disabled elements. However, it is 
   
 {% previewsample "page.domainurl/samples/tooltip/getting-started-cs9" %}
 
-## Load HTML tags into tooltip
+## Load HTML tags into Tooltip
 
 The Tooltip component loads HTML tags using the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/content) template.
 
@@ -49,7 +49,7 @@ Here, Bold, Italic, Underline, and Anchor tags are used.
   
 {% previewsample "page.domainurl/samples/tooltip/load-html-cs1" %}
 
-## Define tooltip open mode property
+## Define Tooltip open mode property
 
 The open mode property of tooltip can be defined on a target that is hovering, focusing, or clicking.
 Tooltip component have the following types of open mode:
@@ -92,11 +92,11 @@ Tooltip is not triggered by any default action. So, bind your own events and use
   
 {% previewsample "page.domainurl/samples/tooltip/open-mode-cs1" %}
 
-## Create and show tooltip on multiple targets
+## Create and show Tooltip on multiple targets
 
-Tooltip can be created and shown on multiple targets within a container by defining the specific target elements to the target property. So, the tooltip is initialized only on matched targets within a container.
+Tooltip can be created and shown on multiple targets within a container by defining the specific target elements to the target property. So, the Tooltip is initialized only on matched targets within a container.
 
-In this case, the tooltip content is assigned from the title attribute of the target element.
+In this case, the Tooltip content is assigned from the title attribute of the target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -110,15 +110,15 @@ In this case, the tooltip content is assigned from the title attribute of the ta
   
 {% previewsample "page.domainurl/samples/tooltip/form-valid-cs1" %}
 
-## Change tooltip content dynamically
+## Change Tooltip content dynamically
 
-The tooltip content can be changed dynamically using the [AJAX](https://ej2.syncfusion.com/documentation/base/api-ajax.html?lang=typescript) request.
+The Tooltip content can be changed dynamically using the [AJAX](https://ej2.syncfusion.com/documentation/base/api-ajax.html?lang=typescript) request.
 
-The AJAX request should be made within the [`beforeRender`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltipComponent/#beforerender) event of the tooltip. On every success, the corresponding retrieved data will be set to the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltipComponent/#content) property of the tooltip.
+The AJAX request should be made within the [`beforeRender`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltipComponent/#beforerender) event of the tooltip. On every success, the corresponding retrieved data will be set to the [content](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltipComponent/#content) property of the Tooltip.
 
 When you hover over the icons, its respective data will be retrieved dynamically and then assigned to the tooltip’s content.
 
-Refer to the following code snippet to change the tooltip content dynamically.
+Refer to the following code snippet to change the Tooltip content dynamically.
 
 ```typescript
 
@@ -174,12 +174,12 @@ The Tooltip component [content](https://ej2.syncfusion.com/angular/documentation
   
 {% previewsample "page.domainurl/samples/tooltip/load-html-cs2" %}
 
-## Customize tooltip
+## Customize Tooltip
 
-The arrow of the tooltip can be customized as needed by customizing CSS in the sample-side.
-The EJ2 tooltip component is achieved through CSS3 format and positioned the tip arrow according to the tooltip positions like `TopCenter`, `BottomLeft`, `RightTop`, and more.
+The arrow of the Tooltip can be customized as needed by customizing CSS in the sample-side.
+The EJ2 Tooltip component is achieved through CSS3 format and positioned the tip arrow according to the Tooltip positions like `TopCenter`, `BottomLeft`, `RightTop`, and more.
 
-Here, the tip arrow is customized as Curved tooltip and Bubble tooltip.
+Here, the tip arrow is customized as Curved Tooltip and Bubble Tooltip.
 
 ** Curved tip **
 
@@ -221,9 +221,9 @@ The two `divs`(inner div and outer div) have been added to achieve the bubble ti
 
 ```
 
-These tip arrow customizations have been achieved through CSS changes in the sample level. The tooltip position can be changed by using the radio button click event.
+These tip arrow customizations have been achieved through CSS changes in the sample level. The Tooltip position can be changed by using the radio button click event.
 
-The arrow tip pointer can also be disabled by using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip/#showtippointer) property in a tooltip.
+The arrow tip pointer can also be disabled by using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip/#showtippointer) property in a Tooltip.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -237,7 +237,7 @@ The arrow tip pointer can also be disabled by using the [`showTipPointer`](https
   
 {% previewsample "page.domainurl/samples/tooltip/tip-custom-cs1" %}
 
-## Display tooltip on SVG and canvas elements
+## Display Tooltip on SVG and canvas elements
 
 Tooltip can be displayed on both SVG and Canvas elements. You can directly attach the `<svg>` or `<canvas>` elements to show tooltips on data visualization elements.
 
@@ -255,7 +255,7 @@ Create the SVG square element and refer to the following code snippet to render 
 
 ** Canvas **
 
-Create the canvas circle element and refer to the following code snippet to render the tooltip on Canvas circle.
+Create the canvas circle element and refer to the following code snippet to render the Tooltip on Canvas circle.
 
 ```typescript
         <ejs-tooltip cssClass='e-tooltip-css' content='Canvas Circle' target='#circle'>
@@ -275,11 +275,11 @@ Create the canvas circle element and refer to the following code snippet to rend
   
 {% previewsample "page.domainurl/samples/tooltip/svg-canvas-cs1" %}
 
-## Load HTML pages into tooltip
+## Load HTML pages into Tooltip
 
 Tooltip loads HTML pages via HTML tags such as iframe, video, and map using the [`content`](https://ej2.syncfusion.com/angular/documentation/tooltip/api-tooltip/#content) property, which supports both string and HTML tags.
 
-To load an `iframe` element in tooltip, set the required iframe in the `content` of tooltip while initializing the tooltip component. Refer to the following code.
+To load an `iframe` element in Tooltip, set the required iframe in the `content` of Tooltip while initializing the Tooltip component. Refer to the following code.
 
 ```typescript
 

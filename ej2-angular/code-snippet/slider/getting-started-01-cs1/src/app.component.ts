@@ -1,20 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SliderModule } from '@syncfusion/ej2-angular-inputs'
-
-
-
-
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-        
+    imports: [
         SliderModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <div id='container'>
@@ -22,11 +15,9 @@ standalone: true,
             <ejs-slider id='slider' [value]=30></ejs-slider>
         </div>
     </div>`,
-    styleUrls:['./index.css'],
 })
 
 export class AppComponent {
 }
-
 
 

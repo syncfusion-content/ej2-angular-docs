@@ -5,7 +5,7 @@
 import { Component, ViewChild, ViewEncapsulation, Inject } from '@angular/core';
 import { TooltipComponent, TooltipModule, TooltipEventArgs } from '@syncfusion/ej2-angular-popups';
 import { HttpClient } from '@angular/common/http';
-
+import { Fetch } from '@syncfusion/ej2-base';
 import { ListViewModule } from '@syncfusion/ej2-angular-lists';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -59,28 +59,25 @@ export class AppComponent {
    */
 
   onBeforeRender(args: TooltipEventArgs) {
-    this.tooltipControl.content = 'Loading...';
-    this.tooltipControl!.dataBind();
-    this.http.get('assets/tooltipdata.json').subscribe(
-      (result: any) => {
-        for (let i: number = 0; i < result.length; i++) {
-          if (result[i].Id === args.target.getAttribute('data-content')) {
-            /* tslint:disable */
-            this.tooltipControl.content =
-              "<div class='contentWrap'><span class=" +
-              result[i].Class +
-              "></span><div class='def'>" +
-              result[i].Sports +
-              '</div></div>';
-            /* tslint:enable */
-          }
-        }
-        this.tooltipControl!.dataBind();
-      },
-      (err: Response) => {
-        this.tooltipControl.content = err.statusText;
-        this.tooltipControl!.dataBind();
-      }
+
+    let fetchApi = new Fetch(
+      'https://ej2.syncfusion.com/angular/demos/source/tooltip/tooltipdata.json',
+      'GET'
     );
+    fetchApi.onSuccess = (data: any) => {
+      for (var i = 0; i < data.length; i++) {
+        if (data[i].Id === args.target.getAttribute('data-content')) {
+          /* tslint:disable */
+          this.tooltipControl.content =
+            "<div class='contentWrap'><span class=" +
+            data[i].Class +
+            "></span><div class='def'>" +
+            data[i].Sports +
+            '</div></div>';
+          /* tslint:enable */
+        }
+      }
+    };
+    fetchApi.send();  
   }
 }

@@ -2,15 +2,11 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { CarouselModule } from '@syncfusion/ej2-angular-navigations'
-
-
 import {  Component, ViewChild } from "@angular/core";
 import { CarouselComponent } from "@syncfusion/ej2-angular-navigations";
 
 @Component({
 imports: [ ButtonModule, CarouselModule],
-
-
 standalone: true,
   selector: "app-root",
   template: `<!-- To Render Carousel. -->
@@ -73,5 +69,3 @@ export class AppComponent {
     this.carousel.next();
   }
 }
-
-

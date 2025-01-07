@@ -2,22 +2,16 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TooltipModule } from '@syncfusion/ej2-angular-popups'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, ViewChild, Inject } from '@angular/core';
 import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
 import { Draggable } from '@syncfusion/ej2-base';
 
 @Component({
-imports: [
-        
+    imports: [
         TooltipModule,
         ButtonModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <ejs-tooltip #tooltip id='targetContainer' content='Drag me !!!' target='#demoSmart' [animation]='tooltipAnimation'>
@@ -47,7 +41,7 @@ standalone: true,
 
 export class AppComponent {
     @ViewChild('tooltip')
-    public tooltipControl: TooltipComponent | any ;
+    public tooltipControl: TooltipComponent | any;
     public tooltipAnimation: Object = {
         open: { effect: 'None' },
         close: { effect: 'None' }
@@ -70,6 +64,5 @@ export class AppComponent {
         });
     }
 }
-
 
 
