@@ -9,13 +9,13 @@ import { Component, ViewChild } from '@angular/core';
 import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
-imports: [
-        
+    imports: [
+
         TooltipModule
     ],
 
 
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <div id="sample">
@@ -36,7 +36,7 @@ standalone: true,
     </ejs-tooltip>
     </div>
     <div id="third">
-    <ejs-tooltip #tooltip id="showTooltip" content='Tooltip from custom mode' opensOn='Custom' position='BottomCenter' (dblclick)='customOpen($event)'>
+    <ejs-tooltip #tooltipCustom id="showTooltip" content='Tooltip from custom mode' opensOn='Custom' position='BottomCenter' (dblclick)='customOpen($event)'>
           <button class="blocks" id="tooltipclick">Double Click on Me</button>
     </ejs-tooltip>
     <ejs-tooltip #tooltip id="showTooltip" content='Tooltip from focus' position='BottomCenter'>
@@ -50,12 +50,11 @@ standalone: true,
 })
 
 export class AppComponent {
-    @ViewChild('tooltip')
-    public tooltipControl: TooltipComponent | any ;
-    tooltipCustom: any;
+    @ViewChild('tooltipCustom')
+    public tooltipCustom: TooltipComponent | any;
 
     constructor() { }
-     customOpen(args: any): void {
+    customOpen(args: any): void {
         if (args.target.getAttribute("data-tooltip-id")) {
             this.tooltipCustom.close();
         } else {
@@ -63,6 +62,5 @@ export class AppComponent {
         }
     }
 }
-
 
 

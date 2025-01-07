@@ -1,22 +1,16 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TooltipModule } from '@syncfusion/ej2-angular-popups'
-
-
-
 import { Component, ViewChild, ViewEncapsulation, ElementRef } from '@angular/core';
 import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
-imports: [
-        
-        TooltipModule
-    ],
-
-
-standalone: true,
-    selector: 'my-app',
-    template: `
+  imports: [
+    TooltipModule
+  ],
+  standalone: true,
+  selector: 'my-app',
+  template: `
       <div id="box">
         <div class="circletool" id="rectShape" style="left:1%;top:10%">
           <ejs-tooltip cssClass='e-tooltip-css' content='SVG Square' target='#square'>
@@ -55,34 +49,32 @@ standalone: true,
         </div>
       </div>
     `,
-    encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.None,
 })
 
 export class AppComponent {
   public context?: any;
   public circlecontext?: any;
-  @ViewChild('triangle')canvasRef: ElementRef | any;
-  @ViewChild('circle')circleRef: ElementRef | any;
-  ngOnInit(){
-if (this.canvasRef.nativeElement.getContext) {
-    this.context = this.canvasRef.nativeElement.getContext('2d');
-    this.context.beginPath();
-    this.context.moveTo(0, 50);
-    this.context.lineTo(100, 50);
-    this.context.lineTo(50, 0);
-    this.context.fillStyle = "#FDA600";
-    this.context.fill();
+  @ViewChild('triangle') canvasRef: ElementRef | any;
+  @ViewChild('circle') circleRef: ElementRef | any;
+  ngOnInit() {
+    if (this.canvasRef.nativeElement.getContext) {
+      this.context = this.canvasRef.nativeElement.getContext('2d');
+      this.context.beginPath();
+      this.context.moveTo(0, 50);
+      this.context.lineTo(100, 50);
+      this.context.lineTo(50, 0);
+      this.context.fillStyle = "#FDA600";
+      this.context.fill();
+    }
+    this.circlecontext = this.circleRef.nativeElement.getContext('2d');
+    let centerX: number = this.circleRef.nativeElement.width / 2;
+    let centerY: number = this.circleRef.nativeElement.height / 2;
+    let radius: number = 30;
+    this.circlecontext.beginPath();
+    this.circlecontext.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+    this.circlecontext.fillStyle = '#0450C2';
+    this.circlecontext.fill();
+  }
 }
-this.circlecontext = this.circleRef.nativeElement.getContext('2d');
-let centerX: number = this.circleRef.nativeElement.width / 2;
-let centerY: number = this.circleRef.nativeElement.height / 2;
-let radius: number = 30;
-this.circlecontext.beginPath();
-this.circlecontext.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
-this.circlecontext.fillStyle = '#0450C2';
-this.circlecontext.fill();
-}
-}
-
-
 

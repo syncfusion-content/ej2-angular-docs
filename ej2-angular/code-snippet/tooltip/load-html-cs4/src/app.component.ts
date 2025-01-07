@@ -2,20 +2,13 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TooltipModule } from '@syncfusion/ej2-angular-popups'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
 import { Component, ViewChild, ViewEncapsulation } from '@angular/core';
 
 @Component({
-imports: [
-        
+    imports: [
         TooltipModule, ButtonModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <ejs-tooltip style="display:block;position:absolute;left:calc( 50% - 60px);top:45%;">
@@ -30,6 +23,5 @@ standalone: true,
 
 export class AppComponent {
 }
-
 
 

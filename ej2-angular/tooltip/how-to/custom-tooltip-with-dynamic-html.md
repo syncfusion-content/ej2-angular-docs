@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Custom tooltip with dynamic html in Angular Tooltip component | Syncfusion
-description: Learn here all about Custom tooltip with dynamic html in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title: Creating dynamic HTML Angular Tooltip component | Syncfusion
+description: Learn here all about Custom Tooltip with dynamic html in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Custom tooltip with dynamic html 
+control: Tooltip
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Custom tooltip with dynamic html in Angular Tooltip component
+# Creating dynamic HTML Tooltips in Angular
 
-Tooltip loads HTML pages via HTML tags such as iframe, video, and map using the [`content`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#content) property, which supports both string and HTML tags.
+Tooltip loads HTML pages via the HTML tags such as iframe, video, and map using the [`content`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#content) property, which supports both string and HTML tags.
 
-To load an `iframe` element in tooltip, set the required iframe in the `content` of tooltip while initializing the tooltip component. Refer to the following code.
+To load an `iframe` element in Tooltip, set the required iframe in the `content` of Tooltip while initializing the Tooltip component. Here's an example of setting an iframe as the content of a Tooltip:
 
 ```typescript
 

@@ -2,21 +2,15 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TooltipModule } from '@syncfusion/ej2-angular-popups'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
-imports: [
-        
+    imports: [
         TooltipModule,
         ButtonModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <ejs-tooltip #tooltip id="tooltip" content='Tooltip from custom mode' opensOn='Custom' (dblclick)='customOpen($event)'>
@@ -41,7 +35,7 @@ standalone: true,
 
 export class AppComponent {
     @ViewChild('tooltip')
-    public tooltipControl: TooltipComponent | any ;
+    public tooltipControl: TooltipComponent | any;
     constructor() { }
     customOpen(args: any): void {
         if (args.target.getAttribute("data-tooltip-id")) {

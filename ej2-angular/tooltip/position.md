@@ -3,15 +3,14 @@ layout: post
 title: Position in Angular Tooltip component | Syncfusion
 description: Learn here all about Position in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Position 
+control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Position in Angular Tooltip component
 
-Tooltips can be attached to 12 static locations around the target.
-On initializing the Tooltip, you can set the position property with any one of the following values:
+Tooltips can be attached to 12 static locations around the target element. On initializing the Tooltip, you can set the [`position`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#position) property with any one of the following values:
 
 * `TopLeft`
 
@@ -53,8 +52,7 @@ On initializing the Tooltip, you can set the position property with any one of
 
 ## Tip pointer positioning
 
-The Tooltip pointer can be attached or detached from the Tooltip by using the `showTipPointer` property.
-Pointer positions can be adjusted using the `tipPointerPosition` property that can be assigned to one of the following values:
+The Tooltip pointer can be attached or detached from the Tooltip by using the [`showTipPointer`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#showtippointer) property. Pointer positions can be adjusted using the [`tipPointerPosition`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#tippointerposition) property, which can be assigned one of the following values:
 
 * `Auto`
 
@@ -82,7 +80,7 @@ By default, tip pointers are auto adjusted so that the arrow does not point outs
 
 ## Dynamic positioning
 
-The Tooltip and its tip pointer can be positioned dynamically based on the target's location. This can be achieved by using the `refresh` method, which auto adjusts the Tooltip over the target.
+The Tooltip and its tip pointer can be positioned dynamically based on the target element. This can be achieved by using the [`refresh`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#refresh) method, which auto adjusts the Tooltip over the target.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -98,8 +96,7 @@ The Tooltip and its tip pointer can be positioned dynamically based on the targe
 
 ## Mouse trailing
 
-Tooltips can be positioned relative to the mouse pointer. This behavior can be enabled or disabled by using the `mouseTrail` property.
-By default, it is set to `false`.
+Tooltips can be positioned relative to the mouse pointer when this feature is enabled. This behavior can be enabled or disabled by using the [`mouseTrail`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#mousetrail) property. By default, it is set to `false`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -113,13 +110,11 @@ By default, it is set to `false`.
   
 {% previewsample "page.domainurl/samples/tooltip/getting-started-cs18" %}
 
-> When mouse trailing option is enabled, the tip pointer position gets auto adjusted based on the target, and
-> other position values like start, end, and middle are not applied (to prevent the pointer from moving out of target).
+> When mouse trailing option is enabled, the tip pointer position gets auto adjusted based on the target, and other position values like start, end, and middle are not applied (to prevent the pointer from moving out of target).
 
 ## Setting offset values
 
-Offset values are set to specify the distance between the target and tooltip element.
-`offsetX` and `offsetY` properties are used to specify the offset left and top values.
+Offset values are used to specify the distance between the target and Tooltip element. [`offsetX`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#offsetx) and [`offsetY`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#offsety) properties are used to specify the offset left and top values.
 
 * `offsetX` specifies the distance between the target and Tooltip element in X axis.
 * `offsetY` specifies the distance between the target and Tooltip element in Y axis.

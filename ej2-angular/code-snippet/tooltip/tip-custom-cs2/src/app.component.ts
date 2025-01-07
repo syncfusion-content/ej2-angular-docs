@@ -11,13 +11,13 @@ import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
 import { ChangeArgs } from '@syncfusion/ej2-buttons';
 
 @Component({
-imports: [
-        
+    imports: [
+
         TooltipModule, RadioButtonModule
     ],
 
 
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
      <div id="customization">
@@ -34,7 +34,7 @@ standalone: true,
             </ul>
         </div>
      <div id="balloon">
-      <ejs-tooltip #tooltip cssClass='bubbletip e-tooltip-css' content='Tooltip arrow customized as balloon tip' position='TopRight'>
+      <ejs-tooltip #tooltipCustom cssClass='bubbletip e-tooltip-css' content='Tooltip arrow customized as balloon tip' position='TopRight'>
             <button id="bubbletip">
                 Bubble Tip Arrow
             </button>
@@ -57,25 +57,25 @@ standalone: true,
 
 export class AppComponent {
     @ViewChild('tooltip')
-    public tooltipControl: TooltipComponent | any ;
+    public tooltipControl: TooltipComponent | any;
     @ViewChild('tooltipcurve')
-    public tooltipCurve : TooltipComponent | any;
-    tooltipCustom: any;
+    public tooltipCurve: TooltipComponent | any;
+    @ViewChild('tooltipCustom')
+    public tooltipCustom: TooltipComponent | any;
     constructor() { }
     onChange(args: ChangeArgs): void {
         this.tooltipCurve.position = args.value as any;
         this.tooltipCurve.dataBind();
     }
     onChanged(args: ChangeArgs): void {
-         this.tooltipCustom.position = args.value as any;
-        if( this.tooltipCustom.position == 'BottomLeft'){
-             this.tooltipCustom.offsetY = -30;
+        this.tooltipCustom.position = args.value as any;
+        if (this.tooltipCustom.position == 'BottomLeft') {
+            this.tooltipCustom.offsetY = -30;
         } else {
-             this.tooltipCustom.offsetY = 0;
+            this.tooltipCustom.offsetY = 0;
         }
-         this.tooltipCustom.dataBind();
+        this.tooltipCustom.dataBind();
     }
 }
-
 
 

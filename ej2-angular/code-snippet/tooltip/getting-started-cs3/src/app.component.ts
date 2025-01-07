@@ -2,21 +2,15 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TooltipModule } from '@syncfusion/ej2-angular-popups'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { TooltipComponent, TooltipAnimationSettings } from '@syncfusion/ej2-angular-popups';
 
 @Component({
-imports: [
-        
+    imports: [
         TooltipModule,
         ButtonModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <ejs-tooltip id="tooltip" #tooltipAnimate content='Tooltip animation effect' opensOn='Custom' (click)='onCustomClick($event)'>
@@ -41,7 +35,7 @@ standalone: true,
 
 export class AppComponent {
     @ViewChild('tooltipAnimate')
-    public tooltipControl : TooltipComponent | any;
+    public tooltipControl: TooltipComponent | any;
     onCustomClick(args: any): void {
         if (args.target.getAttribute('data-tooltip-id')) {
             let closeAnimation: TooltipAnimationSettings = { effect: 'FadeOut', duration: 1000 }
@@ -52,6 +46,5 @@ export class AppComponent {
         }
     }
 }
-
 
 

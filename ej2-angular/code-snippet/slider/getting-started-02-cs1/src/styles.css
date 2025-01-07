@@ -1,10 +1,23 @@
-
 @import 'node_modules/@syncfusion/ej2-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-popups/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
-@import 'node_modules/@syncfusion/ej2-angular-splitbuttons/styles/material.css';
+
+.wrap {
+  box-sizing: border-box;
+  height: 260px;
+  margin: 0 auto;
+  padding: 30px 10px;
+  width: 260px;
+}
+
+.sliderwrap {
+  margin-top: 20px;
+}
+
+.sliderwrap label {
+  font-size: 13px;
+  font-weight: 100;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}

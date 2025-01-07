@@ -2,20 +2,14 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TooltipModule } from '@syncfusion/ej2-angular-popups'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-        
+    imports: [
         TooltipModule,
         ButtonModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
         <ejs-tooltip id="tooltip" content='Tooltip content' [mouseTrail]='true'>
@@ -40,6 +34,5 @@ standalone: true,
 
 export class AppComponent {
 }
-
 
 
