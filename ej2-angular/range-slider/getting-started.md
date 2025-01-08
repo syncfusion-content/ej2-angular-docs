@@ -112,15 +112,24 @@ export class AppComponent {
 
 ## Adding Slider CSS reference
 
-Add Slider component styles as given in the `angular-cli.json` file within the apps -> styles section.
+* Add the Slider component's styles as given below in `styles.css`.
 
 >Note: If you are using Angular 6 project, add the changes in `angular.json` file.
 
-```typescript
-@import '../node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
+```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
+```
+
+Alternatively, based on the location of your CSS file, you can import the styles as shown below:
+
+```css
+@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
 ```
 
 The below example shows a basic `Slider` example.
@@ -129,7 +138,9 @@ The below example shows a basic `Slider` example.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/getting-started-01-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/slider/getting-started-01-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/getting-started-01-cs1/src/main.ts %}
 {% endhighlight %}
@@ -154,7 +165,9 @@ In Min-Range Slider, a shadow is considered from the start value to current hand
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/getting-started-02-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/slider/getting-started-02-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/getting-started-02-cs1/src/main.ts %}
 {% endhighlight %}
@@ -172,7 +185,9 @@ The Slider can be displayed, either in horizontal or vertical orientation. By de
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/getting-started-03-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/slider/getting-started-03-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/getting-started-03-cs1/src/main.ts %}
 {% endhighlight %}
@@ -188,7 +203,9 @@ The Slider displays the tooltip to indicate the current value by clicking the Sl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/getting-started-04-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/slider/getting-started-04-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/getting-started-04-cs1/src/main.ts %}
 {% endhighlight %}
@@ -207,7 +224,9 @@ and not to the button.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/getting-started-05-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/slider/getting-started-05-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/getting-started-05-cs1/src/main.ts %}
 {% endhighlight %}

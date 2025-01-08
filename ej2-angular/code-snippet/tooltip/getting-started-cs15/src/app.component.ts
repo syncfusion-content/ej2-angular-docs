@@ -7,14 +7,11 @@ import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
 import { Position } from '@syncfusion/ej2-popups';
 
 @Component({
-imports: [
-        
+    imports: [
         TooltipModule,
         ButtonModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <div style='display: inline-flex;position:  relative;left:  50%;transform:  translateX(-50%);margin-top:  100px;'>
@@ -52,7 +49,7 @@ standalone: true,
     encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
-    @ViewChild('tooltip') public control : TooltipComponent | any;
+    @ViewChild('tooltip') public control: TooltipComponent | any;
 
     onChange(target: string | any) {
         this.control.position = target.value as Position;

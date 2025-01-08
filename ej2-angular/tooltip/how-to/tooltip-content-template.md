@@ -3,7 +3,7 @@ layout: post
 title: Tooltip content template in Angular Tooltip component | Syncfusion
 description: Learn here all about Tooltip content template in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Tooltip content template 
+control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -16,7 +16,9 @@ The Tooltip component [content](https://ej2.syncfusion.com/angular/documentation
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tooltip/load-html-cs4/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tooltip/load-html-cs4/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/load-html-cs4/src/main.ts %}
 {% endhighlight %}

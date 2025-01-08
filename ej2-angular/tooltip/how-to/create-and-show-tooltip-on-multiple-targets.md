@@ -1,24 +1,26 @@
 ---
 layout: post
-title: Create and show tooltip on multiple targets in Angular Tooltip component | Syncfusion
-description: Learn here all about Create and show tooltip on multiple targets in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
+title:  Implementing multiple target in Angular Tooltip component | Syncfusion
+description: Learn here all about Create and show Tooltip on multiple targets in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Create and show tooltip on multiple targets 
+control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create and show tooltip on multiple targets in Angular Tooltip component
+# Implementing multiple target Tooltips in Angular
 
-Tooltip can be created and shown on multiple targets within a container by defining the specific target elements to the target property. So, the tooltip is initialized only on matched targets within a container.
+Tooltip can be created and shown on multiple targets within a container by defining the specific target elements to the the [`target`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#target) property. This way, the Tooltip is initialized only on the matched targets within the container.
 
-In this case, the tooltip content is assigned from the title attribute of the target element.
+In this case, the Tooltip content is assigned from the title attribute of the target element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tooltip/form-valid-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tooltip/form-valid-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/form-valid-cs2/src/main.ts %}
 {% endhighlight %}

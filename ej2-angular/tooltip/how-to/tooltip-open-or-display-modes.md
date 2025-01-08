@@ -3,15 +3,14 @@ layout: post
 title: Tooltip open or display modes in Angular Tooltip component | Syncfusion
 description: Learn here all about Tooltip open or display modes in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Tooltip open or display modes 
+control: Tooltip
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Tooltip open or display modes in Angular Tooltip component
 
-The open mode property of tooltip can be defined on a target that is hovering, focusing, or clicking.
-Tooltip component have the following types of open mode:
+The open mode property of Tooltip can be defined for hovering, focusing, or clicking on a target. The Tooltip component has the following types of open mode:
 
     * Auto
     * Hover
@@ -19,25 +18,25 @@ Tooltip component have the following types of open mode:
     * Focus
     * Custom
 
-** Auto **
+**Auto**
 
-Tooltip appears when you hover over the target or when the target element receives the focus.
+Tooltip appears on hover or when the target element receives focus.
 
-** Hover **
+**Hover**
 
 Tooltip appears when you hover over the target.
 
-** Click **
+**Click**
 
 Tooltip appears when you click a target element.
 
-** Focus **
+**Focus**
 
 Tooltip appears when you focus (say through tab key) on a target element.
 
-** Custom **
+**Custom**
 
-Tooltip is not triggered by any default action. So, bind your own events and use either open or close public methods.
+Tooltip is not triggered by any default action. You need to bind your own events and use either the open or close public methods.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -3,7 +3,7 @@ layout: post
 title: Setting dimension in Angular Tooltip component | Syncfusion
 description: Learn here all about Setting dimension in Syncfusion Angular Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Setting dimension 
+control: Tooltip
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Height and width
 
-The Tooltip can either be assigned auto height and width values or specific pixel values. The `width` and `height` properties are used to set the outer dimension of the Tooltip element. The default value for both the properties is `auto`. It also accepts string and number values in pixels.
+The Tooltip can either be assigned auto height and width values or specific pixel values. The [`width`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#width) and [`height`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#height) properties are used to set the outer dimension of the Tooltip element. The default value for both properties is `auto`. They also accept string and number values in pixels.
 
 The following sample explains how to set dimensions for the Tooltip.
 
@@ -30,7 +30,7 @@ The following sample explains how to set dimensions for the Tooltip.
 
 ### Scroll mode
 
-When `height` is specified with a certain pixel value and the Tooltip content overflows, the scrolling mode gets enabled.
+When [`height`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#height) is specified with a certain pixel value and the Tooltip content overflows, the scrolling mode is enabled.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,4 +44,4 @@ When `height` is specified with a certain pixel value and the Tooltip content ov
   
 {% previewsample "page.domainurl/samples/tooltip/getting-started-cs20" %}
 
-> The scrolling mode can best be seen when the sticky mode of the Tooltip is enabled. To enable sticky mode, set the `isSticky` property to true.
+> The scrolling mode can best be seen when the sticky mode of the Tooltip is enabled. To enable sticky mode, set the [`isSticky`](https://ej2.syncfusion.com/angular/documentation/api/tooltip/#issticky) property to `true`.

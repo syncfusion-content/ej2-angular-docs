@@ -2,21 +2,15 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TooltipModule } from '@syncfusion/ej2-angular-popups'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { TooltipComponent, TooltipEventArgs } from '@syncfusion/ej2-angular-popups';
 
 @Component({
-imports: [
-        
+    imports: [
         TooltipModule,
         ButtonModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <h3> Transition effect </h3>
@@ -55,7 +49,7 @@ standalone: true,
 
 export class AppComponent {
     @ViewChild('tooltip')
-    public tooltipControl: TooltipComponent | any ;
+    public tooltipControl: TooltipComponent | any;
     public Animation: Object = {
         open: { effect: 'ZoomIn', duration: 500 },
         close: { effect: 'ZoomOut', duration: 500 }
@@ -79,6 +73,5 @@ export class AppComponent {
         };
     }
 }
-
 
 

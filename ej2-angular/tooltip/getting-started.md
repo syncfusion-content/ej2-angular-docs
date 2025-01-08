@@ -3,14 +3,14 @@ layout: post
 title: Getting started with Angular Tooltip component | Syncfusion
 description:  Checkout and learn about Getting started with Angular Tooltip component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: Tooltip 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Getting started with Angular Tooltip component
 
-This section briefly explains how to create a simple **Tooltip** component and configure its available functionalities in angular.
+This section briefly explains how to create a simple **Tooltip** component and configure its available functionalities in Angular.
 
 ## Dependencies
 
@@ -27,7 +27,7 @@ The following list of dependencies are required to use Tooltip component in your
 ## Setup Angular Environment
 
 You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI use the following command.
+To install Angular CLI, use the following command.
 
 ```bash
 npm install -g @angular/cli
@@ -47,7 +47,7 @@ cd my-app
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
-1. Ivy library distribution package [format](https://angular.io/guide/angular-package-format#angular-package-format)
+1. Ivy library distribution package [format](https://v17.angular.io/guide/angular-package-format#angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
@@ -101,7 +101,7 @@ export class AppModule { }
 
 ## Adding CSS Reference
 
-* Add Tooltip component's styles as given below in `styles.css`.
+* Add the Tooltip component's styles as given below in `styles.css`.
 
 `[style.css]`
 
@@ -109,6 +109,13 @@ export class AppModule { }
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
 @import "../node_modules/@syncfusion/ej2-angular-buttons/styles/material.css";
 @import "../node_modules/@syncfusion/ej2-angular-popups/styles/material.css";
+```
+Alternatively, based on the location of your CSS file, you can import the styles as shown below:
+
+```css
+@import "node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "node_modules/@syncfusion/ej2-angular-buttons/styles/material.css";
+@import "node_modules/@syncfusion/ej2-angular-popups/styles/material.css";
 ```
 
 > We can also use [CRG](https://crg.syncfusion.com/) to generate combined component styles.
@@ -155,7 +162,7 @@ The following code example depicts the way to initialize Tooltip on a single ele
 
 ### Initialize Tooltip within a container
 
-It is possible to create Tooltip on multiple targets within a container. To do so, define the `selector` property with specific target elements - so that the tooltip will be initialized only on those matched targets within a container. In this case, the Tooltip content gets assigned from the `title` attribute of the target element.
+It is possible to create Tooltip on multiple targets within a container. To do so, define the `selector` property with specific target elements - so that the Tooltip will be initialized only on those matched targets within a container. In this case, the Tooltip content gets assigned from the `title` attribute of the target element.
 
 Refer the following code example, to create a Tooltip on multiple targets within a container.
 
@@ -163,7 +170,9 @@ Refer the following code example, to create a Tooltip on multiple targets within
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tooltip/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tooltip/getting-started-cs8/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tooltip/getting-started-cs8/src/main.ts %}
 {% endhighlight %}
@@ -171,8 +180,7 @@ Refer the following code example, to create a Tooltip on multiple targets within
   
 {% previewsample "page.domainurl/samples/tooltip/getting-started-cs8" %}
 
-> In the above sample, `details` refers to the container's id, and the target `.e-info` refers to the target elements available
-> within that container.
+> In the above sample, `details` refers to the container's id, and the target `.e-info` refers to the target elements available within that container.
 
 ## See Also
 

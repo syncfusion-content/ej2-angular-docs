@@ -2,23 +2,17 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { TooltipModule } from '@syncfusion/ej2-angular-popups'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { TooltipComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
-imports: [
-        
-        TooltipModule,
-        ButtonModule
-    ],
-
-
-standalone: true,
-    selector: 'my-app',
-    template: `
+  imports: [
+    TooltipModule,
+    ButtonModule
+  ],
+  standalone: true,
+  selector: 'my-app',
+  template: `
     <div id='container'>
         <table style="margin: 150px auto 0 auto;transform: translateY(-50%);">
             <tbody>
@@ -56,7 +50,7 @@ standalone: true,
         </table>
     </div>
     `,
-    styles: [`
+  styles: [`
     .blocks {
         width: 260px;
     }
@@ -64,17 +58,16 @@ standalone: true,
 })
 
 export class AppComponent {
-    @ViewChild('tooltipCustom')
-    public tooltipCustom : TooltipComponent | any;
-    constructor() { }
-    onCustomOpen(args: any): void {
-        if (args.target.getAttribute('data-tooltip-id')) {
-            this.tooltipCustom.close();
-        } else {
-            this.tooltipCustom.open(args.target);
-        }
+  @ViewChild('tooltipCustom')
+  public tooltipCustom: TooltipComponent | any;
+  constructor() { }
+  onCustomOpen(args: any): void {
+    if (args.target.getAttribute('data-tooltip-id')) {
+      this.tooltipCustom.close();
+    } else {
+      this.tooltipCustom.open(args.target);
     }
+  }
 }
-
 
 
