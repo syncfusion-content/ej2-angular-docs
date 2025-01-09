@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Form slider with formvalidator in Angular Range slider component | Syncfusion
-description: Learn here all about Form slider with formvalidator in Syncfusion Angular Range slider component of Syncfusion Essential JS 2 and more.
+title: Form slider with formvalidator in Angular Range Slider component | Syncfusion
+description: Learn here all about Form slider with formvalidator in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Form slider with formvalidator 
+control: Range Slider
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Form slider with formvalidator in Angular Range slider component
+# Formvalidator with Angular Range Slider component
 
 We can validate the Slider component using our `FormValidator`. The following steps walk-through for slider validation.
 
@@ -46,7 +46,7 @@ export class AppComponent {
 
 > Form validation done by either ID or name value of Slider component. In above used ID of the slider for validate it.
 
-Using Slider name: Render Slider with name attribute. In the below code snippet we have used name attribute value of ‘slider’ for form validation.
+* **Using Slider name**: Render Slider with name attribute. In the below code snippet we have used name attribute value of ‘slider’ for form validation.
 
 ```typescript
 
@@ -71,8 +71,7 @@ export class AppComponent {
 
 ```
 
-* Validate the form using `validate` method and it validates the Slider value with the defined rules collection and returns the result.
-If user selects the value less than the minimum value, form will not submit.
+* Validate the form using `validate` method and it validates the Slider value with the defined rules collection and returns the result. If user selects the value less than the minimum value, form will not submit.
 
   ```typescript
 
@@ -94,7 +93,9 @@ If user selects the value less than the minimum value, form will not submit.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/how-to-04-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/slider/how-to-04-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/how-to-04-cs2/src/main.ts %}
 {% endhighlight %}

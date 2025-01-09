@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Enable disable toolbar item in Angular File manager component | Syncfusion
-description: Learn here all about Enable disable toolbar item in Syncfusion Angular File manager component of Syncfusion Essential JS 2 and more.
+title: Enable/Disable toolbar item in Angular File Manager component | Syncfusion
+description: Learn here all about Enable disable toolbar item in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Enable disable toolbar item 
+control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Enable disable toolbar item in Angular File manager component
+# Enable/Disable toolbar item in Angular File Manager component
 
-The toolbar items can be enabled/disabled by specifying the items in [enableToolbarItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#enabletoolbaritems) or [disableToolbarItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#disabletoolbaritems) methods respectively.
+Toolbar items can be enabled or disabled by specifying them in the [enableToolbarItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#enabletoolbaritems) or [disableToolbarItems](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#disabletoolbaritems) methods respectively.
 
 The following example shows enabling and disabling toolbar items on button click.
 
@@ -18,7 +18,9 @@ The following example shows enabling and disabling toolbar items on button click
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/toolbar-items-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/toolbar-items-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/toolbar-items-cs1/src/main.ts %}
 {% endhighlight %}

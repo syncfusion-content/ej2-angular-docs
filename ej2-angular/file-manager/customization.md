@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Customization in Angular File manager component | Syncfusion
-description: Learn here all about Customization in Syncfusion Angular File manager component of Syncfusion Essential JS 2 and more.
+title: Customization in Angular File Manager component | Syncfusion
+description: Learn here all about Customization in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Customization 
+control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customization in Angular File manager component
+# Customization in Angular File Manager component
 
-The file manager component allows customizing its functionalities like, context menu, searching, uploading, toolbar using APIs. Given below are some of the functionalities that can be customized in the File Manager,
+The File Manager component allows customizing its functionalities, such as context menu, searching, uploading, and toolbar, using APIs. Given below are some of the functionalities that can be customized in the File Manager,
 
 * [Context menu customization](#context-menu-customization)
 * [Details view customization](#details-view-customization)
@@ -24,13 +24,15 @@ The file manager component allows customizing its functionalities like, context 
 
 ## Context menu customization
 
-The context menu settings like, items to be displayed on files, folders and layout click and visibility can be customized using [contextMenuSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#contextmenusettings) property.
+The context menu settings, such as items to be displayed on files, folders, and layout, as well as click behavior and visibility, can be customized using the [contextMenuSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#contextmenusettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/context-menu-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/context-menu-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/context-menu-cs1/src/main.ts %}
 {% endhighlight %}
@@ -46,7 +48,9 @@ The details view settings like, column width, header text, template for each fie
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/detailsview-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/detailsview-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/detailsview-cs1/src/main.ts %}
 {% endhighlight %}
@@ -62,7 +66,9 @@ The navigation pane settings like, minimum and maximum width and visibility can 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/navigationpane-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/navigationpane-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/navigationpane-cs1/src/main.ts %}
 {% endhighlight %}
@@ -80,7 +86,9 @@ In File Manager [fileLoad](https://ej2.syncfusion.com/angular/documentation/api/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/fileextension-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/fileextension-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/fileextension-cs1/src/main.ts %}
 {% endhighlight %}
@@ -96,7 +104,9 @@ The File Manager provides support to show/hide the hidden items by enabling/disa
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/hiddenitems-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/hiddenitems-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/hiddenitems-cs1/src/main.ts %}
 {% endhighlight %}
@@ -112,7 +122,9 @@ The thumbnail images are displayed in the File Manager's large icons view by def
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/disablethumbnail-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/disablethumbnail-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/disablethumbnail-cs1/src/main.ts %}
 {% endhighlight %}
@@ -128,7 +140,9 @@ The toolbar settings like, items to be displayed in toolbar and visibility can b
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/toolbar-customize-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/toolbar-customize-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/toolbar-customize-cs1/src/main.ts %}
 {% endhighlight %}
@@ -138,7 +152,7 @@ The toolbar settings like, items to be displayed in toolbar and visibility can b
 
 ### See Also
 
-* [How to add new items or customize default items](../file-manager/how-to/adding-custom-item-to-toolbar.md)
+* [How to add new items or customize default items](https://ej2.syncfusion.com/angular/documentation/file-manager/how-to/adding-custom-item-to-toolbar)
 
 ## Upload customization
 
@@ -148,7 +162,9 @@ The upload settings like, minimum and maximum file size and enabling auto upload
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/upload-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/upload-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/upload-cs1/src/main.ts %}
 {% endhighlight %}
@@ -158,13 +174,15 @@ The upload settings like, minimum and maximum file size and enabling auto upload
 
 ## Tooltip customization
 
-The tooltip value can be customized by adding extra content to the title of the toolbar, navigation pane, details view and large icons of the file manager element.
+The tooltip value can be customized by adding extra content to the title of the toolbar, navigation pane, details view and large icons of the File Manager element.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/tooltip-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/tooltip-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/tooltip-cs1/src/main.ts %}
 {% endhighlight %}

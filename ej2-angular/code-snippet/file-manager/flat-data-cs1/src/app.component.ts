@@ -18,7 +18,7 @@ import {
 @Component({
   selector: 'app-root',
   template: `<div class="sample-container">
-    <ejs-filemanager id='flatdata' [toolbarSettings]="toolbarSettings" [fileSystemData]="resultData" [contextMenuSettings]="contextMenuSettings">
+    <ejs-filemanager id='flatdata' [toolbarSettings]="toolbarSettings" [fileSystemData]="resultData" [contextMenuSettings]="contextMenuSettings" height="375px">
      </ejs-filemanager>
 </div>`,
   styleUrls: ['app.component.css'],

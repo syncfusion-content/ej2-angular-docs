@@ -1,21 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SliderModule } from '@syncfusion/ej2-angular-inputs'
-
-
-
-
 import { Component } from '@angular/core';
 import { SliderTickEventArgs, SliderTooltipEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
+    imports: [
         SliderModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <div id='container'>
@@ -24,7 +17,6 @@ standalone: true,
             (tooltipChange)='tooltipChangeHandler($event)' (renderingTicks)='renderingTicksHandler($event)' ></ejs-slider>
         </div>
     </div>`,
-    styleUrls:['./index.css']
 })
 
 export class AppComponent {
@@ -33,16 +25,15 @@ export class AppComponent {
 
     tooltipChangeHandler(args: SliderTooltipEventArgs | any): void {
         // Weekdays Array
-        let daysArr: string [] = ['Sunday','Monday','Tuesday','Wednesday','Thrusday','Friday','Saturday'];
+        let daysArr: string[] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday'];
         // Customizing each ticks text into weeksdays
         args.text = daysArr[parseFloat(args.value)];
     }
 
     renderingTicksHandler(args: SliderTickEventArgs | any): void {
         // Customizing tooltip to display the Day (in numeric) of the week
-        args.text =  'Day ' + (Number(args.value) + 1).toString();
+        args.text = 'Day ' + (Number(args.value) + 1).toString();
     }
 }
-
 
 

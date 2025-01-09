@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Range slider component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Range slider component of Syncfusion Essential JS 2 and more.
+title: Ej1 api migration in Angular Range Slider component | Syncfusion
+description: Learn here all about Ej1 api migration in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Ej1 api migration 
+control: Range Slider
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Range slider component
+# Ej1 api migration in Angular Range Slider component
 
 This article describes the API migration process of Slider component from Essential JS 1 to Essential JS 2
 

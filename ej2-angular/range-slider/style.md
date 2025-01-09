@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style in Angular Range slider component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Range slider component of Syncfusion Essential JS 2 and more.
+title: Style in Angular Range Slider component | Syncfusion
+description: Learn here all about Style in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Style 
+control: Range Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Range slider component
+# Style in Angular Range Slider component
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

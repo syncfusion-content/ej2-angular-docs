@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Virtualization in Angular File manager component | Syncfusion
-description: Learn here all about Virtualization in Syncfusion Angular File manager component of Syncfusion Essential JS 2 and more.
+title: Virtualization in Angular File Manager component | Syncfusion
+description: Learn here all about Virtualization in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Virtualization 
+control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Virtualization in Angular File Manager component
 
-File Manager's UI virtualization allows you for the dynamic loading of a large number of directories and files in both the detailsView and largeIconsView without degrading its performance.
+File Manager's UI virtualization allows for the dynamic loading of a large number of directories and files in both the detailsView and largeIconsView without degrading its performance.
 
 ## Module Injection
 
-In order to use UI Virtualization, you need to import `VirtualizationService` module in the AppModule and it should be injected to the provider section as follow 
+In order to use UI Virtualization, you need to import `VirtualizationService` module in the AppModule and it should be injected into the provider section as follows
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -40,13 +40,15 @@ The virtualization of the File Manager component is based on the height and widt
 
 In order to enable `virtualization`, you must set the [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#enablevirtualization) property to true.
 
-In the instance below, a sizable collection of files can be found in the folders "Documents" and "Text Documents".
+The example below demonstrates a large collection of files in the 'Documents' and 'Text Documents' folders.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/virtualization-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/virtualization-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/virtualization-cs1/src/main.ts %}
 {% endhighlight %}

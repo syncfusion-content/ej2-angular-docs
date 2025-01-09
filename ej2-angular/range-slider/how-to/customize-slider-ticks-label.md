@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize slider ticks label in Angular Range slider component | Syncfusion
-description: Learn here all about Customize slider ticks label in Syncfusion Angular Range slider component of Syncfusion Essential JS 2 and more.
+title: Customize slider ticks label in Angular Range Slider component | Syncfusion
+description: Learn here all about Customize slider ticks label in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Customize slider ticks label 
+control: Range Slider
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize slider ticks label in Angular Range slider component
+# Customize ticks label in Angular Range Slider component
 
 Slider view can be customized via CSS. By overriding the slider CSS classes, you can customize the ticks. The ticks in slider allows you to easily identify the current value/values of the slider. It contains [`smallStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksData/#smallstep) and [`largeStep`](https://ej2.syncfusion.com/angular/documentation/api/slider/ticksData/#largestep). By default, slider has class `e-tick` for slider ticks. You can override the class as per your requirement.
 Refer to the following code snippet to render ticks.
@@ -37,7 +37,9 @@ applied to the value of the `child_number` in the slider.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/ticks-customization-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/slider/ticks-customization-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/ticks-customization-cs2/src/main.ts %}
 {% endhighlight %}

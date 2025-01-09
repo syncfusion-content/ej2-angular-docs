@@ -1,22 +1,15 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SliderModule } from '@syncfusion/ej2-angular-inputs'
-
-
-
-
-import { Component, ViewEncapsulation, ViewChild} from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { SliderComponent } from '@syncfusion/ej2-angular-inputs';
 import { SliderTickRenderedEventArgs, SliderTickEventArgs, Placement } from '@syncfusion/ej2-inputs';
 
 @Component({
-imports: [
-        
+    imports: [
         SliderModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `<div class="slider_container" id="slider_wrapper">
             <div class="slider_labelText userselect">Dynamic ticks color</div>
@@ -26,7 +19,6 @@ standalone: true,
             <div class="slider_labelText userselect">Ticks with legends</div>
             <ejs-slider id='slider' [value]='value' [min]='min' [max]='max' [type]='type' [ticks]='slider_ticks' (renderedTicks)='renderedTicks($event)'></ejs-slider>
         </div>`,
-    styleUrls : ["./app.component.css"],
     encapsulation: ViewEncapsulation.None
 })
 
@@ -52,6 +44,5 @@ export class AppComponent {
         }
     }
 }
-
 
 

@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in Angular Range Slider component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accessibility 
+control: Range Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
