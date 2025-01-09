@@ -387,7 +387,6 @@ The Gantt component provides a set of events that are triggered during drag and 
 
 import { GanttModule } from '@syncfusion/ej2-angular-gantt';
 import { RowDDService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt';
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { GanttData, columnDataType } from './data';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
@@ -454,6 +453,7 @@ export class AppComponent {
     }
     rowDrop(args: RowDragEventArgs): void {
         this.message = `rowDrop event triggered`;
+    }    
 }
 
 {% endraw %}

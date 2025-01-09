@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { PivotViewAllModule, PivotFieldListAllModule } from '@syncfusion/ej2-angular-pivotview'
+import { PivotViewAllModule, PivotFieldListAllModule, FieldListService } from '@syncfusion/ej2-angular-pivotview'
 import { Component, OnInit } from '@angular/core';
 import { IDataOptions, IDataSet } from '@syncfusion/ej2-angular-pivotview';
 import { GridSettings } from '@syncfusion/ej2-pivotview/src/pivotview/model/gridsettings';
@@ -14,6 +14,7 @@ import { Browser } from '@syncfusion/ej2-base';
     ],
     standalone: true,
     selector: 'app-container',
+    providers: [FieldListService],
     // specifies the template string for the pivot table component
     template: `<ejs-pivotview #pivotview id='PivotView' height='450' [dataSourceSettings]=dataSourceSettings width=width [showFieldList]='true' [gridSettings]='gridSettings'></ejs-pivotview>`
 })

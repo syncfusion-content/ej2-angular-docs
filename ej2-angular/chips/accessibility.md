@@ -44,10 +44,10 @@ The Chips component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patt
 
 | Attributes | Purpose |
 | --- | --- |
-| `role=listbox` | Indicates the ChipList component wrapper element as `listbox`. |
+| `role=listbox` | Indicates the Chips component wrapper element as `listbox`. |
 | `role=option` | Used to convey a significant and contextual message to the user(ChipList). |
-| `role=button` | Used to convey a significant and contextual message to the user(Single Chip). |
-| `aria-label` | Provides an accessible name for the Chip. |
+| `role=button` | Used to convey a significant and contextual message to the user(Single Chips). |
+| `aria-label` | Provides an accessible name for the Chips. |
 | `aria-selected` | Indicates the element is selected. |
 | `aria-disabled` | Indicates element is perceivable but disabled. |
 | `aria-multiselectable` | Indicates multiple items to be selected. |

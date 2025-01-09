@@ -4,7 +4,7 @@ import { RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 import { enableRipple } from '@syncfusion/ej2-base'
 import { FormsModule } from '@angular/forms'
-import {CommonModule} from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -37,6 +37,3 @@ export class AppComponent {
     public paymentMethod: string[] = ['Credit card', 'Debit card', 'Net Banking', 'Other Wallets'];
     public value:string = "Credit card";
 }
-
-
-

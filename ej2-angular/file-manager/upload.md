@@ -20,6 +20,18 @@ To enable directory upload, set the `directoryUpload` property to `true` in the 
 
 When set to `true`, this property enables directory upload in the File Manager, allowing users to upload entire folders. If set to `false`, only individual files can be uploaded. 
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/file-manager/upload/directory-upload-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/file-manager/upload/directory-upload-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/file-manager/upload/directory-upload-cs2" %}
+
 >Note: When `directoryUpload` is set to `true`, only folders can be uploaded. When it is set to `false`, only individual files can be uploaded. Simultaneous uploading of files and folders is not supported.
 
 To learn more about the folder upload actions, refer to this [link](https://ej2.syncfusion.com/angular/documentation/file-manager/file-operations#folder-upload-support)
@@ -34,35 +46,17 @@ By specifying a `chunkSize`, the large file is divided into smaller parts, reduc
 
 In the following example, the chunkSize is set to 5 MB (5,242,880 bytes), and the maxFileSize is set to 70 MB (73,728,000 bytes). This means files that are up to 70 MB will be uploaded in 5 MB chunks.
 
-```ts
-    import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
-    import { Component } from '@angular/core';
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/file-manager/upload/chunk-upload/src/app.component.ts %}
+{% endhighlight %}
 
-    @Component({
-        imports: [FileManagerModule,],
-        providers: [NavigationPaneService, ToolbarService, DetailsViewService],
-        standalone: true,
-        selector: 'app-root',
-        styleUrls: ['./app.component.css'],
-        template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [uploadSettings]='uploadSettings'>
-        </ejs-filemanager>`
-    })
-    export class AppComponent {
-        public ajaxSettings?: object;
-        public uploadSettings?: object;
-        public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-        public ngOnInit(): void {
-            this.ajaxSettings = {
-                url: this.hostUrl + 'api/FileManager/FileOperations',
-                getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
-                uploadUrl: this.hostUrl + 'api/FileManager/Upload',
-                downloadUrl: this.hostUrl + 'api/FileManager/Download'
-            };
-            // Upload settings customization
-            this.uploadSettings = { chunkSize: 5242880, maxFileSize: 73728000 };
-        };
-    }
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/file-manager/upload/chunk-upload/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/file-manager/upload/chunk-upload" %}
 
 With chunk upload, the pause and resume options gives users enhanced control over the file upload process.
 
@@ -78,35 +72,17 @@ The [autoUpload](https://ej2.syncfusion.com/angular/documentation/api/file-manag
 
 The default value is `true`, the File Manager will automatically upload files as soon as they are added to the upload queue. If set to `false`, the files will not be uploaded automatically, giving you the chance to manipulate the files before uploading them to the server.
 
-```ts
-    import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
-    import { Component } from '@angular/core';
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/file-manager/upload/auto-upload/src/app.component.ts %}
+{% endhighlight %}
 
-    @Component({
-        imports: [FileManagerModule,],
-        providers: [NavigationPaneService, ToolbarService, DetailsViewService],
-        standalone: true,
-        selector: 'app-root',
-        styleUrls: ['./app.component.css'],
-        template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [uploadSettings]='uploadSettings'>
-        </ejs-filemanager>`
-    })
-    export class AppComponent {
-        public ajaxSettings?: object;
-        public uploadSettings?: object;
-        public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-        public ngOnInit(): void {
-            this.ajaxSettings = {
-                url: this.hostUrl + 'api/FileManager/FileOperations',
-                getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
-                uploadUrl: this.hostUrl + 'api/FileManager/Upload',
-                downloadUrl: this.hostUrl + 'api/FileManager/Download'
-            };
-            // Upload settings customization
-            this.uploadSettings = { autoUpload: false };
-        };
-    }
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/file-manager/upload/auto-upload/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/file-manager/upload/auto-upload" %}
 
 ## Auto Close
 
@@ -114,35 +90,17 @@ The [autoClose](https://ej2.syncfusion.com/angular/documentation/api/file-manage
 
 The default value is set to `false`, the upload dialog remains open even after the upload process is complete. If `autoClose` set to `true`, the upload dialog will automatically close after all the files in the upload queue are uploaded.
 
-```ts
-    import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
-    import { Component } from '@angular/core';
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/file-manager/upload/auto-close/src/app.component.ts %}
+{% endhighlight %}
 
-    @Component({
-        imports: [FileManagerModule,],
-        providers: [NavigationPaneService, ToolbarService, DetailsViewService],
-        standalone: true,
-        selector: 'app-root',
-        styleUrls: ['./app.component.css'],
-        template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [uploadSettings]='uploadSettings'>
-        </ejs-filemanager>`
-    })
-    export class AppComponent {
-        public ajaxSettings?: object;
-        public uploadSettings?: object;
-        public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-        public ngOnInit(): void {
-            this.ajaxSettings = {
-                url: this.hostUrl + 'api/FileManager/FileOperations',
-                getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
-                uploadUrl: this.hostUrl + 'api/FileManager/Upload',
-                downloadUrl: this.hostUrl + 'api/FileManager/Download'
-            };
-            // Upload settings customization
-            this.uploadSettings = { autoClose: false };
-        };
-    }
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/file-manager/upload/auto-close/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/file-manager/upload/auto-close" %}
 
 ## Prevent upload based on file extensions
 
@@ -154,35 +112,17 @@ By setting the `allowedExtensions` property, you restrict the file types that ca
 
 If you want to allow only image files like .jpg and .png, you would set the property as follows:
 
-```ts
-    import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
-    import { Component } from '@angular/core';
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/file-manager/upload/prevent-upload/src/app.component.ts %}
+{% endhighlight %}
 
-    @Component({
-        imports: [FileManagerModule,],
-        providers: [NavigationPaneService, ToolbarService, DetailsViewService],
-        standalone: true,
-        selector: 'app-root',
-        styleUrls: ['./app.component.css'],
-        template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [uploadSettings]='uploadSettings'>
-        </ejs-filemanager>`
-    })
-    export class AppComponent {
-        public ajaxSettings?: object;
-        public uploadSettings?: object;
-        public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-        public ngOnInit(): void {
-            this.ajaxSettings = {
-                url: this.hostUrl + 'api/FileManager/FileOperations',
-                getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
-                uploadUrl: this.hostUrl + 'api/FileManager/Upload',
-                downloadUrl: this.hostUrl + 'api/FileManager/Download'
-            };
-            // Upload settings customization
-            this.uploadSettings = { allowedExtensions: '.jpg,.png' };
-        };
-    }
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/file-manager/upload/prevent-upload/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/file-manager/upload/prevent-upload" %}
 
 ## Restrict drag and drop upload
 
@@ -192,54 +132,19 @@ Setting [allowDragAndDrop](https://ej2.syncfusion.com/angular/angular/documentat
 
 To completely prevent the external drag-and-drop upload functionality (i.e., disallowing users from dragging and dropping files from outside into the File Manager), you can set the [dropArea](https://ej2.syncfusion.com/angular/documentation/api/uploader#droparea) property to null. This can be done by accessing the File Manager instance via its class methods.
 
-The following example demonstrates how to prevent the external drag and drop upload actions for all types of files in the File Manager component.
-
-```ts
-    import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
-    import { Component } from '@angular/core';
-
-    @Component({
-        imports: [FileManagerModule,],
-        providers: [NavigationPaneService, ToolbarService, DetailsViewService],
-        standalone: true,
-        selector: 'app-root',
-        styleUrls: ['./app.component.css'],
-        template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [uploadSettings]='uploadSettings' (created)="onCreated($event)"></ejs-filemanager>`
-    })
-    export class AppComponent {
-        public ajaxSettings?: object;
-        public uploadSettings?: object;
-        public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-        public ngOnInit(): void {
-            this.ajaxSettings = {
-                url: this.hostUrl + 'api/FileManager/FileOperations',
-                getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
-                uploadUrl: this.hostUrl + 'api/FileManager/Upload',
-                downloadUrl: this.hostUrl + 'api/FileManager/Download'
-            };
-            // Upload settings customization
-            this.uploadSettings = { minFileSize: 120 };
-        };
-        onCreated() {
-            // filemanagerInstance.uploadObj.dropArea = null;  // Restrict file uploads by dragging them from the local file system to the File Manager.
-        }
-    }
-```
-
-
-The following example demonstrate the File Manager with uploadSettings functions.
+The following example demonstrates how to prevent the external drag and drop upload actions for all types of files in the File Manager component with uploadSettings functions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/file-manager/upload-feature-cs1/src/app.component.ts %}
+{% include code-snippet/file-manager/upload/upload-feature-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/file-manager/upload-feature-cs1/src/main.ts %}
+{% include code-snippet/file-manager/upload/upload-feature-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/file-manager/upload-feature-cs1" %}
+{% previewsample "page.domainurl/samples/file-manager/upload/upload-feature-cs1" %}
 
 
 ## See also
