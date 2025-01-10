@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Iframe in Angular Rich Text Editor component | Syncfusion
+title: IFrame Editing Mode | Syncfusion
 description: Learn here all about Iframe in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Iframe 
+control: IFrame Editing Mode 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Iframe in Angular Rich Text Editor Component
+# IFrame Editing Mode in Angular Rich Text Editor Component
 
 The iframe editor in the Rich Text Editor component provides an isolated environment for content editing. It uses an iframe element to create a separate document, ensuring better compatibility and separation from the parent page's styles and scripts. In this mode, the editor displays only the body tag of the iframe, offering a clean and isolated workspace for content creation.
 
@@ -30,7 +30,7 @@ Here's an example of how to enable the iframe editor:
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs5" %}
 
-## IFrame Attributes
+## Customizing IFrame Attributes
 
 You can add custom attributes to the body tag of the iframe using the attributes field of the [`iframeSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#iframesettings) property. This property accepts name/value pairs in string format, enabling you to override the default appearance of the content area.
 
@@ -46,7 +46,7 @@ You can add custom attributes to the body tag of the iframe using the attributes
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs6" %}
 
-## Adding External CSS/Script File
+## Integrating External CSS and Scripts
 
 The Rich Text Editor allows you to apply an external CSS file to style the iframe element. This can be done using the [`styles`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#iframesettings) field in the iframeSettings property. By including an external CSS file, you can easily change the appearance of the editor’s content to meet your specific requirements.
 
@@ -68,5 +68,5 @@ Likewise, add the external script file to the `< iframe >` element using the [`s
 
 ## See also
 
-* [Inline Editing](./inline-mode.md)
-* [Markdown Editor](./markdown.md)
+* [Implementing Inline Editing](./inline-editing.md)
+* [Using the Markdown Editor](./markdown.md)

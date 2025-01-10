@@ -19,9 +19,15 @@ There are two ways to perform Undo and Redo operations:
    - For Undo: `Ctrl + Z` (Windows) or `Cmd + Z` (Mac)
    - For Redo: `Ctrl + Y` (Windows) or `Cmd + Shift + Z` (Mac)
 
-## Customizing Undo redo timer and steps
+## Customizing Undo/Redo Timer
 
-By default, the editor allows up to 30 Undo/Redo actions. You can modify the number of undo/redo steps using the [`undoRedoSteps`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#undoredosteps) property. The default time interval for storing Undo/Redo actions is 300 milliseconds. You can adjust this interval using the [`undoRedoTimer`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#undoredotimer) property.
+By default, the time interval for storing Undo/Redo actions is 300 milliseconds. You can adjust this interval using the [`undoRedoTimer`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#undoredotimer) property.
+
+## Configuring Undo/Redo Steps
+
+The editor allows up to 30 Undo/Redo actions by default. You can modify the number of undo/redo steps using the [`undoRedoSteps`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#undoredosteps) property.
+
+Here's an example of how to customize both the Undo/Redo timer and steps:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

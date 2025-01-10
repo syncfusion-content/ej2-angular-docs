@@ -34,7 +34,7 @@ The character count color will be modified based on the characters in the RichTe
 | normal | Till 70% of given maxLength count reach, character count color is black.|
 | warning | Once the number of character count in the Rich Text Editor reached 70% of given maxLength count, the character count color will be orange, indicating that, the Rich Text Editor value going to reach the maximum count.|
 | error | Once the number of character count in the Rich Text Editor reached 90% of given maxLength count, the character count color will be red, indicating that, the Rich Text Editor value reached the maximum count.|
-To use quick `Character Count` feature, inject `CountService` in the provider section of `AppModule`.
+To use quick `Character Count` feature, inject `CountService` in the provider section.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/getting-started-cs19/src/app.component.ts %}

@@ -2,20 +2,14 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { SliderModule } from '@syncfusion/ej2-angular-inputs'
-
-
-
-
 import { Component } from '@angular/core';
 
 @Component({
-imports: [
-         FormsModule,
-        SliderModule
-    ],
-
-
-standalone: true,
+  imports: [
+    FormsModule,
+    SliderModule
+  ],
+  standalone: true,
   selector: 'my-app',
   template: `
     <div class="container">
@@ -33,14 +27,13 @@ standalone: true,
             </div>
         </div>
     </div>`,
-    styleUrls : ["./app.component.css"]
 })
 
 export class AppComponent {
-   public slidervalue = 3;
-   public customvalues = [10, 20, 30, 100, 250, 400, 500];
+  public slidervalue = 3;
+  public customvalues = [10, 20, 30, 100, 250, 400, 500];
 
-   public ticks = {
+  public ticks = {
     placement: 'After',
   };
 

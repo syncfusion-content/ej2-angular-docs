@@ -29,7 +29,7 @@ standalone: true,
                     <div id='target' class="control-section">
                         <ejs-dialog #dialogObj id='dialog' [visible]='visible' [header]='dialogHeader' [animationSettings]='animationSettings' [showCloseIcon]='showCloseIcon' (open)="dialogOpen()" (close)="dialogClose()" 
                             [target]='target' [width]='dialogWidth'>
-                            <ejs-filemanager #filemanagerObj id='filemanager' [ajaxSettings]='ajaxSettings' [toolbarSettings]='toolbarSettings' [contextMenuSettings]='contextMenuSettings' [allowMultiSelection]='false' (fileOpen)="onFileOpen($event)">
+                            <ejs-filemanager #filemanagerObj id='filemanager' [ajaxSettings]='ajaxSettings' [toolbarSettings]='toolbarSettings' [contextMenuSettings]='contextMenuSettings' [allowMultiSelection]='false' (fileOpen)="onFileOpen($event)" height="375px">
                             </ejs-filemanager>
                         </ejs-dialog>
                     </div>

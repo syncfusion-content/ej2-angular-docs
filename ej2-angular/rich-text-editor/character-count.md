@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The Character Count feature in the Rich Text Editor allows you to track and display the number of characters entered in the editor. This feature is particularly useful when you need to limit the content length or provide visual feedback to users about their input.
 
-## Enabling Character Count
+## How to Enable Character Count
 
 To enable the character count feature, set the `showCharCount` property to `true`. By default, this property is set to `false`.
 
@@ -21,7 +21,7 @@ When enabled, the character count is displayed at the bottom right corner of the
 
 >To use quick `Character Count` feature, configure `CountService` in the provider section.
 
-## Character Count Color Indicators
+## Understanding Character Count Color Indicators
 
 The character count color will be modified based on the characters in the Rich Text Editor.
 
@@ -43,13 +43,13 @@ The character count color will be modified based on the characters in the Rich T
 
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs19" %}
 
-## Maximum Character Count
+## Setting Maximum Character Limit
 
 You can restrict the number of characters entered in the editor by setting the `maxLength` property to a specific numeric value. When set, the maximum allowable character count is displayed alongside the current count at the bottom right of the editor.
 
 If `maxLength` is not set, there is no limit to the character count in the editor.
 
-## Programmatically Getting Character Count
+## Retrieving Character Count Programmatically
 
 You can programmatically get the current character count in the editor using the [`getCharCount`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#getcharcount) public method.
 
@@ -61,4 +61,4 @@ You can programmatically get the current character count in the editor using the
 
 ## See Also
 
-* [Customizing the character count in Styles](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/style#customizing-the-rich-text-editors-character-count)
+* [How to Customize Character Count and Styles in Rich Text Editor](./style.md/#customizing-character-count-display)

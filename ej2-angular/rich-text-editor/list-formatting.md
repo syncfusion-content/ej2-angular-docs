@@ -19,7 +19,7 @@ List formatting in the Rich Text Editor allows users to organize content into st
 
 Ordered lists present items in a specific sequence, with each item preceded by a number or letter. The Rich Text Editor provides two ways to create and manage ordered lists:
 
-### OrderedList Tool
+### Using the OrderedList Tool
 
 The `OrderedList` toolbar item offers a quick way to create or toggle a numbered list. To use it, select the desired text in the editor and click the `OrderedList` button in the toolbar. If the selected text is not already a numbered list, it will be converted into one. If it's already a numbered list, clicking the button will remove the list formatting.
 
@@ -27,7 +27,7 @@ The `OrderedList` toolbar item offers a quick way to create or toggle a numbered
 
 For more detailed control over the numbering style, use the `numberFormatList` dropdown in the toolbar. Select the desired text in the editor, then choose the preferred format from the `numberFormatList` dropdown. The selected text will be transformed into a numbered list with the chosen style.
 
-#### Available numbering styles:
+#### Available Numbering Styles:
 
 * `None`: Removes numbering while maintaining list structure and indentation
 * `Number`: Uses standard numeric sequencing (1, 2, 3, ...)
@@ -57,7 +57,7 @@ The following example demonstrates how to customize the number format lists in t
 
 Unordered lists present items with visual markers, providing an effective way to list items without implying order or priority. The Rich Text Editor offers two methods for creating and managing unordered lists:
 
-### UnorderedList Tool
+### Using the UnorderedList Tool
 
 The `UnorderedList` toolbar item provides a fast way to create or toggle a bulleted list. To use it, select the desired text in the editor and click the `UnorderedList` button in the toolbar. If the selected text is not already a bulleted list, it will be converted into one. If it's already a bulleted list, clicking the button will remove the list formatting.
 
@@ -65,7 +65,7 @@ The `UnorderedList` toolbar item provides a fast way to create or toggle a bulle
 
 For more control over the bullet style, use the `bulletFormatList` dropdown in the toolbar. Select the desired text in the editor, then choose the preferred format from the `bulletFormatList` dropdown. The selected text will be transformed into a bullet list with the chosen style.
 
-#### Available bullet styles:
+#### Available Bullet Styles:
 
 * `None`: Removes bullet points while maintaining list structure and indentation
 * `Disc`: Displays solid circular bullets
@@ -114,3 +114,8 @@ The Tab key provides a quick way to adjust list indentation:
 - Pressing Shift + Tab will decrease the indent of the selected list item, moving it to the previous level.
 
 This behavior allows for efficient creation and management of multi-level lists without the need to use the toolbar buttons.
+
+## See Also
+
+[Increase and Decrease Indent Levels](./indent-and-outdent.md) 
+

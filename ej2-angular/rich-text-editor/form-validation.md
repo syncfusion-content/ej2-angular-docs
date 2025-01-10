@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Rich Text Editor supports both the reactive and template-driven form-building technologies.
 
-## Template Driven Forms
+## Template-Driven Forms
 
 The template-drive forms use the `angular` directives in view to handle the forms controls. To enable the template-driven, import the FormsModule into corresponding app component.
 

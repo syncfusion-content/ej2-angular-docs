@@ -8,7 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Get/Set value
+# Editor value in Angular Rich Text Editor Component
+
+## Get and Set Value
 
 **Setting Values**
 
@@ -87,7 +89,7 @@ The change event will be triggered if the content has been modified since the la
   
 {% previewsample "page.domainurl/samples/rich-text-editor/editor-value-cs2" %}
 
-## Get Content Programmatically
+## Programmatic Content Access 
 
  you can use the [getHtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#gethtml) public method to retrieve the Rich Text Editor content.
 
@@ -104,7 +106,7 @@ To fetch the Rich Text Editor's text content, use [getText](https://ej2.syncfusi
   let editorValue: string = this.editorObj.getText();
 
 ```
-## Get / Set the Encoded Value
+## Encoded Editor Value
 
 The [`enableHtmlEncode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#enablehtmlencode) property in the Rich Text Editor specifies whether the source code is displayed in an encoded format. Additionally, the [`value`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#value) property also returns the content in an encoded format. This feature is particularly useful when you want to ensure that HTML content is displayed safely without being interpreted by the browser.
 
@@ -129,7 +131,7 @@ export class AppComponent {
 }
 
 ```
-## Editor Content Styles
+## Styling Editor Content
 
 By default, the content styles of the Rich Text Editor are not included when retrieving the HTML value from the editor. This can result in the styles not being applied when using the HTML content outside of the editor. To ensure that the styles are correctly applied, you can copy and use the following styles directly in your application: These styles are used in the UI elements of the Rich Text Editor.
 
@@ -355,5 +357,6 @@ By default, the content styles of the Rich Text Editor are not included when ret
 
 ```
 
-## See also 
-* [Preventing of cross-site scripting (XSS)](./)
+## See Also
+
+* [Implementing Prevention of cross-site scripting (XSS)](./prevent-cross-site-scripting.md)

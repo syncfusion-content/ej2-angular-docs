@@ -32,4 +32,4 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 
 ## See Also
 
-* Customization of format dropdown items in Headings
+* [How to Customize Format Dropdown Items in Headings](./headings.md/#customizing-format-dropdown-items)

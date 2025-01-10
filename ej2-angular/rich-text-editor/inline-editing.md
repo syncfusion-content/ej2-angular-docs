@@ -12,9 +12,9 @@ domainurl: ##DomainURL##
 
 Inline editing is a feature of the Rich Text Editor that allows users to edit content directly within the editor where it is displayed. Unlike traditional editing interfaces where the editor toolbar is in a separate area at the top or bottom, inline editing offers a seamless, on-the-spot editing experience. You can click on the text or select the text you wish to edit and make changes immediately.
 
-Enable inline editing in the Rich Text Editor by using the[`inlineMode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#inlinemode) with the `enable` property as `true`. This configuration activates the feature, allowing direct content editing within its displayed context.
+Enable inline editing in the Rich Text Editor by using the [`inlineMode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#inlinemode) with the `enable` property as `true`. This configuration activates the feature, allowing direct content editing within its displayed context.
 
-## Show toolbar on select
+## Toolbar on Selection
 
 The inline toolbar in the Rich Text Editor is triggered based on the [`onSelection`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/inlineMode/#onselection) option within the inlineMode settings. 
 

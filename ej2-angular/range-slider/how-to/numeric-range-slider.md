@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Numeric range slider in Angular Range slider component | Syncfusion
-description: Learn here all about Numeric range slider in Syncfusion Angular Range slider component of Syncfusion Essential JS 2 and more.
+title: Numeric Range Slider in Angular Range Slider component | Syncfusion
+description: Learn here all about Numeric Range Slider in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Numeric range slider 
+control: Range Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 
-# Numeric range slider in Angular Range slider component
+# Numeric Range Slider in Angular
 
-The numeric values can be formatted into different decimal digits or fixed number of whole numbers or to represent the units.
-The Numeric processing is demonstrated below.
+The numeric values can be formatted into different decimal digits or fixed number of whole numbers or to represent the units. The numeric processing is demonstrated below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

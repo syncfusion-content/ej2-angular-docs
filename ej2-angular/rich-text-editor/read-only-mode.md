@@ -32,4 +32,4 @@ Please refer to the sample and code snippets below to demonstrate how to enable 
 
 ## See Also
 
-[Disabling the Editor](./disable-editor/)
+[How to Disable and Enable the Rich Text Editor](./disable-editor.md)

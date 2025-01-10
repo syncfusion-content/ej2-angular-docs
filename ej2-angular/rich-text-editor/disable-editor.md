@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Disabling Editor in Angular Rich Text Editor component | Syncfusion
+title: Disabling the Rich Text Editor | Syncfusion
 description: Learn all about Disabling Editor in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Disabling Editor
+control: Disabling the Rich Text Editor
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -34,4 +34,4 @@ Below are examples and code snippets demonstrating how to disable the Rich Text 
 
 ### See Also
 
-[Read-only Mode](./read-only-mode/)
+[Implementing Read-Only Mode in Rich Text Editor](./read-only-mode.md)

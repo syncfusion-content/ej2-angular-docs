@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize slider msword in Angular Range slider component | Syncfusion
-description: Learn here all about Customize slider msword in Syncfusion Angular Range slider component of Syncfusion Essential JS 2 and more.
+title: Customize MS Word Slider in Angular Range Slider Component | Syncfusion
+description: Learn here all about Customize MS Word Slider in Angular Range Slider Component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Customize slider msword 
+control: Range Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize slider msword in Angular Range slider component
+# Customize MS Word Slider in Angular Range Slider Component
 
 Slider view can be customized via CSS. By overriding the slider CSS classes, you can customize the slider buttons and thumbs. The ticks in slider allows you to easily identify the value in the slider.
 
@@ -67,7 +67,9 @@ To customize the Slider Button, refer to the below code snippet.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/slider/msword-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/slider/msword-customization-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/slider/msword-customization-cs1/src/main.ts %}
 {% endhighlight %}

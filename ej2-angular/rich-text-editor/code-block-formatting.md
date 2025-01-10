@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Code Block Formatting in Angular Rich Text Editor component | Syncfusion
+title: Code Block Formatting | Syncfusion
 description: Learn all about Code Formatting in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Code Block Formatting
@@ -66,4 +66,4 @@ This styling adds a light gray background, sets a monospace font, and includes p
 
 ## See Also
 
-* [How to customize the format dropdown items](./headings/#customization-of-format-dropdown-items)
+* [How to customize the format dropdown items](./headings.md/#customizing-format-dropdown-items)

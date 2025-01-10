@@ -3,7 +3,7 @@ layout: post
 title: Upload in Angular File manager component | Syncfusion
 description: Learn here all about Upload in Syncfusion Angular File manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Upload
+control: File Manager
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -138,7 +138,9 @@ The following example demonstrates how to prevent the external drag and drop upl
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/upload/upload-feature-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/upload/upload-feature-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/upload/upload-feature-cs1/src/main.ts %}
 {% endhighlight %}

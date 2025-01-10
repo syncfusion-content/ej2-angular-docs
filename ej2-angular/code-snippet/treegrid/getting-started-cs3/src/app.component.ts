@@ -11,7 +11,7 @@ import { PageSettingsModel, SortSettingsModel } from '@syncfusion/ej2-angular-tr
 
     providers: [PageService, SortService, FilterService],
     standalone: true,
-    selector: 'app-container',
+    selector: 'app-root',
     template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' [sortSettings]="sortSettings"
                 [allowSorting]="true" childMapping='subtasks' [allowPaging]="true" [pageSettings]='pageSettings'>
                 <e-columns>

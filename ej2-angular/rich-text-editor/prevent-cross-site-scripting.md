@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Preventing XSS in Angular Rich Text Editor component | Syncfusion
+title: Preventing Cross-Site Scripting (XSS) | Syncfusion
 description: Learn all about Preventing XSS in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Preventing XSS
+control: Preventing Cross-Site Scripting (XSS)
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prevention of Cross-Site Scripting (XSS)
+# Preventing Cross-Site Scripting (XSS)
 
 The Rich Text Editor allows users to edit the content with security by preventing cross-site scripting (XSS). By default, it provides built-in support to remove elements from editor content that cause XSS attacks. The editor removes the elements based on the attributes if it is possible to execute a script.
 
@@ -30,7 +30,7 @@ In the following sample, we removed the `script` tag and `onmouseover` attribute
 
 > The XSS prevention feature is only applicable when the [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#editormode) is set to HTML.
 
-## Custom Cross-Site Scripting
+## Custom Cross-Site Scripting Prevention
 
 For more precise control over XSS prevention, you can implement custom filtering logic using the [`beforeSanitizeHtml`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#beforesanitizehtml) event.
 

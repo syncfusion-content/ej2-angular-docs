@@ -26,13 +26,13 @@ standalone: true,
                                     <e-tabitem [header]='headerText[0]'>
                                         <ng-template #content>
                                             <div class="cnt-text" >Overview</div>
-                                            The file manager component contains a context menu for performing file operations, large-icons view for displaying the files and folders, and a breadcrumb for navigation. However, these basic functionalities can be extended by using the additional feature modules like toolbar, navigation pane, and details view to simplify the navigation and file operations within the file system.
+                                            The File Manager component contains a context menu for performing file operations, large-icons view for displaying the files and folders, and a breadcrumb for navigation. However, these basic functionalities can be extended by using the additional feature modules like toolbar, navigation pane, and details view to simplify the navigation and file operations within the file system.
                                         </ng-template>
                                     </e-tabitem>
                                     <e-tabitem [header]='headerText[1]'>
                                         <ng-template #content>
                                             <div class="cnt-text" >Filemanager with Default Functionalities</div>
-                                            <ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings'>
+                                            <ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' height="375px">
                                             </ejs-filemanager>
                                         </ng-template>
                                     </e-tabitem>

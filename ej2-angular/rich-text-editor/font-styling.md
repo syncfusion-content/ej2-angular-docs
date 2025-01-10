@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Styling in Angular Rich text editor component | Syncfusion
+title: Font Family, Size and Color | Syncfusion
 description: Learn all about Styling in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Styling 
+control: Font Family, Size and Color 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -21,7 +21,7 @@ domainurl: ##DomainURL##
 
   These steps will apply the selected font style to the chosen text, allowing you to customize the appearance of your content easily.
 
-### Configure the Font Family Tool in Toolbar
+### Configuring the Font Family Tool in the Toolbar
 
 You can add the `FontName` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
 
@@ -44,7 +44,7 @@ export class AppComponent {
 ```
 The Rich Text Editor comes with a pre-configured set of [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fontfamily) property.
 
-### Custom Font Family
+### Adding Custom Font Families
 
   The Rich Text Editor supports providing custom fonts along with the existing list. To add additional font names to the font dropdown, you can configure the items field of the [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fontfamily) property. This allows you to extend the available font options beyond the default selection.
 
@@ -60,7 +60,7 @@ The Rich Text Editor comes with a pre-configured set of [`fontFamily`](https://e
     
   {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs25" %}
 
-### Google Font Support
+### Supporting Google Fonts
 
 To use web fonts in Rich Text Editor, it is not needed for the web fonts to be present in local machine. To add the web fonts to Rich Text Editor, you need to refer the web font links and add the font names in the [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fontfamily) property.
 
@@ -91,7 +91,7 @@ The below font style links are referred in the page.
 
 The Rich Text Editor initializes with a default font size, which inherits the font size of the parent element. You can change the font for selected text using the font size dropdown in the toolbar. When the default font size is selected, the toolbar will display "Font Size". However, for other font sizes, the toolbar will show the name of the selected font.
 
-### Configure the Font Size Tool in Toolbar
+### Configuring the Font Size Tool in the Toolbar
 
 You can add the `FontSize` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
 
@@ -114,7 +114,7 @@ export class AppComponent {
 ```
 The Rich Text Editor includes a default set of [`fontSize`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fontsize) property.
 
-### Custom Font Size
+### Defining Custom Font Sizes
 
   The Rich Text Editor supports providing custom fonts along with the existing list. To add additional font names to the font dropdown, you can configure the items field of the [`fontSize`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fontsize) property. This allows you to extend the available font options beyond the default selection.
 
@@ -132,7 +132,7 @@ The Rich Text Editor includes a default set of [`fontSize`](https://ej2.syncfusi
 
 ## Font and Background Color
 
-### Configure the Font and Background Color Tool in Toolbar
+### Configuring the Font and Background Color Tool in the Toolbar
 
 You can add the `FontName` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
 
@@ -154,7 +154,7 @@ export class AppComponent {
 
 ```
 
-### Custom Font and Background Color.
+### Setting Custom Font and Background Colors
 
 To apply `font color` or `background color` to selected content in the Rich Text Editor, use the font color and background color tools.
 
@@ -173,3 +173,8 @@ Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` 
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs26" %}
+
+## See Also
+
+* [Applying Basic Text Formatting in Rich Text Editor](./basic-text-styling.md)
+* [Implementing Headings and Text Hierarchy in Rich Text Editor](./headings.md)

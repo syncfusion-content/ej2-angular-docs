@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Style in Angular Rich Text Editor component | Syncfusion
+title: Style Appearance Customization | Syncfusion
 description: Learn here all about Style in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Style 
+control: Style Appearance Customization 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in the Angular Rich Text Editor component
+# Style Appearance Customization in the Angular Rich Text Editor component
 
 The content below outlines the CSS structure you can use to customize the appearance of the control according to your preferences.
 
-## Customizing the Rich Text Editor's content
+## Customizing Rich Text Editor Content
 
 Use the following CSS to modify the default style of the Rich Text Editor's content area, including font properties, background, and text color.
 
@@ -32,7 +32,7 @@ Use the following CSS to modify the default style of the Rich Text Editor's cont
 }
 ```
 
-## Customizing the Rich Text Editor's toolbar
+## Customizing Rich Text Editor Toolbar
 
 Use the following CSS to customize the default color in the Rich Text Editor's toolbar icon.
 
@@ -62,7 +62,7 @@ Use the following CSS to customize the default color in the Rich Text Editor's t
 }
 ```
 
-## Customizing the character count
+## Customizing Character Count Display
 
 Use the following CSS to customize the default color in the Rich Text Editor's character count.
 
@@ -78,7 +78,7 @@ Use the following CSS to customize the default color in the Rich Text Editor's c
 }
 ```
 
-## Customizing the placeholder
+## Customizing Placeholder Text
 
 Use the following CSS to customize the default color in the Rich Text Editor's placeholder.
 
@@ -91,7 +91,7 @@ Use the following CSS to customize the default color in the Rich Text Editor's p
 
 ```
 
-## Customizing the border color
+## Customizing Border Color
 
 Use the following CSS to customize the border color in the Rich Text Editor's container.
 
@@ -105,5 +105,5 @@ Use the following CSS to customize the border color in the Rich Text Editor's co
 ```
 ## See Also
 
-* [Editor Styles in the Rich Text Editor](./styling)
+* [Text Styling and Formatting](./font-styling.md)
 

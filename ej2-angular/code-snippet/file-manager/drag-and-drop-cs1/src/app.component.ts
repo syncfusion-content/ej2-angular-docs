@@ -14,7 +14,7 @@ providers:[NavigationPaneService, ToolbarService, DetailsViewService],
 standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
-    template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [allowDragAndDrop]='allowDragAndDrop' (fileDragStart)='onFileDragStart($event)' (fileDragStop)='onFileDragStop($event)' (fileDragging)='onFileDragging($event)' (fileDropped)='onFileDropped($event)' >
+    template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [allowDragAndDrop]='allowDragAndDrop' (fileDragStart)='onFileDragStart($event)' (fileDragStop)='onFileDragStop($event)' (fileDragging)='onFileDragging($event)' (fileDropped)='onFileDropped($event)' height="375px" >
     </ejs-filemanager>`
 })
 export class AppComponent {

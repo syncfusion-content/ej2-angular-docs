@@ -67,3 +67,7 @@ Using `Clear Format` makes it easy to undo styling changes and keep your text lo
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/rich-text-editor/remove-format-cs1" %}
+
+## See Also
+
+[Copy and Apply Formatting](./format-painter.md)

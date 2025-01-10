@@ -42,3 +42,7 @@ Please refer to the sample below to add these basic text styling options in the 
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/rich-text-editor/basic-text-styling-cs1" %}
+
+## See Also
+
+[Customizing Font Family, Size, and Color in Rich Text Editor](./font-styling.md)

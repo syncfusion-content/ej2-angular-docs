@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Capture ctrl+s to update the value | Syncfusion
+title: Implementing Ctrl+s Shortcut for Value Updates | Syncfusion
 description: Learn here all about Update value in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Update value 
+control: Implementing Ctrl+s Shortcut for Value Updates
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Capture Ctrl+s to Update The Value in Angular Rich Text Editor Component
+# Implementing Ctrl+s Shortcut for Value Updates in Angular Rich Text Editor Component
 
 To implement this functionality, you bind a `keydown` event to the Rich Text Editor content and capture the <kbd>Ctrl</kbd> + <kbd>s</kbd> key press using its keyCode.
 

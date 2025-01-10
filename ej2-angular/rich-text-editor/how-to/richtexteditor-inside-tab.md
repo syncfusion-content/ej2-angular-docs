@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Using Rich Text Editor Inside Tab Component in Angular | Syncfusion
+title: Integrating Rich Text Editor in Tab Components | Syncfusion
 description: Learn here all about Rich Text Editor Inside Tab in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Rich Text Editor Inside Tab 
+control: Integrating Rich Text Editor in Tab Components 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Rich Text Editor Inside the Tab Component
+# Integrating Rich Text Editor in Tab Components
 
 Integrating a Rich Text Editor within Tab components provides a versatile and organized user interface for text formatting and content creation across multiple tabs.  Each tab instance includes a dedicated editor instance configured with extensive toolbar options, enabling users to effortlessly manipulate text styles, apply formatting, insert media, and manage content layout.
 

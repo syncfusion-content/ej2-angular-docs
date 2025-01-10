@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Rich Text Editor includes the ability for users to directly edit HTML code via `Source View` in the text area. If you made any modification in Source view directly, the changes will be reflected in the Rich Text Editor's content. So, the users will have more flexibility over the content they have created.
 
-## Configure Source Code tool in the toolbar
+## Configuring Source Code Tool in the Toolbar
 
 You can add the `SourceCode` tool in the Rich Text Editor using the `toolbarSettings` [items](../api/rich-text-editor/toolbarSettings/#items) property.
 
@@ -34,4 +34,4 @@ The Rich Text Editor provides the[`showSourceCode`](https://ej2.syncfusion.com/a
 
 ## See Also
 
-* [Code-Mirror Integration in Third Party Integration](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/third-party-integration#codemirror-integration)
+* [Integrating Code-Mirror for Enhanced Syntax Highlighting](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/third-party-integration#codemirror-integration)

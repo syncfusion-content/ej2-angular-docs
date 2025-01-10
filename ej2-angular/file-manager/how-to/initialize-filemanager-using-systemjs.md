@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Initialize filemanager using systemjs in Angular File manager component | Syncfusion
-description: Learn here all about Initialize filemanager using systemjs in Syncfusion Angular File manager component of Syncfusion Essential JS 2 and more.
+title: Initialize File Manager using systemjs in Angular File Manager component | Syncfusion
+description: Learn here all about Initialize File Manager using systemjs in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Initialize filemanager using systemjs 
+control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Initialize filemanager using systemjs in Angular File manager component
+# Initialize Angular File Manager component using SystemJS
 
-File manager can also be initialized using `SystemJS` as follows
+File Manager can also be initialized using `SystemJS` as follows:
 
 ## Installation and configuration
 
-* To setup basic `Angular` sample use the following commands.
+* To setup a basic `Angular` sample, use the following commands:
 
   ```sh
   git clone https://github.com/angular/quickstart.git quickstart
@@ -24,7 +24,7 @@ File manager can also be initialized using `SystemJS` as follows
 
 For more information, refer to [Angular sample setup](https://angular.io/guide/setup-local).
 
-* Install Syncfusion file manager packages using the below command.
+* Install Syncfusion File Manager packages using the below command.
 
   ```sh
   npm install @syncfusion/ej2-angular-filemanager --save
@@ -32,7 +32,7 @@ For more information, refer to [Angular sample setup](https://angular.io/guide/s
 
 The above package installs File Manager dependencies which are required to render the component in an Angular environment.
 
-* Syncfusion `ej2-angular-filemanager` packages need to be mapped in `systemjs.config.js` configuration file.
+* Syncfusion `ej2-angular-filemanager` packages need to be mapped in the `systemjs.config.js` configuration file.
 
 ```javascript
 /**
@@ -105,7 +105,7 @@ The above package installs File Manager dependencies which are required to rende
 })(this);
 ```
 
-To render the file manager component, need to import file manager and its dependent component's styles as given below in `style.css`.
+To render the File Manager component, need to import File Manager and its dependent component's styles as given below in `style.css`.
 
 ```css
 @import '@syncfusion/ej2-base/styles/material.css';
@@ -125,17 +125,17 @@ please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Gen
 
 ## Create a simple File Manager
 
-Refer the following code to include the file manager in application .
+Refer to the following code to include the File Manager in your application .
 
-* Create an `Angular` component with file manager. Add the FileManager component by using <ejs-filemanager> selector in template section of the `app.component.ts` file.
+* Create an `Angular` component with a File Manager. Add the File Manager component by using <ejs-filemanager> selector in template section of the `app.component.ts` file.
 
   ```HTML
   <ejs-filemanager id='overview' [ajaxSettings]='ajaxSettings'>
   </ejs-filemanager>
   ```
 
-* Create an `Angular` module and include the above file manager component.
-* In the module, declare the Component and Directives required to render the file manager.
+* Create an `Angular` module and include the above File Manager component.
+* In the module, declare the Component and Directives required to render the File Manager.
 * Bootstrap the application with the above module.
 
 Refer to the following snippet to import the `FileManagerAllModule` in `app.module.ts` from the `@syncfusion/ej2-angular-filemanager`.
@@ -167,13 +167,15 @@ Use the npm run start command to run the application in the browser.
 npm start
 ```
 
-The following samples shows the file manager component in browser.
+The following sample shows the File Manager component in the browser.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/getting-started-cs3/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/getting-started-cs3/src/main.ts %}
 {% endhighlight %}

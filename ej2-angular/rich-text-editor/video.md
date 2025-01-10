@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Rich Text Editor allows you to insert videos from online sources and local computers into your content.  You can insert the video with the following list of options in the [insertVideoSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#insertvideosettings) property.
 
-## Configure the video Tool in the Toolbar
+## Configuring the Video Tool in the Toolbar
 
 You can add the `Video` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
 
@@ -33,7 +33,7 @@ To configure the `Video` toolbar item, refer to the below code.
 {% previewsample "page.domainurl/samples/rich-text-editor/video-cs1" %}
 
 
-## Video Save Format
+## Video Save Formats
 
 The video files can be saved as `Blob` or `Base64` URLs by using the [insertVideoSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettingsModel/#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
@@ -51,29 +51,29 @@ The video files can be saved as `Blob` or `Base64` URLs by using the [insertVide
 
 ```
 
-## Insert a video from the Web
+## Inserting Video from Web
 
 You can insert a video from either a hosted link or your local machine by clicking the video button in the editor's toolbar. When you click the video button, a dialog opens, allowing you to insert a video using an Embedded code or Web URL.
 
-### Insert from Embedded Code
+### Inserting Video via Embed URL
 
 The insert video dialog opens with the `Embedded code` option selected by default. This allows you to insert a video using embedded code.
 
 ![Angular Rich Text Editor Embed URL Video insert](./images/angular-richtexteditor-video-embed.png)
 
-### Insert from Web URL
+### Inserting Video via Web URL
 
 You can switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option will add the video URL as the `src` attribute of the `<source>` tag.
 
 ![Angular Rich Text Editor Video insert](./images/angular-richtexteditor-video-web.png)
 
-## Insert Video from Local Machine
+## Uploading Video from Local Machine
 
 You can use the `browse` option on the video dialog to select the video from the local machine and insert it into the Rich Text Editor content.
 
 If the path field is not specified in the [insertVideoSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#insertvideosettings), the video will be converted into the `Blob` URL or `Base64` and inserted inside the Rich Text Editor.
 
-## Saving Video to Server
+## Saving Video to the Server
 
 Upload the selected video to a specified destination using the controller action specified in [insertVideoSettings.saveUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettingsModel/#saveurl). Ensure to map this method name appropriately and provide the required destination path through the [insertVideoSettings.path](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettingsModel/#path) properties.
 
@@ -228,7 +228,7 @@ namespace FileUpload.Controllers
 
 ```
 
-### Rename the Video Before Inserting
+### Renaming Video Before Inserting
 
 You can use the [insertVideoSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#insertvideosettings) property to specify the server handler to upload the selected video. Then, by binding the [fileUploadSuccess](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploadsuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert video dialog.
 
@@ -326,7 +326,7 @@ public void Rename()
 
 ```
 
-### Restricting Video Based on Size
+### Restricting Video by Size
 
 You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [fileUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploading) event.
 
@@ -370,7 +370,7 @@ export class AppComponent {
 
 ```
 
-### Upload the Video with Authentication
+### Uploading Video with Authentication
 
 You can add additional data with the video uploaded from the Rich Text Editor on the client side, which can even be received on the server side. By using the [fileUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploading) event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
@@ -416,7 +416,7 @@ public void SaveFiles(IList<IFormFile> UploadFiles)
 
 ```
 
-## Replace Video
+## Video Replacement Functionality
 
 Once a video file has been inserted, you can replace it using the Rich Text Editor [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings/#quicktoolbarsettings) `videoReplace` option. You can replace the video file either by using the embedded code or the web URL and the browse option in the video dialog.
 
@@ -424,7 +424,7 @@ Once a video file has been inserted, you can replace it using the Rich Text Edit
 
 ![Angular Rich Text Editor Web Video Replace](./images/angular-richtexteditor-video-replace-web.png)
 
-## Delete Video
+## Deleting Video
 
 To remove a video from the Rich Text Editor content, select the video and click the `videoRemove` button from the quick toolbar. It will delete the video from the Rich Text Editor content as well as from the service location if the [insertVideoSettings.removeUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettingsModel/#removeurl) is given.
 
@@ -432,7 +432,7 @@ Once you select the video from the local machine, the URL for the video will be 
 
 ![Angular Rich Text Editor Video delete](./images/angular-richtexteditor-video-del.png)
 
-## Dimension
+## Adjusting Video Dimensions
 
 Set the default width, minWidth, height, and minHeight of the video element when it is inserted in the Rich Text Editor using the [width](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#width), [minWidth](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#minwidth), [height](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#height), [minHeight](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#minheight) properties.
 
@@ -440,7 +440,7 @@ Through the [quickToolbarSettings](https://ej2.syncfusion.com/angular/document
 
 ![Angular Rich Text Editor Video dimension](./images/angular-richtexteditor-video-size.png)
 
-## Display Position
+## Configuring Video Display Position
 
 Sets the default display property for the video when it is inserted in the Rich Text Editor using the [insertVideoSettings.layoutOption](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/videoSettings/#layoutOption) property. It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the video elements’ layout position.
 
@@ -472,7 +472,7 @@ export class AppComponent {
 
 ```
 
-## Resizing the Video
+## Video Resizing Tools
 
 The Rich Text Editor has built-in video resizing support, which is enabled for the video elements added. The resize points will appear on each corner of the video when focusing, so users can easily resize the video using mouse points or thumb through the resize points. Also, the resize calculation will be done based on the aspect ratio.
 
@@ -482,7 +482,7 @@ You can disable the resize action by configuring `false` for the [insertVideoSet
 
 ![Angular Rich Text Editor video resize](./images/angular-richtexteditor-video-resize.png)
 
-## Customize Video Quick Toolbar
+## Customizing the Video Quick Toolbar
 
 The Rich Text Editor enables customization of the video quick toolbar, allowing you to tailor its functionality with essential tools such as VideoReplace, VideoAlign, VideoRemove, VideoLayoutOption, and VideoDimension.
 
@@ -502,5 +502,6 @@ By configuring these options in the [quickToolbarSettings](https://ej2.syncfusio
 
 ## See Also
 
-* [How to edit the quick toolbar settings](./toolbar/#quick-toolbars)
-* [How to use the image editing option in the toolbar items](./image/)
+* [Quick Toolbars in the Toolbar](./toolbar.md/#quick-toolbars)
+* [How to Use the Audio Editing Option in Toolbar Items](./audio.md)
+* [How to Use the Audio Editing Option in Toolbar Items](./images.md)

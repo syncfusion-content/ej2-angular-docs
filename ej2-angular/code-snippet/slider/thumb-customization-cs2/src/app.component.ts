@@ -1,21 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SliderModule } from '@syncfusion/ej2-angular-inputs'
-
-
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { SliderComponent } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
+    imports: [
         SliderModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <div class="slider_container">
@@ -34,7 +27,6 @@ standalone: true,
             <div class="labelText slider-userselect">Custom image</div>
             <ejs-slider id='image_slider' [value]='value' [min]='min' [max]='max' [ticks]='ticks'></ejs-slider>
         </div>`,
-    styleUrls : ["./app.component.css"],
     encapsulation: ViewEncapsulation.None
 })
 
@@ -46,6 +38,5 @@ export class AppComponent {
         placement: 'After'
     };
 }
-
 
 

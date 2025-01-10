@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Rich Text Editor allows you to insert audio from online sources and local computers and then insert them into your content. You can insert the audio with the following list of options in the [insertAudioSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#insertaudiosettings) property.
 
-## Configure Audio Tool in the Toolbar
+## Configuring the Audio Tool in the Toolbar
 
 You can add an `Audio` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#items) property.
 
@@ -32,7 +32,7 @@ To configure the `Audio` toolbar item, refer to the below code.
   
 {% previewsample "page.domainurl/samples/rich-text-editor/audio-cs1" %}
 
-## Audio Save Format
+## Audio Save Formats
 
 The audio files can be saved as `Blob` or `Base64` URL by using the [insertAudioSettings.saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettingsModel/#saveformat) property, which is of enum type, and the generated URL will be set to the `src` attribute of the `<source>` tag.
 
@@ -54,13 +54,13 @@ The audio files can be saved as `Blob` or `Base64` URL by using the [insertAudio
 
 You can insert audio from either the hosted link or the local machine, by clicking the audio button in the editor's toolbar. On clicking the audio button, a dialog opens, which allows you to insert audio from the web URL.
 
-### Insert from Web URL
+### Inserting Audio from Web URLs
 
 By default, the audio tool opens the audio dialog, allowing you to insert audio from an online source. Inserting the URL will be added to the `src` attribute of the `<source>` tag.
 
 ![Angular Rich Text Editor Audio insert](./images/angular-richtexteditor-audio-web.png)
 
-## Insert Audio from Local Machine
+## Uploading Audio from Local Machine
 
 You can use the `browse` option on the audio dialog, to select the audio from the local machine and insert it into the Rich Text Editor content.
 
@@ -174,14 +174,15 @@ namespace FileUpload.Controllers
 
 ```
 
-## Saving Audio to Server 
+## Saving Audio to the Server 
+
 [saveFormat](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettings/#saveformat) Sets the default save format of the audio element when inserted. Possible options are: `Blob` and `Base64`.
 
 [saveUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettings/#saveurl) provides URL to map the action result method to save the audio.
 
 [removeUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettings/#removeurl) provides URL to map the action result method to remove the audio.
 
-### Rename Audio Before Inserting
+### Renaming Audio Before Inserting
 
 You can use the [insertAudioSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#insertaudiosettings) property, to specify the server handler to upload the selected audio. Then by binding the [fileUploadSuccess](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploadsuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert audio dialog.
 
@@ -281,7 +282,7 @@ public void Rename()
 ```
 
 
-### Restrict Audio Upload Based on Size
+### Restricting Audio by Size
 
 You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [fileUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploading) event.
 
@@ -323,7 +324,7 @@ export class AppComponent {
 
 ```
 
-### Upload Audio with Authentication
+### Uploading Audio with Authentication
 
 You can add additional data with the audio uploaded from the Rich Text Editor on the client side, which can even be received on the server side by using the [fileUploading](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#fileuploading) event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
 
@@ -369,13 +370,13 @@ public void SaveFiles(IList<IFormFile> UploadFiles)
 
 ```
 
-## Replacing Audio
+## Audio Replacement Functionality
 
 Once an audio file has been inserted, you can change it using the Rich Text Editor [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings/#quicktoolbarsettings) `audioReplace` option. You can replace the audio file using the web URL or the browse option in the audio dialog.
 
 ![Angular Rich Text Editor Audio replace](./images/angular-richtexteditor-audio-replace.png)
 
-## Delete Audio
+## Deleting Audios
 
 To remove audio from the Rich Text Editor content, select the audio and click the `audioRemove` button from the quick toolbar. It will delete the audio from the Rich Text Editor content as well as from the service location if the [insertAudioSettings.removeUrl](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettingsModel/#removeurl) is given.
 
@@ -383,7 +384,7 @@ Once you select the audio from the local machine, the URL for the audio will be 
 
 ![Angular Rich Text Editor Audio delete](./images/angular-richtexteditor-audio-del.png)
 
-## Display Position
+## Configuring Audio Display Position
 
 Sets the default display property for audio when it is inserted in the Rich Text Editor using the [insertAudioSettings.layoutOption](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/audioSettingsModel/#layoutOption) property. It has two possible options: `Inline` and `Break`. When updating the display positions, it updates the audio elements’ layout position.
 
@@ -412,7 +413,7 @@ export class AppComponent {
 
 ```
 
-## Customize Audio Quick Toolbar
+## Customizing the Audio Quick Toolbar
 
 The Rich Text Editor enables customization of the audio quick toolbar, allowing you to tailor its functionality with essential tools such as AudioReplace, Remove, and AudioLayoutOption.
 
@@ -432,5 +433,6 @@ By configuring these options in the [quickToolbarSettings](https://ej2.syncfusio
 
 ## See Also
 
-* [How to edit the quick toolbar settings](./toolbar/#quick-inline-toolbar)
-* [How to use the video editing option in the toolbar items](./video/)
+* [Quick Toolbars in the Toolbar](./toolbar/#quick-inline-toolbar)
+* [How to Use the Video Editing Option in Toolbar Items](./video.md)
+* [How to Use the Image Editing Option in Toolbar Items](./images.md)

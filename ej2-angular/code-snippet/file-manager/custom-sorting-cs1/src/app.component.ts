@@ -12,7 +12,7 @@ providers:[ NavigationPaneService, ToolbarService, DetailsViewService],
 standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
-    template: `<ejs-filemanager id='overview' [ajaxSettings]='ajaxSettings' [sortComparer]='sortComparer' [detailsViewSettings]='detailsViewSettings'></ejs-filemanager>`
+    template: `<ejs-filemanager id='overview' [ajaxSettings]='ajaxSettings' [sortComparer]='sortComparer' [detailsViewSettings]='detailsViewSettings' height="375px"></ejs-filemanager>`
 })
 export class AppComponent {
     public ajaxSettings?: object;

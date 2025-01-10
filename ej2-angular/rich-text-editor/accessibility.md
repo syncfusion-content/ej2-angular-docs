@@ -71,11 +71,11 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs1" %}
 
-## Keyboard Interaction
+## Keyboard Navigation
 
 The Rich Text Editor component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Rich Text Editor component.
 
-### HTML Formation Shortcut Key
+### HTML Formatting Shortcuts
 
 You can use the following key shortcuts when the Rich Text Editor renders in HTML edit mode.
 
@@ -116,7 +116,7 @@ You can use the following key shortcuts when the Rich Text Editor renders in HTM
 | Format Painter Paste| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> |
 | Format Painter Escape | <kbd>Esc</kbd> |
 
-#### Shortcut Key Customization
+#### Customizing Shortcut Keys
 
 You can customize shortcut keys using the [`formatter`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#formatter) property.This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
 
@@ -132,7 +132,7 @@ You can customize shortcut keys using the [`formatter`](https://ej2.syncfusion.c
   
 {% previewsample "page.domainurl/samples/rich-text-editor/how-to/cut-copy-cs1" %}
 
-### Markdown Formation Shortcut Key
+### Markdown Formatting Shortcuts
 
 You can use the following key shortcuts when the Rich Text Editor renders in Markdown edit mode
 
@@ -158,7 +158,7 @@ You can use the following key shortcuts when the Rich Text Editor renders in Mar
 | Ordered list| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>o</kbd> |
 | Unordered list| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>o</kbd> |
 
-## Ensuring Accessibility
+## Implementing Accessibility Best Practices
 
 The Rich Text Editor component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
@@ -168,4 +168,4 @@ The accessibility compliance of the Rich Text Editor component is shown in the f
 
 ## See Also
 
-* [Accessibility in Syncfusion Angular components](../common/accessibility)
+* [General Accessibility Guidelines](../common/accessibility)

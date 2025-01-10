@@ -12,11 +12,11 @@ domainurl: ##DomainURL##
 
 The format painter tool enables users to replicate formatting from one text segment and apply it to another. It can be accessed through the toolbar or keyboard shortcuts, allowing for the transfer of formatting styles from individual words to entire paragraphs. Customization options for the format painter are available through the [`formatPainterSettings`](../api/rich-text-editor/formatPainterSettings/) property.
 
-## Configure format painter tool in the toolbar
+## Configuring Format Painter Tool in the Toolbar
 
 You can add the `FormatPainter` tool in the Rich Text Editor using the `toolbarSettings` [items](../api/rich-text-editor/toolbarSettings/#items) property.
 
-> Rich Text Editor features are segregated into individual feature-wise modules. To use the Format Painter feature, we need to import and configure the `FormatPainterService` in the providers section.
+>To use the Format Painter feature, we need to import and configure the `FormatPainterService` in the provider section.
 
 By double-clicking the format painter toolbar button, `sticky mode` will be enabled. In sticky mode, the format painter will be disabled when the user clicks the `Escape` key again.
 
@@ -34,7 +34,7 @@ The following code example shows how to add the format painter tool in the Rich 
   
 {% previewsample "page.domainurl/samples/rich-text-editor/format-painter-cs1" %}
 
-## Customization of copy and paste format
+## Customizing Copy and Paste Format
 
 You can customize the format painter tool in the Rich Text Editor using the [`formatPainterSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/formatPainterSettings/) property.
 
@@ -64,7 +64,7 @@ Below is an example illustrating how to define the `allowedFormats` and `deniedF
   
 {% previewsample "page.domainurl/samples/rich-text-editor/format-painter-cs2" %}
 
-## Using the shortcut key to copy and paste the format
+## Using Shortcut Keys for Copy and Paste Format
 
 You can use the following shortcut keys to copy and paste the format in the Rich Text Editor.
 
@@ -77,3 +77,7 @@ You can use the following shortcut keys to copy and paste the format in the Rich
 > The format painter retains the formatting after application making it possible to apply the same formatting multiple times by using the <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> keyboard shortcut.
 
 Additionally, You can perform the format painter actions programmatically using the [executeCommand](../exec-command/) public method.
+
+## See Also
+
+[Remove Text Formatting](./remove-formatting.md)

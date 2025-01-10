@@ -41,4 +41,4 @@ In the following sample, we configured the following properties with popup dimen
 
 ## See Also
 
-* [Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started/)
+* [Getting Started with Mention](https://ej2.syncfusion.com/angular/documentation/mention/getting-started/)

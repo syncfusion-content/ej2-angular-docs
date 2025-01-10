@@ -3,16 +3,16 @@ layout: post
 title: Headings in Angular Rich Text Editor component | Syncfusion
 description: Learn all about Headings in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Headings
+control: Heading Styles
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Headings in the Angular Rich Text Editor Component
+# Heading Styles in the Angular Rich Text Editor Component
 
 The Angular Rich Text Editor component provides a feature to format text with various heading styles, such as Heading 1, Heading 2, Heading 3, and Heading 4. These headings allow for structuring content hierarchically, improving readability, and organizing information effectively.
 
-### Using Heading Styles
+## Applying Heading Styles
 
 To enable heading styles in your Rich Text Editor:
 
@@ -38,7 +38,7 @@ Below are examples and code snippets demonstrating how to integrate and utilize 
 
 {% previewsample "page.domainurl/samples/rich-text-editor/headings-cs2" %}
 
-## Customization of Format Dropdown Items
+## Customizing Format Dropdown Items
 
 The Rich Text Editor allows you to customize the format dropdown to include specific styles such as heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, and paragraph.
 
@@ -62,3 +62,8 @@ Below are examples demonstrating how to customize the format dropdown.
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/rich-text-editor/headings-cs1" %}
+
+## See Also
+* [Block Quote Formatting](./quotation-formatting.md)
+* [Bullet and Numbered Lists](./list-formatting.md)
+* [Code Block Insertion and Styling](./code-block-formatting.md)

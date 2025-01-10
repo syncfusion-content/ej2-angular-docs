@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Implement own service provider in Angular File manager component | Syncfusion
-description: Learn here all about implementation own service provider in Syncfusion Angular File manager component of Syncfusion Essential JS 2 and more.
+title: Implement own service provider in Angular File Manager component | Syncfusion
+description: Learn here all about implementation own service provider in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Implement own service provider
+control: File Manager
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Create the custom file provider using NodeJS
 
-Here we manipulate the Azure Blob Storage to supply the necessary data for the File Manager. We achieve this by utilizing NodeJS to fetch the required data from the Azure blob storage.
+Here, we manipulate the Azure Blob Storage to supply the necessary data for the File Manager. We achieve this by utilizing NodeJS to fetch the required data from the Azure blob storage.
 
 NodeJS acts as the bridge between the File Manager component and Azure Blob Storage, allowing seamless communication and data retrieval. Through this integration, the File Manager can access and interact with the data stored in Azure Blob Storage, enabling smooth file management operations.
 
@@ -18,11 +18,11 @@ NodeJS acts as the bridge between the File Manager component and Azure Blob Stor
 ## Prerequisites
 
 * Valid Azure blob storage account. ( accountName, accountKey, endpointSuffix)
-* Node version 14 above.
+* Node version 14 or above.
 
 ## Introduction to Azure Blob Storage
 
-Azure Blob Storage is a cloud-based object storage service provided by Microsoft Azure. It is designed to store and manage unstructured data, also known as "blobs" in the cloud. Blobs can be any type of data, such as images, videos, documents, backups, logs, and more.
+Azure Blob Storage is Microsoft Azure's cloud-based object storage service. It is designed to store and manage unstructured data, also known as "blobs" in the cloud. Blobs can be any type of data, such as images, videos, documents, backups, logs, and more.
 
 ### Key concepts of Azure Blob Storage
 
@@ -35,7 +35,7 @@ By understanding the fundamental concepts and use cases of Azure Blob Storage, y
 
 ## Create NodeJS project
 
-Following the steps to create the NodeJS project.
+Follow these steps to create the NodeJS project:
 
 Create a new directory for your project and run the following command to initialize a new NodeJS project. This will create a package.json file.
 
@@ -82,7 +82,7 @@ node index.js
 
 ## Initialize container client
 
-We need to first get the BlobServiceClient. By using the connection string, we can obtain the BlobServiceClient. So, format the connection string as shown below.
+First, we need to get the BlobServiceClient. By using the connection string, we can obtain the BlobServiceClient. So, format the connection string as shown below.
 
 ```ts
 
@@ -103,7 +103,7 @@ const containerClient = blobServiceClient.getContainerClient(containerName);
 
 ## File actions
 
-Need to provide the following action to creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system
+We need to provide the following actions to creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system
 
 ### Read
 
@@ -164,7 +164,7 @@ The following table represents the response parameters of **read** operations.
 |error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
 
 <a id="file-manager-directory-content"></a>
-The following table represents the contents of **FileManagerDirectoryContent** in the file manager request and response.
+The following table represents the contents of **FileManagerDirectoryContent** in the File Manager request and response.
 
 |Parameter|Type|Default|Explanation|Is required|
 |----|----|----|----|----|
@@ -340,7 +340,7 @@ const multerConfig = {
 
 ```
 
-Need to handle the 3 cases here.
+We need to handle these 3 cases:
   - Save
   - Keep Both (action name will be **keepboth**)
   - Replace (action name will be **replace**)
@@ -445,7 +445,7 @@ The following table represents the request parameters of *rename* operations.
     path: "/Pictures/Nature/"
 }
 ```
-Renaming can be done by copy the folder or file from the source blob instance to target blob instance. If the file exists, then send the error message as response.
+Renaming can be done by copying the folder or file from the source blob instance to target blob instance. If the file exists, then send the error message as response.
 
 The following table represents the response parameters of *rename* operations.
 
@@ -767,7 +767,7 @@ The following table represents the response parameters of *copy* operations.
 }
 ```
 
- Need to handle two cases.
+ We need to handle two cases:
   - Directory copy and move.
   - File copy and move.
 

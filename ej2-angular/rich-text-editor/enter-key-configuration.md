@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Rich Text Editor allows you to customize the behavior of the Enter key and Shift+Enter key combinations. This feature provides flexibility in formatting and structuring content within the editor.
 
-### Available Options
+**Available Options**
 
 The enterKey property accepts the following values:
 
@@ -44,7 +44,7 @@ When you customize the Enter key, the editor will create the specified tag when 
   
 {% previewsample "page.domainurl/samples/rich-text-editor/enter-key-cs1" %}
 
-## Shift-Enter key Customization
+## Shift+Enter key Customization
 
 By default, pressing Shift+Enter in the Rich Text Editor inserts a `<br>` tag. You can customize this behavior using the [`shiftEnterKey`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#shiftEnterkey) property.
 
@@ -62,7 +62,7 @@ When you customize the Shift+Enter key, the editor will create the specified tag
   
 {% previewsample "page.domainurl/samples/rich-text-editor/shift-enter-key-cs1" %}
 
-## Preventing The Enter key Manipulation
+## Preventing Enter Key Manipulation
 
 In some cases, you may want to prevent the default Enter key behavior entirely. The Rich Text Editor allows you to intercept and prevent the default action of the Enter key at the editor level by handling the `actionBegin event`. To ensure that the default behavior is also suppressed at the browser level, you need to call the `preventDefault()` method on the event object within the event handler. This approach allows for precise control over the editor's behavior in response to the Enter key press, facilitating the implementation of custom functionality.
 

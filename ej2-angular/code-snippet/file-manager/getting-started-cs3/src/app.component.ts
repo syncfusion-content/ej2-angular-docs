@@ -13,7 +13,7 @@ imports: [FileManagerModule, ],
 standalone: true,
   selector: 'app-root',
   styleUrls: ['./app.component.css'],
-  template: `<ejs-filemanager id='default-filemanager' #filemanagerObj [ajaxSettings]='ajaxSettings' [view]='view'>
+  template: `<ejs-filemanager id='default-filemanager' #filemanagerObj [ajaxSettings]='ajaxSettings' [view]='view' height="375px">
   </ejs-filemanager>`
 })
 

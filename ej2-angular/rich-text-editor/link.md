@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 A hyperlink can be insert into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
 
-## Insert Link
+## Inserting a Link
 
 To insert a hyperlink:
 
@@ -20,7 +20,7 @@ To insert a hyperlink:
 2. Click the "Insert HyperLink" tool on the toolbar.
 3. In the Insert Link Dialog that appears, fill in the following options.
 
->To use use image and link tool, configure `ImageService, LinkService` in the provider section of `AppModule`.
+>To use use image and link tool, configure `ImageService, LinkService` in the provider section.
 
 | Options | Description |
 |----------------|--------------------------------------|
@@ -43,7 +43,7 @@ To insert a hyperlink:
 
 > The Rich Text Editor validates URLs as you type in the Web Address field. Invalid URLs will be highlighted in red when you click the insert button in the `Insert Link` dialog.
 
-## Remove Link
+## Removing a Link
 
 To remove a hyperlink:
 
@@ -56,7 +56,7 @@ This action will remove the hyperlink while keeping the original text or image i
 
 The Rich Text Editor supports automatic link generation. When you type a URL and press Space or Enter, the editor automatically converts the typed URL into a clickable hyperlink.
 
-## Customize Link Quick Toolbar
+## Customizing the Link Quick Toolbar
 
 The Rich Text Editor allows you to customize the tools in the link quick toolbar. You can add or remove items by using the [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#quickToolbarSettings) property.
 
@@ -87,5 +87,6 @@ The following example demonstrates how to customize the link quick toolbar using
 
 ## See Also
 
-* [Quick toolbars in Toolbar](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/toolbar#quick-inline-toolbar)
-* [Image with link in Images](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/image#image-with-link)
+* [Quick Toolbars in Toolbar](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/toolbar#quick-inline-toolbar)
+* [Image with links](./images.md/#hyperlinking-images)
+* [Insert File Attachments](./how-to/file-attachments.md)

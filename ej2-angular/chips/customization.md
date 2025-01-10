@@ -130,7 +130,7 @@ Outline chips has the border with the background transparent. It can be set usin
 
 ## Template
 
-The [`template`](https://helpej2.syncfusion.com/angular/documentation/api/chips/#template) property of the Chips component allows users to fully customize the layout and design of each chip. By using the `template` property, users can include custom HTML elements, such as links, icons, or additional content.
+The [`template`](https://ej2.syncfusion.com/angular/documentation/api/chips/#template) property of the Chips component allows users to fully customize the layout and design of each chip. By using the `template` property, users can include custom HTML elements, such as links, icons, or additional content.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
