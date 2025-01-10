@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to in Angular Range slider component | Syncfusion
-description: Learn here all about How to in Syncfusion Angular Range slider component of Syncfusion Essential JS 2 and more.
+title: How to in Angular Range Slider component | Syncfusion
+description: Learn here all about How to in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: How to 
+control: Range Slider
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to in Angular Range slider component
+# How to in Angular Range Slider component
 
 ## Value formatting using slider
 

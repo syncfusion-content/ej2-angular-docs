@@ -18,7 +18,7 @@ encapsulation: ViewEncapsulation.None,
 standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
-    template: `<ejs-filemanager id='files' #fileManager [ajaxSettings]='ajaxSettings' >
+    template: `<ejs-filemanager id='files' #fileManager [ajaxSettings]='ajaxSettings' height="375px" >
             <e-toolbaritems>
                 <e-toolbaritem name= "NewFolder" text= "Create folder" prefixIcon= "e-plus" tooltipText= "Create folder" ></e-toolbaritem>
                 <e-toolbaritem name= "Upload"></e-toolbaritem>

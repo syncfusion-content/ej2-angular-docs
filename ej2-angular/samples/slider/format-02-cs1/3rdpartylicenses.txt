@@ -13,16 +13,7 @@ MIT
 @syncfusion/ej2-angular-base
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-buttons
-SEE LICENSE IN license
-
 @syncfusion/ej2-angular-inputs
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-popups
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-splitbuttons
 SEE LICENSE IN license
 
 @syncfusion/ej2-base

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Localization in Angular File manager component | Syncfusion
-description: Learn here all about Localization in Syncfusion Angular File manager component of Syncfusion Essential JS 2 and more.
+title: Localization in Angular File Manager component | Syncfusion
+description: Learn here all about Localization in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Localization 
+control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Localization in Angular File manager component
+# Localization in Angular File Manager component
 
-The file manager can be localized to any culture by defining the texts and messages of the file manager in the corresponding culture. The default locale of the file manager is `en`(English). The following table represents the default texts and messages of the file manager in `en` culture.
+The File Manager can be localized to any culture by defining its texts and messages in the corresponding culture. The default locale of the File Manager is `en`(English). The following table represents the default texts and messages of the File Manager in `en` culture.
 
 |KEY|Text/Message|
 |----|----|
@@ -113,7 +113,9 @@ The below example shows adding the German culture locale(`de-DE`)
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/localization-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/localization-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/localization-cs1/src/main.ts %}
 {% endhighlight %}

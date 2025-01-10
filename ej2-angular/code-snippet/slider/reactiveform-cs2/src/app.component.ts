@@ -2,25 +2,19 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SliderModule } from '@syncfusion/ej2-angular-inputs'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-
-
-
-
 import { Component, Inject } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { SliderComponent } from '@syncfusion/ej2-angular-inputs';
+import { CommonModule } from '@angular/common';
 
 @Component({
-imports: [
-        
-        SliderModule,
-        FormsModule, ReactiveFormsModule
-    ],
-
-
-standalone: true,
-    selector: 'my-app',
-    template: `
+  imports: [
+    SliderModule,CommonModule,
+    FormsModule, ReactiveFormsModule
+  ],
+  standalone: true,
+  selector: 'my-app',
+  template: `
     <div class="container">
       <form [formGroup]="sliderForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
@@ -53,7 +47,6 @@ standalone: true,
         </div>
       </form>
     </div>`,
-    styleUrls:['./index.css']
 })
 
 export class AppComponent {
@@ -76,6 +69,5 @@ export class AppComponent {
 
   }
 }
-
 
 

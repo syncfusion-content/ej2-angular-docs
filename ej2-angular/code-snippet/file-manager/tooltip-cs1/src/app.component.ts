@@ -19,7 +19,7 @@ standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: ` <div class="filemanagerContainer">
-                    <ejs-filemanager id='file-manager' #fileObj [ajaxSettings]='ajaxSettings' (fileLoad)="fileLoad($event)">
+                    <ejs-filemanager id='file-manager' #fileObj [ajaxSettings]='ajaxSettings' (fileLoad)="fileLoad($event)" height="375px">
                     </ejs-filemanager>
                 </div>`
 })

@@ -14,7 +14,7 @@ providers: [NavigationPaneService, ToolbarService, DetailsViewService],
 standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
-    template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [contextMenuSettings]='contextMenuSettings'>
+    template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [contextMenuSettings]='contextMenuSettings' height="375px">
     </ejs-filemanager>`
 })
 export class AppComponent {

@@ -55,3 +55,19 @@ In the following sample, the `allowDragAndDrop` property is set as `true` and `s
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/listbox/multiple-listbox-cs1" %}
+
+## Dual ListBox with drag and drop
+
+The toolbar and drag and drop actions between two listboxes can be enabled by setting a listbox unique id and the same [`scope`](https://ej2.syncfusion.com/angular/documentation/api/list-box/#scope) property value.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/listbox/dual-drag-list-box-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/listbox/dual-drag-list-box-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/listbox/dual-drag-list-box-cs1" %}

@@ -18,7 +18,7 @@ providers:[NavigationPaneService, ToolbarService, DetailsViewService],
 standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
-    template: `<ejs-filemanager id='file' #fileObj [ajaxSettings]='ajaxSettings' (created)="onCreated($event)">
+    template: `<ejs-filemanager id='file' #fileObj [ajaxSettings]='ajaxSettings' (created)="onCreated($event)" height="375px">
     </ejs-filemanager>`
 })
 

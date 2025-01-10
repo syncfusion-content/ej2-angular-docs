@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
   template: `
     <div id='container'>
       <div class='wrap'>
-          <ejs-slider id='slider'  [type]= 'type' [showButtons]=true [value] = 'value' ></ejs-slider>
+          <ejs-slider id='slider' [type]= 'type' [showButtons]=true [value] = 'value' ></ejs-slider>
       </div>
     </div>`,
 })

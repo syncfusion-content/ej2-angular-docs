@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in Angular File Manager component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accessibility 
+control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -80,7 +80,7 @@ The File Manager component followed the `keyboard interaction` guidelines, makin
 | <kbd>Tab</kbd> | Focuses on the first element of toolbar and navigates through the next tab indexed element. |
 | <kbd>Esc(Escape)</kbd> | Closes the image when it is in open state. |
 | <kbd>Alt+N</kbd> | Creates a new folder dialog.|
-| <kbd>F5</kbd> | Refresh the file manager element. |
+| <kbd>F5</kbd> | Refresh the File Manager element. |
 | <kbd>Home</kbd> | Navigate through the first element of details view or large icons view. |
 | <kbd>End</kbd> | Navigate through the last element of details view or large icons view. |
 | <kbd>Move Left</kbd> | Scrolls left to the previous folder and select the first item when files are loaded |
@@ -89,18 +89,18 @@ The File Manager component followed the `keyboard interaction` guidelines, makin
 | <kbd>Shift+Right</kbd> | Allows multiselection. Select the file or folder at the right of the previously selected folder. |
 | <kbd>Shift+Left</kbd> | Allows multiselection. Select the file or folder at the left of the previously selected folder. |
 | <kbd>Shift+Down</kbd> | Allows multiselection. Select the file or folder till the focused index. |
-| <kbd>Shift+Delete</kbd> | Permanently deletes the selected file or folder in the file manager element. |
-| <kbd>Delete</kbd> | Deletes the selected file or folder in the file manager element. |
+| <kbd>Shift+Delete</kbd> | Permanently deletes the selected file or folder in the File Manager element. |
+| <kbd>Delete</kbd> | Deletes the selected file or folder in the File Manager element. |
 | <kbd>Shift+Up</kbd> | Allows multiselection. Select the file or folder till the focused index. |
-| <kbd>Ctrl+C</kbd> | Copies the selected file or folder in the file manager element. |
-| <kbd>Ctrl+V</kbd> | Pastes the copied/cut file or folder in the file manager element. |
-| <kbd>Ctrl+X</kbd> | Cuts the selected file or folder in the file manager element. |
+| <kbd>Ctrl+C</kbd> | Copies the selected file or folder in the File Manager element. |
+| <kbd>Ctrl+V</kbd> | Pastes the copied/cut file or folder in the File Manager element. |
+| <kbd>Ctrl+X</kbd> | Cuts the selected file or folder in the File Manager element. |
 | <kbd>Ctrl+A</kbd> | Select all the files or folders in the details view or large icons view. |
-| <kbd>F2</kbd> | Creates a rename dialog for a selected file or folder in the file manager element. |
-| <kbd>Shift+F10</kbd> | Opens the context menu for the selected file or folder in the file manager element. |
-| <kbd>Ctrl+D</kbd> | Downloads the list of selected files or folders in the file manager element. |
-| <kbd>Ctrl+Shift+1</kbd> | Changes the file manager layout to details view. |
-| <kbd>Ctrl+Shift+2</kbd> | Changes the file manager layout to large icons view. |
+| <kbd>F2</kbd> | Creates a rename dialog for a selected file or folder in the File Manager element. |
+| <kbd>Shift+F10</kbd> | Opens the context menu for the selected file or folder in the File Manager element. |
+| <kbd>Ctrl+D</kbd> | Downloads the list of selected files or folders in the File Manager element. |
+| <kbd>Ctrl+Shift+1</kbd> | Changes the File Manager layout to details view. |
+| <kbd>Ctrl+Shift+2</kbd> | Changes the File Manager layout to large icons view. |
 
 ## Ensuring accessibility
 

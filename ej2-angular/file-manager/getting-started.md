@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular File manager component | Syncfusion
-description:  Checkout and learn about Getting started with Angular File manager component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular File Manager component | Syncfusion
+description:  Checkout and learn about Getting started with Angular File Manager component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: File Manager
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular File manager component
+# Getting started with Angular File Manager component
 
 This section explains how to create a simple **File Manager** component and its basic usage.
 
@@ -21,7 +21,7 @@ To get started with **File Manager** component, ensure the compatible versions o
 
 ## Setting up angular project
 
-Angular provides the easiest way to set angular CLI projects using Angular CLI tool.
+Angular provides the easiest way to set up Angular CLI projects using the Angular CLI tool.
 
 Install the CLI application globally to your machine by using following command.
 
@@ -45,7 +45,7 @@ cd syncfusion-angular-app
 
 ## Adding Dependencies
 
-The following list of dependencies are required to use the file manager component in your application.
+The following list of dependencies are required to use the File Manager component in your application.
 
 ```javascript
 |-- @syncfusion/ej2-angular-filemanager
@@ -62,7 +62,7 @@ The following list of dependencies are required to use the file manager componen
     |-- @syncfusion/ej2-filemanager
 ```
 
-## Installing Syncfusion FileManager package
+## Installing Syncfusion File Manager package
 
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
@@ -100,7 +100,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding style sheet to the application
 
-To render the file manager component, import the file manager and its dependent component's styles as given below in `[src/styles.css]`.
+To render the File Manager component, import the File Manager and its dependent components' styles as shown below in `[src/styles.css]`.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -114,13 +114,27 @@ To render the file manager component, import the file manager and its dependent 
 @import '../node_modules/@syncfusion/ej2-angular-filemanager/styles/material.css';
 ```
 
+Alternatively, based on the location of your CSS file, you can import the styles as shown below:
+
+```css
+@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-layouts/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-grids/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-filemanager/styles/material.css';
+```
+
 >Note: To refer the combined component styles, use Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
 ## Adding Syncfusion component
 
-Add the FileManager component by using `<ejs-filemanager>` selector in `template` section of the `app.component.ts` file.
+Add the File Manager component by using `<ejs-filemanager>` selector in `template` section of the `app.component.ts` file.
 
-Refer the FileManager component snippet in `app.component.ts` as follows.
+Refer the File Manager component snippet in `app.component.ts` as follows.
 
 ```typescript
 
@@ -144,7 +158,7 @@ export class AppComponent {
 
 ```
 
->**Note:** The [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#ajaxsettings) must be defined while initializing the file manager. File manager utilizes the URL's mentioned in ajaxSettings to send [file operation](./file-operations) request to the server.
+>**Note:** The [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#ajaxsettings) must be defined while initializing the File Manager. File Manager utilizes the URL's mentioned in ajaxSettings to send [file operation](./file-operations) request to the server.
 >The File Manager service link is given in `hostUrl`.
 
 ## Run the application
@@ -155,13 +169,15 @@ Use the npm run start command to run the application in the browser.
 npm start
 ```
 
-The following samples shows the basic file manager component in browser.
+The following samples shows the basic File Manager component in browser.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/getting-started-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
@@ -171,7 +187,7 @@ The following samples shows the basic file manager component in browser.
 
 ## File Download support
 
-To perform the download operation, initialize the `downloadUrl` property in a [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#ajaxsettings) of File Manager component.
+To enable the download operation, initialize the `downloadUrl` property in the [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#ajaxsettings) of the File Manager component.
 
 ```typescript
 
@@ -231,7 +247,9 @@ To perform the image preview support in the File Manager component, need to init
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/getting-started-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
@@ -241,7 +259,7 @@ To perform the image preview support in the File Manager component, need to init
 
 ## Injecting feature modules
 
-Basically, the file manager component contains a context menu for performing file operations, large-icons view for displaying the files and folders, and a breadcrumb for navigation. However, these basic functionalities can be extended by using the additional feature modules like toolbar, navigation pane, and details view to simplify the navigation and file operations within the file system. The above modules can be injected into file manager by importing them as providers in `app.component.ts`.
+Basically, the File Manager component contains a context menu for performing file operations, large-icons view for displaying the files and folders, and a breadcrumb for navigation. However, these basic functionalities can be extended by using the additional feature modules like toolbar, navigation pane, and details view to simplify the navigation and file operations within the file system. The above modules can be injected into File Manager by importing them as providers in `app.component.ts`.
 
 Refer the code snippet in for `app.component.ts`.
 
@@ -265,7 +283,9 @@ export class AppComponent { }
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/overview-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/overview-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/overview-cs1/src/main.ts %}
 {% endhighlight %}
@@ -284,7 +304,9 @@ When the File Manager is initially rendered, [created](https://ej2.syncfusion.co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/view-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/view-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/view-cs1/src/main.ts %}
 {% endhighlight %}
@@ -305,7 +327,9 @@ For every operation in File Manager, ajax request will be sent to the server whi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/persistence-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/persistence-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/persistence-cs1/src/main.ts %}
 {% endhighlight %}
@@ -313,7 +337,7 @@ For every operation in File Manager, ajax request will be sent to the server whi
   
 {% previewsample "page.domainurl/samples/file-manager/persistence-cs1" %}
 
->**Note:** The files of the current folder opened in the File manager can be refreshed programatically by calling [refreshFiles](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#refreshfiles) method.
+>**Note:** The files of the current folder opened in the File Manager can be refreshed programatically by calling [refreshFiles](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#refreshfiles) method.
 
 ## Rendering component in right-to-left direction
 
@@ -323,7 +347,9 @@ It is possible to render the File Manager in right-to-left direction by setting 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/rtl-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/rtl-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/rtl-cs1/src/main.ts %}
 {% endhighlight %}

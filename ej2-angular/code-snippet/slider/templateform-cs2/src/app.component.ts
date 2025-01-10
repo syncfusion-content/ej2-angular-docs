@@ -1,24 +1,20 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { SliderModule } from '@syncfusion/ej2-angular-inputs'
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms'
-
-
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { SliderModule } from '@syncfusion/ej2-angular-inputs';
-import {NgForm} from '@angular/forms';
+import { NgForm } from '@angular/forms';
 
 @Component({
-imports: [
-        
-        SliderModule,
-        FormsModule
-    ],
-
-
-standalone: true,
-    selector: 'my-app',
-    template: `
+  imports: [
+    CommonModule,
+    SliderModule,
+    FormsModule
+  ],
+  standalone: true,
+  selector: 'my-app',
+  template: `
     <div class="container">
       <form #sliderForm="ngForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
@@ -54,8 +50,8 @@ standalone: true,
     
       </form>
     </div>`,
-    styleUrls:['./index.css'],
-    encapsulation: ViewEncapsulation.None
+  styleUrls: ['./index.css'],
+  encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent {
@@ -71,6 +67,5 @@ export class AppComponent {
     this.value = 70;
   }
 }
-
 
 

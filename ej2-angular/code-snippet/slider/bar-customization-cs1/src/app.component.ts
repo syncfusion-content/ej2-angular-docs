@@ -9,13 +9,13 @@ import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { SliderComponent, SliderChangeEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
+    imports: [
+
         SliderModule
     ],
 
 
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: ` <div class="slider_container">
             <div class="slider-labeltext slider_userselect">Height</div>
@@ -28,13 +28,16 @@ standalone: true,
         </div>
         <div class="slider_container">
             <div class="slider-labeltext slider_userselect">Dynamic thumb and selection bar color</div>
-            <ejs-slider id='dynamic_color_slider' [value]='dynamic_value' [min]='min' [max]='max' [type]='range' (created)='created()' (change)='change($event)'></ejs-slider>
+            <ejs-slider #dynamicColorSlider id='dynamic_color_slider' [value]='dynamic_value' [min]='min' [max]='max' [type]='range' (created)='created()' (change)='change($event)'></ejs-slider>
         </div>`,
-    styleUrls : ["./app.component.css"],
+    styleUrls: ["./app.component.css"],
     encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent {
+    @ViewChild('dynamicColorSlider')
+    public dynamicColorSlider?: SliderComponent;
+
     public value: number = 30;
     public min: number = 0;
     public max: number = 100;
@@ -45,8 +48,8 @@ export class AppComponent {
     public dynamic_value: number = 30;
     // Handler used for slider created event
     created() {
-        this.sliderTrack = (document.getElementById('dynamic_color_slider') as HTMLElement).querySelector('.e-range') as HTMLElement ;
-        this.sliderHandle = (document.getElementById('dynamic_color_slider') as HTMLElement).querySelector('.e-handle') as HTMLElement ;
+        this.sliderTrack = this.dynamicColorSlider?.element.querySelector('.e-range') as HTMLElement;
+        this.sliderHandle = this.dynamicColorSlider?.element.querySelector('.e-handle') as HTMLElement;
         (this.sliderHandle as HTMLElement).style.backgroundColor = 'green';
         (this.sliderTrack as HTMLElement).style.backgroundColor = 'green';
     }
@@ -71,6 +74,5 @@ export class AppComponent {
         }
     }
 }
-
 
 

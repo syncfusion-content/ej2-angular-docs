@@ -1,21 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SliderModule } from '@syncfusion/ej2-angular-inputs'
-
-
-
-
 import { Component } from '@angular/core';
-import { SliderTickEventArgs, SliderTooltipEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
+    imports: [
         SliderModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <div id='container'>
@@ -34,7 +26,6 @@ standalone: true,
             <ejs-slider id='slider2' [min]=0 [max]=100 [value]=30 [tooltip]="tooltipData03" [ticks]="ticksData03"></ejs-slider>
         </div>
     </div>`,
-    styleUrls:['./index.css']
 })
 
 export class AppComponent {
@@ -48,6 +39,4 @@ export class AppComponent {
     public ticksData03: Object = { placement: 'After', format: '00##', largeStep: 20, smallStep: 10, showSmallTicks: true };
 
 }
-
-
 

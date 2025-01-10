@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Access control in Angular File manager component | Syncfusion
-description: Learn here all about Access control in Syncfusion Angular File manager component of Syncfusion Essential JS 2 and more.
+title: Access control in Angular File Manager component | Syncfusion
+description: Learn here all about Access control in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Access control 
+control: File Manager
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Access control in Angular File manager component
+# Access control in Angular File Manager component
 
-The FileManager allows you to define access permissions for folders and files using a set of access rules to user(s).
+The File Manager allows you to define access permissions for folders and files using a set of access rules for user(s).
 
 * [Access Rules](#access-rules)
 * [Permissions](#permissions)
@@ -59,14 +59,14 @@ The following syntax represent the access Rules for Default user using file or f
 
 ## Permissions
 
-It helps to explain how to apply security permission to file manager file or folder using access rules. The following table represent the value that determines the permission.
+This section explains how to apply security permissions to File Manager files or folders using access rules. The following table represents the values that determine the permissions.
 
 | **Value** | **Description** |
 | --- | ---|
 | Allow | Allows you to do read, write, copy, and download operations. |
 | Deny | Denies you to do read, write, copy, and download operations. |
 
-Use the `Role` property to apply created roles to the file manager. After that, the file manager displays folder or file and allow permisssion based on assigned roles.
+Use the `Role` property to apply created roles to the File Manager. After that, the File Manager displays folders or files and allows permissions based on assigned roles.
 
 The following syntax represent how to apply permission based on assigned roles
 
@@ -101,13 +101,15 @@ Permission denied for writing and uploading in root folder.
  new AccessRule { Path = "/", Role = "Document Manager", Read = Permission.Allow, Write = Permission.Deny, Copy = Permission.Deny, WriteContents = Permission.Deny, Upload = Permission.Deny, Download = Permission.Deny, IsFile = false },
 ```
 
-The following example demonstrate the file manager rendered with access control support.
+The following example demonstrates the File Manager rendered with access control support.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/access-control-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/access-control-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/file-manager/access-control-cs1/src/main.ts %}
 {% endhighlight %}

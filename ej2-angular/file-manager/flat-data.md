@@ -1,16 +1,16 @@
 ---
 layout: post
-title: FlatData in Angular File manager component | Syncfusion
-description: Learn here all about Views in Syncfusion Angular File manager component of Syncfusion Essential JS 2 and more.
+title: FlatData in Angular File Manager component | Syncfusion
+description: Learn here all about Views in Syncfusion Angular File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: FlatData 
+control: File Manager 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Rendering Flat JSON Data in the Angular File Manager Component
 
-The File Manager uses a flat data JSON as an array of objects for rendering, eliminating the need to define [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#ajaxsettings) url. To load a folder data as an array of objects, use the File Manager component's [fileSystemData](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#filesystemdata) property with a type of [fileData](https://ej2.syncfusion.com/angular/documentation/api/file-manager/fileData/) interface. This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your code using the FileManager's action events.
+The File Manager can use flat JSON data as an array of objects for rendering, eliminating the need to define an [ajaxSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#ajaxsettings) URL. To load a folder data as an array of objects, use the File Manager component's [fileSystemData](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#filesystemdata) property with a type of [fileData](https://ej2.syncfusion.com/angular/documentation/api/file-manager/fileData/) interface. This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your code using the FileManager's action events.
 
 **Event Information**
 
@@ -28,7 +28,7 @@ Event Name | Description
 
 ## Local data
 
-The FileManager can be populated with local data that contains the array of [fileData](https://ej2.syncfusion.com/angular/documentation/api/file-manager/fileData/) interface objects with [parentId](https://ej2.syncfusion.com/angular/documentation/api/file-manager/fileData/#parentid) mapping.
+The File Manager can be populated with local data consisting of an array of [fileData](https://ej2.syncfusion.com/angular/documentation/api/file-manager/fileData/) interface objects with [parentId](https://ej2.syncfusion.com/angular/documentation/api/file-manager/fileData/#parentid) mapping.
 
 To render the root-level folder, specify the `parentId` as null, or there is no need to specify the `parentId` in the array of `fileData` interface objects.
 
@@ -37,7 +37,9 @@ To render the root-level folder, specify the `parentId` as null, or there is no 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/file-manager/flat-data-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/file-manager/flat-data-cs1/src/styles.css %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/file-manager/flat-data-cs1" %}

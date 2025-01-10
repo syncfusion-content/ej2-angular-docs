@@ -1,21 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SliderModule } from '@syncfusion/ej2-angular-inputs'
-
-
-
-
 import { Component } from '@angular/core';
 import { SliderTickEventArgs, SliderTooltipEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
-imports: [
-        
+    imports: [
         SliderModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <div id='container'>
@@ -24,7 +17,6 @@ standalone: true,
                 (tooltipChange)='tooltipChangeHandler($event)' (renderingTicks)='renderingTicksHandler($event)'></ejs-slider>
         </div>
     </div>`,
-    styleUrls:['./index.css']
 })
 
 export class AppComponent {
@@ -49,6 +41,5 @@ export class AppComponent {
         args.text = new Date(totalMiliSeconds).toLocaleDateString("en-us", custom);
     }
 }
-
 
 

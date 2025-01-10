@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Schematics in Angular Range slider component | Syncfusion
-description: Learn here all about Schematics in Syncfusion Angular Range slider component of Syncfusion Essential JS 2 and more.
+title: Schematics in Angular Range Slider component | Syncfusion
+description: Learn here all about Schematics in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Schematics 
+control: Range Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Schematics in Angular Range slider component
+# Schematics in Angular Range Slider component
 
 Angular schematics is a workflow tool that allows you generate component, modules, and resolve dependency issues. The main goal of the schematics is ease of use and development in angular environment.
 

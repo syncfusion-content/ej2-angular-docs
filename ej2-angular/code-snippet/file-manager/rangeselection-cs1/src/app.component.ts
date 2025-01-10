@@ -15,7 +15,7 @@ providers:[ NavigationPaneService, ToolbarService, DetailsViewService],
 standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
-    template: `<ejs-filemanager id='multi' [ajaxSettings]='ajaxSettings' [allowMultiSelection]='allowMultiSelection' [enableRangeSelection]='enableRangeSelection' (fileSelect)='onFileSelect($event)'>
+    template: `<ejs-filemanager id='multi' [ajaxSettings]='ajaxSettings' [allowMultiSelection]='allowMultiSelection' [enableRangeSelection]='enableRangeSelection' (fileSelect)='onFileSelect($event)' height="375px">
     </ejs-filemanager>`
 })
 export class AppComponent {

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Index in Angular Range slider component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular Range slider component of Syncfusion Essential JS 2 and more.
+title: Index in Angular Range Slider component | Syncfusion
+description: Learn here all about Index in Syncfusion Angular Range Slider component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Index 
+control: Range Slider 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Range slider component
+# Index in Angular Range Slider component
 
 The Slider component allows the user to select a value or range of values in-between the min and max range, by dragging the handle over the slider bar.
 
