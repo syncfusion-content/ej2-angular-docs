@@ -10,7 +10,7 @@ import { sampleData } from './datasource';
 
     providers: [PageService, SortService, FilterService],
     standalone: true,
-    selector: 'app-container',
+    selector: 'app-root',
     template: `<ejs-treegrid [dataSource]='data' [treeColumnIndex]='1' childMapping='subtasks'>
                 <e-columns>
                     <e-column field='taskID' headerText='Task ID' textAlign='Right' width=70></e-column>
