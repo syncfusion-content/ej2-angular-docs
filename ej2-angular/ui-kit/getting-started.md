@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with the Angular UI Kit Component | Syncfusion
-description: Checkout and learn about Getting started with Angular UI Kit component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Essential UI Kit for Angular | Syncfusion
+description: Checkout and learn about getting started with the Essential UI Kit for Angular in Syncfusion Essential JS 2, along with more details.
 platform: ej2-angular
-control: Getting started 
+control: Getting Started 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -19,7 +19,7 @@ Follow the steps below to get started with Essential UI Kit for Angular. You can
 
 ### Step 1: Download and Open the App in Visual Studio Code
 
-Download the app from the GitHub [link](https://github.com/syncfusion/essential-ui-kit-for-angular), and then open the project folder in Visual Studio Code to start working with it.
+Download the app from the GitHub [link](https://github.com/syncfusion/essential-ui-kit-for-angular), and then open the same in Visual Studio Code to start working with it.
 
 ![Launching the downloaded app](images/launching-the-downloaded-app.png)
 
@@ -32,8 +32,8 @@ In Visual Studio Code, go to the **Terminal** menu and select **New Terminal** t
 ### Step 3: Install Dependencies and Run the App
 Run the following commands one after the other in the terminal:
 
-1. **Install project dependencies**  
-   Run the command below to install all necessary packages related to the Angular project, the sample browser, and the Syncfusion Angular components.
+1. **Install dependencies**  
+   Run the command below to install all necessary packages related to the blocks, the Syncfusion Angular components, and the sample browser.
 
     ![Installing the required dependencies](images/installing-the-required-dependencies.png)
 
