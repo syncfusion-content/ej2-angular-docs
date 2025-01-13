@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FileMenuSettingsModel, RibbonButtonSettingsModel, RibbonSplitButtonSettingsModel, RibbonComboBoxSettingsModel, RibbonDropDownSettingsModel, RibbonItemSize, RibbonCheckBoxSettingsModel, RibbonColorPickerSettingsModel, DisplayMode } from '@syncfusion/ej2-angular-ribbon';
+import { RibbonModule, RibbonFileMenuService, RibbonColorPickerService ,FileMenuSettingsModel, RibbonButtonSettingsModel, RibbonSplitButtonSettingsModel, RibbonComboBoxSettingsModel, RibbonDropDownSettingsModel, RibbonItemSize, RibbonCheckBoxSettingsModel, RibbonColorPickerSettingsModel, DisplayMode } from '@syncfusion/ej2-angular-ribbon';
 
 @Component({
 imports: [ RibbonModule ],

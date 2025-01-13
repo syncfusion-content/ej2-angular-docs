@@ -1,6 +1,6 @@
 import { L10n, setCulture } from '@syncfusion/ej2-base';
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import {  DiagramModule, SymbolPaletteModule, NodeModel, PaletteModel } from '@syncfusion/ej2-angular-diagrams';
+import {  DiagramModule,ConnectorModel, SymbolPaletteModule, NodeModel, PaletteModel } from '@syncfusion/ej2-angular-diagrams';
 import { ExpandMode } from '@syncfusion/ej2-navigations';
 // Set the default culture to German
 setCulture('de')
@@ -26,7 +26,7 @@ L10n.load({
 })
 export class AppComponent {
     @ViewChild("diagram")
-    public expandMode?: ExpandMode;
+    public expandMode: ExpandMode = 'Multiple';
     public palettes?: PaletteModel[];
     public getBasicShapes(): NodeModel[] {
         let basicShapes: NodeModel[] = [{
@@ -53,8 +53,44 @@ export class AppComponent {
         ];
         return basicShapes;
     };
+    getConnectors() {
+        var connectors: ConnectorModel[] = [
+            {
+                id: 'Straight',
+                type: 'Straight',
+                sourcePoint: { x: 0, y: 0 },
+                targetPoint: { x: 60, y: 60 },
+                targetDecorator: {
+                    shape: 'Arrow',
+                    style: { strokeColor: '#757575', fill: '#757575' },
+                },
+                style: { strokeWidth: 1, strokeColor: '#757575' },
+            },
+            {
+                id: 'Orthogonal',
+                type: 'Orthogonal',
+                sourcePoint: { x: 0, y: 0 },
+                targetPoint: { x: 60, y: 60 },
+                targetDecorator: {
+                    shape: 'Arrow', style: { strokeColor: '#757575', fill: '#757575' },
+                },
+                style: { strokeWidth: 1, strokeColor: '#757575' },
+            },
+            {
+                id: 'Bezier',
+                type: 'Bezier',
+                sourcePoint: { x: 0, y: 0 },
+                targetPoint: { x: 60, y: 60 },
+                targetDecorator: {
+                    shape: 'Arrow',
+                    style: { strokeColor: '#757575', fill: '#757575' },
+                },
+                style: { strokeWidth: 1, strokeColor: '#757575' },
+            }
+        ];
+        return connectors;
+    }
     ngOnInit(): void {
-        this.expandMode = 'Multiple',
             this.palettes = [{
                 //Sets the id of the palette
                 id: 'basic',
@@ -67,6 +103,13 @@ export class AppComponent {
                 iconCss: 'e-ddb-icons e-basic',
                 //Sets the locale
             },
+            {
+                id: 'connectors',
+                expanded: true,
+                symbols: this.getConnectors(),
+                title: 'Connectors',
+                iconCss: 'e-ddb-icons e-connector'
+            }
             ]
     }
 }
