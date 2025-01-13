@@ -116,4 +116,4 @@ Marker can be filled with the series color by setting the [`isFilled`](https://e
 
 ## See also
 
-* [Customize the marker with different shape](./how-to/marker-customization/#customize-the-marker-with-different-shape)
+* [Customize the marker with different shape](./how-to/marker-customization#customize-the-marker-with-different-shape)

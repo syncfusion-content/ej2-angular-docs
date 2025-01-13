@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { RibbonModule, RibbonContextualTabService } from '@syncfusion/ej2-angular-ribbon'
 
 import { Component, ViewChild } from "@angular/core";
-import { RibbonButtonSettingsModel, DisplayMode } from '@syncfusion/ej2-angular-ribbon';
+import { RibbonButtonSettingsModel, RibbonComponent } from '@syncfusion/ej2-angular-ribbon';
 
 @Component({
 imports: [ RibbonModule],

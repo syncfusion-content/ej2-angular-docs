@@ -106,4 +106,4 @@ In indicator type, the Stepper displays steps with only the step indicators by s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/stepper/stepType" %}
+{% previewsample "page.domainurl/samples/stepper/indicatorOnly" %}

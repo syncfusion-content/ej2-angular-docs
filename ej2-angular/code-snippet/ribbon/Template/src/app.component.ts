@@ -2,20 +2,20 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 
 import { Component, ViewChild } from "@angular/core";
-import { RibbonButtonSettingsModel, BackStageMenuModel } from '@syncfusion/ej2-angular-ribbon';
+import { RibbonModule, RibbonBackstageService, RibbonButtonSettingsModel, BackStageMenuModel } from '@syncfusion/ej2-angular-ribbon';
 import { Ribbon } from '@syncfusion/ej2-ribbon';
-@Component({
-imports: [ RibbonModule ],
 
-providers: [ RibbonBackstageService ],
-standalone: true,
+@Component({
+  imports: [ RibbonModule ],
+  providers: [ RibbonBackstageService ],
+  standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   @ViewChild('ribbon')
-  public ribbonObj: Ribbon;
+  public ribbonObj!: Ribbon;
 
   public pasteButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-paste", content: "Paste" };
   public copyButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-copy", content: "Copy" };
@@ -40,7 +40,7 @@ export class AppComponent {
 
   public ribbonCreated() {
     if (this.ribbonObj) {
-      this.ribbonObj.element.querySelector('.e-ribbon-backstage').addEventListener('click', this.displayPopup);
+      this.ribbonObj.element.querySelector('.e-ribbon-backstage')?.addEventListener('click', this.displayPopup);
     }
   }
 
