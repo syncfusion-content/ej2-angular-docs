@@ -1,6 +1,23 @@
 <button (click)="toggleRibbonTabs('showTab')" class="e-btn"> Show tab </button>
 <button (click)="toggleRibbonTabs('hideTab')" class="e-btn"> Hide tab </button>
 <ejs-ribbon #ribbon id="ribbon" style="margin-top: 30px;">
+    <e-ribbon-tabs>
+        <e-ribbon-tab header="Home">
+            <e-ribbon-groups>
+                <e-ribbon-group header="Clipboard" groupIconCss="e-icons e-paste">
+                    <e-ribbon-collections>
+                        <e-ribbon-collection>
+                            <e-ribbon-items>
+                                <e-ribbon-item type="Button" [buttonSettings]="cutButton"> </e-ribbon-item>
+                                <e-ribbon-item type="Button" [buttonSettings]="copyButton"> </e-ribbon-item>
+                                <e-ribbon-item type="Button" [buttonSettings]="formatButton"> </e-ribbon-item>
+                            </e-ribbon-items>
+                        </e-ribbon-collection>
+                    </e-ribbon-collections>
+                </e-ribbon-group>
+            </e-ribbon-groups>
+        </e-ribbon-tab>
+    </e-ribbon-tabs>
     <e-ribbon-contextual-tabs>
         <e-ribbon-contextual-tab>
             <e-ribbon-tabs>
@@ -22,22 +39,4 @@
             </e-ribbon-tabs>
         </e-ribbon-contextual-tab>
     </e-ribbon-contextual-tabs>
-
-    <e-ribbon-tabs>
-        <e-ribbon-tab header="Home">
-            <e-ribbon-groups>
-                <e-ribbon-group header="Clipboard" groupIconCss="e-icons e-paste">
-                    <e-ribbon-collections>
-                        <e-ribbon-collection>
-                            <e-ribbon-items>
-                                <e-ribbon-item type="Button" [buttonSettings]="cutButton"> </e-ribbon-item>
-                                <e-ribbon-item type="Button" [buttonSettings]="copyButton"> </e-ribbon-item>
-                                <e-ribbon-item type="Button" [buttonSettings]="formatButton"> </e-ribbon-item>
-                            </e-ribbon-items>
-                        </e-ribbon-collection>
-                    </e-ribbon-collections>
-                </e-ribbon-group>
-            </e-ribbon-groups>
-        </e-ribbon-tab>
-    </e-ribbon-tabs>
 </ejs-ribbon>

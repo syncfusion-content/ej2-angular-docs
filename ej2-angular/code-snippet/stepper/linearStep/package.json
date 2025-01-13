@@ -16,6 +16,8 @@
     "@syncfusion/ej2-angular-navigations": "*",
     "@syncfusion/ej2-base": "*",
     "@syncfusion/ej2-popups": "*",
+    "@syncfusion/ej2-buttons": "*",
+    "@syncfusion/ej2-splitbuttons": "*",
     "@syncfusion/ej2-navigations": "*",
     "@syncfusion/ej2-angular-base": "*",
     "@syncfusion/ej2-angular-popups": "*",

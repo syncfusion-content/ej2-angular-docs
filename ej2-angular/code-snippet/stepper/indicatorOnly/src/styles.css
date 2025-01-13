@@ -4,3 +4,12 @@
 @import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
+
+.stepIndicator {
+    margin-top: 30px;
+    padding: 30px;
+  }
+  
+  .textOnly {
+    margin-top: 50px;
+  }

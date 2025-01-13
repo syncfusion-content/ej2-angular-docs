@@ -150,13 +150,12 @@ You can achieve the desired dot variant by customizing the border, outline and b
 
 ### Dot outline
 
-By adding the `e-outline` class to the Timeline `cssClass` property it enables the dots to have an outline state.
+By adding the `e-outline` class to the Timeline [`cssClass`](https://ej2.syncfusion.com/angular/documentation/api/timeline/#cssclass) property it enables the dots to have an outline state.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/timeline/customization/dot-outline/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/timeline/customization/dot-outline/src/main.ts %}
 {% endhighlight %}

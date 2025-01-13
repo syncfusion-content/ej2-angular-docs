@@ -8,13 +8,13 @@ import { ItemModel } from "@syncfusion/ej2-angular-splitbuttons";
 import { ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 @Component({
   imports: [ RibbonModule, CheckBoxModule ],
-  standAlone: true,
+  standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild('ribbon') ribbon: RibbonComponent;
+  @ViewChild('ribbon') ribbon!: RibbonComponent;
   
   public pasteButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-paste", content: "Paste" };
   public copyButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-copy", content: "Copy" };
