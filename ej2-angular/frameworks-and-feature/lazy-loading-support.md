@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Angular Lazy Loading
 
-This section explains how to implement Lazy Loading with Essential JS2 Angular components in Angular, which improves the initial loading time of the application by loading only the necessary modules on demand.
+Lazy loading is an optimization technique used in Angular applications to improve performance by loading only the necessary modules on demand. This section provides a detailed guide on implementing lazy loading with Essential JS2 Angular components, including Syncfusion controls. Lazy loading is instrumental in minimizing the initial loading time, thereby enhancing user experience significantly.
 
 ## Lazy Loading
 
@@ -18,13 +18,11 @@ Lazy loading is a technique that loads additional payload only when needed, whic
 
 ## Creating a Syncfusion component in Angular
 
-To create a Syncfusion component in Angular, refer to the [getting started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli) documentation. Additionally, you can refer to the Angular [lazy-loading](https://v17.angular.io/guide/lazy-loading-ngmodules) documentation for more information on how to implement lazy loading in your application.
+Begin developing your Angular application with Syncfusion components by following the [getting started guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli). Additionally, refer to the Angular [lazy-loading documentation](https://v17.angular.io/guide/lazy-loading-ngmodules) for a comprehensive understanding of implementing lazy loading.
 
-Here's an example of an Angular application that has routing enabled and uses lazy loading to load the `CustomersComponent` and `OrdersComponent`.
+Here's an example demonstrating the routing setup in an Angular application that implements lazy loading for `CustomersComponent` and `OrdersComponent`.
 
-Here's an example of an Angular application that has routing enabled and uses lazy loading to load the CustomersComponent and OrdersComponent.
-
-In the `customers.component.ts` file, the Syncfusion Calendar component is added as follows,
+In the `customers.component.ts` file, we integrate the Syncfusion Calendar component:
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -41,13 +39,11 @@ export class CustomersComponent implements OnInit {
   public maxDate: Date = new Date(this.fullYear, this.month, 15);
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
 ```
 
-In the `orders.component.ts` file, the Syncfusion Grid component is added as follows,
+In the `orders.component.ts` file, implement the Syncfusion Grid component:
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -56,13 +52,13 @@ import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 @Component({
   selector: 'app-orders',
   template: ` <ejs-grid [dataSource]='data'>
-  <e-columns>
+    <e-columns>
       <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-column>
       <e-column field='CustomerID' headerText='Customer ID' width=150></e-column>
       <e-column field='ShipCity' headerText='Ship City' width=150></e-column>
       <e-column field='ShipName' headerText='Ship Name' width=150></e-column>
-  </e-columns>
-  </ejs-grid>`,
+    </e-columns>
+  </ejs-grid>`
 })
 export class OrdersComponent implements OnInit {
   public data: DataManager;
@@ -77,12 +73,11 @@ export class OrdersComponent implements OnInit {
 }
 ```
 
-In the `app-routing.module.ts` file, we've implemented code splitting to dynamically import the components.
+Configure `app-routing.module.ts` for lazy loading by dynamically importing the required modules:
 
 ```typescript
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 
 const routes: Routes = [
   {
@@ -96,9 +91,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes)
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
   providers: []
 })

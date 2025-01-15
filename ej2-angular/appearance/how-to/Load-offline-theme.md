@@ -8,67 +8,64 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Loading themes without internet access
+# Loading Themes Without Internet Access
 
-Syncfusion incorporates the Material theme as a default built-in theme for all its components. By default, material theme refers to Google fonts, which necessitates internet access. However, this may not be suitable for applications that operate without an internet connection. To address this limitation, Syncfusion provides `offline-theme` file to reference Material styles with local fonts, ensuring seamless usage even in environments without internet connectivity. 
+Syncfusion's default Material theme incorporates Google fonts, which typically require internet access. For offline environments, Syncfusion provides an `offline-theme` file to reference Material styles with local fonts, ensuring the components function seamlessly without internet connectivity.
 
-## Material theme package
+## Material Theme Package
 
-The [`ej2-materail-theme`](https://www.npmjs.com/package/@syncfusion/ej2-material-theme)package enables users to reference styles without the online font through offline-theme file as an NPM package. To utilize this package, follow the steps provided below.
+The [`ej2-material-theme`](https://www.npmjs.com/package/@syncfusion/ej2-material-theme) package offers a way to use styles without online font dependencies, through an offline-theme file available as an NPM package. Below are the steps to utilize this package.
 
-## Adding the material theme package
+## Adding the Material Theme Package
 
-Run the following command to install the `ej2-material-theme` package in the application
+Install the `ej2-material-theme` package in your application using the following command:
 
 ```bash
 npm i @syncfusion/ej2-material-theme
 ```
 
-If you want to utilize [`ej2-material-dark`](https://www.npmjs.com/package/@syncfusion/ej2-material-dark-theme?activeTab=readme) theme run the below command
+To use the [`ej2-material-dark`](https://www.npmjs.com/package/@syncfusion/ej2-material-dark-theme?activeTab=readme) theme, run:
 
 ```bash
 npm i @syncfusion/ej2-material-dark-theme
 ```
 
-## Importing styles
+## Importing Styles
 
-Once installing the package, import the styles in your application by adding a link path to your styles folder. Make sure the path does not include references to the Roboto font.
+After installation, import the styles into your application by specifying the link path to your styles folder, ensuring it excludes references to the Roboto font.
 
-```bash
+```css
 @import '../node_modules/@syncfusion/ej2-material-theme/styles/offline-theme/material.css';
 ```
 
-## Loading offline theme for tailwind
+## Loading Offline Theme for Tailwind
 
-Similar to our `material theme`, we have offline-Theme designed specifically for our `tailwind users`. This  feature allows you to experience the full range of Tailwind theme benefits without the need for online Google Font references.
+Similar to the Material theme, an offline theme is also available for `Tailwind` users. This option lets you fully leverage the Tailwind theme's benefits without requiring Google Font references.
 
-## Tailwind theme package
+## Tailwind Theme Package
 
-Same as `materail-theme` package [`ej2-tailwind-theme`](https://www.npmjs.com/package/@syncfusion/ej2-tailwind-theme) enables users to reference styles without the online font through a offline-theme file as an NPM package. To utilize this package, follow the steps provided below.
+As with the `material-theme` package, the [`ej2-tailwind-theme`](https://www.npmjs.com/package/@syncfusion/ej2-tailwind-theme) allows for style referencing without the online font through an offline-theme file, available as an NPM package. Follow the steps below to use this package.
 
-## Adding the tailwind theme package
+## Adding the Tailwind Theme Package
 
-Run the following command to install the `ej2-tailwind-theme` package in the application.
+Install the `ej2-tailwind-theme` package using:
 
 ```bash
 npm install @syncfusion/ej2-tailwind-theme
 ```
 
-If you want to utlize `ej2-tailwind-dark` theme run the below command
+To utilize the `ej2-tailwind-dark` theme, use:
 
 ```bash
 npm install @syncfusion/ej2-tailwind-dark-theme
 ```
 
-## Importing styles
+## Importing Styles
 
-Once installing the package, import the styles in your application by adding a link path to your styles folder. Make sure the path does not include references to the Roboto font.
+Post-installation, import the styles into your application by including the style path in the styles folder, consciously avoiding Roboto font references.
 
-```bash
+```css
 @import '../node_modules/@syncfusion/ej2-tailwind-theme/styles/offline-theme/tailwind.css';
 ```
 
-Syncfusion recognizes the need for applications designed to function without internet connectivity.To bridge this gap, It provides a offline-theme file that reference theme with local fonts. This approach ensures a smooth user experience, making our components adaptable for applications in environments with limited or no internet connectivity. 
-
-
-
+Syncfusion understands the necessity for offline-capable applications and offers an offline-theme file referencing themes with local fonts. This strategy guarantees a smooth user experience, making components adaptability possible even in environments with limited or no internet access.

@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 WProofreader is a powerful tool that enhances content quality by detecting and correcting spelling and grammar errors in real-time as users type. This functionality significantly improves the professionalism of your content and ensures error-free text.
 
-### Key Features of WProofreader:
+**Key Features of WProofreader:**
 
 * Real-time Spell Checking: Instantly detects spelling mistakes as users type, providing immediate corrections and suggestions.
 

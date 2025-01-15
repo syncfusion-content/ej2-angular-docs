@@ -8,39 +8,40 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Ionic and Angular
+# Getting Started with Ionic and Angular
 
-This document helps you create a simple Angular application with the `Ionic Framework` and including `Syncfusion Angular UI components` can be a great way to add functionality and a polished look to your app.
+This guide assists you in creating a simple Angular application using the `Ionic Framework` and integrating `Syncfusion Angular UI components` for enhanced functionality and a polished appearance.
 
 ## Prerequisites
 
-Before getting started with Syncfusion Angular Components in an Ionic project with Angular, check whether the following are installed on the developer's machine.
+Before integrating Syncfusion Angular Components in an Ionic project with Angular, ensure the following prerequisites are installed on your development machine:
 
 * [System requirements for Syncfusion Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
-* ionic CLI - `^6.x.x` or later
+* Ionic CLI version `^6.x.x` or later
 
 ## Create an Application
 
-To create a new project using the command prompt, use the following command:
+To initialize a new project using the command line, execute the following command:
 
 ```bash
 npm i -g @ionic/cli
 ```
 
->Here, we are using Node.js version 16 and Ionic version 7.0.0 to support Angular 16.
+> We are utilizing Node.js version 16 and Ionic version 7.0.0 to support Angular 16.
 
-Once your development environment is set up, users can start by creating a new project using the Ionic CLI. To do this, run the following command in your command prompt,
+Once your development setup is complete, create a new project using the Ionic CLI by executing this command:
 
 ```bash
 ionic start syncfusion-angular-ionic blank --type=angular 
 ```
-This command will create a new Ionic template application in a folder called "syncfusion-angular-ionic" and will also install the default npm packages needed for the application.
 
->Refer to this [getting started](https://ionicframework.com/getting-started/#cli) document to install ionic framework.
+This command will generate a new Ionic template application in a directory named "syncfusion-angular-ionic" and install the default npm packages necessary for the application.
 
-## Installing Syncfusion Grid package
+> Refer to this [getting started guide](https://ionicframework.com/getting-started/#cli) for Ionic framework installation details.
 
-Add the Syncfusion angular packages to the application which needs to be run. For example, we have add the Syncfusion Angular Grid package to the application.
+## Installing Syncfusion Grid Package
+
+To integrate Syncfusion Angular packages, run the appropriate command. Below is the command for adding the Syncfusion Angular Grid package:
 
 ```bash
 npm i @syncfusion/ej2-angular-grids --save
@@ -48,9 +49,9 @@ npm i @syncfusion/ej2-angular-grids --save
 
 ## Adding Grid Module
 
-After installing the package, the component modules are available to configure your application from Syncfusion installed package.
+After package installation, the component modules from Syncfusion are available to configure your application.
 
-Refer to the following code snippet to import the Grid module in `~/src/app/home/home.module.ts` from the `@syncfusion/ej2-angular-grids`.
+Refer to the following code snippet to import the Grid module in `~/src/app/home/home.module.ts` from `@syncfusion/ej2-angular-grids`.
 
 ```typescript
 import { NgModule } from '@angular/core';
@@ -77,7 +78,7 @@ export class HomePageModule {}
 
 ```
 
-## Adding Syncfusion component
+## Adding Syncfusion Component
 
 After importing the package, add the following grid component code snippet in the `~/src/app/home/home.page.ts` file.
 
@@ -126,7 +127,7 @@ export class HomePage {
 
 ## Adding CSS Reference
 
-Add the following Grid component styles as specified in the `~/src/global.scss` file.
+Include the following Grid component styles in the `~/src/global.scss` file.
 
 {% tabs %}
 {% highlight css tabtitle="~/src/styles.css" %}
@@ -146,10 +147,10 @@ Add the following Grid component styles as specified in the `~/src/global.scss` 
 
 ## Running the Application
 
-Finally, run the following command to start the application. The Syncfusion Angular Grid component will be rendered in the ionic framework. 
+Finally, use the following command to start the application. The Syncfusion Angular Grid component will be rendered within the Ionic framework.
 
- ```bash
+```bash
 ionic serve 
 ```
 
->For your convenience, we have prepared an [Angular sample with ionic framework](https://github.com/SyncfusionExamples/ej2-angular-ionic).
+> For your convenience, we have prepared an [Angular sample with Ionic framework](https://github.com/SyncfusionExamples/ej2-angular-ionic).

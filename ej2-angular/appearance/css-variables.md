@@ -8,28 +8,28 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# About CSS variables in themes
+# About CSS Variables in Themes
 
-[CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), also known as custom properties, are entities defined by CSS authors that contain specific values that can be reused throughout a CSS file. They are identified by their name, which must begin with two hyphens (--) followed by an identifier. These variables can be assigned any valid CSS value, such as colors, lengths, or fonts. To retrieve the value of a CSS variable, the var() function is used.
+[CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), or custom properties, are entities defined by CSS authors that hold specific values applicable throughout a CSS file. They are named with two hyphens (--) followed by an identifier. These variables can take any valid CSS value including colors, lengths, or fonts. To access the value of a CSS variable, use the var() function.
 
-Syncfusion currently offers two modern and highly customizable themes using CSS variables. These themes are designed to provide a consistent and visually appealing look and feel across all Syncfusion components. The themes available are:
+Syncfusion provides modern, highly customizable themes using CSS variables. These themes deliver a consistent, visually appealing appearance across Syncfusion components. Available themes include:
 
 * Material 3 Theme
 * Fluent 2 Theme
 * Bootstrap 5.3 Theme
 * Tailwind 3.4 Theme
 
-## CSS themes - Syncfusion Angular Controls
+## CSS Themes - Syncfusion Angular Controls
 
-[Material 3](https://m3.material.io/), [Fluent 2](https://fluent2.microsoft.design/get-started/whatisnew), [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/) and [Tailwind 3.4](https://tailwindcss.com/docs/installation) themes have been introduced across all EJ2 Controls, featuring both `light` and `dark` variants. This themes utilizes `CSS variables` to allow easy customization of control colors in CSS format. With this implementation, users can seamlessly switch between light and dark color schemes, providing a flexible solution to meet their preferences and application needs.
+The [Material 3](https://m3.material.io/), [Fluent 2](https://fluent2.microsoft.design/get-started/whatisnew), [Bootstrap 5.3](https://getbootstrap.com/docs/5.3/getting-started/introduction/), and [Tailwind 3.4](https://tailwindcss.com/docs/installation) themes have been integrated into all EJ2 Controls, featuring `light` and `dark` variants. These themes use `CSS variables`, simplifying control color customization within CSS. You can effortlessly switch between light and dark modes, accommodating user preferences and application necessities.
 
-> Kindly note that in the Material 3 theme, CSS variables with rgb() values are used for color variables. The use of hex values in this context may lead to improper functionality. For example, in previous versions of the Material theme or other themes, the primary color variable was defined as follows: $primary: #6200ee;. However, in the Material 3 theme, the primary color variable is defined as follows: --color-sf-primary: 98, 0, 238;.
+> Note: In the Material 3 theme, color CSS variables are defined with rgb() values. Using hex values might cause improper functionality. For instance, earlier versions of Material used $primary: #6200ee;. Now in Material 3, it's --color-sf-primary: 98, 0, 238;.
 
-### Utilization of CSS variables in modern themes
+### Using CSS Variables in Modern Themes
 
-Modern themes make it easy to change the colors of controls using CSS variables. Each theme has its own way of setting these variables, so it's important to follow the specific instructions for each theme. Doing this helps keep the styling consistent and efficient across different parts of your application.
+Modern themes enable easy control color changes using CSS variables. Each theme has unique variable settings, so it's crucial to follow specific instructions per theme to maintain consistent, efficient styling across your application.
 
-Below are examples of how CSS variables can be defined for these themes:
+Below are examples of defining CSS variables in these themes:
 
 {% tabs %}
 {% highlight css tabtitle="material3.css" %}
@@ -49,9 +49,9 @@ Below are examples of how CSS variables can be defined for these themes:
 {% endhighlight %}
 {% endtabs %}
 
-### How to get these themes?
+### Obtaining these Themes
 
-To access themes provided by Syncfusion, you have two primary options,
+Syncfusion offers themes via two main methods:
 
 * Package
 * CDN links
@@ -67,13 +67,13 @@ To access themes provided by Syncfusion, you have two primary options,
 |  |  [Bootstrap5.3 light](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3.css)  |  [Bootstrap 5.3 Dark](https://cdn.syncfusion.com/ej2/27.1.48/bootstrap5.3-dark.css)  |
 |  | [Tailwind 3.4 Light](https://cdn.syncfusion.com/ej2/28.1.33/tailwind3.css) | [Tailwind 3.4 Dark](https://cdn.syncfusion.com/ej2/28.1.33/tailwind3-dark.css) |
 
-### Color Customization in themes
+### Theme Color Customization
 
-CSS variables allows you to dynamically change color values in real-time using JavaScript. This flexibility enables you to create interactive experiences where colors can adjust based on user interactions or other dynamic factors.
+CSS variables enable real-time dynamic color changes using JavaScript, supporting interactive designs that respond to user actions or dynamic factors.
 
-#### Customization using CSS
+#### CSS-Based Customization
 
-Here you can find the example for `Material 3` customization using CSS class.
+Below is an example of `Material 3` customization using CSS classes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -87,15 +87,15 @@ Here you can find the example for `Material 3` customization using CSS class.
 
 {% previewsample "page.domainurl/samples/common/material3-cs2" %}
 
-**Default Material 3 primary value**
+**Default Material 3 Primary Value**
 
 ![default primary value](images/material3-default.png)
 
-**Customized Material 3 primary value**
+**Customized Material 3 Primary Value**
 
 ![customized primary value](images/material3-customize.png)
 
-Example for `Fluent 2` customization using CSS class.
+Example of `Fluent 2` customization using CSS classes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -109,15 +109,15 @@ Example for `Fluent 2` customization using CSS class.
 
 {% previewsample "page.domainurl/samples/common/fluent2-cs2" %}
 
-**Default Fluent2 primary value**
+**Default Fluent 2 Primary Value**
 
 ![default primary value](images/fluent2-default.png)
 
-**Customized Fluent2 primary value**
+**Customized Fluent 2 Primary Value**
 
 ![customized primary value](images/fluent2-customize.png)
 
-Example for `Bootstrap 5.3` customization using CSS class.
+Example of `Bootstrap 5.3` customization using CSS classes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -131,15 +131,15 @@ Example for `Bootstrap 5.3` customization using CSS class.
 
 {% previewsample "page.domainurl/samples/common/bootstrap5.3-cs2" %}
 
-**Default Bootstrap 5.3 primary value**
+**Default Bootstrap 5.3 Primary Value**
 
 ![default primary value](images/bootstrap5.3-default.png)
 
-**Customized Bootstrap 5.3 primary value**
+**Customized Bootstrap 5.3 Primary Value**
 
 ![customized primary value](images/bootstrap5.3-customize.png)
 
-Example for `Tailwind 3.4` customization using CSS class.
+Example of `Tailwind 3.4` customization using CSS classes.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -153,19 +153,19 @@ Example for `Tailwind 3.4` customization using CSS class.
 
 {% previewsample "page.domainurl/samples/common/tailwind3.4-cs2" %}
 
-**Default Tailwind 3.4 primary value**
+**Default Tailwind 3.4 Primary Value**
 
 ![default primary value](images/tailwind3-default.png)
 
-**Customized Tailwind 3.4 primary value**
+**Customized Tailwind 3.4 Primary Value**
 
 ![customized primary value](images/tailwind3-customize.png)
 
-With this CSS variable support, you can effortlessly customize the color variable values for Syncfusion Angular Components.
+Easily customize color variable values for Syncfusion Angular Components with CSS variables.
 
-### Switching Light and Dark mode with CSS variables
+### Light and Dark Mode Switching with CSS Variables
 
-Switching between modes has become easier with the updated modern themes, which offer Light and Dark variants. In all themes, there are distinct class variables for light and dark modes in a `single file`, providing flexibility for seamless switching between the two modes within your application.
+The modern themes support effortless light/dark mode switching. All themes include separate class variables for light and dark modes within a `single file`, allowing seamless mode transitions within your application.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -179,9 +179,9 @@ Switching between modes has become easier with the updated modern themes, which 
 
 {% previewsample "page.domainurl/samples/common/material3-cs1" %}
 
-### Mode switching in Fluent 2 theme
+### Mode Switching in Fluent 2 Theme
 
-Similar to `Material 3`, we offer both Light and Dark variants with `Fluent 2`. In the Fluent 2 theme, there are distinct class variables for light and dark modes, as shown in the preview below.
+Fluent 2 also supports both Light and Dark variants. It contains separate class variables for each mode, exemplified in the preview below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -195,9 +195,9 @@ Similar to `Material 3`, we offer both Light and Dark variants with `Fluent 2`. 
 
 {% previewsample "page.domainurl/samples/common/fluent2-cs1" %}
 
-### Mode switching in Bootstrap 5.3 theme
+### Mode Switching in Bootstrap 5.3 Theme
 
-Similar to `Fluent 2`, we offer both Light and Dark variants with `Bootstrap 5.3`. In the Bootstrap 5.3 theme, there are distinct class variables for light and dark modes, as shown in the preview below.
+Bootstrap 5.3 supports both Light and Dark variants through distinct class variables for each mode, as displayed below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -211,9 +211,9 @@ Similar to `Fluent 2`, we offer both Light and Dark variants with `Bootstrap 5.3
 
 {% previewsample "page.domainurl/samples/common/bootstrap5.3-cs1" %}
 
-### Mode switching in Tailwind 3.4 theme
+### Mode Switching in Tailwind 3.4 Theme
 
-Similar to `Fluent 2`, we offer both Light and Dark variants with `Tailwind 3.4`. In the Tailwind 3.4 theme, there are distinct class variables for light and dark modes, as shown in the preview below.
+Tailwind 3.4 supports Light and Dark variants with distinct class variables per mode, illustrated in the preview below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -227,28 +227,28 @@ Similar to `Fluent 2`, we offer both Light and Dark variants with `Tailwind 3.4`
 
 {% previewsample "page.domainurl/samples/common/tailwind3.4-cs1" %}
 
-### How to switch dark mode?
+### Activating Dark Mode
 
-To activate dark mode, just append the `e-dark-mode` class to the body section of your application for both `Material 3`, `Fluent 2`, `Bootstrap 5.3` and `Tailwind 3.4`themes. Once applied, the theme seamlessly switches to dark mode. Please refer to the example image below for visual guidance.
+To enable dark mode, simply add the `e-dark-mode` class to your application's body for `Material 3`, `Fluent 2`, `Bootstrap 5.3`, and `Tailwind 3.4` themes. This enables seamless dark mode activation. Refer to the example images for guidance.
 
-`Material 3` dark mode
+`Material 3` Dark Mode
 
 ![dark mode](images/material3-dark.png)
 
-`Fluent 2` dark mode
+`Fluent 2` Dark Mode
 
 ![dark mode](images/fluent2-dark.png)
 
-`Bootstrap 5.3` dark mode
+`Bootstrap 5.3` Dark Mode
 
 ![dark mode](images/bootstrap5.3-dark.png)
 
-`Tailwind 3.4` dark mode
+`Tailwind 3.4` Dark Mode
 
 ![dark mode](images/tailwind3-dark.png)
 
 ### ThemeStudio Application
 
-The ThemeStudio application now includes seamless integration with the Material 3, Fluent 2 and Bootstrap 5.3 themes, offering a comprehensive solution for customization requirements. This enhancement enables users to effortlessly customize and personalize their themes.
+The ThemeStudio application now offers integration with the Material 3, Fluent 2, and Bootstrap 5.3 themes, creating a comprehensive solution for theme customization. This enhancement enables effortless theme customization and personalization.
 
-Access the Syncfusion ThemeStudio application, featuring our themes, via the following link: [Link to Syncfusion ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=material3)
+Access the Syncfusion ThemeStudio application with our themes via this link: [Link to Syncfusion ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=material3)

@@ -8,56 +8,53 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Browser compatibility in Angular
+# Browser Compatibility in Angular
 
-The Syncfusion Angular UI components are supported only in modern browsers. This includes the following versions.
+Syncfusion Angular UI components are compatible with modern browsers. The following versions are supported:
 
-|    Chrome    |    Firefox    |    Opera     |    Edge    |    IE      |    Safari    |    IOS    |    Android    |    Windows   Mobile    |
+|    Chrome    |    Firefox    |    Opera     |    Edge    |    IE      |    Safari    |    iOS    |    Android    |    Windows Mobile    |
 |:--------------:|:---------------:|:--------------:|:------------:|:------------:|:--------------:|:-----------:|:---------------:|:--------------:|
 |    63+    |    58+    |    50+    |    13+    |    11+    |    9+    |    9+    |    4.4+    |    IE 11+    |
 
 ## Required Polyfills
 
-A polyfill is a piece of code (usually JavaScript on the Web) used to provide modern functionality on older browsers that do not natively support it.
+A polyfill is code that provides modern functionality on older browsers that lack native support.
 
-The Syncfusion Angular UI components are supported in IE 11 browser with ES6 Promise polyfill.
+Syncfusion Angular UI components are compatible with Internet Explorer 11 (IE 11) when using the ES6 Promise polyfill.
 
-## Ways to add Polyfills
+## Ways to Add Polyfills
 
-There are two ways to add polyfill in application,
+There are two primary methods to integrate polyfills into your application:
 
 ### Polyfill with CDN
 
-You can add ES6 Promise polyfill using below CDN in your HTML file.
+Add the ES6 Promise polyfill to your HTML file using the following CDN links:
 
-```typescript
+```html
 <!-- Automatically provides/replaces `Promise` if missing or broken. -->
 <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
 <!-- Minified version of `es6-promise-auto` below. -->
 <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
-
 ```
 
 ### Polyfill with NPM
 
-ES6 Promise polyfill can also be installed in npm.
+You can also install the ES6 Promise polyfill using npm.
 
-You can use below command to install via npm.
+To install via npm, use the following command:
 
-```typescript
+```bash
 yarn add es6-promise
-(or)
+# or
 npm install es6-promise
-
 ```
 
-You can use like below in your code.
+Incorporate it into your code as shown below:
 
 ```typescript
 var Promise = require('es6-promise').Promise;
-
 ```
 
-For further details, refer to the link [here](https://github.com/stefanpenner/es6-promise).
+For additional details, refer to [this link](https://github.com/stefanpenner/es6-promise).

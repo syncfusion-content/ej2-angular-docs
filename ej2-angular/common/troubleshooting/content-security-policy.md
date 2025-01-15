@@ -10,11 +10,11 @@ domainurl: ##DomainURL##
 
 # Content Security Policy
 
-Content Security Policy (CSP) is a security feature implemented by web browsers that helps to protect against attacks such as cross-site scripting (XSS) and data injection. It limits the sources from which content can be loaded on a web page.
+Content Security Policy (CSP) is a pivotal security feature deployed by web browsers to mitigate risks such as cross-site scripting (XSS) and data injection attacks. CSP controls the allowed sources from which content can be loaded on a web page, thereby enhancing security.
 
-To enable strict [Content Security Policy (CSP)](https://csp.withgoogle.com/docs/strict-csp.html), certain browser features are disabled by default. In order to use Syncfusion Angular components with strict CSP mode, it is essential to include following directives in the CSP meta tag.
+To activate a strict [Content Security Policy (CSP)](https://csp.withgoogle.com/docs/strict-csp.html), some browser functionalities are disabled by default. When utilizing Syncfusion Angular components in a strict CSP environment, it is crucial to integrate the following directives in the CSP meta tag:
 
-* Syncfusion components are rendered with calculated **inline styles** and **base64** font icons, which are blocked on a strict CSP-enabled site. To allow them, add the [`style-src 'self' 'unsafe-inline';`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) and [`font-src 'self' data:;`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) directives in the meta tag as follows.
+* Syncfusion components use computed **inline styles** and **base64** encoded font icons, which are typically blocked by strict CSP. To permit their usage, include the directives [`style-src 'self' 'unsafe-inline';`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) and [`font-src 'self' data:;`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) in your meta tag as demonstrated:
 
 {% tabs %}
 {% highlight razor tabtitle="HTML" %}
@@ -28,7 +28,7 @@ To enable strict [Content Security Policy (CSP)](https://csp.withgoogle.com/docs
 
 * Syncfusion **material** and **tailwind** built-in themes contain a reference to the [`Roboto’s external font`](https://fonts.googleapis.com/css?family=Roboto:400,500), which is also blocked. To allow them, add the [`external font`](https://fonts.googleapis.com/css?family=Roboto:400,500) reference to the [`style-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) and [`font-src`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) directives in the above meta tag.
 
-The resultant meta tag is included within the `<head>` tag and resolves the CSP violation on the application's side when utilizing Syncfusion Angular components with material and tailwind themes.
+Integrate the following meta tag within your `<head>` directive to resolve CSP violations when using Syncfusion Angular components with these themes:
 
 {% tabs %}
 {% highlight razor tabtitle="HTML" %}
@@ -49,4 +49,4 @@ N> From the 2023 Vol2 - 22.1 release onwards, the Content Security Policy for Sy
 
 ## See also
 
-* [How to resolve the Content Security Policy (CSP) errors](../how-to/csp-errors)
+* [How to Resolve Content Security Policy (CSP) Errors](../how-to/csp-errors)

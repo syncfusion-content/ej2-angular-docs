@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Audio in Angular Rich text editor component | Syncfusion
+title: Audios in Angular Rich text editor component | Syncfusion
 description: Learn here all about Audio in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Audio 
+control: Audios 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Audio in Angular Rich text editor Component
+# Audios in Angular Rich text editor Component
 
 The Rich Text Editor allows you to insert audio from online sources and local computers and then insert them into your content. You can insert the audio with the following list of options in the [insertAudioSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#insertaudiosettings) property.
 

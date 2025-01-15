@@ -10,68 +10,69 @@ domainurl: ##DomainURL##
 
 # Figma UI Kits for Syncfusion Angular Components
 
-Syncfusion offers [Figma UI kits](https://www.figma.com/@syncfusion) to facilitate effective collaboration between designers and developers. The Figma UI kits are available in four themes: [Material 3](https://www.figma.com/community/file/1385969023252455137), [Fluent](https://www.figma.com/community/file/1385969120047188707), [Tailwind](https://www.figma.com/community/file/1385969065626384098), and [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272). These kits match the themes used in Syncfusion Angular components.
+Syncfusion provides [Figma UI kits](https://www.figma.com/@syncfusion) to enhance collaboration between designers and developers. These kits are accessible in four themes: [Material 3](https://www.figma.com/community/file/1385969023252455137), [Fluent](https://www.figma.com/community/file/1385969120047188707), [Tailwind](https://www.figma.com/community/file/1385969065626384098), and [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272). Each matches the respective Syncfusion Angular component themes.
 
-The kits contain reusable design components with various possible states and variants, along with detailed figures, measurements, and icons, representing the Syncfusion Angular components.
+Figma UI kits include reusable design components, showcasing various states and variants. They are accompanied by detailed figures, measurements, and icons, representing Syncfusion Angular components.
 
 ![Material 3](./images/material3.png)
 
-## Advantages of UI kits
+## Advantages of UI Kits
 
-The Syncfusion Figma UI kit offers the following key advantages:
-- The UI kit includes detailed information about Syncfusion Angular components, such as available control lists, their states, and variants. This facilitates a quick understanding of Syncfusion Angular components.
-- Design components are developed using the [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2/), making customization straightforward and efficient.
-- Developers can seamlessly match Syncfusion Angular components with your design requirements, ensuring alignment and accuracy.
-- By using standardized components and themes, the UI kit ensures consistency in your designs, maintaining a uniform look and feel across projects.
+The Syncfusion Figma UI kit provides the following benefits:
 
-## Downloading the UI kits
+- The kit offers extensive information about Syncfusion Angular components, detailing available controls, their states, and variants, for quick insights.
+- Using the [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2/), design components are crafted for straightforward and efficient customization.
+- Developers can align Syncfusion Angular components with design specifications, ensuring accuracy and consistency.
+- Standardized components and themes promote design uniformity, maintaining a cohesive appearance throughout projects.
 
-Syncfusion Figma UI kits are available in the [Figma community](https://www.figma.com/@syncfusion). You can download the Syncfusion theme-specific Figma UI kits from the following links:
+## Downloading the UI Kits
+
+Syncfusion Figma UI kits are available via the [Figma community](https://www.figma.com/@syncfusion). You can download theme-specific UI kits from here:
 
 - [Material 3](https://www.figma.com/community/file/1385969023252455137)
 - [Fluent](https://www.figma.com/community/file/1385969120047188707)
 - [Tailwind](https://www.figma.com/community/file/1385969065626384098)
 - [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272)
 
-## Structure of the UI kits
+## Structure of the UI Kits
 
-Syncfusion’s Figma UI kit is structured to offer a comprehensive and user-friendly layout, facilitating easy navigation and exploration of various components. It includes the following pages:
+The Syncfusion Figma UI kit is organized to provide a comprehensive layout that is easy to navigate. It comprises the following pages:
 
-- **Thumbnail**: This page serves as the cover page for the UI kit.
-- **Index**: Here, users can find a detailed list of all control names, making it simple to identify and locate specific components within the UI kit.
-- **Icons**: Contains a collection of all icons used in the design components.
-- **UI Components**: At the core of the UI kit, this section features a wide range of essential UI components. Each control is meticulously designed with detailed figures, measurements, and icons, showcasing various states and variants.
+- **Thumbnail**: Acts as the cover for the UI kit.
+- **Index**: Lists all control names clearly, enabling easy identification and location of components within the UI kit.
+- **Icons**: Includes all icons used in design components.
+- **UI Components**: This essential section features a broad array of UI components. Each control is well-designed with precise figures, measurements, and icons, illustrating multiple states and variants.
 
 ![Layout](./images/layout.png)
 
-## Customizing the UI kits
+## Customizing the UI Kits
 
-The Syncfusion Figma UI kits are easily customizable to meet your specific needs, allowing you to create unique designs and adjust colors to match your brand guidelines. The [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2/) used in developing these components, your customizations will be seamlessly reflected across multiple components and their variants.
+Syncfusion Figma UI kits can be tailored to suit specific needs, allowing for unique design creation and color adaptation to match brand guidelines. The [atomic design methodology](https://atomicdesign.bradfrost.com/chapter-2/) ensures your customizations seamlessly affect multiple components and their variants.
 
-Here's how to customize the primary button color of the Material 3 theme within your layout:
+Here's how to adjust the primary button color in the Material 3 theme:
 
-1. Visit our [UI kits](#downloading-the-ui-kits) and choose your preferred theme, such as the Material 3 theme.
-2. Open the selected theme in the Figma web application by clicking the **Open in Figma** button.
-3. For the desktop application, click the **Import** button in the top-right corner of the page. Select the downloaded Syncfusion fig file you want to import and click the **Open** button.
-4. Identify the button you wish to customize within your layout.
-5. On the right side of the Figma interface, find the color variable options listed. For example, the variable for a particular button color might be labeled as `$primary-bg-color`, derived from the primary color variable.
-6. To customize this primary button control color, click outside the button to see the **Local variables** option on the right side of the Figma interface. It contains the design token for the color variables. Click the **Local variables** option.
-7. A popup will show the design token list. You can change the primary color using a color palette.
-8. Once you've selected the new color (e.g., pink) for the primary variable, the button's color pattern will be updated accordingly. You'll see the changes reflected in real-time within your design.
+1. Visit our [UI kits](#downloading-the-ui-kits) section and select a preferred theme, such as Material 3.
+2. Open the chosen theme in Figma by clicking the **Open in Figma** button.
+3. For the desktop app, click **Import**, select the downloaded Syncfusion fig file, and then click **Open**.
+4. Locate the button needing customization within your layout.
+5. On the Figma interface's right, review the color variable options. For buttons, this might be `$primary-bg-color`, originating from the primary color variable.
+6. Click outside the button to access the **Local variables** feature, containing design tokens for color variables, then click the **Local variables** option.
+7. A popup with the design token list will appear, allowing primary variable color changes via a palette.
+8. Upon choosing a new color (e.g., pink), the button's color will update instantly in the design.
 
 ![Customization](./images/customize.png)
 
-In addition to changing the button color, you can also customize other aspects like font, spacing, shadows, etc., of the UI components:
+Beyond button color changes, other UI component aspects such as font, spacing, and shadows can also be customized:
 
-Feel free to experiment with these customization options to create a design that perfectly matches your requirements.
+Experiment with these options to create a design perfectly aligned with your vision.
 
-## Upgrading the UI kits
+## Upgrading the UI Kits
 
-To upgrade your UI kits, download the latest version from the provided links. Follow these guidelines for a seamless upgrade process:
+To upgrade your UI kits, download the latest version from the provided links. Follow these tips for a seamless transition:
 
-- Keep track of updates or new versions of UI kits from Syncfusion.
-- Before upgrading, back up your ongoing projects to prevent data loss or compatibility issues.
-- Share your experience with Syncfusion regarding the upgraded UI kits, including any issues encountered or suggestions for improvement.
+- Stay informed about Syncfusion's UI kit updates or new releases.
+- Backup ongoing projects before upgrading to avoid data loss or compatibility issues.
+- Share feedback with Syncfusion about the updated UI kits, including encountered issues or improvement suggestions.
 
 ## See also
 

@@ -11,23 +11,23 @@ domainurl: ##DomainURL##
 # Schematics
 
 The Syncfusion Angular components now supports the [schematics](https://blog.angular.io/schematics-an-introduction-dc1dfbc2a2b2?gi=d47ecc14b7ed).
-The [NPM](https://www.npmjs.com/search?q=@syncfusion/ej2-angular) packages are installed by using the Angular CLI [`add`](https://github.com/angular/angular-cli/wiki/add/) command.
+The [NPM](https://www.npmjs.com/search?q=@syncfusion/ej2-angular) packages are installed by using the Angular CLI [`add`](https://github.com/angular/angular-cli) command.
 
 ## Creating Angular application
 
-To create an Angular application, install the [Angular CLI](https://github.com/angular/angular-cli) globally using the following command.
+To kickstart your Angular application, you first need to install the [Angular CLI](https://github.com/angular/angular-cli), ensuring it is accessible globally. Execute the following command in your terminal:
 
 ```
 npm install -g @angular/cli
 ```
 
-Then, create a new Angular application using the following command.
+Once the CLI is installed, create a new Angular application by entering:
 
 ```
 ng new my-app
 ```
 
-This will download all the required files and initialize the NPM install.
+This command sets up a new project by downloading all necessary files and initializing the NPM components.
 
 ## Syncfusion package initialization
 
@@ -37,13 +37,13 @@ This will download all the required files and initialize the NPM install.
 ng add 'package-name'
 ```
 
-For example,
+For instance, to include the Syncfusion Grid component:
 
 ```
 ng add @syncfusion/ej2-angular-grids
 ```
 
-The above command does the following configuration to your Angular app,
+This command will execute the following configurations in your Angular application:
  
  * Adds `@syncfusion/ej2-angular-grids` package and its peer dependencies to your `package.json` file.
  * Imports the `GridModule` in your application module `app.module.ts`.
@@ -51,9 +51,7 @@ The above command does the following configuration to your Angular app,
 
 ## Adding specific modules from multiple component package
 
-The EJ2 Angular Schematics support adding a specific module from the component package to the `app.module.ts` file.
-
-While initializing the package, we can pass the preferred module as a parameter using the following command.
+The EJ2 Angular Schematics provide the flexibility to include specific modules from a component package directly into your `app.module.ts` file. This can be achieved by specifying the modules as parameters:
 
 ```
 ng add @syncfusion/<ej2-angular-package-name> --module=module_1,module_2,module_3
@@ -61,7 +59,7 @@ ng add @syncfusion/<ej2-angular-package-name> --module=module_1,module_2,module_
 
 > NOTE: While passing module names, there should be no space between them. If any, it will be ignored.
 
-For example,
+For example:
 
 ```
 ng add @syncfusion/ej2-angular-popups -–module=tooltip
@@ -79,7 +77,7 @@ ng add @syncfusion/ej2-angular-navigation -–module=treeview,tab,contextmenu
 
 When you pass valid and invalid module names, the schematics will add all the valid modules and throw an error for the invalid modules.
 
-For example,
+For example:
 
 ```
 ng add @syncfusion/ej2-angular-popups -–module=tooltip,treeview

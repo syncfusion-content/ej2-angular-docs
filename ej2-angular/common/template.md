@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Templates in Syncfusion Angular Components
 
-Syncfusion Angular components are rendered with a pre-defined layout or structure that is used to define how the component should be rendered on the user interface. The user wants to customize the appearance of the component and add functionality that is specific to the needs of the application. Syncfusion Angular components have the option to achieve this using template support.
+Syncfusion Angular components provide a pre-defined layout or structure that defines how the component should be rendered on the user interface. When you need to customize the component's appearance or functionality to meet specific application needs, Syncfusion Angular components offer template support to achieve this.
 
-This template support can be achieved using the Angular ng template. It is a way to define a reusable template that can be used across the application. It allows the user to create a template with a specific structure and logic and then use it multiple times throughout the application without repeating the same code.
+Template support is implemented using Angular's `ng-template` directive, which creates reusable templates that can be invoked throughout the application. This approach allows you to define a template with a specified structure and logic, then reuse it multiple times without writing duplicate code.
 
-A template is defined in Angular by using the `<ng-template>` tag within the corresponding component, and it can be given along with the component template name (template) using the # symbol, which can be used to reference the template. The template can include any valid HTML and Angular template syntax, such as directives, bindings, and components.
+In Angular, a template is defined using the `<ng-template>` tag within the corresponding component. The template can be accessed via the component's template name using the `#` symbol, enabling easy referencing. Templates can include any valid HTML and Angular template syntax, such as directives, bindings, and components.
 
-To access the component data source inside the template, use the `let-data` attribute in the template. Refer to the below code example.
+To access component data within the template, use the `let-data` attribute. Here’s an example:
 
 ```html
 <ng-template #template let-data>
@@ -24,7 +24,7 @@ To access the component data source inside the template, use the `let-data` attr
 </ng-template>
 ```
 
-For example, the Grid component is shown below with custom template.
+Let's explore how templates enhance the Grid component with a custom template:
 
 ```js
 import { Component, OnInit } from '@angular/core';

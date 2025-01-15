@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Right-To-Left support in Syncfusion Angular Components
 
-Right-to-Left (RTL) support allows applications to effectively communicate with users who use languages that are written from right to left, such as Arabic, Hebrew, etc.
+Right-to-Left (RTL) support allows applications to cater to languages written from right to left, such as Arabic and Hebrew. This feature enhances the accessibility and usability of web applications for a broader audience.
 
-Syncfusion Angular UI components support for right-to-left (RTL) by setting the `enableRtl` property to `true`. This adds the class name `e-rtl` to the component element and renders all Syncfusion Angular components in a right-to-left direction.
+Syncfusion Angular UI components provide built-in RTL support. By setting the `enableRtl` property to `true`, you can render Syncfusion components in a right-to-left direction. This automatically applies the `e-rtl` class to the component's HTML element.
 
 ## Enable RTL for all components
 
-To enable Right-To-Left (RTL) support for all components, users can set the `enableRtl` property directly in their application. Here is an example code snippet using the ListView component:
+To enable RTL support globally across all Syncfusion Angular components, set the `enableRtl` property at the application level. This ensures a consistent RTL layout throughout your application. Below is an example using the ListView component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -45,3 +45,7 @@ To enable Right-To-Left (RTL) support for an individual component, users can set
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/common/individual-rtl-cs1" %}
+
+## Summary
+
+Utilizing the RTL support provided by Syncfusion Angular components allows effective service for users of right-to-left languages. Whether implemented globally or tailored to specific components, Syncfusion offers the versatility needed to enhance the user experience across diverse linguistic audiences.

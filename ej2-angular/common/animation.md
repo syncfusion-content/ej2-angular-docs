@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # Animation support in Syncfusion Angular Components
 
-The **Animation** is used to perform animation effects on HTML elements by running a sequence of frames. It can be used to enhance the user experience.
+**Animations** enhance the user interface by executing a series of frames, resulting in smooth transitions and effects. Syncfusion's [Animation](https://ej2.syncfusion.com/documentation/api/base/animation/) library enables these animations effectively.
 
-Syncfusion [Animation](https://ej2.syncfusion.com/documentation/api/base/animation/) library supports animating the HTML elements using the [animate](https://ej2.syncfusion.com/documentation/api/base/animation/#animate) method. This method adds the `e-animate`, `e-animation-id` attributes, and CSS style to the HTML element and removes them after the animation effect is completed.
+The [animate](https://ej2.syncfusion.com/documentation/api/base/animation/#animate) method aids in animating HTML elements by temporarily applying `e-animate` and `e-animation-id` attributes, alongside CSS styles, for the effect duration.
 
 ## Animation effects
 
-An animation effect refers to the visual change that occurs over a period of time in HTML elements. The [Animation](https://ej2.syncfusion.com/documentation/api/base/animation/) library supports different types of animation [effects](https://ej2.syncfusion.com/documentation/api/base/effect/#effect). The [name](https://ej2.syncfusion.com/documentation/api/base/animation/#name) property is used to specify the animation effect of an animation.
+Animation effects are visual changes over time for HTML elements. Various [effects](https://ej2.syncfusion.com/documentation/api/base/effect/#effect) are supported, specified using the [name](https://ej2.syncfusion.com/documentation/api/base/animation/#name) property.
 
-Here is an example code snippet using the `FadeOut` and `ZoomOut` animation effects:
+Example code utilizing the `FadeOut` and `ZoomOut` animation effects:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,13 +34,11 @@ Here is an example code snippet using the `FadeOut` and `ZoomOut` animation effe
 
 ## Animation duration
 
-Animation [duration](https://ej2.syncfusion.com/documentation/api/base/animation/#duration) is the animation property that specifies the length of time that an animation should take to complete. The animation duration is specified in milliseconds (ms) and determines the total amount of time that an animation should run.
+The animation [duration](https://ej2.syncfusion.com/documentation/api/base/animation/#duration) defines the total time an animation takes to run, measured in milliseconds.
 
-For example, if an animation has a duration of 2 seconds, it will take 2 seconds to complete from start to finish. The duration of an animation affects the overall pace of the animation and can be adjusted to match the desired speed and style of the animation.
+For instance, an animation with a `2000ms` duration completes in 2 seconds. The duration impacts the animation pace—shorter times yield faster movements, while longer durations slow it down.
 
-The value of the animation duration can be adjusted to change the speed of the animation, with shorter durations resulting in faster animations and longer durations resulting in slower animations.
-
-Here is an example code snippet using the animation effects with a duration of `5000` milliseconds:
+Example utilizing `5000ms` for animation effects:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -56,11 +54,11 @@ Here is an example code snippet using the animation effects with a duration of `
 
 ## Animation delay
 
-The animation [delay](https://ej2.syncfusion.com/documentation/api/base/animation/#delay) is the animation property that specifies the amount of time to wait before starting an animation. The animation delay is specified in milliseconds (ms) and determines the amount of time that should elapse before an animation begins.
+An animation [delay](https://ej2.syncfusion.com/documentation/api/base/animation/#delay) indicates the wait time before an animation initiates, also in milliseconds.
 
-For example, if an animation has a delay of 2 seconds, it will wait for 2 seconds before starting. This can be useful in creating more complex animations, where multiple elements are animated in sequence, or in creating animations that start only after a user interaction has taken place.
+For example, a `2000ms` delay pauses the animation for 2 seconds before it starts. This is valuable for sequential animations or event-triggered actions.
 
-Here is an example code snippet using the animation effects with a delay of `2000` milliseconds:
+Example using a `2000ms` delay:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -76,13 +74,13 @@ Here is an example code snippet using the animation effects with a delay of `200
 
 ## Enable or disable animation globally
 
-Enable or disable animation for all Angular components globally by using the `setGlobalAnimation` method with one of the below options:
+Control animations for all Angular components globally with the `setGlobalAnimation` method:
 
-* `GlobalAnimationMode.Enable` - Enables the animation for all components, regardless of the individual component's animation settings.
-* `GlobalAnimationMode.Disable` - Disables the animation for all components, regardless of the individual component's animation settings.
-* `GlobalAnimationMode.Default` - Animation is enabled or disabled based on the component's animation settings.
+- `GlobalAnimationMode.Enable` – Activates animations for all components.
+- `GlobalAnimationMode.Disable` – Deactivates animations for all components.
+- `GlobalAnimationMode.Default` – Respects the component-specific animation settings.
 
-In the below code snippet, animation is disabled.
+The example below demonstrates disabling animations:
 
 {% tabs %}
 {% highlight js tabtitle="~/src/src/app.component.ts" %}
