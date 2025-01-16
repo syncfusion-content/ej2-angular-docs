@@ -454,6 +454,7 @@ export class AppComponent {
     }
     rowDrop(args: RowDragEventArgs): void {
         this.message = `rowDrop event triggered`;
+    }    
 }
 
 {% endraw %}

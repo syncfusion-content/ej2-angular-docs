@@ -446,7 +446,7 @@ The sample below demonstrates the Rich Text Editor component rendered in German 
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs3" %}
 
-## Enable Right-to-Left (RTL) Direction
+## Enable Right-to-Left (RTL) Mode
 
 The [`enableRtl`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#enablertl) property specifies the direction of the Rich Text Editor component. This property can be enabled for writing systems that require right-to-left direction, such as Arabic and Hebrew.
 

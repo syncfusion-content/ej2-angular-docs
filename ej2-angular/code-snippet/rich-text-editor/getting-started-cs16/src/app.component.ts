@@ -1,35 +1,16 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
-
-
-
-
-import { enableRipple } from '@syncfusion/ej2-base';
-enableRipple(true);
-/**
- * Rich Text Editor Link sample
- */
- import { Component } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
+import { Component } from '@angular/core';
+import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
-imports: [
-        
-        RichTextEditorAllModule,
-        DialogModule
+    imports: [
+        RichTextEditorModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-root',
-    template: `<ejs-richtexteditor id='defaultRTE' [toolbarSettings] ='tools'></ejs-richtexteditor>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
+    template: `<ejs-richtexteditor id='editor' [toolbarSettings]='tools'></ejs-richtexteditor>`,
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
 })
-export class AppComponent  {
-public tools = {
-        items: ['CreateLink', 'RemoveLink']
-};
+export class AppComponent {
+    public tools = {
+        items: ['Image', 'CreateLink']
+    };
 }
-
-

@@ -1,55 +1,29 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
 import { Component, ViewChild } from '@angular/core';
-import { ToolbarService, HtmlEditorService, QuickToolbarService, RichTextEditorComponent} from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService, RichTextEditorComponent, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 import { CheckBoxComponent } from '@syncfusion/ej2-angular-buttons';
 @Component({
-imports: [
-        
-        RichTextEditorAllModule,
-        CheckBoxModule
-    ],
-
-
-standalone: true,
-    selector: 'app-root',
-    template: `<ejs-richtexteditor #typeRTE id='defaultRTE' [toolbarSettings]='tools'>
-    <ng-template #valueTemplate>
-      <p>The Rich Text Editor triggers events based on its actions. </p>
-      <p> The events can be used as an extension point to perform custom operations.</p>
-      <ul>
-        <li>created - Triggers when the component is rendered.</li>
-        <li>change - Triggers only when RTE is blurred and changes are done to the content.</li>
-        <li>focus - Triggers when RTE is focused in.</li>
-        <li>blur - Triggers when RTE is focused out.</li>
-        <li>actionBegin - Triggers before command execution using toolbar items or executeCommand method.</li>
-        <li>actionComplete - Triggers after command execution using toolbar items or executeCommand method.</li>
-        <li>destroyed – Triggers when the component is destroyed.</li>
-      </ul>
-    </ng-template>
+  imports: [
+    RichTextEditorModule,
+    CheckBoxModule
+  ],
+  standalone: true,
+  selector: 'app-root',
+  template: `<ejs-richtexteditor #typeEditor id='editor' [toolbarSettings]='tools' [(value)]='value'>
     </ejs-richtexteditor>
      <div>
     <ejs-checkbox #float label="Enable Floating" [checked]="true" (change)="onChangeFloat()"></ejs-checkbox>
     </div>`,
-    providers: [ToolbarService, HtmlEditorService, QuickToolbarService]
+  providers: [ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService]
 })
-export class AppComponent  {
-@ViewChild('float') rteFloatObj: CheckBoxComponent | undefined;
-@ViewChild('typeRTE') rteObj: RichTextEditorComponent | undefined;
-  public tools: object = {
-      enableFloating: false
+export class AppComponent {
+  @ViewChild('float') editorFloatObj: CheckBoxComponent | undefined;
+  @ViewChild('typeEditor') editorObj: RichTextEditorComponent | undefined;
+  public value: string = "<p>The Rich Text Editor triggers events based on its actions. </p><p> The events can be used as an extension point to perform custom operations.</p><ul><li>created - Triggers when the component is rendered.</li><li>change - Triggers only when Rich Text Editor is blurred and changes are done to the content.</li><li>focus - Triggers when Rich Text Editor is focused in.</li><li>blur - Triggers when Rich Text Editor is focused out.</li><li>actionBegin - Triggers before command execution using toolbar items or executeCommand method.</li><li>actionComplete - Triggers after command execution using toolbar items or executeCommand method.</li><li>destroyed – Triggers when the component is destroyed.</li></ul>";
+  public tools: ToolbarSettingsModel = {
+    enableFloating: false
   };
   public onChangeFloat(): void {
-      this.rteObj!.toolbarSettings.enableFloating = this.rteFloatObj!.checked;
-      this.rteObj!.dataBind();
+    this.editorObj!.toolbarSettings.enableFloating = this.editorFloatObj!.checked;
   }
 }
-
-
-

@@ -22,6 +22,9 @@ SEE LICENSE IN license
 @syncfusion/ej2-angular-inputs
 SEE LICENSE IN license
 
+@syncfusion/ej2-angular-popups
+SEE LICENSE IN license
+
 @syncfusion/ej2-angular-richtexteditor
 SEE LICENSE IN license
 
@@ -53,6 +56,9 @@ SEE LICENSE IN license
 SEE LICENSE IN license
 
 @syncfusion/ej2-grids
+SEE LICENSE IN license
+
+@syncfusion/ej2-icons
 SEE LICENSE IN license
 
 @syncfusion/ej2-inputs

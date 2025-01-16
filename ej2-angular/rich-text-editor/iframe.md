@@ -1,16 +1,22 @@
 ---
 layout: post
-title: Iframe in Angular Rich text editor component | Syncfusion
+title: IFrame Editing Mode | Syncfusion
 description: Learn here all about Iframe in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Iframe 
+control: IFrame Editing Mode 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Iframe in Angular Rich text editor component
+# IFrame Editing Mode in Angular Rich Text Editor Component
 
-When the [iframeSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#iframesettings) option is enabled, the Rich Text Editor creates the iframe element as the content area on control initialization. It is used to display and editing the content in content area. The editor will display only the body tag of a < iframe > document.
+The iframe editor in the Rich Text Editor component provides an isolated environment for content editing. It uses an iframe element to create a separate document, ensuring better compatibility and separation from the parent page's styles and scripts. In this mode, the editor displays only the body tag of the iframe, offering a clean and isolated workspace for content creation.
+
+## Configuring the Iframe Editor
+
+To enable the iframe editor, you can use the [iframeSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#iframesettings) property. When this option is enabled, the Rich Text Editor creates an iframe element as the content area during initialization.
+
+Here's an example of how to enable the iframe editor:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -24,9 +30,9 @@ When the [iframeSettings](https://ej2.syncfusion.com/angular/documentation/api/r
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs5" %}
 
-## IFrame attributes
+## Customizing IFrame Attributes
 
-The editor allows you to pass an additional attribute to body tag of a < iframe > element using attributes fields of the [`iframeSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#iframesettings) property. This property contains name/value pairs in string format. It is used to override the default appearance of the content area.
+You can add custom attributes to the body tag of the iframe using the attributes field of the [`iframeSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#iframesettings) property. This property accepts name/value pairs in string format, enabling you to override the default appearance of the content area.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -40,9 +46,9 @@ The editor allows you to pass an additional attribute to body tag of a < iframe 
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs6" %}
 
-## Adding external CSS/Script file
+## Integrating External CSS and Scripts
 
-The editor offers you to add external CSS file to style the < iframe > element. Easily change the appearance of editor’s content using an external CSS file using [`styles`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#iframesettings) field in the iframeSettings property.
+The Rich Text Editor allows you to apply an external CSS file to style the iframe element. This can be done using the [`styles`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#iframesettings) field in the iframeSettings property. By including an external CSS file, you can easily change the appearance of the editor’s content to meet your specific requirements.
 
 Likewise, add the external script file to the `< iframe >` element using the [`scripts`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#iframesettings) field of iframeSettings to provide the additional functionalities to the RichTextEditor.
 
@@ -59,3 +65,8 @@ Likewise, add the external script file to the `< iframe >` element using the [`s
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs7" %}
 
 > You can also explore our [iframe in Angular Rich Text Editor example](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/iframe) that shows how to render the iframe in Angular Rich Text Editor.
+
+## See also
+
+* [Implementing Inline Editing](./inline-editing.md)
+* [Using the Markdown Editor](./markdown.md)

@@ -19,7 +19,9 @@ The Rich Text Editor component used to create, edit and return the content in va
 
 Rich Text Editor is a WYSIWYG editing control for formatting the word content as HTML.
 
-The HTML editing mode is the default mode of Rich Text Editor. Which is used for format the content through the available toolbar items and returns the valid HTML markup. Set the [`editorMode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#editormode) property as `HTML`. To use HTML editing feature, inject `HtmlEditorService` in the provider section of `AppModule`.
+The HTML editing mode is the default mode of Rich Text Editor. Which is used for format the content through the available toolbar items and returns the valid HTML markup. Set the [`editorMode`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#editormode) property as `HTML`.
+
+>To use HTML editing feature, inject `HtmlEditorService` in the provider section.
 
 ```typescript
 

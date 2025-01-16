@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Toolbar in Angular Rich text editor component | Syncfusion
-description: Learn here all about Toolbar in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Toolbar in Angular Rich Text Editor component | Syncfusion
+description: Learn here all about Toolbar in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Toolbar 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Toolbar in Angular Rich text editor component
+# Toolbar in Angular Rich Text Editor component
+
+## How to Enable the Toolbar
 
 The Rich Text Editor toolbar contains a collection of tools such as bold, italic and text alignment buttons that are used to format the content. However, in most integrations, you can customize the toolbar configurations easily to suit your needs.
 
@@ -16,16 +18,17 @@ To get start quickly about customizing the toolbar in Angular Rich Text Editor c
 
 {% youtube "https://www.youtube.com/watch?v=zQtXvvPxAJQ" %}
 
-To use Toolbar feature, inject `ToolbarService` in the provider section of `AppModule`.
+>To use toolbar feature, configure `ToolbarService` in the provider section.
 
 The Rich Text Editor allows you to configure different types of toolbar using [`type`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#type) field in [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/) property. The types of toolbar are:
 
 1. Expand
 2. MultiRow
+3. Scrollable
 
-## Expand Toolbar
+## Expanding the Toolbar
 
-The default mode of [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#type) is Expand, it will hide the overflowing items in the next row. Click the expand arrow to view overflowing toolbar items.
+The default mode of the toolbar is `Expand`, configured through [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#type) with `type: 'Expand'`. This mode hides any overflowing toolbar items in the next row, which can viewed by clicking the expand arrow.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -39,9 +42,9 @@ The default mode of [`toolbar`](https://ej2.syncfusion.com/angular/documentation
   
 {% previewsample "page.domainurl/samples/rich-text-editor/toolbar/expand-cs1" %}
 
-## Multi-row Toolbar
+## Configuring a Multi-row Toolbar
 
-Set the type as `MultiRow` in [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#type) to hide the overflowing items in the next row. All toolbar items are visible.
+Setting the `type` as `MultiRow` in [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#type) will arrange the toolbar items across multiple rows, displaying all configured toolbar items.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -52,14 +55,30 @@ Set the type as `MultiRow` in [`toolbarSettings`](https://ej2.syncfusion.com/ang
 {% include code-snippet/rich-text-editor/toolbar/multirow-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/rich-text-editor/toolbar/multirow-cs3" %}
 
-## Floating Toolbar
+## Implementing a Scrollable Toolbar
 
-By default, the toolbar is floating at the top of the Rich Text Editor on scrolling. It can be customized by specifying the offset of the floating toolbar from document's top position using[`floatingToolbarOffset`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#floatingtoolbaroffset).
+Setting the `type` to `Scrollable` in [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#type) will display the toolbar items in a single line, enabling horizontal scrolling in the toolbar.
 
-Can Enable or disable the floating toolbar using [`enableFloating`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#enablefloating) property.
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/toolbar/scrollable-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/toolbar/scrollable-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/rich-text-editor/toolbar/scrollable-cs1" %}
+
+## Creating a Sticky Toolbar
+
+By default, the toolbar remains fixed at the top of the Rich Text Editor when scrolling. You can customize the position of this sticky toolbar by setting the [`floatingToolbarOffset`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#floatingtoolbaroffset) to adjust its offset from the top of the document.
+
+Additionally, you can enable or disable the floating toolbar using the [`enableFloating`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarSettings/#enablefloating) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -73,9 +92,15 @@ Can Enable or disable the floating toolbar using [`enableFloating`](https://ej2.
   
 {% previewsample "page.domainurl/samples/rich-text-editor/floating-toolbar-cs1" %}
 
-## Toolbar Items
+## Available Toolbar Items
 
-The following table shows that list of available tools in the Rich Text Editor's toolbar.
+The following table shows the list of available tools in the Rich Text Editor's toolbar.
+
+By default, the editor displays the following toolbar items:
+
+> `Bold`, `Italic`, `Underline`, `|`, `Formats`, `Alignments`, `Blockquote`, `OrderedList`, `UnorderedList`, `|`, `CreateLink`, `Image`, `|`, `SourceCode`, `Undo`, `Redo`
+
+The order of items in the toolbar can be customized to meet your application's requirements. If no specific order is set, the editor will render the above default toolbar items. Below is a list of all available toolbar items in the Rich Text Editor.
 
 | Name | Icons | Summary | Initialization |
 |----------------|---------|---------|------------------------------------------|
@@ -100,7 +125,6 @@ The following table shows that list of available tools in the Rich Text Editor's
 | Format | ![Format icon](./images/formats.png) | An Object with the options that will appear in the Paragraph Format dropdown from the toolbar. |toolbarSettings: { items: ['Formats']}|
 | Blockquote | ![Blockquote icon](./images/blockquote.png) | Blockquotes visually highlight important text within an editor, emphasizing key information or quotations. | toobarSettings: { items: ['Blockquote']}|
 | StrikeThrough | ![StrikeThrough icon](./images/strikethrough.png) | Apply double line strike through formatting for the selected text. |toolbarSettings: { items: ['StrikeThrough']}|
-| InlineCode | ![InlineCode icon](./images/insert-code.png) | Adds code-specific styling to selected text by highlighting it with a background color and using a monospace font for easy readability. |toolbarSettings: { items: ['InlineCode']}|
 | ClearFormat | ![ClearFormat icon](./images/clear-format.png) | The clear format tool is useful to remove all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from currently selected text. As a result, all the text formatting will be cleared and return to its default formatting styles.|toolbarSettings: { items: ['ClearFormat']}|
 | FullScreen | ![FullScreen icon](./images/maximize.png) | Stretches the editor to the maximum width and height of the browser window.|toolbarSettings: { items: ['FullScreen']}|
 | SourceCode | ![SourceCode icon](./images/code-view.png)  | Rich Text Editor includes the ability for users to directly edit HTML code via “Source View”. If you made any modification in Source view directly, synchronize with Design view.|toolbarSettings: { items: ['SourceCode']}|
@@ -143,15 +167,8 @@ The following table shows that list of available tools in the Rich Text Editor's
 | TableCellVerticalAlign | ![TableCellVerticalAlign icon](./images/vertical-align.png) | Allows the table cell content to be aligned vertically. | toolbarSettings: { items: ['TableCellVerticalAlign']} |
 | TableEditProperties | ![TableEditProperties icon](./images/table-edit.png) | Allows you to change the table width, padding, and cell spacing styles. | toolbarSettings: { items: ['TableEditProperties']} |
 
-By default, tool will be arranged in following order.
 
-```typescript
-items: ['Bold', 'Italic', 'Underline', '|', 'Formats', 'Alignments', 'Blockquote', 'OrderedList', 'UnorderedList','|', 'CreateLink', 'Image', '|', 'SourceCode', 'Undo', 'Redo']
-```
-
-The tools order can be customized as our application requirement. If you are not specifying any tools order, the editor will create the toolbar with default items.
-
-## Custom tool
+## Adding Custom Toolbar Items
 
 The Rich Text Editor allows you to configure your own commands to its toolbar using the  [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#toolbarSettings) property. The command can be plain text, icon, or HTML template. The order and the group can also be defined where the command should be included. Bind action to the command by getting its instance.
 
@@ -163,18 +180,10 @@ To get start quickly with Custom tool configuration in Angular Rich Text Editor 
 
 {% youtube "https://www.youtube.com/watch?v=zQtXvvPxAJQ" %}
 
-In the following sample the Dialog component will be created in Rich Text Editor's `created` event. And it's target is given to Rich Text Editor's content
+The Rich Text Editor provides options to customize tool functionalities. Use the [`undo`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarStatusEventArgs/) property to enable or disable the undo function for specific tools. Additionally, the [`click`](https://helpej2.syncfusion.com/angular/documentation/api/rich-text-editor/toolbarClickEventArgs/) property lets you configure and bind the onclick event of a tool to a specific method.
 
-```javascript
+This sample demonstrates how to add a custom "Ω" icon to the toolbar. Clicking on this icon opens a dialog where you can insert special characters into the editor. It also shows how to enable undo and redo functionalities.
 
-{
-    tooltipText: 'Insert Symbol',
-    undo: true,
-    click: this.onClick.bind(this),
-    template: '<button class="e-tbar-btn e-btn" tabindex="-1" id="custom_tbar" style="width:100%"><div class="e-tbar-btn-text" style="font-weight: 500;"> &#937;</div></button>'
-}
-
-```
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -185,36 +194,81 @@ In the following sample the Dialog component will be created in Rich Text Editor
 {% include code-snippet/rich-text-editor/getting-started-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs30" %}
 
-> The focus will be lost while rendering the required component for the custom toolbar, causing it to render outside the Rich Text Editor and triggering a blur event. During that time, proper functionality will not be achievable. Therefore, it is recommended to set the cssClass property or class as `e-rte-elements` in the dependency component.
+> When rendering any component for the custom toolbar, like a dropdown, the focus may be lost, causing it to render outside the Rich Text Editor and triggering a blur event. This can interfere with proper functionalities like cursor focus. To prevent this issue, it is recommended to assign the e-rte-elements class to the component rendered in the custom toolbar.
 
-## Quick inline toolbar
+## Enabling and Disabling Toolbar Items
 
-Quick commands are opened as context-menu on clicking the corresponding element. The commands must be passed as string collection to image, text, and link attributes of the [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#quickToolbarSettings) property.
+You can use the [`enableToolbarItem`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#enabletoolbaritem) and [`disableToolbarItem`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#disabletoolbaritem) methods to control the state of toolbar items. This methods takes a single item or an array of [items](#available-toolbar-items) as parameter.
 
-| Target Element | Default Quick Toolbar items |
-|----------------|---------|
-|image | 'Replace', 'Align', 'Caption', 'Remove', 'InsertLink', 'Display', 'AltText','Dimension'.|
-| link | 'Open', 'Edit', 'UnLink'.|
-| text | null <br> (Any toolbar [items](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/toolbar#toolbar-items) in the Rich Text Editor can be configured here).|
-| table| 'tableHeader', 'tableRows', 'tableColumns', 'backgroundColor', '-', 'tableRemove', 'alignments', 'tableCellVerticalAlign', 'styles'.|
+>You can add the command name `Custom` to disable the custom toolbar items on source code view and other quicktoolbar operations.
 
-Custom tool can be added to the corresponding quick toolbar, using [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#quickToolbarSettings) property.
 
-The following sample demonstrates the option to insert the image to the Rich Text Editor content as well as option to rotate the image through the quick toolbar. The image rotation functionalities have been achieved through the `toolbarClick` event.
+## Quick Toolbars 
+
+The Rich Text Editor has quick toolbars that act as context-menus, appearing when you click on elements like images, links, audio, video, and tables. By default, specific quick toolbar items are displayed when clicking on the corresponding element. You can customize these items using the [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#quickToolbarSettings) property.
+
+### Quick Format Toolbar
+
+The quick format toolbar offers easy access to commonly used text formatting tools, enhancing the editing process by allowing users to quickly apply styles and adjustments to their text with minimal effort.
+
+Customize the quick toolbar items using the `text` property in the [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettingsModel/#text).
+
+Any toolbar items available in the Rich Text Editor can be configured for the text quick toolbar. The sample below showcases the text quick format toolbar.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/rich-text-editor/quick-format-toolbar-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/rich-text-editor/quick-format-toolbar-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/rich-text-editor/quick-format-toolbar-cs1" %}
+
+### Image Quick Toolbar 
+
+Customize the quick toolbar items for images using the `image` property in the [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettingsModel/#image).
+
+### Table Quick Toolbar 
+
+The table quick toolbar opens when you click anywhere within a table. Customize its items using the `table` property in the [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettingsModel/#table).
+
+### Link Quick Toolbar 
+
+The link quick toolbar appears when you click on a link in the editor. Customize its items using the `link` property in the [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettingsModel/#link).
+
+### Video Quick Toolbar
+
+The video quick toolbar appears when you click on a video element. Customize its items using the `video` property in the [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettingsModel/#video).
+
+These quick toolbars provide convenient access to context-specific editing tools, enhancing the user experience when working with different types of content in the Rich Text Editor.
+
+### Audio Quick Toolbar
+
+Customize the quick toolbar items for audio elements using the `audio` property in the [`quickToolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettingsModel/#audio).
+
+The following sample demonstrates the option to insert the video, image, audio, link and table  to the Rich Text Editor content as well as option to get started with the quick toolbar.It also illustrates how to utilize the quick toolbar for efficient content editing.The Quick Toolbar provides easy access to essential editing tools for a smoother user experience.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/rich-text-editor/quick-toolbar-cs1/src/app.component.ts %}
 {% endhighlight %}
-
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/rich-text-editor/quick-toolbar-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/rich-text-editor/quick-toolbar-cs1" %}
 
-> To use quick toolbar feature, inject `QuickToolbarService, ImageService, LinkService` in the provider section of `AppModule`.
+> To use quick toolbar feature, configure `QuickToolbarService` in the `@NgModule.providers section`.
+
+## See Also
+
+* [Customizing Rich Text Editor Toolbar Styles](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/style#customizing-the-rich-text-editors-toolbar)
+* [Implementing Inline Editing](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/inline-mode)
+* [Customizing Accessibility Shortcut Keys](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/accessibility#keyboard-interaction)

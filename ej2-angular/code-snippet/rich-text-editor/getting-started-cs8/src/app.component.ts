@@ -45,6 +45,7 @@ export class AppComponent  {
     public tools: object = {
         items: ['Image']
     };
+    
 }
 
 
