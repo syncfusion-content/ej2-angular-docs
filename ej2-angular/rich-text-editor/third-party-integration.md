@@ -52,7 +52,7 @@ Add a custom icon for HTML source editor in the toolbar of Rich Text Editor usin
   
 {% previewsample "page.domainurl/samples/rich-text-editor/getting-started-cs29" %}
 
-## Integrate `embedly`
+## Embedly Integration
 
 This can be achieved by binding the [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#actioncomplete) event to the toolbar items in the [`toolbarSettings`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#toolbarsettings) property. In the event handler, create an element and add the appropriate class. The below script is have to add in the sample to embed the content,
 

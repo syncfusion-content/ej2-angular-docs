@@ -1,32 +1,15 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
-import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-
-
-
 import { Component } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService, CountService } from '@syncfusion/ej2-angular-richtexteditor';
-
+import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
-imports: [
-        
-        RichTextEditorAllModule,
-        FormsModule,
-		ButtonModule,
-        ReactiveFormsModule
+    imports: [
+        RichTextEditorModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-root',
-    template: `<ejs-richtexteditor id='defaultRTE' [toolbarSettings]='tools'>
+    template: `<ejs-richtexteditor id='editor' [toolbarSettings]='tools'>
                </ejs-richtexteditor>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, CountService]
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
 })
-export class AppComponent  {
-    public tools = {items: ['NumberFormatList', 'BulletFormatList']};
+export class AppComponent {
+    public tools = { items: ['NumberFormatList'] };
 }
-
-

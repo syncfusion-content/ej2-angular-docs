@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Radial menu in Angular Speed dial component
 
-The Angular Speed Dial action items can be displayed in a circular patter like a radial menu by setting [`mode`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/#mode) property. You can customize the `direction`, `startAngle`, `endAngle` and `offset` by setting [`radialSettings`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial#radialsettings) property.
+The Angular Speed Dial action items can be displayed in a circular patter like a radial menu by setting [`mode`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/#mode) property. You can customize the `direction`, `startAngle`, `endAngle` and `offset` by setting [`radialSettings`](https://ej2.syncfusion.com/angular/documentation/api/speed-dial/#radialsettings) property.
 
 ## Radial menu direction
 

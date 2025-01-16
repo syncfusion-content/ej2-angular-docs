@@ -1,49 +1,24 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
-
-
-
-  import { Component } from '@angular/core';
-import { ToolbarService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
+import { Component } from '@angular/core';
+import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
-imports: [
-        
-        RichTextEditorAllModule
+    imports: [
+        RichTextEditorModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-root',
-    template: `<ejs-richtexteditor id='defaultRTE' [toolbarSettings]='tools'>
-    <ng-template #valueTemplate>
-      <p>The Rich Text Editor triggers events based on its actions. </p>
-      <p> The events can be used as an extension point to perform custom operations.</p>
-      <ul>
-          <li>created - Triggers when the component is rendered.</li>
-          <li>change - Triggers only when RTE is blurred and changes are done to the content.</li>
-          <li>focus - Triggers when RTE is focused in.</li>
-          <li>blur - Triggers when RTE is focused out.</li>
-          <li>actionBegin - Triggers before command execution using toolbar items or executeCommand method.</li>
-          <li>actionComplete - Triggers after command execution using toolbar items or executeCommand method.</li>
-          <li>destroyed – Triggers when the component is destroyed.</li>
-      </ul>
-    </ng-template>
-    </ejs-richtexteditor>`,
-    providers: [ToolbarService, HtmlEditorService]
+    template: `<ejs-richtexteditor id='editor' [toolbarSettings]='tools' [(value)]='value'></ejs-richtexteditor>`,
+    providers: [ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService]
 })
-export class AppComponent  {
-    public tools: object = {
-        type: 'Expand',
+export class AppComponent {
+    public tools: ToolbarSettingsModel = {
+        type: 'Expand' as ToolbarSettingsModel['type'],
         items: ['Bold', 'Italic', 'Underline', 'StrikeThrough',
-    'FontName', 'FontSize', 'FontColor', 'BackgroundColor',
-    'LowerCase', 'UpperCase', '|',
-    'Formats', 'Alignments', 'OrderedList', 'UnorderedList',
-    'Outdent', 'Indent', '|',
-    'CreateLink', 'Image', '|', 'ClearFormat', 'Print',
-    'SourceCode', 'FullScreen', '|', 'Undo', 'Redo']
+            'FontName', 'FontSize', 'FontColor', 'BackgroundColor',
+            'LowerCase', 'UpperCase', '|',
+            'Formats', 'Alignments', 'Blockquote', 'OrderedList', 'UnorderedList',
+            'Outdent', 'Indent', '|',
+            'CreateLink', 'Image', '|', 'ClearFormat', 'Print',
+            'SourceCode', 'FullScreen', '|', 'Undo', 'Redo']
     };
+    public value: string = "<p>The Rich Text Editor triggers events based on its actions. </p><p> The events can be used as an extension point to perform custom operations.</p><ul><li>created - Triggers when the component is rendered.</li><li>change - Triggers only when Rich Text Editor is blurred and changes are done to the content.</li><li>focus - Triggers when Rich Text Editor is focused in.</li><li>blur - Triggers when Rich Text Editor is focused out.</li><li>actionBegin - Triggers before command execution using toolbar items or executeCommand method.</li><li>actionComplete - Triggers after command execution using toolbar items or executeCommand method.</li><li>destroyed – Triggers when the component is destroyed.</li></ul>";
 }
-
-
-

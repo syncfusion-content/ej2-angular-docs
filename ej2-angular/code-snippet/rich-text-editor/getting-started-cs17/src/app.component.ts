@@ -1,36 +1,19 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
-
-
-
-
-import { enableRipple } from '@syncfusion/ej2-base';
-enableRipple(true);
-/**
- * Rich Text Editor Link sample
- */
 import { Component } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService, QuickToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
-imports: [
-        
-        RichTextEditorAllModule,
-        DialogModule
-    ],
-
-
-standalone: true,
-    selector: 'app-root',
-    template: `<ejs-richtexteditor id='defaultRTE' [toolbarSettings] ='tools'></ejs-richtexteditor>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
+  imports: [
+    RichTextEditorModule
+  ],
+  standalone: true,
+  selector: 'app-root',
+  template: `<ejs-richtexteditor id='editor' [toolbarSettings]='tools' [quickToolbarSettings]='quickToolbarSettings'></ejs-richtexteditor>`,
+  providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
 })
-export class AppComponent  {
+export class AppComponent {
   public tools = {
-          items: ['CreateLink', 'RemoveLink']
+    items: ['Image', 'CreateLink']
+  };
+  quickToolbarSettings: QuickToolbarSettingsModel = {
+    link: ['Open', 'Edit', 'UnLink', 'FontColor']
   };
 }
-
-
-

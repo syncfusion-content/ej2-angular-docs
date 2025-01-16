@@ -1,69 +1,41 @@
-import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService, ImportExportService, ToolbarSettingsModel, ImportWordModel } from '@syncfusion/ej2-angular-richtexteditor'
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { AsyncSettingsModel, SuccessEventArgs, UploaderComponent, UploaderModule } from '@syncfusion/ej2-angular-inputs';
+import { RichTextEditorModule, RichTextEditorComponent, ToolbarSettingsModel, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
     imports: [
         RichTextEditorModule,
+        UploaderModule
     ],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-richtexteditor #editor id='editor' [importWord]="importWord" [(value)]='value' [toolbarSettings]='tools'></ejs-richtexteditor>`,
-    providers: [ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService, ImportExportService]
+    template: `<ejs-richtexteditor #editor id='editor' [toolbarSettings]='tools' [(value)]='value'></ejs-richtexteditor>
+  <ejs-uploader #uploadObj id='editorCustomWordUpload' allowedExtensions='.docx,.doc,.rtf' [asyncSettings]='asyncSettings' (success)='onUploadSuccess($event)' style="display: none;" ></ejs-uploader>`,
+    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
 })
 export class AppComponent {
-    private hostUrl: string = 'https://ej2services.syncfusion.com/angular/release/';
-
-    public importWord: ImportWordModel = {
-        serviceUrl: this.hostUrl + 'api/RichTextEditor/ImportFromWord',
+    @ViewChild('editor')
+    public editorObj?: RichTextEditorComponent;
+    @ViewChild('uploadObj')
+    public uploadObj?: UploaderComponent;
+    public value: string = "<h2 style=\"text-align: center;\">Invitation to Microsoft Webinar Meet-Up</h2><p>Dear Guest,</p><p>We're thrilled to extend a special invitation to you for an exclusive Microsoft webinar meet-up, where we'll explore the latest innovations and insights driving the future of technology. As a valued member of our community, we believe this event will offer invaluable knowledge and networking opportunities.</p><h2>Event Details:</h2><table class=\"e-rte-table\" style=\"width: 100%; height: 125px;\"><tbody><tr style=\"height: 20%;\"><th class=\"\">Time:</th><td>10:00 AM - 12:00 PM</td></tr><tr style=\"height: 20%;\"><th>Duration:</th><td>2 hours</td></tr><tr style=\"height: 20%;\"><th>Platform:</th><td>Microsoft Teams</td></tr></tbody></table><p><br></p><h2>Agenda:</h2><ul><li>Introduction to Cutting-Edge Microsoft Technologies</li><li>Deep Dive into AI in Business: Leveraging Microsoft Azure Solutions</li><li>Live Q&amp;A Session with Industry Experts</li><li>Networking Opportunities with Peers and Professionals</li></ul><h2>Why Attend?</h2><ul><li>Gain insights into the latest trends and advancements in technology.</li><li>Interact with industry experts and expand your professional network.</li><li>Get your questions answered in real-time during the live Q&amp;A session.</li><li>Access exclusive resources and offers available only to webinar attendees.</li></ul><p>Feel free to invite your colleagues and peers who might benefit from this enriching experience. Simply forward this email to them or share the event details.</p><p>We're looking forward to your participation and to exploring the exciting world of Microsoft technology together. Should you have any questions or require further information, please don't hesitate to contact us at <a href=\"mailto:webinar@company.com\">webinar&#64;company.com</a>.</p><p><br></p><p>Warm regards,</p><p>John Doe<br>Event Coordinator<br>ABC Company</p>";
+    private hostUrl: string = 'https://services.syncfusion.com/angular/production/';
+    public asyncSettings: AsyncSettingsModel = {
+        saveUrl: this.hostUrl + 'api/RichTextEditor/ImportFromWord',
     };
-
     public tools: ToolbarSettingsModel = {
         items: [
-            'Undo', 'Redo', '|', 'ImportWord', '|',
-            'Bold', 'Italic', 'Underline', 'StrikeThrough', '|',
-            'FontName', 'FontSize', 'FontColor', 'BackgroundColor', '|',
-            'Formats', 'Alignments', 'Blockquote', '|', 'NumberFormatList', 'BulletFormatList',
-            '|', 'CreateLink', 'Image', 'CreateTable', '|', 'ClearFormat', 'SourceCode']
+            {
+                tooltipText: "Import from Word",
+                template:
+                    `<button class="e-tbar-btn e-control e-btn e-lib e-icon-btn" tabindex="-1" id="custom_tbarbtn_1" style="width:100%">
+                  <span class="e-icons e-rte-import-doc e-btn-icon"></span></button>`,
+                click: this.importContentFromWord.bind(this)
+            }]
     };
-
-    public value: string = `
-<h2 style="text-align: center;">Invitation to Microsoft Webinar Meet-Up</h2>
-<p>Dear Guest,</p>
-<p>We're thrilled to extend a special invitation to you for an exclusive Microsoft webinar meet-up, where we'll explore the latest innovations and insights driving the future of technology. As a valued member of our community, we believe this event will offer invaluable knowledge and networking opportunities.</p>
-<h2>Event Details:</h2>
-<table class="e-rte-table" style="width: 100%; height: 125px;">
-    <tbody>
-        <tr style="height: 20%;">
-            <th>Time:</th>
-            <td>10:00 AM - 12:00 PM</td>
-        </tr>
-        <tr style="height: 20%;">
-            <th>Duration:</th>
-            <td>2 hours</td>
-        </tr>
-        <tr style="height: 20%;">
-            <th>Platform:</th>
-            <td>Microsoft Teams</td>
-        </tr>
-    </tbody>
-</table>
-<p><br></p>
-<h2>Agenda:</h2>
-<ul>
-    <li>Introduction to Cutting-Edge Microsoft Technologies</li>
-    <li>Deep Dive into AI in Business: Leveraging Microsoft Azure Solutions</li>
-    <li>Live Q&amp;A Session with Industry Experts</li>
-    <li>Networking Opportunities with Peers and Professionals</li>
-</ul>
-<h2>Why Attend?</h2>
-<ul>
-    <li>Gain insights into the latest trends and advancements in technology.</li>
-    <li>Interact with industry experts and expand your professional network.</li>
-    <li>Get your questions answered in real-time during the live Q&amp;A session.</li>
-    <li>Access exclusive resources and offers available only to webinar attendees.</li>
-</ul>
-<p>Feel free to invite your colleagues and peers who might benefit from this enriching experience. Simply forward this email to them or share the event details.</p>
-<p>We're looking forward to your participation and to exploring the exciting world of Microsoft technology together. Should you have any questions or require further information, please don't hesitate to contact us at <a href="mailto:webinar@company.com">webinar&#64;company.com</a>.</p>
-<p><br></p>
-<p>Warm regards,</p>
-<p>John Doe<br>Event Coordinator<br>ABC Company</p>`;
+    public onUploadSuccess(args: SuccessEventArgs): void {
+        this.editorObj!.executeCommand('insertHTML', ((args.e as ProgressEvent).currentTarget as XMLHttpRequest).response, { undo: true });
+    }
+    public importContentFromWord(): void {
+        this.uploadObj!.element.click();
+    }
 }

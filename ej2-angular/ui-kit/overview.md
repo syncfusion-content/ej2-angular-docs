@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Angular UI Kit Component | Syncfusion
-description: Learn here all about the Overview in the Syncfusion Angular UI Kit component of Syncfusion Essential JS 2 and more here.
+title: Overview of Essential UI Kit for Angular | Syncfusion
+description: Learn all about the overview of the Essential UI Kit for Angular in Syncfusion Essential JS 2 and more here.
 platform: ej2-angular
 control: Overview 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Build your first Angular app with our blocks | Syncfusion
-description: Learn all about building your first Syncfusion Angular app with our blocks in the Syncfusion Angular UI Kit component of Syncfusion Essential JS 2 and more.
+description: Learn all about building your first Angular app using our blocks from the Essential Angular UI Kit in Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Build your first Angular app with our blocks 
 documentation: ug
@@ -19,7 +19,7 @@ To create a new Angular app, please refer to the official Angular setup guide [h
 
 After creating the new Angular app named **my-angular-app**, open it in Visual Studio Code (which we'll be using throughout this walkthrough). Once the app is open, before proceeding further, navigate to the **src -> app -> app.component.html** file and remove the template HTML code. Remember, only remove the template HTML code and not the `<router-outlet />` code. 
 
-The next step is to choose a theme, either **Tailwind** or **Bootstrap 5.3**, in both light and dark modes, and configure the app accordingly.
+The next step is to choose a theme, either **Tailwind** or **Bootstrap 5.3**, in either light or dark mode, and configure the app accordingly.
 
 ### Tailwind configuration
 
@@ -49,7 +49,7 @@ If you choose **Tailwind** theme, follow these steps to configure it.
         theme: {
           extend: {
             colors: {
-              // NOTE: In this demo, we have used different shades of "Indigo" as primary colors.
+              // NOTE: In this demo, different shades of "Indigo" are used as primary colors.
               primary: {
                 "50": "#eef2ff",
                 "100": "#e0e7ff",
@@ -158,7 +158,7 @@ Now that **my-angular-app** is set up with the desired theme configuration, the 
 
     ![Navigate to the sign-in block demo](images/navigate-to-the-sign-in-block-demo.png)
 
-2. On the demo page, select the first demo, which showcases a simple sign-in block. Choose the desired theme, then switch from the "Preview" tab to the "Code" tab.
+2. On the demo page, go to the first demo, which showcases a simple sign-in block. Choose the desired theme, then switch from the "Preview" tab to the "Code" tab.
 
     ![Choose Tailwind or Bootstrap theme](images/choose-tailwind-or-bootstrap-theme.png)
 
@@ -168,9 +168,9 @@ Now that **my-angular-app** is set up with the desired theme configuration, the 
 
 4. If CSS is provided, copy the CSS code and paste it into the **src -> app -> app.component.css** file; otherwise, ignore it.
 
-### Steps to explore and copy block code snippets from the GitHub app
+### Steps to explore and copy block code snippets from the GitHub source
 
-1. On [downloading](https://github.com/syncfusion/essential-ui-kit-for-angular) and opening the GitHub app in Visual Studio Code, navigate to the following folder: **src -> blocks-section**.
+1. On [downloading](https://github.com/syncfusion/essential-ui-kit-for-angular) and opening the GitHub source in Visual Studio Code, navigate to the following folder: **src -> blocks-section**.
 
     ![Downloaded GitHub app in Visual Studio Code](images/downloaded-github-app-in-visual-studio-code.png)
 
@@ -180,13 +180,14 @@ Now that **my-angular-app** is set up with the desired theme configuration, the 
 
     ![View the sign-in block demo files](images/view-the-sign-in-block-demo-files.png)
 
-> In the HTML, the **Tailwind** design code is placed within the "if" block, while the **Bootstrap 5.3** design code is placed in the "else" block.
+> **Note:**
+> 
+> 1. In the HTML, the **Tailwind** design code is placed within the "if" block, while the **Bootstrap 5.3** design code is placed in the "else" block.
+> 2. Ignore the code within the "SB Code - Start" and "SB Code - End" comments, as it is intended solely for sample browser purposes.
 
-> Ignore the code within the "SB Code - Start" and "SB Code - End" comments, as it is intended solely for sample browser purposes.
+## Steps to install and configure Syncfusion Angular components
 
-## Steps to install and configure Syncfusion components
-
-While copying and pasting the HTML code, you'll notice that Syncfusion Angular components are used. To incorporate them into **my-angular-app**, install the necessary packages and add the corresponding modules to the **src/app/app.component.ts** file for the app to run.
+While copying and pasting the HTML code, you'll notice that Syncfusion Angular components are used. To incorporate them into **my-angular-app**, install the necessary packages and add the corresponding modules to the **src -> app -> app.component.ts** file for the app to run.
 
 In the simple sign-in block, components such as textbox, checkbox and button are used. After copying and pasting the code into the HTML file, open the **package.json** file and add the required packages: `@syncfusion/ej2-angular-buttons` and `@syncfusion/ej2-angular-inputs`. For more details about other Syncfusion Angular component packages, refer to this [link](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular).
 
@@ -202,13 +203,13 @@ Finally, go to the [online demo](https://ej2.syncfusion.com/angular/essential-ui
 
 > Ignore the code within the "SB Code - Start" and "SB Code - End" comments, as it is intended solely for sample browser purposes.
 
-## Steps to import and add assets to the app
+## Steps to download and add assets to the app
 
-If you want to view and experience the images used in our simple sign-in design, you can download the **assets** folder from the following [GitHub link](https://github.com/syncfusion/essential-ui-kit-for-angular/tree/master/ui-blocks/src) and place it inside the **src** folder of **my-angular-app**, modifying the image URL if required.
+If you want to view and experience the images used in our design, you can download the **assets** folder from the following [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-angular/tree/master/ui-blocks/src), place it inside the **src** folder of **my-angular-app**, and modify the image URLs in the HTML if necessary.
 
 ## Steps to run the app
 
-Now that everything is set up in **my-angular-app** — the HTML, TS, CSS (if applicable), and assets — we are ready to build and launch the app. Type the `ng serve` command in the terminal, and you will see a localhost URL provided by the Angular development server.
+Now that everything is set up in **my-angular-app** — the HTML, TS, CSS (if applicable), and assets (optional) — you are ready to build and launch the app. Type the `ng serve` command in the terminal, and you will see a localhost URL provided by the Angular development server.
 
 ![Build and launch the app](images/build-and-launch-the-app.png)
 

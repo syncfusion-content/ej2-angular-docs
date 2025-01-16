@@ -1,28 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
-import { DialogModule } from '@syncfusion/ej2-angular-popups'
-
-
-
-
 import { Component } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 @Component({
-imports: [
-        
-        RichTextEditorAllModule,
-        DialogModule
+    imports: [
+        RichTextEditorModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'app-root',
-    template: `<ejs-richtexteditor id='defaultRTE' placeholder='Type Something'></ejs-richtexteditor>`,
-    providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
+    template: `<ejs-richtexteditor id='editor' placeholder='Type Something'></ejs-richtexteditor>`,
+    providers: [ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService]
 })
-export class AppComponent  {
+export class AppComponent {
 }
-
-
-

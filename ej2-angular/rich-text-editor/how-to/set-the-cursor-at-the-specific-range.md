@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Set the cursor at the specific range in Angular Rich text editor component | Syncfusion
-description: Learn here all about Set the cursor at the specific range in Syncfusion Angular Rich text editor component of Syncfusion Essential JS 2 and more.
+title: Setting Cursor at Specific Range in Editor | Syncfusion
+description: Learn here all about Set the cursor at the specific range in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Set the cursor at the specific range 
+control: Setting Cursor at Specific Range in Editor
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Set the cursor at the specific range in Angular Rich text editor component
+# Setting Cursor at Specific Range in Editor in Angular Rich Text Editor Component
 
-This can be achieved by using `setRange` method in the RTE using `NodeSelection` instance. In this below sample, you have passed the text node (specific location in RTE content) in `setStart` method and passed the range in `setRange` method of RTE.
+This can be achieved by using `setRange` method in the Rich Text Editor using `NodeSelection` instance. In this below sample, you have passed the text node (specific location in Rich Text Editor content) in `setStart` method and passed the range in `setRange` method of Rich Text Editor.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
