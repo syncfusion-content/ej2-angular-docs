@@ -58,8 +58,8 @@ The Chips component followed the [keyboard interaction](https://www.w3.org/WAI/A
 
 | Keyboard shortcuts | Actions |
 |------------|-------------------|
-| <kbd>Enter / Space</kbd> | Selects the targeted chip from the ChipList/ChipCollection. |
-| <kbd>Delete / Backspace </kbd> | Deletes the targeted chip from the ChipList/ChipCollection. |
+| <kbd>Enter / Space</kbd> | Selects the targeted Chips from the ChipList/ChipCollection. |
+| <kbd>Delete / Backspace </kbd> | Deletes the targeted Chips from the ChipList/ChipCollection. |
 
 ## Ensuring accessibility
 

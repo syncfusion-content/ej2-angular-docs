@@ -77,7 +77,7 @@ Add [`@syncfusion/ej2-angular-dropdowns@ngcc`](https://www.npmjs.com/package/@sy
 npm install @syncfusion/ej2-angular-dropdowns@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To mention the ngcc package in the **package.json** file, add the suffix `-ngcc` with the package version as below.
 
 ```bash
 @syncfusion/ej2-angular-dropdowns:"20.2.38-ngcc"
@@ -87,7 +87,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Registering Dropdown Tree Module
 
-Import Dropdown Tree module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-dropdowns`.
+Import Dropdown Tree module into Angular application **app.module.ts** from the package `@syncfusion/ej2-angular-dropdowns`.
 
 ```javascript
 import { NgModule }      from '@angular/core';
@@ -107,7 +107,7 @@ export class AppModule { }
 
 ## Adding CSS Reference
 
-Add Dropdown Tree component's styles as given below in `styles.css`.
+Add Dropdown Tree component's styles as given below in **styles.css**.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -136,7 +136,7 @@ Alternatively, based on the location of your CSS file, you can import the styles
 
 ## Add Dropdown Tree component
 
-Modify the template in [src/app/app.component.ts] file to render the Dropdown Tree component. Add the Angular Dropdown Tree by using `ejs-dropdowntree` selector in `template` section of the app.component.ts file.
+Modify the template in **src/app/app.component.ts** file to render the Dropdown Tree component. Add the Angular Dropdown Tree by using `ejs-dropdowntree` selector in `template` section of the **app.component.ts** file.
 
 ```typescript
 import { Component } from '@angular/core';

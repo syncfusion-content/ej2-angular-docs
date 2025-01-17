@@ -1,21 +1,13 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ChipListModule } from '@syncfusion/ej2-angular-buttons'
-import { enableRipple } from '@syncfusion/ej2-base'
-
-
-
-
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-imports: [
-        
-        ChipListModule
-    ],
-
-
-standalone: true,
+  imports: [
+    ChipListModule
+  ],
+  standalone: true,
   selector: 'my-app',
   // specifies the template string for the Chip component
   template: `
@@ -31,6 +23,4 @@ standalone: true,
 export class AppComponent {
 
 }
-
-
 
