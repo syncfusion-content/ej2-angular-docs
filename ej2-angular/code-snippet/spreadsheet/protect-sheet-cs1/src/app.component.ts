@@ -12,15 +12,15 @@ import { dataSource1, dataSource2 } from './datasource';
 enableRipple(true);
 
 @Component({
-imports: [
-        
-        SpreadsheetAllModule
-    ],
+  imports: [
+
+    SpreadsheetAllModule
+  ],
 
 
-standalone: true,
-    selector: 'app-container',
-    template: `<ejs-spreadsheet #spreadsheet (created)="created()">
+  standalone: true,
+  selector: 'app-container',
+  template: `<ejs-spreadsheet #spreadsheet (created)="created()">
                 <e-sheets>
                   <e-sheet name="Budget" [isProtected]="true" [protectSettings]="{ selectCells: true }">
                     <e-ranges>
@@ -48,19 +48,19 @@ standalone: true,
               </ejs-spreadsheet>`
 })
 export class AppComponent {
-    @ViewChild('spreadsheet')
-    spreadsheetObj: SpreadsheetComponent | undefined;
+  @ViewChild('spreadsheet')
+  spreadsheetObj: SpreadsheetComponent | undefined;
 
-    budgetData: object[] = dataSource1;
+  budgetData: object[] = dataSource1;
 
-    salaryData: object[] = dataSource2;
+  salaryData: object[] = dataSource2;
 
-    created() {
-        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:D1');
-        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold'}, 'A11:D11');
-        this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'Salary!A1:D1');
-        this.spreadsheetObj!.protectSheet(1, { selectCells: true}, "syncfusion"); // protect sheet with password
-    }
+  created() {
+    this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:D1');
+    this.spreadsheetObj!.cellFormat({ fontWeight: 'bold' }, 'A11:D11');
+    this.spreadsheetObj!.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'Salary!A1:D1');
+    this.spreadsheetObj!.protectSheet(1, { selectCells: true }, "syncfusion"); // protect sheet with password
+  }
 }
 
 

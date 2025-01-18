@@ -163,7 +163,7 @@ The following code example demonstrates how to add custom data validation with a
 {% include code-snippet/spreadsheet/data-validation-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/spreadsheet/data-validation-cs2" %}
 
 ### Limitations of Data validation

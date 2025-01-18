@@ -2,9 +2,6 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet'
 
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { SpreadsheetComponent } from '@syncfusion/ej2-angular-spreadsheet';
 
