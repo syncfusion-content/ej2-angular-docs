@@ -16,28 +16,27 @@ To get start quickly with Angular Sidebar using CLI and Schematics, you can chec
 
 {% youtube "https://www.youtube.com/watch?v=CL7Cc2efZ9Q" %}
 
-## Prerequisites
-
-To get started with **Sidebar** component, ensure the compatible versions of Angular and Typescript.
-
-* Angular : `4+`
-* Typescript : `2.6+`
-
-## Setting up angular project
+## Setting up Angular project
 
 Angular provides the easiest way to set angular CLI projects using Angular CLI tool.
 
 Install the CLI application globally to your machine by using following command.
 
-```sh
+```bash
 npm install -g @angular/cli
-Create a new application
+```
+
+## Create an Angular Application
+
+Start a new Angular application using below Angular CLI command.
+
+```bash
 ng new syncfusion-angular-app
 ```
 
 Navigate to the created project folder by using following command.
 
-```sh
+```bash
 cd syncfusion-angular-app
 ```
 
@@ -60,7 +59,7 @@ Below dependency packages are required in order to use the `Sidebar` component i
             |-- @syncfusion/ej2-buttons
 ```
 
-## Installing Syncfusion  Sidebar Package
+## Installing Syncfusion Sidebar Package
 
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
@@ -88,7 +87,7 @@ Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@
 npm install @syncfusion/ej2-angular-navigations@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To mention the ngcc package in the **package.json** file, add the suffix `-ngcc` with the package version as below.
 
 ```bash
 @syncfusion/ej2-angular-navigations:"20.2.38-ngcc"
@@ -98,7 +97,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding Styles
 
-To render the Sidebar component, you need to import the Sidebar and its dependent components' styles as given below in `[src/styles.css]`.
+To render the Sidebar component, you need to import the Sidebar and its dependent components' styles as given below in **src/styles.css**.
 
 ```css
 @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
@@ -114,11 +113,11 @@ Alternatively, based on the location of your CSS file, you can import the styles
 
 >Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-## Adding Syncfusion component
+## Adding Sidebar component
 
-Add the Sidebar component by using `<ejs-sidebar>` selector in `template` section of the `app.component.ts` file.
+Add the Sidebar component by using `<ejs-sidebar>` selector in `template` section of the **src/app/app.component.ts** file.
 
-Refer to the Sidebar component snippet in `app.component.ts` as follows:
+Refer to the Sidebar component snippet in **app.component.ts** as follows:
 
 ```ts
 import { SidebarModule } from '@syncfusion/ej2-angular-navigations'
@@ -146,8 +145,8 @@ export class AppComponent { }
 
 Use the npm run start command to run the application in the browser.
 
-```sh
-npm start
+```javascript
+ng serve --open
 ```
 
 The following samples shows the Sidebar component in browser.
@@ -217,7 +216,7 @@ Positioning the Sidebar to the right or left of the main content can be achieved
 
 ## Animate
 
-Animation transitions can be set while expanding or collapsing the Sidebar using the [`animate`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#animate) property. By default, [`animate`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#animate) property is set to true. [`enableRTL`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablertl) will display the sidebar in the right-to-left direction.
+Animation transitions can be set while expanding or collapsing the Sidebar using the [`animate`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#animate) property. By default, [`animate`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#animate) property is set to true. [`enableRTL`](https://ej2.syncfusion.com/angular/documentation/api/sidebar/#enablertl) will display the Sidebar in the right-to-left direction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -282,5 +281,5 @@ Expand or collapse the Sidebar while swiping in touch devices using [`enableGest
 * [Sidebar with navigation menu](https://ej2.syncfusion.com/angular/demos/#/material/sidebar/sidebar-menu)
 * [Sidebar responsive panel](https://ej2.syncfusion.com/angular/demos/#/material/sidebar/responsive-panel)
 * [Sidebar with listView](./how-to/initialize-the-sidebar-listview)
-* [Initialize sidebar using systemjs](./how-to/initialize-sidebar-using-systemjs)
+* [Initialize Sidebar using systemjs](./how-to/initialize-sidebar-using-systemjs)
 * [Usecase sample](https://ej2.syncfusion.com/showcase/angular/webmail/)

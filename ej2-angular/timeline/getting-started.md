@@ -72,7 +72,7 @@ Add [@syncfusion/ej2-angular-layouts@ngcc](https://www.npmjs.com/package/@syncfu
 npm install @syncfusion/ej2-angular-layouts@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To mention the ngcc package in the **package.json** file, add the suffix `-ngcc` with the package version as below.
 
 ```bash
 @syncfusion/ej2-angular-layouts:"21.1.35-ngcc"
@@ -82,7 +82,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding Timeline module
 
-Import Timeline module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-layouts`.
+Import Timeline module into Angular application **app.module.ts** from the package `@syncfusion/ej2-angular-layouts`.
 
 ```javascript
 import { NgModule } from "@angular/core";
@@ -103,7 +103,7 @@ export class AppModule {}
 
 ## Adding CSS reference
 
-Add Timeline component's styles as given below in `[src/styles.css]`.
+Add Timeline component's styles as given below in **src/styles.css**.
 
 ```css
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
@@ -119,7 +119,7 @@ Alternatively, based on the location of your CSS file, you can import the styles
 
 ## Adding Syncfusion Timeline component
 
-Modify the template in `app.component.ts` file with `ejs-timeline` to render the Timeline component.
+Modify the template in **app.component.ts** file with `ejs-timeline` to render the Timeline component.
 
 ```javascript
 import { TimelineModule, TimelineAllModule } from '@syncfusion/ej2-angular-layouts'
