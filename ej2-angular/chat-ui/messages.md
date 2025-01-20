@@ -23,6 +23,9 @@ You can use the [text](../api/chat-ui/messageModel/#text) property to add messag
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/messages/text/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/text/src/app.component.html %}
+{% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
 {% include code-snippet/chat-ui/messages/text/index.css %}
 {% endhighlight %}
@@ -63,6 +66,9 @@ You can use the [avatarUrl](../api/chat-ui/userModel/#avatarurl) property to def
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/messages/avatarUrl/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/avatarUrl/src/app.component.html %}
+{% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
 {% include code-snippet/chat-ui/messages/avatarUrl/index.css %}
 {% endhighlight %}
@@ -76,18 +82,21 @@ You can use the [avatarBgColor](../api/chat-ui/userModel/#avatarbgcolor) propert
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/chat-ui/messages/avatarUrl/src/app.component.ts %}
+{% include code-snippet/chat-ui/messages/avatarBgColor/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/chat-ui/messages/avatarUrl/src/main.ts %}
+{% include code-snippet/chat-ui/messages/avatarBgColor/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/avatarBgColor/src/app.component.html %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
-{% include code-snippet/chat-ui/messages/avatarUrl/index.css %}
+{% include code-snippet/chat-ui/messages/avatarBgColor/index.css %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/chat-ui/messages/avatarUrl" %}
+{% previewsample "page.domainurl/samples/chat-ui/messages/avatarBgColor" %}
 
 #### Setting CSS class
 
@@ -100,6 +109,9 @@ You can use the [cssClass](../api/chat-ui/userModel/#cssclass) property to custo
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/messages/cssClass/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/cssClass/src/app.component.html %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
 {% include code-snippet/chat-ui/messages/cssClass/index.css %}
@@ -120,6 +132,9 @@ You can use the [timeStamp](../api/chat-ui/messageModel/#timestamp) property to 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/messages/timeStamp/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/timeStamp/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/messages/timeStamp" %}
@@ -135,6 +150,9 @@ You can use the [timeStampFormat](../api/chat-ui/messageModel/#timestampformat) 
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/messages/timeStampFormat/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/timeStampFormat/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -156,6 +174,9 @@ You can use the [iconCss](../api/chat-ui/messageStatusModel/#iconcss) property t
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/messages/iconCss/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/iconCss/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/messages/iconCss" %}
@@ -172,6 +193,9 @@ You can use the [text](../api/chat-ui/messageStatusModel/#text) property to prov
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/messages/statusText/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/statusText/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/messages/statusText" %}
@@ -187,6 +211,9 @@ You can use the [tooltip](../api/chat-ui/messageStatusModel/#tooltip) property t
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/messages/tooltip/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/tooltip/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -206,6 +233,9 @@ You can use the [autoScrollToBottom](../api/chat-ui#autoscrolltobottom) property
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/messages/autoScrollToBottom/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/autoScrollToBottom/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/messages/autoScrollToBottom" %}
@@ -221,6 +251,9 @@ You can use the [suggestions](../api/chat-ui#suggestions) property, to add the s
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/messages/suggestions/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/messages/suggestions/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
 
