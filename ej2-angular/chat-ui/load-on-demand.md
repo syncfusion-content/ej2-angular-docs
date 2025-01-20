@@ -20,6 +20,9 @@ You can use the [loadOnDemand](../api/chat-ui#loadondemand) property to load mes
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/loadOnDemand/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/loadOnDemand/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/loadOnDemand" %}

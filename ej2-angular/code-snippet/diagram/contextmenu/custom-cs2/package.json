@@ -19,6 +19,7 @@
       "@syncfusion/ej2-angular-base": "*",
       "@syncfusion/ej2-splitbuttons": "*",
       "@syncfusion/ej2-angular-popups": "*",
+      "@syncfusion/ej2-popups": "*",
       "@syncfusion/ej2-buttons": "*",
       "@syncfusion/ej2-icons": "*",
       "@angular/animations": "17.1.2",

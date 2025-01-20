@@ -24,6 +24,9 @@ You can use the [emptyChatTemplate](../api/chat-ui#emptychattemplate) property t
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/templates/emptyChatTemplate/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/templates/emptyChatTemplate/src/app.component.html %}
+{% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
 {% include code-snippet/chat-ui/templates/emptyChatTemplate/index.css %}
 {% endhighlight %}
@@ -42,6 +45,9 @@ You can use the [messageTemplate](../api/chat-ui#messagetemplate) property to cu
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/templates/messageTemplate/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/templates/messageTemplate/src/app.component.html %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
 {% include code-snippet/chat-ui/templates/messageTemplate/index.css %}
@@ -62,6 +68,9 @@ You can use the [timeBreakTemplate](../api/chat-ui#timebreaktemplate) property t
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/templates/timeBreakTemplate/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/templates/timeBreakTemplate/src/app.component.html %}
+{% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
 {% include code-snippet/chat-ui/templates/timeBreakTemplate/index.css %}
 {% endhighlight %}
@@ -80,6 +89,9 @@ You can use the [typingUsersTemplate](../api/chat-ui#typinguserstemplate) proper
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/templates/typingUsersTemplate/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/templates/typingUsersTemplate/src/app.component.html %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
 {% include code-snippet/chat-ui/templates/typingUsersTemplate/index.css %}
@@ -100,6 +112,9 @@ You can use the [suggestionTemplate](../api/chat-ui#suggestiontemplate) property
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/templates/suggestionTemplate/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/templates/suggestionTemplate/src/app.component.html %}
+{% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
 {% include code-snippet/chat-ui/templates/suggestionTemplate/index.css %}
 {% endhighlight %}
@@ -118,6 +133,9 @@ You can use the [footerTemplate](../api/chat-ui#footertemplate) property to cust
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/templates/footerTemplate/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/templates/footerTemplate/src/app.component.html %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
 {% include code-snippet/chat-ui/templates/footerTemplate/index.css %}
