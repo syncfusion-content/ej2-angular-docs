@@ -22,6 +22,9 @@ You can use [showHeader](../api/chat-ui#showheader) property to enable or disabl
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/header/showHeader/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/header/showHeader/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/header/showHeader" %}
@@ -38,6 +41,9 @@ You can use the [headerText](../api/chat-ui#headertext) property to display the 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/header/headerText/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/header/headerText/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/header/headerText" %}
@@ -53,6 +59,9 @@ You can use the [headerIconCss](../api/chat-ui#headericoncss) property to custom
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/header/headerIcon/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/header/headerIcon/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -78,6 +87,9 @@ You can customize the header toolbar icons by using the `iconCss` property.
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/header/iconCss/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/header/iconCss/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/header/iconCss" %}
@@ -96,6 +108,9 @@ In the following example, header toolbar item type is set as `Button`.
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/header/type/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/header/type/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/header/type" %}
@@ -111,6 +126,9 @@ You can use the `text` property to set the text for the header toolbar item.
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/header/text/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/header/text/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -128,6 +146,9 @@ You can use the `visible` property to specify whether to show or hide the header
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/header/visible/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/header/visible/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/header/visible" %}
@@ -143,6 +164,9 @@ You can use the `disabled` property to disable the header toolbar item. By defau
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/header/disabled/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/header/disabled/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -160,6 +184,9 @@ You can use the `tooltip` property to specify the tooltip text to be displayed o
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/header/tooltip/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/header/tooltip/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/header/tooltip" %}
@@ -175,6 +202,9 @@ You can use the `cssClass` property to customize the header toolbar item.
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/header/cssClass/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/header/cssClass/src/app.component.html %}
 {% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
 {% include code-snippet/chat-ui/header/cssClass/index.css %}
@@ -196,6 +226,9 @@ In the following example, toolbar item type is set with `Right`.
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/header/align/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/header/align/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -280,6 +313,9 @@ You can use the `template` property to add custom toolbar item in the Chat UI co
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/header/template/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/header/template/src/app.component.html %}
+{% endhighlight %}
 {% highlight html tabtitle="styles.css" %}
 {% include code-snippet/chat-ui/header/template/index.css %}
 {% endhighlight %}
@@ -298,6 +334,9 @@ You can define `itemClicked` event in the `headerToolbar` property which will be
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/header/itemClicked/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/header/itemClicked/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
 

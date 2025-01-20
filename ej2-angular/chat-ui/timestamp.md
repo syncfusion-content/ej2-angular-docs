@@ -22,6 +22,9 @@ You can use the [showTimeStamp](../api/chat-ui#showtimestamp) property to enable
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/time/timeStamp/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/time/timeStamp/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/time/timeStamp" %}
@@ -37,6 +40,9 @@ You can use the [timeStampFormat](../api/chat-ui#timestampformat) property to di
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/time/timeStampFormat/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/time/timeStampFormat/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -22,6 +22,9 @@ You can use the [showTimeBreak](../api/chat-ui#showtimebreak) property to displa
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/time/showTimeBreak/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/time/showTimeBreak/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/time/showTimeBreak" %}

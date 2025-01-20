@@ -29,6 +29,9 @@ The Chat UI can be localized to any culture by defining the text of the Chat UI 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/globalization/localization/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/globalization/localization/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/globalization/localization" %}
@@ -44,6 +47,9 @@ RTL provides an option to switch the text direction and layout of the Chat UI co
 
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/globalization/enableRtl/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/globalization/enableRtl/src/app.component.html %}
 {% endhighlight %}
 {% endtabs %}
 

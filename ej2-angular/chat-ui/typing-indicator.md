@@ -24,6 +24,9 @@ The typing users are the UserModel[] collection, where you can update the userâ€
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/typingUsers/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/typingUsers/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/typingUsers" %}

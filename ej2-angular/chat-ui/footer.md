@@ -22,6 +22,9 @@ You can use [showFooter](../api/chat-ui#showfooter) property to enable or disabl
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/chat-ui/footer/showFooter/src/main.ts %}
 {% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/chat-ui/footer/showFooter/src/app.component.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/chat-ui/footer/showFooter" %}
