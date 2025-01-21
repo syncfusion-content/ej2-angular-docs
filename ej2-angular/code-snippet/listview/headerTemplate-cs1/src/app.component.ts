@@ -1,21 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ListViewModule } from '@syncfusion/ej2-angular-lists'
-import { ButtonModule  } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
-imports: [
-        
-        ListViewModule,ButtonModule
+    imports: [
+        ListViewModule, ButtonModule
     ],
-
-
-standalone: true,
+    standalone: true,
     selector: 'my-app',
     template: `
     <div id = 'flat-list'>
@@ -27,24 +20,23 @@ standalone: true,
         </ejs-listview>
     </div>
         `,
-  })
+})
 
 export class AppComponent {
 
-  public data=[
-    { text: 'Date', id: '1', imgUrl: './dates.jpg' },
-    { text: 'Fig', id: '2', imgUrl: './fig.jpg' },
-    { text: 'Apple', id: '3', imgUrl: './apple.png' },
-    { text: 'Apricot', id: '4', imgUrl: './apricot.jpg' },
-    { text: 'Grape', id: '5', imgUrl: './grape.jpg' },
-    { text: 'Strawberry', id: '6', imgUrl: './strawberry.jpg' },
-    { text: 'Pineapple', id: '7', imgUrl: './pineapple.jpg' },
-    { text: 'Melon', id: '8', imgUrl: './melon.jpg' },
-    { text: 'Lemon', id: '9', imgUrl: './lemon.jpg' },
-    { text: 'Cherry', id: '10', imgUrl: './cherry.jpg' },
+    public data = [
+        { text: 'Date', id: '1', imgUrl: './dates.jpg' },
+        { text: 'Fig', id: '2', imgUrl: './fig.jpg' },
+        { text: 'Apple', id: '3', imgUrl: './apple.png' },
+        { text: 'Apricot', id: '4', imgUrl: './apricot.jpg' },
+        { text: 'Grape', id: '5', imgUrl: './grape.jpg' },
+        { text: 'Strawberry', id: '6', imgUrl: './strawberry.jpg' },
+        { text: 'Pineapple', id: '7', imgUrl: './pineapple.jpg' },
+        { text: 'Melon', id: '8', imgUrl: './melon.jpg' },
+        { text: 'Lemon', id: '9', imgUrl: './lemon.jpg' },
+        { text: 'Cherry', id: '10', imgUrl: './cherry.jpg' },
     ];
 
 }
-
 
 

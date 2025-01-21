@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Api listViewComponent in Angular Listview component | Syncfusion
-description: Learn here all about Api listViewComponent in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Api listViewComponent in Angular ListView component | Syncfusion
+description: Learn here all about Api listViewComponent in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Api listViewComponent 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Api listViewComponent in Angular Listview component
+# Api listViewComponent in Angular ListView component
 
 Represents Angular ListView Component
 ```

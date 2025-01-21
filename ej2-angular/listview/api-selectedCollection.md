@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Api selectedCollection in Angular Listview component | Syncfusion
-description: Learn here all about Api selectedCollection in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Api selectedCollection in Angular ListView component | Syncfusion
+description: Learn here all about Api selectedCollection in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Api selectedCollection 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Api selectedCollection in Angular Listview component
+# Api selectedCollection in Angular ListView component
 
 ## Properties
 

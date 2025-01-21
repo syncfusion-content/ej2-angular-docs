@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Angular Listview component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Listview component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular ListView component | Syncfusion
+description:  Checkout and learn about Getting started with Angular ListView component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: ListView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Listview component
+# Getting started with Angular ListView component
 
 The ListView component is available in `@syncfusion/ej2-angular-lists` package. Utilize this package to render the ListView Component.
 
@@ -30,7 +30,7 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion Listview package
+## Installing Syncfusion ListView package
 
 Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
@@ -58,7 +58,7 @@ Add [`@syncfusion/ej2-angular-lists@ngcc`](https://www.npmjs.com/package/@syncfu
 npm install @syncfusion/ej2-angular-lists@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To mention the ngcc package in the **package.json** file, add the suffix `-ngcc` with the package version as below.
 
 ```bash
 @syncfusion/ej2-angular-lists:"20.2.38-ngcc"
@@ -68,11 +68,18 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding CSS Reference
 
-* Add ListView component's styles as given below in `styles.css`.
+* Add ListView component's styles as given below in **styles.css**.
 
 ```css
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
 @import "../node_modules/@syncfusion/ej2-angular-lists/styles/material.css";
+```
+
+Alternatively, you can import the styles directly relative to the node_modules folder based on your CSS file’s location, as shown below:
+
+```css
+@import "node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "node_modules/@syncfusion/ej2-angular-lists/styles/material.css";
 ```
 
 * If you are using `CheckList` behaviour in ListView, we need to add `Button` component's styles as given below in `styles.css` file
@@ -83,10 +90,10 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 > We can also use [CRG](https://crg.syncfusion.com/) to generate combined component styles.
 
-## Add Listview component
+## Add ListView component
 
-Modify the template in [src/app/app.component.ts] file to render the listview component.
-Add the Angular Listview by using `<ejs-listview>` selector in `template` section of the app.component.ts file.
+Modify the template in **src/app/app.component.ts** file to render the ListView component.
+Add the Angular ListView by using `<ejs-listview>` selector in `template` section of the **app.component.ts** file.
 
 ```typescript
 
@@ -99,7 +106,7 @@ imports: [
     ],
     standalone: true,
     selector: 'app-root',
-  // specifies the template string for the Listview component
+  // specifies the template string for the ListView component
     template: `<ejs-listview id='sample-list' [dataSource]='data'></ejs-listview>`
 })
 
@@ -130,8 +137,8 @@ The output will appear as follows.
 {% include code-snippet/listview/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/listview/getting-started-cs1/src/app.component.css %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/listview/getting-started-cs1/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}

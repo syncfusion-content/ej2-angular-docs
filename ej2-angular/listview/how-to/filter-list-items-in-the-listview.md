@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filter list items in the Angular Listview component | Syncfusion
-description: Learn here all about Filter list items in the listview in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Filter list items in the Angular ListView component | Syncfusion
+description: Learn here all about Filter list items in the ListView in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Filter list items in the listview 
+control: ListView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filter list items in the listview in Angular Listview component
+# Filter list items in the ListView in Angular ListView component
 
 The filtered data can be displayed in the ListView component depending upon on user inputs using the [`DataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started). Refer to the following steps to render the ListView with filtered data.
 
@@ -22,7 +22,9 @@ The filtered data can be displayed in the ListView component depending upon on u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/listview/getting-started-cs6/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/getting-started-cs6/src/main.ts %}
 {% endhighlight %}

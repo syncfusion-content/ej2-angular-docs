@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Use dynamic templates in listview based on device in Angular Listview component | Syncfusion
-description: Learn here all about Use dynamic templates in listview based on device in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Use dynamic templates in ListView based on device in Angular ListView component | Syncfusion
+description: Learn here all about Use dynamic templates in ListView based on device in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Use dynamic templates in listview based on device 
+control: ListView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Use dynamic templates in listview based on device in Angular Listview component
+# Use dynamic templates in ListView based on device in Angular ListView component
 
 The Syncfusion Essential JS2 components are desktop and mobile-friendly. So, you can use Syncfusion components in both modes. The component templates are not always fixed. Applications may need to load various templates depending upon the device.
 
@@ -20,7 +20,9 @@ In the ListView component, template support is being used. In some cases, the co
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/dynamic-template-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/listview/dynamic-template-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/dynamic-template-cs2/src/main.ts %}
 {% endhighlight %}

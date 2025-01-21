@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to in Angular Listview component | Syncfusion
-description: Learn here all about How to in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: How to in Angular ListView component | Syncfusion
+description: Learn here all about How to in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: How to 
+control: ListView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to in Angular Listview component
+# How to in Angular ListView component
 
 ## Get selected items in the ListView component
 
@@ -335,7 +335,7 @@ You can enable sorting in one ListView; in the same order, data can be transferr
   
 {% previewsample "page.domainurl/samples/listview/dual-list-cs1" %}
 
-## Hide checkbox in listview
+## Hide checkbox in ListView
 
 The checkbox of the any list item can be hidden by using [`htmlAttributes`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#htmlattributes) of
 [`fields`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#fields) object. With the help of `htmlAttributes` we can add unique class to each list item that will be rendered from the data source, from the CSS class we can hide the checkbox of the list item.
@@ -441,7 +441,7 @@ removeTag() {
 
 ## ListView manipulation in grid layout
 
-In Listview, list items can be rendered in grid layout with following data manipulations.
+In ListView, list items can be rendered in grid layout with following data manipulations.
 
 * Add Item
 
@@ -513,7 +513,7 @@ In the below sample, you can remove fruit by hovering the fruit item which will 
 
 #### Sort Items
 
-Listview can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#sortorder) as `Ascending` or `Descending`.
+ListView can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#sortorder) as `Ascending` or `Descending`.
 
 ```typescript
 
@@ -533,7 +533,7 @@ In the below sample, we have sorted fruits in `Ascending` order. To sort it in d
 
 #### Filter Items
 
-Listview data can be filtered with the help of [`dataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started). After filtering the data, update ListView [`dataSource`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#datasource) with filtered data.
+ListView data can be filtered with the help of [`dataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started). After filtering the data, update ListView [`dataSource`](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#datasource) with filtered data.
 
 ```typescript
 
@@ -667,7 +667,7 @@ In the below sample, we have rendered draggable list items.
 
 ListView can be customizable as chat window. To achieve that, use ListView [template](https://ej2.syncfusion.com/angular/documentation/listview/api-listView/#template) property and [Avatar](https://ej2.syncfusion.com/angular/documentation/avatar/getting-started.html) component.
 
-    * Listview template property is used to showcase the ListView as chat window.
+    * ListView template property is used to showcase the ListView as chat window.
     * Avatar component is used to design the image of contact person.
 
 Refer the below template code snippet for Template of chat window.
@@ -701,7 +701,7 @@ Refer the below template code snippet for Template of chat window.
 
 ### Chat order in template
 
-In ListView template, we have rendered the list items based on receiver and sender information from dataSource of listview.
+In ListView template, we have rendered the list items based on receiver and sender information from dataSource of ListView.
 
 ### Adding messages to chat window
 

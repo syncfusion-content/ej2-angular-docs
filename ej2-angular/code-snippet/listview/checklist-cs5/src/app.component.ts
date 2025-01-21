@@ -1,20 +1,14 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ListViewModule } from '@syncfusion/ej2-angular-lists'
-
-
-
-
 import { Component, ViewChild } from "@angular/core";
 
 @Component({
-imports: [
-        
-        ListViewModule
-    ],
+  imports: [
 
-
-standalone: true,
+    ListViewModule
+  ],
+  standalone: true,
   selector: "my-app",
   template: `
     <ejs-listview
@@ -65,6 +59,5 @@ export class AppComponent {
     }
   }
 }
-
 
 

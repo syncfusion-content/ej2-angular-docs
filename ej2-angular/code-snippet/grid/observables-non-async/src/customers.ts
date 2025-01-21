@@ -4,3 +4,4 @@ export class Customer {
     ProductID?:number
     ProductName?:string
 }
+

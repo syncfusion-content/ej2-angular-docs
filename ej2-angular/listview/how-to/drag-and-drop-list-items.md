@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Drag and drop list items in Angular Listview component | Syncfusion
-description: Learn here all about Drag and drop list items in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Drag and drop list items in Angular ListView component | Syncfusion
+description: Learn here all about Drag and drop list items in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Drag and drop list items 
+control: ListView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 
-# Drag and drop list items in Angular Listview component
+# Drag and drop list items in Angular ListView component
 
 In ListView component, we don't have  drag and drop support. But we can achieve this requirement using [`TreeView`](https://ej2.syncfusion.com/angular/documentation/treeview/getting-started) component with ListView appearance.
 
@@ -46,7 +46,9 @@ In the below sample, we have rendered draggable list items.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/reorder-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/listview/reorder-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/reorder-cs2/src/main.ts %}
 {% endhighlight %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Virtualization in Angular Listview component | Syncfusion
-description: Learn here all about Virtualization in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Virtualization in Angular ListView component | Syncfusion
+description: Learn here all about Virtualization in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Virtualization 
+control: ListView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Virtualization in Angular Listview component
+# Virtualization in Angular ListView component
 
 UI virtualization loads only viewable list items in a view port which will increase ListView performance on loading large number of data.
 
@@ -41,7 +41,7 @@ export class AppModule { }
 
 ## Getting started
 
-UI virtualization can be enabled in ListView by setting `enableVirtualization` property to true.
+UI virtualization can be enabled in ListView by setting [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#enablevirtualization) property to true.
 
 It has two type of scroller
 

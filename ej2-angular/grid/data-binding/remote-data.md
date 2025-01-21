@@ -420,21 +420,23 @@ The following example demonstrates how to bind observable data with using async 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/observables-crud-actions/src/app.component.ts %}
+{% include code-snippet/grid/observables-async/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="crud.service.ts" %}
-{% include code-snippet/grid/observables-crud-actions/src/crud.service.ts %}
+{% include code-snippet/grid/observables-async/src/crud.service.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="in-mem.ts" %}
-{% include code-snippet/grid/observables-crud-actions/src/in-mem.ts %}
+{% highlight ts tabtitle="data.service.ts" %}
+{% include code-snippet/grid/observables-async/src/data.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="customers.ts" %}
-{% include code-snippet/grid/observables-crud-actions/src/customers.ts %}
+{% include code-snippet/grid/observables-async/src/customers.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="congif.ts" %}
+{% include code-snippet/grid/observables-async/src/app.config.ts %}
+{% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/observables-crud-actions" %}
+{% previewsample "page.domainurl/samples/grid/observables-async" %}
 
 > * While working with grid edit operation, defining the `isPrimaryKey` property of column is a mandatory step. In case the primary key column is not defined, the edit or delete action will take place on the first row of the grid.
 > * Need to maintain the same observable instance for all grid actions.
@@ -993,21 +995,23 @@ The following example demonstrates how to bind observable data without using asy
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid/observables-without-async/src/app.component.ts %}
+{% include code-snippet/grid/observables-non-async/src/app.component.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="order.service.ts" %}
-{% include code-snippet/grid/observables-without-async/src/crud.service.ts %}
+{% include code-snippet/grid/observables-non-async/src/crud.service.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="in-mem.ts" %}
-{% include code-snippet/grid/observables-without-async/src/in-mem.ts %}
+{% highlight ts tabtitle="data.service.ts" %}
+{% include code-snippet/grid/observables-non-async/src/data.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="customers.ts" %}
-{% include code-snippet/grid/observables-without-async/src/customers.ts %}
+{% include code-snippet/grid/observables-non-async/src/customers.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="congif.ts" %}
+{% include code-snippet/grid/observables-non-async/src/app.config.ts %}
+{% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/grid/observables-without-async" %}
+{% previewsample "page.domainurl/samples/grid/observables-non-async" %}
 
 > Improper handling of observables and subscriptions may lead to memory leaks and unexpected behavior. Ensure to handle subscriptions properly, especially when dealing with long-lived observables.
 

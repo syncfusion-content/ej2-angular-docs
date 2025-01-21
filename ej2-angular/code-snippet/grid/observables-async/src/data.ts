@@ -1,12 +1,11 @@
 import { InMemoryDbService } from 'angular-in-memory-web-api';
 
-export class InMemoryDataService implements InMemoryDbService {
+export class DataService implements InMemoryDbService {
 createDb() {
     const customers = createLazyLoadData();
     return { customers };
-  }  
+    }
 }
-
 function createLazyLoadData(): Object[] {
     let lazyLoadData: Object[] = [];
     let customerid: string[] = ['VINET', 'TOMSP', 'HANAR', 'VICTE', 'SUPRD', 'HANAR', 'CHOPS', 'RICSU', 'WELLI', 'HILAA', 'ERNSH', 'CENTC',
@@ -59,4 +58,3 @@ function createLazyLoadData(): Object[] {
     }
     return lazyLoadData;
 }
-

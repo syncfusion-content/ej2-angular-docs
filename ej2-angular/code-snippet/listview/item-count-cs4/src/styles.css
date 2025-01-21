@@ -1,7 +1,30 @@
-
 @import 'node_modules/@syncfusion/ej2-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-lists/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
+
+#List {
+    display: block;
+    margin: auto;
+    font-size: 15px;
+    border: 1px solid;
+    border-color: #ccc;
+    border-color: #0000001f;
+    width: 350px;
+}
+
+#List .e-list-group-item {
+    height: 56px;
+    line-height: 56px;
+}
+
+#List .count {
+    float: right;
+}
+
+#count {
+    position: relative;
+    left: 100px;
+}

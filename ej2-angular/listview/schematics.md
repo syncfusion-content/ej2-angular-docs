@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Schematics in Angular Listview component | Syncfusion
-description: Learn here all about Schematics in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Schematics in Angular ListView component | Syncfusion
+description: Learn here all about Schematics in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Schematics 
+control: ListView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Schematics in Angular Listview component
+# Schematics in Angular ListView component
 
 Angular schematics is a workflow tool that allows you generate component, modules, and resolve dependency issues. The main goal of the schematics is ease of use and development in angular environment.
 

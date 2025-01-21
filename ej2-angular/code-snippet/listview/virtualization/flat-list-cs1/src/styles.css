@@ -1,6 +1,13 @@
-
 @import 'node_modules/@syncfusion/ej2-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-lists/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-lists/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
+
+#ui-list {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 3px;
+    cursor: pointer;
+}

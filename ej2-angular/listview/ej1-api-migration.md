@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 api migration in Angular Listview component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Ej1 api migration in Angular ListView component | Syncfusion
+description: Learn here all about Ej1 api migration in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Ej1 api migration 
+control: ListView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in Angular Listview component
+# Ej1 api migration in Angular ListView component
 
 This article describes the API migration process of ListView component from Essential JS 1 to Essential JS 2
 
