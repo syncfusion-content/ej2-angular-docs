@@ -10,11 +10,12 @@ import { DataStateChangeEventArgs } from '@syncfusion/ej2-angular-grids';
 import { Query } from '@syncfusion/ej2-data';
 import { DataService } from './order.service';
 import { Observable } from 'rxjs';
-
+import { CommonModule } from '@angular/common'
 @Component({
 imports: [
-        
-        GridModule,HttpClientModule,
+      CommonModule,
+      GridModule,
+      HttpClientModule,
     ],
 
 providers: [PageService,
