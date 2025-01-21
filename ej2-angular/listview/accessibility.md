@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Accessibility in Angular Listview component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular ListView component | Syncfusion
+description: Learn here all about Accessibility in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Accessibility 
+control: ListView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -47,7 +47,7 @@ The ListView component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/p
 | `role=list` | Specifies the non selectable list container. |
 | `role=listitem`| Specifies the role of each item in a selectable ListView and its containment within the list. |
 | `role=presentation` | Specifies the role of non selectable list element. |
-| `role=checkbox` | Indicates checkbox control along with listitem element. |
+| `role=checkbox` | Indicates checkbox component along with listitem element. |
 | `aria-checked` | Indicates the current checked state of checkbox. |
 | `aria-label` | Provides an accessible name for the ListView Checkbox. |
 | `aria-disabled` | Indicates element is perceivable but disabled. |

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Style in Angular Listview component | Syncfusion
-description: Learn here all about Style in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Style in Angular ListView component | Syncfusion
+description: Learn here all about Style in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Style 
+control: ListView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Style in Angular Listview component
+# Style in Angular ListView component
 
-The following content provides the exact CSS structure that can be used to modify the control’s appearance based on  user preference.
+The following content provides the exact CSS structure that can be used to modify the component’s appearance based on  user preference.
 
 ## Customizing ListView
 
@@ -40,7 +40,7 @@ Use the following CSS to customize the items of ListView.
 
 ## Customizing ListView's header
 
-Use the following CSS to customize the header of ListView control.
+Use the following CSS to customize the header of ListView component.
 
 ```CSS
 
@@ -65,7 +65,7 @@ Use the following CSS to customize the category of the group items.
 
 ```
 
-## Customizing the hover state of ListView control
+## Customizing the hover state of ListView component
 
 Use the following CSS to customize the list item when hovering.
 
@@ -91,7 +91,7 @@ Use the following CSS to customize the list item when hovering.
 
 ```
 
-## Customizing selected item of ListView control
+## Customizing selected item of ListView component
 
 Use the following CSS to customize the selected list item.
 

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { GanttModule } from '@syncfusion/ej2-angular-gantt'
+import { GanttAllModule } from '@syncfusion/ej2-angular-gantt'
 import {  ToolbarService, EditService, SelectionService } from '@syncfusion/ej2-angular-gantt'
 
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
@@ -10,7 +10,7 @@ import { ToolbarItem, EditSettingsModel, SelectionSettingsModel } from '@syncfus
 
 @Component({
 imports: [
-         GanttModule
+         GanttAllModule
     ],
 
 providers: [ToolbarService, EditService, SelectionService],

@@ -15,6 +15,7 @@
     "@angular/compiler": "17.1.2",
     "@angular/core": "17.1.2",
     "@angular/forms": "17.1.2",
+    "@angular/http": "7.1.4",
     "@angular/platform-browser": "17.1.2",
     "@angular/platform-browser-dynamic": "17.1.2",
     "@angular/router": "17.1.2",
@@ -34,6 +35,7 @@
     "angular-in-memory-web-api": "^0.17.0",
     "moment": "2.29.4",
     "rxjs": "7.8.0",
+    "rxjs-compat": "6.3.3",
     "tslib": "2.3.0",
     "zone.js": "0.14.3"
   },

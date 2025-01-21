@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Manipulate listview as grid layout in Angular Listview component | Syncfusion
-description: Learn here all about Manipulate listview as grid layout in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Manipulate ListView as grid layout in Angular ListView component | Syncfusion
+description: Learn here all about Manipulate ListView as grid layout in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Manipulate listview as grid layout 
+control: ListView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Manipulate listview as grid layout in Angular Listview component
+# Manipulate ListView as grid layout in Angular ListView component
 
-In Listview, list items can be rendered in grid layout with following data manipulations.
+In ListView, list items can be rendered in grid layout with following data manipulations.
 
 * Add Item
 
@@ -44,7 +44,9 @@ In the below sample, we have rendered List items in grid layout.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/grid-layout-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/listview/grid-layout-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/grid-layout-cs2/src/main.ts %}
 {% endhighlight %}
@@ -82,7 +84,7 @@ In the below sample, you can remove fruit by hovering the fruit item which will 
 
 ### Sort Items
 
-Listview can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#sortorder) as `Ascending` or `Descending`.
+ListView can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#sortorder) as `Ascending` or `Descending`.
 
 ```typescript
 
@@ -102,7 +104,7 @@ In the below sample, we have sorted fruits in `Ascending` order. To sort it in d
 
 ### Filter Items
 
-Listview data can be filtered with the help of [`dataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started). After filtering the data, update ListView [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#datasource) with filtered data.
+ListView data can be filtered with the help of [`dataManager`](https://ej2.syncfusion.com/angular/documentation/data/getting-started). After filtering the data, update ListView [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#datasource) with filtered data.
 
 ```typescript
 
@@ -121,7 +123,9 @@ In the below sample, we can filter fruit items with the help of search text box.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/grid-manipulation-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/listview/grid-manipulation-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/grid-manipulation-cs2/src/main.ts %}
 {% endhighlight %}

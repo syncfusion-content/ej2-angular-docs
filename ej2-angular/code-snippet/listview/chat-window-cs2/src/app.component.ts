@@ -7,7 +7,6 @@ import { Component, ViewChild } from '@angular/core';
 
 @Component({
   imports: [ListViewModule, ButtonModule, CommonModule],
-  styleUrls: ['styles.css'],
   standalone: true,
   selector: 'my-app',
   template: `

@@ -2,22 +2,16 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ListViewModule } from '@syncfusion/ej2-angular-lists'
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
 import { Component, ViewChild } from '@angular/core';
 import { ListViewComponent } from '@syncfusion/ej2-angular-lists';
 
 @Component({
-imports: [
-        
-        ListViewModule, ButtonModule
-    ],
-
-
-standalone: true,
-    selector: 'my-app',
-    template: `<ejs-listview #list id='sample-list' [dataSource]='data' [fields]='fields'>
+  imports: [
+    ListViewModule, ButtonModule
+  ],
+  standalone: true,
+  selector: 'my-app',
+  template: `<ejs-listview #list id='sample-list' [dataSource]='data' [fields]='fields'>
     <ng-template  #template let-data="">
     <div class='text-content'> {{data.text}} <span class = 'delete-icon' (click)="deleteItem($event)"></span> </div>
     </ng-template>
@@ -26,32 +20,31 @@ standalone: true,
 })
 
 export class AppComponent {
-   @ViewChild('list')
-   listViewInstance?: ListViewComponent;
-    //define the array of string
-    public data: object[] =  [{ text: "Hennessey Venom", id: "1", icon: "delete-icon" },
+  @ViewChild('list')
+  listViewInstance?: ListViewComponent;
+  //define the array of string
+  public data: object[] = [{ text: "Hennessey Venom", id: "1", icon: "delete-icon" },
   { text: "Bugatti Chiron", id: "2", icon: "delete-icon" },
   { text: "Bugatti Veyron Super Sport", id: "3", icon: "delete-icon" },
   { text: "Aston Martin One- 77", id: "4", icon: "delete-icon" },
   { text: "Jaguar XJ220", id: "list-5", icon: "delete-icon" },
   { text: "McLaren P1", id: "6", icon: "delete-icon" }];
 
-public fields: Object = {text: "text", iconCss: "icon" };
-deleteItem(args: any) {
-  args.stopPropagation();
-  let liItem = args.target.parentElement.parentElement;
-  this.listViewInstance?.removeItem(liItem);
-}
+  public fields: Object = { text: "text", iconCss: "icon" };
+  deleteItem(args: any) {
+    args.stopPropagation();
+    let liItem = args.target.parentElement.parentElement;
+    this.listViewInstance?.removeItem(liItem);
+  }
 
-addItem(){
-  let data = {
-    text: "Koenigsegg - " + (Math.random() * 1000).toFixed(0),
-    id: (Math.random() * 1000).toFixed(0).toString(),
-    icon: "delete-icon"
-  };
-  this.listViewInstance?.addItem([data]);
+  addItem() {
+    let data = {
+      text: "Koenigsegg - " + (Math.random() * 1000).toFixed(0),
+      id: (Math.random() * 1000).toFixed(0).toString(),
+      icon: "delete-icon"
+    };
+    this.listViewInstance?.addItem([data]);
+  }
 }
-}
-
 
 

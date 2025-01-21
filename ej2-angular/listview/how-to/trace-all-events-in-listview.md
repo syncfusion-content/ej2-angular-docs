@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Trace all events in listview in Angular Listview component | Syncfusion
-description: Learn here all about Trace all events in listview in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Trace all events in ListView in Angular ListView component | Syncfusion
+description: Learn here all about Trace all events in ListView in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Trace all events in listview 
+control: ListView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Trace all events in listview in Angular Listview component
+# Trace all events in ListView in Angular ListView component
 
 The ListView component triggers events based on its actions. The events can be used as extension points to perform custom operations. Refer to the following steps to trace the ListView events:
 
@@ -26,7 +26,9 @@ The ListView component triggers events based on its actions. The events can be u
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/listview/getting-started-cs7/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/getting-started-cs7/src/main.ts %}
 {% endhighlight %}

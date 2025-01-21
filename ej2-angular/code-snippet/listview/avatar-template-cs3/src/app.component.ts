@@ -1,22 +1,16 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ListViewModule } from '@syncfusion/ej2-angular-lists'
-
-
-
-
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
-imports: [
-        
-        ListViewModule
-    ],
-
-
-standalone: true,
-    selector: 'my-app',
-    template: `
+  imports: [
+    CommonModule, ListViewModule
+  ],
+  standalone: true,
+  selector: 'my-app',
+  template: `
     <div id="sample">
         <ejs-listview id='List' [dataSource]='data' headerTitle='Contacts' cssClass='e-list-template' [showHeader]='true' sortOrder='Ascending'>
             <ng-template #template let-data="">
@@ -33,55 +27,54 @@ standalone: true,
 })
 
 export class AppComponent {
-     // Listview datasource with avatar and image source fields
-     public data?: { [key: string]: Object; }[] = [
-  {
-    text: "Jenifer",
-    contact: "(206) 555-985774",
-    id: "1",
-    avatar: "",
-    pic: "pic01"
-  },
-  { text: "Amenda", contact: "(206) 555-3412", id: "2", avatar: "A", pic: "" },
-  {
-    text: "Isabella",
-    contact: "(206) 555-8122",
-    id: "4",
-    avatar: "",
-    pic: "pic02"
-  },
-  {
-    text: "William ",
-    contact: "(206) 555-9482",
-    id: "5",
-    avatar: "W",
-    pic: ""
-  },
-  {
-    text: "Jacob",
-    contact: "(71) 555-4848",
-    id: "6",
-    avatar: "",
-    pic: "pic04"
-  },
-  { text: "Matthew", contact: "(71) 555-7773", id: "7", avatar: "M", pic: "" },
-  {
-    text: "Oliver",
-    contact: "(71) 555-5598",
-    id: "8",
-    avatar: "",
-    pic: "pic03"
-  },
-  {
-    text: "Charlotte",
-    contact: "(206) 555-1189",
-    id: "9",
-    avatar: "C",
-    pic: ""
-  }
-];
+  // Listview datasource with avatar and image source fields
+  public data?: { [key: string]: Object; }[] = [
+    {
+      text: "Jenifer",
+      contact: "(206) 555-985774",
+      id: "1",
+      avatar: "",
+      pic: "pic01"
+    },
+    { text: "Amenda", contact: "(206) 555-3412", id: "2", avatar: "A", pic: "" },
+    {
+      text: "Isabella",
+      contact: "(206) 555-8122",
+      id: "4",
+      avatar: "",
+      pic: "pic02"
+    },
+    {
+      text: "William ",
+      contact: "(206) 555-9482",
+      id: "5",
+      avatar: "W",
+      pic: ""
+    },
+    {
+      text: "Jacob",
+      contact: "(71) 555-4848",
+      id: "6",
+      avatar: "",
+      pic: "pic04"
+    },
+    { text: "Matthew", contact: "(71) 555-7773", id: "7", avatar: "M", pic: "" },
+    {
+      text: "Oliver",
+      contact: "(71) 555-5598",
+      id: "8",
+      avatar: "",
+      pic: "pic03"
+    },
+    {
+      text: "Charlotte",
+      contact: "(206) 555-1189",
+      id: "9",
+      avatar: "C",
+      pic: ""
+    }
+  ];
 
 }
-
 
 

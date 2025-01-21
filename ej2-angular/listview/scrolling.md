@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Scrolling in Angular Listview component | Syncfusion
-description: Learn here all about Scrolling in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Scrolling in Angular ListView component | Syncfusion
+description: Learn here all about Scrolling in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Scrolling 
+control: ListView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Scrolling in Angular Listview component
+# Scrolling in Angular ListView component
 
 Scrolling is a technique that allows you to load more items as the user scrolls through a list, providing a seamless and dynamic user experience.
 

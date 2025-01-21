@@ -1,6 +1,193 @@
-
 @import 'node_modules/@syncfusion/ej2-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-lists/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
+
+#sample-list {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+
+#List img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+#List {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid;
+    border-color: #c3c3c3;
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+#List .settings {
+    height: 170px;
+    line-height: 70px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#List .e-list-item {
+    height: 170px;
+    line-height: 70px;
+    padding: 0;
+    cursor: pointer;
+    border-bottom: 0.8px solid #ddd;
+}
+
+#time {
+    line-height: 23px;
+    margin-top: 13px;
+    padding-left: 10px;
+    width: 191px;
+}
+
+#img {
+    float: left;
+    padding-top: 6px;
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+#info {
+    padding-top: 3px;
+}
+
+#List .e-list-header {
+    color: white;
+    height: 57px;
+    background-color: #56697f;
+    padding-left: 15px;
+    position: relative;
+    top: -1px;
+}
+
+.bootstrap #List .e-list-header .e-text {
+    line-height: 18px;
+}
+
+#List .e-list-header .e-text {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+#List .category {
+    font-family: "serif";
+    font-weight: 600;
+    font-size: 19px;
+}
+
+#List .name {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+#List .content {
+    line-height: 19px;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+#List .e-hover {
+    transition: 0.5s;
+}
+
+.timeStamp {
+    font-size: small;
+    margin-bottom: 1px;
+    margin-top: -17px;
+}
+
+.bookmark::before {
+    color: grey;
+    float: right;
+    line-height: 0;
+    margin-bottom: 1px;
+    font-family: "Bookmarks";
+    content: "\e700";
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 16px;
+    padding-top: 19px;
+    padding-bottom: 5px;
+}
+
+.share::before {
+    color: grey;
+    float: right;
+    line-height: 0;
+    margin-bottom: 1px;
+    font-family: "Bookmarks";
+    content: "\e701";
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 13px;
+    padding-top: 19px;
+    padding-bottom: 5px;
+}
+
+.comments::before {
+    color: grey;
+    float: right;
+    line-height: 0;
+    margin-bottom: 1px;
+    font-family: "Bookmarks";
+    content: "\e703";
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 15px;
+    padding-top: 19px;
+    padding-bottom: 5px;
+}
+
+.bookmark {
+    cursor: pointer;
+}
+
+.share {
+    cursor: pointer;
+}
+
+.comments {
+    cursor: pointer;
+}
+
+.description {
+    color: grey;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+/* csslint ignore:start */
+
+@font-face {
+    font-family: 'Bookmarks';
+    src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* csslint ignore:end */
+
+#postImg {
+    margin-right: 25px;
+    margin-top: 30px;
+}
+
+#postContainer {
+    width: inherit;
+    margin-top: 10px;
+    display: inline-flex;
+}

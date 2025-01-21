@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integrate pager component in Angular Listview component | Syncfusion
-description: Learn here all about Integrate pager component with listview in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Integrate pager component in Angular ListView component | Syncfusion
+description: Learn here all about Integrate pager component with ListView in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Integrate pager component with listview 
+control: ListView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate pager component with listview in Angular Listview component
+# Integrate pager component with ListView in Angular ListView component
 
 The first and foremost step is to obtain the `Pager` component from `Grid`. Install the ej2-angular-grids package using the following command.
 
@@ -44,7 +44,9 @@ Note: When `pageSize` isn't mentioned, it defaults to 12 records per page.
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/paging-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/listview/paging-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/paging-cs1/src/main.ts %}
 {% endhighlight %}

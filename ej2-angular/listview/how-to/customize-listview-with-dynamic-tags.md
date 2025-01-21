@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize listview with dynamic tags in Angular Listview component | Syncfusion
-description: Learn here all about Customize listview with dynamic tags in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Customize ListView with dynamic tags in Angular ListView component | Syncfusion
+description: Learn here all about Customize ListView with dynamic tags in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Customize listview with dynamic tags 
+control: ListView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize listview with dynamic tags in Angular Listview component
+# Customize ListView with dynamic tags in Angular ListView component
 
 You can customize the ListView items using the [`template`](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property. Here, the dynamic tags are added and removed in the list item from another ListView. Refer to the following steps to achieve this.
 
@@ -72,7 +72,9 @@ You can customize the ListView items using the [`template`](https://ej2.syncfusi
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/dynamic-tag-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/listview/dynamic-tag-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/dynamic-tag-cs2/src/main.ts %}
 {% endhighlight %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create mobile contact layout from listview in Angular Listview component | Syncfusion
-description: Learn here all about Create mobile contact layout from listview in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Create mobile contact layout from ListView in Angular ListView component | Syncfusion
+description: Learn here all about Create mobile contact layout from ListView in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Create mobile contact layout from listview 
+control: ListView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create mobile contact layout from listview in Angular Listview component
+# Create mobile contact layout from ListView in Angular ListView component
 
 You can customize the ListView using the [template](https://ej2.syncfusion.com/angular/documentation/api/list-view/#template) property. Refer to the following steps to customize ListView as mobile contact view with our `ej2-avatar`.
 
@@ -55,7 +55,9 @@ You can customize the ListView using the [template](https://ej2.syncfusion.com/a
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/avatar-template-cs3/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/listview/avatar-template-cs3/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/avatar-template-cs3/src/main.ts %}
 {% endhighlight %}
