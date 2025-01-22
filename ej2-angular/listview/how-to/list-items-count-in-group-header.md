@@ -1,14 +1,14 @@
 ---
 layout: post
-title: List items count in group header in Angular Listview component | Syncfusion
-description: Learn here all about List items count in group header in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: List items count in group header in Angular ListView component | Syncfusion
+description: Learn here all about List items count in group header in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: List items count in group header 
+control: ListView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# List items count in group header in Angular Listview component
+# List items count in group header in Angular ListView component
 
 The ListView component supports wrapping list items into a group based on the category. The category of each list item can be mapped with groupBy field of the data source. You can display grouped list items count in the list-header using the group header template. Refer to the following code sample to display grouped list item count.
 
@@ -16,7 +16,9 @@ The ListView component supports wrapping list items into a group based on the ca
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/item-count-cs4/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/listview/item-count-cs4/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/item-count-cs4/src/main.ts %}
 {% endhighlight %}

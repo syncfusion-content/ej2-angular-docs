@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Api index in Angular Listview component | Syncfusion
-description: Learn here all about Api index in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Api index in Angular ListView component | Syncfusion
+description: Learn here all about Api index in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Api index 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Api index in Angular Listview component
+# Api index in Angular ListView component
 
 * [`API`](list-view/api.md)
 * [Hide_ListViewComponent](list-view/api-listViewComponent.md)

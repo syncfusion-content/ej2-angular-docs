@@ -1,6 +1,72 @@
-
 @import 'node_modules/@syncfusion/ej2-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-lists/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-buttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
+
+#sample {
+    padding: 40px;
+}
+
+.advanced-option-list {
+    display: inline-flex;
+    list-style: none;
+    margin-left: 5px;
+    padding: 0;
+    margin-top: 4px;
+    overflow: auto;
+}
+
+.advanced-option {
+    border: 1px solid #0078d7;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 0 20px 0 5px;
+    margin: 0 3px 1px 0;
+    float: left;
+    position: relative;
+    background: white;
+    line-height: 21px;
+}
+
+.advanced-option .label {
+    color: #0078d7;
+    font-size: 10px;
+}
+
+.advanced-option .delete {
+    background: url(https://research.isg-one.com/Assets/img/Content/icn/tiny-del.png) right center no-repeat;
+    padding-left: 10px;
+    right: 0;
+    position: absolute;
+    top: 1px;
+    cursor: pointer;
+    height: 16px;
+    width: 12px;
+}
+
+#templatelist .designationstyle {
+    float: right;
+    position: relative;
+    right: 10px;
+}
+
+.cont-bg {
+    font-size: 17px;
+    height: 46px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.e-add-icon::before {
+    content: '\e823';
+}
+
+#templatelist .e-list-item {
+    height: auto;
+}
+
+.e-dialog .e-dlg-header-content+.e-dlg-content {
+    margin-top: -18px;
+}

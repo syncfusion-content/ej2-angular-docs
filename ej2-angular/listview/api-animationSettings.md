@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Api animationSettings in Angular Listview component | Syncfusion
-description: Learn here all about Api animationSettings in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Api animationSettings in Angular ListView component | Syncfusion
+description: Learn here all about Api animationSettings in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Api animationSettings 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Api animationSettings in Angular Listview component
+# Api animationSettings in Angular ListView component
 
 Animation configuration settings.
 

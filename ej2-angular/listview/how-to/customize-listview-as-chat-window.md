@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Customize listview as chat window in Angular Listview component | Syncfusion
-description: Learn here all about Customize listview as chat window in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Customize ListView as chat window in Angular ListView component | Syncfusion
+description: Learn here all about Customize ListView as chat window in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Customize listview as chat window 
+control: ListView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize listview as chat window in Angular Listview component
+# Customize ListView as chat window in Angular ListView component
 
 ListView can be customizable as chat window. To achieve that, use ListView [template](https://ej2.syncfusion.com/angular/documentation/api/listview/#template) property and [Avatar](https://ej2.syncfusion.com/angular/documentation/avatar/getting-started) component.
 
-    * Listview template property is used to showcase the ListView as chat window.
+    * ListView template property is used to showcase the ListView as chat window.
     * Avatar component is used to design the image of contact person.
 
 Refer the below template code snippet for Template of chat window.
@@ -42,12 +42,12 @@ Refer the below template code snippet for Template of chat window.
 
 ## Chat order in template
 
-In ListView template, we have rendered the list items based on receiver and sender information from dataSource of listview.
+In ListView template, we have rendered the list items based on receiver and sender information from dataSource of ListView.
 
 ## Adding messages to chat window
 
     * Use textbox to get message from user.
-    * Add the textbox message to ListView dataSource using [addItem](https://ej2.syncfusion.com/angular/documentation/api/listview/#additem) method.
+    * Add the textbox message to ListView dataSource using addItem method.
 
 ```typescript
 
@@ -63,7 +63,9 @@ public btnClick() {
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/listview/chat-window-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/listview/chat-window-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/listview/chat-window-cs2/src/main.ts %}
 {% endhighlight %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Api fields in Angular Listview component | Syncfusion
-description: Learn here all about Api fields in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Api fields in Angular ListView component | Syncfusion
+description: Learn here all about Api fields in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Api fields 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Api fields in Angular Listview component
+# Api fields in Angular ListView component
 
 ## Properties
 

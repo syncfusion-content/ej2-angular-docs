@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Index in Angular Listview component | Syncfusion
-description: Learn here all about Index in Syncfusion Angular Listview component of Syncfusion Essential JS 2 and more.
+title: Index in Angular ListView component | Syncfusion
+description: Learn here all about Index in Syncfusion Angular ListView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Index 
+control: ListView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Index in Angular Listview component
+# Index in Angular ListView component
 
 ListView component represent data in interactive hierarchical structure interface across different layouts or views, which also has features data-binding, template and grouping.
 
