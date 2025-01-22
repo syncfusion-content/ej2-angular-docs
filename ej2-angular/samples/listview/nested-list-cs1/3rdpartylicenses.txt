@@ -13,13 +13,7 @@ SEE LICENSE IN license
 @syncfusion/ej2-angular-buttons
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-inputs
-SEE LICENSE IN license
-
 @syncfusion/ej2-angular-lists
-SEE LICENSE IN license
-
-@syncfusion/ej2-angular-popups
 SEE LICENSE IN license
 
 @syncfusion/ej2-base
@@ -31,13 +25,7 @@ SEE LICENSE IN license
 @syncfusion/ej2-data
 SEE LICENSE IN license
 
-@syncfusion/ej2-inputs
-SEE LICENSE IN license
-
 @syncfusion/ej2-lists
-SEE LICENSE IN license
-
-@syncfusion/ej2-popups
 SEE LICENSE IN license
 
 rxjs
