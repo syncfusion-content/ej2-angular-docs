@@ -1,5 +1,5 @@
 #container {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #loader {
@@ -9,12 +9,4 @@
   position: absolute;
   top: 45%;
   left: 45%;
-}
-
-#sample-list {
-  display: block;
-  max-width: 400px;
-  margin: auto;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
 }

@@ -11,25 +11,3 @@
   left: 45%;
 }
 
-#element {
-  display: block;
-  max-width: 303px;
-  margin: auto;
-  border: 1px solid #dddddd;
-  border-radius: 3px;
-}
-
-#element .e-list-item {
-  height: 100px;
-  width: 100px;
-  float: left;
-  padding: 0;
-}
-
-#listImage {
-  width: 55px;
-  height: 55px;
-  margin-left: 20px;
-  margin-top: 20px;
-
-}
