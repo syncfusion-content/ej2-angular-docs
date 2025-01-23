@@ -64,6 +64,6 @@ Below are examples demonstrating how to customize the format dropdown.
 {% previewsample "page.domainurl/samples/rich-text-editor/headings-cs1" %}
 
 ## See Also
-* [Block Quote Formatting](./quotation-formatting.md)
-* [Bullet and Numbered Lists](./list-formatting.md)
-* [Code Block Insertion and Styling](./code-block-formatting.md)
+* [Block Quote Formatting](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/quotation-formatting)
+* [Bullet and Numbered Lists](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/list-formatting)
+* [Code Block Insertion and Styling](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/code-block-formatting)

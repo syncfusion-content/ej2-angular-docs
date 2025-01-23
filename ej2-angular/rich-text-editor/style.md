@@ -105,5 +105,5 @@ Use the following CSS to customize the border color in the Rich Text Editor's co
 ```
 ## See Also
 
-* [Text Styling and Formatting](./font-styling.md)
+* [Text Styling and Formatting](./font-styling)
 

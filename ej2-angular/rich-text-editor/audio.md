@@ -433,6 +433,6 @@ By configuring these options in the [quickToolbarSettings](https://ej2.syncfusio
 
 ## See Also
 
-* [Quick Toolbars in the Toolbar](./toolbar/#quick-inline-toolbar)
-* [How to Use the Video Editing Option in Toolbar Items](./video.md)
-* [How to Use the Image Editing Option in Toolbar Items](./images.md)
+* [Quick Toolbars in the Toolbar](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/toolbar#quick-inline-toolbar)
+* [How to Use the Video Editing Option in Toolbar Items](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/video)
+* [How to Use the Image Editing Option in Toolbar Items](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/images)

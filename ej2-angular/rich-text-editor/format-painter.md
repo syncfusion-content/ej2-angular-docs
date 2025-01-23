@@ -80,4 +80,4 @@ Additionally, You can perform the format painter actions programmatically using 
 
 ## See Also
 
-[Remove Text Formatting](./remove-formatting.md)
+[Remove Text Formatting](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/remove-formatting)

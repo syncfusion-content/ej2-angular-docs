@@ -61,4 +61,4 @@ You can programmatically get the current character count in the editor using the
 
 ## See Also
 
-* [How to Customize Character Count and Styles in Rich Text Editor](./style.md/#customizing-character-count-display)
+* [How to Customize Character Count and Styles in Rich Text Editor](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/style#customizing-character-count-display)

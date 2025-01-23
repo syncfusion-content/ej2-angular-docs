@@ -503,5 +503,5 @@ By configuring these options in the [quickToolbarSettings](https://ej2.syncfusio
 ## See Also
 
 * [Quick Toolbars in the Toolbar](./toolbar.md/#quick-toolbars)
-* [How to Use the Audio Editing Option in Toolbar Items](./audio.md)
-* [How to Use the Audio Editing Option in Toolbar Items](./images.md)
+* [How to Use the Audio Editing Option in Toolbar Items](./audio)
+* [How to Use the Audio Editing Option in Toolbar Items](./images)

@@ -66,4 +66,4 @@ This styling adds a light gray background, sets a monospace font, and includes p
 
 ## See Also
 
-* [How to customize the format dropdown items](./headings.md/#customizing-format-dropdown-items)
+* [How to customize the format dropdown items](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/headings#customizing-format-dropdown-items)

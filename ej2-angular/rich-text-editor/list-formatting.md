@@ -117,5 +117,5 @@ This behavior allows for efficient creation and management of multi-level lists 
 
 ## See Also
 
-[Increase and Decrease Indent Levels](./indent-and-outdent.md) 
+[Increase and Decrease Indent Levels](./indent-and-outdent) 
 
