@@ -213,9 +213,9 @@ To get the maximum number of characters in the Rich Text Editor's content, use [
 
 ## See Also
 
-* [How to change the editor type](./editor-modes)
-* [How to render the iframe](./iframe)
-* [How to render the toolbar in inline mode](./inline-mode)
+* [How to change the editor type](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/editor-modes)
+* [How to render the iframe](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/iframe)
+* [How to render the toolbar in inline mode](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/inline-mode)
 * [How to insert Emoticons](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/insert-emoticons)
 * [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/blog-posting)
 * [Reactive Form with Rich Text Editor](https://ej2.syncfusion.com/angular/demos/#/material/rich-text-editor/reactive-form)

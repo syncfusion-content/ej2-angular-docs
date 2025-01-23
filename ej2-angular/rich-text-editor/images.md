@@ -3,7 +3,7 @@ layout: post
 title: Images in Angular Rich Text Editor component | Syncfusion
 description: Learn here all about Images in Syncfusion Angular Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Image 
+control: Images 
 documentation: ug
 domainurl: ##DomainURL##
 ---

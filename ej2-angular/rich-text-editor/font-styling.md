@@ -176,5 +176,5 @@ Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` 
 
 ## See Also
 
-* [Applying Basic Text Formatting in Rich Text Editor](./basic-text-styling.md)
-* [Implementing Headings and Text Hierarchy in Rich Text Editor](./headings.md)
+* [Applying Basic Text Formatting in Rich Text Editor](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/basic-text-styling)
+* [Implementing Headings and Text Hierarchy in Rich Text Editor](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/headings)

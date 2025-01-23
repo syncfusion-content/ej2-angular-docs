@@ -88,5 +88,5 @@ The following example demonstrates how to customize the link quick toolbar using
 ## See Also
 
 * [Quick Toolbars in Toolbar](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/toolbar#quick-inline-toolbar)
-* [Image with links](./images.md/#hyperlinking-images)
-* [Insert File Attachments](./how-to/file-attachments.md)
+* [Image with links](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/images#hyperlinking-images)
+* [Insert File Attachments](./how-to/file-attachments)

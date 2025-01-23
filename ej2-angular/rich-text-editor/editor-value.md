@@ -91,7 +91,7 @@ The change event will be triggered if the content has been modified since the la
 
 ## Programmatic Content Access 
 
- you can use the [getHtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#gethtml) public method to retrieve the Rich Text Editor content.
+ You can use the [getHtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#gethtml) public method to retrieve the Rich Text Editor content.
 
 ```typescript
 
@@ -359,4 +359,4 @@ By default, the content styles of the Rich Text Editor are not included when ret
 
 ## See Also
 
-* [Implementing Prevention of cross-site scripting (XSS)](./prevent-cross-site-scripting.md)
+* [Implementing Prevention of cross-site scripting (XSS)](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/prevent-cross-site-scripting)

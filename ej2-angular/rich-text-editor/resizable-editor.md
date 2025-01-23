@@ -12,7 +12,9 @@ domainurl: ##DomainURL##
 
 The resizable editor feature allows dynamic resizing of the editor. Enable or disable this feature using the [enableResize](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor#enableresize) property in the Rich Text Editor. When `enableResize` is set to `true`, a grip appears at the bottom right corner for diagonal resizing.
 
-This feature is divided into individual modules. To use the Resizable feature, inject `ResizeService` in the provider section of `AppComponent`. The following sample demonstrates the resizable feature.
+>To use the Resizable feature, inject `ResizeService` in the configure section.
+
+The following sample demonstrates the resizable feature.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -59,5 +61,5 @@ For example, add the following to the `app.component.css` file:
 
 ## See Also
 
-* [Working with IFrame Editing Mode](./iframe.md)
-* [Using the Markdown Editor](./markdown.md)
+* [Working with IFrame Editing Mode](./iframe)
+* [Using the Markdown Editor](./markdown)

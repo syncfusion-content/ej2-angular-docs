@@ -45,4 +45,4 @@ Please refer to the sample below to add these basic text styling options in the 
 
 ## See Also
 
-[Customizing Font Family, Size, and Color in Rich Text Editor](./font-styling.md)
+[Customizing Font Family, Size, and Color in Rich Text Editor](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/font-styling)

@@ -36,4 +36,4 @@ You can customize the appearance of the placeholder text by targeting the `e-rte
 
 ## See Also
 
-* [Customizing the placeholder in Styles](./style.md/#customizing-placeholder-text)
+* [Customizing the placeholder in Styles](./style/#customizing-placeholder-text)

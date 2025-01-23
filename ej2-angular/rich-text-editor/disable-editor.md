@@ -34,4 +34,4 @@ Below are examples and code snippets demonstrating how to disable the Rich Text 
 
 ### See Also
 
-[Implementing Read-Only Mode in Rich Text Editor](./read-only-mode.md)
+[Implementing Read-Only Mode in Rich Text Editor](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/read-only-mode)

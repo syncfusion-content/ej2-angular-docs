@@ -18,7 +18,7 @@ This feature is particularly useful when you need to:
 - Quickly standardize text formatting
 - Prepare text for new styling
 
-### Configuring Clear Format
+## Configuring Clear Format
 
 To enable the Clear Format feature in your Rich Text Editor, you need to add it to the toolbar items. Follow these steps:
 
@@ -70,4 +70,4 @@ Using `Clear Format` makes it easy to undo styling changes and keep your text lo
 
 ## See Also
 
-[Copy and Apply Formatting](./format-painter.md)
+[Copy and Apply Formatting](./format-painter)
