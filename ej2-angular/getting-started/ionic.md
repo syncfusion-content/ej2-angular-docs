@@ -27,7 +27,7 @@ To initialize a new project using the command line, execute the following comman
 npm i -g @ionic/cli
 ```
 
-> We are utilizing Node.js version 16 and Ionic version 7.0.0 to support Angular 16.
+> We are utilizing Node.js version 22 and Ionic version 8.0.0 to support Angular 19.
 
 Once your development setup is complete, create a new project using the Ionic CLI by executing this command:
 
@@ -37,7 +37,7 @@ ionic start syncfusion-angular-ionic blank --type=angular
 
 This command will generate a new Ionic template application in a directory named "syncfusion-angular-ionic" and install the default npm packages necessary for the application.
 
-> Refer to this [getting started guide](https://ionicframework.com/getting-started/#cli) for Ionic framework installation details.
+> Refer to this [getting started guide](https://ionicframework.com/#cli) for Ionic framework installation details.
 
 ## Installing Syncfusion Grid Package
 
@@ -51,45 +51,20 @@ npm i @syncfusion/ej2-angular-grids --save
 
 After package installation, the component modules from Syncfusion are available to configure your application.
 
-Refer to the following code snippet to import the Grid module in `~/src/app/home/home.module.ts` from `@syncfusion/ej2-angular-grids`.
-
-```typescript
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
-import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
-import { GridModule } from '@syncfusion/ej2-angular-grids';
-
-import { HomePageRoutingModule } from './home-routing.module';
-
-
-@NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    HomePageRoutingModule,
-    GridModule
-  ],
-  declarations: [HomePage]
-})
-export class HomePageModule {}
-
-```
-
 ## Adding Syncfusion Component
 
 After importing the package, add the following grid component code snippet in the `~/src/app/home/home.page.ts` file.
 
 ```typescript
 import { Component } from '@angular/core';
+import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-root',
   template: `
   <h1>
-    Syncfusion Angular UI Grid!
+    Syncfusion Angular UI Grid with Electorn!
   </h1>
 
   <ejs-grid [dataSource]='data'>
@@ -101,9 +76,10 @@ import { Component } from '@angular/core';
     </e-columns>
   </ejs-grid>
  `,
- styleUrls: ['home.page.scss'],
+  imports: [IonApp, GridModule, IonRouterOutlet],
 })
-export class HomePage {
+export class AppComponent {
+  constructor() {}
   public data: Object[] = [
     {
       OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),

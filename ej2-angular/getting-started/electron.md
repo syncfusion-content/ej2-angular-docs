@@ -32,7 +32,7 @@ Install the Electron framework by using the following command:
 npm install -g electron
 ```
 
->Note: This setup uses Electron version 6.0.10, which is compatible with Angular 6.
+>Note: This setup uses Electron version 34.0.1, which is compatible with Angular 19.
 
 >Note: Refer to this [getting started guide](https://electronjs.org/docs/tutorial/installation) to install the Electron framework.
 
@@ -77,53 +77,48 @@ To integrate the Syncfusion Menu component into your application, update the tem
 
 ```typescript
 import { Component } from '@angular/core';
-import { enableRipple } from '@syncfusion/ej2-base';
-import { MenuItemModel } from '@syncfusion/ej2-angular-navigations';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
 
 enableRipple(true);
 
 @Component({
-    selector: 'app-root',
-    template: `<!-- To Render Menu. -->
-            <ejs-menu [items]='menuItems'></ejs-menu>`
+  selector: 'app-root',
+  imports: [GridModule, CommonModule],
+  template: `
+  <h1>
+    Syncfusion Angular UI Grid with Electorn!
+  </h1>
+
+  <ejs-grid [dataSource]='data'>
+    <e-columns>
+      <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
+      <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
+      <e-column field='Freight' headerText='Freight' textAlign='Right' format='C2' width=90></e-column>
+      <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' width=120></e-column>
+    </e-columns>
+  </ejs-grid>
+ `,
+  styleUrl: './app.component.css'
 })
 
 export class AppComponent {
-    public menuItems: MenuItemModel[] = [
-        {
-            text: 'File',
-            items: [
-                { text: 'Open',  url: 'https://www.google.com/search?q=washing+machine' },
-                { text: 'Save' },
-                { text: 'Exit' }
-            ]
-        },
-        {
-            text: 'Edit',
-            items: [
-                { text: 'Cut' },
-                { text: 'Copy' },
-                { text: 'Paste' }
-            ]
-        },
-        {
-            text: 'View',
-            items: [
-                { text: 'Toolbar' },
-                { text: 'Sidebar' }
-            ]
-        },
-        {
-            text: 'Tools',
-            items: [
-                { text: 'Spelling & Grammar' },
-                { text: 'Customize' },
-                { text: 'Options' }
-            ]
-        },
-        { text: 'Go' },
-        { text: 'Help' }
-    ];
+    public data: Object[] = [
+    {
+      OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5, OrderDate: new Date(8364186e5),
+      ShipName: 'Vins et alcools Chevalier', ShipCity: 'Reims', ShipAddress: '59 rue de l Abbaye',
+      ShipRegion: 'CJ', ShipPostalCode: '51100', ShipCountry: 'France', Freight: 32.38, Verified: !0
+    },
+    {
+      OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6, OrderDate: new Date(836505e6),
+      ShipName: 'Toms Spezialitäten', ShipCity: 'Münster', ShipAddress: 'Luisenstr. 48',
+      ShipRegion: 'CJ', ShipPostalCode: '44087', ShipCountry: 'Germany', Freight: 11.61, Verified: !1
+    },
+    {
+      OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4, OrderDate: new Date(8367642e5),
+      ShipName: 'Hanari Carnes', ShipCity: 'Rio de Janeiro', ShipAddress: 'Rua do Paço, 67',
+      ShipRegion: 'RJ', ShipPostalCode: '05454-876', ShipCountry: 'Brazil', Freight: 65.83, Verified: !0
+    }
+  ];
 }
 ```
 
@@ -132,8 +127,16 @@ export class AppComponent {
 To incorporate the styles for the Menu component, update the `style.css` with the following imports:
 
 ```typescript
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
 ```
 ## Create main.js File
 
@@ -141,12 +144,13 @@ Create a `main.js` file in the root directory of your project and add the follow
 
 ```typescript
 const { app, BrowserWindow } = require('electron');
+const path = require('path');
 let win;
 function createWindow () {     
 // Create the browser window.
 win = new BrowserWindow({ width: 800, height: 600 });
 // Load the index.html of the app. 
-win.loadFile('./dist/my-app/index.html');
+win.loadFile(path.join(__dirname, 'dist', 'my-app', 'browser', 'index.html'));
 // Open the DevTools.
 win.webContents.openDevTools();
 // Emitted when the window is closed.
@@ -184,24 +188,15 @@ Modify the `package.json` to include the following entries:
 
 ```typescript
 "main":"main.js",
-"scripts": { 
-    "ng": "ng", 
-    "start": "ng serve", 
-    "build": "ng build", 
-    "test": "ng test", 
-    "lint": "ng lint", 
-    "e2e": "ng e2e", 
-    "electron-build": "ng build --prod", 
-    "electron": "electron ." 
-}, 
-```
-
-## Update tsconfig.json
-
-Within the `tsconfig.json` file, update the target to the following setting:
-
-```typescript
-"target": "es5"
+"scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "electron-build": "ng build --configuration production",
+    "electron": "electron .",
+  },
 ```
 
 ## Running the application
