@@ -2,15 +2,11 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { DropDownListComponent,DropDownListAllModule } from '@syncfusion/ej2-angular-dropdowns'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { Gantt } from '@syncfusion/ej2-gantt';
 import { GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ButtonComponent } from '@syncfusion/ej2-angular-buttons';
-import { ChangeEventArgs} from '@syncfusion/ej2-angular-dropdowns';
+import { ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
 import { editingData } from './data';
 
 @Component({

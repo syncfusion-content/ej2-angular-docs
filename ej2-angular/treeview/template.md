@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Template in Angular Treeview component | Syncfusion
-description: Learn here all about Template in Syncfusion Angular Treeview component of Syncfusion Essential JS 2 and more.
+title: Template in Angular TreeView component | Syncfusion
+description: Learn here all about Template in Syncfusion Angular TreeView component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
-control: Template 
+control: TreeView 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Template in Angular Treeview component
+# Template in Angular TreeView component
 
-The TreeView component allows you to customize the look of TreeView nodes by using the [nodeTemplate](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodetemplate) property. This property accepts either template string or HTML element ID.
+The TreeView component allows you to customize the look of the TreeView nodes by using the [nodeTemplate](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodetemplate) property. This property accepts either template string or HTML element ID.
 
-In the following sample, employee information such as employee photo, name, and designation have been included using the `nodeTemplate` property.
+In the following sample, employee information such as employee photo, name, and designation has been included using the `nodeTemplate` property.
 
 The template expression should be provided inside the `${...}` interpolation syntax.
 

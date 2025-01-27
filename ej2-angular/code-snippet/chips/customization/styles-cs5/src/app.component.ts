@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { ChipListModule } from '@syncfusion/ej2-angular-buttons'
-import { enableRipple } from '@syncfusion/ej2-base'
 import { Component, OnInit } from '@angular/core';
 
 @Component({

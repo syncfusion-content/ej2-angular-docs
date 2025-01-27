@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Preselect the items in Angular Chips component
 
-You can preselect the items in the Chips component by utilizing the [selectedChips](https://helpej2.syncfusion.com/angular/documentation/api/chips/#selectedchips) property. We have to assign the required chip index value to the [selectedChips] property. 
+You can preselect the items in the Chips component by utilizing the [selectedChips](https://ej2.syncfusion.com/angular/documentation/api/chips/#selectedchips) property. We have to assign the required Chips index value to the [selectedChips] property. 
 
 The following example shows how to preselect the items.
 

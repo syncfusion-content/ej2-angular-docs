@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Getting started with Angular Treeview component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Treeview component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Angular TreeView Component | Syncfusion
+description:  Checkout and learn about getting started with Angular TreeView component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
-control: Getting started 
+control: TreeView
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started with Angular Treeview component
+# Getting Started with Angular TreeView Component
 
-This section explains the steps required to create a simple [Angular TreeView](https://www.syncfusion.com/angular-components/angular-treeview) component, and configure its available functionalities
+This section explains the steps required to create a simple [Angular TreeView](https://www.syncfusion.com/angular-components/angular-treeview) component, and configure its available functionalities.
 
 ## Setup Angular Environment
 
-You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications.
-To install Angular CLI use the following command.
+You can use [`Angular CLI`](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
 ```bash
 npm install -g @angular/cli
@@ -30,9 +29,9 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion Treeview Package
+## Installing Syncfusion TreeView Package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion packages from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
 Currently, Syncfusion provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
@@ -58,7 +57,7 @@ Add [`@syncfusion/ej2-angular-navigations@ngcc`](https://www.npmjs.com/package/@
 npm install @syncfusion/ej2-angular-navigations@ngcc --save
 ```
 
-To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
+To mention the ngcc package in the **package.json** file, add the suffix `-ngcc` with the package version as below.
 
 ```bash
 @syncfusion/ej2-angular-navigations:"20.2.38-ngcc"
@@ -68,7 +67,7 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 ## Adding CSS Reference
 
-* Add Treeview component's styles as given below in `styles.css`.
+* Add TreeView component's styles as given below in **styles.css**.
 
 ```css
 @import "../node_modules/@syncfusion/ej2-base/styles/material.css";
@@ -77,12 +76,21 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 @import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
 ```
 
+Alternatively, based on the location of your CSS file, you can import the styles as shown below:
+
+```css
+@import "node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "node_modules/@syncfusion/ej2-angular-navigations/styles/material.css";
+@import "node_modules/@syncfusion/ej2-inputs/styles/material.css";
+@import "node_modules/@syncfusion/ej2-buttons/styles/material.css";
+```
+
 >Note: If you want to refer the combined component styles, please make use of our [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in your application.
 
-## Add Treeview component
+## Add TreeView component
 
-Modify the template in [src/app/app.component.ts] file to render the Treeview component.
-Add the Angular Treeview by using `<ejs-treeview>` selector in `template` section of the app.component.ts file.
+Modify the template in **src/app/app.component.ts** file to render the TreeView component.
+Add the Angular TreeView by using `<ejs-treeview>` selector in `template` section of the **app.component.ts** file.
 
 ```typescript
 
@@ -103,8 +111,7 @@ export class AppComponent { }
 
 ## Binding data source
 
-TreeView can load data either from local data sources or remote data services. This can be done using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel/#datasource) property that is a member of the `fields` property. The dataSource property supports array of JavaScript objects and `DataManager`.
-Here, an array of JSON values is passed to the TreeView component.
+TreeView can load data either from local data sources or remote data services. This can be done using the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treeview/fieldsSettingsModel/#datasource) property that is a member of the `fields` property. The `dataSource` property supports array of JavaScript objects and `DataManager`. Here, an array of JavaScript objects is passed to the TreeView component.
 
 ```typescript
 
@@ -168,8 +175,8 @@ The output will appear as follows.
 {% include code-snippet/tree-view/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 
-{% highlight ts tabtitle="app.component.css" %}
-{% include code-snippet/tree-view/getting-started-cs8/src/app.component.css %}
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/getting-started-cs8/src/styles.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
@@ -183,10 +190,10 @@ The output will appear as follows.
 
 ## See Also
 
-* [How to customize treeview as accordion](./how-to/accordion-tree)
+* [How to customize TreeView as Accordion](./how-to/accordion-tree)
 
-* [How to set tooltip for treeview nodes](./how-to/set-tool-tip-for-tree-nodes)
+* [How to set tooltip for TreeView nodes](./how-to/set-tool-tip-for-tree-nodes)
 
-* [How to filter nodes in treeview](./how-to/filtering-tree-nodes)
+* [How to filter nodes in TreeView](./how-to/filtering-tree-nodes)
 
 * [How to get all the child nodes through parentID](./how-to/get-all-child-nodes)

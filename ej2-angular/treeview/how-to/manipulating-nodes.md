@@ -22,13 +22,15 @@ These methods provide the flexibility to add, remove, update, refresh, or reloca
 
 ## Dynamically adding nodes
 
-The [`addNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#addnodes) method of TreeView allows you to insert new nodes at designated positions within the TreeView by passing the necessary node information. You can add both parent and child nodes by specifying their target ID.
+The [`addNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#addnodes) method of the TreeView allows you to insert new nodes at designated positions within the TreeView by passing the necessary node information.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/manipulating-nodes-cs1/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/manipulating-nodes-cs1/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/manipulating-nodes-cs1/src/main.ts %}
 {% endhighlight %}
@@ -38,13 +40,15 @@ The [`addNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#
 
 ## Dynamically removing nodes
 
-The TreeView [`removeNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#removenodes) method lets you remove multiple nodes by providing their IDs. You can remove both parent and child nodes.
+The TreeView component has the [`removeNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/#removenodes) method, which allows you to change a specific node's text by providing its target (either the node ID or element) and the new text.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/manipulating-nodes-cs2/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/manipulating-nodes-cs2/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/manipulating-nodes-cs2/src/main.ts %}
 {% endhighlight %}
@@ -59,7 +63,9 @@ The TreeView component has the [`updateNode`](https://ej2.syncfusion.com/angular
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/manipulating-nodes-cs3/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/manipulating-nodes-cs3/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/manipulating-nodes-cs3/src/main.ts %}
 {% endhighlight %}
@@ -75,7 +81,9 @@ The [`refreshNode`](https://ej2.syncfusion.com/angular/documentation/api/treevie
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/manipulating-nodes-cs4/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/manipulating-nodes-cs4/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/manipulating-nodes-cs4/src/main.ts %}
 {% endhighlight %}
@@ -91,7 +99,9 @@ The [`moveNodes`](https://ej2.syncfusion.com/angular/documentation/api/treeview/
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/tree-view/manipulating-nodes-cs5/src/app.component.ts %}
 {% endhighlight %}
-
+{% highlight ts tabtitle="styles.css" %}
+{% include code-snippet/tree-view/manipulating-nodes-cs5/src/styles.css %}
+{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/tree-view/manipulating-nodes-cs5/src/main.ts %}
 {% endhighlight %}

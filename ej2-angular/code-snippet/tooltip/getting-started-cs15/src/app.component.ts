@@ -51,8 +51,8 @@ import { Position } from '@syncfusion/ej2-popups';
 export class AppComponent {
     @ViewChild('tooltip') public control: TooltipComponent | any;
 
-    onChange(target: string | any) {
-        this.control.position = target.value as Position;
+    onChange(value: string | any) {
+        this.control.position = value as Position;
     }
 }
 

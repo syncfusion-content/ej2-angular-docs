@@ -69,5 +69,5 @@ The toolbar and drag and drop actions between two listboxes can be enabled by se
 {% include code-snippet/listbox/dual-drag-list-box-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/listbox/dual-drag-list-box-cs1" %}
