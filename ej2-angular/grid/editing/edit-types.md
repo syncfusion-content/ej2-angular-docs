@@ -258,6 +258,24 @@ The following sample code demonstrates the customization applied to DatePicker c
   
 {% previewsample "page.domainurl/samples/grid/edit-params-datetimepicker" %}
 
+### Disable the date value prior to the selected date value in DatePicker control
+
+The Syncfusion Grid allows configuring the [DatePicker](../../datepicker) control to dynamically set a minimum date for selection. This feature ensures that users can select dates only from a specified minimum date onward, based on the context of each row's data. This functionality is particularly useful in maintaining data accuracy by preventing users from selecting invalid or illogical dates.
+
+The following example demonstrates how to configure the `DatePicker` control within the grid using the **edit** parameters of a column. This setup dynamically restricts the selection of dates in the DatePicker's calendar based on the data in the current row.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/hide-dates-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/hide-dates-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/hide-dates-cs1" %}
+
 ## Access editor components using instance
 
 Accessing editor components in the Syncfusion Grid allows you to interact with the editor instances associated with cells during editing or adding actions. This feature is especially useful when you need to perform custom actions, retrieve data from the Editor, or manipulate its properties during editing or adding operations in the Grid.
