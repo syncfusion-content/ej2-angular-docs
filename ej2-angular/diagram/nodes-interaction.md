@@ -133,6 +133,23 @@ The following code illustrates how to provide the mirror image of the original e
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-interaction-cs5" %}
 
+### Update flip at runtime
+
+You can dynamically update the flip for a node at runtime using the `^` operator. This operator allows you to apply the same flip direction multiple times, toggling the node's orientation effectively.
+The following example demonstrates how to update the flip for a node dynamically:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/nodes/node-cs4-flip/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/nodes/node-cs4-flip/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/nodes/node-cs4-flip" %}
+
 ### Flip modes
 
 The [`flipMode`](https://ej2.syncfusion.com/angular/documentation/api/diagram/flipMode/) is used to control the behavior of the flip object whether to flip the object along with the port and label.
