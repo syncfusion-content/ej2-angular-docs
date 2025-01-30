@@ -15,4 +15,10 @@ export class AppComponent {
     public tools: ToolbarSettingsModel = {
         items: ['Image']
     };
+    quickToolbarSettings: QuickToolbarSettingsModel = {
+        image: [
+            'Replace', 'Align', 'Caption', 'Remove', 'InsertLink', 'OpenImageLink', '-',
+            'EditImageLink', 'RemoveImageLink', 'Display', 'AltText', 'Dimension'
+        ]
+    };
 }

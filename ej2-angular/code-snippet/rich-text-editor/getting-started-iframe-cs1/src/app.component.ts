@@ -1,6 +1,5 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
 // import the RichTextEditorModule for the Rich Text Editor component
 import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor';
 
@@ -31,7 +30,11 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@s
   </ng-template>
   </ejs-richtexteditor>`,
   styleUrls: ['./app.component.css'],
-  providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
+  providers: [ToolbarService, LinkService, ImageService, HtmlEditorService],
+  imports: [RichTextEditorModule]
+})
+@NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 
 export class AppComponent {
