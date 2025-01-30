@@ -1,13 +1,20 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SidebarModule } from '@syncfusion/ej2-angular-navigations'
+
+
+
+
 import { Component, ViewChild } from '@angular/core';
 import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-    imports: [SidebarModule,],
-    standalone: true,
+imports: [SidebarModule, ],
+
+
+standalone: true,
     selector: 'app-root',
+    styleUrls: ['./app.component.css'],
     template: `  <div id='container'>
                         <!-- declaration of sidebar element -->
                         <div id="wrapper">
@@ -224,5 +231,7 @@ export class AppComponent {
     }
 
 }
+
+
 
 

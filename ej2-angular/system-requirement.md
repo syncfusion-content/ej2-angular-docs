@@ -8,15 +8,15 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# System requirements for Angular components 
+# System Requirements for Angular Components 
 
-This section explains the basic system requirements to work with Syncfusion Angular UI components.
+This section outlines the essential system requirements needed to work effectively with Syncfusion Angular UI components.
 
-## Angular version
+## Angular Version
 
-To get started with Syncfusion Angular UI components, make sure the Angular version is 6 or later.
+Ensure your Angular version is 6 or above to seamlessly integrate Syncfusion Angular UI components into your project.
 
-Use the below command to check the Angular CLI version.
+To verify your Angular CLI version, execute the following command in your terminal:
 
 ```bash
 ng --version
@@ -24,19 +24,23 @@ ng --version
 
 ## Node.js
 
-Angular requires an [active LTS or maintenance LTS](https://nodejs.org/en/about/previous-releases) version of Node.js.
+For Angular to function properly, an [active LTS or maintenance LTS](https://nodejs.org/en/about/previous-releases) version of Node.js is required.
 
-For more information on installing Node.js, see [nodejs.org](https://nodejs.org/en/). To check the version of Node.js running on the system, run `node -v` in a terminal window.
+For installation guidance, visit [nodejs.org](https://nodejs.org/en/). To check the Node.js version installed on your system, enter the following command in the terminal:
 
-## Browser support
+```bash
+node -v
+```
 
-The Syncfusion Angular UI components are supported only in modern browsers. Refer to the [browser compatibility](./browser/) section for more information.
+## Browser Support
 
-## Angular supported versions
+Syncfusion Angular UI components are compatible only with modern browsers. For detailed compatibility information, refer to the [browser compatibility](./browser/) section.
 
-The following table represents the supported Angular versions by different Syncfusion Angular UI components releases.
+## Angular Supported Versions
 
-| Version | Syncfusion Angular components version |
+The table below lists the Angular versions supported by various Syncfusion Angular UI component releases:
+
+| Version | Syncfusion Angular Components Version |
 | ------------- | ------------- |
 | [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 and above |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 and above |
@@ -52,8 +56,12 @@ The following table represents the supported Angular versions by different Syncf
 | [Angular v8](https://blog.angular.io/version-8-of-angular-smaller-bundles-cli-apis-and-alignment-with-the-ecosystem-af0261112a27/) | 17.1.50 and above |
 | [Angular v7](https://blog.angular.io/version-7-of-angular-cli-prompts-virtual-scroll-drag-and-drop-and-more-c594e22e7b8c/) | 16.3.32 and above |
 
-## See also
+## See Also
 
-* [Upgrade guide](https://ej2.syncfusion.com/angular/documentation/upgrade/upgrading-syncfusion/)
+- [Upgrade Guide](https://ej2.syncfusion.com/angular/documentation/upgrade/upgrading-syncfusion/)
 
-* [Setting up the local environment and workspace](https://v17.angular.io/guide/setup-local#setting-up-the-local-environment-and-workspace)
+Gain insights on how to upgrade your Syncfusion components seamlessly with our comprehensive upgrade guide.
+
+- [Setting Up the Local Environment and Workspace](https://v17.angular.io/guide/setup-local#setting-up-the-local-environment-and-workspace)
+
+Learn the steps necessary to establish your local development environment and workspace effectively.

@@ -8,54 +8,54 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with Angular CLI as Front end in ASP.NET MVC
+# Getting Started with Angular CLI as Front End in ASP.NET MVC
 
-This document explains how to create an ASP.NET MVC framework with an Angular CLI project as the front end and integrate Syncfusion Angular UI components.
+This guide details the process for creating an ASP.NET MVC framework with an Angular CLI project serving as the front end, and how to integrate Syncfusion Angular UI components.
 
 ## Prerequisites
 
-Before getting started with Syncfusion Angular Components in an ASP.NET MVC with Angular project, check whether the following are installed on the developer machine. 
+Ensure the following requirements are met before integrating Syncfusion Angular Components in an ASP.NET MVC with Angular project:
 
 * [System requirements for Syncfusion Angular UI components](https://ej2.syncfusion.com/angular/documentation/system-requirement)
 * [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 
-## Create an ASP.NET MVC Web application
+## Create an ASP.NET MVC Web Application
 
-Create a new ASP.NET MVC Web application using the Microsoft template.
+Follow these steps to create a new ASP.NET MVC Web application using the Microsoft template:
 
-1.Open the Visual Studio and select the `create a new project` option.
+1. Open Visual Studio and select the `Create a new project` option.
 
-![create project](images/create-project-template.png)
+   ![create project](images/create-project-template.png)
 
-2.Search the MVC template in the search box and select the `ASP.NET Web Application(.NET Framework)` template.
+2. Search for the MVC template in the search box and select the `ASP.NET Web Application(.NET Framework)` template.
 
-![create project](images/create-project-mvc.png)
+   ![create project](images/create-project-mvc.png)
 
-3.Enter the project name as `SyncfusionAngularASPNETMVC` and click the next button.
+3. Enter the project name as `SyncfusionAngularASPNETMVC` and click the Next button.
 
-![Asp.net MVC](images/mvc-project-name.png)
+   ![Asp.net MVC](images/mvc-project-name.png)
 
-4.Then, select `MVC` as a project template and click **Create**. Now the application is created.
+4. Select `MVC` as the project template and click **Create**. The application will be generated.
 
-![Empty template](images/asp-mvc-template.png)
+   ![Empty template](images/asp-mvc-template.png)
 
-## Create Angular CLI application 
+## Create Angular CLI Application 
 
-1.Open the `Developer Command Prompt` from Visual Studio, as follows.
+1. Open the `Developer Command Prompt` from Visual Studio as shown below.
 
-![Developer Console](images/dev-cmd.png)
+   ![Developer Console](images/dev-cmd.png)
 
-2.Create an Angular CLI application by executing the `ng new ClientApp` command, as shown in the following image.
+2. Create an Angular CLI application by executing the `ng new ClientApp` command, as demonstrated in the image below.
 
-![Create Angular CLI App](images/cli-cmd.png)
+   ![Create Angular CLI App](images/cli-cmd.png)
 
-3.Navigate to the ClientApp directory using the `cd ClientApp` command.
+3. Navigate to the ClientApp directory using the `cd ClientApp` command.
 
-![Navigate to Angular App root](images/angular-root.png)
+   ![Navigate to Angular App root](images/angular-root.png)
 
-4.Install and add the Syncfusion Angular components as described in the [Getting Started with Angular CLI](../getting-started/angular-cli/#installing-syncfusion-angular-packages) documentation.
+4. Install and add the Syncfusion Angular components by following the instructions in the [Getting Started with Angular CLI](../getting-started/angular-cli/#installing-syncfusion-angular-packages) documentation.
 
-5.Then, change the `outputPath` value to `../Scripts/ClientApp` for the production build in the `angular.json` file.
+5. Update the `outputPath` value in the `angular.json` file for the production build to `../Scripts/ClientApp`.
 
 {% tabs %}
 {% highlight json tabtitle="~/angular.json" hl_lines="12" %}
@@ -81,11 +81,11 @@ Create a new ASP.NET MVC Web application using the Microsoft template.
 {% endhighlight %}
 {% endtabs %}
 
-## Configuring ASP.NET MVC application 
+## Configuring ASP.NET MVC Application 
 
-### For building Angular application using MS Build
+### For Building Angular Application Using MS Build
 
-To automate the installation and building of the Angular application whenever the MVC application is built, add MS Build configuration to the end of the `SyncfusionAngularASPNETMVC.csproj` file, as shown in the following code sample.
+To automate the installation and build process of the Angular application when the MVC application is built, append the MS Build configuration to the end of the `SyncfusionAngularASPNETMVC.csproj` file as illustrated below.
 
 {% tabs %}
 {% highlight xml tabtitle="SyncfusionAngularASPNETMVC.csproj" %}
@@ -127,9 +127,9 @@ To automate the installation and building of the Angular application whenever th
 {% endhighlight %}
 {% endtabs %}
 
-### Configure MVC Bundle with Angular production scripts
+### Configure MVC Bundle with Angular Production Scripts
 
-To configure the MVC bundle with Angular production script and style files, modify the `App_Start\BundleConfig.cs` file as shown in the following code snippet.
+To configure the MVC bundle with Angular production script and style files, edit the `App_Start\BundleConfig.cs` file as illustrated in the following code snippet.
 
 {% tabs %}
 {% highlight c# tabtitle="BundleConfig.cs" %}
@@ -155,9 +155,9 @@ namespace SyncfusionAngularASPNETMVC
 {% endhighlight %}
 {% endtabs %}
 
-### Include Angular production scripts in MVC
+### Include Angular Production Scripts in MVC
 
-To include the Angular production scripts and style files, include the following highlighted code in the `~/Views/Shared/_Layout.cshtml` file.
+To incorporate Angular production scripts and style files, add the highlighted sections to the `~/Views/Shared/_Layout.cshtml` file.
 
 {% tabs %}
 {% highlight html tabtitle="~/_Layout.cshtml" hl_lines="9 18" %}
@@ -203,8 +203,8 @@ Add the `<app-root>` tag in the `~/Views/Home/index.cshtml` file.
 
 ## Run the Application
 
-Run the application from Visual Studio to render the component.
+Execute the application from Visual Studio to display the component.
 
 ![MVC-Output](images/output.png)
 
-> [View the Angular Sample with ASP.NET MVC on GitHub](https://github.com/SyncfusionExamples/Aspnet-mvc-with-angilar-cli).
+> [Explore the Angular Sample with ASP.NET MVC on GitHub](https://github.com/SyncfusionExamples/Aspnet-mvc-with-angular-cli).

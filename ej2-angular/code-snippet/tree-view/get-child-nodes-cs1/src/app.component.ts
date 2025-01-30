@@ -7,21 +7,20 @@ import { Component, Inject, ViewChild } from '@angular/core';
  * Treeview sample for getting child details via parent ID
  */
 @Component({
-    imports: [
-        FormsModule, TreeViewModule
+imports: [
+        FormsModule,TreeViewModule
     ],
-    standalone: true,
+
+
+standalone: true,
     selector: 'app-container',
-    template: `<div id='treeparent'><ejs-treeview id='treeElement' #treevalidate [fields]='field'  [loadOnDemand]=false></ejs-treeview></div>
-    <input type="text" class="e-input" [(ngModel)]="parentId" style="margin-left: 10px; margin-top:10px; width: 175px;" placeholder="Enter the parent ID (Ex: AS)" />
-        <button class="btn btn-primary" (click)="onSubmit()">Submit</button>`
+    template: `<div id='treeparent'><ejs-treeview id='treeElement' #treevalidate [fields]='field' (created)='onCreate($event)' [loadOnDemand]=false></ejs-treeview></div><input type="text" class="e-input" id="Nodes" style="margin-left: 10px;margin-top:10px; width: 175px;" placeholder="Enter the parent ID( Ex: AS)" />
+        <input type="button" class="btn btn-primary" value="Submit"id="btn" />`
 })
 export class AppComponent {
-    
-    public parentId: string = '';
 
-    // Data source for TreeView component
-    public data: Object[] = [
+   // Data source for TreeView component
+   public data: Object[] = [
         {
             code: "AF", name: "Africa", countries: [
                 { code: "NGA", name: "Nigeria" },
@@ -32,11 +31,9 @@ export class AppComponent {
         {
             code: "AS", name: "Asia", countries: [
                 { code: "CHN", name: "China" },
-                {
-                    code: "IND", name: "India", countries: [
-                        { code: "TN", name: "TamilNadu" }
-                    ]
-                },
+                { code: "IND", name: "India" , countries: [
+                    { code: "TN", name: "TamilNadu" }
+                ]},
                 { code: "JPN", name: "Japan" }
             ]
         },
@@ -63,20 +60,28 @@ export class AppComponent {
         },
     ];
 
-    public field: Object = { dataSource: this.data, id: 'code', text: 'name', child: 'countries' };
+    public field:Object ={  dataSource: this.data, id: 'code', text: 'name', child: 'countries' };
 
-    @ViewChild('treevalidate') tree?: TreeViewComponent;
+    @ViewChild ('treevalidate') tree?: TreeViewComponent;
 
-    onSubmit() {
-        if (this.tree) {
-            const element = this.tree.element.querySelector(`[data-uid="${this.parentId}"]`);
-            if (element) {
-                const liElements = element.querySelectorAll('ul li');
-                const childNodes = Array.from(liElements).map(li => this.tree?.getNode(li));
-                alert(JSON.stringify(childNodes));
-            }
-        }
+    public onCreate(args: any): void {
+        let proxy = this.tree as TreeViewComponent;
+        (document.getElementById("btn") as HTMLElement).addEventListener("click",(event)=>{
+            let id = (document.getElementById('Nodes') as HTMLElement | any).value
+            let element = proxy?.element.querySelector('[data-uid="' + id + '"]');
+            // Gets the child Element
+            if (element != null) {
+                  let liElements = element.querySelectorAll('ul li');
+                  let arr = [];
+                  for (let i = 0; i < (liElements as NodeListOf<Element>).length; i++) {
+                    let nodeData = proxy?.getNode((liElements as NodeListOf<Element>)[i]);
+                    arr.push(nodeData);
+                  }
+                  alert(JSON.stringify(arr));
+                }
+        });
     }
 }
+
 
 

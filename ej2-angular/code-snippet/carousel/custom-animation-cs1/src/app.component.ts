@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { CarouselModule, CarouselAnimationEffect } from '@syncfusion/ej2-angular-navigations'
+import { CarouselModule } from '@syncfusion/ej2-angular-navigations'
+
+
+
 import { Component } from "@angular/core";
+import { CarouselAnimationEffect } from "@syncfusion/ej2-angular-navigations";
 
 @Component({
 imports: [ CarouselModule],
+
+
 standalone: true,
   selector: "app-root",
   template: `<!-- To Render Carousel. -->
@@ -58,3 +64,5 @@ standalone: true,
 export class AppComponent {
   public carouselAnimation: CarouselAnimationEffect = 'Custom';
 }
+
+

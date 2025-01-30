@@ -1,12 +1,11 @@
 import { Component, Input, ViewChild } from '@angular/core';
-import { DropDownListComponent, DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
+import { DropDownListComponent } from '@syncfusion/ej2-angular-dropdowns';
+import { DatePickerModule } from '@syncfusion/ej2-angular-calendars';
 
 export let ddlObject: DropDownListComponent;
 
 @Component({
   selector: 'drop-down',
-  standalone: true,
-  imports: [DropDownListModule],
   templateUrl: './drop-down.component.html',
   styles: [`h1 { font-family: Lato; }`]
 })

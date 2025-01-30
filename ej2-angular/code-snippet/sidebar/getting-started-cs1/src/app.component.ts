@@ -1,13 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { SidebarModule } from '@syncfusion/ej2-angular-navigations'
+
+
+
 import { Component, ViewChild } from '@angular/core';
 import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-    imports: [SidebarModule,],
-    standalone: true,
+imports: [SidebarModule, ],
+
+
+standalone: true,
     selector: 'app-root',
+    styleUrls: ['./app.component.css'],
     template: ` <ejs-sidebar id="default-sidebar" #sidebar (created)="onCreated($event)" style="visibility: hidden">
                     <div class="title"> Sidebar content</div>
                 </ejs-sidebar>
@@ -24,4 +30,6 @@ export class AppComponent {
         (this.sidebar as SidebarComponent).element.style.visibility = '';
     }
 }
+
+
 

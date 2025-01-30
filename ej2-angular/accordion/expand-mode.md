@@ -12,8 +12,8 @@ domainurl: ##DomainURL##
 
 The Accordion supports the two listed types of expand modes while expanding or collapsing the item.
 
-* [Single](#single)
-* [Multiple](#multiple)
+* Single
+* Multiple
 
 ## Single
 

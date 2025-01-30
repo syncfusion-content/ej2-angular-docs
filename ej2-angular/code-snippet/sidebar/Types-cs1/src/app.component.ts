@@ -1,17 +1,25 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SidebarModule } from '@syncfusion/ej2-angular-navigations'
-import { ButtonModule, RadioButtonModule } from '@syncfusion/ej2-angular-buttons'
-import { Component, ViewChild } from '@angular/core';
+import { ButtonModule, RadioButtonModule  } from '@syncfusion/ej2-angular-buttons'
+
+
+
+
+import { Component, ViewChild  } from '@angular/core';
 import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 import { ButtonComponent, RadioButtonComponent } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-    imports: [
-        SidebarModule, ButtonModule, RadioButtonModule
+imports: [
+        
+        SidebarModule, ButtonModule, RadioButtonModule 
     ],
-    standalone: true,
+
+
+standalone: true,
     selector: 'app-root',
+    styleUrls: ['./app.component.css'],
     template: `  <ejs-sidebar id="default-sidebar" #sidebar [type]='type' [target]='target' (created)="onCreated($event)" style="visibility: hidden">
                         <div class="title"> Sidebar content</div>
                         <div class="sub-title">
@@ -53,36 +61,36 @@ export class AppComponent {
     public type: string = 'Push';
     public target: string = '.content';
     public onCreated(args: any) {
-        (this.sidebar as SidebarComponent).element.style.visibility = '';
+         (this.sidebar as SidebarComponent).element.style.visibility = '';
     }
-    btnClick() {
-        if ((this.togglebtn as ButtonComponent).element.classList.contains('e-active')) {
+    btnClick(){
+        if((this.togglebtn as ButtonComponent).element.classList.contains('e-active')){
             (this.togglebtn as ButtonComponent).content = 'Open';
             this.sidebar?.hide();
         }
-        else {
+        else{
             (this.togglebtn as ButtonComponent).content = 'Close';
             this.sidebar?.show();
         }
     }
     closeClick() {
-        this.sidebar?.hide();
-        (this.togglebtn as ButtonComponent).element.classList.remove('e-active');
-        (this.togglebtn as ButtonComponent).content = 'Open'
+         this.sidebar?.hide();
+         (this.togglebtn as ButtonComponent).element.classList.remove('e-active');
+         (this.togglebtn as ButtonComponent).content = 'Open'
     }
     // change the togglebtn state
     changestate() {
-        if ((this.sidebar as SidebarComponent).type == 'Auto') {
+        if((this.sidebar as SidebarComponent).type == 'Auto'){
             (this.togglebtn as ButtonComponent).element.classList.add('e-active');
             (this.togglebtn as ButtonComponent).content = 'close'
         }
-        else {
+        else{
             (this.togglebtn as ButtonComponent).element.classList.remove('e-active');
             (this.togglebtn as ButtonComponent).content = 'Open';
         }
     }
-    changeHandler(args: any): void {
-        if (args.event.target.ej2_instances[0].label == 'Over') {
+    changeHandler(args: any) : void {
+        if(args.event.target.ej2_instances[0].label == 'Over') {
             (this.sidebar as SidebarComponent).type = 'Over';
         } else if (args.event.target.ej2_instances[0].label == 'Push') {
             (this.sidebar as SidebarComponent).type = 'Push';
@@ -95,4 +103,5 @@ export class AppComponent {
         this.sidebar?.dataBind();
     }
 }
+
 

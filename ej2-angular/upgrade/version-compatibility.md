@@ -8,14 +8,14 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion Angular supported versions
+# Syncfusion Angular Supported Versions
 
-## Angular version compatibility
+## Angular Version Compatibility
 
-The following table represents the supported Angular versions by different Syncfusion Angular UI components releases.
+The table below outlines the compatible Angular versions for different releases of Syncfusion Angular UI components.
 
-| Version | Syncfusion Angular components version |
-| ------------- | ------------- |
+| Angular Version | Syncfusion Angular Components Version |
+| --------------- | ------------------------------------- |
 | [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/) | 26.1.35 and above |
 | [Angular v18](https://blog.angular.dev/angular-v18-is-now-available-e79d5ac0affe/) | 25.2.3 and above |
 | [Angular v17](https://blog.angular.io/introducing-angular-v17-4d7033312e4b/) | 23.2.4 and above |
@@ -30,22 +30,20 @@ The following table represents the supported Angular versions by different Syncf
 | [Angular v8](https://blog.angular.io/version-8-of-angular-smaller-bundles-cli-apis-and-alignment-with-the-ecosystem-af0261112a27/) | 17.1.50 and above |
 | [Angular v7](https://blog.angular.io/version-7-of-angular-cli-prompts-virtual-scroll-drag-and-drop-and-more-c594e22e7b8c/) | 16.3.32 and above |
 
->By default, Syncfusion Angular packages (>=20.2.36) support the [Angular Ivy distribution](https://docs.angular.lat/guide/ivy). These packages are compatible with Angular versions 12 and above. After this release (>=20.2.36), you need to add the suffix `-ngcc` along with the package version (`@syncfusion/ej2-angular-grids:"20.2.38-ngcc"`) in the `package.json` file. For more information on Angular package installation, see [Angular package installation](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/#installing-Syncfusion-Grid-Package).
+> From version 20.2.36 onwards, Syncfusion Angular packages are compatible with the [Angular Ivy distribution](https://docs.angular.lat/guide/ivy), supporting Angular 12 and above. For versions >=20.2.36, add the suffix `-ngcc` to the package version in the `package.json` (e.g., `@syncfusion/ej2-angular-grids: "20.2.38-ngcc"`). For more details on Angular package installation, refer to [Angular package installation](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli/#installing-Syncfusion-Grid-Package).
 
-## Syncfusion version information
+## Syncfusion Version Information
 
-Syncfusion follows a quarterly release schedule, introducing new volumes every three months. To track these releases and their associated changes, Syncfusion Angular components utilize a sequence-based identifier system, employing the format **Major.Minor.Revision**. This system enables developers to easily monitor modifications made in each release.
+Syncfusion adheres to a quarterly release schedule, delivering new volumes every three months. To streamline tracking of these releases, Syncfusion Angular components use a semantic versioning system with the format **Major.Minor.Revision**. This system allows developers to easily follow changes with each new version.
 
-For example, if the release package version is `22.1.34`, the version number can be interpreted as follows:
+For instance, a release version like `22.1.34` can be interpreted as follows:
 
-* **22** represents the `major release` version. This number changes every three months and encompasses significant updates, new features, as well as bug fixes and breaking changes.
+* **22** - Indicates the `major release` version, updated every three months including major enhancements, new features, bug fixes, and breaking changes.
+* **1** - Represents the `minor release` version, highlighting new features and bug fixes without introducing breaking changes.
+* **34** - Stands for the `revision number`, incremented for weekly patch releases, mainly consisting of bug fixes without new features or breaking changes.
 
-* **1** corresponds to the `minor release` version. This number signifies releases primarily focused on new features and addressing bugs, without introducing breaking changes.
+## See Also
 
-* **34** denotes the `revision number`, also referred to as the `patch number`. This number increases for weekly patch releases, which predominantly consist of bug fixes and do not introduce new features or breaking changes.
+* [Syncfusion Product Release Lifecycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
 
-## See also
-
-* [Syncfusion product release lifecycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
-
-* [Upgrade guide](https://help.syncfusion.com/upgrade-guide/angular-ui-components)
+* [Upgrade Guide](https://help.syncfusion.com/upgrade-guide/angular-ui-components)

@@ -1,16 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Component, ViewChild } from '@angular/core';
-import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
+import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService, ToolbarSettingsModel, RichTextEditorComponent } from '@syncfusion/ej2-angular-richtexteditor';
-import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor'
-
-
+import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor';
 import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
-
-import { Component } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
     imports: [RichTextEditorAllModule],

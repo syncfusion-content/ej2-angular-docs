@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Tree Shaking 
 
-Tree shaking is an optimization technique used in modern JavaScript and TypeScript development using bundling tools like Webpack or Rollup. Its primary purpose is to eliminate dead or unused code from the application's bundle, resulting in smaller, more efficient, and faster-loading web applications.
+Tree shaking is a powerful optimization technique used in modern JavaScript and TypeScript development with tools like Webpack or Rollup. Its main goal is to remove dead or unused code from the application's bundle, resulting in smaller, more efficient, and faster-loading web applications.
 
-This section explains how tree shaking works in Angular and how to implement it with Syncfusion Angular components in the application.
+In this guide, we explore how tree shaking is implemented in Angular applications and how it synergizes with Syncfusion Angular components to optimize performance.
 
 ## Tree Shaking in Angular  
 
-The Angular CLI uses Webpack by default for bundling script files, which has supported Tree Shaking since version 2. Generally, it works based on the static structure of ES2015 module syntax, which includes `import` and `export` statements. If your code does not use the exported methods or functions from your application or libraries, it becomes unused code in the browser. So, tree shaking removes all such unused code from the output bundle. This leads to improved performance with faster load times due to minimal JavaScript code, resulting in a better user experience. 
+The Angular CLI, utilizing Webpack for bundling script files, has supported tree shaking since Angular CLI version 2. Tree shaking operates on the static structure of ES2015 module syntax, using `import` and `export` declarations. Any exported functions or methods that are not used in your code are considered unnecessary and removed from the output bundle. This results in improved performance, with faster load times and consequently a better user experience.
 
 N> Ahead Of Time (AOT) compilation process performs tree shaking in the Angular application, which was enabled by default starting from Angular version 9. To know more about AOT compilation, refer to this [documentation](./angular-aot).
 
@@ -26,11 +26,11 @@ Syncfusion Angular components support Tree Shaking by default and do not require
 
 ## Implementing Tree Shaking in an Angular Application 
 
-The following steps demonstrate how to create an Angular application with Syncfusion components and bundle it with tree shaking. 
+Follow these steps to implement an Angular application with Syncfusion components, optimizing it through tree shaking:
 
-1.Create an Angular application with Syncfusion Angular DataGrid component as described in the [Getting Started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone) using the Angular Standalone.
+1. **Create an Angular Application:** Begin with the Syncfusion Angular DataGrid component as outlined in the [Getting Started](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone) guide using Angular Standalone.
 
-2.Use the following code snippet that shows how to enable Tree Shaking in the `angular.json` configuration file.
+2. **Configuration for Tree Shaking:** Modify the `angular.json` configuration file to enable optimization features for tree shaking.
 
 {% tabs %}
 {% highlight json tabtitle="angular.json" %}
@@ -49,13 +49,13 @@ The following steps demonstrate how to create an Angular application with Syncfu
 {% endhighlight %}
 {% endtabs %}
 
-3.Run the `ng build –configuration=production` or `ng serve –configuration=production` command to build or serve the application with Tree Shaking enabled.
+3. **Build the Application:** Use the command `ng build –configuration=production` or `ng serve –configuration=production` to build or serve the application with tree shaking enabled.
 
-4.After build the application, users can utilize the [bundle analyzer](https://www.npmjs.com/package/source-map-explorer) tool to ensure that tree shaking works properly in their application.
+4. **Verify the Bundle Size:** After building the application, use the [source-map-explorer](https://www.npmjs.com/package/source-map-explorer) tool to analyze and ensure that tree shaking is working effectively.
 
-> [View the Angular Tree Shaking sample on GitHub](https://github.com/SyncfusionExamples/syncfusion-angular-tree-shaking)
+> [Explore the Angular Tree Shaking Example on GitHub](https://github.com/SyncfusionExamples/syncfusion-angular-tree-shaking)
 
-By following these steps and implementing tree shaking in the Angular application, users can optimize the performance and enhance the overall user experience.
+By adhering to these practices, you can significantly enhance the performance of your Angular application and deliver an improved user experience.
 
 ## Bundle size for Syncfusion Angular Grid component
 

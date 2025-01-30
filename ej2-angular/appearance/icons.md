@@ -10,27 +10,27 @@ domainurl: ##DomainURL##
 
 # Predefined Icons Library in Syncfusion Angular Component
 
-Syncfusion's icon library is a collection of pre-designed icons that can be used to enhance the user interface of an application. This pre-designed icons are set of `base64` formatted font icons. Utilizing this icon library can make it simpler to create a cohesive, visually pleasing design for an application.
+Syncfusion offers a versatile icon library consisting of pre-designed icons to enhance application interfaces. These icons are provided as `base64` formatted font icons, allowing for a cohesive, visually appealing application design.
 
-## Referring icons in Angular application
+## Referring Icons in Angular Applications
 
-Using the below approaches, the icons can be referenced in the Angular application.
+Icons can be easily incorporated into Angular applications using the following methods:
 
-* [npm package](#the-npm-package) - Use the npm package to access icons.
+* [npm package](#the-npm-package) - Access icons through the npm package.
 
-* [CDN reference](#cdn-reference) - Use the static web asset to access icons.
+* [CDN reference](#cdn-reference) - Utilize static web assets for icon access.
 
-### The npm package
+### The npm Package
 
-All Syncfusion theme icons are shipped in the [ej2-icons](https://www.npmjs.com/package/@syncfusion/ej2-icons) package, which is published on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. This package contains both CSS and SCSS theme files for all themes.
+Syncfusion theme icons are included in the [ej2-icons](https://www.npmjs.com/package/@syncfusion/ej2-icons) package, available on [npmjs.com](https://www.npmjs.com/~syncfusionorg). This package provides CSS and SCSS theme files for all themes.
 
-Icons can be used from the npm package `ej2-icons`. To use the icons, install the npm package using the following command:
+To use icons from the `ej2-icons` npm package, install it with the command:
 
 ```bash
  npm install @syncfusion/ej2-icons
 ```
 
-Refer to the following syntax to use icons in a Angular application:
+In your Angular application, use the following syntax to reference icons:
 
 `[src/styles.css]`
 
@@ -44,40 +44,38 @@ Refer to the following syntax to use icons in a Angular application:
 @import "../node_modules/@syncfusion/ej2-icons/styles/material.css";
 ```
 
-### CDN reference
+### CDN Reference
 
-All Syncfusion theme icons are available on the CDN. Instead of using a local resource on the server, use a cloud CDN to refer to the icons.
+Syncfusion theme icons are also accessible via CDN. Using a cloud CDN instead of local resources helps ensure current and compatible icon versions align with Syncfusion Angular packages.
 
-Make sure that the version of the icons in the URL matches the version of the Syncfusion Angular package. This will prevent compatibility issues and ensure that the correct version of the icons is loaded.
-
-To use the icons from the CDN, refer to the icons by URLs in the application. This can be done by linking the icons in the HTML file by adding a link tag to the head section.
+To utilize icons via CDN, link the appropriate URLs in your application's HTML head section. Ensure version compatibility to avoid conflicts.
 
 ```html
 // Bootstrap5
 <head>
     <link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet"/>
 </head>
-//Material
+// Material
 <head>
     <link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/material.css" rel="stylesheet"/>
 </head>
 ```
 
-## Steps to use icons library
+## Steps to Use Icons Library
 
-Let's create a Angular application using the following command:
+Create an Angular application using the following command:
 
-For an introduction and configuration of the common specifications, see [getting started with the Syncfusion Angular application](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli).
+For introductory and configuration guidance, refer to [getting started with the Syncfusion Angular application](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli).
 
-### Using icons directly in HTML element
+### Using Icons Directly in HTML Elements
 
-The built-in Syncfusion icons can be rendered directly in the HTML element by defining the `e-icons` class, which contains the font-family and common properties of font icons, and defining the available icon's class with the `e-` prefix.
+Render Syncfusion icons directly in HTML by assigning the `e-icons` class, encompassing the font-family and shared properties, and including the desired icon class prefixed with `e-`.
 
-The following steps explain the direct rendering of the Syncfusion icon in the HTML element.
+Here's how to implement direct icon rendering:
 
-1. Add the class name `e-icons` to the HTML element that needs to render the icon.
+1. Assign `e-icons` to the element you wish to render.
 
-2. Add the icon class with corresponding icon content from the [available icons](#available-icons). For example, the below code snippet represents the paste icon class.
+2. Utilize the specific icon class with the desired content. E.g., for the paste icon:
 
     ```css
     .e-paste:before{
@@ -91,13 +89,13 @@ The following steps explain the direct rendering of the Syncfusion icon in the H
     <span class="e-icons e-paste"></span>
     ```
 
-4. Add the CDN link reference of icons library in the `~index.html` file.
+4. In `~index.html`, link the icons library CDN.
 
     ```html
     <link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
     ```
 
-   The below code snippet represents the complete example of icon usage.
+   Complete implementation example:
 
     {% tabs %}
     {% highlight ts tabtitle="app.component.ts" %}
@@ -111,14 +109,13 @@ The following steps explain the direct rendering of the Syncfusion icon in the H
   
     {% previewsample "page.domainurl/samples/common/icons" %}
 
-### Icon size
+### Icon Size
 
-The `ej2-icons` package offers options to display icons in different size modes. A user can use different icon sizes in their application based on touch or mouse mode. If the user is using touch mode, add `e-large` class to the element to make the icon easily interact, or add the `e-small` or `e-medium` class in mouse mode.
+The `ej2-icons` package allows displaying icons in various size modes. Depending on interaction mode (touch or mouse), use `e-large`, `e-medium`, or `e-small` for appropriate sizing:
 
-The pre-defined icon size is present in the available classes listed below.
-* `e-small` - Sets the icon size as `8px`.
-* `e-medium` - Sets the icon size to `16px`.
-* `e-large` - Sets the icon size to `24px`.
+* `e-small` - Sets size to `8px`.
+* `e-medium` - Sets size to `16px`.
+* `e-large` - Sets size to `24px`.
 
   **Example:**
 
@@ -140,9 +137,9 @@ The pre-defined icon size is present in the available classes listed below.
   
     {% previewsample "page.domainurl/samples/common/icons-size" %}
 
-### Icon appearance customization
+### Icon Appearance Customization
 
-The Syncfusion Angular icons can be customized with custom color and size by overriding the `e-icons` class. Customizing the icons in the library can be useful for making the icons more visually appealing and fitting to the design of the application. For example, a user can change the color of an icon to match the color scheme of their application, or increase the size of an icon to make it more visible on smaller screens. It may also be useful for creating a consistent look and feel across different parts of the application. Overall, customizing the icons in the library can improve the overall user experience of the application.
+Customize Syncfusion Angular icons for color and size by modifying the `e-icons` class. Tailoring icons can enhance visual appeal and adapt them to match your application's design. Changes like color adjustment to fit a theme, or resizing for better visibility improve the user experience.
 
     {% tabs %}
     {% highlight ts tabtitle="app.component.ts" %}
@@ -158,7 +155,7 @@ The Syncfusion Angular icons can be customized with custom color and size by ove
 
 ## Available Icons
 
-The complete package of Essential JS 2 icons is listed below. The corresponding icon content can be referred in the content section.
+Browse the full Essential JS 2 icon package below. Icon content references are available in respective content sections.
 
 <!-- markdownlint-disable MD033 -->
 

@@ -10,30 +10,25 @@ domainurl: ##DomainURL##
 
 #  Syncfusion Angular Components - Security
 
-Security is a critical aspect of web applications to protect them from various threats and vulnerabilities. Using HTTPS for data encryption, validating and sanitizing user inputs, and implementing strong authentication measures such as multi-factor authentication are indispensable practices in Web application development.
+Security is paramount in web application development to guard against various threats and vulnerabilities. Essential practices include using HTTPS for data encryption, validating and sanitizing user inputs, and implementing robust authentication measures such as multi-factor authentication.
 
-Syncfusion Angular components are implemented with these security considerations.
+Syncfusion Angular components are engineered with these critical security measures in mind, integrating seamlessly with Angular's built-in security features.
 
-Angular includes inherent security functionalities.
-
-* [Security in Angular](https://angular.io/guide/security)
+* [Security in Angular](https://v17.angular.io/guide/security)
 
 ## Security Vulnerabilities
 
-Security vulnerabilities in web applications refer to weaknesses or flaws in the design, implementation, or configuration of a web application that can be exploited by attackers to compromise the application's integrity, confidentiality, or availability. Here you can see some of the vulnerabilities.
-
+Security vulnerabilities in web applications arise from weaknesses in the design, implementation, or configuration, potentially compromising the resources and data. Below are some common vulnerabilities:
 * [Cross-Site Scripting](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting) - XSS is a security vulnerability that can occur in web applications. These scripts can steal session cookies, redirect users to malicious websites, or deface the website. XSS vulnerabilities typically arise when the application fails to properly validate or encode user-supplied input before rendering it in the browser.
 
 * [Cross-Site Request Forgery](https://developer.mozilla.org/en-US/docs/Glossary/CSRF) - CSRF is a type of web security vulnerability that allows an attacker to force a logged-in user to perform actions on a web application without their consent or knowledge. CSRF attacks exploit the trust that a web application has in the user's browser by tricking it into sending unauthorized requests to the vulnerable application.
 
 * Injection Attacks - These occur when an attacker injects malicious code (such as SQL injection, XML injection, or command injection) into input fields or parameters of a web application. If the application does not properly sanitize or validate user inputs, it can execute unintended commands or gain unauthorized access to sensitive data.
 
-Syncfusion Angular components provide support for implementing web applications with enhanced security features.
-
+Syncfusion Angular components support the implementation of secure web applications by addressing these vulnerabilities.
 ## Security Considerations
 
-Security holds significant importance in software development, and the incorporation of security measures from the outset of the development process is vital for the protection of applications. Syncfusion takes a thorough approach to security in the development of Angular components, encompassing all critical aspects. The following considerations provide a comprehensive overview of security measures.
-
+Security should be a foundational aspect of software development. Syncfusion adheres to comprehensive security protocols in the development of Angular components, focusing on the following aspects:
 * [Content Security Policy](#content-security-policy)
 * [HTML Sanitizer](#html-sanitizer)
 * [Browser Storage](#browser-storage)
@@ -46,8 +41,7 @@ To implement Content Security Policy (CSP) in your application, include a `<meta
 
 #### CSP Directives
 
-The following directives are essential for utilizing Syncfusion Angular components.
-
+For using Syncfusion Angular components effectively, the following directives are advised:
 |    Directives    |    Description    |    Examples    |
 |------------------|-------------------|----------------|
 |  `style-src`  | Defines the allowed sources for loading stylesheets. This helps mitigate style-based attacks by restricting the locations from which styles can be applied. | `style-src 'self' https://cdn.syncfusion.com/ https://fonts.googleapis.com/ 'unsafe-inline';`|
@@ -71,13 +65,13 @@ To know more information about the CSP, refer this [documentation](https://ej2.s
 
 ### HTML Sanitizer
 
-An HTML sanitizer is a tool or program that helps remove potentially malicious or harmful code from HTML documents. This type of sanitizer is commonly used in web applications to prevent cross-site scripting (XSS) attacks, which can inject malicious code into a website and compromise user data. HTML sanitizers typically work by analyzing HTML code and removing any potentially dangerous or unwanted elements, such as script tags, inline styles, or event handlers. Other aspects of the HTML may also be modified or cleaned up, such as removing extra whitespace or fixing malformed code.
+An HTML sanitizer removes potentially harmful code from HTML documents, preventing XSS attacks by eliminating malicious code like script tags or inline styles.
 
-To avoid the risk of code injection, Syncfusion has provided the [enableHtmlSanitizer](https://ej2.syncfusion.com/angular/documentation/api/button#enablehtmlsanitizer) API into its UI components. This ensures that HTML strings submitted by users are sanitized, enhancing security measures against potential threats.
+Syncfusion ensures security by offering the [enableHtmlSanitizer](https://ej2.syncfusion.com/angular/documentation/api/button#enablehtmlsanitizer) API. It sanitizes HTML strings, reducing potential threats.
 
-When this property is enabled, the HTML string undergoes a thorough sanitization process before being rendered in the component. This approach ensures that user inputs containing potential security threats are meticulously filtered, addressing the risk of XSS and contributing to the overall security robustness of our components in the face of potential attacks.
+The `enableHtmlSanitizer` property, when enabled, ensures content undergoes rigorous sanitization to mitigate XSS risks, strengthening component security.
 
-To sanitize input values in a web application using Syncfusion sanitizer, you can use the following code.
+Here is a sample code to sanitize input values using Syncfusion:
 
 ```ts
 import { SanitizeHtmlHelper } from '@syncfusion/ej2-base';
@@ -115,6 +109,4 @@ Browser storage refers to the mechanisms provided by web browsers to store data 
 
 #### Local Storage
 
-[Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) is a type of web storage mechanism provided by web browsers that allows web applications to store data locally on a user's device. It provides a simple key-value pair storage interface and is accessible via Angular.
-
-Syncfusion Angular components utilize local storage only when persistence is enabled.
+[Local Storage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) allows persistent data storage on client devices using key-value pairs, accessible through Angular. Syncfusion uses local storage only when persistence is enabled.

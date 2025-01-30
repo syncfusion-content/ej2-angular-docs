@@ -82,7 +82,7 @@ imports: [
     ],
     providers: [ GaugeTooltipService ],
     standalone: true,
-    selector: 'app-root',
+    selector: 'app-container',
     // specifies the template string for the Charts component
     template: `<ejs-circulargauge id='circular-container'></ejs-circulargauge>`,
     encapsulation: ViewEncapsulation.None

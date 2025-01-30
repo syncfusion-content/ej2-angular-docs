@@ -1,3 +1,4 @@
+
 @import 'node_modules/@syncfusion/ej2-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
@@ -6,19 +7,17 @@
 @import 'node_modules/@syncfusion/ej2-angular-inputs/styles/material.css';
 
 #treeparent {
-	width: 225px;
+    width: 225px;
 	min-height: 250px;
 	max-height: auto;
 	border: 1px solid #bbbbbb;
 	margin: 0 auto;
 }
-
 .e-mask .e-input {
 	border: none;
 	border-bottom: 1px solid #bbbbbb;
 }
-
-#search {
-	width: 225px;
-	height: 26px;
+#search{
+    width: 225px;
+    height: 26px;
 }

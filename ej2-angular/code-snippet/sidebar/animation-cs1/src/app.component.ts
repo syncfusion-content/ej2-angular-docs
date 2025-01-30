@@ -1,14 +1,21 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { SidebarModule } from '@syncfusion/ej2-angular-navigations'
+
+
+
+
 import { Component, ViewChild } from '@angular/core';
 import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-  imports: [SidebarModule,],
-  standalone: true,
-  selector: 'app-root',
-  template: ` <ejs-sidebar id="sidebar-element" class="sidebar" #sidebar  [showBackdrop]="showBackdrop" [closeOnDocumentClick]="closeOnDocumentClick" (created)="onCreated($event)" style="visibility: hidden">
+imports: [SidebarModule, ],
+
+
+standalone: true,
+    selector: 'app-root',
+    styleUrls: ['./app.component.css'],
+    template: ` <ejs-sidebar id="sidebar-element" class="sidebar" #sidebar  [showBackdrop]="showBackdrop" [closeOnDocumentClick]="closeOnDocumentClick" (created)="onCreated($event)" style="visibility: hidden">
                     <div class="title"> Sidebar content</div>
                     <div class="sub-title">
                         * Sidebar is rendered with animation effect
@@ -38,8 +45,8 @@ export class AppComponent {
   public closeOnDocumentClick: boolean = true;
 
   public onCreated(args: any) {
-    (this.sidebar as SidebarComponent).element.style.visibility = '';
-  }
+         (this.sidebar as SidebarComponent).element.style.visibility = '';
+    }
   // Close Button
   closeClick_btn(): void {
     (this.sidebar as SidebarComponent).element.classList.remove("sidebar");
@@ -51,37 +58,39 @@ export class AppComponent {
     this.sidebar?.hide();
   };
   // Zoom Effect
-  zoom(): void {
+  zoom():void{
     this.sidebar?.show();
     (this.sidebar as SidebarComponent).element.classList.add("w3-animate-zoom");
   };
   // Open Door
-  open_door(): void {
+  open_door():void{
     this.sidebar?.show();
-    let sidebar_element: Element = document.getElementsByClassName("e-sidebar-overlay")[0];
+    let sidebar_element: Element =document.getElementsByClassName("e-sidebar-overlay")[0];
     sidebar_element.classList.add("move");
-    (document.getElementsByClassName("move")[0] as any).style.transform = "rotateX(-20deg)";
+    (document.getElementsByClassName("move")[0] as any).style.transform ="rotateX(-20deg)";
   };
   // Bottom To Top
-  bottom_top(): void {
+  bottom_top():void{
     this.sidebar?.show();
     (this.sidebar as SidebarComponent).element.classList.add("w3-animate-bottom");
   };
   // Rotate
-  rotate(): void {
+  rotate():void{
     this.sidebar?.show();
     (this.sidebar as SidebarComponent).element.classList.add("rotate");
   };
   // Rotate 3D
-  rotate_3d(): void {
+  rotate_3d():void{
     this.sidebar?.show();
     (this.sidebar as SidebarComponent).element.classList.add("rotate_3d");
   };
   // Reverse Slide Out
-  reverse(): void {
+  reverse():void{
     this.sidebar?.show();
     (this.sidebar as SidebarComponent).element.classList.add("reverse_slide_out");
   };
 }
+
+
 
 

@@ -2,14 +2,19 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+
+
+
 import { Component, ViewChild } from '@angular/core';
 import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-    imports: [
-        FormsModule, TreeViewModule
+imports: [
+        FormsModule,TreeViewModule
     ],
-    standalone: true,
+
+
+standalone: true,
     selector: 'app-container',
     // specifies the template string for the TreeView component with Drag and Drop
     template: `<div id='treeparent'><ejs-treeview id='treeelement' [fields]='field' [allowMultiSelection]='allowMultiSelection' [allowDragAndDrop]='allowDragAndDrop'></ejs-treeview></div>`
@@ -66,7 +71,7 @@ export class AppComponent {
     ];
     // maps the appropriate column to fields property
     public field: Object = { dataSource: this.productTeam, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild', selected: 'isSelected' };
-    public allowDragAndDrop: boolean = true;
+    public allowDragAndDrop : boolean = true;
 }
 
 

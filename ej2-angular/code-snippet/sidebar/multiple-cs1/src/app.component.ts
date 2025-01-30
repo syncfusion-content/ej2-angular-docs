@@ -8,6 +8,7 @@ import { SidebarComponent } from '@syncfusion/ej2-angular-navigations';
 imports: [SidebarModule, ],
 standalone: true,
     selector: 'app-root',
+    styleUrls: ['./app.component.css'],
     template: `  <ejs-sidebar id="default" #leftSidebar [width]='width' [type]='type'>
                         <div class="title"> Left Sidebar content</div>
                     </ejs-sidebar>

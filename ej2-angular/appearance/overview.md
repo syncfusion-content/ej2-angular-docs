@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Angular Theme in Syncfusion Components
 
-The  Syncfusion Angular UI can allows you to apply styles for your application. The following list of themes are included in the Syncfusion Angular components library
+Syncfusion Angular UI components allow you to apply styles to your application. The library includes a selection of themes:
 
 |Theme |Style Sheet Name|
 |--------|--------|
@@ -34,19 +34,19 @@ The  Syncfusion Angular UI can allows you to apply styles for your application. 
 |Microsoft Office Fabric Dark | fabric-dark.css |
 |High Contrast | highcontrast.css |
 
-## Optimized CSS files
+## Optimized CSS Files
 
-Syncfusion components provide two size modes for each theme: **normal** and **bigger**. By default, the **normal size mode** is applied, offering a standard appearance that is suitable for all devices. The **bigger size mode** provides an enlarged interface for enhanced interactions, visibility, and an overall improved user experience by increasing the size of the UI components.
+Syncfusion components provide two size modes for each theme: **normal** and **bigger**. By default, the **normal size mode** is applied, granting a standard look suitable for all devices. The **bigger size mode** enhances interactions, visibility, and user experience by enlarging UI components.
 
-The bigger size mode is ideal when an enlarged appearance is needed, while the normal size mode works best for maintaining the default appearance of components.
+The bigger size mode is optimal for projects requiring enlarged display, whereas the normal size suits applications maintaining default appearances.
 
-Below is a comparison of the Button component in normal and bigger size modes:
+See below for a Button component comparison in both size modes:
 
 ![bigger-sized-button](./images/bigger-theme-button.png)
 
-Each theme includes both normal and bigger size modes, which increases the overall file size. To optimize performance, Syncfusion offers additional theme files (e.g., `fluent2-lite.css`), which only include the normal size mode styles. This results in a significant reduction in file size, improving load times and overall application performance, especially when the bigger size mode is unnecessary.
+Each theme includes both normal and bigger sizes, increasing overall file size. To enhance performance, Syncfusion offers optimized theme files (e.g., `fluent2-lite.css`), which contain only normal size mode styles. These reduce file size, improving load times and application performance, especially when the bigger mode is not needed.
 
-Refer to the comparison below for the default and optimized theme file sizes:
+Refer to the comparison for theme file sizes:
 
 | Theme Name | Default Theme Size | Optimized Theme Size |
 | -- | -- | -- |
@@ -54,13 +54,13 @@ Refer to the comparison below for the default and optimized theme file sizes:
 
 ## Installation
 
-There are four ways to include Syncfusion Angular UI themes in application.
+Syncfusion Angular UI themes can be included in your application by four different methods:
 
 ### Install via NPM
 
-Themes are shipped as individual and combined CSS files. Combined CSS file can be referred from the npm package `@syncfusion/ej2` and individual CSS files are available within same component repository’s `style` folder. In ej2 npm packages, we have shipped both CSS and SCSS files for all components.
+Themes come as both individual and combined CSS files. Use the `@syncfusion/ej2` npm package for combined CSS files, with individual files stored in the component repository’s `style` folder. Both CSS and SCSS files are provided in ej2 npm packages.
 
-To use the combined CSS files, install the npm package using the following command
+To install combined CSS files, run:
 
 ```bash
  npm install @syncfusion/ej2
@@ -68,19 +68,19 @@ To use the combined CSS files, install the npm package using the following comma
 
 ### CDN Direct Referral
 
-Instead of using a local resource on your server, you can use a cloud CDN to reference the theme style sheets.
+Instead of local resources, use a cloud CDN to reference theme style sheets.
 
-Syncfusion Angular Themes are available in the CDN. Make sure that the version in the URLs matches the version of the Syncfusion Angular Package you are using.
+Syncfusion Angular Themes are available via CDN. Ensure the URL version matches your Syncfusion Angular Package to avoid compatibility issues.
 
-```
+```html
 <head>
     <link href="https://cdn.syncfusion.com/ej2/<version>/<theme_name>.css" rel="stylesheet"/>
 </head>
 ```
 
-To refer to optimized CSS files, use the following syntax:
+For optimized CSS files, use:
 
-```
+```html
 <head>
     <link href="https://cdn.syncfusion.com/ej2/<version>/<theme_name>-lite.css" rel="stylesheet"/>
 </head>
@@ -107,39 +107,39 @@ To refer to optimized CSS files, use the following syntax:
 | Google’s Material Dark | [https://cdn.syncfusion.com/ej2/27.1.48/material-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/material-dark.css) |
 | Tailwind CSS | [https://cdn.syncfusion.com/ej2/27.1.48/tailwind.css](https://cdn.syncfusion.com/ej2/27.1.48/tailwind.css) |
 | Tailwind CSS Dark | [https://cdn.syncfusion.com/ej2/27.1.48/tailwind-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/tailwind-dark.css) |
-| Microsoft Office Fabric  | [https://cdn.syncfusion.com/ej2/27.1.48/fabric.css](https://cdn.syncfusion.com/ej2/27.1.48/fabric.css) |
+| Microsoft Office Fabric | [https://cdn.syncfusion.com/ej2/27.1.48/fabric.css](https://cdn.syncfusion.com/ej2/27.1.48/fabric.css) |
 | Microsoft Office Fabric Dark | [https://cdn.syncfusion.com/ej2/27.1.48/fabric-dark.css](https://cdn.syncfusion.com/ej2/27.1.48/fabric-dark.css) |
-| High Contrast  | [https://cdn.syncfusion.com/ej2/27.1.48/highcontrast.css](https://cdn.syncfusion.com/ej2/27.1.48/highcontrast.css) |
+| High Contrast | [https://cdn.syncfusion.com/ej2/27.1.48/highcontrast.css](https://cdn.syncfusion.com/ej2/27.1.48/highcontrast.css) |
 
 ### Using Precompiled CSS and SCSS File
 
-#### Precompiled css
+#### Precompiled CSS
 
-In terms Precompiled means minified and optimized CSS.  
+Precompiled signifies minified and optimized CSS.
 
-The Syncfusion Angular UI theme includes a precompiled CSS file that contains the styles for all Syncfusion components.
+Syncfusion Angular UI theme includes a precompiled CSS file encompassing styles for all Syncfusion components.
 
 ```css
 @import "./node_modules/@syncfusion/ej2/<theme_name>.css";
 ```
 
-Referring all components SCSS
+To refer to all components SCSS:
 
 ```scss
 @import "ej2/<theme_name>.scss";
 ```
 
-We can get the individual theme from [individual package](#anatomy-of-npm-packages) or from ej2 package.
+Individual themes are obtainable from [individual package](#anatomy-of-npm-packages) or ej2 package.
 
-Referring individual Component from individual package
+To refer to an individual component from an individual package:
 
 ```scss
 @import "ej2-buttons/button/<theme_name>.scss";
 ```
 
-#### Referring all components optimized CSS file
+#### Referring All Components Optimized CSS File
 
-To refer to all component's optimized CSS files from the `@syncfusion/ej2` package, follow the below syntax:
+For optimized CSS files from the `@syncfusion/ej2` package:
 
 ```css
 @import "@syncfusion/ej2/<theme_name>-lite.css";
@@ -155,9 +155,9 @@ To refer to all component's optimized CSS files from the `@syncfusion/ej2` packa
 @import "@syncfusion/ej2/fluent2-lite.scss";
 ```
 
-#### Referring individual component optimized CSS file
+#### Referring Individual Component Optimized CSS File
 
-To refer to individual component's optimized CSS files from an individual packages, follow the below syntax:
+For individual component's optimized CSS from individual packages:
 
 ```css
 @import "<dependent-package>/styles/<theme_name>-lite.css";
@@ -173,19 +173,19 @@ To refer to individual component's optimized CSS files from an individual packag
 @import "@syncfusion/ej2-buttons/styles/fluent2-lite.scss";
 ```
 
-#### Advantages of individual components theme
+#### Advantages of Individual Components Theme
 
-* Reducing the page load time of application
-* Reducing bundling size
-* Avoid unused CSS
+* Reduces page load time
+* Decreases bundle size
+* Avoids unused CSS
 
 ### Compiling Themes from SCSS Source File
 
-The Syncfusion Angular UI theme includes a compilation of SCSS file. Refer [Compiling SCSS file](../common/how-to/sass/) section for more information.
+The Syncfusion Angular UI theme includes SCSS file compilation. Refer to [Compiling SCSS file](../common/how-to/sass/) for more information.
 
 ## Common Variables
 
-The following list of common variables is used in the Syncfusion Angular library themes for all UI components. You can change these variables to customize the corresponding theme.
+Below is a list of common variables used in Syncfusion Angular library themes for all UI components. These can be customized to change respective theme properties.
 
 ### Syncfusion Tailwind 3.4 theme
 
@@ -3237,8 +3237,8 @@ The following list of common variables is used in the Syncfusion Angular library
     </tbody>
 </table>
 
-## Suggested link
+## Suggested Links
 
-* [Syncfusion icons and Customization](../appearance/icons)
-* [Theme studio for Syncfusion Component](../appearance/theme-studio)
-* [Angular with SCSS compilation](../common/how-to/sass)
+* [Syncfusion Icons and Customization](../appearance/icons)
+* [Theme Studio for Syncfusion Components](../appearance/theme-studio)
+* [Angular with SCSS Compilation](../common/how-to/sass)

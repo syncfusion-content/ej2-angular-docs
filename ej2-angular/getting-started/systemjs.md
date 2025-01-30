@@ -10,29 +10,27 @@ domainurl: ##DomainURL##
 
 # Getting Started with Syncfusion Angular and SystemJS
 
-Refer to the following steps to create an angular application with `SystemJS` using Syncfusion Angular UI Components (Essential JS 2).
-
-This section describes about how to create an angular application with SystemJS.
+Follow these steps to create an Angular application using `SystemJS` with Syncfusion Angular UI Components (Essential JS 2).
 
 ## Cloning Angular Quick Start 
 
-To clone the [`Angular QuickStart`](https://github.com/angular/quickstart) project into a local folder, run the following commands: 
- 
- ```bash
+To clone the [`Angular QuickStart`](https://github.com/angular/quickstart) project into a local directory, run the following commands:
+
+```bash
 git clone https://github.com/angular/quickstart.git 
 cd quickstart 
 npm install 
 ```
 
-Perform following steps to use Syncfusion angular components in angular app which uses SystemJS.
+Follow these steps to integrate Syncfusion Angular components into an Angular app utilizing SystemJS.
 
-`NOTE:` The [`Angular QuickStart`](https://github.com/angular/quickstart)  project has been deprecated. To create new angular projects, [`Angular CLI`](./angular-cli/) is the best way.
+`NOTE:` The [`Angular QuickStart`](https://github.com/angular/quickstart) project has been deprecated. To create new Angular projects, [`Angular CLI`](./angular-cli/) is recommended as the preferred approach.
 
 ## Installing Syncfusion Grid Package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the angular syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion packages are distributed via npm under the `@syncfusion` scope. You can explore all Angular Syncfusion packages on npm [here](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
 
-Add `@syncfusion/ej2-angular-grids` package to the application.
+Add the `@syncfusion/ej2-angular-grids` package to your application:
 
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
@@ -42,11 +40,11 @@ npm i @syncfusion/ej2-angular-grids --save
 
 ## Adding Grid Module
 
-After installing the package, the component modules are available to configure into your application from the installed syncfusion package. Syncfusion Angular package provides two different types of `ngModules`.
+Once the package is installed, component modules from the Syncfusion package can be configured into your application. The Syncfusion Angular package provides various `ngModules`.
 
-Refer to [`Ng-Module`](../common/ng-module.html) to learn about `ngModules`.
+Refer to [`Ng-Module`](../common/ng-module.html) for more details on `ngModules`.
 
-Refer to the following snippet to import the button module in `app.module.ts` from the `@syncfusion/ej2-angular-grids`.
+The following snippet demonstrates how to import the Grid module in `app.module.ts` from the `@syncfusion/ej2-angular-grids`.
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -79,7 +77,7 @@ export class AppModule { }
 
 ## Adding Syncfusion Component
 
-Add the grid component snippet in `app.component.ts` as follows.
+Include the grid component snippet in `app.component.ts` as shown below.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -124,7 +122,7 @@ export class AppComponent implements OnInit {
 
 ## Adding CSS Reference
 
-The following CSS files are available in `../node_modules/@syncfusion` package. This can be referred in `[src/styles.css]` using following code. 
+The necessary CSS files are available within the `../node_modules/@syncfusion` package. These can be referenced in `[src/styles.css]` as follows:
 
 ```css
 @import '../node_modules/@syncfusion/ej2-grids/styles/material.css';
@@ -132,9 +130,9 @@ The following CSS files are available in `../node_modules/@syncfusion` package. 
 
 ## Configuring SystemJS
 
-The `systemJS` configuration file has been placed in the project template under `src/systemjs.config.js`. 
- 
-To add the Syncfusion angular packages refer below code snippet. Need to add required syncfusion packages in `systemjs.config.js` file at `map` section 
+The `SystemJS` configuration file is located in the project template at `src/systemjs.config.js`. 
+
+To add the Syncfusion Angular packages, refer to the code snippet below. Add the required Syncfusion packages in the `systemjs.config.js` file under the `map` section:
 
 ```typescript
       map:{
@@ -161,12 +159,12 @@ To add the Syncfusion angular packages refer below code snippet. Need to add req
 
 ## Running Your Application
 
-To run the application in the browser, use following command
+To run the application in the browser, use the following command:
 
- ```bash
+```bash
 npm start
 ```
 
 ## See Also
 
-* [Getting started with angular CLI](../getting-started/angular-cli/)
+* [Getting Started with Angular CLI](../getting-started/angular-cli/)

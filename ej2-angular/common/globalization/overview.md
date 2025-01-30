@@ -10,10 +10,10 @@ domainurl: ##DomainURL##
 
 # Globalization
 
-Globalization is the combination of adapting the control to various languages by parsing and formatting the date or numbers (Internationalization (L18N)) and adding cultural-specific customizations and translating the text (Localization (L10N)). The Syncfusion Angular UI components are specific to the `American English (en-US)` culture by default.
+Globalization is the combination of adapting the control to various languages by parsing and formatting the date or numbers (Internationalization (I18N)) and adding cultural-specific customizations and translating the text (Localization (L10N)). The Syncfusion Angular UI components are specific to the `American English (en-US)` culture by default.
 
 The globalization in Syncfusion Angular UI is enabled by
 
-* [Localization](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization) - It allows you to localize the text content of the Syncfusion Angular UI Components.
+* [Localization](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization) - This feature allows you to customize and translate the text content of Syncfusion Angular UI Components to adhere to the specific culture required by end-users.
 
-* [Internalization](../../common/internationalization/) - It provides support for formatting and parsing date and number objects.
+* [Internalization](../../common/internationalization/) - This refers to the ability to format and parse date and number objects in Syncfusion Angular UI components according to different cultural norms.

@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Navigators and indicators in Angular Carousel component
 
-The navigators and indicators are used for manual slide transitions.
+The navigators and indicators are used to transition the slides manually.
 
 To customize the Angular Carousel component, you can check on this video:
 
@@ -76,7 +76,7 @@ Template options are provided to customize the previous button using [`previousB
 
 ### Show or hide indicators
 
-Indicators depict the total number of slides and the current slide state. You can show/hide the indicators using the [`showIndicators`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#showindicators) property. The following example depicts the code to show/hide the indicators in the carousel.
+In indicators, the total slides and current slide state have been depicted. You can show/hide the indicators using the [`showIndicators`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#showindicators) property. The following example depicts the code to show/hide the indicators in the carousel.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -92,7 +92,7 @@ Indicators depict the total number of slides and the current slide state. You ca
 
 ### Indicators Template
 
-A Template option is provided to customize the indicators by using the [`indicatorTemplate`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#indicatorstemplate) property. The following example depicts the code for applying a template to indicators in the carousel.
+Template option is provided to customize the indicators by using the [`indicatorTemplate`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#indicatorstemplate) property. The following example depicts the code for applying a template to indicators in the carousel.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -108,7 +108,7 @@ A Template option is provided to customize the indicators by using the [`indicat
 
 ### Showing preview of slide in indicator
 
-You can customize the indicators to show a preview image of each slide using the [`indicatorTemplate`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#indicatorstemplate) property. The following example depicts the code for showing the preview image using a template for indicators in the carousel.
+You can customize the indicators by showing the preview image of each slide using the [`indicatorTemplate`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#indicatorstemplate) property. The following example depicts the code for showing the preview image using a template for indicators in the carousel.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -124,7 +124,7 @@ You can customize the indicators to show a preview image of each slide using the
 
 ### Indicators Types
 
-Different types of indicators available using the [`indicatorsType`](../api/carousel/#indicatorstype) property. The indicator types are categorized as follows:
+Choose different types of indicators available using the [`indicatorsType`](../api/carousel/#indicatorstype) property. The indicator types are categorized as follows:
 
 * [Default Indicator](#default-indicator)
 * [Dynamic Indicator](#dynamic-indicator)
@@ -199,7 +199,7 @@ The Progress Indicator type displays the current slide as a progress bar. The Pr
 
 ### Show or hide the play button
 
-In the carousel, [`autoPlay`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#autoplay) actions can be controlled using the [`showPlayButton`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#showplaybutton) property in the user interface. When you enable this property, the slide transitions are controlled using this play and pause button. This property depends on the [`buttonsVisibility`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#buttonsvisibility) property. The following example depicts the code to show the play button in the carousel.
+In the carousel, [`autoPlay`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#autoplay) actions have been controlled by using the [`showPlayButton`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#showplaybutton) property in the user interface. When you enable this property, the slide transitions are controlled using this play and pause button. This property depends on the [`buttonsVisibility`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#buttonsvisibility) property. The following example depicts the code to show the play button in the carousel.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

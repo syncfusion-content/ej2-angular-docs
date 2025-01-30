@@ -12,19 +12,19 @@ domainurl: ##DomainURL##
 
 ## Accessibility overview
 
-Accessibility in components refers to the practice of designing and building user interface elements in a way that makes them accessible to users with disabilities. This can include a variety of things, such as making sure that text is high-contrast and easy to read, providing alternative text for images, and designing controls and interactions that can be used with a keyboard or assistive technology.
+Accessibility in software components involves designing user interfaces that are usable by everyone, including individuals with disabilities. This encompasses elements like ensuring high-contrast text, providing alternative text for images, and ensuring controls are operable via keyboard or assistive technologies.
 
 ## Accessibility standards
 
-The component is said to be accessible when it is constructed in accordance with certain standards that are required to make it accessible.
+A component is considered accessible when it complies with specific standards designed to enhance accessibility.
 
-The accessibility of the components consists of the following standards and aspects:
+Syncfusion Angular components meet the following accessibility standards:
 
-* [ADA](https://www.ada.gov/) - A law to ensure that people with disabilities have the same opportunities and access as people without disabilities.
+- **[ADA](https://www.ada.gov/)**: A law ensuring equal access and opportunities for people with disabilities compared to those without disabilities.
 
-* [WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/) - The Web Content Accessibility Guidelines (WCAG) provide guidelines developed by the World Wide Web Consortium (W3C) to ensure web content is accessible to people with disabilities. `WCAG 2.2` establishes a framework of accessibility principles and their associated success criteria. The level of accessibility conformance achieved by a web application is determined by the extent to which it meets these success criteria, categorized into three levels: A, AA, and AAA.
+- **[WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/)**: These Web Content Accessibility Guidelines provide standards by the World Wide Web Consortium (W3C) to ensure web content is accessible to people with disabilities. WCAG 2.2 establishes a framework of accessibility principles and success criteria classified into three levels: A, AA, and AAA.
 
-* [Section 508](https://www.section508.gov/) - It is a set of guidelines for making electronic and information technology (EIT) accessible to people with disabilities. These standards apply to federal agencies in the United States, and they are based on the Web Content Accessibility Guidelines (WCAG).
+- **[Section 508](https://www.section508.gov/)**: Guidelines that ensure electronic and information technology are accessible to people with disabilities, primarily for federal agencies in the United States, based on WCAG.
 
 * [WAI-ARIA](https://www.w3.org/WAI/ARIA/) - WAI-ARIA stands for "Web Accessibility Initiative - Accessible Rich Internet Applications." It is a set of technical specifications and guidelines developed by the World Wide Web Consortium (W3C) as part of the Web Accessibility Initiative (WAI). WAI-ARIA is designed to enhance the accessibility of dynamic web content, particularly web applications and rich internet applications (RIAs), for people with disabilities. WAI-ARIA provides a set of roles, states, and properties that can be added to HTML elements to provide additional context and information about the purpose and behavior of those elements. This can help assistive technologies better understand and interpret web content and interact with web applications.
 
@@ -40,7 +40,7 @@ There are several methodologies of accessibility validation that can be performe
 
 * The [WAI-ARIA patterns](https://www.w3.org/WAI/ARIA/apg/patterns/) are followed by the Syncfusion Angular components to enable appreciable accessibility.
 
-* Each Angular component is subjected to manual testing with a screen reader and also automated test cases to ensure the component's required attributes.
+* Each Angular component is subjected to manual testing with a screen reader and also automated test cases to ensure the component's required attributes. Tools such as aXe, Lighthouse, and Accessibility Scanner are employed to ensure comprehensive coverage and compliance.
 
 * Attributes are allocated and updated correctly during interaction as well. Each component has been assigned a distinct `Role` attribute and its own set of ARIA attributes defined by the [WCAG 2.2](https://www.w3.org/TR/WCAG22/) specification.
 
@@ -48,15 +48,15 @@ In addition to the methodologies mentioned above, Syncfusion Angular components 
 
 ### Screen reader support
 
-A screen reader allows people who are blind or visually impaired to use a computer by reading aloud the text that is displayed on the screen. Syncfusion Angular components followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/) standards to work properly in the screen readers such as [Narrator](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) for Windows and [Embedded VoiceOver](https://support.apple.com/en-in/guide/voiceover/vo2706/mac) for MAC.
+A screen reader allows people who are blind or visually impaired to use a computer by reading aloud the text that is displayed on the screen. Syncfusion Angular components followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/) standards to work properly in the screen readers such as [Narrator](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) for Windows and [Embedded VoiceOver](https://support.apple.com/en-in/guide/voiceover/vo2706/mac) for MAC, along with JAWS and NVDA, among others.
 
 ### Right-To-Left support
 
-Right-to-Left (RTL) support allows applications to effectively communicate with users who use languages that are written from right to left, such as Arabic, Hebrew, etc. Syncfusion Angular components support the Right-to-Left feature. Refer to the [Right-to-Left documentation](https://ej2.syncfusion.com/angular/documentation/common/right-to-left) to learn more about this support.
+Right-to-Left (RTL) support allows applications to cater to languages written from right to left, enhancing usability for Arabic, Hebrew, etc. Refer to the [Right-to-Left documentation](https://ej2.syncfusion.com/angular/documentation/common/right-to-left) for more details.
 
 ### Color contrast
 
-Syncfusion Angular components come equipped with [predefined themes](https://ej2.syncfusion.com/angular/documentation/appearance/theme) that guarantee the presence of satisfactory color contrast, benefiting individuals with visual impairments.
+Syncfusion Angular components come with [predefined themes](https://ej2.syncfusion.com/angular/documentation/appearance/overview) that ensure satisfactory color contrast. Developers can customize these themes for improved contrast.
 
 ### Mobile device support
 
@@ -70,18 +70,18 @@ Syncfusion Angular components support keyboard navigation, allowing users who re
 
 Ensuring the accessibility of Syncfusion Angular components is crucial for making the product inclusive and user-friendly for individuals with disabilities. This process involves various types of accessibility testing, including:
 
-* **Automated testing**: The Syncfusion Angular component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools.
+* **Automated testing**: The Syncfusion Angular component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools. These tools provide in-depth analysis and reporting of accessibility compliance.
 
 * **Manual testing**: This type of testing involves manually evaluating the Syncfusion Angular components. During manual accessibility testing, testers will ensure accessibility using the screen readers such as [Narrator](https://support.microsoft.com/en-us/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) for Windows and [Embedded VoiceOver](https://support.apple.com/en-in/guide/voiceover/vo2706/mac) for MAC.
 
-Syncfusion Angular components will keep improving when there is anything required. It also involves client feedback to make the component more accessible.
+Syncfusion Angular components will keep improving when there is anything required. It also involves client feedback to make the component more accessible, incorporating suggestions and real-world observations.
 
 ## Accessibility support for specific components
 
 Consult the component-specific documents below for detailed information about how Syncfusion Angular components ensure compliance with accessibility standards, encompassing Section 508, WAI-ARIA, WCAG 2.2, keyboard navigation, and more.
 
 <style>
-# table
+#table
 {
 border:0 !important;
 line-height: 2!important;

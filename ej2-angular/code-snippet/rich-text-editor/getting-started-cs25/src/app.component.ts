@@ -17,15 +17,14 @@ export class AppComponent  {
     public tools: object = {
         items: [ 'FontName']
     };
-    public size = {
-        default: '10',
-        width: '40px',
+    public family = {
+        default: 'Arial',
         items: [
-            { text: '8', value: '8pt' },
-            { text: '10', value: '10pt' },
-            { text: '12', value: '12pt' },
-            { text: '14', value: '14pt' },
-            { text: '42', value: '42pt' }
+            { text: 'Arial', value: 'Arial, Helvetica, sans-serif' },
+            { text: 'Courier New', value: '"Courier New", Courier, monospace' },
+            { text: 'Georgia', value: 'Georgia, serif' },
+            { text: 'Tahoma', value: 'Tahoma, Geneva, sans-serif' },
+            { text: 'Verdana', value: 'Verdana, Geneva, sans-serif' }
         ]
     };
 }
