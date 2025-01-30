@@ -2,6 +2,7 @@ import {
   DiagramModule,
   DiagramComponent,
   NodeModel,
+  FlipDirection
 } from '@syncfusion/ej2-angular-diagrams';
 
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
@@ -28,7 +29,7 @@ export class AppComponent {
     };
     node.height = 100;
     node.width = 100;
-    node.flip = 'Horizontal';
+    node.flip = FlipDirection.Horizontal;
     return node;
   }
 }
