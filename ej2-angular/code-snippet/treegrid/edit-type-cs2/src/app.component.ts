@@ -22,7 +22,7 @@ import { IEditCell } from '@syncfusion/ej2-angular-grids';
                     <e-columns>
                         <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
                         <e-column field='taskName' headerText='Task Name'  textAlign='Left' width=180></e-column>
-                         <e-column field='priority' headerText='Priority' editType= 'dropdownedit' [edit]='priorityParams' textAlign='Right' width=140></e-column>
+                         <e-column field='priority' headerText='Priority' editType= 'dropdownedit' textAlign='Right' width=140></e-column>
                         <e-column field='progress' editType= 'numericedit' [edit] ='numericParams'  headerText='Progress' textAlign='Right' width=120></e-column>
                     </e-columns>
                 </ejs-treegrid>`

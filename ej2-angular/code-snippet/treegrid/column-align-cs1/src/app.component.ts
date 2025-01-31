@@ -1,7 +1,7 @@
 import { NgModule,ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
-import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
-import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
+import { ColumnMenu, TreeGridModule } from '@syncfusion/ej2-angular-treegrid'
+import { DropDownList, DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 import { Component, OnInit } from '@angular/core';
 import { sampleData } from './datasource';
 import { TreeGridComponent, Column } from '@syncfusion/ej2-angular-treegrid';
@@ -65,6 +65,8 @@ export class AppComponent implements OnInit {
     }
     ngOnInit(): void {
         this.data = sampleData;
+        const defaultColumn : any = this.columnData[0];
+        this.column_name = defaultColumn.value;
     }
 }
 

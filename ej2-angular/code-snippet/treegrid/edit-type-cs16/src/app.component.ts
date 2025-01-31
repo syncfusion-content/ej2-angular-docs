@@ -1,5 +1,4 @@
-
-import { NgModule, } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
@@ -9,7 +8,7 @@ import { EditSettingsModel, ToolbarItems,EditService, ToolbarService, PageServic
 
 @Component({
     imports: [
-    TreeGridAllModule,DropDownListModule
+    TreeGridAllModule,DropDownListModule, FormsModule
     ],
     providers: [EditService, ToolbarService, PageService],
     standalone: true,

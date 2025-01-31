@@ -6,6 +6,7 @@ import { TreeGridComponent, EditSettingsModel, ToolbarItems,  EditService, Toolb
 import { DropDownList } from '@syncfusion/ej2-dropdowns';
 import { DataManager, Query } from '@syncfusion/ej2-data';
 import { IEditCell } from '@syncfusion/ej2-angular-grids';
+import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 
 @Component({
     imports: [
