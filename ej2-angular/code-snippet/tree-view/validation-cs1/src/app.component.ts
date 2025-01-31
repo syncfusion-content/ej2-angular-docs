@@ -6,10 +6,12 @@ import { Component, ViewChild } from '@angular/core';
 import { NodeEditEventArgs } from '@syncfusion/ej2-navigations';
 
 @Component({
-    imports: [
+imports: [
         FormsModule, TreeViewModule
     ],
-    standalone: true,
+
+
+standalone: true,
     selector: 'app-container',
     // specifies the template string for the TreeView component
     template: `<div id='treeparent'><ejs-treeview id='treeElement' #treevalidate [fields]='field' [allowEditing]='allowEditing' (nodeEdited)='onNodeEdited($event)'></ejs-treeview></div>
@@ -22,7 +24,7 @@ export class AppComponent {
     constructor() {
     }
     // Hierarchical data source for TreeView component
-    public hierarchicalData: Object[] = [
+   public hierarchicalData: Object[] = [
         {
             id: 1, name: 'Discover Music', expanded: true,
             child: [
@@ -68,20 +70,22 @@ export class AppComponent {
     ];
 
     // Mapping TreeView fields property with data source properties
-    public field: Object = { dataSource: this.hierarchicalData, id: 'id', text: 'name', child: 'child' };
-    public allowEditing: boolean = true;
-    @ViewChild('treevalidate') treevalidate?: TreeViewComponent;
+    public field:Object ={ dataSource: this.hierarchicalData, id: 'id', text: 'name', child: 'child' };
+    public allowEditing: boolean =  true;
+    @ViewChild ('treevalidate') treevalidate?: TreeViewComponent;
     public onNodeEdited(args: NodeEditEventArgs): void {
-        let displayContent: string = "";
+        let displayContent:string = "";
         if (args.newText.trim() == "") {
-            args.cancel = true;
+            args.cancel=true;
             displayContent = "TreeView item text should not be empty";
-        } else if (args.newText != args.oldText) {
-            displayContent = "TreeView item text edited successfully";
-        } else {
-            displayContent = "";
-        }
-        (document.getElementById("display") as HTMLElement).innerHTML = displayContent;
-    }
-}
+            } else if (args.newText != args.oldText) {
+                displayContent = "TreeView item text edited successfully";
+                } else {
+                    displayContent = "";
+                    }
+                    (document.getElementById("display") as HTMLElement).innerHTML = displayContent;
+                  }
+                }
+
+
 

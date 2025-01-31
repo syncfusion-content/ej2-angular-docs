@@ -10,19 +10,19 @@ domainurl: ##DomainURL##
 
 # Ahead-of-Time (AOT) Compilation in Angular 
 
-Ahead-of-Time (AOT) Compilation is a technique that compiles Angular's templates and components into browser-ready JavaScript code during the build process itself. This can improve the initial loading time of the application. From angular v9, the AOT compilation is enabled by default. To know more about AOT compilation, refer to this [documentation](https://angular.io/guide/aot-compiler).
+Ahead-of-Time (AOT) Compilation is a technique that compiles Angular's templates and components into browser-ready JavaScript code during the build process, leading to improved initial load times and rendering performance. Starting from Angular v9, AOT compilation is enabled by default, providing significant benefits for developers. Learn more about AOT compilation [here](https://v17.angular.io/guide/aot-compiler).
 
-This section explains the benefits of using AOT compilation and how to implement it in applications.
+This section covers the advantages of using AOT compilation and provides guidance on how to integrate it into your applications.
 
 ## Why use AOT compilation
 
-The following are the benefits of using AOT compilation in Angular applications.
+The advantages of utilizing AOT compilation in Angular applications include:
 
-* AOT compilation translates Angular templates into optimized JavaScript code during the build process, which leads to faster initial loading times for your application.
+- **Faster Initial Load Times**: By converting Angular templates into highly optimized JavaScript code during the build process, AOT compilation significantly decreases the initial load time of your application.
 
-* By pre-compiling templates, AOT eliminates the need for the Angular compiler to be part of the final bundle, resulting in smaller bundle sizes and reduced runtime overhead.
+- **Reduced Bundle Sizes**: As templates are pre-compiled, the Angular compiler is excluded from the final bundle, resulting in smaller bundle sizes and lower runtime overhead.
 
-* AOT compilation catches template errors at build time rather than runtime, making it easier to identify and fix issues early in the development process.
+- **Early Error Detection**: AOT compilation identifies template errors during build time rather than runtime, allowing for early detection and resolution of issues in the development cycle.
 
 ## Using Syncfusion components with AOT
 
@@ -30,7 +30,7 @@ All [Syncfusion Angular components](https://www.npmjs.com/search?q=%40syncfusion
 
 ## Implementation of AOT Compilation in an Angular Application
 
-1.From the angular v9, the Ivy compiler is enables the AOT compilation by default in the `angular.json` configuration file. If you're using Angular versions prior to 9, ensure that `aot` is set to `true` in the `angular.json` file.
+1. **Configuring AOT in Angular**: From Angular v9 onwards, the Ivy compiler enables AOT compilation by default within the `angular.json` configuration file. If you're using Angular versions prior to 9, ensure AOT is enabled by setting  `"aot": true` in your `angular.json` file:
 
 {% tabs %}
 {% highlight json tabtitle="angular.json" %}
@@ -47,9 +47,9 @@ All [Syncfusion Angular components](https://www.npmjs.com/search?q=%40syncfusion
 {% endtabs %}
 
 
-To know more about AOT compilation with Ivy, refer to this [documentation](https://angular.io/guide/ivy).
+To know more about AOT compilation with Ivy, refer to this [documentation](https://v12.angular.io/guide/ivy).
 
-2.AOT compilation improves the initial rendering performance of the application. To achieve this performance improvement, build the application using the following command:
+2. **Building the Application**: Enhance performance by building your application in production mode, which utilizes AOT by default. Use the following command in your terminal:
 
 {% tabs %}
 {% highlight bash tabtitle="CMD" %}

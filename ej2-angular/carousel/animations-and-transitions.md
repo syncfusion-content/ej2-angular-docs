@@ -64,11 +64,11 @@ Using the items property, you can set different intervals for each item to trans
   
 {% previewsample "page.domainurl/samples/carousel/default-cs2" %}
 
-**Note**: The interval property accepts values in milliseconds.
+**Note**: Interval property can accept value in terms of milliseconds.
 
 ## Auto play slides
 
-In the carousel, all slide transitions are performed continuously after the specified or default intervals. You can enable or disable the auto slide transition using the [`autoPlay`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#autoplay) property. The following example depicts the code to enable or disable the auto slide transitions.
+In the carousel, all slides transitions are performed continuously after the specified or default intervals. You can enable or disable the auto slide transition using the [`autoPlay`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#autoplay) property. The following example depicts the code to enable or disable the auto slide transitions.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -118,7 +118,7 @@ In the carousel, slides transitions are repeated continuously when you reach the
 
 ## Slide changing events
 
-Using the [`slideChanging`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#slidechanging) or [`slideChanged`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#slidechanged) events of the Carousel component, you can customizations while the carousel items are switched.
+Using the [`slideChanging`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#slidechanging) or [`slideChanged`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#slidechanged) events of the Carousel component, you can perform sample end customization while the carousel items are switched.
 
 The following demo depicts the example for carousel events,
 

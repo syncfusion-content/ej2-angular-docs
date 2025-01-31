@@ -11,24 +11,44 @@ domainurl: ##DomainURL##
 
 # Update Syncfusion npm package
 
-The latest Syncfusion npm package can be updated with the help of [`npm-check-updates`](https://www.npmjs.com/package/npm-check-updates) package.
+Keeping your Syncfusion npm packages up-to-date ensures you are using the latest features and security updates. This guide will take you through the steps to update these packages using the [`npm-check-updates`](https://www.npmjs.com/package/npm-check-updates) tool.
 
-1. You can install the `npm-check-update package` globally to use this as CLI.
+## Global Installation of npm-check-updates
+
+First, install the `npm-check-updates` package globally. This tool helps you check for updates and can be used as a CLI tool.
+
+### Steps to Install:
+
+1. Open the terminal or command prompt.
+2. Run the following command to install:
 
     ```bash
     npm install -g npm-check-updates
+    ```
+
+3. To update all `@syncfusion` packages to their latest versions, execute:
+
+    ```bash
     ncu -u -f /^@syncfusion/
     ```
 
-    This will update the package.json file to latest version for all `@syncfusion` packages.
+    This modifies your `package.json` file, setting the version of all `@syncfusion` packages to their latest available.
 
-2. Now, run the following commands to update the packages in `node_modules` and remove the duplicate package which is already installed.
+## Updating npm Packages in node_modules
+
+Once your `package.json` has been updated, follow these steps to update the packages installed in `node_modules` and clean up any duplicate packages:
+
+1. Run the update command to synchronize your local package installations:
 
     ```bash
     npm update
-    npm dedupe
     ```
 
+2. Use the dedupe command to remove any duplicate packages:
+
+    ```bash
+    npm dedupe
+    ```
 ## Updating a specific npm package
 
 Run the following commands from the command prompt in the application root to update a specific npm package in `node_modules` and remove the installed duplicate package.

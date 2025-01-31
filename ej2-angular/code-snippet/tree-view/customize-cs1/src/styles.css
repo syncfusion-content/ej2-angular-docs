@@ -1,3 +1,4 @@
+
 @import 'node_modules/@syncfusion/ej2-base/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
@@ -19,16 +20,16 @@
 }
 
 /*apply custom css to first level*/
-.mytree .e-level-1>.e-text-content .e-list-text {
+.mytree .e-level-1 > .e-text-content .e-list-text {
     font-style: italic;
 }
 
 /*apply custom css to second level*/
-.mytree .e-level-2>.e-text-content .e-list-text {
-    color: darkmagenta;
+.mytree .e-level-2 > .e-text-content .e-list-text {
+color: darkmagenta;
 }
 
 /*apply custom css to all the leaf nodes*/
-.mytree .e-level-3>.e-text-content .e-list-text {
-    font-weight: bold;
+.mytree .e-level-3 > .e-text-content .e-list-text {
+font-weight: bold;
 }

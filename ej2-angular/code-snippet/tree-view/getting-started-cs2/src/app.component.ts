@@ -2,14 +2,19 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
-import { Component, ViewChild } from '@angular/core';
+
+
+
+import { Component,ViewChild } from '@angular/core';
 import { TreeViewComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-    imports: [
-        FormsModule, TreeViewModule
+imports: [
+        FormsModule,TreeViewModule
     ],
-    standalone: true,
+
+
+standalone: true,
     selector: 'app-container',
     // specifies the template string for the TreeView component with CheckBox
     template: `<div id='treeparent'><ejs-treeview #treeview="" id='treeelement' [fields]='field' [showCheckBox]='showCheckBox' (nodeChecked)='nodeChecked($event)'></ejs-treeview></div>`
@@ -51,10 +56,13 @@ export class AppComponent {
     // set the CheckBox to the TreeView
     public showCheckBox: boolean = true;
     //set the checknodes to the TreeView
-    public checkedNodes: string[] = ['2', '6'];
-    public nodeChecked(args: any): void {
-        alert("The checked node's id is: " + (this.tree as any).checkedNodes);
+    public checkedNodes: string[] = ['2','6'];
+    public nodeChecked(args: any): void{
+      alert("The checked node's id is: " + (this.tree as any).checkedNodes);
 
     }
+
+
 }
+
 

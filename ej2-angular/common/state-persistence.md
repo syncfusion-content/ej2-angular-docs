@@ -10,7 +10,9 @@ domainurl: ##DomainURL##
 
 # State Persistence in Syncfusion Angular components
 
-Syncfusion Angular UI components support persisting their state across page refreshes or navigation. To enable this feature, set the `enablePersistence` property to `true` for the desired component. This stores the component's state in the browser's `localStorage` object on the `unload` event of the page. For example, the `enablePersistence` property can be set for the Grid component, as shown in the following code snippet.
+Syncfusion Angular UI components offer a powerful state persistence feature, allowing components to maintain their state even after page refreshes or navigations. This is particularly useful for applications where state consistency is key. To enable state persistence, simply set the `enablePersistence` property to `true` in the component configuration. This automatically stores the component's state in the browser's `localStorage` object during the page's `unload` event.
+
+Below is an example demonstrating how to set the `enablePersistence` property for the Grid component:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -26,7 +28,7 @@ Syncfusion Angular UI components support persisting their state across page refr
 
 ## State Persistence supported components and properties
 
-The following table illustrates the list of Syncfusion Angular components that are supported with state persistence and the properties that are stored in the `localStorage`.
+The table below lists the Syncfusion Angular components that support state persistence, along with the properties stored in `localStorage`. Utilizing these properties ensures that significant component configurations are preserved across sessions:
 
 <!-- markdownlint-disable MD033 -->
 
@@ -252,7 +254,7 @@ DateTimePicker, Slider, Dropdown Tree</td>
 
 <!-- markdownlint-enable MD033 -->
 
-Check out the following component's document to learn more about the state persistence.
+For a deeper understanding of state persistence and its application in various components, please refer to the following documentation pages for individual components:
 
 * [Grid](https://ej2.syncfusion.com/angular/documentation/grid/state-persistence/state-persistence/)
 * [TreeGrid](https://ej2.syncfusion.com/angular/documentation/treegrid/state-persistence/state-persistence/)

@@ -9,12 +9,14 @@ import { NodeSelectEventArgs } from '@syncfusion/ej2-navigations';
  * Single child selection at a time
  */
 @Component({
-  imports: [
-    FormsModule, TreeViewModule
-  ],
-  standalone: true,
-  selector: 'app-container',
-  template: `<div id='treeparent'><ejs-treeview #tree id="listtree" allowMultiSelection='allowMultiSelection' [fields]='listfields' (nodeSelecting)="onNodeSelecting($event)"></ejs-treeview></div>`
+imports: [
+        FormsModule,TreeViewModule
+    ],
+
+
+standalone: true,
+    selector: 'app-container',
+    template: `<div id='treeparent'><ejs-treeview #tree id="listtree" allowMultiSelection='allowMultiSelection' [fields]='listfields' (nodeSelecting)="onNodeSelecting($event)"></ejs-treeview></div>`
 })
 export class AppComponent {
 
@@ -41,12 +43,12 @@ export class AppComponent {
     console.log(args.nodeData);
     let id: any = args.nodeData['parentID'];
     if (!this.count) {
-      this.parent = id;
-      this.count = true;
+       this.parent = id;
+       this.count = true;
     }
-    if (!this.childCount) {
-      this.child = args.nodeData['id'];
-      this.childCount = true
+    if (!this.childCount){
+       this.child = args.nodeData['id'];
+       this.childCount = true
     }
     if (id != null && id === this.parent) {
       let element: HTMLElement = (this.tree as any).element.querySelector('[data-uid="' + id + '"]') as HTMLElement;
@@ -57,7 +59,7 @@ export class AppComponent {
           args.cancel = true;
         }
         // For unselect the selectedNodes
-        else if (args.action === "un-select" && this.child === args.nodeData['id']) {
+        else  if (args.action === "un-select" && this.child === args.nodeData['id']) {
           this.childCount = false;
           this.child = null;
           this.parent = null;
@@ -65,15 +67,17 @@ export class AppComponent {
         }
       }
     } else if (id !== this.parent && id !== null) {
-      if (args.action == "select") {
-        args.cancel = true
-      }
-    } else if (id === null) {
-      this.childCount = false;
-      this.child = null;
-      this.parent = null;
-      this.count = false
+        if(args.action == "select"){
+          args.cancel = true
+        }
+    } else if (id === null){
+       this.childCount = false;
+          this.child = null;
+          this.parent = null;
+          this.count = false
     }
   }
 }
+
+
 

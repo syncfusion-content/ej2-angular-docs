@@ -10,8 +10,7 @@ domainurl: ##DomainURL##
 
 # Internationalization
 
-The Internationalization library provided by Syncfusion enables formatting and parsing of date and number objects using official [Unicode CLDR](http://cldr.unicode.org/) JSON data. By default, the `en-US` locale is set as the default culture, and `USD` is set as the default currency code for all Syncfusion Angular UI Components.
-
+The Syncfusion Internationalization library is a robust tool for formatting and parsing date and number objects, leveraging official [Unicode CLDR](http://cldr.unicode.org/) JSON data. By default, the `en-US` locale and `USD` currency code are preset for all Syncfusion Angular UI Components.
 ## Loading CLDR-JSON Data
 
 Syncfusion CLDR data package contains only JSON data files generated using the official [Unicode CLDR](http://cldr.unicode.org/) JSON data. This helps users avoid utilizing the existing [cldr-data](https://www.npmjs.com/package/cldr-data) package, which has third-party library vulnerabilities. The `loadCldr` function is required to load the following CLDR data for cultures other than `en-US`.
@@ -52,7 +51,7 @@ npm install @syncfusion/ej2-cldr-data
 
 ### Binding to i18n library
 
-The i18n library to use the CLDR data to format, parse number and date/time values in a way that is appropriate for the `en` culture. The loadCldr function takes two arguments, enNumberData and enTimeZoneData, which are the CLDR data for numbers and time zones, respectively, for the en culture.
+The i18n library utilizes CLDR data to format and parse numbers and date/time values suitable for the `en` culture. Use the `loadCldr` function with `enNumberData` and `enTimeZoneData` as shown:
 
 ```typescript
 
@@ -60,13 +59,13 @@ import { loadCldr } from '@syncfusion/ej2-base';
 import enNumberData from "@syncfusion/ej2-cldr-data/main/en/numbers.json";
 import entimeZoneData from "@syncfusion/ej2-cldr-data/main/en/timeZoneNames.json";
 
-loadcldr(enNumberData, entimeZoneData);
+loadCldr(enNumberData, entimeZoneData);
 
 ```
 
 ## Changing global Culture and Currency code
 
-To set the default culture and the currency code for all Syncfusion Angular UI Components, you can use the methods `setCulture` for setting the default locale and `setCurrencyCode` for setting the currency code.
+To update the default culture and currency code across all Syncfusion Angular UI Components, use `setCulture` and `setCurrencyCode` methods:
 
 ```typescript
 
@@ -83,7 +82,7 @@ setCurrencyCode('QAR');
 
 ### Supported format string
 
-Based on the  [NumberFormatOptions](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions/) number formatting and parsing operations are processed. You need to specify some or all of the following properties mentioned in the table below
+Number formatting and parsing align with [NumberFormatOptions](https://ej2.syncfusion.com/documentation/api/base/numberFormatOptions/). Specify relevant properties as illustrated:
 
 | No | Properties | Description |
 | --- | --- | --- |
@@ -302,8 +301,8 @@ export class AppComponent {
         let intl: Internationalization = new Internationalization();
         let formattedString: string =  intl.formatDate(new Date('1/12/2014 10:20:33'), { format:'\'year:\'y' \'month:\' MM' });
         //Output: "year:2014 month:01"
-        }
-        }
+    }
+}
 
 ```
 
@@ -315,8 +314,7 @@ export class AppComponent {
 
 #### `getDateParser`
 
-The `getDateParser` method will return a function that parses a given string based on the [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions/) specified.
-
+The `getDateParser` method provides a function for parsing strings per specified [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/api/base/dateFormatOptions/).
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/intl-parseDate-cs1/src/app.component.ts %}

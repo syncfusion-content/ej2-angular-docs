@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { AccordionModule } from '@syncfusion/ej2-angular-navigations'
+
+
+
 import { Component, ViewChild } from '@angular/core';
 import { Ajax } from '@syncfusion/ej2-base';
 import { AccordionComponent} from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [ AccordionModule],
+imports: [
+         AccordionModule
+    ],
+
+
 standalone: true,
     selector: 'app-container',
     template: `
@@ -37,11 +44,13 @@ export class AppComponent {
     public contentData?: string;
 
     ngOnInit() {
-      let ajax: Ajax = new Ajax('./ajax.html', 'GET', true);
-      ajax.send().then();
-      ajax.onSuccess = (data: string): void => {
-        (this.acrdnInstance as AccordionComponent).items[2].content = data;
-        (this.acrdnInstance as AccordionComponent).refresh();
-      };
+    let ajax: Ajax = new Ajax('./ajax.html', 'GET', true);
+    ajax.send().then();
+    ajax.onSuccess = (data: string): void => {
+       (this.acrdnInstance as AccordionComponent).items[2].content = data;
+       (this.acrdnInstance as AccordionComponent).refresh();
+    };
     }
 }
+
+

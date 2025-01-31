@@ -2,15 +2,21 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms'
 import { TreeViewModule } from '@syncfusion/ej2-angular-navigations'
+
+
+
+
 import { Component } from '@angular/core';
 
 @Component({
-    imports: [
-        FormsModule, TreeViewModule
+imports: [
+        FormsModule,TreeViewModule
     ],
-    standalone: true,
+
+
+standalone: true,
     selector: 'app-container',
-    template: `<div id='treeparent'><ejs-treeview id='treeElement' #treevalidate [fields]='field' [cssClass]='cssClass'></ejs-treeview></div>
+    template:  `<div id='treeparent'><ejs-treeview id='treeElement' #treevalidate [fields]='field' [cssClass]='cssClass'></ejs-treeview></div>
                 <div class="details">
                     <label>Note:</label>
                        <div><b>1. The font-weight "Bold" is applied for all the leaf nodes</b></div>
@@ -18,12 +24,10 @@ import { Component } from '@angular/core';
                        <div style="color: darkmagenta">3. The color "darkmagenta" is applied for second level nodes</div>
                     </div>`
 })
-
 export class AppComponent {
-    // Hierarchical data source for TreeView component
-    public hierarchicalData: Object[] = [
-        {
-            id: '01', name: 'Local Disk (C:)', expanded: true,
+      // Hierarchical data source for TreeView component
+   public hierarchicalData: Object[] = [
+        { id: '01', name: 'Local Disk (C:)', expanded: true,
             subChild: [
                 {
                     id: '01-01', name: 'Program Files',
@@ -93,7 +97,7 @@ export class AppComponent {
                 },
                 {
                     id: '03-02', name: 'Documents',
-                    subChild: [
+                        subChild: [
                         { id: '03-02-01', name: 'Environment Pollution.docx' },
                         { id: '03-02-02', name: 'Global Warming.ppt' },
                         { id: '03-02-03', name: 'Social Network.pdf' },
@@ -111,7 +115,9 @@ export class AppComponent {
         }
     ];
     // Mapping TreeView fields property with data source properties
-    public field: Object = { dataSource: this.hierarchicalData, id: 'id', text: 'name', child: 'subChild' };
+    public field:Object ={ dataSource: this.hierarchicalData, id: 'id', text: 'name', child: 'subChild' };
     public cssClass: string = 'mytree';
 }
+
+
 

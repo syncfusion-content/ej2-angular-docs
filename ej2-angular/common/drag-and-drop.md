@@ -12,12 +12,10 @@ domainurl: ##DomainURL##
 
 Drag and drop is a feature of a user interface that allows users to select an item or items and then move them to a different location or onto another interface element by "dragging" the selected item(s) with a pointing device (such as a mouse) and then "dropping" them at the desired location.
 
-Syncfusion Angular components support drag and drop feature through two libraries. These are [Draggable](https://ej2.syncfusion.com/documentation/api/base/draggable/) and [Droppable](https://ej2.syncfusion.com/documentation/api/base/droppable/).
-
+Syncfusion Angular components offer robust drag and drop functionality facilitated by two primary libraries: [Draggable](https://ej2.syncfusion.com/documentation/api/base/draggable/) and [Droppable](https://ej2.syncfusion.com/documentation/api/base/droppable/).
 ## Draggable
 
-The Syncfusion's [`Draggable`](https://ej2.syncfusion.com/documentation/api/base/draggable/) library allows users to make any DOM element draggable by passing it as a parameter to the `Draggable` constructor. This can be useful for creating interactive and user-friendly interfaces, such as allowing a user to reorder items in a list by dragging them. The below code snippet enables the draggable functionality for the specific DOM element passed to the `Draggable` constructor.
-
+The Syncfusion [`Draggable`](https://ej2.syncfusion.com/documentation/api/base/draggable/) library empowers developers to make any DOM element draggable by initializing a `Draggable` object with the element as a parameter. This functionality is essential for interactive applications, enabling users to reorder items dynamically. Below is a demonstration of how to implement draggable functionality for a specific DOM element.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/draggable-default-cs1/src/app.component.ts %}
@@ -48,8 +46,7 @@ Syncfusion provides the option to create a clone of a draggable element while th
 
 ### Drag area
 
-A drag area is a specific area within a user interface that is designated for drag and drop operations. When an object or element is dragged within a drag area, certain actions or events may be triggered. The user can specify the drag area by using the [dragArea](https://ej2.syncfusion.com/documentation/api/base/draggable/#dragarea) property. Refer to the below sample.
-
+A drag area is a confined section within the user interface where drag-and-drop operations are permissible. Executing a drag within this area can trigger specific actions or events, enhancing control over user interactions. Define a drag area by setting the [dragArea](https://ej2.syncfusion.com/documentation/api/base/draggable/#dragarea) property as illustrated below.
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/common/drag-area/src/app.component.ts %}
@@ -64,11 +61,11 @@ A drag area is a specific area within a user interface that is designated for dr
 
 ## Droppable
 
-Droppable component refers to an area of a user interface that can receive a draggable component that is being moved by a user. Syncfusion's [`Droppable`](https://ej2.syncfusion.com/documentation/api/base/droppable/) library converts any DOM element into a droppable zone, which accepts draggable elements.
+The Droppable component designates parts of the user interface that can serve as targets for draggable elements. Utilizing Syncfusion's [`Droppable`](https://ej2.syncfusion.com/documentation/api/base/droppable/) library, you can transform any DOM element into a droppable area, capable of accepting draggable components.
 
-When a draggable component is moved over a droppable component, the [drop](https://ej2.syncfusion.com/documentation/api/base/droppable/#events) event can be triggered. The user can get details about the dropped element through the event argument. Based on the event argument, the user can append the dragged element to the target element.
+On interaction between a draggable and a droppable component, a [drop](https://ej2.syncfusion.com/documentation/api/base/droppable/#events) event is fired. Information about the dropped element is accessible via event arguments, allowing developers to append the dragged element to the target dynamically.
 
-Refer to the following code snippet to enable droppable zones.
+Below is an example demonstrating the creation of droppable zones.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

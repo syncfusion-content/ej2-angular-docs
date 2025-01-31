@@ -7,22 +7,22 @@ import { Component, Inject, ViewChild } from '@angular/core';
 import { TreeViewComponent, ContextMenuComponent } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-    imports: [
+imports: [
         FormsModule, TreeViewModule, ContextMenuModule
     ],
-    standalone: true,
+
+
+standalone: true,
     selector: 'app-container',
     template: `<div id='treeparent'>
-                 <ejs-treeview  id='tree' #treeview [fields]='field' (nodeClicked)='nodeClicked($event)'></ejs-treeview>
+                 <ejs-treeview  id='tree' #treevalidate [fields]='field' (nodeClicked)='nodeclicked($event)'></ejs-treeview>
                  </div>
-                 <ejs-contextmenu #contextmenu id='contextmenutree' target='#tree' [items]='menuItems' (beforeOpen)='beforeopen($event)' (select)='menuclick($event)'></ejs-contextmenu>`
+                 <ejs-contextmenu #contentmenutree id='contentmenutree' target='#tree' [items]='menuItems' (beforeOpen)='beforeopen($event)' (select)='menuclick($event)'></ejs-contextmenu>`
 })
-
 export class AppComponent {
 
-    public hierarchicalData: Object[] = [
-        {
-            id: '01', name: 'Local Disk (C:)', expanded: true, hasAttribute: { class: 'remove rename' },
+  public hierarchicalData: Object[] = [
+        { id: '01', name: 'Local Disk (C:)', expanded: true, hasAttribute:{class:'remove rename'},
             subChild: [
                 {
                     id: '01-01', name: 'Program Files',
@@ -51,7 +51,7 @@ export class AppComponent {
             ]
         },
         {
-            id: '02', name: 'Local Disk (D:)', hasAttribute: { class: 'remove' },
+            id: '02', name: 'Local Disk (D:)', hasAttribute:{class:'remove'},
             subChild: [
                 {
                     id: '02-01', name: 'Personals',
@@ -80,7 +80,7 @@ export class AppComponent {
             ]
         },
         {
-            id: '03', name: 'Local Disk (E:)', icon: 'folder', hasAttribute: { class: 'rename' },
+            id: '03', name: 'Local Disk (E:)', icon: 'folder', hasAttribute:{class:'rename'},
             subChild: [
                 {
                     id: '03-01', name: 'Pictures',
@@ -92,7 +92,7 @@ export class AppComponent {
                 },
                 {
                     id: '03-02', name: 'Documents',
-                    subChild: [
+                        subChild: [
                         { id: '03-02-01', name: 'Environment Pollution.docx' },
                         { id: '03-02-02', name: 'Global Warming.ppt' },
                         { id: '03-02-03', name: 'Social Network.pdf' },
@@ -110,46 +110,60 @@ export class AppComponent {
         }
     ];
     // Mapping TreeView fields property with data source properties
-    public field: Object = { dataSource: this.hierarchicalData, id: 'id', text: 'name', child: 'subChild', htmlAttributes: 'hasAttribute' };
+    public field:Object ={ dataSource: this.hierarchicalData, id: 'id', text: 'name', child: 'subChild', htmlAttributes: 'hasAttribute' };
 
-    @ViewChild('treeview') treeview!: TreeViewComponent;
-    @ViewChild('contextmenu') contextmenu!: ContextMenuComponent;
+    @ViewChild ('treevalidate') treevalidate?: TreeViewComponent;
+    @ViewChild ('contentmenutree') contentmenutree?: ContextMenuComponent;
 
-
-    nodeClicked(args: NodeClickEventArgs) {
+    public nodeclicked(args: NodeClickEventArgs) {
         if (args.event.which === 3) {
-            this.treeview.selectedNodes = [args.node.getAttribute('data-uid') as string];
-        }
-    }
-    //Render the context menu with target as Treeview
-    public menuItems: MenuItemModel[] = [
-        { text: 'Add New Item' },
-        { text: 'Rename Item' },
-        { text: 'Remove Item' }
-    ];
-
-    public index: number = 1;
-    menuclick(args: MenuEventArgs) {
-        const targetNodeId = this.treeview.selectedNodes[0];
-        switch (args.item.text) {
-            case 'Add New Item':
-                const newNodeId = `tree_${this.index++}`;
-                this.treeview.addNodes([{ id: newNodeId, name: 'New Folder' }], targetNodeId);
-                this.treeview.beginEdit(newNodeId);
-                break;
-            case 'Remove Item':
-                this.treeview.removeNodes([targetNodeId]);
-                break;
-            case 'Rename Item':
-                this.treeview.beginEdit(targetNodeId);
-                break;
+            (this.treevalidate as TreeViewComponent).selectedNodes = [args.node.getAttribute('data-uid') as string];
         }
     }
 
-    beforeopen(args: BeforeOpenCloseMenuEventArgs) {
-        const targetNode = document.querySelector(`[data-uid="${this.treeview.selectedNodes[0]}"]`);
-        this.contextmenu.enableItems(['Remove Item'], !targetNode?.classList.contains('remove'));
-        this.contextmenu.enableItems(['Rename Item'], !targetNode?.classList.contains('rename'));
+ //Render the context menu with target as Treeview
+public menuItems: MenuItemModel[] = [
+    { text: 'Add New Item' },
+    { text: 'Rename Item' },
+    { text: 'Remove Item' }
+];
+
+public index: number = 1;
+public menuclick(args: MenuEventArgs) {
+    let targetNodeId: string = this.treevalidate?.selectedNodes[0] as string;
+    if (args.item.text == "Add New Item") {
+    let nodeId: string = "tree_" + this.index;
+    let item: { [key: string]: Object } = { id: nodeId, name: "New Folder" };
+        this.treevalidate?.addNodes([item], targetNodeId, null as any);
+        this.index++;
+        this.hierarchicalData.push(item);
+        this.treevalidate?.beginEdit(nodeId);
+    }
+    else if (args.item.text == "Remove Item") {
+        this.treevalidate?.removeNodes([targetNodeId]);
+    }
+    else if (args.item.text == "Rename Item") {
+        this.treevalidate?.beginEdit(targetNodeId);
     }
 }
+
+public beforeopen(args: BeforeOpenCloseMenuEventArgs) {
+    let targetNodeId: string = this.treevalidate?.selectedNodes[0] as string;
+    let targetNode: Element = document.querySelector('[data-uid="' + targetNodeId + '"]') as Element;
+    if (targetNode.classList.contains('remove')) {
+        this.contentmenutree?.enableItems(['Remove Item'], false);
+    }
+    else {
+        this.contentmenutree?.enableItems(['Remove Item'], true);
+    }
+    if (targetNode.classList.contains('rename')) {
+        this.contentmenutree?.enableItems(['Rename Item'], false);
+    }
+    else {
+        this.contentmenutree?.enableItems(['Rename Item'], true);
+    }
+}
+}
+
+
 

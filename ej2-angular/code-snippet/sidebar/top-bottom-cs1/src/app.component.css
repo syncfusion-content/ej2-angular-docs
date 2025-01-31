@@ -1,0 +1,96 @@
+/* sample-level styles */
+body {
+	overflow: hidden;
+}
+
+.e-main-content {
+	text-align: center;
+	background: #f5f5f5;
+	font-size: 16px;
+	overflow: auto;
+}
+
+.sub-content {
+	height: 378px;
+	padding: 50px;
+}
+
+#button-align {
+	padding: 10px;
+}
+
+.title {
+	text-align: center;
+	font-size: 20px;
+	padding: 5px;
+}
+
+.content {
+	padding: 10px;
+	text-align: center;
+}
+
+.toggle {
+	width: 200px;
+}
+
+#top-sidebar,
+#bottom-sidebar {
+	background-color: rgb(25, 118, 210);
+	color: #ffffff;
+	overflow: hidden;
+}
+
+/* top sidbar element styles*/
+.top_sidebar.e-open {
+	transform: translateY(0%) !important;
+	transition: transform 0.5s ease;
+	visibility: visible;
+}
+
+.top_sidebar,
+#top-sidebar.e-left,
+.bottom_sidebar {
+	width: 100% !important;
+	float: left;
+	height: 75px;
+}
+
+.top_sidebar,
+#top-sidebar.e-left {
+	transform: translateY(-100%) !important;
+}
+
+.top_sidebar.e-close {
+	transform: translateY(-100%);
+}
+
+.top_content_animation {
+	margin-left: 0px !important;
+	margin-top: 75px;
+}
+
+/* end of top sidebar element styles*/
+/*  bottom sidebar element styles*/
+.bottom_sidebar.e-open {
+	transform: translateY(0%) !important;
+	transition: transform 0.5s ease;
+	visibility: visible;
+	bottom: 0;
+	top: unset !important;
+	position: absolute;
+}
+
+.bottom_sidebar.e-close {
+	transform: translateY(100%);
+}
+
+#bottom-sidebar.e-left {
+	transform: translateY(+100%) !important;
+}
+
+.bottom_animation_content {
+	margin-left: 0px !important;
+}
+
+/* end of bottom sidebar styles*/

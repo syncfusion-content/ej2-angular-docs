@@ -10,14 +10,14 @@ domainurl: ##DomainURL##
 
 # Populating items in Angular Carousel component
 
-The Carousel component offers two ways to render slides:
+In the Carousel, slides can be rendered in two ways as follows,
 
-* [Populating items using carousel item](#populating-items-using-carousel-item)
-* [Populating items using data source](#populating-items-using-data-source)
+* Populating items using carousel item
+* Populating items using data source
 
 ## Populating items using carousel item
 
-When rendering the Carousel component using items binding, you can assign templates for each item separately or assign a common template to each item. You can also customize the slide transition [interval](./animations-and-transitions/#intervals-between-slides) for each item separately. The following example code depicts the functionality as item property binding.
+When rendering the Carousel component using items binding, you can assign templates for each item separately or assign a common template to each item. You can also customize the slide transition interval for each item separately. The following example code depicts the functionality as item property binding.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,10 +49,10 @@ When rendering the Carousel component using data binding, you can assign a commo
 
 ## Selection
 
-The Carousel items are populated starting from the first index and can be customized in the following ways:
+The Carousel items will be populated from the first index of the Carousel items and can be customized using the following ways,
 
-* [Select an item using the property](#select-an-item-using-the-property)
-* [Select an item using the method](#select-an-item-using-the-method)
+* Select an item using the property.
+* Select an item using the method.
 
 ### Select an item using the property
 
@@ -88,7 +88,7 @@ Using the [`prev`](https://ej2.syncfusion.com/angular/documentation/api/carousel
 
 ## Partial visible slides
 
-The Carousel component supports showing one complete slide and partial views of adjacent (previous and next) slides simultaneously. You can enable or disable the partial slides using the [`partialVisible`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#partialVisible) property.
+The Carousel component supports to show one complete slide and a partial view of adjacent (previous and next) slides at the same time. You can enable or disable the partial slides using the [`partialVisible`](https://ej2.syncfusion.com/angular/documentation/api/carousel/#partialVisible) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -108,7 +108,7 @@ The last slide will be displayed as a partial slide at the initial rendering whe
 
 The previous slide is not displayed at the initial rendering when the `loop` is disabled.
 
-The following example demonstrates the functionality of `partialVisible` and without `loop` feature.
+The following example code depicts the functionality of `partialVisible` and without `loop` functionalities.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

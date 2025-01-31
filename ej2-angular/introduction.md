@@ -10,7 +10,8 @@ domainurl: ##DomainURL##
 
 # Syncfusion Angular UI Components (Essential JS 2)
 
-Syncfusion Angular UI (Essential JS 2) is a collection of modern TypeScript based true Angular Components. It has support for Ahead Of Time (AOT) compilation and Tree-Shaking. All the components are developed from the ground up to be lightweight, responsive, modular and touch friendly.
+Syncfusion Angular UI (Essential JS 2) offers a comprehensive suite of modern, TypeScript-based true Angular components. These components support Ahead Of Time (AOT) compilation and Tree-Shaking, ensuring optimal performance. Each component is designed to be lightweight, responsive, modular, and touch-friendly to cater to diverse user needs.
+
 
 ## Components list
 
@@ -181,34 +182,32 @@ letter-spacing: 0.7px;
 </tr>
 </table>
 
-## How to best read this user guide
+## How to Best Read This User Guide
 
-* The best way to get started would be to read the "Getting Started" section of the documentation for the component that you would like to start using first.
-The "Getting Started" guide gives just enough information that you need to know before starting to write code. This is the only section that we recommend reading end-to-end before starting to write code, all other information can be referred as needed.
+- Begin by reading the "Getting Started" section for the specific component you wish to use. This section provides the essential information required to understand and implement the component efficiently. We recommend reading this section fully before writing any code. For all other information, refer to it as needed.
 
-* Now that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application.
-A good starting point would be to refer to the code snippets in the [online sample browser](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/grid/over-view) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
+- After acquiring a basic understanding, start integrating the component into your application. A helpful resource is the [online sample browser](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/grid/over-view), which contains numerous code samples. You'll likely find examples similar to your intended usage scenario.
 
-* Another valuable resource is the API reference which provides detailed information on the object hierarchy as well as the settings available on every object.
+- The API reference is another valuable resource, offering detailed information on the object hierarchy and configurable options for each object.
 
-## Getting help
+## Getting Help
 
-* If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please contact us by creating a support ticket in [our support site](https://www.syncfusion.com/support/directtrac/incidents) or ask your query in Stack Overflow with tag `syncfusion-ej2`.
+- If the self-help resources do not satisfy your information needs, please create a support ticket on [our support site](https://www.syncfusion.com/support/directtrac/incidents) or post your question on Stack Overflow using the `syncfusion-ej2` tag.
 
-* Don’t see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/angular).
+- If there's something you require that isn't covered, request it through our [feedback portal](https://www.syncfusion.com/feedback/angular).
 
->Note: Syncfusion does not collect any kind of information when our components are used in customer applications.
+> Note: Syncfusion does not collect any data from customer applications utilizing our components.
 
-## See also
+## See Also
 
-* [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
+- [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
 
-* [Getting started with Syncfusion Angular Components](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli)
+- [Getting Started with Syncfusion Angular Components](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-cli)
 
-* [Getting started with Syncfusion Angular SystemJS](https://ej2.syncfusion.com/angular/documentation/getting-started/systemjs)
+- [Getting Started with Syncfusion Angular SystemJS](https://ej2.syncfusion.com/angular/documentation/getting-started/systemjs)
 
-* [Getting started Syncfusion Angular with ASP.NET Core](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-core)
+- [Getting Started with Syncfusion Angular on ASP.NET Core](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-core)
 
-* [Getting started Syncfusion Angular with ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc)
+- [Getting Started with Syncfusion Angular on ASP.NET MVC](https://ej2.syncfusion.com/angular/documentation/getting-started/aspnet-mvc)
 
-* [Getting started with Syncfusion Angular Tree shaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking)
+- [Getting Started with Syncfusion Angular Tree Shaking](https://ej2.syncfusion.com/angular/documentation/frameworks-and-feature/tree-shaking)
