@@ -1,4 +1,4 @@
-import { NgModule, } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 import { ComboBoxModule  } from '@syncfusion/ej2-angular-dropdowns';
@@ -10,7 +10,7 @@ import { Query } from '@syncfusion/ej2-data';
 
 @Component({
     imports: [
-    TreeGridAllModule,ComboBoxModule
+    TreeGridAllModule,ComboBoxModule, FormsModule
     ],
     providers: [EditService, ToolbarService, PageService],
     standalone: true,

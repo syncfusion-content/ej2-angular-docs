@@ -463,6 +463,7 @@ The following example demonstrates how to render a DropDownList component with m
 
 
 import { NgModule, } from '@angular/core';
+import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns'
 import { BrowserModule } from '@angular/platform-browser'
 import { TreeGridAllModule } from '@syncfusion/ej2-angular-treegrid';
 import { Component, OnInit} from '@angular/core';

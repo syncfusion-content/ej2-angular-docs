@@ -7,7 +7,6 @@ import { RichTextEditorModule } from '@syncfusion/ej2-angular-richtexteditor';
 import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
 
-
 @Component({
     imports: [RichTextEditorAllModule],
     standalone: true,
