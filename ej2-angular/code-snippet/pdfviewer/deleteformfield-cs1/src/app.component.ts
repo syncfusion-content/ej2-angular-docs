@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { PdfViewerModule, LinkAnnotationService, BookmarkViewService, MagnificationService, ThumbnailViewService,
-  ToolbarService, NavigationService, LoadEventArgs, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService, PdfViewerComponentTextFieldSettings, SignatureFieldSettings, InitialFieldSettings, 
+  ToolbarService, NavigationService, LoadEventArgs, TextSearchService, TextSelectionService, PrintService, AnnotationService, FormDesignerService, FormFieldsService, PageOrganizerService, PdfViewerComponent, TextFieldSettings, SignatureFieldSettings, InitialFieldSettings, 
   CheckBoxFieldSettings, RadioButtonFieldSettings} from '@syncfusion/ej2-angular-pdfviewer'
 
 
