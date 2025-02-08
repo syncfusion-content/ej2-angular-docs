@@ -1,8 +1,7 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
 import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
 import { Component } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService,IFrameSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
+
 @Component({
     imports: [RichTextEditorAllModule],
     standalone: true,
@@ -10,6 +9,7 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService,IFrameSett
     template: `<ejs-richtexteditor id='iframeRTE' [iframeSettings]='iframe'></ejs-richtexteditor>`,
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
 })
+
 export class AppComponent  {
     public iframe: IFrameSettingsModel = {
         enable: true,

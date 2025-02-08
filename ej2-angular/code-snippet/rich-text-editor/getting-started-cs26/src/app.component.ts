@@ -1,8 +1,6 @@
 import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor';
-
 import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
-
 import { Component } from '@angular/core';
 import {
   ToolbarService,
@@ -19,13 +17,16 @@ import {
               </ejs-richtexteditor>`,
   providers: [ToolbarService, LinkService, ImageService, HtmlEditorService],
 })
+
 export class AppComponent {
   public tools: object = {
     items: ['FontColor', 'BackgroundColor'],
   };
+  
   public bgColor = {
     modeSwitcher: true,
   };
+  
   public fontColor = {
     modeSwitcher: true,
   };

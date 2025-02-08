@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
+
 @Component({
   imports: [
     RichTextEditorModule
@@ -9,6 +10,7 @@ import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarSe
   template: `<ejs-richtexteditor id='editor' [toolbarSettings]='tools' [(value)]='value'></ejs-richtexteditor>`,
   providers: [ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService]
 })
+
 export class AppComponent {
   public tools: ToolbarSettingsModel = {
     type: 'MultiRow' as ToolbarSettingsModel['type'],

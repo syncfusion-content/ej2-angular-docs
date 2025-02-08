@@ -2,8 +2,8 @@ import { enableRipple, createElement } from '@syncfusion/ej2-base';
 import { Component, ViewChild } from '@angular/core';
 import { RichTextEditorModule, ToolbarSettingsModel, ContentRender, RichTextEditorComponent, MarkdownFormatter, ToolbarService, LinkService, ImageService, MarkdownEditorService, TableService } from '@syncfusion/ej2-angular-richtexteditor';
 import { marked } from 'marked';
-
 enableRipple(true);
+
 @Component({
     imports: [RichTextEditorModule],
     standalone: true,
@@ -12,6 +12,7 @@ enableRipple(true);
     </ejs-richtexteditor>`,
     providers: [ToolbarService, LinkService, ImageService, MarkdownEditorService, TableService]
 })
+
 export class AppComponent {
     @ViewChild('mdCustom')
     public editorObj?: RichTextEditorComponent;

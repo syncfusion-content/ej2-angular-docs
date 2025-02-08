@@ -13,6 +13,7 @@ enableRipple(true);
     </ejs-richtexteditor>`,
     providers: [ToolbarService, LinkService, ImageService, MarkdownEditorService, TableService]
 })
+
 export class AppComponent {
     @ViewChild('mdPreview')
     public editorObj?: RichTextEditorComponent;

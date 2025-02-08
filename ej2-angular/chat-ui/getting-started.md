@@ -28,32 +28,19 @@ The following list of dependencies are required to use the Angular Chat UI compo
 
 ## Setup angular environment
 
-Angular provides the easiest way to set angular CLI projects using [`Angular CLI`](https://github.com/angular/angular-cli) tool.
+You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
-Install the CLI application globally to your machine.
-
-```bash
+```
 npm install -g @angular/cli
 ```
 
-## Create a new application
+## Create an Angular application
 
-```bash
-ng new syncfusion-angular-chat-ui
+Start a new Angular application using below Angular CLI command.
+
 ```
-
-By default, it install the CSS style base application. To setup with SCSS, pass --style=scss argument on create project.
-
-Example code snippet.
-
-```bash
-ng new syncfusion-angular-chat-ui --style=scss
-```
-
-Navigate to the created project folder.
-
-```bash
-cd syncfusion-angular-chat-ui
+ng new my-app
+cd my-app
 ```
 
 ## Installing Syncfusion Chat UI package
@@ -68,7 +55,7 @@ Currently, Syncfusion provides two types of package structures for Angular compo
 
 Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
-Add `@syncfusion/ej2-angular-interactive-chat` package to the application.
+Add [`@syncfusion/ej2-angular-interactive-chat`](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat/v/27.1.48) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-interactive-chat --save
@@ -78,7 +65,7 @@ npm install @syncfusion/ej2-angular-interactive-chat --save
 
 For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
 
-Add `@syncfusion/ej2-angular-interactive-chat@ngcc` package to the application.
+Add [`@syncfusion/ej2-angular-interactive-chat@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-interactive-chat/v/27.1.48-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-interactive-chat@ngcc --save
@@ -91,26 +78,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 ```
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
-
-## Registering Chat UI module
-
-Import Chat UI module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-interactive-chat`.
-
-```javascript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the ChatUIModule for the Chat UI component
-import { ChatUIModule } from '@syncfusion/ej2-angular-interactive-chat';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-interactive-chat module into NgModule
-  imports:      [ BrowserModule, ChatUIModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
 
 ## Adding CSS reference
 
@@ -132,12 +99,14 @@ Modify the template in [src/app/app.component.ts] file to render the Angular Cha
 
 ```javascript
 import { Component } from '@angular/core';
-import { ChatUIComponent } from '@syncfusion/ej2-angular-interactive-chat';
+import { ChatUIModule } from '@syncfusion/ej2-angular-interactive-chat';
 
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the Chat UI component
-  template: `<div ejs-chatui id='chatUI'></div>`
+    imports: [ ChatUIModule ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the Chat UI component
+    template: `<div ejs-chatui id='chatui'></div>`
 })
 export class AppComponent  { }
 ```

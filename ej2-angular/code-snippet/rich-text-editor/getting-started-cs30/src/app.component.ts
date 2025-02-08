@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService, RichTextEditorComponent, NodeSelection, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 import { ButtonPropsModel } from '@syncfusion/ej2-popups';
 import { DialogComponent, DialogModule } from '@syncfusion/ej2-angular-popups';
+
 @Component({
     imports: [
         RichTextEditorModule,
@@ -16,6 +17,7 @@ import { DialogComponent, DialogModule } from '@syncfusion/ej2-angular-popups';
         </ejs-dialog>`,
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
 })
+
 export class AppComponent {
     @ViewChild('customEditor')
     public editorObj?: RichTextEditorComponent;

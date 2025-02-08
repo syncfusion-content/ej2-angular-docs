@@ -9,6 +9,7 @@ import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEd
   </ejs-richtexteditor>`,
   providers: [ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
 })
+
 export class AppComponent {
   public value: string = "<p>The Rich Text Editor triggers events based on its actions. </p><p> The events can be used as an extension point to perform custom operations.</p><ul><li>created - Triggers when the component is rendered.</li><li>change - Triggers only when editor is blurred and changes are done to the content.</li><li>focus - Triggers when editor is focused in.</li><li>blur - Triggers when editor is focused out.</li><li>actionBegin - Triggers before command execution using toolbar items or executeCommand method.</li><li>actionComplete - Triggers after command execution using toolbar items or executeCommand method.</li><li>destroyed – Triggers when the component is destroyed.</li></ul>";
   public customHTMLModel: IHtmlFormatterModel = { // formatter is used to configure the custom key
