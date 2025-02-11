@@ -16,16 +16,16 @@ import { FormControl, FormGroup, Validators, AbstractControl, FormsModule, React
     template: `<div class="control-section">
         <div class="content-wrapper">
         <div id="content" class="box-form" style="margin: 0 auto; max-width:750px; padding:25px">
-        <form [formGroup]="editorForm" (ngSubmit)="onSubmit()">
-        <div class="form-group">
-        <ejs-richtexteditor #fromEditor formControlName="name" (created)="editorCreated()">
-        </ejs-richtexteditor>
-        <div id="error"></div>
-        </div>
-        <div class="form-group">
-        <button type="submit" ejs-button>Submit</button>
-        <button type="reset" ejs-button (click)="editorForm.reset()" style="margin-left: 20px">Reset</button>
-        </div>
+         <form [formGroup]="editorForm">
+            <div >
+                Rich Text Editor contents:
+                <pre>{{ editorForm.controls['editor'].value }}</pre>
+
+            </div>
+            <div class="example-wrapper">
+                <ejs-richtexteditor #fromEditor formControlName="editor" saveInterval=1 >
+                </ejs-richtexteditor>
+            </div>
         </form>
         </div>
         </div>`,
@@ -33,28 +33,11 @@ import { FormControl, FormGroup, Validators, AbstractControl, FormsModule, React
 })
 export class AppComponent {
 
-    editorForm!: FormGroup;
-
-    @ViewChild('fromEditor')
-    private editorEle: RichTextEditorComponent | undefined;
-
-    constructor() {
-        // <--- inject FormBuilder
-    }
-
-    ngOnInit(): void {
-        this.editorForm = new FormGroup({
-            'name': new FormControl(null, Validators.required)
-        });
-    }
-
-    editorCreated(): void {
-        this.editorEle!.element.focus();
-    }
-
-    onSubmit(): void {
-        alert('Form submitted successfully');
-    }
+    public editorForm: FormGroup = new FormGroup({
+        editor: new FormControl(
+          '<p><b>Rich Text Editor</b> with Reactive Form</p>'
+        ),
+      });
 }
 
 

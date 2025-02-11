@@ -2,7 +2,6 @@ import { Component, ViewChild } from '@angular/core';
 import { SlashMenuItemSelectArgs, ToolbarService, SlashMenuService, LinkService, ImageService, RichTextEditorModule, PasteCleanupService, VideoService, AudioService, FormatPainterService, TableService, SlashMenuSettingsModel, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 import { RichTextEditorComponent, HtmlEditorService, QuickToolbarService, EmojiPickerService } from '@syncfusion/ej2-angular-richtexteditor';
 
-
 @Component({
     standalone: true,
     selector: 'app-root',
@@ -20,6 +19,7 @@ import { RichTextEditorComponent, HtmlEditorService, QuickToolbarService, EmojiP
     providers: [ToolbarService, LinkService, ImageService, QuickToolbarService, HtmlEditorService, EmojiPickerService, PasteCleanupService, VideoService, AudioService, FormatPainterService, TableService, SlashMenuService],
     imports: [RichTextEditorModule]
 })
+
 export class AppComponent {
     @ViewChild("slashMenuEditor")
     public slashMenuEditor!: RichTextEditorComponent;

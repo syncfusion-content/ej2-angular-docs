@@ -16,7 +16,6 @@ export class AppComponent {
     public tools: ToolbarSettingsModel = {
         items: ['Video']
     };
-
     public quickToolbarSettings: QuickToolbarSettingsModel = {
         showOnRightClick: true,
         video: ['VideoReplace', 'VideoAlign', 'VideoRemove', 'VideoLayoutOption', 'VideoDimension']

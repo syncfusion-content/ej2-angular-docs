@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService, ToolbarSettingsModel, PasteCleanupSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
+
 @Component({
     imports: [
         RichTextEditorModule
@@ -9,6 +10,7 @@ import { RichTextEditorModule, ToolbarService, HtmlEditorService, QuickToolbarSe
     template: `<ejs-richtexteditor id='editor' [toolbarSettings]='tools' [pasteCleanupSettings]="pasteCleanupSettings" [(value)]='value'></ejs-richtexteditor>`,
     providers: [ToolbarService, HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService]
 })
+
 export class AppComponent {
     public value: string = "<p>RichTextEditor is a WYSIWYG editing control which will reduce the effort for users while trying to express their formatting word content as HTML or Markdown format.</p><p><b>Paste Cleanup properties:</b></p><ul><li><p>prompt - specifies whether to enable the prompt when pasting in RichTextEditor.</p></li><li><p>plainText - specifies whether to paste as plain text or not in RichTextEditor.</p></li><li><p>keepFormat- specifies whether to keep or remove the format when pasting in RichTextEditor.</p></li><li><p>deniedTags - specifies the tags to restrict when pasting in RichTextEditor.</p></li><li><p>deniedAttributes - specifies the attributes to restrict when pasting in RichTextEditor.</p></li><li><p>allowedStyleProperties - specifies the allowed style properties when pasting in RichTextEditor.</p></li></ul>";
     public tools: ToolbarSettingsModel = {

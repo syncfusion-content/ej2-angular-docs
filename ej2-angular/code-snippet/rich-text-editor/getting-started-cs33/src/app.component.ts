@@ -1,10 +1,9 @@
 import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
-
 import { enableRipple } from '@syncfusion/ej2-base';
 enableRipple(true);
-
 import { Component } from '@angular/core';
 import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@syncfusion/ej2-angular-richtexteditor';
+
 @Component({
     imports: [ RichTextEditorAllModule ],
     standalone: true,
@@ -13,6 +12,7 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService } from '@s
     </ejs-richtexteditor>`,
     providers: [ToolbarService, LinkService, ImageService, HtmlEditorService]
 })
+
 export class AppComponent  {
     public tools: object = {
         items: ['FontSize']
