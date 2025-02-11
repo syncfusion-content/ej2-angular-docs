@@ -1,8 +1,6 @@
-/**
-* RTE - removeUrl Sample
-*/
 import { Component } from '@angular/core';
 import { RichTextEditorModule, ToolbarService, LinkService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService, ToolbarSettingsModel, ImageSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
+
 @Component({
     imports: [
         RichTextEditorModule

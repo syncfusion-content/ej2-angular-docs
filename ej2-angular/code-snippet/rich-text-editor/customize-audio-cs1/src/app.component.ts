@@ -15,7 +15,6 @@ export class AppComponent {
     public tools: ToolbarSettingsModel = {
         items: ['Audio']
     };
-
     public quickToolbarSettings: QuickToolbarSettingsModel = {
         showOnRightClick: true,
         audio: ['AudioReplace', 'Remove', 'AudioLayoutOption']

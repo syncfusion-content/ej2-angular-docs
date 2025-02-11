@@ -4,6 +4,7 @@ import { createElement, isNullOrUndefined, enableRipple } from '@syncfusion/ej2-
 import { marked } from 'marked';
 
 enableRipple(true);
+
 @Component({
     imports: [RichTextEditorModule],
     standalone: true,
@@ -13,6 +14,7 @@ enableRipple(true);
            </ejs-richtexteditor>`,
     providers: [ToolbarService, LinkService, ImageService, MarkdownEditorService, TableService]
 })
+
 export class AppComponent {
     @ViewChild('mdPreview')
     public editorObj?: RichTextEditorComponent;
@@ -115,6 +117,3 @@ export class AppComponent {
         }
     }
 }
-
-
-
