@@ -26,32 +26,19 @@ The following list of dependencies are required to use the Angular AI AssistView
 
 ## Setup angular environment
 
-Angular provides the easiest way to set angular CLI projects using [`Angular CLI`](https://github.com/angular/angular-cli) tool.
+You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
-Install the CLI application globally to your machine.
-
-```bash
+```
 npm install -g @angular/cli
 ```
 
-## Create a new application
+## Create an Angular application
 
-```bash
-ng new syncfusion-angular-ai-assistview
+Start a new Angular application using below Angular CLI command.
+
 ```
-
-By default, it install the CSS style base application. To setup with SCSS, pass --style=scss argument on create project.
-
-Example code snippet.
-
-```bash
-ng new syncfusion-angular-ai-assistview --style=scss
-```
-
-Navigate to the created project folder.
-
-```bash
-cd syncfusion-angular-ai-assistview
+ng new my-app
+cd my-app
 ```
 
 ## Installing Syncfusion AI AssistView package
@@ -90,26 +77,6 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Registering AI AssistView module
-
-Import AI AssistView module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-interactive-chat`.
-
-```javascript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the AIAssistViewModule for the AI AssistView component
-import { AIAssistViewModule } from '@syncfusion/ej2-angular-interactive-chat';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-interactive-chat module into NgModule
-  imports:      [ BrowserModule, AIAssistViewModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ## Adding CSS reference
 
 The following CSS files are available in `../node_modules/@syncfusion` package folder.
@@ -129,12 +96,14 @@ Modify the template in [src/app/app.component.ts] file to render the Angular AI 
 
 ```javascript
 import { Component } from '@angular/core';
-import { AIAssistViewComponent } from '@syncfusion/ej2-angular-interactive-chat';
+import { AIAssistViewModule } from '@syncfusion/ej2-angular-interactive-chat';
 
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the AI AssistView component
-  template: `<div ejs-aiassistview id='aiAssistView'></div>`
+    imports: [ AIAssistViewModule ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the AI AssistView component
+    template: `<div ejs-aiassistview id='aiAssistView'></div>`
 })
 export class AppComponent  { }
 ```

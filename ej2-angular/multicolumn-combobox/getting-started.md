@@ -30,32 +30,19 @@ The following list of dependencies are required to use the Angular ComboBox comp
 
 ## Setup angular environment
 
-Angular provides the easiest way to set angular CLI projects using [`Angular CLI`](https://github.com/angular/angular-cli) tool.
+You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
 
-Install the CLI application globally to your machine.
-
-```bash
+```
 npm install -g @angular/cli
 ```
 
-## Create a new application
+## Create an Angular application
 
-```bash
-ng new syncfusion-angular-multicolumn-combobox
+Start a new Angular application using below Angular CLI command.
+
 ```
-
-By default, it install the CSS style base application. To setup with SCSS, pass --style=scss argument on create project.
-
-Example code snippet.
-
-```bash
-ng new syncfusion-angular-multicolumn-combobox --style=scss
-```
-
-Navigate to the created project folder.
-
-```bash
-cd syncfusion-angular-multicolumn-combobox
+ng new my-app
+cd my-app
 ```
 
 ## Installing Syncfusion MultiColumn ComboBox package
@@ -70,7 +57,7 @@ Currently, Syncfusion provides two types of package structures for Angular compo
 
 Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
-Add [`@syncfusion/ej2-angular-multicolumn-combobox`](https://www.npmjs.com/package/@syncfusion/ej2-angular-multicolumn-combobox/v/20.2.38) package to the application.
+Add [`@syncfusion/ej2-angular-multicolumn-combobox`](https://www.npmjs.com/package/@syncfusion/ej2-angular-multicolumn-combobox/v/26.1.35) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-multicolumn-combobox --save
@@ -80,7 +67,7 @@ npm install @syncfusion/ej2-angular-multicolumn-combobox --save
 
 For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
 
-Add [`@syncfusion/ej2-angular-multicolumn-combobox@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-multicolumn-combobox/v/20.2.38-ngcc) package to the application.
+Add [`@syncfusion/ej2-angular-multicolumn-combobox@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-multicolumn-combobox/v/26.1.35-ngcc) package to the application.
 
 ```bash
 npm install @syncfusion/ej2-angular-multicolumn-combobox@ngcc --save
@@ -89,30 +76,10 @@ npm install @syncfusion/ej2-angular-multicolumn-combobox@ngcc --save
 To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` with the package version as below.
 
 ```bash
-@syncfusion/ej2-angular-multicolumn-combobox:"20.2.38-ngcc"
+@syncfusion/ej2-angular-multicolumn-combobox:"26.1.35-ngcc"
 ```
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
-
-## Registering MultiColumn ComboBox module
-
-Import MultiColumn ComboBox module into Angular application(app.module.ts) from the package `@syncfusion/ej2-angular-multicolumn-combobox`.
-
-```javascript
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the MultiColumn ComboBoxModule for the MultiColumn ComboBox component
-import { MultiColumnComboBoxModule } from '@syncfusion/ej2-angular-multicolumn-combobox';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-multicolumn-combobox module into NgModule
-  imports:      [ BrowserModule, MultiColumnComboBoxModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
 
 ## Adding CSS reference
 
@@ -132,15 +99,19 @@ This can be referenced in [src/styles.css] using following code.
 Modify the template in [src/app/app.component.ts] file to render the Angular ComboBox component. Add the Angular MultiColumn ComboBox by using `<ejs-multicolumncombobox>` selector in `template` section of the app.component.ts file.
 
 ```javascript
+
 import { Component } from '@angular/core';
-import { MultiColumnComboBoxComponent } from '@syncfusion/ej2-angular-multicolumn-combobox';
+import { MultiColumnComboBoxModule } from '@syncfusion/ej2-angular-multicolumn-combobox';
 
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the MultiColumn ComboBox component
-  template: `<ejs-multicolumncombobox id='multicolumn'></ejs-multicolumncombobox>`
+    imports: [ MultiColumnComboBoxModule ],
+    standalone: true,
+    selector: 'app-root',
+    // specifies the template string for the MultiColumn ComboBox component
+    template: `<ejs-multicolumncombobox id='multicolumn'></ejs-multicolumncombobox>`
 })
-export class AppComponent  { }
+export class AppComponent {}
+
 ```
 
 ## Binding data source with fields and columns
@@ -149,9 +120,11 @@ After initializing, populate the MultiColumn ComboBox with data by using the [da
 
 ```typescript
 import { Component } from '@angular/core';
-import { MultiColumnComboBoxComponent } from '@syncfusion/ej2-angular-multicolumn-combobox';
+import { MultiColumnComboBoxModule } from '@syncfusion/ej2-angular-multicolumn-combobox';
 
 @Component({
+    imports: [ MultiColumnComboBoxModule ],
+    standalone: true,
     selector: 'app-root',
     // specifies the template string for the MultiColumn ComboBox component
     template: `<ejs-multicolumncombobox id='multicolumn' [dataSource]='employeeData' [fields]='fields'>

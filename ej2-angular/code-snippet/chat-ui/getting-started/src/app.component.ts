@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChatUIModule } from '@syncfusion/ej2-angular-interactive-chat';
 
-import { Component, HostListener, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 @Component({
