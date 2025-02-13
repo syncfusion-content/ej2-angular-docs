@@ -160,9 +160,9 @@ The following example illustrates the output in your browser.
 
 ## Range validation
 
-You can set the minimum and maximum range of values in the NumericTextBox using the [`min`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#max) properties, so the numeric value should be in the min and max range.
+You can set the minimum and maximum range of values in the NumericTextBox using the [`min`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox/#min) and [`max`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox/#max) properties, so the numeric value should be in the min and max range.
 
-The validation behavior depends on the [`strictMode`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox#strictmode) property.
+The validation behavior depends on the [`strictMode`](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox/#strictmode) property.
 
 The below example demonstrates range validation.
 
