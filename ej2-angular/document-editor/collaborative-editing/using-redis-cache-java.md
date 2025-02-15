@@ -16,8 +16,8 @@ Allows multiple users to work on the same document simultaneously. This can be d
 
 The following are needed to enable collaborative editing in Document Editor
 
-- Sock JS
-- PostgreSQL database
+- `SockJS`
+- `Redis`
 
 ## How to enable collaborative editing in client side
 
@@ -142,155 +142,166 @@ onContentChange = (args: ContainerContentChangeEventArgs) => {
 
 To manage groups for each document, create a folder named “Hub” and add a file named ``` DocumentEditorHub.java ``` inside it. Add the following code to the file to manage SockJS groups using room names.
 
-Join the group by using unique id of the document by using JoinGroup method.
+Join the group by using unique id of the document by using `joinGroup` method.
 
 ```java
 @MessageMapping("/join/{documentName}")
-public void joinGroup(ActionInfo info, SimpMessageHeaderAccessor headerAccessor, @DestinationVariable String documentName) {
-    .....
-    .....
-    broadcastToRoom(info.getRoomName();, info, headers);
-    if (!actions.containsKey(connectionId)) {
-        actions.put(connectionId, info);
-    }
-    ArrayList<ActionInfo> actionsList = roomList.computeIfAbsent(documentName, k -> new ArrayList<>());
-    // Add the new user info to the list
-    actionsList.add(info);
-    .....
-    .....
-    broadcastToRoom(docName, actionsList, addUserheaders);
+public void joinGroup(ActionInfo info, SimpMessageHeaderAccessor headerAccessor,
+        @DestinationVariable String documentName) throws JsonProcessingException {
+    // To get the connection Id
+    String connectionId = headerAccessor.getSessionId();
+    info.setConnectionId(connectionId);
+    String docName = info.getRoomName();
+    HashMap<String, Object> additionalHeaders = new HashMap<>();
+    additionalHeaders.put("action", "connectionId");
+    MessageHeaders headers = new MessageHeaders(additionalHeaders);
+    // send the connection Id to the client
+    broadcastToRoom(docName, info, headers);
+    …………
+    …………
+    …………
 }
 
 public static void broadcastToRoom(String roomName, Object payload, MessageHeaders headers) {
-    if (payload instanceof HashMap) {
-        HashMap<String, ActionInfo> actionsMap = (HashMap<String, ActionInfo>) payload;
-        ArrayList<ActionInfo> actionsList = new ArrayList<>(actionsMap.values());
-        messagingTemplate.convertAndSend("/topic/public/" + roomName,
-                MessageBuilder.createMessage(actionsList, headers));
-    } else {
-        messagingTemplate.convertAndSend("/topic/public/" + roomName,
-                MessageBuilder.createMessage(payload, headers));
-    }
+    messagingTemplate.convertAndSend("/topic/public/" + roomName, MessageBuilder.createMessage(payload, headers));
 }
 ```
 ### Step 2: Handle user disconnection using SockJS.
 
 ```java
 @EventListener
-public void handleWebSocketDisconnectListener(SessionDisconnectEvent event) {
+public void handleWebSocketDisconnectListener(SessionDisconnectEvent event) throws Exception {
     String sessionId = event.getSessionId();
-    HashMap<String, ActionInfo> userDetails = DocumentEditorHub.actions;
-    if (userDetails.containsKey(sessionId)) {
-        ActionInfo info = userDetails.get(sessionId);
-        .....
-        .....
-        ArrayList<ActionInfo> actionsList = roomList.computeIfAbsent(info.getRoomName(), k -> new ArrayList<>());
-        for (ActionInfo action : actionsList) {
-            if (action.getConnectionId() == sessionId) {
-                actionsList.remove(action);
-                break;
-            }
-        }
-        if (userDetails.isEmpty()) {
-            Connection connection = DriverManager.getConnection(datasourceUrl, datasourceUsername, datasourcePassword);
-            CollaborativeEditingController.updateOperationsToSourceDocument(docName, false, 0, connection, datasourceAccessKey, datasourceSecretKey, datasourceBucketName);
-        }
+    try (Jedis jedis = RedisSubscriber.getJedis()) {
+        // to get the user details of the provided sessionId
+        String docName = jedis.hget("documentMap", sessionId);
+        // Publish a message indicating the user's departure from the group
+        jedis.publish(docName, "LEAVE|" + sessionId);
+    } catch (JedisConnectionException e) {
+        System.out.println(e);
     }
 }
 ```
 
-### Step 3: Configure PostgreSQL database connection string and Bucket s3 in application level.
+### Step 3: Configure Redis cache connection string in application level.
 
-Configure the PostgreSQL database that stores temporary data and Bucket S3 credential to get the document for the collaborative editing session. Provide the PostgreSQL database connection string and credential for bucket S3 in application.properties file.
+Configure the Redis that stores temporary data for the collaborative editing session. Provide the Redis connection string in `application.properties` file.
 
 ```java
-//PostgreSQL
-spring.datasource.url="<PostgreSQL server connection string>"
-spring.datasource.username="<PostgreSQL username>"
-spring.datasource.password="<PostgreSQL password>"
+//Redis configuration
+spring.datasource.redishost= "<Redis host string>"
+spring.datasource.redisport= "<Redis port>"
+spring.datasource.redispassword= "<Redis password>"
+spring.datasource.redisssl = <boolean>
 ```
 
 ### Step 4: Configure Web API actions for collaborative editing.
 
 #### Import File
--	When opening a document, create a database table to store temporary data for the collaborative editing session.
--	If the table already exists, retrieve the records from the table and apply them to the WordDocument instance using the UpdateActions method before converting it to the SFDT format.
+-	When opening a document, create a Redis cache to store temporary data for the collaborative editing session.
+-	If the Redis cache already exists, retrieve the records from the Redis cache and apply them to the WordProcessorHelper instance using the `updateActions` method before converting it to the SFDT format.
 
 ```java
-public String ImportFile(@RequestBody FilesPathInfo file) {
-	DocumentContent content = new DocumentContent();
-	// Load the document from local.
-	WordProcessorHelper document = WordProcessorHelper.load(classLoader.getResourceAsStream("static/files/" + file.getFileName()), false);
-	// table in database to store temporary data in collaborative editing session.
-	ArrayList<ActionInfo> actions = createRecordForCollaborativeEditing(file.getRoomName(), lastSyncedVersion_out);
-	if (actions != null && actions.size() > 0) {
-		document.updateActions(actions);
-	}
-	.....
-	return data;
+public String importFile(@RequestBody FilesPathInfo file) throws Exception {
+    try {
+        ClassLoader classLoader = getClass().getClassLoader();
+        // Get source document from database/file system/blob storage
+        WordProcessorHelper document = getDocumentFromBucketS3(file.getFileName(), datasourceAccessKey,
+        datasourceSecretKey, datasourceBucketName);
+        documentName=file.getFileName();
+        // Get the list of pending operations for the document
+        List<ActionInfo> actions = getPendingOperations(file.getFileName(), 0, -1);
+        if (actions != null && actions.size() > 0) {
+            // If there are any pending actions, update the document with these actions
+            document.updateActions(actions);
+        }
+        // Serialize the updated document to SFDT format
+        String json = WordProcessorHelper.serialize(document);
+        // Return the serialized content as a JSON string
+        return json;
+    } catch (Exception e) {
+        e.printStackTrace();
+        return "{\"sections\":[{\"blocks\":[{\"inlines\":[{\"text\":" + e.getMessage() + "}]}]}]}";
+    }
 }
 ```
 
-#### Update editing records to database
--	Each edit operation made by the user is sent to the server and is pushed to the database. Each operation receives a version number after being inserted into the database.
+#### Update editing records to Redis
+-	Each edit operation made by the user is sent to the server and is pushed to the Redis. Each operation receives a version number after being inserted into the Redis.
 -	After inserting the records to the server, the position of the current editing operation must be transformed against any previous editing operations not yet synced with the client using the TransformOperation method.
 -	After performing the transformation, the current operation is broadcast to all connected users within the group.
 
 ```java
-public ActionInfo UpdateAction(@RequestBody ActionInfo param) {
-	Actionnfo transformedAction = addOperationsToTable(param.getRoomName());
-	HashMap<String, Object> action = new HashMap<>();
-	action.put("action", "updateAction");
-	DocumentEditorHub.broadcastToRoom(roomName, transformedAction, new MessageHeaders(action));
-	return transformedAction;
+public ActionInfo updateAction(@RequestBody ActionInfo param) throws Exception {
+    String roomName = param.getRoomName();
+    ActionInfo transformedAction = addOperationsToCache(param);
+    HashMap<String, Object> action = new HashMap<>();
+    action.put("action", "updateAction");
+    DocumentEditorHub.publishToRedis(roomName, transformedAction);
+    DocumentEditorHub.broadcastToRoom(roomName, transformedAction, new MessageHeaders(action));
+    return transformedAction;
 }
 
-private ActionInfo addOperationsToTable(ActionInfo action) {
+private ActionInfo addOperationsToCache(ActionInfo action) throws Exception {
     int clientVersion = action.getVersion();
-	String tableName = action.getRoomName();
-    .....
-	.....
-	ArrayList<ActionInfo> actions = getOperationsQueue(table);
-	for (ActionInfo info : actions) {
-        if (!info.isTransformed()) {	
-            CollaborativeEditingHandler.transformOperation(info, actions);
-		}
-	}
-	action = actions.get(actions.size() - 1);
-	action.setVersion(updateVersion);
-	return acion;
+    …………
+    …………
+    …………
+
+    // Define the keys for Redis operations based on the action's room name
+    String[] keys = { roomName + CollaborativeEditingHelper.versionInfoSuffix, roomName,
+            roomName + CollaborativeEditingHelper.revisionInfoSuffix,
+            roomName + CollaborativeEditingHelper.actionsToRemoveSuffix };
+    // Prepare values for the Redis script
+    String[] values = { serializedAction, String.valueOf(clientVersion),
+            String.valueOf(CollaborativeEditingHelper.saveThreshold) };
+
+    …………
+    …………
+    …………
+    // Return the updated action
+    return action;
 }
 ```
 
 #### Add Web API to get previous operation as a backup to get lost operations
-On the client side, messages send from server using SockJS may be received in a different order, or some operations may be missed due to network issues. In these cases, we need a backup method to retrieve missing records from the database.
+On the client side, messages send from server using SockJS may be received in a different order, or some operations may be missed due to network issues. In these cases, we need a backup method to retrieve missing records from the Redis.
 Using the following method, we can retrieve all operations after the last successful client-synced version and return all missing operations to the requesting client. 
 
 ```java
-public ActionInfo UpdateAction(@RequestBody ActionInfo param) {
-	Actionnfo transformedAction = addOperationsToTable(param.getRoomName());
-	HashMap<String, Object> action = new HashMap<>();
-	action.put("action", "updateAction");
-	DocumentEditorHub.broadcastToRoom(roomName, transformedAction, new MessageHeaders(action));
-	return transformedAction;
-}
+@PostMapping("/api/collaborativeediting/GetActionsFromServer")
+public String getActionsFromServer(@RequestBody ActionInfo param) throws ClassNotFoundException {
+    try (Jedis jedis = RedisSubscriber.getJedis()) {
+        // Initialize necessary variables from the parameters and helper class
+        int saveThreshold = CollaborativeEditingHelper.saveThreshold;
+        String roomName = param.getRoomName();
+        int lastSyncedVersion = param.getVersion();
+        int clientVersion = param.getVersion();
+        // Fetch actions that are effective and pending based on the last synced version
+        List<ActionInfo> actions = GetEffectivePendingVersion(roomName, lastSyncedVersion, jedis);
+        List<ActionInfo> currentAction = new ArrayList<>();
 
-private ActionInfo addOperationsToTable(ActionInfo action)
-			throws Exception {
-int clientVersion = action.getVersion();
-	String tableName = action.getRoomName();
-    .....
-    .....
-	ArrayList<ActionInfo> actions = getOperationsQueue(table);
+        for (ActionInfo action : actions) {
+            // Increment the version for each action sequentially
+            action.setVersion(++clientVersion);
 
-	for (ActionInfo info : actions) {
-        if (!info.isTransformed()) {	
-            CollaborativeEditingHandler.transformOperation(info, actions);
+            // Filter actions to only include those that are newer than the client's last
+            // known version
+            if (action.getVersion() > lastSyncedVersion) {
+                // Transform actions that have not been transformed yet
+                if (!action.isTransformed()) {
+                    CollaborativeEditingHandler.transformOperation(action, new ArrayList<>(actions));
+                }
+                currentAction.add(action);
+            }
         }
-	}
-	action = actions.get(actions.size() - 1);
-	action.setVersion(updateVersion);
-	return acion;
+        // Serialize the filtered and transformed actions to JSON and return
+        return gson.toJson(currentAction);
+    } catch (Exception ex) {
+        ex.printStackTrace();
+        // In case of an exception, return an empty JSON object
+        return "{}";
+    }
 }
 ```
 ## How to perform Scaling in Collaborative Editing.
@@ -324,9 +335,9 @@ jedis.publish("collaborativeedtiting", new com.fasterxml.jackson.databind.Object
     } catch (JedisConnectionException e) {
     }
 ```
-#### Step 3: Subscribe to the specific channel using the Redis Cache 'Subscribe'
+#### Step 3: Subscribe to the specific channel using the Redis cache 'Subscribe'
 
- Redis cache will be initialized and subscribe to the specific channel using the Redis Cache 'Subscribe' option. This ensures that users in any server will get notified when an editing operation is published to the Redis cache using the onMessage() API. Refer to the code snippet in RedisSubscriber.Java for details.
+ Redis cache will be initialized and subscribe to the specific channel using the Redis cache 'Subscribe' option. This ensures that users in any server will get notified when an editing operation is published to the Redis cache using the onMessage() API. Refer to the code snippet in RedisSubscriber.Java for details.
 
  ```java
 @PostConstruct
@@ -361,6 +372,8 @@ jedis.publish("collaborativeedtiting", new com.fasterxml.jackson.databind.Object
       }
 ```
 
+
 Full version of the code discussed about can be found in below GitHub location.
 
-GitHub Example: [`Collaborative editing examples`](https://github.com/SyncfusionExamples/EJ2-Document-Editor-Collaborative-Editing/tree/master/Java)
+GitHub Example: [`Collaborative editing examples`](https://github.com/SyncfusionExamples/EJ2-Document-Editor-Collaborative-Editing)
+
