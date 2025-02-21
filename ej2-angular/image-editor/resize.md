@@ -20,7 +20,10 @@ The Image Editor control includes a [`resize`](https://ej2.syncfusion.com/angula
 
 * height: Specifies the resizing height of the image.
 
-* isAspectRatio: Specifies a boolean value indicating whether the image should maintain its original aspect ratio during resizing. When set to true, the image will be resized while preserving its aspect ratio 
+* isAspectRatio: Specifies a boolean value indicating whether the image should maintain its original aspect ratio during resizing.
+    * When set to `true`, the image maintains its original aspect ratio. The width is applied as specified, and the height is automatically adjusted to maintain the aspect ratio.
+    * When set to `false`, the image is resized according to the specified width and height, without maintaining the aspect ratio.
+    * The default value is `false`.
 
 Here is an example of resizing the image using the [`resize`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#resize) method.   
 
