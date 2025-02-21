@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
     ],
     standalone: true,
     selector: 'app-root',
-    styleUrls: ['./app.component.css'],
     template: `<div id='element'><h1>Badge Component <span class="e-badge e-badge-primary">New</span></h1></div>`
 })
 

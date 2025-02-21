@@ -47,7 +47,7 @@ standalone: true,
                             </div>
                         </ng-template>
                     </e-panel>
-                    <e-panel [sizeX]="3" [sizeY]="2" [row]="0" [col]="3">
+                    <e-panel [sizeX]="3" [sizeY]="2" [row]="2" [col]="0">
                         <ng-template #header>
                             <div>Sales increase percentage 1</div>
                         </ng-template>
@@ -63,7 +63,7 @@ standalone: true,
                             </div>
                         </ng-template>
                     </e-panel>
-                    <e-panel [sizeX]="3" [sizeY]="2" [row]="1" [col]="0">
+                    <e-panel [sizeX]="3" [sizeY]="2" [row]="2" [col]="3">
                         <ng-template #header>
                             <div>Sales increase percentage 2</div>
                         </ng-template>
