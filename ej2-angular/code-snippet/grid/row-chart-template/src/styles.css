@@ -1,0 +1,32 @@
+@import 'node_modules/@syncfusion/ej2-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-calendars/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-notifications/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
+@import 'node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+.rows,
+.details {
+border-color: #e0e0e0;
+border-style: solid;
+}
+
+.rows {
+border-width: 1px 0px 0px 0px;
+}
+
+.details {
+border-width: 1px 0px 0px 0px;
+}
+
+.details > table {
+width: 100%;
+}
+
+td {
+padding: 2px 2px 3px 4px;
+}

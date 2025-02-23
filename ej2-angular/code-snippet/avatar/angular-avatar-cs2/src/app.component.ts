@@ -1,4 +1,3 @@
-{% raw %}
 import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { Component } from '@angular/core';
@@ -53,5 +52,3 @@ export class AppComponent {
         { src: 'https://ej2.syncfusion.com/demos/src/grid/images/2.png', size: 'e-avatar-xlarge' }
     ];
 }
-
-{% endraw %}

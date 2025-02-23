@@ -10,12 +10,12 @@ domainurl: ##DomainURL##
 
 # Appointments in Angular Schedule component
 
-Appointments can be anything that are scheduled for a specific time period. It can be created on varied time range and each appointments are categorized based on this range. The Scheduler events can be categorized as,
+Appointments can be anything that are scheduled for a specific time period. Appointments can be created on varied time range and each appointment is categorized based on this range. The Scheduler events can be categorized as,
 
-* Normal events
-* Spanned events
-* All-day events
-* Recurring events
+* [Normal events](#normal-events)
+* [Spanned events](#spanned-events)
+* [All-day events](#all-day-events)
+* [Recurring events](#recurring-events)
 
 To have a quick glance on how to add appointments to the Angular Scheduler and some of its advanced event-handling options, watch this video:
 

@@ -1,16 +1,13 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { ImageEditorModule } from '@syncfusion/ej2-angular-image-editor';
-import { Component,ViewChild } from '@angular/core';
-import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
-import { DialogComponent, DialogModule} from '@syncfusion/ej2-angular-popups';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ImageEditorModule, ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
+import { Component, ViewChild } from '@angular/core';
+import { DialogComponent, DialogModule } from '@syncfusion/ej2-angular-popups';
 
 @Component({
   imports: [
-
     ImageEditorModule, DialogModule
   ],
-
 
   standalone: true,
   selector: 'app-root',
@@ -30,7 +27,7 @@ import { DialogComponent, DialogModule} from '@syncfusion/ej2-angular-popups';
 export class AppComponent {
   @ViewChild('imageEditor')
   public imageEditorObj?: ImageEditorComponent;
-  @ViewChild('template') 
+  @ViewChild('template')
   public dialog?: DialogComponent;
   public position = { X: "center", Y: 100 }
   public height = '420px';
@@ -39,9 +36,8 @@ export class AppComponent {
   public visible: boolean = false;
   public onOpenDialog = (event: any): void => {
     this.dialog?.show();
-    this.imageEditorObj?.open('./bridge.png');
+    setTimeout(() => {
+      this.imageEditorObj?.open('./bridge.png');
+    }, 10);
   }
 }
-
-
-

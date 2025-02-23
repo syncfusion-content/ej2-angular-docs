@@ -18,15 +18,25 @@ In the Image Editor, the [`toolbar`](https://ej2.syncfusion.com/angular/document
 
 Specifies the toolbar items to perform UI interactions. Refer to the built-in toolbar items for the default value.
 
-* Crop
-* Transform
-* Annotate
+* Open
+* Undo
+* Redo
 * ZoomIn
 * ZoomOut
-* Open
+* Crop
+* RotateLeft
+* RotateRight
+* HorizontalFlip
+* VerticalFlip
+* Straightening
+* Annotate
+* Finetune
+* Filter
+* Frame
+* Resize
+* Redact
 * Reset
 * Save
-* Pan
 
 ## Add a custom toolbar items
 
@@ -82,6 +92,24 @@ Here is an example of hiding the cropping and selection toolbar items using [`to
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs31" %}
 
+## Enable or disable a toolbar item
+
+The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#toolbar) property is employed to enable or disable toolbar items in the Image Editor. By default, the `toolbar` property includes the default toolbar items, and these items cannot be disabled. However, if you have defined custom toolbar items using the toolbarItemModel, you can enable or disable them by configuring their respective properties within the `toolbar` property. This provides the flexibility to control the availability and functionality of custom toolbar items based on your specific requirements. 
+
+Here is an example of disabling the custom toolbar item using `toolbar` property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/image-editor/default-cs60/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/image-editor/default-cs60/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/image-editor/default-cs60" %}
+
 ## Toolbar template
 
 The [`toolbarTemplate`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#toolbartemplate) property in the Image Editor provides the capability to fully customize the toolbar by supplying a custom template. This feature is valuable when you want to create a distinct and personalized image editing experience that goes beyond the default toolbar or the customizable toolbar options offered by the Image Editor. By defining a custom template for the toolbar, you have complete control over its layout, appearance, and functionality. This empowers you to design a unique and tailored toolbar that aligns perfectly with your specific requirements and desired user experience. 
@@ -106,7 +134,7 @@ The toolbar of the Image Editor can be replaced with the user specific UI using 
 
 The [`toolbarUpdating`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#toolbarupdating) event is triggered when inserting or selecting annotations, which opens the contextual toolbar in the Image Editor. Within this event, the [`toolbarItems`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/toolbarEventArgs/#toolbaritems) property in the [`ToolbarEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/toolbarEventArgs/) is utilized to add or remove contextual toolbar items.
 
-In the following example, the contextual toolbar for rectangle will be rendered with only stroke color by excluding fill color and stroke width using [`toolbarUpdating`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#toolbarupdating) event.
+In the following example, the contextual toolbar for freehand drawing will be rendered with only the stroke color, while the stroke width, remove, and separator options are excluded using the `toolbarUpdating` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

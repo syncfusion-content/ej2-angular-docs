@@ -23,7 +23,7 @@ standalone: true,
               <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar"></ejs-imageeditor>
               </div>
-              <button class="e-btn e-primary" (click)="btnClick()">Click</button>
+              <button class="e-btn e-primary" (click)="onSelectSquare()">Select Square</button>
               </div>`
 })
 
@@ -39,7 +39,7 @@ export class AppComponent {
         this.imageEditorObj?.open('./bridge.png');
       }
     }
-    btnClick(): void {
+    onSelectSquare(): void {
         this.imageEditorObj?.select("Square");
     }
 }

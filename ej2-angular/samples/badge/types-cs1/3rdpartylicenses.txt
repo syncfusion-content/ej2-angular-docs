@@ -7,10 +7,10 @@ MIT
 @angular/platform-browser
 MIT
 
-@syncfusion/ej2-angular-base
+@syncfusion/ej2-angular-notifications
 SEE LICENSE IN license
 
-@syncfusion/ej2-angular-notifications
+@syncfusion/ej2-base
 SEE LICENSE IN license
 
 @syncfusion/ej2-notifications
