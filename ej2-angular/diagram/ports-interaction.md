@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 ## Draw connector from port
 
-The port can be used to create connector by enabling `Draw` constraints to the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port#constraints-portconstraints) property. By default, the connector segment type is set to **Orthogonal**.
+The port can be used to create connector by enabling `Draw` constraints to the [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/port/#constraints) property. By default, the connector segment type is set to **Orthogonal**.
 
 The following code explains how to draw the connector by using the port constraints.
 

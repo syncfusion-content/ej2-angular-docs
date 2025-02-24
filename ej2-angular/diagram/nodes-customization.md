@@ -204,7 +204,7 @@ export class AppComponent {
 
 ## Constraints
 
-The [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#constraints) property of the node allows you to enable/disable certain behaviours of the node. For more information about node constraints refer to the [`Node Constraints`](./constraints.md)
+The [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/node/#constraints) property of the node allows you to enable/disable certain behaviours of the node. For more information about node constraints refer to the [`Node Constraints`](https://ej2.syncfusion.com/angular/documentation/diagram/constraints#node-constraints)
 
 ## Stack order
 

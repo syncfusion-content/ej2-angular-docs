@@ -68,7 +68,7 @@ The various types of BPMN tasks are tabulated as follows.
 
 ### Collapsed Subprocess
 
-A [`Collapsed sub-process`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#collapsed) is a group of tasks, which is used to hide or reveal details of additional levels. The following code explains how to create a Collapsed Sub-Process.
+A [`Collapsed sub-process`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#collapsed) is a group of tasks, which is used to hide or reveal details of additional levels. The following code explains how to create a Collapsed Sub-Process.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -82,7 +82,7 @@ A [`Collapsed sub-process`](https://helpej2.syncfusion.com/angular/documentation
   
 {% previewsample "page.domainurl/samples/diagram/bpmnShapes/subprocess-cs1" %}
 
-### Loop
+#### Loop
 
 [`Loop`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnLoops) is a task that is internally being looped. The loop property of `bpmn activity` allows you to define the type of loop. The default value for `loop` is **none**. You can define the loop property in subprocess BPMN shape as shown in the following code.
 
@@ -106,7 +106,7 @@ The following table contains various types of BPMN loops.
 | SequenceMultiInstance | ![SequenceMultiInstanceTaskImage](images/Sequence1.png) |  ![SequenceMultiInstanceSubprocessImage](images/Sequence2.png)|
 | ParallelMultiInstance | ![ParallelMultiInstanceTaskImage](images/PMultiInstance1.png) | ![ParallelMultiInstanceSubprocessImage](images/PMultiInstance2.png)
 
-### Compensation
+#### Compensation
 
 [`Compensation`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask/#compensation) is triggered, when operation is partially failed and enabled it with the compensation property of the `bpmn activity`.
 By default, the `compensation` is set to false.
@@ -123,7 +123,7 @@ By default, the `compensation` is set to false.
   
 {% previewsample "page.domainurl/samples/diagram/bpmnShapes/compensation-cs1" %}
 
-### Call
+#### Call
 
 A [`call`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnTask/#call)  activity is a global subprocess that is reused at various points of the business flow and set it with the call property of the task.
 By default, the call property is false.
@@ -141,7 +141,7 @@ By default, the call property is false.
 
 N> This Property is only applicable for task Type activity.
 
-### Adhoc
+#### Adhoc
 
 An adhoc subprocess is a group of tasks that are executed in any order or skipped in order to fulfill the end condition and set it with the [`adhoc`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#adhoc) property of subprocess.By default, the adhoc property is false.
 
@@ -157,7 +157,7 @@ An adhoc subprocess is a group of tasks that are executed in any order or skippe
   
 {% previewsample "page.domainurl/samples/diagram/bpmnShapes/adhoc-cs1" %}
 
-## Boundary
+#### Boundary
 
 Boundary represents the type of task that is being processed. The [`boundary`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#boundary) property of subprocess allows you to define the type of boundary. By default, it is set as **default**.
 
@@ -191,7 +191,7 @@ The different types of subprocess are as follows:
 
 ##### Event subprocess
 
-A subprocess is defined as an event subprocess, when it is triggered by an event. An event subprocess is placed within another subprocess which is not part of the normal flow of its parent process. You can set event to a subprocess with the [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent) and [`trigger`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent/#trigger) property of the subprocess. The [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#type) property of subprocess allows you to define the type of subprocess whether it should be event subprocess or transaction subprocess.
+A subprocess is defined as an event subprocess, when it is triggered by an event. An event subprocess is placed within another subprocess which is not part of the normal flow of its parent process. You can set event to a subprocess with the [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent/#event) and [`trigger`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent/#trigger) property of the subprocess. The [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnSubProcess/#type) property of subprocess allows you to define the type of subprocess whether it should be event subprocess or transaction subprocess.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
