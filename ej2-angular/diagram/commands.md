@@ -118,7 +118,7 @@ The following code example illustrates how the nodes are distributed using the `
 
 ## Sizing commands
 
-The [`sameSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#sameSize) command enables you to size all selected nodes to match the size of the first selected object or the first node in the objects collection you provide as the second parameter. The parameters for the [`sameSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sameSize) method are explained below.
+The [`sameSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#samesize) command enables you to size all selected nodes to match the size of the first selected object or the first node in the objects collection you provide as the second parameter. The parameters for the [`sameSize`](https://ej2.syncfusion.com/angular/documentation/api/diagram#samesize) method are explained below.
 
 ### Sizing options
 
@@ -231,7 +231,7 @@ You can also use CTRL+R to rotate clockwise and CTRL+L to rotate anti-clockwise.
 
 ### BringToFront command
 
-The [`bringToFront`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringToFront) command visually brings the selected element to front over all the other overlapped elements. The following code illustrates how to execute the `bringToFront` command.
+The [`bringToFront`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringtofront) command visually brings the selected element to front over all the other overlapped elements. The following code illustrates how to execute the `bringToFront` command.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -247,7 +247,7 @@ The [`bringToFront`](https://ej2.syncfusion.com/angular/documentation/api/diagra
 
 ### send To back command
 
-The [`sendToBack`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sendToBack) command visually moves the selected element behind all the other overlapped elements. The following code illustrates how to execute the `sendToBack` command.
+The [`sendToBack`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sendtoback) command visually moves the selected element behind all the other overlapped elements. The following code illustrates how to execute the `sendToBack` command.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -263,7 +263,7 @@ The [`sendToBack`](https://ej2.syncfusion.com/angular/documentation/api/diagram#
 
 ### Move Forward command
 
-The [`moveForward`](https://ej2.syncfusion.com/angular/documentation/api/diagram#moveForward) command visually moves the selected element over the nearest overlapping element. The following code illustrates how to execute the `moveForward` command.
+The [`moveForward`](https://ej2.syncfusion.com/angular/documentation/api/diagram#moveforward) command visually moves the selected element over the nearest overlapping element. The following code illustrates how to execute the `moveForward` command.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -279,7 +279,7 @@ The [`moveForward`](https://ej2.syncfusion.com/angular/documentation/api/diagram
 
 ### send Backward command
 
-The [`sendBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sendBackward) command visually moves the selected element behind the underlying element. The following code illustrates how to execute the `sendBackward` command.
+The [`sendBackward`](https://ej2.syncfusion.com/angular/documentation/api/diagram#sendbackward) command visually moves the selected element behind the underlying element. The following code illustrates how to execute the `sendBackward` command.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -369,7 +369,7 @@ N> The position change event will not trigger when using keyboard keys to move a
 
 ## BringIntoView
 
-The [`bringIntoView`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringIntoView) command brings the specified rectangular region into the viewport of the diagram, ensuring that it is visible within the current view.
+The [`bringIntoView`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringintoview) command brings the specified rectangular region into the viewport of the diagram, ensuring that it is visible within the current view.
 
 The [`bringIntoView`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#bringintoview) method takes a single parameter, an object that defines the rectangular region to bring into view. This object should include properties such as x, y, width, and height to specify the exact region to be made visible.
 
@@ -389,9 +389,9 @@ The following code illustrates how to execute the `bringIntoView` command.
 
 ## BringToCenter
 
-The [`bringToCenter`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringToCenter) command brings the specified rectangular region of the diagram content within the viewport.
+The [`bringToCenter`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringtocenter) command brings the specified rectangular region of the diagram content within the viewport.
 
- The [`bringToCenter`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringToCenter) method takes a single parameter, an object that defines the rectangular region to be centered. This object should include properties such as x, y, width, and height to specify the exact region to be brought to the center.
+ The [`bringToCenter`](https://ej2.syncfusion.com/angular/documentation/api/diagram#bringtocenter) method takes a single parameter, an object that defines the rectangular region to be centered. This object should include properties such as x, y, width, and height to specify the exact region to be brought to the center.
 
 The following code illustrates how to execute the `bringToCenter` command.
 
@@ -409,7 +409,7 @@ The following code illustrates how to execute the `bringToCenter` command.
 
 ## FitToPage
 
-The [`fitToPage`](https://ej2.syncfusion.com/angular/documentation/api/diagram#fitToPage) command helps to fit the diagram content into the view with respect to either width, height, or the entire content. The fitToPage method takes one parameter, [`fitOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions/), which specifies the options for fitting the diagram to the page.
+The [`fitToPage`](https://ej2.syncfusion.com/angular/documentation/api/diagram#fittopage) command helps to fit the diagram content into the view with respect to either width, height, or the entire content. The fitToPage method takes one parameter, [`fitOptions`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions/), which specifies the options for fitting the diagram to the page.
 
 ### FitOptions
 
@@ -419,11 +419,11 @@ The [`region`](https://ej2.syncfusion.com/angular/documentation/api/diagram/diag
 
 The [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#margin) parameter defines the region/bounds of the diagram content that is to be fit into the view.
 
-The [`canZoomIn`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#canZoomIn) parameter enables/disables zooming to fit the smaller content into a larger viewport.
+The [`canZoomIn`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#canzoomin) parameter enables/disables zooming to fit the smaller content into a larger viewport.
 
 The [`canZoomOut`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions/#canzoomout) parameter enables or disables zooming out to fit larger content into a smaller viewport.
 
-The [`customBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#customBounds) parameter the custom region that has to be fit into the viewport.
+The [`customBounds`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iFitOptions#custombounds) parameter the custom region that has to be fit into the viewport.
 
 The following code illustrates how to execute `FitToPage` command.
 
@@ -441,7 +441,7 @@ The following code illustrates how to execute `FitToPage` command.
 
 ## Command manager
 
-The Diagram provides support for mapping or binding command execution to specific key gestures. It includes built-in commands and allows for the definition of custom commands through the [`CommandManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/commandManager#commandManager). Custom commands are executed when the specified key gesture is recognized.
+The Diagram provides support for mapping or binding command execution to specific key gestures. It includes built-in commands and allows for the definition of custom commands through the [`CommandManager`](https://ej2.syncfusion.com/angular/documentation/api/diagram/commandManager/#commands). Custom commands are executed when the specified key gesture is recognized.
 
 ## Custom command
 

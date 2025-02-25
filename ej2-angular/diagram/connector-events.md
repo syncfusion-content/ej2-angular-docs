@@ -197,7 +197,7 @@ The following code example explains how to get the [`segment change`](https://ej
 
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorSegmentEvent-cs1" %}
 
- You can prevent segment editing by setting the `cancel` property of [`SegmentChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iEndChangeEventArgs/) to true, as shown in the code snippet below.
+ You can prevent segment editing by setting the `cancel` property of [`SegmentChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/isegmentchangeeventargs/) to true, as shown in the code snippet below.
 
 ``` ts
 public segmentChange = function (args: ISegmentChangeEventArgs): void {

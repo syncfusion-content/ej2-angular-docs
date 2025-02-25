@@ -205,7 +205,7 @@ The [`reset`](https://helpej2.syncfusion.com/angular/documentation/api/diagram/#
 
 ## UpdateViewport
 
-The [`updateViewPort`](https://ej2.syncfusion.com/angular/documentation/api/diagram/) method is used to update the dimensions of the diagram viewport.
+The [`updateViewPort`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#updateviewport) method is used to update the dimensions of the diagram viewport.
 
 ```javascript
 //Updates diagram viewport

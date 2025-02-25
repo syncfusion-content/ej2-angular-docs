@@ -18,7 +18,7 @@ Diagram allows you to customize the connector appearances. The following topics 
 
 * The [`shape`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decoratorShapes/) property of `sourceDecorator` allows to define the shape of the decorators. Similarly, the [shape](https://ej2.syncfusion.com/angular/documentation/api/diagram/decoratorShapes/) property of `targetDecorator` allows to define the shape of the decorators.
 
-* To create custom shape for source decorator, use [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decorator/#pathdata) property. Similarly, to create custom shape for target decorator, use [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decorator/#pathData) property.
+* To create custom shape for source decorator, use [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decorator/#pathdata) property. Similarly, to create custom shape for target decorator, use [`pathData`](https://ej2.syncfusion.com/angular/documentation/api/diagram/decorator/#pathdata) property.
 
 The following code example illustrates how to create decorators of various shapes.
 
@@ -234,7 +234,7 @@ The following code illustrates how to render connector based on the stack order.
 
 ## Connector spacing
 
-* The [`connectorSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#connectorSpacing) property allows you to define the distance between the source node and the connector. It is the minimum distance the connector will re-rout or the new segment will create.
+* The [`connectorSpacing`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#connectorspacing) property allows you to define the distance between the source node and the connector. It is the minimum distance the connector will re-rout or the new segment will create.
 
 The following code example illustrates how to connect two nodes.
 
@@ -252,7 +252,7 @@ The following code example illustrates how to connect two nodes.
 
 ## MaxSegment thumb
 
-The property [`maxSegmentThumb`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#maxSegmentThumb) is used to limit the  number of segment thumb in the connector.
+The property [`maxSegmentThumb`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#maxsegmentthumb) is used to limit the  number of segment thumb in the connector.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -286,7 +286,7 @@ The [`resetSegments`](https://ej2.syncfusion.com/angular/documentation/api/diagr
 
 ## Enable Connector Splitting
 
-The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. Split the connector between two nodes when dropping a new node onto an existing connector and create a connection between the new node and existing nodes by setting the [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/enableconnectorsplit/) as true. The default value of the [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/enableconnectorsplit/) is false
+The connectors are used to create a link between two points, ports, or nodes to represent the relationship between them. Split the connector between two nodes when dropping a new node onto an existing connector and create a connection between the new node and existing nodes by setting the [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#enableconnectorsplit) as true. The default value of the [`enableConnectorSplit`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#enableconnectorsplit) is false
 
 The following code illustrates how to split the connector and create a connection with new node.
 
