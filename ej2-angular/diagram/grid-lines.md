@@ -206,4 +206,4 @@ By default, the objects are snapped towards the nearest gridline. The gridline o
 
 ## Snap constraints
 
-The [`snapConstraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#constraints) property allows you to enable or disable the certain features of the snapping, for detailed information refer to [`constraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#constraints).
+The [`snapConstraints`](https://ej2.syncfusion.com/angular/documentation/api/diagram/snapSettings/#constraints) property allows you to enable or disable the certain features of the snapping, for detailed information refer to [`constraints`](https://ej2.syncfusion.com/angular/documentation/diagram/constraints#snap-constraints).

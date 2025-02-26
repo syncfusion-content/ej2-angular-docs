@@ -18,7 +18,7 @@ To get started quickly with DocumentEditor component using CLI, you can check th
 
 ## Prerequisites
 
-[System requirements for Syncfusion Angular Document Editor](../system-requirement/)
+[System requirements for Syncfusion Angular Document Editor](../system-requirement)
 
 ## Dependencies
 

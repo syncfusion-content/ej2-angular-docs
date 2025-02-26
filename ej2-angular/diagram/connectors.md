@@ -14,7 +14,7 @@ Connectors are objects used to create link between two points, nodes or ports to
 
 ## Create connector
 
-Connector can be created by defining the source and target point of the connector. The path to be drawn can be defined with a collection of segments. To explore the properties of a [`connector`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/), refer to [`Connector Properties`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorProperties/).The [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorModel/#id) property of a connector is used to define its unique identifier and can later be used to find the connector at runtime for customization.
+Connector can be created by defining the source and target point of the connector. The path to be drawn can be defined with a collection of segments. To explore the properties of a [`connector`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/), refer to [`Connector Properties`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#properties).The [`id`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connectorModel/#id) property of a connector is used to define its unique identifier and can later be used to find the connector at runtime for customization.
 
 ```typescript
 <e-connectors>

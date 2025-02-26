@@ -268,4 +268,4 @@ The following example demonstrates how to clear the searched records using an ex
 
 ## See also
 
-* [How to perform search by using Wildcard and LIKE operator filter](./filtering/filtering/#wildcard-and-like-operator-filter)
+* [How to perform search by using Wildcard and LIKE operator filter](./filtering/filtering#wildcard-and-like-operator-filter)

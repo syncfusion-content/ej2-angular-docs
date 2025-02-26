@@ -177,7 +177,7 @@ In the following example, there is a hidden column `Duration` in the Gantt. Whil
 
 TreeGrid cells in the exported PDF can be customized or formatted using the [`pdfQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/gantt#pdfquerycellinfo) event. In this event, you can format the treegrid cells of exported PDF document based on the column cell value.
 
-In the following sample, the background color is set for `Progress` column in the exported document by using the `args.style` and `backgroundColor` properties.
+In the following sample, the background color is set for `Progress` column in the exported document by using the `args.style.backgroundColor` property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

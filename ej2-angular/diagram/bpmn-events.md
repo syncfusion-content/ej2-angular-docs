@@ -21,7 +21,7 @@ An [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEv
     * ThrowingIntermediate
     * End
 
-The [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent)property of the node allows you to define the type of the event. The default value of the event is **start**. The following code example illustrates how to create a BPMN event.
+The [`event`](https://ej2.syncfusion.com/angular/documentation/api/diagram/bpmnEvent/#event)property of the node allows you to define the type of the event. The default value of the event is **start**. The following code example illustrates how to create a BPMN event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

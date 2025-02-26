@@ -63,7 +63,7 @@ The following codes illustrates how to align annotations.
 
 ## Annotation Margin
 
-[`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#margin) is an absolute value used to add some blank space in any one of its four sides. The annotations can be displaced with the margin property. The following code example illustrates how to align a annotation based on its `offset`, `horizontalAlignment`, `verticalAlignment`, and [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel/) values.
+[`Margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/marginModel/) is an absolute value used to add some blank space in any one of its four sides. The annotations can be displaced with the margin property. The following code example illustrates how to align a annotation based on its `offset`, `horizontalAlignment`, `verticalAlignment`, and [`margin`](https://ej2.syncfusion.com/angular/documentation/api/diagram/annotationModel/#margin) values.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

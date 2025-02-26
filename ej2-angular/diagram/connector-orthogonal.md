@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 Orthogonal segments is used to create segments that are perpendicular to each other.
 
-Set the segment [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#type) as orthogonal to create a default orthogonal segment and need to specify [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#type). The following code example illustrates how to create a default orthogonal segment.
+Set the segment [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#type) as **orthogonal** to create a default orthogonal segment and need to specify [`type`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#type). The following code example illustrates how to create a default orthogonal segment.
 
 Multiple segments can be defined one after another. To create a connector with multiple segments, define and add the segments to [`connector.segments`](https://ej2.syncfusion.com/angular/documentation/api/diagram/connector/#segments) collection. The following code example illustrates how to create a connector with multiple segments.
 

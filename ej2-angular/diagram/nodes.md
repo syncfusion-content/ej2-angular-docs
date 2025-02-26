@@ -80,7 +80,7 @@ The following code illustrates how to add nodes at runtime.
 
 ## Add node from palette
 
-Nodes can be predefined and added to the palette, and can be dropped into the diagram when needed. For more information about adding nodes from symbol palette, refer to [`Symbol Palette`](https://ej2.syncfusion.com/angular/documentation/api/symbol-palette/#palettes).
+Nodes can be predefined and added to the palette, and can be dropped into the diagram when needed. For more information about adding nodes from symbol palette, refer to [`Symbol Palette`](https://ej2.syncfusion.com/angular/documentation/diagram/symbol-palette).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -96,7 +96,7 @@ Nodes can be predefined and added to the palette, and can be dropped into the di
 
 ## Create node through data source
 
-Nodes can be generated automatically with the information provided through dataSource property. The default properties for these nodes are fetched from default settings ([`getNodeDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#nodedefaults)). For more information about data source, refer to  [`DataBinding`](./data-binding).
+Nodes can be generated automatically with the information provided through dataSource property. The default properties for these nodes are fetched from default settings ([`getNodeDefaults`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#getnodedefaults)). For more information about data source, refer to  [`DataBinding`](./data-binding).
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -142,7 +142,7 @@ You can modify any node properties at runtime, and the changes will be instantly
   
 {% previewsample "page.domainurl/samples/diagram/nodes/node-cs5" %}
 
-N> Once the property is updated, you should call the [`dataBind`](./data-binding) to reflect the changes instantly.
+N> Once the property is updated, you should call the `dataBind` to reflect the changes instantly.
 
 ## Clone node at runtime
 
