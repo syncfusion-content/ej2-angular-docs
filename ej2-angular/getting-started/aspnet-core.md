@@ -225,4 +225,4 @@ N> [Access the Angular Sample integrated with ASP.NET Core on GitHub](https://gi
 ## See Also
 
 - [Creating an ASP.NET Core with Angular project using Visual Studio](https://learn.microsoft.com/en-us/visualstudio/javascript/tutorial-asp-net-core-with-angular?view=vs-2022)
-- [Getting Started with Angular CLI](../getting-started/angular-cli/)
+- [Getting Started with Angular CLI](../getting-started/angular-cli)

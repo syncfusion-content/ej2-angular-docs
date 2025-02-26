@@ -50,14 +50,27 @@
     color: rgba(0, 0, 0, 0.52);
 }
 
+#listview table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#listview td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .w-25 {
-    width: 25% !important;
+  width: 25% !important;
+  max-width: 25%;
 }
 
 .w-45 {
-    width: 45% !important;
+  width: 45% !important;
+  max-width: 45%;
 }
 
 .w-100 {
-    width: 100% !important;
+  width: 100% !important;
 }
