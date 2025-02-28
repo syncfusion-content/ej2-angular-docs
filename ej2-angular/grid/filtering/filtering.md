@@ -177,6 +177,92 @@ Consider the following sample where the `ignoreAccent` property is set to true i
   
 {% previewsample "page.domainurl/samples/grid/filter-cs4" %}
 
+## Perform ENUM column filtering
+
+The Syncfusion Angular Grid allows you to filter enum-type data using the [FilterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filtertemplate) feature. This is particularly useful for filtering predefined values, such as categories or statuses.
+
+To achieve this functionality:
+
+1. Render [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) in the [FilterTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#filtertemplate) for the enum-type column.
+
+2. Bind the enumerated list data to the column.
+
+3. Use the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property in the **Type** column to display enum values in a readable format.
+
+4. In the [change](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event of the **DropDownList**, dynamically filter the column using the [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#filterbycolumn) method of the Syncfusion Angular Grid.
+
+Below is an example demonstrating how to filter enum-type data in a Syncfusion Angular Grid:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% raw %}
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridModule,GridComponent,FilterService } from '@syncfusion/ej2-angular-grids';
+import { DropDownListModule, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { data, OrderData, FileType } from './datasource';
+
+@Component({
+  imports: [GridModule, DropDownListModule],
+  selector: 'app-root',
+  standalone: true,
+  providers: [FilterService],
+  template: `
+    <ejs-grid #grid [dataSource]="data" [allowFiltering]="true" height="273px">
+      <e-columns>
+        <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="120"></e-column>
+        <e-column field="ShipCity" headerText="Ship City" width="100"></e-column>
+        <e-column field="ShipName" headerText="Ship Name" width="100"></e-column>
+        <e-column field="Type" headerText="Type" width="130">
+          <ng-template #template let-data>
+            {{ data.Type === 1 ? 'Base' : data.Type === 2 ? 'Replace' : data.Type === 3 ? 'Delta' : '' }}
+          </ng-template>
+          <ng-template #filterTemplate let-data>
+            <div>
+              <ejs-dropdownlist  #dropDown [dataSource]="filterDropData" [fields]="{ text: 'Type', value: 'Type' }" [value]="filterDropData[0].Type" (change)="onTypeFilterChange($event)">
+              </ejs-dropdownlist>
+            </div>
+          </ng-template>
+        </e-column>
+      </e-columns>
+    </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+  @ViewChild('grid') public grid?: GridComponent;
+  public data?: OrderData[];
+  public filterDropData: { Type: string }[] = [
+    { Type: 'All' },
+    { Type: 'Base' },
+    { Type: 'Replace' },
+    { Type: 'Delta' },
+  ];
+  ngOnInit(): void {
+    this.data = data; 
+  }
+  public onTypeFilterChange(args: ChangeEventArgs): void {
+    if (args.value === 'All') {
+      this.grid?.clearFiltering();
+    } else {
+      this.grid?.filterByColumn(
+        'Type',
+        'contains',
+        FileType[args.value as keyof typeof FileType]
+      );
+    }
+  }
+}
+{% endraw %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/grid/filtering-enum/src/datasource.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/filtering-enum/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/filtering-enum" %}
+
 ## Filtering with case sensitivity
 
 The Syncfusion Angular Grid provides the flexibility to enable or disable case sensitivity during filtering. This feature is useful when you want to control whether filtering operations should consider the case of characters. It can be achieved by using the  [enableCaseSensitivity](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/#enablecasesensitivity) property within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings/) of the grid.

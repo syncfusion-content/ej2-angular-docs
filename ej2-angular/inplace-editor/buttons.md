@@ -39,4 +39,4 @@ To restrict either save or cancel button rendering into a DOM, simply pass empty
 
 ## See Also
 
-* [In-place editor buttons](./how-to/dynamic-edit-mode/)
+* [In-place editor buttons](./how-to/dynamic-edit-mode)

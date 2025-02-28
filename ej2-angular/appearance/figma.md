@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Figma UI Kits for Syncfusion Angular Components
 
-Syncfusion provides [Figma UI kits](https://www.figma.com/@syncfusion) to enhance collaboration between designers and developers. These kits are accessible in four themes: [Material 3](https://www.figma.com/community/file/1385969023252455137), [Fluent](https://www.figma.com/community/file/1385969120047188707), [Tailwind](https://www.figma.com/community/file/1385969065626384098), and [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272). Each matches the respective Syncfusion Angular component themes.
+Syncfusion provides [Figma UI kits](https://www.figma.com/@syncfusion) to enhance collaboration between designers and developers. These kits are accessible in four themes: [Material 3](https://www.figma.com/community/file/1454123774600129202), [Fluent](https://www.figma.com/community/file/1385969120047188707), [Tailwind](https://www.figma.com/community/file/1385969065626384098), and [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272). Each matches the respective Syncfusion Angular component themes.
 
 Figma UI kits include reusable design components, showcasing various states and variants. They are accompanied by detailed figures, measurements, and icons, representing Syncfusion Angular components.
 
@@ -29,7 +29,7 @@ The Syncfusion Figma UI kit provides the following benefits:
 
 Syncfusion Figma UI kits are available via the [Figma community](https://www.figma.com/@syncfusion). You can download theme-specific UI kits from here:
 
-- [Material 3](https://www.figma.com/community/file/1385969023252455137)
+- [Material 3](https://www.figma.com/community/file/1454123774600129202)
 - [Fluent](https://www.figma.com/community/file/1385969120047188707)
 - [Tailwind](https://www.figma.com/community/file/1385969065626384098)
 - [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272)
@@ -65,6 +65,31 @@ Here's how to adjust the primary button color in the Material 3 theme:
 Beyond button color changes, other UI component aspects such as font, spacing, and shadows can also be customized:
 
 Experiment with these options to create a design perfectly aligned with your vision.
+
+## Downloading the customized styles
+
+Effortlessly download customized style changes as tokens and CSS variables using the `Syncfusion Design Tokens` plugin. This plugin bridges the gap between design and development by converting Figma design variables into Syncfusion tokens for direct use in your applications to ensure a smooth transition from design to implementation.
+
+### Exporting design tokens
+
+Follow these steps to download the customized styles from the Figma UI Kit:
+
+- First, open a [Syncfusion Figma UI Kit](https://www.figma.com/@syncfusion).
+- Navigate to the `Plugins & widgets` section in Figma and search for the `Syncfusion Design Tokens`.
+- Once found, run the plugin. A popup will appear with an `Export` button.
+- Click the `Export` button. This action will generate a zip file containing your design tokens.
+- Select a directory to save the exported files.
+- Extract the downloaded zip file to access its contents.
+
+![export-design-tokens](./images/syncfusion-design-tokens.png)
+
+### Utilizing design tokens
+
+The exported zip file includes the following files:
+  - `css-variables.css`: The css-variables.css file contains CSS variables for both light and dark themes, directly derived from your Figma designs. You can easily import this file into your application alongside the component styles to reflect your custom designs. For more detailed usage instructions, consult the [CSS variables](./css-variables) documentation.
+  - `<theme-name>-tokens.json`: This file (e.g., material3-tokens.json) contains style variables and values in a JSON format compatible with [Theme Studio](./theme-studio). This file, prefixed with the corresponding theme name, can be [imported](./theme-studio#import-previously-changed-settings-into-the-theme-studio) into [Theme Studio](./theme-studio) for further customization. After processing in [Theme Studio](./theme-studio), you can [download](./theme-studio#download-the-customized-theme) the updated styles file and integrate it into your application, bringing your custom themes to life.
+
+This streamlined process ensures that your unique design vision, crafted in Figma, is accurately translated into your final application, maintaining consistency between design and implementation.
 
 ## Upgrading the UI Kits
 
