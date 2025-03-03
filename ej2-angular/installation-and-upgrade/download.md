@@ -32,17 +32,35 @@ Our 30-day trial can be downloaded in two ways.
 
 3. With a trial license, only the latest version’s trial installer can be downloaded.
 
-4. After downloading, the Syncfusion JavaScript - EJ2 trial installer can be unlocked using either the trial unlock key or the Syncfusion registered login credential. More information on generating an unlock key can be found in this article.
+4. After downloading, the Syncfusion JavaScript - EJ2 trial installer can be unlocked using either the trial unlock key or the Syncfusion registered login credential. More information on generating an unlock key can be found in [this](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products?) article.
 
 5. Before the trial expires, you can download the trial installer at any time from your registered account’s Trials & Downloads page (See the screenshot below.)
+
+    ![trail installer dashboard](images/dashboard.png)
 
 6. Click the Download (element 1 in the screenshot below) button to get the Syncfusion Essential Studio JavaScript – EJ2 web installer.
 
     ![start trial download installer](images/start-trial-download-installer.png)
 
-7. Click the More Download Options (element 2 in the above screenshot) button to get the Essential Studio JavaScript – EJ2 Offline trial installer which is available in EXE and ZIP format.
+7. Click the More Download Options (element 2 in the above screenshot) button to get the Essential Studio JavaScript installer for various platforms.
 
-    ![start trial download offline installer](images/start-trial-download-offline-installer.png)
+- **Windows**
+
+   - Select the **Windows** tab to download the appropriate installer options for Windows 
+
+        - **Offline Installer:** Available in `.EXE` and `.ZIP` formats.
+
+            ![start trial download offline installer](images/offline-installer.png)
+
+        - **Web Installer:** Available in `.EXE` format for minimal download size.
+
+            ![start trial download web installer](images/start-trial-download-offline-installer.png)
+
+- **MAC** 
+
+   * Select the **Mac** tab to download the appropriate installer options for MAC, which are provided in `.DMG` format.
+
+     ![start trial download MAC installer](images/mac-installer.png)
 
 **Start Trials if using components through [npm](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular)**
 
