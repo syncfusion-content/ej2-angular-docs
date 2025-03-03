@@ -1,0 +1,9 @@
+<button id="getSearchedRecords" (click)="getSearchedRecords()">Get Searched Records</button>
+<ejs-grid [dataSource]='data' allowPaging='true' [pageSettings]='pageSettings' [toolbar]='toolbar' (actionComplete)='actionComplete($event)'>
+    <e-columns>
+        <e-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey='true' ></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width='150' ></e-column>
+        <e-column field='Freight' headerText='Freight' width='120' format='C2' ></e-column>
+        <e-column field='ShipCountry' headerText='Ship Country' width='150' ></e-column>
+    </e-columns>
+</ejs-grid>
