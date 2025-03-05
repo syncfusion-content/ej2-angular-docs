@@ -16,9 +16,9 @@ Additionally, leverage the power of Observables for data retrieval and operation
 
 ## Binding observable data using async pipe
 
-[Observables](https://angular.io/guide/observables) are a core concept in reactive programming and are widely used in the Angular framework. An Observable represents a stream of data or events that can be observed over time. It provides a way to handle asynchronous operations, such as handling developer's input, dealing with HTTP requests, and managing events.
+[Observables](https://v17.angular.io/guide/observables) are a core concept in reactive programming and are widely used in the Angular framework. An Observable represents a stream of data or events that can be observed over time. It provides a way to handle asynchronous operations, such as handling developer's input, dealing with HTTP requests, and managing events.
 
-In the Syncfusion Angular Grid, seamlessly utilize the power of [Observables](https://angular.io/guide/observables) through the async pipe for effortless binding of grid data. The [AsyncPipe](https://angular.io/api/common/AsyncPipe) efficiently subscribes to the observable, extracting the latest emitted value structured with `result` and `count` properties, aligning perfectly with the grid's data expectations.
+In the Syncfusion Angular Grid, seamlessly utilize the power of [Observables](https://v17.angular.io/guide/observables) through the async pipe for effortless binding of grid data. The [AsyncPipe](https://v17.angular.io/api/common/AsyncPipe) efficiently subscribes to the observable, extracting the latest emitted value structured with `result` and `count` properties, aligning perfectly with the grid's data expectations.
 
 The Syncfusion Grid component offers a range of powerful features for handling grid actions such as **searching**, **filtering**, **sorting**, **grouping**,  and **paging**. These actions trigger the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/#datastatechange) event, which provides you with the opportunity to manage and manipulate data according to the individual's interactions. 
 
@@ -601,7 +601,7 @@ export class DataService extends Subject<DataStateChangeEventArgs> {
 
 ## Binding observable data without using async pipe
 
-In Angular, [Observables](https://angular.io/guide/observables) data can be bound to UI elements using the [AsyncPipe](https://angular.io/api/common/AsyncPipe), which simplifies the process of subscribing to observables and managing the subscription life cycle. However, there are scenarios where you need to bind observable data to components without utilizing the async pipe. This approach offers more control over the subscription and data manipulation processes. 
+In Angular, [Observables](https://v17.angular.io/guide/observables) data can be bound to UI elements using the [AsyncPipe](https://v17.angular.io/api/common/AsyncPipe), which simplifies the process of subscribing to observables and managing the subscription life cycle. However, there are scenarios where you need to bind observable data to components without utilizing the async pipe. This approach offers more control over the subscription and data manipulation processes. 
 
 To bind observable data without using the async pipe in the Grid, follow these steps:
 
@@ -1241,3 +1241,22 @@ export class AppComponent implements OnInit {
 }
 
 ```
+
+## Fetch result from the DataManager query using external button 
+
+By default, Syncfusion Angular Grid automatically binds a remote data source using the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started). However, in some scenarios, you may need to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data is loaded into the Grid.
+
+To achieve this, you can use the `executeQuery` method of `DataManager` with a **Query** object. This method allows you to run a custom query and retrieve results dynamically.
+
+The following example demonstrates how to fetch data from the server when an external button is clicked and display a status message indicating the data fetch status:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/adapter-result/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/adapter-result/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/adapter-result" %}

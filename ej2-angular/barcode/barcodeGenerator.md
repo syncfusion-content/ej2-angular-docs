@@ -1,7 +1,7 @@
 ---
 layout: post
-title: BarcodeGenerator in Angular Barcode component | Syncfusion
-description: Learn here all about BarcodeGenerator in Syncfusion Angular Barcode component of Syncfusion Essential JS 2 and more.
+title: BarcodeGenerator in Angular Barcode component | Syncfusion®
+description: Learn here all about BarcodeGenerator in Syncfusion® Angular Barcode component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: BarcodeGenerator 
 documentation: ug

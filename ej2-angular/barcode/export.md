@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export in Angular Barcode component | Syncfusion
-description: Learn here all about Export in Syncfusion Angular Barcode component of Syncfusion Essential JS 2 and more.
+title: Export in Angular Barcode component | Syncfusion®
+description: Learn here all about Export in Syncfusion® Angular Barcode component of Syncfusion Essential® JS 2 and more.
 platform: ej2-angular
 control: Export 
 documentation: ug
