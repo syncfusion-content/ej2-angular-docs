@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Overview: Essential UI Kit for Angular
 
-The Essential UI Kit for Angular comprises over 120 responsive, ready-to-use, easy-to-implement, and customizable blocks designed to help you quickly build web applications. These blocks are developed using HTML, CSS, TypeScript, and Syncfusion Angular components, delivering robust functionality and ease of use. They are compatible with both Tailwind and Bootstrap 5.3 CSS frameworks, supporting light and dark modes to offer flexibility and seamless integration across different user preferences. The UI kit includes blocks for the following categories:
+The Essential UI Kit for Angular comprises over 160 responsive, ready-to-use, easy-to-implement, and customizable blocks designed to help you quickly build web applications. These blocks are developed using HTML, CSS, TypeScript, and Syncfusion Angular components, delivering robust functionality and ease of use. They are compatible with both Tailwind and Bootstrap 5.3 CSS frameworks, supporting light and dark modes to offer flexibility and seamless integration across different user preferences. The UI kit includes blocks for the following categories:
 
 <table>
   <tr>
@@ -35,15 +35,19 @@ The Essential UI Kit for Angular comprises over 120 responsive, ready-to-use, ea
     <td>Layouts</td>
     <td>
       <ul>
+        <li>Header</li>
         <li>Navigation Bar</li>
         <li>Sidebar</li>
-        <li>Floating Menu</li>
         <li>Search</li>
         <li>Grid</li>
         <li>List View</li>
-        <li>Tile View</li>
-        <li>Calendar</li>
+        <li>Statistics</li>
         <li>Cards</li>
+        <li>Filter Panel</li>
+        <li>Tile View</li>
+        <li>Modals</li>
+        <li>Floating Menu</li>
+        <li>Calendar</li>
         <li>Pagination</li>
         <li>Footer</li>
       </ul>
