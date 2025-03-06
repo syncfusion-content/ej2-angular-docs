@@ -359,6 +359,26 @@ In the following example, the [toolbarClick](https://ej2.syncfusion.com/angular/
   
 {% previewsample "page.domainurl/samples/grid/excel-exporting-formula" %}
 
+## Passing additional parameters to the server when exporting
+
+Passing additional parameters to the server when exporting data in the Syncfusion Angular Grid involves providing flexibility to include extra information or customize the export process based on specific requirements.
+
+You can achieve this by utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/grid/#query) property and the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/grid/#toolbarclick) event. Within the `query` property, you can invoke the `addParams` method to add parameters to the request.
+
+The following example demonstrates how to pass additional parameters to the server when Excel exporting within the `toolbarClick` event. Within the event, the additional parameters, specifically **recordcount** as **15**, are passed using the `addParams` method and displayed as a message.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/addtional-parameter-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/addtional-parameter-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/addtional-parameter-cs1" %}
+
 ## Limitations
 
 * A CSV is a plain text format that does not support features such as cell rotation, font and color customization, column and row spanning, or adding formulas. CSV files store raw data without any formatting or styling.

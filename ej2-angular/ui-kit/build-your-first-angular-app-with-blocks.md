@@ -10,6 +10,14 @@ domainurl: ##DomainURL##
 
 # Build your first Angular app with our blocks
 
+## Before You Start: Real-Life Use Case  
+
+Before diving into the setup, let's explore a **real-life use case** — building a **Customer Support Portal** using our Angular UI Kit. This video tutorial walks you through the process step by step.  
+
+{% youtube "https://www.youtube.com/watch?v=EWGZJ9T7K40" %}  
+
+Once you’ve seen this use case in action, we’ll move on to setting up an Angular app and integrating Syncfusion UI Kit blocks.
+
 ## Create a new Angular app
 To create a new Angular app, please refer to the official Angular setup guide [here](https://v17.angular.io/guide/setup-local) to get started. In this example, I have created a new Angular app named **my-angular-app** and will walk you through the step-by-step process of adding a simple sign-in block.
 

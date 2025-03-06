@@ -300,6 +300,31 @@ In the following code, the `Progress Bar` component render in the Grid **Freight
   
 {% previewsample "page.domainurl/samples/grid/template-cs9" %}
 
+### Render RadioButton in a column 
+
+The Syncfusion Angular Grid supports rendering the [RadioButton](https://ej2.syncfusion.com/angular/documentation/radio-button/getting-started) within a column using the [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
+
+In the following example, a `RadioButton` is rendered in the **Order Status** column of the Syncfusion Angular Grid by defining the `template` property.
+
+```
+    <div style="display: flex; flex-direction: column; align-items: start; gap: 8px;">
+        <ejs-radiobutton label="Pending" name="radio-{{data.OrderID}}" cssClass="e-success" [checked]="data.OrderStatus === 'Pending'"></ejs-radiobutton>
+        <ejs-radiobutton label="Confirmed" name="radio-{{data.OrderID}}" cssClass="e-success" [checked]="data.OrderStatus === 'Confirmed'"></ejs-radiobutton>
+        <ejs-radiobutton label="Shipped" name="radio-{{data.OrderID}}" cssClass="e-success" [checked]="data.OrderStatus === 'Shipped'"></ejs-radiobutton>
+    </div>
+```
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/template-radiobutton/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/template-radiobutton/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/template-radiobutton" %}
+
 ## Using condition template
 
 The conditional column [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#template) allows you to display template elements based on specific conditions.

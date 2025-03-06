@@ -13,7 +13,6 @@ domainurl: ##DomainURL##
 You can customize the Timeline items dot size, connectors, dot borders, dot outer space and more to personalize its appearance. This section explains the different ways for styling the items.
 
 ## Connector styling
-
 ### Common styling
 
 You can define the styles applicable to the all the Timeline item connectors.
@@ -59,7 +58,6 @@ You can also apply unique styles to individual connectors, to differentiate spec
 {% previewsample "page.domainurl/samples/timeline/customization/connector-individual" %}
 
 ## Dot styling
-
 ### Dot color
 
 You can modify the color of the dots to highlight the specific Timeline items.
