@@ -32,6 +32,7 @@ The accessibility compliance for the Rich Text Editor component is outlined belo
         margin: 0.5em 0;
     }
 </style>
+
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the component meet the requirement.</div>
 
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
@@ -75,48 +76,9 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 
 The Rich Text Editor component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Rich Text Editor component.
 
-### HTML Formatting Shortcuts
+For more details on keyboard navigation, refer to the [Keyboard support](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/keyboard-support) documentation.
 
-You can use the following key shortcuts when the Rich Text Editor renders in HTML edit mode.
-
-| Actions | Keyboard shortcuts |
-|----------------|---------|
-| Toolbar focus | <kbd>Alt</kbd> + <kbd>f10</kbd> |
-| Insert link | <kbd>Ctrl</kbd> + <kbd>k</kbd> |
-| Insert audio | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>a</kbd> |
-| Insert video | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> |
-| Insert image | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd> |
-| Insert table | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> |
-| Undo | <kbd>Ctrl</kbd> + <kbd>z</kbd> |
-| Redo | <kbd>Ctrl</kbd> + <kbd>y</kbd> |
-| Copy | <kbd>Ctrl</kbd> + <kbd>c</kbd> |
-| Cut | <kbd>Ctrl</kbd> + <kbd>x</kbd> |
-| Paste| <kbd>Ctrl</kbd> + <kbd>v</kbd> |
-| Bold| <kbd>Ctrl</kbd> + <kbd>b</kbd> |
-| Italic| <kbd>Ctrl</kbd> + <kbd>i</kbd> |
-| Underline| <kbd>Ctrl</kbd> + <kbd>u</kbd> |
-| Strikethrough| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>s</kbd> |
-| Uppercase| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>u</kbd> |
-| Lowercase| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>l</kbd> |
-| Superscript| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>=</kbd> |
-| Subscript| <kbd>Ctrl</kbd> + <kbd>=</kbd> |
-| Indents| <kbd>Ctrl</kbd> + <kbd>]</kbd> |
-| Outdents| <kbd>Ctrl</kbd> + <kbd>[</kbd> |
-| HTML source | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>h</kbd> |
-| Fullscreen| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>f</kbd> |
-| Exit Fullscreen| <kbd>Esc</kbd> |
-| Justify center| <kbd>Ctrl</kbd> + <kbd>e</kbd> |
-| Justify full | <kbd>Ctrl</kbd> + <kbd>j</kbd> |
-| Justify left | <kbd>Ctrl</kbd> + <kbd>l</kbd> |
-| Justify right | <kbd>Ctrl</kbd> + <kbd>r</kbd> |
-| Clear format | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>r</kbd> |
-| Ordered list | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>o</kbd> |
-| Unordered list | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>o</kbd> |
-| Format Painter Copy| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>c</kbd> |
-| Format Painter Paste| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> |
-| Format Painter Escape | <kbd>Esc</kbd> |
-
-#### Customizing Shortcut Keys
+### Customizing Shortcut Keys
 
 You can customize shortcut keys using the [`formatter`](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#formatter) property.This allows you to configure custom key combinations for various actions in the Rich Text Editor. For example, you can set `ctrl+q` to open the `Insert Hyperlink` dialog.
 
@@ -131,32 +93,6 @@ You can customize shortcut keys using the [`formatter`](https://ej2.syncfusion.c
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/rich-text-editor/how-to/cut-copy-cs1" %}
-
-### Markdown Formatting Shortcuts
-
-You can use the following key shortcuts when the Rich Text Editor renders in Markdown edit mode
-
-| Actions | Keyboard shortcuts |
-|----------------|---------|
-| Toolbar focus| <kbd>Alt</kbd> + <kbd>f10</kbd> |
-| Insert link| <kbd>Ctrl</kbd> + <kbd>k</kbd> |
-| Insert image| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd> |
-| Insert table| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>e</kbd> |
-| Undo| <kbd>Ctrl</kbd> + <kbd>z</kbd> |
-| Redo| <kbd>Ctrl</kbd> + <kbd>y</kbd> |
-| Copy| <kbd>Ctrl</kbd> + <kbd>c</kbd> |
-| Cut| <kbd>Ctrl</kbd> + <kbd>x</kbd> |
-| Paste| <kbd>Ctrl</kbd> + <kbd>v</kbd> |
-| Bold| <kbd>Ctrl</kbd> + <kbd>b</kbd> |
-| Italic| <kbd>Ctrl</kbd> + <kbd>i</kbd> |
-| Strikethrough| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>s</kbd> |
-| Uppercase| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>u</kbd> |
-| Lowercase| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>l</kbd> |
-| Superscript| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>=</kbd> |
-| Subscript| <kbd>Ctrl</kbd> + <kbd>=</kbd> |
-| Fullscreen| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>f</kbd> |
-| Ordered list| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>o</kbd> |
-| Unordered list| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>o</kbd> |
 
 ## Implementing Accessibility Best Practices
 
