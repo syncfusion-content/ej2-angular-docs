@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with Angular Barcode component | Syncfusion
-description:  Checkout and learn about Getting started with Angular Barcode component of Syncfusion Essential JS 2 and more details.
+title: Getting started with Angular Barcode component | Syncfusion®
+description:  Checkout and learn about Getting started with Angular Barcode component of Syncfusion Essential® JS 2 and more details.
 platform: ej2-angular
 control: Getting started 
 documentation: ug
@@ -30,17 +30,17 @@ ng new my-app
 cd my-app
 ```
 
-## Installing Syncfusion Barcode Generator package
+## Installing Syncfusion® Barcode Generator package
 
-Syncfusion packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
+Syncfusion® packages are distributed in npm as `@syncfusion` scoped packages. You can get all the Angular Syncfusion® package from npm [link]( https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular- ).
 
-Currently, Syncfusion provides two types of package structures for Angular components,
+Currently, Syncfusion® provides two types of package structures for Angular components,
 1. Ivy library distribution package [format](https://angular.dev/tools/libraries/angular-package-format)
 2. Angular compatibility compiler(Angular’s legacy compilation and rendering pipeline) package.
 
 ### Ivy library distribution package
 
-Syncfusion Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
+Syncfusion® Angular packages(`>=20.2.36`) has been moved to the Ivy distribution to support the Angular [Ivy](https://docs.angular.lat/guide/ivy) rendering engine and the package are compatible with Angular version 12 and above. To download the package use the below command.
 
 Add [`@syncfusion/ej2-angular-barcode-generator`](https://www.npmjs.com/package/@syncfusion/ej2-angular-barcode-generator/v/20.2.38) package to the application.
 
@@ -50,7 +50,7 @@ npm install @syncfusion/ej2-angular-barcode-generator --save
 
 ### Angular compatibility compiled package(ngcc)
 
-For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion Angular components. To download the `ngcc` package use the below.
+For Angular version below 12, you can use the legacy (ngcc) package of the Syncfusion® Angular components. To download the `ngcc` package use the below.
 
 Add [`@syncfusion/ej2-angular-barcode-generator@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-barcode-generator/v/20.2.38-ngcc) package to the application.
 
@@ -66,9 +66,9 @@ To mention the ngcc package in the `package.json` file, add the suffix `-ngcc` w
 
 >Note: If the ngcc tag is not specified while installing the package, the Ivy Library Package will be installed and this package will throw a warning.
 
-## Adding Syncfusion Barcode Generator package
+## Adding Syncfusion® Barcode Generator package
 
-All the available Essential JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) registry.
+All the available Essential® JS 2 packages are published in [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) registry.
 
 To install Barcode Generator component, use the following command.
 
@@ -80,7 +80,7 @@ npm install @syncfusion/ej2-angular-barcode-generator --save
 
 ## Adding Barcode Generator control
 
-You can start adding Essential JS 2 barcode-generator component to the application. To get started, add the Angular Barcode component in `app.ts` and `index.html` files using the following code.
+You can start adding Essential® JS 2 barcode-generator component to the application. To get started, add the Angular Barcode component in `app.ts` and `index.html` files using the following code.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

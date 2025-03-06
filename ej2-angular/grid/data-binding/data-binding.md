@@ -183,6 +183,26 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
 >* The Grid state persistence feature does not support the  `changeDataSource` method.
 >* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/grid/flexible-data) resource.
 
+## Prevent to convert local time zone format for date column
+
+By default, Syncfusion Angular Grid automatically converts date values to the local time zone of the client system. However, in some scenarios, you may need to display the original date as received from the server without any timezone conversion.
+
+To prevent timezone conversion for a date column, use the `serverTimezoneOffset` property from `DataUtil`. Setting this property to **0** ensures that dates remain in the original format received from the server without conversion to the local timezone.
+
+The following example demonstrates how to prevent local time zone conversion for date columns in Syncfusion Angular Grid by using the `DataUtil.serverTimezoneOffset` property:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/databinding-timezone/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/databinding-timezone/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/grid/databinding-timezone" %}
+
 ## How to set custom headers using a custom adaptor in Syncfusion Angular Grid
 
 Custom headers in HTTP requests are used to send additional information such as authentication tokens, API keys, or metadata required by the server. These headers improve security and enable better control over data communication. In the Syncfusion Angular Grid, custom headers can be added when making API requests, ensuring that each request carries the necessary information for server-side validation and processing.
