@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Perform custom value to server in Angular File Manager component
+# Pass custom value to server in Angular File Manager component
 
 The Syncfusion Angular File Manager component allows you to pass custom values from the client to the server for various operations. This guide demonstrates how to implement this functionality for **Upload**, **Download**, and **GetImage** operations using the [`beforeSend`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforesend), [`beforeDownload`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforedownload), and [`beforeImageLoad`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforeimageload) events respectively.
 
@@ -20,7 +20,8 @@ To pass custom values during the upload operation, utilize the [`beforeSend`](ht
 
 ```typescript
 import { Component } from '@angular/core';
-import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService, BeforeSendEventArgs } from '@syncfusion/ej2-angular-filemanager';
+import { FileManagerModule, NavigationPaneService, ToolbarService,
+DetailsViewService, BeforeSendEventArgs } from '@syncfusion/ej2-angular-filemanager';
 
 @Component({
   selector: 'app-root',
@@ -32,18 +33,13 @@ import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewSe
   `
 })
 export class AppComponent {
-    public ajaxSettings: object;
     public hostUrl: string = 'http://localhost:{port}/';
-    public ngOnInit(): void {
-        // Initializing File Manager with Physical file system provider.
-        this.ajaxSettings = {
-            // Replace the hosted port number in the place of "{port}"
-            url = this.hostUrl + "api/FileManager/FileOperations",
-            downloadUrl = this.hostUrl + "api/FileManager/Download",
-            uploadUrl = this.hostUrl + "api/FileManager/Upload",
-            getImageUrl = this.hostUrl + "api/FileManager/GetImage"
-        };
-    }
+    public ajaxSettings: object = {
+        url: this.hostUrl + 'api/FileManager/FileOperations',
+        getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
+        uploadUrl: this.hostUrl + 'api/FileManager/Upload',
+        downloadUrl: this.hostUrl + 'api/FileManager/Download',
+    };
 
     onBeforeSend(args: BeforeSendEventArgs): void {
         if( args.ajaxSettings){
@@ -91,7 +87,8 @@ For the download operation, use the [`beforeDownload`](https://ej2.syncfusion.co
 ```typescript
 
 import { Component } from '@angular/core';
-import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService, BeforeDownloadEventArgs } from '@syncfusion/ej2-angular-filemanager';
+import { FileManagerModule, NavigationPaneService, ToolbarService,
+DetailsViewService, BeforeDownloadEventArgs } from '@syncfusion/ej2-angular-filemanager';
 
 @Component({
   selector: 'app-root',
@@ -103,27 +100,22 @@ import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewSe
   `
 })
 export class AppComponent {
-    public ajaxSettings: object;
     public hostUrl: string = 'http://localhost:{port}/';
-    public ngOnInit(): void {
-        // Initializing File Manager with Physical file system provider.
-        this.ajaxSettings = {
-            // Replace the hosted port number in the place of "{port}"
-            url = this.hostUrl + "api/FileManager/FileOperations",
-            downloadUrl = this.hostUrl + "api/FileManager/Download",
-            uploadUrl = this.hostUrl + "api/FileManager/Upload",
-            getImageUrl = this.hostUrl + "api/FileManager/GetImage"
-        };
-    }
+    public ajaxSettings: object = {
+        url: this.hostUrl + 'api/FileManager/FileOperations',
+        getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
+        uploadUrl: this.hostUrl + 'api/FileManager/Upload',
+        downloadUrl: this.hostUrl + 'api/FileManager/Download',
+    };
 
     onBeforeDownload(args: BeforeDownloadEventArgs) {
         args.cancel = true;
         if(args.data){
             var obj: any = {
-            action: 'download',
-            path: (args.data as any).path,
-            names: (args.data as any).names,
-            data: (args.data as any).data,
+              action: 'download',
+              path: (args.data as any).path,
+              names: (args.data as any).names,
+              data: (args.data as any).data,
             };
         }
         var xhr = new XMLHttpRequest();
@@ -190,7 +182,8 @@ For the GetImage operation, use the [`beforeImageLoad`](https://ej2.syncfusion.c
 ### Client-side Implementation
 ```typescript
 import { Component } from '@angular/core';
-import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService, BeforeImageLoadEventArgs } from '@syncfusion/ej2-angular-filemanager';
+import { FileManagerModule, NavigationPaneService, ToolbarService, 
+DetailsViewService, BeforeImageLoadEventArgs } from '@syncfusion/ej2-angular-filemanager';
 
 @Component({
   selector: 'app-root',
@@ -202,18 +195,13 @@ import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewSe
   `
 })
 export class AppComponent {
-    public ajaxSettings: object;
     public hostUrl: string = 'http://localhost:{port}/';
-    public ngOnInit(): void {
-        // Initializing File Manager with Physical file system provider.
-        this.ajaxSettings = {
-            // Replace the hosted port number in the place of "{port}"
-            url = this.hostUrl + "api/FileManager/FileOperations",
-            downloadUrl = this.hostUrl + "api/FileManager/Download",
-            uploadUrl = this.hostUrl + "api/FileManager/Upload",
-            getImageUrl = this.hostUrl + "api/FileManager/GetImage"
-        };
-    }
+    public ajaxSettings: object = {
+        url: this.hostUrl + 'api/FileManager/FileOperations',
+        getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
+        uploadUrl: this.hostUrl + 'api/FileManager/Upload',
+        downloadUrl: this.hostUrl + 'api/FileManager/Download',
+    };
 
     onBeforeImageLoad(args: BeforeImageLoadEventArgs): void {
         // Add custom parameter in image URL
@@ -240,6 +228,7 @@ public class FileManagerAccessController : Controller
     [Route("GetImage")]
     public IActionResult GetImage(FileManagerDirectoryContent1 args)
     {
+        var header = args.Authorization;
         return this.operation.GetImage(args.Path, args.Id, false, null, null);
     }
 
@@ -249,7 +238,7 @@ public class FileManagerAccessController : Controller
 
 ```
 
-Refer the Stackblitz sample which includes all the above event for passing custom values to server: [How-to-pass-custom-values-from-client-to-server-in-filemanager](https://stackblitz.com/edit/pass-custom-values-from-client-to-server-in-filemanager?file=src%2Fapp.component.ts)
+## Implementing custom value transfer in Syncfusion File Manager with server-side integration.
 
 The below file system provider allows the users to access and manage the file system which includes the server side code for custom values passing from client. To get started, clone the [provider](https://github.com/SyncfusionExamples/How-to-pass-custom-values-from-client-to-server-in-filemanager) using the following command.
 
@@ -259,6 +248,12 @@ git clone https://github.com/SyncfusionExamples/How-to-pass-custom-values-from-c
 
 ```
 
-After cloning, just open the project in Visual Studio and restore the NuGet packages. The root directory of the provided file system in the File Manager controller is **Files** for **User1**.
+After cloning, just open the project in Visual Studio and restore the NuGet packages. The root directory of the provided file system in the File Manager controller is **Files** for **User1**. Now, just build and run the project.
 
-Now, just build and run the project. The project will be hosted and the provided sample had already mapped the local host in the **ajaxSettings** property of the File Manager component.
+Run the Stackblitz sample which includes all the above event for passing custom values to server: [How-to-pass-custom-values-from-client-to-server-in-filemanager](https://stackblitz.com/edit/pass-custom-values-from-client-to-server-in-filemanager?file=src%2Fapp.component.ts)
+
+```ts
+public hostUrl: string = 'http://localhost:{port}/'; // Replace {port} with host.
+```
+
+ The project will be hosted and map the local host in the **ajaxSettings** property of the File Manager component.
