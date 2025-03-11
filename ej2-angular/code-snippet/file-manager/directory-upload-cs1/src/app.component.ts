@@ -1,9 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { FileManagerModule } from '@syncfusion/ej2-angular-filemanager'
-
-
-
 import { Component, ViewEncapsulation, ViewChild  } from '@angular/core';
 import { FileManagerComponent, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager';
 import { DropDownButton, ItemModel } from '@syncfusion/ej2-splitbuttons';
