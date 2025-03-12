@@ -17,7 +17,7 @@ The following file providers are added in Syncfusion EJ2 File Manager component.
 * [Physical file system provider](#physical-file-system-provider)
 * [Azure cloud file system Provider](#azure-cloud-file-system-provider)
 * [Amazon S3 cloud file provider](#amazon-s3-cloud-file-provider)
-* [SharePoint file provider](#SharePoint-file-provider)
+* [SharePoint file provider](#sharepoint-file-provider)
 * [File Transfer Protocol file system provider](#file-transfer-protocol-file-system-provider)
 * [SQL database file system provider](#sql-database-file-system-provider)
 * [NodeJS file system provider](#nodejs-file-system-provider)
@@ -506,7 +506,7 @@ export class AppComponent {
 
 ```
 
->> **Note:** To learn more about the file actions that can be performed with Google Drive file system provider, refer to this [link](https://github.com/SyncfusionExamples/google-drive-aspcore-file-provider#key-features)
+> **Note:** To learn more about the file actions that can be performed with Google Drive file system provider, refer to this [link](https://github.com/SyncfusionExamples/google-drive-aspcore-file-provider#key-features)
 
 ## Firebase Realtime Database file system provider
 
@@ -657,4 +657,4 @@ export class AppComponent {
 
 ```
 
->> **Note:** To learn more about the file actions that can be performed with Firebase Realtime Database file system provider, refer to this [link](https://github.com/SyncfusionExamples/firebase-realtime-database-aspcore-file-provider#key-features)
+> **Note:** To learn more about the file actions that can be performed with Firebase Realtime Database file system provider, refer to this [link](https://github.com/SyncfusionExamples/firebase-realtime-database-aspcore-file-provider#key-features)
