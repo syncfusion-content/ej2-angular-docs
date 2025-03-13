@@ -41,6 +41,6 @@ export class AppComponent {
     this.imageEditorObj?.finetuneImage(ImageFinetuneOption.Contrast, 30);
   }
   saturationClick(): void {
-    this.imageEditorObj?.finetuneImage(ImageFinetuneOption.Saturation, 30);
+    this.imageEditorObj?.finetuneImage(ImageFinetuneOption.Saturation, 100);
   }
 }

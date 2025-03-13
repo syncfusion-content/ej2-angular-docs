@@ -10,7 +10,7 @@ import { ToolbarService, LinkService, ImageService, MarkdownEditorService, RichT
     ],
     standalone: true,
     selector: 'app-root',
-    template:`<ejs-richtexteditor #defaultRTE id='defaultRTE' [toolbarSettings]='tools' [editorMode]='mode' (create)='onCreate($event)'></ejs-richtexteditor>`,
+    template:`<ejs-richtexteditor #defaultRTE id='defaultRTE' [value]='rteValue' [toolbarSettings]='tools' [editorMode]='mode' (create)='onCreate($event)'></ejs-richtexteditor>`,
     providers: [ToolbarService, LinkService, ImageService, MarkdownEditorService]
 })
     
@@ -22,6 +22,8 @@ export class AppComponent  {
         'Formats', 'OrderedList', 'UnorderedList', '|',
         'CreateLink', 'Image', '|','Undo', 'Redo']
     };
+
+    public rteValue: string = `In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately. Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other. Rich Text Editor supports markdown editing when the editorMode set as **markdown** and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text. You can add our own custom formation syntax for the Markdown formation, [sample link](https://ej2.syncfusion.com/home/). The third-party library <b>Marked</b> is used in this sample to convert markdown into HTML content.`;
     
     public mode = 'Markdown';
     
@@ -34,6 +36,3 @@ export class AppComponent  {
         }
     }
 }
-
-
-

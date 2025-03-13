@@ -50,9 +50,9 @@ The [`drawText`](https://ej2.syncfusion.com/angular/documentation/api/image-edit
 
 * transformCollection: Specifies the transform collection of the text annotation.
 
-By utilizing the [`drawText`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawtext) method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
+By utilizing the `drawText` method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
 
-Here is an example of adding a text in a button click using [`drawText`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawtext) method.
+Here is an example of adding a text in a button click using `drawText` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -70,7 +70,7 @@ Here is an example of adding a text in a button click using [`drawText`](https:/
 
 The [`drawText`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawtext) method in the Angular Image Editor component is commonly used to insert text annotations into an image. If the provided text parameter contains a newline character (\n), the text will be automatically split into multiple lines, with each line appearing on a separate line in the annotation. 
 
-Here is an example of adding a multiline text in a button click using [`drawText`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawtext) method.
+Here is an example of adding a multiline text in a button click using `drawText` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -88,11 +88,11 @@ Here is an example of adding a multiline text in a button click using [`drawText
 
 [`deleteShape`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#deleteshape) method in the Angular Image Editor allows you to remove a text annotation from the image editor. To use this method, you need to pass the [`shapeId`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapeid) of the annotation as a parameter. 
 
-The [`shapeId`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapeid) is a unique identifier assigned to each text annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired text element. By specifying the shapeId associated with the text annotation you want to remove, you can effectively delete it from the image editor.
+The `shapeId` is a unique identifier assigned to each text annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired text element. By specifying the shapeId associated with the text annotation you want to remove, you can effectively delete it from the image editor.
 
 To retrieve the inserted text annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/shapeSettings/). This method allows you to access and work with the annotations that have been inserted into the image.
 
-Here is an example of deleting a text in a button click using [`deleteShape`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#deleteshape) method.
+Here is an example of deleting a text in a button click using `deleteShape` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -108,11 +108,11 @@ Here is an example of deleting a text in a button click using [`deleteShape`](ht
 
 ### Customize font family and text color
 
-The [shapeChanging](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapechanging) event in the Image Editor component is triggered when a text annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the text's color and font family by adjusting the relevant properties. 
+The [`shapeChanging`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapechanging) event in the Image Editor component is triggered when a text annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the text's color and font family by adjusting the relevant properties. 
 
-By leveraging the [shapeChanging](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapechanging) event, you can enhance the customization options for text annotations and provide a more tailored and interactive experience within the Image Editor component. 
+By leveraging the `shapeChanging` event, you can enhance the customization options for text annotations and provide a more tailored and interactive experience within the Image Editor component. 
 
-Here is an example of changing the text’s color and its font family using the [shapeChanging](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapechanging) event. 
+Here is an example of changing the text’s color and its font family using the `shapeChanging` event. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -126,11 +126,11 @@ Here is an example of changing the text’s color and its font family using the 
   
 {% previewsample "page.domainurl/samples/image-editor/default-cs32" %}
 
-### Add Additional font family
+### Add additional font family
 
 The [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#fontfamily) property in the Image Editor control provides the flexibility to incorporate supplementary font families, expanding your options for text styling and ensuring a broader range of fonts can be utilized within your design or content. The font value will be determined by the 'id' property.
 
-By leveraging the [`fontFamily`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#fontfamily) property, you can elevate the scope of customization for text annotations, enriching the user experience within the Image Editor control. This enhancement offers a more personalized and dynamic interaction, empowering users to tailor their text styles for a truly engaging editing experience.
+By leveraging the `fontFamily` property, you can elevate the scope of customization for text annotations, enriching the user experience within the Image Editor control. This enhancement offers a more personalized and dynamic interaction, empowering users to tailor their text styles for a truly engaging editing experience.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -150,7 +150,7 @@ The Freehand Draw annotation tool in the Angular Image Editor component is a ver
 
 The [`freehandDraw`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#freehanddraw) method is used to enable or disable the freehand drawing option in the Angular Image Editor component. 
 
-Here is an example of using the [`freeHandDraw`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#freehanddraw) method in a button click event.
+Here is an example of using the `freeHandDraw` method in a button click event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -166,11 +166,11 @@ Here is an example of using the [`freeHandDraw`](https://ej2.syncfusion.com/angu
 
 ### Adjust the stroke width and color 
 
-The [shapeChanging](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapechanging) event in the Angular Image Editor component is triggered when a freehand annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the freehand annotation's color and stroke width by adjusting the relevant properties. 
+The [`shapeChanging`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapechanging) event in the Angular Image Editor component is triggered when a freehand annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the freehand annotation's color and stroke width by adjusting the relevant properties. 
 
-By leveraging the [shapeChanging](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapechanging) event, you can enhance the customization options for freehand annotations and provide a more tailored and interactive experience within the Image Editor component. 
+By leveraging the `shapeChanging` event, you can enhance the customization options for freehand annotations and provide a more tailored and interactive experience within the Image Editor component. 
 
-Here is an example of changing the freehand draw stroke width and color using the [shapeChanging](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapechanging) event.
+Here is an example of changing the freehand draw stroke width and color using the `shapeChanging` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -188,11 +188,11 @@ Here is an example of changing the freehand draw stroke width and color using th
 
 The [`deleteShape`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#deleteshape) method in the Angular Image Editor allows you to remove a freehand annotation from the image editor. To use this method, you need to pass the [`shapeId`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapeid) of the annotation as a parameter. 
 
-The [`shapeId`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapeid) is a unique identifier assigned to each freehand annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the [`shapeId`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapeid) associated with the freehand annotation you want to remove, you can effectively delete it from the image editor.
+The `shapeId` is a unique identifier assigned to each freehand annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the `shapeId` associated with the freehand annotation you want to remove, you can effectively delete it from the image editor.
 
 To retrieve the inserted freehand annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/shapeSettings/). This method allows you to access and work with the annotations that have been inserted into the image.
 
-Here is an example of deleting a freehand annotation in a button click using [`deleteShape`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#deleteshape) method.
+Here is an example of deleting a freehand annotation in a button click using `deleteShape` method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -214,7 +214,7 @@ The Image Editor component provides the ability to add shape annotations to an i
 
 The [`drawRectangle`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawrectangle)  method is used to insert a rectangle to the Angular Image Editor component. Rectangle annotations are valuable tools for highlighting, emphasizing, or marking specific areas of an image to draw attention or provide additional context.
 
-The [`drawRectangle`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawrectangle) method in the Angular Image Editor component takes ten parameters to define the properties of the rectangle annotation: 
+The `drawRectangle` method in the Angular Image Editor component takes ten parameters to define the properties of the rectangle annotation: 
 
 * x: Specifies the x-coordinate of the top-left corner of the rectangle. 
 
@@ -238,7 +238,7 @@ The [`drawRectangle`](https://ej2.syncfusion.com/angular/documentation/api/image
 
 The [`drawEllipse`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawellipse) method is used to insert a ellipse to the Angular Image Editor component. Ellipse annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The [`drawEllipse`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawellipse) method in the Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+The `drawEllipse` method in the Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
 
 * x: Specifies the x-coordinate of the center of the ellipse. 
 
@@ -260,7 +260,7 @@ The [`drawEllipse`](https://ej2.syncfusion.com/angular/documentation/api/image-e
 
 The [`drawLine`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawline) method is used to insert a line to the Angular Image Editor component. Line annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The [`drawLine`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawline) method in the Angular Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+The `drawLine` method in the Angular Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
 
 * startX - Specifies the x-coordinate of the start point. 
 
@@ -279,7 +279,7 @@ The [`drawLine`](https://ej2.syncfusion.com/angular/documentation/api/image-edit
 
 The [`drawArrow`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawarrow) method is used to insert a arrow to the Angular Image Editor component. Arrow annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The [`drawArrow`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawarrow) method in the Angular Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
+The `drawArrow` method in the Angular Image Editor component takes seven parameters to define the properties of the ellipse annotation: 
 
 * startX - Specifies the x-coordinate of the start point. 
 
@@ -301,7 +301,7 @@ The [`drawArrow`](https://ej2.syncfusion.com/angular/documentation/api/image-edi
 
 The [`drawPath`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawpath) method is used to insert a path to the Angular Image Editor component. Path annotations are valuable for highlighting, emphasizing, or marking specific areas of an image.
 
-The [`drawPath`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawpath) method in the Angular Image Editor component takes three parameters to define the properties of the ellipse annotation: 
+The `drawPath` method in the Angular Image Editor component takes three parameters to define the properties of the ellipse annotation: 
 
 * points - Specifies collection of x and y coordinates as ImageEditorPoint to draw a path. 
 
@@ -329,7 +329,7 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 
 The [`deleteShape`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#deleteshape) method in the Angular Image Editor allows you to remove a shape annotation from the image editor. To use this method, you need to pass the [`shapeId`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapeid) of the annotation as a parameter. 
 
-The [`shapeId`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapeid) is a unique identifier assigned to each shape annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the [`shapeId`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapeid) associated with the shape annotation you want to remove, you can effectively delete it from the image editor.
+The `shapeId` is a unique identifier assigned to each shape annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the `shapeId` associated with the shape annotation you want to remove, you can effectively delete it from the image editor.
 
 To retrieve the inserted shape annotations, you can utilize the [`getShapeSetting`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/shapeSettings/). This method allows you to access and work with the annotations that have been inserted into the image.
 
@@ -347,7 +347,7 @@ Here is an example of deleting rectangle, ellipse, arrow, path, and line in a bu
 
 {% previewsample "page.domainurl/samples/image-editor/default-cs5" %}
 
-## Customize Default Stroke Color for Shapes 
+## Customize default stroke color for shapes 
 
 We provide default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the [`shapeChanging`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#shapechanging) event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. This approach allows conditional updates to the `currentShapeSettings`, ensuring that only the desired defaults are changed while maintaining the other settings.
 
@@ -371,7 +371,7 @@ The image annotation feature in the Image Editor provides the capability to add 
 
 The [`drawImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawimage) method serves the purpose of inserting an image into the Image Editor control, allowing for image annotations to be added. These image annotations can be used for various purposes, such as adding logos, watermarks, or decorative elements to the image.
 
-The [`drawImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawimage) method in the Image Editor control takes six parameters to define the properties of the rectangle annotation:
+The `drawImage` method in the Image Editor control takes six parameters to define the properties of the rectangle annotation:
 
 * data: Specified the image data or url of the image to be inserted.
 
@@ -391,7 +391,7 @@ The [`drawImage`](https://ej2.syncfusion.com/angular/documentation/api/image-edi
 
 * isSelected: Specifies to show the image in the selected state.
 
-In the following example, you can use the [`drawImage`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawimage) method in the button click event.
+In the following example, you can use the `drawImage` method in the button click event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
