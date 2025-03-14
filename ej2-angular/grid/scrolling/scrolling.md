@@ -109,3 +109,28 @@ The following example that demonstrates how to use the `hideScroll` method insid
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/grid/scrolling-cs4" %}
+
+## Render scrollbar in both top and bottom
+
+The Syncfusion Angular Grid allows rendering scrollbars at both the top and bottom, enhancing horizontal navigation for large datasets. This feature ensures users can scroll the Grid from either direction, enhancing usability and accessibility.
+
+Steps to render scrollbars at the top in the Grid:
+
+1. **Add a Scrollbar** - Insert a `<div id="scroller">` above the Grid in the template to act as a top scrollbar.
+2. **Initialize Scrollbar in [created](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) Event** - Retrieve the Grid's content and move the scroller `div` above it dynamically.
+3. **Synchronize Scroll Events** - Link `onscroll` events of the scroller `div` and the Grid content to scroll together.
+4. **Adjust Scrollbar Width and Visibility** - Use `setScroller()` to match the scrollbar width with the Grid and update it on window resize.
+
+The following example demonstrates how to use the `created` event to insert a scrollbar at the top of the Grid content:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/scrolling-cs5/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/scrolling-cs5/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/scrolling-cs5" %}
