@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { FileManagerModule } from '@syncfusion/ej2-angular-filemanager'
-import { Component, ViewEncapsulation, ViewChild  } from '@angular/core';
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import { FileManagerComponent, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager';
 import { DropDownButton, ItemModel } from '@syncfusion/ej2-splitbuttons';
 /**
@@ -9,31 +9,30 @@ import { DropDownButton, ItemModel } from '@syncfusion/ej2-splitbuttons';
  */
 
 @Component({
-imports: [FileManagerModule, ],
-
-providers:[NavigationPaneService, ToolbarService, DetailsViewService],
-standalone: true,
-    selector: 'app-root',
-    styleUrls: ['./app.component.css'],
-    template: `<ejs-filemanager id='file' #fileObj [ajaxSettings]='ajaxSettings' (created)="onCreated($event)" height="375px">
+  imports: [FileManagerModule,],
+  providers: [NavigationPaneService, ToolbarService, DetailsViewService],
+  standalone: true,
+  selector: 'app-root',
+  styleUrls: ['./app.component.css'],
+  template: `<ejs-filemanager id='file' #fileObj [ajaxSettings]='ajaxSettings' (created)="onCreated($event)" height="375px">
     </ejs-filemanager>`
 })
 
-export class AppComponent{
-    @ViewChild('fileObj')
-    public fileObj?: FileManagerComponent;
-    public ajaxSettings?: object;
-    public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
-    public ngOnInit(): void {
-        this.ajaxSettings = {
-            url: this.hostUrl + 'api/FileManager/FileOperations',
-            getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
-            uploadUrl: this.hostUrl + 'api/FileManager/Upload',
-            downloadUrl: this.hostUrl + 'api/FileManager/Download'
-        };
-    }
-    //DropDownButton items definition
-    public items: ItemModel[] = [{ text: 'Folder' }, { text: 'Files' }];
+export class AppComponent {
+  @ViewChild('fileObj')
+  public fileObj?: FileManagerComponent;
+  public ajaxSettings?: object;
+  public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
+  public ngOnInit(): void {
+    this.ajaxSettings = {
+      url: this.hostUrl + 'api/FileManager/FileOperations',
+      getImageUrl: this.hostUrl + 'api/FileManager/GetImage',
+      uploadUrl: this.hostUrl + 'api/FileManager/Upload',
+      downloadUrl: this.hostUrl + 'api/FileManager/Download'
+    };
+  }
+  //DropDownButton items definition
+  public items: ItemModel[] = [{ text: 'Folder' }, { text: 'Files' }];
 
   onCreated(args: any) {
     let customBtn: HTMLElement = document.getElementById('file_tb_upload') as HTMLElement;

@@ -1,17 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
-import { FileManagerModule,NavigationPaneService, ToolbarService, DetailsViewService  } from '@syncfusion/ej2-angular-filemanager'
-
-
-
-
+import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
 import { Component } from '@angular/core';
 
 @Component({
-imports: [FileManagerModule, ],
-
-providers:[NavigationPaneService, ToolbarService, DetailsViewService],
-standalone: true,
+    imports: [FileManagerModule,],
+    providers: [NavigationPaneService, ToolbarService, DetailsViewService],
+    standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='file-manager' [ajaxSettings]='ajaxSettings' [allowDragAndDrop]='allowDragAndDrop' (fileDragStart)='onFileDragStart($event)' (fileDragStop)='onFileDragStop($event)' (fileDragging)='onFileDragging($event)' (fileDropped)='onFileDropped($event)' height="375px" >
@@ -29,7 +24,7 @@ export class AppComponent {
             downloadUrl: this.hostUrl + 'api/FileManager/Download'
         };
         this.allowDragAndDrop = true;
-       };
+    };
     // File Manager's file drag start event function
     onFileDragStart(args: any) {
         console.log("File drag start");

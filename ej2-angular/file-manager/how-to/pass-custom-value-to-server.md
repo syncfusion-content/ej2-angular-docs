@@ -10,19 +10,21 @@ domainurl: ##DomainURL##
 
 # Pass custom value to server in Angular File Manager component
 
-The Syncfusion Angular File Manager component allows you to pass custom values from the client to the server for various operations. This guide demonstrates how to implement this functionality for **Upload**, **Download**, and **GetImage** operations using the [`beforeSend`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforesend), [`beforeDownload`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforedownload), and [`beforeImageLoad`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforeimageload) events respectively.
+The Syncfusion Angular File Manager component allows seamless backend server interaction by passing custom values. This enhances the functionality and security of file operations, particularly helpful for tasks like authentication, logging, or user role-based processing. In multi-user systems, it ensures file access permissions and actions are user-specific and secure. You can manage user-specific operations such as **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search**, **Upload**, **Download**, and **GetImage** using custom headers or query parameters. This guide demonstrates implementing these features using the [`beforeSend`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforesend), [`beforeDownload`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforedownload) and [`beforeImageLoad`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforeimageload) events. Let's explore how to achieve this in [`Physical file system provider`](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider).
 
-## Upload Operation
+## 1. Setting up the File Manager and provider
 
-To pass custom values during the upload operation, utilize the [`beforeSend`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforesend) event of the File Manager component.
+To create a basic File Manager component, start by following the easy steps in the [`Getting Started`](https://ej2.syncfusion.com/angular/documentation/file-manager/getting-started) guide. This will allow you to manage files and folders on your system, whether they are stored physically or in the cloud.
 
-### Client-side Implementation
+For connecting the File Manager to a physical file system, check out the [`Physical file provider`](https://ej2.syncfusion.com/angular/documentation/file-manager/file-system-provider#physical-file-system-provider) section. This part of the documentation will help you configure it correctly.
+
+## 2. Handling File Operations 
+
+After setting the File Manager component with the physical file system provider, you can handle file operations by passing custom values to the server. To pass custom values during the **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search** and **Upload** operations, utilize the [`beforeSend`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforesend) event of the File Manager component. This event allows you to modify the request before it is sent to the server. You can add custom headers to the request to pass additional information to the server.
+
+The `onBeforeSend` function is designed to enhance security by adding an authorization header to every outgoing AJAX request. Before a request is sent, this function is called, and it attaches the **Authorization** header with the value **User1** to the request. This ensures that the server can verify the request's authenticity and handle it accordingly.
 
 ```typescript
-import { Component } from '@angular/core';
-import { FileManagerModule, NavigationPaneService, ToolbarService,
-DetailsViewService, BeforeSendEventArgs } from '@syncfusion/ej2-angular-filemanager';
-
 @Component({
   selector: 'app-root',
   template: `
@@ -51,7 +53,7 @@ export class AppComponent {
 }
 
 ```
-### Server-side Implementation (C#)
+In server-side, `FileOperations` and `Upload` methods access the **Authorization** header from the incoming HTTP request and perform the necessary operations.
 
 ```typescript
 
@@ -62,8 +64,6 @@ public class FileManagerController : Controller
     public object FileOperations([FromBody] FileManagerDirectoryContent args)
     {
         var header = HttpContext.Request.Headers["Authorization"];
-        this.root = (header == "User1") ? "wwwroot\\Files" : "wwwroot\\FileBrowser";
-        this.operation.RootFolder(this.basePath + "\\" + this.root);
         ...
     }
 
@@ -79,16 +79,12 @@ public class FileManagerController : Controller
 
 
 ```
-## Download Operation
-For the download operation, use the [`beforeDownload`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforedownload) event to send custom values to the server.
 
-### Client-side Implementation
+## 3. Handling Download Operation
+
+For the **download** operation, use the [`beforeDownload`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforedownload) event, setting [`useFormPost`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/beforeDownloadEventArgs/#useformpost) as false to use a fetch request to send the custom header in beforesend event. Here an **Authorization** header is appended to fetch request headers with the value **User1**.
 
 ```typescript
-
-import { Component } from '@angular/core';
-import { FileManagerModule, NavigationPaneService, ToolbarService,
-DetailsViewService, BeforeDownloadEventArgs } from '@syncfusion/ej2-angular-filemanager';
 
 @Component({
   selector: 'app-root',
@@ -109,82 +105,32 @@ export class AppComponent {
     };
 
     onBeforeDownload(args: BeforeDownloadEventArgs) {
-        args.cancel = true;
-        if(args.data){
-            var obj: any = {
-              action: 'download',
-              path: (args.data as any).path,
-              names: (args.data as any).names,
-              data: (args.data as any).data,
+        args.useFormPost = false;
+        if (args.ajaxSettings) {
+            (args.ajaxSettings as any).beforeSend = function (args: any) {
+              args.fetchRequest.headers.append('Authorization', 'User1');
             };
-        }
-        var xhr = new XMLHttpRequest();
-        xhr.open(
-            'POST',
-            'http://localhost:{port}/api/FileManager/Download',
-            true
-        );
-        xhr.responseType = 'blob';
-        xhr.onload = function () {
-            if (this.status === 200) {
-                var name = '';
-                // Getting file name from content-disposition header
-                let header = xhr.getResponseHeader('Content-Disposition');
-                if (header && header.indexOf('attachment') !== -1) {
-                    var regex = /name[^;=\n]*=((['"]).*?\2|[^;\n]*)/;
-                    var matches = regex.exec(header);
-                    if (matches != null && matches[1])
-                        name = matches[1].replace(/['"]/g, '');
-                }
-                //saving the file locally using anchor tag
-                var blob = new Blob([this.response], {
-                    type: <any>xhr.getResponseHeader('Content-Type'),
-                });
-                var anchorUrl = window.URL.createObjectURL(blob);
-                if (name) {
-                    var anchor = document.createElement('a');
-                    anchor.href = anchorUrl;
-                    anchor.download = name;
-                    anchor.click();
-                } else {
-                    window.location = <any>anchorUrl;
-                }
-                setTimeout(function () {
-                    URL.revokeObjectURL(anchorUrl);
-                }, 100);
-            }
-        };
-        var fdata = new FormData();
-        fdata.append('downloadInput', JSON.stringify(obj));
-        //Custom Header Added to XHR
-        xhr.setRequestHeader('Authorization', 'User1');
-        xhr.send(fdata);
+        } 
     }
 }
 ```
-### Server-side Implementation (C#)
+In server-side, `Download` method access the **Authorization** header from the incoming HTTP request and perform the necessary operations.
 
 ```typescript
 [Route("Download")]
-public IActionResult Download(string downloadInput)
+public object Download([FromBody] FileManagerDirectoryContent args)
 {
-    var header = Request.Headers["Authorization"].ToString();
-    Response.Headers.Add("Access-Control-Expose-Headers", "Content-Disposition");
+    var header = HttpContext.Request.Headers["Authorization"];
     ...
 }
 
 ```
 
-## GetImage Operation
+## 4. For GetImage Operation
 
-For the GetImage operation, use the [`beforeImageLoad`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforeimageload) event to pass custom values as query parameters.
+For the **GetImage** operation, use the [`beforeImageLoad`](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#beforeimageload) event to pass custom value. Since the **GetImage** operation doesn't support custom headers in HTTP requests, pass the custom values along with **imgUrl** using query parameters instead.
 
-### Client-side Implementation
 ```typescript
-import { Component } from '@angular/core';
-import { FileManagerModule, NavigationPaneService, ToolbarService, 
-DetailsViewService, BeforeImageLoadEventArgs } from '@syncfusion/ej2-angular-filemanager';
-
 @Component({
   selector: 'app-root',
   template: `
@@ -211,7 +157,7 @@ export class AppComponent {
 
 ```
 
-### Server-side Implementation (C#)
+In server-side, you can able to get the custom query parameter value using **Authorization** in `GetImage` method. To get the  custom query parameter value, extend the `FileManagerDirectoryContent` class and add the custom property **Authorization**.
 
 ```typescript
 
@@ -238,22 +184,6 @@ public class FileManagerAccessController : Controller
 
 ```
 
-## Implementing custom value transfer in Syncfusion File Manager with server-side integration.
+> **Note:** View the complete [Github sample](https://github.com/SyncfusionExamples/How-to-pass-custom-values-from-client-to-server-in-filemanager) which includes all the above event along with service code for passing custom values to server.
 
-The below file system provider allows the users to access and manage the file system which includes the server side code for custom values passing from client. To get started, clone the [provider](https://github.com/SyncfusionExamples/How-to-pass-custom-values-from-client-to-server-in-filemanager) using the following command.
 
-```typescript
-
-git clone https://github.com/SyncfusionExamples/How-to-pass-custom-values-from-client-to-server-in-filemanager  How-to-pass-custom-values-from-client-to-server-in-filemanager
-
-```
-
-After cloning, just open the project in Visual Studio and restore the NuGet packages. The root directory of the provided file system in the File Manager controller is **Files** for **User1**. Now, just build and run the project.
-
-Run the Stackblitz sample which includes all the above event for passing custom values to server: [How-to-pass-custom-values-from-client-to-server-in-filemanager](https://stackblitz.com/edit/pass-custom-values-from-client-to-server-in-filemanager?file=src%2Fapp.component.ts)
-
-```ts
-public hostUrl: string = 'http://localhost:{port}/'; // Replace {port} with host.
-```
-
- The project will be hosted and map the local host in the **ajaxSettings** property of the File Manager component.

@@ -38,10 +38,13 @@ The following syntax represents the access Rules for Administrator using file or
 ```typescript
 //Adminstrator
 //Access Rules for File
-    new AccessRule { Path = "/*.*", Role = "Administrator", Read = Permission.Allow, Write = Permission.Allow, Copy = Permission.Allow, Download = Permission.Allow, IsFile = true },
+new AccessRule { Path = "/*.*", Role = "Administrator", Read = Permission.Allow, Write = Permission.Allow, 
+Copy = Permission.Allow, Download = Permission.Allow, IsFile = true },
 
 // Access Rules for folder
-   new AccessRule { Path = "*", Role = "Administrator", Read = Permission.Allow, Write = Permission.Allow, Copy = Permission.Allow, WriteContents = Permission.Allow, Upload = Permission.Allow, Download = Permission.Deny, IsFile = false },
+new AccessRule { Path = "*", Role = "Administrator", Read = Permission.Allow, Write = Permission.Allow, 
+Copy = Permission.Allow, WriteContents = Permission.Allow, Upload = Permission.Allow, Download = Permission.Deny, 
+IsFile = false },
 
 ```
 
@@ -50,10 +53,12 @@ The following syntax represent the access Rules for Default user using file or f
 ```typescript
 //Default User
 //Access Rules for File
-    new AccessRule { Path = "/*.*", Role = "Default User", Read = Permission.Deny, Write = Permission.Deny, Copy = Permission.Deny, Download = Permission.Deny, IsFile = true },
+new AccessRule { Path = "/*.*", Role = "Default User", Read = Permission.Deny, Write = Permission.Deny, 
+Copy = Permission.Deny, Download = Permission.Deny, IsFile = true },
 
 // Access Rules for folder
-     new AccessRule { Path = "*", Role = "Default User", Read = Permission.Deny, Write = Permission.Deny, Copy = Permission.Deny, WriteContents = Permission.Deny, Upload = Permission.Deny, Download = Permission.Deny, IsFile = false },
+new AccessRule { Path = "*", Role = "Default User", Read = Permission.Deny, Write = Permission.Deny, 
+Copy = Permission.Deny, WriteContents = Permission.Deny, Upload = Permission.Deny, Download = Permission.Deny, IsFile = false },
 
 ```
 
@@ -74,10 +79,10 @@ Permission denied for administrator to write a file or folder.
 
 ```typescript
 // For file
- new AccessRule { Path = "/*.*", Role = "Administrator", Read = Permission.Allow, Write = Permission.Deny, IsFile = true},
+new AccessRule { Path = "/*.*", Role = "Administrator", Read = Permission.Allow, Write = Permission.Deny, IsFile = true},
 
 // For folder
-  new AccessRule { Path = "*", Role = "Administrator", Read = Permission.Allow, Write = Permission.Deny, IsFile = false},
+new AccessRule { Path = "*", Role = "Administrator", Read = Permission.Allow, Write = Permission.Deny, IsFile = false},
 
 ```
 
@@ -87,10 +92,13 @@ Permission denied for writing except for particular file or folder.
 
 ```typescript
 // Deny writing for particular folder
- new AccessRule { Path = "/Documents", Role = "Document Manager", Read = Permission.Allow, Write = Permission.Deny, Copy = Permission.Allow, WriteContents = Permission.Deny, Upload = Permission.Deny, Download = Permission.Deny, IsFile = false },
+new AccessRule { Path = "/Documents", Role = "Document Manager", Read = Permission.Allow, Write = Permission.Deny, 
+Copy = Permission.Allow, WriteContents = Permission.Deny, Upload = Permission.Deny, Download = Permission.Deny, 
+IsFile = false },
 
- // Deny writing for particular file
-  new AccessRule { Path = "/Pictures/Employees/Adam.png", Role = "Document Manager", Read = Permission.Allow, Write = Permission.Deny, Copy = Permission.Deny, Download = Permission.Deny, IsFile = true },
+// Deny writing for particular file
+new AccessRule { Path = "/Pictures/Employees/Adam.png", Role = "Document Manager", Read = Permission.Allow, 
+Write = Permission.Deny, Copy = Permission.Deny, Download = Permission.Deny, IsFile = true },
 
 ```
 
@@ -98,7 +106,10 @@ Permission denied for writing and uploading in root folder.
 
 ``` typescript
 // Folder Rule
- new AccessRule { Path = "/", Role = "Document Manager", Read = Permission.Allow, Write = Permission.Deny, Copy = Permission.Deny, WriteContents = Permission.Deny, Upload = Permission.Deny, Download = Permission.Deny, IsFile = false },
+new AccessRule { Path = "/", Role = "Document Manager", Read = Permission.Allow, Write = Permission.Deny, 
+Copy = Permission.Deny, WriteContents = Permission.Deny, Upload = Permission.Deny, Download = Permission.Deny, 
+IsFile = false },
+
 ```
 
 The following example demonstrates the File Manager rendered with access control support.
