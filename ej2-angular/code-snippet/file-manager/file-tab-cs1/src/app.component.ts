@@ -1,21 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { TabAllModule } from '@syncfusion/ej2-angular-navigations'
-import { ButtonModule, CheckBoxModule   } from '@syncfusion/ej2-angular-buttons'
+import { ButtonModule, CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
 import { NgModule } from '@angular/core'
-import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService  } from '@syncfusion/ej2-angular-filemanager'
-
-
-
-
+import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
 import { Component } from '@angular/core';
 import { FileManagerComponent } from '@syncfusion/ej2-angular-filemanager';
 import { TabAllModule } from '@syncfusion/ej2-angular-navigations';
 
 @Component({
-imports: [FileManagerModule, TabAllModule , ButtonModule, CheckBoxModule ],
-
-providers:[ NavigationPaneService, ToolbarService, DetailsViewService],
-standalone: true,
+    imports: [FileManagerModule, TabAllModule, ButtonModule, CheckBoxModule],
+    providers: [NavigationPaneService, ToolbarService, DetailsViewService],
+    standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: ` <div class="control-section e-tab-section">
@@ -56,6 +51,3 @@ export class AppComponent {
         };
     };
 }
-
-
-

@@ -1,21 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule, ViewEncapsulation } from '@angular/core'
-import { FileManagerAllModule, NavigationPaneService, ToolbarService, DetailsViewService  } from '@syncfusion/ej2-angular-filemanager'
+import { FileManagerAllModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
-
-
-
-
 import { Component, ViewChild } from '@angular/core';
-import {FileManagerComponent} from '@syncfusion/ej2-angular-filemanager';
+import { FileManagerComponent } from '@syncfusion/ej2-angular-filemanager';
 import { CheckBoxComponent, ChangeEventArgs } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
-imports: [FileManagerAllModule,  CheckBoxModule],
-
-providers:[ NavigationPaneService, ToolbarService, DetailsViewService],
-encapsulation: ViewEncapsulation.None,
-standalone: true,
+    imports: [FileManagerAllModule, CheckBoxModule],
+    providers: [NavigationPaneService, ToolbarService, DetailsViewService],
+    encapsulation: ViewEncapsulation.None,
+    standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='files' #fileManager [ajaxSettings]='ajaxSettings' height="375px" >
@@ -58,12 +53,12 @@ export class AppComponent {
     };
     public onChange(args: ChangeEventArgs): void {
         if (args.checked) {
-            (this.fileManagerInstance as FileManagerComponent).selectAll(); 
+            (this.fileManagerInstance as FileManagerComponent).selectAll();
             (this.checkbox as CheckBoxComponent).label = 'Unselect All';
         }
         else {
-          (this.fileManagerInstance as FileManagerComponent).clearSelection();
-          (this.checkbox as CheckBoxComponent).label = 'Select All';
+            (this.fileManagerInstance as FileManagerComponent).clearSelection();
+            (this.checkbox as CheckBoxComponent).label = 'Select All';
         }
     };
 }

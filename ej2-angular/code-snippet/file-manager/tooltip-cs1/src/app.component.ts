@@ -1,21 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { TooltipAllModule } from '@syncfusion/ej2-angular-popups'
-import { FileManagerModule ,NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
-
-
-
-
+import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
 import { Component, ViewChild } from '@angular/core';
-import { FileManagerComponent, FileLoadEventArgs} from '@syncfusion/ej2-angular-filemanager';
+import { FileManagerComponent, FileLoadEventArgs } from '@syncfusion/ej2-angular-filemanager';
 import { TooltipComponent, TooltipEventArgs } from '@syncfusion/ej2-angular-popups';
 import { getValue, select } from '@syncfusion/ej2-base';
 
 @Component({
-imports: [FileManagerModule,  TooltipAllModule],
-
-providers:[NavigationPaneService, ToolbarService, DetailsViewService],
-standalone: true,
+    imports: [FileManagerModule, TooltipAllModule],
+    providers: [NavigationPaneService, ToolbarService, DetailsViewService],
+    standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: ` <div class="filemanagerContainer">
@@ -24,7 +19,7 @@ standalone: true,
                 </div>`
 })
 export class AppComponent {
-    @ViewChild('fileObj',{ static: true })
+    @ViewChild('fileObj', { static: true })
     public fileObj?: FileManagerComponent;
     public ajaxSettings?: object;
     public hostUrl: string = 'https://ej2-aspcore-service.azurewebsites.net/';
@@ -35,17 +30,17 @@ export class AppComponent {
             uploadUrl: this.hostUrl + 'api/FileManager/Upload',
             downloadUrl: this.hostUrl + 'api/FileManager/Download'
         };
-       };
+    };
 
-    fileLoad (args: FileLoadEventArgs) {
+    fileLoad(args: FileLoadEventArgs) {
         //Native tooltip customization to display additonal information in new line
         let target: Element = args.element as Element;
-        if (args.module==='DetailsView') {
+        if (args.module === 'DetailsView') {
             let element: Element = select('[title]', args.element);
             let title: string = getValue('name', args.fileDetails) +
                 '\n' + getValue('dateModified', args.fileDetails);
             element.setAttribute('title', title);
-        } else if (args.module==='LargeIconsView') {
+        } else if (args.module === 'LargeIconsView') {
             let title: string = getValue('name', args.fileDetails) +
                 '\n' + getValue('dateModified', args.fileDetails);
             target.setAttribute('title', title);

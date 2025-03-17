@@ -1,18 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
-import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService  } from '@syncfusion/ej2-angular-filemanager'
-
-
-
-
+import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService } from '@syncfusion/ej2-angular-filemanager'
 import { Component } from '@angular/core';
 import { FileSelectEventArgs } from '@syncfusion/ej2-filemanager';
 
 @Component({
-imports: [FileManagerModule, ],
-
-providers:[ NavigationPaneService, ToolbarService, DetailsViewService],
-standalone: true,
+    imports: [FileManagerModule,],
+    providers: [NavigationPaneService, ToolbarService, DetailsViewService],
+    standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     template: `<ejs-filemanager id='multi' [ajaxSettings]='ajaxSettings' [allowMultiSelection]='allowMultiSelection' [enableRangeSelection]='enableRangeSelection' (fileSelect)='onFileSelect($event)' height="375px">
@@ -30,9 +25,9 @@ export class AppComponent {
             uploadUrl: this.hostUrl + 'api/FileManager/Upload',
             downloadUrl: this.hostUrl + 'api/FileManager/Download'
         };
-       this.allowMultiSelection = true;
-       this.enableRangeSelection = true;
-       }
+        this.allowMultiSelection = true;
+        this.enableRangeSelection = true;
+    }
     // File Manager's file select event function
     onFileSelect(args: FileSelectEventArgs | any) {
         console.log(args.fileDetails.name + " has been " + args.action + "ed");

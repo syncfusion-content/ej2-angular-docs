@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
     standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
-    template: `<ejs-filemanager #fileManagerInstance id='file-manager' [ajaxSettings]='ajaxSettings' [uploadSettings]='uploadSettings' (created)="onCreated($event)" height="375px">
+    template: `<ejs-filemanager #fileManagerInstance id='file-manager' [ajaxSettings]='ajaxSettings' (created)="onCreated()" height="375px">
 </ejs-filemanager>`
 })
 export class AppComponent {
@@ -25,10 +25,10 @@ export class AppComponent {
             uploadUrl: this.hostUrl + 'api/FileManager/Upload',
             downloadUrl: this.hostUrl + 'api/FileManager/Download'
         };
-        // Upload settings customization
-        this.uploadSettings = { allowedExtensions: '.jpg,.png', autoClose: false, autoUpload: false, chunkSize: 5242880, minFileSize: 120, maxFileSize: 73728000 };
     };
     onCreated() {
-        this.fileManagerInstance.uploadObj.dropArea = null;  // Restrict file uploads by dragging them from the local file system to the File Manager.
+        if(this.fileManagerInstance){
+            this.fileManagerInstance.uploadObj.dropArea = '';  // Restrict file uploads by dragging them from the local file system to the File Manager.
+        }
     }
 }
