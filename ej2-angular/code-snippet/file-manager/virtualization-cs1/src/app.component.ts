@@ -1,20 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
-import { FileManagerModule,  NavigationPaneService, ToolbarService, DetailsViewService, VirtualizationService } from '@syncfusion/ej2-angular-filemanager'
-
+import { FileManagerModule, NavigationPaneService, ToolbarService, DetailsViewService, VirtualizationService } from '@syncfusion/ej2-angular-filemanager'
 import { Component, ViewEncapsulation } from '@angular/core';
 /**
  * File Manager virtualization feature sample
  */
 
 @Component({
-imports: [FileManagerModule, ],
-standalone: true,
+    imports: [FileManagerModule,],
+    standalone: true,
     selector: 'app-root',
     styleUrls: ['./app.component.css'],
     templateUrl: './default.html',
     encapsulation: ViewEncapsulation.None,
-    providers: [ NavigationPaneService, ToolbarService, DetailsViewService, VirtualizationService]
+    providers: [NavigationPaneService, ToolbarService, DetailsViewService, VirtualizationService]
 })
 
 export class AppComponent {

@@ -18,7 +18,7 @@ The File Manager UI comprises several sections like view, toolbar, breadcrumb, c
 * [Breadcrumb](#breadcrumb) (For parent folder navigations),
 * [Context Menu](#context-menu) (For accessing file operations).
 
-![File Manager Overview](./images/user-interface.png "File Manager Overview")
+![File Manager Overview](./images/user-interface.png)
 
 The basic File Manager is a light weight component with all the basic functions. The basic File Manager have the following sections in its UI to browse files and folders and manage them with file operations.
 
@@ -26,7 +26,7 @@ The basic File Manager is a light weight component with all the basic functions.
 * [Breadcrumb](#breadcrumb) (For parent folder navigations),
 * [Context Menu](#context-menu) (For accessing file operations).
 
-![Basic File Manager](./images/default-ui.png "Basic File Manager")
+![Basic File Manager](./images/default-ui.png)
 
 ## Toolbar
 
@@ -36,7 +36,7 @@ If the toolbar items exceed the size of the toolbar, then the exceeding toolbar 
 
 *Refer [Toolbar](./file-operations/#toolbar) section in file operations to know more about the buttons present in toolbar*.
 
-![Toolbar](./images/toolbar.png "Responsiveness of Toolbar")
+![Toolbar](./images/toolbar.png)
 
 ## Files and folders navigation
 
@@ -54,7 +54,7 @@ The navigation pane can be shown or hidden using the `visible` option in the [na
 
 The breadcrumb in the File Manager is designed to be responsive and resize automatically. Whenever the path length exceeds the breadcrumb length, a dropdown button will be added at the starting of the breadcrumb to hold the parent folders adjacent to root.
 
-![BreadCrumb](./images/breadcrumb.png "Responsiveness of BreadCrumb Bar")
+![BreadCrumb](./images/breadcrumb.png)
 
 ## View
 
@@ -69,13 +69,13 @@ The `large icons view` is the default starting view in the File Manager. The vie
 
 In the large icons view, the thumbnail icons will be shown in a larger size, which displays the data in a form that best suits their content.  For image and video type files, a **preview** will be displayed. Extension thumbnails will be displayed for other type files.
 
-![LargeIconView](./images/largeiconsview.png "File Manager Large Icon View")
+![LargeIconView](./images/largeiconsview.png)
 
 ### Details view
 
 Details view is an injectable module in the File Manager; therefore, it should be injected before rendering the File Manager to avail its functionality. In the details view, the files are displayed in a sorted list order. This file list comprises of several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. Each file has its own small icon representing the file type. Additional columns can be added using [detailsViewSettings](https://ej2.syncfusion.com/angular/documentation/api/file-manager/#detailsviewsettings) API. The details view allows you to perform sorting using column header.
 
-![DetailsView](./images/detailsview.png "File Manager Details View")
+![DetailsView](./images/detailsview.png)
 
 ## Context menu
 
@@ -85,4 +85,4 @@ Context menu can be customized using the [contextMenuSettings](https://ej2.syncf
 
 *Refer [Context Menu](./file-operations/#context-menu) section in file operations to know more about the menu items present in context menu*.
 
-![Context Menu](./images/contextmenu.png "Context Menu")
+![Context Menu](./images/contextmenu.png)
