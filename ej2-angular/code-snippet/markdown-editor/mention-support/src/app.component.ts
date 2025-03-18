@@ -13,7 +13,7 @@ import {
   MarkdownEditorService,
 } from '@syncfusion/ej2-angular-richtexteditor';
 import { MarkdownFormatter } from '@syncfusion/ej2-angular-richtexteditor';
-import { createElement, KeyboardEventArgs } from '@syncfusion/ej2-base';
+import { createElement } from '@syncfusion/ej2-base';
 import { marked } from 'marked';
 import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
 import {

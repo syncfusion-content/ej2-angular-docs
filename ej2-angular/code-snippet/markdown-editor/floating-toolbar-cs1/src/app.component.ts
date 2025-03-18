@@ -1,6 +1,6 @@
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons'
 import { Component, ViewChild } from '@angular/core';
-import { RichTextEditorModule, ToolbarService, HtmlEditorService, MarkdownEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService, RichTextEditorComponent, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, ToolbarService, HtmlEditorService, MarkdownEditorService, ImageService, LinkService, TableService, RichTextEditorComponent, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 import { CheckBoxComponent } from '@syncfusion/ej2-angular-buttons';
 @Component({
   imports: [
@@ -14,7 +14,7 @@ import { CheckBoxComponent } from '@syncfusion/ej2-angular-buttons';
      <div>
     <ejs-checkbox #float label="Enable Floating" [checked]="true" (change)="onChangeFloat()"></ejs-checkbox>
     </div>`,
-  providers: [ToolbarService, HtmlEditorService, MarkdownEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService]
+  providers: [ToolbarService, HtmlEditorService, MarkdownEditorService, ImageService, LinkService, TableService]
 })
 export class AppComponent {
   @ViewChild('float') editorFloatObj: CheckBoxComponent | undefined;

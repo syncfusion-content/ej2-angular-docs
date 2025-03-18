@@ -47,7 +47,7 @@ The toolbar in the Markdown Editor is assigned the role of 'Toolbar' and include
 | --- | --- |
 | role="toolbar" | This attribute added to the ToolBar element describes the actual role of the element. |
 | aria-orientation     | Indicates the ToolBar orientation. Default value is `horizontal`. |
-| aria-haspopup       | Indicates the popup mode of the Toolbar. Default value is false. When popup mode is enabled,  attribute value has to be changed to `true`. | |
+| aria-haspopup       | Indicates the popup mode of the Toolbar. Default value is false. When popup mode is enabled,  attribute value has to be changed to `true`. |
 | aria-disabled       | Indicates the disabled state of the toolbar. |
 | aria-owns | Identifies an element to define a visual, functional, or contextual parent/child relationship between DOM elements when the DOM hierarchy cannot represent the relationship. In the Markdown Editor, the attribute contains the ID of the Markdown Editor to indicate the popup as a child element. |
 

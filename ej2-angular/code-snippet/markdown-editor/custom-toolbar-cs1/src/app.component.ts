@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { RichTextEditorModule, ToolbarService, LinkService, MarkdownEditorService, ImageService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService, RichTextEditorComponent, NodeSelection, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, ToolbarService, LinkService, MarkdownEditorService, ImageService, HtmlEditorService, TableService, RichTextEditorComponent, NodeSelection, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 import { ButtonPropsModel } from '@syncfusion/ej2-popups';
 import { DialogComponent, DialogModule } from '@syncfusion/ej2-angular-popups';
 
@@ -15,7 +15,7 @@ import { DialogComponent, DialogModule } from '@syncfusion/ej2-angular-popups';
         <ejs-dialog #Dialog id="editorDialog" [buttons]='dlgButtons'  [target]='target' (overlayClick)="dialogOverlay()" [header]='header' [visible]='false'
             [showCloseIcon]='false' (created)="dialogCreate()" [isModal]='true' [cssClass]='cssClass' [content]='contentData'>
         </ejs-dialog>`,
-    providers: [ToolbarService, LinkService, ImageService, MarkdownEditorService, HtmlEditorService, QuickToolbarService, TableService, PasteCleanupService]
+    providers: [ToolbarService, LinkService, ImageService, MarkdownEditorService, HtmlEditorService, TableService]
 })
 
 export class AppComponent {
