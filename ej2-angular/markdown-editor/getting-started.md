@@ -12,6 +12,12 @@ domainurl: ##DomainURL##
 
 This section explains the steps required to create a simple Angular Markdown Editor component and configure its available functionalities.
 
+To enable the quick Markdown editing feature, inject `MarkdownEditorService` in the provider section of AppComponent.
+
+Refer to the video below for guidance on building a Markdown editor with the Angular Rich Text Editor.
+
+{% youtube "https://www.youtube.com/watch?v=6fly8220gL8" %}
+
 ## Setup Angular Environment
 
 You can use [Angular CLI](https://github.com/angular/angular-cli) to setup your Angular applications. To install Angular CLI use the following command.
@@ -77,7 +83,7 @@ Modify the template in the [src/app/app.component.ts] file to render the Markdow
 ```typescript
 
 import { Component } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, MarkdownEditorService, MarkdownEditorService } from '@syncfusion/ej2-angular-richtexteditor';
+import { ToolbarService, LinkService, ImageService, MarkdownEditorService } from '@syncfusion/ej2-angular-richtexteditor';
 import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
 @Component({
   imports: [
@@ -85,8 +91,8 @@ import { RichTextEditorAllModule } from '@syncfusion/ej2-angular-richtexteditor'
   ],
   standalone: true,
   selector: 'app-root',
-  template: `<ejs-richtexteditor id='defaultRTE' [editorMode]='mode' [value]="value"></ejs-richtexteditor>`,
-  providers: [ToolbarService, LinkService, ImageService, MarkdownEditorService, MarkdownEditorService]
+  template: `<ejs-richtexteditor id='markdown-editor' [editorMode]='mode' [value]="value"></ejs-richtexteditor>`,
+  providers: [ToolbarService, LinkService, ImageService, MarkdownEditorService]
 })
 
 export class AppComponent {
@@ -107,11 +113,11 @@ To create Markdown Editor with additional features, inject the required modules.
 
 These modules should be injected into the **providers** section of root **NgModule** or component class.
 
-> Additional feature modules are available [here](https://helpstaging.syncfusion.com:14038/ej2-angular/rich-text-editor/module).
+> Additional feature modules are available [here](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/module).
 
 ## Configure the Toolbar
 
-Configure the toolbar with custom tools using items field of toolbarSettings property in your application.
+Configure the toolbar with custom tools using items field of [toolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#toolbarsettings) property in your application.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -135,7 +141,7 @@ ng serve --open
 
 ## Retrieve the formatted content
 
-To retrieve the editor contents, use the value property of Markdown Editor.
+To retrieve the editor contents, use the [value](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#value) property of Markdown Editor.
 
 ```typescript
 

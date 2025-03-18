@@ -12,6 +12,8 @@ domainurl: ##DomainURL##
 
 The Syncfusion Angular Markdown Editor allows users to insert images using the toolbar. This feature enables embedding images from online sources into the editor content.
 
+## Steps to Insert an Image  
+
 Follow these steps to add an image in the Markdown editor:
 
 1. Click the **Insert Image** icon in the toolbar.

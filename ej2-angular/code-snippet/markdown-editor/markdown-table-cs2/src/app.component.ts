@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { L10n } from '@syncfusion/ej2-base';
-import { RichTextEditorModule, ToolbarService, MarkdownEditorService , HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, ToolbarService, MarkdownEditorService , HtmlEditorService, ImageService, LinkService, TableService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 
 L10n.load({
   'en-US': {
@@ -14,8 +14,8 @@ L10n.load({
     ],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-richtexteditor id='defaultRTE' [editorMode]='mode' [toolbarSettings]='tools' [value]="value"></ejs-richtexteditor>`,
-    providers: [ToolbarService, HtmlEditorService, MarkdownEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService]
+    template: `<ejs-richtexteditor id='markdown-editor' [editorMode]='mode' [toolbarSettings]='tools' [value]="value"></ejs-richtexteditor>`,
+    providers: [ToolbarService, HtmlEditorService, MarkdownEditorService, ImageService, LinkService, TableService]
 })
 
 export class AppComponent {

@@ -29,7 +29,7 @@ enableRipple(true);
         <e-pane size='50%' [resizable]='true' cssClass='pane1' min='40%' >
             <ng-template #content>
                 <div class="content">
-                    <ejs-richtexteditor id="defaultRTE" #defaultRTE [value]="value" height='447px' [toolbarSettings]='tools' saveInterval='10' [editorMode]='mode'
+                    <ejs-richtexteditor id="markdown" #markdown [value]="value" height='447px' [toolbarSettings]='tools' saveInterval='10' [editorMode]='mode'
                         (created)='onCreate()' (change)='onChange()' (actionComplete)='updateValue()'>
                     </ejs-richtexteditor>
                 </div>
@@ -49,7 +49,7 @@ enableRipple(true);
 })
 
 export class AppComponent {
-    @ViewChild('defaultRTE')
+    @ViewChild('markdown')
     public editorObj?: RichTextEditorComponent;
 
     @ViewChild('splitterInstance')
@@ -102,7 +102,6 @@ export class AppComponent {
     public onCreate(): void {
         setTimeout(() => {
         this.editorObj!.refreshUI();
-        // this.textArea = this.editorObj.contentModule.getEditPanel();
         this.textArea = (
             this.editorObj!.contentModule as ContentRender
         ).getEditPanel() as HTMLTextAreaElement;
@@ -124,6 +123,3 @@ export class AppComponent {
         );
     }
 }
-
-
-
