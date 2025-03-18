@@ -1,21 +1,23 @@
-import { Component } from '@angular/core';
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { FormsModule } from '@angular/forms'
-import { enableRipple } from '@syncfusion/ej2-base'
+import { Component, ViewChild } from '@angular/core';
 
-import { SpeechToTextModule } from '@syncfusion/ej2-angular-inputs'
+import { SpeechToTextModule, TextAreaComponent, TextAreaModule, TranscriptChangedEventArgs } from '@syncfusion/ej2-angular-inputs';
 
 @Component({
     imports: [
-        SpeechToTextModule
+        SpeechToTextModule, TextAreaModule
     ],
     standalone: true,
     selector: 'app-root',
     template: `<!-- To Render SpeechToText component. -->
-    <div class="speechText-container" style="width: 40px; margin: 50px auto;">
-        <button ejs-speechtotext></button>
+    <div class="speechText-container">
+        <button ejs-speechtotext (transcriptChanged)="onTranscriptChange($event)"></button>
+        <ejs-textarea #outputTextarea id="textareaInst" value="" rows="5" cols="50" resizeMode="None" placeholder="Transcribed text will be shown here..."></ejs-textarea>
     </div>`
 })
 
-export class AppComponent { }
+export class AppComponent {
+    @ViewChild('outputTextarea') outputTextarea!: TextAreaComponent;
+    onTranscriptChange(args: TranscriptChangedEventArgs): void {
+        this.outputTextarea.value = args.transcript;
+     }
+}

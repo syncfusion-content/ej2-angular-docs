@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Angular SpeechToText component | Syncfusion
-description:  Checkout and learn about Getting started with Angular SpeechToText component of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn about Getting started with Angular SpeechToText component of Syncfusion Essential JS 2 and more details.
 platform: ej2-angular
 control: SpeechToText
 documentation: ug
@@ -130,6 +130,9 @@ The following example shows a default SpeechToText component.
 {% highlight ts tabtitle="styles.css" %}
 {% include code-snippet/speech-to-text/getting-started/src/styles.css %}
 {% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/getting-started/index.html %}
+{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/speech-to-text/getting-started" %}
@@ -146,6 +149,9 @@ The following example shows how to configure `buttonSettings` in SpeechToText co
 {% endhighlight %}
 {% highlight ts tabtitle="styles.css" %}
 {% include code-snippet/speech-to-text/button-settings/src/styles.css %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/speech-to-text/button-settings/index.html %}
 {% endhighlight %}
 {% endtabs %}
 

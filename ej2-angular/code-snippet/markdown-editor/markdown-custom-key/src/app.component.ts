@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RichTextEditorModule, ToolbarService, MarkdownFormatter, MarkdownEditorService , HtmlEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule, ToolbarService, MarkdownFormatter, MarkdownEditorService , HtmlEditorService, ImageService, LinkService, TableService, ToolbarSettingsModel } from '@syncfusion/ej2-angular-richtexteditor';
 
 @Component({
     imports: [
@@ -7,8 +7,8 @@ import { RichTextEditorModule, ToolbarService, MarkdownFormatter, MarkdownEditor
     ],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-richtexteditor id='defaultRTE' [formatter]='formatter' [editorMode]='mode' [toolbarSettings]='tools' [value]="value"></ejs-richtexteditor>`,
-    providers: [ToolbarService, HtmlEditorService, MarkdownEditorService, QuickToolbarService, ImageService, LinkService, TableService, PasteCleanupService]
+    template: `<ejs-richtexteditor id='markdown-editor' [formatter]='formatter' [editorMode]='mode' [toolbarSettings]='tools' [value]="value"></ejs-richtexteditor>`,
+    providers: [ToolbarService, HtmlEditorService, MarkdownEditorService, ImageService, LinkService, TableService]
 })
 
 export class AppComponent {

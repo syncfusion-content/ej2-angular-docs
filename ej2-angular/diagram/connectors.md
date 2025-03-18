@@ -354,6 +354,60 @@ The following gif illustrates how the connector automatically re-routes the segm
   
 {% previewsample "page.domainurl/samples/diagram/connectors/connectorslineroutingdisabled-cs1" %}
 
+## Avoid line overlapping
+
+The diagram provides flexibility to prevent connectors from overlapping, ensuring better clarity and readability. This feature intelligently adjusts connector paths to avoid stacking orthogonal connectors on top of each other, reducing visual clutter and enhancing diagram structure. It is especially useful in complex diagrams with multiple orthogonal connectors, where overlapping lines can make interpretation difficult.
+
+To enable this feature, inject the `AvoidLineOverlapping` module and add its constraints to the diagram.
+
+N> The `AvoidLineOverlapping` feature applies only to orthogonal connectors and requires the `LineRouting` module to be injected with its constraints enabled.
+ 
+* Inject both the `LineRouting` and `AvoidLineOverlapping` modules into the application.
+
+    ```typescript
+
+    import { LineRouting, AvoidLineOverlapping, Diagram } from '@syncfusion/ej2-diagrams';
+    /**
+     * Injecting the line routing and avoid line overlapping module.
+     */
+    Diagram.Inject(LineRouting, AvoidLineOverlapping);
+
+    ```
+* Add `LineRouting` and `AvoidLineOverlapping` constraints to the diagram constraints to enable line routing with avoid line overlapping support.
+
+    ```html
+
+    <!--
+    Initialize the Diagram
+    -->
+    <ejs-diagram #diagram [constraints]='constraints'>
+
+    ```
+
+    ```typescript
+    // Enable line routing and avoid line overlapping constraints.
+    public constraints: DiagramConstraints = DiagramConstraints.Default | DiagramConstraints.LineRouting | DiagramConstraints.AvoidLineOverlapping;
+
+    ```
+
+The following example demonstrates how to enable the AvoidLineOverlapping feature in the diagram.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/diagram/connectors/AvoidLineOverlappings/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/diagram/connectors/AvoidLineOverlappings/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/diagram/connectors/AvoidLineOverlappings" %}
+
+The following image illustrates how the connector automatically avoid overlapping with other connectors.  
+
+![AvoidLineOverlapping GIF](images/avoidconnectoroverlap.gif)
+
 ## See Also
 
 * [How to add annotations to the connector](./labels)

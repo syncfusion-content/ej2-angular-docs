@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#editormode) as `Markdown`.
 
-### Toolbar
+## Toolbar
 
 These shortcuts provide quick access to toolbar functions for managing menus and dialogs.
 
@@ -21,7 +21,7 @@ These shortcuts provide quick access to toolbar functions for managing menus and
 | Focus on toolbar | <kbd>Alt</kbd> + <kbd>F10</kbd> | <kbd>⌥</kbd> + <kbd>F10</kbd> |
 | Close dropdowns/menu and dialogs | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
 
-### Content editing and formatting
+## Content editing and formatting
 
 These shortcuts help in efficiently editing and formatting text content.
 
@@ -33,7 +33,7 @@ These shortcuts help in efficiently editing and formatting text content.
 | Italicize text | <kbd>Ctrl</kbd> + <kbd>I</kbd> | <kbd>⌘</kbd> + <kbd>I</kbd> |
 | Apply strikethrough | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>S</kbd> |
 
-### Inserting
+## Inserting
 
 These shortcuts allow for the quick insertion of tables, links, and images.
 
@@ -43,7 +43,7 @@ These shortcuts allow for the quick insertion of tables, links, and images.
 | Create link | <kbd>Ctrl</kbd> + <kbd>K</kbd> | <kbd>⌘</kbd> + <kbd>K</kbd> |
 | Open the insert image dialog | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>I</kbd> |
 
-### Text manipulation
+## Text manipulation
 
 These shortcuts help in modifying text case and applying superscript or subscript.
 
@@ -54,7 +54,7 @@ These shortcuts help in modifying text case and applying superscript or subscrip
 | Apply superscript | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>=</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>=</kbd> |
 | Apply subscript | <kbd>Ctrl</kbd> + <kbd>=</kbd> | <kbd>⌘</kbd> + <kbd>=</kbd> |
 
-### Lists
+## Lists
 
 These shortcuts enable the creation of ordered and unordered lists.
 
@@ -63,7 +63,7 @@ These shortcuts enable the creation of ordered and unordered lists.
 | Create an ordered list | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>O</kbd> |
 | Create an unordered list | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>O</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>O</kbd> |
 
-### Clipboard operations
+## Clipboard operations
 
 These shortcuts facilitate copying, cutting, and pasting content.
 
@@ -73,7 +73,7 @@ These shortcuts facilitate copying, cutting, and pasting content.
 | Cut the selected content | <kbd>Ctrl</kbd> + <kbd>X</kbd> | <kbd>⌘</kbd> + <kbd>X</kbd> |
 | Paste the copied or cut content | <kbd>Ctrl</kbd> + <kbd>V</kbd> | <kbd>⌘</kbd> + <kbd>V</kbd> |
 
-### Undo & redo
+## Undo & redo
 
 These shortcuts allow for undoing and redoing recent changes.
 
@@ -82,7 +82,7 @@ These shortcuts allow for undoing and redoing recent changes.
 | Undo | <kbd>Ctrl</kbd> + <kbd>Z</kbd> | <kbd>⌘</kbd> + <kbd>Z</kbd> |
 | Redo | <kbd>Ctrl</kbd> + <kbd>Y</kbd> | <kbd>⌘</kbd> + <kbd>Y</kbd> |
 
-### Other actions
+## Other actions
 
 These shortcuts provide additional functionalities like fullscreen mode.
 
