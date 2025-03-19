@@ -317,6 +317,24 @@ The following example demonstrates how to export hierarchical grid to Excel docu
   
 {% previewsample "page.domainurl/samples/grid/excel-exporting-cs14" %}
 
+### Format the child Grid columns before exporting
+
+The Syncfusion Angular Grid allows customization of the child Grid's Excel export options, enabling precise control over data formatting before export. This functionality is achieved using the [exportDetailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#exportdetaildatabound) event, which is triggered for each child Grid during the export process. This event provides access to the child Grid instance, allowing modifications to its column formatting before generating the Excel document.
+
+In the following example, the `exportDetailDataBound` event is used to modify the **OrderDate** column of the child Grid. By setting the column's [format](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#format) property, the date values are formatted as `dd/MM/yyyy` when exported to Excel.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/excel-exporting-cs15/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/excel-exporting-cs15/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/excel-exporting-cs15" %}
+
 ### Limitations
 
 * Microsoft Excel permits up to seven nested levels in outlines. So that in the grid we can able to provide only up to seven nested levels and if it exceeds more than seven levels then the document will be exported without outline option. Please refer the [Microsoft Limitation](https://learn.microsoft.com/en-us/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs?view=sql-server-2017#ExcelLimitations).

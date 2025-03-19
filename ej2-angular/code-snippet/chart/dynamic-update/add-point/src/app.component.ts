@@ -67,7 +67,11 @@ export class AppComponent implements OnInit {
         };
     }
     click() {
-        this.chart?.series[0].addPoint({ x: 'Japan', y: 118.2 });
+        if (this.chart?.series?.length) {
+            if (typeof this.chart.series[0].addPoint === 'function') {
+            this.chart?.series[0].addPoint({ x: 'Japan', y: 118.2 });
+            }
+        } 
     }
 }
 

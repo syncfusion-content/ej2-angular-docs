@@ -214,6 +214,36 @@ When [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/gr
 {% endhighlight %}
 {% endtabs %}
 
+## Observables binding with state persistence
+
+The Syncfusion Angular Grid supports state persistence when using observable binding, ensuring that the Grid retains its state across sessions. This is useful when dealing with real-time data updates or asynchronous data sources while preserving user interactions such as sorting, filtering, paging, and grouping.
+
+To implement state persistence with observables, the initial query state must be manually handled. This involves:
+
+    * Retrieving the initial query using the Grid’s [getDataModule](https://ej2.syncfusion.com/angular/documentation/api/grid/#getdatamodule) method with `generateQuery`.
+
+    * Obtaining the state from the query via `getStateEventArgument` method.
+
+    * Sending the retrieved state to the service to fetch data accordingly.
+
+Except for the initial render, state persistence ensures that manually performed actions are retained by storing the state in the browser’s `localStorage`, allowing it to persist across page reloads. The following example demonstrates how to use the [created](https://ej2.syncfusion.com/angular/documentation/api/grid/#created) event to send the persisted state to the service at initial render:
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/state-persistence-cs9/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="order.service.ts" %}
+{% include code-snippet/grid/state-persistence-cs9/src/order.service.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/state-persistence-cs9/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/state-persistence-cs9" %}
+
 ## Get or set local storage value
 
 If the [enablePersistence](https://ej2.syncfusion.com/angular/documentation/api/grid/#enablepersistence) property is set to **true**, the Grid property value is saved in the **window.localStorage** for reference. You can get or set the localStorage value by using the **getItem** and **setItem** methods in **window.localStorage**.
