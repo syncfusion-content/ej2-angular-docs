@@ -310,6 +310,24 @@ The following example demonstrates how to export hierarchical grid to PDF docume
   
 {% previewsample "page.domainurl/samples/grid/exporting-cs8" %}
 
+### Format the child Grid columns before exporting
+
+The Syncfusion Angular Grid allows customization of the child Grid's PDF export options, enabling precise control over data formatting before export. This functionality is achieved using the [exportDetailDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid/#exportdetaildatabound) event, which is triggered for each child Grid during the export process. This event provides access to the child Grid instance, allowing modifications to its column formatting before generating the PDF document.
+
+In the following example, the `exportDetailDataBound` event is used to modify the **OrderDate** column of the child Grid. By setting the column's `format` property, the date values are formatted as `dd/MM/yyyy` when exported to PDF document.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid/exporting-cs30/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid/exporting-cs30/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/samples/grid/exporting-cs30" %}
+
 ## Remove header row while exporting
 
 When exporting data from the Syncfusion Angular Grid, you have an option to remove the header row from the exported file. This can be useful when you want to export grid data without including the header values in the exported document.
