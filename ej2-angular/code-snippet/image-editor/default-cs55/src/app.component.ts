@@ -8,7 +8,7 @@ import { TreeViewComponent, TreeViewModule } from '@syncfusion/ej2-angular-navig
     selector: 'app-root',
     template: `<div class="e-section-control">
               <!-- To render Image Editor. -->
-              <div id="wrapperDiv" style="width:550px;height:350px; margin-top: 60px">
+              <div id="wrapperDiv" style="width:550px;height:350px;">
               <div id='treeparent'><ejs-treeview #treeView [fields]='field' (nodeClicked)="clicked($event)"></ejs-treeview></div>
                 <ejs-imageeditor #imageEditor></ejs-imageeditor>
               </div>
@@ -44,8 +44,8 @@ export class AppComponent {
                 {
                     "nodeId": "03-01", "nodeText": "Camera Roll", "icon": "folder", "expanded": true,
                     "nodeChild": [
-                        { "nodeId": "03-01-01", "nodeText": "Flower", "image": "https://ej2.syncfusion.com/react/demos/src/image-editor/images/flower.png" },
-                        { "nodeId": "03-01-02", "nodeText": "Bridge", "image": "https://ej2.syncfusion.com/react/demos/src/image-editor/images/bridge.png" }
+                        { "nodeId": "03-01-01", "nodeText": "Flower", "image": "./flower.png" },
+                        { "nodeId": "03-01-02", "nodeText": "Bridge", "image": "./bridge.png" }
                     ]
                 },
             ]

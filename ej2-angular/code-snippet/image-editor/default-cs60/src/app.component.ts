@@ -12,7 +12,7 @@ import { Browser } from '@syncfusion/ej2-base';
   template: `
     <div class="e-section-control">
       <!-- Image Editor -->
-      <div id="wrapperDiv" style="width:550px;height:350px; margin-top: 60px">
+      <div id="wrapperDiv" style="width:550px;height:350px;">
         <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar" (toolbarItemClicked)="toolbarItemClicked($event)"></ejs-imageeditor>
       </div>
     </div>

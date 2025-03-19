@@ -11,7 +11,7 @@ import { Component, ViewChild } from '@angular/core';
               <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar" ></ejs-imageeditor>
               </div>
-              <button class="e-btn e-primary" (click)="addMultiLineText()">AddMultiLineText</button>
+              <button class="e-btn e-primary" (click)="addMultiLineText()">Add MultiLine Text</button>
               </div>`
 })
 

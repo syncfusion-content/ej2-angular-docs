@@ -29,9 +29,6 @@ export class AppComponent {
       maxFileSize: 90 * 1024  // Maximum file size in bytes (90 KB)
     };
     loadInvalidImage(): void {
-        this.imageEditorObj?.open('./flower.jpeg');
+        this.imageEditorObj?.open('./bridge.jpg');
     }
 }
-
-
-

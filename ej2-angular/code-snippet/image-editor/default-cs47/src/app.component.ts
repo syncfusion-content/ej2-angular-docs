@@ -13,7 +13,7 @@ import { DialogComponent, DialogModule } from '@syncfusion/ej2-angular-popups';
   selector: 'app-root',
   template: `<div class="e-section-control">
               <!-- To render Image Editor. -->
-              <div id="wrapperDiv" style="width:550px;height:350px; margin-top: 60px">
+              <div id="wrapperDiv" style="width:550px;height:350px;">
               <button class="e-control e-btn" style="position: absolute;" id="targetButton" (click)="onOpenDialog($event)">Open Dialog</button>
               <ejs-dialog id='dialog' #template showCloseIcon='true' [height]='height' [width]='width' position='position' width='435px' [visible]='visible'>
                 <ng-template #content>

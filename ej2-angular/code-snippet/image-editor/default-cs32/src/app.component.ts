@@ -41,8 +41,7 @@ export class AppComponent {
     public shapeChanging(args: ShapeChangeEventArgs): void {
        if (args.currentShapeSettings?.type === 'Text') {
           args.currentShapeSettings.color = 'red';
-          args.currentShapeSettings.text = 'Syncfusion';
-          args.currentShapeSettings.fontFamily = 'italic';
+          args.currentShapeSettings.fontFamily = 'Times New Roman';
         }
     }
 }

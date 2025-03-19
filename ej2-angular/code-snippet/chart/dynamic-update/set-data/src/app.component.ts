@@ -63,12 +63,16 @@ export class AppComponent implements OnInit {
         };
     }
     click() {
-        const newData = (this.chart.series[0].dataSource as Object[]).map((item: { x: string, y: number }) => {
-            const value: number = this.getRandomInt(10, 90);
-            return { x: item.x, y: value };
-        });
-        if (this.chart.series.length > 0) {
-            this.chart.series[0].setData(newData, 500);
+        if (this.chart && this.chart.series && this.chart.series.length > 0 && this.chart.series[0].dataSource) {
+            const newData = (
+                this.chart.series[0].dataSource as { x: string; y: number }[]
+            ).map((item) => {
+                const value: number = this.getRandomInt(10, 90);
+                return { x: item.x, y: value };
+            });
+            if (typeof this.chart.series[0].setData === 'function') {
+                this.chart.series[0].setData(newData, 500);
+            }
         }
     }
     public axisRangeCalculated (args: IAxisRangeCalculatedEventArgs): void {

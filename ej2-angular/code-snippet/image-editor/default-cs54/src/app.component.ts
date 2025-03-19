@@ -11,8 +11,8 @@ import { FileManagerModule } from '@syncfusion/ej2-angular-filemanager';
   selector: 'app-root',
   template: `
   <div class="e-section-control">
-    <div id="wrapperDiv" style="width:550px;height:350px; margin-top: 60px">
-      <ejs-filemanager id="default-filemanager" 
+    <div id="wrapperDiv" style="width:550px;height:350px;">
+      <ejs-filemanager id="default-filemanager" height="200px"
                        [fileSystemData]="resultData"  
                        (fileOpen)="fileOpen($event)">
       </ejs-filemanager>
@@ -50,7 +50,7 @@ export class AppComponent {
       size: 69632,
       type: '.png',
       imageUrl:
-        'https://ej2.syncfusion.com/react/demos/src/image-editor/images/flower.png',
+        './flower.png',
     },
     {
       dateCreated: new Date('2023-11-15T19:02:02.3419426+05:30'),
@@ -64,7 +64,7 @@ export class AppComponent {
       size: 48951,
       type: '.png',
       imageUrl:
-        'https://ej2.syncfusion.com/react/demos/src/image-editor/images/bridge.png',
+        './bridge.png',
     },
   ];
   fileOpen(args: any): void {
