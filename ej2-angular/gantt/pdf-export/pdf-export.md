@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Pdf export in Angular Gantt component
 
-PDF export allows exporting Gantt data to PDF document. You need to use the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfexport) method for exporting. To enable PDF export in the Gantt, set the [`allowPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowpdfexport) to true.
+PDF export allows exporting Gantt data to PDF document. This can be achieved using the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfexport) method. To enable PDF export in the Gantt, set the [`allowPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/gantt/#allowpdfexport) to true.
 
 To export data to PDF document, inject the `PdfExport` module in Gantt.
 
@@ -49,7 +49,7 @@ These indicators, represented by images,can be effortlessly defined using the  [
 
 ## Exporting Gantt data as a blob object
 
-In Gantt, you can export the Gantt chart data as a blob object, which allows you to preview or modify the data before exporting it.
+In the Gantt chart, data can be exported as a blob object, allowing for preview or modifications before exporting the PDF.
 
 To export the Gantt chart data as a blob object, follow these steps:
 
@@ -71,9 +71,9 @@ step 2: Then , `pdfExpComplete` return as blob object.
 
 ## Single page exporting in gantt
 
-In Gantt, we have provided support to export the Gantt component where each rows are auto-fit to the PDF document page width by setting [`isFitToWidth`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/fitToWidthSettings/#isFitToWidth) as true in <code>fitToWidthSettings</code> of <code>PdfExportProperties</code>.
+The Gantt chart supports exporting with rows automatically adjusted to fit the PDF document's page width.This can be achieved by setting [`isFitToWidth`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/fitToWidthSettings/#isFitToWidth) to true within  <code>fitToWidthSettings</code> of <code>PdfExportProperties</code>.
 
-Also, we can customize the chart width and grid width in exported file using [`chartWidth`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/fitToWidthSettings/isFitToWidth/#chartWidth) and [`gridWidth`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/fitToWidthSettings/isFitToWidth/#gridWidth) by defining it as percentage in string. 
+Additionally, the chart width and grid width in the exported PDF file can be customized using [`chartWidth`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/fitToWidthSettings/isFitToWidth/#chartWidth) and [`gridWidth`](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/fitToWidthSettings/isFitToWidth/#gridWidth) by defining it as percentage in string. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -87,84 +87,41 @@ Also, we can customize the chart width and grid width in exported file using [`c
   
 {% previewsample "page.domainurl/samples/gantt/single-page" %}
 
-## Exporting with templates
+## Multiple gantt exporting in Angular Gantt component
 
-### Exporting with column template
-
-The PDF export functionality allows to export Grid columns that include images, hyperlinks, and custom text to an PDF document using [pdfQueryCellInfo](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryCellInfoEventArgs/) event.
-
-In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryCellInfoEventArgs/#hyperlink) and [image](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryCellInfoEventArgs/#image) properties in the [pdfQueryCellInfo](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryCellInfoEventArgs/) event.
-
->Note: PDF Export supports base64 string to export the images.
+PDF export provides an option for exporting multiple Gantt to same file. In this exported document, each Gantt will be exported to a new page of the document in same file.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/pdf-export-column-template-cs1/src/app.component.ts %}
+{% include code-snippet/gantt/pdf-multiple-export-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/pdf-export-column-template-cs1/src/main.ts %}
+{% include code-snippet/gantt/pdf-multiple-export-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/gantt/pdf-export-column-template-cs1" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-multiple-export-cs1" %}
 
-### Exporting with taskbar template
+## Applying Themes in PDF Export
 
-The PDF export functionality allows to export taskbar templates that include `images` and `text` to an PDF document using [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfquerytaskbarinfo) event. Taskbars in the exported PDF document can be customized or formatted using the `pdfQueryTaskbarInfo` event for parent taskbar templates, taskbar templates and milestone templates.
+PDF export provides an option to include theme for the exported PDF document.
+To apply theme in exported PDF, define the [theme](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/#theme) in [pdfExportProperties](https://helpej2.syncfusion.com/angular/documentation/api/gantt/pdfExportProperties/).
+The available themes are:
 
-In the following sample, taskbar templates with images and text are exported to PDF using [taskbarTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryTaskbarInfoEventArgs/#taskbarTemplate) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfquerytaskbarinfo) event.
-
->Note: PDF Export supports base64 string to export the images.
+* Material
+* Fabric
+* Bootstrap
+* Bootstrap 4
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/pdf-export-taskbar-template/src/app.component.ts %}
+{% include code-snippet/gantt/pdf-export-cs12/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/pdf-export-taskbar-template/src/main.ts %}
+{% include code-snippet/gantt/pdf-export-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/gantt/pdf-export-taskbar-template" %}
-
-### Exporting with task label template
-
-The PDF export functionality allows to export task label template that include `images` and `text` to an PDF document using [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfquerytaskbarinfo) event.
-
-In the following sample, task label template with images and text are exported to PDF using [labelSettings](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfQueryTaskbarInfoEventArgs/#labelSettings) properties in the [pdfQueryTaskbarInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/#pdfquerytaskbarinfo) event.
-
->Note: PDF Export supports base64 string to export the images.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/pdf-export-tasklabel-template/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/pdf-export-tasklabel-template/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/gantt/pdf-export-tasklabel-template" %}
-
-### Exporting with header template
-
-The PDF export functionality allows to export header template that include `images` and `text` to an PDF document using [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/) event.
-
-In the following sample, header template with images and text are exported to PDF using [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/#headerTemplate) properties in the [pdfColumnHeaderQueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/gantt/pdfColumnHeaderQueryCellInfoEventArgs/) event.
-
->Note: PDF Export supports base64 string to export the images.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/gantt/pdf-export-header-template/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/gantt/pdf-export-header-template/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "page.domainurl/samples/gantt/pdf-export-header-template" %}
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs12" %}

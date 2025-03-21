@@ -19,6 +19,7 @@
     "@syncfusion/ej2-angular-navigations": "*",
     "@syncfusion/ej2-angular-popups": "*",
     "@syncfusion/ej2-angular-buttons": "*",
+    "@syncfusion/ej2-interactive-chat": "*",
     "@angular/animations": "17.1.2",
     "@angular/common": "17.1.2",
     "@angular/compiler": "17.1.2",

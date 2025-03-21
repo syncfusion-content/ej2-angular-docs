@@ -360,19 +360,18 @@ The diagram provides flexibility to prevent connectors from overlapping, ensurin
 
 To enable this feature, inject the `AvoidLineOverlapping` module and add its constraints to the diagram.
 
-N> The `AvoidLineOverlapping` feature applies only to orthogonal connectors and requires the `LineRouting` module to be injected with its constraints enabled.
- 
 * Inject both the `LineRouting` and `AvoidLineOverlapping` modules into the application.
 
     ```typescript
 
     import { LineRouting, AvoidLineOverlapping, Diagram } from '@syncfusion/ej2-diagrams';
     /**
-     * Injecting the line routing and avoid line overlapping module.
-     */
+        * Injecting the line routing and avoid line overlapping module.
+        */
     Diagram.Inject(LineRouting, AvoidLineOverlapping);
 
     ```
+
 * Add `LineRouting` and `AvoidLineOverlapping` constraints to the diagram constraints to enable line routing with avoid line overlapping support.
 
     ```html
@@ -383,12 +382,14 @@ N> The `AvoidLineOverlapping` feature applies only to orthogonal connectors and 
     <ejs-diagram #diagram [constraints]='constraints'>
 
     ```
-
     ```typescript
+    
     // Enable line routing and avoid line overlapping constraints.
     public constraints: DiagramConstraints = DiagramConstraints.Default | DiagramConstraints.LineRouting | DiagramConstraints.AvoidLineOverlapping;
 
     ```
+
+![AvoidLineOverlapping GIF](images/avoidconnectoroverlap.gif)
 
 The following example demonstrates how to enable the AvoidLineOverlapping feature in the diagram.
 
@@ -404,9 +405,8 @@ The following example demonstrates how to enable the AvoidLineOverlapping featur
   
 {% previewsample "page.domainurl/samples/diagram/connectors/AvoidLineOverlappings" %}
 
-The following image illustrates how the connector automatically avoid overlapping with other connectors.  
+N> The `AvoidLineOverlapping` feature applies only to orthogonal connectors and requires the `LineRouting` module to be injected with its constraints enabled.
 
-![AvoidLineOverlapping GIF](images/avoidconnectoroverlap.gif)
 
 ## See Also
 

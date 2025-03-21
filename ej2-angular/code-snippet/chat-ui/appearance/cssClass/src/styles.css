@@ -4,3 +4,23 @@
 @import 'node_modules/@syncfusion/ej2-popups/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-buttons/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-interactive-chat/styles/material.css';
+
+#wrapper {
+  height: 380px;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.e-chat-ui.custom-container {
+  border-color: #e0e0e0;
+  background-color: #f4f4f4;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.e-chat-ui.custom-container .e-chat-header {
+  background: #0c888e;
+}
+
+.e-chat-ui.custom-container .e-footer .e-input-group {
+  border: 3px solid #bde0e2;
+}

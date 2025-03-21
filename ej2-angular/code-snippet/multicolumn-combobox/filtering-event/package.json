@@ -21,6 +21,7 @@
     "@syncfusion/ej2-angular-buttons": "*",
     "@syncfusion/ej2-angular-dropdowns": "*",
     "@syncfusion/ej2-angular-multicolumn-combobox": "*",
+    "@syncfusion/ej2-multicolumn-combobox": "*",
     "@angular/animations": "17.1.2",
     "@angular/common": "17.1.2",
     "@angular/compiler": "17.1.2",

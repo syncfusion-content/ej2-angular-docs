@@ -97,10 +97,10 @@ The [`selectionChange`](https://ej2.syncfusion.com/angular/documentation/api/dia
 You can prevent selection by setting the `cancel` property of [`SelectionChangeEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iselectionchangeeventargs/) to true, as shown in the code snippet below.
 
 ```ts
-    public selectionChange = function (args: ISelectionChangeEventArgs): void {
-        if (args.state === 'Changing') {
-            //Prevents selection
-            args.cancel = true;
-        };
+public selectionChange = function (args: ISelectionChangeEventArgs): void {
+    if (args.state === 'Changing') {
+        //Prevents selection
+        args.cancel = true;
     };
+};
 ```
