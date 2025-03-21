@@ -72,6 +72,16 @@ The following example demonstrates how to customize the filter choice count in t
 
 > The specified filter choice count value determines the display of unique items as a checkbox list in the Excel/checkbox type filter dialog. This can result in a delay in rendering these checkbox items when opening the filter dialog. Therefore, it is advisable to set a restricted filter choice count value.
 
+## Add current selection to filter Checkbox/Excel
+
+By default, the CheckBox/Excel filter in Syncfusion Angular Grid filters only the selected items. When multiple filtering actions are performed on the same column, the previously filtered values are cleared.
+
+With the `Add current selection to filter` checkbox, it is possible to retain previous filter values while performing new searches. This checkbox appears when searching data in the CheckBox/Excel filter's search bar, allowing users to include the new selections without removing the previously applied filters.
+
+The following image describes the above mentioned behavior.
+
+![Checkbox filter](../images/checkboxfilter.png)
+
 ## Show customized text in checkbox list data
 
 The Syncfusion Angular Grid component provides you with the flexibility to customize the text displayed in the Excel/Checkbox filtering options. This allows you to modify the default text and provide more meaningful and contextual labels for the filtering.
