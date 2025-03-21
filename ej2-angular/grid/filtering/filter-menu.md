@@ -311,16 +311,6 @@ When using the filter menu, the UI displays operators for all columns based on t
 
 **Check Data Types in Data Source:** Ensure that the data types specified in the column definitions match the actual data types in your data source. Mismatched data types can lead to unexpected behavior.
 
-## Add current selection to filter checkbox
-
-By default, the `CheckBox` filter in Syncfusion Angular Grid filters only the selected items. When multiple filtering actions are performed on the same column, the previously filtered values are cleared.
-
-With the `Add current selection to filter` checkbox, it is possible to retain previous filter values while performing new searches. This checkbox appears when searching data in the `CheckBox` filter's search bar, allowing users to include the new selections without removing the previously applied filters.
-
-The following image describes the above mentioned behavior.
-
-![Checkbox filter](../images/checkboxfilter.png)
-
 ## See also
 
 * [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)

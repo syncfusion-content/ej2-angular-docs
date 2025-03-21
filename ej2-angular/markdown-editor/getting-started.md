@@ -149,14 +149,6 @@ To retrieve the editor contents, use the [value](https://ej2.syncfusion.com/angu
 
 ```
 
-Or, you can use the [getHtml](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#gethtml) public method to retrieve the Markdown Editor content.
-
-```typescript
-
-  let rteValue: string = this.rteObj.getHtml();
-
-```
-
 To fetch the Markdown Editor's text content, use [getText](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#gettext) method.
 
 ```typescript
