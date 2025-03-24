@@ -32,6 +32,8 @@ The following code example illustrates how to define a swimlane object.
   
 {% previewsample "page.domainurl/samples/diagram/swimlane/swimlaneheader-cs1" %}
 
+N> When setting a Swimlane's ID, ensure that it does not contain white spaces, does not start with numbers or special characters, and does not include special characters like underscores (_) or spaces.
+
 ## Headers
 
 Header was the primary element for swimlanes. The [`header`](https://ej2.syncfusion.com/angular/documentation/api/diagram/headerModel) property of swimlane allows you to define its textual description and to customize its appearance.

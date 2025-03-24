@@ -21,7 +21,7 @@ Connector can be created by defining the source and target point of the connecto
                 <e-connector id='connector1' type='Straight' sourcePoint='sourcePoint' targetPoint='sourcePoint'></e-connector>
 </e-connectors>  
 ```
-N> Note: There should not be any white-spaces in the ID string while setting the ID.
+N> When setting a Connector,s ID, ensure that it does not contain white spaces, does not start with numbers or special characters, and does not include special characters like underscores (_) or spaces.
 
 To create and customize the connectors easily in the Angular Diagram component, refer to the below video link.
 
