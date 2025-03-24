@@ -37,16 +37,17 @@ export class AppComponent {
       }
     }
     saveBlob(): void {
-      const imageEditor: any = getComponent(document.getElementById('image-editor') as HTMLElement, 'image-editor');
-        let imageData = imageEditor.getImageData();
+      if (this.imageEditorObj) {
+        let imageData = this.imageEditorObj.getImageData();
         let canvas = document.createElement('canvas');
         let ctx: any = canvas.getContext('2d');
         canvas.width = imageData.width;
         canvas.height = imageData.height;
         ctx.putImageData(imageData, 0, 0);
-        canvas.toBlob((blob) =>{
-            this.blobUrl = URL.createObjectURL(blob as any);// For getting blob.
+        canvas.toBlob((blob) => {
+          this.blobUrl = URL.createObjectURL(blob as any); // For getting blob.
         });
+      }
     }
 
 }
