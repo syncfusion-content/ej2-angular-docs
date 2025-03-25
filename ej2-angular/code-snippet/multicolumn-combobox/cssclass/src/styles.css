@@ -10,3 +10,9 @@
     color: #ab3243;
     background: #32a5ab;
 }
+
+#wrapper {
+  width: 500px;
+  margin-top: 30px;
+  padding: 30px;
+}

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Events
+# Events
 
 Diagram provides some events support for connectors that triggers when interacting with the connector.
 
@@ -31,7 +31,7 @@ Triggers when the connector is clicked. The following code example explains how 
 ## Selection change event.
 
 When selecting/unselecting the connector, the selection chang event will be triggered.
-The following code example explains how to get the [`selection change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/iselectionchangeeventargs/) event in the diagram.
+The following code example explains how to get the [`selection change`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#selectionchange) event in the diagram.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

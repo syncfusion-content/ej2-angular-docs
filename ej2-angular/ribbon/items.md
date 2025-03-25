@@ -335,39 +335,20 @@ You can use the [sortOrder](https://ej2.syncfusion.com/angular/documentation/api
   </tr>
 </table>
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/ribbon/ComboboxItem/src/app.component.ts %}
+{% endhighlight %}
 
-import { Component } from "@angular/core";
-import { RibbonComboBoxSettingsModel } from '@syncfusion/ej2-angular-ribbon';
-
-@Component({
-  selector: "app-root",
-  template: `<!-- To Render Ribbon. -->
-    <ejs-ribbon id="ribbon">
-        <e-ribbon-tabs>
-            <e-ribbon-tab header="Home">
-                <e-ribbon-groups>
-                    <e-ribbon-group header="Clipboard" >
-                        <e-ribbon-collections>
-                            <e-ribbon-collection>
-                                <e-ribbon-items>
-                                    <e-ribbon-item type="ComboBox" [comboBoxSettings]="fontstyleSettings">
-                                    </e-ribbon-item>
-                                </e-ribbon-items>
-                            </e-ribbon-collection>
-                        </e-ribbon-collections>
-                    </e-ribbon-group>
-                </e-ribbon-groups>
-            </e-ribbon-tab>
-        </e-ribbon-tabs>
-    </ejs-ribbon>`,
-})
-export class AppComponent {
-    public fontStyle: string[] = ["Algerian", "Arial", "Calibri", "Cambria", "Cambria Math", "Courier New", "Candara", "Georgia", "Impact", "Segoe Print", "Segoe Script", "Segoe UI", "Symbol", "Times New Roman", "Verdana", "Windings"];
-    public fontstyleSettings: RibbonComboBoxSettingsModel = { dataSource: this.fontStyle, index: 3, sortOrder: "Descending" };
-}
-
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/ribbon/ComboboxItem/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/ribbon/ComboboxItem/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/ribbon/ComboboxItem" %}
 
 ### Colorpicker items
 
@@ -377,38 +358,20 @@ You can render the built-in colorPicker Ribbon item by setting the [type](https:
 
 You can use the [value](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonColorPickerSettingsModel/#value) property to specify the color value. The value should be specified as Hex code.
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/ribbon/ColorPickerItem/src/app.component.ts %}
+{% endhighlight %}
 
-import { Component } from "@angular/core";
-import { RibbonColorPickerSettingsModel } from '@syncfusion/ej2-angular-ribbon';
-
-@Component({
-  selector: "app-root",
-  template: `<!-- To Render Ribbon. -->
-    <ejs-ribbon id="ribbon">
-        <e-ribbon-tabs>
-            <e-ribbon-tab header="Home">
-                <e-ribbon-groups>
-                    <e-ribbon-group header="Clipboard" >
-                        <e-ribbon-collections>
-                            <e-ribbon-collection id="paste-collection">
-                                <e-ribbon-items>
-                                    <e-ribbon-item type="ColorPicker"  [colorPickerSettings]="colorSettings">
-                                    </e-ribbon-item>    
-                                </e-ribbon-items>
-                            </e-ribbon-collection>
-                        </e-ribbon-collections>
-                    </e-ribbon-group>
-                </e-ribbon-groups>
-            </e-ribbon-tab>
-        </e-ribbon-tabs>
-    </ejs-ribbon>`,
-})
-export class AppComponent {
-    public colorSettings: RibbonColorPickerSettingsModel = { value: '#123456' };
-}
-
-```
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/ribbon/ColorPickerItem/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/ribbon/ColorPickerItem/src/app.component.html %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/ribbon/ColorPickerItem" %}
 
 ### Groupbutton items
 

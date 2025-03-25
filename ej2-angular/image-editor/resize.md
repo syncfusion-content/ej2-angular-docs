@@ -25,7 +25,7 @@ The Image Editor control includes a [`resize`](https://ej2.syncfusion.com/angula
     * When set to `false`, the image is resized according to the specified width and height, without maintaining the aspect ratio.
     * The default value is `false`.
 
-Here is an example of resizing the image using the [`resize`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#resize) method.   
+Here is an example of resizing the image using the `resize` method.   
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

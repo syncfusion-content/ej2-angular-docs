@@ -7,7 +7,7 @@ import { ButtonModule } from '@syncfusion/ej2-angular-buttons'
 
 
 import { Component, HostListener, ViewChild } from '@angular/core';
-import { MultiColumnComboBoxComponent, SelectEventArgs } from '@syncfusion/ej2-angular-multicolumn-combobox';
+import { SelectEventArgs } from '@syncfusion/ej2-multicolumn-combobox';
 
 
 @Component({

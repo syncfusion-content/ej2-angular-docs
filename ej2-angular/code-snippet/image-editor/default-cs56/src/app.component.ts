@@ -21,7 +21,7 @@ standalone: true,
                 <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar"></ejs-imageeditor>
               </div>
               <button class="e-btn e-primary" (click)="addRedact()">Add Redact</button>
-              <button class="e-btn e-primary" (click)="updateRedact()">update Redact</button>
+              <button class="e-btn e-primary" (click)="updateRedact()">Update Redact</button>
               <button class="e-btn e-primary" (click)="selectRedact()">Select Redact</button>
               <button class="e-btn e-primary" (click)="deleteRedact()">Delete Redact</button>
               </div>`

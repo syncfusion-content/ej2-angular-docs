@@ -17,7 +17,7 @@ standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
               <!-- To render Image Editor. -->
-              <div id="wrapperDiv" style="width:550px;height:350px; margin-top: 60px">
+              <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()" (fileOpened)="fileOpened()"></ejs-imageeditor>
               </div>
               </div>`
