@@ -11,7 +11,3 @@
 @import '../node_modules/@syncfusion/ej2-layouts/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-grids/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-angular-filemanager/styles/material.css';
-
-.e-section-control {
-	margin-top: 150px;
-}

@@ -75,6 +75,8 @@ The following example that demonstrates how to enable/disable cache mode in infi
   
 {% previewsample "page.domainurl/samples/grid/paging1-cs4" %}
 
+> If [Hierarchy Grid](https://ej2.syncfusion.com/angular/documentation/grid/hierarchy-grid) or [Detail Template](https://ej2.syncfusion.com/angular/documentation/grid/row/detail-template) feature is enabled along with infinite scrolling without defining the height property, it will take a default height of **300px**. Since the [height](https://ej2.syncfusion.com/angular/documentation/api/grid/#height) property is mandatory for the hierarchy grid and detail template features, ensure to define it accordingly. 
+
 ## Limitations
 
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
@@ -92,9 +94,7 @@ The following example that demonstrates how to enable/disable cache mode in infi
     4. Column spanning
     5. Row template
     6. Row virtual scrolling
-    8. Detail template
-    9. Hierarchy features
-    10. Autofill
+    7. Autofill
 * Limitations of row drag and drop with infinite scrolling
     1. In cache mode, the grid refreshes automatically if the content's **tr** element count exceeds the cache limit of the grid's content after the drop action.
     2. When performing row drag and drop with lazy load grouping, the grid will refresh automatically.

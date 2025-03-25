@@ -22,6 +22,10 @@ In the following sample, icon classes are mapped with `iconCss` field.
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/dropdownlist/iconClass-cs1/src/main.ts %}
 {% endhighlight %}
+
+{% highlight ts tabtitle="index.css" %}
+{% include code-snippet/dropdownlist/iconClass-cs1/index.css %}
+{% endhighlight %}
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/dropdownlist/iconClass-cs1" %}

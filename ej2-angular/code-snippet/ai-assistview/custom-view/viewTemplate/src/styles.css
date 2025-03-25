@@ -3,3 +3,13 @@
 @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import '../node_modules/@syncfusion/ej2-notifications/styles/material.css';
+
+#wrapper {
+  width: max(50%, 500px);
+  margin: 30px auto;
+}
+
+.view-container {
+  margin: 20px auto;
+  width: 80%;
+}

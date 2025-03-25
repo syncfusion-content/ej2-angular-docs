@@ -20,51 +20,23 @@ In simplified mode on resizing, the items size will be changed based on the avai
 
 You can use the [allowedSizes](https://ej2.syncfusion.com/angular/documentation/api/ribbon/ribbonItem/#allowedsizes) property to maintain a constant size for an item. If `allowedSizes` is set, it keeps the size constant even when being resized.
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/ribbon/AllowedSize/src/app.component.ts %}
+{% endhighlight %}
 
-import { Component } from "@angular/core";
-import { RibbonButtonSettingsModel, RibbonItemSize, ItemModel } from '@syncfusion/ej2-angular-ribbon';
-@Component({
-  selector: 'app-root',
-  templateUrl: `<ejs-ribbon id="ribbon">
-    <e-ribbon-tabs>
-        <e-ribbon-tab header="Home">
-            <e-ribbon-groups>
-                <e-ribbon-group>
-                    <e-ribbon-collections>
-                        <e-ribbon-collection>
-                            <e-ribbon-items>
-                                <e-ribbon-item type="SplitButton" [allowedSizes]="largeSize" [splitButtonSettings]="pasteButton">
-                                </e-ribbon-item>
-                            </e-ribbon-items>
-                        </e-ribbon-collection>
-                        <e-ribbon-collection>
-                            <e-ribbon-items>
-                                <e-ribbon-item type="Button" [allowedSizes]="mediumSize" [buttonSettings]="cutButton">
-                                </e-ribbon-item>
-                                <e-ribbon-item type="Button" [allowedSizes]="smallSize" [buttonSettings]="copyButton">
-                                </e-ribbon-item>
-                            </e-ribbon-items>
-                        </e-ribbon-collection>
-                    </e-ribbon-collections>
-                </e-ribbon-group>
-            </e-ribbon-groups>
-        </e-ribbon-tab>
-    </e-ribbon-tabs>
-</ejs-ribbon>`,
-})
-export class AppComponent {
-  public pasteOptions: ItemModel[] = [{ text: "Keep Source Format" }, { text: "Merge format" }, { text: "Keep text only" }];
-  public largeSize: RibbonItemSize = RibbonItemSize.Large;
-  public smallSize: RibbonItemSize = RibbonItemSize.Small;
-  public mediumSize: RibbonItemSize = RibbonItemSize.Medium;
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/ribbon/AllowedSize/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/ribbon/AllowedSize/src/app.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.component.css" %}
+{% include code-snippet/ribbon/AllowedSize/src/app.component.css %}
+{% endhighlight %}
+{% endtabs %}
   
-  public pasteButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-paste", content: "Paste", items: this.pasteOptions };
-  public copyButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-copy", content: "Copy" };
-  public cutButton: RibbonButtonSettingsModel = { iconCss: "e-icons e-cut", content: "Cut" };
-}
-
-```
+{% previewsample "page.domainurl/samples/ribbon/AllowedSize" %}
 
 ## Defining items active size
 

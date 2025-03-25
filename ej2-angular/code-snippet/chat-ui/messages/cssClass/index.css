@@ -7,15 +7,3 @@
   top: 45%;
   left: 45%;
 }
-
-#wrapper {
-  height: 380px;
-  width: 450px;
-  margin: 0 auto;
-}
-
-.e-chat-ui .e-message-icon.custom-user {
-  background-color: #416fbd;
-  color: white;
-  border-radius: 5px;
-}

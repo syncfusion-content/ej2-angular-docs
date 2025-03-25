@@ -2,12 +2,7 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { GanttModule } from '@syncfusion/ej2-angular-gantt'
 import { ToolbarService, PdfExportService, SelectionService } from '@syncfusion/ej2-angular-gantt'
-
-
-
-
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
-
 import { PdfColor } from '@syncfusion/ej2-pdf-export';
 import { Gantt, Toolbar, PdfExport, Selection, PdfQueryTimelineCellInfoEventArgs, ToolbarItem, GanttComponent } from '@syncfusion/ej2-angular-gantt';
 import { ClickEventArgs } from '@syncfusion/ej2-navigations/src/toolbar/toolbar';

@@ -7,13 +7,3 @@
   top: 45%;
   left: 45%;
 }
-
-#wrapper {
-  width: max(50%, 500px);
-  margin: 30px auto;
-}
-
-.view-container {
-  margin: 20px auto;
-  width: 80%;
-}

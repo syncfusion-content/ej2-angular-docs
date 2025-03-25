@@ -15,7 +15,7 @@ import { MultiColumnComboBoxComponent } from '@syncfusion/ej2-angular-multicolum
     standalone: true,
     selector: 'app-root',
     // specifies the template string for the MultiColumn ComboBox component with change event
-    template: `<ejs-multicolumncombobox id='multicolumn' #multicolumn [dataSource]='empData' [fields]='fields' popupHeight='250px'>
+    template: `<ejs-multicolumncombobox id='multicolumn' #multicolumn [dataSource]='empData' [fields]='fields' popupHeight='400px'>
                   <e-columns>
                     <e-column field='EmpID' header='Employee ID' width='100'></e-column>
                     <e-column field='Name' header='Name' width='90'></e-column>

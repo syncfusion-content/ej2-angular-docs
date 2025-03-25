@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-## Events
+# Events
 
 Diagram provides some events support for node that triggers when interacting with the node.
 

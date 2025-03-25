@@ -19,11 +19,11 @@ imports: [
 standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
-              <!-- To render Image Editor. -->
-              <div id="wrapperDiv" style="width:550px;height:350px;">
-                <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar"></ejs-imageeditor>
-              </div>
-              <button class="e-btn e-primary" (click)="btnClick()">Click</button>
+                <!-- To render Image Editor. -->
+                <div id="wrapperDiv" style="width:550px;height:350px;">
+                  <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar"></ejs-imageeditor>
+                </div>
+                <button class="e-btn e-primary" (click)="onSelectRatio()">Select 16:9</button>
               </div>`
 })
 
@@ -39,7 +39,7 @@ export class AppComponent {
         this.imageEditorObj?.open('./bridge.png');
       }
     }
-    btnClick(): void {
+    onSelectRatio(): void {
         this.imageEditorObj?.select("16:9");
     }
 }

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Header and footer of PDF export in Angular Gantt component | Syncfusion
+title: Customizing PDF Headers and Footers in Angular Gantt | Syncfusion
 description: Learn here all about header and footer of PDF exporting in Syncfusion Angular Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: header and footer of PDF exporting
@@ -156,3 +156,19 @@ The below code illustrates the pdf export customization.
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/gantt/pdf-export-customization-cs1" %}
+
+## Disable footer 
+
+By default, the exported PDF file includes a footer. The footer can be disabled by setting the [enableFooter]() property to `false`. 
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/pdf-export-cs5/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/pdf-export-cs5/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/pdf-export-cs5" %}

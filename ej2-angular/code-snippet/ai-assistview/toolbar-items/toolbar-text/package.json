@@ -17,6 +17,7 @@
     "@syncfusion/ej2-angular-interactive-chat": "*",
     "@syncfusion/ej2-angular-inputs": "*",
     "@syncfusion/ej2-angular-navigations": "*",
+    "@syncfusion/ej2-interactive-chat": "*",
     "@angular/animations": "17.1.2",
     "@angular/common": "17.1.2",
     "@angular/compiler": "17.1.2",

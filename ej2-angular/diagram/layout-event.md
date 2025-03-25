@@ -25,13 +25,13 @@ export class AppComponent {
   @ViewChild("diagram")
   public diagram!: DiagramComponent;
 
-  // Handle animation state changes
   public dataLoaded(args: IDataLoadedEventArgs) {
       //we can get diagram instance in args.
       console.log(args);
 
       //customize
   }
+}
 
 ```
 
@@ -69,3 +69,27 @@ The [`animationComplete`](https://ej2.syncfusion.com/angular/documentation/api/d
 {% endtabs %}
 
 {% previewsample "page.domainurl/samples/diagram/automaticlayout/layoutEvent-cs2" %}
+
+## Layout updated event
+
+The [`layoutUpdated`](https://ej2.syncfusion.com/angular/documentation/api/diagram/#layoutupdated) event is triggered when the layout rendering process in the diagram either starts or completes. This event allows users to track the state of the layout rendering process.
+
+The following code example explains the layout updated event in the diagram.
+
+```typescript
+
+<ejs-diagram #diagram id="diagram" width="100%" height="550px" [nodes]="nodes" [connectors]="connectors"
+  [layout]="layout" (layoutUpdated)="layoutUpdated($event)" > </ejs-diagram>
+
+export class AppComponent {
+  @ViewChild("diagram")
+  public diagram!: DiagramComponent;
+  // Handle layout updated event
+  public layoutUpdated(args: ILayoutUpdatedEventArgs) {
+      if (args.state == 'Started') {
+        console.log('layout started rendering');
+      }
+  }
+}
+
+```
