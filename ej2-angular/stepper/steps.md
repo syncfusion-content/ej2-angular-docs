@@ -103,6 +103,28 @@ You can use the `disabled` property to disable a step, preventing user interacti
   
 {% previewsample "page.domainurl/samples/stepper/steps/disabled" %}
 
+## Setting readonly
+
+You can use [readOnly](https://ej2.syncfusion.com/angular/documentation/api/stepper#readonly) property to disable the user interactions in the stepper.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/stepper/steps/readonly/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/stepper/steps/readonly/src/main.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/stepper/steps/readonly/src/app.component.html %}
+{% endhighlight %}
+{% highlight css tabtitle="app.component.css" %}
+{% include code-snippet/stepper/steps/readonly/src/app.component.css %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/stepper/steps/readonly" %}
+
 ## Setting active step
 
 You can set the active step by specifying its index using the [activeStep](https://ej2.syncfusion.com/angular/documentation/api/stepper#activestep) property. The default value is `0`.

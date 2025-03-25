@@ -13,13 +13,13 @@ domainurl: ##DomainURL##
 
 The frame feature in an Image Editor provides users with the capability to add decorative borders or frames around their images. Frames are a visual design element that can enhance the overall appearance and appeal of an image.
 
-## Apply frame to the Image
+## Apply frame to the image
 
 The [`drawFrame`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawframe) method is a function designed to enable the application of various frame options to an image. This method simplifies the process of adding decorative frames, such as mat, bevel, line, hook, and inset, to an image by allowing users to specify their desired frame type.
 
 Depending on the frame type selected, users may have additional customization options, such as adjusting the frame's thickness, color, texture, or other attributes. This allows for fine-tuning the appearance of the frame to match the image's theme or the user's preferences
 
-The [`drawFrame`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawframe) method in the Image Editor control takes six parameters to define the properties of the rectangle annotation:
+The `drawFrame` method in the Image Editor control takes six parameters to define the properties of the rectangle annotation:
 
 * frameType - Specified the image data or url of the image to be inserted.
 

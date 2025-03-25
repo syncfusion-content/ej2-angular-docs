@@ -10,7 +10,7 @@ import { ToolbarService, LinkService, ImageService, MarkdownEditorService, RichT
     ],
     standalone: true,
     selector: 'app-root',
-    template:`<ejs-richtexteditor #defaultRTE id='defaultRTE' [toolbarSettings]='tools' [editorMode]='mode' [value]='rteValue' (create)='onCreate($event)'></ejs-richtexteditor>`,
+    template:`<ejs-richtexteditor #defaultRTE id='defaultRTE' [value]='rteValue' [toolbarSettings]='tools' [editorMode]='mode' (create)='onCreate($event)'></ejs-richtexteditor>`,
     providers: [ToolbarService, LinkService, ImageService, MarkdownEditorService]
 })
     
@@ -36,6 +36,3 @@ export class AppComponent  {
         }
     }
 }
-
-
-

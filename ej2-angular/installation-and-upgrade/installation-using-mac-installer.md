@@ -49,7 +49,7 @@ The steps below show how to install the Essential Studio JavaScript - EJ2 Mac in
 
 5. Now you can open the folder to explore the Syncfusion Essential Studio Mac installer.
 
-   ![Destination](Images/destination.JPG)
+   ![Destination](Images/Mac_Installer5.png)
 
 6. To remove the DMG file, Right-click on the virtual drive on your desktop or in the Finder sidebar and select "Eject." Also delete the folder from the Applications.
 

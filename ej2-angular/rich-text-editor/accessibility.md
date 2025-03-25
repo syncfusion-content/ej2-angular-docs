@@ -91,7 +91,7 @@ You can customize shortcut keys using the [`formatter`](https://ej2.syncfusion.c
 {% include code-snippet/rich-text-editor/how-to/cut-copy-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
+
 {% previewsample "page.domainurl/samples/rich-text-editor/how-to/cut-copy-cs1" %}
 
 ## Implementing Accessibility Best Practices

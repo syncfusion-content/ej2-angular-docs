@@ -48,4 +48,5 @@ The executeCommand is used to perform command for the modification of content in
 | insertVideo | Insert a video to the current cursor position. | `rteObj.executeCommand('insertVideo', { url: 'https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Ocean-Waves.mp4', cssClass: 'e-rte-video'});` |
 | insertAudio | Insert a audio to the current cursor position. | `rteObj.executeCommand('insertAudio', { url: 'https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Audio.wav', cssClass: 'e-rte-audio'});` |
 
+
 >Note: The ‘ExecuteCommand’ public method is not supported in Syncfusion Markdown Editor

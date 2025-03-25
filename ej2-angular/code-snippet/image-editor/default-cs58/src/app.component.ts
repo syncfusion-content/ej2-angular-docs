@@ -26,12 +26,9 @@ export class AppComponent {
     public imageEditorObj?: ImageEditorComponent;
     public uploadSettings: UploadSettingsModel = {
       minFileSize: 1024,     // Minimum file size in bytes (1 KB)
-      maxFileSize: 90 * 1024  // Maximum file size in bytes (90 KB)
+      maxFileSize: 10 * 1024  // Maximum file size in bytes (10 KB)
     };
     loadInvalidImage(): void {
-        this.imageEditorObj?.open('./flower.jpeg');
+        this.imageEditorObj?.open('./bridge.jpg');
     }
 }
-
-
-

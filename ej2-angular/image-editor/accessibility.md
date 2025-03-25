@@ -49,6 +49,8 @@ The Image Editor component followed the keyboard interaction guideline, making i
 | <kbd>Ctrl + S</kbd> | To save the Image. |
 | <kbd>Ctrl + O</kbd> | To open the Image. |
 | <kbd>Delete</kbd> | To delete the shape once the shape got selected through mouse click . |
+| <kbd>Enter</kbd> | To apply Selection Crop or Image Resize. |
+| <kbd>Escape</kbd> | To discard operations performed in the Image Editor, such as annotation drawings, crop selection, and more. |
 
 ## Ensuring accessibility
 
@@ -56,7 +58,7 @@ The Image Editor component's accessibility levels are ensured through an [access
 
 The accessibility compliance of the Image Editor component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/image-editor.html) in a new window to evaluate the accessibility of the Image Editor component with accessibility tools.
 
-{% previewsample "page.domainurl/samples/image-editor/default-cs1" %}
+{% previewsample "page.domainurl/samples/image-editor/default-cs6" %}
 
 ## See also
 

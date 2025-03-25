@@ -10,3 +10,9 @@
     border-color: #e0e0e0;
     padding: 2px 2px 3px 4px;
 }
+
+#wrapper {
+  width: 500px;
+  margin-top: 30px;
+  padding: 30px;
+}

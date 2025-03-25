@@ -116,6 +116,8 @@ isnotnull |Returns the values that are not null. |String &#124; Number &#124; Da
 isempty |Returns the values that are empty. |String
 isnotempty |Returns the values that are not empty. |String
 between|Filter the values based on the range between the start and end specified values. |Number &#124; Date
+in |Filters multiple records in the same column that exactly match any of the selected values. |String &#124; Number &#124; Date
+notin |Filters multiple records in the same column that do not match any of the selected values. |String &#124; Number &#124; Date
 
 ## Wildcard and LIKE operator filter
 

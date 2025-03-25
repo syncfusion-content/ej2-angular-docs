@@ -27,9 +27,9 @@ export class AppComponent  {
         'SourceCode', 'FullScreen', '|', 'Undo', 'Redo']
     };
     public keyConfig = {
-        'copy': 'ctrl+1',
-        'cut': 'ctrl+2',
-        'paste': 'ctrl+3'
+        bold: 'ctrl+alt+b',
+        italic: 'ctrl+alt+i',
+        underline: 'ctrl+alt+u',
     }
     onCreate(e: any) {
         document.onkeyup = function (e) {

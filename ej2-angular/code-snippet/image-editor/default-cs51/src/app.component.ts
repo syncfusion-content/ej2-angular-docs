@@ -17,7 +17,7 @@ import { ImageEditorComponent, ZoomSettingsModel } from '@syncfusion/ej2-angular
       selector: 'app-root',
       template: `<div class="e-section-control">
                 <!-- To render Image Editor. -->
-                <div id="wrapperDiv" style="width:550px;height:350px; margin-top: 60px">
+                <div id="wrapperDiv" style="width:550px;height:350px;">
                   <ejs-imageeditor #imageEditor (created)="created()" (shapeChanging)="shapeChanging($event)"></ejs-imageeditor>
                 </div>
                 </div>`
@@ -36,7 +36,7 @@ import { ImageEditorComponent, ZoomSettingsModel } from '@syncfusion/ej2-angular
         }
       }
       shapeChanging(args: ShapeChangeEventArgs): void {
-        if (this.changeColor && args.action == "insert" && args.currentShapeSettings?.type === 'FreehandDraw') {
+        if (this.changeColor && args.action == "insert" && args.currentShapeSettings?.type === 'Rectangle') {
           args.currentShapeSettings.strokeColor = 'red';
           this.changeColor = false;
         }

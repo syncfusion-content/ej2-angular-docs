@@ -29,7 +29,7 @@ standalone: true,
 export class AppComponent {
     @ViewChild('imageEditor')
     public imageEditorObj?: ImageEditorComponent;
-    public toolbar: string[] = ['Annotation' , 'Finetune' , 'Filter' , 'Confirm' , 'Reset' , 'Save', 'ZoomIn', 'ZoomOut'];
+    public toolbar: string[] = ['Annotate' , 'Finetune' , 'Filter' , 'Confirm' , 'Reset' , 'Save', 'ZoomIn', 'ZoomOut'];
       public created(): void {
       if (Browser.isDevice) {
         this.imageEditorObj?.open('./flower.png');        

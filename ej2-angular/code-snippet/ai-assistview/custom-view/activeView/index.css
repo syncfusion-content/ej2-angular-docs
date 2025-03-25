@@ -7,15 +7,3 @@
   top: 45%;
   left: 45%;
 }
-
-#wrapper {
-  height: 350px;
-  width: 650px;
-}
-
-.view-container {
-  height: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
