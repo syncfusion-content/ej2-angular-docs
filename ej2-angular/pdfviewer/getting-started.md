@@ -135,6 +135,29 @@ export class AppComponent implements OnInit {
   }
 }
 ```
+### Steps to Load PDF Viewer with Local Resources
+
+To configure the PDF Viewer to use local files for `documentPath` and `resourceUrl` instead of files hosted on a CDN, follow these steps:
+
+**Step 1:** Ensure that your application includes the `ej2-pdfviewer-lib` folder. This folder must contain the `pdfium.js`, `pdfium.wasm` files, and the PDF file that you intend to display. These should be located in the `assets` directory within your project's `src` folder.
+
+**Step 2:** Assign local file paths to the `documentPath` and `resourceUrl` properties within the PDF Viewer setup. The `documentPath` should refer to your PDF file, while the `resourceUrl` should point to the directory containing the supporting resources.
+
+By following these steps, you will configure your PDF Viewer to load the required resources locally. See the code snippet below for reference.
+
+```typescript
+  template: `<ejs-pdfviewer id="pdfViewer"
+                    [documentPath]='document'
+                    [resourceUrl]='resource'
+                    style="height:640px;display:block">
+              </ejs-pdfviewer>`,
+export class AppComponent implements OnInit {
+  public document: string = window.location.origin + "/assets/pdfsuccinctly.pdf";
+  public resource: string = window.location.origin + "/assets/ej2-pdfviewer-lib";
+  }
+```
+
+View the sample in GitHub to [load PDF Viewer with local resources](https://github.com/SyncfusionExamples/angular-pdf-viewer-examples/tree/master/How%20to/Refer%20resource%20url%20locally)
 
 ## Run the application
 

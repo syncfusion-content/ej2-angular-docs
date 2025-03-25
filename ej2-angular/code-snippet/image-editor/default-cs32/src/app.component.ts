@@ -40,10 +40,8 @@ export class AppComponent {
 
     public shapeChanging(args: ShapeChangeEventArgs): void {
        if (args.currentShapeSettings?.type === 'Text') {
-            args.currentShapeSettings.color = 'red';
-            args.currentShapeSettings.fontStyle = ['bold'];
-            args.currentShapeSettings.fontSize = 20;
-            args.currentShapeSettings.text = 'Syncfusion';
+          args.currentShapeSettings.color = 'red';
+          args.currentShapeSettings.fontFamily = 'Times New Roman';
         }
     }
 }

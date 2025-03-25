@@ -16,7 +16,7 @@ import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
       selector: 'app-root',
       template: `<div class="e-section-control">
                 <!-- To render Image Editor. -->
-                <div id="wrapperDiv" style="width:550px;height:350px; margin-top: 60px">
+                <div id="wrapperDiv" style="width:550px;height:350px;">
                   <ejs-imageeditor #imageEditor (created)="created()" ></ejs-imageeditor>
                 </div>
                 <button class="e-btn e-primary" (click)="saveBlob()">Get Blob</button>
@@ -37,16 +37,17 @@ import { ImageEditorComponent } from '@syncfusion/ej2-angular-image-editor';
         }
       }
       saveBlob(): void {
-        const imageEditor: any = getComponent(document.getElementById('image-editor') as HTMLElement, 'image-editor');
-          let imageData = imageEditor.getImageData();
+        if (this.imageEditorObj) {
+          let imageData = this.imageEditorObj.getImageData();
           let canvas = document.createElement('canvas');
           let ctx: any = canvas.getContext('2d');
           canvas.width = imageData.width;
           canvas.height = imageData.height;
           ctx.putImageData(imageData, 0, 0);
-          canvas.toBlob((blob) =>{
-              this.blobUrl = URL.createObjectURL(blob as any);// For getting blob.
+          canvas.toBlob((blob) => {
+            this.blobUrl = URL.createObjectURL(blob as any); // For getting blob.
           });
+        }
       }
       setImage(): void {
         this.imageEditorObj?.open(this.blobUrl);

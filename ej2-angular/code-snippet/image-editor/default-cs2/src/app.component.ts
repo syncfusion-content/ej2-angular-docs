@@ -19,12 +19,12 @@ imports: [
 standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
-            <!-- To render Image Editor. -->
+              <!-- To render Image Editor. -->
               <div id="wrapperDiv" style="width:550px;height:350px;">
                 <ejs-imageeditor #imageEditor (created)="created()" [toolbar]="toolbar"></ejs-imageeditor>
               </div>
-              <button class="e-btn e-primary" (click)="btnClick()">Click</button>
-              <button class="e-btn e-primary" (click)="applyBtnClick()">Apply</button>
+                <button class="e-btn e-primary" (click)="startFreeHandDraw()">Start Drawing</button>
+                <button class="e-btn e-primary" (click)="stopFreeHandDraw()">Stop Drawing</button>
               </div>`
 })
 
@@ -40,10 +40,10 @@ export class AppComponent {
         this.imageEditorObj?.open('./bridge.png');
       }
     }
-    btnClick(): void {
+    startFreeHandDraw(): void {
         this.imageEditorObj?.freeHandDraw(true);
     }
-    applyBtnClick(): void {
+    stopFreeHandDraw(): void {
         this.imageEditorObj?.freeHandDraw(false);
     }
 }

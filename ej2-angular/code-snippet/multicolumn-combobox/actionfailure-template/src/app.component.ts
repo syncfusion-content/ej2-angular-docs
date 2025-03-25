@@ -26,7 +26,7 @@ import { DataManager, WebApiAdaptor } from '@syncfusion/ej2-data';
 })
 export class AppComponent {
   public dataSource = new DataManager({
-    url: 'https://services.syncfusion.com/js/production/api/Order',
+    url: 'https://services.syncfusion.com/js/production/api/order-data',
     adaptor: new WebApiAdaptor,
     crossDomain: true
   });

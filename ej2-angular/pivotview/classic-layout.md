@@ -31,14 +31,3 @@ To enable the classic layout, set the [layout](https://ej2.syncfusion.com/angula
 **Limitations**
 
 * Subtotals at the "Top" position are not supported for row subtotals.
-* The following row and column customization options are currently unavailable for row headers (frozen columns):
-    1. Column resizing
-    2. Auto-fit
-    3. Grid lines
-* The following features are not currently supported in the pivot table:
-    1. Grouping using the Grouping UI for row headers
-    2. Hiding row subtotals
-    3. Column subtotals at the "Top" position
-    4. Exporting
-    5. Values on the row axis
-    6. Pivot Chart

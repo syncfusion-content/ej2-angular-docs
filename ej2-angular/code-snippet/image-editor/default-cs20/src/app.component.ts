@@ -1,22 +1,12 @@
-import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
-import { ImageEditorModule } from '@syncfusion/ej2-angular-image-editor'
-import { enableRipple } from '@syncfusion/ej2-base'
-
-
-
-import { Component,ViewChild } from '@angular/core';
-import { Browser } from '@syncfusion/ej2-base';
-import { ImageEditorComponent, ZoomSettingsModel } from '@syncfusion/ej2-angular-image-editor';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ImageEditorModule, ImageEditorComponent, ZoomSettingsModel } from '@syncfusion/ej2-angular-image-editor';
+import { Browser, enableRipple } from '@syncfusion/ej2-base';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
-imports: [
-        
-        ImageEditorModule
-    ],
-
-
-standalone: true,
+    imports: [ImageEditorModule],
+    standalone: true,
     selector: 'app-root',
     template: `<div class="e-section-control">
                 <!-- To render Image Editor. -->
@@ -33,42 +23,39 @@ export class AppComponent {
     public imageEditorObj?: ImageEditorComponent;
     public toolbar: string[] = [];
     public zoomLevel: number = 1;
-    public zoomSettings: ZoomSettingsModel = {maxZoomFactor: 30, minZoomFactor: 0.1};
-      public created(): void {
-      if (Browser.isDevice) {
-        this.imageEditorObj?.open('./flower.png');        
-      } 
-      else {
-        this.imageEditorObj?.open('./bridge.png');
-      }
+    public zoomSettings: ZoomSettingsModel = { maxZoomFactor: 30, minZoomFactor: 0.1 };
+    public created(): void {
+        if (Browser.isDevice) {
+            this.imageEditorObj?.open('./flower.png');
+        }
+        else {
+            this.imageEditorObj?.open('./bridge.png');
+        }
     }
     zoomInClick(): void {
-        if(this.zoomLevel < 1) {
+        if (this.zoomLevel < 1) {
             this.zoomLevel += 0.1;
         }
         else {
             this.zoomLevel += 1;
         }
         const value: any = this.imageEditorObj?.zoomSettings.maxZoomFactor;
-        if(this.zoomLevel > value) {
+        if (this.zoomLevel > value) {
             this.zoomLevel = value;
         }
         this.imageEditorObj?.zoom(this.zoomLevel) // zoom in
     }
     zoomOutClick(): void {
-        if(this.zoomLevel <= 1) {
+        if (this.zoomLevel <= 1) {
             this.zoomLevel -= 0.1;
         }
         else {
             this.zoomLevel -= 1;
         }
         const value: any = this.imageEditorObj?.zoomSettings.minZoomFactor;
-        if(this.zoomLevel < value) {
+        if (this.zoomLevel < value) {
             this.zoomLevel = value;
         }
         this.imageEditorObj?.zoom(this.zoomLevel) // zoom out
     }
 }
-
-
-

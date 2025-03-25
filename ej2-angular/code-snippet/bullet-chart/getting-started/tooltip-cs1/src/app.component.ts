@@ -16,7 +16,7 @@ imports: [
 providers: [ BulletTooltipService ],
 standalone: true,
     selector: 'app-container',
-    template: `<ejs-bulletchart valueName='value' targetName='target' title='Revenue'
+    template: `<ejs-bulletchart valueField='value' targetField='target' title='Revenue'
                 [minimum]='minimum' [maximum]='maximum' [interval]='interval' [dataSource]='data'
                 [tooltip]='tooltip'>
                 <e-bullet-range-collection>

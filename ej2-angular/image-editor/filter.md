@@ -21,7 +21,7 @@ The [`applyImageFilter`](https://ej2.syncfusion.com/angular/documentation/api/im
 
 In the toolbar, the default filter can be applied by clicking the Filter option in the toolbar and picking the Default filter.
 
-In the following example, you can using the [`applyImageFilter`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#applyimagefilter) method in the button click event.
+In the following example, you can using the `applyImageFilter` method in the button click event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -39,10 +39,8 @@ In the following example, you can using the [`applyImageFilter`](https://ej2.syn
 
 The [`imageFiltering`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#imagefiltering) event is triggered when applying filtering on the image. This event is passed an object that contains information about the filtering event, such as the type of filtering. 
 
-The parameter available in the [`ImageFilterEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#imagefiltering) event is, 
+The parameter available in the `ImageFilterEventArgs` event is, 
 
 ImageFilterEventArgs.Filter - The type of filtering as ImageFilterOption to be applied in the image editor. 
 
 ImageFilterEventArgs.Cancel – Specifies to cancel the filtering action. 
-
-> Please note that the Filter and Finetune features were unavailable on iOS due to the non-functioning CanvasContext.filter property on this platform.

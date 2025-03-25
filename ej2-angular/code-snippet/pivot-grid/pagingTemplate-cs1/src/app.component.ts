@@ -70,12 +70,10 @@ export class AppComponent implements OnInit {
 
     rowPageClick(args: any) {
         this.pivotGridObj!.pageSettings.currentRowPage = args.currentPage;
-        this.pivotGridObj?.refreshData();
     }
 
     columnPageClick(args: any) {
         this.pivotGridObj!.pageSettings.currentColumnPage = args.currentPage;
-        this.pivotGridObj?.refreshData();
     }
 
     ngOnInit(): void {

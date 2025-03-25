@@ -9,3 +9,14 @@
 @import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-ribbon/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
+
+.action_btn {
+    margin: 0px 3px;
+    border: none;
+    color: #ffffff;
+    background-color: #0d6efd;
+}
+  
+#undo, #redo{
+    padding: 0px 3px ;
+}

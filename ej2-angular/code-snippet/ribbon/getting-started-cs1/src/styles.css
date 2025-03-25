@@ -9,3 +9,34 @@
 @import 'node_modules/@syncfusion/ej2-navigations/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-ribbon/styles/material.css';
 @import 'node_modules/@syncfusion/ej2-angular-base/styles/material.css';
+
+/* Represents the styles for ribbonTemplate */
+.ribbonTemplate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ribbonTemplate.Large {
+  flex-direction: column;
+}
+
+.ribbonTemplate.Large .e-icons {
+  font-size: 35px;
+}
+
+.ribbonTemplate.Medium .e-icons,
+.ribbonTemplate.Small .e-icons{
+  font-size: 20px;
+  margin: 15px 5px;
+}
+
+.ribbonTemplate.Small .text {
+  display:none;
+}
+
+/* Represents the styles for Ribbon group */
+.font-group .e-ribbon-group-content {
+  justify-content: center;
+}

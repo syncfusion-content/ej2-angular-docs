@@ -31,7 +31,7 @@ export class AppComponent {
     crossDomain: true
 });
   public mentionTarget: string = '#mentionElement';
-  public query: Query = new Query().select(['FirstName', 'EmployeeID']).take(7);
+  public query: Query = new Query().select(['FirstName', 'EmployeeID']).take(7).requiresCount();
   public fields: Object = { text: 'FirstName', value: 'EmployeeID' };
   public popupWidth: string = '250px';
 }

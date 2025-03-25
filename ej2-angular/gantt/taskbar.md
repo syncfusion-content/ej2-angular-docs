@@ -172,6 +172,22 @@ A baseline tooltip can be customized using the [`tooltipSettings.baseline`](http
   
 {% previewsample "page.domainurl/samples/gantt/tooltip/baseline-cs1" %}
 
+### Timeline tooltip
+
+A timeline tooltip can be customized using the [`tooltipSettings.timeline`](https://ej2.syncfusion.com/angular/documentation/api/gantt/tooltipSettings/#timeline) property. This allows modifying the appearance and content of the tooltip displayed over the timeline. The following code example shows how to customize the timeline tooltip in Gantt.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/gantt/tooltip/timeline-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/gantt/tooltip/timeline-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/gantt/tooltip/timeline-cs1" %}
+
 ## Tooltip Touch interaction
 
 To perform `touch and hold` action on a element, refer to [`tooltip popup`](tooltip/#tooltip).
