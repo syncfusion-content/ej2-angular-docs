@@ -66,14 +66,14 @@ You can replace bookmark content without removing the bookmark start and end for
 
 ```csharp
 this.container.documentEditor.selection.selectBookmark("Bookmark1", true);
-this.container.documentEditor.editor.insertText('Hello World')
+this.container.documentEditor.editor.insertText('Hello World');
 ```
 
 You can replace content by removing the bookmark start and end, thus the bookmark content can't be tracked in future.
 
 ```csharp
 this.container.documentEditor.selection.selectBookmark("Bookmark1");
-this.container.documentEditor.editor.insertText('Hello World')
+this.container.documentEditor.editor.insertText('Hello World');
 ```
 
 ## Show or Hide bookmark

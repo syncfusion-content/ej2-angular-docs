@@ -21,40 +21,38 @@ The Footnotes and endnotes are both ways of adding extra bits of information to 
 Document Editor exposes an API to insert footnotes at cursor position programmatically or can be inserted to the end of selected text.
 
 ```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor';
+
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
-    DocumentEditorComponent, PrintService, SfdtExportService, WordExportService, TextExportService, SelectionService,
-    SearchService, EditorService, ImageResizerService, EditorHistoryService, ContextMenuService,
-    OptionsPaneService, HyperlinkDialogService, TableDialogService, BookmarkDialogService, TableOfContentsDialogService,
-    PageSetupDialogService, StyleDialogService, ListDialogService, ParagraphDialogService, BulletsAndNumberingDialogService,
-    FontDialogService, TablePropertiesDialogService, BordersAndShadingDialogService, TableOptionsDialogService,
-    CellOptionsDialogService, StylesDialogService
+  DocumentEditorComponent,
+  EditorService,
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-container',
-      template: `<div><button ejs-button (click)="insertFootnote()" >Insert Footnote</button><ejs-documenteditor  id="container" serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" style="display:block;height:400px" [isReadOnly]=false [enableSelection]=true
-      [enablePrint]=true [enableSfdtExport]=true [enableWordExport]=true [enableOptionsPane]=true [enableContextMenu]=true
-      [enableHyperlinkDialog]=true [enableBookmarkDialog]=true [enableTableOfContentsDialog]=true [enableSearch]=true
-      [enableParagraphDialog]=true [enableListDialog]=true [enableTablePropertiesDialog]=true [enableBordersAndShadingDialog]=true
-      [enablePageSetupDialog]=true [enableStyleDialog]=true [enableFontDialog]=true [enableTableOptionsDialog]=true
-      [enableTableDialog]=true [enableImageResizer]=true [enableEditor]=true [enableEditorHistory]=true>
-      </ejs-documenteditor>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [PrintService, SfdtExportService, WordExportService, TextExportService, SelectionService, SearchService, EditorService,
-        ImageResizerService, EditorHistoryService, ContextMenuService, OptionsPaneService, HyperlinkDialogService, TableDialogService,
-        BookmarkDialogService, TableOfContentsDialogService, PageSetupDialogService, StyleDialogService, ListDialogService,
-        ParagraphDialogService, BulletsAndNumberingDialogService, FontDialogService, TablePropertiesDialogService,
-        BordersAndShadingDialogService, TableOptionsDialogService, CellOptionsDialogService, StylesDialogService]
+  imports: [ButtonModule, DocumentEditorAllModule],
+
+  standalone: true,
+  selector: 'app-container',
+  //specifies the template string for the DocumentEditorContainer component
+  template: `<div style="width:100%;"><button ejs-button (click)="insertFootnote()" >Insert Footnote</button>
+      <ejs-documenteditor #document_editor id="container" height="330px" style="display:block" [enableEditor]=true>
+    </ejs-documenteditor>
+      </div>`,
+  encapsulation: ViewEncapsulation.None,
+  providers: [EditorService],
 })
 export class AppComponent {
-    @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+  @ViewChild('document_editor')
+  public documentEditor?: DocumentEditorComponent;
 
-    public insertFootnote(): void {
-        //Insert foot note.
-        this.documentEditor.editor.insertFootnote();
-    }
+  public insertFootnote(): void {
+    //Insert foot note.
+    this.documentEditor?.editor.insertFootnote();
+  }
 }
 ```
 
@@ -63,41 +61,38 @@ export class AppComponent {
 Document Editor exposes an API to insert endnotes at cursor position programmatically or can be inserted to the end of selected text.
 
 ```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor';
+
+import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
-    DocumentEditorComponent, PrintService, SfdtExportService, WordExportService, TextExportService, SelectionService,
-    SearchService, EditorService, ImageResizerService, EditorHistoryService, ContextMenuService,
-    OptionsPaneService, HyperlinkDialogService, TableDialogService, BookmarkDialogService, TableOfContentsDialogService,
-    PageSetupDialogService, StyleDialogService, ListDialogService, ParagraphDialogService, BulletsAndNumberingDialogService,
-    FontDialogService, TablePropertiesDialogService, BordersAndShadingDialogService, TableOptionsDialogService,
-    CellOptionsDialogService, StylesDialogService
+  DocumentEditorComponent,
+  EditorService,
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-container',
-      //specifies the template string for the Document Editor component
-      template: `<div><button ejs-button (click)="insertEndnote()" >Insert Footnote</button><ejs-documenteditor  id="container" serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" style="display:block;height:400px" [isReadOnly]=false [enableSelection]=true
-      [enablePrint]=true [enableSfdtExport]=true [enableWordExport]=true [enableOptionsPane]=true [enableContextMenu]=true
-      [enableHyperlinkDialog]=true [enableBookmarkDialog]=true [enableTableOfContentsDialog]=true [enableSearch]=true
-      [enableParagraphDialog]=true [enableListDialog]=true [enableTablePropertiesDialog]=true [enableBordersAndShadingDialog]=true
-      [enablePageSetupDialog]=true [enableStyleDialog]=true [enableFontDialog]=true [enableTableOptionsDialog]=true
-      [enableTableDialog]=true [enableImageResizer]=true [enableEditor]=true [enableEditorHistory]=true>
-      </ejs-documenteditor>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [PrintService, SfdtExportService, WordExportService, TextExportService, SelectionService, SearchService, EditorService,
-          ImageResizerService, EditorHistoryService, ContextMenuService, OptionsPaneService, HyperlinkDialogService, TableDialogService,
-          BookmarkDialogService, TableOfContentsDialogService, PageSetupDialogService, StyleDialogService, ListDialogService,
-          ParagraphDialogService, BulletsAndNumberingDialogService, FontDialogService, TablePropertiesDialogService,
-          BordersAndShadingDialogService, TableOptionsDialogService, CellOptionsDialogService, StylesDialogService]
+  imports: [ButtonModule, DocumentEditorAllModule],
+
+  standalone: true,
+  selector: 'app-container',
+  //specifies the template string for the DocumentEditorContainer component
+  template: `<div style="width:100%;"><button ejs-button (click)="insertEndnote()" >Insert Endnote</button>
+      <ejs-documenteditor #document_editor id="container" height="330px" style="display:block" [enableEditor]=true>
+    </ejs-documenteditor>
+      </div>`,
+  encapsulation: ViewEncapsulation.None,
+  providers: [EditorService],
 })
 export class AppComponent {
-    @ViewChild('document_editor')
-    public documentEditor: DocumentEditorComponent;
+  @ViewChild('document_editor')
+  public documentEditor?: DocumentEditorComponent;
 
-    public insertEndnote(): void {
-        //Insert end note.
-        this.documentEditor.editor.insertEndnote();
-    }
+  public insertEndnote(): void {
+    //Insert end note.
+    this.documentEditor?.editor.insertEndnote();
+  }
 }
 ```
 

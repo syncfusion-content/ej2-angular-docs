@@ -127,6 +127,24 @@ Using the [`enableScrollbar`](https://ej2.syncfusion.com/angular/documentation/a
   
 {% previewsample "page.domainurl/samples/chart/user-interaction/scrollbar-cs1" %}
 
+### Position
+The [`position`](https://ej2.syncfusion.com/angular/documentation/api/chart/scrollbarSettings/#position) property allows users to specify their preferred scrollbar location. By default, both vertical and horizontal scrollbars are rendered near their respective axes. Using the customization options below, you can position the scrollbar as desired:
+
+* Default: `placeNextToAxisLine`.
+* Horizontal scrollbar: Available positions are `Top` and `Bottom`.
+* Vertical scrollbar: Available positions are `Left` and `Right`.
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/user-interaction/scrollbar-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/user-interaction/scrollbar-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/user-interaction/scrollbar-cs2" %}
+
 ## Enable animation
 
 Enable the [enableAnimation] property to experience smooth transitions when zooming in on the chart.

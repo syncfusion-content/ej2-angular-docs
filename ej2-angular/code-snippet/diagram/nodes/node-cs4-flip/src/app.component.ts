@@ -29,20 +29,20 @@ export class AppComponent {
   @ViewChild('diagram')
   public diagram?: DiagramComponent;
   public flipHorizontal() {
-    this.diagram.nodes[0].flip ^= FlipDirection.Horizontal;
-    this.diagram.dataBind();
+    (this.diagram as any).nodes[0].flip ^= FlipDirection.Horizontal;
+    (this.diagram as any).dataBind();
   }
   public flipVertical() {
-    this.diagram.nodes[0].flip ^= FlipDirection.Vertical;
-    this.diagram.dataBind();
+    (this.diagram as any).nodes[0].flip ^= FlipDirection.Vertical;
+    (this.diagram as any).dataBind();
   }
   public flipBoth() {
-    this.diagram.nodes[0].flip ^= FlipDirection.Both;
-    this.diagram.dataBind();
+    (this.diagram as any).nodes[0].flip ^= FlipDirection.Both;
+    (this.diagram as any).dataBind();
   }
   public flipNone() {
-    this.diagram.nodes[0].flip = FlipDirection.None;
-    this.diagram.dataBind();
+    (this.diagram as any).nodes[0].flip = FlipDirection.None;
+    (this.diagram as any).dataBind();
   }
   public getNodeDefaults(node: NodeModel): NodeModel {
     node.shape = {

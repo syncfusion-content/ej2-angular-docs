@@ -24,26 +24,49 @@ import {
   ToolbarService,
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
+
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
+
 @Component({
-      selector: 'app-root',
-      // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`,
-      providers: [ToolbarService],
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [enableToolbar]=true 
+      (selectionChange)="selectionChanges()"
+      >
+    </ejs-documenteditorcontainer>
+  `,
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')
-  public container: DocumentEditorContainerComponent;
+  public container?: DocumentEditorContainerComponent;
   ngOnInit(): void {}
   selectionChanges() {
     // Check whether selection is in header
-    if (this.container.documentEditor.selection.contextType.indexOf('Header') > -1 ||
+    if (
+      (
+        this.container as DocumentEditorContainerComponent
+      ).documentEditor.selection.contextType.indexOf('Header') > -1 ||
       // Check whether selection is in Footer
-      this.container.documentEditor.selection.contextType.indexOf('Footer') > -1 ) {
+      (
+        this.container as DocumentEditorContainerComponent
+      ).documentEditor.selection.contextType.indexOf('Footer') > -1
+    ) {
       // Change the document to read only mode
-      this.container.restrictEditing = true;
+      (
+        this.container as DocumentEditorContainerComponent
+      ).restrictEditing = true;
     } else {
       // Change the document to editable mode
-      this.container.restrictEditing = false;
+      (
+        this.container as DocumentEditorContainerComponent
+      ).restrictEditing = false;
     }
   }
 }
@@ -59,23 +82,42 @@ import {
   ToolbarService,
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
+
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
+
 @Component({
-      selector: 'app-root',
-      // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (selectionChange)="selectionChanges()"> </ejs-documenteditorcontainer>`,
-      providers: [ToolbarService],
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [enableToolbar]=true 
+      (selectionChange)="selectionChanges()"
+      >
+    </ejs-documenteditorcontainer>
+  `,
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')
-  public container: DocumentEditorContainerComponent;
+  public container?: DocumentEditorContainerComponent;
   ngOnInit(): void {}
   selectionChanges() {
     // Check whether selection is in header
-    if (this.container.documentEditor.selection.contextType.indexOf('Header') > -1 ||
+    if (
+      (
+        this.container as DocumentEditorContainerComponent
+      ).documentEditor.selection.contextType.indexOf('Header') > -1 ||
       // Check whether selection is in Footer
-      this.container.documentEditor.selection.contextType.indexOf('Footer') > -1 ) {
+      (
+        this.container as DocumentEditorContainerComponent
+      ).documentEditor.selection.contextType.indexOf('Footer') > -1
+    ) {
       // Close header Footer
-    this.container.documentEditor.selection.closeHeaderFooter();
+      this.container?.documentEditor.selection.closeHeaderFooter();
     }
   }
 }

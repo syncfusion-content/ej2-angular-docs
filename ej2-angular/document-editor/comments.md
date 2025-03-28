@@ -126,31 +126,48 @@ Document editor provides an option to protect and unprotect document using [`enf
 The following example code illustrates how to enforce and stop protection in Document editor container.
 
 ```typescript
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DocumentEditorContainerComponent, ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {
+  ToolbarService,
+  DocumentEditorContainerComponent,
+} from '@syncfusion/ej2-angular-documenteditor';
+import {
+  DocumentEditorContainerModule,
+} from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-container',
-      // specifies the template string for the Document Editor component
-      template: `<div><button ejs-button (click)="protectDocument()" >Protect</button>
-      <button ejs-button (click)="unProtectDocument()" >Unprotect</button>
-      <ejs-documenteditorcontainer #document_editor serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true> </ejs-documenteditorcontainer></div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [ToolbarService]
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `<div><button ejs-button (click)="protectDocument()" >Protect</button>
+  <button ejs-button (click)="unProtectDocument()" >Unprotect</button>
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [enableToolbar]="true">
+    </ejs-documenteditorcontainer>
+</div>
+  `,
 })
-export class AppComponent {
-    @ViewChild('document_editor')
-    public container: DocumentEditorContainerComponent;
+export class AppComponent implements OnInit {
+  @ViewChild('documenteditor_default')
+  public container?: DocumentEditorContainerComponent;
 
-    public protectDocument(): void {
-        //enforce protection
-        container.documentEditor.editor.enforceProtection('123', 'CommentsOnly');
-    }
+  ngOnInit(): void {}
+  public protectDocument(): void {
+    //enforce protection
+    this.container?.documentEditor.editor.enforceProtection(
+      '123',
+      'CommentsOnly'
+    );
+  }
 
-    public unProtectDocument(): void {
-        //stop the document protection
-        container.documentEditor.editor.stopProtection('123');
-    }
+  public unProtectDocument(): void {
+    //stop the document protection
+    this.container?.documentEditor.editor.stopProtection('123');
+  }
 }
 ```
 

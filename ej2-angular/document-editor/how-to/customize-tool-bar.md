@@ -20,46 +20,114 @@ Document Editor Container allows you to customize(add, show, hide, enable, and d
 * Enable, Disable -  Toolbar items can be enabled or disable using [`enableItems`](https://ej2.syncfusion.com/angular/documentation/api/document-editor-container/toolbar/#enableitems)
 
 ```typescript
-import { Component, ViewChild } from '@angular/core';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations'
-import { DocumentEditorContainerComponent, ToolbarService, CustomToolbarItemModel } from '@syncfusion/ej2-angular-documenteditor';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {
+  ToolbarService,
+  DocumentEditorContainerComponent,
+} from '@syncfusion/ej2-angular-documenteditor';
+import { ClickEventArgs } from '@syncfusion/ej2-navigations';
+import {
+  CustomToolbarItemModel,
+  DocumentEditorContainerModule,
+} from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-root',
-      template: '<ejs-documenteditorcontainer [height]="600px" [toolbarItems]=items (toolbarClick)="onToolbarClick($event)" #documenteditor_default style="display:block;" [enableToolbar]=true></ejs-documenteditorcontainer>',
-      styleUrls: ['./app.component.css'],
-      providers: [ToolbarService]
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [toolbarItems]="items" 
+      (toolbarClick)="onToolbarClick($event)" 
+      (created)="onCreate()" 
+      [enableToolbar]="true">
+    </ejs-documenteditorcontainer>
+  `,
 })
-export class AppComponent {
-    @ViewChild('documenteditor_default', { static: true })
-    container: DocumentEditorContainerComponent;
-    //Custom toolbat item.
-    public toolItem: CustomToolbarItemModel = {
-          prefixIcon: "e-de-ctnr-lock",
-          tooltipText: "Disable Image",
-          text: this.onWrapText("Disable Image"),
-          id: "Custom"
-    };
-    public items = [this.toolItem, 'Undo', 'Redo', 'Separator', 'Image', 'Table', 'Hyperlink', 'Bookmark', 'TableOfContents', 'Separator', 'Header', 'Footer', 'PageSetup', 'PageNumber', 'Break', 'InsertFootnote', 'InsertEndnote', 'Separator', 'Find', 'Separator', 'Comments', 'TrackChanges', 'Separator', 'LocalClipboard', 'RestrictEditing', 'Separator', 'FormFields', 'UpdateFields','ContentControl'];
-    public onToolbarClick(args: ClickEventArgs): void {
-        switch (args.item.id) {
-            case 'Custom':
-                //Disable image toolbar item.
-                this.container.toolbar.enableItems(4, false);
-                break;
+export class AppComponent implements OnInit {
+  @ViewChild('documenteditor_default')
+  public container?: DocumentEditorContainerComponent;
+
+  // Define custom toolbar item
+  public toolItem: CustomToolbarItemModel = {
+    prefixIcon: 'e-de-ctnr-lock',
+    tooltipText: 'Disable Image',
+    text: this.onWrapText('Disable Image'),
+    id: 'Custom',
+  };
+
+  // Define toolbar items array
+  public items = [
+    this.toolItem,
+    'Undo',
+    'Redo',
+    'Separator',
+    'Image',
+    'Table',
+    'Hyperlink',
+    'Bookmark',
+    'TableOfContents',
+    'Separator',
+    'Header',
+    'Footer',
+    'PageSetup',
+    'PageNumber',
+    'Break',
+    'InsertFootnote',
+    'InsertEndnote',
+    'Separator',
+    'Find',
+    'Separator',
+    'Comments',
+    'TrackChanges',
+    'Separator',
+    'LocalClipboard',
+    'RestrictEditing',
+    'Separator',
+    'FormFields',
+    'UpdateFields',
+    'ContentControl',
+  ];
+
+  ngOnInit(): void {}
+
+  // Called when the DocumentEditorContainer is created
+  onCreate() {
+    // Logic to handle the creation of the editor
+  }
+
+  // Event handler for toolbar clicks
+  onToolbarClick(args: ClickEventArgs): void {
+    switch (args.item.id) {
+      case 'Custom':
+        // Disable the image toolbar item
+        if (this.container) {
+          this.container.toolbar.enableItems(4, false);
         }
-    };
-    private onWrapText(text: string): string {
+        break;
+    }
+  }
+
+  // Wrap text with custom HTML
+  private onWrapText(text: string): string {
     let content: string = '';
-      const index: number = text.lastIndexOf(' ');
-  
-      if (index !== -1) {
-          content = text.slice(0, index) + "<div class='e-de-text-wrap'>" + text.slice(index + 1) + "</div>";
-      } else {
-          content = text;
-      }
-  
-      return content;
+    const index: number = text.lastIndexOf(' ');
+
+    if (index !== -1) {
+      content =
+        text.slice(0, index) +
+        "<div class='e-de-text-wrap'>" +
+        text.slice(index + 1) +
+        '</div>';
+    } else {
+      content = text;
+    }
+
+    return content;
   }
 }
 ```
