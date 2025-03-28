@@ -65,3 +65,23 @@ By default, the popup list width value is set as `auto`. Depending on the mentio
 You can customize the trigger character by using the [mentionChar](https://ej2.syncfusion.com/angular/documentation/api/mention/#mentionchar) property in the Mention component. The trigger character triggers the suggestion list to display in the target area.
 
 By default, the [mentionChar](https://ej2.syncfusion.com/angular/documentation/api/mention/#mentionchar) is `@`.
+
+## Leading Space Requirement
+
+The [requireLeadingSpace](https://ej2.syncfusion.com/angular/documentation/api/mention/#requireleadingspace) property in Mention controls whether a space is needed before triggering the Mention suggestion popup. 
+
+When set to `false`, the mention can be activated without a preceding space. When set to `true` , a space is required before the mention character to activate suggestions.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/mention/customization-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/mention/customization-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/mention/customization-cs2" %}
+
+![Leading Space Requirement](./images/required_leading_space.gif)

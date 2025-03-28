@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Retrieve the bookmark content as text in Angular Document editor component | Syncfusion
+title: Retrieve bookmark as text in Angular Document Editor | Syncfusion
 description: Learn here all about Retrieve the bookmark content as text in Syncfusion Angular Document editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-angular
 control: Retrieve the bookmark content as text 
@@ -24,29 +24,39 @@ import {
   ToolbarService,
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-      selector: 'app-root',
-      // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer>`,
-      providers: [ToolbarService],
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [enableToolbar]=true 
+      (created)="onCreate()">
+    </ejs-documenteditorcontainer>
+  `,
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')
-  public container: DocumentEditorContainerComponent;
+  public container?: DocumentEditorContainerComponent;
   ngOnInit(): void {}
-  onCreated() {
+  onCreate() {
     // To insert text in cursor position
-    this.container.documentEditor.editor.insertText('Document editor');
+    this.container?.documentEditor.editor.insertText('Document editor');
     // To select all the content in document
-    this.container.documentEditor.selection.selectAll();
+    this.container?.documentEditor.selection.selectAll();
     // Insert bookmark to selected content
-    this.container.documentEditor.editor.insertBookmark('Bookmark1');
+    this.container?.documentEditor.editor.insertBookmark('Bookmark1');
 
     // Provide your bookmark name to navigate to specific bookmark
-    this.container.documentEditor.selection.selectBookmark('Bookmark1');
+    this.container?.documentEditor.selection.selectBookmark('Bookmark1');
 
     // To get the selected content as text
-    let selectedContent = this.container.documentEditor.selection.text;
+    let selectedContent = this.container?.documentEditor.selection.text;
   }
 }
 ```
@@ -65,24 +75,34 @@ import {
   ToolbarService,
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-      selector: 'app-root',
-      // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer>`,
-      providers: [ToolbarService],
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [enableToolbar]=true 
+      (created)="onCreate()">
+    </ejs-documenteditorcontainer>
+  `,
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')
-  public container: DocumentEditorContainerComponent;
+  public container?: DocumentEditorContainerComponent;
   ngOnInit(): void {}
-  onCreated() {
+  onCreate() {
     // To insert text in cursor position
-    this.container.documentEditor.editor.insertText('Document editor');
+    this.container?.documentEditor.editor.insertText('Document editor');
     // To select all the content in document
-    this.container.documentEditor.selection.selectAll();
+    this.container?.documentEditor.selection.selectAll();
 
     // To get the content as text
-    let selectedContent: string = this.container.documentEditor.selection.text;
+    let selectedContent = this.container?.documentEditor.selection.text;
   }
 }
 ```
@@ -99,22 +119,32 @@ import {
   ToolbarService,
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-      selector: 'app-root',
-      // specifies the template string for the DocumentEditorContainer component
-      template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer>`,
-      providers: [ToolbarService],
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [enableToolbar]=true 
+      (created)="onCreate()">
+    </ejs-documenteditorcontainer>
+  `,
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')
-  public container: DocumentEditorContainerComponent;
+  public container?: DocumentEditorContainerComponent;
   ngOnInit(): void {}
-  onCreated() {
+  onCreate() {
     // To insert text in cursor position
-    this.container.documentEditor.editor.insertText('Document editor');
+    this.container?.documentEditor.editor.insertText('Document editor');
 
     // To get the content as SFDT
-    let selectedContent: string = this.container.documentEditor.serialize();
+    let selectedContent = this.container?.documentEditor.serialize();
   }
 }
 ```
@@ -131,26 +161,36 @@ import {
   ToolbarService,
   DocumentEditorContainerComponent,
 } from '@syncfusion/ej2-angular-documenteditor';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
 @Component({
-  selector: 'app-root',
-  // specifies the template string for the DocumentEditorContainer component
-  template: `<ejs-documenteditorcontainer #documenteditor_default serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" height="600px" style="display:block" [enableToolbar]=true (created)="onCreated()"> </ejs-documenteditorcontainer>`,
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
   providers: [ToolbarService],
+  template: `
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [enableToolbar]=true 
+      (created)="onCreate()">
+    </ejs-documenteditorcontainer>
+  `,
 })
 export class AppComponent implements OnInit {
   @ViewChild('documenteditor_default')
-  public container: DocumentEditorContainerComponent;
+  public container?: DocumentEditorContainerComponent;
   ngOnInit(): void {}
-  onCreated() {
+  onCreate() {
     // To navigate the selection to header
-    this.container.documentEditor.selection.goToHeader();
+    this.container?.documentEditor.selection.goToHeader();
     // To insert text in cursor position
-    this.container.documentEditor.editor.insertText('Document editor');
+    this.container?.documentEditor.editor.insertText('Document editor');
     // To select all the content in document
-    this.container.documentEditor.selection.selectAll();
+    this.container?.documentEditor.selection.selectAll();
 
     // To get the selected content as text
-    let selectedContent: string = this.container.documentEditor.selection.text;
+    let selectedContent = this.container?.documentEditor.selection.text;
   }
 }
 ```

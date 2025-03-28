@@ -365,6 +365,58 @@ By default, the scheduler will render the overlapping events based on the start 
 
 ![Overlapping Events](images/schedule-overlapping-events.png)
 
+## Preventing Overlapping Events
+
+By default, the scheduler displays overlapping events according to their start and end times. To prevent overlapping, you can set the [`allowOverlap`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowoverlap) property to `false`.
+
+When this property is set to `false`, any new or updated events that overlap with existing ones will trigger an overlap alert. The overlapping events will be collected in the [`overlapEvents`](https://ej2.syncfusion.com/angular/documentation/api/schedule/popupOpenEventArgs/#overlapevents) within the [`PopupOpenEventArgs`](https://ej2.syncfusion.com/angular/documentation/api/schedule/popupOpenEventArgs/).
+
+When the [`allowOverlap`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowoverlap) property is set to `false`, the scheduler behaves as follows:
+
+**Initial Load Behavior:**  Upon initial loading, the scheduler prioritizes non-overlapping events based on their duration and all-day status. Events with longer durations and those marked as all-day receive higher priority to ensure there are no overlaps.
+
+**Recurring Appointments:**  If there are conflicts within a recurring appointment series during the initial load, the scheduler will display all occurrences of the series, except for the conflicting instance.
+
+**Event Modifications:**  When a user edits, saves, or removes appointments, the scheduler checks for potential overlaps. If a conflict is detected, the action is blocked, and a conflict alert is displayed to the user to address the issue.
+
+**Dynamic Recurrence Series Creation or Editing:**  When a user creates or edits a recurrence series dynamically, the scheduler will prevent any occurrences of the series from being added if a conflict is found within the series.
+
+The following code example demonstrates how to enable the [`allowOverlap`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowoverlap) property.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/schedule/overlap-cs1/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/schedule/overlap-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/schedule/overlap-cs1" %}
+
+**Limitations**
+
+The [`allowOverlap`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#allowoverlap) property checks for event overlaps only within the currently visible date range. Events scheduled outside the rendered date range are not included in the overlap check by default.
+
+If you need to check for overlaps with events outside the visible date range, you can leverage the [`promise`](https://ej2.syncfusion.com/angular/documentation/api/schedule/actionBeginEventArgs/#promise) field within the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#actionbegin) event to validate all events before proceeding. By implementing a custom validation method inside the [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#actionbegin) event, you can assign the result (a boolean) to the [`promise`](https://ej2.syncfusion.com/angular/documentation/api/schedule/actionBeginEventArgs/#promise) field. If the result is `true`, the action (e.g., adding or saving the event) will proceed; if `false`, the action will be blocked.
+
+Additionally, you can use the public method [`openOverlapAlert`](https://ej2.syncfusion.com/angular/documentation/api/schedule/#openoverlapalert) to show an alert popup whenever an overlap occurs and the result is `false`.
+
+The following code example demonstrates how to check for overlaps when an event is added. If an overlap is found, the event won't be added, and an alert will be shown.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/schedule/overlap-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/schedule/overlap-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/schedule/overlap-cs2" %}
+
 ## Drag and drop appointments
 
 Appointments can be rescheduled to any time by dragging and dropping them onto the desired location. To work with drag and drop functionality, it is necessary to inject the module `DragAndDrop` and make sure that [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/schedule#allowdraganddrop) is set to `true` on Scheduler. In mobile mode, you can drag and drop the events by tap holding an event and dropping them on to the desired location.
@@ -923,6 +975,27 @@ After enabling the default tooltip, it is possible to customize the display of n
 ![Tooltip](images/schedule-appointments-tooltip-template.png)
 
 > All the field names that are mapped from the Scheduler dataSource to the appropriate field properties such as subject, description, location, startTime and endTime within the [`eventSettings`](https://ej2.syncfusion.com/angular/documentation/api/schedule/eventSettings/) can be accessed within the template.
+
+### How to prevent the tooltip for specific events
+
+By using the [`tooltipOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#tooltipOpen) event, you can selectively control when tooltips appear, based on appointment data or other custom conditions.
+
+To prevent a tooltip from appearing for certain events, you can set the `cancel` property to `true` within the [`tooltipOpen`](https://ej2.syncfusion.com/angular/documentation/api/schedule#tooltipOpen) event. This ensures that tooltips are only displayed for the relevant appointments, improving user experience by minimizing unnecessary distractions.
+
+{% tabs %}
+{% highlight html tabtitle="app.component.html" %}
+{% include code-snippet/schedule/tooltip-cs2/src/app.component.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/schedule/tooltip-cs2/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/schedule/tooltip-cs2/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/schedule/tooltip-cs2" %}
 
 ## Appointment filtering
 

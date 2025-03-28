@@ -82,7 +82,7 @@ this.documentEditor.selection.sectionFormat.footerDistace = 36;
 Move the selection to the document body from header or footer region by double clicking or tapping the document area. You can also perform this by using the following sample code.
 
 ```typescript
-this.documentEditor.selection.closeHeaderFooter()
+this.documentEditor.selection.closeHeaderFooter();
 ```
 
 ## See Also

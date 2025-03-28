@@ -113,31 +113,50 @@ This dialog allows creating and inserting table of contents at cursor position. 
 To open this dialog, refer to the following example.
 
 ```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor';
+
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
-    DocumentEditorComponent, SfdtExportService, SelectionService, TableOfContentsDialogService, EditorService, EditorHistoryService
+  DocumentEditorComponent,
+  SfdtExportService,
+  SelectionService,
+  TableOfContentsDialogService,
+  EditorService,
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-container',
-      //specifies the template string for the Document Editor component
-      template: `<div>
+  imports: [ButtonModule, DocumentEditorAllModule],
+
+  standalone: true,
+  selector: 'app-container',
+  //specifies the template string for the Document Editor component
+  template: `<div>
       <button ejs-button (click)="btnClick()" >Show Dialog</button>
       <ejs-documenteditor #document_editor  id="container" height="330px" style="display:block" [isReadOnly]=false [enableSfdtExport]=true
-      [enableTableOfContentsDialog]=true [enableEditor]=true [enableEditorHistory]=true>
+      [enableTableOfContentsDialog]=true [enableEditor]=true>
       </ejs-documenteditor>
       </div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [SfdtExportService, SelectionService, TableOfContentsDialogService, EditorService, EditorHistoryService]
+  encapsulation: ViewEncapsulation.None,
+  providers: [
+    SfdtExportService,
+    SelectionService,
+    EditorService,
+    TableOfContentsDialogService,
+  ],
 })
 export class AppComponent {
-    @ViewChild('document_editor')
-    public documentEditor?: DocumentEditorComponent;
+  @ViewChild('document_editor')
+  public documentEditor?: DocumentEditorComponent;
 
-    public btnClick(): void {
-        //Open table of contents dialog.
-        (this.documentEditor as DocumentEditorComponent).showDialog('TableOfContents');
-    }
+  public btnClick(): void {
+    //Open table of contents dialog.
+    (this.documentEditor as DocumentEditorComponent).showDialog(
+      'TableOfContents'
+    );
+  }
 }
 ```
 
@@ -146,31 +165,48 @@ export class AppComponent {
 This dialog allows managing the styles in a document. It will display all the styles in the document with options to modify the properties of the existing style or create new style with the help of ‘Style dialog’. Refer to the following example.
 
 ```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor';
+
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
-    DocumentEditorComponent, SfdtExportService, SelectionService, StyleDialogService, EditorService, EditorHistoryService
+  DocumentEditorComponent,
+  SfdtExportService,
+  SelectionService,
+  StyleDialogService,
+  EditorService,
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-container',
-      //specifies the template string for the Document Editor component
-      template: `<div>
+  imports: [ButtonModule, DocumentEditorAllModule],
+
+  standalone: true,
+  selector: 'app-container',
+  //specifies the template string for the Document Editor component
+  template: `<div>
       <button ejs-button (click)="btnClick()" >Show Dialog</button>
       <ejs-documenteditor #document_editor  id="container" height="330px" style="display:block" [isReadOnly]=false [enableSfdtExport]=true
-      [enableStyleDialog]=true [enableEditor]=true [enableEditorHistory]=true>
+      [enableStyleDialog]=true [enableEditor]=true>
       </ejs-documenteditor>
       </div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [SfdtExportService, SelectionService, StyleDialogService, EditorService, EditorHistoryService]
+  encapsulation: ViewEncapsulation.None,
+  providers: [
+    SfdtExportService,
+    SelectionService,
+    EditorService,
+    StyleDialogService,
+  ],
 })
 export class AppComponent {
-    @ViewChild('document_editor')
-    public documentEditor?: DocumentEditorComponent;
+  @ViewChild('document_editor')
+  public documentEditor?: DocumentEditorComponent;
 
-    public btnClick(): void {
-        //Open styles dialog.
-        (this.documentEditor as DocumentEditorComponent).showDialog('Styles');
-    }
+  public btnClick(): void {
+    //Open styles dialog.
+    (this.documentEditor as DocumentEditorComponent).showDialog('Styles');
+  }
 }
 ```
 
@@ -181,31 +217,48 @@ You can directly use this dialog for modifying any existing style or add new sty
 To open this dialog, refer to the following example.
 
 ```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor';
+
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
-    DocumentEditorComponent, SfdtExportService, SelectionService, StyleDialogService, EditorService, EditorHistoryService
+  DocumentEditorComponent,
+  SfdtExportService,
+  SelectionService,
+  StyleDialogService,
+  EditorService,
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-container',
-      //specifies the template string for the Document Editor component
-      template: `<div>
+  imports: [ButtonModule, DocumentEditorAllModule],
+
+  standalone: true,
+  selector: 'app-container',
+  //specifies the template string for the Document Editor component
+  template: `<div>
       <button ejs-button (click)="btnClick()" >Show Dialog</button>
       <ejs-documenteditor #document_editor  id="container" height="330px" style="display:block" [isReadOnly]=false [enableSfdtExport]=true
-      [enableStyleDialog]=true [enableEditor]=true [enableEditorHistory]=true>
+      [enableStyleDialog]=true [enableEditor]=true>
       </ejs-documenteditor>
       </div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [SfdtExportService, SelectionService, StyleDialogService, EditorService, EditorHistoryService]
+  encapsulation: ViewEncapsulation.None,
+  providers: [
+    SfdtExportService,
+    SelectionService,
+    EditorService,
+    StyleDialogService,
+  ],
 })
 export class AppComponent {
-    @ViewChild('document_editor')
-    public documentEditor?: DocumentEditorComponent;
+  @ViewChild('document_editor')
+  public documentEditor?: DocumentEditorComponent;
 
-    public btnClick(): void {
-        //Open style dialog.
-        (this.documentEditor as DocumentEditorComponent).showDialog('Style');
-    }
+  public btnClick(): void {
+    //Open style dialog.
+    (this.documentEditor as DocumentEditorComponent).showDialog('Style');
+  }
 }
 ```
 
@@ -216,31 +269,48 @@ This dialog allows creating a new list or modifying existing lists in the docume
 To open this dialog, refer to the following example.
 
 ```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor';
+
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
-    DocumentEditorComponent, SfdtExportService, SelectionService, ListDialogService, EditorService
+  DocumentEditorComponent,
+  SfdtExportService,
+  SelectionService,
+  ListDialogService,
+  EditorService,
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-container',
-      //specifies the template string for the Document Editor component
-      template: `<div>
+  imports: [ButtonModule, DocumentEditorAllModule],
+
+  standalone: true,
+  selector: 'app-container',
+  //specifies the template string for the Document Editor component
+  template: `<div>
       <button ejs-button (click)="btnClick()" >Show Dialog</button>
       <ejs-documenteditor #document_editor  id="container" height="330px" style="display:block" [isReadOnly]=false [enableSfdtExport]=true
       [enableListDialog]=true [enableEditor]=true>
       </ejs-documenteditor>
       </div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [SfdtExportService, SelectionService, ListDialogService, EditorService]
+  encapsulation: ViewEncapsulation.None,
+  providers: [
+    SfdtExportService,
+    SelectionService,
+    EditorService,
+    ListDialogService,
+  ],
 })
 export class AppComponent {
-    @ViewChild('document_editor')
-    public documentEditor?: DocumentEditorComponent;
+  @ViewChild('document_editor')
+  public documentEditor?: DocumentEditorComponent;
 
-    public btnClick(): void {
-        //Open list dialog.
-        (this.documentEditor as DocumentEditorComponent).showDialog('List');
-    }
+  public btnClick(): void {
+    //Open list dialog.
+    (this.documentEditor as DocumentEditorComponent).showDialog('List');
+  }
 }
 ```
 
@@ -251,31 +321,50 @@ This dialog allows customizing the border style, border width, and background co
 To open this dialog, refer to the following example.
 
 ```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor';
+
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
-    DocumentEditorComponent, SfdtExportService, SelectionService, BordersAndShadingDialogService, EditorService
+  DocumentEditorComponent,
+  SfdtExportService,
+  SelectionService,
+  BordersAndShadingDialogService,
+  EditorService,
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-container',
-      //specifies the template string for the Document Editor component
-      template: `<div>
+  imports: [ButtonModule, DocumentEditorAllModule],
+
+  standalone: true,
+  selector: 'app-container',
+  //specifies the template string for the Document Editor component
+  template: `<div>
       <button ejs-button (click)="btnClick()" >Show Dialog</button>
       <ejs-documenteditor #document_editor  id="container" height="330px" style="display:block" [isReadOnly]=false [enableSfdtExport]=true
       [enableBordersAndShadingDialog]=true [enableEditor]=true>
       </ejs-documenteditor>
       </div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [SfdtExportService, SelectionService, BordersAndShadingDialogService, EditorService]
+  encapsulation: ViewEncapsulation.None,
+  providers: [
+    SfdtExportService,
+    SelectionService,
+    EditorService,
+    BordersAndShadingDialogService,
+  ],
 })
 export class AppComponent {
-    @ViewChild('document_editor')
-    public documentEditor?: DocumentEditorComponent;
+  @ViewChild('document_editor')
+  public documentEditor?: DocumentEditorComponent;
 
-    public btnClick(): void {
-        //Open borders and shading dialog.
-        (this.documentEditor as DocumentEditorComponent).showDialog('BordersAndShading');
-    }
+  public btnClick(): void {
+    //Open borders and shading dialog.
+    (this.documentEditor as DocumentEditorComponent).showDialog(
+      'BordersAndShading'
+    );
+  }
 }
 ```
 
@@ -286,33 +375,50 @@ This dialog allows customizing the default cell margins and spacing between each
 To open this dialog, refer to the following example.
 
 ```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor';
+
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
-    DocumentEditorComponent, SfdtExportService, SelectionService, TableOptionsDialogService, TablePropertiesDialogService, EditorService, EditorHistoryService
+  DocumentEditorComponent,
+  SfdtExportService,
+  SelectionService,
+  TableOptionsDialogService,
+  EditorService,
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-container',
-      //specifies the template string for the Document Editor component
-      template: `<div>
+  imports: [ButtonModule, DocumentEditorAllModule],
+
+  standalone: true,
+  selector: 'app-container',
+  //specifies the template string for the Document Editor component
+  template: `<div>
       <button ejs-button (click)="btnClick()" >Show Dialog</button>
-      <ejs-documenteditor #document_editor  id="container" height="330px" style="display:block" [isReadOnly]=false [enableSfdtExport]=true
-      [enableTableOptionsDialog]=true [enableTablePropertiesDialog]=true [enableEditor]=true [enableEditorHistory]=true (created)="onCreate()" >
+      <ejs-documenteditor #document_editor  id="container" height="330px" style="display:block" [isReadOnly]=false (created)="onCreate()" [enableSfdtExport]=true
+[enableTableOptionsDialog]=true [enableEditor]=true>
       </ejs-documenteditor>
       </div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [SfdtExportService, SelectionService, TableOptionsDialogService, TablePropertiesDialogService, EditorService, EditorHistoryService]
+  encapsulation: ViewEncapsulation.None,
+  providers: [
+    SfdtExportService,
+    SelectionService,
+    EditorService,
+    TableOptionsDialogService,
+  ],
 })
 export class AppComponent {
-    @ViewChild('document_editor')
-    public documentEditor?: DocumentEditorComponent;
-    onCreate():void{
-        (this.documentEditor as DocumentEditorComponent).editor.insertTable(2,2);
-    }
-    public btnClick(): void {
-        //Open table options dialog.
-        (this.documentEditor as DocumentEditorComponent).showDialog('TableOptions');
-    }
+  @ViewChild('document_editor')
+  public documentEditor?: DocumentEditorComponent;
+  onCreate(): void {
+    (this.documentEditor as DocumentEditorComponent).editor.insertTable(2, 2);
+  }
+  public btnClick(): void {
+    //Open table options dialog.
+    (this.documentEditor as DocumentEditorComponent).showDialog('TableOptions');
+  }
 }
 ```
 
@@ -323,33 +429,52 @@ This dialog allows customizing the table, row, and cell properties of the select
 To open this dialog, refer to the following example.
 
 ```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
+import { DocumentEditorAllModule } from '@syncfusion/ej2-angular-documenteditor';
+
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
 import {
-    DocumentEditorComponent, SfdtExportService, SelectionService, TableOptionsDialogService, TablePropertiesDialogService, EditorService, EditorHistoryService
+  DocumentEditorComponent,
+  SfdtExportService,
+  SelectionService,
+  TablePropertiesDialogService,
+  EditorService,
 } from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-      selector: 'app-container',
-      //specifies the template string for the Document Editor component
-      template: `<div>
+  imports: [ButtonModule, DocumentEditorAllModule],
+
+  standalone: true,
+  selector: 'app-container',
+  //specifies the template string for the Document Editor component
+  template: `<div>
       <button ejs-button (click)="btnClick()" >Show Dialog</button>
-      <ejs-documenteditor #document_editor  id="container" height="330px" style="display:block" [isReadOnly]=false [enableSfdtExport]=true
-      [enableTablePropertiesDialog]=true [enableEditor]=true [enableEditorHistory]=true (created)="onCreate()" >
+      <ejs-documenteditor #document_editor  id="container" height="330px" style="display:block" [isReadOnly]=false (created)="onCreate()" [enableSfdtExport]=true
+      [enableTablePropertiesDialog]=true [enableEditor]=true>
       </ejs-documenteditor>
       </div>`,
-      encapsulation: ViewEncapsulation.None,
-      providers: [SfdtExportService, SelectionService, TableOptionsDialogService, TablePropertiesDialogService, EditorService, EditorHistoryService]
+  encapsulation: ViewEncapsulation.None,
+  providers: [
+    SfdtExportService,
+    SelectionService,
+    EditorService,
+    TablePropertiesDialogService,
+  ],
 })
 export class AppComponent {
-    @ViewChild('document_editor')
-    public documentEditor?: DocumentEditorComponent;
-    onCreate():void{
-        (this.documentEditor as DocumentEditorComponent).editor.insertTable(2,2);
-    }
-    public btnClick(): void {
-        //open table properties dialog.
-        (this.documentEditor as DocumentEditorComponent).showDialog('TableProperties');
-    }
+  @ViewChild('document_editor')
+  public documentEditor?: DocumentEditorComponent;
+  onCreate(): void {
+    (this.documentEditor as DocumentEditorComponent).editor.insertTable(2, 2);
+  }
+  public btnClick(): void {
+    //open table properties dialog.
+    (this.documentEditor as DocumentEditorComponent).showDialog(
+      'TableProperties'
+    );
+  }
 }
 ```
 

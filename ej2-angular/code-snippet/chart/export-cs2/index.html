@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EJ2 Animation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    
+<meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+
+</head>
+
+<body style="margin-top: 125px">
+    <app-container>
+        <div id='loader'>Loading....</div>
+    </app-container>
+    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" version="1.1">
+		<defs>
+			<pattern id="chess" x="0" y="0" patternUnits='userSpaceOnUse' width="20" height="20">
+				<rect width='20' height='20' fill='#fff' />
+				<rect width='10' height='10' fill='#ed7d31' />
+				<rect x='10' y='10' width='10' height='10' fill='#ed7d31' />
+			</pattern>
+			<pattern id="cross" x="0" y="0" patternUnits='userSpaceOnUse' width="8" height="8">
+				<rect width='8' height='8' fill='#4472c4' />
+				<path d='M0 0L8 8ZM8 0L0 8Z' stroke-width='1' stroke='white' />
+			</pattern>
+			<pattern id="circle" x="0" y="0" patternUnits='userSpaceOnUse' width="9" height="9">
+				<rect fill="#FFFFFF" width="9" height="9" />
+				<circle fill="#f7ce69" cx="5.125" cy="3.875" r="3.625" />
+			</pattern>
+			<pattern id="rectangle" x="0" y="0" patternUnits='userSpaceOnUse' width="12" height="12">
+				<rect fill="#FFFFFF" width="12" height="11" />
+				<rect x="1" y="2" fill="#404041" width="4" height="9" />
+				<rect x="7" y="2" fill="#404041" width="4" height="9" />
+			</pattern>
+			<pattern id="line" x="0" y="0" patternUnits='userSpaceOnUse' width="12" height="12">
+				<line fill="none" stroke="#7ddf1e" stroke-miterlimit="10" x1="0" y1="1.5" x2="10" y2="1.5" />
+				<line fill="none" stroke="#7ddf1e" stroke-miterlimit="10" x1="0" y1="5.5" x2="10" y2="5.5" />
+				<line fill="none" stroke="#7ddf1e" stroke-miterlimit="10" x1="0" y1="9.5" x2="10" y2="9.5" />
+			</pattern>
+		</defs>
+	</svg>
+</body>
+
+</html>

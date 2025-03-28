@@ -34,7 +34,7 @@ this.documentEditor.selection.paragraphFormat.firstLineIndent= 24;
 You can increase the left indent of selected paragraphs by a factor of 36 points using the following sample code.
 
 ```typescript
-this.documentEditor.editor.increaseIndent()
+this.documentEditor.editor.increaseIndent();
 ```
 
 ## Decrease indent
@@ -42,7 +42,7 @@ this.documentEditor.editor.increaseIndent()
 You can decrease the left indent of selected paragraphs by a factor of 36 points using the following sample code.
 
 ```typescript
-this.documentEditor.editor.decreaseIndent()
+this.documentEditor.editor.decreaseIndent();
 ```
 
 ## Text alignment

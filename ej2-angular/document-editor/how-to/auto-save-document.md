@@ -17,65 +17,73 @@ The following example illustrates how to auto save the document in server.
 * In the client-side, using content change event, we can automatically save the edited content in regular intervals of time. Based on `contentChanged` boolean, the document send as Docx format to server-side using [`saveAsBlob`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/#saveasblob) method.
 
 ```typescript
-/**
- * Add below codes in app.component.html file
- */
- <ejs-documenteditorcontainer #documenteditor_default [enableToolbar]=true (created)="onCreate()"
-                (contentChange)="onContentChange()" height="600px" style="display:block;"></ejs-documenteditorcontainer>
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {
+  ToolbarService,
+  DocumentEditorContainerComponent,
+} from '@syncfusion/ej2-angular-documenteditor';
+import { DocumentEditorContainerModule } from '@syncfusion/ej2-angular-documenteditor';
 
-/**
- * Add below codes in app.component.ts file
- */
 @Component({
-      selector: 'app-root',
-      templateUrl: 'app.component.html',
-      encapsulation: ViewEncapsulation.None,
-      providers: [ToolbarService]
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
+  template: `
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      [enableToolbar]=true 
+      (created)="onCreate()"
+      (contentChange)="onContentChange()">
+    </ejs-documenteditorcontainer>
+  `,
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  @ViewChild('documenteditor_default')
+  public container?: DocumentEditorContainerComponent;
+  ngOnInit(): void {}
+  public contentChanged: boolean | undefined;
+  onCreate(): void {
+    (this.container as DocumentEditorContainerComponent).serviceUrl =
+      'https://services.syncfusion.com/angular/production/api/documenteditor/';
 
-    @ViewChild('documenteditor_default')
-    public container: DocumentEditorContainerComponent;
-    contentChanged: boolean;
-
-      onCreate(): void {
-          this.container.serviceUrl = 'https://services.syncfusion.com/angular/production/api/documenteditor/';
-
-          setInterval(() => {
-              if (this.contentChanged) {
-                  //You can save the document as below
-                  this. container.documentEditor.saveAsBlob('Docx').then((blob: Blob) => {
-                      console.log('Saved sucessfully');
-                      let exportedDocument: Blob = blob;
-                      //Now, save the document where ever you want.
-                      let formData: FormData = new FormData();
-                      formData.append('fileName', 'sample.docx');
-                      formData.append('data', exportedDocument);
-                      /* tslint:disable */
-                      var req = new XMLHttpRequest();
-                      // Replace your running Url here
-                      req.open(
-                        'POST',
-                        'http://localhost:62869/api/documenteditor/AutoSave',
-                        true
-                      );
-                      req.onreadystatechange = () => {
-                        if (req.readyState === 4) {
-                          if (req.status === 200 || req.status === 304) {
-                            console.log('Saved sucessfully');
-                          }
-                        }
-                      };
-                      req.send(formData);
-                    });
-                    this.contentChanged = false;
-                  }
-                }, 1000);
+    setInterval(() => {
+      if (this.contentChanged) {
+        //You can save the document as below
+        this.container?.documentEditor.saveAsBlob('Docx').then((blob: Blob) => {
+          console.log('Saved sucessfully');
+          let exportedDocument: Blob = blob;
+          //Now, save the document where ever you want.
+          let formData: FormData = new FormData();
+          formData.append('fileName', 'sample.docx');
+          formData.append('data', exportedDocument);
+          /* tslint:disable */
+          var req = new XMLHttpRequest();
+          // Replace your running Url here
+          req.open(
+            'POST',
+            'http://localhost:62869/api/documenteditor/AutoSave',
+            true
+          );
+          req.onreadystatechange = () => {
+            if (req.readyState === 4) {
+              if (req.status === 200 || req.status === 304) {
+                console.log('Saved sucessfully');
+              }
+            }
+          };
+          req.send(formData);
+        });
+        this.contentChanged = false;
       }
+    }, 1000);
+  }
 
-      onContentChange(): void {
-          this.contentChanged = true;
-      }
+  onContentChange(): void {
+    this.contentChanged = true;
+  }
 }
 ```
 

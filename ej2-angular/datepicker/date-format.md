@@ -53,3 +53,23 @@ The following example demonstrates how to parse the date value and format the da
 {% endtabs %}
   
 {% previewsample "page.domainurl/samples/datepicker/parse-format-date-cs1" %}
+
+## Input formats 
+
+The [`inputFormats`](https://helpej2.syncfusion.com/angular/documentation/api/datepicker/#inputformats) property in the DatePicker control allows users to enter dates in various formats, providing flexibility in date entry. This property accepts an array of predefined formats that the control recognizes, enabling users to input dates in different ways while ensuring they are parsed correctly.
+ 
+When the user types the date in any of the specified input formats, it will be automatically converted to the display format after pressing Enter, the Tab key, or when the input loses focus. This enhances the user experience by allowing intuitive data entry through various custom input formats.
+ 
+The following example demonstrates the DatePicker with multiple input formats.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/datepicker/getting-started-cs14/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/datepicker/getting-started-cs14/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/datepicker/getting-started-cs14" %}

@@ -98,3 +98,19 @@ Trackball can be enabled by setting the [`enable`](https://ej2.syncfusion.com/an
 To known about Crosshair and Trackball, you can check on this video:
 
 {% youtube "https://www.youtube.com/watch?v=IiSuXTKG2ac" %}
+
+## Crosshair Highlight Category
+
+The [`highlightCategory`](https://ej2.syncfusion.com/angular/documentation/api/chart/crosshairSettings/#highlightcategory) property in the crosshair highlights the background of the entire category when hovered over. The crosshair color can be customized using the [`color`](https://ej2.syncfusion.com/angular/documentation/api/chart/borderModel/#color) property within the [`line`](https://ej2.syncfusion.com/angular/documentation/api/chart/borderModel/) configuration.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/chart/user-interaction/crosshair-cs10/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/chart/user-interaction/crosshair-cs10/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "page.domainurl/samples/chart/user-interaction/crosshair-cs10" %}

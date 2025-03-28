@@ -141,19 +141,38 @@ Tracked changes only protection can be enabled in UI by using [Restrict Editing 
 You can restrict the accept and reject changes based on the author name. The following example demonstrates how to restrict an author from accept/reject changes.
 
 ```typescript
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { DocumentEditorContainerComponent, ToolbarService } from '@syncfusion/ej2-angular-documenteditor';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {
+  ToolbarService,
+  DocumentEditorContainerComponent,
+} from '@syncfusion/ej2-angular-documenteditor';
+import { ClickEventArgs } from '@syncfusion/ej2-navigations';
+import {
+  CustomToolbarItemModel,
+  DocumentEditorContainerModule,
+} from '@syncfusion/ej2-angular-documenteditor';
 
 @Component({
-  selector: 'app-your-component',
+  selector: 'app-container',
+  standalone: true,
+  imports: [DocumentEditorContainerModule],
+  providers: [ToolbarService],
   template: `
-    <DocumentEditorContainerComponent #container style="display: block;" [height]="'590px'" (beforeAcceptRejectChanges)="beforeAcceptRejectChanges($event)" [enableToolbar]="true"></DocumentEditorContainerComponent>
-  `
+    <ejs-documenteditorcontainer #documenteditor_default 
+      serviceUrl="https://services.syncfusion.com/angular/production/api/documenteditor/" 
+      height="600px" 
+      style="display:block" 
+      (beforeAcceptRejectChanges)="beforeAcceptRejectChanges($event)"
+      [enableToolbar]="true">
+    </ejs-documenteditorcontainer>
+  `,
 })
-export class YourComponent {
-  @ViewChild('container', { static: true }) container: DocumentEditorContainerComponent;
+export class AppComponent implements OnInit {
+  @ViewChild('documenteditor_default')
+  public container?: DocumentEditorContainerComponent;
 
-  beforeAcceptRejectChanges(args) {
+  ngOnInit(): void {}
+  beforeAcceptRejectChanges(args: { author: string; cancel: boolean }) {
     // Check the author of the revision
     if (args.author !== 'Hary') {
       // Cancel the accept/reject action

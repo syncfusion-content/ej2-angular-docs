@@ -113,7 +113,7 @@ Refer to the following example.
 You can customize the screen tip text for the hyperlink by using below sample code.
 
 ```typescript
-this.documentEditor.insertHyperlink('https://www.google.com', 'Google', '<<Screen tip text>>');
+this.documentEditor.editor.insertHyperlink('https://www.google.com', 'Google', '<<Screen tip text>>');
 ```
 
 Screen tip text can be modified through UI by using the [Hyperlink dialog](../document-editor/dialog#hyperlink-dialog)
